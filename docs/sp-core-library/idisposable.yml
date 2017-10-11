@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: sp-core-library.IDisposable
+    summary: Implemented by an object that supports a disposal lifecycle.
+    remarks: The dispose event allows an object to free an resources that it allocated before its lifecycle ends.
+    isPreview: true
+    name: IDisposable
+    fullName: sp-core-library.IDisposable
+    langs:
+      - typeScript
+    type: interface
+    package: sp-core-library
+    children:
+      - sp-core-library.IDisposable.dispose
+      - sp-core-library.IDisposable.isDisposed
+  - uid: sp-core-library.IDisposable.dispose
+    summary: >-
+      This method is called to dispose the object. After the object has been disposed, it should not be interacted with
+      any more.
+    isPreview: true
+    name: dispose()
+    fullName: sp-core-library.IDisposable.dispose
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'dispose(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: sp-core-library.IDisposable.isDisposed
+    summary: >-
+      Returns true if the dispose() method has been called. Once an object is disposed, it remains in this state
+      permanently.
+    isPreview: true
+    name: isDisposed
+    fullName: sp-core-library.IDisposable.isDisposed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDisposed: boolean;'
+      return:
+        type:
+          - boolean

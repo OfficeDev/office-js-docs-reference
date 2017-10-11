@@ -1,0 +1,24 @@
+### YamlMime:UniversalReference
+items:
+  - uid: sp-core-library.Environment
+    summary: Information about the system environment where the SharePoint Framework is running.
+    name: Environment
+    fullName: sp-core-library.Environment
+    langs:
+      - typeScript
+    type: class
+    package: sp-core-library
+    children:
+      - sp-core-library.Environment.type
+  - uid: sp-core-library.Environment.type
+    summary: Indicates the general type of environment where the SharePoint Framework is running.
+    name: type
+    fullName: sp-core-library.Environment.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'public static readonly type: EnvironmentType;'
+      return:
+        type:
+          - EnvironmentType

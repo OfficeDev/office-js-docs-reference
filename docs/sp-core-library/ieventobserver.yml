@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: sp-core-library.IEventObserver
+    summary: >-
+      Used with the [Event](xref:sp-core-library.Event) system, this interface is implemented by components that can
+      subscribe to events.
+    remarks: >-
+      IEventObserver is an abstraction of the key features that a component must have in order to subscribe to a
+      SharePoint Framework event: It must have instanceId and componentId information for diagnostics reporting, and it
+      must have a way to notify the event system when the component is disposed, so that its handlers can be
+      automatically removed. Other objects may implement this contract, as long as they meet these requirements.
+    isPreview: true
+    name: IEventObserver
+    fullName: sp-core-library.IEventObserver
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - IDisposable
+    package: sp-core-library
+    children:
+      - sp-core-library.IEventObserver.componentId
+      - sp-core-library.IEventObserver.instanceId
+  - uid: sp-core-library.IEventObserver.componentId
+    summary: 'The component identifier, from the component''s manifest.'
+    remarks: 'This will be used for diagnostic reporting, e.g. if the callback function has an uncaught exception'
+    isPreview: true
+    name: componentId
+    fullName: sp-core-library.IEventObserver.componentId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'componentId: string;'
+      return:
+        type:
+          - string
+  - uid: sp-core-library.IEventObserver.instanceId
+    summary: The instance identifier for the component.
+    remarks: 'This will be used for diagnostic reporting, e.g. if the callback function has an uncaught exception'
+    isPreview: true
+    name: instanceId
+    fullName: sp-core-library.IEventObserver.instanceId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'instanceId: string;'
+      return:
+        type:
+          - string

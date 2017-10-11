@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: sp-core-library
+    summary: SharePoint Framework core libraries.
+    remarks: >-
+      This package provides a foundation of core classes that ensure a consistent character across all the other
+      SharePoint Framework APIs. Because this package is a dependency of every other package, its design prioritizes
+      small code size and broad applicability, versus flexibility or richness of features.
+    name: '@microsoft/sp-core-library'
+    fullName: sp-core-library
+    langs:
+      - typeScript
+    type: package
+    children:
+      - sp-core-library.DisplayMode
+      - sp-core-library.Environment
+      - sp-core-library.EnvironmentType
+      - sp-core-library.Event
+      - sp-core-library.EventArgs
+      - sp-core-library.Guid
+      - sp-core-library.IDisposable
+      - sp-core-library.IEventObserver
+      - sp-core-library.IRandomNumberGenerator
+      - sp-core-library.IServiceCollection
+      - sp-core-library.ITimeProvider
+      - sp-core-library.Log
+      - sp-core-library.RandomNumberGenerator
+      - sp-core-library.ServiceKey
+      - sp-core-library.ServiceScope
+      - sp-core-library.Session
+      - sp-core-library.Text
+      - sp-core-library.TimeProvider
+      - sp-core-library.UrlQueryParameterCollection
+      - sp-core-library.Validate
+      - sp-core-library.Version
+references:
+  - uid: sp-core-library.DisplayMode
+    name: DisplayMode
+  - uid: sp-core-library.Environment
+    name: Environment
+  - uid: sp-core-library.EnvironmentType
+    name: EnvironmentType
+  - uid: sp-core-library.Event
+    name: Event
+  - uid: sp-core-library.EventArgs
+    name: EventArgs
+  - uid: sp-core-library.Guid
+    name: Guid
+  - uid: sp-core-library.IDisposable
+    name: IDisposable
+  - uid: sp-core-library.IEventObserver
+    name: IEventObserver
+  - uid: sp-core-library.IRandomNumberGenerator
+    name: IRandomNumberGenerator
+  - uid: sp-core-library.IServiceCollection
+    name: IServiceCollection
+  - uid: sp-core-library.ITimeProvider
+    name: ITimeProvider
+  - uid: sp-core-library.Log
+    name: Log
+  - uid: sp-core-library.RandomNumberGenerator
+    name: RandomNumberGenerator
+  - uid: sp-core-library.ServiceKey
+    name: ServiceKey
+  - uid: sp-core-library.ServiceScope
+    name: ServiceScope
+  - uid: sp-core-library.Session
+    name: Session
+  - uid: sp-core-library.Text
+    name: Text
+  - uid: sp-core-library.TimeProvider
+    name: TimeProvider
+  - uid: sp-core-library.UrlQueryParameterCollection
+    name: UrlQueryParameterCollection
+  - uid: sp-core-library.Validate
+    name: Validate
+  - uid: sp-core-library.Version
+    name: Version

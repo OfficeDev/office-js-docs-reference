@@ -1,0 +1,208 @@
+### YamlMime:UniversalReference
+items:
+  - uid: sp-core-library.ServiceScope
+    summary: The service locator pattern used by the SharePoint Framework.
+    remarks: >-
+      ServiceScope provides a formalized way for components to register and consume dependencies ("services"), and to
+      enable different implementations to be registered in different scopes. This improves modularity by decoupling
+      components from their dependencies in an extensible way. 
+
+       For example, suppose that various components need access to an IPageManager instance. We could simply make the PageManager a singleton (i.e. global variable), but this will not work e.g. if we need to create a pop-up dialog that requires a second PageManager instance. A better solution would be to add the PageManager as a constructor parameter for each component that requires it, however then we immediately face the problem that any code that calls these constructors also needs a PageManager parameter. In an application with many such dependencies, business logic that ties together many subsystems would eventually pick up a constructor parameter for every possible dependency, which is awkward. A natural solution would be to move all the dependencies into a class with name like "ApplicationContext", and then pass this around as our constructor parameter. This enables the PageManager to be passed to classes that need it without cluttering the intermediary classes that don't. However, it still has a design problem that "ApplicationContext" has hard-coded dependencies on many unrelated things. A more flexible approach is to make it a dictionary that can look up items for consumers/providers who know the right lookup key (i.e. ServiceKey). This is the popular "service locator" design pattern, familiar from the SPContext API in classic SharePoint. 
+
+       ServiceScope takes this idea a step further in two important ways: First, it provides a scoping mechanism so that e.g. if we have two different pages, they can each provide a unique PageManager instance while still sharing other common dependencies. Secondly, it allows for a ServiceKey to provide a default implementation of the dependency. This is important for API stability in our modular client-side environment: For example, suppose that version 2.0 of our application introduced a new IDiagnosticTracing interface that a version 2.0 component will expect to consume. If the version 2.0 component gets loaded by an older 1.0 application, it would fail. We could fix this by requiring each consumer to check for any missing dependencies and handle that case, but it would require a lot of checks. A better solution is to ensure that a default implementation always exists, perhaps just a trivial behavior, so that components can assume that consume() will always return some object that implements the contract. 
+
+       Usage: ServiceScope instances are created by calling either ServiceScope.startNewRoot() or ServiceScope.startNewChild(). They are initially in an "unfinished" state, during which provide() can be called to register service keys, but consume() is disallowed. After ServiceScope.finish() is called, consume() is allowed and provide() is now disallowed. These semantics ensure that ServiceScope.consume() always returns the same result for the same key, and does not depend on order of initialization. It also allows us to support circular dependencies without worrying about infinite loops. (Circular dependencies are best avoided, however this is difficult to guarantee when working with components that were contributed by various third parties without any coordination.) To avoid mistakes, it's best to always call consume() inside a callback from serviceScope.whenFinished().
+    name: ServiceScope
+    fullName: sp-core-library.ServiceScope
+    langs:
+      - typeScript
+    type: class
+    package: sp-core-library
+    children:
+      - sp-core-library.ServiceScope.consume
+      - sp-core-library.ServiceScope.createAndProvide
+      - sp-core-library.ServiceScope.createDefaultAndProvide
+      - sp-core-library.ServiceScope.finish
+      - sp-core-library.ServiceScope.getParent
+      - sp-core-library.ServiceScope.provide
+      - sp-core-library.ServiceScope.startNewChild
+      - sp-core-library.ServiceScope.startNewRoot
+      - sp-core-library.ServiceScope.whenFinished
+  - uid: sp-core-library.ServiceScope.consume
+    summary: Consumes a service from the service scope.
+    remarks: >-
+      Components should call this function to "consume" a dependency, i.e. look up the serviceKey and return the
+      registered service instance. If the instance cannot be found, then a default instance will be automatically
+      created and registered with the root ServiceScope.
+    name: consume(serviceKey)
+    fullName: sp-core-library.ServiceScope.consume
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public consume < T >(serviceKey: ServiceKey<T>): T;'
+      return:
+        type:
+          - T
+        description: the service instance
+      parameters:
+        - id: serviceKey
+          description: the key that was used when provide() was called to register the service
+          type:
+            - ServiceKey<T>
+  - uid: sp-core-library.ServiceScope.createAndProvide
+    summary: >-
+      This is a shorthand function that is equivalent to constructing a new instance of the simpleServiceClass, then
+      registering it by calling ServiceScope.provide().
+    name: 'createAndProvide(serviceKey, simpleServiceClass)'
+    fullName: sp-core-library.ServiceScope.createAndProvide
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "public createAndProvide < T >(serviceKey: ServiceKey<T>,\r\n    simpleServiceClass: { new (serviceScope: ServiceScope); }): T;"
+      return:
+        type:
+          - T
+        description: a newly constructed instance of simpleServiceClass
+      parameters:
+        - id: serviceKey
+          description: the key that can be used later to consume the service
+          type:
+            - ServiceKey<T>
+        - id: simpleServiceClass
+          description: the TypeScript class to be constructed
+          type:
+            - '{ new (serviceScope: ServiceScope); }'
+  - uid: sp-core-library.ServiceScope.createDefaultAndProvide
+    summary: >-
+      This is a shorthand function that constructs the default implementation of the specified serviceKey, and then
+      registers it by calling ServiceScope.provide().
+    name: createDefaultAndProvide(serviceKey)
+    fullName: sp-core-library.ServiceScope.createDefaultAndProvide
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public createDefaultAndProvide < T >(serviceKey: ServiceKey<T>): T;'
+      return:
+        type:
+          - T
+        description: a service instance that was constructed using ServiceKey.defaultCreator
+      parameters:
+        - id: serviceKey
+          description: the key that can be used later to consume the service
+          type:
+            - ServiceKey<T>
+  - uid: sp-core-library.ServiceScope.finish
+    summary: Completes the initialization sequence for a service scope.
+    remarks: >-
+      When a ServiceScope is first started, it is in an "unfinished" state where provide() is allowed but consume() is
+      disallowed. After calling finish(), then consume() is allowed but provide() is disallowed. 
+
+       This formalism prevents a number of complex situations that could lead to bugs. For example, supposed that Scope2 is a child of Scope1, and Scope1 provides instance A1 of interface A. If someone consumes A1 from Scope2 (via inheritance) before Scope2.provide() is called with A2, then a subsequent call to Scope2.consume() might return a different result than the previous call. This nondeterminism could cause unpredictable results that are difficult to diagnose.
+    name: finish()
+    fullName: sp-core-library.ServiceScope.finish
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public finish(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: sp-core-library.ServiceScope.getParent
+    summary: 'Returns the parent of the current ServiceScope, or undefined if this is a root scope.'
+    name: getParent()
+    fullName: sp-core-library.ServiceScope.getParent
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public getParent(): ServiceScope | undefined;'
+      return:
+        type:
+          - ServiceScope | undefined
+        description: the parent service scope
+  - uid: sp-core-library.ServiceScope.provide
+    summary: Add a new service to a service scope.
+    remarks: >-
+      ServiceScope.provide() is used to register an implementation of the given serviceKey for the current scope. It may
+      only be used when the ServiceScope is in an "unfinished" state, i.e. before finish() has been called.
+    name: 'provide(serviceKey, service)'
+    fullName: sp-core-library.ServiceScope.provide
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public provide < T >(serviceKey: ServiceKey<T>, service: T): T;'
+      return:
+        type:
+          - T
+        description: the same object that was passed as the "service" parameter
+      parameters:
+        - id: serviceKey
+          description: the key that will later be used to consume the service
+          type:
+            - ServiceKey<T>
+        - id: service
+          description: the service instance that is being registered
+          type:
+            - T
+  - uid: sp-core-library.ServiceScope.startNewChild
+    summary: Constructs a new ServiceScope that is a child of the current scope.
+    remarks: >-
+      The service scopes form a tree structure, such that when consuming a service, if the key is not explicitly
+      provided by a child scope, the parent hierarchy will be consulted.
+    name: startNewChild()
+    fullName: sp-core-library.ServiceScope.startNewChild
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public startNewChild(): ServiceScope;'
+      return:
+        type:
+          - ServiceScope
+        description: the newly created root ServiceScope
+  - uid: sp-core-library.ServiceScope.startNewRoot
+    summary: >-
+      Create a new root-level ServiceScope. Only root-level scopes have the ability to autocreate default
+      implementations of ServiceKeys.
+    name: startNewRoot()
+    fullName: sp-core-library.ServiceScope.startNewRoot
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public static startNewRoot(): ServiceScope;'
+      return:
+        type:
+          - ServiceScope
+        description: the newly created root ServiceScope
+  - uid: sp-core-library.ServiceScope.whenFinished
+    summary: 'Defer an operation until after [ServiceScope.finish](xref:sp-core-library.ServiceScope.finish) has completed.'
+    remarks: >-
+      It is an error to call ServiceScope.consume() before finish() has been called. The most reliable way to protect
+      your component against this error is to perform the consume() calls inside a whenFinished() callback. If the
+      service scope is already finished, then the callback will be executed immediately; otherwise, it will be executed
+      later when the scope is finished. 
+
+       NOTE: This is not an asynchronous callback. ServiceScope initialization is typically inexpensive and short lived. However, the control flow often threads through numerous constructors and base classes, which can be simplified using whenFinished().
+    name: whenFinished(callback)
+    fullName: sp-core-library.ServiceScope.whenFinished
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public whenFinished(callback: () => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: A block of code that needs to call ServiceScope.consume()
+          type:
+            - () => void

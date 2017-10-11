@@ -1,0 +1,55 @@
+### YamlMime:UniversalReference
+items:
+  - uid: sp-core-library.EnvironmentType
+    summary: Indicates the general type of environment where the SharePoint Framework is running.
+    remarks: >-
+      This enum is used by the [Environment.type](xref:sp-core-library.Environment.type) property. It provides a way to
+      distinguish environments where certain functionality may be limited or disabled.
+    name: EnvironmentType
+    fullName: sp-core-library.EnvironmentType
+    langs:
+      - typeScript
+    type: enum
+    package: sp-core-library
+    children:
+      - sp-core-library.EnvironmentType.ClassicSharePoint
+      - sp-core-library.EnvironmentType.Local
+      - sp-core-library.EnvironmentType.SharePoint
+      - sp-core-library.EnvironmentType.Test
+  - uid: sp-core-library.EnvironmentType.ClassicSharePoint
+    summary: >-
+      Indicates that the framework was loaded from a classic server-rendered SharePoint page. Some functionality may be
+      limited, e.g. various extensibility APIs may not be supported.
+    name: ClassicSharePoint
+    fullName: sp-core-library.EnvironmentType.ClassicSharePoint
+    langs:
+      - typeScript
+    type: field
+  - uid: sp-core-library.EnvironmentType.Local
+    summary: >-
+      Indicates that the web page is hosted from a "localhost" web server, for example the SharePoint Workbench when
+      running via "gulp serve". SharePoint REST API calls will not be available, and in general network access may not
+      authenticate properly. Certain page context information may be using mock values for testing.
+    name: Local
+    fullName: sp-core-library.EnvironmentType.Local
+    langs:
+      - typeScript
+    type: field
+  - uid: sp-core-library.EnvironmentType.SharePoint
+    summary: >-
+      Indicates that the framework was loaded on a SharePoint web page, with a client-side application. This is the
+      normal scenario for SharePoint Framework.
+    name: SharePoint
+    fullName: sp-core-library.EnvironmentType.SharePoint
+    langs:
+      - typeScript
+    type: field
+  - uid: sp-core-library.EnvironmentType.Test
+    summary: >-
+      Indicates that the SharePoint Framework is running inside a test harness, e.g. a unit test. There may be no user
+      interaction at all, and network access in general may be disabled.
+    name: Test
+    fullName: sp-core-library.EnvironmentType.Test
+    langs:
+      - typeScript
+    type: field

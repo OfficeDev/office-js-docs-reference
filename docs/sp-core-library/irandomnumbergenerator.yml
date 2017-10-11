@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: sp-core-library.IRandomNumberGenerator
+    summary: >-
+      This is a ServiceScope interface that enables unit tests to provide a deterministic source of pseudorandom
+      numbers.
+    name: IRandomNumberGenerator
+    fullName: sp-core-library.IRandomNumberGenerator
+    langs:
+      - typeScript
+    type: interface
+    package: sp-core-library
+    children:
+      - sp-core-library.IRandomNumberGenerator.generate
+  - uid: sp-core-library.IRandomNumberGenerator.generate
+    summary: 'Returns a pseudorandom number between 0 (inclusive) and 1 (exclusive), following the contract of Math.random().'
+    name: generate()
+    fullName: sp-core-library.IRandomNumberGenerator.generate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'generate(): number;'
+      return:
+        type:
+          - number
+        description: ''

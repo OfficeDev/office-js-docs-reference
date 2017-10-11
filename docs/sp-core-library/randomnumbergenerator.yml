@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: sp-core-library.RandomNumberGenerator
+    summary: This is the default implementation of IRandomNumberGenerator that simply calls Math.random().
+    name: RandomNumberGenerator
+    fullName: sp-core-library.RandomNumberGenerator
+    langs:
+      - typeScript
+    type: class
+    implements:
+      - IRandomNumberGenerator
+    package: sp-core-library
+    children:
+      - sp-core-library.RandomNumberGenerator.constructor
+      - sp-core-library.RandomNumberGenerator.generate
+      - sp-core-library.RandomNumberGenerator.serviceKey
+  - uid: sp-core-library.RandomNumberGenerator.constructor
+    summary: 'Constructs a new instance of the [RandomNumberGenerator](xref:sp-core-library.RandomNumberGenerator) class'
+    name: constructor(serviceScope)
+    fullName: sp-core-library.RandomNumberGenerator.constructor
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(serviceScope: ServiceScope);'
+      parameters:
+        - id: serviceScope
+          description: ''
+          type:
+            - ServiceScope
+  - uid: sp-core-library.RandomNumberGenerator.generate
+    name: generate()
+    fullName: sp-core-library.RandomNumberGenerator.generate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public generate(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: sp-core-library.RandomNumberGenerator.serviceKey
+    summary: The service key for IRandomNumberGenerator.
+    name: serviceKey
+    fullName: sp-core-library.RandomNumberGenerator.serviceKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'public static serviceKey: ServiceKey<IRandomNumberGenerator>;'
+      return:
+        type:
+          - ServiceKey<IRandomNumberGenerator>
