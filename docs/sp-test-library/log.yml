@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: sp-core-library.Log
+  - uid: sp-test-library.Log
     summary: A basic redirectable logging system.
     remarks: >-
       The Log class provides static methods for logging messages at different levels (verbose, info, warning, error) and
@@ -8,20 +8,20 @@ items:
       filtering of log events. In a SharePoint Framework application, these messages will appear on the developer
       dashboard.
     name: Log
-    fullName: sp-core-library.Log
+    fullName: sp-test-library.Log
     langs:
       - typeScript
     type: class
-    package: sp-core-library
+    package: sp-test-library
     children:
-      - sp-core-library.Log.error
-      - sp-core-library.Log.info
-      - sp-core-library.Log.verbose
-      - sp-core-library.Log.warn
-  - uid: sp-core-library.Log.error
+      - sp-test-library.Log.error
+      - sp-test-library.Log.info
+      - sp-test-library.Log.verbose
+      - sp-test-library.Log.warn
+  - uid: sp-test-library.Log.error
     summary: Logs an error.
     name: 'error(source, error, scope)'
-    fullName: sp-core-library.Log.error
+    fullName: sp-test-library.Log.error
     langs:
       - typeScript
     type: method
@@ -48,10 +48,10 @@ items:
             information) to the logged error.
           type:
             - ServiceScope
-  - uid: sp-core-library.Log.info
+  - uid: sp-test-library.Log.info
     summary: Logs a general informational message.
     name: 'info(source, message, scope)'
-    fullName: sp-core-library.Log.info
+    fullName: sp-test-library.Log.info
     langs:
       - typeScript
     type: method
@@ -78,10 +78,10 @@ items:
             information) to the logged message.
           type:
             - ServiceScope
-  - uid: sp-core-library.Log.verbose
+  - uid: sp-test-library.Log.verbose
     summary: Logs a message which contains detailed information that is generally only needed for troubleshooting.
     name: 'verbose(source, message, scope)'
-    fullName: sp-core-library.Log.verbose
+    fullName: sp-test-library.Log.verbose
     langs:
       - typeScript
     type: method
@@ -108,10 +108,10 @@ items:
             information) to the logged message.
           type:
             - ServiceScope
-  - uid: sp-core-library.Log.warn
+  - uid: sp-test-library.Log.warn
     summary: Logs a warning.
     name: 'warn(source, message, scope)'
-    fullName: sp-core-library.Log.warn
+    fullName: sp-test-library.Log.warn
     langs:
       - typeScript
     type: method

@@ -1,26 +1,26 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: sp-core-library.DisplayMode
+  - uid: sp-test-library.DisplayMode
     summary: Indicates whether a visual control is in an editable state or not.
     name: DisplayMode
-    fullName: sp-core-library.DisplayMode
+    fullName: sp-test-library.DisplayMode
     langs:
       - typeScript
     type: enum
-    package: sp-core-library
+    package: sp-test-library
     children:
-      - sp-core-library.DisplayMode.Edit
-      - sp-core-library.DisplayMode.Read
-  - uid: sp-core-library.DisplayMode.Edit
+      - sp-test-library.DisplayMode.Edit
+      - sp-test-library.DisplayMode.Read
+  - uid: sp-test-library.DisplayMode.Edit
     name: Edit
-    fullName: sp-core-library.DisplayMode.Edit
+    fullName: sp-test-library.DisplayMode.Edit
     langs:
       - typeScript
     type: field
     numericValue: '2'
-  - uid: sp-core-library.DisplayMode.Read
+  - uid: sp-test-library.DisplayMode.Read
     name: Read
-    fullName: sp-core-library.DisplayMode.Read
+    fullName: sp-test-library.DisplayMode.Read
     langs:
       - typeScript
     type: field

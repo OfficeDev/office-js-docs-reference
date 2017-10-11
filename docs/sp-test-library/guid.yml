@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: sp-core-library.Guid
+  - uid: sp-test-library.Guid
     summary: 'This class represents a globally unique identifier, as described by IETF RFC 4122.'
     remarks: >-
       The input string is normalized and validated, which provides important guarantees that simplify other code that
@@ -8,22 +8,22 @@ items:
       that the uniqueness depends on the browser's Math.random() function and may be not be suitable for some
       applications. see [https://www.ietf.org/rfc/rfc4122.txt](https://www.ietf.org/rfc/rfc4122.txt)
     name: Guid
-    fullName: sp-core-library.Guid
+    fullName: sp-test-library.Guid
     langs:
       - typeScript
     type: class
-    package: sp-core-library
+    package: sp-test-library
     children:
-      - sp-core-library.Guid.empty
-      - sp-core-library.Guid.equals
-      - sp-core-library.Guid.isValid
-      - sp-core-library.Guid.newGuid
-      - sp-core-library.Guid.parse
-      - sp-core-library.Guid.tryParse
-  - uid: sp-core-library.Guid.empty
+      - sp-test-library.Guid.empty
+      - sp-test-library.Guid.equals
+      - sp-test-library.Guid.isValid
+      - sp-test-library.Guid.newGuid
+      - sp-test-library.Guid.parse
+      - sp-test-library.Guid.tryParse
+  - uid: sp-test-library.Guid.empty
     summary: Returns a new empty Guid instance.
     name: empty
-    fullName: sp-core-library.Guid.empty
+    fullName: sp-test-library.Guid.empty
     langs:
       - typeScript
     type: property
@@ -32,10 +32,10 @@ items:
       return:
         type:
           - Guid
-  - uid: sp-core-library.Guid.equals
+  - uid: sp-test-library.Guid.equals
     summary: Compare this instance to another Guid instance
     name: equals(guid)
-    fullName: sp-core-library.Guid.equals
+    fullName: sp-test-library.Guid.equals
     langs:
       - typeScript
     type: method
@@ -50,12 +50,12 @@ items:
           description: ''
           type:
             - Guid
-  - uid: sp-core-library.Guid.isValid
+  - uid: sp-test-library.Guid.isValid
     summary: >-
       Indicates whether a GUID is valid, i.e. whether it would be successfully parsed by Guid.tryParse(). This function
       is cheaper than Guid.tryParse() because it does not construct a Guid object.
     name: isValid(guid)
-    fullName: sp-core-library.Guid.isValid
+    fullName: sp-test-library.Guid.isValid
     langs:
       - typeScript
     type: method
@@ -70,12 +70,12 @@ items:
           description: The input string.
           type:
             - string | undefined | null
-  - uid: sp-core-library.Guid.newGuid
+  - uid: sp-test-library.Guid.newGuid
     summary: >-
       Returns a new Guid instance with a pseudo-randomly generated GUID, according to the version 4 UUID algorithm from
       RFC 4122.
     name: newGuid(randomNumberGenerator)
-    fullName: sp-core-library.Guid.newGuid
+    fullName: sp-test-library.Guid.newGuid
     langs:
       - typeScript
     type: method
@@ -90,13 +90,13 @@ items:
           description: ''
           type:
             - IRandomNumberGenerator
-  - uid: sp-core-library.Guid.parse
+  - uid: sp-test-library.Guid.parse
     summary: 'Parses the input string to construct a new Guid object. If the string cannot be parsed, then an error is thrown.'
     remarks: >-
       Example syntaxes accepted by this function: 'd5369f3b-bd7a-412a-9c0f-7f0650bb5489'
       '{d5369f3b-bd7a-412a-9c0f-7f0650bb5489}' '/Guid(d5369f3b-bd7a-412a-9c0f-7f0650bb5489)'
     name: parse(guidString)
-    fullName: sp-core-library.Guid.parse
+    fullName: sp-test-library.Guid.parse
     langs:
       - typeScript
     type: method
@@ -111,7 +111,7 @@ items:
           description: ''
           type:
             - string | undefined | null
-  - uid: sp-core-library.Guid.tryParse
+  - uid: sp-test-library.Guid.tryParse
     summary: >-
       Attempts to parse the input string to construct a new Guid object. If the string cannot be parsed, then undefined
       is returned.
@@ -119,7 +119,7 @@ items:
       Example syntaxes accepted by this function: 'd5369f3b-bd7a-412a-9c0f-7f0650bb5489'
       '{d5369f3b-bd7a-412a-9c0f-7f0650bb5489}' '/Guid(d5369f3b-bd7a-412a-9c0f-7f0650bb5489)'
     name: tryParse(guid)
-    fullName: sp-core-library.Guid.tryParse
+    fullName: sp-test-library.Guid.tryParse
     langs:
       - typeScript
     type: method

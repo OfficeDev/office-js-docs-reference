@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: sp-core-library.Event
+  - uid: sp-test-library.Event
     summary: Represents a framework event that components can subscribe to.
     remarks: >-
       Examples of events in a web application might include: the user clicking a button, the system navigating to
@@ -11,20 +11,20 @@ items:
       receives an EventArgs parameter that may provide additional details about what happened. This is analogous to the
       browser's Document Object Model (DOM) events. The main difference is the IEventObserver feature, which tracks
       which component subscribed to each event, and automatically unsubscribes the handler when the component is
-      disposed. 
+      disposed.
 
        When an event is raised, all handlers are invoked synchronously. The order in which event handlers are called is unspecified. The event handler callback must catch any exceptions that occur during processing; an uncaught exception will not prevent other handlers from executing, but it will be reported as a problem with the associated component.
     isPreview: true
     name: Event
-    fullName: sp-core-library.Event
+    fullName: sp-test-library.Event
     langs:
       - typeScript
     type: class
-    package: sp-core-library
+    package: sp-test-library
     children:
-      - sp-core-library.Event.add
-      - sp-core-library.Event.remove
-  - uid: sp-core-library.Event.add
+      - sp-test-library.Event.add
+      - sp-test-library.Event.remove
+  - uid: sp-test-library.Event.add
     summary: Registers a callback that will be invoked whenever the event occurs.
     remarks: >-
       The same object can add multiple event handlers to the same event. Since BaseComponent implements the
@@ -32,7 +32,7 @@ items:
       handler to be automatically unsubscribed when the web part or extension is disposed.
     isPreview: true
     name: 'add(observer, eventHandler)'
-    fullName: sp-core-library.Event.add
+    fullName: sp-test-library.Event.add
     langs:
       - typeScript
     type: method
@@ -54,12 +54,12 @@ items:
           description: A callback function that will be invoked whenever the event occurs
           type:
             - '(eventArgs: TEventArgs) => void'
-  - uid: sp-core-library.Event.remove
+  - uid: sp-test-library.Event.remove
     summary: Unregisters a callback that was registered using add().
     remarks: 'If the event handler has already been removed, or if it was never added, then this method has no effect.'
     isPreview: true
     name: 'remove(observer, eventHandler)'
-    fullName: sp-core-library.Event.remove
+    fullName: sp-test-library.Event.remove
     langs:
       - typeScript
     type: method

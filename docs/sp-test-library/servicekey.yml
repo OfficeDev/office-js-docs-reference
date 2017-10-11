@@ -1,35 +1,35 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: sp-core-library.ServiceKey
+  - uid: sp-test-library.ServiceKey
     summary: >-
       The ServiceKey is a lookup key that is used when calling
-      [ServiceScope.consume](xref:sp-core-library.ServiceScope.consume) to fetch a dependency.
+      [ServiceScope.consume](xref:sp-test-library.ServiceScope.consume) to fetch a dependency.
     remarks: >-
       Every service key also provides a default implementation of the dependency, which will be automatically created in
       the root scope if the dependency is not found. Providing a default implementation ensures that new dependencies
       can be safely introduced without inadvertently breaking components that are loaded by an older host that does not
       provide the new dependency.
     name: ServiceKey
-    fullName: sp-core-library.ServiceKey
+    fullName: sp-test-library.ServiceKey
     langs:
       - typeScript
     type: class
-    package: sp-core-library
+    package: sp-test-library
     children:
-      - sp-core-library.ServiceKey.create
-      - sp-core-library.ServiceKey.createCustom
-      - sp-core-library.ServiceKey.defaultCreator
-      - sp-core-library.ServiceKey.id
-      - sp-core-library.ServiceKey.name
-  - uid: sp-core-library.ServiceKey.create
+      - sp-test-library.ServiceKey.create
+      - sp-test-library.ServiceKey.createCustom
+      - sp-test-library.ServiceKey.defaultCreator
+      - sp-test-library.ServiceKey.id
+      - sp-test-library.ServiceKey.name
+  - uid: sp-test-library.ServiceKey.create
     summary: >-
       Constructs a new ServiceKey whose default implementation will be a new instance of a TypeScript class that accepts
       the standard constructor parameter.
     remarks: >-
       If you want to specify custom constructor parameters, use
-      [ServiceKey.createCustom](xref:sp-core-library.ServiceKey.createCustom) instead.
+      [ServiceKey.createCustom](xref:sp-test-library.ServiceKey.createCustom) instead.
     name: 'create(name, serviceClass)'
-    fullName: sp-core-library.ServiceKey.create
+    fullName: sp-test-library.ServiceKey.create
     langs:
       - typeScript
     type: method
@@ -48,10 +48,10 @@ items:
           description: the TypeScript class that implements the service.
           type:
             - '{ new (serviceScope: ServiceScope); }'
-  - uid: sp-core-library.ServiceKey.createCustom
+  - uid: sp-test-library.ServiceKey.createCustom
     summary: Constructs a new ServiceKey whose default implementation will be obtained by invoking the specified callback.
     name: 'createCustom(name, defaultCreator)'
-    fullName: sp-core-library.ServiceKey.createCustom
+    fullName: sp-test-library.ServiceKey.createCustom
     langs:
       - typeScript
     type: method
@@ -70,9 +70,9 @@ items:
           description: a callback that returns an object that implements the T interface
           type:
             - ServiceCreator<TKey>
-  - uid: sp-core-library.ServiceKey.defaultCreator
+  - uid: sp-test-library.ServiceKey.defaultCreator
     name: defaultCreator
-    fullName: sp-core-library.ServiceKey.defaultCreator
+    fullName: sp-test-library.ServiceKey.defaultCreator
     langs:
       - typeScript
     type: property
@@ -81,9 +81,9 @@ items:
       return:
         type:
           - ServiceCreator<T>
-  - uid: sp-core-library.ServiceKey.id
+  - uid: sp-test-library.ServiceKey.id
     name: id
-    fullName: sp-core-library.ServiceKey.id
+    fullName: sp-test-library.ServiceKey.id
     langs:
       - typeScript
     type: property
@@ -92,9 +92,9 @@ items:
       return:
         type:
           - string
-  - uid: sp-core-library.ServiceKey.name
+  - uid: sp-test-library.ServiceKey.name
     name: name
-    fullName: sp-core-library.ServiceKey.name
+    fullName: sp-test-library.ServiceKey.name
     langs:
       - typeScript
     type: property

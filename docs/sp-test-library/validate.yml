@@ -1,25 +1,25 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: sp-core-library.Validate
+  - uid: sp-test-library.Validate
     summary: Performs common validation tests for properties and function parameters.
     remarks: >-
       This class implements provides a standard way to validate properties and function parameters. Unlike debug
       assertions, Validate checks are always performed and will always throw an error, even in a production release. As
       such, be careful not to overuse these checks in a way that might impact performance.
     name: Validate
-    fullName: sp-core-library.Validate
+    fullName: sp-test-library.Validate
     langs:
       - typeScript
     type: class
-    package: sp-core-library
+    package: sp-test-library
     children:
-      - sp-core-library.Validate.isNonemptyString
-      - sp-core-library.Validate.isNotNullOrUndefined
-      - sp-core-library.Validate.isTrue
-  - uid: sp-core-library.Validate.isNonemptyString
+      - sp-test-library.Validate.isNonemptyString
+      - sp-test-library.Validate.isNotNullOrUndefined
+      - sp-test-library.Validate.isTrue
+  - uid: sp-test-library.Validate.isNonemptyString
     summary: 'Throws an exception if the specified string is null, undefined, or an empty string.'
     name: 'isNonemptyString(value, variableName)'
-    fullName: sp-core-library.Validate.isNonemptyString
+    fullName: sp-test-library.Validate.isNonemptyString
     langs:
       - typeScript
     type: method
@@ -38,10 +38,10 @@ items:
           description: 'the program variable name, which will be mentioned in the error message'
           type:
             - string
-  - uid: sp-core-library.Validate.isNotNullOrUndefined
+  - uid: sp-test-library.Validate.isNotNullOrUndefined
     summary: Throws an exception if the specified value is null or undefined.
     name: 'isNotNullOrUndefined(value, variableName)'
-    fullName: sp-core-library.Validate.isNotNullOrUndefined
+    fullName: sp-test-library.Validate.isNotNullOrUndefined
     langs:
       - typeScript
     type: method
@@ -60,10 +60,10 @@ items:
           description: 'the program variable name, which will be mentioned in the error message'
           type:
             - string
-  - uid: sp-core-library.Validate.isTrue
+  - uid: sp-test-library.Validate.isTrue
     summary: Throws an exception if the specified value is not true.
     name: 'isTrue(value, variableName)'
-    fullName: sp-core-library.Validate.isTrue
+    fullName: sp-test-library.Validate.isTrue
     langs:
       - typeScript
     type: method

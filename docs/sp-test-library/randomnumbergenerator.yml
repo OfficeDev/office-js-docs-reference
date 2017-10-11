@@ -1,23 +1,23 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: sp-core-library.RandomNumberGenerator
+  - uid: sp-test-library.RandomNumberGenerator
     summary: This is the default implementation of IRandomNumberGenerator that simply calls Math.random().
     name: RandomNumberGenerator
-    fullName: sp-core-library.RandomNumberGenerator
+    fullName: sp-test-library.RandomNumberGenerator
     langs:
       - typeScript
     type: class
     implements:
       - IRandomNumberGenerator
-    package: sp-core-library
+    package: sp-test-library
     children:
-      - sp-core-library.RandomNumberGenerator.constructor
-      - sp-core-library.RandomNumberGenerator.generate
-      - sp-core-library.RandomNumberGenerator.serviceKey
-  - uid: sp-core-library.RandomNumberGenerator.constructor
-    summary: 'Constructs a new instance of the [RandomNumberGenerator](xref:sp-core-library.RandomNumberGenerator) class'
+      - sp-test-library.RandomNumberGenerator.constructor
+      - sp-test-library.RandomNumberGenerator.generate
+      - sp-test-library.RandomNumberGenerator.serviceKey
+  - uid: sp-test-library.RandomNumberGenerator.constructor
+    summary: 'Constructs a new instance of the [RandomNumberGenerator](xref:sp-test-library.RandomNumberGenerator) class'
     name: constructor(serviceScope)
-    fullName: sp-core-library.RandomNumberGenerator.constructor
+    fullName: sp-test-library.RandomNumberGenerator.constructor
     langs:
       - typeScript
     type: constructor
@@ -28,9 +28,9 @@ items:
           description: ''
           type:
             - ServiceScope
-  - uid: sp-core-library.RandomNumberGenerator.generate
+  - uid: sp-test-library.RandomNumberGenerator.generate
     name: generate()
-    fullName: sp-core-library.RandomNumberGenerator.generate
+    fullName: sp-test-library.RandomNumberGenerator.generate
     langs:
       - typeScript
     type: method
@@ -40,10 +40,10 @@ items:
         type:
           - number
         description: ''
-  - uid: sp-core-library.RandomNumberGenerator.serviceKey
+  - uid: sp-test-library.RandomNumberGenerator.serviceKey
     summary: The service key for IRandomNumberGenerator.
     name: serviceKey
-    fullName: sp-core-library.RandomNumberGenerator.serviceKey
+    fullName: sp-test-library.RandomNumberGenerator.serviceKey
     langs:
       - typeScript
     type: property

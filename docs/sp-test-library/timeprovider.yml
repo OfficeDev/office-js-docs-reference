@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: sp-core-library.TimeProvider
+  - uid: sp-test-library.TimeProvider
     summary: This is the default implementation of ITimeProvider that simply calls the real browser APIs.
     name: TimeProvider
-    fullName: sp-core-library.TimeProvider
+    fullName: sp-test-library.TimeProvider
     langs:
       - typeScript
     type: class
     implements:
       - ITimeProvider
-    package: sp-core-library
+    package: sp-test-library
     children:
-      - sp-core-library.TimeProvider.constructor
-      - sp-core-library.TimeProvider.getDate
-      - sp-core-library.TimeProvider.getTimestamp
-      - sp-core-library.TimeProvider.serviceKey
-  - uid: sp-core-library.TimeProvider.constructor
-    summary: 'Constructs a new instance of the [TimeProvider](xref:sp-core-library.TimeProvider) class'
+      - sp-test-library.TimeProvider.constructor
+      - sp-test-library.TimeProvider.getDate
+      - sp-test-library.TimeProvider.getTimestamp
+      - sp-test-library.TimeProvider.serviceKey
+  - uid: sp-test-library.TimeProvider.constructor
+    summary: 'Constructs a new instance of the [TimeProvider](xref:sp-test-library.TimeProvider) class'
     name: constructor(serviceScope)
-    fullName: sp-core-library.TimeProvider.constructor
+    fullName: sp-test-library.TimeProvider.constructor
     langs:
       - typeScript
     type: constructor
@@ -29,10 +29,10 @@ items:
           description: ''
           type:
             - ServiceScope
-  - uid: sp-core-library.TimeProvider.getDate
+  - uid: sp-test-library.TimeProvider.getDate
     summary: Returns the current date/time.
     name: getDate()
-    fullName: sp-core-library.TimeProvider.getDate
+    fullName: sp-test-library.TimeProvider.getDate
     langs:
       - typeScript
     type: method
@@ -42,10 +42,10 @@ items:
         type:
           - Date
         description: ''
-  - uid: sp-core-library.TimeProvider.getTimestamp
+  - uid: sp-test-library.TimeProvider.getTimestamp
     summary: 'Returns a DOMHighResTimeStamp timing measurement, as defined by the standard performance.now() API.'
     name: getTimestamp()
-    fullName: sp-core-library.TimeProvider.getTimestamp
+    fullName: sp-test-library.TimeProvider.getTimestamp
     langs:
       - typeScript
     type: method
@@ -55,11 +55,11 @@ items:
         type:
           - number
         description: ''
-  - uid: sp-core-library.TimeProvider.serviceKey
+  - uid: sp-test-library.TimeProvider.serviceKey
     summary: The service key for ITimeProvider.
     isPreview: true
     name: serviceKey
-    fullName: sp-core-library.TimeProvider.serviceKey
+    fullName: sp-test-library.TimeProvider.serviceKey
     langs:
       - typeScript
     type: property
