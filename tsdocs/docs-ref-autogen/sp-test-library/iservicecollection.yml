@@ -1,0 +1,32 @@
+### YamlMime:UniversalReference
+items:
+  - uid: sp-test-library.IServiceCollection
+    summary: A shorthand pattern for extracting well-known services from a ServiceScope.
+    deprecated:
+      content: >-
+        This pattern has been superceded by the BaseComponentContext pattern. This interface will be removed in a future
+        release.
+    name: IServiceCollection
+    fullName: sp-test-library.IServiceCollection
+    langs:
+      - typeScript
+    type: interface
+    package: sp-test-library
+    children:
+      - sp-test-library.IServiceCollection.serviceScope
+  - uid: sp-test-library.IServiceCollection.serviceScope
+    summary: Returns the underlying ServiceScope that the members belong to.
+    deprecated:
+      content: >-
+        This pattern has been superceded by the BaseComponentContext pattern. This interface will be removed in a future
+        release.
+    name: serviceScope
+    fullName: sp-test-library.IServiceCollection.serviceScope
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'serviceScope: ServiceScope;'
+      return:
+        type:
+          - ServiceScope

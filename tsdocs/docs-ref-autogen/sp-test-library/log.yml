@@ -1,0 +1,140 @@
+### YamlMime:UniversalReference
+items:
+  - uid: sp-test-library.Log
+    summary: A basic redirectable logging system.
+    remarks: >-
+      The Log class provides static methods for logging messages at different levels (verbose, info, warning, error) and
+      with context information. Context information helps identify which component generated the messages and allows for
+      filtering of log events. In a SharePoint Framework application, these messages will appear on the developer
+      dashboard.
+    name: Log
+    fullName: sp-test-library.Log
+    langs:
+      - typeScript
+    type: class
+    package: sp-test-library
+    children:
+      - sp-test-library.Log.error
+      - sp-test-library.Log.info
+      - sp-test-library.Log.verbose
+      - sp-test-library.Log.warn
+  - uid: sp-test-library.Log.error
+    summary: Logs an error.
+    name: 'error(source, error, scope)'
+    fullName: sp-test-library.Log.error
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public static error(source: string, error: Error, scope?: ServiceScope): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: source
+          description: >-
+            the source from where the error is logged, e.g., the class name. The source provides context information for
+            the logged error. If the source's length is more than 20, only the first 20 characters are kept.
+          type:
+            - string
+        - id: error
+          description: the error to be logged
+          type:
+            - Error
+        - id: scope
+          description: >-
+            the service scope that the source uses. A service scope can provide more context information (e.g., web part
+            information) to the logged error.
+          type:
+            - ServiceScope
+  - uid: sp-test-library.Log.info
+    summary: Logs a general informational message.
+    name: 'info(source, message, scope)'
+    fullName: sp-test-library.Log.info
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public static info(source: string, message: string, scope?: ServiceScope): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: source
+          description: >-
+            the source from where the message is logged, e.g., the class name. The source provides context information
+            for the logged message. If the source's length is more than 20, only the first 20 characters are kept.
+          type:
+            - string
+        - id: message
+          description: 'the message to be logged If the message''s length is more than 100, only the first 100 characters are kept.'
+          type:
+            - string
+        - id: scope
+          description: >-
+            the service scope that the source uses. A service scope can provide more context information (e.g., web part
+            information) to the logged message.
+          type:
+            - ServiceScope
+  - uid: sp-test-library.Log.verbose
+    summary: Logs a message which contains detailed information that is generally only needed for troubleshooting.
+    name: 'verbose(source, message, scope)'
+    fullName: sp-test-library.Log.verbose
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public static verbose(source: string, message: string, scope?: ServiceScope): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: source
+          description: >-
+            the source from where the message is logged, e.g., the class name. The source provides context information
+            for the logged message. If the source's length is more than 20, only the first 20 characters are kept.
+          type:
+            - string
+        - id: message
+          description: 'the message to be logged If the message''s length is more than 100, only the first 100 characters are kept.'
+          type:
+            - string
+        - id: scope
+          description: >-
+            the service scope that the source uses. A service scope can provide more context information (e.g., web part
+            information) to the logged message.
+          type:
+            - ServiceScope
+  - uid: sp-test-library.Log.warn
+    summary: Logs a warning.
+    name: 'warn(source, message, scope)'
+    fullName: sp-test-library.Log.warn
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public static warn(source: string, message: string, scope?: ServiceScope): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: source
+          description: >-
+            the source from where the message is logged, e.g., the class name. The source provides context information
+            for the logged message. If the source's length is more than 20, only the first 20 characters are kept.
+          type:
+            - string
+        - id: message
+          description: 'the message to be logged If the message''s length is more than 100, only the first 100 characters are kept.'
+          type:
+            - string
+        - id: scope
+          description: >-
+            the service scope that the source uses. A service scope can provide more context information (e.g., web part
+            information) to the logged message.
+          type:
+            - ServiceScope

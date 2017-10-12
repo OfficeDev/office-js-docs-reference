@@ -1,0 +1,70 @@
+### YamlMime:UniversalReference
+items:
+  - uid: sp-test-library.TimeProvider
+    summary: This is the default implementation of ITimeProvider that simply calls the real browser APIs.
+    name: TimeProvider
+    fullName: sp-test-library.TimeProvider
+    langs:
+      - typeScript
+    type: class
+    implements:
+      - ITimeProvider
+    package: sp-test-library
+    children:
+      - sp-test-library.TimeProvider.constructor
+      - sp-test-library.TimeProvider.getDate
+      - sp-test-library.TimeProvider.getTimestamp
+      - sp-test-library.TimeProvider.serviceKey
+  - uid: sp-test-library.TimeProvider.constructor
+    summary: 'Constructs a new instance of the [TimeProvider](xref:sp-test-library.TimeProvider) class'
+    name: constructor(serviceScope)
+    fullName: sp-test-library.TimeProvider.constructor
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(serviceScope: ServiceScope);'
+      parameters:
+        - id: serviceScope
+          description: ''
+          type:
+            - ServiceScope
+  - uid: sp-test-library.TimeProvider.getDate
+    summary: Returns the current date/time.
+    name: getDate()
+    fullName: sp-test-library.TimeProvider.getDate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public getDate(): Date;'
+      return:
+        type:
+          - Date
+        description: ''
+  - uid: sp-test-library.TimeProvider.getTimestamp
+    summary: 'Returns a DOMHighResTimeStamp timing measurement, as defined by the standard performance.now() API.'
+    name: getTimestamp()
+    fullName: sp-test-library.TimeProvider.getTimestamp
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public getTimestamp(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: sp-test-library.TimeProvider.serviceKey
+    summary: The service key for ITimeProvider.
+    isPreview: true
+    name: serviceKey
+    fullName: sp-test-library.TimeProvider.serviceKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'public static serviceKey: ServiceKey<ITimeProvider>;'
+      return:
+        type:
+          - ServiceKey<ITimeProvider>

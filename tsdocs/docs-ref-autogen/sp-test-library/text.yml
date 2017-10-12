@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: sp-test-library.Text
+    summary: Operations for working with strings that contain text.
+    remarks: 'The utilities provided by this class are intended to be simple, small, and very broadly applicable.'
+    name: Text
+    fullName: sp-test-library.Text
+    langs:
+      - typeScript
+    type: class
+    package: sp-test-library
+    children:
+      - sp-test-library.Text.format
+  - uid: sp-test-library.Text.format
+    summary: Format a string by substituting parameters.
+    remarks: >-
+      This function replaces template parameters such as "{0}" or "{1}" with the corresponding argument. If the value is
+      null or undefined, it will be replaced by the word "null" or "undefined". The format string s must not be null or
+      undefined.
+
+       Usage example:
+
+       Text.format("hello {0}!", "mike") will return "hello mike!"
+    name: 'format(s, values)'
+    fullName: sp-test-library.Text.format
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public static format(s: string, ...values: any[]): string;'
+      return:
+        type:
+          - string
+        description: ''
+      parameters:
+        - id: s
+          description: ''
+          type:
+            - string
+        - id: values
+          description: ''
+          type:
+            - 'any[]'

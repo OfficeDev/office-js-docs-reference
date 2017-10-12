@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: sp-test-library.ITimeProvider
+    summary: This is a ServiceScope interface that enables unit tests to simulate the system clock.
+    name: ITimeProvider
+    fullName: sp-test-library.ITimeProvider
+    langs:
+      - typeScript
+    type: interface
+    package: sp-test-library
+    children:
+      - sp-test-library.ITimeProvider.getDate
+      - sp-test-library.ITimeProvider.getTimestamp
+  - uid: sp-test-library.ITimeProvider.getDate
+    summary: Returns the current date/time.
+    name: getDate()
+    fullName: sp-test-library.ITimeProvider.getDate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDate(): Date;'
+      return:
+        type:
+          - Date
+        description: ''
+  - uid: sp-test-library.ITimeProvider.getTimestamp
+    summary: 'Returns a DOMHighResTimeStamp timing measurement, as defined by the standard performance.now() API.'
+    name: getTimestamp()
+    fullName: sp-test-library.ITimeProvider.getTimestamp
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTimestamp(): number;'
+      return:
+        type:
+          - number
+        description: ''
