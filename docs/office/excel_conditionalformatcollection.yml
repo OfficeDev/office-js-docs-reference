@@ -1,0 +1,163 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_ConditionalFormatCollection
+    summary: |-
+      Represents a collection of all the conditional formats that are overlap the range. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: Excel_ConditionalFormatCollection
+    fullName: office.Excel_ConditionalFormatCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel_ConditionalFormatCollection.add
+      - office.Excel_ConditionalFormatCollection.clearAll
+      - office.Excel_ConditionalFormatCollection.getCount
+      - office.Excel_ConditionalFormatCollection.getItem
+      - office.Excel_ConditionalFormatCollection.getItemAt
+      - office.Excel_ConditionalFormatCollection.items
+      - office.Excel_ConditionalFormatCollection.load
+      - office.Excel_ConditionalFormatCollection.toJSON
+  - uid: office.Excel_ConditionalFormatCollection.add
+    summary: |-
+      Adds a new conditional format to the collection at the first/top priority. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: add(type)
+    fullName: office.Excel_ConditionalFormatCollection.add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(type: string): Excel.ConditionalFormat;'
+      return:
+        type:
+          - Excel.ConditionalFormat
+        description: ''
+      parameters:
+        - id: type
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_ConditionalFormatCollection.clearAll
+    summary: |-
+      Clears all conditional formats active on the current specified range. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: clearAll()
+    fullName: office.Excel_ConditionalFormatCollection.clearAll
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearAll(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Excel_ConditionalFormatCollection.getCount
+    summary: |-
+      Returns the number of conditional formats in the workbook. Read-only. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: getCount()
+    fullName: office.Excel_ConditionalFormatCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: office.Excel_ConditionalFormatCollection.getItem
+    summary: |-
+      Returns a conditional format for the given ID. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: getItem(id)
+    fullName: office.Excel_ConditionalFormatCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(id: string): Excel.ConditionalFormat;'
+      return:
+        type:
+          - Excel.ConditionalFormat
+        description: Conditional Format object.
+      parameters:
+        - id: id
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_ConditionalFormatCollection.getItemAt
+    summary: |-
+      Returns a conditional format at the given index. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: getItemAt(index)
+    fullName: office.Excel_ConditionalFormatCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.ConditionalFormat;'
+      return:
+        type:
+          - Excel.ConditionalFormat
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel_ConditionalFormatCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.Excel_ConditionalFormatCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<Excel.ConditionalFormat>;'
+      return:
+        type:
+          - Array<Excel.ConditionalFormat>
+  - uid: office.Excel_ConditionalFormatCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel_ConditionalFormatCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalFormatCollection;'
+      return:
+        type:
+          - Excel.ConditionalFormatCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel_ConditionalFormatCollection.toJSON
+    name: toJSON()
+    fullName: office.Excel_ConditionalFormatCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - '{}'
+        description: ''

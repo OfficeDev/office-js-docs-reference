@@ -1,0 +1,122 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_ProjectViewTypes
+    name: Office_ProjectViewTypes
+    fullName: office.Office_ProjectViewTypes
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office_ProjectViewTypes.Calendar
+      - office.Office_ProjectViewTypes.Gantt
+      - office.Office_ProjectViewTypes.NetworkDiagram
+      - office.Office_ProjectViewTypes.ResourceForm
+      - office.Office_ProjectViewTypes.ResourceGraph
+      - office.Office_ProjectViewTypes.ResourceNames
+      - office.Office_ProjectViewTypes.ResourceSheet
+      - office.Office_ProjectViewTypes.ResourceUsage
+      - office.Office_ProjectViewTypes.TaskDetails
+      - office.Office_ProjectViewTypes.TaskDiagram
+      - office.Office_ProjectViewTypes.TaskForm
+      - office.Office_ProjectViewTypes.TaskNameForm
+      - office.Office_ProjectViewTypes.TaskSheet
+      - office.Office_ProjectViewTypes.TaskUsage
+      - office.Office_ProjectViewTypes.TeamPlanner
+      - office.Office_ProjectViewTypes.Timeline
+  - uid: office.Office_ProjectViewTypes.Calendar
+    name: Calendar
+    fullName: office.Office_ProjectViewTypes.Calendar
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_ProjectViewTypes.Gantt
+    name: Gantt
+    fullName: office.Office_ProjectViewTypes.Gantt
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_ProjectViewTypes.NetworkDiagram
+    name: NetworkDiagram
+    fullName: office.Office_ProjectViewTypes.NetworkDiagram
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_ProjectViewTypes.ResourceForm
+    name: ResourceForm
+    fullName: office.Office_ProjectViewTypes.ResourceForm
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_ProjectViewTypes.ResourceGraph
+    name: ResourceGraph
+    fullName: office.Office_ProjectViewTypes.ResourceGraph
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_ProjectViewTypes.ResourceNames
+    name: ResourceNames
+    fullName: office.Office_ProjectViewTypes.ResourceNames
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_ProjectViewTypes.ResourceSheet
+    name: ResourceSheet
+    fullName: office.Office_ProjectViewTypes.ResourceSheet
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_ProjectViewTypes.ResourceUsage
+    name: ResourceUsage
+    fullName: office.Office_ProjectViewTypes.ResourceUsage
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_ProjectViewTypes.TaskDetails
+    name: TaskDetails
+    fullName: office.Office_ProjectViewTypes.TaskDetails
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_ProjectViewTypes.TaskDiagram
+    name: TaskDiagram
+    fullName: office.Office_ProjectViewTypes.TaskDiagram
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_ProjectViewTypes.TaskForm
+    name: TaskForm
+    fullName: office.Office_ProjectViewTypes.TaskForm
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_ProjectViewTypes.TaskNameForm
+    name: TaskNameForm
+    fullName: office.Office_ProjectViewTypes.TaskNameForm
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_ProjectViewTypes.TaskSheet
+    name: TaskSheet
+    fullName: office.Office_ProjectViewTypes.TaskSheet
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_ProjectViewTypes.TaskUsage
+    name: TaskUsage
+    fullName: office.Office_ProjectViewTypes.TaskUsage
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_ProjectViewTypes.TeamPlanner
+    name: TeamPlanner
+    fullName: office.Office_ProjectViewTypes.TeamPlanner
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_ProjectViewTypes.Timeline
+    name: Timeline
+    fullName: office.Office_ProjectViewTypes.Timeline
+    langs:
+      - typeScript
+    type: field

@@ -1,0 +1,91 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_Recipients
+    name: Office_Recipients
+    fullName: office.Office_Recipients
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_Recipients.addAsync
+      - office.Office_Recipients.getAsync
+      - office.Office_Recipients.setAsync
+  - uid: office.Office_Recipients.addAsync
+    summary: Begins an asynchronous request to add a recipient list to an appointment or message
+    name: 'addAsync(recipients, options, callback)'
+    fullName: office.Office_Recipients.addAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, options?: AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: recipients
+          description: ''
+          type:
+            - Array<string | EmailUser | EmailAddressDetails>
+        - id: options
+          description: ''
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Recipients.getAsync
+    summary: Begins an asynchronous request to get the recipient list for an appointment or message
+    name: 'getAsync(options, callback)'
+    fullName: office.Office_Recipients.getAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Recipients.setAsync
+    summary: Begins an asynchronous request to set the recipient list for an appointment or message
+    name: 'setAsync(recipients, options, callback)'
+    fullName: office.Office_Recipients.setAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        setAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, options?: AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: recipients
+          description: ''
+          type:
+            - Array<string | EmailUser | EmailAddressDetails>
+        - id: options
+          description: ''
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'

@@ -1,0 +1,85 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OneNote_InkAnalysis
+    summary: |-
+      Represents ink analysis data for a given set of ink strokes. 
+
+       \[Api set: OneNoteApi 1.1\]
+    name: OneNote_InkAnalysis
+    fullName: office.OneNote_InkAnalysis
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.OneNote_InkAnalysis.id
+      - office.OneNote_InkAnalysis.load
+      - office.OneNote_InkAnalysis.page
+      - office.OneNote_InkAnalysis.paragraphs
+  - uid: office.OneNote_InkAnalysis.id
+    summary: |-
+      Gets the ID of the InkAnalysis object. Read-only. 
+
+       \[Api set: OneNoteApi 1.1\]
+    name: id
+    fullName: office.OneNote_InkAnalysis.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: office.OneNote_InkAnalysis.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.OneNote_InkAnalysis.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.InkAnalysis;'
+      return:
+        type:
+          - OneNote.InkAnalysis
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.OneNote_InkAnalysis.page
+    summary: |-
+      Gets the parent page object. Read-only. 
+
+       \[Api set: OneNoteApi 1.1\]
+    name: page
+    fullName: office.OneNote_InkAnalysis.page
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'page: OneNote.Page;'
+      return:
+        type:
+          - OneNote.Page
+  - uid: office.OneNote_InkAnalysis.paragraphs
+    summary: |-
+      Gets the ink analysis paragraphs in this page. Read-only. 
+
+       \[Api set: OneNoteApi 1.1\]
+    name: paragraphs
+    fullName: office.OneNote_InkAnalysis.paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraphs: OneNote.InkAnalysisParagraphCollection;'
+      return:
+        type:
+          - OneNote.InkAnalysisParagraphCollection

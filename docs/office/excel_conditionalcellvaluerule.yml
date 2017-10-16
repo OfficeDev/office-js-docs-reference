@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_ConditionalCellValueRule
+    summary: |-
+      Represents a Cell Value Conditional Format Rule 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: Excel_ConditionalCellValueRule
+    fullName: office.Excel_ConditionalCellValueRule
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel_ConditionalCellValueRule.formula1
+      - office.Excel_ConditionalCellValueRule.formula2
+      - office.Excel_ConditionalCellValueRule.operator
+  - uid: office.Excel_ConditionalCellValueRule.formula1
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: formula1
+    fullName: office.Excel_ConditionalCellValueRule.formula1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula1: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel_ConditionalCellValueRule.formula2
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: formula2
+    fullName: office.Excel_ConditionalCellValueRule.formula2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula2?: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel_ConditionalCellValueRule.operator
+    summary: |-
+      The operator of the text conditional format. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: operator
+    fullName: office.Excel_ConditionalCellValueRule.operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator: string;'
+      return:
+        type:
+          - string

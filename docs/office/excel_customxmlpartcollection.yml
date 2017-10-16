@@ -1,0 +1,169 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_CustomXmlPartCollection
+    summary: |-
+      A collection of custom XML parts. 
+
+       \[Api set: ExcelApi 1.5\]
+    name: Excel_CustomXmlPartCollection
+    fullName: office.Excel_CustomXmlPartCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel_CustomXmlPartCollection.add
+      - office.Excel_CustomXmlPartCollection.getByNamespace
+      - office.Excel_CustomXmlPartCollection.getCount
+      - office.Excel_CustomXmlPartCollection.getItem
+      - office.Excel_CustomXmlPartCollection.getItemOrNullObject
+      - office.Excel_CustomXmlPartCollection.items
+      - office.Excel_CustomXmlPartCollection.load
+      - office.Excel_CustomXmlPartCollection.toJSON
+  - uid: office.Excel_CustomXmlPartCollection.add
+    summary: |-
+      Adds a new custom XML part to the workbook. 
+
+       \[Api set: ExcelApi 1.5\]
+    name: add(xml)
+    fullName: office.Excel_CustomXmlPartCollection.add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(xml: string): Excel.CustomXmlPart;'
+      return:
+        type:
+          - Excel.CustomXmlPart
+        description: ''
+      parameters:
+        - id: xml
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_CustomXmlPartCollection.getByNamespace
+    summary: |-
+      Gets a new scoped collection of custom XML parts whose namespaces match the given namespace. 
+
+       \[Api set: ExcelApi 1.5\]
+    name: getByNamespace(namespaceUri)
+    fullName: office.Excel_CustomXmlPartCollection.getByNamespace
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByNamespace(namespaceUri: string): Excel.CustomXmlPartScopedCollection;'
+      return:
+        type:
+          - Excel.CustomXmlPartScopedCollection
+        description: ''
+      parameters:
+        - id: namespaceUri
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_CustomXmlPartCollection.getCount
+    summary: |-
+      Gets the number of CustomXml parts in the collection. 
+
+       \[Api set: ExcelApi 1.5\]
+    name: getCount()
+    fullName: office.Excel_CustomXmlPartCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: office.Excel_CustomXmlPartCollection.getItem
+    summary: |-
+      Gets a custom XML part based on its ID. 
+
+       \[Api set: ExcelApi 1.5\]
+    name: getItem(id)
+    fullName: office.Excel_CustomXmlPartCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(id: string): Excel.CustomXmlPart;'
+      return:
+        type:
+          - Excel.CustomXmlPart
+        description: ''
+      parameters:
+        - id: id
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_CustomXmlPartCollection.getItemOrNullObject
+    summary: >-
+      Gets a custom XML part based on its ID. If the CustomXmlPart does not exist, the return object's isNull property
+      will be true. 
+
+       \[Api set: ExcelApi 1.5\]
+    name: getItemOrNullObject(id)
+    fullName: office.Excel_CustomXmlPartCollection.getItemOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(id: string): Excel.CustomXmlPart;'
+      return:
+        type:
+          - Excel.CustomXmlPart
+        description: ''
+      parameters:
+        - id: id
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_CustomXmlPartCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.Excel_CustomXmlPartCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<Excel.CustomXmlPart>;'
+      return:
+        type:
+          - Array<Excel.CustomXmlPart>
+  - uid: office.Excel_CustomXmlPartCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel_CustomXmlPartCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.CustomXmlPartCollection;'
+      return:
+        type:
+          - Excel.CustomXmlPartCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel_CustomXmlPartCollection.toJSON
+    name: toJSON()
+    fullName: office.Excel_CustomXmlPartCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - '{}'
+        description: ''

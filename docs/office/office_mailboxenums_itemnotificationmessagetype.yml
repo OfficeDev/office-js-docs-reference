@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_MailboxEnums_ItemNotificationMessageType
+    name: Office_MailboxEnums_ItemNotificationMessageType
+    fullName: office.Office_MailboxEnums_ItemNotificationMessageType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office_MailboxEnums_ItemNotificationMessageType.ErrorMessage
+      - office.Office_MailboxEnums_ItemNotificationMessageType.InformationalMessage
+      - office.Office_MailboxEnums_ItemNotificationMessageType.ProgressIndicator
+  - uid: office.Office_MailboxEnums_ItemNotificationMessageType.ErrorMessage
+    summary: The notificationMessage is an error message.
+    name: ErrorMessage
+    fullName: office.Office_MailboxEnums_ItemNotificationMessageType.ErrorMessage
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_MailboxEnums_ItemNotificationMessageType.InformationalMessage
+    summary: The notificationMessage is an informational message.
+    name: InformationalMessage
+    fullName: office.Office_MailboxEnums_ItemNotificationMessageType.InformationalMessage
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_MailboxEnums_ItemNotificationMessageType.ProgressIndicator
+    summary: The notificationMessage is a progress indicator.
+    name: ProgressIndicator
+    fullName: office.Office_MailboxEnums_ItemNotificationMessageType.ProgressIndicator
+    langs:
+      - typeScript
+    type: field

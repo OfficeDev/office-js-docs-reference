@@ -1,0 +1,235 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_TableBinding
+    name: Office_TableBinding
+    fullName: office.Office_TableBinding
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Binding
+    package: office
+    children:
+      - office.Office_TableBinding.addColumnsAsync
+      - office.Office_TableBinding.addRowsAsync
+      - office.Office_TableBinding.clearFormatsAsync
+      - office.Office_TableBinding.columnCount
+      - office.Office_TableBinding.deleteAllDataValuesAsync
+      - office.Office_TableBinding.getFormatsAsync
+      - office.Office_TableBinding.hasHeaders
+      - office.Office_TableBinding.rowCount
+      - office.Office_TableBinding.setFormatsAsync
+      - office.Office_TableBinding.setTableOptionsAsync
+  - uid: office.Office_TableBinding.addColumnsAsync
+    summary: Adds the specified columns to the table
+    name: 'addColumnsAsync(tableData, options, callback)'
+    fullName: office.Office_TableBinding.addColumnsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addColumnsAsync(tableData: TableData | any[][], options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: tableData
+          description: ''
+          type:
+            - 'TableData | any[][]'
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_TableBinding.addRowsAsync
+    summary: Adds the specified rows to the table
+    name: 'addRowsAsync(rows, options, callback)'
+    fullName: office.Office_TableBinding.addRowsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addRowsAsync(rows: TableData | any[][], options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rows
+          description: ''
+          type:
+            - 'TableData | any[][]'
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_TableBinding.clearFormatsAsync
+    summary: Clears formatting on the bound table.
+    name: 'clearFormatsAsync(options, callback)'
+    fullName: office.Office_TableBinding.clearFormatsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearFormatsAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_TableBinding.columnCount
+    name: columnCount
+    fullName: office.Office_TableBinding.columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnCount: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office_TableBinding.deleteAllDataValuesAsync
+    summary: Clears the table
+    name: 'deleteAllDataValuesAsync(options, callback)'
+    fullName: office.Office_TableBinding.deleteAllDataValuesAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteAllDataValuesAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_TableBinding.getFormatsAsync
+    summary: Gets the formatting on specified items in the table.
+    name: 'getFormatsAsync(cellReference, formats, options, callback)'
+    fullName: office.Office_TableBinding.getFormatsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getFormatsAsync(cellReference?: any, formats?: any[], options?: any, callback?: (result: AsyncResult) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cellReference
+          description: ''
+          type:
+            - any
+        - id: formats
+          description: ''
+          type:
+            - 'any[]'
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_TableBinding.hasHeaders
+    name: hasHeaders
+    fullName: office.Office_TableBinding.hasHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasHeaders: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Office_TableBinding.rowCount
+    name: rowCount
+    fullName: office.Office_TableBinding.rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowCount: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office_TableBinding.setFormatsAsync
+    summary: Sets formatting on specified items and data in the table.
+    name: 'setFormatsAsync(formatsInfo, options, callback)'
+    fullName: office.Office_TableBinding.setFormatsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormatsAsync(formatsInfo?: any[], options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formatsInfo
+          description: ''
+          type:
+            - 'any[]'
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_TableBinding.setTableOptionsAsync
+    summary: Updates table formatting options on the bound table.
+    name: 'setTableOptionsAsync(tableOptions, options, callback)'
+    fullName: office.Office_TableBinding.setTableOptionsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTableOptionsAsync(tableOptions: any, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: tableOptions
+          description: ''
+          type:
+            - any
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'

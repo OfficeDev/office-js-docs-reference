@@ -1,0 +1,85 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OneNote_FloatingInk
+    summary: |-
+      Represents a group of ink strokes. 
+
+       \[Api set: OneNoteApi 1.1\]
+    name: OneNote_FloatingInk
+    fullName: office.OneNote_FloatingInk
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.OneNote_FloatingInk.id
+      - office.OneNote_FloatingInk.inkStrokes
+      - office.OneNote_FloatingInk.load
+      - office.OneNote_FloatingInk.pageContent
+  - uid: office.OneNote_FloatingInk.id
+    summary: |-
+      Gets the ID of the FloatingInk object. Read-only. 
+
+       \[Api set: OneNoteApi 1.1\]
+    name: id
+    fullName: office.OneNote_FloatingInk.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: office.OneNote_FloatingInk.inkStrokes
+    summary: |-
+      Gets the strokes of the FloatingInk object. Read-only. 
+
+       \[Api set: OneNoteApi 1.1\]
+    name: inkStrokes
+    fullName: office.OneNote_FloatingInk.inkStrokes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inkStrokes: OneNote.InkStrokeCollection;'
+      return:
+        type:
+          - OneNote.InkStrokeCollection
+  - uid: office.OneNote_FloatingInk.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.OneNote_FloatingInk.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.FloatingInk;'
+      return:
+        type:
+          - OneNote.FloatingInk
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.OneNote_FloatingInk.pageContent
+    summary: |-
+      Gets the PageContent parent of the FloatingInk object. Read-only. 
+
+       \[Api set: OneNoteApi 1.1\]
+    name: pageContent
+    fullName: office.OneNote_FloatingInk.pageContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageContent: OneNote.PageContent;'
+      return:
+        type:
+          - OneNote.PageContent

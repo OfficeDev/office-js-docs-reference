@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_FiveArrowsGraySet
+    name: Excel_FiveArrowsGraySet
+    fullName: office.Excel_FiveArrowsGraySet
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel_FiveArrowsGraySet.__index
+      - office.Excel_FiveArrowsGraySet.grayDownArrow
+      - office.Excel_FiveArrowsGraySet.grayDownInclineArrow
+      - office.Excel_FiveArrowsGraySet.graySideArrow
+      - office.Excel_FiveArrowsGraySet.grayUpArrow
+      - office.Excel_FiveArrowsGraySet.grayUpInclineArrow
+  - uid: office.Excel_FiveArrowsGraySet.__index
+    name: __index(index)
+    fullName: office.Excel_FiveArrowsGraySet.__index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[ index: number ]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel_FiveArrowsGraySet.grayDownArrow
+    name: grayDownArrow
+    fullName: office.Excel_FiveArrowsGraySet.grayDownArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayDownArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel_FiveArrowsGraySet.grayDownInclineArrow
+    name: grayDownInclineArrow
+    fullName: office.Excel_FiveArrowsGraySet.grayDownInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayDownInclineArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel_FiveArrowsGraySet.graySideArrow
+    name: graySideArrow
+    fullName: office.Excel_FiveArrowsGraySet.graySideArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'graySideArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel_FiveArrowsGraySet.grayUpArrow
+    name: grayUpArrow
+    fullName: office.Excel_FiveArrowsGraySet.grayUpArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayUpArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel_FiveArrowsGraySet.grayUpInclineArrow
+    name: grayUpInclineArrow
+    fullName: office.Excel_FiveArrowsGraySet.grayUpInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayUpInclineArrow: Icon;'
+      return:
+        type:
+          - Icon

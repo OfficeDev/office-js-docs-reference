@@ -1,0 +1,1185 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office
+    name: office
+    fullName: office
+    langs:
+      - typeScript
+    type: package
+    children:
+      - office.Excel_Application
+      - office.Excel_Binding
+      - office.Excel_BindingCollection
+      - office.Excel_BindingDataChangedEventArgs
+      - office.Excel_BindingSelectionChangedEventArgs
+      - office.Excel_CellValueConditionalFormat
+      - office.Excel_Chart
+      - office.Excel_ChartAreaFormat
+      - office.Excel_ChartAxes
+      - office.Excel_ChartAxis
+      - office.Excel_ChartAxisFormat
+      - office.Excel_ChartAxisTitle
+      - office.Excel_ChartAxisTitleFormat
+      - office.Excel_ChartCollection
+      - office.Excel_ChartDataLabelFormat
+      - office.Excel_ChartDataLabels
+      - office.Excel_ChartFill
+      - office.Excel_ChartFont
+      - office.Excel_ChartGridlines
+      - office.Excel_ChartGridlinesFormat
+      - office.Excel_ChartLegend
+      - office.Excel_ChartLegendFormat
+      - office.Excel_ChartLineFormat
+      - office.Excel_ChartPoint
+      - office.Excel_ChartPointFormat
+      - office.Excel_ChartPointsCollection
+      - office.Excel_ChartSeries
+      - office.Excel_ChartSeriesCollection
+      - office.Excel_ChartSeriesFormat
+      - office.Excel_ChartTitle
+      - office.Excel_ChartTitleFormat
+      - office.Excel_ColorScaleConditionalFormat
+      - office.Excel_ConditionalCellValueRule
+      - office.Excel_ConditionalColorScaleCriteria
+      - office.Excel_ConditionalColorScaleCriterion
+      - office.Excel_ConditionalDataBarNegativeFormat
+      - office.Excel_ConditionalDataBarPositiveFormat
+      - office.Excel_ConditionalDataBarRule
+      - office.Excel_ConditionalFormat
+      - office.Excel_ConditionalFormatCollection
+      - office.Excel_ConditionalFormatRule
+      - office.Excel_ConditionalIconCriterion
+      - office.Excel_ConditionalPresetCriteriaRule
+      - office.Excel_ConditionalRangeBorder
+      - office.Excel_ConditionalRangeBorderCollection
+      - office.Excel_ConditionalRangeFill
+      - office.Excel_ConditionalRangeFont
+      - office.Excel_ConditionalRangeFormat
+      - office.Excel_ConditionalTextComparisonRule
+      - office.Excel_ConditionalTopBottomRule
+      - office.Excel_CustomConditionalFormat
+      - office.Excel_CustomXmlPart
+      - office.Excel_CustomXmlPartCollection
+      - office.Excel_CustomXmlPartScopedCollection
+      - office.Excel_DataBarConditionalFormat
+      - office.Excel_Filter
+      - office.Excel_FilterCriteria
+      - office.Excel_FilterDatetime
+      - office.Excel_FiveArrowsGraySet
+      - office.Excel_FiveArrowsSet
+      - office.Excel_FiveBoxesSet
+      - office.Excel_FiveQuartersSet
+      - office.Excel_FiveRatingSet
+      - office.Excel_FormatProtection
+      - office.Excel_FourArrowsGraySet
+      - office.Excel_FourArrowsSet
+      - office.Excel_FourRatingSet
+      - office.Excel_FourRedToBlackSet
+      - office.Excel_FourTrafficLightsSet
+      - office.Excel_FunctionResult
+      - office.Excel_Functions
+      - office.Excel_Icon
+      - office.Excel_IconCollections
+      - office.Excel_IconSetConditionalFormat
+      - office.Excel_NamedItem
+      - office.Excel_NamedItemCollection
+      - office.Excel_PivotTable
+      - office.Excel_PivotTableCollection
+      - office.Excel_PresetCriteriaConditionalFormat
+      - office.Excel_Range
+      - office.Excel_RangeBorder
+      - office.Excel_RangeBorderCollection
+      - office.Excel_RangeFill
+      - office.Excel_RangeFont
+      - office.Excel_RangeFormat
+      - office.Excel_RangeReference
+      - office.Excel_RangeSort
+      - office.Excel_RangeView
+      - office.Excel_RangeViewCollection
+      - office.Excel_RequestContext
+      - office.Excel_run
+      - office.Excel_SelectionChangedEventArgs
+      - office.Excel_Session
+      - office.Excel_Setting
+      - office.Excel_SettingCollection
+      - office.Excel_SettingsChangedEventArgs
+      - office.Excel_SortField
+      - office.Excel_Table
+      - office.Excel_TableCollection
+      - office.Excel_TableColumn
+      - office.Excel_TableColumnCollection
+      - office.Excel_TableRow
+      - office.Excel_TableRowCollection
+      - office.Excel_TableSort
+      - office.Excel_TextConditionalFormat
+      - office.Excel_ThreeArrowsGraySet
+      - office.Excel_ThreeArrowsSet
+      - office.Excel_ThreeFlagsSet
+      - office.Excel_ThreeSignsSet
+      - office.Excel_ThreeStarsSet
+      - office.Excel_ThreeSymbols2Set
+      - office.Excel_ThreeSymbolsSet
+      - office.Excel_ThreeTrafficLights1Set
+      - office.Excel_ThreeTrafficLights2Set
+      - office.Excel_ThreeTrianglesSet
+      - office.Excel_TopBottomConditionalFormat
+      - office.Excel_Workbook
+      - office.Excel_Worksheet
+      - office.Excel_WorksheetCollection
+      - office.Excel_WorksheetProtection
+      - office.Excel_WorksheetProtectionOptions
+      - office.Office_ActiveView
+      - office.Office_Appointment
+      - office.Office_AppointmentCompose
+      - office.Office_AppointmentForm
+      - office.Office_AppointmentRead
+      - office.Office_AsyncContextOptions
+      - office.Office_AsyncResult
+      - office.Office_AsyncResultStatus
+      - office.Office_AttachmentDetails
+      - office.Office_Auth
+      - office.Office_AuthOptions
+      - office.Office_Binding
+      - office.Office_Bindings
+      - office.Office_BindingType
+      - office.Office_Body
+      - office.Office_cast_item_toAppointment
+      - office.Office_cast_item_toAppointmentCompose
+      - office.Office_cast_item_toAppointmentRead
+      - office.Office_cast_item_toItemCompose
+      - office.Office_cast_item_toItemRead
+      - office.Office_cast_item_toMessage
+      - office.Office_cast_item_toMessageCompose
+      - office.Office_cast_item_toMessageRead
+      - office.Office_CoercionType
+      - office.Office_CoercionTypeOptions
+      - office.Office_Contact
+      - office.Office_Context
+      - office.Office_CustomProperties
+      - office.Office_CustomXmlNode
+      - office.Office_CustomXmlPart
+      - office.Office_CustomXmlParts
+      - office.Office_CustomXmlPrefixMappings
+      - office.Office_Diagnostics
+      - office.Office_DialogHandler
+      - office.Office_DialogOptions
+      - office.Office_Document
+      - office.Office_DocumentMode
+      - office.Office_DocumentSelectionChangedEventArgs
+      - office.Office_EmailAddressDetails
+      - office.Office_EmailUser
+      - office.Office_Entities
+      - office.Office_Error
+      - office.Office_EventType
+      - office.Office_File
+      - office.Office_FileProperties
+      - office.Office_FileType
+      - office.Office_FilterType
+      - office.Office_GoToType
+      - office.Office_HostType
+      - office.Office_Index
+      - office.Office_InitializationReason
+      - office.Office_initialize
+      - office.Office_Item
+      - office.Office_ItemCompose
+      - office.Office_ItemRead
+      - office.Office_LocalClientTime
+      - office.Office_Location
+      - office.Office_Mailbox
+      - office.Office_MailboxEnums_AttachmentType
+      - office.Office_MailboxEnums_EntityType
+      - office.Office_MailboxEnums_ItemNotificationMessageType
+      - office.Office_MailboxEnums_ItemType
+      - office.Office_MailboxEnums_RecipientType
+      - office.Office_MailboxEnums_ResponseType
+      - office.Office_MailboxEnums_RestVersion
+      - office.Office_MatrixBinding
+      - office.Office_MeetingSuggestion
+      - office.Office_Message
+      - office.Office_MessageCompose
+      - office.Office_MessageRead
+      - office.Office_NotificationMessageDetails
+      - office.Office_NotificationMessages
+      - office.Office_OfficeTheme
+      - office.Office_PhoneNumber
+      - office.Office_PlatformType
+      - office.Office_ProjectProjectFields
+      - office.Office_ProjectResourceFields
+      - office.Office_ProjectTaskFields
+      - office.Office_ProjectViewTypes
+      - office.Office_Recipients
+      - office.Office_ReplyFormAttachment
+      - office.Office_ReplyFormData
+      - office.Office_RoamingSettings
+      - office.Office_select
+      - office.Office_SelectionMode
+      - office.Office_Settings
+      - office.Office_Slice
+      - office.Office_SourceProperty
+      - office.Office_Subject
+      - office.Office_Table
+      - office.Office_TableBinding
+      - office.Office_TableData
+      - office.Office_TaskSuggestion
+      - office.Office_TextBinding
+      - office.Office_Time
+      - office.Office_UI
+      - office.Office_UserProfile
+      - office.Office_useShortNamespace
+      - office.Office_ValueFormat
+      - office.OfficeCore_ABType
+      - office.OfficeCore_FlightingService
+      - office.OfficeCore_RequestContext
+      - office.OfficeCore_ScopedValue
+      - office.OfficeExtension_ClientObject
+      - office.OfficeExtension_ClientRequestContext
+      - office.OfficeExtension_ClientResult
+      - office.OfficeExtension_DebugInfo
+      - office.OfficeExtension_Error
+      - office.OfficeExtension_ErrorCodes
+      - office.OfficeExtension_EventHandlerResult
+      - office.OfficeExtension_EventHandlers
+      - office.OfficeExtension_EventInfo
+      - office.OfficeExtension_IPromise
+      - office.OfficeExtension_LoadOption
+      - office.OfficeExtension_Promise
+      - office.OfficeExtension_RequestUrlAndHeaderInfo
+      - office.OfficeExtension_TrackedObjects
+      - office.OneNote_Application
+      - office.OneNote_FloatingInk
+      - office.OneNote_Image
+      - office.OneNote_ImageOcrData
+      - office.OneNote_InkAnalysis
+      - office.OneNote_InkAnalysisLine
+      - office.OneNote_InkAnalysisLineCollection
+      - office.OneNote_InkAnalysisParagraph
+      - office.OneNote_InkAnalysisParagraphCollection
+      - office.OneNote_InkAnalysisWord
+      - office.OneNote_InkAnalysisWordCollection
+      - office.OneNote_InkStroke
+      - office.OneNote_InkStrokeCollection
+      - office.OneNote_InkStrokePointer
+      - office.OneNote_InkWord
+      - office.OneNote_InkWordCollection
+      - office.OneNote_Notebook
+      - office.OneNote_NotebookCollection
+      - office.OneNote_Outline
+      - office.OneNote_Page
+      - office.OneNote_PageCollection
+      - office.OneNote_PageContent
+      - office.OneNote_PageContentCollection
+      - office.OneNote_Paragraph
+      - office.OneNote_ParagraphCollection
+      - office.OneNote_RequestContext
+      - office.OneNote_RichText
+      - office.OneNote_run
+      - office.OneNote_Section
+      - office.OneNote_SectionCollection
+      - office.OneNote_SectionGroup
+      - office.OneNote_SectionGroupCollection
+      - office.OneNote_Table
+      - office.OneNote_TableCell
+      - office.OneNote_TableCellCollection
+      - office.OneNote_TableRow
+      - office.OneNote_TableRowCollection
+      - office.Word_Body
+      - office.Word_ContentControl
+      - office.Word_ContentControlCollection
+      - office.Word_CustomProperty
+      - office.Word_CustomPropertyCollection
+      - office.Word_Document
+      - office.Word_DocumentProperties
+      - office.Word_Font
+      - office.Word_InlinePicture
+      - office.Word_InlinePictureCollection
+      - office.Word_List
+      - office.Word_ListCollection
+      - office.Word_ListItem
+      - office.Word_Paragraph
+      - office.Word_ParagraphCollection
+      - office.Word_Range
+      - office.Word_RangeCollection
+      - office.Word_RequestContext
+      - office.Word_run
+      - office.Word_SearchOptions
+      - office.Word_Section
+      - office.Word_SectionCollection
+      - office.Word_Table
+      - office.Word_TableBorder
+      - office.Word_TableCell
+      - office.Word_TableCellCollection
+      - office.Word_TableCollection
+      - office.Word_TableRow
+      - office.Word_TableRowCollection
+  - uid: office.Excel_run
+    summary: >-
+      Executes a batch script that performs actions on the Excel object model, using the remote RequestContext of
+      previously-created API objects.
+    name: 'Excel_run(requestInfo, objects, batch)'
+    fullName: office.Excel_run
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        function run < T >(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, objects:
+        OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>):
+        OfficeExtension.IPromise<T>;
+      return:
+        type:
+          - OfficeExtension.IPromise<T>
+        description: ''
+      parameters:
+        - id: requestInfo
+          description: The URL of the remote workbook and the request headers to be sent.
+          type:
+            - OfficeExtension.RequestUrlAndHeaderInfo | Session
+        - id: objects
+          description: >-
+            An array of previously-created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared RequestContext, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
+          type:
+            - 'OfficeExtension.ClientObject[]'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            add-in and the Excel application run in two different processes, the RequestContext is required to get
+            access to the Excel object model from the add-in.
+          type:
+            - '(context: Excel.RequestContext) => OfficeExtension.IPromise<T>'
+  - uid: office.Office_cast_item_toAppointment
+    name: Office_cast_item_toAppointment(item)
+    fullName: office.Office_cast_item_toAppointment
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'function toAppointment(item: Office.Item): Office.Appointment;'
+      return:
+        type:
+          - Office.Appointment
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
+  - uid: office.Office_cast_item_toAppointmentCompose
+    name: Office_cast_item_toAppointmentCompose(item)
+    fullName: office.Office_cast_item_toAppointmentCompose
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'function toAppointmentCompose(item: Office.Item): Office.AppointmentCompose;'
+      return:
+        type:
+          - Office.AppointmentCompose
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
+  - uid: office.Office_cast_item_toAppointmentRead
+    name: Office_cast_item_toAppointmentRead(item)
+    fullName: office.Office_cast_item_toAppointmentRead
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'function toAppointmentRead(item: Office.Item): Office.AppointmentRead;'
+      return:
+        type:
+          - Office.AppointmentRead
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
+  - uid: office.Office_cast_item_toItemCompose
+    name: Office_cast_item_toItemCompose(item)
+    fullName: office.Office_cast_item_toItemCompose
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'function toItemCompose(item: Office.Item): Office.ItemCompose;'
+      return:
+        type:
+          - Office.ItemCompose
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
+  - uid: office.Office_cast_item_toItemRead
+    name: Office_cast_item_toItemRead(item)
+    fullName: office.Office_cast_item_toItemRead
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'function toItemRead(item: Office.Item): Office.ItemRead;'
+      return:
+        type:
+          - Office.ItemRead
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
+  - uid: office.Office_cast_item_toMessage
+    name: Office_cast_item_toMessage(item)
+    fullName: office.Office_cast_item_toMessage
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'function toMessage(item: Office.Item): Office.Message;'
+      return:
+        type:
+          - Office.Message
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
+  - uid: office.Office_cast_item_toMessageCompose
+    name: Office_cast_item_toMessageCompose(item)
+    fullName: office.Office_cast_item_toMessageCompose
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'function toMessageCompose(item: Office.Item): Office.MessageCompose;'
+      return:
+        type:
+          - Office.MessageCompose
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
+  - uid: office.Office_cast_item_toMessageRead
+    name: Office_cast_item_toMessageRead(item)
+    fullName: office.Office_cast_item_toMessageRead
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'function toMessageRead(item: Office.Item): Office.MessageRead;'
+      return:
+        type:
+          - Office.MessageRead
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
+  - uid: office.Office_initialize
+    summary: This method is called after the Office API was loaded.
+    name: Office_initialize(reason)
+    fullName: office.Office_initialize
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function initialize(reason: InitializationReason): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: reason
+          description: ''
+          type:
+            - InitializationReason
+  - uid: office.Office_select
+    summary: Returns a promise of an object described in the expression. Callback is invoked only if method fails.
+    name: 'Office_select(expression, callback)'
+    fullName: office.Office_select
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function select(expression: string, callback?: (result: AsyncResult) => void): Binding;'
+      return:
+        type:
+          - Binding
+        description: ''
+      parameters:
+        - id: expression
+          description: ''
+          type:
+            - string
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_useShortNamespace
+    summary: Indicates if the large namespace for objects will be used or not.
+    name: Office_useShortNamespace(useShortNamespace)
+    fullName: office.Office_useShortNamespace
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function useShortNamespace(useShortNamespace: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: useShortNamespace
+          description: ''
+          type:
+            - boolean
+  - uid: office.OneNote_run
+    summary: >-
+      Executes a batch script that performs actions on the OneNote object model. When the promise is resolved, any
+      tracked objects that were automatically allocated during execution will be released.
+    name: OneNote_run(batch)
+    fullName: office.OneNote_run
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        function run < T >(batch: (context: OneNote.RequestContext) => OfficeExtension.IPromise<T>):
+        OfficeExtension.IPromise<T>;
+      return:
+        type:
+          - OfficeExtension.IPromise<T>
+        description: ''
+      parameters:
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the OneNote application. Since the Office
+            add-in and the WoOneNote application run in two different processes, the request context is required to get
+            access to the OneNote object model from the add-in.
+          type:
+            - '(context: OneNote.RequestContext) => OfficeExtension.IPromise<T>'
+  - uid: office.Word_run
+    summary: >-
+      Executes a batch script that performs actions on the Word object model, using the RequestContext of
+      previously-created API objects.
+    name: 'Word_run(objects, batch)'
+    fullName: office.Word_run
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        function run < T >(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) =>
+        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+      return:
+        type:
+          - OfficeExtension.IPromise<T>
+        description: ''
+      parameters:
+        - id: objects
+          description: >-
+            An array of previously-created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared RequestContext, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
+          type:
+            - 'OfficeExtension.ClientObject[]'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office
+            add-in and the Word application run in two different processes, the RequestContext is required to get access
+            to the Word object model from the add-in.
+          type:
+            - '(context: Word.RequestContext) => OfficeExtension.IPromise<T>'
+references:
+  - uid: office.Excel_Application
+    name: Excel_Application
+  - uid: office.Excel_Binding
+    name: Excel_Binding
+  - uid: office.Excel_BindingCollection
+    name: Excel_BindingCollection
+  - uid: office.Excel_BindingDataChangedEventArgs
+    name: Excel_BindingDataChangedEventArgs
+  - uid: office.Excel_BindingSelectionChangedEventArgs
+    name: Excel_BindingSelectionChangedEventArgs
+  - uid: office.Excel_CellValueConditionalFormat
+    name: Excel_CellValueConditionalFormat
+  - uid: office.Excel_Chart
+    name: Excel_Chart
+  - uid: office.Excel_ChartAreaFormat
+    name: Excel_ChartAreaFormat
+  - uid: office.Excel_ChartAxes
+    name: Excel_ChartAxes
+  - uid: office.Excel_ChartAxis
+    name: Excel_ChartAxis
+  - uid: office.Excel_ChartAxisFormat
+    name: Excel_ChartAxisFormat
+  - uid: office.Excel_ChartAxisTitle
+    name: Excel_ChartAxisTitle
+  - uid: office.Excel_ChartAxisTitleFormat
+    name: Excel_ChartAxisTitleFormat
+  - uid: office.Excel_ChartCollection
+    name: Excel_ChartCollection
+  - uid: office.Excel_ChartDataLabelFormat
+    name: Excel_ChartDataLabelFormat
+  - uid: office.Excel_ChartDataLabels
+    name: Excel_ChartDataLabels
+  - uid: office.Excel_ChartFill
+    name: Excel_ChartFill
+  - uid: office.Excel_ChartFont
+    name: Excel_ChartFont
+  - uid: office.Excel_ChartGridlines
+    name: Excel_ChartGridlines
+  - uid: office.Excel_ChartGridlinesFormat
+    name: Excel_ChartGridlinesFormat
+  - uid: office.Excel_ChartLegend
+    name: Excel_ChartLegend
+  - uid: office.Excel_ChartLegendFormat
+    name: Excel_ChartLegendFormat
+  - uid: office.Excel_ChartLineFormat
+    name: Excel_ChartLineFormat
+  - uid: office.Excel_ChartPoint
+    name: Excel_ChartPoint
+  - uid: office.Excel_ChartPointFormat
+    name: Excel_ChartPointFormat
+  - uid: office.Excel_ChartPointsCollection
+    name: Excel_ChartPointsCollection
+  - uid: office.Excel_ChartSeries
+    name: Excel_ChartSeries
+  - uid: office.Excel_ChartSeriesCollection
+    name: Excel_ChartSeriesCollection
+  - uid: office.Excel_ChartSeriesFormat
+    name: Excel_ChartSeriesFormat
+  - uid: office.Excel_ChartTitle
+    name: Excel_ChartTitle
+  - uid: office.Excel_ChartTitleFormat
+    name: Excel_ChartTitleFormat
+  - uid: office.Excel_ColorScaleConditionalFormat
+    name: Excel_ColorScaleConditionalFormat
+  - uid: office.Excel_ConditionalCellValueRule
+    name: Excel_ConditionalCellValueRule
+  - uid: office.Excel_ConditionalColorScaleCriteria
+    name: Excel_ConditionalColorScaleCriteria
+  - uid: office.Excel_ConditionalColorScaleCriterion
+    name: Excel_ConditionalColorScaleCriterion
+  - uid: office.Excel_ConditionalDataBarNegativeFormat
+    name: Excel_ConditionalDataBarNegativeFormat
+  - uid: office.Excel_ConditionalDataBarPositiveFormat
+    name: Excel_ConditionalDataBarPositiveFormat
+  - uid: office.Excel_ConditionalDataBarRule
+    name: Excel_ConditionalDataBarRule
+  - uid: office.Excel_ConditionalFormat
+    name: Excel_ConditionalFormat
+  - uid: office.Excel_ConditionalFormatCollection
+    name: Excel_ConditionalFormatCollection
+  - uid: office.Excel_ConditionalFormatRule
+    name: Excel_ConditionalFormatRule
+  - uid: office.Excel_ConditionalIconCriterion
+    name: Excel_ConditionalIconCriterion
+  - uid: office.Excel_ConditionalPresetCriteriaRule
+    name: Excel_ConditionalPresetCriteriaRule
+  - uid: office.Excel_ConditionalRangeBorder
+    name: Excel_ConditionalRangeBorder
+  - uid: office.Excel_ConditionalRangeBorderCollection
+    name: Excel_ConditionalRangeBorderCollection
+  - uid: office.Excel_ConditionalRangeFill
+    name: Excel_ConditionalRangeFill
+  - uid: office.Excel_ConditionalRangeFont
+    name: Excel_ConditionalRangeFont
+  - uid: office.Excel_ConditionalRangeFormat
+    name: Excel_ConditionalRangeFormat
+  - uid: office.Excel_ConditionalTextComparisonRule
+    name: Excel_ConditionalTextComparisonRule
+  - uid: office.Excel_ConditionalTopBottomRule
+    name: Excel_ConditionalTopBottomRule
+  - uid: office.Excel_CustomConditionalFormat
+    name: Excel_CustomConditionalFormat
+  - uid: office.Excel_CustomXmlPart
+    name: Excel_CustomXmlPart
+  - uid: office.Excel_CustomXmlPartCollection
+    name: Excel_CustomXmlPartCollection
+  - uid: office.Excel_CustomXmlPartScopedCollection
+    name: Excel_CustomXmlPartScopedCollection
+  - uid: office.Excel_DataBarConditionalFormat
+    name: Excel_DataBarConditionalFormat
+  - uid: office.Excel_Filter
+    name: Excel_Filter
+  - uid: office.Excel_FilterCriteria
+    name: Excel_FilterCriteria
+  - uid: office.Excel_FilterDatetime
+    name: Excel_FilterDatetime
+  - uid: office.Excel_FiveArrowsGraySet
+    name: Excel_FiveArrowsGraySet
+  - uid: office.Excel_FiveArrowsSet
+    name: Excel_FiveArrowsSet
+  - uid: office.Excel_FiveBoxesSet
+    name: Excel_FiveBoxesSet
+  - uid: office.Excel_FiveQuartersSet
+    name: Excel_FiveQuartersSet
+  - uid: office.Excel_FiveRatingSet
+    name: Excel_FiveRatingSet
+  - uid: office.Excel_FormatProtection
+    name: Excel_FormatProtection
+  - uid: office.Excel_FourArrowsGraySet
+    name: Excel_FourArrowsGraySet
+  - uid: office.Excel_FourArrowsSet
+    name: Excel_FourArrowsSet
+  - uid: office.Excel_FourRatingSet
+    name: Excel_FourRatingSet
+  - uid: office.Excel_FourRedToBlackSet
+    name: Excel_FourRedToBlackSet
+  - uid: office.Excel_FourTrafficLightsSet
+    name: Excel_FourTrafficLightsSet
+  - uid: office.Excel_FunctionResult
+    name: Excel_FunctionResult
+  - uid: office.Excel_Functions
+    name: Excel_Functions
+  - uid: office.Excel_Icon
+    name: Excel_Icon
+  - uid: office.Excel_IconCollections
+    name: Excel_IconCollections
+  - uid: office.Excel_IconSetConditionalFormat
+    name: Excel_IconSetConditionalFormat
+  - uid: office.Excel_NamedItem
+    name: Excel_NamedItem
+  - uid: office.Excel_NamedItemCollection
+    name: Excel_NamedItemCollection
+  - uid: office.Excel_PivotTable
+    name: Excel_PivotTable
+  - uid: office.Excel_PivotTableCollection
+    name: Excel_PivotTableCollection
+  - uid: office.Excel_PresetCriteriaConditionalFormat
+    name: Excel_PresetCriteriaConditionalFormat
+  - uid: office.Excel_Range
+    name: Excel_Range
+  - uid: office.Excel_RangeBorder
+    name: Excel_RangeBorder
+  - uid: office.Excel_RangeBorderCollection
+    name: Excel_RangeBorderCollection
+  - uid: office.Excel_RangeFill
+    name: Excel_RangeFill
+  - uid: office.Excel_RangeFont
+    name: Excel_RangeFont
+  - uid: office.Excel_RangeFormat
+    name: Excel_RangeFormat
+  - uid: office.Excel_RangeReference
+    name: Excel_RangeReference
+  - uid: office.Excel_RangeSort
+    name: Excel_RangeSort
+  - uid: office.Excel_RangeView
+    name: Excel_RangeView
+  - uid: office.Excel_RangeViewCollection
+    name: Excel_RangeViewCollection
+  - uid: office.Excel_RequestContext
+    name: Excel_RequestContext
+  - uid: office.Excel_SelectionChangedEventArgs
+    name: Excel_SelectionChangedEventArgs
+  - uid: office.Excel_Session
+    name: Excel_Session
+  - uid: office.Excel_Setting
+    name: Excel_Setting
+  - uid: office.Excel_SettingCollection
+    name: Excel_SettingCollection
+  - uid: office.Excel_SettingsChangedEventArgs
+    name: Excel_SettingsChangedEventArgs
+  - uid: office.Excel_SortField
+    name: Excel_SortField
+  - uid: office.Excel_Table
+    name: Excel_Table
+  - uid: office.Excel_TableCollection
+    name: Excel_TableCollection
+  - uid: office.Excel_TableColumn
+    name: Excel_TableColumn
+  - uid: office.Excel_TableColumnCollection
+    name: Excel_TableColumnCollection
+  - uid: office.Excel_TableRow
+    name: Excel_TableRow
+  - uid: office.Excel_TableRowCollection
+    name: Excel_TableRowCollection
+  - uid: office.Excel_TableSort
+    name: Excel_TableSort
+  - uid: office.Excel_TextConditionalFormat
+    name: Excel_TextConditionalFormat
+  - uid: office.Excel_ThreeArrowsGraySet
+    name: Excel_ThreeArrowsGraySet
+  - uid: office.Excel_ThreeArrowsSet
+    name: Excel_ThreeArrowsSet
+  - uid: office.Excel_ThreeFlagsSet
+    name: Excel_ThreeFlagsSet
+  - uid: office.Excel_ThreeSignsSet
+    name: Excel_ThreeSignsSet
+  - uid: office.Excel_ThreeStarsSet
+    name: Excel_ThreeStarsSet
+  - uid: office.Excel_ThreeSymbols2Set
+    name: Excel_ThreeSymbols2Set
+  - uid: office.Excel_ThreeSymbolsSet
+    name: Excel_ThreeSymbolsSet
+  - uid: office.Excel_ThreeTrafficLights1Set
+    name: Excel_ThreeTrafficLights1Set
+  - uid: office.Excel_ThreeTrafficLights2Set
+    name: Excel_ThreeTrafficLights2Set
+  - uid: office.Excel_ThreeTrianglesSet
+    name: Excel_ThreeTrianglesSet
+  - uid: office.Excel_TopBottomConditionalFormat
+    name: Excel_TopBottomConditionalFormat
+  - uid: office.Excel_Workbook
+    name: Excel_Workbook
+  - uid: office.Excel_Worksheet
+    name: Excel_Worksheet
+  - uid: office.Excel_WorksheetCollection
+    name: Excel_WorksheetCollection
+  - uid: office.Excel_WorksheetProtection
+    name: Excel_WorksheetProtection
+  - uid: office.Excel_WorksheetProtectionOptions
+    name: Excel_WorksheetProtectionOptions
+  - uid: office.Office_ActiveView
+    name: Office_ActiveView
+  - uid: office.Office_Appointment
+    name: Office_Appointment
+  - uid: office.Office_AppointmentCompose
+    name: Office_AppointmentCompose
+  - uid: office.Office_AppointmentForm
+    name: Office_AppointmentForm
+  - uid: office.Office_AppointmentRead
+    name: Office_AppointmentRead
+  - uid: office.Office_AsyncContextOptions
+    name: Office_AsyncContextOptions
+  - uid: office.Office_AsyncResult
+    name: Office_AsyncResult
+  - uid: office.Office_AsyncResultStatus
+    name: Office_AsyncResultStatus
+  - uid: office.Office_AttachmentDetails
+    name: Office_AttachmentDetails
+  - uid: office.Office_Auth
+    name: Office_Auth
+  - uid: office.Office_AuthOptions
+    name: Office_AuthOptions
+  - uid: office.Office_Binding
+    name: Office_Binding
+  - uid: office.Office_Bindings
+    name: Office_Bindings
+  - uid: office.Office_BindingType
+    name: Office_BindingType
+  - uid: office.Office_Body
+    name: Office_Body
+  - uid: office.Office_CoercionType
+    name: Office_CoercionType
+  - uid: office.Office_CoercionTypeOptions
+    name: Office_CoercionTypeOptions
+  - uid: office.Office_Contact
+    name: Office_Contact
+  - uid: office.Office_Context
+    name: Office_Context
+  - uid: office.Office_CustomProperties
+    name: Office_CustomProperties
+  - uid: office.Office_CustomXmlNode
+    name: Office_CustomXmlNode
+  - uid: office.Office_CustomXmlPart
+    name: Office_CustomXmlPart
+  - uid: office.Office_CustomXmlParts
+    name: Office_CustomXmlParts
+  - uid: office.Office_CustomXmlPrefixMappings
+    name: Office_CustomXmlPrefixMappings
+  - uid: office.Office_Diagnostics
+    name: Office_Diagnostics
+  - uid: office.Office_DialogHandler
+    name: Office_DialogHandler
+  - uid: office.Office_DialogOptions
+    name: Office_DialogOptions
+  - uid: office.Office_Document
+    name: Office_Document
+  - uid: office.Office_DocumentMode
+    name: Office_DocumentMode
+  - uid: office.Office_DocumentSelectionChangedEventArgs
+    name: Office_DocumentSelectionChangedEventArgs
+  - uid: office.Office_EmailAddressDetails
+    name: Office_EmailAddressDetails
+  - uid: office.Office_EmailUser
+    name: Office_EmailUser
+  - uid: office.Office_Entities
+    name: Office_Entities
+  - uid: office.Office_Error
+    name: Office_Error
+  - uid: office.Office_EventType
+    name: Office_EventType
+  - uid: office.Office_File
+    name: Office_File
+  - uid: office.Office_FileProperties
+    name: Office_FileProperties
+  - uid: office.Office_FileType
+    name: Office_FileType
+  - uid: office.Office_FilterType
+    name: Office_FilterType
+  - uid: office.Office_GoToType
+    name: Office_GoToType
+  - uid: office.Office_HostType
+    name: Office_HostType
+  - uid: office.Office_Index
+    name: Office_Index
+  - uid: office.Office_InitializationReason
+    name: Office_InitializationReason
+  - uid: office.Office_Item
+    name: Office_Item
+  - uid: office.Office_ItemCompose
+    name: Office_ItemCompose
+  - uid: office.Office_ItemRead
+    name: Office_ItemRead
+  - uid: office.Office_LocalClientTime
+    name: Office_LocalClientTime
+  - uid: office.Office_Location
+    name: Office_Location
+  - uid: office.Office_Mailbox
+    name: Office_Mailbox
+  - uid: office.Office_MailboxEnums_AttachmentType
+    name: Office_MailboxEnums_AttachmentType
+  - uid: office.Office_MailboxEnums_EntityType
+    name: Office_MailboxEnums_EntityType
+  - uid: office.Office_MailboxEnums_ItemNotificationMessageType
+    name: Office_MailboxEnums_ItemNotificationMessageType
+  - uid: office.Office_MailboxEnums_ItemType
+    name: Office_MailboxEnums_ItemType
+  - uid: office.Office_MailboxEnums_RecipientType
+    name: Office_MailboxEnums_RecipientType
+  - uid: office.Office_MailboxEnums_ResponseType
+    name: Office_MailboxEnums_ResponseType
+  - uid: office.Office_MailboxEnums_RestVersion
+    name: Office_MailboxEnums_RestVersion
+  - uid: office.Office_MatrixBinding
+    name: Office_MatrixBinding
+  - uid: office.Office_MeetingSuggestion
+    name: Office_MeetingSuggestion
+  - uid: office.Office_Message
+    name: Office_Message
+  - uid: office.Office_MessageCompose
+    name: Office_MessageCompose
+  - uid: office.Office_MessageRead
+    name: Office_MessageRead
+  - uid: office.Office_NotificationMessageDetails
+    name: Office_NotificationMessageDetails
+  - uid: office.Office_NotificationMessages
+    name: Office_NotificationMessages
+  - uid: office.Office_OfficeTheme
+    name: Office_OfficeTheme
+  - uid: office.Office_PhoneNumber
+    name: Office_PhoneNumber
+  - uid: office.Office_PlatformType
+    name: Office_PlatformType
+  - uid: office.Office_ProjectProjectFields
+    name: Office_ProjectProjectFields
+  - uid: office.Office_ProjectResourceFields
+    name: Office_ProjectResourceFields
+  - uid: office.Office_ProjectTaskFields
+    name: Office_ProjectTaskFields
+  - uid: office.Office_ProjectViewTypes
+    name: Office_ProjectViewTypes
+  - uid: office.Office_Recipients
+    name: Office_Recipients
+  - uid: office.Office_ReplyFormAttachment
+    name: Office_ReplyFormAttachment
+  - uid: office.Office_ReplyFormData
+    name: Office_ReplyFormData
+  - uid: office.Office_RoamingSettings
+    name: Office_RoamingSettings
+  - uid: office.Office_SelectionMode
+    name: Office_SelectionMode
+  - uid: office.Office_Settings
+    name: Office_Settings
+  - uid: office.Office_Slice
+    name: Office_Slice
+  - uid: office.Office_SourceProperty
+    name: Office_SourceProperty
+  - uid: office.Office_Subject
+    name: Office_Subject
+  - uid: office.Office_Table
+    name: Office_Table
+  - uid: office.Office_TableBinding
+    name: Office_TableBinding
+  - uid: office.Office_TableData
+    name: Office_TableData
+  - uid: office.Office_TaskSuggestion
+    name: Office_TaskSuggestion
+  - uid: office.Office_TextBinding
+    name: Office_TextBinding
+  - uid: office.Office_Time
+    name: Office_Time
+  - uid: office.Office_UI
+    name: Office_UI
+  - uid: office.Office_UserProfile
+    name: Office_UserProfile
+  - uid: office.Office_ValueFormat
+    name: Office_ValueFormat
+  - uid: office.OfficeCore_ABType
+    name: OfficeCore_ABType
+  - uid: office.OfficeCore_FlightingService
+    name: OfficeCore_FlightingService
+  - uid: office.OfficeCore_RequestContext
+    name: OfficeCore_RequestContext
+  - uid: office.OfficeCore_ScopedValue
+    name: OfficeCore_ScopedValue
+  - uid: office.OfficeExtension_ClientObject
+    name: OfficeExtension_ClientObject
+  - uid: office.OfficeExtension_ClientRequestContext
+    name: OfficeExtension_ClientRequestContext
+  - uid: office.OfficeExtension_ClientResult
+    name: OfficeExtension_ClientResult
+  - uid: office.OfficeExtension_DebugInfo
+    name: OfficeExtension_DebugInfo
+  - uid: office.OfficeExtension_Error
+    name: OfficeExtension_Error
+  - uid: office.OfficeExtension_ErrorCodes
+    name: OfficeExtension_ErrorCodes
+  - uid: office.OfficeExtension_EventHandlerResult
+    name: OfficeExtension_EventHandlerResult
+  - uid: office.OfficeExtension_EventHandlers
+    name: OfficeExtension_EventHandlers
+  - uid: office.OfficeExtension_EventInfo
+    name: OfficeExtension_EventInfo
+  - uid: office.OfficeExtension_IPromise
+    name: OfficeExtension_IPromise
+  - uid: office.OfficeExtension_LoadOption
+    name: OfficeExtension_LoadOption
+  - uid: office.OfficeExtension_Promise
+    name: OfficeExtension_Promise
+  - uid: office.OfficeExtension_RequestUrlAndHeaderInfo
+    name: OfficeExtension_RequestUrlAndHeaderInfo
+  - uid: office.OfficeExtension_TrackedObjects
+    name: OfficeExtension_TrackedObjects
+  - uid: office.OneNote_Application
+    name: OneNote_Application
+  - uid: office.OneNote_FloatingInk
+    name: OneNote_FloatingInk
+  - uid: office.OneNote_Image
+    name: OneNote_Image
+  - uid: office.OneNote_ImageOcrData
+    name: OneNote_ImageOcrData
+  - uid: office.OneNote_InkAnalysis
+    name: OneNote_InkAnalysis
+  - uid: office.OneNote_InkAnalysisLine
+    name: OneNote_InkAnalysisLine
+  - uid: office.OneNote_InkAnalysisLineCollection
+    name: OneNote_InkAnalysisLineCollection
+  - uid: office.OneNote_InkAnalysisParagraph
+    name: OneNote_InkAnalysisParagraph
+  - uid: office.OneNote_InkAnalysisParagraphCollection
+    name: OneNote_InkAnalysisParagraphCollection
+  - uid: office.OneNote_InkAnalysisWord
+    name: OneNote_InkAnalysisWord
+  - uid: office.OneNote_InkAnalysisWordCollection
+    name: OneNote_InkAnalysisWordCollection
+  - uid: office.OneNote_InkStroke
+    name: OneNote_InkStroke
+  - uid: office.OneNote_InkStrokeCollection
+    name: OneNote_InkStrokeCollection
+  - uid: office.OneNote_InkStrokePointer
+    name: OneNote_InkStrokePointer
+  - uid: office.OneNote_InkWord
+    name: OneNote_InkWord
+  - uid: office.OneNote_InkWordCollection
+    name: OneNote_InkWordCollection
+  - uid: office.OneNote_Notebook
+    name: OneNote_Notebook
+  - uid: office.OneNote_NotebookCollection
+    name: OneNote_NotebookCollection
+  - uid: office.OneNote_Outline
+    name: OneNote_Outline
+  - uid: office.OneNote_Page
+    name: OneNote_Page
+  - uid: office.OneNote_PageCollection
+    name: OneNote_PageCollection
+  - uid: office.OneNote_PageContent
+    name: OneNote_PageContent
+  - uid: office.OneNote_PageContentCollection
+    name: OneNote_PageContentCollection
+  - uid: office.OneNote_Paragraph
+    name: OneNote_Paragraph
+  - uid: office.OneNote_ParagraphCollection
+    name: OneNote_ParagraphCollection
+  - uid: office.OneNote_RequestContext
+    name: OneNote_RequestContext
+  - uid: office.OneNote_RichText
+    name: OneNote_RichText
+  - uid: office.OneNote_Section
+    name: OneNote_Section
+  - uid: office.OneNote_SectionCollection
+    name: OneNote_SectionCollection
+  - uid: office.OneNote_SectionGroup
+    name: OneNote_SectionGroup
+  - uid: office.OneNote_SectionGroupCollection
+    name: OneNote_SectionGroupCollection
+  - uid: office.OneNote_Table
+    name: OneNote_Table
+  - uid: office.OneNote_TableCell
+    name: OneNote_TableCell
+  - uid: office.OneNote_TableCellCollection
+    name: OneNote_TableCellCollection
+  - uid: office.OneNote_TableRow
+    name: OneNote_TableRow
+  - uid: office.OneNote_TableRowCollection
+    name: OneNote_TableRowCollection
+  - uid: office.Word_Body
+    name: Word_Body
+  - uid: office.Word_ContentControl
+    name: Word_ContentControl
+  - uid: office.Word_ContentControlCollection
+    name: Word_ContentControlCollection
+  - uid: office.Word_CustomProperty
+    name: Word_CustomProperty
+  - uid: office.Word_CustomPropertyCollection
+    name: Word_CustomPropertyCollection
+  - uid: office.Word_Document
+    name: Word_Document
+  - uid: office.Word_DocumentProperties
+    name: Word_DocumentProperties
+  - uid: office.Word_Font
+    name: Word_Font
+  - uid: office.Word_InlinePicture
+    name: Word_InlinePicture
+  - uid: office.Word_InlinePictureCollection
+    name: Word_InlinePictureCollection
+  - uid: office.Word_List
+    name: Word_List
+  - uid: office.Word_ListCollection
+    name: Word_ListCollection
+  - uid: office.Word_ListItem
+    name: Word_ListItem
+  - uid: office.Word_Paragraph
+    name: Word_Paragraph
+  - uid: office.Word_ParagraphCollection
+    name: Word_ParagraphCollection
+  - uid: office.Word_Range
+    name: Word_Range
+  - uid: office.Word_RangeCollection
+    name: Word_RangeCollection
+  - uid: office.Word_RequestContext
+    name: Word_RequestContext
+  - uid: office.Word_SearchOptions
+    name: Word_SearchOptions
+  - uid: office.Word_Section
+    name: Word_Section
+  - uid: office.Word_SectionCollection
+    name: Word_SectionCollection
+  - uid: office.Word_Table
+    name: Word_Table
+  - uid: office.Word_TableBorder
+    name: Word_TableBorder
+  - uid: office.Word_TableCell
+    name: Word_TableCell
+  - uid: office.Word_TableCellCollection
+    name: Word_TableCellCollection
+  - uid: office.Word_TableCollection
+    name: Word_TableCollection
+  - uid: office.Word_TableRow
+    name: Word_TableRow
+  - uid: office.Word_TableRowCollection
+    name: Word_TableRowCollection

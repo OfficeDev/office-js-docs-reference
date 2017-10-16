@@ -1,0 +1,22 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_CoercionTypeOptions
+    name: Office_CoercionTypeOptions
+    fullName: office.Office_CoercionTypeOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_CoercionTypeOptions.coercionType
+  - uid: office.Office_CoercionTypeOptions.coercionType
+    name: coercionType
+    fullName: office.Office_CoercionTypeOptions.coercionType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'coercionType?: CoercionType;'
+      return:
+        type:
+          - CoercionType

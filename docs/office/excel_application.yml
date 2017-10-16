@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_Application
+    summary: |-
+      Represents the Excel application that manages the workbook. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: Excel_Application
+    fullName: office.Excel_Application
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel_Application.calculate
+      - office.Excel_Application.calculationMode
+      - office.Excel_Application.load
+      - office.Excel_Application.suspendApiCalculationUntilNextSync
+      - office.Excel_Application.toJSON
+  - uid: office.Excel_Application.calculate
+    summary: |-
+      Recalculate all currently opened workbooks in Excel. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: calculate(calculationType)
+    fullName: office.Excel_Application.calculate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'calculate(calculationType: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: calculationType
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_Application.calculationMode
+    summary: |-
+      Returns the calculation mode used in the workbook. See Excel.CalculationMode for details. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: calculationMode
+    fullName: office.Excel_Application.calculationMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calculationMode: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel_Application.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel_Application.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Application;'
+      return:
+        type:
+          - Excel.Application
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel_Application.suspendApiCalculationUntilNextSync
+    summary: >-
+      Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to
+      re-calc the workbook, to ensure that any dependencies are propagated. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: suspendApiCalculationUntilNextSync()
+    fullName: office.Excel_Application.suspendApiCalculationUntilNextSync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'suspendApiCalculationUntilNextSync(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Excel_Application.toJSON
+    name: toJSON()
+    fullName: office.Excel_Application.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"calculationMode\": string;\r\n        }"
+        description: ''

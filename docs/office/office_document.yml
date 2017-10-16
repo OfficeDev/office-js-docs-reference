@@ -1,0 +1,222 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_Document
+    name: Office_Document
+    fullName: office.Office_Document
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_Document.getProjectFieldAsync
+      - office.Office_Document.getResourceFieldAsync
+      - office.Office_Document.getSelectedResourceAsync
+      - office.Office_Document.getSelectedTaskAsync
+      - office.Office_Document.getSelectedViewAsync
+      - office.Office_Document.getTaskAsync
+      - office.Office_Document.getTaskFieldAsync
+      - office.Office_Document.getWSSUrlAsync
+  - uid: office.Office_Document.getProjectFieldAsync
+    summary: Get Project field (Ex. ProjectWebAccessURL).
+    name: 'getProjectFieldAsync(fieldId, options, callback)'
+    fullName: office.Office_Document.getProjectFieldAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getProjectFieldAsync(fieldId: number, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fieldId
+          description: ''
+          type:
+            - number
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Document.getResourceFieldAsync
+    summary: Get resource field for provided resource Id. (Ex.ResourceName)
+    name: 'getResourceFieldAsync(resourceId, fieldId, options, callback)'
+    fullName: office.Office_Document.getResourceFieldAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getResourceFieldAsync(resourceId: string, fieldId: number, options?: any, callback?: (result: AsyncResult) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: resourceId
+          description: ''
+          type:
+            - string
+        - id: fieldId
+          description: ''
+          type:
+            - number
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Document.getSelectedResourceAsync
+    summary: Get the current selected Resource's Id.
+    name: 'getSelectedResourceAsync(options, callback)'
+    fullName: office.Office_Document.getSelectedResourceAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedResourceAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Document.getSelectedTaskAsync
+    summary: Get the current selected Task's Id.
+    name: 'getSelectedTaskAsync(options, callback)'
+    fullName: office.Office_Document.getSelectedTaskAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedTaskAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Document.getSelectedViewAsync
+    summary: Get the current selected View Type (Ex. Gantt) and View Name.
+    name: 'getSelectedViewAsync(options, callback)'
+    fullName: office.Office_Document.getSelectedViewAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedViewAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Document.getTaskAsync
+    summary: 'Get the Task Name, WSS Task Id, and ResourceNames for given taskId.'
+    name: 'getTaskAsync(taskId, options, callback)'
+    fullName: office.Office_Document.getTaskAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTaskAsync(taskId: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: taskId
+          description: ''
+          type:
+            - string
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Document.getTaskFieldAsync
+    summary: Get task field for provided task Id. (Ex. StartDate).
+    name: 'getTaskFieldAsync(taskId, fieldId, options, callback)'
+    fullName: office.Office_Document.getTaskFieldAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getTaskFieldAsync(taskId: string, fieldId: number, options?: any, callback?: (result: AsyncResult) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: taskId
+          description: ''
+          type:
+            - string
+        - id: fieldId
+          description: ''
+          type:
+            - number
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Document.getWSSUrlAsync
+    summary: 'Get the WSS Url and list name for the Tasks List, the MPP is synced too.'
+    name: 'getWSSUrlAsync(options, callback)'
+    fullName: office.Office_Document.getWSSUrlAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getWSSUrlAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'

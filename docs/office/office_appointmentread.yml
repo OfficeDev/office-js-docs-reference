@@ -1,0 +1,96 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_AppointmentRead
+    name: Office_AppointmentRead
+    fullName: office.Office_AppointmentRead
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Appointment
+    package: office
+    children:
+      - office.Office_AppointmentRead.end
+      - office.Office_AppointmentRead.location
+      - office.Office_AppointmentRead.optionalAttendees
+      - office.Office_AppointmentRead.organizer
+      - office.Office_AppointmentRead.requiredAttendees
+      - office.Office_AppointmentRead.resources
+      - office.Office_AppointmentRead.start
+  - uid: office.Office_AppointmentRead.end
+    name: end
+    fullName: office.Office_AppointmentRead.end
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'end: Date;'
+      return:
+        type:
+          - Date
+  - uid: office.Office_AppointmentRead.location
+    name: location
+    fullName: office.Office_AppointmentRead.location
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'location: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office_AppointmentRead.optionalAttendees
+    name: optionalAttendees
+    fullName: office.Office_AppointmentRead.optionalAttendees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'optionalAttendees: Array<EmailAddressDetails>;'
+      return:
+        type:
+          - Array<EmailAddressDetails>
+  - uid: office.Office_AppointmentRead.organizer
+    name: organizer
+    fullName: office.Office_AppointmentRead.organizer
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'organizer: EmailAddressDetails;'
+      return:
+        type:
+          - EmailAddressDetails
+  - uid: office.Office_AppointmentRead.requiredAttendees
+    name: requiredAttendees
+    fullName: office.Office_AppointmentRead.requiredAttendees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'requiredAttendees: Array<EmailAddressDetails>;'
+      return:
+        type:
+          - Array<EmailAddressDetails>
+  - uid: office.Office_AppointmentRead.resources
+    name: resources
+    fullName: office.Office_AppointmentRead.resources
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'resources: EmailAddressDetails;'
+      return:
+        type:
+          - EmailAddressDetails
+  - uid: office.Office_AppointmentRead.start
+    name: start
+    fullName: office.Office_AppointmentRead.start
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'start: Date;'
+      return:
+        type:
+          - Date

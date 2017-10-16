@@ -1,0 +1,22 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_AsyncContextOptions
+    name: Office_AsyncContextOptions
+    fullName: office.Office_AsyncContextOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_AsyncContextOptions.asyncContext
+  - uid: office.Office_AsyncContextOptions.asyncContext
+    name: asyncContext
+    fullName: office.Office_AsyncContextOptions.asyncContext
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'asyncContext?: any;'
+      return:
+        type:
+          - any

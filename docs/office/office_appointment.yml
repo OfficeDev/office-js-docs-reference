@@ -1,0 +1,11 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_Appointment
+    name: Office_Appointment
+    fullName: office.Office_Appointment
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Item
+    package: office

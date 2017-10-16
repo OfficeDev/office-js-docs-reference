@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_AsyncResultStatus
+    name: Office_AsyncResultStatus
+    fullName: office.Office_AsyncResultStatus
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office_AsyncResultStatus.Failed
+      - office.Office_AsyncResultStatus.Succeeded
+  - uid: office.Office_AsyncResultStatus.Failed
+    summary: 'Operation failed, check error object'
+    name: Failed
+    fullName: office.Office_AsyncResultStatus.Failed
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_AsyncResultStatus.Succeeded
+    summary: Operation succeeded
+    name: Succeeded
+    fullName: office.Office_AsyncResultStatus.Succeeded
+    langs:
+      - typeScript
+    type: field

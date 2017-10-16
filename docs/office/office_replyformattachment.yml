@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_ReplyFormAttachment
+    name: Office_ReplyFormAttachment
+    fullName: office.Office_ReplyFormAttachment
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_ReplyFormAttachment.itemId
+      - office.Office_ReplyFormAttachment.name
+      - office.Office_ReplyFormAttachment.type
+      - office.Office_ReplyFormAttachment.url
+  - uid: office.Office_ReplyFormAttachment.itemId
+    name: itemId
+    fullName: office.Office_ReplyFormAttachment.itemId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemId?: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office_ReplyFormAttachment.name
+    name: name
+    fullName: office.Office_ReplyFormAttachment.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office_ReplyFormAttachment.type
+    name: type
+    fullName: office.Office_ReplyFormAttachment.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office_ReplyFormAttachment.url
+    name: url
+    fullName: office.Office_ReplyFormAttachment.url
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'url?: string;'
+      return:
+        type:
+          - string

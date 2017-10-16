@@ -1,0 +1,70 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_AuthOptions
+    name: Office_AuthOptions
+    fullName: office.Office_AuthOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_AuthOptions.asyncContext
+      - office.Office_AuthOptions.authChallenge
+      - office.Office_AuthOptions.forceAddAccount
+      - office.Office_AuthOptions.forceConsent
+  - uid: office.Office_AuthOptions.asyncContext
+    summary: Optional. A user-defined item of any type that is returned in the AsyncResult object without being altered.
+    name: asyncContext
+    fullName: office.Office_AuthOptions.asyncContext
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'asyncContext?: any;'
+      return:
+        type:
+          - any
+  - uid: office.Office_AuthOptions.authChallenge
+    summary: >-
+      Optional. Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by
+      Microsoft Graph requires multifactor authentication. The string value identifies the type of additional factor
+      that is required. In most cases, you won't know at development time whether the user's tenant requires an
+      additional factor or what the string should be. So this option would be used in a "second try" call of
+      getAccessTokenAsync after Microsoft Graph has sent an error requesting the additional factor and containing the
+      string that should be used with the authChallenge option.
+    name: authChallenge
+    fullName: office.Office_AuthOptions.authChallenge
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'authChallenge?: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office_AuthOptions.forceAddAccount
+    summary: Optional. Prompts the user to add (or to switch if already added) his or her Office account.
+    name: forceAddAccount
+    fullName: office.Office_AuthOptions.forceAddAccount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'forceAddAccount?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Office_AuthOptions.forceConsent
+    summary: >-
+      Optional. Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have
+      changed or if the user's consent has been revoked.
+    name: forceConsent
+    fullName: office.Office_AuthOptions.forceConsent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'forceConsent?: boolean;'
+      return:
+        type:
+          - boolean

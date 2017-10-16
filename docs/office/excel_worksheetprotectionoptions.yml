@@ -1,0 +1,190 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_WorksheetProtectionOptions
+    summary: |-
+      Represents the options in sheet protection. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: Excel_WorksheetProtectionOptions
+    fullName: office.Excel_WorksheetProtectionOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel_WorksheetProtectionOptions.allowAutoFilter
+      - office.Excel_WorksheetProtectionOptions.allowDeleteColumns
+      - office.Excel_WorksheetProtectionOptions.allowDeleteRows
+      - office.Excel_WorksheetProtectionOptions.allowFormatCells
+      - office.Excel_WorksheetProtectionOptions.allowFormatColumns
+      - office.Excel_WorksheetProtectionOptions.allowFormatRows
+      - office.Excel_WorksheetProtectionOptions.allowInsertColumns
+      - office.Excel_WorksheetProtectionOptions.allowInsertHyperlinks
+      - office.Excel_WorksheetProtectionOptions.allowInsertRows
+      - office.Excel_WorksheetProtectionOptions.allowPivotTables
+      - office.Excel_WorksheetProtectionOptions.allowSort
+  - uid: office.Excel_WorksheetProtectionOptions.allowAutoFilter
+    summary: |-
+      Represents the worksheet protection option of allowing using auto filter feature. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowAutoFilter
+    fullName: office.Excel_WorksheetProtectionOptions.allowAutoFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowAutoFilter?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel_WorksheetProtectionOptions.allowDeleteColumns
+    summary: |-
+      Represents the worksheet protection option of allowing deleting columns. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowDeleteColumns
+    fullName: office.Excel_WorksheetProtectionOptions.allowDeleteColumns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowDeleteColumns?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel_WorksheetProtectionOptions.allowDeleteRows
+    summary: |-
+      Represents the worksheet protection option of allowing deleting rows. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowDeleteRows
+    fullName: office.Excel_WorksheetProtectionOptions.allowDeleteRows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowDeleteRows?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel_WorksheetProtectionOptions.allowFormatCells
+    summary: |-
+      Represents the worksheet protection option of allowing formatting cells. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowFormatCells
+    fullName: office.Excel_WorksheetProtectionOptions.allowFormatCells
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowFormatCells?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel_WorksheetProtectionOptions.allowFormatColumns
+    summary: |-
+      Represents the worksheet protection option of allowing formatting columns. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowFormatColumns
+    fullName: office.Excel_WorksheetProtectionOptions.allowFormatColumns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowFormatColumns?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel_WorksheetProtectionOptions.allowFormatRows
+    summary: |-
+      Represents the worksheet protection option of allowing formatting rows. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowFormatRows
+    fullName: office.Excel_WorksheetProtectionOptions.allowFormatRows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowFormatRows?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel_WorksheetProtectionOptions.allowInsertColumns
+    summary: |-
+      Represents the worksheet protection option of allowing inserting columns. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowInsertColumns
+    fullName: office.Excel_WorksheetProtectionOptions.allowInsertColumns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowInsertColumns?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel_WorksheetProtectionOptions.allowInsertHyperlinks
+    summary: |-
+      Represents the worksheet protection option of allowing inserting hyperlinks. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowInsertHyperlinks
+    fullName: office.Excel_WorksheetProtectionOptions.allowInsertHyperlinks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowInsertHyperlinks?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel_WorksheetProtectionOptions.allowInsertRows
+    summary: |-
+      Represents the worksheet protection option of allowing inserting rows. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowInsertRows
+    fullName: office.Excel_WorksheetProtectionOptions.allowInsertRows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowInsertRows?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel_WorksheetProtectionOptions.allowPivotTables
+    summary: |-
+      Represents the worksheet protection option of allowing using PivotTable feature. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowPivotTables
+    fullName: office.Excel_WorksheetProtectionOptions.allowPivotTables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowPivotTables?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel_WorksheetProtectionOptions.allowSort
+    summary: |-
+      Represents the worksheet protection option of allowing using sort feature. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowSort
+    fullName: office.Excel_WorksheetProtectionOptions.allowSort
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowSort?: boolean;'
+      return:
+        type:
+          - boolean

@@ -1,0 +1,64 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_ThreeArrowsGraySet
+    name: Excel_ThreeArrowsGraySet
+    fullName: office.Excel_ThreeArrowsGraySet
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel_ThreeArrowsGraySet.__index
+      - office.Excel_ThreeArrowsGraySet.grayDownArrow
+      - office.Excel_ThreeArrowsGraySet.graySideArrow
+      - office.Excel_ThreeArrowsGraySet.grayUpArrow
+  - uid: office.Excel_ThreeArrowsGraySet.__index
+    name: __index(index)
+    fullName: office.Excel_ThreeArrowsGraySet.__index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[ index: number ]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel_ThreeArrowsGraySet.grayDownArrow
+    name: grayDownArrow
+    fullName: office.Excel_ThreeArrowsGraySet.grayDownArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayDownArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel_ThreeArrowsGraySet.graySideArrow
+    name: graySideArrow
+    fullName: office.Excel_ThreeArrowsGraySet.graySideArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'graySideArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel_ThreeArrowsGraySet.grayUpArrow
+    name: grayUpArrow
+    fullName: office.Excel_ThreeArrowsGraySet.grayUpArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayUpArrow: Icon;'
+      return:
+        type:
+          - Icon

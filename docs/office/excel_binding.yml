@@ -1,0 +1,182 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_Binding
+    summary: |-
+      Represents an Office.js binding that is defined in the workbook. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: Excel_Binding
+    fullName: office.Excel_Binding
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel_Binding.delete
+      - office.Excel_Binding.getRange
+      - office.Excel_Binding.getTable
+      - office.Excel_Binding.getText
+      - office.Excel_Binding.id
+      - office.Excel_Binding.load
+      - office.Excel_Binding.onDataChanged
+      - office.Excel_Binding.onSelectionChanged
+      - office.Excel_Binding.toJSON
+      - office.Excel_Binding.type
+  - uid: office.Excel_Binding.delete
+    summary: |-
+      Deletes the binding. 
+
+       \[Api set: ExcelApi 1.3\]
+    name: delete()
+    fullName: office.Excel_Binding.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Excel_Binding.getRange
+    summary: |-
+      Returns the range represented by the binding. Will throw an error if binding is not of the correct type. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: getRange()
+    fullName: office.Excel_Binding.getRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
+  - uid: office.Excel_Binding.getTable
+    summary: |-
+      Returns the table represented by the binding. Will throw an error if binding is not of the correct type. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: getTable()
+    fullName: office.Excel_Binding.getTable
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTable(): Excel.Table;'
+      return:
+        type:
+          - Excel.Table
+        description: ''
+  - uid: office.Excel_Binding.getText
+    summary: |-
+      Returns the text represented by the binding. Will throw an error if binding is not of the correct type. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: getText()
+    fullName: office.Excel_Binding.getText
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getText(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+  - uid: office.Excel_Binding.id
+    summary: |-
+      Represents binding identifier. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: id
+    fullName: office.Excel_Binding.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel_Binding.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel_Binding.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Binding;'
+      return:
+        type:
+          - Excel.Binding
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel_Binding.onDataChanged
+    summary: |-
+      Occurs when data or formatting within the binding is changed. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: onDataChanged
+    fullName: office.Excel_Binding.onDataChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onDataChanged: OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>
+  - uid: office.Excel_Binding.onSelectionChanged
+    summary: |-
+      Occurs when the selection is changed within the binding. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: onSelectionChanged
+    fullName: office.Excel_Binding.onSelectionChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onSelectionChanged: OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>
+  - uid: office.Excel_Binding.toJSON
+    name: toJSON()
+    fullName: office.Excel_Binding.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"id\": string;\r\n            \"type\": string;\r\n        }"
+        description: ''
+  - uid: office.Excel_Binding.type
+    summary: |-
+      Returns the type of the binding. See Excel.BindingType for details. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: type
+    fullName: office.Excel_Binding.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: string;'
+      return:
+        type:
+          - string

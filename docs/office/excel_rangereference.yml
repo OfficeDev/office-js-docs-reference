@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_RangeReference
+    summary: |-
+      Represents a string reference of the form SheetName!A1:B5, or a global or local named range. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: Excel_RangeReference
+    fullName: office.Excel_RangeReference
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel_RangeReference.address
+  - uid: office.Excel_RangeReference.address
+    name: address
+    fullName: office.Excel_RangeReference.address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address: string;'
+      return:
+        type:
+          - string

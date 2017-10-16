@@ -1,0 +1,11 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_TextBinding
+    name: Office_TextBinding
+    fullName: office.Office_TextBinding
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Binding
+    package: office

@@ -1,0 +1,154 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeExtension_ErrorCodes
+    name: OfficeExtension_ErrorCodes
+    fullName: office.OfficeExtension_ErrorCodes
+    langs:
+      - typeScript
+    type: class
+    package: office
+    children:
+      - office.OfficeExtension_ErrorCodes.accessDenied
+      - office.OfficeExtension_ErrorCodes.activityLimitReached
+      - office.OfficeExtension_ErrorCodes.apiNotFound
+      - office.OfficeExtension_ErrorCodes.cannotRegisterEvent
+      - office.OfficeExtension_ErrorCodes.connectionFailure
+      - office.OfficeExtension_ErrorCodes.generalException
+      - office.OfficeExtension_ErrorCodes.invalidArgument
+      - office.OfficeExtension_ErrorCodes.invalidObjectPath
+      - office.OfficeExtension_ErrorCodes.invalidRequestContext
+      - office.OfficeExtension_ErrorCodes.propertyNotLoaded
+      - office.OfficeExtension_ErrorCodes.runMustReturnPromise
+      - office.OfficeExtension_ErrorCodes.valueNotLoaded
+  - uid: office.OfficeExtension_ErrorCodes.accessDenied
+    name: accessDenied
+    fullName: office.OfficeExtension_ErrorCodes.accessDenied
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'public static accessDenied: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension_ErrorCodes.activityLimitReached
+    name: activityLimitReached
+    fullName: office.OfficeExtension_ErrorCodes.activityLimitReached
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'public static activityLimitReached: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension_ErrorCodes.apiNotFound
+    name: apiNotFound
+    fullName: office.OfficeExtension_ErrorCodes.apiNotFound
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'public static apiNotFound: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension_ErrorCodes.cannotRegisterEvent
+    name: cannotRegisterEvent
+    fullName: office.OfficeExtension_ErrorCodes.cannotRegisterEvent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'public static cannotRegisterEvent: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension_ErrorCodes.connectionFailure
+    name: connectionFailure
+    fullName: office.OfficeExtension_ErrorCodes.connectionFailure
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'public static connectionFailure: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension_ErrorCodes.generalException
+    name: generalException
+    fullName: office.OfficeExtension_ErrorCodes.generalException
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'public static generalException: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension_ErrorCodes.invalidArgument
+    name: invalidArgument
+    fullName: office.OfficeExtension_ErrorCodes.invalidArgument
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'public static invalidArgument: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension_ErrorCodes.invalidObjectPath
+    name: invalidObjectPath
+    fullName: office.OfficeExtension_ErrorCodes.invalidObjectPath
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'public static invalidObjectPath: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension_ErrorCodes.invalidRequestContext
+    name: invalidRequestContext
+    fullName: office.OfficeExtension_ErrorCodes.invalidRequestContext
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'public static invalidRequestContext: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension_ErrorCodes.propertyNotLoaded
+    name: propertyNotLoaded
+    fullName: office.OfficeExtension_ErrorCodes.propertyNotLoaded
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'public static propertyNotLoaded: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension_ErrorCodes.runMustReturnPromise
+    name: runMustReturnPromise
+    fullName: office.OfficeExtension_ErrorCodes.runMustReturnPromise
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'public static runMustReturnPromise: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension_ErrorCodes.valueNotLoaded
+    name: valueNotLoaded
+    fullName: office.OfficeExtension_ErrorCodes.valueNotLoaded
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'public static valueNotLoaded: string;'
+      return:
+        type:
+          - string

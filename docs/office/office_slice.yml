@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_Slice
+    name: Office_Slice
+    fullName: office.Office_Slice
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_Slice.data
+      - office.Office_Slice.index
+      - office.Office_Slice.size
+  - uid: office.Office_Slice.data
+    name: data
+    fullName: office.Office_Slice.data
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'data: any;'
+      return:
+        type:
+          - any
+  - uid: office.Office_Slice.index
+    name: index
+    fullName: office.Office_Slice.index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'index: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office_Slice.size
+    name: size
+    fullName: office.Office_Slice.size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size: number;'
+      return:
+        type:
+          - number

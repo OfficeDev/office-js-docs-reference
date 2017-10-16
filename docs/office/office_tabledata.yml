@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_TableData
+    name: Office_TableData
+    fullName: office.Office_TableData
+    langs:
+      - typeScript
+    type: class
+    package: office
+    children:
+      - office.Office_TableData.constructor
+      - office.Office_TableData.headers
+      - office.Office_TableData.rows
+  - uid: office.Office_TableData.constructor
+    summary: 'Constructs a new instance of the [Office\_TableData](xref:office.Office_TableData) class'
+    name: 'constructor(rows, headers)'
+    fullName: office.Office_TableData.constructor
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(rows: any[][], headers: any[]);'
+      parameters:
+        - id: rows
+          description: ''
+          type:
+            - 'any[][]'
+        - id: headers
+          description: ''
+          type:
+            - 'any[]'
+  - uid: office.Office_TableData.headers
+    name: headers
+    fullName: office.Office_TableData.headers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headers: any[];'
+      return:
+        type:
+          - 'any[]'
+  - uid: office.Office_TableData.rows
+    name: rows
+    fullName: office.Office_TableData.rows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rows: any[][];'
+      return:
+        type:
+          - 'any[][]'

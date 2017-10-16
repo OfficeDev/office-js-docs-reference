@@ -1,0 +1,333 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_Filter
+    summary: |-
+      Manages the filtering of a table's column. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: Excel_Filter
+    fullName: office.Excel_Filter
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel_Filter.apply
+      - office.Excel_Filter.applyBottomItemsFilter
+      - office.Excel_Filter.applyBottomPercentFilter
+      - office.Excel_Filter.applyCellColorFilter
+      - office.Excel_Filter.applyCustomFilter
+      - office.Excel_Filter.applyDynamicFilter
+      - office.Excel_Filter.applyFontColorFilter
+      - office.Excel_Filter.applyIconFilter
+      - office.Excel_Filter.applyTopItemsFilter
+      - office.Excel_Filter.applyTopPercentFilter
+      - office.Excel_Filter.applyValuesFilter
+      - office.Excel_Filter.clear
+      - office.Excel_Filter.criteria
+      - office.Excel_Filter.load
+      - office.Excel_Filter.toJSON
+  - uid: office.Excel_Filter.apply
+    summary: |-
+      Apply the given filter criteria on the given column. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: apply(criteria)
+    fullName: office.Excel_Filter.apply
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'apply(criteria: Excel.FilterCriteria): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: criteria
+          description: ''
+          type:
+            - Excel.FilterCriteria
+  - uid: office.Excel_Filter.applyBottomItemsFilter
+    summary: |-
+      Apply a "Bottom Item" filter to the column for the given number of elements. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: applyBottomItemsFilter(count)
+    fullName: office.Excel_Filter.applyBottomItemsFilter
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyBottomItemsFilter(count: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: count
+          description: ''
+          type:
+            - number
+  - uid: office.Excel_Filter.applyBottomPercentFilter
+    summary: |-
+      Apply a "Bottom Percent" filter to the column for the given percentage of elements. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: applyBottomPercentFilter(percent)
+    fullName: office.Excel_Filter.applyBottomPercentFilter
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyBottomPercentFilter(percent: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: percent
+          description: ''
+          type:
+            - number
+  - uid: office.Excel_Filter.applyCellColorFilter
+    summary: |-
+      Apply a "Cell Color" filter to the column for the given color. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: applyCellColorFilter(color)
+    fullName: office.Excel_Filter.applyCellColorFilter
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyCellColorFilter(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_Filter.applyCustomFilter
+    summary: |-
+      Apply a "Icon" filter to the column for the given criteria strings. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: 'applyCustomFilter(criteria1, criteria2, oper)'
+    fullName: office.Excel_Filter.applyCustomFilter
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyCustomFilter(criteria1: string, criteria2?: string, oper?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: criteria1
+          description: ''
+          type:
+            - string
+        - id: criteria2
+          description: ''
+          type:
+            - string
+        - id: oper
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_Filter.applyDynamicFilter
+    summary: |-
+      Apply a "Dynamic" filter to the column. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: applyDynamicFilter(criteria)
+    fullName: office.Excel_Filter.applyDynamicFilter
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyDynamicFilter(criteria: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: criteria
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_Filter.applyFontColorFilter
+    summary: |-
+      Apply a "Font Color" filter to the column for the given color. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: applyFontColorFilter(color)
+    fullName: office.Excel_Filter.applyFontColorFilter
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyFontColorFilter(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_Filter.applyIconFilter
+    summary: |-
+      Apply a "Icon" filter to the column for the given icon. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: applyIconFilter(icon)
+    fullName: office.Excel_Filter.applyIconFilter
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyIconFilter(icon: Excel.Icon): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: icon
+          description: ''
+          type:
+            - Excel.Icon
+  - uid: office.Excel_Filter.applyTopItemsFilter
+    summary: |-
+      Apply a "Top Item" filter to the column for the given number of elements. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: applyTopItemsFilter(count)
+    fullName: office.Excel_Filter.applyTopItemsFilter
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyTopItemsFilter(count: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: count
+          description: ''
+          type:
+            - number
+  - uid: office.Excel_Filter.applyTopPercentFilter
+    summary: |-
+      Apply a "Top Percent" filter to the column for the given percentage of elements. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: applyTopPercentFilter(percent)
+    fullName: office.Excel_Filter.applyTopPercentFilter
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyTopPercentFilter(percent: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: percent
+          description: ''
+          type:
+            - number
+  - uid: office.Excel_Filter.applyValuesFilter
+    summary: |-
+      Apply a "Values" filter to the column for the given values. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: applyValuesFilter(values)
+    fullName: office.Excel_Filter.applyValuesFilter
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyValuesFilter(values: Array<string | Excel.FilterDatetime>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: values
+          description: ''
+          type:
+            - Array<string | Excel.FilterDatetime>
+  - uid: office.Excel_Filter.clear
+    summary: |-
+      Clear the filter on the given column. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: clear()
+    fullName: office.Excel_Filter.clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Excel_Filter.criteria
+    summary: |-
+      The currently applied filter on the given column. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: criteria
+    fullName: office.Excel_Filter.criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria: Excel.FilterCriteria;'
+      return:
+        type:
+          - Excel.FilterCriteria
+  - uid: office.Excel_Filter.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel_Filter.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Filter;'
+      return:
+        type:
+          - Excel.Filter
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel_Filter.toJSON
+    name: toJSON()
+    fullName: office.Excel_Filter.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"criteria\": FilterCriteria;\r\n        }"
+        description: ''

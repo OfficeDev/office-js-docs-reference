@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_CoercionType
+    name: Office_CoercionType
+    fullName: office.Office_CoercionType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office_CoercionType.Html
+      - office.Office_CoercionType.Image
+      - office.Office_CoercionType.Matrix
+      - office.Office_CoercionType.Ooxml
+      - office.Office_CoercionType.SlideRange
+      - office.Office_CoercionType.Table
+      - office.Office_CoercionType.Text
+  - uid: office.Office_CoercionType.Html
+    summary: Coerce as HTML
+    name: Html
+    fullName: office.Office_CoercionType.Html
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_CoercionType.Image
+    summary: Coerce as Image
+    name: Image
+    fullName: office.Office_CoercionType.Image
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_CoercionType.Matrix
+    summary: Coerce as Matrix
+    name: Matrix
+    fullName: office.Office_CoercionType.Matrix
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_CoercionType.Ooxml
+    summary: Coerce as Office Open XML
+    name: Ooxml
+    fullName: office.Office_CoercionType.Ooxml
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_CoercionType.SlideRange
+    summary: 'Coerce as JSON object containing an array of the ids, titles, and indexes of the selected slides.'
+    name: SlideRange
+    fullName: office.Office_CoercionType.SlideRange
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_CoercionType.Table
+    summary: Coerce as Table
+    name: Table
+    fullName: office.Office_CoercionType.Table
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_CoercionType.Text
+    summary: Coerce as Text
+    name: Text
+    fullName: office.Office_CoercionType.Text
+    langs:
+      - typeScript
+    type: field

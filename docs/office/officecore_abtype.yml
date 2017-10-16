@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeCore_ABType
+    summary: '\[Api set: Experimentation 1.1 (PREVIEW)\]'
+    name: OfficeCore_ABType
+    fullName: office.OfficeCore_ABType
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.OfficeCore_ABType.load
+      - office.OfficeCore_ABType.toJSON
+      - office.OfficeCore_ABType.value
+  - uid: office.OfficeCore_ABType.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.OfficeCore_ABType.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OfficeCore.ABType;'
+      return:
+        type:
+          - OfficeCore.ABType
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.OfficeCore_ABType.toJSON
+    name: toJSON()
+    fullName: office.OfficeCore_ABType.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"value\": string | number | boolean;\r\n        }"
+        description: ''
+  - uid: office.OfficeCore_ABType.value
+    name: value
+    fullName: office.OfficeCore_ABType.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: string | number | boolean;'
+      return:
+        type:
+          - string | number | boolean

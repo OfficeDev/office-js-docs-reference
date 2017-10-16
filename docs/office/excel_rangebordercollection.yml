@@ -1,0 +1,123 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_RangeBorderCollection
+    summary: |-
+      Represents the border objects that make up the range border. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: Excel_RangeBorderCollection
+    fullName: office.Excel_RangeBorderCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel_RangeBorderCollection.count
+      - office.Excel_RangeBorderCollection.getItem
+      - office.Excel_RangeBorderCollection.getItemAt
+      - office.Excel_RangeBorderCollection.items
+      - office.Excel_RangeBorderCollection.load
+      - office.Excel_RangeBorderCollection.toJSON
+  - uid: office.Excel_RangeBorderCollection.count
+    summary: |-
+      Number of border objects in the collection. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: count
+    fullName: office.Excel_RangeBorderCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: office.Excel_RangeBorderCollection.getItem
+    summary: |-
+      Gets a border object using its name 
+
+       \[Api set: ExcelApi 1.1\]
+    name: getItem(index)
+    fullName: office.Excel_RangeBorderCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: string): Excel.RangeBorder;'
+      return:
+        type:
+          - Excel.RangeBorder
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_RangeBorderCollection.getItemAt
+    summary: |-
+      Gets a border object using its index 
+
+       \[Api set: ExcelApi 1.1\]
+    name: getItemAt(index)
+    fullName: office.Excel_RangeBorderCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.RangeBorder;'
+      return:
+        type:
+          - Excel.RangeBorder
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel_RangeBorderCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.Excel_RangeBorderCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<Excel.RangeBorder>;'
+      return:
+        type:
+          - Array<Excel.RangeBorder>
+  - uid: office.Excel_RangeBorderCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel_RangeBorderCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeBorderCollection;'
+      return:
+        type:
+          - Excel.RangeBorderCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel_RangeBorderCollection.toJSON
+    name: toJSON()
+    fullName: office.Excel_RangeBorderCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"count\": number;\r\n        }"
+        description: ''

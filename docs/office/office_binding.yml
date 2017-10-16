@@ -1,0 +1,157 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_Binding
+    name: Office_Binding
+    fullName: office.Office_Binding
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_Binding.addHandlerAsync
+      - office.Office_Binding.document
+      - office.Office_Binding.getDataAsync
+      - office.Office_Binding.id
+      - office.Office_Binding.removeHandlerAsync
+      - office.Office_Binding.setDataAsync
+      - office.Office_Binding.type
+  - uid: office.Office_Binding.addHandlerAsync
+    summary: Adds an event handler to the object using the specified event type.
+    name: 'addHandlerAsync(eventType, handler, options, callback)'
+    fullName: office.Office_Binding.addHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addHandlerAsync(eventType: EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: ''
+          type:
+            - EventType
+        - id: handler
+          description: ''
+          type:
+            - any
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Binding.document
+    name: document
+    fullName: office.Office_Binding.document
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'document: Document;'
+      return:
+        type:
+          - Document
+  - uid: office.Office_Binding.getDataAsync
+    summary: Returns the current selection.
+    name: 'getDataAsync(options, callback)'
+    fullName: office.Office_Binding.getDataAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Binding.id
+    summary: Id of the Binding
+    name: id
+    fullName: office.Office_Binding.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office_Binding.removeHandlerAsync
+    summary: Removes an event handler from the object using the specified event type.
+    name: 'removeHandlerAsync(eventType, options, callback)'
+    fullName: office.Office_Binding.removeHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeHandlerAsync(eventType: EventType, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: ''
+          type:
+            - EventType
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Binding.setDataAsync
+    summary: Writes the specified data into the current selection.
+    name: 'setDataAsync(data, options, callback)'
+    fullName: office.Office_Binding.setDataAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDataAsync(data: TableData | any, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: ''
+          type:
+            - TableData | any
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Binding.type
+    name: type
+    fullName: office.Office_Binding.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: BindingType;'
+      return:
+        type:
+          - BindingType

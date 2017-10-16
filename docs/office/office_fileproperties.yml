@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_FileProperties
+    name: Office_FileProperties
+    fullName: office.Office_FileProperties
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_FileProperties.url
+  - uid: office.Office_FileProperties.url
+    summary: File's URL
+    name: url
+    fullName: office.Office_FileProperties.url
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'url: string;'
+      return:
+        type:
+          - string

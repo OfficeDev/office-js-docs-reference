@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_ReplyFormData
+    name: Office_ReplyFormData
+    fullName: office.Office_ReplyFormData
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_ReplyFormData.attachments
+      - office.Office_ReplyFormData.callback
+      - office.Office_ReplyFormData.htmlBody
+  - uid: office.Office_ReplyFormData.attachments
+    name: attachments
+    fullName: office.Office_ReplyFormData.attachments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attachments?: Array<ReplyFormAttachment>;'
+      return:
+        type:
+          - Array<ReplyFormAttachment>
+  - uid: office.Office_ReplyFormData.callback
+    name: callback
+    fullName: office.Office_ReplyFormData.callback
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'callback?: (result: AsyncResult) => void;'
+      return:
+        type:
+          - '(result: AsyncResult) => void'
+  - uid: office.Office_ReplyFormData.htmlBody
+    name: htmlBody
+    fullName: office.Office_ReplyFormData.htmlBody
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'htmlBody?: string;'
+      return:
+        type:
+          - string

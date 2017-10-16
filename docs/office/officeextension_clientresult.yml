@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeExtension_ClientResult
+    summary: >-
+      Contains the result for methods that return primitive types. The object's value property is retrieved from the
+      document after "context.sync()" is invoked.
+    name: OfficeExtension_ClientResult
+    fullName: office.OfficeExtension_ClientResult
+    langs:
+      - typeScript
+    type: class
+    package: office
+    children:
+      - office.OfficeExtension_ClientResult.value
+  - uid: office.OfficeExtension_ClientResult.value
+    summary: The value of the result that is retrieved from the document after "context.sync()" is invoked.
+    name: value
+    fullName: office.OfficeExtension_ClientResult.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: T;'
+      return:
+        type:
+          - T

@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Word_RequestContext
+    summary: >-
+      The RequestContext object facilitates requests to the Word application. Since the Office add-in and the Word
+      application run in two different processes, the request context is required to get access to the Word object model
+      from the add-in.
+    name: Word_RequestContext
+    fullName: office.Word_RequestContext
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeCore.RequestContext
+    package: office
+    children:
+      - office.Word_RequestContext.constructor
+      - office.Word_RequestContext.document
+  - uid: office.Word_RequestContext.constructor
+    summary: 'Constructs a new instance of the [Word\_RequestContext](xref:office.Word_RequestContext) class'
+    name: constructor(url)
+    fullName: office.Word_RequestContext.constructor
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(url?: string);'
+      parameters:
+        - id: url
+          description: ''
+          type:
+            - string
+  - uid: office.Word_RequestContext.document
+    name: document
+    fullName: office.Word_RequestContext.document
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'document: Document;'
+      return:
+        type:
+          - Document

@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_ChartSeriesFormat
+    summary: |-
+      encapsulates the format properties for the chart series 
+
+       \[Api set: ExcelApi 1.1\]
+    name: Excel_ChartSeriesFormat
+    fullName: office.Excel_ChartSeriesFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel_ChartSeriesFormat.fill
+      - office.Excel_ChartSeriesFormat.line
+      - office.Excel_ChartSeriesFormat.load
+      - office.Excel_ChartSeriesFormat.set
+      - office.Excel_ChartSeriesFormat.toJSON
+  - uid: office.Excel_ChartSeriesFormat.fill
+    summary: |-
+      Represents the fill format of a chart series, which includes background formating information. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: fill
+    fullName: office.Excel_ChartSeriesFormat.fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fill: Excel.ChartFill;'
+      return:
+        type:
+          - Excel.ChartFill
+  - uid: office.Excel_ChartSeriesFormat.line
+    summary: |-
+      Represents line formatting. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: line
+    fullName: office.Excel_ChartSeriesFormat.line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'line: Excel.ChartLineFormat;'
+      return:
+        type:
+          - Excel.ChartLineFormat
+  - uid: office.Excel_ChartSeriesFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel_ChartSeriesFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartSeriesFormat;'
+      return:
+        type:
+          - Excel.ChartSeriesFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel_ChartSeriesFormat.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Excel_ChartSeriesFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ChartSeriesFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartSeriesFormatUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Excel_ChartSeriesFormat.toJSON
+    name: toJSON()
+    fullName: office.Excel_ChartSeriesFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"fill\": ChartFill;\r\n            \"line\": ChartLineFormat;\r\n        }"
+        description: ''

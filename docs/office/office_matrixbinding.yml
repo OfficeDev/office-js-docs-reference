@@ -1,0 +1,36 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_MatrixBinding
+    name: Office_MatrixBinding
+    fullName: office.Office_MatrixBinding
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Binding
+    package: office
+    children:
+      - office.Office_MatrixBinding.columnCount
+      - office.Office_MatrixBinding.rowCount
+  - uid: office.Office_MatrixBinding.columnCount
+    name: columnCount
+    fullName: office.Office_MatrixBinding.columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnCount: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office_MatrixBinding.rowCount
+    name: rowCount
+    fullName: office.Office_MatrixBinding.rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowCount: number;'
+      return:
+        type:
+          - number

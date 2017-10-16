@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_ConditionalTextComparisonRule
+    summary: |-
+      Represents a Cell Value Conditional Format Rule 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: Excel_ConditionalTextComparisonRule
+    fullName: office.Excel_ConditionalTextComparisonRule
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel_ConditionalTextComparisonRule.operator
+      - office.Excel_ConditionalTextComparisonRule.text
+  - uid: office.Excel_ConditionalTextComparisonRule.operator
+    summary: |-
+      The operator of the text conditional format. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: operator
+    fullName: office.Excel_ConditionalTextComparisonRule.operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel_ConditionalTextComparisonRule.text
+    summary: |-
+      The Text value of conditional format. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: text
+    fullName: office.Excel_ConditionalTextComparisonRule.text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string

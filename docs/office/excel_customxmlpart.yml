@@ -1,0 +1,138 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_CustomXmlPart
+    summary: |-
+      Represents a custom XML part object in a workbook. 
+
+       \[Api set: ExcelApi 1.5\]
+    name: Excel_CustomXmlPart
+    fullName: office.Excel_CustomXmlPart
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel_CustomXmlPart.delete
+      - office.Excel_CustomXmlPart.getXml
+      - office.Excel_CustomXmlPart.id
+      - office.Excel_CustomXmlPart.load
+      - office.Excel_CustomXmlPart.namespaceUri
+      - office.Excel_CustomXmlPart.setXml
+      - office.Excel_CustomXmlPart.toJSON
+  - uid: office.Excel_CustomXmlPart.delete
+    summary: |-
+      Deletes the custom XML part. 
+
+       \[Api set: ExcelApi 1.5\]
+    name: delete()
+    fullName: office.Excel_CustomXmlPart.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Excel_CustomXmlPart.getXml
+    summary: |-
+      Gets the custom XML part's full XML content. 
+
+       \[Api set: ExcelApi 1.5\]
+    name: getXml()
+    fullName: office.Excel_CustomXmlPart.getXml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getXml(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+  - uid: office.Excel_CustomXmlPart.id
+    summary: |-
+      The custom XML part's ID. Read-only. 
+
+       \[Api set: ExcelApi 1.5\]
+    name: id
+    fullName: office.Excel_CustomXmlPart.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel_CustomXmlPart.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel_CustomXmlPart.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.CustomXmlPart;'
+      return:
+        type:
+          - Excel.CustomXmlPart
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel_CustomXmlPart.namespaceUri
+    summary: |-
+      The custom XML part's namespace URI. Read-only. 
+
+       \[Api set: ExcelApi 1.5\]
+    name: namespaceUri
+    fullName: office.Excel_CustomXmlPart.namespaceUri
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'namespaceUri: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel_CustomXmlPart.setXml
+    summary: |-
+      Sets the custom XML part's full XML content. 
+
+       \[Api set: ExcelApi 1.5\]
+    name: setXml(xml)
+    fullName: office.Excel_CustomXmlPart.setXml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setXml(xml: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: xml
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_CustomXmlPart.toJSON
+    name: toJSON()
+    fullName: office.Excel_CustomXmlPart.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"id\": string;\r\n            \"namespaceUri\": string;\r\n        }"
+        description: ''

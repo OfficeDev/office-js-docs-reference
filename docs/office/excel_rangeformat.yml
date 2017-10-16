@@ -1,0 +1,255 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_RangeFormat
+    summary: |-
+      A format object encapsulating the range's font, fill, borders, alignment, and other properties. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: Excel_RangeFormat
+    fullName: office.Excel_RangeFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel_RangeFormat.autofitColumns
+      - office.Excel_RangeFormat.autofitRows
+      - office.Excel_RangeFormat.borders
+      - office.Excel_RangeFormat.columnWidth
+      - office.Excel_RangeFormat.fill
+      - office.Excel_RangeFormat.font
+      - office.Excel_RangeFormat.horizontalAlignment
+      - office.Excel_RangeFormat.load
+      - office.Excel_RangeFormat.protection
+      - office.Excel_RangeFormat.rowHeight
+      - office.Excel_RangeFormat.set
+      - office.Excel_RangeFormat.toJSON
+      - office.Excel_RangeFormat.verticalAlignment
+      - office.Excel_RangeFormat.wrapText
+  - uid: office.Excel_RangeFormat.autofitColumns
+    summary: >-
+      Changes the width of the columns of the current range to achieve the best fit, based on the current data in the
+      columns. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: autofitColumns()
+    fullName: office.Excel_RangeFormat.autofitColumns
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'autofitColumns(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Excel_RangeFormat.autofitRows
+    summary: >-
+      Changes the height of the rows of the current range to achieve the best fit, based on the current data in the
+      columns. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: autofitRows()
+    fullName: office.Excel_RangeFormat.autofitRows
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'autofitRows(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Excel_RangeFormat.borders
+    summary: |-
+      Collection of border objects that apply to the overall range. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: borders
+    fullName: office.Excel_RangeFormat.borders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borders: Excel.RangeBorderCollection;'
+      return:
+        type:
+          - Excel.RangeBorderCollection
+  - uid: office.Excel_RangeFormat.columnWidth
+    summary: >-
+      Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be
+      returned. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: columnWidth
+    fullName: office.Excel_RangeFormat.columnWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnWidth: number;'
+      return:
+        type:
+          - number
+  - uid: office.Excel_RangeFormat.fill
+    summary: |-
+      Returns the fill object defined on the overall range. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: fill
+    fullName: office.Excel_RangeFormat.fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fill: Excel.RangeFill;'
+      return:
+        type:
+          - Excel.RangeFill
+  - uid: office.Excel_RangeFormat.font
+    summary: |-
+      Returns the font object defined on the overall range. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: font
+    fullName: office.Excel_RangeFormat.font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font: Excel.RangeFont;'
+      return:
+        type:
+          - Excel.RangeFont
+  - uid: office.Excel_RangeFormat.horizontalAlignment
+    summary: |-
+      Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: horizontalAlignment
+    fullName: office.Excel_RangeFormat.horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel_RangeFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel_RangeFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeFormat;'
+      return:
+        type:
+          - Excel.RangeFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel_RangeFormat.protection
+    summary: |-
+      Returns the format protection object for a range. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: protection
+    fullName: office.Excel_RangeFormat.protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protection: Excel.FormatProtection;'
+      return:
+        type:
+          - Excel.FormatProtection
+  - uid: office.Excel_RangeFormat.rowHeight
+    summary: |-
+      Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: rowHeight
+    fullName: office.Excel_RangeFormat.rowHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowHeight: number;'
+      return:
+        type:
+          - number
+  - uid: office.Excel_RangeFormat.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Excel_RangeFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.RangeFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.RangeFormatUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Excel_RangeFormat.toJSON
+    name: toJSON()
+    fullName: office.Excel_RangeFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"columnWidth\": number;\r\n            \"fill\": RangeFill;\r\n            \"font\": RangeFont;\r\n            \"horizontalAlignment\": string;\r\n            \"protection\": FormatProtection;\r\n            \"rowHeight\": number;\r\n            \"verticalAlignment\": string;\r\n            \"wrapText\": boolean;\r\n        }"
+        description: ''
+  - uid: office.Excel_RangeFormat.verticalAlignment
+    summary: |-
+      Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: verticalAlignment
+    fullName: office.Excel_RangeFormat.verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel_RangeFormat.wrapText
+    summary: >-
+      Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
+      wrap setting 
+
+       \[Api set: ExcelApi 1.1\]
+    name: wrapText
+    fullName: office.Excel_RangeFormat.wrapText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'wrapText: boolean;'
+      return:
+        type:
+          - boolean

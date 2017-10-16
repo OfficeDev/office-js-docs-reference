@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_GoToType
+    name: Office_GoToType
+    fullName: office.Office_GoToType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office_GoToType.Binding
+      - office.Office_GoToType.Index
+      - office.Office_GoToType.NamedItem
+      - office.Office_GoToType.Slide
+  - uid: office.Office_GoToType.Binding
+    summary: Goes to a binding object using the specified binding id.
+    name: Binding
+    fullName: office.Office_GoToType.Binding
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_GoToType.Index
+    summary: Goes to the specified index by slide number or enum Office.Index
+    name: Index
+    fullName: office.Office_GoToType.Index
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_GoToType.NamedItem
+    summary: >-
+      Goes to a named item using that item's name. In Excel, you can use any structured reference for a named range or
+      table: "Worksheet2!Table1"
+    name: NamedItem
+    fullName: office.Office_GoToType.NamedItem
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_GoToType.Slide
+    summary: Goes to a slide using the specified id.
+    name: Slide
+    fullName: office.Office_GoToType.Slide
+    langs:
+      - typeScript
+    type: field

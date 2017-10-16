@@ -1,0 +1,64 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_ThreeTrafficLights2Set
+    name: Excel_ThreeTrafficLights2Set
+    fullName: office.Excel_ThreeTrafficLights2Set
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel_ThreeTrafficLights2Set.__index
+      - office.Excel_ThreeTrafficLights2Set.greenTrafficLight
+      - office.Excel_ThreeTrafficLights2Set.redTrafficLight
+      - office.Excel_ThreeTrafficLights2Set.yellowTrafficLight
+  - uid: office.Excel_ThreeTrafficLights2Set.__index
+    name: __index(index)
+    fullName: office.Excel_ThreeTrafficLights2Set.__index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[ index: number ]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel_ThreeTrafficLights2Set.greenTrafficLight
+    name: greenTrafficLight
+    fullName: office.Excel_ThreeTrafficLights2Set.greenTrafficLight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenTrafficLight: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel_ThreeTrafficLights2Set.redTrafficLight
+    name: redTrafficLight
+    fullName: office.Excel_ThreeTrafficLights2Set.redTrafficLight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redTrafficLight: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel_ThreeTrafficLights2Set.yellowTrafficLight
+    name: yellowTrafficLight
+    fullName: office.Excel_ThreeTrafficLights2Set.yellowTrafficLight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowTrafficLight: Icon;'
+      return:
+        type:
+          - Icon

@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_RoamingSettings
+    name: Office_RoamingSettings
+    fullName: office.Office_RoamingSettings
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_RoamingSettings.get
+      - office.Office_RoamingSettings.remove
+      - office.Office_RoamingSettings.saveAsync
+      - office.Office_RoamingSettings.set
+  - uid: office.Office_RoamingSettings.get
+    summary: Retrieves the specified setting
+    name: get(name)
+    fullName: office.Office_RoamingSettings.get
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'get(name: string): any;'
+      return:
+        type:
+          - any
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: office.Office_RoamingSettings.remove
+    summary: Removes the specified setting
+    name: remove(name)
+    fullName: office.Office_RoamingSettings.remove
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: office.Office_RoamingSettings.saveAsync
+    summary: Saves the settings
+    name: saveAsync(callback)
+    fullName: office.Office_RoamingSettings.saveAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'saveAsync(callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_RoamingSettings.set
+    summary: Sets or creates the specified setting
+    name: 'set(name, value)'
+    fullName: office.Office_RoamingSettings.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(name: string, value: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+        - id: value
+          description: ''
+          type:
+            - any

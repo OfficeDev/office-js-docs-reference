@@ -1,0 +1,134 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Word_TableCollection
+    summary: |-
+      Contains the collection of the document's Table objects. 
+
+       \[Api set: WordApi 1.3\]
+    name: Word_TableCollection
+    fullName: office.Word_TableCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Word_TableCollection.getFirst
+      - office.Word_TableCollection.getFirstOrNullObject
+      - office.Word_TableCollection.items
+      - office.Word_TableCollection.load
+      - office.Word_TableCollection.toJSON
+      - office.Word_TableCollection.track
+      - office.Word_TableCollection.untrack
+  - uid: office.Word_TableCollection.getFirst
+    summary: |-
+      Gets the first table in this collection. Throws if this collection is empty. 
+
+       \[Api set: WordApi 1.3\]
+    name: getFirst()
+    fullName: office.Word_TableCollection.getFirst
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirst(): Word.Table;'
+      return:
+        type:
+          - Word.Table
+        description: ''
+  - uid: office.Word_TableCollection.getFirstOrNullObject
+    summary: |-
+      Gets the first table in this collection. Returns a null object if this collection is empty. 
+
+       \[Api set: WordApi 1.3\]
+    name: getFirstOrNullObject()
+    fullName: office.Word_TableCollection.getFirstOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirstOrNullObject(): Word.Table;'
+      return:
+        type:
+          - Word.Table
+        description: ''
+  - uid: office.Word_TableCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.Word_TableCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<Word.Table>;'
+      return:
+        type:
+          - Array<Word.Table>
+  - uid: office.Word_TableCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Word_TableCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.TableCollection;'
+      return:
+        type:
+          - Word.TableCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Word_TableCollection.toJSON
+    name: toJSON()
+    fullName: office.Word_TableCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - '{}'
+        description: ''
+  - uid: office.Word_TableCollection.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: office.Word_TableCollection.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.TableCollection;'
+      return:
+        type:
+          - Word.TableCollection
+        description: ''
+  - uid: office.Word_TableCollection.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: office.Word_TableCollection.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.TableCollection;'
+      return:
+        type:
+          - Word.TableCollection
+        description: ''

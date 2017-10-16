@@ -1,0 +1,170 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_ConditionalRangeFont
+    summary: |-
+      This object represents the font attributes (font style,, color, etc.) for an object. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: Excel_ConditionalRangeFont
+    fullName: office.Excel_ConditionalRangeFont
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel_ConditionalRangeFont.bold
+      - office.Excel_ConditionalRangeFont.clear
+      - office.Excel_ConditionalRangeFont.color
+      - office.Excel_ConditionalRangeFont.italic
+      - office.Excel_ConditionalRangeFont.load
+      - office.Excel_ConditionalRangeFont.set
+      - office.Excel_ConditionalRangeFont.strikethrough
+      - office.Excel_ConditionalRangeFont.toJSON
+      - office.Excel_ConditionalRangeFont.underline
+  - uid: office.Excel_ConditionalRangeFont.bold
+    summary: |-
+      Represents the bold status of font. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: bold
+    fullName: office.Excel_ConditionalRangeFont.bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel_ConditionalRangeFont.clear
+    summary: |-
+      Resets the font formats. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: clear()
+    fullName: office.Excel_ConditionalRangeFont.clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Excel_ConditionalRangeFont.color
+    summary: |-
+      HTML color code representation of the text color. E.g. \#FF0000 represents Red. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: color
+    fullName: office.Excel_ConditionalRangeFont.color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel_ConditionalRangeFont.italic
+    summary: |-
+      Represents the italic status of the font. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: italic
+    fullName: office.Excel_ConditionalRangeFont.italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel_ConditionalRangeFont.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel_ConditionalRangeFont.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalRangeFont;'
+      return:
+        type:
+          - Excel.ConditionalRangeFont
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel_ConditionalRangeFont.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Excel_ConditionalRangeFont.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ConditionalRangeFontUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ConditionalRangeFontUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Excel_ConditionalRangeFont.strikethrough
+    summary: |-
+      Represents the strikethrough status of the font. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: strikethrough
+    fullName: office.Excel_ConditionalRangeFont.strikethrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikethrough: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel_ConditionalRangeFont.toJSON
+    name: toJSON()
+    fullName: office.Excel_ConditionalRangeFont.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"bold\": boolean;\r\n            \"color\": string;\r\n            \"italic\": boolean;\r\n            \"strikethrough\": boolean;\r\n            \"underline\": string;\r\n        }"
+        description: ''
+  - uid: office.Excel_ConditionalRangeFont.underline
+    summary: |-
+      Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: underline
+    fullName: office.Excel_ConditionalRangeFont.underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline: string;'
+      return:
+        type:
+          - string

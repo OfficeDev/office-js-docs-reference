@@ -1,0 +1,64 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_ThreeSignsSet
+    name: Excel_ThreeSignsSet
+    fullName: office.Excel_ThreeSignsSet
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel_ThreeSignsSet.__index
+      - office.Excel_ThreeSignsSet.greenCircle
+      - office.Excel_ThreeSignsSet.redDiamond
+      - office.Excel_ThreeSignsSet.yellowTriangle
+  - uid: office.Excel_ThreeSignsSet.__index
+    name: __index(index)
+    fullName: office.Excel_ThreeSignsSet.__index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[ index: number ]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel_ThreeSignsSet.greenCircle
+    name: greenCircle
+    fullName: office.Excel_ThreeSignsSet.greenCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenCircle: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel_ThreeSignsSet.redDiamond
+    name: redDiamond
+    fullName: office.Excel_ThreeSignsSet.redDiamond
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redDiamond: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel_ThreeSignsSet.yellowTriangle
+    name: yellowTriangle
+    fullName: office.Excel_ThreeSignsSet.yellowTriangle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowTriangle: Icon;'
+      return:
+        type:
+          - Icon

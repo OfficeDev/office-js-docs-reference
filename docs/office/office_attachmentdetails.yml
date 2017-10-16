@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_AttachmentDetails
+    name: Office_AttachmentDetails
+    fullName: office.Office_AttachmentDetails
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_AttachmentDetails.attachmentType
+      - office.Office_AttachmentDetails.contentType
+      - office.Office_AttachmentDetails.id
+      - office.Office_AttachmentDetails.isInline
+      - office.Office_AttachmentDetails.name
+      - office.Office_AttachmentDetails.size
+  - uid: office.Office_AttachmentDetails.attachmentType
+    name: attachmentType
+    fullName: office.Office_AttachmentDetails.attachmentType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attachmentType: Office.MailboxEnums.AttachmentType;'
+      return:
+        type:
+          - Office.MailboxEnums.AttachmentType
+  - uid: office.Office_AttachmentDetails.contentType
+    name: contentType
+    fullName: office.Office_AttachmentDetails.contentType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contentType: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office_AttachmentDetails.id
+    name: id
+    fullName: office.Office_AttachmentDetails.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office_AttachmentDetails.isInline
+    name: isInline
+    fullName: office.Office_AttachmentDetails.isInline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isInline: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Office_AttachmentDetails.name
+    name: name
+    fullName: office.Office_AttachmentDetails.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office_AttachmentDetails.size
+    name: size
+    fullName: office.Office_AttachmentDetails.size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size: number;'
+      return:
+        type:
+          - number

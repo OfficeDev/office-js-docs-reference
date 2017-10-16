@@ -1,0 +1,193 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_ChartCollection
+    summary: |-
+      A collection of all the chart objects on a worksheet. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: Excel_ChartCollection
+    fullName: office.Excel_ChartCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel_ChartCollection.add
+      - office.Excel_ChartCollection.count
+      - office.Excel_ChartCollection.getCount
+      - office.Excel_ChartCollection.getItem
+      - office.Excel_ChartCollection.getItemAt
+      - office.Excel_ChartCollection.getItemOrNullObject
+      - office.Excel_ChartCollection.items
+      - office.Excel_ChartCollection.load
+      - office.Excel_ChartCollection.toJSON
+  - uid: office.Excel_ChartCollection.add
+    summary: |-
+      Creates a new chart. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: 'add(type, sourceData, seriesBy)'
+    fullName: office.Excel_ChartCollection.add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(type: string, sourceData: Excel.Range, seriesBy?: string): Excel.Chart;'
+      return:
+        type:
+          - Excel.Chart
+        description: ''
+      parameters:
+        - id: type
+          description: ''
+          type:
+            - string
+        - id: sourceData
+          description: ''
+          type:
+            - Excel.Range
+        - id: seriesBy
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_ChartCollection.count
+    summary: |-
+      Returns the number of charts in the worksheet. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: count
+    fullName: office.Excel_ChartCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: office.Excel_ChartCollection.getCount
+    summary: |-
+      Returns the number of charts in the worksheet. 
+
+       \[Api set: ExcelApi 1.4\]
+    name: getCount()
+    fullName: office.Excel_ChartCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: office.Excel_ChartCollection.getItem
+    summary: |-
+      Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: getItem(name)
+    fullName: office.Excel_ChartCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.Chart;'
+      return:
+        type:
+          - Excel.Chart
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_ChartCollection.getItemAt
+    summary: |-
+      Gets a chart based on its position in the collection. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: getItemAt(index)
+    fullName: office.Excel_ChartCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.Chart;'
+      return:
+        type:
+          - Excel.Chart
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel_ChartCollection.getItemOrNullObject
+    summary: >-
+      Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned. If
+      the chart does not exist, will return a null object. 
+
+       \[Api set: ExcelApi 1.4\]
+    name: getItemOrNullObject(name)
+    fullName: office.Excel_ChartCollection.getItemOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.Chart;'
+      return:
+        type:
+          - Excel.Chart
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_ChartCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.Excel_ChartCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<Excel.Chart>;'
+      return:
+        type:
+          - Array<Excel.Chart>
+  - uid: office.Excel_ChartCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel_ChartCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartCollection;'
+      return:
+        type:
+          - Excel.ChartCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel_ChartCollection.toJSON
+    name: toJSON()
+    fullName: office.Excel_ChartCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"count\": number;\r\n        }"
+        description: ''

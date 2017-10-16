@@ -1,0 +1,187 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_ConditionalRangeBorderCollection
+    summary: |-
+      Represents the border objects that make up range border. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: Excel_ConditionalRangeBorderCollection
+    fullName: office.Excel_ConditionalRangeBorderCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel_ConditionalRangeBorderCollection.bottom
+      - office.Excel_ConditionalRangeBorderCollection.count
+      - office.Excel_ConditionalRangeBorderCollection.getItem
+      - office.Excel_ConditionalRangeBorderCollection.getItemAt
+      - office.Excel_ConditionalRangeBorderCollection.items
+      - office.Excel_ConditionalRangeBorderCollection.left
+      - office.Excel_ConditionalRangeBorderCollection.load
+      - office.Excel_ConditionalRangeBorderCollection.right
+      - office.Excel_ConditionalRangeBorderCollection.toJSON
+      - office.Excel_ConditionalRangeBorderCollection.top
+  - uid: office.Excel_ConditionalRangeBorderCollection.bottom
+    summary: |-
+      Gets the top border 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: bottom
+    fullName: office.Excel_ConditionalRangeBorderCollection.bottom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bottom: Excel.ConditionalRangeBorder;'
+      return:
+        type:
+          - Excel.ConditionalRangeBorder
+  - uid: office.Excel_ConditionalRangeBorderCollection.count
+    summary: |-
+      Number of border objects in the collection. Read-only. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: count
+    fullName: office.Excel_ConditionalRangeBorderCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: office.Excel_ConditionalRangeBorderCollection.getItem
+    summary: |-
+      Gets a border object using its name 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: getItem(index)
+    fullName: office.Excel_ConditionalRangeBorderCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: string): Excel.ConditionalRangeBorder;'
+      return:
+        type:
+          - Excel.ConditionalRangeBorder
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - string
+  - uid: office.Excel_ConditionalRangeBorderCollection.getItemAt
+    summary: |-
+      Gets a border object using its index 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: getItemAt(index)
+    fullName: office.Excel_ConditionalRangeBorderCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.ConditionalRangeBorder;'
+      return:
+        type:
+          - Excel.ConditionalRangeBorder
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel_ConditionalRangeBorderCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.Excel_ConditionalRangeBorderCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<Excel.ConditionalRangeBorder>;'
+      return:
+        type:
+          - Array<Excel.ConditionalRangeBorder>
+  - uid: office.Excel_ConditionalRangeBorderCollection.left
+    summary: |-
+      Gets the top border 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: left
+    fullName: office.Excel_ConditionalRangeBorderCollection.left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: Excel.ConditionalRangeBorder;'
+      return:
+        type:
+          - Excel.ConditionalRangeBorder
+  - uid: office.Excel_ConditionalRangeBorderCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel_ConditionalRangeBorderCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalRangeBorderCollection;'
+      return:
+        type:
+          - Excel.ConditionalRangeBorderCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel_ConditionalRangeBorderCollection.right
+    summary: |-
+      Gets the top border 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: right
+    fullName: office.Excel_ConditionalRangeBorderCollection.right
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'right: Excel.ConditionalRangeBorder;'
+      return:
+        type:
+          - Excel.ConditionalRangeBorder
+  - uid: office.Excel_ConditionalRangeBorderCollection.toJSON
+    name: toJSON()
+    fullName: office.Excel_ConditionalRangeBorderCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"count\": number;\r\n        }"
+        description: ''
+  - uid: office.Excel_ConditionalRangeBorderCollection.top
+    summary: |-
+      Gets the top border 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: top
+    fullName: office.Excel_ConditionalRangeBorderCollection.top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: Excel.ConditionalRangeBorder;'
+      return:
+        type:
+          - Excel.ConditionalRangeBorder

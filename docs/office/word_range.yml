@@ -1,0 +1,1033 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Word_Range
+    summary: |-
+      Represents a contiguous area in a document. 
+
+       \[Api set: WordApi 1.1\]
+    name: Word_Range
+    fullName: office.Word_Range
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Word_Range.clear
+      - office.Word_Range.compareLocationWith
+      - office.Word_Range.contentControls
+      - office.Word_Range.delete
+      - office.Word_Range.expandTo
+      - office.Word_Range.expandToOrNullObject
+      - office.Word_Range.font
+      - office.Word_Range.getHtml
+      - office.Word_Range.getHyperlinkRanges
+      - office.Word_Range.getNextTextRange
+      - office.Word_Range.getNextTextRangeOrNullObject
+      - office.Word_Range.getOoxml
+      - office.Word_Range.getRange
+      - office.Word_Range.getTextRanges
+      - office.Word_Range.hyperlink
+      - office.Word_Range.inlinePictures
+      - office.Word_Range.insertBreak
+      - office.Word_Range.insertContentControl
+      - office.Word_Range.insertFileFromBase64
+      - office.Word_Range.insertHtml
+      - office.Word_Range.insertInlinePictureFromBase64
+      - office.Word_Range.insertOoxml
+      - office.Word_Range.insertParagraph
+      - office.Word_Range.insertTable
+      - office.Word_Range.insertText
+      - office.Word_Range.intersectWith
+      - office.Word_Range.intersectWithOrNullObject
+      - office.Word_Range.isEmpty
+      - office.Word_Range.lists
+      - office.Word_Range.load
+      - office.Word_Range.paragraphs
+      - office.Word_Range.parentBody
+      - office.Word_Range.parentContentControl
+      - office.Word_Range.parentContentControlOrNullObject
+      - office.Word_Range.parentTable
+      - office.Word_Range.parentTableCell
+      - office.Word_Range.parentTableCellOrNullObject
+      - office.Word_Range.parentTableOrNullObject
+      - office.Word_Range.search
+      - office.Word_Range.select
+      - office.Word_Range.set
+      - office.Word_Range.split
+      - office.Word_Range.style
+      - office.Word_Range.styleBuiltIn
+      - office.Word_Range.tables
+      - office.Word_Range.text
+      - office.Word_Range.toJSON
+      - office.Word_Range.track
+      - office.Word_Range.untrack
+  - uid: office.Word_Range.clear
+    summary: |-
+      Clears the contents of the range object. The user can perform the undo operation on the cleared content. 
+
+       \[Api set: WordApi 1.1\]
+    name: clear()
+    fullName: office.Word_Range.clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Word_Range.compareLocationWith
+    summary: |-
+      Compares this range's location with another range's location. 
+
+       \[Api set: WordApi 1.3\]
+    name: compareLocationWith(range)
+    fullName: office.Word_Range.compareLocationWith
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'compareLocationWith(range: Word.Range): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+      parameters:
+        - id: range
+          description: ''
+          type:
+            - Word.Range
+  - uid: office.Word_Range.contentControls
+    summary: |-
+      Gets the collection of content control objects in the range. Read-only. 
+
+       \[Api set: WordApi 1.1\]
+    name: contentControls
+    fullName: office.Word_Range.contentControls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contentControls: Word.ContentControlCollection;'
+      return:
+        type:
+          - Word.ContentControlCollection
+  - uid: office.Word_Range.delete
+    summary: |-
+      Deletes the range and its content from the document. 
+
+       \[Api set: WordApi 1.1\]
+    name: delete()
+    fullName: office.Word_Range.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Word_Range.expandTo
+    summary: >-
+      Returns a new range that extends from this range in either direction to cover another range. This range is not
+      changed. Throws if the two ranges do not have a union. 
+
+       \[Api set: WordApi 1.3\]
+    name: expandTo(range)
+    fullName: office.Word_Range.expandTo
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'expandTo(range: Word.Range): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: range
+          description: ''
+          type:
+            - Word.Range
+  - uid: office.Word_Range.expandToOrNullObject
+    summary: >-
+      Returns a new range that extends from this range in either direction to cover another range. This range is not
+      changed. Returns a null object if the two ranges do not have a union. 
+
+       \[Api set: WordApi 1.3\]
+    name: expandToOrNullObject(range)
+    fullName: office.Word_Range.expandToOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'expandToOrNullObject(range: Word.Range): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: range
+          description: ''
+          type:
+            - Word.Range
+  - uid: office.Word_Range.font
+    summary: >-
+      Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+      Read-only. 
+
+       \[Api set: WordApi 1.1\]
+    name: font
+    fullName: office.Word_Range.font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font: Word.Font;'
+      return:
+        type:
+          - Word.Font
+  - uid: office.Word_Range.getHtml
+    summary: |-
+      Gets the HTML representation of the range object. 
+
+       \[Api set: WordApi 1.1\]
+    name: getHtml()
+    fullName: office.Word_Range.getHtml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHtml(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+  - uid: office.Word_Range.getHyperlinkRanges
+    summary: |-
+      Gets hyperlink child ranges within the range. 
+
+       \[Api set: WordApi 1.3\]
+    name: getHyperlinkRanges()
+    fullName: office.Word_Range.getHyperlinkRanges
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHyperlinkRanges(): Word.RangeCollection;'
+      return:
+        type:
+          - Word.RangeCollection
+        description: ''
+  - uid: office.Word_Range.getNextTextRange
+    summary: >-
+      Gets the next text range by using punctuation marks and/or other ending marks. Throws if this text range is the
+      last one. 
+
+       \[Api set: WordApi 1.3\]
+    name: 'getNextTextRange(endingMarks, trimSpacing)'
+    fullName: office.Word_Range.getNextTextRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNextTextRange(endingMarks: Array<string>, trimSpacing?: boolean): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: endingMarks
+          description: ''
+          type:
+            - Array<string>
+        - id: trimSpacing
+          description: ''
+          type:
+            - boolean
+  - uid: office.Word_Range.getNextTextRangeOrNullObject
+    summary: >-
+      Gets the next text range by using punctuation marks and/or other ending marks. Returns a null object if this text
+      range is the last one. 
+
+       \[Api set: WordApi 1.3\]
+    name: 'getNextTextRangeOrNullObject(endingMarks, trimSpacing)'
+    fullName: office.Word_Range.getNextTextRangeOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNextTextRangeOrNullObject(endingMarks: Array<string>, trimSpacing?: boolean): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: endingMarks
+          description: ''
+          type:
+            - Array<string>
+        - id: trimSpacing
+          description: ''
+          type:
+            - boolean
+  - uid: office.Word_Range.getOoxml
+    summary: |-
+      Gets the OOXML representation of the range object. 
+
+       \[Api set: WordApi 1.1\]
+    name: getOoxml()
+    fullName: office.Word_Range.getOoxml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+  - uid: office.Word_Range.getRange
+    summary: |-
+      Clones the range, or gets the starting or ending point of the range as a new range. 
+
+       \[Api set: WordApi 1.3\]
+    name: getRange(rangeLocation)
+    fullName: office.Word_Range.getRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(rangeLocation?: string): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: rangeLocation
+          description: ''
+          type:
+            - string
+  - uid: office.Word_Range.getTextRanges
+    summary: |-
+      Gets the text child ranges in the range by using punctuation marks and/or other ending marks. 
+
+       \[Api set: WordApi 1.3\]
+    name: 'getTextRanges(endingMarks, trimSpacing)'
+    fullName: office.Word_Range.getTextRanges
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTextRanges(endingMarks: Array<string>, trimSpacing?: boolean): Word.RangeCollection;'
+      return:
+        type:
+          - Word.RangeCollection
+        description: ''
+      parameters:
+        - id: endingMarks
+          description: ''
+          type:
+            - Array<string>
+        - id: trimSpacing
+          description: ''
+          type:
+            - boolean
+  - uid: office.Word_Range.hyperlink
+    summary: >-
+      Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted
+      when you set a new hyperlink on the range. Use a '\#' to separate the address part from the optional location
+      part. 
+
+       \[Api set: WordApi 1.3\]
+    name: hyperlink
+    fullName: office.Word_Range.hyperlink
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hyperlink: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word_Range.inlinePictures
+    summary: |-
+      Gets the collection of inline picture objects in the range. Read-only. 
+
+       \[Api set: WordApi 1.2\]
+    name: inlinePictures
+    fullName: office.Word_Range.inlinePictures
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inlinePictures: Word.InlinePictureCollection;'
+      return:
+        type:
+          - Word.InlinePictureCollection
+  - uid: office.Word_Range.insertBreak
+    summary: >-
+      Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
+      'After'. 
+
+       \[Api set: WordApi 1.1\]
+    name: 'insertBreak(breakType, insertLocation)'
+    fullName: office.Word_Range.insertBreak
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertBreak(breakType: string, insertLocation: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: breakType
+          description: ''
+          type:
+            - string
+        - id: insertLocation
+          description: ''
+          type:
+            - string
+  - uid: office.Word_Range.insertContentControl
+    summary: |-
+      Wraps the range object with a rich text content control. 
+
+       \[Api set: WordApi 1.1\]
+    name: insertContentControl()
+    fullName: office.Word_Range.insertContentControl
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertContentControl(): Word.ContentControl;'
+      return:
+        type:
+          - Word.ContentControl
+        description: ''
+  - uid: office.Word_Range.insertFileFromBase64
+    summary: >-
+      Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before'
+      or 'After'. 
+
+       \[Api set: WordApi 1.1\]
+    name: 'insertFileFromBase64(base64File, insertLocation)'
+    fullName: office.Word_Range.insertFileFromBase64
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertFileFromBase64(base64File: string, insertLocation: string): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: base64File
+          description: ''
+          type:
+            - string
+        - id: insertLocation
+          description: ''
+          type:
+            - string
+  - uid: office.Word_Range.insertHtml
+    summary: >-
+      Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or
+      'After'. 
+
+       \[Api set: WordApi 1.1\]
+    name: 'insertHtml(html, insertLocation)'
+    fullName: office.Word_Range.insertHtml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertHtml(html: string, insertLocation: string): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: html
+          description: ''
+          type:
+            - string
+        - id: insertLocation
+          description: ''
+          type:
+            - string
+  - uid: office.Word_Range.insertInlinePictureFromBase64
+    summary: >-
+      Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before'
+      or 'After'. 
+
+       \[Api set: WordApi 1.2\]
+    name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
+    fullName: office.Word_Range.insertInlinePictureFromBase64
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: string): Word.InlinePicture;'
+      return:
+        type:
+          - Word.InlinePicture
+        description: ''
+      parameters:
+        - id: base64EncodedImage
+          description: ''
+          type:
+            - string
+        - id: insertLocation
+          description: ''
+          type:
+            - string
+  - uid: office.Word_Range.insertOoxml
+    summary: >-
+      Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or
+      'After'. 
+
+       \[Api set: WordApi 1.1\]
+    name: 'insertOoxml(ooxml, insertLocation)'
+    fullName: office.Word_Range.insertOoxml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertOoxml(ooxml: string, insertLocation: string): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: ooxml
+          description: ''
+          type:
+            - string
+        - id: insertLocation
+          description: ''
+          type:
+            - string
+  - uid: office.Word_Range.insertParagraph
+    summary: |-
+      Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'. 
+
+       \[Api set: WordApi 1.1\]
+    name: 'insertParagraph(paragraphText, insertLocation)'
+    fullName: office.Word_Range.insertParagraph
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertParagraph(paragraphText: string, insertLocation: string): Word.Paragraph;'
+      return:
+        type:
+          - Word.Paragraph
+        description: ''
+      parameters:
+        - id: paragraphText
+          description: ''
+          type:
+            - string
+        - id: insertLocation
+          description: ''
+          type:
+            - string
+  - uid: office.Word_Range.insertTable
+    summary: >-
+      Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or
+      'After'. 
+
+       \[Api set: WordApi 1.3\]
+    name: 'insertTable(rowCount, columnCount, insertLocation, values)'
+    fullName: office.Word_Range.insertTable
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertTable(rowCount: number, columnCount: number, insertLocation: string, values?: Array<Array<string>>):
+        Word.Table;
+      return:
+        type:
+          - Word.Table
+        description: ''
+      parameters:
+        - id: rowCount
+          description: ''
+          type:
+            - number
+        - id: columnCount
+          description: ''
+          type:
+            - number
+        - id: insertLocation
+          description: ''
+          type:
+            - string
+        - id: values
+          description: ''
+          type:
+            - Array<Array<string>>
+  - uid: office.Word_Range.insertText
+    summary: >-
+      Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or
+      'After'. 
+
+       \[Api set: WordApi 1.1\]
+    name: 'insertText(text, insertLocation)'
+    fullName: office.Word_Range.insertText
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertText(text: string, insertLocation: string): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: text
+          description: ''
+          type:
+            - string
+        - id: insertLocation
+          description: ''
+          type:
+            - string
+  - uid: office.Word_Range.intersectWith
+    summary: >-
+      Returns a new range as the intersection of this range with another range. This range is not changed. Throws if the
+      two ranges are not overlapped or adjacent. 
+
+       \[Api set: WordApi 1.3\]
+    name: intersectWith(range)
+    fullName: office.Word_Range.intersectWith
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'intersectWith(range: Word.Range): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: range
+          description: ''
+          type:
+            - Word.Range
+  - uid: office.Word_Range.intersectWithOrNullObject
+    summary: >-
+      Returns a new range as the intersection of this range with another range. This range is not changed. Returns a
+      null object if the two ranges are not overlapped or adjacent. 
+
+       \[Api set: WordApi 1.3\]
+    name: intersectWithOrNullObject(range)
+    fullName: office.Word_Range.intersectWithOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'intersectWithOrNullObject(range: Word.Range): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: range
+          description: ''
+          type:
+            - Word.Range
+  - uid: office.Word_Range.isEmpty
+    summary: |-
+      Checks whether the range length is zero. Read-only. 
+
+       \[Api set: WordApi 1.3\]
+    name: isEmpty
+    fullName: office.Word_Range.isEmpty
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isEmpty: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Word_Range.lists
+    summary: |-
+      Gets the collection of list objects in the range. Read-only. 
+
+       \[Api set: WordApi 1.3\]
+    name: lists
+    fullName: office.Word_Range.lists
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lists: Word.ListCollection;'
+      return:
+        type:
+          - Word.ListCollection
+  - uid: office.Word_Range.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Word_Range.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Word_Range.paragraphs
+    summary: |-
+      Gets the collection of paragraph objects in the range. Read-only. 
+
+       \[Api set: WordApi 1.1\]
+    name: paragraphs
+    fullName: office.Word_Range.paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraphs: Word.ParagraphCollection;'
+      return:
+        type:
+          - Word.ParagraphCollection
+  - uid: office.Word_Range.parentBody
+    summary: |-
+      Gets the parent body of the range. Read-only. 
+
+       \[Api set: WordApi 1.3\]
+    name: parentBody
+    fullName: office.Word_Range.parentBody
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentBody: Word.Body;'
+      return:
+        type:
+          - Word.Body
+  - uid: office.Word_Range.parentContentControl
+    summary: |-
+      Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only. 
+
+       \[Api set: WordApi 1.1\]
+    name: parentContentControl
+    fullName: office.Word_Range.parentContentControl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentContentControl: Word.ContentControl;'
+      return:
+        type:
+          - Word.ContentControl
+  - uid: office.Word_Range.parentContentControlOrNullObject
+    summary: >-
+      Gets the content control that contains the range. Returns a null object if there isn't a parent content control.
+      Read-only. 
+
+       \[Api set: WordApi 1.3\]
+    name: parentContentControlOrNullObject
+    fullName: office.Word_Range.parentContentControlOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentContentControlOrNullObject: Word.ContentControl;'
+      return:
+        type:
+          - Word.ContentControl
+  - uid: office.Word_Range.parentTable
+    summary: |-
+      Gets the table that contains the range. Throws if it is not contained in a table. Read-only. 
+
+       \[Api set: WordApi 1.3\]
+    name: parentTable
+    fullName: office.Word_Range.parentTable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTable: Word.Table;'
+      return:
+        type:
+          - Word.Table
+  - uid: office.Word_Range.parentTableCell
+    summary: |-
+      Gets the table cell that contains the range. Throws if it is not contained in a table cell. Read-only. 
+
+       \[Api set: WordApi 1.3\]
+    name: parentTableCell
+    fullName: office.Word_Range.parentTableCell
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCell: Word.TableCell;'
+      return:
+        type:
+          - Word.TableCell
+  - uid: office.Word_Range.parentTableCellOrNullObject
+    summary: >-
+      Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell.
+      Read-only. 
+
+       \[Api set: WordApi 1.3\]
+    name: parentTableCellOrNullObject
+    fullName: office.Word_Range.parentTableCellOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCellOrNullObject: Word.TableCell;'
+      return:
+        type:
+          - Word.TableCell
+  - uid: office.Word_Range.parentTableOrNullObject
+    summary: |-
+      Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only. 
+
+       \[Api set: WordApi 1.3\]
+    name: parentTableOrNullObject
+    fullName: office.Word_Range.parentTableOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableOrNullObject: Word.Table;'
+      return:
+        type:
+          - Word.Table
+  - uid: office.Word_Range.search
+    summary: >-
+      Performs a search with the specified searchOptions on the scope of the range object. The search results are a
+      collection of range objects. 
+
+       \[Api set: WordApi 1.1\]
+    name: 'search(searchText, searchOptions)'
+    fullName: office.Word_Range.search
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;"
+      return:
+        type:
+          - Word.RangeCollection
+        description: ''
+      parameters:
+        - id: searchText
+          description: ''
+          type:
+            - string
+        - id: searchOptions
+          description: ''
+          type:
+            - "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+  - uid: office.Word_Range.select
+    summary: |-
+      Selects and navigates the Word UI to the range. 
+
+       \[Api set: WordApi 1.1\]
+    name: select(selectionMode)
+    fullName: office.Word_Range.select
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'select(selectionMode?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: selectionMode
+          description: ''
+          type:
+            - string
+  - uid: office.Word_Range.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Word_Range.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.RangeUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.RangeUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Word_Range.split
+    summary: |-
+      Splits the range into child ranges by using delimiters. 
+
+       \[Api set: WordApi 1.3\]
+    name: 'split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)'
+    fullName: office.Word_Range.split
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        split(delimiters: Array<string>, multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean):
+        Word.RangeCollection;
+      return:
+        type:
+          - Word.RangeCollection
+        description: ''
+      parameters:
+        - id: delimiters
+          description: ''
+          type:
+            - Array<string>
+        - id: multiParagraphs
+          description: ''
+          type:
+            - boolean
+        - id: trimDelimiters
+          description: ''
+          type:
+            - boolean
+        - id: trimSpacing
+          description: ''
+          type:
+            - boolean
+  - uid: office.Word_Range.style
+    summary: >-
+      Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
+      the built-in styles that are portable between locales, see the "styleBuiltIn" property. 
+
+       \[Api set: WordApi 1.1\]
+    name: style
+    fullName: office.Word_Range.style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word_Range.styleBuiltIn
+    summary: >-
+      Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable
+      between locales. To use custom styles or localized style names, see the "style" property. 
+
+       \[Api set: WordApi 1.3\]
+    name: styleBuiltIn
+    fullName: office.Word_Range.styleBuiltIn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styleBuiltIn: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word_Range.tables
+    summary: |-
+      Gets the collection of table objects in the range. Read-only. 
+
+       \[Api set: WordApi 1.3\]
+    name: tables
+    fullName: office.Word_Range.tables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tables: Word.TableCollection;'
+      return:
+        type:
+          - Word.TableCollection
+  - uid: office.Word_Range.text
+    summary: |-
+      Gets the text of the range. Read-only. 
+
+       \[Api set: WordApi 1.1\]
+    name: text
+    fullName: office.Word_Range.text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word_Range.toJSON
+    name: toJSON()
+    fullName: office.Word_Range.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"font\": Font;\r\n            \"hyperlink\": string;\r\n            \"isEmpty\": boolean;\r\n            \"style\": string;\r\n            \"styleBuiltIn\": string;\r\n            \"text\": string;\r\n        }"
+        description: ''
+  - uid: office.Word_Range.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: office.Word_Range.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+  - uid: office.Word_Range.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: office.Word_Range.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''

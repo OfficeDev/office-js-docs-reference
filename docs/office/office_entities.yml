@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_Entities
+    name: Office_Entities
+    fullName: office.Office_Entities
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_Entities.addresses
+      - office.Office_Entities.contacts
+      - office.Office_Entities.emailAddresses
+      - office.Office_Entities.meetingSuggestions
+      - office.Office_Entities.phoneNumbers
+      - office.Office_Entities.taskSuggestions
+      - office.Office_Entities.urls
+  - uid: office.Office_Entities.addresses
+    name: addresses
+    fullName: office.Office_Entities.addresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addresses: Array<string>;'
+      return:
+        type:
+          - Array<string>
+  - uid: office.Office_Entities.contacts
+    name: contacts
+    fullName: office.Office_Entities.contacts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contacts: Array<Contact>;'
+      return:
+        type:
+          - Array<Contact>
+  - uid: office.Office_Entities.emailAddresses
+    name: emailAddresses
+    fullName: office.Office_Entities.emailAddresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddresses: Array<string>;'
+      return:
+        type:
+          - Array<string>
+  - uid: office.Office_Entities.meetingSuggestions
+    name: meetingSuggestions
+    fullName: office.Office_Entities.meetingSuggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'meetingSuggestions: Array<MeetingSuggestion>;'
+      return:
+        type:
+          - Array<MeetingSuggestion>
+  - uid: office.Office_Entities.phoneNumbers
+    name: phoneNumbers
+    fullName: office.Office_Entities.phoneNumbers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'phoneNumbers: Array<PhoneNumber>;'
+      return:
+        type:
+          - Array<PhoneNumber>
+  - uid: office.Office_Entities.taskSuggestions
+    name: taskSuggestions
+    fullName: office.Office_Entities.taskSuggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'taskSuggestions: Array<string>;'
+      return:
+        type:
+          - Array<string>
+  - uid: office.Office_Entities.urls
+    name: urls
+    fullName: office.Office_Entities.urls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'urls: Array<string>;'
+      return:
+        type:
+          - Array<string>

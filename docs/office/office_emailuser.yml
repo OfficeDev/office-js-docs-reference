@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_EmailUser
+    name: Office_EmailUser
+    fullName: office.Office_EmailUser
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_EmailUser.displayName
+      - office.Office_EmailUser.emailAddress
+  - uid: office.Office_EmailUser.displayName
+    name: displayName
+    fullName: office.Office_EmailUser.displayName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayName: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office_EmailUser.emailAddress
+    name: emailAddress
+    fullName: office.Office_EmailUser.emailAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddress: string;'
+      return:
+        type:
+          - string

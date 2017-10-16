@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_Auth
+    name: Office_Auth
+    fullName: office.Office_Auth
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_Auth.getAccessTokenAsync
+  - uid: office.Office_Auth.getAccessTokenAsync
+    summary: >-
+      Obtains an access token from AAD V 2.0 endpoint to grant the Office host application access to the add-in's web
+      application.
+    name: 'getAccessTokenAsync(options, callback)'
+    fullName: office.Office_Auth.getAccessTokenAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAccessTokenAsync(options?: AuthOptions, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - AuthOptions
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'

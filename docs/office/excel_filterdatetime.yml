@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_FilterDatetime
+    summary: |-
+      Represents how to filter a date when filtering on values. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: Excel_FilterDatetime
+    fullName: office.Excel_FilterDatetime
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel_FilterDatetime.date
+      - office.Excel_FilterDatetime.specificity
+  - uid: office.Excel_FilterDatetime.date
+    summary: |-
+      The date in ISO8601 format used to filter data. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: date
+    fullName: office.Excel_FilterDatetime.date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel_FilterDatetime.specificity
+    summary: >-
+      How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set
+      to "month", the filter operation will keep all rows with a date in the month of april 2009. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: specificity
+    fullName: office.Excel_FilterDatetime.specificity
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'specificity: string;'
+      return:
+        type:
+          - string

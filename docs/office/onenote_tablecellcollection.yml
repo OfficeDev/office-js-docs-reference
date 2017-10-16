@@ -1,0 +1,104 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OneNote_TableCellCollection
+    summary: |-
+      Contains a collection of TableCell objects. 
+
+       \[Api set: OneNoteApi 1.1\]
+    name: OneNote_TableCellCollection
+    fullName: office.OneNote_TableCellCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.OneNote_TableCellCollection.count
+      - office.OneNote_TableCellCollection.getItem
+      - office.OneNote_TableCellCollection.getItemAt
+      - office.OneNote_TableCellCollection.items
+      - office.OneNote_TableCellCollection.load
+  - uid: office.OneNote_TableCellCollection.count
+    summary: |-
+      Returns the number of tablecells in this collection. Read-only. 
+
+       \[Api set: OneNoteApi 1.1\]
+    name: count
+    fullName: office.OneNote_TableCellCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: office.OneNote_TableCellCollection.getItem
+    summary: Gets a table cell object by ID or by its index in the collection. Read-only.
+    name: getItem(index)
+    fullName: office.OneNote_TableCellCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number | string): OneNote.TableCell;'
+      return:
+        type:
+          - OneNote.TableCell
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number | string
+  - uid: office.OneNote_TableCellCollection.getItemAt
+    summary: Gets a tablecell at its position in the collection.
+    name: getItemAt(index)
+    fullName: office.OneNote_TableCellCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): OneNote.TableCell;'
+      return:
+        type:
+          - OneNote.TableCell
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.OneNote_TableCellCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.OneNote_TableCellCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<OneNote.TableCell>;'
+      return:
+        type:
+          - Array<OneNote.TableCell>
+  - uid: office.OneNote_TableCellCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.OneNote_TableCellCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.TableCellCollection;'
+      return:
+        type:
+          - OneNote.TableCellCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'

@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_File
+    name: Office_File
+    fullName: office.Office_File
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_File.closeAsync
+      - office.Office_File.getSliceAsync
+      - office.Office_File.size
+      - office.Office_File.sliceCount
+  - uid: office.Office_File.closeAsync
+    summary: Closes the File.
+    name: closeAsync(callback)
+    fullName: office.Office_File.closeAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'closeAsync(callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_File.getSliceAsync
+    summary: Gets the specified slice.
+    name: 'getSliceAsync(sliceIndex, callback)'
+    fullName: office.Office_File.getSliceAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSliceAsync(sliceIndex: number, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sliceIndex
+          description: ''
+          type:
+            - number
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_File.size
+    name: size
+    fullName: office.Office_File.size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office_File.sliceCount
+    name: sliceCount
+    fullName: office.Office_File.sliceCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sliceCount: number;'
+      return:
+        type:
+          - number

@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeCore_RequestContext
+    name: OfficeCore_RequestContext
+    fullName: office.OfficeCore_RequestContext
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientRequestContext
+    package: office
+    children:
+      - office.OfficeCore_RequestContext.constructor
+      - office.OfficeCore_RequestContext.BeginFirstPartyOnlyIntelliSenseFlighting
+      - office.OfficeCore_RequestContext.EndFirstPartyOnlyIntelliSenseFlighting
+      - office.OfficeCore_RequestContext.flighting
+  - uid: office.OfficeCore_RequestContext.constructor
+    summary: 'Constructs a new instance of the [OfficeCore\_RequestContext](xref:office.OfficeCore_RequestContext) class'
+    name: constructor(url)
+    fullName: office.OfficeCore_RequestContext.constructor
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(url?: string | OfficeExtension.RequestUrlAndHeaderInfo | any);'
+      parameters:
+        - id: url
+          description: ''
+          type:
+            - string | OfficeExtension.RequestUrlAndHeaderInfo | any
+  - uid: office.OfficeCore_RequestContext.BeginFirstPartyOnlyIntelliSenseFlighting
+    name: BeginFirstPartyOnlyIntelliSenseFlighting
+    fullName: office.OfficeCore_RequestContext.BeginFirstPartyOnlyIntelliSenseFlighting
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'static BeginFirstPartyOnlyIntelliSenseFlighting: any;'
+      return:
+        type:
+          - any
+  - uid: office.OfficeCore_RequestContext.EndFirstPartyOnlyIntelliSenseFlighting
+    name: EndFirstPartyOnlyIntelliSenseFlighting
+    fullName: office.OfficeCore_RequestContext.EndFirstPartyOnlyIntelliSenseFlighting
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'static EndFirstPartyOnlyIntelliSenseFlighting: any;'
+      return:
+        type:
+          - any
+  - uid: office.OfficeCore_RequestContext.flighting
+    name: flighting
+    fullName: office.OfficeCore_RequestContext.flighting
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'flighting: FlightingService;'
+      return:
+        type:
+          - FlightingService

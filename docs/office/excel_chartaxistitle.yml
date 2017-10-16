@@ -1,0 +1,121 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_ChartAxisTitle
+    summary: |-
+      Represents the title of a chart axis. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: Excel_ChartAxisTitle
+    fullName: office.Excel_ChartAxisTitle
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel_ChartAxisTitle.format
+      - office.Excel_ChartAxisTitle.load
+      - office.Excel_ChartAxisTitle.set
+      - office.Excel_ChartAxisTitle.text
+      - office.Excel_ChartAxisTitle.toJSON
+      - office.Excel_ChartAxisTitle.visible
+  - uid: office.Excel_ChartAxisTitle.format
+    summary: |-
+      Represents the formatting of chart axis title. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: format
+    fullName: office.Excel_ChartAxisTitle.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format: Excel.ChartAxisTitleFormat;'
+      return:
+        type:
+          - Excel.ChartAxisTitleFormat
+  - uid: office.Excel_ChartAxisTitle.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel_ChartAxisTitle.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartAxisTitle;'
+      return:
+        type:
+          - Excel.ChartAxisTitle
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel_ChartAxisTitle.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Excel_ChartAxisTitle.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ChartAxisTitleUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartAxisTitleUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Excel_ChartAxisTitle.text
+    summary: |-
+      Represents the axis title. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: text
+    fullName: office.Excel_ChartAxisTitle.text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel_ChartAxisTitle.toJSON
+    name: toJSON()
+    fullName: office.Excel_ChartAxisTitle.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"format\": ChartAxisTitleFormat;\r\n            \"text\": string;\r\n            \"visible\": boolean;\r\n        }"
+        description: ''
+  - uid: office.Excel_ChartAxisTitle.visible
+    summary: |-
+      A boolean that specifies the visibility of an axis title. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: visible
+    fullName: office.Excel_ChartAxisTitle.visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean

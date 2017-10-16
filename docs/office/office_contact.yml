@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_Contact
+    name: Office_Contact
+    fullName: office.Office_Contact
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_Contact.addresses
+      - office.Office_Contact.businessName
+      - office.Office_Contact.emailAddresses
+      - office.Office_Contact.personName
+      - office.Office_Contact.phoneNumbers
+      - office.Office_Contact.urls
+  - uid: office.Office_Contact.addresses
+    name: addresses
+    fullName: office.Office_Contact.addresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addresses: Array<string>;'
+      return:
+        type:
+          - Array<string>
+  - uid: office.Office_Contact.businessName
+    name: businessName
+    fullName: office.Office_Contact.businessName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'businessName: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office_Contact.emailAddresses
+    name: emailAddresses
+    fullName: office.Office_Contact.emailAddresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddresses: Array<string>;'
+      return:
+        type:
+          - Array<string>
+  - uid: office.Office_Contact.personName
+    name: personName
+    fullName: office.Office_Contact.personName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'personName: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office_Contact.phoneNumbers
+    name: phoneNumbers
+    fullName: office.Office_Contact.phoneNumbers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'phoneNumbers: Array<PhoneNumber>;'
+      return:
+        type:
+          - Array<PhoneNumber>
+  - uid: office.Office_Contact.urls
+    name: urls
+    fullName: office.Office_Contact.urls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'urls: Array<string>;'
+      return:
+        type:
+          - Array<string>

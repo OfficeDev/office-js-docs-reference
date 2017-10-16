@@ -1,0 +1,295 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Word_Font
+    summary: |-
+      Represents a font. 
+
+       \[Api set: WordApi 1.1\]
+    name: Word_Font
+    fullName: office.Word_Font
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Word_Font.bold
+      - office.Word_Font.color
+      - office.Word_Font.doubleStrikeThrough
+      - office.Word_Font.highlightColor
+      - office.Word_Font.italic
+      - office.Word_Font.load
+      - office.Word_Font.name
+      - office.Word_Font.set
+      - office.Word_Font.size
+      - office.Word_Font.strikeThrough
+      - office.Word_Font.subscript
+      - office.Word_Font.superscript
+      - office.Word_Font.toJSON
+      - office.Word_Font.track
+      - office.Word_Font.underline
+      - office.Word_Font.untrack
+  - uid: office.Word_Font.bold
+    summary: >-
+      Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,
+      false. 
+
+       \[Api set: WordApi 1.1\]
+    name: bold
+    fullName: office.Word_Font.bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Word_Font.color
+    summary: >-
+      Gets or sets the color for the specified font. You can provide the value in the '\#RRGGBB' format or the color
+      name. 
+
+       \[Api set: WordApi 1.1\]
+    name: color
+    fullName: office.Word_Font.color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word_Font.doubleStrikeThrough
+    summary: >-
+      Gets or sets a value that indicates whether the font has a double strike through. True if the font is formatted as
+      double strikethrough text, otherwise, false. 
+
+       \[Api set: WordApi 1.1\]
+    name: doubleStrikeThrough
+    fullName: office.Word_Font.doubleStrikeThrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'doubleStrikeThrough: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Word_Font.highlightColor
+    summary: >-
+      Gets or sets the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To
+      remove highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, or an empty
+      string for mixed highlight colors, or null for no highlight color. 
+
+       \[Api set: WordApi 1.1\]
+    name: highlightColor
+    fullName: office.Word_Font.highlightColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'highlightColor: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word_Font.italic
+    summary: >-
+      Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise,
+      false. 
+
+       \[Api set: WordApi 1.1\]
+    name: italic
+    fullName: office.Word_Font.italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Word_Font.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Word_Font.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.Font;'
+      return:
+        type:
+          - Word.Font
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Word_Font.name
+    summary: |-
+      Gets or sets a value that represents the name of the font. 
+
+       \[Api set: WordApi 1.1\]
+    name: name
+    fullName: office.Word_Font.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word_Font.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Word_Font.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.FontUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.FontUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Word_Font.size
+    summary: |-
+      Gets or sets a value that represents the font size in points. 
+
+       \[Api set: WordApi 1.1\]
+    name: size
+    fullName: office.Word_Font.size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size: number;'
+      return:
+        type:
+          - number
+  - uid: office.Word_Font.strikeThrough
+    summary: >-
+      Gets or sets a value that indicates whether the font has a strike through. True if the font is formatted as
+      strikethrough text, otherwise, false. 
+
+       \[Api set: WordApi 1.1\]
+    name: strikeThrough
+    fullName: office.Word_Font.strikeThrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikeThrough: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Word_Font.subscript
+    summary: >-
+      Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript,
+      otherwise, false. 
+
+       \[Api set: WordApi 1.1\]
+    name: subscript
+    fullName: office.Word_Font.subscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subscript: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Word_Font.superscript
+    summary: >-
+      Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as
+      superscript, otherwise, false. 
+
+       \[Api set: WordApi 1.1\]
+    name: superscript
+    fullName: office.Word_Font.superscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'superscript: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Word_Font.toJSON
+    name: toJSON()
+    fullName: office.Word_Font.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"bold\": boolean;\r\n            \"color\": string;\r\n            \"doubleStrikeThrough\": boolean;\r\n            \"highlightColor\": string;\r\n            \"italic\": boolean;\r\n            \"name\": string;\r\n            \"size\": number;\r\n            \"strikeThrough\": boolean;\r\n            \"subscript\": boolean;\r\n            \"superscript\": boolean;\r\n            \"underline\": string;\r\n        }"
+        description: ''
+  - uid: office.Word_Font.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: office.Word_Font.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.Font;'
+      return:
+        type:
+          - Word.Font
+        description: ''
+  - uid: office.Word_Font.underline
+    summary: |-
+      Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined. 
+
+       \[Api set: WordApi 1.1\]
+    name: underline
+    fullName: office.Word_Font.underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word_Font.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: office.Word_Font.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.Font;'
+      return:
+        type:
+          - Word.Font
+        description: ''

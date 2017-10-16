@@ -1,0 +1,60 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_Subject
+    name: Office_Subject
+    fullName: office.Office_Subject
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_Subject.getAsync
+      - office.Office_Subject.setAsync
+  - uid: office.Office_Subject.getAsync
+    summary: Begins an asynchronous request to get the subject of an appointment or message
+    name: 'getAsync(options, callback)'
+    fullName: office.Office_Subject.getAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Subject.setAsync
+    summary: Begins an asynchronous call to set the subject of an appointment or message
+    name: 'setAsync(data, options, callback)'
+    fullName: office.Office_Subject.setAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(data: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: ''
+          type:
+            - string
+        - id: options
+          description: ''
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'

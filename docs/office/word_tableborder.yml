@@ -1,0 +1,159 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Word_TableBorder
+    summary: |-
+      Specifies the border style 
+
+       \[Api set: WordApi 1.3\]
+    name: Word_TableBorder
+    fullName: office.Word_TableBorder
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Word_TableBorder.color
+      - office.Word_TableBorder.load
+      - office.Word_TableBorder.set
+      - office.Word_TableBorder.toJSON
+      - office.Word_TableBorder.track
+      - office.Word_TableBorder.type
+      - office.Word_TableBorder.untrack
+      - office.Word_TableBorder.width
+  - uid: office.Word_TableBorder.color
+    summary: |-
+      Gets or sets the table border color, as a hex value or name. 
+
+       \[Api set: WordApi 1.3\]
+    name: color
+    fullName: office.Word_TableBorder.color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word_TableBorder.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Word_TableBorder.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.TableBorder;'
+      return:
+        type:
+          - Word.TableBorder
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Word_TableBorder.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Word_TableBorder.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.TableBorderUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.TableBorderUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Word_TableBorder.toJSON
+    name: toJSON()
+    fullName: office.Word_TableBorder.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"color\": string;\r\n            \"type\": string;\r\n            \"width\": number;\r\n        }"
+        description: ''
+  - uid: office.Word_TableBorder.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: office.Word_TableBorder.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.TableBorder;'
+      return:
+        type:
+          - Word.TableBorder
+        description: ''
+  - uid: office.Word_TableBorder.type
+    summary: |-
+      Gets or sets the type of the table border. 
+
+       \[Api set: WordApi 1.3\]
+    name: type
+    fullName: office.Word_TableBorder.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word_TableBorder.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: office.Word_TableBorder.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.TableBorder;'
+      return:
+        type:
+          - Word.TableBorder
+        description: ''
+  - uid: office.Word_TableBorder.width
+    summary: >-
+      Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed
+      widths. 
+
+       \[Api set: WordApi 1.3\]
+    name: width
+    fullName: office.Word_TableBorder.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number

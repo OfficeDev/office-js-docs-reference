@@ -1,0 +1,169 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_Settings
+    name: Office_Settings
+    fullName: office.Office_Settings
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office_Settings.addHandlerAsync
+      - office.Office_Settings.get
+      - office.Office_Settings.refreshAsync
+      - office.Office_Settings.remove
+      - office.Office_Settings.removeHandlerAsync
+      - office.Office_Settings.saveAsync
+      - office.Office_Settings.set
+  - uid: office.Office_Settings.addHandlerAsync
+    summary: Adds an event handler for the object using the specified event type.
+    name: 'addHandlerAsync(eventType, handler, options, callback)'
+    fullName: office.Office_Settings.addHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addHandlerAsync(eventType: EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: ''
+          type:
+            - EventType
+        - id: handler
+          description: ''
+          type:
+            - any
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Settings.get
+    summary: Retrieves the setting with the specified name.
+    name: get(name)
+    fullName: office.Office_Settings.get
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'get(name: string): any;'
+      return:
+        type:
+          - any
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: office.Office_Settings.refreshAsync
+    summary: Gets the latest version of the settings object.
+    name: refreshAsync(callback)
+    fullName: office.Office_Settings.refreshAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'refreshAsync(callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Settings.remove
+    summary: Removes the setting with the specified name.
+    name: remove(name)
+    fullName: office.Office_Settings.remove
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: office.Office_Settings.removeHandlerAsync
+    summary: Removes an event handler for the specified event type.
+    name: 'removeHandlerAsync(eventType, options, callback)'
+    fullName: office.Office_Settings.removeHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeHandlerAsync(eventType: EventType, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: ''
+          type:
+            - EventType
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Settings.saveAsync
+    summary: Saves all settings.
+    name: saveAsync(callback)
+    fullName: office.Office_Settings.saveAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'saveAsync(callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_Settings.set
+    summary: Sets a value for the setting with the specified name.
+    name: 'set(name, value)'
+    fullName: office.Office_Settings.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(name: string, value: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+        - id: value
+          description: ''
+          type:
+            - any

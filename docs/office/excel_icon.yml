@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_Icon
+    summary: |-
+      Represents a cell icon. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: Excel_Icon
+    fullName: office.Excel_Icon
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel_Icon.index
+      - office.Excel_Icon.set
+  - uid: office.Excel_Icon.index
+    summary: |-
+      Represents the index of the icon in the given set. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: index
+    fullName: office.Excel_Icon.index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'index: number;'
+      return:
+        type:
+          - number
+  - uid: office.Excel_Icon.set
+    summary: |-
+      Represents the set that the icon is part of. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: set
+    fullName: office.Excel_Icon.set
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'set: string;'
+      return:
+        type:
+          - string

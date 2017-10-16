@@ -1,0 +1,177 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Word_CustomProperty
+    summary: |-
+      Represents a custom property. 
+
+       \[Api set: WordApi 1.3\]
+    name: Word_CustomProperty
+    fullName: office.Word_CustomProperty
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Word_CustomProperty.delete
+      - office.Word_CustomProperty.key
+      - office.Word_CustomProperty.load
+      - office.Word_CustomProperty.set
+      - office.Word_CustomProperty.toJSON
+      - office.Word_CustomProperty.track
+      - office.Word_CustomProperty.type
+      - office.Word_CustomProperty.untrack
+      - office.Word_CustomProperty.value
+  - uid: office.Word_CustomProperty.delete
+    summary: |-
+      Deletes the custom property. 
+
+       \[Api set: WordApi 1.3\]
+    name: delete()
+    fullName: office.Word_CustomProperty.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Word_CustomProperty.key
+    summary: |-
+      Gets the key of the custom property. Read only. 
+
+       \[Api set: WordApi 1.3\]
+    name: key
+    fullName: office.Word_CustomProperty.key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word_CustomProperty.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Word_CustomProperty.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.CustomProperty;'
+      return:
+        type:
+          - Word.CustomProperty
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Word_CustomProperty.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Word_CustomProperty.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.CustomPropertyUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.CustomPropertyUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Word_CustomProperty.toJSON
+    name: toJSON()
+    fullName: office.Word_CustomProperty.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"key\": string;\r\n            \"type\": string;\r\n            \"value\": any;\r\n        }"
+        description: ''
+  - uid: office.Word_CustomProperty.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: office.Word_CustomProperty.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.CustomProperty;'
+      return:
+        type:
+          - Word.CustomProperty
+        description: ''
+  - uid: office.Word_CustomProperty.type
+    summary: |-
+      Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only. 
+
+       \[Api set: WordApi 1.3\]
+    name: type
+    fullName: office.Word_CustomProperty.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word_CustomProperty.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: office.Word_CustomProperty.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.CustomProperty;'
+      return:
+        type:
+          - Word.CustomProperty
+        description: ''
+  - uid: office.Word_CustomProperty.value
+    summary: >-
+      Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow
+      these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit
+      chars (possibly creating invalid unicode by breaking up a surrogate pair). 
+
+       \[Api set: WordApi 1.3\]
+    name: value
+    fullName: office.Word_CustomProperty.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: any;'
+      return:
+        type:
+          - any

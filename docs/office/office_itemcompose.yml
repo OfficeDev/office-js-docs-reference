@@ -1,0 +1,225 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_ItemCompose
+    name: Office_ItemCompose
+    fullName: office.Office_ItemCompose
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Item
+    package: office
+    children:
+      - office.Office_ItemCompose.addFileAttachmentAsync
+      - office.Office_ItemCompose.addItemAttachmentAsync
+      - office.Office_ItemCompose.close
+      - office.Office_ItemCompose.getSelectedDataAsync
+      - office.Office_ItemCompose.removeAttachmentAsync
+      - office.Office_ItemCompose.saveAsync
+      - office.Office_ItemCompose.setSelectedDataAsync
+      - office.Office_ItemCompose.subject
+  - uid: office.Office_ItemCompose.addFileAttachmentAsync
+    summary: Adds a file to a message as an attachment
+    name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
+    fullName: office.Office_ItemCompose.addFileAttachmentAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addFileAttachmentAsync(uri: string, attachmentName: string, options?: AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: uri
+          description: ''
+          type:
+            - string
+        - id: attachmentName
+          description: ''
+          type:
+            - string
+        - id: options
+          description: ''
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_ItemCompose.addItemAttachmentAsync
+    summary: 'Adds an Exchange item, such as a message, as an attachment to the message'
+    name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
+    fullName: office.Office_ItemCompose.addItemAttachmentAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: itemId
+          description: ''
+          type:
+            - any
+        - id: attachmentName
+          description: ''
+          type:
+            - string
+        - id: options
+          description: ''
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_ItemCompose.close
+    summary: |-
+      Closes the current item that is being composed 
+
+       The behaviors of the close method depends on the current state of the item being composed. If the item has unsaved changes, the client prompts the user to save, discard, or close the action. 
+
+       In the Outlook desktop client, if the message is an inline reply, the close method has no effect.
+    name: close()
+    fullName: office.Office_ItemCompose.close
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'close(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Office_ItemCompose.getSelectedDataAsync
+    summary: |-
+      Asynchronously returns selected data from the subject or body of a message. 
+
+       If there is no selection but the cursor is in the body or the subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error
+    name: 'getSelectedDataAsync(coercionType, options, callback)'
+    fullName: office.Office_ItemCompose.getSelectedDataAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getSelectedDataAsync(coercionType: CoercionType, options?: AsyncContextOptions, callback?: (result: AsyncResult)
+        => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: coercionType
+          description: ''
+          type:
+            - CoercionType
+        - id: options
+          description: ''
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_ItemCompose.removeAttachmentAsync
+    summary: Removes an attachment from a message
+    name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
+    fullName: office.Office_ItemCompose.removeAttachmentAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        removeAttachmentAsync(attachmentIndex: string, options?: AsyncContextOptions, callback?: (result: AsyncResult)
+        => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: attachmentIndex
+          description: ''
+          type:
+            - string
+        - id: options
+          description: ''
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_ItemCompose.saveAsync
+    summary: |-
+      Asynchronously saves an item. 
+
+       When invoked, this method saves the current message as a draft and returns the item id via the callback method. In Outlook Web App or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache.
+    name: 'saveAsync(options, callback)'
+    fullName: office.Office_ItemCompose.saveAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'saveAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_ItemCompose.setSelectedDataAsync
+    summary: Asynchronously inserts data into the body or subject of a message.
+    name: 'setSelectedDataAsync(data, options, callback)'
+    fullName: office.Office_ItemCompose.setSelectedDataAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        setSelectedDataAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result:
+        AsyncResult) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: ''
+          type:
+            - string
+        - id: options
+          description: ''
+          type:
+            - AsyncContextOptions & CoercionTypeOptions
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office_ItemCompose.subject
+    name: subject
+    fullName: office.Office_ItemCompose.subject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subject: Subject;'
+      return:
+        type:
+          - Subject

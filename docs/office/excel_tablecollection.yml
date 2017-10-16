@@ -1,0 +1,191 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_TableCollection
+    summary: >-
+      Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was
+      reached. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: Excel_TableCollection
+    fullName: office.Excel_TableCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel_TableCollection.add
+      - office.Excel_TableCollection.count
+      - office.Excel_TableCollection.getCount
+      - office.Excel_TableCollection.getItem
+      - office.Excel_TableCollection.getItemAt
+      - office.Excel_TableCollection.getItemOrNullObject
+      - office.Excel_TableCollection.items
+      - office.Excel_TableCollection.load
+      - office.Excel_TableCollection.toJSON
+  - uid: office.Excel_TableCollection.add
+    summary: >-
+      Create a new table. The range object or source address determines the worksheet under which the table will be
+      added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another
+      table), an error will be thrown. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: 'add(address, hasHeaders)'
+    fullName: office.Excel_TableCollection.add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(address: Excel.Range | string, hasHeaders: boolean): Excel.Table;'
+      return:
+        type:
+          - Excel.Table
+        description: ''
+      parameters:
+        - id: address
+          description: ''
+          type:
+            - Excel.Range | string
+        - id: hasHeaders
+          description: ''
+          type:
+            - boolean
+  - uid: office.Excel_TableCollection.count
+    summary: |-
+      Returns the number of tables in the workbook. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: count
+    fullName: office.Excel_TableCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: office.Excel_TableCollection.getCount
+    summary: |-
+      Gets the number of tables in the collection. 
+
+       \[Api set: ExcelApi 1.4\]
+    name: getCount()
+    fullName: office.Excel_TableCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: office.Excel_TableCollection.getItem
+    summary: |-
+      Gets a table by Name or ID. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: getItem(key)
+    fullName: office.Excel_TableCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: number | string): Excel.Table;'
+      return:
+        type:
+          - Excel.Table
+        description: ''
+      parameters:
+        - id: key
+          description: ''
+          type:
+            - number | string
+  - uid: office.Excel_TableCollection.getItemAt
+    summary: |-
+      Gets a table based on its position in the collection. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: getItemAt(index)
+    fullName: office.Excel_TableCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.Table;'
+      return:
+        type:
+          - Excel.Table
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel_TableCollection.getItemOrNullObject
+    summary: |-
+      Gets a table by Name or ID. If the table does not exist, will return a null object. 
+
+       \[Api set: ExcelApi 1.4\]
+    name: getItemOrNullObject(key)
+    fullName: office.Excel_TableCollection.getItemOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: number | string): Excel.Table;'
+      return:
+        type:
+          - Excel.Table
+        description: ''
+      parameters:
+        - id: key
+          description: ''
+          type:
+            - number | string
+  - uid: office.Excel_TableCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.Excel_TableCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<Excel.Table>;'
+      return:
+        type:
+          - Array<Excel.Table>
+  - uid: office.Excel_TableCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel_TableCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TableCollection;'
+      return:
+        type:
+          - Excel.TableCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel_TableCollection.toJSON
+    name: toJSON()
+    fullName: office.Excel_TableCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"count\": number;\r\n        }"
+        description: ''

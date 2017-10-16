@@ -1,0 +1,104 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OneNote_InkAnalysisWordCollection
+    summary: |-
+      Represents a collection of InkAnalysisWord objects. 
+
+       \[Api set: OneNoteApi 1.1\]
+    name: OneNote_InkAnalysisWordCollection
+    fullName: office.OneNote_InkAnalysisWordCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.OneNote_InkAnalysisWordCollection.count
+      - office.OneNote_InkAnalysisWordCollection.getItem
+      - office.OneNote_InkAnalysisWordCollection.getItemAt
+      - office.OneNote_InkAnalysisWordCollection.items
+      - office.OneNote_InkAnalysisWordCollection.load
+  - uid: office.OneNote_InkAnalysisWordCollection.count
+    summary: |-
+      Returns the number of InkAnalysisWords in the page. Read-only. 
+
+       \[Api set: OneNoteApi 1.1\]
+    name: count
+    fullName: office.OneNote_InkAnalysisWordCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: office.OneNote_InkAnalysisWordCollection.getItem
+    summary: Gets a InkAnalysisWord object by ID or by its index in the collection. Read-only.
+    name: getItem(index)
+    fullName: office.OneNote_InkAnalysisWordCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number | string): OneNote.InkAnalysisWord;'
+      return:
+        type:
+          - OneNote.InkAnalysisWord
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number | string
+  - uid: office.OneNote_InkAnalysisWordCollection.getItemAt
+    summary: Gets a InkAnalysisWord on its position in the collection.
+    name: getItemAt(index)
+    fullName: office.OneNote_InkAnalysisWordCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): OneNote.InkAnalysisWord;'
+      return:
+        type:
+          - OneNote.InkAnalysisWord
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.OneNote_InkAnalysisWordCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.OneNote_InkAnalysisWordCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<OneNote.InkAnalysisWord>;'
+      return:
+        type:
+          - Array<OneNote.InkAnalysisWord>
+  - uid: office.OneNote_InkAnalysisWordCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.OneNote_InkAnalysisWordCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.InkAnalysisWordCollection;'
+      return:
+        type:
+          - OneNote.InkAnalysisWordCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'

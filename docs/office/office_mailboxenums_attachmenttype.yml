@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office_MailboxEnums_AttachmentType
+    name: Office_MailboxEnums_AttachmentType
+    fullName: office.Office_MailboxEnums_AttachmentType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office_MailboxEnums_AttachmentType.File
+      - office.Office_MailboxEnums_AttachmentType.Item
+  - uid: office.Office_MailboxEnums_AttachmentType.File
+    summary: The attachment is a file
+    name: File
+    fullName: office.Office_MailboxEnums_AttachmentType.File
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office_MailboxEnums_AttachmentType.Item
+    summary: The attachment is an Exchange item
+    name: Item
+    fullName: office.Office_MailboxEnums_AttachmentType.Item
+    langs:
+      - typeScript
+    type: field

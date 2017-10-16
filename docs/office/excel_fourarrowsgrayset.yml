@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel_FourArrowsGraySet
+    name: Excel_FourArrowsGraySet
+    fullName: office.Excel_FourArrowsGraySet
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel_FourArrowsGraySet.__index
+      - office.Excel_FourArrowsGraySet.grayDownArrow
+      - office.Excel_FourArrowsGraySet.grayDownInclineArrow
+      - office.Excel_FourArrowsGraySet.grayUpArrow
+      - office.Excel_FourArrowsGraySet.grayUpInclineArrow
+  - uid: office.Excel_FourArrowsGraySet.__index
+    name: __index(index)
+    fullName: office.Excel_FourArrowsGraySet.__index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[ index: number ]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel_FourArrowsGraySet.grayDownArrow
+    name: grayDownArrow
+    fullName: office.Excel_FourArrowsGraySet.grayDownArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayDownArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel_FourArrowsGraySet.grayDownInclineArrow
+    name: grayDownInclineArrow
+    fullName: office.Excel_FourArrowsGraySet.grayDownInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayDownInclineArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel_FourArrowsGraySet.grayUpArrow
+    name: grayUpArrow
+    fullName: office.Excel_FourArrowsGraySet.grayUpArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayUpArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel_FourArrowsGraySet.grayUpInclineArrow
+    name: grayUpInclineArrow
+    fullName: office.Excel_FourArrowsGraySet.grayUpInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayUpInclineArrow: Icon;'
+      return:
+        type:
+          - Icon
