@@ -5,7 +5,7 @@ items:
       Represents major or minor gridlines on a chart axis. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_ChartGridlines
+    name: Excel.ChartGridlines
     fullName: office.Excel_ChartGridlines
     langs:
       - typeScript

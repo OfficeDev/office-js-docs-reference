@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_MeetingSuggestion
-    name: Office_MeetingSuggestion
+    name: Office.MeetingSuggestion
     fullName: office.Office_MeetingSuggestion
     langs:
       - typeScript

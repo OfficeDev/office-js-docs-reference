@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_Recipients
-    name: Office_Recipients
+    name: Office.Recipients
     fullName: office.Office_Recipients
     langs:
       - typeScript

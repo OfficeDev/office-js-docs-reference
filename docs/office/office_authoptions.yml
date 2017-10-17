@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_AuthOptions
-    name: Office_AuthOptions
+    name: Office.AuthOptions
     fullName: office.Office_AuthOptions
     langs:
       - typeScript

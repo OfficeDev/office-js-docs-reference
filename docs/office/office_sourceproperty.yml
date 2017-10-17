@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_SourceProperty
-    name: Office_SourceProperty
+    name: Office.SourceProperty
     fullName: office.Office_SourceProperty
     langs:
       - typeScript

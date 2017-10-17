@@ -5,7 +5,7 @@ items:
       Represents a single stroke of ink. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_InkStroke
+    name: OneNote.InkStroke
     fullName: office.OneNote_InkStroke
     langs:
       - typeScript

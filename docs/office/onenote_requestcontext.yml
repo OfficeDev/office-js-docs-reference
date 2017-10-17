@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.OneNote_RequestContext
-    name: OneNote_RequestContext
+    name: OneNote.RequestContext
     fullName: office.OneNote_RequestContext
     langs:
       - typeScript

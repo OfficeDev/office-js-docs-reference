@@ -5,7 +5,7 @@ items:
       A format object encapsulating the range's font, fill, borders, alignment, and other properties. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_RangeFormat
+    name: Excel.RangeFormat
     fullName: office.Excel_RangeFormat
     langs:
       - typeScript

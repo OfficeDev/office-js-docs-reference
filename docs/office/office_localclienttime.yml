@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_LocalClientTime
-    name: Office_LocalClientTime
+    name: Office.LocalClientTime
     fullName: office.Office_LocalClientTime
     langs:
       - typeScript

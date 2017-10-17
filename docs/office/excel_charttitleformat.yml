@@ -5,7 +5,7 @@ items:
       Provides access to the office art formatting for chart title. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_ChartTitleFormat
+    name: Excel.ChartTitleFormat
     fullName: office.Excel_ChartTitleFormat
     langs:
       - typeScript

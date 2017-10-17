@@ -5,7 +5,7 @@ items:
       This object represents the font attributes (font style,, color, etc.) for an object. 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_ConditionalRangeFont
+    name: Excel.ConditionalRangeFont
     fullName: office.Excel_ConditionalRangeFont
     langs:
       - typeScript

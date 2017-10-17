@@ -5,7 +5,7 @@ items:
       Represents a custom conditional format type. 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_CustomConditionalFormat
+    name: Excel.CustomConditionalFormat
     fullName: office.Excel_CustomConditionalFormat
     langs:
       - typeScript

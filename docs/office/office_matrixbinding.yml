@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_MatrixBinding
-    name: Office_MatrixBinding
+    name: Office.MatrixBinding
     fullName: office.Office_MatrixBinding
     langs:
       - typeScript

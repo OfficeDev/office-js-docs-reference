@@ -5,7 +5,7 @@ items:
       Represents the Preset Criteria Conditional Format Rule 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_ConditionalPresetCriteriaRule
+    name: Excel.ConditionalPresetCriteriaRule
     fullName: office.Excel_ConditionalPresetCriteriaRule
     langs:
       - typeScript

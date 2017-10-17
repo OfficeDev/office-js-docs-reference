@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_AsyncResultStatus
-    name: Office_AsyncResultStatus
+    name: Office.AsyncResultStatus
     fullName: office.Office_AsyncResultStatus
     langs:
       - typeScript

@@ -8,7 +8,7 @@ items:
       rich text content controls are supported. 
 
        \[Api set: WordApi 1.1\]
-    name: Word_ContentControlCollection
+    name: Word.ContentControlCollection
     fullName: office.Word_ContentControlCollection
     langs:
       - typeScript

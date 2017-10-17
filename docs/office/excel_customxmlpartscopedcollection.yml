@@ -6,7 +6,7 @@ items:
       namespace. A scoped collection cannot be scoped any further. 
 
        \[Api set: ExcelApi 1.5\]
-    name: Excel_CustomXmlPartScopedCollection
+    name: Excel.CustomXmlPartScopedCollection
     fullName: office.Excel_CustomXmlPartScopedCollection
     langs:
       - typeScript

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_EmailAddressDetails
-    name: Office_EmailAddressDetails
+    name: Office.EmailAddressDetails
     fullName: office.Office_EmailAddressDetails
     langs:
       - typeScript

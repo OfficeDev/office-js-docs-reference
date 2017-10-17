@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_DialogOptions
-    name: Office_DialogOptions
+    name: Office.DialogOptions
     fullName: office.Office_DialogOptions
     langs:
       - typeScript

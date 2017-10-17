@@ -5,7 +5,7 @@ items:
       Represents an Office.js binding that is defined in the workbook. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_Binding
+    name: Excel.Binding
     fullName: office.Excel_Binding
     langs:
       - typeScript

@@ -5,7 +5,7 @@ items:
       Represents an IconSet criteria for conditional formatting. 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_IconSetConditionalFormat
+    name: Excel.IconSetConditionalFormat
     fullName: office.Excel_IconSetConditionalFormat
     langs:
       - typeScript

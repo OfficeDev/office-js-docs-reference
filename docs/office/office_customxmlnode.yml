@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_CustomXmlNode
-    name: Office_CustomXmlNode
+    name: Office.CustomXmlNode
     fullName: office.Office_CustomXmlNode
     langs:
       - typeScript

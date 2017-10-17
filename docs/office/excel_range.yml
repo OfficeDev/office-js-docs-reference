@@ -5,7 +5,7 @@ items:
       Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_Range
+    name: Excel.Range
     fullName: office.Excel_Range
     langs:
       - typeScript

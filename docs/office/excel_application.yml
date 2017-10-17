@@ -5,7 +5,7 @@ items:
       Represents the Excel application that manages the workbook. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_Application
+    name: Excel.Application
     fullName: office.Excel_Application
     langs:
       - typeScript

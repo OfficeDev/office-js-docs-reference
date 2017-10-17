@@ -5,7 +5,7 @@ items:
       Contains a collection of \[paragraph\](paragraph.md) objects. 
 
        \[Api set: WordApi 1.1\]
-    name: Word_ParagraphCollection
+    name: Word.ParagraphCollection
     fullName: office.Word_ParagraphCollection
     langs:
       - typeScript

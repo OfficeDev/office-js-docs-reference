@@ -5,7 +5,7 @@ items:
       Contains the collection of the document's TableRow objects. 
 
        \[Api set: WordApi 1.3\]
-    name: Word_TableRowCollection
+    name: Word.TableRowCollection
     fullName: office.Word_TableRowCollection
     langs:
       - typeScript

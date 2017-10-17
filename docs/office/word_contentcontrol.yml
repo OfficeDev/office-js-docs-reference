@@ -7,7 +7,7 @@ items:
       images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported. 
 
        \[Api set: WordApi 1.1\]
-    name: Word_ContentControl
+    name: Word.ContentControl
     fullName: office.Word_ContentControl
     langs:
       - typeScript

@@ -5,7 +5,7 @@ items:
       Provides information about the binding that raised the DataChanged event. 
 
        \[Api set: ExcelApi 1.2\]
-    name: Excel_BindingDataChangedEventArgs
+    name: Excel.BindingDataChangedEventArgs
     fullName: office.Excel_BindingDataChangedEventArgs
     langs:
       - typeScript

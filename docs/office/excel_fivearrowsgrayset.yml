@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Excel_FiveArrowsGraySet
-    name: Excel_FiveArrowsGraySet
+    name: Excel.FiveArrowsGraySet
     fullName: office.Excel_FiveArrowsGraySet
     langs:
       - typeScript

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_ItemRead
-    name: Office_ItemRead
+    name: Office.ItemRead
     fullName: office.Office_ItemRead
     langs:
       - typeScript

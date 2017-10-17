@@ -5,7 +5,7 @@ items:
       Represents a Cell Value Conditional Format Rule 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_ConditionalTextComparisonRule
+    name: Excel.ConditionalTextComparisonRule
     fullName: office.Excel_ConditionalTextComparisonRule
     langs:
       - typeScript

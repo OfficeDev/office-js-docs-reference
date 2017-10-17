@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_Settings
-    name: Office_Settings
+    name: Office.Settings
     fullName: office.Office_Settings
     langs:
       - typeScript

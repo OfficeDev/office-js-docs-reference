@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_TableBinding
-    name: Office_TableBinding
+    name: Office.TableBinding
     fullName: office.Office_TableBinding
     langs:
       - typeScript

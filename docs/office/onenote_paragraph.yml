@@ -5,7 +5,7 @@ items:
       A container for the visible content on a page. A Paragraph can contain any one ParagraphType type of content. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_Paragraph
+    name: OneNote.Paragraph
     fullName: office.OneNote_Paragraph
     langs:
       - typeScript

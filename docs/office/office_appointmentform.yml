@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_AppointmentForm
-    name: Office_AppointmentForm
+    name: Office.AppointmentForm
     fullName: office.Office_AppointmentForm
     langs:
       - typeScript

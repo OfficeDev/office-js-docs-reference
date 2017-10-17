@@ -5,7 +5,7 @@ items:
       Provides information about the binding that raised the SelectionChanged event. 
 
        \[Api set: ExcelApi 1.2\]
-    name: Excel_BindingSelectionChangedEventArgs
+    name: Excel.BindingSelectionChangedEventArgs
     fullName: office.Excel_BindingSelectionChangedEventArgs
     langs:
       - typeScript

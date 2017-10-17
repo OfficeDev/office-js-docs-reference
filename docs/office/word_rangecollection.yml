@@ -5,7 +5,7 @@ items:
       Contains a collection of \[range\](range.md) objects. 
 
        \[Api set: WordApi 1.1\]
-    name: Word_RangeCollection
+    name: Word.RangeCollection
     fullName: office.Word_RangeCollection
     langs:
       - typeScript

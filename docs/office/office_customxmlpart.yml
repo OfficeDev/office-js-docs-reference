@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_CustomXmlPart
-    name: Office_CustomXmlPart
+    name: Office.CustomXmlPart
     fullName: office.Office_CustomXmlPart
     langs:
       - typeScript

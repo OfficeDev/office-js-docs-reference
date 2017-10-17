@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.OfficeExtension_EventInfo
-    name: OfficeExtension_EventInfo
+    name: OfficeExtension.EventInfo
     fullName: office.OfficeExtension_EventInfo
     langs:
       - typeScript

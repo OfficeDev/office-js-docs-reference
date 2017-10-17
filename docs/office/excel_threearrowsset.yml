@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Excel_ThreeArrowsSet
-    name: Excel_ThreeArrowsSet
+    name: Excel.ThreeArrowsSet
     fullName: office.Excel_ThreeArrowsSet
     langs:
       - typeScript

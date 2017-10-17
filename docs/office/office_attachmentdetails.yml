@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_AttachmentDetails
-    name: Office_AttachmentDetails
+    name: Office.AttachmentDetails
     fullName: office.Office_AttachmentDetails
     langs:
       - typeScript

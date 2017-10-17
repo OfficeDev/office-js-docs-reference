@@ -5,7 +5,7 @@ items:
       encapsulates the format properties for the chart series 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_ChartSeriesFormat
+    name: Excel.ChartSeriesFormat
     fullName: office.Excel_ChartSeriesFormat
     langs:
       - typeScript

@@ -5,7 +5,7 @@ items:
       Represents a collection of InkAnalysisLine objects. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_InkAnalysisLineCollection
+    name: OneNote.InkAnalysisLineCollection
     fullName: office.OneNote_InkAnalysisLineCollection
     langs:
       - typeScript

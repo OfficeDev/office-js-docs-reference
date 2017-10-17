@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_FileProperties
-    name: Office_FileProperties
+    name: Office.FileProperties
     fullName: office.Office_FileProperties
     langs:
       - typeScript

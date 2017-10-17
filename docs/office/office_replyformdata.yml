@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_ReplyFormData
-    name: Office_ReplyFormData
+    name: Office.ReplyFormData
     fullName: office.Office_ReplyFormData
     langs:
       - typeScript

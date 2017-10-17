@@ -2,7 +2,7 @@
 items:
   - uid: office.OfficeExtension_RequestUrlAndHeaderInfo
     summary: Request URL and headers
-    name: OfficeExtension_RequestUrlAndHeaderInfo
+    name: OfficeExtension.RequestUrlAndHeaderInfo
     fullName: office.OfficeExtension_RequestUrlAndHeaderInfo
     langs:
       - typeScript

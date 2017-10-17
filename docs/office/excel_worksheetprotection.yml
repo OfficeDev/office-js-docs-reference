@@ -5,7 +5,7 @@ items:
       Represents the protection of a sheet object. 
 
        \[Api set: ExcelApi 1.2\]
-    name: Excel_WorksheetProtection
+    name: Excel.WorksheetProtection
     fullName: office.Excel_WorksheetProtection
     langs:
       - typeScript

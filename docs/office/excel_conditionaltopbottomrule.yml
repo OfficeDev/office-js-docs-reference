@@ -5,7 +5,7 @@ items:
       Represents the rule of the top/bottom conditional format. 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_ConditionalTopBottomRule
+    name: Excel.ConditionalTopBottomRule
     fullName: office.Excel_ConditionalTopBottomRule
     langs:
       - typeScript

@@ -5,7 +5,7 @@ items:
       An object encapsulating a conditional format's range, format, rule, and other properties. 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_ConditionalFormat
+    name: Excel.ConditionalFormat
     fullName: office.Excel_ConditionalFormat
     langs:
       - typeScript

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_File
-    name: Office_File
+    name: Office.File
     fullName: office.Office_File
     langs:
       - typeScript

@@ -5,7 +5,7 @@ items:
       Represents a point of a series in a chart. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_ChartPoint
+    name: Excel.ChartPoint
     fullName: office.Excel_ChartPoint
     langs:
       - typeScript

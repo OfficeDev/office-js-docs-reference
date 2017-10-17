@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_CoercionType
-    name: Office_CoercionType
+    name: Office.CoercionType
     fullName: office.Office_CoercionType
     langs:
       - typeScript

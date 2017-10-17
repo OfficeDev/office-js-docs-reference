@@ -5,7 +5,7 @@ items:
       A collection of all the chart points within a series inside a chart. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_ChartPointsCollection
+    name: Excel.ChartPointsCollection
     fullName: office.Excel_ChartPointsCollection
     langs:
       - typeScript

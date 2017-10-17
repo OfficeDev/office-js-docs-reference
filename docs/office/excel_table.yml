@@ -5,7 +5,7 @@ items:
       Represents an Excel table. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_Table
+    name: Excel.Table
     fullName: office.Excel_Table
     langs:
       - typeScript

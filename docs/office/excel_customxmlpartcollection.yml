@@ -5,7 +5,7 @@ items:
       A collection of custom XML parts. 
 
        \[Api set: ExcelApi 1.5\]
-    name: Excel_CustomXmlPartCollection
+    name: Excel.CustomXmlPartCollection
     fullName: office.Excel_CustomXmlPartCollection
     langs:
       - typeScript

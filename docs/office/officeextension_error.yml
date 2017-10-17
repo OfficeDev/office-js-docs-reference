@@ -4,7 +4,7 @@ items:
     summary: >-
       The error object returned by "context.sync()", if a promise is rejected due to an error while processing the
       request.
-    name: OfficeExtension_Error
+    name: OfficeExtension.Error
     fullName: office.OfficeExtension_Error
     langs:
       - typeScript

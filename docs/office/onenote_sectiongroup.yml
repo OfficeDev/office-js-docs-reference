@@ -5,7 +5,7 @@ items:
       Represents a OneNote section group. Section groups can contain sections and other section groups. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_SectionGroup
+    name: OneNote.SectionGroup
     fullName: office.OneNote_SectionGroup
     langs:
       - typeScript

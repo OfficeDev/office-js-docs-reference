@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_ProjectViewTypes
-    name: Office_ProjectViewTypes
+    name: Office.ProjectViewTypes
     fullName: office.Office_ProjectViewTypes
     langs:
       - typeScript

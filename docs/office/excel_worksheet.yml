@@ -5,7 +5,7 @@ items:
       An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_Worksheet
+    name: Excel.Worksheet
     fullName: office.Excel_Worksheet
     langs:
       - typeScript

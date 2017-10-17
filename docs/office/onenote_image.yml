@@ -5,7 +5,7 @@ items:
       Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_Image
+    name: OneNote.Image
     fullName: office.OneNote_Image
     langs:
       - typeScript

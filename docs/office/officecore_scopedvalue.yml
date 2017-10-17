@@ -5,7 +5,7 @@ items:
       Provides information about the scoped value. 
 
        \[Api set: Experimentation 1.1 (PREVIEW)\]
-    name: OfficeCore_ScopedValue
+    name: OfficeCore.ScopedValue
     fullName: office.OfficeCore_ScopedValue
     langs:
       - typeScript

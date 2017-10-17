@@ -5,7 +5,7 @@ items:
       Represents a RichText object in a Paragraph. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_RichText
+    name: OneNote.RichText
     fullName: office.OneNote_RichText
     langs:
       - typeScript

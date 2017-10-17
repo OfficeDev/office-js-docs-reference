@@ -5,7 +5,7 @@ items:
       Represents a container for Paragraph objects. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_Outline
+    name: OneNote.Outline
     fullName: office.OneNote_Outline
     langs:
       - typeScript

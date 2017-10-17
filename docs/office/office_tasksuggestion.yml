@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_TaskSuggestion
-    name: Office_TaskSuggestion
+    name: Office.TaskSuggestion
     fullName: office.Office_TaskSuggestion
     langs:
       - typeScript

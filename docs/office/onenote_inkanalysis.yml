@@ -5,7 +5,7 @@ items:
       Represents ink analysis data for a given set of ink strokes. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_InkAnalysis
+    name: OneNote.InkAnalysis
     fullName: office.OneNote_InkAnalysis
     langs:
       - typeScript

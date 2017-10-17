@@ -5,7 +5,7 @@ items:
       Represents a rule, for all traditional rule/format pairings. 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_ConditionalFormatRule
+    name: Excel.ConditionalFormatRule
     fullName: office.Excel_ConditionalFormatRule
     langs:
       - typeScript

@@ -5,7 +5,7 @@ items:
       Manages sorting operations on Range objects. 
 
        \[Api set: ExcelApi 1.2\]
-    name: Excel_RangeSort
+    name: Excel.RangeSort
     fullName: office.Excel_RangeSort
     langs:
       - typeScript

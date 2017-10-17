@@ -5,7 +5,7 @@ items:
       This object represents the font attributes (font name, font size, color, etc.) for a chart object. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_ChartFont
+    name: Excel.ChartFont
     fullName: office.Excel_ChartFont
     langs:
       - typeScript

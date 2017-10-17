@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_RoamingSettings
-    name: Office_RoamingSettings
+    name: Office.RoamingSettings
     fullName: office.Office_RoamingSettings
     langs:
       - typeScript

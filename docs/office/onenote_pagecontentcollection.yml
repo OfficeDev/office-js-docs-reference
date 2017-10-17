@@ -5,7 +5,7 @@ items:
       Represents the contents of a page, as a collection of PageContent objects. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_PageContentCollection
+    name: OneNote.PageContentCollection
     fullName: office.OneNote_PageContentCollection
     langs:
       - typeScript

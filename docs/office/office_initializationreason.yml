@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_InitializationReason
-    name: Office_InitializationReason
+    name: Office.InitializationReason
     fullName: office.Office_InitializationReason
     langs:
       - typeScript

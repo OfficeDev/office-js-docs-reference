@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_CustomProperties
-    name: Office_CustomProperties
+    name: Office.CustomProperties
     fullName: office.Office_CustomProperties
     langs:
       - typeScript

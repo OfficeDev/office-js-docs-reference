@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_MailboxEnums_EntityType
-    name: Office_MailboxEnums_EntityType
+    name: Office.MailboxEnums.EntityType
     fullName: office.Office_MailboxEnums_EntityType
     langs:
       - typeScript

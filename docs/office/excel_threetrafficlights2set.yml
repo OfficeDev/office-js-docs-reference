@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Excel_ThreeTrafficLights2Set
-    name: Excel_ThreeTrafficLights2Set
+    name: Excel.ThreeTrafficLights2Set
     fullName: office.Excel_ThreeTrafficLights2Set
     langs:
       - typeScript

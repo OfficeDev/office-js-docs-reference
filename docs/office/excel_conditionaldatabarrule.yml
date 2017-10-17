@@ -5,7 +5,7 @@ items:
       Represents a rule-type for a Data Bar. 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_ConditionalDataBarRule
+    name: Excel.ConditionalDataBarRule
     fullName: office.Excel_ConditionalDataBarRule
     langs:
       - typeScript

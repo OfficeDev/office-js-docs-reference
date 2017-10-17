@@ -5,7 +5,7 @@ items:
       Represents an Excel Conditional Data Bar Type. 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_DataBarConditionalFormat
+    name: Excel.DataBarConditionalFormat
     fullName: office.Excel_DataBarConditionalFormat
     langs:
       - typeScript

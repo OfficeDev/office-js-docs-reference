@@ -6,7 +6,7 @@ items:
       and the body that contains the contents of the document. 
 
        \[Api set: WordApi 1.1\]
-    name: Word_Document
+    name: Word.Document
     fullName: office.Word_Document
     langs:
       - typeScript

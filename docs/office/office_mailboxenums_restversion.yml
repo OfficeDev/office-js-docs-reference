@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_MailboxEnums_RestVersion
-    name: Office_MailboxEnums_RestVersion
+    name: Office.MailboxEnums.RestVersion
     fullName: office.Office_MailboxEnums_RestVersion
     langs:
       - typeScript

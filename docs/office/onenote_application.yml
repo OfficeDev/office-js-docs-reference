@@ -6,7 +6,7 @@ items:
       active notebook, and the active section. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_Application
+    name: OneNote.Application
     fullName: office.OneNote_Application
     langs:
       - typeScript

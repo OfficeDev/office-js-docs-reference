@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.OfficeExtension_DebugInfo
-    name: OfficeExtension_DebugInfo
+    name: OfficeExtension.DebugInfo
     fullName: office.OfficeExtension_DebugInfo
     langs:
       - typeScript

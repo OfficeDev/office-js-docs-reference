@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_Slice
-    name: Office_Slice
+    name: Office.Slice
     fullName: office.Office_Slice
     langs:
       - typeScript

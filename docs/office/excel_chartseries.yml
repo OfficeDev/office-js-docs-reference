@@ -5,7 +5,7 @@ items:
       Represents a series in a chart. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_ChartSeries
+    name: Excel.ChartSeries
     fullName: office.Excel_ChartSeries
     langs:
       - typeScript

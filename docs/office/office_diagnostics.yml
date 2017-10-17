@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_Diagnostics
-    name: Office_Diagnostics
+    name: Office.Diagnostics
     fullName: office.Office_Diagnostics
     langs:
       - typeScript

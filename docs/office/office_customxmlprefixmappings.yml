@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_CustomXmlPrefixMappings
-    name: Office_CustomXmlPrefixMappings
+    name: Office.CustomXmlPrefixMappings
     fullName: office.Office_CustomXmlPrefixMappings
     langs:
       - typeScript

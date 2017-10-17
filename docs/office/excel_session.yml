@@ -2,7 +2,7 @@
 items:
   - uid: office.Excel_Session
     summary: Provides connection session for a remote workbook.
-    name: Excel_Session
+    name: Excel.Session
     fullName: office.Excel_Session
     langs:
       - typeScript

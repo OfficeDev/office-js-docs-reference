@@ -5,7 +5,7 @@ items:
       Specifies the options to be included in a search operation. 
 
        \[Api set: WordApi 1.1\]
-    name: Word_SearchOptions
+    name: Word.SearchOptions
     fullName: office.Word_SearchOptions
     langs:
       - typeScript

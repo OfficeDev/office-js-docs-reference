@@ -5,7 +5,7 @@ items:
       Represents the border objects that make up the range border. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_RangeBorderCollection
+    name: Excel.RangeBorderCollection
     fullName: office.Excel_RangeBorderCollection
     langs:
       - typeScript

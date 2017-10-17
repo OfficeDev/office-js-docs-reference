@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_AsyncContextOptions
-    name: Office_AsyncContextOptions
+    name: Office.AsyncContextOptions
     fullName: office.Office_AsyncContextOptions
     langs:
       - typeScript

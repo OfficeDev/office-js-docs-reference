@@ -5,7 +5,7 @@ items:
       An object for evaluating Excel functions. 
 
        \[Api set: ExcelApi 1.2\]
-    name: Excel_Functions
+    name: Excel.Functions
     fullName: office.Excel_Functions
     langs:
       - typeScript

@@ -5,7 +5,7 @@ items:
       Represents the background of a conditional range object. 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_ConditionalRangeFill
+    name: Excel.ConditionalRangeFill
     fullName: office.Excel_ConditionalRangeFill
     langs:
       - typeScript

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_ValueFormat
-    name: Office_ValueFormat
+    name: Office.ValueFormat
     fullName: office.Office_ValueFormat
     langs:
       - typeScript

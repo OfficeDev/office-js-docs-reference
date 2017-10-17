@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_ActiveView
-    name: Office_ActiveView
+    name: Office.ActiveView
     fullName: office.Office_ActiveView
     langs:
       - typeScript

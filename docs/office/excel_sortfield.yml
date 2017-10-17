@@ -5,7 +5,7 @@ items:
       Represents a condition in a sorting operation. 
 
        \[Api set: ExcelApi 1.2\]
-    name: Excel_SortField
+    name: Excel.SortField
     fullName: office.Excel_SortField
     langs:
       - typeScript

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_ProjectProjectFields
-    name: Office_ProjectProjectFields
+    name: Office.ProjectProjectFields
     fullName: office.Office_ProjectProjectFields
     langs:
       - typeScript

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.OfficeExtension_ErrorCodes
-    name: OfficeExtension_ErrorCodes
+    name: OfficeExtension.ErrorCodes
     fullName: office.OfficeExtension_ErrorCodes
     langs:
       - typeScript

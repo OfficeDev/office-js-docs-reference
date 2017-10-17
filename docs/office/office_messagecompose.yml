@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_MessageCompose
-    name: Office_MessageCompose
+    name: Office.MessageCompose
     fullName: office.Office_MessageCompose
     langs:
       - typeScript

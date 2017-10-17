@@ -5,7 +5,7 @@ items:
       Represents the collection of all the binding objects that are part of the workbook. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_BindingCollection
+    name: Excel.BindingCollection
     fullName: office.Excel_BindingCollection
     langs:
       - typeScript

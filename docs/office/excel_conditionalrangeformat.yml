@@ -5,7 +5,7 @@ items:
       A format object encapsulating the conditional formats range's font, fill, borders, and other properties. 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_ConditionalRangeFormat
+    name: Excel.ConditionalRangeFormat
     fullName: office.Excel_ConditionalRangeFormat
     langs:
       - typeScript

@@ -5,7 +5,7 @@ items:
       A container for the ink in a word in a paragraph. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_InkWord
+    name: OneNote.InkWord
     fullName: office.OneNote_InkWord
     langs:
       - typeScript

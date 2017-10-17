@@ -5,7 +5,7 @@ items:
       Represents a OneNote notebook. Notebooks contain section groups and sections. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_Notebook
+    name: OneNote.Notebook
     fullName: office.OneNote_Notebook
     langs:
       - typeScript

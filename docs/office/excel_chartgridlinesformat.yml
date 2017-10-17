@@ -5,7 +5,7 @@ items:
       Encapsulates the format properties for chart gridlines. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_ChartGridlinesFormat
+    name: Excel.ChartGridlinesFormat
     fullName: office.Excel_ChartGridlinesFormat
     langs:
       - typeScript

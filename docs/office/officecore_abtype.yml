@@ -2,7 +2,7 @@
 items:
   - uid: office.OfficeCore_ABType
     summary: '\[Api set: Experimentation 1.1 (PREVIEW)\]'
-    name: OfficeCore_ABType
+    name: OfficeCore.ABType
     fullName: office.OfficeCore_ABType
     langs:
       - typeScript

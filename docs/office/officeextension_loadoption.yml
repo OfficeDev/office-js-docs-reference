@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.OfficeExtension_LoadOption
-    name: OfficeExtension_LoadOption
+    name: OfficeExtension.LoadOption
     fullName: office.OfficeExtension_LoadOption
     langs:
       - typeScript

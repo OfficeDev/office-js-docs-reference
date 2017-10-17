@@ -5,7 +5,7 @@ items:
       Represents the legend in a chart. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_ChartLegend
+    name: Excel.ChartLegend
     fullName: office.Excel_ChartLegend
     langs:
       - typeScript

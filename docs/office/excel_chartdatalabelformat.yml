@@ -5,7 +5,7 @@ items:
       Encapsulates the format properties for the chart data labels. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_ChartDataLabelFormat
+    name: Excel.ChartDataLabelFormat
     fullName: office.Excel_ChartDataLabelFormat
     langs:
       - typeScript

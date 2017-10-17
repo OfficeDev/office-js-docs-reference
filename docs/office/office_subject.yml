@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_Subject
-    name: Office_Subject
+    name: Office.Subject
     fullName: office.Office_Subject
     langs:
       - typeScript

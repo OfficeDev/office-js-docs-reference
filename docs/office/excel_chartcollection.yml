@@ -5,7 +5,7 @@ items:
       A collection of all the chart objects on a worksheet. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_ChartCollection
+    name: Excel.ChartCollection
     fullName: office.Excel_ChartCollection
     langs:
       - typeScript

@@ -5,7 +5,7 @@ items:
       Represents a Color Scale Criterion which contains a type, value and a color. 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_ConditionalColorScaleCriterion
+    name: Excel.ConditionalColorScaleCriterion
     fullName: office.Excel_ConditionalColorScaleCriterion
     langs:
       - typeScript

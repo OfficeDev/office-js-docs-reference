@@ -6,7 +6,7 @@ items:
       below), range object, reference to a range. This object can be used to obtain range object associated with names. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_NamedItem
+    name: Excel.NamedItem
     fullName: office.Excel_NamedItem
     langs:
       - typeScript

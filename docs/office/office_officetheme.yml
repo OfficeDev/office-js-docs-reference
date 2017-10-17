@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_OfficeTheme
-    name: Office_OfficeTheme
+    name: Office.OfficeTheme
     fullName: office.Office_OfficeTheme
     langs:
       - typeScript

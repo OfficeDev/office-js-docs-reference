@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_AppointmentRead
-    name: Office_AppointmentRead
+    name: Office.AppointmentRead
     fullName: office.Office_AppointmentRead
     langs:
       - typeScript

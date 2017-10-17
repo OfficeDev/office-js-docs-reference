@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_GoToType
-    name: Office_GoToType
+    name: Office.GoToType
     fullName: office.Office_GoToType
     langs:
       - typeScript

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_Index
-    name: Office_Index
+    name: Office.Index
     fullName: office.Office_Index
     langs:
       - typeScript

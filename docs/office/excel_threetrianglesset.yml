@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Excel_ThreeTrianglesSet
-    name: Excel_ThreeTrianglesSet
+    name: Excel.ThreeTrianglesSet
     fullName: office.Excel_ThreeTrianglesSet
     langs:
       - typeScript

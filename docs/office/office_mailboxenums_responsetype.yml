@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_MailboxEnums_ResponseType
-    name: Office_MailboxEnums_ResponseType
+    name: Office.MailboxEnums.ResponseType
     fullName: office.Office_MailboxEnums_ResponseType
     langs:
       - typeScript

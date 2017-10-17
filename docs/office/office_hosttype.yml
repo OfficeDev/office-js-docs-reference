@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_HostType
-    name: Office_HostType
+    name: Office.HostType
     fullName: office.Office_HostType
     langs:
       - typeScript

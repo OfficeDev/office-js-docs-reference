@@ -6,7 +6,7 @@ items:
       an iconset. 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_ConditionalIconCriterion
+    name: Excel.ConditionalIconCriterion
     fullName: office.Excel_ConditionalIconCriterion
     langs:
       - typeScript

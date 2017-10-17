@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_NotificationMessageDetails
-    name: Office_NotificationMessageDetails
+    name: Office.NotificationMessageDetails
     fullName: office.Office_NotificationMessageDetails
     langs:
       - typeScript

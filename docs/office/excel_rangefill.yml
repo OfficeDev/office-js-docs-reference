@@ -5,7 +5,7 @@ items:
       Represents the background of a range object. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_RangeFill
+    name: Excel.RangeFill
     fullName: office.Excel_RangeFill
     langs:
       - typeScript

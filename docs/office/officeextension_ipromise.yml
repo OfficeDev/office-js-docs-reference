@@ -2,7 +2,7 @@
 items:
   - uid: office.OfficeExtension_IPromise
     summary: An IPromise object that represents a deferred interaction with the host Office application.
-    name: OfficeExtension_IPromise
+    name: OfficeExtension.IPromise
     fullName: office.OfficeExtension_IPromise
     langs:
       - typeScript

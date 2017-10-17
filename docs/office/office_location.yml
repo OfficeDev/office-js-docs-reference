@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_Location
-    name: Office_Location
+    name: Office.Location
     fullName: office.Office_Location
     langs:
       - typeScript

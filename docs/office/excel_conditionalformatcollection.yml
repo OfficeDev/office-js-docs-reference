@@ -5,7 +5,7 @@ items:
       Represents a collection of all the conditional formats that are overlap the range. 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_ConditionalFormatCollection
+    name: Excel.ConditionalFormatCollection
     fullName: office.Excel_ConditionalFormatCollection
     langs:
       - typeScript

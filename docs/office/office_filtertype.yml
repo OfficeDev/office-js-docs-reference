@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_FilterType
-    name: Office_FilterType
+    name: Office.FilterType
     fullName: office.Office_FilterType
     langs:
       - typeScript

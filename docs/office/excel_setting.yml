@@ -5,7 +5,7 @@ items:
       Setting represents a key-value pair of a setting persisted to the document. 
 
        \[Api set: ExcelApi 1.4\]
-    name: Excel_Setting
+    name: Excel.Setting
     fullName: office.Excel_Setting
     langs:
       - typeScript

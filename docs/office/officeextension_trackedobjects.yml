@@ -4,7 +4,7 @@ items:
     summary: >-
       Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more
       information.
-    name: OfficeExtension_TrackedObjects
+    name: OfficeExtension.TrackedObjects
     fullName: office.OfficeExtension_TrackedObjects
     langs:
       - typeScript

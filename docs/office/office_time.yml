@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_Time
-    name: Office_Time
+    name: Office.Time
     fullName: office.Office_Time
     langs:
       - typeScript

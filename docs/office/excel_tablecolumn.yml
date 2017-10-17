@@ -5,7 +5,7 @@ items:
       Represents a column in a table. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_TableColumn
+    name: Excel.TableColumn
     fullName: office.Excel_TableColumn
     langs:
       - typeScript

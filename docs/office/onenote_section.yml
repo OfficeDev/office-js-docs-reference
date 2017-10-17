@@ -5,7 +5,7 @@ items:
       Represents a OneNote section. Sections can contain pages. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_Section
+    name: OneNote.Section
     fullName: office.OneNote_Section
     langs:
       - typeScript

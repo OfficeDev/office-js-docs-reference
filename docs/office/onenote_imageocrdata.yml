@@ -5,7 +5,7 @@ items:
       Represents data obtained by OCR (optical character recognition) of an image 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_ImageOcrData
+    name: OneNote.ImageOcrData
     fullName: office.OneNote_ImageOcrData
     langs:
       - typeScript

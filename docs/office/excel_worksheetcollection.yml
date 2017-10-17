@@ -5,7 +5,7 @@ items:
       Represents a collection of worksheet objects that are part of the workbook. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_WorksheetCollection
+    name: Excel.WorksheetCollection
     fullName: office.Excel_WorksheetCollection
     langs:
       - typeScript

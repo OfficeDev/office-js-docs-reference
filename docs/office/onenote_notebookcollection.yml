@@ -5,7 +5,7 @@ items:
       Represents a collection of notebooks. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_NotebookCollection
+    name: OneNote.NotebookCollection
     fullName: office.OneNote_NotebookCollection
     langs:
       - typeScript

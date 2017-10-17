@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Excel_FiveBoxesSet
-    name: Excel_FiveBoxesSet
+    name: Excel.FiveBoxesSet
     fullName: office.Excel_FiveBoxesSet
     langs:
       - typeScript

@@ -5,7 +5,7 @@ items:
       Represents a section in a Word document. 
 
        \[Api set: WordApi 1.1\]
-    name: Word_Section
+    name: Word.Section
     fullName: office.Word_Section
     langs:
       - typeScript

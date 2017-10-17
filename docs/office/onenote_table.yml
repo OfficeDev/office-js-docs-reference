@@ -5,7 +5,7 @@ items:
       Represents a table in a OneNote page. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_Table
+    name: OneNote.Table
     fullName: office.OneNote_Table
     langs:
       - typeScript

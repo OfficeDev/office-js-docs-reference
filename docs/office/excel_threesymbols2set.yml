@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Excel_ThreeSymbols2Set
-    name: Excel_ThreeSymbols2Set
+    name: Excel.ThreeSymbols2Set
     fullName: office.Excel_ThreeSymbols2Set
     langs:
       - typeScript

@@ -5,7 +5,7 @@ items:
       Represents a OneNote page. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_Page
+    name: OneNote.Page
     fullName: office.OneNote_Page
     langs:
       - typeScript

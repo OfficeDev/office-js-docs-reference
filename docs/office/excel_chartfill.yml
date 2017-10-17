@@ -5,7 +5,7 @@ items:
       Represents the fill formatting for a chart element. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_ChartFill
+    name: Excel.ChartFill
     fullName: office.Excel_ChartFill
     langs:
       - typeScript

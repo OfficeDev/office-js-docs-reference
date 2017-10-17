@@ -6,7 +6,7 @@ items:
       reached. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_NamedItemCollection
+    name: Excel.NamedItemCollection
     fullName: office.Excel_NamedItemCollection
     langs:
       - typeScript

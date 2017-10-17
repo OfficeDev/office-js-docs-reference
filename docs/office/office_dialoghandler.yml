@@ -4,7 +4,7 @@ items:
     summary: >-
       Dialog object returned as part of the displayDialogAsync callback. The object exposes methods for registering
       event handlers and closing the dialog
-    name: Office_DialogHandler
+    name: Office.DialogHandler
     fullName: office.Office_DialogHandler
     langs:
       - typeScript

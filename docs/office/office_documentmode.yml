@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_DocumentMode
-    name: Office_DocumentMode
+    name: Office.DocumentMode
     fullName: office.Office_DocumentMode
     langs:
       - typeScript

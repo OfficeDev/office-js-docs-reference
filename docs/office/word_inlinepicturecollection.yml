@@ -5,7 +5,7 @@ items:
       Contains a collection of \[inlinePicture\](inlinePicture.md) objects. 
 
        \[Api set: WordApi 1.1\]
-    name: Word_InlinePictureCollection
+    name: Word.InlinePictureCollection
     fullName: office.Word_InlinePictureCollection
     langs:
       - typeScript

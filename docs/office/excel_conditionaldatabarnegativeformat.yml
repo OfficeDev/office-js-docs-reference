@@ -5,7 +5,7 @@ items:
       Represents a conditional format DataBar Format for the negative side of the data bar. 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_ConditionalDataBarNegativeFormat
+    name: Excel.ConditionalDataBarNegativeFormat
     fullName: office.Excel_ConditionalDataBarNegativeFormat
     langs:
       - typeScript

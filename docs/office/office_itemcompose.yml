@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_ItemCompose
-    name: Office_ItemCompose
+    name: Office.ItemCompose
     fullName: office.Office_ItemCompose
     langs:
       - typeScript

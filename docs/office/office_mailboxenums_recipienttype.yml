@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_MailboxEnums_RecipientType
-    name: Office_MailboxEnums_RecipientType
+    name: Office.MailboxEnums.RecipientType
     fullName: office.Office_MailboxEnums_RecipientType
     langs:
       - typeScript

@@ -2,7 +2,7 @@
 items:
   - uid: office.Office_DocumentSelectionChangedEventArgs
     summary: Provides information about the document that raised the SelectionChanged event.
-    name: Office_DocumentSelectionChangedEventArgs
+    name: Office.DocumentSelectionChangedEventArgs
     fullName: office.Office_DocumentSelectionChangedEventArgs
     langs:
       - typeScript

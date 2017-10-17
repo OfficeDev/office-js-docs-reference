@@ -2,7 +2,7 @@
 items:
   - uid: office.Office_Error
     summary: Provides specific information about an error that occurred during an asynchronous data operation.
-    name: Office_Error
+    name: Office.Error
     fullName: office.Office_Error
     langs:
       - typeScript

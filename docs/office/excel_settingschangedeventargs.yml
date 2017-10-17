@@ -5,7 +5,7 @@ items:
       Provides information about the setting that raised the SettingsChanged event 
 
        \[Api set: ExcelApi 1.4\]
-    name: Excel_SettingsChangedEventArgs
+    name: Excel.SettingsChangedEventArgs
     fullName: office.Excel_SettingsChangedEventArgs
     langs:
       - typeScript

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_EventType
-    name: Office_EventType
+    name: Office.EventType
     fullName: office.Office_EventType
     langs:
       - typeScript

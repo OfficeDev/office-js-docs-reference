@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_MessageRead
-    name: Office_MessageRead
+    name: Office.MessageRead
     fullName: office.Office_MessageRead
     langs:
       - typeScript

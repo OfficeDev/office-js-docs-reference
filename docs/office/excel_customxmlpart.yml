@@ -5,7 +5,7 @@ items:
       Represents a custom XML part object in a workbook. 
 
        \[Api set: ExcelApi 1.5\]
-    name: Excel_CustomXmlPart
+    name: Excel.CustomXmlPart
     fullName: office.Excel_CustomXmlPart
     langs:
       - typeScript

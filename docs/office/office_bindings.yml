@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_Bindings
-    name: Office_Bindings
+    name: Office.Bindings
     fullName: office.Office_Bindings
     langs:
       - typeScript

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.OfficeExtension_EventHandlerResult
-    name: OfficeExtension_EventHandlerResult
+    name: OfficeExtension.EventHandlerResult
     fullName: office.OfficeExtension_EventHandlerResult
     langs:
       - typeScript

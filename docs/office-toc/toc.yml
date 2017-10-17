@@ -1,596 +1,601 @@
 items:
-  - name: Office Add-Ins
+  - name: SharePoint Framework
     items:
       - name: Overview
         href: ./index.md
       - name: office
         uid: office
+      - name: Excel
         items:
-          - name: Common
-            items:
-            - name: Office_ActiveView
-              uid: office.Office_ActiveView
-            - name: Office_Appointment
-              uid: office.Office_Appointment
-            - name: Office_AppointmentCompose
-              uid: office.Office_AppointmentCompose
-            - name: Office_AppointmentForm
-              uid: office.Office_AppointmentForm
-            - name: Office_AppointmentRead
-              uid: office.Office_AppointmentRead
-            - name: Office_AsyncContextOptions
-              uid: office.Office_AsyncContextOptions
-            - name: Office_AsyncResult
-              uid: office.Office_AsyncResult
-            - name: Office_AsyncResultStatus
-              uid: office.Office_AsyncResultStatus
-            - name: Office_AttachmentDetails
-              uid: office.Office_AttachmentDetails
-            - name: Office_Auth
-              uid: office.Office_Auth
-            - name: Office_AuthOptions
-              uid: office.Office_AuthOptions
-            - name: Office_Binding
-              uid: office.Office_Binding
-            - name: Office_Bindings
-              uid: office.Office_Bindings
-            - name: Office_BindingType
-              uid: office.Office_BindingType
-            - name: Office_Body
-              uid: office.Office_Body
-            - name: Office_CoercionType
-              uid: office.Office_CoercionType
-            - name: Office_CoercionTypeOptions
-              uid: office.Office_CoercionTypeOptions
-            - name: Office_Contact
-              uid: office.Office_Contact
-            - name: Office_Context
-              uid: office.Office_Context
-            - name: Office_CustomProperties
-              uid: office.Office_CustomProperties
-            - name: Office_CustomXmlNode
-              uid: office.Office_CustomXmlNode
-            - name: Office_CustomXmlPart
-              uid: office.Office_CustomXmlPart
-            - name: Office_CustomXmlParts
-              uid: office.Office_CustomXmlParts
-            - name: Office_CustomXmlPrefixMappings
-              uid: office.Office_CustomXmlPrefixMappings
-            - name: Office_Diagnostics
-              uid: office.Office_Diagnostics
-            - name: Office_DialogHandler
-              uid: office.Office_DialogHandler
-            - name: Office_DialogOptions
-              uid: office.Office_DialogOptions
-            - name: Office_Document
-              uid: office.Office_Document
-            - name: Office_DocumentMode
-              uid: office.Office_DocumentMode
-            - name: Office_DocumentSelectionChangedEventArgs
-              uid: office.Office_DocumentSelectionChangedEventArgs
-            - name: Office_EmailAddressDetails
-              uid: office.Office_EmailAddressDetails
-            - name: Office_EmailUser
-              uid: office.Office_EmailUser
-            - name: Office_Entities
-              uid: office.Office_Entities
-            - name: Office_Error
-              uid: office.Office_Error
-            - name: Office_EventType
-              uid: office.Office_EventType
-            - name: Office_File
-              uid: office.Office_File
-            - name: Office_FileProperties
-              uid: office.Office_FileProperties
-            - name: Office_FileType
-              uid: office.Office_FileType
-            - name: Office_FilterType
-              uid: office.Office_FilterType
-            - name: Office_GoToType
-              uid: office.Office_GoToType
-            - name: Office_HostType
-              uid: office.Office_HostType
-            - name: Office_Index
-              uid: office.Office_Index
-            - name: Office_InitializationReason
-              uid: office.Office_InitializationReason
-            - name: Office_Item
-              uid: office.Office_Item
-            - name: Office_ItemCompose
-              uid: office.Office_ItemCompose
-            - name: Office_ItemRead
-              uid: office.Office_ItemRead
-            - name: Office_LocalClientTime
-              uid: office.Office_LocalClientTime
-            - name: Office_Location
-              uid: office.Office_Location
-            - name: Office_Mailbox
-              uid: office.Office_Mailbox
-            - name: Office_MailboxEnums_AttachmentType
-              uid: office.Office_MailboxEnums_AttachmentType
-            - name: Office_MailboxEnums_EntityType
-              uid: office.Office_MailboxEnums_EntityType
-            - name: Office_MailboxEnums_ItemNotificationMessageType
-              uid: office.Office_MailboxEnums_ItemNotificationMessageType
-            - name: Office_MailboxEnums_ItemType
-              uid: office.Office_MailboxEnums_ItemType
-            - name: Office_MailboxEnums_RecipientType
-              uid: office.Office_MailboxEnums_RecipientType
-            - name: Office_MailboxEnums_ResponseType
-              uid: office.Office_MailboxEnums_ResponseType
-            - name: Office_MailboxEnums_RestVersion
-              uid: office.Office_MailboxEnums_RestVersion
-            - name: Office_MatrixBinding
-              uid: office.Office_MatrixBinding
-            - name: Office_MeetingSuggestion
-              uid: office.Office_MeetingSuggestion
-            - name: Office_Message
-              uid: office.Office_Message
-            - name: Office_MessageCompose
-              uid: office.Office_MessageCompose
-            - name: Office_MessageRead
-              uid: office.Office_MessageRead
-            - name: Office_NotificationMessageDetails
-              uid: office.Office_NotificationMessageDetails
-            - name: Office_NotificationMessages
-              uid: office.Office_NotificationMessages
-            - name: Office_OfficeTheme
-              uid: office.Office_OfficeTheme
-            - name: Office_PhoneNumber
-              uid: office.Office_PhoneNumber
-            - name: Office_PlatformType
-              uid: office.Office_PlatformType
-            - name: Office_ProjectProjectFields
-              uid: office.Office_ProjectProjectFields
-            - name: Office_ProjectResourceFields
-              uid: office.Office_ProjectResourceFields
-            - name: Office_ProjectTaskFields
-              uid: office.Office_ProjectTaskFields
-            - name: Office_ProjectViewTypes
-              uid: office.Office_ProjectViewTypes
-            - name: Office_Recipients
-              uid: office.Office_Recipients
-            - name: Office_ReplyFormAttachment
-              uid: office.Office_ReplyFormAttachment
-            - name: Office_ReplyFormData
-              uid: office.Office_ReplyFormData
-            - name: Office_RoamingSettings
-              uid: office.Office_RoamingSettings
-            - name: Office_SelectionMode
-              uid: office.Office_SelectionMode
-            - name: Office_Settings
-              uid: office.Office_Settings
-            - name: Office_Slice
-              uid: office.Office_Slice
-            - name: Office_SourceProperty
-              uid: office.Office_SourceProperty
-            - name: Office_Subject
-              uid: office.Office_Subject
-            - name: Office_Table
-              uid: office.Office_Table
-            - name: Office_TableBinding
-              uid: office.Office_TableBinding
-            - name: Office_TableData
-              uid: office.Office_TableData
-            - name: Office_TaskSuggestion
-              uid: office.Office_TaskSuggestion
-            - name: Office_TextBinding
-              uid: office.Office_TextBinding
-            - name: Office_Time
-              uid: office.Office_Time
-            - name: Office_UI
-              uid: office.Office_UI
-            - name: Office_UserProfile
-              uid: office.Office_UserProfile
-            - name: Office_ValueFormat
-              uid: office.Office_ValueFormat
-            - name: OfficeCore_ABType
-              uid: office.OfficeCore_ABType
-            - name: OfficeCore_FlightingService
-              uid: office.OfficeCore_FlightingService
-            - name: OfficeCore_RequestContext
-              uid: office.OfficeCore_RequestContext
-            - name: OfficeCore_ScopedValue
-              uid: office.OfficeCore_ScopedValue
-            - name: OfficeExtension_ClientObject
-              uid: office.OfficeExtension_ClientObject
-            - name: OfficeExtension_ClientRequestContext
-              uid: office.OfficeExtension_ClientRequestContext
-            - name: OfficeExtension_ClientResult
-              uid: office.OfficeExtension_ClientResult
-            - name: OfficeExtension_DebugInfo
-              uid: office.OfficeExtension_DebugInfo
-            - name: OfficeExtension_Error
-              uid: office.OfficeExtension_Error
-            - name: OfficeExtension_ErrorCodes
-              uid: office.OfficeExtension_ErrorCodes
-            - name: OfficeExtension_EventHandlerResult
-              uid: office.OfficeExtension_EventHandlerResult
-            - name: OfficeExtension_EventHandlers
-              uid: office.OfficeExtension_EventHandlers
-            - name: OfficeExtension_EventInfo
-              uid: office.OfficeExtension_EventInfo
-            - name: OfficeExtension_IPromise
-              uid: office.OfficeExtension_IPromise
-            - name: OfficeExtension_LoadOption
-              uid: office.OfficeExtension_LoadOption
-            - name: OfficeExtension_Promise
-              uid: office.OfficeExtension_Promise
-            - name: OfficeExtension_RequestUrlAndHeaderInfo
-              uid: office.OfficeExtension_RequestUrlAndHeaderInfo
-            - name: OfficeExtension_TrackedObjects
-              uid: office.OfficeExtension_TrackedObjects
-          - name: Excel
-            items:
-            - name: Excel_Application
-              uid: office.Excel_Application
-            - name: Excel_Binding
-              uid: office.Excel_Binding
-            - name: Excel_BindingCollection
-              uid: office.Excel_BindingCollection
-            - name: Excel_BindingDataChangedEventArgs
-              uid: office.Excel_BindingDataChangedEventArgs
-            - name: Excel_BindingSelectionChangedEventArgs
-              uid: office.Excel_BindingSelectionChangedEventArgs
-            - name: Excel_CellValueConditionalFormat
-              uid: office.Excel_CellValueConditionalFormat
-            - name: Excel_Chart
-              uid: office.Excel_Chart
-            - name: Excel_ChartAreaFormat
-              uid: office.Excel_ChartAreaFormat
-            - name: Excel_ChartAxes
-              uid: office.Excel_ChartAxes
-            - name: Excel_ChartAxis
-              uid: office.Excel_ChartAxis
-            - name: Excel_ChartAxisFormat
-              uid: office.Excel_ChartAxisFormat
-            - name: Excel_ChartAxisTitle
-              uid: office.Excel_ChartAxisTitle
-            - name: Excel_ChartAxisTitleFormat
-              uid: office.Excel_ChartAxisTitleFormat
-            - name: Excel_ChartCollection
-              uid: office.Excel_ChartCollection
-            - name: Excel_ChartDataLabelFormat
-              uid: office.Excel_ChartDataLabelFormat
-            - name: Excel_ChartDataLabels
-              uid: office.Excel_ChartDataLabels
-            - name: Excel_ChartFill
-              uid: office.Excel_ChartFill
-            - name: Excel_ChartFont
-              uid: office.Excel_ChartFont
-            - name: Excel_ChartGridlines
-              uid: office.Excel_ChartGridlines
-            - name: Excel_ChartGridlinesFormat
-              uid: office.Excel_ChartGridlinesFormat
-            - name: Excel_ChartLegend
-              uid: office.Excel_ChartLegend
-            - name: Excel_ChartLegendFormat
-              uid: office.Excel_ChartLegendFormat
-            - name: Excel_ChartLineFormat
-              uid: office.Excel_ChartLineFormat
-            - name: Excel_ChartPoint
-              uid: office.Excel_ChartPoint
-            - name: Excel_ChartPointFormat
-              uid: office.Excel_ChartPointFormat
-            - name: Excel_ChartPointsCollection
-              uid: office.Excel_ChartPointsCollection
-            - name: Excel_ChartSeries
-              uid: office.Excel_ChartSeries
-            - name: Excel_ChartSeriesCollection
-              uid: office.Excel_ChartSeriesCollection
-            - name: Excel_ChartSeriesFormat
-              uid: office.Excel_ChartSeriesFormat
-            - name: Excel_ChartTitle
-              uid: office.Excel_ChartTitle
-            - name: Excel_ChartTitleFormat
-              uid: office.Excel_ChartTitleFormat
-            - name: Excel_ColorScaleConditionalFormat
-              uid: office.Excel_ColorScaleConditionalFormat
-            - name: Excel_ConditionalCellValueRule
-              uid: office.Excel_ConditionalCellValueRule
-            - name: Excel_ConditionalColorScaleCriteria
-              uid: office.Excel_ConditionalColorScaleCriteria
-            - name: Excel_ConditionalColorScaleCriterion
-              uid: office.Excel_ConditionalColorScaleCriterion
-            - name: Excel_ConditionalDataBarNegativeFormat
-              uid: office.Excel_ConditionalDataBarNegativeFormat
-            - name: Excel_ConditionalDataBarPositiveFormat
-              uid: office.Excel_ConditionalDataBarPositiveFormat
-            - name: Excel_ConditionalDataBarRule
-              uid: office.Excel_ConditionalDataBarRule
-            - name: Excel_ConditionalFormat
-              uid: office.Excel_ConditionalFormat
-            - name: Excel_ConditionalFormatCollection
-              uid: office.Excel_ConditionalFormatCollection
-            - name: Excel_ConditionalFormatRule
-              uid: office.Excel_ConditionalFormatRule
-            - name: Excel_ConditionalIconCriterion
-              uid: office.Excel_ConditionalIconCriterion
-            - name: Excel_ConditionalPresetCriteriaRule
-              uid: office.Excel_ConditionalPresetCriteriaRule
-            - name: Excel_ConditionalRangeBorder
-              uid: office.Excel_ConditionalRangeBorder
-            - name: Excel_ConditionalRangeBorderCollection
-              uid: office.Excel_ConditionalRangeBorderCollection
-            - name: Excel_ConditionalRangeFill
-              uid: office.Excel_ConditionalRangeFill
-            - name: Excel_ConditionalRangeFont
-              uid: office.Excel_ConditionalRangeFont
-            - name: Excel_ConditionalRangeFormat
-              uid: office.Excel_ConditionalRangeFormat
-            - name: Excel_ConditionalTextComparisonRule
-              uid: office.Excel_ConditionalTextComparisonRule
-            - name: Excel_ConditionalTopBottomRule
-              uid: office.Excel_ConditionalTopBottomRule
-            - name: Excel_CustomConditionalFormat
-              uid: office.Excel_CustomConditionalFormat
-            - name: Excel_CustomXmlPart
-              uid: office.Excel_CustomXmlPart
-            - name: Excel_CustomXmlPartCollection
-              uid: office.Excel_CustomXmlPartCollection
-            - name: Excel_CustomXmlPartScopedCollection
-              uid: office.Excel_CustomXmlPartScopedCollection
-            - name: Excel_DataBarConditionalFormat
-              uid: office.Excel_DataBarConditionalFormat
-            - name: Excel_Filter
-              uid: office.Excel_Filter
-            - name: Excel_FilterCriteria
-              uid: office.Excel_FilterCriteria
-            - name: Excel_FilterDatetime
-              uid: office.Excel_FilterDatetime
-            - name: Excel_FiveArrowsGraySet
-              uid: office.Excel_FiveArrowsGraySet
-            - name: Excel_FiveArrowsSet
-              uid: office.Excel_FiveArrowsSet
-            - name: Excel_FiveBoxesSet
-              uid: office.Excel_FiveBoxesSet
-            - name: Excel_FiveQuartersSet
-              uid: office.Excel_FiveQuartersSet
-            - name: Excel_FiveRatingSet
-              uid: office.Excel_FiveRatingSet
-            - name: Excel_FormatProtection
-              uid: office.Excel_FormatProtection
-            - name: Excel_FourArrowsGraySet
-              uid: office.Excel_FourArrowsGraySet
-            - name: Excel_FourArrowsSet
-              uid: office.Excel_FourArrowsSet
-            - name: Excel_FourRatingSet
-              uid: office.Excel_FourRatingSet
-            - name: Excel_FourRedToBlackSet
-              uid: office.Excel_FourRedToBlackSet
-            - name: Excel_FourTrafficLightsSet
-              uid: office.Excel_FourTrafficLightsSet
-            - name: Excel_FunctionResult
-              uid: office.Excel_FunctionResult
-            - name: Excel_Functions
-              uid: office.Excel_Functions
-            - name: Excel_Icon
-              uid: office.Excel_Icon
-            - name: Excel_IconCollections
-              uid: office.Excel_IconCollections
-            - name: Excel_IconSetConditionalFormat
-              uid: office.Excel_IconSetConditionalFormat
-            - name: Excel_NamedItem
-              uid: office.Excel_NamedItem
-            - name: Excel_NamedItemCollection
-              uid: office.Excel_NamedItemCollection
-            - name: Excel_PivotTable
-              uid: office.Excel_PivotTable
-            - name: Excel_PivotTableCollection
-              uid: office.Excel_PivotTableCollection
-            - name: Excel_PresetCriteriaConditionalFormat
-              uid: office.Excel_PresetCriteriaConditionalFormat
-            - name: Excel_Range
-              uid: office.Excel_Range
-            - name: Excel_RangeBorder
-              uid: office.Excel_RangeBorder
-            - name: Excel_RangeBorderCollection
-              uid: office.Excel_RangeBorderCollection
-            - name: Excel_RangeFill
-              uid: office.Excel_RangeFill
-            - name: Excel_RangeFont
-              uid: office.Excel_RangeFont
-            - name: Excel_RangeFormat
-              uid: office.Excel_RangeFormat
-            - name: Excel_RangeReference
-              uid: office.Excel_RangeReference
-            - name: Excel_RangeSort
-              uid: office.Excel_RangeSort
-            - name: Excel_RangeView
-              uid: office.Excel_RangeView
-            - name: Excel_RangeViewCollection
-              uid: office.Excel_RangeViewCollection
-            - name: Excel_RequestContext
-              uid: office.Excel_RequestContext
-            - name: Excel_SelectionChangedEventArgs
-              uid: office.Excel_SelectionChangedEventArgs
-            - name: Excel_Session
-              uid: office.Excel_Session
-            - name: Excel_Setting
-              uid: office.Excel_Setting
-            - name: Excel_SettingCollection
-              uid: office.Excel_SettingCollection
-            - name: Excel_SettingsChangedEventArgs
-              uid: office.Excel_SettingsChangedEventArgs
-            - name: Excel_SortField
-              uid: office.Excel_SortField
-            - name: Excel_Table
-              uid: office.Excel_Table
-            - name: Excel_TableCollection
-              uid: office.Excel_TableCollection
-            - name: Excel_TableColumn
-              uid: office.Excel_TableColumn
-            - name: Excel_TableColumnCollection
-              uid: office.Excel_TableColumnCollection
-            - name: Excel_TableRow
-              uid: office.Excel_TableRow
-            - name: Excel_TableRowCollection
-              uid: office.Excel_TableRowCollection
-            - name: Excel_TableSort
-              uid: office.Excel_TableSort
-            - name: Excel_TextConditionalFormat
-              uid: office.Excel_TextConditionalFormat
-            - name: Excel_ThreeArrowsGraySet
-              uid: office.Excel_ThreeArrowsGraySet
-            - name: Excel_ThreeArrowsSet
-              uid: office.Excel_ThreeArrowsSet
-            - name: Excel_ThreeFlagsSet
-              uid: office.Excel_ThreeFlagsSet
-            - name: Excel_ThreeSignsSet
-              uid: office.Excel_ThreeSignsSet
-            - name: Excel_ThreeStarsSet
-              uid: office.Excel_ThreeStarsSet
-            - name: Excel_ThreeSymbols2Set
-              uid: office.Excel_ThreeSymbols2Set
-            - name: Excel_ThreeSymbolsSet
-              uid: office.Excel_ThreeSymbolsSet
-            - name: Excel_ThreeTrafficLights1Set
-              uid: office.Excel_ThreeTrafficLights1Set
-            - name: Excel_ThreeTrafficLights2Set
-              uid: office.Excel_ThreeTrafficLights2Set
-            - name: Excel_ThreeTrianglesSet
-              uid: office.Excel_ThreeTrianglesSet
-            - name: Excel_TopBottomConditionalFormat
-              uid: office.Excel_TopBottomConditionalFormat
-            - name: Excel_Workbook
-              uid: office.Excel_Workbook
-            - name: Excel_Worksheet
-              uid: office.Excel_Worksheet
-            - name: Excel_WorksheetCollection
-              uid: office.Excel_WorksheetCollection
-            - name: Excel_WorksheetProtection
-              uid: office.Excel_WorksheetProtection
-            - name: Excel_WorksheetProtectionOptions
-              uid: office.Excel_WorksheetProtectionOptions
-          - name: OneNote
-            items:
-            - name: OneNote_Application
-              uid: office.OneNote_Application
-            - name: OneNote_FloatingInk
-              uid: office.OneNote_FloatingInk
-            - name: OneNote_Image
-              uid: office.OneNote_Image
-            - name: OneNote_ImageOcrData
-              uid: office.OneNote_ImageOcrData
-            - name: OneNote_InkAnalysis
-              uid: office.OneNote_InkAnalysis
-            - name: OneNote_InkAnalysisLine
-              uid: office.OneNote_InkAnalysisLine
-            - name: OneNote_InkAnalysisLineCollection
-              uid: office.OneNote_InkAnalysisLineCollection
-            - name: OneNote_InkAnalysisParagraph
-              uid: office.OneNote_InkAnalysisParagraph
-            - name: OneNote_InkAnalysisParagraphCollection
-              uid: office.OneNote_InkAnalysisParagraphCollection
-            - name: OneNote_InkAnalysisWord
-              uid: office.OneNote_InkAnalysisWord
-            - name: OneNote_InkAnalysisWordCollection
-              uid: office.OneNote_InkAnalysisWordCollection
-            - name: OneNote_InkStroke
-              uid: office.OneNote_InkStroke
-            - name: OneNote_InkStrokeCollection
-              uid: office.OneNote_InkStrokeCollection
-            - name: OneNote_InkStrokePointer
-              uid: office.OneNote_InkStrokePointer
-            - name: OneNote_InkWord
-              uid: office.OneNote_InkWord
-            - name: OneNote_InkWordCollection
-              uid: office.OneNote_InkWordCollection
-            - name: OneNote_Notebook
-              uid: office.OneNote_Notebook
-            - name: OneNote_NotebookCollection
-              uid: office.OneNote_NotebookCollection
-            - name: OneNote_Outline
-              uid: office.OneNote_Outline
-            - name: OneNote_Page
-              uid: office.OneNote_Page
-            - name: OneNote_PageCollection
-              uid: office.OneNote_PageCollection
-            - name: OneNote_PageContent
-              uid: office.OneNote_PageContent
-            - name: OneNote_PageContentCollection
-              uid: office.OneNote_PageContentCollection
-            - name: OneNote_Paragraph
-              uid: office.OneNote_Paragraph
-            - name: OneNote_ParagraphCollection
-              uid: office.OneNote_ParagraphCollection
-            - name: OneNote_RequestContext
-              uid: office.OneNote_RequestContext
-            - name: OneNote_RichText
-              uid: office.OneNote_RichText
-            - name: OneNote_Section
-              uid: office.OneNote_Section
-            - name: OneNote_SectionCollection
-              uid: office.OneNote_SectionCollection
-            - name: OneNote_SectionGroup
-              uid: office.OneNote_SectionGroup
-            - name: OneNote_SectionGroupCollection
-              uid: office.OneNote_SectionGroupCollection
-            - name: OneNote_Table
-              uid: office.OneNote_Table
-            - name: OneNote_TableCell
-              uid: office.OneNote_TableCell
-            - name: OneNote_TableCellCollection
-              uid: office.OneNote_TableCellCollection
-            - name: OneNote_TableRow
-              uid: office.OneNote_TableRow
-            - name: OneNote_TableRowCollection
-              uid: office.OneNote_TableRowCollection
-          - name: Word
-            items:
-            - name: Word_Body
-              uid: office.Word_Body
-            - name: Word_ContentControl
-              uid: office.Word_ContentControl
-            - name: Word_ContentControlCollection
-              uid: office.Word_ContentControlCollection
-            - name: Word_CustomProperty
-              uid: office.Word_CustomProperty
-            - name: Word_CustomPropertyCollection
-              uid: office.Word_CustomPropertyCollection
-            - name: Word_Document
-              uid: office.Word_Document
-            - name: Word_DocumentProperties
-              uid: office.Word_DocumentProperties
-            - name: Word_Font
-              uid: office.Word_Font
-            - name: Word_InlinePicture
-              uid: office.Word_InlinePicture
-            - name: Word_InlinePictureCollection
-              uid: office.Word_InlinePictureCollection
-            - name: Word_List
-              uid: office.Word_List
-            - name: Word_ListCollection
-              uid: office.Word_ListCollection
-            - name: Word_ListItem
-              uid: office.Word_ListItem
-            - name: Word_Paragraph
-              uid: office.Word_Paragraph
-            - name: Word_ParagraphCollection
-              uid: office.Word_ParagraphCollection
-            - name: Word_Range
-              uid: office.Word_Range
-            - name: Word_RangeCollection
-              uid: office.Word_RangeCollection
-            - name: Word_RequestContext
-              uid: office.Word_RequestContext
-            - name: Word_SearchOptions
-              uid: office.Word_SearchOptions
-            - name: Word_Section
-              uid: office.Word_Section
-            - name: Word_SectionCollection
-              uid: office.Word_SectionCollection
-            - name: Word_Table
-              uid: office.Word_Table
-            - name: Word_TableBorder
-              uid: office.Word_TableBorder
-            - name: Word_TableCell
-              uid: office.Word_TableCell
-            - name: Word_TableCellCollection
-              uid: office.Word_TableCellCollection
-            - name: Word_TableCollection
-              uid: office.Word_TableCollection
-            - name: Word_TableRow
-              uid: office.Word_TableRow
-            - name: Word_TableRowCollection
-              uid: office.Word_TableRowCollection
+          - name: Application
+            uid: office.Excel_Application
+          - name: Binding
+            uid: office.Excel_Binding
+          - name: BindingCollection
+            uid: office.Excel_BindingCollection
+          - name: BindingDataChangedEventArgs
+            uid: office.Excel_BindingDataChangedEventArgs
+          - name: BindingSelectionChangedEventArgs
+            uid: office.Excel_BindingSelectionChangedEventArgs
+          - name: CellValueConditionalFormat
+            uid: office.Excel_CellValueConditionalFormat
+          - name: Chart
+            uid: office.Excel_Chart
+          - name: ChartAreaFormat
+            uid: office.Excel_ChartAreaFormat
+          - name: ChartAxes
+            uid: office.Excel_ChartAxes
+          - name: ChartAxis
+            uid: office.Excel_ChartAxis
+          - name: ChartAxisFormat
+            uid: office.Excel_ChartAxisFormat
+          - name: ChartAxisTitle
+            uid: office.Excel_ChartAxisTitle
+          - name: ChartAxisTitleFormat
+            uid: office.Excel_ChartAxisTitleFormat
+          - name: ChartCollection
+            uid: office.Excel_ChartCollection
+          - name: ChartDataLabelFormat
+            uid: office.Excel_ChartDataLabelFormat
+          - name: ChartDataLabels
+            uid: office.Excel_ChartDataLabels
+          - name: ChartFill
+            uid: office.Excel_ChartFill
+          - name: ChartFont
+            uid: office.Excel_ChartFont
+          - name: ChartGridlines
+            uid: office.Excel_ChartGridlines
+          - name: ChartGridlinesFormat
+            uid: office.Excel_ChartGridlinesFormat
+          - name: ChartLegend
+            uid: office.Excel_ChartLegend
+          - name: ChartLegendFormat
+            uid: office.Excel_ChartLegendFormat
+          - name: ChartLineFormat
+            uid: office.Excel_ChartLineFormat
+          - name: ChartPoint
+            uid: office.Excel_ChartPoint
+          - name: ChartPointFormat
+            uid: office.Excel_ChartPointFormat
+          - name: ChartPointsCollection
+            uid: office.Excel_ChartPointsCollection
+          - name: ChartSeries
+            uid: office.Excel_ChartSeries
+          - name: ChartSeriesCollection
+            uid: office.Excel_ChartSeriesCollection
+          - name: ChartSeriesFormat
+            uid: office.Excel_ChartSeriesFormat
+          - name: ChartTitle
+            uid: office.Excel_ChartTitle
+          - name: ChartTitleFormat
+            uid: office.Excel_ChartTitleFormat
+          - name: ColorScaleConditionalFormat
+            uid: office.Excel_ColorScaleConditionalFormat
+          - name: ConditionalCellValueRule
+            uid: office.Excel_ConditionalCellValueRule
+          - name: ConditionalColorScaleCriteria
+            uid: office.Excel_ConditionalColorScaleCriteria
+          - name: ConditionalColorScaleCriterion
+            uid: office.Excel_ConditionalColorScaleCriterion
+          - name: ConditionalDataBarNegativeFormat
+            uid: office.Excel_ConditionalDataBarNegativeFormat
+          - name: ConditionalDataBarPositiveFormat
+            uid: office.Excel_ConditionalDataBarPositiveFormat
+          - name: ConditionalDataBarRule
+            uid: office.Excel_ConditionalDataBarRule
+          - name: ConditionalFormat
+            uid: office.Excel_ConditionalFormat
+          - name: ConditionalFormatCollection
+            uid: office.Excel_ConditionalFormatCollection
+          - name: ConditionalFormatRule
+            uid: office.Excel_ConditionalFormatRule
+          - name: ConditionalIconCriterion
+            uid: office.Excel_ConditionalIconCriterion
+          - name: ConditionalPresetCriteriaRule
+            uid: office.Excel_ConditionalPresetCriteriaRule
+          - name: ConditionalRangeBorder
+            uid: office.Excel_ConditionalRangeBorder
+          - name: ConditionalRangeBorderCollection
+            uid: office.Excel_ConditionalRangeBorderCollection
+          - name: ConditionalRangeFill
+            uid: office.Excel_ConditionalRangeFill
+          - name: ConditionalRangeFont
+            uid: office.Excel_ConditionalRangeFont
+          - name: ConditionalRangeFormat
+            uid: office.Excel_ConditionalRangeFormat
+          - name: ConditionalTextComparisonRule
+            uid: office.Excel_ConditionalTextComparisonRule
+          - name: ConditionalTopBottomRule
+            uid: office.Excel_ConditionalTopBottomRule
+          - name: CustomConditionalFormat
+            uid: office.Excel_CustomConditionalFormat
+          - name: CustomXmlPart
+            uid: office.Excel_CustomXmlPart
+          - name: CustomXmlPartCollection
+            uid: office.Excel_CustomXmlPartCollection
+          - name: CustomXmlPartScopedCollection
+            uid: office.Excel_CustomXmlPartScopedCollection
+          - name: DataBarConditionalFormat
+            uid: office.Excel_DataBarConditionalFormat
+          - name: Filter
+            uid: office.Excel_Filter
+          - name: FilterCriteria
+            uid: office.Excel_FilterCriteria
+          - name: FilterDatetime
+            uid: office.Excel_FilterDatetime
+          - name: FiveArrowsGraySet
+            uid: office.Excel_FiveArrowsGraySet
+          - name: FiveArrowsSet
+            uid: office.Excel_FiveArrowsSet
+          - name: FiveBoxesSet
+            uid: office.Excel_FiveBoxesSet
+          - name: FiveQuartersSet
+            uid: office.Excel_FiveQuartersSet
+          - name: FiveRatingSet
+            uid: office.Excel_FiveRatingSet
+          - name: FormatProtection
+            uid: office.Excel_FormatProtection
+          - name: FourArrowsGraySet
+            uid: office.Excel_FourArrowsGraySet
+          - name: FourArrowsSet
+            uid: office.Excel_FourArrowsSet
+          - name: FourRatingSet
+            uid: office.Excel_FourRatingSet
+          - name: FourRedToBlackSet
+            uid: office.Excel_FourRedToBlackSet
+          - name: FourTrafficLightsSet
+            uid: office.Excel_FourTrafficLightsSet
+          - name: FunctionResult
+            uid: office.Excel_FunctionResult
+          - name: Functions
+            uid: office.Excel_Functions
+          - name: Icon
+            uid: office.Excel_Icon
+          - name: IconCollections
+            uid: office.Excel_IconCollections
+          - name: IconSetConditionalFormat
+            uid: office.Excel_IconSetConditionalFormat
+          - name: NamedItem
+            uid: office.Excel_NamedItem
+          - name: NamedItemCollection
+            uid: office.Excel_NamedItemCollection
+          - name: PivotTable
+            uid: office.Excel_PivotTable
+          - name: PivotTableCollection
+            uid: office.Excel_PivotTableCollection
+          - name: PresetCriteriaConditionalFormat
+            uid: office.Excel_PresetCriteriaConditionalFormat
+          - name: Range
+            uid: office.Excel_Range
+          - name: RangeBorder
+            uid: office.Excel_RangeBorder
+          - name: RangeBorderCollection
+            uid: office.Excel_RangeBorderCollection
+          - name: RangeFill
+            uid: office.Excel_RangeFill
+          - name: RangeFont
+            uid: office.Excel_RangeFont
+          - name: RangeFormat
+            uid: office.Excel_RangeFormat
+          - name: RangeReference
+            uid: office.Excel_RangeReference
+          - name: RangeSort
+            uid: office.Excel_RangeSort
+          - name: RangeView
+            uid: office.Excel_RangeView
+          - name: RangeViewCollection
+            uid: office.Excel_RangeViewCollection
+          - name: RequestContext
+            uid: office.Excel_RequestContext
+          - name: SelectionChangedEventArgs
+            uid: office.Excel_SelectionChangedEventArgs
+          - name: Session
+            uid: office.Excel_Session
+          - name: Setting
+            uid: office.Excel_Setting
+          - name: SettingCollection
+            uid: office.Excel_SettingCollection
+          - name: SettingsChangedEventArgs
+            uid: office.Excel_SettingsChangedEventArgs
+          - name: SortField
+            uid: office.Excel_SortField
+          - name: Table
+            uid: office.Excel_Table
+          - name: TableCollection
+            uid: office.Excel_TableCollection
+          - name: TableColumn
+            uid: office.Excel_TableColumn
+          - name: TableColumnCollection
+            uid: office.Excel_TableColumnCollection
+          - name: TableRow
+            uid: office.Excel_TableRow
+          - name: TableRowCollection
+            uid: office.Excel_TableRowCollection
+          - name: TableSort
+            uid: office.Excel_TableSort
+          - name: TextConditionalFormat
+            uid: office.Excel_TextConditionalFormat
+          - name: ThreeArrowsGraySet
+            uid: office.Excel_ThreeArrowsGraySet
+          - name: ThreeArrowsSet
+            uid: office.Excel_ThreeArrowsSet
+          - name: ThreeFlagsSet
+            uid: office.Excel_ThreeFlagsSet
+          - name: ThreeSignsSet
+            uid: office.Excel_ThreeSignsSet
+          - name: ThreeStarsSet
+            uid: office.Excel_ThreeStarsSet
+          - name: ThreeSymbols2Set
+            uid: office.Excel_ThreeSymbols2Set
+          - name: ThreeSymbolsSet
+            uid: office.Excel_ThreeSymbolsSet
+          - name: ThreeTrafficLights1Set
+            uid: office.Excel_ThreeTrafficLights1Set
+          - name: ThreeTrafficLights2Set
+            uid: office.Excel_ThreeTrafficLights2Set
+          - name: ThreeTrianglesSet
+            uid: office.Excel_ThreeTrianglesSet
+          - name: TopBottomConditionalFormat
+            uid: office.Excel_TopBottomConditionalFormat
+          - name: Workbook
+            uid: office.Excel_Workbook
+          - name: Worksheet
+            uid: office.Excel_Worksheet
+          - name: WorksheetCollection
+            uid: office.Excel_WorksheetCollection
+          - name: WorksheetProtection
+            uid: office.Excel_WorksheetProtection
+          - name: WorksheetProtectionOptions
+            uid: office.Excel_WorksheetProtectionOptions
+      - name: Office
+        items:
+          - name: ActiveView
+            uid: office.Office_ActiveView
+          - name: Appointment
+            uid: office.Office_Appointment
+          - name: AppointmentCompose
+            uid: office.Office_AppointmentCompose
+          - name: AppointmentForm
+            uid: office.Office_AppointmentForm
+          - name: AppointmentRead
+            uid: office.Office_AppointmentRead
+          - name: AsyncContextOptions
+            uid: office.Office_AsyncContextOptions
+          - name: AsyncResult
+            uid: office.Office_AsyncResult
+          - name: AsyncResultStatus
+            uid: office.Office_AsyncResultStatus
+          - name: AttachmentDetails
+            uid: office.Office_AttachmentDetails
+          - name: Auth
+            uid: office.Office_Auth
+          - name: AuthOptions
+            uid: office.Office_AuthOptions
+          - name: Binding
+            uid: office.Office_Binding
+          - name: Bindings
+            uid: office.Office_Bindings
+          - name: BindingType
+            uid: office.Office_BindingType
+          - name: Body
+            uid: office.Office_Body
+          - name: CoercionType
+            uid: office.Office_CoercionType
+          - name: CoercionTypeOptions
+            uid: office.Office_CoercionTypeOptions
+          - name: Contact
+            uid: office.Office_Contact
+          - name: Context
+            uid: office.Office_Context
+          - name: CustomProperties
+            uid: office.Office_CustomProperties
+          - name: CustomXmlNode
+            uid: office.Office_CustomXmlNode
+          - name: CustomXmlPart
+            uid: office.Office_CustomXmlPart
+          - name: CustomXmlParts
+            uid: office.Office_CustomXmlParts
+          - name: CustomXmlPrefixMappings
+            uid: office.Office_CustomXmlPrefixMappings
+          - name: Diagnostics
+            uid: office.Office_Diagnostics
+          - name: DialogHandler
+            uid: office.Office_DialogHandler
+          - name: DialogOptions
+            uid: office.Office_DialogOptions
+          - name: Document
+            uid: office.Office_Document
+          - name: DocumentMode
+            uid: office.Office_DocumentMode
+          - name: DocumentSelectionChangedEventArgs
+            uid: office.Office_DocumentSelectionChangedEventArgs
+          - name: EmailAddressDetails
+            uid: office.Office_EmailAddressDetails
+          - name: EmailUser
+            uid: office.Office_EmailUser
+          - name: Entities
+            uid: office.Office_Entities
+          - name: Error
+            uid: office.Office_Error
+          - name: EventType
+            uid: office.Office_EventType
+          - name: File
+            uid: office.Office_File
+          - name: FileProperties
+            uid: office.Office_FileProperties
+          - name: FileType
+            uid: office.Office_FileType
+          - name: FilterType
+            uid: office.Office_FilterType
+          - name: GoToType
+            uid: office.Office_GoToType
+          - name: HostType
+            uid: office.Office_HostType
+          - name: Index
+            uid: office.Office_Index
+          - name: InitializationReason
+            uid: office.Office_InitializationReason
+          - name: Item
+            uid: office.Office_Item
+          - name: ItemCompose
+            uid: office.Office_ItemCompose
+          - name: ItemRead
+            uid: office.Office_ItemRead
+          - name: LocalClientTime
+            uid: office.Office_LocalClientTime
+          - name: Location
+            uid: office.Office_Location
+          - name: Mailbox
+            uid: office.Office_Mailbox
+          - name: MatrixBinding
+            uid: office.Office_MatrixBinding
+          - name: MeetingSuggestion
+            uid: office.Office_MeetingSuggestion
+          - name: Message
+            uid: office.Office_Message
+          - name: MessageCompose
+            uid: office.Office_MessageCompose
+          - name: MessageRead
+            uid: office.Office_MessageRead
+          - name: NotificationMessageDetails
+            uid: office.Office_NotificationMessageDetails
+          - name: NotificationMessages
+            uid: office.Office_NotificationMessages
+          - name: OfficeTheme
+            uid: office.Office_OfficeTheme
+          - name: PhoneNumber
+            uid: office.Office_PhoneNumber
+          - name: PlatformType
+            uid: office.Office_PlatformType
+          - name: ProjectProjectFields
+            uid: office.Office_ProjectProjectFields
+          - name: ProjectResourceFields
+            uid: office.Office_ProjectResourceFields
+          - name: ProjectTaskFields
+            uid: office.Office_ProjectTaskFields
+          - name: ProjectViewTypes
+            uid: office.Office_ProjectViewTypes
+          - name: Recipients
+            uid: office.Office_Recipients
+          - name: ReplyFormAttachment
+            uid: office.Office_ReplyFormAttachment
+          - name: ReplyFormData
+            uid: office.Office_ReplyFormData
+          - name: RoamingSettings
+            uid: office.Office_RoamingSettings
+          - name: SelectionMode
+            uid: office.Office_SelectionMode
+          - name: Settings
+            uid: office.Office_Settings
+          - name: Slice
+            uid: office.Office_Slice
+          - name: SourceProperty
+            uid: office.Office_SourceProperty
+          - name: Subject
+            uid: office.Office_Subject
+          - name: Table
+            uid: office.Office_Table
+          - name: TableBinding
+            uid: office.Office_TableBinding
+          - name: TableData
+            uid: office.Office_TableData
+          - name: TaskSuggestion
+            uid: office.Office_TaskSuggestion
+          - name: TextBinding
+            uid: office.Office_TextBinding
+          - name: Time
+            uid: office.Office_Time
+          - name: UI
+            uid: office.Office_UI
+          - name: UserProfile
+            uid: office.Office_UserProfile
+          - name: ValueFormat
+            uid: office.Office_ValueFormat
+      - name: Office.MailboxEnums
+        items:
+          - name: AttachmentType
+            uid: office.Office_MailboxEnums_AttachmentType
+          - name: EntityType
+            uid: office.Office_MailboxEnums_EntityType
+          - name: ItemNotificationMessageType
+            uid: office.Office_MailboxEnums_ItemNotificationMessageType
+          - name: ItemType
+            uid: office.Office_MailboxEnums_ItemType
+          - name: RecipientType
+            uid: office.Office_MailboxEnums_RecipientType
+          - name: ResponseType
+            uid: office.Office_MailboxEnums_ResponseType
+          - name: RestVersion
+            uid: office.Office_MailboxEnums_RestVersion
+      - name: OfficeCore
+        items:
+          - name: ABType
+            uid: office.OfficeCore_ABType
+          - name: FlightingService
+            uid: office.OfficeCore_FlightingService
+          - name: RequestContext
+            uid: office.OfficeCore_RequestContext
+          - name: ScopedValue
+            uid: office.OfficeCore_ScopedValue
+      - name: OfficeExtension
+        items:
+          - name: ClientObject
+            uid: office.OfficeExtension_ClientObject
+          - name: ClientRequestContext
+            uid: office.OfficeExtension_ClientRequestContext
+          - name: ClientResult
+            uid: office.OfficeExtension_ClientResult
+          - name: DebugInfo
+            uid: office.OfficeExtension_DebugInfo
+          - name: Error
+            uid: office.OfficeExtension_Error
+          - name: ErrorCodes
+            uid: office.OfficeExtension_ErrorCodes
+          - name: EventHandlerResult
+            uid: office.OfficeExtension_EventHandlerResult
+          - name: EventHandlers
+            uid: office.OfficeExtension_EventHandlers
+          - name: EventInfo
+            uid: office.OfficeExtension_EventInfo
+          - name: IPromise
+            uid: office.OfficeExtension_IPromise
+          - name: LoadOption
+            uid: office.OfficeExtension_LoadOption
+          - name: Promise
+            uid: office.OfficeExtension_Promise
+          - name: RequestUrlAndHeaderInfo
+            uid: office.OfficeExtension_RequestUrlAndHeaderInfo
+          - name: TrackedObjects
+            uid: office.OfficeExtension_TrackedObjects
+      - name: OneNote
+        items:
+          - name: Application
+            uid: office.OneNote_Application
+          - name: FloatingInk
+            uid: office.OneNote_FloatingInk
+          - name: Image
+            uid: office.OneNote_Image
+          - name: ImageOcrData
+            uid: office.OneNote_ImageOcrData
+          - name: InkAnalysis
+            uid: office.OneNote_InkAnalysis
+          - name: InkAnalysisLine
+            uid: office.OneNote_InkAnalysisLine
+          - name: InkAnalysisLineCollection
+            uid: office.OneNote_InkAnalysisLineCollection
+          - name: InkAnalysisParagraph
+            uid: office.OneNote_InkAnalysisParagraph
+          - name: InkAnalysisParagraphCollection
+            uid: office.OneNote_InkAnalysisParagraphCollection
+          - name: InkAnalysisWord
+            uid: office.OneNote_InkAnalysisWord
+          - name: InkAnalysisWordCollection
+            uid: office.OneNote_InkAnalysisWordCollection
+          - name: InkStroke
+            uid: office.OneNote_InkStroke
+          - name: InkStrokeCollection
+            uid: office.OneNote_InkStrokeCollection
+          - name: InkStrokePointer
+            uid: office.OneNote_InkStrokePointer
+          - name: InkWord
+            uid: office.OneNote_InkWord
+          - name: InkWordCollection
+            uid: office.OneNote_InkWordCollection
+          - name: Notebook
+            uid: office.OneNote_Notebook
+          - name: NotebookCollection
+            uid: office.OneNote_NotebookCollection
+          - name: Outline
+            uid: office.OneNote_Outline
+          - name: Page
+            uid: office.OneNote_Page
+          - name: PageCollection
+            uid: office.OneNote_PageCollection
+          - name: PageContent
+            uid: office.OneNote_PageContent
+          - name: PageContentCollection
+            uid: office.OneNote_PageContentCollection
+          - name: Paragraph
+            uid: office.OneNote_Paragraph
+          - name: ParagraphCollection
+            uid: office.OneNote_ParagraphCollection
+          - name: RequestContext
+            uid: office.OneNote_RequestContext
+          - name: RichText
+            uid: office.OneNote_RichText
+          - name: Section
+            uid: office.OneNote_Section
+          - name: SectionCollection
+            uid: office.OneNote_SectionCollection
+          - name: SectionGroup
+            uid: office.OneNote_SectionGroup
+          - name: SectionGroupCollection
+            uid: office.OneNote_SectionGroupCollection
+          - name: Table
+            uid: office.OneNote_Table
+          - name: TableCell
+            uid: office.OneNote_TableCell
+          - name: TableCellCollection
+            uid: office.OneNote_TableCellCollection
+          - name: TableRow
+            uid: office.OneNote_TableRow
+          - name: TableRowCollection
+            uid: office.OneNote_TableRowCollection
+      - name: Word
+        items:
+          - name: Body
+            uid: office.Word_Body
+          - name: ContentControl
+            uid: office.Word_ContentControl
+          - name: ContentControlCollection
+            uid: office.Word_ContentControlCollection
+          - name: CustomProperty
+            uid: office.Word_CustomProperty
+          - name: CustomPropertyCollection
+            uid: office.Word_CustomPropertyCollection
+          - name: Document
+            uid: office.Word_Document
+          - name: DocumentProperties
+            uid: office.Word_DocumentProperties
+          - name: Font
+            uid: office.Word_Font
+          - name: InlinePicture
+            uid: office.Word_InlinePicture
+          - name: InlinePictureCollection
+            uid: office.Word_InlinePictureCollection
+          - name: List
+            uid: office.Word_List
+          - name: ListCollection
+            uid: office.Word_ListCollection
+          - name: ListItem
+            uid: office.Word_ListItem
+          - name: Paragraph
+            uid: office.Word_Paragraph
+          - name: ParagraphCollection
+            uid: office.Word_ParagraphCollection
+          - name: Range
+            uid: office.Word_Range
+          - name: RangeCollection
+            uid: office.Word_RangeCollection
+          - name: RequestContext
+            uid: office.Word_RequestContext
+          - name: SearchOptions
+            uid: office.Word_SearchOptions
+          - name: Section
+            uid: office.Word_Section
+          - name: SectionCollection
+            uid: office.Word_SectionCollection
+          - name: Table
+            uid: office.Word_Table
+          - name: TableBorder
+            uid: office.Word_TableBorder
+          - name: TableCell
+            uid: office.Word_TableCell
+          - name: TableCellCollection
+            uid: office.Word_TableCellCollection
+          - name: TableCollection
+            uid: office.Word_TableCollection
+          - name: TableRow
+            uid: office.Word_TableRow
+          - name: TableRowCollection
+            uid: office.Word_TableRowCollection

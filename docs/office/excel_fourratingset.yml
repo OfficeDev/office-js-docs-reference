@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Excel_FourRatingSet
-    name: Excel_FourRatingSet
+    name: Excel.FourRatingSet
     fullName: office.Excel_FourRatingSet
     langs:
       - typeScript

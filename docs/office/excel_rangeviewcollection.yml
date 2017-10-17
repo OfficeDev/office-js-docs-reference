@@ -5,7 +5,7 @@ items:
       Represents a collection of RangeView objects. 
 
        \[Api set: ExcelApi 1.3\]
-    name: Excel_RangeViewCollection
+    name: Excel.RangeViewCollection
     fullName: office.Excel_RangeViewCollection
     langs:
       - typeScript

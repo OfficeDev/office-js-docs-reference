@@ -5,7 +5,7 @@ items:
       Represents a chart object in a workbook. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_Chart
+    name: Excel.Chart
     fullName: office.Excel_Chart
     langs:
       - typeScript

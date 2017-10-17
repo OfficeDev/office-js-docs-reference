@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Excel_FourArrowsGraySet
-    name: Excel_FourArrowsGraySet
+    name: Excel.FourArrowsGraySet
     fullName: office.Excel_FourArrowsGraySet
     langs:
       - typeScript

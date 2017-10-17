@@ -5,7 +5,7 @@ items:
       Represents a collection of InkAnalysisParagraph objects. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_InkAnalysisParagraphCollection
+    name: OneNote.InkAnalysisParagraphCollection
     fullName: office.OneNote_InkAnalysisParagraphCollection
     langs:
       - typeScript

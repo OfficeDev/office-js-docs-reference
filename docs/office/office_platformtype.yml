@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_PlatformType
-    name: Office_PlatformType
+    name: Office.PlatformType
     fullName: office.Office_PlatformType
     langs:
       - typeScript

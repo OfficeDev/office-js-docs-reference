@@ -5,7 +5,7 @@ items:
       Manages the filtering of a table's column. 
 
        \[Api set: ExcelApi 1.2\]
-    name: Excel_Filter
+    name: Excel.Filter
     fullName: office.Excel_Filter
     langs:
       - typeScript

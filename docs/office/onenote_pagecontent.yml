@@ -6,7 +6,7 @@ items:
       can be assigned an XY position. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_PageContent
+    name: OneNote.PageContent
     fullName: office.OneNote_PageContent
     langs:
       - typeScript

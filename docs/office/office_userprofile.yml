@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_UserProfile
-    name: Office_UserProfile
+    name: Office.UserProfile
     fullName: office.Office_UserProfile
     langs:
       - typeScript

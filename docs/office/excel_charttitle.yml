@@ -5,7 +5,7 @@ items:
       Represents a chart title object of a chart. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_ChartTitle
+    name: Excel.ChartTitle
     fullName: office.Excel_ChartTitle
     langs:
       - typeScript

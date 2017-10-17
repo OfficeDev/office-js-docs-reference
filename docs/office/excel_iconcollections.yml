@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Excel_IconCollections
-    name: Excel_IconCollections
+    name: Excel.IconCollections
     fullName: office.Excel_IconCollections
     langs:
       - typeScript

@@ -5,7 +5,7 @@ items:
       Represents an inline picture. 
 
        \[Api set: WordApi 1.1\]
-    name: Word_InlinePicture
+    name: Word.InlinePicture
     fullName: office.Word_InlinePicture
     langs:
       - typeScript

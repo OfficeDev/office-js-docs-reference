@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_Context
-    name: Office_Context
+    name: Office.Context
     fullName: office.Office_Context
     langs:
       - typeScript

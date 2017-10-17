@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.OfficeCore_RequestContext
-    name: OfficeCore_RequestContext
+    name: OfficeCore.RequestContext
     fullName: office.OfficeCore_RequestContext
     langs:
       - typeScript

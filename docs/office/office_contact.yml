@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_Contact
-    name: Office_Contact
+    name: Office.Contact
     fullName: office.Office_Contact
     langs:
       - typeScript

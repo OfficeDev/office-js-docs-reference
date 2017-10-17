@@ -5,7 +5,7 @@ items:
       Represents a collection of pages. 
 
        \[Api set: OneNoteApi 1.1\]
-    name: OneNote_PageCollection
+    name: OneNote.PageCollection
     fullName: office.OneNote_PageCollection
     langs:
       - typeScript

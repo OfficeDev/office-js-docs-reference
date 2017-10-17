@@ -5,7 +5,7 @@ items:
       Represents a collection of all the data labels on a chart point. 
 
        \[Api set: ExcelApi 1.1\]
-    name: Excel_ChartDataLabels
+    name: Excel.ChartDataLabels
     fullName: office.Excel_ChartDataLabels
     langs:
       - typeScript

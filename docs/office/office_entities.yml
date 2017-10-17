@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_Entities
-    name: Office_Entities
+    name: Office.Entities
     fullName: office.Office_Entities
     langs:
       - typeScript

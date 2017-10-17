@@ -5,7 +5,7 @@ items:
       Represents a cell icon. 
 
        \[Api set: ExcelApi 1.2\]
-    name: Excel_Icon
+    name: Excel.Icon
     fullName: office.Excel_Icon
     langs:
       - typeScript

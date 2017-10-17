@@ -6,7 +6,7 @@ items:
       blank/nonblank/error/noerror. 
 
        \[Api set: ExcelApi 1.6 (PREVIEW)\]
-    name: Excel_PresetCriteriaConditionalFormat
+    name: Excel.PresetCriteriaConditionalFormat
     fullName: office.Excel_PresetCriteriaConditionalFormat
     langs:
       - typeScript

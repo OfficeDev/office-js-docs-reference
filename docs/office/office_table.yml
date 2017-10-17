@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_Table
-    name: Office_Table
+    name: Office.Table
     fullName: office.Office_Table
     langs:
       - typeScript

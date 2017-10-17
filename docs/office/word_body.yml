@@ -5,7 +5,7 @@ items:
       Represents the body of a document or a section. 
 
        \[Api set: WordApi 1.1\]
-    name: Word_Body
+    name: Word.Body
     fullName: office.Word_Body
     langs:
       - typeScript

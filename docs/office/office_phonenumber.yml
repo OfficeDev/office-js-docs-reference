@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office_PhoneNumber
-    name: Office_PhoneNumber
+    name: Office.PhoneNumber
     fullName: office.Office_PhoneNumber
     langs:
       - typeScript

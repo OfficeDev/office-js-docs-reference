@@ -5,7 +5,7 @@ items:
       Represents the options in sheet protection. 
 
        \[Api set: ExcelApi 1.2\]
-    name: Excel_WorksheetProtectionOptions
+    name: Excel.WorksheetProtectionOptions
     fullName: office.Excel_WorksheetProtectionOptions
     langs:
       - typeScript
