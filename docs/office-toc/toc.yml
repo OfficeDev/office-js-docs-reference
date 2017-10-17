@@ -1,9 +1,7 @@
 items:
-  - name: SharePoint Framework
+  - name: Office Add-ins
     items:
       - name: Overview
-        href: ./index.md
-      - name: office
         uid: office
       - name: Excel
         items:
