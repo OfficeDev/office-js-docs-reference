@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the filtering criteria applied to a column. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: Excel.FilterCriteria
     fullName: excel.Excel.FilterCriteria
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       The HTML color string used to filter cells. Used with "cellColor" and "fontColor" filtering. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: color
     fullName: excel.Excel.FilterCriteria.color
     langs:
@@ -42,7 +42,7 @@ items:
 
        Used as a number in the case of top/bottom items/percents. E.g. "5" for the top 5 items if filterOn is set to "topItems" 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: criterion1
     fullName: excel.Excel.FilterCriteria.criterion1
     langs:
@@ -57,7 +57,7 @@ items:
     summary: |-
       The second criterion used to filter data. Only used as an operator in the case of "custom" filtering. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: criterion2
     fullName: excel.Excel.FilterCriteria.criterion2
     langs:
@@ -73,7 +73,7 @@ items:
       The dynamic criteria from the Excel.DynamicFilterCriteria set to apply on this column. Used with "dynamic"
       filtering. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: dynamicCriteria
     fullName: excel.Excel.FilterCriteria.dynamicCriteria
     langs:
@@ -88,7 +88,7 @@ items:
     summary: |-
       The property used by the filter to determine whether the values should stay visible. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: filterOn
     fullName: excel.Excel.FilterCriteria.filterOn
     langs:
@@ -103,7 +103,7 @@ items:
     summary: |-
       The icon used to filter cells. Used with "icon" filtering. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: icon
     fullName: excel.Excel.FilterCriteria.icon
     langs:
@@ -118,7 +118,7 @@ items:
     summary: |-
       The operator used to combine criterion 1 and 2 when using "custom" filtering. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: operator
     fullName: excel.Excel.FilterCriteria.operator
     langs:
@@ -133,7 +133,7 @@ items:
     summary: |-
       The set of values to be used as part of "values" filtering. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: values
     fullName: excel.Excel.FilterCriteria.values
     langs:

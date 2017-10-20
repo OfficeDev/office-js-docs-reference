@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a string reference of the form SheetName!A1:B5, or a global or local named range. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: Excel.RangeReference
     fullName: excel.Excel.RangeReference
     langs:

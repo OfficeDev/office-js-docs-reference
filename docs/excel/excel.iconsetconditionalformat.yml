@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents an IconSet criteria for conditional formatting. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.IconSetConditionalFormat
     fullName: excel.Excel.IconSetConditionalFormat
     langs:
@@ -27,7 +27,7 @@ items:
       the first criterion only the custom icon can be modified, while type, formula and operator will be ignored when
       set. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: criteria
     fullName: excel.Excel.IconSetConditionalFormat.criteria
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: reverseIconOrder
     fullName: excel.Excel.IconSetConditionalFormat.reverseIconOrder
     langs:
@@ -99,7 +99,7 @@ items:
     summary: |-
       If true, hides the values and only shows icons. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: showIconOnly
     fullName: excel.Excel.IconSetConditionalFormat.showIconOnly
     langs:
@@ -114,7 +114,7 @@ items:
     summary: |-
       If set, displays the IconSet option for the conditional format. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: style
     fullName: excel.Excel.IconSetConditionalFormat.style
     langs:

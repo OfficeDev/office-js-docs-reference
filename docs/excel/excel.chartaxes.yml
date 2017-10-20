@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the chart axes. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartAxes
     fullName: excel.Excel.ChartAxes
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Represents the category axis in a chart. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: categoryAxis
     fullName: excel.Excel.ChartAxes.categoryAxis
     langs:
@@ -59,7 +59,7 @@ items:
     summary: |-
       Represents the series axis of a 3-dimensional chart. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: seriesAxis
     fullName: excel.Excel.ChartAxes.seriesAxis
     langs:
@@ -108,7 +108,7 @@ items:
     summary: |-
       Represents the value axis in an axis. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: valueAxis
     fullName: excel.Excel.ChartAxes.valueAxis
     langs:

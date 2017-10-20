@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the background of a conditional range object. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.ConditionalRangeFill
     fullName: excel.Excel.ConditionalRangeFill
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Resets the fill. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: clear()
     fullName: excel.Excel.ConditionalRangeFill.clear
     langs:
@@ -40,7 +40,7 @@ items:
       HTML color code representing the color of the fill, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color
       (e.g. "orange"). 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: color
     fullName: excel.Excel.ConditionalRangeFill.color
     langs:

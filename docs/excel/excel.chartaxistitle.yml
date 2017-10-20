@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the title of a chart axis. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartAxisTitle
     fullName: excel.Excel.ChartAxisTitle
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Represents the formatting of chart axis title. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: format
     fullName: excel.Excel.ChartAxisTitle.format
     langs:
@@ -81,7 +81,7 @@ items:
     summary: |-
       Represents the axis title. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: text
     fullName: excel.Excel.ChartAxisTitle.text
     langs:
@@ -108,7 +108,7 @@ items:
     summary: |-
       A boolean that specifies the visibility of an axis title. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: visible
     fullName: excel.Excel.ChartAxisTitle.visible
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a Color Scale Criterion which contains a type, value and a color. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.ConditionalColorScaleCriterion
     fullName: excel.Excel.ConditionalColorScaleCriterion
     langs:
@@ -19,7 +19,7 @@ items:
     summary: |-
       HTML color code representation of the color scale color. E.g. \#FF0000 represents Red. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: color
     fullName: excel.Excel.ConditionalColorScaleCriterion.color
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       A number, a formula, or null (if Type is LowestValue). 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: formula
     fullName: excel.Excel.ConditionalColorScaleCriterion.formula
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       What the icon conditional formula should be based on. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: type
     fullName: excel.Excel.ConditionalColorScaleCriterion.type
     langs:

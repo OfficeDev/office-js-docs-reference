@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the border objects that make up range border. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.ConditionalRangeBorderCollection
     fullName: excel.Excel.ConditionalRangeBorderCollection
     langs:
@@ -28,7 +28,7 @@ items:
     summary: |-
       Gets the top border 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: bottom
     fullName: excel.Excel.ConditionalRangeBorderCollection.bottom
     langs:
@@ -43,7 +43,7 @@ items:
     summary: |-
       Number of border objects in the collection. Read-only. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: count
     fullName: excel.Excel.ConditionalRangeBorderCollection.count
     langs:
@@ -58,7 +58,7 @@ items:
     summary: |-
       Gets a border object using its name 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: getItem(index)
     fullName: excel.Excel.ConditionalRangeBorderCollection.getItem
     langs:
@@ -79,7 +79,7 @@ items:
     summary: |-
       Gets a border object using its index 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: getItemAt(index)
     fullName: excel.Excel.ConditionalRangeBorderCollection.getItemAt
     langs:
@@ -112,7 +112,7 @@ items:
     summary: |-
       Gets the top border 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: left
     fullName: excel.Excel.ConditionalRangeBorderCollection.left
     langs:
@@ -147,7 +147,7 @@ items:
     summary: |-
       Gets the top border 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: right
     fullName: excel.Excel.ConditionalRangeBorderCollection.right
     langs:
@@ -174,7 +174,7 @@ items:
     summary: |-
       Gets the top border 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: top
     fullName: excel.Excel.ConditionalRangeBorderCollection.top
     langs:

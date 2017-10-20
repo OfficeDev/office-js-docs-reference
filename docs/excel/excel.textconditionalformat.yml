@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a specific text conditional format. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.TextConditionalFormat
     fullName: excel.Excel.TextConditionalFormat
     langs:
@@ -24,7 +24,7 @@ items:
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
       Read-only. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: format
     fullName: excel.Excel.TextConditionalFormat.format
     langs:
@@ -59,7 +59,7 @@ items:
     summary: |-
       The rule of the conditional format. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: rule
     fullName: excel.Excel.TextConditionalFormat.rule
     langs:

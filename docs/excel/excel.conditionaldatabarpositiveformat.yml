@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a conditional format DataBar Format for the positive side of the data bar. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.ConditionalDataBarPositiveFormat
     fullName: excel.Excel.ConditionalDataBarPositiveFormat
     langs:
@@ -25,7 +25,7 @@ items:
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange"). "" (empty string) if no border is present or set. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: borderColor
     fullName: excel.Excel.ConditionalDataBarPositiveFormat.borderColor
     langs:
@@ -41,7 +41,7 @@ items:
       HTML color code representing the fill color, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color (e.g.
       "orange"). 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: fillColor
     fullName: excel.Excel.ConditionalDataBarPositiveFormat.fillColor
     langs:
@@ -56,7 +56,7 @@ items:
     summary: |-
       Boolean representation of whether or not the DataBar has a gradient. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: gradientFill
     fullName: excel.Excel.ConditionalDataBarPositiveFormat.gradientFill
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       A format object encapsulating the range's font, fill, borders, alignment, and other properties. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.RangeFormat
     fullName: excel.Excel.RangeFormat
     langs:
@@ -33,7 +33,7 @@ items:
       Changes the width of the columns of the current range to achieve the best fit, based on the current data in the
       columns. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: autofitColumns()
     fullName: excel.Excel.RangeFormat.autofitColumns
     langs:
@@ -50,7 +50,7 @@ items:
       Changes the height of the rows of the current range to achieve the best fit, based on the current data in the
       columns. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: autofitRows()
     fullName: excel.Excel.RangeFormat.autofitRows
     langs:
@@ -66,7 +66,7 @@ items:
     summary: |-
       Collection of border objects that apply to the overall range. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: borders
     fullName: excel.Excel.RangeFormat.borders
     langs:
@@ -82,7 +82,7 @@ items:
       Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be
       returned. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: columnWidth
     fullName: excel.Excel.RangeFormat.columnWidth
     langs:
@@ -97,7 +97,7 @@ items:
     summary: |-
       Returns the fill object defined on the overall range. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: fill
     fullName: excel.Excel.RangeFormat.fill
     langs:
@@ -112,7 +112,7 @@ items:
     summary: |-
       Returns the font object defined on the overall range. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: font
     fullName: excel.Excel.RangeFormat.font
     langs:
@@ -127,7 +127,7 @@ items:
     summary: |-
       Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: horizontalAlignment
     fullName: excel.Excel.RangeFormat.horizontalAlignment
     langs:
@@ -162,7 +162,7 @@ items:
     summary: |-
       Returns the format protection object for a range. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: protection
     fullName: excel.Excel.RangeFormat.protection
     langs:
@@ -177,7 +177,7 @@ items:
     summary: |-
       Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: rowHeight
     fullName: excel.Excel.RangeFormat.rowHeight
     langs:
@@ -226,7 +226,7 @@ items:
     summary: |-
       Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: verticalAlignment
     fullName: excel.Excel.RangeFormat.verticalAlignment
     langs:
@@ -242,7 +242,7 @@ items:
       Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
       wrap setting 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: wrapText
     fullName: excel.Excel.RangeFormat.wrapText
     langs:

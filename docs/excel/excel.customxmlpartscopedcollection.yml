@@ -5,7 +5,7 @@ items:
       A scoped collection of custom XML parts. A scoped collection is the result of some operation, e.g. filtering by
       namespace. A scoped collection cannot be scoped any further. 
 
-       \[Api set: ExcelApi 1.5\]
+       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: Excel.CustomXmlPartScopedCollection
     fullName: excel.Excel.CustomXmlPartScopedCollection
     langs:
@@ -27,7 +27,7 @@ items:
     summary: |-
       Gets the number of CustomXML parts in this collection. 
 
-       \[Api set: ExcelApi 1.5\]
+       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getCount()
     fullName: excel.Excel.CustomXmlPartScopedCollection.getCount
     langs:
@@ -43,7 +43,7 @@ items:
     summary: |-
       Gets a custom XML part based on its ID. 
 
-       \[Api set: ExcelApi 1.5\]
+       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getItem(id)
     fullName: excel.Excel.CustomXmlPartScopedCollection.getItem
     langs:
@@ -65,7 +65,7 @@ items:
       Gets a custom XML part based on its ID. If the CustomXmlPart does not exist, the return object's isNull property
       will be true. 
 
-       \[Api set: ExcelApi 1.5\]
+       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getItemOrNullObject(id)
     fullName: excel.Excel.CustomXmlPartScopedCollection.getItemOrNullObject
     langs:
@@ -86,7 +86,7 @@ items:
     summary: |-
       If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error. 
 
-       \[Api set: ExcelApi 1.5\]
+       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getOnlyItem()
     fullName: excel.Excel.CustomXmlPartScopedCollection.getOnlyItem
     langs:
@@ -102,7 +102,7 @@ items:
     summary: |-
       If the collection contains exactly one item, this method returns it. Otherwise, this method returns Null. 
 
-       \[Api set: ExcelApi 1.5\]
+       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getOnlyItemOrNullObject()
     fullName: excel.Excel.CustomXmlPartScopedCollection.getOnlyItemOrNullObject
     langs:

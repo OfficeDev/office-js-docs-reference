@@ -4,7 +4,7 @@ items:
     summary: |-
       A collection of all the chart points within a series inside a chart. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartPointsCollection
     fullName: excel.Excel.ChartPointsCollection
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Returns the number of chart points in the series. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: count
     fullName: excel.Excel.ChartPointsCollection.count
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Returns the number of chart points in the series. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getCount()
     fullName: excel.Excel.ChartPointsCollection.getCount
     langs:
@@ -55,7 +55,7 @@ items:
     summary: |-
       Retrieve a point based on its position within the series. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getItemAt(index)
     fullName: excel.Excel.ChartPointsCollection.getItemAt
     langs:

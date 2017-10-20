@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of all the data labels on a chart point. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartDataLabels
     fullName: excel.Excel.ChartDataLabels
     langs:
@@ -30,7 +30,7 @@ items:
     summary: |-
       Represents the format of chart data labels, which includes fill and font formatting. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: format
     fullName: excel.Excel.ChartDataLabels.format
     langs:
@@ -66,7 +66,7 @@ items:
       DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
       details. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: position
     fullName: excel.Excel.ChartDataLabels.position
     langs:
@@ -81,7 +81,7 @@ items:
     summary: |-
       String representing the separator used for the data labels on a chart. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: separator
     fullName: excel.Excel.ChartDataLabels.separator
     langs:
@@ -118,7 +118,7 @@ items:
     summary: |-
       Boolean value representing if the data label bubble size is visible or not. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: showBubbleSize
     fullName: excel.Excel.ChartDataLabels.showBubbleSize
     langs:
@@ -133,7 +133,7 @@ items:
     summary: |-
       Boolean value representing if the data label category name is visible or not. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: showCategoryName
     fullName: excel.Excel.ChartDataLabels.showCategoryName
     langs:
@@ -148,7 +148,7 @@ items:
     summary: |-
       Boolean value representing if the data label legend key is visible or not. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: showLegendKey
     fullName: excel.Excel.ChartDataLabels.showLegendKey
     langs:
@@ -163,7 +163,7 @@ items:
     summary: |-
       Boolean value representing if the data label percentage is visible or not. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: showPercentage
     fullName: excel.Excel.ChartDataLabels.showPercentage
     langs:
@@ -178,7 +178,7 @@ items:
     summary: |-
       Boolean value representing if the data label series name is visible or not. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: showSeriesName
     fullName: excel.Excel.ChartDataLabels.showSeriesName
     langs:
@@ -193,7 +193,7 @@ items:
     summary: |-
       Boolean value representing if the data label value is visible or not. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: showValue
     fullName: excel.Excel.ChartDataLabels.showValue
     langs:

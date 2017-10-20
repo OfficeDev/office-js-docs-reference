@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a single axis in a chart. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartAxis
     fullName: excel.Excel.ChartAxis
     langs:
@@ -29,7 +29,7 @@ items:
     summary: |-
       Represents the formatting of a chart object, which includes line and font formatting. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: format
     fullName: excel.Excel.ChartAxis.format
     langs:
@@ -64,7 +64,7 @@ items:
     summary: |-
       Returns a gridlines object that represents the major gridlines for the specified axis. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: majorGridlines
     fullName: excel.Excel.ChartAxis.majorGridlines
     langs:
@@ -80,7 +80,7 @@ items:
       Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
       returned value is always a number. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: majorUnit
     fullName: excel.Excel.ChartAxis.majorUnit
     langs:
@@ -96,7 +96,7 @@ items:
       Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
       axis values). The returned value is always a number. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: maximum
     fullName: excel.Excel.ChartAxis.maximum
     langs:
@@ -112,7 +112,7 @@ items:
       Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
       axis values). The returned value is always a number. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: minimum
     fullName: excel.Excel.ChartAxis.minimum
     langs:
@@ -127,7 +127,7 @@ items:
     summary: |-
       Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: minorGridlines
     fullName: excel.Excel.ChartAxis.minorGridlines
     langs:
@@ -143,7 +143,7 @@ items:
       Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for
       automatic axis values). The returned value is always a number. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: minorUnit
     fullName: excel.Excel.ChartAxis.minorUnit
     langs:
@@ -180,7 +180,7 @@ items:
     summary: |-
       Represents the axis title. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: title
     fullName: excel.Excel.ChartAxis.title
     langs:

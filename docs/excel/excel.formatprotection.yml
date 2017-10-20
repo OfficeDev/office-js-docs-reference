@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the format protection of a range object. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: Excel.FormatProtection
     fullName: excel.Excel.FormatProtection
     langs:
@@ -24,7 +24,7 @@ items:
       Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range
       doesn't have uniform formula hidden setting. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: formulaHidden
     fullName: excel.Excel.FormatProtection.formulaHidden
     langs:
@@ -60,7 +60,7 @@ items:
       Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have
       uniform lock setting. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: locked
     fullName: excel.Excel.FormatProtection.locked
     langs:

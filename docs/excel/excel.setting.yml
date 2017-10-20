@@ -4,7 +4,7 @@ items:
     summary: |-
       Setting represents a key-value pair of a setting persisted to the document. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: Excel.Setting
     fullName: excel.Excel.Setting
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Deletes the setting. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: delete()
     fullName: excel.Excel.Setting.delete
     langs:
@@ -40,7 +40,7 @@ items:
     summary: |-
       Returns the key that represents the id of the Setting. Read-only. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: key
     fullName: excel.Excel.Setting.key
     langs:
@@ -109,7 +109,7 @@ items:
     summary: |-
       Represents the value stored for this setting. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: value
     fullName: excel.Excel.Setting.value
     langs:

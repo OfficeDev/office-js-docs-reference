@@ -4,7 +4,7 @@ items:
     summary: |-
       Enapsulates the formatting options for line elements. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartLineFormat
     fullName: excel.Excel.ChartLineFormat
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Clear the line format of a chart element. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: clear()
     fullName: excel.Excel.ChartLineFormat.clear
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       HTML color code representing the color of lines in the chart. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: color
     fullName: excel.Excel.ChartLineFormat.color
     langs:

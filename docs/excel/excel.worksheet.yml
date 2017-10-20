@@ -4,7 +4,7 @@ items:
     summary: |-
       An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.Worksheet
     fullName: excel.Excel.Worksheet
     langs:
@@ -41,7 +41,7 @@ items:
     summary: |-
       Activate the worksheet in the Excel UI. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: activate()
     fullName: excel.Excel.Worksheet.activate
     langs:
@@ -57,7 +57,7 @@ items:
     summary: |-
       Calculates all cells on a worksheet. 
 
-       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: calculate(markAllDirty)
     fullName: excel.Excel.Worksheet.calculate
     langs:
@@ -78,7 +78,7 @@ items:
     summary: |-
       Returns collection of charts that are part of the worksheet. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: charts
     fullName: excel.Excel.Worksheet.charts
     langs:
@@ -93,7 +93,7 @@ items:
     summary: |-
       Deletes the worksheet from the workbook. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: delete()
     fullName: excel.Excel.Worksheet.delete
     langs:
@@ -110,7 +110,7 @@ items:
       Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
       bounds of its parent range, so long as it's stays within the worksheet grid. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: 'getCell(row, column)'
     fullName: excel.Excel.Worksheet.getCell
     langs:
@@ -136,7 +136,7 @@ items:
       Gets the worksheet that follows this one. If there are no worksheets following this one, this method will throw an
       error. 
 
-       \[Api set: ExcelApi 1.5\]
+       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getNext(visibleOnly)
     fullName: excel.Excel.Worksheet.getNext
     langs:
@@ -158,7 +158,7 @@ items:
       Gets the worksheet that follows this one. If there are no worksheets following this one, this method will return a
       null object. 
 
-       \[Api set: ExcelApi 1.5\]
+       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getNextOrNullObject(visibleOnly)
     fullName: excel.Excel.Worksheet.getNextOrNullObject
     langs:
@@ -179,7 +179,7 @@ items:
     summary: |-
       Gets the worksheet that precedes this one. If there are no previous worksheets, this method will throw an error. 
 
-       \[Api set: ExcelApi 1.5\]
+       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getPrevious(visibleOnly)
     fullName: excel.Excel.Worksheet.getPrevious
     langs:
@@ -201,7 +201,7 @@ items:
       Gets the worksheet that precedes this one. If there are no previous worksheets, this method will return a null
       objet. 
 
-       \[Api set: ExcelApi 1.5\]
+       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getPreviousOrNullObject(visibleOnly)
     fullName: excel.Excel.Worksheet.getPreviousOrNullObject
     langs:
@@ -222,7 +222,7 @@ items:
     summary: |-
       Gets the range object specified by the address or name. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getRange(address)
     fullName: excel.Excel.Worksheet.getRange
     langs:
@@ -245,7 +245,7 @@ items:
       If the entire worksheet is blank, this function will return the top left cell (i.e.,: it will \*not\* throw an
       error). 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getUsedRange(valuesOnly)
     fullName: excel.Excel.Worksheet.getUsedRange
     langs:
@@ -267,7 +267,7 @@ items:
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
       If the entire worksheet is blank, this function will return a null object. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getUsedRangeOrNullObject(valuesOnly)
     fullName: excel.Excel.Worksheet.getUsedRangeOrNullObject
     langs:
@@ -289,7 +289,7 @@ items:
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
       the same even when the worksheet is renamed or moved. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: id
     fullName: excel.Excel.Worksheet.id
     langs:
@@ -324,7 +324,7 @@ items:
     summary: |-
       The display name of the worksheet. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: name
     fullName: excel.Excel.Worksheet.name
     langs:
@@ -339,7 +339,7 @@ items:
     summary: |-
       Collection of names scoped to the current worksheet. Read-only. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: names
     fullName: excel.Excel.Worksheet.names
     langs:
@@ -354,7 +354,7 @@ items:
     summary: |-
       Collection of PivotTables that are part of the worksheet. Read-only. 
 
-       \[Api set: ExcelApi 1.3\]
+       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: pivotTables
     fullName: excel.Excel.Worksheet.pivotTables
     langs:
@@ -369,7 +369,7 @@ items:
     summary: |-
       The zero-based position of the worksheet within the workbook. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: position
     fullName: excel.Excel.Worksheet.position
     langs:
@@ -384,7 +384,7 @@ items:
     summary: |-
       Returns sheet protection object for a worksheet. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: protection
     fullName: excel.Excel.Worksheet.protection
     langs:
@@ -421,7 +421,7 @@ items:
     summary: |-
       Collection of tables that are part of the worksheet. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: tables
     fullName: excel.Excel.Worksheet.tables
     langs:
@@ -448,7 +448,7 @@ items:
     summary: |-
       The Visibility of the worksheet. 
 
-       \[Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.\]
+       \[ [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.](http://bing.com) \]
     name: visibility
     fullName: excel.Excel.Worksheet.visibility
     langs:

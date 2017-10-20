@@ -5,7 +5,7 @@ items:
       Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was
       reached. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.TableCollection
     fullName: excel.Excel.TableCollection
     langs:
@@ -30,7 +30,7 @@ items:
       added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another
       table), an error will be thrown. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: 'add(address, hasHeaders)'
     fullName: excel.Excel.TableCollection.add
     langs:
@@ -55,7 +55,7 @@ items:
     summary: |-
       Returns the number of tables in the workbook. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: count
     fullName: excel.Excel.TableCollection.count
     langs:
@@ -70,7 +70,7 @@ items:
     summary: |-
       Gets the number of tables in the collection. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getCount()
     fullName: excel.Excel.TableCollection.getCount
     langs:
@@ -86,7 +86,7 @@ items:
     summary: |-
       Gets a table by Name or ID. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getItem(key)
     fullName: excel.Excel.TableCollection.getItem
     langs:
@@ -107,7 +107,7 @@ items:
     summary: |-
       Gets a table based on its position in the collection. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getItemAt(index)
     fullName: excel.Excel.TableCollection.getItemAt
     langs:
@@ -128,7 +128,7 @@ items:
     summary: |-
       Gets a table by Name or ID. If the table does not exist, will return a null object. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getItemOrNullObject(key)
     fullName: excel.Excel.TableCollection.getItemOrNullObject
     langs:

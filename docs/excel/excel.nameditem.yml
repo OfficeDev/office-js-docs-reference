@@ -5,7 +5,7 @@ items:
       Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type
       below), range object, reference to a range. This object can be used to obtain range object associated with names. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.NamedItem
     fullName: excel.Excel.NamedItem
     langs:
@@ -33,7 +33,7 @@ items:
     summary: |-
       Represents the comment associated with this name. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: comment
     fullName: excel.Excel.NamedItem.comment
     langs:
@@ -48,7 +48,7 @@ items:
     summary: |-
       Deletes the given name. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: delete()
     fullName: excel.Excel.NamedItem.delete
     langs:
@@ -65,7 +65,7 @@ items:
       Returns the range object that is associated with the name. Throws an error if the named item's type is not a
       range. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getRange()
     fullName: excel.Excel.NamedItem.getRange
     langs:
@@ -82,7 +82,7 @@ items:
       Returns the range object that is associated with the name. Returns a null object if the named item's type is not a
       range. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getRangeOrNullObject()
     fullName: excel.Excel.NamedItem.getRangeOrNullObject
     langs:
@@ -118,7 +118,7 @@ items:
     summary: |-
       The name of the object. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: name
     fullName: excel.Excel.NamedItem.name
     langs:
@@ -133,7 +133,7 @@ items:
     summary: |-
       Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: scope
     fullName: excel.Excel.NamedItem.scope
     langs:
@@ -182,7 +182,7 @@ items:
     summary: |-
       Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: type
     fullName: excel.Excel.NamedItem.type
     langs:
@@ -197,7 +197,7 @@ items:
     summary: |-
       Represents the value computed by the name's formula. For a named range, will return the range address. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: value
     fullName: excel.Excel.NamedItem.value
     langs:
@@ -212,7 +212,7 @@ items:
     summary: |-
       Specifies whether the object is visible or not. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: visible
     fullName: excel.Excel.NamedItem.visible
     langs:
@@ -228,7 +228,7 @@ items:
       Returns the worksheet on which the named item is scoped to. Throws an error if the items is scoped to the workbook
       instead. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: worksheet
     fullName: excel.Excel.NamedItem.worksheet
     langs:
@@ -244,7 +244,7 @@ items:
       Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the
       workbook instead. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: worksheetOrNullObject
     fullName: excel.Excel.NamedItem.worksheetOrNullObject
     langs:

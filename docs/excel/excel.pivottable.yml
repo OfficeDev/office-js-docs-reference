@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents an Excel PivotTable. 
 
-       \[Api set: ExcelApi 1.3\]
+       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: Excel.PivotTable
     fullName: excel.Excel.PivotTable
     langs:
@@ -25,7 +25,7 @@ items:
     summary: |-
       Id of the PivotTable. 
 
-       \[Api set: ExcelApi 1.5\]
+       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: id
     fullName: excel.Excel.PivotTable.id
     langs:
@@ -60,7 +60,7 @@ items:
     summary: |-
       Name of the PivotTable. 
 
-       \[Api set: ExcelApi 1.3\]
+       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: name
     fullName: excel.Excel.PivotTable.name
     langs:
@@ -75,7 +75,7 @@ items:
     summary: |-
       Refreshes the PivotTable. 
 
-       \[Api set: ExcelApi 1.3\]
+       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: refresh()
     fullName: excel.Excel.PivotTable.refresh
     langs:
@@ -125,7 +125,7 @@ items:
     summary: |-
       The worksheet containing the current PivotTable. Read-only. 
 
-       \[Api set: ExcelApi 1.3\]
+       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: worksheet
     fullName: excel.Excel.PivotTable.worksheet
     langs:

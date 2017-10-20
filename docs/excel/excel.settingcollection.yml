@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of worksheet objects that are part of the workbook. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: Excel.SettingCollection
     fullName: excel.Excel.SettingCollection
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Sets or adds the specified setting to the workbook. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: 'add(key, value)'
     fullName: excel.Excel.SettingCollection.add
     langs:
@@ -51,7 +51,7 @@ items:
     summary: |-
       Gets the number of Settings in the collection. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getCount()
     fullName: excel.Excel.SettingCollection.getCount
     langs:
@@ -67,7 +67,7 @@ items:
     summary: |-
       Gets a Setting entry via the key. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getItem(key)
     fullName: excel.Excel.SettingCollection.getItem
     langs:
@@ -88,7 +88,7 @@ items:
     summary: |-
       Gets a Setting entry via the key. If the Setting does not exist, will return a null object. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getItemOrNullObject(key)
     fullName: excel.Excel.SettingCollection.getItemOrNullObject
     langs:
@@ -141,7 +141,7 @@ items:
     summary: |-
       Occurs when the Settings in the document are changed. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: onSettingsChanged
     fullName: excel.Excel.SettingCollection.onSettingsChanged
     langs:

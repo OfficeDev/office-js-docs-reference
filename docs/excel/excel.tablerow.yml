@@ -6,7 +6,7 @@ items:
 
        Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.TableRow
     fullName: excel.Excel.TableRow
     langs:
@@ -27,7 +27,7 @@ items:
     summary: |-
       Deletes the row from the table. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: delete()
     fullName: excel.Excel.TableRow.delete
     langs:
@@ -43,7 +43,7 @@ items:
     summary: |-
       Returns the range object associated with the entire row. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getRange()
     fullName: excel.Excel.TableRow.getRange
     langs:
@@ -59,7 +59,7 @@ items:
     summary: |-
       Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: index
     fullName: excel.Excel.TableRow.index
     langs:
@@ -129,7 +129,7 @@ items:
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
       Cell that contain an error will return the error string. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: values
     fullName: excel.Excel.TableRow.values
     langs:

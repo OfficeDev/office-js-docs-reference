@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of worksheet objects that are part of the workbook. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.WorksheetCollection
     fullName: excel.Excel.WorksheetCollection
     langs:
@@ -29,7 +29,7 @@ items:
       Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish
       to activate the newly added worksheet, call ".activate() on it. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: add(name)
     fullName: excel.Excel.WorksheetCollection.add
     langs:
@@ -50,7 +50,7 @@ items:
     summary: |-
       Gets the currently active worksheet in the workbook. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getActiveWorksheet()
     fullName: excel.Excel.WorksheetCollection.getActiveWorksheet
     langs:
@@ -66,7 +66,7 @@ items:
     summary: |-
       Gets the number of worksheets in the collection. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getCount(visibleOnly)
     fullName: excel.Excel.WorksheetCollection.getCount
     langs:
@@ -88,7 +88,7 @@ items:
       Gets the first worksheet in the collection. If true, considers only visible worksheets, skipping over any hidden
       ones. 
 
-       \[Api set: ExcelApi 1.5\]
+       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getFirst(visibleOnly)
     fullName: excel.Excel.WorksheetCollection.getFirst
     langs:
@@ -109,7 +109,7 @@ items:
     summary: |-
       Gets a worksheet object using its Name or ID. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getItem(key)
     fullName: excel.Excel.WorksheetCollection.getItem
     langs:
@@ -130,7 +130,7 @@ items:
     summary: |-
       Gets a worksheet object using its Name or ID. If the worksheet does not exist, will return a null object. 
 
-       \[Api set: ExcelApi 1.4\]
+       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getItemOrNullObject(key)
     fullName: excel.Excel.WorksheetCollection.getItemOrNullObject
     langs:
@@ -152,7 +152,7 @@ items:
       Gets the last worksheet in the collection. If true, considers only visible worksheets, skipping over any hidden
       ones. 
 
-       \[Api set: ExcelApi 1.5\]
+       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getLast(visibleOnly)
     fullName: excel.Excel.WorksheetCollection.getLast
     langs:

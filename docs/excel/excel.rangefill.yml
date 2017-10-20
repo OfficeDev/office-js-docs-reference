@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the background of a range object. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.RangeFill
     fullName: excel.Excel.RangeFill
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Resets the range background. 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: clear()
     fullName: excel.Excel.RangeFill.clear
     langs:
@@ -40,7 +40,7 @@ items:
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange") 
 
-       \[Api set: ExcelApi 1.1\]
+       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: color
     fullName: excel.Excel.RangeFill.color
     langs:

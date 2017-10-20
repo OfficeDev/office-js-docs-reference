@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides information about the scoped value. 
 
-       \[Api set: Experimentation 1.1 (PREVIEW)\]
+       \[ [Api set: Experimentation 1.1 (PREVIEW)](http://bing.com) \]
     name: OfficeCore.ScopedValue
     fullName: excel.OfficeCore.ScopedValue
     langs:
@@ -18,7 +18,7 @@ items:
     summary: |-
       Gets the scope. 
 
-       \[Api set: Experimentation 1.1 (PREVIEW)\]
+       \[ [Api set: Experimentation 1.1 (PREVIEW)](http://bing.com) \]
     name: scope
     fullName: excel.OfficeCore.ScopedValue.scope
     langs:
@@ -33,7 +33,7 @@ items:
     summary: |-
       Gets the value. 
 
-       \[Api set: Experimentation 1.1 (PREVIEW)\]
+       \[ [Api set: Experimentation 1.1 (PREVIEW)](http://bing.com) \]
     name: value
     fullName: excel.OfficeCore.ScopedValue.value
     langs:

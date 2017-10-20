@@ -4,7 +4,7 @@ items:
     summary: |-
       An object containing the result of a function-evaluation operation 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: Excel.FunctionResult
     fullName: excel.Excel.FunctionResult
     langs:
@@ -23,7 +23,7 @@ items:
       Error value (such as "\#DIV/0") representing the error. If the error string is not set, then the function
       succeeded, and its result is written to the Value field. The error is always in the English locale. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: error
     fullName: excel.Excel.FunctionResult.error
     langs:
@@ -71,7 +71,7 @@ items:
       The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error
       property is not set). 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: value
     fullName: excel.Excel.FunctionResult.value
     langs:

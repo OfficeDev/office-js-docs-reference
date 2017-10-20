@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the options in sheet protection. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: Excel.WorksheetProtectionOptions
     fullName: excel.Excel.WorksheetProtectionOptions
     langs:
@@ -27,7 +27,7 @@ items:
     summary: |-
       Represents the worksheet protection option of allowing using auto filter feature. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: allowAutoFilter
     fullName: excel.Excel.WorksheetProtectionOptions.allowAutoFilter
     langs:
@@ -42,7 +42,7 @@ items:
     summary: |-
       Represents the worksheet protection option of allowing deleting columns. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: allowDeleteColumns
     fullName: excel.Excel.WorksheetProtectionOptions.allowDeleteColumns
     langs:
@@ -57,7 +57,7 @@ items:
     summary: |-
       Represents the worksheet protection option of allowing deleting rows. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: allowDeleteRows
     fullName: excel.Excel.WorksheetProtectionOptions.allowDeleteRows
     langs:
@@ -72,7 +72,7 @@ items:
     summary: |-
       Represents the worksheet protection option of allowing formatting cells. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: allowFormatCells
     fullName: excel.Excel.WorksheetProtectionOptions.allowFormatCells
     langs:
@@ -87,7 +87,7 @@ items:
     summary: |-
       Represents the worksheet protection option of allowing formatting columns. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: allowFormatColumns
     fullName: excel.Excel.WorksheetProtectionOptions.allowFormatColumns
     langs:
@@ -102,7 +102,7 @@ items:
     summary: |-
       Represents the worksheet protection option of allowing formatting rows. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: allowFormatRows
     fullName: excel.Excel.WorksheetProtectionOptions.allowFormatRows
     langs:
@@ -117,7 +117,7 @@ items:
     summary: |-
       Represents the worksheet protection option of allowing inserting columns. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: allowInsertColumns
     fullName: excel.Excel.WorksheetProtectionOptions.allowInsertColumns
     langs:
@@ -132,7 +132,7 @@ items:
     summary: |-
       Represents the worksheet protection option of allowing inserting hyperlinks. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: allowInsertHyperlinks
     fullName: excel.Excel.WorksheetProtectionOptions.allowInsertHyperlinks
     langs:
@@ -147,7 +147,7 @@ items:
     summary: |-
       Represents the worksheet protection option of allowing inserting rows. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: allowInsertRows
     fullName: excel.Excel.WorksheetProtectionOptions.allowInsertRows
     langs:
@@ -162,7 +162,7 @@ items:
     summary: |-
       Represents the worksheet protection option of allowing using PivotTable feature. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: allowPivotTables
     fullName: excel.Excel.WorksheetProtectionOptions.allowPivotTables
     langs:
@@ -177,7 +177,7 @@ items:
     summary: |-
       Represents the worksheet protection option of allowing using sort feature. 
 
-       \[Api set: ExcelApi 1.2\]
+       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: allowSort
     fullName: excel.Excel.WorksheetProtectionOptions.allowSort
     langs:
