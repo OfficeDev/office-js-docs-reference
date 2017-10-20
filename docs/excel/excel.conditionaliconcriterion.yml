@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ConditionalIconCriterion
+    summary: >-
+      Represents an Icon Criterion which contains a type, value, an Operator, and an optional custom icon, if not using
+      an iconset. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: Excel.ConditionalIconCriterion
+    fullName: excel.Excel.ConditionalIconCriterion
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.ConditionalIconCriterion.customIcon
+      - excel.Excel.ConditionalIconCriterion.formula
+      - excel.Excel.ConditionalIconCriterion.operator
+      - excel.Excel.ConditionalIconCriterion.type
+  - uid: excel.Excel.ConditionalIconCriterion.customIcon
+    summary: |-
+      The custom icon for the current criterion if different from the default IconSet, else null will be returned. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: customIcon
+    fullName: excel.Excel.ConditionalIconCriterion.customIcon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'customIcon?: Excel.Icon;'
+      return:
+        type:
+          - Excel.Icon
+  - uid: excel.Excel.ConditionalIconCriterion.formula
+    summary: |-
+      A number or a formula depending on the type. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: formula
+    fullName: excel.Excel.ConditionalIconCriterion.formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ConditionalIconCriterion.operator
+    summary: |-
+      GreaterThan or GreaterThanOrEqual for each of the rule type for the Icon conditional format. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: operator
+    fullName: excel.Excel.ConditionalIconCriterion.operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ConditionalIconCriterion.type
+    summary: |-
+      What the icon conditional formula should be based on. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: type
+    fullName: excel.Excel.ConditionalIconCriterion.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: string;'
+      return:
+        type:
+          - string

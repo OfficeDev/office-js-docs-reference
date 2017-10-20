@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.OfficeExtension.EventHandlerResult
+    name: OfficeExtension.EventHandlerResult
+    fullName: excel.OfficeExtension.EventHandlerResult
+    langs:
+      - typeScript
+    type: class
+    package: excel
+    children:
+      - excel.OfficeExtension.EventHandlerResult.constructor
+      - excel.OfficeExtension.EventHandlerResult.remove
+  - uid: excel.OfficeExtension.EventHandlerResult.constructor
+    summary: Constructs a new instance of the EventHandlerResult class
+    name: 'constructor(context, handlers, handler)'
+    fullName: excel.OfficeExtension.EventHandlerResult.constructor
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => IPromise<any>);'
+      parameters:
+        - id: context
+          description: ''
+          type:
+            - ClientRequestContext
+        - id: handlers
+          description: ''
+          type:
+            - EventHandlers<T>
+        - id: handler
+          description: ''
+          type:
+            - '(args: T) => IPromise<any>'
+  - uid: excel.OfficeExtension.EventHandlerResult.remove
+    name: remove()
+    fullName: excel.OfficeExtension.EventHandlerResult.remove
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(): void;'
+      return:
+        type:
+          - void
+        description: ''

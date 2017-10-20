@@ -1,0 +1,1410 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Office.ProjectResourceFields
+    name: Office.ProjectResourceFields
+    fullName: excel.Office.ProjectResourceFields
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Office.ProjectResourceFields.Accrual
+      - excel.Office.ProjectResourceFields.ActualCost
+      - excel.Office.ProjectResourceFields.ActualOvertimeCost
+      - excel.Office.ProjectResourceFields.ActualOvertimeWork
+      - excel.Office.ProjectResourceFields.ActualOvertimeWorkProtected
+      - excel.Office.ProjectResourceFields.ActualWork
+      - excel.Office.ProjectResourceFields.ActualWorkProtected
+      - excel.Office.ProjectResourceFields.BaseCalendar
+      - excel.Office.ProjectResourceFields.Baseline10BudgetCost
+      - excel.Office.ProjectResourceFields.Baseline10BudgetWork
+      - excel.Office.ProjectResourceFields.Baseline10Cost
+      - excel.Office.ProjectResourceFields.Baseline10Work
+      - excel.Office.ProjectResourceFields.Baseline1BudgetCost
+      - excel.Office.ProjectResourceFields.Baseline1BudgetWork
+      - excel.Office.ProjectResourceFields.Baseline1Cost
+      - excel.Office.ProjectResourceFields.Baseline1Work
+      - excel.Office.ProjectResourceFields.Baseline2BudgetCost
+      - excel.Office.ProjectResourceFields.Baseline2BudgetWork
+      - excel.Office.ProjectResourceFields.Baseline2Cost
+      - excel.Office.ProjectResourceFields.Baseline2Work
+      - excel.Office.ProjectResourceFields.Baseline3BudgetCost
+      - excel.Office.ProjectResourceFields.Baseline3BudgetWork
+      - excel.Office.ProjectResourceFields.Baseline3Cost
+      - excel.Office.ProjectResourceFields.Baseline3Work
+      - excel.Office.ProjectResourceFields.Baseline4BudgetCost
+      - excel.Office.ProjectResourceFields.Baseline4BudgetWork
+      - excel.Office.ProjectResourceFields.Baseline4Cost
+      - excel.Office.ProjectResourceFields.Baseline4Work
+      - excel.Office.ProjectResourceFields.Baseline5BudgetCost
+      - excel.Office.ProjectResourceFields.Baseline5BudgetWork
+      - excel.Office.ProjectResourceFields.Baseline5Cost
+      - excel.Office.ProjectResourceFields.Baseline5Work
+      - excel.Office.ProjectResourceFields.Baseline6BudgetCost
+      - excel.Office.ProjectResourceFields.Baseline6BudgetWork
+      - excel.Office.ProjectResourceFields.Baseline6Cost
+      - excel.Office.ProjectResourceFields.Baseline6Work
+      - excel.Office.ProjectResourceFields.Baseline7BudgetCost
+      - excel.Office.ProjectResourceFields.Baseline7BudgetWork
+      - excel.Office.ProjectResourceFields.Baseline7Cost
+      - excel.Office.ProjectResourceFields.Baseline7Work
+      - excel.Office.ProjectResourceFields.Baseline8BudgetCost
+      - excel.Office.ProjectResourceFields.Baseline8BudgetWork
+      - excel.Office.ProjectResourceFields.Baseline8Cost
+      - excel.Office.ProjectResourceFields.Baseline8Work
+      - excel.Office.ProjectResourceFields.Baseline9BudgetCost
+      - excel.Office.ProjectResourceFields.Baseline9BudgetWork
+      - excel.Office.ProjectResourceFields.Baseline9Cost
+      - excel.Office.ProjectResourceFields.Baseline9Work
+      - excel.Office.ProjectResourceFields.BaselineBudgetCost
+      - excel.Office.ProjectResourceFields.BaselineBudgetWork
+      - excel.Office.ProjectResourceFields.BaselineCost
+      - excel.Office.ProjectResourceFields.BaselineWork
+      - excel.Office.ProjectResourceFields.BudgetCost
+      - excel.Office.ProjectResourceFields.BudgetWork
+      - excel.Office.ProjectResourceFields.Code
+      - excel.Office.ProjectResourceFields.Cost
+      - excel.Office.ProjectResourceFields.Cost1
+      - excel.Office.ProjectResourceFields.Cost10
+      - excel.Office.ProjectResourceFields.Cost2
+      - excel.Office.ProjectResourceFields.Cost3
+      - excel.Office.ProjectResourceFields.Cost4
+      - excel.Office.ProjectResourceFields.Cost5
+      - excel.Office.ProjectResourceFields.Cost6
+      - excel.Office.ProjectResourceFields.Cost7
+      - excel.Office.ProjectResourceFields.Cost8
+      - excel.Office.ProjectResourceFields.Cost9
+      - excel.Office.ProjectResourceFields.CostPerUse
+      - excel.Office.ProjectResourceFields.Date1
+      - excel.Office.ProjectResourceFields.Date10
+      - excel.Office.ProjectResourceFields.Date2
+      - excel.Office.ProjectResourceFields.Date3
+      - excel.Office.ProjectResourceFields.Date4
+      - excel.Office.ProjectResourceFields.Date5
+      - excel.Office.ProjectResourceFields.Date6
+      - excel.Office.ProjectResourceFields.Date7
+      - excel.Office.ProjectResourceFields.Date8
+      - excel.Office.ProjectResourceFields.Date9
+      - excel.Office.ProjectResourceFields.Duration1
+      - excel.Office.ProjectResourceFields.Duration10
+      - excel.Office.ProjectResourceFields.Duration2
+      - excel.Office.ProjectResourceFields.Duration3
+      - excel.Office.ProjectResourceFields.Duration4
+      - excel.Office.ProjectResourceFields.Duration5
+      - excel.Office.ProjectResourceFields.Duration6
+      - excel.Office.ProjectResourceFields.Duration7
+      - excel.Office.ProjectResourceFields.Duration8
+      - excel.Office.ProjectResourceFields.Duration9
+      - excel.Office.ProjectResourceFields.Email
+      - excel.Office.ProjectResourceFields.End
+      - excel.Office.ProjectResourceFields.Finish1
+      - excel.Office.ProjectResourceFields.Finish10
+      - excel.Office.ProjectResourceFields.Finish2
+      - excel.Office.ProjectResourceFields.Finish3
+      - excel.Office.ProjectResourceFields.Finish4
+      - excel.Office.ProjectResourceFields.Finish5
+      - excel.Office.ProjectResourceFields.Finish6
+      - excel.Office.ProjectResourceFields.Finish7
+      - excel.Office.ProjectResourceFields.Finish8
+      - excel.Office.ProjectResourceFields.Finish9
+      - excel.Office.ProjectResourceFields.Flag1
+      - excel.Office.ProjectResourceFields.Flag10
+      - excel.Office.ProjectResourceFields.Flag11
+      - excel.Office.ProjectResourceFields.Flag12
+      - excel.Office.ProjectResourceFields.Flag13
+      - excel.Office.ProjectResourceFields.Flag14
+      - excel.Office.ProjectResourceFields.Flag15
+      - excel.Office.ProjectResourceFields.Flag16
+      - excel.Office.ProjectResourceFields.Flag17
+      - excel.Office.ProjectResourceFields.Flag18
+      - excel.Office.ProjectResourceFields.Flag19
+      - excel.Office.ProjectResourceFields.Flag2
+      - excel.Office.ProjectResourceFields.Flag20
+      - excel.Office.ProjectResourceFields.Flag3
+      - excel.Office.ProjectResourceFields.Flag4
+      - excel.Office.ProjectResourceFields.Flag5
+      - excel.Office.ProjectResourceFields.Flag6
+      - excel.Office.ProjectResourceFields.Flag7
+      - excel.Office.ProjectResourceFields.Flag8
+      - excel.Office.ProjectResourceFields.Flag9
+      - excel.Office.ProjectResourceFields.Generic
+      - excel.Office.ProjectResourceFields.Group
+      - excel.Office.ProjectResourceFields.Name
+      - excel.Office.ProjectResourceFields.Notes
+      - excel.Office.ProjectResourceFields.Number1
+      - excel.Office.ProjectResourceFields.Number10
+      - excel.Office.ProjectResourceFields.Number11
+      - excel.Office.ProjectResourceFields.Number12
+      - excel.Office.ProjectResourceFields.Number13
+      - excel.Office.ProjectResourceFields.Number14
+      - excel.Office.ProjectResourceFields.Number15
+      - excel.Office.ProjectResourceFields.Number16
+      - excel.Office.ProjectResourceFields.Number17
+      - excel.Office.ProjectResourceFields.Number18
+      - excel.Office.ProjectResourceFields.Number19
+      - excel.Office.ProjectResourceFields.Number2
+      - excel.Office.ProjectResourceFields.Number20
+      - excel.Office.ProjectResourceFields.Number3
+      - excel.Office.ProjectResourceFields.Number4
+      - excel.Office.ProjectResourceFields.Number5
+      - excel.Office.ProjectResourceFields.Number6
+      - excel.Office.ProjectResourceFields.Number7
+      - excel.Office.ProjectResourceFields.Number8
+      - excel.Office.ProjectResourceFields.Number9
+      - excel.Office.ProjectResourceFields.OverAllocated
+      - excel.Office.ProjectResourceFields.OvertimeCost
+      - excel.Office.ProjectResourceFields.OvertimeRate
+      - excel.Office.ProjectResourceFields.OvertimeWork
+      - excel.Office.ProjectResourceFields.PercentWorkComplete
+      - excel.Office.ProjectResourceFields.RegularWork
+      - excel.Office.ProjectResourceFields.RemainingCost
+      - excel.Office.ProjectResourceFields.RemainingOvertimeCost
+      - excel.Office.ProjectResourceFields.RemainingOvertimeWork
+      - excel.Office.ProjectResourceFields.RemainingWork
+      - excel.Office.ProjectResourceFields.ResourceCalendarGUID
+      - excel.Office.ProjectResourceFields.ResourceCreationDate
+      - excel.Office.ProjectResourceFields.ResourceGUID
+      - excel.Office.ProjectResourceFields.StandardRate
+      - excel.Office.ProjectResourceFields.Start
+      - excel.Office.ProjectResourceFields.Start1
+      - excel.Office.ProjectResourceFields.Start10
+      - excel.Office.ProjectResourceFields.Start2
+      - excel.Office.ProjectResourceFields.Start3
+      - excel.Office.ProjectResourceFields.Start4
+      - excel.Office.ProjectResourceFields.Start5
+      - excel.Office.ProjectResourceFields.Start6
+      - excel.Office.ProjectResourceFields.Start7
+      - excel.Office.ProjectResourceFields.Start8
+      - excel.Office.ProjectResourceFields.Start9
+      - excel.Office.ProjectResourceFields.Text1
+      - excel.Office.ProjectResourceFields.Text10
+      - excel.Office.ProjectResourceFields.Text11
+      - excel.Office.ProjectResourceFields.Text12
+      - excel.Office.ProjectResourceFields.Text13
+      - excel.Office.ProjectResourceFields.Text14
+      - excel.Office.ProjectResourceFields.Text15
+      - excel.Office.ProjectResourceFields.Text16
+      - excel.Office.ProjectResourceFields.Text17
+      - excel.Office.ProjectResourceFields.Text18
+      - excel.Office.ProjectResourceFields.Text19
+      - excel.Office.ProjectResourceFields.Text2
+      - excel.Office.ProjectResourceFields.Text20
+      - excel.Office.ProjectResourceFields.Text21
+      - excel.Office.ProjectResourceFields.Text22
+      - excel.Office.ProjectResourceFields.Text23
+      - excel.Office.ProjectResourceFields.Text24
+      - excel.Office.ProjectResourceFields.Text25
+      - excel.Office.ProjectResourceFields.Text26
+      - excel.Office.ProjectResourceFields.Text27
+      - excel.Office.ProjectResourceFields.Text28
+      - excel.Office.ProjectResourceFields.Text29
+      - excel.Office.ProjectResourceFields.Text3
+      - excel.Office.ProjectResourceFields.Text30
+      - excel.Office.ProjectResourceFields.Text4
+      - excel.Office.ProjectResourceFields.Text5
+      - excel.Office.ProjectResourceFields.Text6
+      - excel.Office.ProjectResourceFields.Text7
+      - excel.Office.ProjectResourceFields.Text8
+      - excel.Office.ProjectResourceFields.Text9
+      - excel.Office.ProjectResourceFields.Units
+      - excel.Office.ProjectResourceFields.Work
+  - uid: excel.Office.ProjectResourceFields.Accrual
+    name: Accrual
+    fullName: excel.Office.ProjectResourceFields.Accrual
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.ActualCost
+    name: ActualCost
+    fullName: excel.Office.ProjectResourceFields.ActualCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.ActualOvertimeCost
+    name: ActualOvertimeCost
+    fullName: excel.Office.ProjectResourceFields.ActualOvertimeCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.ActualOvertimeWork
+    name: ActualOvertimeWork
+    fullName: excel.Office.ProjectResourceFields.ActualOvertimeWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.ActualOvertimeWorkProtected
+    name: ActualOvertimeWorkProtected
+    fullName: excel.Office.ProjectResourceFields.ActualOvertimeWorkProtected
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.ActualWork
+    name: ActualWork
+    fullName: excel.Office.ProjectResourceFields.ActualWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.ActualWorkProtected
+    name: ActualWorkProtected
+    fullName: excel.Office.ProjectResourceFields.ActualWorkProtected
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.BaseCalendar
+    name: BaseCalendar
+    fullName: excel.Office.ProjectResourceFields.BaseCalendar
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline10BudgetCost
+    name: Baseline10BudgetCost
+    fullName: excel.Office.ProjectResourceFields.Baseline10BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline10BudgetWork
+    name: Baseline10BudgetWork
+    fullName: excel.Office.ProjectResourceFields.Baseline10BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline10Cost
+    name: Baseline10Cost
+    fullName: excel.Office.ProjectResourceFields.Baseline10Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline10Work
+    name: Baseline10Work
+    fullName: excel.Office.ProjectResourceFields.Baseline10Work
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline1BudgetCost
+    name: Baseline1BudgetCost
+    fullName: excel.Office.ProjectResourceFields.Baseline1BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline1BudgetWork
+    name: Baseline1BudgetWork
+    fullName: excel.Office.ProjectResourceFields.Baseline1BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline1Cost
+    name: Baseline1Cost
+    fullName: excel.Office.ProjectResourceFields.Baseline1Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline1Work
+    name: Baseline1Work
+    fullName: excel.Office.ProjectResourceFields.Baseline1Work
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline2BudgetCost
+    name: Baseline2BudgetCost
+    fullName: excel.Office.ProjectResourceFields.Baseline2BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline2BudgetWork
+    name: Baseline2BudgetWork
+    fullName: excel.Office.ProjectResourceFields.Baseline2BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline2Cost
+    name: Baseline2Cost
+    fullName: excel.Office.ProjectResourceFields.Baseline2Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline2Work
+    name: Baseline2Work
+    fullName: excel.Office.ProjectResourceFields.Baseline2Work
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline3BudgetCost
+    name: Baseline3BudgetCost
+    fullName: excel.Office.ProjectResourceFields.Baseline3BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline3BudgetWork
+    name: Baseline3BudgetWork
+    fullName: excel.Office.ProjectResourceFields.Baseline3BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline3Cost
+    name: Baseline3Cost
+    fullName: excel.Office.ProjectResourceFields.Baseline3Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline3Work
+    name: Baseline3Work
+    fullName: excel.Office.ProjectResourceFields.Baseline3Work
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline4BudgetCost
+    name: Baseline4BudgetCost
+    fullName: excel.Office.ProjectResourceFields.Baseline4BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline4BudgetWork
+    name: Baseline4BudgetWork
+    fullName: excel.Office.ProjectResourceFields.Baseline4BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline4Cost
+    name: Baseline4Cost
+    fullName: excel.Office.ProjectResourceFields.Baseline4Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline4Work
+    name: Baseline4Work
+    fullName: excel.Office.ProjectResourceFields.Baseline4Work
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline5BudgetCost
+    name: Baseline5BudgetCost
+    fullName: excel.Office.ProjectResourceFields.Baseline5BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline5BudgetWork
+    name: Baseline5BudgetWork
+    fullName: excel.Office.ProjectResourceFields.Baseline5BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline5Cost
+    name: Baseline5Cost
+    fullName: excel.Office.ProjectResourceFields.Baseline5Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline5Work
+    name: Baseline5Work
+    fullName: excel.Office.ProjectResourceFields.Baseline5Work
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline6BudgetCost
+    name: Baseline6BudgetCost
+    fullName: excel.Office.ProjectResourceFields.Baseline6BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline6BudgetWork
+    name: Baseline6BudgetWork
+    fullName: excel.Office.ProjectResourceFields.Baseline6BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline6Cost
+    name: Baseline6Cost
+    fullName: excel.Office.ProjectResourceFields.Baseline6Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline6Work
+    name: Baseline6Work
+    fullName: excel.Office.ProjectResourceFields.Baseline6Work
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline7BudgetCost
+    name: Baseline7BudgetCost
+    fullName: excel.Office.ProjectResourceFields.Baseline7BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline7BudgetWork
+    name: Baseline7BudgetWork
+    fullName: excel.Office.ProjectResourceFields.Baseline7BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline7Cost
+    name: Baseline7Cost
+    fullName: excel.Office.ProjectResourceFields.Baseline7Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline7Work
+    name: Baseline7Work
+    fullName: excel.Office.ProjectResourceFields.Baseline7Work
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline8BudgetCost
+    name: Baseline8BudgetCost
+    fullName: excel.Office.ProjectResourceFields.Baseline8BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline8BudgetWork
+    name: Baseline8BudgetWork
+    fullName: excel.Office.ProjectResourceFields.Baseline8BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline8Cost
+    name: Baseline8Cost
+    fullName: excel.Office.ProjectResourceFields.Baseline8Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline8Work
+    name: Baseline8Work
+    fullName: excel.Office.ProjectResourceFields.Baseline8Work
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline9BudgetCost
+    name: Baseline9BudgetCost
+    fullName: excel.Office.ProjectResourceFields.Baseline9BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline9BudgetWork
+    name: Baseline9BudgetWork
+    fullName: excel.Office.ProjectResourceFields.Baseline9BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline9Cost
+    name: Baseline9Cost
+    fullName: excel.Office.ProjectResourceFields.Baseline9Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Baseline9Work
+    name: Baseline9Work
+    fullName: excel.Office.ProjectResourceFields.Baseline9Work
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.BaselineBudgetCost
+    name: BaselineBudgetCost
+    fullName: excel.Office.ProjectResourceFields.BaselineBudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.BaselineBudgetWork
+    name: BaselineBudgetWork
+    fullName: excel.Office.ProjectResourceFields.BaselineBudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.BaselineCost
+    name: BaselineCost
+    fullName: excel.Office.ProjectResourceFields.BaselineCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.BaselineWork
+    name: BaselineWork
+    fullName: excel.Office.ProjectResourceFields.BaselineWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.BudgetCost
+    name: BudgetCost
+    fullName: excel.Office.ProjectResourceFields.BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.BudgetWork
+    name: BudgetWork
+    fullName: excel.Office.ProjectResourceFields.BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Code
+    name: Code
+    fullName: excel.Office.ProjectResourceFields.Code
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Cost
+    name: Cost
+    fullName: excel.Office.ProjectResourceFields.Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Cost1
+    name: Cost1
+    fullName: excel.Office.ProjectResourceFields.Cost1
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Cost10
+    name: Cost10
+    fullName: excel.Office.ProjectResourceFields.Cost10
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Cost2
+    name: Cost2
+    fullName: excel.Office.ProjectResourceFields.Cost2
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Cost3
+    name: Cost3
+    fullName: excel.Office.ProjectResourceFields.Cost3
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Cost4
+    name: Cost4
+    fullName: excel.Office.ProjectResourceFields.Cost4
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Cost5
+    name: Cost5
+    fullName: excel.Office.ProjectResourceFields.Cost5
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Cost6
+    name: Cost6
+    fullName: excel.Office.ProjectResourceFields.Cost6
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Cost7
+    name: Cost7
+    fullName: excel.Office.ProjectResourceFields.Cost7
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Cost8
+    name: Cost8
+    fullName: excel.Office.ProjectResourceFields.Cost8
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Cost9
+    name: Cost9
+    fullName: excel.Office.ProjectResourceFields.Cost9
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.CostPerUse
+    name: CostPerUse
+    fullName: excel.Office.ProjectResourceFields.CostPerUse
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Date1
+    name: Date1
+    fullName: excel.Office.ProjectResourceFields.Date1
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Date10
+    name: Date10
+    fullName: excel.Office.ProjectResourceFields.Date10
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Date2
+    name: Date2
+    fullName: excel.Office.ProjectResourceFields.Date2
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Date3
+    name: Date3
+    fullName: excel.Office.ProjectResourceFields.Date3
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Date4
+    name: Date4
+    fullName: excel.Office.ProjectResourceFields.Date4
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Date5
+    name: Date5
+    fullName: excel.Office.ProjectResourceFields.Date5
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Date6
+    name: Date6
+    fullName: excel.Office.ProjectResourceFields.Date6
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Date7
+    name: Date7
+    fullName: excel.Office.ProjectResourceFields.Date7
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Date8
+    name: Date8
+    fullName: excel.Office.ProjectResourceFields.Date8
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Date9
+    name: Date9
+    fullName: excel.Office.ProjectResourceFields.Date9
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Duration1
+    name: Duration1
+    fullName: excel.Office.ProjectResourceFields.Duration1
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Duration10
+    name: Duration10
+    fullName: excel.Office.ProjectResourceFields.Duration10
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Duration2
+    name: Duration2
+    fullName: excel.Office.ProjectResourceFields.Duration2
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Duration3
+    name: Duration3
+    fullName: excel.Office.ProjectResourceFields.Duration3
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Duration4
+    name: Duration4
+    fullName: excel.Office.ProjectResourceFields.Duration4
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Duration5
+    name: Duration5
+    fullName: excel.Office.ProjectResourceFields.Duration5
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Duration6
+    name: Duration6
+    fullName: excel.Office.ProjectResourceFields.Duration6
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Duration7
+    name: Duration7
+    fullName: excel.Office.ProjectResourceFields.Duration7
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Duration8
+    name: Duration8
+    fullName: excel.Office.ProjectResourceFields.Duration8
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Duration9
+    name: Duration9
+    fullName: excel.Office.ProjectResourceFields.Duration9
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Email
+    name: Email
+    fullName: excel.Office.ProjectResourceFields.Email
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.End
+    name: End
+    fullName: excel.Office.ProjectResourceFields.End
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Finish1
+    name: Finish1
+    fullName: excel.Office.ProjectResourceFields.Finish1
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Finish10
+    name: Finish10
+    fullName: excel.Office.ProjectResourceFields.Finish10
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Finish2
+    name: Finish2
+    fullName: excel.Office.ProjectResourceFields.Finish2
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Finish3
+    name: Finish3
+    fullName: excel.Office.ProjectResourceFields.Finish3
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Finish4
+    name: Finish4
+    fullName: excel.Office.ProjectResourceFields.Finish4
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Finish5
+    name: Finish5
+    fullName: excel.Office.ProjectResourceFields.Finish5
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Finish6
+    name: Finish6
+    fullName: excel.Office.ProjectResourceFields.Finish6
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Finish7
+    name: Finish7
+    fullName: excel.Office.ProjectResourceFields.Finish7
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Finish8
+    name: Finish8
+    fullName: excel.Office.ProjectResourceFields.Finish8
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Finish9
+    name: Finish9
+    fullName: excel.Office.ProjectResourceFields.Finish9
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag1
+    name: Flag1
+    fullName: excel.Office.ProjectResourceFields.Flag1
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag10
+    name: Flag10
+    fullName: excel.Office.ProjectResourceFields.Flag10
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag11
+    name: Flag11
+    fullName: excel.Office.ProjectResourceFields.Flag11
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag12
+    name: Flag12
+    fullName: excel.Office.ProjectResourceFields.Flag12
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag13
+    name: Flag13
+    fullName: excel.Office.ProjectResourceFields.Flag13
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag14
+    name: Flag14
+    fullName: excel.Office.ProjectResourceFields.Flag14
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag15
+    name: Flag15
+    fullName: excel.Office.ProjectResourceFields.Flag15
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag16
+    name: Flag16
+    fullName: excel.Office.ProjectResourceFields.Flag16
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag17
+    name: Flag17
+    fullName: excel.Office.ProjectResourceFields.Flag17
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag18
+    name: Flag18
+    fullName: excel.Office.ProjectResourceFields.Flag18
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag19
+    name: Flag19
+    fullName: excel.Office.ProjectResourceFields.Flag19
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag2
+    name: Flag2
+    fullName: excel.Office.ProjectResourceFields.Flag2
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag20
+    name: Flag20
+    fullName: excel.Office.ProjectResourceFields.Flag20
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag3
+    name: Flag3
+    fullName: excel.Office.ProjectResourceFields.Flag3
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag4
+    name: Flag4
+    fullName: excel.Office.ProjectResourceFields.Flag4
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag5
+    name: Flag5
+    fullName: excel.Office.ProjectResourceFields.Flag5
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag6
+    name: Flag6
+    fullName: excel.Office.ProjectResourceFields.Flag6
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag7
+    name: Flag7
+    fullName: excel.Office.ProjectResourceFields.Flag7
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag8
+    name: Flag8
+    fullName: excel.Office.ProjectResourceFields.Flag8
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Flag9
+    name: Flag9
+    fullName: excel.Office.ProjectResourceFields.Flag9
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Generic
+    name: Generic
+    fullName: excel.Office.ProjectResourceFields.Generic
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Group
+    name: Group
+    fullName: excel.Office.ProjectResourceFields.Group
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Name
+    name: Name
+    fullName: excel.Office.ProjectResourceFields.Name
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Notes
+    name: Notes
+    fullName: excel.Office.ProjectResourceFields.Notes
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number1
+    name: Number1
+    fullName: excel.Office.ProjectResourceFields.Number1
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number10
+    name: Number10
+    fullName: excel.Office.ProjectResourceFields.Number10
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number11
+    name: Number11
+    fullName: excel.Office.ProjectResourceFields.Number11
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number12
+    name: Number12
+    fullName: excel.Office.ProjectResourceFields.Number12
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number13
+    name: Number13
+    fullName: excel.Office.ProjectResourceFields.Number13
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number14
+    name: Number14
+    fullName: excel.Office.ProjectResourceFields.Number14
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number15
+    name: Number15
+    fullName: excel.Office.ProjectResourceFields.Number15
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number16
+    name: Number16
+    fullName: excel.Office.ProjectResourceFields.Number16
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number17
+    name: Number17
+    fullName: excel.Office.ProjectResourceFields.Number17
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number18
+    name: Number18
+    fullName: excel.Office.ProjectResourceFields.Number18
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number19
+    name: Number19
+    fullName: excel.Office.ProjectResourceFields.Number19
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number2
+    name: Number2
+    fullName: excel.Office.ProjectResourceFields.Number2
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number20
+    name: Number20
+    fullName: excel.Office.ProjectResourceFields.Number20
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number3
+    name: Number3
+    fullName: excel.Office.ProjectResourceFields.Number3
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number4
+    name: Number4
+    fullName: excel.Office.ProjectResourceFields.Number4
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number5
+    name: Number5
+    fullName: excel.Office.ProjectResourceFields.Number5
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number6
+    name: Number6
+    fullName: excel.Office.ProjectResourceFields.Number6
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number7
+    name: Number7
+    fullName: excel.Office.ProjectResourceFields.Number7
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number8
+    name: Number8
+    fullName: excel.Office.ProjectResourceFields.Number8
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Number9
+    name: Number9
+    fullName: excel.Office.ProjectResourceFields.Number9
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.OverAllocated
+    name: OverAllocated
+    fullName: excel.Office.ProjectResourceFields.OverAllocated
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.OvertimeCost
+    name: OvertimeCost
+    fullName: excel.Office.ProjectResourceFields.OvertimeCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.OvertimeRate
+    name: OvertimeRate
+    fullName: excel.Office.ProjectResourceFields.OvertimeRate
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.OvertimeWork
+    name: OvertimeWork
+    fullName: excel.Office.ProjectResourceFields.OvertimeWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.PercentWorkComplete
+    name: PercentWorkComplete
+    fullName: excel.Office.ProjectResourceFields.PercentWorkComplete
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.RegularWork
+    name: RegularWork
+    fullName: excel.Office.ProjectResourceFields.RegularWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.RemainingCost
+    name: RemainingCost
+    fullName: excel.Office.ProjectResourceFields.RemainingCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.RemainingOvertimeCost
+    name: RemainingOvertimeCost
+    fullName: excel.Office.ProjectResourceFields.RemainingOvertimeCost
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.RemainingOvertimeWork
+    name: RemainingOvertimeWork
+    fullName: excel.Office.ProjectResourceFields.RemainingOvertimeWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.RemainingWork
+    name: RemainingWork
+    fullName: excel.Office.ProjectResourceFields.RemainingWork
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.ResourceCalendarGUID
+    name: ResourceCalendarGUID
+    fullName: excel.Office.ProjectResourceFields.ResourceCalendarGUID
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.ResourceCreationDate
+    name: ResourceCreationDate
+    fullName: excel.Office.ProjectResourceFields.ResourceCreationDate
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.ResourceGUID
+    name: ResourceGUID
+    fullName: excel.Office.ProjectResourceFields.ResourceGUID
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.StandardRate
+    name: StandardRate
+    fullName: excel.Office.ProjectResourceFields.StandardRate
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Start
+    name: Start
+    fullName: excel.Office.ProjectResourceFields.Start
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Start1
+    name: Start1
+    fullName: excel.Office.ProjectResourceFields.Start1
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Start10
+    name: Start10
+    fullName: excel.Office.ProjectResourceFields.Start10
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Start2
+    name: Start2
+    fullName: excel.Office.ProjectResourceFields.Start2
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Start3
+    name: Start3
+    fullName: excel.Office.ProjectResourceFields.Start3
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Start4
+    name: Start4
+    fullName: excel.Office.ProjectResourceFields.Start4
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Start5
+    name: Start5
+    fullName: excel.Office.ProjectResourceFields.Start5
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Start6
+    name: Start6
+    fullName: excel.Office.ProjectResourceFields.Start6
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Start7
+    name: Start7
+    fullName: excel.Office.ProjectResourceFields.Start7
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Start8
+    name: Start8
+    fullName: excel.Office.ProjectResourceFields.Start8
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Start9
+    name: Start9
+    fullName: excel.Office.ProjectResourceFields.Start9
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text1
+    name: Text1
+    fullName: excel.Office.ProjectResourceFields.Text1
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text10
+    name: Text10
+    fullName: excel.Office.ProjectResourceFields.Text10
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text11
+    name: Text11
+    fullName: excel.Office.ProjectResourceFields.Text11
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text12
+    name: Text12
+    fullName: excel.Office.ProjectResourceFields.Text12
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text13
+    name: Text13
+    fullName: excel.Office.ProjectResourceFields.Text13
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text14
+    name: Text14
+    fullName: excel.Office.ProjectResourceFields.Text14
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text15
+    name: Text15
+    fullName: excel.Office.ProjectResourceFields.Text15
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text16
+    name: Text16
+    fullName: excel.Office.ProjectResourceFields.Text16
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text17
+    name: Text17
+    fullName: excel.Office.ProjectResourceFields.Text17
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text18
+    name: Text18
+    fullName: excel.Office.ProjectResourceFields.Text18
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text19
+    name: Text19
+    fullName: excel.Office.ProjectResourceFields.Text19
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text2
+    name: Text2
+    fullName: excel.Office.ProjectResourceFields.Text2
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text20
+    name: Text20
+    fullName: excel.Office.ProjectResourceFields.Text20
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text21
+    name: Text21
+    fullName: excel.Office.ProjectResourceFields.Text21
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text22
+    name: Text22
+    fullName: excel.Office.ProjectResourceFields.Text22
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text23
+    name: Text23
+    fullName: excel.Office.ProjectResourceFields.Text23
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text24
+    name: Text24
+    fullName: excel.Office.ProjectResourceFields.Text24
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text25
+    name: Text25
+    fullName: excel.Office.ProjectResourceFields.Text25
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text26
+    name: Text26
+    fullName: excel.Office.ProjectResourceFields.Text26
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text27
+    name: Text27
+    fullName: excel.Office.ProjectResourceFields.Text27
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text28
+    name: Text28
+    fullName: excel.Office.ProjectResourceFields.Text28
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text29
+    name: Text29
+    fullName: excel.Office.ProjectResourceFields.Text29
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text3
+    name: Text3
+    fullName: excel.Office.ProjectResourceFields.Text3
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text30
+    name: Text30
+    fullName: excel.Office.ProjectResourceFields.Text30
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text4
+    name: Text4
+    fullName: excel.Office.ProjectResourceFields.Text4
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text5
+    name: Text5
+    fullName: excel.Office.ProjectResourceFields.Text5
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text6
+    name: Text6
+    fullName: excel.Office.ProjectResourceFields.Text6
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text7
+    name: Text7
+    fullName: excel.Office.ProjectResourceFields.Text7
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text8
+    name: Text8
+    fullName: excel.Office.ProjectResourceFields.Text8
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Text9
+    name: Text9
+    fullName: excel.Office.ProjectResourceFields.Text9
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Units
+    name: Units
+    fullName: excel.Office.ProjectResourceFields.Units
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.ProjectResourceFields.Work
+    name: Work
+    fullName: excel.Office.ProjectResourceFields.Work
+    langs:
+      - typeScript
+    type: field

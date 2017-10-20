@@ -1,0 +1,95 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Office.CustomXmlPrefixMappings
+    name: Office.CustomXmlPrefixMappings
+    fullName: excel.Office.CustomXmlPrefixMappings
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Office.CustomXmlPrefixMappings.addNamespaceAsync
+      - excel.Office.CustomXmlPrefixMappings.getNamespaceAsync
+      - excel.Office.CustomXmlPrefixMappings.getPrefixAsync
+  - uid: excel.Office.CustomXmlPrefixMappings.addNamespaceAsync
+    summary: Adds a namespace.
+    name: 'addNamespaceAsync(prefix, ns, options, callback)'
+    fullName: excel.Office.CustomXmlPrefixMappings.addNamespaceAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addNamespaceAsync(prefix: string, ns: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: prefix
+          description: ''
+          type:
+            - string
+        - id: ns
+          description: ''
+          type:
+            - string
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: excel.Office.CustomXmlPrefixMappings.getNamespaceAsync
+    summary: Gets a namespace with the specified prefix
+    name: 'getNamespaceAsync(prefix, options, callback)'
+    fullName: excel.Office.CustomXmlPrefixMappings.getNamespaceAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNamespaceAsync(prefix: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: prefix
+          description: ''
+          type:
+            - string
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: excel.Office.CustomXmlPrefixMappings.getPrefixAsync
+    summary: Gets a prefix for the specified URI
+    name: 'getPrefixAsync(ns, options, callback)'
+    fullName: excel.Office.CustomXmlPrefixMappings.getPrefixAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrefixAsync(ns: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: ns
+          description: ''
+          type:
+            - string
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'

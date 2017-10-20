@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.OfficeExtension.IPromise
+    summary: An IPromise object that represents a deferred interaction with the host Office application.
+    name: OfficeExtension.IPromise
+    fullName: excel.OfficeExtension.IPromise
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.OfficeExtension.IPromise.catch
+      - excel.OfficeExtension.IPromise.then
+  - uid: excel.OfficeExtension.IPromise.catch
+    summary: >-
+      Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call
+      stack.
+    name: catch(onRejected)
+    fullName: excel.OfficeExtension.IPromise.catch
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'catch < U >(onRejected?: (error: any) => IPromise<U>): IPromise<U>;'
+      return:
+        type:
+          - IPromise<U>
+        description: ''
+      parameters:
+        - id: onRejected
+          description: ''
+          type:
+            - '(error: any) => IPromise<U>'
+  - uid: excel.OfficeExtension.IPromise.then
+    summary: >-
+      This method will be called once the previous promise has been resolved. Both the onFulfilled on onRejected
+      callbacks are optional. If either or both are omitted, the next onFulfilled/onRejected in the chain will be called
+      called.
+    name: 'then(onFulfilled, onRejected)'
+    fullName: excel.OfficeExtension.IPromise.then
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'then < U >(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;'
+      return:
+        type:
+          - IPromise<U>
+        description: A new promise for the value or error that was returned from onFulfilled/onRejected.
+      parameters:
+        - id: onFulfilled
+          description: ''
+          type:
+            - '(value: R) => IPromise<U>'
+        - id: onRejected
+          description: ''
+          type:
+            - '(error: any) => IPromise<U>'

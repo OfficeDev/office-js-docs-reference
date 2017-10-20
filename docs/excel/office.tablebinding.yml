@@ -1,0 +1,235 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Office.TableBinding
+    name: Office.TableBinding
+    fullName: excel.Office.TableBinding
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Binding
+    package: excel
+    children:
+      - excel.Office.TableBinding.addColumnsAsync
+      - excel.Office.TableBinding.addRowsAsync
+      - excel.Office.TableBinding.clearFormatsAsync
+      - excel.Office.TableBinding.columnCount
+      - excel.Office.TableBinding.deleteAllDataValuesAsync
+      - excel.Office.TableBinding.getFormatsAsync
+      - excel.Office.TableBinding.hasHeaders
+      - excel.Office.TableBinding.rowCount
+      - excel.Office.TableBinding.setFormatsAsync
+      - excel.Office.TableBinding.setTableOptionsAsync
+  - uid: excel.Office.TableBinding.addColumnsAsync
+    summary: Adds the specified columns to the table
+    name: 'addColumnsAsync(tableData, options, callback)'
+    fullName: excel.Office.TableBinding.addColumnsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addColumnsAsync(tableData: TableData | any[][], options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: tableData
+          description: ''
+          type:
+            - 'TableData | any[][]'
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: excel.Office.TableBinding.addRowsAsync
+    summary: Adds the specified rows to the table
+    name: 'addRowsAsync(rows, options, callback)'
+    fullName: excel.Office.TableBinding.addRowsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addRowsAsync(rows: TableData | any[][], options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rows
+          description: ''
+          type:
+            - 'TableData | any[][]'
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: excel.Office.TableBinding.clearFormatsAsync
+    summary: Clears formatting on the bound table.
+    name: 'clearFormatsAsync(options, callback)'
+    fullName: excel.Office.TableBinding.clearFormatsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearFormatsAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: excel.Office.TableBinding.columnCount
+    name: columnCount
+    fullName: excel.Office.TableBinding.columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnCount: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Office.TableBinding.deleteAllDataValuesAsync
+    summary: Clears the table
+    name: 'deleteAllDataValuesAsync(options, callback)'
+    fullName: excel.Office.TableBinding.deleteAllDataValuesAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteAllDataValuesAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: excel.Office.TableBinding.getFormatsAsync
+    summary: Gets the formatting on specified items in the table.
+    name: 'getFormatsAsync(cellReference, formats, options, callback)'
+    fullName: excel.Office.TableBinding.getFormatsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getFormatsAsync(cellReference?: any, formats?: any[], options?: any, callback?: (result: AsyncResult) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cellReference
+          description: ''
+          type:
+            - any
+        - id: formats
+          description: ''
+          type:
+            - 'any[]'
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: excel.Office.TableBinding.hasHeaders
+    name: hasHeaders
+    fullName: excel.Office.TableBinding.hasHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasHeaders: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Office.TableBinding.rowCount
+    name: rowCount
+    fullName: excel.Office.TableBinding.rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowCount: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Office.TableBinding.setFormatsAsync
+    summary: Sets formatting on specified items and data in the table.
+    name: 'setFormatsAsync(formatsInfo, options, callback)'
+    fullName: excel.Office.TableBinding.setFormatsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormatsAsync(formatsInfo?: any[], options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formatsInfo
+          description: ''
+          type:
+            - 'any[]'
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: excel.Office.TableBinding.setTableOptionsAsync
+    summary: Updates table formatting options on the bound table.
+    name: 'setTableOptionsAsync(tableOptions, options, callback)'
+    fullName: excel.Office.TableBinding.setTableOptionsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTableOptionsAsync(tableOptions: any, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: tableOptions
+          description: ''
+          type:
+            - any
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'

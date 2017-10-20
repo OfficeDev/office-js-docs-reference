@@ -1,0 +1,137 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartTitle
+    summary: |-
+      Represents a chart title object of a chart. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: Excel.ChartTitle
+    fullName: excel.Excel.ChartTitle
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartTitle.format
+      - excel.Excel.ChartTitle.load
+      - excel.Excel.ChartTitle.overlay
+      - excel.Excel.ChartTitle.set
+      - excel.Excel.ChartTitle.text
+      - excel.Excel.ChartTitle.toJSON
+      - excel.Excel.ChartTitle.visible
+  - uid: excel.Excel.ChartTitle.format
+    summary: |-
+      Represents the formatting of a chart title, which includes fill and font formatting. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: format
+    fullName: excel.Excel.ChartTitle.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format: Excel.ChartTitleFormat;'
+      return:
+        type:
+          - Excel.ChartTitleFormat
+  - uid: excel.Excel.ChartTitle.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ChartTitle.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartTitle;'
+      return:
+        type:
+          - Excel.ChartTitle
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.ChartTitle.overlay
+    summary: |-
+      Boolean value representing if the chart title will overlay the chart or not. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: overlay
+    fullName: excel.Excel.ChartTitle.overlay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlay: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartTitle.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartTitle.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ChartTitleUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartTitleUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.ChartTitle.text
+    summary: |-
+      Represents the title text of a chart. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: text
+    fullName: excel.Excel.ChartTitle.text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ChartTitle.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartTitle.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"format\": ChartTitleFormat;\r\n            \"overlay\": boolean;\r\n            \"text\": string;\r\n            \"visible\": boolean;\r\n        }"
+        description: ''
+  - uid: excel.Excel.ChartTitle.visible
+    summary: |-
+      A boolean value the represents the visibility of a chart title object. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: visible
+    fullName: excel.Excel.ChartTitle.visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean

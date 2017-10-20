@@ -1,0 +1,73 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.OfficeExtension.EventHandlers
+    name: OfficeExtension.EventHandlers
+    fullName: excel.OfficeExtension.EventHandlers
+    langs:
+      - typeScript
+    type: class
+    package: excel
+    children:
+      - excel.OfficeExtension.EventHandlers.constructor
+      - excel.OfficeExtension.EventHandlers.add
+      - excel.OfficeExtension.EventHandlers.remove
+  - uid: excel.OfficeExtension.EventHandlers.constructor
+    summary: Constructs a new instance of the EventHandlers class
+    name: 'constructor(context, parentObject, name, eventInfo)'
+    fullName: excel.OfficeExtension.EventHandlers.constructor
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(context: ClientRequestContext, parentObject: ClientObject, name: string, eventInfo: EventInfo<T>);'
+      parameters:
+        - id: context
+          description: ''
+          type:
+            - ClientRequestContext
+        - id: parentObject
+          description: ''
+          type:
+            - ClientObject
+        - id: name
+          description: ''
+          type:
+            - string
+        - id: eventInfo
+          description: ''
+          type:
+            - EventInfo<T>
+  - uid: excel.OfficeExtension.EventHandlers.add
+    name: add(handler)
+    fullName: excel.OfficeExtension.EventHandlers.add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(handler: (args: T) => IPromise<any>): EventHandlerResult<T>;'
+      return:
+        type:
+          - EventHandlerResult<T>
+        description: ''
+      parameters:
+        - id: handler
+          description: ''
+          type:
+            - '(args: T) => IPromise<any>'
+  - uid: excel.OfficeExtension.EventHandlers.remove
+    name: remove(handler)
+    fullName: excel.OfficeExtension.EventHandlers.remove
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(handler: (args: T) => IPromise<any>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: handler
+          description: ''
+          type:
+            - '(args: T) => IPromise<any>'

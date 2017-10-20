@@ -1,0 +1,190 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.WorksheetProtectionOptions
+    summary: |-
+      Represents the options in sheet protection. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: Excel.WorksheetProtectionOptions
+    fullName: excel.Excel.WorksheetProtectionOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.WorksheetProtectionOptions.allowAutoFilter
+      - excel.Excel.WorksheetProtectionOptions.allowDeleteColumns
+      - excel.Excel.WorksheetProtectionOptions.allowDeleteRows
+      - excel.Excel.WorksheetProtectionOptions.allowFormatCells
+      - excel.Excel.WorksheetProtectionOptions.allowFormatColumns
+      - excel.Excel.WorksheetProtectionOptions.allowFormatRows
+      - excel.Excel.WorksheetProtectionOptions.allowInsertColumns
+      - excel.Excel.WorksheetProtectionOptions.allowInsertHyperlinks
+      - excel.Excel.WorksheetProtectionOptions.allowInsertRows
+      - excel.Excel.WorksheetProtectionOptions.allowPivotTables
+      - excel.Excel.WorksheetProtectionOptions.allowSort
+  - uid: excel.Excel.WorksheetProtectionOptions.allowAutoFilter
+    summary: |-
+      Represents the worksheet protection option of allowing using auto filter feature. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowAutoFilter
+    fullName: excel.Excel.WorksheetProtectionOptions.allowAutoFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowAutoFilter?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.WorksheetProtectionOptions.allowDeleteColumns
+    summary: |-
+      Represents the worksheet protection option of allowing deleting columns. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowDeleteColumns
+    fullName: excel.Excel.WorksheetProtectionOptions.allowDeleteColumns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowDeleteColumns?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.WorksheetProtectionOptions.allowDeleteRows
+    summary: |-
+      Represents the worksheet protection option of allowing deleting rows. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowDeleteRows
+    fullName: excel.Excel.WorksheetProtectionOptions.allowDeleteRows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowDeleteRows?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.WorksheetProtectionOptions.allowFormatCells
+    summary: |-
+      Represents the worksheet protection option of allowing formatting cells. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowFormatCells
+    fullName: excel.Excel.WorksheetProtectionOptions.allowFormatCells
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowFormatCells?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.WorksheetProtectionOptions.allowFormatColumns
+    summary: |-
+      Represents the worksheet protection option of allowing formatting columns. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowFormatColumns
+    fullName: excel.Excel.WorksheetProtectionOptions.allowFormatColumns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowFormatColumns?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.WorksheetProtectionOptions.allowFormatRows
+    summary: |-
+      Represents the worksheet protection option of allowing formatting rows. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowFormatRows
+    fullName: excel.Excel.WorksheetProtectionOptions.allowFormatRows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowFormatRows?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.WorksheetProtectionOptions.allowInsertColumns
+    summary: |-
+      Represents the worksheet protection option of allowing inserting columns. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowInsertColumns
+    fullName: excel.Excel.WorksheetProtectionOptions.allowInsertColumns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowInsertColumns?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.WorksheetProtectionOptions.allowInsertHyperlinks
+    summary: |-
+      Represents the worksheet protection option of allowing inserting hyperlinks. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowInsertHyperlinks
+    fullName: excel.Excel.WorksheetProtectionOptions.allowInsertHyperlinks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowInsertHyperlinks?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.WorksheetProtectionOptions.allowInsertRows
+    summary: |-
+      Represents the worksheet protection option of allowing inserting rows. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowInsertRows
+    fullName: excel.Excel.WorksheetProtectionOptions.allowInsertRows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowInsertRows?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.WorksheetProtectionOptions.allowPivotTables
+    summary: |-
+      Represents the worksheet protection option of allowing using PivotTable feature. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowPivotTables
+    fullName: excel.Excel.WorksheetProtectionOptions.allowPivotTables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowPivotTables?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.WorksheetProtectionOptions.allowSort
+    summary: |-
+      Represents the worksheet protection option of allowing using sort feature. 
+
+       \[Api set: ExcelApi 1.2\]
+    name: allowSort
+    fullName: excel.Excel.WorksheetProtectionOptions.allowSort
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowSort?: boolean;'
+      return:
+        type:
+          - boolean

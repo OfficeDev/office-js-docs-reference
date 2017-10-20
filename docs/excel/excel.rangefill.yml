@@ -1,0 +1,107 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.RangeFill
+    summary: |-
+      Represents the background of a range object. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: Excel.RangeFill
+    fullName: excel.Excel.RangeFill
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.RangeFill.clear
+      - excel.Excel.RangeFill.color
+      - excel.Excel.RangeFill.load
+      - excel.Excel.RangeFill.set
+      - excel.Excel.RangeFill.toJSON
+  - uid: excel.Excel.RangeFill.clear
+    summary: |-
+      Resets the range background. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: clear()
+    fullName: excel.Excel.RangeFill.clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.RangeFill.color
+    summary: >-
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      color (e.g. "orange") 
+
+       \[Api set: ExcelApi 1.1\]
+    name: color
+    fullName: excel.Excel.RangeFill.color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.RangeFill.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.RangeFill.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeFill;'
+      return:
+        type:
+          - Excel.RangeFill
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.RangeFill.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.RangeFill.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.RangeFillUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.RangeFillUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.RangeFill.toJSON
+    name: toJSON()
+    fullName: excel.Excel.RangeFill.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"color\": string;\r\n        }"
+        description: ''

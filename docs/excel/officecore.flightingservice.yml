@@ -1,0 +1,143 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.OfficeCore.FlightingService
+    summary: '\[Api set: Experimentation 1.1 (PREVIEW)\]'
+    name: OfficeCore.FlightingService
+    fullName: excel.OfficeCore.FlightingService
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.OfficeCore.FlightingService.getFeature
+      - excel.OfficeCore.FlightingService.getFeatureGate
+      - excel.OfficeCore.FlightingService.newObject
+      - excel.OfficeCore.FlightingService.resetOverride
+      - excel.OfficeCore.FlightingService.setOverride
+      - excel.OfficeCore.FlightingService.toJSON
+  - uid: excel.OfficeCore.FlightingService.getFeature
+    name: 'getFeature(featureName, type, defaultValue, possibleValues)'
+    fullName: excel.OfficeCore.FlightingService.getFeature
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getFeature(featureName: string, type: string, defaultValue: number | boolean | string, possibleValues?:
+        Array<number> | Array<string> | Array<boolean> | Array<ScopedValue>): OfficeCore.ABType;
+      return:
+        type:
+          - OfficeCore.ABType
+        description: ''
+      parameters:
+        - id: featureName
+          description: ''
+          type:
+            - string
+        - id: type
+          description: ''
+          type:
+            - string
+        - id: defaultValue
+          description: ''
+          type:
+            - number | boolean | string
+        - id: possibleValues
+          description: ''
+          type:
+            - Array<number> | Array<string> | Array<boolean> | Array<ScopedValue>
+  - uid: excel.OfficeCore.FlightingService.getFeatureGate
+    name: 'getFeatureGate(featureName, scope)'
+    fullName: excel.OfficeCore.FlightingService.getFeatureGate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFeatureGate(featureName: string, scope?: string): OfficeCore.ABType;'
+      return:
+        type:
+          - OfficeCore.ABType
+        description: ''
+      parameters:
+        - id: featureName
+          description: ''
+          type:
+            - string
+        - id: scope
+          description: ''
+          type:
+            - string
+  - uid: excel.OfficeCore.FlightingService.newObject
+    summary: Create a new instance of OfficeCore.FlightingService object
+    name: newObject(context)
+    fullName: excel.OfficeCore.FlightingService.newObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static newObject(context: OfficeExtension.ClientRequestContext): OfficeCore.FlightingService;'
+      return:
+        type:
+          - OfficeCore.FlightingService
+        description: ''
+      parameters:
+        - id: context
+          description: ''
+          type:
+            - OfficeExtension.ClientRequestContext
+  - uid: excel.OfficeCore.FlightingService.resetOverride
+    name: resetOverride(featureName)
+    fullName: excel.OfficeCore.FlightingService.resetOverride
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'resetOverride(featureName: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: featureName
+          description: ''
+          type:
+            - string
+  - uid: excel.OfficeCore.FlightingService.setOverride
+    name: 'setOverride(featureName, type, value)'
+    fullName: excel.OfficeCore.FlightingService.setOverride
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setOverride(featureName: string, type: string, value: number | boolean | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: featureName
+          description: ''
+          type:
+            - string
+        - id: type
+          description: ''
+          type:
+            - string
+        - id: value
+          description: ''
+          type:
+            - number | boolean | string
+  - uid: excel.OfficeCore.FlightingService.toJSON
+    name: toJSON()
+    fullName: excel.OfficeCore.FlightingService.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - '{}'
+        description: ''

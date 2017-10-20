@@ -1,0 +1,107 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.PresetCriteriaConditionalFormat
+    summary: >-
+      Represents the the preset criteria conditional format such as above average/below average/unique values/contains
+      blank/nonblank/error/noerror. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: Excel.PresetCriteriaConditionalFormat
+    fullName: excel.Excel.PresetCriteriaConditionalFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.PresetCriteriaConditionalFormat.format
+      - excel.Excel.PresetCriteriaConditionalFormat.load
+      - excel.Excel.PresetCriteriaConditionalFormat.rule
+      - excel.Excel.PresetCriteriaConditionalFormat.set
+      - excel.Excel.PresetCriteriaConditionalFormat.toJSON
+  - uid: excel.Excel.PresetCriteriaConditionalFormat.format
+    summary: >-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+      Read-only. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: format
+    fullName: excel.Excel.PresetCriteriaConditionalFormat.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format: Excel.ConditionalRangeFormat;'
+      return:
+        type:
+          - Excel.ConditionalRangeFormat
+  - uid: excel.Excel.PresetCriteriaConditionalFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.PresetCriteriaConditionalFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.PresetCriteriaConditionalFormat;'
+      return:
+        type:
+          - Excel.PresetCriteriaConditionalFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.PresetCriteriaConditionalFormat.rule
+    summary: |-
+      The rule of the conditional format. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: rule
+    fullName: excel.Excel.PresetCriteriaConditionalFormat.rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule: Excel.ConditionalPresetCriteriaRule;'
+      return:
+        type:
+          - Excel.ConditionalPresetCriteriaRule
+  - uid: excel.Excel.PresetCriteriaConditionalFormat.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.PresetCriteriaConditionalFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.PresetCriteriaConditionalFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.PresetCriteriaConditionalFormatUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.PresetCriteriaConditionalFormat.toJSON
+    name: toJSON()
+    fullName: excel.Excel.PresetCriteriaConditionalFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"format\": ConditionalRangeFormat;\r\n            \"rule\": ConditionalPresetCriteriaRule;\r\n        }"
+        description: ''

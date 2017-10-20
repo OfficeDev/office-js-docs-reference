@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Office.PlatformType
+    name: Office.PlatformType
+    fullName: excel.Office.PlatformType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Office.PlatformType.Android
+      - excel.Office.PlatformType.iOS
+      - excel.Office.PlatformType.Mac
+      - excel.Office.PlatformType.OfficeOnline
+      - excel.Office.PlatformType.PC
+      - excel.Office.PlatformType.Universal
+  - uid: excel.Office.PlatformType.Android
+    summary: Platform is Android
+    name: Android
+    fullName: excel.Office.PlatformType.Android
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.PlatformType.iOS
+    summary: Platform is iOS
+    name: iOS
+    fullName: excel.Office.PlatformType.iOS
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.PlatformType.Mac
+    summary: Platform is Mac
+    name: Mac
+    fullName: excel.Office.PlatformType.Mac
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.PlatformType.OfficeOnline
+    summary: Platform is Web
+    name: OfficeOnline
+    fullName: excel.Office.PlatformType.OfficeOnline
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.PlatformType.PC
+    summary: Platform is PC
+    name: PC
+    fullName: excel.Office.PlatformType.PC
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.PlatformType.Universal
+    summary: Platform is Winrt
+    name: Universal
+    fullName: excel.Office.PlatformType.Universal
+    langs:
+      - typeScript
+    type: field

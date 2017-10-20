@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartPointFormat
+    summary: |-
+      Represents formatting object for chart points. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: Excel.ChartPointFormat
+    fullName: excel.Excel.ChartPointFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartPointFormat.fill
+      - excel.Excel.ChartPointFormat.load
+      - excel.Excel.ChartPointFormat.toJSON
+  - uid: excel.Excel.ChartPointFormat.fill
+    summary: |-
+      Represents the fill format of a chart, which includes background formating information. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: fill
+    fullName: excel.Excel.ChartPointFormat.fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fill: Excel.ChartFill;'
+      return:
+        type:
+          - Excel.ChartFill
+  - uid: excel.Excel.ChartPointFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ChartPointFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartPointFormat;'
+      return:
+        type:
+          - Excel.ChartPointFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.ChartPointFormat.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartPointFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"fill\": ChartFill;\r\n        }"
+        description: ''

@@ -1,0 +1,121 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ConditionalFormatRule
+    summary: |-
+      Represents a rule, for all traditional rule/format pairings. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: Excel.ConditionalFormatRule
+    fullName: excel.Excel.ConditionalFormatRule
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ConditionalFormatRule.formula
+      - excel.Excel.ConditionalFormatRule.formulaLocal
+      - excel.Excel.ConditionalFormatRule.formulaR1C1
+      - excel.Excel.ConditionalFormatRule.load
+      - excel.Excel.ConditionalFormatRule.set
+      - excel.Excel.ConditionalFormatRule.toJSON
+  - uid: excel.Excel.ConditionalFormatRule.formula
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: formula
+    fullName: excel.Excel.ConditionalFormatRule.formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ConditionalFormatRule.formulaLocal
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on in the user's language. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: formulaLocal
+    fullName: excel.Excel.ConditionalFormatRule.formulaLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaLocal: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ConditionalFormatRule.formulaR1C1
+    summary: |-
+      The formula, if required, to evaluate the conditional format rule on in R1C1-style notation. 
+
+       \[Api set: ExcelApi 1.6 (PREVIEW)\]
+    name: formulaR1C1
+    fullName: excel.Excel.ConditionalFormatRule.formulaR1C1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaR1C1: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ConditionalFormatRule.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ConditionalFormatRule.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalFormatRule;'
+      return:
+        type:
+          - Excel.ConditionalFormatRule
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.ConditionalFormatRule.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ConditionalFormatRule.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ConditionalFormatRuleUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ConditionalFormatRuleUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.ConditionalFormatRule.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ConditionalFormatRule.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"formula\": string;\r\n            \"formulaLocal\": string;\r\n            \"formulaR1C1\": string;\r\n        }"
+        description: ''

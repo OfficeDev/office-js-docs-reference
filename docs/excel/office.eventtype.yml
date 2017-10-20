@@ -1,0 +1,114 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Office.EventType
+    name: Office.EventType
+    fullName: excel.Office.EventType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Office.EventType.ActiveViewChanged
+      - excel.Office.EventType.BindingDataChanged
+      - excel.Office.EventType.BindingSelectionChanged
+      - excel.Office.EventType.DialogEventReceived
+      - excel.Office.EventType.DialogMessageReceived
+      - excel.Office.EventType.DocumentSelectionChanged
+      - excel.Office.EventType.NodeDeleted
+      - excel.Office.EventType.NodeInserted
+      - excel.Office.EventType.NodeReplaced
+      - excel.Office.EventType.ResourceSelectionChanged
+      - excel.Office.EventType.SettingsChanged
+      - excel.Office.EventType.TaskSelectionChanged
+      - excel.Office.EventType.ViewSelectionChanged
+  - uid: excel.Office.EventType.ActiveViewChanged
+    summary: Occurs when the user changes the current view of the document.
+    name: ActiveViewChanged
+    fullName: excel.Office.EventType.ActiveViewChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.EventType.BindingDataChanged
+    summary: Triggers when a binding level data change happens
+    name: BindingDataChanged
+    fullName: excel.Office.EventType.BindingDataChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.EventType.BindingSelectionChanged
+    summary: Triggers when a binding level selection happens
+    name: BindingSelectionChanged
+    fullName: excel.Office.EventType.BindingSelectionChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.EventType.DialogEventReceived
+    summary: 'Triggers when Dialog has a event, such as dialog closed, dialog navigation failed.'
+    name: DialogEventReceived
+    fullName: excel.Office.EventType.DialogEventReceived
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.EventType.DialogMessageReceived
+    summary: Triggers when Dialog sends a message via MessageParent.
+    name: DialogMessageReceived
+    fullName: excel.Office.EventType.DialogMessageReceived
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.EventType.DocumentSelectionChanged
+    summary: Triggers when a document level selection happens
+    name: DocumentSelectionChanged
+    fullName: excel.Office.EventType.DocumentSelectionChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.EventType.NodeDeleted
+    summary: Triggers when a customXmlPart node was deleted
+    name: NodeDeleted
+    fullName: excel.Office.EventType.NodeDeleted
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.EventType.NodeInserted
+    summary: Triggers when a customXmlPart node was inserted
+    name: NodeInserted
+    fullName: excel.Office.EventType.NodeInserted
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.EventType.NodeReplaced
+    summary: Triggers when a customXmlPart node was replaced
+    name: NodeReplaced
+    fullName: excel.Office.EventType.NodeReplaced
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.EventType.ResourceSelectionChanged
+    summary: Triggers when a Resource selection happens in Project.
+    name: ResourceSelectionChanged
+    fullName: excel.Office.EventType.ResourceSelectionChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.EventType.SettingsChanged
+    summary: Triggers when settings change in a co-Auth session.
+    name: SettingsChanged
+    fullName: excel.Office.EventType.SettingsChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.EventType.TaskSelectionChanged
+    summary: Triggers when a Task selection happens in Project.
+    name: TaskSelectionChanged
+    fullName: excel.Office.EventType.TaskSelectionChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: excel.Office.EventType.ViewSelectionChanged
+    summary: Triggers when a View selection happens in Project.
+    name: ViewSelectionChanged
+    fullName: excel.Office.EventType.ViewSelectionChanged
+    langs:
+      - typeScript
+    type: field

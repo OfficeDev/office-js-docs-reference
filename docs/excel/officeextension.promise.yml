@@ -1,0 +1,133 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.OfficeExtension.Promise
+    summary: >-
+      An Promise object that represents a deferred interaction with the host Office application. The
+      publically-consumable OfficeExtension.Promise is available starting in ExcelApi 1.2 and WordApi 1.2. Promises can
+      be chained via ".then", and errors can be caught via ".catch". Remember to always use a ".catch" on the outer
+      promise, and to return intermediary promises so as not to break the promise chain. When a "native" Promise
+      implementation is available, OfficeExtension.Promise will switch to use the native Promise instead.
+    name: OfficeExtension.Promise
+    fullName: excel.OfficeExtension.Promise
+    langs:
+      - typeScript
+    type: class
+    implements:
+      - IPromise
+    package: excel
+    children:
+      - excel.OfficeExtension.Promise.constructor
+      - excel.OfficeExtension.Promise.all
+      - excel.OfficeExtension.Promise.catch
+      - excel.OfficeExtension.Promise.reject
+      - excel.OfficeExtension.Promise.resolve
+      - excel.OfficeExtension.Promise.then
+  - uid: excel.OfficeExtension.Promise.constructor
+    summary: Creates a new promise based on a function that accepts resolve and reject handlers.
+    name: constructor(func)
+    fullName: excel.OfficeExtension.Promise.constructor
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(func: (resolve: (value?: R | IPromise<R>) => void, reject: (error?: any) => void) => void);'
+      parameters:
+        - id: func
+          description: ''
+          type:
+            - '(resolve: (value?: R | IPromise<R>) => void, reject: (error?: any) => void) => void'
+  - uid: excel.OfficeExtension.Promise.all
+    summary: Creates a promise that resolves when all of the child promises resolve.
+    name: all(promises)
+    fullName: excel.OfficeExtension.Promise.all
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static all < U >(promises: OfficeExtension.IPromise<U>[]): IPromise<U[]>;'
+      return:
+        type:
+          - 'IPromise<U[]>'
+        description: ''
+      parameters:
+        - id: promises
+          description: ''
+          type:
+            - 'OfficeExtension.IPromise<U>[]'
+  - uid: excel.OfficeExtension.Promise.catch
+    summary: >-
+      Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call
+      stack.
+    name: catch(onRejected)
+    fullName: excel.OfficeExtension.Promise.catch
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'catch < U >(onRejected?: (error: any) => IPromise<U>): IPromise<U>;'
+      return:
+        type:
+          - IPromise<U>
+        description: ''
+      parameters:
+        - id: onRejected
+          description: ''
+          type:
+            - '(error: any) => IPromise<U>'
+  - uid: excel.OfficeExtension.Promise.reject
+    summary: Creates a promise that is rejected.
+    name: reject(error)
+    fullName: excel.OfficeExtension.Promise.reject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static reject < U >(error: any): IPromise<U>;'
+      return:
+        type:
+          - IPromise<U>
+        description: ''
+      parameters:
+        - id: error
+          description: ''
+          type:
+            - any
+  - uid: excel.OfficeExtension.Promise.resolve
+    summary: Creates a promise that is resolved.
+    name: resolve(value)
+    fullName: excel.OfficeExtension.Promise.resolve
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static resolve < U >(value: U): IPromise<U>;'
+      return:
+        type:
+          - IPromise<U>
+        description: ''
+      parameters:
+        - id: value
+          description: ''
+          type:
+            - U
+  - uid: excel.OfficeExtension.Promise.then
+    name: 'then(onFulfilled, onRejected)'
+    fullName: excel.OfficeExtension.Promise.then
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'then < U >(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;'
+      return:
+        type:
+          - IPromise<U>
+        description: ''
+      parameters:
+        - id: onFulfilled
+          description: ''
+          type:
+            - '(value: R) => IPromise<U>'
+        - id: onRejected
+          description: ''
+          type:
+            - '(error: any) => IPromise<U>'

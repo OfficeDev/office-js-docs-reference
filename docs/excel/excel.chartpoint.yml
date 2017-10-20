@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartPoint
+    summary: |-
+      Represents a point of a series in a chart. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: Excel.ChartPoint
+    fullName: excel.Excel.ChartPoint
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartPoint.format
+      - excel.Excel.ChartPoint.load
+      - excel.Excel.ChartPoint.toJSON
+      - excel.Excel.ChartPoint.value
+  - uid: excel.Excel.ChartPoint.format
+    summary: |-
+      Encapsulates the format properties chart point. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: format
+    fullName: excel.Excel.ChartPoint.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format: Excel.ChartPointFormat;'
+      return:
+        type:
+          - Excel.ChartPointFormat
+  - uid: excel.Excel.ChartPoint.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ChartPoint.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartPoint;'
+      return:
+        type:
+          - Excel.ChartPoint
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.ChartPoint.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartPoint.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"format\": ChartPointFormat;\r\n            \"value\": any;\r\n        }"
+        description: ''
+  - uid: excel.Excel.ChartPoint.value
+    summary: |-
+      Returns the value of a chart point. Read-only. 
+
+       \[Api set: ExcelApi 1.1\]
+    name: value
+    fullName: excel.Excel.ChartPoint.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: any;'
+      return:
+        type:
+          - any
