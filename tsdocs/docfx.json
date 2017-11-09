@@ -7,6 +7,7 @@
           "**/*.yml"
         ],
         "src": "docs-ref-autogen",
+        "dest": "api",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -21,7 +22,7 @@
           "**/*.yml"
         ],
         "src": "breadcrumb",
-        "dest": "breadcrumb",
+        "dest": "api/breadcrumb",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -37,7 +38,8 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**"
-        ]
+        ],
+        "dest": "api"
       }
     ],
     "overwrite": [],
