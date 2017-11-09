@@ -13,7 +13,8 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
-        ]
+        ],
+        "dest": "api"
       }
     ],
     "resource": [
@@ -25,7 +26,8 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**"
-        ]
+        ],
+        "dest": "api"
       }
     ],
     "overwrite": [],
