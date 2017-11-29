@@ -1,0 +1,41 @@
+Excel.Range.clear:
+ - |
+    async function clearRange() {
+        await Excel.run(async (context) => {
+            const sheet = context.workbook.worksheets.getItem("Sample");
+            sheet.getRange().clear();
+            await context.sync();
+        });
+    }
+
+
+Excel.Range.values:
+
+ - |
+    async function setValuesBasic() {
+        await Excel.run(async (context) => {
+            const sheet = context.workbook.worksheets.getItem("Sample");
+            sheet.getRange("A1:B1").values = [
+                "Hello", "World"
+            ];
+            await context.sync();
+        });
+    }
+
+ - |
+    async function setDateValueUsingTimestamp() {
+        await Excel.run(async (context) => {
+            const sheet = context.workbook.worksheets.getItem("Sample");
+            const now = Date.now();
+            console.log(`set (timestamp): ${now}`);
+            const nowMoment = moment(now);
+            console.log(`set (moment): ${JSON.stringify(nowMoment)}`);
+            const nowMS = nowMoment.toOADate();
+            console.log(`set (MSDate): ${nowMS}`);
+            const dateRange = sheet.getRange("B4");
+            dateRange.values = [[nowMS]];``
+            dateRange.numberFormat = [["[$-409]m/d/yy h:mm AM/PM;@"]];
+            dateRange.format.autofitColumns();
+            await context.sync();
+        });
+    }
