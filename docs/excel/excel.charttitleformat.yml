@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ChartTitleFormat
     summary: |-
-      Provides access to the office art formatting for chart title. 
+      Provides access to the office art formatting for chart title.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartTitleFormat
     fullName: excel.Excel.ChartTitleFormat
     langs:
@@ -21,31 +21,31 @@ items:
       - excel.Excel.ChartTitleFormat.toJSON
   - uid: excel.Excel.ChartTitleFormat.fill
     summary: |-
-      Represents the fill format of an object, which includes background formating information. Read-only. 
+      Represents the fill format of an object, which includes background formating information. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: fill
     fullName: excel.Excel.ChartTitleFormat.fill
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'fill: Excel.ChartFill;'
+      content: 'readonly fill: Excel.ChartFill;'
       return:
         type:
           - Excel.ChartFill
   - uid: excel.Excel.ChartTitleFormat.font
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for an object. Read-only. 
+      Represents the font attributes (font name, font size, color, etc.) for an object. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: font
     fullName: excel.Excel.ChartTitleFormat.font
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'font: Excel.ChartFont;'
+      content: 'readonly font: Excel.ChartFont;'
       return:
         type:
           - Excel.ChartFont

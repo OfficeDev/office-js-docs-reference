@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.DataBarConditionalFormat
     summary: |-
-      Represents an Excel Conditional Data Bar Type. 
+      Represents an Excel Conditional Data Bar Type.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.DataBarConditionalFormat
     fullName: excel.Excel.DataBarConditionalFormat
     langs:
@@ -28,9 +28,10 @@ items:
   - uid: excel.Excel.DataBarConditionalFormat.axisColor
     summary: >-
       HTML color code representing the color of the Axis line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange"). "" (empty string) if no axis is present or set. 
+      color (e.g. "orange"). "" (empty string) if no axis is present or set.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: axisColor
     fullName: excel.Excel.DataBarConditionalFormat.axisColor
     langs:
@@ -43,9 +44,9 @@ items:
           - string
   - uid: excel.Excel.DataBarConditionalFormat.axisFormat
     summary: |-
-      Representation of how the axis is determined for an Excel data bar. 
+      Representation of how the axis is determined for an Excel data bar.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: axisFormat
     fullName: excel.Excel.DataBarConditionalFormat.axisFormat
     langs:
@@ -58,9 +59,9 @@ items:
           - string
   - uid: excel.Excel.DataBarConditionalFormat.barDirection
     summary: |-
-      Represents the direction that the data bar graphic should be based on. 
+      Represents the direction that the data bar graphic should be based on.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: barDirection
     fullName: excel.Excel.DataBarConditionalFormat.barDirection
     langs:
@@ -93,9 +94,9 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.DataBarConditionalFormat.lowerBoundRule
     summary: |-
-      The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar. 
+      The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: lowerBoundRule
     fullName: excel.Excel.DataBarConditionalFormat.lowerBoundRule
     langs:
@@ -108,31 +109,31 @@ items:
           - Excel.ConditionalDataBarRule
   - uid: excel.Excel.DataBarConditionalFormat.negativeFormat
     summary: |-
-      Representation of all values to the left of the axis in an Excel data bar. 
+      Representation of all values to the left of the axis in an Excel data bar.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: negativeFormat
     fullName: excel.Excel.DataBarConditionalFormat.negativeFormat
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'negativeFormat: Excel.ConditionalDataBarNegativeFormat;'
+      content: 'readonly negativeFormat: Excel.ConditionalDataBarNegativeFormat;'
       return:
         type:
           - Excel.ConditionalDataBarNegativeFormat
   - uid: excel.Excel.DataBarConditionalFormat.positiveFormat
     summary: |-
-      Representation of all values to the right of the axis in an Excel data bar. 
+      Representation of all values to the right of the axis in an Excel data bar.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: positiveFormat
     fullName: excel.Excel.DataBarConditionalFormat.positiveFormat
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'positiveFormat: Excel.ConditionalDataBarPositiveFormat;'
+      content: 'readonly positiveFormat: Excel.ConditionalDataBarPositiveFormat;'
       return:
         type:
           - Excel.ConditionalDataBarPositiveFormat
@@ -160,9 +161,9 @@ items:
             - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
   - uid: excel.Excel.DataBarConditionalFormat.showDataBarOnly
     summary: |-
-      If true, hides the values from the cells where the data bar is applied. 
+      If true, hides the values from the cells where the data bar is applied.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: showDataBarOnly
     fullName: excel.Excel.DataBarConditionalFormat.showDataBarOnly
     langs:
@@ -187,9 +188,9 @@ items:
         description: ''
   - uid: excel.Excel.DataBarConditionalFormat.upperBoundRule
     summary: |-
-      The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar. 
+      The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: upperBoundRule
     fullName: excel.Excel.DataBarConditionalFormat.upperBoundRule
     langs:

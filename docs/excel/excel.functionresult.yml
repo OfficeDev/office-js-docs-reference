@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.FunctionResult
     summary: |-
-      An object containing the result of a function-evaluation operation 
+      An object containing the result of a function-evaluation operation
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: Excel.FunctionResult
     fullName: excel.Excel.FunctionResult
     langs:
@@ -21,16 +21,17 @@ items:
   - uid: excel.Excel.FunctionResult.error
     summary: >-
       Error value (such as "\#DIV/0") representing the error. If the error string is not set, then the function
-      succeeded, and its result is written to the Value field. The error is always in the English locale. 
+      succeeded, and its result is written to the Value field. The error is always in the English locale.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: error
     fullName: excel.Excel.FunctionResult.error
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'error: string;'
+      content: 'readonly error: string;'
       return:
         type:
           - string
@@ -69,16 +70,17 @@ items:
   - uid: excel.Excel.FunctionResult.value
     summary: >-
       The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error
-      property is not set). 
+      property is not set).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: value
     fullName: excel.Excel.FunctionResult.value
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'value: T;'
+      content: 'readonly value: T;'
       return:
         type:
           - T

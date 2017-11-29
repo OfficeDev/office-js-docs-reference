@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ConditionalPresetCriteriaRule
     summary: |-
-      Represents the Preset Criteria Conditional Format Rule 
+      Represents the Preset Criteria Conditional Format Rule
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.ConditionalPresetCriteriaRule
     fullName: excel.Excel.ConditionalPresetCriteriaRule
     langs:
@@ -15,9 +15,9 @@ items:
       - excel.Excel.ConditionalPresetCriteriaRule.criterion
   - uid: excel.Excel.ConditionalPresetCriteriaRule.criterion
     summary: |-
-      The criterion of the conditional format. 
+      The criterion of the conditional format.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: criterion
     fullName: excel.Excel.ConditionalPresetCriteriaRule.criterion
     langs:

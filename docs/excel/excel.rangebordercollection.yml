@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.RangeBorderCollection
     summary: |-
-      Represents the border objects that make up the range border. 
+      Represents the border objects that make up the range border.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.RangeBorderCollection
     fullName: excel.Excel.RangeBorderCollection
     langs:
@@ -22,24 +22,24 @@ items:
       - excel.Excel.RangeBorderCollection.toJSON
   - uid: excel.Excel.RangeBorderCollection.count
     summary: |-
-      Number of border objects in the collection. Read-only. 
+      Number of border objects in the collection. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: count
     fullName: excel.Excel.RangeBorderCollection.count
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'count: number;'
+      content: 'readonly count: number;'
       return:
         type:
           - number
   - uid: excel.Excel.RangeBorderCollection.getItem
     summary: |-
-      Gets a border object using its name 
+      Gets a border object using its name
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getItem(index)
     fullName: excel.Excel.RangeBorderCollection.getItem
     langs:
@@ -58,9 +58,9 @@ items:
             - string
   - uid: excel.Excel.RangeBorderCollection.getItemAt
     summary: |-
-      Gets a border object using its index 
+      Gets a border object using its index
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getItemAt(index)
     fullName: excel.Excel.RangeBorderCollection.getItemAt
     langs:
@@ -85,7 +85,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Excel.RangeBorder>;'
+      content: 'readonly items: Array<Excel.RangeBorder>;'
       return:
         type:
           - Array<Excel.RangeBorder>

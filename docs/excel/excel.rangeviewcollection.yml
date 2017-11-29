@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.RangeViewCollection
     summary: |-
-      Represents a collection of RangeView objects. 
+      Represents a collection of RangeView objects.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: Excel.RangeViewCollection
     fullName: excel.Excel.RangeViewCollection
     langs:
@@ -21,9 +21,9 @@ items:
       - excel.Excel.RangeViewCollection.toJSON
   - uid: excel.Excel.RangeViewCollection.getCount
     summary: |-
-      Gets the number of RangeView objects in the collection. 
+      Gets the number of RangeView objects in the collection.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getCount()
     fullName: excel.Excel.RangeViewCollection.getCount
     langs:
@@ -37,9 +37,9 @@ items:
         description: ''
   - uid: excel.Excel.RangeViewCollection.getItemAt
     summary: |-
-      Gets a RangeView Row via it's index. Zero-Indexed. 
+      Gets a RangeView Row via it's index. Zero-Indexed.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: getItemAt(index)
     fullName: excel.Excel.RangeViewCollection.getItemAt
     langs:
@@ -64,7 +64,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Excel.RangeView>;'
+      content: 'readonly items: Array<Excel.RangeView>;'
       return:
         type:
           - Array<Excel.RangeView>

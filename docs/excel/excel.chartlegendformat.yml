@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ChartLegendFormat
     summary: |-
-      Encapsulates the format properties of a chart legend. 
+      Encapsulates the format properties of a chart legend.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartLegendFormat
     fullName: excel.Excel.ChartLegendFormat
     langs:
@@ -21,31 +21,31 @@ items:
       - excel.Excel.ChartLegendFormat.toJSON
   - uid: excel.Excel.ChartLegendFormat.fill
     summary: |-
-      Represents the fill format of an object, which includes background formating information. Read-only. 
+      Represents the fill format of an object, which includes background formating information. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: fill
     fullName: excel.Excel.ChartLegendFormat.fill
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'fill: Excel.ChartFill;'
+      content: 'readonly fill: Excel.ChartFill;'
       return:
         type:
           - Excel.ChartFill
   - uid: excel.Excel.ChartLegendFormat.font
     summary: |-
-      Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only. 
+      Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: font
     fullName: excel.Excel.ChartLegendFormat.font
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'font: Excel.ChartFont;'
+      content: 'readonly font: Excel.ChartFont;'
       return:
         type:
           - Excel.ChartFont

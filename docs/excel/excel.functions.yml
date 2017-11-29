@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.Functions
     summary: |-
-      An object for evaluating Excel functions. 
+      An object for evaluating Excel functions.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: Excel.Functions
     fullName: excel.Excel.Functions
     langs:
@@ -383,9 +383,9 @@ items:
       - excel.Excel.Functions.z_Test
   - uid: excel.Excel.Functions.abs
     summary: |-
-      Returns the absolute value of a number, a number without its sign. 
+      Returns the absolute value of a number, a number without its sign.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: abs(number)
     fullName: excel.Excel.Functions.abs
     langs:
@@ -404,9 +404,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.accrInt
     summary: |-
-      Returns the accrued interest for a security that pays periodic interest. 
+      Returns the accrued interest for a security that pays periodic interest.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'accrInt(issue, firstInterest, settlement, rate, par, frequency, basis, calcMethod)'
     fullName: excel.Excel.Functions.accrInt
     langs:
@@ -461,9 +461,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.accrIntM
     summary: |-
-      Returns the accrued interest for a security that pays interest at maturity. 
+      Returns the accrued interest for a security that pays interest at maturity.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'accrIntM(issue, settlement, rate, par, basis)'
     fullName: excel.Excel.Functions.accrIntM
     langs:
@@ -504,9 +504,10 @@ items:
   - uid: excel.Excel.Functions.acos
     summary: >-
       Returns the arccosine of a number, in radians in the range 0 to Pi. The arccosine is the angle whose cosine is
-      Number. 
+      Number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: acos(number)
     fullName: excel.Excel.Functions.acos
     langs:
@@ -525,9 +526,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.acosh
     summary: |-
-      Returns the inverse hyperbolic cosine of a number. 
+      Returns the inverse hyperbolic cosine of a number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: acosh(number)
     fullName: excel.Excel.Functions.acosh
     langs:
@@ -546,9 +547,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.acot
     summary: |-
-      Returns the arccotangent of a number, in radians in the range 0 to Pi. 
+      Returns the arccotangent of a number, in radians in the range 0 to Pi.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: acot(number)
     fullName: excel.Excel.Functions.acot
     langs:
@@ -567,9 +568,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.acoth
     summary: |-
-      Returns the inverse hyperbolic cotangent of a number. 
+      Returns the inverse hyperbolic cotangent of a number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: acoth(number)
     fullName: excel.Excel.Functions.acoth
     langs:
@@ -588,9 +589,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.amorDegrc
     summary: |-
-      Returns the prorated linear depreciation of an asset for each accounting period. 
+      Returns the prorated linear depreciation of an asset for each accounting period.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'amorDegrc(cost, datePurchased, firstPeriod, salvage, period, rate, basis)'
     fullName: excel.Excel.Functions.amorDegrc
     langs:
@@ -640,9 +641,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.amorLinc
     summary: |-
-      Returns the prorated linear depreciation of an asset for each accounting period. 
+      Returns the prorated linear depreciation of an asset for each accounting period.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'amorLinc(cost, datePurchased, firstPeriod, salvage, period, rate, basis)'
     fullName: excel.Excel.Functions.amorLinc
     langs:
@@ -692,9 +693,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.and
     summary: |-
-      Checks whether all arguments are TRUE, and returns TRUE if all arguments are TRUE. 
+      Checks whether all arguments are TRUE, and returns TRUE if all arguments are TRUE.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: and(values)
     fullName: excel.Excel.Functions.and
     langs:
@@ -715,9 +716,9 @@ items:
             - Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.arabic
     summary: |-
-      Converts a Roman numeral to Arabic. 
+      Converts a Roman numeral to Arabic.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: arabic(text)
     fullName: excel.Excel.Functions.arabic
     langs:
@@ -736,9 +737,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.areas
     summary: |-
-      Returns the number of areas in a reference. An area is a range of contiguous cells or a single cell. 
+      Returns the number of areas in a reference. An area is a range of contiguous cells or a single cell.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: areas(reference)
     fullName: excel.Excel.Functions.areas
     langs:
@@ -758,9 +759,10 @@ items:
   - uid: excel.Excel.Functions.asc
     summary: >-
       Changes full-width (double-byte) characters to half-width (single-byte) characters. Use with double-byte character
-      sets (DBCS). 
+      sets (DBCS).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: asc(text)
     fullName: excel.Excel.Functions.asc
     langs:
@@ -779,9 +781,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.asin
     summary: |-
-      Returns the arcsine of a number in radians, in the range -Pi/2 to Pi/2. 
+      Returns the arcsine of a number in radians, in the range -Pi/2 to Pi/2.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: asin(number)
     fullName: excel.Excel.Functions.asin
     langs:
@@ -800,9 +802,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.asinh
     summary: |-
-      Returns the inverse hyperbolic sine of a number. 
+      Returns the inverse hyperbolic sine of a number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: asinh(number)
     fullName: excel.Excel.Functions.asinh
     langs:
@@ -821,9 +823,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.atan
     summary: |-
-      Returns the arctangent of a number in radians, in the range -Pi/2 to Pi/2. 
+      Returns the arctangent of a number in radians, in the range -Pi/2 to Pi/2.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: atan(number)
     fullName: excel.Excel.Functions.atan
     langs:
@@ -842,9 +844,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.atan2
     summary: |-
-      Returns the arctangent of the specified x- and y- coordinates, in radians between -Pi and Pi, excluding -Pi. 
+      Returns the arctangent of the specified x- and y- coordinates, in radians between -Pi and Pi, excluding -Pi.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'atan2(xNum, yNum)'
     fullName: excel.Excel.Functions.atan2
     langs:
@@ -869,9 +871,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.atanh
     summary: |-
-      Returns the inverse hyperbolic tangent of a number. 
+      Returns the inverse hyperbolic tangent of a number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: atanh(number)
     fullName: excel.Excel.Functions.atanh
     langs:
@@ -891,9 +893,10 @@ items:
   - uid: excel.Excel.Functions.aveDev
     summary: >-
       Returns the average of the absolute deviations of data points from their mean. Arguments can be numbers or names,
-      arrays, or references that contain numbers. 
+      arrays, or references that contain numbers.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: aveDev(values)
     fullName: excel.Excel.Functions.aveDev
     langs:
@@ -915,9 +918,10 @@ items:
   - uid: excel.Excel.Functions.average
     summary: >-
       Returns the average (arithmetic mean) of its arguments, which can be numbers or names, arrays, or references that
-      contain numbers. 
+      contain numbers.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: average(values)
     fullName: excel.Excel.Functions.average
     langs:
@@ -939,9 +943,10 @@ items:
   - uid: excel.Excel.Functions.averageA
     summary: >-
       Returns the average (arithmetic mean) of its arguments, evaluating text and FALSE in arguments as 0; TRUE
-      evaluates as 1. Arguments can be numbers, names, arrays, or references. 
+      evaluates as 1. Arguments can be numbers, names, arrays, or references.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: averageA(values)
     fullName: excel.Excel.Functions.averageA
     langs:
@@ -962,9 +967,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.averageIf
     summary: |-
-      Finds average(arithmetic mean) for the cells specified by a given condition or criteria. 
+      Finds average(arithmetic mean) for the cells specified by a given condition or criteria.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'averageIf(range, criteria, averageRange)'
     fullName: excel.Excel.Functions.averageIf
     langs:
@@ -994,9 +999,9 @@ items:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.averageIfs
     summary: |-
-      Finds average(arithmetic mean) for the cells specified by a given set of conditions or criteria. 
+      Finds average(arithmetic mean) for the cells specified by a given set of conditions or criteria.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'averageIfs(averageRange, values)'
     fullName: excel.Excel.Functions.averageIfs
     langs:
@@ -1022,9 +1027,9 @@ items:
             - Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>
   - uid: excel.Excel.Functions.bahtText
     summary: |-
-      Converts a number to text (baht). 
+      Converts a number to text (baht).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: bahtText(number)
     fullName: excel.Excel.Functions.bahtText
     langs:
@@ -1045,9 +1050,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.base
     summary: |-
-      Converts a number into a text representation with the given radix (base). 
+      Converts a number into a text representation with the given radix (base).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'base(number, radix, minLength)'
     fullName: excel.Excel.Functions.base
     langs:
@@ -1077,9 +1082,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.besselI
     summary: |-
-      Returns the modified Bessel function In(x). 
+      Returns the modified Bessel function In(x).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'besselI(x, n)'
     fullName: excel.Excel.Functions.besselI
     langs:
@@ -1104,9 +1109,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.besselJ
     summary: |-
-      Returns the Bessel function Jn(x). 
+      Returns the Bessel function Jn(x).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'besselJ(x, n)'
     fullName: excel.Excel.Functions.besselJ
     langs:
@@ -1131,9 +1136,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.besselK
     summary: |-
-      Returns the modified Bessel function Kn(x). 
+      Returns the modified Bessel function Kn(x).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'besselK(x, n)'
     fullName: excel.Excel.Functions.besselK
     langs:
@@ -1158,9 +1163,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.besselY
     summary: |-
-      Returns the Bessel function Yn(x). 
+      Returns the Bessel function Yn(x).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'besselY(x, n)'
     fullName: excel.Excel.Functions.besselY
     langs:
@@ -1185,9 +1190,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.beta_Dist
     summary: |-
-      Returns the beta probability distribution function. 
+      Returns the beta probability distribution function.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'beta_Dist(x, alpha, beta, cumulative, A, B)'
     fullName: excel.Excel.Functions.beta_Dist
     langs:
@@ -1231,9 +1236,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.beta_Inv
     summary: |-
-      Returns the inverse of the cumulative beta probability density function (BETA.DIST). 
+      Returns the inverse of the cumulative beta probability density function (BETA.DIST).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'beta_Inv(probability, alpha, beta, A, B)'
     fullName: excel.Excel.Functions.beta_Inv
     langs:
@@ -1273,9 +1278,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.bin2Dec
     summary: |-
-      Converts a binary number to decimal. 
+      Converts a binary number to decimal.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: bin2Dec(number)
     fullName: excel.Excel.Functions.bin2Dec
     langs:
@@ -1296,9 +1301,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.bin2Hex
     summary: |-
-      Converts a binary number to hexadecimal. 
+      Converts a binary number to hexadecimal.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'bin2Hex(number, places)'
     fullName: excel.Excel.Functions.bin2Hex
     langs:
@@ -1324,9 +1329,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.bin2Oct
     summary: |-
-      Converts a binary number to octal. 
+      Converts a binary number to octal.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'bin2Oct(number, places)'
     fullName: excel.Excel.Functions.bin2Oct
     langs:
@@ -1352,9 +1357,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.binom_Dist
     summary: |-
-      Returns the individual term binomial distribution probability. 
+      Returns the individual term binomial distribution probability.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'binom_Dist(numberS, trials, probabilityS, cumulative)'
     fullName: excel.Excel.Functions.binom_Dist
     langs:
@@ -1389,9 +1394,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.binom_Dist_Range
     summary: |-
-      Returns the probability of a trial result using a binomial distribution. 
+      Returns the probability of a trial result using a binomial distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'binom_Dist_Range(trials, probabilityS, numberS, numberS2)'
     fullName: excel.Excel.Functions.binom_Dist_Range
     langs:
@@ -1427,9 +1432,10 @@ items:
   - uid: excel.Excel.Functions.binom_Inv
     summary: >-
       Returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion
-      value. 
+      value.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'binom_Inv(trials, probabilityS, alpha)'
     fullName: excel.Excel.Functions.binom_Inv
     langs:
@@ -1459,9 +1465,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.bitand
     summary: |-
-      Returns a bitwise 'And' of two numbers. 
+      Returns a bitwise 'And' of two numbers.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'bitand(number1, number2)'
     fullName: excel.Excel.Functions.bitand
     langs:
@@ -1486,9 +1492,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.bitlshift
     summary: |-
-      Returns a number shifted left by shift\_amount bits. 
+      Returns a number shifted left by shift\_amount bits.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'bitlshift(number, shiftAmount)'
     fullName: excel.Excel.Functions.bitlshift
     langs:
@@ -1513,9 +1519,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.bitor
     summary: |-
-      Returns a bitwise 'Or' of two numbers. 
+      Returns a bitwise 'Or' of two numbers.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'bitor(number1, number2)'
     fullName: excel.Excel.Functions.bitor
     langs:
@@ -1540,9 +1546,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.bitrshift
     summary: |-
-      Returns a number shifted right by shift\_amount bits. 
+      Returns a number shifted right by shift\_amount bits.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'bitrshift(number, shiftAmount)'
     fullName: excel.Excel.Functions.bitrshift
     langs:
@@ -1567,9 +1573,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.bitxor
     summary: |-
-      Returns a bitwise 'Exclusive Or' of two numbers. 
+      Returns a bitwise 'Exclusive Or' of two numbers.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'bitxor(number1, number2)'
     fullName: excel.Excel.Functions.bitxor
     langs:
@@ -1594,9 +1600,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.ceiling_Math
     summary: |-
-      Rounds a number up, to the nearest integer or to the nearest multiple of significance. 
+      Rounds a number up, to the nearest integer or to the nearest multiple of significance.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'ceiling_Math(number, significance, mode)'
     fullName: excel.Excel.Functions.ceiling_Math
     langs:
@@ -1626,9 +1632,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.ceiling_Precise
     summary: |-
-      Rounds a number up, to the nearest integer or to the nearest multiple of significance. 
+      Rounds a number up, to the nearest integer or to the nearest multiple of significance.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'ceiling_Precise(number, significance)'
     fullName: excel.Excel.Functions.ceiling_Precise
     langs:
@@ -1653,9 +1659,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.char
     summary: |-
-      Returns the character specified by the code number from the character set for your computer. 
+      Returns the character specified by the code number from the character set for your computer.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: char(number)
     fullName: excel.Excel.Functions.char
     langs:
@@ -1674,9 +1680,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.chiSq_Dist
     summary: |-
-      Returns the left-tailed probability of the chi-squared distribution. 
+      Returns the left-tailed probability of the chi-squared distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'chiSq_Dist(x, degFreedom, cumulative)'
     fullName: excel.Excel.Functions.chiSq_Dist
     langs:
@@ -1706,9 +1712,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.chiSq_Dist_RT
     summary: |-
-      Returns the right-tailed probability of the chi-squared distribution. 
+      Returns the right-tailed probability of the chi-squared distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'chiSq_Dist_RT(x, degFreedom)'
     fullName: excel.Excel.Functions.chiSq_Dist_RT
     langs:
@@ -1733,9 +1739,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.chiSq_Inv
     summary: |-
-      Returns the inverse of the left-tailed probability of the chi-squared distribution. 
+      Returns the inverse of the left-tailed probability of the chi-squared distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'chiSq_Inv(probability, degFreedom)'
     fullName: excel.Excel.Functions.chiSq_Inv
     langs:
@@ -1760,9 +1766,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.chiSq_Inv_RT
     summary: |-
-      Returns the inverse of the right-tailed probability of the chi-squared distribution. 
+      Returns the inverse of the right-tailed probability of the chi-squared distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'chiSq_Inv_RT(probability, degFreedom)'
     fullName: excel.Excel.Functions.chiSq_Inv_RT
     langs:
@@ -1787,9 +1793,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.choose
     summary: |-
-      Chooses a value or action to perform from a list of values, based on an index number. 
+      Chooses a value or action to perform from a list of values, based on an index number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'choose(indexNum, values)'
     fullName: excel.Excel.Functions.choose
     langs:
@@ -1815,9 +1821,9 @@ items:
             - Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.clean
     summary: |-
-      Removes all nonprintable characters from text. 
+      Removes all nonprintable characters from text.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: clean(text)
     fullName: excel.Excel.Functions.clean
     langs:
@@ -1836,9 +1842,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.code
     summary: |-
-      Returns a numeric code for the first character in a text string, in the character set used by your computer. 
+      Returns a numeric code for the first character in a text string, in the character set used by your computer.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: code(text)
     fullName: excel.Excel.Functions.code
     langs:
@@ -1857,9 +1863,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.columns
     summary: |-
-      Returns the number of columns in an array or reference. 
+      Returns the number of columns in an array or reference.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: columns(array)
     fullName: excel.Excel.Functions.columns
     langs:
@@ -1878,9 +1884,9 @@ items:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.combin
     summary: |-
-      Returns the number of combinations for a given number of items. 
+      Returns the number of combinations for a given number of items.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'combin(number, numberChosen)'
     fullName: excel.Excel.Functions.combin
     langs:
@@ -1905,9 +1911,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.combina
     summary: |-
-      Returns the number of combinations with repetitions for a given number of items. 
+      Returns the number of combinations with repetitions for a given number of items.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'combina(number, numberChosen)'
     fullName: excel.Excel.Functions.combina
     langs:
@@ -1932,9 +1938,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.complex
     summary: |-
-      Converts real and imaginary coefficients into a complex number. 
+      Converts real and imaginary coefficients into a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'complex(realNum, iNum, suffix)'
     fullName: excel.Excel.Functions.complex
     langs:
@@ -1965,9 +1971,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.concatenate
     summary: |-
-      Joins several text strings into one text string. 
+      Joins several text strings into one text string.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: concatenate(values)
     fullName: excel.Excel.Functions.concatenate
     langs:
@@ -1988,9 +1994,9 @@ items:
             - Array<string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.confidence_Norm
     summary: |-
-      Returns the confidence interval for a population mean, using a normal distribution. 
+      Returns the confidence interval for a population mean, using a normal distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'confidence_Norm(alpha, standardDev, size)'
     fullName: excel.Excel.Functions.confidence_Norm
     langs:
@@ -2020,9 +2026,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.confidence_T
     summary: |-
-      Returns the confidence interval for a population mean, using a Student's T distribution. 
+      Returns the confidence interval for a population mean, using a Student's T distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'confidence_T(alpha, standardDev, size)'
     fullName: excel.Excel.Functions.confidence_T
     langs:
@@ -2052,9 +2058,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.convert
     summary: |-
-      Converts a number from one measurement system to another. 
+      Converts a number from one measurement system to another.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'convert(number, fromUnit, toUnit)'
     fullName: excel.Excel.Functions.convert
     langs:
@@ -2085,9 +2091,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.cos
     summary: |-
-      Returns the cosine of an angle. 
+      Returns the cosine of an angle.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: cos(number)
     fullName: excel.Excel.Functions.cos
     langs:
@@ -2106,9 +2112,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.cosh
     summary: |-
-      Returns the hyperbolic cosine of a number. 
+      Returns the hyperbolic cosine of a number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: cosh(number)
     fullName: excel.Excel.Functions.cosh
     langs:
@@ -2127,9 +2133,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.cot
     summary: |-
-      Returns the cotangent of an angle. 
+      Returns the cotangent of an angle.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: cot(number)
     fullName: excel.Excel.Functions.cot
     langs:
@@ -2148,9 +2154,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.coth
     summary: |-
-      Returns the hyperbolic cotangent of a number. 
+      Returns the hyperbolic cotangent of a number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: coth(number)
     fullName: excel.Excel.Functions.coth
     langs:
@@ -2169,9 +2175,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.count
     summary: |-
-      Counts the number of cells in a range that contain numbers. 
+      Counts the number of cells in a range that contain numbers.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: count(values)
     fullName: excel.Excel.Functions.count
     langs:
@@ -2192,9 +2198,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.countA
     summary: |-
-      Counts the number of cells in a range that are not empty. 
+      Counts the number of cells in a range that are not empty.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: countA(values)
     fullName: excel.Excel.Functions.countA
     langs:
@@ -2215,9 +2221,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.countBlank
     summary: |-
-      Counts the number of empty cells in a specified range of cells. 
+      Counts the number of empty cells in a specified range of cells.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: countBlank(range)
     fullName: excel.Excel.Functions.countBlank
     langs:
@@ -2236,9 +2242,9 @@ items:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.countIf
     summary: |-
-      Counts the number of cells within a range that meet the given condition. 
+      Counts the number of cells within a range that meet the given condition.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'countIf(range, criteria)'
     fullName: excel.Excel.Functions.countIf
     langs:
@@ -2263,9 +2269,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.countIfs
     summary: |-
-      Counts the number of cells specified by a given set of conditions or criteria. 
+      Counts the number of cells specified by a given set of conditions or criteria.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: countIfs(values)
     fullName: excel.Excel.Functions.countIfs
     langs:
@@ -2286,9 +2292,9 @@ items:
             - Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>
   - uid: excel.Excel.Functions.coupDayBs
     summary: |-
-      Returns the number of days from the beginning of the coupon period to the settlement date. 
+      Returns the number of days from the beginning of the coupon period to the settlement date.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'coupDayBs(settlement, maturity, frequency, basis)'
     fullName: excel.Excel.Functions.coupDayBs
     langs:
@@ -2324,9 +2330,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.coupDays
     summary: |-
-      Returns the number of days in the coupon period that contains the settlement date. 
+      Returns the number of days in the coupon period that contains the settlement date.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'coupDays(settlement, maturity, frequency, basis)'
     fullName: excel.Excel.Functions.coupDays
     langs:
@@ -2361,9 +2367,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.coupDaysNc
     summary: |-
-      Returns the number of days from the settlement date to the next coupon date. 
+      Returns the number of days from the settlement date to the next coupon date.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'coupDaysNc(settlement, maturity, frequency, basis)'
     fullName: excel.Excel.Functions.coupDaysNc
     langs:
@@ -2399,9 +2405,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.coupNcd
     summary: |-
-      Returns the next coupon date after the settlement date. 
+      Returns the next coupon date after the settlement date.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'coupNcd(settlement, maturity, frequency, basis)'
     fullName: excel.Excel.Functions.coupNcd
     langs:
@@ -2436,9 +2442,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.coupNum
     summary: |-
-      Returns the number of coupons payable between the settlement date and maturity date. 
+      Returns the number of coupons payable between the settlement date and maturity date.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'coupNum(settlement, maturity, frequency, basis)'
     fullName: excel.Excel.Functions.coupNum
     langs:
@@ -2473,9 +2479,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.coupPcd
     summary: |-
-      Returns the previous coupon date before the settlement date. 
+      Returns the previous coupon date before the settlement date.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'coupPcd(settlement, maturity, frequency, basis)'
     fullName: excel.Excel.Functions.coupPcd
     langs:
@@ -2510,9 +2516,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.csc
     summary: |-
-      Returns the cosecant of an angle. 
+      Returns the cosecant of an angle.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: csc(number)
     fullName: excel.Excel.Functions.csc
     langs:
@@ -2531,9 +2537,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.csch
     summary: |-
-      Returns the hyperbolic cosecant of an angle. 
+      Returns the hyperbolic cosecant of an angle.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: csch(number)
     fullName: excel.Excel.Functions.csch
     langs:
@@ -2552,9 +2558,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.cumIPmt
     summary: |-
-      Returns the cumulative interest paid between two periods. 
+      Returns the cumulative interest paid between two periods.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'cumIPmt(rate, nper, pv, startPeriod, endPeriod, type)'
     fullName: excel.Excel.Functions.cumIPmt
     langs:
@@ -2599,9 +2605,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.cumPrinc
     summary: |-
-      Returns the cumulative principal paid on a loan between two periods. 
+      Returns the cumulative principal paid on a loan between two periods.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'cumPrinc(rate, nper, pv, startPeriod, endPeriod, type)'
     fullName: excel.Excel.Functions.cumPrinc
     langs:
@@ -2646,9 +2652,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.date
     summary: |-
-      Returns the number that represents the date in Microsoft Excel date-time code. 
+      Returns the number that represents the date in Microsoft Excel date-time code.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'date(year, month, day)'
     fullName: excel.Excel.Functions.date
     langs:
@@ -2678,9 +2684,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.datevalue
     summary: |-
-      Converts a date in the form of text to a number that represents the date in Microsoft Excel date-time code. 
+      Converts a date in the form of text to a number that represents the date in Microsoft Excel date-time code.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: datevalue(dateText)
     fullName: excel.Excel.Functions.datevalue
     langs:
@@ -2701,9 +2707,9 @@ items:
             - string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.daverage
     summary: |-
-      Averages the values in a column in a list or database that match conditions you specify. 
+      Averages the values in a column in a list or database that match conditions you specify.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'daverage(database, field, criteria)'
     fullName: excel.Excel.Functions.daverage
     langs:
@@ -2733,9 +2739,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.day
     summary: |-
-      Returns the day of the month, a number from 1 to 31. 
+      Returns the day of the month, a number from 1 to 31.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: day(serialNumber)
     fullName: excel.Excel.Functions.day
     langs:
@@ -2756,9 +2762,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.days
     summary: |-
-      Returns the number of days between the two dates. 
+      Returns the number of days between the two dates.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'days(endDate, startDate)'
     fullName: excel.Excel.Functions.days
     langs:
@@ -2783,9 +2789,9 @@ items:
             - string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.days360
     summary: |-
-      Returns the number of days between two dates based on a 360-day year (twelve 30-day months). 
+      Returns the number of days between two dates based on a 360-day year (twelve 30-day months).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'days360(startDate, endDate, method)'
     fullName: excel.Excel.Functions.days360
     langs:
@@ -2815,9 +2821,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.db
     summary: |-
-      Returns the depreciation of an asset for a specified period using the fixed-declining balance method. 
+      Returns the depreciation of an asset for a specified period using the fixed-declining balance method.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'db(cost, salvage, life, period, month)'
     fullName: excel.Excel.Functions.db
     langs:
@@ -2857,9 +2863,10 @@ items:
   - uid: excel.Excel.Functions.dbcs
     summary: >-
       Changes half-width (single-byte) characters within a character string to full-width (double-byte) characters. Use
-      with double-byte character sets (DBCS). 
+      with double-byte character sets (DBCS).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: dbcs(text)
     fullName: excel.Excel.Functions.dbcs
     langs:
@@ -2879,9 +2886,10 @@ items:
   - uid: excel.Excel.Functions.dcount
     summary: >-
       Counts the cells containing numbers in the field (column) of records in the database that match the conditions you
-      specify. 
+      specify.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dcount(database, field, criteria)'
     fullName: excel.Excel.Functions.dcount
     langs:
@@ -2911,9 +2919,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.dcountA
     summary: |-
-      Counts nonblank cells in the field (column) of records in the database that match the conditions you specify. 
+      Counts nonblank cells in the field (column) of records in the database that match the conditions you specify.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dcountA(database, field, criteria)'
     fullName: excel.Excel.Functions.dcountA
     langs:
@@ -2944,9 +2952,10 @@ items:
   - uid: excel.Excel.Functions.ddb
     summary: >-
       Returns the depreciation of an asset for a specified period using the double-declining balance method or some
-      other method you specify. 
+      other method you specify.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'ddb(cost, salvage, life, period, factor)'
     fullName: excel.Excel.Functions.ddb
     langs:
@@ -2985,9 +2994,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.dec2Bin
     summary: |-
-      Converts a decimal number to binary. 
+      Converts a decimal number to binary.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dec2Bin(number, places)'
     fullName: excel.Excel.Functions.dec2Bin
     langs:
@@ -3013,9 +3022,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.dec2Hex
     summary: |-
-      Converts a decimal number to hexadecimal. 
+      Converts a decimal number to hexadecimal.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dec2Hex(number, places)'
     fullName: excel.Excel.Functions.dec2Hex
     langs:
@@ -3041,9 +3050,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.dec2Oct
     summary: |-
-      Converts a decimal number to octal. 
+      Converts a decimal number to octal.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dec2Oct(number, places)'
     fullName: excel.Excel.Functions.dec2Oct
     langs:
@@ -3069,9 +3078,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.decimal
     summary: |-
-      Converts a text representation of a number in a given base into a decimal number. 
+      Converts a text representation of a number in a given base into a decimal number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'decimal(number, radix)'
     fullName: excel.Excel.Functions.decimal
     langs:
@@ -3096,9 +3105,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.degrees
     summary: |-
-      Converts radians to degrees. 
+      Converts radians to degrees.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: degrees(angle)
     fullName: excel.Excel.Functions.degrees
     langs:
@@ -3117,9 +3126,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.delta
     summary: |-
-      Tests whether two numbers are equal. 
+      Tests whether two numbers are equal.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'delta(number1, number2)'
     fullName: excel.Excel.Functions.delta
     langs:
@@ -3145,9 +3154,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.devSq
     summary: |-
-      Returns the sum of squares of deviations of data points from their sample mean. 
+      Returns the sum of squares of deviations of data points from their sample mean.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: devSq(values)
     fullName: excel.Excel.Functions.devSq
     langs:
@@ -3168,9 +3177,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.dget
     summary: |-
-      Extracts from a database a single record that matches the conditions you specify. 
+      Extracts from a database a single record that matches the conditions you specify.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dget(database, field, criteria)'
     fullName: excel.Excel.Functions.dget
     langs:
@@ -3200,9 +3209,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.disc
     summary: |-
-      Returns the discount rate for a security. 
+      Returns the discount rate for a security.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'disc(settlement, maturity, pr, redemption, basis)'
     fullName: excel.Excel.Functions.disc
     langs:
@@ -3241,11 +3250,10 @@ items:
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.dmax
-    summary: >-
-      Returns the largest number in the field (column) of records in the database that match the conditions you
-      specify. 
+    summary: |-
+      Returns the largest number in the field (column) of records in the database that match the conditions you specify.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dmax(database, field, criteria)'
     fullName: excel.Excel.Functions.dmax
     langs:
@@ -3276,9 +3284,10 @@ items:
   - uid: excel.Excel.Functions.dmin
     summary: >-
       Returns the smallest number in the field (column) of records in the database that match the conditions you
-      specify. 
+      specify.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dmin(database, field, criteria)'
     fullName: excel.Excel.Functions.dmin
     langs:
@@ -3308,9 +3317,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.dollar
     summary: |-
-      Converts a number to text, using currency format. 
+      Converts a number to text, using currency format.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dollar(number, decimals)'
     fullName: excel.Excel.Functions.dollar
     langs:
@@ -3335,9 +3344,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.dollarDe
     summary: |-
-      Converts a dollar price, expressed as a fraction, into a dollar price, expressed as a decimal number. 
+      Converts a dollar price, expressed as a fraction, into a dollar price, expressed as a decimal number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dollarDe(fractionalDollar, fraction)'
     fullName: excel.Excel.Functions.dollarDe
     langs:
@@ -3363,9 +3372,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.dollarFr
     summary: |-
-      Converts a dollar price, expressed as a decimal number, into a dollar price, expressed as a fraction. 
+      Converts a dollar price, expressed as a decimal number, into a dollar price, expressed as a fraction.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dollarFr(decimalDollar, fraction)'
     fullName: excel.Excel.Functions.dollarFr
     langs:
@@ -3391,9 +3400,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.dproduct
     summary: |-
-      Multiplies the values in the field (column) of records in the database that match the conditions you specify. 
+      Multiplies the values in the field (column) of records in the database that match the conditions you specify.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dproduct(database, field, criteria)'
     fullName: excel.Excel.Functions.dproduct
     langs:
@@ -3423,9 +3432,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.dstDev
     summary: |-
-      Estimates the standard deviation based on a sample from selected database entries. 
+      Estimates the standard deviation based on a sample from selected database entries.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dstDev(database, field, criteria)'
     fullName: excel.Excel.Functions.dstDev
     langs:
@@ -3455,9 +3464,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.dstDevP
     summary: |-
-      Calculates the standard deviation based on the entire population of selected database entries. 
+      Calculates the standard deviation based on the entire population of selected database entries.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dstDevP(database, field, criteria)'
     fullName: excel.Excel.Functions.dstDevP
     langs:
@@ -3487,9 +3496,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.dsum
     summary: |-
-      Adds the numbers in the field (column) of records in the database that match the conditions you specify. 
+      Adds the numbers in the field (column) of records in the database that match the conditions you specify.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dsum(database, field, criteria)'
     fullName: excel.Excel.Functions.dsum
     langs:
@@ -3519,9 +3528,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.duration
     summary: |-
-      Returns the annual duration of a security with periodic interest payments. 
+      Returns the annual duration of a security with periodic interest payments.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'duration(settlement, maturity, coupon, yld, frequency, basis)'
     fullName: excel.Excel.Functions.duration
     langs:
@@ -3566,9 +3575,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.dvar
     summary: |-
-      Estimates variance based on a sample from selected database entries. 
+      Estimates variance based on a sample from selected database entries.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dvar(database, field, criteria)'
     fullName: excel.Excel.Functions.dvar
     langs:
@@ -3598,9 +3607,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.dvarP
     summary: |-
-      Calculates variance based on the entire population of selected database entries. 
+      Calculates variance based on the entire population of selected database entries.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'dvarP(database, field, criteria)'
     fullName: excel.Excel.Functions.dvarP
     langs:
@@ -3630,9 +3639,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.ecma_Ceiling
     summary: |-
-      Rounds a number up, to the nearest integer or to the nearest multiple of significance. 
+      Rounds a number up, to the nearest integer or to the nearest multiple of significance.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'ecma_Ceiling(number, significance)'
     fullName: excel.Excel.Functions.ecma_Ceiling
     langs:
@@ -3657,9 +3666,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.edate
     summary: |-
-      Returns the serial number of the date that is the indicated number of months before or after the start date. 
+      Returns the serial number of the date that is the indicated number of months before or after the start date.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'edate(startDate, months)'
     fullName: excel.Excel.Functions.edate
     langs:
@@ -3685,9 +3694,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.effect
     summary: |-
-      Returns the effective annual interest rate. 
+      Returns the effective annual interest rate.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'effect(nominalRate, npery)'
     fullName: excel.Excel.Functions.effect
     langs:
@@ -3713,9 +3722,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.eoMonth
     summary: |-
-      Returns the serial number of the last day of the month before or after a specified number of months. 
+      Returns the serial number of the last day of the month before or after a specified number of months.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'eoMonth(startDate, months)'
     fullName: excel.Excel.Functions.eoMonth
     langs:
@@ -3741,9 +3750,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.erf
     summary: |-
-      Returns the error function. 
+      Returns the error function.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'erf(lowerLimit, upperLimit)'
     fullName: excel.Excel.Functions.erf
     langs:
@@ -3769,9 +3778,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.erf_Precise
     summary: |-
-      Returns the error function. 
+      Returns the error function.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: erf_Precise(X)
     fullName: excel.Excel.Functions.erf_Precise
     langs:
@@ -3792,9 +3801,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.erfC
     summary: |-
-      Returns the complementary error function. 
+      Returns the complementary error function.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: erfC(x)
     fullName: excel.Excel.Functions.erfC
     langs:
@@ -3815,9 +3824,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.erfC_Precise
     summary: |-
-      Returns the complementary error function. 
+      Returns the complementary error function.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: erfC_Precise(X)
     fullName: excel.Excel.Functions.erfC_Precise
     langs:
@@ -3838,9 +3847,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.error_Type
     summary: |-
-      Returns a number matching an error value. 
+      Returns a number matching an error value.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: error_Type(errorVal)
     fullName: excel.Excel.Functions.error_Type
     langs:
@@ -3861,9 +3870,9 @@ items:
             - string | number | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.even
     summary: |-
-      Rounds a positive number up and negative number down to the nearest even integer. 
+      Rounds a positive number up and negative number down to the nearest even integer.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: even(number)
     fullName: excel.Excel.Functions.even
     langs:
@@ -3882,9 +3891,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.exact
     summary: |-
-      Checks whether two text strings are exactly the same, and returns TRUE or FALSE. EXACT is case-sensitive. 
+      Checks whether two text strings are exactly the same, and returns TRUE or FALSE. EXACT is case-sensitive.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'exact(text1, text2)'
     fullName: excel.Excel.Functions.exact
     langs:
@@ -3909,9 +3918,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.exp
     summary: |-
-      Returns e raised to the power of a given number. 
+      Returns e raised to the power of a given number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: exp(number)
     fullName: excel.Excel.Functions.exp
     langs:
@@ -3930,9 +3939,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.expon_Dist
     summary: |-
-      Returns the exponential distribution. 
+      Returns the exponential distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'expon_Dist(x, lambda, cumulative)'
     fullName: excel.Excel.Functions.expon_Dist
     langs:
@@ -3962,9 +3971,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.f_Dist
     summary: |-
-      Returns the (left-tailed) F probability distribution (degree of diversity) for two data sets. 
+      Returns the (left-tailed) F probability distribution (degree of diversity) for two data sets.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'f_Dist(x, degFreedom1, degFreedom2, cumulative)'
     fullName: excel.Excel.Functions.f_Dist
     langs:
@@ -3999,9 +4008,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.f_Dist_RT
     summary: |-
-      Returns the (right-tailed) F probability distribution (degree of diversity) for two data sets. 
+      Returns the (right-tailed) F probability distribution (degree of diversity) for two data sets.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'f_Dist_RT(x, degFreedom1, degFreedom2)'
     fullName: excel.Excel.Functions.f_Dist_RT
     langs:
@@ -4031,9 +4040,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.f_Inv
     summary: |-
-      Returns the inverse of the (left-tailed) F probability distribution: if p = F.DIST(x,...), then F.INV(p,...) = x. 
+      Returns the inverse of the (left-tailed) F probability distribution: if p = F.DIST(x,...), then F.INV(p,...) = x.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'f_Inv(probability, degFreedom1, degFreedom2)'
     fullName: excel.Excel.Functions.f_Inv
     langs:
@@ -4064,9 +4073,10 @@ items:
   - uid: excel.Excel.Functions.f_Inv_RT
     summary: >-
       Returns the inverse of the (right-tailed) F probability distribution: if p = F.DIST.RT(x,...), then
-      F.INV.RT(p,...) = x. 
+      F.INV.RT(p,...) = x.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'f_Inv_RT(probability, degFreedom1, degFreedom2)'
     fullName: excel.Excel.Functions.f_Inv_RT
     langs:
@@ -4096,9 +4106,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.fact
     summary: |-
-      Returns the factorial of a number, equal to 1\*2\*3\*...\* Number. 
+      Returns the factorial of a number, equal to 1\*2\*3\*...\* Number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: fact(number)
     fullName: excel.Excel.Functions.fact
     langs:
@@ -4117,9 +4127,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.factDouble
     summary: |-
-      Returns the double factorial of a number. 
+      Returns the double factorial of a number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: factDouble(number)
     fullName: excel.Excel.Functions.factDouble
     langs:
@@ -4140,9 +4150,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.false
     summary: |-
-      Returns the logical value FALSE. 
+      Returns the logical value FALSE.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: false()
     fullName: excel.Excel.Functions.false
     langs:
@@ -4156,9 +4166,9 @@ items:
         description: ''
   - uid: excel.Excel.Functions.find
     summary: |-
-      Returns the starting position of one text string within another text string. FIND is case-sensitive. 
+      Returns the starting position of one text string within another text string. FIND is case-sensitive.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'find(findText, withinText, startNum)'
     fullName: excel.Excel.Functions.find
     langs:
@@ -4189,9 +4199,10 @@ items:
   - uid: excel.Excel.Functions.findB
     summary: >-
       Finds the starting position of one text string within another text string. FINDB is case-sensitive. Use with
-      double-byte character sets (DBCS). 
+      double-byte character sets (DBCS).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'findB(findText, withinText, startNum)'
     fullName: excel.Excel.Functions.findB
     langs:
@@ -4221,9 +4232,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.fisher
     summary: |-
-      Returns the Fisher transformation. 
+      Returns the Fisher transformation.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: fisher(x)
     fullName: excel.Excel.Functions.fisher
     langs:
@@ -4242,9 +4253,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.fisherInv
     summary: |-
-      Returns the inverse of the Fisher transformation: if y = FISHER(x), then FISHERINV(y) = x. 
+      Returns the inverse of the Fisher transformation: if y = FISHER(x), then FISHERINV(y) = x.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: fisherInv(y)
     fullName: excel.Excel.Functions.fisherInv
     langs:
@@ -4263,9 +4274,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.fixed
     summary: |-
-      Rounds a number to the specified number of decimals and returns the result as text with or without commas. 
+      Rounds a number to the specified number of decimals and returns the result as text with or without commas.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'fixed(number, decimals, noCommas)'
     fullName: excel.Excel.Functions.fixed
     langs:
@@ -4295,9 +4306,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.floor_Math
     summary: |-
-      Rounds a number down, to the nearest integer or to the nearest multiple of significance. 
+      Rounds a number down, to the nearest integer or to the nearest multiple of significance.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'floor_Math(number, significance, mode)'
     fullName: excel.Excel.Functions.floor_Math
     langs:
@@ -4327,9 +4338,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.floor_Precise
     summary: |-
-      Rounds a number down, to the nearest integer or to the nearest multiple of significance. 
+      Rounds a number down, to the nearest integer or to the nearest multiple of significance.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'floor_Precise(number, significance)'
     fullName: excel.Excel.Functions.floor_Precise
     langs:
@@ -4354,9 +4365,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.fv
     summary: |-
-      Returns the future value of an investment based on periodic, constant payments and a constant interest rate. 
+      Returns the future value of an investment based on periodic, constant payments and a constant interest rate.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'fv(rate, nper, pmt, pv, type)'
     fullName: excel.Excel.Functions.fv
     langs:
@@ -4395,9 +4406,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.fvschedule
     summary: |-
-      Returns the future value of an initial principal after applying a series of compound interest rates. 
+      Returns the future value of an initial principal after applying a series of compound interest rates.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'fvschedule(principal, schedule)'
     fullName: excel.Excel.Functions.fvschedule
     langs:
@@ -4423,9 +4434,9 @@ items:
             - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.gamma
     summary: |-
-      Returns the Gamma function value. 
+      Returns the Gamma function value.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: gamma(x)
     fullName: excel.Excel.Functions.gamma
     langs:
@@ -4444,9 +4455,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.gamma_Dist
     summary: |-
-      Returns the gamma distribution. 
+      Returns the gamma distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'gamma_Dist(x, alpha, beta, cumulative)'
     fullName: excel.Excel.Functions.gamma_Dist
     langs:
@@ -4481,9 +4492,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.gamma_Inv
     summary: |-
-      Returns the inverse of the gamma cumulative distribution: if p = GAMMA.DIST(x,...), then GAMMA.INV(p,...) = x. 
+      Returns the inverse of the gamma cumulative distribution: if p = GAMMA.DIST(x,...), then GAMMA.INV(p,...) = x.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'gamma_Inv(probability, alpha, beta)'
     fullName: excel.Excel.Functions.gamma_Inv
     langs:
@@ -4513,9 +4524,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.gammaLn
     summary: |-
-      Returns the natural logarithm of the gamma function. 
+      Returns the natural logarithm of the gamma function.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: gammaLn(x)
     fullName: excel.Excel.Functions.gammaLn
     langs:
@@ -4534,9 +4545,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.gammaLn_Precise
     summary: |-
-      Returns the natural logarithm of the gamma function. 
+      Returns the natural logarithm of the gamma function.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: gammaLn_Precise(x)
     fullName: excel.Excel.Functions.gammaLn_Precise
     langs:
@@ -4557,9 +4568,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.gauss
     summary: |-
-      Returns 0.5 less than the standard normal cumulative distribution. 
+      Returns 0.5 less than the standard normal cumulative distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: gauss(x)
     fullName: excel.Excel.Functions.gauss
     langs:
@@ -4578,9 +4589,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.gcd
     summary: |-
-      Returns the greatest common divisor. 
+      Returns the greatest common divisor.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: gcd(values)
     fullName: excel.Excel.Functions.gcd
     langs:
@@ -4601,9 +4612,9 @@ items:
             - Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.geoMean
     summary: |-
-      Returns the geometric mean of an array or range of positive numeric data. 
+      Returns the geometric mean of an array or range of positive numeric data.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: geoMean(values)
     fullName: excel.Excel.Functions.geoMean
     langs:
@@ -4624,9 +4635,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.geStep
     summary: |-
-      Tests whether a number is greater than a threshold value. 
+      Tests whether a number is greater than a threshold value.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'geStep(number, step)'
     fullName: excel.Excel.Functions.geStep
     langs:
@@ -4651,11 +4662,10 @@ items:
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.harMean
-    summary: >-
-      Returns the harmonic mean of a data set of positive numbers: the reciprocal of the arithmetic mean of
-      reciprocals. 
+    summary: |-
+      Returns the harmonic mean of a data set of positive numbers: the reciprocal of the arithmetic mean of reciprocals.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: harMean(values)
     fullName: excel.Excel.Functions.harMean
     langs:
@@ -4676,9 +4686,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.hex2Bin
     summary: |-
-      Converts a Hexadecimal number to binary. 
+      Converts a Hexadecimal number to binary.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'hex2Bin(number, places)'
     fullName: excel.Excel.Functions.hex2Bin
     langs:
@@ -4704,9 +4714,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.hex2Dec
     summary: |-
-      Converts a hexadecimal number to decimal. 
+      Converts a hexadecimal number to decimal.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: hex2Dec(number)
     fullName: excel.Excel.Functions.hex2Dec
     langs:
@@ -4727,9 +4737,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.hex2Oct
     summary: |-
-      Converts a hexadecimal number to octal. 
+      Converts a hexadecimal number to octal.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'hex2Oct(number, places)'
     fullName: excel.Excel.Functions.hex2Oct
     langs:
@@ -4756,9 +4766,10 @@ items:
   - uid: excel.Excel.Functions.hlookup
     summary: >-
       Looks for a value in the top row of a table or array of values and returns the value in the same column from a row
-      you specify. 
+      you specify.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'hlookup(lookupValue, tableArray, rowIndexNum, rangeLookup)'
     fullName: excel.Excel.Functions.hlookup
     langs:
@@ -4793,9 +4804,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.hour
     summary: |-
-      Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.). 
+      Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: hour(serialNumber)
     fullName: excel.Excel.Functions.hour
     langs:
@@ -4816,9 +4827,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.hyperlink
     summary: |-
-      Creates a shortcut or jump that opens a document stored on your hard drive, a network server, or on the Internet. 
+      Creates a shortcut or jump that opens a document stored on your hard drive, a network server, or on the Internet.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'hyperlink(linkLocation, friendlyName)'
     fullName: excel.Excel.Functions.hyperlink
     langs:
@@ -4844,9 +4855,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.hypGeom_Dist
     summary: |-
-      Returns the hypergeometric distribution. 
+      Returns the hypergeometric distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'hypGeom_Dist(sampleS, numberSample, populationS, numberPop, cumulative)'
     fullName: excel.Excel.Functions.hypGeom_Dist
     langs:
@@ -4886,9 +4897,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.if
     summary: |-
-      Checks whether a condition is met, and returns one value if TRUE, and another value if FALSE. 
+      Checks whether a condition is met, and returns one value if TRUE, and another value if FALSE.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'if(logicalTest, valueIfTrue, valueIfFalse)'
     fullName: excel.Excel.Functions.if
     langs:
@@ -4919,9 +4930,9 @@ items:
             - Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imAbs
     summary: |-
-      Returns the absolute value (modulus) of a complex number. 
+      Returns the absolute value (modulus) of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imAbs(inumber)
     fullName: excel.Excel.Functions.imAbs
     langs:
@@ -4942,9 +4953,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imaginary
     summary: |-
-      Returns the imaginary coefficient of a complex number. 
+      Returns the imaginary coefficient of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imaginary(inumber)
     fullName: excel.Excel.Functions.imaginary
     langs:
@@ -4965,9 +4976,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imArgument
     summary: |-
-      Returns the argument q, an angle expressed in radians. 
+      Returns the argument q, an angle expressed in radians.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imArgument(inumber)
     fullName: excel.Excel.Functions.imArgument
     langs:
@@ -4988,9 +4999,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imConjugate
     summary: |-
-      Returns the complex conjugate of a complex number. 
+      Returns the complex conjugate of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imConjugate(inumber)
     fullName: excel.Excel.Functions.imConjugate
     langs:
@@ -5011,9 +5022,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imCos
     summary: |-
-      Returns the cosine of a complex number. 
+      Returns the cosine of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imCos(inumber)
     fullName: excel.Excel.Functions.imCos
     langs:
@@ -5034,9 +5045,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imCosh
     summary: |-
-      Returns the hyperbolic cosine of a complex number. 
+      Returns the hyperbolic cosine of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imCosh(inumber)
     fullName: excel.Excel.Functions.imCosh
     langs:
@@ -5057,9 +5068,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imCot
     summary: |-
-      Returns the cotangent of a complex number. 
+      Returns the cotangent of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imCot(inumber)
     fullName: excel.Excel.Functions.imCot
     langs:
@@ -5080,9 +5091,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imCsc
     summary: |-
-      Returns the cosecant of a complex number. 
+      Returns the cosecant of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imCsc(inumber)
     fullName: excel.Excel.Functions.imCsc
     langs:
@@ -5103,9 +5114,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imCsch
     summary: |-
-      Returns the hyperbolic cosecant of a complex number. 
+      Returns the hyperbolic cosecant of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imCsch(inumber)
     fullName: excel.Excel.Functions.imCsch
     langs:
@@ -5126,9 +5137,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imDiv
     summary: |-
-      Returns the quotient of two complex numbers. 
+      Returns the quotient of two complex numbers.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'imDiv(inumber1, inumber2)'
     fullName: excel.Excel.Functions.imDiv
     langs:
@@ -5154,9 +5165,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imExp
     summary: |-
-      Returns the exponential of a complex number. 
+      Returns the exponential of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imExp(inumber)
     fullName: excel.Excel.Functions.imExp
     langs:
@@ -5177,9 +5188,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imLn
     summary: |-
-      Returns the natural logarithm of a complex number. 
+      Returns the natural logarithm of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imLn(inumber)
     fullName: excel.Excel.Functions.imLn
     langs:
@@ -5200,9 +5211,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imLog10
     summary: |-
-      Returns the base-10 logarithm of a complex number. 
+      Returns the base-10 logarithm of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imLog10(inumber)
     fullName: excel.Excel.Functions.imLog10
     langs:
@@ -5223,9 +5234,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imLog2
     summary: |-
-      Returns the base-2 logarithm of a complex number. 
+      Returns the base-2 logarithm of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imLog2(inumber)
     fullName: excel.Excel.Functions.imLog2
     langs:
@@ -5246,9 +5257,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imPower
     summary: |-
-      Returns a complex number raised to an integer power. 
+      Returns a complex number raised to an integer power.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'imPower(inumber, number)'
     fullName: excel.Excel.Functions.imPower
     langs:
@@ -5274,9 +5285,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imProduct
     summary: |-
-      Returns the product of 1 to 255 complex numbers. 
+      Returns the product of 1 to 255 complex numbers.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imProduct(values)
     fullName: excel.Excel.Functions.imProduct
     langs:
@@ -5297,9 +5308,9 @@ items:
             - Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.imReal
     summary: |-
-      Returns the real coefficient of a complex number. 
+      Returns the real coefficient of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imReal(inumber)
     fullName: excel.Excel.Functions.imReal
     langs:
@@ -5320,9 +5331,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imSec
     summary: |-
-      Returns the secant of a complex number. 
+      Returns the secant of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imSec(inumber)
     fullName: excel.Excel.Functions.imSec
     langs:
@@ -5343,9 +5354,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imSech
     summary: |-
-      Returns the hyperbolic secant of a complex number. 
+      Returns the hyperbolic secant of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imSech(inumber)
     fullName: excel.Excel.Functions.imSech
     langs:
@@ -5366,9 +5377,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imSin
     summary: |-
-      Returns the sine of a complex number. 
+      Returns the sine of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imSin(inumber)
     fullName: excel.Excel.Functions.imSin
     langs:
@@ -5389,9 +5400,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imSinh
     summary: |-
-      Returns the hyperbolic sine of a complex number. 
+      Returns the hyperbolic sine of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imSinh(inumber)
     fullName: excel.Excel.Functions.imSinh
     langs:
@@ -5412,9 +5423,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imSqrt
     summary: |-
-      Returns the square root of a complex number. 
+      Returns the square root of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imSqrt(inumber)
     fullName: excel.Excel.Functions.imSqrt
     langs:
@@ -5435,9 +5446,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imSub
     summary: |-
-      Returns the difference of two complex numbers. 
+      Returns the difference of two complex numbers.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'imSub(inumber1, inumber2)'
     fullName: excel.Excel.Functions.imSub
     langs:
@@ -5463,9 +5474,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.imSum
     summary: |-
-      Returns the sum of complex numbers. 
+      Returns the sum of complex numbers.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imSum(values)
     fullName: excel.Excel.Functions.imSum
     langs:
@@ -5486,9 +5497,9 @@ items:
             - Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.imTan
     summary: |-
-      Returns the tangent of a complex number. 
+      Returns the tangent of a complex number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: imTan(inumber)
     fullName: excel.Excel.Functions.imTan
     langs:
@@ -5509,9 +5520,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.int
     summary: |-
-      Rounds a number down to the nearest integer. 
+      Rounds a number down to the nearest integer.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: int(number)
     fullName: excel.Excel.Functions.int
     langs:
@@ -5530,9 +5541,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.intRate
     summary: |-
-      Returns the interest rate for a fully invested security. 
+      Returns the interest rate for a fully invested security.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'intRate(settlement, maturity, investment, redemption, basis)'
     fullName: excel.Excel.Functions.intRate
     langs:
@@ -5574,9 +5585,10 @@ items:
   - uid: excel.Excel.Functions.ipmt
     summary: >-
       Returns the interest payment for a given period for an investment, based on periodic, constant payments and a
-      constant interest rate. 
+      constant interest rate.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'ipmt(rate, per, nper, pv, fv, type)'
     fullName: excel.Excel.Functions.ipmt
     langs:
@@ -5620,9 +5632,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.irr
     summary: |-
-      Returns the internal rate of return for a series of cash flows. 
+      Returns the internal rate of return for a series of cash flows.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'irr(values, guess)'
     fullName: excel.Excel.Functions.irr
     langs:
@@ -5648,9 +5660,10 @@ items:
   - uid: excel.Excel.Functions.isErr
     summary: >-
       Checks whether a value is an error (\#VALUE!, \#REF!, \#DIV/0!, \#NUM!, \#NAME?, or \#NULL!) excluding \#N/A, and
-      returns TRUE or FALSE. 
+      returns TRUE or FALSE.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: isErr(value)
     fullName: excel.Excel.Functions.isErr
     langs:
@@ -5672,9 +5685,10 @@ items:
   - uid: excel.Excel.Functions.isError
     summary: >-
       Checks whether a value is an error (\#N/A, \#VALUE!, \#REF!, \#DIV/0!, \#NUM!, \#NAME?, or \#NULL!), and returns
-      TRUE or FALSE. 
+      TRUE or FALSE.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: isError(value)
     fullName: excel.Excel.Functions.isError
     langs:
@@ -5695,9 +5709,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.isEven
     summary: |-
-      Returns TRUE if the number is even. 
+      Returns TRUE if the number is even.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: isEven(number)
     fullName: excel.Excel.Functions.isEven
     langs:
@@ -5718,9 +5732,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.isFormula
     summary: |-
-      Checks whether a reference is to a cell containing a formula, and returns TRUE or FALSE. 
+      Checks whether a reference is to a cell containing a formula, and returns TRUE or FALSE.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: isFormula(reference)
     fullName: excel.Excel.Functions.isFormula
     langs:
@@ -5739,9 +5753,9 @@ items:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.isLogical
     summary: |-
-      Checks whether a value is a logical value (TRUE or FALSE), and returns TRUE or FALSE. 
+      Checks whether a value is a logical value (TRUE or FALSE), and returns TRUE or FALSE.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: isLogical(value)
     fullName: excel.Excel.Functions.isLogical
     langs:
@@ -5762,9 +5776,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.isNA
     summary: |-
-      Checks whether a value is \#N/A, and returns TRUE or FALSE. 
+      Checks whether a value is \#N/A, and returns TRUE or FALSE.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: isNA(value)
     fullName: excel.Excel.Functions.isNA
     langs:
@@ -5785,9 +5799,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.isNonText
     summary: |-
-      Checks whether a value is not text (blank cells are not text), and returns TRUE or FALSE. 
+      Checks whether a value is not text (blank cells are not text), and returns TRUE or FALSE.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: isNonText(value)
     fullName: excel.Excel.Functions.isNonText
     langs:
@@ -5808,9 +5822,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.isNumber
     summary: |-
-      Checks whether a value is a number, and returns TRUE or FALSE. 
+      Checks whether a value is a number, and returns TRUE or FALSE.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: isNumber(value)
     fullName: excel.Excel.Functions.isNumber
     langs:
@@ -5831,9 +5845,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.iso_Ceiling
     summary: |-
-      Rounds a number up, to the nearest integer or to the nearest multiple of significance. 
+      Rounds a number up, to the nearest integer or to the nearest multiple of significance.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'iso_Ceiling(number, significance)'
     fullName: excel.Excel.Functions.iso_Ceiling
     langs:
@@ -5858,9 +5872,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.isOdd
     summary: |-
-      Returns TRUE if the number is odd. 
+      Returns TRUE if the number is odd.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: isOdd(number)
     fullName: excel.Excel.Functions.isOdd
     langs:
@@ -5881,9 +5895,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.isoWeekNum
     summary: |-
-      Returns the ISO week number in the year for a given date. 
+      Returns the ISO week number in the year for a given date.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: isoWeekNum(date)
     fullName: excel.Excel.Functions.isoWeekNum
     langs:
@@ -5904,9 +5918,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.ispmt
     summary: |-
-      Returns the interest paid during a specific period of an investment. 
+      Returns the interest paid during a specific period of an investment.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'ispmt(rate, per, nper, pv)'
     fullName: excel.Excel.Functions.ispmt
     langs:
@@ -5941,9 +5955,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.isref
     summary: |-
-      Checks whether a value is a reference, and returns TRUE or FALSE. 
+      Checks whether a value is a reference, and returns TRUE or FALSE.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: isref(value)
     fullName: excel.Excel.Functions.isref
     langs:
@@ -5964,9 +5978,9 @@ items:
             - Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.isText
     summary: |-
-      Checks whether a value is text, and returns TRUE or FALSE. 
+      Checks whether a value is text, and returns TRUE or FALSE.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: isText(value)
     fullName: excel.Excel.Functions.isText
     langs:
@@ -5987,9 +6001,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.kurt
     summary: |-
-      Returns the kurtosis of a data set. 
+      Returns the kurtosis of a data set.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: kurt(values)
     fullName: excel.Excel.Functions.kurt
     langs:
@@ -6010,9 +6024,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.large
     summary: |-
-      Returns the k-th largest value in a data set. For example, the fifth largest number. 
+      Returns the k-th largest value in a data set. For example, the fifth largest number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'large(array, k)'
     fullName: excel.Excel.Functions.large
     langs:
@@ -6037,9 +6051,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.lcm
     summary: |-
-      Returns the least common multiple. 
+      Returns the least common multiple.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: lcm(values)
     fullName: excel.Excel.Functions.lcm
     langs:
@@ -6060,9 +6074,9 @@ items:
             - Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.left
     summary: |-
-      Returns the specified number of characters from the start of a text string. 
+      Returns the specified number of characters from the start of a text string.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'left(text, numChars)'
     fullName: excel.Excel.Functions.left
     langs:
@@ -6088,9 +6102,10 @@ items:
   - uid: excel.Excel.Functions.leftb
     summary: >-
       Returns the specified number of characters from the start of a text string. Use with double-byte character sets
-      (DBCS). 
+      (DBCS).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'leftb(text, numBytes)'
     fullName: excel.Excel.Functions.leftb
     langs:
@@ -6115,9 +6130,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.len
     summary: |-
-      Returns the number of characters in a text string. 
+      Returns the number of characters in a text string.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: len(text)
     fullName: excel.Excel.Functions.len
     langs:
@@ -6136,9 +6151,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.lenb
     summary: |-
-      Returns the number of characters in a text string. Use with double-byte character sets (DBCS). 
+      Returns the number of characters in a text string. Use with double-byte character sets (DBCS).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: lenb(text)
     fullName: excel.Excel.Functions.lenb
     langs:
@@ -6157,9 +6172,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.ln
     summary: |-
-      Returns the natural logarithm of a number. 
+      Returns the natural logarithm of a number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: ln(number)
     fullName: excel.Excel.Functions.ln
     langs:
@@ -6178,9 +6193,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.log
     summary: |-
-      Returns the logarithm of a number to the base you specify. 
+      Returns the logarithm of a number to the base you specify.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'log(number, base)'
     fullName: excel.Excel.Functions.log
     langs:
@@ -6205,9 +6220,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.log10
     summary: |-
-      Returns the base-10 logarithm of a number. 
+      Returns the base-10 logarithm of a number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: log10(number)
     fullName: excel.Excel.Functions.log10
     langs:
@@ -6227,9 +6242,10 @@ items:
   - uid: excel.Excel.Functions.logNorm_Dist
     summary: >-
       Returns the lognormal distribution of x, where ln(x) is normally distributed with parameters Mean and
-      Standard\_dev. 
+      Standard\_dev.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'logNorm_Dist(x, mean, standardDev, cumulative)'
     fullName: excel.Excel.Functions.logNorm_Dist
     langs:
@@ -6265,9 +6281,10 @@ items:
   - uid: excel.Excel.Functions.logNorm_Inv
     summary: >-
       Returns the inverse of the lognormal cumulative distribution function of x, where ln(x) is normally distributed
-      with parameters Mean and Standard\_dev. 
+      with parameters Mean and Standard\_dev.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'logNorm_Inv(probability, mean, standardDev)'
     fullName: excel.Excel.Functions.logNorm_Inv
     langs:
@@ -6297,9 +6314,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.lookup
     summary: |-
-      Looks up a value either from a one-row or one-column range or from an array. Provided for backward compatibility. 
+      Looks up a value either from a one-row or one-column range or from an array. Provided for backward compatibility.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'lookup(lookupValue, lookupVector, resultVector)'
     fullName: excel.Excel.Functions.lookup
     langs:
@@ -6329,9 +6346,9 @@ items:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.lower
     summary: |-
-      Converts all letters in a text string to lowercase. 
+      Converts all letters in a text string to lowercase.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: lower(text)
     fullName: excel.Excel.Functions.lower
     langs:
@@ -6350,9 +6367,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.match
     summary: |-
-      Returns the relative position of an item in an array that matches a specified value in a specified order. 
+      Returns the relative position of an item in an array that matches a specified value in a specified order.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'match(lookupValue, lookupArray, matchType)'
     fullName: excel.Excel.Functions.match
     langs:
@@ -6382,9 +6399,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.max
     summary: |-
-      Returns the largest value in a set of values. Ignores logical values and text. 
+      Returns the largest value in a set of values. Ignores logical values and text.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: max(values)
     fullName: excel.Excel.Functions.max
     langs:
@@ -6405,9 +6422,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.maxA
     summary: |-
-      Returns the largest value in a set of values. Does not ignore logical values and text. 
+      Returns the largest value in a set of values. Does not ignore logical values and text.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: maxA(values)
     fullName: excel.Excel.Functions.maxA
     langs:
@@ -6428,9 +6445,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.mduration
     summary: |-
-      Returns the Macauley modified duration for a security with an assumed par value of $100. 
+      Returns the Macauley modified duration for a security with an assumed par value of $100.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'mduration(settlement, maturity, coupon, yld, frequency, basis)'
     fullName: excel.Excel.Functions.mduration
     langs:
@@ -6476,9 +6493,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.median
     summary: |-
-      Returns the median, or the number in the middle of the set of given numbers. 
+      Returns the median, or the number in the middle of the set of given numbers.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: median(values)
     fullName: excel.Excel.Functions.median
     langs:
@@ -6499,9 +6516,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.mid
     summary: |-
-      Returns the characters from the middle of a text string, given a starting position and length. 
+      Returns the characters from the middle of a text string, given a starting position and length.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'mid(text, startNum, numChars)'
     fullName: excel.Excel.Functions.mid
     langs:
@@ -6532,9 +6549,10 @@ items:
   - uid: excel.Excel.Functions.midb
     summary: >-
       Returns characters from the middle of a text string, given a starting position and length. Use with double-byte
-      character sets (DBCS). 
+      character sets (DBCS).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'midb(text, startNum, numBytes)'
     fullName: excel.Excel.Functions.midb
     langs:
@@ -6564,9 +6582,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.min
     summary: |-
-      Returns the smallest number in a set of values. Ignores logical values and text. 
+      Returns the smallest number in a set of values. Ignores logical values and text.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: min(values)
     fullName: excel.Excel.Functions.min
     langs:
@@ -6587,9 +6605,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.minA
     summary: |-
-      Returns the smallest value in a set of values. Does not ignore logical values and text. 
+      Returns the smallest value in a set of values. Does not ignore logical values and text.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: minA(values)
     fullName: excel.Excel.Functions.minA
     langs:
@@ -6610,9 +6628,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.minute
     summary: |-
-      Returns the minute, a number from 0 to 59. 
+      Returns the minute, a number from 0 to 59.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: minute(serialNumber)
     fullName: excel.Excel.Functions.minute
     langs:
@@ -6634,9 +6652,10 @@ items:
   - uid: excel.Excel.Functions.mirr
     summary: >-
       Returns the internal rate of return for a series of periodic cash flows, considering both cost of investment and
-      interest on reinvestment of cash. 
+      interest on reinvestment of cash.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'mirr(values, financeRate, reinvestRate)'
     fullName: excel.Excel.Functions.mirr
     langs:
@@ -6666,9 +6685,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.mod
     summary: |-
-      Returns the remainder after a number is divided by a divisor. 
+      Returns the remainder after a number is divided by a divisor.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'mod(number, divisor)'
     fullName: excel.Excel.Functions.mod
     langs:
@@ -6693,9 +6712,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.month
     summary: |-
-      Returns the month, a number from 1 (January) to 12 (December). 
+      Returns the month, a number from 1 (January) to 12 (December).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: month(serialNumber)
     fullName: excel.Excel.Functions.month
     langs:
@@ -6716,9 +6735,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.mround
     summary: |-
-      Returns a number rounded to the desired multiple. 
+      Returns a number rounded to the desired multiple.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'mround(number, multiple)'
     fullName: excel.Excel.Functions.mround
     langs:
@@ -6744,9 +6763,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.multiNomial
     summary: |-
-      Returns the multinomial of a set of numbers. 
+      Returns the multinomial of a set of numbers.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: multiNomial(values)
     fullName: excel.Excel.Functions.multiNomial
     langs:
@@ -6767,9 +6786,9 @@ items:
             - Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.n
     summary: |-
-      Converts non-number value to a number, dates to serial numbers, TRUE to 1, anything else to 0 (zero). 
+      Converts non-number value to a number, dates to serial numbers, TRUE to 1, anything else to 0 (zero).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: n(value)
     fullName: excel.Excel.Functions.n
     langs:
@@ -6790,9 +6809,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.na
     summary: |-
-      Returns the error value \#N/A (value not available). 
+      Returns the error value \#N/A (value not available).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: na()
     fullName: excel.Excel.Functions.na
     langs:
@@ -6807,9 +6826,10 @@ items:
   - uid: excel.Excel.Functions.negBinom_Dist
     summary: >-
       Returns the negative binomial distribution, the probability that there will be Number\_f failures before the
-      Number\_s-th success, with Probability\_s probability of a success. 
+      Number\_s-th success, with Probability\_s probability of a success.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'negBinom_Dist(numberF, numberS, probabilityS, cumulative)'
     fullName: excel.Excel.Functions.negBinom_Dist
     langs:
@@ -6844,9 +6864,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.networkDays
     summary: |-
-      Returns the number of whole workdays between two dates. 
+      Returns the number of whole workdays between two dates.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'networkDays(startDate, endDate, holidays)'
     fullName: excel.Excel.Functions.networkDays
     langs:
@@ -6877,9 +6897,9 @@ items:
             - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.networkDays_Intl
     summary: |-
-      Returns the number of whole workdays between two dates with custom weekend parameters. 
+      Returns the number of whole workdays between two dates with custom weekend parameters.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'networkDays_Intl(startDate, endDate, weekend, holidays)'
     fullName: excel.Excel.Functions.networkDays_Intl
     langs:
@@ -6915,9 +6935,9 @@ items:
             - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.nominal
     summary: |-
-      Returns the annual nominal interest rate. 
+      Returns the annual nominal interest rate.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'nominal(effectRate, npery)'
     fullName: excel.Excel.Functions.nominal
     langs:
@@ -6943,9 +6963,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.norm_Dist
     summary: |-
-      Returns the normal distribution for the specified mean and standard deviation. 
+      Returns the normal distribution for the specified mean and standard deviation.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'norm_Dist(x, mean, standardDev, cumulative)'
     fullName: excel.Excel.Functions.norm_Dist
     langs:
@@ -6980,9 +7000,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.norm_Inv
     summary: |-
-      Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation. 
+      Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'norm_Inv(probability, mean, standardDev)'
     fullName: excel.Excel.Functions.norm_Inv
     langs:
@@ -7012,9 +7032,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.norm_S_Dist
     summary: |-
-      Returns the standard normal distribution (has a mean of zero and a standard deviation of one). 
+      Returns the standard normal distribution (has a mean of zero and a standard deviation of one).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'norm_S_Dist(z, cumulative)'
     fullName: excel.Excel.Functions.norm_S_Dist
     langs:
@@ -7040,9 +7060,10 @@ items:
   - uid: excel.Excel.Functions.norm_S_Inv
     summary: >-
       Returns the inverse of the standard normal cumulative distribution (has a mean of zero and a standard deviation of
-      one). 
+      one).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: norm_S_Inv(probability)
     fullName: excel.Excel.Functions.norm_S_Inv
     langs:
@@ -7063,9 +7084,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.not
     summary: |-
-      Changes FALSE to TRUE, or TRUE to FALSE. 
+      Changes FALSE to TRUE, or TRUE to FALSE.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: not(logical)
     fullName: excel.Excel.Functions.not
     langs:
@@ -7084,9 +7105,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.now
     summary: |-
-      Returns the current date and time formatted as a date and time. 
+      Returns the current date and time formatted as a date and time.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: now()
     fullName: excel.Excel.Functions.now
     langs:
@@ -7099,11 +7120,10 @@ items:
           - FunctionResult<number>
         description: ''
   - uid: excel.Excel.Functions.nper
-    summary: >-
-      Returns the number of periods for an investment based on periodic, constant payments and a constant interest
-      rate. 
+    summary: |-
+      Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'nper(rate, pmt, pv, fv, type)'
     fullName: excel.Excel.Functions.nper
     langs:
@@ -7143,9 +7163,10 @@ items:
   - uid: excel.Excel.Functions.npv
     summary: >-
       Returns the net present value of an investment based on a discount rate and a series of future payments (negative
-      values) and income (positive values). 
+      values) and income (positive values).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'npv(rate, values)'
     fullName: excel.Excel.Functions.npv
     langs:
@@ -7170,9 +7191,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.numberValue
     summary: |-
-      Converts text to number in a locale-independent manner. 
+      Converts text to number in a locale-independent manner.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'numberValue(text, decimalSeparator, groupSeparator)'
     fullName: excel.Excel.Functions.numberValue
     langs:
@@ -7202,9 +7223,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.oct2Bin
     summary: |-
-      Converts an octal number to binary. 
+      Converts an octal number to binary.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'oct2Bin(number, places)'
     fullName: excel.Excel.Functions.oct2Bin
     langs:
@@ -7230,9 +7251,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.oct2Dec
     summary: |-
-      Converts an octal number to decimal. 
+      Converts an octal number to decimal.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: oct2Dec(number)
     fullName: excel.Excel.Functions.oct2Dec
     langs:
@@ -7253,9 +7274,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.oct2Hex
     summary: |-
-      Converts an octal number to hexadecimal. 
+      Converts an octal number to hexadecimal.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'oct2Hex(number, places)'
     fullName: excel.Excel.Functions.oct2Hex
     langs:
@@ -7281,9 +7302,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.odd
     summary: |-
-      Rounds a positive number up and negative number down to the nearest odd integer. 
+      Rounds a positive number up and negative number down to the nearest odd integer.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: odd(number)
     fullName: excel.Excel.Functions.odd
     langs:
@@ -7302,9 +7323,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.oddFPrice
     summary: |-
-      Returns the price per $100 face value of a security with an odd first period. 
+      Returns the price per $100 face value of a security with an odd first period.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'oddFPrice(settlement, maturity, issue, firstCoupon, rate, yld, redemption, frequency, basis)'
     fullName: excel.Excel.Functions.oddFPrice
     langs:
@@ -7365,9 +7386,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.oddFYield
     summary: |-
-      Returns the yield of a security with an odd first period. 
+      Returns the yield of a security with an odd first period.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'oddFYield(settlement, maturity, issue, firstCoupon, rate, pr, redemption, frequency, basis)'
     fullName: excel.Excel.Functions.oddFYield
     langs:
@@ -7428,9 +7449,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.oddLPrice
     summary: |-
-      Returns the price per $100 face value of a security with an odd last period. 
+      Returns the price per $100 face value of a security with an odd last period.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'oddLPrice(settlement, maturity, lastInterest, rate, yld, redemption, frequency, basis)'
     fullName: excel.Excel.Functions.oddLPrice
     langs:
@@ -7486,9 +7507,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.oddLYield
     summary: |-
-      Returns the yield of a security with an odd last period. 
+      Returns the yield of a security with an odd last period.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'oddLYield(settlement, maturity, lastInterest, rate, pr, redemption, frequency, basis)'
     fullName: excel.Excel.Functions.oddLYield
     langs:
@@ -7545,9 +7566,10 @@ items:
   - uid: excel.Excel.Functions.or
     summary: >-
       Checks whether any of the arguments are TRUE, and returns TRUE or FALSE. Returns FALSE only if all arguments are
-      FALSE. 
+      FALSE.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: or(values)
     fullName: excel.Excel.Functions.or
     langs:
@@ -7568,9 +7590,9 @@ items:
             - Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.pduration
     summary: |-
-      Returns the number of periods required by an investment to reach a specified value. 
+      Returns the number of periods required by an investment to reach a specified value.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'pduration(rate, pv, fv)'
     fullName: excel.Excel.Functions.pduration
     langs:
@@ -7600,9 +7622,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.percentile_Exc
     summary: |-
-      Returns the k-th percentile of values in a range, where k is in the range 0..1, exclusive. 
+      Returns the k-th percentile of values in a range, where k is in the range 0..1, exclusive.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'percentile_Exc(array, k)'
     fullName: excel.Excel.Functions.percentile_Exc
     langs:
@@ -7627,9 +7649,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.percentile_Inc
     summary: |-
-      Returns the k-th percentile of values in a range, where k is in the range 0..1, inclusive. 
+      Returns the k-th percentile of values in a range, where k is in the range 0..1, inclusive.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'percentile_Inc(array, k)'
     fullName: excel.Excel.Functions.percentile_Inc
     langs:
@@ -7655,9 +7677,10 @@ items:
   - uid: excel.Excel.Functions.percentRank_Exc
     summary: >-
       Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, exclusive) of the
-      data set. 
+      data set.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'percentRank_Exc(array, x, significance)'
     fullName: excel.Excel.Functions.percentRank_Exc
     langs:
@@ -7688,9 +7711,10 @@ items:
   - uid: excel.Excel.Functions.percentRank_Inc
     summary: >-
       Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, inclusive) of the
-      data set. 
+      data set.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'percentRank_Inc(array, x, significance)'
     fullName: excel.Excel.Functions.percentRank_Inc
     langs:
@@ -7720,9 +7744,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.permut
     summary: |-
-      Returns the number of permutations for a given number of objects that can be selected from the total objects. 
+      Returns the number of permutations for a given number of objects that can be selected from the total objects.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'permut(number, numberChosen)'
     fullName: excel.Excel.Functions.permut
     langs:
@@ -7748,9 +7772,10 @@ items:
   - uid: excel.Excel.Functions.permutationa
     summary: >-
       Returns the number of permutations for a given number of objects (with repetitions) that can be selected from the
-      total objects. 
+      total objects.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'permutationa(number, numberChosen)'
     fullName: excel.Excel.Functions.permutationa
     langs:
@@ -7775,9 +7800,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.phi
     summary: |-
-      Returns the value of the density function for a standard normal distribution. 
+      Returns the value of the density function for a standard normal distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: phi(x)
     fullName: excel.Excel.Functions.phi
     langs:
@@ -7796,9 +7821,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.pi
     summary: |-
-      Returns the value of Pi, 3.14159265358979, accurate to 15 digits. 
+      Returns the value of Pi, 3.14159265358979, accurate to 15 digits.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: pi()
     fullName: excel.Excel.Functions.pi
     langs:
@@ -7812,9 +7837,9 @@ items:
         description: ''
   - uid: excel.Excel.Functions.pmt
     summary: |-
-      Calculates the payment for a loan based on constant payments and a constant interest rate. 
+      Calculates the payment for a loan based on constant payments and a constant interest rate.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'pmt(rate, nper, pv, fv, type)'
     fullName: excel.Excel.Functions.pmt
     langs:
@@ -7853,9 +7878,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.poisson_Dist
     summary: |-
-      Returns the Poisson distribution. 
+      Returns the Poisson distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'poisson_Dist(x, mean, cumulative)'
     fullName: excel.Excel.Functions.poisson_Dist
     langs:
@@ -7885,9 +7910,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.power
     summary: |-
-      Returns the result of a number raised to a power. 
+      Returns the result of a number raised to a power.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'power(number, power)'
     fullName: excel.Excel.Functions.power
     langs:
@@ -7913,9 +7938,10 @@ items:
   - uid: excel.Excel.Functions.ppmt
     summary: >-
       Returns the payment on the principal for a given investment based on periodic, constant payments and a constant
-      interest rate. 
+      interest rate.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'ppmt(rate, per, nper, pv, fv, type)'
     fullName: excel.Excel.Functions.ppmt
     langs:
@@ -7959,9 +7985,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.price
     summary: |-
-      Returns the price per $100 face value of a security that pays periodic interest. 
+      Returns the price per $100 face value of a security that pays periodic interest.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'price(settlement, maturity, rate, yld, redemption, frequency, basis)'
     fullName: excel.Excel.Functions.price
     langs:
@@ -8011,9 +8037,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.priceDisc
     summary: |-
-      Returns the price per $100 face value of a discounted security. 
+      Returns the price per $100 face value of a discounted security.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'priceDisc(settlement, maturity, discount, redemption, basis)'
     fullName: excel.Excel.Functions.priceDisc
     langs:
@@ -8054,9 +8080,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.priceMat
     summary: |-
-      Returns the price per $100 face value of a security that pays interest at maturity. 
+      Returns the price per $100 face value of a security that pays interest at maturity.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'priceMat(settlement, maturity, issue, rate, yld, basis)'
     fullName: excel.Excel.Functions.priceMat
     langs:
@@ -8101,9 +8127,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.product
     summary: |-
-      Multiplies all the numbers given as arguments. 
+      Multiplies all the numbers given as arguments.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: product(values)
     fullName: excel.Excel.Functions.product
     langs:
@@ -8125,9 +8151,10 @@ items:
   - uid: excel.Excel.Functions.proper
     summary: >-
       Converts a text string to proper case; the first letter in each word to uppercase, and all other letters to
-      lowercase. 
+      lowercase.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: proper(text)
     fullName: excel.Excel.Functions.proper
     langs:
@@ -8146,9 +8173,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.pv
     summary: |-
-      Returns the present value of an investment: the total amount that a series of future payments is worth now. 
+      Returns the present value of an investment: the total amount that a series of future payments is worth now.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'pv(rate, nper, pmt, fv, type)'
     fullName: excel.Excel.Functions.pv
     langs:
@@ -8187,9 +8214,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.quartile_Exc
     summary: |-
-      Returns the quartile of a data set, based on percentile values from 0..1, exclusive. 
+      Returns the quartile of a data set, based on percentile values from 0..1, exclusive.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'quartile_Exc(array, quart)'
     fullName: excel.Excel.Functions.quartile_Exc
     langs:
@@ -8214,9 +8241,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.quartile_Inc
     summary: |-
-      Returns the quartile of a data set, based on percentile values from 0..1, inclusive. 
+      Returns the quartile of a data set, based on percentile values from 0..1, inclusive.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'quartile_Inc(array, quart)'
     fullName: excel.Excel.Functions.quartile_Inc
     langs:
@@ -8241,9 +8268,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.quotient
     summary: |-
-      Returns the integer portion of a division. 
+      Returns the integer portion of a division.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'quotient(numerator, denominator)'
     fullName: excel.Excel.Functions.quotient
     langs:
@@ -8269,9 +8296,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.radians
     summary: |-
-      Converts degrees to radians. 
+      Converts degrees to radians.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: radians(angle)
     fullName: excel.Excel.Functions.radians
     langs:
@@ -8289,11 +8316,10 @@ items:
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.rand
-    summary: >-
-      Returns a random number greater than or equal to 0 and less than 1, evenly distributed (changes on
-      recalculation). 
+    summary: |-
+      Returns a random number greater than or equal to 0 and less than 1, evenly distributed (changes on recalculation).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: rand()
     fullName: excel.Excel.Functions.rand
     langs:
@@ -8307,9 +8333,9 @@ items:
         description: ''
   - uid: excel.Excel.Functions.randBetween
     summary: |-
-      Returns a random number between the numbers you specify. 
+      Returns a random number between the numbers you specify.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'randBetween(bottom, top)'
     fullName: excel.Excel.Functions.randBetween
     langs:
@@ -8336,9 +8362,10 @@ items:
   - uid: excel.Excel.Functions.rank_Avg
     summary: >-
       Returns the rank of a number in a list of numbers: its size relative to other values in the list; if more than one
-      value has the same rank, the average rank is returned. 
+      value has the same rank, the average rank is returned.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'rank_Avg(number, ref, order)'
     fullName: excel.Excel.Functions.rank_Avg
     langs:
@@ -8369,9 +8396,10 @@ items:
   - uid: excel.Excel.Functions.rank_Eq
     summary: >-
       Returns the rank of a number in a list of numbers: its size relative to other values in the list; if more than one
-      value has the same rank, the top rank of that set of values is returned. 
+      value has the same rank, the top rank of that set of values is returned.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'rank_Eq(number, ref, order)'
     fullName: excel.Excel.Functions.rank_Eq
     langs:
@@ -8402,9 +8430,10 @@ items:
   - uid: excel.Excel.Functions.rate
     summary: >-
       Returns the interest rate per period of a loan or an investment. For example, use 6%/4 for quarterly payments at
-      6% APR. 
+      6% APR.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'rate(nper, pmt, pv, fv, type, guess)'
     fullName: excel.Excel.Functions.rate
     langs:
@@ -8448,9 +8477,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.received
     summary: |-
-      Returns the amount received at maturity for a fully invested security. 
+      Returns the amount received at maturity for a fully invested security.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'received(settlement, maturity, investment, discount, basis)'
     fullName: excel.Excel.Functions.received
     langs:
@@ -8491,9 +8520,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.replace
     summary: |-
-      Replaces part of a text string with a different text string. 
+      Replaces part of a text string with a different text string.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'replace(oldText, startNum, numChars, newText)'
     fullName: excel.Excel.Functions.replace
     langs:
@@ -8528,9 +8557,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.replaceB
     summary: |-
-      Replaces part of a text string with a different text string. Use with double-byte character sets (DBCS). 
+      Replaces part of a text string with a different text string. Use with double-byte character sets (DBCS).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'replaceB(oldText, startNum, numBytes, newText)'
     fullName: excel.Excel.Functions.replaceB
     langs:
@@ -8565,9 +8594,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.rept
     summary: |-
-      Repeats text a given number of times. Use REPT to fill a cell with a number of instances of a text string. 
+      Repeats text a given number of times. Use REPT to fill a cell with a number of instances of a text string.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'rept(text, numberTimes)'
     fullName: excel.Excel.Functions.rept
     langs:
@@ -8592,9 +8621,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.right
     summary: |-
-      Returns the specified number of characters from the end of a text string. 
+      Returns the specified number of characters from the end of a text string.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'right(text, numChars)'
     fullName: excel.Excel.Functions.right
     langs:
@@ -8620,9 +8649,10 @@ items:
   - uid: excel.Excel.Functions.rightb
     summary: >-
       Returns the specified number of characters from the end of a text string. Use with double-byte character sets
-      (DBCS). 
+      (DBCS).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'rightb(text, numBytes)'
     fullName: excel.Excel.Functions.rightb
     langs:
@@ -8647,9 +8677,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.roman
     summary: |-
-      Converts an Arabic numeral to Roman, as text. 
+      Converts an Arabic numeral to Roman, as text.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'roman(number, form)'
     fullName: excel.Excel.Functions.roman
     langs:
@@ -8674,9 +8704,9 @@ items:
             - boolean | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.round
     summary: |-
-      Rounds a number to a specified number of digits. 
+      Rounds a number to a specified number of digits.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'round(number, numDigits)'
     fullName: excel.Excel.Functions.round
     langs:
@@ -8701,9 +8731,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.roundDown
     summary: |-
-      Rounds a number down, toward zero. 
+      Rounds a number down, toward zero.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'roundDown(number, numDigits)'
     fullName: excel.Excel.Functions.roundDown
     langs:
@@ -8728,9 +8758,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.roundUp
     summary: |-
-      Rounds a number up, away from zero. 
+      Rounds a number up, away from zero.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'roundUp(number, numDigits)'
     fullName: excel.Excel.Functions.roundUp
     langs:
@@ -8755,9 +8785,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.rows
     summary: |-
-      Returns the number of rows in a reference or array. 
+      Returns the number of rows in a reference or array.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: rows(array)
     fullName: excel.Excel.Functions.rows
     langs:
@@ -8776,9 +8806,9 @@ items:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.rri
     summary: |-
-      Returns an equivalent interest rate for the growth of an investment. 
+      Returns an equivalent interest rate for the growth of an investment.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'rri(nper, pv, fv)'
     fullName: excel.Excel.Functions.rri
     langs:
@@ -8808,9 +8838,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.sec
     summary: |-
-      Returns the secant of an angle. 
+      Returns the secant of an angle.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: sec(number)
     fullName: excel.Excel.Functions.sec
     langs:
@@ -8829,9 +8859,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.sech
     summary: |-
-      Returns the hyperbolic secant of an angle. 
+      Returns the hyperbolic secant of an angle.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: sech(number)
     fullName: excel.Excel.Functions.sech
     langs:
@@ -8850,9 +8880,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.second
     summary: |-
-      Returns the second, a number from 0 to 59. 
+      Returns the second, a number from 0 to 59.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: second(serialNumber)
     fullName: excel.Excel.Functions.second
     langs:
@@ -8873,9 +8903,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.seriesSum
     summary: |-
-      Returns the sum of a power series based on the formula. 
+      Returns the sum of a power series based on the formula.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'seriesSum(x, n, m, coefficients)'
     fullName: excel.Excel.Functions.seriesSum
     langs:
@@ -8910,9 +8940,9 @@ items:
             - Excel.Range | string | number | boolean | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.sheet
     summary: |-
-      Returns the sheet number of the referenced sheet. 
+      Returns the sheet number of the referenced sheet.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: sheet(value)
     fullName: excel.Excel.Functions.sheet
     langs:
@@ -8931,9 +8961,9 @@ items:
             - Excel.Range | string | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.sheets
     summary: |-
-      Returns the number of sheets in a reference. 
+      Returns the number of sheets in a reference.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: sheets(reference)
     fullName: excel.Excel.Functions.sheets
     langs:
@@ -8953,9 +8983,10 @@ items:
   - uid: excel.Excel.Functions.sign
     summary: >-
       Returns the sign of a number: 1 if the number is positive, zero if the number is zero, or -1 if the number is
-      negative. 
+      negative.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: sign(number)
     fullName: excel.Excel.Functions.sign
     langs:
@@ -8974,9 +9005,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.sin
     summary: |-
-      Returns the sine of an angle. 
+      Returns the sine of an angle.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: sin(number)
     fullName: excel.Excel.Functions.sin
     langs:
@@ -8995,9 +9026,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.sinh
     summary: |-
-      Returns the hyperbolic sine of a number. 
+      Returns the hyperbolic sine of a number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: sinh(number)
     fullName: excel.Excel.Functions.sinh
     langs:
@@ -9017,9 +9048,10 @@ items:
   - uid: excel.Excel.Functions.skew
     summary: >-
       Returns the skewness of a distribution: a characterization of the degree of asymmetry of a distribution around its
-      mean. 
+      mean.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: skew(values)
     fullName: excel.Excel.Functions.skew
     langs:
@@ -9041,9 +9073,10 @@ items:
   - uid: excel.Excel.Functions.skew_p
     summary: >-
       Returns the skewness of a distribution based on a population: a characterization of the degree of asymmetry of a
-      distribution around its mean. 
+      distribution around its mean.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: skew_p(values)
     fullName: excel.Excel.Functions.skew_p
     langs:
@@ -9064,9 +9097,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.sln
     summary: |-
-      Returns the straight-line depreciation of an asset for one period. 
+      Returns the straight-line depreciation of an asset for one period.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'sln(cost, salvage, life)'
     fullName: excel.Excel.Functions.sln
     langs:
@@ -9096,9 +9129,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.small
     summary: |-
-      Returns the k-th smallest value in a data set. For example, the fifth smallest number. 
+      Returns the k-th smallest value in a data set. For example, the fifth smallest number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'small(array, k)'
     fullName: excel.Excel.Functions.small
     langs:
@@ -9123,9 +9156,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.sqrt
     summary: |-
-      Returns the square root of a number. 
+      Returns the square root of a number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: sqrt(number)
     fullName: excel.Excel.Functions.sqrt
     langs:
@@ -9144,9 +9177,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.sqrtPi
     summary: |-
-      Returns the square root of (number \* Pi). 
+      Returns the square root of (number \* Pi).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: sqrtPi(number)
     fullName: excel.Excel.Functions.sqrtPi
     langs:
@@ -9167,9 +9200,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.standardize
     summary: |-
-      Returns a normalized value from a distribution characterized by a mean and standard deviation. 
+      Returns a normalized value from a distribution characterized by a mean and standard deviation.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'standardize(x, mean, standardDev)'
     fullName: excel.Excel.Functions.standardize
     langs:
@@ -9198,11 +9231,10 @@ items:
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.stDev_P
-    summary: >-
-      Calculates standard deviation based on the entire population given as arguments (ignores logical values and
-      text). 
+    summary: |-
+      Calculates standard deviation based on the entire population given as arguments (ignores logical values and text).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: stDev_P(values)
     fullName: excel.Excel.Functions.stDev_P
     langs:
@@ -9223,9 +9255,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.stDev_S
     summary: |-
-      Estimates standard deviation based on a sample (ignores logical values and text in the sample). 
+      Estimates standard deviation based on a sample (ignores logical values and text in the sample).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: stDev_S(values)
     fullName: excel.Excel.Functions.stDev_S
     langs:
@@ -9247,9 +9279,10 @@ items:
   - uid: excel.Excel.Functions.stDevA
     summary: >-
       Estimates standard deviation based on a sample, including logical values and text. Text and the logical value
-      FALSE have the value 0; the logical value TRUE has the value 1. 
+      FALSE have the value 0; the logical value TRUE has the value 1.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: stDevA(values)
     fullName: excel.Excel.Functions.stDevA
     langs:
@@ -9271,9 +9304,10 @@ items:
   - uid: excel.Excel.Functions.stDevPA
     summary: >-
       Calculates standard deviation based on an entire population, including logical values and text. Text and the
-      logical value FALSE have the value 0; the logical value TRUE has the value 1. 
+      logical value FALSE have the value 0; the logical value TRUE has the value 1.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: stDevPA(values)
     fullName: excel.Excel.Functions.stDevPA
     langs:
@@ -9294,9 +9328,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.substitute
     summary: |-
-      Replaces existing text with new text in a text string. 
+      Replaces existing text with new text in a text string.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'substitute(text, oldText, newText, instanceNum)'
     fullName: excel.Excel.Functions.substitute
     langs:
@@ -9331,9 +9365,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.subtotal
     summary: |-
-      Returns a subtotal in a list or database. 
+      Returns a subtotal in a list or database.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'subtotal(functionNum, values)'
     fullName: excel.Excel.Functions.subtotal
     langs:
@@ -9358,9 +9392,9 @@ items:
             - Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.sum
     summary: |-
-      Adds all the numbers in a range of cells. 
+      Adds all the numbers in a range of cells.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: sum(values)
     fullName: excel.Excel.Functions.sum
     langs:
@@ -9381,9 +9415,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.sumIf
     summary: |-
-      Adds the cells specified by a given condition or criteria. 
+      Adds the cells specified by a given condition or criteria.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'sumIf(range, criteria, sumRange)'
     fullName: excel.Excel.Functions.sumIf
     langs:
@@ -9413,9 +9447,9 @@ items:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.sumIfs
     summary: |-
-      Adds the cells specified by a given set of conditions or criteria. 
+      Adds the cells specified by a given set of conditions or criteria.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'sumIfs(sumRange, values)'
     fullName: excel.Excel.Functions.sumIfs
     langs:
@@ -9441,9 +9475,10 @@ items:
   - uid: excel.Excel.Functions.sumSq
     summary: >-
       Returns the sum of the squares of the arguments. The arguments can be numbers, arrays, names, or references to
-      cells that contain numbers. 
+      cells that contain numbers.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: sumSq(values)
     fullName: excel.Excel.Functions.sumSq
     langs:
@@ -9464,9 +9499,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.syd
     summary: |-
-      Returns the sum-of-years' digits depreciation of an asset for a specified period. 
+      Returns the sum-of-years' digits depreciation of an asset for a specified period.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'syd(cost, salvage, life, per)'
     fullName: excel.Excel.Functions.syd
     langs:
@@ -9500,11 +9535,10 @@ items:
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.t
-    summary: >-
-      Checks whether a value is text, and returns the text if it is, or returns double quotes (empty text) if it is
-      not. 
+    summary: |-
+      Checks whether a value is text, and returns the text if it is, or returns double quotes (empty text) if it is not.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: t(value)
     fullName: excel.Excel.Functions.t
     langs:
@@ -9525,9 +9559,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.t_Dist
     summary: |-
-      Returns the left-tailed Student's t-distribution. 
+      Returns the left-tailed Student's t-distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 't_Dist(x, degFreedom, cumulative)'
     fullName: excel.Excel.Functions.t_Dist
     langs:
@@ -9557,9 +9591,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.t_Dist_2T
     summary: |-
-      Returns the two-tailed Student's t-distribution. 
+      Returns the two-tailed Student's t-distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 't_Dist_2T(x, degFreedom)'
     fullName: excel.Excel.Functions.t_Dist_2T
     langs:
@@ -9584,9 +9618,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.t_Dist_RT
     summary: |-
-      Returns the right-tailed Student's t-distribution. 
+      Returns the right-tailed Student's t-distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 't_Dist_RT(x, degFreedom)'
     fullName: excel.Excel.Functions.t_Dist_RT
     langs:
@@ -9611,9 +9645,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.t_Inv
     summary: |-
-      Returns the left-tailed inverse of the Student's t-distribution. 
+      Returns the left-tailed inverse of the Student's t-distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 't_Inv(probability, degFreedom)'
     fullName: excel.Excel.Functions.t_Inv
     langs:
@@ -9638,9 +9672,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.t_Inv_2T
     summary: |-
-      Returns the two-tailed inverse of the Student's t-distribution. 
+      Returns the two-tailed inverse of the Student's t-distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 't_Inv_2T(probability, degFreedom)'
     fullName: excel.Excel.Functions.t_Inv_2T
     langs:
@@ -9665,9 +9699,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.tan
     summary: |-
-      Returns the tangent of an angle. 
+      Returns the tangent of an angle.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: tan(number)
     fullName: excel.Excel.Functions.tan
     langs:
@@ -9686,9 +9720,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.tanh
     summary: |-
-      Returns the hyperbolic tangent of a number. 
+      Returns the hyperbolic tangent of a number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: tanh(number)
     fullName: excel.Excel.Functions.tanh
     langs:
@@ -9707,9 +9741,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.tbillEq
     summary: |-
-      Returns the bond-equivalent yield for a treasury bill. 
+      Returns the bond-equivalent yield for a treasury bill.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'tbillEq(settlement, maturity, discount)'
     fullName: excel.Excel.Functions.tbillEq
     langs:
@@ -9740,9 +9774,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.tbillPrice
     summary: |-
-      Returns the price per $100 face value for a treasury bill. 
+      Returns the price per $100 face value for a treasury bill.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'tbillPrice(settlement, maturity, discount)'
     fullName: excel.Excel.Functions.tbillPrice
     langs:
@@ -9773,9 +9807,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.tbillYield
     summary: |-
-      Returns the yield for a treasury bill. 
+      Returns the yield for a treasury bill.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'tbillYield(settlement, maturity, pr)'
     fullName: excel.Excel.Functions.tbillYield
     langs:
@@ -9806,9 +9840,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.text
     summary: |-
-      Converts a value to text in a specific number format. 
+      Converts a value to text in a specific number format.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'text(value, formatText)'
     fullName: excel.Excel.Functions.text
     langs:
@@ -9833,9 +9867,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.time
     summary: |-
-      Converts hours, minutes, and seconds given as numbers to an Excel serial number, formatted with a time format. 
+      Converts hours, minutes, and seconds given as numbers to an Excel serial number, formatted with a time format.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'time(hour, minute, second)'
     fullName: excel.Excel.Functions.time
     langs:
@@ -9866,9 +9900,10 @@ items:
   - uid: excel.Excel.Functions.timevalue
     summary: >-
       Converts a text time to an Excel serial number for a time, a number from 0 (12:00:00 AM) to 0.999988426 (11:59:59
-      PM). Format the number with a time format after entering the formula. 
+      PM). Format the number with a time format after entering the formula.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: timevalue(timeText)
     fullName: excel.Excel.Functions.timevalue
     langs:
@@ -9889,9 +9924,9 @@ items:
             - string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.today
     summary: |-
-      Returns the current date formatted as a date. 
+      Returns the current date formatted as a date.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: today()
     fullName: excel.Excel.Functions.today
     langs:
@@ -9917,9 +9952,9 @@ items:
         description: ''
   - uid: excel.Excel.Functions.trim
     summary: |-
-      Removes all spaces from a text string except for single spaces between words. 
+      Removes all spaces from a text string except for single spaces between words.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: trim(text)
     fullName: excel.Excel.Functions.trim
     langs:
@@ -9938,9 +9973,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.trimMean
     summary: |-
-      Returns the mean of the interior portion of a set of data values. 
+      Returns the mean of the interior portion of a set of data values.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'trimMean(array, percent)'
     fullName: excel.Excel.Functions.trimMean
     langs:
@@ -9965,9 +10000,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.true
     summary: |-
-      Returns the logical value TRUE. 
+      Returns the logical value TRUE.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: true()
     fullName: excel.Excel.Functions.true
     langs:
@@ -9981,9 +10016,9 @@ items:
         description: ''
   - uid: excel.Excel.Functions.trunc
     summary: |-
-      Truncates a number to an integer by removing the decimal, or fractional, part of the number. 
+      Truncates a number to an integer by removing the decimal, or fractional, part of the number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'trunc(number, numDigits)'
     fullName: excel.Excel.Functions.trunc
     langs:
@@ -10009,9 +10044,10 @@ items:
   - uid: excel.Excel.Functions.type
     summary: >-
       Returns an integer representing the data type of a value: number = 1; text = 2; logical value = 4; error value =
-      16; array = 64. 
+      16; array = 64.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: type(value)
     fullName: excel.Excel.Functions.type
     langs:
@@ -10032,9 +10068,9 @@ items:
             - boolean | string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.unichar
     summary: |-
-      Returns the Unicode character referenced by the given numeric value. 
+      Returns the Unicode character referenced by the given numeric value.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: unichar(number)
     fullName: excel.Excel.Functions.unichar
     langs:
@@ -10055,9 +10091,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.unicode
     summary: |-
-      Returns the number (code point) corresponding to the first character of the text. 
+      Returns the number (code point) corresponding to the first character of the text.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: unicode(text)
     fullName: excel.Excel.Functions.unicode
     langs:
@@ -10076,9 +10112,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.upper
     summary: |-
-      Converts a text string to all uppercase letters. 
+      Converts a text string to all uppercase letters.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: upper(text)
     fullName: excel.Excel.Functions.upper
     langs:
@@ -10097,9 +10133,9 @@ items:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.usdollar
     summary: |-
-      Converts a number to text, using currency format. 
+      Converts a number to text, using currency format.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'usdollar(number, decimals)'
     fullName: excel.Excel.Functions.usdollar
     langs:
@@ -10124,9 +10160,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.value
     summary: |-
-      Converts a text string that represents a number to a number. 
+      Converts a text string that represents a number to a number.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: value(text)
     fullName: excel.Excel.Functions.value
     langs:
@@ -10147,9 +10183,9 @@ items:
             - string | boolean | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.var_P
     summary: |-
-      Calculates variance based on the entire population (ignores logical values and text in the population). 
+      Calculates variance based on the entire population (ignores logical values and text in the population).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: var_P(values)
     fullName: excel.Excel.Functions.var_P
     langs:
@@ -10170,9 +10206,9 @@ items:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.var_S
     summary: |-
-      Estimates variance based on a sample (ignores logical values and text in the sample). 
+      Estimates variance based on a sample (ignores logical values and text in the sample).
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: var_S(values)
     fullName: excel.Excel.Functions.var_S
     langs:
@@ -10194,9 +10230,10 @@ items:
   - uid: excel.Excel.Functions.varA
     summary: >-
       Estimates variance based on a sample, including logical values and text. Text and the logical value FALSE have the
-      value 0; the logical value TRUE has the value 1. 
+      value 0; the logical value TRUE has the value 1.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: varA(values)
     fullName: excel.Excel.Functions.varA
     langs:
@@ -10218,9 +10255,10 @@ items:
   - uid: excel.Excel.Functions.varPA
     summary: >-
       Calculates variance based on the entire population, including logical values and text. Text and the logical value
-      FALSE have the value 0; the logical value TRUE has the value 1. 
+      FALSE have the value 0; the logical value TRUE has the value 1.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: varPA(values)
     fullName: excel.Excel.Functions.varPA
     langs:
@@ -10242,9 +10280,10 @@ items:
   - uid: excel.Excel.Functions.vdb
     summary: >-
       Returns the depreciation of an asset for any period you specify, including partial periods, using the
-      double-declining balance method or some other method you specify. 
+      double-declining balance method or some other method you specify.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'vdb(cost, salvage, life, startPeriod, endPeriod, factor, noSwitch)'
     fullName: excel.Excel.Functions.vdb
     langs:
@@ -10294,9 +10333,10 @@ items:
   - uid: excel.Excel.Functions.vlookup
     summary: >-
       Looks for a value in the leftmost column of a table, and then returns a value in the same row from a column you
-      specify. By default, the table must be sorted in an ascending order. 
+      specify. By default, the table must be sorted in an ascending order.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'vlookup(lookupValue, tableArray, colIndexNum, rangeLookup)'
     fullName: excel.Excel.Functions.vlookup
     langs:
@@ -10331,9 +10371,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.weekday
     summary: |-
-      Returns a number from 1 to 7 identifying the day of the week of a date. 
+      Returns a number from 1 to 7 identifying the day of the week of a date.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'weekday(serialNumber, returnType)'
     fullName: excel.Excel.Functions.weekday
     langs:
@@ -10358,9 +10398,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.weekNum
     summary: |-
-      Returns the week number in the year. 
+      Returns the week number in the year.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'weekNum(serialNumber, returnType)'
     fullName: excel.Excel.Functions.weekNum
     langs:
@@ -10386,9 +10426,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.weibull_Dist
     summary: |-
-      Returns the Weibull distribution. 
+      Returns the Weibull distribution.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'weibull_Dist(x, alpha, beta, cumulative)'
     fullName: excel.Excel.Functions.weibull_Dist
     langs:
@@ -10423,9 +10463,9 @@ items:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.workDay
     summary: |-
-      Returns the serial number of the date before or after a specified number of workdays. 
+      Returns the serial number of the date before or after a specified number of workdays.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'workDay(startDate, days, holidays)'
     fullName: excel.Excel.Functions.workDay
     langs:
@@ -10457,9 +10497,10 @@ items:
   - uid: excel.Excel.Functions.workDay_Intl
     summary: >-
       Returns the serial number of the date before or after a specified number of workdays with custom weekend
-      parameters. 
+      parameters.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'workDay_Intl(startDate, days, weekend, holidays)'
     fullName: excel.Excel.Functions.workDay_Intl
     langs:
@@ -10495,9 +10536,9 @@ items:
             - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.xirr
     summary: |-
-      Returns the internal rate of return for a schedule of cash flows. 
+      Returns the internal rate of return for a schedule of cash flows.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'xirr(values, dates, guess)'
     fullName: excel.Excel.Functions.xirr
     langs:
@@ -10527,9 +10568,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.xnpv
     summary: |-
-      Returns the net present value for a schedule of cash flows. 
+      Returns the net present value for a schedule of cash flows.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'xnpv(rate, values, dates)'
     fullName: excel.Excel.Functions.xnpv
     langs:
@@ -10559,9 +10600,9 @@ items:
             - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.xor
     summary: |-
-      Returns a logical 'Exclusive Or' of all arguments. 
+      Returns a logical 'Exclusive Or' of all arguments.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: xor(values)
     fullName: excel.Excel.Functions.xor
     langs:
@@ -10582,9 +10623,9 @@ items:
             - Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
   - uid: excel.Excel.Functions.year
     summary: |-
-      Returns the year of a date, an integer in the range 1900 - 9999. 
+      Returns the year of a date, an integer in the range 1900 - 9999.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: year(serialNumber)
     fullName: excel.Excel.Functions.year
     langs:
@@ -10605,9 +10646,9 @@ items:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.yearFrac
     summary: |-
-      Returns the year fraction representing the number of whole days between start\_date and end\_date. 
+      Returns the year fraction representing the number of whole days between start\_date and end\_date.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'yearFrac(startDate, endDate, basis)'
     fullName: excel.Excel.Functions.yearFrac
     langs:
@@ -10638,9 +10679,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.yield
     summary: |-
-      Returns the yield on a security that pays periodic interest. 
+      Returns the yield on a security that pays periodic interest.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'yield(settlement, maturity, rate, pr, redemption, frequency, basis)'
     fullName: excel.Excel.Functions.yield
     langs:
@@ -10690,9 +10731,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.yieldDisc
     summary: |-
-      Returns the annual yield for a discounted security. For example, a treasury bill. 
+      Returns the annual yield for a discounted security. For example, a treasury bill.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'yieldDisc(settlement, maturity, pr, redemption, basis)'
     fullName: excel.Excel.Functions.yieldDisc
     langs:
@@ -10733,9 +10774,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.yieldMat
     summary: |-
-      Returns the annual yield of a security that pays interest at maturity. 
+      Returns the annual yield of a security that pays interest at maturity.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'yieldMat(settlement, maturity, issue, rate, pr, basis)'
     fullName: excel.Excel.Functions.yieldMat
     langs:
@@ -10780,9 +10821,9 @@ items:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
   - uid: excel.Excel.Functions.z_Test
     summary: |-
-      Returns the one-tailed P-value of a z-test. 
+      Returns the one-tailed P-value of a z-test.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'z_Test(array, x, sigma)'
     fullName: excel.Excel.Functions.z_Test
     langs:

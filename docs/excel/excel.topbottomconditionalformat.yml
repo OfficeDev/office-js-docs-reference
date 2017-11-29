@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.TopBottomConditionalFormat
     summary: |-
-      Represents a Top/Bottom conditional format. 
+      Represents a Top/Bottom conditional format.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.TopBottomConditionalFormat
     fullName: excel.Excel.TopBottomConditionalFormat
     langs:
@@ -22,16 +22,17 @@ items:
   - uid: excel.Excel.TopBottomConditionalFormat.format
     summary: >-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-      Read-only. 
+      Read-only.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: format
     fullName: excel.Excel.TopBottomConditionalFormat.format
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'format: Excel.ConditionalRangeFormat;'
+      content: 'readonly format: Excel.ConditionalRangeFormat;'
       return:
         type:
           - Excel.ConditionalRangeFormat
@@ -57,9 +58,9 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.TopBottomConditionalFormat.rule
     summary: |-
-      The criteria of the Top/Bottom conditional format. 
+      The criteria of the Top/Bottom conditional format.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: rule
     fullName: excel.Excel.TopBottomConditionalFormat.rule
     langs:

@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ConditionalTopBottomRule
     summary: |-
-      Represents the rule of the top/bottom conditional format. 
+      Represents the rule of the top/bottom conditional format.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.ConditionalTopBottomRule
     fullName: excel.Excel.ConditionalTopBottomRule
     langs:
@@ -16,9 +16,9 @@ items:
       - excel.Excel.ConditionalTopBottomRule.type
   - uid: excel.Excel.ConditionalTopBottomRule.rank
     summary: |-
-      The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks. 
+      The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: rank
     fullName: excel.Excel.ConditionalTopBottomRule.rank
     langs:
@@ -31,9 +31,9 @@ items:
           - number
   - uid: excel.Excel.ConditionalTopBottomRule.type
     summary: |-
-      Format values based on the top or bottom rank. 
+      Format values based on the top or bottom rank.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: type
     fullName: excel.Excel.ConditionalTopBottomRule.type
     langs:

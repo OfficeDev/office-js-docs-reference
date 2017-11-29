@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.Chart
     summary: |-
-      Represents a chart object in a workbook. 
+      Represents a chart object in a workbook.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.Chart
     fullName: excel.Excel.Chart
     langs:
@@ -35,39 +35,39 @@ items:
       - excel.Excel.Chart.worksheet
   - uid: excel.Excel.Chart.axes
     summary: |-
-      Represents chart axes. Read-only. 
+      Represents chart axes. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: axes
     fullName: excel.Excel.Chart.axes
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'axes: Excel.ChartAxes;'
+      content: 'readonly axes: Excel.ChartAxes;'
       return:
         type:
           - Excel.ChartAxes
   - uid: excel.Excel.Chart.dataLabels
     summary: |-
-      Represents the datalabels on the chart. Read-only. 
+      Represents the datalabels on the chart. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: dataLabels
     fullName: excel.Excel.Chart.dataLabels
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'dataLabels: Excel.ChartDataLabels;'
+      content: 'readonly dataLabels: Excel.ChartDataLabels;'
       return:
         type:
           - Excel.ChartDataLabels
   - uid: excel.Excel.Chart.delete
     summary: |-
-      Deletes the chart object. 
+      Deletes the chart object.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: delete()
     fullName: excel.Excel.Chart.delete
     langs:
@@ -81,25 +81,26 @@ items:
         description: ''
   - uid: excel.Excel.Chart.format
     summary: |-
-      Encapsulates the format properties for the chart area. Read-only. 
+      Encapsulates the format properties for the chart area. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: format
     fullName: excel.Excel.Chart.format
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'format: Excel.ChartAreaFormat;'
+      content: 'readonly format: Excel.ChartAreaFormat;'
       return:
         type:
           - Excel.ChartAreaFormat
   - uid: excel.Excel.Chart.getImage
     summary: >-
       Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
-      is preserved as part of the resizing. 
+      is preserved as part of the resizing.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'getImage(width, height, fittingMode)'
     fullName: excel.Excel.Chart.getImage
     langs:
@@ -126,9 +127,9 @@ items:
             - string
   - uid: excel.Excel.Chart.height
     summary: |-
-      Represents the height, in points, of the chart object. 
+      Represents the height, in points, of the chart object.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: height
     fullName: excel.Excel.Chart.height
     langs:
@@ -141,9 +142,9 @@ items:
           - number
   - uid: excel.Excel.Chart.left
     summary: |-
-      The distance, in points, from the left side of the chart to the worksheet origin. 
+      The distance, in points, from the left side of the chart to the worksheet origin.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: left
     fullName: excel.Excel.Chart.left
     langs:
@@ -156,16 +157,16 @@ items:
           - number
   - uid: excel.Excel.Chart.legend
     summary: |-
-      Represents the legend for the chart. Read-only. 
+      Represents the legend for the chart. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: legend
     fullName: excel.Excel.Chart.legend
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'legend: Excel.ChartLegend;'
+      content: 'readonly legend: Excel.ChartLegend;'
       return:
         type:
           - Excel.ChartLegend
@@ -191,9 +192,9 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.Chart.name
     summary: |-
-      Represents the name of a chart object. 
+      Represents the name of a chart object.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: name
     fullName: excel.Excel.Chart.name
     langs:
@@ -206,16 +207,16 @@ items:
           - string
   - uid: excel.Excel.Chart.series
     summary: |-
-      Represents either a single series or collection of series in the chart. Read-only. 
+      Represents either a single series or collection of series in the chart. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: series
     fullName: excel.Excel.Chart.series
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'series: Excel.ChartSeriesCollection;'
+      content: 'readonly series: Excel.ChartSeriesCollection;'
       return:
         type:
           - Excel.ChartSeriesCollection
@@ -243,9 +244,9 @@ items:
             - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
   - uid: excel.Excel.Chart.setData
     summary: |-
-      Resets the source data for the chart. 
+      Resets the source data for the chart.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: 'setData(sourceData, seriesBy)'
     fullName: excel.Excel.Chart.setData
     langs:
@@ -268,9 +269,9 @@ items:
             - string
   - uid: excel.Excel.Chart.setPosition
     summary: |-
-      Positions the chart relative to cells on the worksheet. 
+      Positions the chart relative to cells on the worksheet.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: 'setPosition(startCell, endCell)'
     fullName: excel.Excel.Chart.setPosition
     langs:
@@ -294,16 +295,17 @@ items:
   - uid: excel.Excel.Chart.title
     summary: >-
       Represents the title of the specified chart, including the text, visibility, position and formating of the title.
-      Read-only. 
+      Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: title
     fullName: excel.Excel.Chart.title
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'title: Excel.ChartTitle;'
+      content: 'readonly title: Excel.ChartTitle;'
       return:
         type:
           - Excel.ChartTitle
@@ -322,9 +324,10 @@ items:
   - uid: excel.Excel.Chart.top
     summary: >-
       Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
-      top of the chart area (on a chart). 
+      top of the chart area (on a chart).
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: top
     fullName: excel.Excel.Chart.top
     langs:
@@ -337,9 +340,9 @@ items:
           - number
   - uid: excel.Excel.Chart.width
     summary: |-
-      Represents the width, in points, of the chart object. 
+      Represents the width, in points, of the chart object.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: width
     fullName: excel.Excel.Chart.width
     langs:
@@ -352,16 +355,16 @@ items:
           - number
   - uid: excel.Excel.Chart.worksheet
     summary: |-
-      The worksheet containing the current chart. Read-only. 
+      The worksheet containing the current chart. Read-only.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: worksheet
     fullName: excel.Excel.Chart.worksheet
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'worksheet: Excel.Worksheet;'
+      content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
           - Excel.Worksheet

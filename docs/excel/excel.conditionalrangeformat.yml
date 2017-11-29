@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ConditionalRangeFormat
     summary: |-
-      A format object encapsulating the conditional formats range's font, fill, borders, and other properties. 
+      A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.ConditionalRangeFormat
     fullName: excel.Excel.ConditionalRangeFormat
     langs:
@@ -23,46 +23,46 @@ items:
       - excel.Excel.ConditionalRangeFormat.toJSON
   - uid: excel.Excel.ConditionalRangeFormat.borders
     summary: |-
-      Collection of border objects that apply to the overall conditional format range. Read-only. 
+      Collection of border objects that apply to the overall conditional format range. Read-only.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: borders
     fullName: excel.Excel.ConditionalRangeFormat.borders
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'borders: Excel.ConditionalRangeBorderCollection;'
+      content: 'readonly borders: Excel.ConditionalRangeBorderCollection;'
       return:
         type:
           - Excel.ConditionalRangeBorderCollection
   - uid: excel.Excel.ConditionalRangeFormat.fill
     summary: |-
-      Returns the fill object defined on the overall conditional format range. Read-only. 
+      Returns the fill object defined on the overall conditional format range. Read-only.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: fill
     fullName: excel.Excel.ConditionalRangeFormat.fill
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'fill: Excel.ConditionalRangeFill;'
+      content: 'readonly fill: Excel.ConditionalRangeFill;'
       return:
         type:
           - Excel.ConditionalRangeFill
   - uid: excel.Excel.ConditionalRangeFormat.font
     summary: |-
-      Returns the font object defined on the overall conditional format range. Read-only. 
+      Returns the font object defined on the overall conditional format range. Read-only.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: font
     fullName: excel.Excel.ConditionalRangeFormat.font
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'font: Excel.ConditionalRangeFont;'
+      content: 'readonly font: Excel.ConditionalRangeFont;'
       return:
         type:
           - Excel.ConditionalRangeFont
@@ -88,9 +88,9 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.ConditionalRangeFormat.numberFormat
     summary: |-
-      Represents Excel's number format code for the given range. Cleared if null is passed in. 
+      Represents Excel's number format code for the given range. Cleared if null is passed in.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: numberFormat
     fullName: excel.Excel.ConditionalRangeFormat.numberFormat
     langs:

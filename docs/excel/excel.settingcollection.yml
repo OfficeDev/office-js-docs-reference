@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.SettingCollection
     summary: |-
-      Represents a collection of worksheet objects that are part of the workbook. 
+      Represents a collection of worksheet objects that are part of the workbook.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: Excel.SettingCollection
     fullName: excel.Excel.SettingCollection
     langs:
@@ -24,9 +24,9 @@ items:
       - excel.Excel.SettingCollection.toJSON
   - uid: excel.Excel.SettingCollection.add
     summary: |-
-      Sets or adds the specified setting to the workbook. 
+      Sets or adds the specified setting to the workbook.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: 'add(key, value)'
     fullName: excel.Excel.SettingCollection.add
     langs:
@@ -49,9 +49,9 @@ items:
             - string | number | boolean | Array<any> | any
   - uid: excel.Excel.SettingCollection.getCount
     summary: |-
-      Gets the number of Settings in the collection. 
+      Gets the number of Settings in the collection.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getCount()
     fullName: excel.Excel.SettingCollection.getCount
     langs:
@@ -65,9 +65,9 @@ items:
         description: ''
   - uid: excel.Excel.SettingCollection.getItem
     summary: |-
-      Gets a Setting entry via the key. 
+      Gets a Setting entry via the key.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getItem(key)
     fullName: excel.Excel.SettingCollection.getItem
     langs:
@@ -86,9 +86,9 @@ items:
             - string
   - uid: excel.Excel.SettingCollection.getItemOrNullObject
     summary: |-
-      Gets a Setting entry via the key. If the Setting does not exist, will return a null object. 
+      Gets a Setting entry via the key. If the Setting does not exist, will return a null object.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getItemOrNullObject(key)
     fullName: excel.Excel.SettingCollection.getItemOrNullObject
     langs:
@@ -113,7 +113,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Excel.Setting>;'
+      content: 'readonly items: Array<Excel.Setting>;'
       return:
         type:
           - Array<Excel.Setting>
@@ -139,16 +139,16 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.SettingCollection.onSettingsChanged
     summary: |-
-      Occurs when the Settings in the document are changed. 
+      Occurs when the Settings in the document are changed.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: onSettingsChanged
     fullName: excel.Excel.SettingCollection.onSettingsChanged
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'onSettingsChanged: OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>;'
+      content: 'readonly onSettingsChanged: OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>;'
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>

@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.FilterDatetime
     summary: |-
-      Represents how to filter a date when filtering on values. 
+      Represents how to filter a date when filtering on values.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: Excel.FilterDatetime
     fullName: excel.Excel.FilterDatetime
     langs:
@@ -16,9 +16,9 @@ items:
       - excel.Excel.FilterDatetime.specificity
   - uid: excel.Excel.FilterDatetime.date
     summary: |-
-      The date in ISO8601 format used to filter data. 
+      The date in ISO8601 format used to filter data.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: date
     fullName: excel.Excel.FilterDatetime.date
     langs:
@@ -32,9 +32,10 @@ items:
   - uid: excel.Excel.FilterDatetime.specificity
     summary: >-
       How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set
-      to "month", the filter operation will keep all rows with a date in the month of april 2009. 
+      to "month", the filter operation will keep all rows with a date in the month of april 2009.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: specificity
     fullName: excel.Excel.FilterDatetime.specificity
     langs:

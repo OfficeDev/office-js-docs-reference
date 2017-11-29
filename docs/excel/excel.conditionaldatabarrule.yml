@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ConditionalDataBarRule
     summary: |-
-      Represents a rule-type for a Data Bar. 
+      Represents a rule-type for a Data Bar.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.ConditionalDataBarRule
     fullName: excel.Excel.ConditionalDataBarRule
     langs:
@@ -16,9 +16,9 @@ items:
       - excel.Excel.ConditionalDataBarRule.type
   - uid: excel.Excel.ConditionalDataBarRule.formula
     summary: |-
-      The formula, if required, to evaluate the databar rule on. 
+      The formula, if required, to evaluate the databar rule on.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: formula
     fullName: excel.Excel.ConditionalDataBarRule.formula
     langs:
@@ -31,9 +31,9 @@ items:
           - string
   - uid: excel.Excel.ConditionalDataBarRule.type
     summary: |-
-      The type of rule for the databar. 
+      The type of rule for the databar.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: type
     fullName: excel.Excel.ConditionalDataBarRule.type
     langs:

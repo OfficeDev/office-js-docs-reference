@@ -3,9 +3,10 @@ items:
   - uid: excel.Excel.CustomXmlPartScopedCollection
     summary: >-
       A scoped collection of custom XML parts. A scoped collection is the result of some operation, e.g. filtering by
-      namespace. A scoped collection cannot be scoped any further. 
+      namespace. A scoped collection cannot be scoped any further.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: Excel.CustomXmlPartScopedCollection
     fullName: excel.Excel.CustomXmlPartScopedCollection
     langs:
@@ -25,9 +26,9 @@ items:
       - excel.Excel.CustomXmlPartScopedCollection.toJSON
   - uid: excel.Excel.CustomXmlPartScopedCollection.getCount
     summary: |-
-      Gets the number of CustomXML parts in this collection. 
+      Gets the number of CustomXML parts in this collection.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getCount()
     fullName: excel.Excel.CustomXmlPartScopedCollection.getCount
     langs:
@@ -41,9 +42,9 @@ items:
         description: ''
   - uid: excel.Excel.CustomXmlPartScopedCollection.getItem
     summary: |-
-      Gets a custom XML part based on its ID. 
+      Gets a custom XML part based on its ID.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getItem(id)
     fullName: excel.Excel.CustomXmlPartScopedCollection.getItem
     langs:
@@ -63,9 +64,10 @@ items:
   - uid: excel.Excel.CustomXmlPartScopedCollection.getItemOrNullObject
     summary: >-
       Gets a custom XML part based on its ID. If the CustomXmlPart does not exist, the return object's isNull property
-      will be true. 
+      will be true.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getItemOrNullObject(id)
     fullName: excel.Excel.CustomXmlPartScopedCollection.getItemOrNullObject
     langs:
@@ -84,9 +86,9 @@ items:
             - string
   - uid: excel.Excel.CustomXmlPartScopedCollection.getOnlyItem
     summary: |-
-      If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error. 
+      If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getOnlyItem()
     fullName: excel.Excel.CustomXmlPartScopedCollection.getOnlyItem
     langs:
@@ -100,9 +102,9 @@ items:
         description: ''
   - uid: excel.Excel.CustomXmlPartScopedCollection.getOnlyItemOrNullObject
     summary: |-
-      If the collection contains exactly one item, this method returns it. Otherwise, this method returns Null. 
+      If the collection contains exactly one item, this method returns it. Otherwise, this method returns Null.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getOnlyItemOrNullObject()
     fullName: excel.Excel.CustomXmlPartScopedCollection.getOnlyItemOrNullObject
     langs:
@@ -122,7 +124,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Excel.CustomXmlPart>;'
+      content: 'readonly items: Array<Excel.CustomXmlPart>;'
       return:
         type:
           - Array<Excel.CustomXmlPart>

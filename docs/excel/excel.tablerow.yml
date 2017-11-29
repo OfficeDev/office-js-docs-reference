@@ -1,12 +1,16 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.TableRow
-    summary: |-
-      Represents a row in a table. 
+    summary: >-
+      Represents a row in a table.
 
-       Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created. 
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
+      represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows
+      are added, a table row will continue to point at the index for which it was created.
+
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.TableRow
     fullName: excel.Excel.TableRow
     langs:
@@ -25,9 +29,9 @@ items:
       - excel.Excel.TableRow.values
   - uid: excel.Excel.TableRow.delete
     summary: |-
-      Deletes the row from the table. 
+      Deletes the row from the table.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: delete()
     fullName: excel.Excel.TableRow.delete
     langs:
@@ -41,9 +45,9 @@ items:
         description: ''
   - uid: excel.Excel.TableRow.getRange
     summary: |-
-      Returns the range object associated with the entire row. 
+      Returns the range object associated with the entire row.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getRange()
     fullName: excel.Excel.TableRow.getRange
     langs:
@@ -57,16 +61,16 @@ items:
         description: ''
   - uid: excel.Excel.TableRow.index
     summary: |-
-      Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only. 
+      Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: index
     fullName: excel.Excel.TableRow.index
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'index: number;'
+      content: 'readonly index: number;'
       return:
         type:
           - number
@@ -127,9 +131,10 @@ items:
   - uid: excel.Excel.TableRow.values
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
-      Cell that contain an error will return the error string. 
+      Cell that contain an error will return the error string.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: values
     fullName: excel.Excel.TableRow.values
     langs:

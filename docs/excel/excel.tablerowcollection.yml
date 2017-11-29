@@ -1,12 +1,16 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.TableRowCollection
-    summary: |-
-      Represents a collection of all the rows that are part of the table. 
+    summary: >-
+      Represents a collection of all the rows that are part of the table.
 
-       Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created. 
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
+      represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows
+      are added, a table row will continue to point at the index for which it was created.
+
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.TableRowCollection
     fullName: excel.Excel.TableRowCollection
     langs:
@@ -24,12 +28,16 @@ items:
       - excel.Excel.TableRowCollection.load
       - excel.Excel.TableRowCollection.toJSON
   - uid: excel.Excel.TableRowCollection.add
-    summary: |-
-      Adds one or more rows to the table. The return object will be the top of the newly added row(s). 
+    summary: >-
+      Adds one or more rows to the table. The return object will be the top of the newly added row(s).
 
-       Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created. 
 
-       \[ [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows.](http://bing.com) \]
+      Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
+      represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows
+      are added, a table row will continue to point at the index for which it was created.
+
+
+      \[ [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows.](http://bing.com) \]
     name: 'add(index, values)'
     fullName: excel.Excel.TableRowCollection.add
     langs:
@@ -54,24 +62,24 @@ items:
             - Array<Array<boolean | string | number>> | boolean | string | number
   - uid: excel.Excel.TableRowCollection.count
     summary: |-
-      Returns the number of rows in the table. Read-only. 
+      Returns the number of rows in the table. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: count
     fullName: excel.Excel.TableRowCollection.count
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'count: number;'
+      content: 'readonly count: number;'
       return:
         type:
           - number
   - uid: excel.Excel.TableRowCollection.getCount
     summary: |-
-      Gets the number of rows in the table. 
+      Gets the number of rows in the table.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getCount()
     fullName: excel.Excel.TableRowCollection.getCount
     langs:
@@ -84,12 +92,16 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.TableRowCollection.getItemAt
-    summary: |-
-      Gets a row based on its position in the collection. 
+    summary: >-
+      Gets a row based on its position in the collection.
 
-       Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows are added, a table row will continue to point at the index for which it was created. 
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
+      represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows
+      are added, a table row will continue to point at the index for which it was created.
+
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getItemAt(index)
     fullName: excel.Excel.TableRowCollection.getItemAt
     langs:
@@ -114,7 +126,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Excel.TableRow>;'
+      content: 'readonly items: Array<Excel.TableRow>;'
       return:
         type:
           - Array<Excel.TableRow>

@@ -3,9 +3,10 @@ items:
   - uid: excel.Excel.ConditionalIconCriterion
     summary: >-
       Represents an Icon Criterion which contains a type, value, an Operator, and an optional custom icon, if not using
-      an iconset. 
+      an iconset.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.ConditionalIconCriterion
     fullName: excel.Excel.ConditionalIconCriterion
     langs:
@@ -19,9 +20,9 @@ items:
       - excel.Excel.ConditionalIconCriterion.type
   - uid: excel.Excel.ConditionalIconCriterion.customIcon
     summary: |-
-      The custom icon for the current criterion if different from the default IconSet, else null will be returned. 
+      The custom icon for the current criterion if different from the default IconSet, else null will be returned.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: customIcon
     fullName: excel.Excel.ConditionalIconCriterion.customIcon
     langs:
@@ -34,9 +35,9 @@ items:
           - Excel.Icon
   - uid: excel.Excel.ConditionalIconCriterion.formula
     summary: |-
-      A number or a formula depending on the type. 
+      A number or a formula depending on the type.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: formula
     fullName: excel.Excel.ConditionalIconCriterion.formula
     langs:
@@ -49,9 +50,9 @@ items:
           - string
   - uid: excel.Excel.ConditionalIconCriterion.operator
     summary: |-
-      GreaterThan or GreaterThanOrEqual for each of the rule type for the Icon conditional format. 
+      GreaterThan or GreaterThanOrEqual for each of the rule type for the Icon conditional format.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: operator
     fullName: excel.Excel.ConditionalIconCriterion.operator
     langs:
@@ -64,9 +65,9 @@ items:
           - string
   - uid: excel.Excel.ConditionalIconCriterion.type
     summary: |-
-      What the icon conditional formula should be based on. 
+      What the icon conditional formula should be based on.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: type
     fullName: excel.Excel.ConditionalIconCriterion.type
     langs:

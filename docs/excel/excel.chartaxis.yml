@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ChartAxis
     summary: |-
-      Represents a single axis in a chart. 
+      Represents a single axis in a chart.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartAxis
     fullName: excel.Excel.ChartAxis
     langs:
@@ -27,16 +27,16 @@ items:
       - excel.Excel.ChartAxis.toJSON
   - uid: excel.Excel.ChartAxis.format
     summary: |-
-      Represents the formatting of a chart object, which includes line and font formatting. Read-only. 
+      Represents the formatting of a chart object, which includes line and font formatting. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: format
     fullName: excel.Excel.ChartAxis.format
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'format: Excel.ChartAxisFormat;'
+      content: 'readonly format: Excel.ChartAxisFormat;'
       return:
         type:
           - Excel.ChartAxisFormat
@@ -62,25 +62,26 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.ChartAxis.majorGridlines
     summary: |-
-      Returns a gridlines object that represents the major gridlines for the specified axis. Read-only. 
+      Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: majorGridlines
     fullName: excel.Excel.ChartAxis.majorGridlines
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'majorGridlines: Excel.ChartGridlines;'
+      content: 'readonly majorGridlines: Excel.ChartGridlines;'
       return:
         type:
           - Excel.ChartGridlines
   - uid: excel.Excel.ChartAxis.majorUnit
     summary: >-
       Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
-      returned value is always a number. 
+      returned value is always a number.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: majorUnit
     fullName: excel.Excel.ChartAxis.majorUnit
     langs:
@@ -94,9 +95,10 @@ items:
   - uid: excel.Excel.ChartAxis.maximum
     summary: >-
       Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
-      axis values). The returned value is always a number. 
+      axis values). The returned value is always a number.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: maximum
     fullName: excel.Excel.ChartAxis.maximum
     langs:
@@ -110,9 +112,10 @@ items:
   - uid: excel.Excel.ChartAxis.minimum
     summary: >-
       Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
-      axis values). The returned value is always a number. 
+      axis values). The returned value is always a number.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: minimum
     fullName: excel.Excel.ChartAxis.minimum
     langs:
@@ -125,25 +128,26 @@ items:
           - any
   - uid: excel.Excel.ChartAxis.minorGridlines
     summary: |-
-      Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only. 
+      Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: minorGridlines
     fullName: excel.Excel.ChartAxis.minorGridlines
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'minorGridlines: Excel.ChartGridlines;'
+      content: 'readonly minorGridlines: Excel.ChartGridlines;'
       return:
         type:
           - Excel.ChartGridlines
   - uid: excel.Excel.ChartAxis.minorUnit
     summary: >-
       Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for
-      automatic axis values). The returned value is always a number. 
+      automatic axis values). The returned value is always a number.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: minorUnit
     fullName: excel.Excel.ChartAxis.minorUnit
     langs:
@@ -178,16 +182,16 @@ items:
             - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
   - uid: excel.Excel.ChartAxis.title
     summary: |-
-      Represents the axis title. Read-only. 
+      Represents the axis title. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: title
     fullName: excel.Excel.ChartAxis.title
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'title: Excel.ChartAxisTitle;'
+      content: 'readonly title: Excel.ChartAxisTitle;'
       return:
         type:
           - Excel.ChartAxisTitle

@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.Worksheet
     summary: |-
-      An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. 
+      An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.Worksheet
     fullName: excel.Excel.Worksheet
     langs:
@@ -39,9 +39,9 @@ items:
       - excel.Excel.Worksheet.visibility
   - uid: excel.Excel.Worksheet.activate
     summary: |-
-      Activate the worksheet in the Excel UI. 
+      Activate the worksheet in the Excel UI.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: activate()
     fullName: excel.Excel.Worksheet.activate
     langs:
@@ -55,9 +55,9 @@ items:
         description: ''
   - uid: excel.Excel.Worksheet.calculate
     summary: |-
-      Calculates all cells on a worksheet. 
+      Calculates all cells on a worksheet.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: calculate(markAllDirty)
     fullName: excel.Excel.Worksheet.calculate
     langs:
@@ -76,24 +76,24 @@ items:
             - boolean
   - uid: excel.Excel.Worksheet.charts
     summary: |-
-      Returns collection of charts that are part of the worksheet. Read-only. 
+      Returns collection of charts that are part of the worksheet. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: charts
     fullName: excel.Excel.Worksheet.charts
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'charts: Excel.ChartCollection;'
+      content: 'readonly charts: Excel.ChartCollection;'
       return:
         type:
           - Excel.ChartCollection
   - uid: excel.Excel.Worksheet.delete
     summary: |-
-      Deletes the worksheet from the workbook. 
+      Deletes the worksheet from the workbook.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: delete()
     fullName: excel.Excel.Worksheet.delete
     langs:
@@ -108,9 +108,10 @@ items:
   - uid: excel.Excel.Worksheet.getCell
     summary: >-
       Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
-      bounds of its parent range, so long as it's stays within the worksheet grid. 
+      bounds of its parent range, so long as it's stays within the worksheet grid.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: 'getCell(row, column)'
     fullName: excel.Excel.Worksheet.getCell
     langs:
@@ -134,9 +135,10 @@ items:
   - uid: excel.Excel.Worksheet.getNext
     summary: >-
       Gets the worksheet that follows this one. If there are no worksheets following this one, this method will throw an
-      error. 
+      error.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getNext(visibleOnly)
     fullName: excel.Excel.Worksheet.getNext
     langs:
@@ -156,9 +158,10 @@ items:
   - uid: excel.Excel.Worksheet.getNextOrNullObject
     summary: >-
       Gets the worksheet that follows this one. If there are no worksheets following this one, this method will return a
-      null object. 
+      null object.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getNextOrNullObject(visibleOnly)
     fullName: excel.Excel.Worksheet.getNextOrNullObject
     langs:
@@ -177,9 +180,9 @@ items:
             - boolean
   - uid: excel.Excel.Worksheet.getPrevious
     summary: |-
-      Gets the worksheet that precedes this one. If there are no previous worksheets, this method will throw an error. 
+      Gets the worksheet that precedes this one. If there are no previous worksheets, this method will throw an error.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getPrevious(visibleOnly)
     fullName: excel.Excel.Worksheet.getPrevious
     langs:
@@ -199,9 +202,10 @@ items:
   - uid: excel.Excel.Worksheet.getPreviousOrNullObject
     summary: >-
       Gets the worksheet that precedes this one. If there are no previous worksheets, this method will return a null
-      objet. 
+      objet.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getPreviousOrNullObject(visibleOnly)
     fullName: excel.Excel.Worksheet.getPreviousOrNullObject
     langs:
@@ -220,9 +224,9 @@ items:
             - boolean
   - uid: excel.Excel.Worksheet.getRange
     summary: |-
-      Gets the range object specified by the address or name. 
+      Gets the range object specified by the address or name.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getRange(address)
     fullName: excel.Excel.Worksheet.getRange
     langs:
@@ -243,9 +247,10 @@ items:
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
       If the entire worksheet is blank, this function will return the top left cell (i.e.,: it will \*not\* throw an
-      error). 
+      error).
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getUsedRange(valuesOnly)
     fullName: excel.Excel.Worksheet.getUsedRange
     langs:
@@ -265,9 +270,10 @@ items:
   - uid: excel.Excel.Worksheet.getUsedRangeOrNullObject
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
-      If the entire worksheet is blank, this function will return a null object. 
+      If the entire worksheet is blank, this function will return a null object.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getUsedRangeOrNullObject(valuesOnly)
     fullName: excel.Excel.Worksheet.getUsedRangeOrNullObject
     langs:
@@ -287,16 +293,17 @@ items:
   - uid: excel.Excel.Worksheet.id
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
-      the same even when the worksheet is renamed or moved. Read-only. 
+      the same even when the worksheet is renamed or moved. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: id
     fullName: excel.Excel.Worksheet.id
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type:
           - string
@@ -322,9 +329,9 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.Worksheet.name
     summary: |-
-      The display name of the worksheet. 
+      The display name of the worksheet.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: name
     fullName: excel.Excel.Worksheet.name
     langs:
@@ -337,39 +344,39 @@ items:
           - string
   - uid: excel.Excel.Worksheet.names
     summary: |-
-      Collection of names scoped to the current worksheet. Read-only. 
+      Collection of names scoped to the current worksheet. Read-only.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: names
     fullName: excel.Excel.Worksheet.names
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'names: Excel.NamedItemCollection;'
+      content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type:
           - Excel.NamedItemCollection
   - uid: excel.Excel.Worksheet.pivotTables
     summary: |-
-      Collection of PivotTables that are part of the worksheet. Read-only. 
+      Collection of PivotTables that are part of the worksheet. Read-only.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: pivotTables
     fullName: excel.Excel.Worksheet.pivotTables
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'pivotTables: Excel.PivotTableCollection;'
+      content: 'readonly pivotTables: Excel.PivotTableCollection;'
       return:
         type:
           - Excel.PivotTableCollection
   - uid: excel.Excel.Worksheet.position
     summary: |-
-      The zero-based position of the worksheet within the workbook. 
+      The zero-based position of the worksheet within the workbook.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: position
     fullName: excel.Excel.Worksheet.position
     langs:
@@ -382,16 +389,16 @@ items:
           - number
   - uid: excel.Excel.Worksheet.protection
     summary: |-
-      Returns sheet protection object for a worksheet. 
+      Returns sheet protection object for a worksheet.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: protection
     fullName: excel.Excel.Worksheet.protection
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'protection: Excel.WorksheetProtection;'
+      content: 'readonly protection: Excel.WorksheetProtection;'
       return:
         type:
           - Excel.WorksheetProtection
@@ -419,16 +426,16 @@ items:
             - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
   - uid: excel.Excel.Worksheet.tables
     summary: |-
-      Collection of tables that are part of the worksheet. Read-only. 
+      Collection of tables that are part of the worksheet. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: tables
     fullName: excel.Excel.Worksheet.tables
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'tables: Excel.TableCollection;'
+      content: 'readonly tables: Excel.TableCollection;'
       return:
         type:
           - Excel.TableCollection
@@ -446,9 +453,9 @@ items:
         description: ''
   - uid: excel.Excel.Worksheet.visibility
     summary: |-
-      The Visibility of the worksheet. 
+      The Visibility of the worksheet.
 
-       \[ [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.](http://bing.com) \]
     name: visibility
     fullName: excel.Excel.Worksheet.visibility
     langs:

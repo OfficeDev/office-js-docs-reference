@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ChartGridlines
     summary: |-
-      Represents major or minor gridlines on a chart axis. 
+      Represents major or minor gridlines on a chart axis.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartGridlines
     fullName: excel.Excel.ChartGridlines
     langs:
@@ -21,16 +21,16 @@ items:
       - excel.Excel.ChartGridlines.visible
   - uid: excel.Excel.ChartGridlines.format
     summary: |-
-      Represents the formatting of chart gridlines. Read-only. 
+      Represents the formatting of chart gridlines. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: format
     fullName: excel.Excel.ChartGridlines.format
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'format: Excel.ChartGridlinesFormat;'
+      content: 'readonly format: Excel.ChartGridlinesFormat;'
       return:
         type:
           - Excel.ChartGridlinesFormat
@@ -90,9 +90,9 @@ items:
         description: ''
   - uid: excel.Excel.ChartGridlines.visible
     summary: |-
-      Boolean value representing if the axis gridlines are visible or not. 
+      Boolean value representing if the axis gridlines are visible or not.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: visible
     fullName: excel.Excel.ChartGridlines.visible
     langs:

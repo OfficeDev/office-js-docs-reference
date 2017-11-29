@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ConditionalFormatRule
     summary: |-
-      Represents a rule, for all traditional rule/format pairings. 
+      Represents a rule, for all traditional rule/format pairings.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.ConditionalFormatRule
     fullName: excel.Excel.ConditionalFormatRule
     langs:
@@ -22,9 +22,9 @@ items:
       - excel.Excel.ConditionalFormatRule.toJSON
   - uid: excel.Excel.ConditionalFormatRule.formula
     summary: |-
-      The formula, if required, to evaluate the conditional format rule on. 
+      The formula, if required, to evaluate the conditional format rule on.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: formula
     fullName: excel.Excel.ConditionalFormatRule.formula
     langs:
@@ -37,9 +37,9 @@ items:
           - string
   - uid: excel.Excel.ConditionalFormatRule.formulaLocal
     summary: |-
-      The formula, if required, to evaluate the conditional format rule on in the user's language. 
+      The formula, if required, to evaluate the conditional format rule on in the user's language.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: formulaLocal
     fullName: excel.Excel.ConditionalFormatRule.formulaLocal
     langs:
@@ -52,9 +52,9 @@ items:
           - string
   - uid: excel.Excel.ConditionalFormatRule.formulaR1C1
     summary: |-
-      The formula, if required, to evaluate the conditional format rule on in R1C1-style notation. 
+      The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: formulaR1C1
     fullName: excel.Excel.ConditionalFormatRule.formulaR1C1
     langs:

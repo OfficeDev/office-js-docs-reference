@@ -33,7 +33,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'flighting: FlightingService;'
+      content: 'readonly flighting: FlightingService;'
       return:
         type:
           - FlightingService

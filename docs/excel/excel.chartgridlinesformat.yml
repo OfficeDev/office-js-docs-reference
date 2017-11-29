@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ChartGridlinesFormat
     summary: |-
-      Encapsulates the format properties for chart gridlines. 
+      Encapsulates the format properties for chart gridlines.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartGridlinesFormat
     fullName: excel.Excel.ChartGridlinesFormat
     langs:
@@ -20,16 +20,16 @@ items:
       - excel.Excel.ChartGridlinesFormat.toJSON
   - uid: excel.Excel.ChartGridlinesFormat.line
     summary: |-
-      Represents chart line formatting. Read-only. 
+      Represents chart line formatting. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: line
     fullName: excel.Excel.ChartGridlinesFormat.line
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'line: Excel.ChartLineFormat;'
+      content: 'readonly line: Excel.ChartLineFormat;'
       return:
         type:
           - Excel.ChartLineFormat

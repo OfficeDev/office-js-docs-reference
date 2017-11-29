@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.CustomXmlPart
     summary: |-
-      Represents a custom XML part object in a workbook. 
+      Represents a custom XML part object in a workbook.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: Excel.CustomXmlPart
     fullName: excel.Excel.CustomXmlPart
     langs:
@@ -23,9 +23,9 @@ items:
       - excel.Excel.CustomXmlPart.toJSON
   - uid: excel.Excel.CustomXmlPart.delete
     summary: |-
-      Deletes the custom XML part. 
+      Deletes the custom XML part.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: delete()
     fullName: excel.Excel.CustomXmlPart.delete
     langs:
@@ -39,9 +39,9 @@ items:
         description: ''
   - uid: excel.Excel.CustomXmlPart.getXml
     summary: |-
-      Gets the custom XML part's full XML content. 
+      Gets the custom XML part's full XML content.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: getXml()
     fullName: excel.Excel.CustomXmlPart.getXml
     langs:
@@ -55,16 +55,16 @@ items:
         description: ''
   - uid: excel.Excel.CustomXmlPart.id
     summary: |-
-      The custom XML part's ID. Read-only. 
+      The custom XML part's ID. Read-only.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: id
     fullName: excel.Excel.CustomXmlPart.id
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type:
           - string
@@ -90,24 +90,24 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.CustomXmlPart.namespaceUri
     summary: |-
-      The custom XML part's namespace URI. Read-only. 
+      The custom XML part's namespace URI. Read-only.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: namespaceUri
     fullName: excel.Excel.CustomXmlPart.namespaceUri
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'namespaceUri: string;'
+      content: 'readonly namespaceUri: string;'
       return:
         type:
           - string
   - uid: excel.Excel.CustomXmlPart.setXml
     summary: |-
-      Sets the custom XML part's full XML content. 
+      Sets the custom XML part's full XML content.
 
-       \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
     name: setXml(xml)
     fullName: excel.Excel.CustomXmlPart.setXml
     langs:

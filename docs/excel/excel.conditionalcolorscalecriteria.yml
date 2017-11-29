@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ConditionalColorScaleCriteria
     summary: |-
-      Represents the criteria of the color scale. 
+      Represents the criteria of the color scale.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.ConditionalColorScaleCriteria
     fullName: excel.Excel.ConditionalColorScaleCriteria
     langs:
@@ -17,9 +17,9 @@ items:
       - excel.Excel.ConditionalColorScaleCriteria.minimum
   - uid: excel.Excel.ConditionalColorScaleCriteria.maximum
     summary: |-
-      The maximum point Color Scale Criterion. 
+      The maximum point Color Scale Criterion.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: maximum
     fullName: excel.Excel.ConditionalColorScaleCriteria.maximum
     langs:
@@ -32,9 +32,9 @@ items:
           - Excel.ConditionalColorScaleCriterion
   - uid: excel.Excel.ConditionalColorScaleCriteria.midpoint
     summary: |-
-      The midpoint Color Scale Criterion if the color scale is a 3-color scale. 
+      The midpoint Color Scale Criterion if the color scale is a 3-color scale.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: midpoint
     fullName: excel.Excel.ConditionalColorScaleCriteria.midpoint
     langs:
@@ -47,9 +47,9 @@ items:
           - Excel.ConditionalColorScaleCriterion
   - uid: excel.Excel.ConditionalColorScaleCriteria.minimum
     summary: |-
-      The minimum point Color Scale Criterion. 
+      The minimum point Color Scale Criterion.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: minimum
     fullName: excel.Excel.ConditionalColorScaleCriteria.minimum
     langs:

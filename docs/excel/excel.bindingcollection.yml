@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.BindingCollection
     summary: |-
-      Represents the collection of all the binding objects that are part of the workbook. 
+      Represents the collection of all the binding objects that are part of the workbook.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.BindingCollection
     fullName: excel.Excel.BindingCollection
     langs:
@@ -27,9 +27,9 @@ items:
       - excel.Excel.BindingCollection.toJSON
   - uid: excel.Excel.BindingCollection.add
     summary: |-
-      Add a new binding to a particular Range. 
+      Add a new binding to a particular Range.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: 'add(range, bindingType, id)'
     fullName: excel.Excel.BindingCollection.add
     langs:
@@ -56,9 +56,9 @@ items:
             - string
   - uid: excel.Excel.BindingCollection.addFromNamedItem
     summary: |-
-      Add a new binding based on a named item in the workbook. 
+      Add a new binding based on a named item in the workbook.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: 'addFromNamedItem(name, bindingType, id)'
     fullName: excel.Excel.BindingCollection.addFromNamedItem
     langs:
@@ -85,9 +85,9 @@ items:
             - string
   - uid: excel.Excel.BindingCollection.addFromSelection
     summary: |-
-      Add a new binding based on the current selection. 
+      Add a new binding based on the current selection.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: 'addFromSelection(bindingType, id)'
     fullName: excel.Excel.BindingCollection.addFromSelection
     langs:
@@ -110,24 +110,24 @@ items:
             - string
   - uid: excel.Excel.BindingCollection.count
     summary: |-
-      Returns the number of bindings in the collection. Read-only. 
+      Returns the number of bindings in the collection. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: count
     fullName: excel.Excel.BindingCollection.count
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'count: number;'
+      content: 'readonly count: number;'
       return:
         type:
           - number
   - uid: excel.Excel.BindingCollection.getCount
     summary: |-
-      Gets the number of bindings in the collection. 
+      Gets the number of bindings in the collection.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getCount()
     fullName: excel.Excel.BindingCollection.getCount
     langs:
@@ -141,9 +141,9 @@ items:
         description: ''
   - uid: excel.Excel.BindingCollection.getItem
     summary: |-
-      Gets a binding object by ID. 
+      Gets a binding object by ID.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getItem(id)
     fullName: excel.Excel.BindingCollection.getItem
     langs:
@@ -162,9 +162,9 @@ items:
             - string
   - uid: excel.Excel.BindingCollection.getItemAt
     summary: |-
-      Gets a binding object based on its position in the items array. 
+      Gets a binding object based on its position in the items array.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getItemAt(index)
     fullName: excel.Excel.BindingCollection.getItemAt
     langs:
@@ -183,9 +183,9 @@ items:
             - number
   - uid: excel.Excel.BindingCollection.getItemOrNullObject
     summary: |-
-      Gets a binding object by ID. If the binding object does not exist, will return a null object. 
+      Gets a binding object by ID. If the binding object does not exist, will return a null object.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getItemOrNullObject(id)
     fullName: excel.Excel.BindingCollection.getItemOrNullObject
     langs:
@@ -210,7 +210,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Excel.Binding>;'
+      content: 'readonly items: Array<Excel.Binding>;'
       return:
         type:
           - Array<Excel.Binding>

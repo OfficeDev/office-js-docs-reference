@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ChartAreaFormat
     summary: |-
-      Encapsulates the format properties for the overall chart area. 
+      Encapsulates the format properties for the overall chart area.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartAreaFormat
     fullName: excel.Excel.ChartAreaFormat
     langs:
@@ -21,31 +21,31 @@ items:
       - excel.Excel.ChartAreaFormat.toJSON
   - uid: excel.Excel.ChartAreaFormat.fill
     summary: |-
-      Represents the fill format of an object, which includes background formatting information. Read-only. 
+      Represents the fill format of an object, which includes background formatting information. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: fill
     fullName: excel.Excel.ChartAreaFormat.fill
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'fill: Excel.ChartFill;'
+      content: 'readonly fill: Excel.ChartFill;'
       return:
         type:
           - Excel.ChartFill
   - uid: excel.Excel.ChartAreaFormat.font
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only. 
+      Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: font
     fullName: excel.Excel.ChartAreaFormat.font
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'font: Excel.ChartFont;'
+      content: 'readonly font: Excel.ChartFont;'
       return:
         type:
           - Excel.ChartFont

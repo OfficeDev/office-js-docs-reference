@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.RangeFormat
     summary: |-
-      A format object encapsulating the range's font, fill, borders, alignment, and other properties. 
+      A format object encapsulating the range's font, fill, borders, alignment, and other properties.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.RangeFormat
     fullName: excel.Excel.RangeFormat
     langs:
@@ -31,9 +31,10 @@ items:
   - uid: excel.Excel.RangeFormat.autofitColumns
     summary: >-
       Changes the width of the columns of the current range to achieve the best fit, based on the current data in the
-      columns. 
+      columns.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: autofitColumns()
     fullName: excel.Excel.RangeFormat.autofitColumns
     langs:
@@ -48,9 +49,10 @@ items:
   - uid: excel.Excel.RangeFormat.autofitRows
     summary: >-
       Changes the height of the rows of the current range to achieve the best fit, based on the current data in the
-      columns. 
+      columns.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: autofitRows()
     fullName: excel.Excel.RangeFormat.autofitRows
     langs:
@@ -64,25 +66,26 @@ items:
         description: ''
   - uid: excel.Excel.RangeFormat.borders
     summary: |-
-      Collection of border objects that apply to the overall range. Read-only. 
+      Collection of border objects that apply to the overall range. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: borders
     fullName: excel.Excel.RangeFormat.borders
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'borders: Excel.RangeBorderCollection;'
+      content: 'readonly borders: Excel.RangeBorderCollection;'
       return:
         type:
           - Excel.RangeBorderCollection
   - uid: excel.Excel.RangeFormat.columnWidth
     summary: >-
       Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be
-      returned. 
+      returned.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: columnWidth
     fullName: excel.Excel.RangeFormat.columnWidth
     langs:
@@ -95,39 +98,39 @@ items:
           - number
   - uid: excel.Excel.RangeFormat.fill
     summary: |-
-      Returns the fill object defined on the overall range. Read-only. 
+      Returns the fill object defined on the overall range. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: fill
     fullName: excel.Excel.RangeFormat.fill
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'fill: Excel.RangeFill;'
+      content: 'readonly fill: Excel.RangeFill;'
       return:
         type:
           - Excel.RangeFill
   - uid: excel.Excel.RangeFormat.font
     summary: |-
-      Returns the font object defined on the overall range. Read-only. 
+      Returns the font object defined on the overall range. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: font
     fullName: excel.Excel.RangeFormat.font
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'font: Excel.RangeFont;'
+      content: 'readonly font: Excel.RangeFont;'
       return:
         type:
           - Excel.RangeFont
   - uid: excel.Excel.RangeFormat.horizontalAlignment
     summary: |-
-      Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details. 
+      Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: horizontalAlignment
     fullName: excel.Excel.RangeFormat.horizontalAlignment
     langs:
@@ -160,24 +163,24 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.RangeFormat.protection
     summary: |-
-      Returns the format protection object for a range. 
+      Returns the format protection object for a range.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: protection
     fullName: excel.Excel.RangeFormat.protection
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'protection: Excel.FormatProtection;'
+      content: 'readonly protection: Excel.FormatProtection;'
       return:
         type:
           - Excel.FormatProtection
   - uid: excel.Excel.RangeFormat.rowHeight
     summary: |-
-      Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned. 
+      Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: rowHeight
     fullName: excel.Excel.RangeFormat.rowHeight
     langs:
@@ -224,9 +227,9 @@ items:
         description: ''
   - uid: excel.Excel.RangeFormat.verticalAlignment
     summary: |-
-      Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details. 
+      Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: verticalAlignment
     fullName: excel.Excel.RangeFormat.verticalAlignment
     langs:
@@ -240,9 +243,10 @@ items:
   - uid: excel.Excel.RangeFormat.wrapText
     summary: >-
       Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
-      wrap setting 
+      wrap setting
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: wrapText
     fullName: excel.Excel.RangeFormat.wrapText
     langs:

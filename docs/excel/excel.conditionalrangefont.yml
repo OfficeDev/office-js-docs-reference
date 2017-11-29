@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ConditionalRangeFont
     summary: |-
-      This object represents the font attributes (font style,, color, etc.) for an object. 
+      This object represents the font attributes (font style,, color, etc.) for an object.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.ConditionalRangeFont
     fullName: excel.Excel.ConditionalRangeFont
     langs:
@@ -25,9 +25,9 @@ items:
       - excel.Excel.ConditionalRangeFont.underline
   - uid: excel.Excel.ConditionalRangeFont.bold
     summary: |-
-      Represents the bold status of font. 
+      Represents the bold status of font.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: bold
     fullName: excel.Excel.ConditionalRangeFont.bold
     langs:
@@ -40,9 +40,9 @@ items:
           - boolean
   - uid: excel.Excel.ConditionalRangeFont.clear
     summary: |-
-      Resets the font formats. 
+      Resets the font formats.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: clear()
     fullName: excel.Excel.ConditionalRangeFont.clear
     langs:
@@ -56,9 +56,9 @@ items:
         description: ''
   - uid: excel.Excel.ConditionalRangeFont.color
     summary: |-
-      HTML color code representation of the text color. E.g. \#FF0000 represents Red. 
+      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: color
     fullName: excel.Excel.ConditionalRangeFont.color
     langs:
@@ -71,9 +71,9 @@ items:
           - string
   - uid: excel.Excel.ConditionalRangeFont.italic
     summary: |-
-      Represents the italic status of the font. 
+      Represents the italic status of the font.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: italic
     fullName: excel.Excel.ConditionalRangeFont.italic
     langs:
@@ -128,9 +128,9 @@ items:
             - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
   - uid: excel.Excel.ConditionalRangeFont.strikethrough
     summary: |-
-      Represents the strikethrough status of the font. 
+      Represents the strikethrough status of the font.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: strikethrough
     fullName: excel.Excel.ConditionalRangeFont.strikethrough
     langs:
@@ -155,9 +155,9 @@ items:
         description: ''
   - uid: excel.Excel.ConditionalRangeFont.underline
     summary: |-
-      Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details. 
+      Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: underline
     fullName: excel.Excel.ConditionalRangeFont.underline
     langs:

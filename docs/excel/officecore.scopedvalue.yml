@@ -2,9 +2,9 @@
 items:
   - uid: excel.OfficeCore.ScopedValue
     summary: |-
-      Provides information about the scoped value. 
+      Provides information about the scoped value.
 
-       \[ [Api set: Experimentation 1.1 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: Experimentation 1.1 (PREVIEW)](http://bing.com) \]
     name: OfficeCore.ScopedValue
     fullName: excel.OfficeCore.ScopedValue
     langs:
@@ -16,9 +16,9 @@ items:
       - excel.OfficeCore.ScopedValue.value
   - uid: excel.OfficeCore.ScopedValue.scope
     summary: |-
-      Gets the scope. 
+      Gets the scope.
 
-       \[ [Api set: Experimentation 1.1 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: Experimentation 1.1 (PREVIEW)](http://bing.com) \]
     name: scope
     fullName: excel.OfficeCore.ScopedValue.scope
     langs:
@@ -31,9 +31,9 @@ items:
           - string
   - uid: excel.OfficeCore.ScopedValue.value
     summary: |-
-      Gets the value. 
+      Gets the value.
 
-       \[ [Api set: Experimentation 1.1 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: Experimentation 1.1 (PREVIEW)](http://bing.com) \]
     name: value
     fullName: excel.OfficeCore.ScopedValue.value
     langs:

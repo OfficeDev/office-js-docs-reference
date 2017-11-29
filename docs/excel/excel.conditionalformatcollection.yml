@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ConditionalFormatCollection
     summary: |-
-      Represents a collection of all the conditional formats that are overlap the range. 
+      Represents a collection of all the conditional formats that are overlap the range.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.ConditionalFormatCollection
     fullName: excel.Excel.ConditionalFormatCollection
     langs:
@@ -24,9 +24,9 @@ items:
       - excel.Excel.ConditionalFormatCollection.toJSON
   - uid: excel.Excel.ConditionalFormatCollection.add
     summary: |-
-      Adds a new conditional format to the collection at the first/top priority. 
+      Adds a new conditional format to the collection at the first/top priority.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: add(type)
     fullName: excel.Excel.ConditionalFormatCollection.add
     langs:
@@ -45,9 +45,9 @@ items:
             - string
   - uid: excel.Excel.ConditionalFormatCollection.clearAll
     summary: |-
-      Clears all conditional formats active on the current specified range. 
+      Clears all conditional formats active on the current specified range.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: clearAll()
     fullName: excel.Excel.ConditionalFormatCollection.clearAll
     langs:
@@ -61,9 +61,9 @@ items:
         description: ''
   - uid: excel.Excel.ConditionalFormatCollection.getCount
     summary: |-
-      Returns the number of conditional formats in the workbook. Read-only. 
+      Returns the number of conditional formats in the workbook. Read-only.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: getCount()
     fullName: excel.Excel.ConditionalFormatCollection.getCount
     langs:
@@ -77,9 +77,9 @@ items:
         description: ''
   - uid: excel.Excel.ConditionalFormatCollection.getItem
     summary: |-
-      Returns a conditional format for the given ID. 
+      Returns a conditional format for the given ID.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: getItem(id)
     fullName: excel.Excel.ConditionalFormatCollection.getItem
     langs:
@@ -98,9 +98,9 @@ items:
             - string
   - uid: excel.Excel.ConditionalFormatCollection.getItemAt
     summary: |-
-      Returns a conditional format at the given index. 
+      Returns a conditional format at the given index.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: getItemAt(index)
     fullName: excel.Excel.ConditionalFormatCollection.getItemAt
     langs:
@@ -125,7 +125,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Excel.ConditionalFormat>;'
+      content: 'readonly items: Array<Excel.ConditionalFormat>;'
       return:
         type:
           - Array<Excel.ConditionalFormat>

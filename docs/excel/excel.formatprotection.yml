@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.FormatProtection
     summary: |-
-      Represents the format protection of a range object. 
+      Represents the format protection of a range object.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: Excel.FormatProtection
     fullName: excel.Excel.FormatProtection
     langs:
@@ -22,9 +22,10 @@ items:
   - uid: excel.Excel.FormatProtection.formulaHidden
     summary: >-
       Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range
-      doesn't have uniform formula hidden setting. 
+      doesn't have uniform formula hidden setting.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: formulaHidden
     fullName: excel.Excel.FormatProtection.formulaHidden
     langs:
@@ -58,9 +59,10 @@ items:
   - uid: excel.Excel.FormatProtection.locked
     summary: >-
       Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have
-      uniform lock setting. 
+      uniform lock setting.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: locked
     fullName: excel.Excel.FormatProtection.locked
     langs:

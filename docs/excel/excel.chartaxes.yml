@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ChartAxes
     summary: |-
-      Represents the chart axes. 
+      Represents the chart axes.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartAxes
     fullName: excel.Excel.ChartAxes
     langs:
@@ -22,16 +22,16 @@ items:
       - excel.Excel.ChartAxes.valueAxis
   - uid: excel.Excel.ChartAxes.categoryAxis
     summary: |-
-      Represents the category axis in a chart. Read-only. 
+      Represents the category axis in a chart. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: categoryAxis
     fullName: excel.Excel.ChartAxes.categoryAxis
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'categoryAxis: Excel.ChartAxis;'
+      content: 'readonly categoryAxis: Excel.ChartAxis;'
       return:
         type:
           - Excel.ChartAxis
@@ -57,16 +57,16 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.ChartAxes.seriesAxis
     summary: |-
-      Represents the series axis of a 3-dimensional chart. Read-only. 
+      Represents the series axis of a 3-dimensional chart. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: seriesAxis
     fullName: excel.Excel.ChartAxes.seriesAxis
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'seriesAxis: Excel.ChartAxis;'
+      content: 'readonly seriesAxis: Excel.ChartAxis;'
       return:
         type:
           - Excel.ChartAxis
@@ -106,16 +106,16 @@ items:
         description: ''
   - uid: excel.Excel.ChartAxes.valueAxis
     summary: |-
-      Represents the value axis in an axis. Read-only. 
+      Represents the value axis in an axis. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: valueAxis
     fullName: excel.Excel.ChartAxes.valueAxis
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'valueAxis: Excel.ChartAxis;'
+      content: 'readonly valueAxis: Excel.ChartAxis;'
       return:
         type:
           - Excel.ChartAxis

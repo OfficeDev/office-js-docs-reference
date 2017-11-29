@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.RangeView
     summary: |-
-      RangeView represents a set of visible cells of the parent range. 
+      RangeView represents a set of visible cells of the parent range.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: Excel.RangeView
     fullName: excel.Excel.RangeView
     langs:
@@ -32,39 +32,39 @@ items:
       - excel.Excel.RangeView.valueTypes
   - uid: excel.Excel.RangeView.cellAddresses
     summary: |-
-      Represents the cell addresses of the RangeView. 
+      Represents the cell addresses of the RangeView.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: cellAddresses
     fullName: excel.Excel.RangeView.cellAddresses
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'cellAddresses: Array<Array<any>>;'
+      content: 'readonly cellAddresses: Array<Array<any>>;'
       return:
         type:
           - Array<Array<any>>
   - uid: excel.Excel.RangeView.columnCount
     summary: |-
-      Returns the number of visible columns. Read-only. 
+      Returns the number of visible columns. Read-only.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: columnCount
     fullName: excel.Excel.RangeView.columnCount
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'columnCount: number;'
+      content: 'readonly columnCount: number;'
       return:
         type:
           - number
   - uid: excel.Excel.RangeView.formulas
     summary: |-
-      Represents the formula in A1-style notation. 
+      Represents the formula in A1-style notation.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: formulas
     fullName: excel.Excel.RangeView.formulas
     langs:
@@ -78,9 +78,10 @@ items:
   - uid: excel.Excel.RangeView.formulasLocal
     summary: >-
       Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
-      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. 
+      English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: formulasLocal
     fullName: excel.Excel.RangeView.formulasLocal
     langs:
@@ -93,9 +94,9 @@ items:
           - Array<Array<any>>
   - uid: excel.Excel.RangeView.formulasR1C1
     summary: |-
-      Represents the formula in R1C1-style notation. 
+      Represents the formula in R1C1-style notation.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: formulasR1C1
     fullName: excel.Excel.RangeView.formulasR1C1
     langs:
@@ -108,9 +109,9 @@ items:
           - Array<Array<any>>
   - uid: excel.Excel.RangeView.getRange
     summary: |-
-      Gets the parent range associated with the current RangeView. 
+      Gets the parent range associated with the current RangeView.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: getRange()
     fullName: excel.Excel.RangeView.getRange
     langs:
@@ -124,16 +125,16 @@ items:
         description: ''
   - uid: excel.Excel.RangeView.index
     summary: |-
-      Returns a value that represents the index of the RangeView. Read-only. 
+      Returns a value that represents the index of the RangeView. Read-only.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: index
     fullName: excel.Excel.RangeView.index
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'index: number;'
+      content: 'readonly index: number;'
       return:
         type:
           - number
@@ -159,9 +160,9 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.RangeView.numberFormat
     summary: |-
-      Represents Excel's number format code for the given cell. 
+      Represents Excel's number format code for the given cell.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: numberFormat
     fullName: excel.Excel.RangeView.numberFormat
     langs:
@@ -174,31 +175,31 @@ items:
           - Array<Array<any>>
   - uid: excel.Excel.RangeView.rowCount
     summary: |-
-      Returns the number of visible rows. Read-only. 
+      Returns the number of visible rows. Read-only.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: rowCount
     fullName: excel.Excel.RangeView.rowCount
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'rowCount: number;'
+      content: 'readonly rowCount: number;'
       return:
         type:
           - number
   - uid: excel.Excel.RangeView.rows
     summary: |-
-      Represents a collection of range views associated with the range. Read-only. 
+      Represents a collection of range views associated with the range. Read-only.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: rows
     fullName: excel.Excel.RangeView.rows
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'rows: Excel.RangeViewCollection;'
+      content: 'readonly rows: Excel.RangeViewCollection;'
       return:
         type:
           - Excel.RangeViewCollection
@@ -227,16 +228,17 @@ items:
   - uid: excel.Excel.RangeView.text
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
-      that happens in Excel UI will not affect the text value returned by the API. Read-only. 
+      that happens in Excel UI will not affect the text value returned by the API. Read-only.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: text
     fullName: excel.Excel.RangeView.text
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'text: Array<Array<any>>;'
+      content: 'readonly text: Array<Array<any>>;'
       return:
         type:
           - Array<Array<any>>
@@ -255,9 +257,10 @@ items:
   - uid: excel.Excel.RangeView.values
     summary: >-
       Represents the raw values of the specified range view. The data returned could be of type string, number, or a
-      boolean. Cell that contain an error will return the error string. 
+      boolean. Cell that contain an error will return the error string.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: values
     fullName: excel.Excel.RangeView.values
     langs:
@@ -270,16 +273,16 @@ items:
           - Array<Array<any>>
   - uid: excel.Excel.RangeView.valueTypes
     summary: |-
-      Represents the type of data of each cell. Read-only. 
+      Represents the type of data of each cell. Read-only.
 
-       \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
     name: valueTypes
     fullName: excel.Excel.RangeView.valueTypes
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'valueTypes: Array<Array<string>>;'
+      content: 'readonly valueTypes: Array<Array<string>>;'
       return:
         type:
           - Array<Array<string>>

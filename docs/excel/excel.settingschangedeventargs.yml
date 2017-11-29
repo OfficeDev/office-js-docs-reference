@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.SettingsChangedEventArgs
     summary: |-
-      Provides information about the setting that raised the SettingsChanged event 
+      Provides information about the setting that raised the SettingsChanged event
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: Excel.SettingsChangedEventArgs
     fullName: excel.Excel.SettingsChangedEventArgs
     langs:
@@ -15,9 +15,9 @@ items:
       - excel.Excel.SettingsChangedEventArgs.settings
   - uid: excel.Excel.SettingsChangedEventArgs.settings
     summary: |-
-      Gets the Setting object that represents the binding that raised the SettingsChanged event 
+      Gets the Setting object that represents the binding that raised the SettingsChanged event
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: settings
     fullName: excel.Excel.SettingsChangedEventArgs.settings
     langs:

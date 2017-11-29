@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ConditionalCellValueRule
     summary: |-
-      Represents a Cell Value Conditional Format Rule 
+      Represents a Cell Value Conditional Format Rule
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.ConditionalCellValueRule
     fullName: excel.Excel.ConditionalCellValueRule
     langs:
@@ -17,9 +17,9 @@ items:
       - excel.Excel.ConditionalCellValueRule.operator
   - uid: excel.Excel.ConditionalCellValueRule.formula1
     summary: |-
-      The formula, if required, to evaluate the conditional format rule on. 
+      The formula, if required, to evaluate the conditional format rule on.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: formula1
     fullName: excel.Excel.ConditionalCellValueRule.formula1
     langs:
@@ -32,9 +32,9 @@ items:
           - string
   - uid: excel.Excel.ConditionalCellValueRule.formula2
     summary: |-
-      The formula, if required, to evaluate the conditional format rule on. 
+      The formula, if required, to evaluate the conditional format rule on.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: formula2
     fullName: excel.Excel.ConditionalCellValueRule.formula2
     langs:
@@ -47,9 +47,9 @@ items:
           - string
   - uid: excel.Excel.ConditionalCellValueRule.operator
     summary: |-
-      The operator of the text conditional format. 
+      The operator of the text conditional format.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: operator
     fullName: excel.Excel.ConditionalCellValueRule.operator
     langs:

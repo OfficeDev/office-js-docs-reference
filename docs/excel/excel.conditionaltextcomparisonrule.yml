@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ConditionalTextComparisonRule
     summary: |-
-      Represents a Cell Value Conditional Format Rule 
+      Represents a Cell Value Conditional Format Rule
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: Excel.ConditionalTextComparisonRule
     fullName: excel.Excel.ConditionalTextComparisonRule
     langs:
@@ -16,9 +16,9 @@ items:
       - excel.Excel.ConditionalTextComparisonRule.text
   - uid: excel.Excel.ConditionalTextComparisonRule.operator
     summary: |-
-      The operator of the text conditional format. 
+      The operator of the text conditional format.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: operator
     fullName: excel.Excel.ConditionalTextComparisonRule.operator
     langs:
@@ -31,9 +31,9 @@ items:
           - string
   - uid: excel.Excel.ConditionalTextComparisonRule.text
     summary: |-
-      The Text value of conditional format. 
+      The Text value of conditional format.
 
-       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
     name: text
     fullName: excel.Excel.ConditionalTextComparisonRule.text
     langs:

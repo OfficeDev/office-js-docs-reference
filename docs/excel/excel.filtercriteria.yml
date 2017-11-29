@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.FilterCriteria
     summary: |-
-      Represents the filtering criteria applied to a column. 
+      Represents the filtering criteria applied to a column.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: Excel.FilterCriteria
     fullName: excel.Excel.FilterCriteria
     langs:
@@ -22,9 +22,9 @@ items:
       - excel.Excel.FilterCriteria.values
   - uid: excel.Excel.FilterCriteria.color
     summary: |-
-      The HTML color string used to filter cells. Used with "cellColor" and "fontColor" filtering. 
+      The HTML color string used to filter cells. Used with "cellColor" and "fontColor" filtering.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: color
     fullName: excel.Excel.FilterCriteria.color
     langs:
@@ -38,11 +38,14 @@ items:
   - uid: excel.Excel.FilterCriteria.criterion1
     summary: >-
       The first criterion used to filter data. Used as an operator in the case of "custom" filtering. For example
-      "&gt;50" for number greater than 50 or "=\*s" for values ending in "s". 
+      "&gt;50" for number greater than 50 or "=\*s" for values ending in "s".
 
-       Used as a number in the case of top/bottom items/percents. E.g. "5" for the top 5 items if filterOn is set to "topItems" 
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      Used as a number in the case of top/bottom items/percents. E.g. "5" for the top 5 items if filterOn is set to
+      "topItems"
+
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: criterion1
     fullName: excel.Excel.FilterCriteria.criterion1
     langs:
@@ -55,9 +58,9 @@ items:
           - string
   - uid: excel.Excel.FilterCriteria.criterion2
     summary: |-
-      The second criterion used to filter data. Only used as an operator in the case of "custom" filtering. 
+      The second criterion used to filter data. Only used as an operator in the case of "custom" filtering.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: criterion2
     fullName: excel.Excel.FilterCriteria.criterion2
     langs:
@@ -71,9 +74,10 @@ items:
   - uid: excel.Excel.FilterCriteria.dynamicCriteria
     summary: >-
       The dynamic criteria from the Excel.DynamicFilterCriteria set to apply on this column. Used with "dynamic"
-      filtering. 
+      filtering.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: dynamicCriteria
     fullName: excel.Excel.FilterCriteria.dynamicCriteria
     langs:
@@ -86,9 +90,9 @@ items:
           - string
   - uid: excel.Excel.FilterCriteria.filterOn
     summary: |-
-      The property used by the filter to determine whether the values should stay visible. 
+      The property used by the filter to determine whether the values should stay visible.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: filterOn
     fullName: excel.Excel.FilterCriteria.filterOn
     langs:
@@ -101,9 +105,9 @@ items:
           - string
   - uid: excel.Excel.FilterCriteria.icon
     summary: |-
-      The icon used to filter cells. Used with "icon" filtering. 
+      The icon used to filter cells. Used with "icon" filtering.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: icon
     fullName: excel.Excel.FilterCriteria.icon
     langs:
@@ -116,9 +120,9 @@ items:
           - Excel.Icon
   - uid: excel.Excel.FilterCriteria.operator
     summary: |-
-      The operator used to combine criterion 1 and 2 when using "custom" filtering. 
+      The operator used to combine criterion 1 and 2 when using "custom" filtering.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: operator
     fullName: excel.Excel.FilterCriteria.operator
     langs:
@@ -131,9 +135,9 @@ items:
           - string
   - uid: excel.Excel.FilterCriteria.values
     summary: |-
-      The set of values to be used as part of "values" filtering. 
+      The set of values to be used as part of "values" filtering.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: values
     fullName: excel.Excel.FilterCriteria.values
     langs:

@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ChartAxisFormat
     summary: |-
-      Encapsulates the format properties for the chart axis. 
+      Encapsulates the format properties for the chart axis.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartAxisFormat
     fullName: excel.Excel.ChartAxisFormat
     langs:
@@ -21,31 +21,31 @@ items:
       - excel.Excel.ChartAxisFormat.toJSON
   - uid: excel.Excel.ChartAxisFormat.font
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only. 
+      Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: font
     fullName: excel.Excel.ChartAxisFormat.font
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'font: Excel.ChartFont;'
+      content: 'readonly font: Excel.ChartFont;'
       return:
         type:
           - Excel.ChartFont
   - uid: excel.Excel.ChartAxisFormat.line
     summary: |-
-      Represents chart line formatting. Read-only. 
+      Represents chart line formatting. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: line
     fullName: excel.Excel.ChartAxisFormat.line
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'line: Excel.ChartLineFormat;'
+      content: 'readonly line: Excel.ChartLineFormat;'
       return:
         type:
           - Excel.ChartLineFormat

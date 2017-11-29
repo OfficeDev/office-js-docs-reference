@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ChartDataLabels
     summary: |-
-      Represents a collection of all the data labels on a chart point. 
+      Represents a collection of all the data labels on a chart point.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartDataLabels
     fullName: excel.Excel.ChartDataLabels
     langs:
@@ -28,16 +28,16 @@ items:
       - excel.Excel.ChartDataLabels.toJSON
   - uid: excel.Excel.ChartDataLabels.format
     summary: |-
-      Represents the format of chart data labels, which includes fill and font formatting. Read-only. 
+      Represents the format of chart data labels, which includes fill and font formatting. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: format
     fullName: excel.Excel.ChartDataLabels.format
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'format: Excel.ChartDataLabelFormat;'
+      content: 'readonly format: Excel.ChartDataLabelFormat;'
       return:
         type:
           - Excel.ChartDataLabelFormat
@@ -64,9 +64,10 @@ items:
   - uid: excel.Excel.ChartDataLabels.position
     summary: >-
       DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
-      details. 
+      details.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: position
     fullName: excel.Excel.ChartDataLabels.position
     langs:
@@ -79,9 +80,9 @@ items:
           - string
   - uid: excel.Excel.ChartDataLabels.separator
     summary: |-
-      String representing the separator used for the data labels on a chart. 
+      String representing the separator used for the data labels on a chart.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: separator
     fullName: excel.Excel.ChartDataLabels.separator
     langs:
@@ -116,9 +117,9 @@ items:
             - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
   - uid: excel.Excel.ChartDataLabels.showBubbleSize
     summary: |-
-      Boolean value representing if the data label bubble size is visible or not. 
+      Boolean value representing if the data label bubble size is visible or not.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: showBubbleSize
     fullName: excel.Excel.ChartDataLabels.showBubbleSize
     langs:
@@ -131,9 +132,9 @@ items:
           - boolean
   - uid: excel.Excel.ChartDataLabels.showCategoryName
     summary: |-
-      Boolean value representing if the data label category name is visible or not. 
+      Boolean value representing if the data label category name is visible or not.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: showCategoryName
     fullName: excel.Excel.ChartDataLabels.showCategoryName
     langs:
@@ -146,9 +147,9 @@ items:
           - boolean
   - uid: excel.Excel.ChartDataLabels.showLegendKey
     summary: |-
-      Boolean value representing if the data label legend key is visible or not. 
+      Boolean value representing if the data label legend key is visible or not.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: showLegendKey
     fullName: excel.Excel.ChartDataLabels.showLegendKey
     langs:
@@ -161,9 +162,9 @@ items:
           - boolean
   - uid: excel.Excel.ChartDataLabels.showPercentage
     summary: |-
-      Boolean value representing if the data label percentage is visible or not. 
+      Boolean value representing if the data label percentage is visible or not.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: showPercentage
     fullName: excel.Excel.ChartDataLabels.showPercentage
     langs:
@@ -176,9 +177,9 @@ items:
           - boolean
   - uid: excel.Excel.ChartDataLabels.showSeriesName
     summary: |-
-      Boolean value representing if the data label series name is visible or not. 
+      Boolean value representing if the data label series name is visible or not.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: showSeriesName
     fullName: excel.Excel.ChartDataLabels.showSeriesName
     langs:
@@ -191,9 +192,9 @@ items:
           - boolean
   - uid: excel.Excel.ChartDataLabels.showValue
     summary: |-
-      Boolean value representing if the data label value is visible or not. 
+      Boolean value representing if the data label value is visible or not.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: showValue
     fullName: excel.Excel.ChartDataLabels.showValue
     langs:

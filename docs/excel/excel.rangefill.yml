@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.RangeFill
     summary: |-
-      Represents the background of a range object. 
+      Represents the background of a range object.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.RangeFill
     fullName: excel.Excel.RangeFill
     langs:
@@ -21,9 +21,9 @@ items:
       - excel.Excel.RangeFill.toJSON
   - uid: excel.Excel.RangeFill.clear
     summary: |-
-      Resets the range background. 
+      Resets the range background.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: clear()
     fullName: excel.Excel.RangeFill.clear
     langs:
@@ -38,9 +38,10 @@ items:
   - uid: excel.Excel.RangeFill.color
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange") 
+      color (e.g. "orange")
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: color
     fullName: excel.Excel.RangeFill.color
     langs:

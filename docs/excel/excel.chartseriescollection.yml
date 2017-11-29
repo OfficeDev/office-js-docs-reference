@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ChartSeriesCollection
     summary: |-
-      Represents a collection of chart series. 
+      Represents a collection of chart series.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartSeriesCollection
     fullName: excel.Excel.ChartSeriesCollection
     langs:
@@ -22,24 +22,24 @@ items:
       - excel.Excel.ChartSeriesCollection.toJSON
   - uid: excel.Excel.ChartSeriesCollection.count
     summary: |-
-      Returns the number of series in the collection. Read-only. 
+      Returns the number of series in the collection. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: count
     fullName: excel.Excel.ChartSeriesCollection.count
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'count: number;'
+      content: 'readonly count: number;'
       return:
         type:
           - number
   - uid: excel.Excel.ChartSeriesCollection.getCount
     summary: |-
-      Returns the number of series in the collection. 
+      Returns the number of series in the collection.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getCount()
     fullName: excel.Excel.ChartSeriesCollection.getCount
     langs:
@@ -53,9 +53,9 @@ items:
         description: ''
   - uid: excel.Excel.ChartSeriesCollection.getItemAt
     summary: |-
-      Retrieves a series based on its position in the collection. 
+      Retrieves a series based on its position in the collection.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getItemAt(index)
     fullName: excel.Excel.ChartSeriesCollection.getItemAt
     langs:
@@ -80,7 +80,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Excel.ChartSeries>;'
+      content: 'readonly items: Array<Excel.ChartSeries>;'
       return:
         type:
           - Array<Excel.ChartSeries>

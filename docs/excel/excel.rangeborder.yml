@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.RangeBorder
     summary: |-
-      Represents the border of an object. 
+      Represents the border of an object.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.RangeBorder
     fullName: excel.Excel.RangeBorder
     langs:
@@ -24,9 +24,10 @@ items:
   - uid: excel.Excel.RangeBorder.color
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange"). 
+      color (e.g. "orange").
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: color
     fullName: excel.Excel.RangeBorder.color
     langs:
@@ -81,25 +82,26 @@ items:
             - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
   - uid: excel.Excel.RangeBorder.sideIndex
     summary: |-
-      Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only. 
+      Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: sideIndex
     fullName: excel.Excel.RangeBorder.sideIndex
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'sideIndex: string;'
+      content: 'readonly sideIndex: string;'
       return:
         type:
           - string
   - uid: excel.Excel.RangeBorder.style
     summary: >-
       One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
-      details. 
+      details.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: style
     fullName: excel.Excel.RangeBorder.style
     langs:
@@ -124,9 +126,9 @@ items:
         description: ''
   - uid: excel.Excel.RangeBorder.weight
     summary: |-
-      Specifies the weight of the border around a range. See Excel.BorderWeight for details. 
+      Specifies the weight of the border around a range. See Excel.BorderWeight for details.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: weight
     fullName: excel.Excel.RangeBorder.weight
     langs:

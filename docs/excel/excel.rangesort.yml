@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.RangeSort
     summary: |-
-      Manages sorting operations on Range objects. 
+      Manages sorting operations on Range objects.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: Excel.RangeSort
     fullName: excel.Excel.RangeSort
     langs:
@@ -18,9 +18,9 @@ items:
       - excel.Excel.RangeSort.toJSON
   - uid: excel.Excel.RangeSort.apply
     summary: |-
-      Perform a sort operation. 
+      Perform a sort operation.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
     fullName: excel.Excel.RangeSort.apply
     langs:

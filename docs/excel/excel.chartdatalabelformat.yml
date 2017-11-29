@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ChartDataLabelFormat
     summary: |-
-      Encapsulates the format properties for the chart data labels. 
+      Encapsulates the format properties for the chart data labels.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartDataLabelFormat
     fullName: excel.Excel.ChartDataLabelFormat
     langs:
@@ -21,31 +21,31 @@ items:
       - excel.Excel.ChartDataLabelFormat.toJSON
   - uid: excel.Excel.ChartDataLabelFormat.fill
     summary: |-
-      Represents the fill format of the current chart data label. Read-only. 
+      Represents the fill format of the current chart data label. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: fill
     fullName: excel.Excel.ChartDataLabelFormat.fill
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'fill: Excel.ChartFill;'
+      content: 'readonly fill: Excel.ChartFill;'
       return:
         type:
           - Excel.ChartFill
   - uid: excel.Excel.ChartDataLabelFormat.font
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only. 
+      Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: font
     fullName: excel.Excel.ChartDataLabelFormat.font
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'font: Excel.ChartFont;'
+      content: 'readonly font: Excel.ChartFont;'
       return:
         type:
           - Excel.ChartFont

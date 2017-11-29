@@ -3,9 +3,10 @@ items:
   - uid: excel.Excel.NamedItemCollection
     summary: >-
       A collection of all the nameditem objects that are part of the workbook or worksheet, depending on how it was
-      reached. 
+      reached.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.NamedItemCollection
     fullName: excel.Excel.NamedItemCollection
     langs:
@@ -25,9 +26,9 @@ items:
       - excel.Excel.NamedItemCollection.toJSON
   - uid: excel.Excel.NamedItemCollection.add
     summary: |-
-      Adds a new name to the collection of the given scope. 
+      Adds a new name to the collection of the given scope.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: 'add(name, reference, comment)'
     fullName: excel.Excel.NamedItemCollection.add
     langs:
@@ -54,9 +55,9 @@ items:
             - string
   - uid: excel.Excel.NamedItemCollection.addFormulaLocal
     summary: |-
-      Adds a new name to the collection of the given scope using the user's locale for the formula. 
+      Adds a new name to the collection of the given scope using the user's locale for the formula.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: 'addFormulaLocal(name, formula, comment)'
     fullName: excel.Excel.NamedItemCollection.addFormulaLocal
     langs:
@@ -83,9 +84,9 @@ items:
             - string
   - uid: excel.Excel.NamedItemCollection.getCount
     summary: |-
-      Gets the number of named items in the collection. 
+      Gets the number of named items in the collection.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getCount()
     fullName: excel.Excel.NamedItemCollection.getCount
     langs:
@@ -99,9 +100,9 @@ items:
         description: ''
   - uid: excel.Excel.NamedItemCollection.getItem
     summary: |-
-      Gets a nameditem object using its name 
+      Gets a nameditem object using its name
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getItem(name)
     fullName: excel.Excel.NamedItemCollection.getItem
     langs:
@@ -120,9 +121,9 @@ items:
             - string
   - uid: excel.Excel.NamedItemCollection.getItemOrNullObject
     summary: |-
-      Gets a nameditem object using its name. If the nameditem object does not exist, will return a null object. 
+      Gets a nameditem object using its name. If the nameditem object does not exist, will return a null object.
 
-       \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
     name: getItemOrNullObject(name)
     fullName: excel.Excel.NamedItemCollection.getItemOrNullObject
     langs:
@@ -147,7 +148,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Excel.NamedItem>;'
+      content: 'readonly items: Array<Excel.NamedItem>;'
       return:
         type:
           - Array<Excel.NamedItem>

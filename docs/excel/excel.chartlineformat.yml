@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ChartLineFormat
     summary: |-
-      Enapsulates the formatting options for line elements. 
+      Enapsulates the formatting options for line elements.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartLineFormat
     fullName: excel.Excel.ChartLineFormat
     langs:
@@ -21,9 +21,9 @@ items:
       - excel.Excel.ChartLineFormat.toJSON
   - uid: excel.Excel.ChartLineFormat.clear
     summary: |-
-      Clear the line format of a chart element. 
+      Clear the line format of a chart element.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: clear()
     fullName: excel.Excel.ChartLineFormat.clear
     langs:
@@ -37,9 +37,9 @@ items:
         description: ''
   - uid: excel.Excel.ChartLineFormat.color
     summary: |-
-      HTML color code representing the color of lines in the chart. 
+      HTML color code representing the color of lines in the chart.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: color
     fullName: excel.Excel.ChartLineFormat.color
     langs:

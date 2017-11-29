@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.Filter
     summary: |-
-      Manages the filtering of a table's column. 
+      Manages the filtering of a table's column.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: Excel.Filter
     fullName: excel.Excel.Filter
     langs:
@@ -31,9 +31,9 @@ items:
       - excel.Excel.Filter.toJSON
   - uid: excel.Excel.Filter.apply
     summary: |-
-      Apply the given filter criteria on the given column. 
+      Apply the given filter criteria on the given column.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: apply(criteria)
     fullName: excel.Excel.Filter.apply
     langs:
@@ -52,9 +52,9 @@ items:
             - Excel.FilterCriteria
   - uid: excel.Excel.Filter.applyBottomItemsFilter
     summary: |-
-      Apply a "Bottom Item" filter to the column for the given number of elements. 
+      Apply a "Bottom Item" filter to the column for the given number of elements.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: applyBottomItemsFilter(count)
     fullName: excel.Excel.Filter.applyBottomItemsFilter
     langs:
@@ -73,9 +73,9 @@ items:
             - number
   - uid: excel.Excel.Filter.applyBottomPercentFilter
     summary: |-
-      Apply a "Bottom Percent" filter to the column for the given percentage of elements. 
+      Apply a "Bottom Percent" filter to the column for the given percentage of elements.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: applyBottomPercentFilter(percent)
     fullName: excel.Excel.Filter.applyBottomPercentFilter
     langs:
@@ -94,9 +94,9 @@ items:
             - number
   - uid: excel.Excel.Filter.applyCellColorFilter
     summary: |-
-      Apply a "Cell Color" filter to the column for the given color. 
+      Apply a "Cell Color" filter to the column for the given color.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: applyCellColorFilter(color)
     fullName: excel.Excel.Filter.applyCellColorFilter
     langs:
@@ -115,9 +115,9 @@ items:
             - string
   - uid: excel.Excel.Filter.applyCustomFilter
     summary: |-
-      Apply a "Icon" filter to the column for the given criteria strings. 
+      Apply a "Icon" filter to the column for the given criteria strings.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: 'applyCustomFilter(criteria1, criteria2, oper)'
     fullName: excel.Excel.Filter.applyCustomFilter
     langs:
@@ -144,9 +144,9 @@ items:
             - string
   - uid: excel.Excel.Filter.applyDynamicFilter
     summary: |-
-      Apply a "Dynamic" filter to the column. 
+      Apply a "Dynamic" filter to the column.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: applyDynamicFilter(criteria)
     fullName: excel.Excel.Filter.applyDynamicFilter
     langs:
@@ -165,9 +165,9 @@ items:
             - string
   - uid: excel.Excel.Filter.applyFontColorFilter
     summary: |-
-      Apply a "Font Color" filter to the column for the given color. 
+      Apply a "Font Color" filter to the column for the given color.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: applyFontColorFilter(color)
     fullName: excel.Excel.Filter.applyFontColorFilter
     langs:
@@ -186,9 +186,9 @@ items:
             - string
   - uid: excel.Excel.Filter.applyIconFilter
     summary: |-
-      Apply a "Icon" filter to the column for the given icon. 
+      Apply a "Icon" filter to the column for the given icon.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: applyIconFilter(icon)
     fullName: excel.Excel.Filter.applyIconFilter
     langs:
@@ -207,9 +207,9 @@ items:
             - Excel.Icon
   - uid: excel.Excel.Filter.applyTopItemsFilter
     summary: |-
-      Apply a "Top Item" filter to the column for the given number of elements. 
+      Apply a "Top Item" filter to the column for the given number of elements.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: applyTopItemsFilter(count)
     fullName: excel.Excel.Filter.applyTopItemsFilter
     langs:
@@ -228,9 +228,9 @@ items:
             - number
   - uid: excel.Excel.Filter.applyTopPercentFilter
     summary: |-
-      Apply a "Top Percent" filter to the column for the given percentage of elements. 
+      Apply a "Top Percent" filter to the column for the given percentage of elements.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: applyTopPercentFilter(percent)
     fullName: excel.Excel.Filter.applyTopPercentFilter
     langs:
@@ -249,9 +249,9 @@ items:
             - number
   - uid: excel.Excel.Filter.applyValuesFilter
     summary: |-
-      Apply a "Values" filter to the column for the given values. 
+      Apply a "Values" filter to the column for the given values.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: applyValuesFilter(values)
     fullName: excel.Excel.Filter.applyValuesFilter
     langs:
@@ -270,9 +270,9 @@ items:
             - Array<string | Excel.FilterDatetime>
   - uid: excel.Excel.Filter.clear
     summary: |-
-      Clear the filter on the given column. 
+      Clear the filter on the given column.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: clear()
     fullName: excel.Excel.Filter.clear
     langs:
@@ -286,16 +286,16 @@ items:
         description: ''
   - uid: excel.Excel.Filter.criteria
     summary: |-
-      The currently applied filter on the given column. 
+      The currently applied filter on the given column.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: criteria
     fullName: excel.Excel.Filter.criteria
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'criteria: Excel.FilterCriteria;'
+      content: 'readonly criteria: Excel.FilterCriteria;'
       return:
         type:
           - Excel.FilterCriteria

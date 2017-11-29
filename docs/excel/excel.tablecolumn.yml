@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.TableColumn
     summary: |-
-      Represents a column in a table. 
+      Represents a column in a table.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.TableColumn
     fullName: excel.Excel.TableColumn
     langs:
@@ -29,9 +29,9 @@ items:
       - excel.Excel.TableColumn.values
   - uid: excel.Excel.TableColumn.delete
     summary: |-
-      Deletes the column from the table. 
+      Deletes the column from the table.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: delete()
     fullName: excel.Excel.TableColumn.delete
     langs:
@@ -45,24 +45,24 @@ items:
         description: ''
   - uid: excel.Excel.TableColumn.filter
     summary: |-
-      Retrieve the filter applied to the column. 
+      Retrieve the filter applied to the column.
 
-       \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
     name: filter
     fullName: excel.Excel.TableColumn.filter
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'filter: Excel.Filter;'
+      content: 'readonly filter: Excel.Filter;'
       return:
         type:
           - Excel.Filter
   - uid: excel.Excel.TableColumn.getDataBodyRange
     summary: |-
-      Gets the range object associated with the data body of the column. 
+      Gets the range object associated with the data body of the column.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getDataBodyRange()
     fullName: excel.Excel.TableColumn.getDataBodyRange
     langs:
@@ -76,9 +76,9 @@ items:
         description: ''
   - uid: excel.Excel.TableColumn.getHeaderRowRange
     summary: |-
-      Gets the range object associated with the header row of the column. 
+      Gets the range object associated with the header row of the column.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getHeaderRowRange()
     fullName: excel.Excel.TableColumn.getHeaderRowRange
     langs:
@@ -92,9 +92,9 @@ items:
         description: ''
   - uid: excel.Excel.TableColumn.getRange
     summary: |-
-      Gets the range object associated with the entire column. 
+      Gets the range object associated with the entire column.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getRange()
     fullName: excel.Excel.TableColumn.getRange
     langs:
@@ -108,9 +108,9 @@ items:
         description: ''
   - uid: excel.Excel.TableColumn.getTotalRowRange
     summary: |-
-      Gets the range object associated with the totals row of the column. 
+      Gets the range object associated with the totals row of the column.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getTotalRowRange()
     fullName: excel.Excel.TableColumn.getTotalRowRange
     langs:
@@ -124,31 +124,31 @@ items:
         description: ''
   - uid: excel.Excel.TableColumn.id
     summary: |-
-      Returns a unique key that identifies the column within the table. Read-only. 
+      Returns a unique key that identifies the column within the table. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: id
     fullName: excel.Excel.TableColumn.id
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'id: number;'
+      content: 'readonly id: number;'
       return:
         type:
           - number
   - uid: excel.Excel.TableColumn.index
     summary: |-
-      Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only. 
+      Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: index
     fullName: excel.Excel.TableColumn.index
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'index: number;'
+      content: 'readonly index: number;'
       return:
         type:
           - number
@@ -174,9 +174,9 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.TableColumn.name
     summary: |-
-      Represents the name of the table column. 
+      Represents the name of the table column.
 
-       \[ [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.](http://bing.com) \]
     name: name
     fullName: excel.Excel.TableColumn.name
     langs:
@@ -224,9 +224,10 @@ items:
   - uid: excel.Excel.TableColumn.values
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
-      Cell that contain an error will return the error string. 
+      Cell that contain an error will return the error string.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: values
     fullName: excel.Excel.TableColumn.values
     langs:

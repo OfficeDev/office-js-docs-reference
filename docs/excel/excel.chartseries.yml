@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ChartSeries
     summary: |-
-      Represents a series in a chart. 
+      Represents a series in a chart.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartSeries
     fullName: excel.Excel.ChartSeries
     langs:
@@ -22,16 +22,16 @@ items:
       - excel.Excel.ChartSeries.toJSON
   - uid: excel.Excel.ChartSeries.format
     summary: |-
-      Represents the formatting of a chart series, which includes fill and line formatting. Read-only. 
+      Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: format
     fullName: excel.Excel.ChartSeries.format
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'format: Excel.ChartSeriesFormat;'
+      content: 'readonly format: Excel.ChartSeriesFormat;'
       return:
         type:
           - Excel.ChartSeriesFormat
@@ -57,9 +57,9 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.ChartSeries.name
     summary: |-
-      Represents the name of a series in a chart. 
+      Represents the name of a series in a chart.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: name
     fullName: excel.Excel.ChartSeries.name
     langs:
@@ -72,16 +72,16 @@ items:
           - string
   - uid: excel.Excel.ChartSeries.points
     summary: |-
-      Represents a collection of all points in the series. Read-only. 
+      Represents a collection of all points in the series. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: points
     fullName: excel.Excel.ChartSeries.points
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'points: Excel.ChartPointsCollection;'
+      content: 'readonly points: Excel.ChartPointsCollection;'
       return:
         type:
           - Excel.ChartPointsCollection

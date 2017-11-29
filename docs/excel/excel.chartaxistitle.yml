@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ChartAxisTitle
     summary: |-
-      Represents the title of a chart axis. 
+      Represents the title of a chart axis.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartAxisTitle
     fullName: excel.Excel.ChartAxisTitle
     langs:
@@ -22,16 +22,16 @@ items:
       - excel.Excel.ChartAxisTitle.visible
   - uid: excel.Excel.ChartAxisTitle.format
     summary: |-
-      Represents the formatting of chart axis title. Read-only. 
+      Represents the formatting of chart axis title. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: format
     fullName: excel.Excel.ChartAxisTitle.format
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'format: Excel.ChartAxisTitleFormat;'
+      content: 'readonly format: Excel.ChartAxisTitleFormat;'
       return:
         type:
           - Excel.ChartAxisTitleFormat
@@ -79,9 +79,9 @@ items:
             - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
   - uid: excel.Excel.ChartAxisTitle.text
     summary: |-
-      Represents the axis title. 
+      Represents the axis title.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: text
     fullName: excel.Excel.ChartAxisTitle.text
     langs:
@@ -106,9 +106,9 @@ items:
         description: ''
   - uid: excel.Excel.ChartAxisTitle.visible
     summary: |-
-      A boolean that specifies the visibility of an axis title. 
+      A boolean that specifies the visibility of an axis title.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: visible
     fullName: excel.Excel.ChartAxisTitle.visible
     langs:

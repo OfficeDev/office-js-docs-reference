@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.ChartLegend
     summary: |-
-      Represents the legend in a chart. 
+      Represents the legend in a chart.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.ChartLegend
     fullName: excel.Excel.ChartLegend
     langs:
@@ -23,16 +23,16 @@ items:
       - excel.Excel.ChartLegend.visible
   - uid: excel.Excel.ChartLegend.format
     summary: |-
-      Represents the formatting of a chart legend, which includes fill and font formatting. Read-only. 
+      Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: format
     fullName: excel.Excel.ChartLegend.format
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'format: Excel.ChartLegendFormat;'
+      content: 'readonly format: Excel.ChartLegendFormat;'
       return:
         type:
           - Excel.ChartLegendFormat
@@ -58,9 +58,9 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.ChartLegend.overlay
     summary: |-
-      Boolean value for whether the chart legend should overlap with the main body of the chart. 
+      Boolean value for whether the chart legend should overlap with the main body of the chart.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: overlay
     fullName: excel.Excel.ChartLegend.overlay
     langs:
@@ -73,9 +73,9 @@ items:
           - boolean
   - uid: excel.Excel.ChartLegend.position
     summary: |-
-      Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details. 
+      Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: position
     fullName: excel.Excel.ChartLegend.position
     langs:
@@ -122,9 +122,9 @@ items:
         description: ''
   - uid: excel.Excel.ChartLegend.visible
     summary: |-
-      A boolean value the represents the visibility of a ChartLegend object. 
+      A boolean value the represents the visibility of a ChartLegend object.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: visible
     fullName: excel.Excel.ChartLegend.visible
     langs:

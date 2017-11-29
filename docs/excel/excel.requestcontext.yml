@@ -38,7 +38,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'application: Application;'
+      content: 'readonly application: Application;'
       return:
         type:
           - Application
@@ -49,7 +49,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'workbook: Workbook;'
+      content: 'readonly workbook: Workbook;'
       return:
         type:
           - Workbook

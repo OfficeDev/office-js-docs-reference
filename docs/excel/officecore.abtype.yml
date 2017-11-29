@@ -53,7 +53,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'value: string | number | boolean;'
+      content: 'readonly value: string | number | boolean;'
       return:
         type:
           - string | number | boolean

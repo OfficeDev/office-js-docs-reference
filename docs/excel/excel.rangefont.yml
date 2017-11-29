@@ -2,9 +2,9 @@
 items:
   - uid: excel.Excel.RangeFont
     summary: |-
-      This object represents the font attributes (font name, font size, color, etc.) for an object. 
+      This object represents the font attributes (font name, font size, color, etc.) for an object.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: Excel.RangeFont
     fullName: excel.Excel.RangeFont
     langs:
@@ -25,9 +25,9 @@ items:
       - excel.Excel.RangeFont.underline
   - uid: excel.Excel.RangeFont.bold
     summary: |-
-      Represents the bold status of font. 
+      Represents the bold status of font.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: bold
     fullName: excel.Excel.RangeFont.bold
     langs:
@@ -40,9 +40,9 @@ items:
           - boolean
   - uid: excel.Excel.RangeFont.color
     summary: |-
-      HTML color code representation of the text color. E.g. \#FF0000 represents Red. 
+      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: color
     fullName: excel.Excel.RangeFont.color
     langs:
@@ -55,9 +55,9 @@ items:
           - string
   - uid: excel.Excel.RangeFont.italic
     summary: |-
-      Represents the italic status of the font. 
+      Represents the italic status of the font.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: italic
     fullName: excel.Excel.RangeFont.italic
     langs:
@@ -90,9 +90,9 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.RangeFont.name
     summary: |-
-      Font name (e.g. "Calibri") 
+      Font name (e.g. "Calibri")
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: name
     fullName: excel.Excel.RangeFont.name
     langs:
@@ -127,9 +127,9 @@ items:
             - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
   - uid: excel.Excel.RangeFont.size
     summary: |-
-      Font size. 
+      Font size.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: size
     fullName: excel.Excel.RangeFont.size
     langs:
@@ -154,9 +154,9 @@ items:
         description: ''
   - uid: excel.Excel.RangeFont.underline
     summary: |-
-      Type of underline applied to the font. See Excel.RangeUnderlineStyle for details. 
+      Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
 
-       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: underline
     fullName: excel.Excel.RangeFont.underline
     langs:
