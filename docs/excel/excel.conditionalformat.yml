@@ -89,6 +89,27 @@ items:
       return:
         type:
           - Excel.ColorScaleConditionalFormat
+    remarks: |
+
+
+      ## Snippets
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B2:M5");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.colorScale);
+          const criteria = {
+              minimum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.lowestValue, color: "blue" },
+              midpoint: { formula: "50", type: Excel.ConditionalFormatColorCriterionType.percent, color: "yellow" },
+              maximum: { formula: null, type: Excel.ConditionalFormatColorCriterionType.highestValue, color: "red" }
+          };
+          conditionalFormat.colorScale.criteria = criteria;
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.ConditionalFormat.colorScaleOrNullObject
     summary: |-
       Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
@@ -149,6 +170,22 @@ items:
       return:
         type:
           - Excel.DataBarConditionalFormat
+    remarks: |
+
+
+      ## Snippets
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B8:E13");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.dataBar);
+          conditionalFormat.dataBar.barDirection = Excel.ConditionalDataBarDirection.leftToRight;
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.ConditionalFormat.dataBarOrNullObject
     summary: |-
       Returns the data bar properties if the current conditional format is a data bar.
@@ -465,3 +502,42 @@ items:
       return:
         type:
           - string
+    remarks: |
+
+
+      ## Snippets
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const worksheetRange = sheet.getRange();
+          worksheetRange.conditionalFormats.load("type");
+
+          await context.sync();
+
+          let cfRangePairs: { cf: Excel.ConditionalFormat, range: Excel.Range }[] = [];
+          worksheetRange.conditionalFormats.items.forEach(item => {
+              cfRangePairs.push({
+                  cf: item,
+                  range: item.getRange().load("address")
+              });
+          });
+
+          await context.sync();
+
+          $("#conditional-formats li").remove();
+          if (cfRangePairs.length > 0) {
+              cfRangePairs.forEach(item => {
+                  let $p = $("<p></p>").text(
+                      `${item.cf.type}`)
+                  let $li = $(`<li></li>`);
+                  $li.append($p);
+                  $("#conditional-formats").append($li);
+                  $(".conditional-formats").show()[0].scrollIntoView();
+              })
+          }
+          else {
+              OfficeHelpers.UI.notify("None to display", "No conditional formats in workbook", "warning");
+          }
+      });
+      ```

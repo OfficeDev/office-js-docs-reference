@@ -61,6 +61,31 @@ items:
         type:
           - void
         description: ''
+    remarks: |
+
+
+      ## Snippets
+
+      ```typescript
+      try {
+          await Excel.run(async (context) => {
+
+              const sheet = context.workbook.worksheets.getItem("Sample");
+
+              sheet.names.getItem("TotalAmount").delete();
+
+              // Replace the named item (TotalAmount) with the actual formula for TotalAmount to avoid displaying #NAME in the cell.
+              sheet.getRange("D11").values = [["=SUM(ExpensesTable[AMOUNT])"]];
+
+              await context.sync();
+
+          });
+      }
+      catch (error) {
+          OfficeHelpers.UI.notify(error);
+          OfficeHelpers.Utilities.log(error);
+      }
+      ```
   - uid: excel.Excel.NamedItem.getRange
     summary: >-
       Returns the range object that is associated with the name. Throws an error if the named item's type is not a
