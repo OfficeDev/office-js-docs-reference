@@ -30,7 +30,6 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'calculate(calculationType: string): void;'
       return:
         type:
           - void
