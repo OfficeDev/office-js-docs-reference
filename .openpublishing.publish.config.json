@@ -21,9 +21,9 @@
       ]
     },
     {
-      "docset_name": "tsdocs",
-      "build_source_folder": "tsdocs",
-      "build_output_subfolder": "tsdocs",
+      "docset_name": "office-docs-ref-javascript",
+      "build_source_folder": "docs",
+      "build_output_subfolder": "office-docs-ref-javascript",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
