@@ -1205,7 +1205,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.CellValueConditionalFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.CellValueConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1580,7 +1580,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1915,7 +1915,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartAreaFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartAreaFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2068,7 +2068,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartAxesUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartAxesUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2365,7 +2365,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartAxisUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartAxisUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2542,7 +2542,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartAxisFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartAxisFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2671,7 +2671,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartAxisTitleUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartAxisTitleUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2848,7 +2848,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartAxisTitleFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartAxisTitleFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3297,7 +3297,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartDataLabelFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartDataLabelFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3487,7 +3487,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartDataLabelsUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartDataLabelsUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3965,7 +3965,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartFontUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartFontUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4142,7 +4142,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartGridlinesUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartGridlinesUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4295,7 +4295,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartGridlinesFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartGridlinesFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4472,7 +4472,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartLegendUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartLegendUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4649,7 +4649,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartLegendFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartLegendFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4819,7 +4819,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartLineFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartLineFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5380,7 +5380,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartSeriesUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartSeriesUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5727,7 +5727,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartSeriesFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartSeriesFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5880,7 +5880,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartTitleUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartTitleUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6081,7 +6081,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartTitleFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartTitleFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6249,7 +6249,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ColorScaleConditionalFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ColorScaleConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6822,7 +6822,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalDataBarNegativeFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalDataBarNegativeFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6999,7 +6999,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalDataBarPositiveFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalDataBarPositiveFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7596,7 +7596,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8252,7 +8252,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalFormatRuleUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalFormatRuleUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8602,7 +8602,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalRangeBorderUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalRangeBorderUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9111,7 +9111,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalRangeFillUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalRangeFillUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9316,7 +9316,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalRangeFontUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalRangeFontUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9578,7 +9578,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalRangeFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalRangeFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9915,7 +9915,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.CustomConditionalFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.CustomConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10873,7 +10873,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.DataBarConditionalFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.DataBarConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11884,7 +11884,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11980,7 +11980,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12076,7 +12076,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12172,7 +12172,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12268,7 +12268,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12453,7 +12453,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.FormatProtectionUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.FormatProtectionUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12517,7 +12517,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12601,7 +12601,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12685,7 +12685,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12769,7 +12769,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12853,7 +12853,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -29847,7 +29847,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.IconSetConditionalFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.IconSetConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -30182,7 +30182,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.NamedItemUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.NamedItemUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -30384,7 +30384,12 @@
               "isStatic": false,
               "returnValue": {
                 "type": "Excel.NamedItem",
-                "description": []
+                "description": [
+                  {
+                    "kind": "text",
+                    "text": ""
+                  }
+                ]
               },
               "parameters": {
                 "name": {
@@ -30434,7 +30439,12 @@
               "isStatic": false,
               "returnValue": {
                 "type": "Excel.NamedItem",
-                "description": []
+                "description": [
+                  {
+                    "kind": "text",
+                    "text": ""
+                  }
+                ]
               },
               "parameters": {
                 "name": {
@@ -30795,7 +30805,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.PivotTableUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.PivotTableUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -31186,7 +31196,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.PresetCriteriaConditionalFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.PresetCriteriaConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -32568,7 +32578,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.RangeUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.RangeUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -32887,7 +32897,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.RangeBorderUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.RangeBorderUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -33298,7 +33308,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.RangeFillUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.RangeFillUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -33499,7 +33509,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.RangeFontUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.RangeFontUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -33876,7 +33886,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.RangeFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.RangeFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -34439,7 +34449,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.RangeViewUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.RangeViewUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -34796,7 +34806,7 @@
         },
         "run": {
           "kind": "function",
-          "signature": "function run < T >(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;",
+          "signature": "function run<T>(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;",
           "returnValue": {
             "type": "OfficeExtension.IPromise<T>",
             "description": []
@@ -35094,7 +35104,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.SettingUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.SettingUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -36125,7 +36135,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TableUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.TableUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -36947,7 +36957,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TableColumnUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.TableColumnUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -37459,7 +37469,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TableRowUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.TableRowUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38121,7 +38131,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TextConditionalFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.TextConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38185,7 +38195,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38257,7 +38267,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38329,7 +38339,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38401,7 +38411,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38473,7 +38483,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38545,7 +38555,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38617,7 +38627,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38689,7 +38699,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38761,7 +38771,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38833,7 +38843,7 @@
           "members": {
             "__index": {
               "kind": "method",
-              "signature": "[ index: number ]: Icon;",
+              "signature": "[index: number]: Icon;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38994,7 +39004,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TopBottomConditionalFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.TopBottomConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -40004,7 +40014,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.WorksheetUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.WorksheetUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -49823,7 +49833,7 @@
             },
             "sync": {
               "kind": "method",
-              "signature": "sync < T >(passThroughValue?: T): IPromise<T>;",
+              "signature": "sync<T>(passThroughValue?: T): IPromise<T>;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -50582,7 +50592,7 @@
           "members": {
             "catch": {
               "kind": "method",
-              "signature": "catch < U >(onRejected?: (error: any) => IPromise<U>): IPromise<U>;",
+              "signature": "catch<U>(onRejected?: (error: any) => IPromise<U>): IPromise<U>;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -50611,7 +50621,7 @@
             },
             "then": {
               "kind": "method",
-              "signature": "then < U >(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;",
+              "signature": "then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -50752,7 +50762,7 @@
             },
             "all": {
               "kind": "method",
-              "signature": "static all < U >(promises: OfficeExtension.IPromise<U>[]): IPromise<U[]>;",
+              "signature": "static all<U>(promises: OfficeExtension.IPromise<U>[]): IPromise<U[]>;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": true,
@@ -50781,7 +50791,7 @@
             },
             "catch": {
               "kind": "method",
-              "signature": "catch < U >(onRejected?: (error: any) => IPromise<U>): IPromise<U>;",
+              "signature": "catch<U>(onRejected?: (error: any) => IPromise<U>): IPromise<U>;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -50810,7 +50820,7 @@
             },
             "reject": {
               "kind": "method",
-              "signature": "static reject < U >(error: any): IPromise<U>;",
+              "signature": "static reject<U>(error: any): IPromise<U>;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": true,
@@ -50839,7 +50849,7 @@
             },
             "resolve": {
               "kind": "method",
-              "signature": "static resolve < U >(value: U): IPromise<U>;",
+              "signature": "static resolve<U>(value: U): IPromise<U>;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": true,
@@ -50868,7 +50878,7 @@
             },
             "then": {
               "kind": "method",
-              "signature": "then < U >(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;",
+              "signature": "then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
