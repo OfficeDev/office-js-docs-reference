@@ -19,26 +19,6 @@
       "customized_template_paths": [
         "_dependentPackages/uref.plugins/content"
       ]
-    },
-    {
-      "docset_name": "office-docs-ref-javascript",
-      "build_source_folder": "docs",
-      "build_output_subfolder": "office-docs-ref-javascript",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content",
-        "UniversalReference": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "customized_template_paths": [
-        "_dependentPackages/uref.plugins/content"
-      ]
     }
   ],
   "notification_subscribers": [],
