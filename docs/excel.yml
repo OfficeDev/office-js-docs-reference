@@ -203,7 +203,7 @@ items:
     type: function
     syntax:
       content: >-
-        function run < T >(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, objects:
+        function run<T>(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, objects:
         OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>):
         OfficeExtension.IPromise<T>;
       return:

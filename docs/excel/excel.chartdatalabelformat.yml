@@ -77,7 +77,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ChartDataLabelFormatUpdateData, options?: {\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: "set(properties: Interfaces.ChartDataLabelFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
       return:
         type:
           - void

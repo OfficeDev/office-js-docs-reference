@@ -19,7 +19,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: '[ index: number ]: Icon;'
+      content: '[index: number]: Icon;'
       return:
         type:
           - Icon

@@ -44,7 +44,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'static all < U >(promises: OfficeExtension.IPromise<U>[]): IPromise<U[]>;'
+      content: 'static all<U>(promises: OfficeExtension.IPromise<U>[]): IPromise<U[]>;'
       return:
         type:
           - 'IPromise<U[]>'
@@ -64,7 +64,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'catch < U >(onRejected?: (error: any) => IPromise<U>): IPromise<U>;'
+      content: 'catch<U>(onRejected?: (error: any) => IPromise<U>): IPromise<U>;'
       return:
         type:
           - IPromise<U>
@@ -82,7 +82,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'static reject < U >(error: any): IPromise<U>;'
+      content: 'static reject<U>(error: any): IPromise<U>;'
       return:
         type:
           - IPromise<U>
@@ -100,7 +100,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'static resolve < U >(value: U): IPromise<U>;'
+      content: 'static resolve<U>(value: U): IPromise<U>;'
       return:
         type:
           - IPromise<U>
@@ -117,7 +117,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'then < U >(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;'
+      content: 'then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;'
       return:
         type:
           - IPromise<U>
