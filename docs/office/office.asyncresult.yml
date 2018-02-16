@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.AsyncResult
+    name: Office.AsyncResult
+    fullName: office.Office.AsyncResult
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.AsyncResult.asyncContext
+      - office.Office.AsyncResult.error
+      - office.Office.AsyncResult.status
+      - office.Office.AsyncResult.value
+  - uid: office.Office.AsyncResult.asyncContext
+    name: asyncContext
+    fullName: office.Office.AsyncResult.asyncContext
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'asyncContext: any;'
+      return:
+        type:
+          - any
+  - uid: office.Office.AsyncResult.error
+    name: error
+    fullName: office.Office.AsyncResult.error
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'error: Error;'
+      return:
+        type:
+          - Error
+  - uid: office.Office.AsyncResult.status
+    name: status
+    fullName: office.Office.AsyncResult.status
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'status: AsyncResultStatus;'
+      return:
+        type:
+          - AsyncResultStatus
+  - uid: office.Office.AsyncResult.value
+    name: value
+    fullName: office.Office.AsyncResult.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: any;'
+      return:
+        type:
+          - any

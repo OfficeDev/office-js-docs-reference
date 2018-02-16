@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.ConditionalColorScaleCriteria
+    summary: |-
+      Represents the criteria of the color scale.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: Excel.ConditionalColorScaleCriteria
+    fullName: office.Excel.ConditionalColorScaleCriteria
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel.ConditionalColorScaleCriteria.maximum
+      - office.Excel.ConditionalColorScaleCriteria.midpoint
+      - office.Excel.ConditionalColorScaleCriteria.minimum
+  - uid: office.Excel.ConditionalColorScaleCriteria.maximum
+    summary: |-
+      The maximum point Color Scale Criterion.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: maximum
+    fullName: office.Excel.ConditionalColorScaleCriteria.maximum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'maximum: Excel.ConditionalColorScaleCriterion;'
+      return:
+        type:
+          - Excel.ConditionalColorScaleCriterion
+  - uid: office.Excel.ConditionalColorScaleCriteria.midpoint
+    summary: |-
+      The midpoint Color Scale Criterion if the color scale is a 3-color scale.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: midpoint
+    fullName: office.Excel.ConditionalColorScaleCriteria.midpoint
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'midpoint?: Excel.ConditionalColorScaleCriterion;'
+      return:
+        type:
+          - Excel.ConditionalColorScaleCriterion
+  - uid: office.Excel.ConditionalColorScaleCriteria.minimum
+    summary: |-
+      The minimum point Color Scale Criterion.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: minimum
+    fullName: office.Excel.ConditionalColorScaleCriteria.minimum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minimum: Excel.ConditionalColorScaleCriterion;'
+      return:
+        type:
+          - Excel.ConditionalColorScaleCriterion

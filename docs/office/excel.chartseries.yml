@@ -1,0 +1,121 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.ChartSeries
+    summary: |-
+      Represents a series in a chart.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.ChartSeries
+    fullName: office.Excel.ChartSeries
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel.ChartSeries.format
+      - office.Excel.ChartSeries.load
+      - office.Excel.ChartSeries.name
+      - office.Excel.ChartSeries.points
+      - office.Excel.ChartSeries.set
+      - office.Excel.ChartSeries.toJSON
+  - uid: office.Excel.ChartSeries.format
+    summary: |-
+      Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: format
+    fullName: office.Excel.ChartSeries.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ChartSeriesFormat;'
+      return:
+        type:
+          - Excel.ChartSeriesFormat
+  - uid: office.Excel.ChartSeries.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel.ChartSeries.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartSeries;'
+      return:
+        type:
+          - Excel.ChartSeries
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel.ChartSeries.name
+    summary: |-
+      Represents the name of a series in a chart.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: name
+    fullName: office.Excel.ChartSeries.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel.ChartSeries.points
+    summary: |-
+      Represents a collection of all points in the series. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: points
+    fullName: office.Excel.ChartSeries.points
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly points: Excel.ChartPointsCollection;'
+      return:
+        type:
+          - Excel.ChartPointsCollection
+  - uid: office.Excel.ChartSeries.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Excel.ChartSeries.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ChartSeriesUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartSeriesUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Excel.ChartSeries.toJSON
+    name: toJSON()
+    fullName: office.Excel.ChartSeries.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"format\": ChartSeriesFormat;\r\n            \"name\": string;\r\n        }"
+        description: ''

@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.OfficeTheme
+    name: Office.OfficeTheme
+    fullName: office.Office.OfficeTheme
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.OfficeTheme.bodyBackgroundColor
+      - office.Office.OfficeTheme.bodyForegroundColor
+      - office.Office.OfficeTheme.controlBackgroundColor
+      - office.Office.OfficeTheme.controlForgroundColor
+  - uid: office.Office.OfficeTheme.bodyBackgroundColor
+    name: bodyBackgroundColor
+    fullName: office.Office.OfficeTheme.bodyBackgroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bodyBackgroundColor: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.OfficeTheme.bodyForegroundColor
+    name: bodyForegroundColor
+    fullName: office.Office.OfficeTheme.bodyForegroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bodyForegroundColor: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.OfficeTheme.controlBackgroundColor
+    name: controlBackgroundColor
+    fullName: office.Office.OfficeTheme.controlBackgroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'controlBackgroundColor: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.OfficeTheme.controlForgroundColor
+    name: controlForgroundColor
+    fullName: office.Office.OfficeTheme.controlForgroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'controlForgroundColor: string;'
+      return:
+        type:
+          - string

@@ -1,0 +1,155 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OneNote.Notebook
+    summary: |-
+      Represents a OneNote notebook. Notebooks contain section groups and sections.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: OneNote.Notebook
+    fullName: office.OneNote.Notebook
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.OneNote.Notebook.addSection
+      - office.OneNote.Notebook.addSectionGroup
+      - office.OneNote.Notebook.clientUrl
+      - office.OneNote.Notebook.id
+      - office.OneNote.Notebook.load
+      - office.OneNote.Notebook.name
+      - office.OneNote.Notebook.sectionGroups
+      - office.OneNote.Notebook.sections
+  - uid: office.OneNote.Notebook.addSection
+    summary: Adds a new section to the end of the notebook.
+    name: addSection(name)
+    fullName: office.OneNote.Notebook.addSection
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addSection(name: string): OneNote.Section;'
+      return:
+        type:
+          - OneNote.Section
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: office.OneNote.Notebook.addSectionGroup
+    summary: Adds a new section group to the end of the notebook.
+    name: addSectionGroup(name)
+    fullName: office.OneNote.Notebook.addSectionGroup
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addSectionGroup(name: string): OneNote.SectionGroup;'
+      return:
+        type:
+          - OneNote.SectionGroup
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: office.OneNote.Notebook.clientUrl
+    summary: |-
+      The client url of the notebook. Read only
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: clientUrl
+    fullName: office.OneNote.Notebook.clientUrl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'clientUrl: string;'
+      return:
+        type:
+          - string
+  - uid: office.OneNote.Notebook.id
+    summary: |-
+      Gets the ID of the notebook. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: id
+    fullName: office.OneNote.Notebook.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: office.OneNote.Notebook.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.OneNote.Notebook.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.Notebook;'
+      return:
+        type:
+          - OneNote.Notebook
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.OneNote.Notebook.name
+    summary: |-
+      Gets the name of the notebook. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: name
+    fullName: office.OneNote.Notebook.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: office.OneNote.Notebook.sectionGroups
+    summary: |-
+      The section groups in the notebook. Read only
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: sectionGroups
+    fullName: office.OneNote.Notebook.sectionGroups
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sectionGroups: OneNote.SectionGroupCollection;'
+      return:
+        type:
+          - OneNote.SectionGroupCollection
+  - uid: office.OneNote.Notebook.sections
+    summary: |-
+      The the sections of the notebook. Read only
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: sections
+    fullName: office.OneNote.Notebook.sections
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sections: OneNote.SectionCollection;'
+      return:
+        type:
+          - OneNote.SectionCollection

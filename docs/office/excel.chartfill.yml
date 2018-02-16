@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.ChartFill
+    summary: |-
+      Represents the fill formatting for a chart element.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.ChartFill
+    fullName: office.Excel.ChartFill
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel.ChartFill.clear
+      - office.Excel.ChartFill.load
+      - office.Excel.ChartFill.setSolidColor
+      - office.Excel.ChartFill.toJSON
+  - uid: office.Excel.ChartFill.clear
+    summary: |-
+      Clear the fill color of a chart element.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: clear()
+    fullName: office.Excel.ChartFill.clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Excel.ChartFill.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel.ChartFill.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartFill;'
+      return:
+        type:
+          - Excel.ChartFill
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel.ChartFill.setSolidColor
+    summary: |-
+      Sets the fill formatting of a chart element to a uniform color.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: setSolidColor(color)
+    fullName: office.Excel.ChartFill.setSolidColor
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: ''
+          type:
+            - string
+  - uid: office.Excel.ChartFill.toJSON
+    name: toJSON()
+    fullName: office.Excel.ChartFill.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - '{}'
+        description: ''

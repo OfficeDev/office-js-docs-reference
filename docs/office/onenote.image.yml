@@ -1,0 +1,188 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OneNote.Image
+    summary: |-
+      Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: OneNote.Image
+    fullName: office.OneNote.Image
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.OneNote.Image.description
+      - office.OneNote.Image.getBase64Image
+      - office.OneNote.Image.height
+      - office.OneNote.Image.hyperlink
+      - office.OneNote.Image.id
+      - office.OneNote.Image.load
+      - office.OneNote.Image.ocrData
+      - office.OneNote.Image.pageContent
+      - office.OneNote.Image.paragraph
+      - office.OneNote.Image.width
+  - uid: office.OneNote.Image.description
+    summary: |-
+      Gets or sets the description of the Image.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: description
+    fullName: office.OneNote.Image.description
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'description: string;'
+      return:
+        type:
+          - string
+  - uid: office.OneNote.Image.getBase64Image
+    summary: >-
+      Gets the base64-encoded binary representation of the Image. Example:
+      data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIA...
+
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: getBase64Image()
+    fullName: office.OneNote.Image.getBase64Image
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBase64Image(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+  - uid: office.OneNote.Image.height
+    summary: |-
+      Gets or sets the height of the Image layout.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: height
+    fullName: office.OneNote.Image.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height: number;'
+      return:
+        type:
+          - number
+  - uid: office.OneNote.Image.hyperlink
+    summary: |-
+      Gets or sets the hyperlink of the Image.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: hyperlink
+    fullName: office.OneNote.Image.hyperlink
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hyperlink: string;'
+      return:
+        type:
+          - string
+  - uid: office.OneNote.Image.id
+    summary: |-
+      Gets the ID of the Image object. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: id
+    fullName: office.OneNote.Image.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: office.OneNote.Image.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.OneNote.Image.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.Image;'
+      return:
+        type:
+          - OneNote.Image
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.OneNote.Image.ocrData
+    summary: |-
+      Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: ocrData
+    fullName: office.OneNote.Image.ocrData
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ocrData: OneNote.ImageOcrData;'
+      return:
+        type:
+          - OneNote.ImageOcrData
+  - uid: office.OneNote.Image.pageContent
+    summary: >-
+      Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent.
+      This object defines the position of the Image on the page. Read-only.
+
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: pageContent
+    fullName: office.OneNote.Image.pageContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageContent: OneNote.PageContent;'
+      return:
+        type:
+          - OneNote.PageContent
+  - uid: office.OneNote.Image.paragraph
+    summary: >-
+      Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
+      Read-only.
+
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: paragraph
+    fullName: office.OneNote.Image.paragraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraph: OneNote.Paragraph;'
+      return:
+        type:
+          - OneNote.Paragraph
+  - uid: office.OneNote.Image.width
+    summary: |-
+      Gets or sets the width of the Image layout.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: width
+    fullName: office.OneNote.Image.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number

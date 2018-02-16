@@ -1,0 +1,85 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OneNote.InkAnalysis
+    summary: |-
+      Represents ink analysis data for a given set of ink strokes.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: OneNote.InkAnalysis
+    fullName: office.OneNote.InkAnalysis
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.OneNote.InkAnalysis.id
+      - office.OneNote.InkAnalysis.load
+      - office.OneNote.InkAnalysis.page
+      - office.OneNote.InkAnalysis.paragraphs
+  - uid: office.OneNote.InkAnalysis.id
+    summary: |-
+      Gets the ID of the InkAnalysis object. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: id
+    fullName: office.OneNote.InkAnalysis.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: office.OneNote.InkAnalysis.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.OneNote.InkAnalysis.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.InkAnalysis;'
+      return:
+        type:
+          - OneNote.InkAnalysis
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.OneNote.InkAnalysis.page
+    summary: |-
+      Gets the parent page object. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: page
+    fullName: office.OneNote.InkAnalysis.page
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'page: OneNote.Page;'
+      return:
+        type:
+          - OneNote.Page
+  - uid: office.OneNote.InkAnalysis.paragraphs
+    summary: |-
+      Gets the ink analysis paragraphs in this page. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: paragraphs
+    fullName: office.OneNote.InkAnalysis.paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraphs: OneNote.InkAnalysisParagraphCollection;'
+      return:
+        type:
+          - OneNote.InkAnalysisParagraphCollection

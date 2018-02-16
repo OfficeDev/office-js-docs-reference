@@ -1,0 +1,22 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.Context
+    name: Office.Context
+    fullName: office.Office.Context
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.Context.document
+  - uid: office.Office.Context.document
+    name: document
+    fullName: office.Office.Context.document
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'document: Document;'
+      return:
+        type:
+          - Document

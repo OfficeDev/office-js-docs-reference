@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.ChartLegendFormat
+    summary: |-
+      Encapsulates the format properties of a chart legend.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.ChartLegendFormat
+    fullName: office.Excel.ChartLegendFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel.ChartLegendFormat.fill
+      - office.Excel.ChartLegendFormat.font
+      - office.Excel.ChartLegendFormat.load
+      - office.Excel.ChartLegendFormat.set
+      - office.Excel.ChartLegendFormat.toJSON
+  - uid: office.Excel.ChartLegendFormat.fill
+    summary: |-
+      Represents the fill format of an object, which includes background formating information. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: fill
+    fullName: office.Excel.ChartLegendFormat.fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.ChartFill;'
+      return:
+        type:
+          - Excel.ChartFill
+  - uid: office.Excel.ChartLegendFormat.font
+    summary: |-
+      Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: font
+    fullName: office.Excel.ChartLegendFormat.font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Excel.ChartFont;'
+      return:
+        type:
+          - Excel.ChartFont
+  - uid: office.Excel.ChartLegendFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel.ChartLegendFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartLegendFormat;'
+      return:
+        type:
+          - Excel.ChartLegendFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel.ChartLegendFormat.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Excel.ChartLegendFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ChartLegendFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartLegendFormatUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Excel.ChartLegendFormat.toJSON
+    name: toJSON()
+    fullName: office.Excel.ChartLegendFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"fill\": ChartFill;\r\n            \"font\": ChartFont;\r\n        }"
+        description: ''

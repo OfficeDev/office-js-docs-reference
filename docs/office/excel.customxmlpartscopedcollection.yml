@@ -1,0 +1,195 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.CustomXmlPartScopedCollection
+    summary: >-
+      A scoped collection of custom XML parts. A scoped collection is the result of some operation, e.g. filtering by
+      namespace. A scoped collection cannot be scoped any further.
+
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: Excel.CustomXmlPartScopedCollection
+    fullName: office.Excel.CustomXmlPartScopedCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel.CustomXmlPartScopedCollection.getCount
+      - office.Excel.CustomXmlPartScopedCollection.getItem
+      - office.Excel.CustomXmlPartScopedCollection.getItemOrNullObject
+      - office.Excel.CustomXmlPartScopedCollection.getOnlyItem
+      - office.Excel.CustomXmlPartScopedCollection.getOnlyItemOrNullObject
+      - office.Excel.CustomXmlPartScopedCollection.items
+      - office.Excel.CustomXmlPartScopedCollection.load
+      - office.Excel.CustomXmlPartScopedCollection.toJSON
+  - uid: office.Excel.CustomXmlPartScopedCollection.getCount
+    summary: |-
+      Gets the number of CustomXML parts in this collection.
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: getCount()
+    fullName: office.Excel.CustomXmlPartScopedCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: office.Excel.CustomXmlPartScopedCollection.getItem
+    summary: |-
+      Gets a custom XML part based on its ID.
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: getItem(id)
+    fullName: office.Excel.CustomXmlPartScopedCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(id: string): Excel.CustomXmlPart;'
+      return:
+        type:
+          - Excel.CustomXmlPart
+        description: ''
+      parameters:
+        - id: id
+          description: ''
+          type:
+            - string
+  - uid: office.Excel.CustomXmlPartScopedCollection.getItemOrNullObject
+    summary: >-
+      Gets a custom XML part based on its ID. If the CustomXmlPart does not exist, the return object's isNull property
+      will be true.
+
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: getItemOrNullObject(id)
+    fullName: office.Excel.CustomXmlPartScopedCollection.getItemOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(id: string): Excel.CustomXmlPart;'
+      return:
+        type:
+          - Excel.CustomXmlPart
+        description: ''
+      parameters:
+        - id: id
+          description: ''
+          type:
+            - string
+    remarks: |
+
+
+      ## Snippets
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const settings = context.workbook.settings;
+          const xmlPartIDSetting = settings.getItem("ContosoReviewXmlPartId").load("value");
+
+          await context.sync();
+          
+          let customXmlPart = context.workbook.customXmlParts.getItem(xmlPartIDSetting.value);
+          const xmlBlob = customXmlPart.getXml();
+          customXmlPart.delete();
+          customXmlPart = context.workbook.customXmlParts.getItemOrNullObject(xmlPartIDSetting.value);
+
+          await context.sync();
+
+          if (customXmlPart.isNullObject) {
+              $("#display-xml").text(`The XML part with the id ${xmlPartIDSetting.value} has been deleted.`);
+
+              // Delete the unneeded setting too.
+              xmlPartIDSetting.delete();            
+          } else {
+              const readableXml = addLineBreaksToXML(xmlBlob.value);
+              const strangeMessage = `This is strange. The XML part with the id ${xmlPartIDSetting.value} has not been deleted:\n${readableXml}`
+              $("#display-xml").text(strangeMessage);
+          }
+
+          await context.sync();
+      });
+      ```
+  - uid: office.Excel.CustomXmlPartScopedCollection.getOnlyItem
+    summary: |-
+      If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error.
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: getOnlyItem()
+    fullName: office.Excel.CustomXmlPartScopedCollection.getOnlyItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOnlyItem(): Excel.CustomXmlPart;'
+      return:
+        type:
+          - Excel.CustomXmlPart
+        description: ''
+  - uid: office.Excel.CustomXmlPartScopedCollection.getOnlyItemOrNullObject
+    summary: |-
+      If the collection contains exactly one item, this method returns it. Otherwise, this method returns Null.
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: getOnlyItemOrNullObject()
+    fullName: office.Excel.CustomXmlPartScopedCollection.getOnlyItemOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOnlyItemOrNullObject(): Excel.CustomXmlPart;'
+      return:
+        type:
+          - Excel.CustomXmlPart
+        description: ''
+  - uid: office.Excel.CustomXmlPartScopedCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.Excel.CustomXmlPartScopedCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Array<Excel.CustomXmlPart>;'
+      return:
+        type:
+          - Array<Excel.CustomXmlPart>
+  - uid: office.Excel.CustomXmlPartScopedCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel.CustomXmlPartScopedCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.CustomXmlPartScopedCollection;'
+      return:
+        type:
+          - Excel.CustomXmlPartScopedCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel.CustomXmlPartScopedCollection.toJSON
+    name: toJSON()
+    fullName: office.Excel.CustomXmlPartScopedCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - '{}'
+        description: ''

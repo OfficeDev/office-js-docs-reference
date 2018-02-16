@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeCore.ABType
+    summary: '\[ [Api set: Experimentation 1.1 (PREVIEW)](http://bing.com) \]'
+    name: OfficeCore.ABType
+    fullName: office.OfficeCore.ABType
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.OfficeCore.ABType.load
+      - office.OfficeCore.ABType.toJSON
+      - office.OfficeCore.ABType.value
+  - uid: office.OfficeCore.ABType.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.OfficeCore.ABType.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OfficeCore.ABType;'
+      return:
+        type:
+          - OfficeCore.ABType
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.OfficeCore.ABType.toJSON
+    name: toJSON()
+    fullName: office.OfficeCore.ABType.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"value\": string | number | boolean;\r\n        }"
+        description: ''
+  - uid: office.OfficeCore.ABType.value
+    name: value
+    fullName: office.OfficeCore.ABType.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly value: string | number | boolean;'
+      return:
+        type:
+          - string | number | boolean

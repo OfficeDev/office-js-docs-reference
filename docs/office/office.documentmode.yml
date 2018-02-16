@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.DocumentMode
+    name: Office.DocumentMode
+    fullName: office.Office.DocumentMode
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.DocumentMode.ReadOnly
+      - office.Office.DocumentMode.ReadWrite
+  - uid: office.Office.DocumentMode.ReadOnly
+    summary: Document in Read Only Mode
+    name: ReadOnly
+    fullName: office.Office.DocumentMode.ReadOnly
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.DocumentMode.ReadWrite
+    summary: Document in Read/Write Mode
+    name: ReadWrite
+    fullName: office.Office.DocumentMode.ReadWrite
+    langs:
+      - typeScript
+    type: field

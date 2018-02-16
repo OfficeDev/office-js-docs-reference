@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.UI
+    name: Office.UI
+    fullName: office.Office.UI
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.UI.displayDialogAsync
+      - office.Office.UI.messageParent
+  - uid: office.Office.UI.displayDialogAsync
+    summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
+    name: 'displayDialogAsync(startAddress, options, callback)'
+    fullName: office.Office.UI.displayDialogAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        displayDialogAsync(startAddress: string, options?: DialogOptions, callback?: (result: AsyncResult) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: startAddress
+          description: ''
+          type:
+            - string
+        - id: options
+          description: ''
+          type:
+            - DialogOptions
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.UI.messageParent
+    summary: Synchronously delivers a message from the dialog to its parent add-in.
+    name: messageParent(messageObject)
+    fullName: office.Office.UI.messageParent
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'messageParent(messageObject: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: messageObject
+          description: ''
+          type:
+            - any

@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.Error
+    summary: Provides specific information about an error that occurred during an asynchronous data operation.
+    name: Office.Error
+    fullName: office.Office.Error
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.Error.code
+      - office.Office.Error.message
+      - office.Office.Error.name
+  - uid: office.Office.Error.code
+    summary: Gets the numeric code of the error.
+    name: code
+    fullName: office.Office.Error.code
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'code: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.Error.message
+    summary: Gets the name of the error.
+    name: message
+    fullName: office.Office.Error.message
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'message: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.Error.name
+    summary: Gets a detailed description of the error.
+    name: name
+    fullName: office.Office.Error.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string

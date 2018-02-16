@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeExtension.DebugInfo
+    name: OfficeExtension.DebugInfo
+    fullName: office.OfficeExtension.DebugInfo
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.OfficeExtension.DebugInfo.code
+      - office.OfficeExtension.DebugInfo.errorLocation
+      - office.OfficeExtension.DebugInfo.innerError
+      - office.OfficeExtension.DebugInfo.message
+  - uid: office.OfficeExtension.DebugInfo.code
+    summary: 'Error code string, such as "InvalidArgument".'
+    name: code
+    fullName: office.OfficeExtension.DebugInfo.code
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'code: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension.DebugInfo.errorLocation
+    summary: 'The object type and property or method name (or similar information), if available.'
+    name: errorLocation
+    fullName: office.OfficeExtension.DebugInfo.errorLocation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'errorLocation?: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension.DebugInfo.innerError
+    summary: 'Inner error, if applicable.'
+    name: innerError
+    fullName: office.OfficeExtension.DebugInfo.innerError
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'innerError?: DebugInfo | string;'
+      return:
+        type:
+          - DebugInfo | string
+  - uid: office.OfficeExtension.DebugInfo.message
+    summary: The error message passed through from the host Office application.
+    name: message
+    fullName: office.OfficeExtension.DebugInfo.message
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'message: string;'
+      return:
+        type:
+          - string

@@ -1,0 +1,123 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OneNote.SectionCollection
+    summary: |-
+      Represents a collection of sections.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: OneNote.SectionCollection
+    fullName: office.OneNote.SectionCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.OneNote.SectionCollection.count
+      - office.OneNote.SectionCollection.getByName
+      - office.OneNote.SectionCollection.getItem
+      - office.OneNote.SectionCollection.getItemAt
+      - office.OneNote.SectionCollection.items
+      - office.OneNote.SectionCollection.load
+  - uid: office.OneNote.SectionCollection.count
+    summary: |-
+      Returns the number of sections in the collection. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: count
+    fullName: office.OneNote.SectionCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: office.OneNote.SectionCollection.getByName
+    summary: Gets the collection of sections with the specified name.
+    name: getByName(name)
+    fullName: office.OneNote.SectionCollection.getByName
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByName(name: string): OneNote.SectionCollection;'
+      return:
+        type:
+          - OneNote.SectionCollection
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: office.OneNote.SectionCollection.getItem
+    summary: Gets a section by ID or by its index in the collection. Read-only.
+    name: getItem(index)
+    fullName: office.OneNote.SectionCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number | string): OneNote.Section;'
+      return:
+        type:
+          - OneNote.Section
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number | string
+  - uid: office.OneNote.SectionCollection.getItemAt
+    summary: Gets a section on its position in the collection.
+    name: getItemAt(index)
+    fullName: office.OneNote.SectionCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): OneNote.Section;'
+      return:
+        type:
+          - OneNote.Section
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.OneNote.SectionCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.OneNote.SectionCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<OneNote.Section>;'
+      return:
+        type:
+          - Array<OneNote.Section>
+  - uid: office.OneNote.SectionCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.OneNote.SectionCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.SectionCollection;'
+      return:
+        type:
+          - OneNote.SectionCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'

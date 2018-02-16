@@ -1,0 +1,101 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.ProjectProjectFields
+    name: Office.ProjectProjectFields
+    fullName: office.Office.ProjectProjectFields
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.ProjectProjectFields.CurrencyDigits
+      - office.Office.ProjectProjectFields.CurrencySymbol
+      - office.Office.ProjectProjectFields.CurrencySymbolPosition
+      - office.Office.ProjectProjectFields.DurationUnits
+      - office.Office.ProjectProjectFields.Finish
+      - office.Office.ProjectProjectFields.GUID
+      - office.Office.ProjectProjectFields.ProjectServerUrl
+      - office.Office.ProjectProjectFields.ReadOnly
+      - office.Office.ProjectProjectFields.Start
+      - office.Office.ProjectProjectFields.VERSION
+      - office.Office.ProjectProjectFields.WorkUnits
+      - office.Office.ProjectProjectFields.WSSList
+      - office.Office.ProjectProjectFields.WSSUrl
+  - uid: office.Office.ProjectProjectFields.CurrencyDigits
+    name: CurrencyDigits
+    fullName: office.Office.ProjectProjectFields.CurrencyDigits
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectProjectFields.CurrencySymbol
+    name: CurrencySymbol
+    fullName: office.Office.ProjectProjectFields.CurrencySymbol
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectProjectFields.CurrencySymbolPosition
+    name: CurrencySymbolPosition
+    fullName: office.Office.ProjectProjectFields.CurrencySymbolPosition
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectProjectFields.DurationUnits
+    name: DurationUnits
+    fullName: office.Office.ProjectProjectFields.DurationUnits
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectProjectFields.Finish
+    name: Finish
+    fullName: office.Office.ProjectProjectFields.Finish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectProjectFields.GUID
+    name: GUID
+    fullName: office.Office.ProjectProjectFields.GUID
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectProjectFields.ProjectServerUrl
+    name: ProjectServerUrl
+    fullName: office.Office.ProjectProjectFields.ProjectServerUrl
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectProjectFields.ReadOnly
+    name: ReadOnly
+    fullName: office.Office.ProjectProjectFields.ReadOnly
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectProjectFields.Start
+    name: Start
+    fullName: office.Office.ProjectProjectFields.Start
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectProjectFields.VERSION
+    name: VERSION
+    fullName: office.Office.ProjectProjectFields.VERSION
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectProjectFields.WorkUnits
+    name: WorkUnits
+    fullName: office.Office.ProjectProjectFields.WorkUnits
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectProjectFields.WSSList
+    name: WSSList
+    fullName: office.Office.ProjectProjectFields.WSSList
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectProjectFields.WSSUrl
+    name: WSSUrl
+    fullName: office.Office.ProjectProjectFields.WSSUrl
+    langs:
+      - typeScript
+    type: field

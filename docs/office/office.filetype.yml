@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.FileType
+    name: Office.FileType
+    fullName: office.Office.FileType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.FileType.Compressed
+      - office.Office.FileType.Pdf
+      - office.Office.FileType.Text
+  - uid: office.Office.FileType.Compressed
+    summary: Returns the file as a byte array
+    name: Compressed
+    fullName: office.Office.FileType.Compressed
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.FileType.Pdf
+    summary: Returns the file in PDF format as a byte array
+    name: Pdf
+    fullName: office.Office.FileType.Pdf
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.FileType.Text
+    summary: Returns the file as plain text
+    name: Text
+    fullName: office.Office.FileType.Text
+    langs:
+      - typeScript
+    type: field

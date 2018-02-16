@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.DialogOptions
+    name: Office.DialogOptions
+    fullName: office.Office.DialogOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.DialogOptions.displayInIframe
+      - office.Office.DialogOptions.height
+      - office.Office.DialogOptions.width
+  - uid: office.Office.DialogOptions.displayInIframe
+    summary: >-
+      Optional. Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable
+      in Office Online clients, and is ignored on other platforms.
+    name: displayInIframe
+    fullName: office.Office.DialogOptions.displayInIframe
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayInIframe?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Office.DialogOptions.height
+    summary: Optional. Defines the width of the dialog as a percentage of the current display. Defaults to 99%. 250px minimum.
+    name: height
+    fullName: office.Office.DialogOptions.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.DialogOptions.width
+    summary: Optional. Defines the height of the dialog as a percentage of the current display. Defaults to 99%. 150px minimum.
+    name: width
+    fullName: office.Office.DialogOptions.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number

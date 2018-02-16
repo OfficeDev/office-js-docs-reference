@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.RangeSort
+    summary: |-
+      Manages sorting operations on Range objects.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: Excel.RangeSort
+    fullName: office.Excel.RangeSort
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel.RangeSort.apply
+      - office.Excel.RangeSort.toJSON
+  - uid: office.Excel.RangeSort.apply
+    summary: |-
+      Perform a sort operation.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    fullName: office.Excel.RangeSort.apply
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        apply(fields: Array<Excel.SortField>, matchCase?: boolean, hasHeaders?: boolean, orientation?: string, method?:
+        string): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fields
+          description: ''
+          type:
+            - Array<Excel.SortField>
+        - id: matchCase
+          description: ''
+          type:
+            - boolean
+        - id: hasHeaders
+          description: ''
+          type:
+            - boolean
+        - id: orientation
+          description: ''
+          type:
+            - string
+        - id: method
+          description: ''
+          type:
+            - string
+  - uid: office.Excel.RangeSort.toJSON
+    name: toJSON()
+    fullName: office.Excel.RangeSort.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - '{}'
+        description: ''

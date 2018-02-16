@@ -1,0 +1,1991 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.ProjectTaskFields
+    name: Office.ProjectTaskFields
+    fullName: office.Office.ProjectTaskFields
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.ProjectTaskFields.Active
+      - office.Office.ProjectTaskFields.ActualCost
+      - office.Office.ProjectTaskFields.ActualDuration
+      - office.Office.ProjectTaskFields.ActualFinish
+      - office.Office.ProjectTaskFields.ActualOvertimeCost
+      - office.Office.ProjectTaskFields.ActualOvertimeWork
+      - office.Office.ProjectTaskFields.ActualStart
+      - office.Office.ProjectTaskFields.ActualWork
+      - office.Office.ProjectTaskFields.Baseline10BudgetCost
+      - office.Office.ProjectTaskFields.Baseline10BudgetWork
+      - office.Office.ProjectTaskFields.Baseline10Cost
+      - office.Office.ProjectTaskFields.Baseline10Duration
+      - office.Office.ProjectTaskFields.Baseline10Finish
+      - office.Office.ProjectTaskFields.Baseline10FixedCost
+      - office.Office.ProjectTaskFields.Baseline10FixedCostAccrual
+      - office.Office.ProjectTaskFields.Baseline10Start
+      - office.Office.ProjectTaskFields.Baseline10Work
+      - office.Office.ProjectTaskFields.Baseline1BudgetCost
+      - office.Office.ProjectTaskFields.Baseline1BudgetWork
+      - office.Office.ProjectTaskFields.Baseline1Cost
+      - office.Office.ProjectTaskFields.Baseline1Duration
+      - office.Office.ProjectTaskFields.Baseline1Finish
+      - office.Office.ProjectTaskFields.Baseline1FixedCost
+      - office.Office.ProjectTaskFields.Baseline1FixedCostAccrual
+      - office.Office.ProjectTaskFields.Baseline1Start
+      - office.Office.ProjectTaskFields.Baseline1Work
+      - office.Office.ProjectTaskFields.Baseline2BudgetCost
+      - office.Office.ProjectTaskFields.Baseline2BudgetWork
+      - office.Office.ProjectTaskFields.Baseline2Cost
+      - office.Office.ProjectTaskFields.Baseline2Duration
+      - office.Office.ProjectTaskFields.Baseline2Finish
+      - office.Office.ProjectTaskFields.Baseline2FixedCost
+      - office.Office.ProjectTaskFields.Baseline2FixedCostAccrual
+      - office.Office.ProjectTaskFields.Baseline2Start
+      - office.Office.ProjectTaskFields.Baseline2Work
+      - office.Office.ProjectTaskFields.Baseline3BudgetCost
+      - office.Office.ProjectTaskFields.Baseline3BudgetWork
+      - office.Office.ProjectTaskFields.Baseline3Cost
+      - office.Office.ProjectTaskFields.Baseline3Duration
+      - office.Office.ProjectTaskFields.Baseline3Finish
+      - office.Office.ProjectTaskFields.Baseline3FixedCost
+      - office.Office.ProjectTaskFields.Baseline3FixedCostAccrual
+      - office.Office.ProjectTaskFields.Baseline3Work
+      - office.Office.ProjectTaskFields.Baseline4BudgetCost
+      - office.Office.ProjectTaskFields.Baseline4BudgetWork
+      - office.Office.ProjectTaskFields.Baseline4Cost
+      - office.Office.ProjectTaskFields.Baseline4Duration
+      - office.Office.ProjectTaskFields.Baseline4Finish
+      - office.Office.ProjectTaskFields.Baseline4FixedCost
+      - office.Office.ProjectTaskFields.Baseline4FixedCostAccrual
+      - office.Office.ProjectTaskFields.Baseline4Start
+      - office.Office.ProjectTaskFields.Baseline4Work
+      - office.Office.ProjectTaskFields.Baseline5BudgetCost
+      - office.Office.ProjectTaskFields.Baseline5BudgetWork
+      - office.Office.ProjectTaskFields.Baseline5Cost
+      - office.Office.ProjectTaskFields.Baseline5Duration
+      - office.Office.ProjectTaskFields.Baseline5Finish
+      - office.Office.ProjectTaskFields.Baseline5FixedCost
+      - office.Office.ProjectTaskFields.Baseline5FixedCostAccrual
+      - office.Office.ProjectTaskFields.Baseline5Start
+      - office.Office.ProjectTaskFields.Baseline5Work
+      - office.Office.ProjectTaskFields.Baseline6BudgetCost
+      - office.Office.ProjectTaskFields.Baseline6BudgetWork
+      - office.Office.ProjectTaskFields.Baseline6Cost
+      - office.Office.ProjectTaskFields.Baseline6Duration
+      - office.Office.ProjectTaskFields.Baseline6Finish
+      - office.Office.ProjectTaskFields.Baseline6FixedCost
+      - office.Office.ProjectTaskFields.Baseline6FixedCostAccrual
+      - office.Office.ProjectTaskFields.Baseline6Start
+      - office.Office.ProjectTaskFields.Baseline6Work
+      - office.Office.ProjectTaskFields.Baseline7BudgetCost
+      - office.Office.ProjectTaskFields.Baseline7BudgetWork
+      - office.Office.ProjectTaskFields.Baseline7Cost
+      - office.Office.ProjectTaskFields.Baseline7Duration
+      - office.Office.ProjectTaskFields.Baseline7Finish
+      - office.Office.ProjectTaskFields.Baseline7FixedCost
+      - office.Office.ProjectTaskFields.Baseline7FixedCostAccrual
+      - office.Office.ProjectTaskFields.Baseline7Start
+      - office.Office.ProjectTaskFields.Baseline7Work
+      - office.Office.ProjectTaskFields.Baseline8BudgetCost
+      - office.Office.ProjectTaskFields.Baseline8BudgetWork
+      - office.Office.ProjectTaskFields.Baseline8Cost
+      - office.Office.ProjectTaskFields.Baseline8Duration
+      - office.Office.ProjectTaskFields.Baseline8Finish
+      - office.Office.ProjectTaskFields.Baseline8FixedCost
+      - office.Office.ProjectTaskFields.Baseline8FixedCostAccrual
+      - office.Office.ProjectTaskFields.Baseline8Start
+      - office.Office.ProjectTaskFields.Baseline8Work
+      - office.Office.ProjectTaskFields.Baseline9BudgetCost
+      - office.Office.ProjectTaskFields.Baseline9BudgetWork
+      - office.Office.ProjectTaskFields.Baseline9Cost
+      - office.Office.ProjectTaskFields.Baseline9Duration
+      - office.Office.ProjectTaskFields.Baseline9Finish
+      - office.Office.ProjectTaskFields.Baseline9FixedCost
+      - office.Office.ProjectTaskFields.Baseline9FixedCostAccrual
+      - office.Office.ProjectTaskFields.Baseline9Start
+      - office.Office.ProjectTaskFields.Baseline9Work
+      - office.Office.ProjectTaskFields.BaselineBudgetCost
+      - office.Office.ProjectTaskFields.BaselineBudgetWork
+      - office.Office.ProjectTaskFields.BaselineCost
+      - office.Office.ProjectTaskFields.BaselineDuration
+      - office.Office.ProjectTaskFields.BaselineFinish
+      - office.Office.ProjectTaskFields.BaselineFixedCost
+      - office.Office.ProjectTaskFields.BaselineFixedCostAccrual
+      - office.Office.ProjectTaskFields.BaselineStart
+      - office.Office.ProjectTaskFields.BaselineWork
+      - office.Office.ProjectTaskFields.Basline3Start
+      - office.Office.ProjectTaskFields.BudgetCost
+      - office.Office.ProjectTaskFields.BudgetFixedCost
+      - office.Office.ProjectTaskFields.BudgetFixedWork
+      - office.Office.ProjectTaskFields.BudgetWork
+      - office.Office.ProjectTaskFields.ConstraintDate
+      - office.Office.ProjectTaskFields.ConstraintType
+      - office.Office.ProjectTaskFields.Cost
+      - office.Office.ProjectTaskFields.Cost1
+      - office.Office.ProjectTaskFields.Cost10
+      - office.Office.ProjectTaskFields.Cost2
+      - office.Office.ProjectTaskFields.Cost3
+      - office.Office.ProjectTaskFields.Cost4
+      - office.Office.ProjectTaskFields.Cost5
+      - office.Office.ProjectTaskFields.Cost6
+      - office.Office.ProjectTaskFields.Cost7
+      - office.Office.ProjectTaskFields.Cost8
+      - office.Office.ProjectTaskFields.Cost9
+      - office.Office.ProjectTaskFields.Critical
+      - office.Office.ProjectTaskFields.Date1
+      - office.Office.ProjectTaskFields.Date10
+      - office.Office.ProjectTaskFields.Date2
+      - office.Office.ProjectTaskFields.Date3
+      - office.Office.ProjectTaskFields.Date4
+      - office.Office.ProjectTaskFields.Date5
+      - office.Office.ProjectTaskFields.Date6
+      - office.Office.ProjectTaskFields.Date7
+      - office.Office.ProjectTaskFields.Date8
+      - office.Office.ProjectTaskFields.Date9
+      - office.Office.ProjectTaskFields.Deadline
+      - office.Office.ProjectTaskFields.Duration
+      - office.Office.ProjectTaskFields.Duration1
+      - office.Office.ProjectTaskFields.Duration10
+      - office.Office.ProjectTaskFields.Duration2
+      - office.Office.ProjectTaskFields.Duration3
+      - office.Office.ProjectTaskFields.Duration4
+      - office.Office.ProjectTaskFields.Duration5
+      - office.Office.ProjectTaskFields.Duration6
+      - office.Office.ProjectTaskFields.Duration7
+      - office.Office.ProjectTaskFields.Duration8
+      - office.Office.ProjectTaskFields.Duration9
+      - office.Office.ProjectTaskFields.EarnedValueMethod
+      - office.Office.ProjectTaskFields.Finish
+      - office.Office.ProjectTaskFields.Finish1
+      - office.Office.ProjectTaskFields.Finish10
+      - office.Office.ProjectTaskFields.Finish2
+      - office.Office.ProjectTaskFields.Finish3
+      - office.Office.ProjectTaskFields.Finish4
+      - office.Office.ProjectTaskFields.Finish5
+      - office.Office.ProjectTaskFields.Finish6
+      - office.Office.ProjectTaskFields.Finish7
+      - office.Office.ProjectTaskFields.Finish8
+      - office.Office.ProjectTaskFields.Finish9
+      - office.Office.ProjectTaskFields.FinishSlack
+      - office.Office.ProjectTaskFields.FixedCost
+      - office.Office.ProjectTaskFields.FixedCostAccrual
+      - office.Office.ProjectTaskFields.Flag1
+      - office.Office.ProjectTaskFields.Flag10
+      - office.Office.ProjectTaskFields.Flag11
+      - office.Office.ProjectTaskFields.Flag12
+      - office.Office.ProjectTaskFields.Flag13
+      - office.Office.ProjectTaskFields.Flag14
+      - office.Office.ProjectTaskFields.Flag15
+      - office.Office.ProjectTaskFields.Flag16
+      - office.Office.ProjectTaskFields.Flag17
+      - office.Office.ProjectTaskFields.Flag18
+      - office.Office.ProjectTaskFields.Flag19
+      - office.Office.ProjectTaskFields.Flag2
+      - office.Office.ProjectTaskFields.Flag20
+      - office.Office.ProjectTaskFields.Flag3
+      - office.Office.ProjectTaskFields.Flag4
+      - office.Office.ProjectTaskFields.Flag5
+      - office.Office.ProjectTaskFields.Flag6
+      - office.Office.ProjectTaskFields.Flag7
+      - office.Office.ProjectTaskFields.Flag8
+      - office.Office.ProjectTaskFields.Flag9
+      - office.Office.ProjectTaskFields.FreeSlack
+      - office.Office.ProjectTaskFields.HasRollupSubTasks
+      - office.Office.ProjectTaskFields.ID
+      - office.Office.ProjectTaskFields.IsRollup
+      - office.Office.ProjectTaskFields.Milestone
+      - office.Office.ProjectTaskFields.Name
+      - office.Office.ProjectTaskFields.Notes
+      - office.Office.ProjectTaskFields.Number1
+      - office.Office.ProjectTaskFields.Number10
+      - office.Office.ProjectTaskFields.Number11
+      - office.Office.ProjectTaskFields.Number12
+      - office.Office.ProjectTaskFields.Number13
+      - office.Office.ProjectTaskFields.Number14
+      - office.Office.ProjectTaskFields.Number15
+      - office.Office.ProjectTaskFields.Number16
+      - office.Office.ProjectTaskFields.Number17
+      - office.Office.ProjectTaskFields.Number18
+      - office.Office.ProjectTaskFields.Number19
+      - office.Office.ProjectTaskFields.Number2
+      - office.Office.ProjectTaskFields.Number20
+      - office.Office.ProjectTaskFields.Number3
+      - office.Office.ProjectTaskFields.Number4
+      - office.Office.ProjectTaskFields.Number5
+      - office.Office.ProjectTaskFields.Number6
+      - office.Office.ProjectTaskFields.Number7
+      - office.Office.ProjectTaskFields.Number8
+      - office.Office.ProjectTaskFields.Number9
+      - office.Office.ProjectTaskFields.OutlineLevel
+      - office.Office.ProjectTaskFields.Overallocated
+      - office.Office.ProjectTaskFields.OvertimeCost
+      - office.Office.ProjectTaskFields.OvertimeWork
+      - office.Office.ProjectTaskFields.PercentComplete
+      - office.Office.ProjectTaskFields.PercentWorkComplete
+      - office.Office.ProjectTaskFields.Predecessors
+      - office.Office.ProjectTaskFields.PreleveledFinish
+      - office.Office.ProjectTaskFields.PreleveledStart
+      - office.Office.ProjectTaskFields.Priority
+      - office.Office.ProjectTaskFields.RegularWork
+      - office.Office.ProjectTaskFields.RemainingCost
+      - office.Office.ProjectTaskFields.RemainingDuration
+      - office.Office.ProjectTaskFields.RemainingOvertimeCost
+      - office.Office.ProjectTaskFields.RemainingWork
+      - office.Office.ProjectTaskFields.ResourceNames
+      - office.Office.ProjectTaskFields.ScheduledDuration
+      - office.Office.ProjectTaskFields.ScheduledFinish
+      - office.Office.ProjectTaskFields.ScheduledStart
+      - office.Office.ProjectTaskFields.Start
+      - office.Office.ProjectTaskFields.Start1
+      - office.Office.ProjectTaskFields.Start10
+      - office.Office.ProjectTaskFields.Start2
+      - office.Office.ProjectTaskFields.Start3
+      - office.Office.ProjectTaskFields.Start4
+      - office.Office.ProjectTaskFields.Start5
+      - office.Office.ProjectTaskFields.Start6
+      - office.Office.ProjectTaskFields.Start7
+      - office.Office.ProjectTaskFields.Start8
+      - office.Office.ProjectTaskFields.Start9
+      - office.Office.ProjectTaskFields.StartSlack
+      - office.Office.ProjectTaskFields.Status
+      - office.Office.ProjectTaskFields.StatusManager
+      - office.Office.ProjectTaskFields.Successors
+      - office.Office.ProjectTaskFields.Summary
+      - office.Office.ProjectTaskFields.TaskCalendarGUID
+      - office.Office.ProjectTaskFields.TaskGUID
+      - office.Office.ProjectTaskFields.Text1
+      - office.Office.ProjectTaskFields.Text10
+      - office.Office.ProjectTaskFields.Text11
+      - office.Office.ProjectTaskFields.Text12
+      - office.Office.ProjectTaskFields.Text13
+      - office.Office.ProjectTaskFields.Text14
+      - office.Office.ProjectTaskFields.Text15
+      - office.Office.ProjectTaskFields.Text16
+      - office.Office.ProjectTaskFields.Text17
+      - office.Office.ProjectTaskFields.Text18
+      - office.Office.ProjectTaskFields.Text19
+      - office.Office.ProjectTaskFields.Text2
+      - office.Office.ProjectTaskFields.Text20
+      - office.Office.ProjectTaskFields.Text21
+      - office.Office.ProjectTaskFields.Text22
+      - office.Office.ProjectTaskFields.Text23
+      - office.Office.ProjectTaskFields.Text24
+      - office.Office.ProjectTaskFields.Text25
+      - office.Office.ProjectTaskFields.Text26
+      - office.Office.ProjectTaskFields.Text27
+      - office.Office.ProjectTaskFields.Text28
+      - office.Office.ProjectTaskFields.Text29
+      - office.Office.ProjectTaskFields.Text3
+      - office.Office.ProjectTaskFields.Text30
+      - office.Office.ProjectTaskFields.Text4
+      - office.Office.ProjectTaskFields.Text5
+      - office.Office.ProjectTaskFields.Text6
+      - office.Office.ProjectTaskFields.Text7
+      - office.Office.ProjectTaskFields.Text8
+      - office.Office.ProjectTaskFields.Text9
+      - office.Office.ProjectTaskFields.TotalSlack
+      - office.Office.ProjectTaskFields.Type
+      - office.Office.ProjectTaskFields.WBS
+      - office.Office.ProjectTaskFields.WBSPREDECESSORS
+      - office.Office.ProjectTaskFields.WBSSUCCESSORS
+      - office.Office.ProjectTaskFields.Work
+      - office.Office.ProjectTaskFields.WSSID
+  - uid: office.Office.ProjectTaskFields.Active
+    name: Active
+    fullName: office.Office.ProjectTaskFields.Active
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.ActualCost
+    name: ActualCost
+    fullName: office.Office.ProjectTaskFields.ActualCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.ActualDuration
+    name: ActualDuration
+    fullName: office.Office.ProjectTaskFields.ActualDuration
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.ActualFinish
+    name: ActualFinish
+    fullName: office.Office.ProjectTaskFields.ActualFinish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.ActualOvertimeCost
+    name: ActualOvertimeCost
+    fullName: office.Office.ProjectTaskFields.ActualOvertimeCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.ActualOvertimeWork
+    name: ActualOvertimeWork
+    fullName: office.Office.ProjectTaskFields.ActualOvertimeWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.ActualStart
+    name: ActualStart
+    fullName: office.Office.ProjectTaskFields.ActualStart
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.ActualWork
+    name: ActualWork
+    fullName: office.Office.ProjectTaskFields.ActualWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline10BudgetCost
+    name: Baseline10BudgetCost
+    fullName: office.Office.ProjectTaskFields.Baseline10BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline10BudgetWork
+    name: Baseline10BudgetWork
+    fullName: office.Office.ProjectTaskFields.Baseline10BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline10Cost
+    name: Baseline10Cost
+    fullName: office.Office.ProjectTaskFields.Baseline10Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline10Duration
+    name: Baseline10Duration
+    fullName: office.Office.ProjectTaskFields.Baseline10Duration
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline10Finish
+    name: Baseline10Finish
+    fullName: office.Office.ProjectTaskFields.Baseline10Finish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline10FixedCost
+    name: Baseline10FixedCost
+    fullName: office.Office.ProjectTaskFields.Baseline10FixedCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline10FixedCostAccrual
+    name: Baseline10FixedCostAccrual
+    fullName: office.Office.ProjectTaskFields.Baseline10FixedCostAccrual
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline10Start
+    name: Baseline10Start
+    fullName: office.Office.ProjectTaskFields.Baseline10Start
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline10Work
+    name: Baseline10Work
+    fullName: office.Office.ProjectTaskFields.Baseline10Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline1BudgetCost
+    name: Baseline1BudgetCost
+    fullName: office.Office.ProjectTaskFields.Baseline1BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline1BudgetWork
+    name: Baseline1BudgetWork
+    fullName: office.Office.ProjectTaskFields.Baseline1BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline1Cost
+    name: Baseline1Cost
+    fullName: office.Office.ProjectTaskFields.Baseline1Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline1Duration
+    name: Baseline1Duration
+    fullName: office.Office.ProjectTaskFields.Baseline1Duration
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline1Finish
+    name: Baseline1Finish
+    fullName: office.Office.ProjectTaskFields.Baseline1Finish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline1FixedCost
+    name: Baseline1FixedCost
+    fullName: office.Office.ProjectTaskFields.Baseline1FixedCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline1FixedCostAccrual
+    name: Baseline1FixedCostAccrual
+    fullName: office.Office.ProjectTaskFields.Baseline1FixedCostAccrual
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline1Start
+    name: Baseline1Start
+    fullName: office.Office.ProjectTaskFields.Baseline1Start
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline1Work
+    name: Baseline1Work
+    fullName: office.Office.ProjectTaskFields.Baseline1Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline2BudgetCost
+    name: Baseline2BudgetCost
+    fullName: office.Office.ProjectTaskFields.Baseline2BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline2BudgetWork
+    name: Baseline2BudgetWork
+    fullName: office.Office.ProjectTaskFields.Baseline2BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline2Cost
+    name: Baseline2Cost
+    fullName: office.Office.ProjectTaskFields.Baseline2Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline2Duration
+    name: Baseline2Duration
+    fullName: office.Office.ProjectTaskFields.Baseline2Duration
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline2Finish
+    name: Baseline2Finish
+    fullName: office.Office.ProjectTaskFields.Baseline2Finish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline2FixedCost
+    name: Baseline2FixedCost
+    fullName: office.Office.ProjectTaskFields.Baseline2FixedCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline2FixedCostAccrual
+    name: Baseline2FixedCostAccrual
+    fullName: office.Office.ProjectTaskFields.Baseline2FixedCostAccrual
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline2Start
+    name: Baseline2Start
+    fullName: office.Office.ProjectTaskFields.Baseline2Start
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline2Work
+    name: Baseline2Work
+    fullName: office.Office.ProjectTaskFields.Baseline2Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline3BudgetCost
+    name: Baseline3BudgetCost
+    fullName: office.Office.ProjectTaskFields.Baseline3BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline3BudgetWork
+    name: Baseline3BudgetWork
+    fullName: office.Office.ProjectTaskFields.Baseline3BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline3Cost
+    name: Baseline3Cost
+    fullName: office.Office.ProjectTaskFields.Baseline3Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline3Duration
+    name: Baseline3Duration
+    fullName: office.Office.ProjectTaskFields.Baseline3Duration
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline3Finish
+    name: Baseline3Finish
+    fullName: office.Office.ProjectTaskFields.Baseline3Finish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline3FixedCost
+    name: Baseline3FixedCost
+    fullName: office.Office.ProjectTaskFields.Baseline3FixedCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline3FixedCostAccrual
+    name: Baseline3FixedCostAccrual
+    fullName: office.Office.ProjectTaskFields.Baseline3FixedCostAccrual
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline3Work
+    name: Baseline3Work
+    fullName: office.Office.ProjectTaskFields.Baseline3Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline4BudgetCost
+    name: Baseline4BudgetCost
+    fullName: office.Office.ProjectTaskFields.Baseline4BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline4BudgetWork
+    name: Baseline4BudgetWork
+    fullName: office.Office.ProjectTaskFields.Baseline4BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline4Cost
+    name: Baseline4Cost
+    fullName: office.Office.ProjectTaskFields.Baseline4Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline4Duration
+    name: Baseline4Duration
+    fullName: office.Office.ProjectTaskFields.Baseline4Duration
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline4Finish
+    name: Baseline4Finish
+    fullName: office.Office.ProjectTaskFields.Baseline4Finish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline4FixedCost
+    name: Baseline4FixedCost
+    fullName: office.Office.ProjectTaskFields.Baseline4FixedCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline4FixedCostAccrual
+    name: Baseline4FixedCostAccrual
+    fullName: office.Office.ProjectTaskFields.Baseline4FixedCostAccrual
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline4Start
+    name: Baseline4Start
+    fullName: office.Office.ProjectTaskFields.Baseline4Start
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline4Work
+    name: Baseline4Work
+    fullName: office.Office.ProjectTaskFields.Baseline4Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline5BudgetCost
+    name: Baseline5BudgetCost
+    fullName: office.Office.ProjectTaskFields.Baseline5BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline5BudgetWork
+    name: Baseline5BudgetWork
+    fullName: office.Office.ProjectTaskFields.Baseline5BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline5Cost
+    name: Baseline5Cost
+    fullName: office.Office.ProjectTaskFields.Baseline5Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline5Duration
+    name: Baseline5Duration
+    fullName: office.Office.ProjectTaskFields.Baseline5Duration
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline5Finish
+    name: Baseline5Finish
+    fullName: office.Office.ProjectTaskFields.Baseline5Finish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline5FixedCost
+    name: Baseline5FixedCost
+    fullName: office.Office.ProjectTaskFields.Baseline5FixedCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline5FixedCostAccrual
+    name: Baseline5FixedCostAccrual
+    fullName: office.Office.ProjectTaskFields.Baseline5FixedCostAccrual
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline5Start
+    name: Baseline5Start
+    fullName: office.Office.ProjectTaskFields.Baseline5Start
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline5Work
+    name: Baseline5Work
+    fullName: office.Office.ProjectTaskFields.Baseline5Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline6BudgetCost
+    name: Baseline6BudgetCost
+    fullName: office.Office.ProjectTaskFields.Baseline6BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline6BudgetWork
+    name: Baseline6BudgetWork
+    fullName: office.Office.ProjectTaskFields.Baseline6BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline6Cost
+    name: Baseline6Cost
+    fullName: office.Office.ProjectTaskFields.Baseline6Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline6Duration
+    name: Baseline6Duration
+    fullName: office.Office.ProjectTaskFields.Baseline6Duration
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline6Finish
+    name: Baseline6Finish
+    fullName: office.Office.ProjectTaskFields.Baseline6Finish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline6FixedCost
+    name: Baseline6FixedCost
+    fullName: office.Office.ProjectTaskFields.Baseline6FixedCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline6FixedCostAccrual
+    name: Baseline6FixedCostAccrual
+    fullName: office.Office.ProjectTaskFields.Baseline6FixedCostAccrual
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline6Start
+    name: Baseline6Start
+    fullName: office.Office.ProjectTaskFields.Baseline6Start
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline6Work
+    name: Baseline6Work
+    fullName: office.Office.ProjectTaskFields.Baseline6Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline7BudgetCost
+    name: Baseline7BudgetCost
+    fullName: office.Office.ProjectTaskFields.Baseline7BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline7BudgetWork
+    name: Baseline7BudgetWork
+    fullName: office.Office.ProjectTaskFields.Baseline7BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline7Cost
+    name: Baseline7Cost
+    fullName: office.Office.ProjectTaskFields.Baseline7Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline7Duration
+    name: Baseline7Duration
+    fullName: office.Office.ProjectTaskFields.Baseline7Duration
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline7Finish
+    name: Baseline7Finish
+    fullName: office.Office.ProjectTaskFields.Baseline7Finish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline7FixedCost
+    name: Baseline7FixedCost
+    fullName: office.Office.ProjectTaskFields.Baseline7FixedCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline7FixedCostAccrual
+    name: Baseline7FixedCostAccrual
+    fullName: office.Office.ProjectTaskFields.Baseline7FixedCostAccrual
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline7Start
+    name: Baseline7Start
+    fullName: office.Office.ProjectTaskFields.Baseline7Start
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline7Work
+    name: Baseline7Work
+    fullName: office.Office.ProjectTaskFields.Baseline7Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline8BudgetCost
+    name: Baseline8BudgetCost
+    fullName: office.Office.ProjectTaskFields.Baseline8BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline8BudgetWork
+    name: Baseline8BudgetWork
+    fullName: office.Office.ProjectTaskFields.Baseline8BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline8Cost
+    name: Baseline8Cost
+    fullName: office.Office.ProjectTaskFields.Baseline8Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline8Duration
+    name: Baseline8Duration
+    fullName: office.Office.ProjectTaskFields.Baseline8Duration
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline8Finish
+    name: Baseline8Finish
+    fullName: office.Office.ProjectTaskFields.Baseline8Finish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline8FixedCost
+    name: Baseline8FixedCost
+    fullName: office.Office.ProjectTaskFields.Baseline8FixedCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline8FixedCostAccrual
+    name: Baseline8FixedCostAccrual
+    fullName: office.Office.ProjectTaskFields.Baseline8FixedCostAccrual
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline8Start
+    name: Baseline8Start
+    fullName: office.Office.ProjectTaskFields.Baseline8Start
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline8Work
+    name: Baseline8Work
+    fullName: office.Office.ProjectTaskFields.Baseline8Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline9BudgetCost
+    name: Baseline9BudgetCost
+    fullName: office.Office.ProjectTaskFields.Baseline9BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline9BudgetWork
+    name: Baseline9BudgetWork
+    fullName: office.Office.ProjectTaskFields.Baseline9BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline9Cost
+    name: Baseline9Cost
+    fullName: office.Office.ProjectTaskFields.Baseline9Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline9Duration
+    name: Baseline9Duration
+    fullName: office.Office.ProjectTaskFields.Baseline9Duration
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline9Finish
+    name: Baseline9Finish
+    fullName: office.Office.ProjectTaskFields.Baseline9Finish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline9FixedCost
+    name: Baseline9FixedCost
+    fullName: office.Office.ProjectTaskFields.Baseline9FixedCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline9FixedCostAccrual
+    name: Baseline9FixedCostAccrual
+    fullName: office.Office.ProjectTaskFields.Baseline9FixedCostAccrual
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline9Start
+    name: Baseline9Start
+    fullName: office.Office.ProjectTaskFields.Baseline9Start
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Baseline9Work
+    name: Baseline9Work
+    fullName: office.Office.ProjectTaskFields.Baseline9Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.BaselineBudgetCost
+    name: BaselineBudgetCost
+    fullName: office.Office.ProjectTaskFields.BaselineBudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.BaselineBudgetWork
+    name: BaselineBudgetWork
+    fullName: office.Office.ProjectTaskFields.BaselineBudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.BaselineCost
+    name: BaselineCost
+    fullName: office.Office.ProjectTaskFields.BaselineCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.BaselineDuration
+    name: BaselineDuration
+    fullName: office.Office.ProjectTaskFields.BaselineDuration
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.BaselineFinish
+    name: BaselineFinish
+    fullName: office.Office.ProjectTaskFields.BaselineFinish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.BaselineFixedCost
+    name: BaselineFixedCost
+    fullName: office.Office.ProjectTaskFields.BaselineFixedCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.BaselineFixedCostAccrual
+    name: BaselineFixedCostAccrual
+    fullName: office.Office.ProjectTaskFields.BaselineFixedCostAccrual
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.BaselineStart
+    name: BaselineStart
+    fullName: office.Office.ProjectTaskFields.BaselineStart
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.BaselineWork
+    name: BaselineWork
+    fullName: office.Office.ProjectTaskFields.BaselineWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Basline3Start
+    name: Basline3Start
+    fullName: office.Office.ProjectTaskFields.Basline3Start
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.BudgetCost
+    name: BudgetCost
+    fullName: office.Office.ProjectTaskFields.BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.BudgetFixedCost
+    name: BudgetFixedCost
+    fullName: office.Office.ProjectTaskFields.BudgetFixedCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.BudgetFixedWork
+    name: BudgetFixedWork
+    fullName: office.Office.ProjectTaskFields.BudgetFixedWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.BudgetWork
+    name: BudgetWork
+    fullName: office.Office.ProjectTaskFields.BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.ConstraintDate
+    name: ConstraintDate
+    fullName: office.Office.ProjectTaskFields.ConstraintDate
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.ConstraintType
+    name: ConstraintType
+    fullName: office.Office.ProjectTaskFields.ConstraintType
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Cost
+    name: Cost
+    fullName: office.Office.ProjectTaskFields.Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Cost1
+    name: Cost1
+    fullName: office.Office.ProjectTaskFields.Cost1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Cost10
+    name: Cost10
+    fullName: office.Office.ProjectTaskFields.Cost10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Cost2
+    name: Cost2
+    fullName: office.Office.ProjectTaskFields.Cost2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Cost3
+    name: Cost3
+    fullName: office.Office.ProjectTaskFields.Cost3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Cost4
+    name: Cost4
+    fullName: office.Office.ProjectTaskFields.Cost4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Cost5
+    name: Cost5
+    fullName: office.Office.ProjectTaskFields.Cost5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Cost6
+    name: Cost6
+    fullName: office.Office.ProjectTaskFields.Cost6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Cost7
+    name: Cost7
+    fullName: office.Office.ProjectTaskFields.Cost7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Cost8
+    name: Cost8
+    fullName: office.Office.ProjectTaskFields.Cost8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Cost9
+    name: Cost9
+    fullName: office.Office.ProjectTaskFields.Cost9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Critical
+    name: Critical
+    fullName: office.Office.ProjectTaskFields.Critical
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Date1
+    name: Date1
+    fullName: office.Office.ProjectTaskFields.Date1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Date10
+    name: Date10
+    fullName: office.Office.ProjectTaskFields.Date10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Date2
+    name: Date2
+    fullName: office.Office.ProjectTaskFields.Date2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Date3
+    name: Date3
+    fullName: office.Office.ProjectTaskFields.Date3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Date4
+    name: Date4
+    fullName: office.Office.ProjectTaskFields.Date4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Date5
+    name: Date5
+    fullName: office.Office.ProjectTaskFields.Date5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Date6
+    name: Date6
+    fullName: office.Office.ProjectTaskFields.Date6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Date7
+    name: Date7
+    fullName: office.Office.ProjectTaskFields.Date7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Date8
+    name: Date8
+    fullName: office.Office.ProjectTaskFields.Date8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Date9
+    name: Date9
+    fullName: office.Office.ProjectTaskFields.Date9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Deadline
+    name: Deadline
+    fullName: office.Office.ProjectTaskFields.Deadline
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Duration
+    name: Duration
+    fullName: office.Office.ProjectTaskFields.Duration
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Duration1
+    name: Duration1
+    fullName: office.Office.ProjectTaskFields.Duration1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Duration10
+    name: Duration10
+    fullName: office.Office.ProjectTaskFields.Duration10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Duration2
+    name: Duration2
+    fullName: office.Office.ProjectTaskFields.Duration2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Duration3
+    name: Duration3
+    fullName: office.Office.ProjectTaskFields.Duration3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Duration4
+    name: Duration4
+    fullName: office.Office.ProjectTaskFields.Duration4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Duration5
+    name: Duration5
+    fullName: office.Office.ProjectTaskFields.Duration5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Duration6
+    name: Duration6
+    fullName: office.Office.ProjectTaskFields.Duration6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Duration7
+    name: Duration7
+    fullName: office.Office.ProjectTaskFields.Duration7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Duration8
+    name: Duration8
+    fullName: office.Office.ProjectTaskFields.Duration8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Duration9
+    name: Duration9
+    fullName: office.Office.ProjectTaskFields.Duration9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.EarnedValueMethod
+    name: EarnedValueMethod
+    fullName: office.Office.ProjectTaskFields.EarnedValueMethod
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Finish
+    name: Finish
+    fullName: office.Office.ProjectTaskFields.Finish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Finish1
+    name: Finish1
+    fullName: office.Office.ProjectTaskFields.Finish1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Finish10
+    name: Finish10
+    fullName: office.Office.ProjectTaskFields.Finish10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Finish2
+    name: Finish2
+    fullName: office.Office.ProjectTaskFields.Finish2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Finish3
+    name: Finish3
+    fullName: office.Office.ProjectTaskFields.Finish3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Finish4
+    name: Finish4
+    fullName: office.Office.ProjectTaskFields.Finish4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Finish5
+    name: Finish5
+    fullName: office.Office.ProjectTaskFields.Finish5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Finish6
+    name: Finish6
+    fullName: office.Office.ProjectTaskFields.Finish6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Finish7
+    name: Finish7
+    fullName: office.Office.ProjectTaskFields.Finish7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Finish8
+    name: Finish8
+    fullName: office.Office.ProjectTaskFields.Finish8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Finish9
+    name: Finish9
+    fullName: office.Office.ProjectTaskFields.Finish9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.FinishSlack
+    name: FinishSlack
+    fullName: office.Office.ProjectTaskFields.FinishSlack
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.FixedCost
+    name: FixedCost
+    fullName: office.Office.ProjectTaskFields.FixedCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.FixedCostAccrual
+    name: FixedCostAccrual
+    fullName: office.Office.ProjectTaskFields.FixedCostAccrual
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag1
+    name: Flag1
+    fullName: office.Office.ProjectTaskFields.Flag1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag10
+    name: Flag10
+    fullName: office.Office.ProjectTaskFields.Flag10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag11
+    name: Flag11
+    fullName: office.Office.ProjectTaskFields.Flag11
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag12
+    name: Flag12
+    fullName: office.Office.ProjectTaskFields.Flag12
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag13
+    name: Flag13
+    fullName: office.Office.ProjectTaskFields.Flag13
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag14
+    name: Flag14
+    fullName: office.Office.ProjectTaskFields.Flag14
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag15
+    name: Flag15
+    fullName: office.Office.ProjectTaskFields.Flag15
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag16
+    name: Flag16
+    fullName: office.Office.ProjectTaskFields.Flag16
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag17
+    name: Flag17
+    fullName: office.Office.ProjectTaskFields.Flag17
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag18
+    name: Flag18
+    fullName: office.Office.ProjectTaskFields.Flag18
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag19
+    name: Flag19
+    fullName: office.Office.ProjectTaskFields.Flag19
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag2
+    name: Flag2
+    fullName: office.Office.ProjectTaskFields.Flag2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag20
+    name: Flag20
+    fullName: office.Office.ProjectTaskFields.Flag20
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag3
+    name: Flag3
+    fullName: office.Office.ProjectTaskFields.Flag3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag4
+    name: Flag4
+    fullName: office.Office.ProjectTaskFields.Flag4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag5
+    name: Flag5
+    fullName: office.Office.ProjectTaskFields.Flag5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag6
+    name: Flag6
+    fullName: office.Office.ProjectTaskFields.Flag6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag7
+    name: Flag7
+    fullName: office.Office.ProjectTaskFields.Flag7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag8
+    name: Flag8
+    fullName: office.Office.ProjectTaskFields.Flag8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Flag9
+    name: Flag9
+    fullName: office.Office.ProjectTaskFields.Flag9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.FreeSlack
+    name: FreeSlack
+    fullName: office.Office.ProjectTaskFields.FreeSlack
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.HasRollupSubTasks
+    name: HasRollupSubTasks
+    fullName: office.Office.ProjectTaskFields.HasRollupSubTasks
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.ID
+    name: ID
+    fullName: office.Office.ProjectTaskFields.ID
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.IsRollup
+    name: IsRollup
+    fullName: office.Office.ProjectTaskFields.IsRollup
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Milestone
+    name: Milestone
+    fullName: office.Office.ProjectTaskFields.Milestone
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Name
+    name: Name
+    fullName: office.Office.ProjectTaskFields.Name
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Notes
+    name: Notes
+    fullName: office.Office.ProjectTaskFields.Notes
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number1
+    name: Number1
+    fullName: office.Office.ProjectTaskFields.Number1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number10
+    name: Number10
+    fullName: office.Office.ProjectTaskFields.Number10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number11
+    name: Number11
+    fullName: office.Office.ProjectTaskFields.Number11
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number12
+    name: Number12
+    fullName: office.Office.ProjectTaskFields.Number12
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number13
+    name: Number13
+    fullName: office.Office.ProjectTaskFields.Number13
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number14
+    name: Number14
+    fullName: office.Office.ProjectTaskFields.Number14
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number15
+    name: Number15
+    fullName: office.Office.ProjectTaskFields.Number15
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number16
+    name: Number16
+    fullName: office.Office.ProjectTaskFields.Number16
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number17
+    name: Number17
+    fullName: office.Office.ProjectTaskFields.Number17
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number18
+    name: Number18
+    fullName: office.Office.ProjectTaskFields.Number18
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number19
+    name: Number19
+    fullName: office.Office.ProjectTaskFields.Number19
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number2
+    name: Number2
+    fullName: office.Office.ProjectTaskFields.Number2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number20
+    name: Number20
+    fullName: office.Office.ProjectTaskFields.Number20
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number3
+    name: Number3
+    fullName: office.Office.ProjectTaskFields.Number3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number4
+    name: Number4
+    fullName: office.Office.ProjectTaskFields.Number4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number5
+    name: Number5
+    fullName: office.Office.ProjectTaskFields.Number5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number6
+    name: Number6
+    fullName: office.Office.ProjectTaskFields.Number6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number7
+    name: Number7
+    fullName: office.Office.ProjectTaskFields.Number7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number8
+    name: Number8
+    fullName: office.Office.ProjectTaskFields.Number8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Number9
+    name: Number9
+    fullName: office.Office.ProjectTaskFields.Number9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.OutlineLevel
+    name: OutlineLevel
+    fullName: office.Office.ProjectTaskFields.OutlineLevel
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Overallocated
+    name: Overallocated
+    fullName: office.Office.ProjectTaskFields.Overallocated
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.OvertimeCost
+    name: OvertimeCost
+    fullName: office.Office.ProjectTaskFields.OvertimeCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.OvertimeWork
+    name: OvertimeWork
+    fullName: office.Office.ProjectTaskFields.OvertimeWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.PercentComplete
+    name: PercentComplete
+    fullName: office.Office.ProjectTaskFields.PercentComplete
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.PercentWorkComplete
+    name: PercentWorkComplete
+    fullName: office.Office.ProjectTaskFields.PercentWorkComplete
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Predecessors
+    name: Predecessors
+    fullName: office.Office.ProjectTaskFields.Predecessors
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.PreleveledFinish
+    name: PreleveledFinish
+    fullName: office.Office.ProjectTaskFields.PreleveledFinish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.PreleveledStart
+    name: PreleveledStart
+    fullName: office.Office.ProjectTaskFields.PreleveledStart
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Priority
+    name: Priority
+    fullName: office.Office.ProjectTaskFields.Priority
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.RegularWork
+    name: RegularWork
+    fullName: office.Office.ProjectTaskFields.RegularWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.RemainingCost
+    name: RemainingCost
+    fullName: office.Office.ProjectTaskFields.RemainingCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.RemainingDuration
+    name: RemainingDuration
+    fullName: office.Office.ProjectTaskFields.RemainingDuration
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.RemainingOvertimeCost
+    name: RemainingOvertimeCost
+    fullName: office.Office.ProjectTaskFields.RemainingOvertimeCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.RemainingWork
+    name: RemainingWork
+    fullName: office.Office.ProjectTaskFields.RemainingWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.ResourceNames
+    name: ResourceNames
+    fullName: office.Office.ProjectTaskFields.ResourceNames
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.ScheduledDuration
+    name: ScheduledDuration
+    fullName: office.Office.ProjectTaskFields.ScheduledDuration
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.ScheduledFinish
+    name: ScheduledFinish
+    fullName: office.Office.ProjectTaskFields.ScheduledFinish
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.ScheduledStart
+    name: ScheduledStart
+    fullName: office.Office.ProjectTaskFields.ScheduledStart
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Start
+    name: Start
+    fullName: office.Office.ProjectTaskFields.Start
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Start1
+    name: Start1
+    fullName: office.Office.ProjectTaskFields.Start1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Start10
+    name: Start10
+    fullName: office.Office.ProjectTaskFields.Start10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Start2
+    name: Start2
+    fullName: office.Office.ProjectTaskFields.Start2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Start3
+    name: Start3
+    fullName: office.Office.ProjectTaskFields.Start3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Start4
+    name: Start4
+    fullName: office.Office.ProjectTaskFields.Start4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Start5
+    name: Start5
+    fullName: office.Office.ProjectTaskFields.Start5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Start6
+    name: Start6
+    fullName: office.Office.ProjectTaskFields.Start6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Start7
+    name: Start7
+    fullName: office.Office.ProjectTaskFields.Start7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Start8
+    name: Start8
+    fullName: office.Office.ProjectTaskFields.Start8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Start9
+    name: Start9
+    fullName: office.Office.ProjectTaskFields.Start9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.StartSlack
+    name: StartSlack
+    fullName: office.Office.ProjectTaskFields.StartSlack
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Status
+    name: Status
+    fullName: office.Office.ProjectTaskFields.Status
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.StatusManager
+    name: StatusManager
+    fullName: office.Office.ProjectTaskFields.StatusManager
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Successors
+    name: Successors
+    fullName: office.Office.ProjectTaskFields.Successors
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Summary
+    name: Summary
+    fullName: office.Office.ProjectTaskFields.Summary
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.TaskCalendarGUID
+    name: TaskCalendarGUID
+    fullName: office.Office.ProjectTaskFields.TaskCalendarGUID
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.TaskGUID
+    name: TaskGUID
+    fullName: office.Office.ProjectTaskFields.TaskGUID
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text1
+    name: Text1
+    fullName: office.Office.ProjectTaskFields.Text1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text10
+    name: Text10
+    fullName: office.Office.ProjectTaskFields.Text10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text11
+    name: Text11
+    fullName: office.Office.ProjectTaskFields.Text11
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text12
+    name: Text12
+    fullName: office.Office.ProjectTaskFields.Text12
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text13
+    name: Text13
+    fullName: office.Office.ProjectTaskFields.Text13
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text14
+    name: Text14
+    fullName: office.Office.ProjectTaskFields.Text14
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text15
+    name: Text15
+    fullName: office.Office.ProjectTaskFields.Text15
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text16
+    name: Text16
+    fullName: office.Office.ProjectTaskFields.Text16
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text17
+    name: Text17
+    fullName: office.Office.ProjectTaskFields.Text17
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text18
+    name: Text18
+    fullName: office.Office.ProjectTaskFields.Text18
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text19
+    name: Text19
+    fullName: office.Office.ProjectTaskFields.Text19
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text2
+    name: Text2
+    fullName: office.Office.ProjectTaskFields.Text2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text20
+    name: Text20
+    fullName: office.Office.ProjectTaskFields.Text20
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text21
+    name: Text21
+    fullName: office.Office.ProjectTaskFields.Text21
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text22
+    name: Text22
+    fullName: office.Office.ProjectTaskFields.Text22
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text23
+    name: Text23
+    fullName: office.Office.ProjectTaskFields.Text23
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text24
+    name: Text24
+    fullName: office.Office.ProjectTaskFields.Text24
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text25
+    name: Text25
+    fullName: office.Office.ProjectTaskFields.Text25
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text26
+    name: Text26
+    fullName: office.Office.ProjectTaskFields.Text26
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text27
+    name: Text27
+    fullName: office.Office.ProjectTaskFields.Text27
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text28
+    name: Text28
+    fullName: office.Office.ProjectTaskFields.Text28
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text29
+    name: Text29
+    fullName: office.Office.ProjectTaskFields.Text29
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text3
+    name: Text3
+    fullName: office.Office.ProjectTaskFields.Text3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text30
+    name: Text30
+    fullName: office.Office.ProjectTaskFields.Text30
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text4
+    name: Text4
+    fullName: office.Office.ProjectTaskFields.Text4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text5
+    name: Text5
+    fullName: office.Office.ProjectTaskFields.Text5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text6
+    name: Text6
+    fullName: office.Office.ProjectTaskFields.Text6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text7
+    name: Text7
+    fullName: office.Office.ProjectTaskFields.Text7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text8
+    name: Text8
+    fullName: office.Office.ProjectTaskFields.Text8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Text9
+    name: Text9
+    fullName: office.Office.ProjectTaskFields.Text9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.TotalSlack
+    name: TotalSlack
+    fullName: office.Office.ProjectTaskFields.TotalSlack
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Type
+    name: Type
+    fullName: office.Office.ProjectTaskFields.Type
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.WBS
+    name: WBS
+    fullName: office.Office.ProjectTaskFields.WBS
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.WBSPREDECESSORS
+    name: WBSPREDECESSORS
+    fullName: office.Office.ProjectTaskFields.WBSPREDECESSORS
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.WBSSUCCESSORS
+    name: WBSSUCCESSORS
+    fullName: office.Office.ProjectTaskFields.WBSSUCCESSORS
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.Work
+    name: Work
+    fullName: office.Office.ProjectTaskFields.Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectTaskFields.WSSID
+    name: WSSID
+    fullName: office.Office.ProjectTaskFields.WSSID
+    langs:
+      - typeScript
+    type: field

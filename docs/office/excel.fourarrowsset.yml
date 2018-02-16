@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.FourArrowsSet
+    name: Excel.FourArrowsSet
+    fullName: office.Excel.FourArrowsSet
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel.FourArrowsSet.__index
+      - office.Excel.FourArrowsSet.greenUpArrow
+      - office.Excel.FourArrowsSet.redDownArrow
+      - office.Excel.FourArrowsSet.yellowDownInclineArrow
+      - office.Excel.FourArrowsSet.yellowUpInclineArrow
+  - uid: office.Excel.FourArrowsSet.__index
+    name: __index(index)
+    fullName: office.Excel.FourArrowsSet.__index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel.FourArrowsSet.greenUpArrow
+    name: greenUpArrow
+    fullName: office.Excel.FourArrowsSet.greenUpArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenUpArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel.FourArrowsSet.redDownArrow
+    name: redDownArrow
+    fullName: office.Excel.FourArrowsSet.redDownArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redDownArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel.FourArrowsSet.yellowDownInclineArrow
+    name: yellowDownInclineArrow
+    fullName: office.Excel.FourArrowsSet.yellowDownInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowDownInclineArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel.FourArrowsSet.yellowUpInclineArrow
+    name: yellowUpInclineArrow
+    fullName: office.Excel.FourArrowsSet.yellowUpInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowUpInclineArrow: Icon;'
+      return:
+        type:
+          - Icon

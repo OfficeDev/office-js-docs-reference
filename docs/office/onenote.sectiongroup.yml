@@ -1,0 +1,207 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OneNote.SectionGroup
+    summary: |-
+      Represents a OneNote section group. Section groups can contain sections and other section groups.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: OneNote.SectionGroup
+    fullName: office.OneNote.SectionGroup
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.OneNote.SectionGroup.addSection
+      - office.OneNote.SectionGroup.addSectionGroup
+      - office.OneNote.SectionGroup.clientUrl
+      - office.OneNote.SectionGroup.id
+      - office.OneNote.SectionGroup.load
+      - office.OneNote.SectionGroup.name
+      - office.OneNote.SectionGroup.notebook
+      - office.OneNote.SectionGroup.parentSectionGroup
+      - office.OneNote.SectionGroup.parentSectionGroupOrNull
+      - office.OneNote.SectionGroup.sectionGroups
+      - office.OneNote.SectionGroup.sections
+  - uid: office.OneNote.SectionGroup.addSection
+    summary: Adds a new section to the end of the section group.
+    name: addSection(title)
+    fullName: office.OneNote.SectionGroup.addSection
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addSection(title: string): OneNote.Section;'
+      return:
+        type:
+          - OneNote.Section
+        description: ''
+      parameters:
+        - id: title
+          description: ''
+          type:
+            - string
+  - uid: office.OneNote.SectionGroup.addSectionGroup
+    summary: Adds a new section group to the end of this sectionGroup.
+    name: addSectionGroup(name)
+    fullName: office.OneNote.SectionGroup.addSectionGroup
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addSectionGroup(name: string): OneNote.SectionGroup;'
+      return:
+        type:
+          - OneNote.SectionGroup
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: office.OneNote.SectionGroup.clientUrl
+    summary: |-
+      The client url of the section group. Read only
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: clientUrl
+    fullName: office.OneNote.SectionGroup.clientUrl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'clientUrl: string;'
+      return:
+        type:
+          - string
+  - uid: office.OneNote.SectionGroup.id
+    summary: |-
+      Gets the ID of the section group. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: id
+    fullName: office.OneNote.SectionGroup.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: office.OneNote.SectionGroup.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.OneNote.SectionGroup.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.SectionGroup;'
+      return:
+        type:
+          - OneNote.SectionGroup
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.OneNote.SectionGroup.name
+    summary: |-
+      Gets the name of the section group. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: name
+    fullName: office.OneNote.SectionGroup.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: office.OneNote.SectionGroup.notebook
+    summary: |-
+      Gets the notebook that contains the section group. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: notebook
+    fullName: office.OneNote.SectionGroup.notebook
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'notebook: OneNote.Notebook;'
+      return:
+        type:
+          - OneNote.Notebook
+  - uid: office.OneNote.SectionGroup.parentSectionGroup
+    summary: >-
+      Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child
+      of the notebook. Read-only.
+
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: parentSectionGroup
+    fullName: office.OneNote.SectionGroup.parentSectionGroup
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentSectionGroup: OneNote.SectionGroup;'
+      return:
+        type:
+          - OneNote.SectionGroup
+  - uid: office.OneNote.SectionGroup.parentSectionGroupOrNull
+    summary: >-
+      Gets the section group that contains the section group. Returns null if the section group is a direct child of the
+      notebook. Read-only.
+
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: parentSectionGroupOrNull
+    fullName: office.OneNote.SectionGroup.parentSectionGroupOrNull
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentSectionGroupOrNull: OneNote.SectionGroup;'
+      return:
+        type:
+          - OneNote.SectionGroup
+  - uid: office.OneNote.SectionGroup.sectionGroups
+    summary: |-
+      The collection of section groups in the section group. Read only
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: sectionGroups
+    fullName: office.OneNote.SectionGroup.sectionGroups
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sectionGroups: OneNote.SectionGroupCollection;'
+      return:
+        type:
+          - OneNote.SectionGroupCollection
+  - uid: office.OneNote.SectionGroup.sections
+    summary: |-
+      The collection of sections in the section group. Read only
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: sections
+    fullName: office.OneNote.SectionGroup.sections
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sections: OneNote.SectionCollection;'
+      return:
+        type:
+          - OneNote.SectionCollection

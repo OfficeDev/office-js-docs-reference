@@ -1,0 +1,108 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.ConditionalRangeFill
+    summary: |-
+      Represents the background of a conditional range object.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: Excel.ConditionalRangeFill
+    fullName: office.Excel.ConditionalRangeFill
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel.ConditionalRangeFill.clear
+      - office.Excel.ConditionalRangeFill.color
+      - office.Excel.ConditionalRangeFill.load
+      - office.Excel.ConditionalRangeFill.set
+      - office.Excel.ConditionalRangeFill.toJSON
+  - uid: office.Excel.ConditionalRangeFill.clear
+    summary: |-
+      Resets the fill.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: clear()
+    fullName: office.Excel.ConditionalRangeFill.clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Excel.ConditionalRangeFill.color
+    summary: >-
+      HTML color code representing the color of the fill, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color
+      (e.g. "orange").
+
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: color
+    fullName: office.Excel.ConditionalRangeFill.color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel.ConditionalRangeFill.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel.ConditionalRangeFill.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalRangeFill;'
+      return:
+        type:
+          - Excel.ConditionalRangeFill
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel.ConditionalRangeFill.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Excel.ConditionalRangeFill.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ConditionalRangeFillUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ConditionalRangeFillUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Excel.ConditionalRangeFill.toJSON
+    name: toJSON()
+    fullName: office.Excel.ConditionalRangeFill.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"color\": string;\r\n        }"
+        description: ''

@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.BindingType
+    name: Office.BindingType
+    fullName: office.Office.BindingType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.BindingType.Matrix
+      - office.Office.BindingType.Table
+      - office.Office.BindingType.Text
+  - uid: office.Office.BindingType.Matrix
+    summary: Matrix based Binding
+    name: Matrix
+    fullName: office.Office.BindingType.Matrix
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.BindingType.Table
+    summary: Table based Binding
+    name: Table
+    fullName: office.Office.BindingType.Table
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.BindingType.Text
+    summary: Text based Binding
+    name: Text
+    fullName: office.Office.BindingType.Text
+    langs:
+      - typeScript
+    type: field

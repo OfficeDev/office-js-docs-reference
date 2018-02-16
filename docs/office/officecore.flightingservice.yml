@@ -1,0 +1,143 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeCore.FlightingService
+    summary: '\[ [Api set: Experimentation 1.1 (PREVIEW)](http://bing.com) \]'
+    name: OfficeCore.FlightingService
+    fullName: office.OfficeCore.FlightingService
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.OfficeCore.FlightingService.getFeature
+      - office.OfficeCore.FlightingService.getFeatureGate
+      - office.OfficeCore.FlightingService.newObject
+      - office.OfficeCore.FlightingService.resetOverride
+      - office.OfficeCore.FlightingService.setOverride
+      - office.OfficeCore.FlightingService.toJSON
+  - uid: office.OfficeCore.FlightingService.getFeature
+    name: 'getFeature(featureName, type, defaultValue, possibleValues)'
+    fullName: office.OfficeCore.FlightingService.getFeature
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getFeature(featureName: string, type: string, defaultValue: number | boolean | string, possibleValues?:
+        Array<number> | Array<string> | Array<boolean> | Array<ScopedValue>): OfficeCore.ABType;
+      return:
+        type:
+          - OfficeCore.ABType
+        description: ''
+      parameters:
+        - id: featureName
+          description: ''
+          type:
+            - string
+        - id: type
+          description: ''
+          type:
+            - string
+        - id: defaultValue
+          description: ''
+          type:
+            - number | boolean | string
+        - id: possibleValues
+          description: ''
+          type:
+            - Array<number> | Array<string> | Array<boolean> | Array<ScopedValue>
+  - uid: office.OfficeCore.FlightingService.getFeatureGate
+    name: 'getFeatureGate(featureName, scope)'
+    fullName: office.OfficeCore.FlightingService.getFeatureGate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFeatureGate(featureName: string, scope?: string): OfficeCore.ABType;'
+      return:
+        type:
+          - OfficeCore.ABType
+        description: ''
+      parameters:
+        - id: featureName
+          description: ''
+          type:
+            - string
+        - id: scope
+          description: ''
+          type:
+            - string
+  - uid: office.OfficeCore.FlightingService.newObject
+    summary: Create a new instance of OfficeCore.FlightingService object
+    name: newObject(context)
+    fullName: office.OfficeCore.FlightingService.newObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static newObject(context: OfficeExtension.ClientRequestContext): OfficeCore.FlightingService;'
+      return:
+        type:
+          - OfficeCore.FlightingService
+        description: ''
+      parameters:
+        - id: context
+          description: ''
+          type:
+            - OfficeExtension.ClientRequestContext
+  - uid: office.OfficeCore.FlightingService.resetOverride
+    name: resetOverride(featureName)
+    fullName: office.OfficeCore.FlightingService.resetOverride
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'resetOverride(featureName: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: featureName
+          description: ''
+          type:
+            - string
+  - uid: office.OfficeCore.FlightingService.setOverride
+    name: 'setOverride(featureName, type, value)'
+    fullName: office.OfficeCore.FlightingService.setOverride
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setOverride(featureName: string, type: string, value: number | boolean | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: featureName
+          description: ''
+          type:
+            - string
+        - id: type
+          description: ''
+          type:
+            - string
+        - id: value
+          description: ''
+          type:
+            - number | boolean | string
+  - uid: office.OfficeCore.FlightingService.toJSON
+    name: toJSON()
+    fullName: office.OfficeCore.FlightingService.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - '{}'
+        description: ''

@@ -1,0 +1,468 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.Worksheet
+    summary: |-
+      An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.Worksheet
+    fullName: office.Excel.Worksheet
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel.Worksheet.activate
+      - office.Excel.Worksheet.calculate
+      - office.Excel.Worksheet.charts
+      - office.Excel.Worksheet.delete
+      - office.Excel.Worksheet.getCell
+      - office.Excel.Worksheet.getNext
+      - office.Excel.Worksheet.getNextOrNullObject
+      - office.Excel.Worksheet.getPrevious
+      - office.Excel.Worksheet.getPreviousOrNullObject
+      - office.Excel.Worksheet.getRange
+      - office.Excel.Worksheet.getUsedRange
+      - office.Excel.Worksheet.getUsedRangeOrNullObject
+      - office.Excel.Worksheet.id
+      - office.Excel.Worksheet.load
+      - office.Excel.Worksheet.name
+      - office.Excel.Worksheet.names
+      - office.Excel.Worksheet.pivotTables
+      - office.Excel.Worksheet.position
+      - office.Excel.Worksheet.protection
+      - office.Excel.Worksheet.set
+      - office.Excel.Worksheet.tables
+      - office.Excel.Worksheet.toJSON
+      - office.Excel.Worksheet.visibility
+  - uid: office.Excel.Worksheet.activate
+    summary: |-
+      Activate the worksheet in the Excel UI.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: activate()
+    fullName: office.Excel.Worksheet.activate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'activate(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Excel.Worksheet.calculate
+    summary: |-
+      Calculates all cells on a worksheet.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: calculate(markAllDirty)
+    fullName: office.Excel.Worksheet.calculate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'calculate(markAllDirty: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: markAllDirty
+          description: ''
+          type:
+            - boolean
+  - uid: office.Excel.Worksheet.charts
+    summary: |-
+      Returns collection of charts that are part of the worksheet. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: charts
+    fullName: office.Excel.Worksheet.charts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly charts: Excel.ChartCollection;'
+      return:
+        type:
+          - Excel.ChartCollection
+  - uid: office.Excel.Worksheet.delete
+    summary: |-
+      Deletes the worksheet from the workbook.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: delete()
+    fullName: office.Excel.Worksheet.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Excel.Worksheet.getCell
+    summary: >-
+      Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
+      bounds of its parent range, so long as it's stays within the worksheet grid.
+
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: 'getCell(row, column)'
+    fullName: office.Excel.Worksheet.getCell
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCell(row: number, column: number): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
+      parameters:
+        - id: row
+          description: ''
+          type:
+            - number
+        - id: column
+          description: ''
+          type:
+            - number
+  - uid: office.Excel.Worksheet.getNext
+    summary: >-
+      Gets the worksheet that follows this one. If there are no worksheets following this one, this method will throw an
+      error.
+
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: getNext(visibleOnly)
+    fullName: office.Excel.Worksheet.getNext
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNext(visibleOnly?: boolean): Excel.Worksheet;'
+      return:
+        type:
+          - Excel.Worksheet
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: ''
+          type:
+            - boolean
+  - uid: office.Excel.Worksheet.getNextOrNullObject
+    summary: >-
+      Gets the worksheet that follows this one. If there are no worksheets following this one, this method will return a
+      null object.
+
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: getNextOrNullObject(visibleOnly)
+    fullName: office.Excel.Worksheet.getNextOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNextOrNullObject(visibleOnly?: boolean): Excel.Worksheet;'
+      return:
+        type:
+          - Excel.Worksheet
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: ''
+          type:
+            - boolean
+  - uid: office.Excel.Worksheet.getPrevious
+    summary: |-
+      Gets the worksheet that precedes this one. If there are no previous worksheets, this method will throw an error.
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: getPrevious(visibleOnly)
+    fullName: office.Excel.Worksheet.getPrevious
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrevious(visibleOnly?: boolean): Excel.Worksheet;'
+      return:
+        type:
+          - Excel.Worksheet
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: ''
+          type:
+            - boolean
+  - uid: office.Excel.Worksheet.getPreviousOrNullObject
+    summary: >-
+      Gets the worksheet that precedes this one. If there are no previous worksheets, this method will return a null
+      objet.
+
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: getPreviousOrNullObject(visibleOnly)
+    fullName: office.Excel.Worksheet.getPreviousOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPreviousOrNullObject(visibleOnly?: boolean): Excel.Worksheet;'
+      return:
+        type:
+          - Excel.Worksheet
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: ''
+          type:
+            - boolean
+  - uid: office.Excel.Worksheet.getRange
+    summary: |-
+      Gets the range object specified by the address or name.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: getRange(address)
+    fullName: office.Excel.Worksheet.getRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(address?: string): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
+      parameters:
+        - id: address
+          description: ''
+          type:
+            - string
+  - uid: office.Excel.Worksheet.getUsedRange
+    summary: >-
+      The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
+      If the entire worksheet is blank, this function will return the top left cell (i.e.,: it will \*not\* throw an
+      error).
+
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: getUsedRange(valuesOnly)
+    fullName: office.Excel.Worksheet.getUsedRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsedRange(valuesOnly?: boolean): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
+      parameters:
+        - id: valuesOnly
+          description: ''
+          type:
+            - boolean
+  - uid: office.Excel.Worksheet.getUsedRangeOrNullObject
+    summary: >-
+      The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
+      If the entire worksheet is blank, this function will return a null object.
+
+
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+    name: getUsedRangeOrNullObject(valuesOnly)
+    fullName: office.Excel.Worksheet.getUsedRangeOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
+      parameters:
+        - id: valuesOnly
+          description: ''
+          type:
+            - boolean
+  - uid: office.Excel.Worksheet.id
+    summary: >-
+      Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
+      the same even when the worksheet is renamed or moved. Read-only.
+
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: id
+    fullName: office.Excel.Worksheet.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel.Worksheet.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel.Worksheet.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Worksheet;'
+      return:
+        type:
+          - Excel.Worksheet
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel.Worksheet.name
+    summary: |-
+      The display name of the worksheet.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: name
+    fullName: office.Excel.Worksheet.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel.Worksheet.names
+    summary: |-
+      Collection of names scoped to the current worksheet. Read-only.
+
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+    name: names
+    fullName: office.Excel.Worksheet.names
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly names: Excel.NamedItemCollection;'
+      return:
+        type:
+          - Excel.NamedItemCollection
+  - uid: office.Excel.Worksheet.pivotTables
+    summary: |-
+      Collection of PivotTables that are part of the worksheet. Read-only.
+
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+    name: pivotTables
+    fullName: office.Excel.Worksheet.pivotTables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly pivotTables: Excel.PivotTableCollection;'
+      return:
+        type:
+          - Excel.PivotTableCollection
+  - uid: office.Excel.Worksheet.position
+    summary: |-
+      The zero-based position of the worksheet within the workbook.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: position
+    fullName: office.Excel.Worksheet.position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position: number;'
+      return:
+        type:
+          - number
+  - uid: office.Excel.Worksheet.protection
+    summary: |-
+      Returns sheet protection object for a worksheet.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: protection
+    fullName: office.Excel.Worksheet.protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly protection: Excel.WorksheetProtection;'
+      return:
+        type:
+          - Excel.WorksheetProtection
+  - uid: office.Excel.Worksheet.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Excel.Worksheet.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.WorksheetUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.WorksheetUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Excel.Worksheet.tables
+    summary: |-
+      Collection of tables that are part of the worksheet. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: tables
+    fullName: office.Excel.Worksheet.tables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly tables: Excel.TableCollection;'
+      return:
+        type:
+          - Excel.TableCollection
+  - uid: office.Excel.Worksheet.toJSON
+    name: toJSON()
+    fullName: office.Excel.Worksheet.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"id\": string;\r\n            \"name\": string;\r\n            \"position\": number;\r\n            \"protection\": WorksheetProtection;\r\n            \"visibility\": string;\r\n        }"
+        description: ''
+  - uid: office.Excel.Worksheet.visibility
+    summary: |-
+      The Visibility of the worksheet.
+
+      \[ [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.](http://bing.com) \]
+    name: visibility
+    fullName: office.Excel.Worksheet.visibility
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visibility: string;'
+      return:
+        type:
+          - string

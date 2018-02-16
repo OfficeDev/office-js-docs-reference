@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.PlatformType
+    name: Office.PlatformType
+    fullName: office.Office.PlatformType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.PlatformType.Android
+      - office.Office.PlatformType.iOS
+      - office.Office.PlatformType.Mac
+      - office.Office.PlatformType.OfficeOnline
+      - office.Office.PlatformType.PC
+      - office.Office.PlatformType.Universal
+  - uid: office.Office.PlatformType.Android
+    summary: Platform is Android
+    name: Android
+    fullName: office.Office.PlatformType.Android
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.PlatformType.iOS
+    summary: Platform is iOS
+    name: iOS
+    fullName: office.Office.PlatformType.iOS
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.PlatformType.Mac
+    summary: Platform is Mac
+    name: Mac
+    fullName: office.Office.PlatformType.Mac
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.PlatformType.OfficeOnline
+    summary: Platform is Web
+    name: OfficeOnline
+    fullName: office.Office.PlatformType.OfficeOnline
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.PlatformType.PC
+    summary: Platform is PC
+    name: PC
+    fullName: office.Office.PlatformType.PC
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.PlatformType.Universal
+    summary: Platform is Winrt
+    name: Universal
+    fullName: office.Office.PlatformType.Universal
+    langs:
+      - typeScript
+    type: field

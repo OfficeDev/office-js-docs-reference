@@ -1,0 +1,223 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.CustomXmlNode
+    name: Office.CustomXmlNode
+    fullName: office.Office.CustomXmlNode
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.CustomXmlNode.baseName
+      - office.Office.CustomXmlNode.getNodesAsync
+      - office.Office.CustomXmlNode.getNodeValueAsync
+      - office.Office.CustomXmlNode.getTextAsync
+      - office.Office.CustomXmlNode.getXmlAsync
+      - office.Office.CustomXmlNode.namespaceUri
+      - office.Office.CustomXmlNode.nodeType
+      - office.Office.CustomXmlNode.setNodeValueAsync
+      - office.Office.CustomXmlNode.setTextAsync
+      - office.Office.CustomXmlNode.setXmlAsync
+  - uid: office.Office.CustomXmlNode.baseName
+    name: baseName
+    fullName: office.Office.CustomXmlNode.baseName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'baseName: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.CustomXmlNode.getNodesAsync
+    summary: Gets the nodes associated with the xPath expression.
+    name: 'getNodesAsync(xPath, options, callback)'
+    fullName: office.Office.CustomXmlNode.getNodesAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNodesAsync(xPath: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: xPath
+          description: ''
+          type:
+            - string
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.CustomXmlNode.getNodeValueAsync
+    summary: Gets the node value.
+    name: 'getNodeValueAsync(options, callback)'
+    fullName: office.Office.CustomXmlNode.getNodeValueAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNodeValueAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.CustomXmlNode.getTextAsync
+    summary: Asynchronously gets the text of an XML node in a custom XML part.
+    name: 'getTextAsync(options, callback)'
+    fullName: office.Office.CustomXmlNode.getTextAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTextAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.CustomXmlNode.getXmlAsync
+    summary: Gets the node's XML.
+    name: 'getXmlAsync(options, callback)'
+    fullName: office.Office.CustomXmlNode.getXmlAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getXmlAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.CustomXmlNode.namespaceUri
+    name: namespaceUri
+    fullName: office.Office.CustomXmlNode.namespaceUri
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'namespaceUri: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.CustomXmlNode.nodeType
+    name: nodeType
+    fullName: office.Office.CustomXmlNode.nodeType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'nodeType: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.CustomXmlNode.setNodeValueAsync
+    summary: Sets the node value.
+    name: 'setNodeValueAsync(value, options, callback)'
+    fullName: office.Office.CustomXmlNode.setNodeValueAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setNodeValueAsync(value: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: value
+          description: ''
+          type:
+            - string
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.CustomXmlNode.setTextAsync
+    summary: Asynchronously sets the text of an XML node in a custom XML part.
+    name: 'setTextAsync(text, options, callback)'
+    fullName: office.Office.CustomXmlNode.setTextAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTextAsync(text: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: text
+          description: ''
+          type:
+            - string
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.CustomXmlNode.setXmlAsync
+    summary: Sets the node XML.
+    name: 'setXmlAsync(xml, options, callback)'
+    fullName: office.Office.CustomXmlNode.setXmlAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setXmlAsync(xml: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: xml
+          description: ''
+          type:
+            - string
+        - id: options
+          description: ''
+          type:
+            - any
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'

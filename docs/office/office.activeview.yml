@@ -1,0 +1,24 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.ActiveView
+    name: Office.ActiveView
+    fullName: office.Office.ActiveView
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.ActiveView.Edit
+      - office.Office.ActiveView.Read
+  - uid: office.Office.ActiveView.Edit
+    name: Edit
+    fullName: office.Office.ActiveView.Edit
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ActiveView.Read
+    name: Read
+    fullName: office.Office.ActiveView.Read
+    langs:
+      - typeScript
+    type: field

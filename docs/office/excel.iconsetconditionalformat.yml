@@ -1,0 +1,140 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.IconSetConditionalFormat
+    summary: |-
+      Represents an IconSet criteria for conditional formatting.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: Excel.IconSetConditionalFormat
+    fullName: office.Excel.IconSetConditionalFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel.IconSetConditionalFormat.criteria
+      - office.Excel.IconSetConditionalFormat.load
+      - office.Excel.IconSetConditionalFormat.reverseIconOrder
+      - office.Excel.IconSetConditionalFormat.set
+      - office.Excel.IconSetConditionalFormat.showIconOnly
+      - office.Excel.IconSetConditionalFormat.style
+      - office.Excel.IconSetConditionalFormat.toJSON
+  - uid: office.Excel.IconSetConditionalFormat.criteria
+    summary: >-
+      An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for
+      the first criterion only the custom icon can be modified, while type, formula and operator will be ignored when
+      set.
+
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: criteria
+    fullName: office.Excel.IconSetConditionalFormat.criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria: Array<Excel.ConditionalIconCriterion>;'
+      return:
+        type:
+          - Array<Excel.ConditionalIconCriterion>
+  - uid: office.Excel.IconSetConditionalFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel.IconSetConditionalFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.IconSetConditionalFormat;'
+      return:
+        type:
+          - Excel.IconSetConditionalFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel.IconSetConditionalFormat.reverseIconOrder
+    summary: |-
+      If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: reverseIconOrder
+    fullName: office.Excel.IconSetConditionalFormat.reverseIconOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'reverseIconOrder: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel.IconSetConditionalFormat.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Excel.IconSetConditionalFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.IconSetConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.IconSetConditionalFormatUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Excel.IconSetConditionalFormat.showIconOnly
+    summary: |-
+      If true, hides the values and only shows icons.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: showIconOnly
+    fullName: office.Excel.IconSetConditionalFormat.showIconOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showIconOnly: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel.IconSetConditionalFormat.style
+    summary: |-
+      If set, displays the IconSet option for the conditional format.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: style
+    fullName: office.Excel.IconSetConditionalFormat.style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel.IconSetConditionalFormat.toJSON
+    name: toJSON()
+    fullName: office.Excel.IconSetConditionalFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"criteria\": ConditionalIconCriterion[];\r\n            \"reverseIconOrder\": boolean;\r\n            \"showIconOnly\": boolean;\r\n            \"style\": string;\r\n        }"
+        description: ''

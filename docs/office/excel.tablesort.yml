@@ -1,0 +1,164 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.TableSort
+    summary: |-
+      Manages sorting operations on Table objects.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: Excel.TableSort
+    fullName: office.Excel.TableSort
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel.TableSort.apply
+      - office.Excel.TableSort.clear
+      - office.Excel.TableSort.fields
+      - office.Excel.TableSort.load
+      - office.Excel.TableSort.matchCase
+      - office.Excel.TableSort.method
+      - office.Excel.TableSort.reapply
+      - office.Excel.TableSort.toJSON
+  - uid: office.Excel.TableSort.apply
+    summary: |-
+      Perform a sort operation.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: 'apply(fields, matchCase, method)'
+    fullName: office.Excel.TableSort.apply
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'apply(fields: Array<Excel.SortField>, matchCase?: boolean, method?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: fields
+          description: ''
+          type:
+            - Array<Excel.SortField>
+        - id: matchCase
+          description: ''
+          type:
+            - boolean
+        - id: method
+          description: ''
+          type:
+            - string
+  - uid: office.Excel.TableSort.clear
+    summary: >-
+      Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the
+      state of the header buttons.
+
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: clear()
+    fullName: office.Excel.TableSort.clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Excel.TableSort.fields
+    summary: |-
+      Represents the current conditions used to last sort the table.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: fields
+    fullName: office.Excel.TableSort.fields
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fields: Array<Excel.SortField>;'
+      return:
+        type:
+          - Array<Excel.SortField>
+  - uid: office.Excel.TableSort.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel.TableSort.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TableSort;'
+      return:
+        type:
+          - Excel.TableSort
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel.TableSort.matchCase
+    summary: |-
+      Represents whether the casing impacted the last sort of the table.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: matchCase
+    fullName: office.Excel.TableSort.matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly matchCase: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel.TableSort.method
+    summary: |-
+      Represents Chinese character ordering method last used to sort the table.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: method
+    fullName: office.Excel.TableSort.method
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly method: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel.TableSort.reapply
+    summary: |-
+      Reapplies the current sorting parameters to the table.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: reapply()
+    fullName: office.Excel.TableSort.reapply
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'reapply(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Excel.TableSort.toJSON
+    name: toJSON()
+    fullName: office.Excel.TableSort.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"fields\": SortField[];\r\n            \"matchCase\": boolean;\r\n            \"method\": string;\r\n        }"
+        description: ''

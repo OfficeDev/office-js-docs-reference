@@ -1,0 +1,190 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.WorksheetProtectionOptions
+    summary: |-
+      Represents the options in sheet protection.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: Excel.WorksheetProtectionOptions
+    fullName: office.Excel.WorksheetProtectionOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel.WorksheetProtectionOptions.allowAutoFilter
+      - office.Excel.WorksheetProtectionOptions.allowDeleteColumns
+      - office.Excel.WorksheetProtectionOptions.allowDeleteRows
+      - office.Excel.WorksheetProtectionOptions.allowFormatCells
+      - office.Excel.WorksheetProtectionOptions.allowFormatColumns
+      - office.Excel.WorksheetProtectionOptions.allowFormatRows
+      - office.Excel.WorksheetProtectionOptions.allowInsertColumns
+      - office.Excel.WorksheetProtectionOptions.allowInsertHyperlinks
+      - office.Excel.WorksheetProtectionOptions.allowInsertRows
+      - office.Excel.WorksheetProtectionOptions.allowPivotTables
+      - office.Excel.WorksheetProtectionOptions.allowSort
+  - uid: office.Excel.WorksheetProtectionOptions.allowAutoFilter
+    summary: |-
+      Represents the worksheet protection option of allowing using auto filter feature.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: allowAutoFilter
+    fullName: office.Excel.WorksheetProtectionOptions.allowAutoFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowAutoFilter?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel.WorksheetProtectionOptions.allowDeleteColumns
+    summary: |-
+      Represents the worksheet protection option of allowing deleting columns.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: allowDeleteColumns
+    fullName: office.Excel.WorksheetProtectionOptions.allowDeleteColumns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowDeleteColumns?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel.WorksheetProtectionOptions.allowDeleteRows
+    summary: |-
+      Represents the worksheet protection option of allowing deleting rows.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: allowDeleteRows
+    fullName: office.Excel.WorksheetProtectionOptions.allowDeleteRows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowDeleteRows?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel.WorksheetProtectionOptions.allowFormatCells
+    summary: |-
+      Represents the worksheet protection option of allowing formatting cells.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: allowFormatCells
+    fullName: office.Excel.WorksheetProtectionOptions.allowFormatCells
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowFormatCells?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel.WorksheetProtectionOptions.allowFormatColumns
+    summary: |-
+      Represents the worksheet protection option of allowing formatting columns.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: allowFormatColumns
+    fullName: office.Excel.WorksheetProtectionOptions.allowFormatColumns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowFormatColumns?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel.WorksheetProtectionOptions.allowFormatRows
+    summary: |-
+      Represents the worksheet protection option of allowing formatting rows.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: allowFormatRows
+    fullName: office.Excel.WorksheetProtectionOptions.allowFormatRows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowFormatRows?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel.WorksheetProtectionOptions.allowInsertColumns
+    summary: |-
+      Represents the worksheet protection option of allowing inserting columns.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: allowInsertColumns
+    fullName: office.Excel.WorksheetProtectionOptions.allowInsertColumns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowInsertColumns?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel.WorksheetProtectionOptions.allowInsertHyperlinks
+    summary: |-
+      Represents the worksheet protection option of allowing inserting hyperlinks.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: allowInsertHyperlinks
+    fullName: office.Excel.WorksheetProtectionOptions.allowInsertHyperlinks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowInsertHyperlinks?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel.WorksheetProtectionOptions.allowInsertRows
+    summary: |-
+      Represents the worksheet protection option of allowing inserting rows.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: allowInsertRows
+    fullName: office.Excel.WorksheetProtectionOptions.allowInsertRows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowInsertRows?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel.WorksheetProtectionOptions.allowPivotTables
+    summary: |-
+      Represents the worksheet protection option of allowing using PivotTable feature.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: allowPivotTables
+    fullName: office.Excel.WorksheetProtectionOptions.allowPivotTables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowPivotTables?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Excel.WorksheetProtectionOptions.allowSort
+    summary: |-
+      Represents the worksheet protection option of allowing using sort feature.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: allowSort
+    fullName: office.Excel.WorksheetProtectionOptions.allowSort
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowSort?: boolean;'
+      return:
+        type:
+          - boolean
