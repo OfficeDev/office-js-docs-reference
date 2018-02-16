@@ -8,7 +8,7 @@
     "namespaceSupport": "permissive"
   },
   "project": {
-    "entryPointSourceFile": "excel.d.ts"
+    "entryPointSourceFile": "office.d.ts"
   },
   "apiReviewFile": {
     "enabled": false
