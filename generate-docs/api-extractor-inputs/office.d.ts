@@ -1,6 +1,6 @@
 // Type definitions for Office.js
 // Project: http://dev.office.com
-// Definitions by: OfficeDev <https://github.com/OfficeDev>, Lance Austin <https://github.com/LanceEA>
+// Definitions by: OfficeDev <https://github.com/OfficeDev>, Lance Austin <https://github.com/LanceEA>, Michael Zlatkovsky <https://github.com/Zlatkovsky>, Kim Brandl <https://github.com/kbrandl>, Ricky Kirkham <https://github.com/Rick-Kirkham>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 /*
@@ -134,17 +134,14 @@ declare namespace Office {
     export interface Error {
         /**
          * Gets the numeric code of the error.
-         * @since 1.0
          */
         code: number;
         /**
          * Gets the name of the error.
-         * @since 1.0
          */
         message: string;
         /**
          * Gets a detailed description of the error.
-         * @since 1.0
          */
         name: string;
     }
@@ -244,7 +241,7 @@ declare namespace Office {
         bodyBackgroundColor: string;
         bodyForegroundColor: string;
         controlBackgroundColor: string;
-        controlForgroundColor: string;
+        controlForegroundColor: string;
     }
     /**
      * Dialog object returned as part of the displayDialogAsync callback. The object exposes methods for registering event handlers and closing the dialog
@@ -2566,108 +2563,123 @@ declare namespace Office {
 ////////////////////////////////////////////////////////////////
 
 declare namespace OfficeExtension {
-	/** An abstract proxy object that represents an object in an Office document. You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the proxy object state with the document by calling "context.sync()". */
-	class ClientObject {
-		/** The request context associated with the object */
-		context: ClientRequestContext;
-		/** Returns a boolean value for whether the corresponding object is a null object. You must call "context.sync()" before reading the isNullObject property. */
-		isNullObject: boolean;
-	}
+    /** An abstract proxy object that represents an object in an Office document. You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the proxy object state with the document by calling "context.sync()". */
+    class ClientObject {
+        /** The request context associated with the object */
+        context: ClientRequestContext;
+        /** Returns a boolean value for whether the corresponding object is a null object. You must call "context.sync()" before reading the isNullObject property. */
+        isNullObject: boolean;
+    }
 }
 declare namespace OfficeExtension {
-	interface LoadOption {
-		select?: string | string[];
-		expand?: string | string[];
-		top?: number;
-		skip?: number;
-	}
-	/** An abstract RequestContext object that facilitates requests to the host Office application. The "Excel.run" and "Word.run" methods provide a request context. */
-	class ClientRequestContext {
-		constructor(url?: string);
+    interface LoadOption {
+        select?: string | string[];
+        expand?: string | string[];
+        top?: number;
+        skip?: number;
+    }
+    /** An abstract RequestContext object that facilitates requests to the host Office application. The "Excel.run" and "Word.run" methods provide a request context. */
+    class ClientRequestContext {
+        constructor(url?: string);
 
-		/** Collection of objects that are tracked for automatic adjustments based on surrounding changes in the document. */
-		trackedObjects: TrackedObjects;
+        /** Collection of objects that are tracked for automatic adjustments based on surrounding changes in the document. */
+        trackedObjects: TrackedObjects;
 
-		/** Request headers */
-		requestHeaders: { [name: string]: string };
+        /** Request headers */
+        requestHeaders: { [name: string]: string };
 
-		/** Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties. */
-		load(object: ClientObject, option?: string | string[]| LoadOption): void;
+        /** Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties. */
+        load(object: ClientObject, option?: string | string[] | LoadOption): void;
 
 		/**
 		* Queues up a command to recursively load the specified properties of the object and its navigation properties.
 		* You must call "context.sync()" before reading the properties.
-		* 
+		*
 		* @param object The object to be loaded.
 		* @param options The key-value pairing of load options for the types, such as { "Workbook": "worksheets,tables",  "Worksheet": "tables",  "Tables": "name" }
 		* @param maxDepth The maximum recursive depth.
 		*/
-		loadRecursive(object: ClientObject, options: { [typeName: string]: string | string[] | LoadOption }, maxDepth?: number): void;
+        loadRecursive(object: ClientObject, options: { [typeName: string]: string | string[] | LoadOption }, maxDepth?: number): void;
 
-		/** Adds a trace message to the queue. If the promise returned by "context.sync()" is rejected due to an error, this adds a ".traceMessages" array to the OfficeExtension.Error object, containing all trace messages that were executed. These messages can help you monitor the program execution sequence and detect the cause of the error. */
-		trace(message: string): void;
+        /** Adds a trace message to the queue. If the promise returned by "context.sync()" is rejected due to an error, this adds a ".traceMessages" array to the OfficeExtension.Error object, containing all trace messages that were executed. These messages can help you monitor the program execution sequence and detect the cause of the error. */
+        trace(message: string): void;
 
-		/** Synchronizes the state between JavaScript proxy objects and the Office document, by executing instructions queued on the request context and retrieving properties of loaded Office objects for use in your code.�This method returns a promise, which is resolved when the synchronization is complete. */
-		sync<T>(passThroughValue?: T): IPromise<T>;
-	}
+        /** Synchronizes the state between JavaScript proxy objects and the Office document, by executing instructions queued on the request context and retrieving properties of loaded Office objects for use in your code.�This method returns a promise, which is resolved when the synchronization is complete. */
+        sync<T>(passThroughValue?: T): IPromise<T>;
+    }
+
+    export interface EmbeddedOptions {
+		sessionKey?: string,
+		container?: HTMLElement,
+		id?: string;
+		timeoutInMilliseconds?: number;
+		height?: string;
+		width?: string;
+    }
+
+    class EmbeddedSession {
+        constructor(url: string, options?: EmbeddedOptions);
+        public init(): IPromise<any>;
+    }
+}
+
+declare namespace OfficeExtension {
+    /** Contains the result for methods that return primitive types. The object's value property is retrieved from the document after "context.sync()" is invoked. */
+    class ClientResult<T> {
+        /** The value of the result that is retrieved from the document after "context.sync()" is invoked. */
+        value: T;
+    }
 }
 declare namespace OfficeExtension {
-	/** Contains the result for methods that return primitive types. The object's value property is retrieved from the document after "context.sync()" is invoked. */
-	class ClientResult<T> {
-		/** The value of the result that is retrieved from the document after "context.sync()" is invoked. */
-		value: T;
-	}
+    export interface DebugInfo {
+        /** Error code string, such as "InvalidArgument". */
+        code: string;
+        /** The error message passed through from the host Office application. */
+        message: string;
+        /** Inner error, if applicable. */
+        innerError?: DebugInfo | string;
+
+        /** The object type and property or method name (or similar information), if available. */
+        errorLocation?: string
+    }
+
+    /** The error object returned by "context.sync()", if a promise is rejected due to an error while processing the request. */
+    class Error {
+        /** Error name: "OfficeExtension.Error".*/
+        name: string;
+        /** The error message passed through from the host Office application. */
+        message: string;
+        /** Stack trace, if applicable. */
+        stack: string;
+        /** Error code string, such as "InvalidArgument". */
+        code: string;
+        /** Trace messages (if any) that were added via a "context.trace()" invocation before calling "context.sync()". If there was an error, this contains all trace messages that were executed before the error occurred. These messages can help you monitor the program execution sequence and detect the case of the error. */
+        traceMessages: Array<string>;
+        /** Debug info (useful for detailed logging of the error, i.e., via JSON.stringify(...)). */
+        debugInfo: DebugInfo;
+        /** Inner error, if applicable. */
+        innerError: Error;
+    }
 }
 declare namespace OfficeExtension {
-	export interface DebugInfo {
-		/** Error code string, such as "InvalidArgument". */
-		code: string;
-		/** The error message passed through from the host Office application. */
-		message: string;
-		/** Inner error, if applicable. */
-		innerError?: DebugInfo | string;
-
-		/** The object type and property or method name (or similar information), if available. */
-		errorLocation?: string
-	}
-
-	/** The error object returned by "context.sync()", if a promise is rejected due to an error while processing the request. */
-	class Error {
-		/** Error name: "OfficeExtension.Error".*/
-		name: string;
-		/** The error message passed through from the host Office application. */
-		message: string;
-		/** Stack trace, if applicable. */
-		stack: string;
-		/** Error code string, such as "InvalidArgument". */
-		code: string;
-		/** Trace messages (if any) that were added via a "context.trace()" invocation before calling "context.sync()". If there was an error, this contains all trace messages that were executed before the error occurred. These messages can help you monitor the program execution sequence and detect the case of the error. */
-		traceMessages: Array<string>;
-		/** Debug info (useful for detailed logging of the error, i.e., via JSON.stringify(...)). */
-		debugInfo: DebugInfo;
-		/** Inner error, if applicable. */
-		innerError: Error;
-	}
+    class ErrorCodes {
+        public static accessDenied: string;
+        public static generalException: string;
+        public static activityLimitReached: string;
+        public static invalidObjectPath: string;
+        public static propertyNotLoaded: string;
+        public static valueNotLoaded: string;
+        public static invalidRequestContext: string;
+        public static invalidArgument: string;
+        public static runMustReturnPromise: string;
+        public static cannotRegisterEvent: string;
+        public static apiNotFound: string;
+        public static connectionFailure: string;
+    }
 }
 declare namespace OfficeExtension {
-	class ErrorCodes {
-		public static accessDenied: string;
-		public static generalException: string;
-		public static activityLimitReached: string;
-		public static invalidObjectPath: string;
-		public static propertyNotLoaded: string;
-		public static valueNotLoaded: string;
-		public static invalidRequestContext: string;
-		public static invalidArgument: string;
-		public static runMustReturnPromise: string;
-		public static cannotRegisterEvent: string;
-		public static apiNotFound: string;
-		public static connectionFailure: string;
-	}
-}
-declare namespace OfficeExtension {
-	/** An IPromise object that represents a deferred interaction with the host Office application. */
-	interface IPromise<R> {
+    /** An IPromise object that represents a deferred interaction with the host Office application. */
+    interface IPromise<R> {
 		/**
 		 * This method will be called once the previous promise has been resolved.
 		 * Both the onFulfilled on onRejected callbacks are optional.
@@ -2675,7 +2687,7 @@ declare namespace OfficeExtension {
 
 		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
 		 */
-		then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;
+        then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;
 
 		/**
 		 * This method will be called once the previous promise has been resolved.
@@ -2684,7 +2696,7 @@ declare namespace OfficeExtension {
 
 		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
 		 */
-		then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => U): IPromise<U>;
+        then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => U): IPromise<U>;
 
 		/**
 		 * This method will be called once the previous promise has been resolved.
@@ -2693,7 +2705,7 @@ declare namespace OfficeExtension {
 
 		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
 		 */
-		then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => void): IPromise<U>;
+        then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => void): IPromise<U>;
 
 		/**
 		 * This method will be called once the previous promise has been resolved.
@@ -2702,7 +2714,7 @@ declare namespace OfficeExtension {
 
 		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
 		 */
-		then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => IPromise<U>): IPromise<U>;
+        then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => IPromise<U>): IPromise<U>;
 
 		/**
 		 * This method will be called once the previous promise has been resolved.
@@ -2711,7 +2723,7 @@ declare namespace OfficeExtension {
 
 		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
 		 */
-		then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => U): IPromise<U>;
+        then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => U): IPromise<U>;
 
 		/**
 		 * This method will be called once the previous promise has been resolved.
@@ -2720,50 +2732,50 @@ declare namespace OfficeExtension {
 
 		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
 		 */
-		then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => void): IPromise<U>;
+        then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => void): IPromise<U>;
 
 
 		/**
 		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
 		 * @param onRejected function to be called if or when the promise rejects.
 		 */
-		catch<U>(onRejected?: (error: any) => IPromise<U>): IPromise<U>;
+        catch<U>(onRejected?: (error: any) => IPromise<U>): IPromise<U>;
 
 		/**
 		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
 		 * @param onRejected function to be called if or when the promise rejects.
 		 */
-		catch<U>(onRejected?: (error: any) => U): IPromise<U>;
+        catch<U>(onRejected?: (error: any) => U): IPromise<U>;
 
 		/**
 		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
 		 * @param onRejected function to be called if or when the promise rejects.
 		 */
-		catch<U>(onRejected?: (error: any) => void): IPromise<U>;
-	}
+        catch<U>(onRejected?: (error: any) => void): IPromise<U>;
+    }
 
-	/** An Promise object that represents a deferred interaction with the host Office application. The publically-consumable OfficeExtension.Promise is available starting in ExcelApi 1.2 and WordApi 1.2. Promises can be chained via ".then", and errors can be caught via ".catch". Remember to always use a ".catch" on the outer promise, and to return intermediary promises so as not to break the promise chain. When a "native" Promise implementation is available, OfficeExtension.Promise will switch to use the native Promise instead. */
-	export class Promise<R> implements IPromise<R>
-	{
+    /** An Promise object that represents a deferred interaction with the host Office application. The publically-consumable OfficeExtension.Promise is available starting in ExcelApi 1.2 and WordApi 1.2. Promises can be chained via ".then", and errors can be caught via ".catch". Remember to always use a ".catch" on the outer promise, and to return intermediary promises so as not to break the promise chain. When a "native" Promise implementation is available, OfficeExtension.Promise will switch to use the native Promise instead. */
+    export class Promise<R> implements IPromise<R>
+    {
 		/**
 		 * Creates a new promise based on a function that accepts resolve and reject handlers.
 		 */
-		constructor(func: (resolve: (value?: R | IPromise<R>) => void, reject: (error?: any) => void) => void);
+        constructor(func: (resolve: (value?: R | IPromise<R>) => void, reject: (error?: any) => void) => void);
 
 		/**
 		 * Creates a promise that resolves when all of the child promises resolve.
 		 */
-		static all<U>(promises: OfficeExtension.IPromise<U>[]): IPromise<U[]>;
+        static all<U>(promises: OfficeExtension.IPromise<U>[]): IPromise<U[]>;
 
 		/**
 		 * Creates a promise that is resolved.
 		 */
-		static resolve<U>(value: U): IPromise<U>;
+        static resolve<U>(value: U): IPromise<U>;
 
 		/**
 		 * Creates a promise that is rejected.
 		 */
-		static reject<U>(error: any): IPromise<U>;
+        static reject<U>(error: any): IPromise<U>;
 
 		/* This method will be called once the previous promise has been resolved.
 		 * Both the onFulfilled on onRejected callbacks are optional.
@@ -2771,7 +2783,7 @@ declare namespace OfficeExtension {
 
 		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
 		 */
-		then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;
+        then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;
 
 		/**
 		 * This method will be called once the previous promise has been resolved.
@@ -2780,7 +2792,7 @@ declare namespace OfficeExtension {
 
 		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
 		 */
-		then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => U): IPromise<U>;
+        then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => U): IPromise<U>;
 
 		/**
 		 * This method will be called once the previous promise has been resolved.
@@ -2789,7 +2801,7 @@ declare namespace OfficeExtension {
 
 		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
 		 */
-		then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => void): IPromise<U>;
+        then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => void): IPromise<U>;
 
 		/**
 		 * This method will be called once the previous promise has been resolved.
@@ -2798,7 +2810,7 @@ declare namespace OfficeExtension {
 
 		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
 		 */
-		then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => IPromise<U>): IPromise<U>;
+        then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => IPromise<U>): IPromise<U>;
 
 		/**
 		 * This method will be called once the previous promise has been resolved.
@@ -2807,7 +2819,7 @@ declare namespace OfficeExtension {
 
 		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
 		 */
-		then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => U): IPromise<U>;
+        then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => U): IPromise<U>;
 
 		/**
 		 * This method will be called once the previous promise has been resolved.
@@ -2816,91 +2828,135 @@ declare namespace OfficeExtension {
 
 		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
 		 */
-		then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => void): IPromise<U>;
+        then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => void): IPromise<U>;
 
 
 		/**
 		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
 		 * @param onRejected function to be called if or when the promise rejects.
 		 */
-		catch<U>(onRejected?: (error: any) => IPromise<U>): IPromise<U>;
+        catch<U>(onRejected?: (error: any) => IPromise<U>): IPromise<U>;
 
 		/**
 		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
 		 * @param onRejected function to be called if or when the promise rejects.
 		 */
-		catch<U>(onRejected?: (error: any) => U): IPromise<U>;
+        catch<U>(onRejected?: (error: any) => U): IPromise<U>;
 
 		/**
 		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
 		 * @param onRejected function to be called if or when the promise rejects.
 		 */
-		catch<U>(onRejected?: (error: any) => void): IPromise<U>;
-	}
+        catch<U>(onRejected?: (error: any) => void): IPromise<U>;
+    }
 }
 
 declare namespace OfficeExtension {
-	/** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
-	class TrackedObjects {
-		/** Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. */
-		add(object: ClientObject): void;
-		/** Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. */
-		add(objects: ClientObject[]): void;
-		/** Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect. */
-		remove(object: ClientObject): void;
-		/** Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect. */
-		remove(objects: ClientObject[]): void;
-	}
+    /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
+    class TrackedObjects {
+        /** Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. */
+        add(object: ClientObject): void;
+        /** Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. */
+        add(objects: ClientObject[]): void;
+        /** Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect. */
+        remove(object: ClientObject): void;
+        /** Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect. */
+        remove(objects: ClientObject[]): void;
+    }
 }
 
 declare namespace OfficeExtension {
-	export class EventHandlers<T> {
-		constructor(context: ClientRequestContext, parentObject: ClientObject, name: string, eventInfo: EventInfo<T>);
-		add(handler: (args: T) => IPromise<any>): EventHandlerResult<T>;
-		remove(handler: (args: T) => IPromise<any>): void;
-	}
+    export class EventHandlers<T> {
+        constructor(context: ClientRequestContext, parentObject: ClientObject, name: string, eventInfo: EventInfo<T>);
+        add(handler: (args: T) => IPromise<any>): EventHandlerResult<T>;
+        remove(handler: (args: T) => IPromise<any>): void;
+    }
 
-	export class EventHandlerResult<T> {
-		constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => IPromise<any>);
-		/** The request context associated with the object */
-		context: ClientRequestContext;
-		remove(): void;
-	}
+    export class EventHandlerResult<T> {
+        constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => IPromise<any>);
+        remove(): void;
+    }
 
-	export interface EventInfo<T> {
-		registerFunc: (callback: (args: any) => void) => IPromise<any>;
-		unregisterFunc: (callback: (args: any) => void) => IPromise<any>;
-		eventArgsTransformFunc: (args: any) => IPromise<T>;
-	}
+    export interface EventInfo<T> {
+        registerFunc: (callback: (args: any) => void) => IPromise<any>;
+        unregisterFunc: (callback: (args: any) => void) => IPromise<any>;
+        eventArgsTransformFunc: (args: any) => IPromise<T>;
+    }
 }
 declare namespace OfficeExtension {
 	/**
-	* Request URL and headers 
+	* Request URL and headers
 	*/
-	interface RequestUrlAndHeaderInfo {
-		/** Request URL */
-		url: string;
-		/** Request headers */
-		headers?: {
-			[name: string]: string;
-		};
-	}
+    interface RequestUrlAndHeaderInfo {
+        /** Request URL */
+        url: string;
+        /** Request headers */
+        headers?: {
+            [name: string]: string;
+        };
+    }
 }
 
 
 
 declare namespace OfficeCore {
-    namespace ErrorCodes {
-        var generalException: string;
+    /**
+     * [Api set: Experiment 1.1 (PREVIEW)]
+     */
+    class FlightingService extends OfficeExtension.ClientObject {
+        getFeature(featureName: string, type: string, defaultValue: number | boolean | string, possibleValues?: Array<number> | Array<string> | Array<boolean> | Array<ScopedValue>): OfficeCore.ABType;
+        getFeatureGate(featureName: string, scope?: string): OfficeCore.ABType;
+        resetOverride(featureName: string): void;
+        setOverride(featureName: string, type: string, value: number | boolean | string): void;
+        /**
+         * Create a new instance of OfficeCore.FlightingService object
+         */
+        static newObject(context: OfficeExtension.ClientRequestContext): OfficeCore.FlightingService;
+        toJSON(): {};
     }
-    module Interfaces {
-        interface CollectionLoadOptions {
-            $top?: number;
-            $skip?: number;
-        }
+    /**
+     *
+     * Provides information about the scoped value.
+     *
+     * [Api set: Experiment 1.1 (PREVIEW)]
+     */
+    interface ScopedValue {
+        /**
+         *
+         * Gets the scope.
+         *
+         * [Api set: Experiment 1.1 (PREVIEW)]
+         */
+        scope: string;
+        /**
+         *
+         * Gets the value.
+         *
+         * [Api set: Experiment 1.1 (PREVIEW)]
+         */
+        value: string | number | boolean;
     }
-}
-declare namespace OfficeCore {
+    /**
+     * [Api set: Experiment 1.1 (PREVIEW)]
+     */
+    class ABType extends OfficeExtension.ClientObject {
+        readonly value: string | number | boolean;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: string | string[] | OfficeExtension.LoadOption): OfficeCore.ABType;
+        toJSON(): {
+            "value": string | number | boolean;
+        };
+    }
+    /**
+     * [Api set: Experiment 1.1 (PREVIEW)]
+     */
+    namespace FeatureType {
+        var boolean: string;
+        var integer: string;
+        var string: string;
+    }
     namespace ExperimentErrorCodes {
         var generalException: string;
     }
@@ -2910,13 +2966,7 @@ declare namespace OfficeCore {
 declare namespace OfficeCore {
     class RequestContext extends OfficeExtension.ClientRequestContext {
         constructor(url?: string | OfficeExtension.RequestUrlAndHeaderInfo | any);
-    }
-}
-declare namespace OfficeCore {
-    namespace TelemetryErrorCodes {
-        var generalException: string;
-    }
-    module Interfaces {
+        readonly flightingService: FlightingService;
     }
 }
 
@@ -3128,12 +3178,6 @@ declare namespace Excel {
      */
     function run<T>(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
     /**
-     * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param contextObject - A previously-created object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
-     */
-    function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
-    /**
      * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param object - A previously-created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
@@ -3274,19 +3318,16 @@ declare namespace Excel {
          *
          * Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to re-calc the workbook, to ensure that any dependencies are propagated.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         suspendApiCalculationUntilNextSync(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ApplicationLoadOptions): Excel.Application;
-        load(option?: string | string[]): Excel.Application;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Application;
-        toJSON(): Excel.Interfaces.ApplicationData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Application;
+        toJSON(): {
+            "calculationMode": string;
+        };
     }
     /**
      *
@@ -3297,7 +3338,7 @@ declare namespace Excel {
     class Workbook extends OfficeExtension.ClientObject {
         /**
          *
-         * Represents the Excel application instance that contains this workbook. Read-only.
+         * Represents Excel application instance that contains this workbook. Read-only.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -3318,7 +3359,7 @@ declare namespace Excel {
         readonly customXmlParts: Excel.CustomXmlPartCollection;
         /**
          *
-         * Represents a collection of worksheet functions that can be used for computation. Read-only.
+         * Represents Excel application instance that contains this workbook. Read-only.
          *
          * [Api set: ExcelApi 1.2]
          */
@@ -3368,12 +3409,7 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;
-        load(option?: string | string[]): Excel.Workbook;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Workbook;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Workbook;
         /**
          *
          * Occurs when the selection in the document is changed.
@@ -3381,7 +3417,7 @@ declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;
-        toJSON(): Excel.Interfaces.WorkbookData;
+        toJSON(): {};
     }
     /**
      *
@@ -3473,7 +3509,7 @@ declare namespace Excel {
          *
          * Calculates all cells on a worksheet.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         calculate(markAllDirty: boolean): void;
         /**
@@ -3559,13 +3595,14 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;
-        load(option?: string | string[]): Excel.Worksheet;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Worksheet;
-        toJSON(): Excel.Interfaces.WorksheetData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Worksheet;
+        toJSON(): {
+            "id": string;
+            "name": string;
+            "position": number;
+            "protection": WorksheetProtection;
+            "visibility": string;
+        };
     }
     /**
      *
@@ -3636,10 +3673,8 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.WorksheetCollection;
-        load(option?: string | string[]): Excel.WorksheetCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.WorksheetCollection;
-        toJSON(): Excel.Interfaces.WorksheetCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.WorksheetCollection;
+        toJSON(): {};
     }
     /**
      *
@@ -3664,33 +3699,28 @@ declare namespace Excel {
         readonly protected: boolean;
         /**
          *
-         * Protects a worksheet. Fails if the worksheet has already been protected.
+         * Protects a worksheet. Fails if the worksheet has been protected.
          *
-         * [Api set: ExcelApi 1.2 for options; 1.7 for password]
+         * [Api set: ExcelApi 1.2]
          *
          * @param options sheet protection options.
-         * @param password sheet protection password.
          */
-        protect(options?: Excel.WorksheetProtectionOptions, password?: string): void;
+        protect(options?: Excel.WorksheetProtectionOptions): void;
         /**
          *
          * Unprotects a worksheet.
          *
-         * [Api set: ExcelApi BETA (PREVIEW ONLY) for password]
-         *
-         * @param password sheet protection password.
+         * [Api set: ExcelApi 1.2]
          */
-        unprotect(password?: string): void;
+        unprotect(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.WorksheetProtectionLoadOptions): Excel.WorksheetProtection;
-        load(option?: string | string[]): Excel.WorksheetProtection;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.WorksheetProtection;
-        toJSON(): Excel.Interfaces.WorksheetProtectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.WorksheetProtection;
+        toJSON(): {
+            "options": WorksheetProtectionOptions;
+            "protected": boolean;
+        };
     }
     /**
      *
@@ -3788,7 +3818,7 @@ declare namespace Excel {
          *
          * Collection of ConditionalFormats that intersect the range. Read-only.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly conditionalFormats: Excel.ConditionalFormatCollection;
         /**
@@ -3916,7 +3946,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        readonly text: Array<Array<string>>;
+        readonly text: Array<Array<any>>;
         /**
          *
          * Represents the type of data of each cell. Read-only.
@@ -3944,7 +3974,7 @@ declare namespace Excel {
          *
          * Calculates a range of cells on a worksheet.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         calculate(): void;
         /**
@@ -4171,12 +4201,7 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;
-        load(option?: string | string[]): Excel.Range;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Range;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Range;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -4185,7 +4210,26 @@ declare namespace Excel {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Excel.Range;
-        toJSON(): Excel.Interfaces.RangeData;
+        toJSON(): {
+            "address": string;
+            "addressLocal": string;
+            "cellCount": number;
+            "columnCount": number;
+            "columnHidden": boolean;
+            "columnIndex": number;
+            "format": RangeFormat;
+            "formulas": any[][];
+            "formulasLocal": any[][];
+            "formulasR1C1": any[][];
+            "hidden": boolean;
+            "numberFormat": any[][];
+            "rowCount": number;
+            "rowHidden": boolean;
+            "rowIndex": number;
+            "text": any[][];
+            "values": any[][];
+            "valueTypes": string[][];
+        };
     }
     /**
      *
@@ -4272,7 +4316,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          */
-        readonly text: Array<Array<string>>;
+        readonly text: Array<Array<any>>;
         /**
          *
          * Represents the type of data of each cell. Read-only.
@@ -4306,13 +4350,20 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.RangeViewLoadOptions): Excel.RangeView;
-        load(option?: string | string[]): Excel.RangeView;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.RangeView;
-        toJSON(): Excel.Interfaces.RangeViewData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeView;
+        toJSON(): {
+            "cellAddresses": any[][];
+            "columnCount": number;
+            "formulas": any[][];
+            "formulasLocal": any[][];
+            "formulasR1C1": any[][];
+            "index": number;
+            "numberFormat": any[][];
+            "rowCount": number;
+            "text": any[][];
+            "values": any[][];
+            "valueTypes": string[][];
+        };
     }
     /**
      *
@@ -4342,10 +4393,8 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.RangeViewCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeViewCollection;
-        load(option?: string | string[]): Excel.RangeViewCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.RangeViewCollection;
-        toJSON(): Excel.Interfaces.RangeViewCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeViewCollection;
+        toJSON(): {};
     }
     /**
      *
@@ -4365,7 +4414,7 @@ declare namespace Excel {
          * @param key The Key of the new setting.
          * @param value The Value for the new setting.
          */
-        add(key: string, value: string | number | boolean | Date | Array<any> | any): Excel.Setting;
+        add(key: string, value: string | number | boolean | Array<any> | any): Excel.Setting;
         /**
          *
          * Gets the number of Settings in the collection.
@@ -4394,9 +4443,7 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.SettingCollection;
-        load(option?: string | string[]): Excel.SettingCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.SettingCollection;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.SettingCollection;
         /**
          *
          * Occurs when the Settings in the document are changed.
@@ -4404,7 +4451,7 @@ declare namespace Excel {
          * [Api set: ExcelApi 1.4]
          */
         readonly onSettingsChanged: OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>;
-        toJSON(): Excel.Interfaces.SettingCollectionData;
+        toJSON(): {};
     }
     /**
      *
@@ -4449,13 +4496,11 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.SettingLoadOptions): Excel.Setting;
-        load(option?: string | string[]): Excel.Setting;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Setting;
-        toJSON(): Excel.Interfaces.SettingData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Setting;
+        toJSON(): {
+            "key": string;
+            "value": any;
+        };
     }
     /**
      *
@@ -4518,10 +4563,8 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.NamedItemCollection;
-        load(option?: string | string[]): Excel.NamedItemCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.NamedItemCollection;
-        toJSON(): Excel.Interfaces.NamedItemCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.NamedItemCollection;
+        toJSON(): {};
     }
     /**
      *
@@ -4569,7 +4612,7 @@ declare namespace Excel {
          *
          * Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
          *
-         * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
+         * [Api set: ExcelApi 1.1]
          */
         readonly type: string;
         /**
@@ -4619,13 +4662,15 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.NamedItemLoadOptions): Excel.NamedItem;
-        load(option?: string | string[]): Excel.NamedItem;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.NamedItem;
-        toJSON(): Excel.Interfaces.NamedItemData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.NamedItem;
+        toJSON(): {
+            "comment": string;
+            "name": string;
+            "scope": string;
+            "type": string;
+            "value": any;
+            "visible": boolean;
+        };
     }
     /**
      *
@@ -4679,12 +4724,7 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;
-        load(option?: string | string[]): Excel.Binding;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Binding;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Binding;
         /**
          *
          * Occurs when data or formatting within the binding is changed.
@@ -4699,7 +4739,10 @@ declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          */
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>;
-        toJSON(): Excel.Interfaces.BindingData;
+        toJSON(): {
+            "id": string;
+            "type": string;
+        };
     }
     /**
      *
@@ -4786,10 +4829,10 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.BindingCollection;
-        load(option?: string | string[]): Excel.BindingCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.BindingCollection;
-        toJSON(): Excel.Interfaces.BindingCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.BindingCollection;
+        toJSON(): {
+            "count": number;
+        };
     }
     /**
      *
@@ -4832,7 +4875,7 @@ declare namespace Excel {
          *
          * @param key Name or ID of the table to be retrieved.
          */
-        getItem(key: string): Excel.Table;
+        getItem(key: number | string): Excel.Table;
         /**
          *
          * Gets a table based on its position in the collection.
@@ -4850,14 +4893,14 @@ declare namespace Excel {
          *
          * @param key Name or ID of the table to be retrieved.
          */
-        getItemOrNullObject(key: string): Excel.Table;
+        getItemOrNullObject(key: number | string): Excel.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableCollection;
-        load(option?: string | string[]): Excel.TableCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.TableCollection;
-        toJSON(): Excel.Interfaces.TableCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TableCollection;
+        toJSON(): {
+            "count": number;
+        };
     }
     /**
      *
@@ -4914,7 +4957,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        readonly id: string;
+        readonly id: number;
         /**
          *
          * Name of the table.
@@ -5032,13 +5075,19 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.TableLoadOptions): Excel.Table;
-        load(option?: string | string[]): Excel.Table;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Table;
-        toJSON(): Excel.Interfaces.TableData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Table;
+        toJSON(): {
+            "highlightFirstColumn": boolean;
+            "highlightLastColumn": boolean;
+            "id": number;
+            "name": string;
+            "showBandedColumns": boolean;
+            "showBandedRows": boolean;
+            "showFilterButton": boolean;
+            "showHeaders": boolean;
+            "showTotals": boolean;
+            "style": string;
+        };
     }
     /**
      *
@@ -5104,10 +5153,10 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableColumnCollection;
-        load(option?: string | string[]): Excel.TableColumnCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.TableColumnCollection;
-        toJSON(): Excel.Interfaces.TableColumnCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TableColumnCollection;
+        toJSON(): {
+            "count": number;
+        };
     }
     /**
      *
@@ -5198,18 +5247,18 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.TableColumnLoadOptions): Excel.TableColumn;
-        load(option?: string | string[]): Excel.TableColumn;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.TableColumn;
-        toJSON(): Excel.Interfaces.TableColumnData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TableColumn;
+        toJSON(): {
+            "id": number;
+            "index": number;
+            "name": string;
+            "values": any[][];
+        };
     }
     /**
      *
      * Represents a collection of all the rows that are part of the table.
-            
+
             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
             a TableRow object represent the physical location of the table row, but not the data.
             That is, if the data is sorted or if new rows are added, a table row will continue
@@ -5230,7 +5279,7 @@ declare namespace Excel {
         /**
          *
          * Adds one or more rows to the table. The return object will be the top of the newly added row(s).
-            
+
             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
             a TableRow object represent the physical location of the table row, but not the data.
             That is, if the data is sorted or if new rows are added, a table row will continue
@@ -5252,7 +5301,7 @@ declare namespace Excel {
         /**
          *
          * Gets a row based on its position in the collection.
-            
+
             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
             a TableRow object represent the physical location of the table row, but not the data.
             That is, if the data is sorted or if new rows are added, a table row will continue
@@ -5266,15 +5315,15 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableRowCollection;
-        load(option?: string | string[]): Excel.TableRowCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.TableRowCollection;
-        toJSON(): Excel.Interfaces.TableRowCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TableRowCollection;
+        toJSON(): {
+            "count": number;
+        };
     }
     /**
      *
      * Represents a row in a table.
-            
+
             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
             a TableRow object represent the physical location of the table row, but not the data.
             That is, if the data is sorted or if new rows are added, a table row will continue
@@ -5323,13 +5372,11 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.TableRowLoadOptions): Excel.TableRow;
-        load(option?: string | string[]): Excel.TableRow;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.TableRow;
-        toJSON(): Excel.Interfaces.TableRowData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TableRow;
+        toJSON(): {
+            "index": number;
+            "values": any[][];
+        };
     }
     /**
      *
@@ -5427,13 +5474,17 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;
-        load(option?: string | string[]): Excel.RangeFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.RangeFormat;
-        toJSON(): Excel.Interfaces.RangeFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeFormat;
+        toJSON(): {
+            "columnWidth": number;
+            "fill": RangeFill;
+            "font": RangeFont;
+            "horizontalAlignment": string;
+            "protection": FormatProtection;
+            "rowHeight": number;
+            "verticalAlignment": string;
+            "wrapText": boolean;
+        };
     }
     /**
      *
@@ -5468,13 +5519,11 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.FormatProtectionLoadOptions): Excel.FormatProtection;
-        load(option?: string | string[]): Excel.FormatProtection;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.FormatProtection;
-        toJSON(): Excel.Interfaces.FormatProtectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.FormatProtection;
+        toJSON(): {
+            "formulaHidden": boolean;
+            "locked": boolean;
+        };
     }
     /**
      *
@@ -5509,13 +5558,10 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.RangeFillLoadOptions): Excel.RangeFill;
-        load(option?: string | string[]): Excel.RangeFill;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.RangeFill;
-        toJSON(): Excel.Interfaces.RangeFillData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeFill;
+        toJSON(): {
+            "color": string;
+        };
     }
     /**
      *
@@ -5564,13 +5610,13 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;
-        load(option?: string | string[]): Excel.RangeBorder;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.RangeBorder;
-        toJSON(): Excel.Interfaces.RangeBorderData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeBorder;
+        toJSON(): {
+            "color": string;
+            "sideIndex": string;
+            "style": string;
+            "weight": string;
+        };
     }
     /**
      *
@@ -5609,10 +5655,10 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeBorderCollection;
-        load(option?: string | string[]): Excel.RangeBorderCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.RangeBorderCollection;
-        toJSON(): Excel.Interfaces.RangeBorderCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeBorderCollection;
+        toJSON(): {
+            "count": number;
+        };
     }
     /**
      *
@@ -5675,13 +5721,15 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.RangeFontLoadOptions): Excel.RangeFont;
-        load(option?: string | string[]): Excel.RangeFont;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.RangeFont;
-        toJSON(): Excel.Interfaces.RangeFontData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeFont;
+        toJSON(): {
+            "bold": boolean;
+            "color": string;
+            "italic": boolean;
+            "name": string;
+            "size": number;
+            "underline": string;
+        };
     }
     /**
      *
@@ -5748,10 +5796,10 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartCollection;
-        load(option?: string | string[]): Excel.ChartCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.ChartCollection;
-        toJSON(): Excel.Interfaces.ChartCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartCollection;
+        toJSON(): {
+            "count": number;
+        };
     }
     /**
      *
@@ -5895,13 +5943,19 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartLoadOptions): Excel.Chart;
-        load(option?: string | string[]): Excel.Chart;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Chart;
-        toJSON(): Excel.Interfaces.ChartData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Chart;
+        toJSON(): {
+            "axes": ChartAxes;
+            "dataLabels": ChartDataLabels;
+            "format": ChartAreaFormat;
+            "height": number;
+            "left": number;
+            "legend": ChartLegend;
+            "name": string;
+            "title": ChartTitle;
+            "top": number;
+            "width": number;
+        };
     }
     /**
      *
@@ -5936,13 +5990,11 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartAreaFormatLoadOptions): Excel.ChartAreaFormat;
-        load(option?: string | string[]): Excel.ChartAreaFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartAreaFormat;
-        toJSON(): Excel.Interfaces.ChartAreaFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartAreaFormat;
+        toJSON(): {
+            "fill": ChartFill;
+            "font": ChartFont;
+        };
     }
     /**
      *
@@ -5969,7 +6021,7 @@ declare namespace Excel {
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Retrieves a series based on its position in the collection.
+         * Retrieves a series based on its position in the collection
          *
          * [Api set: ExcelApi 1.1]
          *
@@ -5979,10 +6031,10 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartSeriesCollection;
-        load(option?: string | string[]): Excel.ChartSeriesCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.ChartSeriesCollection;
-        toJSON(): Excel.Interfaces.ChartSeriesCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartSeriesCollection;
+        toJSON(): {
+            "count": number;
+        };
     }
     /**
      *
@@ -6024,13 +6076,11 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;
-        load(option?: string | string[]): Excel.ChartSeries;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartSeries;
-        toJSON(): Excel.Interfaces.ChartSeriesData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartSeries;
+        toJSON(): {
+            "format": ChartSeriesFormat;
+            "name": string;
+        };
     }
     /**
      *
@@ -6065,13 +6115,11 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartSeriesFormatLoadOptions): Excel.ChartSeriesFormat;
-        load(option?: string | string[]): Excel.ChartSeriesFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartSeriesFormat;
-        toJSON(): Excel.Interfaces.ChartSeriesFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartSeriesFormat;
+        toJSON(): {
+            "fill": ChartFill;
+            "line": ChartLineFormat;
+        };
     }
     /**
      *
@@ -6108,10 +6156,10 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartPointsCollection;
-        load(option?: string | string[]): Excel.ChartPointsCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.ChartPointsCollection;
-        toJSON(): Excel.Interfaces.ChartPointsCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartPointsCollection;
+        toJSON(): {
+            "count": number;
+        };
     }
     /**
      *
@@ -6137,13 +6185,11 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartPointLoadOptions): Excel.ChartPoint;
-        load(option?: string | string[]): Excel.ChartPoint;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartPoint;
-        toJSON(): Excel.Interfaces.ChartPointData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartPoint;
+        toJSON(): {
+            "format": ChartPointFormat;
+            "value": any;
+        };
     }
     /**
      *
@@ -6162,12 +6208,10 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: string | string[]): Excel.ChartPointFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartPointFormat;
-        toJSON(): Excel.Interfaces.ChartPointFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartPointFormat;
+        toJSON(): {
+            "fill": ChartFill;
+        };
     }
     /**
      *
@@ -6209,13 +6253,12 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartAxesLoadOptions): Excel.ChartAxes;
-        load(option?: string | string[]): Excel.ChartAxes;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartAxes;
-        toJSON(): Excel.Interfaces.ChartAxesData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartAxes;
+        toJSON(): {
+            "categoryAxis": ChartAxis;
+            "seriesAxis": ChartAxis;
+            "valueAxis": ChartAxis;
+        };
     }
     /**
      *
@@ -6292,13 +6335,17 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;
-        load(option?: string | string[]): Excel.ChartAxis;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartAxis;
-        toJSON(): Excel.Interfaces.ChartAxisData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartAxis;
+        toJSON(): {
+            "format": ChartAxisFormat;
+            "majorGridlines": ChartGridlines;
+            "majorUnit": any;
+            "maximum": any;
+            "minimum": any;
+            "minorGridlines": ChartGridlines;
+            "minorUnit": any;
+            "title": ChartAxisTitle;
+        };
     }
     /**
      *
@@ -6333,13 +6380,11 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartAxisFormatLoadOptions): Excel.ChartAxisFormat;
-        load(option?: string | string[]): Excel.ChartAxisFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartAxisFormat;
-        toJSON(): Excel.Interfaces.ChartAxisFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartAxisFormat;
+        toJSON(): {
+            "font": ChartFont;
+            "line": ChartLineFormat;
+        };
     }
     /**
      *
@@ -6381,13 +6426,12 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartAxisTitleLoadOptions): Excel.ChartAxisTitle;
-        load(option?: string | string[]): Excel.ChartAxisTitle;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartAxisTitle;
-        toJSON(): Excel.Interfaces.ChartAxisTitleData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartAxisTitle;
+        toJSON(): {
+            "format": ChartAxisTitleFormat;
+            "text": string;
+            "visible": boolean;
+        };
     }
     /**
      *
@@ -6415,13 +6459,10 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions): Excel.ChartAxisTitleFormat;
-        load(option?: string | string[]): Excel.ChartAxisTitleFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartAxisTitleFormat;
-        toJSON(): Excel.Interfaces.ChartAxisTitleFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartAxisTitleFormat;
+        toJSON(): {
+            "font": ChartFont;
+        };
     }
     /**
      *
@@ -6505,13 +6546,18 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartDataLabelsLoadOptions): Excel.ChartDataLabels;
-        load(option?: string | string[]): Excel.ChartDataLabels;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartDataLabels;
-        toJSON(): Excel.Interfaces.ChartDataLabelsData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartDataLabels;
+        toJSON(): {
+            "format": ChartDataLabelFormat;
+            "position": string;
+            "separator": string;
+            "showBubbleSize": boolean;
+            "showCategoryName": boolean;
+            "showLegendKey": boolean;
+            "showPercentage": boolean;
+            "showSeriesName": boolean;
+            "showValue": boolean;
+        };
     }
     /**
      *
@@ -6546,13 +6592,11 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartDataLabelFormatLoadOptions): Excel.ChartDataLabelFormat;
-        load(option?: string | string[]): Excel.ChartDataLabelFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartDataLabelFormat;
-        toJSON(): Excel.Interfaces.ChartDataLabelFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartDataLabelFormat;
+        toJSON(): {
+            "fill": ChartFill;
+            "font": ChartFont;
+        };
     }
     /**
      *
@@ -6587,13 +6631,11 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartGridlinesLoadOptions): Excel.ChartGridlines;
-        load(option?: string | string[]): Excel.ChartGridlines;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartGridlines;
-        toJSON(): Excel.Interfaces.ChartGridlinesData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartGridlines;
+        toJSON(): {
+            "format": ChartGridlinesFormat;
+            "visible": boolean;
+        };
     }
     /**
      *
@@ -6621,13 +6663,10 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartGridlinesFormatLoadOptions): Excel.ChartGridlinesFormat;
-        load(option?: string | string[]): Excel.ChartGridlinesFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartGridlinesFormat;
-        toJSON(): Excel.Interfaces.ChartGridlinesFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartGridlinesFormat;
+        toJSON(): {
+            "line": ChartLineFormat;
+        };
     }
     /**
      *
@@ -6676,13 +6715,13 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartLegendLoadOptions): Excel.ChartLegend;
-        load(option?: string | string[]): Excel.ChartLegend;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartLegend;
-        toJSON(): Excel.Interfaces.ChartLegendData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartLegend;
+        toJSON(): {
+            "format": ChartLegendFormat;
+            "overlay": boolean;
+            "position": string;
+            "visible": boolean;
+        };
     }
     /**
      *
@@ -6717,13 +6756,11 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartLegendFormatLoadOptions): Excel.ChartLegendFormat;
-        load(option?: string | string[]): Excel.ChartLegendFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartLegendFormat;
-        toJSON(): Excel.Interfaces.ChartLegendFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartLegendFormat;
+        toJSON(): {
+            "fill": ChartFill;
+            "font": ChartFont;
+        };
     }
     /**
      *
@@ -6772,13 +6809,13 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartTitleLoadOptions): Excel.ChartTitle;
-        load(option?: string | string[]): Excel.ChartTitle;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartTitle;
-        toJSON(): Excel.Interfaces.ChartTitleData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartTitle;
+        toJSON(): {
+            "format": ChartTitleFormat;
+            "overlay": boolean;
+            "text": string;
+            "visible": boolean;
+        };
     }
     /**
      *
@@ -6813,13 +6850,11 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartTitleFormatLoadOptions): Excel.ChartTitleFormat;
-        load(option?: string | string[]): Excel.ChartTitleFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartTitleFormat;
-        toJSON(): Excel.Interfaces.ChartTitleFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartTitleFormat;
+        toJSON(): {
+            "fill": ChartFill;
+            "font": ChartFont;
+        };
     }
     /**
      *
@@ -6848,9 +6883,7 @@ declare namespace Excel {
          * @param color HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
          */
         setSolidColor(color: string): void;
-        toJSON(): {
-            [key: string]: string;
-        };
+        toJSON(): {};
     }
     /**
      *
@@ -6885,13 +6918,10 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartLineFormatLoadOptions): Excel.ChartLineFormat;
-        load(option?: string | string[]): Excel.ChartLineFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartLineFormat;
-        toJSON(): Excel.Interfaces.ChartLineFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartLineFormat;
+        toJSON(): {
+            "color": string;
+        };
     }
     /**
      *
@@ -6954,13 +6984,15 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ChartFontLoadOptions): Excel.ChartFont;
-        load(option?: string | string[]): Excel.ChartFont;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartFont;
-        toJSON(): Excel.Interfaces.ChartFontData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartFont;
+        toJSON(): {
+            "bold": boolean;
+            "color": string;
+            "italic": boolean;
+            "name": string;
+            "size": number;
+            "underline": string;
+        };
     }
     /**
      *
@@ -6982,9 +7014,7 @@ declare namespace Excel {
          * @param method The ordering method used for Chinese characters.
          */
         apply(fields: Array<Excel.SortField>, matchCase?: boolean, hasHeaders?: boolean, orientation?: string, method?: string): void;
-        toJSON(): {
-            [key: string]: string;
-        };
+        toJSON(): {};
     }
     /**
      *
@@ -7042,13 +7072,12 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.TableSortLoadOptions): Excel.TableSort;
-        load(option?: string | string[]): Excel.TableSort;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.TableSort;
-        toJSON(): Excel.Interfaces.TableSortData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TableSort;
+        toJSON(): {
+            "fields": SortField[];
+            "matchCase": boolean;
+            "method": string;
+        };
     }
     /**
      *
@@ -7225,13 +7254,10 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.FilterLoadOptions): Excel.Filter;
-        load(option?: string | string[]): Excel.Filter;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Filter;
-        toJSON(): Excel.Interfaces.FilterData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Filter;
+        toJSON(): {
+            "criteria": FilterCriteria;
+        };
     }
     /**
      *
@@ -7251,7 +7277,7 @@ declare namespace Excel {
          *
          * The first criterion used to filter data. Used as an operator in the case of "custom" filtering.
              For example ">50" for number greater than 50 or "=*s" for values ending in "s".
-            
+
              Used as a number in the case of top/bottom items/percents. E.g. "5" for the top 5 items if filterOn is set to "topItems"
          *
          * [Api set: ExcelApi 1.2]
@@ -7400,10 +7426,8 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartScopedCollection;
-        load(option?: string | string[]): Excel.CustomXmlPartScopedCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.CustomXmlPartScopedCollection;
-        toJSON(): Excel.Interfaces.CustomXmlPartScopedCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.CustomXmlPartScopedCollection;
+        toJSON(): {};
     }
     /**
      *
@@ -7461,10 +7485,8 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartCollection;
-        load(option?: string | string[]): Excel.CustomXmlPartCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.CustomXmlPartCollection;
-        toJSON(): Excel.Interfaces.CustomXmlPartCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.CustomXmlPartCollection;
+        toJSON(): {};
     }
     /**
      *
@@ -7513,13 +7535,11 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.CustomXmlPartLoadOptions): Excel.CustomXmlPart;
-        load(option?: string | string[]): Excel.CustomXmlPart;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.CustomXmlPart;
-        toJSON(): Excel.Interfaces.CustomXmlPartData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.CustomXmlPart;
+        toJSON(): {
+            "id": string;
+            "namespaceUri": string;
+        };
     }
     /**
      *
@@ -7565,10 +7585,8 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotTableCollection;
-        load(option?: string | string[]): Excel.PivotTableCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.PivotTableCollection;
-        toJSON(): Excel.Interfaces.PivotTableCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.PivotTableCollection;
+        toJSON(): {};
     }
     /**
      *
@@ -7617,19 +7635,17 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.PivotTableLoadOptions): Excel.PivotTable;
-        load(option?: string | string[]): Excel.PivotTable;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.PivotTable;
-        toJSON(): Excel.Interfaces.PivotTableData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.PivotTable;
+        toJSON(): {
+            "id": string;
+            "name": string;
+        };
     }
     /**
      *
      * Represents a collection of all the conditional formats that are overlap the range.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class ConditionalFormatCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
@@ -7638,7 +7654,7 @@ declare namespace Excel {
          *
          * Adds a new conditional format to the collection at the first/top priority.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          *
          * @param type The type of conditional format being added. See Excel.ConditionalFormatType for details.
          */
@@ -7647,31 +7663,21 @@ declare namespace Excel {
          *
          * Clears all conditional formats active on the current specified range.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         clearAll(): void;
         /**
          *
          * Returns the number of conditional formats in the workbook. Read-only.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Returns a conditional format for the given ID.
-         *
-         * [Api set: ExcelApi 1.6]
-         *
-         * @param id The id of the conditional format.
-         * @returns Conditional Format object.
-         */
-        getItem(id: string): Excel.ConditionalFormat;
-        /**
-         *
          * Returns a conditional format at the given index.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          *
          * @param index Index of the conditional formats to be retrieved.
          */
@@ -7679,16 +7685,14 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ConditionalFormatCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalFormatCollection;
-        load(option?: string | string[]): Excel.ConditionalFormatCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.ConditionalFormatCollection;
-        toJSON(): Excel.Interfaces.ConditionalFormatCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalFormatCollection;
+        toJSON(): {};
     }
     /**
      *
      * An object encapsulating a conditional format's range, format, rule, and other properties.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class ConditionalFormat extends OfficeExtension.ClientObject {
         /**
@@ -7696,7 +7700,7 @@ declare namespace Excel {
          * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
             For example to format all cells between 5 and 10.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly cellValue: Excel.CellValueConditionalFormat;
         /**
@@ -7704,77 +7708,77 @@ declare namespace Excel {
          * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
             For example to format all cells between 5 and 10.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly cellValueOrNullObject: Excel.CellValueConditionalFormat;
         /**
          *
          * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly colorScale: Excel.ColorScaleConditionalFormat;
         /**
          *
          * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly colorScaleOrNullObject: Excel.ColorScaleConditionalFormat;
         /**
          *
          * Returns the custom conditional format properties if the current conditional format is a custom type.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly custom: Excel.CustomConditionalFormat;
         /**
          *
          * Returns the custom conditional format properties if the current conditional format is a custom type.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly customOrNullObject: Excel.CustomConditionalFormat;
         /**
          *
          * Returns the data bar properties if the current conditional format is a data bar.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly dataBar: Excel.DataBarConditionalFormat;
         /**
          *
          * Returns the data bar properties if the current conditional format is a data bar.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly dataBarOrNullObject: Excel.DataBarConditionalFormat;
         /**
          *
          * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly iconSet: Excel.IconSetConditionalFormat;
         /**
          *
          * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly iconSetOrNullObject: Excel.IconSetConditionalFormat;
         /**
          *
          * Returns the preset criteria conditional format such as above average/below average/unique values/contains blank/nonblank/error/noerror properties.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly preset: Excel.PresetCriteriaConditionalFormat;
         /**
          *
          * Returns the preset criteria conditional format such as above average/below average/unique values/contains blank/nonblank/error/noerror properties.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly presetOrNullObject: Excel.PresetCriteriaConditionalFormat;
         /**
@@ -7782,7 +7786,7 @@ declare namespace Excel {
          * Returns the specific text conditional format properties if the current conditional format is a text type.
             For example to format cells matching the word "Text".
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly textComparison: Excel.TextConditionalFormat;
         /**
@@ -7790,7 +7794,7 @@ declare namespace Excel {
          * Returns the specific text conditional format properties if the current conditional format is a text type.
             For example to format cells matching the word "Text".
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly textComparisonOrNullObject: Excel.TextConditionalFormat;
         /**
@@ -7798,7 +7802,7 @@ declare namespace Excel {
          * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
             For example to format the top 10% or bottom 10 items.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly topBottom: Excel.TopBottomConditionalFormat;
         /**
@@ -7806,25 +7810,17 @@ declare namespace Excel {
          * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
             For example to format the top 10% or bottom 10 items.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly topBottomOrNullObject: Excel.TopBottomConditionalFormat;
-        /**
-         *
-         * The Priority of the Conditional Format within the current ConditionalFormatCollection.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        readonly id: string;
         /**
          *
          * The priority (or index) within the conditional format collection that this conditional format currently exists in. Changing this also
             changes other conditional formats' priorities, to allow for a contiguous priority order.
             Use a negative priority to begin from the back.
             Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
-            Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         priority: number;
         /**
@@ -7832,14 +7828,14 @@ declare namespace Excel {
          * If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
             Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         stopIfTrue: boolean;
         /**
          *
          * A type of conditional format. Only one can be set at a time. Read-Only.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly type: string;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -7855,53 +7851,68 @@ declare namespace Excel {
          *
          * Deletes this conditional format.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         delete(): void;
         /**
          *
          * Returns the range the conditonal format is applied to or a null object if the range is discontiguous. Read-only.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         getRange(): Excel.Range;
         /**
          *
          * Returns the range the conditonal format is applied to or a null object if the range is discontiguous. Read-only.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         getRangeOrNullObject(): Excel.Range;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ConditionalFormatLoadOptions): Excel.ConditionalFormat;
-        load(option?: string | string[]): Excel.ConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalFormat;
-        toJSON(): Excel.Interfaces.ConditionalFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalFormat;
+        toJSON(): {
+            "cellValue": CellValueConditionalFormat;
+            "cellValueOrNullObject": CellValueConditionalFormat;
+            "colorScale": ColorScaleConditionalFormat;
+            "colorScaleOrNullObject": ColorScaleConditionalFormat;
+            "custom": CustomConditionalFormat;
+            "customOrNullObject": CustomConditionalFormat;
+            "dataBar": DataBarConditionalFormat;
+            "dataBarOrNullObject": DataBarConditionalFormat;
+            "iconSet": IconSetConditionalFormat;
+            "iconSetOrNullObject": IconSetConditionalFormat;
+            "preset": PresetCriteriaConditionalFormat;
+            "presetOrNullObject": PresetCriteriaConditionalFormat;
+            "priority": number;
+            "stopIfTrue": boolean;
+            "textComparison": TextConditionalFormat;
+            "textComparisonOrNullObject": TextConditionalFormat;
+            "topBottom": TopBottomConditionalFormat;
+            "topBottomOrNullObject": TopBottomConditionalFormat;
+            "type": string;
+        };
     }
     /**
      *
      * Represents an Excel Conditional Data Bar Type.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class DataBarConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Representation of all values to the left of the axis in an Excel data bar.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly negativeFormat: Excel.ConditionalDataBarNegativeFormat;
         /**
          *
          * Representation of all values to the right of the axis in an Excel data bar.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly positiveFormat: Excel.ConditionalDataBarPositiveFormat;
         /**
@@ -7909,42 +7920,42 @@ declare namespace Excel {
          * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
             "" (empty string) if no axis is present or set.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         axisColor: string;
         /**
          *
          * Representation of how the axis is determined for an Excel data bar.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         axisFormat: string;
         /**
          *
          * Represents the direction that the data bar graphic should be based on.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         barDirection: string;
         /**
          *
          * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         lowerBoundRule: Excel.ConditionalDataBarRule;
         /**
          *
          * If true, hides the values from the cells where the data bar is applied.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         showDataBarOnly: boolean;
         /**
          *
          * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         upperBoundRule: Excel.ConditionalDataBarRule;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -7959,19 +7970,23 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.DataBarConditionalFormatLoadOptions): Excel.DataBarConditionalFormat;
-        load(option?: string | string[]): Excel.DataBarConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.DataBarConditionalFormat;
-        toJSON(): Excel.Interfaces.DataBarConditionalFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.DataBarConditionalFormat;
+        toJSON(): {
+            "axisColor": string;
+            "axisFormat": string;
+            "barDirection": string;
+            "lowerBoundRule": ConditionalDataBarRule;
+            "negativeFormat": ConditionalDataBarNegativeFormat;
+            "positiveFormat": ConditionalDataBarPositiveFormat;
+            "showDataBarOnly": boolean;
+            "upperBoundRule": ConditionalDataBarRule;
+        };
     }
     /**
      *
      * Represents a conditional format DataBar Format for the positive side of the data bar.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class ConditionalDataBarPositiveFormat extends OfficeExtension.ClientObject {
         /**
@@ -7979,21 +7994,21 @@ declare namespace Excel {
          * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
             "" (empty string) if no border is present or set.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         borderColor: string;
         /**
          *
          * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         fillColor: string;
         /**
          *
          * Boolean representation of whether or not the DataBar has a gradient.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         gradientFill: boolean;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -8008,19 +8023,18 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions): Excel.ConditionalDataBarPositiveFormat;
-        load(option?: string | string[]): Excel.ConditionalDataBarPositiveFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalDataBarPositiveFormat;
-        toJSON(): Excel.Interfaces.ConditionalDataBarPositiveFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalDataBarPositiveFormat;
+        toJSON(): {
+            "borderColor": string;
+            "fillColor": string;
+            "gradientFill": boolean;
+        };
     }
     /**
      *
      * Represents a conditional format DataBar Format for the negative side of the data bar.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class ConditionalDataBarNegativeFormat extends OfficeExtension.ClientObject {
         /**
@@ -8028,28 +8042,28 @@ declare namespace Excel {
          * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
             "Empty String" if no border is present or set.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         borderColor: string;
         /**
          *
          * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         fillColor: string;
         /**
          *
          * Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         matchPositiveBorderColor: boolean;
         /**
          *
          * Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         matchPositiveFillColor: boolean;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -8064,33 +8078,33 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions): Excel.ConditionalDataBarNegativeFormat;
-        load(option?: string | string[]): Excel.ConditionalDataBarNegativeFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalDataBarNegativeFormat;
-        toJSON(): Excel.Interfaces.ConditionalDataBarNegativeFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalDataBarNegativeFormat;
+        toJSON(): {
+            "borderColor": string;
+            "fillColor": string;
+            "matchPositiveBorderColor": boolean;
+            "matchPositiveFillColor": boolean;
+        };
     }
     /**
      *
      * Represents a rule-type for a Data Bar.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     interface ConditionalDataBarRule {
         /**
          *
          * The formula, if required, to evaluate the databar rule on.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         formula?: string;
         /**
          *
          * The type of rule for the databar.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         type: string;
     }
@@ -8098,21 +8112,21 @@ declare namespace Excel {
      *
      * Represents a custom conditional format type.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class CustomConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly format: Excel.ConditionalRangeFormat;
         /**
          *
          * Represents the Rule object on this conditional format.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly rule: Excel.ConditionalFormatRule;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -8127,40 +8141,38 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.CustomConditionalFormatLoadOptions): Excel.CustomConditionalFormat;
-        load(option?: string | string[]): Excel.CustomConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.CustomConditionalFormat;
-        toJSON(): Excel.Interfaces.CustomConditionalFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.CustomConditionalFormat;
+        toJSON(): {
+            "format": ConditionalRangeFormat;
+            "rule": ConditionalFormatRule;
+        };
     }
     /**
      *
      * Represents a rule, for all traditional rule/format pairings.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class ConditionalFormatRule extends OfficeExtension.ClientObject {
         /**
          *
          * The formula, if required, to evaluate the conditional format rule on.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         formula: string;
         /**
          *
          * The formula, if required, to evaluate the conditional format rule on in the user's language.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         formulaLocal: string;
         /**
          *
          * The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         formulaR1C1: string;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -8175,47 +8187,46 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ConditionalFormatRuleLoadOptions): Excel.ConditionalFormatRule;
-        load(option?: string | string[]): Excel.ConditionalFormatRule;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalFormatRule;
-        toJSON(): Excel.Interfaces.ConditionalFormatRuleData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalFormatRule;
+        toJSON(): {
+            "formula": string;
+            "formulaLocal": string;
+            "formulaR1C1": string;
+        };
     }
     /**
      *
      * Represents an IconSet criteria for conditional formatting.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class IconSetConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula and operator will be ignored when set.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         criteria: Array<Excel.ConditionalIconCriterion>;
         /**
          *
          * If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         reverseIconOrder: boolean;
         /**
          *
          * If true, hides the values and only shows icons.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         showIconOnly: boolean;
         /**
          *
          * If set, displays the IconSet option for the conditional format.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         style: string;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -8230,47 +8241,47 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.IconSetConditionalFormatLoadOptions): Excel.IconSetConditionalFormat;
-        load(option?: string | string[]): Excel.IconSetConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.IconSetConditionalFormat;
-        toJSON(): Excel.Interfaces.IconSetConditionalFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.IconSetConditionalFormat;
+        toJSON(): {
+            "criteria": ConditionalIconCriterion[];
+            "reverseIconOrder": boolean;
+            "showIconOnly": boolean;
+            "style": string;
+        };
     }
     /**
      *
      * Represents an Icon Criterion which contains a type, value, an Operator, and an optional custom icon, if not using an iconset.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     interface ConditionalIconCriterion {
         /**
          *
          * The custom icon for the current criterion if different from the default IconSet, else null will be returned.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         customIcon?: Excel.Icon;
         /**
          *
          * A number or a formula depending on the type.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         formula: string;
         /**
          *
          * GreaterThan or GreaterThanOrEqual for each of the rule type for the Icon conditional format.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         operator: string;
         /**
          *
          * What the icon conditional formula should be based on.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         type: string;
     }
@@ -8278,21 +8289,21 @@ declare namespace Excel {
      *
      * Represents an IconSet criteria for conditional formatting.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class ColorScaleConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * The criteria of the color scale. Midpoint is optional when using a two point color scale.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         criteria: Excel.ConditionalColorScaleCriteria;
         /**
          *
          * If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum, maximum).
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly threeColorScale: boolean;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -8307,40 +8318,38 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions): Excel.ColorScaleConditionalFormat;
-        load(option?: string | string[]): Excel.ColorScaleConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ColorScaleConditionalFormat;
-        toJSON(): Excel.Interfaces.ColorScaleConditionalFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ColorScaleConditionalFormat;
+        toJSON(): {
+            "criteria": ConditionalColorScaleCriteria;
+            "threeColorScale": boolean;
+        };
     }
     /**
      *
      * Represents the criteria of the color scale.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     interface ConditionalColorScaleCriteria {
         /**
          *
          * The maximum point Color Scale Criterion.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         maximum: Excel.ConditionalColorScaleCriterion;
         /**
          *
          * The midpoint Color Scale Criterion if the color scale is a 3-color scale.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         midpoint?: Excel.ConditionalColorScaleCriterion;
         /**
          *
          * The minimum point Color Scale Criterion.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         minimum: Excel.ConditionalColorScaleCriterion;
     }
@@ -8348,28 +8357,28 @@ declare namespace Excel {
      *
      * Represents a Color Scale Criterion which contains a type, value and a color.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     interface ConditionalColorScaleCriterion {
         /**
          *
          * HTML color code representation of the color scale color. E.g. #FF0000 represents Red.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         color?: string;
         /**
          *
          * A number, a formula, or null (if Type is LowestValue).
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         formula?: string;
         /**
          *
          * What the icon conditional formula should be based on.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         type: string;
     }
@@ -8377,21 +8386,21 @@ declare namespace Excel {
      *
      * Represents a Top/Bottom conditional format.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class TopBottomConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly format: Excel.ConditionalRangeFormat;
         /**
          *
          * The criteria of the Top/Bottom conditional format.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         rule: Excel.ConditionalTopBottomRule;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -8406,33 +8415,31 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions): Excel.TopBottomConditionalFormat;
-        load(option?: string | string[]): Excel.TopBottomConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.TopBottomConditionalFormat;
-        toJSON(): Excel.Interfaces.TopBottomConditionalFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TopBottomConditionalFormat;
+        toJSON(): {
+            "format": ConditionalRangeFormat;
+            "rule": ConditionalTopBottomRule;
+        };
     }
     /**
      *
      * Represents the rule of the top/bottom conditional format.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     interface ConditionalTopBottomRule {
         /**
          *
          * The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         rank: number;
         /**
          *
          * Format values based on the top or bottom rank.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         type: string;
     }
@@ -8440,21 +8447,21 @@ declare namespace Excel {
      *
      * Represents the the preset criteria conditional format such as above average/below average/unique values/contains blank/nonblank/error/noerror.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class PresetCriteriaConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly format: Excel.ConditionalRangeFormat;
         /**
          *
          * The rule of the conditional format.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         rule: Excel.ConditionalPresetCriteriaRule;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -8469,26 +8476,24 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions): Excel.PresetCriteriaConditionalFormat;
-        load(option?: string | string[]): Excel.PresetCriteriaConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.PresetCriteriaConditionalFormat;
-        toJSON(): Excel.Interfaces.PresetCriteriaConditionalFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.PresetCriteriaConditionalFormat;
+        toJSON(): {
+            "format": ConditionalRangeFormat;
+            "rule": ConditionalPresetCriteriaRule;
+        };
     }
     /**
      *
      * Represents the Preset Criteria Conditional Format Rule
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     interface ConditionalPresetCriteriaRule {
         /**
          *
          * The criterion of the conditional format.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         criterion: string;
     }
@@ -8496,21 +8501,21 @@ declare namespace Excel {
      *
      * Represents a specific text conditional format.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class TextConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly format: Excel.ConditionalRangeFormat;
         /**
          *
          * The rule of the conditional format.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         rule: Excel.ConditionalTextComparisonRule;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -8525,33 +8530,31 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.TextConditionalFormatLoadOptions): Excel.TextConditionalFormat;
-        load(option?: string | string[]): Excel.TextConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.TextConditionalFormat;
-        toJSON(): Excel.Interfaces.TextConditionalFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TextConditionalFormat;
+        toJSON(): {
+            "format": ConditionalRangeFormat;
+            "rule": ConditionalTextComparisonRule;
+        };
     }
     /**
      *
      * Represents a Cell Value Conditional Format Rule
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     interface ConditionalTextComparisonRule {
         /**
          *
          * The operator of the text conditional format.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         operator: string;
         /**
          *
          * The Text value of conditional format.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         text: string;
     }
@@ -8559,21 +8562,21 @@ declare namespace Excel {
      *
      * Represents a cell value conditional format.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class CellValueConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly format: Excel.ConditionalRangeFormat;
         /**
          *
          * Represents the Rule object on this conditional format.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         rule: Excel.ConditionalCellValueRule;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -8588,40 +8591,38 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.CellValueConditionalFormatLoadOptions): Excel.CellValueConditionalFormat;
-        load(option?: string | string[]): Excel.CellValueConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.CellValueConditionalFormat;
-        toJSON(): Excel.Interfaces.CellValueConditionalFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.CellValueConditionalFormat;
+        toJSON(): {
+            "format": ConditionalRangeFormat;
+            "rule": ConditionalCellValueRule;
+        };
     }
     /**
      *
      * Represents a Cell Value Conditional Format Rule
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     interface ConditionalCellValueRule {
         /**
          *
          * The formula, if required, to evaluate the conditional format rule on.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         formula1: string;
         /**
          *
          * The formula, if required, to evaluate the conditional format rule on.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         formula2?: string;
         /**
          *
          * The operator of the text conditional format.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         operator: string;
     }
@@ -8629,35 +8630,35 @@ declare namespace Excel {
      *
      * A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class ConditionalRangeFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Collection of border objects that apply to the overall conditional format range. Read-only.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly borders: Excel.ConditionalRangeBorderCollection;
         /**
          *
          * Returns the fill object defined on the overall conditional format range. Read-only.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly fill: Excel.ConditionalRangeFill;
         /**
          *
          * Returns the font object defined on the overall conditional format range. Read-only.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly font: Excel.ConditionalRangeFont;
         /**
          *
          * Represents Excel's number format code for the given range. Cleared if null is passed in.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         numberFormat: any;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -8672,54 +8673,51 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ConditionalRangeFormatLoadOptions): Excel.ConditionalRangeFormat;
-        load(option?: string | string[]): Excel.ConditionalRangeFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalRangeFormat;
-        toJSON(): Excel.Interfaces.ConditionalRangeFormatData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalRangeFormat;
+        toJSON(): {
+            "numberFormat": any;
+        };
     }
     /**
      *
      * This object represents the font attributes (font style,, color, etc.) for an object.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class ConditionalRangeFont extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the bold status of font.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         bold: boolean;
         /**
          *
          * HTML color code representation of the text color. E.g. #FF0000 represents Red.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         color: string;
         /**
          *
          * Represents the italic status of the font.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         italic: boolean;
         /**
          *
          * Represents the strikethrough status of the font.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         strikethrough: boolean;
         /**
          *
          * Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         underline: string;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -8735,32 +8733,33 @@ declare namespace Excel {
          *
          * Resets the font formats.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         clear(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ConditionalRangeFontLoadOptions): Excel.ConditionalRangeFont;
-        load(option?: string | string[]): Excel.ConditionalRangeFont;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalRangeFont;
-        toJSON(): Excel.Interfaces.ConditionalRangeFontData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalRangeFont;
+        toJSON(): {
+            "bold": boolean;
+            "color": string;
+            "italic": boolean;
+            "strikethrough": boolean;
+            "underline": string;
+        };
     }
     /**
      *
      * Represents the background of a conditional range object.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class ConditionalRangeFill extends OfficeExtension.ClientObject {
         /**
          *
          * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         color: string;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -8776,46 +8775,43 @@ declare namespace Excel {
          *
          * Resets the fill.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         clear(): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ConditionalRangeFillLoadOptions): Excel.ConditionalRangeFill;
-        load(option?: string | string[]): Excel.ConditionalRangeFill;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalRangeFill;
-        toJSON(): Excel.Interfaces.ConditionalRangeFillData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalRangeFill;
+        toJSON(): {
+            "color": string;
+        };
     }
     /**
      *
      * Represents the border of an object.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class ConditionalRangeBorder extends OfficeExtension.ClientObject {
         /**
          *
          * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         color: string;
         /**
          *
          * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details. Read-only.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly sideIndex: string;
         /**
          *
          * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         style: string;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
@@ -8830,47 +8826,46 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ConditionalRangeBorderLoadOptions): Excel.ConditionalRangeBorder;
-        load(option?: string | string[]): Excel.ConditionalRangeBorder;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalRangeBorder;
-        toJSON(): Excel.Interfaces.ConditionalRangeBorderData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalRangeBorder;
+        toJSON(): {
+            "color": string;
+            "sideIndex": string;
+            "style": string;
+        };
     }
     /**
      *
      * Represents the border objects that make up range border.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     class ConditionalRangeBorderCollection extends OfficeExtension.ClientObject {
         /**
          *
          * Gets the top border
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly bottom: Excel.ConditionalRangeBorder;
         /**
          *
          * Gets the top border
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly left: Excel.ConditionalRangeBorder;
         /**
          *
          * Gets the top border
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly right: Excel.ConditionalRangeBorder;
         /**
          *
          * Gets the top border
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly top: Excel.ConditionalRangeBorder;
         /** Gets the loaded child items in this collection. */
@@ -8879,14 +8874,14 @@ declare namespace Excel {
          *
          * Number of border objects in the collection. Read-only.
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          */
         readonly count: number;
         /**
          *
          * Gets a border object using its name
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          *
          * @param index Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
          */
@@ -8895,7 +8890,7 @@ declare namespace Excel {
          *
          * Gets a border object using its index
          *
-         * [Api set: ExcelApi 1.6]
+         * [Api set: ExcelApi 1.6 (PREVIEW)]
          *
          * @param index Index value of the object to be retrieved. Zero-indexed.
          */
@@ -8903,10 +8898,10 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalRangeBorderCollection;
-        load(option?: string | string[]): Excel.ConditionalRangeBorderCollection;
-        load(option?: OfficeExtension.LoadOption): Excel.ConditionalRangeBorderCollection;
-        toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalRangeBorderCollection;
+        toJSON(): {
+            "count": number;
+        };
     }
     /**
      * [Api set: ExcelApi 1.1]
@@ -8983,34 +8978,13 @@ declare namespace Excel {
         var fullRebuild: string;
     }
     /**
-     * [Api set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks & HyperlinksAndFormats.]
+     * [Api set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks.]
      */
     namespace ClearApplyTo {
         var all: string;
-        /**
-         *
-         * Clears all formatting for the range.
-         *
-         */
         var formats: string;
-        /**
-         *
-         * Clears the contents of the range.
-         *
-         */
         var contents: string;
-        /**
-         *
-         * Clears all hyperlinks, but leaves all content and formatting intact.
-         *
-         */
         var hyperlinks: string;
-        /**
-         *
-         * Removes hyperlinks and formatting for the cell but leaves content, conditional formats and data validation intact.
-         *
-         */
-        var removeHyperlinks: string;
     }
     /**
      * [Api set: ExcelApi 1.1]
@@ -9147,7 +9121,7 @@ declare namespace Excel {
      *
      * Represents the format options for a Data Bar Axis.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     namespace ConditionalDataBarAxisFormat {
         var automatic: string;
@@ -9158,7 +9132,7 @@ declare namespace Excel {
      *
      * Represents the Data Bar direction within a cell.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     namespace ConditionalDataBarDirection {
         var context: string;
@@ -9169,14 +9143,14 @@ declare namespace Excel {
      *
      * Represents the direction for a selection.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     namespace ConditionalFormatDirection {
         var top: string;
         var bottom: string;
     }
     /**
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     namespace ConditionalFormatType {
         var custom: string;
@@ -9192,7 +9166,7 @@ declare namespace Excel {
      *
      * Represents the types of conditional format values.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     namespace ConditionalFormatRuleType {
         var invalid: string;
@@ -9208,7 +9182,7 @@ declare namespace Excel {
      *
      * Represents the types of conditional format values.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     namespace ConditionalFormatIconRuleType {
         var invalid: string;
@@ -9221,7 +9195,7 @@ declare namespace Excel {
      *
      * Represents the types of conditional format values.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     namespace ConditionalFormatColorCriterionType {
         var invalid: string;
@@ -9236,7 +9210,7 @@ declare namespace Excel {
      *
      * Represents the criteria for the above/below average conditional format type.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     namespace ConditionalTopBottomCriterionType {
         var invalid: string;
@@ -9249,7 +9223,7 @@ declare namespace Excel {
      *
      * Represents the criteria for the Preset Criteria conditional format type.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     namespace ConditionalFormatPresetCriterion {
         var invalid: string;
@@ -9284,7 +9258,7 @@ declare namespace Excel {
      *
      * Represents the operator of the text conditional format type.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     namespace ConditionalTextOperator {
         var invalid: string;
@@ -9297,7 +9271,7 @@ declare namespace Excel {
      *
      * Represents the operator of the text conditional format type.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     namespace ConditionalCellValueOperator {
         var invalid: string;
@@ -9314,7 +9288,7 @@ declare namespace Excel {
      *
      * Represents the operator for each icon criteria.
      *
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     namespace ConditionalIconCriterionOperator {
         var invalid: string;
@@ -9322,7 +9296,7 @@ declare namespace Excel {
         var greaterThanOrEqual: string;
     }
     /**
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     namespace ConditionalRangeBorderIndex {
         var edgeTop: string;
@@ -9331,7 +9305,7 @@ declare namespace Excel {
         var edgeRight: string;
     }
     /**
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     namespace ConditionalRangeBorderLineStyle {
         var none: string;
@@ -9342,7 +9316,7 @@ declare namespace Excel {
         var dot: string;
     }
     /**
-     * [Api set: ExcelApi 1.6]
+     * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
     namespace ConditionalRangeFontUnderlineStyle {
         var none: string;
@@ -9491,7 +9465,7 @@ declare namespace Excel {
         var workbook: string;
     }
     /**
-     * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
+     * [Api set: ExcelApi 1.1]
      */
     namespace NamedItemType {
         var string: string;
@@ -9500,7 +9474,6 @@ declare namespace Excel {
         var boolean: string;
         var range: string;
         var error: string;
-        var array: string;
     }
     /**
      * [Api set: ExcelApi 1.1]
@@ -9521,7 +9494,7 @@ declare namespace Excel {
         var veryHidden: string;
     }
     /**
-     * [Api set: ExcelApi 1.1 for Unknown, Empty, String, Integer, Double, Boolean, Error. 1.7 for RichValue]
+     * [Api set: ExcelApi 1.1]
      */
     namespace RangeValueType {
         var unknown: string;
@@ -9531,7 +9504,6 @@ declare namespace Excel {
         var double: string;
         var boolean: string;
         var error: string;
-        var richValue: string;
     }
     /**
      * [Api set: ExcelApi 1.2]
@@ -9597,13 +9569,11 @@ declare namespace Excel {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Excel.Interfaces.FunctionResultLoadOptions): FunctionResult<T>;
-        load(option?: string | string[]): FunctionResult<T>;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): FunctionResult<T>;
-        toJSON(): Interfaces.FunctionResultData<T>;
+        load(option?: string | string[] | OfficeExtension.LoadOption): FunctionResult<T>;
+        toJSON(): {
+            "error": string;
+            "value": T;
+        };
     }
     /**
      *
@@ -13348,14 +13318,11 @@ declare namespace Excel {
          * @param sigma Is the population (known) standard deviation. If omitted, the sample standard deviation is used.
          */
         z_Test(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, sigma?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
-        toJSON(): {
-            [key: string]: string;
-        };
+        toJSON(): {};
     }
     namespace ErrorCodes {
         var accessDenied: string;
         var apiNotFound: string;
-        var conflict: string;
         var generalException: string;
         var insertDeleteConflict: string;
         var invalidArgument: string;
@@ -13370,10 +13337,6 @@ declare namespace Excel {
         var invalidOperationInCellEditMode: string;
     }
     module Interfaces {
-        interface CollectionLoadOptions {
-            $top?: number;
-            $skip?: number;
-        }
         /** An interface for updating data on the Worksheet object, for use in "worksheet.set({ ... })". */
         interface WorksheetUpdateData {
             /**
@@ -13397,10 +13360,6 @@ declare namespace Excel {
              * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
              */
             visibility?: string;
-        }
-        /** An interface for updating data on the WorksheetCollection object, for use in "worksheetCollection.set({ ... })". */
-        interface WorksheetCollectionUpdateData {
-            items?: Excel.Interfaces.WorksheetData[];
         }
         /** An interface for updating data on the Range object, for use in "range.set({ ... })". */
         interface RangeUpdateData {
@@ -13499,14 +13458,6 @@ declare namespace Excel {
              */
             values?: Array<Array<any>>;
         }
-        /** An interface for updating data on the RangeViewCollection object, for use in "rangeViewCollection.set({ ... })". */
-        interface RangeViewCollectionUpdateData {
-            items?: Excel.Interfaces.RangeViewData[];
-        }
-        /** An interface for updating data on the SettingCollection object, for use in "settingCollection.set({ ... })". */
-        interface SettingCollectionUpdateData {
-            items?: Excel.Interfaces.SettingData[];
-        }
         /** An interface for updating data on the Setting object, for use in "setting.set({ ... })". */
         interface SettingUpdateData {
             /**
@@ -13516,10 +13467,6 @@ declare namespace Excel {
              * [Api set: ExcelApi 1.4]
              */
             value?: any;
-        }
-        /** An interface for updating data on the NamedItemCollection object, for use in "namedItemCollection.set({ ... })". */
-        interface NamedItemCollectionUpdateData {
-            items?: Excel.Interfaces.NamedItemData[];
         }
         /** An interface for updating data on the NamedItem object, for use in "namedItem.set({ ... })". */
         interface NamedItemUpdateData {
@@ -13537,14 +13484,6 @@ declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             visible?: boolean;
-        }
-        /** An interface for updating data on the BindingCollection object, for use in "bindingCollection.set({ ... })". */
-        interface BindingCollectionUpdateData {
-            items?: Excel.Interfaces.BindingData[];
-        }
-        /** An interface for updating data on the TableCollection object, for use in "tableCollection.set({ ... })". */
-        interface TableCollectionUpdateData {
-            items?: Excel.Interfaces.TableData[];
         }
         /** An interface for updating data on the Table object, for use in "table.set({ ... })". */
         interface TableUpdateData {
@@ -13612,10 +13551,6 @@ declare namespace Excel {
              */
             style?: string;
         }
-        /** An interface for updating data on the TableColumnCollection object, for use in "tableColumnCollection.set({ ... })". */
-        interface TableColumnCollectionUpdateData {
-            items?: Excel.Interfaces.TableColumnData[];
-        }
         /** An interface for updating data on the TableColumn object, for use in "tableColumn.set({ ... })". */
         interface TableColumnUpdateData {
             /**
@@ -13632,10 +13567,6 @@ declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: Array<Array<any>>;
-        }
-        /** An interface for updating data on the TableRowCollection object, for use in "tableRowCollection.set({ ... })". */
-        interface TableRowCollectionUpdateData {
-            items?: Excel.Interfaces.TableRowData[];
         }
         /** An interface for updating data on the TableRow object, for use in "tableRow.set({ ... })". */
         interface TableRowUpdateData {
@@ -13757,10 +13688,6 @@ declare namespace Excel {
              */
             weight?: string;
         }
-        /** An interface for updating data on the RangeBorderCollection object, for use in "rangeBorderCollection.set({ ... })". */
-        interface RangeBorderCollectionUpdateData {
-            items?: Excel.Interfaces.RangeBorderData[];
-        }
         /** An interface for updating data on the RangeFont object, for use in "rangeFont.set({ ... })". */
         interface RangeFontUpdateData {
             /**
@@ -13805,10 +13732,6 @@ declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             underline?: string;
-        }
-        /** An interface for updating data on the ChartCollection object, for use in "chartCollection.set({ ... })". */
-        interface ChartCollectionUpdateData {
-            items?: Excel.Interfaces.ChartData[];
         }
         /** An interface for updating data on the Chart object, for use in "chart.set({ ... })". */
         interface ChartUpdateData {
@@ -13893,10 +13816,6 @@ declare namespace Excel {
             */
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
-        /** An interface for updating data on the ChartSeriesCollection object, for use in "chartSeriesCollection.set({ ... })". */
-        interface ChartSeriesCollectionUpdateData {
-            items?: Excel.Interfaces.ChartSeriesData[];
-        }
         /** An interface for updating data on the ChartSeries object, for use in "chartSeries.set({ ... })". */
         interface ChartSeriesUpdateData {
             /**
@@ -13923,10 +13842,6 @@ declare namespace Excel {
             * [Api set: ExcelApi 1.1]
             */
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
-        }
-        /** An interface for updating data on the ChartPointsCollection object, for use in "chartPointsCollection.set({ ... })". */
-        interface ChartPointsCollectionUpdateData {
-            items?: Excel.Interfaces.ChartPointData[];
         }
         /** An interface for updating data on the ChartAxes object, for use in "chartAxes.set({ ... })". */
         interface ChartAxesUpdateData {
@@ -14302,18 +14217,6 @@ declare namespace Excel {
              */
             underline?: string;
         }
-        /** An interface for updating data on the CustomXmlPartScopedCollection object, for use in "customXmlPartScopedCollection.set({ ... })". */
-        interface CustomXmlPartScopedCollectionUpdateData {
-            items?: Excel.Interfaces.CustomXmlPartData[];
-        }
-        /** An interface for updating data on the CustomXmlPartCollection object, for use in "customXmlPartCollection.set({ ... })". */
-        interface CustomXmlPartCollectionUpdateData {
-            items?: Excel.Interfaces.CustomXmlPartData[];
-        }
-        /** An interface for updating data on the PivotTableCollection object, for use in "pivotTableCollection.set({ ... })". */
-        interface PivotTableCollectionUpdateData {
-            items?: Excel.Interfaces.PivotTableData[];
-        }
         /** An interface for updating data on the PivotTable object, for use in "pivotTable.set({ ... })". */
         interface PivotTableUpdateData {
             /**
@@ -14324,10 +14227,6 @@ declare namespace Excel {
              */
             name?: string;
         }
-        /** An interface for updating data on the ConditionalFormatCollection object, for use in "conditionalFormatCollection.set({ ... })". */
-        interface ConditionalFormatCollectionUpdateData {
-            items?: Excel.Interfaces.ConditionalFormatData[];
-        }
         /** An interface for updating data on the ConditionalFormat object, for use in "conditionalFormat.set({ ... })". */
         interface ConditionalFormatUpdateData {
             /**
@@ -14335,7 +14234,7 @@ declare namespace Excel {
             * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
             For example to format all cells between 5 and 10.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             cellValue?: Excel.Interfaces.CellValueConditionalFormatUpdateData;
             /**
@@ -14343,77 +14242,77 @@ declare namespace Excel {
             * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
             For example to format all cells between 5 and 10.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatUpdateData;
             /**
             *
             * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             colorScale?: Excel.Interfaces.ColorScaleConditionalFormatUpdateData;
             /**
             *
             * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatUpdateData;
             /**
             *
             * Returns the custom conditional format properties if the current conditional format is a custom type.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             custom?: Excel.Interfaces.CustomConditionalFormatUpdateData;
             /**
             *
             * Returns the custom conditional format properties if the current conditional format is a custom type.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             customOrNullObject?: Excel.Interfaces.CustomConditionalFormatUpdateData;
             /**
             *
             * Returns the data bar properties if the current conditional format is a data bar.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             dataBar?: Excel.Interfaces.DataBarConditionalFormatUpdateData;
             /**
             *
             * Returns the data bar properties if the current conditional format is a data bar.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatUpdateData;
             /**
             *
             * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             iconSet?: Excel.Interfaces.IconSetConditionalFormatUpdateData;
             /**
             *
             * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatUpdateData;
             /**
             *
             * Returns the preset criteria conditional format such as above average/below average/unique values/contains blank/nonblank/error/noerror properties.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             preset?: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData;
             /**
             *
             * Returns the preset criteria conditional format such as above average/below average/unique values/contains blank/nonblank/error/noerror properties.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             presetOrNullObject?: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData;
             /**
@@ -14421,7 +14320,7 @@ declare namespace Excel {
             * Returns the specific text conditional format properties if the current conditional format is a text type.
             For example to format cells matching the word "Text".
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             textComparison?: Excel.Interfaces.TextConditionalFormatUpdateData;
             /**
@@ -14429,7 +14328,7 @@ declare namespace Excel {
             * Returns the specific text conditional format properties if the current conditional format is a text type.
             For example to format cells matching the word "Text".
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             textComparisonOrNullObject?: Excel.Interfaces.TextConditionalFormatUpdateData;
             /**
@@ -14437,7 +14336,7 @@ declare namespace Excel {
             * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
             For example to format the top 10% or bottom 10 items.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             topBottom?: Excel.Interfaces.TopBottomConditionalFormatUpdateData;
             /**
@@ -14445,7 +14344,7 @@ declare namespace Excel {
             * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
             For example to format the top 10% or bottom 10 items.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             topBottomOrNullObject?: Excel.Interfaces.TopBottomConditionalFormatUpdateData;
             /**
@@ -14454,9 +14353,8 @@ declare namespace Excel {
             changes other conditional formats' priorities, to allow for a contiguous priority order.
             Use a negative priority to begin from the back.
             Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
-            Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             priority?: number;
             /**
@@ -14464,7 +14362,7 @@ declare namespace Excel {
              * If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
             Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             stopIfTrue?: boolean;
         }
@@ -14474,14 +14372,14 @@ declare namespace Excel {
             *
             * Representation of all values to the left of the axis in an Excel data bar.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             negativeFormat?: Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData;
             /**
             *
             * Representation of all values to the right of the axis in an Excel data bar.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData;
             /**
@@ -14489,42 +14387,42 @@ declare namespace Excel {
              * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
             "" (empty string) if no axis is present or set.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             axisColor?: string;
             /**
              *
              * Representation of how the axis is determined for an Excel data bar.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             axisFormat?: string;
             /**
              *
              * Represents the direction that the data bar graphic should be based on.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             barDirection?: string;
             /**
              *
              * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             lowerBoundRule?: Excel.ConditionalDataBarRule;
             /**
              *
              * If true, hides the values from the cells where the data bar is applied.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             showDataBarOnly?: boolean;
             /**
              *
              * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             upperBoundRule?: Excel.ConditionalDataBarRule;
         }
@@ -14535,21 +14433,21 @@ declare namespace Excel {
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
             "" (empty string) if no border is present or set.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             borderColor?: string;
             /**
              *
              * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             fillColor?: string;
             /**
              *
              * Boolean representation of whether or not the DataBar has a gradient.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             gradientFill?: boolean;
         }
@@ -14560,28 +14458,28 @@ declare namespace Excel {
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
             "Empty String" if no border is present or set.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             borderColor?: string;
             /**
              *
              * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             fillColor?: string;
             /**
              *
              * Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             matchPositiveBorderColor?: boolean;
             /**
              *
              * Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             matchPositiveFillColor?: boolean;
         }
@@ -14591,14 +14489,14 @@ declare namespace Excel {
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;
             /**
             *
             * Represents the Rule object on this conditional format.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             rule?: Excel.Interfaces.ConditionalFormatRuleUpdateData;
         }
@@ -14608,21 +14506,21 @@ declare namespace Excel {
              *
              * The formula, if required, to evaluate the conditional format rule on.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             formula?: string;
             /**
              *
              * The formula, if required, to evaluate the conditional format rule on in the user's language.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             formulaLocal?: string;
             /**
              *
              * The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             formulaR1C1?: string;
         }
@@ -14632,28 +14530,28 @@ declare namespace Excel {
              *
              * An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula and operator will be ignored when set.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             criteria?: Array<Excel.ConditionalIconCriterion>;
             /**
              *
              * If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             reverseIconOrder?: boolean;
             /**
              *
              * If true, hides the values and only shows icons.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             showIconOnly?: boolean;
             /**
              *
              * If set, displays the IconSet option for the conditional format.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             style?: string;
         }
@@ -14663,7 +14561,7 @@ declare namespace Excel {
              *
              * The criteria of the color scale. Midpoint is optional when using a two point color scale.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             criteria?: Excel.ConditionalColorScaleCriteria;
         }
@@ -14673,14 +14571,14 @@ declare namespace Excel {
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;
             /**
              *
              * The criteria of the Top/Bottom conditional format.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             rule?: Excel.ConditionalTopBottomRule;
         }
@@ -14690,14 +14588,14 @@ declare namespace Excel {
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;
             /**
              *
              * The rule of the conditional format.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             rule?: Excel.ConditionalPresetCriteriaRule;
         }
@@ -14707,14 +14605,14 @@ declare namespace Excel {
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;
             /**
              *
              * The rule of the conditional format.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             rule?: Excel.ConditionalTextComparisonRule;
         }
@@ -14724,45 +14622,24 @@ declare namespace Excel {
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
             *
-            * [Api set: ExcelApi 1.6]
+            * [Api set: ExcelApi 1.6 (PREVIEW)]
             */
             format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;
             /**
              *
              * Represents the Rule object on this conditional format.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             rule?: Excel.ConditionalCellValueRule;
         }
         /** An interface for updating data on the ConditionalRangeFormat object, for use in "conditionalRangeFormat.set({ ... })". */
         interface ConditionalRangeFormatUpdateData {
             /**
-            *
-            * Collection of border objects that apply to the overall conditional format range.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            borders?: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData;
-            /**
-            *
-            * Returns the fill object defined on the overall conditional format range.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            fill?: Excel.Interfaces.ConditionalRangeFillUpdateData;
-            /**
-            *
-            * Returns the font object defined on the overall conditional format range.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            font?: Excel.Interfaces.ConditionalRangeFontUpdateData;
-            /**
              *
              * Represents Excel's number format code for the given range. Cleared if null is passed in.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             numberFormat?: any;
         }
@@ -14772,35 +14649,35 @@ declare namespace Excel {
              *
              * Represents the bold status of font.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             bold?: boolean;
             /**
              *
              * HTML color code representation of the text color. E.g. #FF0000 represents Red.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             color?: string;
             /**
              *
              * Represents the italic status of the font.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             italic?: boolean;
             /**
              *
              * Represents the strikethrough status of the font.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             strikethrough?: boolean;
             /**
              *
              * Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             underline?: string;
         }
@@ -14810,7 +14687,7 @@ declare namespace Excel {
              *
              * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             color?: string;
         }
@@ -14820,5170 +14697,16 @@ declare namespace Excel {
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             color?: string;
             /**
              *
              * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
              *
-             * [Api set: ExcelApi 1.6]
+             * [Api set: ExcelApi 1.6 (PREVIEW)]
              */
             style?: string;
-        }
-        /** An interface for updating data on the ConditionalRangeBorderCollection object, for use in "conditionalRangeBorderCollection.set({ ... })". */
-        interface ConditionalRangeBorderCollectionUpdateData {
-            /**
-            *
-            * Gets the top border
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            bottom?: Excel.Interfaces.ConditionalRangeBorderUpdateData;
-            /**
-            *
-            * Gets the top border
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            left?: Excel.Interfaces.ConditionalRangeBorderUpdateData;
-            /**
-            *
-            * Gets the top border
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            right?: Excel.Interfaces.ConditionalRangeBorderUpdateData;
-            /**
-            *
-            * Gets the top border
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            top?: Excel.Interfaces.ConditionalRangeBorderUpdateData;
-            items?: Excel.Interfaces.ConditionalRangeBorderData[];
-        }
-        /** An interface describing the data returned by calling "application.toJSON()". */
-        interface ApplicationData {
-            /**
-             *
-             * Returns the calculation mode used in the workbook. See Excel.CalculationMode for details. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            calculationMode?: string;
-        }
-        /** An interface describing the data returned by calling "workbook.toJSON()". */
-        interface WorkbookData {
-            /**
-            *
-            * Represents the Excel application instance that contains this workbook. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            application?: Excel.Interfaces.ApplicationData;
-            /**
-            *
-            * Represents a collection of bindings that are part of the workbook. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            bindings?: Excel.Interfaces.BindingData[];
-            /**
-            *
-            * Represents the collection of custom XML parts contained by this workbook. Read-only.
-            *
-            * [Api set: ExcelApi 1.5]
-            */
-            customXmlParts?: Excel.Interfaces.CustomXmlPartData[];
-            /**
-            *
-            * Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            names?: Excel.Interfaces.NamedItemData[];
-            /**
-            *
-            * Represents a collection of PivotTables associated with the workbook. Read-only.
-            *
-            * [Api set: ExcelApi 1.3]
-            */
-            pivotTables?: Excel.Interfaces.PivotTableData[];
-            /**
-            *
-            * Represents a collection of Settings associated with the workbook. Read-only.
-            *
-            * [Api set: ExcelApi 1.4]
-            */
-            settings?: Excel.Interfaces.SettingData[];
-            /**
-            *
-            * Represents a collection of tables associated with the workbook. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            tables?: Excel.Interfaces.TableData[];
-            /**
-            *
-            * Represents a collection of worksheets associated with the workbook. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            worksheets?: Excel.Interfaces.WorksheetData[];
-        }
-        /** An interface describing the data returned by calling "worksheet.toJSON()". */
-        interface WorksheetData {
-            /**
-            *
-            * Returns collection of charts that are part of the worksheet. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            charts?: Excel.Interfaces.ChartData[];
-            /**
-            *
-            * Collection of names scoped to the current worksheet. Read-only.
-            *
-            * [Api set: ExcelApi 1.4]
-            */
-            names?: Excel.Interfaces.NamedItemData[];
-            /**
-            *
-            * Collection of PivotTables that are part of the worksheet. Read-only.
-            *
-            * [Api set: ExcelApi 1.3]
-            */
-            pivotTables?: Excel.Interfaces.PivotTableData[];
-            /**
-            *
-            * Returns sheet protection object for a worksheet.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            protection?: Excel.Interfaces.WorksheetProtectionData;
-            /**
-            *
-            * Collection of tables that are part of the worksheet. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            tables?: Excel.Interfaces.TableData[];
-            /**
-             *
-             * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            id?: string;
-            /**
-             *
-             * The display name of the worksheet.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: string;
-            /**
-             *
-             * The zero-based position of the worksheet within the workbook.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            position?: number;
-            /**
-             *
-             * The Visibility of the worksheet.
-             *
-             * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
-             */
-            visibility?: string;
-        }
-        /** An interface describing the data returned by calling "worksheetCollection.toJSON()". */
-        interface WorksheetCollectionData {
-            items?: Excel.Interfaces.WorksheetData[];
-        }
-        /** An interface describing the data returned by calling "worksheetProtection.toJSON()". */
-        interface WorksheetProtectionData {
-            /**
-             *
-             * Sheet protection options. Read-Only.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            options?: Excel.WorksheetProtectionOptions;
-            /**
-             *
-             * Indicates if the worksheet is protected. Read-Only.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            protected?: boolean;
-        }
-        /** An interface describing the data returned by calling "range.toJSON()". */
-        interface RangeData {
-            /**
-            *
-            * Collection of ConditionalFormats that intersect the range. Read-only.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            conditionalFormats?: Excel.Interfaces.ConditionalFormatData[];
-            /**
-            *
-            * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.RangeFormatData;
-            /**
-            *
-            * The worksheet containing the current range. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            worksheet?: Excel.Interfaces.WorksheetData;
-            /**
-             *
-             * Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. Sheet1!A1:B4). Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            address?: string;
-            /**
-             *
-             * Represents range reference for the specified range in the language of the user. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            addressLocal?: string;
-            /**
-             *
-             * Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            cellCount?: number;
-            /**
-             *
-             * Represents the total number of columns in the range. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            columnCount?: number;
-            /**
-             *
-             * Represents if all columns of the current range are hidden.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            columnHidden?: boolean;
-            /**
-             *
-             * Represents the column number of the first cell in the range. Zero-indexed. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            columnIndex?: number;
-            /**
-             *
-             * Represents the formula in A1-style notation.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            formulas?: Array<Array<any>>;
-            /**
-             *
-             * Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            formulasLocal?: Array<Array<any>>;
-            /**
-             *
-             * Represents the formula in R1C1-style notation.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            formulasR1C1?: Array<Array<any>>;
-            /**
-             *
-             * Represents if all cells of the current range are hidden.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            hidden?: boolean;
-            /**
-             *
-             * Represents Excel's number format code for the given cell.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            numberFormat?: Array<Array<any>>;
-            /**
-             *
-             * Returns the total number of rows in the range. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            rowCount?: number;
-            /**
-             *
-             * Represents if all rows of the current range are hidden.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            rowHidden?: boolean;
-            /**
-             *
-             * Returns the row number of the first cell in the range. Zero-indexed. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            rowIndex?: number;
-            /**
-             *
-             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            text?: Array<Array<string>>;
-            /**
-             *
-             * Represents the type of data of each cell. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            valueTypes?: Array<Array<string>>;
-            /**
-             *
-             * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            values?: Array<Array<any>>;
-        }
-        /** An interface describing the data returned by calling "rangeView.toJSON()". */
-        interface RangeViewData {
-            /**
-            *
-            * Represents a collection of range views associated with the range. Read-only.
-            *
-            * [Api set: ExcelApi 1.3]
-            */
-            rows?: Excel.Interfaces.RangeViewData[];
-            /**
-             *
-             * Represents the cell addresses of the RangeView.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            cellAddresses?: Array<Array<any>>;
-            /**
-             *
-             * Returns the number of visible columns. Read-only.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            columnCount?: number;
-            /**
-             *
-             * Represents the formula in A1-style notation.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            formulas?: Array<Array<any>>;
-            /**
-             *
-             * Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            formulasLocal?: Array<Array<any>>;
-            /**
-             *
-             * Represents the formula in R1C1-style notation.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            formulasR1C1?: Array<Array<any>>;
-            /**
-             *
-             * Returns a value that represents the index of the RangeView. Read-only.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            index?: number;
-            /**
-             *
-             * Represents Excel's number format code for the given cell.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            numberFormat?: Array<Array<any>>;
-            /**
-             *
-             * Returns the number of visible rows. Read-only.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            rowCount?: number;
-            /**
-             *
-             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            text?: Array<Array<string>>;
-            /**
-             *
-             * Represents the type of data of each cell. Read-only.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            valueTypes?: Array<Array<string>>;
-            /**
-             *
-             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            values?: Array<Array<any>>;
-        }
-        /** An interface describing the data returned by calling "rangeViewCollection.toJSON()". */
-        interface RangeViewCollectionData {
-            items?: Excel.Interfaces.RangeViewData[];
-        }
-        /** An interface describing the data returned by calling "settingCollection.toJSON()". */
-        interface SettingCollectionData {
-            items?: Excel.Interfaces.SettingData[];
-        }
-        /** An interface describing the data returned by calling "setting.toJSON()". */
-        interface SettingData {
-            /**
-             *
-             * Returns the key that represents the id of the Setting. Read-only.
-             *
-             * [Api set: ExcelApi 1.4]
-             */
-            key?: string;
-            /**
-             *
-             * Represents the value stored for this setting.
-             *
-             * [Api set: ExcelApi 1.4]
-             */
-            value?: any;
-        }
-        /** An interface describing the data returned by calling "namedItemCollection.toJSON()". */
-        interface NamedItemCollectionData {
-            items?: Excel.Interfaces.NamedItemData[];
-        }
-        /** An interface describing the data returned by calling "namedItem.toJSON()". */
-        interface NamedItemData {
-            /**
-            *
-            * Returns the worksheet on which the named item is scoped to. Throws an error if the items is scoped to the workbook instead.
-            *
-            * [Api set: ExcelApi 1.4]
-            */
-            worksheet?: Excel.Interfaces.WorksheetData;
-            /**
-            *
-            * Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the workbook instead.
-            *
-            * [Api set: ExcelApi 1.4]
-            */
-            worksheetOrNullObject?: Excel.Interfaces.WorksheetData;
-            /**
-             *
-             * Represents the comment associated with this name.
-             *
-             * [Api set: ExcelApi 1.4]
-             */
-            comment?: string;
-            /**
-             *
-             * The name of the object. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: string;
-            /**
-             *
-             * Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.
-             *
-             * [Api set: ExcelApi 1.4]
-             */
-            scope?: string;
-            /**
-             *
-             * Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
-             *
-             * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
-             */
-            type?: string;
-            /**
-             *
-             * Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            value?: any;
-            /**
-             *
-             * Specifies whether the object is visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            visible?: boolean;
-        }
-        /** An interface describing the data returned by calling "binding.toJSON()". */
-        interface BindingData {
-            /**
-             *
-             * Represents binding identifier. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            id?: string;
-            /**
-             *
-             * Returns the type of the binding. See Excel.BindingType for details. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            type?: string;
-        }
-        /** An interface describing the data returned by calling "bindingCollection.toJSON()". */
-        interface BindingCollectionData {
-            items?: Excel.Interfaces.BindingData[];
-        }
-        /** An interface describing the data returned by calling "tableCollection.toJSON()". */
-        interface TableCollectionData {
-            items?: Excel.Interfaces.TableData[];
-        }
-        /** An interface describing the data returned by calling "table.toJSON()". */
-        interface TableData {
-            /**
-            *
-            * Represents a collection of all the columns in the table. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            columns?: Excel.Interfaces.TableColumnData[];
-            /**
-            *
-            * Represents a collection of all the rows in the table. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            rows?: Excel.Interfaces.TableRowData[];
-            /**
-            *
-            * Represents the sorting for the table.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            sort?: Excel.Interfaces.TableSortData;
-            /**
-            *
-            * The worksheet containing the current table. Read-only.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            worksheet?: Excel.Interfaces.WorksheetData;
-            /**
-             *
-             * Indicates whether the first column contains special formatting.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            highlightFirstColumn?: boolean;
-            /**
-             *
-             * Indicates whether the last column contains special formatting.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            highlightLastColumn?: boolean;
-            /**
-             *
-             * Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            id?: string;
-            /**
-             *
-             * Name of the table.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: string;
-            /**
-             *
-             * Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            showBandedColumns?: boolean;
-            /**
-             *
-             * Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            showBandedRows?: boolean;
-            /**
-             *
-             * Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            showFilterButton?: boolean;
-            /**
-             *
-             * Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showHeaders?: boolean;
-            /**
-             *
-             * Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showTotals?: boolean;
-            /**
-             *
-             * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            style?: string;
-        }
-        /** An interface describing the data returned by calling "tableColumnCollection.toJSON()". */
-        interface TableColumnCollectionData {
-            items?: Excel.Interfaces.TableColumnData[];
-        }
-        /** An interface describing the data returned by calling "tableColumn.toJSON()". */
-        interface TableColumnData {
-            /**
-            *
-            * Retrieve the filter applied to the column.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            filter?: Excel.Interfaces.FilterData;
-            /**
-             *
-             * Returns a unique key that identifies the column within the table. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            id?: number;
-            /**
-             *
-             * Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            index?: number;
-            /**
-             *
-             * Represents the name of the table column.
-             *
-             * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
-             */
-            name?: string;
-            /**
-             *
-             * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            values?: Array<Array<any>>;
-        }
-        /** An interface describing the data returned by calling "tableRowCollection.toJSON()". */
-        interface TableRowCollectionData {
-            items?: Excel.Interfaces.TableRowData[];
-        }
-        /** An interface describing the data returned by calling "tableRow.toJSON()". */
-        interface TableRowData {
-            /**
-             *
-             * Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            index?: number;
-            /**
-             *
-             * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            values?: Array<Array<any>>;
-        }
-        /** An interface describing the data returned by calling "rangeFormat.toJSON()". */
-        interface RangeFormatData {
-            /**
-            *
-            * Collection of border objects that apply to the overall range. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            borders?: Excel.Interfaces.RangeBorderData[];
-            /**
-            *
-            * Returns the fill object defined on the overall range. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            fill?: Excel.Interfaces.RangeFillData;
-            /**
-            *
-            * Returns the font object defined on the overall range. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            font?: Excel.Interfaces.RangeFontData;
-            /**
-            *
-            * Returns the format protection object for a range.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            protection?: Excel.Interfaces.FormatProtectionData;
-            /**
-             *
-             * Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            columnWidth?: number;
-            /**
-             *
-             * Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            horizontalAlignment?: string;
-            /**
-             *
-             * Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            rowHeight?: number;
-            /**
-             *
-             * Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            verticalAlignment?: string;
-            /**
-             *
-             * Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            wrapText?: boolean;
-        }
-        /** An interface describing the data returned by calling "formatProtection.toJSON()". */
-        interface FormatProtectionData {
-            /**
-             *
-             * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            formulaHidden?: boolean;
-            /**
-             *
-             * Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            locked?: boolean;
-        }
-        /** An interface describing the data returned by calling "rangeFill.toJSON()". */
-        interface RangeFillData {
-            /**
-             *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            color?: string;
-        }
-        /** An interface describing the data returned by calling "rangeBorder.toJSON()". */
-        interface RangeBorderData {
-            /**
-             *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            color?: string;
-            /**
-             *
-             * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            sideIndex?: string;
-            /**
-             *
-             * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            style?: string;
-            /**
-             *
-             * Specifies the weight of the border around a range. See Excel.BorderWeight for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            weight?: string;
-        }
-        /** An interface describing the data returned by calling "rangeBorderCollection.toJSON()". */
-        interface RangeBorderCollectionData {
-            items?: Excel.Interfaces.RangeBorderData[];
-        }
-        /** An interface describing the data returned by calling "rangeFont.toJSON()". */
-        interface RangeFontData {
-            /**
-             *
-             * Represents the bold status of font.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            bold?: boolean;
-            /**
-             *
-             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            color?: string;
-            /**
-             *
-             * Represents the italic status of the font.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            italic?: boolean;
-            /**
-             *
-             * Font name (e.g. "Calibri")
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: string;
-            /**
-             *
-             * Font size.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            size?: number;
-            /**
-             *
-             * Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            underline?: string;
-        }
-        /** An interface describing the data returned by calling "chartCollection.toJSON()". */
-        interface ChartCollectionData {
-            items?: Excel.Interfaces.ChartData[];
-        }
-        /** An interface describing the data returned by calling "chart.toJSON()". */
-        interface ChartData {
-            /**
-            *
-            * Represents chart axes. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            axes?: Excel.Interfaces.ChartAxesData;
-            /**
-            *
-            * Represents the datalabels on the chart. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            dataLabels?: Excel.Interfaces.ChartDataLabelsData;
-            /**
-            *
-            * Encapsulates the format properties for the chart area. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartAreaFormatData;
-            /**
-            *
-            * Represents the legend for the chart. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            legend?: Excel.Interfaces.ChartLegendData;
-            /**
-            *
-            * Represents either a single series or collection of series in the chart. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            series?: Excel.Interfaces.ChartSeriesData[];
-            /**
-            *
-            * Represents the title of the specified chart, including the text, visibility, position and formating of the title. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            title?: Excel.Interfaces.ChartTitleData;
-            /**
-            *
-            * The worksheet containing the current chart. Read-only.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            worksheet?: Excel.Interfaces.WorksheetData;
-            /**
-             *
-             * Represents the height, in points, of the chart object.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            height?: number;
-            /**
-             *
-             * The distance, in points, from the left side of the chart to the worksheet origin.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            left?: number;
-            /**
-             *
-             * Represents the name of a chart object.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: string;
-            /**
-             *
-             * Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            top?: number;
-            /**
-             *
-             * Represents the width, in points, of the chart object.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            width?: number;
-        }
-        /** An interface describing the data returned by calling "chartAreaFormat.toJSON()". */
-        interface ChartAreaFormatData {
-            /**
-            *
-            * Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            font?: Excel.Interfaces.ChartFontData;
-        }
-        /** An interface describing the data returned by calling "chartSeriesCollection.toJSON()". */
-        interface ChartSeriesCollectionData {
-            items?: Excel.Interfaces.ChartSeriesData[];
-        }
-        /** An interface describing the data returned by calling "chartSeries.toJSON()". */
-        interface ChartSeriesData {
-            /**
-            *
-            * Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartSeriesFormatData;
-            /**
-            *
-            * Represents a collection of all points in the series. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            points?: Excel.Interfaces.ChartPointData[];
-            /**
-             *
-             * Represents the name of a series in a chart.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: string;
-        }
-        /** An interface describing the data returned by calling "chartSeriesFormat.toJSON()". */
-        interface ChartSeriesFormatData {
-            /**
-            *
-            * Represents line formatting. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            line?: Excel.Interfaces.ChartLineFormatData;
-        }
-        /** An interface describing the data returned by calling "chartPointsCollection.toJSON()". */
-        interface ChartPointsCollectionData {
-            items?: Excel.Interfaces.ChartPointData[];
-        }
-        /** An interface describing the data returned by calling "chartPoint.toJSON()". */
-        interface ChartPointData {
-            /**
-            *
-            * Encapsulates the format properties chart point. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartPointFormatData;
-            /**
-             *
-             * Returns the value of a chart point. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            value?: any;
-        }
-        /** An interface describing the data returned by calling "chartPointFormat.toJSON()". */
-        interface ChartPointFormatData {
-        }
-        /** An interface describing the data returned by calling "chartAxes.toJSON()". */
-        interface ChartAxesData {
-            /**
-            *
-            * Represents the category axis in a chart. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            categoryAxis?: Excel.Interfaces.ChartAxisData;
-            /**
-            *
-            * Represents the series axis of a 3-dimensional chart. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            seriesAxis?: Excel.Interfaces.ChartAxisData;
-            /**
-            *
-            * Represents the value axis in an axis. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            valueAxis?: Excel.Interfaces.ChartAxisData;
-        }
-        /** An interface describing the data returned by calling "chartAxis.toJSON()". */
-        interface ChartAxisData {
-            /**
-            *
-            * Represents the formatting of a chart object, which includes line and font formatting. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartAxisFormatData;
-            /**
-            *
-            * Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            majorGridlines?: Excel.Interfaces.ChartGridlinesData;
-            /**
-            *
-            * Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            minorGridlines?: Excel.Interfaces.ChartGridlinesData;
-            /**
-            *
-            * Represents the axis title. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            title?: Excel.Interfaces.ChartAxisTitleData;
-            /**
-             *
-             * Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            majorUnit?: any;
-            /**
-             *
-             * Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            maximum?: any;
-            /**
-             *
-             * Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            minimum?: any;
-            /**
-             *
-             * Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            minorUnit?: any;
-        }
-        /** An interface describing the data returned by calling "chartAxisFormat.toJSON()". */
-        interface ChartAxisFormatData {
-            /**
-            *
-            * Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            font?: Excel.Interfaces.ChartFontData;
-            /**
-            *
-            * Represents chart line formatting. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            line?: Excel.Interfaces.ChartLineFormatData;
-        }
-        /** An interface describing the data returned by calling "chartAxisTitle.toJSON()". */
-        interface ChartAxisTitleData {
-            /**
-            *
-            * Represents the formatting of chart axis title. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartAxisTitleFormatData;
-            /**
-             *
-             * Represents the axis title.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            text?: string;
-            /**
-             *
-             * A boolean that specifies the visibility of an axis title.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            visible?: boolean;
-        }
-        /** An interface describing the data returned by calling "chartAxisTitleFormat.toJSON()". */
-        interface ChartAxisTitleFormatData {
-            /**
-            *
-            * Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            font?: Excel.Interfaces.ChartFontData;
-        }
-        /** An interface describing the data returned by calling "chartDataLabels.toJSON()". */
-        interface ChartDataLabelsData {
-            /**
-            *
-            * Represents the format of chart data labels, which includes fill and font formatting. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartDataLabelFormatData;
-            /**
-             *
-             * DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            position?: string;
-            /**
-             *
-             * String representing the separator used for the data labels on a chart.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            separator?: string;
-            /**
-             *
-             * Boolean value representing if the data label bubble size is visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showBubbleSize?: boolean;
-            /**
-             *
-             * Boolean value representing if the data label category name is visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showCategoryName?: boolean;
-            /**
-             *
-             * Boolean value representing if the data label legend key is visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showLegendKey?: boolean;
-            /**
-             *
-             * Boolean value representing if the data label percentage is visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showPercentage?: boolean;
-            /**
-             *
-             * Boolean value representing if the data label series name is visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showSeriesName?: boolean;
-            /**
-             *
-             * Boolean value representing if the data label value is visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showValue?: boolean;
-        }
-        /** An interface describing the data returned by calling "chartDataLabelFormat.toJSON()". */
-        interface ChartDataLabelFormatData {
-            /**
-            *
-            * Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            font?: Excel.Interfaces.ChartFontData;
-        }
-        /** An interface describing the data returned by calling "chartGridlines.toJSON()". */
-        interface ChartGridlinesData {
-            /**
-            *
-            * Represents the formatting of chart gridlines. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartGridlinesFormatData;
-            /**
-             *
-             * Boolean value representing if the axis gridlines are visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            visible?: boolean;
-        }
-        /** An interface describing the data returned by calling "chartGridlinesFormat.toJSON()". */
-        interface ChartGridlinesFormatData {
-            /**
-            *
-            * Represents chart line formatting. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            line?: Excel.Interfaces.ChartLineFormatData;
-        }
-        /** An interface describing the data returned by calling "chartLegend.toJSON()". */
-        interface ChartLegendData {
-            /**
-            *
-            * Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartLegendFormatData;
-            /**
-             *
-             * Boolean value for whether the chart legend should overlap with the main body of the chart.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            overlay?: boolean;
-            /**
-             *
-             * Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            position?: string;
-            /**
-             *
-             * A boolean value the represents the visibility of a ChartLegend object.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            visible?: boolean;
-        }
-        /** An interface describing the data returned by calling "chartLegendFormat.toJSON()". */
-        interface ChartLegendFormatData {
-            /**
-            *
-            * Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            font?: Excel.Interfaces.ChartFontData;
-        }
-        /** An interface describing the data returned by calling "chartTitle.toJSON()". */
-        interface ChartTitleData {
-            /**
-            *
-            * Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartTitleFormatData;
-            /**
-             *
-             * Boolean value representing if the chart title will overlay the chart or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            overlay?: boolean;
-            /**
-             *
-             * Represents the title text of a chart.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            text?: string;
-            /**
-             *
-             * A boolean value the represents the visibility of a chart title object.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            visible?: boolean;
-        }
-        /** An interface describing the data returned by calling "chartTitleFormat.toJSON()". */
-        interface ChartTitleFormatData {
-            /**
-            *
-            * Represents the font attributes (font name, font size, color, etc.) for an object. Read-only.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            font?: Excel.Interfaces.ChartFontData;
-        }
-        /** An interface describing the data returned by calling "chartLineFormat.toJSON()". */
-        interface ChartLineFormatData {
-            /**
-             *
-             * HTML color code representing the color of lines in the chart.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            color?: string;
-        }
-        /** An interface describing the data returned by calling "chartFont.toJSON()". */
-        interface ChartFontData {
-            /**
-             *
-             * Represents the bold status of font.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            bold?: boolean;
-            /**
-             *
-             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            color?: string;
-            /**
-             *
-             * Represents the italic status of the font.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            italic?: boolean;
-            /**
-             *
-             * Font name (e.g. "Calibri")
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: string;
-            /**
-             *
-             * Size of the font (e.g. 11)
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            size?: number;
-            /**
-             *
-             * Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            underline?: string;
-        }
-        /** An interface describing the data returned by calling "tableSort.toJSON()". */
-        interface TableSortData {
-            /**
-             *
-             * Represents the current conditions used to last sort the table.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            fields?: Array<Excel.SortField>;
-            /**
-             *
-             * Represents whether the casing impacted the last sort of the table.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            matchCase?: boolean;
-            /**
-             *
-             * Represents Chinese character ordering method last used to sort the table.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            method?: string;
-        }
-        /** An interface describing the data returned by calling "filter.toJSON()". */
-        interface FilterData {
-            /**
-             *
-             * The currently applied filter on the given column.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            criteria?: Excel.FilterCriteria;
-        }
-        /** An interface describing the data returned by calling "customXmlPartScopedCollection.toJSON()". */
-        interface CustomXmlPartScopedCollectionData {
-            items?: Excel.Interfaces.CustomXmlPartData[];
-        }
-        /** An interface describing the data returned by calling "customXmlPartCollection.toJSON()". */
-        interface CustomXmlPartCollectionData {
-            items?: Excel.Interfaces.CustomXmlPartData[];
-        }
-        /** An interface describing the data returned by calling "customXmlPart.toJSON()". */
-        interface CustomXmlPartData {
-            /**
-             *
-             * The custom XML part's ID. Read-only.
-             *
-             * [Api set: ExcelApi 1.5]
-             */
-            id?: string;
-            /**
-             *
-             * The custom XML part's namespace URI. Read-only.
-             *
-             * [Api set: ExcelApi 1.5]
-             */
-            namespaceUri?: string;
-        }
-        /** An interface describing the data returned by calling "pivotTableCollection.toJSON()". */
-        interface PivotTableCollectionData {
-            items?: Excel.Interfaces.PivotTableData[];
-        }
-        /** An interface describing the data returned by calling "pivotTable.toJSON()". */
-        interface PivotTableData {
-            /**
-            *
-            * The worksheet containing the current PivotTable. Read-only.
-            *
-            * [Api set: ExcelApi 1.3]
-            */
-            worksheet?: Excel.Interfaces.WorksheetData;
-            /**
-             *
-             * Id of the PivotTable.
-             *
-             * [Api set: ExcelApi 1.5]
-             */
-            id?: string;
-            /**
-             *
-             * Name of the PivotTable.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            name?: string;
-        }
-        /** An interface describing the data returned by calling "conditionalFormatCollection.toJSON()". */
-        interface ConditionalFormatCollectionData {
-            items?: Excel.Interfaces.ConditionalFormatData[];
-        }
-        /** An interface describing the data returned by calling "conditionalFormat.toJSON()". */
-        interface ConditionalFormatData {
-            /**
-            *
-            * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
-            For example to format all cells between 5 and 10.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            cellValue?: Excel.Interfaces.CellValueConditionalFormatData;
-            /**
-            *
-            * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
-            For example to format all cells between 5 and 10.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatData;
-            /**
-            *
-            * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            colorScale?: Excel.Interfaces.ColorScaleConditionalFormatData;
-            /**
-            *
-            * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatData;
-            /**
-            *
-            * Returns the custom conditional format properties if the current conditional format is a custom type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            custom?: Excel.Interfaces.CustomConditionalFormatData;
-            /**
-            *
-            * Returns the custom conditional format properties if the current conditional format is a custom type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            customOrNullObject?: Excel.Interfaces.CustomConditionalFormatData;
-            /**
-            *
-            * Returns the data bar properties if the current conditional format is a data bar.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            dataBar?: Excel.Interfaces.DataBarConditionalFormatData;
-            /**
-            *
-            * Returns the data bar properties if the current conditional format is a data bar.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatData;
-            /**
-            *
-            * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            iconSet?: Excel.Interfaces.IconSetConditionalFormatData;
-            /**
-            *
-            * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatData;
-            /**
-            *
-            * Returns the preset criteria conditional format such as above average/below average/unique values/contains blank/nonblank/error/noerror properties.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            preset?: Excel.Interfaces.PresetCriteriaConditionalFormatData;
-            /**
-            *
-            * Returns the preset criteria conditional format such as above average/below average/unique values/contains blank/nonblank/error/noerror properties.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            presetOrNullObject?: Excel.Interfaces.PresetCriteriaConditionalFormatData;
-            /**
-            *
-            * Returns the specific text conditional format properties if the current conditional format is a text type.
-            For example to format cells matching the word "Text".
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            textComparison?: Excel.Interfaces.TextConditionalFormatData;
-            /**
-            *
-            * Returns the specific text conditional format properties if the current conditional format is a text type.
-            For example to format cells matching the word "Text".
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            textComparisonOrNullObject?: Excel.Interfaces.TextConditionalFormatData;
-            /**
-            *
-            * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
-            For example to format the top 10% or bottom 10 items.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            topBottom?: Excel.Interfaces.TopBottomConditionalFormatData;
-            /**
-            *
-            * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
-            For example to format the top 10% or bottom 10 items.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            topBottomOrNullObject?: Excel.Interfaces.TopBottomConditionalFormatData;
-            /**
-             *
-             * The Priority of the Conditional Format within the current ConditionalFormatCollection.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            id?: string;
-            /**
-             *
-             * The priority (or index) within the conditional format collection that this conditional format currently exists in. Changing this also
-            changes other conditional formats' priorities, to allow for a contiguous priority order.
-            Use a negative priority to begin from the back.
-            Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
-            Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            priority?: number;
-            /**
-             *
-             * If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
-            Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            stopIfTrue?: boolean;
-            /**
-             *
-             * A type of conditional format. Only one can be set at a time. Read-Only.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            type?: string;
-        }
-        /** An interface describing the data returned by calling "dataBarConditionalFormat.toJSON()". */
-        interface DataBarConditionalFormatData {
-            /**
-            *
-            * Representation of all values to the left of the axis in an Excel data bar.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            negativeFormat?: Excel.Interfaces.ConditionalDataBarNegativeFormatData;
-            /**
-            *
-            * Representation of all values to the right of the axis in an Excel data bar.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatData;
-            /**
-             *
-             * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-            "" (empty string) if no axis is present or set.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            axisColor?: string;
-            /**
-             *
-             * Representation of how the axis is determined for an Excel data bar.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            axisFormat?: string;
-            /**
-             *
-             * Represents the direction that the data bar graphic should be based on.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            barDirection?: string;
-            /**
-             *
-             * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            lowerBoundRule?: Excel.ConditionalDataBarRule;
-            /**
-             *
-             * If true, hides the values from the cells where the data bar is applied.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            showDataBarOnly?: boolean;
-            /**
-             *
-             * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            upperBoundRule?: Excel.ConditionalDataBarRule;
-        }
-        /** An interface describing the data returned by calling "conditionalDataBarPositiveFormat.toJSON()". */
-        interface ConditionalDataBarPositiveFormatData {
-            /**
-             *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-            "" (empty string) if no border is present or set.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            borderColor?: string;
-            /**
-             *
-             * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            fillColor?: string;
-            /**
-             *
-             * Boolean representation of whether or not the DataBar has a gradient.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            gradientFill?: boolean;
-        }
-        /** An interface describing the data returned by calling "conditionalDataBarNegativeFormat.toJSON()". */
-        interface ConditionalDataBarNegativeFormatData {
-            /**
-             *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-            "Empty String" if no border is present or set.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            borderColor?: string;
-            /**
-             *
-             * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            fillColor?: string;
-            /**
-             *
-             * Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            matchPositiveBorderColor?: boolean;
-            /**
-             *
-             * Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            matchPositiveFillColor?: boolean;
-        }
-        /** An interface describing the data returned by calling "customConditionalFormat.toJSON()". */
-        interface CustomConditionalFormatData {
-            /**
-            *
-            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            format?: Excel.Interfaces.ConditionalRangeFormatData;
-            /**
-            *
-            * Represents the Rule object on this conditional format.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            rule?: Excel.Interfaces.ConditionalFormatRuleData;
-        }
-        /** An interface describing the data returned by calling "conditionalFormatRule.toJSON()". */
-        interface ConditionalFormatRuleData {
-            /**
-             *
-             * The formula, if required, to evaluate the conditional format rule on.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            formula?: string;
-            /**
-             *
-             * The formula, if required, to evaluate the conditional format rule on in the user's language.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            formulaLocal?: string;
-            /**
-             *
-             * The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            formulaR1C1?: string;
-        }
-        /** An interface describing the data returned by calling "iconSetConditionalFormat.toJSON()". */
-        interface IconSetConditionalFormatData {
-            /**
-             *
-             * An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula and operator will be ignored when set.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            criteria?: Array<Excel.ConditionalIconCriterion>;
-            /**
-             *
-             * If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            reverseIconOrder?: boolean;
-            /**
-             *
-             * If true, hides the values and only shows icons.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            showIconOnly?: boolean;
-            /**
-             *
-             * If set, displays the IconSet option for the conditional format.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            style?: string;
-        }
-        /** An interface describing the data returned by calling "colorScaleConditionalFormat.toJSON()". */
-        interface ColorScaleConditionalFormatData {
-            /**
-             *
-             * The criteria of the color scale. Midpoint is optional when using a two point color scale.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            criteria?: Excel.ConditionalColorScaleCriteria;
-            /**
-             *
-             * If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum, maximum).
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            threeColorScale?: boolean;
-        }
-        /** An interface describing the data returned by calling "topBottomConditionalFormat.toJSON()". */
-        interface TopBottomConditionalFormatData {
-            /**
-            *
-            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            format?: Excel.Interfaces.ConditionalRangeFormatData;
-            /**
-             *
-             * The criteria of the Top/Bottom conditional format.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            rule?: Excel.ConditionalTopBottomRule;
-        }
-        /** An interface describing the data returned by calling "presetCriteriaConditionalFormat.toJSON()". */
-        interface PresetCriteriaConditionalFormatData {
-            /**
-            *
-            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            format?: Excel.Interfaces.ConditionalRangeFormatData;
-            /**
-             *
-             * The rule of the conditional format.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            rule?: Excel.ConditionalPresetCriteriaRule;
-        }
-        /** An interface describing the data returned by calling "textConditionalFormat.toJSON()". */
-        interface TextConditionalFormatData {
-            /**
-            *
-            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            format?: Excel.Interfaces.ConditionalRangeFormatData;
-            /**
-             *
-             * The rule of the conditional format.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            rule?: Excel.ConditionalTextComparisonRule;
-        }
-        /** An interface describing the data returned by calling "cellValueConditionalFormat.toJSON()". */
-        interface CellValueConditionalFormatData {
-            /**
-            *
-            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            format?: Excel.Interfaces.ConditionalRangeFormatData;
-            /**
-             *
-             * Represents the Rule object on this conditional format.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            rule?: Excel.ConditionalCellValueRule;
-        }
-        /** An interface describing the data returned by calling "conditionalRangeFormat.toJSON()". */
-        interface ConditionalRangeFormatData {
-            /**
-            *
-            * Collection of border objects that apply to the overall conditional format range. Read-only.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            borders?: Excel.Interfaces.ConditionalRangeBorderData[];
-            /**
-            *
-            * Returns the fill object defined on the overall conditional format range. Read-only.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            fill?: Excel.Interfaces.ConditionalRangeFillData;
-            /**
-            *
-            * Returns the font object defined on the overall conditional format range. Read-only.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            font?: Excel.Interfaces.ConditionalRangeFontData;
-            /**
-             *
-             * Represents Excel's number format code for the given range. Cleared if null is passed in.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            numberFormat?: any;
-        }
-        /** An interface describing the data returned by calling "conditionalRangeFont.toJSON()". */
-        interface ConditionalRangeFontData {
-            /**
-             *
-             * Represents the bold status of font.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            bold?: boolean;
-            /**
-             *
-             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            color?: string;
-            /**
-             *
-             * Represents the italic status of the font.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            italic?: boolean;
-            /**
-             *
-             * Represents the strikethrough status of the font.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            strikethrough?: boolean;
-            /**
-             *
-             * Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            underline?: string;
-        }
-        /** An interface describing the data returned by calling "conditionalRangeFill.toJSON()". */
-        interface ConditionalRangeFillData {
-            /**
-             *
-             * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            color?: string;
-        }
-        /** An interface describing the data returned by calling "conditionalRangeBorder.toJSON()". */
-        interface ConditionalRangeBorderData {
-            /**
-             *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            color?: string;
-            /**
-             *
-             * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details. Read-only.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            sideIndex?: string;
-            /**
-             *
-             * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            style?: string;
-        }
-        /** An interface describing the data returned by calling "conditionalRangeBorderCollection.toJSON()". */
-        interface ConditionalRangeBorderCollectionData {
-            items?: Excel.Interfaces.ConditionalRangeBorderData[];
-        }
-        /** An interface describing the data returned by calling "functionResult.toJSON()". */
-        interface FunctionResultData<T> {
-            /**
-             *
-             * Error value (such as "#DIV/0") representing the error. If the error string is not set, then the function succeeded, and its result is written to the Value field. The error is always in the English locale.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            error?: string;
-            /**
-             *
-             * The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error property is not set).
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            value?: T;
-        }
-        /**
-         *
-         * Represents the Excel application that manages the workbook.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ApplicationLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Returns the calculation mode used in the workbook. See Excel.CalculationMode for details. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            calculationMode?: boolean;
-        }
-        /**
-         *
-         * Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface WorkbookLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents the Excel application instance that contains this workbook.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            application?: Excel.Interfaces.ApplicationLoadOptions;
-            /**
-            *
-            * Represents a collection of bindings that are part of the workbook.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            bindings?: Excel.Interfaces.BindingCollectionLoadOptions;
-            /**
-            *
-            * Represents a collection of tables associated with the workbook.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            tables?: Excel.Interfaces.TableCollectionLoadOptions;
-        }
-        /**
-         *
-         * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface WorksheetLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Returns collection of charts that are part of the worksheet.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            charts?: Excel.Interfaces.ChartCollectionLoadOptions;
-            /**
-            *
-            * Returns sheet protection object for a worksheet.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;
-            /**
-            *
-            * Collection of tables that are part of the worksheet.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            tables?: Excel.Interfaces.TableCollectionLoadOptions;
-            /**
-             *
-             * Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            id?: boolean;
-            /**
-             *
-             * The display name of the worksheet.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: boolean;
-            /**
-             *
-             * The zero-based position of the worksheet within the workbook.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            position?: boolean;
-            /**
-             *
-             * The Visibility of the worksheet.
-             *
-             * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
-             */
-            visibility?: boolean;
-        }
-        /**
-         *
-         * Represents a collection of worksheet objects that are part of the workbook.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface WorksheetCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns collection of charts that are part of the worksheet.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            charts?: Excel.Interfaces.ChartCollectionLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns sheet protection object for a worksheet.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Collection of tables that are part of the worksheet.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            tables?: Excel.Interfaces.TableCollectionLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            id?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: The display name of the worksheet.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: The zero-based position of the worksheet within the workbook.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            position?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: The Visibility of the worksheet.
-             *
-             * [Api set: ExcelApi 1.1 for reading visibility; 1.2 for setting it.]
-             */
-            visibility?: boolean;
-        }
-        /**
-         *
-         * Represents the protection of a sheet object.
-         *
-         * [Api set: ExcelApi 1.2]
-         */
-        interface WorksheetProtectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Sheet protection options. Read-Only.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            options?: boolean;
-            /**
-             *
-             * Indicates if the worksheet is protected. Read-Only.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            protected?: boolean;
-        }
-        /**
-         *
-         * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface RangeLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.RangeFormatLoadOptions;
-            /**
-            *
-            * The worksheet containing the current range.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
-            /**
-             *
-             * Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. Sheet1!A1:B4). Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            address?: boolean;
-            /**
-             *
-             * Represents range reference for the specified range in the language of the user. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            addressLocal?: boolean;
-            /**
-             *
-             * Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            cellCount?: boolean;
-            /**
-             *
-             * Represents the total number of columns in the range. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            columnCount?: boolean;
-            /**
-             *
-             * Represents if all columns of the current range are hidden.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            columnHidden?: boolean;
-            /**
-             *
-             * Represents the column number of the first cell in the range. Zero-indexed. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            columnIndex?: boolean;
-            /**
-             *
-             * Represents the formula in A1-style notation.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            formulas?: boolean;
-            /**
-             *
-             * Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            formulasLocal?: boolean;
-            /**
-             *
-             * Represents the formula in R1C1-style notation.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            formulasR1C1?: boolean;
-            /**
-             *
-             * Represents if all cells of the current range are hidden.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            hidden?: boolean;
-            /**
-             *
-             * Represents Excel's number format code for the given cell.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            numberFormat?: boolean;
-            /**
-             *
-             * Returns the total number of rows in the range. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            rowCount?: boolean;
-            /**
-             *
-             * Represents if all rows of the current range are hidden.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            rowHidden?: boolean;
-            /**
-             *
-             * Returns the row number of the first cell in the range. Zero-indexed. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            rowIndex?: boolean;
-            /**
-             *
-             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            text?: boolean;
-            /**
-             *
-             * Represents the type of data of each cell. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            valueTypes?: boolean;
-            /**
-             *
-             * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            values?: boolean;
-        }
-        /**
-         *
-         * RangeView represents a set of visible cells of the parent range.
-         *
-         * [Api set: ExcelApi 1.3]
-         */
-        interface RangeViewLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Represents the cell addresses of the RangeView.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            cellAddresses?: boolean;
-            /**
-             *
-             * Returns the number of visible columns. Read-only.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            columnCount?: boolean;
-            /**
-             *
-             * Represents the formula in A1-style notation.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            formulas?: boolean;
-            /**
-             *
-             * Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            formulasLocal?: boolean;
-            /**
-             *
-             * Represents the formula in R1C1-style notation.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            formulasR1C1?: boolean;
-            /**
-             *
-             * Returns a value that represents the index of the RangeView. Read-only.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            index?: boolean;
-            /**
-             *
-             * Represents Excel's number format code for the given cell.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            numberFormat?: boolean;
-            /**
-             *
-             * Returns the number of visible rows. Read-only.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            rowCount?: boolean;
-            /**
-             *
-             * Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            text?: boolean;
-            /**
-             *
-             * Represents the type of data of each cell. Read-only.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            valueTypes?: boolean;
-            /**
-             *
-             * Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            values?: boolean;
-        }
-        /**
-         *
-         * Represents a collection of RangeView objects.
-         *
-         * [Api set: ExcelApi 1.3]
-         */
-        interface RangeViewCollectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the cell addresses of the RangeView.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            cellAddresses?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Returns the number of visible columns. Read-only.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            columnCount?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the formula in A1-style notation.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            formulas?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            formulasLocal?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the formula in R1C1-style notation.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            formulasR1C1?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Returns a value that represents the index of the RangeView. Read-only.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            index?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents Excel's number format code for the given cell.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            numberFormat?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Returns the number of visible rows. Read-only.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            rowCount?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            text?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the type of data of each cell. Read-only.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            valueTypes?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            values?: boolean;
-        }
-        /**
-         *
-         * Represents a collection of worksheet objects that are part of the workbook.
-         *
-         * [Api set: ExcelApi 1.4]
-         */
-        interface SettingCollectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Returns the key that represents the id of the Setting. Read-only.
-             *
-             * [Api set: ExcelApi 1.4]
-             */
-            key?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the value stored for this setting.
-             *
-             * [Api set: ExcelApi 1.4]
-             */
-            value?: boolean;
-        }
-        /**
-         *
-         * Setting represents a key-value pair of a setting persisted to the document.
-         *
-         * [Api set: ExcelApi 1.4]
-         */
-        interface SettingLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Returns the key that represents the id of the Setting. Read-only.
-             *
-             * [Api set: ExcelApi 1.4]
-             */
-            key?: boolean;
-            /**
-             *
-             * Represents the value stored for this setting.
-             *
-             * [Api set: ExcelApi 1.4]
-             */
-            value?: boolean;
-        }
-        /**
-         *
-         * A collection of all the nameditem objects that are part of the workbook or worksheet, depending on how it was reached.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface NamedItemCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the worksheet on which the named item is scoped to. Throws an error if the items is scoped to the workbook instead.
-            *
-            * [Api set: ExcelApi 1.4]
-            */
-            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the workbook instead.
-            *
-            * [Api set: ExcelApi 1.4]
-            */
-            worksheetOrNullObject?: Excel.Interfaces.WorksheetLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the comment associated with this name.
-             *
-             * [Api set: ExcelApi 1.4]
-             */
-            comment?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: The name of the object. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.
-             *
-             * [Api set: ExcelApi 1.4]
-             */
-            scope?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
-             *
-             * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
-             */
-            type?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            value?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Specifies whether the object is visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            visible?: boolean;
-        }
-        /**
-         *
-         * Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type below), range object, reference to a range. This object can be used to obtain range object associated with names.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface NamedItemLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Returns the worksheet on which the named item is scoped to. Throws an error if the items is scoped to the workbook instead.
-            *
-            * [Api set: ExcelApi 1.4]
-            */
-            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
-            /**
-            *
-            * Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the workbook instead.
-            *
-            * [Api set: ExcelApi 1.4]
-            */
-            worksheetOrNullObject?: Excel.Interfaces.WorksheetLoadOptions;
-            /**
-             *
-             * Represents the comment associated with this name.
-             *
-             * [Api set: ExcelApi 1.4]
-             */
-            comment?: boolean;
-            /**
-             *
-             * The name of the object. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: boolean;
-            /**
-             *
-             * Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.
-             *
-             * [Api set: ExcelApi 1.4]
-             */
-            scope?: boolean;
-            /**
-             *
-             * Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
-             *
-             * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
-             */
-            type?: boolean;
-            /**
-             *
-             * Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            value?: boolean;
-            /**
-             *
-             * Specifies whether the object is visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            visible?: boolean;
-        }
-        /**
-         *
-         * Represents an Office.js binding that is defined in the workbook.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface BindingLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Represents binding identifier. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            id?: boolean;
-            /**
-             *
-             * Returns the type of the binding. See Excel.BindingType for details. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            type?: boolean;
-        }
-        /**
-         *
-         * Represents the collection of all the binding objects that are part of the workbook.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface BindingCollectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents binding identifier. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            id?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Returns the type of the binding. See Excel.BindingType for details. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            type?: boolean;
-        }
-        /**
-         *
-         * Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was reached.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface TableCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Represents a collection of all the columns in the table.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Represents a collection of all the rows in the table.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            rows?: Excel.Interfaces.TableRowCollectionLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Represents the sorting for the table.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            sort?: Excel.Interfaces.TableSortLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: The worksheet containing the current table.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Indicates whether the first column contains special formatting.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            highlightFirstColumn?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Indicates whether the last column contains special formatting.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            highlightLastColumn?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            id?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Name of the table.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            showBandedColumns?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            showBandedRows?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            showFilterButton?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showHeaders?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showTotals?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            style?: boolean;
-        }
-        /**
-         *
-         * Represents an Excel table.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface TableLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents a collection of all the columns in the table.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;
-            /**
-            *
-            * Represents a collection of all the rows in the table.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            rows?: Excel.Interfaces.TableRowCollectionLoadOptions;
-            /**
-            *
-            * Represents the sorting for the table.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            sort?: Excel.Interfaces.TableSortLoadOptions;
-            /**
-            *
-            * The worksheet containing the current table.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
-            /**
-             *
-             * Indicates whether the first column contains special formatting.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            highlightFirstColumn?: boolean;
-            /**
-             *
-             * Indicates whether the last column contains special formatting.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            highlightLastColumn?: boolean;
-            /**
-             *
-             * Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            id?: boolean;
-            /**
-             *
-             * Name of the table.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: boolean;
-            /**
-             *
-             * Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            showBandedColumns?: boolean;
-            /**
-             *
-             * Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            showBandedRows?: boolean;
-            /**
-             *
-             * Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            showFilterButton?: boolean;
-            /**
-             *
-             * Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showHeaders?: boolean;
-            /**
-             *
-             * Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showTotals?: boolean;
-            /**
-             *
-             * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            style?: boolean;
-        }
-        /**
-         *
-         * Represents a collection of all the columns that are part of the table.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface TableColumnCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Retrieve the filter applied to the column.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            filter?: Excel.Interfaces.FilterLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Returns a unique key that identifies the column within the table. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            id?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            index?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the name of the table column.
-             *
-             * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
-             */
-            name?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            values?: boolean;
-        }
-        /**
-         *
-         * Represents a column in a table.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface TableColumnLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Retrieve the filter applied to the column.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            filter?: Excel.Interfaces.FilterLoadOptions;
-            /**
-             *
-             * Returns a unique key that identifies the column within the table. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            id?: boolean;
-            /**
-             *
-             * Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            index?: boolean;
-            /**
-             *
-             * Represents the name of the table column.
-             *
-             * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
-             */
-            name?: boolean;
-            /**
-             *
-             * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            values?: boolean;
-        }
-        /**
-         *
-         * Represents a collection of all the rows that are part of the table.
-                
-                Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
-                a TableRow object represent the physical location of the table row, but not the data.
-                That is, if the data is sorted or if new rows are added, a table row will continue
-                to point at the index for which it was created.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface TableRowCollectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            index?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            values?: boolean;
-        }
-        /**
-         *
-         * Represents a row in a table.
-                
-                Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
-                a TableRow object represent the physical location of the table row, but not the data.
-                That is, if the data is sorted or if new rows are added, a table row will continue
-                to point at the index for which it was created.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface TableRowLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            index?: boolean;
-            /**
-             *
-             * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            values?: boolean;
-        }
-        /**
-         *
-         * A format object encapsulating the range's font, fill, borders, alignment, and other properties.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface RangeFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Collection of border objects that apply to the overall range.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            borders?: Excel.Interfaces.RangeBorderCollectionLoadOptions;
-            /**
-            *
-            * Returns the fill object defined on the overall range.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            fill?: Excel.Interfaces.RangeFillLoadOptions;
-            /**
-            *
-            * Returns the font object defined on the overall range.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            font?: Excel.Interfaces.RangeFontLoadOptions;
-            /**
-            *
-            * Returns the format protection object for a range.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            protection?: Excel.Interfaces.FormatProtectionLoadOptions;
-            /**
-             *
-             * Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            columnWidth?: boolean;
-            /**
-             *
-             * Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            horizontalAlignment?: boolean;
-            /**
-             *
-             * Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            rowHeight?: boolean;
-            /**
-             *
-             * Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            verticalAlignment?: boolean;
-            /**
-             *
-             * Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform wrap setting
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            wrapText?: boolean;
-        }
-        /**
-         *
-         * Represents the format protection of a range object.
-         *
-         * [Api set: ExcelApi 1.2]
-         */
-        interface FormatProtectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            formulaHidden?: boolean;
-            /**
-             *
-             * Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            locked?: boolean;
-        }
-        /**
-         *
-         * Represents the background of a range object.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface RangeFillLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            color?: boolean;
-        }
-        /**
-         *
-         * Represents the border of an object.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface RangeBorderLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            color?: boolean;
-            /**
-             *
-             * Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            sideIndex?: boolean;
-            /**
-             *
-             * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            style?: boolean;
-            /**
-             *
-             * Specifies the weight of the border around a range. See Excel.BorderWeight for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            weight?: boolean;
-        }
-        /**
-         *
-         * Represents the border objects that make up the range border.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface RangeBorderCollectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            color?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            sideIndex?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            style?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Specifies the weight of the border around a range. See Excel.BorderWeight for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            weight?: boolean;
-        }
-        /**
-         *
-         * This object represents the font attributes (font name, font size, color, etc.) for an object.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface RangeFontLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Represents the bold status of font.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            bold?: boolean;
-            /**
-             *
-             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            color?: boolean;
-            /**
-             *
-             * Represents the italic status of the font.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            italic?: boolean;
-            /**
-             *
-             * Font name (e.g. "Calibri")
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: boolean;
-            /**
-             *
-             * Font size.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            size?: boolean;
-            /**
-             *
-             * Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            underline?: boolean;
-        }
-        /**
-         *
-         * A collection of all the chart objects on a worksheet.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Represents chart axes.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            axes?: Excel.Interfaces.ChartAxesLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Represents the datalabels on the chart.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Encapsulates the format properties for the chart area.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartAreaFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Represents the legend for the chart.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            legend?: Excel.Interfaces.ChartLegendLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Represents either a single series or collection of series in the chart.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility, position and formating of the title.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            title?: Excel.Interfaces.ChartTitleLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: The worksheet containing the current chart.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the height, in points, of the chart object.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            height?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: The distance, in points, from the left side of the chart to the worksheet origin.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            left?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the name of a chart object.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            top?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the width, in points, of the chart object.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            width?: boolean;
-        }
-        /**
-         *
-         * Represents a chart object in a workbook.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents chart axes.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            axes?: Excel.Interfaces.ChartAxesLoadOptions;
-            /**
-            *
-            * Represents the datalabels on the chart.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;
-            /**
-            *
-            * Encapsulates the format properties for the chart area.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartAreaFormatLoadOptions;
-            /**
-            *
-            * Represents the legend for the chart.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            legend?: Excel.Interfaces.ChartLegendLoadOptions;
-            /**
-            *
-            * Represents either a single series or collection of series in the chart.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;
-            /**
-            *
-            * Represents the title of the specified chart, including the text, visibility, position and formating of the title.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            title?: Excel.Interfaces.ChartTitleLoadOptions;
-            /**
-            *
-            * The worksheet containing the current chart.
-            *
-            * [Api set: ExcelApi 1.2]
-            */
-            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
-            /**
-             *
-             * Represents the height, in points, of the chart object.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            height?: boolean;
-            /**
-             *
-             * The distance, in points, from the left side of the chart to the worksheet origin.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            left?: boolean;
-            /**
-             *
-             * Represents the name of a chart object.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: boolean;
-            /**
-             *
-             * Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the top of the chart area (on a chart).
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            top?: boolean;
-            /**
-             *
-             * Represents the width, in points, of the chart object.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            width?: boolean;
-        }
-        /**
-         *
-         * Encapsulates the format properties for the overall chart area.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartAreaFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents the font attributes (font name, font size, color, etc.) for the current object.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            font?: Excel.Interfaces.ChartFontLoadOptions;
-        }
-        /**
-         *
-         * Represents a collection of chart series.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartSeriesCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Represents the formatting of a chart series, which includes fill and line formatting.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Represents a collection of all points in the series.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Represents the name of a series in a chart.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: boolean;
-        }
-        /**
-         *
-         * Represents a series in a chart.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartSeriesLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents the formatting of a chart series, which includes fill and line formatting.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;
-            /**
-            *
-            * Represents a collection of all points in the series.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;
-            /**
-             *
-             * Represents the name of a series in a chart.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: boolean;
-        }
-        /**
-         *
-         * encapsulates the format properties for the chart series
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartSeriesFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents line formatting.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            line?: Excel.Interfaces.ChartLineFormatLoadOptions;
-        }
-        /**
-         *
-         * A collection of all the chart points within a series inside a chart.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartPointsCollectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Returns the value of a chart point. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            value?: boolean;
-        }
-        /**
-         *
-         * Represents a point of a series in a chart.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartPointLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Returns the value of a chart point. Read-only.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            value?: boolean;
-        }
-        /**
-         *
-         * Represents the chart axes.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartAxesLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents the category axis in a chart.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            categoryAxis?: Excel.Interfaces.ChartAxisLoadOptions;
-            /**
-            *
-            * Represents the series axis of a 3-dimensional chart.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            seriesAxis?: Excel.Interfaces.ChartAxisLoadOptions;
-            /**
-            *
-            * Represents the value axis in an axis.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            valueAxis?: Excel.Interfaces.ChartAxisLoadOptions;
-        }
-        /**
-         *
-         * Represents a single axis in a chart.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartAxisLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents the formatting of a chart object, which includes line and font formatting.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartAxisFormatLoadOptions;
-            /**
-            *
-            * Returns a gridlines object that represents the major gridlines for the specified axis.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            majorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;
-            /**
-            *
-            * Returns a Gridlines object that represents the minor gridlines for the specified axis.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            minorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;
-            /**
-            *
-            * Represents the axis title.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            title?: Excel.Interfaces.ChartAxisTitleLoadOptions;
-            /**
-             *
-             * Represents the interval between two major tick marks. Can be set to a numeric value or an empty string.  The returned value is always a number.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            majorUnit?: boolean;
-            /**
-             *
-             * Represents the maximum value on the value axis.  Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            maximum?: boolean;
-            /**
-             *
-             * Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis values).  The returned value is always a number.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            minimum?: boolean;
-            /**
-             *
-             * Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for automatic axis values). The returned value is always a number.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            minorUnit?: boolean;
-        }
-        /**
-         *
-         * Encapsulates the format properties for the chart axis.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartAxisFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents the font attributes (font name, font size, color, etc.) for a chart axis element.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            font?: Excel.Interfaces.ChartFontLoadOptions;
-            /**
-            *
-            * Represents chart line formatting.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            line?: Excel.Interfaces.ChartLineFormatLoadOptions;
-        }
-        /**
-         *
-         * Represents the title of a chart axis.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartAxisTitleLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents the formatting of chart axis title.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions;
-            /**
-             *
-             * Represents the axis title.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            text?: boolean;
-            /**
-             *
-             * A boolean that specifies the visibility of an axis title.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            visible?: boolean;
-        }
-        /**
-         *
-         * Represents the chart axis title formatting.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartAxisTitleFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents the font attributes, such as font name, font size, color, etc. of chart axis title object.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            font?: Excel.Interfaces.ChartFontLoadOptions;
-        }
-        /**
-         *
-         * Represents a collection of all the data labels on a chart point.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartDataLabelsLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents the format of chart data labels, which includes fill and font formatting.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartDataLabelFormatLoadOptions;
-            /**
-             *
-             * DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            position?: boolean;
-            /**
-             *
-             * String representing the separator used for the data labels on a chart.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            separator?: boolean;
-            /**
-             *
-             * Boolean value representing if the data label bubble size is visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showBubbleSize?: boolean;
-            /**
-             *
-             * Boolean value representing if the data label category name is visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showCategoryName?: boolean;
-            /**
-             *
-             * Boolean value representing if the data label legend key is visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showLegendKey?: boolean;
-            /**
-             *
-             * Boolean value representing if the data label percentage is visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showPercentage?: boolean;
-            /**
-             *
-             * Boolean value representing if the data label series name is visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showSeriesName?: boolean;
-            /**
-             *
-             * Boolean value representing if the data label value is visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            showValue?: boolean;
-        }
-        /**
-         *
-         * Encapsulates the format properties for the chart data labels.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartDataLabelFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents the font attributes (font name, font size, color, etc.) for a chart data label.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            font?: Excel.Interfaces.ChartFontLoadOptions;
-        }
-        /**
-         *
-         * Represents major or minor gridlines on a chart axis.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartGridlinesLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents the formatting of chart gridlines.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartGridlinesFormatLoadOptions;
-            /**
-             *
-             * Boolean value representing if the axis gridlines are visible or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            visible?: boolean;
-        }
-        /**
-         *
-         * Encapsulates the format properties for chart gridlines.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartGridlinesFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents chart line formatting.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            line?: Excel.Interfaces.ChartLineFormatLoadOptions;
-        }
-        /**
-         *
-         * Represents the legend in a chart.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartLegendLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents the formatting of a chart legend, which includes fill and font formatting.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartLegendFormatLoadOptions;
-            /**
-             *
-             * Boolean value for whether the chart legend should overlap with the main body of the chart.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            overlay?: boolean;
-            /**
-             *
-             * Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            position?: boolean;
-            /**
-             *
-             * A boolean value the represents the visibility of a ChartLegend object.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            visible?: boolean;
-        }
-        /**
-         *
-         * Encapsulates the format properties of a chart legend.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartLegendFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents the font attributes such as font name, font size, color, etc. of a chart legend.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            font?: Excel.Interfaces.ChartFontLoadOptions;
-        }
-        /**
-         *
-         * Represents a chart title object of a chart.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartTitleLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents the formatting of a chart title, which includes fill and font formatting.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            format?: Excel.Interfaces.ChartTitleFormatLoadOptions;
-            /**
-             *
-             * Boolean value representing if the chart title will overlay the chart or not.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            overlay?: boolean;
-            /**
-             *
-             * Represents the title text of a chart.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            text?: boolean;
-            /**
-             *
-             * A boolean value the represents the visibility of a chart title object.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            visible?: boolean;
-        }
-        /**
-         *
-         * Provides access to the office art formatting for chart title.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartTitleFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Represents the font attributes (font name, font size, color, etc.) for an object.
-            *
-            * [Api set: ExcelApi 1.1]
-            */
-            font?: Excel.Interfaces.ChartFontLoadOptions;
-        }
-        /**
-         *
-         * Enapsulates the formatting options for line elements.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartLineFormatLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * HTML color code representing the color of lines in the chart.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            color?: boolean;
-        }
-        /**
-         *
-         * This object represents the font attributes (font name, font size, color, etc.) for a chart object.
-         *
-         * [Api set: ExcelApi 1.1]
-         */
-        interface ChartFontLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Represents the bold status of font.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            bold?: boolean;
-            /**
-             *
-             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            color?: boolean;
-            /**
-             *
-             * Represents the italic status of the font.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            italic?: boolean;
-            /**
-             *
-             * Font name (e.g. "Calibri")
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            name?: boolean;
-            /**
-             *
-             * Size of the font (e.g. 11)
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            size?: boolean;
-            /**
-             *
-             * Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
-             *
-             * [Api set: ExcelApi 1.1]
-             */
-            underline?: boolean;
-        }
-        /**
-         *
-         * Manages sorting operations on Table objects.
-         *
-         * [Api set: ExcelApi 1.2]
-         */
-        interface TableSortLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Represents the current conditions used to last sort the table.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            fields?: boolean;
-            /**
-             *
-             * Represents whether the casing impacted the last sort of the table.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            matchCase?: boolean;
-            /**
-             *
-             * Represents Chinese character ordering method last used to sort the table.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            method?: boolean;
-        }
-        /**
-         *
-         * Manages the filtering of a table's column.
-         *
-         * [Api set: ExcelApi 1.2]
-         */
-        interface FilterLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * The currently applied filter on the given column.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            criteria?: boolean;
-        }
-        /**
-         *
-         * A scoped collection of custom XML parts.
-                A scoped collection is the result of some operation, e.g. filtering by namespace.
-                A scoped collection cannot be scoped any further.
-         *
-         * [Api set: ExcelApi 1.5]
-         */
-        interface CustomXmlPartScopedCollectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: The custom XML part's ID. Read-only.
-             *
-             * [Api set: ExcelApi 1.5]
-             */
-            id?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: The custom XML part's namespace URI. Read-only.
-             *
-             * [Api set: ExcelApi 1.5]
-             */
-            namespaceUri?: boolean;
-        }
-        /**
-         *
-         * A collection of custom XML parts.
-         *
-         * [Api set: ExcelApi 1.5]
-         */
-        interface CustomXmlPartCollectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: The custom XML part's ID. Read-only.
-             *
-             * [Api set: ExcelApi 1.5]
-             */
-            id?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: The custom XML part's namespace URI. Read-only.
-             *
-             * [Api set: ExcelApi 1.5]
-             */
-            namespaceUri?: boolean;
-        }
-        /**
-         *
-         * Represents a custom XML part object in a workbook.
-         *
-         * [Api set: ExcelApi 1.5]
-         */
-        interface CustomXmlPartLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * The custom XML part's ID. Read-only.
-             *
-             * [Api set: ExcelApi 1.5]
-             */
-            id?: boolean;
-            /**
-             *
-             * The custom XML part's namespace URI. Read-only.
-             *
-             * [Api set: ExcelApi 1.5]
-             */
-            namespaceUri?: boolean;
-        }
-        /**
-         *
-         * Represents a collection of all the PivotTables that are part of the workbook or worksheet.
-         *
-         * [Api set: ExcelApi 1.3]
-         */
-        interface PivotTableCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: The worksheet containing the current PivotTable.
-            *
-            * [Api set: ExcelApi 1.3]
-            */
-            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Id of the PivotTable.
-             *
-             * [Api set: ExcelApi 1.5]
-             */
-            id?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Name of the PivotTable.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            name?: boolean;
-        }
-        /**
-         *
-         * Represents an Excel PivotTable.
-         *
-         * [Api set: ExcelApi 1.3]
-         */
-        interface PivotTableLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * The worksheet containing the current PivotTable.
-            *
-            * [Api set: ExcelApi 1.3]
-            */
-            worksheet?: Excel.Interfaces.WorksheetLoadOptions;
-            /**
-             *
-             * Id of the PivotTable.
-             *
-             * [Api set: ExcelApi 1.5]
-             */
-            id?: boolean;
-            /**
-             *
-             * Name of the PivotTable.
-             *
-             * [Api set: ExcelApi 1.3]
-             */
-            name?: boolean;
-        }
-        /**
-         *
-         * Represents a collection of all the conditional formats that are overlap the range.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface ConditionalFormatCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional format is a CellValue type.
-                For example to format all cells between 5 and 10.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            cellValue?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the cell value conditional format properties if the current conditional format is a CellValue type.
-                For example to format all cells between 5 and 10.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            colorScale?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the custom conditional format properties if the current conditional format is a custom type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            custom?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the custom conditional format properties if the current conditional format is a custom type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            customOrNullObject?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the data bar properties if the current conditional format is a data bar.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            dataBar?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the data bar properties if the current conditional format is a data bar.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            iconSet?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the preset criteria conditional format such as above average/below average/unique values/contains blank/nonblank/error/noerror properties.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            preset?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the preset criteria conditional format such as above average/below average/unique values/contains blank/nonblank/error/noerror properties.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            presetOrNullObject?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the specific text conditional format properties if the current conditional format is a text type.
-                For example to format cells matching the word "Text".
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            textComparison?: Excel.Interfaces.TextConditionalFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the specific text conditional format properties if the current conditional format is a text type.
-                For example to format cells matching the word "Text".
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            textComparisonOrNullObject?: Excel.Interfaces.TextConditionalFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
-                For example to format the top 10% or bottom 10 items.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            topBottom?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
-                For example to format the top 10% or bottom 10 items.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            topBottomOrNullObject?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: The Priority of the Conditional Format within the current ConditionalFormatCollection.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            id?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: The priority (or index) within the conditional format collection that this conditional format currently exists in. Changing this also
-                changes other conditional formats' priorities, to allow for a contiguous priority order.
-                Use a negative priority to begin from the back.
-                Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
-                Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            priority?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
-                Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            stopIfTrue?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: A type of conditional format. Only one can be set at a time. Read-Only.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            type?: boolean;
-        }
-        /**
-         *
-         * An object encapsulating a conditional format's range, format, rule, and other properties.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface ConditionalFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
-                For example to format all cells between 5 and 10.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            cellValue?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
-            /**
-            *
-            * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
-                For example to format all cells between 5 and 10.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            cellValueOrNullObject?: Excel.Interfaces.CellValueConditionalFormatLoadOptions;
-            /**
-            *
-            * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            colorScale?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
-            /**
-            *
-            * Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            colorScaleOrNullObject?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions;
-            /**
-            *
-            * Returns the custom conditional format properties if the current conditional format is a custom type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            custom?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
-            /**
-            *
-            * Returns the custom conditional format properties if the current conditional format is a custom type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            customOrNullObject?: Excel.Interfaces.CustomConditionalFormatLoadOptions;
-            /**
-            *
-            * Returns the data bar properties if the current conditional format is a data bar.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            dataBar?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
-            /**
-            *
-            * Returns the data bar properties if the current conditional format is a data bar.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            dataBarOrNullObject?: Excel.Interfaces.DataBarConditionalFormatLoadOptions;
-            /**
-            *
-            * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            iconSet?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
-            /**
-            *
-            * Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            iconSetOrNullObject?: Excel.Interfaces.IconSetConditionalFormatLoadOptions;
-            /**
-            *
-            * Returns the preset criteria conditional format such as above average/below average/unique values/contains blank/nonblank/error/noerror properties.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            preset?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
-            /**
-            *
-            * Returns the preset criteria conditional format such as above average/below average/unique values/contains blank/nonblank/error/noerror properties.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            presetOrNullObject?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions;
-            /**
-            *
-            * Returns the specific text conditional format properties if the current conditional format is a text type.
-                For example to format cells matching the word "Text".
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            textComparison?: Excel.Interfaces.TextConditionalFormatLoadOptions;
-            /**
-            *
-            * Returns the specific text conditional format properties if the current conditional format is a text type.
-                For example to format cells matching the word "Text".
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            textComparisonOrNullObject?: Excel.Interfaces.TextConditionalFormatLoadOptions;
-            /**
-            *
-            * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
-                For example to format the top 10% or bottom 10 items.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            topBottom?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
-            /**
-            *
-            * Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type.
-                For example to format the top 10% or bottom 10 items.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            topBottomOrNullObject?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions;
-            /**
-             *
-             * The Priority of the Conditional Format within the current ConditionalFormatCollection.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            id?: boolean;
-            /**
-             *
-             * The priority (or index) within the conditional format collection that this conditional format currently exists in. Changing this also
-                changes other conditional formats' priorities, to allow for a contiguous priority order.
-                Use a negative priority to begin from the back.
-                Priorities greater than than bounds will get and set to the maximum (or minimum if negative) priority.
-                Also note that if you change the priority, you have to re-fetch a new copy of the object at that new priority location if you want to make further changes to it.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            priority?: boolean;
-            /**
-             *
-             * If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
-                Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            stopIfTrue?: boolean;
-            /**
-             *
-             * A type of conditional format. Only one can be set at a time. Read-Only.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            type?: boolean;
-        }
-        /**
-         *
-         * Represents an Excel Conditional Data Bar Type.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface DataBarConditionalFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Representation of all values to the left of the axis in an Excel data bar.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            negativeFormat?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions;
-            /**
-            *
-            * Representation of all values to the right of the axis in an Excel data bar.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions;
-            /**
-             *
-             * HTML color code representing the color of the Axis line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-                "" (empty string) if no axis is present or set.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            axisColor?: boolean;
-            /**
-             *
-             * Representation of how the axis is determined for an Excel data bar.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            axisFormat?: boolean;
-            /**
-             *
-             * Represents the direction that the data bar graphic should be based on.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            barDirection?: boolean;
-            /**
-             *
-             * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            lowerBoundRule?: boolean;
-            /**
-             *
-             * If true, hides the values from the cells where the data bar is applied.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            showDataBarOnly?: boolean;
-            /**
-             *
-             * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            upperBoundRule?: boolean;
-        }
-        /**
-         *
-         * Represents a conditional format DataBar Format for the positive side of the data bar.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface ConditionalDataBarPositiveFormatLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-                "" (empty string) if no border is present or set.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            borderColor?: boolean;
-            /**
-             *
-             * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            fillColor?: boolean;
-            /**
-             *
-             * Boolean representation of whether or not the DataBar has a gradient.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            gradientFill?: boolean;
-        }
-        /**
-         *
-         * Represents a conditional format DataBar Format for the negative side of the data bar.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface ConditionalDataBarNegativeFormatLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-                "Empty String" if no border is present or set.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            borderColor?: boolean;
-            /**
-             *
-             * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            fillColor?: boolean;
-            /**
-             *
-             * Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            matchPositiveBorderColor?: boolean;
-            /**
-             *
-             * Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            matchPositiveFillColor?: boolean;
-        }
-        /**
-         *
-         * Represents a custom conditional format type.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface CustomConditionalFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
-            /**
-            *
-            * Represents the Rule object on this conditional format.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            rule?: Excel.Interfaces.ConditionalFormatRuleLoadOptions;
-        }
-        /**
-         *
-         * Represents a rule, for all traditional rule/format pairings.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface ConditionalFormatRuleLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * The formula, if required, to evaluate the conditional format rule on.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            formula?: boolean;
-            /**
-             *
-             * The formula, if required, to evaluate the conditional format rule on in the user's language.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            formulaLocal?: boolean;
-            /**
-             *
-             * The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            formulaR1C1?: boolean;
-        }
-        /**
-         *
-         * Represents an IconSet criteria for conditional formatting.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface IconSetConditionalFormatLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula and operator will be ignored when set.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            criteria?: boolean;
-            /**
-             *
-             * If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            reverseIconOrder?: boolean;
-            /**
-             *
-             * If true, hides the values and only shows icons.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            showIconOnly?: boolean;
-            /**
-             *
-             * If set, displays the IconSet option for the conditional format.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            style?: boolean;
-        }
-        /**
-         *
-         * Represents an IconSet criteria for conditional formatting.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface ColorScaleConditionalFormatLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * The criteria of the color scale. Midpoint is optional when using a two point color scale.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            criteria?: boolean;
-            /**
-             *
-             * If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum, maximum).
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            threeColorScale?: boolean;
-        }
-        /**
-         *
-         * Represents a Top/Bottom conditional format.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface TopBottomConditionalFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
-            /**
-             *
-             * The criteria of the Top/Bottom conditional format.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            rule?: boolean;
-        }
-        /**
-         *
-         * Represents the the preset criteria conditional format such as above average/below average/unique values/contains blank/nonblank/error/noerror.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface PresetCriteriaConditionalFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
-            /**
-             *
-             * The rule of the conditional format.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            rule?: boolean;
-        }
-        /**
-         *
-         * Represents a specific text conditional format.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface TextConditionalFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
-            /**
-             *
-             * The rule of the conditional format.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            rule?: boolean;
-        }
-        /**
-         *
-         * Represents a cell value conditional format.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface CellValueConditionalFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;
-            /**
-             *
-             * Represents the Rule object on this conditional format.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            rule?: boolean;
-        }
-        /**
-         *
-         * A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface ConditionalRangeFormatLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Collection of border objects that apply to the overall conditional format range.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            borders?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions;
-            /**
-            *
-            * Returns the fill object defined on the overall conditional format range.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            fill?: Excel.Interfaces.ConditionalRangeFillLoadOptions;
-            /**
-            *
-            * Returns the font object defined on the overall conditional format range.
-            *
-            * [Api set: ExcelApi 1.6]
-            */
-            font?: Excel.Interfaces.ConditionalRangeFontLoadOptions;
-            /**
-             *
-             * Represents Excel's number format code for the given range. Cleared if null is passed in.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            numberFormat?: boolean;
-        }
-        /**
-         *
-         * This object represents the font attributes (font style,, color, etc.) for an object.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface ConditionalRangeFontLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Represents the bold status of font.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            bold?: boolean;
-            /**
-             *
-             * HTML color code representation of the text color. E.g. #FF0000 represents Red.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            color?: boolean;
-            /**
-             *
-             * Represents the italic status of the font.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            italic?: boolean;
-            /**
-             *
-             * Represents the strikethrough status of the font.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            strikethrough?: boolean;
-            /**
-             *
-             * Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            underline?: boolean;
-        }
-        /**
-         *
-         * Represents the background of a conditional range object.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface ConditionalRangeFillLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            color?: boolean;
-        }
-        /**
-         *
-         * Represents the border of an object.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface ConditionalRangeBorderLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            color?: boolean;
-            /**
-             *
-             * Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details. Read-only.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            sideIndex?: boolean;
-            /**
-             *
-             * One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            style?: boolean;
-        }
-        /**
-         *
-         * Represents the border objects that make up range border.
-         *
-         * [Api set: ExcelApi 1.6]
-         */
-        interface ConditionalRangeBorderCollectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            color?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details. Read-only.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            sideIndex?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for details.
-             *
-             * [Api set: ExcelApi 1.6]
-             */
-            style?: boolean;
-        }
-        /**
-         *
-         * An object containing the result of a function-evaluation operation
-         *
-         * [Api set: ExcelApi 1.2]
-         */
-        interface FunctionResultLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Error value (such as "#DIV/0") representing the error. If the error string is not set, then the function succeeded, and its result is written to the Value field. The error is always in the English locale.
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            error?: boolean;
-            /**
-             *
-             * The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error property is not set).
-             *
-             * [Api set: ExcelApi 1.2]
-             */
-            value?: boolean;
         }
     }
 }
@@ -20008,30 +14731,6 @@ declare namespace Excel {
 declare namespace Word {
     /**
      *
-     * The Application object.
-     *
-     * [Api set: WordApi 1.3]
-     */
-    class Application extends OfficeExtension.ClientObject {
-        /**
-         *
-         * Creates a new hidden document by using an optional base64 encoded .docx file.
-         *
-         * [Api set: WordApi 1.3]
-         *
-         * @param base64File Optional. The base64 encoded .docx file. The default value is null.
-         */
-        createDocument(base64File?: string): Word.DocumentCreated;
-        /**
-         * Create a new instance of Word.Application object
-         */
-        static newObject(context: OfficeExtension.ClientRequestContext): Word.Application;
-        toJSON(): {
-            [key: string]: string;
-        };
-    }
-    /**
-     *
      * Represents the body of a document or a section.
      *
      * [Api set: WordApi 1.1]
@@ -20043,84 +14742,84 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          */
-        readonly contentControls: Word.ContentControlCollection;
+        contentControls: Word.ContentControlCollection;
         /**
          *
          * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly font: Word.Font;
+        font: Word.Font;
         /**
          *
          * Gets the collection of inlinePicture objects in the body. The collection does not include floating images. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly inlinePictures: Word.InlinePictureCollection;
+        inlinePictures: Word.InlinePictureCollection;
         /**
          *
          * Gets the collection of list objects in the body. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly lists: Word.ListCollection;
+        lists: Word.ListCollection;
         /**
          *
          * Gets the collection of paragraph objects in the body. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly paragraphs: Word.ParagraphCollection;
+        paragraphs: Word.ParagraphCollection;
         /**
          *
          * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there isn't a parent body. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentBody: Word.Body;
+        parentBody: Word.Body;
         /**
          *
          * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentBodyOrNullObject: Word.Body;
+        parentBodyOrNullObject: Word.Body;
         /**
          *
          * Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly parentContentControl: Word.ContentControl;
+        parentContentControl: Word.ContentControl;
         /**
          *
          * Gets the content control that contains the body. Returns a null object if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentContentControlOrNullObject: Word.ContentControl;
+        parentContentControlOrNullObject: Word.ContentControl;
         /**
          *
          * Gets the parent section of the body. Throws if there isn't a parent section. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentSection: Word.Section;
+        parentSection: Word.Section;
         /**
          *
          * Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentSectionOrNullObject: Word.Section;
+        parentSectionOrNullObject: Word.Section;
         /**
          *
          * Gets the collection of table objects in the body. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly tables: Word.TableCollection;
+        tables: Word.TableCollection;
         /**
          *
          * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -20141,14 +14840,14 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          */
-        readonly text: string;
+        text: string;
         /**
          *
          * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly type: string;
+        type: string;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
         set(properties: Interfaces.BodyUpdateData, options?: {
             /**
@@ -20307,12 +15006,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.BodyLoadOptions): Word.Body;
-        load(option?: string | string[]): Word.Body;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.Body;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.Body;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -20321,7 +15015,13 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.Body;
-        toJSON(): Word.Interfaces.BodyData;
+        toJSON(): {
+            "font": Font;
+            "style": string;
+            "styleBuiltIn": string;
+            "text": string;
+            "type": string;
+        };
     }
     /**
      *
@@ -20336,91 +15036,91 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          */
-        readonly contentControls: Word.ContentControlCollection;
+        contentControls: Word.ContentControlCollection;
         /**
          *
          * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly font: Word.Font;
+        font: Word.Font;
         /**
          *
          * Gets the collection of inlinePicture objects in the content control. The collection does not include floating images. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly inlinePictures: Word.InlinePictureCollection;
+        inlinePictures: Word.InlinePictureCollection;
         /**
          *
          * Gets the collection of list objects in the content control. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly lists: Word.ListCollection;
+        lists: Word.ListCollection;
         /**
          *
          * Get the collection of paragraph objects in the content control. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly paragraphs: Word.ParagraphCollection;
+        paragraphs: Word.ParagraphCollection;
         /**
          *
          * Gets the parent body of the content control. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentBody: Word.Body;
+        parentBody: Word.Body;
         /**
          *
          * Gets the content control that contains the content control. Throws if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly parentContentControl: Word.ContentControl;
+        parentContentControl: Word.ContentControl;
         /**
          *
          * Gets the content control that contains the content control. Returns a null object if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentContentControlOrNullObject: Word.ContentControl;
+        parentContentControlOrNullObject: Word.ContentControl;
         /**
          *
          * Gets the table that contains the content control. Throws if it is not contained in a table. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTable: Word.Table;
+        parentTable: Word.Table;
         /**
          *
          * Gets the table cell that contains the content control. Throws if it is not contained in a table cell. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTableCell: Word.TableCell;
+        parentTableCell: Word.TableCell;
         /**
          *
          * Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTableCellOrNullObject: Word.TableCell;
+        parentTableCellOrNullObject: Word.TableCell;
         /**
          *
          * Gets the table that contains the content control. Returns a null object if it is not contained in a table. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTableOrNullObject: Word.Table;
+        parentTableOrNullObject: Word.Table;
         /**
          *
          * Gets the collection of table objects in the content control. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly tables: Word.TableCollection;
+        tables: Word.TableCollection;
         /**
          *
          * Gets or sets the appearance of the content control. The value can be 'boundingBox', 'tags' or 'hidden'.
@@ -20455,7 +15155,7 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          */
-        readonly id: number;
+        id: number;
         /**
          *
          * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
@@ -20490,7 +15190,7 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly subtype: string;
+        subtype: string;
         /**
          *
          * Gets or sets a tag to identify a content control.
@@ -20504,7 +15204,7 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          */
-        readonly text: string;
+        text: string;
         /**
          *
          * Gets or sets the title for a content control.
@@ -20518,7 +15218,7 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          */
-        readonly type: string;
+        type: string;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
         set(properties: Interfaces.ContentControlUpdateData, options?: {
             /**
@@ -20701,12 +15401,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.ContentControlLoadOptions): Word.ContentControl;
-        load(option?: string | string[]): Word.ContentControl;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.ContentControl;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.ContentControl;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -20715,7 +15410,23 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.ContentControl;
-        toJSON(): Word.Interfaces.ContentControlData;
+        toJSON(): {
+            "appearance": string;
+            "cannotDelete": boolean;
+            "cannotEdit": boolean;
+            "color": string;
+            "font": Font;
+            "id": number;
+            "placeholderText": string;
+            "removeWhenEdited": boolean;
+            "style": string;
+            "styleBuiltIn": string;
+            "subtype": string;
+            "tag": string;
+            "text": string;
+            "title": string;
+            "type": string;
+        };
     }
     /**
      *
@@ -20725,7 +15436,7 @@ declare namespace Word {
      */
     class ContentControlCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<Word.ContentControl>;
+        items: Array<Word.ContentControl>;
         /**
          *
          * Gets a content control by its identifier. Throws if there isn't a content control with the identifier in this collection.
@@ -20797,9 +15508,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ContentControlCollection;
-        load(option?: string | string[]): Word.ContentControlCollection;
-        load(option?: OfficeExtension.LoadOption): Word.ContentControlCollection;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.ContentControlCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -20808,7 +15517,7 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.ContentControlCollection;
-        toJSON(): Word.Interfaces.ContentControlCollectionData;
+        toJSON(): {};
     }
     /**
      *
@@ -20823,17 +15532,17 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly key: string;
+        key: string;
         /**
          *
-         * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
+         * Gets the value type of the custom property. Read only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly type: string;
+        type: string;
         /**
          *
-         * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+         * Gets or sets the value of the custom property.
          *
          * [Api set: WordApi 1.3]
          */
@@ -20857,12 +15566,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.CustomPropertyLoadOptions): Word.CustomProperty;
-        load(option?: string | string[]): Word.CustomProperty;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.CustomProperty;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.CustomProperty;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -20871,7 +15575,11 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.CustomProperty;
-        toJSON(): Word.Interfaces.CustomPropertyData;
+        toJSON(): {
+            "key": string;
+            "type": string;
+            "value": any;
+        };
     }
     /**
      *
@@ -20881,7 +15589,7 @@ declare namespace Word {
      */
     class CustomPropertyCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<Word.CustomProperty>;
+        items: Array<Word.CustomProperty>;
         /**
          *
          * Creates a new or sets an existing custom property.
@@ -20927,9 +15635,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CustomPropertyCollection;
-        load(option?: string | string[]): Word.CustomPropertyCollection;
-        load(option?: OfficeExtension.LoadOption): Word.CustomPropertyCollection;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.CustomPropertyCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -20938,7 +15644,7 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.CustomPropertyCollection;
-        toJSON(): Word.Interfaces.CustomPropertyCollectionData;
+        toJSON(): {};
     }
     /**
      *
@@ -20953,35 +15659,35 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          */
-        readonly body: Word.Body;
+        body: Word.Body;
         /**
          *
-         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
+         * Gets the collection of content control objects in the current document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly contentControls: Word.ContentControlCollection;
+        contentControls: Word.ContentControlCollection;
         /**
          *
-         * Gets the properties of the document. Read-only.
+         * Gets the properties of the current document. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly properties: Word.DocumentProperties;
+        properties: Word.DocumentProperties;
         /**
          *
          * Gets the collection of section objects in the document. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly sections: Word.SectionCollection;
+        sections: Word.SectionCollection;
         /**
          *
          * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly saved: boolean;
+        saved: boolean;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
         set(properties: Interfaces.DocumentUpdateData, options?: {
             /**
@@ -21000,13 +15706,6 @@ declare namespace Word {
         getSelection(): Word.Range;
         /**
          *
-         * Open the document.
-         *
-         * [Api set: WordApi 1.3]
-         */
-        open(): void;
-        /**
-         *
          * Saves the document. This will use the Word default file naming convention if the document has not been saved before.
          *
          * [Api set: WordApi 1.1]
@@ -21015,12 +15714,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.DocumentLoadOptions): Word.Document;
-        load(option?: string | string[]): Word.Document;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.Document;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.Document;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -21029,91 +15723,11 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.Document;
-        toJSON(): Word.Interfaces.DocumentData;
-    }
-    /**
-     *
-     * The DocumentCreated object is the top level object created by Application.CreateDocument. A DocumentCreated object is a special Document object.
-     *
-     * [Api set: WordApi 1.3]
-     */
-    class DocumentCreated extends OfficeExtension.ClientObject {
-        /**
-         *
-         * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
-         *
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        readonly body: Word.Body;
-        /**
-         *
-         * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
-         *
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        readonly contentControls: Word.ContentControlCollection;
-        /**
-         *
-         * Gets the properties of the document. Read-only.
-         *
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        readonly properties: Word.DocumentProperties;
-        /**
-         *
-         * Gets the collection of section objects in the document. Read-only.
-         *
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        readonly sections: Word.SectionCollection;
-        /**
-         *
-         * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
-         *
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        readonly saved: boolean;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.DocumentCreatedUpdateData, options?: {
-            /**
-             * Throw an error if the passed-in property list includes read-only properties (default = true).
-             */
-            throwOnReadOnly?: boolean;
-        }): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: DocumentCreated): void;
-        /**
-         *
-         * Open the document.
-         *
-         * [Api set: WordApi 1.3]
-         */
-        open(): void;
-        /**
-         *
-         * Saves the document. This will use the Word default file naming convention if the document has not been saved before.
-         *
-         * [Api set: WordApiHiddenDocument 1.3]
-         */
-        save(): void;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         */
-        load(option?: Word.Interfaces.DocumentCreatedLoadOptions): Word.DocumentCreated;
-        load(option?: string | string[]): Word.DocumentCreated;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.DocumentCreated;
-        /**
-         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
-         */
-        track(): Word.DocumentCreated;
-        /**
-         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
-         */
-        untrack(): Word.DocumentCreated;
-        toJSON(): Word.Interfaces.DocumentCreatedData;
+        toJSON(): {
+            "body": Body;
+            "properties": DocumentProperties;
+            "saved": boolean;
+        };
     }
     /**
      *
@@ -21128,14 +15742,14 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly customProperties: Word.CustomPropertyCollection;
+        customProperties: Word.CustomPropertyCollection;
         /**
          *
          * Gets the application name of the document. Read only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly applicationName: string;
+        applicationName: string;
         /**
          *
          * Gets or sets the author of the document.
@@ -21170,7 +15784,7 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly creationDate: Date;
+        creationDate: Date;
         /**
          *
          * Gets or sets the format of the document.
@@ -21191,21 +15805,21 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly lastAuthor: string;
+        lastAuthor: string;
         /**
          *
          * Gets the last print date of the document. Read only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly lastPrintDate: Date;
+        lastPrintDate: Date;
         /**
          *
          * Gets the last save time of the document. Read only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly lastSaveTime: Date;
+        lastSaveTime: Date;
         /**
          *
          * Gets or sets the manager of the document.
@@ -21219,14 +15833,14 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly revisionNumber: string;
+        revisionNumber: string;
         /**
          *
          * Gets the security of the document. Read only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly security: number;
+        security: number;
         /**
          *
          * Gets or sets the subject of the document.
@@ -21240,7 +15854,7 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly template: string;
+        template: string;
         /**
          *
          * Gets or sets the title of the document.
@@ -21260,12 +15874,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.DocumentPropertiesLoadOptions): Word.DocumentProperties;
-        load(option?: string | string[]): Word.DocumentProperties;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.DocumentProperties;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.DocumentProperties;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -21274,7 +15883,25 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.DocumentProperties;
-        toJSON(): Word.Interfaces.DocumentPropertiesData;
+        toJSON(): {
+            "applicationName": string;
+            "author": string;
+            "category": string;
+            "comments": string;
+            "company": string;
+            "creationDate": Date;
+            "format": string;
+            "keywords": string;
+            "lastAuthor": string;
+            "lastPrintDate": Date;
+            "lastSaveTime": Date;
+            "manager": string;
+            "revisionNumber": string;
+            "security": number;
+            "subject": string;
+            "template": string;
+            "title": string;
+        };
     }
     /**
      *
@@ -21372,12 +15999,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.FontLoadOptions): Word.Font;
-        load(option?: string | string[]): Word.Font;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.Font;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.Font;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -21386,7 +16008,19 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.Font;
-        toJSON(): Word.Interfaces.FontData;
+        toJSON(): {
+            "bold": boolean;
+            "color": string;
+            "doubleStrikeThrough": boolean;
+            "highlightColor": string;
+            "italic": boolean;
+            "name": string;
+            "size": number;
+            "strikeThrough": boolean;
+            "subscript": boolean;
+            "superscript": boolean;
+            "underline": string;
+        };
     }
     /**
      *
@@ -21401,49 +16035,49 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          */
-        readonly paragraph: Word.Paragraph;
+        paragraph: Word.Paragraph;
         /**
          *
          * Gets the content control that contains the inline image. Throws if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly parentContentControl: Word.ContentControl;
+        parentContentControl: Word.ContentControl;
         /**
          *
          * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentContentControlOrNullObject: Word.ContentControl;
+        parentContentControlOrNullObject: Word.ContentControl;
         /**
          *
          * Gets the table that contains the inline image. Throws if it is not contained in a table. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTable: Word.Table;
+        parentTable: Word.Table;
         /**
          *
          * Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTableCell: Word.TableCell;
+        parentTableCell: Word.TableCell;
         /**
          *
          * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTableCellOrNullObject: Word.TableCell;
+        parentTableCellOrNullObject: Word.TableCell;
         /**
          *
          * Gets the table that contains the inline image. Returns a null object if it is not contained in a table. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTableOrNullObject: Word.Table;
+        parentTableOrNullObject: Word.Table;
         /**
          *
          * Gets or sets a string that represents the alternative text associated with the inline image
@@ -21621,12 +16255,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.InlinePictureLoadOptions): Word.InlinePicture;
-        load(option?: string | string[]): Word.InlinePicture;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.InlinePicture;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.InlinePicture;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -21635,7 +16264,14 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.InlinePicture;
-        toJSON(): Word.Interfaces.InlinePictureData;
+        toJSON(): {
+            "altTextDescription": string;
+            "altTextTitle": string;
+            "height": number;
+            "hyperlink": string;
+            "lockAspectRatio": boolean;
+            "width": number;
+        };
     }
     /**
      *
@@ -21645,7 +16281,7 @@ declare namespace Word {
      */
     class InlinePictureCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<Word.InlinePicture>;
+        items: Array<Word.InlinePicture>;
         /**
          *
          * Gets the first inline image in this collection. Throws if this collection is empty.
@@ -21663,9 +16299,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.InlinePictureCollection;
-        load(option?: string | string[]): Word.InlinePictureCollection;
-        load(option?: OfficeExtension.LoadOption): Word.InlinePictureCollection;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.InlinePictureCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -21674,7 +16308,7 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.InlinePictureCollection;
-        toJSON(): Word.Interfaces.InlinePictureCollectionData;
+        toJSON(): {};
     }
     /**
      *
@@ -21689,28 +16323,28 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly paragraphs: Word.ParagraphCollection;
+        paragraphs: Word.ParagraphCollection;
         /**
          *
          * Gets the list's id.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly id: number;
+        id: number;
         /**
          *
          * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly levelExistences: Array<boolean>;
+        levelExistences: Array<boolean>;
         /**
          *
          * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number' or 'Picture'. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly levelTypes: Array<string>;
+        levelTypes: Array<string>;
         /**
          *
          * Gets the paragraphs that occur at the specified level in the list.
@@ -21796,12 +16430,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.ListLoadOptions): Word.List;
-        load(option?: string | string[]): Word.List;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.List;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.List;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -21810,7 +16439,11 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.List;
-        toJSON(): Word.Interfaces.ListData;
+        toJSON(): {
+            "id": number;
+            "levelExistences": boolean[];
+            "levelTypes": string[];
+        };
     }
     /**
      *
@@ -21820,7 +16453,7 @@ declare namespace Word {
      */
     class ListCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<Word.List>;
+        items: Array<Word.List>;
         /**
          *
          * Gets a list by its identifier. Throws if there isn't a list with the identifier in this collection.
@@ -21865,9 +16498,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ListCollection;
-        load(option?: string | string[]): Word.ListCollection;
-        load(option?: OfficeExtension.LoadOption): Word.ListCollection;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.ListCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -21876,7 +16507,7 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.ListCollection;
-        toJSON(): Word.Interfaces.ListCollectionData;
+        toJSON(): {};
     }
     /**
      *
@@ -21898,14 +16529,14 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly listString: string;
+        listString: string;
         /**
          *
          * Gets the list item order number in relation to its siblings. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly siblingIndex: number;
+        siblingIndex: number;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
         set(properties: Interfaces.ListItemUpdateData, options?: {
             /**
@@ -21945,12 +16576,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.ListItemLoadOptions): Word.ListItem;
-        load(option?: string | string[]): Word.ListItem;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.ListItem;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.ListItem;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -21959,7 +16585,11 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.ListItem;
-        toJSON(): Word.Interfaces.ListItemData;
+        toJSON(): {
+            "level": number;
+            "listString": string;
+            "siblingIndex": number;
+        };
     }
     /**
      *
@@ -21974,98 +16604,98 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          */
-        readonly contentControls: Word.ContentControlCollection;
+        contentControls: Word.ContentControlCollection;
         /**
          *
          * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly font: Word.Font;
+        font: Word.Font;
         /**
          *
          * Gets the collection of inlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly inlinePictures: Word.InlinePictureCollection;
+        inlinePictures: Word.InlinePictureCollection;
         /**
          *
          * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly list: Word.List;
+        list: Word.List;
         /**
          *
          * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly listItem: Word.ListItem;
+        listItem: Word.ListItem;
         /**
          *
          * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly listItemOrNullObject: Word.ListItem;
+        listItemOrNullObject: Word.ListItem;
         /**
          *
          * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly listOrNullObject: Word.List;
+        listOrNullObject: Word.List;
         /**
          *
          * Gets the parent body of the paragraph. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentBody: Word.Body;
+        parentBody: Word.Body;
         /**
          *
          * Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly parentContentControl: Word.ContentControl;
+        parentContentControl: Word.ContentControl;
         /**
          *
          * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentContentControlOrNullObject: Word.ContentControl;
+        parentContentControlOrNullObject: Word.ContentControl;
         /**
          *
          * Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTable: Word.Table;
+        parentTable: Word.Table;
         /**
          *
          * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTableCell: Word.TableCell;
+        parentTableCell: Word.TableCell;
         /**
          *
          * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTableCellOrNullObject: Word.TableCell;
+        parentTableCellOrNullObject: Word.TableCell;
         /**
          *
          * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTableOrNullObject: Word.Table;
+        parentTableOrNullObject: Word.Table;
         /**
          *
          * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
@@ -22086,14 +16716,14 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly isLastParagraph: boolean;
+        isLastParagraph: boolean;
         /**
          *
          * Checks whether the paragraph is a list item. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly isListItem: boolean;
+        isListItem: boolean;
         /**
          *
          * Gets or sets the left indent value, in points, for the paragraph.
@@ -22170,14 +16800,14 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly tableNestingLevel: number;
+        tableNestingLevel: number;
         /**
          *
          * Gets the text of the paragraph. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly text: string;
+        text: string;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
         set(properties: Interfaces.ParagraphUpdateData, options?: {
             /**
@@ -22416,12 +17046,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.ParagraphLoadOptions): Word.Paragraph;
-        load(option?: string | string[]): Word.Paragraph;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.Paragraph;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.Paragraph;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -22430,7 +17055,27 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.Paragraph;
-        toJSON(): Word.Interfaces.ParagraphData;
+        toJSON(): {
+            "alignment": string;
+            "firstLineIndent": number;
+            "font": Font;
+            "isLastParagraph": boolean;
+            "isListItem": boolean;
+            "leftIndent": number;
+            "lineSpacing": number;
+            "lineUnitAfter": number;
+            "lineUnitBefore": number;
+            "listItem": ListItem;
+            "listItemOrNullObject": ListItem;
+            "outlineLevel": number;
+            "rightIndent": number;
+            "spaceAfter": number;
+            "spaceBefore": number;
+            "style": string;
+            "styleBuiltIn": string;
+            "tableNestingLevel": number;
+            "text": string;
+        };
     }
     /**
      *
@@ -22440,7 +17085,7 @@ declare namespace Word {
      */
     class ParagraphCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<Word.Paragraph>;
+        items: Array<Word.Paragraph>;
         /**
          *
          * Gets the first paragraph in this collection. Throws if the collection is empty.
@@ -22472,9 +17117,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.ParagraphCollection;
-        load(option?: string | string[]): Word.ParagraphCollection;
-        load(option?: OfficeExtension.LoadOption): Word.ParagraphCollection;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.ParagraphCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -22483,7 +17126,7 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.ParagraphCollection;
-        toJSON(): Word.Interfaces.ParagraphCollectionData;
+        toJSON(): {};
     }
     /**
      *
@@ -22498,91 +17141,91 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          */
-        readonly contentControls: Word.ContentControlCollection;
+        contentControls: Word.ContentControlCollection;
         /**
          *
          * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly font: Word.Font;
+        font: Word.Font;
         /**
          *
          * Gets the collection of inline picture objects in the range. Read-only.
          *
          * [Api set: WordApi 1.2]
          */
-        readonly inlinePictures: Word.InlinePictureCollection;
+        inlinePictures: Word.InlinePictureCollection;
         /**
          *
          * Gets the collection of list objects in the range. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly lists: Word.ListCollection;
+        lists: Word.ListCollection;
         /**
          *
          * Gets the collection of paragraph objects in the range. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly paragraphs: Word.ParagraphCollection;
+        paragraphs: Word.ParagraphCollection;
         /**
          *
          * Gets the parent body of the range. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentBody: Word.Body;
+        parentBody: Word.Body;
         /**
          *
          * Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.1]
          */
-        readonly parentContentControl: Word.ContentControl;
+        parentContentControl: Word.ContentControl;
         /**
          *
          * Gets the content control that contains the range. Returns a null object if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentContentControlOrNullObject: Word.ContentControl;
+        parentContentControlOrNullObject: Word.ContentControl;
         /**
          *
          * Gets the table that contains the range. Throws if it is not contained in a table. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTable: Word.Table;
+        parentTable: Word.Table;
         /**
          *
          * Gets the table cell that contains the range. Throws if it is not contained in a table cell. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTableCell: Word.TableCell;
+        parentTableCell: Word.TableCell;
         /**
          *
          * Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTableCellOrNullObject: Word.TableCell;
+        parentTableCellOrNullObject: Word.TableCell;
         /**
          *
          * Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTableOrNullObject: Word.Table;
+        parentTableOrNullObject: Word.Table;
         /**
          *
          * Gets the collection of table objects in the range. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly tables: Word.TableCollection;
+        tables: Word.TableCollection;
         /**
          *
          * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
@@ -22596,7 +17239,7 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly isEmpty: boolean;
+        isEmpty: boolean;
         /**
          *
          * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -22617,7 +17260,7 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          */
-        readonly text: string;
+        text: string;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
         set(properties: Interfaces.RangeUpdateData, options?: {
             /**
@@ -22877,12 +17520,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.RangeLoadOptions): Word.Range;
-        load(option?: string | string[]): Word.Range;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.Range;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.Range;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -22891,7 +17529,14 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.Range;
-        toJSON(): Word.Interfaces.RangeData;
+        toJSON(): {
+            "font": Font;
+            "hyperlink": string;
+            "isEmpty": boolean;
+            "style": string;
+            "styleBuiltIn": string;
+            "text": string;
+        };
     }
     /**
      *
@@ -22901,7 +17546,7 @@ declare namespace Word {
      */
     class RangeCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<Word.Range>;
+        items: Array<Word.Range>;
         /**
          *
          * Gets the first range in this collection. Throws if this collection is empty.
@@ -22919,9 +17564,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.RangeCollection;
-        load(option?: string | string[]): Word.RangeCollection;
-        load(option?: OfficeExtension.LoadOption): Word.RangeCollection;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.RangeCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -22930,7 +17573,7 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.RangeCollection;
-        toJSON(): Word.Interfaces.RangeCollectionData;
+        toJSON(): {};
     }
     /**
      *
@@ -23001,17 +17644,20 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;
-        load(option?: string | string[]): Word.SearchOptions;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.SearchOptions;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.SearchOptions;
         /**
          * Create a new instance of Word.SearchOptions object
          */
         static newObject(context: OfficeExtension.ClientRequestContext): Word.SearchOptions;
-        toJSON(): Word.Interfaces.SearchOptionsData;
+        toJSON(): {
+            "ignorePunct": boolean;
+            "ignoreSpace": boolean;
+            "matchCase": boolean;
+            "matchPrefix": boolean;
+            "matchSuffix": boolean;
+            "matchWholeWord": boolean;
+            "matchWildcards": boolean;
+        };
     }
     /**
      *
@@ -23026,7 +17672,7 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          */
-        readonly body: Word.Body;
+        body: Word.Body;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
         set(properties: Interfaces.SectionUpdateData, options?: {
             /**
@@ -23071,12 +17717,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.SectionLoadOptions): Word.Section;
-        load(option?: string | string[]): Word.Section;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.Section;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.Section;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -23085,7 +17726,9 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.Section;
-        toJSON(): Word.Interfaces.SectionData;
+        toJSON(): {
+            "body": Body;
+        };
     }
     /**
      *
@@ -23095,7 +17738,7 @@ declare namespace Word {
      */
     class SectionCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<Word.Section>;
+        items: Array<Word.Section>;
         /**
          *
          * Gets the first section in this collection. Throws if this collection is empty.
@@ -23113,9 +17756,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.SectionCollection;
-        load(option?: string | string[]): Word.SectionCollection;
-        load(option?: OfficeExtension.LoadOption): Word.SectionCollection;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.SectionCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -23124,7 +17765,7 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.SectionCollection;
-        toJSON(): Word.Interfaces.SectionCollectionData;
+        toJSON(): {};
     }
     /**
      *
@@ -23139,70 +17780,70 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly font: Word.Font;
+        font: Word.Font;
         /**
          *
          * Gets the parent body of the table. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentBody: Word.Body;
+        parentBody: Word.Body;
         /**
          *
          * Gets the content control that contains the table. Throws if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentContentControl: Word.ContentControl;
+        parentContentControl: Word.ContentControl;
         /**
          *
          * Gets the content control that contains the table. Returns a null object if there isn't a parent content control. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentContentControlOrNullObject: Word.ContentControl;
+        parentContentControlOrNullObject: Word.ContentControl;
         /**
          *
          * Gets the table that contains this table. Throws if it is not contained in a table. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTable: Word.Table;
+        parentTable: Word.Table;
         /**
          *
          * Gets the table cell that contains this table. Throws if it is not contained in a table cell. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTableCell: Word.TableCell;
+        parentTableCell: Word.TableCell;
         /**
          *
          * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTableCellOrNullObject: Word.TableCell;
+        parentTableCellOrNullObject: Word.TableCell;
         /**
          *
          * Gets the table that contains this table. Returns a null object if it is not contained in a table. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTableOrNullObject: Word.Table;
+        parentTableOrNullObject: Word.Table;
         /**
          *
          * Gets all of the table rows. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly rows: Word.TableRowCollection;
+        rows: Word.TableRowCollection;
         /**
          *
          * Gets the child tables nested one level deeper. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly tables: Word.TableCollection;
+        tables: Word.TableCollection;
         /**
          *
          * Gets or sets the alignment of the table against the page column. The value can be 'left', 'centered' or 'right'.
@@ -23230,21 +17871,21 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly isUniform: boolean;
+        isUniform: boolean;
         /**
          *
          * Gets the nesting level of the table. Top-level tables have level 1. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly nestingLevel: number;
+        nestingLevel: number;
         /**
          *
          * Gets the number of rows in the table. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly rowCount: number;
+        rowCount: number;
         /**
          *
          * Gets and sets the shading color.
@@ -23559,12 +18200,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.TableLoadOptions): Word.Table;
-        load(option?: string | string[]): Word.Table;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.Table;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.Table;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -23573,7 +18209,26 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.Table;
-        toJSON(): Word.Interfaces.TableData;
+        toJSON(): {
+            "alignment": string;
+            "font": Font;
+            "headerRowCount": number;
+            "horizontalAlignment": string;
+            "isUniform": boolean;
+            "nestingLevel": number;
+            "rowCount": number;
+            "shadingColor": string;
+            "style": string;
+            "styleBandedColumns": boolean;
+            "styleBandedRows": boolean;
+            "styleBuiltIn": string;
+            "styleFirstColumn": boolean;
+            "styleLastColumn": boolean;
+            "styleTotalRow": boolean;
+            "values": string[][];
+            "verticalAlignment": string;
+            "width": number;
+        };
     }
     /**
      *
@@ -23583,7 +18238,7 @@ declare namespace Word {
      */
     class TableCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<Word.Table>;
+        items: Array<Word.Table>;
         /**
          *
          * Gets the first table in this collection. Throws if this collection is empty.
@@ -23601,9 +18256,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.TableCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableCollection;
-        load(option?: string | string[]): Word.TableCollection;
-        load(option?: OfficeExtension.LoadOption): Word.TableCollection;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.TableCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -23612,7 +18265,7 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.TableCollection;
-        toJSON(): Word.Interfaces.TableCollectionData;
+        toJSON(): {};
     }
     /**
      *
@@ -23627,28 +18280,28 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly cells: Word.TableCellCollection;
+        cells: Word.TableCellCollection;
         /**
          *
          * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly font: Word.Font;
+        font: Word.Font;
         /**
          *
          * Gets parent table. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTable: Word.Table;
+        parentTable: Word.Table;
         /**
          *
          * Gets the number of cells in the row. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly cellCount: number;
+        cellCount: number;
         /**
          *
          * Gets and sets the horizontal alignment of every cell in the row. The value can be 'left', 'centered', 'right', or 'justified'.
@@ -23662,7 +18315,7 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly isHeader: boolean;
+        isHeader: boolean;
         /**
          *
          * Gets and sets the preferred height of the row in points.
@@ -23676,7 +18329,7 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly rowIndex: number;
+        rowIndex: number;
         /**
          *
          * Gets and sets the shading color.
@@ -23804,12 +18457,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.TableRowLoadOptions): Word.TableRow;
-        load(option?: string | string[]): Word.TableRow;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.TableRow;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.TableRow;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -23818,7 +18466,17 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.TableRow;
-        toJSON(): Word.Interfaces.TableRowData;
+        toJSON(): {
+            "cellCount": number;
+            "font": Font;
+            "horizontalAlignment": string;
+            "isHeader": boolean;
+            "preferredHeight": number;
+            "rowIndex": number;
+            "shadingColor": string;
+            "values": string[][];
+            "verticalAlignment": string;
+        };
     }
     /**
      *
@@ -23828,7 +18486,7 @@ declare namespace Word {
      */
     class TableRowCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<Word.TableRow>;
+        items: Array<Word.TableRow>;
         /**
          *
          * Gets the first row in this collection. Throws if this collection is empty.
@@ -23846,9 +18504,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableRowCollection;
-        load(option?: string | string[]): Word.TableRowCollection;
-        load(option?: OfficeExtension.LoadOption): Word.TableRowCollection;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.TableRowCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -23857,7 +18513,7 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.TableRowCollection;
-        toJSON(): Word.Interfaces.TableRowCollectionData;
+        toJSON(): {};
     }
     /**
      *
@@ -23872,28 +18528,28 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly body: Word.Body;
+        body: Word.Body;
         /**
          *
          * Gets the parent row of the cell. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentRow: Word.TableRow;
+        parentRow: Word.TableRow;
         /**
          *
          * Gets the parent table of the cell. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly parentTable: Word.Table;
+        parentTable: Word.Table;
         /**
          *
          * Gets the index of the cell in its row. Read-only.
          *
          * [Api set: WordApi 1.3]
          */
-        readonly cellIndex: number;
+        cellIndex: number;
         /**
          *
          * Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
@@ -23914,7 +18570,7 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly rowIndex: number;
+        rowIndex: number;
         /**
          *
          * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
@@ -23942,7 +18598,7 @@ declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          */
-        readonly width: number;
+        width: number;
         /** Sets multiple properties on the object at the same time, based on JSON input. */
         set(properties: Interfaces.TableCellUpdateData, options?: {
             /**
@@ -24033,12 +18689,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.TableCellLoadOptions): Word.TableCell;
-        load(option?: string | string[]): Word.TableCell;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.TableCell;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.TableCell;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -24047,7 +18698,17 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.TableCell;
-        toJSON(): Word.Interfaces.TableCellData;
+        toJSON(): {
+            "body": Body;
+            "cellIndex": number;
+            "columnWidth": number;
+            "horizontalAlignment": string;
+            "rowIndex": number;
+            "shadingColor": string;
+            "value": string;
+            "verticalAlignment": string;
+            "width": number;
+        };
     }
     /**
      *
@@ -24057,7 +18718,7 @@ declare namespace Word {
      */
     class TableCellCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
-        readonly items: Array<Word.TableCell>;
+        items: Array<Word.TableCell>;
         /**
          *
          * Gets the first table cell in this collection. Throws if this collection is empty.
@@ -24075,9 +18736,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.TableCellCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.TableCellCollection;
-        load(option?: string | string[]): Word.TableCellCollection;
-        load(option?: OfficeExtension.LoadOption): Word.TableCellCollection;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.TableCellCollection;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -24086,7 +18745,7 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.TableCellCollection;
-        toJSON(): Word.Interfaces.TableCellCollectionData;
+        toJSON(): {};
     }
     /**
      *
@@ -24128,12 +18787,7 @@ declare namespace Word {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
-        load(option?: Word.Interfaces.TableBorderLoadOptions): Word.TableBorder;
-        load(option?: string | string[]): Word.TableBorder;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Word.TableBorder;
+        load(option?: string | string[] | OfficeExtension.LoadOption): Word.TableBorder;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -24142,7 +18796,11 @@ declare namespace Word {
          * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
          */
         untrack(): Word.TableBorder;
-        toJSON(): Word.Interfaces.TableBorderData;
+        toJSON(): {
+            "color": string;
+            "type": string;
+            "width": number;
+        };
     }
     /**
      *
@@ -24688,10 +19346,6 @@ declare namespace Word {
         var notImplemented: string;
     }
     module Interfaces {
-        interface CollectionLoadOptions {
-            $top?: number;
-            $skip?: number;
-        }
         /** An interface for updating data on the Body object, for use in "body.set({ ... })". */
         interface BodyUpdateData {
             /**
@@ -24796,23 +19450,15 @@ declare namespace Word {
              */
             title?: string;
         }
-        /** An interface for updating data on the ContentControlCollection object, for use in "contentControlCollection.set({ ... })". */
-        interface ContentControlCollectionUpdateData {
-            items?: Word.Interfaces.ContentControlData[];
-        }
         /** An interface for updating data on the CustomProperty object, for use in "customProperty.set({ ... })". */
         interface CustomPropertyUpdateData {
             /**
              *
-             * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+             * Gets or sets the value of the custom property.
              *
              * [Api set: WordApi 1.3]
              */
             value?: any;
-        }
-        /** An interface for updating data on the CustomPropertyCollection object, for use in "customPropertyCollection.set({ ... })". */
-        interface CustomPropertyCollectionUpdateData {
-            items?: Word.Interfaces.CustomPropertyData[];
         }
         /** An interface for updating data on the Document object, for use in "document.set({ ... })". */
         interface DocumentUpdateData {
@@ -24825,26 +19471,9 @@ declare namespace Word {
             body?: Word.Interfaces.BodyUpdateData;
             /**
             *
-            * Gets the properties of the document.
+            * Gets the properties of the current document.
             *
             * [Api set: WordApi 1.3]
-            */
-            properties?: Word.Interfaces.DocumentPropertiesUpdateData;
-        }
-        /** An interface for updating data on the DocumentCreated object, for use in "documentCreated.set({ ... })". */
-        interface DocumentCreatedUpdateData {
-            /**
-            *
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
-            *
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            body?: Word.Interfaces.BodyUpdateData;
-            /**
-            *
-            * Gets the properties of the document.
-            *
-            * [Api set: WordApiHiddenDocument 1.3]
             */
             properties?: Word.Interfaces.DocumentPropertiesUpdateData;
         }
@@ -25039,14 +19668,6 @@ declare namespace Word {
              */
             width?: number;
         }
-        /** An interface for updating data on the InlinePictureCollection object, for use in "inlinePictureCollection.set({ ... })". */
-        interface InlinePictureCollectionUpdateData {
-            items?: Word.Interfaces.InlinePictureData[];
-        }
-        /** An interface for updating data on the ListCollection object, for use in "listCollection.set({ ... })". */
-        interface ListCollectionUpdateData {
-            items?: Word.Interfaces.ListData[];
-        }
         /** An interface for updating data on the ListItem object, for use in "listItem.set({ ... })". */
         interface ListItemUpdateData {
             /**
@@ -25165,10 +19786,6 @@ declare namespace Word {
              */
             styleBuiltIn?: string;
         }
-        /** An interface for updating data on the ParagraphCollection object, for use in "paragraphCollection.set({ ... })". */
-        interface ParagraphCollectionUpdateData {
-            items?: Word.Interfaces.ParagraphData[];
-        }
         /** An interface for updating data on the Range object, for use in "range.set({ ... })". */
         interface RangeUpdateData {
             /**
@@ -25199,10 +19816,6 @@ declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             styleBuiltIn?: string;
-        }
-        /** An interface for updating data on the RangeCollection object, for use in "rangeCollection.set({ ... })". */
-        interface RangeCollectionUpdateData {
-            items?: Word.Interfaces.RangeData[];
         }
         /** An interface for updating data on the SearchOptions object, for use in "searchOptions.set({ ... })". */
         interface SearchOptionsUpdateData {
@@ -25265,10 +19878,6 @@ declare namespace Word {
             * [Api set: WordApi 1.1]
             */
             body?: Word.Interfaces.BodyUpdateData;
-        }
-        /** An interface for updating data on the SectionCollection object, for use in "sectionCollection.set({ ... })". */
-        interface SectionCollectionUpdateData {
-            items?: Word.Interfaces.SectionData[];
         }
         /** An interface for updating data on the Table object, for use in "table.set({ ... })". */
         interface TableUpdateData {
@@ -25378,10 +19987,6 @@ declare namespace Word {
              */
             width?: number;
         }
-        /** An interface for updating data on the TableCollection object, for use in "tableCollection.set({ ... })". */
-        interface TableCollectionUpdateData {
-            items?: Word.Interfaces.TableData[];
-        }
         /** An interface for updating data on the TableRow object, for use in "tableRow.set({ ... })". */
         interface TableRowUpdateData {
             /**
@@ -25426,10 +20031,6 @@ declare namespace Word {
              * [Api set: WordApi 1.3]
              */
             verticalAlignment?: string;
-        }
-        /** An interface for updating data on the TableRowCollection object, for use in "tableRowCollection.set({ ... })". */
-        interface TableRowCollectionUpdateData {
-            items?: Word.Interfaces.TableRowData[];
         }
         /** An interface for updating data on the TableCell object, for use in "tableCell.set({ ... })". */
         interface TableCellUpdateData {
@@ -25476,10 +20077,6 @@ declare namespace Word {
              */
             verticalAlignment?: string;
         }
-        /** An interface for updating data on the TableCellCollection object, for use in "tableCellCollection.set({ ... })". */
-        interface TableCellCollectionUpdateData {
-            items?: Word.Interfaces.TableCellData[];
-        }
         /** An interface for updating data on the TableBorder object, for use in "tableBorder.set({ ... })". */
         interface TableBorderUpdateData {
             /**
@@ -25504,4064 +20101,15 @@ declare namespace Word {
              */
             width?: number;
         }
-        /** An interface describing the data returned by calling "body.toJSON()". */
-        interface BodyData {
-            /**
-            *
-            * Gets the collection of rich text content control objects in the body. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            contentControls?: Word.Interfaces.ContentControlCollectionData;
-            /**
-            *
-            * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            font?: Word.Interfaces.FontData;
-            /**
-            *
-            * Gets the collection of inlinePicture objects in the body. The collection does not include floating images. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            inlinePictures?: Word.Interfaces.InlinePictureCollectionData;
-            /**
-            *
-            * Gets the collection of list objects in the body. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            lists?: Word.Interfaces.ListCollectionData;
-            /**
-            *
-            * Gets the collection of paragraph objects in the body. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            paragraphs?: Word.Interfaces.ParagraphCollectionData;
-            /**
-            *
-            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there isn't a parent body. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBody?: Word.Interfaces.BodyData;
-            /**
-            *
-            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBodyOrNullObject?: Word.Interfaces.BodyData;
-            /**
-            *
-            * Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlData;
-            /**
-            *
-            * Gets the content control that contains the body. Returns a null object if there isn't a parent content control. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;
-            /**
-            *
-            * Gets the parent section of the body. Throws if there isn't a parent section. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentSection?: Word.Interfaces.SectionData;
-            /**
-            *
-            * Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentSectionOrNullObject?: Word.Interfaces.SectionData;
-            /**
-            *
-            * Gets the collection of table objects in the body. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            tables?: Word.Interfaces.TableCollectionData;
-            /**
-             *
-             * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            style?: string;
-            /**
-             *
-             * Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBuiltIn?: string;
-            /**
-             *
-             * Gets the text of the body. Use the insertText method to insert text. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            text?: string;
-            /**
-             *
-             * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            type?: string;
-        }
-        /** An interface describing the data returned by calling "contentControl.toJSON()". */
-        interface ContentControlData {
-            /**
-            *
-            * Gets the collection of content control objects in the content control. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            contentControls?: Word.Interfaces.ContentControlCollectionData;
-            /**
-            *
-            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            font?: Word.Interfaces.FontData;
-            /**
-            *
-            * Gets the collection of inlinePicture objects in the content control. The collection does not include floating images. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            inlinePictures?: Word.Interfaces.InlinePictureCollectionData;
-            /**
-            *
-            * Gets the collection of list objects in the content control. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            lists?: Word.Interfaces.ListCollectionData;
-            /**
-            *
-            * Get the collection of paragraph objects in the content control. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            paragraphs?: Word.Interfaces.ParagraphCollectionData;
-            /**
-            *
-            * Gets the parent body of the content control. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBody?: Word.Interfaces.BodyData;
-            /**
-            *
-            * Gets the content control that contains the content control. Throws if there isn't a parent content control. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlData;
-            /**
-            *
-            * Gets the content control that contains the content control. Returns a null object if there isn't a parent content control. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;
-            /**
-            *
-            * Gets the table that contains the content control. Throws if it is not contained in a table. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableData;
-            /**
-            *
-            * Gets the table cell that contains the content control. Throws if it is not contained in a table cell. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCell?: Word.Interfaces.TableCellData;
-            /**
-            *
-            * Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCellOrNullObject?: Word.Interfaces.TableCellData;
-            /**
-            *
-            * Gets the table that contains the content control. Returns a null object if it is not contained in a table. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableOrNullObject?: Word.Interfaces.TableData;
-            /**
-            *
-            * Gets the collection of table objects in the content control. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            tables?: Word.Interfaces.TableCollectionData;
-            /**
-             *
-             * Gets or sets the appearance of the content control. The value can be 'boundingBox', 'tags' or 'hidden'.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            appearance?: string;
-            /**
-             *
-             * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            cannotDelete?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether the user can edit the contents of the content control.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            cannotEdit?: boolean;
-            /**
-             *
-             * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            color?: string;
-            /**
-             *
-             * Gets an integer that represents the content control identifier. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            id?: number;
-            /**
-             *
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            placeholderText?: string;
-            /**
-             *
-             * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            removeWhenEdited?: boolean;
-            /**
-             *
-             * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            style?: string;
-            /**
-             *
-             * Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBuiltIn?: string;
-            /**
-             *
-             * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            subtype?: string;
-            /**
-             *
-             * Gets or sets a tag to identify a content control.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            tag?: string;
-            /**
-             *
-             * Gets the text of the content control. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            text?: string;
-            /**
-             *
-             * Gets or sets the title for a content control.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            title?: string;
-            /**
-             *
-             * Gets the content control type. Only rich text content controls are supported currently. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            type?: string;
-        }
-        /** An interface describing the data returned by calling "contentControlCollection.toJSON()". */
-        interface ContentControlCollectionData {
-            items?: Word.Interfaces.ContentControlData[];
-        }
-        /** An interface describing the data returned by calling "customProperty.toJSON()". */
-        interface CustomPropertyData {
-            /**
-             *
-             * Gets the key of the custom property. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            key?: string;
-            /**
-             *
-             * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            type?: string;
-            /**
-             *
-             * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
-             *
-             * [Api set: WordApi 1.3]
-             */
-            value?: any;
-        }
-        /** An interface describing the data returned by calling "customPropertyCollection.toJSON()". */
-        interface CustomPropertyCollectionData {
-            items?: Word.Interfaces.CustomPropertyData[];
-        }
-        /** An interface describing the data returned by calling "document.toJSON()". */
-        interface DocumentData {
-            /**
-            *
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            body?: Word.Interfaces.BodyData;
-            /**
-            *
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            contentControls?: Word.Interfaces.ContentControlCollectionData;
-            /**
-            *
-            * Gets the properties of the document. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            properties?: Word.Interfaces.DocumentPropertiesData;
-            /**
-            *
-            * Gets the collection of section objects in the document. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            sections?: Word.Interfaces.SectionCollectionData;
-            /**
-             *
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            saved?: boolean;
-        }
-        /** An interface describing the data returned by calling "documentCreated.toJSON()". */
-        interface DocumentCreatedData {
-            /**
-            *
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
-            *
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            body?: Word.Interfaces.BodyData;
-            /**
-            *
-            * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
-            *
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            contentControls?: Word.Interfaces.ContentControlCollectionData;
-            /**
-            *
-            * Gets the properties of the document. Read-only.
-            *
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            properties?: Word.Interfaces.DocumentPropertiesData;
-            /**
-            *
-            * Gets the collection of section objects in the document. Read-only.
-            *
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            sections?: Word.Interfaces.SectionCollectionData;
-            /**
-             *
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
-             *
-             * [Api set: WordApiHiddenDocument 1.3]
-             */
-            saved?: boolean;
-        }
-        /** An interface describing the data returned by calling "documentProperties.toJSON()". */
-        interface DocumentPropertiesData {
-            /**
-            *
-            * Gets the collection of custom properties of the document. Read only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            customProperties?: Word.Interfaces.CustomPropertyCollectionData;
-            /**
-             *
-             * Gets the application name of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            applicationName?: string;
-            /**
-             *
-             * Gets or sets the author of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            author?: string;
-            /**
-             *
-             * Gets or sets the category of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            category?: string;
-            /**
-             *
-             * Gets or sets the comments of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            comments?: string;
-            /**
-             *
-             * Gets or sets the company of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            company?: string;
-            /**
-             *
-             * Gets the creation date of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            creationDate?: Date;
-            /**
-             *
-             * Gets or sets the format of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            format?: string;
-            /**
-             *
-             * Gets or sets the keywords of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            keywords?: string;
-            /**
-             *
-             * Gets the last author of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            lastAuthor?: string;
-            /**
-             *
-             * Gets the last print date of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            lastPrintDate?: Date;
-            /**
-             *
-             * Gets the last save time of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            lastSaveTime?: Date;
-            /**
-             *
-             * Gets or sets the manager of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            manager?: string;
-            /**
-             *
-             * Gets the revision number of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            revisionNumber?: string;
-            /**
-             *
-             * Gets the security of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            security?: number;
-            /**
-             *
-             * Gets or sets the subject of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            subject?: string;
-            /**
-             *
-             * Gets the template of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            template?: string;
-            /**
-             *
-             * Gets or sets the title of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            title?: string;
-        }
-        /** An interface describing the data returned by calling "font.toJSON()". */
-        interface FontData {
-            /**
-             *
-             * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            bold?: boolean;
-            /**
-             *
-             * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            color?: string;
-            /**
-             *
-             * Gets or sets a value that indicates whether the font has a double strike through. True if the font is formatted as double strikethrough text, otherwise, false.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            doubleStrikeThrough?: boolean;
-            /**
-             *
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, or an empty string for mixed highlight colors, or null for no highlight color.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            highlightColor?: string;
-            /**
-             *
-             * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            italic?: boolean;
-            /**
-             *
-             * Gets or sets a value that represents the name of the font.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            name?: string;
-            /**
-             *
-             * Gets or sets a value that represents the font size in points.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            size?: number;
-            /**
-             *
-             * Gets or sets a value that indicates whether the font has a strike through. True if the font is formatted as strikethrough text, otherwise, false.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            strikeThrough?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            subscript?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            superscript?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            underline?: string;
-        }
-        /** An interface describing the data returned by calling "inlinePicture.toJSON()". */
-        interface InlinePictureData {
-            /**
-            *
-            * Gets the parent paragraph that contains the inline image. Read-only.
-            *
-            * [Api set: WordApi 1.2]
-            */
-            paragraph?: Word.Interfaces.ParagraphData;
-            /**
-            *
-            * Gets the content control that contains the inline image. Throws if there isn't a parent content control. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlData;
-            /**
-            *
-            * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;
-            /**
-            *
-            * Gets the table that contains the inline image. Throws if it is not contained in a table. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableData;
-            /**
-            *
-            * Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCell?: Word.Interfaces.TableCellData;
-            /**
-            *
-            * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCellOrNullObject?: Word.Interfaces.TableCellData;
-            /**
-            *
-            * Gets the table that contains the inline image. Returns a null object if it is not contained in a table. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableOrNullObject?: Word.Interfaces.TableData;
-            /**
-             *
-             * Gets or sets a string that represents the alternative text associated with the inline image
-             *
-             * [Api set: WordApi 1.1]
-             */
-            altTextDescription?: string;
-            /**
-             *
-             * Gets or sets a string that contains the title for the inline image.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            altTextTitle?: string;
-            /**
-             *
-             * Gets or sets a number that describes the height of the inline image.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            height?: number;
-            /**
-             *
-             * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            hyperlink?: string;
-            /**
-             *
-             * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            lockAspectRatio?: boolean;
-            /**
-             *
-             * Gets or sets a number that describes the width of the inline image.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            width?: number;
-        }
-        /** An interface describing the data returned by calling "inlinePictureCollection.toJSON()". */
-        interface InlinePictureCollectionData {
-            items?: Word.Interfaces.InlinePictureData[];
-        }
-        /** An interface describing the data returned by calling "list.toJSON()". */
-        interface ListData {
-            /**
-            *
-            * Gets paragraphs in the list. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            paragraphs?: Word.Interfaces.ParagraphCollectionData;
-            /**
-             *
-             * Gets the list's id.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            id?: number;
-            /**
-             *
-             * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            levelExistences?: Array<boolean>;
-            /**
-             *
-             * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number' or 'Picture'. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            levelTypes?: Array<string>;
-        }
-        /** An interface describing the data returned by calling "listCollection.toJSON()". */
-        interface ListCollectionData {
-            items?: Word.Interfaces.ListData[];
-        }
-        /** An interface describing the data returned by calling "listItem.toJSON()". */
-        interface ListItemData {
-            /**
-             *
-             * Gets or sets the level of the item in the list.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            level?: number;
-            /**
-             *
-             * Gets the list item bullet, number or picture as a string. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            listString?: string;
-            /**
-             *
-             * Gets the list item order number in relation to its siblings. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            siblingIndex?: number;
-        }
-        /** An interface describing the data returned by calling "paragraph.toJSON()". */
-        interface ParagraphData {
-            /**
-            *
-            * Gets the collection of content control objects in the paragraph. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            contentControls?: Word.Interfaces.ContentControlCollectionData;
-            /**
-            *
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            font?: Word.Interfaces.FontData;
-            /**
-            *
-            * Gets the collection of inlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            inlinePictures?: Word.Interfaces.InlinePictureCollectionData;
-            /**
-            *
-            * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            list?: Word.Interfaces.ListData;
-            /**
-            *
-            * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            listItem?: Word.Interfaces.ListItemData;
-            /**
-            *
-            * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            listItemOrNullObject?: Word.Interfaces.ListItemData;
-            /**
-            *
-            * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            listOrNullObject?: Word.Interfaces.ListData;
-            /**
-            *
-            * Gets the parent body of the paragraph. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBody?: Word.Interfaces.BodyData;
-            /**
-            *
-            * Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlData;
-            /**
-            *
-            * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;
-            /**
-            *
-            * Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableData;
-            /**
-            *
-            * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCell?: Word.Interfaces.TableCellData;
-            /**
-            *
-            * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCellOrNullObject?: Word.Interfaces.TableCellData;
-            /**
-            *
-            * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableOrNullObject?: Word.Interfaces.TableData;
-            /**
-             *
-             * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            alignment?: string;
-            /**
-             *
-             * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            firstLineIndent?: number;
-            /**
-             *
-             * Indicates the paragraph is the last one inside its parent body. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            isLastParagraph?: boolean;
-            /**
-             *
-             * Checks whether the paragraph is a list item. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            isListItem?: boolean;
-            /**
-             *
-             * Gets or sets the left indent value, in points, for the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            leftIndent?: number;
-            /**
-             *
-             * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            lineSpacing?: number;
-            /**
-             *
-             * Gets or sets the amount of spacing, in grid lines. after the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            lineUnitAfter?: number;
-            /**
-             *
-             * Gets or sets the amount of spacing, in grid lines, before the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            lineUnitBefore?: number;
-            /**
-             *
-             * Gets or sets the outline level for the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            outlineLevel?: number;
-            /**
-             *
-             * Gets or sets the right indent value, in points, for the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            rightIndent?: number;
-            /**
-             *
-             * Gets or sets the spacing, in points, after the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            spaceAfter?: number;
-            /**
-             *
-             * Gets or sets the spacing, in points, before the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            spaceBefore?: number;
-            /**
-             *
-             * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            style?: string;
-            /**
-             *
-             * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBuiltIn?: string;
-            /**
-             *
-             * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            tableNestingLevel?: number;
-            /**
-             *
-             * Gets the text of the paragraph. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            text?: string;
-        }
-        /** An interface describing the data returned by calling "paragraphCollection.toJSON()". */
-        interface ParagraphCollectionData {
-            items?: Word.Interfaces.ParagraphData[];
-        }
-        /** An interface describing the data returned by calling "range.toJSON()". */
-        interface RangeData {
-            /**
-            *
-            * Gets the collection of content control objects in the range. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            contentControls?: Word.Interfaces.ContentControlCollectionData;
-            /**
-            *
-            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            font?: Word.Interfaces.FontData;
-            /**
-            *
-            * Gets the collection of inline picture objects in the range. Read-only.
-            *
-            * [Api set: WordApi 1.2]
-            */
-            inlinePictures?: Word.Interfaces.InlinePictureCollectionData;
-            /**
-            *
-            * Gets the collection of list objects in the range. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            lists?: Word.Interfaces.ListCollectionData;
-            /**
-            *
-            * Gets the collection of paragraph objects in the range. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            paragraphs?: Word.Interfaces.ParagraphCollectionData;
-            /**
-            *
-            * Gets the parent body of the range. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBody?: Word.Interfaces.BodyData;
-            /**
-            *
-            * Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlData;
-            /**
-            *
-            * Gets the content control that contains the range. Returns a null object if there isn't a parent content control. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;
-            /**
-            *
-            * Gets the table that contains the range. Throws if it is not contained in a table. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableData;
-            /**
-            *
-            * Gets the table cell that contains the range. Throws if it is not contained in a table cell. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCell?: Word.Interfaces.TableCellData;
-            /**
-            *
-            * Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCellOrNullObject?: Word.Interfaces.TableCellData;
-            /**
-            *
-            * Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableOrNullObject?: Word.Interfaces.TableData;
-            /**
-            *
-            * Gets the collection of table objects in the range. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            tables?: Word.Interfaces.TableCollectionData;
-            /**
-             *
-             * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            hyperlink?: string;
-            /**
-             *
-             * Checks whether the range length is zero. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            isEmpty?: boolean;
-            /**
-             *
-             * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            style?: string;
-            /**
-             *
-             * Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBuiltIn?: string;
-            /**
-             *
-             * Gets the text of the range. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            text?: string;
-        }
-        /** An interface describing the data returned by calling "rangeCollection.toJSON()". */
-        interface RangeCollectionData {
-            items?: Word.Interfaces.RangeData[];
-        }
-        /** An interface describing the data returned by calling "searchOptions.toJSON()". */
-        interface SearchOptionsData {
-            /**
-             *
-             * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            ignorePunct?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            ignoreSpace?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box (Edit menu).
-             *
-             * [Api set: WordApi 1.1]
-             */
-            matchCase?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            matchPrefix?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            matchSuffix?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            matchWholeWord?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            matchWildcards?: boolean;
-        }
-        /** An interface describing the data returned by calling "section.toJSON()". */
-        interface SectionData {
-            /**
-            *
-            * Gets the body object of the section. This does not include the header/footer and other section metadata. Read-only.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            body?: Word.Interfaces.BodyData;
-        }
-        /** An interface describing the data returned by calling "sectionCollection.toJSON()". */
-        interface SectionCollectionData {
-            items?: Word.Interfaces.SectionData[];
-        }
-        /** An interface describing the data returned by calling "table.toJSON()". */
-        interface TableData {
-            /**
-            *
-            * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            font?: Word.Interfaces.FontData;
-            /**
-            *
-            * Gets the parent body of the table. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBody?: Word.Interfaces.BodyData;
-            /**
-            *
-            * Gets the content control that contains the table. Throws if there isn't a parent content control. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlData;
-            /**
-            *
-            * Gets the content control that contains the table. Returns a null object if there isn't a parent content control. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;
-            /**
-            *
-            * Gets the table that contains this table. Throws if it is not contained in a table. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableData;
-            /**
-            *
-            * Gets the table cell that contains this table. Throws if it is not contained in a table cell. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCell?: Word.Interfaces.TableCellData;
-            /**
-            *
-            * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCellOrNullObject?: Word.Interfaces.TableCellData;
-            /**
-            *
-            * Gets the table that contains this table. Returns a null object if it is not contained in a table. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableOrNullObject?: Word.Interfaces.TableData;
-            /**
-            *
-            * Gets all of the table rows. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            rows?: Word.Interfaces.TableRowCollectionData;
-            /**
-            *
-            * Gets the child tables nested one level deeper. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            tables?: Word.Interfaces.TableCollectionData;
-            /**
-             *
-             * Gets or sets the alignment of the table against the page column. The value can be 'left', 'centered' or 'right'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            alignment?: string;
-            /**
-             *
-             * Gets and sets the number of header rows.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            headerRowCount?: number;
-            /**
-             *
-             * Gets and sets the horizontal alignment of every cell in the table. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            horizontalAlignment?: string;
-            /**
-             *
-             * Indicates whether all of the table rows are uniform. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            isUniform?: boolean;
-            /**
-             *
-             * Gets the nesting level of the table. Top-level tables have level 1. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            nestingLevel?: number;
-            /**
-             *
-             * Gets the number of rows in the table. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            rowCount?: number;
-            /**
-             *
-             * Gets and sets the shading color.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            shadingColor?: string;
-            /**
-             *
-             * Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            style?: string;
-            /**
-             *
-             * Gets and sets whether the table has banded columns.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBandedColumns?: boolean;
-            /**
-             *
-             * Gets and sets whether the table has banded rows.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBandedRows?: boolean;
-            /**
-             *
-             * Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBuiltIn?: string;
-            /**
-             *
-             * Gets and sets whether the table has a first column with a special style.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleFirstColumn?: boolean;
-            /**
-             *
-             * Gets and sets whether the table has a last column with a special style.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleLastColumn?: boolean;
-            /**
-             *
-             * Gets and sets whether the table has a total (last) row with a special style.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleTotalRow?: boolean;
-            /**
-             *
-             * Gets and sets the text values in the table, as a 2D Javascript array.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            values?: Array<Array<string>>;
-            /**
-             *
-             * Gets and sets the vertical alignment of every cell in the table. The value can be 'top', 'center' or 'bottom'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            verticalAlignment?: string;
-            /**
-             *
-             * Gets and sets the width of the table in points.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            width?: number;
-        }
-        /** An interface describing the data returned by calling "tableCollection.toJSON()". */
-        interface TableCollectionData {
-            items?: Word.Interfaces.TableData[];
-        }
-        /** An interface describing the data returned by calling "tableRow.toJSON()". */
-        interface TableRowData {
-            /**
-            *
-            * Gets cells. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            cells?: Word.Interfaces.TableCellCollectionData;
-            /**
-            *
-            * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            font?: Word.Interfaces.FontData;
-            /**
-            *
-            * Gets parent table. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableData;
-            /**
-             *
-             * Gets the number of cells in the row. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            cellCount?: number;
-            /**
-             *
-             * Gets and sets the horizontal alignment of every cell in the row. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            horizontalAlignment?: string;
-            /**
-             *
-             * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            isHeader?: boolean;
-            /**
-             *
-             * Gets and sets the preferred height of the row in points.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            preferredHeight?: number;
-            /**
-             *
-             * Gets the index of the row in its parent table. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            rowIndex?: number;
-            /**
-             *
-             * Gets and sets the shading color.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            shadingColor?: string;
-            /**
-             *
-             * Gets and sets the text values in the row, as a 2D Javascript array.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            values?: Array<Array<string>>;
-            /**
-             *
-             * Gets and sets the vertical alignment of the cells in the row. The value can be 'top', 'center' or 'bottom'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            verticalAlignment?: string;
-        }
-        /** An interface describing the data returned by calling "tableRowCollection.toJSON()". */
-        interface TableRowCollectionData {
-            items?: Word.Interfaces.TableRowData[];
-        }
-        /** An interface describing the data returned by calling "tableCell.toJSON()". */
-        interface TableCellData {
-            /**
-            *
-            * Gets the body object of the cell. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            body?: Word.Interfaces.BodyData;
-            /**
-            *
-            * Gets the parent row of the cell. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentRow?: Word.Interfaces.TableRowData;
-            /**
-            *
-            * Gets the parent table of the cell. Read-only.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableData;
-            /**
-             *
-             * Gets the index of the cell in its row. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            cellIndex?: number;
-            /**
-             *
-             * Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            columnWidth?: number;
-            /**
-             *
-             * Gets and sets the horizontal alignment of the cell. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            horizontalAlignment?: string;
-            /**
-             *
-             * Gets the index of the cell's row in the table. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            rowIndex?: number;
-            /**
-             *
-             * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            shadingColor?: string;
-            /**
-             *
-             * Gets and sets the text of the cell.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            value?: string;
-            /**
-             *
-             * Gets and sets the vertical alignment of the cell. The value can be 'top', 'center' or 'bottom'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            verticalAlignment?: string;
-            /**
-             *
-             * Gets the width of the cell in points. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            width?: number;
-        }
-        /** An interface describing the data returned by calling "tableCellCollection.toJSON()". */
-        interface TableCellCollectionData {
-            items?: Word.Interfaces.TableCellData[];
-        }
-        /** An interface describing the data returned by calling "tableBorder.toJSON()". */
-        interface TableBorderData {
-            /**
-             *
-             * Gets or sets the table border color, as a hex value or name.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            color?: string;
-            /**
-             *
-             * Gets or sets the type of the table border.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            type?: string;
-            /**
-             *
-             * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            width?: number;
-        }
-        /**
-         *
-         * Represents the body of a document or a section.
-         *
-         * [Api set: WordApi 1.1]
-         */
-        interface BodyLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            font?: Word.Interfaces.FontLoadOptions;
-            /**
-            *
-            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there isn't a parent body.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBody?: Word.Interfaces.BodyLoadOptions;
-            /**
-            *
-            * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBodyOrNullObject?: Word.Interfaces.BodyLoadOptions;
-            /**
-            *
-            * Gets the content control that contains the body. Throws if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * Gets the content control that contains the body. Returns a null object if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * Gets the parent section of the body. Throws if there isn't a parent section.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentSection?: Word.Interfaces.SectionLoadOptions;
-            /**
-            *
-            * Gets the parent section of the body. Returns a null object if there isn't a parent section.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentSectionOrNullObject?: Word.Interfaces.SectionLoadOptions;
-            /**
-             *
-             * Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            style?: boolean;
-            /**
-             *
-             * Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBuiltIn?: boolean;
-            /**
-             *
-             * Gets the text of the body. Use the insertText method to insert text. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            text?: boolean;
-            /**
-             *
-             * Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            type?: boolean;
-        }
-        /**
-         *
-         * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
-         *
-         * [Api set: WordApi 1.1]
-         */
-        interface ContentControlLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            font?: Word.Interfaces.FontLoadOptions;
-            /**
-            *
-            * Gets the parent body of the content control.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBody?: Word.Interfaces.BodyLoadOptions;
-            /**
-            *
-            * Gets the content control that contains the content control. Throws if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * Gets the content control that contains the content control. Returns a null object if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * Gets the table that contains the content control. Throws if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableLoadOptions;
-            /**
-            *
-            * Gets the table cell that contains the content control. Throws if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * Gets the table that contains the content control. Returns a null object if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
-            /**
-             *
-             * Gets or sets the appearance of the content control. The value can be 'boundingBox', 'tags' or 'hidden'.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            appearance?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            cannotDelete?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether the user can edit the contents of the content control.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            cannotEdit?: boolean;
-            /**
-             *
-             * Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            color?: boolean;
-            /**
-             *
-             * Gets an integer that represents the content control identifier. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            id?: boolean;
-            /**
-             *
-             * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            placeholderText?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            removeWhenEdited?: boolean;
-            /**
-             *
-             * Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            style?: boolean;
-            /**
-             *
-             * Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBuiltIn?: boolean;
-            /**
-             *
-             * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            subtype?: boolean;
-            /**
-             *
-             * Gets or sets a tag to identify a content control.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            tag?: boolean;
-            /**
-             *
-             * Gets the text of the content control. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            text?: boolean;
-            /**
-             *
-             * Gets or sets the title for a content control.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            title?: boolean;
-            /**
-             *
-             * Gets the content control type. Only rich text content controls are supported currently. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            type?: boolean;
-        }
-        /**
-         *
-         * Contains a collection of [contentControl](contentControl.md) objects. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
-         *
-         * [Api set: WordApi 1.1]
-         */
-        interface ContentControlCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            font?: Word.Interfaces.FontLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the parent body of the content control.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBody?: Word.Interfaces.BodyLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the content control that contains the content control. Throws if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the content control that contains the content control. Returns a null object if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table that contains the content control. Throws if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table cell that contains the content control. Throws if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table that contains the content control. Returns a null object if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the appearance of the content control. The value can be 'boundingBox', 'tags' or 'hidden'.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            appearance?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with removeWhenEdited.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            cannotDelete?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can edit the contents of the content control.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            cannotEdit?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the color of the content control. Color is specified in '#RRGGBB' format or by using the color name.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            color?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets an integer that represents the content control identifier. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            id?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            placeholderText?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive with cannotDelete.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            removeWhenEdited?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the style name for the content control. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            style?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the built-in style name for the content control. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBuiltIn?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            subtype?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets a tag to identify a content control.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            tag?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the text of the content control. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            text?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the title for a content control.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            title?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported currently. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            type?: boolean;
-        }
-        /**
-         *
-         * Represents a custom property.
-         *
-         * [Api set: WordApi 1.3]
-         */
-        interface CustomPropertyLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Gets the key of the custom property. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            key?: boolean;
-            /**
-             *
-             * Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            type?: boolean;
-            /**
-             *
-             * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
-             *
-             * [Api set: WordApi 1.3]
-             */
-            value?: boolean;
-        }
-        /**
-         *
-         * Contains the collection of [customProperty](customProperty.md) objects.
-         *
-         * [Api set: WordApi 1.3]
-         */
-        interface CustomPropertyCollectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the key of the custom property. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            key?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            type?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
-             *
-             * [Api set: WordApi 1.3]
-             */
-            value?: boolean;
-        }
-        /**
-         *
-         * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
-         *
-         * [Api set: WordApi 1.1]
-         */
-        interface DocumentLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
-            *
-            * [Api set: WordApi 1.1]
-            */
-            body?: Word.Interfaces.BodyLoadOptions;
-            /**
-            *
-            * Gets the properties of the document.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
-            /**
-             *
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            saved?: boolean;
-        }
-        /**
-         *
-         * The DocumentCreated object is the top level object created by Application.CreateDocument. A DocumentCreated object is a special Document object.
-         *
-         * [Api set: WordApi 1.3]
-         */
-        interface DocumentCreatedLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
-            *
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            body?: Word.Interfaces.BodyLoadOptions;
-            /**
-            *
-            * Gets the properties of the document.
-            *
-            * [Api set: WordApiHiddenDocument 1.3]
-            */
-            properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
-            /**
-             *
-             * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
-             *
-             * [Api set: WordApiHiddenDocument 1.3]
-             */
-            saved?: boolean;
-        }
-        /**
-         *
-         * Represents document properties.
-         *
-         * [Api set: WordApi 1.3]
-         */
-        interface DocumentPropertiesLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Gets the application name of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            applicationName?: boolean;
-            /**
-             *
-             * Gets or sets the author of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            author?: boolean;
-            /**
-             *
-             * Gets or sets the category of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            category?: boolean;
-            /**
-             *
-             * Gets or sets the comments of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            comments?: boolean;
-            /**
-             *
-             * Gets or sets the company of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            company?: boolean;
-            /**
-             *
-             * Gets the creation date of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            creationDate?: boolean;
-            /**
-             *
-             * Gets or sets the format of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            format?: boolean;
-            /**
-             *
-             * Gets or sets the keywords of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            keywords?: boolean;
-            /**
-             *
-             * Gets the last author of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            lastAuthor?: boolean;
-            /**
-             *
-             * Gets the last print date of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            lastPrintDate?: boolean;
-            /**
-             *
-             * Gets the last save time of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            lastSaveTime?: boolean;
-            /**
-             *
-             * Gets or sets the manager of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            manager?: boolean;
-            /**
-             *
-             * Gets the revision number of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            revisionNumber?: boolean;
-            /**
-             *
-             * Gets the security of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            security?: boolean;
-            /**
-             *
-             * Gets or sets the subject of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            subject?: boolean;
-            /**
-             *
-             * Gets the template of the document. Read only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            template?: boolean;
-            /**
-             *
-             * Gets or sets the title of the document.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            title?: boolean;
-        }
-        /**
-         *
-         * Represents a font.
-         *
-         * [Api set: WordApi 1.1]
-         */
-        interface FontLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            bold?: boolean;
-            /**
-             *
-             * Gets or sets the color for the specified font. You can provide the value in the '#RRGGBB' format or the color name.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            color?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether the font has a double strike through. True if the font is formatted as double strikethrough text, otherwise, false.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            doubleStrikeThrough?: boolean;
-            /**
-             *
-             * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, or an empty string for mixed highlight colors, or null for no highlight color.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            highlightColor?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise, false.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            italic?: boolean;
-            /**
-             *
-             * Gets or sets a value that represents the name of the font.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            name?: boolean;
-            /**
-             *
-             * Gets or sets a value that represents the font size in points.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            size?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether the font has a strike through. True if the font is formatted as strikethrough text, otherwise, false.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            strikeThrough?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript, otherwise, false.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            subscript?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as superscript, otherwise, false.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            superscript?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            underline?: boolean;
-        }
-        /**
-         *
-         * Represents an inline picture.
-         *
-         * [Api set: WordApi 1.1]
-         */
-        interface InlinePictureLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Gets the parent paragraph that contains the inline image.
-            *
-            * [Api set: WordApi 1.2]
-            */
-            paragraph?: Word.Interfaces.ParagraphLoadOptions;
-            /**
-            *
-            * Gets the content control that contains the inline image. Throws if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * Gets the table that contains the inline image. Throws if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableLoadOptions;
-            /**
-            *
-            * Gets the table cell that contains the inline image. Throws if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * Gets the table that contains the inline image. Returns a null object if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
-            /**
-             *
-             * Gets or sets a string that represents the alternative text associated with the inline image
-             *
-             * [Api set: WordApi 1.1]
-             */
-            altTextDescription?: boolean;
-            /**
-             *
-             * Gets or sets a string that contains the title for the inline image.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            altTextTitle?: boolean;
-            /**
-             *
-             * Gets or sets a number that describes the height of the inline image.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            height?: boolean;
-            /**
-             *
-             * Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            hyperlink?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            lockAspectRatio?: boolean;
-            /**
-             *
-             * Gets or sets a number that describes the width of the inline image.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            width?: boolean;
-        }
-        /**
-         *
-         * Contains a collection of [inlinePicture](inlinePicture.md) objects.
-         *
-         * [Api set: WordApi 1.1]
-         */
-        interface InlinePictureCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the parent paragraph that contains the inline image.
-            *
-            * [Api set: WordApi 1.2]
-            */
-            paragraph?: Word.Interfaces.ParagraphLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table that contains the inline image. Throws if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table that contains the inline image. Returns a null object if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the inline image
-             *
-             * [Api set: WordApi 1.1]
-             */
-            altTextDescription?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets a string that contains the title for the inline image.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            altTextTitle?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets a number that describes the height of the inline image.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            height?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets a hyperlink on the image. Use a '#' to separate the address part from the optional location part.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            hyperlink?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            lockAspectRatio?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets a number that describes the width of the inline image.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            width?: boolean;
-        }
-        /**
-         *
-         * Contains a collection of [paragraph](paragraph.md) objects.
-         *
-         * [Api set: WordApi 1.3]
-         */
-        interface ListLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Gets the list's id.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            id?: boolean;
-            /**
-             *
-             * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            levelExistences?: boolean;
-            /**
-             *
-             * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number' or 'Picture'. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            levelTypes?: boolean;
-        }
-        /**
-         *
-         * Contains a collection of [list](list.md) objects.
-         *
-         * [Api set: WordApi 1.3]
-         */
-        interface ListCollectionLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the list's id.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            id?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            levelExistences?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets all 9 level types in the list. Each type can be 'Bullet', 'Number' or 'Picture'. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            levelTypes?: boolean;
-        }
-        /**
-         *
-         * Represents the paragraph list item format.
-         *
-         * [Api set: WordApi 1.3]
-         */
-        interface ListItemLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Gets or sets the level of the item in the list.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            level?: boolean;
-            /**
-             *
-             * Gets the list item bullet, number or picture as a string. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            listString?: boolean;
-            /**
-             *
-             * Gets the list item order number in relation to its siblings. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            siblingIndex?: boolean;
-        }
-        /**
-         *
-         * Represents a single paragraph in a selection, range, content control, or document body.
-         *
-         * [Api set: WordApi 1.1]
-         */
-        interface ParagraphLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            font?: Word.Interfaces.FontLoadOptions;
-            /**
-            *
-            * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            list?: Word.Interfaces.ListLoadOptions;
-            /**
-            *
-            * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            listItem?: Word.Interfaces.ListItemLoadOptions;
-            /**
-            *
-            * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            listItemOrNullObject?: Word.Interfaces.ListItemLoadOptions;
-            /**
-            *
-            * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            listOrNullObject?: Word.Interfaces.ListLoadOptions;
-            /**
-            *
-            * Gets the parent body of the paragraph.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBody?: Word.Interfaces.BodyLoadOptions;
-            /**
-            *
-            * Gets the content control that contains the paragraph. Throws if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * Gets the table that contains the paragraph. Throws if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableLoadOptions;
-            /**
-            *
-            * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
-            /**
-             *
-             * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            alignment?: boolean;
-            /**
-             *
-             * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            firstLineIndent?: boolean;
-            /**
-             *
-             * Indicates the paragraph is the last one inside its parent body. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            isLastParagraph?: boolean;
-            /**
-             *
-             * Checks whether the paragraph is a list item. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            isListItem?: boolean;
-            /**
-             *
-             * Gets or sets the left indent value, in points, for the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            leftIndent?: boolean;
-            /**
-             *
-             * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            lineSpacing?: boolean;
-            /**
-             *
-             * Gets or sets the amount of spacing, in grid lines. after the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            lineUnitAfter?: boolean;
-            /**
-             *
-             * Gets or sets the amount of spacing, in grid lines, before the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            lineUnitBefore?: boolean;
-            /**
-             *
-             * Gets or sets the outline level for the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            outlineLevel?: boolean;
-            /**
-             *
-             * Gets or sets the right indent value, in points, for the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            rightIndent?: boolean;
-            /**
-             *
-             * Gets or sets the spacing, in points, after the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            spaceAfter?: boolean;
-            /**
-             *
-             * Gets or sets the spacing, in points, before the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            spaceBefore?: boolean;
-            /**
-             *
-             * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            style?: boolean;
-            /**
-             *
-             * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBuiltIn?: boolean;
-            /**
-             *
-             * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            tableNestingLevel?: boolean;
-            /**
-             *
-             * Gets the text of the paragraph. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            text?: boolean;
-        }
-        /**
-         *
-         * Contains a collection of [paragraph](paragraph.md) objects.
-         *
-         * [Api set: WordApi 1.1]
-         */
-        interface ParagraphCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            font?: Word.Interfaces.FontLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            list?: Word.Interfaces.ListLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            listItem?: Word.Interfaces.ListItemLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            listItemOrNullObject?: Word.Interfaces.ListItemLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            listOrNullObject?: Word.Interfaces.ListLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the parent body of the paragraph.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBody?: Word.Interfaces.BodyLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table that contains the paragraph. Returns a null object if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            alignment?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            firstLineIndent?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Indicates the paragraph is the last one inside its parent body. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            isLastParagraph?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Checks whether the paragraph is a list item. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            isListItem?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the left indent value, in points, for the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            leftIndent?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            lineSpacing?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines. after the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            lineUnitAfter?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, before the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            lineUnitBefore?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the outline level for the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            outlineLevel?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the right indent value, in points, for the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            rightIndent?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the spacing, in points, after the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            spaceAfter?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the spacing, in points, before the paragraph.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            spaceBefore?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            style?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBuiltIn?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            tableNestingLevel?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the text of the paragraph. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            text?: boolean;
-        }
-        /**
-         *
-         * Represents a contiguous area in a document.
-         *
-         * [Api set: WordApi 1.1]
-         */
-        interface RangeLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            font?: Word.Interfaces.FontLoadOptions;
-            /**
-            *
-            * Gets the parent body of the range.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBody?: Word.Interfaces.BodyLoadOptions;
-            /**
-            *
-            * Gets the content control that contains the range. Throws if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * Gets the content control that contains the range. Returns a null object if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * Gets the table that contains the range. Throws if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableLoadOptions;
-            /**
-            *
-            * Gets the table cell that contains the range. Throws if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * Gets the table that contains the range. Returns a null object if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
-            /**
-             *
-             * Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            hyperlink?: boolean;
-            /**
-             *
-             * Checks whether the range length is zero. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            isEmpty?: boolean;
-            /**
-             *
-             * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            style?: boolean;
-            /**
-             *
-             * Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBuiltIn?: boolean;
-            /**
-             *
-             * Gets the text of the range. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            text?: boolean;
-        }
-        /**
-         *
-         * Contains a collection of [range](range.md) objects.
-         *
-         * [Api set: WordApi 1.1]
-         */
-        interface RangeCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            font?: Word.Interfaces.FontLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the parent body of the range.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBody?: Word.Interfaces.BodyLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the content control that contains the range. Throws if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the content control that contains the range. Returns a null object if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table that contains the range. Throws if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table cell that contains the range. Throws if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table that contains the range. Returns a null object if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted when you set a new hyperlink on the range. Use a '#' to separate the address part from the optional location part.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            hyperlink?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Checks whether the range length is zero. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            isEmpty?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            style?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBuiltIn?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the text of the range. Read-only.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            text?: boolean;
-        }
-        /**
-         *
-         * Specifies the options to be included in a search operation.
-         *
-         * [Api set: WordApi 1.1]
-         */
-        interface SearchOptionsLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            ignorePunct?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore whitespace characters check box in the Find and Replace dialog box.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            ignoreSpace?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case check box in the Find and Replace dialog box (Edit menu).
-             *
-             * [Api set: WordApi 1.1]
-             */
-            matchCase?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the Match prefix check box in the Find and Replace dialog box.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            matchPrefix?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the Match suffix check box in the Find and Replace dialog box.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            matchSuffix?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            matchWholeWord?: boolean;
-            /**
-             *
-             * Gets or sets a value that indicates whether the search will be performed using special search operators. Corresponds to the Use wildcards check box in the Find and Replace dialog box.
-             *
-             * [Api set: WordApi 1.1]
-             */
-            matchWildcards?: boolean;
-        }
-        /**
-         *
-         * Represents a section in a Word document.
-         *
-         * [Api set: WordApi 1.1]
-         */
-        interface SectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Gets the body object of the section. This does not include the header/footer and other section metadata.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            body?: Word.Interfaces.BodyLoadOptions;
-        }
-        /**
-         *
-         * Contains the collection of the document's [section](section.md) objects.
-         *
-         * [Api set: WordApi 1.1]
-         */
-        interface SectionCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the body object of the section. This does not include the header/footer and other section metadata.
-            *
-            * [Api set: WordApi 1.1]
-            */
-            body?: Word.Interfaces.BodyLoadOptions;
-        }
-        /**
-         *
-         * Represents a table in a Word document.
-         *
-         * [Api set: WordApi 1.3]
-         */
-        interface TableLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Gets the font. Use this to get and set font name, size, color, and other properties.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            font?: Word.Interfaces.FontLoadOptions;
-            /**
-            *
-            * Gets the parent body of the table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBody?: Word.Interfaces.BodyLoadOptions;
-            /**
-            *
-            * Gets the content control that contains the table. Throws if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * Gets the table that contains this table. Throws if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableLoadOptions;
-            /**
-            *
-            * Gets the table cell that contains this table. Throws if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * Gets the table that contains this table. Returns a null object if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
-            /**
-             *
-             * Gets or sets the alignment of the table against the page column. The value can be 'left', 'centered' or 'right'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            alignment?: boolean;
-            /**
-             *
-             * Gets and sets the number of header rows.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            headerRowCount?: boolean;
-            /**
-             *
-             * Gets and sets the horizontal alignment of every cell in the table. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            horizontalAlignment?: boolean;
-            /**
-             *
-             * Indicates whether all of the table rows are uniform. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            isUniform?: boolean;
-            /**
-             *
-             * Gets the nesting level of the table. Top-level tables have level 1. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            nestingLevel?: boolean;
-            /**
-             *
-             * Gets the number of rows in the table. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            rowCount?: boolean;
-            /**
-             *
-             * Gets and sets the shading color.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            shadingColor?: boolean;
-            /**
-             *
-             * Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            style?: boolean;
-            /**
-             *
-             * Gets and sets whether the table has banded columns.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBandedColumns?: boolean;
-            /**
-             *
-             * Gets and sets whether the table has banded rows.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBandedRows?: boolean;
-            /**
-             *
-             * Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBuiltIn?: boolean;
-            /**
-             *
-             * Gets and sets whether the table has a first column with a special style.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleFirstColumn?: boolean;
-            /**
-             *
-             * Gets and sets whether the table has a last column with a special style.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleLastColumn?: boolean;
-            /**
-             *
-             * Gets and sets whether the table has a total (last) row with a special style.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleTotalRow?: boolean;
-            /**
-             *
-             * Gets and sets the text values in the table, as a 2D Javascript array.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            values?: boolean;
-            /**
-             *
-             * Gets and sets the vertical alignment of every cell in the table. The value can be 'top', 'center' or 'bottom'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            verticalAlignment?: boolean;
-            /**
-             *
-             * Gets and sets the width of the table in points.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            width?: boolean;
-        }
-        /**
-         *
-         * Contains the collection of the document's Table objects.
-         *
-         * [Api set: WordApi 1.3]
-         */
-        interface TableCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the font. Use this to get and set font name, size, color, and other properties.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            font?: Word.Interfaces.FontLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the parent body of the table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentBody?: Word.Interfaces.BodyLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the content control that contains the table. Throws if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControl?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table that contains this table. Throws if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table cell that contains this table. Throws if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCell?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the table that contains this table. Returns a null object if it is not contained in a table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the alignment of the table against the page column. The value can be 'left', 'centered' or 'right'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            alignment?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets the number of header rows.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            headerRowCount?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the table. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            horizontalAlignment?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Indicates whether all of the table rows are uniform. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            isUniform?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the nesting level of the table. Top-level tables have level 1. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            nestingLevel?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the number of rows in the table. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            rowCount?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets the shading color.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            shadingColor?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            style?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets whether the table has banded columns.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBandedColumns?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets whether the table has banded rows.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBandedRows?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleBuiltIn?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets whether the table has a first column with a special style.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleFirstColumn?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets whether the table has a last column with a special style.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleLastColumn?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets whether the table has a total (last) row with a special style.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            styleTotalRow?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets the text values in the table, as a 2D Javascript array.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            values?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets the vertical alignment of every cell in the table. The value can be 'top', 'center' or 'bottom'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            verticalAlignment?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets the width of the table in points.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            width?: boolean;
-        }
-        /**
-         *
-         * Represents a row in a Word document.
-         *
-         * [Api set: WordApi 1.3]
-         */
-        interface TableRowLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Gets the font. Use this to get and set font name, size, color, and other properties.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            font?: Word.Interfaces.FontLoadOptions;
-            /**
-            *
-            * Gets parent table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableLoadOptions;
-            /**
-             *
-             * Gets the number of cells in the row. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            cellCount?: boolean;
-            /**
-             *
-             * Gets and sets the horizontal alignment of every cell in the row. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            horizontalAlignment?: boolean;
-            /**
-             *
-             * Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            isHeader?: boolean;
-            /**
-             *
-             * Gets and sets the preferred height of the row in points.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            preferredHeight?: boolean;
-            /**
-             *
-             * Gets the index of the row in its parent table. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            rowIndex?: boolean;
-            /**
-             *
-             * Gets and sets the shading color.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            shadingColor?: boolean;
-            /**
-             *
-             * Gets and sets the text values in the row, as a 2D Javascript array.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            values?: boolean;
-            /**
-             *
-             * Gets and sets the vertical alignment of the cells in the row. The value can be 'top', 'center' or 'bottom'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            verticalAlignment?: boolean;
-        }
-        /**
-         *
-         * Contains the collection of the document's TableRow objects.
-         *
-         * [Api set: WordApi 1.3]
-         */
-        interface TableRowCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the font. Use this to get and set font name, size, color, and other properties.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            font?: Word.Interfaces.FontLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets parent table.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the number of cells in the row. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            cellCount?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the row. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            horizontalAlignment?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the Table object.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            isHeader?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets the preferred height of the row in points.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            preferredHeight?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the index of the row in its parent table. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            rowIndex?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets the shading color.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            shadingColor?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets the text values in the row, as a 2D Javascript array.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            values?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets the vertical alignment of the cells in the row. The value can be 'top', 'center' or 'bottom'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            verticalAlignment?: boolean;
-        }
-        /**
-         *
-         * Represents a table cell in a Word document.
-         *
-         * [Api set: WordApi 1.3]
-         */
-        interface TableCellLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Gets the body object of the cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            body?: Word.Interfaces.BodyLoadOptions;
-            /**
-            *
-            * Gets the parent row of the cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentRow?: Word.Interfaces.TableRowLoadOptions;
-            /**
-            *
-            * Gets the parent table of the cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableLoadOptions;
-            /**
-             *
-             * Gets the index of the cell in its row. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            cellIndex?: boolean;
-            /**
-             *
-             * Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            columnWidth?: boolean;
-            /**
-             *
-             * Gets and sets the horizontal alignment of the cell. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            horizontalAlignment?: boolean;
-            /**
-             *
-             * Gets the index of the cell's row in the table. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            rowIndex?: boolean;
-            /**
-             *
-             * Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            shadingColor?: boolean;
-            /**
-             *
-             * Gets and sets the text of the cell.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            value?: boolean;
-            /**
-             *
-             * Gets and sets the vertical alignment of the cell. The value can be 'top', 'center' or 'bottom'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            verticalAlignment?: boolean;
-            /**
-             *
-             * Gets the width of the cell in points. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            width?: boolean;
-        }
-        /**
-         *
-         * Contains the collection of the document's TableCell objects.
-         *
-         * [Api set: WordApi 1.3]
-         */
-        interface TableCellCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the body object of the cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            body?: Word.Interfaces.BodyLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the parent row of the cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentRow?: Word.Interfaces.TableRowLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets the parent table of the cell.
-            *
-            * [Api set: WordApi 1.3]
-            */
-            parentTable?: Word.Interfaces.TableLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            cellIndex?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            columnWidth?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets the horizontal alignment of the cell. The value can be 'left', 'centered', 'right', or 'justified'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            horizontalAlignment?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the index of the cell's row in the table. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            rowIndex?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the shading color of the cell. Color is specified in "#RRGGBB" format or by using the color name.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            shadingColor?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets the text of the cell.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            value?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets and sets the vertical alignment of the cell. The value can be 'top', 'center' or 'bottom'.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            verticalAlignment?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the width of the cell in points. Read-only.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            width?: boolean;
-        }
-        /**
-         *
-         * Specifies the border style
-         *
-         * [Api set: WordApi 1.3]
-         */
-        interface TableBorderLoadOptions {
-            $all?: boolean;
-            /**
-             *
-             * Gets or sets the table border color, as a hex value or name.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            color?: boolean;
-            /**
-             *
-             * Gets or sets the type of the table border.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            type?: boolean;
-            /**
-             *
-             * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths.
-             *
-             * [Api set: WordApi 1.3]
-             */
-            width?: boolean;
-        }
     }
 }
 declare module Word {
     /**
      * The RequestContext object facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the request context is required to get access to the Word object model from the add-in.
      */
-    class RequestContext extends OfficeCore.RequestContext {
+    class RequestContext extends OfficeExtension.ClientRequestContext {
         constructor(url?: string);
-        readonly document: Document;
+        document: Document;
     }
     /**
      * Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
@@ -31777,4 +22325,2257 @@ declare namespace OneNote {
 
 ////////////////////////////////////////////////////////////////
 /////////////////////// End OneNote APIs ///////////////////////
+////////////////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////
+/////////////////////// Begin Visio APIs ///////////////////////
+////////////////////////////////////////////////////////////////
+
+
+
+declare namespace Visio {
+    /**
+     *
+     * Provides information about the shape that raised the ShapeMouseEnter event.
+     *
+     * [Api set:  1.1]
+     */
+    interface ShapeMouseEnterEventArgs {
+        /**
+         *
+         * Gets the name of the page which has the shape object that raised the ShapeMouseEnter event.
+         *
+         * [Api set:  1.1]
+         */
+        pageName: string;
+        /**
+         *
+         * Gets the shape object that raised the ShapeMouseEnter event.
+         *
+         * [Api set:  1.1]
+         */
+        shapeName: string;
+    }
+    /**
+     *
+     * Provides information about the shape that raised the ShapeMouseLeave event.
+     *
+     * [Api set:  1.1]
+     */
+    interface ShapeMouseLeaveEventArgs {
+        /**
+         *
+         * Gets the name of the page which has the shape object that raised the ShapeMouseLeave event.
+         *
+         * [Api set:  1.1]
+         */
+        pageName: string;
+        /**
+         *
+         * Gets the shape object that raised the ShapeMouseLeave event.
+         *
+         * [Api set:  1.1]
+         */
+        shapeName: string;
+    }
+    /**
+     *
+     * Provides information about the page that raised the PageLoadComplete event.
+     *
+     * [Api set:  1.1]
+     */
+    interface PageLoadCompleteEventArgs {
+        /**
+         *
+         * Gets the name of the page that raised the PageLoad event.
+         *
+         * [Api set:  1.1]
+         */
+        pageName: string;
+        /**
+         *
+         * Gets the success/failure of the PageLoadComplete event.
+         *
+         * [Api set:  1.1]
+         */
+        success: boolean;
+    }
+    /**
+     *
+     * Provides information about the document that raised the DataRefreshComplete event.
+     *
+     * [Api set:  1.1]
+     */
+    interface DataRefreshCompleteEventArgs {
+        /**
+         *
+         * Gets the document object that raised the DataRefreshComplete event.
+         *
+         * [Api set:  1.1]
+         */
+        document: Visio.Document;
+        /**
+         *
+         * Gets the success/failure of the DataRefreshComplete event.
+         *
+         * [Api set:  1.1]
+         */
+        success: boolean;
+    }
+    /**
+     *
+     * Provides information about the shape collection that raised the SelectionChanged event.
+     *
+     * [Api set:  1.1]
+     */
+    interface SelectionChangedEventArgs {
+        /**
+         *
+         * Gets the name of the page which has the ShapeCollection object that raised the SelectionChanged event.
+         *
+         * [Api set:  1.1]
+         */
+        pageName: string;
+        /**
+         *
+         * Gets the ShapeCollection object that raised the SelectionChanged event.
+         *
+         * [Api set:  1.1]
+         */
+        shapeNames: Array<string>;
+    }
+    /**
+     *
+     * Provides information about the drawing that raised the DiagramLoadComplete event.
+     *
+     * [Api set:  1.1]
+     */
+    interface DocumentLoadCompleteEventArgs {
+        /**
+         *
+         * Gets the success/failure of the DocumentLoadComplete event.
+         *
+         * [Api set:  1.1]
+         */
+        success: boolean;
+    }
+    /**
+     *
+     * Represents the Application.
+     *
+     * [Api set:  1.1]
+     */
+    class Application extends OfficeExtension.ClientObject {
+        /**
+         *
+         * Show/Hide the application borders.
+         *
+         * [Api set:  1.1]
+         */
+        showBorders: boolean;
+        /**
+         *
+         * Show or Hide the standard toolbars.
+         *
+         * [Api set:  1.1]
+         */
+        showToolbars: boolean;
+        /** Sets multiple properties on the object at the same time, based on JSON input. */
+        set(properties: Interfaces.ApplicationUpdateData, options?: {
+            /**
+             * Throw an error if the passed-in property list includes read-only properties (default = true).
+             */
+            throwOnReadOnly?: boolean;
+        }): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Application): void;
+        /**
+         *
+         * Show or Hide a particular toolbar.
+         *
+         * [Api set:  1.1]
+         */
+        showToolbar(id: string, show: boolean): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: Visio.Interfaces.ApplicationLoadOptions): Visio.Application;
+        load(option?: string | string[]): Visio.Application;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.Application;
+        toJSON(): Visio.Interfaces.ApplicationData;
+    }
+    /**
+     *
+     * Represents the Document class.
+     *
+     * [Api set:  1.1]
+     */
+    class Document extends OfficeExtension.ClientObject {
+        /**
+         *
+         * Represents a Visio application instance that contains this document. Read-only.
+         *
+         * [Api set:  1.1]
+         */
+        readonly application: Visio.Application;
+        /**
+         *
+         * Represents a collection of pages associated with the document. Read-only.
+         *
+         * [Api set:  1.1]
+         */
+        readonly pages: Visio.PageCollection;
+        /**
+         *
+         * Returns the DocumentView object.
+         *
+         * [Api set:  1.1]
+         */
+        readonly view: Visio.DocumentView;
+        /** Sets multiple properties on the object at the same time, based on JSON input. */
+        set(properties: Interfaces.DocumentUpdateData, options?: {
+            /**
+             * Throw an error if the passed-in property list includes read-only properties (default = true).
+             */
+            throwOnReadOnly?: boolean;
+        }): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Document): void;
+        /**
+         *
+         * Returns the Active Page of the document.
+         *
+         * [Api set:  1.1]
+         */
+        getActivePage(): Visio.Page;
+        /**
+         *
+         * Set the Active Page of the document.
+         *
+         * [Api set:  1.1]
+         *
+         * @param PageName Name of the page
+         */
+        setActivePage(PageName: string): void;
+        /**
+         *
+         * Triggers the refresh of the data in the Diagram, for all pages.
+         *
+         * [Api set:  1.1]
+         */
+        startDataRefresh(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: Visio.Interfaces.DocumentLoadOptions): Visio.Document;
+        load(option?: string | string[]): Visio.Document;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.Document;
+        /**
+         *
+         * Occurs when the data is refreshed in the diagram.
+         *
+         * [Api set:  1.1]
+         */
+        readonly onDataRefreshComplete: OfficeExtension.EventHandlers<Visio.DataRefreshCompleteEventArgs>;
+        /**
+         *
+         * Occurs when the Document is loaded, refreshed, or changed.
+         *
+         * [Api set:  1.1]
+         */
+        readonly onDocumentLoadComplete: OfficeExtension.EventHandlers<Visio.DocumentLoadCompleteEventArgs>;
+        /**
+         *
+         * Occurs when the page is finished loading.
+         *
+         * [Api set:  1.1]
+         */
+        readonly onPageLoadComplete: OfficeExtension.EventHandlers<Visio.PageLoadCompleteEventArgs>;
+        /**
+         *
+         * Occurs when the current selection of shapes changes.
+         *
+         * [Api set:  1.1]
+         */
+        readonly onSelectionChanged: OfficeExtension.EventHandlers<Visio.SelectionChangedEventArgs>;
+        /**
+         *
+         * Occurs when the user moves the mouse pointer into the bounding box of a shape.
+         *
+         * [Api set:  1.1]
+         */
+        readonly onShapeMouseEnter: OfficeExtension.EventHandlers<Visio.ShapeMouseEnterEventArgs>;
+        /**
+         *
+         * Occurs when the user moves the mouse out of the bounding box of a shape.
+         *
+         * [Api set:  1.1]
+         */
+        readonly onShapeMouseLeave: OfficeExtension.EventHandlers<Visio.ShapeMouseLeaveEventArgs>;
+        toJSON(): Visio.Interfaces.DocumentData;
+    }
+    /**
+     *
+     * Represents the DocumentView class.
+     *
+     * [Api set:  1.1]
+     */
+    class DocumentView extends OfficeExtension.ClientObject {
+        /**
+         *
+         * Disable Hyperlinks.
+         *
+         * [Api set:  1.1]
+         */
+        disableHyperlinks: boolean;
+        /**
+         *
+         * Disable Pan.
+         *
+         * [Api set:  1.1]
+         */
+        disablePan: boolean;
+        /**
+         *
+         * Disable Zoom.
+         *
+         * [Api set:  1.1]
+         */
+        disableZoom: boolean;
+        /**
+         *
+         * Disable Hyperlinks.
+         *
+         * [Api set:  1.1]
+         */
+        hideDiagramBoundary: boolean;
+        /** Sets multiple properties on the object at the same time, based on JSON input. */
+        set(properties: Interfaces.DocumentViewUpdateData, options?: {
+            /**
+             * Throw an error if the passed-in property list includes read-only properties (default = true).
+             */
+            throwOnReadOnly?: boolean;
+        }): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: DocumentView): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: Visio.Interfaces.DocumentViewLoadOptions): Visio.DocumentView;
+        load(option?: string | string[]): Visio.DocumentView;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.DocumentView;
+        toJSON(): Visio.Interfaces.DocumentViewData;
+    }
+    /**
+     *
+     * Represents the Page class.
+     *
+     * [Api set:  1.1]
+     */
+    class Page extends OfficeExtension.ClientObject {
+        /**
+         *
+         * All shapes in the page. Read-only.
+         *
+         * [Api set:  1.1]
+         */
+        readonly allShapes: Visio.ShapeCollection;
+        /**
+         *
+         * Returns the Comments Collection
+         *
+         * [Api set:  1.1]
+         */
+        readonly comments: Visio.CommentCollection;
+        /**
+         *
+         * Shapes at root level, in the page. Read-only.
+         *
+         * [Api set:  1.1]
+         */
+        readonly shapes: Visio.ShapeCollection;
+        /**
+         *
+         * Returns the view of the page. Read-only.
+         *
+         * [Api set:  1.1]
+         */
+        readonly view: Visio.PageView;
+        /**
+         *
+         * Returns the height of the page. Read-only.
+         *
+         * [Api set:  1.1]
+         */
+        readonly height: number;
+        /**
+         *
+         * Index of the Page.
+         *
+         * [Api set:  1.1]
+         */
+        readonly index: number;
+        /**
+         *
+         * Whether the page is a background page or not. Read-only.
+         *
+         * [Api set:  1.1]
+         */
+        readonly isBackground: boolean;
+        /**
+         *
+         * Page name. Read-only.
+         *
+         * [Api set:  1.1]
+         */
+        readonly name: string;
+        /**
+         *
+         * Returns the width of the page. Read-only.
+         *
+         * [Api set:  1.1]
+         */
+        readonly width: number;
+        /** Sets multiple properties on the object at the same time, based on JSON input. */
+        set(properties: Interfaces.PageUpdateData, options?: {
+            /**
+             * Throw an error if the passed-in property list includes read-only properties (default = true).
+             */
+            throwOnReadOnly?: boolean;
+        }): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Page): void;
+        /**
+         *
+         * Set the page as Active Page of the document.
+         *
+         * [Api set:  1.1]
+         */
+        activate(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: Visio.Interfaces.PageLoadOptions): Visio.Page;
+        load(option?: string | string[]): Visio.Page;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.Page;
+        toJSON(): Visio.Interfaces.PageData;
+    }
+    /**
+     *
+     * Represents the PageView class.
+     *
+     * [Api set:  1.1]
+     */
+    class PageView extends OfficeExtension.ClientObject {
+        /**
+         *
+         * Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
+         *
+         * [Api set:  1.1]
+         */
+        zoom: number;
+        /** Sets multiple properties on the object at the same time, based on JSON input. */
+        set(properties: Interfaces.PageViewUpdateData, options?: {
+            /**
+             * Throw an error if the passed-in property list includes read-only properties (default = true).
+             */
+            throwOnReadOnly?: boolean;
+        }): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: PageView): void;
+        /**
+         *
+         * Pans the Visio drawing to place the specified shape in the center of the view.
+         *
+         * [Api set:  1.1]
+         *
+         * @param ShapeId ShapeId to be seen in the center.
+         */
+        centerViewportOnShape(ShapeId: number): void;
+        /**
+         *
+         * Fit Page to current window.
+         *
+         * [Api set:  1.1]
+         */
+        fitToWindow(): void;
+        /**
+         *
+         * Returns the position object that specifies the position of the page in the view.
+         *
+         * [Api set:  1.1]
+         */
+        getPosition(): OfficeExtension.ClientResult<Visio.Position>;
+        /**
+         *
+         * Represents the Selection in the page.
+         *
+         * [Api set:  1.1]
+         */
+        getSelection(): Visio.Selection;
+        /**
+         *
+         * To check if the shape is in view of the page or not.
+         *
+         * [Api set:  1.1]
+         *
+         * @param Shape Shape to be checked.
+         */
+        isShapeInViewport(Shape: Visio.Shape): OfficeExtension.ClientResult<boolean>;
+        /**
+         *
+         * Sets the position of the page in the view.
+         *
+         * [Api set:  1.1]
+         *
+         * @param Position Position object that specifies the new position of the page in the view.
+         */
+        setPosition(Position: Visio.Position): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: Visio.Interfaces.PageViewLoadOptions): Visio.PageView;
+        load(option?: string | string[]): Visio.PageView;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.PageView;
+        toJSON(): Visio.Interfaces.PageViewData;
+    }
+    /**
+     *
+     * Represents a collection of Page objects that are part of the document.
+     *
+     * [Api set:  1.1]
+     */
+    class PageCollection extends OfficeExtension.ClientObject {
+        /** Gets the loaded child items in this collection. */
+        readonly items: Array<Visio.Page>;
+        /**
+         *
+         * Gets the number of pages in the collection.
+         *
+         * [Api set:  1.1]
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         *
+         * Gets a page using its key (name or Id).
+         *
+         * [Api set:  1.1]
+         *
+         * @param key Key is the name or Id of the page to be retrieved.
+         */
+        getItem(key: number | string): Visio.Page;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.PageCollection;
+        load(option?: string | string[]): Visio.PageCollection;
+        load(option?: OfficeExtension.LoadOption): Visio.PageCollection;
+        toJSON(): Visio.Interfaces.PageCollectionData;
+    }
+    /**
+     *
+     * Represents the Shape Collection.
+     *
+     * [Api set:  1.1]
+     */
+    class ShapeCollection extends OfficeExtension.ClientObject {
+        /** Gets the loaded child items in this collection. */
+        readonly items: Array<Visio.Shape>;
+        /**
+         *
+         * Gets the number of Shapes in the collection.
+         *
+         * [Api set:  1.1]
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         *
+         * Gets a Shape using its key (name or Index).
+         *
+         * [Api set:  1.1]
+         *
+         * @param key Key is the Name or Index of the shape to be retrieved.
+         */
+        getItem(key: number | string): Visio.Shape;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.ShapeCollection;
+        load(option?: string | string[]): Visio.ShapeCollection;
+        load(option?: OfficeExtension.LoadOption): Visio.ShapeCollection;
+        toJSON(): Visio.Interfaces.ShapeCollectionData;
+    }
+    /**
+     *
+     * Represents the Shape class.
+     *
+     * [Api set:  1.1]
+     */
+    class Shape extends OfficeExtension.ClientObject {
+        /**
+         *
+         * Returns the Comments Collection
+         *
+         * [Api set:  1.1]
+         */
+        readonly comments: Visio.CommentCollection;
+        /**
+         *
+         * Returns the Hyperlinks collection for a Shape object. Read-only.
+         *
+         * [Api set:  1.1]
+         */
+        readonly hyperlinks: Visio.HyperlinkCollection;
+        /**
+         *
+         * Returns the Shape's Data Section. Read-only.
+         *
+         * [Api set:  1.1]
+         */
+        readonly shapeDataItems: Visio.ShapeDataItemCollection;
+        /**
+         *
+         * Gets SubShape Collection.
+         *
+         * [Api set:  1.1]
+         */
+        readonly subShapes: Visio.ShapeCollection;
+        /**
+         *
+         * Returns the view of the shape. Read-only.
+         *
+         * [Api set:  1.1]
+         */
+        readonly view: Visio.ShapeView;
+        /**
+         *
+         * Shape's Identifier.
+         *
+         * [Api set:  1.1]
+         */
+        readonly id: number;
+        /**
+         *
+         * Shape's name.
+         *
+         * [Api set:  1.1]
+         */
+        readonly name: string;
+        /**
+         *
+         * Returns true, if shape is selected. User can set true to select the shape explicitly.
+         *
+         * [Api set:  1.1]
+         */
+        select: boolean;
+        /**
+         *
+         * Shape's Text.
+         *
+         * [Api set:  1.1]
+         */
+        readonly text: string;
+        /** Sets multiple properties on the object at the same time, based on JSON input. */
+        set(properties: Interfaces.ShapeUpdateData, options?: {
+            /**
+             * Throw an error if the passed-in property list includes read-only properties (default = true).
+             */
+            throwOnReadOnly?: boolean;
+        }): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Shape): void;
+        /**
+         *
+         * Returns the BoundingBox object that specifies bounding box of the shape.
+         *
+         * [Api set:  1.1]
+         */
+        getBounds(): OfficeExtension.ClientResult<Visio.BoundingBox>;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: Visio.Interfaces.ShapeLoadOptions): Visio.Shape;
+        load(option?: string | string[]): Visio.Shape;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.Shape;
+        toJSON(): Visio.Interfaces.ShapeData;
+    }
+    /**
+     *
+     * Represents the ShapeView class.
+     *
+     * [Api set:  1.1]
+     */
+    class ShapeView extends OfficeExtension.ClientObject {
+        /**
+         *
+         * Represents the highlight around the shape.
+         *
+         * [Api set:  1.1]
+         */
+        highlight: Visio.Highlight;
+        /** Sets multiple properties on the object at the same time, based on JSON input. */
+        set(properties: Interfaces.ShapeViewUpdateData, options?: {
+            /**
+             * Throw an error if the passed-in property list includes read-only properties (default = true).
+             */
+            throwOnReadOnly?: boolean;
+        }): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: ShapeView): void;
+        /**
+         *
+         * Adds an overlay on top of the shape.
+         *
+         * [Api set:  1.1]
+         *
+         * @param OverlayType An Overlay Type -Text, Image.
+         * @param Content Content of Overlay.
+         * @param OverlayHorizontalAlignment Horizontal Alignment of Overlay - Left, Center, Right
+         * @param OverlayVerticalAlignment Vertical Alignment of Overlay - Top, Middle, Bottom
+         * @param Width Overlay Width.
+         * @param Height Overlay Height.
+         */
+        addOverlay(OverlayType: string, Content: string, OverlayHorizontalAlignment: string, OverlayVerticalAlignment: string, Width: number, Height: number): OfficeExtension.ClientResult<number>;
+        /**
+         *
+         * Removes particular overlay or all overlays on the Shape.
+         *
+         * [Api set:  1.1]
+         *
+         * @param OverlayId An Overlay Id. Removes the specific overlay id from the shape.
+         */
+        removeOverlay(OverlayId: number): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: Visio.Interfaces.ShapeViewLoadOptions): Visio.ShapeView;
+        load(option?: string | string[]): Visio.ShapeView;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.ShapeView;
+        toJSON(): Visio.Interfaces.ShapeViewData;
+    }
+    /**
+     *
+     * Represents the Position of the object in the view.
+     *
+     * [Api set:  1.1]
+     */
+    interface Position {
+        /**
+         *
+         * An integer that specifies the x-coordinate of the object, which is the signed value of the distance in pixels from the viewport's center to the left boundary of the page.
+         *
+         * [Api set:  1.1]
+         */
+        x: number;
+        /**
+         *
+         * An integer that specifies the y-coordinate of the object, which is the signed value of the distance in pixels from the viewport's center to the top boundary of the page.
+         *
+         * [Api set:  1.1]
+         */
+        y: number;
+    }
+    /**
+     *
+     * Represents the BoundingBox of the shape.
+     *
+     * [Api set:  1.1]
+     */
+    interface BoundingBox {
+        /**
+         *
+         * The distance between the top and bottom edges of the bounding box of the shape, excluding any data graphics associated with the shape.
+         *
+         * [Api set:  1.1]
+         */
+        height: number;
+        /**
+         *
+         * The distance between the left and right edges of the bounding box of the shape, excluding any data graphics associated with the shape.
+         *
+         * [Api set:  1.1]
+         */
+        width: number;
+        /**
+         *
+         * An integer that specifies the x-coordinate of the bounding box.
+         *
+         * [Api set:  1.1]
+         */
+        x: number;
+        /**
+         *
+         * An integer that specifies the y-coordinate of the bounding box.
+         *
+         * [Api set:  1.1]
+         */
+        y: number;
+    }
+    /**
+     *
+     * Represents the highlight data added to the shape.
+     *
+     * [Api set:  1.1]
+     */
+    interface Highlight {
+        /**
+         *
+         * A string that specifies the color of the highlight. It must have the form "#RRGGBB", where each letter represents a hexadecimal digit between 0 and F, and where RR is the red value between 0 and 0xFF (255), GG the green value between 0 and 0xFF (255), and BB is the blue value between 0 and 0xFF (255).
+         *
+         * [Api set:  1.1]
+         */
+        color: string;
+        /**
+         *
+         * A positive integer that specifies the width of the highlight's stroke in pixels.
+         *
+         * [Api set:  1.1]
+         */
+        width: number;
+    }
+    /**
+     *
+     * Represents the ShapeDataItemCollection for a given Shape.
+     *
+     * [Api set:  1.1]
+     */
+    class ShapeDataItemCollection extends OfficeExtension.ClientObject {
+        /** Gets the loaded child items in this collection. */
+        readonly items: Array<Visio.ShapeDataItem>;
+        /**
+         *
+         * Gets the number of Shape Data Items.
+         *
+         * [Api set:  1.1]
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         *
+         * Gets the ShapeDataItem using its name.
+         *
+         * [Api set:  1.1]
+         *
+         * @param key Key is the name of the ShapeDataItem to be retrieved.
+         */
+        getItem(key: string): Visio.ShapeDataItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: Visio.Interfaces.ShapeDataItemCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.ShapeDataItemCollection;
+        load(option?: string | string[]): Visio.ShapeDataItemCollection;
+        load(option?: OfficeExtension.LoadOption): Visio.ShapeDataItemCollection;
+        toJSON(): Visio.Interfaces.ShapeDataItemCollectionData;
+    }
+    /**
+     *
+     * Represents the ShapeDataItem.
+     *
+     * [Api set:  1.1]
+     */
+    class ShapeDataItem extends OfficeExtension.ClientObject {
+        /**
+         *
+         * A string that specifies the format of the shape data item.
+         *
+         * [Api set:  1.1]
+         */
+        readonly format: string;
+        /**
+         *
+         * A string that specifies the formatted value of the shape data item.
+         *
+         * [Api set:  1.1]
+         */
+        readonly formattedValue: string;
+        /**
+         *
+         * A string that specifies the label of the shape data item.
+         *
+         * [Api set:  1.1]
+         */
+        readonly label: string;
+        /**
+         *
+         * A string that specifies the value of the shape data item.
+         *
+         * [Api set:  1.1]
+         */
+        readonly value: string;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: Visio.Interfaces.ShapeDataItemLoadOptions): Visio.ShapeDataItem;
+        load(option?: string | string[]): Visio.ShapeDataItem;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.ShapeDataItem;
+        toJSON(): Visio.Interfaces.ShapeDataItemData;
+    }
+    /**
+     *
+     * Represents the Hyperlink Collection.
+     *
+     * [Api set:  1.1]
+     */
+    class HyperlinkCollection extends OfficeExtension.ClientObject {
+        /** Gets the loaded child items in this collection. */
+        readonly items: Array<Visio.Hyperlink>;
+        /**
+         *
+         * Gets the number of hyperlinks.
+         *
+         * [Api set:  1.1]
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         *
+         * Gets a Hyperlink using its key (name or Id).
+         *
+         * [Api set:  1.1]
+         *
+         * @param Key Key is the name or index of the Hyperlink to be retrieved.
+         */
+        getItem(Key: number | string): Visio.Hyperlink;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.HyperlinkCollection;
+        load(option?: string | string[]): Visio.HyperlinkCollection;
+        load(option?: OfficeExtension.LoadOption): Visio.HyperlinkCollection;
+        toJSON(): Visio.Interfaces.HyperlinkCollectionData;
+    }
+    /**
+     *
+     * Represents the Hyperlink.
+     *
+     * [Api set:  1.1]
+     */
+    class Hyperlink extends OfficeExtension.ClientObject {
+        /**
+         *
+         * Gets the address of the Hyperlink object.
+         *
+         * [Api set:  1.1]
+         */
+        readonly address: string;
+        /**
+         *
+         * Gets the description of a hyperlink.
+         *
+         * [Api set:  1.1]
+         */
+        readonly description: string;
+        /**
+         *
+         * Gets the extra info of a hyperlink.
+         *
+         * [Api set:  1.1]
+         */
+        readonly extraInfo: string;
+        /**
+         *
+         * Gets the sub-address of the Hyperlink object.
+         *
+         * [Api set:  1.1]
+         */
+        readonly subAddress: string;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: Visio.Interfaces.HyperlinkLoadOptions): Visio.Hyperlink;
+        load(option?: string | string[]): Visio.Hyperlink;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.Hyperlink;
+        toJSON(): Visio.Interfaces.HyperlinkData;
+    }
+    /**
+     *
+     * Represents the CommentCollection for a given Shape.
+     *
+     * [Api set:  1.1]
+     */
+    class CommentCollection extends OfficeExtension.ClientObject {
+        /** Gets the loaded child items in this collection. */
+        readonly items: Array<Visio.Comment>;
+        /**
+         *
+         * Gets the number of Shape Data Items.
+         *
+         * [Api set:  1.1]
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         *
+         * Gets the Comment using its name.
+         *
+         * [Api set:  1.1]
+         *
+         * @param key Key is the name of the Comment to be retrieved.
+         */
+        getItem(key: string): Visio.Comment;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions): Visio.CommentCollection;
+        load(option?: string | string[]): Visio.CommentCollection;
+        load(option?: OfficeExtension.LoadOption): Visio.CommentCollection;
+        toJSON(): Visio.Interfaces.CommentCollectionData;
+    }
+    /**
+     *
+     * Represents the Comment.
+     *
+     * [Api set:  1.1]
+     */
+    class Comment extends OfficeExtension.ClientObject {
+        /**
+         *
+         * A string that specifies the label of the shape data item.
+         *
+         * [Api set:  1.1]
+         */
+        author: string;
+        /**
+         *
+         * A string that specifies the format of the shape data item.
+         *
+         * [Api set:  1.1]
+         */
+        date: string;
+        /**
+         *
+         * A string that specifies the value of the shape data item.
+         *
+         * [Api set:  1.1]
+         */
+        text: string;
+        /** Sets multiple properties on the object at the same time, based on JSON input. */
+        set(properties: Interfaces.CommentUpdateData, options?: {
+            /**
+             * Throw an error if the passed-in property list includes read-only properties (default = true).
+             */
+            throwOnReadOnly?: boolean;
+        }): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Comment): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: Visio.Interfaces.CommentLoadOptions): Visio.Comment;
+        load(option?: string | string[]): Visio.Comment;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.Comment;
+        toJSON(): Visio.Interfaces.CommentData;
+    }
+    /**
+     *
+     * Represents the Selection in the page.
+     *
+     * [Api set:  1.1]
+     */
+    class Selection extends OfficeExtension.ClientObject {
+        /**
+         *
+         * Gets the Shapes of the Selection
+         *
+         * [Api set:  1.1]
+         */
+        readonly shapes: Visio.ShapeCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         */
+        load(option?: string | string[]): Visio.Selection;
+        load(option?: {
+            select?: string;
+            expand?: string;
+        }): Visio.Selection;
+        toJSON(): Visio.Interfaces.SelectionData;
+    }
+    /**
+     *
+     * Represents the Horizontal Alignment of the Overlay relative to the shape.
+     *
+     * [Api set:  1.1]
+     */
+    namespace OverlayHorizontalAlignment {
+        /**
+         *
+         * left
+         *
+         */
+        var left: string;
+        /**
+         *
+         * center
+         *
+         */
+        var center: string;
+        /**
+         *
+         * right
+         *
+         */
+        var right: string;
+    }
+    /**
+     *
+     * Represents the Vertical Alignment of the Overlay relative to the shape.
+     *
+     * [Api set:  1.1]
+     */
+    namespace OverlayVerticalAlignment {
+        /**
+         *
+         * top
+         *
+         */
+        var top: string;
+        /**
+         *
+         * middle
+         *
+         */
+        var middle: string;
+        /**
+         *
+         * bottom
+         *
+         */
+        var bottom: string;
+    }
+    /**
+     *
+     * Represents the type of the overlay.
+     *
+     * [Api set:  1.1]
+     */
+    namespace OverlayType {
+        /**
+         *
+         * text
+         *
+         */
+        var text: string;
+        /**
+         *
+         * image
+         *
+         */
+        var image: string;
+    }
+    /**
+     *
+     * Toolbar IDs of the app
+     *
+     * [Api set:  1.1]
+     */
+    namespace ToolBarType {
+        /**
+         *
+         * CommandBar
+         *
+         */
+        var commandBar: string;
+        /**
+         *
+         * PageNavigationBar
+         *
+         */
+        var pageNavigationBar: string;
+        /**
+         *
+         * StatusBar
+         *
+         */
+        var statusBar: string;
+    }
+    namespace ErrorCodes {
+        var accessDenied: string;
+        var generalException: string;
+        var invalidArgument: string;
+        var itemNotFound: string;
+        var notImplemented: string;
+        var unsupportedOperation: string;
+    }
+    module Interfaces {
+        interface CollectionLoadOptions {
+            $top?: number;
+            $skip?: number;
+        }
+        /** An interface for updating data on the Application object, for use in "application.set({ ... })". */
+        interface ApplicationUpdateData {
+            /**
+             *
+             * Show/Hide the application borders.
+             *
+             * [Api set:  1.1]
+             */
+            showBorders?: boolean;
+            /**
+             *
+             * Show or Hide the standard toolbars.
+             *
+             * [Api set:  1.1]
+             */
+            showToolbars?: boolean;
+        }
+        /** An interface for updating data on the Document object, for use in "document.set({ ... })". */
+        interface DocumentUpdateData {
+            /**
+            *
+            * Represents a Visio application instance that contains this document.
+            *
+            * [Api set:  1.1]
+            */
+            application?: Visio.Interfaces.ApplicationUpdateData;
+            /**
+            *
+            * Returns the DocumentView object.
+            *
+            * [Api set:  1.1]
+            */
+            view?: Visio.Interfaces.DocumentViewUpdateData;
+        }
+        /** An interface for updating data on the DocumentView object, for use in "documentView.set({ ... })". */
+        interface DocumentViewUpdateData {
+            /**
+             *
+             * Disable Hyperlinks.
+             *
+             * [Api set:  1.1]
+             */
+            disableHyperlinks?: boolean;
+            /**
+             *
+             * Disable Pan.
+             *
+             * [Api set:  1.1]
+             */
+            disablePan?: boolean;
+            /**
+             *
+             * Disable Zoom.
+             *
+             * [Api set:  1.1]
+             */
+            disableZoom?: boolean;
+            /**
+             *
+             * Disable Hyperlinks.
+             *
+             * [Api set:  1.1]
+             */
+            hideDiagramBoundary?: boolean;
+        }
+        /** An interface for updating data on the Page object, for use in "page.set({ ... })". */
+        interface PageUpdateData {
+            /**
+            *
+            * Returns the view of the page.
+            *
+            * [Api set:  1.1]
+            */
+            view?: Visio.Interfaces.PageViewUpdateData;
+        }
+        /** An interface for updating data on the PageView object, for use in "pageView.set({ ... })". */
+        interface PageViewUpdateData {
+            /**
+             *
+             * Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
+             *
+             * [Api set:  1.1]
+             */
+            zoom?: number;
+        }
+        /** An interface for updating data on the PageCollection object, for use in "pageCollection.set({ ... })". */
+        interface PageCollectionUpdateData {
+            items?: Visio.Interfaces.PageData[];
+        }
+        /** An interface for updating data on the ShapeCollection object, for use in "shapeCollection.set({ ... })". */
+        interface ShapeCollectionUpdateData {
+            items?: Visio.Interfaces.ShapeData[];
+        }
+        /** An interface for updating data on the Shape object, for use in "shape.set({ ... })". */
+        interface ShapeUpdateData {
+            /**
+            *
+            * Returns the view of the shape.
+            *
+            * [Api set:  1.1]
+            */
+            view?: Visio.Interfaces.ShapeViewUpdateData;
+            /**
+             *
+             * Returns true, if shape is selected. User can set true to select the shape explicitly.
+             *
+             * [Api set:  1.1]
+             */
+            select?: boolean;
+        }
+        /** An interface for updating data on the ShapeView object, for use in "shapeView.set({ ... })". */
+        interface ShapeViewUpdateData {
+            /**
+             *
+             * Represents the highlight around the shape.
+             *
+             * [Api set:  1.1]
+             */
+            highlight?: Visio.Highlight;
+        }
+        /** An interface for updating data on the ShapeDataItemCollection object, for use in "shapeDataItemCollection.set({ ... })". */
+        interface ShapeDataItemCollectionUpdateData {
+            items?: Visio.Interfaces.ShapeDataItemData[];
+        }
+        /** An interface for updating data on the HyperlinkCollection object, for use in "hyperlinkCollection.set({ ... })". */
+        interface HyperlinkCollectionUpdateData {
+            items?: Visio.Interfaces.HyperlinkData[];
+        }
+        /** An interface for updating data on the CommentCollection object, for use in "commentCollection.set({ ... })". */
+        interface CommentCollectionUpdateData {
+            items?: Visio.Interfaces.CommentData[];
+        }
+        /** An interface for updating data on the Comment object, for use in "comment.set({ ... })". */
+        interface CommentUpdateData {
+            /**
+             *
+             * A string that specifies the label of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            author?: string;
+            /**
+             *
+             * A string that specifies the format of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            date?: string;
+            /**
+             *
+             * A string that specifies the value of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            text?: string;
+        }
+        /** An interface describing the data returned by calling "application.toJSON()". */
+        interface ApplicationData {
+            /**
+             *
+             * Show/Hide the application borders.
+             *
+             * [Api set:  1.1]
+             */
+            showBorders?: boolean;
+            /**
+             *
+             * Show or Hide the standard toolbars.
+             *
+             * [Api set:  1.1]
+             */
+            showToolbars?: boolean;
+        }
+        /** An interface describing the data returned by calling "document.toJSON()". */
+        interface DocumentData {
+            /**
+            *
+            * Represents a Visio application instance that contains this document. Read-only.
+            *
+            * [Api set:  1.1]
+            */
+            application?: Visio.Interfaces.ApplicationData;
+            /**
+            *
+            * Represents a collection of pages associated with the document. Read-only.
+            *
+            * [Api set:  1.1]
+            */
+            pages?: Visio.Interfaces.PageData[];
+            /**
+            *
+            * Returns the DocumentView object.
+            *
+            * [Api set:  1.1]
+            */
+            view?: Visio.Interfaces.DocumentViewData;
+        }
+        /** An interface describing the data returned by calling "documentView.toJSON()". */
+        interface DocumentViewData {
+            /**
+             *
+             * Disable Hyperlinks.
+             *
+             * [Api set:  1.1]
+             */
+            disableHyperlinks?: boolean;
+            /**
+             *
+             * Disable Pan.
+             *
+             * [Api set:  1.1]
+             */
+            disablePan?: boolean;
+            /**
+             *
+             * Disable Zoom.
+             *
+             * [Api set:  1.1]
+             */
+            disableZoom?: boolean;
+            /**
+             *
+             * Disable Hyperlinks.
+             *
+             * [Api set:  1.1]
+             */
+            hideDiagramBoundary?: boolean;
+        }
+        /** An interface describing the data returned by calling "page.toJSON()". */
+        interface PageData {
+            /**
+            *
+            * All shapes in the page. Read-only.
+            *
+            * [Api set:  1.1]
+            */
+            allShapes?: Visio.Interfaces.ShapeData[];
+            /**
+            *
+            * Returns the Comments Collection
+            *
+            * [Api set:  1.1]
+            */
+            comments?: Visio.Interfaces.CommentData[];
+            /**
+            *
+            * Shapes at root level, in the page. Read-only.
+            *
+            * [Api set:  1.1]
+            */
+            shapes?: Visio.Interfaces.ShapeData[];
+            /**
+            *
+            * Returns the view of the page. Read-only.
+            *
+            * [Api set:  1.1]
+            */
+            view?: Visio.Interfaces.PageViewData;
+            /**
+             *
+             * Returns the height of the page. Read-only.
+             *
+             * [Api set:  1.1]
+             */
+            height?: number;
+            /**
+             *
+             * Index of the Page.
+             *
+             * [Api set:  1.1]
+             */
+            index?: number;
+            /**
+             *
+             * Whether the page is a background page or not. Read-only.
+             *
+             * [Api set:  1.1]
+             */
+            isBackground?: boolean;
+            /**
+             *
+             * Page name. Read-only.
+             *
+             * [Api set:  1.1]
+             */
+            name?: string;
+            /**
+             *
+             * Returns the width of the page. Read-only.
+             *
+             * [Api set:  1.1]
+             */
+            width?: number;
+        }
+        /** An interface describing the data returned by calling "pageView.toJSON()". */
+        interface PageViewData {
+            /**
+             *
+             * Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
+             *
+             * [Api set:  1.1]
+             */
+            zoom?: number;
+        }
+        /** An interface describing the data returned by calling "pageCollection.toJSON()". */
+        interface PageCollectionData {
+            items?: Visio.Interfaces.PageData[];
+        }
+        /** An interface describing the data returned by calling "shapeCollection.toJSON()". */
+        interface ShapeCollectionData {
+            items?: Visio.Interfaces.ShapeData[];
+        }
+        /** An interface describing the data returned by calling "shape.toJSON()". */
+        interface ShapeData {
+            /**
+            *
+            * Returns the Comments Collection
+            *
+            * [Api set:  1.1]
+            */
+            comments?: Visio.Interfaces.CommentData[];
+            /**
+            *
+            * Returns the Hyperlinks collection for a Shape object. Read-only.
+            *
+            * [Api set:  1.1]
+            */
+            hyperlinks?: Visio.Interfaces.HyperlinkData[];
+            /**
+            *
+            * Returns the Shape's Data Section. Read-only.
+            *
+            * [Api set:  1.1]
+            */
+            shapeDataItems?: Visio.Interfaces.ShapeDataItemData[];
+            /**
+            *
+            * Gets SubShape Collection.
+            *
+            * [Api set:  1.1]
+            */
+            subShapes?: Visio.Interfaces.ShapeData[];
+            /**
+            *
+            * Returns the view of the shape. Read-only.
+            *
+            * [Api set:  1.1]
+            */
+            view?: Visio.Interfaces.ShapeViewData;
+            /**
+             *
+             * Shape's Identifier.
+             *
+             * [Api set:  1.1]
+             */
+            id?: number;
+            /**
+             *
+             * Shape's name.
+             *
+             * [Api set:  1.1]
+             */
+            name?: string;
+            /**
+             *
+             * Returns true, if shape is selected. User can set true to select the shape explicitly.
+             *
+             * [Api set:  1.1]
+             */
+            select?: boolean;
+            /**
+             *
+             * Shape's Text.
+             *
+             * [Api set:  1.1]
+             */
+            text?: string;
+        }
+        /** An interface describing the data returned by calling "shapeView.toJSON()". */
+        interface ShapeViewData {
+            /**
+             *
+             * Represents the highlight around the shape.
+             *
+             * [Api set:  1.1]
+             */
+            highlight?: Visio.Highlight;
+        }
+        /** An interface describing the data returned by calling "shapeDataItemCollection.toJSON()". */
+        interface ShapeDataItemCollectionData {
+            items?: Visio.Interfaces.ShapeDataItemData[];
+        }
+        /** An interface describing the data returned by calling "shapeDataItem.toJSON()". */
+        interface ShapeDataItemData {
+            /**
+             *
+             * A string that specifies the format of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            format?: string;
+            /**
+             *
+             * A string that specifies the formatted value of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            formattedValue?: string;
+            /**
+             *
+             * A string that specifies the label of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            label?: string;
+            /**
+             *
+             * A string that specifies the value of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            value?: string;
+        }
+        /** An interface describing the data returned by calling "hyperlinkCollection.toJSON()". */
+        interface HyperlinkCollectionData {
+            items?: Visio.Interfaces.HyperlinkData[];
+        }
+        /** An interface describing the data returned by calling "hyperlink.toJSON()". */
+        interface HyperlinkData {
+            /**
+             *
+             * Gets the address of the Hyperlink object.
+             *
+             * [Api set:  1.1]
+             */
+            address?: string;
+            /**
+             *
+             * Gets the description of a hyperlink.
+             *
+             * [Api set:  1.1]
+             */
+            description?: string;
+            /**
+             *
+             * Gets the extra info of a hyperlink.
+             *
+             * [Api set:  1.1]
+             */
+            extraInfo?: string;
+            /**
+             *
+             * Gets the sub-address of the Hyperlink object.
+             *
+             * [Api set:  1.1]
+             */
+            subAddress?: string;
+        }
+        /** An interface describing the data returned by calling "commentCollection.toJSON()". */
+        interface CommentCollectionData {
+            items?: Visio.Interfaces.CommentData[];
+        }
+        /** An interface describing the data returned by calling "comment.toJSON()". */
+        interface CommentData {
+            /**
+             *
+             * A string that specifies the label of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            author?: string;
+            /**
+             *
+             * A string that specifies the format of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            date?: string;
+            /**
+             *
+             * A string that specifies the value of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            text?: string;
+        }
+        /** An interface describing the data returned by calling "selection.toJSON()". */
+        interface SelectionData {
+            /**
+            *
+            * Gets the Shapes of the Selection
+            *
+            * [Api set:  1.1]
+            */
+            shapes?: Visio.Interfaces.ShapeData[];
+        }
+        /**
+         *
+         * Represents the Application.
+         *
+         * [Api set:  1.1]
+         */
+        interface ApplicationLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Show/Hide the application borders.
+             *
+             * [Api set:  1.1]
+             */
+            showBorders?: boolean;
+            /**
+             *
+             * Show or Hide the standard toolbars.
+             *
+             * [Api set:  1.1]
+             */
+            showToolbars?: boolean;
+        }
+        /**
+         *
+         * Represents the Document class.
+         *
+         * [Api set:  1.1]
+         */
+        interface DocumentLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Represents a Visio application instance that contains this document.
+            *
+            * [Api set:  1.1]
+            */
+            application?: Visio.Interfaces.ApplicationLoadOptions;
+            /**
+            *
+            * Returns the DocumentView object.
+            *
+            * [Api set:  1.1]
+            */
+            view?: Visio.Interfaces.DocumentViewLoadOptions;
+        }
+        /**
+         *
+         * Represents the DocumentView class.
+         *
+         * [Api set:  1.1]
+         */
+        interface DocumentViewLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Disable Hyperlinks.
+             *
+             * [Api set:  1.1]
+             */
+            disableHyperlinks?: boolean;
+            /**
+             *
+             * Disable Pan.
+             *
+             * [Api set:  1.1]
+             */
+            disablePan?: boolean;
+            /**
+             *
+             * Disable Zoom.
+             *
+             * [Api set:  1.1]
+             */
+            disableZoom?: boolean;
+            /**
+             *
+             * Disable Hyperlinks.
+             *
+             * [Api set:  1.1]
+             */
+            hideDiagramBoundary?: boolean;
+        }
+        /**
+         *
+         * Represents the Page class.
+         *
+         * [Api set:  1.1]
+         */
+        interface PageLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns the view of the page.
+            *
+            * [Api set:  1.1]
+            */
+            view?: Visio.Interfaces.PageViewLoadOptions;
+            /**
+             *
+             * Returns the height of the page. Read-only.
+             *
+             * [Api set:  1.1]
+             */
+            height?: boolean;
+            /**
+             *
+             * Index of the Page.
+             *
+             * [Api set:  1.1]
+             */
+            index?: boolean;
+            /**
+             *
+             * Whether the page is a background page or not. Read-only.
+             *
+             * [Api set:  1.1]
+             */
+            isBackground?: boolean;
+            /**
+             *
+             * Page name. Read-only.
+             *
+             * [Api set:  1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * Returns the width of the page. Read-only.
+             *
+             * [Api set:  1.1]
+             */
+            width?: boolean;
+        }
+        /**
+         *
+         * Represents the PageView class.
+         *
+         * [Api set:  1.1]
+         */
+        interface PageViewLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
+             *
+             * [Api set:  1.1]
+             */
+            zoom?: boolean;
+        }
+        /**
+         *
+         * Represents a collection of Page objects that are part of the document.
+         *
+         * [Api set:  1.1]
+         */
+        interface PageCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the view of the page.
+            *
+            * [Api set:  1.1]
+            */
+            view?: Visio.Interfaces.PageViewLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the height of the page. Read-only.
+             *
+             * [Api set:  1.1]
+             */
+            height?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Index of the Page.
+             *
+             * [Api set:  1.1]
+             */
+            index?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Whether the page is a background page or not. Read-only.
+             *
+             * [Api set:  1.1]
+             */
+            isBackground?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Page name. Read-only.
+             *
+             * [Api set:  1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the width of the page. Read-only.
+             *
+             * [Api set:  1.1]
+             */
+            width?: boolean;
+        }
+        /**
+         *
+         * Represents the Shape Collection.
+         *
+         * [Api set:  1.1]
+         */
+        interface ShapeCollectionLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * For EACH ITEM in the collection: Returns the view of the shape.
+            *
+            * [Api set:  1.1]
+            */
+            view?: Visio.Interfaces.ShapeViewLoadOptions;
+            /**
+             *
+             * For EACH ITEM in the collection: Shape's Identifier.
+             *
+             * [Api set:  1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Shape's name.
+             *
+             * [Api set:  1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns true, if shape is selected. User can set true to select the shape explicitly.
+             *
+             * [Api set:  1.1]
+             */
+            select?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Shape's Text.
+             *
+             * [Api set:  1.1]
+             */
+            text?: boolean;
+        }
+        /**
+         *
+         * Represents the Shape class.
+         *
+         * [Api set:  1.1]
+         */
+        interface ShapeLoadOptions {
+            $all?: boolean;
+            /**
+            *
+            * Returns the view of the shape.
+            *
+            * [Api set:  1.1]
+            */
+            view?: Visio.Interfaces.ShapeViewLoadOptions;
+            /**
+             *
+             * Shape's Identifier.
+             *
+             * [Api set:  1.1]
+             */
+            id?: boolean;
+            /**
+             *
+             * Shape's name.
+             *
+             * [Api set:  1.1]
+             */
+            name?: boolean;
+            /**
+             *
+             * Returns true, if shape is selected. User can set true to select the shape explicitly.
+             *
+             * [Api set:  1.1]
+             */
+            select?: boolean;
+            /**
+             *
+             * Shape's Text.
+             *
+             * [Api set:  1.1]
+             */
+            text?: boolean;
+        }
+        /**
+         *
+         * Represents the ShapeView class.
+         *
+         * [Api set:  1.1]
+         */
+        interface ShapeViewLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Represents the highlight around the shape.
+             *
+             * [Api set:  1.1]
+             */
+            highlight?: boolean;
+        }
+        /**
+         *
+         * Represents the ShapeDataItemCollection for a given Shape.
+         *
+         * [Api set:  1.1]
+         */
+        interface ShapeDataItemCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: A string that specifies the format of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            format?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: A string that specifies the formatted value of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            formattedValue?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: A string that specifies the label of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            label?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: A string that specifies the value of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            value?: boolean;
+        }
+        /**
+         *
+         * Represents the ShapeDataItem.
+         *
+         * [Api set:  1.1]
+         */
+        interface ShapeDataItemLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * A string that specifies the format of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            format?: boolean;
+            /**
+             *
+             * A string that specifies the formatted value of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            formattedValue?: boolean;
+            /**
+             *
+             * A string that specifies the label of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            label?: boolean;
+            /**
+             *
+             * A string that specifies the value of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            value?: boolean;
+        }
+        /**
+         *
+         * Represents the Hyperlink Collection.
+         *
+         * [Api set:  1.1]
+         */
+        interface HyperlinkCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the address of the Hyperlink object.
+             *
+             * [Api set:  1.1]
+             */
+            address?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the description of a hyperlink.
+             *
+             * [Api set:  1.1]
+             */
+            description?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the extra info of a hyperlink.
+             *
+             * [Api set:  1.1]
+             */
+            extraInfo?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the sub-address of the Hyperlink object.
+             *
+             * [Api set:  1.1]
+             */
+            subAddress?: boolean;
+        }
+        /**
+         *
+         * Represents the Hyperlink.
+         *
+         * [Api set:  1.1]
+         */
+        interface HyperlinkLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets the address of the Hyperlink object.
+             *
+             * [Api set:  1.1]
+             */
+            address?: boolean;
+            /**
+             *
+             * Gets the description of a hyperlink.
+             *
+             * [Api set:  1.1]
+             */
+            description?: boolean;
+            /**
+             *
+             * Gets the extra info of a hyperlink.
+             *
+             * [Api set:  1.1]
+             */
+            extraInfo?: boolean;
+            /**
+             *
+             * Gets the sub-address of the Hyperlink object.
+             *
+             * [Api set:  1.1]
+             */
+            subAddress?: boolean;
+        }
+        /**
+         *
+         * Represents the CommentCollection for a given Shape.
+         *
+         * [Api set:  1.1]
+         */
+        interface CommentCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: A string that specifies the label of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            author?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: A string that specifies the format of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            date?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: A string that specifies the value of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            text?: boolean;
+        }
+        /**
+         *
+         * Represents the Comment.
+         *
+         * [Api set:  1.1]
+         */
+        interface CommentLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * A string that specifies the label of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            author?: boolean;
+            /**
+             *
+             * A string that specifies the format of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            date?: boolean;
+            /**
+             *
+             * A string that specifies the value of the shape data item.
+             *
+             * [Api set:  1.1]
+             */
+            text?: boolean;
+        }
+    }
+}
+declare module Visio {
+    /**
+     * The RequestContext object facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
+     */
+    class RequestContext extends OfficeExtension.ClientRequestContext {
+        constructor(url?: string | OfficeExtension.EmbeddedSession);
+        readonly document: Document;
+    }
+    /**
+     * Executes a batch script that performs actions on the Visio object model, using a new request context. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
+     */
+    function run<T>(batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    /**
+     * Executes a batch script that performs actions on the Visio object model, using the request context of a previously-created API object.
+     * @param object - A previously-created API object. The batch will use the same request context as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
+     * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     */
+    function run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    /**
+     * Executes a batch script that performs actions on the Visio object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     * @param contextObject - A previously-created Visio.RequestContext. This context will get re-used by the batch function (instead of having a new context created). This means that the batch will be able to pick up changes made to existing API objects, if those objects were derived from this same context.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the RequestContext is required to get access to the Visio object model from the add-in.
+     */
+    function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    /**
+     * Executes a batch script that performs actions on the Visio object model, using the request context of previously-created API objects.
+     * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared request context, which means that any changes applied to these objects will be picked up by "context.sync()".
+     * @param batch - A function that takes in a Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     */
+    function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+}
+
+
+
+////////////////////////////////////////////////////////////////
+//////////////////////// End Visio APIs ////////////////////////
 ////////////////////////////////////////////////////////////////
