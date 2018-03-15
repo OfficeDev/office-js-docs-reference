@@ -8,7 +8,7 @@ office-js
 Copyright (c) Microsoft Corporation
 */
 
-declare namespace Office {
+export declare namespace Office {
     export var context: Context;
     /**
      * This method is called after the Office API was loaded.
@@ -259,7 +259,7 @@ declare namespace Office {
     }
 }
 
-declare namespace Office {
+export declare namespace Office {
     /**
      * Returns a promise of an object described in the expression. Callback is invoked only if method fails.
      * @param expression The object to be retrieved. Example "bindings#BindingName", retrieves a binding promise for a binding named 'BindingName'
@@ -1554,7 +1554,7 @@ declare namespace Office {
 ////////////////////// Begin Exchange APIs /////////////////////
 ////////////////////////////////////////////////////////////////
 
-declare namespace Office {
+export declare namespace Office {
     export module MailboxEnums {
         export enum AttachmentType {
             /**
@@ -2562,7 +2562,7 @@ declare namespace Office {
 //////////////// Begin OfficeExtension runtime /////////////////
 ////////////////////////////////////////////////////////////////
 
-declare namespace OfficeExtension {
+export declare namespace OfficeExtension {
     /** An abstract proxy object that represents an object in an Office document. You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the proxy object state with the document by calling "context.sync()". */
     class ClientObject {
         /** The request context associated with the object */
@@ -2571,7 +2571,7 @@ declare namespace OfficeExtension {
         isNullObject: boolean;
     }
 }
-declare namespace OfficeExtension {
+export declare namespace OfficeExtension {
     interface LoadOption {
         select?: string | string[];
         expand?: string | string[];
@@ -2623,14 +2623,14 @@ declare namespace OfficeExtension {
     }
 }
 
-declare namespace OfficeExtension {
+export declare namespace OfficeExtension {
     /** Contains the result for methods that return primitive types. The object's value property is retrieved from the document after "context.sync()" is invoked. */
     class ClientResult<T> {
         /** The value of the result that is retrieved from the document after "context.sync()" is invoked. */
         value: T;
     }
 }
-declare namespace OfficeExtension {
+export declare namespace OfficeExtension {
     export interface DebugInfo {
         /** Error code string, such as "InvalidArgument". */
         code: string;
@@ -2661,7 +2661,7 @@ declare namespace OfficeExtension {
         innerError: Error;
     }
 }
-declare namespace OfficeExtension {
+export declare namespace OfficeExtension {
     class ErrorCodes {
         public static accessDenied: string;
         public static generalException: string;
@@ -2677,7 +2677,7 @@ declare namespace OfficeExtension {
         public static connectionFailure: string;
     }
 }
-declare namespace OfficeExtension {
+export declare namespace OfficeExtension {
     /** An IPromise object that represents a deferred interaction with the host Office application. */
     interface IPromise<R> {
 		/**
@@ -2851,7 +2851,7 @@ declare namespace OfficeExtension {
     }
 }
 
-declare namespace OfficeExtension {
+export declare namespace OfficeExtension {
     /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
     class TrackedObjects {
         /** Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. */
@@ -2865,7 +2865,7 @@ declare namespace OfficeExtension {
     }
 }
 
-declare namespace OfficeExtension {
+export declare namespace OfficeExtension {
     export class EventHandlers<T> {
         constructor(context: ClientRequestContext, parentObject: ClientObject, name: string, eventInfo: EventInfo<T>);
         add(handler: (args: T) => IPromise<any>): EventHandlerResult<T>;
@@ -2883,7 +2883,7 @@ declare namespace OfficeExtension {
         eventArgsTransformFunc: (args: any) => IPromise<T>;
     }
 }
-declare namespace OfficeExtension {
+export declare namespace OfficeExtension {
 	/**
 	* Request URL and headers
 	*/
@@ -2899,7 +2899,7 @@ declare namespace OfficeExtension {
 
 
 
-declare namespace OfficeCore {
+export declare namespace OfficeCore {
     /**
      * [Api set: Experiment 1.1 (PREVIEW)]
      */
@@ -2963,7 +2963,7 @@ declare namespace OfficeCore {
     module Interfaces {
     }
 }
-declare namespace OfficeCore {
+export declare namespace OfficeCore {
     class RequestContext extends OfficeExtension.ClientRequestContext {
         constructor(url?: string | OfficeExtension.RequestUrlAndHeaderInfo | any);
         readonly flightingService: FlightingService;
@@ -2985,7 +2985,7 @@ declare namespace OfficeCore {
 /////////////////////// Begin Excel APIs ///////////////////////
 ////////////////////////////////////////////////////////////////
 
-declare namespace Excel {
+export declare namespace Excel {
     interface ThreeArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
@@ -14728,7 +14728,7 @@ declare namespace Excel {
 /////////////////////// Begin Word APIs ////////////////////////
 ////////////////////////////////////////////////////////////////
 
-declare namespace Word {
+export declare namespace Word {
     /**
      *
      * Represents the body of a document or a section.
@@ -20148,7 +20148,7 @@ declare module Word {
 ////////////////////////////////////////////////////////////////
 
 
-declare namespace OneNote {
+export declare namespace OneNote {
     /**
      *
      * Represents the top-level object that contains all globally addressable OneNote objects such as notebooks, the active notebook, and the active section.
@@ -22309,7 +22309,7 @@ declare namespace OneNote {
         var generalException: string;
     }
 }
-declare namespace OneNote {
+export declare namespace OneNote {
     class RequestContext extends OfficeExtension.ClientRequestContext {
         private m_onenote;
         constructor(url?: string);
@@ -22335,7 +22335,7 @@ declare namespace OneNote {
 
 
 
-declare namespace Visio {
+export declare namespace Visio {
     /**
      *
      * Provides information about the shape that raised the ShapeMouseEnter event.
