@@ -9842,8 +9842,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function.
-         * @param n Is the order of the Bessel function.
+         * @param x - Is the value at which to evaluate the function.
+         * @param n - Is the order of the Bessel function.
          */
         besselI(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9852,8 +9852,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function.
-         * @param n Is the order of the Bessel function.
+         * @param x - Is the value at which to evaluate the function.
+         * @param n - Is the order of the Bessel function.
          */
         besselJ(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9862,8 +9862,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function.
-         * @param n Is the order of the function.
+         * @param x - Is the value at which to evaluate the function.
+         * @param n - Is the order of the function.
          */
         besselK(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9872,8 +9872,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function.
-         * @param n Is the order of the function.
+         * @param x - Is the value at which to evaluate the function.
+         * @param n - Is the order of the function.
          */
         besselY(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9882,12 +9882,12 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value between A and B at which to evaluate the function.
+         * @param x - Is the value between A and B at which to evaluate the function.
          * @param alpha Is a parameter to the distribution and must be greater than 0.
          * @param beta Is a parameter to the distribution and must be greater than 0.
          * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
-         * @param A Is an optional lower bound to the interval of x. If omitted, A = 0.
-         * @param B Is an optional upper bound to the interval of x. If omitted, B = 1.
+         * @param A - Is an optional lower bound to the interval of x. If omitted, A = 0.
+         * @param B - Is an optional upper bound to the interval of x. If omitted, B = 1.
          */
         beta_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, A?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, B?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9899,8 +9899,8 @@ export declare namespace Excel {
          * @param probability Is a probability associated with the beta distribution.
          * @param alpha Is a parameter to the distribution and must be greater than 0.
          * @param beta Is a parameter to the distribution and must be greater than 0.
-         * @param A Is an optional lower bound to the interval of x. If omitted, A = 0.
-         * @param B Is an optional upper bound to the interval of x. If omitted, B = 1.
+         * @param A - Is an optional lower bound to the interval of x. If omitted, A = 0.
+         * @param B - Is an optional upper bound to the interval of x. If omitted, B = 1.
          */
         beta_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, A?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, B?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10053,7 +10053,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which you want to evaluate the distribution, a nonnegative number.
+         * @param x - Is the value at which you want to evaluate the distribution, a nonnegative number.
          * @param degFreedom Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          * @param cumulative Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
          */
@@ -10064,7 +10064,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which you want to evaluate the distribution, a nonnegative number.
+         * @param x - Is the value at which you want to evaluate the distribution, a nonnegative number.
          * @param degFreedom Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
         chiSq_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
@@ -10796,7 +10796,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the lower bound for integrating ERF.
+         * @param x - Is the lower bound for integrating ERF.
          */
         erfC(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10805,7 +10805,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param X Is the lower bound for integrating ERFC.PRECISE.
+         * @param X - Is the lower bound for integrating ERFC.PRECISE.
          */
         erfC_Precise(X: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10814,7 +10814,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param X Is the lower bound for integrating ERF.PRECISE.
+         * @param X - Is the lower bound for integrating ERF.PRECISE.
          */
         erf_Precise(X: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10860,7 +10860,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value of the function, a nonnegative number.
+         * @param x - Is the value of the function, a nonnegative number.
          * @param lambda Is the parameter value, a positive number.
          * @param cumulative Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
          */
@@ -10881,7 +10881,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function, a nonnegative number.
+         * @param x - Is the value at which to evaluate the function, a nonnegative number.
          * @param degFreedom1 Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          * @param degFreedom2 Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          * @param cumulative Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
@@ -10893,7 +10893,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function, a nonnegative number.
+         * @param x - Is the value at which to evaluate the function, a nonnegative number.
          * @param degFreedom1 Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          * @param degFreedom2 Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
@@ -10973,7 +10973,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value for which you want the transformation, a number between -1 and 1, excluding -1 and 1.
+         * @param x - Is the value for which you want the transformation, a number between -1 and 1, excluding -1 and 1.
          */
         fisher(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10982,7 +10982,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param y Is the value for which you want to perform the inverse of the transformation.
+         * @param y - Is the value for which you want to perform the inverse of the transformation.
          */
         fisherInv(y: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11036,7 +11036,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value for which you want to calculate Gamma.
+         * @param x - Is the value for which you want to calculate Gamma.
          */
         gamma(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11045,7 +11045,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value for which you want to calculate GAMMALN, a positive number.
+         * @param x - Is the value for which you want to calculate GAMMALN, a positive number.
          */
         gammaLn(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11054,7 +11054,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value for which you want to calculate GAMMALN.PRECISE, a positive number.
+         * @param x - Is the value for which you want to calculate GAMMALN.PRECISE, a positive number.
          */
         gammaLn_Precise(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11063,7 +11063,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which you want to evaluate the distribution, a nonnegative number.
+         * @param x - Is the value at which you want to evaluate the distribution, a nonnegative number.
          * @param alpha Is a parameter to the distribution, a positive number.
          * @param beta Is a parameter to the distribution, a positive number. If beta = 1, GAMMA.DIST returns the standard gamma distribution.
          * @param cumulative Is a logical value: return the cumulative distribution function = TRUE; return the probability mass function = FALSE or omitted.
@@ -11086,7 +11086,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value for which you want the distribution.
+         * @param x - Is the value for which you want the distribution.
          */
         gauss(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11630,7 +11630,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param array Is the array or range of data for which you want to determine the k-th largest value.
-         * @param k Is the position (from the largest) in the array or cell range of the value to return.
+         * @param k - Is the position (from the largest) in the array or cell range of the value to return.
          */
         large(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11714,7 +11714,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function, a positive number.
+         * @param x - Is the value at which to evaluate the function, a positive number.
          * @param mean Is the mean of ln(x).
          * @param standardDev Is the standard deviation of ln(x), a positive number.
          * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
@@ -11981,7 +11981,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value for which you want the distribution.
+         * @param x - Is the value for which you want the distribution.
          * @param mean Is the arithmetic mean of the distribution.
          * @param standardDev Is the standard deviation of the distribution, a positive number.
          * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
@@ -12004,7 +12004,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param z Is the value for which you want the distribution.
+         * @param z - Is the value for which you want the distribution.
          * @param cumulative Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
          */
         norm_S_Dist(z: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
@@ -12185,7 +12185,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param array Is the array or range of data with numeric values that defines relative standing.
-         * @param x Is the value for which you want to know the rank.
+         * @param x - Is the value for which you want to know the rank.
          * @param significance Is an optional value that identifies the number of significant digits for the returned percentage, three digits if omitted (0.xxx%).
          */
         percentRank_Exc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
@@ -12196,7 +12196,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param array Is the array or range of data with numeric values that defines relative standing.
-         * @param x Is the value for which you want to know the rank.
+         * @param x - Is the value for which you want to know the rank.
          * @param significance Is an optional value that identifies the number of significant digits for the returned percentage, three digits if omitted (0.xxx%).
          */
         percentRank_Inc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
@@ -12207,7 +12207,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param array Is the array or range of data that defines relative standing.
-         * @param k Is the percentile value that is between 0 through 1, inclusive.
+         * @param k - Is the percentile value that is between 0 through 1, inclusive.
          */
         percentile_Exc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12217,7 +12217,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param array Is the array or range of data that defines relative standing.
-         * @param k Is the percentile value that is between 0 through 1, inclusive.
+         * @param k - Is the percentile value that is between 0 through 1, inclusive.
          */
         percentile_Inc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12246,7 +12246,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the number for which you want the density of the standard normal distribution.
+         * @param x - Is the number for which you want the density of the standard normal distribution.
          */
         phi(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12275,7 +12275,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the number of events.
+         * @param x - Is the number of events.
          * @param mean Is the expected numeric value, a positive number.
          * @param cumulative Is a logical value: for the cumulative Poisson probability, use TRUE; for the Poisson probability mass function, use FALSE.
          */
@@ -12629,9 +12629,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the input value to the power series.
-         * @param n Is the initial power to which you want to raise x.
-         * @param m Is the step by which to increase n for each term in the series.
+         * @param x - Is the input value to the power series.
+         * @param n - Is the initial power to which you want to raise x.
+         * @param m - Is the step by which to increase n for each term in the series.
          * @param coefficients Is a set of coefficients by which each successive power of x is multiplied.
          */
         seriesSum(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, m: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, coefficients: Excel.Range | string | number | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
@@ -12716,7 +12716,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param array Is an array or range of numerical data for which you want to determine the k-th smallest value.
-         * @param k Is the position (from the smallest) in the array or range of the value to return.
+         * @param k - Is the position (from the smallest) in the array or range of the value to return.
          */
         small(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12779,7 +12779,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value you want to normalize.
+         * @param x - Is the value you want to normalize.
          * @param mean Is the arithmetic mean of the distribution.
          * @param standardDev Is the standard deviation of the distribution, a positive number.
          */
@@ -12905,7 +12905,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the numeric value at which to evaluate the distribution.
+         * @param x - Is the numeric value at which to evaluate the distribution.
          * @param degFreedom Is an integer indicating the number of degrees of freedom that characterize the distribution.
          * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
          */
@@ -12916,7 +12916,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the numeric value at which to evaluate the distribution.
+         * @param x - Is the numeric value at which to evaluate the distribution.
          * @param degFreedom Is an integer indicating the number of degrees of freedom that characterize the distribution.
          */
         t_Dist_2T(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
@@ -12926,7 +12926,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the numeric value at which to evaluate the distribution.
+         * @param x - Is the numeric value at which to evaluate the distribution.
          * @param degFreedom Is an integer indicating the number of degrees of freedom that characterize the distribution.
          */
         t_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
@@ -13185,7 +13185,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function, a nonnegative number.
+         * @param x - Is the value at which to evaluate the function, a nonnegative number.
          * @param alpha Is a parameter to the distribution, a positive number.
          * @param beta Is a parameter to the distribution, a positive number.
          * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
@@ -13314,7 +13314,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param array Is the array or range of data against which to test X.
-         * @param x Is the value to test.
+         * @param x - Is the value to test.
          * @param sigma Is the population (known) standard deviation. If omitted, the sample standard deviation is used.
          */
         z_Test(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, sigma?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
