@@ -12,12 +12,12 @@ export declare namespace Office {
     export var context: Context;
     /**
      * This method is called after the Office API was loaded.
-     * @param reason Indicates how the app was initialized
+     * @param reason - Indicates how the app was initialized
      */
     export function initialize(reason: InitializationReason): void;
     /**
      * Indicates if the large namespace for objects will be used or not.
-     * @param useShortNamespace  Indicates if 'true' that the short namespace will be used
+     * @param useShortNamespace  - Indicates if 'true' that the short namespace will be used
      */
     export function useShortNamespace(useShortNamespace: boolean): void;
     // Enumerations
@@ -148,32 +148,32 @@ export declare namespace Office {
     export interface UI {
         /**
         * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
-        * @param startAddress Accepts the initial HTTPS Url that opens in the dialog.
+        * @param startAddress - Accepts the initial HTTPS Url that opens in the dialog.
         */
         displayDialogAsync(startAddress: string): void;
         /**
         * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
-        * @param startAddress Accepts the initial HTTPS Url that opens in the dialog.
-        * @param options Optional. Accepts a DialogOptions object to define dialog behaviors.
+        * @param startAddress - Accepts the initial HTTPS Url that opens in the dialog.
+        * @param options - Optional. Accepts a DialogOptions object to define dialog behaviors.
         */
         displayDialogAsync(startAddress: string, options: DialogOptions): void;
         /**
         * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
-        * @param startAddress Accepts the initial HTTPS Url that opens in the dialog.
-        * @param callback Optional. Accepts a callback method to handle the dialog creation attempt.
+        * @param startAddress - Accepts the initial HTTPS Url that opens in the dialog.
+        * @param callback - Optional. Accepts a callback method to handle the dialog creation attempt.
         */
         displayDialogAsync(startAddress: string, callback: (result: AsyncResult) => void): void;
         /**
         * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
-        * @param startAddress Accepts the initial HTTPS Url that opens in the dialog.
-        * @param options Optional. Accepts a DialogOptions object to define dialog behaviors.
-        * @param callback Optional. Accepts a callback method to handle the dialog creation attempt.
+        * @param startAddress - Accepts the initial HTTPS Url that opens in the dialog.
+        * @param options - Optional. Accepts a DialogOptions object to define dialog behaviors.
+        * @param callback - Optional. Accepts a callback method to handle the dialog creation attempt.
         */
         displayDialogAsync(startAddress: string, options: DialogOptions, callback: (result: AsyncResult) => void): void;
 
         /**
          * Synchronously delivers a message from the dialog to its parent add-in.
-         * @param messageObject Accepts a message from the dialog to deliver to the add-in.
+         * @param messageObject - Accepts a message from the dialog to deliver to the add-in.
          */
         messageParent(messageObject: any): void;
         /**
@@ -208,13 +208,13 @@ export declare namespace Office {
     export interface Auth {
         /**
         * Obtains an access token from AAD V 2.0 endpoint to grant the Office host application access to the add-in's web application.
-        * @param callback Optional. Accepts a callback method to handle the token acquisition attempt. If AsyncResult.status is "succeeded", then AsyncResult.value is the raw AAD v. 2.0-formatted access token.
+        * @param callback - Optional. Accepts a callback method to handle the token acquisition attempt. If AsyncResult.status is "succeeded", then AsyncResult.value is the raw AAD v. 2.0-formatted access token.
         */
         getAccessTokenAsync(callback: (result: AsyncResult) => void): void;
         /**
         * Obtains an access token from AAD V 2.0 endpoint to grant the Office host application access to the add-in's web application.
-        * @param options Optional. Accepts an AuthOptions object to define sign-on behaviors.
-        * @param callback Optional. Accepts a callback method to handle the token acquisition attempt. If AsyncResult.status is "succeeded", then AsyncResult.value is the raw AAD v. 2.0-formatted access token.
+        * @param options - Optional. Accepts an AuthOptions object to define sign-on behaviors.
+        * @param callback - Optional. Accepts a callback method to handle the token acquisition attempt. If AsyncResult.status is "succeeded", then AsyncResult.value is the raw AAD v. 2.0-formatted access token.
         */
         getAccessTokenAsync(options: AuthOptions, callback: (result: AsyncResult) => void): void;
 
@@ -262,8 +262,8 @@ export declare namespace Office {
 export declare namespace Office {
     /**
      * Returns a promise of an object described in the expression. Callback is invoked only if method fails.
-     * @param expression The object to be retrieved. Example "bindings#BindingName", retrieves a binding promise for a binding named 'BindingName'
-     * @param callback The optional callback method
+     * @param expression - The object to be retrieved. Example "bindings#BindingName", retrieves a binding promise for a binding named 'BindingName'
+     * @param callback - The optional callback method
      */
     export function select(expression: string, callback?: (result: AsyncResult) => void): Binding;
     // Enumerations
@@ -457,16 +457,16 @@ export declare namespace Office {
         type: BindingType;
         /**
          * Adds an event handler to the object using the specified event type.
-         * @param eventType The event type. For binding it can be 'bindingDataChanged' and 'bindingSelectionChanged'
-         * @param handler The name of the handler
-         * @param options Syntax example: {asyncContext:context}
+         * @param eventType - The event type. For binding it can be 'bindingDataChanged' and 'bindingSelectionChanged'
+         * @param handler - The name of the handler
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         addHandlerAsync(eventType: EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Returns the current selection.
-         * @param options Syntax example: {coercionType: 'matrix,'valueFormat: 'formatted', filterType:'all'}
+         * @param options - Syntax example: {coercionType: 'matrix,'valueFormat: 'formatted', filterType:'all'}
          *       coercionType: The expected shape of the selection. If not specified returns the bindingType shape. Use Office.CoercionType or text value.
          *       valueFormat: Get data with or without format. Use Office.ValueFormat or text value.
          *       startRow: Used in partial get for table/matrix. Indicates the start row.
@@ -475,27 +475,27 @@ export declare namespace Office {
          *       columnCount: Used in partial get for table/matrix. Indicates the number of columns from the start column.
          *       filterType: Get the visible or all the data. Useful when filtering data. Use Office.FilterType or text value.
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getDataAsync(options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Removes an event handler from the object using the specified event type.
-         * @param eventType The event type. For binding can be 'bindingDataChanged' and 'bindingSelectionChanged'
-         * @param options Syntax example: {handler:eventHandler}
+         * @param eventType - The event type. For binding can be 'bindingDataChanged' and 'bindingSelectionChanged'
+         * @param options - Syntax example: {handler:eventHandler}
          *       handler: Indicates a specific handler to be removed, if not specified all handlers are removed
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         removeHandlerAsync(eventType: EventType, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Writes the specified data into the current selection.
-         * @param data The data to be set. Either a string or value, 2d array or TableData object
-         * @param options Syntax example: {coercionType:Office.CoercionType.Matrix} or {coercionType: 'matrix'}
+         * @param data - The data to be set. Either a string or value, 2d array or TableData object
+         * @param options - Syntax example: {coercionType:Office.CoercionType.Matrix} or {coercionType: 'matrix'}
          *       coercionType: Explicitly sets the shape of the data object. Use Office.CoercionType or text value. If not supplied is inferred from the data type.
          *       startRow: Used in partial set for table/matrix. Indicates the start row.
          *       startColumn: Used in partial set for table/matrix. Indicates the start column.
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         setDataAsync(data: TableData | any, options?: any, callback?: (result: AsyncResult) => void): void;
     }
@@ -503,58 +503,58 @@ export declare namespace Office {
         document: Document;
         /**
          * Creates a binding against a named object in the document
-         * @param itemName Name of the bindable object in the document. For Example 'MyExpenses' table in Excel."
-         * @param bindingType The Office BindingType for the data
-         * @param options Syntax example: {id: "BindingID"}
+         * @param itemName - Name of the bindable object in the document. For Example 'MyExpenses' table in Excel."
+         * @param bindingType - The Office BindingType for the data
+         * @param options - Syntax example: {id: "BindingID"}
          *       id: Name of the binding, autogenerated if not supplied.
          *       asyncContext: Object keeping state for the callback
          *       columns: The string[] of the columns involved in the binding
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         addFromNamedItemAsync(itemName: string, bindingType: BindingType, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Create a binding by prompting the user to make a selection on the document.
-         * @param bindingType The Office BindingType for the data
-         * @param options addFromPromptAsyncOptions- e.g. {promptText: "Please select data", id: "mySales"}
+         * @param bindingType - The Office BindingType for the data
+         * @param options - addFromPromptAsyncOptions- e.g. {promptText: "Please select data", id: "mySales"}
          *       promptText: Greet your users with a friendly word.
          *       asyncContext: Object keeping state for the callback
          *       id: Identifier.
          *       sampleData: A TableData that gives sample table in the Dialog.TableData.Headers is [][] of string.
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         addFromPromptAsync(bindingType: BindingType, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Create a binding based on what the user's current selection.
-         * @param bindingType The Office BindingType for the data
-         * @param options addFromSelectionAsyncOptions- e.g. {id: "BindingID"}
+         * @param bindingType - The Office BindingType for the data
+         * @param options - addFromSelectionAsyncOptions- e.g. {id: "BindingID"}
          *       id: Identifier.
          *       asyncContext: Object keeping state for the callback
          *       columns: The string[] of the columns involved in the binding
          *       sampleData: A TableData that gives sample table in the Dialog.TableData.Headers is [][] of string.
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         addFromSelectionAsync(bindingType: BindingType, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Gets an array with all the binding objects in the document.
-         * @param options Syntax example: {asyncContext:context}
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getAllAsync(options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Retrieves a binding based on its Name
-         * @param id The binding id
-         * @param options Syntax example: {asyncContext:context}
+         * @param id - The binding id
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getByIdAsync(id: string, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Removes the binding from the document
-         * @param id The binding id
-         * @param options Syntax example: {asyncContext:context}
+         * @param id - The binding id
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         releaseByIdAsync(id: string, options?: any, callback?: (result: AsyncResult) => void): void;
     }
@@ -567,55 +567,55 @@ export declare namespace Office {
         nodeType: string;
         /**
          * Gets the nodes associated with the xPath expression.
-         * @param xPath The xPath expression
-         * @param options Syntax example: {asyncContext:context}
+         * @param xPath - The xPath expression
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getNodesAsync(xPath: string, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Gets the node value.
-         * @param options Syntax example: {asyncContext:context}
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getNodeValueAsync(options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Asynchronously gets the text of an XML node in a custom XML part.
-         * @param options Syntax example: {asyncContext:context}
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getTextAsync(options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Gets the node's XML.
-         * @param options Syntax example: {asyncContext:context}
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getXmlAsync(options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Sets the node value.
-         * @param value The value to be set on the node
-         * @param options Syntax example: {asyncContext:context}
+         * @param value - The value to be set on the node
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         setNodeValueAsync(value: string, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Asynchronously sets the text of an XML node in a custom XML part.
-         * @param text Required. The text value of the XML node.
-         * @param options Syntax example: {asyncContext:context}
+         * @param text - Required. The text value of the XML node.
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         setTextAsync(text: string, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Sets the node XML.
-         * @param xml The XML to be set on the node
-         * @param options Syntax example: {asyncContext:context}
+         * @param xml - The XML to be set on the node
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         setXmlAsync(xml: string, options?: any, callback?: (result: AsyncResult) => void): void;
     }
@@ -625,95 +625,95 @@ export declare namespace Office {
         namespaceManager: CustomXmlPrefixMappings;
         /**
          * Adds an event handler to the object using the specified event type.
-         * @param eventType The event type. For CustomXmlPartNode it can be 'nodeDeleted', 'nodeInserted' or 'nodeReplaced'
-         * @param handler The name of the handler
-         * @param options Syntax example: {asyncContext:context}
+         * @param eventType - The event type. For CustomXmlPartNode it can be 'nodeDeleted', 'nodeInserted' or 'nodeReplaced'
+         * @param handler - The name of the handler
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         addHandlerAsync(eventType: EventType, handler?: (result: any) => void, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Deletes the Custom XML Part.
-         * @param options Syntax example: {asyncContext:context}
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         deleteAsync(options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Gets the nodes associated with the xPath expression.
-         * @param xPath The xPath expression
-         * @param options Syntax example: {asyncContext:context}
+         * @param xPath - The xPath expression
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getNodesAsync(xPath: string, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Gets the XML for the Custom XML Part.
-         * @param options Syntax example: {asyncContext:context}
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getXmlAsync(options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Removes an event handler from the object using the specified event type.
-         * @param eventType The event type. For CustomXmlPartNode it can be 'nodeDeleted', 'nodeInserted' or 'nodeReplaced'
-         * @param options Syntax example: {handler:eventHandler}
+         * @param eventType - The event type. For CustomXmlPartNode it can be 'nodeDeleted', 'nodeInserted' or 'nodeReplaced'
+         * @param options - Syntax example: {handler:eventHandler}
          *       handler: Indicates a specific handler to be removed, if not specified all handlers are removed
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         removeHandlerAsync(eventType: EventType, options?: any, callback?: (result: AsyncResult) => void): void;
     }
     export interface CustomXmlParts {
         /**
          * Asynchronously adds a new custom XML part to a file.
-         * @param xml The XML to add to the newly created custom XML part.
-         * @param options Syntax example: {asyncContext:context}
+         * @param xml - The XML to add to the newly created custom XML part.
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
          */
         addAsync(xml: string, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Asynchronously gets the specified custom XML part by its id.
-         * @param id The id of the custom XML part.
-         * @param options Syntax example: {asyncContext:context}
+         * @param id - The id of the custom XML part.
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
          */
         getByIdAsync(id: string, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Asynchronously gets the specified custom XML part(s) by its namespace.
-         * @param ns  The namespace to search.
-         * @param options Syntax example: {asyncContext:context}
+         * @param ns  - The namespace to search.
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+         * @param callback - A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
          */
         getByNamespaceAsync(ns: string, options?: any, callback?: (result: AsyncResult) => void): void;
     }
     export interface CustomXmlPrefixMappings {
         /**
          * Adds a namespace.
-         * @param prefix The namespace prefix
-         * @param ns The namespace URI
-         * @param options Syntax example: {asyncContext:context}
+         * @param prefix - The namespace prefix
+         * @param ns - The namespace URI
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         addNamespaceAsync(prefix: string, ns: string, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Gets a namespace  with the specified prefix
-         * @param prefix The namespace prefix
-         * @param options Syntax example: {asyncContext:context}
+         * @param prefix - The namespace prefix
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getNamespaceAsync(prefix: string, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Gets a prefix  for  the specified URI
-         * @param ns The namespace URI
-         * @param options Syntax example: {asyncContext:context}
+         * @param ns - The namespace URI
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getPrefixAsync(ns: string, options?: any, callback?: (result: AsyncResult) => void): void;
     }
@@ -725,71 +725,71 @@ export declare namespace Office {
         url: string;
         /**
          * Adds an event handler for the specified event type.
-         * @param eventType The event type. For document can be 'DocumentSelectionChanged'
-         * @param handler The name of the handler
-         * @param options Syntax example: {asyncContext:context}
+         * @param eventType - The event type. For document can be 'DocumentSelectionChanged'
+         * @param handler - The name of the handler
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         addHandlerAsync(eventType: EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Returns the current view of the presentation.
-         * @param options Syntax example: {asyncContext:context}
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getActiveViewAsync(options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Gets the entire file in slices of up to 4MB.
-         * @param fileType The format in which the file will be returned
-         * @param options Syntax example: {sliceSize:1024}
+         * @param fileType - The format in which the file will be returned
+         * @param options - Syntax example: {sliceSize:1024}
          *       sliceSize: Specifies the desired slice size (in bytes) up to 4MB. If not specified a default slice size of 4MB will be used.
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getFileAsync(fileType: FileType, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Gets file properties of the current document.
-         * @param options Syntax example: {asyncContext:context}
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getFilePropertiesAsync(options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Returns the current selection.
-         * @param coercionType The expected shape of the selection.
-         * @param options Syntax example: {valueFormat: 'formatted', filterType:'all'}
+         * @param coercionType - The expected shape of the selection.
+         * @param options - Syntax example: {valueFormat: 'formatted', filterType:'all'}
          *       valueFormat: Get data with or without format. Use Office.ValueFormat or text value.
          *       filterType: Get the visible or all the data. Useful when filtering data. Use Office.FilterType or text value.
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getSelectedDataAsync(coercionType: CoercionType, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Goes to the specified object or location in the document.
-         * @param id The identifier of the object or location to go to.
-         * @param goToType The type of the location to go to.
-         * @param options Syntax example: {asyncContext:context}
+         * @param id - The identifier of the object or location to go to.
+         * @param goToType - The type of the location to go to.
+         * @param options - Syntax example: {asyncContext:context}
          *       selectionMode: Use Office.SelectionMode or text value.
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         goToByIdAsync(id: string | number, goToType: GoToType, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Removes an event handler for the specified event type.
-         * @param eventType The event type. For document can be 'DocumentSelectionChanged'
-         * @param options Syntax example: {asyncContext:context}
+         * @param eventType - The event type. For document can be 'DocumentSelectionChanged'
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
          *       handler: The name of the handler. If not specified all handlers are removed
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         removeHandlerAsync(eventType: EventType, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Writes the specified data into the current selection.
-         * @param data The data to be set. Either a string or value, 2d array or TableData object
-         * @param options Syntax example: {coercionType:Office.CoercionType.Matrix} or {coercionType: 'matrix'}
+         * @param data - The data to be set. Either a string or value, 2d array or TableData object
+         * @param options - Syntax example: {coercionType:Office.CoercionType.Matrix} or {coercionType: 'matrix'}
          *       coercionType: Explicitly sets the shape of the data object. Use Office.CoercionType or text value. If not supplied is inferred from the data type.
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         setSelectedDataAsync(data: string | TableData | any[][], options?: any, callback?: (result: AsyncResult) => void): void;
     }
@@ -811,13 +811,13 @@ export declare namespace Office {
         sliceCount: number;
         /**
          * Closes the File.
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         closeAsync(callback?: (result: AsyncResult) => void): void;
         /**
          * Gets the specified slice.
-         * @param sliceIndex The index of the slice to be retrieved
-         * @param callback The optional callback method
+         * @param sliceIndex - The index of the slice to be retrieved
+         * @param callback - The optional callback method
          */
         getSliceAsync(sliceIndex: number, callback?: (result: AsyncResult) => void): void;
     }
@@ -834,49 +834,49 @@ export declare namespace Office {
     export interface Settings {
         /**
          * Adds an event handler for the object using the specified event type.
-         * @param eventType The event type. For settings can be 'settingsChanged'
-         * @param handler The name of the handler
-         * @param options Syntax example: {asyncContext:context}
+         * @param eventType - The event type. For settings can be 'settingsChanged'
+         * @param handler - The name of the handler
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         addHandlerAsync(eventType: EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Retrieves the setting with the specified name.
-         * @param settingName The name of the setting
+         * @param settingName - The name of the setting
          */
         get(name: string): any;
         /**
          * Gets the latest version of the settings object.
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         refreshAsync(callback?: (result: AsyncResult) => void): void;
         /**
          * Removes the setting with the specified name.
-         * @param settingName The name of the setting
+         * @param settingName - The name of the setting
          */
         remove(name: string): void;
         /**
          * Removes an event handler for the specified event type.
-         * @param eventType The event type. For settings can be 'settingsChanged'
-         * @param options Syntax example: {handler:eventHandler}
+         * @param eventType - The event type. For settings can be 'settingsChanged'
+         * @param options - Syntax example: {handler:eventHandler}
          *       handler: Indicates a specific handler to be removed, if not specified all handlers are removed
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         removeHandlerAsync(eventType: EventType, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Saves all settings.
-         * @param options Syntax example: {overwriteIfStale:false}
+         * @param options - Syntax example: {overwriteIfStale:false}
          *       overwriteIfStale: Indicates whether the setting will be replaced if stale.
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         saveAsync(callback?: (result: AsyncResult) => void): void;
         /**
          * Sets a value for the setting with the specified name.
-         * @param settingName The name of the setting
-         * @param value The value for the setting
+         * @param settingName - The name of the setting
+         * @param value - The value for the setting
          */
         set(name: string, value: any): void;
     }
@@ -891,60 +891,60 @@ export declare namespace Office {
         rowCount: number;
         /**
          * Adds the specified columns to the table
-         * @param tableData  A TableData object with the headers and rows
-         * @param options Syntax example: {asyncContext:context}
+         * @param tableData  - A TableData object with the headers and rows
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         addColumnsAsync(tableData: TableData | any[][], options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Adds the specified rows to the table
-         * @param rows  A 2D array with the rows to add
-         * @param options Syntax example: {asyncContext:context}
+         * @param rows  - A 2D array with the rows to add
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         addRowsAsync(rows: TableData | any[][], options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Clears the table
-         * @param options Syntax example: {asyncContext:context}
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         deleteAllDataValuesAsync(options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Clears formatting on the bound table.
-         * @param options Syntax example: {asyncContext:context}
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         clearFormatsAsync(options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Gets the formatting on specified items in the table.
-         * @param cellReference An object literal containing name-value pairs that specify the range of cells to get formatting from.
-         * @param formats An array specifying the format properties to get.
-         * @param options Syntax example: {asyncContext:context}
+         * @param cellReference - An object literal containing name-value pairs that specify the range of cells to get formatting from.
+         * @param formats - An array specifying the format properties to get.
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getFormatsAsync(cellReference?: any, formats?: any[], options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Sets formatting on specified items and data in the table.
-         * @param formatsInfo Array elements are themselves three-element arrays:[target, type, formats]
+         * @param formatsInfo - Array elements are themselves three-element arrays:[target, type, formats]
          *       target: The identifier of the item to format. String.
          *       type: The kind of item to format. String.
          *       formats: An object literal containing a list of property name-value pairs that define the formatting to apply.
-         * @param options Syntax example: {asyncContext:context}
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         setFormatsAsync(formatsInfo?: any[], options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Updates table formatting options on the bound table.
-         * @param tableOptions An object literal containing a list of property name-value pairs that define the table options to apply.
-         * @param options Syntax example: {asyncContext:context}
+         * @param tableOptions - An object literal containing a list of property name-value pairs that define the table options to apply.
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         setTableOptionsAsync(tableOptions: any, options?: any, callback?: (result: AsyncResult) => void): void;
     }
@@ -1484,64 +1484,64 @@ export declare namespace Office {
     export interface Document {
         /**
          * Get Project field (Ex. ProjectWebAccessURL).
-         * @param fieldId Project level fields.
-         * @param options Syntax example: {asyncContext:context}
+         * @param fieldId - Project level fields.
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getProjectFieldAsync(fieldId: number, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Get resource field for provided resource Id. (Ex.ResourceName)
-         * @param resourceId Either a string or value of the Resource Id.
-         * @param fieldId Resource Fields.
-         * @param options Syntax example: {asyncContext:context}
+         * @param resourceId - Either a string or value of the Resource Id.
+         * @param fieldId - Resource Fields.
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getResourceFieldAsync(resourceId: string, fieldId: number, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Get the current selected Resource's Id.
-         * @param options Syntax example: {asyncContext:context}
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getSelectedResourceAsync(options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Get the current selected Task's Id.
-         * @param options Syntax example: {asyncContext:context}
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getSelectedTaskAsync(options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Get the current selected View Type (Ex. Gantt) and View Name.
-         * @param options Syntax example: {asyncContext:context}
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getSelectedViewAsync(options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Get the Task Name, WSS Task Id, and ResourceNames for given taskId.
-         * @param taskId Either a string or value of the Task Id.
-         * @param options Syntax example: {asyncContext:context}
+         * @param taskId - Either a string or value of the Task Id.
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getTaskAsync(taskId: string, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Get task field for provided task Id. (Ex. StartDate).
-         * @param taskId Either a string or value of the Task Id.
-         * @param fieldId Task Fields.
-         * @param options Syntax example: {asyncContext:context}
+         * @param taskId - Either a string or value of the Task Id.
+         * @param fieldId - Task Fields.
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getTaskFieldAsync(taskId: string, fieldId: number, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Get the WSS Url and list name for the Tasks List, the MPP is synced too.
-         * @param options Syntax example: {asyncContext:context}
+         * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getWSSUrlAsync(options?: any, callback?: (result: AsyncResult) => void): void;
     }
@@ -1733,97 +1733,97 @@ export declare namespace Office {
     export interface Body {
         /**
          * Returns the current body in a specified format
-         * @param coercionType The format of the returned body
-         * @param callback optional method to call when the getAsync method returns
+         * @param coercionType - The format of the returned body
+         * @param callback - optional method to call when the getAsync method returns
          */
         getAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;
         /**
          * Returns the current body in a specified format
-         * @param coercionType The format of the returned body
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback optional method to call when the getAsync method returns
+         * @param coercionType - The format of the returned body
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - optional method to call when the getAsync method returns
          */
         getAsync(coercionType: CoercionType, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
         /*
          * Gets a value that indicates whether the content is in HTML or text format
-         * @param tableData  A TableData object with the headers and rows
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional method to call when the getTypeAsync method returns
+         * @param tableData  - A TableData object with the headers and rows
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional method to call when the getTypeAsync method returns
          */
         getTypeAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
          * Adds the specified content to the beginning of the item body
-         * @param data The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
+         * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
          */
         prependAsync(data: string): void;
         /**
          * Adds the specified content to the beginning of the item body
-         * @param data The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
-         * @param options Any optional parameters or state data passed to the method
+         * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
+         * @param options - Any optional parameters or state data passed to the method
          */
         prependAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void;
         /**
          * Adds the specified content to the beginning of the item body
-         * @param data The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
-         * @param callback The optional method to call when the string is inserted
+         * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
+         * @param callback - The optional method to call when the string is inserted
          */
         prependAsync(data: string, callback: (result: AsyncResult) => void): void;
         /**
          * Adds the specified content to the beginning of the item body
-         * @param data The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional method to call when the string is inserted
+         * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional method to call when the string is inserted
          */
         prependAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions, callback: (result: AsyncResult) => void): void;
 
         /**
          * Replaces the entire body with the specified text.
-         * @param data The string that will replace the existing body. The string is limited to 1,000,000 characters
+         * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters
          */
         setAsync(data: string): void;
         /**
          * Replaces the entire body with the specified text.
-         * @param data The string that will replace the existing body. The string is limited to 1,000,000 characters
-         * @param options Any optional parameters or state data passed to the method
+         * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters
+         * @param options - Any optional parameters or state data passed to the method
          */
         setAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void;
         /**
          * Replaces the entire body with the specified text.
-         * @param data The string that will replace the existing body. The string is limited to 1,000,000 characters
-         * @param callback the optional method to call when the body is replaced
+         * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters
+         * @param callback - the optional method to call when the body is replaced
          */
         setAsync(data: string, callback: (result: AsyncResult) => void): void;
         /**
          * Replaces the entire body with the specified text.
-         * @param data The string that will replace the existing body. The string is limited to 1,000,000 characters
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback the optional method to call when the body is replaced
+         * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - the optional method to call when the body is replaced
          */
         setAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions, callback: (result: AsyncResult) => void): void;
 
         /**
          * Replaces the selection in the body with the specified text
-         * @param data The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
+         * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
          */
         setSelectedDataAsync(data: string): void;
         /**
          * Replaces the selection in the body with the specified text
-         * @param data The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
-         * @param options Any optional parameters or state data passed to the method
+         * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
+         * @param options - Any optional parameters or state data passed to the method
          */
         setSelectedDataAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void;
         /**
          * Replaces the selection in the body with the specified text
-         * @param data The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
-         * @param callback The optional method to call when the string is inserted
+         * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
+         * @param callback - The optional method to call when the string is inserted
          */
         setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;
         /**
          * Replaces the selection in the body with the specified text
-         * @param data The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional method to call when the string is inserted
+         * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional method to call when the string is inserted
          */
         setSelectedDataAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions, callback: (result: AsyncResult) => void): void;
 
@@ -1843,24 +1843,24 @@ export declare namespace Office {
     export interface CustomProperties {
         /**
          * Returns the value of the specified custom property
-         * @param name The name of the property to be returned
+         * @param name - The name of the property to be returned
          */
         get(name: string): any;
         /**
          * Sets the specified property to the specified value
-         * @param name The name of the property to be set
-         * @param value The value of the property to be set
+         * @param name - The name of the property to be set
+         * @param value - The value of the property to be set
          */
         set(name: string, value: string): void;
         /**
          * Removes the specified property from the custom property collection.
-         * @param name The name of the property to be removed
+         * @param name - The name of the property to be removed
          */
         remove(name: string): void;
         /**
          * Saves the custom property collection to the server
-         * @param callback The optional callback method
-         * @param userContext Optional variable for any state data that is passed to the saveAsync method
+         * @param callback - The optional callback method
+         * @param userContext - Optional variable for any state data that is passed to the saveAsync method
          */
         saveAsync(callback?: (result: AsyncResult) => void, userContext?: any): void;
     }
@@ -1900,8 +1900,8 @@ export declare namespace Office {
         dateTimeCreated: Date;
         /**
          * Asynchronously loads custom properties that are specific to the item and a app for Office
-         * @param callback The optional callback method
-         * @param userContext Optional variable for any state data that is passed to the asynchronous method
+         * @param callback - The optional callback method
+         * @param userContext - Optional variable for any state data that is passed to the asynchronous method
          */
         loadCustomPropertiesAsync(callback?: (result: AsyncResult) => void, userContext?: any): void;
     }
@@ -1909,59 +1909,59 @@ export declare namespace Office {
         subject: Subject;
         /**
          * Adds a file to a message as an attachment
-         * @param uri The URI that provides the location of the file to attach to the message. The maximum length is 2048 characters
-         * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
+         * @param uri - The URI that provides the location of the file to attach to the message. The maximum length is 2048 characters
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
          */
         addFileAttachmentAsync(uri: string, attachmentName: string): void;
         /**
          * Adds a file to a message as an attachment
-         * @param uri The URI that provides the location of the file to attach to the message. The maximum length is 2048 characters
-         * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
-         * @param options Any optional parameters or state data passed to the method
+         * @param uri - The URI that provides the location of the file to attach to the message. The maximum length is 2048 characters
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
+         * @param options - Any optional parameters or state data passed to the method
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;
         /**
          * Adds a file to a message as an attachment
-         * @param uri The URI that provides the location of the file to attach to the message. The maximum length is 2048 characters
-         * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
-         * @param callback The optional callback method
+         * @param uri - The URI that provides the location of the file to attach to the message. The maximum length is 2048 characters
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
+         * @param callback - The optional callback method
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;
         /**
          * Adds a file to a message as an attachment
-         * @param uri The URI that provides the location of the file to attach to the message. The maximum length is 2048 characters
-         * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional callback method
+         * @param uri - The URI that provides the location of the file to attach to the message. The maximum length is 2048 characters
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional callback method
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
         /**
          * Adds an Exchange item, such as a message, as an attachment to the message
-         * @param itemId The Exchange identifier of the item to attach. The maximum length is 100 characters
-         * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
+         * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
          */
         addItemAttachmentAsync(itemId: any, attachmentName: string): void;
         /**
          * Adds an Exchange item, such as a message, as an attachment to the message
-         * @param itemId The Exchange identifier of the item to attach. The maximum length is 100 characters
-         * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
-         * @param options Any optional parameters or state data passed to the method
+         * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
+         * @param options - Any optional parameters or state data passed to the method
          */
         addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;
         /**
          * Adds an Exchange item, such as a message, as an attachment to the message
-         * @param itemId The Exchange identifier of the item to attach. The maximum length is 100 characters
-         * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
-         * @param callback The optional callback method
+         * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
+         * @param callback - The optional callback method
          */
         addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;
         /**
          * Adds an Exchange item, such as a message, as an attachment to the message
-         * @param itemId The Exchange identifier of the item to attach. The maximum length is 100 characters
-         * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional callback method
+         * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional callback method
          */
         addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
@@ -1991,26 +1991,26 @@ export declare namespace Office {
 
         /**
          * Removes an attachment from a message
-         * @param attachmentIndex The index of the attachment to remove. The maximum length of the string is 100 characters
+         * @param attachmentIndex - The index of the attachment to remove. The maximum length of the string is 100 characters
          */
         removeAttachmentAsync(attachmentIndex: string): void;
         /**
          * Removes an attachment from a message
-         * @param attachmentIndex The index of the attachment to remove. The maximum length of the string is 100 characters
-         * @param options Any optional parameters or state data passed to the method
+         * @param attachmentIndex - The index of the attachment to remove. The maximum length of the string is 100 characters
+         * @param options - Any optional parameters or state data passed to the method
          */
         removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;
         /**
          * Removes an attachment from a message
-         * @param attachmentIndex The index of the attachment to remove. The maximum length of the string is 100 characters
-         * @param callback The optional callback method
+         * @param attachmentIndex - The index of the attachment to remove. The maximum length of the string is 100 characters
+         * @param callback - The optional callback method
          */
         removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;
         /**
          * Removes an attachment from a message
-         * @param attachmentIndex The index of the attachment to remove. The maximum length of the string is 100 characters
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional callback method
+         * @param attachmentIndex - The index of the attachment to remove. The maximum length of the string is 100 characters
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional callback method
          */
         removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
@@ -2069,14 +2069,14 @@ export declare namespace Office {
         subject: string;
         /**
          * Displays a reply form that includes the sender and all the recipients of the selected message
-         * @param formData A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
+         * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *  OR
          * An object that contains body or attachment data and a callback function
          */
         displayReplyAllForm(formData: string | ReplyFormData): void;
         /**
          * Displays a reply form that includes only the sender of the selected message
-         * @param formData A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
+         * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *  OR
          * An object that contains body or attachment data and a callback function
          */
@@ -2087,12 +2087,12 @@ export declare namespace Office {
         getEntities(): Entities;
         /**
          * Gets an array of entities of the specified entity type found in an message
-         * @param entityType One of the EntityType enumeration values
+         * @param entityType - One of the EntityType enumeration values
          */
         getEntitiesByType(entityType: Office.MailboxEnums.EntityType): Array<(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)>;
         /**
          * Returns well-known entities that pass the named filter defined in the manifest XML file
-         * @param name The name of the ItemHasKnownEntity rule element that defines the filter to match
+         * @param name - The name of the ItemHasKnownEntity rule element that defines the filter to match
          */
         getFilteredEntitiesByName(name: string): Array<(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)>;
         /**
@@ -2117,38 +2117,38 @@ export declare namespace Office {
     export interface Location {
         /**
          * Begins an asynchronous request for the location of an appointment
-         * @param callback The optional method to call when the string is inserted
+         * @param callback - The optional method to call when the string is inserted
          */
         getAsync(callback: (result: AsyncResult) => void): void;
         /**
          * Begins an asynchronous request for the location of an appointment
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional method to call when the string is inserted
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional method to call when the string is inserted
          */
         getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
         /**
          * Begins an asynchronous request to set the location of an appointment
-         * @param data The location of the appointment. The string is limited to 255 characters
+         * @param data - The location of the appointment. The string is limited to 255 characters
          */
         setAsync(location: string): void;
         /**
          * Begins an asynchronous request to set the location of an appointment
-         * @param data The location of the appointment. The string is limited to 255 characters
-         * @param options Any optional parameters or state data passed to the method
+         * @param data - The location of the appointment. The string is limited to 255 characters
+         * @param options - Any optional parameters or state data passed to the method
          */
         setAsync(location: string, options: AsyncContextOptions): void;
         /**
          * Begins an asynchronous request to set the location of an appointment
-         * @param data The location of the appointment. The string is limited to 255 characters
-         * @param callback The optional method to call when the location is set
+         * @param data - The location of the appointment. The string is limited to 255 characters
+         * @param callback - The optional method to call when the location is set
          */
         setAsync(location: string, callback: (result: AsyncResult) => void): void;
         /**
          * Begins an asynchronous request to set the location of an appointment
-         * @param data The location of the appointment. The string is limited to 255 characters
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional method to call when the location is set
+         * @param data - The location of the appointment. The string is limited to 255 characters
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional method to call when the location is set
          */
         setAsync(location: string, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
@@ -2160,72 +2160,72 @@ export declare namespace Office {
         userProfile: UserProfile;
         /**
          * Adds an event handler for a supported event
-         * @param eventType The event that should invoke the handler
-         * @param handler The function to handle the event
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional method to call when the handler is added
+         * @param eventType - The event that should invoke the handler
+         * @param handler - The function to handle the event
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional method to call when the handler is added
          */
         addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Converts an item ID formatted for REST into EWS format.
-         * @param itemId An item ID formatted for the Outlook REST APIs
-         * @param restVersion A value indicating the version of the Outlook REST API used to retrieve the item ID
+         * @param itemId - An item ID formatted for the Outlook REST APIs
+         * @param restVersion - A value indicating the version of the Outlook REST API used to retrieve the item ID
          */
         convertToEwsId(itemId: string, restVersion: Office.MailboxEnums.RestVersion): string;
         /**
          * Gets a Date object from a dictionary containing time information
-         * @param timeValue A Date object
+         * @param timeValue - A Date object
          */
         convertToLocalClientTime(timeValue: Date): LocalClientTime;
         /**
          * Converts an item ID formatted for EWS into REST format.
-         * @param itemId An item ID formatted for the Outlook EWS APIs
-         * @param restVersion A value indicating the version of the Outlook REST API that the converted ID will be used with
+         * @param itemId - An item ID formatted for the Outlook EWS APIs
+         * @param restVersion - A value indicating the version of the Outlook REST API that the converted ID will be used with
          */
         convertToRestId(itemId: string, restVersion: Office.MailboxEnums.RestVersion): string;
         /**
          * Gets a dictionary containing time information in local client time
-         * @param input A dictionary containing a date. The dictionary should contain the following fields: year, month, date, hours, minutes, seconds, time zone, time zone offset
+         * @param input - A dictionary containing a date. The dictionary should contain the following fields: year, month, date, hours, minutes, seconds, time zone, time zone offset
          */
         convertToUtcClientTime(input: LocalClientTime): Date;
         /**
          * Displays an existing calendar appointment
-         * @param itemId The Exchange Web Services (EWS) identifier for an existing calendar appointment
+         * @param itemId - The Exchange Web Services (EWS) identifier for an existing calendar appointment
          */
         displayAppointmentForm(itemId: string): void;
         /**
          * Displays an existing message
-         * @param itemId The Exchange Web Services (EWS) identifier for an existing message
+         * @param itemId - The Exchange Web Services (EWS) identifier for an existing message
          */
         displayMessageForm(itemId: string): void;
         /**
          * Displays a form for creating a new calendar appointment
-         * @param parameters A dictionary of parameters describing the new appointment.
+         * @param parameters - A dictionary of parameters describing the new appointment.
          */
         displayNewAppointmentForm(parameters?: AppointmentForm): void;
         /**
          * Displays a new message form
          * WARNING: This api is not officially released, and may not work on all platforms
-         * @param options A dictionary containing all values to be filled in for the user in the new form
+         * @param options - A dictionary containing all values to be filled in for the user in the new form
          */
         displayNewMessageForm(options?: any): void;
         /**
          * Gets a string that contains a token used to get an attachment or item from an Exchange Server
-         * @param callback The optional method to call when the string is inserted
-         * @param userContext Optional variable for any state data that is passed to the asynchronous method
+         * @param callback - The optional method to call when the string is inserted
+         * @param userContext - Optional variable for any state data that is passed to the asynchronous method
          */
         getCallbackTokenAsync(callback?: (result: AsyncResult) => void, userContext?: any): void;
         /**
          * Gets a token identifying the user and the app for Office
-         * @param callback The optional method to call when the string is inserted
-         * @param userContext Optional variable for any state data that is passed to the asynchronous method
+         * @param callback - The optional method to call when the string is inserted
+         * @param userContext - Optional variable for any state data that is passed to the asynchronous method
          */
         getUserIdentityTokenAsync(callback?: (result: AsyncResult) => void, userContext?: any): void;
         /**
          * Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the user’s mailbox
-         * @param data The EWS request
-         * @param callback The optional method to call when the string is inserted
-         * @param userContext Optional variable for any state data that is passed to the asynchronous method
+         * @param data - The EWS request
+         * @param callback - The optional method to call when the string is inserted
+         * @param userContext - Optional variable for any state data that is passed to the asynchronous method
          */
         makeEwsRequestAsync(data: any, callback?: (result: AsyncResult) => void, userContext?: any): void;
     }
@@ -2262,96 +2262,96 @@ export declare namespace Office {
     export interface NotificationMessages {
         /**
          * Adds a notification to an item
-         * @param key A developer-specified key used to refrence this notification message. Developers can use it to modify this message later.
-         * @param JSONmessage A JSON object that contains the notification message to be added to this item
+         * @param key - A developer-specified key used to refrence this notification message. Developers can use it to modify this message later.
+         * @param JSONmessage - A JSON object that contains the notification message to be added to this item
          */
         addAsync(key: string, JSONmessage: NotificationMessageDetails): void;
         /**
          * Adds a notification to an item
-         * @param key A developer-specified key used to refrence this notification message. Developers can use it to modify this message later.
-         * @param JSONmessage A JSON object that contains the notification message to be added to this item
-         * @param options Any optional parameters or state data passed to the method
+         * @param key - A developer-specified key used to refrence this notification message. Developers can use it to modify this message later.
+         * @param JSONmessage - A JSON object that contains the notification message to be added to this item
+         * @param options - Any optional parameters or state data passed to the method
          */
         addAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;
         /**
          * Adds a notification to an item
-         * @param key A developer-specified key used to refrence this notification message. Developers can use it to modify this message later.
-         * @param JSONmessage A JSON object that contains the notification message to be added to this item
-         * @param callback The optional callback method
+         * @param key - A developer-specified key used to refrence this notification message. Developers can use it to modify this message later.
+         * @param JSONmessage - A JSON object that contains the notification message to be added to this item
+         * @param callback - The optional callback method
          */
         addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) => void): void;
         /**
          * Adds a notification to an item
-         * @param key A developer-specified key used to refrence this notification message. Developers can use it to modify this message later.
-         * @param JSONmessage A JSON object that contains the notification message to be added to this item
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional callback method
+         * @param key - A developer-specified key used to refrence this notification message. Developers can use it to modify this message later.
+         * @param JSONmessage - A JSON object that contains the notification message to be added to this item
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional callback method
          */
         addAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
         /**
          * Returns all keys and messages for an item.
-         * @param callback The optional callback method
+         * @param callback - The optional callback method
          */
         getAllAsync(callback: (result: AsyncResult) => void): void;
         /**
          * Returns all keys and messages for an item.
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional callback method
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional callback method
          */
         getAllAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
         /**
          * Removes a notification message for an item.
-         * @param key The key for the notification message to remove
+         * @param key - The key for the notification message to remove
          */
         removeAsync(key: string): void;
         /**
          * Removes a notification message for an item.
-         * @param key The key for the notification message to remove
-         * @param options Any optional parameters or state data passed to the method
+         * @param key - The key for the notification message to remove
+         * @param options - Any optional parameters or state data passed to the method
          */
         removeAsync(key: string, options: AsyncContextOptions): void;
         /**
          * Removes a notification message for an item.
-         * @param key The key for the notification message to remove
-         * @param callback The optional callback method
+         * @param key - The key for the notification message to remove
+         * @param callback - The optional callback method
          */
         removeAsync(key: string, callback: (result: AsyncResult) => void): void;
         /**
          * Removes a notification message for an item.
-         * @param key The key for the notification message to remove
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional callback method
+         * @param key - The key for the notification message to remove
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional callback method
          */
         removeAsync(key: string, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
         /**
          * Replaces a notification message that has a given key with another message
-         * @param key The key for the notification message to replace.
-         * @param JSONmessage A JSON object that contains the new notification message to replace the existing message
+         * @param key - The key for the notification message to replace.
+         * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message
          */
         replaceAsync(key: string, JSONmessage: NotificationMessageDetails): void;
         /**
          * Replaces a notification message that has a given key with another message
-         * @param key The key for the notification message to replace.
-         * @param JSONmessage A JSON object that contains the new notification message to replace the existing message
-         * @param options Any optional parameters or state data passed to the method
+         * @param key - The key for the notification message to replace.
+         * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message
+         * @param options - Any optional parameters or state data passed to the method
          */
         replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;
         /**
          * Replaces a notification message that has a given key with another message
-         * @param key The key for the notification message to replace.
-         * @param JSONmessage A JSON object that contains the new notification message to replace the existing message
-         * @param callback The optional callback method
+         * @param key - The key for the notification message to replace.
+         * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message
+         * @param callback - The optional callback method
          */
         replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) => void): void;
         /**
          * Replaces a notification message that has a given key with another message
-         * @param key The key for the notification message to replace.
-         * @param JSONmessage A JSON object that contains the new notification message to replace the existing message
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional callback method
+         * @param key - The key for the notification message to replace.
+         * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional callback method
          */
         replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
@@ -2364,62 +2364,62 @@ export declare namespace Office {
     export interface Recipients {
         /**
          * Begins an asynchronous request to add a recipient list to an appointment or message
-         * @param recipients The recipients to add to the recipients list
+         * @param recipients - The recipients to add to the recipients list
          */
         addAsync(recipients: Array<string | EmailUser | EmailAddressDetails>): void;
         /**
          * Begins an asynchronous request to add a recipient list to an appointment or message
-         * @param recipients The recipients to add to the recipients list
-         * @param options Any optional parameters or state data passed to the method
+         * @param recipients - The recipients to add to the recipients list
+         * @param options - Any optional parameters or state data passed to the method
          */
         addAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, options: AsyncContextOptions): void;
         /**
          * Begins an asynchronous request to add a recipient list to an appointment or message
-         * @param recipients The recipients to add to the recipients list
-         * @param callback The optional method to call when the string is inserted
+         * @param recipients - The recipients to add to the recipients list
+         * @param callback - The optional method to call when the string is inserted
          */
         addAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, callback: (result: AsyncResult) => void): void;
         /**
          * Begins an asynchronous request to add a recipient list to an appointment or message
-         * @param recipients The recipients to add to the recipients list
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional method to call when the string is inserted
+         * @param recipients - The recipients to add to the recipients list
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional method to call when the string is inserted
          */
         addAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
         /**
          * Begins an asynchronous request to get the recipient list for an appointment or message
-         * @param callback The optional method to call when the string is inserted
+         * @param callback - The optional method to call when the string is inserted
          */
         getAsync(callback: (result: AsyncResult) => void): void;
         /**
          * Begins an asynchronous request to get the recipient list for an appointment or message
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional method to call when the string is inserted
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional method to call when the string is inserted
          */
         getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
         /**
          * Begins an asynchronous request to set the recipient list for an appointment or message
-         * @param recipients The recipients to add to the recipients list
+         * @param recipients - The recipients to add to the recipients list
          */
         setAsync(recipients: Array<string | EmailUser | EmailAddressDetails>): void;
         /**
          * Begins an asynchronous request to set the recipient list for an appointment or message
-         * @param recipients The recipients to add to the recipients list
-         * @param options Any optional parameters or state data passed to the method
+         * @param recipients - The recipients to add to the recipients list
+         * @param options - Any optional parameters or state data passed to the method
          */
         setAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, options: AsyncContextOptions): void;
         /**
          * Begins an asynchronous request to set the recipient list for an appointment or message
-         * @param recipients The recipients to add to the recipients list
-         * @param callback The optional method to call when the string is inserted
+         * @param recipients - The recipients to add to the recipients list
+         * @param callback - The optional method to call when the string is inserted
          */
         setAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, callback: (result: AsyncResult) => void): void;
         /**
          * Begins an asynchronous request to set the recipient list for an appointment or message
-         * @param recipients The recipients to add to the recipients list
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional method to call when the string is inserted
+         * @param recipients - The recipients to add to the recipients list
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional method to call when the string is inserted
          */
         setAsync(recipients: Array<string | EmailUser | EmailAddressDetails>, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
@@ -2438,61 +2438,61 @@ export declare namespace Office {
     export interface RoamingSettings {
         /**
          * Retrieves the specified setting
-         * @param name The case-sensitive name of the setting to retrieve
+         * @param name - The case-sensitive name of the setting to retrieve
          */
         get(name: string): any;
         /**
          * Removes the specified setting
-         * @param name The case-sensitive name of the setting to remove
+         * @param name - The case-sensitive name of the setting to remove
          */
         remove(name: string): void;
         /**
          * Saves the settings
-         * @param callback A function that is invoked when the callback returns, whose only parameter is of type AsyncResult
+         * @param callback - A function that is invoked when the callback returns, whose only parameter is of type AsyncResult
          */
         saveAsync(callback?: (result: AsyncResult) => void): void;
         /**
          * Sets or creates the specified setting
-         * @param name The case-sensitive name of the setting to set or create
-         * @param value Specifies the value to be stored
+         * @param name - The case-sensitive name of the setting to set or create
+         * @param value - Specifies the value to be stored
          */
         set(name: string, value: any): void;
     }
     export interface Subject {
         /**
          * Begins an asynchronous request to get the subject of an appointment or message
-         * @param callback The optional method to call when the string is inserted
+         * @param callback - The optional method to call when the string is inserted
          */
         getAsync(callback: (result: AsyncResult) => void): void;
         /**
          * Begins an asynchronous request to get the subject of an appointment or message
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional method to call when the string is inserted
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional method to call when the string is inserted
          */
         getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
         /**
          * Begins an asynchronous call to set the subject of an appointment or message
-         * @param data The subject of the appointment. The string is limited to 255 characters
+         * @param data - The subject of the appointment. The string is limited to 255 characters
          */
         setAsync(data: string): void;
         /**
          * Begins an asynchronous call to set the subject of an appointment or message
-         * @param data The subject of the appointment. The string is limited to 255 characters
-         * @param options Any optional parameters or state data passed to the method
+         * @param data - The subject of the appointment. The string is limited to 255 characters
+         * @param options - Any optional parameters or state data passed to the method
          */
         setAsync(data: string, options: AsyncContextOptions): void;
         /**
          * Begins an asynchronous call to set the subject of an appointment or message
-         * @param data The subject of the appointment. The string is limited to 255 characters
-         * @param callback The optional method to call when the string is inserted
+         * @param data - The subject of the appointment. The string is limited to 255 characters
+         * @param callback - The optional method to call when the string is inserted
          */
         setAsync(data: string, callback: (result: AsyncResult) => void): void;
         /**
          * Begins an asynchronous call to set the subject of an appointment or message
-         * @param data The subject of the appointment. The string is limited to 255 characters
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional method to call when the string is inserted
+         * @param data - The subject of the appointment. The string is limited to 255 characters
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional method to call when the string is inserted
          */
         setAsync(data: string, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
@@ -2504,38 +2504,38 @@ export declare namespace Office {
     export interface Time {
         /**
          * Begins an asynchronous request to get the start or end time
-         * @param callback The optional method to call when the string is inserted
+         * @param callback - The optional method to call when the string is inserted
          */
         getAsync(callback: (result: AsyncResult) => void): void;
         /**
          * Begins an asynchronous request to get the start or end time
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional method to call when the string is inserted
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional method to call when the string is inserted
          */
         getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
         /**
          * Begins an asynchronous request to set the start or end time
-         * @param dateTime A date-time object in Coordinated Universal Time (UTC)
+         * @param dateTime - A date-time object in Coordinated Universal Time (UTC)
          */
         setAsync(dateTime: Date): void;
         /**
          * Begins an asynchronous request to set the start or end time
-         * @param dateTime A date-time object in Coordinated Universal Time (UTC)
-         * @param options Any optional parameters or state data passed to the method
+         * @param dateTime - A date-time object in Coordinated Universal Time (UTC)
+         * @param options - Any optional parameters or state data passed to the method
          */
         setAsync(dateTime: Date, options: AsyncContextOptions): void;
         /**
          * Begins an asynchronous request to set the start or end time
-         * @param dateTime A date-time object in Coordinated Universal Time (UTC)
-         * @param callback The optional method to call when the string is inserted
+         * @param dateTime - A date-time object in Coordinated Universal Time (UTC)
+         * @param callback - The optional method to call when the string is inserted
          */
         setAsync(dateTime: Date, callback: (result: AsyncResult) => void): void;
         /**
          * Begins an asynchronous request to set the start or end time
-         * @param dateTime A date-time object in Coordinated Universal Time (UTC)
-         * @param options Any optional parameters or state data passed to the method
-         * @param callback The optional method to call when the string is inserted
+         * @param dateTime - A date-time object in Coordinated Universal Time (UTC)
+         * @param options - Any optional parameters or state data passed to the method
+         * @param callback - The optional method to call when the string is inserted
          */
         setAsync(dateTime: Date, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
 
@@ -2595,9 +2595,9 @@ export declare namespace OfficeExtension {
 		* Queues up a command to recursively load the specified properties of the object and its navigation properties.
 		* You must call "context.sync()" before reading the properties.
 		*
-		* @param object The object to be loaded.
-		* @param options The key-value pairing of load options for the types, such as { "Workbook": "worksheets,tables",  "Worksheet": "tables",  "Tables": "name" }
-		* @param maxDepth The maximum recursive depth.
+		* @param object - The object to be loaded.
+		* @param options - The key-value pairing of load options for the types, such as { "Workbook": "worksheets,tables",  "Worksheet": "tables",  "Tables": "name" }
+		* @param maxDepth - The maximum recursive depth.
 		*/
         loadRecursive(object: ClientObject, options: { [typeName: string]: string | string[] | LoadOption }, maxDepth?: number): void;
 
@@ -2737,19 +2737,19 @@ export declare namespace OfficeExtension {
 
 		/**
 		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
-		 * @param onRejected function to be called if or when the promise rejects.
+		 * @param onRejected - function to be called if or when the promise rejects.
 		 */
         catch<U>(onRejected?: (error: any) => IPromise<U>): IPromise<U>;
 
 		/**
 		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
-		 * @param onRejected function to be called if or when the promise rejects.
+		 * @param onRejected - function to be called if or when the promise rejects.
 		 */
         catch<U>(onRejected?: (error: any) => U): IPromise<U>;
 
 		/**
 		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
-		 * @param onRejected function to be called if or when the promise rejects.
+		 * @param onRejected - function to be called if or when the promise rejects.
 		 */
         catch<U>(onRejected?: (error: any) => void): IPromise<U>;
     }
@@ -2833,19 +2833,19 @@ export declare namespace OfficeExtension {
 
 		/**
 		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
-		 * @param onRejected function to be called if or when the promise rejects.
+		 * @param onRejected - function to be called if or when the promise rejects.
 		 */
         catch<U>(onRejected?: (error: any) => IPromise<U>): IPromise<U>;
 
 		/**
 		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
-		 * @param onRejected function to be called if or when the promise rejects.
+		 * @param onRejected - function to be called if or when the promise rejects.
 		 */
         catch<U>(onRejected?: (error: any) => U): IPromise<U>;
 
 		/**
 		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
-		 * @param onRejected function to be called if or when the promise rejects.
+		 * @param onRejected - function to be called if or when the promise rejects.
 		 */
         catch<U>(onRejected?: (error: any) => void): IPromise<U>;
     }
@@ -3311,7 +3311,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param calculationType Specifies the calculation type to use. See Excel.CalculationType for details.
+         * @param calculationType - Specifies the calculation type to use. See Excel.CalculationType for details.
          */
         calculate(calculationType: string): void;
         /**
@@ -3525,8 +3525,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param row The row number of the cell to be retrieved. Zero-indexed.
-         * @param column the column number of the cell to be retrieved. Zero-indexed.
+         * @param row - The row number of the cell to be retrieved. Zero-indexed.
+         * @param column - the column number of the cell to be retrieved. Zero-indexed.
          */
         getCell(row: number, column: number): Excel.Range;
         /**
@@ -3535,7 +3535,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param visibleOnly If true, considers only visible worksheets, skipping over any hidden ones.
+         * @param visibleOnly - If true, considers only visible worksheets, skipping over any hidden ones.
          */
         getNext(visibleOnly?: boolean): Excel.Worksheet;
         /**
@@ -3544,7 +3544,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param visibleOnly If true, considers only visible worksheets, skipping over any hidden ones.
+         * @param visibleOnly - If true, considers only visible worksheets, skipping over any hidden ones.
          */
         getNextOrNullObject(visibleOnly?: boolean): Excel.Worksheet;
         /**
@@ -3553,7 +3553,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param visibleOnly If true, considers only visible worksheets, skipping over any hidden ones.
+         * @param visibleOnly - If true, considers only visible worksheets, skipping over any hidden ones.
          */
         getPrevious(visibleOnly?: boolean): Excel.Worksheet;
         /**
@@ -3562,7 +3562,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param visibleOnly If true, considers only visible worksheets, skipping over any hidden ones.
+         * @param visibleOnly - If true, considers only visible worksheets, skipping over any hidden ones.
          */
         getPreviousOrNullObject(visibleOnly?: boolean): Excel.Worksheet;
         /**
@@ -3571,7 +3571,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param address The address or the name of the range. If not specified, the entire worksheet range is returned.
+         * @param address - The address or the name of the range. If not specified, the entire worksheet range is returned.
          */
         getRange(address?: string): Excel.Range;
         /**
@@ -3580,7 +3580,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param valuesOnly Considers only cells with values as used cells (ignoring formatting). [Api set: ExcelApi 1.2]
+         * @param valuesOnly - Considers only cells with values as used cells (ignoring formatting). [Api set: ExcelApi 1.2]
          */
         getUsedRange(valuesOnly?: boolean): Excel.Range;
         /**
@@ -3589,7 +3589,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param valuesOnly Considers only cells with values as used cells.
+         * @param valuesOnly - Considers only cells with values as used cells.
          */
         getUsedRangeOrNullObject(valuesOnly?: boolean): Excel.Range;
         /**
@@ -3619,7 +3619,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param name The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.
+         * @param name - The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.
          */
         add(name?: string): Excel.Worksheet;
         /**
@@ -3650,7 +3650,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param key The Name or ID of the worksheet.
+         * @param key - The Name or ID of the worksheet.
          */
         getItem(key: string): Excel.Worksheet;
         /**
@@ -3659,7 +3659,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param key The Name or ID of the worksheet.
+         * @param key - The Name or ID of the worksheet.
          */
         getItemOrNullObject(key: string): Excel.Worksheet;
         /**
@@ -3703,7 +3703,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param options sheet protection options.
+         * @param options - sheet protection options.
          */
         protect(options?: Excel.WorksheetProtectionOptions): void;
         /**
@@ -3983,7 +3983,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param applyTo Determines the type of clear action. See Excel.ClearApplyTo for details.
+         * @param applyTo - Determines the type of clear action. See Excel.ClearApplyTo for details.
          */
         clear(applyTo?: string): void;
         /**
@@ -3992,7 +3992,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param shift Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
+         * @param shift - Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
          */
         delete(shift: string): void;
         /**
@@ -4001,7 +4001,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param anotherRange The range object or address or range name.
+         * @param anotherRange - The range object or address or range name.
          */
         getBoundingRect(anotherRange: Excel.Range | string): Excel.Range;
         /**
@@ -4010,8 +4010,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param row Row number of the cell to be retrieved. Zero-indexed.
-         * @param column Column number of the cell to be retrieved. Zero-indexed.
+         * @param row - Row number of the cell to be retrieved. Zero-indexed.
+         * @param column - Column number of the cell to be retrieved. Zero-indexed.
          */
         getCell(row: number, column: number): Excel.Range;
         /**
@@ -4020,7 +4020,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param column Column number of the range to be retrieved. Zero-indexed.
+         * @param column - Column number of the range to be retrieved. Zero-indexed.
          */
         getColumn(column: number): Excel.Range;
         /**
@@ -4029,7 +4029,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param count The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
+         * @param count - The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
          */
         getColumnsAfter(count?: number): Excel.Range;
         /**
@@ -4038,7 +4038,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param count The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
+         * @param count - The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
          */
         getColumnsBefore(count?: number): Excel.Range;
         /**
@@ -4061,7 +4061,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param anotherRange The range object or range address that will be used to determine the intersection of ranges.
+         * @param anotherRange - The range object or range address that will be used to determine the intersection of ranges.
          */
         getIntersection(anotherRange: Excel.Range | string): Excel.Range;
         /**
@@ -4070,7 +4070,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param anotherRange The range object or range address that will be used to determine the intersection of ranges.
+         * @param anotherRange - The range object or range address that will be used to determine the intersection of ranges.
          */
         getIntersectionOrNullObject(anotherRange: Excel.Range | string): Excel.Range;
         /**
@@ -4100,8 +4100,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param rowOffset The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.
-         * @param columnOffset The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.
+         * @param rowOffset - The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.
+         * @param columnOffset - The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.
          */
         getOffsetRange(rowOffset: number, columnOffset: number): Excel.Range;
         /**
@@ -4110,8 +4110,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param deltaRows The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.
-         * @param deltaColumns The number of columnsby which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.
+         * @param deltaRows - The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.
+         * @param deltaColumns - The number of columnsby which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.
          */
         getResizedRange(deltaRows: number, deltaColumns: number): Excel.Range;
         /**
@@ -4120,7 +4120,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param row Row number of the range to be retrieved. Zero-indexed.
+         * @param row - Row number of the range to be retrieved. Zero-indexed.
          */
         getRow(row: number): Excel.Range;
         /**
@@ -4129,7 +4129,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param count The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
+         * @param count - The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
          */
         getRowsAbove(count?: number): Excel.Range;
         /**
@@ -4138,7 +4138,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param count The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
+         * @param count - The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
          */
         getRowsBelow(count?: number): Excel.Range;
         /**
@@ -4147,7 +4147,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param valuesOnly Considers only cells with values as used cells. [Api set: ExcelApi 1.2]
+         * @param valuesOnly - Considers only cells with values as used cells. [Api set: ExcelApi 1.2]
          */
         getUsedRange(valuesOnly?: boolean): Excel.Range;
         /**
@@ -4156,7 +4156,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param valuesOnly Considers only cells with values as used cells.
+         * @param valuesOnly - Considers only cells with values as used cells.
          */
         getUsedRangeOrNullObject(valuesOnly?: boolean): Excel.Range;
         /**
@@ -4172,7 +4172,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param shift Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
+         * @param shift - Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
          */
         insert(shift: string): Excel.Range;
         /**
@@ -4181,7 +4181,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param across Set true to merge cells in each row of the specified range as separate merged cells. The default value is false.
+         * @param across - Set true to merge cells in each row of the specified range as separate merged cells. The default value is false.
          */
         merge(across?: boolean): void;
         /**
@@ -4387,7 +4387,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          *
-         * @param index Index of the visible row.
+         * @param index - Index of the visible row.
          */
         getItemAt(index: number): Excel.RangeView;
         /**
@@ -4411,8 +4411,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param key The Key of the new setting.
-         * @param value The Value for the new setting.
+         * @param key - The Key of the new setting.
+         * @param value - The Value for the new setting.
          */
         add(key: string, value: string | number | boolean | Array<any> | any): Excel.Setting;
         /**
@@ -4428,7 +4428,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param key Key of the setting.
+         * @param key - Key of the setting.
          */
         getItem(key: string): Excel.Setting;
         /**
@@ -4437,7 +4437,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param key The key of the setting.
+         * @param key - The key of the setting.
          */
         getItemOrNullObject(key: string): Excel.Setting;
         /**
@@ -4517,9 +4517,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param name The name of the named item.
-         * @param reference The formula or the range that the name will refer to.
-         * @param comment The comment associated with the named item
+         * @param name - The name of the named item.
+         * @param reference - The formula or the range that the name will refer to.
+         * @param comment - The comment associated with the named item
          * @returns
          */
         add(name: string, reference: Excel.Range | string, comment?: string): Excel.NamedItem;
@@ -4529,9 +4529,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param name The "name" of the named item.
-         * @param formula The formula in the user's locale that the name will refer to.
-         * @param comment The comment associated with the named item
+         * @param name - The "name" of the named item.
+         * @param formula - The formula in the user's locale that the name will refer to.
+         * @param comment - The comment associated with the named item
          * @returns
          */
         addFormulaLocal(name: string, formula: string, comment?: string): Excel.NamedItem;
@@ -4548,7 +4548,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param name nameditem name.
+         * @param name - nameditem name.
          */
         getItem(name: string): Excel.NamedItem;
         /**
@@ -4557,7 +4557,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param name nameditem name.
+         * @param name - nameditem name.
          */
         getItemOrNullObject(name: string): Excel.NamedItem;
         /**
@@ -4766,9 +4766,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          *
-         * @param range Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
-         * @param bindingType Type of binding. See Excel.BindingType.
-         * @param id Name of binding.
+         * @param range - Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
+         * @param bindingType - Type of binding. See Excel.BindingType.
+         * @param id - Name of binding.
          */
         add(range: Excel.Range | string, bindingType: string, id: string): Excel.Binding;
         /**
@@ -4777,9 +4777,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          *
-         * @param name Name from which to create binding.
-         * @param bindingType Type of binding. See Excel.BindingType.
-         * @param id Name of binding.
+         * @param name - Name from which to create binding.
+         * @param bindingType - Type of binding. See Excel.BindingType.
+         * @param id - Name of binding.
          */
         addFromNamedItem(name: string, bindingType: string, id: string): Excel.Binding;
         /**
@@ -4788,8 +4788,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          *
-         * @param bindingType Type of binding. See Excel.BindingType.
-         * @param id Name of binding.
+         * @param bindingType - Type of binding. See Excel.BindingType.
+         * @param id - Name of binding.
          */
         addFromSelection(bindingType: string, id: string): Excel.Binding;
         /**
@@ -4805,7 +4805,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param id Id of the binding object to be retrieved.
+         * @param id - Id of the binding object to be retrieved.
          */
         getItem(id: string): Excel.Binding;
         /**
@@ -4814,7 +4814,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.Binding;
         /**
@@ -4823,7 +4823,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param id Id of the binding object to be retrieved.
+         * @param id - Id of the binding object to be retrieved.
          */
         getItemOrNullObject(id: string): Excel.Binding;
         /**
@@ -4856,8 +4856,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param address A Range object, or a string address or name of the range representing the data source. If the address does not contain a sheet name, the currently-active sheet is used. [Api set: ExcelApi 1.1 for string parameter; 1.3 for accepting a Range object as well]
-         * @param hasHeaders Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.
+         * @param address - A Range object, or a string address or name of the range representing the data source. If the address does not contain a sheet name, the currently-active sheet is used. [Api set: ExcelApi 1.1 for string parameter; 1.3 for accepting a Range object as well]
+         * @param hasHeaders - Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.
          */
         add(address: Excel.Range | string, hasHeaders: boolean): Excel.Table;
         /**
@@ -4873,7 +4873,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param key Name or ID of the table to be retrieved.
+         * @param key - Name or ID of the table to be retrieved.
          */
         getItem(key: number | string): Excel.Table;
         /**
@@ -4882,7 +4882,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.Table;
         /**
@@ -4891,7 +4891,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param key Name or ID of the table to be retrieved.
+         * @param key - Name or ID of the table to be retrieved.
          */
         getItemOrNullObject(key: number | string): Excel.Table;
         /**
@@ -5111,9 +5111,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1 requires an index smaller than the total column count; 1.4 allows index to be optional (null or -1) and will append a column at the end; 1.4 allows name parameter at creation time.]
          *
-         * @param index Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.
-         * @param values A 2-dimensional array of unformatted values of the table column.
-         * @param name Specifies the name of the new column. If null, the default name will be used.
+         * @param index - Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.
+         * @param values - A 2-dimensional array of unformatted values of the table column.
+         * @param name - Specifies the name of the new column. If null, the default name will be used.
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, name?: string): Excel.TableColumn;
         /**
@@ -5129,7 +5129,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param key Column Name or ID.
+         * @param key - Column Name or ID.
          */
         getItem(key: number | string): Excel.TableColumn;
         /**
@@ -5138,7 +5138,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.TableColumn;
         /**
@@ -5147,7 +5147,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param key Column Name or ID.
+         * @param key - Column Name or ID.
          */
         getItemOrNullObject(key: number | string): Excel.TableColumn;
         /**
@@ -5287,8 +5287,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows.]
          *
-         * @param index Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
-         * @param values A 2-dimensional array of unformatted values of the table row.
+         * @param index - Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
+         * @param values - A 2-dimensional array of unformatted values of the table row.
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number): Excel.TableRow;
         /**
@@ -5309,7 +5309,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.TableRow;
         /**
@@ -5640,7 +5640,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the border object to be retrieved. See Excel.BorderIndex for details.
+         * @param index - Index value of the border object to be retrieved. See Excel.BorderIndex for details.
          */
         getItem(index: string): Excel.RangeBorder;
         /**
@@ -5649,7 +5649,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.RangeBorder;
         /**
@@ -5753,9 +5753,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param type Represents the type of a chart. See Excel.ChartType for details.
-         * @param sourceData The Range object corresponding to the source data.
-         * @param seriesBy Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy for details.
+         * @param type - Represents the type of a chart. See Excel.ChartType for details.
+         * @param sourceData - The Range object corresponding to the source data.
+         * @param seriesBy - Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy for details.
          */
         add(type: string, sourceData: Excel.Range, seriesBy?: string): Excel.Chart;
         /**
@@ -5771,7 +5771,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param name Name of the chart to be retrieved.
+         * @param name - Name of the chart to be retrieved.
          */
         getItem(name: string): Excel.Chart;
         /**
@@ -5780,7 +5780,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.Chart;
         /**
@@ -5790,7 +5790,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param name Name of the chart to be retrieved.
+         * @param name - Name of the chart to be retrieved.
          */
         getItemOrNullObject(name: string): Excel.Chart;
         /**
@@ -5915,9 +5915,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param height (Optional) The desired height of the resulting image.
-         * @param width (Optional) The desired width of the resulting image.
-         * @param fittingMode (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height and width are set)."
+         * @param height - (Optional) The desired height of the resulting image.
+         * @param width - (Optional) The desired width of the resulting image.
+         * @param fittingMode - (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height and width are set)."
          */
         getImage(width?: number, height?: number, fittingMode?: string): OfficeExtension.ClientResult<string>;
         /**
@@ -5926,8 +5926,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param sourceData The Range object corresponding to the source data.
-         * @param seriesBy Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, Columns. See Excel.ChartSeriesBy for details.
+         * @param sourceData - The Range object corresponding to the source data.
+         * @param seriesBy - Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, Columns. See Excel.ChartSeriesBy for details.
          */
         setData(sourceData: Excel.Range, seriesBy?: string): void;
         /**
@@ -5936,8 +5936,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param startCell The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.
-         * @param endCell (Optional) The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.
+         * @param startCell - The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.
+         * @param endCell - (Optional) The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.
          */
         setPosition(startCell: Excel.Range | string, endCell?: Excel.Range | string): void;
         /**
@@ -6025,7 +6025,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.ChartSeries;
         /**
@@ -6150,7 +6150,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.ChartPoint;
         /**
@@ -6880,7 +6880,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param color HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+         * @param color - HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
          */
         setSolidColor(color: string): void;
         toJSON(): {};
@@ -7007,11 +7007,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param fields The list of conditions to sort on.
-         * @param matchCase Whether to have the casing impact string ordering.
-         * @param hasHeaders Whether the range has a header.
-         * @param orientation Whether the operation is sorting rows or columns.
-         * @param method The ordering method used for Chinese characters.
+         * @param fields - The list of conditions to sort on.
+         * @param matchCase - Whether to have the casing impact string ordering.
+         * @param hasHeaders - Whether the range has a header.
+         * @param orientation - Whether the operation is sorting rows or columns.
+         * @param method - The ordering method used for Chinese characters.
          */
         apply(fields: Array<Excel.SortField>, matchCase?: boolean, hasHeaders?: boolean, orientation?: string, method?: string): void;
         toJSON(): {};
@@ -7050,9 +7050,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param fields The list of conditions to sort on.
-         * @param matchCase Whether to have the casing impact string ordering.
-         * @param method The ordering method used for Chinese characters.
+         * @param fields - The list of conditions to sort on.
+         * @param matchCase - Whether to have the casing impact string ordering.
+         * @param method - The ordering method used for Chinese characters.
          */
         apply(fields: Array<Excel.SortField>, matchCase?: boolean, method?: string): void;
         /**
@@ -7149,7 +7149,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param criteria The criteria to apply.
+         * @param criteria - The criteria to apply.
          */
         apply(criteria: Excel.FilterCriteria): void;
         /**
@@ -7158,7 +7158,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param count The number of elements from the bottom to show.
+         * @param count - The number of elements from the bottom to show.
          */
         applyBottomItemsFilter(count: number): void;
         /**
@@ -7167,7 +7167,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param percent The percentage of elements from the bottom to show.
+         * @param percent - The percentage of elements from the bottom to show.
          */
         applyBottomPercentFilter(percent: number): void;
         /**
@@ -7176,7 +7176,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param color The background color of the cells to show.
+         * @param color - The background color of the cells to show.
          */
         applyCellColorFilter(color: string): void;
         /**
@@ -7185,9 +7185,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param criteria1 The first criteria string.
-         * @param criteria2 The second criteria string.
-         * @param oper The operator that describes how the two criteria are joined.
+         * @param criteria1 - The first criteria string.
+         * @param criteria2 - The second criteria string.
+         * @param oper - The operator that describes how the two criteria are joined.
          */
         applyCustomFilter(criteria1: string, criteria2?: string, oper?: string): void;
         /**
@@ -7196,7 +7196,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param criteria The dynamic criteria to apply.
+         * @param criteria - The dynamic criteria to apply.
          */
         applyDynamicFilter(criteria: string): void;
         /**
@@ -7205,7 +7205,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param color The font color of the cells to show.
+         * @param color - The font color of the cells to show.
          */
         applyFontColorFilter(color: string): void;
         /**
@@ -7214,7 +7214,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param icon The icons of the cells to show.
+         * @param icon - The icons of the cells to show.
          */
         applyIconFilter(icon: Excel.Icon): void;
         /**
@@ -7223,7 +7223,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param count The number of elements from the top to show.
+         * @param count - The number of elements from the top to show.
          */
         applyTopItemsFilter(count: number): void;
         /**
@@ -7232,7 +7232,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param percent The percentage of elements from the top to show.
+         * @param percent - The percentage of elements from the top to show.
          */
         applyTopPercentFilter(percent: number): void;
         /**
@@ -7241,7 +7241,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values The list of values to show.
+         * @param values - The list of values to show.
          */
         applyValuesFilter(values: Array<string | Excel.FilterDatetime>): void;
         /**
@@ -7394,7 +7394,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param id ID of the object to be retrieved.
+         * @param id - ID of the object to be retrieved.
          */
         getItem(id: string): Excel.CustomXmlPart;
         /**
@@ -7404,7 +7404,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param id ID of the object to be retrieved.
+         * @param id - ID of the object to be retrieved.
          */
         getItemOrNullObject(id: string): Excel.CustomXmlPart;
         /**
@@ -7444,7 +7444,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param xml XML content. Must be a valid XML fragment.
+         * @param xml - XML content. Must be a valid XML fragment.
          */
         add(xml: string): Excel.CustomXmlPart;
         /**
@@ -7454,7 +7454,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.5]
          *
          * @param namespaceUri
-         */
+         - */
         getByNamespace(namespaceUri: string): Excel.CustomXmlPartScopedCollection;
         /**
          *
@@ -7469,7 +7469,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param id ID of the object to be retrieved.
+         * @param id - ID of the object to be retrieved.
          */
         getItem(id: string): Excel.CustomXmlPart;
         /**
@@ -7479,7 +7479,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param id ID of the object to be retrieved.
+         * @param id - ID of the object to be retrieved.
          */
         getItemOrNullObject(id: string): Excel.CustomXmlPart;
         /**
@@ -7529,7 +7529,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param xml XML content for the part.
+         * @param xml - XML content for the part.
          */
         setXml(xml: string): void;
         /**
@@ -7563,7 +7563,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          *
-         * @param name Name of the PivotTable to be retrieved.
+         * @param name - Name of the PivotTable to be retrieved.
          */
         getItem(name: string): Excel.PivotTable;
         /**
@@ -7572,7 +7572,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param name Name of the PivotTable to be retrieved.
+         * @param name - Name of the PivotTable to be retrieved.
          */
         getItemOrNullObject(name: string): Excel.PivotTable;
         /**
@@ -7656,7 +7656,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6 (PREVIEW)]
          *
-         * @param type The type of conditional format being added. See Excel.ConditionalFormatType for details.
+         * @param type - The type of conditional format being added. See Excel.ConditionalFormatType for details.
          */
         add(type: string): Excel.ConditionalFormat;
         /**
@@ -7679,7 +7679,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6 (PREVIEW)]
          *
-         * @param index Index of the conditional formats to be retrieved.
+         * @param index - Index of the conditional formats to be retrieved.
          */
         getItemAt(index: number): Excel.ConditionalFormat;
         /**
@@ -8883,7 +8883,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6 (PREVIEW)]
          *
-         * @param index Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
+         * @param index - Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
          */
         getItem(index: string): Excel.ConditionalRangeBorder;
         /**
@@ -8892,7 +8892,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6 (PREVIEW)]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.ConditionalRangeBorder;
         /**
@@ -9588,7 +9588,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the real number for which you want the absolute value.
+         * @param number - Is the real number for which you want the absolute value.
          */
         abs(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9597,14 +9597,14 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param issue Is the security's issue date, expressed as a serial date number.
-         * @param firstInterest Is the security's first interest date, expressed as a serial date number.
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param rate Is the security's annual coupon rate.
-         * @param par Is the security's par value.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
-         * @param calcMethod Is a logical value: to accrued interest from issue date = TRUE or omitted; to calculate from last coupon payment date = FALSE.
+         * @param issue - Is the security's issue date, expressed as a serial date number.
+         * @param firstInterest - Is the security's first interest date, expressed as a serial date number.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param rate - Is the security's annual coupon rate.
+         * @param par - Is the security's par value.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
+         * @param calcMethod - Is a logical value: to accrued interest from issue date = TRUE or omitted; to calculate from last coupon payment date = FALSE.
          */
         accrInt(issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, firstInterest: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, par: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, calcMethod?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9613,11 +9613,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param issue Is the security's issue date, expressed as a serial date number.
-         * @param settlement Is the security's maturity date, expressed as a serial date number.
-         * @param rate Is the security's annual coupon rate.
-         * @param par Is the security's par value.
-         * @param basis Is the type of day count basis to use.
+         * @param issue - Is the security's issue date, expressed as a serial date number.
+         * @param settlement - Is the security's maturity date, expressed as a serial date number.
+         * @param rate - Is the security's annual coupon rate.
+         * @param par - Is the security's par value.
+         * @param basis - Is the type of day count basis to use.
          */
         accrIntM(issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, par: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9626,7 +9626,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the cosine of the angle you want and must be from -1 to 1.
+         * @param number - Is the cosine of the angle you want and must be from -1 to 1.
          */
         acos(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9635,7 +9635,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number equal to or greater than 1.
+         * @param number - Is any real number equal to or greater than 1.
          */
         acosh(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9644,7 +9644,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the cotangent of the angle you want.
+         * @param number - Is the cotangent of the angle you want.
          */
         acot(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9653,7 +9653,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the hyperbolic cotangent of the angle that you want.
+         * @param number - Is the hyperbolic cotangent of the angle that you want.
          */
         acoth(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9662,13 +9662,13 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param cost Is the cost of the asset.
-         * @param datePurchased Is the date the asset is purchased.
-         * @param firstPeriod Is the date of the end of the first period.
-         * @param salvage Is the salvage value at the end of life of the asset.
-         * @param period Is the period.
-         * @param rate Is the rate of depreciation.
-         * @param basis Year_basis : 0 for year of 360 days, 1 for actual, 3 for year of 365 days.
+         * @param cost - Is the cost of the asset.
+         * @param datePurchased - Is the date the asset is purchased.
+         * @param firstPeriod - Is the date of the end of the first period.
+         * @param salvage - Is the salvage value at the end of life of the asset.
+         * @param period - Is the period.
+         * @param rate - Is the rate of depreciation.
+         * @param basis - Year_basis : 0 for year of 360 days, 1 for actual, 3 for year of 365 days.
          */
         amorDegrc(cost: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, datePurchased: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, firstPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, period: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9677,13 +9677,13 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param cost Is the cost of the asset.
-         * @param datePurchased Is the date the asset is purchased.
-         * @param firstPeriod Is the date of the end of the first period.
-         * @param salvage Is the salvage value at the end of life of the asset.
-         * @param period Is the period.
-         * @param rate Is the rate of depreciation.
-         * @param basis Year_basis : 0 for year of 360 days, 1 for actual, 3 for year of 365 days.
+         * @param cost - Is the cost of the asset.
+         * @param datePurchased - Is the date the asset is purchased.
+         * @param firstPeriod - Is the date of the end of the first period.
+         * @param salvage - Is the salvage value at the end of life of the asset.
+         * @param period - Is the period.
+         * @param rate - Is the rate of depreciation.
+         * @param basis - Year_basis : 0 for year of 360 days, 1 for actual, 3 for year of 365 days.
          */
         amorLinc(cost: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, datePurchased: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, firstPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, period: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9692,7 +9692,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
+         * @param values - List of parameters, whose elements are 1 to 255 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
          */
         and(...values: Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<boolean>;
         /**
@@ -9701,7 +9701,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the Roman numeral you want to convert.
+         * @param text - Is the Roman numeral you want to convert.
          */
         arabic(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9710,7 +9710,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param reference Is a reference to a cell or range of cells and can refer to multiple areas.
+         * @param reference - Is a reference to a cell or range of cells and can refer to multiple areas.
          */
         areas(reference: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9719,7 +9719,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is a text, or a reference to a cell containing a text.
+         * @param text - Is a text, or a reference to a cell containing a text.
          */
         asc(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -9728,7 +9728,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the sine of the angle you want and must be from -1 to 1.
+         * @param number - Is the sine of the angle you want and must be from -1 to 1.
          */
         asin(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9737,7 +9737,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number equal to or greater than 1.
+         * @param number - Is any real number equal to or greater than 1.
          */
         asinh(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9746,7 +9746,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the tangent of the angle you want.
+         * @param number - Is the tangent of the angle you want.
          */
         atan(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9755,8 +9755,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param xNum Is the x-coordinate of the point.
-         * @param yNum Is the y-coordinate of the point.
+         * @param xNum - Is the x-coordinate of the point.
+         * @param yNum - Is the y-coordinate of the point.
          */
         atan2(xNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9765,7 +9765,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number between -1 and 1 excluding -1 and 1.
+         * @param number - Is any real number between -1 and 1 excluding -1 and 1.
          */
         atanh(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9774,7 +9774,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 arguments for which you want the average of the absolute deviations.
+         * @param values - List of parameters, whose elements are 1 to 255 arguments for which you want the average of the absolute deviations.
          */
         aveDev(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -9783,7 +9783,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numeric arguments for which you want the average.
+         * @param values - List of parameters, whose elements are 1 to 255 numeric arguments for which you want the average.
          */
         average(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -9792,7 +9792,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 arguments for which you want the average.
+         * @param values - List of parameters, whose elements are 1 to 255 arguments for which you want the average.
          */
         averageA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -9801,9 +9801,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param range Is the range of cells you want evaluated.
-         * @param criteria Is the condition or criteria in the form of a number, expression, or text that defines which cells will be used to find the average.
-         * @param averageRange Are the actual cells to be used to find the average. If omitted, the cells in range are used.
+         * @param range - Is the range of cells you want evaluated.
+         * @param criteria - Is the condition or criteria in the form of a number, expression, or text that defines which cells will be used to find the average.
+         * @param averageRange - Are the actual cells to be used to find the average. If omitted, the cells in range are used.
          */
         averageIf(range: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, averageRange?: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9812,8 +9812,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param averageRange Are the actual cells to be used to find the average.
-         * @param values List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition or criteria in the form of a number, expression, or text that defines which cells will be used to find the average.
+         * @param averageRange - Are the actual cells to be used to find the average.
+         * @param values - List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition or criteria in the form of a number, expression, or text that defines which cells will be used to find the average.
          */
         averageIfs(averageRange: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>): FunctionResult<number>;
         /**
@@ -9822,7 +9822,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is a number that you want to convert.
+         * @param number - Is a number that you want to convert.
          */
         bahtText(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -9831,9 +9831,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number that you want to convert.
-         * @param radix Is the base Radix that you want to convert the number into.
-         * @param minLength Is the minimum length of the returned string.  If omitted leading zeros are not added.
+         * @param number - Is the number that you want to convert.
+         * @param radix - Is the base Radix that you want to convert the number into.
+         * @param minLength - Is the minimum length of the returned string.  If omitted leading zeros are not added.
          */
         base(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, radix: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, minLength?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -9883,9 +9883,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param x - Is the value between A and B at which to evaluate the function.
-         * @param alpha Is a parameter to the distribution and must be greater than 0.
-         * @param beta Is a parameter to the distribution and must be greater than 0.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
+         * @param alpha - Is a parameter to the distribution and must be greater than 0.
+         * @param beta - Is a parameter to the distribution and must be greater than 0.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
          * @param A - Is an optional lower bound to the interval of x. If omitted, A = 0.
          * @param B - Is an optional upper bound to the interval of x. If omitted, B = 1.
          */
@@ -9896,9 +9896,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability associated with the beta distribution.
-         * @param alpha Is a parameter to the distribution and must be greater than 0.
-         * @param beta Is a parameter to the distribution and must be greater than 0.
+         * @param probability - Is a probability associated with the beta distribution.
+         * @param alpha - Is a parameter to the distribution and must be greater than 0.
+         * @param beta - Is a parameter to the distribution and must be greater than 0.
          * @param A - Is an optional lower bound to the interval of x. If omitted, A = 0.
          * @param B - Is an optional upper bound to the interval of x. If omitted, B = 1.
          */
@@ -9909,7 +9909,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the binary number you want to convert.
+         * @param number - Is the binary number you want to convert.
          */
         bin2Dec(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9918,8 +9918,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the binary number you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the binary number you want to convert.
+         * @param places - Is the number of characters to use.
          */
         bin2Hex(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9928,8 +9928,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the binary number you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the binary number you want to convert.
+         * @param places - Is the number of characters to use.
          */
         bin2Oct(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9938,10 +9938,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param numberS Is the number of successes in trials.
-         * @param trials Is the number of independent trials.
-         * @param probabilityS Is the probability of success on each trial.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
+         * @param numberS - Is the number of successes in trials.
+         * @param trials - Is the number of independent trials.
+         * @param probabilityS - Is the probability of success on each trial.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
          */
         binom_Dist(numberS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, trials: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9950,10 +9950,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param trials Is the number of independent trials.
-         * @param probabilityS Is the probability of success on each trial.
-         * @param numberS Is the number of successes in trials.
-         * @param numberS2 If provided this function returns the probability that the number of successful trials shall lie between numberS and numberS2.
+         * @param trials - Is the number of independent trials.
+         * @param probabilityS - Is the probability of success on each trial.
+         * @param numberS - Is the number of successes in trials.
+         * @param numberS2 - If provided this function returns the probability that the number of successful trials shall lie between numberS and numberS2.
          */
         binom_Dist_Range(trials: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberS2?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9962,9 +9962,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param trials Is the number of Bernoulli trials.
-         * @param probabilityS Is the probability of success on each trial, a number between 0 and 1 inclusive.
-         * @param alpha Is the criterion value, a number between 0 and 1 inclusive.
+         * @param trials - Is the number of Bernoulli trials.
+         * @param probabilityS - Is the probability of success on each trial, a number between 0 and 1 inclusive.
+         * @param alpha - Is the criterion value, a number between 0 and 1 inclusive.
          */
         binom_Inv(trials: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9973,8 +9973,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number1 Is the decimal representation of the binary number you want to evaluate.
-         * @param number2 Is the decimal representation of the binary number you want to evaluate.
+         * @param number1 - Is the decimal representation of the binary number you want to evaluate.
+         * @param number2 - Is the decimal representation of the binary number you want to evaluate.
          */
         bitand(number1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, number2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9983,8 +9983,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the decimal representation of the binary number you want to evaluate.
-         * @param shiftAmount Is the number of bits that you want to shift Number left by.
+         * @param number - Is the decimal representation of the binary number you want to evaluate.
+         * @param shiftAmount - Is the number of bits that you want to shift Number left by.
          */
         bitlshift(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, shiftAmount: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -9993,8 +9993,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number1 Is the decimal representation of the binary number you want to evaluate.
-         * @param number2 Is the decimal representation of the binary number you want to evaluate.
+         * @param number1 - Is the decimal representation of the binary number you want to evaluate.
+         * @param number2 - Is the decimal representation of the binary number you want to evaluate.
          */
         bitor(number1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, number2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10003,8 +10003,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the decimal representation of the binary number you want to evaluate.
-         * @param shiftAmount Is the number of bits that you want to shift Number right by.
+         * @param number - Is the decimal representation of the binary number you want to evaluate.
+         * @param shiftAmount - Is the number of bits that you want to shift Number right by.
          */
         bitrshift(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, shiftAmount: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10013,8 +10013,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number1 Is the decimal representation of the binary number you want to evaluate.
-         * @param number2 Is the decimal representation of the binary number you want to evaluate.
+         * @param number1 - Is the decimal representation of the binary number you want to evaluate.
+         * @param number2 - Is the decimal representation of the binary number you want to evaluate.
          */
         bitxor(number1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, number2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10023,9 +10023,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value you want to round.
-         * @param significance Is the multiple to which you want to round.
-         * @param mode When given and nonzero this function will round away from zero.
+         * @param number - Is the value you want to round.
+         * @param significance - Is the multiple to which you want to round.
+         * @param mode - When given and nonzero this function will round away from zero.
          */
         ceiling_Math(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mode?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10034,8 +10034,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value you want to round.
-         * @param significance Is the multiple to which you want to round.
+         * @param number - Is the value you want to round.
+         * @param significance - Is the multiple to which you want to round.
          */
         ceiling_Precise(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10044,7 +10044,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is a number between 1 and 255 specifying which character you want.
+         * @param number - Is a number between 1 and 255 specifying which character you want.
          */
         char(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -10054,8 +10054,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param x - Is the value at which you want to evaluate the distribution, a nonnegative number.
-         * @param degFreedom Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
-         * @param cumulative Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
+         * @param degFreedom - Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param cumulative - Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
          */
         chiSq_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10065,7 +10065,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param x - Is the value at which you want to evaluate the distribution, a nonnegative number.
-         * @param degFreedom Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param degFreedom - Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
         chiSq_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10074,8 +10074,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability associated with the chi-squared distribution, a value between 0 and 1 inclusive.
-         * @param degFreedom Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param probability - Is a probability associated with the chi-squared distribution, a value between 0 and 1 inclusive.
+         * @param degFreedom - Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
         chiSq_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10084,8 +10084,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability associated with the chi-squared distribution, a value between 0 and 1 inclusive.
-         * @param degFreedom Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param probability - Is a probability associated with the chi-squared distribution, a value between 0 and 1 inclusive.
+         * @param degFreedom - Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
         chiSq_Inv_RT(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10094,8 +10094,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param indexNum Specifies which value argument is selected. indexNum must be between 1 and 254, or a formula or a reference to a number between 1 and 254.
-         * @param values List of parameters, whose elements are 1 to 254 numbers, cell references, defined names, formulas, functions, or text arguments from which CHOOSE selects.
+         * @param indexNum - Specifies which value argument is selected. indexNum must be between 1 and 254, or a formula or a reference to a number between 1 and 254.
+         * @param values - List of parameters, whose elements are 1 to 254 numbers, cell references, defined names, formulas, functions, or text arguments from which CHOOSE selects.
          */
         choose(indexNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ...values: Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number | string | boolean>;
         /**
@@ -10104,7 +10104,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is any worksheet information from which you want to remove nonprintable characters.
+         * @param text - Is any worksheet information from which you want to remove nonprintable characters.
          */
         clean(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -10113,7 +10113,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text for which you want the code of the first character.
+         * @param text - Is the text for which you want the code of the first character.
          */
         code(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10122,7 +10122,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is an array or array formula, or a reference to a range of cells for which you want the number of columns.
+         * @param array - Is an array or array formula, or a reference to a range of cells for which you want the number of columns.
          */
         columns(array: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10131,8 +10131,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the total number of items.
-         * @param numberChosen Is the number of items in each combination.
+         * @param number - Is the total number of items.
+         * @param numberChosen - Is the number of items in each combination.
          */
         combin(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10141,8 +10141,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the total number of items.
-         * @param numberChosen Is the number of items in each combination.
+         * @param number - Is the total number of items.
+         * @param numberChosen - Is the number of items in each combination.
          */
         combina(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10151,9 +10151,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param realNum Is the real coefficient of the complex number.
-         * @param iNum Is the imaginary coefficient of the complex number.
-         * @param suffix Is the suffix for the imaginary component of the complex number.
+         * @param realNum - Is the real coefficient of the complex number.
+         * @param iNum - Is the imaginary coefficient of the complex number.
+         * @param suffix - Is the suffix for the imaginary component of the complex number.
          */
         complex(realNum: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, iNum: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, suffix?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10162,7 +10162,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 text strings to be joined into a single text string and can be text strings, numbers, or single-cell references.
+         * @param values - List of parameters, whose elements are 1 to 255 text strings to be joined into a single text string and can be text strings, numbers, or single-cell references.
          */
         concatenate(...values: Array<string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<string>;
         /**
@@ -10171,9 +10171,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param alpha Is the significance level used to compute the confidence level, a number greater than 0 and less than 1.
-         * @param standardDev Is the population standard deviation for the data range and is assumed to be known. standardDev must be greater than 0.
-         * @param size Is the sample size.
+         * @param alpha - Is the significance level used to compute the confidence level, a number greater than 0 and less than 1.
+         * @param standardDev - Is the population standard deviation for the data range and is assumed to be known. standardDev must be greater than 0.
+         * @param size - Is the sample size.
          */
         confidence_Norm(alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, size: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10182,9 +10182,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param alpha Is the significance level used to compute the confidence level, a number greater than 0 and less than 1.
-         * @param standardDev Is the population standard deviation for the data range and is assumed to be known. standardDev must be greater than 0.
-         * @param size Is the sample size.
+         * @param alpha - Is the significance level used to compute the confidence level, a number greater than 0 and less than 1.
+         * @param standardDev - Is the population standard deviation for the data range and is assumed to be known. standardDev must be greater than 0.
+         * @param size - Is the sample size.
          */
         confidence_T(alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, size: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10193,9 +10193,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value in from_units to convert.
-         * @param fromUnit Is the units for number.
-         * @param toUnit Is the units for the result.
+         * @param number - Is the value in from_units to convert.
+         * @param fromUnit - Is the units for number.
+         * @param toUnit - Is the units for the result.
          */
         convert(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fromUnit: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, toUnit: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10204,7 +10204,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the cosine.
+         * @param number - Is the angle in radians for which you want the cosine.
          */
         cos(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10213,7 +10213,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number.
+         * @param number - Is any real number.
          */
         cosh(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10222,7 +10222,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the cotangent.
+         * @param number - Is the angle in radians for which you want the cotangent.
          */
         cot(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10231,7 +10231,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the hyperbolic cotangent.
+         * @param number - Is the angle in radians for which you want the hyperbolic cotangent.
          */
         coth(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10240,7 +10240,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 arguments that can contain or refer to a variety of different types of data, but only numbers are counted.
+         * @param values - List of parameters, whose elements are 1 to 255 arguments that can contain or refer to a variety of different types of data, but only numbers are counted.
          */
         count(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -10249,7 +10249,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 arguments representing the values and cells you want to count. Values can be any type of information.
+         * @param values - List of parameters, whose elements are 1 to 255 arguments representing the values and cells you want to count. Values can be any type of information.
          */
         countA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -10258,7 +10258,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param range Is the range from which you want to count the empty cells.
+         * @param range - Is the range from which you want to count the empty cells.
          */
         countBlank(range: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10267,8 +10267,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param range Is the range of cells from which you want to count nonblank cells.
-         * @param criteria Is the condition in the form of a number, expression, or text that defines which cells will be counted.
+         * @param range - Is the range of cells from which you want to count nonblank cells.
+         * @param criteria - Is the condition in the form of a number, expression, or text that defines which cells will be counted.
          */
         countIf(range: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10277,7 +10277,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition in the form of a number, expression, or text that defines which cells will be counted.
+         * @param values - List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition in the form of a number, expression, or text that defines which cells will be counted.
          */
         countIfs(...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>): FunctionResult<number>;
         /**
@@ -10286,10 +10286,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         coupDayBs(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10298,10 +10298,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         coupDays(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10310,10 +10310,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         coupDaysNc(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10322,10 +10322,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         coupNcd(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10334,10 +10334,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         coupNum(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10346,10 +10346,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         coupPcd(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10358,7 +10358,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the cosecant.
+         * @param number - Is the angle in radians for which you want the cosecant.
          */
         csc(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10367,7 +10367,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the hyperbolic cosecant.
+         * @param number - Is the angle in radians for which you want the hyperbolic cosecant.
          */
         csch(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10376,12 +10376,12 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate.
-         * @param nper Is the total number of payment periods.
-         * @param pv Is the present value.
-         * @param startPeriod Is the first period in the calculation.
-         * @param endPeriod Is the last period in the calculation.
-         * @param type Is the timing of the payment.
+         * @param rate - Is the interest rate.
+         * @param nper - Is the total number of payment periods.
+         * @param pv - Is the present value.
+         * @param startPeriod - Is the first period in the calculation.
+         * @param endPeriod - Is the last period in the calculation.
+         * @param type - Is the timing of the payment.
          */
         cumIPmt(rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10390,12 +10390,12 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate.
-         * @param nper Is the total number of payment periods.
-         * @param pv Is the present value.
-         * @param startPeriod Is the first period in the calculation.
-         * @param endPeriod Is the last period in the calculation.
-         * @param type Is the timing of the payment.
+         * @param rate - Is the interest rate.
+         * @param nper - Is the total number of payment periods.
+         * @param pv - Is the present value.
+         * @param startPeriod - Is the first period in the calculation.
+         * @param endPeriod - Is the last period in the calculation.
+         * @param type - Is the timing of the payment.
          */
         cumPrinc(rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10404,9 +10404,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         daverage(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10415,9 +10415,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dcount(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10426,9 +10426,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dcountA(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10437,9 +10437,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dget(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | boolean | string>;
         /**
@@ -10448,9 +10448,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dmax(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10459,9 +10459,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dmin(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10470,9 +10470,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dproduct(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10481,9 +10481,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dstDev(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10492,9 +10492,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dstDevP(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10503,9 +10503,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dsum(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10514,9 +10514,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dvar(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10525,9 +10525,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dvarP(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10536,9 +10536,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param year Is a number from 1900 or 1904 (depending on the workbook's date system) to 9999.
-         * @param month Is a number from 1 to 12 representing the month of the year.
-         * @param day Is a number from 1 to 31 representing the day of the month.
+         * @param year - Is a number from 1900 or 1904 (depending on the workbook's date system) to 9999.
+         * @param month - Is a number from 1 to 12 representing the month of the year.
+         * @param day - Is a number from 1 to 31 representing the day of the month.
          */
         date(year: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, month: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, day: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10547,7 +10547,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param dateText Is text that represents a date in a Microsoft Excel date format, between 1/1/1900 or 1/1/1904 (depending on the workbook's date system) and 12/31/9999.
+         * @param dateText - Is text that represents a date in a Microsoft Excel date format, between 1/1/1900 or 1/1/1904 (depending on the workbook's date system) and 12/31/9999.
          */
         datevalue(dateText: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10556,7 +10556,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is a number in the date-time code used by Microsoft Excel.
+         * @param serialNumber - Is a number in the date-time code used by Microsoft Excel.
          */
         day(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10565,8 +10565,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param endDate startDate and endDate are the two dates between which you want to know the number of days.
-         * @param startDate startDate and endDate are the two dates between which you want to know the number of days.
+         * @param endDate - startDate and endDate are the two dates between which you want to know the number of days.
+         * @param startDate - startDate and endDate are the two dates between which you want to know the number of days.
          */
         days(endDate: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startDate: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10575,9 +10575,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate startDate and endDate are the two dates between which you want to know the number of days.
-         * @param endDate startDate and endDate are the two dates between which you want to know the number of days.
-         * @param method Is a logical value specifying the calculation method: U.S. (NASD) = FALSE or omitted; European = TRUE.
+         * @param startDate - startDate and endDate are the two dates between which you want to know the number of days.
+         * @param endDate - startDate and endDate are the two dates between which you want to know the number of days.
+         * @param method - Is a logical value specifying the calculation method: U.S. (NASD) = FALSE or omitted; European = TRUE.
          */
         days360(startDate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endDate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, method?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10586,11 +10586,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param cost Is the initial cost of the asset.
-         * @param salvage Is the salvage value at the end of the life of the asset.
-         * @param life Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
-         * @param period Is the period for which you want to calculate the depreciation. Period must use the same units as Life.
-         * @param month Is the number of months in the first year. If month is omitted, it is assumed to be 12.
+         * @param cost - Is the initial cost of the asset.
+         * @param salvage - Is the salvage value at the end of the life of the asset.
+         * @param life - Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
+         * @param period - Is the period for which you want to calculate the depreciation. Period must use the same units as Life.
+         * @param month - Is the number of months in the first year. If month is omitted, it is assumed to be 12.
          */
         db(cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, period: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, month?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10599,7 +10599,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is a text, or a reference to a cell containing a text.
+         * @param text - Is a text, or a reference to a cell containing a text.
          */
         dbcs(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -10608,11 +10608,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param cost Is the initial cost of the asset.
-         * @param salvage Is the salvage value at the end of the life of the asset.
-         * @param life Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
-         * @param period Is the period for which you want to calculate the depreciation. Period must use the same units as Life.
-         * @param factor Is the rate at which the balance declines. If Factor is omitted, it is assumed to be 2 (the double-declining balance method).
+         * @param cost - Is the initial cost of the asset.
+         * @param salvage - Is the salvage value at the end of the life of the asset.
+         * @param life - Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
+         * @param period - Is the period for which you want to calculate the depreciation. Period must use the same units as Life.
+         * @param factor - Is the rate at which the balance declines. If Factor is omitted, it is assumed to be 2 (the double-declining balance method).
          */
         ddb(cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, period: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, factor?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10621,8 +10621,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the decimal integer you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the decimal integer you want to convert.
+         * @param places - Is the number of characters to use.
          */
         dec2Bin(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10631,8 +10631,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the decimal integer you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the decimal integer you want to convert.
+         * @param places - Is the number of characters to use.
          */
         dec2Hex(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10641,8 +10641,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the decimal integer you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the decimal integer you want to convert.
+         * @param places - Is the number of characters to use.
          */
         dec2Oct(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10651,8 +10651,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number that you want to convert.
-         * @param radix Is the base Radix of the number you are converting.
+         * @param number - Is the number that you want to convert.
+         * @param radix - Is the base Radix of the number you are converting.
          */
         decimal(number: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, radix: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10661,7 +10661,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param angle Is the angle in radians that you want to convert.
+         * @param angle - Is the angle in radians that you want to convert.
          */
         degrees(angle: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10670,8 +10670,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number1 Is the first number.
-         * @param number2 Is the second number.
+         * @param number1 - Is the first number.
+         * @param number2 - Is the second number.
          */
         delta(number1: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, number2?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10680,7 +10680,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 arguments, or an array or array reference, on which you want DEVSQ to calculate.
+         * @param values - List of parameters, whose elements are 1 to 255 arguments, or an array or array reference, on which you want DEVSQ to calculate.
          */
         devSq(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -10689,11 +10689,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param pr Is the security's price per $100 face value.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param pr - Is the security's price per $100 face value.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param basis - Is the type of day count basis to use.
          */
         disc(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10702,8 +10702,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is a number, a reference to a cell containing a number, or a formula that evaluates to a number.
-         * @param decimals Is the number of digits to the right of the decimal point. The number is rounded as necessary; if omitted, Decimals = 2.
+         * @param number - Is a number, a reference to a cell containing a number, or a formula that evaluates to a number.
+         * @param decimals - Is the number of digits to the right of the decimal point. The number is rounded as necessary; if omitted, Decimals = 2.
          */
         dollar(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, decimals?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -10712,8 +10712,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param fractionalDollar Is a number expressed as a fraction.
-         * @param fraction Is the integer to use in the denominator of the fraction.
+         * @param fractionalDollar - Is a number expressed as a fraction.
+         * @param fraction - Is the integer to use in the denominator of the fraction.
          */
         dollarDe(fractionalDollar: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fraction: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10722,8 +10722,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param decimalDollar Is a decimal number.
-         * @param fraction Is the integer to use in the denominator of a fraction.
+         * @param decimalDollar - Is a decimal number.
+         * @param fraction - Is the integer to use in the denominator of a fraction.
          */
         dollarFr(decimalDollar: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fraction: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10732,12 +10732,12 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param coupon Is the security's annual coupon rate.
-         * @param yld Is the security's annual yield.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param coupon - Is the security's annual coupon rate.
+         * @param yld - Is the security's annual yield.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         duration(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, coupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10746,8 +10746,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value you want to round.
-         * @param significance Is the multiple to which you want to round.
+         * @param number - Is the value you want to round.
+         * @param significance - Is the multiple to which you want to round.
          */
         ecma_Ceiling(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10756,8 +10756,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate Is a serial date number that represents the start date.
-         * @param months Is the number of months before or after startDate.
+         * @param startDate - Is a serial date number that represents the start date.
+         * @param months - Is the number of months before or after startDate.
          */
         edate(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, months: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10766,8 +10766,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param nominalRate Is the nominal interest rate.
-         * @param npery Is the number of compounding periods per year.
+         * @param nominalRate - Is the nominal interest rate.
+         * @param npery - Is the number of compounding periods per year.
          */
         effect(nominalRate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, npery: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10776,8 +10776,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate Is a serial date number that represents the start date.
-         * @param months Is the number of months before or after the startDate.
+         * @param startDate - Is a serial date number that represents the start date.
+         * @param months - Is the number of months before or after the startDate.
          */
         eoMonth(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, months: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10786,8 +10786,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param lowerLimit Is the lower bound for integrating ERF.
-         * @param upperLimit Is the upper bound for integrating ERF.
+         * @param lowerLimit - Is the lower bound for integrating ERF.
+         * @param upperLimit - Is the upper bound for integrating ERF.
          */
         erf(lowerLimit: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, upperLimit?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10823,7 +10823,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param errorVal Is the error value for which you want the identifying number, and can be an actual error value or a reference to a cell containing an error value.
+         * @param errorVal - Is the error value for which you want the identifying number, and can be an actual error value or a reference to a cell containing an error value.
          */
         error_Type(errorVal: string | number | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10832,7 +10832,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value to round.
+         * @param number - Is the value to round.
          */
         even(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10841,8 +10841,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text1 Is the first text string.
-         * @param text2 Is the second text string.
+         * @param text1 - Is the first text string.
+         * @param text2 - Is the second text string.
          */
         exact(text1: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, text2: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -10851,7 +10851,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the exponent applied to the base e. The constant e equals 2.71828182845904, the base of the natural logarithm.
+         * @param number - Is the exponent applied to the base e. The constant e equals 2.71828182845904, the base of the natural logarithm.
          */
         exp(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10861,8 +10861,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param x - Is the value of the function, a nonnegative number.
-         * @param lambda Is the parameter value, a positive number.
-         * @param cumulative Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
+         * @param lambda - Is the parameter value, a positive number.
+         * @param cumulative - Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
          */
         expon_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, lambda: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10871,8 +10871,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param principal Is the present value.
-         * @param schedule Is an array of interest rates to apply.
+         * @param principal - Is the present value.
+         * @param schedule - Is an array of interest rates to apply.
          */
         fvschedule(principal: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, schedule: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10882,9 +10882,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param x - Is the value at which to evaluate the function, a nonnegative number.
-         * @param degFreedom1 Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
-         * @param degFreedom2 Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
-         * @param cumulative Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
+         * @param degFreedom1 - Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param degFreedom2 - Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param cumulative - Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
          */
         f_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10894,8 +10894,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param x - Is the value at which to evaluate the function, a nonnegative number.
-         * @param degFreedom1 Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
-         * @param degFreedom2 Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param degFreedom1 - Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param degFreedom2 - Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
         f_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10904,9 +10904,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability associated with the F cumulative distribution, a number between 0 and 1 inclusive.
-         * @param degFreedom1 Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
-         * @param degFreedom2 Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param probability - Is a probability associated with the F cumulative distribution, a number between 0 and 1 inclusive.
+         * @param degFreedom1 - Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param degFreedom2 - Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
         f_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10915,9 +10915,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability associated with the F cumulative distribution, a number between 0 and 1 inclusive.
-         * @param degFreedom1 Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
-         * @param degFreedom2 Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param probability - Is a probability associated with the F cumulative distribution, a number between 0 and 1 inclusive.
+         * @param degFreedom1 - Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param degFreedom2 - Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
         f_Inv_RT(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10926,7 +10926,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the nonnegative number you want the factorial of.
+         * @param number - Is the nonnegative number you want the factorial of.
          */
         fact(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10935,7 +10935,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value for which to return the double factorial.
+         * @param number - Is the value for which to return the double factorial.
          */
         factDouble(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10951,9 +10951,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param findText Is the text you want to find. Use double quotes (empty text) to match the first character in withinText; wildcard characters not allowed.
-         * @param withinText Is the text containing the text you want to find.
-         * @param startNum Specifies the character at which to start the search. The first character in withinText is character number 1. If omitted, startNum = 1.
+         * @param findText - Is the text you want to find. Use double quotes (empty text) to match the first character in withinText; wildcard characters not allowed.
+         * @param withinText - Is the text containing the text you want to find.
+         * @param startNum - Specifies the character at which to start the search. The first character in withinText is character number 1. If omitted, startNum = 1.
          */
         find(findText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, withinText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10962,9 +10962,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param findText Is the text you want to find.
-         * @param withinText Is the text containing the text you want to find.
-         * @param startNum Specifies the character at which to start the search.
+         * @param findText - Is the text you want to find.
+         * @param withinText - Is the text containing the text you want to find.
+         * @param startNum - Specifies the character at which to start the search.
          */
         findB(findText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, withinText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -10991,9 +10991,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number you want to round and convert to text.
-         * @param decimals Is the number of digits to the right of the decimal point. If omitted, Decimals = 2.
-         * @param noCommas Is a logical value: do not display commas in the returned text = TRUE; do display commas in the returned text = FALSE or omitted.
+         * @param number - Is the number you want to round and convert to text.
+         * @param decimals - Is the number of digits to the right of the decimal point. If omitted, Decimals = 2.
+         * @param noCommas - Is a logical value: do not display commas in the returned text = TRUE; do display commas in the returned text = FALSE or omitted.
          */
         fixed(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, decimals?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, noCommas?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -11002,9 +11002,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value you want to round.
-         * @param significance Is the multiple to which you want to round.
-         * @param mode When given and nonzero this function will round towards zero.
+         * @param number - Is the value you want to round.
+         * @param significance - Is the multiple to which you want to round.
+         * @param mode - When given and nonzero this function will round towards zero.
          */
         floor_Math(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mode?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11013,8 +11013,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the numeric value you want to round.
-         * @param significance Is the multiple to which you want to round.
+         * @param number - Is the numeric value you want to round.
+         * @param significance - Is the multiple to which you want to round.
          */
         floor_Precise(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11023,11 +11023,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
-         * @param nper Is the total number of payment periods in the investment.
-         * @param pmt Is the payment made each period; it cannot change over the life of the investment.
-         * @param pv Is the present value, or the lump-sum amount that a series of future payments is worth now. If omitted, Pv = 0.
-         * @param type Is a value representing the timing of payment: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
+         * @param rate - Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
+         * @param nper - Is the total number of payment periods in the investment.
+         * @param pmt - Is the payment made each period; it cannot change over the life of the investment.
+         * @param pv - Is the present value, or the lump-sum amount that a series of future payments is worth now. If omitted, Pv = 0.
+         * @param type - Is a value representing the timing of payment: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          */
         fv(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11064,9 +11064,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param x - Is the value at which you want to evaluate the distribution, a nonnegative number.
-         * @param alpha Is a parameter to the distribution, a positive number.
-         * @param beta Is a parameter to the distribution, a positive number. If beta = 1, GAMMA.DIST returns the standard gamma distribution.
-         * @param cumulative Is a logical value: return the cumulative distribution function = TRUE; return the probability mass function = FALSE or omitted.
+         * @param alpha - Is a parameter to the distribution, a positive number.
+         * @param beta - Is a parameter to the distribution, a positive number. If beta = 1, GAMMA.DIST returns the standard gamma distribution.
+         * @param cumulative - Is a logical value: return the cumulative distribution function = TRUE; return the probability mass function = FALSE or omitted.
          */
         gamma_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11075,9 +11075,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is the probability associated with the gamma distribution, a number between 0 and 1, inclusive.
-         * @param alpha Is a parameter to the distribution, a positive number.
-         * @param beta Is a parameter to the distribution, a positive number. If beta = 1, GAMMA.INV returns the inverse of the standard gamma distribution.
+         * @param probability - Is the probability associated with the gamma distribution, a number between 0 and 1, inclusive.
+         * @param alpha - Is a parameter to the distribution, a positive number.
+         * @param beta - Is a parameter to the distribution, a positive number. If beta = 1, GAMMA.INV returns the inverse of the standard gamma distribution.
          */
         gamma_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11095,7 +11095,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 values.
+         * @param values - List of parameters, whose elements are 1 to 255 values.
          */
         gcd(...values: Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -11104,8 +11104,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value to test against step.
-         * @param step Is the threshold value.
+         * @param number - Is the value to test against step.
+         * @param step - Is the threshold value.
          */
         geStep(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, step?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11114,7 +11114,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the mean.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the mean.
          */
         geoMean(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -11123,10 +11123,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param lookupValue Is the value to be found in the first row of the table and can be a value, a reference, or a text string.
-         * @param tableArray Is a table of text, numbers, or logical values in which data is looked up. tableArray can be a reference to a range or a range name.
-         * @param rowIndexNum Is the row number in tableArray from which the matching value should be returned. The first row of values in the table is row 1.
-         * @param rangeLookup Is a logical value: to find the closest match in the top row (sorted in ascending order) = TRUE or omitted; find an exact match = FALSE.
+         * @param lookupValue - Is the value to be found in the first row of the table and can be a value, a reference, or a text string.
+         * @param tableArray - Is a table of text, numbers, or logical values in which data is looked up. tableArray can be a reference to a range or a range name.
+         * @param rowIndexNum - Is the row number in tableArray from which the matching value should be returned. The first row of values in the table is row 1.
+         * @param rangeLookup - Is a logical value: to find the closest match in the top row (sorted in ascending order) = TRUE or omitted; find an exact match = FALSE.
          */
         hlookup(lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, tableArray: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>, rowIndexNum: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>, rangeLookup?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | string | boolean>;
         /**
@@ -11135,7 +11135,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the harmonic mean.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the harmonic mean.
          */
         harMean(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -11144,8 +11144,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the hexadecimal number you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the hexadecimal number you want to convert.
+         * @param places - Is the number of characters to use.
          */
         hex2Bin(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11154,7 +11154,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the hexadecimal number you want to convert.
+         * @param number - Is the hexadecimal number you want to convert.
          */
         hex2Dec(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11163,8 +11163,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the hexadecimal number you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the hexadecimal number you want to convert.
+         * @param places - Is the number of characters to use.
          */
         hex2Oct(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11173,7 +11173,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is a number in the date-time code used by Microsoft Excel, or text in time format, such as 16:48:00 or 4:48:00 PM.
+         * @param serialNumber - Is a number in the date-time code used by Microsoft Excel, or text in time format, such as 16:48:00 or 4:48:00 PM.
          */
         hour(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11182,11 +11182,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param sampleS Is the number of successes in the sample.
-         * @param numberSample Is the size of the sample.
-         * @param populationS Is the number of successes in the population.
-         * @param numberPop Is the population size.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
+         * @param sampleS - Is the number of successes in the sample.
+         * @param numberSample - Is the size of the sample.
+         * @param populationS - Is the number of successes in the population.
+         * @param numberPop - Is the population size.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
          */
         hypGeom_Dist(sampleS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberSample: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, populationS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberPop: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11195,8 +11195,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param linkLocation Is the text giving the path and file name to the document to be opened, a hard drive location, UNC address, or URL path.
-         * @param friendlyName Is text or a number that is displayed in the cell. If omitted, the cell displays the linkLocation text.
+         * @param linkLocation - Is the text giving the path and file name to the document to be opened, a hard drive location, UNC address, or URL path.
+         * @param friendlyName - Is text or a number that is displayed in the cell. If omitted, the cell displays the linkLocation text.
          */
         hyperlink(linkLocation: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, friendlyName?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | string | boolean>;
         /**
@@ -11205,8 +11205,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value you want to round.
-         * @param significance Is the optional multiple to which you want to round.
+         * @param number - Is the value you want to round.
+         * @param significance - Is the optional multiple to which you want to round.
          */
         iso_Ceiling(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11215,9 +11215,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param logicalTest Is any value or expression that can be evaluated to TRUE or FALSE.
-         * @param valueIfTrue Is the value that is returned if logicalTest is TRUE. If omitted, TRUE is returned. You can nest up to seven IF functions.
-         * @param valueIfFalse Is the value that is returned if logicalTest is FALSE. If omitted, FALSE is returned.
+         * @param logicalTest - Is any value or expression that can be evaluated to TRUE or FALSE.
+         * @param valueIfTrue - Is the value that is returned if logicalTest is TRUE. If omitted, TRUE is returned. You can nest up to seven IF functions.
+         * @param valueIfFalse - Is the value that is returned if logicalTest is FALSE. If omitted, FALSE is returned.
          */
         if(logicalTest: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, valueIfTrue?: Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>, valueIfFalse?: Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | string | boolean>;
         /**
@@ -11226,7 +11226,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the absolute value.
+         * @param inumber - Is a complex number for which you want the absolute value.
          */
         imAbs(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11235,7 +11235,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the argument.
+         * @param inumber - Is a complex number for which you want the argument.
          */
         imArgument(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11244,7 +11244,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the conjugate.
+         * @param inumber - Is a complex number for which you want the conjugate.
          */
         imConjugate(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11253,7 +11253,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the cosine.
+         * @param inumber - Is a complex number for which you want the cosine.
          */
         imCos(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11262,7 +11262,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the hyperbolic cosine.
+         * @param inumber - Is a complex number for which you want the hyperbolic cosine.
          */
         imCosh(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11271,7 +11271,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the cotangent.
+         * @param inumber - Is a complex number for which you want the cotangent.
          */
         imCot(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11280,7 +11280,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the cosecant.
+         * @param inumber - Is a complex number for which you want the cosecant.
          */
         imCsc(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11289,7 +11289,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the hyperbolic cosecant.
+         * @param inumber - Is a complex number for which you want the hyperbolic cosecant.
          */
         imCsch(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11298,8 +11298,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber1 Is the complex numerator or dividend.
-         * @param inumber2 Is the complex denominator or divisor.
+         * @param inumber1 - Is the complex numerator or dividend.
+         * @param inumber2 - Is the complex denominator or divisor.
          */
         imDiv(inumber1: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, inumber2: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11308,7 +11308,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the exponential.
+         * @param inumber - Is a complex number for which you want the exponential.
          */
         imExp(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11317,7 +11317,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the natural logarithm.
+         * @param inumber - Is a complex number for which you want the natural logarithm.
          */
         imLn(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11326,7 +11326,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the common logarithm.
+         * @param inumber - Is a complex number for which you want the common logarithm.
          */
         imLog10(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11335,7 +11335,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the base-2 logarithm.
+         * @param inumber - Is a complex number for which you want the base-2 logarithm.
          */
         imLog2(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11344,8 +11344,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number you want to raise to a power.
-         * @param number Is the power to which you want to raise the complex number.
+         * @param inumber - Is a complex number you want to raise to a power.
+         * @param number - Is the power to which you want to raise the complex number.
          */
         imPower(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11354,7 +11354,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values Inumber1, Inumber2,... are from 1 to 255 complex numbers to multiply.
+         * @param values - Inumber1, Inumber2,... are from 1 to 255 complex numbers to multiply.
          */
         imProduct(...values: Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -11363,7 +11363,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the real coefficient.
+         * @param inumber - Is a complex number for which you want the real coefficient.
          */
         imReal(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11372,7 +11372,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the secant.
+         * @param inumber - Is a complex number for which you want the secant.
          */
         imSec(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11381,7 +11381,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the hyperbolic secant.
+         * @param inumber - Is a complex number for which you want the hyperbolic secant.
          */
         imSech(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11390,7 +11390,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the sine.
+         * @param inumber - Is a complex number for which you want the sine.
          */
         imSin(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11399,7 +11399,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the hyperbolic sine.
+         * @param inumber - Is a complex number for which you want the hyperbolic sine.
          */
         imSinh(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11408,7 +11408,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the square root.
+         * @param inumber - Is a complex number for which you want the square root.
          */
         imSqrt(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11417,8 +11417,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber1 Is the complex number from which to subtract inumber2.
-         * @param inumber2 Is the complex number to subtract from inumber1.
+         * @param inumber1 - Is the complex number from which to subtract inumber2.
+         * @param inumber2 - Is the complex number to subtract from inumber1.
          */
         imSub(inumber1: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, inumber2: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11427,7 +11427,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are from 1 to 255 complex numbers to add.
+         * @param values - List of parameters, whose elements are from 1 to 255 complex numbers to add.
          */
         imSum(...values: Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -11436,7 +11436,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the tangent.
+         * @param inumber - Is a complex number for which you want the tangent.
          */
         imTan(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11445,7 +11445,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the imaginary coefficient.
+         * @param inumber - Is a complex number for which you want the imaginary coefficient.
          */
         imaginary(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11454,7 +11454,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the real number you want to round down to an integer.
+         * @param number - Is the real number you want to round down to an integer.
          */
         int(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11463,11 +11463,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param investment Is the amount invested in the security.
-         * @param redemption Is the amount to be received at maturity.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param investment - Is the amount invested in the security.
+         * @param redemption - Is the amount to be received at maturity.
+         * @param basis - Is the type of day count basis to use.
          */
         intRate(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, investment: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11476,12 +11476,12 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
-         * @param per Is the period for which you want to find the interest and must be in the range 1 to Nper.
-         * @param nper Is the total number of payment periods in an investment.
-         * @param pv Is the present value, or the lump-sum amount that a series of future payments is worth now.
-         * @param fv Is the future value, or a cash balance you want to attain after the last payment is made. If omitted, Fv = 0.
-         * @param type Is a logical value representing the timing of payment: at the end of the period = 0 or omitted, at the beginning of the period = 1.
+         * @param rate - Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
+         * @param per - Is the period for which you want to find the interest and must be in the range 1 to Nper.
+         * @param nper - Is the total number of payment periods in an investment.
+         * @param pv - Is the present value, or the lump-sum amount that a series of future payments is worth now.
+         * @param fv - Is the future value, or a cash balance you want to attain after the last payment is made. If omitted, Fv = 0.
+         * @param type - Is a logical value representing the timing of payment: at the end of the period = 0 or omitted, at the beginning of the period = 1.
          */
         ipmt(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11490,8 +11490,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values Is an array or a reference to cells that contain numbers for which you want to calculate the internal rate of return.
-         * @param guess Is a number that you guess is close to the result of IRR; 0.1 (10 percent) if omitted.
+         * @param values - Is an array or a reference to cells that contain numbers for which you want to calculate the internal rate of return.
+         * @param guess - Is a number that you guess is close to the result of IRR; 0.1 (10 percent) if omitted.
          */
         irr(values: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, guess?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11500,7 +11500,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
+         * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
         isErr(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -11509,7 +11509,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
+         * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
         isError(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -11518,7 +11518,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value to test.
+         * @param number - Is the value to test.
          */
         isEven(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11527,7 +11527,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param reference Is a reference to the cell you want to test.  Reference can be a cell reference, a formula, or name that refers to a cell.
+         * @param reference - Is a reference to the cell you want to test.  Reference can be a cell reference, a formula, or name that refers to a cell.
          */
         isFormula(reference: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -11536,7 +11536,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
+         * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
         isLogical(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -11545,7 +11545,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
+         * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
         isNA(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -11554,7 +11554,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want tested: a cell; a formula; or a name referring to a cell, formula, or value.
+         * @param value - Is the value you want tested: a cell; a formula; or a name referring to a cell, formula, or value.
          */
         isNonText(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -11563,7 +11563,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
+         * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
         isNumber(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -11572,7 +11572,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value to test.
+         * @param number - Is the value to test.
          */
         isOdd(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11581,7 +11581,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
+         * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
         isText(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -11590,7 +11590,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param date Is the date-time code used by Microsoft Excel for date and time calculation.
+         * @param date - Is the date-time code used by Microsoft Excel for date and time calculation.
          */
         isoWeekNum(date: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11599,10 +11599,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
-         * @param per Period for which you want to find the interest.
-         * @param nper Number of payment periods in an investment.
-         * @param pv Lump sum amount that a series of future payments is right now.
+         * @param rate - Interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
+         * @param per - Period for which you want to find the interest.
+         * @param nper - Number of payment periods in an investment.
+         * @param pv - Lump sum amount that a series of future payments is right now.
          */
         ispmt(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11611,7 +11611,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
+         * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
         isref(value: Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -11620,7 +11620,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the kurtosis.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the kurtosis.
          */
         kurt(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -11629,7 +11629,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or range of data for which you want to determine the k-th largest value.
+         * @param array - Is the array or range of data for which you want to determine the k-th largest value.
          * @param k - Is the position (from the largest) in the array or cell range of the value to return.
          */
         large(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
@@ -11639,7 +11639,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 values for which you want the least common multiple.
+         * @param values - List of parameters, whose elements are 1 to 255 values for which you want the least common multiple.
          */
         lcm(...values: Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -11648,8 +11648,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text string containing the characters you want to extract.
-         * @param numChars Specifies how many characters you want LEFT to extract; 1 if omitted.
+         * @param text - Is the text string containing the characters you want to extract.
+         * @param numChars - Specifies how many characters you want LEFT to extract; 1 if omitted.
          */
         left(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numChars?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -11658,8 +11658,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text string containing the characters you want to extract.
-         * @param numBytes Specifies how many characters you want LEFT to return.
+         * @param text - Is the text string containing the characters you want to extract.
+         * @param numBytes - Specifies how many characters you want LEFT to return.
          */
         leftb(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numBytes?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -11668,7 +11668,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text whose length you want to find. Spaces count as characters.
+         * @param text - Is the text whose length you want to find. Spaces count as characters.
          */
         len(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11677,7 +11677,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text whose length you want to find.
+         * @param text - Is the text whose length you want to find.
          */
         lenb(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11686,7 +11686,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the positive real number for which you want the natural logarithm.
+         * @param number - Is the positive real number for which you want the natural logarithm.
          */
         ln(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11695,8 +11695,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the positive real number for which you want the logarithm.
-         * @param base Is the base of the logarithm; 10 if omitted.
+         * @param number - Is the positive real number for which you want the logarithm.
+         * @param base - Is the base of the logarithm; 10 if omitted.
          */
         log(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, base?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11705,7 +11705,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the positive real number for which you want the base-10 logarithm.
+         * @param number - Is the positive real number for which you want the base-10 logarithm.
          */
         log10(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11715,9 +11715,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param x - Is the value at which to evaluate the function, a positive number.
-         * @param mean Is the mean of ln(x).
-         * @param standardDev Is the standard deviation of ln(x), a positive number.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
+         * @param mean - Is the mean of ln(x).
+         * @param standardDev - Is the standard deviation of ln(x), a positive number.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
          */
         logNorm_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11726,9 +11726,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability associated with the lognormal distribution, a number between 0 and 1, inclusive.
-         * @param mean Is the mean of ln(x).
-         * @param standardDev Is the standard deviation of ln(x), a positive number.
+         * @param probability - Is a probability associated with the lognormal distribution, a number between 0 and 1, inclusive.
+         * @param mean - Is the mean of ln(x).
+         * @param standardDev - Is the standard deviation of ln(x), a positive number.
          */
         logNorm_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11737,9 +11737,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param lookupValue Is a value that LOOKUP searches for in lookupVector and can be a number, text, a logical value, or a name or reference to a value.
-         * @param lookupVector Is a range that contains only one row or one column of text, numbers, or logical values, placed in ascending order.
-         * @param resultVector Is a range that contains only one row or column, the same size as lookupVector.
+         * @param lookupValue - Is a value that LOOKUP searches for in lookupVector and can be a number, text, a logical value, or a name or reference to a value.
+         * @param lookupVector - Is a range that contains only one row or one column of text, numbers, or logical values, placed in ascending order.
+         * @param resultVector - Is a range that contains only one row or column, the same size as lookupVector.
          */
         lookup(lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, lookupVector: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, resultVector?: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | string | boolean>;
         /**
@@ -11748,7 +11748,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text you want to convert to lowercase. Characters in Text that are not letters are not changed.
+         * @param text - Is the text you want to convert to lowercase. Characters in Text that are not letters are not changed.
          */
         lower(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -11757,12 +11757,12 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param coupon Is the security's annual coupon rate.
-         * @param yld Is the security's annual yield.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param coupon - Is the security's annual coupon rate.
+         * @param yld - Is the security's annual yield.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         mduration(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, coupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11771,9 +11771,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values Is an array or a reference to cells that contain numbers that represent a series of payments (negative) and income (positive) at regular periods.
-         * @param financeRate Is the interest rate you pay on the money used in the cash flows.
-         * @param reinvestRate Is the interest rate you receive on the cash flows as you reinvest them.
+         * @param values - Is an array or a reference to cells that contain numbers that represent a series of payments (negative) and income (positive) at regular periods.
+         * @param financeRate - Is the interest rate you pay on the money used in the cash flows.
+         * @param reinvestRate - Is the interest rate you receive on the cash flows as you reinvest them.
          */
         mirr(values: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, financeRate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, reinvestRate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11782,8 +11782,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value to round.
-         * @param multiple Is the multiple to which you want to round number.
+         * @param number - Is the value to round.
+         * @param multiple - Is the multiple to which you want to round number.
          */
         mround(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, multiple: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11792,9 +11792,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param lookupValue Is the value you use to find the value you want in the array, a number, text, or logical value, or a reference to one of these.
-         * @param lookupArray Is a contiguous range of cells containing possible lookup values, an array of values, or a reference to an array.
-         * @param matchType Is a number 1, 0, or -1 indicating which value to return.
+         * @param lookupValue - Is the value you use to find the value you want in the array, a number, text, or logical value, or a reference to one of these.
+         * @param lookupArray - Is a contiguous range of cells containing possible lookup values, an array of values, or a reference to an array.
+         * @param matchType - Is a number 1, 0, or -1 indicating which value to return.
          */
         match(lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, lookupArray: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, matchType?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11803,7 +11803,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the maximum.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the maximum.
          */
         max(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -11812,7 +11812,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the maximum.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the maximum.
          */
         maxA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -11821,7 +11821,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the median.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the median.
          */
         median(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -11830,9 +11830,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text string from which you want to extract the characters.
-         * @param startNum Is the position of the first character you want to extract. The first character in Text is 1.
-         * @param numChars Specifies how many characters to return from Text.
+         * @param text - Is the text string from which you want to extract the characters.
+         * @param startNum - Is the position of the first character you want to extract. The first character in Text is 1.
+         * @param numChars - Specifies how many characters to return from Text.
          */
         mid(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numChars: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -11841,9 +11841,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text string containing the characters you want to extract.
-         * @param startNum Is the position of the first character you want to extract in text.
-         * @param numBytes Specifies how many characters to return from text.
+         * @param text - Is the text string containing the characters you want to extract.
+         * @param startNum - Is the position of the first character you want to extract in text.
+         * @param numBytes - Specifies how many characters to return from text.
          */
         midb(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numBytes: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -11852,7 +11852,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the minimum.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the minimum.
          */
         min(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -11861,7 +11861,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the minimum.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the minimum.
          */
         minA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -11870,7 +11870,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is a number in the date-time code used by Microsoft Excel or text in time format, such as 16:48:00 or 4:48:00 PM.
+         * @param serialNumber - Is a number in the date-time code used by Microsoft Excel or text in time format, such as 16:48:00 or 4:48:00 PM.
          */
         minute(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11879,8 +11879,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number for which you want to find the remainder after the division is performed.
-         * @param divisor Is the number by which you want to divide Number.
+         * @param number - Is the number for which you want to find the remainder after the division is performed.
+         * @param divisor - Is the number by which you want to divide Number.
          */
         mod(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, divisor: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11889,7 +11889,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is a number in the date-time code used by Microsoft Excel.
+         * @param serialNumber - Is a number in the date-time code used by Microsoft Excel.
          */
         month(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11898,7 +11898,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 values for which you want the multinomial.
+         * @param values - List of parameters, whose elements are 1 to 255 values for which you want the multinomial.
          */
         multiNomial(...values: Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -11907,7 +11907,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want converted.
+         * @param value - Is the value you want converted.
          */
         n(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11916,11 +11916,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
-         * @param pmt Is the payment made each period; it cannot change over the life of the investment.
-         * @param pv Is the present value, or the lump-sum amount that a series of future payments is worth now.
-         * @param fv Is the future value, or a cash balance you want to attain after the last payment is made. If omitted, zero is used.
-         * @param type Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
+         * @param rate - Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
+         * @param pmt - Is the payment made each period; it cannot change over the life of the investment.
+         * @param pv - Is the present value, or the lump-sum amount that a series of future payments is worth now.
+         * @param fv - Is the future value, or a cash balance you want to attain after the last payment is made. If omitted, zero is used.
+         * @param type - Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          */
         nper(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11936,10 +11936,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param numberF Is the number of failures.
-         * @param numberS Is the threshold number of successes.
-         * @param probabilityS Is the probability of a success; a number between 0 and 1.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
+         * @param numberF - Is the number of failures.
+         * @param numberS - Is the threshold number of successes.
+         * @param probabilityS - Is the probability of a success; a number between 0 and 1.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
          */
         negBinom_Dist(numberF: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11948,9 +11948,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate Is a serial date number that represents the start date.
-         * @param endDate Is a serial date number that represents the end date.
-         * @param holidays Is an optional set of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
+         * @param startDate - Is a serial date number that represents the start date.
+         * @param endDate - Is a serial date number that represents the end date.
+         * @param holidays - Is an optional set of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
          */
         networkDays(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11959,10 +11959,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate Is a serial date number that represents the start date.
-         * @param endDate Is a serial date number that represents the end date.
-         * @param weekend Is a number or string specifying when weekends occur.
-         * @param holidays Is an optional set of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
+         * @param startDate - Is a serial date number that represents the start date.
+         * @param endDate - Is a serial date number that represents the end date.
+         * @param weekend - Is a number or string specifying when weekends occur.
+         * @param holidays - Is an optional set of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
          */
         networkDays_Intl(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, weekend?: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11971,8 +11971,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param effectRate Is the effective interest rate.
-         * @param npery Is the number of compounding periods per year.
+         * @param effectRate - Is the effective interest rate.
+         * @param npery - Is the number of compounding periods per year.
          */
         nominal(effectRate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, npery: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11982,9 +11982,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param x - Is the value for which you want the distribution.
-         * @param mean Is the arithmetic mean of the distribution.
-         * @param standardDev Is the standard deviation of the distribution, a positive number.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
+         * @param mean - Is the arithmetic mean of the distribution.
+         * @param standardDev - Is the standard deviation of the distribution, a positive number.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
          */
         norm_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -11993,9 +11993,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability corresponding to the normal distribution, a number between 0 and 1 inclusive.
-         * @param mean Is the arithmetic mean of the distribution.
-         * @param standardDev Is the standard deviation of the distribution, a positive number.
+         * @param probability - Is a probability corresponding to the normal distribution, a number between 0 and 1 inclusive.
+         * @param mean - Is the arithmetic mean of the distribution.
+         * @param standardDev - Is the standard deviation of the distribution, a positive number.
          */
         norm_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12005,7 +12005,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param z - Is the value for which you want the distribution.
-         * @param cumulative Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
+         * @param cumulative - Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
          */
         norm_S_Dist(z: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12014,7 +12014,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability corresponding to the normal distribution, a number between 0 and 1 inclusive.
+         * @param probability - Is a probability corresponding to the normal distribution, a number between 0 and 1 inclusive.
          */
         norm_S_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12023,7 +12023,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param logical Is a value or expression that can be evaluated to TRUE or FALSE.
+         * @param logical - Is a value or expression that can be evaluated to TRUE or FALSE.
          */
         not(logical: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -12039,8 +12039,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the rate of discount over the length of one period.
-         * @param values List of parameters, whose elements are 1 to 254 payments and income, equally spaced in time and occurring at the end of each period.
+         * @param rate - Is the rate of discount over the length of one period.
+         * @param values - List of parameters, whose elements are 1 to 254 payments and income, equally spaced in time and occurring at the end of each period.
          */
         npv(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -12049,9 +12049,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the string representing the number you want to convert.
-         * @param decimalSeparator Is the character used as the decimal separator in the string.
-         * @param groupSeparator Is the character used as the group separator in the string.
+         * @param text - Is the string representing the number you want to convert.
+         * @param decimalSeparator - Is the character used as the decimal separator in the string.
+         * @param groupSeparator - Is the character used as the group separator in the string.
          */
         numberValue(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, decimalSeparator?: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, groupSeparator?: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12060,8 +12060,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the octal number you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the octal number you want to convert.
+         * @param places - Is the number of characters to use.
          */
         oct2Bin(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12070,7 +12070,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the octal number you want to convert.
+         * @param number - Is the octal number you want to convert.
          */
         oct2Dec(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12079,8 +12079,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the octal number you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the octal number you want to convert.
+         * @param places - Is the number of characters to use.
          */
         oct2Hex(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12089,7 +12089,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value to round.
+         * @param number - Is the value to round.
          */
         odd(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12098,15 +12098,15 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param issue Is the security's issue date, expressed as a serial date number.
-         * @param firstCoupon Is the security's first coupon date, expressed as a serial date number.
-         * @param rate Is the security's interest rate.
-         * @param yld Is the security's annual yield.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param issue - Is the security's issue date, expressed as a serial date number.
+         * @param firstCoupon - Is the security's first coupon date, expressed as a serial date number.
+         * @param rate - Is the security's interest rate.
+         * @param yld - Is the security's annual yield.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         oddFPrice(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, firstCoupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12115,15 +12115,15 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param issue Is the security's issue date, expressed as a serial date number.
-         * @param firstCoupon Is the security's first coupon date, expressed as a serial date number.
-         * @param rate Is the security's interest rate.
-         * @param pr Is the security's price.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param issue - Is the security's issue date, expressed as a serial date number.
+         * @param firstCoupon - Is the security's first coupon date, expressed as a serial date number.
+         * @param rate - Is the security's interest rate.
+         * @param pr - Is the security's price.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         oddFYield(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, firstCoupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12132,14 +12132,14 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param lastInterest Is the security's last coupon date, expressed as a serial date number.
-         * @param rate Is the security's interest rate.
-         * @param yld Is the security's annual yield.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param lastInterest - Is the security's last coupon date, expressed as a serial date number.
+         * @param rate - Is the security's interest rate.
+         * @param yld - Is the security's annual yield.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         oddLPrice(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, lastInterest: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12148,14 +12148,14 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param lastInterest Is the security's last coupon date, expressed as a serial date number.
-         * @param rate Is the security's interest rate.
-         * @param pr Is the security's price.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param lastInterest - Is the security's last coupon date, expressed as a serial date number.
+         * @param rate - Is the security's interest rate.
+         * @param pr - Is the security's price.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         oddLYield(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, lastInterest: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12164,7 +12164,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 conditions that you want to test that can be either TRUE or FALSE.
+         * @param values - List of parameters, whose elements are 1 to 255 conditions that you want to test that can be either TRUE or FALSE.
          */
         or(...values: Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<boolean>;
         /**
@@ -12173,9 +12173,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate per period.
-         * @param pv Is the present value of the investment.
-         * @param fv Is the desired future value of the investment.
+         * @param rate - Is the interest rate per period.
+         * @param pv - Is the present value of the investment.
+         * @param fv - Is the desired future value of the investment.
          */
         pduration(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12184,9 +12184,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or range of data with numeric values that defines relative standing.
+         * @param array - Is the array or range of data with numeric values that defines relative standing.
          * @param x - Is the value for which you want to know the rank.
-         * @param significance Is an optional value that identifies the number of significant digits for the returned percentage, three digits if omitted (0.xxx%).
+         * @param significance - Is an optional value that identifies the number of significant digits for the returned percentage, three digits if omitted (0.xxx%).
          */
         percentRank_Exc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12195,9 +12195,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or range of data with numeric values that defines relative standing.
+         * @param array - Is the array or range of data with numeric values that defines relative standing.
          * @param x - Is the value for which you want to know the rank.
-         * @param significance Is an optional value that identifies the number of significant digits for the returned percentage, three digits if omitted (0.xxx%).
+         * @param significance - Is an optional value that identifies the number of significant digits for the returned percentage, three digits if omitted (0.xxx%).
          */
         percentRank_Inc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12206,7 +12206,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or range of data that defines relative standing.
+         * @param array - Is the array or range of data that defines relative standing.
          * @param k - Is the percentile value that is between 0 through 1, inclusive.
          */
         percentile_Exc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
@@ -12216,7 +12216,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or range of data that defines relative standing.
+         * @param array - Is the array or range of data that defines relative standing.
          * @param k - Is the percentile value that is between 0 through 1, inclusive.
          */
         percentile_Inc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
@@ -12226,8 +12226,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the total number of objects.
-         * @param numberChosen Is the number of objects in each permutation.
+         * @param number - Is the total number of objects.
+         * @param numberChosen - Is the number of objects in each permutation.
          */
         permut(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12236,8 +12236,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the total number of objects.
-         * @param numberChosen Is the number of objects in each permutation.
+         * @param number - Is the total number of objects.
+         * @param numberChosen - Is the number of objects in each permutation.
          */
         permutationa(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12262,11 +12262,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate per period for the loan. For example, use 6%/4 for quarterly payments at 6% APR.
-         * @param nper Is the total number of payments for the loan.
-         * @param pv Is the present value: the total amount that a series of future payments is worth now.
-         * @param fv Is the future value, or a cash balance you want to attain after the last payment is made, 0 (zero) if omitted.
-         * @param type Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
+         * @param rate - Is the interest rate per period for the loan. For example, use 6%/4 for quarterly payments at 6% APR.
+         * @param nper - Is the total number of payments for the loan.
+         * @param pv - Is the present value: the total amount that a series of future payments is worth now.
+         * @param fv - Is the future value, or a cash balance you want to attain after the last payment is made, 0 (zero) if omitted.
+         * @param type - Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          */
         pmt(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12276,8 +12276,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param x - Is the number of events.
-         * @param mean Is the expected numeric value, a positive number.
-         * @param cumulative Is a logical value: for the cumulative Poisson probability, use TRUE; for the Poisson probability mass function, use FALSE.
+         * @param mean - Is the expected numeric value, a positive number.
+         * @param cumulative - Is a logical value: for the cumulative Poisson probability, use TRUE; for the Poisson probability mass function, use FALSE.
          */
         poisson_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12286,8 +12286,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the base number, any real number.
-         * @param power Is the exponent, to which the base number is raised.
+         * @param number - Is the base number, any real number.
+         * @param power - Is the exponent, to which the base number is raised.
          */
         power(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, power: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12296,12 +12296,12 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
-         * @param per Specifies the period and must be in the range 1 to nper.
-         * @param nper Is the total number of payment periods in an investment.
-         * @param pv Is the present value: the total amount that a series of future payments is worth now.
-         * @param fv Is the future value, or cash balance you want to attain after the last payment is made.
-         * @param type Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
+         * @param rate - Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
+         * @param per - Specifies the period and must be in the range 1 to nper.
+         * @param nper - Is the total number of payment periods in an investment.
+         * @param pv - Is the present value: the total amount that a series of future payments is worth now.
+         * @param fv - Is the future value, or cash balance you want to attain after the last payment is made.
+         * @param type - Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          */
         ppmt(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12310,13 +12310,13 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param rate Is the security's annual coupon rate.
-         * @param yld Is the security's annual yield.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param rate - Is the security's annual coupon rate.
+         * @param yld - Is the security's annual yield.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         price(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12325,11 +12325,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param discount Is the security's discount rate.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param discount - Is the security's discount rate.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param basis - Is the type of day count basis to use.
          */
         priceDisc(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12338,12 +12338,12 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param issue Is the security's issue date, expressed as a serial date number.
-         * @param rate Is the security's interest rate at date of issue.
-         * @param yld Is the security's annual yield.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param issue - Is the security's issue date, expressed as a serial date number.
+         * @param rate - Is the security's interest rate at date of issue.
+         * @param yld - Is the security's annual yield.
+         * @param basis - Is the type of day count basis to use.
          */
         priceMat(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12352,7 +12352,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers, logical values, or text representations of numbers that you want to multiply.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers, logical values, or text representations of numbers that you want to multiply.
          */
         product(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -12361,7 +12361,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is text enclosed in quotation marks, a formula that returns text, or a reference to a cell containing text to partially capitalize.
+         * @param text - Is text enclosed in quotation marks, a formula that returns text, or a reference to a cell containing text to partially capitalize.
          */
         proper(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -12370,11 +12370,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
-         * @param nper Is the total number of payment periods in an investment.
-         * @param pmt Is the payment made each period and cannot change over the life of the investment.
-         * @param fv Is the future value, or a cash balance you want to attain after the last payment is made.
-         * @param type Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
+         * @param rate - Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
+         * @param nper - Is the total number of payment periods in an investment.
+         * @param pmt - Is the payment made each period and cannot change over the life of the investment.
+         * @param fv - Is the future value, or a cash balance you want to attain after the last payment is made.
+         * @param type - Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          */
         pv(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12383,8 +12383,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or cell range of numeric values for which you want the quartile value.
-         * @param quart Is a number: minimum value = 0; 1st quartile = 1; median value = 2; 3rd quartile = 3; maximum value = 4.
+         * @param array - Is the array or cell range of numeric values for which you want the quartile value.
+         * @param quart - Is a number: minimum value = 0; 1st quartile = 1; median value = 2; 3rd quartile = 3; maximum value = 4.
          */
         quartile_Exc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, quart: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12393,8 +12393,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or cell range of numeric values for which you want the quartile value.
-         * @param quart Is a number: minimum value = 0; 1st quartile = 1; median value = 2; 3rd quartile = 3; maximum value = 4.
+         * @param array - Is the array or cell range of numeric values for which you want the quartile value.
+         * @param quart - Is a number: minimum value = 0; 1st quartile = 1; median value = 2; 3rd quartile = 3; maximum value = 4.
          */
         quartile_Inc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, quart: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12403,8 +12403,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param numerator Is the dividend.
-         * @param denominator Is the divisor.
+         * @param numerator - Is the dividend.
+         * @param denominator - Is the divisor.
          */
         quotient(numerator: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, denominator: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12413,7 +12413,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param angle Is an angle in degrees that you want to convert.
+         * @param angle - Is an angle in degrees that you want to convert.
          */
         radians(angle: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12429,8 +12429,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param bottom Is the smallest integer RANDBETWEEN will return.
-         * @param top Is the largest integer RANDBETWEEN will return.
+         * @param bottom - Is the smallest integer RANDBETWEEN will return.
+         * @param top - Is the largest integer RANDBETWEEN will return.
          */
         randBetween(bottom: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, top: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12439,9 +12439,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number for which you want to find the rank.
-         * @param ref Is an array of, or a reference to, a list of numbers. Nonnumeric values are ignored.
-         * @param order Is a number: rank in the list sorted descending = 0 or omitted; rank in the list sorted ascending = any nonzero value.
+         * @param number - Is the number for which you want to find the rank.
+         * @param ref - Is an array of, or a reference to, a list of numbers. Nonnumeric values are ignored.
+         * @param order - Is a number: rank in the list sorted descending = 0 or omitted; rank in the list sorted ascending = any nonzero value.
          */
         rank_Avg(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ref: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, order?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12450,9 +12450,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number for which you want to find the rank.
-         * @param ref Is an array of, or a reference to, a list of numbers. Nonnumeric values are ignored.
-         * @param order Is a number: rank in the list sorted descending = 0 or omitted; rank in the list sorted ascending = any nonzero value.
+         * @param number - Is the number for which you want to find the rank.
+         * @param ref - Is an array of, or a reference to, a list of numbers. Nonnumeric values are ignored.
+         * @param order - Is a number: rank in the list sorted descending = 0 or omitted; rank in the list sorted ascending = any nonzero value.
          */
         rank_Eq(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ref: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, order?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12461,12 +12461,12 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param nper Is the total number of payment periods for the loan or investment.
-         * @param pmt Is the payment made each period and cannot change over the life of the loan or investment.
-         * @param pv Is the present value: the total amount that a series of future payments is worth now.
-         * @param fv Is the future value, or a cash balance you want to attain after the last payment is made. If omitted, uses Fv = 0.
-         * @param type Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
-         * @param guess Is your guess for what the rate will be; if omitted, Guess = 0.1 (10 percent).
+         * @param nper - Is the total number of payment periods for the loan or investment.
+         * @param pmt - Is the payment made each period and cannot change over the life of the loan or investment.
+         * @param pv - Is the present value: the total amount that a series of future payments is worth now.
+         * @param fv - Is the future value, or a cash balance you want to attain after the last payment is made. If omitted, uses Fv = 0.
+         * @param type - Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
+         * @param guess - Is your guess for what the rate will be; if omitted, Guess = 0.1 (10 percent).
          */
         rate(nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, guess?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12475,11 +12475,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param investment Is the amount invested in the security.
-         * @param discount Is the security's discount rate.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param investment - Is the amount invested in the security.
+         * @param discount - Is the security's discount rate.
+         * @param basis - Is the type of day count basis to use.
          */
         received(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, investment: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12488,10 +12488,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param oldText Is text in which you want to replace some characters.
-         * @param startNum Is the position of the character in oldText that you want to replace with newText.
-         * @param numChars Is the number of characters in oldText that you want to replace.
-         * @param newText Is the text that will replace characters in oldText.
+         * @param oldText - Is text in which you want to replace some characters.
+         * @param startNum - Is the position of the character in oldText that you want to replace with newText.
+         * @param numChars - Is the number of characters in oldText that you want to replace.
+         * @param newText - Is the text that will replace characters in oldText.
          */
         replace(oldText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numChars: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, newText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -12500,10 +12500,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param oldText Is text in which you want to replace some characters.
-         * @param startNum Is the position of the character in oldText that you want to replace with newText.
-         * @param numBytes Is the number of characters in oldText that you want to replace with newText.
-         * @param newText Is the text that will replace characters in oldText.
+         * @param oldText - Is text in which you want to replace some characters.
+         * @param startNum - Is the position of the character in oldText that you want to replace with newText.
+         * @param numBytes - Is the number of characters in oldText that you want to replace with newText.
+         * @param newText - Is the text that will replace characters in oldText.
          */
         replaceB(oldText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numBytes: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, newText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -12512,8 +12512,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text you want to repeat.
-         * @param numberTimes Is a positive number specifying the number of times to repeat text.
+         * @param text - Is the text you want to repeat.
+         * @param numberTimes - Is a positive number specifying the number of times to repeat text.
          */
         rept(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberTimes: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -12522,8 +12522,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text string that contains the characters you want to extract.
-         * @param numChars Specifies how many characters you want to extract, 1 if omitted.
+         * @param text - Is the text string that contains the characters you want to extract.
+         * @param numChars - Specifies how many characters you want to extract, 1 if omitted.
          */
         right(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numChars?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -12532,8 +12532,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text string containing the characters you want to extract.
-         * @param numBytes Specifies how many characters you want to extract.
+         * @param text - Is the text string containing the characters you want to extract.
+         * @param numBytes - Specifies how many characters you want to extract.
          */
         rightb(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numBytes?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -12542,8 +12542,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the Arabic numeral you want to convert.
-         * @param form Is the number specifying the type of Roman numeral you want.
+         * @param number - Is the Arabic numeral you want to convert.
+         * @param form - Is the number specifying the type of Roman numeral you want.
          */
         roman(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, form?: boolean | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -12552,8 +12552,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number you want to round.
-         * @param numDigits Is the number of digits to which you want to round. Negative rounds to the left of the decimal point; zero to the nearest integer.
+         * @param number - Is the number you want to round.
+         * @param numDigits - Is the number of digits to which you want to round. Negative rounds to the left of the decimal point; zero to the nearest integer.
          */
         round(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numDigits: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12562,8 +12562,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number that you want rounded down.
-         * @param numDigits Is the number of digits to which you want to round. Negative rounds to the left of the decimal point; zero or omitted, to the nearest integer.
+         * @param number - Is any real number that you want rounded down.
+         * @param numDigits - Is the number of digits to which you want to round. Negative rounds to the left of the decimal point; zero or omitted, to the nearest integer.
          */
         roundDown(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numDigits: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12572,8 +12572,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number that you want rounded up.
-         * @param numDigits Is the number of digits to which you want to round. Negative rounds to the left of the decimal point; zero or omitted, to the nearest integer.
+         * @param number - Is any real number that you want rounded up.
+         * @param numDigits - Is the number of digits to which you want to round. Negative rounds to the left of the decimal point; zero or omitted, to the nearest integer.
          */
         roundUp(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numDigits: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12582,7 +12582,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is an array, an array formula, or a reference to a range of cells for which you want the number of rows.
+         * @param array - Is an array, an array formula, or a reference to a range of cells for which you want the number of rows.
          */
         rows(array: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12591,9 +12591,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param nper Is the number of periods for the investment.
-         * @param pv Is the present value of the investment.
-         * @param fv Is the future value of the investment.
+         * @param nper - Is the number of periods for the investment.
+         * @param pv - Is the present value of the investment.
+         * @param fv - Is the future value of the investment.
          */
         rri(nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12602,7 +12602,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the secant.
+         * @param number - Is the angle in radians for which you want the secant.
          */
         sec(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12611,7 +12611,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the hyperbolic secant.
+         * @param number - Is the angle in radians for which you want the hyperbolic secant.
          */
         sech(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12620,7 +12620,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is a number in the date-time code used by Microsoft Excel or text in time format, such as 16:48:23 or 4:48:47 PM.
+         * @param serialNumber - Is a number in the date-time code used by Microsoft Excel or text in time format, such as 16:48:23 or 4:48:47 PM.
          */
         second(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12632,7 +12632,7 @@ export declare namespace Excel {
          * @param x - Is the input value to the power series.
          * @param n - Is the initial power to which you want to raise x.
          * @param m - Is the step by which to increase n for each term in the series.
-         * @param coefficients Is a set of coefficients by which each successive power of x is multiplied.
+         * @param coefficients - Is a set of coefficients by which each successive power of x is multiplied.
          */
         seriesSum(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, m: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, coefficients: Excel.Range | string | number | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12641,7 +12641,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the name of a sheet or a reference that you want the sheet number of.  If omitted the number of the sheet containing the function is returned.
+         * @param value - Is the name of a sheet or a reference that you want the sheet number of.  If omitted the number of the sheet containing the function is returned.
          */
         sheet(value?: Excel.Range | string | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12650,7 +12650,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param reference Is a reference for which you want to know the number of sheets it contains.  If omitted the number of sheets in the workbook containing the function is returned.
+         * @param reference - Is a reference for which you want to know the number of sheets it contains.  If omitted the number of sheets in the workbook containing the function is returned.
          */
         sheets(reference?: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12659,7 +12659,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number.
+         * @param number - Is any real number.
          */
         sign(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12668,7 +12668,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the sine. Degrees * PI()/180 = radians.
+         * @param number - Is the angle in radians for which you want the sine. Degrees * PI()/180 = radians.
          */
         sin(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12677,7 +12677,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number.
+         * @param number - Is any real number.
          */
         sinh(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12686,7 +12686,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the skewness.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the skewness.
          */
         skew(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -12695,7 +12695,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 254 numbers or names, arrays, or references that contain numbers for which you want the population skewness.
+         * @param values - List of parameters, whose elements are 1 to 254 numbers or names, arrays, or references that contain numbers for which you want the population skewness.
          */
         skew_p(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -12704,9 +12704,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param cost Is the initial cost of the asset.
-         * @param salvage Is the salvage value at the end of the life of the asset.
-         * @param life Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
+         * @param cost - Is the initial cost of the asset.
+         * @param salvage - Is the salvage value at the end of the life of the asset.
+         * @param life - Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
          */
         sln(cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12715,7 +12715,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is an array or range of numerical data for which you want to determine the k-th smallest value.
+         * @param array - Is an array or range of numerical data for which you want to determine the k-th smallest value.
          * @param k - Is the position (from the smallest) in the array or range of the value to return.
          */
         small(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
@@ -12725,7 +12725,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number for which you want the square root.
+         * @param number - Is the number for which you want the square root.
          */
         sqrt(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12734,7 +12734,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number by which p is multiplied.
+         * @param number - Is the number by which p is multiplied.
          */
         sqrtPi(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12743,7 +12743,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 values corresponding to a sample of a population and can be values or names or references to values.
+         * @param values - List of parameters, whose elements are 1 to 255 values corresponding to a sample of a population and can be values or names or references to values.
          */
         stDevA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -12752,7 +12752,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 values corresponding to a population and can be values, names, arrays, or references that contain values.
+         * @param values - List of parameters, whose elements are 1 to 255 values corresponding to a population and can be values, names, arrays, or references that contain values.
          */
         stDevPA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -12761,7 +12761,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers corresponding to a population and can be numbers or references that contain numbers.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers corresponding to a population and can be numbers or references that contain numbers.
          */
         stDev_P(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -12770,7 +12770,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers corresponding to a sample of a population and can be numbers or references that contain numbers.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers corresponding to a sample of a population and can be numbers or references that contain numbers.
          */
         stDev_S(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -12780,8 +12780,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param x - Is the value you want to normalize.
-         * @param mean Is the arithmetic mean of the distribution.
-         * @param standardDev Is the standard deviation of the distribution, a positive number.
+         * @param mean - Is the arithmetic mean of the distribution.
+         * @param standardDev - Is the standard deviation of the distribution, a positive number.
          */
         standardize(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12790,10 +12790,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text or the reference to a cell containing text in which you want to substitute characters.
-         * @param oldText Is the existing text you want to replace. If the case of oldText does not match the case of text, SUBSTITUTE will not replace the text.
-         * @param newText Is the text you want to replace oldText with.
-         * @param instanceNum Specifies which occurrence of oldText you want to replace. If omitted, every instance of oldText is replaced.
+         * @param text - Is the text or the reference to a cell containing text in which you want to substitute characters.
+         * @param oldText - Is the existing text you want to replace. If the case of oldText does not match the case of text, SUBSTITUTE will not replace the text.
+         * @param newText - Is the text you want to replace oldText with.
+         * @param instanceNum - Specifies which occurrence of oldText you want to replace. If omitted, every instance of oldText is replaced.
          */
         substitute(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, oldText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, newText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, instanceNum?: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -12802,8 +12802,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param functionNum Is the number 1 to 11 that specifies the summary function for the subtotal.
-         * @param values List of parameters, whose elements are 1 to 254 ranges or references for which you want the subtotal.
+         * @param functionNum - Is the number 1 to 11 that specifies the summary function for the subtotal.
+         * @param values - List of parameters, whose elements are 1 to 254 ranges or references for which you want the subtotal.
          */
         subtotal(functionNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -12812,7 +12812,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.
          */
         sum(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -12821,9 +12821,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param range Is the range of cells you want evaluated.
-         * @param criteria Is the condition or criteria in the form of a number, expression, or text that defines which cells will be added.
-         * @param sumRange Are the actual cells to sum. If omitted, the cells in range are used.
+         * @param range - Is the range of cells you want evaluated.
+         * @param criteria - Is the condition or criteria in the form of a number, expression, or text that defines which cells will be added.
+         * @param sumRange - Are the actual cells to sum. If omitted, the cells in range are used.
          */
         sumIf(range: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, sumRange?: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12832,8 +12832,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param sumRange Are the actual cells to sum.
-         * @param values List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition or criteria in the form of a number, expression, or text that defines which cells will be added.
+         * @param sumRange - Are the actual cells to sum.
+         * @param values - List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition or criteria in the form of a number, expression, or text that defines which cells will be added.
          */
         sumIfs(sumRange: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>): FunctionResult<number>;
         /**
@@ -12842,7 +12842,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers, arrays, names, or references to arrays for which you want the sum of the squares.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers, arrays, names, or references to arrays for which you want the sum of the squares.
          */
         sumSq(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -12851,10 +12851,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param cost Is the initial cost of the asset.
-         * @param salvage Is the salvage value at the end of the life of the asset.
-         * @param life Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
-         * @param per Is the period and must use the same units as Life.
+         * @param cost - Is the initial cost of the asset.
+         * @param salvage - Is the salvage value at the end of the life of the asset.
+         * @param life - Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
+         * @param per - Is the period and must use the same units as Life.
          */
         syd(cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12863,7 +12863,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value to test.
+         * @param value - Is the value to test.
          */
         t(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -12872,9 +12872,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the Treasury bill's settlement date, expressed as a serial date number.
-         * @param maturity Is the Treasury bill's maturity date, expressed as a serial date number.
-         * @param discount Is the Treasury bill's discount rate.
+         * @param settlement - Is the Treasury bill's settlement date, expressed as a serial date number.
+         * @param maturity - Is the Treasury bill's maturity date, expressed as a serial date number.
+         * @param discount - Is the Treasury bill's discount rate.
          */
         tbillEq(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12883,9 +12883,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the Treasury bill's settlement date, expressed as a serial date number.
-         * @param maturity Is the Treasury bill's maturity date, expressed as a serial date number.
-         * @param discount Is the Treasury bill's discount rate.
+         * @param settlement - Is the Treasury bill's settlement date, expressed as a serial date number.
+         * @param maturity - Is the Treasury bill's maturity date, expressed as a serial date number.
+         * @param discount - Is the Treasury bill's discount rate.
          */
         tbillPrice(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12894,9 +12894,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the Treasury bill's settlement date, expressed as a serial date number.
-         * @param maturity Is the Treasury bill's maturity date, expressed as a serial date number.
-         * @param pr Is the Treasury Bill's price per $100 face value.
+         * @param settlement - Is the Treasury bill's settlement date, expressed as a serial date number.
+         * @param maturity - Is the Treasury bill's maturity date, expressed as a serial date number.
+         * @param pr - Is the Treasury Bill's price per $100 face value.
          */
         tbillYield(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12906,8 +12906,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param x - Is the numeric value at which to evaluate the distribution.
-         * @param degFreedom Is an integer indicating the number of degrees of freedom that characterize the distribution.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
+         * @param degFreedom - Is an integer indicating the number of degrees of freedom that characterize the distribution.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
          */
         t_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12917,7 +12917,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param x - Is the numeric value at which to evaluate the distribution.
-         * @param degFreedom Is an integer indicating the number of degrees of freedom that characterize the distribution.
+         * @param degFreedom - Is an integer indicating the number of degrees of freedom that characterize the distribution.
          */
         t_Dist_2T(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12927,7 +12927,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param x - Is the numeric value at which to evaluate the distribution.
-         * @param degFreedom Is an integer indicating the number of degrees of freedom that characterize the distribution.
+         * @param degFreedom - Is an integer indicating the number of degrees of freedom that characterize the distribution.
          */
         t_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12936,8 +12936,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is the probability associated with the two-tailed Student's t-distribution, a number between 0 and 1 inclusive.
-         * @param degFreedom Is a positive integer indicating the number of degrees of freedom to characterize the distribution.
+         * @param probability - Is the probability associated with the two-tailed Student's t-distribution, a number between 0 and 1 inclusive.
+         * @param degFreedom - Is a positive integer indicating the number of degrees of freedom to characterize the distribution.
          */
         t_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12946,8 +12946,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is the probability associated with the two-tailed Student's t-distribution, a number between 0 and 1 inclusive.
-         * @param degFreedom Is a positive integer indicating the number of degrees of freedom to characterize the distribution.
+         * @param probability - Is the probability associated with the two-tailed Student's t-distribution, a number between 0 and 1 inclusive.
+         * @param degFreedom - Is a positive integer indicating the number of degrees of freedom to characterize the distribution.
          */
         t_Inv_2T(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12956,7 +12956,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the tangent. Degrees * PI()/180 = radians.
+         * @param number - Is the angle in radians for which you want the tangent. Degrees * PI()/180 = radians.
          */
         tan(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12965,7 +12965,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number.
+         * @param number - Is any real number.
          */
         tanh(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12974,8 +12974,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is a number, a formula that evaluates to a numeric value, or a reference to a cell containing a numeric value.
-         * @param formatText Is a number format in text form from the Category box on the Number tab in the Format Cells dialog box (not General).
+         * @param value - Is a number, a formula that evaluates to a numeric value, or a reference to a cell containing a numeric value.
+         * @param formatText - Is a number format in text form from the Category box on the Number tab in the Format Cells dialog box (not General).
          */
         text(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, formatText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -12984,9 +12984,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param hour Is a number from 0 to 23 representing the hour.
-         * @param minute Is a number from 0 to 59 representing the minute.
-         * @param second Is a number from 0 to 59 representing the second.
+         * @param hour - Is a number from 0 to 23 representing the hour.
+         * @param minute - Is a number from 0 to 59 representing the minute.
+         * @param second - Is a number from 0 to 59 representing the second.
          */
         time(hour: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, minute: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, second: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -12995,7 +12995,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param timeText Is a text string that gives a time in any one of the Microsoft Excel time formats (date information in the string is ignored).
+         * @param timeText - Is a text string that gives a time in any one of the Microsoft Excel time formats (date information in the string is ignored).
          */
         timevalue(timeText: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13011,7 +13011,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text from which you want spaces removed.
+         * @param text - Is the text from which you want spaces removed.
          */
         trim(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -13020,8 +13020,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the range or array of values to trim and average.
-         * @param percent Is the fractional number of data points to exclude from the top and bottom of the data set.
+         * @param array - Is the range or array of values to trim and average.
+         * @param percent - Is the fractional number of data points to exclude from the top and bottom of the data set.
          */
         trimMean(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, percent: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13037,8 +13037,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number you want to truncate.
-         * @param numDigits Is a number specifying the precision of the truncation, 0 (zero) if omitted.
+         * @param number - Is the number you want to truncate.
+         * @param numDigits - Is a number specifying the precision of the truncation, 0 (zero) if omitted.
          */
         trunc(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numDigits?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13047,7 +13047,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Can be any value.
+         * @param value - Can be any value.
          */
         type(value: boolean | string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13056,8 +13056,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is a number, a reference to a cell containing a number, or a formula that evaluates to a number.
-         * @param decimals Is the number of digits to the right of the decimal point.
+         * @param number - Is a number, a reference to a cell containing a number, or a formula that evaluates to a number.
+         * @param decimals - Is the number of digits to the right of the decimal point.
          */
         usdollar(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, decimals?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -13066,7 +13066,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the Unicode number representing a character.
+         * @param number - Is the Unicode number representing a character.
          */
         unichar(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -13075,7 +13075,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the character that you want the Unicode value of.
+         * @param text - Is the character that you want the Unicode value of.
          */
         unicode(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13084,7 +13084,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text you want converted to uppercase, a reference or a text string.
+         * @param text - Is the text you want converted to uppercase, a reference or a text string.
          */
         upper(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -13093,10 +13093,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param lookupValue Is the value to be found in the first column of the table, and can be a value, a reference, or a text string.
-         * @param tableArray Is a table of text, numbers, or logical values, in which data is retrieved. tableArray can be a reference to a range or a range name.
-         * @param colIndexNum Is the column number in tableArray from which the matching value should be returned. The first column of values in the table is column 1.
-         * @param rangeLookup Is a logical value: to find the closest match in the first column (sorted in ascending order) = TRUE or omitted; find an exact match = FALSE.
+         * @param lookupValue - Is the value to be found in the first column of the table, and can be a value, a reference, or a text string.
+         * @param tableArray - Is a table of text, numbers, or logical values, in which data is retrieved. tableArray can be a reference to a range or a range name.
+         * @param colIndexNum - Is the column number in tableArray from which the matching value should be returned. The first column of values in the table is column 1.
+         * @param rangeLookup - Is a logical value: to find the closest match in the first column (sorted in ascending order) = TRUE or omitted; find an exact match = FALSE.
          */
         vlookup(lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, tableArray: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>, colIndexNum: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>, rangeLookup?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | string | boolean>;
         /**
@@ -13105,7 +13105,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text enclosed in quotation marks or a reference to a cell containing the text you want to convert.
+         * @param text - Is the text enclosed in quotation marks or a reference to a cell containing the text you want to convert.
          */
         value(text: string | boolean | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13114,7 +13114,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 value arguments corresponding to a sample of a population.
+         * @param values - List of parameters, whose elements are 1 to 255 value arguments corresponding to a sample of a population.
          */
         varA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -13123,7 +13123,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 value arguments corresponding to a population.
+         * @param values - List of parameters, whose elements are 1 to 255 value arguments corresponding to a population.
          */
         varPA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -13132,7 +13132,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a population.
+         * @param values - List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a population.
          */
         var_P(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -13141,7 +13141,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a sample of a population.
+         * @param values - List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a sample of a population.
          */
         var_S(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -13150,13 +13150,13 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param cost Is the initial cost of the asset.
-         * @param salvage Is the salvage value at the end of the life of the asset.
-         * @param life Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
-         * @param startPeriod Is the starting period for which you want to calculate the depreciation, in the same units as Life.
-         * @param endPeriod Is the ending period for which you want to calculate the depreciation, in the same units as Life.
-         * @param factor Is the rate at which the balance declines, 2 (double-declining balance) if omitted.
-         * @param noSwitch Switch to straight-line depreciation when depreciation is greater than the declining balance = FALSE or omitted; do not switch = TRUE.
+         * @param cost - Is the initial cost of the asset.
+         * @param salvage - Is the salvage value at the end of the life of the asset.
+         * @param life - Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
+         * @param startPeriod - Is the starting period for which you want to calculate the depreciation, in the same units as Life.
+         * @param endPeriod - Is the ending period for which you want to calculate the depreciation, in the same units as Life.
+         * @param factor - Is the rate at which the balance declines, 2 (double-declining balance) if omitted.
+         * @param noSwitch - Switch to straight-line depreciation when depreciation is greater than the declining balance = FALSE or omitted; do not switch = TRUE.
          */
         vdb(cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startPeriod: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endPeriod: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, factor?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, noSwitch?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13165,8 +13165,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is the date-time code used by Microsoft Excel for date and time calculation.
-         * @param returnType Is a number (1 or 2) that determines the type of the return value.
+         * @param serialNumber - Is the date-time code used by Microsoft Excel for date and time calculation.
+         * @param returnType - Is a number (1 or 2) that determines the type of the return value.
          */
         weekNum(serialNumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, returnType?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13175,8 +13175,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is a number that represents a date.
-         * @param returnType Is a number: for Sunday=1 through Saturday=7, use 1; for Monday=1 through Sunday=7, use 2; for Monday=0 through Sunday=6, use 3.
+         * @param serialNumber - Is a number that represents a date.
+         * @param returnType - Is a number: for Sunday=1 through Saturday=7, use 1; for Monday=1 through Sunday=7, use 2; for Monday=0 through Sunday=6, use 3.
          */
         weekday(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, returnType?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13186,9 +13186,9 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.2]
          *
          * @param x - Is the value at which to evaluate the function, a nonnegative number.
-         * @param alpha Is a parameter to the distribution, a positive number.
-         * @param beta Is a parameter to the distribution, a positive number.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
+         * @param alpha - Is a parameter to the distribution, a positive number.
+         * @param beta - Is a parameter to the distribution, a positive number.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
          */
         weibull_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13197,9 +13197,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate Is a serial date number that represents the start date.
-         * @param days Is the number of nonweekend and non-holiday days before or after startDate.
-         * @param holidays Is an optional array of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
+         * @param startDate - Is a serial date number that represents the start date.
+         * @param days - Is the number of nonweekend and non-holiday days before or after startDate.
+         * @param holidays - Is an optional array of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
          */
         workDay(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, days: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13208,10 +13208,10 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate Is a serial date number that represents the start date.
-         * @param days Is the number of nonweekend and non-holiday days before or after startDate.
-         * @param weekend Is a number or string specifying when weekends occur.
-         * @param holidays Is an optional array of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
+         * @param startDate - Is a serial date number that represents the start date.
+         * @param days - Is the number of nonweekend and non-holiday days before or after startDate.
+         * @param weekend - Is a number or string specifying when weekends occur.
+         * @param holidays - Is an optional array of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
          */
         workDay_Intl(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, days: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, weekend?: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13220,9 +13220,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values Is a series of cash flows that correspond to a schedule of payments in dates.
-         * @param dates Is a schedule of payment dates that corresponds to the cash flow payments.
-         * @param guess Is a number that you guess is close to the result of XIRR.
+         * @param values - Is a series of cash flows that correspond to a schedule of payments in dates.
+         * @param dates - Is a schedule of payment dates that corresponds to the cash flow payments.
+         * @param guess - Is a number that you guess is close to the result of XIRR.
          */
         xirr(values: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>, dates: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>, guess?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13231,9 +13231,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the discount rate to apply to the cash flows.
-         * @param values Is a series of cash flows that correspond to a schedule of payments in dates.
-         * @param dates Is a schedule of payment dates that corresponds to the cash flow payments.
+         * @param rate - Is the discount rate to apply to the cash flows.
+         * @param values - Is a series of cash flows that correspond to a schedule of payments in dates.
+         * @param dates - Is a schedule of payment dates that corresponds to the cash flow payments.
          */
         xnpv(rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, values: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>, dates: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13242,7 +13242,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 254 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
+         * @param values - List of parameters, whose elements are 1 to 254 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
          */
         xor(...values: Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<boolean>;
         /**
@@ -13251,7 +13251,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is a number in the date-time code used by Microsoft Excel.
+         * @param serialNumber - Is a number in the date-time code used by Microsoft Excel.
          */
         year(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13260,9 +13260,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate Is a serial date number that represents the start date.
-         * @param endDate Is a serial date number that represents the end date.
-         * @param basis Is the type of day count basis to use.
+         * @param startDate - Is a serial date number that represents the start date.
+         * @param endDate - Is a serial date number that represents the end date.
+         * @param basis - Is the type of day count basis to use.
          */
         yearFrac(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13271,13 +13271,13 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param rate Is the security's annual coupon rate.
-         * @param pr Is the security's price per $100 face value.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param rate - Is the security's annual coupon rate.
+         * @param pr - Is the security's price per $100 face value.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         yield(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13286,11 +13286,11 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param pr Is the security's price per $100 face value.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param pr - Is the security's price per $100 face value.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param basis - Is the type of day count basis to use.
          */
         yieldDisc(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13299,12 +13299,12 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param issue Is the security's issue date, expressed as a serial date number.
-         * @param rate Is the security's interest rate at date of issue.
-         * @param pr Is the security's price per $100 face value.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param issue - Is the security's issue date, expressed as a serial date number.
+         * @param rate - Is the security's interest rate at date of issue.
+         * @param pr - Is the security's price per $100 face value.
+         * @param basis - Is the type of day count basis to use.
          */
         yieldMat(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -13313,9 +13313,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or range of data against which to test X.
+         * @param array - Is the array or range of data against which to test X.
          * @param x - Is the value to test.
-         * @param sigma Is the population (known) standard deviation. If omitted, the sample standard deviation is used.
+         * @param sigma - Is the population (known) standard deviation. If omitted, the sample standard deviation is used.
          */
         z_Test(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, sigma?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         toJSON(): {};
@@ -14884,7 +14884,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation Optional. The range location can be 'Whole', 'Start', 'End', 'After' or 'Content'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After' or 'Content'.
          */
         getRange(rangeLocation?: string): Word.Range;
         /**
@@ -14893,8 +14893,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param breakType Required. The break type to add to the body.
-         * @param insertLocation Required. The value can be 'Start' or 'End'.
+         * @param breakType - Required. The break type to add to the body.
+         * @param insertLocation - Required. The value can be 'Start' or 'End'.
          */
         insertBreak(breakType: string, insertLocation: string): void;
         /**
@@ -14910,8 +14910,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param base64File Required. The base64 encoded content of a .docx file.
-         * @param insertLocation Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param base64File - Required. The base64 encoded content of a .docx file.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
          */
         insertFileFromBase64(base64File: string, insertLocation: string): Word.Range;
         /**
@@ -14920,8 +14920,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param html Required. The HTML to be inserted in the document.
-         * @param insertLocation Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param html - Required. The HTML to be inserted in the document.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
          */
         insertHtml(html: string, insertLocation: string): Word.Range;
         /**
@@ -14930,8 +14930,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          *
-         * @param base64EncodedImage Required. The base64 encoded image to be inserted in the body.
-         * @param insertLocation Required. The value can be 'Start' or 'End'.
+         * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.
+         * @param insertLocation - Required. The value can be 'Start' or 'End'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: string): Word.InlinePicture;
         /**
@@ -14940,8 +14940,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param ooxml Required. The OOXML to be inserted.
-         * @param insertLocation Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param ooxml - Required. The OOXML to be inserted.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
          */
         insertOoxml(ooxml: string, insertLocation: string): Word.Range;
         /**
@@ -14950,8 +14950,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param paragraphText Required. The paragraph text to be inserted.
-         * @param insertLocation Required. The value can be 'Start' or 'End'.
+         * @param paragraphText - Required. The paragraph text to be inserted.
+         * @param insertLocation - Required. The value can be 'Start' or 'End'.
          */
         insertParagraph(paragraphText: string, insertLocation: string): Word.Paragraph;
         /**
@@ -14960,10 +14960,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rowCount Required. The number of rows in the table.
-         * @param columnCount Required. The number of columns in the table.
-         * @param insertLocation Required. The value can be 'Start' or 'End'.
-         * @param values Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+         * @param rowCount - Required. The number of rows in the table.
+         * @param columnCount - Required. The number of columns in the table.
+         * @param insertLocation - Required. The value can be 'Start' or 'End'.
+         * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocation: string, values?: Array<Array<string>>): Word.Table;
         /**
@@ -14972,8 +14972,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param text Required. Text to be inserted.
-         * @param insertLocation Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param text - Required. Text to be inserted.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
          */
         insertText(text: string, insertLocation: string): Word.Range;
         /**
@@ -14982,8 +14982,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param searchText Required. The search text.
-         * @param searchOptions Optional. Options for the search.
+         * @param searchText - Required. The search text.
+         * @param searchOptions - Optional. Options for the search.
          */
         search(searchText: string, searchOptions?: Word.SearchOptions | {
             ignorePunct?: boolean;
@@ -15000,7 +15000,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
          */
         select(selectionMode?: string): void;
         /**
@@ -15241,7 +15241,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param keepContent Required. Indicates whether the content should be deleted with the content control. If keepContent is set to true, the content is not deleted.
+         * @param keepContent - Required. Indicates whether the content should be deleted with the content control. If keepContent is set to true, the content is not deleted.
          */
         delete(keepContent: boolean): void;
         /**
@@ -15264,7 +15264,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation Optional. The range location can be 'Whole', 'Before', 'Start', 'End', 'After' or 'Content'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Before', 'Start', 'End', 'After' or 'Content'.
          */
         getRange(rangeLocation?: string): Word.Range;
         /**
@@ -15273,8 +15273,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param endingMarks Required. The punctuation marks and/or other ending marks as an array of strings.
-         * @param trimSpacing Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
+         * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
          */
         getTextRanges(endingMarks: Array<string>, trimSpacing?: boolean): Word.RangeCollection;
         /**
@@ -15283,8 +15283,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param breakType Required. Type of break.
-         * @param insertLocation Required. The value can be 'Start', 'End', 'Before' or 'After'.
+         * @param breakType - Required. Type of break.
+         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before' or 'After'.
          */
         insertBreak(breakType: string, insertLocation: string): void;
         /**
@@ -15293,8 +15293,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param base64File Required. The base64 encoded content of a .docx file.
-         * @param insertLocation Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param base64File - Required. The base64 encoded content of a .docx file.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertFileFromBase64(base64File: string, insertLocation: string): Word.Range;
         /**
@@ -15303,8 +15303,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param html Required. The HTML to be inserted in to the content control.
-         * @param insertLocation Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param html - Required. The HTML to be inserted in to the content control.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertHtml(html: string, insertLocation: string): Word.Range;
         /**
@@ -15313,8 +15313,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          *
-         * @param base64EncodedImage Required. The base64 encoded image to be inserted in the content control.
-         * @param insertLocation Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: string): Word.InlinePicture;
         /**
@@ -15323,8 +15323,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param ooxml Required. The OOXML to be inserted in to the content control.
-         * @param insertLocation Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param ooxml - Required. The OOXML to be inserted in to the content control.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertOoxml(ooxml: string, insertLocation: string): Word.Range;
         /**
@@ -15333,8 +15333,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param paragraphText Required. The paragrph text to be inserted.
-         * @param insertLocation Required. The value can be 'Start', 'End', 'Before' or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * @param paragraphText - Required. The paragrph text to be inserted.
+         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before' or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
          */
         insertParagraph(paragraphText: string, insertLocation: string): Word.Paragraph;
         /**
@@ -15343,10 +15343,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rowCount Required. The number of rows in the table.
-         * @param columnCount Required. The number of columns in the table.
-         * @param insertLocation Required. The value can be 'Start', 'End', 'Before' or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
-         * @param values Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+         * @param rowCount - Required. The number of rows in the table.
+         * @param columnCount - Required. The number of columns in the table.
+         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before' or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
+         * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocation: string, values?: Array<Array<string>>): Word.Table;
         /**
@@ -15355,8 +15355,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param text Required. The text to be inserted in to the content control.
-         * @param insertLocation Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
+         * @param text - Required. The text to be inserted in to the content control.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
          */
         insertText(text: string, insertLocation: string): Word.Range;
         /**
@@ -15365,8 +15365,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param searchText Required. The search text.
-         * @param searchOptions Optional. Options for the search.
+         * @param searchText - Required. The search text.
+         * @param searchOptions - Optional. Options for the search.
          */
         search(searchText: string, searchOptions?: Word.SearchOptions | {
             ignorePunct?: boolean;
@@ -15383,7 +15383,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
          */
         select(selectionMode?: string): void;
         /**
@@ -15392,10 +15392,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param delimiters Required. The delimiters as an array of strings.
-         * @param multiParagraphs Optional. Indicates whether a returned child range can cover multiple paragraphs. Default is false which indicates that the paragraph boundaries are also used as delimiters.
-         * @param trimDelimiters Optional. Indicates whether to trim delimiters from the ranges in the range collection. Default is false which indicates that the delimiters are included in the ranges returned in the range collection.
-         * @param trimSpacing Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
+         * @param delimiters - Required. The delimiters as an array of strings.
+         * @param multiParagraphs - Optional. Indicates whether a returned child range can cover multiple paragraphs. Default is false which indicates that the paragraph boundaries are also used as delimiters.
+         * @param trimDelimiters - Optional. Indicates whether to trim delimiters from the ranges in the range collection. Default is false which indicates that the delimiters are included in the ranges returned in the range collection.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
          */
         split(delimiters: Array<string>, multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean): Word.RangeCollection;
         /**
@@ -15443,7 +15443,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param id Required. A content control identifier.
+         * @param id - Required. A content control identifier.
          */
         getById(id: number): Word.ContentControl;
         /**
@@ -15452,7 +15452,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param id Required. A content control identifier.
+         * @param id - Required. A content control identifier.
          */
         getByIdOrNullObject(id: number): Word.ContentControl;
         /**
@@ -15461,7 +15461,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param tag Required. A tag set on a content control.
+         * @param tag - Required. A tag set on a content control.
          */
         getByTag(tag: string): Word.ContentControlCollection;
         /**
@@ -15470,7 +15470,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param title Required. The title of a content control.
+         * @param title - Required. The title of a content control.
          */
         getByTitle(title: string): Word.ContentControlCollection;
         /**
@@ -15479,7 +15479,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param types Required. An array of content control types and/or subtypes.
+         * @param types - Required. An array of content control types and/or subtypes.
          */
         getByTypes(types: Array<string>): Word.ContentControlCollection;
         /**
@@ -15502,7 +15502,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param index The index.
+         * @param index - The index.
          */
         getItem(index: number): Word.ContentControl;
         /**
@@ -15596,8 +15596,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param key Required. The custom property's key, which is case-insensitive.
-         * @param value Required. The custom property's value.
+         * @param key - Required. The custom property's key, which is case-insensitive.
+         * @param value - Required. The custom property's value.
          */
         add(key: string, value: any): Word.CustomProperty;
         /**
@@ -15620,7 +15620,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param key The key that identifies the custom property object.
+         * @param key - The key that identifies the custom property object.
          */
         getItem(key: string): Word.CustomProperty;
         /**
@@ -15629,7 +15629,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param key Required. The key that identifies the custom property object.
+         * @param key - Required. The key that identifies the custom property object.
          */
         getItemOrNullObject(key: string): Word.CustomProperty;
         /**
@@ -16163,7 +16163,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation Optional. The range location can be 'Whole', 'Start' or 'End'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start' or 'End'.
          */
         getRange(rangeLocation?: string): Word.Range;
         /**
@@ -16172,8 +16172,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          *
-         * @param breakType Required. The break type to add.
-         * @param insertLocation Required. The value can be 'Before' or 'After'.
+         * @param breakType - Required. The break type to add.
+         * @param insertLocation - Required. The value can be 'Before' or 'After'.
          */
         insertBreak(breakType: string, insertLocation: string): void;
         /**
@@ -16189,8 +16189,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          *
-         * @param base64File Required. The base64 encoded content of a .docx file.
-         * @param insertLocation Required. The value can be 'Before' or 'After'.
+         * @param base64File - Required. The base64 encoded content of a .docx file.
+         * @param insertLocation - Required. The value can be 'Before' or 'After'.
          */
         insertFileFromBase64(base64File: string, insertLocation: string): Word.Range;
         /**
@@ -16199,8 +16199,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          *
-         * @param html Required. The HTML to be inserted.
-         * @param insertLocation Required. The value can be 'Before' or 'After'.
+         * @param html - Required. The HTML to be inserted.
+         * @param insertLocation - Required. The value can be 'Before' or 'After'.
          */
         insertHtml(html: string, insertLocation: string): Word.Range;
         /**
@@ -16209,8 +16209,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          *
-         * @param base64EncodedImage Required. The base64 encoded image to be inserted.
-         * @param insertLocation Required. The value can be 'Replace', 'Before' or 'After'.
+         * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
+         * @param insertLocation - Required. The value can be 'Replace', 'Before' or 'After'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: string): Word.InlinePicture;
         /**
@@ -16219,8 +16219,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          *
-         * @param ooxml Required. The OOXML to be inserted.
-         * @param insertLocation Required. The value can be 'Before' or 'After'.
+         * @param ooxml - Required. The OOXML to be inserted.
+         * @param insertLocation - Required. The value can be 'Before' or 'After'.
          */
         insertOoxml(ooxml: string, insertLocation: string): Word.Range;
         /**
@@ -16229,8 +16229,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          *
-         * @param paragraphText Required. The paragraph text to be inserted.
-         * @param insertLocation Required. The value can be 'Before' or 'After'.
+         * @param paragraphText - Required. The paragraph text to be inserted.
+         * @param insertLocation - Required. The value can be 'Before' or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocation: string): Word.Paragraph;
         /**
@@ -16239,8 +16239,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          *
-         * @param text Required. Text to be inserted.
-         * @param insertLocation Required. The value can be 'Before' or 'After'.
+         * @param text - Required. Text to be inserted.
+         * @param insertLocation - Required. The value can be 'Before' or 'After'.
          */
         insertText(text: string, insertLocation: string): Word.Range;
         /**
@@ -16249,7 +16249,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          *
-         * @param selectionMode Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
          */
         select(selectionMode?: string): void;
         /**
@@ -16351,7 +16351,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param level Required. The level in the list.
+         * @param level - Required. The level in the list.
          */
         getLevelParagraphs(level: number): Word.ParagraphCollection;
         /**
@@ -16360,7 +16360,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param level Required. The level in the list.
+         * @param level - Required. The level in the list.
          */
         getLevelString(level: number): OfficeExtension.ClientResult<string>;
         /**
@@ -16369,8 +16369,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param paragraphText Required. The paragraph text to be inserted.
-         * @param insertLocation Required. The value can be 'Start', 'End', 'Before' or 'After'.
+         * @param paragraphText - Required. The paragraph text to be inserted.
+         * @param insertLocation - Required. The value can be 'Start', 'End', 'Before' or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocation: string): Word.Paragraph;
         /**
@@ -16379,8 +16379,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param level Required. The level in the list.
-         * @param alignment Required. The level alignment that can be 'left', 'centered' or 'right'.
+         * @param level - Required. The level in the list.
+         * @param alignment - Required. The level alignment that can be 'left', 'centered' or 'right'.
          */
         setLevelAlignment(level: number, alignment: string): void;
         /**
@@ -16389,10 +16389,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param level Required. The level in the list.
-         * @param listBullet Required. The bullet.
-         * @param charCode Optional. The bullet character's code value. Used only if the bullet is 'Custom'.
-         * @param fontName Optional. The bullet's font name. Used only if the bullet is 'Custom'.
+         * @param level - Required. The level in the list.
+         * @param listBullet - Required. The bullet.
+         * @param charCode - Optional. The bullet character's code value. Used only if the bullet is 'Custom'.
+         * @param fontName - Optional. The bullet's font name. Used only if the bullet is 'Custom'.
          */
         setLevelBullet(level: number, listBullet: string, charCode?: number, fontName?: string): void;
         /**
@@ -16401,9 +16401,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param level Required. The level in the list.
-         * @param textIndent Required. The text indent in points. It is the same as paragraph left indent.
-         * @param textIndent Required. The relative indent, in points, of the bullet, number or picture. It is the same as paragraph first line indent.
+         * @param level - Required. The level in the list.
+         * @param textIndent - Required. The text indent in points. It is the same as paragraph left indent.
+         * @param textIndent - Required. The relative indent, in points, of the bullet, number or picture. It is the same as paragraph first line indent.
          */
         setLevelIndents(level: number, textIndent: number, bulletNumberPictureIndent: number): void;
         /**
@@ -16412,9 +16412,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param level Required. The level in the list.
-         * @param listNumbering Required. The ordinal format.
-         * @param formatString Optional. The numbering string format defined as an array of strings and/or integers. Each integer is a level of number type that is higher than or equal to this level. For example, an array of ["(", level - 1, ".", level, ")"] can define the format of "(2.c)", where 2 is the parent's item number and c is this level's item number.
+         * @param level - Required. The level in the list.
+         * @param listNumbering - Required. The ordinal format.
+         * @param formatString - Optional. The numbering string format defined as an array of strings and/or integers. Each integer is a level of number type that is higher than or equal to this level. For example, an array of ["(", level - 1, ".", level, ")"] can define the format of "(2.c)", where 2 is the parent's item number and c is this level's item number.
          */
         setLevelNumbering(level: number, listNumbering: string, formatString?: Array<any>): void;
         /**
@@ -16423,8 +16423,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param level Required. The level in the list.
-         * @param startingNumber Required. The number to start with.
+         * @param level - Required. The level in the list.
+         * @param startingNumber - Required. The number to start with.
          */
         setLevelStartingNumber(level: number, startingNumber: number): void;
         /**
@@ -16460,7 +16460,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param id Required. A list identifier.
+         * @param id - Required. A list identifier.
          */
         getById(id: number): Word.List;
         /**
@@ -16469,7 +16469,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param id Required. A list identifier.
+         * @param id - Required. A list identifier.
          */
         getByIdOrNullObject(id: number): Word.List;
         /**
@@ -16492,7 +16492,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param index A number that identifies the index location of a list object.
+         * @param index - A number that identifies the index location of a list object.
          */
         getItem(index: number): Word.List;
         /**
@@ -16552,7 +16552,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param parentOnly Optional. Specified only the list item's parent will be returned. The default is false that specifies to get the lowest ancestor.
+         * @param parentOnly - Optional. Specified only the list item's parent will be returned. The default is false that specifies to get the lowest ancestor.
          */
         getAncestor(parentOnly?: boolean): Word.Paragraph;
         /**
@@ -16561,7 +16561,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param parentOnly Optional. Specified only the list item's parent will be returned. The default is false that specifies to get the lowest ancestor.
+         * @param parentOnly - Optional. Specified only the list item's parent will be returned. The default is false that specifies to get the lowest ancestor.
          */
         getAncestorOrNullObject(parentOnly?: boolean): Word.Paragraph;
         /**
@@ -16570,7 +16570,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param directChildrenOnly Optional. Specified only the list item's direct children will be returned. The default is false that indicates to get all descendant items.
+         * @param directChildrenOnly - Optional. Specified only the list item's direct children will be returned. The default is false that indicates to get all descendant items.
          */
         getDescendants(directChildrenOnly?: boolean): Word.ParagraphCollection;
         /**
@@ -16823,8 +16823,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param listId Required. The ID of an existing list.
-         * @param level Required. The level in the list.
+         * @param listId - Required. The ID of an existing list.
+         * @param level - Required. The level in the list.
          */
         attachToList(listId: number, level: number): Word.List;
         /**
@@ -16896,7 +16896,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation Optional. The range location can be 'Whole', 'Start', 'End', 'After' or 'Content'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After' or 'Content'.
          */
         getRange(rangeLocation?: string): Word.Range;
         /**
@@ -16905,8 +16905,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param endingMarks Required. The punctuation marks and/or other ending marks as an array of strings.
-         * @param trimSpacing Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
+         * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
          */
         getTextRanges(endingMarks: Array<string>, trimSpacing?: boolean): Word.RangeCollection;
         /**
@@ -16915,8 +16915,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param breakType Required. The break type to add to the document.
-         * @param insertLocation Required. The value can be 'Before' or 'After'.
+         * @param breakType - Required. The break type to add to the document.
+         * @param insertLocation - Required. The value can be 'Before' or 'After'.
          */
         insertBreak(breakType: string, insertLocation: string): void;
         /**
@@ -16932,8 +16932,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param base64File Required. The base64 encoded content of a .docx file.
-         * @param insertLocation Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param base64File - Required. The base64 encoded content of a .docx file.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
          */
         insertFileFromBase64(base64File: string, insertLocation: string): Word.Range;
         /**
@@ -16942,8 +16942,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param html Required. The HTML to be inserted in the paragraph.
-         * @param insertLocation Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param html - Required. The HTML to be inserted in the paragraph.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
          */
         insertHtml(html: string, insertLocation: string): Word.Range;
         /**
@@ -16952,8 +16952,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param base64EncodedImage Required. The base64 encoded image to be inserted.
-         * @param insertLocation Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: string): Word.InlinePicture;
         /**
@@ -16962,8 +16962,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param ooxml Required. The OOXML to be inserted in the paragraph.
-         * @param insertLocation Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param ooxml - Required. The OOXML to be inserted in the paragraph.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
          */
         insertOoxml(ooxml: string, insertLocation: string): Word.Range;
         /**
@@ -16972,8 +16972,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param paragraphText Required. The paragraph text to be inserted.
-         * @param insertLocation Required. The value can be 'Before' or 'After'.
+         * @param paragraphText - Required. The paragraph text to be inserted.
+         * @param insertLocation - Required. The value can be 'Before' or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocation: string): Word.Paragraph;
         /**
@@ -16982,10 +16982,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rowCount Required. The number of rows in the table.
-         * @param columnCount Required. The number of columns in the table.
-         * @param insertLocation Required. The value can be 'Before' or 'After'.
-         * @param values Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+         * @param rowCount - Required. The number of rows in the table.
+         * @param columnCount - Required. The number of columns in the table.
+         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocation: string, values?: Array<Array<string>>): Word.Table;
         /**
@@ -16994,8 +16994,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param text Required. Text to be inserted.
-         * @param insertLocation Required. The value can be 'Replace', 'Start' or 'End'.
+         * @param text - Required. Text to be inserted.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start' or 'End'.
          */
         insertText(text: string, insertLocation: string): Word.Range;
         /**
@@ -17004,8 +17004,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param searchText Required. The search text.
-         * @param searchOptions Optional. Options for the search.
+         * @param searchText - Required. The search text.
+         * @param searchOptions - Optional. Options for the search.
          */
         search(searchText: string, searchOptions?: Word.SearchOptions | {
             ignorePunct?: boolean;
@@ -17022,7 +17022,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
          */
         select(selectionMode?: string): void;
         /**
@@ -17031,9 +17031,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param delimiters Required. The delimiters as an array of strings.
-         * @param trimDelimiters Optional. Indicates whether to trim delimiters from the ranges in the range collection. Default is false which indicates that the delimiters are included in the ranges returned in the range collection.
-         * @param trimSpacing Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
+         * @param delimiters - Required. The delimiters as an array of strings.
+         * @param trimDelimiters - Optional. Indicates whether to trim delimiters from the ranges in the range collection. Default is false which indicates that the delimiters are included in the ranges returned in the range collection.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
          */
         split(delimiters: Array<string>, trimDelimiters?: boolean, trimSpacing?: boolean): Word.RangeCollection;
         /**
@@ -17283,7 +17283,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param range Required. The range to compare with this range.
+         * @param range - Required. The range to compare with this range.
          */
         compareLocationWith(range: Word.Range): OfficeExtension.ClientResult<string>;
         /**
@@ -17299,7 +17299,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param range Required. Another range.
+         * @param range - Required. Another range.
          */
         expandTo(range: Word.Range): Word.Range;
         /**
@@ -17308,7 +17308,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param range Required. Another range.
+         * @param range - Required. Another range.
          */
         expandToOrNullObject(range: Word.Range): Word.Range;
         /**
@@ -17331,8 +17331,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param endingMarks Required. The punctuation marks and/or other ending marks as an array of strings.
-         * @param trimSpacing Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the returned range. Default is false which indicates that spacing characters at the start and end of the range are included.
+         * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the returned range. Default is false which indicates that spacing characters at the start and end of the range are included.
          */
         getNextTextRange(endingMarks: Array<string>, trimSpacing?: boolean): Word.Range;
         /**
@@ -17341,8 +17341,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param endingMarks Required. The punctuation marks and/or other ending marks as an array of strings.
-         * @param trimSpacing Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the returned range. Default is false which indicates that spacing characters at the start and end of the range are included.
+         * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the returned range. Default is false which indicates that spacing characters at the start and end of the range are included.
          */
         getNextTextRangeOrNullObject(endingMarks: Array<string>, trimSpacing?: boolean): Word.Range;
         /**
@@ -17358,7 +17358,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation Optional. The range location can be 'Whole', 'Start', 'End', 'After' or 'Content'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After' or 'Content'.
          */
         getRange(rangeLocation?: string): Word.Range;
         /**
@@ -17367,8 +17367,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param endingMarks Required. The punctuation marks and/or other ending marks as an array of strings.
-         * @param trimSpacing Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
+         * @param endingMarks - Required. The punctuation marks and/or other ending marks as an array of strings.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
          */
         getTextRanges(endingMarks: Array<string>, trimSpacing?: boolean): Word.RangeCollection;
         /**
@@ -17377,8 +17377,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param breakType Required. The break type to add.
-         * @param insertLocation Required. The value can be 'Before' or 'After'.
+         * @param breakType - Required. The break type to add.
+         * @param insertLocation - Required. The value can be 'Before' or 'After'.
          */
         insertBreak(breakType: string, insertLocation: string): void;
         /**
@@ -17394,8 +17394,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param base64File Required. The base64 encoded content of a .docx file.
-         * @param insertLocation Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * @param base64File - Required. The base64 encoded content of a .docx file.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
          */
         insertFileFromBase64(base64File: string, insertLocation: string): Word.Range;
         /**
@@ -17404,8 +17404,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param html Required. The HTML to be inserted.
-         * @param insertLocation Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * @param html - Required. The HTML to be inserted.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
          */
         insertHtml(html: string, insertLocation: string): Word.Range;
         /**
@@ -17414,8 +17414,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.2]
          *
-         * @param base64EncodedImage Required. The base64 encoded image to be inserted.
-         * @param insertLocation Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * @param base64EncodedImage - Required. The base64 encoded image to be inserted.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
          */
         insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: string): Word.InlinePicture;
         /**
@@ -17424,8 +17424,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param ooxml Required. The OOXML to be inserted.
-         * @param insertLocation Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * @param ooxml - Required. The OOXML to be inserted.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
          */
         insertOoxml(ooxml: string, insertLocation: string): Word.Range;
         /**
@@ -17434,8 +17434,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param paragraphText Required. The paragraph text to be inserted.
-         * @param insertLocation Required. The value can be 'Before' or 'After'.
+         * @param paragraphText - Required. The paragraph text to be inserted.
+         * @param insertLocation - Required. The value can be 'Before' or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocation: string): Word.Paragraph;
         /**
@@ -17444,10 +17444,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rowCount Required. The number of rows in the table.
-         * @param columnCount Required. The number of columns in the table.
-         * @param insertLocation Required. The value can be 'Before' or 'After'.
-         * @param values Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+         * @param rowCount - Required. The number of rows in the table.
+         * @param columnCount - Required. The number of columns in the table.
+         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocation: string, values?: Array<Array<string>>): Word.Table;
         /**
@@ -17456,8 +17456,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param text Required. Text to be inserted.
-         * @param insertLocation Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
+         * @param text - Required. Text to be inserted.
+         * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before' or 'After'.
          */
         insertText(text: string, insertLocation: string): Word.Range;
         /**
@@ -17466,7 +17466,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param range Required. Another range.
+         * @param range - Required. Another range.
          */
         intersectWith(range: Word.Range): Word.Range;
         /**
@@ -17475,7 +17475,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param range Required. Another range.
+         * @param range - Required. Another range.
          */
         intersectWithOrNullObject(range: Word.Range): Word.Range;
         /**
@@ -17484,8 +17484,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param searchText Required. The search text.
-         * @param searchOptions Optional. Options for the search.
+         * @param searchText - Required. The search text.
+         * @param searchOptions - Optional. Options for the search.
          */
         search(searchText: string, searchOptions?: Word.SearchOptions | {
             ignorePunct?: boolean;
@@ -17502,7 +17502,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param selectionMode Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
          */
         select(selectionMode?: string): void;
         /**
@@ -17511,10 +17511,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param delimiters Required. The delimiters as an array of strings.
-         * @param multiParagraphs Optional. Indicates whether a returned child range can cover multiple paragraphs. Default is false which indicates that the paragraph boundaries are also used as delimiters.
-         * @param trimDelimiters Optional. Indicates whether to trim delimiters from the ranges in the range collection. Default is false which indicates that the delimiters are included in the ranges returned in the range collection.
-         * @param trimSpacing Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
+         * @param delimiters - Required. The delimiters as an array of strings.
+         * @param multiParagraphs - Optional. Indicates whether a returned child range can cover multiple paragraphs. Default is false which indicates that the paragraph boundaries are also used as delimiters.
+         * @param trimDelimiters - Optional. Indicates whether to trim delimiters from the ranges in the range collection. Default is false which indicates that the delimiters are included in the ranges returned in the range collection.
+         * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
          */
         split(delimiters: Array<string>, multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean): Word.RangeCollection;
         /**
@@ -17688,7 +17688,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param type Required. The type of footer to return. This value can be: 'primary', 'firstPage' or 'evenPages'.
+         * @param type - Required. The type of footer to return. This value can be: 'primary', 'firstPage' or 'evenPages'.
          */
         getFooter(type: string): Word.Body;
         /**
@@ -17697,7 +17697,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.1]
          *
-         * @param type Required. The type of header to return. This value can be: 'primary', 'firstPage' or 'evenPages'.
+         * @param type - Required. The type of header to return. This value can be: 'primary', 'firstPage' or 'evenPages'.
          */
         getHeader(type: string): Word.Body;
         /**
@@ -17978,9 +17978,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocation Required. It can be 'Start' or 'End', corresponding to the appropriate side of the table.
-         * @param columnCount Required. Number of columns to add.
-         * @param values Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+         * @param insertLocation - Required. It can be 'Start' or 'End', corresponding to the appropriate side of the table.
+         * @param columnCount - Required. Number of columns to add.
+         * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         addColumns(insertLocation: string, columnCount: number, values?: Array<Array<string>>): void;
         /**
@@ -17989,9 +17989,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocation Required. It can be 'Start' or 'End'.
-         * @param rowCount Required. Number of rows to add.
-         * @param values Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+         * @param insertLocation - Required. It can be 'Start' or 'End'.
+         * @param rowCount - Required. Number of rows to add.
+         * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         addRows(insertLocation: string, rowCount: number, values?: Array<Array<string>>): Word.TableRowCollection;
         /**
@@ -18021,8 +18021,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param columnIndex Required. The first column to delete.
-         * @param columnCount Optional. The number of columns to delete. Default 1.
+         * @param columnIndex - Required. The first column to delete.
+         * @param columnCount - Optional. The number of columns to delete. Default 1.
          */
         deleteColumns(columnIndex: number, columnCount?: number): void;
         /**
@@ -18031,8 +18031,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rowIndex Required. The first row to delete.
-         * @param rowCount Optional. The number of rows to delete. Default 1.
+         * @param rowIndex - Required. The first row to delete.
+         * @param rowCount - Optional. The number of rows to delete. Default 1.
          */
         deleteRows(rowIndex: number, rowCount?: number): void;
         /**
@@ -18048,7 +18048,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param borderLocation Required. The border location.
+         * @param borderLocation - Required. The border location.
          */
         getBorder(borderLocation: string): Word.TableBorder;
         /**
@@ -18057,8 +18057,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rowIndex Required. The index of the row.
-         * @param cellIndex Required. The index of the cell in the row.
+         * @param rowIndex - Required. The index of the row.
+         * @param cellIndex - Required. The index of the cell in the row.
          */
         getCell(rowIndex: number, cellIndex: number): Word.TableCell;
         /**
@@ -18067,8 +18067,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rowIndex Required. The index of the row.
-         * @param cellIndex Required. The index of the cell in the row.
+         * @param rowIndex - Required. The index of the row.
+         * @param cellIndex - Required. The index of the cell in the row.
          */
         getCellOrNullObject(rowIndex: number, cellIndex: number): Word.TableCell;
         /**
@@ -18077,7 +18077,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
          */
         getCellPadding(cellPaddingLocation: string): OfficeExtension.ClientResult<number>;
         /**
@@ -18128,7 +18128,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rangeLocation Optional. The range location can be 'Whole', 'Start', 'End' or 'After'.
+         * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End' or 'After'.
          */
         getRange(rangeLocation?: string): Word.Range;
         /**
@@ -18144,8 +18144,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param paragraphText Required. The paragraph text to be inserted.
-         * @param insertLocation Required. The value can be 'Before' or 'After'.
+         * @param paragraphText - Required. The paragraph text to be inserted.
+         * @param insertLocation - Required. The value can be 'Before' or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocation: string): Word.Paragraph;
         /**
@@ -18154,10 +18154,10 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param rowCount Required. The number of rows in the table.
-         * @param columnCount Required. The number of columns in the table.
-         * @param insertLocation Required. The value can be 'Before' or 'After'.
-         * @param values Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+         * @param rowCount - Required. The number of rows in the table.
+         * @param columnCount - Required. The number of columns in the table.
+         * @param insertLocation - Required. The value can be 'Before' or 'After'.
+         * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertTable(rowCount: number, columnCount: number, insertLocation: string, values?: Array<Array<string>>): Word.Table;
         /**
@@ -18166,8 +18166,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param searchText Required. The search text.
-         * @param searchOptions Optional. Options for the search.
+         * @param searchText - Required. The search text.
+         * @param searchOptions - Optional. Options for the search.
          */
         search(searchText: string, searchOptions?: Word.SearchOptions | {
             ignorePunct?: boolean;
@@ -18184,7 +18184,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param selectionMode Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
          */
         select(selectionMode?: string): void;
         /**
@@ -18193,8 +18193,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
-         * @param cellPadding Required. The cell padding.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocation: string, cellPadding: number): void;
         /**
@@ -18380,7 +18380,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param borderLocation Required. The border location.
+         * @param borderLocation - Required. The border location.
          */
         getBorder(borderLocation: string): Word.TableBorder;
         /**
@@ -18389,7 +18389,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
          */
         getCellPadding(cellPaddingLocation: string): OfficeExtension.ClientResult<number>;
         /**
@@ -18412,9 +18412,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocation Required. Where the new rows should be inserted, relative to the current row. It can be 'Before' or 'After'.
-         * @param rowCount Required. Number of rows to add
-         * @param values Optional. Strings to insert in the new rows, specified as a 2D array. The number of cells in each row must not exceed the number of cells in the existing row.
+         * @param insertLocation - Required. Where the new rows should be inserted, relative to the current row. It can be 'Before' or 'After'.
+         * @param rowCount - Required. Number of rows to add
+         * @param values - Optional. Strings to insert in the new rows, specified as a 2D array. The number of cells in each row must not exceed the number of cells in the existing row.
          */
         insertRows(insertLocation: string, rowCount: number, values?: Array<Array<string>>): Word.TableRowCollection;
         /**
@@ -18423,8 +18423,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param searchText Required. The search text.
-         * @param searchOptions Optional. Options for the search.
+         * @param searchText - Required. The search text.
+         * @param searchOptions - Optional. Options for the search.
          */
         search(searchText: string, searchOptions?: Word.SearchOptions | {
             ignorePunct?: boolean;
@@ -18441,7 +18441,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param selectionMode Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
+         * @param selectionMode - Optional. The selection mode can be 'Select', 'Start' or 'End'. 'Select' is the default.
          */
         select(selectionMode?: string): void;
         /**
@@ -18450,8 +18450,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
-         * @param cellPadding Required. The cell padding.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocation: string, cellPadding: number): void;
         /**
@@ -18628,7 +18628,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param borderLocation Required. The border location.
+         * @param borderLocation - Required. The border location.
          */
         getBorder(borderLocation: string): Word.TableBorder;
         /**
@@ -18637,7 +18637,7 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
          */
         getCellPadding(cellPaddingLocation: string): OfficeExtension.ClientResult<number>;
         /**
@@ -18660,9 +18660,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocation Required. It can be 'Before' or 'After'.
-         * @param columnCount Required. Number of columns to add
-         * @param values Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+         * @param insertLocation - Required. It can be 'Before' or 'After'.
+         * @param columnCount - Required. Number of columns to add
+         * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertColumns(insertLocation: string, columnCount: number, values?: Array<Array<string>>): void;
         /**
@@ -18671,9 +18671,9 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param insertLocation Required. It can be 'Before' or 'After'.
-         * @param rowCount Required. Number of rows to add.
-         * @param values Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+         * @param insertLocation - Required. It can be 'Before' or 'After'.
+         * @param rowCount - Required. Number of rows to add.
+         * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
         insertRows(insertLocation: string, rowCount: number, values?: Array<Array<string>>): Word.TableRowCollection;
         /**
@@ -18682,8 +18682,8 @@ export declare namespace Word {
          *
          * [Api set: WordApi 1.3]
          *
-         * @param cellPaddingLocation Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
-         * @param cellPadding Required. The cell padding.
+         * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom' or 'Right'.
+         * @param cellPadding - Required. The cell padding.
          */
         setCellPadding(cellPaddingLocation: string, cellPadding: number): void;
         /**
@@ -20224,7 +20224,7 @@ export declare namespace OneNote {
          *
          * Opens the specified page in the application instance.
          *
-         * @param page The page to open.
+         * @param page - The page to open.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20233,7 +20233,7 @@ export declare namespace OneNote {
          *
          * Gets the specified page, and opens it in the application instance.
          *
-         * @param url The client url of the page to open.
+         * @param url - The client url of the page to open.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20340,7 +20340,7 @@ export declare namespace OneNote {
          *
          * Gets a InkAnalysisParagraph object by ID or by its index in the collection. Read-only.
          *
-         * @param index The ID of the InkAnalysisParagraph object, or the index location of the InkAnalysisParagraph object in the collection.
+         * @param index - The ID of the InkAnalysisParagraph object, or the index location of the InkAnalysisParagraph object in the collection.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20349,7 +20349,7 @@ export declare namespace OneNote {
          *
          * Gets a InkAnalysisParagraph on its position in the collection.
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20419,7 +20419,7 @@ export declare namespace OneNote {
          *
          * Gets a InkAnalysisLine object by ID or by its index in the collection. Read-only.
          *
-         * @param index The ID of the InkAnalysisLine object, or the index location of the InkAnalysisLine object in the collection.
+         * @param index - The ID of the InkAnalysisLine object, or the index location of the InkAnalysisLine object in the collection.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20428,7 +20428,7 @@ export declare namespace OneNote {
          *
          * Gets a InkAnalysisLine on its position in the collection.
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20514,7 +20514,7 @@ export declare namespace OneNote {
          *
          * Gets a InkAnalysisWord object by ID or by its index in the collection. Read-only.
          *
-         * @param index The ID of the InkAnalysisWord object, or the index location of the InkAnalysisWord object in the collection.
+         * @param index - The ID of the InkAnalysisWord object, or the index location of the InkAnalysisWord object in the collection.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20523,7 +20523,7 @@ export declare namespace OneNote {
          *
          * Gets a InkAnalysisWord on its position in the collection.
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20622,7 +20622,7 @@ export declare namespace OneNote {
          *
          * Gets a InkStroke object by ID or by its index in the collection. Read-only.
          *
-         * @param index The ID of the InkStroke object, or the index location of the InkStroke object in the collection.
+         * @param index - The ID of the InkStroke object, or the index location of the InkStroke object in the collection.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20631,7 +20631,7 @@ export declare namespace OneNote {
          *
          * Gets a InkStroke on its position in the collection.
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20709,7 +20709,7 @@ export declare namespace OneNote {
          *
          * Gets a InkWord object by ID or by its index in the collection. Read-only.
          *
-         * @param index The ID of the InkWord object, or the index location of the InkWord object in the collection.
+         * @param index - The ID of the InkWord object, or the index location of the InkWord object in the collection.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20718,7 +20718,7 @@ export declare namespace OneNote {
          *
          * Gets a InkWord on its position in the collection.
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20780,7 +20780,7 @@ export declare namespace OneNote {
          *
          * Adds a new section to the end of the notebook.
          *
-         * @param name The name of the new section.
+         * @param name - The name of the new section.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20789,7 +20789,7 @@ export declare namespace OneNote {
          *
          * Adds a new section group to the end of the notebook.
          *
-         * @param name The name of the new section.
+         * @param name - The name of the new section.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20822,7 +20822,7 @@ export declare namespace OneNote {
          *
          * Gets the collection of notebooks with the specified name that are open in the application instance.
          *
-         * @param name The name of the notebook.
+         * @param name - The name of the notebook.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20831,7 +20831,7 @@ export declare namespace OneNote {
          *
          * Gets a notebook by ID or by its index in the collection. Read-only.
          *
-         * @param index The ID of the notebook, or the index location of the notebook in the collection.
+         * @param index - The ID of the notebook, or the index location of the notebook in the collection.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20840,7 +20840,7 @@ export declare namespace OneNote {
          *
          * Gets a notebook on its position in the collection.
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20926,7 +20926,7 @@ export declare namespace OneNote {
          *
          * Adds a new section to the end of the section group.
          *
-         * @param title The name of the new section.
+         * @param title - The name of the new section.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20935,7 +20935,7 @@ export declare namespace OneNote {
          *
          * Adds a new section group to the end of this sectionGroup.
          *
-         * @param name The name of the new section.
+         * @param name - The name of the new section.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20968,7 +20968,7 @@ export declare namespace OneNote {
          *
          * Gets the collection of section groups with the specified name.
          *
-         * @param name The name of the section group.
+         * @param name - The name of the section group.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20977,7 +20977,7 @@ export declare namespace OneNote {
          *
          * Gets a section group by ID or by its index in the collection. Read-only.
          *
-         * @param index The ID of the section group, or the index location of the section group in the collection.
+         * @param index - The ID of the section group, or the index location of the section group in the collection.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -20986,7 +20986,7 @@ export declare namespace OneNote {
          *
          * Gets a section group on its position in the collection.
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21064,7 +21064,7 @@ export declare namespace OneNote {
          *
          * Adds a new page to the end of the section.
          *
-         * @param title The title of the new page.
+         * @param title - The title of the new page.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21073,7 +21073,7 @@ export declare namespace OneNote {
          *
          * Copies this section to specified notebook.
          *
-         * @param destinationNotebook The notebook to copy this section to.
+         * @param destinationNotebook - The notebook to copy this section to.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21082,7 +21082,7 @@ export declare namespace OneNote {
          *
          * Copies this section to specified section group.
          *
-         * @param destinationSectionGroup The section group to copy this section to.
+         * @param destinationSectionGroup - The section group to copy this section to.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21091,8 +21091,8 @@ export declare namespace OneNote {
          *
          * Inserts a new section before or after the current section.
          *
-         * @param location The location of the new section relative to the current section.
-         * @param title The name of the new section.
+         * @param location - The location of the new section relative to the current section.
+         * @param title - The name of the new section.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21125,7 +21125,7 @@ export declare namespace OneNote {
          *
          * Gets the collection of sections with the specified name.
          *
-         * @param name The name of the section.
+         * @param name - The name of the section.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21134,7 +21134,7 @@ export declare namespace OneNote {
          *
          * Gets a section by ID or by its index in the collection. Read-only.
          *
-         * @param index The ID of the section, or the index location of the section in the collection.
+         * @param index - The ID of the section, or the index location of the section in the collection.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21143,7 +21143,7 @@ export declare namespace OneNote {
          *
          * Gets a section on its position in the collection.
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21229,9 +21229,9 @@ export declare namespace OneNote {
          *
          * Adds an Outline to the page at the specified position.
          *
-         * @param left The left position of the top, left corner of the Outline.
-         * @param top The top position of the top, left corner of the Outline.
-         * @param html An HTML string that describes the visual presentation of the Outline. See [supported HTML](../../docs/onenote/onenote-add-ins-page-content.md#supported-html) for the OneNote add-ins JavaScript API.
+         * @param left - The left position of the top, left corner of the Outline.
+         * @param top - The top position of the top, left corner of the Outline.
+         * @param html - An HTML string that describes the visual presentation of the Outline. See [supported HTML](../../docs/onenote/onenote-add-ins-page-content.md#supported-html) for the OneNote add-ins JavaScript API.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21240,7 +21240,7 @@ export declare namespace OneNote {
          *
          * Copies this page to specified section.
          *
-         * @param destinationSection The section to copy this page to.
+         * @param destinationSection - The section to copy this page to.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21249,8 +21249,8 @@ export declare namespace OneNote {
          *
          * Inserts a new page before or after the current page.
          *
-         * @param location The location of the new page relative to the current page.
-         * @param title The title of the new page.
+         * @param location - The location of the new page relative to the current page.
+         * @param title - The title of the new page.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21283,7 +21283,7 @@ export declare namespace OneNote {
          *
          * Gets the collection of pages with the specified title.
          *
-         * @param title The title of the page.
+         * @param title - The title of the page.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21292,7 +21292,7 @@ export declare namespace OneNote {
          *
          * Gets a page by ID or by its index in the collection. Read-only.
          *
-         * @param index The ID of the page, or the index location of the page in the collection.
+         * @param index - The ID of the page, or the index location of the page in the collection.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21301,7 +21301,7 @@ export declare namespace OneNote {
          *
          * Gets a page on its position in the collection.
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21418,7 +21418,7 @@ export declare namespace OneNote {
          *
          * Gets a PageContent object by ID or by its index in the collection. Read-only.
          *
-         * @param index The ID of the PageContent object, or the index location of the PageContent object in the collection.
+         * @param index - The ID of the PageContent object, or the index location of the PageContent object in the collection.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21427,7 +21427,7 @@ export declare namespace OneNote {
          *
          * Gets a page content on its position in the collection.
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21473,7 +21473,7 @@ export declare namespace OneNote {
          *
          * Adds the specified HTML to the bottom of the Outline.
          *
-         * @param html The HTML string to append. See [supported HTML](../../docs/onenote/onenote-add-ins-page-content.md#supported-html) for the OneNote add-ins JavaScript API.
+         * @param html - The HTML string to append. See [supported HTML](../../docs/onenote/onenote-add-ins-page-content.md#supported-html) for the OneNote add-ins JavaScript API.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21482,9 +21482,9 @@ export declare namespace OneNote {
          *
          * Adds the specified image to the bottom of the Outline.
          *
-         * @param base64EncodedImage HTML string to append.
-         * @param width Optional. Width in the unit of Points. The default value is null and image width will be respected.
-         * @param height Optional. Height in the unit of Points. The default value is null and image height will be respected.
+         * @param base64EncodedImage - HTML string to append.
+         * @param width - Optional. Width in the unit of Points. The default value is null and image width will be respected.
+         * @param height - Optional. Height in the unit of Points. The default value is null and image height will be respected.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21493,7 +21493,7 @@ export declare namespace OneNote {
          *
          * Adds the specified text to the bottom of the Outline.
          *
-         * @param paragraphText HTML string to append.
+         * @param paragraphText - HTML string to append.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21502,9 +21502,9 @@ export declare namespace OneNote {
          *
          * Adds a table with the specified number of rows and columns to the bottom of the outline.
          *
-         * @param rowCount Required. The number of rows in the table.
-         * @param columnCount Required. The number of columns in the table.
-         * @param values Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+         * @param rowCount - Required. The number of rows in the table.
+         * @param columnCount - Required. The number of columns in the table.
+         * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21629,8 +21629,8 @@ export declare namespace OneNote {
          *
          * Inserts the specified HTML content
          *
-         * @param insertLocation The location of new contents relative to the current Paragraph.
-         * @param html An HTML string that describes the visual presentation of the content. See [supported HTML](../../docs/onenote/onenote-add-ins-page-content.md#supported-html) for the OneNote add-ins JavaScript API.
+         * @param insertLocation - The location of new contents relative to the current Paragraph.
+         * @param html - An HTML string that describes the visual presentation of the content. See [supported HTML](../../docs/onenote/onenote-add-ins-page-content.md#supported-html) for the OneNote add-ins JavaScript API.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21639,10 +21639,10 @@ export declare namespace OneNote {
          *
          * Inserts the image at the specified insert location..
          *
-         * @param insertLocation The location of the table relative to the current Paragraph.
-         * @param base64EncodedImage HTML string to append.
-         * @param width Optional. Width in the unit of Points. The default value is null and image width will be respected.
-         * @param height Optional. Height in the unit of Points. The default value is null and image height will be respected.
+         * @param insertLocation - The location of the table relative to the current Paragraph.
+         * @param base64EncodedImage - HTML string to append.
+         * @param width - Optional. Width in the unit of Points. The default value is null and image width will be respected.
+         * @param height - Optional. Height in the unit of Points. The default value is null and image height will be respected.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21651,8 +21651,8 @@ export declare namespace OneNote {
          *
          * Inserts the paragraph text at the specifiec insert location.
          *
-         * @param insertLocation The location of the table relative to the current Paragraph.
-         * @param paragraphText HTML string to append.
+         * @param insertLocation - The location of the table relative to the current Paragraph.
+         * @param paragraphText - HTML string to append.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21661,10 +21661,10 @@ export declare namespace OneNote {
          *
          * Adds a table with the specified number of rows and columns before or after the current paragraph.
          *
-         * @param insertLocation The location of the table relative to the current Paragraph.
-         * @param rowCount The number of rows in the table.
-         * @param columnCount The number of columns in the table.
-         * @param values Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+         * @param insertLocation - The location of the table relative to the current Paragraph.
+         * @param rowCount - The number of rows in the table.
+         * @param columnCount - The number of columns in the table.
+         * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21697,7 +21697,7 @@ export declare namespace OneNote {
          *
          * Gets a Paragraph object by ID or by its index in the collection. Read-only.
          *
-         * @param index The ID of the Paragraph object, or the index location of the Paragraph object in the collection.
+         * @param index - The ID of the Paragraph object, or the index location of the Paragraph object in the collection.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21706,7 +21706,7 @@ export declare namespace OneNote {
          *
          * Gets a paragraph on its position in the collection.
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21898,7 +21898,7 @@ export declare namespace OneNote {
          *
          * Adds a column to the end of the table. Values, if specified, are set in the new column. Otherwise the column is empty.
          *
-         * @param values Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in the table.
+         * @param values - Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in the table.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21907,7 +21907,7 @@ export declare namespace OneNote {
          *
          * Adds a row to the end of the table. Values, if specified, are set in the new row. Otherwise the row is empty.
          *
-         * @param values Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in the table.
+         * @param values - Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in the table.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21923,8 +21923,8 @@ export declare namespace OneNote {
          *
          * Gets the table cell at a specified row and column.
          *
-         * @param rowIndex The index of the row.
-         * @param cellIndex The index of the cell in the row.
+         * @param rowIndex - The index of the row.
+         * @param cellIndex - The index of the cell in the row.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21933,8 +21933,8 @@ export declare namespace OneNote {
          *
          * Inserts a column at the given index in the table. Values, if specified, are set in the new column. Otherwise the column is empty.
          *
-         * @param index Index where the column will be inserted in the table.
-         * @param values Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in the table.
+         * @param index - Index where the column will be inserted in the table.
+         * @param values - Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in the table.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -21943,8 +21943,8 @@ export declare namespace OneNote {
          *
          * Inserts a row at the given index in the table. Values, if specified, are set in the new row. Otherwise the row is empty.
          *
-         * @param index Index where the row will be inserted in the table.
-         * @param values Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in the table.
+         * @param index - Index where the row will be inserted in the table.
+         * @param values - Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in the table.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -22014,8 +22014,8 @@ export declare namespace OneNote {
          *
          * Inserts a row before or after the current row.
          *
-         * @param insertLocation Where the new rows should be inserted relative to the current row.
-         * @param values Strings to insert in the new row, specified as an array. Must not have more cells than in the current row. Optional.
+         * @param insertLocation - Where the new rows should be inserted relative to the current row.
+         * @param values - Strings to insert in the new row, specified as an array. Must not have more cells than in the current row. Optional.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -22049,7 +22049,7 @@ export declare namespace OneNote {
          *
          * Gets a table row object by ID or by its index in the collection. Read-only.
          *
-         * @param index A number that identifies the index location of a table row object.
+         * @param index - A number that identifies the index location of a table row object.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -22058,7 +22058,7 @@ export declare namespace OneNote {
          *
          * Gets a table row at its position in the collection.
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -22128,7 +22128,7 @@ export declare namespace OneNote {
          *
          * Adds the specified HTML to the bottom of the TableCell.
          *
-         * @param html The HTML string to append. See [supported HTML](../../docs/onenote/onenote-add-ins-page-content.md#supported-html) for the OneNote add-ins JavaScript API.
+         * @param html - The HTML string to append. See [supported HTML](../../docs/onenote/onenote-add-ins-page-content.md#supported-html) for the OneNote add-ins JavaScript API.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -22137,9 +22137,9 @@ export declare namespace OneNote {
          *
          * Adds the specified image to table cell.
          *
-         * @param base64EncodedImage HTML string to append.
-         * @param width Optional. Width in the unit of Points. The default value is null and image width will be respected.
-         * @param height Optional. Height in the unit of Points. The default value is null and image height will be respected.
+         * @param base64EncodedImage - HTML string to append.
+         * @param width - Optional. Width in the unit of Points. The default value is null and image width will be respected.
+         * @param height - Optional. Height in the unit of Points. The default value is null and image height will be respected.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -22148,7 +22148,7 @@ export declare namespace OneNote {
          *
          * Adds the specified text to table cell.
          *
-         * @param paragraphText HTML string to append.
+         * @param paragraphText - HTML string to append.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -22157,9 +22157,9 @@ export declare namespace OneNote {
          *
          * Adds a table with the specified number of rows and columns to table cell.
          *
-         * @param rowCount Required. The number of rows in the table.
-         * @param columnCount Required. The number of columns in the table.
-         * @param values Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+         * @param rowCount - Required. The number of rows in the table.
+         * @param columnCount - Required. The number of columns in the table.
+         * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -22199,7 +22199,7 @@ export declare namespace OneNote {
          *
          * Gets a table cell object by ID or by its index in the collection. Read-only.
          *
-         * @param index A number that identifies the index location of a table cell object.
+         * @param index - A number that identifies the index location of a table cell object.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -22208,7 +22208,7 @@ export declare namespace OneNote {
          *
          * Gets a tablecell at its position in the collection.
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          *
          * [Api set: OneNoteApi 1.1]
          */
@@ -22559,7 +22559,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          *
-         * @param PageName Name of the page
+         * @param PageName - Name of the page
          */
         setActivePage(PageName: string): void;
         /**
@@ -22803,7 +22803,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          *
-         * @param ShapeId ShapeId to be seen in the center.
+         * @param ShapeId - ShapeId to be seen in the center.
          */
         centerViewportOnShape(ShapeId: number): void;
         /**
@@ -22833,7 +22833,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          *
-         * @param Shape Shape to be checked.
+         * @param Shape - Shape to be checked.
          */
         isShapeInViewport(Shape: Visio.Shape): OfficeExtension.ClientResult<boolean>;
         /**
@@ -22842,7 +22842,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          *
-         * @param Position Position object that specifies the new position of the page in the view.
+         * @param Position - Position object that specifies the new position of the page in the view.
          */
         setPosition(Position: Visio.Position): void;
         /**
@@ -22878,7 +22878,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          *
-         * @param key Key is the name or Id of the page to be retrieved.
+         * @param key - Key is the name or Id of the page to be retrieved.
          */
         getItem(key: number | string): Visio.Page;
         /**
@@ -22911,7 +22911,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          *
-         * @param key Key is the Name or Index of the shape to be retrieved.
+         * @param key - Key is the Name or Index of the shape to be retrieved.
          */
         getItem(key: number | string): Visio.Shape;
         /**
@@ -23048,12 +23048,12 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          *
-         * @param OverlayType An Overlay Type -Text, Image.
-         * @param Content Content of Overlay.
-         * @param OverlayHorizontalAlignment Horizontal Alignment of Overlay - Left, Center, Right
-         * @param OverlayVerticalAlignment Vertical Alignment of Overlay - Top, Middle, Bottom
-         * @param Width Overlay Width.
-         * @param Height Overlay Height.
+         * @param OverlayType - An Overlay Type -Text, Image.
+         * @param Content - Content of Overlay.
+         * @param OverlayHorizontalAlignment - Horizontal Alignment of Overlay - Left, Center, Right
+         * @param OverlayVerticalAlignment - Vertical Alignment of Overlay - Top, Middle, Bottom
+         * @param Width - Overlay Width.
+         * @param Height - Overlay Height.
          */
         addOverlay(OverlayType: string, Content: string, OverlayHorizontalAlignment: string, OverlayVerticalAlignment: string, Width: number, Height: number): OfficeExtension.ClientResult<number>;
         /**
@@ -23062,7 +23062,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          *
-         * @param OverlayId An Overlay Id. Removes the specific overlay id from the shape.
+         * @param OverlayId - An Overlay Id. Removes the specific overlay id from the shape.
          */
         removeOverlay(OverlayId: number): void;
         /**
@@ -23178,7 +23178,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          *
-         * @param key Key is the name of the ShapeDataItem to be retrieved.
+         * @param key - Key is the name of the ShapeDataItem to be retrieved.
          */
         getItem(key: string): Visio.ShapeDataItem;
         /**
@@ -23257,7 +23257,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          *
-         * @param Key Key is the name or index of the Hyperlink to be retrieved.
+         * @param Key - Key is the name or index of the Hyperlink to be retrieved.
          */
         getItem(Key: number | string): Visio.Hyperlink;
         /**
@@ -23336,7 +23336,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          *
-         * @param key Key is the name of the Comment to be retrieved.
+         * @param key - Key is the name of the Comment to be retrieved.
          */
         getItem(key: string): Visio.Comment;
         /**
