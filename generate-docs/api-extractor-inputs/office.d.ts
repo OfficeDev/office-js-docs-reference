@@ -563,7 +563,7 @@ export declare namespace Office {
     }
     export interface CustomXmlNode {
         baseName: string;
-        namespaceUri: string;
+        export namespaceUri: string;
         nodeType: string;
         /**
          * Gets the nodes associated with the xPath expression.
@@ -622,7 +622,7 @@ export declare namespace Office {
     export interface CustomXmlPart {
         builtIn: boolean;
         id: string;
-        namespaceManager: CustomXmlPrefixMappings;
+        export namespaceManager: CustomXmlPrefixMappings;
         /**
          * Adds an event handler to the object using the specified event type.
          * @param eventType - The event type. For CustomXmlPartNode it can be 'nodeDeleted', 'nodeInserted' or 'nodeReplaced'
@@ -1668,14 +1668,14 @@ export declare namespace Office {
     }
     export module cast {
         export module item {
-            function toAppointmentCompose(item: Office.Item): Office.AppointmentCompose;
-            function toAppointmentRead(item: Office.Item): Office.AppointmentRead;
-            function toAppointment(item: Office.Item): Office.Appointment;
-            function toMessageCompose(item: Office.Item): Office.MessageCompose;
-            function toMessageRead(item: Office.Item): Office.MessageRead;
-            function toMessage(item: Office.Item): Office.Message;
-            function toItemCompose(item: Office.Item): Office.ItemCompose;
-            function toItemRead(item: Office.Item): Office.ItemRead;
+            export function toAppointmentCompose(item: Office.Item): Office.AppointmentCompose;
+            export function toAppointmentRead(item: Office.Item): Office.AppointmentRead;
+            export function toAppointment(item: Office.Item): Office.Appointment;
+            export function toMessageCompose(item: Office.Item): Office.MessageCompose;
+            export function toMessageRead(item: Office.Item): Office.MessageRead;
+            export function toMessage(item: Office.Item): Office.Message;
+            export function toItemCompose(item: Office.Item): Office.ItemCompose;
+            export function toItemRead(item: Office.Item): Office.ItemRead;
         }
     }
     export interface AsyncContextOptions {
@@ -2564,7 +2564,7 @@ export declare namespace Office {
 
 export declare namespace OfficeExtension {
     /** An abstract proxy object that represents an object in an Office document. You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the proxy object state with the document by calling "context.sync()". */
-    class ClientObject {
+    export class ClientObject {
         /** The request context associated with the object */
         context: ClientRequestContext;
         /** Returns a boolean value for whether the corresponding object is a null object. You must call "context.sync()" before reading the isNullObject property. */
@@ -2572,14 +2572,14 @@ export declare namespace OfficeExtension {
     }
 }
 export declare namespace OfficeExtension {
-    interface LoadOption {
+    export interface LoadOption {
         select?: string | string[];
         expand?: string | string[];
         top?: number;
         skip?: number;
     }
     /** An abstract RequestContext object that facilitates requests to the host Office application. The "Excel.run" and "Word.run" methods provide a request context. */
-    class ClientRequestContext {
+    export class ClientRequestContext {
         constructor(url?: string);
 
         /** Collection of objects that are tracked for automatic adjustments based on surrounding changes in the document. */
@@ -2617,7 +2617,7 @@ export declare namespace OfficeExtension {
 		width?: string;
     }
 
-    class EmbeddedSession {
+    export class EmbeddedSession {
         constructor(url: string, options?: EmbeddedOptions);
         public init(): IPromise<any>;
     }
@@ -2625,7 +2625,7 @@ export declare namespace OfficeExtension {
 
 export declare namespace OfficeExtension {
     /** Contains the result for methods that return primitive types. The object's value property is retrieved from the document after "context.sync()" is invoked. */
-    class ClientResult<T> {
+    export class ClientResult<T> {
         /** The value of the result that is retrieved from the document after "context.sync()" is invoked. */
         value: T;
     }
@@ -2644,7 +2644,7 @@ export declare namespace OfficeExtension {
     }
 
     /** The error object returned by "context.sync()", if a promise is rejected due to an error while processing the request. */
-    class Error {
+    export class Error {
         /** Error name: "OfficeExtension.Error".*/
         name: string;
         /** The error message passed through from the host Office application. */
@@ -2662,7 +2662,7 @@ export declare namespace OfficeExtension {
     }
 }
 export declare namespace OfficeExtension {
-    class ErrorCodes {
+    export class ErrorCodes {
         public static accessDenied: string;
         public static generalException: string;
         public static activityLimitReached: string;
@@ -2679,7 +2679,7 @@ export declare namespace OfficeExtension {
 }
 export declare namespace OfficeExtension {
     /** An IPromise object that represents a deferred interaction with the host Office application. */
-    interface IPromise<R> {
+    export interface IPromise<R> {
 		/**
 		 * This method will be called once the previous promise has been resolved.
 		 * Both the onFulfilled on onRejected callbacks are optional.
@@ -2853,7 +2853,7 @@ export declare namespace OfficeExtension {
 
 export declare namespace OfficeExtension {
     /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
-    class TrackedObjects {
+    export class TrackedObjects {
         /** Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. */
         add(object: ClientObject): void;
         /** Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. */
@@ -2887,7 +2887,7 @@ export declare namespace OfficeExtension {
 	/**
 	* Request URL and headers
 	*/
-    interface RequestUrlAndHeaderInfo {
+    export interface RequestUrlAndHeaderInfo {
         /** Request URL */
         url: string;
         /** Request headers */
@@ -2903,7 +2903,7 @@ export declare namespace OfficeCore {
     /**
      * [Api set: Experiment 1.1 (PREVIEW)]
      */
-    class FlightingService extends OfficeExtension.ClientObject {
+    export class FlightingService extends OfficeExtension.ClientObject {
         getFeature(featureName: string, type: string, defaultValue: number | boolean | string, possibleValues?: Array<number> | Array<string> | Array<boolean> | Array<ScopedValue>): OfficeCore.ABType;
         getFeatureGate(featureName: string, scope?: string): OfficeCore.ABType;
         resetOverride(featureName: string): void;
@@ -2920,7 +2920,7 @@ export declare namespace OfficeCore {
      *
      * [Api set: Experiment 1.1 (PREVIEW)]
      */
-    interface ScopedValue {
+    export interface ScopedValue {
         /**
          *
          * Gets the scope.
@@ -2939,7 +2939,7 @@ export declare namespace OfficeCore {
     /**
      * [Api set: Experiment 1.1 (PREVIEW)]
      */
-    class ABType extends OfficeExtension.ClientObject {
+    export class ABType extends OfficeExtension.ClientObject {
         readonly value: string | number | boolean;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
@@ -2952,19 +2952,19 @@ export declare namespace OfficeCore {
     /**
      * [Api set: Experiment 1.1 (PREVIEW)]
      */
-    namespace FeatureType {
+    export namespace FeatureType {
         var boolean: string;
         var integer: string;
         var string: string;
     }
-    namespace ExperimentErrorCodes {
+    export namespace ExperimentErrorCodes {
         var generalException: string;
     }
-    module Interfaces {
+    export module Interfaces {
     }
 }
 export declare namespace OfficeCore {
-    class RequestContext extends OfficeExtension.ClientRequestContext {
+    export class RequestContext extends OfficeExtension.ClientRequestContext {
         constructor(url?: string | OfficeExtension.RequestUrlAndHeaderInfo | any);
         readonly flightingService: FlightingService;
     }
@@ -2986,90 +2986,90 @@ export declare namespace OfficeCore {
 ////////////////////////////////////////////////////////////////
 
 export declare namespace Excel {
-    interface ThreeArrowsSet {
+    export interface ThreeArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowSideArrow: Icon;
         greenUpArrow: Icon;
     }
-    interface ThreeArrowsGraySet {
+    export interface ThreeArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         graySideArrow: Icon;
         grayUpArrow: Icon;
     }
-    interface ThreeFlagsSet {
+    export interface ThreeFlagsSet {
         [index: number]: Icon;
         redFlag: Icon;
         yellowFlag: Icon;
         greenFlag: Icon;
     }
-    interface ThreeTrafficLights1Set {
+    export interface ThreeTrafficLights1Set {
         [index: number]: Icon;
         redCircleWithBorder: Icon;
         yellowCircle: Icon;
         greenCircle: Icon;
     }
-    interface ThreeTrafficLights2Set {
+    export interface ThreeTrafficLights2Set {
         [index: number]: Icon;
         redTrafficLight: Icon;
         yellowTrafficLight: Icon;
         greenTrafficLight: Icon;
     }
-    interface ThreeSignsSet {
+    export interface ThreeSignsSet {
         [index: number]: Icon;
         redDiamond: Icon;
         yellowTriangle: Icon;
         greenCircle: Icon;
     }
-    interface ThreeSymbolsSet {
+    export interface ThreeSymbolsSet {
         [index: number]: Icon;
         redCrossSymbol: Icon;
         yellowExclamationSymbol: Icon;
         greenCheckSymbol: Icon;
     }
-    interface ThreeSymbols2Set {
+    export interface ThreeSymbols2Set {
         [index: number]: Icon;
         redCross: Icon;
         yellowExclamation: Icon;
         greenCheck: Icon;
     }
-    interface FourArrowsSet {
+    export interface FourArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowDownInclineArrow: Icon;
         yellowUpInclineArrow: Icon;
         greenUpArrow: Icon;
     }
-    interface FourArrowsGraySet {
+    export interface FourArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         grayDownInclineArrow: Icon;
         grayUpInclineArrow: Icon;
         grayUpArrow: Icon;
     }
-    interface FourRedToBlackSet {
+    export interface FourRedToBlackSet {
         [index: number]: Icon;
         blackCircle: Icon;
         grayCircle: Icon;
         pinkCircle: Icon;
         redCircle: Icon;
     }
-    interface FourRatingSet {
+    export interface FourRatingSet {
         [index: number]: Icon;
         oneBar: Icon;
         twoBars: Icon;
         threeBars: Icon;
         fourBars: Icon;
     }
-    interface FourTrafficLightsSet {
+    export interface FourTrafficLightsSet {
         [index: number]: Icon;
         blackCircleWithBorder: Icon;
         redCircleWithBorder: Icon;
         yellowCircle: Icon;
         greenCircle: Icon;
     }
-    interface FiveArrowsSet {
+    export interface FiveArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowDownInclineArrow: Icon;
@@ -3077,7 +3077,7 @@ export declare namespace Excel {
         yellowUpInclineArrow: Icon;
         greenUpArrow: Icon;
     }
-    interface FiveArrowsGraySet {
+    export interface FiveArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         grayDownInclineArrow: Icon;
@@ -3085,7 +3085,7 @@ export declare namespace Excel {
         grayUpInclineArrow: Icon;
         grayUpArrow: Icon;
     }
-    interface FiveRatingSet {
+    export interface FiveRatingSet {
         [index: number]: Icon;
         noBars: Icon;
         oneBar: Icon;
@@ -3093,7 +3093,7 @@ export declare namespace Excel {
         threeBars: Icon;
         fourBars: Icon;
     }
-    interface FiveQuartersSet {
+    export interface FiveQuartersSet {
         [index: number]: Icon;
         whiteCircleAllWhiteQuarters: Icon;
         circleWithThreeWhiteQuarters: Icon;
@@ -3101,19 +3101,19 @@ export declare namespace Excel {
         circleWithOneWhiteQuarter: Icon;
         blackCircle: Icon;
     }
-    interface ThreeStarsSet {
+    export interface ThreeStarsSet {
         [index: number]: Icon;
         silverStar: Icon;
         halfGoldStar: Icon;
         goldStar: Icon;
     }
-    interface ThreeTrianglesSet {
+    export interface ThreeTrianglesSet {
         [index: number]: Icon;
         redDownTriangle: Icon;
         yellowDash: Icon;
         greenUpTriangle: Icon;
     }
-    interface FiveBoxesSet {
+    export interface FiveBoxesSet {
         [index: number]: Icon;
         noFilledBoxes: Icon;
         oneFilledBox: Icon;
@@ -3121,7 +3121,7 @@ export declare namespace Excel {
         threeFilledBoxes: Icon;
         fourFilledBoxes: Icon;
     }
-    interface IconCollections {
+    export interface IconCollections {
         threeArrows: ThreeArrowsSet;
         threeArrowsGray: ThreeArrowsGraySet;
         threeFlags: ThreeFlagsSet;
@@ -3147,7 +3147,7 @@ export declare namespace Excel {
     /**
      * Provides connection session for a remote workbook.
      */
-    class Session {
+    export class Session {
         private static WorkbookSessionIdHeaderName;
         private static WorkbookSessionIdHeaderNameLower;
         constructor(workbookUrl?: string, requestHeaders?: {
@@ -3161,7 +3161,7 @@ export declare namespace Excel {
     /**
      * The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the request context is required to get access to the Excel object model from the add-in.
      */
-    class RequestContext extends OfficeCore.RequestContext {
+    export class RequestContext extends OfficeCore.RequestContext {
         constructor(url?: string | Session);
         readonly workbook: Workbook;
         readonly application: Application;
@@ -3170,46 +3170,46 @@ export declare namespace Excel {
      * Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    function run<T>(batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
     /**
      * Executes a batch script that performs actions on the Excel object model, using a new remote RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param requestInfo - The URL of the remote workbook and the request headers to be sent.
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    function run<T>(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
     /**
      * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param object - A previously-created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    function run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
     /**
      * Executes a batch script that performs actions on the Excel object model, using the remote RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param requestInfo - The URL of the remote workbook and the request headers to be sent.
      * @param object - A previously-created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    function run<T>(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
     /**
      * Executes a batch script that performs actions on the Excel object model, using the RequestContext of previously-created API objects.
      * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
     /**
      * Executes a batch script that performs actions on the Excel object model, using the remote RequestContext of previously-created API objects.
      * @param requestInfo - The URL of the remote workbook and the request headers to be sent.
      * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    function run<T>(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
     /**
      *
      * Provides information about the binding that raised the SelectionChanged event.
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface BindingSelectionChangedEventArgs {
+    export interface BindingSelectionChangedEventArgs {
         /**
          *
          * Gets the Binding object that represents the binding that raised the SelectionChanged event.
@@ -3252,7 +3252,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface BindingDataChangedEventArgs {
+    export interface BindingDataChangedEventArgs {
         /**
          *
          * Gets the Binding object that represents the binding that raised the DataChanged event.
@@ -3267,7 +3267,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface SelectionChangedEventArgs {
+    export interface SelectionChangedEventArgs {
         /**
          *
          * Gets the workbook object that raised the SelectionChanged event.
@@ -3282,7 +3282,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.4]
      */
-    interface SettingsChangedEventArgs {
+    export interface SettingsChangedEventArgs {
         /**
          *
          * Gets the Setting object that represents the binding that raised the SettingsChanged event
@@ -3297,7 +3297,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class Application extends OfficeExtension.ClientObject {
+    export class Application extends OfficeExtension.ClientObject {
         /**
          *
          * Returns the calculation mode used in the workbook. See Excel.CalculationMode for details. Read-only.
@@ -3335,7 +3335,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class Workbook extends OfficeExtension.ClientObject {
+    export class Workbook extends OfficeExtension.ClientObject {
         /**
          *
          * Represents Excel application instance that contains this workbook. Read-only.
@@ -3425,7 +3425,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class Worksheet extends OfficeExtension.ClientObject {
+    export class Worksheet extends OfficeExtension.ClientObject {
         /**
          *
          * Returns collection of charts that are part of the worksheet. Read-only.
@@ -3610,7 +3610,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class WorksheetCollection extends OfficeExtension.ClientObject {
+    export class WorksheetCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.Worksheet>;
         /**
@@ -3682,7 +3682,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    class WorksheetProtection extends OfficeExtension.ClientObject {
+    export class WorksheetProtection extends OfficeExtension.ClientObject {
         /**
          *
          * Sheet protection options. Read-Only.
@@ -3728,7 +3728,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface WorksheetProtectionOptions {
+    export interface WorksheetProtectionOptions {
         /**
          *
          * Represents the worksheet protection option of allowing using auto filter feature.
@@ -3813,7 +3813,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class Range extends OfficeExtension.ClientObject {
+    export class Range extends OfficeExtension.ClientObject {
         /**
          *
          * Collection of ConditionalFormats that intersect the range. Read-only.
@@ -4237,7 +4237,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface RangeReference {
+    export interface RangeReference {
         address: string;
     }
     /**
@@ -4246,7 +4246,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.3]
      */
-    class RangeView extends OfficeExtension.ClientObject {
+    export class RangeView extends OfficeExtension.ClientObject {
         /**
          *
          * Represents a collection of range views associated with the range. Read-only.
@@ -4371,7 +4371,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.3]
      */
-    class RangeViewCollection extends OfficeExtension.ClientObject {
+    export class RangeViewCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.RangeView>;
         /**
@@ -4402,7 +4402,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.4]
      */
-    class SettingCollection extends OfficeExtension.ClientObject {
+    export class SettingCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.Setting>;
         /**
@@ -4459,7 +4459,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.4]
      */
-    class Setting extends OfficeExtension.ClientObject {
+    export class Setting extends OfficeExtension.ClientObject {
         private static DateJSONPrefix;
         private static DateJSONSuffix;
         private static replaceStringDateWithDate(value);
@@ -4508,7 +4508,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class NamedItemCollection extends OfficeExtension.ClientObject {
+    export class NamedItemCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.NamedItem>;
         /**
@@ -4572,7 +4572,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class NamedItem extends OfficeExtension.ClientObject {
+    export class NamedItem extends OfficeExtension.ClientObject {
         /**
          *
          * Returns the worksheet on which the named item is scoped to. Throws an error if the items is scoped to the workbook instead.
@@ -4678,7 +4678,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class Binding extends OfficeExtension.ClientObject {
+    export class Binding extends OfficeExtension.ClientObject {
         /**
          *
          * Represents binding identifier. Read-only.
@@ -4750,7 +4750,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class BindingCollection extends OfficeExtension.ClientObject {
+    export class BindingCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.Binding>;
         /**
@@ -4840,7 +4840,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class TableCollection extends OfficeExtension.ClientObject {
+    export class TableCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.Table>;
         /**
@@ -4908,7 +4908,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class Table extends OfficeExtension.ClientObject {
+    export class Table extends OfficeExtension.ClientObject {
         /**
          *
          * Represents a collection of all the columns in the table. Read-only.
@@ -5095,7 +5095,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class TableColumnCollection extends OfficeExtension.ClientObject {
+    export class TableColumnCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.TableColumn>;
         /**
@@ -5164,7 +5164,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class TableColumn extends OfficeExtension.ClientObject {
+    export class TableColumn extends OfficeExtension.ClientObject {
         /**
          *
          * Retrieve the filter applied to the column.
@@ -5266,7 +5266,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class TableRowCollection extends OfficeExtension.ClientObject {
+    export class TableRowCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.TableRow>;
         /**
@@ -5331,7 +5331,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class TableRow extends OfficeExtension.ClientObject {
+    export class TableRow extends OfficeExtension.ClientObject {
         /**
          *
          * Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
@@ -5384,7 +5384,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class RangeFormat extends OfficeExtension.ClientObject {
+    export class RangeFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Collection of border objects that apply to the overall range. Read-only.
@@ -5492,7 +5492,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    class FormatProtection extends OfficeExtension.ClientObject {
+    export class FormatProtection extends OfficeExtension.ClientObject {
         /**
          *
          * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
@@ -5531,7 +5531,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class RangeFill extends OfficeExtension.ClientObject {
+    export class RangeFill extends OfficeExtension.ClientObject {
         /**
          *
          * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
@@ -5569,7 +5569,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class RangeBorder extends OfficeExtension.ClientObject {
+    export class RangeBorder extends OfficeExtension.ClientObject {
         /**
          *
          * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -5624,7 +5624,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class RangeBorderCollection extends OfficeExtension.ClientObject {
+    export class RangeBorderCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.RangeBorder>;
         /**
@@ -5666,7 +5666,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class RangeFont extends OfficeExtension.ClientObject {
+    export class RangeFont extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the bold status of font.
@@ -5737,7 +5737,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartCollection extends OfficeExtension.ClientObject {
+    export class ChartCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.Chart>;
         /**
@@ -5807,7 +5807,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class Chart extends OfficeExtension.ClientObject {
+    export class Chart extends OfficeExtension.ClientObject {
         /**
          *
          * Represents chart axes. Read-only.
@@ -5963,7 +5963,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartAreaFormat extends OfficeExtension.ClientObject {
+    export class ChartAreaFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the fill format of an object, which includes background formatting information. Read-only.
@@ -6002,7 +6002,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartSeriesCollection extends OfficeExtension.ClientObject {
+    export class ChartSeriesCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.ChartSeries>;
         /**
@@ -6042,7 +6042,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartSeries extends OfficeExtension.ClientObject {
+    export class ChartSeries extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
@@ -6088,7 +6088,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartSeriesFormat extends OfficeExtension.ClientObject {
+    export class ChartSeriesFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the fill format of a chart series, which includes background formating information. Read-only.
@@ -6127,7 +6127,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartPointsCollection extends OfficeExtension.ClientObject {
+    export class ChartPointsCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.ChartPoint>;
         /**
@@ -6167,7 +6167,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartPoint extends OfficeExtension.ClientObject {
+    export class ChartPoint extends OfficeExtension.ClientObject {
         /**
          *
          * Encapsulates the format properties chart point. Read-only.
@@ -6197,7 +6197,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartPointFormat extends OfficeExtension.ClientObject {
+    export class ChartPointFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the fill format of a chart, which includes background formating information. Read-only.
@@ -6219,7 +6219,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartAxes extends OfficeExtension.ClientObject {
+    export class ChartAxes extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the category axis in a chart. Read-only.
@@ -6266,7 +6266,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartAxis extends OfficeExtension.ClientObject {
+    export class ChartAxis extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the formatting of a chart object, which includes line and font formatting. Read-only.
@@ -6353,7 +6353,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartAxisFormat extends OfficeExtension.ClientObject {
+    export class ChartAxisFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
@@ -6392,7 +6392,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartAxisTitle extends OfficeExtension.ClientObject {
+    export class ChartAxisTitle extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the formatting of chart axis title. Read-only.
@@ -6439,7 +6439,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartAxisTitleFormat extends OfficeExtension.ClientObject {
+    export class ChartAxisTitleFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
@@ -6470,7 +6470,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartDataLabels extends OfficeExtension.ClientObject {
+    export class ChartDataLabels extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the format of chart data labels, which includes fill and font formatting. Read-only.
@@ -6565,7 +6565,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartDataLabelFormat extends OfficeExtension.ClientObject {
+    export class ChartDataLabelFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the fill format of the current chart data label. Read-only.
@@ -6604,7 +6604,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartGridlines extends OfficeExtension.ClientObject {
+    export class ChartGridlines extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the formatting of chart gridlines. Read-only.
@@ -6643,7 +6643,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartGridlinesFormat extends OfficeExtension.ClientObject {
+    export class ChartGridlinesFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Represents chart line formatting. Read-only.
@@ -6674,7 +6674,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartLegend extends OfficeExtension.ClientObject {
+    export class ChartLegend extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
@@ -6729,7 +6729,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartLegendFormat extends OfficeExtension.ClientObject {
+    export class ChartLegendFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the fill format of an object, which includes background formating information. Read-only.
@@ -6768,7 +6768,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartTitle extends OfficeExtension.ClientObject {
+    export class ChartTitle extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
@@ -6823,7 +6823,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartTitleFormat extends OfficeExtension.ClientObject {
+    export class ChartTitleFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the fill format of an object, which includes background formating information. Read-only.
@@ -6862,7 +6862,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartFill extends OfficeExtension.ClientObject {
+    export class ChartFill extends OfficeExtension.ClientObject {
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          */
@@ -6891,7 +6891,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartLineFormat extends OfficeExtension.ClientObject {
+    export class ChartLineFormat extends OfficeExtension.ClientObject {
         /**
          *
          * HTML color code representing the color of lines in the chart.
@@ -6929,7 +6929,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartFont extends OfficeExtension.ClientObject {
+    export class ChartFont extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the bold status of font.
@@ -7000,7 +7000,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    class RangeSort extends OfficeExtension.ClientObject {
+    export class RangeSort extends OfficeExtension.ClientObject {
         /**
          *
          * Perform a sort operation.
@@ -7022,7 +7022,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    class TableSort extends OfficeExtension.ClientObject {
+    export class TableSort extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the current conditions used to last sort the table.
@@ -7085,7 +7085,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface SortField {
+    export interface SortField {
         /**
          *
          * Represents whether the sorting is done in an ascending fashion.
@@ -7135,7 +7135,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    class Filter extends OfficeExtension.ClientObject {
+    export class Filter extends OfficeExtension.ClientObject {
         /**
          *
          * The currently applied filter on the given column.
@@ -7265,7 +7265,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface FilterCriteria {
+    export interface FilterCriteria {
         /**
          *
          * The HTML color string used to filter cells. Used with "cellColor" and "fontColor" filtering.
@@ -7332,7 +7332,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface FilterDatetime {
+    export interface FilterDatetime {
         /**
          *
          * The date in ISO8601 format used to filter data.
@@ -7354,7 +7354,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface Icon {
+    export interface Icon {
         /**
          *
          * Represents the index of the icon in the given set.
@@ -7378,7 +7378,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.5]
      */
-    class CustomXmlPartScopedCollection extends OfficeExtension.ClientObject {
+    export class CustomXmlPartScopedCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.CustomXmlPart>;
         /**
@@ -7435,7 +7435,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.5]
      */
-    class CustomXmlPartCollection extends OfficeExtension.ClientObject {
+    export class CustomXmlPartCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.CustomXmlPart>;
         /**
@@ -7453,7 +7453,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param namespaceUri
+         * @param namespaceUri - the namespace
          - */
         getByNamespace(namespaceUri: string): Excel.CustomXmlPartScopedCollection;
         /**
@@ -7494,7 +7494,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.5]
      */
-    class CustomXmlPart extends OfficeExtension.ClientObject {
+    export class CustomXmlPart extends OfficeExtension.ClientObject {
         /**
          *
          * The custom XML part's ID. Read-only.
@@ -7547,7 +7547,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.3]
      */
-    class PivotTableCollection extends OfficeExtension.ClientObject {
+    export class PivotTableCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.PivotTable>;
         /**
@@ -7594,7 +7594,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.3]
      */
-    class PivotTable extends OfficeExtension.ClientObject {
+    export class PivotTable extends OfficeExtension.ClientObject {
         /**
          *
          * The worksheet containing the current PivotTable. Read-only.
@@ -7647,7 +7647,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class ConditionalFormatCollection extends OfficeExtension.ClientObject {
+    export class ConditionalFormatCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Excel.ConditionalFormat>;
         /**
@@ -7694,7 +7694,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class ConditionalFormat extends OfficeExtension.ClientObject {
+    export class ConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
@@ -7900,7 +7900,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class DataBarConditionalFormat extends OfficeExtension.ClientObject {
+    export class DataBarConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Representation of all values to the left of the axis in an Excel data bar.
@@ -7988,7 +7988,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class ConditionalDataBarPositiveFormat extends OfficeExtension.ClientObject {
+    export class ConditionalDataBarPositiveFormat extends OfficeExtension.ClientObject {
         /**
          *
          * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -8036,7 +8036,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class ConditionalDataBarNegativeFormat extends OfficeExtension.ClientObject {
+    export class ConditionalDataBarNegativeFormat extends OfficeExtension.ClientObject {
         /**
          *
          * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -8092,7 +8092,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    interface ConditionalDataBarRule {
+    export interface ConditionalDataBarRule {
         /**
          *
          * The formula, if required, to evaluate the databar rule on.
@@ -8114,7 +8114,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class CustomConditionalFormat extends OfficeExtension.ClientObject {
+    export class CustomConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
@@ -8153,7 +8153,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class ConditionalFormatRule extends OfficeExtension.ClientObject {
+    export class ConditionalFormatRule extends OfficeExtension.ClientObject {
         /**
          *
          * The formula, if required, to evaluate the conditional format rule on.
@@ -8200,7 +8200,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class IconSetConditionalFormat extends OfficeExtension.ClientObject {
+    export class IconSetConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula and operator will be ignored when set.
@@ -8255,7 +8255,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    interface ConditionalIconCriterion {
+    export interface ConditionalIconCriterion {
         /**
          *
          * The custom icon for the current criterion if different from the default IconSet, else null will be returned.
@@ -8291,7 +8291,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class ColorScaleConditionalFormat extends OfficeExtension.ClientObject {
+    export class ColorScaleConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * The criteria of the color scale. Midpoint is optional when using a two point color scale.
@@ -8330,7 +8330,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    interface ConditionalColorScaleCriteria {
+    export interface ConditionalColorScaleCriteria {
         /**
          *
          * The maximum point Color Scale Criterion.
@@ -8359,7 +8359,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    interface ConditionalColorScaleCriterion {
+    export interface ConditionalColorScaleCriterion {
         /**
          *
          * HTML color code representation of the color scale color. E.g. #FF0000 represents Red.
@@ -8388,7 +8388,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class TopBottomConditionalFormat extends OfficeExtension.ClientObject {
+    export class TopBottomConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
@@ -8427,7 +8427,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    interface ConditionalTopBottomRule {
+    export interface ConditionalTopBottomRule {
         /**
          *
          * The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks.
@@ -8449,7 +8449,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class PresetCriteriaConditionalFormat extends OfficeExtension.ClientObject {
+    export class PresetCriteriaConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
@@ -8488,7 +8488,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    interface ConditionalPresetCriteriaRule {
+    export interface ConditionalPresetCriteriaRule {
         /**
          *
          * The criterion of the conditional format.
@@ -8503,7 +8503,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class TextConditionalFormat extends OfficeExtension.ClientObject {
+    export class TextConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
@@ -8542,7 +8542,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    interface ConditionalTextComparisonRule {
+    export interface ConditionalTextComparisonRule {
         /**
          *
          * The operator of the text conditional format.
@@ -8564,7 +8564,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class CellValueConditionalFormat extends OfficeExtension.ClientObject {
+    export class CellValueConditionalFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
@@ -8603,7 +8603,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    interface ConditionalCellValueRule {
+    export interface ConditionalCellValueRule {
         /**
          *
          * The formula, if required, to evaluate the conditional format rule on.
@@ -8632,7 +8632,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class ConditionalRangeFormat extends OfficeExtension.ClientObject {
+    export class ConditionalRangeFormat extends OfficeExtension.ClientObject {
         /**
          *
          * Collection of border objects that apply to the overall conditional format range. Read-only.
@@ -8684,7 +8684,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class ConditionalRangeFont extends OfficeExtension.ClientObject {
+    export class ConditionalRangeFont extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the bold status of font.
@@ -8754,7 +8754,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class ConditionalRangeFill extends OfficeExtension.ClientObject {
+    export class ConditionalRangeFill extends OfficeExtension.ClientObject {
         /**
          *
          * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -8792,7 +8792,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class ConditionalRangeBorder extends OfficeExtension.ClientObject {
+    export class ConditionalRangeBorder extends OfficeExtension.ClientObject {
         /**
          *
          * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -8839,7 +8839,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    class ConditionalRangeBorderCollection extends OfficeExtension.ClientObject {
+    export class ConditionalRangeBorderCollection extends OfficeExtension.ClientObject {
         /**
          *
          * Gets the top border
@@ -8906,7 +8906,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace BindingType {
+    export namespace BindingType {
         var range: string;
         var table: string;
         var text: string;
@@ -8914,7 +8914,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace BorderIndex {
+    export namespace BorderIndex {
         var edgeTop: string;
         var edgeBottom: string;
         var edgeLeft: string;
@@ -8927,7 +8927,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace BorderLineStyle {
+    export namespace BorderLineStyle {
         var none: string;
         var continuous: string;
         var dash: string;
@@ -8940,7 +8940,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace BorderWeight {
+    export namespace BorderWeight {
         var hairline: string;
         var thin: string;
         var medium: string;
@@ -8949,7 +8949,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace CalculationMode {
+    export namespace CalculationMode {
         var automatic: string;
         var automaticExceptTables: string;
         var manual: string;
@@ -8957,7 +8957,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace CalculationType {
+    export namespace CalculationType {
         /**
          *
          * Recalculates all cells that Excel has marked as dirty, that is, dependents of volatile or changed data, and cells programmatically marked as dirty.
@@ -8980,7 +8980,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks.]
      */
-    namespace ClearApplyTo {
+    export namespace ClearApplyTo {
         var all: string;
         var formats: string;
         var contents: string;
@@ -8989,7 +8989,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace ChartDataLabelPosition {
+    export namespace ChartDataLabelPosition {
         var invalid: string;
         var none: string;
         var center: string;
@@ -9006,7 +9006,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace ChartLegendPosition {
+    export namespace ChartLegendPosition {
         var invalid: string;
         var top: string;
         var bottom: string;
@@ -9021,7 +9021,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    namespace ChartSeriesBy {
+    export namespace ChartSeriesBy {
         /**
          *
          * On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; on Excel Online, "auto" will simply default to "columns".
@@ -9034,7 +9034,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace ChartType {
+    export namespace ChartType {
         var invalid: string;
         var columnClustered: string;
         var columnStacked: string;
@@ -9113,7 +9113,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace ChartUnderlineStyle {
+    export namespace ChartUnderlineStyle {
         var none: string;
         var single: string;
     }
@@ -9123,7 +9123,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    namespace ConditionalDataBarAxisFormat {
+    export namespace ConditionalDataBarAxisFormat {
         var automatic: string;
         var none: string;
         var cellMidPoint: string;
@@ -9134,7 +9134,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    namespace ConditionalDataBarDirection {
+    export namespace ConditionalDataBarDirection {
         var context: string;
         var leftToRight: string;
         var rightToLeft: string;
@@ -9145,14 +9145,14 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    namespace ConditionalFormatDirection {
+    export namespace ConditionalFormatDirection {
         var top: string;
         var bottom: string;
     }
     /**
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    namespace ConditionalFormatType {
+    export namespace ConditionalFormatType {
         var custom: string;
         var dataBar: string;
         var colorScale: string;
@@ -9168,7 +9168,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    namespace ConditionalFormatRuleType {
+    export namespace ConditionalFormatRuleType {
         var invalid: string;
         var automatic: string;
         var lowestValue: string;
@@ -9184,7 +9184,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    namespace ConditionalFormatIconRuleType {
+    export namespace ConditionalFormatIconRuleType {
         var invalid: string;
         var number: string;
         var percent: string;
@@ -9197,7 +9197,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    namespace ConditionalFormatColorCriterionType {
+    export namespace ConditionalFormatColorCriterionType {
         var invalid: string;
         var lowestValue: string;
         var highestValue: string;
@@ -9212,7 +9212,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    namespace ConditionalTopBottomCriterionType {
+    export namespace ConditionalTopBottomCriterionType {
         var invalid: string;
         var topItems: string;
         var topPercent: string;
@@ -9225,7 +9225,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    namespace ConditionalFormatPresetCriterion {
+    export namespace ConditionalFormatPresetCriterion {
         var invalid: string;
         var blanks: string;
         var nonBlanks: string;
@@ -9260,7 +9260,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    namespace ConditionalTextOperator {
+    export namespace ConditionalTextOperator {
         var invalid: string;
         var contains: string;
         var notContains: string;
@@ -9273,7 +9273,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    namespace ConditionalCellValueOperator {
+    export namespace ConditionalCellValueOperator {
         var invalid: string;
         var between: string;
         var notBetween: string;
@@ -9290,7 +9290,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    namespace ConditionalIconCriterionOperator {
+    export namespace ConditionalIconCriterionOperator {
         var invalid: string;
         var greaterThan: string;
         var greaterThanOrEqual: string;
@@ -9298,7 +9298,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    namespace ConditionalRangeBorderIndex {
+    export namespace ConditionalRangeBorderIndex {
         var edgeTop: string;
         var edgeBottom: string;
         var edgeLeft: string;
@@ -9307,7 +9307,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    namespace ConditionalRangeBorderLineStyle {
+    export namespace ConditionalRangeBorderLineStyle {
         var none: string;
         var continuous: string;
         var dash: string;
@@ -9318,7 +9318,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.6 (PREVIEW)]
      */
-    namespace ConditionalRangeFontUnderlineStyle {
+    export namespace ConditionalRangeFontUnderlineStyle {
         var none: string;
         var single: string;
         var double: string;
@@ -9326,14 +9326,14 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace DeleteShiftDirection {
+    export namespace DeleteShiftDirection {
         var up: string;
         var left: string;
     }
     /**
      * [Api set: ExcelApi 1.2]
      */
-    namespace DynamicFilterCriteria {
+    export namespace DynamicFilterCriteria {
         var unknown: string;
         var aboveAverage: string;
         var allDatesInPeriodApril: string;
@@ -9373,7 +9373,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.2]
      */
-    namespace FilterDatetimeSpecificity {
+    export namespace FilterDatetimeSpecificity {
         var year: string;
         var month: string;
         var day: string;
@@ -9384,7 +9384,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.2]
      */
-    namespace FilterOn {
+    export namespace FilterOn {
         var bottomItems: string;
         var bottomPercent: string;
         var cellColor: string;
@@ -9399,14 +9399,14 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.2]
      */
-    namespace FilterOperator {
+    export namespace FilterOperator {
         var and: string;
         var or: string;
     }
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace HorizontalAlignment {
+    export namespace HorizontalAlignment {
         var general: string;
         var left: string;
         var center: string;
@@ -9419,7 +9419,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.2]
      */
-    namespace IconSet {
+    export namespace IconSet {
         var invalid: string;
         var threeArrows: string;
         var threeArrowsGray: string;
@@ -9445,7 +9445,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.2]
      */
-    namespace ImageFittingMode {
+    export namespace ImageFittingMode {
         var fit: string;
         var fitAndCenter: string;
         var fill: string;
@@ -9453,21 +9453,21 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace InsertShiftDirection {
+    export namespace InsertShiftDirection {
         var down: string;
         var right: string;
     }
     /**
      * [Api set: ExcelApi 1.4]
      */
-    namespace NamedItemScope {
+    export namespace NamedItemScope {
         var worksheet: string;
         var workbook: string;
     }
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace NamedItemType {
+    export namespace NamedItemType {
         var string: string;
         var integer: string;
         var double: string;
@@ -9478,7 +9478,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace RangeUnderlineStyle {
+    export namespace RangeUnderlineStyle {
         var none: string;
         var single: string;
         var double: string;
@@ -9488,7 +9488,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace SheetVisibility {
+    export namespace SheetVisibility {
         var visible: string;
         var hidden: string;
         var veryHidden: string;
@@ -9496,7 +9496,7 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace RangeValueType {
+    export namespace RangeValueType {
         var unknown: string;
         var empty: string;
         var string: string;
@@ -9508,14 +9508,14 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.2]
      */
-    namespace SortOrientation {
+    export namespace SortOrientation {
         var rows: string;
         var columns: string;
     }
     /**
      * [Api set: ExcelApi 1.2]
      */
-    namespace SortOn {
+    export namespace SortOn {
         var value: string;
         var cellColor: string;
         var fontColor: string;
@@ -9524,21 +9524,21 @@ export declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.2]
      */
-    namespace SortDataOption {
+    export namespace SortDataOption {
         var normal: string;
         var textAsNumber: string;
     }
     /**
      * [Api set: ExcelApi 1.2]
      */
-    namespace SortMethod {
+    export namespace SortMethod {
         var pinYin: string;
         var strokeCount: string;
     }
     /**
      * [Api set: ExcelApi 1.1]
      */
-    namespace VerticalAlignment {
+    export namespace VerticalAlignment {
         var top: string;
         var center: string;
         var bottom: string;
@@ -9551,7 +9551,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    class FunctionResult<T> extends OfficeExtension.ClientObject {
+    export class FunctionResult<T> extends OfficeExtension.ClientObject {
         /**
          *
          * Error value (such as "#DIV/0") representing the error. If the error string is not set, then the function succeeded, and its result is written to the Value field. The error is always in the English locale.
@@ -9581,7 +9581,7 @@ export declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    class Functions extends OfficeExtension.ClientObject {
+    export class Functions extends OfficeExtension.ClientObject {
         /**
          *
          * Returns the absolute value of a number, a number without its sign.
@@ -13320,7 +13320,7 @@ export declare namespace Excel {
         z_Test(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, sigma?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         toJSON(): {};
     }
-    namespace ErrorCodes {
+    export namespace ErrorCodes {
         var accessDenied: string;
         var apiNotFound: string;
         var generalException: string;
@@ -13336,9 +13336,9 @@ export declare namespace Excel {
         var unsupportedOperation: string;
         var invalidOperationInCellEditMode: string;
     }
-    module Interfaces {
+    export module Interfaces {
         /** An interface for updating data on the Worksheet object, for use in "worksheet.set({ ... })". */
-        interface WorksheetUpdateData {
+        export interface WorksheetUpdateData {
             /**
              *
              * The display name of the worksheet.
@@ -13362,7 +13362,7 @@ export declare namespace Excel {
             visibility?: string;
         }
         /** An interface for updating data on the Range object, for use in "range.set({ ... })". */
-        interface RangeUpdateData {
+        export interface RangeUpdateData {
             /**
             *
             * Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
@@ -13421,7 +13421,7 @@ export declare namespace Excel {
             values?: Array<Array<any>>;
         }
         /** An interface for updating data on the RangeView object, for use in "rangeView.set({ ... })". */
-        interface RangeViewUpdateData {
+        export interface RangeViewUpdateData {
             /**
              *
              * Represents the formula in A1-style notation.
@@ -13459,7 +13459,7 @@ export declare namespace Excel {
             values?: Array<Array<any>>;
         }
         /** An interface for updating data on the Setting object, for use in "setting.set({ ... })". */
-        interface SettingUpdateData {
+        export interface SettingUpdateData {
             /**
              *
              * Represents the value stored for this setting.
@@ -13469,7 +13469,7 @@ export declare namespace Excel {
             value?: any;
         }
         /** An interface for updating data on the NamedItem object, for use in "namedItem.set({ ... })". */
-        interface NamedItemUpdateData {
+        export interface NamedItemUpdateData {
             /**
              *
              * Represents the comment associated with this name.
@@ -13486,7 +13486,7 @@ export declare namespace Excel {
             visible?: boolean;
         }
         /** An interface for updating data on the Table object, for use in "table.set({ ... })". */
-        interface TableUpdateData {
+        export interface TableUpdateData {
             /**
              *
              * Indicates whether the first column contains special formatting.
@@ -13552,7 +13552,7 @@ export declare namespace Excel {
             style?: string;
         }
         /** An interface for updating data on the TableColumn object, for use in "tableColumn.set({ ... })". */
-        interface TableColumnUpdateData {
+        export interface TableColumnUpdateData {
             /**
              *
              * Represents the name of the table column.
@@ -13569,7 +13569,7 @@ export declare namespace Excel {
             values?: Array<Array<any>>;
         }
         /** An interface for updating data on the TableRow object, for use in "tableRow.set({ ... })". */
-        interface TableRowUpdateData {
+        export interface TableRowUpdateData {
             /**
              *
              * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.
@@ -13579,7 +13579,7 @@ export declare namespace Excel {
             values?: Array<Array<any>>;
         }
         /** An interface for updating data on the RangeFormat object, for use in "rangeFormat.set({ ... })". */
-        interface RangeFormatUpdateData {
+        export interface RangeFormatUpdateData {
             /**
             *
             * Returns the fill object defined on the overall range.
@@ -13638,7 +13638,7 @@ export declare namespace Excel {
             wrapText?: boolean;
         }
         /** An interface for updating data on the FormatProtection object, for use in "formatProtection.set({ ... })". */
-        interface FormatProtectionUpdateData {
+        export interface FormatProtectionUpdateData {
             /**
              *
              * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
@@ -13655,7 +13655,7 @@ export declare namespace Excel {
             locked?: boolean;
         }
         /** An interface for updating data on the RangeFill object, for use in "rangeFill.set({ ... })". */
-        interface RangeFillUpdateData {
+        export interface RangeFillUpdateData {
             /**
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
@@ -13665,7 +13665,7 @@ export declare namespace Excel {
             color?: string;
         }
         /** An interface for updating data on the RangeBorder object, for use in "rangeBorder.set({ ... })". */
-        interface RangeBorderUpdateData {
+        export interface RangeBorderUpdateData {
             /**
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -13689,7 +13689,7 @@ export declare namespace Excel {
             weight?: string;
         }
         /** An interface for updating data on the RangeFont object, for use in "rangeFont.set({ ... })". */
-        interface RangeFontUpdateData {
+        export interface RangeFontUpdateData {
             /**
              *
              * Represents the bold status of font.
@@ -13734,7 +13734,7 @@ export declare namespace Excel {
             underline?: string;
         }
         /** An interface for updating data on the Chart object, for use in "chart.set({ ... })". */
-        interface ChartUpdateData {
+        export interface ChartUpdateData {
             /**
             *
             * Represents chart axes.
@@ -13807,7 +13807,7 @@ export declare namespace Excel {
             width?: number;
         }
         /** An interface for updating data on the ChartAreaFormat object, for use in "chartAreaFormat.set({ ... })". */
-        interface ChartAreaFormatUpdateData {
+        export interface ChartAreaFormatUpdateData {
             /**
             *
             * Represents the font attributes (font name, font size, color, etc.) for the current object.
@@ -13817,7 +13817,7 @@ export declare namespace Excel {
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartSeries object, for use in "chartSeries.set({ ... })". */
-        interface ChartSeriesUpdateData {
+        export interface ChartSeriesUpdateData {
             /**
             *
             * Represents the formatting of a chart series, which includes fill and line formatting.
@@ -13834,7 +13834,7 @@ export declare namespace Excel {
             name?: string;
         }
         /** An interface for updating data on the ChartSeriesFormat object, for use in "chartSeriesFormat.set({ ... })". */
-        interface ChartSeriesFormatUpdateData {
+        export interface ChartSeriesFormatUpdateData {
             /**
             *
             * Represents line formatting.
@@ -13844,7 +13844,7 @@ export declare namespace Excel {
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
         /** An interface for updating data on the ChartAxes object, for use in "chartAxes.set({ ... })". */
-        interface ChartAxesUpdateData {
+        export interface ChartAxesUpdateData {
             /**
             *
             * Represents the category axis in a chart.
@@ -13868,7 +13868,7 @@ export declare namespace Excel {
             valueAxis?: Excel.Interfaces.ChartAxisUpdateData;
         }
         /** An interface for updating data on the ChartAxis object, for use in "chartAxis.set({ ... })". */
-        interface ChartAxisUpdateData {
+        export interface ChartAxisUpdateData {
             /**
             *
             * Represents the formatting of a chart object, which includes line and font formatting.
@@ -13927,7 +13927,7 @@ export declare namespace Excel {
             minorUnit?: any;
         }
         /** An interface for updating data on the ChartAxisFormat object, for use in "chartAxisFormat.set({ ... })". */
-        interface ChartAxisFormatUpdateData {
+        export interface ChartAxisFormatUpdateData {
             /**
             *
             * Represents the font attributes (font name, font size, color, etc.) for a chart axis element.
@@ -13944,7 +13944,7 @@ export declare namespace Excel {
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
         /** An interface for updating data on the ChartAxisTitle object, for use in "chartAxisTitle.set({ ... })". */
-        interface ChartAxisTitleUpdateData {
+        export interface ChartAxisTitleUpdateData {
             /**
             *
             * Represents the formatting of chart axis title.
@@ -13968,7 +13968,7 @@ export declare namespace Excel {
             visible?: boolean;
         }
         /** An interface for updating data on the ChartAxisTitleFormat object, for use in "chartAxisTitleFormat.set({ ... })". */
-        interface ChartAxisTitleFormatUpdateData {
+        export interface ChartAxisTitleFormatUpdateData {
             /**
             *
             * Represents the font attributes, such as font name, font size, color, etc. of chart axis title object.
@@ -13978,7 +13978,7 @@ export declare namespace Excel {
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartDataLabels object, for use in "chartDataLabels.set({ ... })". */
-        interface ChartDataLabelsUpdateData {
+        export interface ChartDataLabelsUpdateData {
             /**
             *
             * Represents the format of chart data labels, which includes fill and font formatting.
@@ -14044,7 +14044,7 @@ export declare namespace Excel {
             showValue?: boolean;
         }
         /** An interface for updating data on the ChartDataLabelFormat object, for use in "chartDataLabelFormat.set({ ... })". */
-        interface ChartDataLabelFormatUpdateData {
+        export interface ChartDataLabelFormatUpdateData {
             /**
             *
             * Represents the font attributes (font name, font size, color, etc.) for a chart data label.
@@ -14054,7 +14054,7 @@ export declare namespace Excel {
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartGridlines object, for use in "chartGridlines.set({ ... })". */
-        interface ChartGridlinesUpdateData {
+        export interface ChartGridlinesUpdateData {
             /**
             *
             * Represents the formatting of chart gridlines.
@@ -14071,7 +14071,7 @@ export declare namespace Excel {
             visible?: boolean;
         }
         /** An interface for updating data on the ChartGridlinesFormat object, for use in "chartGridlinesFormat.set({ ... })". */
-        interface ChartGridlinesFormatUpdateData {
+        export interface ChartGridlinesFormatUpdateData {
             /**
             *
             * Represents chart line formatting.
@@ -14081,7 +14081,7 @@ export declare namespace Excel {
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
         /** An interface for updating data on the ChartLegend object, for use in "chartLegend.set({ ... })". */
-        interface ChartLegendUpdateData {
+        export interface ChartLegendUpdateData {
             /**
             *
             * Represents the formatting of a chart legend, which includes fill and font formatting.
@@ -14112,7 +14112,7 @@ export declare namespace Excel {
             visible?: boolean;
         }
         /** An interface for updating data on the ChartLegendFormat object, for use in "chartLegendFormat.set({ ... })". */
-        interface ChartLegendFormatUpdateData {
+        export interface ChartLegendFormatUpdateData {
             /**
             *
             * Represents the font attributes such as font name, font size, color, etc. of a chart legend.
@@ -14122,7 +14122,7 @@ export declare namespace Excel {
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartTitle object, for use in "chartTitle.set({ ... })". */
-        interface ChartTitleUpdateData {
+        export interface ChartTitleUpdateData {
             /**
             *
             * Represents the formatting of a chart title, which includes fill and font formatting.
@@ -14153,7 +14153,7 @@ export declare namespace Excel {
             visible?: boolean;
         }
         /** An interface for updating data on the ChartTitleFormat object, for use in "chartTitleFormat.set({ ... })". */
-        interface ChartTitleFormatUpdateData {
+        export interface ChartTitleFormatUpdateData {
             /**
             *
             * Represents the font attributes (font name, font size, color, etc.) for an object.
@@ -14163,7 +14163,7 @@ export declare namespace Excel {
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartLineFormat object, for use in "chartLineFormat.set({ ... })". */
-        interface ChartLineFormatUpdateData {
+        export interface ChartLineFormatUpdateData {
             /**
              *
              * HTML color code representing the color of lines in the chart.
@@ -14173,7 +14173,7 @@ export declare namespace Excel {
             color?: string;
         }
         /** An interface for updating data on the ChartFont object, for use in "chartFont.set({ ... })". */
-        interface ChartFontUpdateData {
+        export interface ChartFontUpdateData {
             /**
              *
              * Represents the bold status of font.
@@ -14218,7 +14218,7 @@ export declare namespace Excel {
             underline?: string;
         }
         /** An interface for updating data on the PivotTable object, for use in "pivotTable.set({ ... })". */
-        interface PivotTableUpdateData {
+        export interface PivotTableUpdateData {
             /**
              *
              * Name of the PivotTable.
@@ -14228,7 +14228,7 @@ export declare namespace Excel {
             name?: string;
         }
         /** An interface for updating data on the ConditionalFormat object, for use in "conditionalFormat.set({ ... })". */
-        interface ConditionalFormatUpdateData {
+        export interface ConditionalFormatUpdateData {
             /**
             *
             * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
@@ -14367,7 +14367,7 @@ export declare namespace Excel {
             stopIfTrue?: boolean;
         }
         /** An interface for updating data on the DataBarConditionalFormat object, for use in "dataBarConditionalFormat.set({ ... })". */
-        interface DataBarConditionalFormatUpdateData {
+        export interface DataBarConditionalFormatUpdateData {
             /**
             *
             * Representation of all values to the left of the axis in an Excel data bar.
@@ -14427,7 +14427,7 @@ export declare namespace Excel {
             upperBoundRule?: Excel.ConditionalDataBarRule;
         }
         /** An interface for updating data on the ConditionalDataBarPositiveFormat object, for use in "conditionalDataBarPositiveFormat.set({ ... })". */
-        interface ConditionalDataBarPositiveFormatUpdateData {
+        export interface ConditionalDataBarPositiveFormatUpdateData {
             /**
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -14452,7 +14452,7 @@ export declare namespace Excel {
             gradientFill?: boolean;
         }
         /** An interface for updating data on the ConditionalDataBarNegativeFormat object, for use in "conditionalDataBarNegativeFormat.set({ ... })". */
-        interface ConditionalDataBarNegativeFormatUpdateData {
+        export interface ConditionalDataBarNegativeFormatUpdateData {
             /**
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -14484,7 +14484,7 @@ export declare namespace Excel {
             matchPositiveFillColor?: boolean;
         }
         /** An interface for updating data on the CustomConditionalFormat object, for use in "customConditionalFormat.set({ ... })". */
-        interface CustomConditionalFormatUpdateData {
+        export interface CustomConditionalFormatUpdateData {
             /**
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -14501,7 +14501,7 @@ export declare namespace Excel {
             rule?: Excel.Interfaces.ConditionalFormatRuleUpdateData;
         }
         /** An interface for updating data on the ConditionalFormatRule object, for use in "conditionalFormatRule.set({ ... })". */
-        interface ConditionalFormatRuleUpdateData {
+        export interface ConditionalFormatRuleUpdateData {
             /**
              *
              * The formula, if required, to evaluate the conditional format rule on.
@@ -14525,7 +14525,7 @@ export declare namespace Excel {
             formulaR1C1?: string;
         }
         /** An interface for updating data on the IconSetConditionalFormat object, for use in "iconSetConditionalFormat.set({ ... })". */
-        interface IconSetConditionalFormatUpdateData {
+        export interface IconSetConditionalFormatUpdateData {
             /**
              *
              * An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula and operator will be ignored when set.
@@ -14556,7 +14556,7 @@ export declare namespace Excel {
             style?: string;
         }
         /** An interface for updating data on the ColorScaleConditionalFormat object, for use in "colorScaleConditionalFormat.set({ ... })". */
-        interface ColorScaleConditionalFormatUpdateData {
+        export interface ColorScaleConditionalFormatUpdateData {
             /**
              *
              * The criteria of the color scale. Midpoint is optional when using a two point color scale.
@@ -14566,7 +14566,7 @@ export declare namespace Excel {
             criteria?: Excel.ConditionalColorScaleCriteria;
         }
         /** An interface for updating data on the TopBottomConditionalFormat object, for use in "topBottomConditionalFormat.set({ ... })". */
-        interface TopBottomConditionalFormatUpdateData {
+        export interface TopBottomConditionalFormatUpdateData {
             /**
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -14583,7 +14583,7 @@ export declare namespace Excel {
             rule?: Excel.ConditionalTopBottomRule;
         }
         /** An interface for updating data on the PresetCriteriaConditionalFormat object, for use in "presetCriteriaConditionalFormat.set({ ... })". */
-        interface PresetCriteriaConditionalFormatUpdateData {
+        export interface PresetCriteriaConditionalFormatUpdateData {
             /**
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -14600,7 +14600,7 @@ export declare namespace Excel {
             rule?: Excel.ConditionalPresetCriteriaRule;
         }
         /** An interface for updating data on the TextConditionalFormat object, for use in "textConditionalFormat.set({ ... })". */
-        interface TextConditionalFormatUpdateData {
+        export interface TextConditionalFormatUpdateData {
             /**
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -14617,7 +14617,7 @@ export declare namespace Excel {
             rule?: Excel.ConditionalTextComparisonRule;
         }
         /** An interface for updating data on the CellValueConditionalFormat object, for use in "cellValueConditionalFormat.set({ ... })". */
-        interface CellValueConditionalFormatUpdateData {
+        export interface CellValueConditionalFormatUpdateData {
             /**
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -14634,7 +14634,7 @@ export declare namespace Excel {
             rule?: Excel.ConditionalCellValueRule;
         }
         /** An interface for updating data on the ConditionalRangeFormat object, for use in "conditionalRangeFormat.set({ ... })". */
-        interface ConditionalRangeFormatUpdateData {
+        export interface ConditionalRangeFormatUpdateData {
             /**
              *
              * Represents Excel's number format code for the given range. Cleared if null is passed in.
@@ -14644,7 +14644,7 @@ export declare namespace Excel {
             numberFormat?: any;
         }
         /** An interface for updating data on the ConditionalRangeFont object, for use in "conditionalRangeFont.set({ ... })". */
-        interface ConditionalRangeFontUpdateData {
+        export interface ConditionalRangeFontUpdateData {
             /**
              *
              * Represents the bold status of font.
@@ -14682,7 +14682,7 @@ export declare namespace Excel {
             underline?: string;
         }
         /** An interface for updating data on the ConditionalRangeFill object, for use in "conditionalRangeFill.set({ ... })". */
-        interface ConditionalRangeFillUpdateData {
+        export interface ConditionalRangeFillUpdateData {
             /**
              *
              * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -14692,7 +14692,7 @@ export declare namespace Excel {
             color?: string;
         }
         /** An interface for updating data on the ConditionalRangeBorder object, for use in "conditionalRangeBorder.set({ ... })". */
-        interface ConditionalRangeBorderUpdateData {
+        export interface ConditionalRangeBorderUpdateData {
             /**
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -14735,7 +14735,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.1]
      */
-    class Body extends OfficeExtension.ClientObject {
+    export class Body extends OfficeExtension.ClientObject {
         /**
          *
          * Gets the collection of rich text content control objects in the body. Read-only.
@@ -15029,7 +15029,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.1]
      */
-    class ContentControl extends OfficeExtension.ClientObject {
+    export class ContentControl extends OfficeExtension.ClientObject {
         /**
          *
          * Gets the collection of content control objects in the content control. Read-only.
@@ -15434,7 +15434,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.1]
      */
-    class ContentControlCollection extends OfficeExtension.ClientObject {
+    export class ContentControlCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         items: Array<Word.ContentControl>;
         /**
@@ -15525,7 +15525,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.3]
      */
-    class CustomProperty extends OfficeExtension.ClientObject {
+    export class CustomProperty extends OfficeExtension.ClientObject {
         /**
          *
          * Gets the key of the custom property. Read only.
@@ -15587,7 +15587,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.3]
      */
-    class CustomPropertyCollection extends OfficeExtension.ClientObject {
+    export class CustomPropertyCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         items: Array<Word.CustomProperty>;
         /**
@@ -15652,7 +15652,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.1]
      */
-    class Document extends OfficeExtension.ClientObject {
+    export class Document extends OfficeExtension.ClientObject {
         /**
          *
          * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
@@ -15735,7 +15735,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.3]
      */
-    class DocumentProperties extends OfficeExtension.ClientObject {
+    export class DocumentProperties extends OfficeExtension.ClientObject {
         /**
          *
          * Gets the collection of custom properties of the document. Read only.
@@ -15909,7 +15909,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.1]
      */
-    class Font extends OfficeExtension.ClientObject {
+    export class Font extends OfficeExtension.ClientObject {
         /**
          *
          * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
@@ -16028,7 +16028,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.1]
      */
-    class InlinePicture extends OfficeExtension.ClientObject {
+    export class InlinePicture extends OfficeExtension.ClientObject {
         /**
          *
          * Gets the parent paragraph that contains the inline image. Read-only.
@@ -16279,7 +16279,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.1]
      */
-    class InlinePictureCollection extends OfficeExtension.ClientObject {
+    export class InlinePictureCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         items: Array<Word.InlinePicture>;
         /**
@@ -16316,7 +16316,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.3]
      */
-    class List extends OfficeExtension.ClientObject {
+    export class List extends OfficeExtension.ClientObject {
         /**
          *
          * Gets paragraphs in the list. Read-only.
@@ -16451,7 +16451,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.3]
      */
-    class ListCollection extends OfficeExtension.ClientObject {
+    export class ListCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         items: Array<Word.List>;
         /**
@@ -16515,7 +16515,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.3]
      */
-    class ListItem extends OfficeExtension.ClientObject {
+    export class ListItem extends OfficeExtension.ClientObject {
         /**
          *
          * Gets or sets the level of the item in the list.
@@ -16597,7 +16597,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.1]
      */
-    class Paragraph extends OfficeExtension.ClientObject {
+    export class Paragraph extends OfficeExtension.ClientObject {
         /**
          *
          * Gets the collection of content control objects in the paragraph. Read-only.
@@ -17083,7 +17083,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.1]
      */
-    class ParagraphCollection extends OfficeExtension.ClientObject {
+    export class ParagraphCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         items: Array<Word.Paragraph>;
         /**
@@ -17134,7 +17134,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.1]
      */
-    class Range extends OfficeExtension.ClientObject {
+    export class Range extends OfficeExtension.ClientObject {
         /**
          *
          * Gets the collection of content control objects in the range. Read-only.
@@ -17544,7 +17544,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.1]
      */
-    class RangeCollection extends OfficeExtension.ClientObject {
+    export class RangeCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         items: Array<Word.Range>;
         /**
@@ -17581,7 +17581,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.1]
      */
-    class SearchOptions extends OfficeExtension.ClientObject {
+    export class SearchOptions extends OfficeExtension.ClientObject {
         matchWildCards: boolean;
         /**
          *
@@ -17665,7 +17665,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.1]
      */
-    class Section extends OfficeExtension.ClientObject {
+    export class Section extends OfficeExtension.ClientObject {
         /**
          *
          * Gets the body object of the section. This does not include the header/footer and other section metadata. Read-only.
@@ -17736,7 +17736,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.1]
      */
-    class SectionCollection extends OfficeExtension.ClientObject {
+    export class SectionCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         items: Array<Word.Section>;
         /**
@@ -17773,7 +17773,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.3]
      */
-    class Table extends OfficeExtension.ClientObject {
+    export class Table extends OfficeExtension.ClientObject {
         /**
          *
          * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
@@ -18236,7 +18236,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.3]
      */
-    class TableCollection extends OfficeExtension.ClientObject {
+    export class TableCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         items: Array<Word.Table>;
         /**
@@ -18273,7 +18273,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.3]
      */
-    class TableRow extends OfficeExtension.ClientObject {
+    export class TableRow extends OfficeExtension.ClientObject {
         /**
          *
          * Gets cells. Read-only.
@@ -18484,7 +18484,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.3]
      */
-    class TableRowCollection extends OfficeExtension.ClientObject {
+    export class TableRowCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         items: Array<Word.TableRow>;
         /**
@@ -18521,7 +18521,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.3]
      */
-    class TableCell extends OfficeExtension.ClientObject {
+    export class TableCell extends OfficeExtension.ClientObject {
         /**
          *
          * Gets the body object of the cell. Read-only.
@@ -18716,7 +18716,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.3]
      */
-    class TableCellCollection extends OfficeExtension.ClientObject {
+    export class TableCellCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         items: Array<Word.TableCell>;
         /**
@@ -18753,7 +18753,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi 1.3]
      */
-    class TableBorder extends OfficeExtension.ClientObject {
+    export class TableBorder extends OfficeExtension.ClientObject {
         /**
          *
          * Gets or sets the table border color, as a hex value or name.
@@ -18808,7 +18808,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi]
      */
-    namespace ContentControlType {
+    export namespace ContentControlType {
         var unknown: string;
         var richTextInline: string;
         var richTextParagraphs: string;
@@ -18833,7 +18833,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi]
      */
-    namespace ContentControlAppearance {
+    export namespace ContentControlAppearance {
         var boundingBox: string;
         var tags: string;
         var hidden: string;
@@ -18844,7 +18844,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi]
      */
-    namespace UnderlineType {
+    export namespace UnderlineType {
         var mixed: string;
         var none: string;
         /**
@@ -18881,7 +18881,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi]
      */
-    namespace BreakType {
+    export namespace BreakType {
         /**
          *
          * Page break.
@@ -18930,7 +18930,7 @@ export declare namespace Word {
      *
      * [Api set: WordApi]
      */
-    namespace InsertLocation {
+    export namespace InsertLocation {
         var before: string;
         var after: string;
         var start: string;
@@ -18940,7 +18940,7 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace Alignment {
+    export namespace Alignment {
         var mixed: string;
         var unknown: string;
         var left: string;
@@ -18951,7 +18951,7 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace HeaderFooterType {
+    export namespace HeaderFooterType {
         var primary: string;
         var firstPage: string;
         var evenPages: string;
@@ -18959,7 +18959,7 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace BodyType {
+    export namespace BodyType {
         var unknown: string;
         var mainDoc: string;
         var section: string;
@@ -18970,7 +18970,7 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace SelectionMode {
+    export namespace SelectionMode {
         var select: string;
         var start: string;
         var end: string;
@@ -18978,7 +18978,7 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace ImageFormat {
+    export namespace ImageFormat {
         var unsupported: string;
         var undefined: string;
         var bmp: string;
@@ -18997,7 +18997,7 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace RangeLocation {
+    export namespace RangeLocation {
         var whole: string;
         var start: string;
         var end: string;
@@ -19008,7 +19008,7 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace LocationRelation {
+    export namespace LocationRelation {
         var unrelated: string;
         var equal: string;
         var containsStart: string;
@@ -19027,7 +19027,7 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace BorderLocation {
+    export namespace BorderLocation {
         var top: string;
         var left: string;
         var bottom: string;
@@ -19041,7 +19041,7 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace CellPaddingLocation {
+    export namespace CellPaddingLocation {
         var top: string;
         var left: string;
         var bottom: string;
@@ -19050,7 +19050,7 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace BorderType {
+    export namespace BorderType {
         var mixed: string;
         var none: string;
         var single: string;
@@ -19079,7 +19079,7 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace VerticalAlignment {
+    export namespace VerticalAlignment {
         var mixed: string;
         var top: string;
         var center: string;
@@ -19088,7 +19088,7 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace ListLevelType {
+    export namespace ListLevelType {
         var bullet: string;
         var number: string;
         var picture: string;
@@ -19096,7 +19096,7 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace ListBullet {
+    export namespace ListBullet {
         var custom: string;
         var solid: string;
         var hollow: string;
@@ -19108,7 +19108,7 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace ListNumbering {
+    export namespace ListNumbering {
         var none: string;
         var arabic: string;
         var upperRoman: string;
@@ -19119,7 +19119,7 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace Style {
+    export namespace Style {
         /**
          *
          * Mixed styles or other style not in this list.
@@ -19332,22 +19332,22 @@ export declare namespace Word {
     /**
      * [Api set: WordApi]
      */
-    namespace DocumentPropertyType {
+    export namespace DocumentPropertyType {
         var string: string;
         var number: string;
         var date: string;
         var boolean: string;
     }
-    namespace ErrorCodes {
+    export namespace ErrorCodes {
         var accessDenied: string;
         var generalException: string;
         var invalidArgument: string;
         var itemNotFound: string;
         var notImplemented: string;
     }
-    module Interfaces {
+    export module Interfaces {
         /** An interface for updating data on the Body object, for use in "body.set({ ... })". */
-        interface BodyUpdateData {
+        export interface BodyUpdateData {
             /**
             *
             * Gets the text format of the body. Use this to get and set font name, size, color and other properties.
@@ -19371,7 +19371,7 @@ export declare namespace Word {
             styleBuiltIn?: string;
         }
         /** An interface for updating data on the ContentControl object, for use in "contentControl.set({ ... })". */
-        interface ContentControlUpdateData {
+        export interface ContentControlUpdateData {
             /**
             *
             * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
@@ -19451,7 +19451,7 @@ export declare namespace Word {
             title?: string;
         }
         /** An interface for updating data on the CustomProperty object, for use in "customProperty.set({ ... })". */
-        interface CustomPropertyUpdateData {
+        export interface CustomPropertyUpdateData {
             /**
              *
              * Gets or sets the value of the custom property.
@@ -19461,7 +19461,7 @@ export declare namespace Word {
             value?: any;
         }
         /** An interface for updating data on the Document object, for use in "document.set({ ... })". */
-        interface DocumentUpdateData {
+        export interface DocumentUpdateData {
             /**
             *
             * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
@@ -19478,7 +19478,7 @@ export declare namespace Word {
             properties?: Word.Interfaces.DocumentPropertiesUpdateData;
         }
         /** An interface for updating data on the DocumentProperties object, for use in "documentProperties.set({ ... })". */
-        interface DocumentPropertiesUpdateData {
+        export interface DocumentPropertiesUpdateData {
             /**
              *
              * Gets or sets the author of the document.
@@ -19544,7 +19544,7 @@ export declare namespace Word {
             title?: string;
         }
         /** An interface for updating data on the Font object, for use in "font.set({ ... })". */
-        interface FontUpdateData {
+        export interface FontUpdateData {
             /**
              *
              * Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise, false.
@@ -19624,7 +19624,7 @@ export declare namespace Word {
             underline?: string;
         }
         /** An interface for updating data on the InlinePicture object, for use in "inlinePicture.set({ ... })". */
-        interface InlinePictureUpdateData {
+        export interface InlinePictureUpdateData {
             /**
              *
              * Gets or sets a string that represents the alternative text associated with the inline image
@@ -19669,7 +19669,7 @@ export declare namespace Word {
             width?: number;
         }
         /** An interface for updating data on the ListItem object, for use in "listItem.set({ ... })". */
-        interface ListItemUpdateData {
+        export interface ListItemUpdateData {
             /**
              *
              * Gets or sets the level of the item in the list.
@@ -19679,7 +19679,7 @@ export declare namespace Word {
             level?: number;
         }
         /** An interface for updating data on the Paragraph object, for use in "paragraph.set({ ... })". */
-        interface ParagraphUpdateData {
+        export interface ParagraphUpdateData {
             /**
             *
             * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
@@ -19787,7 +19787,7 @@ export declare namespace Word {
             styleBuiltIn?: string;
         }
         /** An interface for updating data on the Range object, for use in "range.set({ ... })". */
-        interface RangeUpdateData {
+        export interface RangeUpdateData {
             /**
             *
             * Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
@@ -19818,7 +19818,7 @@ export declare namespace Word {
             styleBuiltIn?: string;
         }
         /** An interface for updating data on the SearchOptions object, for use in "searchOptions.set({ ... })". */
-        interface SearchOptionsUpdateData {
+        export interface SearchOptionsUpdateData {
             /**
              *
              * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.
@@ -19870,7 +19870,7 @@ export declare namespace Word {
             matchWildcards?: boolean;
         }
         /** An interface for updating data on the Section object, for use in "section.set({ ... })". */
-        interface SectionUpdateData {
+        export interface SectionUpdateData {
             /**
             *
             * Gets the body object of the section. This does not include the header/footer and other section metadata.
@@ -19880,7 +19880,7 @@ export declare namespace Word {
             body?: Word.Interfaces.BodyUpdateData;
         }
         /** An interface for updating data on the Table object, for use in "table.set({ ... })". */
-        interface TableUpdateData {
+        export interface TableUpdateData {
             /**
             *
             * Gets the font. Use this to get and set font name, size, color, and other properties.
@@ -19988,7 +19988,7 @@ export declare namespace Word {
             width?: number;
         }
         /** An interface for updating data on the TableRow object, for use in "tableRow.set({ ... })". */
-        interface TableRowUpdateData {
+        export interface TableRowUpdateData {
             /**
             *
             * Gets the font. Use this to get and set font name, size, color, and other properties.
@@ -20033,7 +20033,7 @@ export declare namespace Word {
             verticalAlignment?: string;
         }
         /** An interface for updating data on the TableCell object, for use in "tableCell.set({ ... })". */
-        interface TableCellUpdateData {
+        export interface TableCellUpdateData {
             /**
             *
             * Gets the body object of the cell.
@@ -20078,7 +20078,7 @@ export declare namespace Word {
             verticalAlignment?: string;
         }
         /** An interface for updating data on the TableBorder object, for use in "tableBorder.set({ ... })". */
-        interface TableBorderUpdateData {
+        export interface TableBorderUpdateData {
             /**
              *
              * Gets or sets the table border color, as a hex value or name.
@@ -20107,7 +20107,7 @@ declare module Word {
     /**
      * The RequestContext object facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the request context is required to get access to the Word object model from the add-in.
      */
-    class RequestContext extends OfficeExtension.ClientRequestContext {
+    export class RequestContext extends OfficeExtension.ClientRequestContext {
         constructor(url?: string);
         document: Document;
     }
@@ -20115,19 +20115,19 @@ declare module Word {
      * Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
-    function run<T>(batch: (context: Word.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(batch: (context: Word.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
     /**
      * Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param object - A previously-created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
-    function run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
     /**
      * Executes a batch script that performs actions on the Word object model, using the RequestContext of previously-created API objects.
      * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
-    function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
 }
 
 
@@ -20155,7 +20155,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class Application extends OfficeExtension.ClientObject {
+    export class Application extends OfficeExtension.ClientObject {
         private m_notebooks;
         /**
          *
@@ -20249,7 +20249,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class InkAnalysis extends OfficeExtension.ClientObject {
+    export class InkAnalysis extends OfficeExtension.ClientObject {
         private m_id;
         private m_page;
         private m_paragraphs;
@@ -20286,7 +20286,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class InkAnalysisParagraph extends OfficeExtension.ClientObject {
+    export class InkAnalysisParagraph extends OfficeExtension.ClientObject {
         private m_id;
         private m_inkAnalysis;
         private m_lines;
@@ -20323,7 +20323,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class InkAnalysisParagraphCollection extends OfficeExtension.ClientObject {
+    export class InkAnalysisParagraphCollection extends OfficeExtension.ClientObject {
         private m_count;
         private m__ReferenceId;
         private m__items;
@@ -20365,7 +20365,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class InkAnalysisLine extends OfficeExtension.ClientObject {
+    export class InkAnalysisLine extends OfficeExtension.ClientObject {
         private m_id;
         private m_paragraph;
         private m_words;
@@ -20402,7 +20402,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class InkAnalysisLineCollection extends OfficeExtension.ClientObject {
+    export class InkAnalysisLineCollection extends OfficeExtension.ClientObject {
         private m_count;
         private m__ReferenceId;
         private m__items;
@@ -20444,7 +20444,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class InkAnalysisWord extends OfficeExtension.ClientObject {
+    export class InkAnalysisWord extends OfficeExtension.ClientObject {
         private m_id;
         private m_languageId;
         private m_line;
@@ -20497,7 +20497,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class InkAnalysisWordCollection extends OfficeExtension.ClientObject {
+    export class InkAnalysisWordCollection extends OfficeExtension.ClientObject {
         private m_count;
         private m__ReferenceId;
         private m__items;
@@ -20539,7 +20539,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class FloatingInk extends OfficeExtension.ClientObject {
+    export class FloatingInk extends OfficeExtension.ClientObject {
         private m_id;
         private m_inkStrokes;
         private m_pageContent;
@@ -20576,7 +20576,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class InkStroke extends OfficeExtension.ClientObject {
+    export class InkStroke extends OfficeExtension.ClientObject {
         private m_floatingInk;
         private m_id;
         private m__ReferenceId;
@@ -20605,7 +20605,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class InkStrokeCollection extends OfficeExtension.ClientObject {
+    export class InkStrokeCollection extends OfficeExtension.ClientObject {
         private m_count;
         private m__ReferenceId;
         private m__items;
@@ -20647,7 +20647,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class InkWord extends OfficeExtension.ClientObject {
+    export class InkWord extends OfficeExtension.ClientObject {
         private m_id;
         private m_languageId;
         private m_paragraph;
@@ -20692,7 +20692,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class InkWordCollection extends OfficeExtension.ClientObject {
+    export class InkWordCollection extends OfficeExtension.ClientObject {
         private m_count;
         private m__ReferenceId;
         private m__items;
@@ -20734,7 +20734,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class Notebook extends OfficeExtension.ClientObject {
+    export class Notebook extends OfficeExtension.ClientObject {
         private m_clientUrl;
         private m_id;
         private m_name;
@@ -20805,7 +20805,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class NotebookCollection extends OfficeExtension.ClientObject {
+    export class NotebookCollection extends OfficeExtension.ClientObject {
         private m_count;
         private m__ReferenceId;
         private m__items;
@@ -20856,7 +20856,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class SectionGroup extends OfficeExtension.ClientObject {
+    export class SectionGroup extends OfficeExtension.ClientObject {
         private m_clientUrl;
         private m_id;
         private m_name;
@@ -20951,7 +20951,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class SectionGroupCollection extends OfficeExtension.ClientObject {
+    export class SectionGroupCollection extends OfficeExtension.ClientObject {
         private m_count;
         private m__ReferenceId;
         private m__items;
@@ -21002,7 +21002,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class Section extends OfficeExtension.ClientObject {
+    export class Section extends OfficeExtension.ClientObject {
         private m_clientUrl;
         private m_id;
         private m_name;
@@ -21108,7 +21108,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class SectionCollection extends OfficeExtension.ClientObject {
+    export class SectionCollection extends OfficeExtension.ClientObject {
         private m_count;
         private m__ReferenceId;
         private m__items;
@@ -21159,7 +21159,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class Page extends OfficeExtension.ClientObject {
+    export class Page extends OfficeExtension.ClientObject {
         private m_clientUrl;
         private m_contents;
         private m_id;
@@ -21266,7 +21266,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class PageCollection extends OfficeExtension.ClientObject {
+    export class PageCollection extends OfficeExtension.ClientObject {
         private m_count;
         private m__ReferenceId;
         private m__items;
@@ -21317,7 +21317,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class PageContent extends OfficeExtension.ClientObject {
+    export class PageContent extends OfficeExtension.ClientObject {
         private m_id;
         private m_image;
         private m_ink;
@@ -21401,7 +21401,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class PageContentCollection extends OfficeExtension.ClientObject {
+    export class PageContentCollection extends OfficeExtension.ClientObject {
         private m_count;
         private m__ReferenceId;
         private m__items;
@@ -21443,7 +21443,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class Outline extends OfficeExtension.ClientObject {
+    export class Outline extends OfficeExtension.ClientObject {
         private m_id;
         private m_pageContent;
         private m_paragraphs;
@@ -21520,7 +21520,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class Paragraph extends OfficeExtension.ClientObject {
+    export class Paragraph extends OfficeExtension.ClientObject {
         private m_id;
         private m_image;
         private m_inkWords;
@@ -21680,7 +21680,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class ParagraphCollection extends OfficeExtension.ClientObject {
+    export class ParagraphCollection extends OfficeExtension.ClientObject {
         private m_count;
         private m__ReferenceId;
         private m__items;
@@ -21722,7 +21722,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class RichText extends OfficeExtension.ClientObject {
+    export class RichText extends OfficeExtension.ClientObject {
         private m_id;
         private m_paragraph;
         private m_text;
@@ -21759,7 +21759,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class Image extends OfficeExtension.ClientObject {
+    export class Image extends OfficeExtension.ClientObject {
         private m_description;
         private m_height;
         private m_hyperlink;
@@ -21844,7 +21844,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class Table extends OfficeExtension.ClientObject {
+    export class Table extends OfficeExtension.ClientObject {
         private m_borderVisible;
         private m_columnCount;
         private m_id;
@@ -21961,7 +21961,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class TableRow extends OfficeExtension.ClientObject {
+    export class TableRow extends OfficeExtension.ClientObject {
         private m_cellCount;
         private m_cells;
         private m_id;
@@ -22032,7 +22032,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class TableRowCollection extends OfficeExtension.ClientObject {
+    export class TableRowCollection extends OfficeExtension.ClientObject {
         private m_count;
         private m__ReferenceId;
         private m__items;
@@ -22074,7 +22074,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class TableCell extends OfficeExtension.ClientObject {
+    export class TableCell extends OfficeExtension.ClientObject {
         private m_cellIndex;
         private m_id;
         private m_paragraphs;
@@ -22182,7 +22182,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    class TableCellCollection extends OfficeExtension.ClientObject {
+    export class TableCellCollection extends OfficeExtension.ClientObject {
         private m_count;
         private m__ReferenceId;
         private m__items;
@@ -22224,7 +22224,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    interface ImageOcrData {
+    export interface ImageOcrData {
         /**
          *
          * Represents the OCR language, with values such as EN-US
@@ -22246,7 +22246,7 @@ export declare namespace OneNote {
      *
      * [Api set: OneNoteApi 1.1]
      */
-    interface InkStrokePointer {
+    export interface InkStrokePointer {
         /**
          *
          * Represents the id of the page content object corresponding to this stroke
@@ -22265,14 +22265,14 @@ export declare namespace OneNote {
     /**
      * [Api set: OneNoteApi]
      */
-    module InsertLocation {
+    export module InsertLocation {
         var before: string;
         var after: string;
     }
     /**
      * [Api set: OneNoteApi]
      */
-    module Alignment {
+    export module Alignment {
         var left: string;
         var centered: string;
         var right: string;
@@ -22281,7 +22281,7 @@ export declare namespace OneNote {
     /**
      * [Api set: OneNoteApi]
      */
-    module Selected {
+    export module Selected {
         var notSelected: string;
         var partialSelected: string;
         var selected: string;
@@ -22289,7 +22289,7 @@ export declare namespace OneNote {
     /**
      * [Api set: OneNoteApi]
      */
-    module PageContentType {
+    export module PageContentType {
         var outline: string;
         var image: string;
         var ink: string;
@@ -22298,19 +22298,19 @@ export declare namespace OneNote {
     /**
      * [Api set: OneNoteApi]
      */
-    module ParagraphType {
+    export module ParagraphType {
         var richText: string;
         var image: string;
         var table: string;
         var ink: string;
         var other: string;
     }
-    module ErrorCodes {
+    export module ErrorCodes {
         var generalException: string;
     }
 }
 export declare namespace OneNote {
-    class RequestContext extends OfficeExtension.ClientRequestContext {
+    export class RequestContext extends OfficeExtension.ClientRequestContext {
         private m_onenote;
         constructor(url?: string);
         application: Application;
@@ -22319,7 +22319,7 @@ export declare namespace OneNote {
  * Executes a batch script that performs actions on the OneNote object model. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
  * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the OneNote application. Since the Office add-in and the WoOneNote application run in two different processes, the request context is required to get access to the OneNote object model from the add-in.
  */
-    function run<T>(batch: (context: OneNote.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(batch: (context: OneNote.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
 }
 
 
@@ -22342,7 +22342,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    interface ShapeMouseEnterEventArgs {
+    export interface ShapeMouseEnterEventArgs {
         /**
          *
          * Gets the name of the page which has the shape object that raised the ShapeMouseEnter event.
@@ -22364,7 +22364,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    interface ShapeMouseLeaveEventArgs {
+    export interface ShapeMouseLeaveEventArgs {
         /**
          *
          * Gets the name of the page which has the shape object that raised the ShapeMouseLeave event.
@@ -22386,7 +22386,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    interface PageLoadCompleteEventArgs {
+    export interface PageLoadCompleteEventArgs {
         /**
          *
          * Gets the name of the page that raised the PageLoad event.
@@ -22408,7 +22408,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    interface DataRefreshCompleteEventArgs {
+    export interface DataRefreshCompleteEventArgs {
         /**
          *
          * Gets the document object that raised the DataRefreshComplete event.
@@ -22430,7 +22430,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    interface SelectionChangedEventArgs {
+    export interface SelectionChangedEventArgs {
         /**
          *
          * Gets the name of the page which has the ShapeCollection object that raised the SelectionChanged event.
@@ -22452,7 +22452,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    interface DocumentLoadCompleteEventArgs {
+    export interface DocumentLoadCompleteEventArgs {
         /**
          *
          * Gets the success/failure of the DocumentLoadComplete event.
@@ -22467,7 +22467,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class Application extends OfficeExtension.ClientObject {
+    export class Application extends OfficeExtension.ClientObject {
         /**
          *
          * Show/Hide the application borders.
@@ -22515,7 +22515,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class Document extends OfficeExtension.ClientObject {
+    export class Document extends OfficeExtension.ClientObject {
         /**
          *
          * Represents a Visio application instance that contains this document. Read-only.
@@ -22628,7 +22628,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class DocumentView extends OfficeExtension.ClientObject {
+    export class DocumentView extends OfficeExtension.ClientObject {
         /**
          *
          * Disable Hyperlinks.
@@ -22683,7 +22683,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class Page extends OfficeExtension.ClientObject {
+    export class Page extends OfficeExtension.ClientObject {
         /**
          *
          * All shapes in the page. Read-only.
@@ -22780,7 +22780,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class PageView extends OfficeExtension.ClientObject {
+    export class PageView extends OfficeExtension.ClientObject {
         /**
          *
          * Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
@@ -22862,7 +22862,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class PageCollection extends OfficeExtension.ClientObject {
+    export class PageCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Visio.Page>;
         /**
@@ -22895,7 +22895,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class ShapeCollection extends OfficeExtension.ClientObject {
+    export class ShapeCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Visio.Shape>;
         /**
@@ -22928,7 +22928,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class Shape extends OfficeExtension.ClientObject {
+    export class Shape extends OfficeExtension.ClientObject {
         /**
          *
          * Returns the Comments Collection
@@ -23025,7 +23025,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class ShapeView extends OfficeExtension.ClientObject {
+    export class ShapeView extends OfficeExtension.ClientObject {
         /**
          *
          * Represents the highlight around the shape.
@@ -23082,7 +23082,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    interface Position {
+    export interface Position {
         /**
          *
          * An integer that specifies the x-coordinate of the object, which is the signed value of the distance in pixels from the viewport's center to the left boundary of the page.
@@ -23104,7 +23104,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    interface BoundingBox {
+    export interface BoundingBox {
         /**
          *
          * The distance between the top and bottom edges of the bounding box of the shape, excluding any data graphics associated with the shape.
@@ -23140,7 +23140,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    interface Highlight {
+    export interface Highlight {
         /**
          *
          * A string that specifies the color of the highlight. It must have the form "#RRGGBB", where each letter represents a hexadecimal digit between 0 and F, and where RR is the red value between 0 and 0xFF (255), GG the green value between 0 and 0xFF (255), and BB is the blue value between 0 and 0xFF (255).
@@ -23162,7 +23162,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class ShapeDataItemCollection extends OfficeExtension.ClientObject {
+    export class ShapeDataItemCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Visio.ShapeDataItem>;
         /**
@@ -23195,7 +23195,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class ShapeDataItem extends OfficeExtension.ClientObject {
+    export class ShapeDataItem extends OfficeExtension.ClientObject {
         /**
          *
          * A string that specifies the format of the shape data item.
@@ -23241,7 +23241,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class HyperlinkCollection extends OfficeExtension.ClientObject {
+    export class HyperlinkCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Visio.Hyperlink>;
         /**
@@ -23274,7 +23274,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class Hyperlink extends OfficeExtension.ClientObject {
+    export class Hyperlink extends OfficeExtension.ClientObject {
         /**
          *
          * Gets the address of the Hyperlink object.
@@ -23320,7 +23320,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class CommentCollection extends OfficeExtension.ClientObject {
+    export class CommentCollection extends OfficeExtension.ClientObject {
         /** Gets the loaded child items in this collection. */
         readonly items: Array<Visio.Comment>;
         /**
@@ -23353,7 +23353,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class Comment extends OfficeExtension.ClientObject {
+    export class Comment extends OfficeExtension.ClientObject {
         /**
          *
          * A string that specifies the label of the shape data item.
@@ -23401,7 +23401,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    class Selection extends OfficeExtension.ClientObject {
+    export class Selection extends OfficeExtension.ClientObject {
         /**
          *
          * Gets the Shapes of the Selection
@@ -23425,7 +23425,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    namespace OverlayHorizontalAlignment {
+    export namespace OverlayHorizontalAlignment {
         /**
          *
          * left
@@ -23451,7 +23451,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    namespace OverlayVerticalAlignment {
+    export namespace OverlayVerticalAlignment {
         /**
          *
          * top
@@ -23477,7 +23477,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    namespace OverlayType {
+    export namespace OverlayType {
         /**
          *
          * text
@@ -23497,7 +23497,7 @@ export declare namespace Visio {
      *
      * [Api set:  1.1]
      */
-    namespace ToolBarType {
+    export namespace ToolBarType {
         /**
          *
          * CommandBar
@@ -23517,7 +23517,7 @@ export declare namespace Visio {
          */
         var statusBar: string;
     }
-    namespace ErrorCodes {
+    export namespace ErrorCodes {
         var accessDenied: string;
         var generalException: string;
         var invalidArgument: string;
@@ -23525,13 +23525,13 @@ export declare namespace Visio {
         var notImplemented: string;
         var unsupportedOperation: string;
     }
-    module Interfaces {
-        interface CollectionLoadOptions {
+    export module Interfaces {
+        export interface CollectionLoadOptions {
             $top?: number;
             $skip?: number;
         }
         /** An interface for updating data on the Application object, for use in "application.set({ ... })". */
-        interface ApplicationUpdateData {
+        export interface ApplicationUpdateData {
             /**
              *
              * Show/Hide the application borders.
@@ -23548,7 +23548,7 @@ export declare namespace Visio {
             showToolbars?: boolean;
         }
         /** An interface for updating data on the Document object, for use in "document.set({ ... })". */
-        interface DocumentUpdateData {
+        export interface DocumentUpdateData {
             /**
             *
             * Represents a Visio application instance that contains this document.
@@ -23565,7 +23565,7 @@ export declare namespace Visio {
             view?: Visio.Interfaces.DocumentViewUpdateData;
         }
         /** An interface for updating data on the DocumentView object, for use in "documentView.set({ ... })". */
-        interface DocumentViewUpdateData {
+        export interface DocumentViewUpdateData {
             /**
              *
              * Disable Hyperlinks.
@@ -23596,7 +23596,7 @@ export declare namespace Visio {
             hideDiagramBoundary?: boolean;
         }
         /** An interface for updating data on the Page object, for use in "page.set({ ... })". */
-        interface PageUpdateData {
+        export interface PageUpdateData {
             /**
             *
             * Returns the view of the page.
@@ -23606,7 +23606,7 @@ export declare namespace Visio {
             view?: Visio.Interfaces.PageViewUpdateData;
         }
         /** An interface for updating data on the PageView object, for use in "pageView.set({ ... })". */
-        interface PageViewUpdateData {
+        export interface PageViewUpdateData {
             /**
              *
              * Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
@@ -23616,15 +23616,15 @@ export declare namespace Visio {
             zoom?: number;
         }
         /** An interface for updating data on the PageCollection object, for use in "pageCollection.set({ ... })". */
-        interface PageCollectionUpdateData {
+        export interface PageCollectionUpdateData {
             items?: Visio.Interfaces.PageData[];
         }
         /** An interface for updating data on the ShapeCollection object, for use in "shapeCollection.set({ ... })". */
-        interface ShapeCollectionUpdateData {
+        export interface ShapeCollectionUpdateData {
             items?: Visio.Interfaces.ShapeData[];
         }
         /** An interface for updating data on the Shape object, for use in "shape.set({ ... })". */
-        interface ShapeUpdateData {
+        export interface ShapeUpdateData {
             /**
             *
             * Returns the view of the shape.
@@ -23641,7 +23641,7 @@ export declare namespace Visio {
             select?: boolean;
         }
         /** An interface for updating data on the ShapeView object, for use in "shapeView.set({ ... })". */
-        interface ShapeViewUpdateData {
+        export interface ShapeViewUpdateData {
             /**
              *
              * Represents the highlight around the shape.
@@ -23651,19 +23651,19 @@ export declare namespace Visio {
             highlight?: Visio.Highlight;
         }
         /** An interface for updating data on the ShapeDataItemCollection object, for use in "shapeDataItemCollection.set({ ... })". */
-        interface ShapeDataItemCollectionUpdateData {
+        export interface ShapeDataItemCollectionUpdateData {
             items?: Visio.Interfaces.ShapeDataItemData[];
         }
         /** An interface for updating data on the HyperlinkCollection object, for use in "hyperlinkCollection.set({ ... })". */
-        interface HyperlinkCollectionUpdateData {
+        export interface HyperlinkCollectionUpdateData {
             items?: Visio.Interfaces.HyperlinkData[];
         }
         /** An interface for updating data on the CommentCollection object, for use in "commentCollection.set({ ... })". */
-        interface CommentCollectionUpdateData {
+        export interface CommentCollectionUpdateData {
             items?: Visio.Interfaces.CommentData[];
         }
         /** An interface for updating data on the Comment object, for use in "comment.set({ ... })". */
-        interface CommentUpdateData {
+        export interface CommentUpdateData {
             /**
              *
              * A string that specifies the label of the shape data item.
@@ -23687,7 +23687,7 @@ export declare namespace Visio {
             text?: string;
         }
         /** An interface describing the data returned by calling "application.toJSON()". */
-        interface ApplicationData {
+        export interface ApplicationData {
             /**
              *
              * Show/Hide the application borders.
@@ -23704,7 +23704,7 @@ export declare namespace Visio {
             showToolbars?: boolean;
         }
         /** An interface describing the data returned by calling "document.toJSON()". */
-        interface DocumentData {
+        export interface DocumentData {
             /**
             *
             * Represents a Visio application instance that contains this document. Read-only.
@@ -23728,7 +23728,7 @@ export declare namespace Visio {
             view?: Visio.Interfaces.DocumentViewData;
         }
         /** An interface describing the data returned by calling "documentView.toJSON()". */
-        interface DocumentViewData {
+        export interface DocumentViewData {
             /**
              *
              * Disable Hyperlinks.
@@ -23759,7 +23759,7 @@ export declare namespace Visio {
             hideDiagramBoundary?: boolean;
         }
         /** An interface describing the data returned by calling "page.toJSON()". */
-        interface PageData {
+        export interface PageData {
             /**
             *
             * All shapes in the page. Read-only.
@@ -23825,7 +23825,7 @@ export declare namespace Visio {
             width?: number;
         }
         /** An interface describing the data returned by calling "pageView.toJSON()". */
-        interface PageViewData {
+        export interface PageViewData {
             /**
              *
              * Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
@@ -23835,15 +23835,15 @@ export declare namespace Visio {
             zoom?: number;
         }
         /** An interface describing the data returned by calling "pageCollection.toJSON()". */
-        interface PageCollectionData {
+        export interface PageCollectionData {
             items?: Visio.Interfaces.PageData[];
         }
         /** An interface describing the data returned by calling "shapeCollection.toJSON()". */
-        interface ShapeCollectionData {
+        export interface ShapeCollectionData {
             items?: Visio.Interfaces.ShapeData[];
         }
         /** An interface describing the data returned by calling "shape.toJSON()". */
-        interface ShapeData {
+        export interface ShapeData {
             /**
             *
             * Returns the Comments Collection
@@ -23909,7 +23909,7 @@ export declare namespace Visio {
             text?: string;
         }
         /** An interface describing the data returned by calling "shapeView.toJSON()". */
-        interface ShapeViewData {
+        export interface ShapeViewData {
             /**
              *
              * Represents the highlight around the shape.
@@ -23919,11 +23919,11 @@ export declare namespace Visio {
             highlight?: Visio.Highlight;
         }
         /** An interface describing the data returned by calling "shapeDataItemCollection.toJSON()". */
-        interface ShapeDataItemCollectionData {
+        export interface ShapeDataItemCollectionData {
             items?: Visio.Interfaces.ShapeDataItemData[];
         }
         /** An interface describing the data returned by calling "shapeDataItem.toJSON()". */
-        interface ShapeDataItemData {
+        export interface ShapeDataItemData {
             /**
              *
              * A string that specifies the format of the shape data item.
@@ -23954,11 +23954,11 @@ export declare namespace Visio {
             value?: string;
         }
         /** An interface describing the data returned by calling "hyperlinkCollection.toJSON()". */
-        interface HyperlinkCollectionData {
+        export interface HyperlinkCollectionData {
             items?: Visio.Interfaces.HyperlinkData[];
         }
         /** An interface describing the data returned by calling "hyperlink.toJSON()". */
-        interface HyperlinkData {
+        export interface HyperlinkData {
             /**
              *
              * Gets the address of the Hyperlink object.
@@ -23989,11 +23989,11 @@ export declare namespace Visio {
             subAddress?: string;
         }
         /** An interface describing the data returned by calling "commentCollection.toJSON()". */
-        interface CommentCollectionData {
+        export interface CommentCollectionData {
             items?: Visio.Interfaces.CommentData[];
         }
         /** An interface describing the data returned by calling "comment.toJSON()". */
-        interface CommentData {
+        export interface CommentData {
             /**
              *
              * A string that specifies the label of the shape data item.
@@ -24017,7 +24017,7 @@ export declare namespace Visio {
             text?: string;
         }
         /** An interface describing the data returned by calling "selection.toJSON()". */
-        interface SelectionData {
+        export interface SelectionData {
             /**
             *
             * Gets the Shapes of the Selection
@@ -24032,7 +24032,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        interface ApplicationLoadOptions {
+        export interface ApplicationLoadOptions {
             $all?: boolean;
             /**
              *
@@ -24055,7 +24055,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        interface DocumentLoadOptions {
+        export interface DocumentLoadOptions {
             $all?: boolean;
             /**
             *
@@ -24078,7 +24078,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        interface DocumentViewLoadOptions {
+        export interface DocumentViewLoadOptions {
             $all?: boolean;
             /**
              *
@@ -24115,7 +24115,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        interface PageLoadOptions {
+        export interface PageLoadOptions {
             $all?: boolean;
             /**
             *
@@ -24166,7 +24166,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        interface PageViewLoadOptions {
+        export interface PageViewLoadOptions {
             $all?: boolean;
             /**
              *
@@ -24182,7 +24182,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        interface PageCollectionLoadOptions {
+        export interface PageCollectionLoadOptions {
             $all?: boolean;
             /**
             *
@@ -24233,7 +24233,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        interface ShapeCollectionLoadOptions {
+        export interface ShapeCollectionLoadOptions {
             $all?: boolean;
             /**
             *
@@ -24277,7 +24277,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        interface ShapeLoadOptions {
+        export interface ShapeLoadOptions {
             $all?: boolean;
             /**
             *
@@ -24321,7 +24321,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        interface ShapeViewLoadOptions {
+        export interface ShapeViewLoadOptions {
             $all?: boolean;
             /**
              *
@@ -24337,7 +24337,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        interface ShapeDataItemCollectionLoadOptions {
+        export interface ShapeDataItemCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -24374,7 +24374,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        interface ShapeDataItemLoadOptions {
+        export interface ShapeDataItemLoadOptions {
             $all?: boolean;
             /**
              *
@@ -24411,7 +24411,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        interface HyperlinkCollectionLoadOptions {
+        export interface HyperlinkCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -24448,7 +24448,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        interface HyperlinkLoadOptions {
+        export interface HyperlinkLoadOptions {
             $all?: boolean;
             /**
              *
@@ -24485,7 +24485,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        interface CommentCollectionLoadOptions {
+        export interface CommentCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -24515,7 +24515,7 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          */
-        interface CommentLoadOptions {
+        export interface CommentLoadOptions {
             $all?: boolean;
             /**
              *
@@ -24545,7 +24545,7 @@ declare module Visio {
     /**
      * The RequestContext object facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
      */
-    class RequestContext extends OfficeExtension.ClientRequestContext {
+    export class RequestContext extends OfficeExtension.ClientRequestContext {
         constructor(url?: string | OfficeExtension.EmbeddedSession);
         readonly document: Document;
     }
@@ -24553,25 +24553,25 @@ declare module Visio {
      * Executes a batch script that performs actions on the Visio object model, using a new request context. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
      */
-    function run<T>(batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
     /**
      * Executes a batch script that performs actions on the Visio object model, using the request context of a previously-created API object.
      * @param object - A previously-created API object. The batch will use the same request context as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      */
-    function run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
     /**
      * Executes a batch script that performs actions on the Visio object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param contextObject - A previously-created Visio.RequestContext. This context will get re-used by the batch function (instead of having a new context created). This means that the batch will be able to pick up changes made to existing API objects, if those objects were derived from this same context.
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the RequestContext is required to get access to the Visio object model from the add-in.
      */
-    function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
     /**
      * Executes a batch script that performs actions on the Visio object model, using the request context of previously-created API objects.
      * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared request context, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in a Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      */
-    function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
 }
 
 
