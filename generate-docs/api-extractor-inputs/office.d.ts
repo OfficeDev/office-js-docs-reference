@@ -563,7 +563,7 @@ export declare namespace Office {
     }
     export interface CustomXmlNode {
         baseName: string;
-        export namespaceUri: string;
+        namespaceUri: string;
         nodeType: string;
         /**
          * Gets the nodes associated with the xPath expression.
@@ -622,7 +622,7 @@ export declare namespace Office {
     export interface CustomXmlPart {
         builtIn: boolean;
         id: string;
-        export namespaceManager: CustomXmlPrefixMappings;
+        namespaceManager: CustomXmlPrefixMappings;
         /**
          * Adds an event handler to the object using the specified event type.
          * @param eventType - The event type. For CustomXmlPartNode it can be 'nodeDeleted', 'nodeInserted' or 'nodeReplaced'
