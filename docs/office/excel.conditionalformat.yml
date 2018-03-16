@@ -27,7 +27,6 @@ items:
       - office.Excel.ConditionalFormat.getRangeOrNullObject
       - office.Excel.ConditionalFormat.iconSet
       - office.Excel.ConditionalFormat.iconSetOrNullObject
-      - office.Excel.ConditionalFormat.id
       - office.Excel.ConditionalFormat.load
       - office.Excel.ConditionalFormat.preset
       - office.Excel.ConditionalFormat.presetOrNullObject
@@ -279,21 +278,6 @@ items:
       return:
         type:
           - Excel.IconSetConditionalFormat
-  - uid: office.Excel.ConditionalFormat.id
-    summary: |-
-      The Priority of the Conditional Format within the current ConditionalFormatCollection.
-
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
-    name: id
-    fullName: office.Excel.ConditionalFormat.id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly id: string;'
-      return:
-        type:
-          - string
   - uid: office.Excel.ConditionalFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -353,8 +337,7 @@ items:
       The priority (or index) within the conditional format collection that this conditional format currently exists in.
       Changing this also changes other conditional formats' priorities, to allow for a contiguous priority order. Use a
       negative priority to begin from the back. Priorities greater than than bounds will get and set to the maximum (or
-      minimum if negative) priority. Also note that if you change the priority, you have to re-fetch a new copy of the
-      object at that new priority location if you want to make further changes to it.
+      minimum if negative) priority.
 
 
       \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
@@ -451,7 +434,7 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"cellValue\": CellValueConditionalFormat;\r\n            \"cellValueOrNullObject\": CellValueConditionalFormat;\r\n            \"colorScale\": ColorScaleConditionalFormat;\r\n            \"colorScaleOrNullObject\": ColorScaleConditionalFormat;\r\n            \"custom\": CustomConditionalFormat;\r\n            \"customOrNullObject\": CustomConditionalFormat;\r\n            \"dataBar\": DataBarConditionalFormat;\r\n            \"dataBarOrNullObject\": DataBarConditionalFormat;\r\n            \"iconSet\": IconSetConditionalFormat;\r\n            \"iconSetOrNullObject\": IconSetConditionalFormat;\r\n            \"id\": string;\r\n            \"preset\": PresetCriteriaConditionalFormat;\r\n            \"presetOrNullObject\": PresetCriteriaConditionalFormat;\r\n            \"priority\": number;\r\n            \"stopIfTrue\": boolean;\r\n            \"textComparison\": TextConditionalFormat;\r\n            \"textComparisonOrNullObject\": TextConditionalFormat;\r\n            \"topBottom\": TopBottomConditionalFormat;\r\n            \"topBottomOrNullObject\": TopBottomConditionalFormat;\r\n            \"type\": string;\r\n        }"
+          - "{\r\n            \"cellValue\": CellValueConditionalFormat;\r\n            \"cellValueOrNullObject\": CellValueConditionalFormat;\r\n            \"colorScale\": ColorScaleConditionalFormat;\r\n            \"colorScaleOrNullObject\": ColorScaleConditionalFormat;\r\n            \"custom\": CustomConditionalFormat;\r\n            \"customOrNullObject\": CustomConditionalFormat;\r\n            \"dataBar\": DataBarConditionalFormat;\r\n            \"dataBarOrNullObject\": DataBarConditionalFormat;\r\n            \"iconSet\": IconSetConditionalFormat;\r\n            \"iconSetOrNullObject\": IconSetConditionalFormat;\r\n            \"preset\": PresetCriteriaConditionalFormat;\r\n            \"presetOrNullObject\": PresetCriteriaConditionalFormat;\r\n            \"priority\": number;\r\n            \"stopIfTrue\": boolean;\r\n            \"textComparison\": TextConditionalFormat;\r\n            \"textComparisonOrNullObject\": TextConditionalFormat;\r\n            \"topBottom\": TopBottomConditionalFormat;\r\n            \"topBottomOrNullObject\": TopBottomConditionalFormat;\r\n            \"type\": string;\r\n        }"
         description: ''
   - uid: office.Excel.ConditionalFormat.topBottom
     summary: >-

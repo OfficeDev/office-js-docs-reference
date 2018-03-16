@@ -1,0 +1,104 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Visio.ShapeDataItemCollection
+    summary: |-
+      Represents the ShapeDataItemCollection for a given Shape.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: Visio.ShapeDataItemCollection
+    fullName: office.Visio.ShapeDataItemCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Visio.ShapeDataItemCollection.getCount
+      - office.Visio.ShapeDataItemCollection.getItem
+      - office.Visio.ShapeDataItemCollection.items
+      - office.Visio.ShapeDataItemCollection.load
+      - office.Visio.ShapeDataItemCollection.toJSON
+  - uid: office.Visio.ShapeDataItemCollection.getCount
+    summary: |-
+      Gets the number of Shape Data Items.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: getCount()
+    fullName: office.Visio.ShapeDataItemCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: office.Visio.ShapeDataItemCollection.getItem
+    summary: |-
+      Gets the ShapeDataItem using its name.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: getItem(key)
+    fullName: office.Visio.ShapeDataItemCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Visio.ShapeDataItem;'
+      return:
+        type:
+          - Visio.ShapeDataItem
+        description: ''
+      parameters:
+        - id: key
+          description: Key is the name of the ShapeDataItem to be retrieved.
+          type:
+            - string
+  - uid: office.Visio.ShapeDataItemCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.Visio.ShapeDataItemCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Array<Visio.ShapeDataItem>;'
+      return:
+        type:
+          - Array<Visio.ShapeDataItem>
+  - uid: office.Visio.ShapeDataItemCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Visio.ShapeDataItemCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: Visio.Interfaces.ShapeDataItemCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.ShapeDataItemCollection;
+      return:
+        type:
+          - Visio.ShapeDataItemCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.ShapeDataItemCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+  - uid: office.Visio.ShapeDataItemCollection.toJSON
+    name: toJSON()
+    fullName: office.Visio.ShapeDataItemCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.ShapeDataItemCollectionData;'
+      return:
+        type:
+          - Visio.Interfaces.ShapeDataItemCollectionData
+        description: ''

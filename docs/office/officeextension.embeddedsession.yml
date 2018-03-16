@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeExtension.EmbeddedSession
+    name: OfficeExtension.EmbeddedSession
+    fullName: office.OfficeExtension.EmbeddedSession
+    langs:
+      - typeScript
+    type: class
+    package: office
+    children:
+      - office.OfficeExtension.EmbeddedSession.constructor
+      - office.OfficeExtension.EmbeddedSession.init
+  - uid: office.OfficeExtension.EmbeddedSession.constructor
+    summary: 'Constructs a new instance of the [EmbeddedSession](xref:office.OfficeExtension.EmbeddedSession) class'
+    name: 'constructor(url, options)'
+    fullName: office.OfficeExtension.EmbeddedSession.constructor
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(url: string, options?: EmbeddedOptions);'
+      parameters:
+        - id: url
+          description: ''
+          type:
+            - string
+        - id: options
+          description: ''
+          type:
+            - EmbeddedOptions
+  - uid: office.OfficeExtension.EmbeddedSession.init
+    name: init()
+    fullName: office.OfficeExtension.EmbeddedSession.init
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'public init(): IPromise<any>;'
+      return:
+        type:
+          - IPromise<any>
+        description: ''

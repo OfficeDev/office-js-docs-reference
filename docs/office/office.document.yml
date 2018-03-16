@@ -31,15 +31,15 @@ items:
         description: ''
       parameters:
         - id: fieldId
-          description: ''
+          description: Project level fields.
           type:
             - number
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getResourceFieldAsync
@@ -59,19 +59,19 @@ items:
         description: ''
       parameters:
         - id: resourceId
-          description: ''
+          description: Either a string or value of the Resource Id.
           type:
             - string
         - id: fieldId
-          description: ''
+          description: Resource Fields.
           type:
             - number
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getSelectedResourceAsync
@@ -89,11 +89,11 @@ items:
         description: ''
       parameters:
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getSelectedTaskAsync
@@ -111,11 +111,11 @@ items:
         description: ''
       parameters:
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getSelectedViewAsync
@@ -133,11 +133,11 @@ items:
         description: ''
       parameters:
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getTaskAsync
@@ -155,15 +155,15 @@ items:
         description: ''
       parameters:
         - id: taskId
-          description: ''
+          description: Either a string or value of the Task Id.
           type:
             - string
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getTaskFieldAsync
@@ -183,19 +183,19 @@ items:
         description: ''
       parameters:
         - id: taskId
-          description: ''
+          description: Either a string or value of the Task Id.
           type:
             - string
         - id: fieldId
-          description: ''
+          description: Task Fields.
           type:
             - number
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getWSSUrlAsync
@@ -213,10 +213,10 @@ items:
         description: ''
       parameters:
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'

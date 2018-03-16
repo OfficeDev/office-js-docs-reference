@@ -125,11 +125,11 @@ items:
         description: ''
       parameters:
         - id: row
-          description: ''
+          description: The row number of the cell to be retrieved. Zero-indexed.
           type:
             - number
         - id: column
-          description: ''
+          description: the column number of the cell to be retrieved. Zero-indexed.
           type:
             - number
   - uid: office.Excel.Worksheet.getNext
@@ -152,7 +152,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: ''
+          description: 'If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
   - uid: office.Excel.Worksheet.getNextOrNullObject
@@ -175,7 +175,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: ''
+          description: 'If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
   - uid: office.Excel.Worksheet.getPrevious
@@ -196,7 +196,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: ''
+          description: 'If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
   - uid: office.Excel.Worksheet.getPreviousOrNullObject
@@ -219,7 +219,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: ''
+          description: 'If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
   - uid: office.Excel.Worksheet.getRange
@@ -240,7 +240,7 @@ items:
         description: ''
       parameters:
         - id: address
-          description: ''
+          description: 'The address or the name of the range. If not specified, the entire worksheet range is returned.'
           type:
             - string
   - uid: office.Excel.Worksheet.getUsedRange
@@ -264,7 +264,7 @@ items:
         description: ''
       parameters:
         - id: valuesOnly
-          description: ''
+          description: 'Considers only cells with values as used cells (ignoring formatting). \[Api set: ExcelApi 1.2\]'
           type:
             - boolean
   - uid: office.Excel.Worksheet.getUsedRangeOrNullObject
@@ -287,7 +287,7 @@ items:
         description: ''
       parameters:
         - id: valuesOnly
-          description: ''
+          description: Considers only cells with values as used cells.
           type:
             - boolean
   - uid: office.Excel.Worksheet.id

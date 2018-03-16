@@ -41,15 +41,18 @@ items:
         description: ''
       parameters:
         - id: left
-          description: ''
+          description: 'The left position of the top, left corner of the Outline.'
           type:
             - number
         - id: top
-          description: ''
+          description: 'The top position of the top, left corner of the Outline.'
           type:
             - number
         - id: html
-          description: ''
+          description: >-
+            An HTML string that describes the visual presentation of the Outline. See \[supported
+            HTML\](../../docs/onenote/onenote-add-ins-page-content.md\#supported-html) for the OneNote add-ins
+            JavaScript API. \[Api set: OneNoteApi 1.1\]
           type:
             - string
   - uid: office.OneNote.Page.clientUrl
@@ -97,7 +100,7 @@ items:
         description: ''
       parameters:
         - id: destinationSection
-          description: ''
+          description: 'The section to copy this page to. \[Api set: OneNoteApi 1.1\]'
           type:
             - OneNote.Section
   - uid: office.OneNote.Page.id
@@ -145,11 +148,11 @@ items:
         description: ''
       parameters:
         - id: location
-          description: ''
+          description: The location of the new page relative to the current page.
           type:
             - string
         - id: title
-          description: ''
+          description: 'The title of the new page. \[Api set: OneNoteApi 1.1\]'
           type:
             - string
   - uid: office.OneNote.Page.load

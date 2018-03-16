@@ -50,7 +50,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: 'The name of the section group. \[Api set: OneNoteApi 1.1\]'
           type:
             - string
   - uid: office.OneNote.SectionGroupCollection.getItem
@@ -68,7 +68,9 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: >-
+            The ID of the section group, or the index location of the section group in the collection. \[Api set:
+            OneNoteApi 1.1\]
           type:
             - number | string
   - uid: office.OneNote.SectionGroupCollection.getItemAt
@@ -86,7 +88,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: 'Index value of the object to be retrieved. Zero-indexed. \[Api set: OneNoteApi 1.1\]'
           type:
             - number
   - uid: office.OneNote.SectionGroupCollection.items

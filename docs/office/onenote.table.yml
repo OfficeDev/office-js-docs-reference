@@ -45,7 +45,9 @@ items:
         description: ''
       parameters:
         - id: values
-          description: ''
+          description: >-
+            Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in
+            the table. \[Api set: OneNoteApi 1.1\]
           type:
             - Array<string>
   - uid: office.OneNote.Table.appendRow
@@ -63,7 +65,9 @@ items:
         description: ''
       parameters:
         - id: values
-          description: ''
+          description: >-
+            Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in
+            the table. \[Api set: OneNoteApi 1.1\]
           type:
             - Array<string>
   - uid: office.OneNote.Table.borderVisible
@@ -127,11 +131,11 @@ items:
         description: ''
       parameters:
         - id: rowIndex
-          description: ''
+          description: The index of the row.
           type:
             - number
         - id: cellIndex
-          description: ''
+          description: 'The index of the cell in the row. \[Api set: OneNoteApi 1.1\]'
           type:
             - number
   - uid: office.OneNote.Table.id
@@ -166,11 +170,13 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: Index where the column will be inserted in the table.
           type:
             - number
         - id: values
-          description: ''
+          description: >-
+            Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in
+            the table. \[Api set: OneNoteApi 1.1\]
           type:
             - Array<string>
   - uid: office.OneNote.Table.insertRow
@@ -190,11 +196,13 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: Index where the row will be inserted in the table.
           type:
             - number
         - id: values
-          description: ''
+          description: >-
+            Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in
+            the table. \[Api set: OneNoteApi 1.1\]
           type:
             - Array<string>
   - uid: office.OneNote.Table.load

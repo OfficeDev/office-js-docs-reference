@@ -17,7 +17,6 @@ items:
       - office.Excel.ConditionalFormatCollection.add
       - office.Excel.ConditionalFormatCollection.clearAll
       - office.Excel.ConditionalFormatCollection.getCount
-      - office.Excel.ConditionalFormatCollection.getItem
       - office.Excel.ConditionalFormatCollection.getItemAt
       - office.Excel.ConditionalFormatCollection.items
       - office.Excel.ConditionalFormatCollection.load
@@ -40,7 +39,7 @@ items:
         description: ''
       parameters:
         - id: type
-          description: ''
+          description: The type of conditional format being added. See Excel.ConditionalFormatType for details.
           type:
             - string
   - uid: office.Excel.ConditionalFormatCollection.clearAll
@@ -75,27 +74,6 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: office.Excel.ConditionalFormatCollection.getItem
-    summary: |-
-      Returns a conditional format for the given ID.
-
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
-    name: getItem(id)
-    fullName: office.Excel.ConditionalFormatCollection.getItem
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getItem(id: string): Excel.ConditionalFormat;'
-      return:
-        type:
-          - Excel.ConditionalFormat
-        description: Conditional Format object.
-      parameters:
-        - id: id
-          description: ''
-          type:
-            - string
   - uid: office.Excel.ConditionalFormatCollection.getItemAt
     summary: |-
       Returns a conditional format at the given index.
@@ -114,7 +92,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: Index of the conditional formats to be retrieved.
           type:
             - number
     remarks: |

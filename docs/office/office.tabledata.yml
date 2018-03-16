@@ -12,7 +12,7 @@ items:
       - office.Office.TableData.headers
       - office.Office.TableData.rows
   - uid: office.Office.TableData.constructor
-    summary: Constructs a new instance of the TableData class
+    summary: 'Constructs a new instance of the [TableData](xref:office.Office.TableData) class'
     name: 'constructor(rows, headers)'
     fullName: office.Office.TableData.constructor
     langs:

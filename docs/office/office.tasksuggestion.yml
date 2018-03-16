@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.TaskSuggestion
+    name: Office.TaskSuggestion
+    fullName: office.Office.TaskSuggestion
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.TaskSuggestion.assignees
+      - office.Office.TaskSuggestion.taskString
+  - uid: office.Office.TaskSuggestion.assignees
+    name: assignees
+    fullName: office.Office.TaskSuggestion.assignees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'assignees: Array<EmailUser>;'
+      return:
+        type:
+          - Array<EmailUser>
+  - uid: office.Office.TaskSuggestion.taskString
+    name: taskString
+    fullName: office.Office.TaskSuggestion.taskString
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'taskString: string;'
+      return:
+        type:
+          - string

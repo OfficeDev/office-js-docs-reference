@@ -1,0 +1,70 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.NotificationMessageDetails
+    name: Office.NotificationMessageDetails
+    fullName: office.Office.NotificationMessageDetails
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.NotificationMessageDetails.icon
+      - office.Office.NotificationMessageDetails.key
+      - office.Office.NotificationMessageDetails.message
+      - office.Office.NotificationMessageDetails.persistent
+      - office.Office.NotificationMessageDetails.type
+  - uid: office.Office.NotificationMessageDetails.icon
+    name: icon
+    fullName: office.Office.NotificationMessageDetails.icon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'icon?: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.NotificationMessageDetails.key
+    name: key
+    fullName: office.Office.NotificationMessageDetails.key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key?: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.NotificationMessageDetails.message
+    name: message
+    fullName: office.Office.NotificationMessageDetails.message
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'message: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.NotificationMessageDetails.persistent
+    name: persistent
+    fullName: office.Office.NotificationMessageDetails.persistent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'persistent?: Boolean;'
+      return:
+        type:
+          - Boolean
+  - uid: office.Office.NotificationMessageDetails.type
+    name: type
+    fullName: office.Office.NotificationMessageDetails.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: Office.MailboxEnums.ItemNotificationMessageType;'
+      return:
+        type:
+          - Office.MailboxEnums.ItemNotificationMessageType

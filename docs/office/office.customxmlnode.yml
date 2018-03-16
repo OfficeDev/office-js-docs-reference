@@ -44,15 +44,15 @@ items:
         description: ''
       parameters:
         - id: xPath
-          description: ''
+          description: The xPath expression
           type:
             - string
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.getNodeValueAsync
@@ -70,11 +70,11 @@ items:
         description: ''
       parameters:
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.getTextAsync
@@ -92,11 +92,11 @@ items:
         description: ''
       parameters:
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.getXmlAsync
@@ -114,11 +114,11 @@ items:
         description: ''
       parameters:
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.namespaceUri
@@ -158,15 +158,15 @@ items:
         description: ''
       parameters:
         - id: value
-          description: ''
+          description: The value to be set on the node
           type:
             - string
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.setTextAsync
@@ -184,15 +184,15 @@ items:
         description: ''
       parameters:
         - id: text
-          description: ''
+          description: Required. The text value of the XML node.
           type:
             - string
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.setXmlAsync
@@ -210,14 +210,14 @@ items:
         description: ''
       parameters:
         - id: xml
-          description: ''
+          description: The XML to be set on the node
           type:
             - string
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'

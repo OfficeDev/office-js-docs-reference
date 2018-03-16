@@ -43,15 +43,17 @@ items:
         description: ''
       parameters:
         - id: range
-          description: ''
+          description: >-
+            Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full
+            address, including the sheet name
           type:
             - Excel.Range | string
         - id: bindingType
-          description: ''
+          description: Type of binding. See Excel.BindingType.
           type:
             - string
         - id: id
-          description: ''
+          description: Name of binding.
           type:
             - string
   - uid: office.Excel.BindingCollection.addFromNamedItem
@@ -72,15 +74,15 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: Name from which to create binding.
           type:
             - string
         - id: bindingType
-          description: ''
+          description: Type of binding. See Excel.BindingType.
           type:
             - string
         - id: id
-          description: ''
+          description: Name of binding.
           type:
             - string
   - uid: office.Excel.BindingCollection.addFromSelection
@@ -101,11 +103,11 @@ items:
         description: ''
       parameters:
         - id: bindingType
-          description: ''
+          description: Type of binding. See Excel.BindingType.
           type:
             - string
         - id: id
-          description: ''
+          description: Name of binding.
           type:
             - string
   - uid: office.Excel.BindingCollection.count
@@ -157,7 +159,7 @@ items:
         description: ''
       parameters:
         - id: id
-          description: ''
+          description: Id of the binding object to be retrieved.
           type:
             - string
   - uid: office.Excel.BindingCollection.getItemAt
@@ -178,7 +180,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
   - uid: office.Excel.BindingCollection.getItemOrNullObject
@@ -199,7 +201,7 @@ items:
         description: ''
       parameters:
         - id: id
-          description: ''
+          description: Id of the binding object to be retrieved.
           type:
             - string
   - uid: office.Excel.BindingCollection.items

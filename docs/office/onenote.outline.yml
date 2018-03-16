@@ -37,7 +37,10 @@ items:
         description: ''
       parameters:
         - id: html
-          description: ''
+          description: >-
+            The HTML string to append. See \[supported
+            HTML\](../../docs/onenote/onenote-add-ins-page-content.md\#supported-html) for the OneNote add-ins
+            JavaScript API. \[Api set: OneNoteApi 1.1\]
           type:
             - string
   - uid: office.OneNote.Outline.appendImage
@@ -55,15 +58,17 @@ items:
         description: ''
       parameters:
         - id: base64EncodedImage
-          description: ''
+          description: HTML string to append.
           type:
             - string
         - id: width
-          description: ''
+          description: Optional. Width in the unit of Points. The default value is null and image width will be respected.
           type:
             - number
         - id: height
-          description: ''
+          description: >-
+            Optional. Height in the unit of Points. The default value is null and image height will be respected. \[Api
+            set: OneNoteApi 1.1\]
           type:
             - number
   - uid: office.OneNote.Outline.appendRichText
@@ -81,7 +86,7 @@ items:
         description: ''
       parameters:
         - id: paragraphText
-          description: ''
+          description: 'HTML string to append. \[Api set: OneNoteApi 1.1\]'
           type:
             - string
   - uid: office.OneNote.Outline.appendTable
@@ -99,15 +104,17 @@ items:
         description: ''
       parameters:
         - id: rowCount
-          description: ''
+          description: Required. The number of rows in the table.
           type:
             - number
         - id: columnCount
-          description: ''
+          description: Required. The number of columns in the table.
           type:
             - number
         - id: values
-          description: ''
+          description: >-
+            Optional 2D array. Cells are filled if the corresponding strings are specified in the array. \[Api set:
+            OneNoteApi 1.1\]
           type:
             - Array<Array<string>>
   - uid: office.OneNote.Outline.id

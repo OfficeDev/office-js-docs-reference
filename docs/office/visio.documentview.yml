@@ -1,0 +1,137 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Visio.DocumentView
+    summary: |-
+      Represents the DocumentView class.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: Visio.DocumentView
+    fullName: office.Visio.DocumentView
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Visio.DocumentView.disableHyperlinks
+      - office.Visio.DocumentView.disablePan
+      - office.Visio.DocumentView.disableZoom
+      - office.Visio.DocumentView.hideDiagramBoundary
+      - office.Visio.DocumentView.load
+      - office.Visio.DocumentView.set
+      - office.Visio.DocumentView.toJSON
+  - uid: office.Visio.DocumentView.disableHyperlinks
+    summary: |-
+      Disable Hyperlinks.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: disableHyperlinks
+    fullName: office.Visio.DocumentView.disableHyperlinks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disableHyperlinks: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Visio.DocumentView.disablePan
+    summary: |-
+      Disable Pan.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: disablePan
+    fullName: office.Visio.DocumentView.disablePan
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disablePan: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Visio.DocumentView.disableZoom
+    summary: |-
+      Disable Zoom.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: disableZoom
+    fullName: office.Visio.DocumentView.disableZoom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disableZoom: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Visio.DocumentView.hideDiagramBoundary
+    summary: |-
+      Disable Hyperlinks.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: hideDiagramBoundary
+    fullName: office.Visio.DocumentView.hideDiagramBoundary
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hideDiagramBoundary: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Visio.DocumentView.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Visio.DocumentView.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Visio.Interfaces.DocumentViewLoadOptions): Visio.DocumentView;'
+      return:
+        type:
+          - Visio.DocumentView
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.DocumentViewLoadOptions
+  - uid: office.Visio.DocumentView.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Visio.DocumentView.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.DocumentViewUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.DocumentViewUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Visio.DocumentView.toJSON
+    name: toJSON()
+    fullName: office.Visio.DocumentView.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.DocumentViewData;'
+      return:
+        type:
+          - Visio.Interfaces.DocumentViewData
+        description: ''

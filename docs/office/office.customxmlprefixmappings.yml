@@ -26,19 +26,19 @@ items:
         description: ''
       parameters:
         - id: prefix
-          description: ''
+          description: The namespace prefix
           type:
             - string
         - id: ns
-          description: ''
+          description: The namespace URI
           type:
             - string
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPrefixMappings.getNamespaceAsync
@@ -56,15 +56,15 @@ items:
         description: ''
       parameters:
         - id: prefix
-          description: ''
+          description: The namespace prefix
           type:
             - string
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPrefixMappings.getPrefixAsync
@@ -82,14 +82,14 @@ items:
         description: ''
       parameters:
         - id: ns
-          description: ''
+          description: The namespace URI
           type:
             - string
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'

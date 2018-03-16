@@ -27,7 +27,7 @@ items:
         description: ''
       parameters:
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.File.getSliceAsync
@@ -45,11 +45,11 @@ items:
         description: ''
       parameters:
         - id: sliceIndex
-          description: ''
+          description: The index of the slice to be retrieved
           type:
             - number
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.File.size

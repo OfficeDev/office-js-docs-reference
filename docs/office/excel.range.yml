@@ -148,7 +148,7 @@ items:
         description: ''
       parameters:
         - id: applyTo
-          description: ''
+          description: Determines the type of clear action. See Excel.ClearApplyTo for details.
           type:
             - string
   - uid: office.Excel.Range.columnCount
@@ -229,7 +229,7 @@ items:
         description: ''
       parameters:
         - id: shift
-          description: ''
+          description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
           type:
             - string
   - uid: office.Excel.Range.format
@@ -316,7 +316,7 @@ items:
         description: ''
       parameters:
         - id: anotherRange
-          description: ''
+          description: The range object or address or range name.
           type:
             - Excel.Range | string
   - uid: office.Excel.Range.getCell
@@ -340,11 +340,11 @@ items:
         description: ''
       parameters:
         - id: row
-          description: ''
+          description: Row number of the cell to be retrieved. Zero-indexed.
           type:
             - number
         - id: column
-          description: ''
+          description: Column number of the cell to be retrieved. Zero-indexed.
           type:
             - number
   - uid: office.Excel.Range.getColumn
@@ -365,7 +365,7 @@ items:
         description: ''
       parameters:
         - id: column
-          description: ''
+          description: Column number of the range to be retrieved. Zero-indexed.
           type:
             - number
   - uid: office.Excel.Range.getColumnsAfter
@@ -386,7 +386,10 @@ items:
         description: ''
       parameters:
         - id: count
-          description: ''
+          description: >-
+            The number of columns to include in the resulting range. In general, use a positive number to create a range
+            outside the current range. You can also use a negative number to create a range within the current range.
+            The default value is 1.
           type:
             - number
   - uid: office.Excel.Range.getColumnsBefore
@@ -407,7 +410,10 @@ items:
         description: ''
       parameters:
         - id: count
-          description: ''
+          description: >-
+            The number of columns to include in the resulting range. In general, use a positive number to create a range
+            outside the current range. You can also use a negative number to create a range within the current range.
+            The default value is 1.
           type:
             - number
   - uid: office.Excel.Range.getEntireColumn
@@ -464,7 +470,7 @@ items:
         description: ''
       parameters:
         - id: anotherRange
-          description: ''
+          description: The range object or range address that will be used to determine the intersection of ranges.
           type:
             - Excel.Range | string
   - uid: office.Excel.Range.getIntersectionOrNullObject
@@ -487,7 +493,7 @@ items:
         description: ''
       parameters:
         - id: anotherRange
-          description: ''
+          description: The range object or range address that will be used to determine the intersection of ranges.
           type:
             - Excel.Range | string
     remarks: |
@@ -609,11 +615,15 @@ items:
         description: ''
       parameters:
         - id: rowOffset
-          description: ''
+          description: >-
+            The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset
+            downward, and negative values are offset upward.
           type:
             - number
         - id: columnOffset
-          description: ''
+          description: >-
+            The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are
+            offset to the right, and negative values are offset to the left.
           type:
             - number
   - uid: office.Excel.Range.getResizedRange
@@ -636,11 +646,15 @@ items:
         description: ''
       parameters:
         - id: deltaRows
-          description: ''
+          description: >-
+            The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive
+            number to expand the range, or a negative number to decrease it.
           type:
             - number
         - id: deltaColumns
-          description: ''
+          description: >-
+            The number of columnsby which to expand the bottom-right corner, relative to the current range. Use a
+            positive number to expand the range, or a negative number to decrease it.
           type:
             - number
   - uid: office.Excel.Range.getRow
@@ -661,7 +675,7 @@ items:
         description: ''
       parameters:
         - id: row
-          description: ''
+          description: Row number of the range to be retrieved. Zero-indexed.
           type:
             - number
   - uid: office.Excel.Range.getRowsAbove
@@ -682,7 +696,10 @@ items:
         description: ''
       parameters:
         - id: count
-          description: ''
+          description: >-
+            The number of rows to include in the resulting range. In general, use a positive number to create a range
+            outside the current range. You can also use a negative number to create a range within the current range.
+            The default value is 1.
           type:
             - number
   - uid: office.Excel.Range.getRowsBelow
@@ -703,7 +720,10 @@ items:
         description: ''
       parameters:
         - id: count
-          description: ''
+          description: >-
+            The number of rows to include in the resulting range. In general, use a positive number to create a range
+            outside the current range. You can also use a negative number to create a range within the current range.
+            The default value is 1.
           type:
             - number
   - uid: office.Excel.Range.getUsedRange
@@ -726,7 +746,7 @@ items:
         description: ''
       parameters:
         - id: valuesOnly
-          description: ''
+          description: 'Considers only cells with values as used cells. \[Api set: ExcelApi 1.2\]'
           type:
             - boolean
     remarks: |
@@ -799,7 +819,7 @@ items:
         description: ''
       parameters:
         - id: valuesOnly
-          description: ''
+          description: Considers only cells with values as used cells.
           type:
             - boolean
     remarks: |
@@ -886,7 +906,7 @@ items:
         description: ''
       parameters:
         - id: shift
-          description: ''
+          description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
           type:
             - string
   - uid: office.Excel.Range.load
@@ -927,7 +947,9 @@ items:
         description: ''
       parameters:
         - id: across
-          description: ''
+          description: >-
+            Set true to merge cells in each row of the specified range as separate merged cells. The default value is
+            false.
           type:
             - boolean
   - uid: office.Excel.Range.numberFormat

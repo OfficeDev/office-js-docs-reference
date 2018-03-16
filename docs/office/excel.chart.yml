@@ -114,15 +114,17 @@ items:
         description: ''
       parameters:
         - id: width
-          description: ''
+          description: (Optional) The desired width of the resulting image.
           type:
             - number
         - id: height
-          description: ''
+          description: (Optional) The desired height of the resulting image.
           type:
             - number
         - id: fittingMode
-          description: ''
+          description: >-
+            (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height
+            and width are set)."
           type:
             - string
   - uid: office.Excel.Chart.height
@@ -260,11 +262,13 @@ items:
         description: ''
       parameters:
         - id: sourceData
-          description: ''
+          description: The Range object corresponding to the source data.
           type:
             - Excel.Range
         - id: seriesBy
-          description: ''
+          description: >-
+            Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
+            (default), Rows, Columns. See Excel.ChartSeriesBy for details.
           type:
             - string
   - uid: office.Excel.Chart.setPosition
@@ -285,11 +289,15 @@ items:
         description: ''
       parameters:
         - id: startCell
-          description: ''
+          description: >-
+            The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell,
+            depending on the user's right-to-left display settings.
           type:
             - Excel.Range | string
         - id: endCell
-          description: ''
+          description: >-
+            (Optional) The end cell. If specified, the chart's width and height will be set to fully cover up this
+            cell/range.
           type:
             - Excel.Range | string
   - uid: office.Excel.Chart.title

@@ -50,7 +50,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: 'The name of the notebook. \[Api set: OneNoteApi 1.1\]'
           type:
             - string
   - uid: office.OneNote.NotebookCollection.getItem
@@ -68,7 +68,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: 'The ID of the notebook, or the index location of the notebook in the collection. \[Api set: OneNoteApi 1.1\]'
           type:
             - number | string
   - uid: office.OneNote.NotebookCollection.getItemAt
@@ -86,7 +86,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: 'Index value of the object to be retrieved. Zero-indexed. \[Api set: OneNoteApi 1.1\]'
           type:
             - number
   - uid: office.OneNote.NotebookCollection.items

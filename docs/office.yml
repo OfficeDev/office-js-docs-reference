@@ -129,22 +129,46 @@ items:
       - office.Excel.WorksheetProtection
       - office.Excel.WorksheetProtectionOptions
       - office.Office.ActiveView
+      - office.Office.Appointment
+      - office.Office.AppointmentCompose
+      - office.Office.AppointmentForm
+      - office.Office.AppointmentRead
+      - office.Office.AsyncContextOptions
       - office.Office.AsyncResult
       - office.Office.AsyncResultStatus
+      - office.Office.AttachmentDetails
+      - office.Office.Auth
+      - office.Office.AuthOptions
       - office.Office.Binding
       - office.Office.Bindings
       - office.Office.BindingType
+      - office.Office.Body
+      - office.Office.cast.item.toAppointment
+      - office.Office.cast.item.toAppointmentCompose
+      - office.Office.cast.item.toAppointmentRead
+      - office.Office.cast.item.toItemCompose
+      - office.Office.cast.item.toItemRead
+      - office.Office.cast.item.toMessage
+      - office.Office.cast.item.toMessageCompose
+      - office.Office.cast.item.toMessageRead
       - office.Office.CoercionType
+      - office.Office.CoercionTypeOptions
+      - office.Office.Contact
       - office.Office.Context
+      - office.Office.CustomProperties
       - office.Office.CustomXmlNode
       - office.Office.CustomXmlPart
       - office.Office.CustomXmlParts
       - office.Office.CustomXmlPrefixMappings
+      - office.Office.Diagnostics
       - office.Office.DialogHandler
       - office.Office.DialogOptions
       - office.Office.Document
       - office.Office.DocumentMode
       - office.Office.DocumentSelectionChangedEventArgs
+      - office.Office.EmailAddressDetails
+      - office.Office.EmailUser
+      - office.Office.Entities
       - office.Office.Error
       - office.Office.EventType
       - office.Office.File
@@ -156,22 +180,51 @@ items:
       - office.Office.Index
       - office.Office.InitializationReason
       - office.Office.initialize
+      - office.Office.Item
+      - office.Office.ItemCompose
+      - office.Office.ItemRead
+      - office.Office.LocalClientTime
+      - office.Office.Location
+      - office.Office.Mailbox
+      - office.Office.MailboxEnums.AttachmentType
+      - office.Office.MailboxEnums.EntityType
+      - office.Office.MailboxEnums.ItemNotificationMessageType
+      - office.Office.MailboxEnums.ItemType
+      - office.Office.MailboxEnums.RecipientType
+      - office.Office.MailboxEnums.ResponseType
+      - office.Office.MailboxEnums.RestVersion
       - office.Office.MatrixBinding
+      - office.Office.MeetingSuggestion
+      - office.Office.Message
+      - office.Office.MessageCompose
+      - office.Office.MessageRead
+      - office.Office.NotificationMessageDetails
+      - office.Office.NotificationMessages
       - office.Office.OfficeTheme
+      - office.Office.PhoneNumber
       - office.Office.PlatformType
       - office.Office.ProjectProjectFields
       - office.Office.ProjectResourceFields
       - office.Office.ProjectTaskFields
       - office.Office.ProjectViewTypes
+      - office.Office.Recipients
+      - office.Office.ReplyFormAttachment
+      - office.Office.ReplyFormData
+      - office.Office.RoamingSettings
       - office.Office.select
       - office.Office.SelectionMode
       - office.Office.Settings
       - office.Office.Slice
+      - office.Office.SourceProperty
+      - office.Office.Subject
       - office.Office.Table
       - office.Office.TableBinding
       - office.Office.TableData
+      - office.Office.TaskSuggestion
       - office.Office.TextBinding
+      - office.Office.Time
       - office.Office.UI
+      - office.Office.UserProfile
       - office.Office.useShortNamespace
       - office.Office.ValueFormat
       - office.OfficeCore.ABType
@@ -182,6 +235,8 @@ items:
       - office.OfficeExtension.ClientRequestContext
       - office.OfficeExtension.ClientResult
       - office.OfficeExtension.DebugInfo
+      - office.OfficeExtension.EmbeddedOptions
+      - office.OfficeExtension.EmbeddedSession
       - office.OfficeExtension.Error
       - office.OfficeExtension.ErrorCodes
       - office.OfficeExtension.EventHandlerResult
@@ -229,6 +284,62 @@ items:
       - office.OneNote.TableCellCollection
       - office.OneNote.TableRow
       - office.OneNote.TableRowCollection
+      - office.Visio.Application
+      - office.Visio.BoundingBox
+      - office.Visio.Comment
+      - office.Visio.CommentCollection
+      - office.Visio.DataRefreshCompleteEventArgs
+      - office.Visio.Document
+      - office.Visio.DocumentLoadCompleteEventArgs
+      - office.Visio.DocumentView
+      - office.Visio.Highlight
+      - office.Visio.Hyperlink
+      - office.Visio.HyperlinkCollection
+      - office.Visio.Page
+      - office.Visio.PageCollection
+      - office.Visio.PageLoadCompleteEventArgs
+      - office.Visio.PageView
+      - office.Visio.Position
+      - office.Visio.RequestContext
+      - office.Visio.run
+      - office.Visio.Selection
+      - office.Visio.SelectionChangedEventArgs
+      - office.Visio.Shape
+      - office.Visio.ShapeCollection
+      - office.Visio.ShapeDataItem
+      - office.Visio.ShapeDataItemCollection
+      - office.Visio.ShapeMouseEnterEventArgs
+      - office.Visio.ShapeMouseLeaveEventArgs
+      - office.Visio.ShapeView
+      - office.Word.Body
+      - office.Word.ContentControl
+      - office.Word.ContentControlCollection
+      - office.Word.CustomProperty
+      - office.Word.CustomPropertyCollection
+      - office.Word.Document
+      - office.Word.DocumentProperties
+      - office.Word.Font
+      - office.Word.InlinePicture
+      - office.Word.InlinePictureCollection
+      - office.Word.List
+      - office.Word.ListCollection
+      - office.Word.ListItem
+      - office.Word.Paragraph
+      - office.Word.ParagraphCollection
+      - office.Word.Range
+      - office.Word.RangeCollection
+      - office.Word.RequestContext
+      - office.Word.run
+      - office.Word.SearchOptions
+      - office.Word.Section
+      - office.Word.SectionCollection
+      - office.Word.Table
+      - office.Word.TableBorder
+      - office.Word.TableCell
+      - office.Word.TableCellCollection
+      - office.Word.TableCollection
+      - office.Word.TableRow
+      - office.Word.TableRowCollection
   - uid: office.Excel.run
     summary: >-
       Executes a batch script that performs actions on the Excel object model, using the remote RequestContext of
@@ -240,7 +351,7 @@ items:
     type: function
     syntax:
       content: >-
-        function run<T>(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, objects:
+        export function run<T>(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, objects:
         OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>):
         OfficeExtension.IPromise<T>;
       return:
@@ -267,6 +378,142 @@ items:
             access to the Excel object model from the add-in.
           type:
             - '(context: Excel.RequestContext) => OfficeExtension.IPromise<T>'
+  - uid: office.Office.cast.item.toAppointment
+    name: toAppointment(item)
+    fullName: office.Office.cast.item.toAppointment
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function toAppointment(item: Office.Item): Office.Appointment;'
+      return:
+        type:
+          - Office.Appointment
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
+  - uid: office.Office.cast.item.toAppointmentCompose
+    name: toAppointmentCompose(item)
+    fullName: office.Office.cast.item.toAppointmentCompose
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function toAppointmentCompose(item: Office.Item): Office.AppointmentCompose;'
+      return:
+        type:
+          - Office.AppointmentCompose
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
+  - uid: office.Office.cast.item.toAppointmentRead
+    name: toAppointmentRead(item)
+    fullName: office.Office.cast.item.toAppointmentRead
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function toAppointmentRead(item: Office.Item): Office.AppointmentRead;'
+      return:
+        type:
+          - Office.AppointmentRead
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
+  - uid: office.Office.cast.item.toItemCompose
+    name: toItemCompose(item)
+    fullName: office.Office.cast.item.toItemCompose
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function toItemCompose(item: Office.Item): Office.ItemCompose;'
+      return:
+        type:
+          - Office.ItemCompose
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
+  - uid: office.Office.cast.item.toItemRead
+    name: toItemRead(item)
+    fullName: office.Office.cast.item.toItemRead
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function toItemRead(item: Office.Item): Office.ItemRead;'
+      return:
+        type:
+          - Office.ItemRead
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
+  - uid: office.Office.cast.item.toMessage
+    name: toMessage(item)
+    fullName: office.Office.cast.item.toMessage
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function toMessage(item: Office.Item): Office.Message;'
+      return:
+        type:
+          - Office.Message
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
+  - uid: office.Office.cast.item.toMessageCompose
+    name: toMessageCompose(item)
+    fullName: office.Office.cast.item.toMessageCompose
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function toMessageCompose(item: Office.Item): Office.MessageCompose;'
+      return:
+        type:
+          - Office.MessageCompose
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
+  - uid: office.Office.cast.item.toMessageRead
+    name: toMessageRead(item)
+    fullName: office.Office.cast.item.toMessageRead
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function toMessageRead(item: Office.Item): Office.MessageRead;'
+      return:
+        type:
+          - Office.MessageRead
+        description: ''
+      parameters:
+        - id: item
+          description: ''
+          type:
+            - Office.Item
   - uid: office.Office.initialize
     summary: This method is called after the Office API was loaded.
     name: initialize(reason)
@@ -282,7 +529,7 @@ items:
         description: ''
       parameters:
         - id: reason
-          description: ''
+          description: Indicates how the app was initialized
           type:
             - InitializationReason
   - uid: office.Office.select
@@ -300,11 +547,13 @@ items:
         description: ''
       parameters:
         - id: expression
-          description: ''
+          description: >-
+            The object to be retrieved. Example "bindings\#BindingName", retrieves a binding promise for a binding named
+            'BindingName'
           type:
             - string
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.useShortNamespace
@@ -322,7 +571,7 @@ items:
         description: ''
       parameters:
         - id: useShortNamespace
-          description: ''
+          description: Indicates if 'true' that the short namespace will be used
           type:
             - boolean
   - uid: office.OneNote.run
@@ -336,7 +585,7 @@ items:
     type: function
     syntax:
       content: >-
-        function run<T>(batch: (context: OneNote.RequestContext) => OfficeExtension.IPromise<T>):
+        export function run<T>(batch: (context: OneNote.RequestContext) => OfficeExtension.IPromise<T>):
         OfficeExtension.IPromise<T>;
       return:
         type:
@@ -351,6 +600,71 @@ items:
             access to the OneNote object model from the add-in.
           type:
             - '(context: OneNote.RequestContext) => OfficeExtension.IPromise<T>'
+  - uid: office.Visio.run
+    summary: >-
+      Executes a batch script that performs actions on the Visio object model, using the request context of
+      previously-created API objects.
+    name: 'run(objects, batch)'
+    fullName: office.Visio.run
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) =>
+        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+      return:
+        type:
+          - OfficeExtension.IPromise<T>
+        description: ''
+      parameters:
+        - id: objects
+          description: >-
+            An array of previously-created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared request context, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
+          type:
+            - 'OfficeExtension.ClientObject[]'
+        - id: batch
+          description: >-
+            A function that takes in a Visio.RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated
+            during execution will be released.
+          type:
+            - '(context: Visio.RequestContext) => OfficeExtension.IPromise<T>'
+  - uid: office.Word.run
+    summary: >-
+      Executes a batch script that performs actions on the Word object model, using the RequestContext of
+      previously-created API objects.
+    name: 'run(objects, batch)'
+    fullName: office.Word.run
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) =>
+        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+      return:
+        type:
+          - OfficeExtension.IPromise<T>
+        description: ''
+      parameters:
+        - id: objects
+          description: >-
+            An array of previously-created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared RequestContext, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
+          type:
+            - 'OfficeExtension.ClientObject[]'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office
+            add-in and the Word application run in two different processes, the RequestContext is required to get access
+            to the Word object model from the add-in.
+          type:
+            - '(context: Word.RequestContext) => OfficeExtension.IPromise<T>'
 references:
   - uid: office.Excel.Application
     name: Excel.Application
@@ -594,20 +908,44 @@ references:
     name: Excel.WorksheetProtectionOptions
   - uid: office.Office.ActiveView
     name: Office.ActiveView
+  - uid: office.Office.Appointment
+    name: Office.Appointment
+  - uid: office.Office.AppointmentCompose
+    name: Office.AppointmentCompose
+  - uid: office.Office.AppointmentForm
+    name: Office.AppointmentForm
+  - uid: office.Office.AppointmentRead
+    name: Office.AppointmentRead
+  - uid: office.Office.AsyncContextOptions
+    name: Office.AsyncContextOptions
   - uid: office.Office.AsyncResult
     name: Office.AsyncResult
   - uid: office.Office.AsyncResultStatus
     name: Office.AsyncResultStatus
+  - uid: office.Office.AttachmentDetails
+    name: Office.AttachmentDetails
+  - uid: office.Office.Auth
+    name: Office.Auth
+  - uid: office.Office.AuthOptions
+    name: Office.AuthOptions
   - uid: office.Office.Binding
     name: Office.Binding
   - uid: office.Office.Bindings
     name: Office.Bindings
   - uid: office.Office.BindingType
     name: Office.BindingType
+  - uid: office.Office.Body
+    name: Office.Body
   - uid: office.Office.CoercionType
     name: Office.CoercionType
+  - uid: office.Office.CoercionTypeOptions
+    name: Office.CoercionTypeOptions
+  - uid: office.Office.Contact
+    name: Office.Contact
   - uid: office.Office.Context
     name: Office.Context
+  - uid: office.Office.CustomProperties
+    name: Office.CustomProperties
   - uid: office.Office.CustomXmlNode
     name: Office.CustomXmlNode
   - uid: office.Office.CustomXmlPart
@@ -616,6 +954,8 @@ references:
     name: Office.CustomXmlParts
   - uid: office.Office.CustomXmlPrefixMappings
     name: Office.CustomXmlPrefixMappings
+  - uid: office.Office.Diagnostics
+    name: Office.Diagnostics
   - uid: office.Office.DialogHandler
     name: Office.DialogHandler
   - uid: office.Office.DialogOptions
@@ -626,6 +966,12 @@ references:
     name: Office.DocumentMode
   - uid: office.Office.DocumentSelectionChangedEventArgs
     name: Office.DocumentSelectionChangedEventArgs
+  - uid: office.Office.EmailAddressDetails
+    name: Office.EmailAddressDetails
+  - uid: office.Office.EmailUser
+    name: Office.EmailUser
+  - uid: office.Office.Entities
+    name: Office.Entities
   - uid: office.Office.Error
     name: Office.Error
   - uid: office.Office.EventType
@@ -646,10 +992,50 @@ references:
     name: Office.Index
   - uid: office.Office.InitializationReason
     name: Office.InitializationReason
+  - uid: office.Office.Item
+    name: Office.Item
+  - uid: office.Office.ItemCompose
+    name: Office.ItemCompose
+  - uid: office.Office.ItemRead
+    name: Office.ItemRead
+  - uid: office.Office.LocalClientTime
+    name: Office.LocalClientTime
+  - uid: office.Office.Location
+    name: Office.Location
+  - uid: office.Office.Mailbox
+    name: Office.Mailbox
+  - uid: office.Office.MailboxEnums.AttachmentType
+    name: Office.MailboxEnums.AttachmentType
+  - uid: office.Office.MailboxEnums.EntityType
+    name: Office.MailboxEnums.EntityType
+  - uid: office.Office.MailboxEnums.ItemNotificationMessageType
+    name: Office.MailboxEnums.ItemNotificationMessageType
+  - uid: office.Office.MailboxEnums.ItemType
+    name: Office.MailboxEnums.ItemType
+  - uid: office.Office.MailboxEnums.RecipientType
+    name: Office.MailboxEnums.RecipientType
+  - uid: office.Office.MailboxEnums.ResponseType
+    name: Office.MailboxEnums.ResponseType
+  - uid: office.Office.MailboxEnums.RestVersion
+    name: Office.MailboxEnums.RestVersion
   - uid: office.Office.MatrixBinding
     name: Office.MatrixBinding
+  - uid: office.Office.MeetingSuggestion
+    name: Office.MeetingSuggestion
+  - uid: office.Office.Message
+    name: Office.Message
+  - uid: office.Office.MessageCompose
+    name: Office.MessageCompose
+  - uid: office.Office.MessageRead
+    name: Office.MessageRead
+  - uid: office.Office.NotificationMessageDetails
+    name: Office.NotificationMessageDetails
+  - uid: office.Office.NotificationMessages
+    name: Office.NotificationMessages
   - uid: office.Office.OfficeTheme
     name: Office.OfficeTheme
+  - uid: office.Office.PhoneNumber
+    name: Office.PhoneNumber
   - uid: office.Office.PlatformType
     name: Office.PlatformType
   - uid: office.Office.ProjectProjectFields
@@ -660,22 +1046,40 @@ references:
     name: Office.ProjectTaskFields
   - uid: office.Office.ProjectViewTypes
     name: Office.ProjectViewTypes
+  - uid: office.Office.Recipients
+    name: Office.Recipients
+  - uid: office.Office.ReplyFormAttachment
+    name: Office.ReplyFormAttachment
+  - uid: office.Office.ReplyFormData
+    name: Office.ReplyFormData
+  - uid: office.Office.RoamingSettings
+    name: Office.RoamingSettings
   - uid: office.Office.SelectionMode
     name: Office.SelectionMode
   - uid: office.Office.Settings
     name: Office.Settings
   - uid: office.Office.Slice
     name: Office.Slice
+  - uid: office.Office.SourceProperty
+    name: Office.SourceProperty
+  - uid: office.Office.Subject
+    name: Office.Subject
   - uid: office.Office.Table
     name: Office.Table
   - uid: office.Office.TableBinding
     name: Office.TableBinding
   - uid: office.Office.TableData
     name: Office.TableData
+  - uid: office.Office.TaskSuggestion
+    name: Office.TaskSuggestion
   - uid: office.Office.TextBinding
     name: Office.TextBinding
+  - uid: office.Office.Time
+    name: Office.Time
   - uid: office.Office.UI
     name: Office.UI
+  - uid: office.Office.UserProfile
+    name: Office.UserProfile
   - uid: office.Office.ValueFormat
     name: Office.ValueFormat
   - uid: office.OfficeCore.ABType
@@ -694,6 +1098,10 @@ references:
     name: OfficeExtension.ClientResult
   - uid: office.OfficeExtension.DebugInfo
     name: OfficeExtension.DebugInfo
+  - uid: office.OfficeExtension.EmbeddedOptions
+    name: OfficeExtension.EmbeddedOptions
+  - uid: office.OfficeExtension.EmbeddedSession
+    name: OfficeExtension.EmbeddedSession
   - uid: office.OfficeExtension.Error
     name: OfficeExtension.Error
   - uid: office.OfficeExtension.ErrorCodes
@@ -786,3 +1194,111 @@ references:
     name: OneNote.TableRow
   - uid: office.OneNote.TableRowCollection
     name: OneNote.TableRowCollection
+  - uid: office.Visio.Application
+    name: Visio.Application
+  - uid: office.Visio.BoundingBox
+    name: Visio.BoundingBox
+  - uid: office.Visio.Comment
+    name: Visio.Comment
+  - uid: office.Visio.CommentCollection
+    name: Visio.CommentCollection
+  - uid: office.Visio.DataRefreshCompleteEventArgs
+    name: Visio.DataRefreshCompleteEventArgs
+  - uid: office.Visio.Document
+    name: Visio.Document
+  - uid: office.Visio.DocumentLoadCompleteEventArgs
+    name: Visio.DocumentLoadCompleteEventArgs
+  - uid: office.Visio.DocumentView
+    name: Visio.DocumentView
+  - uid: office.Visio.Highlight
+    name: Visio.Highlight
+  - uid: office.Visio.Hyperlink
+    name: Visio.Hyperlink
+  - uid: office.Visio.HyperlinkCollection
+    name: Visio.HyperlinkCollection
+  - uid: office.Visio.Page
+    name: Visio.Page
+  - uid: office.Visio.PageCollection
+    name: Visio.PageCollection
+  - uid: office.Visio.PageLoadCompleteEventArgs
+    name: Visio.PageLoadCompleteEventArgs
+  - uid: office.Visio.PageView
+    name: Visio.PageView
+  - uid: office.Visio.Position
+    name: Visio.Position
+  - uid: office.Visio.RequestContext
+    name: Visio.RequestContext
+  - uid: office.Visio.Selection
+    name: Visio.Selection
+  - uid: office.Visio.SelectionChangedEventArgs
+    name: Visio.SelectionChangedEventArgs
+  - uid: office.Visio.Shape
+    name: Visio.Shape
+  - uid: office.Visio.ShapeCollection
+    name: Visio.ShapeCollection
+  - uid: office.Visio.ShapeDataItem
+    name: Visio.ShapeDataItem
+  - uid: office.Visio.ShapeDataItemCollection
+    name: Visio.ShapeDataItemCollection
+  - uid: office.Visio.ShapeMouseEnterEventArgs
+    name: Visio.ShapeMouseEnterEventArgs
+  - uid: office.Visio.ShapeMouseLeaveEventArgs
+    name: Visio.ShapeMouseLeaveEventArgs
+  - uid: office.Visio.ShapeView
+    name: Visio.ShapeView
+  - uid: office.Word.Body
+    name: Word.Body
+  - uid: office.Word.ContentControl
+    name: Word.ContentControl
+  - uid: office.Word.ContentControlCollection
+    name: Word.ContentControlCollection
+  - uid: office.Word.CustomProperty
+    name: Word.CustomProperty
+  - uid: office.Word.CustomPropertyCollection
+    name: Word.CustomPropertyCollection
+  - uid: office.Word.Document
+    name: Word.Document
+  - uid: office.Word.DocumentProperties
+    name: Word.DocumentProperties
+  - uid: office.Word.Font
+    name: Word.Font
+  - uid: office.Word.InlinePicture
+    name: Word.InlinePicture
+  - uid: office.Word.InlinePictureCollection
+    name: Word.InlinePictureCollection
+  - uid: office.Word.List
+    name: Word.List
+  - uid: office.Word.ListCollection
+    name: Word.ListCollection
+  - uid: office.Word.ListItem
+    name: Word.ListItem
+  - uid: office.Word.Paragraph
+    name: Word.Paragraph
+  - uid: office.Word.ParagraphCollection
+    name: Word.ParagraphCollection
+  - uid: office.Word.Range
+    name: Word.Range
+  - uid: office.Word.RangeCollection
+    name: Word.RangeCollection
+  - uid: office.Word.RequestContext
+    name: Word.RequestContext
+  - uid: office.Word.SearchOptions
+    name: Word.SearchOptions
+  - uid: office.Word.Section
+    name: Word.Section
+  - uid: office.Word.SectionCollection
+    name: Word.SectionCollection
+  - uid: office.Word.Table
+    name: Word.Table
+  - uid: office.Word.TableBorder
+    name: Word.TableBorder
+  - uid: office.Word.TableCell
+    name: Word.TableCell
+  - uid: office.Word.TableCellCollection
+    name: Word.TableCellCollection
+  - uid: office.Word.TableCollection
+    name: Word.TableCollection
+  - uid: office.Word.TableRow
+    name: Word.TableRow
+  - uid: office.Word.TableRowCollection
+    name: Word.TableRowCollection

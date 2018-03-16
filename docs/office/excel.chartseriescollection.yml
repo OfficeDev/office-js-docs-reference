@@ -53,7 +53,7 @@ items:
         description: ''
   - uid: office.Excel.ChartSeriesCollection.getItemAt
     summary: |-
-      Retrieves a series based on its position in the collection.
+      Retrieves a series based on its position in the collection
 
       \[ [Api set: ExcelApi 1.1](http://bing.com) \]
     name: getItemAt(index)
@@ -69,7 +69,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
   - uid: office.Excel.ChartSeriesCollection.items

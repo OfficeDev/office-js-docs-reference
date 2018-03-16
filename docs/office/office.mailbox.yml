@@ -1,0 +1,328 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.Mailbox
+    name: Office.Mailbox
+    fullName: office.Office.Mailbox
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.Mailbox.addHandlerAsync
+      - office.Office.Mailbox.convertToEwsId
+      - office.Office.Mailbox.convertToLocalClientTime
+      - office.Office.Mailbox.convertToRestId
+      - office.Office.Mailbox.convertToUtcClientTime
+      - office.Office.Mailbox.diagnostics
+      - office.Office.Mailbox.displayAppointmentForm
+      - office.Office.Mailbox.displayMessageForm
+      - office.Office.Mailbox.displayNewAppointmentForm
+      - office.Office.Mailbox.displayNewMessageForm
+      - office.Office.Mailbox.ewsUrl
+      - office.Office.Mailbox.getCallbackTokenAsync
+      - office.Office.Mailbox.getUserIdentityTokenAsync
+      - office.Office.Mailbox.item
+      - office.Office.Mailbox.makeEwsRequestAsync
+      - office.Office.Mailbox.userProfile
+  - uid: office.Office.Mailbox.addHandlerAsync
+    summary: Adds an event handler for a supported event
+    name: 'addHandlerAsync(eventType, handler, options, callback)'
+    fullName: office.Office.Mailbox.addHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, options?: any,
+        callback?: (result: AsyncResult) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: The event that should invoke the handler
+          type:
+            - Office.EventType
+        - id: handler
+          description: The function to handle the event
+          type:
+            - '(type: Office.EventType) => void'
+        - id: options
+          description: Any optional parameters or state data passed to the method
+          type:
+            - any
+        - id: callback
+          description: The optional method to call when the handler is added
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.Mailbox.convertToEwsId
+    summary: Converts an item ID formatted for REST into EWS format.
+    name: 'convertToEwsId(itemId, restVersion)'
+    fullName: office.Office.Mailbox.convertToEwsId
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'convertToEwsId(itemId: string, restVersion: Office.MailboxEnums.RestVersion): string;'
+      return:
+        type:
+          - string
+        description: ''
+      parameters:
+        - id: itemId
+          description: An item ID formatted for the Outlook REST APIs
+          type:
+            - string
+        - id: restVersion
+          description: A value indicating the version of the Outlook REST API used to retrieve the item ID
+          type:
+            - Office.MailboxEnums.RestVersion
+  - uid: office.Office.Mailbox.convertToLocalClientTime
+    summary: Gets a Date object from a dictionary containing time information
+    name: convertToLocalClientTime(timeValue)
+    fullName: office.Office.Mailbox.convertToLocalClientTime
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'convertToLocalClientTime(timeValue: Date): LocalClientTime;'
+      return:
+        type:
+          - LocalClientTime
+        description: ''
+      parameters:
+        - id: timeValue
+          description: A Date object
+          type:
+            - Date
+  - uid: office.Office.Mailbox.convertToRestId
+    summary: Converts an item ID formatted for EWS into REST format.
+    name: 'convertToRestId(itemId, restVersion)'
+    fullName: office.Office.Mailbox.convertToRestId
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'convertToRestId(itemId: string, restVersion: Office.MailboxEnums.RestVersion): string;'
+      return:
+        type:
+          - string
+        description: ''
+      parameters:
+        - id: itemId
+          description: An item ID formatted for the Outlook EWS APIs
+          type:
+            - string
+        - id: restVersion
+          description: A value indicating the version of the Outlook REST API that the converted ID will be used with
+          type:
+            - Office.MailboxEnums.RestVersion
+  - uid: office.Office.Mailbox.convertToUtcClientTime
+    summary: Gets a dictionary containing time information in local client time
+    name: convertToUtcClientTime(input)
+    fullName: office.Office.Mailbox.convertToUtcClientTime
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'convertToUtcClientTime(input: LocalClientTime): Date;'
+      return:
+        type:
+          - Date
+        description: ''
+      parameters:
+        - id: input
+          description: >-
+            A dictionary containing a date. The dictionary should contain the following fields: year, month, date,
+            hours, minutes, seconds, time zone, time zone offset
+          type:
+            - LocalClientTime
+  - uid: office.Office.Mailbox.diagnostics
+    name: diagnostics
+    fullName: office.Office.Mailbox.diagnostics
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'diagnostics: Diagnostics;'
+      return:
+        type:
+          - Diagnostics
+  - uid: office.Office.Mailbox.displayAppointmentForm
+    summary: Displays an existing calendar appointment
+    name: displayAppointmentForm(itemId)
+    fullName: office.Office.Mailbox.displayAppointmentForm
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'displayAppointmentForm(itemId: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: itemId
+          description: The Exchange Web Services (EWS) identifier for an existing calendar appointment
+          type:
+            - string
+  - uid: office.Office.Mailbox.displayMessageForm
+    summary: Displays an existing message
+    name: displayMessageForm(itemId)
+    fullName: office.Office.Mailbox.displayMessageForm
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'displayMessageForm(itemId: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: itemId
+          description: The Exchange Web Services (EWS) identifier for an existing message
+          type:
+            - string
+  - uid: office.Office.Mailbox.displayNewAppointmentForm
+    summary: Displays a form for creating a new calendar appointment
+    name: displayNewAppointmentForm(parameters)
+    fullName: office.Office.Mailbox.displayNewAppointmentForm
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'displayNewAppointmentForm(parameters?: AppointmentForm): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: parameters
+          description: A dictionary of parameters describing the new appointment.
+          type:
+            - AppointmentForm
+  - uid: office.Office.Mailbox.displayNewMessageForm
+    summary: 'Displays a new message form WARNING: This api is not officially released, and may not work on all platforms'
+    name: displayNewMessageForm(options)
+    fullName: office.Office.Mailbox.displayNewMessageForm
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'displayNewMessageForm(options?: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: A dictionary containing all values to be filled in for the user in the new form
+          type:
+            - any
+  - uid: office.Office.Mailbox.ewsUrl
+    name: ewsUrl
+    fullName: office.Office.Mailbox.ewsUrl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ewsUrl: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.Mailbox.getCallbackTokenAsync
+    summary: Gets a string that contains a token used to get an attachment or item from an Exchange Server
+    name: 'getCallbackTokenAsync(callback, userContext)'
+    fullName: office.Office.Mailbox.getCallbackTokenAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCallbackTokenAsync(callback?: (result: AsyncResult) => void, userContext?: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: The optional method to call when the string is inserted
+          type:
+            - '(result: AsyncResult) => void'
+        - id: userContext
+          description: Optional variable for any state data that is passed to the asynchronous method
+          type:
+            - any
+  - uid: office.Office.Mailbox.getUserIdentityTokenAsync
+    summary: Gets a token identifying the user and the app for Office
+    name: 'getUserIdentityTokenAsync(callback, userContext)'
+    fullName: office.Office.Mailbox.getUserIdentityTokenAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getUserIdentityTokenAsync(callback?: (result: AsyncResult) => void, userContext?: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: The optional method to call when the string is inserted
+          type:
+            - '(result: AsyncResult) => void'
+        - id: userContext
+          description: Optional variable for any state data that is passed to the asynchronous method
+          type:
+            - any
+  - uid: office.Office.Mailbox.item
+    name: item
+    fullName: office.Office.Mailbox.item
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'item: Item;'
+      return:
+        type:
+          - Item
+  - uid: office.Office.Mailbox.makeEwsRequestAsync
+    summary: >-
+      Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the
+      user’s mailbox
+    name: 'makeEwsRequestAsync(data, callback, userContext)'
+    fullName: office.Office.Mailbox.makeEwsRequestAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'makeEwsRequestAsync(data: any, callback?: (result: AsyncResult) => void, userContext?: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: The EWS request
+          type:
+            - any
+        - id: callback
+          description: The optional method to call when the string is inserted
+          type:
+            - '(result: AsyncResult) => void'
+        - id: userContext
+          description: Optional variable for any state data that is passed to the asynchronous method
+          type:
+            - any
+  - uid: office.Office.Mailbox.userProfile
+    name: userProfile
+    fullName: office.Office.Mailbox.userProfile
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'userProfile: UserProfile;'
+      return:
+        type:
+          - UserProfile

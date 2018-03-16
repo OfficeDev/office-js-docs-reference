@@ -37,7 +37,7 @@ items:
         description: ''
       parameters:
         - id: calculationType
-          description: ''
+          description: Specifies the calculation type to use. See Excel.CalculationType for details.
           type:
             - string
   - uid: office.Excel.Application.calculationMode

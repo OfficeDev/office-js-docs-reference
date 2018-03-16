@@ -1,0 +1,104 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Visio.CommentCollection
+    summary: |-
+      Represents the CommentCollection for a given Shape.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: Visio.CommentCollection
+    fullName: office.Visio.CommentCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Visio.CommentCollection.getCount
+      - office.Visio.CommentCollection.getItem
+      - office.Visio.CommentCollection.items
+      - office.Visio.CommentCollection.load
+      - office.Visio.CommentCollection.toJSON
+  - uid: office.Visio.CommentCollection.getCount
+    summary: |-
+      Gets the number of Shape Data Items.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: getCount()
+    fullName: office.Visio.CommentCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: office.Visio.CommentCollection.getItem
+    summary: |-
+      Gets the Comment using its name.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: getItem(key)
+    fullName: office.Visio.CommentCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Visio.Comment;'
+      return:
+        type:
+          - Visio.Comment
+        description: ''
+      parameters:
+        - id: key
+          description: Key is the name of the Comment to be retrieved.
+          type:
+            - string
+  - uid: office.Visio.CommentCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.Visio.CommentCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Array<Visio.Comment>;'
+      return:
+        type:
+          - Array<Visio.Comment>
+  - uid: office.Visio.CommentCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Visio.CommentCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.CommentCollection;
+      return:
+        type:
+          - Visio.CommentCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+  - uid: office.Visio.CommentCollection.toJSON
+    name: toJSON()
+    fullName: office.Visio.CommentCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.CommentCollectionData;'
+      return:
+        type:
+          - Visio.Interfaces.CommentCollectionData
+        description: ''

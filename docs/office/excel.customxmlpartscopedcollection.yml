@@ -58,7 +58,7 @@ items:
         description: ''
       parameters:
         - id: id
-          description: ''
+          description: ID of the object to be retrieved.
           type:
             - string
   - uid: office.Excel.CustomXmlPartScopedCollection.getItemOrNullObject
@@ -81,7 +81,7 @@ items:
         description: ''
       parameters:
         - id: id
-          description: ''
+          description: ID of the object to be retrieved.
           type:
             - string
     remarks: |

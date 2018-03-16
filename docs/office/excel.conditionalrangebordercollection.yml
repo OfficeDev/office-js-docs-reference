@@ -72,7 +72,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
           type:
             - string
   - uid: office.Excel.ConditionalRangeBorderCollection.getItemAt
@@ -93,7 +93,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
   - uid: office.Excel.ConditionalRangeBorderCollection.items

@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.MailboxEnums.RecipientType
+    name: Office.MailboxEnums.RecipientType
+    fullName: office.Office.MailboxEnums.RecipientType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.MailboxEnums.RecipientType.DistributionList
+      - office.Office.MailboxEnums.RecipientType.ExternalUser
+      - office.Office.MailboxEnums.RecipientType.Other
+      - office.Office.MailboxEnums.RecipientType.User
+  - uid: office.Office.MailboxEnums.RecipientType.DistributionList
+    summary: Specifies that the recipient is a distribution list containing a list of email addresses
+    name: DistributionList
+    fullName: office.Office.MailboxEnums.RecipientType.DistributionList
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.MailboxEnums.RecipientType.ExternalUser
+    summary: Specifies that the recipient is an SMTP email address that is not on the Exchange server
+    name: ExternalUser
+    fullName: office.Office.MailboxEnums.RecipientType.ExternalUser
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.MailboxEnums.RecipientType.Other
+    summary: Specifies that the recipient is not one of the other recipient types
+    name: Other
+    fullName: office.Office.MailboxEnums.RecipientType.Other
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.MailboxEnums.RecipientType.User
+    summary: Specifies that the recipient is an SMTP email address that is on the Exchange server
+    name: User
+    fullName: office.Office.MailboxEnums.RecipientType.User
+    langs:
+      - typeScript
+    type: field

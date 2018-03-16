@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.RoamingSettings
+    name: Office.RoamingSettings
+    fullName: office.Office.RoamingSettings
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.RoamingSettings.get
+      - office.Office.RoamingSettings.remove
+      - office.Office.RoamingSettings.saveAsync
+      - office.Office.RoamingSettings.set
+  - uid: office.Office.RoamingSettings.get
+    summary: Retrieves the specified setting
+    name: get(name)
+    fullName: office.Office.RoamingSettings.get
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'get(name: string): any;'
+      return:
+        type:
+          - any
+        description: ''
+      parameters:
+        - id: name
+          description: The case-sensitive name of the setting to retrieve
+          type:
+            - string
+  - uid: office.Office.RoamingSettings.remove
+    summary: Removes the specified setting
+    name: remove(name)
+    fullName: office.Office.RoamingSettings.remove
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: The case-sensitive name of the setting to remove
+          type:
+            - string
+  - uid: office.Office.RoamingSettings.saveAsync
+    summary: Saves the settings
+    name: saveAsync(callback)
+    fullName: office.Office.RoamingSettings.saveAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'saveAsync(callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult'
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.RoamingSettings.set
+    summary: Sets or creates the specified setting
+    name: 'set(name, value)'
+    fullName: office.Office.RoamingSettings.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(name: string, value: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: The case-sensitive name of the setting to set or create
+          type:
+            - string
+        - id: value
+          description: Specifies the value to be stored
+          type:
+            - any

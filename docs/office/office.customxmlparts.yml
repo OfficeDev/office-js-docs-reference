@@ -26,15 +26,15 @@ items:
         description: ''
       parameters:
         - id: xml
-          description: ''
+          description: The XML to add to the newly created custom XML part.
           type:
             - string
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlParts.getByIdAsync
@@ -52,15 +52,15 @@ items:
         description: ''
       parameters:
         - id: id
-          description: ''
+          description: The id of the custom XML part.
           type:
             - string
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlParts.getByNamespaceAsync
@@ -78,14 +78,14 @@ items:
         description: ''
       parameters:
         - id: ns
-          description: ''
+          description: The namespace to search.
           type:
             - string
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'

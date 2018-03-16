@@ -37,7 +37,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: 'The name of the new section. \[Api set: OneNoteApi 1.1\]'
           type:
             - string
   - uid: office.OneNote.Notebook.addSectionGroup
@@ -55,7 +55,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: 'The name of the new section. \[Api set: OneNoteApi 1.1\]'
           type:
             - string
   - uid: office.OneNote.Notebook.clientUrl

@@ -44,7 +44,9 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: >-
+            The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel
+            determines the name of the new worksheet.
           type:
             - string
   - uid: office.Excel.WorksheetCollection.getActiveWorksheet
@@ -125,7 +127,7 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: The Name or ID of the worksheet.
           type:
             - string
   - uid: office.Excel.WorksheetCollection.getItemOrNullObject
@@ -146,7 +148,7 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: The Name or ID of the worksheet.
           type:
             - string
   - uid: office.Excel.WorksheetCollection.getLast

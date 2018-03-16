@@ -11,7 +11,7 @@ items:
       - office.Office.OfficeTheme.bodyBackgroundColor
       - office.Office.OfficeTheme.bodyForegroundColor
       - office.Office.OfficeTheme.controlBackgroundColor
-      - office.Office.OfficeTheme.controlForgroundColor
+      - office.Office.OfficeTheme.controlForegroundColor
   - uid: office.Office.OfficeTheme.bodyBackgroundColor
     name: bodyBackgroundColor
     fullName: office.Office.OfficeTheme.bodyBackgroundColor
@@ -45,14 +45,14 @@ items:
       return:
         type:
           - string
-  - uid: office.Office.OfficeTheme.controlForgroundColor
-    name: controlForgroundColor
-    fullName: office.Office.OfficeTheme.controlForgroundColor
+  - uid: office.Office.OfficeTheme.controlForegroundColor
+    name: controlForegroundColor
+    fullName: office.Office.OfficeTheme.controlForegroundColor
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'controlForgroundColor: string;'
+      content: 'controlForegroundColor: string;'
       return:
         type:
           - string

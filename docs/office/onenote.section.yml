@@ -41,7 +41,7 @@ items:
         description: ''
       parameters:
         - id: title
-          description: ''
+          description: 'The title of the new page. \[Api set: OneNoteApi 1.1\]'
           type:
             - string
   - uid: office.OneNote.Section.clientUrl
@@ -74,7 +74,7 @@ items:
         description: ''
       parameters:
         - id: destinationNotebook
-          description: ''
+          description: 'The notebook to copy this section to. \[Api set: OneNoteApi 1.1\]'
           type:
             - OneNote.Notebook
   - uid: office.OneNote.Section.copyToSectionGroup
@@ -92,7 +92,7 @@ items:
         description: ''
       parameters:
         - id: destinationSectionGroup
-          description: ''
+          description: 'The section group to copy this section to. \[Api set: OneNoteApi 1.1\]'
           type:
             - OneNote.SectionGroup
   - uid: office.OneNote.Section.id
@@ -125,11 +125,11 @@ items:
         description: ''
       parameters:
         - id: location
-          description: ''
+          description: The location of the new section relative to the current section.
           type:
             - string
         - id: title
-          description: ''
+          description: 'The name of the new section. \[Api set: OneNoteApi 1.1\]'
           type:
             - string
   - uid: office.OneNote.Section.load

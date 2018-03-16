@@ -40,11 +40,11 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: The Key of the new setting.
           type:
             - string
         - id: value
-          description: ''
+          description: The Value for the new setting.
           type:
             - string | number | boolean | Array<any> | any
     remarks: |
@@ -95,7 +95,7 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: Key of the setting.
           type:
             - string
   - uid: office.Excel.SettingCollection.getItemOrNullObject
@@ -116,7 +116,7 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: The key of the setting.
           type:
             - string
   - uid: office.Excel.SettingCollection.items

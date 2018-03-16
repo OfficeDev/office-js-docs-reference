@@ -19,7 +19,7 @@ items:
       - office.OfficeExtension.ClientRequestContext.trace
       - office.OfficeExtension.ClientRequestContext.trackedObjects
   - uid: office.OfficeExtension.ClientRequestContext.constructor
-    summary: Constructs a new instance of the ClientRequestContext class
+    summary: 'Constructs a new instance of the [ClientRequestContext](xref:office.OfficeExtension.ClientRequestContext) class'
     name: constructor(url)
     fullName: office.OfficeExtension.ClientRequestContext.constructor
     langs:
@@ -42,7 +42,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(object: ClientObject, option?: string | string[]| LoadOption): void;'
+      content: 'load(object: ClientObject, option?: string | string[] | LoadOption): void;'
       return:
         type:
           - void
@@ -55,7 +55,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[]| LoadOption'
+            - 'string | string[] | LoadOption'
   - uid: office.OfficeExtension.ClientRequestContext.loadRecursive
     summary: >-
       Queues up a command to recursively load the specified properties of the object and its navigation properties. You
@@ -75,15 +75,17 @@ items:
         description: ''
       parameters:
         - id: object
-          description: ''
+          description: The object to be loaded.
           type:
             - ClientObject
         - id: options
-          description: ''
+          description: >-
+            The key-value pairing of load options for the types, such as { "Workbook": "worksheets,tables", "Worksheet":
+            "tables", "Tables": "name" }
           type:
             - '{ [typeName: string]: string | string[] | LoadOption }'
         - id: maxDepth
-          description: ''
+          description: The maximum recursive depth.
           type:
             - number
   - uid: office.OfficeExtension.ClientRequestContext.requestHeaders

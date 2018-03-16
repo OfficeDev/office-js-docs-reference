@@ -32,19 +32,19 @@ items:
         description: ''
       parameters:
         - id: eventType
-          description: ''
+          description: The event type. For binding it can be 'bindingDataChanged' and 'bindingSelectionChanged'
           type:
             - EventType
         - id: handler
-          description: ''
+          description: The name of the handler
           type:
             - any
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Binding.document
@@ -73,11 +73,19 @@ items:
         description: ''
       parameters:
         - id: options
-          description: ''
+          description: >-
+            Syntax example: {coercionType: 'matrix,'valueFormat: 'formatted', filterType:'all'} coercionType: The
+            expected shape of the selection. If not specified returns the bindingType shape. Use Office.CoercionType or
+            text value. valueFormat: Get data with or without format. Use Office.ValueFormat or text value. startRow:
+            Used in partial get for table/matrix. Indicates the start row. startColumn: Used in partial get for
+            table/matrix. Indicates the start column. rowCount: Used in partial get for table/matrix. Indicates the
+            number of rows from the start row. columnCount: Used in partial get for table/matrix. Indicates the number
+            of columns from the start column. filterType: Get the visible or all the data. Useful when filtering data.
+            Use Office.FilterType or text value. asyncContext: Object keeping state for the callback
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Binding.id
@@ -107,15 +115,17 @@ items:
         description: ''
       parameters:
         - id: eventType
-          description: ''
+          description: The event type. For binding can be 'bindingDataChanged' and 'bindingSelectionChanged'
           type:
             - EventType
         - id: options
-          description: ''
+          description: >-
+            Syntax example: {handler:eventHandler} handler: Indicates a specific handler to be removed, if not specified
+            all handlers are removed asyncContext: Object keeping state for the callback
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Binding.setDataAsync
@@ -133,15 +143,20 @@ items:
         description: ''
       parameters:
         - id: data
-          description: ''
+          description: 'The data to be set. Either a string or value, 2d array or TableData object'
           type:
             - TableData | any
         - id: options
-          description: ''
+          description: >-
+            Syntax example: {coercionType:Office.CoercionType.Matrix} or {coercionType: 'matrix'} coercionType:
+            Explicitly sets the shape of the data object. Use Office.CoercionType or text value. If not supplied is
+            inferred from the data type. startRow: Used in partial set for table/matrix. Indicates the start row.
+            startColumn: Used in partial set for table/matrix. Indicates the start column. asyncContext: Object keeping
+            state for the callback
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Binding.type

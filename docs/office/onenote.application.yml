@@ -191,7 +191,7 @@ items:
         description: ''
       parameters:
         - id: page
-          description: ''
+          description: 'The page to open. \[Api set: OneNoteApi 1.1\]'
           type:
             - OneNote.Page
   - uid: office.OneNote.Application.navigateToPageWithClientUrl
@@ -209,7 +209,7 @@ items:
         description: ''
       parameters:
         - id: url
-          description: ''
+          description: 'The client url of the page to open. \[Api set: OneNoteApi 1.1\]'
           type:
             - string
   - uid: office.OneNote.Application.notebooks

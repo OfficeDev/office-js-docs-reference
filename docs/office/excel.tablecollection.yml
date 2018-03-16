@@ -46,11 +46,17 @@ items:
         description: ''
       parameters:
         - id: address
-          description: ''
+          description: >-
+            A Range object, or a string address or name of the range representing the data source. If the address does
+            not contain a sheet name, the currently-active sheet is used. \[Api set: ExcelApi 1.1 for string parameter;
+            1.3 for accepting a Range object as well\]
           type:
             - Excel.Range | string
         - id: hasHeaders
-          description: ''
+          description: >-
+            Boolean value that indicates whether the data being imported has column labels. If the source does not
+            contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting
+            the data down by one row.
           type:
             - boolean
   - uid: office.Excel.TableCollection.count
@@ -102,7 +108,7 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: Name or ID of the table to be retrieved.
           type:
             - number | string
   - uid: office.Excel.TableCollection.getItemAt
@@ -123,7 +129,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
   - uid: office.Excel.TableCollection.getItemOrNullObject
@@ -144,7 +150,7 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: Name or ID of the table to be retrieved.
           type:
             - number | string
   - uid: office.Excel.TableCollection.items

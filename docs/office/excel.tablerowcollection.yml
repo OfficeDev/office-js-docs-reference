@@ -53,11 +53,13 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: >-
+            Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows
+            below the inserted row are shifted downwards. Zero-indexed.
           type:
             - number
         - id: values
-          description: ''
+          description: A 2-dimensional array of unformatted values of the table row.
           type:
             - Array<Array<boolean | string | number>> | boolean | string | number
   - uid: office.Excel.TableRowCollection.count
@@ -115,7 +117,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
   - uid: office.Excel.TableRowCollection.items

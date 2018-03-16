@@ -40,15 +40,15 @@ items:
         description: ''
       parameters:
         - id: fields
-          description: ''
+          description: The list of conditions to sort on.
           type:
             - Array<Excel.SortField>
         - id: matchCase
-          description: ''
+          description: Whether to have the casing impact string ordering.
           type:
             - boolean
         - id: method
-          description: ''
+          description: The ordering method used for Chinese characters.
           type:
             - string
   - uid: office.Excel.TableSort.clear

@@ -49,7 +49,9 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: >-
+            The ID of the InkAnalysisLine object, or the index location of the InkAnalysisLine object in the collection.
+            \[Api set: OneNoteApi 1.1\]
           type:
             - number | string
   - uid: office.OneNote.InkAnalysisLineCollection.getItemAt
@@ -67,7 +69,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: 'Index value of the object to be retrieved. Zero-indexed. \[Api set: OneNoteApi 1.1\]'
           type:
             - number
   - uid: office.OneNote.InkAnalysisLineCollection.items

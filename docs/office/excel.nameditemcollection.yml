@@ -42,15 +42,15 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: The name of the named item.
           type:
             - string
         - id: reference
-          description: ''
+          description: The formula or the range that the name will refer to.
           type:
             - Excel.Range | string
         - id: comment
-          description: ''
+          description: The comment associated with the named item
           type:
             - string
     remarks: |
@@ -132,15 +132,15 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: The "name" of the named item.
           type:
             - string
         - id: formula
-          description: ''
+          description: The formula in the user's locale that the name will refer to.
           type:
             - string
         - id: comment
-          description: ''
+          description: The comment associated with the named item
           type:
             - string
   - uid: office.Excel.NamedItemCollection.getCount
@@ -177,7 +177,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: nameditem name.
           type:
             - string
   - uid: office.Excel.NamedItemCollection.getItemOrNullObject
@@ -198,7 +198,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: ''
+          description: nameditem name.
           type:
             - string
   - uid: office.Excel.NamedItemCollection.items

@@ -1,0 +1,134 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Word.TableRowCollection
+    summary: |-
+      Contains the collection of the document's TableRow objects.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: Word.TableRowCollection
+    fullName: office.Word.TableRowCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Word.TableRowCollection.getFirst
+      - office.Word.TableRowCollection.getFirstOrNullObject
+      - office.Word.TableRowCollection.items
+      - office.Word.TableRowCollection.load
+      - office.Word.TableRowCollection.toJSON
+      - office.Word.TableRowCollection.track
+      - office.Word.TableRowCollection.untrack
+  - uid: office.Word.TableRowCollection.getFirst
+    summary: |-
+      Gets the first row in this collection. Throws if this collection is empty.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: getFirst()
+    fullName: office.Word.TableRowCollection.getFirst
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirst(): Word.TableRow;'
+      return:
+        type:
+          - Word.TableRow
+        description: ''
+  - uid: office.Word.TableRowCollection.getFirstOrNullObject
+    summary: |-
+      Gets the first row in this collection. Returns a null object if this collection is empty.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: getFirstOrNullObject()
+    fullName: office.Word.TableRowCollection.getFirstOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirstOrNullObject(): Word.TableRow;'
+      return:
+        type:
+          - Word.TableRow
+        description: ''
+  - uid: office.Word.TableRowCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.Word.TableRowCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<Word.TableRow>;'
+      return:
+        type:
+          - Array<Word.TableRow>
+  - uid: office.Word.TableRowCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Word.TableRowCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.TableRowCollection;'
+      return:
+        type:
+          - Word.TableRowCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Word.TableRowCollection.toJSON
+    name: toJSON()
+    fullName: office.Word.TableRowCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - '{}'
+        description: ''
+  - uid: office.Word.TableRowCollection.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: office.Word.TableRowCollection.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.TableRowCollection;'
+      return:
+        type:
+          - Word.TableRowCollection
+        description: ''
+  - uid: office.Word.TableRowCollection.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: office.Word.TableRowCollection.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.TableRowCollection;'
+      return:
+        type:
+          - Word.TableRowCollection
+        description: ''

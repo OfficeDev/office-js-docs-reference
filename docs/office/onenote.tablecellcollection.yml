@@ -49,7 +49,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: 'A number that identifies the index location of a table cell object. \[Api set: OneNoteApi 1.1\]'
           type:
             - number | string
   - uid: office.OneNote.TableCellCollection.getItemAt
@@ -67,7 +67,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: 'Index value of the object to be retrieved. Zero-indexed. \[Api set: OneNoteApi 1.1\]'
           type:
             - number
   - uid: office.OneNote.TableCellCollection.items

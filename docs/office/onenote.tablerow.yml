@@ -99,11 +99,13 @@ items:
         description: ''
       parameters:
         - id: insertLocation
-          description: ''
+          description: Where the new rows should be inserted relative to the current row.
           type:
             - string
         - id: values
-          description: ''
+          description: >-
+            Strings to insert in the new row, specified as an array. Must not have more cells than in the current row.
+            Optional. \[Api set: OneNoteApi 1.1\]
           type:
             - Array<string>
   - uid: office.OneNote.TableRow.load

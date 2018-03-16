@@ -35,15 +35,15 @@ items:
         description: ''
       parameters:
         - id: tableData
-          description: ''
+          description: A TableData object with the headers and rows
           type:
             - 'TableData | any[][]'
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.addRowsAsync
@@ -61,15 +61,15 @@ items:
         description: ''
       parameters:
         - id: rows
-          description: ''
+          description: A 2D array with the rows to add
           type:
             - 'TableData | any[][]'
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.clearFormatsAsync
@@ -87,11 +87,11 @@ items:
         description: ''
       parameters:
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.columnCount
@@ -120,11 +120,11 @@ items:
         description: ''
       parameters:
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.getFormatsAsync
@@ -144,19 +144,19 @@ items:
         description: ''
       parameters:
         - id: cellReference
-          description: ''
+          description: An object literal containing name-value pairs that specify the range of cells to get formatting from.
           type:
             - any
         - id: formats
-          description: ''
+          description: An array specifying the format properties to get.
           type:
             - 'any[]'
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.hasHeaders
@@ -196,15 +196,18 @@ items:
         description: ''
       parameters:
         - id: formatsInfo
-          description: ''
+          description: >-
+            Array elements are themselves three-element arrays:\[target, type, formats\] target: The identifier of the
+            item to format. String. type: The kind of item to format. String. formats: An object literal containing a
+            list of property name-value pairs that define the formatting to apply.
           type:
             - 'any[]'
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.setTableOptionsAsync
@@ -222,14 +225,14 @@ items:
         description: ''
       parameters:
         - id: tableOptions
-          description: ''
+          description: An object literal containing a list of property name-value pairs that define the table options to apply.
           type:
             - any
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'

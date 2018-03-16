@@ -8,36 +8,57 @@ items:
     type: interface
     package: office
     children:
+      - office.Office.UI.closeContainer
       - office.Office.UI.displayDialogAsync
       - office.Office.UI.messageParent
+  - uid: office.Office.UI.closeContainer
+    summary: >-
+      Closes the UI container where the JavaScript is executing.
+
+
+      Supported hosts: Outlook - Minimum requirement set: Mailbox 1.5
+
+
+      The behavior of this method is specified by the following:
+
+
+      Called from a UI-less command button: No effect. Any dialog opened by displayDialogAsync will remain open.
+
+
+      Called from a taskpane: The taskpane will close. Any dialog opened by displayDialogAsync will also close. If the
+      taskpane supports pinning and was pinned by the user, it will be un-pinned.
+
+
+      Called from a module extension: No effect.
+    name: closeContainer()
+    fullName: office.Office.UI.closeContainer
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'closeContainer(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: office.Office.UI.displayDialogAsync
     summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
-    name: 'displayDialogAsync(startAddress, options, callback)'
+    name: displayDialogAsync(startAddress)
     fullName: office.Office.UI.displayDialogAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        displayDialogAsync(startAddress: string, options?: DialogOptions, callback?: (result: AsyncResult) => void):
-        void;
+      content: 'displayDialogAsync(startAddress: string): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: startAddress
-          description: ''
+          description: Accepts the initial HTTPS Url that opens in the dialog.
           type:
             - string
-        - id: options
-          description: ''
-          type:
-            - DialogOptions
-        - id: callback
-          description: ''
-          type:
-            - '(result: AsyncResult) => void'
   - uid: office.Office.UI.messageParent
     summary: Synchronously delivers a message from the dialog to its parent add-in.
     name: messageParent(messageObject)
@@ -53,6 +74,6 @@ items:
         description: ''
       parameters:
         - id: messageObject
-          description: ''
+          description: Accepts a message from the dialog to deliver to the add-in.
           type:
             - any

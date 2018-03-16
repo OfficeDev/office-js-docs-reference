@@ -33,19 +33,19 @@ items:
         description: ''
       parameters:
         - id: eventType
-          description: ''
+          description: 'The event type. For CustomXmlPartNode it can be ''nodeDeleted'', ''nodeInserted'' or ''nodeReplaced'''
           type:
             - EventType
         - id: handler
-          description: ''
+          description: The name of the handler
           type:
             - '(result: any) => void'
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.builtIn
@@ -74,11 +74,11 @@ items:
         description: ''
       parameters:
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.getNodesAsync
@@ -96,15 +96,15 @@ items:
         description: ''
       parameters:
         - id: xPath
-          description: ''
+          description: The xPath expression
           type:
             - string
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.getXmlAsync
@@ -122,11 +122,11 @@ items:
         description: ''
       parameters:
         - id: options
-          description: ''
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.id
@@ -166,14 +166,16 @@ items:
         description: ''
       parameters:
         - id: eventType
-          description: ''
+          description: 'The event type. For CustomXmlPartNode it can be ''nodeDeleted'', ''nodeInserted'' or ''nodeReplaced'''
           type:
             - EventType
         - id: options
-          description: ''
+          description: >-
+            Syntax example: {handler:eventHandler} handler: Indicates a specific handler to be removed, if not specified
+            all handlers are removed asyncContext: Object keeping state for the callback
           type:
             - any
         - id: callback
-          description: ''
+          description: The optional callback method
           type:
             - '(result: AsyncResult) => void'

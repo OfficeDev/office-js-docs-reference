@@ -71,7 +71,7 @@ items:
         description: ''
       parameters:
         - id: onRejected
-          description: ''
+          description: function to be called if or when the promise rejects.
           type:
             - '(error: any) => IPromise<U>'
   - uid: office.OfficeExtension.Promise.reject

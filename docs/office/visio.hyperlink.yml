@@ -1,0 +1,114 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Visio.Hyperlink
+    summary: |-
+      Represents the Hyperlink.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: Visio.Hyperlink
+    fullName: office.Visio.Hyperlink
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Visio.Hyperlink.address
+      - office.Visio.Hyperlink.description
+      - office.Visio.Hyperlink.extraInfo
+      - office.Visio.Hyperlink.load
+      - office.Visio.Hyperlink.subAddress
+      - office.Visio.Hyperlink.toJSON
+  - uid: office.Visio.Hyperlink.address
+    summary: |-
+      Gets the address of the Hyperlink object.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: address
+    fullName: office.Visio.Hyperlink.address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly address: string;'
+      return:
+        type:
+          - string
+  - uid: office.Visio.Hyperlink.description
+    summary: |-
+      Gets the description of a hyperlink.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: description
+    fullName: office.Visio.Hyperlink.description
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly description: string;'
+      return:
+        type:
+          - string
+  - uid: office.Visio.Hyperlink.extraInfo
+    summary: |-
+      Gets the extra info of a hyperlink.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: extraInfo
+    fullName: office.Visio.Hyperlink.extraInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly extraInfo: string;'
+      return:
+        type:
+          - string
+  - uid: office.Visio.Hyperlink.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Visio.Hyperlink.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Visio.Interfaces.HyperlinkLoadOptions): Visio.Hyperlink;'
+      return:
+        type:
+          - Visio.Hyperlink
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.HyperlinkLoadOptions
+  - uid: office.Visio.Hyperlink.subAddress
+    summary: |-
+      Gets the sub-address of the Hyperlink object.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: subAddress
+    fullName: office.Visio.Hyperlink.subAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly subAddress: string;'
+      return:
+        type:
+          - string
+  - uid: office.Visio.Hyperlink.toJSON
+    name: toJSON()
+    fullName: office.Visio.Hyperlink.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.HyperlinkData;'
+      return:
+        type:
+          - Visio.Interfaces.HyperlinkData
+        description: ''

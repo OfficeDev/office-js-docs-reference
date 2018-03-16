@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Visio.Highlight
+    summary: |-
+      Represents the highlight data added to the shape.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: Visio.Highlight
+    fullName: office.Visio.Highlight
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Visio.Highlight.color
+      - office.Visio.Highlight.width
+  - uid: office.Visio.Highlight.color
+    summary: >-
+      A string that specifies the color of the highlight. It must have the form "\#RRGGBB", where each letter represents
+      a hexadecimal digit between 0 and F, and where RR is the red value between 0 and 0xFF (255), GG the green value
+      between 0 and 0xFF (255), and BB is the blue value between 0 and 0xFF (255).
+
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: color
+    fullName: office.Visio.Highlight.color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: office.Visio.Highlight.width
+    summary: |-
+      A positive integer that specifies the width of the highlight's stroke in pixels.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: width
+    fullName: office.Visio.Highlight.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number

@@ -73,7 +73,7 @@ items:
         description: ''
       parameters:
         - id: options
-          description: ''
+          description: sheet protection options.
           type:
             - Excel.WorksheetProtectionOptions
   - uid: office.Excel.WorksheetProtection.protected

@@ -50,7 +50,7 @@ items:
         description: ''
       parameters:
         - id: title
-          description: ''
+          description: 'The title of the page. \[Api set: OneNoteApi 1.1\]'
           type:
             - string
   - uid: office.OneNote.PageCollection.getItem
@@ -68,7 +68,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: 'The ID of the page, or the index location of the page in the collection. \[Api set: OneNoteApi 1.1\]'
           type:
             - number | string
   - uid: office.OneNote.PageCollection.getItemAt
@@ -86,7 +86,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: ''
+          description: 'Index value of the object to be retrieved. Zero-indexed. \[Api set: OneNoteApi 1.1\]'
           type:
             - number
   - uid: office.OneNote.PageCollection.items

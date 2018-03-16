@@ -14,6 +14,7 @@ items:
       - office.Office.EventType.DialogEventReceived
       - office.Office.EventType.DialogMessageReceived
       - office.Office.EventType.DocumentSelectionChanged
+      - office.Office.EventType.ItemChanged
       - office.Office.EventType.NodeDeleted
       - office.Office.EventType.NodeInserted
       - office.Office.EventType.NodeReplaced
@@ -60,6 +61,13 @@ items:
     summary: Triggers when a document level selection happens
     name: DocumentSelectionChanged
     fullName: office.Office.EventType.DocumentSelectionChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.ItemChanged
+    summary: Triggers when the active item changes
+    name: ItemChanged
+    fullName: office.Office.EventType.ItemChanged
     langs:
       - typeScript
     type: field

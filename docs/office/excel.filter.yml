@@ -47,7 +47,7 @@ items:
         description: ''
       parameters:
         - id: criteria
-          description: ''
+          description: The criteria to apply.
           type:
             - Excel.FilterCriteria
   - uid: office.Excel.Filter.applyBottomItemsFilter
@@ -68,7 +68,7 @@ items:
         description: ''
       parameters:
         - id: count
-          description: ''
+          description: The number of elements from the bottom to show.
           type:
             - number
   - uid: office.Excel.Filter.applyBottomPercentFilter
@@ -89,7 +89,7 @@ items:
         description: ''
       parameters:
         - id: percent
-          description: ''
+          description: The percentage of elements from the bottom to show.
           type:
             - number
   - uid: office.Excel.Filter.applyCellColorFilter
@@ -110,7 +110,7 @@ items:
         description: ''
       parameters:
         - id: color
-          description: ''
+          description: The background color of the cells to show.
           type:
             - string
   - uid: office.Excel.Filter.applyCustomFilter
@@ -131,15 +131,15 @@ items:
         description: ''
       parameters:
         - id: criteria1
-          description: ''
+          description: The first criteria string.
           type:
             - string
         - id: criteria2
-          description: ''
+          description: The second criteria string.
           type:
             - string
         - id: oper
-          description: ''
+          description: The operator that describes how the two criteria are joined.
           type:
             - string
   - uid: office.Excel.Filter.applyDynamicFilter
@@ -160,7 +160,7 @@ items:
         description: ''
       parameters:
         - id: criteria
-          description: ''
+          description: The dynamic criteria to apply.
           type:
             - string
   - uid: office.Excel.Filter.applyFontColorFilter
@@ -181,7 +181,7 @@ items:
         description: ''
       parameters:
         - id: color
-          description: ''
+          description: The font color of the cells to show.
           type:
             - string
   - uid: office.Excel.Filter.applyIconFilter
@@ -202,7 +202,7 @@ items:
         description: ''
       parameters:
         - id: icon
-          description: ''
+          description: The icons of the cells to show.
           type:
             - Excel.Icon
   - uid: office.Excel.Filter.applyTopItemsFilter
@@ -223,7 +223,7 @@ items:
         description: ''
       parameters:
         - id: count
-          description: ''
+          description: The number of elements from the top to show.
           type:
             - number
   - uid: office.Excel.Filter.applyTopPercentFilter
@@ -244,7 +244,7 @@ items:
         description: ''
       parameters:
         - id: percent
-          description: ''
+          description: The percentage of elements from the top to show.
           type:
             - number
   - uid: office.Excel.Filter.applyValuesFilter
@@ -265,7 +265,7 @@ items:
         description: ''
       parameters:
         - id: values
-          description: ''
+          description: The list of values to show.
           type:
             - Array<string | Excel.FilterDatetime>
   - uid: office.Excel.Filter.clear
