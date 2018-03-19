@@ -1,0 +1,125 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ConditionalIconCriterion
+    summary: >-
+      Represents an Icon Criterion which contains a type, value, an Operator, and an optional custom icon, if not using
+      an iconset.
+
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: Excel.ConditionalIconCriterion
+    fullName: excel.Excel.ConditionalIconCriterion
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.ConditionalIconCriterion.customIcon
+      - excel.Excel.ConditionalIconCriterion.formula
+      - excel.Excel.ConditionalIconCriterion.operator
+      - excel.Excel.ConditionalIconCriterion.type
+  - uid: excel.Excel.ConditionalIconCriterion.customIcon
+    summary: |-
+      The custom icon for the current criterion if different from the default IconSet, else null will be returned.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: customIcon
+    fullName: excel.Excel.ConditionalIconCriterion.customIcon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'customIcon?: Excel.Icon;'
+      return:
+        type:
+          - Excel.Icon
+  - uid: excel.Excel.ConditionalIconCriterion.formula
+    summary: |-
+      A number or a formula depending on the type.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: formula
+    fullName: excel.Excel.ConditionalIconCriterion.formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ConditionalIconCriterion.operator
+    summary: |-
+      GreaterThan or GreaterThanOrEqual for each of the rule type for the Icon conditional format.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: operator
+    fullName: excel.Excel.ConditionalIconCriterion.operator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'operator: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ConditionalIconCriterion.type
+    summary: |-
+      What the icon conditional formula should be based on.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: type
+    fullName: excel.Excel.ConditionalIconCriterion.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: string;'
+      return:
+        type:
+          - string
+    remarks: |
+
+
+      ## Snippets
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B8:E13");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.iconSet);
+          const iconSetCF = conditionalFormat.iconSet;
+          iconSetCF.style = Excel.IconSet.threeTriangles;
+
+          /*
+              The iconSetCF.criteria array is automatically prepopulated with
+              criterion elements whose properties have been given default settings.
+              You can't write to each property of a criterion directly. Instead,
+              replace the whole criteria object.
+
+              With a "three*" icon set style, such as "threeTriangles", the third
+              element in the criteria array (criteria[2]) defines the "top" icon;
+              e.g., a green triangle. The second (criteria[1]) defines the "middle"
+              icon, The first (criteria[0]) defines the "low" icon, but it
+              can often be left empty as this method does below, because every
+              cell that does not match the other two criteria always gets the low
+              icon.            
+          */
+          iconSetCF.criteria = [
+              {} as any,
+              {
+                  type: Excel.ConditionalFormatIconRuleType.number,
+                  operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                  formula: "=700"
+              },
+              {
+                  type: Excel.ConditionalFormatIconRuleType.number,
+                  operator: Excel.ConditionalIconCriterionOperator.greaterThanOrEqual,
+                  formula: "=1000",
+              }
+          ];
+
+          await context.sync();
+      });
+      ```

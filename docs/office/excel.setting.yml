@@ -36,29 +36,6 @@ items:
         type:
           - void
         description: ''
-    remarks: |
-
-
-      ## Snippets
-
-      ```typescript
-      await Excel.run(async (context) => {
-          const settings = context.workbook.settings;
-          let needsReview = settings.getItem("NeedsReview");
-          needsReview.delete();
-          needsReview = settings.getItemOrNullObject("NeedsReview");
-
-          await context.sync();
-
-          if (needsReview.isNullObject) {
-              OfficeHelpers.UI.notify("The setting has been deleted");
-          } else {
-              OfficeHelpers.UI.notify("The setting was not deleted");
-          }
-
-          await context.sync();
-      });
-      ```
   - uid: office.Excel.Setting.key
     summary: |-
       Returns the key that represents the id of the Setting. Read-only.

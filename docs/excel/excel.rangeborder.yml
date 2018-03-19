@@ -1,0 +1,141 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.RangeBorder
+    summary: |-
+      Represents the border of an object.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.RangeBorder
+    fullName: excel.Excel.RangeBorder
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.RangeBorder.color
+      - excel.Excel.RangeBorder.load
+      - excel.Excel.RangeBorder.set
+      - excel.Excel.RangeBorder.sideIndex
+      - excel.Excel.RangeBorder.style
+      - excel.Excel.RangeBorder.toJSON
+      - excel.Excel.RangeBorder.weight
+  - uid: excel.Excel.RangeBorder.color
+    summary: >-
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      color (e.g. "orange").
+
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: color
+    fullName: excel.Excel.RangeBorder.color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.RangeBorder.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.RangeBorder.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeBorder;'
+      return:
+        type:
+          - Excel.RangeBorder
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.RangeBorder.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.RangeBorder.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.RangeBorderUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.RangeBorderUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.RangeBorder.sideIndex
+    summary: |-
+      Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: sideIndex
+    fullName: excel.Excel.RangeBorder.sideIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly sideIndex: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.RangeBorder.style
+    summary: >-
+      One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
+      details.
+
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: style
+    fullName: excel.Excel.RangeBorder.style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.RangeBorder.toJSON
+    name: toJSON()
+    fullName: excel.Excel.RangeBorder.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"color\": string;\r\n            \"sideIndex\": string;\r\n            \"style\": string;\r\n            \"weight\": string;\r\n        }"
+        description: ''
+  - uid: excel.Excel.RangeBorder.weight
+    summary: |-
+      Specifies the weight of the border around a range. See Excel.BorderWeight for details.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: weight
+    fullName: excel.Excel.RangeBorder.weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight: string;'
+      return:
+        type:
+          - string

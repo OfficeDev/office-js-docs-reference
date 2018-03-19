@@ -1,0 +1,121 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartAxes
+    summary: |-
+      Represents the chart axes.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.ChartAxes
+    fullName: excel.Excel.ChartAxes
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartAxes.categoryAxis
+      - excel.Excel.ChartAxes.load
+      - excel.Excel.ChartAxes.seriesAxis
+      - excel.Excel.ChartAxes.set
+      - excel.Excel.ChartAxes.toJSON
+      - excel.Excel.ChartAxes.valueAxis
+  - uid: excel.Excel.ChartAxes.categoryAxis
+    summary: |-
+      Represents the category axis in a chart. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: categoryAxis
+    fullName: excel.Excel.ChartAxes.categoryAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly categoryAxis: Excel.ChartAxis;'
+      return:
+        type:
+          - Excel.ChartAxis
+  - uid: excel.Excel.ChartAxes.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ChartAxes.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartAxes;'
+      return:
+        type:
+          - Excel.ChartAxes
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.ChartAxes.seriesAxis
+    summary: |-
+      Represents the series axis of a 3-dimensional chart. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: seriesAxis
+    fullName: excel.Excel.ChartAxes.seriesAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly seriesAxis: Excel.ChartAxis;'
+      return:
+        type:
+          - Excel.ChartAxis
+  - uid: excel.Excel.ChartAxes.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartAxes.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ChartAxesUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartAxesUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.ChartAxes.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartAxes.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"categoryAxis\": ChartAxis;\r\n            \"seriesAxis\": ChartAxis;\r\n            \"valueAxis\": ChartAxis;\r\n        }"
+        description: ''
+  - uid: excel.Excel.ChartAxes.valueAxis
+    summary: |-
+      Represents the value axis in an axis. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: valueAxis
+    fullName: excel.Excel.ChartAxes.valueAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly valueAxis: Excel.ChartAxis;'
+      return:
+        type:
+          - Excel.ChartAxis

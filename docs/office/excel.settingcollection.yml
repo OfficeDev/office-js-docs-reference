@@ -47,20 +47,6 @@ items:
           description: The Value for the new setting.
           type:
             - string | number | boolean | Array<any> | any
-    remarks: |
-
-
-      ## Snippets
-
-      ```typescript
-      await Excel.run(async (context) => {
-          const settings = context.workbook.settings; 
-          settings.onSettingsChanged.add(onChangedSetting);
-          OfficeHelpers.UI.notify("Handler registered", "");
-
-          await context.sync();
-      });
-      ```
   - uid: office.Excel.SettingCollection.getCount
     summary: |-
       Gets the number of Settings in the collection.
@@ -166,20 +152,6 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>
-    remarks: |
-
-
-      ## Snippets
-
-      ```typescript
-      await Excel.run(async (context) => {
-          const settings = context.workbook.settings; 
-          settings.onSettingsChanged.add(onChangedSetting);
-          OfficeHelpers.UI.notify("Handler registered", "");
-
-          await context.sync();
-      });
-      ```
   - uid: office.Excel.SettingCollection.toJSON
     name: toJSON()
     fullName: office.Excel.SettingCollection.toJSON

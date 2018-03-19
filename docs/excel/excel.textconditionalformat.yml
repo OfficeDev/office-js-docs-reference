@@ -1,0 +1,107 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.TextConditionalFormat
+    summary: |-
+      Represents a specific text conditional format.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: Excel.TextConditionalFormat
+    fullName: excel.Excel.TextConditionalFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.TextConditionalFormat.format
+      - excel.Excel.TextConditionalFormat.load
+      - excel.Excel.TextConditionalFormat.rule
+      - excel.Excel.TextConditionalFormat.set
+      - excel.Excel.TextConditionalFormat.toJSON
+  - uid: excel.Excel.TextConditionalFormat.format
+    summary: >-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+      Read-only.
+
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: format
+    fullName: excel.Excel.TextConditionalFormat.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ConditionalRangeFormat;'
+      return:
+        type:
+          - Excel.ConditionalRangeFormat
+  - uid: excel.Excel.TextConditionalFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.TextConditionalFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TextConditionalFormat;'
+      return:
+        type:
+          - Excel.TextConditionalFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.TextConditionalFormat.rule
+    summary: |-
+      The rule of the conditional format.
+
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+    name: rule
+    fullName: excel.Excel.TextConditionalFormat.rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule: Excel.ConditionalTextComparisonRule;'
+      return:
+        type:
+          - Excel.ConditionalTextComparisonRule
+  - uid: excel.Excel.TextConditionalFormat.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.TextConditionalFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.TextConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.TextConditionalFormatUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.TextConditionalFormat.toJSON
+    name: toJSON()
+    fullName: excel.Excel.TextConditionalFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"format\": ConditionalRangeFormat;\r\n            \"rule\": ConditionalTextComparisonRule;\r\n        }"
+        description: ''

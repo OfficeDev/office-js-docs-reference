@@ -6,6 +6,10 @@ cd api-extractor-inputs
 
 call ..\node_modules\.bin\api-extractor run
 
+cd ..\api-extractor-inputs-excel
+
+call ..\node_modules\.bin\api-extractor run
+
 cd ..
 
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json --office

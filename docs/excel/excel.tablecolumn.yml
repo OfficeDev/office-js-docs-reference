@@ -1,0 +1,240 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.TableColumn
+    summary: |-
+      Represents a column in a table.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.TableColumn
+    fullName: excel.Excel.TableColumn
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.TableColumn.delete
+      - excel.Excel.TableColumn.filter
+      - excel.Excel.TableColumn.getDataBodyRange
+      - excel.Excel.TableColumn.getHeaderRowRange
+      - excel.Excel.TableColumn.getRange
+      - excel.Excel.TableColumn.getTotalRowRange
+      - excel.Excel.TableColumn.id
+      - excel.Excel.TableColumn.index
+      - excel.Excel.TableColumn.load
+      - excel.Excel.TableColumn.name
+      - excel.Excel.TableColumn.set
+      - excel.Excel.TableColumn.toJSON
+      - excel.Excel.TableColumn.values
+  - uid: excel.Excel.TableColumn.delete
+    summary: |-
+      Deletes the column from the table.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: delete()
+    fullName: excel.Excel.TableColumn.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.TableColumn.filter
+    summary: |-
+      Retrieve the filter applied to the column.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: filter
+    fullName: excel.Excel.TableColumn.filter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly filter: Excel.Filter;'
+      return:
+        type:
+          - Excel.Filter
+  - uid: excel.Excel.TableColumn.getDataBodyRange
+    summary: |-
+      Gets the range object associated with the data body of the column.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: getDataBodyRange()
+    fullName: excel.Excel.TableColumn.getDataBodyRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataBodyRange(): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
+  - uid: excel.Excel.TableColumn.getHeaderRowRange
+    summary: |-
+      Gets the range object associated with the header row of the column.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: getHeaderRowRange()
+    fullName: excel.Excel.TableColumn.getHeaderRowRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHeaderRowRange(): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
+  - uid: excel.Excel.TableColumn.getRange
+    summary: |-
+      Gets the range object associated with the entire column.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: getRange()
+    fullName: excel.Excel.TableColumn.getRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
+  - uid: excel.Excel.TableColumn.getTotalRowRange
+    summary: |-
+      Gets the range object associated with the totals row of the column.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: getTotalRowRange()
+    fullName: excel.Excel.TableColumn.getTotalRowRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTotalRowRange(): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
+  - uid: excel.Excel.TableColumn.id
+    summary: |-
+      Returns a unique key that identifies the column within the table. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: id
+    fullName: excel.Excel.TableColumn.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.TableColumn.index
+    summary: |-
+      Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: index
+    fullName: excel.Excel.TableColumn.index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly index: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.TableColumn.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.TableColumn.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TableColumn;'
+      return:
+        type:
+          - Excel.TableColumn
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.TableColumn.name
+    summary: |-
+      Represents the name of the table column.
+
+      \[ [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.](http://bing.com) \]
+    name: name
+    fullName: excel.Excel.TableColumn.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.TableColumn.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.TableColumn.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.TableColumnUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.TableColumnUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.TableColumn.toJSON
+    name: toJSON()
+    fullName: excel.Excel.TableColumn.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"id\": number;\r\n            \"index\": number;\r\n            \"name\": string;\r\n            \"values\": any[][];\r\n        }"
+        description: ''
+  - uid: excel.Excel.TableColumn.values
+    summary: >-
+      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
+      Cell that contain an error will return the error string.
+
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: values
+    fullName: excel.Excel.TableColumn.values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values: Array<Array<any>>;'
+      return:
+        type:
+          - Array<Array<any>>
