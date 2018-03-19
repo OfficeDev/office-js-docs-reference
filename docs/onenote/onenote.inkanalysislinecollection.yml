@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.InkAnalysisLineCollection
+    summary: |-
+      Represents a collection of InkAnalysisLine objects.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: OneNote.InkAnalysisLineCollection
+    fullName: onenote.OneNote.InkAnalysisLineCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.InkAnalysisLineCollection.count
+      - onenote.OneNote.InkAnalysisLineCollection.getItem
+      - onenote.OneNote.InkAnalysisLineCollection.getItemAt
+      - onenote.OneNote.InkAnalysisLineCollection.items
+      - onenote.OneNote.InkAnalysisLineCollection.load
+  - uid: onenote.OneNote.InkAnalysisLineCollection.count
+    summary: |-
+      Returns the number of InkAnalysisLines in the page. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: count
+    fullName: onenote.OneNote.InkAnalysisLineCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.InkAnalysisLineCollection.getItem
+    summary: Gets a InkAnalysisLine object by ID or by its index in the collection. Read-only.
+    name: getItem(index)
+    fullName: onenote.OneNote.InkAnalysisLineCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number | string): OneNote.InkAnalysisLine;'
+      return:
+        type:
+          - OneNote.InkAnalysisLine
+        description: ''
+      parameters:
+        - id: index
+          description: >-
+            The ID of the InkAnalysisLine object, or the index location of the InkAnalysisLine object in the collection.
+            \[Api set: OneNoteApi 1.1\]
+          type:
+            - number | string
+  - uid: onenote.OneNote.InkAnalysisLineCollection.getItemAt
+    summary: Gets a InkAnalysisLine on its position in the collection.
+    name: getItemAt(index)
+    fullName: onenote.OneNote.InkAnalysisLineCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): OneNote.InkAnalysisLine;'
+      return:
+        type:
+          - OneNote.InkAnalysisLine
+        description: ''
+      parameters:
+        - id: index
+          description: 'Index value of the object to be retrieved. Zero-indexed. \[Api set: OneNoteApi 1.1\]'
+          type:
+            - number
+  - uid: onenote.OneNote.InkAnalysisLineCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: onenote.OneNote.InkAnalysisLineCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<OneNote.InkAnalysisLine>;'
+      return:
+        type:
+          - Array<OneNote.InkAnalysisLine>
+  - uid: onenote.OneNote.InkAnalysisLineCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.InkAnalysisLineCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.InkAnalysisLineCollection;'
+      return:
+        type:
+          - OneNote.InkAnalysisLineCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'

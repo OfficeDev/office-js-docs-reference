@@ -664,6 +664,89 @@ items:
               - name: ShapeView
                 uid: office.Visio.ShapeView
               - name: ToolBarType
+      - name: onenote
+        uid: onenote
+        items:
+          - name: OneNote
+            items:
+              - name: Alignment
+              - name: Application
+                uid: onenote.OneNote.Application
+              - name: ErrorCodes
+              - name: FloatingInk
+                uid: onenote.OneNote.FloatingInk
+              - name: Image
+                uid: onenote.OneNote.Image
+              - name: ImageOcrData
+                uid: onenote.OneNote.ImageOcrData
+              - name: InkAnalysis
+                uid: onenote.OneNote.InkAnalysis
+              - name: InkAnalysisLine
+                uid: onenote.OneNote.InkAnalysisLine
+              - name: InkAnalysisLineCollection
+                uid: onenote.OneNote.InkAnalysisLineCollection
+              - name: InkAnalysisParagraph
+                uid: onenote.OneNote.InkAnalysisParagraph
+              - name: InkAnalysisParagraphCollection
+                uid: onenote.OneNote.InkAnalysisParagraphCollection
+              - name: InkAnalysisWord
+                uid: onenote.OneNote.InkAnalysisWord
+              - name: InkAnalysisWordCollection
+                uid: onenote.OneNote.InkAnalysisWordCollection
+              - name: InkStroke
+                uid: onenote.OneNote.InkStroke
+              - name: InkStrokeCollection
+                uid: onenote.OneNote.InkStrokeCollection
+              - name: InkStrokePointer
+                uid: onenote.OneNote.InkStrokePointer
+              - name: InkWord
+                uid: onenote.OneNote.InkWord
+              - name: InkWordCollection
+                uid: onenote.OneNote.InkWordCollection
+              - name: InsertLocation
+              - name: Notebook
+                uid: onenote.OneNote.Notebook
+              - name: NotebookCollection
+                uid: onenote.OneNote.NotebookCollection
+              - name: Outline
+                uid: onenote.OneNote.Outline
+              - name: Page
+                uid: onenote.OneNote.Page
+              - name: PageCollection
+                uid: onenote.OneNote.PageCollection
+              - name: PageContent
+                uid: onenote.OneNote.PageContent
+              - name: PageContentCollection
+                uid: onenote.OneNote.PageContentCollection
+              - name: PageContentType
+              - name: Paragraph
+                uid: onenote.OneNote.Paragraph
+              - name: ParagraphCollection
+                uid: onenote.OneNote.ParagraphCollection
+              - name: ParagraphType
+              - name: RequestContext
+                uid: onenote.OneNote.RequestContext
+              - name: RichText
+                uid: onenote.OneNote.RichText
+              - name: Section
+                uid: onenote.OneNote.Section
+              - name: SectionCollection
+                uid: onenote.OneNote.SectionCollection
+              - name: SectionGroup
+                uid: onenote.OneNote.SectionGroup
+              - name: SectionGroupCollection
+                uid: onenote.OneNote.SectionGroupCollection
+              - name: Selected
+              - name: Table
+                uid: onenote.OneNote.Table
+              - name: TableCell
+                uid: onenote.OneNote.TableCell
+              - name: TableCellCollection
+                uid: onenote.OneNote.TableCellCollection
+              - name: TableRow
+                uid: onenote.OneNote.TableRow
+              - name: TableRowCollection
+                uid: onenote.OneNote.TableRowCollection
       - name: word
         uid: word
         items:

@@ -14,6 +14,10 @@ cd ..\api-extractor-inputs-word
 
 call ..\node_modules\.bin\api-extractor run
 
+cd ..\api-extractor-inputs-onenote
+
+call ..\node_modules\.bin\api-extractor run
+
 cd ..
 
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json --office

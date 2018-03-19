@@ -1,0 +1,184 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.PageContent
+    summary: >-
+      Represents a region on a page that contains top-level content types such as Outline or Image. A PageContent object
+      can be assigned an XY position.
+
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: OneNote.PageContent
+    fullName: onenote.OneNote.PageContent
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.PageContent.delete
+      - onenote.OneNote.PageContent.id
+      - onenote.OneNote.PageContent.image
+      - onenote.OneNote.PageContent.ink
+      - onenote.OneNote.PageContent.left
+      - onenote.OneNote.PageContent.load
+      - onenote.OneNote.PageContent.outline
+      - onenote.OneNote.PageContent.parentPage
+      - onenote.OneNote.PageContent.top
+      - onenote.OneNote.PageContent.type
+  - uid: onenote.OneNote.PageContent.delete
+    summary: |-
+      Deletes the PageContent object.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: delete()
+    fullName: onenote.OneNote.PageContent.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: onenote.OneNote.PageContent.id
+    summary: |-
+      Gets the ID of the PageContent object. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: id
+    fullName: onenote.OneNote.PageContent.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.PageContent.image
+    summary: |-
+      Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: image
+    fullName: onenote.OneNote.PageContent.image
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'image: OneNote.Image;'
+      return:
+        type:
+          - OneNote.Image
+  - uid: onenote.OneNote.PageContent.ink
+    summary: |-
+      Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: ink
+    fullName: onenote.OneNote.PageContent.ink
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ink: OneNote.FloatingInk;'
+      return:
+        type:
+          - OneNote.FloatingInk
+  - uid: onenote.OneNote.PageContent.left
+    summary: |-
+      Gets or sets the left (X-axis) position of the PageContent object.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: left
+    fullName: onenote.OneNote.PageContent.left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.PageContent.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.PageContent.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.PageContent;'
+      return:
+        type:
+          - OneNote.PageContent
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: onenote.OneNote.PageContent.outline
+    summary: |-
+      Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: outline
+    fullName: onenote.OneNote.PageContent.outline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'outline: OneNote.Outline;'
+      return:
+        type:
+          - OneNote.Outline
+  - uid: onenote.OneNote.PageContent.parentPage
+    summary: |-
+      Gets the page that contains the PageContent object. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: parentPage
+    fullName: onenote.OneNote.PageContent.parentPage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentPage: OneNote.Page;'
+      return:
+        type:
+          - OneNote.Page
+  - uid: onenote.OneNote.PageContent.top
+    summary: |-
+      Gets or sets the top (Y-axis) position of the PageContent object.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: top
+    fullName: onenote.OneNote.PageContent.top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.PageContent.type
+    summary: |-
+      Gets the type of the PageContent object. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: type
+    fullName: onenote.OneNote.PageContent.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: string;'
+      return:
+        type:
+          - string
