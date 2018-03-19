@@ -1,0 +1,121 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio
+    name: visio
+    fullName: visio
+    langs:
+      - typeScript
+    type: package
+    children:
+      - visio.Visio.Application
+      - visio.Visio.BoundingBox
+      - visio.Visio.Comment
+      - visio.Visio.CommentCollection
+      - visio.Visio.DataRefreshCompleteEventArgs
+      - visio.Visio.Document
+      - visio.Visio.DocumentLoadCompleteEventArgs
+      - visio.Visio.DocumentView
+      - visio.Visio.Highlight
+      - visio.Visio.Hyperlink
+      - visio.Visio.HyperlinkCollection
+      - visio.Visio.Page
+      - visio.Visio.PageCollection
+      - visio.Visio.PageLoadCompleteEventArgs
+      - visio.Visio.PageView
+      - visio.Visio.Position
+      - visio.Visio.RequestContext
+      - visio.Visio.run
+      - visio.Visio.Selection
+      - visio.Visio.SelectionChangedEventArgs
+      - visio.Visio.Shape
+      - visio.Visio.ShapeCollection
+      - visio.Visio.ShapeDataItem
+      - visio.Visio.ShapeDataItemCollection
+      - visio.Visio.ShapeMouseEnterEventArgs
+      - visio.Visio.ShapeMouseLeaveEventArgs
+      - visio.Visio.ShapeView
+  - uid: visio.Visio.run
+    summary: >-
+      Executes a batch script that performs actions on the Visio object model, using the request context of
+      previously-created API objects.
+    name: 'run(objects, batch)'
+    fullName: visio.Visio.run
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) =>
+        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+      return:
+        type:
+          - OfficeExtension.IPromise<T>
+        description: ''
+      parameters:
+        - id: objects
+          description: >-
+            An array of previously-created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared request context, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
+          type:
+            - 'OfficeExtension.ClientObject[]'
+        - id: batch
+          description: >-
+            A function that takes in a Visio.RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated
+            during execution will be released.
+          type:
+            - '(context: Visio.RequestContext) => OfficeExtension.IPromise<T>'
+references:
+  - uid: visio.Visio.Application
+    name: Visio.Application
+  - uid: visio.Visio.BoundingBox
+    name: Visio.BoundingBox
+  - uid: visio.Visio.Comment
+    name: Visio.Comment
+  - uid: visio.Visio.CommentCollection
+    name: Visio.CommentCollection
+  - uid: visio.Visio.DataRefreshCompleteEventArgs
+    name: Visio.DataRefreshCompleteEventArgs
+  - uid: visio.Visio.Document
+    name: Visio.Document
+  - uid: visio.Visio.DocumentLoadCompleteEventArgs
+    name: Visio.DocumentLoadCompleteEventArgs
+  - uid: visio.Visio.DocumentView
+    name: Visio.DocumentView
+  - uid: visio.Visio.Highlight
+    name: Visio.Highlight
+  - uid: visio.Visio.Hyperlink
+    name: Visio.Hyperlink
+  - uid: visio.Visio.HyperlinkCollection
+    name: Visio.HyperlinkCollection
+  - uid: visio.Visio.Page
+    name: Visio.Page
+  - uid: visio.Visio.PageCollection
+    name: Visio.PageCollection
+  - uid: visio.Visio.PageLoadCompleteEventArgs
+    name: Visio.PageLoadCompleteEventArgs
+  - uid: visio.Visio.PageView
+    name: Visio.PageView
+  - uid: visio.Visio.Position
+    name: Visio.Position
+  - uid: visio.Visio.RequestContext
+    name: Visio.RequestContext
+  - uid: visio.Visio.Selection
+    name: Visio.Selection
+  - uid: visio.Visio.SelectionChangedEventArgs
+    name: Visio.SelectionChangedEventArgs
+  - uid: visio.Visio.Shape
+    name: Visio.Shape
+  - uid: visio.Visio.ShapeCollection
+    name: Visio.ShapeCollection
+  - uid: visio.Visio.ShapeDataItem
+    name: Visio.ShapeDataItem
+  - uid: visio.Visio.ShapeDataItemCollection
+    name: Visio.ShapeDataItemCollection
+  - uid: visio.Visio.ShapeMouseEnterEventArgs
+    name: Visio.ShapeMouseEnterEventArgs
+  - uid: visio.Visio.ShapeMouseLeaveEventArgs
+    name: Visio.ShapeMouseLeaveEventArgs
+  - uid: visio.Visio.ShapeView
+    name: Visio.ShapeView

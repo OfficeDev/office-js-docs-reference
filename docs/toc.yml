@@ -525,145 +525,6 @@ items:
                 uid: office.OfficeExtension.RequestUrlAndHeaderInfo
               - name: TrackedObjects
                 uid: office.OfficeExtension.TrackedObjects
-          - name: OneNote
-            items:
-              - name: Alignment
-              - name: Application
-                uid: office.OneNote.Application
-              - name: ErrorCodes
-              - name: FloatingInk
-                uid: office.OneNote.FloatingInk
-              - name: Image
-                uid: office.OneNote.Image
-              - name: ImageOcrData
-                uid: office.OneNote.ImageOcrData
-              - name: InkAnalysis
-                uid: office.OneNote.InkAnalysis
-              - name: InkAnalysisLine
-                uid: office.OneNote.InkAnalysisLine
-              - name: InkAnalysisLineCollection
-                uid: office.OneNote.InkAnalysisLineCollection
-              - name: InkAnalysisParagraph
-                uid: office.OneNote.InkAnalysisParagraph
-              - name: InkAnalysisParagraphCollection
-                uid: office.OneNote.InkAnalysisParagraphCollection
-              - name: InkAnalysisWord
-                uid: office.OneNote.InkAnalysisWord
-              - name: InkAnalysisWordCollection
-                uid: office.OneNote.InkAnalysisWordCollection
-              - name: InkStroke
-                uid: office.OneNote.InkStroke
-              - name: InkStrokeCollection
-                uid: office.OneNote.InkStrokeCollection
-              - name: InkStrokePointer
-                uid: office.OneNote.InkStrokePointer
-              - name: InkWord
-                uid: office.OneNote.InkWord
-              - name: InkWordCollection
-                uid: office.OneNote.InkWordCollection
-              - name: InsertLocation
-              - name: Notebook
-                uid: office.OneNote.Notebook
-              - name: NotebookCollection
-                uid: office.OneNote.NotebookCollection
-              - name: Outline
-                uid: office.OneNote.Outline
-              - name: Page
-                uid: office.OneNote.Page
-              - name: PageCollection
-                uid: office.OneNote.PageCollection
-              - name: PageContent
-                uid: office.OneNote.PageContent
-              - name: PageContentCollection
-                uid: office.OneNote.PageContentCollection
-              - name: PageContentType
-              - name: Paragraph
-                uid: office.OneNote.Paragraph
-              - name: ParagraphCollection
-                uid: office.OneNote.ParagraphCollection
-              - name: ParagraphType
-              - name: RequestContext
-                uid: office.OneNote.RequestContext
-              - name: RichText
-                uid: office.OneNote.RichText
-              - name: Section
-                uid: office.OneNote.Section
-              - name: SectionCollection
-                uid: office.OneNote.SectionCollection
-              - name: SectionGroup
-                uid: office.OneNote.SectionGroup
-              - name: SectionGroupCollection
-                uid: office.OneNote.SectionGroupCollection
-              - name: Selected
-              - name: Table
-                uid: office.OneNote.Table
-              - name: TableCell
-                uid: office.OneNote.TableCell
-              - name: TableCellCollection
-                uid: office.OneNote.TableCellCollection
-              - name: TableRow
-                uid: office.OneNote.TableRow
-              - name: TableRowCollection
-                uid: office.OneNote.TableRowCollection
-          - name: Visio
-            items:
-              - name: Application
-                uid: office.Visio.Application
-              - name: BoundingBox
-                uid: office.Visio.BoundingBox
-              - name: Comment
-                uid: office.Visio.Comment
-              - name: CommentCollection
-                uid: office.Visio.CommentCollection
-              - name: DataRefreshCompleteEventArgs
-                uid: office.Visio.DataRefreshCompleteEventArgs
-              - name: Document
-                uid: office.Visio.Document
-              - name: DocumentLoadCompleteEventArgs
-                uid: office.Visio.DocumentLoadCompleteEventArgs
-              - name: DocumentView
-                uid: office.Visio.DocumentView
-              - name: ErrorCodes
-              - name: Highlight
-                uid: office.Visio.Highlight
-              - name: Hyperlink
-                uid: office.Visio.Hyperlink
-              - name: HyperlinkCollection
-                uid: office.Visio.HyperlinkCollection
-              - name: OverlayHorizontalAlignment
-              - name: OverlayType
-              - name: OverlayVerticalAlignment
-              - name: Page
-                uid: office.Visio.Page
-              - name: PageCollection
-                uid: office.Visio.PageCollection
-              - name: PageLoadCompleteEventArgs
-                uid: office.Visio.PageLoadCompleteEventArgs
-              - name: PageView
-                uid: office.Visio.PageView
-              - name: Position
-                uid: office.Visio.Position
-              - name: RequestContext
-                uid: office.Visio.RequestContext
-              - name: Selection
-                uid: office.Visio.Selection
-              - name: SelectionChangedEventArgs
-                uid: office.Visio.SelectionChangedEventArgs
-              - name: Shape
-                uid: office.Visio.Shape
-              - name: ShapeCollection
-                uid: office.Visio.ShapeCollection
-              - name: ShapeDataItem
-                uid: office.Visio.ShapeDataItem
-              - name: ShapeDataItemCollection
-                uid: office.Visio.ShapeDataItemCollection
-              - name: ShapeMouseEnterEventArgs
-                uid: office.Visio.ShapeMouseEnterEventArgs
-              - name: ShapeMouseLeaveEventArgs
-                uid: office.Visio.ShapeMouseLeaveEventArgs
-              - name: ShapeView
-                uid: office.Visio.ShapeView
-              - name: ToolBarType
       - name: onenote
         uid: onenote
         items:
@@ -747,6 +608,68 @@ items:
                 uid: onenote.OneNote.TableRow
               - name: TableRowCollection
                 uid: onenote.OneNote.TableRowCollection
+      - name: visio
+        uid: visio
+        items:
+          - name: Visio
+            items:
+              - name: Application
+                uid: visio.Visio.Application
+              - name: BoundingBox
+                uid: visio.Visio.BoundingBox
+              - name: Comment
+                uid: visio.Visio.Comment
+              - name: CommentCollection
+                uid: visio.Visio.CommentCollection
+              - name: DataRefreshCompleteEventArgs
+                uid: visio.Visio.DataRefreshCompleteEventArgs
+              - name: Document
+                uid: visio.Visio.Document
+              - name: DocumentLoadCompleteEventArgs
+                uid: visio.Visio.DocumentLoadCompleteEventArgs
+              - name: DocumentView
+                uid: visio.Visio.DocumentView
+              - name: ErrorCodes
+              - name: Highlight
+                uid: visio.Visio.Highlight
+              - name: Hyperlink
+                uid: visio.Visio.Hyperlink
+              - name: HyperlinkCollection
+                uid: visio.Visio.HyperlinkCollection
+              - name: OverlayHorizontalAlignment
+              - name: OverlayType
+              - name: OverlayVerticalAlignment
+              - name: Page
+                uid: visio.Visio.Page
+              - name: PageCollection
+                uid: visio.Visio.PageCollection
+              - name: PageLoadCompleteEventArgs
+                uid: visio.Visio.PageLoadCompleteEventArgs
+              - name: PageView
+                uid: visio.Visio.PageView
+              - name: Position
+                uid: visio.Visio.Position
+              - name: RequestContext
+                uid: visio.Visio.RequestContext
+              - name: Selection
+                uid: visio.Visio.Selection
+              - name: SelectionChangedEventArgs
+                uid: visio.Visio.SelectionChangedEventArgs
+              - name: Shape
+                uid: visio.Visio.Shape
+              - name: ShapeCollection
+                uid: visio.Visio.ShapeCollection
+              - name: ShapeDataItem
+                uid: visio.Visio.ShapeDataItem
+              - name: ShapeDataItemCollection
+                uid: visio.Visio.ShapeDataItemCollection
+              - name: ShapeMouseEnterEventArgs
+                uid: visio.Visio.ShapeMouseEnterEventArgs
+              - name: ShapeMouseLeaveEventArgs
+                uid: visio.Visio.ShapeMouseLeaveEventArgs
+              - name: ShapeView
+                uid: visio.Visio.ShapeView
+              - name: ToolBarType
       - name: word
         uid: word
         items:

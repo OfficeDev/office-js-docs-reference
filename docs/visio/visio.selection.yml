@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Selection
+    summary: |-
+      Represents the Selection in the page.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: Visio.Selection
+    fullName: visio.Visio.Selection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: visio
+    children:
+      - visio.Visio.Selection.load
+      - visio.Visio.Selection.shapes
+      - visio.Visio.Selection.toJSON
+  - uid: visio.Visio.Selection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: visio.Visio.Selection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[]): Visio.Selection;'
+      return:
+        type:
+          - Visio.Selection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[]'
+  - uid: visio.Visio.Selection.shapes
+    summary: |-
+      Gets the Shapes of the Selection
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: shapes
+    fullName: visio.Visio.Selection.shapes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shapes: Visio.ShapeCollection;'
+      return:
+        type:
+          - Visio.ShapeCollection
+  - uid: visio.Visio.Selection.toJSON
+    name: toJSON()
+    fullName: visio.Visio.Selection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.SelectionData;'
+      return:
+        type:
+          - Visio.Interfaces.SelectionData
+        description: ''

@@ -1,0 +1,104 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.HyperlinkCollection
+    summary: |-
+      Represents the Hyperlink Collection.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: Visio.HyperlinkCollection
+    fullName: visio.Visio.HyperlinkCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: visio
+    children:
+      - visio.Visio.HyperlinkCollection.getCount
+      - visio.Visio.HyperlinkCollection.getItem
+      - visio.Visio.HyperlinkCollection.items
+      - visio.Visio.HyperlinkCollection.load
+      - visio.Visio.HyperlinkCollection.toJSON
+  - uid: visio.Visio.HyperlinkCollection.getCount
+    summary: |-
+      Gets the number of hyperlinks.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: getCount()
+    fullName: visio.Visio.HyperlinkCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: visio.Visio.HyperlinkCollection.getItem
+    summary: |-
+      Gets a Hyperlink using its key (name or Id).
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: getItem(Key)
+    fullName: visio.Visio.HyperlinkCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(Key: number | string): Visio.Hyperlink;'
+      return:
+        type:
+          - Visio.Hyperlink
+        description: ''
+      parameters:
+        - id: Key
+          description: Key is the name or index of the Hyperlink to be retrieved.
+          type:
+            - number | string
+  - uid: visio.Visio.HyperlinkCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: visio.Visio.HyperlinkCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Array<Visio.Hyperlink>;'
+      return:
+        type:
+          - Array<Visio.Hyperlink>
+  - uid: visio.Visio.HyperlinkCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: visio.Visio.HyperlinkCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.HyperlinkCollection;
+      return:
+        type:
+          - Visio.HyperlinkCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+  - uid: visio.Visio.HyperlinkCollection.toJSON
+    name: toJSON()
+    fullName: visio.Visio.HyperlinkCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.HyperlinkCollectionData;'
+      return:
+        type:
+          - Visio.Interfaces.HyperlinkCollectionData
+        description: ''
