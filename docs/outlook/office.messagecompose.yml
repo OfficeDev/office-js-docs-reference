@@ -1,0 +1,48 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.MessageCompose
+    name: Office.MessageCompose
+    fullName: outlook.Office.MessageCompose
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Message
+    package: outlook
+    children:
+      - outlook.Office.MessageCompose.bcc
+      - outlook.Office.MessageCompose.cc
+      - outlook.Office.MessageCompose.to
+  - uid: outlook.Office.MessageCompose.bcc
+    name: bcc
+    fullName: outlook.Office.MessageCompose.bcc
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bcc: Recipients;'
+      return:
+        type:
+          - Recipients
+  - uid: outlook.Office.MessageCompose.cc
+    name: cc
+    fullName: outlook.Office.MessageCompose.cc
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cc: Recipients;'
+      return:
+        type:
+          - Recipients
+  - uid: outlook.Office.MessageCompose.to
+    name: to
+    fullName: outlook.Office.MessageCompose.to
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'to: Recipients;'
+      return:
+        type:
+          - Recipients

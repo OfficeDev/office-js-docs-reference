@@ -300,22 +300,10 @@ items:
             items:
               - name: ActiveView
                 uid: office.Office.ActiveView
-              - name: Appointment
-                uid: office.Office.Appointment
-              - name: AppointmentCompose
-                uid: office.Office.AppointmentCompose
-              - name: AppointmentForm
-                uid: office.Office.AppointmentForm
-              - name: AppointmentRead
-                uid: office.Office.AppointmentRead
-              - name: AsyncContextOptions
-                uid: office.Office.AsyncContextOptions
               - name: AsyncResult
                 uid: office.Office.AsyncResult
               - name: AsyncResultStatus
                 uid: office.Office.AsyncResultStatus
-              - name: AttachmentDetails
-                uid: office.Office.AttachmentDetails
               - name: Auth
                 uid: office.Office.Auth
               - name: AuthOptions
@@ -326,21 +314,10 @@ items:
                 uid: office.Office.Bindings
               - name: BindingType
                 uid: office.Office.BindingType
-              - name: Body
-                uid: office.Office.Body
-              - name: cast
-                items:
-                  - name: item
               - name: CoercionType
                 uid: office.Office.CoercionType
-              - name: CoercionTypeOptions
-                uid: office.Office.CoercionTypeOptions
-              - name: Contact
-                uid: office.Office.Contact
               - name: Context
                 uid: office.Office.Context
-              - name: CustomProperties
-                uid: office.Office.CustomProperties
               - name: CustomXmlNode
                 uid: office.Office.CustomXmlNode
               - name: CustomXmlPart
@@ -349,8 +326,6 @@ items:
                 uid: office.Office.CustomXmlParts
               - name: CustomXmlPrefixMappings
                 uid: office.Office.CustomXmlPrefixMappings
-              - name: Diagnostics
-                uid: office.Office.Diagnostics
               - name: DialogHandler
                 uid: office.Office.DialogHandler
               - name: DialogOptions
@@ -361,12 +336,6 @@ items:
                 uid: office.Office.DocumentMode
               - name: DocumentSelectionChangedEventArgs
                 uid: office.Office.DocumentSelectionChangedEventArgs
-              - name: EmailAddressDetails
-                uid: office.Office.EmailAddressDetails
-              - name: EmailUser
-                uid: office.Office.EmailUser
-              - name: Entities
-                uid: office.Office.Entities
               - name: Error
                 uid: office.Office.Error
               - name: EventType
@@ -387,52 +356,10 @@ items:
                 uid: office.Office.Index
               - name: InitializationReason
                 uid: office.Office.InitializationReason
-              - name: Item
-                uid: office.Office.Item
-              - name: ItemCompose
-                uid: office.Office.ItemCompose
-              - name: ItemRead
-                uid: office.Office.ItemRead
-              - name: LocalClientTime
-                uid: office.Office.LocalClientTime
-              - name: Location
-                uid: office.Office.Location
-              - name: Mailbox
-                uid: office.Office.Mailbox
-              - name: MailboxEnums
-                items:
-                  - name: AttachmentType
-                    uid: office.Office.MailboxEnums.AttachmentType
-                  - name: EntityType
-                    uid: office.Office.MailboxEnums.EntityType
-                  - name: ItemNotificationMessageType
-                    uid: office.Office.MailboxEnums.ItemNotificationMessageType
-                  - name: ItemType
-                    uid: office.Office.MailboxEnums.ItemType
-                  - name: RecipientType
-                    uid: office.Office.MailboxEnums.RecipientType
-                  - name: ResponseType
-                    uid: office.Office.MailboxEnums.ResponseType
-                  - name: RestVersion
-                    uid: office.Office.MailboxEnums.RestVersion
               - name: MatrixBinding
                 uid: office.Office.MatrixBinding
-              - name: MeetingSuggestion
-                uid: office.Office.MeetingSuggestion
-              - name: Message
-                uid: office.Office.Message
-              - name: MessageCompose
-                uid: office.Office.MessageCompose
-              - name: MessageRead
-                uid: office.Office.MessageRead
-              - name: NotificationMessageDetails
-                uid: office.Office.NotificationMessageDetails
-              - name: NotificationMessages
-                uid: office.Office.NotificationMessages
               - name: OfficeTheme
                 uid: office.Office.OfficeTheme
-              - name: PhoneNumber
-                uid: office.Office.PhoneNumber
               - name: PlatformType
                 uid: office.Office.PlatformType
               - name: ProjectProjectFields
@@ -443,40 +370,22 @@ items:
                 uid: office.Office.ProjectTaskFields
               - name: ProjectViewTypes
                 uid: office.Office.ProjectViewTypes
-              - name: Recipients
-                uid: office.Office.Recipients
-              - name: ReplyFormAttachment
-                uid: office.Office.ReplyFormAttachment
-              - name: ReplyFormData
-                uid: office.Office.ReplyFormData
-              - name: RoamingSettings
-                uid: office.Office.RoamingSettings
               - name: SelectionMode
                 uid: office.Office.SelectionMode
               - name: Settings
                 uid: office.Office.Settings
               - name: Slice
                 uid: office.Office.Slice
-              - name: SourceProperty
-                uid: office.Office.SourceProperty
-              - name: Subject
-                uid: office.Office.Subject
               - name: Table
                 uid: office.Office.Table
               - name: TableBinding
                 uid: office.Office.TableBinding
               - name: TableData
                 uid: office.Office.TableData
-              - name: TaskSuggestion
-                uid: office.Office.TaskSuggestion
               - name: TextBinding
                 uid: office.Office.TextBinding
-              - name: Time
-                uid: office.Office.Time
               - name: UI
                 uid: office.Office.UI
-              - name: UserProfile
-                uid: office.Office.UserProfile
               - name: ValueFormat
                 uid: office.Office.ValueFormat
           - name: OfficeCore
@@ -608,6 +517,104 @@ items:
                 uid: onenote.OneNote.TableRow
               - name: TableRowCollection
                 uid: onenote.OneNote.TableRowCollection
+      - name: outlook
+        uid: outlook
+        items:
+          - name: Office
+            items:
+              - name: Appointment
+                uid: outlook.Office.Appointment
+              - name: AppointmentCompose
+                uid: outlook.Office.AppointmentCompose
+              - name: AppointmentForm
+                uid: outlook.Office.AppointmentForm
+              - name: AppointmentRead
+                uid: outlook.Office.AppointmentRead
+              - name: AsyncContextOptions
+                uid: outlook.Office.AsyncContextOptions
+              - name: AttachmentDetails
+                uid: outlook.Office.AttachmentDetails
+              - name: Body
+                uid: outlook.Office.Body
+              - name: cast
+                items:
+                  - name: item
+              - name: CoercionTypeOptions
+                uid: outlook.Office.CoercionTypeOptions
+              - name: Contact
+                uid: outlook.Office.Contact
+              - name: Context
+                uid: outlook.Office.Context
+              - name: CustomProperties
+                uid: outlook.Office.CustomProperties
+              - name: Diagnostics
+                uid: outlook.Office.Diagnostics
+              - name: EmailAddressDetails
+                uid: outlook.Office.EmailAddressDetails
+              - name: EmailUser
+                uid: outlook.Office.EmailUser
+              - name: Entities
+                uid: outlook.Office.Entities
+              - name: Item
+                uid: outlook.Office.Item
+              - name: ItemCompose
+                uid: outlook.Office.ItemCompose
+              - name: ItemRead
+                uid: outlook.Office.ItemRead
+              - name: LocalClientTime
+                uid: outlook.Office.LocalClientTime
+              - name: Location
+                uid: outlook.Office.Location
+              - name: Mailbox
+                uid: outlook.Office.Mailbox
+              - name: MailboxEnums
+                items:
+                  - name: AttachmentType
+                    uid: outlook.Office.MailboxEnums.AttachmentType
+                  - name: EntityType
+                    uid: outlook.Office.MailboxEnums.EntityType
+                  - name: ItemNotificationMessageType
+                    uid: outlook.Office.MailboxEnums.ItemNotificationMessageType
+                  - name: ItemType
+                    uid: outlook.Office.MailboxEnums.ItemType
+                  - name: RecipientType
+                    uid: outlook.Office.MailboxEnums.RecipientType
+                  - name: ResponseType
+                    uid: outlook.Office.MailboxEnums.ResponseType
+                  - name: RestVersion
+                    uid: outlook.Office.MailboxEnums.RestVersion
+              - name: MeetingSuggestion
+                uid: outlook.Office.MeetingSuggestion
+              - name: Message
+                uid: outlook.Office.Message
+              - name: MessageCompose
+                uid: outlook.Office.MessageCompose
+              - name: MessageRead
+                uid: outlook.Office.MessageRead
+              - name: NotificationMessageDetails
+                uid: outlook.Office.NotificationMessageDetails
+              - name: NotificationMessages
+                uid: outlook.Office.NotificationMessages
+              - name: PhoneNumber
+                uid: outlook.Office.PhoneNumber
+              - name: Recipients
+                uid: outlook.Office.Recipients
+              - name: ReplyFormAttachment
+                uid: outlook.Office.ReplyFormAttachment
+              - name: ReplyFormData
+                uid: outlook.Office.ReplyFormData
+              - name: RoamingSettings
+                uid: outlook.Office.RoamingSettings
+              - name: SourceProperty
+                uid: outlook.Office.SourceProperty
+              - name: Subject
+                uid: outlook.Office.Subject
+              - name: TaskSuggestion
+                uid: outlook.Office.TaskSuggestion
+              - name: Time
+                uid: outlook.Office.Time
+              - name: UserProfile
+                uid: outlook.Office.UserProfile
       - name: visio
         uid: visio
         items:

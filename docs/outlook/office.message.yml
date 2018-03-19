@@ -1,0 +1,24 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.Message
+    name: Office.Message
+    fullName: outlook.Office.Message
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Item
+    package: outlook
+    children:
+      - outlook.Office.Message.conversationId
+  - uid: outlook.Office.Message.conversationId
+    name: conversationId
+    fullName: outlook.Office.Message.conversationId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'conversationId: string;'
+      return:
+        type:
+          - string

@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.CustomProperties
+    name: Office.CustomProperties
+    fullName: outlook.Office.CustomProperties
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.CustomProperties.get
+      - outlook.Office.CustomProperties.remove
+      - outlook.Office.CustomProperties.saveAsync
+      - outlook.Office.CustomProperties.set
+  - uid: outlook.Office.CustomProperties.get
+    summary: Returns the value of the specified custom property
+    name: get(name)
+    fullName: outlook.Office.CustomProperties.get
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'get(name: string): any;'
+      return:
+        type:
+          - any
+        description: ''
+      parameters:
+        - id: name
+          description: The name of the property to be returned
+          type:
+            - string
+  - uid: outlook.Office.CustomProperties.remove
+    summary: Removes the specified property from the custom property collection.
+    name: remove(name)
+    fullName: outlook.Office.CustomProperties.remove
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: The name of the property to be removed
+          type:
+            - string
+  - uid: outlook.Office.CustomProperties.saveAsync
+    summary: Saves the custom property collection to the server
+    name: 'saveAsync(callback, userContext)'
+    fullName: outlook.Office.CustomProperties.saveAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'saveAsync(callback?: (result: AsyncResult) => void, userContext?: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+        - id: userContext
+          description: Optional variable for any state data that is passed to the saveAsync method
+          type:
+            - any
+  - uid: outlook.Office.CustomProperties.set
+    summary: Sets the specified property to the specified value
+    name: 'set(name, value)'
+    fullName: outlook.Office.CustomProperties.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(name: string, value: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: The name of the property to be set
+          type:
+            - string
+        - id: value
+          description: The value of the property to be set
+          type:
+            - string

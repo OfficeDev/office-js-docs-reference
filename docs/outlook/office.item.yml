@@ -1,0 +1,96 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.Item
+    name: Office.Item
+    fullName: outlook.Office.Item
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.Item.___BeSureToCastThisObject__
+      - outlook.Office.Item.body
+      - outlook.Office.Item.dateTimeCreated
+      - outlook.Office.Item.itemType
+      - outlook.Office.Item.loadCustomPropertiesAsync
+      - outlook.Office.Item.notificationMessages
+  - uid: outlook.Office.Item.___BeSureToCastThisObject__
+    summary: >-
+      You can cast item with \`(Item as Office.\[CAST\_TYPE\])\` where CAST\_TYPE is one of the following: ItemRead,
+      ItemCompose, Message, MessageRead, MessageCompose, Appointment, AppointmentRead, AppointmentCompose
+    name: ___BeSureToCastThisObject__
+    fullName: outlook.Office.Item.___BeSureToCastThisObject__
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '___BeSureToCastThisObject__: void;'
+      return:
+        type:
+          - void
+  - uid: outlook.Office.Item.body
+    name: body
+    fullName: outlook.Office.Item.body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body: Body;'
+      return:
+        type:
+          - Body
+  - uid: outlook.Office.Item.dateTimeCreated
+    name: dateTimeCreated
+    fullName: outlook.Office.Item.dateTimeCreated
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dateTimeCreated: Date;'
+      return:
+        type:
+          - Date
+  - uid: outlook.Office.Item.itemType
+    name: itemType
+    fullName: outlook.Office.Item.itemType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemType: Office.MailboxEnums.ItemType;'
+      return:
+        type:
+          - Office.MailboxEnums.ItemType
+  - uid: outlook.Office.Item.loadCustomPropertiesAsync
+    summary: Asynchronously loads custom properties that are specific to the item and a app for Office
+    name: 'loadCustomPropertiesAsync(callback, userContext)'
+    fullName: outlook.Office.Item.loadCustomPropertiesAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'loadCustomPropertiesAsync(callback?: (result: AsyncResult) => void, userContext?: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+        - id: userContext
+          description: Optional variable for any state data that is passed to the asynchronous method
+          type:
+            - any
+  - uid: outlook.Office.Item.notificationMessages
+    name: notificationMessages
+    fullName: outlook.Office.Item.notificationMessages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'notificationMessages: NotificationMessages;'
+      return:
+        type:
+          - NotificationMessages

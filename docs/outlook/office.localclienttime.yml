@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.LocalClientTime
+    name: Office.LocalClientTime
+    fullName: outlook.Office.LocalClientTime
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.LocalClientTime.date
+      - outlook.Office.LocalClientTime.hours
+      - outlook.Office.LocalClientTime.milliseconds
+      - outlook.Office.LocalClientTime.minutes
+      - outlook.Office.LocalClientTime.month
+      - outlook.Office.LocalClientTime.seconds
+      - outlook.Office.LocalClientTime.timezoneOffset
+      - outlook.Office.LocalClientTime.year
+  - uid: outlook.Office.LocalClientTime.date
+    name: date
+    fullName: outlook.Office.LocalClientTime.date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date: number;'
+      return:
+        type:
+          - number
+  - uid: outlook.Office.LocalClientTime.hours
+    name: hours
+    fullName: outlook.Office.LocalClientTime.hours
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hours: number;'
+      return:
+        type:
+          - number
+  - uid: outlook.Office.LocalClientTime.milliseconds
+    name: milliseconds
+    fullName: outlook.Office.LocalClientTime.milliseconds
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'milliseconds: number;'
+      return:
+        type:
+          - number
+  - uid: outlook.Office.LocalClientTime.minutes
+    name: minutes
+    fullName: outlook.Office.LocalClientTime.minutes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minutes: number;'
+      return:
+        type:
+          - number
+  - uid: outlook.Office.LocalClientTime.month
+    name: month
+    fullName: outlook.Office.LocalClientTime.month
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'month: number;'
+      return:
+        type:
+          - number
+  - uid: outlook.Office.LocalClientTime.seconds
+    name: seconds
+    fullName: outlook.Office.LocalClientTime.seconds
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'seconds: number;'
+      return:
+        type:
+          - number
+  - uid: outlook.Office.LocalClientTime.timezoneOffset
+    name: timezoneOffset
+    fullName: outlook.Office.LocalClientTime.timezoneOffset
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'timezoneOffset: number;'
+      return:
+        type:
+          - number
+  - uid: outlook.Office.LocalClientTime.year
+    name: year
+    fullName: outlook.Office.LocalClientTime.year
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'year: number;'
+      return:
+        type:
+          - number

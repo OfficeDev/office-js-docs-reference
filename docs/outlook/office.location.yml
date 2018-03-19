@@ -1,0 +1,48 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.Location
+    name: Office.Location
+    fullName: outlook.Office.Location
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.Location.getAsync
+      - outlook.Office.Location.setAsync
+  - uid: outlook.Office.Location.getAsync
+    summary: Begins an asynchronous request for the location of an appointment
+    name: getAsync(callback)
+    fullName: outlook.Office.Location.getAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(callback: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: The optional method to call when the string is inserted
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: outlook.Office.Location.setAsync
+    summary: Begins an asynchronous request to set the location of an appointment
+    name: setAsync(location)
+    fullName: outlook.Office.Location.setAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(location: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: location
+          description: ''
+          type:
+            - string

@@ -1,0 +1,205 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.ItemRead
+    name: Office.ItemRead
+    fullName: outlook.Office.ItemRead
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Item
+    package: outlook
+    children:
+      - outlook.Office.ItemRead.attachments
+      - outlook.Office.ItemRead.displayReplyAllForm
+      - outlook.Office.ItemRead.displayReplyForm
+      - outlook.Office.ItemRead.getEntities
+      - outlook.Office.ItemRead.getEntitiesByType
+      - outlook.Office.ItemRead.getFilteredEntitiesByName
+      - outlook.Office.ItemRead.getRegExMatches
+      - outlook.Office.ItemRead.getRegExMatchesByName
+      - outlook.Office.ItemRead.itemClass
+      - outlook.Office.ItemRead.itemId
+      - outlook.Office.ItemRead.normalizedSubject
+      - outlook.Office.ItemRead.subject
+  - uid: outlook.Office.ItemRead.attachments
+    name: attachments
+    fullName: outlook.Office.ItemRead.attachments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attachments: Array<AttachmentDetails>;'
+      return:
+        type:
+          - Array<AttachmentDetails>
+  - uid: outlook.Office.ItemRead.displayReplyAllForm
+    summary: Displays a reply form that includes the sender and all the recipients of the selected message
+    name: displayReplyAllForm(formData)
+    fullName: outlook.Office.ItemRead.displayReplyAllForm
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'displayReplyAllForm(formData: string | ReplyFormData): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formData
+          description: >-
+            A string that contains text and HTML and that represents the body of the reply form. The string is limited
+            to 32 KB OR An object that contains body or attachment data and a callback function
+          type:
+            - string | ReplyFormData
+  - uid: outlook.Office.ItemRead.displayReplyForm
+    summary: Displays a reply form that includes only the sender of the selected message
+    name: displayReplyForm(formData)
+    fullName: outlook.Office.ItemRead.displayReplyForm
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'displayReplyForm(formData: string | ReplyFormData): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formData
+          description: >-
+            A string that contains text and HTML and that represents the body of the reply form. The string is limited
+            to 32 KB OR An object that contains body or attachment data and a callback function
+          type:
+            - string | ReplyFormData
+  - uid: outlook.Office.ItemRead.getEntities
+    summary: Gets the entities found in the selected item
+    name: getEntities()
+    fullName: outlook.Office.ItemRead.getEntities
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEntities(): Entities;'
+      return:
+        type:
+          - Entities
+        description: ''
+  - uid: outlook.Office.ItemRead.getEntitiesByType
+    summary: Gets an array of entities of the specified entity type found in an message
+    name: getEntitiesByType(entityType)
+    fullName: outlook.Office.ItemRead.getEntitiesByType
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getEntitiesByType(entityType: Office.MailboxEnums.EntityType): Array<(string | Contact | MeetingSuggestion |
+        PhoneNumber | TaskSuggestion)>;
+      return:
+        type:
+          - Array<(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)>
+        description: ''
+      parameters:
+        - id: entityType
+          description: One of the EntityType enumeration values
+          type:
+            - Office.MailboxEnums.EntityType
+  - uid: outlook.Office.ItemRead.getFilteredEntitiesByName
+    summary: Returns well-known entities that pass the named filter defined in the manifest XML file
+    name: getFilteredEntitiesByName(name)
+    fullName: outlook.Office.ItemRead.getFilteredEntitiesByName
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getFilteredEntitiesByName(name: string): Array<(string | Contact | MeetingSuggestion | PhoneNumber |
+        TaskSuggestion)>;
+      return:
+        type:
+          - Array<(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)>
+        description: ''
+      parameters:
+        - id: name
+          description: The name of the ItemHasKnownEntity rule element that defines the filter to match
+          type:
+            - string
+  - uid: outlook.Office.ItemRead.getRegExMatches
+    summary: >-
+      Returns string values in the currently selected message object that match the regular expressions defined in the
+      manifest XML file
+    name: getRegExMatches()
+    fullName: outlook.Office.ItemRead.getRegExMatches
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRegExMatches(): any;'
+      return:
+        type:
+          - any
+        description: ''
+  - uid: outlook.Office.ItemRead.getRegExMatchesByName
+    summary: Returns string values that match the named regular expression defined in the manifest XML file
+    name: getRegExMatchesByName(name)
+    fullName: outlook.Office.ItemRead.getRegExMatchesByName
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRegExMatchesByName(name: string): Array<string>;'
+      return:
+        type:
+          - Array<string>
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: outlook.Office.ItemRead.itemClass
+    name: itemClass
+    fullName: outlook.Office.ItemRead.itemClass
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemClass: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.ItemRead.itemId
+    name: itemId
+    fullName: outlook.Office.ItemRead.itemId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemId: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.ItemRead.normalizedSubject
+    name: normalizedSubject
+    fullName: outlook.Office.ItemRead.normalizedSubject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'normalizedSubject: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.ItemRead.subject
+    name: subject
+    fullName: outlook.Office.ItemRead.subject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subject: string;'
+      return:
+        type:
+          - string

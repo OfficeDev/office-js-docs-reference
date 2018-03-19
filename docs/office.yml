@@ -8,46 +8,24 @@ items:
     type: package
     children:
       - office.Office.ActiveView
-      - office.Office.Appointment
-      - office.Office.AppointmentCompose
-      - office.Office.AppointmentForm
-      - office.Office.AppointmentRead
-      - office.Office.AsyncContextOptions
       - office.Office.AsyncResult
       - office.Office.AsyncResultStatus
-      - office.Office.AttachmentDetails
       - office.Office.Auth
       - office.Office.AuthOptions
       - office.Office.Binding
       - office.Office.Bindings
       - office.Office.BindingType
-      - office.Office.Body
-      - office.Office.cast.item.toAppointment
-      - office.Office.cast.item.toAppointmentCompose
-      - office.Office.cast.item.toAppointmentRead
-      - office.Office.cast.item.toItemCompose
-      - office.Office.cast.item.toItemRead
-      - office.Office.cast.item.toMessage
-      - office.Office.cast.item.toMessageCompose
-      - office.Office.cast.item.toMessageRead
       - office.Office.CoercionType
-      - office.Office.CoercionTypeOptions
-      - office.Office.Contact
       - office.Office.Context
-      - office.Office.CustomProperties
       - office.Office.CustomXmlNode
       - office.Office.CustomXmlPart
       - office.Office.CustomXmlParts
       - office.Office.CustomXmlPrefixMappings
-      - office.Office.Diagnostics
       - office.Office.DialogHandler
       - office.Office.DialogOptions
       - office.Office.Document
       - office.Office.DocumentMode
       - office.Office.DocumentSelectionChangedEventArgs
-      - office.Office.EmailAddressDetails
-      - office.Office.EmailUser
-      - office.Office.Entities
       - office.Office.Error
       - office.Office.EventType
       - office.Office.File
@@ -59,51 +37,22 @@ items:
       - office.Office.Index
       - office.Office.InitializationReason
       - office.Office.initialize
-      - office.Office.Item
-      - office.Office.ItemCompose
-      - office.Office.ItemRead
-      - office.Office.LocalClientTime
-      - office.Office.Location
-      - office.Office.Mailbox
-      - office.Office.MailboxEnums.AttachmentType
-      - office.Office.MailboxEnums.EntityType
-      - office.Office.MailboxEnums.ItemNotificationMessageType
-      - office.Office.MailboxEnums.ItemType
-      - office.Office.MailboxEnums.RecipientType
-      - office.Office.MailboxEnums.ResponseType
-      - office.Office.MailboxEnums.RestVersion
       - office.Office.MatrixBinding
-      - office.Office.MeetingSuggestion
-      - office.Office.Message
-      - office.Office.MessageCompose
-      - office.Office.MessageRead
-      - office.Office.NotificationMessageDetails
-      - office.Office.NotificationMessages
       - office.Office.OfficeTheme
-      - office.Office.PhoneNumber
       - office.Office.PlatformType
       - office.Office.ProjectProjectFields
       - office.Office.ProjectResourceFields
       - office.Office.ProjectTaskFields
       - office.Office.ProjectViewTypes
-      - office.Office.Recipients
-      - office.Office.ReplyFormAttachment
-      - office.Office.ReplyFormData
-      - office.Office.RoamingSettings
       - office.Office.select
       - office.Office.SelectionMode
       - office.Office.Settings
       - office.Office.Slice
-      - office.Office.SourceProperty
-      - office.Office.Subject
       - office.Office.Table
       - office.Office.TableBinding
       - office.Office.TableData
-      - office.Office.TaskSuggestion
       - office.Office.TextBinding
-      - office.Office.Time
       - office.Office.UI
-      - office.Office.UserProfile
       - office.Office.useShortNamespace
       - office.Office.ValueFormat
       - office.OfficeCore.ABType
@@ -126,142 +75,6 @@ items:
       - office.OfficeExtension.Promise
       - office.OfficeExtension.RequestUrlAndHeaderInfo
       - office.OfficeExtension.TrackedObjects
-  - uid: office.Office.cast.item.toAppointment
-    name: toAppointment(item)
-    fullName: office.Office.cast.item.toAppointment
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export function toAppointment(item: Office.Item): Office.Appointment;'
-      return:
-        type:
-          - Office.Appointment
-        description: ''
-      parameters:
-        - id: item
-          description: ''
-          type:
-            - Office.Item
-  - uid: office.Office.cast.item.toAppointmentCompose
-    name: toAppointmentCompose(item)
-    fullName: office.Office.cast.item.toAppointmentCompose
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export function toAppointmentCompose(item: Office.Item): Office.AppointmentCompose;'
-      return:
-        type:
-          - Office.AppointmentCompose
-        description: ''
-      parameters:
-        - id: item
-          description: ''
-          type:
-            - Office.Item
-  - uid: office.Office.cast.item.toAppointmentRead
-    name: toAppointmentRead(item)
-    fullName: office.Office.cast.item.toAppointmentRead
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export function toAppointmentRead(item: Office.Item): Office.AppointmentRead;'
-      return:
-        type:
-          - Office.AppointmentRead
-        description: ''
-      parameters:
-        - id: item
-          description: ''
-          type:
-            - Office.Item
-  - uid: office.Office.cast.item.toItemCompose
-    name: toItemCompose(item)
-    fullName: office.Office.cast.item.toItemCompose
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export function toItemCompose(item: Office.Item): Office.ItemCompose;'
-      return:
-        type:
-          - Office.ItemCompose
-        description: ''
-      parameters:
-        - id: item
-          description: ''
-          type:
-            - Office.Item
-  - uid: office.Office.cast.item.toItemRead
-    name: toItemRead(item)
-    fullName: office.Office.cast.item.toItemRead
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export function toItemRead(item: Office.Item): Office.ItemRead;'
-      return:
-        type:
-          - Office.ItemRead
-        description: ''
-      parameters:
-        - id: item
-          description: ''
-          type:
-            - Office.Item
-  - uid: office.Office.cast.item.toMessage
-    name: toMessage(item)
-    fullName: office.Office.cast.item.toMessage
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export function toMessage(item: Office.Item): Office.Message;'
-      return:
-        type:
-          - Office.Message
-        description: ''
-      parameters:
-        - id: item
-          description: ''
-          type:
-            - Office.Item
-  - uid: office.Office.cast.item.toMessageCompose
-    name: toMessageCompose(item)
-    fullName: office.Office.cast.item.toMessageCompose
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export function toMessageCompose(item: Office.Item): Office.MessageCompose;'
-      return:
-        type:
-          - Office.MessageCompose
-        description: ''
-      parameters:
-        - id: item
-          description: ''
-          type:
-            - Office.Item
-  - uid: office.Office.cast.item.toMessageRead
-    name: toMessageRead(item)
-    fullName: office.Office.cast.item.toMessageRead
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export function toMessageRead(item: Office.Item): Office.MessageRead;'
-      return:
-        type:
-          - Office.MessageRead
-        description: ''
-      parameters:
-        - id: item
-          description: ''
-          type:
-            - Office.Item
   - uid: office.Office.initialize
     summary: This method is called after the Office API was loaded.
     name: initialize(reason)
@@ -325,22 +138,10 @@ items:
 references:
   - uid: office.Office.ActiveView
     name: Office.ActiveView
-  - uid: office.Office.Appointment
-    name: Office.Appointment
-  - uid: office.Office.AppointmentCompose
-    name: Office.AppointmentCompose
-  - uid: office.Office.AppointmentForm
-    name: Office.AppointmentForm
-  - uid: office.Office.AppointmentRead
-    name: Office.AppointmentRead
-  - uid: office.Office.AsyncContextOptions
-    name: Office.AsyncContextOptions
   - uid: office.Office.AsyncResult
     name: Office.AsyncResult
   - uid: office.Office.AsyncResultStatus
     name: Office.AsyncResultStatus
-  - uid: office.Office.AttachmentDetails
-    name: Office.AttachmentDetails
   - uid: office.Office.Auth
     name: Office.Auth
   - uid: office.Office.AuthOptions
@@ -351,18 +152,10 @@ references:
     name: Office.Bindings
   - uid: office.Office.BindingType
     name: Office.BindingType
-  - uid: office.Office.Body
-    name: Office.Body
   - uid: office.Office.CoercionType
     name: Office.CoercionType
-  - uid: office.Office.CoercionTypeOptions
-    name: Office.CoercionTypeOptions
-  - uid: office.Office.Contact
-    name: Office.Contact
   - uid: office.Office.Context
     name: Office.Context
-  - uid: office.Office.CustomProperties
-    name: Office.CustomProperties
   - uid: office.Office.CustomXmlNode
     name: Office.CustomXmlNode
   - uid: office.Office.CustomXmlPart
@@ -371,8 +164,6 @@ references:
     name: Office.CustomXmlParts
   - uid: office.Office.CustomXmlPrefixMappings
     name: Office.CustomXmlPrefixMappings
-  - uid: office.Office.Diagnostics
-    name: Office.Diagnostics
   - uid: office.Office.DialogHandler
     name: Office.DialogHandler
   - uid: office.Office.DialogOptions
@@ -383,12 +174,6 @@ references:
     name: Office.DocumentMode
   - uid: office.Office.DocumentSelectionChangedEventArgs
     name: Office.DocumentSelectionChangedEventArgs
-  - uid: office.Office.EmailAddressDetails
-    name: Office.EmailAddressDetails
-  - uid: office.Office.EmailUser
-    name: Office.EmailUser
-  - uid: office.Office.Entities
-    name: Office.Entities
   - uid: office.Office.Error
     name: Office.Error
   - uid: office.Office.EventType
@@ -409,50 +194,10 @@ references:
     name: Office.Index
   - uid: office.Office.InitializationReason
     name: Office.InitializationReason
-  - uid: office.Office.Item
-    name: Office.Item
-  - uid: office.Office.ItemCompose
-    name: Office.ItemCompose
-  - uid: office.Office.ItemRead
-    name: Office.ItemRead
-  - uid: office.Office.LocalClientTime
-    name: Office.LocalClientTime
-  - uid: office.Office.Location
-    name: Office.Location
-  - uid: office.Office.Mailbox
-    name: Office.Mailbox
-  - uid: office.Office.MailboxEnums.AttachmentType
-    name: Office.MailboxEnums.AttachmentType
-  - uid: office.Office.MailboxEnums.EntityType
-    name: Office.MailboxEnums.EntityType
-  - uid: office.Office.MailboxEnums.ItemNotificationMessageType
-    name: Office.MailboxEnums.ItemNotificationMessageType
-  - uid: office.Office.MailboxEnums.ItemType
-    name: Office.MailboxEnums.ItemType
-  - uid: office.Office.MailboxEnums.RecipientType
-    name: Office.MailboxEnums.RecipientType
-  - uid: office.Office.MailboxEnums.ResponseType
-    name: Office.MailboxEnums.ResponseType
-  - uid: office.Office.MailboxEnums.RestVersion
-    name: Office.MailboxEnums.RestVersion
   - uid: office.Office.MatrixBinding
     name: Office.MatrixBinding
-  - uid: office.Office.MeetingSuggestion
-    name: Office.MeetingSuggestion
-  - uid: office.Office.Message
-    name: Office.Message
-  - uid: office.Office.MessageCompose
-    name: Office.MessageCompose
-  - uid: office.Office.MessageRead
-    name: Office.MessageRead
-  - uid: office.Office.NotificationMessageDetails
-    name: Office.NotificationMessageDetails
-  - uid: office.Office.NotificationMessages
-    name: Office.NotificationMessages
   - uid: office.Office.OfficeTheme
     name: Office.OfficeTheme
-  - uid: office.Office.PhoneNumber
-    name: Office.PhoneNumber
   - uid: office.Office.PlatformType
     name: Office.PlatformType
   - uid: office.Office.ProjectProjectFields
@@ -463,40 +208,22 @@ references:
     name: Office.ProjectTaskFields
   - uid: office.Office.ProjectViewTypes
     name: Office.ProjectViewTypes
-  - uid: office.Office.Recipients
-    name: Office.Recipients
-  - uid: office.Office.ReplyFormAttachment
-    name: Office.ReplyFormAttachment
-  - uid: office.Office.ReplyFormData
-    name: Office.ReplyFormData
-  - uid: office.Office.RoamingSettings
-    name: Office.RoamingSettings
   - uid: office.Office.SelectionMode
     name: Office.SelectionMode
   - uid: office.Office.Settings
     name: Office.Settings
   - uid: office.Office.Slice
     name: Office.Slice
-  - uid: office.Office.SourceProperty
-    name: Office.SourceProperty
-  - uid: office.Office.Subject
-    name: Office.Subject
   - uid: office.Office.Table
     name: Office.Table
   - uid: office.Office.TableBinding
     name: Office.TableBinding
   - uid: office.Office.TableData
     name: Office.TableData
-  - uid: office.Office.TaskSuggestion
-    name: Office.TaskSuggestion
   - uid: office.Office.TextBinding
     name: Office.TextBinding
-  - uid: office.Office.Time
-    name: Office.Time
   - uid: office.Office.UI
     name: Office.UI
-  - uid: office.Office.UserProfile
-    name: Office.UserProfile
   - uid: office.Office.ValueFormat
     name: Office.ValueFormat
   - uid: office.OfficeCore.ABType
