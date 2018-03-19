@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OneNote.ParagraphCollection
+    summary: |-
+      Represents a collection of Paragraph objects.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: OneNote.ParagraphCollection
+    fullName: office.OneNote.ParagraphCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.OneNote.ParagraphCollection.count
+      - office.OneNote.ParagraphCollection.getItem
+      - office.OneNote.ParagraphCollection.getItemAt
+      - office.OneNote.ParagraphCollection.items
+      - office.OneNote.ParagraphCollection.load
+  - uid: office.OneNote.ParagraphCollection.count
+    summary: |-
+      Returns the number of paragraphs in the page. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: count
+    fullName: office.OneNote.ParagraphCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: office.OneNote.ParagraphCollection.getItem
+    summary: Gets a Paragraph object by ID or by its index in the collection. Read-only.
+    name: getItem(index)
+    fullName: office.OneNote.ParagraphCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number | string): OneNote.Paragraph;'
+      return:
+        type:
+          - OneNote.Paragraph
+        description: ''
+      parameters:
+        - id: index
+          description: >-
+            The ID of the Paragraph object, or the index location of the Paragraph object in the collection. \[Api set:
+            OneNoteApi 1.1\]
+          type:
+            - number | string
+  - uid: office.OneNote.ParagraphCollection.getItemAt
+    summary: Gets a paragraph on its position in the collection.
+    name: getItemAt(index)
+    fullName: office.OneNote.ParagraphCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): OneNote.Paragraph;'
+      return:
+        type:
+          - OneNote.Paragraph
+        description: ''
+      parameters:
+        - id: index
+          description: 'Index value of the object to be retrieved. Zero-indexed. \[Api set: OneNoteApi 1.1\]'
+          type:
+            - number
+  - uid: office.OneNote.ParagraphCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.OneNote.ParagraphCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<OneNote.Paragraph>;'
+      return:
+        type:
+          - Array<OneNote.Paragraph>
+  - uid: office.OneNote.ParagraphCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.OneNote.ParagraphCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.ParagraphCollection;'
+      return:
+        type:
+          - OneNote.ParagraphCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'

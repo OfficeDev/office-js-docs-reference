@@ -1,0 +1,639 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Word.InlinePicture
+    summary: |-
+      Represents an inline picture.
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: Word.InlinePicture
+    fullName: office.Word.InlinePicture
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Word.InlinePicture.altTextDescription
+      - office.Word.InlinePicture.altTextTitle
+      - office.Word.InlinePicture.delete
+      - office.Word.InlinePicture.getBase64ImageSrc
+      - office.Word.InlinePicture.getNext
+      - office.Word.InlinePicture.getNextOrNullObject
+      - office.Word.InlinePicture.getRange
+      - office.Word.InlinePicture.height
+      - office.Word.InlinePicture.hyperlink
+      - office.Word.InlinePicture.insertBreak
+      - office.Word.InlinePicture.insertContentControl
+      - office.Word.InlinePicture.insertFileFromBase64
+      - office.Word.InlinePicture.insertHtml
+      - office.Word.InlinePicture.insertInlinePictureFromBase64
+      - office.Word.InlinePicture.insertOoxml
+      - office.Word.InlinePicture.insertParagraph
+      - office.Word.InlinePicture.insertText
+      - office.Word.InlinePicture.load
+      - office.Word.InlinePicture.lockAspectRatio
+      - office.Word.InlinePicture.paragraph
+      - office.Word.InlinePicture.parentContentControl
+      - office.Word.InlinePicture.parentContentControlOrNullObject
+      - office.Word.InlinePicture.parentTable
+      - office.Word.InlinePicture.parentTableCell
+      - office.Word.InlinePicture.parentTableCellOrNullObject
+      - office.Word.InlinePicture.parentTableOrNullObject
+      - office.Word.InlinePicture.select
+      - office.Word.InlinePicture.set
+      - office.Word.InlinePicture.toJSON
+      - office.Word.InlinePicture.track
+      - office.Word.InlinePicture.untrack
+      - office.Word.InlinePicture.width
+  - uid: office.Word.InlinePicture.altTextDescription
+    summary: |-
+      Gets or sets a string that represents the alternative text associated with the inline image
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: altTextDescription
+    fullName: office.Word.InlinePicture.altTextDescription
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextDescription: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word.InlinePicture.altTextTitle
+    summary: |-
+      Gets or sets a string that contains the title for the inline image.
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: altTextTitle
+    fullName: office.Word.InlinePicture.altTextTitle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextTitle: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word.InlinePicture.delete
+    summary: |-
+      Deletes the inline picture from the document.
+
+      \[ [Api set: WordApi 1.2](http://bing.com) \]
+    name: delete()
+    fullName: office.Word.InlinePicture.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Word.InlinePicture.getBase64ImageSrc
+    summary: |-
+      Gets the base64 encoded string representation of the inline image.
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: getBase64ImageSrc()
+    fullName: office.Word.InlinePicture.getBase64ImageSrc
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBase64ImageSrc(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+  - uid: office.Word.InlinePicture.getNext
+    summary: |-
+      Gets the next inline image. Throws if this inline image is the last one.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: getNext()
+    fullName: office.Word.InlinePicture.getNext
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNext(): Word.InlinePicture;'
+      return:
+        type:
+          - Word.InlinePicture
+        description: ''
+  - uid: office.Word.InlinePicture.getNextOrNullObject
+    summary: |-
+      Gets the next inline image. Returns a null object if this inline image is the last one.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: getNextOrNullObject()
+    fullName: office.Word.InlinePicture.getNextOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNextOrNullObject(): Word.InlinePicture;'
+      return:
+        type:
+          - Word.InlinePicture
+        description: ''
+  - uid: office.Word.InlinePicture.getRange
+    summary: |-
+      Gets the picture, or the starting or ending point of the picture, as a range.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: getRange(rangeLocation)
+    fullName: office.Word.InlinePicture.getRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(rangeLocation?: string): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: rangeLocation
+          description: 'Optional. The range location can be ''Whole'', ''Start'' or ''End''.'
+          type:
+            - string
+  - uid: office.Word.InlinePicture.height
+    summary: |-
+      Gets or sets a number that describes the height of the inline image.
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: height
+    fullName: office.Word.InlinePicture.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height: number;'
+      return:
+        type:
+          - number
+  - uid: office.Word.InlinePicture.hyperlink
+    summary: |-
+      Gets or sets a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: hyperlink
+    fullName: office.Word.InlinePicture.hyperlink
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hyperlink: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word.InlinePicture.insertBreak
+    summary: >-
+      Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
+      'After'.
+
+
+      \[ [Api set: WordApi 1.2](http://bing.com) \]
+    name: 'insertBreak(breakType, insertLocation)'
+    fullName: office.Word.InlinePicture.insertBreak
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertBreak(breakType: string, insertLocation: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: breakType
+          description: Required. The break type to add.
+          type:
+            - string
+        - id: insertLocation
+          description: Required. The value can be 'Before' or 'After'.
+          type:
+            - string
+  - uid: office.Word.InlinePicture.insertContentControl
+    summary: |-
+      Wraps the inline picture with a rich text content control.
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: insertContentControl()
+    fullName: office.Word.InlinePicture.insertContentControl
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertContentControl(): Word.ContentControl;'
+      return:
+        type:
+          - Word.ContentControl
+        description: ''
+  - uid: office.Word.InlinePicture.insertFileFromBase64
+    summary: |-
+      Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
+
+      \[ [Api set: WordApi 1.2](http://bing.com) \]
+    name: 'insertFileFromBase64(base64File, insertLocation)'
+    fullName: office.Word.InlinePicture.insertFileFromBase64
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertFileFromBase64(base64File: string, insertLocation: string): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: base64File
+          description: Required. The base64 encoded content of a .docx file.
+          type:
+            - string
+        - id: insertLocation
+          description: Required. The value can be 'Before' or 'After'.
+          type:
+            - string
+  - uid: office.Word.InlinePicture.insertHtml
+    summary: |-
+      Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
+
+      \[ [Api set: WordApi 1.2](http://bing.com) \]
+    name: 'insertHtml(html, insertLocation)'
+    fullName: office.Word.InlinePicture.insertHtml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertHtml(html: string, insertLocation: string): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: html
+          description: Required. The HTML to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: Required. The value can be 'Before' or 'After'.
+          type:
+            - string
+  - uid: office.Word.InlinePicture.insertInlinePictureFromBase64
+    summary: >-
+      Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before' or
+      'After'.
+
+
+      \[ [Api set: WordApi 1.2](http://bing.com) \]
+    name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
+    fullName: office.Word.InlinePicture.insertInlinePictureFromBase64
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: string): Word.InlinePicture;'
+      return:
+        type:
+          - Word.InlinePicture
+        description: ''
+      parameters:
+        - id: base64EncodedImage
+          description: Required. The base64 encoded image to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Before'' or ''After''.'
+          type:
+            - string
+  - uid: office.Word.InlinePicture.insertOoxml
+    summary: |-
+      Inserts OOXML at the specified location. The insertLocation value can be 'Before' or 'After'.
+
+      \[ [Api set: WordApi 1.2](http://bing.com) \]
+    name: 'insertOoxml(ooxml, insertLocation)'
+    fullName: office.Word.InlinePicture.insertOoxml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertOoxml(ooxml: string, insertLocation: string): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: ooxml
+          description: Required. The OOXML to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: Required. The value can be 'Before' or 'After'.
+          type:
+            - string
+  - uid: office.Word.InlinePicture.insertParagraph
+    summary: |-
+      Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+
+      \[ [Api set: WordApi 1.2](http://bing.com) \]
+    name: 'insertParagraph(paragraphText, insertLocation)'
+    fullName: office.Word.InlinePicture.insertParagraph
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertParagraph(paragraphText: string, insertLocation: string): Word.Paragraph;'
+      return:
+        type:
+          - Word.Paragraph
+        description: ''
+      parameters:
+        - id: paragraphText
+          description: Required. The paragraph text to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: Required. The value can be 'Before' or 'After'.
+          type:
+            - string
+  - uid: office.Word.InlinePicture.insertText
+    summary: |-
+      Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
+
+      \[ [Api set: WordApi 1.2](http://bing.com) \]
+    name: 'insertText(text, insertLocation)'
+    fullName: office.Word.InlinePicture.insertText
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertText(text: string, insertLocation: string): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: text
+          description: Required. Text to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: Required. The value can be 'Before' or 'After'.
+          type:
+            - string
+  - uid: office.Word.InlinePicture.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Word.InlinePicture.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.InlinePicture;'
+      return:
+        type:
+          - Word.InlinePicture
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Word.InlinePicture.lockAspectRatio
+    summary: |-
+      Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: lockAspectRatio
+    fullName: office.Word.InlinePicture.lockAspectRatio
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lockAspectRatio: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Word.InlinePicture.paragraph
+    summary: |-
+      Gets the parent paragraph that contains the inline image. Read-only.
+
+      \[ [Api set: WordApi 1.2](http://bing.com) \]
+    name: paragraph
+    fullName: office.Word.InlinePicture.paragraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraph: Word.Paragraph;'
+      return:
+        type:
+          - Word.Paragraph
+  - uid: office.Word.InlinePicture.parentContentControl
+    summary: >-
+      Gets the content control that contains the inline image. Throws if there isn't a parent content control.
+      Read-only.
+
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: parentContentControl
+    fullName: office.Word.InlinePicture.parentContentControl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentContentControl: Word.ContentControl;'
+      return:
+        type:
+          - Word.ContentControl
+  - uid: office.Word.InlinePicture.parentContentControlOrNullObject
+    summary: >-
+      Gets the content control that contains the inline image. Returns a null object if there isn't a parent content
+      control. Read-only.
+
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: parentContentControlOrNullObject
+    fullName: office.Word.InlinePicture.parentContentControlOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentContentControlOrNullObject: Word.ContentControl;'
+      return:
+        type:
+          - Word.ContentControl
+  - uid: office.Word.InlinePicture.parentTable
+    summary: |-
+      Gets the table that contains the inline image. Throws if it is not contained in a table. Read-only.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: parentTable
+    fullName: office.Word.InlinePicture.parentTable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTable: Word.Table;'
+      return:
+        type:
+          - Word.Table
+  - uid: office.Word.InlinePicture.parentTableCell
+    summary: |-
+      Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. Read-only.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: parentTableCell
+    fullName: office.Word.InlinePicture.parentTableCell
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCell: Word.TableCell;'
+      return:
+        type:
+          - Word.TableCell
+  - uid: office.Word.InlinePicture.parentTableCellOrNullObject
+    summary: >-
+      Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
+      Read-only.
+
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: parentTableCellOrNullObject
+    fullName: office.Word.InlinePicture.parentTableCellOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCellOrNullObject: Word.TableCell;'
+      return:
+        type:
+          - Word.TableCell
+  - uid: office.Word.InlinePicture.parentTableOrNullObject
+    summary: |-
+      Gets the table that contains the inline image. Returns a null object if it is not contained in a table. Read-only.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: parentTableOrNullObject
+    fullName: office.Word.InlinePicture.parentTableOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableOrNullObject: Word.Table;'
+      return:
+        type:
+          - Word.Table
+  - uid: office.Word.InlinePicture.select
+    summary: |-
+      Selects the inline picture. This causes Word to scroll to the selection.
+
+      \[ [Api set: WordApi 1.2](http://bing.com) \]
+    name: select(selectionMode)
+    fullName: office.Word.InlinePicture.select
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'select(selectionMode?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: selectionMode
+          description: 'Optional. The selection mode can be ''Select'', ''Start'' or ''End''. ''Select'' is the default.'
+          type:
+            - string
+  - uid: office.Word.InlinePicture.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Word.InlinePicture.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.InlinePictureUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.InlinePictureUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Word.InlinePicture.toJSON
+    name: toJSON()
+    fullName: office.Word.InlinePicture.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"altTextDescription\": string;\r\n            \"altTextTitle\": string;\r\n            \"height\": number;\r\n            \"hyperlink\": string;\r\n            \"lockAspectRatio\": boolean;\r\n            \"width\": number;\r\n        }"
+        description: ''
+  - uid: office.Word.InlinePicture.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: office.Word.InlinePicture.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.InlinePicture;'
+      return:
+        type:
+          - Word.InlinePicture
+        description: ''
+  - uid: office.Word.InlinePicture.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: office.Word.InlinePicture.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.InlinePicture;'
+      return:
+        type:
+          - Word.InlinePicture
+        description: ''
+  - uid: office.Word.InlinePicture.width
+    summary: |-
+      Gets or sets a number that describes the width of the inline image.
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: width
+    fullName: office.Word.InlinePicture.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number

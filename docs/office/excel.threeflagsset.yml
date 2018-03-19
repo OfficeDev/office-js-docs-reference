@@ -1,0 +1,64 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.ThreeFlagsSet
+    name: Excel.ThreeFlagsSet
+    fullName: office.Excel.ThreeFlagsSet
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel.ThreeFlagsSet.__index
+      - office.Excel.ThreeFlagsSet.greenFlag
+      - office.Excel.ThreeFlagsSet.redFlag
+      - office.Excel.ThreeFlagsSet.yellowFlag
+  - uid: office.Excel.ThreeFlagsSet.__index
+    name: __index(index)
+    fullName: office.Excel.ThreeFlagsSet.__index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel.ThreeFlagsSet.greenFlag
+    name: greenFlag
+    fullName: office.Excel.ThreeFlagsSet.greenFlag
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenFlag: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel.ThreeFlagsSet.redFlag
+    name: redFlag
+    fullName: office.Excel.ThreeFlagsSet.redFlag
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redFlag: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel.ThreeFlagsSet.yellowFlag
+    name: yellowFlag
+    fullName: office.Excel.ThreeFlagsSet.yellowFlag
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowFlag: Icon;'
+      return:
+        type:
+          - Icon

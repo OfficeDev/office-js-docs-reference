@@ -1,0 +1,205 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.ItemRead
+    name: Office.ItemRead
+    fullName: office.Office.ItemRead
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Item
+    package: office
+    children:
+      - office.Office.ItemRead.attachments
+      - office.Office.ItemRead.displayReplyAllForm
+      - office.Office.ItemRead.displayReplyForm
+      - office.Office.ItemRead.getEntities
+      - office.Office.ItemRead.getEntitiesByType
+      - office.Office.ItemRead.getFilteredEntitiesByName
+      - office.Office.ItemRead.getRegExMatches
+      - office.Office.ItemRead.getRegExMatchesByName
+      - office.Office.ItemRead.itemClass
+      - office.Office.ItemRead.itemId
+      - office.Office.ItemRead.normalizedSubject
+      - office.Office.ItemRead.subject
+  - uid: office.Office.ItemRead.attachments
+    name: attachments
+    fullName: office.Office.ItemRead.attachments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attachments: Array<AttachmentDetails>;'
+      return:
+        type:
+          - Array<AttachmentDetails>
+  - uid: office.Office.ItemRead.displayReplyAllForm
+    summary: Displays a reply form that includes the sender and all the recipients of the selected message
+    name: displayReplyAllForm(formData)
+    fullName: office.Office.ItemRead.displayReplyAllForm
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'displayReplyAllForm(formData: string | ReplyFormData): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formData
+          description: >-
+            A string that contains text and HTML and that represents the body of the reply form. The string is limited
+            to 32 KB OR An object that contains body or attachment data and a callback function
+          type:
+            - string | ReplyFormData
+  - uid: office.Office.ItemRead.displayReplyForm
+    summary: Displays a reply form that includes only the sender of the selected message
+    name: displayReplyForm(formData)
+    fullName: office.Office.ItemRead.displayReplyForm
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'displayReplyForm(formData: string | ReplyFormData): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formData
+          description: >-
+            A string that contains text and HTML and that represents the body of the reply form. The string is limited
+            to 32 KB OR An object that contains body or attachment data and a callback function
+          type:
+            - string | ReplyFormData
+  - uid: office.Office.ItemRead.getEntities
+    summary: Gets the entities found in the selected item
+    name: getEntities()
+    fullName: office.Office.ItemRead.getEntities
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEntities(): Entities;'
+      return:
+        type:
+          - Entities
+        description: ''
+  - uid: office.Office.ItemRead.getEntitiesByType
+    summary: Gets an array of entities of the specified entity type found in an message
+    name: getEntitiesByType(entityType)
+    fullName: office.Office.ItemRead.getEntitiesByType
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getEntitiesByType(entityType: Office.MailboxEnums.EntityType): Array<(string | Contact | MeetingSuggestion |
+        PhoneNumber | TaskSuggestion)>;
+      return:
+        type:
+          - Array<(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)>
+        description: ''
+      parameters:
+        - id: entityType
+          description: One of the EntityType enumeration values
+          type:
+            - Office.MailboxEnums.EntityType
+  - uid: office.Office.ItemRead.getFilteredEntitiesByName
+    summary: Returns well-known entities that pass the named filter defined in the manifest XML file
+    name: getFilteredEntitiesByName(name)
+    fullName: office.Office.ItemRead.getFilteredEntitiesByName
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getFilteredEntitiesByName(name: string): Array<(string | Contact | MeetingSuggestion | PhoneNumber |
+        TaskSuggestion)>;
+      return:
+        type:
+          - Array<(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)>
+        description: ''
+      parameters:
+        - id: name
+          description: The name of the ItemHasKnownEntity rule element that defines the filter to match
+          type:
+            - string
+  - uid: office.Office.ItemRead.getRegExMatches
+    summary: >-
+      Returns string values in the currently selected message object that match the regular expressions defined in the
+      manifest XML file
+    name: getRegExMatches()
+    fullName: office.Office.ItemRead.getRegExMatches
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRegExMatches(): any;'
+      return:
+        type:
+          - any
+        description: ''
+  - uid: office.Office.ItemRead.getRegExMatchesByName
+    summary: Returns string values that match the named regular expression defined in the manifest XML file
+    name: getRegExMatchesByName(name)
+    fullName: office.Office.ItemRead.getRegExMatchesByName
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRegExMatchesByName(name: string): Array<string>;'
+      return:
+        type:
+          - Array<string>
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string
+  - uid: office.Office.ItemRead.itemClass
+    name: itemClass
+    fullName: office.Office.ItemRead.itemClass
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemClass: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.ItemRead.itemId
+    name: itemId
+    fullName: office.Office.ItemRead.itemId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemId: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.ItemRead.normalizedSubject
+    name: normalizedSubject
+    fullName: office.Office.ItemRead.normalizedSubject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'normalizedSubject: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.ItemRead.subject
+    name: subject
+    fullName: office.Office.ItemRead.subject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subject: string;'
+      return:
+        type:
+          - string

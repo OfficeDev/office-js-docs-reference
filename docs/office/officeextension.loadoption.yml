@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeExtension.LoadOption
+    name: OfficeExtension.LoadOption
+    fullName: office.OfficeExtension.LoadOption
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.OfficeExtension.LoadOption.expand
+      - office.OfficeExtension.LoadOption.select
+      - office.OfficeExtension.LoadOption.skip
+      - office.OfficeExtension.LoadOption.top
+  - uid: office.OfficeExtension.LoadOption.expand
+    name: expand
+    fullName: office.OfficeExtension.LoadOption.expand
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'expand?: string | string[];'
+      return:
+        type:
+          - 'string | string[]'
+  - uid: office.OfficeExtension.LoadOption.select
+    name: select
+    fullName: office.OfficeExtension.LoadOption.select
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'select?: string | string[];'
+      return:
+        type:
+          - 'string | string[]'
+  - uid: office.OfficeExtension.LoadOption.skip
+    name: skip
+    fullName: office.OfficeExtension.LoadOption.skip
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'skip?: number;'
+      return:
+        type:
+          - number
+  - uid: office.OfficeExtension.LoadOption.top
+    name: top
+    fullName: office.OfficeExtension.LoadOption.top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number

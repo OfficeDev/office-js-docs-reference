@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.ChartAxisTitleFormat
+    summary: |-
+      Represents the chart axis title formatting.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.ChartAxisTitleFormat
+    fullName: office.Excel.ChartAxisTitleFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel.ChartAxisTitleFormat.font
+      - office.Excel.ChartAxisTitleFormat.load
+      - office.Excel.ChartAxisTitleFormat.set
+      - office.Excel.ChartAxisTitleFormat.toJSON
+  - uid: office.Excel.ChartAxisTitleFormat.font
+    summary: |-
+      Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: font
+    fullName: office.Excel.ChartAxisTitleFormat.font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Excel.ChartFont;'
+      return:
+        type:
+          - Excel.ChartFont
+  - uid: office.Excel.ChartAxisTitleFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel.ChartAxisTitleFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartAxisTitleFormat;'
+      return:
+        type:
+          - Excel.ChartAxisTitleFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel.ChartAxisTitleFormat.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Excel.ChartAxisTitleFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ChartAxisTitleFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartAxisTitleFormatUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Excel.ChartAxisTitleFormat.toJSON
+    name: toJSON()
+    fullName: office.Excel.ChartAxisTitleFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"font\": ChartFont;\r\n        }"
+        description: ''

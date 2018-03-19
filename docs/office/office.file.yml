@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.File
+    name: Office.File
+    fullName: office.Office.File
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.File.closeAsync
+      - office.Office.File.getSliceAsync
+      - office.Office.File.size
+      - office.Office.File.sliceCount
+  - uid: office.Office.File.closeAsync
+    summary: Closes the File.
+    name: closeAsync(callback)
+    fullName: office.Office.File.closeAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'closeAsync(callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.File.getSliceAsync
+    summary: Gets the specified slice.
+    name: 'getSliceAsync(sliceIndex, callback)'
+    fullName: office.Office.File.getSliceAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSliceAsync(sliceIndex: number, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sliceIndex
+          description: The index of the slice to be retrieved
+          type:
+            - number
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.File.size
+    name: size
+    fullName: office.Office.File.size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.File.sliceCount
+    name: sliceCount
+    fullName: office.Office.File.sliceCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sliceCount: number;'
+      return:
+        type:
+          - number

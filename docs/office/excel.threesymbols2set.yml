@@ -1,0 +1,64 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.ThreeSymbols2Set
+    name: Excel.ThreeSymbols2Set
+    fullName: office.Excel.ThreeSymbols2Set
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel.ThreeSymbols2Set.__index
+      - office.Excel.ThreeSymbols2Set.greenCheck
+      - office.Excel.ThreeSymbols2Set.redCross
+      - office.Excel.ThreeSymbols2Set.yellowExclamation
+  - uid: office.Excel.ThreeSymbols2Set.__index
+    name: __index(index)
+    fullName: office.Excel.ThreeSymbols2Set.__index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel.ThreeSymbols2Set.greenCheck
+    name: greenCheck
+    fullName: office.Excel.ThreeSymbols2Set.greenCheck
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenCheck: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel.ThreeSymbols2Set.redCross
+    name: redCross
+    fullName: office.Excel.ThreeSymbols2Set.redCross
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redCross: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel.ThreeSymbols2Set.yellowExclamation
+    name: yellowExclamation
+    fullName: office.Excel.ThreeSymbols2Set.yellowExclamation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowExclamation: Icon;'
+      return:
+        type:
+          - Icon

@@ -1,0 +1,31 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.Table
+    name: Office.Table
+    fullName: office.Office.Table
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.Table.All
+      - office.Office.Table.Data
+      - office.Office.Table.Headers
+  - uid: office.Office.Table.All
+    name: All
+    fullName: office.Office.Table.All
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.Table.Data
+    name: Data
+    fullName: office.Office.Table.Data
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.Table.Headers
+    name: Headers
+    fullName: office.Office.Table.Headers
+    langs:
+      - typeScript
+    type: field

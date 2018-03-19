@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.FourRedToBlackSet
+    name: Excel.FourRedToBlackSet
+    fullName: office.Excel.FourRedToBlackSet
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel.FourRedToBlackSet.__index
+      - office.Excel.FourRedToBlackSet.blackCircle
+      - office.Excel.FourRedToBlackSet.grayCircle
+      - office.Excel.FourRedToBlackSet.pinkCircle
+      - office.Excel.FourRedToBlackSet.redCircle
+  - uid: office.Excel.FourRedToBlackSet.__index
+    name: __index(index)
+    fullName: office.Excel.FourRedToBlackSet.__index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel.FourRedToBlackSet.blackCircle
+    name: blackCircle
+    fullName: office.Excel.FourRedToBlackSet.blackCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'blackCircle: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel.FourRedToBlackSet.grayCircle
+    name: grayCircle
+    fullName: office.Excel.FourRedToBlackSet.grayCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'grayCircle: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel.FourRedToBlackSet.pinkCircle
+    name: pinkCircle
+    fullName: office.Excel.FourRedToBlackSet.pinkCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pinkCircle: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel.FourRedToBlackSet.redCircle
+    name: redCircle
+    fullName: office.Excel.FourRedToBlackSet.redCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redCircle: Icon;'
+      return:
+        type:
+          - Icon

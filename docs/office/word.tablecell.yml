@@ -1,0 +1,488 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Word.TableCell
+    summary: |-
+      Represents a table cell in a Word document.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: Word.TableCell
+    fullName: office.Word.TableCell
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Word.TableCell.body
+      - office.Word.TableCell.cellIndex
+      - office.Word.TableCell.columnWidth
+      - office.Word.TableCell.deleteColumn
+      - office.Word.TableCell.deleteRow
+      - office.Word.TableCell.getBorder
+      - office.Word.TableCell.getCellPadding
+      - office.Word.TableCell.getNext
+      - office.Word.TableCell.getNextOrNullObject
+      - office.Word.TableCell.horizontalAlignment
+      - office.Word.TableCell.insertColumns
+      - office.Word.TableCell.insertRows
+      - office.Word.TableCell.load
+      - office.Word.TableCell.parentRow
+      - office.Word.TableCell.parentTable
+      - office.Word.TableCell.rowIndex
+      - office.Word.TableCell.set
+      - office.Word.TableCell.setCellPadding
+      - office.Word.TableCell.shadingColor
+      - office.Word.TableCell.toJSON
+      - office.Word.TableCell.track
+      - office.Word.TableCell.untrack
+      - office.Word.TableCell.value
+      - office.Word.TableCell.verticalAlignment
+      - office.Word.TableCell.width
+  - uid: office.Word.TableCell.body
+    summary: |-
+      Gets the body object of the cell. Read-only.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: body
+    fullName: office.Word.TableCell.body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body: Word.Body;'
+      return:
+        type:
+          - Word.Body
+  - uid: office.Word.TableCell.cellIndex
+    summary: |-
+      Gets the index of the cell in its row. Read-only.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: cellIndex
+    fullName: office.Word.TableCell.cellIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellIndex: number;'
+      return:
+        type:
+          - number
+  - uid: office.Word.TableCell.columnWidth
+    summary: |-
+      Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: columnWidth
+    fullName: office.Word.TableCell.columnWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnWidth: number;'
+      return:
+        type:
+          - number
+  - uid: office.Word.TableCell.deleteColumn
+    summary: |-
+      Deletes the column containing this cell. This is applicable to uniform tables.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: deleteColumn()
+    fullName: office.Word.TableCell.deleteColumn
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteColumn(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Word.TableCell.deleteRow
+    summary: |-
+      Deletes the row containing this cell.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: deleteRow()
+    fullName: office.Word.TableCell.deleteRow
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteRow(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Word.TableCell.getBorder
+    summary: |-
+      Gets the border style for the specified border.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: getBorder(borderLocation)
+    fullName: office.Word.TableCell.getBorder
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBorder(borderLocation: string): Word.TableBorder;'
+      return:
+        type:
+          - Word.TableBorder
+        description: ''
+      parameters:
+        - id: borderLocation
+          description: Required. The border location.
+          type:
+            - string
+  - uid: office.Word.TableCell.getCellPadding
+    summary: |-
+      Gets cell padding in points.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: getCellPadding(cellPaddingLocation)
+    fullName: office.Word.TableCell.getCellPadding
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCellPadding(cellPaddingLocation: string): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+      parameters:
+        - id: cellPaddingLocation
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'' or ''Right''.'
+          type:
+            - string
+  - uid: office.Word.TableCell.getNext
+    summary: |-
+      Gets the next cell. Throws if this cell is the last one.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: getNext()
+    fullName: office.Word.TableCell.getNext
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNext(): Word.TableCell;'
+      return:
+        type:
+          - Word.TableCell
+        description: ''
+  - uid: office.Word.TableCell.getNextOrNullObject
+    summary: |-
+      Gets the next cell. Returns a null object if this cell is the last one.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: getNextOrNullObject()
+    fullName: office.Word.TableCell.getNextOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNextOrNullObject(): Word.TableCell;'
+      return:
+        type:
+          - Word.TableCell
+        description: ''
+  - uid: office.Word.TableCell.horizontalAlignment
+    summary: |-
+      Gets and sets the horizontal alignment of the cell. The value can be 'left', 'centered', 'right', or 'justified'.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: horizontalAlignment
+    fullName: office.Word.TableCell.horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word.TableCell.insertColumns
+    summary: >-
+      Adds columns to the left or right of the cell, using the cell's column as a template. This is applicable to
+      uniform tables. The string values, if specified, are set in the newly inserted rows.
+
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: 'insertColumns(insertLocation, columnCount, values)'
+    fullName: office.Word.TableCell.insertColumns
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertColumns(insertLocation: string, columnCount: number, values?: Array<Array<string>>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: insertLocation
+          description: Required. It can be 'Before' or 'After'.
+          type:
+            - string
+        - id: columnCount
+          description: Required. Number of columns to add
+          type:
+            - number
+        - id: values
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - Array<Array<string>>
+  - uid: office.Word.TableCell.insertRows
+    summary: >-
+      Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set
+      in the newly inserted rows.
+
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: 'insertRows(insertLocation, rowCount, values)'
+    fullName: office.Word.TableCell.insertRows
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertRows(insertLocation: string, rowCount: number, values?: Array<Array<string>>): Word.TableRowCollection;'
+      return:
+        type:
+          - Word.TableRowCollection
+        description: ''
+      parameters:
+        - id: insertLocation
+          description: Required. It can be 'Before' or 'After'.
+          type:
+            - string
+        - id: rowCount
+          description: Required. Number of rows to add.
+          type:
+            - number
+        - id: values
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - Array<Array<string>>
+  - uid: office.Word.TableCell.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Word.TableCell.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.TableCell;'
+      return:
+        type:
+          - Word.TableCell
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Word.TableCell.parentRow
+    summary: |-
+      Gets the parent row of the cell. Read-only.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: parentRow
+    fullName: office.Word.TableCell.parentRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentRow: Word.TableRow;'
+      return:
+        type:
+          - Word.TableRow
+  - uid: office.Word.TableCell.parentTable
+    summary: |-
+      Gets the parent table of the cell. Read-only.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: parentTable
+    fullName: office.Word.TableCell.parentTable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTable: Word.Table;'
+      return:
+        type:
+          - Word.Table
+  - uid: office.Word.TableCell.rowIndex
+    summary: |-
+      Gets the index of the cell's row in the table. Read-only.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: rowIndex
+    fullName: office.Word.TableCell.rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowIndex: number;'
+      return:
+        type:
+          - number
+  - uid: office.Word.TableCell.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Word.TableCell.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.TableCellUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.TableCellUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Word.TableCell.setCellPadding
+    summary: |-
+      Sets cell padding in points.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: 'setCellPadding(cellPaddingLocation, cellPadding)'
+    fullName: office.Word.TableCell.setCellPadding
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCellPadding(cellPaddingLocation: string, cellPadding: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cellPaddingLocation
+          description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'' or ''Right''.'
+          type:
+            - string
+        - id: cellPadding
+          description: Required. The cell padding.
+          type:
+            - number
+  - uid: office.Word.TableCell.shadingColor
+    summary: |-
+      Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: shadingColor
+    fullName: office.Word.TableCell.shadingColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shadingColor: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word.TableCell.toJSON
+    name: toJSON()
+    fullName: office.Word.TableCell.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"body\": Body;\r\n            \"cellIndex\": number;\r\n            \"columnWidth\": number;\r\n            \"horizontalAlignment\": string;\r\n            \"rowIndex\": number;\r\n            \"shadingColor\": string;\r\n            \"value\": string;\r\n            \"verticalAlignment\": string;\r\n            \"width\": number;\r\n        }"
+        description: ''
+  - uid: office.Word.TableCell.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: office.Word.TableCell.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.TableCell;'
+      return:
+        type:
+          - Word.TableCell
+        description: ''
+  - uid: office.Word.TableCell.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: office.Word.TableCell.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.TableCell;'
+      return:
+        type:
+          - Word.TableCell
+        description: ''
+  - uid: office.Word.TableCell.value
+    summary: |-
+      Gets and sets the text of the cell.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: value
+    fullName: office.Word.TableCell.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word.TableCell.verticalAlignment
+    summary: |-
+      Gets and sets the vertical alignment of the cell. The value can be 'top', 'center' or 'bottom'.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: verticalAlignment
+    fullName: office.Word.TableCell.verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word.TableCell.width
+    summary: |-
+      Gets the width of the cell in points. Read-only.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: width
+    fullName: office.Word.TableCell.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number

@@ -1,0 +1,172 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.Binding
+    name: Office.Binding
+    fullName: office.Office.Binding
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.Binding.addHandlerAsync
+      - office.Office.Binding.document
+      - office.Office.Binding.getDataAsync
+      - office.Office.Binding.id
+      - office.Office.Binding.removeHandlerAsync
+      - office.Office.Binding.setDataAsync
+      - office.Office.Binding.type
+  - uid: office.Office.Binding.addHandlerAsync
+    summary: Adds an event handler to the object using the specified event type.
+    name: 'addHandlerAsync(eventType, handler, options, callback)'
+    fullName: office.Office.Binding.addHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addHandlerAsync(eventType: EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: The event type. For binding it can be 'bindingDataChanged' and 'bindingSelectionChanged'
+          type:
+            - EventType
+        - id: handler
+          description: The name of the handler
+          type:
+            - any
+        - id: options
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.Binding.document
+    name: document
+    fullName: office.Office.Binding.document
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'document: Document;'
+      return:
+        type:
+          - Document
+  - uid: office.Office.Binding.getDataAsync
+    summary: Returns the current selection.
+    name: 'getDataAsync(options, callback)'
+    fullName: office.Office.Binding.getDataAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDataAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            Syntax example: {coercionType: 'matrix,'valueFormat: 'formatted', filterType:'all'} coercionType: The
+            expected shape of the selection. If not specified returns the bindingType shape. Use Office.CoercionType or
+            text value. valueFormat: Get data with or without format. Use Office.ValueFormat or text value. startRow:
+            Used in partial get for table/matrix. Indicates the start row. startColumn: Used in partial get for
+            table/matrix. Indicates the start column. rowCount: Used in partial get for table/matrix. Indicates the
+            number of rows from the start row. columnCount: Used in partial get for table/matrix. Indicates the number
+            of columns from the start column. filterType: Get the visible or all the data. Useful when filtering data.
+            Use Office.FilterType or text value. asyncContext: Object keeping state for the callback
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.Binding.id
+    summary: Id of the Binding
+    name: id
+    fullName: office.Office.Binding.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.Binding.removeHandlerAsync
+    summary: Removes an event handler from the object using the specified event type.
+    name: 'removeHandlerAsync(eventType, options, callback)'
+    fullName: office.Office.Binding.removeHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeHandlerAsync(eventType: EventType, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: The event type. For binding can be 'bindingDataChanged' and 'bindingSelectionChanged'
+          type:
+            - EventType
+        - id: options
+          description: >-
+            Syntax example: {handler:eventHandler} handler: Indicates a specific handler to be removed, if not specified
+            all handlers are removed asyncContext: Object keeping state for the callback
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.Binding.setDataAsync
+    summary: Writes the specified data into the current selection.
+    name: 'setDataAsync(data, options, callback)'
+    fullName: office.Office.Binding.setDataAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDataAsync(data: TableData | any, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The data to be set. Either a string or value, 2d array or TableData object'
+          type:
+            - TableData | any
+        - id: options
+          description: >-
+            Syntax example: {coercionType:Office.CoercionType.Matrix} or {coercionType: 'matrix'} coercionType:
+            Explicitly sets the shape of the data object. Use Office.CoercionType or text value. If not supplied is
+            inferred from the data type. startRow: Used in partial set for table/matrix. Indicates the start row.
+            startColumn: Used in partial set for table/matrix. Indicates the start column. asyncContext: Object keeping
+            state for the callback
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.Binding.type
+    name: type
+    fullName: office.Office.Binding.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: BindingType;'
+      return:
+        type:
+          - BindingType

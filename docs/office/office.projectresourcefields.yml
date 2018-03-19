@@ -1,0 +1,1410 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.ProjectResourceFields
+    name: Office.ProjectResourceFields
+    fullName: office.Office.ProjectResourceFields
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.ProjectResourceFields.Accrual
+      - office.Office.ProjectResourceFields.ActualCost
+      - office.Office.ProjectResourceFields.ActualOvertimeCost
+      - office.Office.ProjectResourceFields.ActualOvertimeWork
+      - office.Office.ProjectResourceFields.ActualOvertimeWorkProtected
+      - office.Office.ProjectResourceFields.ActualWork
+      - office.Office.ProjectResourceFields.ActualWorkProtected
+      - office.Office.ProjectResourceFields.BaseCalendar
+      - office.Office.ProjectResourceFields.Baseline10BudgetCost
+      - office.Office.ProjectResourceFields.Baseline10BudgetWork
+      - office.Office.ProjectResourceFields.Baseline10Cost
+      - office.Office.ProjectResourceFields.Baseline10Work
+      - office.Office.ProjectResourceFields.Baseline1BudgetCost
+      - office.Office.ProjectResourceFields.Baseline1BudgetWork
+      - office.Office.ProjectResourceFields.Baseline1Cost
+      - office.Office.ProjectResourceFields.Baseline1Work
+      - office.Office.ProjectResourceFields.Baseline2BudgetCost
+      - office.Office.ProjectResourceFields.Baseline2BudgetWork
+      - office.Office.ProjectResourceFields.Baseline2Cost
+      - office.Office.ProjectResourceFields.Baseline2Work
+      - office.Office.ProjectResourceFields.Baseline3BudgetCost
+      - office.Office.ProjectResourceFields.Baseline3BudgetWork
+      - office.Office.ProjectResourceFields.Baseline3Cost
+      - office.Office.ProjectResourceFields.Baseline3Work
+      - office.Office.ProjectResourceFields.Baseline4BudgetCost
+      - office.Office.ProjectResourceFields.Baseline4BudgetWork
+      - office.Office.ProjectResourceFields.Baseline4Cost
+      - office.Office.ProjectResourceFields.Baseline4Work
+      - office.Office.ProjectResourceFields.Baseline5BudgetCost
+      - office.Office.ProjectResourceFields.Baseline5BudgetWork
+      - office.Office.ProjectResourceFields.Baseline5Cost
+      - office.Office.ProjectResourceFields.Baseline5Work
+      - office.Office.ProjectResourceFields.Baseline6BudgetCost
+      - office.Office.ProjectResourceFields.Baseline6BudgetWork
+      - office.Office.ProjectResourceFields.Baseline6Cost
+      - office.Office.ProjectResourceFields.Baseline6Work
+      - office.Office.ProjectResourceFields.Baseline7BudgetCost
+      - office.Office.ProjectResourceFields.Baseline7BudgetWork
+      - office.Office.ProjectResourceFields.Baseline7Cost
+      - office.Office.ProjectResourceFields.Baseline7Work
+      - office.Office.ProjectResourceFields.Baseline8BudgetCost
+      - office.Office.ProjectResourceFields.Baseline8BudgetWork
+      - office.Office.ProjectResourceFields.Baseline8Cost
+      - office.Office.ProjectResourceFields.Baseline8Work
+      - office.Office.ProjectResourceFields.Baseline9BudgetCost
+      - office.Office.ProjectResourceFields.Baseline9BudgetWork
+      - office.Office.ProjectResourceFields.Baseline9Cost
+      - office.Office.ProjectResourceFields.Baseline9Work
+      - office.Office.ProjectResourceFields.BaselineBudgetCost
+      - office.Office.ProjectResourceFields.BaselineBudgetWork
+      - office.Office.ProjectResourceFields.BaselineCost
+      - office.Office.ProjectResourceFields.BaselineWork
+      - office.Office.ProjectResourceFields.BudgetCost
+      - office.Office.ProjectResourceFields.BudgetWork
+      - office.Office.ProjectResourceFields.Code
+      - office.Office.ProjectResourceFields.Cost
+      - office.Office.ProjectResourceFields.Cost1
+      - office.Office.ProjectResourceFields.Cost10
+      - office.Office.ProjectResourceFields.Cost2
+      - office.Office.ProjectResourceFields.Cost3
+      - office.Office.ProjectResourceFields.Cost4
+      - office.Office.ProjectResourceFields.Cost5
+      - office.Office.ProjectResourceFields.Cost6
+      - office.Office.ProjectResourceFields.Cost7
+      - office.Office.ProjectResourceFields.Cost8
+      - office.Office.ProjectResourceFields.Cost9
+      - office.Office.ProjectResourceFields.CostPerUse
+      - office.Office.ProjectResourceFields.Date1
+      - office.Office.ProjectResourceFields.Date10
+      - office.Office.ProjectResourceFields.Date2
+      - office.Office.ProjectResourceFields.Date3
+      - office.Office.ProjectResourceFields.Date4
+      - office.Office.ProjectResourceFields.Date5
+      - office.Office.ProjectResourceFields.Date6
+      - office.Office.ProjectResourceFields.Date7
+      - office.Office.ProjectResourceFields.Date8
+      - office.Office.ProjectResourceFields.Date9
+      - office.Office.ProjectResourceFields.Duration1
+      - office.Office.ProjectResourceFields.Duration10
+      - office.Office.ProjectResourceFields.Duration2
+      - office.Office.ProjectResourceFields.Duration3
+      - office.Office.ProjectResourceFields.Duration4
+      - office.Office.ProjectResourceFields.Duration5
+      - office.Office.ProjectResourceFields.Duration6
+      - office.Office.ProjectResourceFields.Duration7
+      - office.Office.ProjectResourceFields.Duration8
+      - office.Office.ProjectResourceFields.Duration9
+      - office.Office.ProjectResourceFields.Email
+      - office.Office.ProjectResourceFields.End
+      - office.Office.ProjectResourceFields.Finish1
+      - office.Office.ProjectResourceFields.Finish10
+      - office.Office.ProjectResourceFields.Finish2
+      - office.Office.ProjectResourceFields.Finish3
+      - office.Office.ProjectResourceFields.Finish4
+      - office.Office.ProjectResourceFields.Finish5
+      - office.Office.ProjectResourceFields.Finish6
+      - office.Office.ProjectResourceFields.Finish7
+      - office.Office.ProjectResourceFields.Finish8
+      - office.Office.ProjectResourceFields.Finish9
+      - office.Office.ProjectResourceFields.Flag1
+      - office.Office.ProjectResourceFields.Flag10
+      - office.Office.ProjectResourceFields.Flag11
+      - office.Office.ProjectResourceFields.Flag12
+      - office.Office.ProjectResourceFields.Flag13
+      - office.Office.ProjectResourceFields.Flag14
+      - office.Office.ProjectResourceFields.Flag15
+      - office.Office.ProjectResourceFields.Flag16
+      - office.Office.ProjectResourceFields.Flag17
+      - office.Office.ProjectResourceFields.Flag18
+      - office.Office.ProjectResourceFields.Flag19
+      - office.Office.ProjectResourceFields.Flag2
+      - office.Office.ProjectResourceFields.Flag20
+      - office.Office.ProjectResourceFields.Flag3
+      - office.Office.ProjectResourceFields.Flag4
+      - office.Office.ProjectResourceFields.Flag5
+      - office.Office.ProjectResourceFields.Flag6
+      - office.Office.ProjectResourceFields.Flag7
+      - office.Office.ProjectResourceFields.Flag8
+      - office.Office.ProjectResourceFields.Flag9
+      - office.Office.ProjectResourceFields.Generic
+      - office.Office.ProjectResourceFields.Group
+      - office.Office.ProjectResourceFields.Name
+      - office.Office.ProjectResourceFields.Notes
+      - office.Office.ProjectResourceFields.Number1
+      - office.Office.ProjectResourceFields.Number10
+      - office.Office.ProjectResourceFields.Number11
+      - office.Office.ProjectResourceFields.Number12
+      - office.Office.ProjectResourceFields.Number13
+      - office.Office.ProjectResourceFields.Number14
+      - office.Office.ProjectResourceFields.Number15
+      - office.Office.ProjectResourceFields.Number16
+      - office.Office.ProjectResourceFields.Number17
+      - office.Office.ProjectResourceFields.Number18
+      - office.Office.ProjectResourceFields.Number19
+      - office.Office.ProjectResourceFields.Number2
+      - office.Office.ProjectResourceFields.Number20
+      - office.Office.ProjectResourceFields.Number3
+      - office.Office.ProjectResourceFields.Number4
+      - office.Office.ProjectResourceFields.Number5
+      - office.Office.ProjectResourceFields.Number6
+      - office.Office.ProjectResourceFields.Number7
+      - office.Office.ProjectResourceFields.Number8
+      - office.Office.ProjectResourceFields.Number9
+      - office.Office.ProjectResourceFields.OverAllocated
+      - office.Office.ProjectResourceFields.OvertimeCost
+      - office.Office.ProjectResourceFields.OvertimeRate
+      - office.Office.ProjectResourceFields.OvertimeWork
+      - office.Office.ProjectResourceFields.PercentWorkComplete
+      - office.Office.ProjectResourceFields.RegularWork
+      - office.Office.ProjectResourceFields.RemainingCost
+      - office.Office.ProjectResourceFields.RemainingOvertimeCost
+      - office.Office.ProjectResourceFields.RemainingOvertimeWork
+      - office.Office.ProjectResourceFields.RemainingWork
+      - office.Office.ProjectResourceFields.ResourceCalendarGUID
+      - office.Office.ProjectResourceFields.ResourceCreationDate
+      - office.Office.ProjectResourceFields.ResourceGUID
+      - office.Office.ProjectResourceFields.StandardRate
+      - office.Office.ProjectResourceFields.Start
+      - office.Office.ProjectResourceFields.Start1
+      - office.Office.ProjectResourceFields.Start10
+      - office.Office.ProjectResourceFields.Start2
+      - office.Office.ProjectResourceFields.Start3
+      - office.Office.ProjectResourceFields.Start4
+      - office.Office.ProjectResourceFields.Start5
+      - office.Office.ProjectResourceFields.Start6
+      - office.Office.ProjectResourceFields.Start7
+      - office.Office.ProjectResourceFields.Start8
+      - office.Office.ProjectResourceFields.Start9
+      - office.Office.ProjectResourceFields.Text1
+      - office.Office.ProjectResourceFields.Text10
+      - office.Office.ProjectResourceFields.Text11
+      - office.Office.ProjectResourceFields.Text12
+      - office.Office.ProjectResourceFields.Text13
+      - office.Office.ProjectResourceFields.Text14
+      - office.Office.ProjectResourceFields.Text15
+      - office.Office.ProjectResourceFields.Text16
+      - office.Office.ProjectResourceFields.Text17
+      - office.Office.ProjectResourceFields.Text18
+      - office.Office.ProjectResourceFields.Text19
+      - office.Office.ProjectResourceFields.Text2
+      - office.Office.ProjectResourceFields.Text20
+      - office.Office.ProjectResourceFields.Text21
+      - office.Office.ProjectResourceFields.Text22
+      - office.Office.ProjectResourceFields.Text23
+      - office.Office.ProjectResourceFields.Text24
+      - office.Office.ProjectResourceFields.Text25
+      - office.Office.ProjectResourceFields.Text26
+      - office.Office.ProjectResourceFields.Text27
+      - office.Office.ProjectResourceFields.Text28
+      - office.Office.ProjectResourceFields.Text29
+      - office.Office.ProjectResourceFields.Text3
+      - office.Office.ProjectResourceFields.Text30
+      - office.Office.ProjectResourceFields.Text4
+      - office.Office.ProjectResourceFields.Text5
+      - office.Office.ProjectResourceFields.Text6
+      - office.Office.ProjectResourceFields.Text7
+      - office.Office.ProjectResourceFields.Text8
+      - office.Office.ProjectResourceFields.Text9
+      - office.Office.ProjectResourceFields.Units
+      - office.Office.ProjectResourceFields.Work
+  - uid: office.Office.ProjectResourceFields.Accrual
+    name: Accrual
+    fullName: office.Office.ProjectResourceFields.Accrual
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.ActualCost
+    name: ActualCost
+    fullName: office.Office.ProjectResourceFields.ActualCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.ActualOvertimeCost
+    name: ActualOvertimeCost
+    fullName: office.Office.ProjectResourceFields.ActualOvertimeCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.ActualOvertimeWork
+    name: ActualOvertimeWork
+    fullName: office.Office.ProjectResourceFields.ActualOvertimeWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.ActualOvertimeWorkProtected
+    name: ActualOvertimeWorkProtected
+    fullName: office.Office.ProjectResourceFields.ActualOvertimeWorkProtected
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.ActualWork
+    name: ActualWork
+    fullName: office.Office.ProjectResourceFields.ActualWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.ActualWorkProtected
+    name: ActualWorkProtected
+    fullName: office.Office.ProjectResourceFields.ActualWorkProtected
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.BaseCalendar
+    name: BaseCalendar
+    fullName: office.Office.ProjectResourceFields.BaseCalendar
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline10BudgetCost
+    name: Baseline10BudgetCost
+    fullName: office.Office.ProjectResourceFields.Baseline10BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline10BudgetWork
+    name: Baseline10BudgetWork
+    fullName: office.Office.ProjectResourceFields.Baseline10BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline10Cost
+    name: Baseline10Cost
+    fullName: office.Office.ProjectResourceFields.Baseline10Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline10Work
+    name: Baseline10Work
+    fullName: office.Office.ProjectResourceFields.Baseline10Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline1BudgetCost
+    name: Baseline1BudgetCost
+    fullName: office.Office.ProjectResourceFields.Baseline1BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline1BudgetWork
+    name: Baseline1BudgetWork
+    fullName: office.Office.ProjectResourceFields.Baseline1BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline1Cost
+    name: Baseline1Cost
+    fullName: office.Office.ProjectResourceFields.Baseline1Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline1Work
+    name: Baseline1Work
+    fullName: office.Office.ProjectResourceFields.Baseline1Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline2BudgetCost
+    name: Baseline2BudgetCost
+    fullName: office.Office.ProjectResourceFields.Baseline2BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline2BudgetWork
+    name: Baseline2BudgetWork
+    fullName: office.Office.ProjectResourceFields.Baseline2BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline2Cost
+    name: Baseline2Cost
+    fullName: office.Office.ProjectResourceFields.Baseline2Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline2Work
+    name: Baseline2Work
+    fullName: office.Office.ProjectResourceFields.Baseline2Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline3BudgetCost
+    name: Baseline3BudgetCost
+    fullName: office.Office.ProjectResourceFields.Baseline3BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline3BudgetWork
+    name: Baseline3BudgetWork
+    fullName: office.Office.ProjectResourceFields.Baseline3BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline3Cost
+    name: Baseline3Cost
+    fullName: office.Office.ProjectResourceFields.Baseline3Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline3Work
+    name: Baseline3Work
+    fullName: office.Office.ProjectResourceFields.Baseline3Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline4BudgetCost
+    name: Baseline4BudgetCost
+    fullName: office.Office.ProjectResourceFields.Baseline4BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline4BudgetWork
+    name: Baseline4BudgetWork
+    fullName: office.Office.ProjectResourceFields.Baseline4BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline4Cost
+    name: Baseline4Cost
+    fullName: office.Office.ProjectResourceFields.Baseline4Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline4Work
+    name: Baseline4Work
+    fullName: office.Office.ProjectResourceFields.Baseline4Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline5BudgetCost
+    name: Baseline5BudgetCost
+    fullName: office.Office.ProjectResourceFields.Baseline5BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline5BudgetWork
+    name: Baseline5BudgetWork
+    fullName: office.Office.ProjectResourceFields.Baseline5BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline5Cost
+    name: Baseline5Cost
+    fullName: office.Office.ProjectResourceFields.Baseline5Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline5Work
+    name: Baseline5Work
+    fullName: office.Office.ProjectResourceFields.Baseline5Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline6BudgetCost
+    name: Baseline6BudgetCost
+    fullName: office.Office.ProjectResourceFields.Baseline6BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline6BudgetWork
+    name: Baseline6BudgetWork
+    fullName: office.Office.ProjectResourceFields.Baseline6BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline6Cost
+    name: Baseline6Cost
+    fullName: office.Office.ProjectResourceFields.Baseline6Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline6Work
+    name: Baseline6Work
+    fullName: office.Office.ProjectResourceFields.Baseline6Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline7BudgetCost
+    name: Baseline7BudgetCost
+    fullName: office.Office.ProjectResourceFields.Baseline7BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline7BudgetWork
+    name: Baseline7BudgetWork
+    fullName: office.Office.ProjectResourceFields.Baseline7BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline7Cost
+    name: Baseline7Cost
+    fullName: office.Office.ProjectResourceFields.Baseline7Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline7Work
+    name: Baseline7Work
+    fullName: office.Office.ProjectResourceFields.Baseline7Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline8BudgetCost
+    name: Baseline8BudgetCost
+    fullName: office.Office.ProjectResourceFields.Baseline8BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline8BudgetWork
+    name: Baseline8BudgetWork
+    fullName: office.Office.ProjectResourceFields.Baseline8BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline8Cost
+    name: Baseline8Cost
+    fullName: office.Office.ProjectResourceFields.Baseline8Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline8Work
+    name: Baseline8Work
+    fullName: office.Office.ProjectResourceFields.Baseline8Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline9BudgetCost
+    name: Baseline9BudgetCost
+    fullName: office.Office.ProjectResourceFields.Baseline9BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline9BudgetWork
+    name: Baseline9BudgetWork
+    fullName: office.Office.ProjectResourceFields.Baseline9BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline9Cost
+    name: Baseline9Cost
+    fullName: office.Office.ProjectResourceFields.Baseline9Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Baseline9Work
+    name: Baseline9Work
+    fullName: office.Office.ProjectResourceFields.Baseline9Work
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.BaselineBudgetCost
+    name: BaselineBudgetCost
+    fullName: office.Office.ProjectResourceFields.BaselineBudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.BaselineBudgetWork
+    name: BaselineBudgetWork
+    fullName: office.Office.ProjectResourceFields.BaselineBudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.BaselineCost
+    name: BaselineCost
+    fullName: office.Office.ProjectResourceFields.BaselineCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.BaselineWork
+    name: BaselineWork
+    fullName: office.Office.ProjectResourceFields.BaselineWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.BudgetCost
+    name: BudgetCost
+    fullName: office.Office.ProjectResourceFields.BudgetCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.BudgetWork
+    name: BudgetWork
+    fullName: office.Office.ProjectResourceFields.BudgetWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Code
+    name: Code
+    fullName: office.Office.ProjectResourceFields.Code
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Cost
+    name: Cost
+    fullName: office.Office.ProjectResourceFields.Cost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Cost1
+    name: Cost1
+    fullName: office.Office.ProjectResourceFields.Cost1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Cost10
+    name: Cost10
+    fullName: office.Office.ProjectResourceFields.Cost10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Cost2
+    name: Cost2
+    fullName: office.Office.ProjectResourceFields.Cost2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Cost3
+    name: Cost3
+    fullName: office.Office.ProjectResourceFields.Cost3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Cost4
+    name: Cost4
+    fullName: office.Office.ProjectResourceFields.Cost4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Cost5
+    name: Cost5
+    fullName: office.Office.ProjectResourceFields.Cost5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Cost6
+    name: Cost6
+    fullName: office.Office.ProjectResourceFields.Cost6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Cost7
+    name: Cost7
+    fullName: office.Office.ProjectResourceFields.Cost7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Cost8
+    name: Cost8
+    fullName: office.Office.ProjectResourceFields.Cost8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Cost9
+    name: Cost9
+    fullName: office.Office.ProjectResourceFields.Cost9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.CostPerUse
+    name: CostPerUse
+    fullName: office.Office.ProjectResourceFields.CostPerUse
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Date1
+    name: Date1
+    fullName: office.Office.ProjectResourceFields.Date1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Date10
+    name: Date10
+    fullName: office.Office.ProjectResourceFields.Date10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Date2
+    name: Date2
+    fullName: office.Office.ProjectResourceFields.Date2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Date3
+    name: Date3
+    fullName: office.Office.ProjectResourceFields.Date3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Date4
+    name: Date4
+    fullName: office.Office.ProjectResourceFields.Date4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Date5
+    name: Date5
+    fullName: office.Office.ProjectResourceFields.Date5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Date6
+    name: Date6
+    fullName: office.Office.ProjectResourceFields.Date6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Date7
+    name: Date7
+    fullName: office.Office.ProjectResourceFields.Date7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Date8
+    name: Date8
+    fullName: office.Office.ProjectResourceFields.Date8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Date9
+    name: Date9
+    fullName: office.Office.ProjectResourceFields.Date9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Duration1
+    name: Duration1
+    fullName: office.Office.ProjectResourceFields.Duration1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Duration10
+    name: Duration10
+    fullName: office.Office.ProjectResourceFields.Duration10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Duration2
+    name: Duration2
+    fullName: office.Office.ProjectResourceFields.Duration2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Duration3
+    name: Duration3
+    fullName: office.Office.ProjectResourceFields.Duration3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Duration4
+    name: Duration4
+    fullName: office.Office.ProjectResourceFields.Duration4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Duration5
+    name: Duration5
+    fullName: office.Office.ProjectResourceFields.Duration5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Duration6
+    name: Duration6
+    fullName: office.Office.ProjectResourceFields.Duration6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Duration7
+    name: Duration7
+    fullName: office.Office.ProjectResourceFields.Duration7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Duration8
+    name: Duration8
+    fullName: office.Office.ProjectResourceFields.Duration8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Duration9
+    name: Duration9
+    fullName: office.Office.ProjectResourceFields.Duration9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Email
+    name: Email
+    fullName: office.Office.ProjectResourceFields.Email
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.End
+    name: End
+    fullName: office.Office.ProjectResourceFields.End
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Finish1
+    name: Finish1
+    fullName: office.Office.ProjectResourceFields.Finish1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Finish10
+    name: Finish10
+    fullName: office.Office.ProjectResourceFields.Finish10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Finish2
+    name: Finish2
+    fullName: office.Office.ProjectResourceFields.Finish2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Finish3
+    name: Finish3
+    fullName: office.Office.ProjectResourceFields.Finish3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Finish4
+    name: Finish4
+    fullName: office.Office.ProjectResourceFields.Finish4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Finish5
+    name: Finish5
+    fullName: office.Office.ProjectResourceFields.Finish5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Finish6
+    name: Finish6
+    fullName: office.Office.ProjectResourceFields.Finish6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Finish7
+    name: Finish7
+    fullName: office.Office.ProjectResourceFields.Finish7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Finish8
+    name: Finish8
+    fullName: office.Office.ProjectResourceFields.Finish8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Finish9
+    name: Finish9
+    fullName: office.Office.ProjectResourceFields.Finish9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag1
+    name: Flag1
+    fullName: office.Office.ProjectResourceFields.Flag1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag10
+    name: Flag10
+    fullName: office.Office.ProjectResourceFields.Flag10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag11
+    name: Flag11
+    fullName: office.Office.ProjectResourceFields.Flag11
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag12
+    name: Flag12
+    fullName: office.Office.ProjectResourceFields.Flag12
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag13
+    name: Flag13
+    fullName: office.Office.ProjectResourceFields.Flag13
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag14
+    name: Flag14
+    fullName: office.Office.ProjectResourceFields.Flag14
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag15
+    name: Flag15
+    fullName: office.Office.ProjectResourceFields.Flag15
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag16
+    name: Flag16
+    fullName: office.Office.ProjectResourceFields.Flag16
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag17
+    name: Flag17
+    fullName: office.Office.ProjectResourceFields.Flag17
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag18
+    name: Flag18
+    fullName: office.Office.ProjectResourceFields.Flag18
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag19
+    name: Flag19
+    fullName: office.Office.ProjectResourceFields.Flag19
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag2
+    name: Flag2
+    fullName: office.Office.ProjectResourceFields.Flag2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag20
+    name: Flag20
+    fullName: office.Office.ProjectResourceFields.Flag20
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag3
+    name: Flag3
+    fullName: office.Office.ProjectResourceFields.Flag3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag4
+    name: Flag4
+    fullName: office.Office.ProjectResourceFields.Flag4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag5
+    name: Flag5
+    fullName: office.Office.ProjectResourceFields.Flag5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag6
+    name: Flag6
+    fullName: office.Office.ProjectResourceFields.Flag6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag7
+    name: Flag7
+    fullName: office.Office.ProjectResourceFields.Flag7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag8
+    name: Flag8
+    fullName: office.Office.ProjectResourceFields.Flag8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Flag9
+    name: Flag9
+    fullName: office.Office.ProjectResourceFields.Flag9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Generic
+    name: Generic
+    fullName: office.Office.ProjectResourceFields.Generic
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Group
+    name: Group
+    fullName: office.Office.ProjectResourceFields.Group
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Name
+    name: Name
+    fullName: office.Office.ProjectResourceFields.Name
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Notes
+    name: Notes
+    fullName: office.Office.ProjectResourceFields.Notes
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number1
+    name: Number1
+    fullName: office.Office.ProjectResourceFields.Number1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number10
+    name: Number10
+    fullName: office.Office.ProjectResourceFields.Number10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number11
+    name: Number11
+    fullName: office.Office.ProjectResourceFields.Number11
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number12
+    name: Number12
+    fullName: office.Office.ProjectResourceFields.Number12
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number13
+    name: Number13
+    fullName: office.Office.ProjectResourceFields.Number13
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number14
+    name: Number14
+    fullName: office.Office.ProjectResourceFields.Number14
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number15
+    name: Number15
+    fullName: office.Office.ProjectResourceFields.Number15
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number16
+    name: Number16
+    fullName: office.Office.ProjectResourceFields.Number16
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number17
+    name: Number17
+    fullName: office.Office.ProjectResourceFields.Number17
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number18
+    name: Number18
+    fullName: office.Office.ProjectResourceFields.Number18
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number19
+    name: Number19
+    fullName: office.Office.ProjectResourceFields.Number19
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number2
+    name: Number2
+    fullName: office.Office.ProjectResourceFields.Number2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number20
+    name: Number20
+    fullName: office.Office.ProjectResourceFields.Number20
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number3
+    name: Number3
+    fullName: office.Office.ProjectResourceFields.Number3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number4
+    name: Number4
+    fullName: office.Office.ProjectResourceFields.Number4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number5
+    name: Number5
+    fullName: office.Office.ProjectResourceFields.Number5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number6
+    name: Number6
+    fullName: office.Office.ProjectResourceFields.Number6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number7
+    name: Number7
+    fullName: office.Office.ProjectResourceFields.Number7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number8
+    name: Number8
+    fullName: office.Office.ProjectResourceFields.Number8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Number9
+    name: Number9
+    fullName: office.Office.ProjectResourceFields.Number9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.OverAllocated
+    name: OverAllocated
+    fullName: office.Office.ProjectResourceFields.OverAllocated
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.OvertimeCost
+    name: OvertimeCost
+    fullName: office.Office.ProjectResourceFields.OvertimeCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.OvertimeRate
+    name: OvertimeRate
+    fullName: office.Office.ProjectResourceFields.OvertimeRate
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.OvertimeWork
+    name: OvertimeWork
+    fullName: office.Office.ProjectResourceFields.OvertimeWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.PercentWorkComplete
+    name: PercentWorkComplete
+    fullName: office.Office.ProjectResourceFields.PercentWorkComplete
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.RegularWork
+    name: RegularWork
+    fullName: office.Office.ProjectResourceFields.RegularWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.RemainingCost
+    name: RemainingCost
+    fullName: office.Office.ProjectResourceFields.RemainingCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.RemainingOvertimeCost
+    name: RemainingOvertimeCost
+    fullName: office.Office.ProjectResourceFields.RemainingOvertimeCost
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.RemainingOvertimeWork
+    name: RemainingOvertimeWork
+    fullName: office.Office.ProjectResourceFields.RemainingOvertimeWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.RemainingWork
+    name: RemainingWork
+    fullName: office.Office.ProjectResourceFields.RemainingWork
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.ResourceCalendarGUID
+    name: ResourceCalendarGUID
+    fullName: office.Office.ProjectResourceFields.ResourceCalendarGUID
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.ResourceCreationDate
+    name: ResourceCreationDate
+    fullName: office.Office.ProjectResourceFields.ResourceCreationDate
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.ResourceGUID
+    name: ResourceGUID
+    fullName: office.Office.ProjectResourceFields.ResourceGUID
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.StandardRate
+    name: StandardRate
+    fullName: office.Office.ProjectResourceFields.StandardRate
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Start
+    name: Start
+    fullName: office.Office.ProjectResourceFields.Start
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Start1
+    name: Start1
+    fullName: office.Office.ProjectResourceFields.Start1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Start10
+    name: Start10
+    fullName: office.Office.ProjectResourceFields.Start10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Start2
+    name: Start2
+    fullName: office.Office.ProjectResourceFields.Start2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Start3
+    name: Start3
+    fullName: office.Office.ProjectResourceFields.Start3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Start4
+    name: Start4
+    fullName: office.Office.ProjectResourceFields.Start4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Start5
+    name: Start5
+    fullName: office.Office.ProjectResourceFields.Start5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Start6
+    name: Start6
+    fullName: office.Office.ProjectResourceFields.Start6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Start7
+    name: Start7
+    fullName: office.Office.ProjectResourceFields.Start7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Start8
+    name: Start8
+    fullName: office.Office.ProjectResourceFields.Start8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Start9
+    name: Start9
+    fullName: office.Office.ProjectResourceFields.Start9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text1
+    name: Text1
+    fullName: office.Office.ProjectResourceFields.Text1
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text10
+    name: Text10
+    fullName: office.Office.ProjectResourceFields.Text10
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text11
+    name: Text11
+    fullName: office.Office.ProjectResourceFields.Text11
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text12
+    name: Text12
+    fullName: office.Office.ProjectResourceFields.Text12
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text13
+    name: Text13
+    fullName: office.Office.ProjectResourceFields.Text13
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text14
+    name: Text14
+    fullName: office.Office.ProjectResourceFields.Text14
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text15
+    name: Text15
+    fullName: office.Office.ProjectResourceFields.Text15
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text16
+    name: Text16
+    fullName: office.Office.ProjectResourceFields.Text16
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text17
+    name: Text17
+    fullName: office.Office.ProjectResourceFields.Text17
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text18
+    name: Text18
+    fullName: office.Office.ProjectResourceFields.Text18
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text19
+    name: Text19
+    fullName: office.Office.ProjectResourceFields.Text19
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text2
+    name: Text2
+    fullName: office.Office.ProjectResourceFields.Text2
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text20
+    name: Text20
+    fullName: office.Office.ProjectResourceFields.Text20
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text21
+    name: Text21
+    fullName: office.Office.ProjectResourceFields.Text21
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text22
+    name: Text22
+    fullName: office.Office.ProjectResourceFields.Text22
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text23
+    name: Text23
+    fullName: office.Office.ProjectResourceFields.Text23
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text24
+    name: Text24
+    fullName: office.Office.ProjectResourceFields.Text24
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text25
+    name: Text25
+    fullName: office.Office.ProjectResourceFields.Text25
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text26
+    name: Text26
+    fullName: office.Office.ProjectResourceFields.Text26
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text27
+    name: Text27
+    fullName: office.Office.ProjectResourceFields.Text27
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text28
+    name: Text28
+    fullName: office.Office.ProjectResourceFields.Text28
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text29
+    name: Text29
+    fullName: office.Office.ProjectResourceFields.Text29
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text3
+    name: Text3
+    fullName: office.Office.ProjectResourceFields.Text3
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text30
+    name: Text30
+    fullName: office.Office.ProjectResourceFields.Text30
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text4
+    name: Text4
+    fullName: office.Office.ProjectResourceFields.Text4
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text5
+    name: Text5
+    fullName: office.Office.ProjectResourceFields.Text5
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text6
+    name: Text6
+    fullName: office.Office.ProjectResourceFields.Text6
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text7
+    name: Text7
+    fullName: office.Office.ProjectResourceFields.Text7
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text8
+    name: Text8
+    fullName: office.Office.ProjectResourceFields.Text8
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Text9
+    name: Text9
+    fullName: office.Office.ProjectResourceFields.Text9
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Units
+    name: Units
+    fullName: office.Office.ProjectResourceFields.Units
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ProjectResourceFields.Work
+    name: Work
+    fullName: office.Office.ProjectResourceFields.Work
+    langs:
+      - typeScript
+    type: field

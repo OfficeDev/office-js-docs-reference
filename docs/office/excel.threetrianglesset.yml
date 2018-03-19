@@ -1,0 +1,64 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.ThreeTrianglesSet
+    name: Excel.ThreeTrianglesSet
+    fullName: office.Excel.ThreeTrianglesSet
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel.ThreeTrianglesSet.__index
+      - office.Excel.ThreeTrianglesSet.greenUpTriangle
+      - office.Excel.ThreeTrianglesSet.redDownTriangle
+      - office.Excel.ThreeTrianglesSet.yellowDash
+  - uid: office.Excel.ThreeTrianglesSet.__index
+    name: __index(index)
+    fullName: office.Excel.ThreeTrianglesSet.__index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel.ThreeTrianglesSet.greenUpTriangle
+    name: greenUpTriangle
+    fullName: office.Excel.ThreeTrianglesSet.greenUpTriangle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenUpTriangle: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel.ThreeTrianglesSet.redDownTriangle
+    name: redDownTriangle
+    fullName: office.Excel.ThreeTrianglesSet.redDownTriangle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redDownTriangle: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel.ThreeTrianglesSet.yellowDash
+    name: yellowDash
+    fullName: office.Excel.ThreeTrianglesSet.yellowDash
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowDash: Icon;'
+      return:
+        type:
+          - Icon

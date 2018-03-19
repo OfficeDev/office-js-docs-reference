@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeExtension.RequestUrlAndHeaderInfo
+    summary: Request URL and headers
+    name: OfficeExtension.RequestUrlAndHeaderInfo
+    fullName: office.OfficeExtension.RequestUrlAndHeaderInfo
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.OfficeExtension.RequestUrlAndHeaderInfo.headers
+      - office.OfficeExtension.RequestUrlAndHeaderInfo.url
+  - uid: office.OfficeExtension.RequestUrlAndHeaderInfo.headers
+    summary: Request headers
+    name: headers
+    fullName: office.OfficeExtension.RequestUrlAndHeaderInfo.headers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headers?:'
+      return:
+        type:
+          - "{\r\n            [name: string]: string;\r\n        }"
+  - uid: office.OfficeExtension.RequestUrlAndHeaderInfo.url
+    summary: Request URL
+    name: url
+    fullName: office.OfficeExtension.RequestUrlAndHeaderInfo.url
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'url: string;'
+      return:
+        type:
+          - string

@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.ChartLineFormat
+    summary: |-
+      Enapsulates the formatting options for line elements.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.ChartLineFormat
+    fullName: office.Excel.ChartLineFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel.ChartLineFormat.clear
+      - office.Excel.ChartLineFormat.color
+      - office.Excel.ChartLineFormat.load
+      - office.Excel.ChartLineFormat.set
+      - office.Excel.ChartLineFormat.toJSON
+  - uid: office.Excel.ChartLineFormat.clear
+    summary: |-
+      Clear the line format of a chart element.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: clear()
+    fullName: office.Excel.ChartLineFormat.clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Excel.ChartLineFormat.color
+    summary: |-
+      HTML color code representing the color of lines in the chart.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: color
+    fullName: office.Excel.ChartLineFormat.color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: office.Excel.ChartLineFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel.ChartLineFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartLineFormat;'
+      return:
+        type:
+          - Excel.ChartLineFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel.ChartLineFormat.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Excel.ChartLineFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ChartLineFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartLineFormatUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Excel.ChartLineFormat.toJSON
+    name: toJSON()
+    fullName: office.Excel.ChartLineFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"color\": string;\r\n        }"
+        description: ''

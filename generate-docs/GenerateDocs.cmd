@@ -2,12 +2,11 @@ call npm install
 
 del package-lock.json
 
-cd excel
+cd api-extractor-inputs
 
 call ..\node_modules\.bin\api-extractor run
 
 cd ..
-
 
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json --office
 

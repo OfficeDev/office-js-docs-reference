@@ -1,0 +1,227 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.Workbook
+    summary: |-
+      Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.Workbook
+    fullName: office.Excel.Workbook
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel.Workbook.application
+      - office.Excel.Workbook.bindings
+      - office.Excel.Workbook.customXmlParts
+      - office.Excel.Workbook.functions
+      - office.Excel.Workbook.getSelectedRange
+      - office.Excel.Workbook.load
+      - office.Excel.Workbook.names
+      - office.Excel.Workbook.onSelectionChanged
+      - office.Excel.Workbook.pivotTables
+      - office.Excel.Workbook.settings
+      - office.Excel.Workbook.tables
+      - office.Excel.Workbook.toJSON
+      - office.Excel.Workbook.worksheets
+  - uid: office.Excel.Workbook.application
+    summary: |-
+      Represents Excel application instance that contains this workbook. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: application
+    fullName: office.Excel.Workbook.application
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly application: Excel.Application;'
+      return:
+        type:
+          - Excel.Application
+  - uid: office.Excel.Workbook.bindings
+    summary: |-
+      Represents a collection of bindings that are part of the workbook. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: bindings
+    fullName: office.Excel.Workbook.bindings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly bindings: Excel.BindingCollection;'
+      return:
+        type:
+          - Excel.BindingCollection
+  - uid: office.Excel.Workbook.customXmlParts
+    summary: |-
+      Represents the collection of custom XML parts contained by this workbook. Read-only.
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: customXmlParts
+    fullName: office.Excel.Workbook.customXmlParts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly customXmlParts: Excel.CustomXmlPartCollection;'
+      return:
+        type:
+          - Excel.CustomXmlPartCollection
+  - uid: office.Excel.Workbook.functions
+    summary: |-
+      Represents Excel application instance that contains this workbook. Read-only.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: functions
+    fullName: office.Excel.Workbook.functions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly functions: Excel.Functions;'
+      return:
+        type:
+          - Excel.Functions
+  - uid: office.Excel.Workbook.getSelectedRange
+    summary: |-
+      Gets the currently selected range from the workbook.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: getSelectedRange()
+    fullName: office.Excel.Workbook.getSelectedRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedRange(): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
+  - uid: office.Excel.Workbook.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel.Workbook.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Workbook;'
+      return:
+        type:
+          - Excel.Workbook
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel.Workbook.names
+    summary: |-
+      Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: names
+    fullName: office.Excel.Workbook.names
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly names: Excel.NamedItemCollection;'
+      return:
+        type:
+          - Excel.NamedItemCollection
+  - uid: office.Excel.Workbook.onSelectionChanged
+    summary: |-
+      Occurs when the selection in the document is changed.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: onSelectionChanged
+    fullName: office.Excel.Workbook.onSelectionChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>
+  - uid: office.Excel.Workbook.pivotTables
+    summary: |-
+      Represents a collection of PivotTables associated with the workbook. Read-only.
+
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+    name: pivotTables
+    fullName: office.Excel.Workbook.pivotTables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly pivotTables: Excel.PivotTableCollection;'
+      return:
+        type:
+          - Excel.PivotTableCollection
+  - uid: office.Excel.Workbook.settings
+    summary: |-
+      Represents a collection of Settings associated with the workbook. Read-only.
+
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+    name: settings
+    fullName: office.Excel.Workbook.settings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly settings: Excel.SettingCollection;'
+      return:
+        type:
+          - Excel.SettingCollection
+  - uid: office.Excel.Workbook.tables
+    summary: |-
+      Represents a collection of tables associated with the workbook. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: tables
+    fullName: office.Excel.Workbook.tables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly tables: Excel.TableCollection;'
+      return:
+        type:
+          - Excel.TableCollection
+  - uid: office.Excel.Workbook.toJSON
+    name: toJSON()
+    fullName: office.Excel.Workbook.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - '{}'
+        description: ''
+  - uid: office.Excel.Workbook.worksheets
+    summary: |-
+      Represents a collection of worksheets associated with the workbook. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: worksheets
+    fullName: office.Excel.Workbook.worksheets
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheets: Excel.WorksheetCollection;'
+      return:
+        type:
+          - Excel.WorksheetCollection

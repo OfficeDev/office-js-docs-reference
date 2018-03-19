@@ -1,0 +1,112 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.Body
+    name: Office.Body
+    fullName: office.Office.Body
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.Body.getAsync
+      - office.Office.Body.getTypeAsync
+      - office.Office.Body.prependAsync
+      - office.Office.Body.setAsync
+      - office.Office.Body.setSelectedDataAsync
+  - uid: office.Office.Body.getAsync
+    summary: Returns the current body in a specified format
+    name: 'getAsync(coercionType, callback)'
+    fullName: office.Office.Body.getAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: coercionType
+          description: The format of the returned body
+          type:
+            - CoercionType
+        - id: callback
+          description: optional method to call when the getAsync method returns
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.Body.getTypeAsync
+    name: 'getTypeAsync(options, callback)'
+    fullName: office.Office.Body.getTypeAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTypeAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: ''
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: ''
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.Body.prependAsync
+    summary: Adds the specified content to the beginning of the item body
+    name: prependAsync(data)
+    fullName: office.Office.Body.prependAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'prependAsync(data: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters'
+          type:
+            - string
+  - uid: office.Office.Body.setAsync
+    summary: Replaces the entire body with the specified text.
+    name: setAsync(data)
+    fullName: office.Office.Body.setAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(data: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters'
+          type:
+            - string
+  - uid: office.Office.Body.setSelectedDataAsync
+    summary: Replaces the selection in the body with the specified text
+    name: setSelectedDataAsync(data)
+    fullName: office.Office.Body.setSelectedDataAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSelectedDataAsync(data: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters'
+          type:
+            - string

@@ -1,0 +1,175 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Word.CustomProperty
+    summary: |-
+      Represents a custom property.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: Word.CustomProperty
+    fullName: office.Word.CustomProperty
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Word.CustomProperty.delete
+      - office.Word.CustomProperty.key
+      - office.Word.CustomProperty.load
+      - office.Word.CustomProperty.set
+      - office.Word.CustomProperty.toJSON
+      - office.Word.CustomProperty.track
+      - office.Word.CustomProperty.type
+      - office.Word.CustomProperty.untrack
+      - office.Word.CustomProperty.value
+  - uid: office.Word.CustomProperty.delete
+    summary: |-
+      Deletes the custom property.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: delete()
+    fullName: office.Word.CustomProperty.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Word.CustomProperty.key
+    summary: |-
+      Gets the key of the custom property. Read only.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: key
+    fullName: office.Word.CustomProperty.key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word.CustomProperty.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Word.CustomProperty.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.CustomProperty;'
+      return:
+        type:
+          - Word.CustomProperty
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Word.CustomProperty.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Word.CustomProperty.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.CustomPropertyUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.CustomPropertyUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Word.CustomProperty.toJSON
+    name: toJSON()
+    fullName: office.Word.CustomProperty.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"key\": string;\r\n            \"type\": string;\r\n            \"value\": any;\r\n        }"
+        description: ''
+  - uid: office.Word.CustomProperty.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: office.Word.CustomProperty.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.CustomProperty;'
+      return:
+        type:
+          - Word.CustomProperty
+        description: ''
+  - uid: office.Word.CustomProperty.type
+    summary: |-
+      Gets the value type of the custom property. Read only.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: type
+    fullName: office.Word.CustomProperty.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: string;'
+      return:
+        type:
+          - string
+  - uid: office.Word.CustomProperty.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: office.Word.CustomProperty.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.CustomProperty;'
+      return:
+        type:
+          - Word.CustomProperty
+        description: ''
+  - uid: office.Word.CustomProperty.value
+    summary: |-
+      Gets or sets the value of the custom property.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: value
+    fullName: office.Word.CustomProperty.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: any;'
+      return:
+        type:
+          - any

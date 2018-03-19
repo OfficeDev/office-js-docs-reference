@@ -1,0 +1,101 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OneNote.InkWord
+    summary: |-
+      A container for the ink in a word in a paragraph.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: OneNote.InkWord
+    fullName: office.OneNote.InkWord
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.OneNote.InkWord.id
+      - office.OneNote.InkWord.languageId
+      - office.OneNote.InkWord.load
+      - office.OneNote.InkWord.paragraph
+      - office.OneNote.InkWord.wordAlternates
+  - uid: office.OneNote.InkWord.id
+    summary: |-
+      Gets the ID of the InkWord object. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: id
+    fullName: office.OneNote.InkWord.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: office.OneNote.InkWord.languageId
+    summary: |-
+      The id of the recognized language in this ink word. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: languageId
+    fullName: office.OneNote.InkWord.languageId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'languageId: string;'
+      return:
+        type:
+          - string
+  - uid: office.OneNote.InkWord.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.OneNote.InkWord.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.InkWord;'
+      return:
+        type:
+          - OneNote.InkWord
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.OneNote.InkWord.paragraph
+    summary: |-
+      The parent paragraph containing the ink word. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: paragraph
+    fullName: office.OneNote.InkWord.paragraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraph: OneNote.Paragraph;'
+      return:
+        type:
+          - OneNote.Paragraph
+  - uid: office.OneNote.InkWord.wordAlternates
+    summary: |-
+      The words that were recognized in this ink word, in order of likelihood. Read-only.
+
+      \[ [Api set: OneNoteApi](http://bing.com) \]
+    name: wordAlternates
+    fullName: office.OneNote.InkWord.wordAlternates
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'wordAlternates: Array<string>;'
+      return:
+        type:
+          - Array<string>

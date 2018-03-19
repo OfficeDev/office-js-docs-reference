@@ -1,0 +1,104 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Visio.PageCollection
+    summary: |-
+      Represents a collection of Page objects that are part of the document.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: Visio.PageCollection
+    fullName: office.Visio.PageCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Visio.PageCollection.getCount
+      - office.Visio.PageCollection.getItem
+      - office.Visio.PageCollection.items
+      - office.Visio.PageCollection.load
+      - office.Visio.PageCollection.toJSON
+  - uid: office.Visio.PageCollection.getCount
+    summary: |-
+      Gets the number of pages in the collection.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: getCount()
+    fullName: office.Visio.PageCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: office.Visio.PageCollection.getItem
+    summary: |-
+      Gets a page using its key (name or Id).
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: getItem(key)
+    fullName: office.Visio.PageCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: number | string): Visio.Page;'
+      return:
+        type:
+          - Visio.Page
+        description: ''
+      parameters:
+        - id: key
+          description: Key is the name or Id of the page to be retrieved.
+          type:
+            - number | string
+  - uid: office.Visio.PageCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.Visio.PageCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Array<Visio.Page>;'
+      return:
+        type:
+          - Array<Visio.Page>
+  - uid: office.Visio.PageCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Visio.PageCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.PageCollection;
+      return:
+        type:
+          - Visio.PageCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+  - uid: office.Visio.PageCollection.toJSON
+    name: toJSON()
+    fullName: office.Visio.PageCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.PageCollectionData;'
+      return:
+        type:
+          - Visio.Interfaces.PageCollectionData
+        description: ''

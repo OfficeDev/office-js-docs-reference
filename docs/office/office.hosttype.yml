@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.HostType
+    name: Office.HostType
+    fullName: office.Office.HostType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.HostType.Access
+      - office.Office.HostType.Excel
+      - office.Office.HostType.OneNote
+      - office.Office.HostType.Outlook
+      - office.Office.HostType.PowerPoint
+      - office.Office.HostType.Project
+      - office.Office.HostType.Word
+  - uid: office.Office.HostType.Access
+    summary: Host is Access
+    name: Access
+    fullName: office.Office.HostType.Access
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.Excel
+    summary: Host is Excel
+    name: Excel
+    fullName: office.Office.HostType.Excel
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.OneNote
+    summary: Host is OneNote
+    name: OneNote
+    fullName: office.Office.HostType.OneNote
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.Outlook
+    summary: Host is Outlook
+    name: Outlook
+    fullName: office.Office.HostType.Outlook
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.PowerPoint
+    summary: Host is PowerPoint
+    name: PowerPoint
+    fullName: office.Office.HostType.PowerPoint
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.Project
+    summary: Host is Project
+    name: Project
+    fullName: office.Office.HostType.Project
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.Word
+    summary: Host is Word
+    name: Word
+    fullName: office.Office.HostType.Word
+    langs:
+      - typeScript
+    type: field

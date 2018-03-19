@@ -1,0 +1,220 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.WorksheetCollection
+    summary: |-
+      Represents a collection of worksheet objects that are part of the workbook.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.WorksheetCollection
+    fullName: office.Excel.WorksheetCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel.WorksheetCollection.add
+      - office.Excel.WorksheetCollection.getActiveWorksheet
+      - office.Excel.WorksheetCollection.getCount
+      - office.Excel.WorksheetCollection.getFirst
+      - office.Excel.WorksheetCollection.getItem
+      - office.Excel.WorksheetCollection.getItemOrNullObject
+      - office.Excel.WorksheetCollection.getLast
+      - office.Excel.WorksheetCollection.items
+      - office.Excel.WorksheetCollection.load
+      - office.Excel.WorksheetCollection.toJSON
+  - uid: office.Excel.WorksheetCollection.add
+    summary: >-
+      Adds a new worksheet to the workbook. The worksheet will be added at the end of existing worksheets. If you wish
+      to activate the newly added worksheet, call ".activate() on it.
+
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: add(name)
+    fullName: office.Excel.WorksheetCollection.add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name?: string): Excel.Worksheet;'
+      return:
+        type:
+          - Excel.Worksheet
+        description: ''
+      parameters:
+        - id: name
+          description: >-
+            The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel
+            determines the name of the new worksheet.
+          type:
+            - string
+  - uid: office.Excel.WorksheetCollection.getActiveWorksheet
+    summary: |-
+      Gets the currently active worksheet in the workbook.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: getActiveWorksheet()
+    fullName: office.Excel.WorksheetCollection.getActiveWorksheet
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveWorksheet(): Excel.Worksheet;'
+      return:
+        type:
+          - Excel.Worksheet
+        description: ''
+  - uid: office.Excel.WorksheetCollection.getCount
+    summary: |-
+      Gets the number of worksheets in the collection.
+
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+    name: getCount(visibleOnly)
+    fullName: office.Excel.WorksheetCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(visibleOnly?: boolean): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: ''
+          type:
+            - boolean
+  - uid: office.Excel.WorksheetCollection.getFirst
+    summary: >-
+      Gets the first worksheet in the collection. If true, considers only visible worksheets, skipping over any hidden
+      ones.
+
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: getFirst(visibleOnly)
+    fullName: office.Excel.WorksheetCollection.getFirst
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirst(visibleOnly?: boolean): Excel.Worksheet;'
+      return:
+        type:
+          - Excel.Worksheet
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: ''
+          type:
+            - boolean
+  - uid: office.Excel.WorksheetCollection.getItem
+    summary: |-
+      Gets a worksheet object using its Name or ID.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: getItem(key)
+    fullName: office.Excel.WorksheetCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Excel.Worksheet;'
+      return:
+        type:
+          - Excel.Worksheet
+        description: ''
+      parameters:
+        - id: key
+          description: The Name or ID of the worksheet.
+          type:
+            - string
+  - uid: office.Excel.WorksheetCollection.getItemOrNullObject
+    summary: |-
+      Gets a worksheet object using its Name or ID. If the worksheet does not exist, will return a null object.
+
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+    name: getItemOrNullObject(key)
+    fullName: office.Excel.WorksheetCollection.getItemOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Excel.Worksheet;'
+      return:
+        type:
+          - Excel.Worksheet
+        description: ''
+      parameters:
+        - id: key
+          description: The Name or ID of the worksheet.
+          type:
+            - string
+  - uid: office.Excel.WorksheetCollection.getLast
+    summary: >-
+      Gets the last worksheet in the collection. If true, considers only visible worksheets, skipping over any hidden
+      ones.
+
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: getLast(visibleOnly)
+    fullName: office.Excel.WorksheetCollection.getLast
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLast(visibleOnly?: boolean): Excel.Worksheet;'
+      return:
+        type:
+          - Excel.Worksheet
+        description: ''
+      parameters:
+        - id: visibleOnly
+          description: ''
+          type:
+            - boolean
+  - uid: office.Excel.WorksheetCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.Excel.WorksheetCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Array<Excel.Worksheet>;'
+      return:
+        type:
+          - Array<Excel.Worksheet>
+  - uid: office.Excel.WorksheetCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel.WorksheetCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.WorksheetCollection;'
+      return:
+        type:
+          - Excel.WorksheetCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel.WorksheetCollection.toJSON
+    name: toJSON()
+    fullName: office.Excel.WorksheetCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - '{}'
+        description: ''

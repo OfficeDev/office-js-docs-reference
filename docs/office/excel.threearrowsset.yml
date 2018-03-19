@@ -1,0 +1,64 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.ThreeArrowsSet
+    name: Excel.ThreeArrowsSet
+    fullName: office.Excel.ThreeArrowsSet
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Excel.ThreeArrowsSet.__index
+      - office.Excel.ThreeArrowsSet.greenUpArrow
+      - office.Excel.ThreeArrowsSet.redDownArrow
+      - office.Excel.ThreeArrowsSet.yellowSideArrow
+  - uid: office.Excel.ThreeArrowsSet.__index
+    name: __index(index)
+    fullName: office.Excel.ThreeArrowsSet.__index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: office.Excel.ThreeArrowsSet.greenUpArrow
+    name: greenUpArrow
+    fullName: office.Excel.ThreeArrowsSet.greenUpArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenUpArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel.ThreeArrowsSet.redDownArrow
+    name: redDownArrow
+    fullName: office.Excel.ThreeArrowsSet.redDownArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redDownArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: office.Excel.ThreeArrowsSet.yellowSideArrow
+    name: yellowSideArrow
+    fullName: office.Excel.ThreeArrowsSet.yellowSideArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowSideArrow: Icon;'
+      return:
+        type:
+          - Icon

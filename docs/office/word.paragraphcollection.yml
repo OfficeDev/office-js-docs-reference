@@ -1,0 +1,168 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Word.ParagraphCollection
+    summary: |-
+      Contains a collection of \[paragraph\](paragraph.md) objects.
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: Word.ParagraphCollection
+    fullName: office.Word.ParagraphCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Word.ParagraphCollection.getFirst
+      - office.Word.ParagraphCollection.getFirstOrNullObject
+      - office.Word.ParagraphCollection.getLast
+      - office.Word.ParagraphCollection.getLastOrNullObject
+      - office.Word.ParagraphCollection.items
+      - office.Word.ParagraphCollection.load
+      - office.Word.ParagraphCollection.toJSON
+      - office.Word.ParagraphCollection.track
+      - office.Word.ParagraphCollection.untrack
+  - uid: office.Word.ParagraphCollection.getFirst
+    summary: |-
+      Gets the first paragraph in this collection. Throws if the collection is empty.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: getFirst()
+    fullName: office.Word.ParagraphCollection.getFirst
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirst(): Word.Paragraph;'
+      return:
+        type:
+          - Word.Paragraph
+        description: ''
+  - uid: office.Word.ParagraphCollection.getFirstOrNullObject
+    summary: |-
+      Gets the first paragraph in this collection. Returns a null object if the collection is empty.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: getFirstOrNullObject()
+    fullName: office.Word.ParagraphCollection.getFirstOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirstOrNullObject(): Word.Paragraph;'
+      return:
+        type:
+          - Word.Paragraph
+        description: ''
+  - uid: office.Word.ParagraphCollection.getLast
+    summary: |-
+      Gets the last paragraph in this collection. Throws if the collection is empty.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: getLast()
+    fullName: office.Word.ParagraphCollection.getLast
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLast(): Word.Paragraph;'
+      return:
+        type:
+          - Word.Paragraph
+        description: ''
+  - uid: office.Word.ParagraphCollection.getLastOrNullObject
+    summary: |-
+      Gets the last paragraph in this collection. Returns a null object if the collection is empty.
+
+      \[ [Api set: WordApi 1.3](http://bing.com) \]
+    name: getLastOrNullObject()
+    fullName: office.Word.ParagraphCollection.getLastOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLastOrNullObject(): Word.Paragraph;'
+      return:
+        type:
+          - Word.Paragraph
+        description: ''
+  - uid: office.Word.ParagraphCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.Word.ParagraphCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<Word.Paragraph>;'
+      return:
+        type:
+          - Array<Word.Paragraph>
+  - uid: office.Word.ParagraphCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Word.ParagraphCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.ParagraphCollection;'
+      return:
+        type:
+          - Word.ParagraphCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Word.ParagraphCollection.toJSON
+    name: toJSON()
+    fullName: office.Word.ParagraphCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - '{}'
+        description: ''
+  - uid: office.Word.ParagraphCollection.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: office.Word.ParagraphCollection.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.ParagraphCollection;'
+      return:
+        type:
+          - Word.ParagraphCollection
+        description: ''
+  - uid: office.Word.ParagraphCollection.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: office.Word.ParagraphCollection.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.ParagraphCollection;'
+      return:
+        type:
+          - Word.ParagraphCollection
+        description: ''

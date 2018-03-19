@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeCore.RequestContext
+    name: OfficeCore.RequestContext
+    fullName: office.OfficeCore.RequestContext
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientRequestContext
+    package: office
+    children:
+      - office.OfficeCore.RequestContext.constructor
+      - office.OfficeCore.RequestContext.flightingService
+  - uid: office.OfficeCore.RequestContext.constructor
+    summary: 'Constructs a new instance of the [RequestContext](xref:office.OfficeCore.RequestContext) class'
+    name: constructor(url)
+    fullName: office.OfficeCore.RequestContext.constructor
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(url?: string | OfficeExtension.RequestUrlAndHeaderInfo | any);'
+      parameters:
+        - id: url
+          description: ''
+          type:
+            - string | OfficeExtension.RequestUrlAndHeaderInfo | any
+  - uid: office.OfficeCore.RequestContext.flightingService
+    name: flightingService
+    fullName: office.OfficeCore.RequestContext.flightingService
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly flightingService: FlightingService;'
+      return:
+        type:
+          - FlightingService

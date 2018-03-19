@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.FilterType
+    name: Office.FilterType
+    fullName: office.Office.FilterType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.FilterType.All
+      - office.Office.FilterType.OnlyVisible
+  - uid: office.Office.FilterType.All
+    summary: Returns all items
+    name: All
+    fullName: office.Office.FilterType.All
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.FilterType.OnlyVisible
+    summary: Returns only visible items
+    name: OnlyVisible
+    fullName: office.Office.FilterType.OnlyVisible
+    langs:
+      - typeScript
+    type: field

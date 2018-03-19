@@ -1,0 +1,238 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.TableBinding
+    name: Office.TableBinding
+    fullName: office.Office.TableBinding
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Binding
+    package: office
+    children:
+      - office.Office.TableBinding.addColumnsAsync
+      - office.Office.TableBinding.addRowsAsync
+      - office.Office.TableBinding.clearFormatsAsync
+      - office.Office.TableBinding.columnCount
+      - office.Office.TableBinding.deleteAllDataValuesAsync
+      - office.Office.TableBinding.getFormatsAsync
+      - office.Office.TableBinding.hasHeaders
+      - office.Office.TableBinding.rowCount
+      - office.Office.TableBinding.setFormatsAsync
+      - office.Office.TableBinding.setTableOptionsAsync
+  - uid: office.Office.TableBinding.addColumnsAsync
+    summary: Adds the specified columns to the table
+    name: 'addColumnsAsync(tableData, options, callback)'
+    fullName: office.Office.TableBinding.addColumnsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addColumnsAsync(tableData: TableData | any[][], options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: tableData
+          description: A TableData object with the headers and rows
+          type:
+            - 'TableData | any[][]'
+        - id: options
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.TableBinding.addRowsAsync
+    summary: Adds the specified rows to the table
+    name: 'addRowsAsync(rows, options, callback)'
+    fullName: office.Office.TableBinding.addRowsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addRowsAsync(rows: TableData | any[][], options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rows
+          description: A 2D array with the rows to add
+          type:
+            - 'TableData | any[][]'
+        - id: options
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.TableBinding.clearFormatsAsync
+    summary: Clears formatting on the bound table.
+    name: 'clearFormatsAsync(options, callback)'
+    fullName: office.Office.TableBinding.clearFormatsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearFormatsAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.TableBinding.columnCount
+    name: columnCount
+    fullName: office.Office.TableBinding.columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnCount: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.TableBinding.deleteAllDataValuesAsync
+    summary: Clears the table
+    name: 'deleteAllDataValuesAsync(options, callback)'
+    fullName: office.Office.TableBinding.deleteAllDataValuesAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteAllDataValuesAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.TableBinding.getFormatsAsync
+    summary: Gets the formatting on specified items in the table.
+    name: 'getFormatsAsync(cellReference, formats, options, callback)'
+    fullName: office.Office.TableBinding.getFormatsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getFormatsAsync(cellReference?: any, formats?: any[], options?: any, callback?: (result: AsyncResult) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: cellReference
+          description: An object literal containing name-value pairs that specify the range of cells to get formatting from.
+          type:
+            - any
+        - id: formats
+          description: An array specifying the format properties to get.
+          type:
+            - 'any[]'
+        - id: options
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.TableBinding.hasHeaders
+    name: hasHeaders
+    fullName: office.Office.TableBinding.hasHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasHeaders: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Office.TableBinding.rowCount
+    name: rowCount
+    fullName: office.Office.TableBinding.rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowCount: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.TableBinding.setFormatsAsync
+    summary: Sets formatting on specified items and data in the table.
+    name: 'setFormatsAsync(formatsInfo, options, callback)'
+    fullName: office.Office.TableBinding.setFormatsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormatsAsync(formatsInfo?: any[], options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formatsInfo
+          description: >-
+            Array elements are themselves three-element arrays:\[target, type, formats\] target: The identifier of the
+            item to format. String. type: The kind of item to format. String. formats: An object literal containing a
+            list of property name-value pairs that define the formatting to apply.
+          type:
+            - 'any[]'
+        - id: options
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.TableBinding.setTableOptionsAsync
+    summary: Updates table formatting options on the bound table.
+    name: 'setTableOptionsAsync(tableOptions, options, callback)'
+    fullName: office.Office.TableBinding.setTableOptionsAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setTableOptionsAsync(tableOptions: any, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: tableOptions
+          description: An object literal containing a list of property name-value pairs that define the table options to apply.
+          type:
+            - any
+        - id: options
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'

@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.DocumentSelectionChangedEventArgs
+    summary: Provides information about the document that raised the SelectionChanged event.
+    name: Office.DocumentSelectionChangedEventArgs
+    fullName: office.Office.DocumentSelectionChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.DocumentSelectionChangedEventArgs.document
+      - office.Office.DocumentSelectionChangedEventArgs.type
+  - uid: office.Office.DocumentSelectionChangedEventArgs.document
+    summary: Gets a Document object that represents the document that raised the SelectionChanged event.
+    name: document
+    fullName: office.Office.DocumentSelectionChangedEventArgs.document
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'document: Document;'
+      return:
+        type:
+          - Document
+  - uid: office.Office.DocumentSelectionChangedEventArgs.type
+    summary: Get an EventType enumeration value that identifies the kind of event that was raised.
+    name: type
+    fullName: office.Office.DocumentSelectionChangedEventArgs.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: EventType;'
+      return:
+        type:
+          - EventType

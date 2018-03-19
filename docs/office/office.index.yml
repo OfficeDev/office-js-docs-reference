@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.Index
+    name: Office.Index
+    fullName: office.Office.Index
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.Index.First
+      - office.Office.Index.Last
+      - office.Office.Index.Next
+      - office.Office.Index.Previous
+  - uid: office.Office.Index.First
+    name: First
+    fullName: office.Office.Index.First
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.Index.Last
+    name: Last
+    fullName: office.Office.Index.Last
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.Index.Next
+    name: Next
+    fullName: office.Office.Index.Next
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.Index.Previous
+    name: Previous
+    fullName: office.Office.Index.Previous
+    langs:
+      - typeScript
+    type: field

@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.ChartDataLabelFormat
+    summary: |-
+      Encapsulates the format properties for the chart data labels.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.ChartDataLabelFormat
+    fullName: office.Excel.ChartDataLabelFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel.ChartDataLabelFormat.fill
+      - office.Excel.ChartDataLabelFormat.font
+      - office.Excel.ChartDataLabelFormat.load
+      - office.Excel.ChartDataLabelFormat.set
+      - office.Excel.ChartDataLabelFormat.toJSON
+  - uid: office.Excel.ChartDataLabelFormat.fill
+    summary: |-
+      Represents the fill format of the current chart data label. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: fill
+    fullName: office.Excel.ChartDataLabelFormat.fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.ChartFill;'
+      return:
+        type:
+          - Excel.ChartFill
+  - uid: office.Excel.ChartDataLabelFormat.font
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: font
+    fullName: office.Excel.ChartDataLabelFormat.font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Excel.ChartFont;'
+      return:
+        type:
+          - Excel.ChartFont
+  - uid: office.Excel.ChartDataLabelFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel.ChartDataLabelFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartDataLabelFormat;'
+      return:
+        type:
+          - Excel.ChartDataLabelFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel.ChartDataLabelFormat.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: office.Excel.ChartDataLabelFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ChartDataLabelFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartDataLabelFormatUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: office.Excel.ChartDataLabelFormat.toJSON
+    name: toJSON()
+    fullName: office.Excel.ChartDataLabelFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"fill\": ChartFill;\r\n            \"font\": ChartFont;\r\n        }"
+        description: ''

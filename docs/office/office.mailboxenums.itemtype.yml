@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.MailboxEnums.ItemType
+    name: Office.MailboxEnums.ItemType
+    fullName: office.Office.MailboxEnums.ItemType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.MailboxEnums.ItemType.Appointment
+      - office.Office.MailboxEnums.ItemType.Message
+  - uid: office.Office.MailboxEnums.ItemType.Appointment
+    summary: An appointment item
+    name: Appointment
+    fullName: office.Office.MailboxEnums.ItemType.Appointment
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.MailboxEnums.ItemType.Message
+    summary: 'An email, meeting request, meeting response, or meeting cancellation'
+    name: Message
+    fullName: office.Office.MailboxEnums.ItemType.Message
+    langs:
+      - typeScript
+    type: field

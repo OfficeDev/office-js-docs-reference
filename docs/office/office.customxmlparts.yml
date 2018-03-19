@@ -1,0 +1,91 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.CustomXmlParts
+    name: Office.CustomXmlParts
+    fullName: office.Office.CustomXmlParts
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.CustomXmlParts.addAsync
+      - office.Office.CustomXmlParts.getByIdAsync
+      - office.Office.CustomXmlParts.getByNamespaceAsync
+  - uid: office.Office.CustomXmlParts.addAsync
+    summary: Asynchronously adds a new custom XML part to a file.
+    name: 'addAsync(xml, options, callback)'
+    fullName: office.Office.CustomXmlParts.addAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addAsync(xml: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: xml
+          description: The XML to add to the newly created custom XML part.
+          type:
+            - string
+        - id: options
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          type:
+            - any
+        - id: callback
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.CustomXmlParts.getByIdAsync
+    summary: Asynchronously gets the specified custom XML part by its id.
+    name: 'getByIdAsync(id, options, callback)'
+    fullName: office.Office.CustomXmlParts.getByIdAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByIdAsync(id: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: id
+          description: The id of the custom XML part.
+          type:
+            - string
+        - id: options
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          type:
+            - any
+        - id: callback
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.CustomXmlParts.getByNamespaceAsync
+    summary: Asynchronously gets the specified custom XML part(s) by its namespace.
+    name: 'getByNamespaceAsync(ns, options, callback)'
+    fullName: office.Office.CustomXmlParts.getByNamespaceAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByNamespaceAsync(ns: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: ns
+          description: The namespace to search.
+          type:
+            - string
+        - id: options
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          type:
+            - any
+        - id: callback
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          type:
+            - '(result: AsyncResult) => void'

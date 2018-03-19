@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.DialogHandler
+    summary: >-
+      Dialog object returned as part of the displayDialogAsync callback. The object exposes methods for registering
+      event handlers and closing the dialog
+    name: Office.DialogHandler
+    fullName: office.Office.DialogHandler
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.DialogHandler.addEventHandler
+      - office.Office.DialogHandler.close
+  - uid: office.Office.DialogHandler.addEventHandler
+    summary: Adds an event handler for DialogMessageReceived or DialogEventReceived
+    name: 'addEventHandler(eventType, handler)'
+    fullName: office.Office.DialogHandler.addEventHandler
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addEventHandler(eventType: Office.EventType, handler: Function): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: ''
+          type:
+            - Office.EventType
+        - id: handler
+          description: ''
+          type:
+            - Function
+  - uid: office.Office.DialogHandler.close
+    summary: 'When called from an active add-in dialog, asynchronously closes the dialog.'
+    name: close()
+    fullName: office.Office.DialogHandler.close
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'close(): void;'
+      return:
+        type:
+          - void
+        description: ''

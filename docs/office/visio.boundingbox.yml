@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Visio.BoundingBox
+    summary: |-
+      Represents the BoundingBox of the shape.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: Visio.BoundingBox
+    fullName: office.Visio.BoundingBox
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Visio.BoundingBox.height
+      - office.Visio.BoundingBox.width
+      - office.Visio.BoundingBox.x
+      - office.Visio.BoundingBox.y
+  - uid: office.Visio.BoundingBox.height
+    summary: >-
+      The distance between the top and bottom edges of the bounding box of the shape, excluding any data graphics
+      associated with the shape.
+
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: height
+    fullName: office.Visio.BoundingBox.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height: number;'
+      return:
+        type:
+          - number
+  - uid: office.Visio.BoundingBox.width
+    summary: >-
+      The distance between the left and right edges of the bounding box of the shape, excluding any data graphics
+      associated with the shape.
+
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: width
+    fullName: office.Visio.BoundingBox.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width: number;'
+      return:
+        type:
+          - number
+  - uid: office.Visio.BoundingBox.x
+    summary: |-
+      An integer that specifies the x-coordinate of the bounding box.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: x
+    fullName: office.Visio.BoundingBox.x
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'x: number;'
+      return:
+        type:
+          - number
+  - uid: office.Visio.BoundingBox.y
+    summary: |-
+      An integer that specifies the y-coordinate of the bounding box.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: 'y'
+    fullName: office.Visio.BoundingBox.y
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'y: number;'
+      return:
+        type:
+          - number

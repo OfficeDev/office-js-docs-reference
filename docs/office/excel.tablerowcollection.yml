@@ -1,0 +1,166 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Excel.TableRowCollection
+    summary: >-
+      Represents a collection of all the rows that are part of the table.
+
+
+      Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
+      represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows
+      are added, a table row will continue to point at the index for which it was created.
+
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.TableRowCollection
+    fullName: office.Excel.TableRowCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: office
+    children:
+      - office.Excel.TableRowCollection.add
+      - office.Excel.TableRowCollection.count
+      - office.Excel.TableRowCollection.getCount
+      - office.Excel.TableRowCollection.getItemAt
+      - office.Excel.TableRowCollection.items
+      - office.Excel.TableRowCollection.load
+      - office.Excel.TableRowCollection.toJSON
+  - uid: office.Excel.TableRowCollection.add
+    summary: >-
+      Adds one or more rows to the table. The return object will be the top of the newly added row(s).
+
+
+      Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
+      represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows
+      are added, a table row will continue to point at the index for which it was created.
+
+
+      \[ [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows.](http://bing.com) \]
+    name: 'add(index, values)'
+    fullName: office.Excel.TableRowCollection.add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number):
+        Excel.TableRow;
+      return:
+        type:
+          - Excel.TableRow
+        description: ''
+      parameters:
+        - id: index
+          description: >-
+            Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows
+            below the inserted row are shifted downwards. Zero-indexed.
+          type:
+            - number
+        - id: values
+          description: A 2-dimensional array of unformatted values of the table row.
+          type:
+            - Array<Array<boolean | string | number>> | boolean | string | number
+  - uid: office.Excel.TableRowCollection.count
+    summary: |-
+      Returns the number of rows in the table. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: count
+    fullName: office.Excel.TableRowCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: office.Excel.TableRowCollection.getCount
+    summary: |-
+      Gets the number of rows in the table.
+
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+    name: getCount()
+    fullName: office.Excel.TableRowCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: office.Excel.TableRowCollection.getItemAt
+    summary: >-
+      Gets a row based on its position in the collection.
+
+
+      Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
+      represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows
+      are added, a table row will continue to point at the index for which it was created.
+
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: getItemAt(index)
+    fullName: office.Excel.TableRowCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.TableRow;'
+      return:
+        type:
+          - Excel.TableRow
+        description: ''
+      parameters:
+        - id: index
+          description: Index value of the object to be retrieved. Zero-indexed.
+          type:
+            - number
+  - uid: office.Excel.TableRowCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: office.Excel.TableRowCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Array<Excel.TableRow>;'
+      return:
+        type:
+          - Array<Excel.TableRow>
+  - uid: office.Excel.TableRowCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: office.Excel.TableRowCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TableRowCollection;'
+      return:
+        type:
+          - Excel.TableRowCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: office.Excel.TableRowCollection.toJSON
+    name: toJSON()
+    fullName: office.Excel.TableRowCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"count\": number;\r\n        }"
+        description: ''

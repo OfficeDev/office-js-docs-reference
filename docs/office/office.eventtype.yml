@@ -1,0 +1,122 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.EventType
+    name: Office.EventType
+    fullName: office.Office.EventType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.EventType.ActiveViewChanged
+      - office.Office.EventType.BindingDataChanged
+      - office.Office.EventType.BindingSelectionChanged
+      - office.Office.EventType.DialogEventReceived
+      - office.Office.EventType.DialogMessageReceived
+      - office.Office.EventType.DocumentSelectionChanged
+      - office.Office.EventType.ItemChanged
+      - office.Office.EventType.NodeDeleted
+      - office.Office.EventType.NodeInserted
+      - office.Office.EventType.NodeReplaced
+      - office.Office.EventType.ResourceSelectionChanged
+      - office.Office.EventType.SettingsChanged
+      - office.Office.EventType.TaskSelectionChanged
+      - office.Office.EventType.ViewSelectionChanged
+  - uid: office.Office.EventType.ActiveViewChanged
+    summary: Occurs when the user changes the current view of the document.
+    name: ActiveViewChanged
+    fullName: office.Office.EventType.ActiveViewChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.BindingDataChanged
+    summary: Triggers when a binding level data change happens
+    name: BindingDataChanged
+    fullName: office.Office.EventType.BindingDataChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.BindingSelectionChanged
+    summary: Triggers when a binding level selection happens
+    name: BindingSelectionChanged
+    fullName: office.Office.EventType.BindingSelectionChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.DialogEventReceived
+    summary: 'Triggers when Dialog has a event, such as dialog closed, dialog navigation failed.'
+    name: DialogEventReceived
+    fullName: office.Office.EventType.DialogEventReceived
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.DialogMessageReceived
+    summary: Triggers when Dialog sends a message via MessageParent.
+    name: DialogMessageReceived
+    fullName: office.Office.EventType.DialogMessageReceived
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.DocumentSelectionChanged
+    summary: Triggers when a document level selection happens
+    name: DocumentSelectionChanged
+    fullName: office.Office.EventType.DocumentSelectionChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.ItemChanged
+    summary: Triggers when the active item changes
+    name: ItemChanged
+    fullName: office.Office.EventType.ItemChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.NodeDeleted
+    summary: Triggers when a customXmlPart node was deleted
+    name: NodeDeleted
+    fullName: office.Office.EventType.NodeDeleted
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.NodeInserted
+    summary: Triggers when a customXmlPart node was inserted
+    name: NodeInserted
+    fullName: office.Office.EventType.NodeInserted
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.NodeReplaced
+    summary: Triggers when a customXmlPart node was replaced
+    name: NodeReplaced
+    fullName: office.Office.EventType.NodeReplaced
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.ResourceSelectionChanged
+    summary: Triggers when a Resource selection happens in Project.
+    name: ResourceSelectionChanged
+    fullName: office.Office.EventType.ResourceSelectionChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.SettingsChanged
+    summary: Triggers when settings change in a co-Auth session.
+    name: SettingsChanged
+    fullName: office.Office.EventType.SettingsChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.TaskSelectionChanged
+    summary: Triggers when a Task selection happens in Project.
+    name: TaskSelectionChanged
+    fullName: office.Office.EventType.TaskSelectionChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.ViewSelectionChanged
+    summary: Triggers when a View selection happens in Project.
+    name: ViewSelectionChanged
+    fullName: office.Office.EventType.ViewSelectionChanged
+    langs:
+      - typeScript
+    type: field

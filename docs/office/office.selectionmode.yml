@@ -1,0 +1,31 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.SelectionMode
+    name: Office.SelectionMode
+    fullName: office.Office.SelectionMode
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.SelectionMode.Default
+      - office.Office.SelectionMode.None
+      - office.Office.SelectionMode.Selected
+  - uid: office.Office.SelectionMode.Default
+    name: Default
+    fullName: office.Office.SelectionMode.Default
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.SelectionMode.None
+    name: None
+    fullName: office.Office.SelectionMode.None
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.SelectionMode.Selected
+    name: Selected
+    fullName: office.Office.SelectionMode.Selected
+    langs:
+      - typeScript
+    type: field

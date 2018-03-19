@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.ValueFormat
+    name: Office.ValueFormat
+    fullName: office.Office.ValueFormat
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.ValueFormat.Formatted
+      - office.Office.ValueFormat.Unformatted
+  - uid: office.Office.ValueFormat.Formatted
+    summary: Returns items with format
+    name: Formatted
+    fullName: office.Office.ValueFormat.Formatted
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ValueFormat.Unformatted
+    summary: Returns items without format
+    name: Unformatted
+    fullName: office.Office.ValueFormat.Unformatted
+    langs:
+      - typeScript
+    type: field

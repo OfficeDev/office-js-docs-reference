@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeExtension.EventInfo
+    name: OfficeExtension.EventInfo
+    fullName: office.OfficeExtension.EventInfo
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.OfficeExtension.EventInfo.eventArgsTransformFunc
+      - office.OfficeExtension.EventInfo.registerFunc
+      - office.OfficeExtension.EventInfo.unregisterFunc
+  - uid: office.OfficeExtension.EventInfo.eventArgsTransformFunc
+    name: eventArgsTransformFunc
+    fullName: office.OfficeExtension.EventInfo.eventArgsTransformFunc
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'eventArgsTransformFunc: (args: any) => IPromise<T>;'
+      return:
+        type:
+          - '(args: any) => IPromise<T>'
+  - uid: office.OfficeExtension.EventInfo.registerFunc
+    name: registerFunc
+    fullName: office.OfficeExtension.EventInfo.registerFunc
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'registerFunc: (callback: (args: any) => void) => IPromise<any>;'
+      return:
+        type:
+          - '(callback: (args: any) => void) => IPromise<any>'
+  - uid: office.OfficeExtension.EventInfo.unregisterFunc
+    name: unregisterFunc
+    fullName: office.OfficeExtension.EventInfo.unregisterFunc
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'unregisterFunc: (callback: (args: any) => void) => IPromise<any>;'
+      return:
+        type:
+          - '(callback: (args: any) => void) => IPromise<any>'

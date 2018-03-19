@@ -1,0 +1,181 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.CustomXmlPart
+    name: Office.CustomXmlPart
+    fullName: office.Office.CustomXmlPart
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.CustomXmlPart.addHandlerAsync
+      - office.Office.CustomXmlPart.builtIn
+      - office.Office.CustomXmlPart.deleteAsync
+      - office.Office.CustomXmlPart.getNodesAsync
+      - office.Office.CustomXmlPart.getXmlAsync
+      - office.Office.CustomXmlPart.id
+      - office.Office.CustomXmlPart.namespaceManager
+      - office.Office.CustomXmlPart.removeHandlerAsync
+  - uid: office.Office.CustomXmlPart.addHandlerAsync
+    summary: Adds an event handler to the object using the specified event type.
+    name: 'addHandlerAsync(eventType, handler, options, callback)'
+    fullName: office.Office.CustomXmlPart.addHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addHandlerAsync(eventType: EventType, handler?: (result: any) => void, options?: any, callback?: (result:
+        AsyncResult) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: 'The event type. For CustomXmlPartNode it can be ''nodeDeleted'', ''nodeInserted'' or ''nodeReplaced'''
+          type:
+            - EventType
+        - id: handler
+          description: The name of the handler
+          type:
+            - '(result: any) => void'
+        - id: options
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.CustomXmlPart.builtIn
+    name: builtIn
+    fullName: office.Office.CustomXmlPart.builtIn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'builtIn: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Office.CustomXmlPart.deleteAsync
+    summary: Deletes the Custom XML Part.
+    name: 'deleteAsync(options, callback)'
+    fullName: office.Office.CustomXmlPart.deleteAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.CustomXmlPart.getNodesAsync
+    summary: Gets the nodes associated with the xPath expression.
+    name: 'getNodesAsync(xPath, options, callback)'
+    fullName: office.Office.CustomXmlPart.getNodesAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getNodesAsync(xPath: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: xPath
+          description: The xPath expression
+          type:
+            - string
+        - id: options
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.CustomXmlPart.getXmlAsync
+    summary: Gets the XML for the Custom XML Part.
+    name: 'getXmlAsync(options, callback)'
+    fullName: office.Office.CustomXmlPart.getXmlAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getXmlAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.CustomXmlPart.id
+    name: id
+    fullName: office.Office.CustomXmlPart.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.CustomXmlPart.namespaceManager
+    name: namespaceManager
+    fullName: office.Office.CustomXmlPart.namespaceManager
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'namespaceManager: CustomXmlPrefixMappings;'
+      return:
+        type:
+          - CustomXmlPrefixMappings
+  - uid: office.Office.CustomXmlPart.removeHandlerAsync
+    summary: Removes an event handler from the object using the specified event type.
+    name: 'removeHandlerAsync(eventType, options, callback)'
+    fullName: office.Office.CustomXmlPart.removeHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeHandlerAsync(eventType: EventType, options?: any, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: 'The event type. For CustomXmlPartNode it can be ''nodeDeleted'', ''nodeInserted'' or ''nodeReplaced'''
+          type:
+            - EventType
+        - id: options
+          description: >-
+            Syntax example: {handler:eventHandler} handler: Indicates a specific handler to be removed, if not specified
+            all handlers are removed asyncContext: Object keeping state for the callback
+          type:
+            - any
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
