@@ -4,7 +4,7 @@ items:
     summary: |-
       Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.Range
     fullName: excel.Excel.Range
     langs:
@@ -73,7 +73,7 @@ items:
       Read-only.
 
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: address
     fullName: excel.Excel.Range.address
     langs:
@@ -88,7 +88,7 @@ items:
     summary: |-
       Represents range reference for the specified range in the language of the user. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: addressLocal
     fullName: excel.Excel.Range.addressLocal
     langs:
@@ -103,7 +103,7 @@ items:
     summary: |-
       Calculates a range of cells on a worksheet.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: calculate()
     fullName: excel.Excel.Range.calculate
     langs:
@@ -119,7 +119,7 @@ items:
     summary: |-
       Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: cellCount
     fullName: excel.Excel.Range.cellCount
     langs:
@@ -134,7 +134,7 @@ items:
     summary: |-
       Clear range values, format, fill, border, etc.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: clear(applyTo)
     fullName: excel.Excel.Range.clear
     langs:
@@ -155,7 +155,7 @@ items:
     summary: |-
       Represents the total number of columns in the range. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: columnCount
     fullName: excel.Excel.Range.columnCount
     langs:
@@ -170,7 +170,7 @@ items:
     summary: |-
       Represents if all columns of the current range are hidden.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: columnHidden
     fullName: excel.Excel.Range.columnHidden
     langs:
@@ -185,7 +185,7 @@ items:
     summary: |-
       Represents the column number of the first cell in the range. Zero-indexed. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: columnIndex
     fullName: excel.Excel.Range.columnIndex
     langs:
@@ -200,7 +200,7 @@ items:
     summary: |-
       Collection of ConditionalFormats that intersect the range. Read-only.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: conditionalFormats
     fullName: excel.Excel.Range.conditionalFormats
     langs:
@@ -215,7 +215,7 @@ items:
     summary: |-
       Deletes the cells associated with the range.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: delete(shift)
     fullName: excel.Excel.Range.delete
     langs:
@@ -238,7 +238,7 @@ items:
       Read-only.
 
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: format
     fullName: excel.Excel.Range.format
     langs:
@@ -253,7 +253,7 @@ items:
     summary: |-
       Represents the formula in A1-style notation.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: formulas
     fullName: excel.Excel.Range.formulas
     langs:
@@ -270,7 +270,7 @@ items:
       English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
 
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: formulasLocal
     fullName: excel.Excel.Range.formulasLocal
     langs:
@@ -285,7 +285,7 @@ items:
     summary: |-
       Represents the formula in R1C1-style notation.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: formulasR1C1
     fullName: excel.Excel.Range.formulasR1C1
     langs:
@@ -302,7 +302,7 @@ items:
       "D10:E15" is "B2:E16".
 
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getBoundingRect(anotherRange)
     fullName: excel.Excel.Range.getBoundingRect
     langs:
@@ -326,7 +326,7 @@ items:
       to the top left cell of the range.
 
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: 'getCell(row, column)'
     fullName: excel.Excel.Range.getCell
     langs:
@@ -351,7 +351,7 @@ items:
     summary: |-
       Gets a column contained in the range.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getColumn(column)
     fullName: excel.Excel.Range.getColumn
     langs:
@@ -372,7 +372,7 @@ items:
     summary: |-
       Gets a certain number of columns to the right of the current Range object.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: getColumnsAfter(count)
     fullName: excel.Excel.Range.getColumnsAfter
     langs:
@@ -396,7 +396,7 @@ items:
     summary: |-
       Gets a certain number of columns to the left of the current Range object.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: getColumnsBefore(count)
     fullName: excel.Excel.Range.getColumnsBefore
     langs:
@@ -422,7 +422,7 @@ items:
       "B4:E11", it's \`getEntireColumn\` is a range that represents columns "B:E").
 
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getEntireColumn()
     fullName: excel.Excel.Range.getEntireColumn
     langs:
@@ -440,7 +440,7 @@ items:
       "B4:E11", it's \`GetEntireRow\` is a range that represents rows "4:11").
 
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getEntireRow()
     fullName: excel.Excel.Range.getEntireRow
     langs:
@@ -456,7 +456,7 @@ items:
     summary: |-
       Gets the range object that represents the rectangular intersection of the given ranges.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getIntersection(anotherRange)
     fullName: excel.Excel.Range.getIntersection
     langs:
@@ -479,7 +479,7 @@ items:
       found, will return a null object.
 
 
-      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: getIntersectionOrNullObject(anotherRange)
     fullName: excel.Excel.Range.getIntersectionOrNullObject
     langs:
@@ -499,7 +499,7 @@ items:
     remarks: |
 
 
-      ## Snippets
+      #### Examples
 
       ```typescript
       await Excel.run(async (context) => {
@@ -550,7 +550,7 @@ items:
     summary: |-
       Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getLastCell()
     fullName: excel.Excel.Range.getLastCell
     langs:
@@ -566,7 +566,7 @@ items:
     summary: |-
       Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getLastColumn()
     fullName: excel.Excel.Range.getLastColumn
     langs:
@@ -582,7 +582,7 @@ items:
     summary: |-
       Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getLastRow()
     fullName: excel.Excel.Range.getLastRow
     langs:
@@ -601,7 +601,7 @@ items:
       will be thrown.
 
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: 'getOffsetRange(rowOffset, columnOffset)'
     fullName: excel.Excel.Range.getOffsetRange
     langs:
@@ -632,7 +632,7 @@ items:
       by some number of rows and columns.
 
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'getResizedRange(deltaRows, deltaColumns)'
     fullName: excel.Excel.Range.getResizedRange
     langs:
@@ -661,7 +661,7 @@ items:
     summary: |-
       Gets a row contained in the range.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getRow(row)
     fullName: excel.Excel.Range.getRow
     langs:
@@ -682,7 +682,7 @@ items:
     summary: |-
       Gets a certain number of rows above the current Range object.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: getRowsAbove(count)
     fullName: excel.Excel.Range.getRowsAbove
     langs:
@@ -706,7 +706,7 @@ items:
     summary: |-
       Gets a certain number of rows below the current Range object.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: getRowsBelow(count)
     fullName: excel.Excel.Range.getRowsBelow
     langs:
@@ -732,7 +732,7 @@ items:
       throw an ItemNotFound error.
 
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getUsedRange(valuesOnly)
     fullName: excel.Excel.Range.getUsedRange
     langs:
@@ -752,7 +752,7 @@ items:
     remarks: |
 
 
-      ## Snippets
+      #### Examples
 
       ```typescript
       await Excel.run(async (context) => {
@@ -805,7 +805,7 @@ items:
       return a null object.
 
 
-      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: getUsedRangeOrNullObject(valuesOnly)
     fullName: excel.Excel.Range.getUsedRangeOrNullObject
     langs:
@@ -825,7 +825,7 @@ items:
     remarks: |
 
 
-      ## Snippets
+      #### Examples
 
       ```typescript
       await Excel.run(async (context) => {
@@ -859,7 +859,7 @@ items:
     summary: |-
       Represents the visible rows of the current range.
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: getVisibleView()
     fullName: excel.Excel.Range.getVisibleView
     langs:
@@ -875,7 +875,7 @@ items:
     summary: |-
       Represents if all cells of the current range are hidden.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: hidden
     fullName: excel.Excel.Range.hidden
     langs:
@@ -892,7 +892,7 @@ items:
       space. Returns a new Range object at the now blank space.
 
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: insert(shift)
     fullName: excel.Excel.Range.insert
     langs:
@@ -933,7 +933,7 @@ items:
     summary: |-
       Merge the range cells into one region in the worksheet.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: merge(across)
     fullName: excel.Excel.Range.merge
     langs:
@@ -956,7 +956,7 @@ items:
     summary: |-
       Represents Excel's number format code for the given cell.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: numberFormat
     fullName: excel.Excel.Range.numberFormat
     langs:
@@ -971,7 +971,7 @@ items:
     summary: |-
       Returns the total number of rows in the range. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: rowCount
     fullName: excel.Excel.Range.rowCount
     langs:
@@ -986,7 +986,7 @@ items:
     summary: |-
       Represents if all rows of the current range are hidden.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: rowHidden
     fullName: excel.Excel.Range.rowHidden
     langs:
@@ -1001,7 +1001,7 @@ items:
     summary: |-
       Returns the row number of the first cell in the range. Zero-indexed. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: rowIndex
     fullName: excel.Excel.Range.rowIndex
     langs:
@@ -1016,7 +1016,7 @@ items:
     summary: |-
       Selects the specified range in the Excel UI.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: select()
     fullName: excel.Excel.Range.select
     langs:
@@ -1054,7 +1054,7 @@ items:
     summary: |-
       Represents the range sort of the current range.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: sort
     fullName: excel.Excel.Range.sort
     langs:
@@ -1071,7 +1071,7 @@ items:
       that happens in Excel UI will not affect the text value returned by the API. Read-only.
 
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: text
     fullName: excel.Excel.Range.text
     langs:
@@ -1116,7 +1116,7 @@ items:
     summary: |-
       Unmerge the range cells into separate cells.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: unmerge()
     fullName: excel.Excel.Range.unmerge
     langs:
@@ -1151,7 +1151,7 @@ items:
       Cell that contain an error will return the error string.
 
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: values
     fullName: excel.Excel.Range.values
     langs:
@@ -1166,7 +1166,7 @@ items:
     summary: |-
       Represents the type of data of each cell. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: valueTypes
     fullName: excel.Excel.Range.valueTypes
     langs:
@@ -1181,7 +1181,7 @@ items:
     summary: |-
       The worksheet containing the current range. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: worksheet
     fullName: excel.Excel.Range.worksheet
     langs:

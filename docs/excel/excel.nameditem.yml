@@ -6,7 +6,7 @@ items:
       below), range object, reference to a range. This object can be used to obtain range object associated with names.
 
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.NamedItem
     fullName: excel.Excel.NamedItem
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       Represents the comment associated with this name.
 
-      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: comment
     fullName: excel.Excel.NamedItem.comment
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       Deletes the given name.
 
-      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: delete()
     fullName: excel.Excel.NamedItem.delete
     langs:
@@ -64,7 +64,7 @@ items:
     remarks: |
 
 
-      ## Snippets
+      #### Examples
 
       ```typescript
       try {
@@ -92,7 +92,7 @@ items:
       range.
 
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getRange()
     fullName: excel.Excel.NamedItem.getRange
     langs:
@@ -110,7 +110,7 @@ items:
       range.
 
 
-      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: getRangeOrNullObject()
     fullName: excel.Excel.NamedItem.getRangeOrNullObject
     langs:
@@ -146,7 +146,7 @@ items:
     summary: |-
       The name of the object. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: name
     fullName: excel.Excel.NamedItem.name
     langs:
@@ -161,7 +161,7 @@ items:
     summary: |-
       Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.
 
-      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: scope
     fullName: excel.Excel.NamedItem.scope
     langs:
@@ -210,7 +210,7 @@ items:
     summary: |-
       Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: type
     fullName: excel.Excel.NamedItem.type
     langs:
@@ -225,7 +225,7 @@ items:
     summary: |-
       Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: value
     fullName: excel.Excel.NamedItem.value
     langs:
@@ -240,7 +240,7 @@ items:
     summary: |-
       Specifies whether the object is visible or not.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: visible
     fullName: excel.Excel.NamedItem.visible
     langs:
@@ -257,7 +257,7 @@ items:
       instead.
 
 
-      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: worksheet
     fullName: excel.Excel.NamedItem.worksheet
     langs:
@@ -274,7 +274,7 @@ items:
       workbook instead.
 
 
-      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: worksheetOrNullObject
     fullName: excel.Excel.NamedItem.worksheetOrNullObject
     langs:

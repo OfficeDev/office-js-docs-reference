@@ -4,7 +4,7 @@ items:
     summary: |-
       A collection of custom XML parts.
 
-      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com?type=excel) \]
     name: Excel.CustomXmlPartCollection
     fullName: excel.Excel.CustomXmlPartCollection
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Adds a new custom XML part to the workbook.
 
-      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com?type=excel) \]
     name: add(xml)
     fullName: excel.Excel.CustomXmlPartCollection.add
     langs:
@@ -47,7 +47,7 @@ items:
     summary: |-
       Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.
 
-      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com?type=excel) \]
     name: getByNamespace(namespaceUri)
     fullName: excel.Excel.CustomXmlPartCollection.getByNamespace
     langs:
@@ -68,7 +68,7 @@ items:
     summary: |-
       Gets the number of CustomXml parts in the collection.
 
-      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com?type=excel) \]
     name: getCount()
     fullName: excel.Excel.CustomXmlPartCollection.getCount
     langs:
@@ -84,7 +84,7 @@ items:
     summary: |-
       Gets a custom XML part based on its ID.
 
-      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com?type=excel) \]
     name: getItem(id)
     fullName: excel.Excel.CustomXmlPartCollection.getItem
     langs:
@@ -107,7 +107,7 @@ items:
       will be true.
 
 
-      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.5](http://bing.com?type=excel) \]
     name: getItemOrNullObject(id)
     fullName: excel.Excel.CustomXmlPartCollection.getItemOrNullObject
     langs:

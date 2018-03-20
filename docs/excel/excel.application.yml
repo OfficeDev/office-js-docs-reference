@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Excel application that manages the workbook.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.Application
     fullName: excel.Excel.Application
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Recalculate all currently opened workbooks in Excel.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: calculate(calculationType)
     fullName: excel.Excel.Application.calculate
     langs:
@@ -44,7 +44,7 @@ items:
     summary: |-
       Returns the calculation mode used in the workbook. See Excel.CalculationMode for details. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: calculationMode
     fullName: excel.Excel.Application.calculationMode
     langs:
@@ -81,7 +81,7 @@ items:
       re-calc the workbook, to ensure that any dependencies are propagated.
 
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: suspendApiCalculationUntilNextSync()
     fullName: excel.Excel.Application.suspendApiCalculationUntilNextSync
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of all the conditional formats that are overlap the range.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: Excel.ConditionalFormatCollection
     fullName: excel.Excel.ConditionalFormatCollection
     langs:
@@ -25,7 +25,7 @@ items:
     summary: |-
       Adds a new conditional format to the collection at the first/top priority.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: add(type)
     fullName: excel.Excel.ConditionalFormatCollection.add
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       Clears all conditional formats active on the current specified range.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: clearAll()
     fullName: excel.Excel.ConditionalFormatCollection.clearAll
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Returns the number of conditional formats in the workbook. Read-only.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: getCount()
     fullName: excel.Excel.ConditionalFormatCollection.getCount
     langs:
@@ -78,7 +78,7 @@ items:
     summary: |-
       Returns a conditional format at the given index.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: getItemAt(index)
     fullName: excel.Excel.ConditionalFormatCollection.getItemAt
     langs:
@@ -98,7 +98,7 @@ items:
     remarks: |
 
 
-      ## Snippets
+      #### Examples
 
       ```typescript
       await Excel.run(async (context) => {

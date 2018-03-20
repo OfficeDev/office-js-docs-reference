@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Hyperlink.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: Visio.Hyperlink
     fullName: visio.Visio.Hyperlink
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Gets the address of the Hyperlink object.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: address
     fullName: visio.Visio.Hyperlink.address
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Gets the description of a hyperlink.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: description
     fullName: visio.Visio.Hyperlink.description
     langs:
@@ -54,7 +54,7 @@ items:
     summary: |-
       Gets the extra info of a hyperlink.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: extraInfo
     fullName: visio.Visio.Hyperlink.extraInfo
     langs:
@@ -89,7 +89,7 @@ items:
     summary: |-
       Gets the sub-address of the Hyperlink object.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: subAddress
     fullName: visio.Visio.Hyperlink.subAddress
     langs:

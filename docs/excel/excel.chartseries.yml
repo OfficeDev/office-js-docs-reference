@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a series in a chart.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.ChartSeries
     fullName: excel.Excel.ChartSeries
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: format
     fullName: excel.Excel.ChartSeries.format
     langs:
@@ -59,7 +59,7 @@ items:
     summary: |-
       Represents the name of a series in a chart.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: name
     fullName: excel.Excel.ChartSeries.name
     langs:
@@ -74,7 +74,7 @@ items:
     summary: |-
       Represents a collection of all points in the series. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: points
     fullName: excel.Excel.ChartSeries.points
     langs:

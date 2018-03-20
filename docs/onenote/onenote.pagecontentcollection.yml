@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the contents of a page, as a collection of PageContent objects.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.PageContentCollection
     fullName: onenote.OneNote.PageContentCollection
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Returns the number of page contents in the collection. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: count
     fullName: onenote.OneNote.PageContentCollection.count
     langs:

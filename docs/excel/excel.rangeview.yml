@@ -4,7 +4,7 @@ items:
     summary: |-
       RangeView represents a set of visible cells of the parent range.
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: Excel.RangeView
     fullName: excel.Excel.RangeView
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       Represents the cell addresses of the RangeView.
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: cellAddresses
     fullName: excel.Excel.RangeView.cellAddresses
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       Returns the number of visible columns. Read-only.
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: columnCount
     fullName: excel.Excel.RangeView.columnCount
     langs:
@@ -64,7 +64,7 @@ items:
     summary: |-
       Represents the formula in A1-style notation.
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: formulas
     fullName: excel.Excel.RangeView.formulas
     langs:
@@ -81,7 +81,7 @@ items:
       English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
 
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: formulasLocal
     fullName: excel.Excel.RangeView.formulasLocal
     langs:
@@ -96,7 +96,7 @@ items:
     summary: |-
       Represents the formula in R1C1-style notation.
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: formulasR1C1
     fullName: excel.Excel.RangeView.formulasR1C1
     langs:
@@ -111,7 +111,7 @@ items:
     summary: |-
       Gets the parent range associated with the current RangeView.
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: getRange()
     fullName: excel.Excel.RangeView.getRange
     langs:
@@ -127,7 +127,7 @@ items:
     summary: |-
       Returns a value that represents the index of the RangeView. Read-only.
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: index
     fullName: excel.Excel.RangeView.index
     langs:
@@ -162,7 +162,7 @@ items:
     summary: |-
       Represents Excel's number format code for the given cell.
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: numberFormat
     fullName: excel.Excel.RangeView.numberFormat
     langs:
@@ -177,7 +177,7 @@ items:
     summary: |-
       Returns the number of visible rows. Read-only.
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: rowCount
     fullName: excel.Excel.RangeView.rowCount
     langs:
@@ -192,7 +192,7 @@ items:
     summary: |-
       Represents a collection of range views associated with the range. Read-only.
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: rows
     fullName: excel.Excel.RangeView.rows
     langs:
@@ -231,7 +231,7 @@ items:
       that happens in Excel UI will not affect the text value returned by the API. Read-only.
 
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: text
     fullName: excel.Excel.RangeView.text
     langs:
@@ -260,7 +260,7 @@ items:
       boolean. Cell that contain an error will return the error string.
 
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: values
     fullName: excel.Excel.RangeView.values
     langs:
@@ -275,7 +275,7 @@ items:
     summary: |-
       Represents the type of data of each cell. Read-only.
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: valueTypes
     fullName: excel.Excel.RangeView.valueTypes
     langs:

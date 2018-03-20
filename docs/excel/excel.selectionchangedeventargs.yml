@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides information about the document that raised the SelectionChanged event.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: Excel.SelectionChangedEventArgs
     fullName: excel.Excel.SelectionChangedEventArgs
     langs:
@@ -17,7 +17,7 @@ items:
     summary: |-
       Gets the workbook object that raised the SelectionChanged event.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: workbook
     fullName: excel.Excel.SelectionChangedEventArgs.workbook
     langs:

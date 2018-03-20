@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a section in a Word document.
 
-      \[ [Api set: WordApi 1.1](http://bing.com) \]
+      \[ [Api set: WordApi 1.1](http://bing.com?type=word) \]
     name: Word.Section
     fullName: word.Word.Section
     langs:
@@ -30,7 +30,7 @@ items:
       Read-only.
 
 
-      \[ [Api set: WordApi 1.1](http://bing.com) \]
+      \[ [Api set: WordApi 1.1](http://bing.com?type=word) \]
     name: body
     fullName: word.Word.Section.body
     langs:
@@ -45,7 +45,7 @@ items:
     summary: |-
       Gets one of the section's footers.
 
-      \[ [Api set: WordApi 1.1](http://bing.com) \]
+      \[ [Api set: WordApi 1.1](http://bing.com?type=word) \]
     name: getFooter(type)
     fullName: word.Word.Section.getFooter
     langs:
@@ -66,7 +66,7 @@ items:
     summary: |-
       Gets one of the section's headers.
 
-      \[ [Api set: WordApi 1.1](http://bing.com) \]
+      \[ [Api set: WordApi 1.1](http://bing.com?type=word) \]
     name: getHeader(type)
     fullName: word.Word.Section.getHeader
     langs:
@@ -87,7 +87,7 @@ items:
     summary: |-
       Gets the next section. Throws if this section is the last one.
 
-      \[ [Api set: WordApi 1.3](http://bing.com) \]
+      \[ [Api set: WordApi 1.3](http://bing.com?type=word) \]
     name: getNext()
     fullName: word.Word.Section.getNext
     langs:
@@ -103,7 +103,7 @@ items:
     summary: |-
       Gets the next section. Returns a null object if this section is the last one.
 
-      \[ [Api set: WordApi 1.3](http://bing.com) \]
+      \[ [Api set: WordApi 1.3](http://bing.com?type=word) \]
     name: getNextOrNullObject()
     fullName: word.Word.Section.getNextOrNullObject
     langs:

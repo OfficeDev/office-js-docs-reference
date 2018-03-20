@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a chart title object of a chart.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.ChartTitle
     fullName: excel.Excel.ChartTitle
     langs:
@@ -25,7 +25,7 @@ items:
     summary: |-
       Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: format
     fullName: excel.Excel.ChartTitle.format
     langs:
@@ -60,7 +60,7 @@ items:
     summary: |-
       Boolean value representing if the chart title will overlay the chart or not.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: overlay
     fullName: excel.Excel.ChartTitle.overlay
     langs:
@@ -97,7 +97,7 @@ items:
     summary: |-
       Represents the title text of a chart.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: text
     fullName: excel.Excel.ChartTitle.text
     langs:
@@ -124,7 +124,7 @@ items:
     summary: |-
       A boolean value the represents the visibility of a chart title object.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: visible
     fullName: excel.Excel.ChartTitle.visible
     langs:

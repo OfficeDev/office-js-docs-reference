@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the ShapeDataItem.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: Visio.ShapeDataItem
     fullName: visio.Visio.ShapeDataItem
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       A string that specifies the format of the shape data item.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: format
     fullName: visio.Visio.ShapeDataItem.format
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       A string that specifies the formatted value of the shape data item.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: formattedValue
     fullName: visio.Visio.ShapeDataItem.formattedValue
     langs:
@@ -54,7 +54,7 @@ items:
     summary: |-
       A string that specifies the label of the shape data item.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: label
     fullName: visio.Visio.ShapeDataItem.label
     langs:
@@ -101,7 +101,7 @@ items:
     summary: |-
       A string that specifies the value of the shape data item.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: value
     fullName: visio.Visio.ShapeDataItem.value
     langs:

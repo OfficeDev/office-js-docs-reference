@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a Cell Value Conditional Format Rule
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: Excel.ConditionalTextComparisonRule
     fullName: excel.Excel.ConditionalTextComparisonRule
     langs:
@@ -18,7 +18,7 @@ items:
     summary: |-
       The operator of the text conditional format.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: operator
     fullName: excel.Excel.ConditionalTextComparisonRule.operator
     langs:
@@ -33,7 +33,7 @@ items:
     summary: |-
       The Text value of conditional format.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: text
     fullName: excel.Excel.ConditionalTextComparisonRule.text
     langs:

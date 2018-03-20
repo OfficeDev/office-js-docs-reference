@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a table in a OneNote page.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.Table
     fullName: onenote.OneNote.Table
     langs:
@@ -74,7 +74,7 @@ items:
     summary: |-
       Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: borderVisible
     fullName: onenote.OneNote.Table.borderVisible
     langs:
@@ -89,7 +89,7 @@ items:
     summary: |-
       Clears the contents of the table.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: clear()
     fullName: onenote.OneNote.Table.clear
     langs:
@@ -105,7 +105,7 @@ items:
     summary: |-
       Gets the number of columns in the table.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: columnCount
     fullName: onenote.OneNote.Table.columnCount
     langs:
@@ -142,7 +142,7 @@ items:
     summary: |-
       Gets the ID of the table. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: id
     fullName: onenote.OneNote.Table.id
     langs:
@@ -229,7 +229,7 @@ items:
     summary: |-
       Gets the Paragraph object that contains the Table object. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: paragraph
     fullName: onenote.OneNote.Table.paragraph
     langs:
@@ -244,7 +244,7 @@ items:
     summary: |-
       Gets the number of rows in the table.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: rowCount
     fullName: onenote.OneNote.Table.rowCount
     langs:
@@ -259,7 +259,7 @@ items:
     summary: |-
       Gets all of the table rows. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: rows
     fullName: onenote.OneNote.Table.rows
     langs:

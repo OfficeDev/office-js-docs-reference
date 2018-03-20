@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents an Excel Conditional Data Bar Type.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: Excel.DataBarConditionalFormat
     fullName: excel.Excel.DataBarConditionalFormat
     langs:
@@ -31,7 +31,7 @@ items:
       color (e.g. "orange"). "" (empty string) if no axis is present or set.
 
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: axisColor
     fullName: excel.Excel.DataBarConditionalFormat.axisColor
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       Representation of how the axis is determined for an Excel data bar.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: axisFormat
     fullName: excel.Excel.DataBarConditionalFormat.axisFormat
     langs:
@@ -61,7 +61,7 @@ items:
     summary: |-
       Represents the direction that the data bar graphic should be based on.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: barDirection
     fullName: excel.Excel.DataBarConditionalFormat.barDirection
     langs:
@@ -96,7 +96,7 @@ items:
     summary: |-
       The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: lowerBoundRule
     fullName: excel.Excel.DataBarConditionalFormat.lowerBoundRule
     langs:
@@ -111,7 +111,7 @@ items:
     summary: |-
       Representation of all values to the left of the axis in an Excel data bar.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: negativeFormat
     fullName: excel.Excel.DataBarConditionalFormat.negativeFormat
     langs:
@@ -126,7 +126,7 @@ items:
     summary: |-
       Representation of all values to the right of the axis in an Excel data bar.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: positiveFormat
     fullName: excel.Excel.DataBarConditionalFormat.positiveFormat
     langs:
@@ -163,7 +163,7 @@ items:
     summary: |-
       If true, hides the values from the cells where the data bar is applied.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: showDataBarOnly
     fullName: excel.Excel.DataBarConditionalFormat.showDataBarOnly
     langs:
@@ -190,7 +190,7 @@ items:
     summary: |-
       The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: upperBoundRule
     fullName: excel.Excel.DataBarConditionalFormat.upperBoundRule
     langs:

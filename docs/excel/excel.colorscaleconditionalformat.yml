@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents an IconSet criteria for conditional formatting.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: Excel.ColorScaleConditionalFormat
     fullName: excel.Excel.ColorScaleConditionalFormat
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       The criteria of the color scale. Midpoint is optional when using a two point color scale.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: criteria
     fullName: excel.Excel.ColorScaleConditionalFormat.criteria
     langs:
@@ -82,7 +82,7 @@ items:
       maximum).
 
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: threeColorScale
     fullName: excel.Excel.ColorScaleConditionalFormat.threeColorScale
     langs:

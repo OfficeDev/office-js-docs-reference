@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Page class.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: Visio.Page
     fullName: visio.Visio.Page
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Set the page as Active Page of the document.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: activate()
     fullName: visio.Visio.Page.activate
     langs:
@@ -47,7 +47,7 @@ items:
     summary: |-
       All shapes in the page. Read-only.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: allShapes
     fullName: visio.Visio.Page.allShapes
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Returns the Comments Collection
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: comments
     fullName: visio.Visio.Page.comments
     langs:
@@ -77,7 +77,7 @@ items:
     summary: |-
       Returns the height of the page. Read-only.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: height
     fullName: visio.Visio.Page.height
     langs:
@@ -92,7 +92,7 @@ items:
     summary: |-
       Index of the Page.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: index
     fullName: visio.Visio.Page.index
     langs:
@@ -107,7 +107,7 @@ items:
     summary: |-
       Whether the page is a background page or not. Read-only.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: isBackground
     fullName: visio.Visio.Page.isBackground
     langs:
@@ -142,7 +142,7 @@ items:
     summary: |-
       Page name. Read-only.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: name
     fullName: visio.Visio.Page.name
     langs:
@@ -179,7 +179,7 @@ items:
     summary: |-
       Shapes at root level, in the page. Read-only.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: shapes
     fullName: visio.Visio.Page.shapes
     langs:
@@ -206,7 +206,7 @@ items:
     summary: |-
       Returns the view of the page. Read-only.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: view
     fullName: visio.Visio.Page.view
     langs:
@@ -221,7 +221,7 @@ items:
     summary: |-
       Returns the width of the page. Read-only.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: width
     fullName: visio.Visio.Page.width
     langs:

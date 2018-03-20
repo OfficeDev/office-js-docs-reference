@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a column in a table.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.TableColumn
     fullName: excel.Excel.TableColumn
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Deletes the column from the table.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: delete()
     fullName: excel.Excel.TableColumn.delete
     langs:
@@ -47,7 +47,7 @@ items:
     summary: |-
       Retrieve the filter applied to the column.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: filter
     fullName: excel.Excel.TableColumn.filter
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Gets the range object associated with the data body of the column.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getDataBodyRange()
     fullName: excel.Excel.TableColumn.getDataBodyRange
     langs:
@@ -78,7 +78,7 @@ items:
     summary: |-
       Gets the range object associated with the header row of the column.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getHeaderRowRange()
     fullName: excel.Excel.TableColumn.getHeaderRowRange
     langs:
@@ -94,7 +94,7 @@ items:
     summary: |-
       Gets the range object associated with the entire column.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getRange()
     fullName: excel.Excel.TableColumn.getRange
     langs:
@@ -110,7 +110,7 @@ items:
     summary: |-
       Gets the range object associated with the totals row of the column.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getTotalRowRange()
     fullName: excel.Excel.TableColumn.getTotalRowRange
     langs:
@@ -126,7 +126,7 @@ items:
     summary: |-
       Returns a unique key that identifies the column within the table. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: id
     fullName: excel.Excel.TableColumn.id
     langs:
@@ -141,7 +141,7 @@ items:
     summary: |-
       Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: index
     fullName: excel.Excel.TableColumn.index
     langs:
@@ -176,7 +176,7 @@ items:
     summary: |-
       Represents the name of the table column.
 
-      \[ [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.](http://bing.com?type=excel) \]
     name: name
     fullName: excel.Excel.TableColumn.name
     langs:
@@ -227,7 +227,7 @@ items:
       Cell that contain an error will return the error string.
 
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: values
     fullName: excel.Excel.TableColumn.values
     langs:

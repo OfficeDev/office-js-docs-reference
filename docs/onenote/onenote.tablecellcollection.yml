@@ -4,7 +4,7 @@ items:
     summary: |-
       Contains a collection of TableCell objects.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.TableCellCollection
     fullName: onenote.OneNote.TableCellCollection
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Returns the number of tablecells in this collection. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: count
     fullName: onenote.OneNote.TableCellCollection.count
     langs:

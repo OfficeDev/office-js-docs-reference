@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a OneNote section group. Section groups can contain sections and other section groups.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.SectionGroup
     fullName: onenote.OneNote.SectionGroup
     langs:
@@ -65,7 +65,7 @@ items:
     summary: |-
       The client url of the section group. Read only
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: clientUrl
     fullName: onenote.OneNote.SectionGroup.clientUrl
     langs:
@@ -80,7 +80,7 @@ items:
     summary: |-
       Gets the ID of the section group. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: id
     fullName: onenote.OneNote.SectionGroup.id
     langs:
@@ -115,7 +115,7 @@ items:
     summary: |-
       Gets the name of the section group. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: name
     fullName: onenote.OneNote.SectionGroup.name
     langs:
@@ -130,7 +130,7 @@ items:
     summary: |-
       Gets the notebook that contains the section group. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: notebook
     fullName: onenote.OneNote.SectionGroup.notebook
     langs:
@@ -147,7 +147,7 @@ items:
       of the notebook. Read-only.
 
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: parentSectionGroup
     fullName: onenote.OneNote.SectionGroup.parentSectionGroup
     langs:
@@ -164,7 +164,7 @@ items:
       notebook. Read-only.
 
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: parentSectionGroupOrNull
     fullName: onenote.OneNote.SectionGroup.parentSectionGroupOrNull
     langs:
@@ -179,7 +179,7 @@ items:
     summary: |-
       The collection of section groups in the section group. Read only
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: sectionGroups
     fullName: onenote.OneNote.SectionGroup.sectionGroups
     langs:
@@ -194,7 +194,7 @@ items:
     summary: |-
       The collection of sections in the section group. Read only
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: sections
     fullName: onenote.OneNote.SectionGroup.sections
     langs:

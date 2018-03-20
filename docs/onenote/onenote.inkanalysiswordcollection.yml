@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of InkAnalysisWord objects.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=word) \]
     name: OneNote.InkAnalysisWordCollection
     fullName: onenote.OneNote.InkAnalysisWordCollection
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Returns the number of InkAnalysisWords in the page. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=word) \]
     name: count
     fullName: onenote.OneNote.InkAnalysisWordCollection.count
     langs:

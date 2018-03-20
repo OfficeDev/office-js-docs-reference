@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a conditional format DataBar Format for the negative side of the data bar.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: Excel.ConditionalDataBarNegativeFormat
     fullName: excel.Excel.ConditionalDataBarNegativeFormat
     langs:
@@ -27,7 +27,7 @@ items:
       color (e.g. "orange"). "Empty String" if no border is present or set.
 
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: borderColor
     fullName: excel.Excel.ConditionalDataBarNegativeFormat.borderColor
     langs:
@@ -44,7 +44,7 @@ items:
       "orange").
 
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: fillColor
     fullName: excel.Excel.ConditionalDataBarNegativeFormat.fillColor
     langs:
@@ -79,7 +79,7 @@ items:
     summary: |-
       Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: matchPositiveBorderColor
     fullName: excel.Excel.ConditionalDataBarNegativeFormat.matchPositiveBorderColor
     langs:
@@ -94,7 +94,7 @@ items:
     summary: |-
       Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: matchPositiveFillColor
     fullName: excel.Excel.ConditionalDataBarNegativeFormat.matchPositiveFillColor
     langs:

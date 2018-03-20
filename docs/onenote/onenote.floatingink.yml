@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a group of ink strokes.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.FloatingInk
     fullName: onenote.OneNote.FloatingInk
     langs:
@@ -22,7 +22,7 @@ items:
     summary: |-
       Gets the ID of the FloatingInk object. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: id
     fullName: onenote.OneNote.FloatingInk.id
     langs:
@@ -37,7 +37,7 @@ items:
     summary: |-
       Gets the strokes of the FloatingInk object. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: inkStrokes
     fullName: onenote.OneNote.FloatingInk.inkStrokes
     langs:
@@ -72,7 +72,7 @@ items:
     summary: |-
       Gets the PageContent parent of the FloatingInk object. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: pageContent
     fullName: onenote.OneNote.FloatingInk.pageContent
     langs:

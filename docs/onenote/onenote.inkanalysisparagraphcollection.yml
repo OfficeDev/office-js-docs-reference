@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of InkAnalysisParagraph objects.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.InkAnalysisParagraphCollection
     fullName: onenote.OneNote.InkAnalysisParagraphCollection
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Returns the number of InkAnalysisParagraphs in the page. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: count
     fullName: onenote.OneNote.InkAnalysisParagraphCollection.count
     langs:

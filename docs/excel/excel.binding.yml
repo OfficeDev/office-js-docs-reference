@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents an Office.js binding that is defined in the workbook.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.Binding
     fullName: excel.Excel.Binding
     langs:
@@ -28,7 +28,7 @@ items:
     summary: |-
       Deletes the binding.
 
-      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: delete()
     fullName: excel.Excel.Binding.delete
     langs:
@@ -44,7 +44,7 @@ items:
     summary: |-
       Returns the range represented by the binding. Will throw an error if binding is not of the correct type.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getRange()
     fullName: excel.Excel.Binding.getRange
     langs:
@@ -60,7 +60,7 @@ items:
     summary: |-
       Returns the table represented by the binding. Will throw an error if binding is not of the correct type.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getTable()
     fullName: excel.Excel.Binding.getTable
     langs:
@@ -76,7 +76,7 @@ items:
     summary: |-
       Returns the text represented by the binding. Will throw an error if binding is not of the correct type.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getText()
     fullName: excel.Excel.Binding.getText
     langs:
@@ -92,7 +92,7 @@ items:
     summary: |-
       Represents binding identifier. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: id
     fullName: excel.Excel.Binding.id
     langs:
@@ -127,7 +127,7 @@ items:
     summary: |-
       Occurs when data or formatting within the binding is changed.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: onDataChanged
     fullName: excel.Excel.Binding.onDataChanged
     langs:
@@ -159,7 +159,7 @@ items:
     summary: |-
       Occurs when the selection is changed within the binding.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: onSelectionChanged
     fullName: excel.Excel.Binding.onSelectionChanged
     langs:
@@ -186,7 +186,7 @@ items:
     summary: |-
       Returns the type of the binding. See Excel.BindingType for details. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: type
     fullName: excel.Excel.Binding.type
     langs:

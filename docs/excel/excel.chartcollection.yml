@@ -4,7 +4,7 @@ items:
     summary: |-
       A collection of all the chart objects on a worksheet.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.ChartCollection
     fullName: excel.Excel.ChartCollection
     langs:
@@ -27,7 +27,7 @@ items:
     summary: |-
       Creates a new chart.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: 'add(type, sourceData, seriesBy)'
     fullName: excel.Excel.ChartCollection.add
     langs:
@@ -56,7 +56,7 @@ items:
     summary: |-
       Returns the number of charts in the worksheet. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: count
     fullName: excel.Excel.ChartCollection.count
     langs:
@@ -71,7 +71,7 @@ items:
     summary: |-
       Returns the number of charts in the worksheet.
 
-      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: getCount()
     fullName: excel.Excel.ChartCollection.getCount
     langs:
@@ -87,7 +87,7 @@ items:
     summary: |-
       Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getItem(name)
     fullName: excel.Excel.ChartCollection.getItem
     langs:
@@ -108,7 +108,7 @@ items:
     summary: |-
       Gets a chart based on its position in the collection.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getItemAt(index)
     fullName: excel.Excel.ChartCollection.getItemAt
     langs:
@@ -131,7 +131,7 @@ items:
       the chart does not exist, will return a null object.
 
 
-      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: getItemOrNullObject(name)
     fullName: excel.Excel.ChartCollection.getItemOrNullObject
     langs:

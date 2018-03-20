@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the format protection of a range object.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: Excel.FormatProtection
     fullName: excel.Excel.FormatProtection
     langs:
@@ -25,7 +25,7 @@ items:
       doesn't have uniform formula hidden setting.
 
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: formulaHidden
     fullName: excel.Excel.FormatProtection.formulaHidden
     langs:
@@ -62,7 +62,7 @@ items:
       uniform lock setting.
 
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: locked
     fullName: excel.Excel.FormatProtection.locked
     langs:

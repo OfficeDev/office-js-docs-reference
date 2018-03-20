@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the DocumentView class.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: Visio.DocumentView
     fullName: visio.Visio.DocumentView
     langs:
@@ -25,7 +25,7 @@ items:
     summary: |-
       Disable Hyperlinks.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: disableHyperlinks
     fullName: visio.Visio.DocumentView.disableHyperlinks
     langs:
@@ -40,7 +40,7 @@ items:
     summary: |-
       Disable Pan.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: disablePan
     fullName: visio.Visio.DocumentView.disablePan
     langs:
@@ -55,7 +55,7 @@ items:
     summary: |-
       Disable Zoom.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: disableZoom
     fullName: visio.Visio.DocumentView.disableZoom
     langs:
@@ -70,7 +70,7 @@ items:
     summary: |-
       Disable Hyperlinks.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: hideDiagramBoundary
     fullName: visio.Visio.DocumentView.hideDiagramBoundary
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Preset Criteria Conditional Format Rule
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: Excel.ConditionalPresetCriteriaRule
     fullName: excel.Excel.ConditionalPresetCriteriaRule
     langs:
@@ -17,7 +17,7 @@ items:
     summary: |-
       The criterion of the conditional format.
 
-      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com) \]
+      \[ [Api set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: criterion
     fullName: excel.Excel.ConditionalPresetCriteriaRule.criterion
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Selection in the page.
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: Visio.Selection
     fullName: visio.Visio.Selection
     langs:
@@ -41,7 +41,7 @@ items:
     summary: |-
       Gets the Shapes of the Selection
 
-      \[ [Api set: 1.1](http://bing.com) \]
+      \[ [Api set: 1.1](http://bing.com?type=visio) \]
     name: shapes
     fullName: visio.Visio.Selection.shapes
     langs:
