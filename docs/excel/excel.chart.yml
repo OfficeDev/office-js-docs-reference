@@ -84,7 +84,7 @@ items:
 
       #### Examples
 
-      ```typescript
+      ```javascript
       Excel.run(function (ctx) { 
           var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
           chart.delete();

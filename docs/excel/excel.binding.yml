@@ -141,7 +141,7 @@ items:
     remarks: |
 
 
-      ## Snippets
+      #### Examples
 
       ```typescript
       await Excel.run(async (context) => {
