@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.MeetingSuggestion
+    name: Office.MeetingSuggestion
+    fullName: outlook.Office.MeetingSuggestion
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.MeetingSuggestion.attendees
+      - outlook.Office.MeetingSuggestion.end
+      - outlook.Office.MeetingSuggestion.location
+      - outlook.Office.MeetingSuggestion.meetingstring
+      - outlook.Office.MeetingSuggestion.start
+      - outlook.Office.MeetingSuggestion.subject
+  - uid: outlook.Office.MeetingSuggestion.attendees
+    name: attendees
+    fullName: outlook.Office.MeetingSuggestion.attendees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attendees: Array<EmailUser>;'
+      return:
+        type:
+          - Array<EmailUser>
+  - uid: outlook.Office.MeetingSuggestion.end
+    name: end
+    fullName: outlook.Office.MeetingSuggestion.end
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'end: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.MeetingSuggestion.location
+    name: location
+    fullName: outlook.Office.MeetingSuggestion.location
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'location: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.MeetingSuggestion.meetingstring
+    name: meetingstring
+    fullName: outlook.Office.MeetingSuggestion.meetingstring
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'meetingstring: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.MeetingSuggestion.start
+    name: start
+    fullName: outlook.Office.MeetingSuggestion.start
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'start: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.MeetingSuggestion.subject
+    name: subject
+    fullName: outlook.Office.MeetingSuggestion.subject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subject: string;'
+      return:
+        type:
+          - string

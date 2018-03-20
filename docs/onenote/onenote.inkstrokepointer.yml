@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.InkStrokePointer
+    summary: |-
+      Weak reference to an ink stroke object and its content parent
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: OneNote.InkStrokePointer
+    fullName: onenote.OneNote.InkStrokePointer
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.InkStrokePointer.contentId
+      - onenote.OneNote.InkStrokePointer.inkStrokeId
+  - uid: onenote.OneNote.InkStrokePointer.contentId
+    summary: |-
+      Represents the id of the page content object corresponding to this stroke
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: contentId
+    fullName: onenote.OneNote.InkStrokePointer.contentId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contentId: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.InkStrokePointer.inkStrokeId
+    summary: |-
+      Represents the id of the ink stroke
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: inkStrokeId
+    fullName: onenote.OneNote.InkStrokePointer.inkStrokeId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inkStrokeId: string;'
+      return:
+        type:
+          - string

@@ -1,0 +1,234 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Page
+    summary: |-
+      Represents the Page class.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: Visio.Page
+    fullName: visio.Visio.Page
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: visio
+    children:
+      - visio.Visio.Page.activate
+      - visio.Visio.Page.allShapes
+      - visio.Visio.Page.comments
+      - visio.Visio.Page.height
+      - visio.Visio.Page.index
+      - visio.Visio.Page.isBackground
+      - visio.Visio.Page.load
+      - visio.Visio.Page.name
+      - visio.Visio.Page.set
+      - visio.Visio.Page.shapes
+      - visio.Visio.Page.toJSON
+      - visio.Visio.Page.view
+      - visio.Visio.Page.width
+  - uid: visio.Visio.Page.activate
+    summary: |-
+      Set the page as Active Page of the document.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: activate()
+    fullName: visio.Visio.Page.activate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'activate(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: visio.Visio.Page.allShapes
+    summary: |-
+      All shapes in the page. Read-only.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: allShapes
+    fullName: visio.Visio.Page.allShapes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly allShapes: Visio.ShapeCollection;'
+      return:
+        type:
+          - Visio.ShapeCollection
+  - uid: visio.Visio.Page.comments
+    summary: |-
+      Returns the Comments Collection
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: comments
+    fullName: visio.Visio.Page.comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly comments: Visio.CommentCollection;'
+      return:
+        type:
+          - Visio.CommentCollection
+  - uid: visio.Visio.Page.height
+    summary: |-
+      Returns the height of the page. Read-only.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: height
+    fullName: visio.Visio.Page.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
+  - uid: visio.Visio.Page.index
+    summary: |-
+      Index of the Page.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: index
+    fullName: visio.Visio.Page.index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly index: number;'
+      return:
+        type:
+          - number
+  - uid: visio.Visio.Page.isBackground
+    summary: |-
+      Whether the page is a background page or not. Read-only.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: isBackground
+    fullName: visio.Visio.Page.isBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isBackground: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Page.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: visio.Visio.Page.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Visio.Interfaces.PageLoadOptions): Visio.Page;'
+      return:
+        type:
+          - Visio.Page
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.PageLoadOptions
+  - uid: visio.Visio.Page.name
+    summary: |-
+      Page name. Read-only.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: name
+    fullName: visio.Visio.Page.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Page.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: visio.Visio.Page.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.PageUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.PageUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: visio.Visio.Page.shapes
+    summary: |-
+      Shapes at root level, in the page. Read-only.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: shapes
+    fullName: visio.Visio.Page.shapes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shapes: Visio.ShapeCollection;'
+      return:
+        type:
+          - Visio.ShapeCollection
+  - uid: visio.Visio.Page.toJSON
+    name: toJSON()
+    fullName: visio.Visio.Page.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.PageData;'
+      return:
+        type:
+          - Visio.Interfaces.PageData
+        description: ''
+  - uid: visio.Visio.Page.view
+    summary: |-
+      Returns the view of the page. Read-only.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: view
+    fullName: visio.Visio.Page.view
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly view: Visio.PageView;'
+      return:
+        type:
+          - Visio.PageView
+  - uid: visio.Visio.Page.width
+    summary: |-
+      Returns the width of the page. Read-only.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: width
+    fullName: visio.Visio.Page.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number

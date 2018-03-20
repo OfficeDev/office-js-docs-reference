@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.Context
+    name: Office.Context
+    fullName: outlook.Office.Context
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.Context.mailbox
+      - outlook.Office.Context.roamingSettings
+  - uid: outlook.Office.Context.mailbox
+    name: mailbox
+    fullName: outlook.Office.Context.mailbox
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'mailbox: Mailbox;'
+      return:
+        type:
+          - Mailbox
+  - uid: outlook.Office.Context.roamingSettings
+    name: roamingSettings
+    fullName: outlook.Office.Context.roamingSettings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'roamingSettings: RoamingSettings;'
+      return:
+        type:
+          - RoamingSettings

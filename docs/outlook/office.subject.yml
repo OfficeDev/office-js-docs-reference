@@ -1,0 +1,48 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.Subject
+    name: Office.Subject
+    fullName: outlook.Office.Subject
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.Subject.getAsync
+      - outlook.Office.Subject.setAsync
+  - uid: outlook.Office.Subject.getAsync
+    summary: Begins an asynchronous request to get the subject of an appointment or message
+    name: getAsync(callback)
+    fullName: outlook.Office.Subject.getAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(callback: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: The optional method to call when the string is inserted
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: outlook.Office.Subject.setAsync
+    summary: Begins an asynchronous call to set the subject of an appointment or message
+    name: setAsync(data)
+    fullName: outlook.Office.Subject.setAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(data: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: data
+          description: The subject of the appointment. The string is limited to 255 characters
+          type:
+            - string

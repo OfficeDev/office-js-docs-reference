@@ -1,0 +1,72 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.AppointmentCompose
+    name: Office.AppointmentCompose
+    fullName: outlook.Office.AppointmentCompose
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Appointment
+    package: outlook
+    children:
+      - outlook.Office.AppointmentCompose.end
+      - outlook.Office.AppointmentCompose.location
+      - outlook.Office.AppointmentCompose.optionalAttendees
+      - outlook.Office.AppointmentCompose.requiredAttendees
+      - outlook.Office.AppointmentCompose.start
+  - uid: outlook.Office.AppointmentCompose.end
+    name: end
+    fullName: outlook.Office.AppointmentCompose.end
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'end: Time;'
+      return:
+        type:
+          - Time
+  - uid: outlook.Office.AppointmentCompose.location
+    name: location
+    fullName: outlook.Office.AppointmentCompose.location
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'location: Location;'
+      return:
+        type:
+          - Location
+  - uid: outlook.Office.AppointmentCompose.optionalAttendees
+    name: optionalAttendees
+    fullName: outlook.Office.AppointmentCompose.optionalAttendees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'optionalAttendees: Recipients;'
+      return:
+        type:
+          - Recipients
+  - uid: outlook.Office.AppointmentCompose.requiredAttendees
+    name: requiredAttendees
+    fullName: outlook.Office.AppointmentCompose.requiredAttendees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'requiredAttendees: Recipients;'
+      return:
+        type:
+          - Recipients
+  - uid: outlook.Office.AppointmentCompose.start
+    name: start
+    fullName: outlook.Office.AppointmentCompose.start
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'start: Time;'
+      return:
+        type:
+          - Time

@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.RoamingSettings
+    name: Office.RoamingSettings
+    fullName: outlook.Office.RoamingSettings
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.RoamingSettings.get
+      - outlook.Office.RoamingSettings.remove
+      - outlook.Office.RoamingSettings.saveAsync
+      - outlook.Office.RoamingSettings.set
+  - uid: outlook.Office.RoamingSettings.get
+    summary: Retrieves the specified setting
+    name: get(name)
+    fullName: outlook.Office.RoamingSettings.get
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'get(name: string): any;'
+      return:
+        type:
+          - any
+        description: ''
+      parameters:
+        - id: name
+          description: The case-sensitive name of the setting to retrieve
+          type:
+            - string
+  - uid: outlook.Office.RoamingSettings.remove
+    summary: Removes the specified setting
+    name: remove(name)
+    fullName: outlook.Office.RoamingSettings.remove
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: The case-sensitive name of the setting to remove
+          type:
+            - string
+  - uid: outlook.Office.RoamingSettings.saveAsync
+    summary: Saves the settings
+    name: saveAsync(callback)
+    fullName: outlook.Office.RoamingSettings.saveAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'saveAsync(callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult'
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: outlook.Office.RoamingSettings.set
+    summary: Sets or creates the specified setting
+    name: 'set(name, value)'
+    fullName: outlook.Office.RoamingSettings.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(name: string, value: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: The case-sensitive name of the setting to set or create
+          type:
+            - string
+        - id: value
+          description: Specifies the value to be stored
+          type:
+            - any

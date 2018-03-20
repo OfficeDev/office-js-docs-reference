@@ -1,0 +1,206 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.PageView
+    summary: |-
+      Represents the PageView class.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: Visio.PageView
+    fullName: visio.Visio.PageView
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: visio
+    children:
+      - visio.Visio.PageView.centerViewportOnShape
+      - visio.Visio.PageView.fitToWindow
+      - visio.Visio.PageView.getPosition
+      - visio.Visio.PageView.getSelection
+      - visio.Visio.PageView.isShapeInViewport
+      - visio.Visio.PageView.load
+      - visio.Visio.PageView.set
+      - visio.Visio.PageView.setPosition
+      - visio.Visio.PageView.toJSON
+      - visio.Visio.PageView.zoom
+  - uid: visio.Visio.PageView.centerViewportOnShape
+    summary: |-
+      Pans the Visio drawing to place the specified shape in the center of the view.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: centerViewportOnShape(ShapeId)
+    fullName: visio.Visio.PageView.centerViewportOnShape
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'centerViewportOnShape(ShapeId: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: ShapeId
+          description: ShapeId to be seen in the center.
+          type:
+            - number
+  - uid: visio.Visio.PageView.fitToWindow
+    summary: |-
+      Fit Page to current window.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: fitToWindow()
+    fullName: visio.Visio.PageView.fitToWindow
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'fitToWindow(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: visio.Visio.PageView.getPosition
+    summary: |-
+      Returns the position object that specifies the position of the page in the view.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: getPosition()
+    fullName: visio.Visio.PageView.getPosition
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPosition(): OfficeExtension.ClientResult<Visio.Position>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<Visio.Position>
+        description: ''
+  - uid: visio.Visio.PageView.getSelection
+    summary: |-
+      Represents the Selection in the page.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: getSelection()
+    fullName: visio.Visio.PageView.getSelection
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelection(): Visio.Selection;'
+      return:
+        type:
+          - Visio.Selection
+        description: ''
+  - uid: visio.Visio.PageView.isShapeInViewport
+    summary: |-
+      To check if the shape is in view of the page or not.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: isShapeInViewport(Shape)
+    fullName: visio.Visio.PageView.isShapeInViewport
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'isShapeInViewport(Shape: Visio.Shape): OfficeExtension.ClientResult<boolean>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<boolean>
+        description: ''
+      parameters:
+        - id: Shape
+          description: Shape to be checked.
+          type:
+            - Visio.Shape
+  - uid: visio.Visio.PageView.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: visio.Visio.PageView.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Visio.Interfaces.PageViewLoadOptions): Visio.PageView;'
+      return:
+        type:
+          - Visio.PageView
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.PageViewLoadOptions
+  - uid: visio.Visio.PageView.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: visio.Visio.PageView.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.PageViewUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.PageViewUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: visio.Visio.PageView.setPosition
+    summary: |-
+      Sets the position of the page in the view.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: setPosition(Position)
+    fullName: visio.Visio.PageView.setPosition
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPosition(Position: Visio.Position): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: Position
+          description: Position object that specifies the new position of the page in the view.
+          type:
+            - Visio.Position
+  - uid: visio.Visio.PageView.toJSON
+    name: toJSON()
+    fullName: visio.Visio.PageView.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.PageViewData;'
+      return:
+        type:
+          - Visio.Interfaces.PageViewData
+        description: ''
+  - uid: visio.Visio.PageView.zoom
+    summary: |-
+      Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: zoom
+    fullName: visio.Visio.PageView.zoom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'zoom: number;'
+      return:
+        type:
+          - number

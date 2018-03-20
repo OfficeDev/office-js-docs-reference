@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.Contact
+    name: Office.Contact
+    fullName: outlook.Office.Contact
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.Contact.addresses
+      - outlook.Office.Contact.businessName
+      - outlook.Office.Contact.emailAddresses
+      - outlook.Office.Contact.personName
+      - outlook.Office.Contact.phoneNumbers
+      - outlook.Office.Contact.urls
+  - uid: outlook.Office.Contact.addresses
+    name: addresses
+    fullName: outlook.Office.Contact.addresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addresses: Array<string>;'
+      return:
+        type:
+          - Array<string>
+  - uid: outlook.Office.Contact.businessName
+    name: businessName
+    fullName: outlook.Office.Contact.businessName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'businessName: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.Contact.emailAddresses
+    name: emailAddresses
+    fullName: outlook.Office.Contact.emailAddresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddresses: Array<string>;'
+      return:
+        type:
+          - Array<string>
+  - uid: outlook.Office.Contact.personName
+    name: personName
+    fullName: outlook.Office.Contact.personName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'personName: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.Contact.phoneNumbers
+    name: phoneNumbers
+    fullName: outlook.Office.Contact.phoneNumbers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'phoneNumbers: Array<PhoneNumber>;'
+      return:
+        type:
+          - Array<PhoneNumber>
+  - uid: outlook.Office.Contact.urls
+    name: urls
+    fullName: outlook.Office.Contact.urls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'urls: Array<string>;'
+      return:
+        type:
+          - Array<string>

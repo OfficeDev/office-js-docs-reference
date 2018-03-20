@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.ReplyFormData
+    name: Office.ReplyFormData
+    fullName: outlook.Office.ReplyFormData
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.ReplyFormData.attachments
+      - outlook.Office.ReplyFormData.callback
+      - outlook.Office.ReplyFormData.htmlBody
+  - uid: outlook.Office.ReplyFormData.attachments
+    name: attachments
+    fullName: outlook.Office.ReplyFormData.attachments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attachments?: Array<ReplyFormAttachment>;'
+      return:
+        type:
+          - Array<ReplyFormAttachment>
+  - uid: outlook.Office.ReplyFormData.callback
+    name: callback
+    fullName: outlook.Office.ReplyFormData.callback
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'callback?: (result: AsyncResult) => void;'
+      return:
+        type:
+          - '(result: AsyncResult) => void'
+  - uid: outlook.Office.ReplyFormData.htmlBody
+    name: htmlBody
+    fullName: outlook.Office.ReplyFormData.htmlBody
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'htmlBody?: string;'
+      return:
+        type:
+          - string

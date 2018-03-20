@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.AttachmentDetails
+    name: Office.AttachmentDetails
+    fullName: outlook.Office.AttachmentDetails
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.AttachmentDetails.attachmentType
+      - outlook.Office.AttachmentDetails.contentType
+      - outlook.Office.AttachmentDetails.id
+      - outlook.Office.AttachmentDetails.isInline
+      - outlook.Office.AttachmentDetails.name
+      - outlook.Office.AttachmentDetails.size
+  - uid: outlook.Office.AttachmentDetails.attachmentType
+    name: attachmentType
+    fullName: outlook.Office.AttachmentDetails.attachmentType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attachmentType: Office.MailboxEnums.AttachmentType;'
+      return:
+        type:
+          - Office.MailboxEnums.AttachmentType
+  - uid: outlook.Office.AttachmentDetails.contentType
+    name: contentType
+    fullName: outlook.Office.AttachmentDetails.contentType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contentType: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.AttachmentDetails.id
+    name: id
+    fullName: outlook.Office.AttachmentDetails.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.AttachmentDetails.isInline
+    name: isInline
+    fullName: outlook.Office.AttachmentDetails.isInline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isInline: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: outlook.Office.AttachmentDetails.name
+    name: name
+    fullName: outlook.Office.AttachmentDetails.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.AttachmentDetails.size
+    name: size
+    fullName: outlook.Office.AttachmentDetails.size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size: number;'
+      return:
+        type:
+          - number

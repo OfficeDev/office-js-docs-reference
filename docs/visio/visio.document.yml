@@ -1,0 +1,273 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Document
+    summary: |-
+      Represents the Document class.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: Visio.Document
+    fullName: visio.Visio.Document
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: visio
+    children:
+      - visio.Visio.Document.application
+      - visio.Visio.Document.getActivePage
+      - visio.Visio.Document.load
+      - visio.Visio.Document.onDataRefreshComplete
+      - visio.Visio.Document.onDocumentLoadComplete
+      - visio.Visio.Document.onPageLoadComplete
+      - visio.Visio.Document.onSelectionChanged
+      - visio.Visio.Document.onShapeMouseEnter
+      - visio.Visio.Document.onShapeMouseLeave
+      - visio.Visio.Document.pages
+      - visio.Visio.Document.set
+      - visio.Visio.Document.setActivePage
+      - visio.Visio.Document.startDataRefresh
+      - visio.Visio.Document.toJSON
+      - visio.Visio.Document.view
+  - uid: visio.Visio.Document.application
+    summary: |-
+      Represents a Visio application instance that contains this document. Read-only.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: application
+    fullName: visio.Visio.Document.application
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly application: Visio.Application;'
+      return:
+        type:
+          - Visio.Application
+  - uid: visio.Visio.Document.getActivePage
+    summary: |-
+      Returns the Active Page of the document.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: getActivePage()
+    fullName: visio.Visio.Document.getActivePage
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActivePage(): Visio.Page;'
+      return:
+        type:
+          - Visio.Page
+        description: ''
+  - uid: visio.Visio.Document.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: visio.Visio.Document.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Visio.Interfaces.DocumentLoadOptions): Visio.Document;'
+      return:
+        type:
+          - Visio.Document
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.DocumentLoadOptions
+  - uid: visio.Visio.Document.onDataRefreshComplete
+    summary: |-
+      Occurs when the data is refreshed in the diagram.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: onDataRefreshComplete
+    fullName: visio.Visio.Document.onDataRefreshComplete
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onDataRefreshComplete: OfficeExtension.EventHandlers<Visio.DataRefreshCompleteEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Visio.DataRefreshCompleteEventArgs>
+  - uid: visio.Visio.Document.onDocumentLoadComplete
+    summary: |-
+      Occurs when the Document is loaded, refreshed, or changed.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: onDocumentLoadComplete
+    fullName: visio.Visio.Document.onDocumentLoadComplete
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onDocumentLoadComplete: OfficeExtension.EventHandlers<Visio.DocumentLoadCompleteEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Visio.DocumentLoadCompleteEventArgs>
+  - uid: visio.Visio.Document.onPageLoadComplete
+    summary: |-
+      Occurs when the page is finished loading.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: onPageLoadComplete
+    fullName: visio.Visio.Document.onPageLoadComplete
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onPageLoadComplete: OfficeExtension.EventHandlers<Visio.PageLoadCompleteEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Visio.PageLoadCompleteEventArgs>
+  - uid: visio.Visio.Document.onSelectionChanged
+    summary: |-
+      Occurs when the current selection of shapes changes.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: onSelectionChanged
+    fullName: visio.Visio.Document.onSelectionChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Visio.SelectionChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Visio.SelectionChangedEventArgs>
+  - uid: visio.Visio.Document.onShapeMouseEnter
+    summary: |-
+      Occurs when the user moves the mouse pointer into the bounding box of a shape.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: onShapeMouseEnter
+    fullName: visio.Visio.Document.onShapeMouseEnter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onShapeMouseEnter: OfficeExtension.EventHandlers<Visio.ShapeMouseEnterEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Visio.ShapeMouseEnterEventArgs>
+  - uid: visio.Visio.Document.onShapeMouseLeave
+    summary: |-
+      Occurs when the user moves the mouse out of the bounding box of a shape.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: onShapeMouseLeave
+    fullName: visio.Visio.Document.onShapeMouseLeave
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onShapeMouseLeave: OfficeExtension.EventHandlers<Visio.ShapeMouseLeaveEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Visio.ShapeMouseLeaveEventArgs>
+  - uid: visio.Visio.Document.pages
+    summary: |-
+      Represents a collection of pages associated with the document. Read-only.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: pages
+    fullName: visio.Visio.Document.pages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly pages: Visio.PageCollection;'
+      return:
+        type:
+          - Visio.PageCollection
+  - uid: visio.Visio.Document.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: visio.Visio.Document.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.DocumentUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.DocumentUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: visio.Visio.Document.setActivePage
+    summary: |-
+      Set the Active Page of the document.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: setActivePage(PageName)
+    fullName: visio.Visio.Document.setActivePage
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setActivePage(PageName: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: PageName
+          description: Name of the page
+          type:
+            - string
+  - uid: visio.Visio.Document.startDataRefresh
+    summary: |-
+      Triggers the refresh of the data in the Diagram, for all pages.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: startDataRefresh()
+    fullName: visio.Visio.Document.startDataRefresh
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'startDataRefresh(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: visio.Visio.Document.toJSON
+    name: toJSON()
+    fullName: visio.Visio.Document.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.DocumentData;'
+      return:
+        type:
+          - Visio.Interfaces.DocumentData
+        description: ''
+  - uid: visio.Visio.Document.view
+    summary: |-
+      Returns the DocumentView object.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: view
+    fullName: visio.Visio.Document.view
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly view: Visio.DocumentView;'
+      return:
+        type:
+          - Visio.DocumentView

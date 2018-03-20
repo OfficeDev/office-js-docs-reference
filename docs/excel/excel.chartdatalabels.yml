@@ -1,0 +1,219 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartDataLabels
+    summary: |-
+      Represents a collection of all the data labels on a chart point.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.ChartDataLabels
+    fullName: excel.Excel.ChartDataLabels
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartDataLabels.format
+      - excel.Excel.ChartDataLabels.load
+      - excel.Excel.ChartDataLabels.position
+      - excel.Excel.ChartDataLabels.separator
+      - excel.Excel.ChartDataLabels.set
+      - excel.Excel.ChartDataLabels.showBubbleSize
+      - excel.Excel.ChartDataLabels.showCategoryName
+      - excel.Excel.ChartDataLabels.showLegendKey
+      - excel.Excel.ChartDataLabels.showPercentage
+      - excel.Excel.ChartDataLabels.showSeriesName
+      - excel.Excel.ChartDataLabels.showValue
+      - excel.Excel.ChartDataLabels.toJSON
+  - uid: excel.Excel.ChartDataLabels.format
+    summary: |-
+      Represents the format of chart data labels, which includes fill and font formatting. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: format
+    fullName: excel.Excel.ChartDataLabels.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ChartDataLabelFormat;'
+      return:
+        type:
+          - Excel.ChartDataLabelFormat
+  - uid: excel.Excel.ChartDataLabels.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ChartDataLabels.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartDataLabels;'
+      return:
+        type:
+          - Excel.ChartDataLabels
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.ChartDataLabels.position
+    summary: >-
+      DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
+      details.
+
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: position
+    fullName: excel.Excel.ChartDataLabels.position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ChartDataLabels.separator
+    summary: |-
+      String representing the separator used for the data labels on a chart.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: separator
+    fullName: excel.Excel.ChartDataLabels.separator
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'separator: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ChartDataLabels.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartDataLabels.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ChartDataLabelsUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartDataLabelsUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.ChartDataLabels.showBubbleSize
+    summary: |-
+      Boolean value representing if the data label bubble size is visible or not.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: showBubbleSize
+    fullName: excel.Excel.ChartDataLabels.showBubbleSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBubbleSize: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartDataLabels.showCategoryName
+    summary: |-
+      Boolean value representing if the data label category name is visible or not.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: showCategoryName
+    fullName: excel.Excel.ChartDataLabels.showCategoryName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showCategoryName: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartDataLabels.showLegendKey
+    summary: |-
+      Boolean value representing if the data label legend key is visible or not.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: showLegendKey
+    fullName: excel.Excel.ChartDataLabels.showLegendKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showLegendKey: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartDataLabels.showPercentage
+    summary: |-
+      Boolean value representing if the data label percentage is visible or not.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: showPercentage
+    fullName: excel.Excel.ChartDataLabels.showPercentage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showPercentage: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartDataLabels.showSeriesName
+    summary: |-
+      Boolean value representing if the data label series name is visible or not.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: showSeriesName
+    fullName: excel.Excel.ChartDataLabels.showSeriesName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showSeriesName: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartDataLabels.showValue
+    summary: |-
+      Boolean value representing if the data label value is visible or not.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: showValue
+    fullName: excel.Excel.ChartDataLabels.showValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showValue: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartDataLabels.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartDataLabels.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"format\": ChartDataLabelFormat;\r\n            \"position\": string;\r\n            \"separator\": string;\r\n            \"showBubbleSize\": boolean;\r\n            \"showCategoryName\": boolean;\r\n            \"showLegendKey\": boolean;\r\n            \"showPercentage\": boolean;\r\n            \"showSeriesName\": boolean;\r\n            \"showValue\": boolean;\r\n        }"
+        description: ''
