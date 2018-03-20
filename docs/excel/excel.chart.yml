@@ -82,7 +82,7 @@ items:
     remarks: |
 
 
-      ### Snippets
+      #### Examples
 
       ```typescript
       Excel.run(function (ctx) { 
