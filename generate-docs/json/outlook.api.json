@@ -1,0 +1,4366 @@
+{
+  "kind": "package",
+  "name": "outlook",
+  "summary": [],
+  "remarks": [],
+  "exports": {
+    "Office": {
+      "kind": "namespace",
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "exports": {
+        "Appointment": {
+          "kind": "interface",
+          "extends": "Item",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "AppointmentCompose": {
+          "kind": "interface",
+          "extends": "Appointment",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "end": {
+              "kind": "property",
+              "signature": "end: Time;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Time",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "location": {
+              "kind": "property",
+              "signature": "location: Location;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Location",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "optionalAttendees": {
+              "kind": "property",
+              "signature": "optionalAttendees: Recipients;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Recipients",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "requiredAttendees": {
+              "kind": "property",
+              "signature": "requiredAttendees: Recipients;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Recipients",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "start": {
+              "kind": "property",
+              "signature": "start: Time;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Time",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "AppointmentForm": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "body": {
+              "kind": "property",
+              "signature": "body: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "end": {
+              "kind": "property",
+              "signature": "end: Date;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Date",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "location": {
+              "kind": "property",
+              "signature": "location: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "optionalAttendees": {
+              "kind": "property",
+              "signature": "optionalAttendees: Array<string> | Array<EmailAddressDetails>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<string> | Array<EmailAddressDetails>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "requiredAttendees": {
+              "kind": "property",
+              "signature": "requiredAttendees: Array<string> | Array<EmailAddressDetails>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<string> | Array<EmailAddressDetails>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "resources": {
+              "kind": "property",
+              "signature": "resources: Array<string>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<string>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "start": {
+              "kind": "property",
+              "signature": "start: Date;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Date",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "subject": {
+              "kind": "property",
+              "signature": "subject: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "AppointmentRead": {
+          "kind": "interface",
+          "extends": "Appointment",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "end": {
+              "kind": "property",
+              "signature": "end: Date;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Date",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "location": {
+              "kind": "property",
+              "signature": "location: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "optionalAttendees": {
+              "kind": "property",
+              "signature": "optionalAttendees: Array<EmailAddressDetails>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<EmailAddressDetails>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "organizer": {
+              "kind": "property",
+              "signature": "organizer: EmailAddressDetails;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "EmailAddressDetails",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "requiredAttendees": {
+              "kind": "property",
+              "signature": "requiredAttendees: Array<EmailAddressDetails>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<EmailAddressDetails>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "resources": {
+              "kind": "property",
+              "signature": "resources: EmailAddressDetails;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "EmailAddressDetails",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "start": {
+              "kind": "property",
+              "signature": "start: Date;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Date",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "AsyncContextOptions": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "asyncContext": {
+              "kind": "property",
+              "signature": "asyncContext?: any;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "any",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "AttachmentDetails": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "attachmentType": {
+              "kind": "property",
+              "signature": "attachmentType: Office.MailboxEnums.AttachmentType;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Office.MailboxEnums.AttachmentType",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "contentType": {
+              "kind": "property",
+              "signature": "contentType: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "id": {
+              "kind": "property",
+              "signature": "id: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "isInline": {
+              "kind": "property",
+              "signature": "isInline: boolean;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "boolean",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "name": {
+              "kind": "property",
+              "signature": "name: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "size": {
+              "kind": "property",
+              "signature": "size: number;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "Body": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "getAsync": {
+              "kind": "method",
+              "signature": "getAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "coercionType": {
+                  "name": "coercionType",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The format of the returned body"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "CoercionType"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "optional method to call when the getAsync method returns"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Returns the current body in a specified format"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "getTypeAsync": {
+              "kind": "method",
+              "signature": "getTypeAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "options": {
+                  "name": "options",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "AsyncContextOptions"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "prependAsync": {
+              "kind": "method",
+              "signature": "prependAsync(data: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "data": {
+                  "name": "data",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Adds the specified content to the beginning of the item body"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "setAsync": {
+              "kind": "method",
+              "signature": "setAsync(data: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "data": {
+                  "name": "data",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The string that will replace the existing body. The string is limited to 1,000,000 characters"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Replaces the entire body with the specified text."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "setSelectedDataAsync": {
+              "kind": "method",
+              "signature": "setSelectedDataAsync(data: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "data": {
+                  "name": "data",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Replaces the selection in the body with the specified text"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "cast": {
+          "kind": "namespace",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "exports": {
+            "item": {
+              "kind": "namespace",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "exports": {
+                "toAppointment": {
+                  "kind": "function",
+                  "signature": "export function toAppointment(item: Office.Item): Office.Appointment;",
+                  "returnValue": {
+                    "type": "Office.Appointment",
+                    "description": []
+                  },
+                  "parameters": {
+                    "item": {
+                      "name": "item",
+                      "description": [],
+                      "isOptional": false,
+                      "isSpread": false,
+                      "type": "Office.Item"
+                    }
+                  },
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "toAppointmentCompose": {
+                  "kind": "function",
+                  "signature": "export function toAppointmentCompose(item: Office.Item): Office.AppointmentCompose;",
+                  "returnValue": {
+                    "type": "Office.AppointmentCompose",
+                    "description": []
+                  },
+                  "parameters": {
+                    "item": {
+                      "name": "item",
+                      "description": [],
+                      "isOptional": false,
+                      "isSpread": false,
+                      "type": "Office.Item"
+                    }
+                  },
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "toAppointmentRead": {
+                  "kind": "function",
+                  "signature": "export function toAppointmentRead(item: Office.Item): Office.AppointmentRead;",
+                  "returnValue": {
+                    "type": "Office.AppointmentRead",
+                    "description": []
+                  },
+                  "parameters": {
+                    "item": {
+                      "name": "item",
+                      "description": [],
+                      "isOptional": false,
+                      "isSpread": false,
+                      "type": "Office.Item"
+                    }
+                  },
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "toItemCompose": {
+                  "kind": "function",
+                  "signature": "export function toItemCompose(item: Office.Item): Office.ItemCompose;",
+                  "returnValue": {
+                    "type": "Office.ItemCompose",
+                    "description": []
+                  },
+                  "parameters": {
+                    "item": {
+                      "name": "item",
+                      "description": [],
+                      "isOptional": false,
+                      "isSpread": false,
+                      "type": "Office.Item"
+                    }
+                  },
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "toItemRead": {
+                  "kind": "function",
+                  "signature": "export function toItemRead(item: Office.Item): Office.ItemRead;",
+                  "returnValue": {
+                    "type": "Office.ItemRead",
+                    "description": []
+                  },
+                  "parameters": {
+                    "item": {
+                      "name": "item",
+                      "description": [],
+                      "isOptional": false,
+                      "isSpread": false,
+                      "type": "Office.Item"
+                    }
+                  },
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "toMessage": {
+                  "kind": "function",
+                  "signature": "export function toMessage(item: Office.Item): Office.Message;",
+                  "returnValue": {
+                    "type": "Office.Message",
+                    "description": []
+                  },
+                  "parameters": {
+                    "item": {
+                      "name": "item",
+                      "description": [],
+                      "isOptional": false,
+                      "isSpread": false,
+                      "type": "Office.Item"
+                    }
+                  },
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "toMessageCompose": {
+                  "kind": "function",
+                  "signature": "export function toMessageCompose(item: Office.Item): Office.MessageCompose;",
+                  "returnValue": {
+                    "type": "Office.MessageCompose",
+                    "description": []
+                  },
+                  "parameters": {
+                    "item": {
+                      "name": "item",
+                      "description": [],
+                      "isOptional": false,
+                      "isSpread": false,
+                      "type": "Office.Item"
+                    }
+                  },
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "toMessageRead": {
+                  "kind": "function",
+                  "signature": "export function toMessageRead(item: Office.Item): Office.MessageRead;",
+                  "returnValue": {
+                    "type": "Office.MessageRead",
+                    "description": []
+                  },
+                  "parameters": {
+                    "item": {
+                      "name": "item",
+                      "description": [],
+                      "isOptional": false,
+                      "isSpread": false,
+                      "type": "Office.Item"
+                    }
+                  },
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false
+                }
+              }
+            }
+          }
+        },
+        "CoercionTypeOptions": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "coercionType": {
+              "kind": "property",
+              "signature": "coercionType?: CoercionType;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "CoercionType",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "Contact": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "addresses": {
+              "kind": "property",
+              "signature": "addresses: Array<string>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<string>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "businessName": {
+              "kind": "property",
+              "signature": "businessName: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "emailAddresses": {
+              "kind": "property",
+              "signature": "emailAddresses: Array<string>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<string>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "personName": {
+              "kind": "property",
+              "signature": "personName: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "phoneNumbers": {
+              "kind": "property",
+              "signature": "phoneNumbers: Array<PhoneNumber>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<PhoneNumber>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "urls": {
+              "kind": "property",
+              "signature": "urls: Array<string>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<string>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "Context": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "mailbox": {
+              "kind": "property",
+              "signature": "mailbox: Mailbox;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Mailbox",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "roamingSettings": {
+              "kind": "property",
+              "signature": "roamingSettings: RoamingSettings;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RoamingSettings",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "CustomProperties": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "get": {
+              "kind": "method",
+              "signature": "get(name: string): any;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "any",
+                "description": []
+              },
+              "parameters": {
+                "name": {
+                  "name": "name",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The name of the property to be returned"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Returns the value of the specified custom property"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "remove": {
+              "kind": "method",
+              "signature": "remove(name: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "name": {
+                  "name": "name",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The name of the property to be removed"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Removes the specified property from the custom property collection."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "saveAsync": {
+              "kind": "method",
+              "signature": "saveAsync(callback?: (result: AsyncResult) => void, userContext?: any): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The optional callback method"
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                },
+                "userContext": {
+                  "name": "userContext",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional variable for any state data that is passed to the saveAsync method"
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "any"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Saves the custom property collection to the server"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(name: string, value: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "name": {
+                  "name": "name",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The name of the property to be set"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "value": {
+                  "name": "value",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The value of the property to be set"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets the specified property to the specified value"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "Diagnostics": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "hostName": {
+              "kind": "property",
+              "signature": "hostName: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "hostVersion": {
+              "kind": "property",
+              "signature": "hostVersion: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "OWAView": {
+              "kind": "property",
+              "signature": "OWAView: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "EmailAddressDetails": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "appointmentResponse": {
+              "kind": "property",
+              "signature": "appointmentResponse: Office.MailboxEnums.ResponseType;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Office.MailboxEnums.ResponseType",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "displayName": {
+              "kind": "property",
+              "signature": "displayName: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "emailAddress": {
+              "kind": "property",
+              "signature": "emailAddress: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "recipientType": {
+              "kind": "property",
+              "signature": "recipientType: Office.MailboxEnums.RecipientType;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Office.MailboxEnums.RecipientType",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "EmailUser": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "displayName": {
+              "kind": "property",
+              "signature": "displayName: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "emailAddress": {
+              "kind": "property",
+              "signature": "emailAddress: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "Entities": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "addresses": {
+              "kind": "property",
+              "signature": "addresses: Array<string>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<string>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "contacts": {
+              "kind": "property",
+              "signature": "contacts: Array<Contact>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<Contact>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "emailAddresses": {
+              "kind": "property",
+              "signature": "emailAddresses: Array<string>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<string>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "meetingSuggestions": {
+              "kind": "property",
+              "signature": "meetingSuggestions: Array<MeetingSuggestion>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<MeetingSuggestion>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "phoneNumbers": {
+              "kind": "property",
+              "signature": "phoneNumbers: Array<PhoneNumber>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<PhoneNumber>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "taskSuggestions": {
+              "kind": "property",
+              "signature": "taskSuggestions: Array<string>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<string>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "urls": {
+              "kind": "property",
+              "signature": "urls: Array<string>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<string>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "Item": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "___BeSureToCastThisObject__": {
+              "kind": "property",
+              "signature": "___BeSureToCastThisObject__: void;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "void",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "You can cast item with `(Item as Office.[CAST_TYPE])` where CAST_TYPE is one of the following: ItemRead, ItemCompose, Message, MessageRead, MessageCompose, Appointment, AppointmentRead, AppointmentCompose"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "body": {
+              "kind": "property",
+              "signature": "body: Body;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Body",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "dateTimeCreated": {
+              "kind": "property",
+              "signature": "dateTimeCreated: Date;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Date",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "itemType": {
+              "kind": "property",
+              "signature": "itemType: Office.MailboxEnums.ItemType;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Office.MailboxEnums.ItemType",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "loadCustomPropertiesAsync": {
+              "kind": "method",
+              "signature": "loadCustomPropertiesAsync(callback?: (result: AsyncResult) => void, userContext?: any): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The optional callback method"
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                },
+                "userContext": {
+                  "name": "userContext",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional variable for any state data that is passed to the asynchronous method"
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "any"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Asynchronously loads custom properties that are specific to the item and a app for Office"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "notificationMessages": {
+              "kind": "property",
+              "signature": "notificationMessages: NotificationMessages;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "NotificationMessages",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "ItemCompose": {
+          "kind": "interface",
+          "extends": "Item",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "addFileAttachmentAsync": {
+              "kind": "method",
+              "signature": "addFileAttachmentAsync(uri: string, attachmentName: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "uri": {
+                  "name": "uri",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The URI that provides the location of the file to attach to the message. The maximum length is 2048 characters"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "attachmentName": {
+                  "name": "attachmentName",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Adds a file to a message as an attachment"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "addItemAttachmentAsync": {
+              "kind": "method",
+              "signature": "addItemAttachmentAsync(itemId: any, attachmentName: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "itemId": {
+                  "name": "itemId",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The Exchange identifier of the item to attach. The maximum length is 100 characters"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "any"
+                },
+                "attachmentName": {
+                  "name": "attachmentName",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Adds an Exchange item, such as a message, as an attachment to the message"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "close": {
+              "kind": "method",
+              "signature": "close(): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {},
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Closes the current item that is being composed"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The behaviors of the close method depends on the current state of the item being composed. If the item has unsaved changes, the client prompts the user to save, discard, or close the action."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In the Outlook desktop client, if the message is an inline reply, the close method has no effect."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "getSelectedDataAsync": {
+              "kind": "method",
+              "signature": "getSelectedDataAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "coercionType": {
+                  "name": "coercionType",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "CoercionType"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Asynchronously returns selected data from the subject or body of a message."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "If there is no selection but the cursor is in the body or the subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "removeAttachmentAsync": {
+              "kind": "method",
+              "signature": "removeAttachmentAsync(attachmentIndex: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "attachmentIndex": {
+                  "name": "attachmentIndex",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The index of the attachment to remove. The maximum length of the string is 100 characters"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Removes an attachment from a message"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "saveAsync": {
+              "kind": "method",
+              "signature": "saveAsync(): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {},
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Asynchronously saves an item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "When invoked, this method saves the current message as a draft and returns the item id via the callback method. In Outlook Web App or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "setSelectedDataAsync": {
+              "kind": "method",
+              "signature": "setSelectedDataAsync(data: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "data": {
+                  "name": "data",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Asynchronously inserts data into the body or subject of a message."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "subject": {
+              "kind": "property",
+              "signature": "subject: Subject;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Subject",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "ItemRead": {
+          "kind": "interface",
+          "extends": "Item",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "attachments": {
+              "kind": "property",
+              "signature": "attachments: Array<AttachmentDetails>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<AttachmentDetails>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "displayReplyAllForm": {
+              "kind": "method",
+              "signature": "displayReplyAllForm(formData: string | ReplyFormData): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "formData": {
+                  "name": "formData",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR An object that contains body or attachment data and a callback function"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string | ReplyFormData"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Displays a reply form that includes the sender and all the recipients of the selected message"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "displayReplyForm": {
+              "kind": "method",
+              "signature": "displayReplyForm(formData: string | ReplyFormData): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "formData": {
+                  "name": "formData",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR An object that contains body or attachment data and a callback function"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string | ReplyFormData"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Displays a reply form that includes only the sender of the selected message"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "getEntities": {
+              "kind": "method",
+              "signature": "getEntities(): Entities;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "Entities",
+                "description": []
+              },
+              "parameters": {},
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the entities found in the selected item"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "getEntitiesByType": {
+              "kind": "method",
+              "signature": "getEntitiesByType(entityType: Office.MailboxEnums.EntityType): Array<(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)>;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "Array<(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)>",
+                "description": []
+              },
+              "parameters": {
+                "entityType": {
+                  "name": "entityType",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "One of the EntityType enumeration values"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Office.MailboxEnums.EntityType"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets an array of entities of the specified entity type found in an message"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "getFilteredEntitiesByName": {
+              "kind": "method",
+              "signature": "getFilteredEntitiesByName(name: string): Array<(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)>;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "Array<(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)>",
+                "description": []
+              },
+              "parameters": {
+                "name": {
+                  "name": "name",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The name of the ItemHasKnownEntity rule element that defines the filter to match"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Returns well-known entities that pass the named filter defined in the manifest XML file"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "getRegExMatches": {
+              "kind": "method",
+              "signature": "getRegExMatches(): any;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "any",
+                "description": []
+              },
+              "parameters": {},
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Returns string values in the currently selected message object that match the regular expressions defined in the manifest XML file"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "getRegExMatchesByName": {
+              "kind": "method",
+              "signature": "getRegExMatchesByName(name: string): Array<string>;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "Array<string>",
+                "description": []
+              },
+              "parameters": {
+                "name": {
+                  "name": "name",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Returns string values that match the named regular expression defined in the manifest XML file"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "itemClass": {
+              "kind": "property",
+              "signature": "itemClass: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "itemId": {
+              "kind": "property",
+              "signature": "itemId: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "normalizedSubject": {
+              "kind": "property",
+              "signature": "normalizedSubject: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "subject": {
+              "kind": "property",
+              "signature": "subject: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "LocalClientTime": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "date": {
+              "kind": "property",
+              "signature": "date: number;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "hours": {
+              "kind": "property",
+              "signature": "hours: number;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "milliseconds": {
+              "kind": "property",
+              "signature": "milliseconds: number;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "minutes": {
+              "kind": "property",
+              "signature": "minutes: number;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "month": {
+              "kind": "property",
+              "signature": "month: number;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "seconds": {
+              "kind": "property",
+              "signature": "seconds: number;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "timezoneOffset": {
+              "kind": "property",
+              "signature": "timezoneOffset: number;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "year": {
+              "kind": "property",
+              "signature": "year: number;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "Location": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "getAsync": {
+              "kind": "method",
+              "signature": "getAsync(callback: (result: AsyncResult) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The optional method to call when the string is inserted"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Begins an asynchronous request for the location of an appointment"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "setAsync": {
+              "kind": "method",
+              "signature": "setAsync(location: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "location": {
+                  "name": "location",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Begins an asynchronous request to set the location of an appointment"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "Mailbox": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "addHandlerAsync": {
+              "kind": "method",
+              "signature": "addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, options?: any, callback?: (result: AsyncResult) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "eventType": {
+                  "name": "eventType",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The event that should invoke the handler"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Office.EventType"
+                },
+                "handler": {
+                  "name": "handler",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The function to handle the event"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "(type: Office.EventType) => void"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Any optional parameters or state data passed to the method"
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "any"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The optional method to call when the handler is added"
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Adds an event handler for a supported event"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "convertToEwsId": {
+              "kind": "method",
+              "signature": "convertToEwsId(itemId: string, restVersion: Office.MailboxEnums.RestVersion): string;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "string",
+                "description": []
+              },
+              "parameters": {
+                "itemId": {
+                  "name": "itemId",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "An item ID formatted for the Outlook REST APIs"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "restVersion": {
+                  "name": "restVersion",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A value indicating the version of the Outlook REST API used to retrieve the item ID"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Office.MailboxEnums.RestVersion"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Converts an item ID formatted for REST into EWS format."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "convertToLocalClientTime": {
+              "kind": "method",
+              "signature": "convertToLocalClientTime(timeValue: Date): LocalClientTime;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "LocalClientTime",
+                "description": []
+              },
+              "parameters": {
+                "timeValue": {
+                  "name": "timeValue",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A Date object"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Date"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets a Date object from a dictionary containing time information"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "convertToRestId": {
+              "kind": "method",
+              "signature": "convertToRestId(itemId: string, restVersion: Office.MailboxEnums.RestVersion): string;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "string",
+                "description": []
+              },
+              "parameters": {
+                "itemId": {
+                  "name": "itemId",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "An item ID formatted for the Outlook EWS APIs"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "restVersion": {
+                  "name": "restVersion",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A value indicating the version of the Outlook REST API that the converted ID will be used with"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Office.MailboxEnums.RestVersion"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Converts an item ID formatted for EWS into REST format."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "convertToUtcClientTime": {
+              "kind": "method",
+              "signature": "convertToUtcClientTime(input: LocalClientTime): Date;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "Date",
+                "description": []
+              },
+              "parameters": {
+                "input": {
+                  "name": "input",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A dictionary containing a date. The dictionary should contain the following fields: year, month, date, hours, minutes, seconds, time zone, time zone offset"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "LocalClientTime"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets a dictionary containing time information in local client time"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "diagnostics": {
+              "kind": "property",
+              "signature": "diagnostics: Diagnostics;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Diagnostics",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "displayAppointmentForm": {
+              "kind": "method",
+              "signature": "displayAppointmentForm(itemId: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "itemId": {
+                  "name": "itemId",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The Exchange Web Services (EWS) identifier for an existing calendar appointment"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Displays an existing calendar appointment"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "displayMessageForm": {
+              "kind": "method",
+              "signature": "displayMessageForm(itemId: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "itemId": {
+                  "name": "itemId",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The Exchange Web Services (EWS) identifier for an existing message"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Displays an existing message"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "displayNewAppointmentForm": {
+              "kind": "method",
+              "signature": "displayNewAppointmentForm(parameters?: AppointmentForm): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "parameters": {
+                  "name": "parameters",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A dictionary of parameters describing the new appointment."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "AppointmentForm"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Displays a form for creating a new calendar appointment"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "displayNewMessageForm": {
+              "kind": "method",
+              "signature": "displayNewMessageForm(options?: any): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A dictionary containing all values to be filled in for the user in the new form"
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "any"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Displays a new message form WARNING: This api is not officially released, and may not work on all platforms"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "ewsUrl": {
+              "kind": "property",
+              "signature": "ewsUrl: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "getCallbackTokenAsync": {
+              "kind": "method",
+              "signature": "getCallbackTokenAsync(callback?: (result: AsyncResult) => void, userContext?: any): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The optional method to call when the string is inserted"
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                },
+                "userContext": {
+                  "name": "userContext",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional variable for any state data that is passed to the asynchronous method"
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "any"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets a string that contains a token used to get an attachment or item from an Exchange Server"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "getUserIdentityTokenAsync": {
+              "kind": "method",
+              "signature": "getUserIdentityTokenAsync(callback?: (result: AsyncResult) => void, userContext?: any): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The optional method to call when the string is inserted"
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                },
+                "userContext": {
+                  "name": "userContext",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional variable for any state data that is passed to the asynchronous method"
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "any"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets a token identifying the user and the app for Office"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "item": {
+              "kind": "property",
+              "signature": "item: Item;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Item",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "makeEwsRequestAsync": {
+              "kind": "method",
+              "signature": "makeEwsRequestAsync(data: any, callback?: (result: AsyncResult) => void, userContext?: any): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "data": {
+                  "name": "data",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The EWS request"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "any"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The optional method to call when the string is inserted"
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                },
+                "userContext": {
+                  "name": "userContext",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional variable for any state data that is passed to the asynchronous method"
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "any"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the user’s mailbox"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "userProfile": {
+              "kind": "property",
+              "signature": "userProfile: UserProfile;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "UserProfile",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "MailboxEnums": {
+          "kind": "namespace",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "exports": {
+            "AttachmentType": {
+              "kind": "enum",
+              "values": {
+                "File": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "The attachment is a file"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "Item": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "The attachment is an Exchange item"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "EntityType": {
+              "kind": "enum",
+              "values": {
+                "Address": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Specifies that the entity is a postal address"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "Contact": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Specifies that the entity is a contact"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "EmailAddress": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Specifies that the entity is SMTP email address"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "MeetingSuggestion": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Specifies that the entity is a meeting suggestion"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "PhoneNumber": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Specifies that the entity is US phone number"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "TaskSuggestion": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Specifies that the entity is a task suggestion"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "Url": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Specifies that the entity is an Internet URL"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "ItemNotificationMessageType": {
+              "kind": "enum",
+              "values": {
+                "ErrorMessage": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "The notificationMessage is an error message."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "InformationalMessage": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "The notificationMessage is an informational message."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "ProgressIndicator": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "The notificationMessage is a progress indicator."
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "ItemType": {
+              "kind": "enum",
+              "values": {
+                "Appointment": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "An appointment item"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "Message": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "An email, meeting request, meeting response, or meeting cancellation"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "RecipientType": {
+              "kind": "enum",
+              "values": {
+                "DistributionList": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Specifies that the recipient is a distribution list containing a list of email addresses"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "ExternalUser": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Specifies that the recipient is an SMTP email address that is not on the Exchange server"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "Other": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Specifies that the recipient is not one of the other recipient types"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "User": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Specifies that the recipient is an SMTP email address that is on the Exchange server"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "ResponseType": {
+              "kind": "enum",
+              "values": {
+                "Accepted": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "The meeting request was accepted by the attendee"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "Declined": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "The meeting request was declined by the attendee"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "None": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "There has been no response from the attendee"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "Organizer": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "The attendee is the meeting organizer"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "Tentative": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "The meeting request was tentatively accepted by the attendee"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "RestVersion": {
+              "kind": "enum",
+              "values": {
+                "Beta": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "v1_0": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false
+                },
+                "v2_0": {
+                  "kind": "enum value",
+                  "value": "",
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "MeetingSuggestion": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "attendees": {
+              "kind": "property",
+              "signature": "attendees: Array<EmailUser>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<EmailUser>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "end": {
+              "kind": "property",
+              "signature": "end: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "location": {
+              "kind": "property",
+              "signature": "location: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "meetingstring": {
+              "kind": "property",
+              "signature": "meetingstring: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "start": {
+              "kind": "property",
+              "signature": "start: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "subject": {
+              "kind": "property",
+              "signature": "subject: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "Message": {
+          "kind": "interface",
+          "extends": "Item",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "conversationId": {
+              "kind": "property",
+              "signature": "conversationId: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "MessageCompose": {
+          "kind": "interface",
+          "extends": "Message",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "bcc": {
+              "kind": "property",
+              "signature": "bcc: Recipients;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Recipients",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "cc": {
+              "kind": "property",
+              "signature": "cc: Recipients;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Recipients",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "to": {
+              "kind": "property",
+              "signature": "to: Recipients;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Recipients",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "MessageRead": {
+          "kind": "interface",
+          "extends": "Message",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "cc": {
+              "kind": "property",
+              "signature": "cc: Array<EmailAddressDetails>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<EmailAddressDetails>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "from": {
+              "kind": "property",
+              "signature": "from: EmailAddressDetails;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "EmailAddressDetails",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "internetMessageId": {
+              "kind": "property",
+              "signature": "internetMessageId: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "sender": {
+              "kind": "property",
+              "signature": "sender: EmailAddressDetails;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "EmailAddressDetails",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "to": {
+              "kind": "property",
+              "signature": "to: Array<EmailAddressDetails>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<EmailAddressDetails>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "NotificationMessageDetails": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "icon": {
+              "kind": "property",
+              "signature": "icon?: string;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "key": {
+              "kind": "property",
+              "signature": "key?: string;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "message": {
+              "kind": "property",
+              "signature": "message: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "persistent": {
+              "kind": "property",
+              "signature": "persistent?: Boolean;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Boolean",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "type": {
+              "kind": "property",
+              "signature": "type: Office.MailboxEnums.ItemNotificationMessageType;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Office.MailboxEnums.ItemNotificationMessageType",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "NotificationMessages": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "addAsync": {
+              "kind": "method",
+              "signature": "addAsync(key: string, JSONmessage: NotificationMessageDetails): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "key": {
+                  "name": "key",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A developer-specified key used to refrence this notification message. Developers can use it to modify this message later."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "JSONmessage": {
+                  "name": "JSONmessage",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JSON object that contains the notification message to be added to this item"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "NotificationMessageDetails"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Adds a notification to an item"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "getAllAsync": {
+              "kind": "method",
+              "signature": "getAllAsync(callback: (result: AsyncResult) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The optional callback method"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Returns all keys and messages for an item."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "removeAsync": {
+              "kind": "method",
+              "signature": "removeAsync(key: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "key": {
+                  "name": "key",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The key for the notification message to remove"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Removes a notification message for an item."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "replaceAsync": {
+              "kind": "method",
+              "signature": "replaceAsync(key: string, JSONmessage: NotificationMessageDetails): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "key": {
+                  "name": "key",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The key for the notification message to replace."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "JSONmessage": {
+                  "name": "JSONmessage",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A JSON object that contains the new notification message to replace the existing message"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "NotificationMessageDetails"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Replaces a notification message that has a given key with another message"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "PhoneNumber": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "originalPhoneString": {
+              "kind": "property",
+              "signature": "originalPhoneString: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "phoneString": {
+              "kind": "property",
+              "signature": "phoneString: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "type": {
+              "kind": "property",
+              "signature": "type: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "Recipients": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "addAsync": {
+              "kind": "method",
+              "signature": "addAsync(recipients: Array<string | EmailUser | EmailAddressDetails>): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "recipients": {
+                  "name": "recipients",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The recipients to add to the recipients list"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Array<string | EmailUser | EmailAddressDetails>"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Begins an asynchronous request to add a recipient list to an appointment or message"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "getAsync": {
+              "kind": "method",
+              "signature": "getAsync(callback: (result: AsyncResult) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The optional method to call when the string is inserted"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Begins an asynchronous request to get the recipient list for an appointment or message"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "setAsync": {
+              "kind": "method",
+              "signature": "setAsync(recipients: Array<string | EmailUser | EmailAddressDetails>): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "recipients": {
+                  "name": "recipients",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The recipients to add to the recipients list"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Array<string | EmailUser | EmailAddressDetails>"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Begins an asynchronous request to set the recipient list for an appointment or message"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "ReplyFormAttachment": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "itemId": {
+              "kind": "property",
+              "signature": "itemId?: string;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "name": {
+              "kind": "property",
+              "signature": "name: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "type": {
+              "kind": "property",
+              "signature": "type: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "url": {
+              "kind": "property",
+              "signature": "url?: string;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "ReplyFormData": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "attachments": {
+              "kind": "property",
+              "signature": "attachments?: Array<ReplyFormAttachment>;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<ReplyFormAttachment>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "callback": {
+              "kind": "property",
+              "signature": "callback?: (result: AsyncResult) => void;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "(result: AsyncResult) => void",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "htmlBody": {
+              "kind": "property",
+              "signature": "htmlBody?: string;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "RoamingSettings": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "get": {
+              "kind": "method",
+              "signature": "get(name: string): any;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "any",
+                "description": []
+              },
+              "parameters": {
+                "name": {
+                  "name": "name",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The case-sensitive name of the setting to retrieve"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Retrieves the specified setting"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "remove": {
+              "kind": "method",
+              "signature": "remove(name: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "name": {
+                  "name": "name",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The case-sensitive name of the setting to remove"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Removes the specified setting"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "saveAsync": {
+              "kind": "method",
+              "signature": "saveAsync(callback?: (result: AsyncResult) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A function that is invoked when the callback returns, whose only parameter is of type AsyncResult"
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Saves the settings"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(name: string, value: any): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "name": {
+                  "name": "name",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The case-sensitive name of the setting to set or create"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "value": {
+                  "name": "value",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Specifies the value to be stored"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "any"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets or creates the specified setting"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "SourceProperty": {
+          "kind": "enum",
+          "values": {
+            "Body": {
+              "kind": "enum value",
+              "value": "",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The source of the data is from the body of the message."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "Subject": {
+              "kind": "enum value",
+              "value": "",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The source of the data is from the subject of the message."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "Subject": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "getAsync": {
+              "kind": "method",
+              "signature": "getAsync(callback: (result: AsyncResult) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The optional method to call when the string is inserted"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Begins an asynchronous request to get the subject of an appointment or message"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "setAsync": {
+              "kind": "method",
+              "signature": "setAsync(data: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "data": {
+                  "name": "data",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The subject of the appointment. The string is limited to 255 characters"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Begins an asynchronous call to set the subject of an appointment or message"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "TaskSuggestion": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "assignees": {
+              "kind": "property",
+              "signature": "assignees: Array<EmailUser>;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Array<EmailUser>",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "taskString": {
+              "kind": "property",
+              "signature": "taskString: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "Time": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "getAsync": {
+              "kind": "method",
+              "signature": "getAsync(callback: (result: AsyncResult) => void): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The optional method to call when the string is inserted"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Begins an asynchronous request to get the start or end time"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "setAsync": {
+              "kind": "method",
+              "signature": "setAsync(dateTime: Date): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "dateTime": {
+                  "name": "dateTime",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A date-time object in Coordinated Universal Time (UTC)"
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Date"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Begins an asynchronous request to set the start or end time"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "UserProfile": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "displayName": {
+              "kind": "property",
+              "signature": "displayName: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "emailAddress": {
+              "kind": "property",
+              "signature": "emailAddress: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "timeZone": {
+              "kind": "property",
+              "signature": "timeZone: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        }
+      }
+    }
+  }
+}
