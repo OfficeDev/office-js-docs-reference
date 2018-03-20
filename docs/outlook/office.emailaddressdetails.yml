@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.EmailAddressDetails
+    name: Office.EmailAddressDetails
+    fullName: outlook.Office.EmailAddressDetails
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.EmailAddressDetails.appointmentResponse
+      - outlook.Office.EmailAddressDetails.displayName
+      - outlook.Office.EmailAddressDetails.emailAddress
+      - outlook.Office.EmailAddressDetails.recipientType
+  - uid: outlook.Office.EmailAddressDetails.appointmentResponse
+    name: appointmentResponse
+    fullName: outlook.Office.EmailAddressDetails.appointmentResponse
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'appointmentResponse: Office.MailboxEnums.ResponseType;'
+      return:
+        type:
+          - Office.MailboxEnums.ResponseType
+  - uid: outlook.Office.EmailAddressDetails.displayName
+    name: displayName
+    fullName: outlook.Office.EmailAddressDetails.displayName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayName: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.EmailAddressDetails.emailAddress
+    name: emailAddress
+    fullName: outlook.Office.EmailAddressDetails.emailAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddress: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.EmailAddressDetails.recipientType
+    name: recipientType
+    fullName: outlook.Office.EmailAddressDetails.recipientType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'recipientType: Office.MailboxEnums.RecipientType;'
+      return:
+        type:
+          - Office.MailboxEnums.RecipientType

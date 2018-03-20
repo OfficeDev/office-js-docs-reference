@@ -1,0 +1,169 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.RangeFont
+    summary: |-
+      This object represents the font attributes (font name, font size, color, etc.) for an object.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.RangeFont
+    fullName: excel.Excel.RangeFont
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.RangeFont.bold
+      - excel.Excel.RangeFont.color
+      - excel.Excel.RangeFont.italic
+      - excel.Excel.RangeFont.load
+      - excel.Excel.RangeFont.name
+      - excel.Excel.RangeFont.set
+      - excel.Excel.RangeFont.size
+      - excel.Excel.RangeFont.toJSON
+      - excel.Excel.RangeFont.underline
+  - uid: excel.Excel.RangeFont.bold
+    summary: |-
+      Represents the bold status of font.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: bold
+    fullName: excel.Excel.RangeFont.bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.RangeFont.color
+    summary: |-
+      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: color
+    fullName: excel.Excel.RangeFont.color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.RangeFont.italic
+    summary: |-
+      Represents the italic status of the font.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: italic
+    fullName: excel.Excel.RangeFont.italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.RangeFont.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.RangeFont.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeFont;'
+      return:
+        type:
+          - Excel.RangeFont
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.RangeFont.name
+    summary: |-
+      Font name (e.g. "Calibri")
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: name
+    fullName: excel.Excel.RangeFont.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.RangeFont.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.RangeFont.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.RangeFontUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.RangeFontUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.RangeFont.size
+    summary: |-
+      Font size.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: size
+    fullName: excel.Excel.RangeFont.size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.RangeFont.toJSON
+    name: toJSON()
+    fullName: excel.Excel.RangeFont.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"bold\": boolean;\r\n            \"color\": string;\r\n            \"italic\": boolean;\r\n            \"name\": string;\r\n            \"size\": number;\r\n            \"underline\": string;\r\n        }"
+        description: ''
+  - uid: excel.Excel.RangeFont.underline
+    summary: |-
+      Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: underline
+    fullName: excel.Excel.RangeFont.underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline: string;'
+      return:
+        type:
+          - string

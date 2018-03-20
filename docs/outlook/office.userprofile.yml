@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.UserProfile
+    name: Office.UserProfile
+    fullName: outlook.Office.UserProfile
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.UserProfile.displayName
+      - outlook.Office.UserProfile.emailAddress
+      - outlook.Office.UserProfile.timeZone
+  - uid: outlook.Office.UserProfile.displayName
+    name: displayName
+    fullName: outlook.Office.UserProfile.displayName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayName: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.UserProfile.emailAddress
+    name: emailAddress
+    fullName: outlook.Office.UserProfile.emailAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddress: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.UserProfile.timeZone
+    name: timeZone
+    fullName: outlook.Office.UserProfile.timeZone
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'timeZone: string;'
+      return:
+        type:
+          - string

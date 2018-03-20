@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.FiveRatingSet
+    name: Excel.FiveRatingSet
+    fullName: excel.Excel.FiveRatingSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.FiveRatingSet.__index
+      - excel.Excel.FiveRatingSet.fourBars
+      - excel.Excel.FiveRatingSet.noBars
+      - excel.Excel.FiveRatingSet.oneBar
+      - excel.Excel.FiveRatingSet.threeBars
+      - excel.Excel.FiveRatingSet.twoBars
+  - uid: excel.Excel.FiveRatingSet.__index
+    name: __index(index)
+    fullName: excel.Excel.FiveRatingSet.__index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: excel.Excel.FiveRatingSet.fourBars
+    name: fourBars
+    fullName: excel.Excel.FiveRatingSet.fourBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourBars: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel.Excel.FiveRatingSet.noBars
+    name: noBars
+    fullName: excel.Excel.FiveRatingSet.noBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'noBars: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel.Excel.FiveRatingSet.oneBar
+    name: oneBar
+    fullName: excel.Excel.FiveRatingSet.oneBar
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'oneBar: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel.Excel.FiveRatingSet.threeBars
+    name: threeBars
+    fullName: excel.Excel.FiveRatingSet.threeBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeBars: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel.Excel.FiveRatingSet.twoBars
+    name: twoBars
+    fullName: excel.Excel.FiveRatingSet.twoBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'twoBars: Icon;'
+      return:
+        type:
+          - Icon

@@ -1,0 +1,105 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartAxisFormat
+    summary: |-
+      Encapsulates the format properties for the chart axis.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.ChartAxisFormat
+    fullName: excel.Excel.ChartAxisFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartAxisFormat.font
+      - excel.Excel.ChartAxisFormat.line
+      - excel.Excel.ChartAxisFormat.load
+      - excel.Excel.ChartAxisFormat.set
+      - excel.Excel.ChartAxisFormat.toJSON
+  - uid: excel.Excel.ChartAxisFormat.font
+    summary: |-
+      Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: font
+    fullName: excel.Excel.ChartAxisFormat.font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Excel.ChartFont;'
+      return:
+        type:
+          - Excel.ChartFont
+  - uid: excel.Excel.ChartAxisFormat.line
+    summary: |-
+      Represents chart line formatting. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: line
+    fullName: excel.Excel.ChartAxisFormat.line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly line: Excel.ChartLineFormat;'
+      return:
+        type:
+          - Excel.ChartLineFormat
+  - uid: excel.Excel.ChartAxisFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ChartAxisFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartAxisFormat;'
+      return:
+        type:
+          - Excel.ChartAxisFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.ChartAxisFormat.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartAxisFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ChartAxisFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartAxisFormatUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.ChartAxisFormat.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartAxisFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"font\": ChartFont;\r\n            \"line\": ChartLineFormat;\r\n        }"
+        description: ''

@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.FiveArrowsSet
+    name: Excel.FiveArrowsSet
+    fullName: excel.Excel.FiveArrowsSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.FiveArrowsSet.__index
+      - excel.Excel.FiveArrowsSet.greenUpArrow
+      - excel.Excel.FiveArrowsSet.redDownArrow
+      - excel.Excel.FiveArrowsSet.yellowDownInclineArrow
+      - excel.Excel.FiveArrowsSet.yellowSideArrow
+      - excel.Excel.FiveArrowsSet.yellowUpInclineArrow
+  - uid: excel.Excel.FiveArrowsSet.__index
+    name: __index(index)
+    fullName: excel.Excel.FiveArrowsSet.__index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: excel.Excel.FiveArrowsSet.greenUpArrow
+    name: greenUpArrow
+    fullName: excel.Excel.FiveArrowsSet.greenUpArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenUpArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel.Excel.FiveArrowsSet.redDownArrow
+    name: redDownArrow
+    fullName: excel.Excel.FiveArrowsSet.redDownArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redDownArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel.Excel.FiveArrowsSet.yellowDownInclineArrow
+    name: yellowDownInclineArrow
+    fullName: excel.Excel.FiveArrowsSet.yellowDownInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowDownInclineArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel.Excel.FiveArrowsSet.yellowSideArrow
+    name: yellowSideArrow
+    fullName: excel.Excel.FiveArrowsSet.yellowSideArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowSideArrow: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel.Excel.FiveArrowsSet.yellowUpInclineArrow
+    name: yellowUpInclineArrow
+    fullName: excel.Excel.FiveArrowsSet.yellowUpInclineArrow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowUpInclineArrow: Icon;'
+      return:
+        type:
+          - Icon

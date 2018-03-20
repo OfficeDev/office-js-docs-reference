@@ -1,0 +1,247 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.NamedItemCollection
+    summary: >-
+      A collection of all the nameditem objects that are part of the workbook or worksheet, depending on how it was
+      reached.
+
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.NamedItemCollection
+    fullName: excel.Excel.NamedItemCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.NamedItemCollection.add
+      - excel.Excel.NamedItemCollection.addFormulaLocal
+      - excel.Excel.NamedItemCollection.getCount
+      - excel.Excel.NamedItemCollection.getItem
+      - excel.Excel.NamedItemCollection.getItemOrNullObject
+      - excel.Excel.NamedItemCollection.items
+      - excel.Excel.NamedItemCollection.load
+      - excel.Excel.NamedItemCollection.toJSON
+  - uid: excel.Excel.NamedItemCollection.add
+    summary: |-
+      Adds a new name to the collection of the given scope.
+
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+    name: 'add(name, reference, comment)'
+    fullName: excel.Excel.NamedItemCollection.add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, reference: Excel.Range | string, comment?: string): Excel.NamedItem;'
+      return:
+        type:
+          - Excel.NamedItem
+        description: ''
+      parameters:
+        - id: name
+          description: The name of the named item.
+          type:
+            - string
+        - id: reference
+          description: The formula or the range that the name will refer to.
+          type:
+            - Excel.Range | string
+        - id: comment
+          description: The comment associated with the named item
+          type:
+            - string
+    remarks: |
+
+
+      ## Snippets
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const headerRange = sheet.getRange("A1:E1");
+          sheet.names.add("ExpensesHeader", headerRange);
+          const namedItems = sheet.names.load("name, type");
+
+          await context.sync();
+
+          let namedItemsList = `This workbook contains ${namedItems.items.length} named item(s):`;
+          for (let i = 0; i < namedItems.items.length; i++) {
+              namedItemsList += JSON.stringify(namedItems.items[i]);
+          }
+          OfficeHelpers.UI.notify(namedItemsList);
+
+          await context.sync();
+      });
+      ```
+
+      ```typescript
+      try {
+          await Excel.run(async (context) => {
+
+              await OfficeHelpers.ExcelUtilities.forceCreateSheet(context.workbook, "Sample");
+
+              const sheet = context.workbook.worksheets.getItem("Sample");
+
+              let expensesTable = sheet.tables.add("A1:D1", true);
+              expensesTable.name = "ExpensesTable";
+
+              expensesTable.getHeaderRowRange().values = [["DATE", "MERCHANT", "CATEGORY", "AMOUNT"]];
+
+              let newData = transactions.map(item =>
+                  [item.DATE, item.MERCHANT, item.CATEGORY, item.AMOUNT]);
+
+              expensesTable.rows.add(null, newData);
+
+              sheet.names.add("TotalAmount", "=SUM(ExpensesTable[AMOUNT])");
+
+              sheet.getRange("D11").values = [["=TotalAmount"]];
+
+              if (Office.context.requirements.isSetSupported("ExcelApi", 1.2)) {
+                  sheet.getUsedRange().format.autofitColumns();
+                  sheet.getUsedRange().format.autofitRows();
+              }
+
+              sheet.activate();
+
+              await context.sync();
+          });
+      }
+      catch (error) {
+          OfficeHelpers.UI.notify(error);
+          OfficeHelpers.Utilities.log(error);
+      }
+      ```
+  - uid: excel.Excel.NamedItemCollection.addFormulaLocal
+    summary: |-
+      Adds a new name to the collection of the given scope using the user's locale for the formula.
+
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+    name: 'addFormulaLocal(name, formula, comment)'
+    fullName: excel.Excel.NamedItemCollection.addFormulaLocal
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addFormulaLocal(name: string, formula: string, comment?: string): Excel.NamedItem;'
+      return:
+        type:
+          - Excel.NamedItem
+        description: ''
+      parameters:
+        - id: name
+          description: The "name" of the named item.
+          type:
+            - string
+        - id: formula
+          description: The formula in the user's locale that the name will refer to.
+          type:
+            - string
+        - id: comment
+          description: The comment associated with the named item
+          type:
+            - string
+  - uid: excel.Excel.NamedItemCollection.getCount
+    summary: |-
+      Gets the number of named items in the collection.
+
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+    name: getCount()
+    fullName: excel.Excel.NamedItemCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: excel.Excel.NamedItemCollection.getItem
+    summary: |-
+      Gets a nameditem object using its name
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: getItem(name)
+    fullName: excel.Excel.NamedItemCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.NamedItem;'
+      return:
+        type:
+          - Excel.NamedItem
+        description: ''
+      parameters:
+        - id: name
+          description: nameditem name.
+          type:
+            - string
+  - uid: excel.Excel.NamedItemCollection.getItemOrNullObject
+    summary: |-
+      Gets a nameditem object using its name. If the nameditem object does not exist, will return a null object.
+
+      \[ [Api set: ExcelApi 1.4](http://bing.com) \]
+    name: getItemOrNullObject(name)
+    fullName: excel.Excel.NamedItemCollection.getItemOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.NamedItem;'
+      return:
+        type:
+          - Excel.NamedItem
+        description: ''
+      parameters:
+        - id: name
+          description: nameditem name.
+          type:
+            - string
+  - uid: excel.Excel.NamedItemCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: excel.Excel.NamedItemCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Array<Excel.NamedItem>;'
+      return:
+        type:
+          - Array<Excel.NamedItem>
+  - uid: excel.Excel.NamedItemCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.NamedItemCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.NamedItemCollection;'
+      return:
+        type:
+          - Excel.NamedItemCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.NamedItemCollection.toJSON
+    name: toJSON()
+    fullName: excel.Excel.NamedItemCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - '{}'
+        description: ''

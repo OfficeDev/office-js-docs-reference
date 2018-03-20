@@ -1,0 +1,230 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.SearchOptions
+    summary: |-
+      Specifies the options to be included in a search operation.
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: Word.SearchOptions
+    fullName: word.Word.SearchOptions
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: word
+    children:
+      - word.Word.SearchOptions.ignorePunct
+      - word.Word.SearchOptions.ignoreSpace
+      - word.Word.SearchOptions.load
+      - word.Word.SearchOptions.matchCase
+      - word.Word.SearchOptions.matchPrefix
+      - word.Word.SearchOptions.matchSuffix
+      - word.Word.SearchOptions.matchWholeWord
+      - word.Word.SearchOptions.matchWildcards
+      - word.Word.SearchOptions.matchWildCards
+      - word.Word.SearchOptions.newObject
+      - word.Word.SearchOptions.set
+      - word.Word.SearchOptions.toJSON
+  - uid: word.Word.SearchOptions.ignorePunct
+    summary: >-
+      Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the
+      Ignore punctuation check box in the Find and Replace dialog box.
+
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: ignorePunct
+    fullName: word.Word.SearchOptions.ignorePunct
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ignorePunct: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.SearchOptions.ignoreSpace
+    summary: >-
+      Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore
+      whitespace characters check box in the Find and Replace dialog box.
+
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: ignoreSpace
+    fullName: word.Word.SearchOptions.ignoreSpace
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ignoreSpace: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.SearchOptions.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: word.Word.SearchOptions.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.SearchOptions;'
+      return:
+        type:
+          - Word.SearchOptions
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: word.Word.SearchOptions.matchCase
+    summary: >-
+      Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
+      check box in the Find and Replace dialog box (Edit menu).
+
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: matchCase
+    fullName: word.Word.SearchOptions.matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchCase: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.SearchOptions.matchPrefix
+    summary: >-
+      Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the
+      Match prefix check box in the Find and Replace dialog box.
+
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: matchPrefix
+    fullName: word.Word.SearchOptions.matchPrefix
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchPrefix: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.SearchOptions.matchSuffix
+    summary: >-
+      Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the
+      Match suffix check box in the Find and Replace dialog box.
+
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: matchSuffix
+    fullName: word.Word.SearchOptions.matchSuffix
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchSuffix: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.SearchOptions.matchWholeWord
+    summary: >-
+      Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger
+      word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
+
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: matchWholeWord
+    fullName: word.Word.SearchOptions.matchWholeWord
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchWholeWord: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.SearchOptions.matchWildcards
+    summary: >-
+      Gets or sets a value that indicates whether the search will be performed using special search operators.
+      Corresponds to the Use wildcards check box in the Find and Replace dialog box.
+
+
+      \[ [Api set: WordApi 1.1](http://bing.com) \]
+    name: matchWildcards
+    fullName: word.Word.SearchOptions.matchWildcards
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchWildcards: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.SearchOptions.matchWildCards
+    name: matchWildCards
+    fullName: word.Word.SearchOptions.matchWildCards
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchWildCards: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.SearchOptions.newObject
+    summary: Create a new instance of Word.SearchOptions object
+    name: newObject(context)
+    fullName: word.Word.SearchOptions.newObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'static newObject(context: OfficeExtension.ClientRequestContext): Word.SearchOptions;'
+      return:
+        type:
+          - Word.SearchOptions
+        description: ''
+      parameters:
+        - id: context
+          description: ''
+          type:
+            - OfficeExtension.ClientRequestContext
+  - uid: word.Word.SearchOptions.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: word.Word.SearchOptions.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.SearchOptionsUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.SearchOptionsUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: word.Word.SearchOptions.toJSON
+    name: toJSON()
+    fullName: word.Word.SearchOptions.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"ignorePunct\": boolean;\r\n            \"ignoreSpace\": boolean;\r\n            \"matchCase\": boolean;\r\n            \"matchPrefix\": boolean;\r\n            \"matchSuffix\": boolean;\r\n            \"matchWholeWord\": boolean;\r\n            \"matchWildcards\": boolean;\r\n        }"
+        description: ''

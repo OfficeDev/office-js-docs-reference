@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.Entities
+    name: Office.Entities
+    fullName: outlook.Office.Entities
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.Entities.addresses
+      - outlook.Office.Entities.contacts
+      - outlook.Office.Entities.emailAddresses
+      - outlook.Office.Entities.meetingSuggestions
+      - outlook.Office.Entities.phoneNumbers
+      - outlook.Office.Entities.taskSuggestions
+      - outlook.Office.Entities.urls
+  - uid: outlook.Office.Entities.addresses
+    name: addresses
+    fullName: outlook.Office.Entities.addresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addresses: Array<string>;'
+      return:
+        type:
+          - Array<string>
+  - uid: outlook.Office.Entities.contacts
+    name: contacts
+    fullName: outlook.Office.Entities.contacts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contacts: Array<Contact>;'
+      return:
+        type:
+          - Array<Contact>
+  - uid: outlook.Office.Entities.emailAddresses
+    name: emailAddresses
+    fullName: outlook.Office.Entities.emailAddresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddresses: Array<string>;'
+      return:
+        type:
+          - Array<string>
+  - uid: outlook.Office.Entities.meetingSuggestions
+    name: meetingSuggestions
+    fullName: outlook.Office.Entities.meetingSuggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'meetingSuggestions: Array<MeetingSuggestion>;'
+      return:
+        type:
+          - Array<MeetingSuggestion>
+  - uid: outlook.Office.Entities.phoneNumbers
+    name: phoneNumbers
+    fullName: outlook.Office.Entities.phoneNumbers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'phoneNumbers: Array<PhoneNumber>;'
+      return:
+        type:
+          - Array<PhoneNumber>
+  - uid: outlook.Office.Entities.taskSuggestions
+    name: taskSuggestions
+    fullName: outlook.Office.Entities.taskSuggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'taskSuggestions: Array<string>;'
+      return:
+        type:
+          - Array<string>
+  - uid: outlook.Office.Entities.urls
+    name: urls
+    fullName: outlook.Office.Entities.urls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'urls: Array<string>;'
+      return:
+        type:
+          - Array<string>

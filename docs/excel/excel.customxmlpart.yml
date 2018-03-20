@@ -1,0 +1,192 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.CustomXmlPart
+    summary: |-
+      Represents a custom XML part object in a workbook.
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: Excel.CustomXmlPart
+    fullName: excel.Excel.CustomXmlPart
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.CustomXmlPart.delete
+      - excel.Excel.CustomXmlPart.getXml
+      - excel.Excel.CustomXmlPart.id
+      - excel.Excel.CustomXmlPart.load
+      - excel.Excel.CustomXmlPart.namespaceUri
+      - excel.Excel.CustomXmlPart.setXml
+      - excel.Excel.CustomXmlPart.toJSON
+  - uid: excel.Excel.CustomXmlPart.delete
+    summary: |-
+      Deletes the custom XML part.
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: delete()
+    fullName: excel.Excel.CustomXmlPart.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.CustomXmlPart.getXml
+    summary: |-
+      Gets the custom XML part's full XML content.
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: getXml()
+    fullName: excel.Excel.CustomXmlPart.getXml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getXml(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+    remarks: |
+
+
+      ## Snippets
+
+      ```typescript
+      await Excel.run(async (context) => {
+
+          // You must have the xmlns attribute to populate the 
+          // CustomXml.namespaceUri property.
+          const originalXml = "<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
+          const customXmlPart = context.workbook.customXmlParts.add(originalXml);
+          customXmlPart.load("id");
+          const xmlBlob = customXmlPart.getXml();
+
+          await context.sync();
+
+          const readableXml = addLineBreaksToXML(xmlBlob.value);
+          $("#display-xml").text(readableXml);
+
+          // Store the XML part's ID in a setting.
+          const settings = context.workbook.settings;
+          settings.add("ContosoReviewXmlPartId", customXmlPart.id);
+
+          await context.sync();
+      });
+      ```
+  - uid: excel.Excel.CustomXmlPart.id
+    summary: |-
+      The custom XML part's ID. Read-only.
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: id
+    fullName: excel.Excel.CustomXmlPart.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+    remarks: |
+
+
+      ## Snippets
+
+      ```typescript
+      await Excel.run(async (context) => {
+
+          // You must have the xmlns attribute to populate the 
+          // CustomXml.namespaceUri property.
+          const originalXml = "<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
+          const customXmlPart = context.workbook.customXmlParts.add(originalXml);
+          customXmlPart.load("id");
+          const xmlBlob = customXmlPart.getXml();
+
+          await context.sync();
+
+          const readableXml = addLineBreaksToXML(xmlBlob.value);
+          $("#display-xml").text(readableXml);
+
+          // Store the XML part's ID in a setting.
+          const settings = context.workbook.settings;
+          settings.add("ContosoReviewXmlPartId", customXmlPart.id);
+
+          await context.sync();
+      });
+      ```
+  - uid: excel.Excel.CustomXmlPart.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.CustomXmlPart.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.CustomXmlPart;'
+      return:
+        type:
+          - Excel.CustomXmlPart
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.CustomXmlPart.namespaceUri
+    summary: |-
+      The custom XML part's namespace URI. Read-only.
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: namespaceUri
+    fullName: excel.Excel.CustomXmlPart.namespaceUri
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly namespaceUri: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.CustomXmlPart.setXml
+    summary: |-
+      Sets the custom XML part's full XML content.
+
+      \[ [Api set: ExcelApi 1.5](http://bing.com) \]
+    name: setXml(xml)
+    fullName: excel.Excel.CustomXmlPart.setXml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setXml(xml: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: xml
+          description: XML content for the part.
+          type:
+            - string
+  - uid: excel.Excel.CustomXmlPart.toJSON
+    name: toJSON()
+    fullName: excel.Excel.CustomXmlPart.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"id\": string;\r\n            \"namespaceUri\": string;\r\n        }"
+        description: ''

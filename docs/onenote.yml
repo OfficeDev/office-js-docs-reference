@@ -1,0 +1,145 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote
+    name: onenote
+    fullName: onenote
+    langs:
+      - typeScript
+    type: package
+    children:
+      - onenote.OneNote.Application
+      - onenote.OneNote.FloatingInk
+      - onenote.OneNote.Image
+      - onenote.OneNote.ImageOcrData
+      - onenote.OneNote.InkAnalysis
+      - onenote.OneNote.InkAnalysisLine
+      - onenote.OneNote.InkAnalysisLineCollection
+      - onenote.OneNote.InkAnalysisParagraph
+      - onenote.OneNote.InkAnalysisParagraphCollection
+      - onenote.OneNote.InkAnalysisWord
+      - onenote.OneNote.InkAnalysisWordCollection
+      - onenote.OneNote.InkStroke
+      - onenote.OneNote.InkStrokeCollection
+      - onenote.OneNote.InkStrokePointer
+      - onenote.OneNote.InkWord
+      - onenote.OneNote.InkWordCollection
+      - onenote.OneNote.Notebook
+      - onenote.OneNote.NotebookCollection
+      - onenote.OneNote.Outline
+      - onenote.OneNote.Page
+      - onenote.OneNote.PageCollection
+      - onenote.OneNote.PageContent
+      - onenote.OneNote.PageContentCollection
+      - onenote.OneNote.Paragraph
+      - onenote.OneNote.ParagraphCollection
+      - onenote.OneNote.RequestContext
+      - onenote.OneNote.RichText
+      - onenote.OneNote.run
+      - onenote.OneNote.Section
+      - onenote.OneNote.SectionCollection
+      - onenote.OneNote.SectionGroup
+      - onenote.OneNote.SectionGroupCollection
+      - onenote.OneNote.Table
+      - onenote.OneNote.TableCell
+      - onenote.OneNote.TableCellCollection
+      - onenote.OneNote.TableRow
+      - onenote.OneNote.TableRowCollection
+  - uid: onenote.OneNote.run
+    summary: >-
+      Executes a batch script that performs actions on the OneNote object model. When the promise is resolved, any
+      tracked objects that were automatically allocated during execution will be released.
+    name: run(batch)
+    fullName: onenote.OneNote.run
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export function run<T>(batch: (context: OneNote.RequestContext) => OfficeExtension.IPromise<T>):
+        OfficeExtension.IPromise<T>;
+      return:
+        type:
+          - OfficeExtension.IPromise<T>
+        description: ''
+      parameters:
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the OneNote application. Since the Office
+            add-in and the WoOneNote application run in two different processes, the request context is required to get
+            access to the OneNote object model from the add-in.
+          type:
+            - '(context: OneNote.RequestContext) => OfficeExtension.IPromise<T>'
+references:
+  - uid: onenote.OneNote.Application
+    name: OneNote.Application
+  - uid: onenote.OneNote.FloatingInk
+    name: OneNote.FloatingInk
+  - uid: onenote.OneNote.Image
+    name: OneNote.Image
+  - uid: onenote.OneNote.ImageOcrData
+    name: OneNote.ImageOcrData
+  - uid: onenote.OneNote.InkAnalysis
+    name: OneNote.InkAnalysis
+  - uid: onenote.OneNote.InkAnalysisLine
+    name: OneNote.InkAnalysisLine
+  - uid: onenote.OneNote.InkAnalysisLineCollection
+    name: OneNote.InkAnalysisLineCollection
+  - uid: onenote.OneNote.InkAnalysisParagraph
+    name: OneNote.InkAnalysisParagraph
+  - uid: onenote.OneNote.InkAnalysisParagraphCollection
+    name: OneNote.InkAnalysisParagraphCollection
+  - uid: onenote.OneNote.InkAnalysisWord
+    name: OneNote.InkAnalysisWord
+  - uid: onenote.OneNote.InkAnalysisWordCollection
+    name: OneNote.InkAnalysisWordCollection
+  - uid: onenote.OneNote.InkStroke
+    name: OneNote.InkStroke
+  - uid: onenote.OneNote.InkStrokeCollection
+    name: OneNote.InkStrokeCollection
+  - uid: onenote.OneNote.InkStrokePointer
+    name: OneNote.InkStrokePointer
+  - uid: onenote.OneNote.InkWord
+    name: OneNote.InkWord
+  - uid: onenote.OneNote.InkWordCollection
+    name: OneNote.InkWordCollection
+  - uid: onenote.OneNote.Notebook
+    name: OneNote.Notebook
+  - uid: onenote.OneNote.NotebookCollection
+    name: OneNote.NotebookCollection
+  - uid: onenote.OneNote.Outline
+    name: OneNote.Outline
+  - uid: onenote.OneNote.Page
+    name: OneNote.Page
+  - uid: onenote.OneNote.PageCollection
+    name: OneNote.PageCollection
+  - uid: onenote.OneNote.PageContent
+    name: OneNote.PageContent
+  - uid: onenote.OneNote.PageContentCollection
+    name: OneNote.PageContentCollection
+  - uid: onenote.OneNote.Paragraph
+    name: OneNote.Paragraph
+  - uid: onenote.OneNote.ParagraphCollection
+    name: OneNote.ParagraphCollection
+  - uid: onenote.OneNote.RequestContext
+    name: OneNote.RequestContext
+  - uid: onenote.OneNote.RichText
+    name: OneNote.RichText
+  - uid: onenote.OneNote.Section
+    name: OneNote.Section
+  - uid: onenote.OneNote.SectionCollection
+    name: OneNote.SectionCollection
+  - uid: onenote.OneNote.SectionGroup
+    name: OneNote.SectionGroup
+  - uid: onenote.OneNote.SectionGroupCollection
+    name: OneNote.SectionGroupCollection
+  - uid: onenote.OneNote.Table
+    name: OneNote.Table
+  - uid: onenote.OneNote.TableCell
+    name: OneNote.TableCell
+  - uid: onenote.OneNote.TableCellCollection
+    name: OneNote.TableCellCollection
+  - uid: onenote.OneNote.TableRow
+    name: OneNote.TableRow
+  - uid: onenote.OneNote.TableRowCollection
+    name: OneNote.TableRowCollection

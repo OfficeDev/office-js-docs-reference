@@ -1,0 +1,114 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.ShapeDataItem
+    summary: |-
+      Represents the ShapeDataItem.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: Visio.ShapeDataItem
+    fullName: visio.Visio.ShapeDataItem
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: visio
+    children:
+      - visio.Visio.ShapeDataItem.format
+      - visio.Visio.ShapeDataItem.formattedValue
+      - visio.Visio.ShapeDataItem.label
+      - visio.Visio.ShapeDataItem.load
+      - visio.Visio.ShapeDataItem.toJSON
+      - visio.Visio.ShapeDataItem.value
+  - uid: visio.Visio.ShapeDataItem.format
+    summary: |-
+      A string that specifies the format of the shape data item.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: format
+    fullName: visio.Visio.ShapeDataItem.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.ShapeDataItem.formattedValue
+    summary: |-
+      A string that specifies the formatted value of the shape data item.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: formattedValue
+    fullName: visio.Visio.ShapeDataItem.formattedValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly formattedValue: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.ShapeDataItem.label
+    summary: |-
+      A string that specifies the label of the shape data item.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: label
+    fullName: visio.Visio.ShapeDataItem.label
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly label: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.ShapeDataItem.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: visio.Visio.ShapeDataItem.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Visio.Interfaces.ShapeDataItemLoadOptions): Visio.ShapeDataItem;'
+      return:
+        type:
+          - Visio.ShapeDataItem
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.ShapeDataItemLoadOptions
+  - uid: visio.Visio.ShapeDataItem.toJSON
+    name: toJSON()
+    fullName: visio.Visio.ShapeDataItem.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.ShapeDataItemData;'
+      return:
+        type:
+          - Visio.Interfaces.ShapeDataItemData
+        description: ''
+  - uid: visio.Visio.ShapeDataItem.value
+    summary: |-
+      A string that specifies the value of the shape data item.
+
+      \[ [Api set: 1.1](http://bing.com) \]
+    name: value
+    fullName: visio.Visio.ShapeDataItem.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly value: string;'
+      return:
+        type:
+          - string

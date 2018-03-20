@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.PhoneNumber
+    name: Office.PhoneNumber
+    fullName: outlook.Office.PhoneNumber
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.PhoneNumber.originalPhoneString
+      - outlook.Office.PhoneNumber.phoneString
+      - outlook.Office.PhoneNumber.type
+  - uid: outlook.Office.PhoneNumber.originalPhoneString
+    name: originalPhoneString
+    fullName: outlook.Office.PhoneNumber.originalPhoneString
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'originalPhoneString: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.PhoneNumber.phoneString
+    name: phoneString
+    fullName: outlook.Office.PhoneNumber.phoneString
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'phoneString: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.PhoneNumber.type
+    name: type
+    fullName: outlook.Office.PhoneNumber.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: string;'
+      return:
+        type:
+          - string

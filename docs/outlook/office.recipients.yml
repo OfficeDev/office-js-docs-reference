@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.Recipients
+    name: Office.Recipients
+    fullName: outlook.Office.Recipients
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.Recipients.addAsync
+      - outlook.Office.Recipients.getAsync
+      - outlook.Office.Recipients.setAsync
+  - uid: outlook.Office.Recipients.addAsync
+    summary: Begins an asynchronous request to add a recipient list to an appointment or message
+    name: addAsync(recipients)
+    fullName: outlook.Office.Recipients.addAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addAsync(recipients: Array<string | EmailUser | EmailAddressDetails>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: recipients
+          description: The recipients to add to the recipients list
+          type:
+            - Array<string | EmailUser | EmailAddressDetails>
+  - uid: outlook.Office.Recipients.getAsync
+    summary: Begins an asynchronous request to get the recipient list for an appointment or message
+    name: getAsync(callback)
+    fullName: outlook.Office.Recipients.getAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(callback: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: The optional method to call when the string is inserted
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: outlook.Office.Recipients.setAsync
+    summary: Begins an asynchronous request to set the recipient list for an appointment or message
+    name: setAsync(recipients)
+    fullName: outlook.Office.Recipients.setAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(recipients: Array<string | EmailUser | EmailAddressDetails>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: recipients
+          description: The recipients to add to the recipients list
+          type:
+            - Array<string | EmailUser | EmailAddressDetails>

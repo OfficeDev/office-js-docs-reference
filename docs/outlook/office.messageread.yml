@@ -1,0 +1,72 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.MessageRead
+    name: Office.MessageRead
+    fullName: outlook.Office.MessageRead
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Message
+    package: outlook
+    children:
+      - outlook.Office.MessageRead.cc
+      - outlook.Office.MessageRead.from
+      - outlook.Office.MessageRead.internetMessageId
+      - outlook.Office.MessageRead.sender
+      - outlook.Office.MessageRead.to
+  - uid: outlook.Office.MessageRead.cc
+    name: cc
+    fullName: outlook.Office.MessageRead.cc
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cc: Array<EmailAddressDetails>;'
+      return:
+        type:
+          - Array<EmailAddressDetails>
+  - uid: outlook.Office.MessageRead.from
+    name: from
+    fullName: outlook.Office.MessageRead.from
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'from: EmailAddressDetails;'
+      return:
+        type:
+          - EmailAddressDetails
+  - uid: outlook.Office.MessageRead.internetMessageId
+    name: internetMessageId
+    fullName: outlook.Office.MessageRead.internetMessageId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'internetMessageId: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.MessageRead.sender
+    name: sender
+    fullName: outlook.Office.MessageRead.sender
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sender: EmailAddressDetails;'
+      return:
+        type:
+          - EmailAddressDetails
+  - uid: outlook.Office.MessageRead.to
+    name: to
+    fullName: outlook.Office.MessageRead.to
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'to: Array<EmailAddressDetails>;'
+      return:
+        type:
+          - Array<EmailAddressDetails>

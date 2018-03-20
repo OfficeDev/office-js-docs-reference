@@ -1,0 +1,64 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ThreeStarsSet
+    name: Excel.ThreeStarsSet
+    fullName: excel.Excel.ThreeStarsSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.ThreeStarsSet.__index
+      - excel.Excel.ThreeStarsSet.goldStar
+      - excel.Excel.ThreeStarsSet.halfGoldStar
+      - excel.Excel.ThreeStarsSet.silverStar
+  - uid: excel.Excel.ThreeStarsSet.__index
+    name: __index(index)
+    fullName: excel.Excel.ThreeStarsSet.__index
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: '[index: number]: Icon;'
+      return:
+        type:
+          - Icon
+        description: ''
+      parameters:
+        - id: index
+          description: ''
+          type:
+            - number
+  - uid: excel.Excel.ThreeStarsSet.goldStar
+    name: goldStar
+    fullName: excel.Excel.ThreeStarsSet.goldStar
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'goldStar: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel.Excel.ThreeStarsSet.halfGoldStar
+    name: halfGoldStar
+    fullName: excel.Excel.ThreeStarsSet.halfGoldStar
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'halfGoldStar: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel.Excel.ThreeStarsSet.silverStar
+    name: silverStar
+    fullName: excel.Excel.ThreeStarsSet.silverStar
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'silverStar: Icon;'
+      return:
+        type:
+          - Icon

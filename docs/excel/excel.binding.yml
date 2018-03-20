@@ -1,0 +1,199 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Binding
+    summary: |-
+      Represents an Office.js binding that is defined in the workbook.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: Excel.Binding
+    fullName: excel.Excel.Binding
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.Binding.delete
+      - excel.Excel.Binding.getRange
+      - excel.Excel.Binding.getTable
+      - excel.Excel.Binding.getText
+      - excel.Excel.Binding.id
+      - excel.Excel.Binding.load
+      - excel.Excel.Binding.onDataChanged
+      - excel.Excel.Binding.onSelectionChanged
+      - excel.Excel.Binding.toJSON
+      - excel.Excel.Binding.type
+  - uid: excel.Excel.Binding.delete
+    summary: |-
+      Deletes the binding.
+
+      \[ [Api set: ExcelApi 1.3](http://bing.com) \]
+    name: delete()
+    fullName: excel.Excel.Binding.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.Binding.getRange
+    summary: |-
+      Returns the range represented by the binding. Will throw an error if binding is not of the correct type.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: getRange()
+    fullName: excel.Excel.Binding.getRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
+  - uid: excel.Excel.Binding.getTable
+    summary: |-
+      Returns the table represented by the binding. Will throw an error if binding is not of the correct type.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: getTable()
+    fullName: excel.Excel.Binding.getTable
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getTable(): Excel.Table;'
+      return:
+        type:
+          - Excel.Table
+        description: ''
+  - uid: excel.Excel.Binding.getText
+    summary: |-
+      Returns the text represented by the binding. Will throw an error if binding is not of the correct type.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: getText()
+    fullName: excel.Excel.Binding.getText
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getText(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+  - uid: excel.Excel.Binding.id
+    summary: |-
+      Represents binding identifier. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: id
+    fullName: excel.Excel.Binding.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Binding.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.Binding.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Binding;'
+      return:
+        type:
+          - Excel.Binding
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.Binding.onDataChanged
+    summary: |-
+      Occurs when data or formatting within the binding is changed.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: onDataChanged
+    fullName: excel.Excel.Binding.onDataChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onDataChanged: OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>
+    remarks: |
+
+
+      ## Snippets
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");    
+          const salesTable = sheet.tables.getItem("SalesTable");
+          const salesByQuarterBinding = context.workbook.bindings.add(salesTable.getRange(), "Table", "SalesByQuarter");
+          salesByQuarterBinding.onDataChanged.add(onSalesDataChanged);
+
+          OfficeHelpers.UI.notify("The handler is registered.", "Change the value in one of the data cells and watch this message banner. (Be sure to complete the edit by pressing Enter or clicking in another cell.)");
+
+          await context.sync();
+      });
+      ```
+  - uid: excel.Excel.Binding.onSelectionChanged
+    summary: |-
+      Occurs when the selection is changed within the binding.
+
+      \[ [Api set: ExcelApi 1.2](http://bing.com) \]
+    name: onSelectionChanged
+    fullName: excel.Excel.Binding.onSelectionChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>
+  - uid: excel.Excel.Binding.toJSON
+    name: toJSON()
+    fullName: excel.Excel.Binding.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"id\": string;\r\n            \"type\": string;\r\n        }"
+        description: ''
+  - uid: excel.Excel.Binding.type
+    summary: |-
+      Returns the type of the binding. See Excel.BindingType for details. Read-only.
+
+      \[ [Api set: ExcelApi 1.1](http://bing.com) \]
+    name: type
+    fullName: excel.Excel.Binding.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: string;'
+      return:
+        type:
+          - string

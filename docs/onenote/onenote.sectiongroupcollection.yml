@@ -1,0 +1,125 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.SectionGroupCollection
+    summary: |-
+      Represents a collection of section groups.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: OneNote.SectionGroupCollection
+    fullName: onenote.OneNote.SectionGroupCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.SectionGroupCollection.count
+      - onenote.OneNote.SectionGroupCollection.getByName
+      - onenote.OneNote.SectionGroupCollection.getItem
+      - onenote.OneNote.SectionGroupCollection.getItemAt
+      - onenote.OneNote.SectionGroupCollection.items
+      - onenote.OneNote.SectionGroupCollection.load
+  - uid: onenote.OneNote.SectionGroupCollection.count
+    summary: |-
+      Returns the number of section groups in the collection. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: count
+    fullName: onenote.OneNote.SectionGroupCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.SectionGroupCollection.getByName
+    summary: Gets the collection of section groups with the specified name.
+    name: getByName(name)
+    fullName: onenote.OneNote.SectionGroupCollection.getByName
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByName(name: string): OneNote.SectionGroupCollection;'
+      return:
+        type:
+          - OneNote.SectionGroupCollection
+        description: ''
+      parameters:
+        - id: name
+          description: 'The name of the section group. \[Api set: OneNoteApi 1.1\]'
+          type:
+            - string
+  - uid: onenote.OneNote.SectionGroupCollection.getItem
+    summary: Gets a section group by ID or by its index in the collection. Read-only.
+    name: getItem(index)
+    fullName: onenote.OneNote.SectionGroupCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number | string): OneNote.SectionGroup;'
+      return:
+        type:
+          - OneNote.SectionGroup
+        description: ''
+      parameters:
+        - id: index
+          description: >-
+            The ID of the section group, or the index location of the section group in the collection. \[Api set:
+            OneNoteApi 1.1\]
+          type:
+            - number | string
+  - uid: onenote.OneNote.SectionGroupCollection.getItemAt
+    summary: Gets a section group on its position in the collection.
+    name: getItemAt(index)
+    fullName: onenote.OneNote.SectionGroupCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): OneNote.SectionGroup;'
+      return:
+        type:
+          - OneNote.SectionGroup
+        description: ''
+      parameters:
+        - id: index
+          description: 'Index value of the object to be retrieved. Zero-indexed. \[Api set: OneNoteApi 1.1\]'
+          type:
+            - number
+  - uid: onenote.OneNote.SectionGroupCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: onenote.OneNote.SectionGroupCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<OneNote.SectionGroup>;'
+      return:
+        type:
+          - Array<OneNote.SectionGroup>
+  - uid: onenote.OneNote.SectionGroupCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.SectionGroupCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.SectionGroupCollection;'
+      return:
+        type:
+          - OneNote.SectionGroupCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'

@@ -1,0 +1,31 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.MailboxEnums.RestVersion
+    name: Office.MailboxEnums.RestVersion
+    fullName: outlook.Office.MailboxEnums.RestVersion
+    langs:
+      - typeScript
+    type: enum
+    package: outlook
+    children:
+      - outlook.Office.MailboxEnums.RestVersion.Beta
+      - outlook.Office.MailboxEnums.RestVersion.v1_0
+      - outlook.Office.MailboxEnums.RestVersion.v2_0
+  - uid: outlook.Office.MailboxEnums.RestVersion.Beta
+    name: Beta
+    fullName: outlook.Office.MailboxEnums.RestVersion.Beta
+    langs:
+      - typeScript
+    type: field
+  - uid: outlook.Office.MailboxEnums.RestVersion.v1_0
+    name: v1_0
+    fullName: outlook.Office.MailboxEnums.RestVersion.v1_0
+    langs:
+      - typeScript
+    type: field
+  - uid: outlook.Office.MailboxEnums.RestVersion.v2_0
+    name: v2_0
+    fullName: outlook.Office.MailboxEnums.RestVersion.v2_0
+    langs:
+      - typeScript
+    type: field

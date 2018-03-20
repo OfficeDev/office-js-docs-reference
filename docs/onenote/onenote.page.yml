@@ -1,0 +1,237 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Page
+    summary: |-
+      Represents a OneNote page.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: OneNote.Page
+    fullName: onenote.OneNote.Page
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.Page.addOutline
+      - onenote.OneNote.Page.clientUrl
+      - onenote.OneNote.Page.contents
+      - onenote.OneNote.Page.copyToSection
+      - onenote.OneNote.Page.id
+      - onenote.OneNote.Page.inkAnalysisOrNull
+      - onenote.OneNote.Page.insertPageAsSibling
+      - onenote.OneNote.Page.load
+      - onenote.OneNote.Page.pageLevel
+      - onenote.OneNote.Page.parentSection
+      - onenote.OneNote.Page.title
+      - onenote.OneNote.Page.webUrl
+  - uid: onenote.OneNote.Page.addOutline
+    summary: Adds an Outline to the page at the specified position.
+    name: 'addOutline(left, top, html)'
+    fullName: onenote.OneNote.Page.addOutline
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addOutline(left: number, top: number, html: string): OneNote.Outline;'
+      return:
+        type:
+          - OneNote.Outline
+        description: ''
+      parameters:
+        - id: left
+          description: 'The left position of the top, left corner of the Outline.'
+          type:
+            - number
+        - id: top
+          description: 'The top position of the top, left corner of the Outline.'
+          type:
+            - number
+        - id: html
+          description: >-
+            An HTML string that describes the visual presentation of the Outline. See \[supported
+            HTML\](../../docs/onenote/onenote-add-ins-page-content.md\#supported-html) for the OneNote add-ins
+            JavaScript API. \[Api set: OneNoteApi 1.1\]
+          type:
+            - string
+  - uid: onenote.OneNote.Page.clientUrl
+    summary: |-
+      The client url of the page. Read only
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: clientUrl
+    fullName: onenote.OneNote.Page.clientUrl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'clientUrl: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.Page.contents
+    summary: |-
+      The collection of PageContent objects on the page. Read only
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: contents
+    fullName: onenote.OneNote.Page.contents
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contents: OneNote.PageContentCollection;'
+      return:
+        type:
+          - OneNote.PageContentCollection
+  - uid: onenote.OneNote.Page.copyToSection
+    summary: Copies this page to specified section.
+    name: copyToSection(destinationSection)
+    fullName: onenote.OneNote.Page.copyToSection
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'copyToSection(destinationSection: OneNote.Section): OneNote.Page;'
+      return:
+        type:
+          - OneNote.Page
+        description: ''
+      parameters:
+        - id: destinationSection
+          description: 'The section to copy this page to. \[Api set: OneNoteApi 1.1\]'
+          type:
+            - OneNote.Section
+  - uid: onenote.OneNote.Page.id
+    summary: |-
+      Gets the ID of the page. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: id
+    fullName: onenote.OneNote.Page.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.Page.inkAnalysisOrNull
+    summary: |-
+      Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: inkAnalysisOrNull
+    fullName: onenote.OneNote.Page.inkAnalysisOrNull
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inkAnalysisOrNull: OneNote.InkAnalysis;'
+      return:
+        type:
+          - OneNote.InkAnalysis
+  - uid: onenote.OneNote.Page.insertPageAsSibling
+    summary: Inserts a new page before or after the current page.
+    name: 'insertPageAsSibling(location, title)'
+    fullName: onenote.OneNote.Page.insertPageAsSibling
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertPageAsSibling(location: string, title: string): OneNote.Page;'
+      return:
+        type:
+          - OneNote.Page
+        description: ''
+      parameters:
+        - id: location
+          description: The location of the new page relative to the current page.
+          type:
+            - string
+        - id: title
+          description: 'The title of the new page. \[Api set: OneNoteApi 1.1\]'
+          type:
+            - string
+  - uid: onenote.OneNote.Page.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.Page.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.Page;'
+      return:
+        type:
+          - OneNote.Page
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: onenote.OneNote.Page.pageLevel
+    summary: |-
+      Gets or sets the indentation level of the page.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: pageLevel
+    fullName: onenote.OneNote.Page.pageLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageLevel: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.Page.parentSection
+    summary: |-
+      Gets the section that contains the page. Read-only.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: parentSection
+    fullName: onenote.OneNote.Page.parentSection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentSection: OneNote.Section;'
+      return:
+        type:
+          - OneNote.Section
+  - uid: onenote.OneNote.Page.title
+    summary: |-
+      Gets or sets the title of the page.
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: title
+    fullName: onenote.OneNote.Page.title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.Page.webUrl
+    summary: |-
+      The web url of the page. Read only
+
+      \[ [Api set: OneNoteApi 1.1](http://bing.com) \]
+    name: webUrl
+    fullName: onenote.OneNote.Page.webUrl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'webUrl: string;'
+      return:
+        type:
+          - string
