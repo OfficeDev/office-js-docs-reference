@@ -536,9 +536,6 @@ items:
                 uid: outlook.Office.AttachmentDetails
               - name: Body
                 uid: outlook.Office.Body
-              - name: cast
-                items:
-                  - name: item
               - name: CoercionTypeOptions
                 uid: outlook.Office.CoercionTypeOptions
               - name: Contact
