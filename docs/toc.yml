@@ -1,5 +1,5 @@
 items:
-  - name: Office Add-ins
+  - name: API reference
     items:
       - name: Excel
         uid: excel
