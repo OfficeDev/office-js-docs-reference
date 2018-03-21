@@ -291,7 +291,7 @@ items:
             uid: excel.Excel.WorksheetProtection
           - name: WorksheetProtectionOptions
             uid: excel.Excel.WorksheetProtectionOptions
-      - name: office
+      - name: Shared API
         uid: office
         items:
           - name: Office
