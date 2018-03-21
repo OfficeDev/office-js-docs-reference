@@ -1010,7 +1010,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param applyTo - Determines the type of clear action. See Excel.ClearApplyTo for details.
+         * @param applyTo - Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
          */
         clear(applyTo?: string): void;
         /**

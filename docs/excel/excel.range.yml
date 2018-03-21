@@ -148,7 +148,7 @@ items:
         description: ''
       parameters:
         - id: applyTo
-          description: Determines the type of clear action. See Excel.ClearApplyTo for details.
+          description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
           type:
             - string
   - uid: excel.Excel.Range.columnCount

@@ -55,10 +55,6 @@ items:
       - office.Office.UI
       - office.Office.useShortNamespace
       - office.Office.ValueFormat
-      - office.OfficeCore.ABType
-      - office.OfficeCore.FlightingService
-      - office.OfficeCore.RequestContext
-      - office.OfficeCore.ScopedValue
       - office.OfficeExtension.ClientObject
       - office.OfficeExtension.ClientRequestContext
       - office.OfficeExtension.ClientResult
@@ -226,14 +222,6 @@ references:
     name: Office.UI
   - uid: office.Office.ValueFormat
     name: Office.ValueFormat
-  - uid: office.OfficeCore.ABType
-    name: OfficeCore.ABType
-  - uid: office.OfficeCore.FlightingService
-    name: OfficeCore.FlightingService
-  - uid: office.OfficeCore.RequestContext
-    name: OfficeCore.RequestContext
-  - uid: office.OfficeCore.ScopedValue
-    name: OfficeCore.ScopedValue
   - uid: office.OfficeExtension.ClientObject
     name: OfficeExtension.ClientObject
   - uid: office.OfficeExtension.ClientRequestContext

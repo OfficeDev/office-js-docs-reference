@@ -35706,7 +35706,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Determines the type of clear action. See Excel.ClearApplyTo for details."
+                      "text": "Optional. Determines the type of clear action. See Excel.ClearApplyTo for details."
                     }
                   ],
                   "isOptional": true,
