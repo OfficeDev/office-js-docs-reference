@@ -4,7 +4,7 @@ items:
     summary: |-
       Encapsulates the format properties for chart gridlines.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.ChartGridlinesFormat
     fullName: excel.Excel.ChartGridlinesFormat
     langs:
@@ -22,7 +22,7 @@ items:
     summary: |-
       Represents chart line formatting. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: line
     fullName: excel.Excel.ChartGridlinesFormat.line
     langs:

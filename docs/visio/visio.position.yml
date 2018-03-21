@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Position of the object in the view.
 
-      \[ [Api set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: Visio.Position
     fullName: visio.Visio.Position
     langs:
@@ -20,7 +20,7 @@ items:
       the viewport's center to the left boundary of the page.
 
 
-      \[ [Api set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: x
     fullName: visio.Visio.Position.x
     langs:
@@ -37,7 +37,7 @@ items:
       the viewport's center to the top boundary of the page.
 
 
-      \[ [Api set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: 'y'
     fullName: visio.Visio.Position.y
     langs:

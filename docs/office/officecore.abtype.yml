@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.OfficeCore.ABType
-    summary: '\[ [Api set: Experiment 1.1 (PREVIEW)](http://bing.com) \]'
+    summary: '\[ [API set: Experiment 1.1 (PREVIEW)](http://bing.com) \]'
     name: OfficeCore.ABType
     fullName: office.OfficeCore.ABType
     langs:

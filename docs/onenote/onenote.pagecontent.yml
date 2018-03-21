@@ -6,7 +6,7 @@ items:
       can be assigned an XY position.
 
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.PageContent
     fullName: onenote.OneNote.PageContent
     langs:
@@ -30,7 +30,7 @@ items:
     summary: |-
       Deletes the PageContent object.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: delete()
     fullName: onenote.OneNote.PageContent.delete
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       Gets the ID of the PageContent object. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: id
     fullName: onenote.OneNote.PageContent.id
     langs:
@@ -61,7 +61,7 @@ items:
     summary: |-
       Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: image
     fullName: onenote.OneNote.PageContent.image
     langs:
@@ -76,7 +76,7 @@ items:
     summary: |-
       Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: ink
     fullName: onenote.OneNote.PageContent.ink
     langs:
@@ -91,7 +91,7 @@ items:
     summary: |-
       Gets or sets the left (X-axis) position of the PageContent object.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: left
     fullName: onenote.OneNote.PageContent.left
     langs:
@@ -126,7 +126,7 @@ items:
     summary: |-
       Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: outline
     fullName: onenote.OneNote.PageContent.outline
     langs:
@@ -141,7 +141,7 @@ items:
     summary: |-
       Gets the page that contains the PageContent object. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: parentPage
     fullName: onenote.OneNote.PageContent.parentPage
     langs:
@@ -156,7 +156,7 @@ items:
     summary: |-
       Gets or sets the top (Y-axis) position of the PageContent object.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: top
     fullName: onenote.OneNote.PageContent.top
     langs:
@@ -171,7 +171,7 @@ items:
     summary: |-
       Gets the type of the PageContent object. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: type
     fullName: onenote.OneNote.PageContent.type
     langs:

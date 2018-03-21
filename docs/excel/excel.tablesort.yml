@@ -4,7 +4,7 @@ items:
     summary: |-
       Manages sorting operations on Table objects.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: Excel.TableSort
     fullName: excel.Excel.TableSort
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Perform a sort operation.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'apply(fields, matchCase, method)'
     fullName: excel.Excel.TableSort.apply
     langs:
@@ -57,7 +57,7 @@ items:
       state of the header buttons.
 
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: clear()
     fullName: excel.Excel.TableSort.clear
     langs:
@@ -73,7 +73,7 @@ items:
     summary: |-
       Represents the current conditions used to last sort the table.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: fields
     fullName: excel.Excel.TableSort.fields
     langs:
@@ -108,7 +108,7 @@ items:
     summary: |-
       Represents whether the casing impacted the last sort of the table.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: matchCase
     fullName: excel.Excel.TableSort.matchCase
     langs:
@@ -123,7 +123,7 @@ items:
     summary: |-
       Represents Chinese character ordering method last used to sort the table.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: method
     fullName: excel.Excel.TableSort.method
     langs:
@@ -138,7 +138,7 @@ items:
     summary: |-
       Reapplies the current sorting parameters to the table.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: reapply()
     fullName: excel.Excel.TableSort.reapply
     langs:

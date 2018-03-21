@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the protection of a sheet object.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: Excel.WorksheetProtection
     fullName: excel.Excel.WorksheetProtection
     langs:
@@ -44,7 +44,7 @@ items:
     summary: |-
       Sheet protection options. Read-Only.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: options
     fullName: excel.Excel.WorksheetProtection.options
     langs:
@@ -59,7 +59,7 @@ items:
     summary: |-
       Protects a worksheet. Fails if the worksheet has been protected.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: protect(options)
     fullName: excel.Excel.WorksheetProtection.protect
     langs:
@@ -80,7 +80,7 @@ items:
     summary: |-
       Indicates if the worksheet is protected. Read-Only.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: protected
     fullName: excel.Excel.WorksheetProtection.protected
     langs:
@@ -107,7 +107,7 @@ items:
     summary: |-
       Unprotects a worksheet.
 
-      \[ [Api set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: unprotect()
     fullName: excel.Excel.WorksheetProtection.unprotect
     langs:

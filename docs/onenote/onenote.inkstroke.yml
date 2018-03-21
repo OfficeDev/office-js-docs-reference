@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a single stroke of ink.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.InkStroke
     fullName: onenote.OneNote.InkStroke
     langs:
@@ -21,7 +21,7 @@ items:
     summary: |-
       Gets the ID of the InkStroke object. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: floatingInk
     fullName: onenote.OneNote.InkStroke.floatingInk
     langs:
@@ -36,7 +36,7 @@ items:
     summary: |-
       Gets the ID of the InkStroke object. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: id
     fullName: onenote.OneNote.InkStroke.id
     langs:

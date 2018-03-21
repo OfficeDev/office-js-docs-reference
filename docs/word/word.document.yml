@@ -6,7 +6,7 @@ items:
       and the body that contains the contents of the document.
 
 
-      \[ [Api set: WordApi 1.1](http://bing.com?type=word) \]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: Word.Document
     fullName: word.Word.Document
     langs:
@@ -34,7 +34,7 @@ items:
       etc.. Read-only.
 
 
-      \[ [Api set: WordApi 1.1](http://bing.com?type=word) \]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: body
     fullName: word.Word.Document.body
     langs:
@@ -51,7 +51,7 @@ items:
       of the document, headers, footers, textboxes, etc.. Read-only.
 
 
-      \[ [Api set: WordApi 1.1](http://bing.com?type=word) \]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: contentControls
     fullName: word.Word.Document.contentControls
     langs:
@@ -66,7 +66,7 @@ items:
     summary: |-
       Gets the current selection of the document. Multiple selections are not supported.
 
-      \[ [Api set: WordApi 1.1](http://bing.com?type=word) \]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: getSelection()
     fullName: word.Word.Document.getSelection
     langs:
@@ -102,7 +102,7 @@ items:
     summary: |-
       Gets the properties of the current document. Read-only.
 
-      \[ [Api set: WordApi 1.3](http://bing.com?type=word) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: properties
     fullName: word.Word.Document.properties
     langs:
@@ -119,7 +119,7 @@ items:
       before.
 
 
-      \[ [Api set: WordApi 1.1](http://bing.com?type=word) \]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: save()
     fullName: word.Word.Document.save
     langs:
@@ -137,7 +137,7 @@ items:
       changed since it was saved. Read-only.
 
 
-      \[ [Api set: WordApi 1.1](http://bing.com?type=word) \]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: saved
     fullName: word.Word.Document.saved
     langs:
@@ -152,7 +152,7 @@ items:
     summary: |-
       Gets the collection of section objects in the document. Read-only.
 
-      \[ [Api set: WordApi 1.1](http://bing.com?type=word) \]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: sections
     fullName: word.Word.Document.sections
     langs:

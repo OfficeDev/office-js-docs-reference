@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of notebooks.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.NotebookCollection
     fullName: onenote.OneNote.NotebookCollection
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Returns the number of notebooks in the collection. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: count
     fullName: onenote.OneNote.NotebookCollection.count
     langs:

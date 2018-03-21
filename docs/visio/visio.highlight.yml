@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the highlight data added to the shape.
 
-      \[ [Api set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: Visio.Highlight
     fullName: visio.Visio.Highlight
     langs:
@@ -21,7 +21,7 @@ items:
       between 0 and 0xFF (255), and BB is the blue value between 0 and 0xFF (255).
 
 
-      \[ [Api set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: color
     fullName: visio.Visio.Highlight.color
     langs:
@@ -36,7 +36,7 @@ items:
     summary: |-
       A positive integer that specifies the width of the highlight's stroke in pixels.
 
-      \[ [Api set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: width
     fullName: visio.Visio.Highlight.width
     langs:

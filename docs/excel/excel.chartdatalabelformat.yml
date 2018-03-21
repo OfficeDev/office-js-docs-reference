@@ -4,7 +4,7 @@ items:
     summary: |-
       Encapsulates the format properties for the chart data labels.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.ChartDataLabelFormat
     fullName: excel.Excel.ChartDataLabelFormat
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Represents the fill format of the current chart data label. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: fill
     fullName: excel.Excel.ChartDataLabelFormat.fill
     langs:
@@ -38,7 +38,7 @@ items:
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: font
     fullName: excel.Excel.ChartDataLabelFormat.font
     langs:

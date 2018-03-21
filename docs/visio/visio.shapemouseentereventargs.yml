@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides information about the shape that raised the ShapeMouseEnter event.
 
-      \[ [Api set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: Visio.ShapeMouseEnterEventArgs
     fullName: visio.Visio.ShapeMouseEnterEventArgs
     langs:
@@ -18,7 +18,7 @@ items:
     summary: |-
       Gets the name of the page which has the shape object that raised the ShapeMouseEnter event.
 
-      \[ [Api set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: pageName
     fullName: visio.Visio.ShapeMouseEnterEventArgs.pageName
     langs:
@@ -33,7 +33,7 @@ items:
     summary: |-
       Gets the shape object that raised the ShapeMouseEnter event.
 
-      \[ [Api set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: shapeName
     fullName: visio.Visio.ShapeMouseEnterEventArgs.shapeName
     langs:

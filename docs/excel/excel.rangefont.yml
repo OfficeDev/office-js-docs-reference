@@ -4,7 +4,7 @@ items:
     summary: |-
       This object represents the font attributes (font name, font size, color, etc.) for an object.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.RangeFont
     fullName: excel.Excel.RangeFont
     langs:
@@ -27,7 +27,7 @@ items:
     summary: |-
       Represents the bold status of font.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: bold
     fullName: excel.Excel.RangeFont.bold
     langs:
@@ -42,7 +42,7 @@ items:
     summary: |-
       HTML color code representation of the text color. E.g. \#FF0000 represents Red.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: color
     fullName: excel.Excel.RangeFont.color
     langs:
@@ -57,7 +57,7 @@ items:
     summary: |-
       Represents the italic status of the font.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: italic
     fullName: excel.Excel.RangeFont.italic
     langs:
@@ -92,7 +92,7 @@ items:
     summary: |-
       Font name (e.g. "Calibri")
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: name
     fullName: excel.Excel.RangeFont.name
     langs:
@@ -129,7 +129,7 @@ items:
     summary: |-
       Font size.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: size
     fullName: excel.Excel.RangeFont.size
     langs:
@@ -156,7 +156,7 @@ items:
     summary: |-
       Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: underline
     fullName: excel.Excel.RangeFont.underline
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the legend in a chart.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.ChartLegend
     fullName: excel.Excel.ChartLegend
     langs:
@@ -25,7 +25,7 @@ items:
     summary: |-
       Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: format
     fullName: excel.Excel.ChartLegend.format
     langs:
@@ -60,7 +60,7 @@ items:
     summary: |-
       Boolean value for whether the chart legend should overlap with the main body of the chart.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: overlay
     fullName: excel.Excel.ChartLegend.overlay
     langs:
@@ -75,7 +75,7 @@ items:
     summary: |-
       Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: position
     fullName: excel.Excel.ChartLegend.position
     langs:
@@ -124,7 +124,7 @@ items:
     summary: |-
       A boolean value the represents the visibility of a ChartLegend object.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: visible
     fullName: excel.Excel.ChartLegend.visible
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the chart axis title formatting.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.ChartAxisTitleFormat
     fullName: excel.Excel.ChartAxisTitleFormat
     langs:
@@ -22,7 +22,7 @@ items:
     summary: |-
       Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
 
-      \[ [Api set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: font
     fullName: excel.Excel.ChartAxisTitleFormat.font
     langs:

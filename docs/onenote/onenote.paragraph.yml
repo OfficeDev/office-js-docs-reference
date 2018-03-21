@@ -4,7 +4,7 @@ items:
     summary: |-
       A container for the visible content on a page. A Paragraph can contain any one ParagraphType type of content.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.Paragraph
     fullName: onenote.OneNote.Paragraph
     langs:
@@ -36,7 +36,7 @@ items:
     summary: |-
       Deletes the paragraph
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: delete()
     fullName: onenote.OneNote.Paragraph.delete
     langs:
@@ -52,7 +52,7 @@ items:
     summary: |-
       Gets the ID of the Paragraph object. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: id
     fullName: onenote.OneNote.Paragraph.id
     langs:
@@ -67,7 +67,7 @@ items:
     summary: |-
       Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: image
     fullName: onenote.OneNote.Paragraph.image
     langs:
@@ -82,7 +82,7 @@ items:
     summary: |-
       Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=word) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: inkWords
     fullName: onenote.OneNote.Paragraph.inkWords
     langs:
@@ -232,7 +232,7 @@ items:
     summary: |-
       Gets the Outline object that contains the Paragraph. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: outline
     fullName: onenote.OneNote.Paragraph.outline
     langs:
@@ -247,7 +247,7 @@ items:
     summary: |-
       The collection of paragraphs under this paragraph. Read only
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: paragraphs
     fullName: onenote.OneNote.Paragraph.paragraphs
     langs:
@@ -262,7 +262,7 @@ items:
     summary: |-
       Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: parentParagraph
     fullName: onenote.OneNote.Paragraph.parentParagraph
     langs:
@@ -277,7 +277,7 @@ items:
     summary: |-
       Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: parentParagraphOrNull
     fullName: onenote.OneNote.Paragraph.parentParagraphOrNull
     langs:
@@ -294,7 +294,7 @@ items:
       ItemNotFound. Read-only.
 
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: parentTableCell
     fullName: onenote.OneNote.Paragraph.parentTableCell
     langs:
@@ -311,7 +311,7 @@ items:
       Read-only.
 
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: parentTableCellOrNull
     fullName: onenote.OneNote.Paragraph.parentTableCellOrNull
     langs:
@@ -326,7 +326,7 @@ items:
     summary: |-
       Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: richText
     fullName: onenote.OneNote.Paragraph.richText
     langs:
@@ -341,7 +341,7 @@ items:
     summary: |-
       Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: table
     fullName: onenote.OneNote.Paragraph.table
     langs:
@@ -356,7 +356,7 @@ items:
     summary: |-
       Gets the type of the Paragraph object. Read-only.
 
-      \[ [Api set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: type
     fullName: onenote.OneNote.Paragraph.type
     langs:
