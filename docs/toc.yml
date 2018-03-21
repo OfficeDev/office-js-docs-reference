@@ -608,148 +608,144 @@ items:
                 uid: outlook.Office.Time
               - name: UserProfile
                 uid: outlook.Office.UserProfile
-      - name: visio
+      - name: Visio
         uid: visio
         items:
-          - name: Visio
-            items:
-              - name: Application
-                uid: visio.Visio.Application
-              - name: BoundingBox
-                uid: visio.Visio.BoundingBox
-              - name: Comment
-                uid: visio.Visio.Comment
-              - name: CommentCollection
-                uid: visio.Visio.CommentCollection
-              - name: DataRefreshCompleteEventArgs
-                uid: visio.Visio.DataRefreshCompleteEventArgs
-              - name: Document
-                uid: visio.Visio.Document
-              - name: DocumentLoadCompleteEventArgs
-                uid: visio.Visio.DocumentLoadCompleteEventArgs
-              - name: DocumentView
-                uid: visio.Visio.DocumentView
-              - name: ErrorCodes
-              - name: Highlight
-                uid: visio.Visio.Highlight
-              - name: Hyperlink
-                uid: visio.Visio.Hyperlink
-              - name: HyperlinkCollection
-                uid: visio.Visio.HyperlinkCollection
-              - name: OverlayHorizontalAlignment
-              - name: OverlayType
-              - name: OverlayVerticalAlignment
-              - name: Page
-                uid: visio.Visio.Page
-              - name: PageCollection
-                uid: visio.Visio.PageCollection
-              - name: PageLoadCompleteEventArgs
-                uid: visio.Visio.PageLoadCompleteEventArgs
-              - name: PageView
-                uid: visio.Visio.PageView
-              - name: Position
-                uid: visio.Visio.Position
-              - name: RequestContext
-                uid: visio.Visio.RequestContext
-              - name: Selection
-                uid: visio.Visio.Selection
-              - name: SelectionChangedEventArgs
-                uid: visio.Visio.SelectionChangedEventArgs
-              - name: Shape
-                uid: visio.Visio.Shape
-              - name: ShapeCollection
-                uid: visio.Visio.ShapeCollection
-              - name: ShapeDataItem
-                uid: visio.Visio.ShapeDataItem
-              - name: ShapeDataItemCollection
-                uid: visio.Visio.ShapeDataItemCollection
-              - name: ShapeMouseEnterEventArgs
-                uid: visio.Visio.ShapeMouseEnterEventArgs
-              - name: ShapeMouseLeaveEventArgs
-                uid: visio.Visio.ShapeMouseLeaveEventArgs
-              - name: ShapeView
-                uid: visio.Visio.ShapeView
-              - name: ToolBarType
-      - name: word
+          - name: Application
+            uid: visio.Visio.Application
+          - name: BoundingBox
+            uid: visio.Visio.BoundingBox
+          - name: Comment
+            uid: visio.Visio.Comment
+          - name: CommentCollection
+            uid: visio.Visio.CommentCollection
+          - name: DataRefreshCompleteEventArgs
+            uid: visio.Visio.DataRefreshCompleteEventArgs
+          - name: Document
+            uid: visio.Visio.Document
+          - name: DocumentLoadCompleteEventArgs
+            uid: visio.Visio.DocumentLoadCompleteEventArgs
+          - name: DocumentView
+            uid: visio.Visio.DocumentView
+          - name: ErrorCodes
+          - name: Highlight
+            uid: visio.Visio.Highlight
+          - name: Hyperlink
+            uid: visio.Visio.Hyperlink
+          - name: HyperlinkCollection
+            uid: visio.Visio.HyperlinkCollection
+          - name: OverlayHorizontalAlignment
+          - name: OverlayType
+          - name: OverlayVerticalAlignment
+          - name: Page
+            uid: visio.Visio.Page
+          - name: PageCollection
+            uid: visio.Visio.PageCollection
+          - name: PageLoadCompleteEventArgs
+            uid: visio.Visio.PageLoadCompleteEventArgs
+          - name: PageView
+            uid: visio.Visio.PageView
+          - name: Position
+            uid: visio.Visio.Position
+          - name: RequestContext
+            uid: visio.Visio.RequestContext
+          - name: Selection
+            uid: visio.Visio.Selection
+          - name: SelectionChangedEventArgs
+            uid: visio.Visio.SelectionChangedEventArgs
+          - name: Shape
+            uid: visio.Visio.Shape
+          - name: ShapeCollection
+            uid: visio.Visio.ShapeCollection
+          - name: ShapeDataItem
+            uid: visio.Visio.ShapeDataItem
+          - name: ShapeDataItemCollection
+            uid: visio.Visio.ShapeDataItemCollection
+          - name: ShapeMouseEnterEventArgs
+            uid: visio.Visio.ShapeMouseEnterEventArgs
+          - name: ShapeMouseLeaveEventArgs
+            uid: visio.Visio.ShapeMouseLeaveEventArgs
+          - name: ShapeView
+            uid: visio.Visio.ShapeView
+          - name: ToolBarType
+      - name: Word
         uid: word
         items:
-          - name: Word
-            items:
-              - name: Alignment
-              - name: Body
-                uid: word.Word.Body
-              - name: BodyType
-              - name: BorderLocation
-              - name: BorderType
-              - name: BreakType
-              - name: CellPaddingLocation
-              - name: ContentControl
-                uid: word.Word.ContentControl
-              - name: ContentControlAppearance
-              - name: ContentControlCollection
-                uid: word.Word.ContentControlCollection
-              - name: ContentControlType
-              - name: CustomProperty
-                uid: word.Word.CustomProperty
-              - name: CustomPropertyCollection
-                uid: word.Word.CustomPropertyCollection
-              - name: Document
-                uid: word.Word.Document
-              - name: DocumentProperties
-                uid: word.Word.DocumentProperties
-              - name: DocumentPropertyType
-              - name: ErrorCodes
-              - name: Font
-                uid: word.Word.Font
-              - name: HeaderFooterType
-              - name: ImageFormat
-              - name: InlinePicture
-                uid: word.Word.InlinePicture
-              - name: InlinePictureCollection
-                uid: word.Word.InlinePictureCollection
-              - name: InsertLocation
-              - name: List
-                uid: word.Word.List
-              - name: ListBullet
-              - name: ListCollection
-                uid: word.Word.ListCollection
-              - name: ListItem
-                uid: word.Word.ListItem
-              - name: ListLevelType
-              - name: ListNumbering
-              - name: LocationRelation
-              - name: Paragraph
-                uid: word.Word.Paragraph
-              - name: ParagraphCollection
-                uid: word.Word.ParagraphCollection
-              - name: Range
-                uid: word.Word.Range
-              - name: RangeCollection
-                uid: word.Word.RangeCollection
-              - name: RangeLocation
-              - name: RequestContext
-                uid: word.Word.RequestContext
-              - name: SearchOptions
-                uid: word.Word.SearchOptions
-              - name: Section
-                uid: word.Word.Section
-              - name: SectionCollection
-                uid: word.Word.SectionCollection
-              - name: SelectionMode
-              - name: Style
-              - name: Table
-                uid: word.Word.Table
-              - name: TableBorder
-                uid: word.Word.TableBorder
-              - name: TableCell
-                uid: word.Word.TableCell
-              - name: TableCellCollection
-                uid: word.Word.TableCellCollection
-              - name: TableCollection
-                uid: word.Word.TableCollection
-              - name: TableRow
-                uid: word.Word.TableRow
-              - name: TableRowCollection
-                uid: word.Word.TableRowCollection
-              - name: UnderlineType
-              - name: VerticalAlignment
+          - name: Alignment
+          - name: Body
+            uid: word.Word.Body
+          - name: BodyType
+          - name: BorderLocation
+          - name: BorderType
+          - name: BreakType
+          - name: CellPaddingLocation
+          - name: ContentControl
+            uid: word.Word.ContentControl
+          - name: ContentControlAppearance
+          - name: ContentControlCollection
+            uid: word.Word.ContentControlCollection
+          - name: ContentControlType
+          - name: CustomProperty
+            uid: word.Word.CustomProperty
+          - name: CustomPropertyCollection
+            uid: word.Word.CustomPropertyCollection
+          - name: Document
+            uid: word.Word.Document
+          - name: DocumentProperties
+            uid: word.Word.DocumentProperties
+          - name: DocumentPropertyType
+          - name: ErrorCodes
+          - name: Font
+            uid: word.Word.Font
+          - name: HeaderFooterType
+          - name: ImageFormat
+          - name: InlinePicture
+            uid: word.Word.InlinePicture
+          - name: InlinePictureCollection
+            uid: word.Word.InlinePictureCollection
+          - name: InsertLocation
+          - name: List
+            uid: word.Word.List
+          - name: ListBullet
+          - name: ListCollection
+            uid: word.Word.ListCollection
+          - name: ListItem
+            uid: word.Word.ListItem
+          - name: ListLevelType
+          - name: ListNumbering
+          - name: LocationRelation
+          - name: Paragraph
+            uid: word.Word.Paragraph
+          - name: ParagraphCollection
+            uid: word.Word.ParagraphCollection
+          - name: Range
+            uid: word.Word.Range
+          - name: RangeCollection
+            uid: word.Word.RangeCollection
+          - name: RangeLocation
+          - name: RequestContext
+            uid: word.Word.RequestContext
+          - name: SearchOptions
+            uid: word.Word.SearchOptions
+          - name: Section
+            uid: word.Word.Section
+          - name: SectionCollection
+            uid: word.Word.SectionCollection
+          - name: SelectionMode
+          - name: Style
+          - name: Table
+            uid: word.Word.Table
+          - name: TableBorder
+            uid: word.Word.TableBorder
+          - name: TableCell
+            uid: word.Word.TableCell
+          - name: TableCellCollection
+            uid: word.Word.TableCellCollection
+          - name: TableCollection
+            uid: word.Word.TableCollection
+          - name: TableRow
+            uid: word.Word.TableRow
+          - name: TableRowCollection
+            uid: word.Word.TableRowCollection
+          - name: UnderlineType
+          - name: VerticalAlignment
