@@ -23,6 +23,7 @@ items:
       - excel.Excel.WorksheetCollection.getLast
       - excel.Excel.WorksheetCollection.items
       - excel.Excel.WorksheetCollection.load
+      - excel.Excel.WorksheetCollection.onDeleted
       - excel.Excel.WorksheetCollection.toJSON
   - uid: excel.Excel.WorksheetCollection.add
     summary: >-
@@ -206,6 +207,21 @@ items:
           description: ''
           type:
             - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.WorksheetCollection.onDeleted
+    summary: |-
+      Occurs when a worksheet is deleted from the workbook.
+
+      \[ [API set: ExcelApi BETA (PREVIEW ONLY)](http://bing.com?type=excel) \]
+    name: onDeleted
+    fullName: excel.Excel.WorksheetCollection.onDeleted
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>
   - uid: excel.Excel.WorksheetCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.WorksheetCollection.toJSON
