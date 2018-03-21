@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a RichText object in a Paragraph.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: OneNote.RichText
     fullName: onenote.OneNote.RichText
     langs:
@@ -22,7 +22,7 @@ items:
     summary: |-
       Gets the ID of the RichText object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: id
     fullName: onenote.OneNote.RichText.id
     langs:
@@ -57,7 +57,7 @@ items:
     summary: |-
       Gets the Paragraph object that contains the RichText object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: paragraph
     fullName: onenote.OneNote.RichText.paragraph
     langs:
@@ -72,7 +72,7 @@ items:
     summary: |-
       Gets the text content of the RichText object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: text
     fullName: onenote.OneNote.RichText.text
     langs:

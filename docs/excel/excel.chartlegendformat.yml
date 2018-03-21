@@ -4,7 +4,7 @@ items:
     summary: |-
       Encapsulates the format properties of a chart legend.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: Excel.ChartLegendFormat
     fullName: excel.Excel.ChartLegendFormat
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Represents the fill format of an object, which includes background formating information. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: fill
     fullName: excel.Excel.ChartLegendFormat.fill
     langs:
@@ -38,7 +38,7 @@ items:
     summary: |-
       Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: font
     fullName: excel.Excel.ChartLegendFormat.font
     langs:

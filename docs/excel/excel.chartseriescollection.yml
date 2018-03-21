@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of chart series.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: Excel.ChartSeriesCollection
     fullName: excel.Excel.ChartSeriesCollection
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Returns the number of series in the collection. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: count
     fullName: excel.Excel.ChartSeriesCollection.count
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Returns the number of series in the collection.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.4\]
     name: getCount()
     fullName: excel.Excel.ChartSeriesCollection.getCount
     langs:
@@ -55,7 +55,7 @@ items:
     summary: |-
       Retrieves a series based on its position in the collection
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: getItemAt(index)
     fullName: excel.Excel.ChartSeriesCollection.getItemAt
     langs:

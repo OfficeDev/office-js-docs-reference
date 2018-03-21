@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a rule, for all traditional rule/format pairings.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.6 (PREVIEW)\]
     name: Excel.ConditionalFormatRule
     fullName: excel.Excel.ConditionalFormatRule
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       The formula, if required, to evaluate the conditional format rule on.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.6 (PREVIEW)\]
     name: formula
     fullName: excel.Excel.ConditionalFormatRule.formula
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       The formula, if required, to evaluate the conditional format rule on in the user's language.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.6 (PREVIEW)\]
     name: formulaLocal
     fullName: excel.Excel.ConditionalFormatRule.formulaLocal
     langs:
@@ -54,7 +54,7 @@ items:
     summary: |-
       The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.6 (PREVIEW)\]
     name: formulaR1C1
     fullName: excel.Excel.ConditionalFormatRule.formulaR1C1
     langs:

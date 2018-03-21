@@ -4,7 +4,7 @@ items:
     summary: |-
       encapsulates the format properties for the chart series
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: Excel.ChartSeriesFormat
     fullName: excel.Excel.ChartSeriesFormat
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Represents the fill format of a chart series, which includes background formating information. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: fill
     fullName: excel.Excel.ChartSeriesFormat.fill
     langs:
@@ -38,7 +38,7 @@ items:
     summary: |-
       Represents line formatting. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: line
     fullName: excel.Excel.ChartSeriesFormat.line
     langs:

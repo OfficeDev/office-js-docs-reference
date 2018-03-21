@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a chart object in a workbook.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: Excel.Chart
     fullName: excel.Excel.Chart
     langs:
@@ -37,7 +37,7 @@ items:
     summary: |-
       Represents chart axes. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: axes
     fullName: excel.Excel.Chart.axes
     langs:
@@ -52,7 +52,7 @@ items:
     summary: |-
       Represents the datalabels on the chart. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: dataLabels
     fullName: excel.Excel.Chart.dataLabels
     langs:
@@ -67,7 +67,7 @@ items:
     summary: |-
       Deletes the chart object.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: delete()
     fullName: excel.Excel.Chart.delete
     langs:
@@ -100,7 +100,7 @@ items:
     summary: |-
       Encapsulates the format properties for the chart area. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: format
     fullName: excel.Excel.Chart.format
     langs:
@@ -117,7 +117,7 @@ items:
       is preserved as part of the resizing.
 
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.2\]
     name: 'getImage(width, height, fittingMode)'
     fullName: excel.Excel.Chart.getImage
     langs:
@@ -148,7 +148,7 @@ items:
     summary: |-
       Represents the height, in points, of the chart object.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: height
     fullName: excel.Excel.Chart.height
     langs:
@@ -163,7 +163,7 @@ items:
     summary: |-
       The distance, in points, from the left side of the chart to the worksheet origin.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: left
     fullName: excel.Excel.Chart.left
     langs:
@@ -178,7 +178,7 @@ items:
     summary: |-
       Represents the legend for the chart. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: legend
     fullName: excel.Excel.Chart.legend
     langs:
@@ -213,7 +213,7 @@ items:
     summary: |-
       Represents the name of a chart object.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: name
     fullName: excel.Excel.Chart.name
     langs:
@@ -228,7 +228,7 @@ items:
     summary: |-
       Represents either a single series or collection of series in the chart. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: series
     fullName: excel.Excel.Chart.series
     langs:
@@ -265,7 +265,7 @@ items:
     summary: |-
       Resets the source data for the chart.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: 'setData(sourceData, seriesBy)'
     fullName: excel.Excel.Chart.setData
     langs:
@@ -292,7 +292,7 @@ items:
     summary: |-
       Positions the chart relative to cells on the worksheet.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: 'setPosition(startCell, endCell)'
     fullName: excel.Excel.Chart.setPosition
     langs:
@@ -323,7 +323,7 @@ items:
       Read-only.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: title
     fullName: excel.Excel.Chart.title
     langs:
@@ -352,7 +352,7 @@ items:
       top of the chart area (on a chart).
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: top
     fullName: excel.Excel.Chart.top
     langs:
@@ -367,7 +367,7 @@ items:
     summary: |-
       Represents the width, in points, of the chart object.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: width
     fullName: excel.Excel.Chart.width
     langs:
@@ -382,7 +382,7 @@ items:
     summary: |-
       The worksheet containing the current chart. Read-only.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.2\]
     name: worksheet
     fullName: excel.Excel.Chart.worksheet
     langs:

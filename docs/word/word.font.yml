@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a font.
 
-      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+      \[API set: WordApi 1.1\]
     name: Word.Font
     fullName: word.Word.Font
     langs:
@@ -36,7 +36,7 @@ items:
       false.
 
 
-      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+      \[API set: WordApi 1.1\]
     name: bold
     fullName: word.Word.Font.bold
     langs:
@@ -53,7 +53,7 @@ items:
       name.
 
 
-      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+      \[API set: WordApi 1.1\]
     name: color
     fullName: word.Word.Font.color
     langs:
@@ -70,7 +70,7 @@ items:
       double strikethrough text, otherwise, false.
 
 
-      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+      \[API set: WordApi 1.1\]
     name: doubleStrikeThrough
     fullName: word.Word.Font.doubleStrikeThrough
     langs:
@@ -88,7 +88,7 @@ items:
       string for mixed highlight colors, or null for no highlight color.
 
 
-      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+      \[API set: WordApi 1.1\]
     name: highlightColor
     fullName: word.Word.Font.highlightColor
     langs:
@@ -105,7 +105,7 @@ items:
       false.
 
 
-      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+      \[API set: WordApi 1.1\]
     name: italic
     fullName: word.Word.Font.italic
     langs:
@@ -140,7 +140,7 @@ items:
     summary: |-
       Gets or sets a value that represents the name of the font.
 
-      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+      \[API set: WordApi 1.1\]
     name: name
     fullName: word.Word.Font.name
     langs:
@@ -177,7 +177,7 @@ items:
     summary: |-
       Gets or sets a value that represents the font size in points.
 
-      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+      \[API set: WordApi 1.1\]
     name: size
     fullName: word.Word.Font.size
     langs:
@@ -194,7 +194,7 @@ items:
       strikethrough text, otherwise, false.
 
 
-      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+      \[API set: WordApi 1.1\]
     name: strikeThrough
     fullName: word.Word.Font.strikeThrough
     langs:
@@ -211,7 +211,7 @@ items:
       otherwise, false.
 
 
-      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+      \[API set: WordApi 1.1\]
     name: subscript
     fullName: word.Word.Font.subscript
     langs:
@@ -228,7 +228,7 @@ items:
       superscript, otherwise, false.
 
 
-      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+      \[API set: WordApi 1.1\]
     name: superscript
     fullName: word.Word.Font.superscript
     langs:
@@ -273,7 +273,7 @@ items:
     summary: |-
       Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
 
-      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+      \[API set: WordApi 1.1\]
     name: underline
     fullName: word.Word.Font.underline
     langs:

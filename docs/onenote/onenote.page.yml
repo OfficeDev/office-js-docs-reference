@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a OneNote page.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: OneNote.Page
     fullName: onenote.OneNote.Page
     langs:
@@ -59,7 +59,7 @@ items:
     summary: |-
       The client url of the page. Read only
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: clientUrl
     fullName: onenote.OneNote.Page.clientUrl
     langs:
@@ -74,7 +74,7 @@ items:
     summary: |-
       The collection of PageContent objects on the page. Read only
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: contents
     fullName: onenote.OneNote.Page.contents
     langs:
@@ -107,7 +107,7 @@ items:
     summary: |-
       Gets the ID of the page. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: id
     fullName: onenote.OneNote.Page.id
     langs:
@@ -122,7 +122,7 @@ items:
     summary: |-
       Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: inkAnalysisOrNull
     fullName: onenote.OneNote.Page.inkAnalysisOrNull
     langs:
@@ -179,7 +179,7 @@ items:
     summary: |-
       Gets or sets the indentation level of the page.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: pageLevel
     fullName: onenote.OneNote.Page.pageLevel
     langs:
@@ -194,7 +194,7 @@ items:
     summary: |-
       Gets the section that contains the page. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: parentSection
     fullName: onenote.OneNote.Page.parentSection
     langs:
@@ -209,7 +209,7 @@ items:
     summary: |-
       Gets or sets the title of the page.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: title
     fullName: onenote.OneNote.Page.title
     langs:
@@ -224,7 +224,7 @@ items:
     summary: |-
       The web url of the page. Read only
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: webUrl
     fullName: onenote.OneNote.Page.webUrl
     langs:

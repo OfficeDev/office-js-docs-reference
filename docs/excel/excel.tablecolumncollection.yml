@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of all the columns that are part of the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: Excel.TableColumnCollection
     fullName: excel.Excel.TableColumnCollection
     langs:
@@ -28,9 +28,8 @@ items:
       Adds a new column to the table.
 
 
-      \[ [API set: ExcelApi 1.1 requires an index smaller than the total column count; 1.4 allows index to be optional
-      (null or -1) and will append a column at the end; 1.4 allows name parameter at creation
-      time.](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1 requires an index smaller than the total column count; 1.4 allows index to be optional
+      (null or -1) and will append a column at the end; 1.4 allows name parameter at creation time.\]
     name: 'add(index, values, name)'
     fullName: excel.Excel.TableColumnCollection.add
     langs:
@@ -63,7 +62,7 @@ items:
     summary: |-
       Returns the number of columns in the table. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: count
     fullName: excel.Excel.TableColumnCollection.count
     langs:
@@ -78,7 +77,7 @@ items:
     summary: |-
       Gets the number of columns in the table.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.4\]
     name: getCount()
     fullName: excel.Excel.TableColumnCollection.getCount
     langs:
@@ -94,7 +93,7 @@ items:
     summary: |-
       Gets a column object by Name or ID.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: getItem(key)
     fullName: excel.Excel.TableColumnCollection.getItem
     langs:
@@ -115,7 +114,7 @@ items:
     summary: |-
       Gets a column based on its position in the collection.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: getItemAt(index)
     fullName: excel.Excel.TableColumnCollection.getItemAt
     langs:
@@ -136,7 +135,7 @@ items:
     summary: |-
       Gets a column object by Name or ID. If the column does not exist, will return a null object.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.4\]
     name: getItemOrNullObject(key)
     fullName: excel.Excel.TableColumnCollection.getItemOrNullObject
     langs:

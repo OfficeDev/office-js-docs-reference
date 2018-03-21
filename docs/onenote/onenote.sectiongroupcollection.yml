@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of section groups.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: OneNote.SectionGroupCollection
     fullName: onenote.OneNote.SectionGroupCollection
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Returns the number of section groups in the collection. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: count
     fullName: onenote.OneNote.SectionGroupCollection.count
     langs:

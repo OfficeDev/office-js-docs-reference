@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the border of an object.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.6 (PREVIEW)\]
     name: Excel.ConditionalRangeBorder
     fullName: excel.Excel.ConditionalRangeBorder
     langs:
@@ -26,7 +26,7 @@ items:
       color (e.g. "orange").
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.6 (PREVIEW)\]
     name: color
     fullName: excel.Excel.ConditionalRangeBorder.color
     langs:
@@ -85,7 +85,7 @@ items:
       Read-only.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.6 (PREVIEW)\]
     name: sideIndex
     fullName: excel.Excel.ConditionalRangeBorder.sideIndex
     langs:
@@ -102,7 +102,7 @@ items:
       details.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.6 (PREVIEW)\]
     name: style
     fullName: excel.Excel.ConditionalRangeBorder.style
     langs:

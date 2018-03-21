@@ -4,7 +4,7 @@ items:
     summary: |-
       Encapsulates the format properties for the overall chart area.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: Excel.ChartAreaFormat
     fullName: excel.Excel.ChartAreaFormat
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Represents the fill format of an object, which includes background formatting information. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: fill
     fullName: excel.Excel.ChartAreaFormat.fill
     langs:
@@ -38,7 +38,7 @@ items:
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: font
     fullName: excel.Excel.ChartAreaFormat.font
     langs:

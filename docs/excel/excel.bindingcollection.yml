@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the collection of all the binding objects that are part of the workbook.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: Excel.BindingCollection
     fullName: excel.Excel.BindingCollection
     langs:
@@ -29,7 +29,7 @@ items:
     summary: |-
       Add a new binding to a particular Range.
 
-      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.3\]
     name: 'add(range, bindingType, id)'
     fullName: excel.Excel.BindingCollection.add
     langs:
@@ -60,7 +60,7 @@ items:
     summary: |-
       Add a new binding based on a named item in the workbook.
 
-      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.3\]
     name: 'addFromNamedItem(name, bindingType, id)'
     fullName: excel.Excel.BindingCollection.addFromNamedItem
     langs:
@@ -89,7 +89,7 @@ items:
     summary: |-
       Add a new binding based on the current selection.
 
-      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.3\]
     name: 'addFromSelection(bindingType, id)'
     fullName: excel.Excel.BindingCollection.addFromSelection
     langs:
@@ -114,7 +114,7 @@ items:
     summary: |-
       Returns the number of bindings in the collection. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: count
     fullName: excel.Excel.BindingCollection.count
     langs:
@@ -129,7 +129,7 @@ items:
     summary: |-
       Gets the number of bindings in the collection.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.4\]
     name: getCount()
     fullName: excel.Excel.BindingCollection.getCount
     langs:
@@ -145,7 +145,7 @@ items:
     summary: |-
       Gets a binding object by ID.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: getItem(id)
     fullName: excel.Excel.BindingCollection.getItem
     langs:
@@ -166,7 +166,7 @@ items:
     summary: |-
       Gets a binding object based on its position in the items array.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: getItemAt(index)
     fullName: excel.Excel.BindingCollection.getItemAt
     langs:
@@ -187,7 +187,7 @@ items:
     summary: |-
       Gets a binding object by ID. If the binding object does not exist, will return a null object.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.4\]
     name: getItemOrNullObject(id)
     fullName: excel.Excel.BindingCollection.getItemOrNullObject
     langs:

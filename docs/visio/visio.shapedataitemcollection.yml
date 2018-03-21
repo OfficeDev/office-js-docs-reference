@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the ShapeDataItemCollection for a given Shape.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[API set: 1.1\]
     name: Visio.ShapeDataItemCollection
     fullName: visio.Visio.ShapeDataItemCollection
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Gets the number of Shape Data Items.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[API set: 1.1\]
     name: getCount()
     fullName: visio.Visio.ShapeDataItemCollection.getCount
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Gets the ShapeDataItem using its name.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[API set: 1.1\]
     name: getItem(key)
     fullName: visio.Visio.ShapeDataItemCollection.getItem
     langs:

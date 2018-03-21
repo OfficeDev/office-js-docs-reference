@@ -10,7 +10,7 @@ items:
       are added, a table row will continue to point at the index for which it was created.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: Excel.TableRowCollection
     fullName: excel.Excel.TableRowCollection
     langs:
@@ -37,8 +37,7 @@ items:
       are added, a table row will continue to point at the index for which it was created.
 
 
-      \[ [API set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple
-      rows.](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows.\]
     name: 'add(index, values)'
     fullName: excel.Excel.TableRowCollection.add
     langs:
@@ -67,7 +66,7 @@ items:
     summary: |-
       Returns the number of rows in the table. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: count
     fullName: excel.Excel.TableRowCollection.count
     langs:
@@ -82,7 +81,7 @@ items:
     summary: |-
       Gets the number of rows in the table.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.4\]
     name: getCount()
     fullName: excel.Excel.TableRowCollection.getCount
     langs:
@@ -104,7 +103,7 @@ items:
       are added, a table row will continue to point at the index for which it was created.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: getItemAt(index)
     fullName: excel.Excel.TableRowCollection.getItemAt
     langs:

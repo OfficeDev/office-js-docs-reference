@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents an Excel table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: Excel.Table
     fullName: excel.Excel.Table
     langs:
@@ -43,7 +43,7 @@ items:
     summary: |-
       Clears all the filters currently applied on the table.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.2\]
     name: clearFilters()
     fullName: excel.Excel.Table.clearFilters
     langs:
@@ -59,7 +59,7 @@ items:
     summary: |-
       Represents a collection of all the columns in the table. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: columns
     fullName: excel.Excel.Table.columns
     langs:
@@ -74,7 +74,7 @@ items:
     summary: |-
       Converts the table into a normal range of cells. All data is preserved.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.2\]
     name: convertToRange()
     fullName: excel.Excel.Table.convertToRange
     langs:
@@ -90,7 +90,7 @@ items:
     summary: |-
       Deletes the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: delete()
     fullName: excel.Excel.Table.delete
     langs:
@@ -106,7 +106,7 @@ items:
     summary: |-
       Gets the range object associated with the data body of the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: getDataBodyRange()
     fullName: excel.Excel.Table.getDataBodyRange
     langs:
@@ -122,7 +122,7 @@ items:
     summary: |-
       Gets the range object associated with header row of the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: getHeaderRowRange()
     fullName: excel.Excel.Table.getHeaderRowRange
     langs:
@@ -138,7 +138,7 @@ items:
     summary: |-
       Gets the range object associated with the entire table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: getRange()
     fullName: excel.Excel.Table.getRange
     langs:
@@ -154,7 +154,7 @@ items:
     summary: |-
       Gets the range object associated with totals row of the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: getTotalRowRange()
     fullName: excel.Excel.Table.getTotalRowRange
     langs:
@@ -170,7 +170,7 @@ items:
     summary: |-
       Indicates whether the first column contains special formatting.
 
-      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.3\]
     name: highlightFirstColumn
     fullName: excel.Excel.Table.highlightFirstColumn
     langs:
@@ -185,7 +185,7 @@ items:
     summary: |-
       Indicates whether the last column contains special formatting.
 
-      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.3\]
     name: highlightLastColumn
     fullName: excel.Excel.Table.highlightLastColumn
     langs:
@@ -202,7 +202,7 @@ items:
       same even when the table is renamed. Read-only.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: id
     fullName: excel.Excel.Table.id
     langs:
@@ -237,7 +237,7 @@ items:
     summary: |-
       Name of the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: name
     fullName: excel.Excel.Table.name
     langs:
@@ -252,7 +252,7 @@ items:
     summary: |-
       Reapplies all the filters currently on the table.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.2\]
     name: reapplyFilters()
     fullName: excel.Excel.Table.reapplyFilters
     langs:
@@ -268,7 +268,7 @@ items:
     summary: |-
       Represents a collection of all the rows in the table. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: rows
     fullName: excel.Excel.Table.rows
     langs:
@@ -307,7 +307,7 @@ items:
       ones to make reading the table easier.
 
 
-      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.3\]
     name: showBandedColumns
     fullName: excel.Excel.Table.showBandedColumns
     langs:
@@ -324,7 +324,7 @@ items:
       make reading the table easier.
 
 
-      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.3\]
     name: showBandedRows
     fullName: excel.Excel.Table.showBandedRows
     langs:
@@ -341,7 +341,7 @@ items:
       the table contains a header row.
 
 
-      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.3\]
     name: showFilterButton
     fullName: excel.Excel.Table.showFilterButton
     langs:
@@ -356,7 +356,7 @@ items:
     summary: |-
       Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: showHeaders
     fullName: excel.Excel.Table.showHeaders
     langs:
@@ -371,7 +371,7 @@ items:
     summary: |-
       Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: showTotals
     fullName: excel.Excel.Table.showTotals
     langs:
@@ -386,7 +386,7 @@ items:
     summary: |-
       Represents the sorting for the table.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.2\]
     name: sort
     fullName: excel.Excel.Table.sort
     langs:
@@ -404,7 +404,7 @@ items:
       style present in the workbook can also be specified.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.1\]
     name: style
     fullName: excel.Excel.Table.style
     langs:
@@ -431,7 +431,7 @@ items:
     summary: |-
       The worksheet containing the current table. Read-only.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.2\]
     name: worksheet
     fullName: excel.Excel.Table.worksheet
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       This object represents the font attributes (font style,, color, etc.) for an object.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.6 (PREVIEW)\]
     name: Excel.ConditionalRangeFont
     fullName: excel.Excel.ConditionalRangeFont
     langs:
@@ -27,7 +27,7 @@ items:
     summary: |-
       Represents the bold status of font.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.6 (PREVIEW)\]
     name: bold
     fullName: excel.Excel.ConditionalRangeFont.bold
     langs:
@@ -42,7 +42,7 @@ items:
     summary: |-
       Resets the font formats.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.6 (PREVIEW)\]
     name: clear()
     fullName: excel.Excel.ConditionalRangeFont.clear
     langs:
@@ -58,7 +58,7 @@ items:
     summary: |-
       HTML color code representation of the text color. E.g. \#FF0000 represents Red.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.6 (PREVIEW)\]
     name: color
     fullName: excel.Excel.ConditionalRangeFont.color
     langs:
@@ -73,7 +73,7 @@ items:
     summary: |-
       Represents the italic status of the font.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.6 (PREVIEW)\]
     name: italic
     fullName: excel.Excel.ConditionalRangeFont.italic
     langs:
@@ -130,7 +130,7 @@ items:
     summary: |-
       Represents the strikethrough status of the font.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.6 (PREVIEW)\]
     name: strikethrough
     fullName: excel.Excel.ConditionalRangeFont.strikethrough
     langs:
@@ -157,7 +157,7 @@ items:
     summary: |-
       Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[API set: ExcelApi 1.6 (PREVIEW)\]
     name: underline
     fullName: excel.Excel.ConditionalRangeFont.underline
     langs:

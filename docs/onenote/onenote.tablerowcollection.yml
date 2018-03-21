@@ -4,7 +4,7 @@ items:
     summary: |-
       Contains a collection of TableRow objects.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: OneNote.TableRowCollection
     fullName: onenote.OneNote.TableRowCollection
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Returns the number of table rows in this collection. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[API set: OneNoteApi 1.1\]
     name: count
     fullName: onenote.OneNote.TableRowCollection.count
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the ShapeView class.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[API set: 1.1\]
     name: Visio.ShapeView
     fullName: visio.Visio.ShapeView
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Adds an overlay on top of the shape.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[API set: 1.1\]
     name: 'addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
     fullName: visio.Visio.ShapeView.addOverlay
     langs:
@@ -67,7 +67,7 @@ items:
     summary: |-
       Represents the highlight around the shape.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[API set: 1.1\]
     name: highlight
     fullName: visio.Visio.ShapeView.highlight
     langs:
@@ -102,7 +102,7 @@ items:
     summary: |-
       Removes particular overlay or all overlays on the Shape.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[API set: 1.1\]
     name: removeOverlay(OverlayId)
     fullName: visio.Visio.ShapeView.removeOverlay
     langs:

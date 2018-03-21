@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Comment.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[API set: 1.1\]
     name: Visio.Comment
     fullName: visio.Visio.Comment
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       A string that specifies the label of the shape data item.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[API set: 1.1\]
     name: author
     fullName: visio.Visio.Comment.author
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       A string that specifies the format of the shape data item.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[API set: 1.1\]
     name: date
     fullName: visio.Visio.Comment.date
     langs:
@@ -96,7 +96,7 @@ items:
     summary: |-
       A string that specifies the value of the shape data item.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[API set: 1.1\]
     name: text
     fullName: visio.Visio.Comment.text
     langs:
