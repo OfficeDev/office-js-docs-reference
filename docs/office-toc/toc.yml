@@ -1,6 +1,6 @@
 items:
   - name: Office JavaScript API reference
-    href: overview/office.md
+    href: ~/overview/office.md
     items:
       - name: Excel
         uid: excel
