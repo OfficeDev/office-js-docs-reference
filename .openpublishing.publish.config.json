@@ -29,7 +29,7 @@
   ],
   "JoinTOCPlugin": [
     {
-      "ReferenceTOC": "office-docs-ref-javascript/toc.yml",
+      "TopLevelTOC": "office-docs-ref-javascript/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     }
   ],
