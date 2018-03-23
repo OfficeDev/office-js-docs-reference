@@ -21,12 +21,6 @@
       ]
     }
   ],
-  "JoinTOCPlugin": [
-    {
-      "ReferenceTOC": "office-docs-ref-javascript/toc.yml",
-      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
-    }
-  ],
   "notification_subscribers": [],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
@@ -49,6 +43,24 @@
       "path_to_root": "_dependentPackages/uref.plugins",
       "target_framework": "net45",
       "version": "latest"
+    },
+    {
+      "id": "Microsoft.OpenPublishing.CommonPlugins",
+      "nuget_feed": "https://www.myget.org/F/op/api/v2",
+      "path_to_root": "_dependentPackages/CommonPlugins",
+      "target_framework": "net45",
+      "version": "latest"
+    }
+  ],
+  "customized_tasks": {
+    "docset_prebuild": [
+      "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
+    ]
+  },
+  "JoinTOCPlugin": [
+    {
+      "TopLevelTOC": "office-docs-ref-javascript/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     }
   ]
 }
