@@ -21,6 +21,12 @@
       ]
     }
   ],
+  "JoinTOCPlugin": [
+    {
+      "TopLevelTOC": "office-docs-ref-javascript/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    }
+  ],
   "notification_subscribers": [],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
