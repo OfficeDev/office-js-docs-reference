@@ -4,7 +4,17 @@ items:
     summary: |-
       Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      Property: description
+      Property: height
+      Property: hyperlink
+      Property: id
+      Property: ocrData
+      Property: pageContent
+      Property: paragraph
+      Property: width
+      Method: getBase64Image
+      Method: load
     name: OneNote.Image
     fullName: onenote.OneNote.Image
     langs:
@@ -28,7 +38,7 @@ items:
     summary: |-
       Gets or sets the description of the Image.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: description
     fullName: onenote.OneNote.Image.description
     langs:
@@ -45,7 +55,7 @@ items:
       data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIA...
 
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getBase64Image()
     fullName: onenote.OneNote.Image.getBase64Image
     langs:
@@ -61,7 +71,7 @@ items:
     summary: |-
       Gets or sets the height of the Image layout.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: height
     fullName: onenote.OneNote.Image.height
     langs:
@@ -76,7 +86,7 @@ items:
     summary: |-
       Gets or sets the hyperlink of the Image.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: hyperlink
     fullName: onenote.OneNote.Image.hyperlink
     langs:
@@ -91,7 +101,7 @@ items:
     summary: |-
       Gets the ID of the Image object. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: id
     fullName: onenote.OneNote.Image.id
     langs:
@@ -126,7 +136,7 @@ items:
     summary: |-
       Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: ocrData
     fullName: onenote.OneNote.Image.ocrData
     langs:
@@ -143,7 +153,7 @@ items:
       This object defines the position of the Image on the page. Read-only.
 
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: pageContent
     fullName: onenote.OneNote.Image.pageContent
     langs:
@@ -160,7 +170,7 @@ items:
       Read-only.
 
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: paragraph
     fullName: onenote.OneNote.Image.paragraph
     langs:
@@ -175,7 +185,7 @@ items:
     summary: |-
       Gets or sets the width of the Image layout.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: width
     fullName: onenote.OneNote.Image.width
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides information about the setting that raised the SettingsChanged event
 
-      \[API set: ExcelApi 1.4\]
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: Excel.SettingsChangedEventArgs
     fullName: excel.Excel.SettingsChangedEventArgs
     langs:
@@ -17,7 +17,7 @@ items:
     summary: |-
       Gets the Setting object that represents the binding that raised the SettingsChanged event
 
-      \[API set: ExcelApi 1.4\]
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: settings
     fullName: excel.Excel.SettingsChangedEventArgs.settings
     langs:

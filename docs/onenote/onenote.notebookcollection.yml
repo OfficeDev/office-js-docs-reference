@@ -4,7 +4,13 @@ items:
     summary: |-
       Represents a collection of notebooks.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      Property: count
+      Property: items
+      Method: getByName
+      Method: getItem
+      Method: getItemAt
+      Method: load
     name: OneNote.NotebookCollection
     fullName: onenote.OneNote.NotebookCollection
     langs:
@@ -24,7 +30,7 @@ items:
     summary: |-
       Returns the number of notebooks in the collection. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: count
     fullName: onenote.OneNote.NotebookCollection.count
     langs:

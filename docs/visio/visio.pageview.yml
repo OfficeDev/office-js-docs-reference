@@ -4,7 +4,17 @@ items:
     summary: |-
       Represents the PageView class.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      Property: zoom
+      Method: centerViewportOnShape
+      Method: fitToWindow
+      Method: getPosition
+      Method: getSelection
+      Method: isShapeInViewport
+      Method: load
+      Method: set
+      Method: setPosition
+      Method: toJSON
     name: Visio.PageView
     fullName: visio.Visio.PageView
     langs:
@@ -28,7 +38,7 @@ items:
     summary: |-
       Pans the Visio drawing to place the specified shape in the center of the view.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: centerViewportOnShape(ShapeId)
     fullName: visio.Visio.PageView.centerViewportOnShape
     langs:
@@ -49,7 +59,7 @@ items:
     summary: |-
       Fit Page to current window.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: fitToWindow()
     fullName: visio.Visio.PageView.fitToWindow
     langs:
@@ -65,7 +75,7 @@ items:
     summary: |-
       Returns the position object that specifies the position of the page in the view.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: getPosition()
     fullName: visio.Visio.PageView.getPosition
     langs:
@@ -81,7 +91,7 @@ items:
     summary: |-
       Represents the Selection in the page.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: getSelection()
     fullName: visio.Visio.PageView.getSelection
     langs:
@@ -97,7 +107,7 @@ items:
     summary: |-
       To check if the shape is in view of the page or not.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: isShapeInViewport(Shape)
     fullName: visio.Visio.PageView.isShapeInViewport
     langs:
@@ -160,7 +170,7 @@ items:
     summary: |-
       Sets the position of the page in the view.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: setPosition(Position)
     fullName: visio.Visio.PageView.setPosition
     langs:
@@ -193,7 +203,7 @@ items:
     summary: |-
       Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: zoom
     fullName: visio.Visio.PageView.zoom
     langs:

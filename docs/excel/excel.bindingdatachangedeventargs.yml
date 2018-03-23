@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides information about the binding that raised the DataChanged event.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: Excel.BindingDataChangedEventArgs
     fullName: excel.Excel.BindingDataChangedEventArgs
     langs:
@@ -17,7 +17,7 @@ items:
     summary: |-
       Gets the Binding object that represents the binding that raised the DataChanged event.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: binding
     fullName: excel.Excel.BindingDataChangedEventArgs.binding
     langs:

@@ -4,7 +4,12 @@ items:
     summary: |-
       Represents a cell value conditional format.
 
-      \[API set: ExcelApi 1.6 (PREVIEW)\]
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      Property: format
+      Property: rule
+      Method: load
+      Method: set
+      Method: toJSON
     name: Excel.CellValueConditionalFormat
     fullName: excel.Excel.CellValueConditionalFormat
     langs:
@@ -25,7 +30,7 @@ items:
       Read-only.
 
 
-      \[API set: ExcelApi 1.6 (PREVIEW)\]
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: format
     fullName: excel.Excel.CellValueConditionalFormat.format
     langs:
@@ -60,7 +65,7 @@ items:
     summary: |-
       Represents the Rule object on this conditional format.
 
-      \[API set: ExcelApi 1.6 (PREVIEW)\]
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: rule
     fullName: excel.Excel.CellValueConditionalFormat.rule
     langs:

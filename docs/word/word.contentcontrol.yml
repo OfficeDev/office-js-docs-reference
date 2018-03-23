@@ -7,7 +7,105 @@ items:
       images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+
+      Property: appearance
+
+      Property: cannotDelete
+
+      Property: cannotEdit
+
+      Property: color
+
+      Property: contentControls
+
+      Property: font
+
+      Property: id
+
+      Property: inlinePictures
+
+      Property: lists
+
+      Property: paragraphs
+
+      Property: parentBody
+
+      Property: parentContentControl
+
+      Property: parentContentControlOrNullObject
+
+      Property: parentTable
+
+      Property: parentTableCell
+
+      Property: parentTableCellOrNullObject
+
+      Property: parentTableOrNullObject
+
+      Property: placeholderText
+
+      Property: removeWhenEdited
+
+      Property: style
+
+      Property: styleBuiltIn
+
+      Property: subtype
+
+      Property: tables
+
+      Property: tag
+
+      Property: text
+
+      Property: title
+
+      Property: type
+
+      Method: clear
+
+      Method: delete
+
+      Method: getHtml
+
+      Method: getOoxml
+
+      Method: getRange
+
+      Method: getTextRanges
+
+      Method: insertBreak
+
+      Method: insertFileFromBase64
+
+      Method: insertHtml
+
+      Method: insertInlinePictureFromBase64
+
+      Method: insertOoxml
+
+      Method: insertParagraph
+
+      Method: insertTable
+
+      Method: insertText
+
+      Method: load
+
+      Method: search
+
+      Method: select
+
+      Method: set
+
+      Method: split
+
+      Method: toJSON
+
+      Method: track
+
+      Method: untrack
     name: Word.ContentControl
     fullName: word.Word.ContentControl
     langs:
@@ -70,7 +168,7 @@ items:
     summary: |-
       Gets or sets the appearance of the content control. The value can be 'boundingBox', 'tags' or 'hidden'.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: appearance
     fullName: word.Word.ContentControl.appearance
     langs:
@@ -87,7 +185,7 @@ items:
       removeWhenEdited.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: cannotDelete
     fullName: word.Word.ContentControl.cannotDelete
     langs:
@@ -102,7 +200,7 @@ items:
     summary: |-
       Gets or sets a value that indicates whether the user can edit the contents of the content control.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: cannotEdit
     fullName: word.Word.ContentControl.cannotEdit
     langs:
@@ -117,7 +215,7 @@ items:
     summary: |-
       Clears the contents of the content control. The user can perform the undo operation on the cleared content.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: clear()
     fullName: word.Word.ContentControl.clear
     langs:
@@ -133,7 +231,7 @@ items:
     summary: |-
       Gets or sets the color of the content control. Color is specified in '\#RRGGBB' format or by using the color name.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: color
     fullName: word.Word.ContentControl.color
     langs:
@@ -148,7 +246,7 @@ items:
     summary: |-
       Gets the collection of content control objects in the content control. Read-only.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: contentControls
     fullName: word.Word.ContentControl.contentControls
     langs:
@@ -163,7 +261,7 @@ items:
     summary: |-
       Deletes the content control and its content. If keepContent is set to true, the content is not deleted.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: delete(keepContent)
     fullName: word.Word.ContentControl.delete
     langs:
@@ -188,7 +286,7 @@ items:
       Read-only.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: font
     fullName: word.Word.ContentControl.font
     langs:
@@ -203,7 +301,7 @@ items:
     summary: |-
       Gets the HTML representation of the content control object.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: getHtml()
     fullName: word.Word.ContentControl.getHtml
     langs:
@@ -219,7 +317,7 @@ items:
     summary: |-
       Gets the Office Open XML (OOXML) representation of the content control object.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: getOoxml()
     fullName: word.Word.ContentControl.getOoxml
     langs:
@@ -235,7 +333,7 @@ items:
     summary: |-
       Gets the whole content control, or the starting or ending point of the content control, as a range.
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: getRange(rangeLocation)
     fullName: word.Word.ContentControl.getRange
     langs:
@@ -256,7 +354,7 @@ items:
     summary: |-
       Gets the text ranges in the content control by using punctuation marks and/or other ending marks.
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: 'getTextRanges(endingMarks, trimSpacing)'
     fullName: word.Word.ContentControl.getTextRanges
     langs:
@@ -284,7 +382,7 @@ items:
     summary: |-
       Gets an integer that represents the content control identifier. Read-only.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: id
     fullName: word.Word.ContentControl.id
     langs:
@@ -301,7 +399,7 @@ items:
       images. Read-only.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: inlinePictures
     fullName: word.Word.ContentControl.inlinePictures
     langs:
@@ -319,7 +417,7 @@ items:
       content controls.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: 'insertBreak(breakType, insertLocation)'
     fullName: word.Word.ContentControl.insertBreak
     langs:
@@ -346,7 +444,7 @@ items:
       'Start' or 'End'.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: 'insertFileFromBase64(base64File, insertLocation)'
     fullName: word.Word.ContentControl.insertFileFromBase64
     langs:
@@ -375,7 +473,7 @@ items:
       'Start' or 'End'.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: 'insertHtml(html, insertLocation)'
     fullName: word.Word.ContentControl.insertHtml
     langs:
@@ -404,7 +502,7 @@ items:
       'Replace', 'Start' or 'End'.
 
 
-      \[API set: WordApi 1.2\]
+      \[ [API set: WordApi 1.2](http://bing.com?type=word) \]
     name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
     fullName: word.Word.ContentControl.insertInlinePictureFromBase64
     langs:
@@ -433,7 +531,7 @@ items:
       'Start' or 'End'.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: 'insertOoxml(ooxml, insertLocation)'
     fullName: word.Word.ContentControl.insertOoxml
     langs:
@@ -462,7 +560,7 @@ items:
       'After'.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: 'insertParagraph(paragraphText, insertLocation)'
     fullName: word.Word.ContentControl.insertParagraph
     langs:
@@ -491,7 +589,7 @@ items:
       insertLocation value can be 'Start', 'End', 'Before' or 'After'.
 
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: 'insertTable(rowCount, columnCount, insertLocation, values)'
     fullName: word.Word.ContentControl.insertTable
     langs:
@@ -530,7 +628,7 @@ items:
       'Start' or 'End'.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: 'insertText(text, insertLocation)'
     fullName: word.Word.ContentControl.insertText
     langs:
@@ -557,7 +655,7 @@ items:
     summary: |-
       Gets the collection of list objects in the content control. Read-only.
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: lists
     fullName: word.Word.ContentControl.lists
     langs:
@@ -592,7 +690,7 @@ items:
     summary: |-
       Get the collection of paragraph objects in the content control. Read-only.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: paragraphs
     fullName: word.Word.ContentControl.paragraphs
     langs:
@@ -607,7 +705,7 @@ items:
     summary: |-
       Gets the parent body of the content control. Read-only.
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: parentBody
     fullName: word.Word.ContentControl.parentBody
     langs:
@@ -624,7 +722,7 @@ items:
       Read-only.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: parentContentControl
     fullName: word.Word.ContentControl.parentContentControl
     langs:
@@ -641,7 +739,7 @@ items:
       control. Read-only.
 
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: parentContentControlOrNullObject
     fullName: word.Word.ContentControl.parentContentControlOrNullObject
     langs:
@@ -656,7 +754,7 @@ items:
     summary: |-
       Gets the table that contains the content control. Throws if it is not contained in a table. Read-only.
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: parentTable
     fullName: word.Word.ContentControl.parentTable
     langs:
@@ -671,7 +769,7 @@ items:
     summary: |-
       Gets the table cell that contains the content control. Throws if it is not contained in a table cell. Read-only.
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: parentTableCell
     fullName: word.Word.ContentControl.parentTableCell
     langs:
@@ -688,7 +786,7 @@ items:
       cell. Read-only.
 
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: parentTableCellOrNullObject
     fullName: word.Word.ContentControl.parentTableCellOrNullObject
     langs:
@@ -705,7 +803,7 @@ items:
       Read-only.
 
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: parentTableOrNullObject
     fullName: word.Word.ContentControl.parentTableOrNullObject
     langs:
@@ -722,7 +820,7 @@ items:
       is empty.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: placeholderText
     fullName: word.Word.ContentControl.placeholderText
     langs:
@@ -739,7 +837,7 @@ items:
       with cannotDelete.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: removeWhenEdited
     fullName: word.Word.ContentControl.removeWhenEdited
     langs:
@@ -756,7 +854,7 @@ items:
       are a collection of range objects.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: 'search(searchText, searchOptions)'
     fullName: word.Word.ContentControl.search
     langs:
@@ -781,7 +879,7 @@ items:
     summary: |-
       Selects the content control. This causes Word to scroll to the selection.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: select(selectionMode)
     fullName: word.Word.ContentControl.select
     langs:
@@ -824,7 +922,7 @@ items:
     summary: |-
       Splits the content control into child ranges by using delimiters.
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: 'split(delimiters, multiParagraphs, trimDelimiters, trimSpacing)'
     fullName: word.Word.ContentControl.split
     langs:
@@ -868,7 +966,7 @@ items:
       names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: style
     fullName: word.Word.ContentControl.style
     langs:
@@ -885,7 +983,7 @@ items:
       portable between locales. To use custom styles or localized style names, see the "style" property.
 
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: styleBuiltIn
     fullName: word.Word.ContentControl.styleBuiltIn
     langs:
@@ -902,7 +1000,7 @@ items:
       'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
 
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: subtype
     fullName: word.Word.ContentControl.subtype
     langs:
@@ -917,7 +1015,7 @@ items:
     summary: |-
       Gets the collection of table objects in the content control. Read-only.
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: tables
     fullName: word.Word.ContentControl.tables
     langs:
@@ -932,7 +1030,7 @@ items:
     summary: |-
       Gets or sets a tag to identify a content control.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: tag
     fullName: word.Word.ContentControl.tag
     langs:
@@ -947,7 +1045,7 @@ items:
     summary: |-
       Gets the text of the content control. Read-only.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: text
     fullName: word.Word.ContentControl.text
     langs:
@@ -962,7 +1060,7 @@ items:
     summary: |-
       Gets or sets the title for a content control.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: title
     fullName: word.Word.ContentControl.title
     langs:
@@ -1007,7 +1105,7 @@ items:
     summary: |-
       Gets the content control type. Only rich text content controls are supported currently. Read-only.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: type
     fullName: word.Word.ContentControl.type
     langs:

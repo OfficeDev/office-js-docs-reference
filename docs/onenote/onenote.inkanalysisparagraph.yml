@@ -4,7 +4,11 @@ items:
     summary: |-
       Represents ink analysis data for an identified paragraph formed by ink strokes.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      Property: id
+      Property: inkAnalysis
+      Property: lines
+      Method: load
     name: OneNote.InkAnalysisParagraph
     fullName: onenote.OneNote.InkAnalysisParagraph
     langs:
@@ -22,7 +26,7 @@ items:
     summary: |-
       Gets the ID of the InkAnalysisParagraph object. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: id
     fullName: onenote.OneNote.InkAnalysisParagraph.id
     langs:
@@ -37,7 +41,7 @@ items:
     summary: |-
       Reference to the parent InkAnalysisPage. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: inkAnalysis
     fullName: onenote.OneNote.InkAnalysisParagraph.inkAnalysis
     langs:
@@ -52,7 +56,7 @@ items:
     summary: |-
       Gets the ink analysis lines in this ink analysis paragraph. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: lines
     fullName: onenote.OneNote.InkAnalysisParagraph.lines
     langs:

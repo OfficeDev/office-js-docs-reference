@@ -6,7 +6,17 @@ items:
       blank/nonblank/error/noerror.
 
 
-      \[API set: ExcelApi 1.6 (PREVIEW)\]
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+
+      Property: format
+
+      Property: rule
+
+      Method: load
+
+      Method: set
+
+      Method: toJSON
     name: Excel.PresetCriteriaConditionalFormat
     fullName: excel.Excel.PresetCriteriaConditionalFormat
     langs:
@@ -27,7 +37,7 @@ items:
       Read-only.
 
 
-      \[API set: ExcelApi 1.6 (PREVIEW)\]
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: format
     fullName: excel.Excel.PresetCriteriaConditionalFormat.format
     langs:
@@ -62,7 +72,7 @@ items:
     summary: |-
       The rule of the conditional format.
 
-      \[API set: ExcelApi 1.6 (PREVIEW)\]
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: rule
     fullName: excel.Excel.PresetCriteriaConditionalFormat.rule
     langs:

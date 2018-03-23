@@ -4,7 +4,13 @@ items:
     summary: |-
       Represents the Hyperlink.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      Property: address
+      Property: description
+      Property: extraInfo
+      Property: subAddress
+      Method: load
+      Method: toJSON
     name: Visio.Hyperlink
     fullName: visio.Visio.Hyperlink
     langs:
@@ -24,7 +30,7 @@ items:
     summary: |-
       Gets the address of the Hyperlink object.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: address
     fullName: visio.Visio.Hyperlink.address
     langs:
@@ -39,7 +45,7 @@ items:
     summary: |-
       Gets the description of a hyperlink.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: description
     fullName: visio.Visio.Hyperlink.description
     langs:
@@ -54,7 +60,7 @@ items:
     summary: |-
       Gets the extra info of a hyperlink.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: extraInfo
     fullName: visio.Visio.Hyperlink.extraInfo
     langs:
@@ -89,7 +95,7 @@ items:
     summary: |-
       Gets the sub-address of the Hyperlink object.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: subAddress
     fullName: visio.Visio.Hyperlink.subAddress
     langs:

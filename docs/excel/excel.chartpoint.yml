@@ -4,7 +4,11 @@ items:
     summary: |-
       Represents a point of a series in a chart.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      Property: format
+      Property: value
+      Method: load
+      Method: toJSON
     name: Excel.ChartPoint
     fullName: excel.Excel.ChartPoint
     langs:
@@ -22,7 +26,7 @@ items:
     summary: |-
       Encapsulates the format properties chart point. Read-only.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: format
     fullName: excel.Excel.ChartPoint.format
     langs:
@@ -69,7 +73,7 @@ items:
     summary: |-
       Returns the value of a chart point. Read-only.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: value
     fullName: excel.Excel.ChartPoint.value
     langs:

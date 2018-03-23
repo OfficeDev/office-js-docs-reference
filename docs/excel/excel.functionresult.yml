@@ -4,7 +4,11 @@ items:
     summary: |-
       An object containing the result of a function-evaluation operation
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      Property: error
+      Property: value
+      Method: load
+      Method: toJSON
     name: Excel.FunctionResult
     fullName: excel.Excel.FunctionResult
     langs:
@@ -24,7 +28,7 @@ items:
       succeeded, and its result is written to the Value field. The error is always in the English locale.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: error
     fullName: excel.Excel.FunctionResult.error
     langs:
@@ -73,7 +77,7 @@ items:
       property is not set).
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: value
     fullName: excel.Excel.FunctionResult.value
     langs:

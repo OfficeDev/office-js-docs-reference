@@ -4,7 +4,12 @@ items:
     summary: |-
       Represents the background of a range object.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      Property: color
+      Method: clear
+      Method: load
+      Method: set
+      Method: toJSON
     name: Excel.RangeFill
     fullName: excel.Excel.RangeFill
     langs:
@@ -23,7 +28,7 @@ items:
     summary: |-
       Resets the range background.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: clear()
     fullName: excel.Excel.RangeFill.clear
     langs:
@@ -41,7 +46,7 @@ items:
       color (e.g. "orange")
 
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: color
     fullName: excel.Excel.RangeFill.color
     langs:

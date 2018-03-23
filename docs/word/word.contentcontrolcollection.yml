@@ -8,7 +8,33 @@ items:
       rich text content controls are supported.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+
+      Property: items
+
+      Method: getById
+
+      Method: getByIdOrNullObject
+
+      Method: getByTag
+
+      Method: getByTitle
+
+      Method: getByTypes
+
+      Method: getFirst
+
+      Method: getFirstOrNullObject
+
+      Method: getItem
+
+      Method: load
+
+      Method: toJSON
+
+      Method: track
+
+      Method: untrack
     name: Word.ContentControlCollection
     fullName: word.Word.ContentControlCollection
     langs:
@@ -37,7 +63,7 @@ items:
       collection.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: getById(id)
     fullName: word.Word.ContentControlCollection.getById
     langs:
@@ -60,7 +86,7 @@ items:
       identifier in this collection.
 
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: getByIdOrNullObject(id)
     fullName: word.Word.ContentControlCollection.getByIdOrNullObject
     langs:
@@ -81,7 +107,7 @@ items:
     summary: |-
       Gets the content controls that have the specified tag.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: getByTag(tag)
     fullName: word.Word.ContentControlCollection.getByTag
     langs:
@@ -102,7 +128,7 @@ items:
     summary: |-
       Gets the content controls that have the specified title.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: getByTitle(title)
     fullName: word.Word.ContentControlCollection.getByTitle
     langs:
@@ -123,7 +149,7 @@ items:
     summary: |-
       Gets the content controls that have the specified types and/or subtypes.
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: getByTypes(types)
     fullName: word.Word.ContentControlCollection.getByTypes
     langs:
@@ -144,7 +170,7 @@ items:
     summary: |-
       Gets the first content control in this collection. Throws if this collection is empty.
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: getFirst()
     fullName: word.Word.ContentControlCollection.getFirst
     langs:
@@ -160,7 +186,7 @@ items:
     summary: |-
       Gets the first content control in this collection. Returns a null object if this collection is empty.
 
-      \[API set: WordApi 1.3\]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: getFirstOrNullObject()
     fullName: word.Word.ContentControlCollection.getFirstOrNullObject
     langs:
@@ -176,7 +202,7 @@ items:
     summary: |-
       Gets a content control by its index in the collection.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: getItem(index)
     fullName: word.Word.ContentControlCollection.getItem
     langs:

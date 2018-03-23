@@ -4,7 +4,19 @@ items:
     summary: |-
       Represents a cell in a OneNote table.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      Property: cellIndex
+      Property: id
+      Property: paragraphs
+      Property: parentRow
+      Property: rowIndex
+      Property: shadingColor
+      Method: appendHtml
+      Method: appendImage
+      Method: appendRichText
+      Method: appendTable
+      Method: clear
+      Method: load
     name: OneNote.TableCell
     fullName: onenote.OneNote.TableCell
     langs:
@@ -125,7 +137,7 @@ items:
     summary: |-
       Gets the index of the cell in its row. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: cellIndex
     fullName: onenote.OneNote.TableCell.cellIndex
     langs:
@@ -140,7 +152,7 @@ items:
     summary: |-
       Clears the contents of the cell.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: clear()
     fullName: onenote.OneNote.TableCell.clear
     langs:
@@ -156,7 +168,7 @@ items:
     summary: |-
       Gets the ID of the cell. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: id
     fullName: onenote.OneNote.TableCell.id
     langs:
@@ -191,7 +203,7 @@ items:
     summary: |-
       Gets the collection of Paragraph objects in the TableCell. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: paragraphs
     fullName: onenote.OneNote.TableCell.paragraphs
     langs:
@@ -206,7 +218,7 @@ items:
     summary: |-
       Gets the parent row of the cell. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: parentRow
     fullName: onenote.OneNote.TableCell.parentRow
     langs:
@@ -221,7 +233,7 @@ items:
     summary: |-
       Gets the index of the cell's row in the table. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: rowIndex
     fullName: onenote.OneNote.TableCell.rowIndex
     langs:
@@ -236,7 +248,7 @@ items:
     summary: |-
       Gets and sets the shading color of the cell
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: shadingColor
     fullName: onenote.OneNote.TableCell.shadingColor
     langs:

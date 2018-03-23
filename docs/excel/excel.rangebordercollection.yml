@@ -4,7 +4,13 @@ items:
     summary: |-
       Represents the border objects that make up the range border.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      Property: count
+      Property: items
+      Method: getItem
+      Method: getItemAt
+      Method: load
+      Method: toJSON
     name: Excel.RangeBorderCollection
     fullName: excel.Excel.RangeBorderCollection
     langs:
@@ -24,7 +30,7 @@ items:
     summary: |-
       Number of border objects in the collection. Read-only.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: count
     fullName: excel.Excel.RangeBorderCollection.count
     langs:
@@ -39,7 +45,7 @@ items:
     summary: |-
       Gets a border object using its name
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getItem(index)
     fullName: excel.Excel.RangeBorderCollection.getItem
     langs:
@@ -60,7 +66,7 @@ items:
     summary: |-
       Gets a border object using its index
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getItemAt(index)
     fullName: excel.Excel.RangeBorderCollection.getItemAt
     langs:

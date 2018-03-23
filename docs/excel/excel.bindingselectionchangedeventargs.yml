@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides information about the binding that raised the SelectionChanged event.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: Excel.BindingSelectionChangedEventArgs
     fullName: excel.Excel.BindingSelectionChangedEventArgs
     langs:
@@ -21,7 +21,7 @@ items:
     summary: |-
       Gets the Binding object that represents the binding that raised the SelectionChanged event.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: binding
     fullName: excel.Excel.BindingSelectionChangedEventArgs.binding
     langs:
@@ -36,7 +36,7 @@ items:
     summary: |-
       Gets the number of columns selected.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: columnCount
     fullName: excel.Excel.BindingSelectionChangedEventArgs.columnCount
     langs:
@@ -51,7 +51,7 @@ items:
     summary: |-
       Gets the number of rows selected.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: rowCount
     fullName: excel.Excel.BindingSelectionChangedEventArgs.rowCount
     langs:
@@ -66,7 +66,7 @@ items:
     summary: |-
       Gets the index of the first column of the selection (zero-based).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: startColumn
     fullName: excel.Excel.BindingSelectionChangedEventArgs.startColumn
     langs:
@@ -81,7 +81,7 @@ items:
     summary: |-
       Gets the index of the first row of the selection (zero-based).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: startRow
     fullName: excel.Excel.BindingSelectionChangedEventArgs.startRow
     langs:

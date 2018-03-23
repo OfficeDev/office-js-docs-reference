@@ -4,7 +4,374 @@ items:
     summary: |-
       An object for evaluating Excel functions.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      Method: abs
+      Method: accrInt
+      Method: accrIntM
+      Method: acos
+      Method: acosh
+      Method: acot
+      Method: acoth
+      Method: amorDegrc
+      Method: amorLinc
+      Method: and
+      Method: arabic
+      Method: areas
+      Method: asc
+      Method: asin
+      Method: asinh
+      Method: atan
+      Method: atan2
+      Method: atanh
+      Method: aveDev
+      Method: average
+      Method: averageA
+      Method: averageIf
+      Method: averageIfs
+      Method: bahtText
+      Method: base
+      Method: besselI
+      Method: besselJ
+      Method: besselK
+      Method: besselY
+      Method: beta_Dist
+      Method: beta_Inv
+      Method: bin2Dec
+      Method: bin2Hex
+      Method: bin2Oct
+      Method: binom_Dist
+      Method: binom_Dist_Range
+      Method: binom_Inv
+      Method: bitand
+      Method: bitlshift
+      Method: bitor
+      Method: bitrshift
+      Method: bitxor
+      Method: ceiling_Math
+      Method: ceiling_Precise
+      Method: char
+      Method: chiSq_Dist
+      Method: chiSq_Dist_RT
+      Method: chiSq_Inv
+      Method: chiSq_Inv_RT
+      Method: choose
+      Method: clean
+      Method: code
+      Method: columns
+      Method: combin
+      Method: combina
+      Method: complex
+      Method: concatenate
+      Method: confidence_Norm
+      Method: confidence_T
+      Method: convert
+      Method: cos
+      Method: cosh
+      Method: cot
+      Method: coth
+      Method: count
+      Method: countA
+      Method: countBlank
+      Method: countIf
+      Method: countIfs
+      Method: coupDayBs
+      Method: coupDays
+      Method: coupDaysNc
+      Method: coupNcd
+      Method: coupNum
+      Method: coupPcd
+      Method: csc
+      Method: csch
+      Method: cumIPmt
+      Method: cumPrinc
+      Method: date
+      Method: datevalue
+      Method: daverage
+      Method: day
+      Method: days
+      Method: days360
+      Method: db
+      Method: dbcs
+      Method: dcount
+      Method: dcountA
+      Method: ddb
+      Method: dec2Bin
+      Method: dec2Hex
+      Method: dec2Oct
+      Method: decimal
+      Method: degrees
+      Method: delta
+      Method: devSq
+      Method: dget
+      Method: disc
+      Method: dmax
+      Method: dmin
+      Method: dollar
+      Method: dollarDe
+      Method: dollarFr
+      Method: dproduct
+      Method: dstDev
+      Method: dstDevP
+      Method: dsum
+      Method: duration
+      Method: dvar
+      Method: dvarP
+      Method: ecma_Ceiling
+      Method: edate
+      Method: effect
+      Method: eoMonth
+      Method: erf
+      Method: erf_Precise
+      Method: erfC
+      Method: erfC_Precise
+      Method: error_Type
+      Method: even
+      Method: exact
+      Method: exp
+      Method: expon_Dist
+      Method: f_Dist
+      Method: f_Dist_RT
+      Method: f_Inv
+      Method: f_Inv_RT
+      Method: fact
+      Method: factDouble
+      Method: false
+      Method: find
+      Method: findB
+      Method: fisher
+      Method: fisherInv
+      Method: fixed
+      Method: floor_Math
+      Method: floor_Precise
+      Method: fv
+      Method: fvschedule
+      Method: gamma
+      Method: gamma_Dist
+      Method: gamma_Inv
+      Method: gammaLn
+      Method: gammaLn_Precise
+      Method: gauss
+      Method: gcd
+      Method: geoMean
+      Method: geStep
+      Method: harMean
+      Method: hex2Bin
+      Method: hex2Dec
+      Method: hex2Oct
+      Method: hlookup
+      Method: hour
+      Method: hyperlink
+      Method: hypGeom_Dist
+      Method: if
+      Method: imAbs
+      Method: imaginary
+      Method: imArgument
+      Method: imConjugate
+      Method: imCos
+      Method: imCosh
+      Method: imCot
+      Method: imCsc
+      Method: imCsch
+      Method: imDiv
+      Method: imExp
+      Method: imLn
+      Method: imLog10
+      Method: imLog2
+      Method: imPower
+      Method: imProduct
+      Method: imReal
+      Method: imSec
+      Method: imSech
+      Method: imSin
+      Method: imSinh
+      Method: imSqrt
+      Method: imSub
+      Method: imSum
+      Method: imTan
+      Method: int
+      Method: intRate
+      Method: ipmt
+      Method: irr
+      Method: isErr
+      Method: isError
+      Method: isEven
+      Method: isFormula
+      Method: isLogical
+      Method: isNA
+      Method: isNonText
+      Method: isNumber
+      Method: iso_Ceiling
+      Method: isOdd
+      Method: isoWeekNum
+      Method: ispmt
+      Method: isref
+      Method: isText
+      Method: kurt
+      Method: large
+      Method: lcm
+      Method: left
+      Method: leftb
+      Method: len
+      Method: lenb
+      Method: ln
+      Method: log
+      Method: log10
+      Method: logNorm_Dist
+      Method: logNorm_Inv
+      Method: lookup
+      Method: lower
+      Method: match
+      Method: max
+      Method: maxA
+      Method: mduration
+      Method: median
+      Method: mid
+      Method: midb
+      Method: min
+      Method: minA
+      Method: minute
+      Method: mirr
+      Method: mod
+      Method: month
+      Method: mround
+      Method: multiNomial
+      Method: n
+      Method: na
+      Method: negBinom_Dist
+      Method: networkDays
+      Method: networkDays_Intl
+      Method: nominal
+      Method: norm_Dist
+      Method: norm_Inv
+      Method: norm_S_Dist
+      Method: norm_S_Inv
+      Method: not
+      Method: now
+      Method: nper
+      Method: npv
+      Method: numberValue
+      Method: oct2Bin
+      Method: oct2Dec
+      Method: oct2Hex
+      Method: odd
+      Method: oddFPrice
+      Method: oddFYield
+      Method: oddLPrice
+      Method: oddLYield
+      Method: or
+      Method: pduration
+      Method: percentile_Exc
+      Method: percentile_Inc
+      Method: percentRank_Exc
+      Method: percentRank_Inc
+      Method: permut
+      Method: permutationa
+      Method: phi
+      Method: pi
+      Method: pmt
+      Method: poisson_Dist
+      Method: power
+      Method: ppmt
+      Method: price
+      Method: priceDisc
+      Method: priceMat
+      Method: product
+      Method: proper
+      Method: pv
+      Method: quartile_Exc
+      Method: quartile_Inc
+      Method: quotient
+      Method: radians
+      Method: rand
+      Method: randBetween
+      Method: rank_Avg
+      Method: rank_Eq
+      Method: rate
+      Method: received
+      Method: replace
+      Method: replaceB
+      Method: rept
+      Method: right
+      Method: rightb
+      Method: roman
+      Method: round
+      Method: roundDown
+      Method: roundUp
+      Method: rows
+      Method: rri
+      Method: sec
+      Method: sech
+      Method: second
+      Method: seriesSum
+      Method: sheet
+      Method: sheets
+      Method: sign
+      Method: sin
+      Method: sinh
+      Method: skew
+      Method: skew_p
+      Method: sln
+      Method: small
+      Method: sqrt
+      Method: sqrtPi
+      Method: standardize
+      Method: stDev_P
+      Method: stDev_S
+      Method: stDevA
+      Method: stDevPA
+      Method: substitute
+      Method: subtotal
+      Method: sum
+      Method: sumIf
+      Method: sumIfs
+      Method: sumSq
+      Method: syd
+      Method: t
+      Method: t_Dist
+      Method: t_Dist_2T
+      Method: t_Dist_RT
+      Method: t_Inv
+      Method: t_Inv_2T
+      Method: tan
+      Method: tanh
+      Method: tbillEq
+      Method: tbillPrice
+      Method: tbillYield
+      Method: text
+      Method: time
+      Method: timevalue
+      Method: today
+      Method: toJSON
+      Method: trim
+      Method: trimMean
+      Method: true
+      Method: trunc
+      Method: type
+      Method: unichar
+      Method: unicode
+      Method: upper
+      Method: usdollar
+      Method: value
+      Method: var_P
+      Method: var_S
+      Method: varA
+      Method: varPA
+      Method: vdb
+      Method: vlookup
+      Method: weekday
+      Method: weekNum
+      Method: weibull_Dist
+      Method: workDay
+      Method: workDay_Intl
+      Method: xirr
+      Method: xnpv
+      Method: xor
+      Method: year
+      Method: yearFrac
+      Method: yield
+      Method: yieldDisc
+      Method: yieldMat
+      Method: z_Test
     name: Excel.Functions
     fullName: excel.Excel.Functions
     langs:
@@ -385,7 +752,7 @@ items:
     summary: |-
       Returns the absolute value of a number, a number without its sign.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: abs(number)
     fullName: excel.Excel.Functions.abs
     langs:
@@ -406,7 +773,7 @@ items:
     summary: |-
       Returns the accrued interest for a security that pays periodic interest.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'accrInt(issue, firstInterest, settlement, rate, par, frequency, basis, calcMethod)'
     fullName: excel.Excel.Functions.accrInt
     langs:
@@ -465,7 +832,7 @@ items:
     summary: |-
       Returns the accrued interest for a security that pays interest at maturity.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'accrIntM(issue, settlement, rate, par, basis)'
     fullName: excel.Excel.Functions.accrIntM
     langs:
@@ -509,7 +876,7 @@ items:
       Number.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: acos(number)
     fullName: excel.Excel.Functions.acos
     langs:
@@ -530,7 +897,7 @@ items:
     summary: |-
       Returns the inverse hyperbolic cosine of a number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: acosh(number)
     fullName: excel.Excel.Functions.acosh
     langs:
@@ -551,7 +918,7 @@ items:
     summary: |-
       Returns the arccotangent of a number, in radians in the range 0 to Pi.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: acot(number)
     fullName: excel.Excel.Functions.acot
     langs:
@@ -572,7 +939,7 @@ items:
     summary: |-
       Returns the inverse hyperbolic cotangent of a number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: acoth(number)
     fullName: excel.Excel.Functions.acoth
     langs:
@@ -593,7 +960,7 @@ items:
     summary: |-
       Returns the prorated linear depreciation of an asset for each accounting period.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'amorDegrc(cost, datePurchased, firstPeriod, salvage, period, rate, basis)'
     fullName: excel.Excel.Functions.amorDegrc
     langs:
@@ -645,7 +1012,7 @@ items:
     summary: |-
       Returns the prorated linear depreciation of an asset for each accounting period.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'amorLinc(cost, datePurchased, firstPeriod, salvage, period, rate, basis)'
     fullName: excel.Excel.Functions.amorLinc
     langs:
@@ -697,7 +1064,7 @@ items:
     summary: |-
       Checks whether all arguments are TRUE, and returns TRUE if all arguments are TRUE.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: and(values)
     fullName: excel.Excel.Functions.and
     langs:
@@ -722,7 +1089,7 @@ items:
     summary: |-
       Converts a Roman numeral to Arabic.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: arabic(text)
     fullName: excel.Excel.Functions.arabic
     langs:
@@ -743,7 +1110,7 @@ items:
     summary: |-
       Returns the number of areas in a reference. An area is a range of contiguous cells or a single cell.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: areas(reference)
     fullName: excel.Excel.Functions.areas
     langs:
@@ -766,7 +1133,7 @@ items:
       sets (DBCS).
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: asc(text)
     fullName: excel.Excel.Functions.asc
     langs:
@@ -787,7 +1154,7 @@ items:
     summary: |-
       Returns the arcsine of a number in radians, in the range -Pi/2 to Pi/2.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: asin(number)
     fullName: excel.Excel.Functions.asin
     langs:
@@ -808,7 +1175,7 @@ items:
     summary: |-
       Returns the inverse hyperbolic sine of a number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: asinh(number)
     fullName: excel.Excel.Functions.asinh
     langs:
@@ -829,7 +1196,7 @@ items:
     summary: |-
       Returns the arctangent of a number in radians, in the range -Pi/2 to Pi/2.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: atan(number)
     fullName: excel.Excel.Functions.atan
     langs:
@@ -850,7 +1217,7 @@ items:
     summary: |-
       Returns the arctangent of the specified x- and y- coordinates, in radians between -Pi and Pi, excluding -Pi.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'atan2(xNum, yNum)'
     fullName: excel.Excel.Functions.atan2
     langs:
@@ -877,7 +1244,7 @@ items:
     summary: |-
       Returns the inverse hyperbolic tangent of a number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: atanh(number)
     fullName: excel.Excel.Functions.atanh
     langs:
@@ -900,7 +1267,7 @@ items:
       arrays, or references that contain numbers.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: aveDev(values)
     fullName: excel.Excel.Functions.aveDev
     langs:
@@ -927,7 +1294,7 @@ items:
       contain numbers.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: average(values)
     fullName: excel.Excel.Functions.average
     langs:
@@ -952,7 +1319,7 @@ items:
       evaluates as 1. Arguments can be numbers, names, arrays, or references.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: averageA(values)
     fullName: excel.Excel.Functions.averageA
     langs:
@@ -975,7 +1342,7 @@ items:
     summary: |-
       Finds average(arithmetic mean) for the cells specified by a given condition or criteria.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'averageIf(range, criteria, averageRange)'
     fullName: excel.Excel.Functions.averageIf
     langs:
@@ -1009,7 +1376,7 @@ items:
     summary: |-
       Finds average(arithmetic mean) for the cells specified by a given set of conditions or criteria.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'averageIfs(averageRange, values)'
     fullName: excel.Excel.Functions.averageIfs
     langs:
@@ -1040,7 +1407,7 @@ items:
     summary: |-
       Converts a number to text (baht).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: bahtText(number)
     fullName: excel.Excel.Functions.bahtText
     langs:
@@ -1063,7 +1430,7 @@ items:
     summary: |-
       Converts a number into a text representation with the given radix (base).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'base(number, radix, minLength)'
     fullName: excel.Excel.Functions.base
     langs:
@@ -1095,7 +1462,7 @@ items:
     summary: |-
       Returns the modified Bessel function In(x).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'besselI(x, n)'
     fullName: excel.Excel.Functions.besselI
     langs:
@@ -1122,7 +1489,7 @@ items:
     summary: |-
       Returns the Bessel function Jn(x).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'besselJ(x, n)'
     fullName: excel.Excel.Functions.besselJ
     langs:
@@ -1149,7 +1516,7 @@ items:
     summary: |-
       Returns the modified Bessel function Kn(x).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'besselK(x, n)'
     fullName: excel.Excel.Functions.besselK
     langs:
@@ -1176,7 +1543,7 @@ items:
     summary: |-
       Returns the Bessel function Yn(x).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'besselY(x, n)'
     fullName: excel.Excel.Functions.besselY
     langs:
@@ -1203,7 +1570,7 @@ items:
     summary: |-
       Returns the beta probability distribution function.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'beta_Dist(x, alpha, beta, cumulative, A, B)'
     fullName: excel.Excel.Functions.beta_Dist
     langs:
@@ -1251,7 +1618,7 @@ items:
     summary: |-
       Returns the inverse of the cumulative beta probability density function (BETA.DIST).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'beta_Inv(probability, alpha, beta, A, B)'
     fullName: excel.Excel.Functions.beta_Inv
     langs:
@@ -1293,7 +1660,7 @@ items:
     summary: |-
       Converts a binary number to decimal.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: bin2Dec(number)
     fullName: excel.Excel.Functions.bin2Dec
     langs:
@@ -1316,7 +1683,7 @@ items:
     summary: |-
       Converts a binary number to hexadecimal.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'bin2Hex(number, places)'
     fullName: excel.Excel.Functions.bin2Hex
     langs:
@@ -1344,7 +1711,7 @@ items:
     summary: |-
       Converts a binary number to octal.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'bin2Oct(number, places)'
     fullName: excel.Excel.Functions.bin2Oct
     langs:
@@ -1372,7 +1739,7 @@ items:
     summary: |-
       Returns the individual term binomial distribution probability.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'binom_Dist(numberS, trials, probabilityS, cumulative)'
     fullName: excel.Excel.Functions.binom_Dist
     langs:
@@ -1411,7 +1778,7 @@ items:
     summary: |-
       Returns the probability of a trial result using a binomial distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'binom_Dist_Range(trials, probabilityS, numberS, numberS2)'
     fullName: excel.Excel.Functions.binom_Dist_Range
     langs:
@@ -1452,7 +1819,7 @@ items:
       value.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'binom_Inv(trials, probabilityS, alpha)'
     fullName: excel.Excel.Functions.binom_Inv
     langs:
@@ -1484,7 +1851,7 @@ items:
     summary: |-
       Returns a bitwise 'And' of two numbers.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'bitand(number1, number2)'
     fullName: excel.Excel.Functions.bitand
     langs:
@@ -1511,7 +1878,7 @@ items:
     summary: |-
       Returns a number shifted left by shift\_amount bits.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'bitlshift(number, shiftAmount)'
     fullName: excel.Excel.Functions.bitlshift
     langs:
@@ -1538,7 +1905,7 @@ items:
     summary: |-
       Returns a bitwise 'Or' of two numbers.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'bitor(number1, number2)'
     fullName: excel.Excel.Functions.bitor
     langs:
@@ -1565,7 +1932,7 @@ items:
     summary: |-
       Returns a number shifted right by shift\_amount bits.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'bitrshift(number, shiftAmount)'
     fullName: excel.Excel.Functions.bitrshift
     langs:
@@ -1592,7 +1959,7 @@ items:
     summary: |-
       Returns a bitwise 'Exclusive Or' of two numbers.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'bitxor(number1, number2)'
     fullName: excel.Excel.Functions.bitxor
     langs:
@@ -1619,7 +1986,7 @@ items:
     summary: |-
       Rounds a number up, to the nearest integer or to the nearest multiple of significance.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'ceiling_Math(number, significance, mode)'
     fullName: excel.Excel.Functions.ceiling_Math
     langs:
@@ -1651,7 +2018,7 @@ items:
     summary: |-
       Rounds a number up, to the nearest integer or to the nearest multiple of significance.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'ceiling_Precise(number, significance)'
     fullName: excel.Excel.Functions.ceiling_Precise
     langs:
@@ -1678,7 +2045,7 @@ items:
     summary: |-
       Returns the character specified by the code number from the character set for your computer.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: char(number)
     fullName: excel.Excel.Functions.char
     langs:
@@ -1699,7 +2066,7 @@ items:
     summary: |-
       Returns the left-tailed probability of the chi-squared distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'chiSq_Dist(x, degFreedom, cumulative)'
     fullName: excel.Excel.Functions.chiSq_Dist
     langs:
@@ -1733,7 +2100,7 @@ items:
     summary: |-
       Returns the right-tailed probability of the chi-squared distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'chiSq_Dist_RT(x, degFreedom)'
     fullName: excel.Excel.Functions.chiSq_Dist_RT
     langs:
@@ -1760,7 +2127,7 @@ items:
     summary: |-
       Returns the inverse of the left-tailed probability of the chi-squared distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'chiSq_Inv(probability, degFreedom)'
     fullName: excel.Excel.Functions.chiSq_Inv
     langs:
@@ -1787,7 +2154,7 @@ items:
     summary: |-
       Returns the inverse of the right-tailed probability of the chi-squared distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'chiSq_Inv_RT(probability, degFreedom)'
     fullName: excel.Excel.Functions.chiSq_Inv_RT
     langs:
@@ -1814,7 +2181,7 @@ items:
     summary: |-
       Chooses a value or action to perform from a list of values, based on an index number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'choose(indexNum, values)'
     fullName: excel.Excel.Functions.choose
     langs:
@@ -1846,7 +2213,7 @@ items:
     summary: |-
       Removes all nonprintable characters from text.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: clean(text)
     fullName: excel.Excel.Functions.clean
     langs:
@@ -1867,7 +2234,7 @@ items:
     summary: |-
       Returns a numeric code for the first character in a text string, in the character set used by your computer.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: code(text)
     fullName: excel.Excel.Functions.code
     langs:
@@ -1888,7 +2255,7 @@ items:
     summary: |-
       Returns the number of columns in an array or reference.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: columns(array)
     fullName: excel.Excel.Functions.columns
     langs:
@@ -1909,7 +2276,7 @@ items:
     summary: |-
       Returns the number of combinations for a given number of items.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'combin(number, numberChosen)'
     fullName: excel.Excel.Functions.combin
     langs:
@@ -1936,7 +2303,7 @@ items:
     summary: |-
       Returns the number of combinations with repetitions for a given number of items.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'combina(number, numberChosen)'
     fullName: excel.Excel.Functions.combina
     langs:
@@ -1963,7 +2330,7 @@ items:
     summary: |-
       Converts real and imaginary coefficients into a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'complex(realNum, iNum, suffix)'
     fullName: excel.Excel.Functions.complex
     langs:
@@ -1996,7 +2363,7 @@ items:
     summary: |-
       Joins several text strings into one text string.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: concatenate(values)
     fullName: excel.Excel.Functions.concatenate
     langs:
@@ -2021,7 +2388,7 @@ items:
     summary: |-
       Returns the confidence interval for a population mean, using a normal distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'confidence_Norm(alpha, standardDev, size)'
     fullName: excel.Excel.Functions.confidence_Norm
     langs:
@@ -2055,7 +2422,7 @@ items:
     summary: |-
       Returns the confidence interval for a population mean, using a Student's T distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'confidence_T(alpha, standardDev, size)'
     fullName: excel.Excel.Functions.confidence_T
     langs:
@@ -2089,7 +2456,7 @@ items:
     summary: |-
       Converts a number from one measurement system to another.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'convert(number, fromUnit, toUnit)'
     fullName: excel.Excel.Functions.convert
     langs:
@@ -2122,7 +2489,7 @@ items:
     summary: |-
       Returns the cosine of an angle.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: cos(number)
     fullName: excel.Excel.Functions.cos
     langs:
@@ -2143,7 +2510,7 @@ items:
     summary: |-
       Returns the hyperbolic cosine of a number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: cosh(number)
     fullName: excel.Excel.Functions.cosh
     langs:
@@ -2164,7 +2531,7 @@ items:
     summary: |-
       Returns the cotangent of an angle.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: cot(number)
     fullName: excel.Excel.Functions.cot
     langs:
@@ -2185,7 +2552,7 @@ items:
     summary: |-
       Returns the hyperbolic cotangent of a number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: coth(number)
     fullName: excel.Excel.Functions.coth
     langs:
@@ -2206,7 +2573,7 @@ items:
     summary: |-
       Counts the number of cells in a range that contain numbers.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: count(values)
     fullName: excel.Excel.Functions.count
     langs:
@@ -2231,7 +2598,7 @@ items:
     summary: |-
       Counts the number of cells in a range that are not empty.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: countA(values)
     fullName: excel.Excel.Functions.countA
     langs:
@@ -2256,7 +2623,7 @@ items:
     summary: |-
       Counts the number of empty cells in a specified range of cells.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: countBlank(range)
     fullName: excel.Excel.Functions.countBlank
     langs:
@@ -2277,7 +2644,7 @@ items:
     summary: |-
       Counts the number of cells within a range that meet the given condition.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'countIf(range, criteria)'
     fullName: excel.Excel.Functions.countIf
     langs:
@@ -2304,7 +2671,7 @@ items:
     summary: |-
       Counts the number of cells specified by a given set of conditions or criteria.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: countIfs(values)
     fullName: excel.Excel.Functions.countIfs
     langs:
@@ -2330,7 +2697,7 @@ items:
     summary: |-
       Returns the number of days from the beginning of the coupon period to the settlement date.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'coupDayBs(settlement, maturity, frequency, basis)'
     fullName: excel.Excel.Functions.coupDayBs
     langs:
@@ -2368,7 +2735,7 @@ items:
     summary: |-
       Returns the number of days in the coupon period that contains the settlement date.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'coupDays(settlement, maturity, frequency, basis)'
     fullName: excel.Excel.Functions.coupDays
     langs:
@@ -2405,7 +2772,7 @@ items:
     summary: |-
       Returns the number of days from the settlement date to the next coupon date.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'coupDaysNc(settlement, maturity, frequency, basis)'
     fullName: excel.Excel.Functions.coupDaysNc
     langs:
@@ -2443,7 +2810,7 @@ items:
     summary: |-
       Returns the next coupon date after the settlement date.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'coupNcd(settlement, maturity, frequency, basis)'
     fullName: excel.Excel.Functions.coupNcd
     langs:
@@ -2480,7 +2847,7 @@ items:
     summary: |-
       Returns the number of coupons payable between the settlement date and maturity date.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'coupNum(settlement, maturity, frequency, basis)'
     fullName: excel.Excel.Functions.coupNum
     langs:
@@ -2517,7 +2884,7 @@ items:
     summary: |-
       Returns the previous coupon date before the settlement date.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'coupPcd(settlement, maturity, frequency, basis)'
     fullName: excel.Excel.Functions.coupPcd
     langs:
@@ -2554,7 +2921,7 @@ items:
     summary: |-
       Returns the cosecant of an angle.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: csc(number)
     fullName: excel.Excel.Functions.csc
     langs:
@@ -2575,7 +2942,7 @@ items:
     summary: |-
       Returns the hyperbolic cosecant of an angle.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: csch(number)
     fullName: excel.Excel.Functions.csch
     langs:
@@ -2596,7 +2963,7 @@ items:
     summary: |-
       Returns the cumulative interest paid between two periods.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'cumIPmt(rate, nper, pv, startPeriod, endPeriod, type)'
     fullName: excel.Excel.Functions.cumIPmt
     langs:
@@ -2643,7 +3010,7 @@ items:
     summary: |-
       Returns the cumulative principal paid on a loan between two periods.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'cumPrinc(rate, nper, pv, startPeriod, endPeriod, type)'
     fullName: excel.Excel.Functions.cumPrinc
     langs:
@@ -2690,7 +3057,7 @@ items:
     summary: |-
       Returns the number that represents the date in Microsoft Excel date-time code.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'date(year, month, day)'
     fullName: excel.Excel.Functions.date
     langs:
@@ -2722,7 +3089,7 @@ items:
     summary: |-
       Converts a date in the form of text to a number that represents the date in Microsoft Excel date-time code.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: datevalue(dateText)
     fullName: excel.Excel.Functions.datevalue
     langs:
@@ -2747,7 +3114,7 @@ items:
     summary: |-
       Averages the values in a column in a list or database that match conditions you specify.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'daverage(database, field, criteria)'
     fullName: excel.Excel.Functions.daverage
     langs:
@@ -2783,7 +3150,7 @@ items:
     summary: |-
       Returns the day of the month, a number from 1 to 31.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: day(serialNumber)
     fullName: excel.Excel.Functions.day
     langs:
@@ -2806,7 +3173,7 @@ items:
     summary: |-
       Returns the number of days between the two dates.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'days(endDate, startDate)'
     fullName: excel.Excel.Functions.days
     langs:
@@ -2833,7 +3200,7 @@ items:
     summary: |-
       Returns the number of days between two dates based on a 360-day year (twelve 30-day months).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'days360(startDate, endDate, method)'
     fullName: excel.Excel.Functions.days360
     langs:
@@ -2865,7 +3232,7 @@ items:
     summary: |-
       Returns the depreciation of an asset for a specified period using the fixed-declining balance method.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'db(cost, salvage, life, period, month)'
     fullName: excel.Excel.Functions.db
     langs:
@@ -2910,7 +3277,7 @@ items:
       with double-byte character sets (DBCS).
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: dbcs(text)
     fullName: excel.Excel.Functions.dbcs
     langs:
@@ -2933,7 +3300,7 @@ items:
       specify.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dcount(database, field, criteria)'
     fullName: excel.Excel.Functions.dcount
     langs:
@@ -2969,7 +3336,7 @@ items:
     summary: |-
       Counts nonblank cells in the field (column) of records in the database that match the conditions you specify.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dcountA(database, field, criteria)'
     fullName: excel.Excel.Functions.dcountA
     langs:
@@ -3007,7 +3374,7 @@ items:
       other method you specify.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'ddb(cost, salvage, life, period, factor)'
     fullName: excel.Excel.Functions.ddb
     langs:
@@ -3052,7 +3419,7 @@ items:
     summary: |-
       Converts a decimal number to binary.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dec2Bin(number, places)'
     fullName: excel.Excel.Functions.dec2Bin
     langs:
@@ -3080,7 +3447,7 @@ items:
     summary: |-
       Converts a decimal number to hexadecimal.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dec2Hex(number, places)'
     fullName: excel.Excel.Functions.dec2Hex
     langs:
@@ -3108,7 +3475,7 @@ items:
     summary: |-
       Converts a decimal number to octal.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dec2Oct(number, places)'
     fullName: excel.Excel.Functions.dec2Oct
     langs:
@@ -3136,7 +3503,7 @@ items:
     summary: |-
       Converts a text representation of a number in a given base into a decimal number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'decimal(number, radix)'
     fullName: excel.Excel.Functions.decimal
     langs:
@@ -3163,7 +3530,7 @@ items:
     summary: |-
       Converts radians to degrees.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: degrees(angle)
     fullName: excel.Excel.Functions.degrees
     langs:
@@ -3184,7 +3551,7 @@ items:
     summary: |-
       Tests whether two numbers are equal.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'delta(number1, number2)'
     fullName: excel.Excel.Functions.delta
     langs:
@@ -3212,7 +3579,7 @@ items:
     summary: |-
       Returns the sum of squares of deviations of data points from their sample mean.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: devSq(values)
     fullName: excel.Excel.Functions.devSq
     langs:
@@ -3237,7 +3604,7 @@ items:
     summary: |-
       Extracts from a database a single record that matches the conditions you specify.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dget(database, field, criteria)'
     fullName: excel.Excel.Functions.dget
     langs:
@@ -3273,7 +3640,7 @@ items:
     summary: |-
       Returns the discount rate for a security.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'disc(settlement, maturity, pr, redemption, basis)'
     fullName: excel.Excel.Functions.disc
     langs:
@@ -3315,7 +3682,7 @@ items:
     summary: |-
       Returns the largest number in the field (column) of records in the database that match the conditions you specify.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dmax(database, field, criteria)'
     fullName: excel.Excel.Functions.dmax
     langs:
@@ -3353,7 +3720,7 @@ items:
       specify.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dmin(database, field, criteria)'
     fullName: excel.Excel.Functions.dmin
     langs:
@@ -3389,7 +3756,7 @@ items:
     summary: |-
       Converts a number to text, using currency format.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dollar(number, decimals)'
     fullName: excel.Excel.Functions.dollar
     langs:
@@ -3418,7 +3785,7 @@ items:
     summary: |-
       Converts a dollar price, expressed as a fraction, into a dollar price, expressed as a decimal number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dollarDe(fractionalDollar, fraction)'
     fullName: excel.Excel.Functions.dollarDe
     langs:
@@ -3446,7 +3813,7 @@ items:
     summary: |-
       Converts a dollar price, expressed as a decimal number, into a dollar price, expressed as a fraction.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dollarFr(decimalDollar, fraction)'
     fullName: excel.Excel.Functions.dollarFr
     langs:
@@ -3474,7 +3841,7 @@ items:
     summary: |-
       Multiplies the values in the field (column) of records in the database that match the conditions you specify.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dproduct(database, field, criteria)'
     fullName: excel.Excel.Functions.dproduct
     langs:
@@ -3510,7 +3877,7 @@ items:
     summary: |-
       Estimates the standard deviation based on a sample from selected database entries.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dstDev(database, field, criteria)'
     fullName: excel.Excel.Functions.dstDev
     langs:
@@ -3546,7 +3913,7 @@ items:
     summary: |-
       Calculates the standard deviation based on the entire population of selected database entries.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dstDevP(database, field, criteria)'
     fullName: excel.Excel.Functions.dstDevP
     langs:
@@ -3582,7 +3949,7 @@ items:
     summary: |-
       Adds the numbers in the field (column) of records in the database that match the conditions you specify.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dsum(database, field, criteria)'
     fullName: excel.Excel.Functions.dsum
     langs:
@@ -3618,7 +3985,7 @@ items:
     summary: |-
       Returns the annual duration of a security with periodic interest payments.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'duration(settlement, maturity, coupon, yld, frequency, basis)'
     fullName: excel.Excel.Functions.duration
     langs:
@@ -3665,7 +4032,7 @@ items:
     summary: |-
       Estimates variance based on a sample from selected database entries.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dvar(database, field, criteria)'
     fullName: excel.Excel.Functions.dvar
     langs:
@@ -3701,7 +4068,7 @@ items:
     summary: |-
       Calculates variance based on the entire population of selected database entries.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'dvarP(database, field, criteria)'
     fullName: excel.Excel.Functions.dvarP
     langs:
@@ -3737,7 +4104,7 @@ items:
     summary: |-
       Rounds a number up, to the nearest integer or to the nearest multiple of significance.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'ecma_Ceiling(number, significance)'
     fullName: excel.Excel.Functions.ecma_Ceiling
     langs:
@@ -3764,7 +4131,7 @@ items:
     summary: |-
       Returns the serial number of the date that is the indicated number of months before or after the start date.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'edate(startDate, months)'
     fullName: excel.Excel.Functions.edate
     langs:
@@ -3792,7 +4159,7 @@ items:
     summary: |-
       Returns the effective annual interest rate.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'effect(nominalRate, npery)'
     fullName: excel.Excel.Functions.effect
     langs:
@@ -3820,7 +4187,7 @@ items:
     summary: |-
       Returns the serial number of the last day of the month before or after a specified number of months.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'eoMonth(startDate, months)'
     fullName: excel.Excel.Functions.eoMonth
     langs:
@@ -3848,7 +4215,7 @@ items:
     summary: |-
       Returns the error function.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'erf(lowerLimit, upperLimit)'
     fullName: excel.Excel.Functions.erf
     langs:
@@ -3876,7 +4243,7 @@ items:
     summary: |-
       Returns the error function.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: erf_Precise(X)
     fullName: excel.Excel.Functions.erf_Precise
     langs:
@@ -3899,7 +4266,7 @@ items:
     summary: |-
       Returns the complementary error function.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: erfC(x)
     fullName: excel.Excel.Functions.erfC
     langs:
@@ -3922,7 +4289,7 @@ items:
     summary: |-
       Returns the complementary error function.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: erfC_Precise(X)
     fullName: excel.Excel.Functions.erfC_Precise
     langs:
@@ -3945,7 +4312,7 @@ items:
     summary: |-
       Returns a number matching an error value.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: error_Type(errorVal)
     fullName: excel.Excel.Functions.error_Type
     langs:
@@ -3970,7 +4337,7 @@ items:
     summary: |-
       Rounds a positive number up and negative number down to the nearest even integer.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: even(number)
     fullName: excel.Excel.Functions.even
     langs:
@@ -3991,7 +4358,7 @@ items:
     summary: |-
       Checks whether two text strings are exactly the same, and returns TRUE or FALSE. EXACT is case-sensitive.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'exact(text1, text2)'
     fullName: excel.Excel.Functions.exact
     langs:
@@ -4018,7 +4385,7 @@ items:
     summary: |-
       Returns e raised to the power of a given number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: exp(number)
     fullName: excel.Excel.Functions.exp
     langs:
@@ -4041,7 +4408,7 @@ items:
     summary: |-
       Returns the exponential distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'expon_Dist(x, lambda, cumulative)'
     fullName: excel.Excel.Functions.expon_Dist
     langs:
@@ -4075,7 +4442,7 @@ items:
     summary: |-
       Returns the (left-tailed) F probability distribution (degree of diversity) for two data sets.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'f_Dist(x, degFreedom1, degFreedom2, cumulative)'
     fullName: excel.Excel.Functions.f_Dist
     langs:
@@ -4114,7 +4481,7 @@ items:
     summary: |-
       Returns the (right-tailed) F probability distribution (degree of diversity) for two data sets.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'f_Dist_RT(x, degFreedom1, degFreedom2)'
     fullName: excel.Excel.Functions.f_Dist_RT
     langs:
@@ -4146,7 +4513,7 @@ items:
     summary: |-
       Returns the inverse of the (left-tailed) F probability distribution: if p = F.DIST(x,...), then F.INV(p,...) = x.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'f_Inv(probability, degFreedom1, degFreedom2)'
     fullName: excel.Excel.Functions.f_Inv
     langs:
@@ -4180,7 +4547,7 @@ items:
       F.INV.RT(p,...) = x.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'f_Inv_RT(probability, degFreedom1, degFreedom2)'
     fullName: excel.Excel.Functions.f_Inv_RT
     langs:
@@ -4212,7 +4579,7 @@ items:
     summary: |-
       Returns the factorial of a number, equal to 1\*2\*3\*...\* Number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: fact(number)
     fullName: excel.Excel.Functions.fact
     langs:
@@ -4233,7 +4600,7 @@ items:
     summary: |-
       Returns the double factorial of a number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: factDouble(number)
     fullName: excel.Excel.Functions.factDouble
     langs:
@@ -4256,7 +4623,7 @@ items:
     summary: |-
       Returns the logical value FALSE.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: false()
     fullName: excel.Excel.Functions.false
     langs:
@@ -4272,7 +4639,7 @@ items:
     summary: |-
       Returns the starting position of one text string within another text string. FIND is case-sensitive.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'find(findText, withinText, startNum)'
     fullName: excel.Excel.Functions.find
     langs:
@@ -4310,7 +4677,7 @@ items:
       double-byte character sets (DBCS).
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'findB(findText, withinText, startNum)'
     fullName: excel.Excel.Functions.findB
     langs:
@@ -4342,7 +4709,7 @@ items:
     summary: |-
       Returns the Fisher transformation.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: fisher(x)
     fullName: excel.Excel.Functions.fisher
     langs:
@@ -4363,7 +4730,7 @@ items:
     summary: |-
       Returns the inverse of the Fisher transformation: if y = FISHER(x), then FISHERINV(y) = x.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: fisherInv(y)
     fullName: excel.Excel.Functions.fisherInv
     langs:
@@ -4384,7 +4751,7 @@ items:
     summary: |-
       Rounds a number to the specified number of decimals and returns the result as text with or without commas.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'fixed(number, decimals, noCommas)'
     fullName: excel.Excel.Functions.fixed
     langs:
@@ -4418,7 +4785,7 @@ items:
     summary: |-
       Rounds a number down, to the nearest integer or to the nearest multiple of significance.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'floor_Math(number, significance, mode)'
     fullName: excel.Excel.Functions.floor_Math
     langs:
@@ -4450,7 +4817,7 @@ items:
     summary: |-
       Rounds a number down, to the nearest integer or to the nearest multiple of significance.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'floor_Precise(number, significance)'
     fullName: excel.Excel.Functions.floor_Precise
     langs:
@@ -4477,7 +4844,7 @@ items:
     summary: |-
       Returns the future value of an investment based on periodic, constant payments and a constant interest rate.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'fv(rate, nper, pmt, pv, type)'
     fullName: excel.Excel.Functions.fv
     langs:
@@ -4522,7 +4889,7 @@ items:
     summary: |-
       Returns the future value of an initial principal after applying a series of compound interest rates.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'fvschedule(principal, schedule)'
     fullName: excel.Excel.Functions.fvschedule
     langs:
@@ -4550,7 +4917,7 @@ items:
     summary: |-
       Returns the Gamma function value.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: gamma(x)
     fullName: excel.Excel.Functions.gamma
     langs:
@@ -4571,7 +4938,7 @@ items:
     summary: |-
       Returns the gamma distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'gamma_Dist(x, alpha, beta, cumulative)'
     fullName: excel.Excel.Functions.gamma_Dist
     langs:
@@ -4612,7 +4979,7 @@ items:
     summary: |-
       Returns the inverse of the gamma cumulative distribution: if p = GAMMA.DIST(x,...), then GAMMA.INV(p,...) = x.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'gamma_Inv(probability, alpha, beta)'
     fullName: excel.Excel.Functions.gamma_Inv
     langs:
@@ -4646,7 +5013,7 @@ items:
     summary: |-
       Returns the natural logarithm of the gamma function.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: gammaLn(x)
     fullName: excel.Excel.Functions.gammaLn
     langs:
@@ -4667,7 +5034,7 @@ items:
     summary: |-
       Returns the natural logarithm of the gamma function.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: gammaLn_Precise(x)
     fullName: excel.Excel.Functions.gammaLn_Precise
     langs:
@@ -4690,7 +5057,7 @@ items:
     summary: |-
       Returns 0.5 less than the standard normal cumulative distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: gauss(x)
     fullName: excel.Excel.Functions.gauss
     langs:
@@ -4711,7 +5078,7 @@ items:
     summary: |-
       Returns the greatest common divisor.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: gcd(values)
     fullName: excel.Excel.Functions.gcd
     langs:
@@ -4734,7 +5101,7 @@ items:
     summary: |-
       Returns the geometric mean of an array or range of positive numeric data.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: geoMean(values)
     fullName: excel.Excel.Functions.geoMean
     langs:
@@ -4759,7 +5126,7 @@ items:
     summary: |-
       Tests whether a number is greater than a threshold value.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'geStep(number, step)'
     fullName: excel.Excel.Functions.geStep
     langs:
@@ -4787,7 +5154,7 @@ items:
     summary: |-
       Returns the harmonic mean of a data set of positive numbers: the reciprocal of the arithmetic mean of reciprocals.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: harMean(values)
     fullName: excel.Excel.Functions.harMean
     langs:
@@ -4812,7 +5179,7 @@ items:
     summary: |-
       Converts a Hexadecimal number to binary.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'hex2Bin(number, places)'
     fullName: excel.Excel.Functions.hex2Bin
     langs:
@@ -4840,7 +5207,7 @@ items:
     summary: |-
       Converts a hexadecimal number to decimal.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: hex2Dec(number)
     fullName: excel.Excel.Functions.hex2Dec
     langs:
@@ -4863,7 +5230,7 @@ items:
     summary: |-
       Converts a hexadecimal number to octal.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'hex2Oct(number, places)'
     fullName: excel.Excel.Functions.hex2Oct
     langs:
@@ -4893,7 +5260,7 @@ items:
       you specify.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'hlookup(lookupValue, tableArray, rowIndexNum, rangeLookup)'
     fullName: excel.Excel.Functions.hlookup
     langs:
@@ -4936,7 +5303,7 @@ items:
     summary: |-
       Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: hour(serialNumber)
     fullName: excel.Excel.Functions.hour
     langs:
@@ -4961,7 +5328,7 @@ items:
     summary: |-
       Creates a shortcut or jump that opens a document stored on your hard drive, a network server, or on the Internet.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'hyperlink(linkLocation, friendlyName)'
     fullName: excel.Excel.Functions.hyperlink
     langs:
@@ -4991,7 +5358,7 @@ items:
     summary: |-
       Returns the hypergeometric distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'hypGeom_Dist(sampleS, numberSample, populationS, numberPop, cumulative)'
     fullName: excel.Excel.Functions.hypGeom_Dist
     langs:
@@ -5035,7 +5402,7 @@ items:
     summary: |-
       Checks whether a condition is met, and returns one value if TRUE, and another value if FALSE.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'if(logicalTest, valueIfTrue, valueIfFalse)'
     fullName: excel.Excel.Functions.if
     langs:
@@ -5070,7 +5437,7 @@ items:
     summary: |-
       Returns the absolute value (modulus) of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imAbs(inumber)
     fullName: excel.Excel.Functions.imAbs
     langs:
@@ -5093,7 +5460,7 @@ items:
     summary: |-
       Returns the imaginary coefficient of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imaginary(inumber)
     fullName: excel.Excel.Functions.imaginary
     langs:
@@ -5116,7 +5483,7 @@ items:
     summary: |-
       Returns the argument q, an angle expressed in radians.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imArgument(inumber)
     fullName: excel.Excel.Functions.imArgument
     langs:
@@ -5139,7 +5506,7 @@ items:
     summary: |-
       Returns the complex conjugate of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imConjugate(inumber)
     fullName: excel.Excel.Functions.imConjugate
     langs:
@@ -5162,7 +5529,7 @@ items:
     summary: |-
       Returns the cosine of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imCos(inumber)
     fullName: excel.Excel.Functions.imCos
     langs:
@@ -5185,7 +5552,7 @@ items:
     summary: |-
       Returns the hyperbolic cosine of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imCosh(inumber)
     fullName: excel.Excel.Functions.imCosh
     langs:
@@ -5208,7 +5575,7 @@ items:
     summary: |-
       Returns the cotangent of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imCot(inumber)
     fullName: excel.Excel.Functions.imCot
     langs:
@@ -5231,7 +5598,7 @@ items:
     summary: |-
       Returns the cosecant of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imCsc(inumber)
     fullName: excel.Excel.Functions.imCsc
     langs:
@@ -5254,7 +5621,7 @@ items:
     summary: |-
       Returns the hyperbolic cosecant of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imCsch(inumber)
     fullName: excel.Excel.Functions.imCsch
     langs:
@@ -5277,7 +5644,7 @@ items:
     summary: |-
       Returns the quotient of two complex numbers.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'imDiv(inumber1, inumber2)'
     fullName: excel.Excel.Functions.imDiv
     langs:
@@ -5305,7 +5672,7 @@ items:
     summary: |-
       Returns the exponential of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imExp(inumber)
     fullName: excel.Excel.Functions.imExp
     langs:
@@ -5328,7 +5695,7 @@ items:
     summary: |-
       Returns the natural logarithm of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imLn(inumber)
     fullName: excel.Excel.Functions.imLn
     langs:
@@ -5351,7 +5718,7 @@ items:
     summary: |-
       Returns the base-10 logarithm of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imLog10(inumber)
     fullName: excel.Excel.Functions.imLog10
     langs:
@@ -5374,7 +5741,7 @@ items:
     summary: |-
       Returns the base-2 logarithm of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imLog2(inumber)
     fullName: excel.Excel.Functions.imLog2
     langs:
@@ -5397,7 +5764,7 @@ items:
     summary: |-
       Returns a complex number raised to an integer power.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'imPower(inumber, number)'
     fullName: excel.Excel.Functions.imPower
     langs:
@@ -5425,7 +5792,7 @@ items:
     summary: |-
       Returns the product of 1 to 255 complex numbers.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imProduct(values)
     fullName: excel.Excel.Functions.imProduct
     langs:
@@ -5448,7 +5815,7 @@ items:
     summary: |-
       Returns the real coefficient of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imReal(inumber)
     fullName: excel.Excel.Functions.imReal
     langs:
@@ -5471,7 +5838,7 @@ items:
     summary: |-
       Returns the secant of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imSec(inumber)
     fullName: excel.Excel.Functions.imSec
     langs:
@@ -5494,7 +5861,7 @@ items:
     summary: |-
       Returns the hyperbolic secant of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imSech(inumber)
     fullName: excel.Excel.Functions.imSech
     langs:
@@ -5517,7 +5884,7 @@ items:
     summary: |-
       Returns the sine of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imSin(inumber)
     fullName: excel.Excel.Functions.imSin
     langs:
@@ -5540,7 +5907,7 @@ items:
     summary: |-
       Returns the hyperbolic sine of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imSinh(inumber)
     fullName: excel.Excel.Functions.imSinh
     langs:
@@ -5563,7 +5930,7 @@ items:
     summary: |-
       Returns the square root of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imSqrt(inumber)
     fullName: excel.Excel.Functions.imSqrt
     langs:
@@ -5586,7 +5953,7 @@ items:
     summary: |-
       Returns the difference of two complex numbers.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'imSub(inumber1, inumber2)'
     fullName: excel.Excel.Functions.imSub
     langs:
@@ -5614,7 +5981,7 @@ items:
     summary: |-
       Returns the sum of complex numbers.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imSum(values)
     fullName: excel.Excel.Functions.imSum
     langs:
@@ -5637,7 +6004,7 @@ items:
     summary: |-
       Returns the tangent of a complex number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: imTan(inumber)
     fullName: excel.Excel.Functions.imTan
     langs:
@@ -5660,7 +6027,7 @@ items:
     summary: |-
       Rounds a number down to the nearest integer.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: int(number)
     fullName: excel.Excel.Functions.int
     langs:
@@ -5681,7 +6048,7 @@ items:
     summary: |-
       Returns the interest rate for a fully invested security.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'intRate(settlement, maturity, investment, redemption, basis)'
     fullName: excel.Excel.Functions.intRate
     langs:
@@ -5726,7 +6093,7 @@ items:
       constant interest rate.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'ipmt(rate, per, nper, pv, fv, type)'
     fullName: excel.Excel.Functions.ipmt
     langs:
@@ -5776,7 +6143,7 @@ items:
     summary: |-
       Returns the internal rate of return for a series of cash flows.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'irr(values, guess)'
     fullName: excel.Excel.Functions.irr
     langs:
@@ -5807,7 +6174,7 @@ items:
       returns TRUE or FALSE.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: isErr(value)
     fullName: excel.Excel.Functions.isErr
     langs:
@@ -5834,7 +6201,7 @@ items:
       TRUE or FALSE.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: isError(value)
     fullName: excel.Excel.Functions.isError
     langs:
@@ -5859,7 +6226,7 @@ items:
     summary: |-
       Returns TRUE if the number is even.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: isEven(number)
     fullName: excel.Excel.Functions.isEven
     langs:
@@ -5882,7 +6249,7 @@ items:
     summary: |-
       Checks whether a reference is to a cell containing a formula, and returns TRUE or FALSE.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: isFormula(reference)
     fullName: excel.Excel.Functions.isFormula
     langs:
@@ -5905,7 +6272,7 @@ items:
     summary: |-
       Checks whether a value is a logical value (TRUE or FALSE), and returns TRUE or FALSE.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: isLogical(value)
     fullName: excel.Excel.Functions.isLogical
     langs:
@@ -5930,7 +6297,7 @@ items:
     summary: |-
       Checks whether a value is \#N/A, and returns TRUE or FALSE.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: isNA(value)
     fullName: excel.Excel.Functions.isNA
     langs:
@@ -5955,7 +6322,7 @@ items:
     summary: |-
       Checks whether a value is not text (blank cells are not text), and returns TRUE or FALSE.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: isNonText(value)
     fullName: excel.Excel.Functions.isNonText
     langs:
@@ -5978,7 +6345,7 @@ items:
     summary: |-
       Checks whether a value is a number, and returns TRUE or FALSE.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: isNumber(value)
     fullName: excel.Excel.Functions.isNumber
     langs:
@@ -6003,7 +6370,7 @@ items:
     summary: |-
       Rounds a number up, to the nearest integer or to the nearest multiple of significance.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'iso_Ceiling(number, significance)'
     fullName: excel.Excel.Functions.iso_Ceiling
     langs:
@@ -6030,7 +6397,7 @@ items:
     summary: |-
       Returns TRUE if the number is odd.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: isOdd(number)
     fullName: excel.Excel.Functions.isOdd
     langs:
@@ -6053,7 +6420,7 @@ items:
     summary: |-
       Returns the ISO week number in the year for a given date.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: isoWeekNum(date)
     fullName: excel.Excel.Functions.isoWeekNum
     langs:
@@ -6076,7 +6443,7 @@ items:
     summary: |-
       Returns the interest paid during a specific period of an investment.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'ispmt(rate, per, nper, pv)'
     fullName: excel.Excel.Functions.ispmt
     langs:
@@ -6113,7 +6480,7 @@ items:
     summary: |-
       Checks whether a value is a reference, and returns TRUE or FALSE.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: isref(value)
     fullName: excel.Excel.Functions.isref
     langs:
@@ -6138,7 +6505,7 @@ items:
     summary: |-
       Checks whether a value is text, and returns TRUE or FALSE.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: isText(value)
     fullName: excel.Excel.Functions.isText
     langs:
@@ -6163,7 +6530,7 @@ items:
     summary: |-
       Returns the kurtosis of a data set.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: kurt(values)
     fullName: excel.Excel.Functions.kurt
     langs:
@@ -6188,7 +6555,7 @@ items:
     summary: |-
       Returns the k-th largest value in a data set. For example, the fifth largest number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'large(array, k)'
     fullName: excel.Excel.Functions.large
     langs:
@@ -6215,7 +6582,7 @@ items:
     summary: |-
       Returns the least common multiple.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: lcm(values)
     fullName: excel.Excel.Functions.lcm
     langs:
@@ -6238,7 +6605,7 @@ items:
     summary: |-
       Returns the specified number of characters from the start of a text string.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'left(text, numChars)'
     fullName: excel.Excel.Functions.left
     langs:
@@ -6267,7 +6634,7 @@ items:
       (DBCS).
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'leftb(text, numBytes)'
     fullName: excel.Excel.Functions.leftb
     langs:
@@ -6294,7 +6661,7 @@ items:
     summary: |-
       Returns the number of characters in a text string.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: len(text)
     fullName: excel.Excel.Functions.len
     langs:
@@ -6315,7 +6682,7 @@ items:
     summary: |-
       Returns the number of characters in a text string. Use with double-byte character sets (DBCS).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: lenb(text)
     fullName: excel.Excel.Functions.lenb
     langs:
@@ -6336,7 +6703,7 @@ items:
     summary: |-
       Returns the natural logarithm of a number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: ln(number)
     fullName: excel.Excel.Functions.ln
     langs:
@@ -6357,7 +6724,7 @@ items:
     summary: |-
       Returns the logarithm of a number to the base you specify.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'log(number, base)'
     fullName: excel.Excel.Functions.log
     langs:
@@ -6384,7 +6751,7 @@ items:
     summary: |-
       Returns the base-10 logarithm of a number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: log10(number)
     fullName: excel.Excel.Functions.log10
     langs:
@@ -6407,7 +6774,7 @@ items:
       Standard\_dev.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'logNorm_Dist(x, mean, standardDev, cumulative)'
     fullName: excel.Excel.Functions.logNorm_Dist
     langs:
@@ -6448,7 +6815,7 @@ items:
       with parameters Mean and Standard\_dev.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'logNorm_Inv(probability, mean, standardDev)'
     fullName: excel.Excel.Functions.logNorm_Inv
     langs:
@@ -6480,7 +6847,7 @@ items:
     summary: |-
       Looks up a value either from a one-row or one-column range or from an array. Provided for backward compatibility.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'lookup(lookupValue, lookupVector, resultVector)'
     fullName: excel.Excel.Functions.lookup
     langs:
@@ -6516,7 +6883,7 @@ items:
     summary: |-
       Converts all letters in a text string to lowercase.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: lower(text)
     fullName: excel.Excel.Functions.lower
     langs:
@@ -6537,7 +6904,7 @@ items:
     summary: |-
       Returns the relative position of an item in an array that matches a specified value in a specified order.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'match(lookupValue, lookupArray, matchType)'
     fullName: excel.Excel.Functions.match
     langs:
@@ -6573,7 +6940,7 @@ items:
     summary: |-
       Returns the largest value in a set of values. Ignores logical values and text.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: max(values)
     fullName: excel.Excel.Functions.max
     langs:
@@ -6598,7 +6965,7 @@ items:
     summary: |-
       Returns the largest value in a set of values. Does not ignore logical values and text.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: maxA(values)
     fullName: excel.Excel.Functions.maxA
     langs:
@@ -6623,7 +6990,7 @@ items:
     summary: |-
       Returns the Macauley modified duration for a security with an assumed par value of $100.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'mduration(settlement, maturity, coupon, yld, frequency, basis)'
     fullName: excel.Excel.Functions.mduration
     langs:
@@ -6671,7 +7038,7 @@ items:
     summary: |-
       Returns the median, or the number in the middle of the set of given numbers.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: median(values)
     fullName: excel.Excel.Functions.median
     langs:
@@ -6696,7 +7063,7 @@ items:
     summary: |-
       Returns the characters from the middle of a text string, given a starting position and length.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'mid(text, startNum, numChars)'
     fullName: excel.Excel.Functions.mid
     langs:
@@ -6730,7 +7097,7 @@ items:
       character sets (DBCS).
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'midb(text, startNum, numBytes)'
     fullName: excel.Excel.Functions.midb
     langs:
@@ -6762,7 +7129,7 @@ items:
     summary: |-
       Returns the smallest number in a set of values. Ignores logical values and text.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: min(values)
     fullName: excel.Excel.Functions.min
     langs:
@@ -6787,7 +7154,7 @@ items:
     summary: |-
       Returns the smallest value in a set of values. Does not ignore logical values and text.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: minA(values)
     fullName: excel.Excel.Functions.minA
     langs:
@@ -6812,7 +7179,7 @@ items:
     summary: |-
       Returns the minute, a number from 0 to 59.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: minute(serialNumber)
     fullName: excel.Excel.Functions.minute
     langs:
@@ -6839,7 +7206,7 @@ items:
       interest on reinvestment of cash.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'mirr(values, financeRate, reinvestRate)'
     fullName: excel.Excel.Functions.mirr
     langs:
@@ -6873,7 +7240,7 @@ items:
     summary: |-
       Returns the remainder after a number is divided by a divisor.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'mod(number, divisor)'
     fullName: excel.Excel.Functions.mod
     langs:
@@ -6900,7 +7267,7 @@ items:
     summary: |-
       Returns the month, a number from 1 (January) to 12 (December).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: month(serialNumber)
     fullName: excel.Excel.Functions.month
     langs:
@@ -6923,7 +7290,7 @@ items:
     summary: |-
       Returns a number rounded to the desired multiple.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'mround(number, multiple)'
     fullName: excel.Excel.Functions.mround
     langs:
@@ -6951,7 +7318,7 @@ items:
     summary: |-
       Returns the multinomial of a set of numbers.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: multiNomial(values)
     fullName: excel.Excel.Functions.multiNomial
     langs:
@@ -6974,7 +7341,7 @@ items:
     summary: |-
       Converts non-number value to a number, dates to serial numbers, TRUE to 1, anything else to 0 (zero).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: n(value)
     fullName: excel.Excel.Functions.n
     langs:
@@ -6997,7 +7364,7 @@ items:
     summary: |-
       Returns the error value \#N/A (value not available).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: na()
     fullName: excel.Excel.Functions.na
     langs:
@@ -7015,7 +7382,7 @@ items:
       Number\_s-th success, with Probability\_s probability of a success.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'negBinom_Dist(numberF, numberS, probabilityS, cumulative)'
     fullName: excel.Excel.Functions.negBinom_Dist
     langs:
@@ -7054,7 +7421,7 @@ items:
     summary: |-
       Returns the number of whole workdays between two dates.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'networkDays(startDate, endDate, holidays)'
     fullName: excel.Excel.Functions.networkDays
     langs:
@@ -7089,7 +7456,7 @@ items:
     summary: |-
       Returns the number of whole workdays between two dates with custom weekend parameters.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'networkDays_Intl(startDate, endDate, weekend, holidays)'
     fullName: excel.Excel.Functions.networkDays_Intl
     langs:
@@ -7129,7 +7496,7 @@ items:
     summary: |-
       Returns the annual nominal interest rate.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'nominal(effectRate, npery)'
     fullName: excel.Excel.Functions.nominal
     langs:
@@ -7157,7 +7524,7 @@ items:
     summary: |-
       Returns the normal distribution for the specified mean and standard deviation.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'norm_Dist(x, mean, standardDev, cumulative)'
     fullName: excel.Excel.Functions.norm_Dist
     langs:
@@ -7196,7 +7563,7 @@ items:
     summary: |-
       Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'norm_Inv(probability, mean, standardDev)'
     fullName: excel.Excel.Functions.norm_Inv
     langs:
@@ -7228,7 +7595,7 @@ items:
     summary: |-
       Returns the standard normal distribution (has a mean of zero and a standard deviation of one).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'norm_S_Dist(z, cumulative)'
     fullName: excel.Excel.Functions.norm_S_Dist
     langs:
@@ -7259,7 +7626,7 @@ items:
       one).
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: norm_S_Inv(probability)
     fullName: excel.Excel.Functions.norm_S_Inv
     langs:
@@ -7282,7 +7649,7 @@ items:
     summary: |-
       Changes FALSE to TRUE, or TRUE to FALSE.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: not(logical)
     fullName: excel.Excel.Functions.not
     langs:
@@ -7303,7 +7670,7 @@ items:
     summary: |-
       Returns the current date and time formatted as a date and time.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: now()
     fullName: excel.Excel.Functions.now
     langs:
@@ -7319,7 +7686,7 @@ items:
     summary: |-
       Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'nper(rate, pmt, pv, fv, type)'
     fullName: excel.Excel.Functions.nper
     langs:
@@ -7366,7 +7733,7 @@ items:
       values) and income (positive values).
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'npv(rate, values)'
     fullName: excel.Excel.Functions.npv
     langs:
@@ -7395,7 +7762,7 @@ items:
     summary: |-
       Converts text to number in a locale-independent manner.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'numberValue(text, decimalSeparator, groupSeparator)'
     fullName: excel.Excel.Functions.numberValue
     langs:
@@ -7427,7 +7794,7 @@ items:
     summary: |-
       Converts an octal number to binary.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'oct2Bin(number, places)'
     fullName: excel.Excel.Functions.oct2Bin
     langs:
@@ -7455,7 +7822,7 @@ items:
     summary: |-
       Converts an octal number to decimal.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: oct2Dec(number)
     fullName: excel.Excel.Functions.oct2Dec
     langs:
@@ -7478,7 +7845,7 @@ items:
     summary: |-
       Converts an octal number to hexadecimal.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'oct2Hex(number, places)'
     fullName: excel.Excel.Functions.oct2Hex
     langs:
@@ -7506,7 +7873,7 @@ items:
     summary: |-
       Rounds a positive number up and negative number down to the nearest odd integer.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: odd(number)
     fullName: excel.Excel.Functions.odd
     langs:
@@ -7527,7 +7894,7 @@ items:
     summary: |-
       Returns the price per $100 face value of a security with an odd first period.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'oddFPrice(settlement, maturity, issue, firstCoupon, rate, yld, redemption, frequency, basis)'
     fullName: excel.Excel.Functions.oddFPrice
     langs:
@@ -7590,7 +7957,7 @@ items:
     summary: |-
       Returns the yield of a security with an odd first period.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'oddFYield(settlement, maturity, issue, firstCoupon, rate, pr, redemption, frequency, basis)'
     fullName: excel.Excel.Functions.oddFYield
     langs:
@@ -7653,7 +8020,7 @@ items:
     summary: |-
       Returns the price per $100 face value of a security with an odd last period.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'oddLPrice(settlement, maturity, lastInterest, rate, yld, redemption, frequency, basis)'
     fullName: excel.Excel.Functions.oddLPrice
     langs:
@@ -7711,7 +8078,7 @@ items:
     summary: |-
       Returns the yield of a security with an odd last period.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'oddLYield(settlement, maturity, lastInterest, rate, pr, redemption, frequency, basis)'
     fullName: excel.Excel.Functions.oddLYield
     langs:
@@ -7771,7 +8138,7 @@ items:
       FALSE.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: or(values)
     fullName: excel.Excel.Functions.or
     langs:
@@ -7796,7 +8163,7 @@ items:
     summary: |-
       Returns the number of periods required by an investment to reach a specified value.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'pduration(rate, pv, fv)'
     fullName: excel.Excel.Functions.pduration
     langs:
@@ -7828,7 +8195,7 @@ items:
     summary: |-
       Returns the k-th percentile of values in a range, where k is in the range 0..1, exclusive.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'percentile_Exc(array, k)'
     fullName: excel.Excel.Functions.percentile_Exc
     langs:
@@ -7855,7 +8222,7 @@ items:
     summary: |-
       Returns the k-th percentile of values in a range, where k is in the range 0..1, inclusive.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'percentile_Inc(array, k)'
     fullName: excel.Excel.Functions.percentile_Inc
     langs:
@@ -7884,7 +8251,7 @@ items:
       data set.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'percentRank_Exc(array, x, significance)'
     fullName: excel.Excel.Functions.percentRank_Exc
     langs:
@@ -7920,7 +8287,7 @@ items:
       data set.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'percentRank_Inc(array, x, significance)'
     fullName: excel.Excel.Functions.percentRank_Inc
     langs:
@@ -7954,7 +8321,7 @@ items:
     summary: |-
       Returns the number of permutations for a given number of objects that can be selected from the total objects.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'permut(number, numberChosen)'
     fullName: excel.Excel.Functions.permut
     langs:
@@ -7983,7 +8350,7 @@ items:
       total objects.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'permutationa(number, numberChosen)'
     fullName: excel.Excel.Functions.permutationa
     langs:
@@ -8010,7 +8377,7 @@ items:
     summary: |-
       Returns the value of the density function for a standard normal distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: phi(x)
     fullName: excel.Excel.Functions.phi
     langs:
@@ -8031,7 +8398,7 @@ items:
     summary: |-
       Returns the value of Pi, 3.14159265358979, accurate to 15 digits.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: pi()
     fullName: excel.Excel.Functions.pi
     langs:
@@ -8047,7 +8414,7 @@ items:
     summary: |-
       Calculates the payment for a loan based on constant payments and a constant interest rate.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'pmt(rate, nper, pv, fv, type)'
     fullName: excel.Excel.Functions.pmt
     langs:
@@ -8092,7 +8459,7 @@ items:
     summary: |-
       Returns the Poisson distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'poisson_Dist(x, mean, cumulative)'
     fullName: excel.Excel.Functions.poisson_Dist
     langs:
@@ -8126,7 +8493,7 @@ items:
     summary: |-
       Returns the result of a number raised to a power.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'power(number, power)'
     fullName: excel.Excel.Functions.power
     langs:
@@ -8155,7 +8522,7 @@ items:
       interest rate.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'ppmt(rate, per, nper, pv, fv, type)'
     fullName: excel.Excel.Functions.ppmt
     langs:
@@ -8203,7 +8570,7 @@ items:
     summary: |-
       Returns the price per $100 face value of a security that pays periodic interest.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'price(settlement, maturity, rate, yld, redemption, frequency, basis)'
     fullName: excel.Excel.Functions.price
     langs:
@@ -8255,7 +8622,7 @@ items:
     summary: |-
       Returns the price per $100 face value of a discounted security.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'priceDisc(settlement, maturity, discount, redemption, basis)'
     fullName: excel.Excel.Functions.priceDisc
     langs:
@@ -8298,7 +8665,7 @@ items:
     summary: |-
       Returns the price per $100 face value of a security that pays interest at maturity.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'priceMat(settlement, maturity, issue, rate, yld, basis)'
     fullName: excel.Excel.Functions.priceMat
     langs:
@@ -8345,7 +8712,7 @@ items:
     summary: |-
       Multiplies all the numbers given as arguments.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: product(values)
     fullName: excel.Excel.Functions.product
     langs:
@@ -8372,7 +8739,7 @@ items:
       lowercase.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: proper(text)
     fullName: excel.Excel.Functions.proper
     langs:
@@ -8395,7 +8762,7 @@ items:
     summary: |-
       Returns the present value of an investment: the total amount that a series of future payments is worth now.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'pv(rate, nper, pmt, fv, type)'
     fullName: excel.Excel.Functions.pv
     langs:
@@ -8438,7 +8805,7 @@ items:
     summary: |-
       Returns the quartile of a data set, based on percentile values from 0..1, exclusive.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'quartile_Exc(array, quart)'
     fullName: excel.Excel.Functions.quartile_Exc
     langs:
@@ -8465,7 +8832,7 @@ items:
     summary: |-
       Returns the quartile of a data set, based on percentile values from 0..1, inclusive.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'quartile_Inc(array, quart)'
     fullName: excel.Excel.Functions.quartile_Inc
     langs:
@@ -8492,7 +8859,7 @@ items:
     summary: |-
       Returns the integer portion of a division.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'quotient(numerator, denominator)'
     fullName: excel.Excel.Functions.quotient
     langs:
@@ -8520,7 +8887,7 @@ items:
     summary: |-
       Converts degrees to radians.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: radians(angle)
     fullName: excel.Excel.Functions.radians
     langs:
@@ -8541,7 +8908,7 @@ items:
     summary: |-
       Returns a random number greater than or equal to 0 and less than 1, evenly distributed (changes on recalculation).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: rand()
     fullName: excel.Excel.Functions.rand
     langs:
@@ -8557,7 +8924,7 @@ items:
     summary: |-
       Returns a random number between the numbers you specify.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'randBetween(bottom, top)'
     fullName: excel.Excel.Functions.randBetween
     langs:
@@ -8587,7 +8954,7 @@ items:
       value has the same rank, the average rank is returned.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'rank_Avg(number, ref, order)'
     fullName: excel.Excel.Functions.rank_Avg
     langs:
@@ -8623,7 +8990,7 @@ items:
       value has the same rank, the top rank of that set of values is returned.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'rank_Eq(number, ref, order)'
     fullName: excel.Excel.Functions.rank_Eq
     langs:
@@ -8659,7 +9026,7 @@ items:
       6% APR.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'rate(nper, pmt, pv, fv, type, guess)'
     fullName: excel.Excel.Functions.rate
     langs:
@@ -8709,7 +9076,7 @@ items:
     summary: |-
       Returns the amount received at maturity for a fully invested security.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'received(settlement, maturity, investment, discount, basis)'
     fullName: excel.Excel.Functions.received
     langs:
@@ -8752,7 +9119,7 @@ items:
     summary: |-
       Replaces part of a text string with a different text string.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'replace(oldText, startNum, numChars, newText)'
     fullName: excel.Excel.Functions.replace
     langs:
@@ -8789,7 +9156,7 @@ items:
     summary: |-
       Replaces part of a text string with a different text string. Use with double-byte character sets (DBCS).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'replaceB(oldText, startNum, numBytes, newText)'
     fullName: excel.Excel.Functions.replaceB
     langs:
@@ -8826,7 +9193,7 @@ items:
     summary: |-
       Repeats text a given number of times. Use REPT to fill a cell with a number of instances of a text string.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'rept(text, numberTimes)'
     fullName: excel.Excel.Functions.rept
     langs:
@@ -8853,7 +9220,7 @@ items:
     summary: |-
       Returns the specified number of characters from the end of a text string.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'right(text, numChars)'
     fullName: excel.Excel.Functions.right
     langs:
@@ -8882,7 +9249,7 @@ items:
       (DBCS).
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'rightb(text, numBytes)'
     fullName: excel.Excel.Functions.rightb
     langs:
@@ -8909,7 +9276,7 @@ items:
     summary: |-
       Converts an Arabic numeral to Roman, as text.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'roman(number, form)'
     fullName: excel.Excel.Functions.roman
     langs:
@@ -8936,7 +9303,7 @@ items:
     summary: |-
       Rounds a number to a specified number of digits.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'round(number, numDigits)'
     fullName: excel.Excel.Functions.round
     langs:
@@ -8965,7 +9332,7 @@ items:
     summary: |-
       Rounds a number down, toward zero.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'roundDown(number, numDigits)'
     fullName: excel.Excel.Functions.roundDown
     langs:
@@ -8994,7 +9361,7 @@ items:
     summary: |-
       Rounds a number up, away from zero.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'roundUp(number, numDigits)'
     fullName: excel.Excel.Functions.roundUp
     langs:
@@ -9023,7 +9390,7 @@ items:
     summary: |-
       Returns the number of rows in a reference or array.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: rows(array)
     fullName: excel.Excel.Functions.rows
     langs:
@@ -9044,7 +9411,7 @@ items:
     summary: |-
       Returns an equivalent interest rate for the growth of an investment.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'rri(nper, pv, fv)'
     fullName: excel.Excel.Functions.rri
     langs:
@@ -9076,7 +9443,7 @@ items:
     summary: |-
       Returns the secant of an angle.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: sec(number)
     fullName: excel.Excel.Functions.sec
     langs:
@@ -9097,7 +9464,7 @@ items:
     summary: |-
       Returns the hyperbolic secant of an angle.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: sech(number)
     fullName: excel.Excel.Functions.sech
     langs:
@@ -9118,7 +9485,7 @@ items:
     summary: |-
       Returns the second, a number from 0 to 59.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: second(serialNumber)
     fullName: excel.Excel.Functions.second
     langs:
@@ -9143,7 +9510,7 @@ items:
     summary: |-
       Returns the sum of a power series based on the formula.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'seriesSum(x, n, m, coefficients)'
     fullName: excel.Excel.Functions.seriesSum
     langs:
@@ -9180,7 +9547,7 @@ items:
     summary: |-
       Returns the sheet number of the referenced sheet.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: sheet(value)
     fullName: excel.Excel.Functions.sheet
     langs:
@@ -9203,7 +9570,7 @@ items:
     summary: |-
       Returns the number of sheets in a reference.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: sheets(reference)
     fullName: excel.Excel.Functions.sheets
     langs:
@@ -9228,7 +9595,7 @@ items:
       negative.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: sign(number)
     fullName: excel.Excel.Functions.sign
     langs:
@@ -9249,7 +9616,7 @@ items:
     summary: |-
       Returns the sine of an angle.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: sin(number)
     fullName: excel.Excel.Functions.sin
     langs:
@@ -9270,7 +9637,7 @@ items:
     summary: |-
       Returns the hyperbolic sine of a number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: sinh(number)
     fullName: excel.Excel.Functions.sinh
     langs:
@@ -9293,7 +9660,7 @@ items:
       mean.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: skew(values)
     fullName: excel.Excel.Functions.skew
     langs:
@@ -9320,7 +9687,7 @@ items:
       distribution around its mean.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: skew_p(values)
     fullName: excel.Excel.Functions.skew_p
     langs:
@@ -9345,7 +9712,7 @@ items:
     summary: |-
       Returns the straight-line depreciation of an asset for one period.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'sln(cost, salvage, life)'
     fullName: excel.Excel.Functions.sln
     langs:
@@ -9379,7 +9746,7 @@ items:
     summary: |-
       Returns the k-th smallest value in a data set. For example, the fifth smallest number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'small(array, k)'
     fullName: excel.Excel.Functions.small
     langs:
@@ -9406,7 +9773,7 @@ items:
     summary: |-
       Returns the square root of a number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: sqrt(number)
     fullName: excel.Excel.Functions.sqrt
     langs:
@@ -9427,7 +9794,7 @@ items:
     summary: |-
       Returns the square root of (number \* Pi).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: sqrtPi(number)
     fullName: excel.Excel.Functions.sqrtPi
     langs:
@@ -9450,7 +9817,7 @@ items:
     summary: |-
       Returns a normalized value from a distribution characterized by a mean and standard deviation.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'standardize(x, mean, standardDev)'
     fullName: excel.Excel.Functions.standardize
     langs:
@@ -9482,7 +9849,7 @@ items:
     summary: |-
       Calculates standard deviation based on the entire population given as arguments (ignores logical values and text).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: stDev_P(values)
     fullName: excel.Excel.Functions.stDev_P
     langs:
@@ -9507,7 +9874,7 @@ items:
     summary: |-
       Estimates standard deviation based on a sample (ignores logical values and text in the sample).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: stDev_S(values)
     fullName: excel.Excel.Functions.stDev_S
     langs:
@@ -9534,7 +9901,7 @@ items:
       FALSE have the value 0; the logical value TRUE has the value 1.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: stDevA(values)
     fullName: excel.Excel.Functions.stDevA
     langs:
@@ -9561,7 +9928,7 @@ items:
       logical value FALSE have the value 0; the logical value TRUE has the value 1.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: stDevPA(values)
     fullName: excel.Excel.Functions.stDevPA
     langs:
@@ -9586,7 +9953,7 @@ items:
     summary: |-
       Replaces existing text with new text in a text string.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'substitute(text, oldText, newText, instanceNum)'
     fullName: excel.Excel.Functions.substitute
     langs:
@@ -9627,7 +9994,7 @@ items:
     summary: |-
       Returns a subtotal in a list or database.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'subtotal(functionNum, values)'
     fullName: excel.Excel.Functions.subtotal
     langs:
@@ -9654,7 +10021,7 @@ items:
     summary: |-
       Adds all the numbers in a range of cells.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: sum(values)
     fullName: excel.Excel.Functions.sum
     langs:
@@ -9679,7 +10046,7 @@ items:
     summary: |-
       Adds the cells specified by a given condition or criteria.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'sumIf(range, criteria, sumRange)'
     fullName: excel.Excel.Functions.sumIf
     langs:
@@ -9713,7 +10080,7 @@ items:
     summary: |-
       Adds the cells specified by a given set of conditions or criteria.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'sumIfs(sumRange, values)'
     fullName: excel.Excel.Functions.sumIfs
     langs:
@@ -9745,7 +10112,7 @@ items:
       cells that contain numbers.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: sumSq(values)
     fullName: excel.Excel.Functions.sumSq
     langs:
@@ -9770,7 +10137,7 @@ items:
     summary: |-
       Returns the sum-of-years' digits depreciation of an asset for a specified period.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'syd(cost, salvage, life, per)'
     fullName: excel.Excel.Functions.syd
     langs:
@@ -9809,7 +10176,7 @@ items:
     summary: |-
       Checks whether a value is text, and returns the text if it is, or returns double quotes (empty text) if it is not.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: t(value)
     fullName: excel.Excel.Functions.t
     langs:
@@ -9832,7 +10199,7 @@ items:
     summary: |-
       Returns the left-tailed Student's t-distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 't_Dist(x, degFreedom, cumulative)'
     fullName: excel.Excel.Functions.t_Dist
     langs:
@@ -9866,7 +10233,7 @@ items:
     summary: |-
       Returns the two-tailed Student's t-distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 't_Dist_2T(x, degFreedom)'
     fullName: excel.Excel.Functions.t_Dist_2T
     langs:
@@ -9893,7 +10260,7 @@ items:
     summary: |-
       Returns the right-tailed Student's t-distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 't_Dist_RT(x, degFreedom)'
     fullName: excel.Excel.Functions.t_Dist_RT
     langs:
@@ -9920,7 +10287,7 @@ items:
     summary: |-
       Returns the left-tailed inverse of the Student's t-distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 't_Inv(probability, degFreedom)'
     fullName: excel.Excel.Functions.t_Inv
     langs:
@@ -9949,7 +10316,7 @@ items:
     summary: |-
       Returns the two-tailed inverse of the Student's t-distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 't_Inv_2T(probability, degFreedom)'
     fullName: excel.Excel.Functions.t_Inv_2T
     langs:
@@ -9978,7 +10345,7 @@ items:
     summary: |-
       Returns the tangent of an angle.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: tan(number)
     fullName: excel.Excel.Functions.tan
     langs:
@@ -9999,7 +10366,7 @@ items:
     summary: |-
       Returns the hyperbolic tangent of a number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: tanh(number)
     fullName: excel.Excel.Functions.tanh
     langs:
@@ -10020,7 +10387,7 @@ items:
     summary: |-
       Returns the bond-equivalent yield for a treasury bill.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'tbillEq(settlement, maturity, discount)'
     fullName: excel.Excel.Functions.tbillEq
     langs:
@@ -10053,7 +10420,7 @@ items:
     summary: |-
       Returns the price per $100 face value for a treasury bill.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'tbillPrice(settlement, maturity, discount)'
     fullName: excel.Excel.Functions.tbillPrice
     langs:
@@ -10086,7 +10453,7 @@ items:
     summary: |-
       Returns the yield for a treasury bill.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'tbillYield(settlement, maturity, pr)'
     fullName: excel.Excel.Functions.tbillYield
     langs:
@@ -10119,7 +10486,7 @@ items:
     summary: |-
       Converts a value to text in a specific number format.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'text(value, formatText)'
     fullName: excel.Excel.Functions.text
     langs:
@@ -10150,7 +10517,7 @@ items:
     summary: |-
       Converts hours, minutes, and seconds given as numbers to an Excel serial number, formatted with a time format.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'time(hour, minute, second)'
     fullName: excel.Excel.Functions.time
     langs:
@@ -10184,7 +10551,7 @@ items:
       PM). Format the number with a time format after entering the formula.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: timevalue(timeText)
     fullName: excel.Excel.Functions.timevalue
     langs:
@@ -10209,7 +10576,7 @@ items:
     summary: |-
       Returns the current date formatted as a date.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: today()
     fullName: excel.Excel.Functions.today
     langs:
@@ -10237,7 +10604,7 @@ items:
     summary: |-
       Removes all spaces from a text string except for single spaces between words.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: trim(text)
     fullName: excel.Excel.Functions.trim
     langs:
@@ -10258,7 +10625,7 @@ items:
     summary: |-
       Returns the mean of the interior portion of a set of data values.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'trimMean(array, percent)'
     fullName: excel.Excel.Functions.trimMean
     langs:
@@ -10285,7 +10652,7 @@ items:
     summary: |-
       Returns the logical value TRUE.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: true()
     fullName: excel.Excel.Functions.true
     langs:
@@ -10301,7 +10668,7 @@ items:
     summary: |-
       Truncates a number to an integer by removing the decimal, or fractional, part of the number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'trunc(number, numDigits)'
     fullName: excel.Excel.Functions.trunc
     langs:
@@ -10330,7 +10697,7 @@ items:
       16; array = 64.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: type(value)
     fullName: excel.Excel.Functions.type
     langs:
@@ -10353,7 +10720,7 @@ items:
     summary: |-
       Returns the Unicode character referenced by the given numeric value.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: unichar(number)
     fullName: excel.Excel.Functions.unichar
     langs:
@@ -10376,7 +10743,7 @@ items:
     summary: |-
       Returns the number (code point) corresponding to the first character of the text.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: unicode(text)
     fullName: excel.Excel.Functions.unicode
     langs:
@@ -10397,7 +10764,7 @@ items:
     summary: |-
       Converts a text string to all uppercase letters.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: upper(text)
     fullName: excel.Excel.Functions.upper
     langs:
@@ -10418,7 +10785,7 @@ items:
     summary: |-
       Converts a number to text, using currency format.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'usdollar(number, decimals)'
     fullName: excel.Excel.Functions.usdollar
     langs:
@@ -10445,7 +10812,7 @@ items:
     summary: |-
       Converts a text string that represents a number to a number.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: value(text)
     fullName: excel.Excel.Functions.value
     langs:
@@ -10468,7 +10835,7 @@ items:
     summary: |-
       Calculates variance based on the entire population (ignores logical values and text in the population).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: var_P(values)
     fullName: excel.Excel.Functions.var_P
     langs:
@@ -10491,7 +10858,7 @@ items:
     summary: |-
       Estimates variance based on a sample (ignores logical values and text in the sample).
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: var_S(values)
     fullName: excel.Excel.Functions.var_S
     langs:
@@ -10516,7 +10883,7 @@ items:
       value 0; the logical value TRUE has the value 1.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: varA(values)
     fullName: excel.Excel.Functions.varA
     langs:
@@ -10541,7 +10908,7 @@ items:
       FALSE have the value 0; the logical value TRUE has the value 1.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: varPA(values)
     fullName: excel.Excel.Functions.varPA
     langs:
@@ -10566,7 +10933,7 @@ items:
       double-declining balance method or some other method you specify.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'vdb(cost, salvage, life, startPeriod, endPeriod, factor, noSwitch)'
     fullName: excel.Excel.Functions.vdb
     langs:
@@ -10623,7 +10990,7 @@ items:
       specify. By default, the table must be sorted in an ascending order.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'vlookup(lookupValue, tableArray, colIndexNum, rangeLookup)'
     fullName: excel.Excel.Functions.vlookup
     langs:
@@ -10668,7 +11035,7 @@ items:
     summary: |-
       Returns a number from 1 to 7 identifying the day of the week of a date.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'weekday(serialNumber, returnType)'
     fullName: excel.Excel.Functions.weekday
     langs:
@@ -10697,7 +11064,7 @@ items:
     summary: |-
       Returns the week number in the year.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'weekNum(serialNumber, returnType)'
     fullName: excel.Excel.Functions.weekNum
     langs:
@@ -10725,7 +11092,7 @@ items:
     summary: |-
       Returns the Weibull distribution.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'weibull_Dist(x, alpha, beta, cumulative)'
     fullName: excel.Excel.Functions.weibull_Dist
     langs:
@@ -10764,7 +11131,7 @@ items:
     summary: |-
       Returns the serial number of the date before or after a specified number of workdays.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'workDay(startDate, days, holidays)'
     fullName: excel.Excel.Functions.workDay
     langs:
@@ -10801,7 +11168,7 @@ items:
       parameters.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'workDay_Intl(startDate, days, weekend, holidays)'
     fullName: excel.Excel.Functions.workDay_Intl
     langs:
@@ -10841,7 +11208,7 @@ items:
     summary: |-
       Returns the internal rate of return for a schedule of cash flows.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'xirr(values, dates, guess)'
     fullName: excel.Excel.Functions.xirr
     langs:
@@ -10873,7 +11240,7 @@ items:
     summary: |-
       Returns the net present value for a schedule of cash flows.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'xnpv(rate, values, dates)'
     fullName: excel.Excel.Functions.xnpv
     langs:
@@ -10905,7 +11272,7 @@ items:
     summary: |-
       Returns a logical 'Exclusive Or' of all arguments.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: xor(values)
     fullName: excel.Excel.Functions.xor
     langs:
@@ -10930,7 +11297,7 @@ items:
     summary: |-
       Returns the year of a date, an integer in the range 1900 - 9999.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: year(serialNumber)
     fullName: excel.Excel.Functions.year
     langs:
@@ -10953,7 +11320,7 @@ items:
     summary: |-
       Returns the year fraction representing the number of whole days between start\_date and end\_date.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'yearFrac(startDate, endDate, basis)'
     fullName: excel.Excel.Functions.yearFrac
     langs:
@@ -10986,7 +11353,7 @@ items:
     summary: |-
       Returns the yield on a security that pays periodic interest.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'yield(settlement, maturity, rate, pr, redemption, frequency, basis)'
     fullName: excel.Excel.Functions.yield
     langs:
@@ -11038,7 +11405,7 @@ items:
     summary: |-
       Returns the annual yield for a discounted security. For example, a treasury bill.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'yieldDisc(settlement, maturity, pr, redemption, basis)'
     fullName: excel.Excel.Functions.yieldDisc
     langs:
@@ -11081,7 +11448,7 @@ items:
     summary: |-
       Returns the annual yield of a security that pays interest at maturity.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'yieldMat(settlement, maturity, issue, rate, pr, basis)'
     fullName: excel.Excel.Functions.yieldMat
     langs:
@@ -11128,7 +11495,7 @@ items:
     summary: |-
       Returns the one-tailed P-value of a z-test.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: 'z_Test(array, x, sigma)'
     fullName: excel.Excel.Functions.z_Test
     langs:

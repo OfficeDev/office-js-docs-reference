@@ -4,7 +4,10 @@ items:
     summary: |-
       Represents the Selection in the page.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      Property: shapes
+      Method: load
+      Method: toJSON
     name: Visio.Selection
     fullName: visio.Visio.Selection
     langs:
@@ -41,7 +44,7 @@ items:
     summary: |-
       Gets the Shapes of the Selection
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: shapes
     fullName: visio.Visio.Selection.shapes
     langs:

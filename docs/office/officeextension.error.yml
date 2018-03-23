@@ -4,6 +4,20 @@ items:
     summary: >-
       The error object returned by "context.sync()", if a promise is rejected due to an error while processing the
       request.
+
+      Property: code
+
+      Property: debugInfo
+
+      Property: innerError
+
+      Property: message
+
+      Property: name
+
+      Property: stack
+
+      Property: traceMessages
     name: OfficeExtension.Error
     fullName: office.OfficeExtension.Error
     langs:

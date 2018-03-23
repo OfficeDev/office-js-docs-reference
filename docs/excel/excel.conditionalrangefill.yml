@@ -4,7 +4,12 @@ items:
     summary: |-
       Represents the background of a conditional range object.
 
-      \[API set: ExcelApi 1.6 (PREVIEW)\]
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      Property: color
+      Method: clear
+      Method: load
+      Method: set
+      Method: toJSON
     name: Excel.ConditionalRangeFill
     fullName: excel.Excel.ConditionalRangeFill
     langs:
@@ -23,7 +28,7 @@ items:
     summary: |-
       Resets the fill.
 
-      \[API set: ExcelApi 1.6 (PREVIEW)\]
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: clear()
     fullName: excel.Excel.ConditionalRangeFill.clear
     langs:
@@ -41,7 +46,7 @@ items:
       (e.g. "orange").
 
 
-      \[API set: ExcelApi 1.6 (PREVIEW)\]
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: color
     fullName: excel.Excel.ConditionalRangeFill.color
     langs:

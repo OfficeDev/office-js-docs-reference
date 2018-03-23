@@ -4,7 +4,22 @@ items:
     summary: |-
       Represents the Document class.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      Property: application
+      Property: onDataRefreshComplete
+      Property: onDocumentLoadComplete
+      Property: onPageLoadComplete
+      Property: onSelectionChanged
+      Property: onShapeMouseEnter
+      Property: onShapeMouseLeave
+      Property: pages
+      Property: view
+      Method: getActivePage
+      Method: load
+      Method: set
+      Method: setActivePage
+      Method: startDataRefresh
+      Method: toJSON
     name: Visio.Document
     fullName: visio.Visio.Document
     langs:
@@ -33,7 +48,7 @@ items:
     summary: |-
       Represents a Visio application instance that contains this document. Read-only.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: application
     fullName: visio.Visio.Document.application
     langs:
@@ -48,7 +63,7 @@ items:
     summary: |-
       Returns the Active Page of the document.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: getActivePage()
     fullName: visio.Visio.Document.getActivePage
     langs:
@@ -84,7 +99,7 @@ items:
     summary: |-
       Occurs when the data is refreshed in the diagram.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: onDataRefreshComplete
     fullName: visio.Visio.Document.onDataRefreshComplete
     langs:
@@ -99,7 +114,7 @@ items:
     summary: |-
       Occurs when the Document is loaded, refreshed, or changed.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: onDocumentLoadComplete
     fullName: visio.Visio.Document.onDocumentLoadComplete
     langs:
@@ -114,7 +129,7 @@ items:
     summary: |-
       Occurs when the page is finished loading.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: onPageLoadComplete
     fullName: visio.Visio.Document.onPageLoadComplete
     langs:
@@ -129,7 +144,7 @@ items:
     summary: |-
       Occurs when the current selection of shapes changes.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: onSelectionChanged
     fullName: visio.Visio.Document.onSelectionChanged
     langs:
@@ -144,7 +159,7 @@ items:
     summary: |-
       Occurs when the user moves the mouse pointer into the bounding box of a shape.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: onShapeMouseEnter
     fullName: visio.Visio.Document.onShapeMouseEnter
     langs:
@@ -159,7 +174,7 @@ items:
     summary: |-
       Occurs when the user moves the mouse out of the bounding box of a shape.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: onShapeMouseLeave
     fullName: visio.Visio.Document.onShapeMouseLeave
     langs:
@@ -174,7 +189,7 @@ items:
     summary: |-
       Represents a collection of pages associated with the document. Read-only.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: pages
     fullName: visio.Visio.Document.pages
     langs:
@@ -211,7 +226,7 @@ items:
     summary: |-
       Set the Active Page of the document.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: setActivePage(PageName)
     fullName: visio.Visio.Document.setActivePage
     langs:
@@ -232,7 +247,7 @@ items:
     summary: |-
       Triggers the refresh of the data in the Diagram, for all pages.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: startDataRefresh()
     fullName: visio.Visio.Document.startDataRefresh
     langs:
@@ -260,7 +275,7 @@ items:
     summary: |-
       Returns the DocumentView object.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: view
     fullName: visio.Visio.Document.view
     langs:

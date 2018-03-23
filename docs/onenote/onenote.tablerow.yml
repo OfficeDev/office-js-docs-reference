@@ -4,7 +4,16 @@ items:
     summary: |-
       Represents a row in a table.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      Property: cellCount
+      Property: cells
+      Property: id
+      Property: parentTable
+      Property: rowIndex
+      Method: clear
+      Method: insertRowAsSibling
+      Method: load
+      Method: setShadingColor
     name: OneNote.TableRow
     fullName: onenote.OneNote.TableRow
     langs:
@@ -27,7 +36,7 @@ items:
     summary: |-
       Gets the number of cells in the row. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: cellCount
     fullName: onenote.OneNote.TableRow.cellCount
     langs:
@@ -42,7 +51,7 @@ items:
     summary: |-
       Gets the cells in the row. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: cells
     fullName: onenote.OneNote.TableRow.cells
     langs:
@@ -57,7 +66,7 @@ items:
     summary: |-
       Clears the contents of the row.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: clear()
     fullName: onenote.OneNote.TableRow.clear
     langs:
@@ -73,7 +82,7 @@ items:
     summary: |-
       Gets the ID of the row. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: id
     fullName: onenote.OneNote.TableRow.id
     langs:
@@ -132,7 +141,7 @@ items:
     summary: |-
       Gets the parent table. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: parentTable
     fullName: onenote.OneNote.TableRow.parentTable
     langs:
@@ -147,7 +156,7 @@ items:
     summary: |-
       Gets the index of the row in its parent table. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: rowIndex
     fullName: onenote.OneNote.TableRow.rowIndex
     langs:

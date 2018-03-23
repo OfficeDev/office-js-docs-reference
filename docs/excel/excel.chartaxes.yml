@@ -4,7 +4,13 @@ items:
     summary: |-
       Represents the chart axes.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      Property: categoryAxis
+      Property: seriesAxis
+      Property: valueAxis
+      Method: load
+      Method: set
+      Method: toJSON
     name: Excel.ChartAxes
     fullName: excel.Excel.ChartAxes
     langs:
@@ -24,7 +30,7 @@ items:
     summary: |-
       Represents the category axis in a chart. Read-only.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: categoryAxis
     fullName: excel.Excel.ChartAxes.categoryAxis
     langs:
@@ -59,7 +65,7 @@ items:
     summary: |-
       Represents the series axis of a 3-dimensional chart. Read-only.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: seriesAxis
     fullName: excel.Excel.ChartAxes.seriesAxis
     langs:
@@ -108,7 +114,7 @@ items:
     summary: |-
       Represents the value axis in an axis. Read-only.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: valueAxis
     fullName: excel.Excel.ChartAxes.valueAxis
     langs:

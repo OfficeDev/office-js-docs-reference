@@ -10,7 +10,21 @@ items:
       are added, a table row will continue to point at the index for which it was created.
 
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+
+      Property: index
+
+      Property: values
+
+      Method: delete
+
+      Method: getRange
+
+      Method: load
+
+      Method: set
+
+      Method: toJSON
     name: Excel.TableRow
     fullName: excel.Excel.TableRow
     langs:
@@ -31,7 +45,7 @@ items:
     summary: |-
       Deletes the row from the table.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: delete()
     fullName: excel.Excel.TableRow.delete
     langs:
@@ -47,7 +61,7 @@ items:
     summary: |-
       Returns the range object associated with the entire row.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getRange()
     fullName: excel.Excel.TableRow.getRange
     langs:
@@ -63,7 +77,7 @@ items:
     summary: |-
       Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: index
     fullName: excel.Excel.TableRow.index
     langs:
@@ -134,7 +148,7 @@ items:
       Cell that contain an error will return the error string.
 
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: values
     fullName: excel.Excel.TableRow.values
     langs:

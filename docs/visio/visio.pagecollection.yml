@@ -4,7 +4,12 @@ items:
     summary: |-
       Represents a collection of Page objects that are part of the document.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      Property: items
+      Method: getCount
+      Method: getItem
+      Method: load
+      Method: toJSON
     name: Visio.PageCollection
     fullName: visio.Visio.PageCollection
     langs:
@@ -23,7 +28,7 @@ items:
     summary: |-
       Gets the number of pages in the collection.
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: getCount()
     fullName: visio.Visio.PageCollection.getCount
     langs:
@@ -39,7 +44,7 @@ items:
     summary: |-
       Gets a page using its key (name or Id).
 
-      \[API set: 1.1\]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: getItem(key)
     fullName: visio.Visio.PageCollection.getItem
     langs:

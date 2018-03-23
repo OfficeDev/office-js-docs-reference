@@ -4,7 +4,15 @@ items:
     summary: |-
       Represents a container for Paragraph objects.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      Property: id
+      Property: pageContent
+      Property: paragraphs
+      Method: appendHtml
+      Method: appendImage
+      Method: appendRichText
+      Method: appendTable
+      Method: load
     name: OneNote.Outline
     fullName: onenote.OneNote.Outline
     langs:
@@ -121,7 +129,7 @@ items:
     summary: |-
       Gets the ID of the Outline object. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: id
     fullName: onenote.OneNote.Outline.id
     langs:
@@ -158,7 +166,7 @@ items:
       page. Read-only.
 
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: pageContent
     fullName: onenote.OneNote.Outline.pageContent
     langs:
@@ -173,7 +181,7 @@ items:
     summary: |-
       Gets the collection of Paragraph objects in the Outline. Read-only.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: paragraphs
     fullName: onenote.OneNote.Outline.paragraphs
     langs:

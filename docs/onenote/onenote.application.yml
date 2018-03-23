@@ -6,7 +6,31 @@ items:
       active notebook, and the active section.
 
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+
+      Property: notebooks
+
+      Method: getActiveNotebook
+
+      Method: getActiveNotebookOrNull
+
+      Method: getActiveOutline
+
+      Method: getActiveOutlineOrNull
+
+      Method: getActivePage
+
+      Method: getActivePageOrNull
+
+      Method: getActiveSection
+
+      Method: getActiveSectionOrNull
+
+      Method: load
+
+      Method: navigateToPage
+
+      Method: navigateToPageWithClientUrl
     name: OneNote.Application
     fullName: onenote.OneNote.Application
     langs:
@@ -32,7 +56,7 @@ items:
     summary: |-
       Gets the active notebook if one exists. If no notebook is active, throws ItemNotFound.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getActiveNotebook()
     fullName: onenote.OneNote.Application.getActiveNotebook
     langs:
@@ -80,7 +104,7 @@ items:
     summary: |-
       Gets the active notebook if one exists. If no notebook is active, returns null.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getActiveNotebookOrNull()
     fullName: onenote.OneNote.Application.getActiveNotebookOrNull
     langs:
@@ -96,7 +120,7 @@ items:
     summary: |-
       Gets the active outline if one exists, If no outline is active, throws ItemNotFound.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getActiveOutline()
     fullName: onenote.OneNote.Application.getActiveOutline
     langs:
@@ -112,7 +136,7 @@ items:
     summary: |-
       Gets the active outline if one exists, otherwise returns null.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getActiveOutlineOrNull()
     fullName: onenote.OneNote.Application.getActiveOutlineOrNull
     langs:
@@ -128,7 +152,7 @@ items:
     summary: |-
       Gets the active page if one exists. If no page is active, throws ItemNotFound.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getActivePage()
     fullName: onenote.OneNote.Application.getActivePage
     langs:
@@ -144,7 +168,7 @@ items:
     summary: |-
       Gets the active page if one exists. If no page is active, returns null.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getActivePageOrNull()
     fullName: onenote.OneNote.Application.getActivePageOrNull
     langs:
@@ -160,7 +184,7 @@ items:
     summary: |-
       Gets the active section if one exists. If no section is active, throws ItemNotFound.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getActiveSection()
     fullName: onenote.OneNote.Application.getActiveSection
     langs:
@@ -176,7 +200,7 @@ items:
     summary: |-
       Gets the active section if one exists. If no section is active, returns null.
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getActiveSectionOrNull()
     fullName: onenote.OneNote.Application.getActiveSectionOrNull
     langs:
@@ -250,7 +274,7 @@ items:
       notebook at a time is open in the application instance. Read-only.
 
 
-      \[API set: OneNoteApi 1.1\]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: notebooks
     fullName: onenote.OneNote.Application.notebooks
     langs:

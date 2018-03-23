@@ -4,7 +4,19 @@ items:
     summary: |-
       Specifies the options to be included in a search operation.
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+      Property: ignorePunct
+      Property: ignoreSpace
+      Property: matchCase
+      Property: matchPrefix
+      Property: matchSuffix
+      Property: matchWholeWord
+      Property: matchWildcards
+      Property: matchWildCards
+      Method: load
+      Method: newObject
+      Method: set
+      Method: toJSON
     name: Word.SearchOptions
     fullName: word.Word.SearchOptions
     langs:
@@ -32,7 +44,7 @@ items:
       Ignore punctuation check box in the Find and Replace dialog box.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: ignorePunct
     fullName: word.Word.SearchOptions.ignorePunct
     langs:
@@ -49,7 +61,7 @@ items:
       whitespace characters check box in the Find and Replace dialog box.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: ignoreSpace
     fullName: word.Word.SearchOptions.ignoreSpace
     langs:
@@ -86,7 +98,7 @@ items:
       check box in the Find and Replace dialog box (Edit menu).
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: matchCase
     fullName: word.Word.SearchOptions.matchCase
     langs:
@@ -103,7 +115,7 @@ items:
       Match prefix check box in the Find and Replace dialog box.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: matchPrefix
     fullName: word.Word.SearchOptions.matchPrefix
     langs:
@@ -120,7 +132,7 @@ items:
       Match suffix check box in the Find and Replace dialog box.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: matchSuffix
     fullName: word.Word.SearchOptions.matchSuffix
     langs:
@@ -137,7 +149,7 @@ items:
       word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: matchWholeWord
     fullName: word.Word.SearchOptions.matchWholeWord
     langs:
@@ -154,7 +166,7 @@ items:
       Corresponds to the Use wildcards check box in the Find and Replace dialog box.
 
 
-      \[API set: WordApi 1.1\]
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
     name: matchWildcards
     fullName: word.Word.SearchOptions.matchWildcards
     langs:

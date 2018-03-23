@@ -4,7 +4,10 @@ items:
     summary: |-
       Represents formatting object for chart points.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      Property: fill
+      Method: load
+      Method: toJSON
     name: Excel.ChartPointFormat
     fullName: excel.Excel.ChartPointFormat
     langs:
@@ -21,7 +24,7 @@ items:
     summary: |-
       Represents the fill format of a chart, which includes background formating information. Read-only.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: fill
     fullName: excel.Excel.ChartPointFormat.fill
     langs:

@@ -4,7 +4,18 @@ items:
     summary: |-
       Represents a single axis in a chart.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      Property: format
+      Property: majorGridlines
+      Property: majorUnit
+      Property: maximum
+      Property: minimum
+      Property: minorGridlines
+      Property: minorUnit
+      Property: title
+      Method: load
+      Method: set
+      Method: toJSON
     name: Excel.ChartAxis
     fullName: excel.Excel.ChartAxis
     langs:
@@ -29,7 +40,7 @@ items:
     summary: |-
       Represents the formatting of a chart object, which includes line and font formatting. Read-only.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: format
     fullName: excel.Excel.ChartAxis.format
     langs:
@@ -64,7 +75,7 @@ items:
     summary: |-
       Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: majorGridlines
     fullName: excel.Excel.ChartAxis.majorGridlines
     langs:
@@ -81,7 +92,7 @@ items:
       returned value is always a number.
 
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: majorUnit
     fullName: excel.Excel.ChartAxis.majorUnit
     langs:
@@ -98,7 +109,7 @@ items:
       axis values). The returned value is always a number.
 
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: maximum
     fullName: excel.Excel.ChartAxis.maximum
     langs:
@@ -115,7 +126,7 @@ items:
       axis values). The returned value is always a number.
 
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: minimum
     fullName: excel.Excel.ChartAxis.minimum
     langs:
@@ -130,7 +141,7 @@ items:
     summary: |-
       Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: minorGridlines
     fullName: excel.Excel.ChartAxis.minorGridlines
     langs:
@@ -147,7 +158,7 @@ items:
       automatic axis values). The returned value is always a number.
 
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: minorUnit
     fullName: excel.Excel.ChartAxis.minorUnit
     langs:
@@ -184,7 +195,7 @@ items:
     summary: |-
       Represents the axis title. Read-only.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: title
     fullName: excel.Excel.ChartAxis.title
     langs:

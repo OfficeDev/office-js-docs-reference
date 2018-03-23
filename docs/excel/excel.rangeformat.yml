@@ -4,7 +4,21 @@ items:
     summary: |-
       A format object encapsulating the range's font, fill, borders, alignment, and other properties.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      Property: borders
+      Property: columnWidth
+      Property: fill
+      Property: font
+      Property: horizontalAlignment
+      Property: protection
+      Property: rowHeight
+      Property: verticalAlignment
+      Property: wrapText
+      Method: autofitColumns
+      Method: autofitRows
+      Method: load
+      Method: set
+      Method: toJSON
     name: Excel.RangeFormat
     fullName: excel.Excel.RangeFormat
     langs:
@@ -34,7 +48,7 @@ items:
       columns.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: autofitColumns()
     fullName: excel.Excel.RangeFormat.autofitColumns
     langs:
@@ -52,7 +66,7 @@ items:
       columns.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: autofitRows()
     fullName: excel.Excel.RangeFormat.autofitRows
     langs:
@@ -68,7 +82,7 @@ items:
     summary: |-
       Collection of border objects that apply to the overall range. Read-only.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: borders
     fullName: excel.Excel.RangeFormat.borders
     langs:
@@ -85,7 +99,7 @@ items:
       returned.
 
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: columnWidth
     fullName: excel.Excel.RangeFormat.columnWidth
     langs:
@@ -100,7 +114,7 @@ items:
     summary: |-
       Returns the fill object defined on the overall range. Read-only.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: fill
     fullName: excel.Excel.RangeFormat.fill
     langs:
@@ -115,7 +129,7 @@ items:
     summary: |-
       Returns the font object defined on the overall range. Read-only.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: font
     fullName: excel.Excel.RangeFormat.font
     langs:
@@ -130,7 +144,7 @@ items:
     summary: |-
       Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: horizontalAlignment
     fullName: excel.Excel.RangeFormat.horizontalAlignment
     langs:
@@ -165,7 +179,7 @@ items:
     summary: |-
       Returns the format protection object for a range.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: protection
     fullName: excel.Excel.RangeFormat.protection
     langs:
@@ -180,7 +194,7 @@ items:
     summary: |-
       Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.
 
-      \[API set: ExcelApi 1.2\]
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: rowHeight
     fullName: excel.Excel.RangeFormat.rowHeight
     langs:
@@ -229,7 +243,7 @@ items:
     summary: |-
       Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: verticalAlignment
     fullName: excel.Excel.RangeFormat.verticalAlignment
     langs:
@@ -246,7 +260,7 @@ items:
       wrap setting
 
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: wrapText
     fullName: excel.Excel.RangeFormat.wrapText
     langs:

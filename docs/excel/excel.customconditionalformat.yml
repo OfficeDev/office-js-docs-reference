@@ -4,7 +4,12 @@ items:
     summary: |-
       Represents a custom conditional format type.
 
-      \[API set: ExcelApi 1.6 (PREVIEW)\]
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      Property: format
+      Property: rule
+      Method: load
+      Method: set
+      Method: toJSON
     name: Excel.CustomConditionalFormat
     fullName: excel.Excel.CustomConditionalFormat
     langs:
@@ -25,7 +30,7 @@ items:
       Read-only.
 
 
-      \[API set: ExcelApi 1.6 (PREVIEW)\]
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: format
     fullName: excel.Excel.CustomConditionalFormat.format
     langs:
@@ -60,7 +65,7 @@ items:
     summary: |-
       Represents the Rule object on this conditional format.
 
-      \[API set: ExcelApi 1.6 (PREVIEW)\]
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: rule
     fullName: excel.Excel.CustomConditionalFormat.rule
     langs:

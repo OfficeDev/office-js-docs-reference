@@ -4,7 +4,16 @@ items:
     summary: |-
       This object represents the font attributes (font name, font size, color, etc.) for a chart object.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      Property: bold
+      Property: color
+      Property: italic
+      Property: name
+      Property: size
+      Property: underline
+      Method: load
+      Method: set
+      Method: toJSON
     name: Excel.ChartFont
     fullName: excel.Excel.ChartFont
     langs:
@@ -27,7 +36,7 @@ items:
     summary: |-
       Represents the bold status of font.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: bold
     fullName: excel.Excel.ChartFont.bold
     langs:
@@ -42,7 +51,7 @@ items:
     summary: |-
       HTML color code representation of the text color. E.g. \#FF0000 represents Red.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: color
     fullName: excel.Excel.ChartFont.color
     langs:
@@ -57,7 +66,7 @@ items:
     summary: |-
       Represents the italic status of the font.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: italic
     fullName: excel.Excel.ChartFont.italic
     langs:
@@ -92,7 +101,7 @@ items:
     summary: |-
       Font name (e.g. "Calibri")
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: name
     fullName: excel.Excel.ChartFont.name
     langs:
@@ -129,7 +138,7 @@ items:
     summary: |-
       Size of the font (e.g. 11)
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: size
     fullName: excel.Excel.ChartFont.size
     langs:
@@ -156,7 +165,7 @@ items:
     summary: |-
       Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
 
-      \[API set: ExcelApi 1.1\]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: underline
     fullName: excel.Excel.ChartFont.underline
     langs:
