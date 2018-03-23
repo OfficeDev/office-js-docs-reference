@@ -1,5 +1,5 @@
 items:
-  - name: Office JavaScript API reference
+  - name: API reference
     href: ~/overview/office.md
     items:
       - name: Excel

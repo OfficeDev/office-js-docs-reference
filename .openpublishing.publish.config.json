@@ -29,8 +29,8 @@
   ],
   "JoinTOCPlugin": [
     {
-      "ReferenceTOC": "docs/office-toc/toc.yml",
-      "ReferenceTOCUrl": "/javascript/api/office-toc/toc.json",
+      "ReferenceTOC": "docs/ref/office-toc/toc.yml",
+      "ReferenceTOCUrl": "/javascript/api/ref/office-toc/toc.json",
       "ConceptualTOC": "docs/overview/toc.yml",
       "ConceptualTOCUrl": "/javascript/api/overview/toc.json"
     }
