@@ -5,13 +5,6 @@ items:
       Represents the DocumentView class.
 
       \[ [API set: 1.1](http://bing.com?type=visio) \]
-      Property: disableHyperlinks
-      Property: disablePan
-      Property: disableZoom
-      Property: hideDiagramBoundary
-      Method: load
-      Method: set
-      Method: toJSON
     name: Visio.DocumentView
     fullName: visio.Visio.DocumentView
     langs:

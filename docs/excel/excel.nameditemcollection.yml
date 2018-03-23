@@ -7,22 +7,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-
-      Property: items
-
-      Method: add
-
-      Method: addFormulaLocal
-
-      Method: getCount
-
-      Method: getItem
-
-      Method: getItemOrNullObject
-
-      Method: load
-
-      Method: toJSON
     name: Excel.NamedItemCollection
     fullName: excel.Excel.NamedItemCollection
     langs:

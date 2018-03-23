@@ -7,22 +7,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.5](http://bing.com?type=excel) \]
-
-      Property: items
-
-      Method: getCount
-
-      Method: getItem
-
-      Method: getItemOrNullObject
-
-      Method: getOnlyItem
-
-      Method: getOnlyItemOrNullObject
-
-      Method: load
-
-      Method: toJSON
     name: Excel.CustomXmlPartScopedCollection
     fullName: excel.Excel.CustomXmlPartScopedCollection
     langs:

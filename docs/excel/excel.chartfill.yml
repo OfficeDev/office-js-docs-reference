@@ -5,10 +5,6 @@ items:
       Represents the fill formatting for a chart element.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Method: clear
-      Method: load
-      Method: setSolidColor
-      Method: toJSON
     name: Excel.ChartFill
     fullName: excel.Excel.ChartFill
     langs:

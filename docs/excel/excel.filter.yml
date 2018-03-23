@@ -5,21 +5,6 @@ items:
       Manages the filtering of a table's column.
 
       \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
-      Property: criteria
-      Method: apply
-      Method: applyBottomItemsFilter
-      Method: applyBottomPercentFilter
-      Method: applyCellColorFilter
-      Method: applyCustomFilter
-      Method: applyDynamicFilter
-      Method: applyFontColorFilter
-      Method: applyIconFilter
-      Method: applyTopItemsFilter
-      Method: applyTopPercentFilter
-      Method: applyValuesFilter
-      Method: clear
-      Method: load
-      Method: toJSON
     name: Excel.Filter
     fullName: excel.Excel.Filter
     langs:

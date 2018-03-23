@@ -5,13 +5,6 @@ items:
       Represents a custom XML part object in a workbook.
 
       \[ [API set: ExcelApi 1.5](http://bing.com?type=excel) \]
-      Property: id
-      Property: namespaceUri
-      Method: delete
-      Method: getXml
-      Method: load
-      Method: setXml
-      Method: toJSON
     name: Excel.CustomXmlPart
     fullName: excel.Excel.CustomXmlPart
     langs:

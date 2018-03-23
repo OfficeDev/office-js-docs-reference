@@ -5,14 +5,6 @@ items:
       Manages sorting operations on Table objects.
 
       \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
-      Property: fields
-      Property: matchCase
-      Property: method
-      Method: apply
-      Method: clear
-      Method: load
-      Method: reapply
-      Method: toJSON
     name: Excel.TableSort
     fullName: excel.Excel.TableSort
     langs:

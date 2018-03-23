@@ -5,18 +5,6 @@ items:
       Represents a collection of all the data labels on a chart point.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: format
-      Property: position
-      Property: separator
-      Property: showBubbleSize
-      Property: showCategoryName
-      Property: showLegendKey
-      Property: showPercentage
-      Property: showSeriesName
-      Property: showValue
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.ChartDataLabels
     fullName: excel.Excel.ChartDataLabels
     langs:

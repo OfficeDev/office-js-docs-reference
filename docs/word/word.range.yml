@@ -5,55 +5,6 @@ items:
       Represents a contiguous area in a document.
 
       \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
-      Property: contentControls
-      Property: font
-      Property: hyperlink
-      Property: inlinePictures
-      Property: isEmpty
-      Property: lists
-      Property: paragraphs
-      Property: parentBody
-      Property: parentContentControl
-      Property: parentContentControlOrNullObject
-      Property: parentTable
-      Property: parentTableCell
-      Property: parentTableCellOrNullObject
-      Property: parentTableOrNullObject
-      Property: style
-      Property: styleBuiltIn
-      Property: tables
-      Property: text
-      Method: clear
-      Method: compareLocationWith
-      Method: delete
-      Method: expandTo
-      Method: expandToOrNullObject
-      Method: getHtml
-      Method: getHyperlinkRanges
-      Method: getNextTextRange
-      Method: getNextTextRangeOrNullObject
-      Method: getOoxml
-      Method: getRange
-      Method: getTextRanges
-      Method: insertBreak
-      Method: insertContentControl
-      Method: insertFileFromBase64
-      Method: insertHtml
-      Method: insertInlinePictureFromBase64
-      Method: insertOoxml
-      Method: insertParagraph
-      Method: insertTable
-      Method: insertText
-      Method: intersectWith
-      Method: intersectWithOrNullObject
-      Method: load
-      Method: search
-      Method: select
-      Method: set
-      Method: split
-      Method: toJSON
-      Method: track
-      Method: untrack
     name: Word.Range
     fullName: word.Word.Range
     langs:

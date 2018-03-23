@@ -5,17 +5,6 @@ items:
       Represents a single axis in a chart.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: format
-      Property: majorGridlines
-      Property: majorUnit
-      Property: maximum
-      Property: minimum
-      Property: minorGridlines
-      Property: minorUnit
-      Property: title
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.ChartAxis
     fullName: excel.Excel.ChartAxis
     langs:

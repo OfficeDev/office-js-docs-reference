@@ -5,19 +5,6 @@ items:
       Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: application
-      Property: bindings
-      Property: customXmlParts
-      Property: functions
-      Property: names
-      Property: onSelectionChanged
-      Property: pivotTables
-      Property: settings
-      Property: tables
-      Property: worksheets
-      Method: getSelectedRange
-      Method: load
-      Method: toJSON
     name: Excel.Workbook
     fullName: excel.Excel.Workbook
     langs:

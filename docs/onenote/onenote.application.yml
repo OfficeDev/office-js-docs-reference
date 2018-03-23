@@ -7,30 +7,6 @@ items:
 
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-
-      Property: notebooks
-
-      Method: getActiveNotebook
-
-      Method: getActiveNotebookOrNull
-
-      Method: getActiveOutline
-
-      Method: getActiveOutlineOrNull
-
-      Method: getActivePage
-
-      Method: getActivePageOrNull
-
-      Method: getActiveSection
-
-      Method: getActiveSectionOrNull
-
-      Method: load
-
-      Method: navigateToPage
-
-      Method: navigateToPageWithClientUrl
     name: OneNote.Application
     fullName: onenote.OneNote.Application
     langs:

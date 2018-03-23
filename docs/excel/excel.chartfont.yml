@@ -5,15 +5,6 @@ items:
       This object represents the font attributes (font name, font size, color, etc.) for a chart object.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: bold
-      Property: color
-      Property: italic
-      Property: name
-      Property: size
-      Property: underline
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.ChartFont
     fullName: excel.Excel.ChartFont
     langs:

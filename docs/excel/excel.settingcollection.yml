@@ -5,14 +5,6 @@ items:
       Represents a collection of worksheet objects that are part of the workbook.
 
       \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
-      Property: items
-      Property: onSettingsChanged
-      Method: add
-      Method: getCount
-      Method: getItem
-      Method: getItemOrNullObject
-      Method: load
-      Method: toJSON
     name: Excel.SettingCollection
     fullName: excel.Excel.SettingCollection
     langs:

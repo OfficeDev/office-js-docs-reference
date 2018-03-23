@@ -5,13 +5,6 @@ items:
       Represents a collection of all the conditional formats that are overlap the range.
 
       \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
-      Property: items
-      Method: add
-      Method: clearAll
-      Method: getCount
-      Method: getItemAt
-      Method: load
-      Method: toJSON
     name: Excel.ConditionalFormatCollection
     fullName: excel.Excel.ConditionalFormatCollection
     langs:

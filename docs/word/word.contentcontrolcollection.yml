@@ -9,32 +9,6 @@ items:
 
 
       \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
-
-      Property: items
-
-      Method: getById
-
-      Method: getByIdOrNullObject
-
-      Method: getByTag
-
-      Method: getByTitle
-
-      Method: getByTypes
-
-      Method: getFirst
-
-      Method: getFirstOrNullObject
-
-      Method: getItem
-
-      Method: load
-
-      Method: toJSON
-
-      Method: track
-
-      Method: untrack
     name: Word.ContentControlCollection
     fullName: word.Word.ContentControlCollection
     langs:

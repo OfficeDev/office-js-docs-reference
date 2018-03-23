@@ -5,11 +5,6 @@ items:
       Enapsulates the formatting options for line elements.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: color
-      Method: clear
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.ChartLineFormat
     fullName: excel.Excel.ChartLineFormat
     langs:

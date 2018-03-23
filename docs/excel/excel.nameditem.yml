@@ -7,34 +7,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-
-      Property: comment
-
-      Property: name
-
-      Property: scope
-
-      Property: type
-
-      Property: value
-
-      Property: visible
-
-      Property: worksheet
-
-      Property: worksheetOrNullObject
-
-      Method: delete
-
-      Method: getRange
-
-      Method: getRangeOrNullObject
-
-      Method: load
-
-      Method: set
-
-      Method: toJSON
     name: Excel.NamedItem
     fullName: excel.Excel.NamedItem
     langs:

@@ -5,11 +5,6 @@ items:
       Represents a collection of InkWord objects.
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-      Property: count
-      Property: items
-      Method: getItem
-      Method: getItemAt
-      Method: load
     name: OneNote.InkWordCollection
     fullName: onenote.OneNote.InkWordCollection
     langs:

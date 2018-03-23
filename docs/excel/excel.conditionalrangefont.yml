@@ -5,15 +5,6 @@ items:
       This object represents the font attributes (font style,, color, etc.) for an object.
 
       \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
-      Property: bold
-      Property: color
-      Property: italic
-      Property: strikethrough
-      Property: underline
-      Method: clear
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.ConditionalRangeFont
     fullName: excel.Excel.ConditionalRangeFont
     langs:

@@ -5,31 +5,6 @@ items:
       Represents an Excel table.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: columns
-      Property: highlightFirstColumn
-      Property: highlightLastColumn
-      Property: id
-      Property: name
-      Property: rows
-      Property: showBandedColumns
-      Property: showBandedRows
-      Property: showFilterButton
-      Property: showHeaders
-      Property: showTotals
-      Property: sort
-      Property: style
-      Property: worksheet
-      Method: clearFilters
-      Method: convertToRange
-      Method: delete
-      Method: getDataBodyRange
-      Method: getHeaderRowRange
-      Method: getRange
-      Method: getTotalRowRange
-      Method: load
-      Method: reapplyFilters
-      Method: set
-      Method: toJSON
     name: Excel.Table
     fullName: excel.Excel.Table
     langs:

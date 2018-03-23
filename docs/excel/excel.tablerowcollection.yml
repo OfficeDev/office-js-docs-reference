@@ -11,20 +11,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-
-      Property: count
-
-      Property: items
-
-      Method: add
-
-      Method: getCount
-
-      Method: getItemAt
-
-      Method: load
-
-      Method: toJSON
     name: Excel.TableRowCollection
     fullName: excel.Excel.TableRowCollection
     langs:

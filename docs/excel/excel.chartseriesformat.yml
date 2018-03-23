@@ -5,11 +5,6 @@ items:
       encapsulates the format properties for the chart series
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: fill
-      Property: line
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.ChartSeriesFormat
     fullName: excel.Excel.ChartSeriesFormat
     langs:

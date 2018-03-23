@@ -5,15 +5,6 @@ items:
       A collection of all the chart objects on a worksheet.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: count
-      Property: items
-      Method: add
-      Method: getCount
-      Method: getItem
-      Method: getItemAt
-      Method: getItemOrNullObject
-      Method: load
-      Method: toJSON
     name: Excel.ChartCollection
     fullName: excel.Excel.ChartCollection
     langs:

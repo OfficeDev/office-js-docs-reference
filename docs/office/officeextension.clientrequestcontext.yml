@@ -4,18 +4,6 @@ items:
     summary: >-
       An abstract RequestContext object that facilitates requests to the host Office application. The "Excel.run" and
       "Word.run" methods provide a request context.
-
-      Property: requestHeaders
-
-      Property: trackedObjects
-
-      Method: load
-
-      Method: loadRecursive
-
-      Method: sync
-
-      Method: trace
     name: OfficeExtension.ClientRequestContext
     fullName: office.OfficeExtension.ClientRequestContext
     langs:

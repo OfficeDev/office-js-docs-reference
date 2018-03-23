@@ -7,16 +7,6 @@ items:
       be chained via ".then", and errors can be caught via ".catch". Remember to always use a ".catch" on the outer
       promise, and to return intermediary promises so as not to break the promise chain. When a "native" Promise
       implementation is available, OfficeExtension.Promise will switch to use the native Promise instead.
-
-      Method: all
-
-      Method: catch
-
-      Method: reject
-
-      Method: resolve
-
-      Method: then
     name: OfficeExtension.Promise
     fullName: office.OfficeExtension.Promise
     langs:

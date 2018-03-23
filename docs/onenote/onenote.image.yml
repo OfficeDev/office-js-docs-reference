@@ -5,16 +5,6 @@ items:
       Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object.
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-      Property: description
-      Property: height
-      Property: hyperlink
-      Property: id
-      Property: ocrData
-      Property: pageContent
-      Property: paragraph
-      Property: width
-      Method: getBase64Image
-      Method: load
     name: OneNote.Image
     fullName: onenote.OneNote.Image
     langs:

@@ -5,11 +5,6 @@ items:
       Encapsulates the format properties for the chart axis.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: font
-      Property: line
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.ChartAxisFormat
     fullName: excel.Excel.ChartAxisFormat
     langs:

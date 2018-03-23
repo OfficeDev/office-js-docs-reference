@@ -5,16 +5,6 @@ items:
       Represents the PageView class.
 
       \[ [API set: 1.1](http://bing.com?type=visio) \]
-      Property: zoom
-      Method: centerViewportOnShape
-      Method: fitToWindow
-      Method: getPosition
-      Method: getSelection
-      Method: isShapeInViewport
-      Method: load
-      Method: set
-      Method: setPosition
-      Method: toJSON
     name: Visio.PageView
     fullName: visio.Visio.PageView
     langs:

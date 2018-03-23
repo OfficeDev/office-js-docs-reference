@@ -5,12 +5,6 @@ items:
       A collection of all the chart points within a series inside a chart.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: count
-      Property: items
-      Method: getCount
-      Method: getItemAt
-      Method: load
-      Method: toJSON
     name: Excel.ChartPointsCollection
     fullName: excel.Excel.ChartPointsCollection
     langs:

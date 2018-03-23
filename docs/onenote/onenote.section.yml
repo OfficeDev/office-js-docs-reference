@@ -5,18 +5,6 @@ items:
       Represents a OneNote section. Sections can contain pages.
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-      Property: clientUrl
-      Property: id
-      Property: name
-      Property: notebook
-      Property: pages
-      Property: parentSectionGroup
-      Property: parentSectionGroupOrNull
-      Method: addPage
-      Method: copyToNotebook
-      Method: copyToSectionGroup
-      Method: insertSectionAsSibling
-      Method: load
     name: OneNote.Section
     fullName: onenote.OneNote.Section
     langs:

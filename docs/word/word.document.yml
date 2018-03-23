@@ -7,30 +7,6 @@ items:
 
 
       \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
-
-      Property: body
-
-      Property: contentControls
-
-      Property: properties
-
-      Property: saved
-
-      Property: sections
-
-      Method: getSelection
-
-      Method: load
-
-      Method: save
-
-      Method: set
-
-      Method: toJSON
-
-      Method: track
-
-      Method: untrack
     name: Word.Document
     fullName: word.Word.Document
     langs:

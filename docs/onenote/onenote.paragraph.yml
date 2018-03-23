@@ -5,24 +5,6 @@ items:
       A container for the visible content on a page. A Paragraph can contain any one ParagraphType type of content.
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-      Property: id
-      Property: image
-      Property: inkWords
-      Property: outline
-      Property: paragraphs
-      Property: parentParagraph
-      Property: parentParagraphOrNull
-      Property: parentTableCell
-      Property: parentTableCellOrNull
-      Property: richText
-      Property: table
-      Property: type
-      Method: delete
-      Method: insertHtmlAsSibling
-      Method: insertImageAsSibling
-      Method: insertRichTextAsSibling
-      Method: insertTableAsSibling
-      Method: load
     name: OneNote.Paragraph
     fullName: onenote.OneNote.Paragraph
     langs:

@@ -5,13 +5,6 @@ items:
       Represents a chart title object of a chart.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: format
-      Property: overlay
-      Property: text
-      Property: visible
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.ChartTitle
     fullName: excel.Excel.ChartTitle
     langs:

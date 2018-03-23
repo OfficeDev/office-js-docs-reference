@@ -5,59 +5,6 @@ items:
       Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: address
-      Property: addressLocal
-      Property: cellCount
-      Property: columnCount
-      Property: columnHidden
-      Property: columnIndex
-      Property: conditionalFormats
-      Property: format
-      Property: formulas
-      Property: formulasLocal
-      Property: formulasR1C1
-      Property: hidden
-      Property: numberFormat
-      Property: rowCount
-      Property: rowHidden
-      Property: rowIndex
-      Property: sort
-      Property: text
-      Property: values
-      Property: valueTypes
-      Property: worksheet
-      Method: calculate
-      Method: clear
-      Method: delete
-      Method: getBoundingRect
-      Method: getCell
-      Method: getColumn
-      Method: getColumnsAfter
-      Method: getColumnsBefore
-      Method: getEntireColumn
-      Method: getEntireRow
-      Method: getIntersection
-      Method: getIntersectionOrNullObject
-      Method: getLastCell
-      Method: getLastColumn
-      Method: getLastRow
-      Method: getOffsetRange
-      Method: getResizedRange
-      Method: getRow
-      Method: getRowsAbove
-      Method: getRowsBelow
-      Method: getUsedRange
-      Method: getUsedRangeOrNullObject
-      Method: getVisibleView
-      Method: insert
-      Method: load
-      Method: merge
-      Method: select
-      Method: set
-      Method: toJSON
-      Method: track
-      Method: unmerge
-      Method: untrack
     name: Excel.Range
     fullName: excel.Excel.Range
     langs:

@@ -5,14 +5,6 @@ items:
       Represents a OneNote notebook. Notebooks contain section groups and sections.
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-      Property: clientUrl
-      Property: id
-      Property: name
-      Property: sectionGroups
-      Property: sections
-      Method: addSection
-      Method: addSectionGroup
-      Method: load
     name: OneNote.Notebook
     fullName: onenote.OneNote.Notebook
     langs:

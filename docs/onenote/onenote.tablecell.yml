@@ -5,18 +5,6 @@ items:
       Represents a cell in a OneNote table.
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-      Property: cellIndex
-      Property: id
-      Property: paragraphs
-      Property: parentRow
-      Property: rowIndex
-      Property: shadingColor
-      Method: appendHtml
-      Method: appendImage
-      Method: appendRichText
-      Method: appendTable
-      Method: clear
-      Method: load
     name: OneNote.TableCell
     fullName: onenote.OneNote.TableCell
     langs:

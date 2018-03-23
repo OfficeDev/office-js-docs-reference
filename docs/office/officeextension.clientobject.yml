@@ -5,10 +5,6 @@ items:
       An abstract proxy object that represents an object in an Office document. You create proxy objects from the
       context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the
       proxy object state with the document by calling "context.sync()".
-
-      Property: context
-
-      Property: isNullObject
     name: OfficeExtension.ClientObject
     fullName: office.OfficeExtension.ClientObject
     langs:

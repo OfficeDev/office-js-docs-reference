@@ -5,10 +5,6 @@ items:
       Represents a point of a series in a chart.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: format
-      Property: value
-      Method: load
-      Method: toJSON
     name: Excel.ChartPoint
     fullName: excel.Excel.ChartPoint
     langs:

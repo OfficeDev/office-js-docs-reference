@@ -5,18 +5,6 @@ items:
       Represents a OneNote page.
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-      Property: clientUrl
-      Property: contents
-      Property: id
-      Property: inkAnalysisOrNull
-      Property: pageLevel
-      Property: parentSection
-      Property: title
-      Property: webUrl
-      Method: addOutline
-      Method: copyToSection
-      Method: insertPageAsSibling
-      Method: load
     name: OneNote.Page
     fullName: onenote.OneNote.Page
     langs:

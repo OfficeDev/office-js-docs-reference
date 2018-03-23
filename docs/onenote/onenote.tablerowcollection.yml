@@ -5,11 +5,6 @@ items:
       Contains a collection of TableRow objects.
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-      Property: count
-      Property: items
-      Method: getItem
-      Method: getItemAt
-      Method: load
     name: OneNote.TableRowCollection
     fullName: onenote.OneNote.TableRowCollection
     langs:

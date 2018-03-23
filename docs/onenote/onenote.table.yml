@@ -5,20 +5,6 @@ items:
       Represents a table in a OneNote page.
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-      Property: borderVisible
-      Property: columnCount
-      Property: id
-      Property: paragraph
-      Property: rowCount
-      Property: rows
-      Method: appendColumn
-      Method: appendRow
-      Method: clear
-      Method: getCell
-      Method: insertColumn
-      Method: insertRow
-      Method: load
-      Method: setShadingColor
     name: OneNote.Table
     fullName: onenote.OneNote.Table
     langs:

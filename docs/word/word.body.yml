@@ -5,42 +5,6 @@ items:
       Represents the body of a document or a section.
 
       \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
-      Property: contentControls
-      Property: font
-      Property: inlinePictures
-      Property: lists
-      Property: paragraphs
-      Property: parentBody
-      Property: parentBodyOrNullObject
-      Property: parentContentControl
-      Property: parentContentControlOrNullObject
-      Property: parentSection
-      Property: parentSectionOrNullObject
-      Property: style
-      Property: styleBuiltIn
-      Property: tables
-      Property: text
-      Property: type
-      Method: clear
-      Method: getHtml
-      Method: getOoxml
-      Method: getRange
-      Method: insertBreak
-      Method: insertContentControl
-      Method: insertFileFromBase64
-      Method: insertHtml
-      Method: insertInlinePictureFromBase64
-      Method: insertOoxml
-      Method: insertParagraph
-      Method: insertTable
-      Method: insertText
-      Method: load
-      Method: search
-      Method: select
-      Method: set
-      Method: toJSON
-      Method: track
-      Method: untrack
     name: Word.Body
     fullName: word.Word.Body
     langs:

@@ -5,25 +5,6 @@ items:
       Represents a chart object in a workbook.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: axes
-      Property: dataLabels
-      Property: format
-      Property: height
-      Property: left
-      Property: legend
-      Property: name
-      Property: series
-      Property: title
-      Property: top
-      Property: width
-      Property: worksheet
-      Method: delete
-      Method: getImage
-      Method: load
-      Method: set
-      Method: setData
-      Method: setPosition
-      Method: toJSON
     name: Excel.Chart
     fullName: excel.Excel.Chart
     langs:

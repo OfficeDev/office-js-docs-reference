@@ -5,11 +5,6 @@ items:
       Represents the background of a conditional range object.
 
       \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
-      Property: color
-      Method: clear
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.ConditionalRangeFill
     fullName: excel.Excel.ConditionalRangeFill
     langs:

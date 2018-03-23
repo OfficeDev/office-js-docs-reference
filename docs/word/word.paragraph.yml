@@ -5,66 +5,6 @@ items:
       Represents a single paragraph in a selection, range, content control, or document body.
 
       \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
-      Property: alignment
-      Property: contentControls
-      Property: firstLineIndent
-      Property: font
-      Property: inlinePictures
-      Property: isLastParagraph
-      Property: isListItem
-      Property: leftIndent
-      Property: lineSpacing
-      Property: lineUnitAfter
-      Property: lineUnitBefore
-      Property: list
-      Property: listItem
-      Property: listItemOrNullObject
-      Property: listOrNullObject
-      Property: outlineLevel
-      Property: parentBody
-      Property: parentContentControl
-      Property: parentContentControlOrNullObject
-      Property: parentTable
-      Property: parentTableCell
-      Property: parentTableCellOrNullObject
-      Property: parentTableOrNullObject
-      Property: rightIndent
-      Property: spaceAfter
-      Property: spaceBefore
-      Property: style
-      Property: styleBuiltIn
-      Property: tableNestingLevel
-      Property: text
-      Method: attachToList
-      Method: clear
-      Method: delete
-      Method: detachFromList
-      Method: getHtml
-      Method: getNext
-      Method: getNextOrNullObject
-      Method: getOoxml
-      Method: getPrevious
-      Method: getPreviousOrNullObject
-      Method: getRange
-      Method: getTextRanges
-      Method: insertBreak
-      Method: insertContentControl
-      Method: insertFileFromBase64
-      Method: insertHtml
-      Method: insertInlinePictureFromBase64
-      Method: insertOoxml
-      Method: insertParagraph
-      Method: insertTable
-      Method: insertText
-      Method: load
-      Method: search
-      Method: select
-      Method: set
-      Method: split
-      Method: startNewList
-      Method: toJSON
-      Method: track
-      Method: untrack
     name: Word.Paragraph
     fullName: word.Word.Paragraph
     langs:

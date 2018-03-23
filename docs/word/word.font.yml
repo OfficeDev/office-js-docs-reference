@@ -5,22 +5,6 @@ items:
       Represents a font.
 
       \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
-      Property: bold
-      Property: color
-      Property: doubleStrikeThrough
-      Property: highlightColor
-      Property: italic
-      Property: name
-      Property: size
-      Property: strikeThrough
-      Property: subscript
-      Property: superscript
-      Property: underline
-      Method: load
-      Method: set
-      Method: toJSON
-      Method: track
-      Method: untrack
     name: Word.Font
     fullName: word.Word.Font
     langs:

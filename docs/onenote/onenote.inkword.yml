@@ -5,11 +5,6 @@ items:
       A container for the ink in a word in a paragraph.
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-      Property: id
-      Property: languageId
-      Property: paragraph
-      Property: wordAlternates
-      Method: load
     name: OneNote.InkWord
     fullName: onenote.OneNote.InkWord
     langs:

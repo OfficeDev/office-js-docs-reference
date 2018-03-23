@@ -5,12 +5,6 @@ items:
       Represents a collection of section groups.
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-      Property: count
-      Property: items
-      Method: getByName
-      Method: getItem
-      Method: getItemAt
-      Method: load
     name: OneNote.SectionGroupCollection
     fullName: onenote.OneNote.SectionGroupCollection
     langs:

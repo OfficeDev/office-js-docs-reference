@@ -5,10 +5,6 @@ items:
       Represents a group of ink strokes.
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-      Property: id
-      Property: inkStrokes
-      Property: pageContent
-      Method: load
     name: OneNote.FloatingInk
     fullName: onenote.OneNote.FloatingInk
     langs:

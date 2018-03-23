@@ -7,16 +7,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
-
-      Property: format
-
-      Property: rule
-
-      Method: load
-
-      Method: set
-
-      Method: toJSON
     name: Excel.PresetCriteriaConditionalFormat
     fullName: excel.Excel.PresetCriteriaConditionalFormat
     langs:

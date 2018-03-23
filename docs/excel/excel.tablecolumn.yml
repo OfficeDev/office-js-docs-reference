@@ -5,19 +5,6 @@ items:
       Represents a column in a table.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: filter
-      Property: id
-      Property: index
-      Property: name
-      Property: values
-      Method: delete
-      Method: getDataBodyRange
-      Method: getHeaderRowRange
-      Method: getRange
-      Method: getTotalRowRange
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.TableColumn
     fullName: excel.Excel.TableColumn
     langs:

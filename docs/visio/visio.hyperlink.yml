@@ -5,12 +5,6 @@ items:
       Represents the Hyperlink.
 
       \[ [API set: 1.1](http://bing.com?type=visio) \]
-      Property: address
-      Property: description
-      Property: extraInfo
-      Property: subAddress
-      Method: load
-      Method: toJSON
     name: Visio.Hyperlink
     fullName: visio.Visio.Hyperlink
     langs:

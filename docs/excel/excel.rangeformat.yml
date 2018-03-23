@@ -5,20 +5,6 @@ items:
       A format object encapsulating the range's font, fill, borders, alignment, and other properties.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: borders
-      Property: columnWidth
-      Property: fill
-      Property: font
-      Property: horizontalAlignment
-      Property: protection
-      Property: rowHeight
-      Property: verticalAlignment
-      Property: wrapText
-      Method: autofitColumns
-      Method: autofitRows
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.RangeFormat
     fullName: excel.Excel.RangeFormat
     langs:

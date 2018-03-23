@@ -7,26 +7,6 @@ items:
 
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-
-      Property: id
-
-      Property: image
-
-      Property: ink
-
-      Property: left
-
-      Property: outline
-
-      Property: parentPage
-
-      Property: top
-
-      Property: type
-
-      Method: delete
-
-      Method: load
     name: OneNote.PageContent
     fullName: onenote.OneNote.PageContent
     langs:

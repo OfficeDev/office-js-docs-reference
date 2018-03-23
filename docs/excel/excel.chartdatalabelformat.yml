@@ -5,11 +5,6 @@ items:
       Encapsulates the format properties for the chart data labels.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: fill
-      Property: font
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.ChartDataLabelFormat
     fullName: excel.Excel.ChartDataLabelFormat
     langs:

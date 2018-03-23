@@ -5,11 +5,6 @@ items:
       Provides access to the office art formatting for chart title.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: fill
-      Property: font
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.ChartTitleFormat
     fullName: excel.Excel.ChartTitleFormat
     langs:

@@ -5,13 +5,6 @@ items:
       Contains a collection of \[range\](range.md) objects.
 
       \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
-      Property: items
-      Method: getFirst
-      Method: getFirstOrNullObject
-      Method: load
-      Method: toJSON
-      Method: track
-      Method: untrack
     name: Word.RangeCollection
     fullName: word.Word.RangeCollection
     langs:

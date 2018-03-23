@@ -5,12 +5,6 @@ items:
       Represents a collection of chart series.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: count
-      Property: items
-      Method: getCount
-      Method: getItemAt
-      Method: load
-      Method: toJSON
     name: Excel.ChartSeriesCollection
     fullName: excel.Excel.ChartSeriesCollection
     langs:

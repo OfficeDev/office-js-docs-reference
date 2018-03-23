@@ -5,16 +5,6 @@ items:
       Represents an Office.js binding that is defined in the workbook.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: id
-      Property: onDataChanged
-      Property: onSelectionChanged
-      Property: type
-      Method: delete
-      Method: getRange
-      Method: getTable
-      Method: getText
-      Method: load
-      Method: toJSON
     name: Excel.Binding
     fullName: excel.Excel.Binding
     langs:

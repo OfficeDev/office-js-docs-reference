@@ -5,15 +5,6 @@ items:
       This object represents the font attributes (font name, font size, color, etc.) for an object.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: bold
-      Property: color
-      Property: italic
-      Property: name
-      Property: size
-      Property: underline
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.RangeFont
     fullName: excel.Excel.RangeFont
     langs:

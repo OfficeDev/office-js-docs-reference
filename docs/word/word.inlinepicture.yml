@@ -5,38 +5,6 @@ items:
       Represents an inline picture.
 
       \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
-      Property: altTextDescription
-      Property: altTextTitle
-      Property: height
-      Property: hyperlink
-      Property: lockAspectRatio
-      Property: paragraph
-      Property: parentContentControl
-      Property: parentContentControlOrNullObject
-      Property: parentTable
-      Property: parentTableCell
-      Property: parentTableCellOrNullObject
-      Property: parentTableOrNullObject
-      Property: width
-      Method: delete
-      Method: getBase64ImageSrc
-      Method: getNext
-      Method: getNextOrNullObject
-      Method: getRange
-      Method: insertBreak
-      Method: insertContentControl
-      Method: insertFileFromBase64
-      Method: insertHtml
-      Method: insertInlinePictureFromBase64
-      Method: insertOoxml
-      Method: insertParagraph
-      Method: insertText
-      Method: load
-      Method: select
-      Method: set
-      Method: toJSON
-      Method: track
-      Method: untrack
     name: Word.InlinePicture
     fullName: word.Word.InlinePicture
     langs:

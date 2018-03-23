@@ -5,12 +5,6 @@ items:
       Setting represents a key-value pair of a setting persisted to the document.
 
       \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
-      Property: key
-      Property: value
-      Method: delete
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.Setting
     fullName: excel.Excel.Setting
     langs:

@@ -421,7 +421,7 @@ items:
                 uid: office.OfficeExtension.RequestUrlAndHeaderInfo
               - name: TrackedObjects
                 uid: office.OfficeExtension.TrackedObjects
-      - name: OneNote
+      - name: Onenote
         uid: onenote
         items:
           - name: Alignment

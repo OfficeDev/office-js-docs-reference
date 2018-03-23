@@ -5,29 +5,6 @@ items:
       An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-      Property: charts
-      Property: id
-      Property: name
-      Property: names
-      Property: pivotTables
-      Property: position
-      Property: protection
-      Property: tables
-      Property: visibility
-      Method: activate
-      Method: calculate
-      Method: delete
-      Method: getCell
-      Method: getNext
-      Method: getNextOrNullObject
-      Method: getPrevious
-      Method: getPreviousOrNullObject
-      Method: getRange
-      Method: getUsedRange
-      Method: getUsedRangeOrNullObject
-      Method: load
-      Method: set
-      Method: toJSON
     name: Excel.Worksheet
     fullName: excel.Excel.Worksheet
     langs:

@@ -5,17 +5,6 @@ items:
       Represents a OneNote section group. Section groups can contain sections and other section groups.
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-      Property: clientUrl
-      Property: id
-      Property: name
-      Property: notebook
-      Property: parentSectionGroup
-      Property: parentSectionGroupOrNull
-      Property: sectionGroups
-      Property: sections
-      Method: addSection
-      Method: addSectionGroup
-      Method: load
     name: OneNote.SectionGroup
     fullName: onenote.OneNote.SectionGroup
     langs:

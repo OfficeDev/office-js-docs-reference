@@ -5,10 +5,6 @@ items:
       Represents ink analysis data for an identified paragraph formed by ink strokes.
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-      Property: id
-      Property: inkAnalysis
-      Property: lines
-      Method: load
     name: OneNote.InkAnalysisParagraph
     fullName: onenote.OneNote.InkAnalysisParagraph
     langs:

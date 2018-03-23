@@ -11,20 +11,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
-
-      Property: index
-
-      Property: values
-
-      Method: delete
-
-      Method: getRange
-
-      Method: load
-
-      Method: set
-
-      Method: toJSON
     name: Excel.TableRow
     fullName: excel.Excel.TableRow
     langs:

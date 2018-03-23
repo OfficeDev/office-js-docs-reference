@@ -5,21 +5,6 @@ items:
       Represents the Document class.
 
       \[ [API set: 1.1](http://bing.com?type=visio) \]
-      Property: application
-      Property: onDataRefreshComplete
-      Property: onDocumentLoadComplete
-      Property: onPageLoadComplete
-      Property: onSelectionChanged
-      Property: onShapeMouseEnter
-      Property: onShapeMouseLeave
-      Property: pages
-      Property: view
-      Method: getActivePage
-      Method: load
-      Method: set
-      Method: setActivePage
-      Method: startDataRefresh
-      Method: toJSON
     name: Visio.Document
     fullName: visio.Visio.Document
     langs:

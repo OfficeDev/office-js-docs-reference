@@ -4,10 +4,6 @@ items:
     summary: >-
       Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more
       information.
-
-      Method: add
-
-      Method: remove
     name: OfficeExtension.TrackedObjects
     fullName: office.OfficeExtension.TrackedObjects
     langs:

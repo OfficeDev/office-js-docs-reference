@@ -5,10 +5,6 @@ items:
       An object containing the result of a function-evaluation operation
 
       \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
-      Property: error
-      Property: value
-      Method: load
-      Method: toJSON
     name: Excel.FunctionResult
     fullName: excel.Excel.FunctionResult
     langs:

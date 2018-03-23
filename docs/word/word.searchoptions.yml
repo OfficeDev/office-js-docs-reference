@@ -5,18 +5,6 @@ items:
       Specifies the options to be included in a search operation.
 
       \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
-      Property: ignorePunct
-      Property: ignoreSpace
-      Property: matchCase
-      Property: matchPrefix
-      Property: matchSuffix
-      Property: matchWholeWord
-      Property: matchWildcards
-      Property: matchWildCards
-      Method: load
-      Method: newObject
-      Method: set
-      Method: toJSON
     name: Word.SearchOptions
     fullName: word.Word.SearchOptions
     langs:

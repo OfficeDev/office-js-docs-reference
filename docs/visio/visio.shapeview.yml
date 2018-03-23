@@ -5,12 +5,6 @@ items:
       Represents the ShapeView class.
 
       \[ [API set: 1.1](http://bing.com?type=visio) \]
-      Property: highlight
-      Method: addOverlay
-      Method: load
-      Method: removeOverlay
-      Method: set
-      Method: toJSON
     name: Visio.ShapeView
     fullName: visio.Visio.ShapeView
     langs:

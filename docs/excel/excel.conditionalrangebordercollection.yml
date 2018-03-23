@@ -5,16 +5,6 @@ items:
       Represents the border objects that make up range border.
 
       \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
-      Property: bottom
-      Property: count
-      Property: items
-      Property: left
-      Property: right
-      Property: top
-      Method: getItem
-      Method: getItemAt
-      Method: load
-      Method: toJSON
     name: Excel.ConditionalRangeBorderCollection
     fullName: excel.Excel.ConditionalRangeBorderCollection
     langs:

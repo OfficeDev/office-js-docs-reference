@@ -5,12 +5,6 @@ items:
       Represents the protection of a sheet object.
 
       \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
-      Property: options
-      Property: protected
-      Method: load
-      Method: protect
-      Method: toJSON
-      Method: unprotect
     name: Excel.WorksheetProtection
     fullName: excel.Excel.WorksheetProtection
     langs:

@@ -5,12 +5,6 @@ items:
       Represents a collection of pages.
 
       \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
-      Property: count
-      Property: items
-      Method: getByTitle
-      Method: getItem
-      Method: getItemAt
-      Method: load
     name: OneNote.PageCollection
     fullName: onenote.OneNote.PageCollection
     langs:
