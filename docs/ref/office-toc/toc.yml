@@ -1,6 +1,6 @@
 items:
   - name: API reference
-    href: ~/overview/office.md
+    href: ~/office
     items:
       - name: Excel
         uid: excel
