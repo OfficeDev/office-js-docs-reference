@@ -29,8 +29,10 @@
   ],
   "JoinTOCPlugin": [
     {
-      "TopLevelTOC": "office-docs-ref-javascript/toc.yml",
-      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+      "ReferenceTOC": "docs/office-toc/toc.yml",
+      "ReferenceTOCUrl": "/javascript/api/office-toc/toc.json",
+      "ConceptualTOC": "docs/overview/toc.yml",
+      "ConceptualTOCUrl": "/javascript/api/overview/toc.json"
     }
   ],
   "notification_subscribers": [],
