@@ -31,8 +31,8 @@
     {
       "ReferenceTOC": "docs/ref/office-toc/toc.yml",
       "ReferenceTOCUrl": "/javascript/api/ref/office-toc/toc.json",
-      "ConceptualTOC": "docs/overview/toc.yml",
-      "ConceptualTOCUrl": "/javascript/api/overview/toc.json"
+      "ConceptualTOC": "docs/office/toc.yml",
+      "ConceptualTOCUrl": "/javascript/api/office/toc.json"
     }
   ],
   "notification_subscribers": [],
