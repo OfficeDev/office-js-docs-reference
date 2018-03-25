@@ -1,6 +1,6 @@
 items:
   - name: JavaScript API for Office
-    href: ../docs-ref-conceptual/javascript-api-for-office.md
+    href: ~/docs-ref-conceptual/javascript-api-for-office.md
   - name: API open specifications
     href: ~/docs-ref-conceptual/openspec.md
   - name: Manifest
