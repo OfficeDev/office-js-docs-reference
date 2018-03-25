@@ -3,26 +3,11 @@
     "content": [
       {
         "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ],
-        "dest": "api"
-      },
-      {
-        "files": [
           "**/toc.md",
           "**/toc.yml"
         ],
         "src" : "docs-ref-autogen",
-        "dest": "api/office_js_ref_toc"
+        "dest": "api/office_ref_toc"
       },
       {
         "files": [
