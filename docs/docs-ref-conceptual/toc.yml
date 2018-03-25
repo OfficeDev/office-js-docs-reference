@@ -1,15 +1,15 @@
 items:
   - name: JavaScript API for Office
-    href: javascript-api-for-office.md
+    href: ../docs-ref-conceptual/javascript-api-for-office.md
   - name: API open specifications
-    href: openspec.md
+    href: ~/docs-ref-conceptual/openspec.md
   - name: Manifest
     items:
       - name: AllowSnapshot
-        href: manifest/allowsnapshot.md
+        href: ~/docs-ref-conceptual/manifest/allowsnapshot.md
       - name: AlternateId
-        href: manifest/alternateid.md
+        href: ~/docs-ref-conceptual/manifest/alternateid.md
       - name: AppDomain
-        href: manifest/appdomain.md
+        href: ~/docs-ref-conceptual/manifest/appdomain.md
       - name: AppDomains
-        href: manifest/appdomains.md
+        href: ~/docs-ref-conceptual/manifest/appdomains.md
