@@ -15,6 +15,38 @@
           "ThirdPartyNotices"
         ],
         "dest": "api"
+      },
+      {
+        "files": [
+          "**/toc.md",
+          "**/toc.yml"
+        ],
+        "src" : "docs-ref-autogen",
+        "dest": "api/office_js_ref_toc"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "src": "docs-ref-conceptual",
+        "dest": "office",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "src": "docs-ref-autogen",
+        "dest": "api",
+        "exclude": [
+          "**/*..yml",
+          "*/toc.yml"
+        ]
       }
     ],
     "resource": [
