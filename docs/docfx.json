@@ -21,7 +21,7 @@
           "**/toc.md",
           "**/toc.yml"
         ],
-        "src" : "docs/docs-ref-autogen",
+        "src" : "docs-ref-autogen",
         "dest": "api/office_js_ref_toc"
       },
       {
@@ -41,7 +41,7 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "src": "docs/docs-ref-autogen",
+        "src": "docs-ref-autogen",
         "dest": "api",
         "exclude": [
           "**/*..yml",
