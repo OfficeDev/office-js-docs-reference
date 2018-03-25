@@ -29,9 +29,9 @@
   ],
   "JoinTOCPlugin": [
     {
-      "ReferenceTOC": "docs-ref-autogen/toc.yml",
+      "ReferenceTOC": "docs/docs-ref-autogen/toc.yml",
       "ReferenceTOCUrl": "/javascript/api/api/office_js_ref_toc/toc.json",
-      "ConceptualTOC": "docs-ref-conceptual/toc.yml",
+      "ConceptualTOC": "docs/docs-ref-conceptual/toc.yml",
       "ConceptualTOCUrl": "/javascript/office/toc.json"
     }
   ],
