@@ -11,14 +11,6 @@
       },
       {
         "files": [
-          "**/toc.md",
-          "**/toc.yml"
-        ],
-        "src" : "docs-ref-conceptual",
-        "dest": "office/office_conceptual_toc"
-      },
-      {
-        "files": [
           "**/*.md",
           "**/*.yml"
         ],

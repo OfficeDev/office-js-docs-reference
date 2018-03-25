@@ -32,7 +32,7 @@
       "ReferenceTOC": "docs/docs-ref-autogen/toc.yml",
       "ReferenceTOCUrl": "/javascript/api/office_ref_toc/toc.json",
       "ConceptualTOC": "docs/docs-ref-conceptual/toc.yml",
-      "ConceptualTOCUrl": "/javascript/office/office_conceptual_toc/toc.json"
+      "ConceptualTOCUrl": "/javascript/office/toc.json"
     }
   ],
   "notification_subscribers": [],
