@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.InkAnalysisParagraphCollection
+    summary: |-
+      Represents a collection of InkAnalysisParagraph objects.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: OneNote.InkAnalysisParagraphCollection
+    fullName: onenote.OneNote.InkAnalysisParagraphCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.InkAnalysisParagraphCollection.count
+      - onenote.OneNote.InkAnalysisParagraphCollection.getItem
+      - onenote.OneNote.InkAnalysisParagraphCollection.getItemAt
+      - onenote.OneNote.InkAnalysisParagraphCollection.items
+      - onenote.OneNote.InkAnalysisParagraphCollection.load
+  - uid: onenote.OneNote.InkAnalysisParagraphCollection.count
+    summary: |-
+      Returns the number of InkAnalysisParagraphs in the page. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: count
+    fullName: onenote.OneNote.InkAnalysisParagraphCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.InkAnalysisParagraphCollection.getItem
+    summary: Gets a InkAnalysisParagraph object by ID or by its index in the collection. Read-only.
+    name: getItem(index)
+    fullName: onenote.OneNote.InkAnalysisParagraphCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number | string): OneNote.InkAnalysisParagraph;'
+      return:
+        type:
+          - OneNote.InkAnalysisParagraph
+        description: ''
+      parameters:
+        - id: index
+          description: >-
+            The ID of the InkAnalysisParagraph object, or the index location of the InkAnalysisParagraph object in the
+            collection. \[Api set: OneNoteApi 1.1\]
+          type:
+            - number | string
+  - uid: onenote.OneNote.InkAnalysisParagraphCollection.getItemAt
+    summary: Gets a InkAnalysisParagraph on its position in the collection.
+    name: getItemAt(index)
+    fullName: onenote.OneNote.InkAnalysisParagraphCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): OneNote.InkAnalysisParagraph;'
+      return:
+        type:
+          - OneNote.InkAnalysisParagraph
+        description: ''
+      parameters:
+        - id: index
+          description: 'Index value of the object to be retrieved. Zero-indexed. \[Api set: OneNoteApi 1.1\]'
+          type:
+            - number
+  - uid: onenote.OneNote.InkAnalysisParagraphCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: onenote.OneNote.InkAnalysisParagraphCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<OneNote.InkAnalysisParagraph>;'
+      return:
+        type:
+          - Array<OneNote.InkAnalysisParagraph>
+  - uid: onenote.OneNote.InkAnalysisParagraphCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.InkAnalysisParagraphCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.InkAnalysisParagraphCollection;'
+      return:
+        type:
+          - OneNote.InkAnalysisParagraphCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'

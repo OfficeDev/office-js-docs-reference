@@ -1,0 +1,369 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Paragraph
+    summary: |-
+      A container for the visible content on a page. A Paragraph can contain any one ParagraphType type of content.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: OneNote.Paragraph
+    fullName: onenote.OneNote.Paragraph
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.Paragraph.delete
+      - onenote.OneNote.Paragraph.id
+      - onenote.OneNote.Paragraph.image
+      - onenote.OneNote.Paragraph.inkWords
+      - onenote.OneNote.Paragraph.insertHtmlAsSibling
+      - onenote.OneNote.Paragraph.insertImageAsSibling
+      - onenote.OneNote.Paragraph.insertRichTextAsSibling
+      - onenote.OneNote.Paragraph.insertTableAsSibling
+      - onenote.OneNote.Paragraph.load
+      - onenote.OneNote.Paragraph.outline
+      - onenote.OneNote.Paragraph.paragraphs
+      - onenote.OneNote.Paragraph.parentParagraph
+      - onenote.OneNote.Paragraph.parentParagraphOrNull
+      - onenote.OneNote.Paragraph.parentTableCell
+      - onenote.OneNote.Paragraph.parentTableCellOrNull
+      - onenote.OneNote.Paragraph.richText
+      - onenote.OneNote.Paragraph.table
+      - onenote.OneNote.Paragraph.type
+  - uid: onenote.OneNote.Paragraph.delete
+    summary: |-
+      Deletes the paragraph
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: delete()
+    fullName: onenote.OneNote.Paragraph.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: onenote.OneNote.Paragraph.id
+    summary: |-
+      Gets the ID of the Paragraph object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: id
+    fullName: onenote.OneNote.Paragraph.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.Paragraph.image
+    summary: |-
+      Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: image
+    fullName: onenote.OneNote.Paragraph.image
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'image: OneNote.Image;'
+      return:
+        type:
+          - OneNote.Image
+  - uid: onenote.OneNote.Paragraph.inkWords
+    summary: |-
+      Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: inkWords
+    fullName: onenote.OneNote.Paragraph.inkWords
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inkWords: OneNote.InkWordCollection;'
+      return:
+        type:
+          - OneNote.InkWordCollection
+  - uid: onenote.OneNote.Paragraph.insertHtmlAsSibling
+    summary: Inserts the specified HTML content
+    name: 'insertHtmlAsSibling(insertLocation, html)'
+    fullName: onenote.OneNote.Paragraph.insertHtmlAsSibling
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertHtmlAsSibling(insertLocation: string, html: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: insertLocation
+          description: The location of new contents relative to the current Paragraph.
+          type:
+            - string
+        - id: html
+          description: >-
+            An HTML string that describes the visual presentation of the content. See \[supported
+            HTML\](../../docs/onenote/onenote-add-ins-page-content.md\#supported-html) for the OneNote add-ins
+            JavaScript API. \[Api set: OneNoteApi 1.1\]
+          type:
+            - string
+  - uid: onenote.OneNote.Paragraph.insertImageAsSibling
+    summary: Inserts the image at the specified insert location..
+    name: 'insertImageAsSibling(insertLocation, base64EncodedImage, width, height)'
+    fullName: onenote.OneNote.Paragraph.insertImageAsSibling
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertImageAsSibling(insertLocation: string, base64EncodedImage: string, width: number, height: number):
+        OneNote.Image;
+      return:
+        type:
+          - OneNote.Image
+        description: ''
+      parameters:
+        - id: insertLocation
+          description: The location of the table relative to the current Paragraph.
+          type:
+            - string
+        - id: base64EncodedImage
+          description: HTML string to append.
+          type:
+            - string
+        - id: width
+          description: Optional. Width in the unit of Points. The default value is null and image width will be respected.
+          type:
+            - number
+        - id: height
+          description: >-
+            Optional. Height in the unit of Points. The default value is null and image height will be respected. \[Api
+            set: OneNoteApi 1.1\]
+          type:
+            - number
+  - uid: onenote.OneNote.Paragraph.insertRichTextAsSibling
+    summary: Inserts the paragraph text at the specifiec insert location.
+    name: 'insertRichTextAsSibling(insertLocation, paragraphText)'
+    fullName: onenote.OneNote.Paragraph.insertRichTextAsSibling
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertRichTextAsSibling(insertLocation: string, paragraphText: string): OneNote.RichText;'
+      return:
+        type:
+          - OneNote.RichText
+        description: ''
+      parameters:
+        - id: insertLocation
+          description: The location of the table relative to the current Paragraph.
+          type:
+            - string
+        - id: paragraphText
+          description: 'HTML string to append. \[Api set: OneNoteApi 1.1\]'
+          type:
+            - string
+  - uid: onenote.OneNote.Paragraph.insertTableAsSibling
+    summary: Adds a table with the specified number of rows and columns before or after the current paragraph.
+    name: 'insertTableAsSibling(insertLocation, rowCount, columnCount, values)'
+    fullName: onenote.OneNote.Paragraph.insertTableAsSibling
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertTableAsSibling(insertLocation: string, rowCount: number, columnCount: number, values?:
+        Array<Array<string>>): OneNote.Table;
+      return:
+        type:
+          - OneNote.Table
+        description: ''
+      parameters:
+        - id: insertLocation
+          description: The location of the table relative to the current Paragraph.
+          type:
+            - string
+        - id: rowCount
+          description: The number of rows in the table.
+          type:
+            - number
+        - id: columnCount
+          description: The number of columns in the table.
+          type:
+            - number
+        - id: values
+          description: >-
+            Optional 2D array. Cells are filled if the corresponding strings are specified in the array. \[Api set:
+            OneNoteApi 1.1\]
+          type:
+            - Array<Array<string>>
+  - uid: onenote.OneNote.Paragraph.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.Paragraph.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.Paragraph;'
+      return:
+        type:
+          - OneNote.Paragraph
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: onenote.OneNote.Paragraph.outline
+    summary: |-
+      Gets the Outline object that contains the Paragraph. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: outline
+    fullName: onenote.OneNote.Paragraph.outline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'outline: OneNote.Outline;'
+      return:
+        type:
+          - OneNote.Outline
+  - uid: onenote.OneNote.Paragraph.paragraphs
+    summary: |-
+      The collection of paragraphs under this paragraph. Read only
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: paragraphs
+    fullName: onenote.OneNote.Paragraph.paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraphs: OneNote.ParagraphCollection;'
+      return:
+        type:
+          - OneNote.ParagraphCollection
+  - uid: onenote.OneNote.Paragraph.parentParagraph
+    summary: |-
+      Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: parentParagraph
+    fullName: onenote.OneNote.Paragraph.parentParagraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentParagraph: OneNote.Paragraph;'
+      return:
+        type:
+          - OneNote.Paragraph
+  - uid: onenote.OneNote.Paragraph.parentParagraphOrNull
+    summary: |-
+      Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: parentParagraphOrNull
+    fullName: onenote.OneNote.Paragraph.parentParagraphOrNull
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentParagraphOrNull: OneNote.Paragraph;'
+      return:
+        type:
+          - OneNote.Paragraph
+  - uid: onenote.OneNote.Paragraph.parentTableCell
+    summary: >-
+      Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws
+      ItemNotFound. Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: parentTableCell
+    fullName: onenote.OneNote.Paragraph.parentTableCell
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCell: OneNote.TableCell;'
+      return:
+        type:
+          - OneNote.TableCell
+  - uid: onenote.OneNote.Paragraph.parentTableCellOrNull
+    summary: >-
+      Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
+      Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: parentTableCellOrNull
+    fullName: onenote.OneNote.Paragraph.parentTableCellOrNull
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCellOrNull: OneNote.TableCell;'
+      return:
+        type:
+          - OneNote.TableCell
+  - uid: onenote.OneNote.Paragraph.richText
+    summary: |-
+      Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: richText
+    fullName: onenote.OneNote.Paragraph.richText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'richText: OneNote.RichText;'
+      return:
+        type:
+          - OneNote.RichText
+  - uid: onenote.OneNote.Paragraph.table
+    summary: |-
+      Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: table
+    fullName: onenote.OneNote.Paragraph.table
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'table: OneNote.Table;'
+      return:
+        type:
+          - OneNote.Table
+  - uid: onenote.OneNote.Paragraph.type
+    summary: |-
+      Gets the type of the Paragraph object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: type
+    fullName: onenote.OneNote.Paragraph.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: string;'
+      return:
+        type:
+          - string

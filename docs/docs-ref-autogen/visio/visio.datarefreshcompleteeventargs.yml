@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.DataRefreshCompleteEventArgs
+    summary: |-
+      Provides information about the document that raised the DataRefreshComplete event.
+
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
+    name: Visio.DataRefreshCompleteEventArgs
+    fullName: visio.Visio.DataRefreshCompleteEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.DataRefreshCompleteEventArgs.document
+      - visio.Visio.DataRefreshCompleteEventArgs.success
+  - uid: visio.Visio.DataRefreshCompleteEventArgs.document
+    summary: |-
+      Gets the document object that raised the DataRefreshComplete event.
+
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
+    name: document
+    fullName: visio.Visio.DataRefreshCompleteEventArgs.document
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'document: Visio.Document;'
+      return:
+        type:
+          - Visio.Document
+  - uid: visio.Visio.DataRefreshCompleteEventArgs.success
+    summary: |-
+      Gets the success/failure of the DataRefreshComplete event.
+
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
+    name: success
+    fullName: visio.Visio.DataRefreshCompleteEventArgs.success
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'success: boolean;'
+      return:
+        type:
+          - boolean

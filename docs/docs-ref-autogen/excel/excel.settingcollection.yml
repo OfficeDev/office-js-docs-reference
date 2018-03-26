@@ -1,0 +1,194 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.SettingCollection
+    summary: |-
+      Represents a collection of worksheet objects that are part of the workbook.
+
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+    name: Excel.SettingCollection
+    fullName: excel.Excel.SettingCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.SettingCollection.add
+      - excel.Excel.SettingCollection.getCount
+      - excel.Excel.SettingCollection.getItem
+      - excel.Excel.SettingCollection.getItemOrNullObject
+      - excel.Excel.SettingCollection.items
+      - excel.Excel.SettingCollection.load
+      - excel.Excel.SettingCollection.onSettingsChanged
+      - excel.Excel.SettingCollection.toJSON
+  - uid: excel.Excel.SettingCollection.add
+    summary: |-
+      Sets or adds the specified setting to the workbook.
+
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+    name: 'add(key, value)'
+    fullName: excel.Excel.SettingCollection.add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(key: string, value: string | number | boolean | Array<any> | any): Excel.Setting;'
+      return:
+        type:
+          - Excel.Setting
+        description: ''
+      parameters:
+        - id: key
+          description: The Key of the new setting.
+          type:
+            - string
+        - id: value
+          description: The Value for the new setting.
+          type:
+            - string | number | boolean | Array<any> | any
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const settings = context.workbook.settings; 
+          settings.onSettingsChanged.add(onChangedSetting);
+          OfficeHelpers.UI.notify("Handler registered", "");
+
+          await context.sync();
+      });
+      ```
+  - uid: excel.Excel.SettingCollection.getCount
+    summary: |-
+      Gets the number of Settings in the collection.
+
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+    name: getCount()
+    fullName: excel.Excel.SettingCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: excel.Excel.SettingCollection.getItem
+    summary: |-
+      Gets a Setting entry via the key.
+
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+    name: getItem(key)
+    fullName: excel.Excel.SettingCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Excel.Setting;'
+      return:
+        type:
+          - Excel.Setting
+        description: ''
+      parameters:
+        - id: key
+          description: Key of the setting.
+          type:
+            - string
+  - uid: excel.Excel.SettingCollection.getItemOrNullObject
+    summary: |-
+      Gets a Setting entry via the key. If the Setting does not exist, will return a null object.
+
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+    name: getItemOrNullObject(key)
+    fullName: excel.Excel.SettingCollection.getItemOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Excel.Setting;'
+      return:
+        type:
+          - Excel.Setting
+        description: ''
+      parameters:
+        - id: key
+          description: The key of the setting.
+          type:
+            - string
+  - uid: excel.Excel.SettingCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: excel.Excel.SettingCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Array<Excel.Setting>;'
+      return:
+        type:
+          - Array<Excel.Setting>
+  - uid: excel.Excel.SettingCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.SettingCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.SettingCollection;'
+      return:
+        type:
+          - Excel.SettingCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.SettingCollection.onSettingsChanged
+    summary: |-
+      Occurs when the Settings in the document are changed.
+
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+    name: onSettingsChanged
+    fullName: excel.Excel.SettingCollection.onSettingsChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onSettingsChanged: OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const settings = context.workbook.settings; 
+          settings.onSettingsChanged.add(onChangedSetting);
+          OfficeHelpers.UI.notify("Handler registered", "");
+
+          await context.sync();
+      });
+      ```
+  - uid: excel.Excel.SettingCollection.toJSON
+    name: toJSON()
+    fullName: excel.Excel.SettingCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - '{}'
+        description: ''

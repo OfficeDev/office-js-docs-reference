@@ -7,6 +7,9 @@
   "policies": {
     "namespaceSupport": "permissive"
   },
+  "validationRules": {
+    "missingReleaseTags": "allow"
+  },
   "project": {
     "entryPointSourceFile": "outlook.d.ts"
   },

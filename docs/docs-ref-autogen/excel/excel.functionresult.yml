@@ -1,0 +1,86 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.FunctionResult
+    summary: |-
+      An object containing the result of a function-evaluation operation
+
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+    name: Excel.FunctionResult
+    fullName: excel.Excel.FunctionResult
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.FunctionResult.error
+      - excel.Excel.FunctionResult.load
+      - excel.Excel.FunctionResult.toJSON
+      - excel.Excel.FunctionResult.value
+  - uid: excel.Excel.FunctionResult.error
+    summary: >-
+      Error value (such as "\#DIV/0") representing the error. If the error string is not set, then the function
+      succeeded, and its result is written to the Value field. The error is always in the English locale.
+
+
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+    name: error
+    fullName: excel.Excel.FunctionResult.error
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly error: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.FunctionResult.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.FunctionResult.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): FunctionResult<T>;'
+      return:
+        type:
+          - FunctionResult<T>
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.FunctionResult.toJSON
+    name: toJSON()
+    fullName: excel.Excel.FunctionResult.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"error\": string;\r\n            \"value\": T;\r\n        }"
+        description: ''
+  - uid: excel.Excel.FunctionResult.value
+    summary: >-
+      The value of function evaluation. The value field will be populated only if no error has occurred (i.e., the Error
+      property is not set).
+
+
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+    name: value
+    fullName: excel.Excel.FunctionResult.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly value: T;'
+      return:
+        type:
+          - T

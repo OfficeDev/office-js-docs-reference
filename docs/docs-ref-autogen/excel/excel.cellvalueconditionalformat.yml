@@ -1,0 +1,107 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.CellValueConditionalFormat
+    summary: |-
+      Represents a cell value conditional format.
+
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+    name: Excel.CellValueConditionalFormat
+    fullName: excel.Excel.CellValueConditionalFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.CellValueConditionalFormat.format
+      - excel.Excel.CellValueConditionalFormat.load
+      - excel.Excel.CellValueConditionalFormat.rule
+      - excel.Excel.CellValueConditionalFormat.set
+      - excel.Excel.CellValueConditionalFormat.toJSON
+  - uid: excel.Excel.CellValueConditionalFormat.format
+    summary: >-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+    name: format
+    fullName: excel.Excel.CellValueConditionalFormat.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ConditionalRangeFormat;'
+      return:
+        type:
+          - Excel.ConditionalRangeFormat
+  - uid: excel.Excel.CellValueConditionalFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.CellValueConditionalFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.CellValueConditionalFormat;'
+      return:
+        type:
+          - Excel.CellValueConditionalFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.CellValueConditionalFormat.rule
+    summary: |-
+      Represents the Rule object on this conditional format.
+
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+    name: rule
+    fullName: excel.Excel.CellValueConditionalFormat.rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule: Excel.ConditionalCellValueRule;'
+      return:
+        type:
+          - Excel.ConditionalCellValueRule
+  - uid: excel.Excel.CellValueConditionalFormat.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.CellValueConditionalFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.CellValueConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.CellValueConditionalFormatUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.CellValueConditionalFormat.toJSON
+    name: toJSON()
+    fullName: excel.Excel.CellValueConditionalFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"format\": ConditionalRangeFormat;\r\n            \"rule\": ConditionalCellValueRule;\r\n        }"
+        description: ''

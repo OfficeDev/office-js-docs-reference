@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Position
+    summary: |-
+      Represents the Position of the object in the view.
+
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
+    name: Visio.Position
+    fullName: visio.Visio.Position
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Position.x
+      - visio.Visio.Position.y
+  - uid: visio.Visio.Position.x
+    summary: >-
+      An integer that specifies the x-coordinate of the object, which is the signed value of the distance in pixels from
+      the viewport's center to the left boundary of the page.
+
+
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
+    name: x
+    fullName: visio.Visio.Position.x
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'x: number;'
+      return:
+        type:
+          - number
+  - uid: visio.Visio.Position.y
+    summary: >-
+      An integer that specifies the y-coordinate of the object, which is the signed value of the distance in pixels from
+      the viewport's center to the top boundary of the page.
+
+
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
+    name: 'y'
+    fullName: visio.Visio.Position.y
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'y: number;'
+      return:
+        type:
+          - number

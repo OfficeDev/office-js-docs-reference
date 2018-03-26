@@ -1,0 +1,287 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.NamedItem
+    summary: >-
+      Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type
+      below), range object, reference to a range. This object can be used to obtain range object associated with names.
+
+
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+    name: Excel.NamedItem
+    fullName: excel.Excel.NamedItem
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.NamedItem.comment
+      - excel.Excel.NamedItem.delete
+      - excel.Excel.NamedItem.getRange
+      - excel.Excel.NamedItem.getRangeOrNullObject
+      - excel.Excel.NamedItem.load
+      - excel.Excel.NamedItem.name
+      - excel.Excel.NamedItem.scope
+      - excel.Excel.NamedItem.set
+      - excel.Excel.NamedItem.toJSON
+      - excel.Excel.NamedItem.type
+      - excel.Excel.NamedItem.value
+      - excel.Excel.NamedItem.visible
+      - excel.Excel.NamedItem.worksheet
+      - excel.Excel.NamedItem.worksheetOrNullObject
+  - uid: excel.Excel.NamedItem.comment
+    summary: |-
+      Represents the comment associated with this name.
+
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+    name: comment
+    fullName: excel.Excel.NamedItem.comment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comment: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.NamedItem.delete
+    summary: |-
+      Deletes the given name.
+
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+    name: delete()
+    fullName: excel.Excel.NamedItem.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      try {
+          await Excel.run(async (context) => {
+
+              const sheet = context.workbook.worksheets.getItem("Sample");
+
+              sheet.names.getItem("TotalAmount").delete();
+
+              // Replace the named item (TotalAmount) with the actual formula for TotalAmount to avoid displaying #NAME in the cell.
+              sheet.getRange("D11").values = [["=SUM(ExpensesTable[AMOUNT])"]];
+
+              await context.sync();
+
+          });
+      }
+      catch (error) {
+          OfficeHelpers.UI.notify(error);
+          OfficeHelpers.Utilities.log(error);
+      }
+      ```
+  - uid: excel.Excel.NamedItem.getRange
+    summary: >-
+      Returns the range object that is associated with the name. Throws an error if the named item's type is not a
+      range.
+
+
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+    name: getRange()
+    fullName: excel.Excel.NamedItem.getRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
+  - uid: excel.Excel.NamedItem.getRangeOrNullObject
+    summary: >-
+      Returns the range object that is associated with the name. Returns a null object if the named item's type is not a
+      range.
+
+
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+    name: getRangeOrNullObject()
+    fullName: excel.Excel.NamedItem.getRangeOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeOrNullObject(): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
+  - uid: excel.Excel.NamedItem.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.NamedItem.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.NamedItem;'
+      return:
+        type:
+          - Excel.NamedItem
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.NamedItem.name
+    summary: |-
+      The name of the object. Read-only.
+
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+    name: name
+    fullName: excel.Excel.NamedItem.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.NamedItem.scope
+    summary: |-
+      Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.
+
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+    name: scope
+    fullName: excel.Excel.NamedItem.scope
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly scope: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.NamedItem.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.NamedItem.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.NamedItemUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.NamedItemUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.NamedItem.toJSON
+    name: toJSON()
+    fullName: excel.Excel.NamedItem.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"comment\": string;\r\n            \"name\": string;\r\n            \"scope\": string;\r\n            \"type\": string;\r\n            \"value\": any;\r\n            \"visible\": boolean;\r\n        }"
+        description: ''
+  - uid: excel.Excel.NamedItem.type
+    summary: |-
+      Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
+
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+    name: type
+    fullName: excel.Excel.NamedItem.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.NamedItem.value
+    summary: |-
+      Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
+
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+    name: value
+    fullName: excel.Excel.NamedItem.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly value: any;'
+      return:
+        type:
+          - any
+  - uid: excel.Excel.NamedItem.visible
+    summary: |-
+      Specifies whether the object is visible or not.
+
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+    name: visible
+    fullName: excel.Excel.NamedItem.visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.NamedItem.worksheet
+    summary: >-
+      Returns the worksheet on which the named item is scoped to. Throws an error if the items is scoped to the workbook
+      instead.
+
+
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+    name: worksheet
+    fullName: excel.Excel.NamedItem.worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheet: Excel.Worksheet;'
+      return:
+        type:
+          - Excel.Worksheet
+  - uid: excel.Excel.NamedItem.worksheetOrNullObject
+    summary: >-
+      Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the
+      workbook instead.
+
+
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+    name: worksheetOrNullObject
+    fullName: excel.Excel.NamedItem.worksheetOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheetOrNullObject: Excel.Worksheet;'
+      return:
+        type:
+          - Excel.Worksheet

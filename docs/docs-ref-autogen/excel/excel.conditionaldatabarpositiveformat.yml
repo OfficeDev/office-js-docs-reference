@@ -1,0 +1,125 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ConditionalDataBarPositiveFormat
+    summary: |-
+      Represents a conditional format DataBar Format for the positive side of the data bar.
+
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+    name: Excel.ConditionalDataBarPositiveFormat
+    fullName: excel.Excel.ConditionalDataBarPositiveFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ConditionalDataBarPositiveFormat.borderColor
+      - excel.Excel.ConditionalDataBarPositiveFormat.fillColor
+      - excel.Excel.ConditionalDataBarPositiveFormat.gradientFill
+      - excel.Excel.ConditionalDataBarPositiveFormat.load
+      - excel.Excel.ConditionalDataBarPositiveFormat.set
+      - excel.Excel.ConditionalDataBarPositiveFormat.toJSON
+  - uid: excel.Excel.ConditionalDataBarPositiveFormat.borderColor
+    summary: >-
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      color (e.g. "orange"). "" (empty string) if no border is present or set.
+
+
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+    name: borderColor
+    fullName: excel.Excel.ConditionalDataBarPositiveFormat.borderColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borderColor: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ConditionalDataBarPositiveFormat.fillColor
+    summary: >-
+      HTML color code representing the fill color, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color (e.g.
+      "orange").
+
+
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+    name: fillColor
+    fullName: excel.Excel.ConditionalDataBarPositiveFormat.fillColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fillColor: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ConditionalDataBarPositiveFormat.gradientFill
+    summary: |-
+      Boolean representation of whether or not the DataBar has a gradient.
+
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+    name: gradientFill
+    fullName: excel.Excel.ConditionalDataBarPositiveFormat.gradientFill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientFill: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ConditionalDataBarPositiveFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ConditionalDataBarPositiveFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalDataBarPositiveFormat;'
+      return:
+        type:
+          - Excel.ConditionalDataBarPositiveFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.ConditionalDataBarPositiveFormat.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ConditionalDataBarPositiveFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ConditionalDataBarPositiveFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ConditionalDataBarPositiveFormatUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.ConditionalDataBarPositiveFormat.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ConditionalDataBarPositiveFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"borderColor\": string;\r\n            \"fillColor\": string;\r\n            \"gradientFill\": boolean;\r\n        }"
+        description: ''

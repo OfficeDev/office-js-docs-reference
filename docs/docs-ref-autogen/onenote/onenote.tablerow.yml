@@ -1,0 +1,177 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.TableRow
+    summary: |-
+      Represents a row in a table.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: OneNote.TableRow
+    fullName: onenote.OneNote.TableRow
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.TableRow.cellCount
+      - onenote.OneNote.TableRow.cells
+      - onenote.OneNote.TableRow.clear
+      - onenote.OneNote.TableRow.id
+      - onenote.OneNote.TableRow.insertRowAsSibling
+      - onenote.OneNote.TableRow.load
+      - onenote.OneNote.TableRow.parentTable
+      - onenote.OneNote.TableRow.rowIndex
+      - onenote.OneNote.TableRow.setShadingColor
+  - uid: onenote.OneNote.TableRow.cellCount
+    summary: |-
+      Gets the number of cells in the row. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: cellCount
+    fullName: onenote.OneNote.TableRow.cellCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellCount: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.TableRow.cells
+    summary: |-
+      Gets the cells in the row. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: cells
+    fullName: onenote.OneNote.TableRow.cells
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cells: OneNote.TableCellCollection;'
+      return:
+        type:
+          - OneNote.TableCellCollection
+  - uid: onenote.OneNote.TableRow.clear
+    summary: |-
+      Clears the contents of the row.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: clear()
+    fullName: onenote.OneNote.TableRow.clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: onenote.OneNote.TableRow.id
+    summary: |-
+      Gets the ID of the row. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: id
+    fullName: onenote.OneNote.TableRow.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.TableRow.insertRowAsSibling
+    summary: Inserts a row before or after the current row.
+    name: 'insertRowAsSibling(insertLocation, values)'
+    fullName: onenote.OneNote.TableRow.insertRowAsSibling
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertRowAsSibling(insertLocation: string, values?: Array<string>): OneNote.TableRow;'
+      return:
+        type:
+          - OneNote.TableRow
+        description: ''
+      parameters:
+        - id: insertLocation
+          description: Where the new rows should be inserted relative to the current row.
+          type:
+            - string
+        - id: values
+          description: >-
+            Strings to insert in the new row, specified as an array. Must not have more cells than in the current row.
+            Optional. \[Api set: OneNoteApi 1.1\]
+          type:
+            - Array<string>
+  - uid: onenote.OneNote.TableRow.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.TableRow.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.TableRow;'
+      return:
+        type:
+          - OneNote.TableRow
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: onenote.OneNote.TableRow.parentTable
+    summary: |-
+      Gets the parent table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: parentTable
+    fullName: onenote.OneNote.TableRow.parentTable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTable: OneNote.Table;'
+      return:
+        type:
+          - OneNote.Table
+  - uid: onenote.OneNote.TableRow.rowIndex
+    summary: |-
+      Gets the index of the row in its parent table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: rowIndex
+    fullName: onenote.OneNote.TableRow.rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowIndex: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.TableRow.setShadingColor
+    name: setShadingColor(colorCode)
+    fullName: onenote.OneNote.TableRow.setShadingColor
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShadingColor(colorCode: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: colorCode
+          description: ''
+          type:
+            - string

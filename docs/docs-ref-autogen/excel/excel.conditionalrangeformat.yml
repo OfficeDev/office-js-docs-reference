@@ -1,0 +1,137 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ConditionalRangeFormat
+    summary: |-
+      A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+    name: Excel.ConditionalRangeFormat
+    fullName: excel.Excel.ConditionalRangeFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ConditionalRangeFormat.borders
+      - excel.Excel.ConditionalRangeFormat.fill
+      - excel.Excel.ConditionalRangeFormat.font
+      - excel.Excel.ConditionalRangeFormat.load
+      - excel.Excel.ConditionalRangeFormat.numberFormat
+      - excel.Excel.ConditionalRangeFormat.set
+      - excel.Excel.ConditionalRangeFormat.toJSON
+  - uid: excel.Excel.ConditionalRangeFormat.borders
+    summary: |-
+      Collection of border objects that apply to the overall conditional format range. Read-only.
+
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+    name: borders
+    fullName: excel.Excel.ConditionalRangeFormat.borders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly borders: Excel.ConditionalRangeBorderCollection;'
+      return:
+        type:
+          - Excel.ConditionalRangeBorderCollection
+  - uid: excel.Excel.ConditionalRangeFormat.fill
+    summary: |-
+      Returns the fill object defined on the overall conditional format range. Read-only.
+
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+    name: fill
+    fullName: excel.Excel.ConditionalRangeFormat.fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.ConditionalRangeFill;'
+      return:
+        type:
+          - Excel.ConditionalRangeFill
+  - uid: excel.Excel.ConditionalRangeFormat.font
+    summary: |-
+      Returns the font object defined on the overall conditional format range. Read-only.
+
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+    name: font
+    fullName: excel.Excel.ConditionalRangeFormat.font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Excel.ConditionalRangeFont;'
+      return:
+        type:
+          - Excel.ConditionalRangeFont
+  - uid: excel.Excel.ConditionalRangeFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ConditionalRangeFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalRangeFormat;'
+      return:
+        type:
+          - Excel.ConditionalRangeFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.ConditionalRangeFormat.numberFormat
+    summary: |-
+      Represents Excel's number format code for the given range. Cleared if null is passed in.
+
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+    name: numberFormat
+    fullName: excel.Excel.ConditionalRangeFormat.numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: any;'
+      return:
+        type:
+          - any
+  - uid: excel.Excel.ConditionalRangeFormat.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ConditionalRangeFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.ConditionalRangeFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ConditionalRangeFormatUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.ConditionalRangeFormat.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ConditionalRangeFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"numberFormat\": any;\r\n        }"
+        description: ''

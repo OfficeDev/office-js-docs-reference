@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.InkStrokeCollection
+    summary: |-
+      Represents a collection of InkStroke objects.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: OneNote.InkStrokeCollection
+    fullName: onenote.OneNote.InkStrokeCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.InkStrokeCollection.count
+      - onenote.OneNote.InkStrokeCollection.getItem
+      - onenote.OneNote.InkStrokeCollection.getItemAt
+      - onenote.OneNote.InkStrokeCollection.items
+      - onenote.OneNote.InkStrokeCollection.load
+  - uid: onenote.OneNote.InkStrokeCollection.count
+    summary: |-
+      Returns the number of InkStrokes in the page. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: count
+    fullName: onenote.OneNote.InkStrokeCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.InkStrokeCollection.getItem
+    summary: Gets a InkStroke object by ID or by its index in the collection. Read-only.
+    name: getItem(index)
+    fullName: onenote.OneNote.InkStrokeCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number | string): OneNote.InkStroke;'
+      return:
+        type:
+          - OneNote.InkStroke
+        description: ''
+      parameters:
+        - id: index
+          description: >-
+            The ID of the InkStroke object, or the index location of the InkStroke object in the collection. \[Api set:
+            OneNoteApi 1.1\]
+          type:
+            - number | string
+  - uid: onenote.OneNote.InkStrokeCollection.getItemAt
+    summary: Gets a InkStroke on its position in the collection.
+    name: getItemAt(index)
+    fullName: onenote.OneNote.InkStrokeCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): OneNote.InkStroke;'
+      return:
+        type:
+          - OneNote.InkStroke
+        description: ''
+      parameters:
+        - id: index
+          description: 'Index value of the object to be retrieved. Zero-indexed. \[Api set: OneNoteApi 1.1\]'
+          type:
+            - number
+  - uid: onenote.OneNote.InkStrokeCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: onenote.OneNote.InkStrokeCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<OneNote.InkStroke>;'
+      return:
+        type:
+          - Array<OneNote.InkStroke>
+  - uid: onenote.OneNote.InkStrokeCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.InkStrokeCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.InkStrokeCollection;'
+      return:
+        type:
+          - OneNote.InkStrokeCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'

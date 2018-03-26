@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ConditionalTopBottomRule
+    summary: |-
+      Represents the rule of the top/bottom conditional format.
+
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+    name: Excel.ConditionalTopBottomRule
+    fullName: excel.Excel.ConditionalTopBottomRule
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.ConditionalTopBottomRule.rank
+      - excel.Excel.ConditionalTopBottomRule.type
+  - uid: excel.Excel.ConditionalTopBottomRule.rank
+    summary: |-
+      The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks.
+
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+    name: rank
+    fullName: excel.Excel.ConditionalTopBottomRule.rank
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rank: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ConditionalTopBottomRule.type
+    summary: |-
+      Format values based on the top or bottom rank.
+
+      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+    name: type
+    fullName: excel.Excel.ConditionalTopBottomRule.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: string;'
+      return:
+        type:
+          - string

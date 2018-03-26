@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.InkStroke
+    summary: |-
+      Represents a single stroke of ink.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: OneNote.InkStroke
+    fullName: onenote.OneNote.InkStroke
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.InkStroke.floatingInk
+      - onenote.OneNote.InkStroke.id
+      - onenote.OneNote.InkStroke.load
+  - uid: onenote.OneNote.InkStroke.floatingInk
+    summary: |-
+      Gets the ID of the InkStroke object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: floatingInk
+    fullName: onenote.OneNote.InkStroke.floatingInk
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'floatingInk: OneNote.FloatingInk;'
+      return:
+        type:
+          - OneNote.FloatingInk
+  - uid: onenote.OneNote.InkStroke.id
+    summary: |-
+      Gets the ID of the InkStroke object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: id
+    fullName: onenote.OneNote.InkStroke.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.InkStroke.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.InkStroke.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.InkStroke;'
+      return:
+        type:
+          - OneNote.InkStroke
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
