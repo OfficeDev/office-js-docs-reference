@@ -29,10 +29,10 @@
   ],
   "JoinTOCPlugin": [
     {
-      "ReferenceTOC": "docs/ref/office-toc/toc.yml",
-      "ReferenceTOCUrl": "/javascript/api/ref/office-toc/toc.json",
-      "ConceptualTOC": "docs/office/toc.yml",
-      "ConceptualTOCUrl": "/javascript/api/office/toc.json"
+      "ReferenceTOC": "docs/docs-ref-autogen/toc.yml",
+      "ReferenceTOCUrl": "/javascript/api/office_ref_toc/toc.json",
+      "ConceptualTOC": "docs/docs-ref-conceptual/toc.yml",
+      "ConceptualTOCUrl": "/javascript/office/toc.json"
     }
   ],
   "notification_subscribers": [],
