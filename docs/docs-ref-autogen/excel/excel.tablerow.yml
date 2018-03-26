@@ -1,0 +1,147 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.TableRow
+    summary: >-
+      Represents a row in a table.
+
+
+      Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them, a TableRow object
+      represent the physical location of the table row, but not the data. That is, if the data is sorted or if new rows
+      are added, a table row will continue to point at the index for which it was created.
+
+
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+    name: Excel.TableRow
+    fullName: excel.Excel.TableRow
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.TableRow.delete
+      - excel.Excel.TableRow.getRange
+      - excel.Excel.TableRow.index
+      - excel.Excel.TableRow.load
+      - excel.Excel.TableRow.set
+      - excel.Excel.TableRow.toJSON
+      - excel.Excel.TableRow.values
+  - uid: excel.Excel.TableRow.delete
+    summary: |-
+      Deletes the row from the table.
+
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+    name: delete()
+    fullName: excel.Excel.TableRow.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.TableRow.getRange
+    summary: |-
+      Returns the range object associated with the entire row.
+
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+    name: getRange()
+    fullName: excel.Excel.TableRow.getRange
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
+  - uid: excel.Excel.TableRow.index
+    summary: |-
+      Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
+
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+    name: index
+    fullName: excel.Excel.TableRow.index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly index: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.TableRow.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.TableRow.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TableRow;'
+      return:
+        type:
+          - Excel.TableRow
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.TableRow.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.TableRow.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: "set(properties: Interfaces.TableRowUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.TableRowUpdateData
+        - id: options
+          description: ''
+          type:
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+  - uid: excel.Excel.TableRow.toJSON
+    name: toJSON()
+    fullName: excel.Excel.TableRow.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"index\": number;\r\n            \"values\": any[][];\r\n        }"
+        description: ''
+  - uid: excel.Excel.TableRow.values
+    summary: >-
+      Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
+      Cell that contain an error will return the error string.
+
+
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+    name: values
+    fullName: excel.Excel.TableRow.values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values: Array<Array<any>>;'
+      return:
+        type:
+          - Array<Array<any>>

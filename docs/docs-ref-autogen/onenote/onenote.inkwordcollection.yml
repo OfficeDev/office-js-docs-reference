@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.InkWordCollection
+    summary: |-
+      Represents a collection of InkWord objects.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: OneNote.InkWordCollection
+    fullName: onenote.OneNote.InkWordCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.InkWordCollection.count
+      - onenote.OneNote.InkWordCollection.getItem
+      - onenote.OneNote.InkWordCollection.getItemAt
+      - onenote.OneNote.InkWordCollection.items
+      - onenote.OneNote.InkWordCollection.load
+  - uid: onenote.OneNote.InkWordCollection.count
+    summary: |-
+      Returns the number of InkWords in the page. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: count
+    fullName: onenote.OneNote.InkWordCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.InkWordCollection.getItem
+    summary: Gets a InkWord object by ID or by its index in the collection. Read-only.
+    name: getItem(index)
+    fullName: onenote.OneNote.InkWordCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number | string): OneNote.InkWord;'
+      return:
+        type:
+          - OneNote.InkWord
+        description: ''
+      parameters:
+        - id: index
+          description: >-
+            The ID of the InkWord object, or the index location of the InkWord object in the collection. \[Api set:
+            OneNoteApi 1.1\]
+          type:
+            - number | string
+  - uid: onenote.OneNote.InkWordCollection.getItemAt
+    summary: Gets a InkWord on its position in the collection.
+    name: getItemAt(index)
+    fullName: onenote.OneNote.InkWordCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): OneNote.InkWord;'
+      return:
+        type:
+          - OneNote.InkWord
+        description: ''
+      parameters:
+        - id: index
+          description: 'Index value of the object to be retrieved. Zero-indexed. \[Api set: OneNoteApi 1.1\]'
+          type:
+            - number
+  - uid: onenote.OneNote.InkWordCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: onenote.OneNote.InkWordCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<OneNote.InkWord>;'
+      return:
+        type:
+          - Array<OneNote.InkWord>
+  - uid: onenote.OneNote.InkWordCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.InkWordCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.InkWordCollection;'
+      return:
+        type:
+          - OneNote.InkWordCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'

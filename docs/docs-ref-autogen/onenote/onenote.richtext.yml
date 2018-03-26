@@ -1,0 +1,85 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.RichText
+    summary: |-
+      Represents a RichText object in a Paragraph.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: OneNote.RichText
+    fullName: onenote.OneNote.RichText
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.RichText.id
+      - onenote.OneNote.RichText.load
+      - onenote.OneNote.RichText.paragraph
+      - onenote.OneNote.RichText.text
+  - uid: onenote.OneNote.RichText.id
+    summary: |-
+      Gets the ID of the RichText object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: id
+    fullName: onenote.OneNote.RichText.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.RichText.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.RichText.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.RichText;'
+      return:
+        type:
+          - OneNote.RichText
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: onenote.OneNote.RichText.paragraph
+    summary: |-
+      Gets the Paragraph object that contains the RichText object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: paragraph
+    fullName: onenote.OneNote.RichText.paragraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraph: OneNote.Paragraph;'
+      return:
+        type:
+          - OneNote.Paragraph
+  - uid: onenote.OneNote.RichText.text
+    summary: |-
+      Gets the text content of the RichText object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: text
+    fullName: onenote.OneNote.RichText.text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text: string;'
+      return:
+        type:
+          - string

@@ -1,0 +1,274 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.ContentControlCollection
+    summary: >-
+      Contains a collection of \[contentControl\](contentControl.md) objects. Content controls are bounded and
+      potentially labeled regions in a document that serve as containers for specific types of content. Individual
+      content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only
+      rich text content controls are supported.
+
+
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+    name: Word.ContentControlCollection
+    fullName: word.Word.ContentControlCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: word
+    children:
+      - word.Word.ContentControlCollection.getById
+      - word.Word.ContentControlCollection.getByIdOrNullObject
+      - word.Word.ContentControlCollection.getByTag
+      - word.Word.ContentControlCollection.getByTitle
+      - word.Word.ContentControlCollection.getByTypes
+      - word.Word.ContentControlCollection.getFirst
+      - word.Word.ContentControlCollection.getFirstOrNullObject
+      - word.Word.ContentControlCollection.getItem
+      - word.Word.ContentControlCollection.items
+      - word.Word.ContentControlCollection.load
+      - word.Word.ContentControlCollection.toJSON
+      - word.Word.ContentControlCollection.track
+      - word.Word.ContentControlCollection.untrack
+  - uid: word.Word.ContentControlCollection.getById
+    summary: >-
+      Gets a content control by its identifier. Throws if there isn't a content control with the identifier in this
+      collection.
+
+
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+    name: getById(id)
+    fullName: word.Word.ContentControlCollection.getById
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getById(id: number): Word.ContentControl;'
+      return:
+        type:
+          - Word.ContentControl
+        description: ''
+      parameters:
+        - id: id
+          description: Required. A content control identifier.
+          type:
+            - number
+  - uid: word.Word.ContentControlCollection.getByIdOrNullObject
+    summary: >-
+      Gets a content control by its identifier. Returns a null object if there isn't a content control with the
+      identifier in this collection.
+
+
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
+    name: getByIdOrNullObject(id)
+    fullName: word.Word.ContentControlCollection.getByIdOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByIdOrNullObject(id: number): Word.ContentControl;'
+      return:
+        type:
+          - Word.ContentControl
+        description: ''
+      parameters:
+        - id: id
+          description: Required. A content control identifier.
+          type:
+            - number
+  - uid: word.Word.ContentControlCollection.getByTag
+    summary: |-
+      Gets the content controls that have the specified tag.
+
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+    name: getByTag(tag)
+    fullName: word.Word.ContentControlCollection.getByTag
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByTag(tag: string): Word.ContentControlCollection;'
+      return:
+        type:
+          - Word.ContentControlCollection
+        description: ''
+      parameters:
+        - id: tag
+          description: Required. A tag set on a content control.
+          type:
+            - string
+  - uid: word.Word.ContentControlCollection.getByTitle
+    summary: |-
+      Gets the content controls that have the specified title.
+
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+    name: getByTitle(title)
+    fullName: word.Word.ContentControlCollection.getByTitle
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByTitle(title: string): Word.ContentControlCollection;'
+      return:
+        type:
+          - Word.ContentControlCollection
+        description: ''
+      parameters:
+        - id: title
+          description: Required. The title of a content control.
+          type:
+            - string
+  - uid: word.Word.ContentControlCollection.getByTypes
+    summary: |-
+      Gets the content controls that have the specified types and/or subtypes.
+
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
+    name: getByTypes(types)
+    fullName: word.Word.ContentControlCollection.getByTypes
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getByTypes(types: Array<string>): Word.ContentControlCollection;'
+      return:
+        type:
+          - Word.ContentControlCollection
+        description: ''
+      parameters:
+        - id: types
+          description: Required. An array of content control types and/or subtypes.
+          type:
+            - Array<string>
+  - uid: word.Word.ContentControlCollection.getFirst
+    summary: |-
+      Gets the first content control in this collection. Throws if this collection is empty.
+
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
+    name: getFirst()
+    fullName: word.Word.ContentControlCollection.getFirst
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirst(): Word.ContentControl;'
+      return:
+        type:
+          - Word.ContentControl
+        description: ''
+  - uid: word.Word.ContentControlCollection.getFirstOrNullObject
+    summary: |-
+      Gets the first content control in this collection. Returns a null object if this collection is empty.
+
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
+    name: getFirstOrNullObject()
+    fullName: word.Word.ContentControlCollection.getFirstOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getFirstOrNullObject(): Word.ContentControl;'
+      return:
+        type:
+          - Word.ContentControl
+        description: ''
+  - uid: word.Word.ContentControlCollection.getItem
+    summary: |-
+      Gets a content control by its index in the collection.
+
+      \[ [API set: WordApi 1.1](http://bing.com?type=word) \]
+    name: getItem(index)
+    fullName: word.Word.ContentControlCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number): Word.ContentControl;'
+      return:
+        type:
+          - Word.ContentControl
+        description: ''
+      parameters:
+        - id: index
+          description: The index.
+          type:
+            - number
+  - uid: word.Word.ContentControlCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: word.Word.ContentControlCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<Word.ContentControl>;'
+      return:
+        type:
+          - Array<Word.ContentControl>
+  - uid: word.Word.ContentControlCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: word.Word.ContentControlCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.ContentControlCollection;'
+      return:
+        type:
+          - Word.ContentControlCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: word.Word.ContentControlCollection.toJSON
+    name: toJSON()
+    fullName: word.Word.ContentControlCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - '{}'
+        description: ''
+  - uid: word.Word.ContentControlCollection.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: word.Word.ContentControlCollection.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.ContentControlCollection;'
+      return:
+        type:
+          - Word.ContentControlCollection
+        description: ''
+  - uid: word.Word.ContentControlCollection.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: word.Word.ContentControlCollection.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.ContentControlCollection;'
+      return:
+        type:
+          - Word.ContentControlCollection
+        description: ''

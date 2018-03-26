@@ -1,0 +1,85 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.InkAnalysisParagraph
+    summary: |-
+      Represents ink analysis data for an identified paragraph formed by ink strokes.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: OneNote.InkAnalysisParagraph
+    fullName: onenote.OneNote.InkAnalysisParagraph
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.InkAnalysisParagraph.id
+      - onenote.OneNote.InkAnalysisParagraph.inkAnalysis
+      - onenote.OneNote.InkAnalysisParagraph.lines
+      - onenote.OneNote.InkAnalysisParagraph.load
+  - uid: onenote.OneNote.InkAnalysisParagraph.id
+    summary: |-
+      Gets the ID of the InkAnalysisParagraph object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: id
+    fullName: onenote.OneNote.InkAnalysisParagraph.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.InkAnalysisParagraph.inkAnalysis
+    summary: |-
+      Reference to the parent InkAnalysisPage. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: inkAnalysis
+    fullName: onenote.OneNote.InkAnalysisParagraph.inkAnalysis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inkAnalysis: OneNote.InkAnalysis;'
+      return:
+        type:
+          - OneNote.InkAnalysis
+  - uid: onenote.OneNote.InkAnalysisParagraph.lines
+    summary: |-
+      Gets the ink analysis lines in this ink analysis paragraph. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: lines
+    fullName: onenote.OneNote.InkAnalysisParagraph.lines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lines: OneNote.InkAnalysisLineCollection;'
+      return:
+        type:
+          - OneNote.InkAnalysisLineCollection
+  - uid: onenote.OneNote.InkAnalysisParagraph.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.InkAnalysisParagraph.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.InkAnalysisParagraph;'
+      return:
+        type:
+          - OneNote.InkAnalysisParagraph
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'

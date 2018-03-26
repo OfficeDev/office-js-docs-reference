@@ -1,0 +1,256 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office
+    name: office
+    fullName: office
+    langs:
+      - typeScript
+    type: package
+    children:
+      - office.Office.ActiveView
+      - office.Office.AsyncResult
+      - office.Office.AsyncResultStatus
+      - office.Office.Auth
+      - office.Office.AuthOptions
+      - office.Office.Binding
+      - office.Office.Bindings
+      - office.Office.BindingType
+      - office.Office.CoercionType
+      - office.Office.Context
+      - office.Office.CustomXmlNode
+      - office.Office.CustomXmlPart
+      - office.Office.CustomXmlParts
+      - office.Office.CustomXmlPrefixMappings
+      - office.Office.DialogHandler
+      - office.Office.DialogOptions
+      - office.Office.Document
+      - office.Office.DocumentMode
+      - office.Office.DocumentSelectionChangedEventArgs
+      - office.Office.Error
+      - office.Office.EventType
+      - office.Office.File
+      - office.Office.FileProperties
+      - office.Office.FileType
+      - office.Office.FilterType
+      - office.Office.GoToType
+      - office.Office.HostType
+      - office.Office.Index
+      - office.Office.InitializationReason
+      - office.Office.initialize
+      - office.Office.MatrixBinding
+      - office.Office.OfficeTheme
+      - office.Office.PlatformType
+      - office.Office.ProjectProjectFields
+      - office.Office.ProjectResourceFields
+      - office.Office.ProjectTaskFields
+      - office.Office.ProjectViewTypes
+      - office.Office.select
+      - office.Office.SelectionMode
+      - office.Office.Settings
+      - office.Office.Slice
+      - office.Office.Table
+      - office.Office.TableBinding
+      - office.Office.TableData
+      - office.Office.TextBinding
+      - office.Office.UI
+      - office.Office.useShortNamespace
+      - office.Office.ValueFormat
+      - office.OfficeExtension.ClientObject
+      - office.OfficeExtension.ClientRequestContext
+      - office.OfficeExtension.ClientResult
+      - office.OfficeExtension.DebugInfo
+      - office.OfficeExtension.EmbeddedOptions
+      - office.OfficeExtension.EmbeddedSession
+      - office.OfficeExtension.Error
+      - office.OfficeExtension.ErrorCodes
+      - office.OfficeExtension.EventHandlerResult
+      - office.OfficeExtension.EventHandlers
+      - office.OfficeExtension.EventInfo
+      - office.OfficeExtension.IPromise
+      - office.OfficeExtension.LoadOption
+      - office.OfficeExtension.Promise
+      - office.OfficeExtension.RequestUrlAndHeaderInfo
+      - office.OfficeExtension.TrackedObjects
+  - uid: office.Office.initialize
+    summary: This method is called after the Office API was loaded.
+    name: initialize(reason)
+    fullName: office.Office.initialize
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function initialize(reason: InitializationReason): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: reason
+          description: Indicates how the app was initialized
+          type:
+            - InitializationReason
+  - uid: office.Office.select
+    summary: Returns a promise of an object described in the expression. Callback is invoked only if method fails.
+    name: 'select(expression, callback)'
+    fullName: office.Office.select
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function select(expression: string, callback?: (result: AsyncResult) => void): Binding;'
+      return:
+        type:
+          - Binding
+        description: ''
+      parameters:
+        - id: expression
+          description: >-
+            The object to be retrieved. Example "bindings\#BindingName", retrieves a binding promise for a binding named
+            'BindingName'
+          type:
+            - string
+        - id: callback
+          description: The optional callback method
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: office.Office.useShortNamespace
+    summary: Indicates if the large namespace for objects will be used or not.
+    name: useShortNamespace(useShortNamespace)
+    fullName: office.Office.useShortNamespace
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function useShortNamespace(useShortNamespace: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: useShortNamespace
+          description: Indicates if 'true' that the short namespace will be used
+          type:
+            - boolean
+references:
+  - uid: office.Office.ActiveView
+    name: Office.ActiveView
+  - uid: office.Office.AsyncResult
+    name: Office.AsyncResult
+  - uid: office.Office.AsyncResultStatus
+    name: Office.AsyncResultStatus
+  - uid: office.Office.Auth
+    name: Office.Auth
+  - uid: office.Office.AuthOptions
+    name: Office.AuthOptions
+  - uid: office.Office.Binding
+    name: Office.Binding
+  - uid: office.Office.Bindings
+    name: Office.Bindings
+  - uid: office.Office.BindingType
+    name: Office.BindingType
+  - uid: office.Office.CoercionType
+    name: Office.CoercionType
+  - uid: office.Office.Context
+    name: Office.Context
+  - uid: office.Office.CustomXmlNode
+    name: Office.CustomXmlNode
+  - uid: office.Office.CustomXmlPart
+    name: Office.CustomXmlPart
+  - uid: office.Office.CustomXmlParts
+    name: Office.CustomXmlParts
+  - uid: office.Office.CustomXmlPrefixMappings
+    name: Office.CustomXmlPrefixMappings
+  - uid: office.Office.DialogHandler
+    name: Office.DialogHandler
+  - uid: office.Office.DialogOptions
+    name: Office.DialogOptions
+  - uid: office.Office.Document
+    name: Office.Document
+  - uid: office.Office.DocumentMode
+    name: Office.DocumentMode
+  - uid: office.Office.DocumentSelectionChangedEventArgs
+    name: Office.DocumentSelectionChangedEventArgs
+  - uid: office.Office.Error
+    name: Office.Error
+  - uid: office.Office.EventType
+    name: Office.EventType
+  - uid: office.Office.File
+    name: Office.File
+  - uid: office.Office.FileProperties
+    name: Office.FileProperties
+  - uid: office.Office.FileType
+    name: Office.FileType
+  - uid: office.Office.FilterType
+    name: Office.FilterType
+  - uid: office.Office.GoToType
+    name: Office.GoToType
+  - uid: office.Office.HostType
+    name: Office.HostType
+  - uid: office.Office.Index
+    name: Office.Index
+  - uid: office.Office.InitializationReason
+    name: Office.InitializationReason
+  - uid: office.Office.MatrixBinding
+    name: Office.MatrixBinding
+  - uid: office.Office.OfficeTheme
+    name: Office.OfficeTheme
+  - uid: office.Office.PlatformType
+    name: Office.PlatformType
+  - uid: office.Office.ProjectProjectFields
+    name: Office.ProjectProjectFields
+  - uid: office.Office.ProjectResourceFields
+    name: Office.ProjectResourceFields
+  - uid: office.Office.ProjectTaskFields
+    name: Office.ProjectTaskFields
+  - uid: office.Office.ProjectViewTypes
+    name: Office.ProjectViewTypes
+  - uid: office.Office.SelectionMode
+    name: Office.SelectionMode
+  - uid: office.Office.Settings
+    name: Office.Settings
+  - uid: office.Office.Slice
+    name: Office.Slice
+  - uid: office.Office.Table
+    name: Office.Table
+  - uid: office.Office.TableBinding
+    name: Office.TableBinding
+  - uid: office.Office.TableData
+    name: Office.TableData
+  - uid: office.Office.TextBinding
+    name: Office.TextBinding
+  - uid: office.Office.UI
+    name: Office.UI
+  - uid: office.Office.ValueFormat
+    name: Office.ValueFormat
+  - uid: office.OfficeExtension.ClientObject
+    name: OfficeExtension.ClientObject
+  - uid: office.OfficeExtension.ClientRequestContext
+    name: OfficeExtension.ClientRequestContext
+  - uid: office.OfficeExtension.ClientResult
+    name: OfficeExtension.ClientResult
+  - uid: office.OfficeExtension.DebugInfo
+    name: OfficeExtension.DebugInfo
+  - uid: office.OfficeExtension.EmbeddedOptions
+    name: OfficeExtension.EmbeddedOptions
+  - uid: office.OfficeExtension.EmbeddedSession
+    name: OfficeExtension.EmbeddedSession
+  - uid: office.OfficeExtension.Error
+    name: OfficeExtension.Error
+  - uid: office.OfficeExtension.ErrorCodes
+    name: OfficeExtension.ErrorCodes
+  - uid: office.OfficeExtension.EventHandlerResult
+    name: OfficeExtension.EventHandlerResult
+  - uid: office.OfficeExtension.EventHandlers
+    name: OfficeExtension.EventHandlers
+  - uid: office.OfficeExtension.EventInfo
+    name: OfficeExtension.EventInfo
+  - uid: office.OfficeExtension.IPromise
+    name: OfficeExtension.IPromise
+  - uid: office.OfficeExtension.LoadOption
+    name: OfficeExtension.LoadOption
+  - uid: office.OfficeExtension.Promise
+    name: OfficeExtension.Promise
+  - uid: office.OfficeExtension.RequestUrlAndHeaderInfo
+    name: OfficeExtension.RequestUrlAndHeaderInfo
+  - uid: office.OfficeExtension.TrackedObjects
+    name: OfficeExtension.TrackedObjects

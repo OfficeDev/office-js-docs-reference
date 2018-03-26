@@ -1,0 +1,118 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartSeriesCollection
+    summary: |-
+      Represents a collection of chart series.
+
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+    name: Excel.ChartSeriesCollection
+    fullName: excel.Excel.ChartSeriesCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartSeriesCollection.count
+      - excel.Excel.ChartSeriesCollection.getCount
+      - excel.Excel.ChartSeriesCollection.getItemAt
+      - excel.Excel.ChartSeriesCollection.items
+      - excel.Excel.ChartSeriesCollection.load
+      - excel.Excel.ChartSeriesCollection.toJSON
+  - uid: excel.Excel.ChartSeriesCollection.count
+    summary: |-
+      Returns the number of series in the collection. Read-only.
+
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+    name: count
+    fullName: excel.Excel.ChartSeriesCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartSeriesCollection.getCount
+    summary: |-
+      Returns the number of series in the collection.
+
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+    name: getCount()
+    fullName: excel.Excel.ChartSeriesCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: excel.Excel.ChartSeriesCollection.getItemAt
+    summary: |-
+      Retrieves a series based on its position in the collection
+
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+    name: getItemAt(index)
+    fullName: excel.Excel.ChartSeriesCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.ChartSeries;'
+      return:
+        type:
+          - Excel.ChartSeries
+        description: ''
+      parameters:
+        - id: index
+          description: Index value of the object to be retrieved. Zero-indexed.
+          type:
+            - number
+  - uid: excel.Excel.ChartSeriesCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: excel.Excel.ChartSeriesCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Array<Excel.ChartSeries>;'
+      return:
+        type:
+          - Array<Excel.ChartSeries>
+  - uid: excel.Excel.ChartSeriesCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ChartSeriesCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartSeriesCollection;'
+      return:
+        type:
+          - Excel.ChartSeriesCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.ChartSeriesCollection.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartSeriesCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"count\": number;\r\n        }"
+        description: ''

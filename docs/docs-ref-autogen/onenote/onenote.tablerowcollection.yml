@@ -1,0 +1,104 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.TableRowCollection
+    summary: |-
+      Contains a collection of TableRow objects.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: OneNote.TableRowCollection
+    fullName: onenote.OneNote.TableRowCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.TableRowCollection.count
+      - onenote.OneNote.TableRowCollection.getItem
+      - onenote.OneNote.TableRowCollection.getItemAt
+      - onenote.OneNote.TableRowCollection.items
+      - onenote.OneNote.TableRowCollection.load
+  - uid: onenote.OneNote.TableRowCollection.count
+    summary: |-
+      Returns the number of table rows in this collection. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: count
+    fullName: onenote.OneNote.TableRowCollection.count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.TableRowCollection.getItem
+    summary: Gets a table row object by ID or by its index in the collection. Read-only.
+    name: getItem(index)
+    fullName: onenote.OneNote.TableRowCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number | string): OneNote.TableRow;'
+      return:
+        type:
+          - OneNote.TableRow
+        description: ''
+      parameters:
+        - id: index
+          description: 'A number that identifies the index location of a table row object. \[Api set: OneNoteApi 1.1\]'
+          type:
+            - number | string
+  - uid: onenote.OneNote.TableRowCollection.getItemAt
+    summary: Gets a table row at its position in the collection.
+    name: getItemAt(index)
+    fullName: onenote.OneNote.TableRowCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): OneNote.TableRow;'
+      return:
+        type:
+          - OneNote.TableRow
+        description: ''
+      parameters:
+        - id: index
+          description: 'Index value of the object to be retrieved. Zero-indexed. \[Api set: OneNoteApi 1.1\]'
+          type:
+            - number
+  - uid: onenote.OneNote.TableRowCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: onenote.OneNote.TableRowCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items: Array<OneNote.TableRow>;'
+      return:
+        type:
+          - Array<OneNote.TableRow>
+  - uid: onenote.OneNote.TableRowCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.TableRowCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.TableRowCollection;'
+      return:
+        type:
+          - OneNote.TableRowCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'

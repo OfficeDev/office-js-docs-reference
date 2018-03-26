@@ -1,0 +1,117 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.InkAnalysisWord
+    summary: |-
+      Represents ink analysis data for an identified word formed by ink strokes.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: OneNote.InkAnalysisWord
+    fullName: onenote.OneNote.InkAnalysisWord
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.InkAnalysisWord.id
+      - onenote.OneNote.InkAnalysisWord.languageId
+      - onenote.OneNote.InkAnalysisWord.line
+      - onenote.OneNote.InkAnalysisWord.load
+      - onenote.OneNote.InkAnalysisWord.strokePointers
+      - onenote.OneNote.InkAnalysisWord.wordAlternates
+  - uid: onenote.OneNote.InkAnalysisWord.id
+    summary: |-
+      Gets the ID of the InkAnalysisWord object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: id
+    fullName: onenote.OneNote.InkAnalysisWord.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.InkAnalysisWord.languageId
+    summary: |-
+      The id of the recognized language in this inkAnalysisWord. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: languageId
+    fullName: onenote.OneNote.InkAnalysisWord.languageId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'languageId: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.InkAnalysisWord.line
+    summary: |-
+      Reference to the parent InkAnalysisLine. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: line
+    fullName: onenote.OneNote.InkAnalysisWord.line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'line: OneNote.InkAnalysisLine;'
+      return:
+        type:
+          - OneNote.InkAnalysisLine
+  - uid: onenote.OneNote.InkAnalysisWord.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.InkAnalysisWord.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.InkAnalysisWord;'
+      return:
+        type:
+          - OneNote.InkAnalysisWord
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: onenote.OneNote.InkAnalysisWord.strokePointers
+    summary: |-
+      Weak references to the ink strokes that were recognized as part of this ink analysis word. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: strokePointers
+    fullName: onenote.OneNote.InkAnalysisWord.strokePointers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strokePointers: Array<OneNote.InkStrokePointer>;'
+      return:
+        type:
+          - Array<OneNote.InkStrokePointer>
+  - uid: onenote.OneNote.InkAnalysisWord.wordAlternates
+    summary: |-
+      The words that were recognized in this ink word, in order of likelihood. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: wordAlternates
+    fullName: onenote.OneNote.InkAnalysisWord.wordAlternates
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'wordAlternates: Array<string>;'
+      return:
+        type:
+          - Array<string>

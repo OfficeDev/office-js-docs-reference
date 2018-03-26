@@ -1,0 +1,121 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.WorksheetProtection
+    summary: |-
+      Represents the protection of a sheet object.
+
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+    name: Excel.WorksheetProtection
+    fullName: excel.Excel.WorksheetProtection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.WorksheetProtection.load
+      - excel.Excel.WorksheetProtection.options
+      - excel.Excel.WorksheetProtection.protect
+      - excel.Excel.WorksheetProtection.protected
+      - excel.Excel.WorksheetProtection.toJSON
+      - excel.Excel.WorksheetProtection.unprotect
+  - uid: excel.Excel.WorksheetProtection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.WorksheetProtection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.WorksheetProtection;'
+      return:
+        type:
+          - Excel.WorksheetProtection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: excel.Excel.WorksheetProtection.options
+    summary: |-
+      Sheet protection options. Read-Only.
+
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+    name: options
+    fullName: excel.Excel.WorksheetProtection.options
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly options: Excel.WorksheetProtectionOptions;'
+      return:
+        type:
+          - Excel.WorksheetProtectionOptions
+  - uid: excel.Excel.WorksheetProtection.protect
+    summary: |-
+      Protects a worksheet. Fails if the worksheet has been protected.
+
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+    name: protect(options)
+    fullName: excel.Excel.WorksheetProtection.protect
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protect(options?: Excel.WorksheetProtectionOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: sheet protection options.
+          type:
+            - Excel.WorksheetProtectionOptions
+  - uid: excel.Excel.WorksheetProtection.protected
+    summary: |-
+      Indicates if the worksheet is protected. Read-Only.
+
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+    name: protected
+    fullName: excel.Excel.WorksheetProtection.protected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly protected: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.WorksheetProtection.toJSON
+    name: toJSON()
+    fullName: excel.Excel.WorksheetProtection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - "{\r\n            \"options\": WorksheetProtectionOptions;\r\n            \"protected\": boolean;\r\n        }"
+        description: ''
+  - uid: excel.Excel.WorksheetProtection.unprotect
+    summary: |-
+      Unprotects a worksheet.
+
+      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+    name: unprotect()
+    fullName: excel.Excel.WorksheetProtection.unprotect
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unprotect(): void;'
+      return:
+        type:
+          - void
+        description: ''

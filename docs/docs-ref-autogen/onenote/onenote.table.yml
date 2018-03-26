@@ -1,0 +1,289 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Table
+    summary: |-
+      Represents a table in a OneNote page.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: OneNote.Table
+    fullName: onenote.OneNote.Table
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.Table.appendColumn
+      - onenote.OneNote.Table.appendRow
+      - onenote.OneNote.Table.borderVisible
+      - onenote.OneNote.Table.clear
+      - onenote.OneNote.Table.columnCount
+      - onenote.OneNote.Table.getCell
+      - onenote.OneNote.Table.id
+      - onenote.OneNote.Table.insertColumn
+      - onenote.OneNote.Table.insertRow
+      - onenote.OneNote.Table.load
+      - onenote.OneNote.Table.paragraph
+      - onenote.OneNote.Table.rowCount
+      - onenote.OneNote.Table.rows
+      - onenote.OneNote.Table.setShadingColor
+  - uid: onenote.OneNote.Table.appendColumn
+    summary: >-
+      Adds a column to the end of the table. Values, if specified, are set in the new column. Otherwise the column is
+      empty.
+    name: appendColumn(values)
+    fullName: onenote.OneNote.Table.appendColumn
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'appendColumn(values?: Array<string>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: values
+          description: >-
+            Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in
+            the table. \[Api set: OneNoteApi 1.1\]
+          type:
+            - Array<string>
+  - uid: onenote.OneNote.Table.appendRow
+    summary: 'Adds a row to the end of the table. Values, if specified, are set in the new row. Otherwise the row is empty.'
+    name: appendRow(values)
+    fullName: onenote.OneNote.Table.appendRow
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'appendRow(values?: Array<string>): OneNote.TableRow;'
+      return:
+        type:
+          - OneNote.TableRow
+        description: ''
+      parameters:
+        - id: values
+          description: >-
+            Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in
+            the table. \[Api set: OneNoteApi 1.1\]
+          type:
+            - Array<string>
+  - uid: onenote.OneNote.Table.borderVisible
+    summary: |-
+      Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: borderVisible
+    fullName: onenote.OneNote.Table.borderVisible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borderVisible: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Table.clear
+    summary: |-
+      Clears the contents of the table.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: clear()
+    fullName: onenote.OneNote.Table.clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: onenote.OneNote.Table.columnCount
+    summary: |-
+      Gets the number of columns in the table.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: columnCount
+    fullName: onenote.OneNote.Table.columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnCount: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.Table.getCell
+    summary: Gets the table cell at a specified row and column.
+    name: 'getCell(rowIndex, cellIndex)'
+    fullName: onenote.OneNote.Table.getCell
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCell(rowIndex: number, cellIndex: number): OneNote.TableCell;'
+      return:
+        type:
+          - OneNote.TableCell
+        description: ''
+      parameters:
+        - id: rowIndex
+          description: The index of the row.
+          type:
+            - number
+        - id: cellIndex
+          description: 'The index of the cell in the row. \[Api set: OneNoteApi 1.1\]'
+          type:
+            - number
+  - uid: onenote.OneNote.Table.id
+    summary: |-
+      Gets the ID of the table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: id
+    fullName: onenote.OneNote.Table.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.Table.insertColumn
+    summary: >-
+      Inserts a column at the given index in the table. Values, if specified, are set in the new column. Otherwise the
+      column is empty.
+    name: 'insertColumn(index, values)'
+    fullName: onenote.OneNote.Table.insertColumn
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertColumn(index: number, values?: Array<string>): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: index
+          description: Index where the column will be inserted in the table.
+          type:
+            - number
+        - id: values
+          description: >-
+            Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in
+            the table. \[Api set: OneNoteApi 1.1\]
+          type:
+            - Array<string>
+  - uid: onenote.OneNote.Table.insertRow
+    summary: >-
+      Inserts a row at the given index in the table. Values, if specified, are set in the new row. Otherwise the row is
+      empty.
+    name: 'insertRow(index, values)'
+    fullName: onenote.OneNote.Table.insertRow
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertRow(index: number, values?: Array<string>): OneNote.TableRow;'
+      return:
+        type:
+          - OneNote.TableRow
+        description: ''
+      parameters:
+        - id: index
+          description: Index where the row will be inserted in the table.
+          type:
+            - number
+        - id: values
+          description: >-
+            Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in
+            the table. \[Api set: OneNoteApi 1.1\]
+          type:
+            - Array<string>
+  - uid: onenote.OneNote.Table.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.Table.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.Table;'
+      return:
+        type:
+          - OneNote.Table
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: onenote.OneNote.Table.paragraph
+    summary: |-
+      Gets the Paragraph object that contains the Table object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: paragraph
+    fullName: onenote.OneNote.Table.paragraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraph: OneNote.Paragraph;'
+      return:
+        type:
+          - OneNote.Paragraph
+  - uid: onenote.OneNote.Table.rowCount
+    summary: |-
+      Gets the number of rows in the table.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: rowCount
+    fullName: onenote.OneNote.Table.rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowCount: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.Table.rows
+    summary: |-
+      Gets all of the table rows. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: rows
+    fullName: onenote.OneNote.Table.rows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rows: OneNote.TableRowCollection;'
+      return:
+        type:
+          - OneNote.TableRowCollection
+  - uid: onenote.OneNote.Table.setShadingColor
+    name: setShadingColor(colorCode)
+    fullName: onenote.OneNote.Table.setShadingColor
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setShadingColor(colorCode: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: colorCode
+          description: ''
+          type:
+            - string

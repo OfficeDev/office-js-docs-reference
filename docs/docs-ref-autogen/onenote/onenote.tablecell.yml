@@ -1,0 +1,249 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.TableCell
+    summary: |-
+      Represents a cell in a OneNote table.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: OneNote.TableCell
+    fullName: onenote.OneNote.TableCell
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: onenote
+    children:
+      - onenote.OneNote.TableCell.appendHtml
+      - onenote.OneNote.TableCell.appendImage
+      - onenote.OneNote.TableCell.appendRichText
+      - onenote.OneNote.TableCell.appendTable
+      - onenote.OneNote.TableCell.cellIndex
+      - onenote.OneNote.TableCell.clear
+      - onenote.OneNote.TableCell.id
+      - onenote.OneNote.TableCell.load
+      - onenote.OneNote.TableCell.paragraphs
+      - onenote.OneNote.TableCell.parentRow
+      - onenote.OneNote.TableCell.rowIndex
+      - onenote.OneNote.TableCell.shadingColor
+  - uid: onenote.OneNote.TableCell.appendHtml
+    summary: Adds the specified HTML to the bottom of the TableCell.
+    name: appendHtml(html)
+    fullName: onenote.OneNote.TableCell.appendHtml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'appendHtml(html: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: html
+          description: >-
+            The HTML string to append. See \[supported
+            HTML\](../../docs/onenote/onenote-add-ins-page-content.md\#supported-html) for the OneNote add-ins
+            JavaScript API. \[Api set: OneNoteApi 1.1\]
+          type:
+            - string
+  - uid: onenote.OneNote.TableCell.appendImage
+    summary: Adds the specified image to table cell.
+    name: 'appendImage(base64EncodedImage, width, height)'
+    fullName: onenote.OneNote.TableCell.appendImage
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'appendImage(base64EncodedImage: string, width: number, height: number): OneNote.Image;'
+      return:
+        type:
+          - OneNote.Image
+        description: ''
+      parameters:
+        - id: base64EncodedImage
+          description: HTML string to append.
+          type:
+            - string
+        - id: width
+          description: Optional. Width in the unit of Points. The default value is null and image width will be respected.
+          type:
+            - number
+        - id: height
+          description: >-
+            Optional. Height in the unit of Points. The default value is null and image height will be respected. \[Api
+            set: OneNoteApi 1.1\]
+          type:
+            - number
+  - uid: onenote.OneNote.TableCell.appendRichText
+    summary: Adds the specified text to table cell.
+    name: appendRichText(paragraphText)
+    fullName: onenote.OneNote.TableCell.appendRichText
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'appendRichText(paragraphText: string): OneNote.RichText;'
+      return:
+        type:
+          - OneNote.RichText
+        description: ''
+      parameters:
+        - id: paragraphText
+          description: 'HTML string to append. \[Api set: OneNoteApi 1.1\]'
+          type:
+            - string
+  - uid: onenote.OneNote.TableCell.appendTable
+    summary: Adds a table with the specified number of rows and columns to table cell.
+    name: 'appendTable(rowCount, columnCount, values)'
+    fullName: onenote.OneNote.TableCell.appendTable
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'appendTable(rowCount: number, columnCount: number, values?: Array<Array<string>>): OneNote.Table;'
+      return:
+        type:
+          - OneNote.Table
+        description: ''
+      parameters:
+        - id: rowCount
+          description: Required. The number of rows in the table.
+          type:
+            - number
+        - id: columnCount
+          description: Required. The number of columns in the table.
+          type:
+            - number
+        - id: values
+          description: >-
+            Optional 2D array. Cells are filled if the corresponding strings are specified in the array. \[Api set:
+            OneNoteApi 1.1\]
+          type:
+            - Array<Array<string>>
+  - uid: onenote.OneNote.TableCell.cellIndex
+    summary: |-
+      Gets the index of the cell in its row. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: cellIndex
+    fullName: onenote.OneNote.TableCell.cellIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellIndex: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.TableCell.clear
+    summary: |-
+      Clears the contents of the cell.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: clear()
+    fullName: onenote.OneNote.TableCell.clear
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: onenote.OneNote.TableCell.id
+    summary: |-
+      Gets the ID of the cell. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: id
+    fullName: onenote.OneNote.TableCell.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.TableCell.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: onenote.OneNote.TableCell.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.TableCell;'
+      return:
+        type:
+          - OneNote.TableCell
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - 'string | string[] | OfficeExtension.LoadOption'
+  - uid: onenote.OneNote.TableCell.paragraphs
+    summary: |-
+      Gets the collection of Paragraph objects in the TableCell. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: paragraphs
+    fullName: onenote.OneNote.TableCell.paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraphs: OneNote.ParagraphCollection;'
+      return:
+        type:
+          - OneNote.ParagraphCollection
+  - uid: onenote.OneNote.TableCell.parentRow
+    summary: |-
+      Gets the parent row of the cell. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: parentRow
+    fullName: onenote.OneNote.TableCell.parentRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentRow: OneNote.TableRow;'
+      return:
+        type:
+          - OneNote.TableRow
+  - uid: onenote.OneNote.TableCell.rowIndex
+    summary: |-
+      Gets the index of the cell's row in the table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: rowIndex
+    fullName: onenote.OneNote.TableCell.rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowIndex: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.TableCell.shadingColor
+    summary: |-
+      Gets and sets the shading color of the cell
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: shadingColor
+    fullName: onenote.OneNote.TableCell.shadingColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shadingColor: string;'
+      return:
+        type:
+          - string
