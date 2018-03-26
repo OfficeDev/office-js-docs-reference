@@ -193,7 +193,7 @@ export declare namespace Office {
 
         /*
          * Gets a value that indicates whether the content is in HTML or text format
-         * @param tableData  - A TableData object with the headers and rows
+         * @param tableData - A TableData object with the headers and rows
          * @param options - Any optional parameters or state data passed to the method
          * @param callback - The optional method to call when the getTypeAsync method returns
          */

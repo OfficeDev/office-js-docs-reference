@@ -17,7 +17,7 @@ export declare namespace Office {
     export function initialize(reason: InitializationReason): void;
     /**
      * Indicates if the large namespace for objects will be used or not.
-     * @param useShortNamespace  - Indicates if 'true' that the short namespace will be used
+     * @param useShortNamespace - Indicates if 'true' that the short namespace will be used
      */
     export function useShortNamespace(useShortNamespace: boolean): void;
     // Enumerations
@@ -683,7 +683,7 @@ export declare namespace Office {
         getByIdAsync(id: string, options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Asynchronously gets the specified custom XML part(s) by its namespace.
-         * @param ns  - The namespace to search.
+         * @param ns - The namespace to search.
          * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
          * @param callback - A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
@@ -891,7 +891,7 @@ export declare namespace Office {
         rowCount: number;
         /**
          * Adds the specified columns to the table
-         * @param tableData  - A TableData object with the headers and rows
+         * @param tableData - A TableData object with the headers and rows
          * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
          * @param callback - The optional callback method
@@ -899,7 +899,7 @@ export declare namespace Office {
         addColumnsAsync(tableData: TableData | any[][], options?: any, callback?: (result: AsyncResult) => void): void;
         /**
          * Adds the specified rows to the table
-         * @param rows  - A 2D array with the rows to add
+         * @param rows - A 2D array with the rows to add
          * @param options - Syntax example: {asyncContext:context}
          *       asyncContext: Object keeping state for the callback
          * @param callback - The optional callback method
@@ -1548,11 +1548,6 @@ export declare namespace Office {
 }
 
 
-
-///////////////////////////////////////////////////////////////
-
-
-
 ////////////////////////////////////////////////////////////////
 //////////////// Begin OfficeExtension runtime /////////////////
 ////////////////////////////////////////////////////////////////
@@ -1891,6 +1886,7 @@ export declare namespace OfficeExtension {
         };
     }
 }
+
 
 
 ////////////////////////////////////////////////////////////////

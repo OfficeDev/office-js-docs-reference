@@ -5387,7 +5387,7 @@ export declare namespace Word {
         }
     }
 }
-declare module Word {
+export declare module Word {
     /**
      * The RequestContext object facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the request context is required to get access to the Word object model from the add-in.
      */

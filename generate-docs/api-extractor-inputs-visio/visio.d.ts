@@ -2221,7 +2221,7 @@ export declare namespace Visio {
         }
     }
 }
-declare module Visio {
+export declare module Visio {
     /**
      * The RequestContext object facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
      */

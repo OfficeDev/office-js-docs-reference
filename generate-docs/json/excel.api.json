@@ -10355,7 +10355,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "the namespace -"
+                      "text": "namespace URI"
                     }
                   ],
                   "isOptional": false,
@@ -35706,7 +35706,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. Determines the type of clear action. See Excel.ClearApplyTo for details."
+                      "text": "Determines the type of clear action. See Excel.ClearApplyTo for details."
                     }
                   ],
                   "isOptional": true,
@@ -45051,30 +45051,6 @@
                 {
                   "kind": "text",
                   "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
-                }
-              ],
-              "remarks": [],
-              "isBeta": false
-            },
-            "onDeleted": {
-              "kind": "property",
-              "signature": "readonly onDeleted: OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>;",
-              "isOptional": false,
-              "isReadOnly": true,
-              "isStatic": false,
-              "type": "OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Occurs when a worksheet is deleted from the workbook."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: ExcelApi BETA (PREVIEW ONLY)]"
                 }
               ],
               "remarks": [],
