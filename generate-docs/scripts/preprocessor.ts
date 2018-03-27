@@ -6,29 +6,6 @@ import * as fsx from 'fs-extra';
 export class DtsBuilder {
     private slashes = '////////////////////////////////////////////////////////////////';
 
-    // public replaceDtsSection(definitions: string, beginMarker: string, endMarker: string, content: string): string {
-    //     const definitionsLowercase = definitions.toLowerCase();
-
-    //     const indexOfBefore = this.indexOfOneAndOnlyOneLine(
-    //         beginMarker.toLowerCase(), definitionsLowercase, "before");
-    //     const indexOfAfter = this.indexOfOneAndOnlyOneLine(
-    //         endMarker.toLowerCase(), definitionsLowercase, "after");
-
-    //     const before = definitions.substring(0, indexOfBefore);
-    //     const after = definitions.substring(indexOfAfter);
-
-    //     return before +
-    //         '\n' + this.makeHeader(beginMarker) +
-    //         '\n' + this.slashes +
-    //         '\n' +
-    //         '\n' +
-    //         content +
-    //         '\n' +
-    //         '\n' + this.slashes +
-    //         '\n' + this.makeHeader(endMarker) +
-    //         '\n' + after;
-    // }
-
     public extractDtsSection(definitions: string, beginMarker: string, endMarker: string): string {
         const definitionsLowercase = definitions.toLowerCase();
 
@@ -62,12 +39,6 @@ export class DtsBuilder {
                 throw new Error("Invalid position specified");
         }
     }
-
-    // private makeHeader(text: string): string {
-    //     text = ' ' + text + ' ';
-    //     const textWithPrefix = this.slashes.substr(0, Math.floor((this.slashes.length - text.length) / 2)) + text;
-    //     return textWithPrefix + this.slashes.substr(0, this.slashes.length - textWithPrefix.length);
-    // }
 }
 
 (async () => {
@@ -86,14 +57,6 @@ export class DtsBuilder {
         .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
         .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
         .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
-
-    // // remove the OfficeCore section from the d.ts file
-    // definitions = dtsBuilder.replaceDtsSection(
-    //     definitions,
-    //     "Begin OfficeCore",
-    //     "End OfficeCore",
-    //     ""
-    // );
 
     // create file: excel.d.ts
     fsx.writeFileSync(
