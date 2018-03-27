@@ -1,40 +1,7 @@
 #!/usr/bin/env node --harmony
 
 import { fetchAndThrowOnError } from './util';
-// import * as fsx from 'fs-extra';
-
-(async () => {
-    const url = 'https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts';
-    //const slashes = '////////////////////////////////////////////////////////////////';
-
-    // let dtsBuilder = new DtsBuilder();
-    let fileContent = await fetchAndThrowOnError(url, "text");
-
-    // add 'export' keyword and hyphen to @param descriptions where necessary
-    fileContent = fileContent.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(class)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(interface)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(module)(\s+)/gm, `$1export $2$3`)
-        .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
-        .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
-        .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
-
-    // write file
-
-    // fileContent = dtsBuilder.replaceDtsSection(
-    //     fileContent,
-    //     "Begin OfficeExtension runtime",
-    //     "End OfficeExtension runtime",
-    //     [
-    //         fs.readFileSync(`${folder}\\IntelliSense_Partial\\officeextension.runtime.manual.d.ts`).toString(),
-    //         fs.readFileSync(`${folder}\\IntelliSense_Partial\\office.core.d.ts`).toString()
-    //     ].join("\n\n\n")
-    // );
-})();
-
-
+import * as fsx from 'fs-extra';
 
 export class DtsBuilder {
     private slashes = '////////////////////////////////////////////////////////////////';
@@ -60,6 +27,19 @@ export class DtsBuilder {
             '\n' + this.slashes +
             '\n' + this.makeHeader(endMarker) +
             '\n' + after;
+    }
+
+    public extractDtsSection(definitions: string, beginMarker: string, endMarker: string): string {
+        const definitionsLowercase = definitions.toLowerCase();
+
+        const indexOfBefore = this.indexOfOneAndOnlyOneLine(
+            beginMarker.toLowerCase(), definitionsLowercase, "before");
+        const indexOfAfter = this.indexOfOneAndOnlyOneLine(
+            endMarker.toLowerCase(), definitionsLowercase, "after");
+
+        return this.slashes +
+            definitions.substring(indexOfBefore, indexOfAfter) + 
+            this.slashes;
     }
 
     /** Finds the index of a line containing a particular word -- and ensures that only one such line exists */
@@ -89,3 +69,36 @@ export class DtsBuilder {
         return textWithPrefix + this.slashes.substr(0, this.slashes.length - textWithPrefix.length);
     }
 }
+
+(async () => {
+    const url = 'https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts';
+
+    let dtsBuilder = new DtsBuilder();
+    let definitions = await fetchAndThrowOnError(url, "text");
+
+    // fix issues with d.ts file
+    definitions = definitions.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(class)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(interface)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(module)(\s+)/gm, `$1export $2$3`)
+        .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
+        .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
+        .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
+
+    // remove the OfficeCore section from the d.ts file
+    definitions = dtsBuilder.replaceDtsSection(
+        definitions,
+        "Begin OfficeCore",
+        "End OfficeCore",
+        ""
+    );
+
+    // create file: excel.d.ts
+    fsx.writeFileSync('excel.d.ts', dtsBuilder.extractDtsSection(definitions, "Begin Excel APIs", "End Excel APIs"));
+
+})();
+
+
+
