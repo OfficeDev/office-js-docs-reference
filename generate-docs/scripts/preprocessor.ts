@@ -7,12 +7,12 @@ import * as fsx from 'fs-extra';
 
 tryCatch(async () => {
     const urlToCopyOfficeJsFrom = await promptFromList({
-        message: `Would you like to update the current copy of "script-inputs/office.d.ts"? If so, from where?`,
+        message: `What is the source of the d.ts file that should be used to generate the docs?`,
         choices: [
             { name: "DefinitelyTyped", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts" },
             { name: "Prod CDN", value: "https://appsforoffice.officeapps.live.com/lib/1.1/hosted/office.d.ts" },
             { name: "Beta CDN", value: "https://appsforoffice.officeapps.live.com/lib/beta/hosted/office.d.ts" },
-            { name: "[None: Use local]", value: "" }
+            { name: "Local file [generate-docs\\script-inputs\\office.d.ts]", value: "" }
         ]
 
         // Note: using "appsforoffice.officeapps.live.com" instead of "appsforoffice.microsoft.com"
