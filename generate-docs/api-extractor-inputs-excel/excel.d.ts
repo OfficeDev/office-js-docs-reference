@@ -1,13 +1,3 @@
-// Type definitions for Office.js
-// Project: http://dev.office.com
-// Definitions by: OfficeDev <https://github.com/OfficeDev>, Lance Austin <https://github.com/LanceEA>, Michael Zlatkovsky <https://github.com/Zlatkovsky>, Kim Brandl <https://github.com/kbrandl>, Ricky Kirkham <https://github.com/Rick-Kirkham>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-/*
-office-js
-Copyright (c) Microsoft Corporation
-*/
-
 ////////////////////////////////////////////////////////////////
 /////////////////////// Begin Excel APIs ///////////////////////
 ////////////////////////////////////////////////////////////////
@@ -4480,8 +4470,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param namespaceUri - namespace URI
-         */
+         * @param namespaceUri
+        - */
         getByNamespace(namespaceUri: string): Excel.CustomXmlPartScopedCollection;
         /**
          *
@@ -11742,4 +11732,3 @@ export declare namespace Excel {
 ////////////////////////////////////////////////////////////////
 //////////////////////// End Excel APIs ////////////////////////
 ////////////////////////////////////////////////////////////////
-

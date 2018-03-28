@@ -1,53 +1,34 @@
 #!/usr/bin/env node --harmony
 
-import { fetchAndThrowOnError } from './util';
+import { fetchAndThrowOnError, DtsBuilder } from './util';
+import { promptFromList } from './simple-prompts';
+import * as path from "path";
 import * as fsx from 'fs-extra';
 
-export class DtsBuilder {
-    private slashes = '////////////////////////////////////////////////////////////////';
+tryCatch(async () => {
+    const urlToCopyOfficeJsFrom = await promptFromList({
+        message: `Would you like to update the current copy of "script-inputs/office.d.ts"? If so, from where?`,
+        choices: [
+            { name: "DefinitelyTyped", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts" },
+            { name: "Prod CDN", value: "https://appsforoffice.officeapps.live.com/lib/1.1/hosted/office.d.ts" },
+            { name: "Beta CDN", value: "https://appsforoffice.officeapps.live.com/lib/beta/hosted/office.d.ts" },
+            { name: "[None: Use local]", value: "" }
+        ]
 
-    public extractDtsSection(definitions: string, beginMarker: string, endMarker: string): string {
-        const definitionsLowercase = definitions.toLowerCase();
+        // Note: using "appsforoffice.officeapps.live.com" instead of "appsforoffice.microsoft.com"
+        //     to avoid being redirected to the EDOG environment on corpnet.
+        // If we ever want to generate not just public d.ts but also "office-with-first-party.d.ts",
+        //     replace the filename.
+    });
 
-        const indexOfBefore = this.indexOfOneAndOnlyOneLine(
-            beginMarker.toLowerCase(), definitionsLowercase, "before");
-        const indexOfAfter = this.indexOfOneAndOnlyOneLine(
-            endMarker.toLowerCase(), definitionsLowercase, "after");
-
-        return this.slashes +
-            definitions.substring(indexOfBefore, indexOfAfter) + 
-            this.slashes;
+    if (urlToCopyOfficeJsFrom.length > 0) {
+        fsx.writeFileSync("../script-inputs/office.d.ts", await fetchAndThrowOnError(urlToCopyOfficeJsFrom, "text"));
     }
 
-    /** Finds the index of a line containing a particular word -- and ensures that only one such line exists */
-    private indexOfOneAndOnlyOneLine(needle: string, haystack: string, adjustTo: "before" | "after"): number {
-        const position = haystack.indexOf(needle);
-        if (position < 0) {
-            throw new Error(`Could not find "${needle}"`);
-        }
-        const nextPosition = haystack.indexOf(needle, position + needle.length);
-        if (nextPosition > 0) {
-            throw new Error(`Expecting one and only one occurence of the word "${needle}"`);
-        }
+    console.log(`Reading from ${path.resolve("../script-inputs/office.d.ts")}`);
+    let definitions = fsx.readFileSync("../script-inputs/office.d.ts").toString();
 
-        switch (adjustTo) {
-            case "before":
-                return haystack.lastIndexOf('\n', position);
-            case "after":
-                return haystack.indexOf('\n', position) + 1;
-            default:
-                throw new Error("Invalid position specified");
-        }
-    }
-}
-
-(async () => {
-    const url = 'https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts';
-
-    let dtsBuilder = new DtsBuilder();
-    let definitions = await fetchAndThrowOnError(url, "text");
-
-    // fix issues with d.ts file
+    console.log("fix issues with d.ts file");
     definitions = definitions.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
@@ -58,46 +39,58 @@ export class DtsBuilder {
         .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
         .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
 
-    // create file: excel.d.ts
+    const dtsBuilder = new DtsBuilder();
+
+    console.log("create file: excel.d.ts");
     fsx.writeFileSync(
-        '../api-extractor-inputs-excel/excel.d.ts', 
+        '../api-extractor-inputs-excel/excel.d.ts',
         dtsBuilder.extractDtsSection(definitions, "Begin Excel APIs", "End Excel APIs")
     );
 
-    // create file: office.d.ts
+    console.log("create file: office.d.ts");
     fsx.writeFileSync(
-        '../api-extractor-inputs-office/office.d.ts', 
-        dtsBuilder.extractDtsSection(definitions, "Begin Office namespace", "End Office namespace") + 
-        '\n' + 
+        '../api-extractor-inputs-office/office.d.ts',
+        dtsBuilder.extractDtsSection(definitions, "Begin Office namespace", "End Office namespace") +
+        '\n' +
         '\n' +
         dtsBuilder.extractDtsSection(definitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime")
     );
 
-    // create file: onenote.d.ts
+    console.log("create file: onenote.d.ts");
     fsx.writeFileSync(
-        '../api-extractor-inputs-onenote/onenote.d.ts', 
+        '../api-extractor-inputs-onenote/onenote.d.ts',
         dtsBuilder.extractDtsSection(definitions, "Begin OneNote APIs", "End OneNote APIs")
     );
 
-    // create file: outlook.d.ts
+    console.log("create file: outlook.d.ts");
     fsx.writeFileSync(
-        '../api-extractor-inputs-outlook/outlook.d.ts', 
+        '../api-extractor-inputs-outlook/outlook.d.ts',
         dtsBuilder.extractDtsSection(definitions, "Begin Exchange APIs", "End Exchange APIs")
     );
 
-    // create file: viso.d.ts
+    console.log("create file: visio.d.ts");
     fsx.writeFileSync(
-        '../api-extractor-inputs-visio/visio.d.ts', 
+        '../api-extractor-inputs-visio/visio.d.ts',
         dtsBuilder.extractDtsSection(definitions, "Begin Visio APIs", "End Visio APIs")
     );
 
-    // create file: word.d.ts
+    console.log("create file: word.d.ts");
     fsx.writeFileSync(
-        '../api-extractor-inputs-word/word.d.ts', 
+        '../api-extractor-inputs-word/word.d.ts',
         dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs")
     );
 
-})();
+    console.log("Done!");
+
+    process.exit(0);
+});
 
 
-
+async function tryCatch(call: () => Promise<void>) {
+    try {
+        await call();
+    } catch (e) {
+        console.error(e);
+        process.exit(1);
+    }
+}

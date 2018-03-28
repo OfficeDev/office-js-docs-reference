@@ -10,45 +10,29 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const util_1 = require("./util");
+const simple_prompts_1 = require("./simple-prompts");
+const path = require("path");
 const fsx = require("fs-extra");
-class DtsBuilder {
-    constructor() {
-        this.slashes = '////////////////////////////////////////////////////////////////';
+tryCatch(() => __awaiter(this, void 0, void 0, function* () {
+    const urlToCopyOfficeJsFrom = yield simple_prompts_1.promptFromList({
+        message: `Would you like to update the current copy of "script-inputs/office.d.ts"? If so, from where?`,
+        choices: [
+            { name: "DefinitelyTyped", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts" },
+            { name: "Prod CDN", value: "https://appsforoffice.officeapps.live.com/lib/1.1/hosted/office.d.ts" },
+            { name: "Beta CDN", value: "https://appsforoffice.officeapps.live.com/lib/beta/hosted/office.d.ts" },
+            { name: "[None: Use local]", value: "" }
+        ]
+        // Note: using "appsforoffice.officeapps.live.com" instead of "appsforoffice.microsoft.com"
+        //     to avoid being redirected to the EDOG environment on corpnet.
+        // If we ever want to generate not just public d.ts but also "office-with-first-party.d.ts",
+        //     replace the filename.
+    });
+    if (urlToCopyOfficeJsFrom.length > 0) {
+        fsx.writeFileSync("../script-inputs/office.d.ts", yield util_1.fetchAndThrowOnError(urlToCopyOfficeJsFrom, "text"));
     }
-    extractDtsSection(definitions, beginMarker, endMarker) {
-        const definitionsLowercase = definitions.toLowerCase();
-        const indexOfBefore = this.indexOfOneAndOnlyOneLine(beginMarker.toLowerCase(), definitionsLowercase, "before");
-        const indexOfAfter = this.indexOfOneAndOnlyOneLine(endMarker.toLowerCase(), definitionsLowercase, "after");
-        return this.slashes +
-            definitions.substring(indexOfBefore, indexOfAfter) +
-            this.slashes;
-    }
-    /** Finds the index of a line containing a particular word -- and ensures that only one such line exists */
-    indexOfOneAndOnlyOneLine(needle, haystack, adjustTo) {
-        const position = haystack.indexOf(needle);
-        if (position < 0) {
-            throw new Error(`Could not find "${needle}"`);
-        }
-        const nextPosition = haystack.indexOf(needle, position + needle.length);
-        if (nextPosition > 0) {
-            throw new Error(`Expecting one and only one occurence of the word "${needle}"`);
-        }
-        switch (adjustTo) {
-            case "before":
-                return haystack.lastIndexOf('\n', position);
-            case "after":
-                return haystack.indexOf('\n', position) + 1;
-            default:
-                throw new Error("Invalid position specified");
-        }
-    }
-}
-exports.DtsBuilder = DtsBuilder;
-(() => __awaiter(this, void 0, void 0, function* () {
-    const url = 'https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts';
-    let dtsBuilder = new DtsBuilder();
-    let definitions = yield util_1.fetchAndThrowOnError(url, "text");
-    // fix issues with d.ts file
+    console.log(`Reading from ${path.resolve("../script-inputs/office.d.ts")}`);
+    let definitions = fsx.readFileSync("../script-inputs/office.d.ts").toString();
+    console.log("fix issues with d.ts file");
     definitions = definitions.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
@@ -58,20 +42,34 @@ exports.DtsBuilder = DtsBuilder;
         .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
         .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
         .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
-    // create file: excel.d.ts
+    const dtsBuilder = new util_1.DtsBuilder();
+    console.log("create file: excel.d.ts");
     fsx.writeFileSync('../api-extractor-inputs-excel/excel.d.ts', dtsBuilder.extractDtsSection(definitions, "Begin Excel APIs", "End Excel APIs"));
-    // create file: office.d.ts
+    console.log("create file: office.d.ts");
     fsx.writeFileSync('../api-extractor-inputs-office/office.d.ts', dtsBuilder.extractDtsSection(definitions, "Begin Office namespace", "End Office namespace") +
         '\n' +
         '\n' +
         dtsBuilder.extractDtsSection(definitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime"));
-    // create file: onenote.d.ts
+    console.log("create file: onenote.d.ts");
     fsx.writeFileSync('../api-extractor-inputs-onenote/onenote.d.ts', dtsBuilder.extractDtsSection(definitions, "Begin OneNote APIs", "End OneNote APIs"));
-    // create file: outlook.d.ts
+    console.log("create file: outlook.d.ts");
     fsx.writeFileSync('../api-extractor-inputs-outlook/outlook.d.ts', dtsBuilder.extractDtsSection(definitions, "Begin Exchange APIs", "End Exchange APIs"));
-    // create file: viso.d.ts
+    console.log("create file: visio.d.ts");
     fsx.writeFileSync('../api-extractor-inputs-visio/visio.d.ts', dtsBuilder.extractDtsSection(definitions, "Begin Visio APIs", "End Visio APIs"));
-    // create file: word.d.ts
+    console.log("create file: word.d.ts");
     fsx.writeFileSync('../api-extractor-inputs-word/word.d.ts', dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs"));
-}))();
+    console.log("Done!");
+    process.exit(0);
+}));
+function tryCatch(call) {
+    return __awaiter(this, void 0, void 0, function* () {
+        try {
+            yield call();
+        }
+        catch (e) {
+            console.error(e);
+            process.exit(1);
+        }
+    });
+}
 //# sourceMappingURL=preprocessor.js.map

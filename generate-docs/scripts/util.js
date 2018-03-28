@@ -27,6 +27,39 @@ function fetchAndThrowOnError(url, format) {
     });
 }
 exports.fetchAndThrowOnError = fetchAndThrowOnError;
+class DtsBuilder {
+    constructor() {
+        this.slashes = '////////////////////////////////////////////////////////////////';
+    }
+    extractDtsSection(definitions, beginMarker, endMarker) {
+        const definitionsLowercase = definitions.toLowerCase();
+        const indexOfBefore = this.indexOfOneAndOnlyOneLine(beginMarker.toLowerCase(), definitionsLowercase, "before");
+        const indexOfAfter = this.indexOfOneAndOnlyOneLine(endMarker.toLowerCase(), definitionsLowercase, "after");
+        return this.slashes +
+            definitions.substring(indexOfBefore, indexOfAfter) +
+            this.slashes;
+    }
+    /** Finds the index of a line containing a particular word -- and ensures that only one such line exists */
+    indexOfOneAndOnlyOneLine(needle, haystack, adjustTo) {
+        const position = haystack.indexOf(needle);
+        if (position < 0) {
+            throw new Error(`Could not find "${needle}"`);
+        }
+        const nextPosition = haystack.indexOf(needle, position + needle.length);
+        if (nextPosition > 0) {
+            throw new Error(`Expecting one and only one occurence of the word "${needle}"`);
+        }
+        switch (adjustTo) {
+            case "before":
+                return haystack.lastIndexOf('\n', position);
+            case "after":
+                return haystack.indexOf('\n', position) + 1;
+            default:
+                throw new Error("Invalid position specified");
+        }
+    }
+}
+exports.DtsBuilder = DtsBuilder;
 function createOrEmptyOutDirectory(path) {
     if (fs.existsSync(path)) {
         fs.emptyDirSync(path);

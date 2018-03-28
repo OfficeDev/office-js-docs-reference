@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/fs-extra": "3.0.1",
+    "@types/inquirer": "0.0.34",
     "@types/js-yaml": "3.5.29",
     "@types/lodash": "4.14.64",
     "@types/node": "7.0.5",
@@ -22,6 +23,7 @@
   },
   "dependencies": {
     "fs-extra": "3.0.1",
+    "inquirer": "3.1.0",
     "js-yaml": "3.7.0",
     "lodash": "4.17.4",
     "isomorphic-fetch": "2.2.1"

@@ -12,7 +12,8 @@
             "args": [],
             "sourceMaps": true,
             "outFiles": [],
-            "cwd": "${workspaceRoot}/generate-docs/scripts"
+            "cwd": "${workspaceRoot}/generate-docs/scripts",
+            "console": "integratedTerminal"
         },
         {
             "type": "node",
