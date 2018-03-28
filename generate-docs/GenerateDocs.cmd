@@ -1,5 +1,11 @@
 call npm install
 
+pushd scripts
+call npm install
+call npm run build
+call node preprocessor.js
+popd
+
 del package-lock.json
 
 cd api-extractor-inputs-office
