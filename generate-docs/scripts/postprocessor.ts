@@ -126,6 +126,24 @@ tryCatch(async () => {
     // write file
     fsx.writeFileSync("zNewToc.yml", jsyaml.safeDump(newToc));
 
+    const docsSource = path.resolve("../generate-docs/yaml");
+    const docsDestination = path.resolve("../docs/docs-ref-autogen");
+    console.log(`Copying docs output files to: ${docsDestination} folder`);
+
+    // delete everything except the 'overview' folder from the /docs folder
+    fsx.readdirSync(docsDestination)
+        .filter(filename => filename !== "overview")
+        .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
+
+    // copy docs output to /docs/docs-ref-autogen folder
+    fsx.readdirSync(docsSource)
+        .forEach(filename => {
+            fsx.copySync(
+                docsSource + '/' + filename,
+                docsDestination + '/' + filename
+            );
+    });
+
     console.log("Done!");
 
     process.exit(0);
