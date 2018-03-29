@@ -50,8 +50,19 @@ interface INewToc {
                     uid: string,
                     items?: [
                         {
-                            name: string, //kb: need to add optional items property...for office namespaces
-                            uid?: string
+                            name: string,
+                            uid?: string,
+                            items?: [
+                                {
+                                    name?: string,
+                                    items?: [
+                                        {
+                                            name?: string,
+                                            uid?: string
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
@@ -79,7 +90,7 @@ tryCatch(async () => {
     origToc.items.forEach((rootItem, rootIndex) => {
         rootItem.items.forEach((packageItem, packageIndex) => {
             if (packageItem.name !== 'office') {
-                packageItem.items.forEach((namespaceItem, index) => {
+                packageItem.items.forEach((namespaceItem, namespaceIndex) => {
                     membersToMove.items = namespaceItem.items;
                 });
                 newToc.items[0].items.push({
@@ -88,7 +99,6 @@ tryCatch(async () => {
                     "items": membersToMove.items
                 });
             }
-            console.log(packageItem.name + '<br/>');
         });
     });
 
@@ -98,17 +108,9 @@ tryCatch(async () => {
                 newToc.items[0].items.push({
                     "name": 'Shared API',
                     "uid": packageItem.uid,
-                });
-
-                packageItem.items.forEach((namespaceItem, namespaceIndex) => {
-                    membersToMove.items = namespaceItem.items;
-                    newToc.items[0].items[namespaceIndex].items.push({ 
-                        "name": namespaceItem.name,
-                        "items": membersToMove.items
-                    });
+                    "items": packageItem.items
                 });
             }
-            console.log(packageItem.name + '<br/>');
         });
     });
 
