@@ -73,7 +73,7 @@ interface INewToc {
 
 tryCatch(async () => {
 
-    const tocPath = path.resolve("yaml/toc.yml");
+    const tocPath = path.resolve("../yaml/toc.yml");
 
     console.log(`Updating the TOC file: ${tocPath}`);
 
