@@ -73,7 +73,7 @@ interface INewToc {
 
 tryCatch(async () => {
 
-    const tocPath = path.resolve("../generate-docs/yaml/toc.yml");
+    const tocPath = path.resolve("yaml/toc.yml");
 
     console.log(`Updating the TOC file: ${tocPath}`);
 
@@ -128,7 +128,7 @@ tryCatch(async () => {
     // write file
     fsx.writeFileSync(tocPath, jsyaml.safeDump(newToc));
 
-    const docsSource = path.resolve("../generate-docs/yaml");
+    const docsSource = path.resolve("yaml");
     const docsDestination = path.resolve("../docs/docs-ref-autogen");
 
     console.log(`Copying docs output files to: ${docsDestination} folder`);
