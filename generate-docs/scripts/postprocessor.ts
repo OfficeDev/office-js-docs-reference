@@ -1,74 +1,131 @@
-// declare var fileContents: string;
+#!/usr/bin/env node --harmony
 
-// const lines = fileContents
-//     .replace(/\r\n/g, '\n')
-//     .split("\n");
+import * as fsx from 'fs-extra';
+import * as jsyaml from "js-yaml";
+import * as path from "path";
 
-// const linesToKeep = [];
-// for (let i = 0; i < lines.length; i++) {
-//     let didChange = changeNamesIfRelevant(lines, i);
-//     linesToKeep.push(lines[i]);
-// }
+interface IOrigToc {
+    items: [
+        {
+            name: string,
+            href: string,
+            items: [
+                {
+                    name: string,
+                    uid: string,
+                    items: [
+                        {
+                            name: string,
+                            items: [
+                                {
+                                    name: string,
+                                    uid?: string
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
 
+interface IMembers {
+    items: [
+        {
+            name: string,
+            uid?: string
+        }
+    ]
+}
 
-// function changeNamesIfRelevant() {
-//     //regex
-//     // return true if it did in fact match and you ended up having to remove
-// }
+interface INewToc {
+    items: [
+        {
+            name: string,
+            href: string,
+            items?: [
+                {
+                    name: string,
+                    uid: string,
+                    items?: [
+                        {
+                            name: string, //kb: need to add optional items property...for office namespaces
+                            uid?: string
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
 
-// // technique for updating structure of toc.yml
-// const data: string = (jsyaml.safeLoad(fs.readFileSync(filename).toString()) as ISnippet).script.content;
-// data.items.forEach((item, index) => {
-//     item.name = item.name.substr(0, 1).toUpperCase() + item.name.substr(1);
-//     if (true) {
-//         item.items = item.items.items;
-//     }
-// }
+tryCatch(async () => {
 
-// // step 1: delete everything except the 'overview' folder from the /docs folder
-// export function deleteAllFilesExceptDotGit(path: string): void {
-//     fs.readdirSync(path)
-//         .filter(filename => filename !== ".git")
-//         .forEach(filename => fs.removeSync(path + '/' + filename));
-// }
+    console.log(`Updating the TOC file: ${path.resolve("../generate-docs/yaml/toc.yml")}`);
 
+    let origToc = (jsyaml.safeLoad(fsx.readFileSync("../generate-docs/yaml/toc.yml").toString()) as IOrigToc);
 
-// // step 2: copy all files/folders from /yaml folder to the /docs/docs-ref-autogen folder
-// let options = { except: string[] }; //don't really need this...just specify string below in filter
+    let newToc = <INewToc>{};
 
-// fs.readdirSync(tempCloneFolder)
-//     .filter(filename => options.except.indexOf(filename) < 0)
-//     .forEach(filename => {
-//         fs.copySync(
-//             tempCloneFolder + '/' + filename,
-//             this.rootDestDir + '/' + filename,
-//             COPY_OPTIONS
-//         );
-// });
+    let membersToMove = <IMembers>{};
 
+    newToc.items = [{
+        "name": origToc.items[0].name,
+        "href": origToc.items[0].href
+    }];
+    newToc.items[0].items = [] as any;
 
-// function fixTocFile() : void {
-//     // read file
-//     const file = fsx.readFileSync('tocORIG.yml');
-//     let fileContent = file.toString();
+    origToc.items.forEach((rootItem, rootIndex) => {
+        rootItem.items.forEach((packageItem, packageIndex) => {
+            if (packageItem.name !== 'office') {
+                packageItem.items.forEach((namespaceItem, index) => {
+                    membersToMove.items = namespaceItem.items;
+                });
+                newToc.items[0].items.push({
+                    "name": packageItem.name.substr(0, 1).toUpperCase() + packageItem.name.substr(1),
+                    "uid": packageItem.uid,
+                    "items": membersToMove.items
+                });
+            }
+            console.log(packageItem.name + '<br/>');
+        });
+    });
 
-//     // replace 
-//     const result = fileContent
-//         .replace(/(items:\r\n)(\s*\- name: Excel\r\n)(\s*items:\r\n)/, `$1`)
-//         .replace(/(items:\r\n)(\s*\- name: OneNote\r\n)(\s*items:\r\n)/, `$1`)
-//         .replace(/(items:\r\n)(\s*\- name: Visio\r\n)(\s*items:\r\n)/, `$1`)
-//         .replace(/(items:\r\n)(\s*\- name: Word\r\n)(\s*items:\r\n)/, `$1`)
-//         .replace(/(uid: outlook\r\n)(\s*items:\r\n)(\s*\- name: Office\r\n)(\s*items:\r\n)/, `$1$2`)
-//         .replace(/name: excel/, `name: Excel`)
-//         .replace(/name: office/, `name: Shared API`)
-//         .replace(/name: onenote/, `name: OneNote`)
-//         .replace(/name: outlook/, `name: Outlook`)
-//         .replace(/name: visio/, `name: Visio`)
-//         .replace(/name: word/, `name: Word`);
-        
-//     // TODO: at this point, the yaml contains extra indentation on some lines.
-//     //       need to prettify the yaml (in 'result' string) before writing contents back to file.
+    origToc.items.forEach((rootItem, rootIndex) => {
+        rootItem.items.forEach((packageItem, packageIndex) => {
+            if (packageItem.name === 'office') {
+                newToc.items[0].items.push({
+                    "name": 'Shared API',
+                    "uid": packageItem.uid,
+                });
 
-//     // write file 
-//     fsx.writeFileSync('toc.yml', result);
-// }
+                packageItem.items.forEach((namespaceItem, namespaceIndex) => {
+                    membersToMove.items = namespaceItem.items;
+                    newToc.items[0].items[namespaceIndex].items.push({ 
+                        "name": namespaceItem.name,
+                        "items": membersToMove.items
+                    });
+                });
+            }
+            console.log(packageItem.name + '<br/>');
+        });
+    });
+
+    // write file
+    fsx.writeFileSync("zNewToc.yml", jsyaml.safeDump(newToc));
+
+    console.log("Done!");
+
+    process.exit(0);
+});
+
+async function tryCatch(call: () => Promise<void>) {
+    try {
+        await call();
+    } catch (e) {
+        console.error(e);
+        process.exit(1);
+    }
+}
+
