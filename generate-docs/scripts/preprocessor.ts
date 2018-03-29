@@ -7,7 +7,7 @@ import * as fsx from 'fs-extra';
 
 tryCatch(async () => {
     const urlToCopyOfficeJsFrom = await promptFromList({
-        message: `What is the source of the d.ts file that should be used to generate the docs?`,
+        message: `\n\nWhat is the source of the d.ts file that should be used to generate the docs?`,
         choices: [
             { name: "DefinitelyTyped", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts" },
             { name: "Prod CDN", value: "https://appsforoffice.officeapps.live.com/lib/1.1/hosted/office.d.ts" },
