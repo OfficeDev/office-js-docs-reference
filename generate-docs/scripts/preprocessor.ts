@@ -6,8 +6,9 @@ import * as path from "path";
 import * as fsx from 'fs-extra';
 
 tryCatch(async () => {
+    console.log('\n\n');
     const urlToCopyOfficeJsFrom = await promptFromList({
-        message: `\n\nWhat is the source of the d.ts file that should be used to generate the docs?`,
+        message: `What is the source of the d.ts file that should be used to generate the docs?`,
         choices: [
             { name: "DefinitelyTyped", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js/index.d.ts" },
             { name: "Prod CDN", value: "https://appsforoffice.officeapps.live.com/lib/1.1/hosted/office.d.ts" },
@@ -28,7 +29,7 @@ tryCatch(async () => {
     console.log(`Reading from ${path.resolve("../script-inputs/office.d.ts")}`);
     let definitions = fsx.readFileSync("../script-inputs/office.d.ts").toString();
 
-    console.log("fix issues with d.ts file");
+    console.log("fix issues with d.ts file\n\n");
     definitions = definitions.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
@@ -74,7 +75,7 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(definitions, "Begin Visio APIs", "End Visio APIs")
     );
 
-    console.log("create file: word.d.ts");
+    console.log("create file: word.d.ts\n\n");
     fsx.writeFileSync(
         '../api-extractor-inputs-word/word.d.ts',
         dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs")
