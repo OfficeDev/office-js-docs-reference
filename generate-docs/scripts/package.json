@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json --version",
     "start": "tsc -p tsconfig.json --watch",
     "lint": "tslint --project tsconfig.json"
   },
