@@ -129,7 +129,7 @@ tryCatch(async () => {
     fsx.writeFileSync(tocPath, jsyaml.safeDump(newToc));
 
     const docsSource = path.resolve("yaml");
-    const docsDestination = path.resolve("../docs/docs-ref-autogen");
+    const docsDestination = path.resolve("../../docs/docs-ref-autogen");
 
     console.log(`Copying docs output files to: ${docsDestination} folder`);
 
