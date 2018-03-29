@@ -73,9 +73,11 @@ interface INewToc {
 
 tryCatch(async () => {
 
-    console.log(`Updating the TOC file: ${path.resolve("../generate-docs/yaml/toc.yml")}`);
+    const tocPath = path.resolve("../generate-docs/yaml/toc.yml");
 
-    let origToc = (jsyaml.safeLoad(fsx.readFileSync("../generate-docs/yaml/toc.yml").toString()) as IOrigToc);
+    console.log(`Updating the TOC file: ${tocPath}`);
+
+    let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as IOrigToc);
     let newToc = <INewToc>{};
     let membersToMove = <IMembers>{};
 
@@ -124,10 +126,11 @@ tryCatch(async () => {
     });
 
     // write file
-    fsx.writeFileSync("zNewToc.yml", jsyaml.safeDump(newToc));
+    fsx.writeFileSync(tocPath, jsyaml.safeDump(newToc));
 
     const docsSource = path.resolve("../generate-docs/yaml");
     const docsDestination = path.resolve("../docs/docs-ref-autogen");
+
     console.log(`Copying docs output files to: ${docsDestination} folder`);
 
     // delete everything except the 'overview' folder from the /docs folder
