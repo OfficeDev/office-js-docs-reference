@@ -26,10 +26,12 @@ tryCatch(async () => {
         fsx.writeFileSync("../script-inputs/office.d.ts", await fetchAndThrowOnError(urlToCopyOfficeJsFrom, "text"));
     }
 
-    console.log(`Reading from ${path.resolve("../script-inputs/office.d.ts")}`);
+    console.log("\nStarting preprocessor script...");
+
+    console.log(`\nReading from ${path.resolve("../script-inputs/office.d.ts")}`);
     let definitions = fsx.readFileSync("../script-inputs/office.d.ts").toString();
 
-    console.log("fix issues with d.ts file\n\n");
+    console.log("\nFixing issues with d.ts file...");
     definitions = definitions.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
@@ -41,6 +43,8 @@ tryCatch(async () => {
         .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
 
     const dtsBuilder = new DtsBuilder();
+
+    console.log("\nCreating separate d.ts files...");
 
     console.log("create file: excel.d.ts");
     fsx.writeFileSync(
@@ -81,7 +85,7 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs")
     );
 
-    console.log("Done!");
+    console.log("\nPreprocessor script complete!");
 
     process.exit(0);
 });

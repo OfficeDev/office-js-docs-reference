@@ -75,7 +75,9 @@ tryCatch(async () => {
 
     const tocPath = path.resolve("../yaml/toc.yml");
 
-    console.log(`Updating the TOC file: ${tocPath}`);
+    console.log("\nStarting postprocessor script...");
+
+    console.log(`\nUpdating the structure of the TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as IOrigToc);
     let newToc = <INewToc>{};
@@ -131,7 +133,7 @@ tryCatch(async () => {
     const docsSource = path.resolve("../yaml");
     const docsDestination = path.resolve("../../docs/docs-ref-autogen");
 
-    console.log(`Copying docs output files to: ${docsDestination} folder`);
+    console.log(`\nCopying docs output files to: ${docsDestination}`);
 
     // delete everything except the 'overview' folder from the /docs folder
     fsx.readdirSync(docsDestination)
@@ -147,7 +149,7 @@ tryCatch(async () => {
             );
     });
 
-    console.log("Done!");
+    console.log("\nPostprocessor script complete!");
 
     process.exit(0);
 });
