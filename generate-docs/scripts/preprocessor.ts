@@ -46,7 +46,7 @@ tryCatch(async () => {
 
     console.log("\nCreating separate d.ts files...");
 
-    console.log("create file: excel.d.ts");
+    console.log("\ncreate file: excel.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-excel/excel.d.ts',
         dtsBuilder.extractDtsSection(definitions, "Begin Excel APIs", "End Excel APIs")
@@ -79,7 +79,7 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(definitions, "Begin Visio APIs", "End Visio APIs")
     );
 
-    console.log("create file: word.d.ts\n\n");
+    console.log("create file: word.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-word/word.d.ts',
         dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs")
