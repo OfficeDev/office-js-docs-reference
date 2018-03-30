@@ -114,5 +114,8 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"count\": number;\r\n        }"
+          - |-
+            {
+                        "count": number;
+                    }
         description: ''

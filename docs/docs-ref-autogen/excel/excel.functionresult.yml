@@ -65,7 +65,11 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"error\": string;\r\n            \"value\": T;\r\n        }"
+          - |-
+            {
+                        "error": string;
+                        "value": T;
+                    }
         description: ''
   - uid: excel.Excel.FunctionResult.value
     summary: >-

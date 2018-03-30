@@ -101,7 +101,11 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"options\": WorksheetProtectionOptions;\r\n            \"protected\": boolean;\r\n        }"
+          - |-
+            {
+                        "options": WorksheetProtectionOptions;
+                        "protected": boolean;
+                    }
         description: ''
   - uid: excel.Excel.WorksheetProtection.unprotect
     summary: |-

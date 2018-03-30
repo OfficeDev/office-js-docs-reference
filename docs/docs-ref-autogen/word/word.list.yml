@@ -338,7 +338,12 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"id\": number;\r\n            \"levelExistences\": boolean[];\r\n            \"levelTypes\": string[];\r\n        }"
+          - |-
+            {
+                        "id": number;
+                        "levelExistences": boolean[];
+                        "levelTypes": string[];
+                    }
         description: ''
   - uid: word.Word.List.track
     summary: >-

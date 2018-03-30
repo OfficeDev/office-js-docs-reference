@@ -334,7 +334,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;"
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
       return:
         type:
           - Word.RangeCollection
@@ -347,7 +356,16 @@ items:
         - id: searchOptions
           description: Optional. Options for the search.
           type:
-            - "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+            - |-
+              Word.SearchOptions | {
+                          ignorePunct?: boolean;
+                          ignoreSpace?: boolean;
+                          matchCase?: boolean;
+                          matchPrefix?: boolean;
+                          matchSuffix?: boolean;
+                          matchWholeWord?: boolean;
+                          matchWildcards?: boolean;
+                      }
   - uid: word.Word.TableRow.select
     summary: |-
       Selects the row and navigates the Word UI to it.
@@ -377,7 +395,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.TableRowUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.TableRowUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -390,7 +411,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: word.Word.TableRow.setCellPadding
     summary: |-
       Sets cell padding in points.
@@ -441,7 +468,18 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"cellCount\": number;\r\n            \"font\": Font;\r\n            \"horizontalAlignment\": string;\r\n            \"isHeader\": boolean;\r\n            \"preferredHeight\": number;\r\n            \"rowIndex\": number;\r\n            \"shadingColor\": string;\r\n            \"values\": string[][];\r\n            \"verticalAlignment\": string;\r\n        }"
+          - |-
+            {
+                        "cellCount": number;
+                        "font": Font;
+                        "horizontalAlignment": string;
+                        "isHeader": boolean;
+                        "preferredHeight": number;
+                        "rowIndex": number;
+                        "shadingColor": string;
+                        "values": string[][];
+                        "verticalAlignment": string;
+                    }
         description: ''
   - uid: word.Word.TableRow.track
     summary: >-

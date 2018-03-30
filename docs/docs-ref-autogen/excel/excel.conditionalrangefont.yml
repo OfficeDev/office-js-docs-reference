@@ -112,7 +112,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ConditionalRangeFontUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ConditionalRangeFontUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -125,7 +128,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.ConditionalRangeFont.strikethrough
     summary: |-
       Represents the strikethrough status of the font.
@@ -151,7 +160,14 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"bold\": boolean;\r\n            \"color\": string;\r\n            \"italic\": boolean;\r\n            \"strikethrough\": boolean;\r\n            \"underline\": string;\r\n        }"
+          - |-
+            {
+                        "bold": boolean;
+                        "color": string;
+                        "italic": boolean;
+                        "strikethrough": boolean;
+                        "underline": string;
+                    }
         description: ''
   - uid: excel.Excel.ConditionalRangeFont.underline
     summary: |-

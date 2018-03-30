@@ -82,7 +82,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.CustomPropertyUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.CustomPropertyUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -95,7 +98,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: word.Word.CustomProperty.toJSON
     name: toJSON()
     fullName: word.Word.CustomProperty.toJSON
@@ -106,7 +115,12 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"key\": string;\r\n            \"type\": string;\r\n            \"value\": any;\r\n        }"
+          - |-
+            {
+                        "key": string;
+                        "type": string;
+                        "value": any;
+                    }
         description: ''
   - uid: word.Word.CustomProperty.track
     summary: >-

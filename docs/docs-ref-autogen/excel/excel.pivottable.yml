@@ -95,7 +95,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.PivotTableUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.PivotTableUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -108,7 +111,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.PivotTable.toJSON
     name: toJSON()
     fullName: excel.Excel.PivotTable.toJSON
@@ -119,7 +128,11 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"id\": string;\r\n            \"name\": string;\r\n        }"
+          - |-
+            {
+                        "id": string;
+                        "name": string;
+                    }
         description: ''
   - uid: excel.Excel.PivotTable.worksheet
     summary: |-

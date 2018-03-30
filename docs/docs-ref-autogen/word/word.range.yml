@@ -857,7 +857,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;"
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
       return:
         type:
           - Word.RangeCollection
@@ -870,7 +879,16 @@ items:
         - id: searchOptions
           description: Optional. Options for the search.
           type:
-            - "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+            - |-
+              Word.SearchOptions | {
+                          ignorePunct?: boolean;
+                          ignoreSpace?: boolean;
+                          matchCase?: boolean;
+                          matchPrefix?: boolean;
+                          matchSuffix?: boolean;
+                          matchWholeWord?: boolean;
+                          matchWildcards?: boolean;
+                      }
   - uid: word.Word.Range.select
     summary: |-
       Selects and navigates the Word UI to the range.
@@ -900,7 +918,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.RangeUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.RangeUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -913,7 +934,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: word.Word.Range.split
     summary: |-
       Splits the range into child ranges by using delimiters.
@@ -1030,7 +1057,15 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"font\": Font;\r\n            \"hyperlink\": string;\r\n            \"isEmpty\": boolean;\r\n            \"style\": string;\r\n            \"styleBuiltIn\": string;\r\n            \"text\": string;\r\n        }"
+          - |-
+            {
+                        "font": Font;
+                        "hyperlink": string;
+                        "isEmpty": boolean;
+                        "style": string;
+                        "styleBuiltIn": string;
+                        "text": string;
+                    }
         description: ''
   - uid: word.Word.Range.track
     summary: >-

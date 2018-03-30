@@ -61,7 +61,7 @@ items:
         description: ''
       parameters:
         - id: namespaceUri
-          description: namespace URI
+          description: ''
           type:
             - string
   - uid: excel.Excel.CustomXmlPartCollection.getCount

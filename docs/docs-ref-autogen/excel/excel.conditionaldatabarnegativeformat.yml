@@ -113,7 +113,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ConditionalDataBarNegativeFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ConditionalDataBarNegativeFormatUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -126,7 +129,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.ConditionalDataBarNegativeFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ConditionalDataBarNegativeFormat.toJSON
@@ -137,5 +146,11 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"borderColor\": string;\r\n            \"fillColor\": string;\r\n            \"matchPositiveBorderColor\": boolean;\r\n            \"matchPositiveFillColor\": boolean;\r\n        }"
+          - |-
+            {
+                        "borderColor": string;
+                        "fillColor": string;
+                        "matchPositiveBorderColor": boolean;
+                        "matchPositiveFillColor": boolean;
+                    }
         description: ''

@@ -329,5 +329,8 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"criteria\": FilterCriteria;\r\n        }"
+          - |-
+            {
+                        "criteria": FilterCriteria;
+                    }
         description: ''

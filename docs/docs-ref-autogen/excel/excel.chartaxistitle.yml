@@ -63,7 +63,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ChartAxisTitleUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ChartAxisTitleUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -76,7 +79,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.ChartAxisTitle.text
     summary: |-
       Represents the axis title.
@@ -102,7 +111,12 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"format\": ChartAxisTitleFormat;\r\n            \"text\": string;\r\n            \"visible\": boolean;\r\n        }"
+          - |-
+            {
+                        "format": ChartAxisTitleFormat;
+                        "text": string;
+                        "visible": boolean;
+                    }
         description: ''
   - uid: excel.Excel.ChartAxisTitle.visible
     summary: |-

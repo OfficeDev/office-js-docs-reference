@@ -800,7 +800,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;"
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
       return:
         type:
           - Word.RangeCollection
@@ -813,7 +822,16 @@ items:
         - id: searchOptions
           description: Optional. Options for the search.
           type:
-            - "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+            - |-
+              Word.SearchOptions | {
+                          ignorePunct?: boolean;
+                          ignoreSpace?: boolean;
+                          matchCase?: boolean;
+                          matchPrefix?: boolean;
+                          matchSuffix?: boolean;
+                          matchWholeWord?: boolean;
+                          matchWildcards?: boolean;
+                      }
   - uid: word.Word.Table.select
     summary: |-
       Selects the table, or the position at the start or end of the table, and navigates the Word UI to it.
@@ -843,7 +861,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.TableUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.TableUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -856,7 +877,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: word.Word.Table.setCellPadding
     summary: |-
       Sets cell padding in points.
@@ -1031,7 +1058,27 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"alignment\": string;\r\n            \"font\": Font;\r\n            \"headerRowCount\": number;\r\n            \"horizontalAlignment\": string;\r\n            \"isUniform\": boolean;\r\n            \"nestingLevel\": number;\r\n            \"rowCount\": number;\r\n            \"shadingColor\": string;\r\n            \"style\": string;\r\n            \"styleBandedColumns\": boolean;\r\n            \"styleBandedRows\": boolean;\r\n            \"styleBuiltIn\": string;\r\n            \"styleFirstColumn\": boolean;\r\n            \"styleLastColumn\": boolean;\r\n            \"styleTotalRow\": boolean;\r\n            \"values\": string[][];\r\n            \"verticalAlignment\": string;\r\n            \"width\": number;\r\n        }"
+          - |-
+            {
+                        "alignment": string;
+                        "font": Font;
+                        "headerRowCount": number;
+                        "horizontalAlignment": string;
+                        "isUniform": boolean;
+                        "nestingLevel": number;
+                        "rowCount": number;
+                        "shadingColor": string;
+                        "style": string;
+                        "styleBandedColumns": boolean;
+                        "styleBandedRows": boolean;
+                        "styleBuiltIn": string;
+                        "styleFirstColumn": boolean;
+                        "styleLastColumn": boolean;
+                        "styleTotalRow": boolean;
+                        "values": string[][];
+                        "verticalAlignment": string;
+                        "width": number;
+                    }
         description: ''
   - uid: word.Word.Table.track
     summary: >-

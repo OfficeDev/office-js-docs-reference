@@ -290,7 +290,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.DocumentPropertiesUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.DocumentPropertiesUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -303,7 +306,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: word.Word.DocumentProperties.subject
     summary: |-
       Gets or sets the subject of the document.
@@ -359,7 +368,26 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"applicationName\": string;\r\n            \"author\": string;\r\n            \"category\": string;\r\n            \"comments\": string;\r\n            \"company\": string;\r\n            \"creationDate\": Date;\r\n            \"format\": string;\r\n            \"keywords\": string;\r\n            \"lastAuthor\": string;\r\n            \"lastPrintDate\": Date;\r\n            \"lastSaveTime\": Date;\r\n            \"manager\": string;\r\n            \"revisionNumber\": string;\r\n            \"security\": number;\r\n            \"subject\": string;\r\n            \"template\": string;\r\n            \"title\": string;\r\n        }"
+          - |-
+            {
+                        "applicationName": string;
+                        "author": string;
+                        "category": string;
+                        "comments": string;
+                        "company": string;
+                        "creationDate": Date;
+                        "format": string;
+                        "keywords": string;
+                        "lastAuthor": string;
+                        "lastPrintDate": Date;
+                        "lastSaveTime": Date;
+                        "manager": string;
+                        "revisionNumber": string;
+                        "security": number;
+                        "subject": string;
+                        "template": string;
+                        "title": string;
+                    }
         description: ''
   - uid: word.Word.DocumentProperties.track
     summary: >-

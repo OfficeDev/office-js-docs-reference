@@ -111,7 +111,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ChartFontUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ChartFontUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -124,7 +127,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.ChartFont.size
     summary: |-
       Size of the font (e.g. 11)
@@ -150,7 +159,15 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"bold\": boolean;\r\n            \"color\": string;\r\n            \"italic\": boolean;\r\n            \"name\": string;\r\n            \"size\": number;\r\n            \"underline\": string;\r\n        }"
+          - |-
+            {
+                        "bold": boolean;
+                        "color": string;
+                        "italic": boolean;
+                        "name": string;
+                        "size": number;
+                        "underline": string;
+                    }
         description: ''
   - uid: excel.Excel.ChartFont.underline
     summary: |-

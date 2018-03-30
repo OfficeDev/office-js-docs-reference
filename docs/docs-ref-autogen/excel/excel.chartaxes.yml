@@ -78,7 +78,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ChartAxesUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ChartAxesUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -91,7 +94,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.ChartAxes.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartAxes.toJSON
@@ -102,7 +111,12 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"categoryAxis\": ChartAxis;\r\n            \"seriesAxis\": ChartAxis;\r\n            \"valueAxis\": ChartAxis;\r\n        }"
+          - |-
+            {
+                        "categoryAxis": ChartAxis;
+                        "seriesAxis": ChartAxis;
+                        "valueAxis": ChartAxis;
+                    }
         description: ''
   - uid: excel.Excel.ChartAxes.valueAxis
     summary: |-

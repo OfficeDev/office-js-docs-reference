@@ -160,5 +160,10 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"fields\": SortField[];\r\n            \"matchCase\": boolean;\r\n            \"method\": string;\r\n        }"
+          - |-
+            {
+                        "fields": SortField[];
+                        "matchCase": boolean;
+                        "method": string;
+                    }
         description: ''

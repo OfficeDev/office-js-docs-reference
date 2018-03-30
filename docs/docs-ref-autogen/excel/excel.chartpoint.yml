@@ -63,7 +63,11 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"format\": ChartPointFormat;\r\n            \"value\": any;\r\n        }"
+          - |-
+            {
+                        "format": ChartPointFormat;
+                        "value": any;
+                    }
         description: ''
   - uid: excel.Excel.ChartPoint.value
     summary: |-

@@ -763,7 +763,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;"
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
       return:
         type:
           - Word.RangeCollection
@@ -776,7 +785,16 @@ items:
         - id: searchOptions
           description: Optional. Options for the search.
           type:
-            - "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+            - |-
+              Word.SearchOptions | {
+                          ignorePunct?: boolean;
+                          ignoreSpace?: boolean;
+                          matchCase?: boolean;
+                          matchPrefix?: boolean;
+                          matchSuffix?: boolean;
+                          matchWholeWord?: boolean;
+                          matchWildcards?: boolean;
+                      }
   - uid: word.Word.ContentControl.select
     summary: |-
       Selects the content control. This causes Word to scroll to the selection.
@@ -806,7 +824,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ContentControlUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ContentControlUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -819,7 +840,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: word.Word.ContentControl.split
     summary: |-
       Splits the content control into child ranges by using delimiters.
@@ -983,7 +1010,24 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"appearance\": string;\r\n            \"cannotDelete\": boolean;\r\n            \"cannotEdit\": boolean;\r\n            \"color\": string;\r\n            \"font\": Font;\r\n            \"id\": number;\r\n            \"placeholderText\": string;\r\n            \"removeWhenEdited\": boolean;\r\n            \"style\": string;\r\n            \"styleBuiltIn\": string;\r\n            \"subtype\": string;\r\n            \"tag\": string;\r\n            \"text\": string;\r\n            \"title\": string;\r\n            \"type\": string;\r\n        }"
+          - |-
+            {
+                        "appearance": string;
+                        "cannotDelete": boolean;
+                        "cannotEdit": boolean;
+                        "color": string;
+                        "font": Font;
+                        "id": number;
+                        "placeholderText": string;
+                        "removeWhenEdited": boolean;
+                        "style": string;
+                        "styleBuiltIn": string;
+                        "subtype": string;
+                        "tag": string;
+                        "text": string;
+                        "title": string;
+                        "type": string;
+                    }
         description: ''
   - uid: word.Word.ContentControl.track
     summary: >-

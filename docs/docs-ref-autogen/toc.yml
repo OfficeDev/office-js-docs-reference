@@ -292,135 +292,6 @@ items:
             uid: excel.Excel.WorksheetProtection
           - name: WorksheetProtectionOptions
             uid: excel.Excel.WorksheetProtectionOptions
-      - name: Shared API
-        uid: office
-        items:
-          - name: Office
-            items:
-              - name: ActiveView
-                uid: office.Office.ActiveView
-              - name: AsyncResult
-                uid: office.Office.AsyncResult
-              - name: AsyncResultStatus
-                uid: office.Office.AsyncResultStatus
-              - name: Auth
-                uid: office.Office.Auth
-              - name: AuthOptions
-                uid: office.Office.AuthOptions
-              - name: Binding
-                uid: office.Office.Binding
-              - name: Bindings
-                uid: office.Office.Bindings
-              - name: BindingType
-                uid: office.Office.BindingType
-              - name: CoercionType
-                uid: office.Office.CoercionType
-              - name: Context
-                uid: office.Office.Context
-              - name: CustomXmlNode
-                uid: office.Office.CustomXmlNode
-              - name: CustomXmlPart
-                uid: office.Office.CustomXmlPart
-              - name: CustomXmlParts
-                uid: office.Office.CustomXmlParts
-              - name: CustomXmlPrefixMappings
-                uid: office.Office.CustomXmlPrefixMappings
-              - name: DialogHandler
-                uid: office.Office.DialogHandler
-              - name: DialogOptions
-                uid: office.Office.DialogOptions
-              - name: Document
-                uid: office.Office.Document
-              - name: DocumentMode
-                uid: office.Office.DocumentMode
-              - name: DocumentSelectionChangedEventArgs
-                uid: office.Office.DocumentSelectionChangedEventArgs
-              - name: Error
-                uid: office.Office.Error
-              - name: EventType
-                uid: office.Office.EventType
-              - name: File
-                uid: office.Office.File
-              - name: FileProperties
-                uid: office.Office.FileProperties
-              - name: FileType
-                uid: office.Office.FileType
-              - name: FilterType
-                uid: office.Office.FilterType
-              - name: GoToType
-                uid: office.Office.GoToType
-              - name: HostType
-                uid: office.Office.HostType
-              - name: Index
-                uid: office.Office.Index
-              - name: InitializationReason
-                uid: office.Office.InitializationReason
-              - name: MatrixBinding
-                uid: office.Office.MatrixBinding
-              - name: OfficeTheme
-                uid: office.Office.OfficeTheme
-              - name: PlatformType
-                uid: office.Office.PlatformType
-              - name: ProjectProjectFields
-                uid: office.Office.ProjectProjectFields
-              - name: ProjectResourceFields
-                uid: office.Office.ProjectResourceFields
-              - name: ProjectTaskFields
-                uid: office.Office.ProjectTaskFields
-              - name: ProjectViewTypes
-                uid: office.Office.ProjectViewTypes
-              - name: SelectionMode
-                uid: office.Office.SelectionMode
-              - name: Settings
-                uid: office.Office.Settings
-              - name: Slice
-                uid: office.Office.Slice
-              - name: Table
-                uid: office.Office.Table
-              - name: TableBinding
-                uid: office.Office.TableBinding
-              - name: TableData
-                uid: office.Office.TableData
-              - name: TextBinding
-                uid: office.Office.TextBinding
-              - name: UI
-                uid: office.Office.UI
-              - name: ValueFormat
-                uid: office.Office.ValueFormat
-          - name: OfficeExtension
-            items:
-              - name: ClientObject
-                uid: office.OfficeExtension.ClientObject
-              - name: ClientRequestContext
-                uid: office.OfficeExtension.ClientRequestContext
-              - name: ClientResult
-                uid: office.OfficeExtension.ClientResult
-              - name: DebugInfo
-                uid: office.OfficeExtension.DebugInfo
-              - name: EmbeddedOptions
-                uid: office.OfficeExtension.EmbeddedOptions
-              - name: EmbeddedSession
-                uid: office.OfficeExtension.EmbeddedSession
-              - name: Error
-                uid: office.OfficeExtension.Error
-              - name: ErrorCodes
-                uid: office.OfficeExtension.ErrorCodes
-              - name: EventHandlerResult
-                uid: office.OfficeExtension.EventHandlerResult
-              - name: EventHandlers
-                uid: office.OfficeExtension.EventHandlers
-              - name: EventInfo
-                uid: office.OfficeExtension.EventInfo
-              - name: IPromise
-                uid: office.OfficeExtension.IPromise
-              - name: LoadOption
-                uid: office.OfficeExtension.LoadOption
-              - name: Promise
-                uid: office.OfficeExtension.Promise
-              - name: RequestUrlAndHeaderInfo
-                uid: office.OfficeExtension.RequestUrlAndHeaderInfo
-              - name: TrackedObjects
-                uid: office.OfficeExtension.TrackedObjects
       - name: OneNote
         uid: onenote
         items:
@@ -736,3 +607,132 @@ items:
             uid: word.Word.TableRowCollection
           - name: UnderlineType
           - name: VerticalAlignment
+      - name: Shared API
+        uid: office
+        items:
+          - name: Office
+            items:
+              - name: ActiveView
+                uid: office.Office.ActiveView
+              - name: AsyncResult
+                uid: office.Office.AsyncResult
+              - name: AsyncResultStatus
+                uid: office.Office.AsyncResultStatus
+              - name: Auth
+                uid: office.Office.Auth
+              - name: AuthOptions
+                uid: office.Office.AuthOptions
+              - name: Binding
+                uid: office.Office.Binding
+              - name: Bindings
+                uid: office.Office.Bindings
+              - name: BindingType
+                uid: office.Office.BindingType
+              - name: CoercionType
+                uid: office.Office.CoercionType
+              - name: Context
+                uid: office.Office.Context
+              - name: CustomXmlNode
+                uid: office.Office.CustomXmlNode
+              - name: CustomXmlPart
+                uid: office.Office.CustomXmlPart
+              - name: CustomXmlParts
+                uid: office.Office.CustomXmlParts
+              - name: CustomXmlPrefixMappings
+                uid: office.Office.CustomXmlPrefixMappings
+              - name: DialogHandler
+                uid: office.Office.DialogHandler
+              - name: DialogOptions
+                uid: office.Office.DialogOptions
+              - name: Document
+                uid: office.Office.Document
+              - name: DocumentMode
+                uid: office.Office.DocumentMode
+              - name: DocumentSelectionChangedEventArgs
+                uid: office.Office.DocumentSelectionChangedEventArgs
+              - name: Error
+                uid: office.Office.Error
+              - name: EventType
+                uid: office.Office.EventType
+              - name: File
+                uid: office.Office.File
+              - name: FileProperties
+                uid: office.Office.FileProperties
+              - name: FileType
+                uid: office.Office.FileType
+              - name: FilterType
+                uid: office.Office.FilterType
+              - name: GoToType
+                uid: office.Office.GoToType
+              - name: HostType
+                uid: office.Office.HostType
+              - name: Index
+                uid: office.Office.Index
+              - name: InitializationReason
+                uid: office.Office.InitializationReason
+              - name: MatrixBinding
+                uid: office.Office.MatrixBinding
+              - name: OfficeTheme
+                uid: office.Office.OfficeTheme
+              - name: PlatformType
+                uid: office.Office.PlatformType
+              - name: ProjectProjectFields
+                uid: office.Office.ProjectProjectFields
+              - name: ProjectResourceFields
+                uid: office.Office.ProjectResourceFields
+              - name: ProjectTaskFields
+                uid: office.Office.ProjectTaskFields
+              - name: ProjectViewTypes
+                uid: office.Office.ProjectViewTypes
+              - name: SelectionMode
+                uid: office.Office.SelectionMode
+              - name: Settings
+                uid: office.Office.Settings
+              - name: Slice
+                uid: office.Office.Slice
+              - name: Table
+                uid: office.Office.Table
+              - name: TableBinding
+                uid: office.Office.TableBinding
+              - name: TableData
+                uid: office.Office.TableData
+              - name: TextBinding
+                uid: office.Office.TextBinding
+              - name: UI
+                uid: office.Office.UI
+              - name: ValueFormat
+                uid: office.Office.ValueFormat
+          - name: OfficeExtension
+            items:
+              - name: ClientObject
+                uid: office.OfficeExtension.ClientObject
+              - name: ClientRequestContext
+                uid: office.OfficeExtension.ClientRequestContext
+              - name: ClientResult
+                uid: office.OfficeExtension.ClientResult
+              - name: DebugInfo
+                uid: office.OfficeExtension.DebugInfo
+              - name: EmbeddedOptions
+                uid: office.OfficeExtension.EmbeddedOptions
+              - name: EmbeddedSession
+                uid: office.OfficeExtension.EmbeddedSession
+              - name: Error
+                uid: office.OfficeExtension.Error
+              - name: ErrorCodes
+                uid: office.OfficeExtension.ErrorCodes
+              - name: EventHandlerResult
+                uid: office.OfficeExtension.EventHandlerResult
+              - name: EventHandlers
+                uid: office.OfficeExtension.EventHandlers
+              - name: EventInfo
+                uid: office.OfficeExtension.EventInfo
+              - name: IPromise
+                uid: office.OfficeExtension.IPromise
+              - name: LoadOption
+                uid: office.OfficeExtension.LoadOption
+              - name: Promise
+                uid: office.OfficeExtension.Promise
+              - name: RequestUrlAndHeaderInfo
+                uid: office.OfficeExtension.RequestUrlAndHeaderInfo
+              - name: TrackedObjects
+                uid: office.OfficeExtension.TrackedObjects

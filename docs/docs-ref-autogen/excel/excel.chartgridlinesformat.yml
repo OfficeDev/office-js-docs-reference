@@ -61,7 +61,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ChartGridlinesFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ChartGridlinesFormatUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -74,7 +77,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.ChartGridlinesFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartGridlinesFormat.toJSON
@@ -85,5 +94,8 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"line\": ChartLineFormat;\r\n        }"
+          - |-
+            {
+                        "line": ChartLineFormat;
+                    }
         description: ''

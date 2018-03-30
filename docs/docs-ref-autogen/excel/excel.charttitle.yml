@@ -79,7 +79,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ChartTitleUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ChartTitleUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -92,7 +95,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.ChartTitle.text
     summary: |-
       Represents the title text of a chart.
@@ -118,7 +127,13 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"format\": ChartTitleFormat;\r\n            \"overlay\": boolean;\r\n            \"text\": string;\r\n            \"visible\": boolean;\r\n        }"
+          - |-
+            {
+                        "format": ChartTitleFormat;
+                        "overlay": boolean;
+                        "text": string;
+                        "visible": boolean;
+                    }
         description: ''
   - uid: excel.Excel.ChartTitle.visible
     summary: |-

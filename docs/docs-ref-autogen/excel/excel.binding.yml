@@ -180,7 +180,11 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"id\": string;\r\n            \"type\": string;\r\n        }"
+          - |-
+            {
+                        "id": string;
+                        "type": string;
+                    }
         description: ''
   - uid: excel.Excel.Binding.type
     summary: |-

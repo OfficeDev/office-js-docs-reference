@@ -62,7 +62,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ColorScaleConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ColorScaleConditionalFormatUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -75,7 +78,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.ColorScaleConditionalFormat.threeColorScale
     summary: >-
       If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum,
@@ -103,5 +112,9 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"criteria\": ConditionalColorScaleCriteria;\r\n            \"threeColorScale\": boolean;\r\n        }"
+          - |-
+            {
+                        "criteria": ConditionalColorScaleCriteria;
+                        "threeColorScale": boolean;
+                    }
         description: ''

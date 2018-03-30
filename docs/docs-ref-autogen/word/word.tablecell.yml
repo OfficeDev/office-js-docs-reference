@@ -340,7 +340,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.TableCellUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.TableCellUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -353,7 +356,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: word.Word.TableCell.setCellPadding
     summary: |-
       Sets cell padding in points.
@@ -404,7 +413,18 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"body\": Body;\r\n            \"cellIndex\": number;\r\n            \"columnWidth\": number;\r\n            \"horizontalAlignment\": string;\r\n            \"rowIndex\": number;\r\n            \"shadingColor\": string;\r\n            \"value\": string;\r\n            \"verticalAlignment\": string;\r\n            \"width\": number;\r\n        }"
+          - |-
+            {
+                        "body": Body;
+                        "cellIndex": number;
+                        "columnWidth": number;
+                        "horizontalAlignment": string;
+                        "rowIndex": number;
+                        "shadingColor": string;
+                        "value": string;
+                        "verticalAlignment": string;
+                        "width": number;
+                    }
         description: ''
   - uid: word.Word.TableCell.track
     summary: >-

@@ -159,7 +159,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.FontUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.FontUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -172,7 +175,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: word.Word.Font.size
     summary: |-
       Gets or sets a value that represents the font size in points.
@@ -249,7 +258,20 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"bold\": boolean;\r\n            \"color\": string;\r\n            \"doubleStrikeThrough\": boolean;\r\n            \"highlightColor\": string;\r\n            \"italic\": boolean;\r\n            \"name\": string;\r\n            \"size\": number;\r\n            \"strikeThrough\": boolean;\r\n            \"subscript\": boolean;\r\n            \"superscript\": boolean;\r\n            \"underline\": string;\r\n        }"
+          - |-
+            {
+                        "bold": boolean;
+                        "color": string;
+                        "doubleStrikeThrough": boolean;
+                        "highlightColor": string;
+                        "italic": boolean;
+                        "name": string;
+                        "size": number;
+                        "strikeThrough": boolean;
+                        "subscript": boolean;
+                        "superscript": boolean;
+                        "underline": string;
+                    }
         description: ''
   - uid: word.Word.Font.track
     summary: >-

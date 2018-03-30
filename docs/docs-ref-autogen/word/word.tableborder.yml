@@ -65,7 +65,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.TableBorderUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.TableBorderUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -78,7 +81,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: word.Word.TableBorder.toJSON
     name: toJSON()
     fullName: word.Word.TableBorder.toJSON
@@ -89,7 +98,12 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"color\": string;\r\n            \"type\": string;\r\n            \"width\": number;\r\n        }"
+          - |-
+            {
+                        "color": string;
+                        "type": string;
+                        "width": number;
+                    }
         description: ''
   - uid: word.Word.TableBorder.track
     summary: >-

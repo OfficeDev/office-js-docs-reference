@@ -287,7 +287,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.TableUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.TableUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -300,7 +303,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.Table.showBandedColumns
     summary: >-
       Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even
@@ -425,7 +434,19 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"highlightFirstColumn\": boolean;\r\n            \"highlightLastColumn\": boolean;\r\n            \"id\": number;\r\n            \"name\": string;\r\n            \"showBandedColumns\": boolean;\r\n            \"showBandedRows\": boolean;\r\n            \"showFilterButton\": boolean;\r\n            \"showHeaders\": boolean;\r\n            \"showTotals\": boolean;\r\n            \"style\": string;\r\n        }"
+          - |-
+            {
+                        "highlightFirstColumn": boolean;
+                        "highlightLastColumn": boolean;
+                        "id": number;
+                        "name": string;
+                        "showBandedColumns": boolean;
+                        "showBandedRows": boolean;
+                        "showFilterButton": boolean;
+                        "showHeaders": boolean;
+                        "showTotals": boolean;
+                        "style": string;
+                    }
         description: ''
   - uid: excel.Excel.Table.worksheet
     summary: |-

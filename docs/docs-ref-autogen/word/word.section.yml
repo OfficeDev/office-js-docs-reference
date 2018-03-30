@@ -143,7 +143,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.SectionUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.SectionUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -156,7 +159,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: word.Word.Section.toJSON
     name: toJSON()
     fullName: word.Word.Section.toJSON
@@ -167,7 +176,10 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"body\": Body;\r\n        }"
+          - |-
+            {
+                        "body": Body;
+                    }
         description: ''
   - uid: word.Word.Section.track
     summary: >-

@@ -188,5 +188,9 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"id\": string;\r\n            \"namespaceUri\": string;\r\n        }"
+          - |-
+            {
+                        "id": string;
+                        "namespaceUri": string;
+                    }
         description: ''

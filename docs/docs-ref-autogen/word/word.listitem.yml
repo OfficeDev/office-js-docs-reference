@@ -156,7 +156,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ListItemUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ListItemUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -169,7 +172,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: word.Word.ListItem.siblingIndex
     summary: |-
       Gets the list item order number in relation to its siblings. Read-only.
@@ -195,7 +204,12 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"level\": number;\r\n            \"listString\": string;\r\n            \"siblingIndex\": number;\r\n        }"
+          - |-
+            {
+                        "level": number;
+                        "listString": string;
+                        "siblingIndex": number;
+                    }
         description: ''
   - uid: word.Word.ListItem.track
     summary: >-

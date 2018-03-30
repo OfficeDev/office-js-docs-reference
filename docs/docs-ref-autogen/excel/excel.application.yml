@@ -103,5 +103,8 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"calculationMode\": string;\r\n        }"
+          - |-
+            {
+                        "calculationMode": string;
+                    }
         description: ''

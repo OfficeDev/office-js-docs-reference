@@ -202,7 +202,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.SearchOptionsUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.SearchOptionsUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -215,7 +218,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: word.Word.SearchOptions.toJSON
     name: toJSON()
     fullName: word.Word.SearchOptions.toJSON
@@ -226,5 +235,14 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"ignorePunct\": boolean;\r\n            \"ignoreSpace\": boolean;\r\n            \"matchCase\": boolean;\r\n            \"matchPrefix\": boolean;\r\n            \"matchSuffix\": boolean;\r\n            \"matchWholeWord\": boolean;\r\n            \"matchWildcards\": boolean;\r\n        }"
+          - |-
+            {
+                        "ignorePunct": boolean;
+                        "ignoreSpace": boolean;
+                        "matchCase": boolean;
+                        "matchPrefix": boolean;
+                        "matchSuffix": boolean;
+                        "matchWholeWord": boolean;
+                        "matchWildcards": boolean;
+                    }
         description: ''

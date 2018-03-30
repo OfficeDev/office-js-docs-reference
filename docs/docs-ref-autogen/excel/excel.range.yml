@@ -1036,7 +1036,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.RangeUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.RangeUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -1049,7 +1052,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.Range.sort
     summary: |-
       Represents the range sort of the current range.
@@ -1092,7 +1101,27 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"address\": string;\r\n            \"addressLocal\": string;\r\n            \"cellCount\": number;\r\n            \"columnCount\": number;\r\n            \"columnHidden\": boolean;\r\n            \"columnIndex\": number;\r\n            \"format\": RangeFormat;\r\n            \"formulas\": any[][];\r\n            \"formulasLocal\": any[][];\r\n            \"formulasR1C1\": any[][];\r\n            \"hidden\": boolean;\r\n            \"numberFormat\": any[][];\r\n            \"rowCount\": number;\r\n            \"rowHidden\": boolean;\r\n            \"rowIndex\": number;\r\n            \"text\": any[][];\r\n            \"values\": any[][];\r\n            \"valueTypes\": string[][];\r\n        }"
+          - |-
+            {
+                        "address": string;
+                        "addressLocal": string;
+                        "cellCount": number;
+                        "columnCount": number;
+                        "columnHidden": boolean;
+                        "columnIndex": number;
+                        "format": RangeFormat;
+                        "formulas": any[][];
+                        "formulasLocal": any[][];
+                        "formulasR1C1": any[][];
+                        "hidden": boolean;
+                        "numberFormat": any[][];
+                        "rowCount": number;
+                        "rowHidden": boolean;
+                        "rowIndex": number;
+                        "text": any[][];
+                        "values": any[][];
+                        "valueTypes": string[][];
+                    }
         description: ''
   - uid: excel.Excel.Range.track
     summary: >-

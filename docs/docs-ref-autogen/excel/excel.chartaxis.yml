@@ -166,7 +166,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ChartAxisUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ChartAxisUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -179,7 +182,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.ChartAxis.title
     summary: |-
       Represents the axis title. Read-only.
@@ -205,5 +214,15 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"format\": ChartAxisFormat;\r\n            \"majorGridlines\": ChartGridlines;\r\n            \"majorUnit\": any;\r\n            \"maximum\": any;\r\n            \"minimum\": any;\r\n            \"minorGridlines\": ChartGridlines;\r\n            \"minorUnit\": any;\r\n            \"title\": ChartAxisTitle;\r\n        }"
+          - |-
+            {
+                        "format": ChartAxisFormat;
+                        "majorGridlines": ChartGridlines;
+                        "majorUnit": any;
+                        "maximum": any;
+                        "minimum": any;
+                        "minorGridlines": ChartGridlines;
+                        "minorUnit": any;
+                        "title": ChartAxisTitle;
+                    }
         description: ''

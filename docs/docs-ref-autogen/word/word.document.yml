@@ -171,7 +171,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.DocumentUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.DocumentUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -184,7 +187,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: word.Word.Document.toJSON
     name: toJSON()
     fullName: word.Word.Document.toJSON
@@ -195,7 +204,12 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"body\": Body;\r\n            \"properties\": DocumentProperties;\r\n            \"saved\": boolean;\r\n        }"
+          - |-
+            {
+                        "body": Body;
+                        "properties": DocumentProperties;
+                        "saved": boolean;
+                    }
         description: ''
   - uid: word.Word.Document.track
     summary: >-

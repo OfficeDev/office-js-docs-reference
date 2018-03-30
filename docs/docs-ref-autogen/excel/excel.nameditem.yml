@@ -180,7 +180,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.NamedItemUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.NamedItemUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -193,7 +196,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.NamedItem.toJSON
     name: toJSON()
     fullName: excel.Excel.NamedItem.toJSON
@@ -204,7 +213,15 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"comment\": string;\r\n            \"name\": string;\r\n            \"scope\": string;\r\n            \"type\": string;\r\n            \"value\": any;\r\n            \"visible\": boolean;\r\n        }"
+          - |-
+            {
+                        "comment": string;
+                        "name": string;
+                        "scope": string;
+                        "type": string;
+                        "value": any;
+                        "visible": boolean;
+                    }
         description: ''
   - uid: excel.Excel.NamedItem.type
     summary: |-

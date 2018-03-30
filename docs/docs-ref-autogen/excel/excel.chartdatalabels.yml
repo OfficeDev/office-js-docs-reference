@@ -101,7 +101,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ChartDataLabelsUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ChartDataLabelsUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -114,7 +117,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.ChartDataLabels.showBubbleSize
     summary: |-
       Boolean value representing if the data label bubble size is visible or not.
@@ -215,5 +224,16 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"format\": ChartDataLabelFormat;\r\n            \"position\": string;\r\n            \"separator\": string;\r\n            \"showBubbleSize\": boolean;\r\n            \"showCategoryName\": boolean;\r\n            \"showLegendKey\": boolean;\r\n            \"showPercentage\": boolean;\r\n            \"showSeriesName\": boolean;\r\n            \"showValue\": boolean;\r\n        }"
+          - |-
+            {
+                        "format": ChartDataLabelFormat;
+                        "position": string;
+                        "separator": string;
+                        "showBubbleSize": boolean;
+                        "showCategoryName": boolean;
+                        "showLegendKey": boolean;
+                        "showPercentage": boolean;
+                        "showSeriesName": boolean;
+                        "showValue": boolean;
+                    }
         description: ''

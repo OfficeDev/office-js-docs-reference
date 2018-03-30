@@ -62,5 +62,8 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"fill\": ChartFill;\r\n        }"
+          - |-
+            {
+                        "fill": ChartFill;
+                    }
         description: ''

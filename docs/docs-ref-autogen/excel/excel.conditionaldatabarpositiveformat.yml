@@ -97,7 +97,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ConditionalDataBarPositiveFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ConditionalDataBarPositiveFormatUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -110,7 +113,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.ConditionalDataBarPositiveFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ConditionalDataBarPositiveFormat.toJSON
@@ -121,5 +130,10 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"borderColor\": string;\r\n            \"fillColor\": string;\r\n            \"gradientFill\": boolean;\r\n        }"
+          - |-
+            {
+                        "borderColor": string;
+                        "fillColor": string;
+                        "gradientFill": boolean;
+                    }
         description: ''

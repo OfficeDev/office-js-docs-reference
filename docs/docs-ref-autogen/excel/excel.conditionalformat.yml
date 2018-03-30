@@ -359,7 +359,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ConditionalFormatUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -372,7 +375,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.ConditionalFormat.stopIfTrue
     summary: >-
       If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
@@ -434,7 +443,28 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"cellValue\": CellValueConditionalFormat;\r\n            \"cellValueOrNullObject\": CellValueConditionalFormat;\r\n            \"colorScale\": ColorScaleConditionalFormat;\r\n            \"colorScaleOrNullObject\": ColorScaleConditionalFormat;\r\n            \"custom\": CustomConditionalFormat;\r\n            \"customOrNullObject\": CustomConditionalFormat;\r\n            \"dataBar\": DataBarConditionalFormat;\r\n            \"dataBarOrNullObject\": DataBarConditionalFormat;\r\n            \"iconSet\": IconSetConditionalFormat;\r\n            \"iconSetOrNullObject\": IconSetConditionalFormat;\r\n            \"preset\": PresetCriteriaConditionalFormat;\r\n            \"presetOrNullObject\": PresetCriteriaConditionalFormat;\r\n            \"priority\": number;\r\n            \"stopIfTrue\": boolean;\r\n            \"textComparison\": TextConditionalFormat;\r\n            \"textComparisonOrNullObject\": TextConditionalFormat;\r\n            \"topBottom\": TopBottomConditionalFormat;\r\n            \"topBottomOrNullObject\": TopBottomConditionalFormat;\r\n            \"type\": string;\r\n        }"
+          - |-
+            {
+                        "cellValue": CellValueConditionalFormat;
+                        "cellValueOrNullObject": CellValueConditionalFormat;
+                        "colorScale": ColorScaleConditionalFormat;
+                        "colorScaleOrNullObject": ColorScaleConditionalFormat;
+                        "custom": CustomConditionalFormat;
+                        "customOrNullObject": CustomConditionalFormat;
+                        "dataBar": DataBarConditionalFormat;
+                        "dataBarOrNullObject": DataBarConditionalFormat;
+                        "iconSet": IconSetConditionalFormat;
+                        "iconSetOrNullObject": IconSetConditionalFormat;
+                        "preset": PresetCriteriaConditionalFormat;
+                        "presetOrNullObject": PresetCriteriaConditionalFormat;
+                        "priority": number;
+                        "stopIfTrue": boolean;
+                        "textComparison": TextConditionalFormat;
+                        "textComparisonOrNullObject": TextConditionalFormat;
+                        "topBottom": TopBottomConditionalFormat;
+                        "topBottomOrNullObject": TopBottomConditionalFormat;
+                        "type": string;
+                    }
         description: ''
   - uid: excel.Excel.ConditionalFormat.topBottom
     summary: >-

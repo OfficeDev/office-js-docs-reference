@@ -66,7 +66,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.RangeBorderUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.RangeBorderUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -79,7 +82,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.RangeBorder.sideIndex
     summary: |-
       Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
@@ -122,7 +131,13 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"color\": string;\r\n            \"sideIndex\": string;\r\n            \"style\": string;\r\n            \"weight\": string;\r\n        }"
+          - |-
+            {
+                        "color": string;
+                        "sideIndex": string;
+                        "style": string;
+                        "weight": string;
+                    }
         description: ''
   - uid: excel.Excel.RangeBorder.weight
     summary: |-

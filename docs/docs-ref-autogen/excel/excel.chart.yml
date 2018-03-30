@@ -247,7 +247,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ChartUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ChartUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -260,7 +263,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.Chart.setData
     summary: |-
       Resets the source data for the chart.
@@ -344,7 +353,19 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"axes\": ChartAxes;\r\n            \"dataLabels\": ChartDataLabels;\r\n            \"format\": ChartAreaFormat;\r\n            \"height\": number;\r\n            \"left\": number;\r\n            \"legend\": ChartLegend;\r\n            \"name\": string;\r\n            \"title\": ChartTitle;\r\n            \"top\": number;\r\n            \"width\": number;\r\n        }"
+          - |-
+            {
+                        "axes": ChartAxes;
+                        "dataLabels": ChartDataLabels;
+                        "format": ChartAreaFormat;
+                        "height": number;
+                        "left": number;
+                        "legend": ChartLegend;
+                        "name": string;
+                        "title": ChartTitle;
+                        "top": number;
+                        "width": number;
+                    }
         description: ''
   - uid: excel.Excel.Chart.top
     summary: >-

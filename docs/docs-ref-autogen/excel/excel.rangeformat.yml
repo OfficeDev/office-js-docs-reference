@@ -199,7 +199,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.RangeFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.RangeFormatUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -212,7 +215,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.RangeFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.RangeFormat.toJSON
@@ -223,7 +232,17 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"columnWidth\": number;\r\n            \"fill\": RangeFill;\r\n            \"font\": RangeFont;\r\n            \"horizontalAlignment\": string;\r\n            \"protection\": FormatProtection;\r\n            \"rowHeight\": number;\r\n            \"verticalAlignment\": string;\r\n            \"wrapText\": boolean;\r\n        }"
+          - |-
+            {
+                        "columnWidth": number;
+                        "fill": RangeFill;
+                        "font": RangeFont;
+                        "horizontalAlignment": string;
+                        "protection": FormatProtection;
+                        "rowHeight": number;
+                        "verticalAlignment": string;
+                        "wrapText": boolean;
+                    }
         description: ''
   - uid: excel.Excel.RangeFormat.verticalAlignment
     summary: |-

@@ -77,7 +77,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ChartSeriesFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ChartSeriesFormatUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -90,7 +93,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: excel.Excel.ChartSeriesFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartSeriesFormat.toJSON
@@ -101,5 +110,9 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"fill\": ChartFill;\r\n            \"line\": ChartLineFormat;\r\n        }"
+          - |-
+            {
+                        "fill": ChartFill;
+                        "line": ChartLineFormat;
+                    }
         description: ''

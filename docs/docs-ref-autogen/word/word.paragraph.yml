@@ -939,7 +939,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;"
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
       return:
         type:
           - Word.RangeCollection
@@ -952,7 +961,16 @@ items:
         - id: searchOptions
           description: Optional. Options for the search.
           type:
-            - "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+            - |-
+              Word.SearchOptions | {
+                          ignorePunct?: boolean;
+                          ignoreSpace?: boolean;
+                          matchCase?: boolean;
+                          matchPrefix?: boolean;
+                          matchSuffix?: boolean;
+                          matchWholeWord?: boolean;
+                          matchWildcards?: boolean;
+                      }
   - uid: word.Word.Paragraph.select
     summary: |-
       Selects and navigates the Word UI to the paragraph.
@@ -982,7 +1000,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "set(properties: Interfaces.ParagraphUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
+      content: |-
+        set(properties: Interfaces.ParagraphUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
       return:
         type:
           - void
@@ -995,7 +1016,13 @@ items:
         - id: options
           description: ''
           type:
-            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: word.Word.Paragraph.spaceAfter
     summary: |-
       Gets or sets the spacing, in points, after the paragraph.
@@ -1150,7 +1177,28 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            \"alignment\": string;\r\n            \"firstLineIndent\": number;\r\n            \"font\": Font;\r\n            \"isLastParagraph\": boolean;\r\n            \"isListItem\": boolean;\r\n            \"leftIndent\": number;\r\n            \"lineSpacing\": number;\r\n            \"lineUnitAfter\": number;\r\n            \"lineUnitBefore\": number;\r\n            \"listItem\": ListItem;\r\n            \"listItemOrNullObject\": ListItem;\r\n            \"outlineLevel\": number;\r\n            \"rightIndent\": number;\r\n            \"spaceAfter\": number;\r\n            \"spaceBefore\": number;\r\n            \"style\": string;\r\n            \"styleBuiltIn\": string;\r\n            \"tableNestingLevel\": number;\r\n            \"text\": string;\r\n        }"
+          - |-
+            {
+                        "alignment": string;
+                        "firstLineIndent": number;
+                        "font": Font;
+                        "isLastParagraph": boolean;
+                        "isListItem": boolean;
+                        "leftIndent": number;
+                        "lineSpacing": number;
+                        "lineUnitAfter": number;
+                        "lineUnitBefore": number;
+                        "listItem": ListItem;
+                        "listItemOrNullObject": ListItem;
+                        "outlineLevel": number;
+                        "rightIndent": number;
+                        "spaceAfter": number;
+                        "spaceBefore": number;
+                        "style": string;
+                        "styleBuiltIn": string;
+                        "tableNestingLevel": number;
+                        "text": string;
+                    }
         description: ''
   - uid: word.Word.Paragraph.track
     summary: >-
