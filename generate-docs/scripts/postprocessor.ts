@@ -149,7 +149,7 @@ tryCatch(async () => {
             );
     });
 
-    console.log("\nPostprocessor script complete!");
+    console.log("\nPostprocessor script complete!\n");
 
     process.exit(0);
 });
