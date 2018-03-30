@@ -26,10 +26,12 @@ tryCatch(async () => {
         fsx.writeFileSync("../script-inputs/office.d.ts", await fetchAndThrowOnError(urlToCopyOfficeJsFrom, "text"));
     }
 
-    console.log(`Reading from ${path.resolve("../script-inputs/office.d.ts")}`);
+    console.log("\nStarting preprocessor script...");
+
+    console.log(`\nReading from ${path.resolve("../script-inputs/office.d.ts")}`);
     let definitions = fsx.readFileSync("../script-inputs/office.d.ts").toString();
 
-    console.log("fix issues with d.ts file\n\n");
+    console.log("\nFixing issues with d.ts file...");
     definitions = definitions.replace(/^(\s*)(declare namespace)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(declare module)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(namespace)(\s+)/gm, `$1export $2$3`)
@@ -37,12 +39,15 @@ tryCatch(async () => {
         .replace(/^(\s*)(interface)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(module)(\s+)/gm, `$1export $2$3`)
         .replace(/^(\s*)(function)(\s+)/gm, `$1export $2$3`)
+        .replace(/(extends OfficeCore.RequestContext)/g, `extends OfficeExtension.ClientRequestContext`)
         .replace(/(\s*)(@param)(\s+)(\w+)(\s)(\s)/g, `$1$2$3$4$5`)
         .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
 
     const dtsBuilder = new DtsBuilder();
 
-    console.log("create file: excel.d.ts");
+    console.log("\nCreating separate d.ts files...");
+
+    console.log("\ncreate file: excel.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-excel/excel.d.ts',
         dtsBuilder.extractDtsSection(definitions, "Begin Excel APIs", "End Excel APIs")
@@ -75,13 +80,13 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(definitions, "Begin Visio APIs", "End Visio APIs")
     );
 
-    console.log("create file: word.d.ts\n\n");
+    console.log("create file: word.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-word/word.d.ts',
         dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs")
     );
 
-    console.log("Done!");
+    console.log("\nPreprocessor script complete!");
 
     process.exit(0);
 });
