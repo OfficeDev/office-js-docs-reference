@@ -6,7 +6,7 @@
       "typeRoots": [
           "node_modules/**"
       ],
-      "strict": true,
+      "strict": false,
       "noUnusedLocals": true
   },
   "exclude": [
