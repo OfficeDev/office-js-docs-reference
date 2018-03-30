@@ -178,7 +178,7 @@ export declare namespace Excel {
     /**
      * The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the request context is required to get access to the Excel object model from the add-in.
      */
-    export class RequestContext extends OfficeCore.RequestContext {
+    export class RequestContext extends OfficeExtension.ClientRequestContext {
         constructor(url?: string | Session);
         readonly workbook: Workbook;
         readonly application: Application;

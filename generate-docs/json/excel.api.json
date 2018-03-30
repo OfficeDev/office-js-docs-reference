@@ -39185,7 +39185,7 @@
         },
         "RequestContext": {
           "kind": "class",
-          "extends": "OfficeCore.RequestContext",
+          "extends": "OfficeExtension.ClientRequestContext",
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
