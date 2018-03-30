@@ -1,0 +1,30 @@
+Excel.Binding.onDataChanged:
+  - |-
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");    
+        const salesTable = sheet.tables.getItem("SalesTable");
+        const salesByQuarterBinding = context.workbook.bindings.add(salesTable.getRange(), "Table", "SalesByQuarter");
+        salesByQuarterBinding.onDataChanged.add(onSalesDataChanged);
+
+        OfficeHelpers.UI.notify("The handler is registered.", "Change the value in one of the data cells and watch this message banner. (Be sure to complete the edit by pressing Enter or clicking in another cell.)");
+
+        await context.sync();
+    });
+Excel.NamedItemCollection.add:
+  - |-
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const headerRange = sheet.getRange("A1:E1");
+        sheet.names.add("ExpensesHeader", headerRange);
+        const namedItems = sheet.names.load("name, type");
+
+        await context.sync();
+
+        let namedItemsList = `This workbook contains ${namedItems.items.length} named item(s):`;
+        for (let i = 0; i < namedItems.items.length; i++) {
+            namedItemsList += JSON.stringify(namedItems.items[i]);
+        }
+        OfficeHelpers.UI.notify(namedItemsList);
+
+        await context.sync();
+    });

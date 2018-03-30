@@ -28,6 +28,63 @@ Excel.NamedItemCollection.add:
 
         await context.sync();
     });
+OneNote.Application.getActiveNotebook:
+  - |-
+    OneNote.run(function (context) {
+
+        // Get the active notebook.
+        var notebook = context.application.getActiveNotebook();
+                
+        // Queue a command to load the notebook. 
+        // For best performance, request specific properties.           
+        notebook.load('id,name');
+                
+        // Run the queued commands, and return a promise to indicate task completion.
+        return context.sync()
+            .then(function () {
+                        
+                // Show some properties.
+                console.log("Notebook name: " + notebook.name);
+                console.log("Notebook ID: " + notebook.id);
+                
+            });
+    })
+    .catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.Binding.onDataChanged:
+  - |-
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");    
+        const salesTable = sheet.tables.getItem("SalesTable");
+        const salesByQuarterBinding = context.workbook.bindings.add(salesTable.getRange(), "Table", "SalesByQuarter");
+        salesByQuarterBinding.onDataChanged.add(onSalesDataChanged);
+
+        OfficeHelpers.UI.notify("The handler is registered.", "Change the value in one of the data cells and watch this message banner. (Be sure to complete the edit by pressing Enter or clicking in another cell.)");
+
+        await context.sync();
+    });
+Excel.NamedItemCollection.add:
+  - |-
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Sample");
+        const headerRange = sheet.getRange("A1:E1");
+        sheet.names.add("ExpensesHeader", headerRange);
+        const namedItems = sheet.names.load("name, type");
+
+        await context.sync();
+
+        let namedItemsList = `This workbook contains ${namedItems.items.length} named item(s):`;
+        for (let i = 0; i < namedItems.items.length; i++) {
+            namedItemsList += JSON.stringify(namedItems.items[i]);
+        }
+        OfficeHelpers.UI.notify(namedItemsList);
+
+        await context.sync();
+    });
   - |-
     try {
         await Excel.run(async (context) => {
