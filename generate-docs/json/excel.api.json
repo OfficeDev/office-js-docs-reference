@@ -162,7 +162,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"calculationMode\": string;\r\n        }",
+                "type": "{\n            \"calculationMode\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -415,7 +415,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"id\": string;\r\n            \"type\": string;\r\n        }",
+                "type": "{\n            \"id\": string;\n            \"type\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -883,7 +883,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"count\": number;\r\n        }",
+                "type": "{\n            \"count\": number;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -1265,7 +1265,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.CellValueConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.CellValueConditionalFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1286,7 +1286,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -1306,7 +1306,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"format\": ConditionalRangeFormat;\r\n            \"rule\": ConditionalCellValueRule;\r\n        }",
+                "type": "{\n            \"format\": ConditionalRangeFormat;\n            \"rule\": ConditionalCellValueRule;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -1655,7 +1655,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1676,7 +1676,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -1826,7 +1826,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"axes\": ChartAxes;\r\n            \"dataLabels\": ChartDataLabels;\r\n            \"format\": ChartAreaFormat;\r\n            \"height\": number;\r\n            \"left\": number;\r\n            \"legend\": ChartLegend;\r\n            \"name\": string;\r\n            \"title\": ChartTitle;\r\n            \"top\": number;\r\n            \"width\": number;\r\n        }",
+                "type": "{\n            \"axes\": ChartAxes;\n            \"dataLabels\": ChartDataLabels;\n            \"format\": ChartAreaFormat;\n            \"height\": number;\n            \"left\": number;\n            \"legend\": ChartLegend;\n            \"name\": string;\n            \"title\": ChartTitle;\n            \"top\": number;\n            \"width\": number;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -2010,7 +2010,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartAreaFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartAreaFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2031,7 +2031,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -2051,7 +2051,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"fill\": ChartFill;\r\n            \"font\": ChartFont;\r\n        }",
+                "type": "{\n            \"fill\": ChartFill;\n            \"font\": ChartFont;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -2163,7 +2163,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartAxesUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartAxesUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2184,7 +2184,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -2204,7 +2204,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"categoryAxis\": ChartAxis;\r\n            \"seriesAxis\": ChartAxis;\r\n            \"valueAxis\": ChartAxis;\r\n        }",
+                "type": "{\n            \"categoryAxis\": ChartAxis;\n            \"seriesAxis\": ChartAxis;\n            \"valueAxis\": ChartAxis;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -2460,7 +2460,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartAxisUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartAxisUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2481,7 +2481,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -2525,7 +2525,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"format\": ChartAxisFormat;\r\n            \"majorGridlines\": ChartGridlines;\r\n            \"majorUnit\": any;\r\n            \"maximum\": any;\r\n            \"minimum\": any;\r\n            \"minorGridlines\": ChartGridlines;\r\n            \"minorUnit\": any;\r\n            \"title\": ChartAxisTitle;\r\n        }",
+                "type": "{\n            \"format\": ChartAxisFormat;\n            \"majorGridlines\": ChartGridlines;\n            \"majorUnit\": any;\n            \"maximum\": any;\n            \"minimum\": any;\n            \"minorGridlines\": ChartGridlines;\n            \"minorUnit\": any;\n            \"title\": ChartAxisTitle;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -2637,7 +2637,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartAxisFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartAxisFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2658,7 +2658,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -2678,7 +2678,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"font\": ChartFont;\r\n            \"line\": ChartLineFormat;\r\n        }",
+                "type": "{\n            \"font\": ChartFont;\n            \"line\": ChartLineFormat;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -2766,7 +2766,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartAxisTitleUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartAxisTitleUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2787,7 +2787,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -2831,7 +2831,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"format\": ChartAxisTitleFormat;\r\n            \"text\": string;\r\n            \"visible\": boolean;\r\n        }",
+                "type": "{\n            \"format\": ChartAxisTitleFormat;\n            \"text\": string;\n            \"visible\": boolean;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -2943,7 +2943,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartAxisTitleFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartAxisTitleFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2964,7 +2964,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -2984,7 +2984,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"font\": ChartFont;\r\n        }",
+                "type": "{\n            \"font\": ChartFont;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -3310,7 +3310,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"count\": number;\r\n        }",
+                "type": "{\n            \"count\": number;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -3422,7 +3422,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartDataLabelFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartDataLabelFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3443,7 +3443,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -3463,7 +3463,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"fill\": ChartFill;\r\n            \"font\": ChartFont;\r\n        }",
+                "type": "{\n            \"fill\": ChartFill;\n            \"font\": ChartFont;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -3612,7 +3612,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartDataLabelsUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartDataLabelsUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3633,7 +3633,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -3797,7 +3797,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"format\": ChartDataLabelFormat;\r\n            \"position\": string;\r\n            \"separator\": string;\r\n            \"showBubbleSize\": boolean;\r\n            \"showCategoryName\": boolean;\r\n            \"showLegendKey\": boolean;\r\n            \"showPercentage\": boolean;\r\n            \"showSeriesName\": boolean;\r\n            \"showValue\": boolean;\r\n        }",
+                "type": "{\n            \"format\": ChartDataLabelFormat;\n            \"position\": string;\n            \"separator\": string;\n            \"showBubbleSize\": boolean;\n            \"showCategoryName\": boolean;\n            \"showLegendKey\": boolean;\n            \"showPercentage\": boolean;\n            \"showSeriesName\": boolean;\n            \"showValue\": boolean;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -4095,7 +4095,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartFontUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartFontUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4116,7 +4116,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -4160,7 +4160,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"bold\": boolean;\r\n            \"color\": string;\r\n            \"italic\": boolean;\r\n            \"name\": string;\r\n            \"size\": number;\r\n            \"underline\": string;\r\n        }",
+                "type": "{\n            \"bold\": boolean;\n            \"color\": string;\n            \"italic\": boolean;\n            \"name\": string;\n            \"size\": number;\n            \"underline\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -4272,7 +4272,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartGridlinesUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartGridlinesUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4293,7 +4293,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -4313,7 +4313,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"format\": ChartGridlinesFormat;\r\n            \"visible\": boolean;\r\n        }",
+                "type": "{\n            \"format\": ChartGridlinesFormat;\n            \"visible\": boolean;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -4425,7 +4425,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartGridlinesFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartGridlinesFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4446,7 +4446,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -4466,7 +4466,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"line\": ChartLineFormat;\r\n        }",
+                "type": "{\n            \"line\": ChartLineFormat;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -4602,7 +4602,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartLegendUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartLegendUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4623,7 +4623,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -4643,7 +4643,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"format\": ChartLegendFormat;\r\n            \"overlay\": boolean;\r\n            \"position\": string;\r\n            \"visible\": boolean;\r\n        }",
+                "type": "{\n            \"format\": ChartLegendFormat;\n            \"overlay\": boolean;\n            \"position\": string;\n            \"visible\": boolean;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -4779,7 +4779,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartLegendFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartLegendFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4800,7 +4800,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -4820,7 +4820,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"fill\": ChartFill;\r\n            \"font\": ChartFont;\r\n        }",
+                "type": "{\n            \"fill\": ChartFill;\n            \"font\": ChartFont;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -4949,7 +4949,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartLineFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartLineFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4970,7 +4970,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -4990,7 +4990,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"color\": string;\r\n        }",
+                "type": "{\n            \"color\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -5083,7 +5083,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"format\": ChartPointFormat;\r\n            \"value\": any;\r\n        }",
+                "type": "{\n            \"format\": ChartPointFormat;\n            \"value\": any;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -5200,7 +5200,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"fill\": ChartFill;\r\n        }",
+                "type": "{\n            \"fill\": ChartFill;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -5379,7 +5379,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"count\": number;\r\n        }",
+                "type": "{\n            \"count\": number;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -5515,7 +5515,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartSeriesUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartSeriesUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5536,7 +5536,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -5556,7 +5556,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"format\": ChartSeriesFormat;\r\n            \"name\": string;\r\n        }",
+                "type": "{\n            \"format\": ChartSeriesFormat;\n            \"name\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -5755,7 +5755,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"count\": number;\r\n        }",
+                "type": "{\n            \"count\": number;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -5867,7 +5867,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartSeriesFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartSeriesFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5888,7 +5888,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -5908,7 +5908,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"fill\": ChartFill;\r\n            \"line\": ChartLineFormat;\r\n        }",
+                "type": "{\n            \"fill\": ChartFill;\n            \"line\": ChartLineFormat;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -6020,7 +6020,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartTitleUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartTitleUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6041,7 +6041,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -6085,7 +6085,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"format\": ChartTitleFormat;\r\n            \"overlay\": boolean;\r\n            \"text\": string;\r\n            \"visible\": boolean;\r\n        }",
+                "type": "{\n            \"format\": ChartTitleFormat;\n            \"overlay\": boolean;\n            \"text\": string;\n            \"visible\": boolean;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -6221,7 +6221,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ChartTitleFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ChartTitleFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6242,7 +6242,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -6262,7 +6262,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"fill\": ChartFill;\r\n            \"font\": ChartFont;\r\n        }",
+                "type": "{\n            \"fill\": ChartFill;\n            \"font\": ChartFont;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -6389,7 +6389,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ColorScaleConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ColorScaleConditionalFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6410,7 +6410,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -6454,7 +6454,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"criteria\": ConditionalColorScaleCriteria;\r\n            \"threeColorScale\": boolean;\r\n        }",
+                "type": "{\n            \"criteria\": ConditionalColorScaleCriteria;\n            \"threeColorScale\": boolean;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -6962,7 +6962,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalDataBarNegativeFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalDataBarNegativeFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6983,7 +6983,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -7003,7 +7003,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"borderColor\": string;\r\n            \"fillColor\": string;\r\n            \"matchPositiveBorderColor\": boolean;\r\n            \"matchPositiveFillColor\": boolean;\r\n        }",
+                "type": "{\n            \"borderColor\": string;\n            \"fillColor\": string;\n            \"matchPositiveBorderColor\": boolean;\n            \"matchPositiveFillColor\": boolean;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -7139,7 +7139,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalDataBarPositiveFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalDataBarPositiveFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7160,7 +7160,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -7180,7 +7180,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"borderColor\": string;\r\n            \"fillColor\": string;\r\n            \"gradientFill\": boolean;\r\n        }",
+                "type": "{\n            \"borderColor\": string;\n            \"fillColor\": string;\n            \"gradientFill\": boolean;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -7712,7 +7712,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7733,7 +7733,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -7825,7 +7825,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"cellValue\": CellValueConditionalFormat;\r\n            \"cellValueOrNullObject\": CellValueConditionalFormat;\r\n            \"colorScale\": ColorScaleConditionalFormat;\r\n            \"colorScaleOrNullObject\": ColorScaleConditionalFormat;\r\n            \"custom\": CustomConditionalFormat;\r\n            \"customOrNullObject\": CustomConditionalFormat;\r\n            \"dataBar\": DataBarConditionalFormat;\r\n            \"dataBarOrNullObject\": DataBarConditionalFormat;\r\n            \"iconSet\": IconSetConditionalFormat;\r\n            \"iconSetOrNullObject\": IconSetConditionalFormat;\r\n            \"preset\": PresetCriteriaConditionalFormat;\r\n            \"presetOrNullObject\": PresetCriteriaConditionalFormat;\r\n            \"priority\": number;\r\n            \"stopIfTrue\": boolean;\r\n            \"textComparison\": TextConditionalFormat;\r\n            \"textComparisonOrNullObject\": TextConditionalFormat;\r\n            \"topBottom\": TopBottomConditionalFormat;\r\n            \"topBottomOrNullObject\": TopBottomConditionalFormat;\r\n            \"type\": string;\r\n        }",
+                "type": "{\n            \"cellValue\": CellValueConditionalFormat;\n            \"cellValueOrNullObject\": CellValueConditionalFormat;\n            \"colorScale\": ColorScaleConditionalFormat;\n            \"colorScaleOrNullObject\": ColorScaleConditionalFormat;\n            \"custom\": CustomConditionalFormat;\n            \"customOrNullObject\": CustomConditionalFormat;\n            \"dataBar\": DataBarConditionalFormat;\n            \"dataBarOrNullObject\": DataBarConditionalFormat;\n            \"iconSet\": IconSetConditionalFormat;\n            \"iconSetOrNullObject\": IconSetConditionalFormat;\n            \"preset\": PresetCriteriaConditionalFormat;\n            \"presetOrNullObject\": PresetCriteriaConditionalFormat;\n            \"priority\": number;\n            \"stopIfTrue\": boolean;\n            \"textComparison\": TextConditionalFormat;\n            \"textComparisonOrNullObject\": TextConditionalFormat;\n            \"topBottom\": TopBottomConditionalFormat;\n            \"topBottomOrNullObject\": TopBottomConditionalFormat;\n            \"type\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -8337,7 +8337,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalFormatRuleUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalFormatRuleUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8358,7 +8358,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -8378,7 +8378,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"formula\": string;\r\n            \"formulaLocal\": string;\r\n            \"formulaR1C1\": string;\r\n        }",
+                "type": "{\n            \"formula\": string;\n            \"formulaLocal\": string;\n            \"formulaR1C1\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -8687,7 +8687,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalRangeBorderUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalRangeBorderUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -8708,7 +8708,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -8776,7 +8776,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"color\": string;\r\n            \"sideIndex\": string;\r\n            \"style\": string;\r\n        }",
+                "type": "{\n            \"color\": string;\n            \"sideIndex\": string;\n            \"style\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -9040,7 +9040,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"count\": number;\r\n        }",
+                "type": "{\n            \"count\": number;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -9206,7 +9206,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalRangeFillUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalRangeFillUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9227,7 +9227,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -9247,7 +9247,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"color\": string;\r\n        }",
+                "type": "{\n            \"color\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -9411,7 +9411,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalRangeFontUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalRangeFontUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9432,7 +9432,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -9476,7 +9476,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"bold\": boolean;\r\n            \"color\": string;\r\n            \"italic\": boolean;\r\n            \"strikethrough\": boolean;\r\n            \"underline\": string;\r\n        }",
+                "type": "{\n            \"bold\": boolean;\n            \"color\": string;\n            \"italic\": boolean;\n            \"strikethrough\": boolean;\n            \"underline\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -9673,7 +9673,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ConditionalRangeFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ConditionalRangeFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9694,7 +9694,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -9714,7 +9714,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"numberFormat\": any;\r\n        }",
+                "type": "{\n            \"numberFormat\": any;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -10010,7 +10010,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.CustomConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.CustomConditionalFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10031,7 +10031,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -10051,7 +10051,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"format\": ConditionalRangeFormat;\r\n            \"rule\": ConditionalFormatRule;\r\n        }",
+                "type": "{\n            \"format\": ConditionalRangeFormat;\n            \"rule\": ConditionalFormatRule;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -10265,7 +10265,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"id\": string;\r\n            \"namespaceUri\": string;\r\n        }",
+                "type": "{\n            \"id\": string;\n            \"namespaceUri\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -10352,12 +10352,7 @@
               "parameters": {
                 "namespaceUri": {
                   "name": "namespaceUri",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "namespace URI"
-                    }
-                  ],
+                  "description": [],
                   "isOptional": false,
                   "isSpread": false,
                   "type": "string"
@@ -11003,7 +10998,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.DataBarConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.DataBarConditionalFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11024,7 +11019,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -11068,7 +11063,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"axisColor\": string;\r\n            \"axisFormat\": string;\r\n            \"barDirection\": string;\r\n            \"lowerBoundRule\": ConditionalDataBarRule;\r\n            \"negativeFormat\": ConditionalDataBarNegativeFormat;\r\n            \"positiveFormat\": ConditionalDataBarPositiveFormat;\r\n            \"showDataBarOnly\": boolean;\r\n            \"upperBoundRule\": ConditionalDataBarRule;\r\n        }",
+                "type": "{\n            \"axisColor\": string;\n            \"axisFormat\": string;\n            \"barDirection\": string;\n            \"lowerBoundRule\": ConditionalDataBarRule;\n            \"negativeFormat\": ConditionalDataBarNegativeFormat;\n            \"positiveFormat\": ConditionalDataBarPositiveFormat;\n            \"showDataBarOnly\": boolean;\n            \"upperBoundRule\": ConditionalDataBarRule;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -11722,7 +11717,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"criteria\": FilterCriteria;\r\n        }",
+                "type": "{\n            \"criteria\": FilterCriteria;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -12648,7 +12643,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.FormatProtectionUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.FormatProtectionUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12669,7 +12664,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -12689,7 +12684,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"formulaHidden\": boolean;\r\n            \"locked\": boolean;\r\n        }",
+                "type": "{\n            \"formulaHidden\": boolean;\n            \"locked\": boolean;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -13204,7 +13199,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"error\": string;\r\n            \"value\": T;\r\n        }",
+                "type": "{\n            \"error\": string;\n            \"value\": T;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -34117,7 +34112,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.IconSetConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.IconSetConditionalFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -34138,7 +34133,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -34206,7 +34201,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"criteria\": ConditionalIconCriterion[];\r\n            \"reverseIconOrder\": boolean;\r\n            \"showIconOnly\": boolean;\r\n            \"style\": string;\r\n        }",
+                "type": "{\n            \"criteria\": ConditionalIconCriterion[];\n            \"reverseIconOrder\": boolean;\n            \"showIconOnly\": boolean;\n            \"style\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -34452,7 +34447,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.NamedItemUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.NamedItemUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -34473,7 +34468,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -34493,7 +34488,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"comment\": string;\r\n            \"name\": string;\r\n            \"scope\": string;\r\n            \"type\": string;\r\n            \"value\": any;\r\n            \"visible\": boolean;\r\n        }",
+                "type": "{\n            \"comment\": string;\n            \"name\": string;\n            \"scope\": string;\n            \"type\": string;\n            \"value\": any;\n            \"visible\": boolean;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -35115,7 +35110,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.PivotTableUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.PivotTableUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -35136,7 +35131,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -35156,7 +35151,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"id\": string;\r\n            \"name\": string;\r\n        }",
+                "type": "{\n            \"id\": string;\n            \"name\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -35516,7 +35511,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.PresetCriteriaConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.PresetCriteriaConditionalFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -35537,7 +35532,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -35557,7 +35552,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"format\": ConditionalRangeFormat;\r\n            \"rule\": ConditionalPresetCriteriaRule;\r\n        }",
+                "type": "{\n            \"format\": ConditionalRangeFormat;\n            \"rule\": ConditionalPresetCriteriaRule;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -37003,7 +36998,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.RangeUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.RangeUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -37024,7 +37019,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -37092,7 +37087,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"address\": string;\r\n            \"addressLocal\": string;\r\n            \"cellCount\": number;\r\n            \"columnCount\": number;\r\n            \"columnHidden\": boolean;\r\n            \"columnIndex\": number;\r\n            \"format\": RangeFormat;\r\n            \"formulas\": any[][];\r\n            \"formulasLocal\": any[][];\r\n            \"formulasR1C1\": any[][];\r\n            \"hidden\": boolean;\r\n            \"numberFormat\": any[][];\r\n            \"rowCount\": number;\r\n            \"rowHidden\": boolean;\r\n            \"rowIndex\": number;\r\n            \"text\": any[][];\r\n            \"values\": any[][];\r\n            \"valueTypes\": string[][];\r\n        }",
+                "type": "{\n            \"address\": string;\n            \"addressLocal\": string;\n            \"cellCount\": number;\n            \"columnCount\": number;\n            \"columnHidden\": boolean;\n            \"columnIndex\": number;\n            \"format\": RangeFormat;\n            \"formulas\": any[][];\n            \"formulasLocal\": any[][];\n            \"formulasR1C1\": any[][];\n            \"hidden\": boolean;\n            \"numberFormat\": any[][];\n            \"rowCount\": number;\n            \"rowHidden\": boolean;\n            \"rowIndex\": number;\n            \"text\": any[][];\n            \"values\": any[][];\n            \"valueTypes\": string[][];\n        }",
                 "description": []
               },
               "parameters": {},
@@ -37322,7 +37317,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.RangeBorderUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.RangeBorderUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -37343,7 +37338,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -37411,7 +37406,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"color\": string;\r\n            \"sideIndex\": string;\r\n            \"style\": string;\r\n            \"weight\": string;\r\n        }",
+                "type": "{\n            \"color\": string;\n            \"sideIndex\": string;\n            \"style\": string;\n            \"weight\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -37627,7 +37622,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"count\": number;\r\n        }",
+                "type": "{\n            \"count\": number;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -37743,7 +37738,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.RangeFillUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.RangeFillUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -37764,7 +37759,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -37784,7 +37779,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"color\": string;\r\n        }",
+                "type": "{\n            \"color\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -37944,7 +37939,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.RangeFontUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.RangeFontUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -37965,7 +37960,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -38009,7 +38004,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"bold\": boolean;\r\n            \"color\": string;\r\n            \"italic\": boolean;\r\n            \"name\": string;\r\n            \"size\": number;\r\n            \"underline\": string;\r\n        }",
+                "type": "{\n            \"bold\": boolean;\n            \"color\": string;\n            \"italic\": boolean;\n            \"name\": string;\n            \"size\": number;\n            \"underline\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -38321,7 +38316,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.RangeFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.RangeFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38342,7 +38337,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -38362,7 +38357,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"columnWidth\": number;\r\n            \"fill\": RangeFill;\r\n            \"font\": RangeFont;\r\n            \"horizontalAlignment\": string;\r\n            \"protection\": FormatProtection;\r\n            \"rowHeight\": number;\r\n            \"verticalAlignment\": string;\r\n            \"wrapText\": boolean;\r\n        }",
+                "type": "{\n            \"columnWidth\": number;\n            \"fill\": RangeFill;\n            \"font\": RangeFont;\n            \"horizontalAlignment\": string;\n            \"protection\": FormatProtection;\n            \"rowHeight\": number;\n            \"verticalAlignment\": string;\n            \"wrapText\": boolean;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -38909,7 +38904,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.RangeViewUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.RangeViewUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -38930,7 +38925,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -38974,7 +38969,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"cellAddresses\": any[][];\r\n            \"columnCount\": number;\r\n            \"formulas\": any[][];\r\n            \"formulasLocal\": any[][];\r\n            \"formulasR1C1\": any[][];\r\n            \"index\": number;\r\n            \"numberFormat\": any[][];\r\n            \"rowCount\": number;\r\n            \"text\": any[][];\r\n            \"values\": any[][];\r\n            \"valueTypes\": string[][];\r\n        }",
+                "type": "{\n            \"cellAddresses\": any[][];\n            \"columnCount\": number;\n            \"formulas\": any[][];\n            \"formulasLocal\": any[][];\n            \"formulasR1C1\": any[][];\n            \"index\": number;\n            \"numberFormat\": any[][];\n            \"rowCount\": number;\n            \"text\": any[][];\n            \"values\": any[][];\n            \"valueTypes\": string[][];\n        }",
                 "description": []
               },
               "parameters": {},
@@ -39389,7 +39384,7 @@
           "members": {
             "__constructor": {
               "kind": "constructor",
-              "signature": "constructor(workbookUrl?: string, requestHeaders?: {\r\n            [name: string]: string;\r\n        }, persisted?: boolean);",
+              "signature": "constructor(workbookUrl?: string, requestHeaders?: {\n            [name: string]: string;\n        }, persisted?: boolean);",
               "parameters": {
                 "workbookUrl": {
                   "name": "workbookUrl",
@@ -39403,7 +39398,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            [name: string]: string;\r\n        }"
+                  "type": "{\n            [name: string]: string;\n        }"
                 },
                 "persisted": {
                   "name": "persisted",
@@ -39569,7 +39564,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.SettingUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.SettingUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -39590,7 +39585,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -39610,7 +39605,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"key\": string;\r\n            \"value\": any;\r\n        }",
+                "type": "{\n            \"key\": string;\n            \"value\": any;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -40620,7 +40615,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TableUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.TableUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -40641,7 +40636,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -40829,7 +40824,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"highlightFirstColumn\": boolean;\r\n            \"highlightLastColumn\": boolean;\r\n            \"id\": number;\r\n            \"name\": string;\r\n            \"showBandedColumns\": boolean;\r\n            \"showBandedRows\": boolean;\r\n            \"showFilterButton\": boolean;\r\n            \"showHeaders\": boolean;\r\n            \"showTotals\": boolean;\r\n            \"style\": string;\r\n        }",
+                "type": "{\n            \"highlightFirstColumn\": boolean;\n            \"highlightLastColumn\": boolean;\n            \"id\": number;\n            \"name\": string;\n            \"showBandedColumns\": boolean;\n            \"showBandedRows\": boolean;\n            \"showFilterButton\": boolean;\n            \"showHeaders\": boolean;\n            \"showTotals\": boolean;\n            \"style\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -41167,7 +41162,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"count\": number;\r\n        }",
+                "type": "{\n            \"count\": number;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -41467,7 +41462,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TableColumnUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.TableColumnUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -41488,7 +41483,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -41508,7 +41503,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"id\": number;\r\n            \"index\": number;\r\n            \"name\": string;\r\n            \"values\": any[][];\r\n        }",
+                "type": "{\n            \"id\": number;\n            \"index\": number;\n            \"name\": string;\n            \"values\": any[][];\n        }",
                 "description": []
               },
               "parameters": {},
@@ -41858,7 +41853,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"count\": number;\r\n        }",
+                "type": "{\n            \"count\": number;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -42009,7 +42004,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TableRowUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.TableRowUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -42030,7 +42025,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -42050,7 +42045,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"index\": number;\r\n            \"values\": any[][];\r\n        }",
+                "type": "{\n            \"index\": number;\n            \"values\": any[][];\n        }",
                 "description": []
               },
               "parameters": {},
@@ -42327,7 +42322,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"count\": number;\r\n        }",
+                "type": "{\n            \"count\": number;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -42589,7 +42584,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"fields\": SortField[];\r\n            \"matchCase\": boolean;\r\n            \"method\": string;\r\n        }",
+                "type": "{\n            \"fields\": SortField[];\n            \"matchCase\": boolean;\n            \"method\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -42701,7 +42696,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TextConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.TextConditionalFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -42722,7 +42717,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -42742,7 +42737,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"format\": ConditionalRangeFormat;\r\n            \"rule\": ConditionalTextComparisonRule;\r\n        }",
+                "type": "{\n            \"format\": ConditionalRangeFormat;\n            \"rule\": ConditionalTextComparisonRule;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -43574,7 +43569,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TopBottomConditionalFormatUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.TopBottomConditionalFormatUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -43595,7 +43590,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -43615,7 +43610,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"format\": ConditionalRangeFormat;\r\n            \"rule\": ConditionalTopBottomRule;\r\n        }",
+                "type": "{\n            \"format\": ConditionalRangeFormat;\n            \"rule\": ConditionalTopBottomRule;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -44629,7 +44624,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.WorksheetUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.WorksheetUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -44650,7 +44645,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -44694,7 +44689,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"id\": string;\r\n            \"name\": string;\r\n            \"position\": number;\r\n            \"protection\": WorksheetProtection;\r\n            \"visibility\": string;\r\n        }",
+                "type": "{\n            \"id\": string;\n            \"name\": string;\n            \"position\": number;\n            \"protection\": WorksheetProtection;\n            \"visibility\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -45221,7 +45216,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"options\": WorksheetProtectionOptions;\r\n            \"protected\": boolean;\r\n        }",
+                "type": "{\n            \"options\": WorksheetProtectionOptions;\n            \"protected\": boolean;\n        }",
                 "description": []
               },
               "parameters": {},

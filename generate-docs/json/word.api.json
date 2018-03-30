@@ -942,7 +942,7 @@
             },
             "search": {
               "kind": "method",
-              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;",
+              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }): Word.RangeCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -973,7 +973,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+                  "type": "Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -1036,7 +1036,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.BodyUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.BodyUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1057,7 +1057,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -1173,7 +1173,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"font\": Font;\r\n            \"style\": string;\r\n            \"styleBuiltIn\": string;\r\n            \"text\": string;\r\n            \"type\": string;\r\n        }",
+                "type": "{\n            \"font\": Font;\n            \"style\": string;\n            \"styleBuiltIn\": string;\n            \"text\": string;\n            \"type\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -2498,7 +2498,7 @@
             },
             "search": {
               "kind": "method",
-              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;",
+              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }): Word.RangeCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2529,7 +2529,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+                  "type": "Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -2592,7 +2592,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ContentControlUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ContentControlUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2613,7 +2613,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -2878,7 +2878,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"appearance\": string;\r\n            \"cannotDelete\": boolean;\r\n            \"cannotEdit\": boolean;\r\n            \"color\": string;\r\n            \"font\": Font;\r\n            \"id\": number;\r\n            \"placeholderText\": string;\r\n            \"removeWhenEdited\": boolean;\r\n            \"style\": string;\r\n            \"styleBuiltIn\": string;\r\n            \"subtype\": string;\r\n            \"tag\": string;\r\n            \"text\": string;\r\n            \"title\": string;\r\n            \"type\": string;\r\n        }",
+                "type": "{\n            \"appearance\": string;\n            \"cannotDelete\": boolean;\n            \"cannotEdit\": boolean;\n            \"color\": string;\n            \"font\": Font;\n            \"id\": number;\n            \"placeholderText\": string;\n            \"removeWhenEdited\": boolean;\n            \"style\": string;\n            \"styleBuiltIn\": string;\n            \"subtype\": string;\n            \"tag\": string;\n            \"text\": string;\n            \"title\": string;\n            \"type\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -3530,7 +3530,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.CustomPropertyUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.CustomPropertyUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3551,7 +3551,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -3571,7 +3571,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"key\": string;\r\n            \"type\": string;\r\n            \"value\": any;\r\n        }",
+                "type": "{\n            \"key\": string;\n            \"type\": string;\n            \"value\": any;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -4220,7 +4220,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.DocumentUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.DocumentUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4241,7 +4241,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -4261,7 +4261,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"body\": Body;\r\n            \"properties\": DocumentProperties;\r\n            \"saved\": boolean;\r\n        }",
+                "type": "{\n            \"body\": Body;\n            \"properties\": DocumentProperties;\n            \"saved\": boolean;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -4727,7 +4727,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.DocumentPropertiesUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.DocumentPropertiesUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4748,7 +4748,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -4840,7 +4840,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"applicationName\": string;\r\n            \"author\": string;\r\n            \"category\": string;\r\n            \"comments\": string;\r\n            \"company\": string;\r\n            \"creationDate\": Date;\r\n            \"format\": string;\r\n            \"keywords\": string;\r\n            \"lastAuthor\": string;\r\n            \"lastPrintDate\": Date;\r\n            \"lastSaveTime\": Date;\r\n            \"manager\": string;\r\n            \"revisionNumber\": string;\r\n            \"security\": number;\r\n            \"subject\": string;\r\n            \"template\": string;\r\n            \"title\": string;\r\n        }",
+                "type": "{\n            \"applicationName\": string;\n            \"author\": string;\n            \"category\": string;\n            \"comments\": string;\n            \"company\": string;\n            \"creationDate\": Date;\n            \"format\": string;\n            \"keywords\": string;\n            \"lastAuthor\": string;\n            \"lastPrintDate\": Date;\n            \"lastSaveTime\": Date;\n            \"manager\": string;\n            \"revisionNumber\": string;\n            \"security\": number;\n            \"subject\": string;\n            \"template\": string;\n            \"title\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -5111,7 +5111,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.FontUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.FontUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5132,7 +5132,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -5248,7 +5248,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"bold\": boolean;\r\n            \"color\": string;\r\n            \"doubleStrikeThrough\": boolean;\r\n            \"highlightColor\": string;\r\n            \"italic\": boolean;\r\n            \"name\": string;\r\n            \"size\": number;\r\n            \"strikeThrough\": boolean;\r\n            \"subscript\": boolean;\r\n            \"superscript\": boolean;\r\n            \"underline\": string;\r\n        }",
+                "type": "{\n            \"bold\": boolean;\n            \"color\": string;\n            \"doubleStrikeThrough\": boolean;\n            \"highlightColor\": string;\n            \"italic\": boolean;\n            \"name\": string;\n            \"size\": number;\n            \"strikeThrough\": boolean;\n            \"subscript\": boolean;\n            \"superscript\": boolean;\n            \"underline\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -6285,7 +6285,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.InlinePictureUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.InlinePictureUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6306,7 +6306,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -6326,7 +6326,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"altTextDescription\": string;\r\n            \"altTextTitle\": string;\r\n            \"height\": number;\r\n            \"hyperlink\": string;\r\n            \"lockAspectRatio\": boolean;\r\n            \"width\": number;\r\n        }",
+                "type": "{\n            \"altTextDescription\": string;\n            \"altTextTitle\": string;\n            \"height\": number;\n            \"hyperlink\": string;\n            \"lockAspectRatio\": boolean;\n            \"width\": number;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -7204,7 +7204,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"id\": number;\r\n            \"levelExistences\": boolean[];\r\n            \"levelTypes\": string[];\r\n        }",
+                "type": "{\n            \"id\": number;\n            \"levelExistences\": boolean[];\n            \"levelTypes\": string[];\n        }",
                 "description": []
               },
               "parameters": {},
@@ -7801,7 +7801,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ListItemUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ListItemUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7822,7 +7822,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -7866,7 +7866,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"level\": number;\r\n            \"listString\": string;\r\n            \"siblingIndex\": number;\r\n        }",
+                "type": "{\n            \"level\": number;\n            \"listString\": string;\n            \"siblingIndex\": number;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -9462,7 +9462,7 @@
             },
             "search": {
               "kind": "method",
-              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;",
+              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }): Word.RangeCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9493,7 +9493,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+                  "type": "Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -9556,7 +9556,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ParagraphUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.ParagraphUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9577,7 +9577,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -9834,7 +9834,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"alignment\": string;\r\n            \"firstLineIndent\": number;\r\n            \"font\": Font;\r\n            \"isLastParagraph\": boolean;\r\n            \"isListItem\": boolean;\r\n            \"leftIndent\": number;\r\n            \"lineSpacing\": number;\r\n            \"lineUnitAfter\": number;\r\n            \"lineUnitBefore\": number;\r\n            \"listItem\": ListItem;\r\n            \"listItemOrNullObject\": ListItem;\r\n            \"outlineLevel\": number;\r\n            \"rightIndent\": number;\r\n            \"spaceAfter\": number;\r\n            \"spaceBefore\": number;\r\n            \"style\": string;\r\n            \"styleBuiltIn\": string;\r\n            \"tableNestingLevel\": number;\r\n            \"text\": string;\r\n        }",
+                "type": "{\n            \"alignment\": string;\n            \"firstLineIndent\": number;\n            \"font\": Font;\n            \"isLastParagraph\": boolean;\n            \"isListItem\": boolean;\n            \"leftIndent\": number;\n            \"lineSpacing\": number;\n            \"lineUnitAfter\": number;\n            \"lineUnitBefore\": number;\n            \"listItem\": ListItem;\n            \"listItemOrNullObject\": ListItem;\n            \"outlineLevel\": number;\n            \"rightIndent\": number;\n            \"spaceAfter\": number;\n            \"spaceBefore\": number;\n            \"style\": string;\n            \"styleBuiltIn\": string;\n            \"tableNestingLevel\": number;\n            \"text\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -11537,7 +11537,7 @@
             },
             "search": {
               "kind": "method",
-              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;",
+              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }): Word.RangeCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11568,7 +11568,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+                  "type": "Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -11631,7 +11631,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.RangeUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.RangeUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11652,7 +11652,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -11845,7 +11845,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"font\": Font;\r\n            \"hyperlink\": string;\r\n            \"isEmpty\": boolean;\r\n            \"style\": string;\r\n            \"styleBuiltIn\": string;\r\n            \"text\": string;\r\n        }",
+                "type": "{\n            \"font\": Font;\n            \"hyperlink\": string;\n            \"isEmpty\": boolean;\n            \"style\": string;\n            \"styleBuiltIn\": string;\n            \"text\": string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -12469,7 +12469,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.SearchOptionsUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.SearchOptionsUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12490,7 +12490,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -12510,7 +12510,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"ignorePunct\": boolean;\r\n            \"ignoreSpace\": boolean;\r\n            \"matchCase\": boolean;\r\n            \"matchPrefix\": boolean;\r\n            \"matchSuffix\": boolean;\r\n            \"matchWholeWord\": boolean;\r\n            \"matchWildcards\": boolean;\r\n        }",
+                "type": "{\n            \"ignorePunct\": boolean;\n            \"ignoreSpace\": boolean;\n            \"matchCase\": boolean;\n            \"matchPrefix\": boolean;\n            \"matchSuffix\": boolean;\n            \"matchWholeWord\": boolean;\n            \"matchWildcards\": boolean;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -12736,7 +12736,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.SectionUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.SectionUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12757,7 +12757,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -12777,7 +12777,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"body\": Body;\r\n        }",
+                "type": "{\n            \"body\": Body;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -14356,7 +14356,7 @@
             },
             "search": {
               "kind": "method",
-              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;",
+              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }): Word.RangeCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -14387,7 +14387,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+                  "type": "Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -14450,7 +14450,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TableUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.TableUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -14471,7 +14471,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -14760,7 +14760,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"alignment\": string;\r\n            \"font\": Font;\r\n            \"headerRowCount\": number;\r\n            \"horizontalAlignment\": string;\r\n            \"isUniform\": boolean;\r\n            \"nestingLevel\": number;\r\n            \"rowCount\": number;\r\n            \"shadingColor\": string;\r\n            \"style\": string;\r\n            \"styleBandedColumns\": boolean;\r\n            \"styleBandedRows\": boolean;\r\n            \"styleBuiltIn\": string;\r\n            \"styleFirstColumn\": boolean;\r\n            \"styleLastColumn\": boolean;\r\n            \"styleTotalRow\": boolean;\r\n            \"values\": string[][];\r\n            \"verticalAlignment\": string;\r\n            \"width\": number;\r\n        }",
+                "type": "{\n            \"alignment\": string;\n            \"font\": Font;\n            \"headerRowCount\": number;\n            \"horizontalAlignment\": string;\n            \"isUniform\": boolean;\n            \"nestingLevel\": number;\n            \"rowCount\": number;\n            \"shadingColor\": string;\n            \"style\": string;\n            \"styleBandedColumns\": boolean;\n            \"styleBandedRows\": boolean;\n            \"styleBuiltIn\": string;\n            \"styleFirstColumn\": boolean;\n            \"styleLastColumn\": boolean;\n            \"styleTotalRow\": boolean;\n            \"values\": string[][];\n            \"verticalAlignment\": string;\n            \"width\": number;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -14962,7 +14962,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TableBorderUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.TableBorderUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -14983,7 +14983,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -15003,7 +15003,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"color\": string;\r\n            \"type\": string;\r\n            \"width\": number;\r\n        }",
+                "type": "{\n            \"color\": string;\n            \"type\": string;\n            \"width\": number;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -15649,7 +15649,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TableCellUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.TableCellUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -15670,7 +15670,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -15767,7 +15767,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"body\": Body;\r\n            \"cellIndex\": number;\r\n            \"columnWidth\": number;\r\n            \"horizontalAlignment\": string;\r\n            \"rowIndex\": number;\r\n            \"shadingColor\": string;\r\n            \"value\": string;\r\n            \"verticalAlignment\": string;\r\n            \"width\": number;\r\n        }",
+                "type": "{\n            \"body\": Body;\n            \"cellIndex\": number;\n            \"columnWidth\": number;\n            \"horizontalAlignment\": string;\n            \"rowIndex\": number;\n            \"shadingColor\": string;\n            \"value\": string;\n            \"verticalAlignment\": string;\n            \"width\": number;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -16764,7 +16764,7 @@
             },
             "search": {
               "kind": "method",
-              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;",
+              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }): Word.RangeCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16795,7 +16795,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+                  "type": "Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -16858,7 +16858,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TableRowUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
+              "signature": "set(properties: Interfaces.TableRowUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -16879,7 +16879,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
+                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -16976,7 +16976,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            \"cellCount\": number;\r\n            \"font\": Font;\r\n            \"horizontalAlignment\": string;\r\n            \"isHeader\": boolean;\r\n            \"preferredHeight\": number;\r\n            \"rowIndex\": number;\r\n            \"shadingColor\": string;\r\n            \"values\": string[][];\r\n            \"verticalAlignment\": string;\r\n        }",
+                "type": "{\n            \"cellCount\": number;\n            \"font\": Font;\n            \"horizontalAlignment\": string;\n            \"isHeader\": boolean;\n            \"preferredHeight\": number;\n            \"rowIndex\": number;\n            \"shadingColor\": string;\n            \"values\": string[][];\n            \"verticalAlignment\": string;\n        }",
                 "description": []
               },
               "parameters": {},

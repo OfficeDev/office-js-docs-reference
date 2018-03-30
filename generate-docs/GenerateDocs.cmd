@@ -1,5 +1,11 @@
 call npm install
 
+pushd scripts
+call npm install
+call npm run build
+call node preprocessor.js
+popd
+
 del package-lock.json
 
 cd api-extractor-inputs-office
@@ -30,6 +36,8 @@ cd ..
 
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json --office
 
-rem call D:\GitRepos\wbt2\libraries\api-documenter\ad.cmd yaml --input-folder .\json --office
+pushd scripts
+call node postprocessor.js
+popd
 
 pause
