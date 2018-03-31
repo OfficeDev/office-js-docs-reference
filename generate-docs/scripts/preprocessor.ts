@@ -86,6 +86,28 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs")
     );
 
+    console.log("\nCreating snippets file...");
+
+    console.log("\nReading from: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/snippet-extractor-output/snippets.yaml");
+
+    fsx.writeFileSync("../script-inputs/script-lab-snippets.yaml", await fetchAndThrowOnError("https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/snippet-extractor-output/snippets.yaml", "text"));
+
+    console.log("\nReading from files: " + path.resolve("../../docs/code-snippets"));
+
+    const snippetsSourcePath = path.resolve("../../docs/code-snippets");
+    let localCodeSnippets : string = "";
+    fsx.readdirSync(path.resolve(snippetsSourcePath))
+        .filter(name => name.endsWith('.yaml') || name.endsWith('.yml'))
+        .forEach((filename, index) => {
+            localCodeSnippets += fsx.readFileSync(`${snippetsSourcePath}/${filename}`).toString() + "\r\n";
+        });
+    fsx.writeFileSync("../script-inputs/local-repo-snippets.yaml", localCodeSnippets);
+
+    console.log("\nWriting snippets to: " + path.resolve("../json/snippets.yaml"));
+
+    const allCodeSnippets = fsx.readFileSync(`../script-inputs/local-repo-snippets.yaml`).toString() + fsx.readFileSync(`../script-inputs/script-lab-snippets.yaml`).toString();
+    fsx.writeFileSync("../json/snippets.yaml", allCodeSnippets);
+
     console.log("\nPreprocessor script complete!");
 
     process.exit(0);
