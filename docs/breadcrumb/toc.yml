@@ -1,5 +1,5 @@
 
-- name: Docs
-  href: /
-  homepage: /
-  items:
+- name: Office Add-ins 
+  tocHref: /javascript/api
+  topicHref: javascript/api/overview/office
+  
