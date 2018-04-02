@@ -3,5 +3,5 @@
   homepage: /
   items:
   - name: Office Add-ins
-    tocHref: /javascript/api/office_ref_toc/
+    tocHref: /javascript/office
     topicHref: /javascript/office/javascript-api-for-office
