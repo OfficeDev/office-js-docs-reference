@@ -1,4 +1,5 @@
-- name: Docs
+- name: Office Add-ins
+  href: /office/dev/add-ins/index
   items:
   - name: JavaScript API for Office
     tocHref: /javascript/office/
