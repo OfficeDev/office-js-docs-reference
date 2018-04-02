@@ -32,6 +32,17 @@
           "**/*..yml",
           "*/toc.yml"
         ]
+      },
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "office/breadcrumb",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
       }
     ],
     "resource": [
@@ -62,7 +73,9 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "breadcrumb_path": "/javascript/office/breadcrumb/toc.json"
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "office-docs-ref-javascript"

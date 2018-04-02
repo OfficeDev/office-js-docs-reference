@@ -1,5 +1,6 @@
-
-- name: Docs
-  href: /
-  homepage: /
+- name: Office Add-ins
+  href: /office/dev/add-ins/index
   items:
+  - name: JavaScript API for Office
+    tocHref: /javascript/office/
+    topicHref: /javascript/office/javascript-api-for-office
