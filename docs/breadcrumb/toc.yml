@@ -1,3 +1,5 @@
-- name: Office Add-ins
-  tocHref: /javascript/office/
-  topicHref: /javascript/office/javascript-api-for-office
+- name: Docs
+  items:
+  - name: Office Add-ins
+    tocHref: /javascript/office/
+    topicHref: /javascript/office/javascript-api-for-office
