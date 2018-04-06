@@ -22,6 +22,15 @@ tryCatch(async () => {
         //     replace the filename.
     });
 
+    console.log('\n');
+    const includeScriptLabSnippets = await promptFromList({
+        message: `Do you want to include Script Lab code snippets in the generated docs?`,
+        choices: [
+            { name: "Yes", value: "y" },
+            { name: "No", value: "n" }
+        ]
+    });
+
     if (urlToCopyOfficeJsFrom.length > 0) {
         fsx.writeFileSync("../script-inputs/office.d.ts", await fetchAndThrowOnError(urlToCopyOfficeJsFrom, "text"));
     }
@@ -86,11 +95,19 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(definitions, "Begin Word APIs", "End Word APIs")
     );
 
+    console.log("\nRemoving old snippets input files...");
+
+    const scriptInputsPath = path.resolve("../script-inputs");
+    fsx.readdirSync(scriptInputsPath)
+        .filter(filename => filename.indexOf("snippets") > 0)
+        .forEach(filename => fsx.removeSync(scriptInputsPath + '/' + filename));
+
     console.log("\nCreating snippets file...");
 
-    console.log("\nReading from: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/snippet-extractor-output/snippets.yaml");
-
-    fsx.writeFileSync("../script-inputs/script-lab-snippets.yaml", await fetchAndThrowOnError("https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/snippet-extractor-output/snippets.yaml", "text"));
+    if (includeScriptLabSnippets === "y") {
+        console.log("\nReading from: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/snippet-extractor-output/snippets.yaml");
+        fsx.writeFileSync("../script-inputs/script-lab-snippets.yaml", await fetchAndThrowOnError("https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/snippet-extractor-output/snippets.yaml", "text"));
+    }
 
     console.log("\nReading from files: " + path.resolve("../../docs/code-snippets"));
 
@@ -105,7 +122,10 @@ tryCatch(async () => {
 
     console.log("\nWriting snippets to: " + path.resolve("../json/snippets.yaml"));
 
-    const allCodeSnippets = fsx.readFileSync(`../script-inputs/local-repo-snippets.yaml`).toString() + fsx.readFileSync(`../script-inputs/script-lab-snippets.yaml`).toString();
+    const allCodeSnippets = includeScriptLabSnippets === "y"
+        ? fsx.readFileSync(`../script-inputs/local-repo-snippets.yaml`).toString() + fsx.readFileSync(`../script-inputs/script-lab-snippets.yaml`).toString()
+        : fsx.readFileSync(`../script-inputs/local-repo-snippets.yaml`).toString();
+
     fsx.writeFileSync("../json/snippets.yaml", allCodeSnippets);
 
     console.log("\nPreprocessor script complete!");
