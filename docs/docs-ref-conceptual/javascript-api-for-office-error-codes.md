@@ -74,7 +74,7 @@ The following table lists the error codes, names, and messages displayed, and th
 |12005|||The URL passed to `displayDialogAsync` uses the HTTP protocol. HTTPS is required. Thrown by call of `displayDialogAsync`. (In some versions of Office, the error message returned with 12005 is the same one returned for 12004.)|
 |12006|||The dialog box was closed, usually because the user chooses the **X** button. Thrown within the dialog and trigges a `DialogEventReceived` event in the host page.|
 |12007|||A dialog box is already opened from this host window. A host window, such as a task pane, can only have one dialog box open at a time. Thrown by call of `displayDialogAsync`.|
-|13000 - 13010|||See [Causes and handling of errors from getAccessTokenAsync](../docs/develop/troubleshoot-sso-in-office-add-ins.md#causes-and-handling-of-errors-from-getaccesstokenasync).|
+|13000 - 13010|||See [Causes and handling of errors from getAccessTokenAsync](https://docs.microsoft.com/en-us/office/dev/add-ins/develop/troubleshoot-sso-in-office-add-ins#causes-and-handling-of-errors-from-getaccesstokenasync).|
 
 ## Binding creation error conditions
 
