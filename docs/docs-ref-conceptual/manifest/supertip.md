@@ -11,11 +11,11 @@ Defines a rich tooltip (both Title and Description). It is used by both [Button]
 
 ### Title
 
-Required. The text for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the [ShortStrings](resources.md#shortstrings) element in the [Resources](resources.md) element.
+Required. The text for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **ShortStrings** element in the [Resources](resources.md) element.
 
 ### Description
 
-Required. The description for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the [LongStrings](resources.md#longstrings) element in the [Resources](resources.md) element.
+Required. The description for the supertip. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the **LongStrings** element in the [Resources](resources.md) element.
 
 ## Example 
 

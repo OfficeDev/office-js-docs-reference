@@ -15,7 +15,8 @@ Supports single sign-on (SSO) in Office Add-ins. This element contains informati
 |  **Resource**  |  Yes   |  Specifies the **Application ID URI** of the add-in as registered in the Azure Active Directory v 2.0 endpoint.|
 |  [Scopes](scopes.md)                |  No  |  Specifies the permissions that the add-in needs to Microsoft Graph.  |
 
-> [!NOTE] Currently, it's necessary that your add-in's Resource matches its Host. Office will not request a Token for an add-in unless it can prove ownership, and today this is done by hosting the add-in under the Resource's fully-qualified domain name.
+> [!NOTE] 
+> Currently, it's necessary that your add-in's Resource matches its Host. Office will not request a Token for an add-in unless it can prove ownership, and today this is done by hosting the add-in under the Resource's fully-qualified domain name.
 
 ## WebApplicationInfo example
 

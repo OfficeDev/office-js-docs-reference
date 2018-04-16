@@ -12,7 +12,7 @@ Specifies the URL of the home page for the dictionary.
 
 ## Contained in
 
-[Dictionary](../../reference/manifest/dictionary.md)
+[Dictionary](dictionary.md)
 
 ## Additional resources
 

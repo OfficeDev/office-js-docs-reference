@@ -12,7 +12,7 @@ Specifies an individual method from the JavaScript API for Office that your Offi
 
 ## Contained in
 
- - [Methods](../../reference/manifest/methods.md)
+ - [Methods](methods.md)
 
 ## Attributes
 
