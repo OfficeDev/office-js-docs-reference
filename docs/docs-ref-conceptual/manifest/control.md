@@ -20,7 +20,7 @@ A button performs a single action when the user selects it. It can either execut
 |  Element |  Required  |  Description  |
 |:-----|:-----|:-----|
 |  **Label**     | Yes |  The text for the button. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the [ShortStrings](resources.md#shortstrings) element in the [Resources](resources.md)  element.        |
-|  **ToolTip**	|No|The tooltip for the button. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child of the **LongStrings** element, which is a child of the [Resources](resource.md) element.|		
+|  **ToolTip**	|No|The tooltip for the button. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child of the **LongStrings** element, which is a child of the [Resources](resources.md) element.|		
 |  [Supertip](supertip.md)  | Yes |  The supertip for the button.    |
 |  [Icon](icon.md)      | Yes |  An image for the button.         |
 |  [Action](action.md)    | Yes |  Specifies the action to perform.  |
@@ -134,7 +134,7 @@ The following example shows how to define a menu item with two submenu items. Th
 |  Element |  Required  |  Description  |
 |:-----|:-----|:-----|
 |  **Label**     | Yes |  The text for the button. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element in the [ShortStrings](resources.md#shortstrings) element in the [Resources](resources.md) element.      |
-|  **ToolTip**	|No|The tooltip for the button. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child of the **LongStrings** element, which is a child of the [Resources](resource.md) element.|		
+|  **ToolTip**	|No|The tooltip for the button. The  **resid** attribute must be set to the value of the **id** attribute of a **String** element. The **String** element is a child of the **LongStrings** element, which is a child of the [Resources](resources.md) element.|		
 |  [Supertip](supertip.md)  | Yes |  The supertip for this button.    |
 |  [Icon](icon.md)      | Yes |  An image for the button.         |
 |  [Items](#items)     | Yes |  A collection of Buttons to display within the menu. Contains the  **Item** elements for each submenu item. Each **Item** element contains the  child elements of the [Button control](#button-control).|
