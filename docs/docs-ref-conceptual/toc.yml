@@ -35,8 +35,8 @@ items:
         href: manifest/form.md
       - name: FormSettings
         href: manifest/formsettings.md
-      - name: HighResolutionUrl
-        href: manifest/highresolutionurl.md
+      - name: HighResolutionIconUrl
+        href: manifest/highresolutioniconurl.md
       - name: Host
         href: manifest/host.md
       - name: Hosts
