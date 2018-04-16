@@ -13,3 +13,123 @@ items:
         href: manifest/appdomain.md
       - name: AppDomains
         href: manifest/appdomains.md
+      - name: CitationText
+        href: manifest/citationtext.md
+      - name: DefaultLocale
+        href: manifest/defaultlocale.md
+      - name: DefaultSettings
+        href: manifest/defaultsettings.md
+      - name: Description
+        href: manifest/description.md
+      - name: DesktopSettings
+        href: manifest/desktopsettings.md
+      - name: Dictionary
+        href: manifest/dictionary.md
+      - name: DictionaryHomePage
+        href: manifest/dictionaryhomepage.md
+      - name: DisableEntityHighlighting
+        href: manifest/disableentityhighlighting.md
+      - name: DisplayName
+        href: manifest/displayname.md
+      - name: Form
+        href: manifest/form.md
+      - name: FormSettings
+        href: manifest/formsettings.md
+      - name: HighResolutionUrl
+        href: manifest/highresolutionurl.md
+      - name: Host
+        href: manifest/host.md
+      - name: Hosts
+        href: manifest/hosts.md
+      - name: IconUrl
+        href: manifest/iconurl.md
+      - name: Id
+        href: manifest/id.md
+      - name: Method
+        href: manifest/method.md
+      - name: Methods
+        href: manifest/methods.md
+      - name: OfficeApp
+        href: manifest/officeapp.md
+      - name: Override
+        href: manifest/override.md
+      - name: Permissions
+        href: manifest/permissions.md
+      - name: PhoneSettings
+        href: manifest/phonesettings.md
+      - name: ProviderName
+        href: manifest/providername.md
+      - name: QueryUri
+        href: manifest/queryuri.md
+      - name: RequestedHeight
+        href: manifest/requestedheight.md
+      - name: RequestedWidth
+        href: manifest/requestedwidth.md
+      - name: Requirements
+        href: manifest/requirements.md
+      - name: Rule
+        href: manifest/rule.md
+      - name: Set
+        href: manifest/set.md
+      - name: Sets
+        href: manifest/sets.md
+      - name: SourceLocation
+        href: manifest/sourcelocation.md
+      - name: SupportUrl
+        href: manifest/supporturl.md
+      - name: TabletSettings
+        href: manifest/tabletsettings.md
+      - name: TargetDialect
+        href: manifest/targetdialect.md
+      - name: TargetDialects
+        href: manifest/targetdialects.md
+      - name: Version
+        href: manifest/version.md
+      - name: VersionOverrides
+        href: manifest/versionoverrides.md
+        items: 
+        - name: Action
+          href: manifest/action.md
+        - name: AllFormFactors
+          href: manifest/allformfactors.md
+        - name: Control
+          href: manifest/control.md
+        - name: CustomTab
+          href: manifest/customtab.md
+        - name: Event
+          href: manifest/event.md
+        - name: ExtensionPoint
+          href: manifest/extensionpoint.md
+        - name: DesktopFormFactor
+          href: manifest/desktopformfactor.md
+        - name: FunctionFile
+          href: manifest/functionfile.md
+        - name: GetStarted
+          href: manifest/getstarted.md
+        - name: Group
+          href: manifest/group.md
+        - name: Hosts
+          href: manifest/hosts.md
+        - name: Icon
+          href: manifest/icon.md
+        - name: MobileFormFactor
+          href: manifest/mobileformfactor.md
+        - name: OfficeMenu
+          href: manifest/officemenu.md
+        - name: OfficeTab
+          href: manifest/officetab.md
+        - name: Page
+          href: manifest/page.md
+        - name: Resources
+          href: manifest/resources.md
+        - name: Scopes
+          href: manifest/scopes.md
+        - name: Script
+          href: manifest/script.md
+        - name: SourceLocation (custom functions)
+          href: manifest/customfunctionssourcelocation.md
+        - name: SuperTip
+          href: manifest/supertip.md
+        - name: WebApplicationInfo
+          href: manifest/webapplicationinfo.md
+        
