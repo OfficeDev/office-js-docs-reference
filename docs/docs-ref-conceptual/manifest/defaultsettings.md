@@ -1,6 +1,6 @@
 # DefaultSettings element
 
-Specifies the default source location and other default settings for your content or task pane add-in .
+Specifies the default source location and other default settings for your content or task pane add-in.
 
 **Add-in type:** Content, Task pane
 

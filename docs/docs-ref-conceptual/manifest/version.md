@@ -7,7 +7,7 @@ Specifies the version of your Office Add-in.
 ## Syntax
 
 ```XML
-<Version>n .n .n .n </Version>
+<Version>n .n .n .n</Version>
 ```
 
 ## Contained in

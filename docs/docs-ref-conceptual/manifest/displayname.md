@@ -7,7 +7,7 @@ Specifies the name for your Office Add-in as a string up to 125 characters long.
 ## Syntax
 
 ```XML
-<DisplayName DefaultValue="string ">
+<DisplayName DefaultValue="string">
 ```
 
 ## Contained in

@@ -12,7 +12,7 @@ Specifies an additional domain that will be used to load pages in the add-in win
 
 ## Contained in
 
-AppDomains
+[AppDomains](appdomains.md)
 
 ## Remarks
 

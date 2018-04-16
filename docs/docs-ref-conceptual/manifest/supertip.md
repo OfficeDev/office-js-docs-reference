@@ -20,8 +20,8 @@ Required. The description for the supertip. The  **resid** attribute must be set
 ## Example 
 
 ```xml
- <Supertip>
+<Supertip>
     <Title resid="funcReadSuperTipTitle" />
     <Description resid="funcReadSuperTipDescription" />
-  </Supertip>
+</Supertip>
 ```

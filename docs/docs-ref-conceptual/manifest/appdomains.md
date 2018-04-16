@@ -15,11 +15,11 @@ Lists any domains in addition to the domain specified in the SourceLocation elem
 
 ## Contained in
 
-OfficeApp
+[OfficeApp](officeapp.md)
 
 ## Can contain
 
-AppDomain
+[AppDomain](appdomain.md)
 
 ## Remarks
 

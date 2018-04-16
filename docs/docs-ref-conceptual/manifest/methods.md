@@ -16,7 +16,7 @@ Specifies the list of JavaScript API for Office methods that your Office Add-in 
 
 [Requirements](requirements.md)
 
-## Can contain:
+## Can contain
 
 [Method](method.md)
 

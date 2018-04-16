@@ -7,7 +7,7 @@ Specifies the initial height (in pixels) of a content add-in or mail add-in.
 ## Syntax
 
 ```XML
-<RequestedHeight>integer </RequestedHeight>
+<RequestedHeight>integer</RequestedHeight>
 ```
 
 ## Contained in

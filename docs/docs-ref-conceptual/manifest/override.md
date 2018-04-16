@@ -7,12 +7,12 @@ Provides a way to specify the value of a setting for an additional locale.
 ## Syntax
 
 ```XML
-<Override Locale="string " Value="string " />
+<Override Locale="string" Value="string" />
 ```
 
 ## Contained in
 
-||
+|**Element**|
 |:-----|
 |[CitationText](citationtext.md)|
 |[Description](description.md)|

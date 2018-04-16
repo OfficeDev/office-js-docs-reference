@@ -12,7 +12,7 @@ Specifies the alternate ID for your Office Add-in as issued by the Office Store.
 
 ## Contained in
 
-OfficeApp
+[OfficeApp](officeapp.md)
 
 ## Remarks
 

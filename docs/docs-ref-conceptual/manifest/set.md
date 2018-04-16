@@ -7,7 +7,7 @@ Specifies a requirement set from the JavaScript API for Office that your Office 
 ## Syntax
 
 ```XML
-<Set Name="string " MinVersion="n .n ">
+<Set Name="string" MinVersion="n .n">
 ```
 
 ## Contained in

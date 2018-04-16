@@ -7,7 +7,7 @@ Specifies the unique ID of your Office Add-in as a GUID.
 ## Syntax
 
 ```XML
-<Id>string </Id>
+<Id>string</Id>
 ```
 
 ## Contained in

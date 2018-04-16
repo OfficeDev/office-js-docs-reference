@@ -7,7 +7,7 @@ Specifies the description of your Office Add-in as a string no longer than 250 c
 ## Syntax
 
 ```XML
-<Description DefaultValue="string ">
+<Description DefaultValue="string">
 ```
 
 ## Contained in

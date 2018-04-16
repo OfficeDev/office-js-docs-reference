@@ -7,7 +7,7 @@ Specifies the source file location(s) for your Office Add-in as a URL between 1 
 ## Syntax
 
 ```XML
-<SourceLocation DefaultValue="string " />
+<SourceLocation DefaultValue="string" />
 ```
 
 ## Contained in
@@ -18,7 +18,7 @@ Specifies the source file location(s) for your Office Add-in as a URL between 1 
 
 ## Can contain
 
-- [Override](override.md)
+[Override](override.md)
 
 ## Attributes
 

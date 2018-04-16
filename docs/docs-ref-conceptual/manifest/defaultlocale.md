@@ -10,7 +10,7 @@ Specifies the default culture name of the locale used by strings in your add-in.
 <DefaultLocale>string </DefaultLocale>
 ```
 
-## Contained in:
+## Contained in
 
 [OfficeApp](officeapp.md)
 

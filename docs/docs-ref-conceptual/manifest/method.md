@@ -7,12 +7,12 @@ Specifies an individual method from the JavaScript API for Office that your Offi
 ## Syntax
 
 ```XML
-<Method Name="string "/>
+<Method Name="string"/>
 ```
 
 ## Contained in
 
- - [Methods](methods.md)
+[Methods](methods.md)
 
 ## Attributes
 

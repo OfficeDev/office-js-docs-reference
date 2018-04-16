@@ -7,6 +7,6 @@ Specifies the initial width of a content add-in in pixels, which can be between 
 ## Syntax
 
 ```XML
-<RequestedWidth>integer </RequestedWidth>
+<RequestedWidth>integer</RequestedWidth>
 ```
 

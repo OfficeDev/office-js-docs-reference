@@ -19,7 +19,7 @@ UX settings for the forms that your mail add-in will use when running on a parti
 
 ## Can contain
 
-||
+|**Element**|
 |:-----|
 |[DesktopSettings](desktopsettings.md)|
 |[TabletSettings](tabletsettings.md)|

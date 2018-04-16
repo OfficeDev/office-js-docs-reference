@@ -7,7 +7,7 @@ Specifies the URL of the image that is used to represent your Office Add-in in t
 ## Syntax
 
 ```XML
-<HighResolutionIconUrl DefaultValue="string " />
+<HighResolutionIconUrl DefaultValue="string" />
 ```
 
 ## Can contain

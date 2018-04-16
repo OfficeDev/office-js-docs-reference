@@ -7,7 +7,7 @@ Specifies the name of this dictionary.
 ## Syntax
 
 ```XML
-<DictionaryName DefaultValue="string " />
+<DictionaryName DefaultValue="string" />
 ```
 
 ## Contained in

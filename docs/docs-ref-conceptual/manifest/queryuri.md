@@ -7,7 +7,7 @@ Specifies the URL of the endpoint for the dictionary query service.
 ## Syntax
 
 ```XML
-<QueryUri DefaultValue="string " />
+<QueryUri DefaultValue="string" />
 ```
 
 ## Contained in

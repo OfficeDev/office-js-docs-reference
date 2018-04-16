@@ -7,7 +7,7 @@ Specifies the name of the individual or company that developed this Office Add-i
 ## Syntax
 
 ```XML
-<ProviderName>string </ProviderName>
+<ProviderName>string</ProviderName>
 ```
 
 ## Contained in
