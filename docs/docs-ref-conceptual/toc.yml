@@ -3,6 +3,8 @@ items:
     href: javascript-api-for-office.md
   - name: API open specifications
     href: openspec.md
+  - name: JavaScript API for Office error codes
+    href: javascript-api-for-office-error-codes.md
   - name: Manifest
     items:
       - name: AllowSnapshot
