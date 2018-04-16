@@ -1,22 +1,18 @@
-
 # AppDomain element
+
 Specifies an additional domain that will be used to load pages in the add-in window.
 
- **Add-in type:** Content, Task pane, Mail
+**Add-in type:** Content, Task pane, Mail
 
-
-## Syntax:
-
+## Syntax
 
 ```XML
 <AppDomain>string </AppDomain>
 ```
 
-
-## Contained in:
+## Contained in
 
 AppDomains
-
 
 ## Remarks
 
