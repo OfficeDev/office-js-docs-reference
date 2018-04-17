@@ -1,6 +1,6 @@
 # Requirements element
 
-Specifies the minimum set of JavaScript API for Office requirements ([requirement sets](https://docs.microsoft.com/en-us/office/dev/add-ins/develop/office-versions-and-requirement-sets#specify-office-hosts-and-requirement-sets) and/or methods) that your Office Add-in needs to activate.
+Specifies the minimum set of JavaScript API for Office requirements ([requirement sets](https://docs.microsoft.com/office/dev/add-ins/develop/office-versions-and-requirement-sets#specify-office-hosts-and-requirement-sets) and/or methods) that your Office Add-in needs to activate.
 
 **Add-in type:** Content, Task pane, Mail
 
@@ -25,5 +25,5 @@ Specifies the minimum set of JavaScript API for Office requirements ([requiremen
 
 ## Remarks
 
-For more information about requirement sets, see [Office versions and requirement sets](https://docs.microsoft.com/en-us/office/dev/add-ins/develop/office-versions-and-requirement-sets).
+For more information about requirement sets, see [Office versions and requirement sets](https://docs.microsoft.com/office/dev/add-ins/develop/office-versions-and-requirement-sets).
 

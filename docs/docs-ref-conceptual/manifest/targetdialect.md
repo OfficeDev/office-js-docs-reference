@@ -22,5 +22,5 @@ Specify the value in the BCP 47 language tag format, such as  `en-US`.
 
 ## Additional resources
 
-- [Create a dictionary task pane add-in](https://docs.microsoft.com/en-us/office/dev/add-ins/word/dictionary-task-pane-add-ins)
+- [Create a dictionary task pane add-in](https://docs.microsoft.com/office/dev/add-ins/word/dictionary-task-pane-add-ins)
     

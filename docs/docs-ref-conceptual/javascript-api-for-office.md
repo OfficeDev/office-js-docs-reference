@@ -16,7 +16,7 @@ Select the Office client from the drop-down above the TOC to filter the content 
 * Project
 * Word
 
-Learn more about [supported hosts and other requirements](https://docs.microsoft.com/en-us/office/dev/add-ins/concepts/requirements-for-running-office-add-ins).
+Learn more about [supported hosts and other requirements](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins).
 
 ## Open API specifications
 

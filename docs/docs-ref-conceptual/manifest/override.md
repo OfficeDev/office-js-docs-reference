@@ -34,5 +34,5 @@ Provides a way to specify the value of a setting for an additional locale.
 
 ## Additional resources
 
-- [Localization for Office Add-ins](https://docs.microsoft.com/en-us/office/dev/add-ins/develop/localization)
+- [Localization for Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/develop/localization)
     

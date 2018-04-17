@@ -16,4 +16,4 @@ Specifies the citation boilerplate text for this dictionary.
 
 ## Additional resources
 
-- [Create a dictionary task pane add-in](https://docs.microsoft.com/en-us/office/dev/add-ins/word/dictionary-task-pane-add-ins)
+- [Create a dictionary task pane add-in](https://docs.microsoft.com/office/dev/add-ins/word/dictionary-task-pane-add-ins)

@@ -1,6 +1,24 @@
 items:
   - name: JavaScript API for Office
     href: javascript-api-for-office.md
+  - name: API requirement sets
+    items:
+      - name: Office common API requirement sets
+        href: requirement-sets/office-add-in-requirement-sets.md
+      - name: Add-in commands requirement sets
+        href: requirement-sets/add-in-commands-requirement-sets.md
+      - name: Dialog API requirement sets
+        href: requirement-sets/dialog-api-requirement-sets.md
+      - name: Identity API requirement sets
+        href: requirement-sets/identity-api-requirement-sets.md
+      - name: Excel JavaScript API requirement sets
+        href: requirement-sets/excel-api-requirement-sets.md
+      - name: OneNote JavaScript API requirement sets
+        href: requirement-sets/onenote-api-requirement-sets.md
+      - name: Outlook JavaScript API requirement sets
+        href: requirement-sets/outlook-api-requirement-sets.md
+      - name: Word JavaScript API requirement sets
+        href: requirement-sets/word-api-requirement-sets.md
   - name: API open specifications
     href: openspec.md
   - name: JavaScript API for Office error codes
