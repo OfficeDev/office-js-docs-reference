@@ -4,9 +4,11 @@ You can use the Excel JavaScript API to build add-ins for Excel 2016. The follow
 
 Note that the relationships section within the document lists the properties that are used to navigate from the main object to another related object. These are non-scalar objects that themselves may contain other properties, methods and relationships.
 
-[Workbook](../../api/excel/excel.workbook)
+- [Workbook](../../api/excel/excel.workbook)
+- [WorksheetCollection](../../api/excel/excel.worksheetcollection)
+    - [Workbook](../../api/excel/excel.workbook)
+    - [WorksheetCollection](../../api/excel/excel.worksheetcollection)
 
-[WorksheetCollection](../../api/excel/excel.worksheetcollection)
 
 Some of the core Excel objects are listed below for convenience: 
 
