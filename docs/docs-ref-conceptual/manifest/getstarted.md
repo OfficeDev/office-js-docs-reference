@@ -12,15 +12,15 @@ Provides information used by the callout that appears when the add-in is install
 
 ### Title 
 
-Required. The title used for the top of the callout. The **resid** attribute references a valid ID in the [ShortStrings](resources.md#shortstrings) element in the [Resources](resources.md) section.
+Required. The title used for the top of the callout. The **resid** attribute references a valid ID in the **ShortStrings** element in the [Resources](resources.md) section.
 
 ### Description
 
-Required. The description / body content for the callout. The **resid** attribute references a valid ID in the [LongStrings](resources.md#longstrings) element in the [Resources](resources.md) section.
+Required. The description / body content for the callout. The **resid** attribute references a valid ID in the **LongStrings** element in the [Resources](resources.md) section.
 
 ### LearnMoreUrl
 
-Required. The URL to a page where the user can learn more about your add-in. The **resid** attribute references a valid ID in the [Urls](resources.md#urls) element in the [Resources](resources.md) section.
+Required. The URL to a page where the user can learn more about your add-in. The **resid** attribute references a valid ID in the **Urls** element in the [Resources](resources.md) section.
 
 > [!NOTE]
 > **LearnMoreUrl** does not currently render in Word, Excel, or PowerPoint clients. We recommend that you add this URL for all clients so that the URL will render when it becomes available. 
