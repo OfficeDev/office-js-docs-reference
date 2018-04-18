@@ -206,7 +206,7 @@ In addition:
 |[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > deleteAll()|Deletes all custom properties in this collection.|1.7|
 |[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > getCount()|Gets the count of custom properties.|1.7|
 |[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > getItem(key: string)|Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.|1.7|
-|[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > [getItemOrNullObject(key: string)](../../api/excel/excel.custompropertycollection.md#getitemornullobjectkey-string)|Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property does not exist.|1.7|
+|[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > getItemOrNullObject(key: string)|Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property does not exist.|1.7|
 |[dataConnectionCollection](../../api/excel/excel.dataconnectioncollection)|_Property_ > items|A collection of dataConnection objects. Read-only.|1.7|
 |[dataConnectionCollection](../../api/excel/excel.dataconnectioncollection)|_Method_ > refreshAll()|Refreshes all the Data Connections in the collection.|1.7|
 |[documentProperties](../../api/excel/excel.documentproperties)|_Property_ > author|Gets or sets the author of the workbook.|1.7|
@@ -430,8 +430,8 @@ For API details, please refer to the [Excel JavaScript API open specification](h
 |[conditionalRangeBorderCollection](../../api/excel/excel.conditionalrangebordercollection)|_Relationship_ > left|Gets the top border Read-only.|1.6|
 |[conditionalRangeBorderCollection](../../api/excel/excel.conditionalrangebordercollection)|_Relationship_ > right|Gets the top border Read-only.|1.6|
 |[conditionalRangeBorderCollection](../../api/excel/excel.conditionalrangebordercollection)|_Relationship_ > top|Gets the top border Read-only.|1.6|
-|[conditionalRangeBorderCollection](../../api/excel/excel.conditionalrangebordercollection)|_Method_ > [getItem(index: string)](../../api/excel/excel.conditionalrangebordercollection.md#getitemindex-string)|Gets a border object using its name|1.6|
-|[conditionalRangeBorderCollection](../../api/excel/excel.conditionalrangebordercollection)|_Method_ > [getItemAt(index: number)](../../api/excel/excel.conditionalrangebordercollection.md#getitematindex-number)|Gets a border object using its index|1.6|
+|[conditionalRangeBorderCollection](../../api/excel/excel.conditionalrangebordercollection)|_Method_ > getItem(index: string)|Gets a border object using its name|1.6|
+|[conditionalRangeBorderCollection](../../api/excel/excel.conditionalrangebordercollection)|_Method_ > getItemAt(index: number)|Gets a border object using its index|1.6|
 |[conditionalRangeFill](../../api/excel/excel.conditionalrangefill)|_Property_ > color|HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").|1.6|
 |[conditionalRangeFill](../../api/excel/excel.conditionalrangefill)|_Method_ > clear()|Resets the fill.|1.6|
 |[conditionalRangeFont](../../api/excel/excel.conditionalrangefont)|_Property_ > bold|Represents the bold status of font.|1.6|
@@ -520,9 +520,9 @@ For API details, please refer to the [Excel JavaScript API open specification](h
 |[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Property_ > items|A collection of customXmlPartScoped objects. Read-only.|1.5|
 |[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > getCount()|Gets the number of CustomXML parts in this collection.|1.5|
 |[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > getItem(id: string)|Gets a custom XML part based on its ID.|1.5|
-|[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > [getItemOrNullObject(id: string)](../../api/excel/excel.customxmlpartscopedcollection.md#getitemornullobjectid-string)|Gets a custom XML part based on its ID.|1.5|
+|[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > getItemOrNullObject(id: string)|Gets a custom XML part based on its ID.|1.5|
 |[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > [getOnlyItem()](../../api/excel/excel.customxmlpartscopedcollection.md#getonlyitem)|If the collection contains exactly one item, this method returns it.|1.5|
-|[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > [getOnlyItemOrNullObject()](../../api/excel/excel.customxmlpartscopedcollection.md#getonlyitemornullobject)|If the collection contains exactly one item, this method returns it.|1.5|
+|[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > getOnlyItemOrNullObject()|If the collection contains exactly one item, this method returns it.|1.5|
 |[workbook](../../api/excel/excel.workbook)|_Relationship_ > customXmlParts|Represents the collection of custom XML parts contained by this workbook. Read-only.|1.5|
 |[worksheet](../../api/excel/excel.worksheet)|_Method_ > getNext(visibleOnly: bool)|Gets the worksheet that follows this one. If there are no worksheets following this one, this method will throw an error.|1.5|
 |[worksheet](../../api/excel/excel.worksheet)|_Method_ > getNextOrNullObject(visibleOnly: bool)|Gets the worksheet that follows this one. If there are no worksheets following this one, this method will return a null object.|1.5|
