@@ -200,7 +200,7 @@ In addition:
 |[customProperty](../../api/excel/excel.customproperty)|_Property_ > key|Gets the key of the custom property. Read only. Read-only.|1.7|
 |[customProperty](../../api/excel/excel.customproperty)|_Property_ > type|Gets the value type of the custom property. Read only. Read-only. Possible values are: Number, Boolean, Date, String, Float.|1.7|
 |[customProperty](../../api/excel/excel.customproperty)|_Property_ > value|Gets or sets the value of the custom property.|1.7|
-|[customProperty](../../api/excel/excel.customproperty)|_Method_ > [delete()](../../api/excel/excel.customproperty.md#delete)|Deletes the custom property.|1.7|
+|[customProperty](../../api/excel/excel.customproperty)|_Method_ > delete()|Deletes the custom property.|1.7|
 |[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Property_ > items|A collection of customProperty objects. Read-only.|1.7|
 |[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > add(key: string, value: object)|Creates a new or sets an existing custom property.|1.7|
 |[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > deleteAll()|Deletes all custom properties in this collection.|1.7|
@@ -521,7 +521,7 @@ For API details, please refer to the [Excel JavaScript API open specification](h
 |[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > getCount()|Gets the number of CustomXML parts in this collection.|1.5|
 |[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > getItem(id: string)|Gets a custom XML part based on its ID.|1.5|
 |[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > getItemOrNullObject(id: string)|Gets a custom XML part based on its ID.|1.5|
-|[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > [getOnlyItem()](../../api/excel/excel.customxmlpartscopedcollection.md#getonlyitem)|If the collection contains exactly one item, this method returns it.|1.5|
+|[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > getOnlyItem()|If the collection contains exactly one item, this method returns it.|1.5|
 |[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > getOnlyItemOrNullObject()|If the collection contains exactly one item, this method returns it.|1.5|
 |[workbook](../../api/excel/excel.workbook)|_Relationship_ > customXmlParts|Represents the collection of custom XML parts contained by this workbook. Read-only.|1.5|
 |[worksheet](../../api/excel/excel.worksheet)|_Method_ > getNext(visibleOnly: bool)|Gets the worksheet that follows this one. If there are no worksheets following this one, this method will throw an error.|1.5|
