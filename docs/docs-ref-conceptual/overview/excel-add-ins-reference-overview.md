@@ -4,11 +4,6 @@ You can use the Excel JavaScript API to build add-ins for Excel 2016. The follow
 
 Note that the relationships section within the document lists the properties that are used to navigate from the main object to another related object. These are non-scalar objects that themselves may contain other properties, methods and relationships.
 
-- [Workbook](../../api/excel/excel.workbook): The top-level object that contains related workbook objects such as worksheets, tables, ranges, etc. It also can be used to list related references.
-
-- [Worksheet](../../api/excel/excel.worksheet): Represents a worksheet in a workbook. 
-    - [WorksheetCollection](../../api/excel/excel.worksheetcollection): A collection of the **Worksheet** objects in a workbook.
-
 Some of the core Excel objects are listed below for convenience: 
 
 - [Workbook](../../api/excel/excel.workbook): The top-level object that contains related workbook objects such as worksheets, tables, ranges, etc. It also can be used to list related references.
