@@ -33,10 +33,10 @@ items:
           href: requirement-sets/dialog-api-requirement-sets.md
         - name: Identity API requirement sets
           href: requirement-sets/identity-api-requirement-sets.md
+        - name: JavaScript API for Office error codes
+          href: javascript-api-for-office-error-codes.md
   - name: API open specifications
     href: openspec.md
-  - name: JavaScript API for Office error codes
-    href: javascript-api-for-office-error-codes.md
   - name: Manifest
     items:
       - name: AllowSnapshot

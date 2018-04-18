@@ -4,36 +4,38 @@ You can use the Excel JavaScript API to build add-ins for Excel 2016. The follow
 
 Note that the relationships section within the document lists the properties that are used to navigate from the main object to another related object. These are non-scalar objects that themselves may contain other properties, methods and relationships.
 
+[Workbook](../../api/excel/excel.workbook)
+
 Some of the core Excel objects are listed below for convenience: 
 
-* [Workbook](../../api/excel/excel.workbook): The top-level object that contains related workbook objects such as worksheets, tables, ranges, etc. It also can be used to list related references.
+- [Workbook](../../api/excel/excel.workbook): The top-level object that contains related workbook objects such as worksheets, tables, ranges, etc. It also can be used to list related references.
 
-* [Worksheet](../../api/excel/excel.worksheet.yml): Represents a worksheet in a workbook. 
-  * [WorksheetCollection](../../api/excel/excel.worksheetcollection.yml): A collection of the **Worksheet** objects in a workbook.
+* [Worksheet](../../api/excel/excel.worksheet): Represents a worksheet in a workbook. 
+  * [WorksheetCollection](../../api/excel/excel.worksheetcollection): A collection of the **Worksheet** objects in a workbook.
 
-* [Range](../../api/excel/excel.range.yml): Represents a cell, a row, a column, or a selection of cells containing one or more contiguous blocks of cells.
+* [Range](../../api/excel/excel.range): Represents a cell, a row, a column, or a selection of cells containing one or more contiguous blocks of cells.
 
-* [Table](../../api/excel/excel.table.yml): Represents a collection of organized cells designed to make management of the data easy.
-  * [TableCollection](../../api/excel/excel.tablecollection.yml): A collection of tables in a workbook or worksheet.
-  * [TableColumnCollection](../../api/excel/excel.tablecolumncollection.yml): A collection of all the columns in a table.
-  * [TableRowCollection](../../api/excel/excel.tablerowcollection.yml): A collection of all the rows in a table.
+* [Table](../../api/excel/excel.table): Represents a collection of organized cells designed to make management of the data easy.
+  * [TableCollection](../../api/excel/excel.tablecollection): A collection of tables in a workbook or worksheet.
+  * [TableColumnCollection](../../api/excel/excel.tablecolumncollection): A collection of all the columns in a table.
+  * [TableRowCollection](../../api/excel/excel.tablerowcollection): A collection of all the rows in a table.
 
-* [Chart](../../api/excel/excel.chart.yml): Represents a chart object in a worksheet, which is a visual representation of underlying data.
-  * [ChartCollection](../../api/excel/excel.chartcollection.yml): A collection of charts in a worksheet.
+* [Chart](../../api/excel/excel.chart): Represents a chart object in a worksheet, which is a visual representation of underlying data.
+  * [ChartCollection](../../api/excel/excel.chartcollection): A collection of charts in a worksheet.
 
-* [TableSort](../../api/excel/excel.tablesort.yml): Represents an object that manages sorting operations on **Table** objects.
+* [TableSort](../../api/excel/excel.tablesort): Represents an object that manages sorting operations on **Table** objects.
 
-* [RangeSort](../../api/excel/excel.rangesort.yml): Represents a object that manages sorting operations on **Range** objects.
+* [RangeSort](../../api/excel/excel.rangesort): Represents a object that manages sorting operations on **Range** objects.
 
-* [Filter](../../api/excel/excel.filter.yml): Represents an object that manages the filtering of a table's column.
+* [Filter](../../api/excel/excel.filter): Represents an object that manages the filtering of a table's column.
 
-* [WorksheetProtection](../../api/excel/excel.worksheetprotection.yml): Represents the protection of a **Worksheet** object.
+* [WorksheetProtection](../../api/excel/excel.worksheetprotection): Represents the protection of a **Worksheet** object.
 
-* [NamedItem](../../api/excel/excel.nameditem.yml): Represents a defined name for a range of cells or a value. 
-  * [NamedItemCollection](../../api/excel/excel.nameditemcollection.yml): A collection of the **NamedItem** objects in a workbook.
+* [NamedItem](../../api/excel/excel.nameditem): Represents a defined name for a range of cells or a value. 
+  * [NamedItemCollection](../../api/excel/excel.nameditemcollection): A collection of the **NamedItem** objects in a workbook.
 
-* [Binding](../../api/excel/excel.binding.yml): An abstract class that represents a binding to a section of the workbook.
-  * [BindingCollection](../../api/excel/excel.bindingcollection.yml): A collection of the **Binding** objects in a workbook.
+* [Binding](../../api/excel/excel.binding): An abstract class that represents a binding to a section of the workbook.
+  * [BindingCollection](../../api/excel/excel.bindingcollection): A collection of the **Binding** objects in a workbook.
 
 ## Excel JavaScript API open specifications
 
