@@ -6,8 +6,6 @@ The JavaScript API for Office enables you to create web applications that intera
 
 1. Host-specific - APIs that were introduced with **Office 2016**. This object model provides host-specific strongly-typed objects that correspond to familiar objects that you see when you use Office clients, and represents the future of Office JavaScript APIs. The host-specific APIs currently include the Word JavaScript API and the Excel JavaScript API.
 
-Select the Office client from the drop-down above the TOC to filter the content based on your target host application.
-
 ## Supported host applications
 * Access
 * Excel
@@ -16,7 +14,7 @@ Select the Office client from the drop-down above the TOC to filter the content 
 * Project
 * Word
 
-Learn more about supported hosts and other requirements.
+Learn more about [supported hosts and other requirements](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins).
 
 ## Open API specifications
 

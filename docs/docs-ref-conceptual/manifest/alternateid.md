@@ -1,22 +1,18 @@
-
 # AlternateId element
+
 Specifies the alternate ID for your Office Add-in as issued by the Office Store.
 
- **Add-in type:** Content, Task pane, Mail
+**Add-in type:** Content, Task pane, Mail
 
-
-## Syntax:
-
+## Syntax
 
 ```XML
 <AlternateId>string </AlternateId>
 ```
 
+## Contained in
 
-## Contained in:
-
-OfficeApp
-
+[OfficeApp](officeapp.md)
 
 ## Remarks
 
