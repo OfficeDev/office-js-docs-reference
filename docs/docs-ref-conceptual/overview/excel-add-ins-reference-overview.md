@@ -39,6 +39,10 @@ Some of the core Excel objects are listed below for convenience:
 
 As we design and develop new APIs for Excel add-ins, we'll make them available for your feedback on our [Open API specifications](../openspec.md) page. Find out what new features are in the pipeline for the Excel JavaScript APIs, and provide your input on our design specifications.
 
+## Excel JavaScript API reference
+
+For detailed information about Excel JavaScript API, see the [Excel JavaScript API reference documentation](../../api/excel).
+
 ## Additional resources
 
 - [Excel add-ins overview](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-overview)

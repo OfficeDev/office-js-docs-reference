@@ -114,6 +114,10 @@ Word.run(function (context) {
 
 As we design and develop new APIs for Word add-ins, we'll make them available for your feedback on our [Open API specifications](../openspec.md) page. Find out what new features are in the pipeline for the Word JavaScript APIs, and provide your input on our design specifications.
 
+## Word JavaScript API reference
+
+For detailed information about the Word JavaScript API, see the [Word JavaScript API reference documentation](../../api/word).
+
 ## Additional resources
 
 * [Word add-ins overview](https://docs.microsoft.com/office/dev/add-ins/word/word-add-ins-programming-overview)

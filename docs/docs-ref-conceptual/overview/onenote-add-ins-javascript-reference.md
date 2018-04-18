@@ -37,7 +37,11 @@ The following links show the high level OneNote objects available in the API. Ea
  
 - [TableCell](../../api/onenote/onenote.tablecell): A container for Paragraph objects.
     - [TableCellCollection](../../api/onenote/onenote.tablecellcollection): A collection of TableCell objects in a TableRow.
-		
+
+## OneNote JavaScript API reference
+
+For detailed information about OneNote JavaScript API, see the [OneNote JavaScript API reference documentation](../../api/onenote).
+
 ## Additional resources
 
 - [OneNote JavaScript API programming overview](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-programming-overview)

@@ -178,3 +178,7 @@ If you are using Visio Online in Edit mode, open the Embed dialog by clicking on
 ## Open API specifications
 
 As we design and develop new APIs, we'll make them available for your feedback on our [Open API specifications](../openspec.md) page. Find out what new features are in the pipeline, and provide your input on our design specifications. 
+
+## Visio JavaScript API reference
+
+For detailed information about Visio JavaScript API, see the [Visio JavaScript API reference documentation](../../api/visio).
