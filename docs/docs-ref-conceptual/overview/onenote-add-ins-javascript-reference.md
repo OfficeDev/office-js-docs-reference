@@ -40,7 +40,7 @@ The following links show the high level OneNote objects available in the API. Ea
 		
 ## Additional resources
 
-- [OneNote JavaScript API programming overview](https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-programming-overview)
-- [Build your first OneNote add-in](https://docs.microsoft.com/en-us/office/dev/add-ins/onenote/onenote-add-ins-getting-started)
+- [OneNote JavaScript API programming overview](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-programming-overview)
+- [Build your first OneNote add-in](https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-getting-started)
 - [Rubric Grader sample](https://github.com/OfficeDev/OneNote-Add-in-Rubric-Grader)
-- [Office Add-ins platform overview](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)
+- [Office Add-ins platform overview](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)

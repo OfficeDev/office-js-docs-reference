@@ -10,7 +10,7 @@ The initial release of add-in commands doesn't have a corresponding requirement 
 |:-----|-----|:-----|:-----|:-----|:-----|
 | Add-in commands (initial release, no requirement set) | Not applicable | Version 1603 (Build 6769.0000) or later | N/A | 15.33 or later| January 2016 | |
 
-The add-in commands 1.1 requirement set introduces the ability to [autoopen a task pane with documents](https://docs.microsoft.com/en-us/office/dev/add-ins/design/automatically-open-a-task-pane-with-a-document). 
+The add-in commands 1.1 requirement set introduces the ability to [autoopen a task pane with documents](https://docs.microsoft.com/office/dev/add-ins/design/automatically-open-a-task-pane-with-a-document). 
 
 The following table lists the add-in commands 1.1 requirement set, the Office host applications that support that requirement set, and the build or version numbers for the Office application. 
 
