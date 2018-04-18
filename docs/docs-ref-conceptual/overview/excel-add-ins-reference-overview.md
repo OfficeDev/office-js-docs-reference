@@ -1,4 +1,4 @@
-# Excel JavaScript API reference
+# Excel JavaScript API overview
 
 You can use the Excel JavaScript API to build add-ins for Excel 2016. The following list shows the high-level Excel objects that are available in the API. Each object page link contains a description of the properties, relationships, and methods that are available on the object. Explore the links from the menu to learn more.
 
@@ -6,7 +6,7 @@ Note that the relationships section within the document lists the properties tha
 
 Some of the core Excel objects are listed below for convenience: 
 
-* [Workbook](../../api/excel/excel.workbook.yml): The top-level object that contains related workbook objects such as worksheets, tables, ranges, etc. It also can be used to list related references.
+* [Workbook](../../api/excel/excel.workbook): The top-level object that contains related workbook objects such as worksheets, tables, ranges, etc. It also can be used to list related references.
 
 * [Worksheet](../../api/excel/excel.worksheet.yml): Represents a worksheet in a workbook. 
   * [WorksheetCollection](../../api/excel/excel.worksheetcollection.yml): A collection of the **Worksheet** objects in a workbook.

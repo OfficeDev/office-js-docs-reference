@@ -1,4 +1,4 @@
-# OneNote add-ins JavaScript API reference
+# OneNote JavaScript API overview
 
 Applies to: OneNote Online
 
