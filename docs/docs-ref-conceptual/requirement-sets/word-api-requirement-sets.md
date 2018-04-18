@@ -268,23 +268,23 @@ The following are the new additions to the Word JavaScript APIs in requirement s
 
 |Object| What's new| Description|Requirement set|
 |:-----|-----|:----|:----|
-|[contentControl](../word/contentcontrol.md)|_Method_ > insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: InsertLocation)|Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.|1.2|
-|[inlinePicture](../word/inlinepicture.md)|_Relationship_ > paragraph|Gets the parent paragraph that contains the inline image. Read-only.|1.2|
-|[inlinePicture](../word/inlinepicture.md)|_Method_ > delete()|Deletes the inline picture from the document.|1.2|
-|[inlinePicture](../word/inlinepicture.md)|_Method_ > insertBreak(breakType: BreakType, insertLocation: InsertLocation)|Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.|1.2|
-|[inlinePicture](../word/inlinepicture.md)|_Method_ > insertFileFromBase64(base64File: string, insertLocation: InsertLocation)|Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.|1.2|
-|[inlinePicture](../word/inlinepicture.md)|_Method_ > insertHtml(html: string, insertLocation: InsertLocation)|Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.|1.2|
-|[inlinePicture](../word/inlinepicture.md)|_Method_ > insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: InsertLocation|Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before' or 'After'.|1.2|
-|[inlinePicture](../word/inlinepicture.md)|_Method_ > insertOoxml(ooxml: string, insertLocation: InsertLocation)|Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'.|1.2|
-|[inlinePicture](../word/inlinepicture.md)|_Method_ > insertParagraph(paragraphText: string, insertLocation: InsertLocation)|Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.|1.2|
-|[inlinePicture](../word/inlinepicture.md)|_Method_ > insertText(text: string, insertLocation: InsertLocation)|Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.|1.2|
-|[inlinePicture](../word/inlinepicture.md)|_Method_ > select(selectionMode: SelectionMode)|Selects the inline picture. This causes Word to scroll to the selection.|1.2|
-|[range](../word/range.md)|_Relationship_ > inlinePictures|Gets the collection of inline picture objects in the range. Read-only.|1.2|
-|[range](../word/range.md)|_Method_ > insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: InsertLocation)|Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or 'After'.|1.2|
+|[contentControl](../../api/word/word.contentcontrol)|_Method_ > insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: InsertLocation)|Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start' or 'End'.|1.2|
+|[inlinePicture](../../api/word/word.inlinepicture)|_Relationship_ > paragraph|Gets the parent paragraph that contains the inline image. Read-only.|1.2|
+|[inlinePicture](../../api/word/word.inlinepicture)|_Method_ > delete()|Deletes the inline picture from the document.|1.2|
+|[inlinePicture](../../api/word/word.inlinepicture)|_Method_ > insertBreak(breakType: BreakType, insertLocation: InsertLocation)|Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.|1.2|
+|[inlinePicture](../../api/word/word.inlinepicture)|_Method_ > insertFileFromBase64(base64File: string, insertLocation: InsertLocation)|Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.|1.2|
+|[inlinePicture](../../api/word/word.inlinepicture)|_Method_ > insertHtml(html: string, insertLocation: InsertLocation)|Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.|1.2|
+|[inlinePicture](../../api/word/word.inlinepicture)|_Method_ > insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: InsertLocation|Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before' or 'After'.|1.2|
+|[inlinePicture](../../api/word/word.inlinepicture)|_Method_ > insertOoxml(ooxml: string, insertLocation: InsertLocation)|Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'.|1.2|
+|[inlinePicture](../../api/word/word.inlinepicture)|_Method_ > insertParagraph(paragraphText: string, insertLocation: InsertLocation)|Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.|1.2|
+|[inlinePicture](../../api/word/word.inlinepicture)|_Method_ > insertText(text: string, insertLocation: InsertLocation)|Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.|1.2|
+|[inlinePicture](../../api/word/word.inlinepicture)|_Method_ > select(selectionMode: SelectionMode)|Selects the inline picture. This causes Word to scroll to the selection.|1.2|
+|[range](../../api/word/word.range)|_Relationship_ > inlinePictures|Gets the collection of inline picture objects in the range. Read-only.|1.2|
+|[range](../../api/word/word.range)|_Method_ > insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: InsertLocation)|Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or 'After'.|1.2|
 
 ## Word JavaScript API 1.1
 
-Word JavaScript API 1.1 is the first version of the API. For details about the API,  see the [Word JavaScript API](../word/word-add-ins-reference-overview.md) reference topics. 
+Word JavaScript API 1.1 is the first version of the API. For details about the API,  see the [Word JavaScript API](../overview/word-add-ins-reference-overview.md) reference topics. 
 
 ## Additional resources
 
