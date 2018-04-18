@@ -6,9 +6,11 @@ Note that the relationships section within the document lists the properties tha
 
 [Workbook](../../api/excel/excel.workbook)
 
+[WorksheetCollection](../../api/excel/excel.worksheetcollection)
+
 Some of the core Excel objects are listed below for convenience: 
 
-- [Workbook](../../api/excel/excel.workbook): The top-level object that contains related workbook objects such as worksheets, tables, ranges, etc. It also can be used to list related references.
+* [Workbook](../../api/excel/excel.workbook): The top-level object that contains related workbook objects such as worksheets, tables, ranges, etc. It also can be used to list related references.
 
 * [Worksheet](../../api/excel/excel.worksheet): Represents a worksheet in a workbook. 
   * [WorksheetCollection](../../api/excel/excel.worksheetcollection): A collection of the **Worksheet** objects in a workbook.
