@@ -92,7 +92,7 @@ In addition:
 |[chart](../../api/excel/excel.chart)|_Property_ > id|The unique id of chart. Read-only.|1.7|
 |[chart](../../api/excel/excel.chart)|_Property_ > showAllFieldButtons|Represents whether to display all field buttons on a PivotChart.|1.7|
 |[chartAreaFormat](../../api/excel/excel.chartareaformat)|_Relationship_ > border|Represents the border format of chart area, which includes color, linestyle and weight. Read-only.|1.7|
-|[chartAxes](../../api/excel/excel.chartaxes)|_Method_ > [getItem(type: string, group: string)](../../api/excel/excel.chartaxes.md#getitemtype-string-group-string)|Returns the specific axis identified by type and group.|1.7|
+|[chartAxes](../../api/excel/excel.chartaxes)|_Method_ > getItem(type: string, group: string)|Returns the specific axis identified by type and group.|1.7|
 |[chartAxis](../../api/excel/excel.chartaxis)|_Property_ > axisBetweenCategories|Represents whether value axis crosses the category axis between categories.|1.7|
 |[chartAxis](../../api/excel/excel.chartaxis)|_Property_ > axisGroup|Represents the group for the specified axis. Read-only. Possible values are: Primary, Secondary.|1.7|
 |[chartAxis](../../api/excel/excel.chartaxis)|_Property_ > categoryType|Returns or sets the category axis type. Possible values are: Automatic, TextAxis, DateAxis.|1.7|
@@ -118,9 +118,9 @@ In addition:
 |[chartAxis](../../api/excel/excel.chartaxis)|_Relationship_ > minorTickMark|Represents the type of minor tick mark for the specified axis.|1.7|
 |[chartAxis](../../api/excel/excel.chartaxis)|_Relationship_ > minorTimeUnitScale|Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to TimeScale.|1.7|
 |[chartAxis](../../api/excel/excel.chartaxis)|_Relationship_ > tickLabelPosition|Represents the position of tick-mark labels on the specified axis.|1.7|
-|[chartAxis](../../api/excel/excel.chartaxis)|_Method_ > [setCategoryNames(sourceData: Range)](../../api/excel/excel.chartaxis.md#setcategorynamessourcedata-range)|Sets all the category names for the specified axis.|1.7|
-|[chartAxis](../../api/excel/excel.chartaxis)|_Method_ > [setCrossesAt(value: double)](../../api/excel/excel.chartaxis.md#setcrossesatvalue-double)|Set the specified axis where the other axis crosses at.|1.7|
-|[chartAxis](../../api/excel/excel.chartaxis)|_Method_ > [setCustomDisplayUnit(value: double)](../../api/excel/excel.chartaxis.md#setcustomdisplayunitvalue-double)|Sets the axis display unit to a custom value.|1.7|
+|[chartAxis](../../api/excel/excel.chartaxis)|_Method_ > setCategoryNames(sourceData: Range)|Sets all the category names for the specified axis.|1.7|
+|[chartAxis](../../api/excel/excel.chartaxis)|_Method_ > setCrossesAt(value: double)|Set the specified axis where the other axis crosses at.|1.7|
+|[chartAxis](../../api/excel/excel.chartaxis)|_Method_ > setCustomDisplayUnit(value: double)|Sets the axis display unit to a custom value.|1.7|
 |[chartBorder](../../api/excel/excel.chartborder)|_Property_ > color|HTML color code representing the color of borders in the chart.|1.7|
 |[chartBorder](../../api/excel/excel.chartborder)|_Property_ > weight|Represents weight of the border, in points.|1.7|
 |[chartBorder](../../api/excel/excel.chartborder)|_Relationship_ > lineStyle|Represents the line style of the border.|1.7|
@@ -140,8 +140,8 @@ In addition:
 |[chartLegend](../../api/excel/excel.chartlegend)|_Relationship_ > legendEntries|Represents a collection of legendEntries in the legend. Read-only.|1.7|
 |[chartLegendEntry](../../api/excel/excel.chartlegendentry)|_Property_ > visible|Represents the visible of a chart legend entry.|1.7|
 |[chartLegendEntryCollection](../../api/excel/excel.chartlegendentrycollection)|_Property_ > items|A collection of chartLegendEntry objects. Read-only.|1.7|
-|[chartLegendEntryCollection](../../api/excel/excel.chartlegendentrycollection)|_Method_ > [getCount()](../../api/excel/excel.chartlegendentrycollection.md#getcount)|Returns the number of legendEntry in the collection.|1.7|
-|[chartLegendEntryCollection](../../api/excel/excel.chartlegendentrycollection)|_Method_ > [getItemAt(index: number)](../../api/excel/excel.chartlegendentrycollection.md#getitematindex-number)|Returns a legendEntry at the given index.|1.7|
+|[chartLegendEntryCollection](../../api/excel/excel.chartlegendentrycollection)|_Method_ > getCount()|Returns the number of legendEntry in the collection.|1.7|
+|[chartLegendEntryCollection](../../api/excel/excel.chartlegendentrycollection)|_Method_ > getItemAt(index: number)|Returns a legendEntry at the given index.|1.7|
 |[chartPoint](../../api/excel/excel.chartpoint)|_Property_ > hasDataLabel|Represents whether a data point has datalabel. Not applicable for surface charts.|1.7|
 |[chartPoint](../../api/excel/excel.chartpoint)|_Property_ > markerBackgroundColor|HTML color code representation of the marker background color of data point. E.g. #FF0000 represents Red.|1.7|
 |[chartPoint](../../api/excel/excel.chartpoint)|_Property_ > markerForegroundColor|HTML color code representation of the marker foreground color of data point. E.g. #FF0000 represents Red.|1.7|
@@ -163,11 +163,11 @@ In addition:
 |[chartSeries](../../api/excel/excel.chartseries)|_Property_ > smooth|Boolean value representing if the series is smooth or not. Only for line and scatter charts.|1.7|
 |[chartSeries](../../api/excel/excel.chartseries)|_Relationship_ > dataLabels|Represents a collection of all dataLabels in the series. Read-only.|ApiSet.InProgressFeatures.ChartingAPI|
 |[chartSeries](../../api/excel/excel.chartseries)|_Relationship_ > trendlines|Represents a collection of trendlines in the series. Read-only.|1.7|
-|[chartSeries](../../api/excel/excel.chartseries)|_Method_ > [delete()](../../api/excel/excel.chartseries.md#delete)|Deletes the chart series.|1.7|
-|[chartSeries](../../api/excel/excel.chartseries)|_Method_ > [setBubbleSizes(sourceData: Range)](../../api/excel/excel.chartseries.md#setbubblesizessourcedata-range)|Set bubble sizes for a chart series. Only works for bubble charts.|1.7|
-|[chartSeries](../../api/excel/excel.chartseries)|_Method_ > [setValues(sourceData: Range)](../../api/excel/excel.chartseries.md#setvaluessourcedata-range)|Set values for a chart series. For scatter chart, it means Y axis values.|1.7|
-|[chartSeries](../../api/excel/excel.chartseries)|_Method_ > [setXAxisValues(sourceData: Range)](../../api/excel/excel.chartseries.md#setxaxisvaluessourcedata-range)|Set values of X axis for a chart series. Only works for scatter charts.|1.7|
-|[chartSeriesCollection](../../api/excel/excel.chartseriescollection)|_Method_ > [add(name: string, index: number)](../../api/excel/excel.chartseriescollection.md#addname-string-index-number)|Add a new series to the collection.|1.7|
+|[chartSeries](../../api/excel/excel.chartseries)|_Method_ > delete()|Deletes the chart series.|1.7|
+|[chartSeries](../../api/excel/excel.chartseries)|_Method_ > setBubbleSizes(sourceData: Range)|Set bubble sizes for a chart series. Only works for bubble charts.|1.7|
+|[chartSeries](../../api/excel/excel.chartseries)|_Method_ > setValues(sourceData: Range)|Set values for a chart series. For scatter chart, it means Y axis values.|1.7|
+|[chartSeries](../../api/excel/excel.chartseries)|_Method_ > setXAxisValues(sourceData: Range)|Set values of X axis for a chart series. Only works for scatter charts.|1.7|
+|[chartSeriesCollection](../../api/excel/excel.chartseriescollection)|_Method_ > add(name: string, index: number)|Add a new series to the collection.|1.7|
 |[chartTitle](../../api/excel/excel.charttitle)|_Property_ > height|Returns the height, in points, of the chart title. Read-only. Null if chart title's not visible. Read-only.|1.7|
 |[chartTitle](../../api/excel/excel.charttitle)|_Property_ > horizontalAlignment|Represents the horizontal alignment for chart title. Possible values are: Center, Left, Justify, Distributed, Right.|1.7|
 |[chartTitle](../../api/excel/excel.charttitle)|_Property_ > left|Represents the distance, in points, from the left edge of chart title to the left edge of chart area. Null if chart title's not visible.|1.7|
@@ -177,7 +177,7 @@ In addition:
 |[chartTitle](../../api/excel/excel.charttitle)|_Property_ > top|Represents the distance, in points, from the top edge of chart title to the top of chart area. Null if chart title's not visible.|1.7|
 |[chartTitle](../../api/excel/excel.charttitle)|_Property_ > verticalAlignment|Represents the vertical alignment of chart title. Possible values are: Center, Bottom, Top, Justify, Distributed.|1.7|
 |[chartTitle](../../api/excel/excel.charttitle)|_Property_ > width|Returns the width, in points, of the chart title. Read-only. Null if chart title's not visible. Read-only.|1.7|
-|[chartTitle](../../api/excel/excel.charttitle)|_Method_ > [setFormula(formula: string)](../../api/excel/excel.charttitle.md#setformulaformula-string)|Sets a string value that represents the formula of chart title using A1-style notation.|1.7|
+|[chartTitle](../../api/excel/excel.charttitle)|_Method_ > setFormula(formula: string)|Sets a string value that represents the formula of chart title using A1-style notation.|1.7|
 |[chartTitleFormat](../../api/excel/excel.charttitleformat)|_Relationship_ > border|Represents the border format of chart title, which includes color, linestyle and weight. Read-only.|1.7|
 |[chartTrendline](../../api/excel/excel.charttrendline)|_Property_ > backward|Represents the number of periods that the trendline extends backward.|1.7|
 |[chartTrendline](../../api/excel/excel.charttrendline)|_Property_ > displayEquation|True if the equation for the trendline is displayed on the chart.|1.7|
@@ -189,11 +189,11 @@ In addition:
 |[chartTrendline](../../api/excel/excel.charttrendline)|_Property_ > polynomialOrder|Represents the order of a chart trendline, only for trendline with Polynomial type.|1.7|
 |[chartTrendline](../../api/excel/excel.charttrendline)|_Property_ > type|Represents the type of a chart trendline. Possible values are: Linear, Exponential, Logarithmic, MovingAverage, Polynomial, Power.|1.7|
 |[chartTrendline](../../api/excel/excel.charttrendline)|_Relationship_ > format|Represents the formatting of a chart trendline. Read-only.|1.7|
-|[chartTrendline](../../api/excel/excel.charttrendline)|_Method_ > [delete()](../../api/excel/excel.charttrendline.md#delete)|Delete the trendline object.|1.7|
+|[chartTrendline](../../api/excel/excel.charttrendline)|_Method_ > delete()|Delete the trendline object.|1.7|
 |[chartTrendlineCollection](../../api/excel/excel.charttrendlinecollection)|_Property_ > items|A collection of chartTrendline objects. Read-only.|1.7|
-|[chartTrendlineCollection](../../api/excel/excel.charttrendlinecollection)|_Method_ > [add(type: string)](../../api/excel/excel.charttrendlinecollection.md#addtype-string)|Adds a new trendline to trendline collection.|1.7|
-|[chartTrendlineCollection](../../api/excel/excel.charttrendlinecollection)|_Method_ > [getCount()](../../api/excel/excel.charttrendlinecollection.md#getcount)|Returns the number of trendlines in the collection.|1.7|
-|[chartTrendlineCollection](../../api/excel/excel.charttrendlinecollection)|_Method_ > [getItem(index: number)](../../api/excel/excel.charttrendlinecollection.md#getitemindex-number)|Get trendline object by index, which is the insertion order in items array.|1.7|
+|[chartTrendlineCollection](../../api/excel/excel.charttrendlinecollection)|_Method_ > add(type: string)|Adds a new trendline to trendline collection.|1.7|
+|[chartTrendlineCollection](../../api/excel/excel.charttrendlinecollection)|_Method_ > getCount()|Returns the number of trendlines in the collection.|1.7|
+|[chartTrendlineCollection](../../api/excel/excel.charttrendlinecollection)|_Method_ > getItem(index: number)|Get trendline object by index, which is the insertion order in items array.|1.7|
 |[chartTrendlineFormat](../../api/excel/excel.charttrendlineformat)|_Relationship_ > line|Represents chart line formatting. Read-only.|1.7|
 |[customFunctionPostProcessAction](../../api/excel/excel.customfunctionpostprocessaction)|_Property_ > actionType|Transmits additional data to client side, e.g., worksheetId for TableSelectionChangedEvent. Possible values are: None, RegisterEvent, UnregisterEvent, CustomFunction, ShowCard.|1.7|
 |[customFunctionPostProcessAction](../../api/excel/excel.customfunctionpostprocessaction)|_Property_ > operationType|Transmits additional data to client side, e.g., worksheetId for TableSelectionChangedEvent. Possible values are: None, RegisterEvent, UnregisterEvent, CustomFunction, ShowCard.|1.7|
@@ -202,13 +202,13 @@ In addition:
 |[customProperty](../../api/excel/excel.customproperty)|_Property_ > value|Gets or sets the value of the custom property.|1.7|
 |[customProperty](../../api/excel/excel.customproperty)|_Method_ > [delete()](../../api/excel/excel.customproperty.md#delete)|Deletes the custom property.|1.7|
 |[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Property_ > items|A collection of customProperty objects. Read-only.|1.7|
-|[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > [add(key: string, value: object)](../../api/excel/excel.custompropertycollection.md#addkey-string-value-object)|Creates a new or sets an existing custom property.|1.7|
-|[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > [deleteAll()](../../api/excel/excel.custompropertycollection.md#deleteall)|Deletes all custom properties in this collection.|1.7|
-|[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > [getCount()](../../api/excel/excel.custompropertycollection.md#getcount)|Gets the count of custom properties.|1.7|
-|[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > [getItem(key: string)](../../api/excel/excel.custompropertycollection.md#getitemkey-string)|Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.|1.7|
+|[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > add(key: string, value: object)|Creates a new or sets an existing custom property.|1.7|
+|[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > deleteAll()|Deletes all custom properties in this collection.|1.7|
+|[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > getCount()|Gets the count of custom properties.|1.7|
+|[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > getItem(key: string)|Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.|1.7|
 |[customPropertyCollection](../../api/excel/excel.custompropertycollection)|_Method_ > [getItemOrNullObject(key: string)](../../api/excel/excel.custompropertycollection.md#getitemornullobjectkey-string)|Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property does not exist.|1.7|
 |[dataConnectionCollection](../../api/excel/excel.dataconnectioncollection)|_Property_ > items|A collection of dataConnection objects. Read-only.|1.7|
-|[dataConnectionCollection](../../api/excel/excel.dataconnectioncollection)|_Method_ > [refreshAll()](../../api/excel/excel.dataconnectioncollection.md#refreshall)|Refreshes all the Data Connections in the collection.|1.7|
+|[dataConnectionCollection](../../api/excel/excel.dataconnectioncollection)|_Method_ > refreshAll()|Refreshes all the Data Connections in the collection.|1.7|
 |[documentProperties](../../api/excel/excel.documentproperties)|_Property_ > author|Gets or sets the author of the workbook.|1.7|
 |[documentProperties](../../api/excel/excel.documentproperties)|_Property_ > category|Gets or sets the category of the workbook.|1.7|
 |[documentProperties](../../api/excel/excel.documentproperties)|_Property_ > comments|Gets or sets the comments of the workbook.|1.7|
@@ -230,10 +230,10 @@ In addition:
 |[range](../../api/excel/excel.range)|_Property_ > isEntireRow|Represents if the current range is an entire row. Read-only.|1.7|
 |[range](../../api/excel/excel.range)|_Property_ > numberFormatLocal|Represents Excel's number format code for the given range as a string in the language of the user.|1.7|
 |[range](../../api/excel/excel.range)|_Property_ > style|Represents the style of the current range. This return either null or a string.|1.7|
-|[range](../../api/excel/excel.range)|_Method_ > [getAbsoluteResizedRange(numRows: number, numColumns: number)](../../api/excel/excel.range.md#getabsoluteresizedrangenumrows-number-numcolumns-number)|Gets a Range object with the same top-left cell as the current Range object, but with the specified numbers of rows and columns.|1.7|
-|[range](../../api/excel/excel.range)|_Method_ > [getImage()](../../api/excel/excel.range.md#getimage)|Renders the range as a base64-encoded image.|1.7|
-|[range](../../api/excel/excel.range)|_Method_ > [getSurroundingRegion()](../../api/excel/excel.range.md#getsurroundingregion)|Returns a Range object that represents the surrounding region for the top-left cell in this range. A surrounding region is a range bounded by any combination of blank rows and blank columns relative to this range.|1.7|
-|[range](../../api/excel/excel.range)|_Method_ > [showCard()](../../api/excel/excel.range.md#showcard)|Displays the card for an active cell if it has rich value content.|1.7|
+|[range](../../api/excel/excel.range)|_Method_ > getAbsoluteResizedRange(numRows: number, numColumns: number)|Gets a Range object with the same top-left cell as the current Range object, but with the specified numbers of rows and columns.|1.7|
+|[range](../../api/excel/excel.range)|_Method_ > getImage()|Renders the range as a base64-encoded image.|1.7|
+|[range](../../api/excel/excel.range)|_Method_ > getSurroundingRegion()|Returns a Range object that represents the surrounding region for the top-left cell in this range. A surrounding region is a range bounded by any combination of blank rows and blank columns relative to this range.|1.7|
+|[range](../../api/excel/excel.range)|_Method_ > showCard()|Displays the card for an active cell if it has rich value content.|1.7|
 |[rangeFormat](../../api/excel/excel.rangeformat)|_Property_ > textOrientation|Gets or sets the text orientation of all the cells within the range.|1.7|
 |[rangeFormat](../../api/excel/excel.rangeformat)|_Property_ > useStandardHeight|Determines if the row height of the Range object equals the standard height of the sheet.|1.7|
 |[rangeFormat](../../api/excel/excel.rangeformat)|_Property_ > useStandardWidth|Determines if the columnwidth of the Range object equals the standard width of the sheet.|1.7|
@@ -274,10 +274,10 @@ In addition:
 |[style](../../api/excel/excel.style)|_Relationship_ > borders|A Border collection of four Border objects that represent the style of the four borders. Read-only.|1.7|
 |[style](../../api/excel/excel.style)|_Relationship_ > fill|The Fill of the style. Read-only.|1.7|
 |[style](../../api/excel/excel.style)|_Relationship_ > font|A Font object that represents the font of the style. Read-only.|1.7|
-|[style](../../api/excel/excel.style)|_Method_ > [delete()](../../api/excel/excel.style.md#delete)|Deletes this style.|1.7|
+|[style](../../api/excel/excel.style)|_Method_ > delete()|Deletes this style.|1.7|
 |[styleCollection](../../api/excel/excel.stylecollection)|_Property_ > items|A collection of style objects. Read-only.|1.7|
-|[styleCollection](../../api/excel/excel.stylecollection)|_Method_ > [add(name: string)](../../api/excel/excel.stylecollection.md#addname-string)|Adds a new style to the collection.|1.7|
-|[styleCollection](../../api/excel/excel.stylecollection)|_Method_ > [getItem(name: string)](../../api/excel/excel.stylecollection.md#getitemname-string)|Gets a style by name.|1.7|
+|[styleCollection](../../api/excel/excel.stylecollection)|_Method_ > add(name: string)]|Adds a new style to the collection.|1.7|
+|[styleCollection](../../api/excel/excel.stylecollection)|_Method_ > getItem(name: string)|Gets a style by name.|1.7|
 |[tableChangedEventArgs](../../api/excel/excel.tablechangedeventargs)|_Property_ > address|Gets the address that represents the changed area of a table on a specific worksheet.|1.7|
 |[tableChangedEventArgs](../../api/excel/excel.tablechangedeventargs)|_Property_ > changeType|Gets the change type that represents how the Changed event is triggered. Possible values are: Others, RangeEdited, RowInserted, RowDeleted, ColumnInserted, ColumnDeleted, CellInserted, CellDeleted.|1.7|
 |[tableChangedEventArgs](../../api/excel/excel.tablechangedeventargs)|_Property_ > source|Gets the source of the event. Possible values are: Local, Remote.|1.7|
@@ -294,10 +294,10 @@ In addition:
 |[workbook](../../api/excel/excel.workbook)|_Relationship_ > properties|Gets the workbook properties. Read-only.|1.7|
 |[workbook](../../api/excel/excel.workbook)|_Relationship_ > protection|Returns workbook protection object for a workbook. Read-only.|1.7|
 |[workbook](../../api/excel/excel.workbook)|_Relationship_ > styles|Represents a collection of styles associated with the workbook. Read-only.|1.7|
-|[workbook](../../api/excel/excel.workbook)|_Method_ > [getActiveCell()](../../api/excel/excel.workbook.md#getactivecell)|Gets the currently active cell from the workbook.|1.7|
+|[workbook](../../api/excel/excel.workbook)|_Method_ > getActiveCell()|Gets the currently active cell from the workbook.|1.7|
 |[workbookProtection](../../api/excel/excel.workbookprotection)|_Property_ > protected|Indicates if the workbook is protected. Read-Only. Read-only.|1.7|
-|[workbookProtection](../../api/excel/excel.workbookprotection)|_Method_ > [protect(password: string)](../../api/excel/excel.workbookprotection.md#protectpassword-string)|Protects a workbook. Fails if the workbook has been protected.|1.7|
-|[workbookProtection](../../api/excel/excel.workbookprotection)|_Method_ > [unprotect(password: string)](../../api/excel/excel.workbookprotection.md#unprotectpassword-string)|Unprotects a workbook.|1.7|
+|[workbookProtection](../../api/excel/excel.workbookprotection)|_Method_ > protect(password: string)|Protects a workbook. Fails if the workbook has been protected.|1.7|
+|[workbookProtection](../../api/excel/excel.workbookprotection)|_Method_ > unprotect(password: string)|Unprotects a workbook.|1.7|
 |[worksheet](../../api/excel/excel.worksheet)|_Property_ > gridlines|Gets or sets the worksheet's gridlines flag.|1.7|
 |[worksheet](../../api/excel/excel.worksheet)|_Property_ > headings|Gets or sets the worksheet's headings flag.|1.7|
 |[worksheet](../../api/excel/excel.worksheet)|_Property_ > showGridlines|Gets or sets the worksheet's gridlines flag.|1.7|
@@ -306,8 +306,8 @@ In addition:
 |[worksheet](../../api/excel/excel.worksheet)|_Property_ > standardWidth|Returns or sets the standard (default) width of all the columns in the worksheet.|1.7|
 |[worksheet](../../api/excel/excel.worksheet)|_Property_ > tabColor|Gets or sets the worksheet tab color.|1.7|
 |[worksheet](../../api/excel/excel.worksheet)|_Relationship_ > freezePanes|Gets an object that can be used to manipulate frozen panes on the worksheet Read-only.|1.7|
-|[worksheet](../../api/excel/excel.worksheet)|_Method_ > [copy(positionType: WorksheetPositionType, relativeTo: Worksheet)](../../api/excel/excel.worksheet.md#copypositiontype-worksheetpositiontype-relativeto-worksheet)|Copy a worksheet and place it at the specified position. Return the copied worksheet.|1.7|
-|[worksheet](../../api/excel/excel.worksheet)|_Method_ > [getRangeByIndexes(startRow: number, startColumn: number, rowCount: number, columnCount: number)](../../api/excel/excel.worksheet.md#getrangebyindexesstartrow-number-startcolumn-number-rowcount-number-columncount-number)|Gets the range object beginning at a particular row index and column index, and spanning a certain number of rows and columns.|1.7|
+|[worksheet](../../api/excel/excel.worksheet)|_Method_ > copy(positionType: WorksheetPositionType, relativeTo: Worksheet)|Copy a worksheet and place it at the specified position. Return the copied worksheet.|1.7|
+|[worksheet](../../api/excel/excel.worksheet)|_Method_ > getRangeByIndexes(startRow: number, startColumn: number, rowCount: number, columnCount: number)|Gets the range object beginning at a particular row index and column index, and spanning a certain number of rows and columns.|1.7|
 |[worksheetActivatedEventArgs](../../api/excel/excel.worksheetactivatedeventargs)|_Property_ > type|Gets the type of the event. Possible values are: WorksheetDataChanged, WorksheetSelectionChanged, WorksheetAdded, WorksheetActivated, WorksheetDeactivated, TableDataChanged, TableSelectionChanged, WorksheetDeleted.|1.7|
 |[worksheetActivatedEventArgs](../../api/excel/excel.worksheetactivatedeventargs)|_Property_ > worksheetId|Gets the id of the worksheet that is activated.|1.7|
 |[worksheetAddedEventArgs](../../api/excel/excel.worksheetaddedeventargs)|_Property_ > source|Gets the source of the event. Possible values are: Local, Remote.|1.7|
@@ -323,12 +323,12 @@ In addition:
 |[worksheetDeletedEventArgs](../../api/excel/excel.worksheetdeletedeventargs)|_Property_ > source|Gets the source of the event. Possible values are: Local, Remote.|1.7|
 |[worksheetDeletedEventArgs](../../api/excel/excel.worksheetdeletedeventargs)|_Property_ > type|Gets the type of the event. Possible values are: WorksheetDataChanged, WorksheetSelectionChanged, WorksheetAdded, WorksheetActivated, WorksheetDeactivated, TableDataChanged, TableSelectionChanged, WorksheetDeleted.|1.7|
 |[worksheetDeletedEventArgs](../../api/excel/excel.worksheetdeletedeventargs)|_Property_ > worksheetId|Gets the id of the worksheet that is deleted from the workbook.|1.7|
-|[worksheetFreezePanes](../../api/excel/excel.worksheetfreezepanes)|_Method_ > [freezeAt(frozenRange: Range or string)](../../api/excel/excel.worksheetfreezepanes.md#freezeatfrozenrange-range-or-string)|Sets the frozen cells in the active worksheet view.|1.7|
-|[worksheetFreezePanes](../../api/excel/excel.worksheetfreezepanes)|_Method_ > [freezeColumns(count: number)](../../api/excel/excel.worksheetfreezepanes.md#freezecolumnscount-number)|Freeze the first column(s) of the worksheet in place.|1.7|
-|[worksheetFreezePanes](../../api/excel/excel.worksheetfreezepanes)|_Method_ > [freezeRows(count: number)](../../api/excel/excel.worksheetfreezepanes.md#freezerowscount-number)|Freeze the top row(s) of the worksheet in place.|1.7|
-|[worksheetFreezePanes](../../api/excel/excel.worksheetfreezepanes)|_Method_ > [getLocation()](../../api/excel/excel.worksheetfreezepanes.md#getlocation)|Gets a range that describes the frozen cells in the active worksheet view.|1.7|
-|[worksheetFreezePanes](../../api/excel/excel.worksheetfreezepanes)|_Method_ > [getLocationOrNullObject()](../../api/excel/excel.worksheetfreezepanes.md#getlocationornullobject)|Gets a range that describes the frozen cells in the active worksheet view.|1.7|
-|[worksheetFreezePanes](../../api/excel/excel.worksheetfreezepanes)|_Method_ > [unfreeze()](../../api/excel/excel.worksheetfreezepanes.md#unfreeze)|Removes all frozen panes in the worksheet.|1.7|
+|[worksheetFreezePanes](../../api/excel/excel.worksheetfreezepanes)|_Method_ > freezeAt(frozenRange: Range or string)|Sets the frozen cells in the active worksheet view.|1.7|
+|[worksheetFreezePanes](../../api/excel/excel.worksheetfreezepanes)|_Method_ > freezeColumns(count: number)|Freeze the first column(s) of the worksheet in place.|1.7|
+|[worksheetFreezePanes](../../api/excel/excel.worksheetfreezepanes)|_Method_ > freezeRows(count: number)|Freeze the top row(s) of the worksheet in place.|1.7|
+|[worksheetFreezePanes](../../api/excel/excel.worksheetfreezepanes)|_Method_ > getLocation()|Gets a range that describes the frozen cells in the active worksheet view.|1.7|
+|[worksheetFreezePanes](../../api/excel/excel.worksheetfreezepanes)|_Method_ > getLocationOrNullObject()|Gets a range that describes the frozen cells in the active worksheet view.|1.7|
+|[worksheetFreezePanes](../../api/excel/excel.worksheetfreezepanes)|_Method_ > unfreeze()|Removes all frozen panes in the worksheet.|1.7|
 |[worksheetProtectionOptions](../../api/excel/excel.worksheetprotectionoptions)|_Property_ > allowEditObjects|Represents the worksheet protection option of allowing editing objects.|1.7|
 |[worksheetProtectionOptions](../../api/excel/excel.worksheetprotectionoptions)|_Property_ > allowEditScenarios|Represents the worksheet protection option of allowing editing scenarios.|1.7|
 |[worksheetProtectionOptions](../../api/excel/excel.worksheetprotectionoptions)|_Relationship_ > selectionMode|Represents the worksheet protection option of selection mode.|1.7|
@@ -360,7 +360,7 @@ For API details, please refer to the [Excel JavaScript API open specification](h
 
 |Object| What is new| Description|Requirement set|
 |:----|:----|:----|:----|
-|[application](../../api/excel/excel.application)|_Method_ > [suspendApiCalculationUntilNextSync()](../../api/excel/excel.application.md#suspendapicalculationuntilnextsync)|Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to re-calc the workbook, to ensure that any dependencies are propagated.|1.6|
+|[application](../../api/excel/excel.application)|_Method_ > suspendApiCalculationUntilNextSync()|Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to re-calc the workbook, to ensure that any dependencies are propagated.|1.6|
 |[cellValueConditionalFormat](../../api/excel/excel.cellvalueconditionalformat)|_Relationship_ > format|Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.|1.6|
 |[cellValueConditionalFormat](../../api/excel/excel.cellvalueconditionalformat)|_Relationship_ > rule|Represents the Rule object on this conditional format.|1.6|
 |[colorScaleConditionalFormat](../../api/excel/excel.colorscaleconditionalformat)|_Property_ > threeColorScale|If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum, maximum). Read-only.|1.6|
@@ -403,15 +403,15 @@ For API details, please refer to the [Excel JavaScript API open specification](h
 |[conditionalFormat](../../api/excel/excel.conditionalformat)|_Relationship_ > textComparisonOrNullObject|Returns the specific text conditional format properties if the current conditional format is a text type. Read-only.|1.6|
 |[conditionalFormat](../../api/excel/excel.conditionalformat)|_Relationship_ > topBottom|Returns the TopBottom conditional format properties if the current conditional format is an TopBottom type. Read-only.|1.6|
 |[conditionalFormat](../../api/excel/excel.conditionalformat)|_Relationship_ > topBottomOrNullObject|Returns the TopBottom conditional format properties if the current conditional format is an TopBottom type. Read-only.|1.6|
-|[conditionalFormat](../../api/excel/excel.conditionalformat)|_Method_ > [delete()](../../api/excel/excel.conditionalformat.md#delete)|Deletes this conditional format.|1.6|
-|[conditionalFormat](../../api/excel/excel.conditionalformat)|_Method_ > [getRange()](../../api/excel/excel.conditionalformat.md#getrange)|Returns the range the conditonal format is applied to or a null object if the range is discontiguous. Read-only.|1.6|
-|[conditionalFormat](../../api/excel/excel.conditionalformat)|_Method_ > [getRangeOrNullObject()](../../api/excel/excel.conditionalformat.md#getrangeornullobject)|Returns the range the conditonal format is applied to or a null object if the range is discontiguous. Read-only.|1.6|
+|[conditionalFormat](../../api/excel/excel.conditionalformat)|_Method_ > delete()|Deletes this conditional format.|1.6|
+|[conditionalFormat](../../api/excel/excel.conditionalformat)|_Method_ > getRange()|Returns the range the conditonal format is applied to or a null object if the range is discontiguous. Read-only.|1.6|
+|[conditionalFormat](../../api/excel/excel.conditionalformat)|_Method_ > getRangeOrNullObject()|Returns the range the conditonal format is applied to or a null object if the range is discontiguous. Read-only.|1.6|
 |[conditionalFormatCollection](../../api/excel/excel.conditionalformatcollection)|_Property_ > items|A collection of conditionalFormat objects. Read-only.|1.6|
-|[conditionalFormatCollection](../../api/excel/excel.conditionalformatcollection)|_Method_ > [add(type: string)](../../api/excel/excel.conditionalformatcollection.md#addtype-string)|Adds a new conditional format to the collection at the firsttop priority.|1.6|
-|[conditionalFormatCollection](../../api/excel/excel.conditionalformatcollection)|_Method_ > [clearAll()](../../api/excel/excel.conditionalformatcollection.md#clearall)|Clears all conditional formats active on the current specified range.|1.6|
-|[conditionalFormatCollection](../../api/excel/excel.conditionalformatcollection)|_Method_ > [getCount()](../../api/excel/excel.conditionalformatcollection.md#getcount)|Returns the number of conditional formats in the workbook. Read-only.|1.6|
-|[conditionalFormatCollection](../../api/excel/excel.conditionalformatcollection)|_Method_ > [getItem(id: string)](../../api/excel/excel.conditionalformatcollection.md#getitemid-string)|Returns a conditional format for the given ID.|1.6|
-|[conditionalFormatCollection](../../api/excel/excel.conditionalformatcollection)|_Method_ > [getItemAt(index: number)](../../api/excel/excel.conditionalformatcollection.md#getitematindex-number)|Returns a conditional format at the given index.|1.6|
+|[conditionalFormatCollection](../../api/excel/excel.conditionalformatcollection)|_Method_ > add(type: string)|Adds a new conditional format to the collection at the firsttop priority.|1.6|
+|[conditionalFormatCollection](../../api/excel/excel.conditionalformatcollection)|_Method_ > clearAll()|Clears all conditional formats active on the current specified range.|1.6|
+|[conditionalFormatCollection](../../api/excel/excel.conditionalformatcollection)|_Method_ > getCount()|Returns the number of conditional formats in the workbook. Read-only.|1.6|
+|[conditionalFormatCollection](../../api/excel/excel.conditionalformatcollection)|_Method_ > getItem(id: string)|Returns a conditional format for the given ID.|1.6|
+|[conditionalFormatCollection](../../api/excel/excel.conditionalformatcollection)|_Method_ > getItemAt(index: number)|Returns a conditional format at the given index.|1.6|
 |[conditionalFormatRule](../../api/excel/excel.conditionalformatrule)|_Property_ > formula|The formula, if required, to evaluate the conditional format rule on.|1.6|
 |[conditionalFormatRule](../../api/excel/excel.conditionalformatrule)|_Property_ > formulaLocal|The formula, if required, to evaluate the conditional format rule on in the user's language.|1.6|
 |[conditionalFormatRule](../../api/excel/excel.conditionalformatrule)|_Property_ > formulaR1C1|The formula, if required, to evaluate the conditional format rule on in R1C1-style notation.|1.6|
@@ -433,13 +433,13 @@ For API details, please refer to the [Excel JavaScript API open specification](h
 |[conditionalRangeBorderCollection](../../api/excel/excel.conditionalrangebordercollection)|_Method_ > [getItem(index: string)](../../api/excel/excel.conditionalrangebordercollection.md#getitemindex-string)|Gets a border object using its name|1.6|
 |[conditionalRangeBorderCollection](../../api/excel/excel.conditionalrangebordercollection)|_Method_ > [getItemAt(index: number)](../../api/excel/excel.conditionalrangebordercollection.md#getitematindex-number)|Gets a border object using its index|1.6|
 |[conditionalRangeFill](../../api/excel/excel.conditionalrangefill)|_Property_ > color|HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").|1.6|
-|[conditionalRangeFill](../../api/excel/excel.conditionalrangefill)|_Method_ > [clear()](../../api/excel/excel.conditionalrangefill.md#clear)|Resets the fill.|1.6|
+|[conditionalRangeFill](../../api/excel/excel.conditionalrangefill)|_Method_ > clear()|Resets the fill.|1.6|
 |[conditionalRangeFont](../../api/excel/excel.conditionalrangefont)|_Property_ > bold|Represents the bold status of font.|1.6|
 |[conditionalRangeFont](../../api/excel/excel.conditionalrangefont)|_Property_ > color|HTML color code representation of the text color. E.g. #FF0000 represents Red.|1.6|
 |[conditionalRangeFont](../../api/excel/excel.conditionalrangefont)|_Property_ > italic|Represents the italic status of the font.|1.6|
 |[conditionalRangeFont](../../api/excel/excel.conditionalrangefont)|_Property_ > strikethrough|Represents the strikethrough status of the font.|1.6|
 |[conditionalRangeFont](../../api/excel/excel.conditionalrangefont)|_Property_ > underline|Type of underline applied to the font. Possible values are: None, Single, Double.|1.6|
-|[conditionalRangeFont](../../api/excel/excel.conditionalrangefont)|_Method_ > [clear()](../../api/excel/excel.conditionalrangefont.md#clear)|Resets the font formats.|1.6|
+|[conditionalRangeFont](../../api/excel/excel.conditionalrangefont)|_Method_ > clear()|Resets the font formats.|1.6|
 |[conditionalRangeFormat](../../api/excel/excel.conditionalrangeformat)|_Property_ > numberFormat|Represents Excel's number format code for the given range. Cleared if null is passed in.|1.6|
 |[conditionalRangeFormat](../../api/excel/excel.conditionalrangeformat)|_Relationship_ > borders|Collection of border objects that apply to the overall conditional format range. Read-only.|1.6|
 |[conditionalRangeFormat](../../api/excel/excel.conditionalrangeformat)|_Relationship_ > fill|Returns the fill object defined on the overall conditional format range. Read-only.|1.6|
@@ -465,13 +465,13 @@ For API details, please refer to the [Excel JavaScript API open specification](h
 |[presetCriteriaConditionalFormat](../../api/excel/excel.presetcriteriaconditionalformat)|_Relationship_ > format|Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.|1.6|
 |[presetCriteriaConditionalFormat](../../api/excel/excel.presetcriteriaconditionalformat)|_Relationship_ > rule|The rule of the conditional format.|1.6|
 |[range](../../api/excel/excel.range)|_Relationship_ > conditionalFormats|Collection of ConditionalFormats that intersect the range. Read-only.|1.6|
-|[range](../../api/excel/excel.range)|_Method_ > [calculate()](../../api/excel/excel.range.md#calculate)|Calculates a range of cells on a worksheet.|1.6|
+|[range](../../api/excel/excel.range)|_Method_ > calculate()|Calculates a range of cells on a worksheet.|1.6|
 |[textConditionalFormat](../../api/excel/excel.textconditionalformat)|_Relationship_ > format|Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.|1.6|
 |[textConditionalFormat](../../api/excel/excel.textconditionalformat)|_Relationship_ > rule|The rule of the conditional format.|1.6|
 |[topBottomConditionalFormat](../../api/excel/excel.topbottomconditionalformat)|_Relationship_ > format|Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.|1.6|
 |[topBottomConditionalFormat](../../api/excel/excel.topbottomconditionalformat)|_Relationship_ > rule|The criteria of the TopBottom conditional format.|1.6|
 |[workbook](../../api/excel/excel.workbook)|_Relationship_ > internalTest|For internal use only. Read-only.|1.6|
-|[worksheet](../../api/excel/excel.worksheet)|_Method_ > [calculate(markAllDirty: bool)](../../api/excel/excel.worksheet.md#calculatemarkalldirty-bool)|Calculates all cells on a worksheet.|1.6|
+|[worksheet](../../api/excel/excel.worksheet)|_Method_ > calculate(markAllDirty: bool)|Calculates all cells on a worksheet.|1.6|
 
 ##  What's new in Excel JavaScript API 1.5
 
@@ -508,28 +508,28 @@ For API details, please refer to the [Excel JavaScript API open specification](h
 |:----|:----|:----|:----|
 |[customXmlPart](../../api/excel/excel.customxmlpart)|_Property_ > id|The custom XML part's ID. Read-only.|1.5|
 |[customXmlPart](../../api/excel/excel.customxmlpart)|_Property_ > namespaceUri|The custom XML part's namespace URI. Read-only.|1.5|
-|[customXmlPart](../../api/excel/excel.customxmlpart)|_Method_ > [delete()](../../api/excel/excel.customxmlpart.md#delete)|Deletes the custom XML part.|1.5|
-|[customXmlPart](../../api/excel/excel.customxmlpart)|_Method_ > [getXml()](../../api/excel/excel.customxmlpart.md#getxml)|Gets the custom XML part's full XML content.|1.5|
-|[customXmlPart](../../api/excel/excel.customxmlpart)|_Method_ > [setXml(xml: string)](../../api/excel/excel.customxmlpart.md#setxmlxml-string)|Sets the custom XML part's full XML content.|1.5|
+|[customXmlPart](../../api/excel/excel.customxmlpart)|_Method_ > delete()|Deletes the custom XML part.|1.5|
+|[customXmlPart](../../api/excel/excel.customxmlpart)|_Method_ > getXml()|Gets the custom XML part's full XML content.|1.5|
+|[customXmlPart](../../api/excel/excel.customxmlpart)|_Method_ > setXml(xml: string)|Sets the custom XML part's full XML content.|1.5|
 |[customXmlPartCollection](../../api/excel/excel.customxmlpartcollection)|_Property_ > items|A collection of customXmlPart objects. Read-only.|1.5|
-|[customXmlPartCollection](../../api/excel/excel.customxmlpartcollection)|_Method_ > [add(xml: string)](../../api/excel/excel.customxmlpartcollection.md#addxml-string)|Adds a new custom XML part to the workbook.|1.5|
-|[customXmlPartCollection](../../api/excel/excel.customxmlpartcollection)|_Method_ > [getByNamespace(namespaceUri: string)](../../api/excel/excel.customxmlpartcollection.md#getbynamespacenamespaceuri-string)|Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.|1.5|
-|[customXmlPartCollection](../../api/excel/excel.customxmlpartcollection)|_Method_ > [getCount()](../../api/excel/excel.customxmlpartcollection.md#getcount)|Gets the number of CustomXml parts in the collection.|1.5|
-|[customXmlPartCollection](../../api/excel/excel.customxmlpartcollection)|_Method_ > [getItem(id: string)](../../api/excel/excel.customxmlpartcollection.md#getitemid-string)|Gets a custom XML part based on its ID.|1.5|
-|[customXmlPartCollection](../../api/excel/excel.customxmlpartcollection)|_Method_ > [getItemOrNullObject(id: string)](../../api/excel/excel.customxmlpartcollection.md#getitemornullobjectid-string)|Gets a custom XML part based on its ID.|1.5|
+|[customXmlPartCollection](../../api/excel/excel.customxmlpartcollection)|_Method_ > add(xml: string)|Adds a new custom XML part to the workbook.|1.5|
+|[customXmlPartCollection](../../api/excel/excel.customxmlpartcollection)|_Method_ > getByNamespace(namespaceUri: string)|Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.|1.5|
+|[customXmlPartCollection](../../api/excel/excel.customxmlpartcollection)|_Method_ > getCount()|Gets the number of CustomXml parts in the collection.|1.5|
+|[customXmlPartCollection](../../api/excel/excel.customxmlpartcollection)|_Method_ > getItem(id: string)|Gets a custom XML part based on its ID.|1.5|
+|[customXmlPartCollection](../../api/excel/excel.customxmlpartcollection)|_Method_ > getItemOrNullObject(id: string)|Gets a custom XML part based on its ID.|1.5|
 |[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Property_ > items|A collection of customXmlPartScoped objects. Read-only.|1.5|
-|[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > [getCount()](../../api/excel/excel.customxmlpartscopedcollection.md#getcount)|Gets the number of CustomXML parts in this collection.|1.5|
-|[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > [getItem(id: string)](../../api/excel/excel.customxmlpartscopedcollection.md#getitemid-string)|Gets a custom XML part based on its ID.|1.5|
+|[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > getCount()|Gets the number of CustomXML parts in this collection.|1.5|
+|[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > getItem(id: string)|Gets a custom XML part based on its ID.|1.5|
 |[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > [getItemOrNullObject(id: string)](../../api/excel/excel.customxmlpartscopedcollection.md#getitemornullobjectid-string)|Gets a custom XML part based on its ID.|1.5|
 |[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > [getOnlyItem()](../../api/excel/excel.customxmlpartscopedcollection.md#getonlyitem)|If the collection contains exactly one item, this method returns it.|1.5|
 |[customXmlPartScopedCollection](../../api/excel/excel.customxmlpartscopedcollection)|_Method_ > [getOnlyItemOrNullObject()](../../api/excel/excel.customxmlpartscopedcollection.md#getonlyitemornullobject)|If the collection contains exactly one item, this method returns it.|1.5|
 |[workbook](../../api/excel/excel.workbook)|_Relationship_ > customXmlParts|Represents the collection of custom XML parts contained by this workbook. Read-only.|1.5|
-|[worksheet](../../api/excel/excel.worksheet)|_Method_ > [getNext(visibleOnly: bool)](../../api/excel/excel.worksheet.md#getnextvisibleonly-bool)|Gets the worksheet that follows this one. If there are no worksheets following this one, this method will throw an error.|1.5|
-|[worksheet](../../api/excel/excel.worksheet)|_Method_ > [getNextOrNullObject(visibleOnly: bool)](../../api/excel/excel.worksheet.md#getnextornullobjectvisibleonly-bool)|Gets the worksheet that follows this one. If there are no worksheets following this one, this method will return a null object.|1.5|
-|[worksheet](../../api/excel/excel.worksheet)|_Method_ > [getPrevious(visibleOnly: bool)](../../api/excel/excel.worksheet.md#getpreviousvisibleonly-bool)|Gets the worksheet that precedes this one. If there are no previous worksheets, this method will throw an error.|1.5|
-|[worksheet](../../api/excel/excel.worksheet)|_Method_ > [getPreviousOrNullObject(visibleOnly: bool)](../../api/excel/excel.worksheet.md#getpreviousornullobjectvisibleonly-bool)|Gets the worksheet that precedes this one. If there are no previous worksheets, this method will return a null objet.|1.5|
-|[worksheetCollection](../../api/excel/excel.worksheetcollection)|_Method_ > [getFirst(visibleOnly: bool)](../../api/excel/excel.worksheetcollection.md#getfirstvisibleonly-bool)|Gets the first worksheet in the collection.|1.5|
-|[worksheetCollection](../../api/excel/excel.worksheetcollection)|_Method_ > [getLast(visibleOnly: bool)](../../api/excel/excel.worksheetcollection.md#getlastvisibleonly-bool)|Gets the last worksheet in the collection.|1.5|
+|[worksheet](../../api/excel/excel.worksheet)|_Method_ > getNext(visibleOnly: bool)|Gets the worksheet that follows this one. If there are no worksheets following this one, this method will throw an error.|1.5|
+|[worksheet](../../api/excel/excel.worksheet)|_Method_ > getNextOrNullObject(visibleOnly: bool)|Gets the worksheet that follows this one. If there are no worksheets following this one, this method will return a null object.|1.5|
+|[worksheet](../../api/excel/excel.worksheet)|_Method_ > getPrevious(visibleOnly: bool)|Gets the worksheet that precedes this one. If there are no previous worksheets, this method will throw an error.|1.5|
+|[worksheet](../../api/excel/excel.worksheet)|_Method_ > getPreviousOrNullObject(visibleOnly: bool)|Gets the worksheet that precedes this one. If there are no previous worksheets, this method will return a null objet.|1.5|
+|[worksheetCollection](../../api/excel/excel.worksheetcollection)|_Method_ > getFirst(visibleOnly: bool)|Gets the first worksheet in the collection.|1.5|
+|[worksheetCollection](../../api/excel/excel.worksheetcollection)|_Method_ > getLast(visibleOnly: bool)|Gets the last worksheet in the collection.|1.5|
 
 ## What's new in Excel JavaScript API 1.4
 The following are the new additions to the Excel JavaScript APIs in requirement set 1.4.
@@ -567,48 +567,46 @@ APIs include `getItem()` to get setting entry via the key, `add()` to add the sp
 
 |Object| What is new| Description|Requirement set|
 |:----|:----|:----|:----|
-|[bindingCollection](../../api/excel/excel.bindingcollection)|_Method_ > [getCount()](../../api/excel/excel.bindingcollection.md#getcount)|Gets the number of bindings in the collection.|1.4|
-|[bindingCollection](../../api/excel/excel.bindingcollection)|_Method_ > [getItemOrNullObject(id: string)](../../api/excel/excel.bindingcollection.md#getitemornullobjectid-string)|Gets a binding object by ID. If the binding object does not exist, will return a null object.|1.4|
-|[chartCollection](../../api/excel/excel.chartcollection)|_Method_ > [getCount()](../../api/excel/excel.chartcollection.md#getcount)|Returns the number of charts in the worksheet.|1.4|
-|[chartCollection](../../api/excel/excel.chartcollection)|_Method_ > [getItemOrNullObject(name: string)](../../api/excel/excel.chartcollection.md#getitemornullobjectname-string)|Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.|1.4|
-|[chartPointsCollection](../../api/excel/excel.chartpointscollection)|_Method_ > [getCount()](../../api/excel/excel.chartpointscollection.md#getcount)|Returns the number of chart points in the series.|1.4|
-|[chartSeriesCollection](../../api/excel/excel.chartseriescollection)|_Method_ > [getCount()](../../api/excel/excel.chartseriescollection.md#getcount)|Returns the number of series in the collection.|1.4|
+|[bindingCollection](../../api/excel/excel.bindingcollection)|_Method_ > getCount()|Gets the number of bindings in the collection.|1.4|
+|[bindingCollection](../../api/excel/excel.bindingcollection)|_Method_ > getItemOrNullObject(id: string)|Gets a binding object by ID. If the binding object does not exist, will return a null object.|1.4|
+|[chartCollection](../../api/excel/excel.chartcollection)|_Method_ > getCount()|Returns the number of charts in the worksheet.|1.4|
+|[chartCollection](../../api/excel/excel.chartcollection)|_Method_ > getItemOrNullObject(name: string)|Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.|1.4|
+|[chartPointsCollection](../../api/excel/excel.chartpointscollection)|_Method_ > getCount()|Returns the number of chart points in the series.|1.4|
+|[chartSeriesCollection](../../api/excel/excel.chartseriescollection)|_Method_ > getCount()|Returns the number of series in the collection.|1.4|
 |[namedItem](../../api/excel/excel.nameditem)|_Property_ > comment|Represents the comment associated with this name.|1.4|
 |[namedItem](../../api/excel/excel.nameditem)|_Property_ > scope|Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only. Possible values are: Equal, Greater, GreaterEqual, Less, LessEqual, NotEqual.|1.4|
 |[namedItem](../../api/excel/excel.nameditem)|_Relationship_ > worksheet|Returns the worksheet on which the named item is scoped to. Throws an error if the items is scoped to the workbook instead. Read-only.|1.4|
 |[namedItem](../../api/excel/excel.nameditem)|_Relationship_ > worksheetOrNullObject|Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the workbook instead. Read-only.|1.4|
-|[namedItem](../../api/excel/excel.nameditem)|_Method_ > [delete()](../../api/excel/excel.nameditem.md#delete)|Deletes the given name.|1.4|
-|[namedItem](../../api/excel/excel.nameditem)|_Method_ > [getRangeOrNullObject()](../../api/excel/excel.nameditem.md#getrangeornullobject)|Returns the range object that is associated with the name. Returns a null object if the named item's type is not a range.|1.4|
-|[namedItemCollection](../../api/excel/excel.nameditemcollection)|_Method_ > [add(name: string, reference: Range or string, comment: string)](../../api/excel/excel.nameditemcollection.md#addname-string-reference-range-or-string-comment-string)|Adds a new name to the collection of the given scope.|1.4|
-|[namedItemCollection](../../api/excel/excel.nameditemcollection)|_Method_ > [addFormulaLocal(name: string, formula: string, comment: string)](../../api/excel/excel.nameditemcollection.md#addformulalocalname-string-formula-string-comment-string)|Adds a new name to the collection of the given scope using the user's locale for the formula.|1.4|
-|[namedItemCollection](../../api/excel/excel.nameditemcollection)|_Method_ > [getCount()](../../api/excel/excel.nameditemcollection.md#getcount)|Gets the number of named items in the collection.|1.4|
-|[namedItemCollection](../../api/excel/excel.nameditemcollection)|_Method_ > [getItemOrNullObject(name: string)](../../api/excel/excel.nameditemcollection.md#getitemornullobjectname-string)|Gets a nameditem object using its name. If the nameditem object does not exist, will return a null object.|1.4|
-|[pivotTableCollection](../../api/excel/excel.pivottablecollection)|_Method_ > [getCount()](../../api/excel/excel.pivottablecollection.md#getcount)|Gets the number of pivot tables in the collection.|1.4|
-|[pivotTableCollection](../../api/excel/excel.pivottablecollection)|_Method_ > [getItemOrNullObject(name: string)](../../api/excel/excel.pivottablecollection.md#getitemornullobjectname-string)|Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.|1.4|
-|[range](../../api/excel/excel.range)|_Method_ > [getIntersectionOrNullObject(anotherRange: Range or string)](../../api/excel/excel.range.md#getintersectionornullobjectanotherrange-range-or-string)|Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is found, will return a null object.|1.4|
-|[range](../../api/excel/excel.range)|_Method_ > [getUsedRangeOrNullObject(valuesOnly: bool)](../../api/excel/excel.range.md#getusedrangeornullobjectvaluesonly-bool)|Returns the used range of the given range object. If there are no used cells within the range, this function will return a null object.|1.4|
-|[rangeViewCollection](../../api/excel/excel.rangeviewcollection)|_Method_ > [getCount()](../../api/excel/excel.rangeviewcollection.md#getcount)|Gets the number of RangeView objects in the collection.|1.4|
+|[namedItem](../../api/excel/excel.nameditem)|_Method_ > delete()|Deletes the given name.|1.4|
+|[namedItem](../../api/excel/excel.nameditem)|_Method_ > getRangeOrNullObject()|Returns the range object that is associated with the name. Returns a null object if the named item's type is not a range.|1.4|
+|[namedItemCollection](../../api/excel/excel.nameditemcollection)|_Method_ > add(name: string, reference: Range or string, comment: string)|Adds a new name to the collection of the given scope.|1.4|
+|[namedItemCollection](../../api/excel/excel.nameditemcollection)|_Method_ > addFormulaLocal(name: string, formula: string, comment: string)|Adds a new name to the collection of the given scope using the user's locale for the formula.|1.4|
+|[namedItemCollection](../../api/excel/excel.nameditemcollection)|_Method_ > getCount()|Gets the number of named items in the collection.|1.4|
+|[namedItemCollection](../../api/excel/excel.nameditemcollection)|_Method_ > getItemOrNullObject(name: string)|Gets a nameditem object using its name. If the nameditem object does not exist, will return a null object.|1.4|
+|[pivotTableCollection](../../api/excel/excel.pivottablecollection)|_Method_ > getCount()|Gets the number of pivot tables in the collection.|1.4|
+|[pivotTableCollection](../../api/excel/excel.pivottablecollection)|_Method_ > getItemOrNullObject(name: string)|Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.|1.4|
+|[range](../../api/excel/excel.range)|_Method_ > getIntersectionOrNullObject(anotherRange: Range or string)|Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is found, will return a null object.|1.4|
+|[range](../../api/excel/excel.range)|_Method_ > getUsedRangeOrNullObject(valuesOnly: bool)|Returns the used range of the given range object. If there are no used cells within the range, this function will return a null object.|1.4|
+|[rangeViewCollection](../../api/excel/excel.rangeviewcollection)|_Method_ > getCount()|Gets the number of RangeView objects in the collection.|1.4|
 |[setting](../../api/excel/excel.setting)|_Property_ > key|Returns the key that represents the id of the Setting. Read-only.|1.4|
 |[setting](../../api/excel/excel.setting)|_Property_ > value|Represents the value stored for this setting.|1.4|
-|[setting](../../api/excel/excel.setting)|_Method_ > [delete()](../../api/excel/excel.setting.md#delete)|Deletes the setting.|1.4|
+|[setting](../../api/excel/excel.setting)|_Method_ > delete()|Deletes the setting.|1.4|
 |[settingCollection](../../api/excel/excel.settingcollection)|_Property_ > items|A collection of setting objects. Read-only.|1.4|
-|[settingCollection](../../api/excel/excel.settingcollection)|_Method_ > [add(key: string, value: (any))](../../api/excel/excel.settingcollection.md#addkey-string-value-any)|Sets or adds the specified setting to the workbook.|1.4|
-|[settingCollection](../../api/excel/excel.settingcollection)|_Method_ > [getCount()](../../api/excel/excel.settingcollection.md#getcount)|Gets the number of Settings in the collection.|1.4|
-|[settingCollection](../../api/excel/excel.settingcollection)|_Method_ > [getItem(key: string)](../../api/excel/excel.settingcollection.md#getitemkey-string)|Gets a Setting entry via the key.|1.4|
-|[settingCollection](../../api/excel/excel.settingcollection)|_Method_ > [getItemOrNullObject(key: string)](../../api/excel/excel.settingcollection.md#getitemornullobjectkey-string)|Gets a Setting entry via the key. If the Setting does not exist, will return a null object.|1.4|
+|[settingCollection](../../api/excel/excel.settingcollection)|_Method_ > add(key: string, value: (any))|Sets or adds the specified setting to the workbook.|1.4|
+|[settingCollection](../../api/excel/excel.settingcollection)|_Method_ > getCount()|Gets the number of Settings in the collection.|1.4|
+|[settingCollection](../../api/excel/excel.settingcollection)|_Method_ > getItem(key: string)|Gets a Setting entry via the key.|1.4|
+|[settingCollection](../../api/excel/excel.settingcollection)|_Method_ > getItemOrNullObject(key: string)|Gets a Setting entry via the key. If the Setting does not exist, will return a null object.|1.4|
 |[settingsChangedEventArgs](../../api/excel/excel.settingschangedeventargs)|_Relationship_ > settings|Gets the Setting object that represents the binding that raised the SettingsChanged event|1.4|
-|[tableCollection](../../api/excel/excel.tablecollection)|_Method_ > [getCount()](../../api/excel/excel.tablecollection.md#getcount)|Gets the number of tables in the collection.|1.4|
-|[tableCollection](../../api/excel/excel.tablecollection)|_Method_ > [getItemOrNullObject(key: number or string)](../../api/excel/excel.tablecollection.md#getitemornullobjectkey-number-or-string)|Gets a table by Name or ID. If the table does not exist, will return a null object.|1.4|
-|[tableColumnCollection](../../api/excel/excel.tablecolumncollection)|_Method_ > [getCount()](../../api/excel/excel.tablecolumncollection.md#getcount)|Gets the number of columns in the table.|1.4|
-|[tableColumnCollection](../../api/excel/excel.tablecolumncollection)|_Method_ > [getItemOrNullObject(key: number or string)](../../api/excel/excel.tablecolumncollection.md#getitemornullobjectkey-number-or-string)|Gets a column object by Name or ID. If the column does not exist, will return a null object.|1.4|
-|[tableRowCollection](../../api/excel/excel.tablerowcollection)|_Method_ > [getCount()](../../api/excel/excel.tablerowcollection.md#getcount)|Gets the number of rows in the table.|1.4|
+|[tableCollection](../../api/excel/excel.tablecollection)|_Method_ > getCount()]|Gets the number of tables in the collection.|1.4|
+|[tableCollection](../../api/excel/excel.tablecollection)|_Method_ > getItemOrNullObject(key: number or string)|Gets a table by Name or ID. If the table does not exist, will return a null object.|1.4|
+|[tableColumnCollection](../../api/excel/excel.tablecolumncollection)|_Method_ > getCount()|Gets the number of columns in the table.|1.4|
+|[tableColumnCollection](../../api/excel/excel.tablecolumncollection)|_Method_ > getItemOrNullObject(key: number or string)|Gets a column object by Name or ID. If the column does not exist, will return a null object.|1.4|
+|[tableRowCollection](../../api/excel/excel.tablerowcollection)|_Method_ > getCount()|Gets the number of rows in the table.|1.4|
 |[workbook](../../api/excel/excel.workbook)|_Relationship_ > settings|Represents a collection of Settings associated with the workbook. Read-only.|1.4|
 |[worksheet](../../api/excel/excel.worksheet)|_Relationship_ > names|Collection of names scoped to the current worksheet. Read-only.|1.4|
-|[worksheet](../../api/excel/excel.worksheet)|_Method_ > [getUsedRangeOrNullObject(valuesOnly: bool)](../../api/excel/excel.worksheet.md#getusedrangeornullobjectvaluesonly-bool)|The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, this function will return a null object.|1.4|
-|[worksheetCollection](../../api/excel/excel.worksheetcollection)|_Method_ > [getCount(visibleOnly: bool)](../../api/excel/excel.worksheetcollection.md#getcountvisibleonly-bool)|Gets the number of worksheets in the collection.|1.4|
-|[worksheetCollection](../../api/excel/excel.worksheetcollection)|_Method_ > [getItemOrNullObject(key: string)](../../api/excel/excel.worksheetcollection.md#getitemornullobjectkey-string)|Gets a worksheet object using its Name or ID. If the worksheet does not exist, will return a null object.|1.4|
-
-
+|[worksheet](../../api/excel/excel.worksheet)|_Method_ > getUsedRangeOrNullObject(valuesOnly: bool)|The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the entire worksheet is blank, this function will return a null object.|1.4|
+|[worksheetCollection](../../api/excel/excel.worksheetcollection)|_Method_ > getCount(visibleOnly: bool)|Gets the number of worksheets in the collection.|1.4|
+|[worksheetCollection](../../api/excel/excel.worksheetcollection)|_Method_ > getItemOrNullObject(key: string)|Gets a worksheet object using its Name or ID. If the worksheet does not exist, will return a null object.|1.4|
 
 ## What's new in Excel JavaScript API 1.3
 
@@ -616,21 +614,21 @@ The following are the new additions to the Excel JavaScript APIs in requirement 
 
 |Object| What's new| Description|Requirement set|
 |:----|:----|:----|:----|
-|[binding](../../api/excel/excel.binding)|_Method_ > [delete()](../../api/excel/excel.binding.md#delete)|Deletes the binding.|1.3|
-|[bindingCollection](../../api/excel/excel.bindingcollection)|_Method_ > [add(range: Range or string, bindingType: string, id: string)](../../api/excel/excel.bindingcollection.md#addrange-range-or-string-bindingtype-string-id-string)|Add a new binding to a particular Range.|1.3|
-|[bindingCollection](../../api/excel/excel.bindingcollection)|_Method_ > [addFromNamedItem(name: string, bindingType: string, id: string)](../../api/excel/excel.bindingcollection.md#addfromnameditemname-string-bindingtype-string-id-string)|Add a new binding based on a named item in the workbook.|1.3|
-|[bindingCollection](../../api/excel/excel.bindingcollection)|_Method_ > [addFromSelection(bindingType: string, id: string)](../../api/excel/excel.bindingcollection.md#addfromselectionbindingtype-string-id-string)|Add a new binding based on the current selection.|1.3|
-|[bindingCollection](../../api/excel/excel.bindingcollection)|_Method_ > [getItemOrNull(id: string)](../../api/excel/excel.bindingcollection.md#getitemornullid-string)|Gets a binding object by ID. If the binding object does not exist, the return object's isNull property will be true.|1.3|
-|[chartCollection](../../api/excel/excel.chartcollection)|_Method_ > [getItemOrNull(name: string)](../../api/excel/excel.chartcollection.md#getitemornullname-string)|Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.|1.3|
-|[namedItemCollection](../../api/excel/excel.nameditemcollection)|_Method_ > [getItemOrNull(name: string)](../../api/excel/excel.nameditemcollection.md#getitemornullname-string)|Gets a nameditem object using its name. If the nameditem object does not exist, the returned object's isNull property will be true.|1.3|
+|[binding](../../api/excel/excel.binding)|_Method_ > delete()|Deletes the binding.|1.3|
+|[bindingCollection](../../api/excel/excel.bindingcollection)|_Method_ > add(range: Range or string, bindingType: string, id: string)|Add a new binding to a particular Range.|1.3|
+|[bindingCollection](../../api/excel/excel.bindingcollection)|_Method_ > addFromNamedItem(name: string, bindingType: string, id: string)|Add a new binding based on a named item in the workbook.|1.3|
+|[bindingCollection](../../api/excel/excel.bindingcollection)|_Method_ > addFromSelection(bindingType: string, id: string)|Add a new binding based on the current selection.|1.3|
+|[bindingCollection](../../api/excel/excel.bindingcollection)|_Method_ > getItemOrNull(id: string)|Gets a binding object by ID. If the binding object does not exist, the return object's isNull property will be true.|1.3|
+|[chartCollection](../../api/excel/excel.chartcollection)|_Method_ > getItemOrNull(name: string)|Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.|1.3|
+|[namedItemCollection](../../api/excel/excel.nameditemcollection)|_Method_ > getItemOrNull(name: string)|Gets a nameditem object using its name. If the nameditem object does not exist, the returned object's isNull property will be true.|1.3|
 |[pivotTable](../../api/excel/excel.pivottable)|_Property_ > name|Name of the PivotTable.|1.3|
 |[pivotTable](../../api/excel/excel.pivottable)|_Relationship_ > worksheet|The worksheet containing the current PivotTable. Read-only.|1.3|
-|[pivotTable](../../api/excel/excel.pivottable)|_Method_ > [refresh()](../../api/excel/excel.pivottable.md#refresh)|Refreshes the PivotTable.|1.3|
+|[pivotTable](../../api/excel/excel.pivottable)|_Method_ > refresh()|Refreshes the PivotTable.|1.3|
 |[pivotTableCollection](../../api/excel/excel.pivottablecollection)|_Property_ > items|A collection of pivotTable objects. Read-only.|1.3|
-|[pivotTableCollection](../../api/excel/excel.pivottablecollection)|_Method_ > [getItem(name: string)](../../api/excel/excel.pivottablecollection.md#getitemname-string)|Gets a PivotTable by name.|1.3|
-|[pivotTableCollection](../../api/excel/excel.pivottablecollection)|_Method_ > [getItemOrNull(name: string)](../../api/excel/excel.pivottablecollection.md#getitemornullname-string)|Gets a PivotTable by name. If the PivotTable does not exist, the return object's isNull property will be true.|1.3|
-|[range](../../api/excel/excel.range)|_Method_ > [getIntersectionOrNull(anotherRange: Range or string)](../../api/excel/excel.range.md#getintersectionornullanotherrange-range-or-string)|Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is found, will return a null object.|1.3|
-|[range](../../api/excel/excel.range)|_Method_ > [getVisibleView()](../../api/excel/excel.range.md#getvisibleview)|Represents the visible rows of the current range.|1.3|
+|[pivotTableCollection](../../api/excel/excel.pivottablecollection)|_Method_ > getItem(name: string)|Gets a PivotTable by name.|1.3|
+|[pivotTableCollection](../../api/excel/excel.pivottablecollection)|_Method_ > getItemOrNull(name: string)|Gets a PivotTable by name. If the PivotTable does not exist, the return object's isNull property will be true.|1.3|
+|[range](../../api/excel/excel.range)|_Method_ > getIntersectionOrNull(anotherRange: Range or string)|Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is found, will return a null object.|1.3|
+|[range](../../api/excel/excel.range)|_Method_ > getVisibleView()|Represents the visible rows of the current range.|1.3|
 |[rangeView](../../api/excel/excel.rangeview)|_Property_ > cellAddresses|Represents the cell addresses of the RangeView. Read-only.|1.3|
 |[rangeView](../../api/excel/excel.rangeview)|_Property_ > columnCount|Returns the number of visible columns. Read-only.|1.3|
 |[rangeView](../../api/excel/excel.rangeview)|_Property_ > formulas|Represents the formula in A1-style notation.|1.3|
@@ -643,23 +641,23 @@ The following are the new additions to the Excel JavaScript APIs in requirement 
 |[rangeView](../../api/excel/excel.rangeview)|_Property_ > valueTypes|Represents the type of data of each cell. Read-only. Possible values are: Unknown, Empty, String, Integer, Double, Boolean, Error.|1.3|
 |[rangeView](../../api/excel/excel.rangeview)|_Property_ > values|Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|1.3|
 |[rangeView](../../api/excel/excel.rangeview)|_Relationship_ > rows|Represents a collection of range views associated with the range. Read-only.|1.3|
-|[rangeView](../../api/excel/excel.rangeview)|_Method_ > [getRange()](../../api/excel/excel.rangeview.md#getrange)|Gets the parent range associated with the current RangeView.|1.3|
+|[rangeView](../../api/excel/excel.rangeview)|_Method_ > getRange()|Gets the parent range associated with the current RangeView.|1.3|
 |[rangeViewCollection](../../api/excel/excel.rangeviewcollection)|_Property_ > items|A collection of rangeView objects. Read-only.|1.3|
-|[rangeViewCollection](../../api/excel/excel.rangeviewcollection)|_Method_ > [getItemAt(index: number)](../../api/excel/excel.rangeviewcollection.md#getitematindex-number)|Gets a RangeView Row via it's index. Zero-Indexed.|1.3|
+|[rangeViewCollection](../../api/excel/excel.rangeviewcollection)|_Method_ > getItemAt(index: number)|Gets a RangeView Row via it's index. Zero-Indexed.|1.3|
 |[setting](../../api/excel/excel.setting)|_Property_ > key|Returns the key that represents the id of the Setting. Read-only.|1.3|
-|[setting](../../api/excel/excel.setting)|_Method_ > [delete()](../../api/excel/excel.setting.md#delete)|Deletes the setting.|1.3|
+|[setting](../../api/excel/excel.setting)|_Method_ > delete()|Deletes the setting.|1.3|
 |[settingCollection](../../api/excel/excel.settingcollection)|_Property_ > items|A collection of setting objects. Read-only.|1.3|
-|[settingCollection](../../api/excel/excel.settingcollection)|_Method_ > [getItem(key: string)](../../api/excel/excel.settingcollection.md#getitemkey-string)|Gets a Setting entry via the key.|1.3|
-|[settingCollection](../../api/excel/excel.settingcollection)|_Method_ > [getItemOrNull(key: string)](../../api/excel/excel.settingcollection.md#getitemornullkey-string)|Gets a Setting entry via the key. If the Setting does not exist, the returned object's isNull property will be true.|1.3|
-|[settingCollection](../../api/excel/excel.settingcollection)|_Method_ > [set(key: string, value: string)](../../api/excel/excel.settingcollection.md#setkey-string-value-string)|Sets or adds the specified setting to the workbook.|1.3|
+|[settingCollection](../../api/excel/excel.settingcollection)|_Method_ > getItem(key: string)|Gets a Setting entry via the key.|1.3|
+|[settingCollection](../../api/excel/excel.settingcollection)|_Method_ > getItemOrNull(key: string)|Gets a Setting entry via the key. If the Setting does not exist, the returned object's isNull property will be true.|1.3|
+|[settingCollection](../../api/excel/excel.settingcollection)|_Method_ > set(key: string, value: string)|Sets or adds the specified setting to the workbook.|1.3|
 |[settingsChangedEventArgs](../../api/excel/excel.settingschangedeventargs)|_Relationship_ > settingCollection|Gets the Setting object that represents the binding that raised the SettingsChanged event|1.3|
 |[table](../../api/excel/excel.table)|_Property_ > highlightFirstColumn|Indicates whether the first column contains special formatting.|1.3|
 |[table](../../api/excel/excel.table)|_Property_ > highlightLastColumn|Indicates whether the last column contains special formatting.|1.3|
 |[table](../../api/excel/excel.table)|_Property_ > showBandedColumns|Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.|1.3|
 |[table](../../api/excel/excel.table)|_Property_ > showBandedRows|Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.|1.3|
 |[table](../../api/excel/excel.table)|_Property_ > showFilterButton|Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.|1.3|
-|[tableCollection](../../api/excel/excel.tablecollection)|_Method_ > [getItemOrNull(key: number or string)](../../api/excel/excel.tablecollection.md#getitemornullkey-number-or-string)|Gets a table by Name or ID. If the table does not exist, the return object's isNull property will be true.|1.3|
-|[tableColumnCollection](../../api/excel/excel.tablecolumncollection)|_Method_ > [getItemOrNull(key: number or string)](../../api/excel/excel.tablecolumncollection.md#getitemornullkey-number-or-string)|Gets a column object by Name or ID. If the column does not exist, the returned object's isNull property will be true.|1.3|
+|[tableCollection](../../api/excel/excel.tablecollection)|_Method_ > getItemOrNull(key: number or string)|Gets a table by Name or ID. If the table does not exist, the return object's isNull property will be true.|1.3|
+|[tableColumnCollection](../../api/excel/excel.tablecolumncollection)|_Method_ > getItemOrNull(key: number or string)|Gets a column object by Name or ID. If the column does not exist, the returned object's isNull property will be true.|1.3|
 |[workbook](../../api/excel/excel.workbook)|_Relationship_ > pivotTables|Represents a collection of PivotTables associated with the workbook. Read-only.|1.3|
 |[workbook](../../api/excel/excel.workbook)|_Relationship_ > settings|Represents a collection of Settings associated with the workbook. Read-only.|1.3|
 |[worksheet](../../api/excel/excel.worksheet)|_Relationship_ > pivotTables|Collection of PivotTables that are part of the worksheet. Read-only.|1.3|
@@ -672,20 +670,20 @@ The following are the new additions to the Excel JavaScript APIs in requirement 
 |:----|:----|:----|:----|
 |[chart](../../api/excel/excel.chart)|_Property_ > id|Gets a chart based on its position in the collection. Read-only.|1.2|
 |[chart](../../api/excel/excel.chart)|_Relationship_ > worksheet|The worksheet containing the current chart. Read-only.|1.2|
-|[chart](../../api/excel/excel.chart)|_Method_ > [getImage(height: number, width: number, fittingMode: string)](../../api/excel/excel.chart.md#getimageheight-number-width-number-fittingmode-string)|Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.|1.2|
+|[chart](../../api/excel/excel.chart)|_Method_ > getImage(height: number, width: number, fittingMode: string)|Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.|1.2|
 |[filter](../../api/excel/excel.filter)|_Relationship_ > criteria|The currently applied filter on the given column. Read-only.|1.2|
-|[filter](../../api/excel/excel.filter)|_Method_ > [apply(criteria: FilterCriteria)](../../api/excel/excel.filter.md#applycriteria-filtercriteria)|Apply the given filter criteria on the given column.|1.2|
-|[filter](../../api/excel/excel.filter)|_Method_ > [applyBottomItemsFilter(count: number)](../../api/excel/excel.filter.md#applybottomitemsfiltercount-number)|Apply a "Bottom Item" filter to the column for the given number of elements.|1.2|
-|[filter](../../api/excel/excel.filter)|_Method_ > [applyBottomPercentFilter(percent: number)](../../api/excel/excel.filter.md#applybottompercentfilterpercent-number)|Apply a "Bottom Percent" filter to the column for the given percentage of elements.|1.2|
-|[filter](../../api/excel/excel.filter)|_Method_ > [applyCellColorFilter(color: string)](../../api/excel/excel.filter.md#applycellcolorfiltercolor-string)|Apply a "Cell Color" filter to the column for the given color.|1.2|
-|[filter](../../api/excel/excel.filter)|_Method_ > [applyCustomFilter(criteria1: string, criteria2: string, oper: string)](../../api/excel/excel.filter.md#applycustomfiltercriteria1-string-criteria2-string-oper-string)|Apply a "Icon" filter to the column for the given criteria strings.|1.2|
-|[filter](../../api/excel/excel.filter)|_Method_ > [applyDynamicFilter(criteria: string)](../../api/excel/excel.filter.md#applydynamicfiltercriteria-string)|Apply a "Dynamic" filter to the column.|1.2|
-|[filter](../../api/excel/excel.filter)|_Method_ > [applyFontColorFilter(color: string)](../../api/excel/excel.filter.md#applyfontcolorfiltercolor-string)|Apply a "Font Color" filter to the column for the given color.|1.2|
-|[filter](../../api/excel/excel.filter)|_Method_ > [applyIconFilter(icon: Icon)](../../api/excel/excel.filter.md#applyiconfiltericon-icon)|Apply a "Icon" filter to the column for the given icon.|1.2|
-|[filter](../../api/excel/excel.filter)|_Method_ > [applyTopItemsFilter(count: number)](../../api/excel/excel.filter.md#applytopitemsfiltercount-number)|Apply a "Top Item" filter to the column for the given number of elements.|1.2|
-|[filter](../../api/excel/excel.filter)|_Method_ > [applyTopPercentFilter(percent: number)](../../api/excel/excel.filter.md#applytoppercentfilterpercent-number)|Apply a "Top Percent" filter to the column for the given percentage of elements.|1.2|
-|[filter](../../api/excel/excel.filter)|_Method_ > [applyValuesFilter(values: ())](../../api/excel/excel.filter.md#applyvaluesfiltervalues-)|Apply a "Values" filter to the column for the given values.|1.2|
-|[filter](../../api/excel/excel.filter)|_Method_ > [clear()](../../api/excel/excel.filter.md#clear)|Clear the filter on the given column.|1.2|
+|[filter](../../api/excel/excel.filter)|_Method_ > apply(criteria: FilterCriteria)|Apply the given filter criteria on the given column.|1.2|
+|[filter](../../api/excel/excel.filter)|_Method_ > applyBottomItemsFilter(count: number)|Apply a "Bottom Item" filter to the column for the given number of elements.|1.2|
+|[filter](../../api/excel/excel.filter)|_Method_ > applyBottomPercentFilter(percent: number)]|Apply a "Bottom Percent" filter to the column for the given percentage of elements.|1.2|
+|[filter](../../api/excel/excel.filter)|_Method_ > applyCellColorFilter(color: string)|Apply a "Cell Color" filter to the column for the given color.|1.2|
+|[filter](../../api/excel/excel.filter)|_Method_ > applyCustomFilter(criteria1: string, criteria2: string, oper: string)|Apply a "Icon" filter to the column for the given criteria strings.|1.2|
+|[filter](../../api/excel/excel.filter)|_Method_ > applyDynamicFilter(criteria: string)|Apply a "Dynamic" filter to the column.|1.2|
+|[filter](../../api/excel/excel.filter)|_Method_ > applyFontColorFilter(color: string)|Apply a "Font Color" filter to the column for the given color.|1.2|
+|[filter](../../api/excel/excel.filter)|_Method_ > applyIconFilter(icon: Icon)|Apply a "Icon" filter to the column for the given icon.|1.2|
+|[filter](../../api/excel/excel.filter)|_Method_ > applyTopItemsFilter(count: number)|Apply a "Top Item" filter to the column for the given number of elements.|1.2|
+|[filter](../../api/excel/excel.filter)|_Method_ > applyTopPercentFilter(percent: number)|Apply a "Top Percent" filter to the column for the given percentage of elements.|1.2|
+|[filter](../../api/excel/excel.filter)|_Method_ > applyValuesFilter(values: ())|Apply a "Values" filter to the column for the given values.|1.2|
+|[filter](../../api/excel/excel.filter)|_Method_ > clear()|Clear the filter on the given column.|1.2|
 |[filterCriteria](../../api/excel/excel.filtercriteria)|_Property_ > color|The HTML color string used to filter cells. Used with "cellColor" and "fontColor" filtering.|1.2|
 |[filterCriteria](../../api/excel/excel.filtercriteria)|_Property_ > criterion1|The first criterion used to filter data. Used as an operator in the case of "custom" filtering.|1.2|
 |[filterCriteria](../../api/excel/excel.filtercriteria)|_Property_ > criterion2|The second criterion used to filter data. Only used as an operator in the case of "custom" filtering.|1.2|
@@ -705,15 +703,15 @@ The following are the new additions to the Excel JavaScript APIs in requirement 
 |[range](../../api/excel/excel.range)|_Property_ > hidden|Represents if all cells of the current range are hidden. Read-only.|1.2|
 |[range](../../api/excel/excel.range)|_Property_ > rowHidden|Represents if all rows of the current range are hidden.|1.2|
 |[range](../../api/excel/excel.range)|_Relationship_ > sort|Represents the range sort of the current range. Read-only.|1.2|
-|[range](../../api/excel/excel.range)|_Method_ > [merge(across: bool)](../../api/excel/excel.range.md#mergeacross-bool)|Merge the range cells into one region in the worksheet.|1.2|
-|[range](../../api/excel/excel.range)|_Method_ > [unmerge()](../../api/excel/excel.range.md#unmerge)|Unmerge the range cells into separate cells.|1.2|
+|[range](../../api/excel/excel.range)|_Method_ > merge(across: bool)|Merge the range cells into one region in the worksheet.|1.2|
+|[range](../../api/excel/excel.range)|_Method_ > unmerge()|Unmerge the range cells into separate cells.|1.2|
 |[rangeFormat](../../api/excel/excel.rangeformat)|_Property_ > columnWidth|Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be returned.|1.2|
 |[rangeFormat](../../api/excel/excel.rangeformat)|_Property_ > rowHeight|Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.|1.2|
 |[rangeFormat](../../api/excel/excel.rangeformat)|_Relationship_ > protection|Returns the format protection object for a range. Read-only.|1.2|
-|[rangeFormat](../../api/excel/excel.rangeformat)|_Method_ > [autofitColumns()](../../api/excel/excel.rangeformat.md#autofitcolumns)|Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.|1.2|
-|[rangeFormat](../../api/excel/excel.rangeformat)|_Method_ > [autofitRows()](../../api/excel/excel.rangeformat.md#autofitrows)|Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.|1.2|
+|[rangeFormat](../../api/excel/excel.rangeformat)|_Method_ > autofitColumns()|Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.|1.2|
+|[rangeFormat](../../api/excel/excel.rangeformat)|_Method_ > autofitRows()|Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.|1.2|
 |[rangeReference](../../api/excel/excel.rangereference)|_Property_ > address|Represents the visible rows of the current range.|1.2|
-|[rangeSort](../../api/excel/excel.rangesort)|_Method_ > [apply(fields: SortField, matchCase: bool, hasHeaders: bool, orientation: string, method: string)](../../api/excel/excel.rangesort.md#applyfields-sortfield-matchcase-bool-hasheaders-bool-orientation-string-method-string)|Perform a sort operation.|1.2|
+|[rangeSort](../../api/excel/excel.rangesort)|_Method_ > apply(fields: SortField, matchCase: bool, hasHeaders: bool, orientation: string, method: string)|Perform a sort operation.|1.2|
 |[sortField](../../api/excel/excel.sortfield)|_Property_ > ascending|Represents whether the sorting is done in an ascending fashion.|1.2|
 |[sortField](../../api/excel/excel.sortfield)|_Property_ > color|Represents the color that is the target of the condition if the sorting is on font or cell color.|1.2|
 |[sortField](../../api/excel/excel.sortfield)|_Property_ > dataOption|Represents additional sorting options for this field. Possible values are: Normal, TextAsNumber.|1.2|
@@ -722,22 +720,22 @@ The following are the new additions to the Excel JavaScript APIs in requirement 
 |[sortField](../../api/excel/excel.sortfield)|_Relationship_ > icon|Represents the icon that is the target of the condition if the sorting is on the cell's icon.|1.2|
 |[table](../../api/excel/excel.table)|_Relationship_ > sort|Represents the sorting for the table. Read-only.|1.2|
 |[table](../../api/excel/excel.table)|_Relationship_ > worksheet|The worksheet containing the current table. Read-only.|1.2|
-|[table](../../api/excel/excel.table)|_Method_ > [clearFilters()](../../api/excel/excel.table.md#clearfilters)|Clears all the filters currently applied on the table.|1.2|
-|[table](../../api/excel/excel.table)|_Method_ > [convertToRange()](../../api/excel/excel.table.md#converttorange)|Converts the table into a normal range of cells. All data is preserved.|1.2|
-|[table](../../api/excel/excel.table)|_Method_ > [reapplyFilters()](../../api/excel/excel.table.md#reapplyfilters)|Reapplies all the filters currently on the table.|1.2|
+|[table](../../api/excel/excel.table)|_Method_ > clearFilters()|Clears all the filters currently applied on the table.|1.2|
+|[table](../../api/excel/excel.table)|_Method_ > convertToRange()|Converts the table into a normal range of cells. All data is preserved.|1.2|
+|[table](../../api/excel/excel.table)|_Method_ > reapplyFilters()|Reapplies all the filters currently on the table.|1.2|
 |[tableColumn](../../api/excel/excel.tablecolumn)|_Relationship_ > filter|Retrieve the filter applied to the column. Read-only.|1.2|
 |[tableSort](../../api/excel/excel.tablesort)|_Property_ > matchCase|Represents whether the casing impacted the last sort of the table. Read-only.|1.2|
 |[tableSort](../../api/excel/excel.tablesort)|_Property_ > method|Represents Chinese character ordering method last used to sort the table. Read-only. Possible values are: PinYin, StrokeCount.|1.2|
 |[tableSort](../../api/excel/excel.tablesort)|_Relationship_ > fields|Represents the current conditions used to last sort the table. Read-only.|1.2|
-|[tableSort](../../api/excel/excel.tablesort)|_Method_ > [apply(fields: SortField, matchCase: bool, method: string)](../../api/excel/excel.tablesort.md#applyfields-sortfield-matchcase-bool-method-string)|Perform a sort operation.|1.2|
-|[tableSort](../../api/excel/excel.tablesort)|_Method_ > [clear()](../../api/excel/excel.tablesort.md#clear)|Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.|1.2|
-|[tableSort](../../api/excel/excel.tablesort)|_Method_ > [reapply()](../../api/excel/excel.tablesort.md#reapply)|Reapplies the current sorting parameters to the table.|1.2|
+|[tableSort](../../api/excel/excel.tablesort)|_Method_ > apply(fields: SortField, matchCase: bool, method: string)|Perform a sort operation.|1.2|
+|[tableSort](../../api/excel/excel.tablesort)|_Method_ > clear()|Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.|1.2|
+|[tableSort](../../api/excel/excel.tablesort)|_Method_ > reapply()|Reapplies the current sorting parameters to the table.|1.2|
 |[workbook](../../api/excel/excel.workbook)|_Relationship_ > functions|Represents Excel application instance that contains this workbook. Read-only.|1.2|
 |[worksheet](../../api/excel/excel.worksheet)|_Relationship_ > protection|Returns sheet protection object for a worksheet. Read-only.|1.2|
 |[worksheetProtection](../../api/excel/excel.worksheetprotection)|_Property_ > protected|Indicates if the worksheet is protected. Read-Only. Read-only.|1.2|
 |[worksheetProtection](../../api/excel/excel.worksheetprotection)|_Relationship_ > options|Sheet protection options. Read-only.|1.2|
-|[worksheetProtection](../../api/excel/excel.worksheetprotection)|_Method_ > [protect(options: WorksheetProtectionOptions)](../../api/excel/excel.worksheetprotection.md#protectoptions-worksheetprotectionoptions)|Protects a worksheet. Fails if the worksheet has been protected.|1.2|
-|[worksheetProtection](../../api/excel/excel.worksheetprotection)|_Method_ > [unprotect()](../../api/excel/excel.worksheetprotection.md#unprotect)|Unprotects a worksheet.|1.2|
+|[worksheetProtection](../../api/excel/excel.worksheetprotection)|_Method_ > protect(options: WorksheetProtectionOptions)|Protects a worksheet. Fails if the worksheet has been protected.|1.2|
+|[worksheetProtection](../../api/excel/excel.worksheetprotection)|_Method_ > unprotect()|Unprotects a worksheet.|1.2|
 |[worksheetProtectionOptions](../../api/excel/excel.worksheetprotectionoptions)|_Property_ > allowAutoFilter|Represents the worksheet protection option of allowing using auto filter feature.|1.2|
 |[worksheetProtectionOptions](../../api/excel/excel.worksheetprotectionoptions)|_Property_ > allowDeleteColumns|Represents the worksheet protection option of allowing deleting columns.|1.2|
 |[worksheetProtectionOptions](../../api/excel/excel.worksheetprotectionoptions)|_Property_ > allowDeleteRows|Represents the worksheet protection option of allowing deleting rows.|1.2|
