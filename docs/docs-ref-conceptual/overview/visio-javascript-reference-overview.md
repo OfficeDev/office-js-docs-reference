@@ -18,10 +18,10 @@ This article describes how to use the Visio JavaScript APIs with Visio Online to
 The EmbeddedSession object initializes communication between the developer frame and the Visio Online frame.
 
 ```js
-       var session = new OfficeExtension.EmbeddedSession(url, { id: "embed-iframe",container: document.getElementById("iframeHost") });
-       session.init().then(function () {	 
-              OfficeExtension.ClientRequestContext._overrideSession = session;
-	   });
+var session = new OfficeExtension.EmbeddedSession(url, { id: "embed-iframe",container: document.getElementById("iframeHost") });
+session.init().then(function () {	 
+	OfficeExtension.ClientRequestContext._overrideSession = session;
+});
 ```
 
 ## RequestContext
@@ -34,9 +34,9 @@ var ctx = new Visio.RequestContext();
 
 ## Proxy objects
 
-The Visio JavaScript objects declared and used in an add-in are proxy objects for the real objects in a Visio document. All actions taken on proxy objects are not realized in Visio, and the state of the Visio document is not realized in the proxy objects until the document state has been synchronized. The document state is synchronized when ```context.sync()``` is run.
+The Visio JavaScript objects declared and used in an add-in are proxy objects for the real objects in a Visio document. All actions taken on proxy objects are not realized in Visio, and the state of the Visio document is not realized in the proxy objects until the document state has been synchronized. The document state is synchronized when `context.sync()` is run.
 
-For example, the local JavaScript object getActivePage is declared to reference the selected page. This can be used to queue the setting of its properties and invoking methods. The actions on such objects are not realized until the sync() method is run.
+For example, the local JavaScript object getActivePage is declared to reference the selected page. This can be used to queue the setting of its properties and invoking methods. The actions on such objects are not realized until the **sync()** method is run.
 
 ```js
 var activePage = ctx.document.getActivePage();
@@ -168,11 +168,13 @@ function getSelectedShapeText() {
 }
 </script>
 ```
+
 After that, all you need is the URL of a Visio diagram that you want to work with. Just upload the Visio diagram to SharePoint Online and open it in Visio Online. From there, open the Embed dialog and use the Embed URL in the above example.
 
-![Copy Visio file URL from Embed dialog](../../images/Visio-embed-url.png)
+![Copy Visio file URL from Embed dialog](../images/Visio-embed-url.png)
+
 If you are using Visio Online in Edit mode, open the Embed dialog by clicking on File > Share > Embed. If you are using Visio Online in View mode, open the Embed dialog by clicking on '...' and then 'Embed'. 
 
 ## Open API specifications
 
-As we design and develop new APIs, we'll make them available for your feedback on our [Open API specifications](https://dev.office.com/reference/add-ins/openspec) page. Find out what new features are in the pipeline, and provide your input on our design specifications. 
+As we design and develop new APIs, we'll make them available for your feedback on our [Open API specifications](../openspec.md) page. Find out what new features are in the pipeline, and provide your input on our design specifications. 
