@@ -76,6 +76,30 @@ items:
           description: sheet protection options.
           type:
             - Excel.WorksheetProtectionOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function(ctx) {
+        // get a reference to Sheet1
+        var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+
+        // Protect inserting or deleting rows in Sheet1
+        sheet.protection.protect({
+          allowInsertRows: false,
+          allowDeleteRows: false
+        });
+
+        return ctx.sync();
+      }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+          console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+      });
+      ```
   - uid: excel.Excel.WorksheetProtection.protected
     summary: |-
       Indicates if the worksheet is protected. Read-Only.
@@ -123,3 +147,24 @@ items:
         type:
           - void
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function(ctx) {
+        // get a reference to Sheet1
+        var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+
+        // Remove all protects applied to Sheet1
+        sheet.protection.unprotect();
+
+        return ctx.sync();
+      }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+          console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+      });
+      ```

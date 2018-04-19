@@ -103,6 +103,25 @@ items:
         type:
           - Excel.Range
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var selectedRange = ctx.workbook.getSelectedRange();
+          selectedRange.load('address');
+          return ctx.sync().then(function() {
+                  console.log(selectedRange.address);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.Workbook.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

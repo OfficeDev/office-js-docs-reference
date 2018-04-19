@@ -86,6 +86,24 @@ items:
         type:
           - Excel.Range
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var table = ctx.workbook.tables.getItem(tableName);
+          table.convertToRange();
+          return ctx.sync(); 
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.Table.delete
     summary: |-
       Deletes the table.
@@ -102,6 +120,24 @@ items:
         type:
           - void
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var table = ctx.workbook.tables.getItem(tableName);
+          table.delete();
+          return ctx.sync(); 
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.Table.getDataBodyRange
     summary: |-
       Gets the range object associated with the data body of the table.
@@ -118,6 +154,27 @@ items:
         type:
           - Excel.Range
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var table = ctx.workbook.tables.getItem(tableName);
+          var tableDataRange = table.getDataBodyRange();
+          tableDataRange.load('address')
+          return ctx.sync().then(function() {
+                  console.log(tableDataRange.address);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.Table.getHeaderRowRange
     summary: |-
       Gets the range object associated with header row of the table.
@@ -134,6 +191,27 @@ items:
         type:
           - Excel.Range
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var table = ctx.workbook.tables.getItem(tableName);
+          var tableHeaderRange = table.getHeaderRowRange();
+          tableHeaderRange.load('address');
+          return ctx.sync().then(function() {
+              console.log(tableHeaderRange.address);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.Table.getRange
     summary: |-
       Gets the range object associated with the entire table.
@@ -150,6 +228,27 @@ items:
         type:
           - Excel.Range
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var table = ctx.workbook.tables.getItem(tableName);
+          var tableRange = table.getRange();
+          tableRange.load('address');    
+          return ctx.sync().then(function() {
+                  console.log(tableRange.address);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.Table.getTotalRowRange
     summary: |-
       Gets the range object associated with totals row of the table.
@@ -166,6 +265,27 @@ items:
         type:
           - Excel.Range
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var table = ctx.workbook.tables.getItem(tableName);
+          var tableTotalsRange = table.getTotalRowRange();
+          tableTotalsRange.load('address');    
+          return ctx.sync().then(function() {
+                  console.log(tableTotalsRange.address);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.Table.highlightFirstColumn
     summary: |-
       Indicates whether the first column contains special formatting.

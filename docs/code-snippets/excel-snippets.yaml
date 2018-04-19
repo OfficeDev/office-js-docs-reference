@@ -1,0 +1,1326 @@
+Excel.Application.calculate:
+  - |-
+    Excel.run(function (ctx) {
+        ctx.workbook.application.calculate('Full');
+        return ctx.sync();
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.Binding.getRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var binding = ctx.workbook.bindings.getItemAt(0);
+        var range = binding.getRange();
+        range.load('cellCount');
+        return ctx.sync().then(function() {
+            console.log(range.cellCount);
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.Binding.getTable:
+  - |-
+    Excel.run(function (ctx) { 
+        var binding = ctx.workbook.bindings.getItemAt(0);
+        var table = binding.getTable();
+        table.load('name');
+        return ctx.sync().then(function() {
+            console.log(table.name);
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.Binding.getText:
+  - |-
+    Excel.run(function (ctx) { 
+        var binding = ctx.workbook.bindings.getItemAt(0);
+        var text = binding.getText();
+        binding.load('text');
+        return ctx.sync().then(function() {
+            console.log(text);
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.BindingCollection.getItem:
+  - |-
+    function addEventHandler() {
+        //Create Table1
+        Excel.run(function (ctx) { 
+            ctx.workbook.tables.add("Sheet1!A1:C4", true);
+            return ctx.sync().then(function() {
+                     console.log("My Diet Data Inserted!");
+            })
+            .catch(function (error) {
+                     console.log(JSON.stringify(error));
+            });
+        });
+        
+        //Create a new table binding for Table1
+        Office.context.document.bindings.addFromNamedItemAsync("Table1", Office.CoercionType.Table, { id: "myBinding" }, function (asyncResult) {
+            if (asyncResult.status == "failed") {
+                console.log("Action failed with error: " + asyncResult.error.message);
+            }
+            else {
+                // If succeeded, then add event handler to the table binding.
+                Office.select("bindings#myBinding").addHandlerAsync(Office.EventType.BindingDataChanged, onBindingDataChanged);
+            }
+        });
+    }
+        
+    // when data in the table is changed, this event will be triggered.
+    function onBindingDataChanged(eventArgs) {
+        Excel.run(function (ctx) { 
+            // highlight the table in orange to indicate data has been changed.
+            ctx.workbook.bindings.getItem(eventArgs.binding.id).getTable().getDataBodyRange().format.fill.color = "Orange";
+            return ctx.sync().then(function() {
+                    console.log("The value in this table got changed!");
+            })
+            .catch(function (error) {
+                    console.log(JSON.stringify(error));
+            });
+        });
+    }    
+  - |-
+    Excel.run(function (ctx) { 
+        var lastPosition = ctx.workbook.bindings.count - 1;
+        var binding = ctx.workbook.bindings.getItemAt(lastPosition);
+        binding.load('type')
+        return ctx.sync().then(function() {
+            console.log(binding.type); 
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.BindingCollection.getItemAt:
+  - |-
+    Excel.run(function (ctx) { 
+        var lastPosition = ctx.workbook.bindings.count - 1;
+        var binding = ctx.workbook.bindings.getItemAt(lastPosition);
+        binding.load('type')
+        return ctx.sync().then(function() {
+            console.log(binding.type); 
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.Chart.delete:
+  - |-
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        chart.delete();
+        return ctx.sync(); 
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.Chart.getImage:
+  - |-
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        var image = chart.getImage();
+        return ctx.sync(); 
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.Chart.setData:
+  - |-
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        var sourceData = "A1:B4";
+        chart.setData(sourceData, "Columns");
+        return ctx.sync(); 
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.Chart.setPosition:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Charts";
+        var rangeSelection = "A1:B4";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeSelection);
+        var sourceData = sheetName + "!" + "A1:B4";
+        var chart = ctx.workbook.worksheets.getItem(sheetName).charts.add("pie", range, "auto");
+        chart.width = 500;
+        chart.height = 300;
+        chart.setPosition("C2", null);
+        return ctx.sync(); 
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.ChartCollection.add:
+  - |-
+    Excel.run(function (ctx) { 
+        var rangeSelection = "A1:B4";
+        var range = ctx.workbook.worksheets.getItem(sheetName)
+            .getRange(rangeSelection);
+        var chart = ctx.workbook.worksheets.getItem(sheetName)
+            .charts.add("ColumnClustered", range, "auto");    return ctx.sync().then(function() {
+                console.log("New Chart Added");
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.ChartCollection.getItem:
+  - |-
+    Excel.run(function (ctx) { 
+        var chartname = 'Chart1';
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartname);
+        return ctx.sync().then(function() {
+            console.log(chart.height);
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var chartId = 'SamplChartId';
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartId);
+        return ctx.sync().then(function() {
+            console.log(chart.height);
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
+        return ctx.sync().then(function() {
+            console.log(chart.name);
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.ChartCollection.getItemAt:
+  - |-
+    Excel.run(function (ctx) { 
+        var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
+        return ctx.sync().then(function() {
+            console.log(chart.name);
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.ChartFill.clear:
+  - |-
+    Excel.run(function (ctx) { 
+        var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;    
+        gridlines.format.line.clear();
+        return ctx.sync().then(function() {
+            console.log("Chart Major Gridlines Format Cleared");
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.ChartFill.setSolidColor:
+  - |-
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");      
+        chart.format.fill.setSolidColor("#FF0000");
+        return ctx.sync().then(function() {
+            console.log("Chart1 Background Color Changed.");
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.ChartLineFormat.clear:
+  - |-
+    Excel.run(function (ctx) { 
+        var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;    
+        gridlines.format.line.clear();
+        return ctx.sync().then(function() {
+            console.log("Chart Major Gridlines Format Cleared");
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.ChartPointsCollection.getItemAt:
+  - |-
+    Excel.run(function (ctx) { 
+        var points = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+        points.getItemAt(0).format.fill.setSolidColor("8FBC8F");
+        return ctx.sync().then(function() {
+            console.log("Point Border Color Changed");
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.ChartSeriesCollection.getItemAt:
+  - |-
+    Excel.run(function (ctx) { 
+        var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+        seriesCollection.load('items');
+        return ctx.sync().then(function() {
+            console.log(seriesCollection.items[0].name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.ConditionalFormatCollection.add:
+  - |-
+    Excel.run(function (ctx) {
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:C3";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.iconSet);
+        conditionalFormat.iconOrNull.style = "YellowThreeArrows";
+        return ctx.sync().then(function () {
+            console.log("Added new yellow three arrow icon set.");
+        });
+    }).catch(function (error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+        });
+Excel.ConditionalFormatCollection.clearAll:
+  - |-
+    Excel.run(function (ctx) {
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:C3";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var conditionalFormats = range.conditionalFormats;
+        var conditionalFormat = conditionalFormats.clearAll();
+        return ctx.sync().then(function () {
+            console.log("Cleared all conditional formats from this range.");
+        });
+    }).catch(function (error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+        });
+Excel.ConditionalFormatCollection.getCount:
+  - |-
+    Excel.run(function (ctx) {
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:C3";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.iconSet);
+        conditionalFormat.iconOrNull.style = Excel.IconSet.fourTrafficLights;
+        var cfCount = range.conditionalFormats.getCount(); 
+    
+        return ctx.sync().then(function () {
+            console.log("Count: " + cfCount.value);
+        });
+    }).catch(function (error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Excel.ConditionalFormatCollection.getItem:
+  - |-
+    Excel.run(function (ctx) {
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:C3";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var conditionalFormats = range.conditionalFormats;
+        var conditionalFormat = conditionalFormats.getItemAt(3);
+        return ctx.sync().then(function () {
+            console.log("Conditional Format at Item 3 Loaded");
+        });
+    }).catch(function (error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+        });
+Excel.ConditionalFormatCollection.getItemAt:
+  - |-
+    Excel.run(function (ctx) {
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:C3";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var conditionalFormats = range.conditionalFormats;
+        var conditionalFormat = conditionalFormats.getItemAt(3);
+        return ctx.sync().then(function () {
+            console.log("Conditional Format at Item 3 Loaded");
+        });
+    }).catch(function (error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+        });
+Excel.NamedItem.getRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var names = ctx.workbook.names;
+        var range = names.getItem('MyRange').getRange();
+        range.load('address');
+        return ctx.sync().then(function() {
+                console.log(range.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.NamedItemCollection.getItem:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = 'Sheet1';
+        var nameditem = ctx.workbook.names.getItem(sheetName);
+        nameditem.load('type');
+        return ctx.sync().then(function() {
+                console.log(nameditem.type);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.clear:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "D:F";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.clear();
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.delete:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "D:F";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.delete();
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.getBoundingRect:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "D4:G6";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var range = range.getBoundingRect("G4:H8");
+        range.load('address');
+        return ctx.sync().then(function() {
+            console.log(range.address); 
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.getCell:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8";
+        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var range = worksheet.getRange(rangeAddress);
+        var cell = range.cell(0,0);
+        cell.load('address');
+        return ctx.sync().then(function() {
+            console.log(cell.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.getColumn:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet19";
+        var rangeAddress = "A1:F8";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getColumn(1);
+        range.load('address');
+        return ctx.sync().then(function() {
+            console.log(range.address); 
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.getEntireColumn:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "D:F";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var rangeEC = range.getEntireColumn();
+        rangeEC.load('address');
+        return ctx.sync().then(function() {
+            console.log(rangeEC.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.getEntireRow:
+  - |-
+    Excel.run(function (ctx) {
+        var sheetName = "Sheet1";
+        var rangeAddress = "D:F"; 
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var rangeER = range.getEntireRow();
+        rangeER.load('address');
+        return ctx.sync().then(function() {
+            console.log(rangeER.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.getIntersection:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
+        range.load('address');
+        return ctx.sync().then(function() {
+            console.log(range.address); 
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.getLastCell:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastCell();
+        range.load('address');
+        return ctx.sync().then(function() {
+            console.log(range.address); // prints Sheet1!F8
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.getLastColumn:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastColumn();
+        range.load('address');
+        return ctx.sync().then(function() {
+            console.log(range.address); 
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.getLastRow:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastRow();
+        range.load('address');
+        return ctx.sync().then(function() {
+            console.log(range.address); 
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.getOffsetRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "D4:F6";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
+        range.load('address');
+        return ctx.sync().then(function() {
+            console.log(range.address); 
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.getRow:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getRow(1);
+        range.load('address');
+        return ctx.sync().then(function() {
+            console.log(range.address); // prints Sheet1!A2:F2
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.getUsedRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "D:F";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        var rangeUR = range.getUsedRange();
+        rangeUR.load('address');
+        return ctx.sync().then(function() {
+            console.log(rangeUR.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.insert:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "F5:F10";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.insert();
+        return ctx.sync(); 
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.merge:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:C3";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.merge(true);
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:C3";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.unmerge();
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.select:
+  - |-
+    Excel.run(function (ctx) {
+        var sheetName = "Sheet1";
+        var rangeAddress = "F5:F10"; 
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.select();
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.unmerge:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:C3";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.unmerge();
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.RangeBorderCollection.getItem:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8";
+        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var range = worksheet.getRange(rangeAddress);
+        var borderName = 'EdgeTop';
+        var border = range.format.borders.getItem(borderName);
+        border.load('style');
+        return ctx.sync().then(function() {
+                console.log(border.style);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8";
+        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var range = worksheet.getRange(rangeAddress);
+        var border = range.format.borders.getItemAt(0);
+        border.load('sideIndex');
+        return ctx.sync().then(function() {
+                console.log(border.sideIndex);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.RangeBorderCollection.getItemAt:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8";
+        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var range = worksheet.getRange(rangeAddress);
+        var border = range.format.borders.getItemAt(0);
+        border.load('sideIndex');
+        return ctx.sync().then(function() {
+                console.log(border.sideIndex);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.RangeFill.clear:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "F:G";
+        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var range = worksheet.getRange(rangeAddress);
+        var rangeFill = range.format.fill;
+        rangeFill.clear();
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Table.convertToRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var table = ctx.workbook.tables.getItem(tableName);
+        table.convertToRange();
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Table.delete:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var table = ctx.workbook.tables.getItem(tableName);
+        table.delete();
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Table.getDataBodyRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var table = ctx.workbook.tables.getItem(tableName);
+        var tableDataRange = table.getDataBodyRange();
+        tableDataRange.load('address')
+        return ctx.sync().then(function() {
+                console.log(tableDataRange.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Table.getHeaderRowRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var table = ctx.workbook.tables.getItem(tableName);
+        var tableHeaderRange = table.getHeaderRowRange();
+        tableHeaderRange.load('address');
+        return ctx.sync().then(function() {
+            console.log(tableHeaderRange.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Table.getRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var table = ctx.workbook.tables.getItem(tableName);
+        var tableRange = table.getRange();
+        tableRange.load('address');    
+        return ctx.sync().then(function() {
+                console.log(tableRange.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Table.getTotalRowRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var table = ctx.workbook.tables.getItem(tableName);
+        var tableTotalsRange = table.getTotalRowRange();
+        tableTotalsRange.load('address');    
+        return ctx.sync().then(function() {
+                console.log(tableTotalsRange.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableCollection.add:
+  - |-
+    Excel.run(function (ctx) { 
+        var table = ctx.workbook.tables.add('Sheet1!A1:E7', true);
+        table.load('name');
+        return ctx.sync().then(function() {
+            console.log(table.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableCollection.getItem:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var table = ctx.workbook.tables.getItem(tableName);
+        table.load('name');
+        return ctx.sync().then(function() {
+                console.log(table.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var table = ctx.workbook.tables.getItemAt(0);
+        table.load('name');
+        return ctx.sync().then(function() {
+                console.log(table.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableCollection.getItemAt:
+  - |-
+    Excel.run(function (ctx) { 
+        var table = ctx.workbook.tables.getItemAt(0);
+        table.load('name');
+        return ctx.sync().then(function() {
+                console.log(table.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableColumn.delete:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(2);
+        column.delete();
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableColumn.getDataBodyRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+        var dataBodyRange = column.getDataBodyRange();
+        dataBodyRange.load('address');
+        return ctx.sync().then(function() {
+            console.log(dataBodyRange.address);
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableColumn.getHeaderRowRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+        var headerRowRange = columns.getHeaderRowRange();
+        headerRowRange.load('address');
+        return ctx.sync().then(function() {
+            console.log(headerRowRange.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableColumn.getRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+        var columnRange = columns.getRange();
+        columnRange.load('address');
+        return ctx.sync().then(function() {
+            console.log(columnRange.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableColumn.getTotalRowRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
+        var totalRowRange = columns.getTotalRowRange();
+        totalRowRange.load('address');
+        return ctx.sync().then(function() {
+            console.log(totalRowRange.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableColumnCollection.add:
+  - |-
+    Excel.run(function (ctx) { 
+        var tables = ctx.workbook.tables;
+        var values = [["Sample"], ["Values"], ["For"], ["New"], ["Column"]];
+        var column = tables.getItem("Table1").columns.add(null, values);
+        column.load('name');
+        return ctx.sync().then(function() {
+            console.log(column.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableColumnCollection.getItem:
+  - |-
+    Excel.run(function (ctx) { 
+        var tablecolumn = ctx.workbook.tables.getItem('Table1').columns.getItem(0);
+        tablecolumn.load('name');
+        return ctx.sync().then(function() {
+                console.log(tablecolumn.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var tablecolumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
+        tablecolumn.load('name');
+        return ctx.sync().then(function() {
+                console.log(tablecolumn.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableColumnCollection.getItemAt:
+  - |-
+    Excel.run(function (ctx) { 
+        var tablecolumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
+        tablecolumn.load('name');
+        return ctx.sync().then(function() {
+                console.log(tablecolumn.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableRow.delete:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var row = ctx.workbook.tables.getItem(tableName).rows.getItemAt(2);
+        row.delete();
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableRow.getRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var row = ctx.workbook.tables.getItem(tableName).rows.getItemAt(0);
+        var rowRange = row.getRange();
+        rowRange.load('address');
+        return ctx.sync().then(function() {
+            console.log(rowRange.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableRowCollection.add:
+  - |-
+    Excel.run(function (ctx) { 
+        var tables = ctx.workbook.tables;
+        var values = [["Sample", "Values", "For", "New", "Row"]];
+        var row = tables.getItem("Table1").rows.add(null, values);
+        row.load('index');
+        return ctx.sync().then(function() {
+            console.log(row.index);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableRowCollection.getItemAt:
+  - |-
+    Excel.run(function (ctx) { 
+        var tablerow = ctx.workbook.tables.getItem('Table1').rows.getItemAt(0);
+        tablerow.load('name');
+        return ctx.sync().then(function() {
+                console.log(tablerow.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableSort.apply:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var table = ctx.workbook.tables.getItem(tableName);
+        table.sort.apply([ 
+                {
+                    key: 2,
+                    ascending: true
+                },
+            ], true);
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Workbook.getSelectedRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var selectedRange = ctx.workbook.getSelectedRange();
+        selectedRange.load('address');
+        return ctx.sync().then(function() {
+                console.log(selectedRange.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Worksheet.activate:
+  - |-
+    Excel.run(function (ctx) { 
+        var wSheetName = 'Sheet1';
+        var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+        worksheet.activate();
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Worksheet.delete:
+  - |-
+    Excel.run(function (ctx) { 
+        var wSheetName = 'Sheet1';
+        var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+        worksheet.delete();
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Worksheet.getCell:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8";
+        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var cell = worksheet.getCell(0,0);
+        cell.load('address');
+        return ctx.sync().then(function() {
+            console.log(cell.address);
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Worksheet.getRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8";
+        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var range = worksheet.getRange(rangeAddress);
+        range.load('cellCount');
+        return ctx.sync().then(function() {
+            console.log(range.cellCount);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeName = 'MyRange';
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeName);
+        range.load('address');
+        return ctx.sync().then(function() {
+            console.log(range.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Worksheet.getUsedRange:
+  - |-
+    Excel.run(function (ctx) { 
+        var wSheetName = 'Sheet1';
+        var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+        var usedRange = worksheet.getUsedRange();
+        usedRange.load('address');
+        return ctx.sync().then(function() {
+                console.log(usedRange.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.WorksheetCollection.add:
+  - |-
+    Excel.run(function (ctx) { 
+        var wSheetName = 'Sample Name';
+        var worksheet = ctx.workbook.worksheets.add(wSheetName);
+        worksheet.load('name');
+        return ctx.sync().then(function() {
+            console.log(worksheet.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.WorksheetCollection.getActiveWorksheet:
+  - |-
+    Excel.run(function (ctx) {  
+        var activeWorksheet = ctx.workbook.worksheets.getActiveWorksheet();
+        activeWorksheet.load('name');
+        return ctx.sync().then(function() {
+                console.log(activeWorksheet.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.WorksheetProtection.protect:
+  - |-
+    Excel.run(function(ctx) {
+      // get a reference to Sheet1
+      var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+    
+      // Protect inserting or deleting rows in Sheet1
+      sheet.protection.protect({
+        allowInsertRows: false,
+        allowDeleteRows: false
+      });
+    
+      return ctx.sync();
+    }).catch(function(error) {
+      console.log("Error: " + error);
+      if (error instanceof OfficeExtension.Error) {
+        console.log("Debug info: " + JSON.stringify(error.debugInfo));
+      }
+    });
+Excel.WorksheetProtection.unprotect:
+  - |-
+    Excel.run(function(ctx) {
+      // get a reference to Sheet1
+      var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+    
+      // Remove all protects applied to Sheet1
+      sheet.protection.unprotect();
+    
+      return ctx.sync();
+    }).catch(function(error) {
+      console.log("Error: " + error);
+      if (error instanceof OfficeExtension.Error) {
+        console.log("Debug info: " + JSON.stringify(error.debugInfo));
+      }
+    });

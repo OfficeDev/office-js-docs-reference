@@ -1789,6 +1789,62 @@
               "remarks": [],
               "isBeta": false
             },
+            "getSelectedEntities": {
+              "kind": "method",
+              "signature": "getSelectedEntities(): Entities;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "Entities",
+                "description": []
+              },
+              "parameters": {},
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the entities found in the selected item that are currently selected"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.6]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "getSelectedRegExMatches": {
+              "kind": "method",
+              "signature": "getSelectedRegExMatches(): any;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "any",
+                "description": []
+              },
+              "parameters": {},
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Returns string values in the currently selected message object that match the regular expressions defined in the manifest XML file and are selected in the current item"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.6]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
             "itemClass": {
               "kind": "property",
               "signature": "itemClass: string;",

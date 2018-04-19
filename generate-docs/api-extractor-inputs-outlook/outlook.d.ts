@@ -539,6 +539,19 @@ export declare namespace Office {
          * Returns string values that match the named regular expression defined in the manifest XML file
          */
         getRegExMatchesByName(name: string): Array<string>;
+        /**
+        * Gets the entities found in the selected item that are currently selected
+        *
+        * [Api set: Mailbox 1.6]
+        */
+        getSelectedEntities(): Entities;
+        /**
+         * Returns string values in the currently selected message object that match the regular expressions defined in the manifest XML file and
+         * are selected in the current item
+         *
+         * [Api set: Mailbox 1.6]
+         */
+        getSelectedRegExMatches(): any;
     }
     export interface LocalClientTime {
         month: number;

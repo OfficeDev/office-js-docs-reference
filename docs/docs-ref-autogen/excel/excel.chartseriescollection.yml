@@ -72,6 +72,25 @@ items:
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+          seriesCollection.load('items');
+          return ctx.sync().then(function() {
+              console.log(seriesCollection.items[0].name);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.ChartSeriesCollection.items
     summary: Gets the loaded child items in this collection.
     name: items

@@ -49,6 +49,26 @@ items:
             determines the name of the new worksheet.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var wSheetName = 'Sample Name';
+          var worksheet = ctx.workbook.worksheets.add(wSheetName);
+          worksheet.load('name');
+          return ctx.sync().then(function() {
+              console.log(worksheet.name);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.WorksheetCollection.getActiveWorksheet
     summary: |-
       Gets the currently active worksheet in the workbook.
@@ -65,6 +85,25 @@ items:
         type:
           - Excel.Worksheet
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) {  
+          var activeWorksheet = ctx.workbook.worksheets.getActiveWorksheet();
+          activeWorksheet.load('name');
+          return ctx.sync().then(function() {
+                  console.log(activeWorksheet.name);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.WorksheetCollection.getCount
     summary: |-
       Gets the number of worksheets in the collection.

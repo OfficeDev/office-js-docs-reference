@@ -59,6 +59,25 @@ items:
             the data down by one row.
           type:
             - boolean
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var table = ctx.workbook.tables.add('Sheet1!A1:E7', true);
+          table.load('name');
+          return ctx.sync().then(function() {
+              console.log(table.name);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.TableCollection.count
     summary: |-
       Returns the number of tables in the workbook. Read-only.
@@ -111,6 +130,41 @@ items:
           description: Name or ID of the table to be retrieved.
           type:
             - number | string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var table = ctx.workbook.tables.getItem(tableName);
+          table.load('name');
+          return ctx.sync().then(function() {
+                  console.log(table.name);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var table = ctx.workbook.tables.getItemAt(0);
+          table.load('name');
+          return ctx.sync().then(function() {
+                  console.log(table.name);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.TableCollection.getItemAt
     summary: |-
       Gets a table based on its position in the collection.
@@ -132,6 +186,25 @@ items:
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var table = ctx.workbook.tables.getItemAt(0);
+          table.load('name');
+          return ctx.sync().then(function() {
+                  console.log(table.name);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.TableCollection.getItemOrNullObject
     summary: |-
       Gets a table by Name or ID. If the table does not exist, will return a null object.

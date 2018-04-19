@@ -56,6 +56,49 @@ items:
           description: Index value of the border object to be retrieved. See Excel.BorderIndex for details.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+          var range = worksheet.getRange(rangeAddress);
+          var borderName = 'EdgeTop';
+          var border = range.format.borders.getItem(borderName);
+          border.load('style');
+          return ctx.sync().then(function() {
+                  console.log(border.style);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+          var range = worksheet.getRange(rangeAddress);
+          var border = range.format.borders.getItemAt(0);
+          border.load('sideIndex');
+          return ctx.sync().then(function() {
+                  console.log(border.sideIndex);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.RangeBorderCollection.getItemAt
     summary: |-
       Gets a border object using its index
@@ -77,6 +120,29 @@ items:
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+          var range = worksheet.getRange(rangeAddress);
+          var border = range.format.borders.getItemAt(0);
+          border.load('sideIndex');
+          return ctx.sync().then(function() {
+                  console.log(border.sideIndex);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.RangeBorderCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
