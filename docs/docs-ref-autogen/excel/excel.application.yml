@@ -40,6 +40,7 @@ items:
           description: Specifies the calculation type to use. See Excel.CalculationType for details.
           type:
             - string
+    remarks: "\n\n#### Examples\n\n```javascript\nExcel.run(function (ctx) {\n\tctx.workbook.application.calculate('Full');\n\treturn ctx.sync();\n}).catch(function(error) {\n\t\tconsole.log(\"Error: \" + error);\n\t\tif (error instanceof OfficeExtension.Error) {\n\t\t\tconsole.log(\"Debug info: \" + JSON.stringify(error.debugInfo));\n\t\t}\n});\n```\n"
   - uid: excel.Excel.Application.calculationMode
     summary: |-
       Returns the calculation mode used in the workbook. See Excel.CalculationMode for details. Read-only.
