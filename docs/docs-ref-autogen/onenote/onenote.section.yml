@@ -44,6 +44,38 @@ items:
           description: 'The title of the new page. \[Api set: OneNoteApi 1.1\]'
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function (context) {
+                  
+          // Queue a command to add a page to the current section.
+          var page = context.application.getActiveSection().addPage("Wish list");
+                  
+          // Queue a command to load the id and title of the new page. 
+          // This example loads the new page so it can read its properties later.           
+          page.load('id,title');
+                  
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .then(function () {
+                   
+                  // Display the properties.       
+                  console.log("Page name: " + page.title);
+                  console.log("Page ID: " + page.id);
+
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.Section.clientUrl
     summary: |-
       The client url of the section. Read only
@@ -77,6 +109,40 @@ items:
           description: 'The notebook to copy this section to. \[Api set: OneNoteApi 1.1\]'
           type:
             - OneNote.Notebook
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function (context) {
+          var app = context.application;
+          
+          // Gets the active Notebook.
+          var notebook = app.getActiveNotebook();
+          
+          // Gets the active Section.
+          var section = app.getActiveSection();
+          
+          var newSection;
+          
+          return context.sync()
+              .then(function() {
+                  newSection = section.copyToNotebook(notebook);
+                  newSection.load('id');
+                  return context.sync();
+              })
+              .then(function() {
+                  console.log(newSection.id);
+              });
+      })
+      .catch(function (error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.Section.copyToSectionGroup
     summary: Copies this section to specified section group.
     name: copyToSectionGroup(destinationSectionGroup)
@@ -95,6 +161,41 @@ items:
           description: 'The section group to copy this section to. \[Api set: OneNoteApi 1.1\]'
           type:
             - OneNote.SectionGroup
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function (ctx) {
+          var app = ctx.application;
+          
+          // Gets the active Notebook.
+          var notebook = app.getActiveNotebook();
+          
+          // Gets the active Section.
+          var section = app.getActiveSection();
+          
+          var newSection;
+          
+          return ctx.sync()
+              .then(function() {
+                  var firstSectionGroup = notebook.sectionGroups.items[0];
+                  newSection = section.copyToSectionGroup(firstSectionGroup);
+                  newSection.load('id');
+                  return ctx.sync();
+              })
+              .then(function() {
+                  console.log(newSection.id);
+              });
+      })
+      .catch(function (error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.Section.id
     summary: |-
       Gets the ID of the section. Read-only.
@@ -132,6 +233,37 @@ items:
           description: 'The name of the new section. \[Api set: OneNoteApi 1.1\]'
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function (context) {
+                  
+          // Queue a command to insert a section after the current section.
+          var section = context.application.getActiveSection().insertSectionAsSibling("After", "New section");
+                  
+          // Queue a command to load the id and name of the new section. 
+          // This example loads the new section so it can read its properties later.           
+          section.load('id,name');
+                  
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .then(function () {
+                   
+                  // Display the properties.       
+                  console.log("Section name: " + section.name);
+                  console.log("Section ID: " + section.id);
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.Section.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

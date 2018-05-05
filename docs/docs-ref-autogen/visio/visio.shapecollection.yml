@@ -35,6 +35,26 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var activePage = ctx.document.getActivePage();
+          var numShapesActivePage = activePage.shapes.getCount();
+          return ctx.sync().then(function () {
+              console.log("Shapes Count: " + numShapesActivePage.value);
+          });
+
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: visio.Visio.ShapeCollection.getItem
     summary: |-
       Gets a Shape using its key (name or Index).

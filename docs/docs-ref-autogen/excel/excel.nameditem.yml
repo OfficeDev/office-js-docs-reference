@@ -61,31 +61,6 @@ items:
         type:
           - void
         description: ''
-    remarks: |
-
-
-      #### Examples
-
-      ```typescript
-      try {
-          await Excel.run(async (context) => {
-
-              const sheet = context.workbook.worksheets.getItem("Sample");
-
-              sheet.names.getItem("TotalAmount").delete();
-
-              // Replace the named item (TotalAmount) with the actual formula for TotalAmount to avoid displaying #NAME in the cell.
-              sheet.getRange("D11").values = [["=SUM(ExpensesTable[AMOUNT])"]];
-
-              await context.sync();
-
-          });
-      }
-      catch (error) {
-          OfficeHelpers.UI.notify(error);
-          OfficeHelpers.Utilities.log(error);
-      }
-      ```
   - uid: excel.Excel.NamedItem.getRange
     summary: >-
       Returns the range object that is associated with the name. Throws an error if the named item's type is not a
@@ -104,6 +79,26 @@ items:
         type:
           - Excel.Range
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var names = ctx.workbook.names;
+          var range = names.getItem('MyRange').getRange();
+          range.load('address');
+          return ctx.sync().then(function() {
+                  console.log(range.address);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.NamedItem.getRangeOrNullObject
     summary: >-
       Returns the range object that is associated with the name. Returns a null object if the named item's type is not a

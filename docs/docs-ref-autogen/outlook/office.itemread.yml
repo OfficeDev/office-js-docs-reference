@@ -18,6 +18,8 @@ items:
       - outlook.Office.ItemRead.getFilteredEntitiesByName
       - outlook.Office.ItemRead.getRegExMatches
       - outlook.Office.ItemRead.getRegExMatchesByName
+      - outlook.Office.ItemRead.getSelectedEntities
+      - outlook.Office.ItemRead.getSelectedRegExMatches
       - outlook.Office.ItemRead.itemClass
       - outlook.Office.ItemRead.itemId
       - outlook.Office.ItemRead.normalizedSubject
@@ -159,6 +161,40 @@ items:
           description: ''
           type:
             - string
+  - uid: outlook.Office.ItemRead.getSelectedEntities
+    summary: |-
+      Gets the entities found in the selected item that are currently selected
+
+      \[ [API set: Mailbox 1.6](http://bing.com?type=outlook) \]
+    name: getSelectedEntities()
+    fullName: outlook.Office.ItemRead.getSelectedEntities
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedEntities(): Entities;'
+      return:
+        type:
+          - Entities
+        description: ''
+  - uid: outlook.Office.ItemRead.getSelectedRegExMatches
+    summary: >-
+      Returns string values in the currently selected message object that match the regular expressions defined in the
+      manifest XML file and are selected in the current item
+
+
+      \[ [API set: Mailbox 1.6](http://bing.com?type=outlook) \]
+    name: getSelectedRegExMatches()
+    fullName: outlook.Office.ItemRead.getSelectedRegExMatches
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedRegExMatches(): any;'
+      return:
+        type:
+          - any
+        description: ''
   - uid: outlook.Office.ItemRead.itemClass
     name: itemClass
     fullName: outlook.Office.ItemRead.itemClass

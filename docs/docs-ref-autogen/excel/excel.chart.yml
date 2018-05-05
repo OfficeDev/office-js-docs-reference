@@ -79,6 +79,23 @@ items:
         type:
           - void
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          chart.delete();
+          return ctx.sync(); 
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.Chart.format
     summary: |-
       Encapsulates the format properties for the chart area. Read-only.
@@ -127,6 +144,23 @@ items:
             and width are set)."
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          var image = chart.getImage();
+          return ctx.sync(); 
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.Chart.height
     summary: |-
       Represents the height, in points, of the chart object.
@@ -280,6 +314,24 @@ items:
             (default), Rows, Columns. See Excel.ChartSeriesBy for details.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          var sourceData = "A1:B4";
+          chart.setData(sourceData, "Columns");
+          return ctx.sync(); 
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.Chart.setPosition
     summary: |-
       Positions the chart relative to cells on the worksheet.
@@ -309,6 +361,29 @@ items:
             cell/range.
           type:
             - Excel.Range | string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Charts";
+          var rangeSelection = "A1:B4";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeSelection);
+          var sourceData = sheetName + "!" + "A1:B4";
+          var chart = ctx.workbook.worksheets.getItem(sheetName).charts.add("pie", range, "auto");
+          chart.width = 500;
+          chart.height = 300;
+          chart.setPosition("C2", null);
+          return ctx.sync(); 
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.Chart.title
     summary: >-
       Represents the title of the specified chart, including the text, visibility, position and formating of the title.

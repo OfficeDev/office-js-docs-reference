@@ -60,6 +60,26 @@ items:
         type:
           - Visio.Page
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var document = ctx.document;
+          var activePage = document.getActivePage();
+          activePage.load();
+          return ctx.sync().then(function () {
+          console.log("pageName: " +activePage.name);
+            });   
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: visio.Visio.Document.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -237,6 +257,24 @@ items:
           description: Name of the page
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var document = ctx.document;
+          var pageName = "Page-1";
+          document.setActivePage(pageName);
+          return ctx.sync();
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: visio.Visio.Document.startDataRefresh
     summary: |-
       Triggers the refresh of the data in the Diagram, for all pages.
@@ -253,6 +291,23 @@ items:
         type:
           - void
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var document = ctx.document;
+          document.startDataRefresh();
+          return ctx.sync();
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: visio.Visio.Document.toJSON
     name: toJSON()
     fullName: visio.Visio.Document.toJSON

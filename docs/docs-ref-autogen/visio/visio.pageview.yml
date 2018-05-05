@@ -45,6 +45,24 @@ items:
           description: ShapeId to be seen in the center.
           type:
             - number
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var activePage = ctx.document.getActivePage();
+          var shape = activePage.shapes.getItem(0);
+          activePage.view.centerViewportOnShape(shape.Id);
+          return ctx.sync();
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: visio.Visio.PageView.fitToWindow
     summary: |-
       Fit Page to current window.

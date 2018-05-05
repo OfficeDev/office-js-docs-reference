@@ -84,39 +84,6 @@ items:
           description: ID of the object to be retrieved.
           type:
             - string
-    remarks: |
-
-
-      #### Examples
-
-      ```typescript
-      await Excel.run(async (context) => {
-          const settings = context.workbook.settings;
-          const xmlPartIDSetting = settings.getItem("ContosoReviewXmlPartId").load("value");
-
-          await context.sync();
-          
-          let customXmlPart = context.workbook.customXmlParts.getItem(xmlPartIDSetting.value);
-          const xmlBlob = customXmlPart.getXml();
-          customXmlPart.delete();
-          customXmlPart = context.workbook.customXmlParts.getItemOrNullObject(xmlPartIDSetting.value);
-
-          await context.sync();
-
-          if (customXmlPart.isNullObject) {
-              $("#display-xml").text(`The XML part with the id ${xmlPartIDSetting.value} has been deleted.`);
-
-              // Delete the unneeded setting too.
-              xmlPartIDSetting.delete();            
-          } else {
-              const readableXml = addLineBreaksToXML(xmlBlob.value);
-              const strangeMessage = `This is strange. The XML part with the id ${xmlPartIDSetting.value} has not been deleted:\n${readableXml}`
-              $("#display-xml").text(strangeMessage);
-          }
-
-          await context.sync();
-      });
-      ```
   - uid: excel.Excel.CustomXmlPartScopedCollection.getOnlyItem
     summary: |-
       If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error.

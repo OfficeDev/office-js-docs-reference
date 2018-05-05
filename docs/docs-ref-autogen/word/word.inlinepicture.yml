@@ -124,6 +124,38 @@ items:
         type:
           - Word.InlinePicture
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy object for the first inline picture.
+          var firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
+
+          // Queue a command to load the alternative text title of the picture.
+          context.load(firstPicture, 'altTextTitle');
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (firstPicture.isNullObject) {
+                  console.log('There are inline pictures in this document.')
+              } else {
+                  console.log(firstPicture.altTextTitle);
+              }
+          });   
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: word.Word.InlinePicture.getNextOrNullObject
     summary: |-
       Gets the next inline image. Returns a null object if this inline image is the last one.
@@ -140,6 +172,38 @@ items:
         type:
           - Word.InlinePicture
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // Run a batch operation against the Word object model.
+      Word.run(function (context) {
+          
+          // Create a proxy object for the first inline picture.
+          var firstPicture = context.document.body.inlinePictures.getFirstOrNullObject();
+
+          // Queue a command to load the alternative text title of the picture.
+          context.load(firstPicture, 'altTextTitle');
+
+          // Synchronize the document state by executing the queued commands,
+          // and return a promise to indicate task completion.
+          return context.sync().then(function () {
+              if (firstPicture.isNullObject) {
+                  console.log('There are inline pictures in this document.')
+              } else {
+                  console.log(firstPicture.altTextTitle);
+              }
+          });   
+      })
+      .catch(function (error) {
+          console.log('Error: ' + JSON.stringify(error));
+          if (error instanceof OfficeExtension.Error) {
+              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: word.Word.InlinePicture.getRange
     summary: |-
       Gets the picture, or the starting or ending point of the picture, as a range.

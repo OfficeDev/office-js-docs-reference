@@ -3740,6 +3740,42 @@
             }
           }
         },
+        "onReady": {
+          "kind": "function",
+          "signature": "export function onReady(callback?: (info: { host: HostType, platform: PlatformType} ) => any): Promise<{ host: HostType, platform: PlatformType }>;",
+          "returnValue": {
+            "type": "Promise<{ host: HostType, platform: PlatformType }>",
+            "description": [
+              {
+                "kind": "text",
+                "text": "A Promise that contains the host and platform info, once initialization is completed."
+              }
+            ]
+          },
+          "parameters": {
+            "callback": {
+              "name": "callback",
+              "description": [
+                {
+                  "kind": "text",
+                  "text": "An optional callback method, that will receive the host and platform info. Alternatively, rather than use a callback, an add-in may simply wait for the Promise returned by the function to resolve."
+                }
+              ],
+              "isOptional": true,
+              "isSpread": false,
+              "type": "(info: { host: HostType, platform: PlatformType} ) => any"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise will wait until the Office host is ready to accept API calls. Note that though this API is intended to be used inside an Office add-in, it can also be used outside the add-in. In that case, once Office.js determines that it is running outside of an Office host application, it will call the callback and resolve the promise with \"null\" for both the host and platform."
+            }
+          ],
+          "remarks": [],
+          "isBeta": false
+        },
         "PlatformType": {
           "kind": "enum",
           "values": {
