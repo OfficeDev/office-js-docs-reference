@@ -13,21 +13,21 @@ Visio.Application.Property:
     });
 Visio.Comment.Property:
   - |-
-     Visio.run(function (ctx) { 
+    Visio.run(function (ctx) { 
         var activePage = ctx.document.getActivePage();
         var shapeName = "Position Belt.41";
         var shape = activePage.shapes.getItem(shapeName);
         var shapecomments= shape.comments;
-            shapecomments.load();
-            return ctx.sync().then(function () {
-                 for(var i=0; i<shapecomments.items.length;i++)
+        shapecomments.load();
+        return ctx.sync().then(function () {
+            for(var i=0; i<shapecomments.items.length;i++)
             {
-                        var comment= shapecomments.items[i];
+                var comment= shapecomments.items[i];
                 console.log("comment Author: " + comment.author);
                 console.log("Comment Text: " + comment.text);
                 console.log("Date " + comment.date);
             }
-         });
+        });
     }).catch(function(error) {
             console.log("Error: " + error);
             if (error instanceof OfficeExtension.Error) {
@@ -36,21 +36,21 @@ Visio.Comment.Property:
     });
 Visio.CommentCollection.Property:
   - |-
-     Visio.run(function (ctx) { 
+    Visio.run(function (ctx) { 
         var activePage = ctx.document.getActivePage();
         var shapeName = "Position Belt.41";
         var shape = activePage.shapes.getItem(shapeName);
         var shapecomments= shape.comments;
-            shapecomments.load();
-            return ctx.sync().then(function () {
-                 for(var i=0; i<shapecomments.items.length;i++)
+        shapecomments.load();
+        return ctx.sync().then(function () {
+            for(var i=0; i<shapecomments.items.length;i++)
             {
-                        var comment= shapecomments.items[i];
+                var comment= shapecomments.items[i];
                 console.log("comment Author: " + comment.author);
                 console.log("Comment Text: " + comment.text);
                 console.log("Date " + comment.date);
             }
-         });
+        });
     }).catch(function(error) {
             console.log("Error: " + error);
             if (error instanceof OfficeExtension.Error) {
