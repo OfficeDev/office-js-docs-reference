@@ -87,38 +87,6 @@ items:
           }
       });
       ```
-
-      ```javascript
-      OneNote.run(function (context) {
-
-          // Get the notebooks that are open in the application instance and have the specified name.
-          var notebooks = context.application.notebooks.getByName("Homework");
-
-          // Queue a command to load the notebooks. 
-          // For best performance, request specific properties.           
-          notebooks.load("id");
-
-          // Run the queued commands, and return a promise to indicate task completion.
-          return context.sync()
-              .then(function () {
-
-                  // Iterate through the collection or access items individually by index, for example: notebooks.items[0]
-                  $.each(notebooks.items, function(index, notebook) {
-                      notebook.addSection("Biology");
-                      notebook.addSection("Spanish");
-                      notebook.addSection("Computer Science");
-                  });
-                  
-                  return context.sync();
-              });
-      })
-      .catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: onenote.OneNote.NotebookCollection.getItem
     summary: Gets a notebook by ID or by its index in the collection. Read-only.
     name: getItem(index)

@@ -90,10 +90,10 @@ items:
           chart.delete();
           return ctx.sync(); 
       }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
       });
       ```
   - uid: excel.Excel.Chart.format
@@ -155,10 +155,10 @@ items:
           var image = chart.getImage();
           return ctx.sync(); 
       }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
       });
       ```
   - uid: excel.Excel.Chart.height
@@ -326,10 +326,10 @@ items:
           chart.setData(sourceData, "Columns");
           return ctx.sync(); 
       }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
       });
       ```
   - uid: excel.Excel.Chart.setPosition
@@ -378,10 +378,10 @@ items:
           chart.setPosition("C2", null);
           return ctx.sync(); 
       }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
       });
       ```
   - uid: excel.Excel.Chart.title

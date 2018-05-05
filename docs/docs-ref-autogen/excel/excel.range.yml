@@ -363,6 +363,7 @@ items:
       #### Examples
 
       ```javascript
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "D4:G6";
@@ -370,7 +371,7 @@ items:
           var range = range.getBoundingRect("G4:H8");
           range.load('address');
           return ctx.sync().then(function() {
-              console.log(range.address); 
+              console.log(range.address); // Prints Sheet1!D4:H8
           });
       }).catch(function(error) {
               console.log("Error: " + error);
@@ -457,13 +458,14 @@ items:
       #### Examples
 
       ```javascript
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet19";
           var rangeAddress = "A1:F8";
           var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getColumn(1);
           range.load('address');
           return ctx.sync().then(function() {
-              console.log(range.address); 
+              console.log(range.address); // prints Sheet1!B1:B8
           });
       }).catch(function(error) {
               console.log("Error: " + error);
@@ -544,6 +546,7 @@ items:
       #### Examples
 
       ```javascript
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "D:F";
@@ -584,6 +587,7 @@ items:
       #### Examples
 
       ```javascript
+
       Excel.run(function (ctx) {
           var sheetName = "Sheet1";
           var rangeAddress = "D:F"; 
@@ -627,13 +631,14 @@ items:
       #### Examples
 
       ```javascript
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
           var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
           range.load('address');
           return ctx.sync().then(function() {
-              console.log(range.address); 
+              console.log(range.address); // prints Sheet1!D4:F6
           });
       }).catch(function(error) {
               console.log("Error: " + error);
@@ -687,6 +692,7 @@ items:
       #### Examples
 
       ```javascript
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
@@ -724,13 +730,14 @@ items:
       #### Examples
 
       ```javascript
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
           var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastColumn();
           range.load('address');
           return ctx.sync().then(function() {
-              console.log(range.address); 
+              console.log(range.address); // prints Sheet1!F1:F8
           });
       }).catch(function(error) {
               console.log("Error: " + error);
@@ -761,13 +768,14 @@ items:
       #### Examples
 
       ```javascript
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
           var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastRow();
           range.load('address');
           return ctx.sync().then(function() {
-              console.log(range.address); 
+              console.log(range.address); // prints Sheet1!A8:F8
           });
       }).catch(function(error) {
               console.log("Error: " + error);
@@ -820,7 +828,7 @@ items:
           var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
           range.load('address');
           return ctx.sync().then(function() {
-              console.log(range.address); 
+              console.log(range.address); // prints Sheet1!H3:K5
           });
       }).catch(function(error) {
               console.log("Error: " + error);
@@ -887,6 +895,7 @@ items:
       #### Examples
 
       ```javascript
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
@@ -979,6 +988,7 @@ items:
       #### Examples
 
       ```javascript
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "D:F";
@@ -1078,6 +1088,7 @@ items:
       #### Examples
 
       ```javascript
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "F5:F10";
@@ -1251,6 +1262,7 @@ items:
       #### Examples
 
       ```javascript
+
       Excel.run(function (ctx) {
           var sheetName = "Sheet1";
           var rangeAddress = "F5:F10"; 

@@ -67,10 +67,10 @@ items:
                   console.log("New Chart Added");
           });
       }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
       });
       ```
   - uid: excel.Excel.ChartCollection.count
@@ -135,13 +135,13 @@ items:
           var chartname = 'Chart1';
           var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartname);
           return ctx.sync().then(function() {
-              console.log(chart.height);
+                  console.log(chart.height);
           });
       }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
       });
       ```
 
@@ -150,13 +150,13 @@ items:
           var chartId = 'SamplChartId';
           var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartId);
           return ctx.sync().then(function() {
-              console.log(chart.height);
+                  console.log(chart.height);
           });
       }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
       });
       ```
 
@@ -165,13 +165,13 @@ items:
           var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
           var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
           return ctx.sync().then(function() {
-              console.log(chart.name);
+                  console.log(chart.name);
           });
       }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
       });
       ```
   - uid: excel.Excel.ChartCollection.getItemAt
@@ -205,13 +205,13 @@ items:
           var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
           var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
           return ctx.sync().then(function() {
-              console.log(chart.name);
+                  console.log(chart.name);
           });
       }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
       });
       ```
   - uid: excel.Excel.ChartCollection.getItemOrNullObject

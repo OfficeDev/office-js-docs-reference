@@ -50,10 +50,10 @@ items:
           ctx.workbook.application.calculate('Full');
           return ctx.sync();
       }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
       });
       ```
   - uid: excel.Excel.Application.calculationMode

@@ -4,10 +4,24 @@ Excel.Application.calculate:
         ctx.workbook.application.calculate('Full');
         return ctx.sync();
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Application.Property:
+  - |-
+    Excel.run(function (ctx) {
+        var application = ctx.workbook.application;
+        application.load('calculationMode');
+        return ctx.sync().then(function() {
+            console.log(application.calculationMode);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.Binding.getRange:
   - |-
@@ -19,10 +33,10 @@ Excel.Binding.getRange:
             console.log(range.cellCount);
         });
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.Binding.getTable:
   - |-
@@ -31,13 +45,13 @@ Excel.Binding.getTable:
         var table = binding.getTable();
         table.load('name');
         return ctx.sync().then(function() {
-            console.log(table.name);
+                console.log(table.name);
         });
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.Binding.getText:
   - |-
@@ -49,63 +63,77 @@ Excel.Binding.getText:
             console.log(text);
         });
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Binding.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var binding = ctx.workbook.bindings.getItemAt(0);
+        binding.load('type');
+        return ctx.sync().then(function() {
+            console.log(binding.type);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.BindingCollection.getItem:
   - |-
     function addEventHandler() {
         //Create Table1
-        Excel.run(function (ctx) { 
-            ctx.workbook.tables.add("Sheet1!A1:C4", true);
-            return ctx.sync().then(function() {
-                     console.log("My Diet Data Inserted!");
-            })
-            .catch(function (error) {
-                     console.log(JSON.stringify(error));
-            });
+    Excel.run(function (ctx) { 
+        ctx.workbook.tables.add("Sheet1!A1:C4", true);
+        return ctx.sync().then(function() {
+                 console.log("My Diet Data Inserted!");
+        })
+        .catch(function (error) {
+                 console.log(JSON.stringify(error));
         });
-        
+    });
         //Create a new table binding for Table1
-        Office.context.document.bindings.addFromNamedItemAsync("Table1", Office.CoercionType.Table, { id: "myBinding" }, function (asyncResult) {
-            if (asyncResult.status == "failed") {
-                console.log("Action failed with error: " + asyncResult.error.message);
-            }
-            else {
-                // If succeeded, then add event handler to the table binding.
-                Office.select("bindings#myBinding").addHandlerAsync(Office.EventType.BindingDataChanged, onBindingDataChanged);
-            }
-        });
+    Office.context.document.bindings.addFromNamedItemAsync("Table1", Office.CoercionType.Table, { id: "myBinding" }, function (asyncResult) {
+        if (asyncResult.status == "failed") {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        }
+        else {
+            // If succeeded, then add event handler to the table binding.
+            Office.select("bindings#myBinding").addHandlerAsync(Office.EventType.BindingDataChanged, onBindingDataChanged);
+        }
+    });
     }
         
     // when data in the table is changed, this event will be triggered.
     function onBindingDataChanged(eventArgs) {
-        Excel.run(function (ctx) { 
-            // highlight the table in orange to indicate data has been changed.
-            ctx.workbook.bindings.getItem(eventArgs.binding.id).getTable().getDataBodyRange().format.fill.color = "Orange";
-            return ctx.sync().then(function() {
-                    console.log("The value in this table got changed!");
-            })
-            .catch(function (error) {
-                    console.log(JSON.stringify(error));
-            });
+    Excel.run(function (ctx) { 
+        // highlight the table in orange to indicate data has been changed.
+        ctx.workbook.bindings.getItem(eventArgs.binding.id).getTable().getDataBodyRange().format.fill.color = "Orange";
+        return ctx.sync().then(function() {
+                console.log("The value in this table got changed!");
+        })
+        .catch(function (error) {
+                console.log(JSON.stringify(error));
         });
-    }    
+    });
+    }
+    
   - |-
     Excel.run(function (ctx) { 
         var lastPosition = ctx.workbook.bindings.count - 1;
         var binding = ctx.workbook.bindings.getItemAt(lastPosition);
         binding.load('type')
         return ctx.sync().then(function() {
-            console.log(binding.type); 
+                console.log(binding.type); 
         });
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.BindingCollection.getItemAt:
   - |-
@@ -114,13 +142,43 @@ Excel.BindingCollection.getItemAt:
         var binding = ctx.workbook.bindings.getItemAt(lastPosition);
         binding.load('type')
         return ctx.sync().then(function() {
-            console.log(binding.type); 
+                console.log(binding.type); 
         });
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.BindingCollection.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var bindings = ctx.workbook.bindings;
+        bindings.load('items');
+        return ctx.sync().then(function() {
+            for (var i = 0; i < bindings.items.length; i++)
+            {
+                console.log(bindings.items[i].id);
+            }
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var bindings = ctx.workbook.bindings;
+        bindings.load('count');
+        return ctx.sync().then(function() {
+            console.log("Bindings: Count= " + bindings.count);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.Chart.delete:
   - |-
@@ -129,10 +187,10 @@ Excel.Chart.delete:
         chart.delete();
         return ctx.sync(); 
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.Chart.getImage:
   - |-
@@ -141,10 +199,10 @@ Excel.Chart.getImage:
         var image = chart.getImage();
         return ctx.sync(); 
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.Chart.setData:
   - |-
@@ -154,10 +212,10 @@ Excel.Chart.setData:
         chart.setData(sourceData, "Columns");
         return ctx.sync(); 
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.Chart.setPosition:
   - |-
@@ -172,10 +230,85 @@ Excel.Chart.setPosition:
         chart.setPosition("C2", null);
         return ctx.sync(); 
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Chart.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        chart.load('name');
+        return ctx.sync().then(function() {
+                console.log(chart.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        chart.name="New Name";
+        chart.top = 100;
+        chart.left = 100;
+        chart.height = 200;
+        chart.width = 200;
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");
+        chart.name="New Name";    
+        chart.top = 100;
+        chart.left = 100;
+        chart.height =200;
+        chart.width =200;
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.ChartAxis.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        var axis = chart.axes.valueAxis;
+        axis.load('maximum');
+        return ctx.sync().then(function() {
+                console.log(axis.maximum);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        chart.axes.valueAxis.maximum = 5;
+        chart.axes.valueAxis.minimum = 0;
+        chart.axes.valueAxis.majorUnit = 1;
+        chart.axes.valueAxis.minorUnit = 0.2;
+        return ctx.sync().then(function() {
+                console.log("Axis Settings Changed");
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.ChartCollection.add:
   - |-
@@ -188,10 +321,10 @@ Excel.ChartCollection.add:
                 console.log("New Chart Added");
         });
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.ChartCollection.getItem:
   - |-
@@ -199,39 +332,39 @@ Excel.ChartCollection.getItem:
         var chartname = 'Chart1';
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartname);
         return ctx.sync().then(function() {
-            console.log(chart.height);
+                console.log(chart.height);
         });
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
   - |-
     Excel.run(function (ctx) { 
         var chartId = 'SamplChartId';
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartId);
         return ctx.sync().then(function() {
-            console.log(chart.height);
+                console.log(chart.height);
         });
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
   - |-
     Excel.run(function (ctx) { 
         var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
         return ctx.sync().then(function() {
-            console.log(chart.name);
+                console.log(chart.name);
         });
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.ChartCollection.getItemAt:
   - |-
@@ -239,13 +372,59 @@ Excel.ChartCollection.getItemAt:
         var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
         return ctx.sync().then(function() {
-            console.log(chart.name);
+                console.log(chart.name);
         });
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.ChartCollection.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
+        charts.load('items');
+        return ctx.sync().then(function() {
+            for (var i = 0; i < charts.items.length; i++)
+            {
+                console.log(charts.items[i].name);
+            }
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
+        charts.load('count');
+        return ctx.sync().then(function() {
+            console.log("charts: Count= " + charts.count);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.ChartDataLabels.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        chart.datalabels.showValue = true;
+        chart.datalabels.position = "top";
+        chart.datalabels.showSeriesName = true;
+        return ctx.sync().then(function() {
+                console.log("Datalabels Shown");
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.ChartFill.clear:
   - |-
@@ -253,27 +432,120 @@ Excel.ChartFill.clear:
         var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;    
         gridlines.format.line.clear();
         return ctx.sync().then(function() {
-            console.log("Chart Major Gridlines Format Cleared");
+                console.log("Chart Major Gridlines Format Cleared");
         });
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.ChartFill.setSolidColor:
   - |-
     Excel.run(function (ctx) { 
-        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");      
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+    
         chart.format.fill.setSolidColor("#FF0000");
+    
         return ctx.sync().then(function() {
-            console.log("Chart1 Background Color Changed.");
+                console.log("Chart1 Background Color Changed.");
         });
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.ChartFont.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var title = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;
+        title.format.font.name = "Calibri";
+        title.format.font.size = 12;
+        title.format.font.color = "#FF0000";
+        title.format.font.italic =  false;
+        title.format.font.bold = true;
+        title.format.font.underline = "None";
+        return ctx.sync();
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var title = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;
+        title.format.font.name = "Calibri";
+        title.format.font.size = 12;
+        title.format.font.color = "#FF0000";
+        title.format.font.italic =  false;
+        title.format.font.bold = true;
+        title.format.font.underline = "None";
+        return ctx.sync();
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.ChartGridlines.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        var majGridlines = chart.axes.valueaxis.majorGridlines;
+        majGridlines.load('visible');
+        return ctx.sync().then(function() {
+                console.log(majGridlines.visible);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        chart.axes.valueAxis.majorGridlines.visible = true;
+        return ctx.sync().then(function() {
+                console.log("Axis Gridlines Added ");
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.ChartLegend.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        var legend = chart.legend;
+        legend.load('position');
+        return ctx.sync().then(function() {
+                console.log(legend.position);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        chart.legend.visible = true;
+        chart.legend.position = "top"; 
+        chart.legend.overlay = false; 
+        return ctx.sync().then(function() {
+                console.log("Legend Shown ");
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.ChartLineFormat.clear:
   - |-
@@ -281,9 +553,23 @@ Excel.ChartLineFormat.clear:
         var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;    
         gridlines.format.line.clear();
         return ctx.sync().then(function() {
-            console.log("Chart Major Gridlines Format Cleared");
+                console.log("Chart Major Gridlines Format Cleared");
         });
     }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.ChartLineFormat.Property:
+  - |-
+    Excel.run(function (ctx) {
+        var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
+        gridlines.format.line.color = "#FF0000";
+        return ctx.sync().then(function () {
+            console.log("Chart Gridlines Color Updated");
+        });
+    }).catch(function (error) {
         console.log("Error: " + error);
         if (error instanceof OfficeExtension.Error) {
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
@@ -298,10 +584,51 @@ Excel.ChartPointsCollection.getItemAt:
             console.log("Point Border Color Changed");
         });
     }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.ChartPointsCollection.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var pointsCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+        pointsCollection.load('items');
+        return ctx.sync().then(function() {
+            console.log("Points Collection loaded");
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var pointsCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+        pointsCollection.load('count');
+        return ctx.sync().then(function() {
+            console.log("points: Count= " + pointsCollection.count);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.ChartSeries.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+        chart.series.getItemAt(0).name = "New Series Name";
+        return ctx.sync().then(function() {
+                console.log("Series1 Renamed");
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
     });
 Excel.ChartSeriesCollection.getItemAt:
   - |-
@@ -316,6 +643,69 @@ Excel.ChartSeriesCollection.getItemAt:
             if (error instanceof OfficeExtension.Error) {
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
+    });
+Excel.ChartSeriesCollection.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+        seriesCollection.load('items');
+        return ctx.sync().then(function() {
+            for (var i = 0; i < seriesCollection.items.length; i++)
+            {
+                console.log(seriesCollection.items[i].name);
+            }
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+        seriesCollection.load('count');
+        return ctx.sync().then(function() {
+            console.log("series: Count= " + seriesCollection.count);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.ChartTitle.Property:
+  - |-
+    Excel.run(function (ctx) { 
+    var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+    
+    var title = chart.title;
+    title.load('text');
+    return ctx.sync().then(function() {
+            console.log(title.text);
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+    });
+  - |-
+    Excel.run(function (ctx) { 
+    var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+    
+    chart.title.text= "My Chart"; 
+    chart.title.visible=true;
+    chart.title.overlay=true;
+    
+    return ctx.sync().then(function() {
+            console.log("Char Title Changed");
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
     });
 Excel.ConditionalFormatCollection.add:
   - |-
@@ -419,6 +809,21 @@ Excel.NamedItem.getRange:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
+Excel.NamedItem.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var names = ctx.workbook.names;
+        var namedItem = names.getItem('MyRange');
+        namedItem.load('type');
+        return ctx.sync().then(function() {
+                console.log(namedItem.type);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
 Excel.NamedItemCollection.getItem:
   - |-
     Excel.run(function (ctx) { 
@@ -427,6 +832,24 @@ Excel.NamedItemCollection.getItem:
         nameditem.load('type');
         return ctx.sync().then(function() {
                 console.log(nameditem.type);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.NamedItemCollection.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var nameditems = ctx.workbook.names;
+        nameditems.load('items');
+        return ctx.sync().then(function() {
+            for (var i = 0; i < nameditems.items.length; i++)
+            {
+                console.log(nameditems.items[i].name);
+                console.log(nameditems.items[i].index);
+            }
         });
     }).catch(function(error) {
             console.log("Error: " + error);
@@ -464,6 +887,7 @@ Excel.Range.delete:
     });
 Excel.Range.getBoundingRect:
   - |-
+    
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "D4:G6";
@@ -471,7 +895,7 @@ Excel.Range.getBoundingRect:
         var range = range.getBoundingRect("G4:H8");
         range.load('address');
         return ctx.sync().then(function() {
-            console.log(range.address); 
+            console.log(range.address); // Prints Sheet1!D4:H8
         });
     }).catch(function(error) {
             console.log("Error: " + error);
@@ -499,13 +923,14 @@ Excel.Range.getCell:
     });
 Excel.Range.getColumn:
   - |-
+    
     Excel.run(function (ctx) { 
         var sheetName = "Sheet19";
         var rangeAddress = "A1:F8";
         var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getColumn(1);
         range.load('address');
         return ctx.sync().then(function() {
-            console.log(range.address); 
+            console.log(range.address); // prints Sheet1!B1:B8
         });
     }).catch(function(error) {
             console.log("Error: " + error);
@@ -515,6 +940,7 @@ Excel.Range.getColumn:
     });
 Excel.Range.getEntireColumn:
   - |-
+    
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "D:F";
@@ -532,6 +958,7 @@ Excel.Range.getEntireColumn:
     });
 Excel.Range.getEntireRow:
   - |-
+    
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
         var rangeAddress = "D:F"; 
@@ -549,13 +976,14 @@ Excel.Range.getEntireRow:
     });
 Excel.Range.getIntersection:
   - |-
+    
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
         var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
         range.load('address');
         return ctx.sync().then(function() {
-            console.log(range.address); 
+            console.log(range.address); // prints Sheet1!D4:F6
         });
     }).catch(function(error) {
             console.log("Error: " + error);
@@ -565,6 +993,7 @@ Excel.Range.getIntersection:
     });
 Excel.Range.getLastCell:
   - |-
+    
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
@@ -581,13 +1010,14 @@ Excel.Range.getLastCell:
     });
 Excel.Range.getLastColumn:
   - |-
+    
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
         var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastColumn();
         range.load('address');
         return ctx.sync().then(function() {
-            console.log(range.address); 
+            console.log(range.address); // prints Sheet1!F1:F8
         });
     }).catch(function(error) {
             console.log("Error: " + error);
@@ -597,13 +1027,14 @@ Excel.Range.getLastColumn:
     });
 Excel.Range.getLastRow:
   - |-
+    
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
         var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastRow();
         range.load('address');
         return ctx.sync().then(function() {
-            console.log(range.address); 
+            console.log(range.address); // prints Sheet1!A8:F8
         });
     }).catch(function(error) {
             console.log("Error: " + error);
@@ -619,7 +1050,7 @@ Excel.Range.getOffsetRange:
         var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
         range.load('address');
         return ctx.sync().then(function() {
-            console.log(range.address); 
+            console.log(range.address); // prints Sheet1!H3:K5
         });
     }).catch(function(error) {
             console.log("Error: " + error);
@@ -629,6 +1060,7 @@ Excel.Range.getOffsetRange:
     });
 Excel.Range.getRow:
   - |-
+    
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
@@ -645,6 +1077,7 @@ Excel.Range.getRow:
     });
 Excel.Range.getUsedRange:
   - |-
+    
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "D:F";
@@ -662,6 +1095,7 @@ Excel.Range.getUsedRange:
     });
 Excel.Range.insert:
   - |-
+    
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "F5:F10";
@@ -704,6 +1138,7 @@ Excel.Range.merge:
     });
 Excel.Range.select:
   - |-
+    
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
         var rangeAddress = "F5:F10"; 
@@ -723,6 +1158,119 @@ Excel.Range.unmerge:
         var rangeAddress = "A1:C3";
         var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
         range.unmerge();
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.Range.Property:
+  - |-
+    
+    Excel.run(function (ctx) {
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8"; 
+        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var range = worksheet.getRange(rangeAddress);
+        range.load('cellCount');
+        return ctx.sync().then(function() {
+            console.log(range.cellCount);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    
+    Excel.run(function (ctx) { 
+        var rangeName = 'MyRange';
+        var range = ctx.workbook.names.getItem(rangeName).range;
+        range.load('cellCount');
+        return ctx.sync().then(function() {
+            console.log(range.cellCount);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "F5:G7";
+        var numberFormat = [[null, "d-mmm"], [null, "d-mmm"], [null, null]]
+        var values = [["Today", 42147], ["Tomorrow", "5/24"], ["Difference in days", null]];
+        var formulas = [[null,null], [null,null], [null,"=G6-G5"]];
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.numberFormat = numberFormat;
+        range.values = values;
+        range.formulas= formulas;
+        range.load('text');
+        return ctx.sync().then(function() {
+            console.log(range.text);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    /* This might be broken still - it was broken before because it 
+        it was missing 'var', but might still be wrong because of
+        getting information without loading properly. */
+    Excel.run(function (ctx) { 
+        var names = ctx.workbook.names;
+        var namedItem = names.getItem('MyRange');
+        var range = namedItem.range;
+        var rangeWorksheet = range.worksheet;
+        rangeWorksheet.load('name');
+        return ctx.sync().then(function() {
+                console.log(rangeWorksheet.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.RangeBorder.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8";
+        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var range = worksheet.getRange(rangeAddress);
+        var borders = range.format.borders;
+        borders.load('items');
+        return ctx.sync().then(function() {
+            console.log(borders.count);
+            for (var i = 0; i < borders.items.length; i++)
+            {
+                console.log(borders.items[i].sideIndex);
+            }
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.format.borders.getItem('InsideHorizontal').style = 'Continuous';
+        range.format.borders.getItem('InsideVertical').style = 'Continuous';
+        range.format.borders.getItem('EdgeBottom').style = 'Continuous';
+        range.format.borders.getItem('EdgeLeft').style = 'Continuous';
+        range.format.borders.getItem('EdgeRight').style = 'Continuous';
+        range.format.borders.getItem('EdgeTop').style = 'Continuous';
         return ctx.sync(); 
     }).catch(function(error) {
             console.log("Error: " + error);
@@ -750,6 +1298,7 @@ Excel.RangeBorderCollection.getItem:
             }
     });
   - |-
+    
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
@@ -768,6 +1317,7 @@ Excel.RangeBorderCollection.getItem:
     });
 Excel.RangeBorderCollection.getItemAt:
   - |-
+    
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
@@ -784,6 +1334,46 @@ Excel.RangeBorderCollection.getItemAt:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
+Excel.RangeBorderCollection.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8";
+        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var range = worksheet.getRange(rangeAddress);
+        var borders = range.format.borders;
+        border.load('items');
+        return ctx.sync().then(function() {
+            console.log(borders.count);
+            for (var i = 0; i < borders.items.length; i++)
+            {
+                console.log(borders.items[i].sideIndex);
+            }
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "A1:F8";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.format.borders.getItem('InsideHorizontal').style = 'Continuous';
+        range.format.borders.getItem('InsideVertical').style = 'Continuous';
+        range.format.borders.getItem('EdgeBottom').style = 'Continuous';
+        range.format.borders.getItem('EdgeLeft').style = 'Continuous';
+        range.format.borders.getItem('EdgeRight').style = 'Continuous';
+        range.format.borders.getItem('EdgeTop').style = 'Continuous';
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
 Excel.RangeFill.clear:
   - |-
     Excel.run(function (ctx) { 
@@ -793,6 +1383,120 @@ Excel.RangeFill.clear:
         var range = worksheet.getRange(rangeAddress);
         var rangeFill = range.format.fill;
         rangeFill.clear();
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.RangeFill.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "F:G";
+        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var range = worksheet.getRange(rangeAddress);
+        var rangeFill = range.format.fill;
+        rangeFill.load('color');
+        return ctx.sync().then(function() {
+            console.log(rangeFill.color);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "F:G";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.format.fill.color = '0000FF';
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.RangeFont.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "F:G";
+        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var range = worksheet.getRange(rangeAddress);
+        var rangeFont = range.format.font;
+        rangeFont.load('name');
+        return ctx.sync().then(function() {
+            console.log(rangeFont.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "F:G";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.format.font.name = 'Times New Roman';
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.RangeFormat.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "F:G";
+        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+        var range = worksheet.getRange(rangeAddress);
+        range.load(["format/*", "format/fill", "format/borders", "format/font"]);
+        return ctx.sync().then(function() {
+            console.log(range.format.wrapText);
+            console.log(range.format.fill.color);
+            console.log(range.format.font.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "F:G";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.format.wrapText = true;
+        range.format.font.name = 'Times New Roman';
+        range.format.fill.color = '0000FF';
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var sheetName = "Sheet1";
+        var rangeAddress = "F:G";
+        var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+        range.format.borders.getItem('InsideHorizontal').style = 'Continuous';
+        range.format.borders.getItem('InsideVertical').style = 'Continuous';
+        range.format.borders.getItem('EdgeBottom').style = 'Continuous';
+        range.format.borders.getItem('EdgeLeft').style = 'Continuous';
+        range.format.borders.getItem('EdgeRight').style = 'Continuous';
+        range.format.borders.getItem('EdgeTop').style = 'Continuous';
         return ctx.sync(); 
     }).catch(function(error) {
             console.log("Error: " + error);
@@ -890,6 +1594,52 @@ Excel.Table.getTotalRowRange:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
+Excel.Table.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var table = ctx.workbook.tables.getItem(tableName);
+        table.load('index')
+        return ctx.sync().then(function() {
+                console.log(table.index);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var index = 0;
+        var table = ctx.workbook.tables.getItemAt(0);
+        table.load('id')
+        return ctx.sync().then(function() {
+                console.log(table.id);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var table = ctx.workbook.tables.getItem(tableName);
+        table.name = 'Table1-Renamed';
+        table.showTotals = false;
+        table.style = 'TableStyleMedium2';
+        table.load('tableStyle');
+        return ctx.sync().then(function() {
+                console.log(table.style);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
 Excel.TableCollection.add:
   - |-
     Excel.run(function (ctx) { 
@@ -939,6 +1689,37 @@ Excel.TableCollection.getItemAt:
         table.load('name');
         return ctx.sync().then(function() {
                 console.log(table.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableCollection.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var tables = ctx.workbook.tables;
+        tables.load();
+        return ctx.sync().then(function() {
+            console.log("tables Count: " + tables.count);
+            for (var i = 0; i < tables.items.length; i++)
+            {
+                console.log(tables.items[i].name);
+            }
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var tables = ctx.workbook.tables;
+        tables.load('count');
+        return ctx.sync().then(function() {
+            console.log(tables.count);
         });
     }).catch(function(error) {
             console.log("Error: " + error);
@@ -1022,6 +1803,38 @@ Excel.TableColumn.getTotalRowRange:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
+Excel.TableColumn.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var column = ctx.workbook.tables.getItem(tableName).columns.getItem(0);
+        column.load('index');
+        return ctx.sync().then(function() {
+            console.log(column.index);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var tables = ctx.workbook.tables;
+        var newValues = [["New"], ["Values"], ["For"], ["New"], ["Column"]];
+        var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(2);
+        column.values = newValues;
+        column.load('values');
+        return ctx.sync().then(function() {
+            console.log(column.values);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
 Excel.TableColumnCollection.add:
   - |-
     Excel.run(function (ctx) { 
@@ -1079,6 +1892,24 @@ Excel.TableColumnCollection.getItemAt:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
+Excel.TableColumnCollection.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var tablecolumns = ctx.workbook.tables.getItem('Table1').columns;
+        tablecolumns.load('items');
+        return ctx.sync().then(function() {
+            console.log("tablecolumns Count: " + tablecolumns.count);
+            for (var i = 0; i < tablecolumns.items.length; i++)
+            {
+                console.log(tablecolumns.items[i].name);
+            }
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
 Excel.TableRow.delete:
   - |-
     Excel.run(function (ctx) { 
@@ -1101,6 +1932,38 @@ Excel.TableRow.getRange:
         rowRange.load('address');
         return ctx.sync().then(function() {
             console.log(rowRange.address);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableRow.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var tableName = 'Table1';
+        var row = ctx.workbook.tables.getItem(tableName).rows.getItem(0);
+        row.load('index');
+        return ctx.sync().then(function() {
+            console.log(row.index);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var tables = ctx.workbook.tables;
+        var newValues = [["New", "Values", "For", "New", "Row"]];
+        var tableName = 'Table1';
+        var row = ctx.workbook.tables.getItem(tableName).rows.getItemAt(2);
+        row.values = newValues;
+        row.load('values');
+        return ctx.sync().then(function() {
+            console.log(row.values);
         });
     }).catch(function(error) {
             console.log("Error: " + error);
@@ -1131,6 +1994,24 @@ Excel.TableRowCollection.getItemAt:
         tablerow.load('name');
         return ctx.sync().then(function() {
                 console.log(tablerow.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.TableRowCollection.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var tablerows = ctx.workbook.tables.getItem('Table1').rows;
+        tablerows.load('items');
+        return ctx.sync().then(function() {
+            console.log("tablerows Count: " + tablerows.count);
+            for (var i = 0; i < tablerows.items.length; i++)
+            {
+                console.log(tablerows.items[i].index);
+            }
         });
     }).catch(function(error) {
             console.log("Error: " + error);
@@ -1230,6 +2111,7 @@ Excel.Worksheet.getRange:
             }
     });
   - |-
+    
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeName = 'MyRange';
@@ -1260,6 +2142,33 @@ Excel.Worksheet.getUsedRange:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
+Excel.Worksheet.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var wSheetName = 'Sheet1';
+        var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+        worksheet.load('position')
+        return ctx.sync().then(function() {
+                console.log(worksheet.position);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Excel.run(function (ctx) { 
+        var wSheetName = 'Sheet1';
+        var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+        worksheet.position = 2;
+        return ctx.sync(); 
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
 Excel.WorksheetCollection.add:
   - |-
     Excel.run(function (ctx) { 
@@ -1282,6 +2191,24 @@ Excel.WorksheetCollection.getActiveWorksheet:
         activeWorksheet.load('name');
         return ctx.sync().then(function() {
                 console.log(activeWorksheet.name);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.WorksheetCollection.Property:
+  - |-
+    Excel.run(function (ctx) { 
+        var worksheets = ctx.workbook.worksheets;
+        worksheets.load('items');
+        return ctx.sync().then(function() {
+            for (var i = 0; i < worksheets.items.length; i++)
+            {
+                console.log(worksheets.items[i].name);
+                console.log(worksheets.items[i].index);
+            }
         });
     }).catch(function(error) {
             console.log("Error: " + error);
@@ -1324,6 +2251,15 @@ Excel.WorksheetProtection.unprotect:
         console.log("Debug info: " + JSON.stringify(error.debugInfo));
       }
     });
+  - |-
+    Excel.run(function(ctx) {
+      var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+      sheet.protection.protect({
+        allowInsertRows: false, // Protect row insertion
+        allowDeleteRows: true // Unprotect row deletion
+      });
+    });
+
 OneNote.Application.getActiveNotebook:
   - |-
     OneNote.run(function (context) {
@@ -1599,6 +2535,7 @@ OneNote.Application.navigateToPageWithClientUrl:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.FloatingInk.Property:
   - |-
     OneNote.run(function(context) {
     
@@ -1671,6 +2608,7 @@ OneNote.Image.getBase64Image:
                 console.log(imageString);
             });
     });
+OneNote.Image.Property:
   - |-
     OneNote.run(function(ctx){
         // Get the current outline.         
@@ -1785,6 +2723,124 @@ OneNote.Image.getBase64Image:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
+OneNote.ImageOcrData.Property:
+  - |-
+    var image = null;
+    
+    OneNote.run(function(ctx){
+        // Get the current outline.
+        var outline = ctx.application.getActiveOutline();
+    
+        // Queue a command to load paragraphs and their types.
+        outline.load("paragraphs")
+        return ctx.sync().
+            then(function(){
+                for (var i=0; i < outline.paragraphs.items.length; i++)
+                {
+                    var paragraph = outline.paragraphs.items[i];
+                    if (paragraph.type == "Image")
+                    {
+                        image = paragraph.image;
+                    }
+                }
+                if (image != null)
+                {
+                   image.load("ocrData");
+                }
+                return ctx.sync();
+            })
+            .then(function(){
+                
+                // Log ocrText and ocrLanguageId
+                console.log(image.ocrData.ocrText);
+                console.log(image.ocrData.ocrLanguageId);
+            });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+OneNote.InkAnalysis.Property:
+  - |-
+    OneNote.run(function (ctx) {        
+        var app = ctx.application;
+        
+        // Gets the active page.
+        var page = app.getActivePage();
+        
+        // Load ink paragraphs.
+        page.load('inkAnalysisOrNull/paragraphs');
+        
+        return ctx.sync()
+            .then(function() {
+                console.log(page.inkAnalysisOrNull.paragraphs.items.length);
+            })
+    })
+    .catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    }); 
+OneNote.InkAnalysisLine.Property:
+  - |-
+    OneNote.run(function (ctx) {        
+        var app = ctx.application;
+        
+        // Gets the active page.
+        var page = app.getActivePage();
+        page.load('inkAnalysisOrNull/paragraphs/lines/words');
+        
+        return ctx.sync()
+            .then(function() {
+                var inkParagraphs = page.inkAnalysisOrNull.paragraphs;
+                $.each(inkParagraphs.items, function(i, inkParagraph) {
+                    var inkLines = inkParagraph.lines;
+                    $.each(inkLines.items, function(j, inkLine) {
+                        // Word counts in a line.
+                        console.log(inkLine.words.items.length);
+                    })
+                })
+            })
+    })
+    .catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    }); 
+OneNote.InkAnalysisParagraph.Property:
+  - |-
+    OneNote.run(function (ctx) {        
+        var app = ctx.application;
+        
+        // Gets the active page.
+        var page = app.getActivePage();
+        
+        // Load a line of ink words.
+        page.load('inkAnalysisOrNull/paragraphs/lines');
+        
+        return ctx.sync()
+            .then(function() {
+                var inkParagraphs = page.inkAnalysisOrNull.paragraphs;
+                
+                // Log id of each line in ink paragraphs.
+                $.each(inkParagraphs.items, function(i, inkParagraph){
+                    var inkLines = inkParagraph.lines;
+                    $.each(inkLines.items, function (j, inkLine) {
+                        console.log(inkLine.id);
+                    })
+                })
+            })
+    })
+    .catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    }); 
+OneNote.InkAnalysisWord.Property:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -1885,6 +2941,7 @@ OneNote.Notebook.getRestApiId:
                 // (this is only required for SharePoint notebooks, baseUrl will be null for OneDrive notebooks)
             });
     });
+OneNote.Notebook.Property:
   - |-
     OneNote.run(function (context) {
             
@@ -2032,6 +3089,7 @@ OneNote.NotebookCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.NotebookCollection.Property:
   - |-
     OneNote.run(function (context) {
     
@@ -2242,6 +3300,7 @@ OneNote.Page.insertPageAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.Page.Property:
   - |-
     OneNote.run(function (context) {
     
@@ -2365,6 +3424,7 @@ OneNote.PageCollection.getByTitle:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.PageCollection.Property:
   - |-
     OneNote.run(function (context) {
         
@@ -2438,6 +3498,7 @@ OneNote.PageContentCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.PageContentCollection.Property:
   - |-
     OneNote.run(function (context) {
     
@@ -2625,6 +3686,7 @@ OneNote.Paragraph.insertRichTextAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
+OneNote.Paragraph.Property:
   - |-
     OneNote.run(function (context) {
     
@@ -2721,6 +3783,91 @@ OneNote.ParagraphCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
+OneNote.ParagraphCollection.Property:
+  - |-
+    OneNote.run(function (context) {
+    
+        // Get the collection of pageContent items from the page.
+        var pageContents = context.application.getActivePage().contents;
+    
+        // Get the first PageContent on the page, and then get its Outline's first paragraph.
+        var pageContent = pageContents.getItem(0);
+        var paragraphs = pageContent.outline.paragraphs;
+        
+        // Queue a command to load the id and type of each paragraph.
+        paragraphs.load("id,type");
+    
+        // Run the queued commands, and return a promise to indicate task completion.
+        return context.sync()
+            .then(function () {
+                var firstParagraph = paragraphs.items[0];
+                // Write text from first paragraph to console
+                console.log("First Paragraph found with id : " + firstParagraph.id + " and type " + firstParagraph.type);
+            });
+    })
+    .catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+  - |-
+    OneNote.run(function (context) {
+    
+        // Get the collection of pageContent items from the page.
+        var pageContents = context.application.getActivePage().contents;
+    
+        // Get the first PageContent on the page, and then get its outline's paragraphs.
+        var outlinePageContents = ;
+        var paragraphs = ;
+        var richTextParagraphs = ;
+        // Queue a command to load the id and type of each page content in the outline.
+        pageContents.load("id,type");
+    
+        // Run the queued commands, and return a promise to indicate task completion.
+        return context.sync()
+            .then(function () {
+                // Load all page contents of type Outline
+                $.each(pageContents.items, function(index, pageContent) {
+                    if(pageContent.type == 'Outline')
+                    {
+                        pageContent.load('outline,outline/paragraphs,outline/paragraphs/type');
+                        outlinePageContents.push(pageContent);
+                    }
+                });
+                return context.sync();
+            })
+            .then(function () {
+                // Load all rich text paragraphs across outlines
+                $.each(outlinePageContents, function(index, outlinePageContent) {
+                    var outline = outlinePageContent.outline;
+                    paragraphs = paragraphs.concat(outline.paragraphs.items);
+                });
+                $.each(paragraphs, function(index, paragraph) {
+                    if(paragraph.type == 'RichText')
+                    {
+                        richTextParagraphs.push(paragraph);
+                        paragraph.load("id,richText/text");
+                    }
+                });
+                return context.sync();
+            })
+            .then(function () {
+                // Display all rich text paragraphs to the console
+                $.each(richTextParagraphs, function(index, richTextParagraph) {
+                    var richText = richTextParagraph.richText;
+                    console.log("Paragraph found with richtext content : " + richText.text + " and richtext id : " + richText.id);
+                });
+                return context.sync();
+            });
+    })
+    .catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+OneNote.RichText.Property:
   - |-
     OneNote.run(function (context) {
     
@@ -2904,6 +4051,7 @@ OneNote.Section.getRestApiId:
                 // (this is only required for SharePoint notebooks, baseUrl will be null for OneDrive notebooks)
             });
     });
+OneNote.Section.Property:
   - |-
     OneNote.run(function (context) {
             
@@ -3006,6 +4154,7 @@ OneNote.SectionCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.SectionCollection.Property:
   - |-
     OneNote.run(function (context) {
     
@@ -3104,6 +4253,7 @@ OneNote.SectionGroup.addSectionGroup:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
+OneNote.SectionGroup.Property:
   - |-
     OneNote.run(function (context) {
             
@@ -3248,6 +4398,7 @@ OneNote.SectionGroupCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.SectionGroupCollection.Property:
   - |-
     OneNote.run(function (context) {
     
@@ -3425,6 +4576,7 @@ OneNote.Table.insertRow:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.Table.Property:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -3560,6 +4712,7 @@ OneNote.TableCell.appendRichText:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.TableCell.Property:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -3678,6 +4831,7 @@ OneNote.TableRow.insertRowAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.TableRow.Property:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -3762,6 +4916,85 @@ OneNote.TableRow.insertRowAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+
+Visio.Application.Property:
+  - |-
+    Visio.run(function (ctx) { 
+        var application = ctx.document.application;
+        application.showToolbars = false;
+        application.showBorders = false;
+        return ctx.sync();
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Visio.Comment.Property:
+  - |-
+    Visio.run(function (ctx) { 
+        var activePage = ctx.document.getActivePage();
+        var shapeName = "Position Belt.41";
+        var shape = activePage.shapes.getItem(shapeName);
+        var shapecomments= shape.comments;
+        shapecomments.load();
+        return ctx.sync().then(function () {
+            for(var i=0; i<shapecomments.items.length;i++)
+            {
+                var comment= shapecomments.items[i];
+                console.log("comment Author: " + comment.author);
+                console.log("Comment Text: " + comment.text);
+                console.log("Date " + comment.date);
+            }
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Visio.CommentCollection.Property:
+  - |-
+    Visio.run(function (ctx) { 
+        var activePage = ctx.document.getActivePage();
+        var shapeName = "Position Belt.41";
+        var shape = activePage.shapes.getItem(shapeName);
+        var shapecomments= shape.comments;
+        shapecomments.load();
+        return ctx.sync().then(function () {
+            for(var i=0; i<shapecomments.items.length;i++)
+            {
+                var comment= shapecomments.items[i];
+                console.log("comment Author: " + comment.author);
+                console.log("Comment Text: " + comment.text);
+                console.log("Date " + comment.date);
+            }
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Visio.DataRefreshCompleteEventArgs.Property:
+  - |-
+    Visio.run(function (ctx) { 
+      var document1= ctx.document;
+                   var page = document1.getActivePage();
+             eventResult1 = document1.onDataRefreshComplete.add(
+        function (args){
+               console.log("Data Refresh Result: "+args.success);
+        });
+    
+        return ctx.sync().then(function () {
+           console.log("Success");
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+        console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
 Visio.Document.getActivePage:
   - |-
     Visio.run(function (ctx) { 
@@ -3802,6 +5035,114 @@ Visio.Document.startDataRefresh:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
+Visio.Document.Property:
+  - |-
+    Visio.run(function (ctx) { 
+        var pages = ctx.document.pages;
+        var pageCount = pages.getCount();
+        return ctx.sync().then(function () {
+            console.log("Pages Count: " +pageCount.value);
+            });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Visio.run(function (ctx) { 
+        var documentView = ctx.document.view;
+        documentView.disableHyperlinks();
+        return ctx.sync();
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Visio.run(function (ctx) { 
+        var application = ctx.document.application;
+        application.showToolbars = false;
+        return ctx.sync();
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Visio.DocumentLoadCompleteEventArgs.Property:
+  - |-
+    Visio.run(function (ctx) { 
+      var document1 = ctx.document;
+                 eventResult1 = document1.onDocumentLoadComplete.add(
+                  function (args){
+                       console.log("Document Loaded");
+                });
+    
+        return ctx.sync().then(function () {
+               console.log("Success");
+            });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Visio.Highlight.Property:
+  - |-
+    Visio.run(function (ctx) { 
+        var activePage = ctx.document.getActivePage();
+        var shape = activePage.shapes.getItem(0);
+        shape.view.highlight = { color: "#E7E7E7", width: 100 };
+        return ctx.sync();
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Visio.Hyperlink.Property:
+  - |-
+    Visio.run(function (ctx) { 
+        var activePage = ctx.document.getActivePage();
+        var shape = activePage.shapes.getItem(0);
+        var hyperlink = shape.hyperlinks.getItem(0);
+        hyperlink.load();
+        return ctx.sync().then(function() {
+            console.log(hyperlink.description);
+            console.log(hyperlink.address);
+            console.log(hyperlink.subAddress);
+            console.log(hyperlink.extraInfo);
+         });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Visio.HyperlinkCollection.Property:
+  - |-
+    Visio.run(function (ctx) { 
+        var activePage = ctx.document.getActivePage();
+        var shapeName = "Manager Belt";
+        var shape = activePage.shapes.getItem(shapeName);
+        var hyperlinks = shape.hyperlinks;
+        shapeHyperlinks.load();
+            ctx.sync().then(function () {
+                for(var i=0; i<shapeHyperlinks.items.length;i++)
+                    {
+                      var hyperlink = shapeHyperlinks.items[i];
+                      console.log("Description:"+hyperlink.description +"Address:"+hyperlink.address +"SubAddress:  "+ hyperlink.subAddress);
+                    }
+    
+                });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
 Visio.PageCollection.getItem:
   - |-
     Visio.run(function (ctx) { 
@@ -3815,12 +5156,127 @@ Visio.PageCollection.getItem:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
+Visio.PageLoadCompleteEventArgs.Property:
+  - |-
+    Visio.run(function (ctx) { 
+      var document1= ctx.document;
+                   var page = document1.getActivePage();
+                 eventResult1 = document1.onPageLoadComplete.add(
+                function (args){
+                       console.log("Page name: "+args.pageName);
+                });
+    
+        return ctx.sync().then(function () {
+               console.log("Success");
+            });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
 Visio.PageView.centerViewportOnShape:
   - |-
     Visio.run(function (ctx) { 
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
         activePage.view.centerViewportOnShape(shape.Id);
+        return ctx.sync();
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Visio.PageView.Property:
+  - |-
+    Visio.run(function (ctx) { 
+        var activePage = ctx.document.getActivePage();
+        activePage.view.zoom = 300;
+        return ctx.sync();
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Visio.SelectionChangedEventArgs.Property:
+  - |-
+    var eventResult; //Global Variable to store the EventHandlerResult returned on attaching handler.
+    
+    function AttachHandler()
+    {
+        Visio.run(function(ctx)
+        {
+            var doc = ctx.document;
+            eventResult = doc.onSelectionChanged.add(
+        function (args){
+            console.log("Selected Shape Name: "+args.shapeNames[0]);
+                });
+            return ctx.sync().then(function(){
+                    console.log("Handler attached");
+                });
+        }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+        });
+    
+    
+        function onSelectionChanged(args)
+        {
+            console.log(Date.now() + "Selection Changes Event" + JSON.stringify(args));
+        }
+    
+    }
+    
+    function RemoveHandler()
+    {
+        if(!eventResult || !eventResult.context)
+        {
+            console.log("Handler has not been attached");
+            return;
+        }
+    
+        Visio.run(eventResult.context, function(ctx)
+        {
+            eventResult.remove();
+            return ctx.sync().then(function (){
+                eventResult = null;
+                console.log("Handler removed");
+            });
+        }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+        });
+    }
+Visio.Shape.Property:
+  - |-
+    Visio.run(function (ctx) { 
+        var activePage = ctx.document.getActivePage();
+        var shapeName = "Sample Name";
+        var shape = activePage.shapes.getItem(shapeName);
+        shape.load();
+        return ctx.sync().then(function () {
+            console.log(shape.name );
+            console.log(shape.id );
+            console.log(shape.Text );
+            console.log(shape.Select );
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Visio.run(function (ctx) { 
+        var activePage = ctx.document.getActivePage();
+        var shape = activePage.shapes.getItem(0);
+        shape.view.highlight = { color: "#E7E7E7", width: 100 };
         return ctx.sync();
     }).catch(function(error) {
             console.log("Error: " + error);
@@ -3843,6 +5299,117 @@ Visio.ShapeCollection.getCount:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
+Visio.ShapeDataItem.Property:
+  - |-
+    Visio.run(function (ctx) { 
+        var activePage = ctx.document.getActivePage();
+        var shape = activePage.shapes.getItem(0);
+            var shapeDataItem = shape.shapeDataItems.getItem(0);
+        shapeDataItem.load();
+            return ctx.sync().then(function() {
+                    console.log(shapeDataItem.label);
+                    console.log(shapeDataItem.value);
+            });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Visio.ShapeDataItemCollection.Property:
+  - |-
+    Visio.run(function (ctx) { 
+        var activePage = ctx.document.getActivePage();
+        var shape = activePage.shapes.getItem(0);
+            var shapeDataItems = shape.shapeDataItems;
+            shapeDataItems.load();
+            return ctx.sync().then(function() {
+                for (var i = 0; i < shapeDataItems.items.length; i++)
+                {
+                    console.log(shapeDataItems.items[i].label);
+                    console.log(shapeDataItems.items[i].value);
+                }
+            });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Visio.ShapeMouseEnterEventArgs.Property:
+  - |-
+    Visio.run(function (ctx) { 
+      var document1= ctx.document;
+                   var page = document1.getActivePage();
+        eventResult2 = document1.onShapeMouseEnter.add(
+                function (args){            
+                             console.log(Date.now()+":OnShapeMouseEnter Event"+JSON.stringify(args));
+                });
+        return ctx.sync().then(function () {
+               console.log("Success");
+            });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Visio.ShapeMouseLeaveEventArgs.Property:
+  - |-
+    Visio.run(function (ctx) { 
+      var document1= ctx.document;
+                   var page = document1.getActivePage();
+        eventResult2 = document1.onShapeMouseLeave.add(
+                    function (args){            
+                             console.log(Date.now()+":OnShapeMouseLeave Event"+JSON.stringify(args));
+                });
+        return ctx.sync().then(function () {
+               console.log("Success");
+            });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Visio.ShapeView.Property:
+  - |-
+    Visio.run(function (ctx) { 
+        var activePage = ctx.document.getActivePage();
+        var shape = activePage.shapes.getItem(0);
+        shape.view.highlight = { color: "#E7E7E7", width: 100 };
+        return ctx.sync();
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Visio.run(function (ctx) { 
+        var activePage = ctx.document.getActivePage();
+        var shape = activePage.shapes.getItem(0);
+        var overlayId=shape.view.addOverlay(1, "Visio Online", 2, 2, 50, 50);
+        return ctx.sync();
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    Visio.run(function (ctx) { 
+        var activePage = ctx.document.getActivePage();
+        var shape = activePage.shapes.getItem(0);
+        shape.view.removeOverlay(1);
+        return ctx.sync();
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+
 Word.Body.clear:
   - |-
     // Run a batch operation against the Word object model.
@@ -4168,6 +5735,7 @@ Word.Body.select:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+Word.Body.Property:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -4613,6 +6181,7 @@ Word.ContentControl.search:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+Word.ContentControl.Property:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -5053,6 +6622,7 @@ Word.Font.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+Word.Font.Property:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -6002,6 +7572,7 @@ Word.RequestContext.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+    
 Word.RequestContext.sync:
   - |-
     // Run a batch operation against the Word object model.
@@ -6039,6 +7610,139 @@ Word.RequestContext.sync:
         }
     });
     
+Word.SearchOptions.Property:
+  - |-
+    // Run a batch operation against the Word object model.
+    Word.run(function (context) {
+        
+        // Queue a command to search the document and ignore punctuation.
+        var searchResults = context.document.body.search('video you', {ignorePunct: true});
+    
+        // Queue a command to load the search results and get the font property values.
+        context.load(searchResults, 'font');
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        return context.sync().then(function () {
+            console.log('Found count: ' + searchResults.items.length);
+    
+            // Queue a set of commands to change the font for each found item.
+            for (var i = 0; i < searchResults.items.length; i++) {
+                searchResults.items[i].font.color = 'purple';
+                searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
+                searchResults.items[i].font.bold = true;
+            }
+            
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            return context.sync();
+        });  
+    })
+    .catch(function (error) {
+        console.log('Error: ' + JSON.stringify(error));
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+        }
+    });
+  - |-
+    // Run a batch operation against the Word object model.
+    Word.run(function (context) {
+        
+        // Queue a command to search the document based on a prefix.
+        var searchResults = context.document.body.search('vid', {matchPrefix: true});
+    
+        // Queue a command to load the search results and get the font property values.
+        context.load(searchResults, 'font');
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        return context.sync().then(function () {
+            console.log('Found count: ' + searchResults.items.length);
+    
+            // Queue a set of commands to change the font for each found item.
+            for (var i = 0; i < searchResults.items.length; i++) {
+                searchResults.items[i].font.color = 'purple';
+                searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
+                searchResults.items[i].font.bold = true;
+            }
+            
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            return context.sync();
+        });  
+    })
+    .catch(function (error) {
+        console.log('Error: ' + JSON.stringify(error));
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+        }
+    });
+  - |-
+    // Run a batch operation against the Word object model.
+    Word.run(function (context) {
+    
+        // Queue a command to search the document for any string of characters after 'ly'.
+        var searchResults = context.document.body.search('ly', {matchSuffix: true});
+    
+        // Queue a command to load the search results and get the font property values.
+        context.load(searchResults, 'font');
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        return context.sync().then(function () {
+            console.log('Found count: ' + searchResults.items.length);
+    
+            // Queue a set of commands to change the font for each found item.
+            for (var i = 0; i < searchResults.items.length; i++) {
+                searchResults.items[i].font.color = 'orange';
+                searchResults.items[i].font.highlightColor = 'black';
+                searchResults.items[i].font.bold = true;
+            }
+            
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            return context.sync();
+        });  
+    })
+    .catch(function (error) {
+        console.log('Error: ' + JSON.stringify(error));
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+        }
+    });
+  - |-
+    // Run a batch operation against the Word object model.
+    Word.run(function (context) {
+        
+        // Queue a command to search the document with a wildcard
+        // for any string of characters that starts with 'to' and ends with 'n'.
+        var searchResults = context.document.body.search('to*n', {matchWildCards: true});
+    
+        // Queue a command to load the search results and get the font property values.
+        context.load(searchResults, 'font');
+        
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        return context.sync().then(function () {
+            console.log('Found count: ' + searchResults.items.length);
+    
+            // Queue a set of commands to change the font for each found item.
+            for (var i = 0; i < searchResults.items.length; i++) {
+                searchResults.items[i].font.color = 'purple';
+                searchResults.items[i].font.highlightColor = 'pink';
+                searchResults.items[i].font.bold = true;
+            }
+            
+            // Synchronize the document state by executing the queued commands, 
+            // and return a promise to indicate task completion.
+            return context.sync();
+        });  
+    })
+    .catch(function (error) {
+        console.log('Error: ' + JSON.stringify(error));
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+        }
     });
 Word.Section.getFooter:
   - |-
@@ -6293,3 +7997,4 @@ Word.SettingCollection.getItem:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+

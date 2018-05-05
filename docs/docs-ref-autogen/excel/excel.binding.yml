@@ -70,10 +70,10 @@ items:
               console.log(range.cellCount);
           });
       }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
       });
       ```
   - uid: excel.Excel.Binding.getTable
@@ -103,13 +103,13 @@ items:
           var table = binding.getTable();
           table.load('name');
           return ctx.sync().then(function() {
-              console.log(table.name);
+                  console.log(table.name);
           });
       }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
       });
       ```
   - uid: excel.Excel.Binding.getText
@@ -142,10 +142,10 @@ items:
               console.log(text);
           });
       }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
       });
       ```
   - uid: excel.Excel.Binding.id

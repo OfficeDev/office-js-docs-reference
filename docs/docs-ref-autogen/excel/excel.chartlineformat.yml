@@ -45,13 +45,13 @@ items:
           var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;    
           gridlines.format.line.clear();
           return ctx.sync().then(function() {
-              console.log("Chart Major Gridlines Format Cleared");
+                  console.log("Chart Major Gridlines Format Cleared");
           });
       }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
       });
       ```
   - uid: excel.Excel.ChartLineFormat.color

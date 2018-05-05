@@ -168,3 +168,13 @@ items:
         }
       });
       ```
+
+      ```javascript
+      Excel.run(function(ctx) {
+        var sheet = ctx.workbook.worksheets.getItem("Sheet1");
+        sheet.protection.protect({
+          allowInsertRows: false, // Protect row insertion
+          allowDeleteRows: true // Unprotect row deletion
+        });
+      });
+      ```
