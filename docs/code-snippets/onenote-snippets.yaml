@@ -273,6 +273,7 @@ OneNote.Application.navigateToPageWithClientUrl:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.FloatingInk.Property:
   - |-
     OneNote.run(function(context) {
     
@@ -345,6 +346,7 @@ OneNote.Image.getBase64Image:
                 console.log(imageString);
             });
     });
+OneNote.Image.Property:
   - |-
     OneNote.run(function(ctx){
         // Get the current outline.         
@@ -459,6 +461,124 @@ OneNote.Image.getBase64Image:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
+OneNote.ImageOcrData.Property:
+  - |-
+    var image = null;
+    
+    OneNote.run(function(ctx){
+        // Get the current outline.
+        var outline = ctx.application.getActiveOutline();
+    
+        // Queue a command to load paragraphs and their types.
+        outline.load("paragraphs")
+        return ctx.sync().
+            then(function(){
+                for (var i=0; i < outline.paragraphs.items.length; i++)
+                {
+                    var paragraph = outline.paragraphs.items[i];
+                    if (paragraph.type == "Image")
+                    {
+                        image = paragraph.image;
+                    }
+                }
+                if (image != null)
+                {
+                   image.load("ocrData");
+                }
+                return ctx.sync();
+            })
+            .then(function(){
+                
+                // Log ocrText and ocrLanguageId
+                console.log(image.ocrData.ocrText);
+                console.log(image.ocrData.ocrLanguageId);
+            });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+OneNote.InkAnalysis.Property:
+  - |-
+    OneNote.run(function (ctx) {        
+        var app = ctx.application;
+        
+        // Gets the active page.
+        var page = app.getActivePage();
+        
+        // Load ink paragraphs.
+        page.load('inkAnalysisOrNull/paragraphs');
+        
+        return ctx.sync()
+            .then(function() {
+                console.log(page.inkAnalysisOrNull.paragraphs.items.length);
+            })
+    })
+    .catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    }); 
+OneNote.InkAnalysisLine.Property:
+  - |-
+    OneNote.run(function (ctx) {        
+        var app = ctx.application;
+        
+        // Gets the active page.
+        var page = app.getActivePage();
+        page.load('inkAnalysisOrNull/paragraphs/lines/words');
+        
+        return ctx.sync()
+            .then(function() {
+                var inkParagraphs = page.inkAnalysisOrNull.paragraphs;
+                $.each(inkParagraphs.items, function(i, inkParagraph) {
+                    var inkLines = inkParagraph.lines;
+                    $.each(inkLines.items, function(j, inkLine) {
+                        // Word counts in a line.
+                        console.log(inkLine.words.items.length);
+                    })
+                })
+            })
+    })
+    .catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    }); 
+OneNote.InkAnalysisParagraph.Property:
+  - |-
+    OneNote.run(function (ctx) {        
+        var app = ctx.application;
+        
+        // Gets the active page.
+        var page = app.getActivePage();
+        
+        // Load a line of ink words.
+        page.load('inkAnalysisOrNull/paragraphs/lines');
+        
+        return ctx.sync()
+            .then(function() {
+                var inkParagraphs = page.inkAnalysisOrNull.paragraphs;
+                
+                // Log id of each line in ink paragraphs.
+                $.each(inkParagraphs.items, function(i, inkParagraph){
+                    var inkLines = inkParagraph.lines;
+                    $.each(inkLines.items, function (j, inkLine) {
+                        console.log(inkLine.id);
+                    })
+                })
+            })
+    })
+    .catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    }); 
+OneNote.InkAnalysisWord.Property:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -559,6 +679,7 @@ OneNote.Notebook.getRestApiId:
                 // (this is only required for SharePoint notebooks, baseUrl will be null for OneDrive notebooks)
             });
     });
+OneNote.Notebook.Property:
   - |-
     OneNote.run(function (context) {
             
@@ -706,6 +827,7 @@ OneNote.NotebookCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.NotebookCollection.Property:
   - |-
     OneNote.run(function (context) {
     
@@ -916,6 +1038,7 @@ OneNote.Page.insertPageAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.Page.Property:
   - |-
     OneNote.run(function (context) {
     
@@ -1039,6 +1162,7 @@ OneNote.PageCollection.getByTitle:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.PageCollection.Property:
   - |-
     OneNote.run(function (context) {
         
@@ -1112,6 +1236,7 @@ OneNote.PageContentCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.PageContentCollection.Property:
   - |-
     OneNote.run(function (context) {
     
@@ -1299,6 +1424,7 @@ OneNote.Paragraph.insertRichTextAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
+OneNote.Paragraph.Property:
   - |-
     OneNote.run(function (context) {
     
@@ -1395,6 +1521,91 @@ OneNote.ParagraphCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
+OneNote.ParagraphCollection.Property:
+  - |-
+    OneNote.run(function (context) {
+    
+        // Get the collection of pageContent items from the page.
+        var pageContents = context.application.getActivePage().contents;
+    
+        // Get the first PageContent on the page, and then get its Outline's first paragraph.
+        var pageContent = pageContents.getItem(0);
+        var paragraphs = pageContent.outline.paragraphs;
+        
+        // Queue a command to load the id and type of each paragraph.
+        paragraphs.load("id,type");
+    
+        // Run the queued commands, and return a promise to indicate task completion.
+        return context.sync()
+            .then(function () {
+                var firstParagraph = paragraphs.items[0];
+                // Write text from first paragraph to console
+                console.log("First Paragraph found with id : " + firstParagraph.id + " and type " + firstParagraph.type);
+            });
+    })
+    .catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+  - |-
+    OneNote.run(function (context) {
+    
+        // Get the collection of pageContent items from the page.
+        var pageContents = context.application.getActivePage().contents;
+    
+        // Get the first PageContent on the page, and then get its outline's paragraphs.
+        var outlinePageContents = ;
+        var paragraphs = ;
+        var richTextParagraphs = ;
+        // Queue a command to load the id and type of each page content in the outline.
+        pageContents.load("id,type");
+    
+        // Run the queued commands, and return a promise to indicate task completion.
+        return context.sync()
+            .then(function () {
+                // Load all page contents of type Outline
+                $.each(pageContents.items, function(index, pageContent) {
+                    if(pageContent.type == 'Outline')
+                    {
+                        pageContent.load('outline,outline/paragraphs,outline/paragraphs/type');
+                        outlinePageContents.push(pageContent);
+                    }
+                });
+                return context.sync();
+            })
+            .then(function () {
+                // Load all rich text paragraphs across outlines
+                $.each(outlinePageContents, function(index, outlinePageContent) {
+                    var outline = outlinePageContent.outline;
+                    paragraphs = paragraphs.concat(outline.paragraphs.items);
+                });
+                $.each(paragraphs, function(index, paragraph) {
+                    if(paragraph.type == 'RichText')
+                    {
+                        richTextParagraphs.push(paragraph);
+                        paragraph.load("id,richText/text");
+                    }
+                });
+                return context.sync();
+            })
+            .then(function () {
+                // Display all rich text paragraphs to the console
+                $.each(richTextParagraphs, function(index, richTextParagraph) {
+                    var richText = richTextParagraph.richText;
+                    console.log("Paragraph found with richtext content : " + richText.text + " and richtext id : " + richText.id);
+                });
+                return context.sync();
+            });
+    })
+    .catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+OneNote.RichText.Property:
   - |-
     OneNote.run(function (context) {
     
@@ -1578,6 +1789,7 @@ OneNote.Section.getRestApiId:
                 // (this is only required for SharePoint notebooks, baseUrl will be null for OneDrive notebooks)
             });
     });
+OneNote.Section.Property:
   - |-
     OneNote.run(function (context) {
             
@@ -1680,6 +1892,7 @@ OneNote.SectionCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.SectionCollection.Property:
   - |-
     OneNote.run(function (context) {
     
@@ -1778,6 +1991,7 @@ OneNote.SectionGroup.addSectionGroup:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
+OneNote.SectionGroup.Property:
   - |-
     OneNote.run(function (context) {
             
@@ -1922,6 +2136,7 @@ OneNote.SectionGroupCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.SectionGroupCollection.Property:
   - |-
     OneNote.run(function (context) {
     
@@ -2099,6 +2314,7 @@ OneNote.Table.insertRow:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.Table.Property:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2234,6 +2450,7 @@ OneNote.TableCell.appendRichText:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.TableCell.Property:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2352,6 +2569,7 @@ OneNote.TableRow.insertRowAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+OneNote.TableRow.Property:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
