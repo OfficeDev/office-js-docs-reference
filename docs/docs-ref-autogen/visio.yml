@@ -46,10 +46,10 @@ items:
     syntax:
       content: >-
         export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) =>
-        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+        Promise<T>): Promise<T>;
       return:
         type:
-          - OfficeExtension.IPromise<T>
+          - Promise<T>
         description: ''
       parameters:
         - id: objects
@@ -65,7 +65,7 @@ items:
             "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated
             during execution will be released.
           type:
-            - '(context: Visio.RequestContext) => OfficeExtension.IPromise<T>'
+            - '(context: Visio.RequestContext) => Promise<T>'
 references:
   - uid: visio.Visio.Application
     name: Visio.Application

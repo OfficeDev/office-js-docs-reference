@@ -30,7 +30,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.WorksheetProtection;'
+      content: 'load(option?: Excel.Interfaces.WorksheetProtectionLoadOptions): Excel.WorksheetProtection;'
       return:
         type:
           - Excel.WorksheetProtection
@@ -39,10 +39,10 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.WorksheetProtectionLoadOptions
   - uid: excel.Excel.WorksheetProtection.options
     summary: |-
-      Sheet protection options. Read-Only.
+      Sheet protection options.
 
       \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: options
@@ -57,16 +57,16 @@ items:
           - Excel.WorksheetProtectionOptions
   - uid: excel.Excel.WorksheetProtection.protect
     summary: |-
-      Protects a worksheet. Fails if the worksheet has been protected.
+      Protects a worksheet. Fails if the worksheet has already been protected.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
-    name: protect(options)
+      \[ [API set: ExcelApi 1.2 for options; 1.7 for password](http://bing.com?type=excel) \]
+    name: 'protect(options, password)'
     fullName: excel.Excel.WorksheetProtection.protect
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'protect(options?: Excel.WorksheetProtectionOptions): void;'
+      content: 'protect(options?: Excel.WorksheetProtectionOptions, password?: string): void;'
       return:
         type:
           - void
@@ -76,6 +76,10 @@ items:
           description: sheet protection options.
           type:
             - Excel.WorksheetProtectionOptions
+        - id: password
+          description: sheet protection password.
+          type:
+            - string
     remarks: |
 
 
@@ -122,31 +126,32 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.WorksheetProtectionData;'
       return:
         type:
-          - |-
-            {
-                        "options": WorksheetProtectionOptions;
-                        "protected": boolean;
-                    }
+          - Excel.Interfaces.WorksheetProtectionData
         description: ''
   - uid: excel.Excel.WorksheetProtection.unprotect
     summary: |-
       Unprotects a worksheet.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
-    name: unprotect()
+      \[ [API set: ExcelApi 1.7 for password](http://bing.com?type=excel) \]
+    name: unprotect(password)
     fullName: excel.Excel.WorksheetProtection.unprotect
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'unprotect(): void;'
+      content: 'unprotect(password?: string): void;'
       return:
         type:
           - void
         description: ''
+      parameters:
+        - id: password
+          description: sheet protection password.
+          type:
+            - string
     remarks: |
 
 

@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.InsertLocation
+    summary: |-
+      The insertion location types
+
+      \[ [API set: WordApi](http://bing.com?type=word) \]
+    name: Word.InsertLocation
+    fullName: word.Word.InsertLocation
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.InsertLocation.after
+      - word.Word.InsertLocation.before
+      - word.Word.InsertLocation.end
+      - word.Word.InsertLocation.replace
+      - word.Word.InsertLocation.start
+  - uid: word.Word.InsertLocation.after
+    name: after
+    fullName: word.Word.InsertLocation.after
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"After"'
+  - uid: word.Word.InsertLocation.before
+    name: before
+    fullName: word.Word.InsertLocation.before
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Before"'
+  - uid: word.Word.InsertLocation.end
+    name: end
+    fullName: word.Word.InsertLocation.end
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"End"'
+  - uid: word.Word.InsertLocation.replace
+    name: replace
+    fullName: word.Word.InsertLocation.replace
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Replace"'
+  - uid: word.Word.InsertLocation.start
+    name: start
+    fullName: word.Word.InsertLocation.start
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Start"'

@@ -24,8 +24,12 @@ items:
       - onenote.OneNote.PageContent.load
       - onenote.OneNote.PageContent.outline
       - onenote.OneNote.PageContent.parentPage
+      - onenote.OneNote.PageContent.set
+      - onenote.OneNote.PageContent.toJSON
       - onenote.OneNote.PageContent.top
+      - onenote.OneNote.PageContent.track
       - onenote.OneNote.PageContent.type
+      - onenote.OneNote.PageContent.untrack
   - uid: onenote.OneNote.PageContent.delete
     summary: |-
       Deletes the PageContent object.
@@ -83,7 +87,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type:
           - string
@@ -98,7 +102,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'image: OneNote.Image;'
+      content: 'readonly image: OneNote.Image;'
       return:
         type:
           - OneNote.Image
@@ -113,7 +117,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'ink: OneNote.FloatingInk;'
+      content: 'readonly ink: OneNote.FloatingInk;'
       return:
         type:
           - OneNote.FloatingInk
@@ -142,7 +146,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.PageContent;'
+      content: 'load(option?: OneNote.Interfaces.PageContentLoadOptions): OneNote.PageContent;'
       return:
         type:
           - OneNote.PageContent
@@ -151,7 +155,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.PageContentLoadOptions
   - uid: onenote.OneNote.PageContent.outline
     summary: |-
       Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
@@ -163,7 +167,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'outline: OneNote.Outline;'
+      content: 'readonly outline: OneNote.Outline;'
       return:
         type:
           - OneNote.Outline
@@ -178,10 +182,53 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentPage: OneNote.Page;'
+      content: 'readonly parentPage: OneNote.Page;'
       return:
         type:
           - OneNote.Page
+  - uid: onenote.OneNote.PageContent.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: onenote.OneNote.PageContent.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        set(properties: Interfaces.PageContentUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.PageContentUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
+  - uid: onenote.OneNote.PageContent.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.PageContent.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.PageContentData;'
+      return:
+        type:
+          - OneNote.Interfaces.PageContentData
+        description: ''
   - uid: onenote.OneNote.PageContent.top
     summary: |-
       Gets or sets the top (Y-axis) position of the PageContent object.
@@ -197,6 +244,24 @@ items:
       return:
         type:
           - number
+  - uid: onenote.OneNote.PageContent.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.PageContent.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.PageContent;'
+      return:
+        type:
+          - OneNote.PageContent
+        description: ''
   - uid: onenote.OneNote.PageContent.type
     summary: |-
       Gets the type of the PageContent object. Read-only.
@@ -208,7 +273,24 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'type: string;'
+      content: 'readonly type: string;'
       return:
         type:
           - string
+  - uid: onenote.OneNote.PageContent.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.PageContent.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.PageContent;'
+      return:
+        type:
+          - OneNote.PageContent
+        description: ''

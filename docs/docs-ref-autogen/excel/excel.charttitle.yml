@@ -15,15 +15,26 @@ items:
     package: excel
     children:
       - excel.Excel.ChartTitle.format
+      - excel.Excel.ChartTitle.getSubstring
+      - excel.Excel.ChartTitle.height
+      - excel.Excel.ChartTitle.horizontalAlignment
+      - excel.Excel.ChartTitle.left
       - excel.Excel.ChartTitle.load
       - excel.Excel.ChartTitle.overlay
+      - excel.Excel.ChartTitle.position
       - excel.Excel.ChartTitle.set
+      - excel.Excel.ChartTitle.setFormula
+      - excel.Excel.ChartTitle.showShadow
       - excel.Excel.ChartTitle.text
+      - excel.Excel.ChartTitle.textOrientation
       - excel.Excel.ChartTitle.toJSON
+      - excel.Excel.ChartTitle.top
+      - excel.Excel.ChartTitle.verticalAlignment
       - excel.Excel.ChartTitle.visible
+      - excel.Excel.ChartTitle.width
   - uid: excel.Excel.ChartTitle.format
     summary: |-
-      Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
+      Represents the formatting of a chart title, which includes fill and font formatting.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: format
@@ -36,6 +47,80 @@ items:
       return:
         type:
           - Excel.ChartTitleFormat
+  - uid: excel.Excel.ChartTitle.getSubstring
+    summary: |-
+      Get the substring of a chart title. Line break '\\n' also counts one charater.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: 'getSubstring(start, length)'
+    fullName: excel.Excel.ChartTitle.getSubstring
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSubstring(start: number, length: number): Excel.ChartFormatString;'
+      return:
+        type:
+          - Excel.ChartFormatString
+        description: ''
+      parameters:
+        - id: start
+          description: Start position of substring to be retrieved. Position start with 0.
+          type:
+            - number
+        - id: length
+          description: Length of substring to be retrieved.
+          type:
+            - number
+  - uid: excel.Excel.ChartTitle.height
+    summary: |-
+      Returns the height, in points, of the chart title. Read-only. Null if chart title is not visible.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: height
+    fullName: excel.Excel.ChartTitle.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartTitle.horizontalAlignment
+    summary: |-
+      Represents the horizontal alignment for chart title.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: horizontalAlignment
+    fullName: excel.Excel.ChartTitle.horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        horizontalAlignment: Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" |
+        "Distributed";
+      return:
+        type:
+          - Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
+  - uid: excel.Excel.ChartTitle.left
+    summary: >-
+      Represents the distance, in points, from the left edge of chart title to the left edge of chart area. Null if
+      chart title's not visible.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: left
+    fullName: excel.Excel.ChartTitle.left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.ChartTitle.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -46,7 +131,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartTitle;'
+      content: 'load(option?: Excel.Interfaces.ChartTitleLoadOptions): Excel.ChartTitle;'
       return:
         type:
           - Excel.ChartTitle
@@ -55,7 +140,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ChartTitleLoadOptions
   - uid: excel.Excel.ChartTitle.overlay
     summary: |-
       Boolean value representing if the chart title will overlay the chart or not.
@@ -71,6 +156,21 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.ChartTitle.position
+    summary: |-
+      Represents the position of chart title. See Excel.ChartTitlePosition for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: position
+    fullName: excel.Excel.ChartTitle.position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position: Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right";'
+      return:
+        type:
+          - Excel.ChartTitlePosition | "Automatic" | "Top" | "Bottom" | "Left" | "Right"
   - uid: excel.Excel.ChartTitle.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -79,10 +179,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ChartTitleUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.ChartTitleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -95,13 +192,43 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ChartTitle.setFormula
+    summary: |-
+      Sets a string value that represents the formula of chart title using A1-style notation.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: setFormula(formula)
+    fullName: excel.Excel.ChartTitle.setFormula
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setFormula(formula: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formula
+          description: a string that present the formula to set
+          type:
+            - string
+  - uid: excel.Excel.ChartTitle.showShadow
+    summary: |-
+      Represents a boolean value that determines if the chart title has a shadow.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: showShadow
+    fullName: excel.Excel.ChartTitle.showShadow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showShadow: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.ChartTitle.text
     summary: |-
       Represents the title text of a chart.
@@ -117,6 +244,23 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.ChartTitle.textOrientation
+    summary: >-
+      Represents the text orientation of chart title. The value should be an integer either from -90 to 90, or 180 for
+      vertically-oriented text.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: textOrientation
+    fullName: excel.Excel.ChartTitle.textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.ChartTitle.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartTitle.toJSON
@@ -124,17 +268,43 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ChartTitleData;'
       return:
         type:
-          - |-
-            {
-                        "format": ChartTitleFormat;
-                        "overlay": boolean;
-                        "text": string;
-                        "visible": boolean;
-                    }
+          - Excel.Interfaces.ChartTitleData
         description: ''
+  - uid: excel.Excel.ChartTitle.top
+    summary: >-
+      Represents the distance, in points, from the top edge of chart title to the top of chart area. Null if chart
+      title's not visible.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: top
+    fullName: excel.Excel.ChartTitle.top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartTitle.verticalAlignment
+    summary: |-
+      Represents the vertical alignment of chart title. See Excel.ChartTextVerticalAlignment for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: verticalAlignment
+    fullName: excel.Excel.ChartTitle.verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";'
+      return:
+        type:
+          - Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
   - uid: excel.Excel.ChartTitle.visible
     summary: |-
       A boolean value the represents the visibility of a chart title object.
@@ -150,3 +320,18 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.ChartTitle.width
+    summary: |-
+      Returns the width, in points, of the chart title. Read-only. Null if chart title is not visible.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: width
+    fullName: excel.Excel.ChartTitle.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number

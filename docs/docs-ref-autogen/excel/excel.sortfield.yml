@@ -59,10 +59,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'dataOption?: string;'
+      content: 'dataOption?: Excel.SortDataOption | "Normal" | "TextAsNumber";'
       return:
         type:
-          - string
+          - Excel.SortDataOption | "Normal" | "TextAsNumber"
   - uid: excel.Excel.SortField.icon
     summary: |-
       Represents the icon that is the target of the condition if the sorting is on the cell's icon.
@@ -106,7 +106,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'sortOn?: string;'
+      content: 'sortOn?: Excel.SortOn | "Value" | "CellColor" | "FontColor" | "Icon";'
       return:
         type:
-          - string
+          - Excel.SortOn | "Value" | "CellColor" | "FontColor" | "Icon"

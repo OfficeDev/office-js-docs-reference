@@ -6,7 +6,7 @@ items:
       blank/nonblank/error/noerror.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.PresetCriteriaConditionalFormat
     fullName: excel.Excel.PresetCriteriaConditionalFormat
     langs:
@@ -22,12 +22,10 @@ items:
       - excel.Excel.PresetCriteriaConditionalFormat.set
       - excel.Excel.PresetCriteriaConditionalFormat.toJSON
   - uid: excel.Excel.PresetCriteriaConditionalFormat.format
-    summary: >-
+    summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-      Read-only.
 
-
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: format
     fullName: excel.Excel.PresetCriteriaConditionalFormat.format
     langs:
@@ -48,7 +46,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.PresetCriteriaConditionalFormat;'
+      content: >-
+        load(option?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions):
+        Excel.PresetCriteriaConditionalFormat;
       return:
         type:
           - Excel.PresetCriteriaConditionalFormat
@@ -57,12 +57,12 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
   - uid: excel.Excel.PresetCriteriaConditionalFormat.rule
     summary: |-
       The rule of the conditional format.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: rule
     fullName: excel.Excel.PresetCriteriaConditionalFormat.rule
     langs:
@@ -81,10 +81,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.PresetCriteriaConditionalFormatUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: >-
+        set(properties: Interfaces.PresetCriteriaConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions):
+        void;
       return:
         type:
           - void
@@ -97,13 +96,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.PresetCriteriaConditionalFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.PresetCriteriaConditionalFormat.toJSON
@@ -111,12 +104,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.PresetCriteriaConditionalFormatData;'
       return:
         type:
-          - |-
-            {
-                        "format": ConditionalRangeFormat;
-                        "rule": ConditionalPresetCriteriaRule;
-                    }
+          - Excel.Interfaces.PresetCriteriaConditionalFormatData
         description: ''

@@ -61,7 +61,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Setting;'
+      content: 'load(option?: Excel.Interfaces.SettingLoadOptions): Excel.Setting;'
       return:
         type:
           - Excel.Setting
@@ -70,7 +70,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.SettingLoadOptions
   - uid: excel.Excel.Setting.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -79,10 +79,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.SettingUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.SettingUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -95,13 +92,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.Setting.toJSON
     name: toJSON()
     fullName: excel.Excel.Setting.toJSON
@@ -109,14 +100,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.SettingData;'
       return:
         type:
-          - |-
-            {
-                        "key": string;
-                        "value": any;
-                    }
+          - Excel.Interfaces.SettingData
         description: ''
   - uid: excel.Excel.Setting.value
     summary: |-

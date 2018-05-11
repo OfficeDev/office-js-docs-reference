@@ -4,7 +4,7 @@ items:
     summary: |-
       An object encapsulating a conditional format's range, format, rule, and other properties.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.ConditionalFormat
     fullName: excel.Excel.ConditionalFormat
     langs:
@@ -27,6 +27,7 @@ items:
       - excel.Excel.ConditionalFormat.getRangeOrNullObject
       - excel.Excel.ConditionalFormat.iconSet
       - excel.Excel.ConditionalFormat.iconSetOrNullObject
+      - excel.Excel.ConditionalFormat.id
       - excel.Excel.ConditionalFormat.load
       - excel.Excel.ConditionalFormat.preset
       - excel.Excel.ConditionalFormat.presetOrNullObject
@@ -45,7 +46,7 @@ items:
       example to format all cells between 5 and 10.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: cellValue
     fullName: excel.Excel.ConditionalFormat.cellValue
     langs:
@@ -62,7 +63,7 @@ items:
       example to format all cells between 5 and 10.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: cellValueOrNullObject
     fullName: excel.Excel.ConditionalFormat.cellValueOrNullObject
     langs:
@@ -77,7 +78,7 @@ items:
     summary: |-
       Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: colorScale
     fullName: excel.Excel.ConditionalFormat.colorScale
     langs:
@@ -92,7 +93,7 @@ items:
     summary: |-
       Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: colorScaleOrNullObject
     fullName: excel.Excel.ConditionalFormat.colorScaleOrNullObject
     langs:
@@ -107,7 +108,7 @@ items:
     summary: |-
       Returns the custom conditional format properties if the current conditional format is a custom type.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: custom
     fullName: excel.Excel.ConditionalFormat.custom
     langs:
@@ -122,7 +123,7 @@ items:
     summary: |-
       Returns the custom conditional format properties if the current conditional format is a custom type.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: customOrNullObject
     fullName: excel.Excel.ConditionalFormat.customOrNullObject
     langs:
@@ -137,7 +138,7 @@ items:
     summary: |-
       Returns the data bar properties if the current conditional format is a data bar.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: dataBar
     fullName: excel.Excel.ConditionalFormat.dataBar
     langs:
@@ -152,7 +153,7 @@ items:
     summary: |-
       Returns the data bar properties if the current conditional format is a data bar.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: dataBarOrNullObject
     fullName: excel.Excel.ConditionalFormat.dataBarOrNullObject
     langs:
@@ -167,7 +168,7 @@ items:
     summary: |-
       Deletes this conditional format.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: delete()
     fullName: excel.Excel.ConditionalFormat.delete
     langs:
@@ -183,7 +184,7 @@ items:
     summary: |-
       Returns the range the conditonal format is applied to or a null object if the range is discontiguous. Read-only.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: getRange()
     fullName: excel.Excel.ConditionalFormat.getRange
     langs:
@@ -199,7 +200,7 @@ items:
     summary: |-
       Returns the range the conditonal format is applied to or a null object if the range is discontiguous. Read-only.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: getRangeOrNullObject()
     fullName: excel.Excel.ConditionalFormat.getRangeOrNullObject
     langs:
@@ -215,7 +216,7 @@ items:
     summary: |-
       Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: iconSet
     fullName: excel.Excel.ConditionalFormat.iconSet
     langs:
@@ -230,7 +231,7 @@ items:
     summary: |-
       Returns the IconSet conditional format properties if the current conditional format is an IconSet type.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: iconSetOrNullObject
     fullName: excel.Excel.ConditionalFormat.iconSetOrNullObject
     langs:
@@ -241,6 +242,21 @@ items:
       return:
         type:
           - Excel.IconSetConditionalFormat
+  - uid: excel.Excel.ConditionalFormat.id
+    summary: |-
+      The Priority of the Conditional Format within the current ConditionalFormatCollection.
+
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+    name: id
+    fullName: excel.Excel.ConditionalFormat.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
   - uid: excel.Excel.ConditionalFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -251,7 +267,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalFormat;'
+      content: 'load(option?: Excel.Interfaces.ConditionalFormatLoadOptions): Excel.ConditionalFormat;'
       return:
         type:
           - Excel.ConditionalFormat
@@ -260,14 +276,14 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ConditionalFormatLoadOptions
   - uid: excel.Excel.ConditionalFormat.preset
     summary: >-
       Returns the preset criteria conditional format such as above average/below average/unique values/contains
       blank/nonblank/error/noerror properties.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: preset
     fullName: excel.Excel.ConditionalFormat.preset
     langs:
@@ -284,7 +300,7 @@ items:
       blank/nonblank/error/noerror properties.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: presetOrNullObject
     fullName: excel.Excel.ConditionalFormat.presetOrNullObject
     langs:
@@ -300,10 +316,11 @@ items:
       The priority (or index) within the conditional format collection that this conditional format currently exists in.
       Changing this also changes other conditional formats' priorities, to allow for a contiguous priority order. Use a
       negative priority to begin from the back. Priorities greater than than bounds will get and set to the maximum (or
-      minimum if negative) priority.
+      minimum if negative) priority. Also note that if you change the priority, you have to re-fetch a new copy of the
+      object at that new priority location if you want to make further changes to it.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: priority
     fullName: excel.Excel.ConditionalFormat.priority
     langs:
@@ -322,10 +339,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ConditionalFormatUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.ConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -338,20 +352,14 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalFormat.stopIfTrue
     summary: >-
       If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
       Null on databars, icon sets, and colorscales as there's no concept of StopIfTrue for these
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: stopIfTrue
     fullName: excel.Excel.ConditionalFormat.stopIfTrue
     langs:
@@ -368,7 +376,7 @@ items:
       example to format cells matching the word "Text".
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: textComparison
     fullName: excel.Excel.ConditionalFormat.textComparison
     langs:
@@ -385,7 +393,7 @@ items:
       example to format cells matching the word "Text".
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: textComparisonOrNullObject
     fullName: excel.Excel.ConditionalFormat.textComparisonOrNullObject
     langs:
@@ -403,31 +411,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ConditionalFormatData;'
       return:
         type:
-          - |-
-            {
-                        "cellValue": CellValueConditionalFormat;
-                        "cellValueOrNullObject": CellValueConditionalFormat;
-                        "colorScale": ColorScaleConditionalFormat;
-                        "colorScaleOrNullObject": ColorScaleConditionalFormat;
-                        "custom": CustomConditionalFormat;
-                        "customOrNullObject": CustomConditionalFormat;
-                        "dataBar": DataBarConditionalFormat;
-                        "dataBarOrNullObject": DataBarConditionalFormat;
-                        "iconSet": IconSetConditionalFormat;
-                        "iconSetOrNullObject": IconSetConditionalFormat;
-                        "preset": PresetCriteriaConditionalFormat;
-                        "presetOrNullObject": PresetCriteriaConditionalFormat;
-                        "priority": number;
-                        "stopIfTrue": boolean;
-                        "textComparison": TextConditionalFormat;
-                        "textComparisonOrNullObject": TextConditionalFormat;
-                        "topBottom": TopBottomConditionalFormat;
-                        "topBottomOrNullObject": TopBottomConditionalFormat;
-                        "type": string;
-                    }
+          - Excel.Interfaces.ConditionalFormatData
         description: ''
   - uid: excel.Excel.ConditionalFormat.topBottom
     summary: >-
@@ -435,7 +422,7 @@ items:
       example to format the top 10% or bottom 10 items.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: topBottom
     fullName: excel.Excel.ConditionalFormat.topBottom
     langs:
@@ -452,7 +439,7 @@ items:
       example to format the top 10% or bottom 10 items.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: topBottomOrNullObject
     fullName: excel.Excel.ConditionalFormat.topBottomOrNullObject
     langs:
@@ -467,14 +454,18 @@ items:
     summary: |-
       A type of conditional format. Only one can be set at a time. Read-Only.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: type
     fullName: excel.Excel.ConditionalFormat.type
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'readonly type: string;'
+      content: >-
+        readonly type: Excel.ConditionalFormatType | "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" |
+        "PresetCriteria" | "ContainsText" | "CellValue";
       return:
         type:
-          - string
+          - >-
+            Excel.ConditionalFormatType | "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" |
+            "PresetCriteria" | "ContainsText" | "CellValue"

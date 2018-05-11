@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.DocumentPropertyType
+    summary: '\[ [API set: WordApi](http://bing.com?type=word) \]'
+    name: Word.DocumentPropertyType
+    fullName: word.Word.DocumentPropertyType
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.DocumentPropertyType.boolean
+      - word.Word.DocumentPropertyType.date
+      - word.Word.DocumentPropertyType.number
+      - word.Word.DocumentPropertyType.string
+  - uid: word.Word.DocumentPropertyType.boolean
+    name: boolean
+    fullName: word.Word.DocumentPropertyType.boolean
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Boolean"'
+  - uid: word.Word.DocumentPropertyType.date
+    name: date
+    fullName: word.Word.DocumentPropertyType.date
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Date"'
+  - uid: word.Word.DocumentPropertyType.number
+    name: number
+    fullName: word.Word.DocumentPropertyType.number
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Number"'
+  - uid: word.Word.DocumentPropertyType.string
+    name: string
+    fullName: word.Word.DocumentPropertyType.string
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"String"'

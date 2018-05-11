@@ -1,0 +1,126 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartTrendlineCollection
+    summary: |-
+      Represents a collection of Chart Trendlines.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: Excel.ChartTrendlineCollection
+    fullName: excel.Excel.ChartTrendlineCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartTrendlineCollection.add
+      - excel.Excel.ChartTrendlineCollection.getCount
+      - excel.Excel.ChartTrendlineCollection.getItem
+      - excel.Excel.ChartTrendlineCollection.items
+      - excel.Excel.ChartTrendlineCollection.load
+      - excel.Excel.ChartTrendlineCollection.toJSON
+  - uid: excel.Excel.ChartTrendlineCollection.add
+    summary: |-
+      Adds a new trendline to trendline collection.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: add(type)
+    fullName: excel.Excel.ChartTrendlineCollection.add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(type?: Excel.ChartTrendlineType): Excel.ChartTrendline;'
+      return:
+        type:
+          - Excel.ChartTrendline
+        description: ''
+      parameters:
+        - id: type
+          description: Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
+          type:
+            - Excel.ChartTrendlineType
+  - uid: excel.Excel.ChartTrendlineCollection.getCount
+    summary: |-
+      Returns the number of trendlines in the collection.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: getCount()
+    fullName: excel.Excel.ChartTrendlineCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: excel.Excel.ChartTrendlineCollection.getItem
+    summary: |-
+      Get trendline object by index, which is the insertion order in items array.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: getItem(index)
+    fullName: excel.Excel.ChartTrendlineCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number): Excel.ChartTrendline;'
+      return:
+        type:
+          - Excel.ChartTrendline
+        description: ''
+      parameters:
+        - id: index
+          description: Represents the insertion order in items array.
+          type:
+            - number
+  - uid: excel.Excel.ChartTrendlineCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: excel.Excel.ChartTrendlineCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.ChartTrendline[];'
+      return:
+        type:
+          - 'Excel.ChartTrendline[]'
+  - uid: excel.Excel.ChartTrendlineCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ChartTrendlineCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ChartTrendlineCollection;
+      return:
+        type:
+          - Excel.ChartTrendlineCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.ChartTrendlineCollection.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartTrendlineCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartTrendlineCollectionData;'
+      return:
+        type:
+          - Excel.Interfaces.ChartTrendlineCollectionData
+        description: ''

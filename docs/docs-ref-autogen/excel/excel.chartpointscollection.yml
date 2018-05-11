@@ -99,10 +99,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: Array<Excel.ChartPoint>;'
+      content: 'readonly items: Excel.ChartPoint[];'
       return:
         type:
-          - Array<Excel.ChartPoint>
+          - 'Excel.ChartPoint[]'
   - uid: excel.Excel.ChartPointsCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -113,7 +113,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartPointsCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ChartPointsCollection;
       return:
         type:
           - Excel.ChartPointsCollection
@@ -122,7 +124,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.ChartPointsCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartPointsCollection.toJSON
@@ -130,11 +132,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ChartPointsCollectionData;'
       return:
         type:
-          - |-
-            {
-                        "count": number;
-                    }
+          - Excel.Interfaces.ChartPointsCollectionData
         description: ''

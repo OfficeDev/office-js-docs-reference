@@ -14,7 +14,9 @@ items:
       - OfficeExtension.ClientObject
     package: onenote
     children:
+      - onenote.OneNote.Paragraph.addNoteTag
       - onenote.OneNote.Paragraph.delete
+      - onenote.OneNote.Paragraph.getParagraphInfo
       - onenote.OneNote.Paragraph.id
       - onenote.OneNote.Paragraph.image
       - onenote.OneNote.Paragraph.inkWords
@@ -30,8 +32,37 @@ items:
       - onenote.OneNote.Paragraph.parentTableCell
       - onenote.OneNote.Paragraph.parentTableCellOrNull
       - onenote.OneNote.Paragraph.richText
+      - onenote.OneNote.Paragraph.set
       - onenote.OneNote.Paragraph.table
+      - onenote.OneNote.Paragraph.toJSON
+      - onenote.OneNote.Paragraph.track
       - onenote.OneNote.Paragraph.type
+      - onenote.OneNote.Paragraph.untrack
+  - uid: onenote.OneNote.Paragraph.addNoteTag
+    summary: |-
+      Add NoteTag to the paragraph.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: 'addNoteTag(type, status)'
+    fullName: onenote.OneNote.Paragraph.addNoteTag
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addNoteTag(type: string, status: string): OneNote.NoteTag;'
+      return:
+        type:
+          - OneNote.NoteTag
+        description: ''
+      parameters:
+        - id: type
+          description: The type of the NoteTag.
+          type:
+            - string
+        - id: status
+          description: The status of the NoteTag.
+          type:
+            - string
   - uid: onenote.OneNote.Paragraph.delete
     summary: |-
       Deletes the paragraph
@@ -88,6 +119,22 @@ items:
           }
       });
       ```
+  - uid: onenote.OneNote.Paragraph.getParagraphInfo
+    summary: |-
+      Get list information of paragraph
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: getParagraphInfo()
+    fullName: onenote.OneNote.Paragraph.getParagraphInfo
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getParagraphInfo(): OfficeExtension.ClientResult<OneNote.ParagraphInfo>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<OneNote.ParagraphInfo>
+        description: ''
   - uid: onenote.OneNote.Paragraph.id
     summary: |-
       Gets the ID of the Paragraph object. Read-only.
@@ -99,7 +146,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type:
           - string
@@ -114,7 +161,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'image: OneNote.Image;'
+      content: 'readonly image: OneNote.Image;'
       return:
         type:
           - OneNote.Image
@@ -129,12 +176,15 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'inkWords: OneNote.InkWordCollection;'
+      content: 'readonly inkWords: OneNote.InkWordCollection;'
       return:
         type:
           - OneNote.InkWordCollection
   - uid: onenote.OneNote.Paragraph.insertHtmlAsSibling
-    summary: Inserts the specified HTML content
+    summary: |-
+      Inserts the specified HTML content
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: 'insertHtmlAsSibling(insertLocation, html)'
     fullName: onenote.OneNote.Paragraph.insertHtmlAsSibling
     langs:
@@ -155,7 +205,7 @@ items:
           description: >-
             An HTML string that describes the visual presentation of the content. See \[supported
             HTML\](../../docs/onenote/onenote-add-ins-page-content.md\#supported-html) for the OneNote add-ins
-            JavaScript API. \[Api set: OneNoteApi 1.1\]
+            JavaScript API.
           type:
             - string
     remarks: |
@@ -198,7 +248,10 @@ items:
       });
       ```
   - uid: onenote.OneNote.Paragraph.insertImageAsSibling
-    summary: Inserts the image at the specified insert location..
+    summary: |-
+      Inserts the image at the specified insert location..
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: 'insertImageAsSibling(insertLocation, base64EncodedImage, width, height)'
     fullName: onenote.OneNote.Paragraph.insertImageAsSibling
     langs:
@@ -226,9 +279,7 @@ items:
           type:
             - number
         - id: height
-          description: >-
-            Optional. Height in the unit of Points. The default value is null and image height will be respected. \[Api
-            set: OneNoteApi 1.1\]
+          description: Optional. Height in the unit of Points. The default value is null and image height will be respected.
           type:
             - number
     remarks: |
@@ -271,7 +322,10 @@ items:
       });
       ```
   - uid: onenote.OneNote.Paragraph.insertRichTextAsSibling
-    summary: Inserts the paragraph text at the specifiec insert location.
+    summary: |-
+      Inserts the paragraph text at the specifiec insert location.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: 'insertRichTextAsSibling(insertLocation, paragraphText)'
     fullName: onenote.OneNote.Paragraph.insertRichTextAsSibling
     langs:
@@ -289,7 +343,7 @@ items:
           type:
             - string
         - id: paragraphText
-          description: 'HTML string to append. \[Api set: OneNoteApi 1.1\]'
+          description: HTML string to append.
           type:
             - string
     remarks: |
@@ -332,7 +386,10 @@ items:
       }); 
       ```
   - uid: onenote.OneNote.Paragraph.insertTableAsSibling
-    summary: Adds a table with the specified number of rows and columns before or after the current paragraph.
+    summary: |-
+      Adds a table with the specified number of rows and columns before or after the current paragraph.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: 'insertTableAsSibling(insertLocation, rowCount, columnCount, values)'
     fullName: onenote.OneNote.Paragraph.insertTableAsSibling
     langs:
@@ -360,9 +417,7 @@ items:
           type:
             - number
         - id: values
-          description: >-
-            Optional 2D array. Cells are filled if the corresponding strings are specified in the array. \[Api set:
-            OneNoteApi 1.1\]
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - Array<Array<string>>
   - uid: onenote.OneNote.Paragraph.load
@@ -375,7 +430,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.Paragraph;'
+      content: 'load(option?: OneNote.Interfaces.ParagraphLoadOptions): OneNote.Paragraph;'
       return:
         type:
           - OneNote.Paragraph
@@ -384,7 +439,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.ParagraphLoadOptions
   - uid: onenote.OneNote.Paragraph.outline
     summary: |-
       Gets the Outline object that contains the Paragraph. Read-only.
@@ -396,7 +451,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'outline: OneNote.Outline;'
+      content: 'readonly outline: OneNote.Outline;'
       return:
         type:
           - OneNote.Outline
@@ -411,7 +466,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'paragraphs: OneNote.ParagraphCollection;'
+      content: 'readonly paragraphs: OneNote.ParagraphCollection;'
       return:
         type:
           - OneNote.ParagraphCollection
@@ -426,7 +481,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentParagraph: OneNote.Paragraph;'
+      content: 'readonly parentParagraph: OneNote.Paragraph;'
       return:
         type:
           - OneNote.Paragraph
@@ -441,7 +496,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentParagraphOrNull: OneNote.Paragraph;'
+      content: 'readonly parentParagraphOrNull: OneNote.Paragraph;'
       return:
         type:
           - OneNote.Paragraph
@@ -458,7 +513,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentTableCell: OneNote.TableCell;'
+      content: 'readonly parentTableCell: OneNote.TableCell;'
       return:
         type:
           - OneNote.TableCell
@@ -475,7 +530,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentTableCellOrNull: OneNote.TableCell;'
+      content: 'readonly parentTableCellOrNull: OneNote.TableCell;'
       return:
         type:
           - OneNote.TableCell
@@ -490,10 +545,41 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'richText: OneNote.RichText;'
+      content: 'readonly richText: OneNote.RichText;'
       return:
         type:
           - OneNote.RichText
+  - uid: onenote.OneNote.Paragraph.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: onenote.OneNote.Paragraph.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        set(properties: Interfaces.ParagraphUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ParagraphUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: onenote.OneNote.Paragraph.table
     summary: |-
       Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
@@ -505,10 +591,40 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'table: OneNote.Table;'
+      content: 'readonly table: OneNote.Table;'
       return:
         type:
           - OneNote.Table
+  - uid: onenote.OneNote.Paragraph.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.Paragraph.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.ParagraphData;'
+      return:
+        type:
+          - OneNote.Interfaces.ParagraphData
+        description: ''
+  - uid: onenote.OneNote.Paragraph.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.Paragraph.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.Paragraph;'
+      return:
+        type:
+          - OneNote.Paragraph
+        description: ''
   - uid: onenote.OneNote.Paragraph.type
     summary: |-
       Gets the type of the Paragraph object. Read-only.
@@ -520,7 +636,24 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'type: string;'
+      content: 'readonly type: string;'
       return:
         type:
           - string
+  - uid: onenote.OneNote.Paragraph.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.Paragraph.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.Paragraph;'
+      return:
+        type:
+          - OneNote.Paragraph
+        description: ''

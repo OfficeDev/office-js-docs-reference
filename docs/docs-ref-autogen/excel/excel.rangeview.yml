@@ -41,10 +41,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly cellAddresses: Array<Array<any>>;'
+      content: 'readonly cellAddresses: any[][];'
       return:
         type:
-          - Array<Array<any>>
+          - 'any[][]'
   - uid: excel.Excel.RangeView.columnCount
     summary: |-
       Returns the number of visible columns. Read-only.
@@ -71,10 +71,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'formulas: Array<Array<any>>;'
+      content: 'formulas: any[][];'
       return:
         type:
-          - Array<Array<any>>
+          - 'any[][]'
   - uid: excel.Excel.RangeView.formulasLocal
     summary: >-
       Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
@@ -88,10 +88,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'formulasLocal: Array<Array<any>>;'
+      content: 'formulasLocal: any[][];'
       return:
         type:
-          - Array<Array<any>>
+          - 'any[][]'
   - uid: excel.Excel.RangeView.formulasR1C1
     summary: |-
       Represents the formula in R1C1-style notation.
@@ -103,10 +103,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'formulasR1C1: Array<Array<any>>;'
+      content: 'formulasR1C1: any[][];'
       return:
         type:
-          - Array<Array<any>>
+          - 'any[][]'
   - uid: excel.Excel.RangeView.getRange
     summary: |-
       Gets the parent range associated with the current RangeView.
@@ -148,7 +148,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeView;'
+      content: 'load(option?: Excel.Interfaces.RangeViewLoadOptions): Excel.RangeView;'
       return:
         type:
           - Excel.RangeView
@@ -157,7 +157,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.RangeViewLoadOptions
   - uid: excel.Excel.RangeView.numberFormat
     summary: |-
       Represents Excel's number format code for the given cell.
@@ -169,10 +169,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'numberFormat: Array<Array<any>>;'
+      content: 'numberFormat: any[][];'
       return:
         type:
-          - Array<Array<any>>
+          - 'any[][]'
   - uid: excel.Excel.RangeView.rowCount
     summary: |-
       Returns the number of visible rows. Read-only.
@@ -190,7 +190,7 @@ items:
           - number
   - uid: excel.Excel.RangeView.rows
     summary: |-
-      Represents a collection of range views associated with the range. Read-only.
+      Represents a collection of range views associated with the range.
 
       \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: rows
@@ -211,10 +211,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.RangeViewUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.RangeViewUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -227,13 +224,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.RangeView.text
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
@@ -247,10 +238,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly text: Array<Array<any>>;'
+      content: 'readonly text: string[][];'
       return:
         type:
-          - Array<Array<any>>
+          - 'string[][]'
   - uid: excel.Excel.RangeView.toJSON
     name: toJSON()
     fullName: excel.Excel.RangeView.toJSON
@@ -258,23 +249,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.RangeViewData;'
       return:
         type:
-          - |-
-            {
-                        "cellAddresses": any[][];
-                        "columnCount": number;
-                        "formulas": any[][];
-                        "formulasLocal": any[][];
-                        "formulasR1C1": any[][];
-                        "index": number;
-                        "numberFormat": any[][];
-                        "rowCount": number;
-                        "text": any[][];
-                        "values": any[][];
-                        "valueTypes": string[][];
-                    }
+          - Excel.Interfaces.RangeViewData
         description: ''
   - uid: excel.Excel.RangeView.values
     summary: >-
@@ -289,10 +267,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'values: Array<Array<any>>;'
+      content: 'values: any[][];'
       return:
         type:
-          - Array<Array<any>>
+          - 'any[][]'
   - uid: excel.Excel.RangeView.valueTypes
     summary: |-
       Represents the type of data of each cell. Read-only.
@@ -304,7 +282,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly valueTypes: Array<Array<string>>;'
+      content: 'readonly valueTypes: Excel.RangeValueType[][];'
       return:
         type:
-          - Array<Array<string>>
+          - 'Excel.RangeValueType[][]'

@@ -42,7 +42,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'specificity: string;'
+      content: 'specificity: Excel.FilterDatetimeSpecificity | "Year" | "Month" | "Day" | "Hour" | "Minute" | "Second";'
       return:
         type:
-          - string
+          - Excel.FilterDatetimeSpecificity | "Year" | "Month" | "Day" | "Hour" | "Minute" | "Second"

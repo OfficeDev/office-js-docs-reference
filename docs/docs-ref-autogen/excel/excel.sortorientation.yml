@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.SortOrientation
+    summary: '\[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]'
+    name: Excel.SortOrientation
+    fullName: excel.Excel.SortOrientation
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.SortOrientation.columns
+      - excel.Excel.SortOrientation.rows
+  - uid: excel.Excel.SortOrientation.columns
+    name: columns
+    fullName: excel.Excel.SortOrientation.columns
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Columns"'
+  - uid: excel.Excel.SortOrientation.rows
+    name: rows
+    fullName: excel.Excel.SortOrientation.rows
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Rows"'

@@ -28,7 +28,7 @@ items:
       - excel.Excel.ChartDataLabels.toJSON
   - uid: excel.Excel.ChartDataLabels.format
     summary: |-
-      Represents the format of chart data labels, which includes fill and font formatting. Read-only.
+      Represents the format of chart data labels, which includes fill and font formatting.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: format
@@ -51,7 +51,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartDataLabels;'
+      content: 'load(option?: Excel.Interfaces.ChartDataLabelsLoadOptions): Excel.ChartDataLabels;'
       return:
         type:
           - Excel.ChartDataLabels
@@ -60,7 +60,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ChartDataLabelsLoadOptions
   - uid: excel.Excel.ChartDataLabels.position
     summary: >-
       DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
@@ -74,10 +74,14 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'position: string;'
+      content: >-
+        position: Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" |
+        "OutsideEnd" | "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout";
       return:
         type:
-          - string
+          - >-
+            Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" |
+            "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
   - uid: excel.Excel.ChartDataLabels.separator
     summary: |-
       String representing the separator used for the data labels on a chart.
@@ -101,10 +105,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ChartDataLabelsUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.ChartDataLabelsUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -117,13 +118,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartDataLabels.showBubbleSize
     summary: |-
       Boolean value representing if the data label bubble size is visible or not.
@@ -221,19 +216,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ChartDataLabelsData;'
       return:
         type:
-          - |-
-            {
-                        "format": ChartDataLabelFormat;
-                        "position": string;
-                        "separator": string;
-                        "showBubbleSize": boolean;
-                        "showCategoryName": boolean;
-                        "showLegendKey": boolean;
-                        "showPercentage": boolean;
-                        "showSeriesName": boolean;
-                        "showValue": boolean;
-                    }
+          - Excel.Interfaces.ChartDataLabelsData
         description: ''

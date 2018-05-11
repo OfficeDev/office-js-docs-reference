@@ -168,10 +168,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: Array<Excel.NamedItem>;'
+      content: 'readonly items: Excel.NamedItem[];'
       return:
         type:
-          - Array<Excel.NamedItem>
+          - 'Excel.NamedItem[]'
   - uid: excel.Excel.NamedItemCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -182,7 +182,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.NamedItemCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.NamedItemCollection;
       return:
         type:
           - Excel.NamedItemCollection
@@ -191,7 +193,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.NamedItemCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.NamedItemCollection.toJSON
@@ -199,8 +201,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.NamedItemCollectionData;'
       return:
         type:
-          - '{}'
+          - Excel.Interfaces.NamedItemCollectionData
         description: ''

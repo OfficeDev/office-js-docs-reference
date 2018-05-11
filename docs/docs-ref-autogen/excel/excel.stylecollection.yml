@@ -1,0 +1,109 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.StyleCollection
+    summary: |-
+      Represents a collection of all the styles.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: Excel.StyleCollection
+    fullName: excel.Excel.StyleCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.StyleCollection.add
+      - excel.Excel.StyleCollection.getItem
+      - excel.Excel.StyleCollection.items
+      - excel.Excel.StyleCollection.load
+      - excel.Excel.StyleCollection.toJSON
+  - uid: excel.Excel.StyleCollection.add
+    summary: |-
+      Adds a new style to the collection.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: add(name)
+    fullName: excel.Excel.StyleCollection.add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: Name of the style to be added.
+          type:
+            - string
+  - uid: excel.Excel.StyleCollection.getItem
+    summary: |-
+      Gets a style by name.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: getItem(name)
+    fullName: excel.Excel.StyleCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.Style;'
+      return:
+        type:
+          - Excel.Style
+        description: ''
+      parameters:
+        - id: name
+          description: Name of the style to be retrieved.
+          type:
+            - string
+  - uid: excel.Excel.StyleCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: excel.Excel.StyleCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.Style[];'
+      return:
+        type:
+          - 'Excel.Style[]'
+  - uid: excel.Excel.StyleCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.StyleCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.StyleCollection;
+      return:
+        type:
+          - Excel.StyleCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.StyleCollection.toJSON
+    name: toJSON()
+    fullName: excel.Excel.StyleCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.StyleCollectionData;'
+      return:
+        type:
+          - Excel.Interfaces.StyleCollectionData
+        description: ''

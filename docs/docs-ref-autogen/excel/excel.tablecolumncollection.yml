@@ -235,10 +235,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: Array<Excel.TableColumn>;'
+      content: 'readonly items: Excel.TableColumn[];'
       return:
         type:
-          - Array<Excel.TableColumn>
+          - 'Excel.TableColumn[]'
   - uid: excel.Excel.TableColumnCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -249,7 +249,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TableColumnCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.TableColumnCollection;
       return:
         type:
           - Excel.TableColumnCollection
@@ -258,7 +260,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.TableColumnCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.TableColumnCollection.toJSON
@@ -266,11 +268,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.TableColumnCollectionData;'
       return:
         type:
-          - |-
-            {
-                        "count": number;
-                    }
+          - Excel.Interfaces.TableColumnCollectionData
         description: ''

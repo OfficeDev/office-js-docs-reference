@@ -124,7 +124,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'applyCustomFilter(criteria1: string, criteria2?: string, oper?: string): void;'
+      content: 'applyCustomFilter(criteria1: string, criteria2?: string, oper?: Excel.FilterOperator): void;'
       return:
         type:
           - void
@@ -141,7 +141,7 @@ items:
         - id: oper
           description: The operator that describes how the two criteria are joined.
           type:
-            - string
+            - Excel.FilterOperator
   - uid: excel.Excel.Filter.applyDynamicFilter
     summary: |-
       Apply a "Dynamic" filter to the column.
@@ -153,7 +153,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'applyDynamicFilter(criteria: string): void;'
+      content: 'applyDynamicFilter(criteria: Excel.DynamicFilterCriteria): void;'
       return:
         type:
           - void
@@ -162,7 +162,7 @@ items:
         - id: criteria
           description: The dynamic criteria to apply.
           type:
-            - string
+            - Excel.DynamicFilterCriteria
   - uid: excel.Excel.Filter.applyFontColorFilter
     summary: |-
       Apply a "Font Color" filter to the column for the given color.
@@ -309,7 +309,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Filter;'
+      content: 'load(option?: Excel.Interfaces.FilterLoadOptions): Excel.Filter;'
       return:
         type:
           - Excel.Filter
@@ -318,7 +318,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.FilterLoadOptions
   - uid: excel.Excel.Filter.toJSON
     name: toJSON()
     fullName: excel.Excel.Filter.toJSON
@@ -326,11 +326,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.FilterData;'
       return:
         type:
-          - |-
-            {
-                        "criteria": FilterCriteria;
-                    }
+          - Excel.Interfaces.FilterData
         description: ''

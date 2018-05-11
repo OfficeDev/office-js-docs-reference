@@ -23,6 +23,9 @@ items:
       - onenote.OneNote.TableRow.parentTable
       - onenote.OneNote.TableRow.rowIndex
       - onenote.OneNote.TableRow.setShadingColor
+      - onenote.OneNote.TableRow.toJSON
+      - onenote.OneNote.TableRow.track
+      - onenote.OneNote.TableRow.untrack
   - uid: onenote.OneNote.TableRow.cellCount
     summary: |-
       Gets the number of cells in the row. Read-only.
@@ -34,7 +37,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'cellCount: number;'
+      content: 'readonly cellCount: number;'
       return:
         type:
           - number
@@ -49,7 +52,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'cells: OneNote.TableCellCollection;'
+      content: 'readonly cells: OneNote.TableCellCollection;'
       return:
         type:
           - OneNote.TableCellCollection
@@ -80,12 +83,15 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type:
           - string
   - uid: onenote.OneNote.TableRow.insertRowAsSibling
-    summary: Inserts a row before or after the current row.
+    summary: |-
+      Inserts a row before or after the current row.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: 'insertRowAsSibling(insertLocation, values)'
     fullName: onenote.OneNote.TableRow.insertRowAsSibling
     langs:
@@ -105,7 +111,7 @@ items:
         - id: values
           description: >-
             Strings to insert in the new row, specified as an array. Must not have more cells than in the current row.
-            Optional. \[Api set: OneNoteApi 1.1\]
+            Optional.
           type:
             - Array<string>
     remarks: |
@@ -161,7 +167,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.TableRow;'
+      content: 'load(option?: OneNote.Interfaces.TableRowLoadOptions): OneNote.TableRow;'
       return:
         type:
           - OneNote.TableRow
@@ -170,7 +176,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.TableRowLoadOptions
   - uid: onenote.OneNote.TableRow.parentTable
     summary: |-
       Gets the parent table. Read-only.
@@ -182,7 +188,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentTable: OneNote.Table;'
+      content: 'readonly parentTable: OneNote.Table;'
       return:
         type:
           - OneNote.Table
@@ -197,7 +203,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'rowIndex: number;'
+      content: 'readonly rowIndex: number;'
       return:
         type:
           - number
@@ -218,3 +224,50 @@ items:
           description: ''
           type:
             - string
+  - uid: onenote.OneNote.TableRow.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.TableRow.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.TableRowData;'
+      return:
+        type:
+          - OneNote.Interfaces.TableRowData
+        description: ''
+  - uid: onenote.OneNote.TableRow.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.TableRow.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.TableRow;'
+      return:
+        type:
+          - OneNote.TableRow
+        description: ''
+  - uid: onenote.OneNote.TableRow.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.TableRow.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.TableRow;'
+      return:
+        type:
+          - OneNote.TableRow
+        description: ''

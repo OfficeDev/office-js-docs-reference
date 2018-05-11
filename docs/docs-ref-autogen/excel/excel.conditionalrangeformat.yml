@@ -4,7 +4,7 @@ items:
     summary: |-
       A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.ConditionalRangeFormat
     fullName: excel.Excel.ConditionalRangeFormat
     langs:
@@ -23,9 +23,9 @@ items:
       - excel.Excel.ConditionalRangeFormat.toJSON
   - uid: excel.Excel.ConditionalRangeFormat.borders
     summary: |-
-      Collection of border objects that apply to the overall conditional format range. Read-only.
+      Collection of border objects that apply to the overall conditional format range.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: borders
     fullName: excel.Excel.ConditionalRangeFormat.borders
     langs:
@@ -38,9 +38,9 @@ items:
           - Excel.ConditionalRangeBorderCollection
   - uid: excel.Excel.ConditionalRangeFormat.fill
     summary: |-
-      Returns the fill object defined on the overall conditional format range. Read-only.
+      Returns the fill object defined on the overall conditional format range.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: fill
     fullName: excel.Excel.ConditionalRangeFormat.fill
     langs:
@@ -53,9 +53,9 @@ items:
           - Excel.ConditionalRangeFill
   - uid: excel.Excel.ConditionalRangeFormat.font
     summary: |-
-      Returns the font object defined on the overall conditional format range. Read-only.
+      Returns the font object defined on the overall conditional format range.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: font
     fullName: excel.Excel.ConditionalRangeFormat.font
     langs:
@@ -76,7 +76,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalRangeFormat;'
+      content: 'load(option?: Excel.Interfaces.ConditionalRangeFormatLoadOptions): Excel.ConditionalRangeFormat;'
       return:
         type:
           - Excel.ConditionalRangeFormat
@@ -85,12 +85,12 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: excel.Excel.ConditionalRangeFormat.numberFormat
     summary: |-
       Represents Excel's number format code for the given range. Cleared if null is passed in.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: numberFormat
     fullName: excel.Excel.ConditionalRangeFormat.numberFormat
     langs:
@@ -109,10 +109,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ConditionalRangeFormatUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.ConditionalRangeFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -125,13 +122,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalRangeFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ConditionalRangeFormat.toJSON
@@ -139,11 +130,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ConditionalRangeFormatData;'
       return:
         type:
-          - |-
-            {
-                        "numberFormat": any;
-                    }
+          - Excel.Interfaces.ConditionalRangeFormatData
         description: ''

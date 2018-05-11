@@ -24,6 +24,7 @@ items:
       - excel.Excel.TableCollection.getItemOrNullObject
       - excel.Excel.TableCollection.items
       - excel.Excel.TableCollection.load
+      - excel.Excel.TableCollection.onChanged
       - excel.Excel.TableCollection.toJSON
   - uid: excel.Excel.TableCollection.add
     summary: >-
@@ -120,7 +121,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getItem(key: number | string): Excel.Table;'
+      content: 'getItem(key: string): Excel.Table;'
       return:
         type:
           - Excel.Table
@@ -129,7 +130,7 @@ items:
         - id: key
           description: Name or ID of the table to be retrieved.
           type:
-            - number | string
+            - string
     remarks: |
 
 
@@ -216,7 +217,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getItemOrNullObject(key: number | string): Excel.Table;'
+      content: 'getItemOrNullObject(key: string): Excel.Table;'
       return:
         type:
           - Excel.Table
@@ -225,7 +226,7 @@ items:
         - id: key
           description: Name or ID of the table to be retrieved.
           type:
-            - number | string
+            - string
   - uid: excel.Excel.TableCollection.items
     summary: Gets the loaded child items in this collection.
     name: items
@@ -234,10 +235,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: Array<Excel.Table>;'
+      content: 'readonly items: Excel.Table[];'
       return:
         type:
-          - Array<Excel.Table>
+          - 'Excel.Table[]'
   - uid: excel.Excel.TableCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -248,7 +249,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TableCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.TableCollection;
       return:
         type:
           - Excel.TableCollection
@@ -257,7 +260,22 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.TableCollection.onChanged
+    summary: |-
+      Occurs when data changed on any table in a workbook, or a worksheet.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: onChanged
+    fullName: excel.Excel.TableCollection.onChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
   - uid: excel.Excel.TableCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.TableCollection.toJSON
@@ -265,11 +283,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.TableCollectionData;'
       return:
         type:
-          - |-
-            {
-                        "count": number;
-                    }
+          - Excel.Interfaces.TableCollectionData
         description: ''

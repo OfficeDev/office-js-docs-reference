@@ -20,6 +20,9 @@ items:
       - onenote.OneNote.SectionGroupCollection.getItemAt
       - onenote.OneNote.SectionGroupCollection.items
       - onenote.OneNote.SectionGroupCollection.load
+      - onenote.OneNote.SectionGroupCollection.toJSON
+      - onenote.OneNote.SectionGroupCollection.track
+      - onenote.OneNote.SectionGroupCollection.untrack
   - uid: onenote.OneNote.SectionGroupCollection.count
     summary: |-
       Returns the number of section groups in the collection. Read-only.
@@ -31,12 +34,15 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'count: number;'
+      content: 'readonly count: number;'
       return:
         type:
           - number
   - uid: onenote.OneNote.SectionGroupCollection.getByName
-    summary: Gets the collection of section groups with the specified name.
+    summary: |-
+      Gets the collection of section groups with the specified name.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getByName(name)
     fullName: onenote.OneNote.SectionGroupCollection.getByName
     langs:
@@ -50,7 +56,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: 'The name of the section group. \[Api set: OneNoteApi 1.1\]'
+          description: The name of the section group.
           type:
             - string
     remarks: |
@@ -93,7 +99,10 @@ items:
       });
       ```
   - uid: onenote.OneNote.SectionGroupCollection.getItem
-    summary: Gets a section group by ID or by its index in the collection. Read-only.
+    summary: |-
+      Gets a section group by ID or by its index in the collection. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getItem(index)
     fullName: onenote.OneNote.SectionGroupCollection.getItem
     langs:
@@ -107,13 +116,14 @@ items:
         description: ''
       parameters:
         - id: index
-          description: >-
-            The ID of the section group, or the index location of the section group in the collection. \[Api set:
-            OneNoteApi 1.1\]
+          description: 'The ID of the section group, or the index location of the section group in the collection.'
           type:
             - number | string
   - uid: onenote.OneNote.SectionGroupCollection.getItemAt
-    summary: Gets a section group on its position in the collection.
+    summary: |-
+      Gets a section group on its position in the collection.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getItemAt(index)
     fullName: onenote.OneNote.SectionGroupCollection.getItemAt
     langs:
@@ -127,7 +137,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Index value of the object to be retrieved. Zero-indexed. \[Api set: OneNoteApi 1.1\]'
+          description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
   - uid: onenote.OneNote.SectionGroupCollection.items
@@ -138,7 +148,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<OneNote.SectionGroup>;'
+      content: 'readonly items: Array<OneNote.SectionGroup>;'
       return:
         type:
           - Array<OneNote.SectionGroup>
@@ -152,7 +162,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.SectionGroupCollection;'
+      content: >-
+        load(option?: OneNote.Interfaces.SectionGroupCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
+        OneNote.SectionGroupCollection;
       return:
         type:
           - OneNote.SectionGroupCollection
@@ -161,4 +173,51 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.SectionGroupCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+  - uid: onenote.OneNote.SectionGroupCollection.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.SectionGroupCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.SectionGroupCollectionData;'
+      return:
+        type:
+          - OneNote.Interfaces.SectionGroupCollectionData
+        description: ''
+  - uid: onenote.OneNote.SectionGroupCollection.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.SectionGroupCollection.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.SectionGroupCollection;'
+      return:
+        type:
+          - OneNote.SectionGroupCollection
+        description: ''
+  - uid: onenote.OneNote.SectionGroupCollection.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.SectionGroupCollection.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.SectionGroupCollection;'
+      return:
+        type:
+          - OneNote.SectionGroupCollection
+        description: ''

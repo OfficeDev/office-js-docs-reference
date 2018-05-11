@@ -16,8 +16,10 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.NamedItem.arrayValues
       - excel.Excel.NamedItem.comment
       - excel.Excel.NamedItem.delete
+      - excel.Excel.NamedItem.formula
       - excel.Excel.NamedItem.getRange
       - excel.Excel.NamedItem.getRangeOrNullObject
       - excel.Excel.NamedItem.load
@@ -30,6 +32,21 @@ items:
       - excel.Excel.NamedItem.visible
       - excel.Excel.NamedItem.worksheet
       - excel.Excel.NamedItem.worksheetOrNullObject
+  - uid: excel.Excel.NamedItem.arrayValues
+    summary: |-
+      Returns an object containing values and types of the named item.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: arrayValues
+    fullName: excel.Excel.NamedItem.arrayValues
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly arrayValues: Excel.NamedItemArrayValues;'
+      return:
+        type:
+          - Excel.NamedItemArrayValues
   - uid: excel.Excel.NamedItem.comment
     summary: |-
       Represents the comment associated with this name.
@@ -61,6 +78,21 @@ items:
         type:
           - void
         description: ''
+  - uid: excel.Excel.NamedItem.formula
+    summary: |-
+      Gets or sets the formula of the named item. Formula always starts with a '=' sign.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: formula
+    fullName: excel.Excel.NamedItem.formula
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formula: any;'
+      return:
+        type:
+          - any
   - uid: excel.Excel.NamedItem.getRange
     summary: >-
       Returns the range object that is associated with the name. Throws an error if the named item's type is not a
@@ -127,7 +159,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.NamedItem;'
+      content: 'load(option?: Excel.Interfaces.NamedItemLoadOptions): Excel.NamedItem;'
       return:
         type:
           - Excel.NamedItem
@@ -136,7 +168,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.NamedItemLoadOptions
   - uid: excel.Excel.NamedItem.name
     summary: |-
       The name of the object. Read-only.
@@ -163,10 +195,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly scope: string;'
+      content: 'readonly scope: Excel.NamedItemScope | "Worksheet" | "Workbook";'
       return:
         type:
-          - string
+          - Excel.NamedItemScope | "Worksheet" | "Workbook"
   - uid: excel.Excel.NamedItem.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -175,10 +207,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.NamedItemUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.NamedItemUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -191,13 +220,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.NamedItem.toJSON
     name: toJSON()
     fullName: excel.Excel.NamedItem.toJSON
@@ -205,34 +228,28 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.NamedItemData;'
       return:
         type:
-          - |-
-            {
-                        "comment": string;
-                        "name": string;
-                        "scope": string;
-                        "type": string;
-                        "value": any;
-                        "visible": boolean;
-                    }
+          - Excel.Interfaces.NamedItemData
         description: ''
   - uid: excel.Excel.NamedItem.type
-    summary: |-
+    summary: >-
       Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+
+      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
+      Array](http://bing.com?type=excel) \]
     name: type
     fullName: excel.Excel.NamedItem.type
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'readonly type: string;'
+      content: 'readonly type: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array";'
       return:
         type:
-          - string
+          - Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"
   - uid: excel.Excel.NamedItem.value
     summary: |-
       Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.

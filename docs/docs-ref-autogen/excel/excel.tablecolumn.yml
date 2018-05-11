@@ -263,7 +263,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TableColumn;'
+      content: 'load(option?: Excel.Interfaces.TableColumnLoadOptions): Excel.TableColumn;'
       return:
         type:
           - Excel.TableColumn
@@ -272,7 +272,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.TableColumnLoadOptions
   - uid: excel.Excel.TableColumn.name
     summary: |-
       Represents the name of the table column.
@@ -296,10 +296,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.TableColumnUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.TableColumnUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -312,13 +309,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.TableColumn.toJSON
     name: toJSON()
     fullName: excel.Excel.TableColumn.toJSON
@@ -326,16 +317,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.TableColumnData;'
       return:
         type:
-          - |-
-            {
-                        "id": number;
-                        "index": number;
-                        "name": string;
-                        "values": any[][];
-                    }
+          - Excel.Interfaces.TableColumnData
         description: ''
   - uid: excel.Excel.TableColumn.values
     summary: >-
@@ -350,7 +335,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'values: Array<Array<any>>;'
+      content: 'values: any[][];'
       return:
         type:
-          - Array<Array<any>>
+          - 'any[][]'

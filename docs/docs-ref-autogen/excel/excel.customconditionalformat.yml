@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a custom conditional format type.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.CustomConditionalFormat
     fullName: excel.Excel.CustomConditionalFormat
     langs:
@@ -20,12 +20,10 @@ items:
       - excel.Excel.CustomConditionalFormat.set
       - excel.Excel.CustomConditionalFormat.toJSON
   - uid: excel.Excel.CustomConditionalFormat.format
-    summary: >-
+    summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-      Read-only.
 
-
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: format
     fullName: excel.Excel.CustomConditionalFormat.format
     langs:
@@ -46,7 +44,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.CustomConditionalFormat;'
+      content: 'load(option?: Excel.Interfaces.CustomConditionalFormatLoadOptions): Excel.CustomConditionalFormat;'
       return:
         type:
           - Excel.CustomConditionalFormat
@@ -55,12 +53,12 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.CustomConditionalFormatLoadOptions
   - uid: excel.Excel.CustomConditionalFormat.rule
     summary: |-
       Represents the Rule object on this conditional format.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: rule
     fullName: excel.Excel.CustomConditionalFormat.rule
     langs:
@@ -79,10 +77,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.CustomConditionalFormatUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.CustomConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -95,13 +90,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.CustomConditionalFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.CustomConditionalFormat.toJSON
@@ -109,12 +98,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.CustomConditionalFormatData;'
       return:
         type:
-          - |-
-            {
-                        "format": ConditionalRangeFormat;
-                        "rule": ConditionalFormatRule;
-                    }
+          - Excel.Interfaces.CustomConditionalFormatData
         description: ''

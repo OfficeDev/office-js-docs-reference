@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.CellPaddingLocation
+    summary: '\[ [API set: WordApi](http://bing.com?type=word) \]'
+    name: Word.CellPaddingLocation
+    fullName: word.Word.CellPaddingLocation
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.CellPaddingLocation.bottom
+      - word.Word.CellPaddingLocation.left
+      - word.Word.CellPaddingLocation.right
+      - word.Word.CellPaddingLocation.top
+  - uid: word.Word.CellPaddingLocation.bottom
+    name: bottom
+    fullName: word.Word.CellPaddingLocation.bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: word.Word.CellPaddingLocation.left
+    name: left
+    fullName: word.Word.CellPaddingLocation.left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: word.Word.CellPaddingLocation.right
+    name: right
+    fullName: word.Word.CellPaddingLocation.right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'
+  - uid: word.Word.CellPaddingLocation.top
+    name: top
+    fullName: word.Word.CellPaddingLocation.top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

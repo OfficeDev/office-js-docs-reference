@@ -37,7 +37,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'body: Word.Body;'
+      content: 'readonly body: Word.Body;'
       return:
         type:
           - Word.Body
@@ -52,7 +52,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getFooter(type: string): Word.Body;'
+      content: 'getFooter(type: Word.HeaderFooterType): Word.Body;'
       return:
         type:
           - Word.Body
@@ -61,7 +61,7 @@ items:
         - id: type
           description: 'Required. The type of footer to return. This value can be: ''primary'', ''firstPage'' or ''evenPages''.'
           type:
-            - string
+            - Word.HeaderFooterType
     remarks: |
 
 
@@ -116,7 +116,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getHeader(type: string): Word.Body;'
+      content: 'getHeader(type: Word.HeaderFooterType): Word.Body;'
       return:
         type:
           - Word.Body
@@ -125,7 +125,7 @@ items:
         - id: type
           description: 'Required. The type of header to return. This value can be: ''primary'', ''firstPage'' or ''evenPages''.'
           type:
-            - string
+            - Word.HeaderFooterType
     remarks: |
 
 
@@ -211,7 +211,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.Section;'
+      content: 'load(option?: Word.Interfaces.SectionLoadOptions): Word.Section;'
       return:
         type:
           - Word.Section
@@ -220,7 +220,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Word.Interfaces.SectionLoadOptions
   - uid: word.Word.Section.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -229,10 +229,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.SectionUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.SectionUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -245,13 +242,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: word.Word.Section.toJSON
     name: toJSON()
     fullName: word.Word.Section.toJSON
@@ -259,13 +250,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Word.Interfaces.SectionData;'
       return:
         type:
-          - |-
-            {
-                        "body": Body;
-                    }
+          - Word.Interfaces.SectionData
         description: ''
   - uid: word.Word.Section.track
     summary: >-

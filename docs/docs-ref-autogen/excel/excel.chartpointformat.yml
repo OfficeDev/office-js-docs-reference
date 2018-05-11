@@ -14,12 +14,29 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartPointFormat.border
       - excel.Excel.ChartPointFormat.fill
       - excel.Excel.ChartPointFormat.load
+      - excel.Excel.ChartPointFormat.set
       - excel.Excel.ChartPointFormat.toJSON
+  - uid: excel.Excel.ChartPointFormat.border
+    summary: |-
+      Represents the border format of a chart data point, which includes color, style and weight information.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: border
+    fullName: excel.Excel.ChartPointFormat.border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: Excel.ChartBorder;'
+      return:
+        type:
+          - Excel.ChartBorder
   - uid: excel.Excel.ChartPointFormat.fill
     summary: |-
-      Represents the fill format of a chart, which includes background formating information. Read-only.
+      Represents the fill format of a chart, which includes background formating information.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: fill
@@ -42,7 +59,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartPointFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartPointFormatLoadOptions): Excel.ChartPointFormat;'
       return:
         type:
           - Excel.ChartPointFormat
@@ -51,7 +68,29 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ChartPointFormatLoadOptions
+  - uid: excel.Excel.ChartPointFormat.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartPointFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartPointFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartPointFormatUpdateData
+        - id: options
+          description: ''
+          type:
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartPointFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartPointFormat.toJSON
@@ -59,11 +98,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ChartPointFormatData;'
       return:
         type:
-          - |-
-            {
-                        "fill": ChartFill;
-                    }
+          - Excel.Interfaces.ChartPointFormatData
         description: ''

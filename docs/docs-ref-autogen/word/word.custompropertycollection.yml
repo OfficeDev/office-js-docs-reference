@@ -133,10 +133,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Word.CustomProperty>;'
+      content: 'readonly items: Word.CustomProperty[];'
       return:
         type:
-          - Array<Word.CustomProperty>
+          - 'Word.CustomProperty[]'
   - uid: word.Word.CustomPropertyCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -147,7 +147,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.CustomPropertyCollection;'
+      content: >-
+        load(option?: Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.CustomPropertyCollection;
       return:
         type:
           - Word.CustomPropertyCollection
@@ -156,7 +158,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Word.Interfaces.CustomPropertyCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
   - uid: word.Word.CustomPropertyCollection.toJSON
     name: toJSON()
     fullName: word.Word.CustomPropertyCollection.toJSON
@@ -164,10 +166,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Word.Interfaces.CustomPropertyCollectionData;'
       return:
         type:
-          - '{}'
+          - Word.Interfaces.CustomPropertyCollectionData
         description: ''
   - uid: word.Word.CustomPropertyCollection.track
     summary: >-

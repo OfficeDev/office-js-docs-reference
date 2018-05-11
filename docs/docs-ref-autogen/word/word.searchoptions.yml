@@ -70,7 +70,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.SearchOptions;'
+      content: 'load(option?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;'
       return:
         type:
           - Word.SearchOptions
@@ -79,7 +79,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Word.Interfaces.SearchOptionsLoadOptions
   - uid: word.Word.SearchOptions.matchCase
     summary: >-
       Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
@@ -202,10 +202,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.SearchOptionsUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.SearchOptionsUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -218,13 +215,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: word.Word.SearchOptions.toJSON
     name: toJSON()
     fullName: word.Word.SearchOptions.toJSON
@@ -232,17 +223,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Word.Interfaces.SearchOptionsData;'
       return:
         type:
-          - |-
-            {
-                        "ignorePunct": boolean;
-                        "ignoreSpace": boolean;
-                        "matchCase": boolean;
-                        "matchPrefix": boolean;
-                        "matchSuffix": boolean;
-                        "matchWholeWord": boolean;
-                        "matchWildcards": boolean;
-                    }
+          - Word.Interfaces.SearchOptionsData
         description: ''

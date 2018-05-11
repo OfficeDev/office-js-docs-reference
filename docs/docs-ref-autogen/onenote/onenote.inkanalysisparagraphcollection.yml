@@ -19,6 +19,9 @@ items:
       - onenote.OneNote.InkAnalysisParagraphCollection.getItemAt
       - onenote.OneNote.InkAnalysisParagraphCollection.items
       - onenote.OneNote.InkAnalysisParagraphCollection.load
+      - onenote.OneNote.InkAnalysisParagraphCollection.toJSON
+      - onenote.OneNote.InkAnalysisParagraphCollection.track
+      - onenote.OneNote.InkAnalysisParagraphCollection.untrack
   - uid: onenote.OneNote.InkAnalysisParagraphCollection.count
     summary: |-
       Returns the number of InkAnalysisParagraphs in the page. Read-only.
@@ -30,12 +33,15 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'count: number;'
+      content: 'readonly count: number;'
       return:
         type:
           - number
   - uid: onenote.OneNote.InkAnalysisParagraphCollection.getItem
-    summary: Gets a InkAnalysisParagraph object by ID or by its index in the collection. Read-only.
+    summary: |-
+      Gets a InkAnalysisParagraph object by ID or by its index in the collection. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getItem(index)
     fullName: onenote.OneNote.InkAnalysisParagraphCollection.getItem
     langs:
@@ -51,11 +57,14 @@ items:
         - id: index
           description: >-
             The ID of the InkAnalysisParagraph object, or the index location of the InkAnalysisParagraph object in the
-            collection. \[Api set: OneNoteApi 1.1\]
+            collection.
           type:
             - number | string
   - uid: onenote.OneNote.InkAnalysisParagraphCollection.getItemAt
-    summary: Gets a InkAnalysisParagraph on its position in the collection.
+    summary: |-
+      Gets a InkAnalysisParagraph on its position in the collection.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getItemAt(index)
     fullName: onenote.OneNote.InkAnalysisParagraphCollection.getItemAt
     langs:
@@ -69,7 +78,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Index value of the object to be retrieved. Zero-indexed. \[Api set: OneNoteApi 1.1\]'
+          description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
   - uid: onenote.OneNote.InkAnalysisParagraphCollection.items
@@ -80,7 +89,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<OneNote.InkAnalysisParagraph>;'
+      content: 'readonly items: Array<OneNote.InkAnalysisParagraph>;'
       return:
         type:
           - Array<OneNote.InkAnalysisParagraph>
@@ -94,7 +103,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.InkAnalysisParagraphCollection;'
+      content: >-
+        load(option?: OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions &
+        OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisParagraphCollection;
       return:
         type:
           - OneNote.InkAnalysisParagraphCollection
@@ -103,4 +114,51 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+  - uid: onenote.OneNote.InkAnalysisParagraphCollection.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.InkAnalysisParagraphCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.InkAnalysisParagraphCollectionData;'
+      return:
+        type:
+          - OneNote.Interfaces.InkAnalysisParagraphCollectionData
+        description: ''
+  - uid: onenote.OneNote.InkAnalysisParagraphCollection.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.InkAnalysisParagraphCollection.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.InkAnalysisParagraphCollection;'
+      return:
+        type:
+          - OneNote.InkAnalysisParagraphCollection
+        description: ''
+  - uid: onenote.OneNote.InkAnalysisParagraphCollection.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.InkAnalysisParagraphCollection.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.InkAnalysisParagraphCollection;'
+      return:
+        type:
+          - OneNote.InkAnalysisParagraphCollection
+        description: ''

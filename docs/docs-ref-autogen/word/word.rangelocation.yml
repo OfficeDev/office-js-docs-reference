@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.RangeLocation
+    summary: '\[ [API set: WordApi](http://bing.com?type=word) \]'
+    name: Word.RangeLocation
+    fullName: word.Word.RangeLocation
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.RangeLocation.after
+      - word.Word.RangeLocation.before
+      - word.Word.RangeLocation.content
+      - word.Word.RangeLocation.end
+      - word.Word.RangeLocation.start
+      - word.Word.RangeLocation.whole
+  - uid: word.Word.RangeLocation.after
+    name: after
+    fullName: word.Word.RangeLocation.after
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"After"'
+  - uid: word.Word.RangeLocation.before
+    name: before
+    fullName: word.Word.RangeLocation.before
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Before"'
+  - uid: word.Word.RangeLocation.content
+    name: content
+    fullName: word.Word.RangeLocation.content
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Content"'
+  - uid: word.Word.RangeLocation.end
+    name: end
+    fullName: word.Word.RangeLocation.end
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"End"'
+  - uid: word.Word.RangeLocation.start
+    name: start
+    fullName: word.Word.RangeLocation.start
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Start"'
+  - uid: word.Word.RangeLocation.whole
+    name: whole
+    fullName: word.Word.RangeLocation.whole
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Whole"'

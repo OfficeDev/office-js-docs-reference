@@ -15,6 +15,7 @@ items:
     package: word
     children:
       - word.Word.RequestContext.constructor
+      - word.Word.RequestContext.application
       - word.Word.RequestContext.document
   - uid: word.Word.RequestContext.constructor
     summary: 'Constructs a new instance of the [RequestContext](xref:word.Word.RequestContext) class'
@@ -30,6 +31,17 @@ items:
           description: ''
           type:
             - string
+  - uid: word.Word.RequestContext.application
+    name: application
+    fullName: word.Word.RequestContext.application
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly application: Application;'
+      return:
+        type:
+          - Application
   - uid: word.Word.RequestContext.document
     name: document
     fullName: word.Word.RequestContext.document
@@ -37,7 +49,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'document: Document;'
+      content: 'readonly document: Document;'
       return:
         type:
           - Document

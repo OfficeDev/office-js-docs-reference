@@ -1,0 +1,265 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.DocumentProperties
+    summary: |-
+      Represents workbook properties.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: Excel.DocumentProperties
+    fullName: excel.Excel.DocumentProperties
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.DocumentProperties.author
+      - excel.Excel.DocumentProperties.category
+      - excel.Excel.DocumentProperties.comments
+      - excel.Excel.DocumentProperties.company
+      - excel.Excel.DocumentProperties.creationDate
+      - excel.Excel.DocumentProperties.custom
+      - excel.Excel.DocumentProperties.keywords
+      - excel.Excel.DocumentProperties.lastAuthor
+      - excel.Excel.DocumentProperties.load
+      - excel.Excel.DocumentProperties.manager
+      - excel.Excel.DocumentProperties.revisionNumber
+      - excel.Excel.DocumentProperties.set
+      - excel.Excel.DocumentProperties.subject
+      - excel.Excel.DocumentProperties.title
+      - excel.Excel.DocumentProperties.toJSON
+  - uid: excel.Excel.DocumentProperties.author
+    summary: |-
+      Gets or sets the author of the workbook.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: author
+    fullName: excel.Excel.DocumentProperties.author
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'author: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.DocumentProperties.category
+    summary: |-
+      Gets or sets the category of the workbook.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: category
+    fullName: excel.Excel.DocumentProperties.category
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'category: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.DocumentProperties.comments
+    summary: |-
+      Gets or sets the comments of the workbook.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: comments
+    fullName: excel.Excel.DocumentProperties.comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comments: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.DocumentProperties.company
+    summary: |-
+      Gets or sets the company of the workbook.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: company
+    fullName: excel.Excel.DocumentProperties.company
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'company: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.DocumentProperties.creationDate
+    summary: |-
+      Gets the creation date of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: creationDate
+    fullName: excel.Excel.DocumentProperties.creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly creationDate: Date;'
+      return:
+        type:
+          - Date
+  - uid: excel.Excel.DocumentProperties.custom
+    summary: |-
+      Gets the collection of custom properties of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: custom
+    fullName: excel.Excel.DocumentProperties.custom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly custom: Excel.CustomPropertyCollection;'
+      return:
+        type:
+          - Excel.CustomPropertyCollection
+  - uid: excel.Excel.DocumentProperties.keywords
+    summary: |-
+      Gets or sets the keywords of the workbook.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: keywords
+    fullName: excel.Excel.DocumentProperties.keywords
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'keywords: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.DocumentProperties.lastAuthor
+    summary: |-
+      Gets the last author of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: lastAuthor
+    fullName: excel.Excel.DocumentProperties.lastAuthor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly lastAuthor: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.DocumentProperties.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.DocumentProperties.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.DocumentPropertiesLoadOptions): Excel.DocumentProperties;'
+      return:
+        type:
+          - Excel.DocumentProperties
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.DocumentPropertiesLoadOptions
+  - uid: excel.Excel.DocumentProperties.manager
+    summary: |-
+      Gets or sets the manager of the workbook.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: manager
+    fullName: excel.Excel.DocumentProperties.manager
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'manager: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.DocumentProperties.revisionNumber
+    summary: |-
+      Gets the revision number of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: revisionNumber
+    fullName: excel.Excel.DocumentProperties.revisionNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'revisionNumber: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.DocumentProperties.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.DocumentProperties.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.DocumentPropertiesUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.DocumentPropertiesUpdateData
+        - id: options
+          description: ''
+          type:
+            - OfficeExtension.UpdateOptions
+  - uid: excel.Excel.DocumentProperties.subject
+    summary: |-
+      Gets or sets the subject of the workbook.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: subject
+    fullName: excel.Excel.DocumentProperties.subject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subject: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.DocumentProperties.title
+    summary: |-
+      Gets or sets the title of the workbook.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: title
+    fullName: excel.Excel.DocumentProperties.title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.DocumentProperties.toJSON
+    name: toJSON()
+    fullName: excel.Excel.DocumentProperties.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.DocumentPropertiesData;'
+      return:
+        type:
+          - Excel.Interfaces.DocumentPropertiesData
+        description: ''

@@ -78,7 +78,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.CustomXmlPart;'
+      content: 'load(option?: Excel.Interfaces.CustomXmlPartLoadOptions): Excel.CustomXmlPart;'
       return:
         type:
           - Excel.CustomXmlPart
@@ -87,7 +87,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.CustomXmlPartLoadOptions
   - uid: excel.Excel.CustomXmlPart.namespaceUri
     summary: |-
       The custom XML part's namespace URI. Read-only.
@@ -131,12 +131,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.CustomXmlPartData;'
       return:
         type:
-          - |-
-            {
-                        "id": string;
-                        "namespaceUri": string;
-                    }
+          - Excel.Interfaces.CustomXmlPartData
         description: ''

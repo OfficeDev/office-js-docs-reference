@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents an IconSet criteria for conditional formatting.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.IconSetConditionalFormat
     fullName: excel.Excel.IconSetConditionalFormat
     langs:
@@ -28,17 +28,17 @@ items:
       set.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: criteria
     fullName: excel.Excel.IconSetConditionalFormat.criteria
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'criteria: Array<Excel.ConditionalIconCriterion>;'
+      content: 'criteria: Excel.ConditionalIconCriterion[];'
       return:
         type:
-          - Array<Excel.ConditionalIconCriterion>
+          - 'Excel.ConditionalIconCriterion[]'
   - uid: excel.Excel.IconSetConditionalFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -49,7 +49,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.IconSetConditionalFormat;'
+      content: 'load(option?: Excel.Interfaces.IconSetConditionalFormatLoadOptions): Excel.IconSetConditionalFormat;'
       return:
         type:
           - Excel.IconSetConditionalFormat
@@ -58,12 +58,12 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.IconSetConditionalFormatLoadOptions
   - uid: excel.Excel.IconSetConditionalFormat.reverseIconOrder
     summary: |-
       If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: reverseIconOrder
     fullName: excel.Excel.IconSetConditionalFormat.reverseIconOrder
     langs:
@@ -82,10 +82,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.IconSetConditionalFormatUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.IconSetConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -98,18 +95,12 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.IconSetConditionalFormat.showIconOnly
     summary: |-
       If true, hides the values and only shows icons.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: showIconOnly
     fullName: excel.Excel.IconSetConditionalFormat.showIconOnly
     langs:
@@ -124,17 +115,25 @@ items:
     summary: |-
       If set, displays the IconSet option for the conditional format.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: style
     fullName: excel.Excel.IconSetConditionalFormat.style
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'style: string;'
+      content: >-
+        style: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
+        "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" |
+        "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" |
+        "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes";
       return:
         type:
-          - string
+          - >-
+            Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" |
+            "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" |
+            "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" |
+            "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes"
   - uid: excel.Excel.IconSetConditionalFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.IconSetConditionalFormat.toJSON
@@ -142,14 +141,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.IconSetConditionalFormatData;'
       return:
         type:
-          - |-
-            {
-                        "criteria": ConditionalIconCriterion[];
-                        "reverseIconOrder": boolean;
-                        "showIconOnly": boolean;
-                        "style": string;
-                    }
+          - Excel.Interfaces.IconSetConditionalFormatData
         description: ''
