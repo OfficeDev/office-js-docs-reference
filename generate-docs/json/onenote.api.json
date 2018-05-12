@@ -1135,7 +1135,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ImageUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.ImageUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1156,7 +1156,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -1450,7 +1450,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.InkAnalysisUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.InkAnalysisUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1471,7 +1471,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -1645,7 +1645,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.InkAnalysisLineUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.InkAnalysisLineUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1666,7 +1666,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -2122,7 +2122,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.InkAnalysisParagraphUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.InkAnalysisParagraphUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2143,7 +2143,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -2575,7 +2575,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.InkAnalysisWordUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.InkAnalysisWordUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2596,7 +2596,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -5962,7 +5962,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.PageUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.PageUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -5983,7 +5983,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -6604,7 +6604,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.PageContentUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.PageContentUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -6625,7 +6625,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -7655,7 +7655,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ParagraphUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.ParagraphUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -7676,7 +7676,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -8483,9 +8483,9 @@
         },
         "run": {
           "kind": "function",
-          "signature": "export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;",
+          "signature": "export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;",
           "returnValue": {
-            "type": "Promise<T>",
+            "type": "OfficeExtension.IPromise<T>",
             "description": []
           },
           "parameters": {
@@ -8506,7 +8506,7 @@
               ],
               "isOptional": false,
               "isSpread": false,
-              "type": "(context: OneNote.RequestContext) => Promise<T>"
+              "type": "(context: OneNote.RequestContext) => OfficeExtension.IPromise<T>"
             }
           },
           "deprecatedMessage": [],
@@ -10577,7 +10577,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TableUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.TableUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10598,7 +10598,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -11108,7 +11108,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.TableCellUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.TableCellUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -11129,7 +11129,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],

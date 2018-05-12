@@ -3740,42 +3740,6 @@
             }
           }
         },
-        "onReady": {
-          "kind": "function",
-          "signature": "export function onReady(callback?: (info: { host: HostType, platform: PlatformType }) => any): Promise<{ host: HostType, platform: PlatformType }>;",
-          "returnValue": {
-            "type": "Promise<{ host: HostType, platform: PlatformType }>",
-            "description": [
-              {
-                "kind": "text",
-                "text": "A Promise that contains the host and platform info, once initialization is completed."
-              }
-            ]
-          },
-          "parameters": {
-            "callback": {
-              "name": "callback",
-              "description": [
-                {
-                  "kind": "text",
-                  "text": "An optional callback method, that will receive the host and platform info. Alternatively, rather than use a callback, an add-in may simply wait for the Promise returned by the function to resolve."
-                }
-              ],
-              "isOptional": true,
-              "isSpread": false,
-              "type": "(info: { host: HostType, platform: PlatformType }) => any"
-            }
-          },
-          "deprecatedMessage": [],
-          "summary": [
-            {
-              "kind": "text",
-              "text": "Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise will wait until the Office host is ready to accept API calls. Note that though this API is intended to be used inside an Office add-in, it can also be used outside the add-in. In that case, once Office.js determines that it is running outside of an Office host application, it will call the callback and resolve the promise with \"null\" for both the host and platform."
-            }
-          ],
-          "remarks": [],
-          "isBeta": false
-        },
         "PlatformType": {
           "kind": "enum",
           "values": {
@@ -9198,6 +9162,1134 @@
         }
       }
     },
+    "OfficeCore": {
+      "kind": "namespace",
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "exports": {
+        "AgaveVisualErrorCodes": {
+          "kind": "enum",
+          "values": {
+            "generalException": {
+              "kind": "enum value",
+              "value": "\"GeneralException\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "Comment": {
+          "kind": "class",
+          "extends": "OfficeExtension.ClientObject",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents a single comment in the document."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Comments 1.1]"
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "author": {
+              "kind": "property",
+              "signature": "readonly author: OfficeCore.CommentAuthor;",
+              "isOptional": false,
+              "isReadOnly": true,
+              "isStatic": false,
+              "type": "OfficeCore.CommentAuthor",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets an object representing the comment's author. Read-only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "created": {
+              "kind": "property",
+              "signature": "readonly created: Date;",
+              "isOptional": false,
+              "isReadOnly": true,
+              "isStatic": false,
+              "type": "Date",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets when the comment was created. Read-only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "delete": {
+              "kind": "method",
+              "signature": "delete(): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {},
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Deletes this comment. If this is a root comment, deletes the entire comment thread."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "getParentOrSelf": {
+              "kind": "method",
+              "signature": "getParentOrSelf(): OfficeCore.Comment;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "OfficeCore.Comment",
+                "description": []
+              },
+              "parameters": {},
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets this comment's parent. If this is a root comment, returns a new comment object representing itself. This method is useful for accessing thread-level properties from either a reply or the root comment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "e.g. comment.getParentOrSelf().resolved = true;"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "getRichText": {
+              "kind": "method",
+              "signature": "getRichText(format: OfficeCore.CommentTextFormat): OfficeExtension.ClientResult<string>;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "OfficeExtension.ClientResult<string>",
+                "description": []
+              },
+              "parameters": {
+                "format": {
+                  "name": "format",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "OfficeCore.CommentTextFormat"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the comment's rich text in the specified markup format."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "id": {
+              "kind": "property",
+              "signature": "readonly id: string;",
+              "isOptional": false,
+              "isReadOnly": true,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Returns a value that uniquely identifies the comment in a given document. Read-only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "level": {
+              "kind": "property",
+              "signature": "readonly level: number;",
+              "isOptional": false,
+              "isReadOnly": true,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the level of the comment: 0 if it is a root comment, or 1 if it is a reply. Read-only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "load": {
+              "kind": "method",
+              "signature": "load(option?: OfficeCore.Interfaces.CommentLoadOptions): OfficeCore.Comment;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "OfficeCore.Comment",
+                "description": []
+              },
+              "parameters": {
+                "option": {
+                  "name": "option",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeCore.Interfaces.CommentLoadOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "mentions": {
+              "kind": "property",
+              "signature": "readonly mentions: OfficeCore.CommentMention[];",
+              "isOptional": false,
+              "isReadOnly": true,
+              "isStatic": false,
+              "type": "OfficeCore.CommentMention[]",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the comment's mentions."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "parent": {
+              "kind": "property",
+              "signature": "readonly parent: OfficeCore.Comment;",
+              "isOptional": false,
+              "isReadOnly": true,
+              "isStatic": false,
+              "type": "OfficeCore.Comment",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets this comment's parent. If this is a root comment, throws."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "parentOrNullObject": {
+              "kind": "property",
+              "signature": "readonly parentOrNullObject: OfficeCore.Comment;",
+              "isOptional": false,
+              "isReadOnly": true,
+              "isStatic": false,
+              "type": "OfficeCore.Comment",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets this comment's parent. If this is a root comment, returns a null object."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "replies": {
+              "kind": "property",
+              "signature": "readonly replies: OfficeCore.CommentCollection;",
+              "isOptional": false,
+              "isReadOnly": true,
+              "isStatic": false,
+              "type": "OfficeCore.CommentCollection",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the replies to this comment. If this is not a root comment, returns an empty collection."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "reply": {
+              "kind": "method",
+              "signature": "reply(text: string, format: OfficeCore.CommentTextFormat): OfficeCore.Comment;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "OfficeCore.Comment",
+                "description": [
+                  {
+                    "kind": "text",
+                    "text": ""
+                  }
+                ]
+              },
+              "parameters": {
+                "text": {
+                  "name": "text",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The body of the reply."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "format": {
+                  "name": "format",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The markup format of the text parameter."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "OfficeCore.CommentTextFormat"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Appends a new reply to the comment's thread."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "resolved": {
+              "kind": "property",
+              "signature": "resolved: boolean;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "boolean",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets or sets whether this comment is resolved."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "set": {
+              "kind": "method",
+              "signature": "set(properties: Interfaces.CommentUpdateData, options?: OfficeExtension.UpdateOptions): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "properties": {
+                  "name": "properties",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "Interfaces.CommentUpdateData"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeExtension.UpdateOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets multiple properties on the object at the same time, based on JSON input."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "setRichText": {
+              "kind": "method",
+              "signature": "setRichText(text: string, format: OfficeCore.CommentTextFormat): OfficeExtension.ClientResult<string>;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "OfficeExtension.ClientResult<string>",
+                "description": []
+              },
+              "parameters": {
+                "text": {
+                  "name": "text",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The text of the comment."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                },
+                "format": {
+                  "name": "format",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The markup format of the 'text' parameter."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "OfficeCore.CommentTextFormat"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Sets the comment's rich text."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "text": {
+              "kind": "property",
+              "signature": "text: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets or sets the comment's plain text, without formatting."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "toJSON": {
+              "kind": "method",
+              "signature": "toJSON(): OfficeCore.Interfaces.CommentData;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "OfficeCore.Interfaces.CommentData",
+                "description": []
+              },
+              "parameters": {},
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "CommentAuthor": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents the author of a comment."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Comments 1.1]"
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "email": {
+              "kind": "property",
+              "signature": "email: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The email address of the author."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "name": {
+              "kind": "property",
+              "signature": "name: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The name of the author."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "CommentCollection": {
+          "kind": "class",
+          "extends": "OfficeExtension.ClientObject",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents a collection of comments, either replies to a specific comment thread, or all comments in the document or part of the document."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Comments 1.1]"
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "getCount": {
+              "kind": "method",
+              "signature": "getCount(): OfficeExtension.ClientResult<number>;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "OfficeExtension.ClientResult<number>",
+                "description": []
+              },
+              "parameters": {},
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Returns the number of comments in the collection. Read-only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "getItem": {
+              "kind": "method",
+              "signature": "getItem(id: string): OfficeCore.Comment;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "OfficeCore.Comment",
+                "description": []
+              },
+              "parameters": {
+                "id": {
+                  "name": "id",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets a comment object using its id."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "items": {
+              "kind": "property",
+              "signature": "readonly items: OfficeCore.Comment[];",
+              "isOptional": false,
+              "isReadOnly": true,
+              "isStatic": false,
+              "type": "OfficeCore.Comment[]",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the loaded child items in this collection."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "load": {
+              "kind": "method",
+              "signature": "load(option?: OfficeCore.Interfaces.CommentCollectionLoadOptions & OfficeCore.Interfaces.CollectionLoadOptions): OfficeCore.CommentCollection;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "OfficeCore.CommentCollection",
+                "description": []
+              },
+              "parameters": {
+                "option": {
+                  "name": "option",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "OfficeCore.Interfaces.CommentCollectionLoadOptions & OfficeCore.Interfaces.CollectionLoadOptions"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "toJSON": {
+              "kind": "method",
+              "signature": "toJSON(): OfficeCore.Interfaces.CommentCollectionData;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "OfficeCore.Interfaces.CommentCollectionData",
+                "description": []
+              },
+              "parameters": {},
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "CommentMention": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents a mention within a comment."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Comments 1.1]"
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "email": {
+              "kind": "property",
+              "signature": "email: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The email address of the person mentioned."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "name": {
+              "kind": "property",
+              "signature": "name: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The name of the person mentioned."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "text": {
+              "kind": "property",
+              "signature": "text: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The text displayed for the mention."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Comments 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "CommentTextFormat": {
+          "kind": "enum",
+          "values": {
+            "delta": {
+              "kind": "enum value",
+              "value": "\"Delta\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "markdown": {
+              "kind": "enum value",
+              "value": "\"Markdown\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "plain": {
+              "kind": "enum value",
+              "value": "\"Plain\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents a markup (rich) text format."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Comments 1.1]"
+            }
+          ],
+          "remarks": [],
+          "isBeta": false
+        },
+        "ErrorCodes": {
+          "kind": "enum",
+          "values": {
+            "apiNotAvailable": {
+              "kind": "enum value",
+              "value": "\"ApiNotAvailable\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "clientError": {
+              "kind": "enum value",
+              "value": "\"ClientError\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "invalidArgument": {
+              "kind": "enum value",
+              "value": "\"InvalidArgument\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "invalidGrant": {
+              "kind": "enum value",
+              "value": "\"InvalidGrant\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "invalidResourceUrl": {
+              "kind": "enum value",
+              "value": "\"InvalidResourceUrl\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "serverError": {
+              "kind": "enum value",
+              "value": "\"ServerError\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "unsupportedUserIdentity": {
+              "kind": "enum value",
+              "value": "\"UnsupportedUserIdentity\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "userNotSignedIn": {
+              "kind": "enum value",
+              "value": "\"UserNotSignedIn\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "ExperimentErrorCodes": {
+          "kind": "namespace",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "exports": {}
+        },
+        "RequestContext": {
+          "kind": "class",
+          "extends": "OfficeExtension.ClientRequestContext",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "__constructor": {
+              "kind": "constructor",
+              "signature": "constructor(url?: string | OfficeExtension.RequestUrlAndHeaderInfo | any);",
+              "parameters": {
+                "url": {
+                  "name": "url",
+                  "description": [],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "string | OfficeExtension.RequestUrlAndHeaderInfo | any"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Constructs a new instance of the "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "RequestContext"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "OfficeCore",
+                    "memberName": "RequestContext"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " class"
+                }
+              ],
+              "remarks": []
+            }
+          }
+        },
+        "run": {
+          "kind": "function",
+          "signature": "export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OfficeCore.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;",
+          "returnValue": {
+            "type": "OfficeExtension.IPromise<T>",
+            "description": []
+          },
+          "parameters": {
+            "objects": {
+              "name": "objects",
+              "description": [
+                {
+                  "kind": "text",
+                  "text": "An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by \"context.sync()\"."
+                }
+              ],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "OfficeExtension.ClientObject[]"
+            },
+            "batch": {
+              "name": "batch",
+              "description": [
+                {
+                  "kind": "text",
+                  "text": "A function that takes in a RequestContext and returns a promise (typically, just the result of \"context.sync()\"). The context parameter facilitates requests to the Office application. Since the Office add-in and the Office application run in two different processes, the RequestContext is required to get access to the Office object model from the add-in."
+                }
+              ],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "(context: OfficeCore.RequestContext) => OfficeExtension.IPromise<T>"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Executes a batch script that performs actions on the Office object model, using the RequestContext of previously-created API objects."
+            }
+          ],
+          "remarks": [],
+          "isBeta": false
+        },
+        "TelemetryErrorCodes": {
+          "kind": "namespace",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "exports": {}
+        }
+      }
+    },
     "OfficeExtension": {
       "kind": "namespace",
       "deprecatedMessage": [],
@@ -9330,7 +10422,7 @@
             },
             "load": {
               "kind": "method",
-              "signature": "load(object: ClientObject, option?: string | string[] | LoadOption): void;",
+              "signature": "load(object: ClientObject, option?: string | string[]| LoadOption): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -9351,7 +10443,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "string | string[] | LoadOption"
+                  "type": "string | string[]| LoadOption"
                 }
               },
               "deprecatedMessage": [],
@@ -9607,14 +10699,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "All statements in the batch request (including any potentially-sensitive information that was specified in the request), if available."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "These statements may not match the code exactly as written, but will be a close approximation."
+                  "text": "The full statements of the request, if available."
                 }
               ],
               "remarks": [],
@@ -9654,9 +10739,9 @@
               "remarks": [],
               "isBeta": false
             },
-            "statements": {
+            "statement": {
               "kind": "property",
-              "signature": "statements?: string;",
+              "signature": "statement?: string;",
               "isOptional": true,
               "isReadOnly": false,
               "isStatic": false,
@@ -9665,14 +10750,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "The statement that caused the error, if available."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "This statement will never contain any potentially-sensitive data and may not match the code exactly as written, but will be a close approximation."
+                  "text": "The statement associated with error (or similar information), if available."
                 }
               ],
               "remarks": [],
@@ -9689,175 +10767,9 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "The statements that closely precede and follow the statement that caused the error, if available."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "These statements will never contain any potentially-sensitive data and may not match the code exactly as written, but will be a close approximation."
+                  "text": "The surrounding statements associated with error, if available."
                 }
               ],
-              "remarks": [],
-              "isBeta": false
-            }
-          }
-        },
-        "EmbeddedOptions": {
-          "kind": "interface",
-          "extends": "",
-          "implements": "",
-          "typeParameters": [],
-          "deprecatedMessage": [],
-          "summary": [],
-          "remarks": [],
-          "isBeta": false,
-          "members": {
-            "container": {
-              "kind": "property",
-              "signature": "container?: HTMLElement;",
-              "isOptional": true,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "HTMLElement",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "height": {
-              "kind": "property",
-              "signature": "height?: string;",
-              "isOptional": true,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "string",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "id": {
-              "kind": "property",
-              "signature": "id?: string;",
-              "isOptional": true,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "string",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "sessionKey": {
-              "kind": "property",
-              "signature": "sessionKey?: string;",
-              "isOptional": true,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "string",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "timeoutInMilliseconds": {
-              "kind": "property",
-              "signature": "timeoutInMilliseconds?: number;",
-              "isOptional": true,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "number",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "width": {
-              "kind": "property",
-              "signature": "width?: string;",
-              "isOptional": true,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "string",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            }
-          }
-        },
-        "EmbeddedSession": {
-          "kind": "class",
-          "extends": "",
-          "implements": "",
-          "typeParameters": [],
-          "deprecatedMessage": [],
-          "summary": [],
-          "remarks": [],
-          "isBeta": false,
-          "members": {
-            "__constructor": {
-              "kind": "constructor",
-              "signature": "constructor(url: string, options?: EmbeddedOptions);",
-              "parameters": {
-                "url": {
-                  "name": "url",
-                  "description": [],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "string"
-                },
-                "options": {
-                  "name": "options",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "EmbeddedOptions"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Constructs a new instance of the "
-                },
-                {
-                  "kind": "api-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "EmbeddedSession"
-                    }
-                  ],
-                  "target": {
-                    "scopeName": "",
-                    "packageName": "office",
-                    "exportName": "OfficeExtension",
-                    "memberName": "EmbeddedSession"
-                  }
-                },
-                {
-                  "kind": "text",
-                  "text": " class"
-                }
-              ],
-              "remarks": []
-            },
-            "init": {
-              "kind": "method",
-              "signature": "public init(): Promise<any>;",
-              "accessModifier": "public",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "Promise<any>",
-                "description": []
-              },
-              "parameters": {},
-              "deprecatedMessage": [],
-              "summary": [],
               "remarks": [],
               "isBeta": false
             }
@@ -10516,13 +11428,6 @@
                 {
                   "kind": "text",
                   "text": "The statements to be executed in the host."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "These statements may not match the code exactly as written, but will be a close approximation."
                 }
               ],
               "remarks": [],
@@ -10551,7 +11456,7 @@
               "isOptional": true,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "{\n            [name: string]: string;\n        }",
+              "type": "{\r\n\t\t\t[name: string]: string;\r\n\t\t}",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -10684,6 +11589,49 @@
               "isBeta": false
             }
           }
+        }
+      }
+    },
+    "OfficeFirstPartyAuth": {
+      "kind": "namespace",
+      "deprecatedMessage": [],
+      "summary": [],
+      "remarks": [],
+      "isBeta": false,
+      "exports": {
+        "getAccessToken": {
+          "kind": "function",
+          "signature": "export function getAccessToken<T>(options: object): OfficeExtension.IPromise<T>;",
+          "returnValue": {
+            "type": "OfficeExtension.IPromise<T>",
+            "description": []
+          },
+          "parameters": {
+            "options": {
+              "name": "options",
+              "description": [],
+              "isOptional": false,
+              "isSpread": false,
+              "type": "object"
+            }
+          },
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
+        },
+        "getPrimaryIdentityInfo": {
+          "kind": "function",
+          "signature": "export function getPrimaryIdentityInfo<T>(): OfficeExtension.IPromise<T>;",
+          "returnValue": {
+            "type": "OfficeExtension.IPromise<T>",
+            "description": []
+          },
+          "parameters": {},
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false
         }
       }
     }
