@@ -73,7 +73,7 @@ items:
       ```
   - uid: excel.Excel.Worksheet.calculate
     summary: |-
-      Calculates all cells on a worksheet.
+      Calculates all cells on a worksheet. 
 
       \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: calculate(markAllDirty)
