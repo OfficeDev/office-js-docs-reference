@@ -94,7 +94,7 @@ items:
             - 'string | string[] | OfficeExtension.LoadOption'
   - uid: excel.Excel.DataBarConditionalFormat.lowerBoundRule
     summary: |-
-      The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
+      The rule for what constitutes the lower bound (and how to calculate it, if applicable) for a data bar.
 
       \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
     name: lowerBoundRule

@@ -3,19 +3,24 @@
 ////////////////////////////////////////////////////////////////
 
 export declare namespace Office {
+    export var Preview: {
+        startCustomFunctions(): Promise<void>;
+    }
+
+    export var Promise: PromiseConstructor;
     export var context: Context;
     /**
      * This method is called after the Office API was loaded.
      * @param reason - Indicates how the app was initialized
      */
     export function initialize(reason: InitializationReason): void;
-	/**
+    /**
     * Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise will wait until the Office host is ready to accept API calls.
     * Note that though this API is intended to be used inside an Office add-in, it can also be used outside the add-in.  In that case, once Office.js determines that it is running outside of an Office host application, it will call the callback and resolve the promise with "null" for both the host and platform.
     * @param callback - An optional callback method, that will receive the host and platform info. Alternatively, rather than use a callback, an add-in may simply wait for the Promise returned by the function to resolve.
     * @returns A Promise that contains the host and platform info, once initialization is completed.
     */
-    export function onReady(callback?: (info: { host: HostType, platform: PlatformType} ) => any): Promise<{ host: HostType, platform: PlatformType }>;
+    export function onReady(callback?: (info: { host: HostType, platform: PlatformType }) => any): Promise<{ host: HostType, platform: PlatformType }>;
     /**
      * Indicates if the large namespace for objects will be used or not.
      * @param useShortNamespace - Indicates if 'true' that the short namespace will be used
@@ -1573,6 +1578,23 @@ export declare namespace OfficeExtension {
         top?: number;
         skip?: number;
     }
+    export interface UpdateOptions {
+        /**
+         * Throw an error if the passed-in property list includes read-only properties (default = true).
+         */
+        throwOnReadOnly?: boolean
+    }
+
+    /** Contains debug information about the request context. */
+    export interface RequestContextDebugInfo {
+        /**
+         * The statements to be executed in the host.
+         *
+         * These statements may not match the code exactly as written, but will be a close approximation.
+         */
+        pendingStatements: string[];
+    }
+
     /** An abstract RequestContext object that facilitates requests to the host Office application. The "Excel.run" and "Word.run" methods provide a request context. */
     export class ClientRequestContext {
         constructor(url?: string);
@@ -1586,21 +1608,24 @@ export declare namespace OfficeExtension {
         /** Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties. */
         load(object: ClientObject, option?: string | string[] | LoadOption): void;
 
-		/**
-		* Queues up a command to recursively load the specified properties of the object and its navigation properties.
-		* You must call "context.sync()" before reading the properties.
-		*
-		* @param object - The object to be loaded.
-		* @param options - The key-value pairing of load options for the types, such as { "Workbook": "worksheets,tables",  "Worksheet": "tables",  "Tables": "name" }
-		* @param maxDepth - The maximum recursive depth.
-		*/
+        /**
+        * Queues up a command to recursively load the specified properties of the object and its navigation properties.
+        * You must call "context.sync()" before reading the properties.
+        *
+        * @param object - The object to be loaded.
+        * @param options - The key-value pairing of load options for the types, such as { "Workbook": "worksheets,tables",  "Worksheet": "tables",  "Tables": "name" }
+        * @param maxDepth - The maximum recursive depth.
+        */
         loadRecursive(object: ClientObject, options: { [typeName: string]: string | string[] | LoadOption }, maxDepth?: number): void;
 
         /** Adds a trace message to the queue. If the promise returned by "context.sync()" is rejected due to an error, this adds a ".traceMessages" array to the OfficeExtension.Error object, containing all trace messages that were executed. These messages can help you monitor the program execution sequence and detect the cause of the error. */
         trace(message: string): void;
 
         /** Synchronizes the state between JavaScript proxy objects and the Office document, by executing instructions queued on the request context and retrieving properties of loaded Office objects for use in your code.�This method returns a promise, which is resolved when the synchronization is complete. */
-        sync<T>(passThroughValue?: T): IPromise<T>;
+        sync<T>(passThroughValue?: T): Promise<T>;
+
+        /** Debug information */
+        readonly debugInfo: RequestContextDebugInfo;
     }
 
     export interface EmbeddedOptions {
@@ -1614,10 +1639,9 @@ export declare namespace OfficeExtension {
 
     export class EmbeddedSession {
         constructor(url: string, options?: EmbeddedOptions);
-        public init(): IPromise<any>;
+        public init(): Promise<any>;
     }
 }
-
 export declare namespace OfficeExtension {
     /** Contains the result for methods that return primitive types. The object's value property is retrieved from the document after "context.sync()" is invoked. */
     export class ClientResult<T> {
@@ -1625,7 +1649,21 @@ export declare namespace OfficeExtension {
         value: T;
     }
 }
+
 export declare namespace OfficeExtension {
+    /** Configuration */
+    export var config: {
+        /**
+         * Determines whether to log additional error information upon failure.
+         *
+         * When this property is set to true, the error object will include a "debugInfo.fullStatements" property that lists all statements in the batch request, including all statements that precede and follow the point of failure.
+         *
+         * Setting this property to true will negatively impact performance and will log all statements in the batch request, including any statements that may contain potentially-sensitive data.
+         * It is recommended that you only set this property to true during debugging and that you never log the value of error.debugInfo.fullStatements to an external database or analytics service.
+         */
+        extendedErrorLogging: boolean;
+    };
+
     export interface DebugInfo {
         /** Error code string, such as "InvalidArgument". */
         code: string;
@@ -1635,7 +1673,28 @@ export declare namespace OfficeExtension {
         innerError?: DebugInfo | string;
 
         /** The object type and property or method name (or similar information), if available. */
-        errorLocation?: string
+        errorLocation?: string;
+
+        /**
+         * The statement that caused the error, if available.
+         *
+         * This statement will never contain any potentially-sensitive data and may not match the code exactly as written, but will be a close approximation.
+         */
+        statements?: string;
+
+        /**
+         * The statements that closely precede and follow the statement that caused the error, if available.
+         *
+         * These statements will never contain any potentially-sensitive data and may not match the code exactly as written, but will be a close approximation.
+         */
+        surroundingStatements?: string[];
+
+        /**
+         * All statements in the batch request (including any potentially-sensitive information that was specified in the request), if available.
+         *
+         * These statements may not match the code exactly as written, but will be a close approximation.
+         */
+        fullStatements?: string[];
     }
 
     /** The error object returned by "context.sync()", if a promise is rejected due to an error while processing the request. */
@@ -1673,177 +1732,10 @@ export declare namespace OfficeExtension {
     }
 }
 export declare namespace OfficeExtension {
-    /** An IPromise object that represents a deferred interaction with the host Office application. */
-    export interface IPromise<R> {
-		/**
-		 * This method will be called once the previous promise has been resolved.
-		 * Both the onFulfilled on onRejected callbacks are optional.
-		 * If either or both are omitted, the next onFulfilled/onRejected in the chain will be called called.
-
-		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
-		 */
-        then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;
-
-		/**
-		 * This method will be called once the previous promise has been resolved.
-		 * Both the onFulfilled on onRejected callbacks are optional.
-		 * If either or both are omitted, the next onFulfilled/onRejected in the chain will be called called.
-
-		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
-		 */
-        then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => U): IPromise<U>;
-
-		/**
-		 * This method will be called once the previous promise has been resolved.
-		 * Both the onFulfilled on onRejected callbacks are optional.
-		 * If either or both are omitted, the next onFulfilled/onRejected in the chain will be called called.
-
-		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
-		 */
-        then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => void): IPromise<U>;
-
-		/**
-		 * This method will be called once the previous promise has been resolved.
-		 * Both the onFulfilled on onRejected callbacks are optional.
-		 * If either or both are omitted, the next onFulfilled/onRejected in the chain will be called called.
-
-		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
-		 */
-        then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => IPromise<U>): IPromise<U>;
-
-		/**
-		 * This method will be called once the previous promise has been resolved.
-		 * Both the onFulfilled on onRejected callbacks are optional.
-		 * If either or both are omitted, the next onFulfilled/onRejected in the chain will be called called.
-
-		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
-		 */
-        then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => U): IPromise<U>;
-
-		/**
-		 * This method will be called once the previous promise has been resolved.
-		 * Both the onFulfilled on onRejected callbacks are optional.
-		 * If either or both are omitted, the next onFulfilled/onRejected in the chain will be called called.
-
-		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
-		 */
-        then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => void): IPromise<U>;
-
-
-		/**
-		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
-		 * @param onRejected - function to be called if or when the promise rejects.
-		 */
-        catch<U>(onRejected?: (error: any) => IPromise<U>): IPromise<U>;
-
-		/**
-		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
-		 * @param onRejected - function to be called if or when the promise rejects.
-		 */
-        catch<U>(onRejected?: (error: any) => U): IPromise<U>;
-
-		/**
-		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
-		 * @param onRejected - function to be called if or when the promise rejects.
-		 */
-        catch<U>(onRejected?: (error: any) => void): IPromise<U>;
-    }
-
     /** An Promise object that represents a deferred interaction with the host Office application. The publically-consumable OfficeExtension.Promise is available starting in ExcelApi 1.2 and WordApi 1.2. Promises can be chained via ".then", and errors can be caught via ".catch". Remember to always use a ".catch" on the outer promise, and to return intermediary promises so as not to break the promise chain. When a "native" Promise implementation is available, OfficeExtension.Promise will switch to use the native Promise instead. */
-    export class Promise<R> implements IPromise<R>
-    {
-		/**
-		 * Creates a new promise based on a function that accepts resolve and reject handlers.
-		 */
-        constructor(func: (resolve: (value?: R | IPromise<R>) => void, reject: (error?: any) => void) => void);
+    export const Promise: PromiseConstructor;
 
-		/**
-		 * Creates a promise that resolves when all of the child promises resolve.
-		 */
-        static all<U>(promises: OfficeExtension.IPromise<U>[]): IPromise<U[]>;
-
-		/**
-		 * Creates a promise that is resolved.
-		 */
-        static resolve<U>(value: U): IPromise<U>;
-
-		/**
-		 * Creates a promise that is rejected.
-		 */
-        static reject<U>(error: any): IPromise<U>;
-
-		/* This method will be called once the previous promise has been resolved.
-		 * Both the onFulfilled on onRejected callbacks are optional.
-		 * If either or both are omitted, the next onFulfilled/onRejected in the chain will be called called.
-
-		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
-		 */
-        then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;
-
-		/**
-		 * This method will be called once the previous promise has been resolved.
-		 * Both the onFulfilled on onRejected callbacks are optional.
-		 * If either or both are omitted, the next onFulfilled/onRejected in the chain will be called called.
-
-		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
-		 */
-        then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => U): IPromise<U>;
-
-		/**
-		 * This method will be called once the previous promise has been resolved.
-		 * Both the onFulfilled on onRejected callbacks are optional.
-		 * If either or both are omitted, the next onFulfilled/onRejected in the chain will be called called.
-
-		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
-		 */
-        then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => void): IPromise<U>;
-
-		/**
-		 * This method will be called once the previous promise has been resolved.
-		 * Both the onFulfilled on onRejected callbacks are optional.
-		 * If either or both are omitted, the next onFulfilled/onRejected in the chain will be called called.
-
-		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
-		 */
-        then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => IPromise<U>): IPromise<U>;
-
-		/**
-		 * This method will be called once the previous promise has been resolved.
-		 * Both the onFulfilled on onRejected callbacks are optional.
-		 * If either or both are omitted, the next onFulfilled/onRejected in the chain will be called called.
-
-		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
-		 */
-        then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => U): IPromise<U>;
-
-		/**
-		 * This method will be called once the previous promise has been resolved.
-		 * Both the onFulfilled on onRejected callbacks are optional.
-		 * If either or both are omitted, the next onFulfilled/onRejected in the chain will be called called.
-
-		 * @returns A new promise for the value or error that was returned from onFulfilled/onRejected.
-		 */
-        then<U>(onFulfilled?: (value: R) => U, onRejected?: (error: any) => void): IPromise<U>;
-
-
-		/**
-		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
-		 * @param onRejected - function to be called if or when the promise rejects.
-		 */
-        catch<U>(onRejected?: (error: any) => IPromise<U>): IPromise<U>;
-
-		/**
-		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
-		 * @param onRejected - function to be called if or when the promise rejects.
-		 */
-        catch<U>(onRejected?: (error: any) => U): IPromise<U>;
-
-		/**
-		 * Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack.
-		 * @param onRejected - function to be called if or when the promise rejects.
-		 */
-        catch<U>(onRejected?: (error: any) => void): IPromise<U>;
-    }
+    export type IPromise<T> = Promise<T>;
 }
 
 export declare namespace OfficeExtension {
@@ -1863,25 +1755,27 @@ export declare namespace OfficeExtension {
 export declare namespace OfficeExtension {
     export class EventHandlers<T> {
         constructor(context: ClientRequestContext, parentObject: ClientObject, name: string, eventInfo: EventInfo<T>);
-        add(handler: (args: T) => IPromise<any>): EventHandlerResult<T>;
-        remove(handler: (args: T) => IPromise<any>): void;
+        add(handler: (args: T) => Promise<any>): EventHandlerResult<T>;
+        remove(handler: (args: T) => Promise<any>): void;
     }
 
     export class EventHandlerResult<T> {
-        constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => IPromise<any>);
+        constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => Promise<any>);
+        /** The request context associated with the object */
+        context: ClientRequestContext;
         remove(): void;
     }
 
     export interface EventInfo<T> {
-        registerFunc: (callback: (args: any) => void) => IPromise<any>;
-        unregisterFunc: (callback: (args: any) => void) => IPromise<any>;
-        eventArgsTransformFunc: (args: any) => IPromise<T>;
+        registerFunc: (callback: (args: any) => void) => Promise<any>;
+        unregisterFunc: (callback: (args: any) => void) => Promise<any>;
+        eventArgsTransformFunc: (args: any) => Promise<T>;
     }
 }
 export declare namespace OfficeExtension {
-	/**
-	* Request URL and headers
-	*/
+    /**
+    * Request URL and headers
+    */
     export interface RequestUrlAndHeaderInfo {
         /** Request URL */
         url: string;
