@@ -67,11 +67,11 @@ items:
       - office.OfficeExtension.EventHandlerResult
       - office.OfficeExtension.EventHandlers
       - office.OfficeExtension.EventInfo
-      - office.OfficeExtension.IPromise
       - office.OfficeExtension.LoadOption
-      - office.OfficeExtension.Promise
+      - office.OfficeExtension.RequestContextDebugInfo
       - office.OfficeExtension.RequestUrlAndHeaderInfo
       - office.OfficeExtension.TrackedObjects
+      - office.OfficeExtension.UpdateOptions
   - uid: office.Office.initialize
     summary: This method is called after the Office API was loaded.
     name: initialize(reason)
@@ -104,7 +104,7 @@ items:
     type: function
     syntax:
       content: >-
-        export function onReady(callback?: (info: { host: HostType, platform: PlatformType} ) => any): Promise<{ host:
+        export function onReady(callback?: (info: { host: HostType, platform: PlatformType }) => any): Promise<{ host:
         HostType, platform: PlatformType }>;
       return:
         type:
@@ -116,7 +116,7 @@ items:
             An optional callback method, that will receive the host and platform info. Alternatively, rather than use a
             callback, an add-in may simply wait for the Promise returned by the function to resolve.
           type:
-            - '(info: { host: HostType, platform: PlatformType} ) => any'
+            - '(info: { host: HostType, platform: PlatformType }) => any'
   - uid: office.Office.select
     summary: Returns a promise of an object described in the expression. Callback is invoked only if method fails.
     name: 'select(expression, callback)'
@@ -272,13 +272,13 @@ references:
     name: OfficeExtension.EventHandlers
   - uid: office.OfficeExtension.EventInfo
     name: OfficeExtension.EventInfo
-  - uid: office.OfficeExtension.IPromise
-    name: OfficeExtension.IPromise
   - uid: office.OfficeExtension.LoadOption
     name: OfficeExtension.LoadOption
-  - uid: office.OfficeExtension.Promise
-    name: OfficeExtension.Promise
+  - uid: office.OfficeExtension.RequestContextDebugInfo
+    name: OfficeExtension.RequestContextDebugInfo
   - uid: office.OfficeExtension.RequestUrlAndHeaderInfo
     name: OfficeExtension.RequestUrlAndHeaderInfo
   - uid: office.OfficeExtension.TrackedObjects
     name: OfficeExtension.TrackedObjects
+  - uid: office.OfficeExtension.UpdateOptions
+    name: OfficeExtension.UpdateOptions

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the border objects that make up range border.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.ConditionalRangeBorderCollection
     fullName: excel.Excel.ConditionalRangeBorderCollection
     langs:
@@ -28,7 +28,7 @@ items:
     summary: |-
       Gets the top border
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: bottom
     fullName: excel.Excel.ConditionalRangeBorderCollection.bottom
     langs:
@@ -43,7 +43,7 @@ items:
     summary: |-
       Number of border objects in the collection. Read-only.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: count
     fullName: excel.Excel.ConditionalRangeBorderCollection.count
     langs:
@@ -58,14 +58,14 @@ items:
     summary: |-
       Gets a border object using its name
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: getItem(index)
     fullName: excel.Excel.ConditionalRangeBorderCollection.getItem
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getItem(index: string): Excel.ConditionalRangeBorder;'
+      content: 'getItem(index: Excel.ConditionalRangeBorderIndex): Excel.ConditionalRangeBorder;'
       return:
         type:
           - Excel.ConditionalRangeBorder
@@ -74,12 +74,12 @@ items:
         - id: index
           description: Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
           type:
-            - string
+            - Excel.ConditionalRangeBorderIndex
   - uid: excel.Excel.ConditionalRangeBorderCollection.getItemAt
     summary: |-
       Gets a border object using its index
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: getItemAt(index)
     fullName: excel.Excel.ConditionalRangeBorderCollection.getItemAt
     langs:
@@ -104,15 +104,15 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: Array<Excel.ConditionalRangeBorder>;'
+      content: 'readonly items: Excel.ConditionalRangeBorder[];'
       return:
         type:
-          - Array<Excel.ConditionalRangeBorder>
+          - 'Excel.ConditionalRangeBorder[]'
   - uid: excel.Excel.ConditionalRangeBorderCollection.left
     summary: |-
       Gets the top border
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: left
     fullName: excel.Excel.ConditionalRangeBorderCollection.left
     langs:
@@ -133,7 +133,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalRangeBorderCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalRangeBorderCollection;
       return:
         type:
           - Excel.ConditionalRangeBorderCollection
@@ -142,12 +144,12 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.ConditionalRangeBorderCollection.right
     summary: |-
       Gets the top border
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: right
     fullName: excel.Excel.ConditionalRangeBorderCollection.right
     langs:
@@ -165,19 +167,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;'
       return:
         type:
-          - |-
-            {
-                        "count": number;
-                    }
+          - Excel.Interfaces.ConditionalRangeBorderCollectionData
         description: ''
   - uid: excel.Excel.ConditionalRangeBorderCollection.top
     summary: |-
       Gets the top border
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: top
     fullName: excel.Excel.ConditionalRangeBorderCollection.top
     langs:

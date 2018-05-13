@@ -83,7 +83,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id: number;'
+      content: 'readonly id: number;'
       return:
         type:
           - number
@@ -100,7 +100,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertParagraph(paragraphText: string, insertLocation: string): Word.Paragraph;'
+      content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       return:
         type:
           - Word.Paragraph
@@ -113,7 +113,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Start'', ''End'', ''Before'' or ''After''.'
           type:
-            - string
+            - Word.InsertLocation
   - uid: word.Word.List.levelExistences
     summary: >-
       Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there
@@ -127,10 +127,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'levelExistences: Array<boolean>;'
+      content: 'readonly levelExistences: boolean[];'
       return:
         type:
-          - Array<boolean>
+          - 'boolean[]'
   - uid: word.Word.List.levelTypes
     summary: |-
       Gets all 9 level types in the list. Each type can be 'Bullet', 'Number' or 'Picture'. Read-only.
@@ -142,10 +142,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'levelTypes: Array<string>;'
+      content: 'readonly levelTypes: Word.ListLevelType[];'
       return:
         type:
-          - Array<string>
+          - 'Word.ListLevelType[]'
   - uid: word.Word.List.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -156,7 +156,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.List;'
+      content: 'load(option?: Word.Interfaces.ListLoadOptions): Word.List;'
       return:
         type:
           - Word.List
@@ -165,7 +165,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Word.Interfaces.ListLoadOptions
   - uid: word.Word.List.paragraphs
     summary: |-
       Gets paragraphs in the list. Read-only.
@@ -177,7 +177,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'paragraphs: Word.ParagraphCollection;'
+      content: 'readonly paragraphs: Word.ParagraphCollection;'
       return:
         type:
           - Word.ParagraphCollection
@@ -192,7 +192,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setLevelAlignment(level: number, alignment: string): void;'
+      content: 'setLevelAlignment(level: number, alignment: Word.Alignment): void;'
       return:
         type:
           - void
@@ -205,7 +205,7 @@ items:
         - id: alignment
           description: 'Required. The level alignment that can be ''left'', ''centered'' or ''right''.'
           type:
-            - string
+            - Word.Alignment
   - uid: word.Word.List.setLevelBullet
     summary: |-
       Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
@@ -217,7 +217,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setLevelBullet(level: number, listBullet: string, charCode?: number, fontName?: string): void;'
+      content: 'setLevelBullet(level: number, listBullet: Word.ListBullet, charCode?: number, fontName?: string): void;'
       return:
         type:
           - void
@@ -230,7 +230,7 @@ items:
         - id: listBullet
           description: Required. The bullet.
           type:
-            - string
+            - Word.ListBullet
         - id: charCode
           description: Optional. The bullet character's code value. Used only if the bullet is 'Custom'.
           type:
@@ -261,13 +261,13 @@ items:
           type:
             - number
         - id: textIndent
-          description: >-
-            Required. The relative indent, in points, of the bullet, number or picture. It is the same as paragraph
-            first line indent.
+          description: Required. The text indent in points. It is the same as paragraph left indent.
           type:
             - number
         - id: bulletNumberPictureIndent
-          description: ''
+          description: >-
+            Required. The relative indent, in points, of the bullet, number or picture. It is the same as paragraph
+            first line indent.
           type:
             - number
   - uid: word.Word.List.setLevelNumbering
@@ -281,7 +281,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setLevelNumbering(level: number, listNumbering: string, formatString?: Array<any>): void;'
+      content: 'setLevelNumbering(level: number, listNumbering: Word.ListNumbering, formatString?: any[]): void;'
       return:
         type:
           - void
@@ -294,7 +294,7 @@ items:
         - id: listNumbering
           description: Required. The ordinal format.
           type:
-            - string
+            - Word.ListNumbering
         - id: formatString
           description: >-
             Optional. The numbering string format defined as an array of strings and/or integers. Each integer is a
@@ -302,7 +302,7 @@ items:
             ".", level, ")"\] can define the format of "(2.c)", where 2 is the parent's item number and c is this
             level's item number.
           type:
-            - Array<any>
+            - 'any[]'
   - uid: word.Word.List.setLevelStartingNumber
     summary: |-
       Sets the starting number at the specified level in the list. Default value is 1.
@@ -335,15 +335,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Word.Interfaces.ListData;'
       return:
         type:
-          - |-
-            {
-                        "id": number;
-                        "levelExistences": boolean[];
-                        "levelTypes": string[];
-                    }
+          - Word.Interfaces.ListData
         description: ''
   - uid: word.Word.List.track
     summary: >-

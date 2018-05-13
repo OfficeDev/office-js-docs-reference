@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.CalculationMode
+    summary: '\[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]'
+    name: Excel.CalculationMode
+    fullName: excel.Excel.CalculationMode
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.CalculationMode.automatic
+      - excel.Excel.CalculationMode.automaticExceptTables
+      - excel.Excel.CalculationMode.manual
+  - uid: excel.Excel.CalculationMode.automatic
+    name: automatic
+    fullName: excel.Excel.CalculationMode.automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: excel.Excel.CalculationMode.automaticExceptTables
+    name: automaticExceptTables
+    fullName: excel.Excel.CalculationMode.automaticExceptTables
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AutomaticExceptTables"'
+  - uid: excel.Excel.CalculationMode.manual
+    name: manual
+    fullName: excel.Excel.CalculationMode.manual
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Manual"'

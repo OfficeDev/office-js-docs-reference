@@ -61,10 +61,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Word.Section>;'
+      content: 'readonly items: Word.Section[];'
       return:
         type:
-          - Array<Word.Section>
+          - 'Word.Section[]'
   - uid: word.Word.SectionCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -75,7 +75,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.SectionCollection;'
+      content: >-
+        load(option?: Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.SectionCollection;
       return:
         type:
           - Word.SectionCollection
@@ -84,7 +86,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Word.Interfaces.SectionCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
   - uid: word.Word.SectionCollection.toJSON
     name: toJSON()
     fullName: word.Word.SectionCollection.toJSON
@@ -92,10 +94,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Word.Interfaces.SectionCollectionData;'
       return:
         type:
-          - '{}'
+          - Word.Interfaces.SectionCollectionData
         description: ''
   - uid: word.Word.SectionCollection.track
     summary: >-

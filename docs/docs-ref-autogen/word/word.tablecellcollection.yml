@@ -61,10 +61,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Word.TableCell>;'
+      content: 'readonly items: Word.TableCell[];'
       return:
         type:
-          - Array<Word.TableCell>
+          - 'Word.TableCell[]'
   - uid: word.Word.TableCellCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -75,7 +75,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.TableCellCollection;'
+      content: >-
+        load(option?: Word.Interfaces.TableCellCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.TableCellCollection;
       return:
         type:
           - Word.TableCellCollection
@@ -84,7 +86,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Word.Interfaces.TableCellCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
   - uid: word.Word.TableCellCollection.toJSON
     name: toJSON()
     fullName: word.Word.TableCellCollection.toJSON
@@ -92,10 +94,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Word.Interfaces.TableCellCollectionData;'
       return:
         type:
-          - '{}'
+          - Word.Interfaces.TableCellCollectionData
         description: ''
   - uid: word.Word.TableCellCollection.track
     summary: >-

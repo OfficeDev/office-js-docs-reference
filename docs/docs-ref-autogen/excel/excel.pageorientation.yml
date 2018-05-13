@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.PageOrientation
+    summary: '\[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]'
+    name: Excel.PageOrientation
+    fullName: excel.Excel.PageOrientation
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.PageOrientation.landscape
+      - excel.Excel.PageOrientation.portrait
+  - uid: excel.Excel.PageOrientation.landscape
+    name: landscape
+    fullName: excel.Excel.PageOrientation.landscape
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Landscape"'
+  - uid: excel.Excel.PageOrientation.portrait
+    name: portrait
+    fullName: excel.Excel.PageOrientation.portrait
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Portrait"'

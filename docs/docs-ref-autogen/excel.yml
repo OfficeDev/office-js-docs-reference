@@ -12,59 +12,125 @@ items:
       - excel.Excel.BindingCollection
       - excel.Excel.BindingDataChangedEventArgs
       - excel.Excel.BindingSelectionChangedEventArgs
+      - excel.Excel.BindingType
+      - excel.Excel.BorderIndex
+      - excel.Excel.BorderLineStyle
+      - excel.Excel.BorderWeight
+      - excel.Excel.BuiltInStyle
+      - excel.Excel.CalculationMode
+      - excel.Excel.CalculationType
       - excel.Excel.CellValueConditionalFormat
       - excel.Excel.Chart
       - excel.Excel.ChartAreaFormat
       - excel.Excel.ChartAxes
       - excel.Excel.ChartAxis
+      - excel.Excel.ChartAxisCategoryType
+      - excel.Excel.ChartAxisDisplayUnit
       - excel.Excel.ChartAxisFormat
+      - excel.Excel.ChartAxisGroup
+      - excel.Excel.ChartAxisPosition
+      - excel.Excel.ChartAxisScaleType
+      - excel.Excel.ChartAxisTickLabelPosition
+      - excel.Excel.ChartAxisTickMark
+      - excel.Excel.ChartAxisTimeUnit
       - excel.Excel.ChartAxisTitle
       - excel.Excel.ChartAxisTitleFormat
+      - excel.Excel.ChartAxisType
+      - excel.Excel.ChartBorder
       - excel.Excel.ChartCollection
+      - excel.Excel.ChartDataLabel
       - excel.Excel.ChartDataLabelFormat
+      - excel.Excel.ChartDataLabelPosition
       - excel.Excel.ChartDataLabels
       - excel.Excel.ChartFill
       - excel.Excel.ChartFont
+      - excel.Excel.ChartFormatString
       - excel.Excel.ChartGridlines
       - excel.Excel.ChartGridlinesFormat
       - excel.Excel.ChartLegend
+      - excel.Excel.ChartLegendEntry
+      - excel.Excel.ChartLegendEntryCollection
       - excel.Excel.ChartLegendFormat
+      - excel.Excel.ChartLegendPosition
       - excel.Excel.ChartLineFormat
+      - excel.Excel.ChartLineStyle
+      - excel.Excel.ChartMarkerStyle
       - excel.Excel.ChartPoint
       - excel.Excel.ChartPointFormat
       - excel.Excel.ChartPointsCollection
       - excel.Excel.ChartSeries
+      - excel.Excel.ChartSeriesBy
       - excel.Excel.ChartSeriesCollection
       - excel.Excel.ChartSeriesFormat
+      - excel.Excel.ChartTextHorizontalAlignment
+      - excel.Excel.ChartTextVerticalAlignment
       - excel.Excel.ChartTitle
       - excel.Excel.ChartTitleFormat
+      - excel.Excel.ChartTitlePosition
+      - excel.Excel.ChartTrendline
+      - excel.Excel.ChartTrendlineCollection
+      - excel.Excel.ChartTrendlineFormat
+      - excel.Excel.ChartTrendlineType
+      - excel.Excel.ChartType
+      - excel.Excel.ChartUnderlineStyle
+      - excel.Excel.ClearApplyTo
       - excel.Excel.ColorScaleConditionalFormat
+      - excel.Excel.ConditionalCellValueOperator
       - excel.Excel.ConditionalCellValueRule
       - excel.Excel.ConditionalColorScaleCriteria
       - excel.Excel.ConditionalColorScaleCriterion
+      - excel.Excel.ConditionalDataBarAxisFormat
+      - excel.Excel.ConditionalDataBarDirection
       - excel.Excel.ConditionalDataBarNegativeFormat
       - excel.Excel.ConditionalDataBarPositiveFormat
       - excel.Excel.ConditionalDataBarRule
       - excel.Excel.ConditionalFormat
       - excel.Excel.ConditionalFormatCollection
+      - excel.Excel.ConditionalFormatColorCriterionType
+      - excel.Excel.ConditionalFormatDirection
+      - excel.Excel.ConditionalFormatIconRuleType
+      - excel.Excel.ConditionalFormatPresetCriterion
       - excel.Excel.ConditionalFormatRule
+      - excel.Excel.ConditionalFormatRuleType
+      - excel.Excel.ConditionalFormatType
       - excel.Excel.ConditionalIconCriterion
+      - excel.Excel.ConditionalIconCriterionOperator
       - excel.Excel.ConditionalPresetCriteriaRule
       - excel.Excel.ConditionalRangeBorder
       - excel.Excel.ConditionalRangeBorderCollection
+      - excel.Excel.ConditionalRangeBorderIndex
+      - excel.Excel.ConditionalRangeBorderLineStyle
       - excel.Excel.ConditionalRangeFill
       - excel.Excel.ConditionalRangeFont
+      - excel.Excel.ConditionalRangeFontUnderlineStyle
       - excel.Excel.ConditionalRangeFormat
       - excel.Excel.ConditionalTextComparisonRule
+      - excel.Excel.ConditionalTextOperator
+      - excel.Excel.ConditionalTopBottomCriterionType
       - excel.Excel.ConditionalTopBottomRule
       - excel.Excel.CustomConditionalFormat
+      - excel.Excel.CustomProperty
+      - excel.Excel.CustomPropertyCollection
       - excel.Excel.CustomXmlPart
       - excel.Excel.CustomXmlPartCollection
       - excel.Excel.CustomXmlPartScopedCollection
       - excel.Excel.DataBarConditionalFormat
+      - excel.Excel.DataChangeType
+      - excel.Excel.DataConnectionCollection
+      - excel.Excel.DeleteShiftDirection
+      - excel.Excel.DocumentProperties
+      - excel.Excel.DocumentPropertyItem
+      - excel.Excel.DocumentPropertyType
+      - excel.Excel.DynamicFilterCriteria
+      - excel.Excel.ErrorCodes
+      - excel.Excel.EventSource
+      - excel.Excel.EventType
       - excel.Excel.Filter
       - excel.Excel.FilterCriteria
       - excel.Excel.FilterDatetime
+      - excel.Excel.FilterDatetimeSpecificity
+      - excel.Excel.FilterOn
+      - excel.Excel.FilterOperator
       - excel.Excel.FiveArrowsGraySet
       - excel.Excel.FiveArrowsSet
       - excel.Excel.FiveBoxesSet
@@ -78,38 +144,63 @@ items:
       - excel.Excel.FourTrafficLightsSet
       - excel.Excel.FunctionResult
       - excel.Excel.Functions
+      - excel.Excel.HorizontalAlignment
       - excel.Excel.Icon
       - excel.Excel.IconCollections
+      - excel.Excel.IconSet
       - excel.Excel.IconSetConditionalFormat
+      - excel.Excel.ImageFittingMode
+      - excel.Excel.InsertShiftDirection
       - excel.Excel.NamedItem
+      - excel.Excel.NamedItemArrayValues
       - excel.Excel.NamedItemCollection
+      - excel.Excel.NamedItemScope
+      - excel.Excel.NamedItemType
+      - excel.Excel.PageOrientation
+      - excel.Excel.PaperType
       - excel.Excel.PivotTable
       - excel.Excel.PivotTableCollection
       - excel.Excel.PresetCriteriaConditionalFormat
+      - excel.Excel.PrintErrorType
+      - excel.Excel.ProtectionSelectionMode
       - excel.Excel.Range
       - excel.Excel.RangeBorder
       - excel.Excel.RangeBorderCollection
       - excel.Excel.RangeFill
       - excel.Excel.RangeFont
       - excel.Excel.RangeFormat
+      - excel.Excel.RangeHyperlink
       - excel.Excel.RangeReference
       - excel.Excel.RangeSort
+      - excel.Excel.RangeUnderlineStyle
+      - excel.Excel.RangeValueType
       - excel.Excel.RangeView
       - excel.Excel.RangeViewCollection
+      - excel.Excel.ReadingOrder
       - excel.Excel.RequestContext
       - excel.Excel.run
+      - excel.Excel.Runtime
       - excel.Excel.SelectionChangedEventArgs
       - excel.Excel.Session
       - excel.Excel.Setting
       - excel.Excel.SettingCollection
       - excel.Excel.SettingsChangedEventArgs
+      - excel.Excel.SheetVisibility
+      - excel.Excel.SortDataOption
       - excel.Excel.SortField
+      - excel.Excel.SortMethod
+      - excel.Excel.SortOn
+      - excel.Excel.SortOrientation
+      - excel.Excel.Style
+      - excel.Excel.StyleCollection
       - excel.Excel.Table
+      - excel.Excel.TableChangedEventArgs
       - excel.Excel.TableCollection
       - excel.Excel.TableColumn
       - excel.Excel.TableColumnCollection
       - excel.Excel.TableRow
       - excel.Excel.TableRowCollection
+      - excel.Excel.TableSelectionChangedEventArgs
       - excel.Excel.TableSort
       - excel.Excel.TextConditionalFormat
       - excel.Excel.ThreeArrowsGraySet
@@ -123,11 +214,21 @@ items:
       - excel.Excel.ThreeTrafficLights2Set
       - excel.Excel.ThreeTrianglesSet
       - excel.Excel.TopBottomConditionalFormat
+      - excel.Excel.VerticalAlignment
       - excel.Excel.Workbook
+      - excel.Excel.WorkbookProtection
       - excel.Excel.Worksheet
+      - excel.Excel.WorksheetActivatedEventArgs
+      - excel.Excel.WorksheetAddedEventArgs
+      - excel.Excel.WorksheetChangedEventArgs
       - excel.Excel.WorksheetCollection
+      - excel.Excel.WorksheetDeactivatedEventArgs
+      - excel.Excel.WorksheetDeletedEventArgs
+      - excel.Excel.WorksheetFreezePanes
+      - excel.Excel.WorksheetPositionType
       - excel.Excel.WorksheetProtection
       - excel.Excel.WorksheetProtectionOptions
+      - excel.Excel.WorksheetSelectionChangedEventArgs
   - uid: excel.Excel.run
     summary: >-
       Executes a batch script that performs actions on the Excel object model, using the remote RequestContext of
@@ -140,11 +241,10 @@ items:
     syntax:
       content: >-
         export function run<T>(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, objects:
-        OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => OfficeExtension.IPromise<T>):
-        OfficeExtension.IPromise<T>;
+        OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
       return:
         type:
-          - OfficeExtension.IPromise<T>
+          - Promise<T>
         description: ''
       parameters:
         - id: requestInfo
@@ -165,7 +265,7 @@ items:
             add-in and the Excel application run in two different processes, the RequestContext is required to get
             access to the Excel object model from the add-in.
           type:
-            - '(context: Excel.RequestContext) => OfficeExtension.IPromise<T>'
+            - '(context: Excel.RequestContext) => Promise<T>'
 references:
   - uid: excel.Excel.Application
     name: Excel.Application
@@ -177,6 +277,20 @@ references:
     name: Excel.BindingDataChangedEventArgs
   - uid: excel.Excel.BindingSelectionChangedEventArgs
     name: Excel.BindingSelectionChangedEventArgs
+  - uid: excel.Excel.BindingType
+    name: Excel.BindingType
+  - uid: excel.Excel.BorderIndex
+    name: Excel.BorderIndex
+  - uid: excel.Excel.BorderLineStyle
+    name: Excel.BorderLineStyle
+  - uid: excel.Excel.BorderWeight
+    name: Excel.BorderWeight
+  - uid: excel.Excel.BuiltInStyle
+    name: Excel.BuiltInStyle
+  - uid: excel.Excel.CalculationMode
+    name: Excel.CalculationMode
+  - uid: excel.Excel.CalculationType
+    name: Excel.CalculationType
   - uid: excel.Excel.CellValueConditionalFormat
     name: Excel.CellValueConditionalFormat
   - uid: excel.Excel.Chart
@@ -187,32 +301,68 @@ references:
     name: Excel.ChartAxes
   - uid: excel.Excel.ChartAxis
     name: Excel.ChartAxis
+  - uid: excel.Excel.ChartAxisCategoryType
+    name: Excel.ChartAxisCategoryType
+  - uid: excel.Excel.ChartAxisDisplayUnit
+    name: Excel.ChartAxisDisplayUnit
   - uid: excel.Excel.ChartAxisFormat
     name: Excel.ChartAxisFormat
+  - uid: excel.Excel.ChartAxisGroup
+    name: Excel.ChartAxisGroup
+  - uid: excel.Excel.ChartAxisPosition
+    name: Excel.ChartAxisPosition
+  - uid: excel.Excel.ChartAxisScaleType
+    name: Excel.ChartAxisScaleType
+  - uid: excel.Excel.ChartAxisTickLabelPosition
+    name: Excel.ChartAxisTickLabelPosition
+  - uid: excel.Excel.ChartAxisTickMark
+    name: Excel.ChartAxisTickMark
+  - uid: excel.Excel.ChartAxisTimeUnit
+    name: Excel.ChartAxisTimeUnit
   - uid: excel.Excel.ChartAxisTitle
     name: Excel.ChartAxisTitle
   - uid: excel.Excel.ChartAxisTitleFormat
     name: Excel.ChartAxisTitleFormat
+  - uid: excel.Excel.ChartAxisType
+    name: Excel.ChartAxisType
+  - uid: excel.Excel.ChartBorder
+    name: Excel.ChartBorder
   - uid: excel.Excel.ChartCollection
     name: Excel.ChartCollection
+  - uid: excel.Excel.ChartDataLabel
+    name: Excel.ChartDataLabel
   - uid: excel.Excel.ChartDataLabelFormat
     name: Excel.ChartDataLabelFormat
+  - uid: excel.Excel.ChartDataLabelPosition
+    name: Excel.ChartDataLabelPosition
   - uid: excel.Excel.ChartDataLabels
     name: Excel.ChartDataLabels
   - uid: excel.Excel.ChartFill
     name: Excel.ChartFill
   - uid: excel.Excel.ChartFont
     name: Excel.ChartFont
+  - uid: excel.Excel.ChartFormatString
+    name: Excel.ChartFormatString
   - uid: excel.Excel.ChartGridlines
     name: Excel.ChartGridlines
   - uid: excel.Excel.ChartGridlinesFormat
     name: Excel.ChartGridlinesFormat
   - uid: excel.Excel.ChartLegend
     name: Excel.ChartLegend
+  - uid: excel.Excel.ChartLegendEntry
+    name: Excel.ChartLegendEntry
+  - uid: excel.Excel.ChartLegendEntryCollection
+    name: Excel.ChartLegendEntryCollection
   - uid: excel.Excel.ChartLegendFormat
     name: Excel.ChartLegendFormat
+  - uid: excel.Excel.ChartLegendPosition
+    name: Excel.ChartLegendPosition
   - uid: excel.Excel.ChartLineFormat
     name: Excel.ChartLineFormat
+  - uid: excel.Excel.ChartLineStyle
+    name: Excel.ChartLineStyle
+  - uid: excel.Excel.ChartMarkerStyle
+    name: Excel.ChartMarkerStyle
   - uid: excel.Excel.ChartPoint
     name: Excel.ChartPoint
   - uid: excel.Excel.ChartPointFormat
@@ -221,22 +371,50 @@ references:
     name: Excel.ChartPointsCollection
   - uid: excel.Excel.ChartSeries
     name: Excel.ChartSeries
+  - uid: excel.Excel.ChartSeriesBy
+    name: Excel.ChartSeriesBy
   - uid: excel.Excel.ChartSeriesCollection
     name: Excel.ChartSeriesCollection
   - uid: excel.Excel.ChartSeriesFormat
     name: Excel.ChartSeriesFormat
+  - uid: excel.Excel.ChartTextHorizontalAlignment
+    name: Excel.ChartTextHorizontalAlignment
+  - uid: excel.Excel.ChartTextVerticalAlignment
+    name: Excel.ChartTextVerticalAlignment
   - uid: excel.Excel.ChartTitle
     name: Excel.ChartTitle
   - uid: excel.Excel.ChartTitleFormat
     name: Excel.ChartTitleFormat
+  - uid: excel.Excel.ChartTitlePosition
+    name: Excel.ChartTitlePosition
+  - uid: excel.Excel.ChartTrendline
+    name: Excel.ChartTrendline
+  - uid: excel.Excel.ChartTrendlineCollection
+    name: Excel.ChartTrendlineCollection
+  - uid: excel.Excel.ChartTrendlineFormat
+    name: Excel.ChartTrendlineFormat
+  - uid: excel.Excel.ChartTrendlineType
+    name: Excel.ChartTrendlineType
+  - uid: excel.Excel.ChartType
+    name: Excel.ChartType
+  - uid: excel.Excel.ChartUnderlineStyle
+    name: Excel.ChartUnderlineStyle
+  - uid: excel.Excel.ClearApplyTo
+    name: Excel.ClearApplyTo
   - uid: excel.Excel.ColorScaleConditionalFormat
     name: Excel.ColorScaleConditionalFormat
+  - uid: excel.Excel.ConditionalCellValueOperator
+    name: Excel.ConditionalCellValueOperator
   - uid: excel.Excel.ConditionalCellValueRule
     name: Excel.ConditionalCellValueRule
   - uid: excel.Excel.ConditionalColorScaleCriteria
     name: Excel.ConditionalColorScaleCriteria
   - uid: excel.Excel.ConditionalColorScaleCriterion
     name: Excel.ConditionalColorScaleCriterion
+  - uid: excel.Excel.ConditionalDataBarAxisFormat
+    name: Excel.ConditionalDataBarAxisFormat
+  - uid: excel.Excel.ConditionalDataBarDirection
+    name: Excel.ConditionalDataBarDirection
   - uid: excel.Excel.ConditionalDataBarNegativeFormat
     name: Excel.ConditionalDataBarNegativeFormat
   - uid: excel.Excel.ConditionalDataBarPositiveFormat
@@ -247,28 +425,56 @@ references:
     name: Excel.ConditionalFormat
   - uid: excel.Excel.ConditionalFormatCollection
     name: Excel.ConditionalFormatCollection
+  - uid: excel.Excel.ConditionalFormatColorCriterionType
+    name: Excel.ConditionalFormatColorCriterionType
+  - uid: excel.Excel.ConditionalFormatDirection
+    name: Excel.ConditionalFormatDirection
+  - uid: excel.Excel.ConditionalFormatIconRuleType
+    name: Excel.ConditionalFormatIconRuleType
+  - uid: excel.Excel.ConditionalFormatPresetCriterion
+    name: Excel.ConditionalFormatPresetCriterion
   - uid: excel.Excel.ConditionalFormatRule
     name: Excel.ConditionalFormatRule
+  - uid: excel.Excel.ConditionalFormatRuleType
+    name: Excel.ConditionalFormatRuleType
+  - uid: excel.Excel.ConditionalFormatType
+    name: Excel.ConditionalFormatType
   - uid: excel.Excel.ConditionalIconCriterion
     name: Excel.ConditionalIconCriterion
+  - uid: excel.Excel.ConditionalIconCriterionOperator
+    name: Excel.ConditionalIconCriterionOperator
   - uid: excel.Excel.ConditionalPresetCriteriaRule
     name: Excel.ConditionalPresetCriteriaRule
   - uid: excel.Excel.ConditionalRangeBorder
     name: Excel.ConditionalRangeBorder
   - uid: excel.Excel.ConditionalRangeBorderCollection
     name: Excel.ConditionalRangeBorderCollection
+  - uid: excel.Excel.ConditionalRangeBorderIndex
+    name: Excel.ConditionalRangeBorderIndex
+  - uid: excel.Excel.ConditionalRangeBorderLineStyle
+    name: Excel.ConditionalRangeBorderLineStyle
   - uid: excel.Excel.ConditionalRangeFill
     name: Excel.ConditionalRangeFill
   - uid: excel.Excel.ConditionalRangeFont
     name: Excel.ConditionalRangeFont
+  - uid: excel.Excel.ConditionalRangeFontUnderlineStyle
+    name: Excel.ConditionalRangeFontUnderlineStyle
   - uid: excel.Excel.ConditionalRangeFormat
     name: Excel.ConditionalRangeFormat
   - uid: excel.Excel.ConditionalTextComparisonRule
     name: Excel.ConditionalTextComparisonRule
+  - uid: excel.Excel.ConditionalTextOperator
+    name: Excel.ConditionalTextOperator
+  - uid: excel.Excel.ConditionalTopBottomCriterionType
+    name: Excel.ConditionalTopBottomCriterionType
   - uid: excel.Excel.ConditionalTopBottomRule
     name: Excel.ConditionalTopBottomRule
   - uid: excel.Excel.CustomConditionalFormat
     name: Excel.CustomConditionalFormat
+  - uid: excel.Excel.CustomProperty
+    name: Excel.CustomProperty
+  - uid: excel.Excel.CustomPropertyCollection
+    name: Excel.CustomPropertyCollection
   - uid: excel.Excel.CustomXmlPart
     name: Excel.CustomXmlPart
   - uid: excel.Excel.CustomXmlPartCollection
@@ -277,12 +483,38 @@ references:
     name: Excel.CustomXmlPartScopedCollection
   - uid: excel.Excel.DataBarConditionalFormat
     name: Excel.DataBarConditionalFormat
+  - uid: excel.Excel.DataChangeType
+    name: Excel.DataChangeType
+  - uid: excel.Excel.DataConnectionCollection
+    name: Excel.DataConnectionCollection
+  - uid: excel.Excel.DeleteShiftDirection
+    name: Excel.DeleteShiftDirection
+  - uid: excel.Excel.DocumentProperties
+    name: Excel.DocumentProperties
+  - uid: excel.Excel.DocumentPropertyItem
+    name: Excel.DocumentPropertyItem
+  - uid: excel.Excel.DocumentPropertyType
+    name: Excel.DocumentPropertyType
+  - uid: excel.Excel.DynamicFilterCriteria
+    name: Excel.DynamicFilterCriteria
+  - uid: excel.Excel.ErrorCodes
+    name: Excel.ErrorCodes
+  - uid: excel.Excel.EventSource
+    name: Excel.EventSource
+  - uid: excel.Excel.EventType
+    name: Excel.EventType
   - uid: excel.Excel.Filter
     name: Excel.Filter
   - uid: excel.Excel.FilterCriteria
     name: Excel.FilterCriteria
   - uid: excel.Excel.FilterDatetime
     name: Excel.FilterDatetime
+  - uid: excel.Excel.FilterDatetimeSpecificity
+    name: Excel.FilterDatetimeSpecificity
+  - uid: excel.Excel.FilterOn
+    name: Excel.FilterOn
+  - uid: excel.Excel.FilterOperator
+    name: Excel.FilterOperator
   - uid: excel.Excel.FiveArrowsGraySet
     name: Excel.FiveArrowsGraySet
   - uid: excel.Excel.FiveArrowsSet
@@ -309,22 +541,44 @@ references:
     name: Excel.FunctionResult
   - uid: excel.Excel.Functions
     name: Excel.Functions
+  - uid: excel.Excel.HorizontalAlignment
+    name: Excel.HorizontalAlignment
   - uid: excel.Excel.Icon
     name: Excel.Icon
   - uid: excel.Excel.IconCollections
     name: Excel.IconCollections
+  - uid: excel.Excel.IconSet
+    name: Excel.IconSet
   - uid: excel.Excel.IconSetConditionalFormat
     name: Excel.IconSetConditionalFormat
+  - uid: excel.Excel.ImageFittingMode
+    name: Excel.ImageFittingMode
+  - uid: excel.Excel.InsertShiftDirection
+    name: Excel.InsertShiftDirection
   - uid: excel.Excel.NamedItem
     name: Excel.NamedItem
+  - uid: excel.Excel.NamedItemArrayValues
+    name: Excel.NamedItemArrayValues
   - uid: excel.Excel.NamedItemCollection
     name: Excel.NamedItemCollection
+  - uid: excel.Excel.NamedItemScope
+    name: Excel.NamedItemScope
+  - uid: excel.Excel.NamedItemType
+    name: Excel.NamedItemType
+  - uid: excel.Excel.PageOrientation
+    name: Excel.PageOrientation
+  - uid: excel.Excel.PaperType
+    name: Excel.PaperType
   - uid: excel.Excel.PivotTable
     name: Excel.PivotTable
   - uid: excel.Excel.PivotTableCollection
     name: Excel.PivotTableCollection
   - uid: excel.Excel.PresetCriteriaConditionalFormat
     name: Excel.PresetCriteriaConditionalFormat
+  - uid: excel.Excel.PrintErrorType
+    name: Excel.PrintErrorType
+  - uid: excel.Excel.ProtectionSelectionMode
+    name: Excel.ProtectionSelectionMode
   - uid: excel.Excel.Range
     name: Excel.Range
   - uid: excel.Excel.RangeBorder
@@ -337,16 +591,26 @@ references:
     name: Excel.RangeFont
   - uid: excel.Excel.RangeFormat
     name: Excel.RangeFormat
+  - uid: excel.Excel.RangeHyperlink
+    name: Excel.RangeHyperlink
   - uid: excel.Excel.RangeReference
     name: Excel.RangeReference
   - uid: excel.Excel.RangeSort
     name: Excel.RangeSort
+  - uid: excel.Excel.RangeUnderlineStyle
+    name: Excel.RangeUnderlineStyle
+  - uid: excel.Excel.RangeValueType
+    name: Excel.RangeValueType
   - uid: excel.Excel.RangeView
     name: Excel.RangeView
   - uid: excel.Excel.RangeViewCollection
     name: Excel.RangeViewCollection
+  - uid: excel.Excel.ReadingOrder
+    name: Excel.ReadingOrder
   - uid: excel.Excel.RequestContext
     name: Excel.RequestContext
+  - uid: excel.Excel.Runtime
+    name: Excel.Runtime
   - uid: excel.Excel.SelectionChangedEventArgs
     name: Excel.SelectionChangedEventArgs
   - uid: excel.Excel.Session
@@ -357,10 +621,26 @@ references:
     name: Excel.SettingCollection
   - uid: excel.Excel.SettingsChangedEventArgs
     name: Excel.SettingsChangedEventArgs
+  - uid: excel.Excel.SheetVisibility
+    name: Excel.SheetVisibility
+  - uid: excel.Excel.SortDataOption
+    name: Excel.SortDataOption
   - uid: excel.Excel.SortField
     name: Excel.SortField
+  - uid: excel.Excel.SortMethod
+    name: Excel.SortMethod
+  - uid: excel.Excel.SortOn
+    name: Excel.SortOn
+  - uid: excel.Excel.SortOrientation
+    name: Excel.SortOrientation
+  - uid: excel.Excel.Style
+    name: Excel.Style
+  - uid: excel.Excel.StyleCollection
+    name: Excel.StyleCollection
   - uid: excel.Excel.Table
     name: Excel.Table
+  - uid: excel.Excel.TableChangedEventArgs
+    name: Excel.TableChangedEventArgs
   - uid: excel.Excel.TableCollection
     name: Excel.TableCollection
   - uid: excel.Excel.TableColumn
@@ -371,6 +651,8 @@ references:
     name: Excel.TableRow
   - uid: excel.Excel.TableRowCollection
     name: Excel.TableRowCollection
+  - uid: excel.Excel.TableSelectionChangedEventArgs
+    name: Excel.TableSelectionChangedEventArgs
   - uid: excel.Excel.TableSort
     name: Excel.TableSort
   - uid: excel.Excel.TextConditionalFormat
@@ -397,13 +679,33 @@ references:
     name: Excel.ThreeTrianglesSet
   - uid: excel.Excel.TopBottomConditionalFormat
     name: Excel.TopBottomConditionalFormat
+  - uid: excel.Excel.VerticalAlignment
+    name: Excel.VerticalAlignment
   - uid: excel.Excel.Workbook
     name: Excel.Workbook
+  - uid: excel.Excel.WorkbookProtection
+    name: Excel.WorkbookProtection
   - uid: excel.Excel.Worksheet
     name: Excel.Worksheet
+  - uid: excel.Excel.WorksheetActivatedEventArgs
+    name: Excel.WorksheetActivatedEventArgs
+  - uid: excel.Excel.WorksheetAddedEventArgs
+    name: Excel.WorksheetAddedEventArgs
+  - uid: excel.Excel.WorksheetChangedEventArgs
+    name: Excel.WorksheetChangedEventArgs
   - uid: excel.Excel.WorksheetCollection
     name: Excel.WorksheetCollection
+  - uid: excel.Excel.WorksheetDeactivatedEventArgs
+    name: Excel.WorksheetDeactivatedEventArgs
+  - uid: excel.Excel.WorksheetDeletedEventArgs
+    name: Excel.WorksheetDeletedEventArgs
+  - uid: excel.Excel.WorksheetFreezePanes
+    name: Excel.WorksheetFreezePanes
+  - uid: excel.Excel.WorksheetPositionType
+    name: Excel.WorksheetPositionType
   - uid: excel.Excel.WorksheetProtection
     name: Excel.WorksheetProtection
   - uid: excel.Excel.WorksheetProtectionOptions
     name: Excel.WorksheetProtectionOptions
+  - uid: excel.Excel.WorksheetSelectionChangedEventArgs
+    name: Excel.WorksheetSelectionChangedEventArgs

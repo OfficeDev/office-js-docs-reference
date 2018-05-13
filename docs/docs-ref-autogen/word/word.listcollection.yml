@@ -127,10 +127,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Word.List>;'
+      content: 'readonly items: Word.List[];'
       return:
         type:
-          - Array<Word.List>
+          - 'Word.List[]'
   - uid: word.Word.ListCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -141,7 +141,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.ListCollection;'
+      content: >-
+        load(option?: Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.ListCollection;
       return:
         type:
           - Word.ListCollection
@@ -150,7 +152,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
   - uid: word.Word.ListCollection.toJSON
     name: toJSON()
     fullName: word.Word.ListCollection.toJSON
@@ -158,10 +160,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Word.Interfaces.ListCollectionData;'
       return:
         type:
-          - '{}'
+          - Word.Interfaces.ListCollectionData
         description: ''
   - uid: word.Word.ListCollection.track
     summary: >-

@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.NamedItemScope
+    summary: '\[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]'
+    name: Excel.NamedItemScope
+    fullName: excel.Excel.NamedItemScope
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.NamedItemScope.workbook
+      - excel.Excel.NamedItemScope.worksheet
+  - uid: excel.Excel.NamedItemScope.workbook
+    name: workbook
+    fullName: excel.Excel.NamedItemScope.workbook
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Workbook"'
+  - uid: excel.Excel.NamedItemScope.worksheet
+    name: worksheet
+    fullName: excel.Excel.NamedItemScope.worksheet
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Worksheet"'

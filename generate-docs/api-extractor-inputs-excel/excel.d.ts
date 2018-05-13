@@ -3071,7 +3071,7 @@ export declare namespace Excel {
     /**
      *
      * Represents a collection of all the rows that are part of the table.
-            
+
             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
             a TableRow object represent the physical location of the table row, but not the data.
             That is, if the data is sorted or if new rows are added, a table row will continue
@@ -3092,7 +3092,7 @@ export declare namespace Excel {
         /**
          *
          * Adds one or more rows to the table. The return object will be the top of the newly added row(s).
-            
+
             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
             a TableRow object represent the physical location of the table row, but not the data.
             That is, if the data is sorted or if new rows are added, a table row will continue
@@ -3114,7 +3114,7 @@ export declare namespace Excel {
         /**
          *
          * Gets a row based on its position in the collection.
-            
+
             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
             a TableRow object represent the physical location of the table row, but not the data.
             That is, if the data is sorted or if new rows are added, a table row will continue
@@ -3136,7 +3136,7 @@ export declare namespace Excel {
     /**
      *
      * Represents a row in a table.
-            
+
             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
             a TableRow object represent the physical location of the table row, but not the data.
             That is, if the data is sorted or if new rows are added, a table row will continue
@@ -6026,7 +6026,7 @@ export declare namespace Excel {
          *
          * The first criterion used to filter data. Used as an operator in the case of "custom" filtering.
              For example ">50" for number greater than 50 or "=*s" for values ending in "s".
-            
+
              Used as a number in the case of top/bottom items/percents. E.g. "5" for the top 5 items if filterOn is set to "topItems"
          *
          * [Api set: ExcelApi 1.2]
@@ -6204,7 +6204,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param namespaceUri         - */
+         * @param namespaceUri
+        - */
         getByNamespace(namespaceUri: string): Excel.CustomXmlPartScopedCollection;
         /**
          *
@@ -8358,9 +8359,15 @@ export declare namespace Excel {
         columnClustered = "ColumnClustered",
         columnStacked = "ColumnStacked",
         columnStacked100 = "ColumnStacked100",
+        _3DColumnClustered = "3DColumnClustered",
+        _3DColumnStacked = "3DColumnStacked",
+        _3DColumnStacked100 = "3DColumnStacked100",
         barClustered = "BarClustered",
         barStacked = "BarStacked",
         barStacked100 = "BarStacked100",
+        _3DBarClustered = "3DBarClustered",
+        _3DBarStacked = "3DBarStacked",
+        _3DBarStacked100 = "3DBarStacked100",
         lineStacked = "LineStacked",
         lineStacked100 = "LineStacked100",
         lineMarkers = "LineMarkers",
@@ -8368,6 +8375,7 @@ export declare namespace Excel {
         lineMarkersStacked100 = "LineMarkersStacked100",
         pieOfPie = "PieOfPie",
         pieExploded = "PieExploded",
+        _3DPieExploded = "3DPieExploded",
         barOfPie = "BarOfPie",
         xyscatterSmooth = "XYScatterSmooth",
         xyscatterSmoothNoMarkers = "XYScatterSmoothNoMarkers",
@@ -8375,6 +8383,8 @@ export declare namespace Excel {
         xyscatterLinesNoMarkers = "XYScatterLinesNoMarkers",
         areaStacked = "AreaStacked",
         areaStacked100 = "AreaStacked100",
+        _3DAreaStacked = "3DAreaStacked",
+        _3DAreaStacked100 = "3DAreaStacked100",
         doughnutExploded = "DoughnutExploded",
         radarMarkers = "RadarMarkers",
         radarFilled = "RadarFilled",
@@ -8409,13 +8419,18 @@ export declare namespace Excel {
         pyramidBarStacked = "PyramidBarStacked",
         pyramidBarStacked100 = "PyramidBarStacked100",
         pyramidCol = "PyramidCol",
+        _3DColumn = "3DColumn",
         line = "Line",
+        _3DLine = "3DLine",
+        _3DPie = "3DPie",
         pie = "Pie",
         xyscatter = "XYScatter",
+        _3DArea = "3DArea",
         area = "Area",
         doughnut = "Doughnut",
         radar = "Radar",
     }
+
     /**
      * [Api set: ExcelApi 1.1]
      */
@@ -8967,41 +8982,6 @@ export declare namespace Excel {
         bottom = "Bottom",
         justify = "Justify",
         distributed = "Distributed",
-    }
-    /**
-     * [Api set: ExcelApi 1.7]
-     */
-    const enum MessageCategory {
-        none = 0,
-        customFunction = 1,
-        event = 65536,
-    }
-    /**
-     * [Api set: ExcelApi 1.7]
-     */
-    const enum MessageType {
-        none = 0,
-        testEvent = 1,
-        test1Event = 2,
-        worksheetDataChangedEvent = 10,
-        worksheetActivatedEvent = 11,
-        worksheetDeactivatedEvent = 12,
-        worksheetAddedEvent = 13,
-        worksheetSelectionChangedEvent = 14,
-        worksheetDeletedEvent = 15,
-        worksheetCalculatedEvent = 16,
-        chartAddedEvent = 50,
-        chartActivatedEvent = 51,
-        chartDeactivatedEvent = 52,
-        chartDeletedEvent = 53,
-        tableSelectionChangedEvent = 100,
-        tableDataChangedEvent = 101,
-        customFunctionExecutionBeginEvent = 200,
-        customFunctionExecutionEndEvent = 201,
-        invocationMessage = 1000,
-        cancellationMessage = 1001,
-        metadataMessage = 1002,
-        visualSelectionChangedEvent = 2000,
     }
     /**
      * [Api set: ExcelApi 1.7]
@@ -13166,7 +13146,7 @@ export declare namespace Excel {
         unsupportedOperation = "UnsupportedOperation",
         invalidOperationInCellEditMode = "InvalidOperationInCellEditMode",
     }
-    export module Interfaces {
+    export namespace Interfaces {
         export interface CollectionLoadOptions {
             $top?: number;
             $skip?: number;
@@ -19772,7 +19752,7 @@ export declare namespace Excel {
         /**
          *
          * Represents a collection of all the rows that are part of the table.
-                
+
                 Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
                 a TableRow object represent the physical location of the table row, but not the data.
                 That is, if the data is sorted or if new rows are added, a table row will continue
@@ -19800,7 +19780,7 @@ export declare namespace Excel {
         /**
          *
          * Represents a row in a table.
-                
+
                 Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
                 a TableRow object represent the physical location of the table row, but not the data.
                 That is, if the data is sorted or if new rows are added, a table row will continue

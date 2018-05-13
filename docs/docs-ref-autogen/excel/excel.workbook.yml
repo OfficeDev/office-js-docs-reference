@@ -17,19 +17,26 @@ items:
       - excel.Excel.Workbook.application
       - excel.Excel.Workbook.bindings
       - excel.Excel.Workbook.customXmlParts
+      - excel.Excel.Workbook.dataConnections
       - excel.Excel.Workbook.functions
+      - excel.Excel.Workbook.getActiveCell
       - excel.Excel.Workbook.getSelectedRange
       - excel.Excel.Workbook.load
+      - excel.Excel.Workbook.name
       - excel.Excel.Workbook.names
       - excel.Excel.Workbook.onSelectionChanged
       - excel.Excel.Workbook.pivotTables
+      - excel.Excel.Workbook.properties
+      - excel.Excel.Workbook.protection
+      - excel.Excel.Workbook.set
       - excel.Excel.Workbook.settings
+      - excel.Excel.Workbook.styles
       - excel.Excel.Workbook.tables
       - excel.Excel.Workbook.toJSON
       - excel.Excel.Workbook.worksheets
   - uid: excel.Excel.Workbook.application
     summary: |-
-      Represents Excel application instance that contains this workbook. Read-only.
+      Represents the Excel application instance that contains this workbook.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: application
@@ -44,7 +51,7 @@ items:
           - Excel.Application
   - uid: excel.Excel.Workbook.bindings
     summary: |-
-      Represents a collection of bindings that are part of the workbook. Read-only.
+      Represents a collection of bindings that are part of the workbook.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: bindings
@@ -59,7 +66,7 @@ items:
           - Excel.BindingCollection
   - uid: excel.Excel.Workbook.customXmlParts
     summary: |-
-      Represents the collection of custom XML parts contained by this workbook. Read-only.
+      Represents the collection of custom XML parts contained by this workbook.
 
       \[ [API set: ExcelApi 1.5](http://bing.com?type=excel) \]
     name: customXmlParts
@@ -72,9 +79,24 @@ items:
       return:
         type:
           - Excel.CustomXmlPartCollection
+  - uid: excel.Excel.Workbook.dataConnections
+    summary: |-
+      Represents all data connections in the workbook.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: dataConnections
+    fullName: excel.Excel.Workbook.dataConnections
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataConnections: Excel.DataConnectionCollection;'
+      return:
+        type:
+          - Excel.DataConnectionCollection
   - uid: excel.Excel.Workbook.functions
     summary: |-
-      Represents Excel application instance that contains this workbook. Read-only.
+      Represents a collection of worksheet functions that can be used for computation.
 
       \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: functions
@@ -87,6 +109,22 @@ items:
       return:
         type:
           - Excel.Functions
+  - uid: excel.Excel.Workbook.getActiveCell
+    summary: |-
+      Gets the currently active cell from the workbook.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: getActiveCell()
+    fullName: excel.Excel.Workbook.getActiveCell
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveCell(): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
   - uid: excel.Excel.Workbook.getSelectedRange
     summary: |-
       Gets the currently selected range from the workbook.
@@ -132,7 +170,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Workbook;'
+      content: 'load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;'
       return:
         type:
           - Excel.Workbook
@@ -141,10 +179,25 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.WorkbookLoadOptions
+  - uid: excel.Excel.Workbook.name
+    summary: |-
+      Gets the workbook name.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: name
+    fullName: excel.Excel.Workbook.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string
   - uid: excel.Excel.Workbook.names
     summary: |-
-      Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
+      Represents a collection of workbook scoped named items (named ranges and constants).
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: names
@@ -174,7 +227,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>
   - uid: excel.Excel.Workbook.pivotTables
     summary: |-
-      Represents a collection of PivotTables associated with the workbook. Read-only.
+      Represents a collection of PivotTables associated with the workbook.
 
       \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: pivotTables
@@ -187,9 +240,61 @@ items:
       return:
         type:
           - Excel.PivotTableCollection
+  - uid: excel.Excel.Workbook.properties
+    summary: |-
+      Gets the workbook properties.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: properties
+    fullName: excel.Excel.Workbook.properties
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly properties: Excel.DocumentProperties;'
+      return:
+        type:
+          - Excel.DocumentProperties
+  - uid: excel.Excel.Workbook.protection
+    summary: |-
+      Returns workbook protection object for a workbook.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: protection
+    fullName: excel.Excel.Workbook.protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly protection: Excel.WorkbookProtection;'
+      return:
+        type:
+          - Excel.WorkbookProtection
+  - uid: excel.Excel.Workbook.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.Workbook.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.WorkbookUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.WorkbookUpdateData
+        - id: options
+          description: ''
+          type:
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.Workbook.settings
     summary: |-
-      Represents a collection of Settings associated with the workbook. Read-only.
+      Represents a collection of Settings associated with the workbook.
 
       \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: settings
@@ -202,9 +307,24 @@ items:
       return:
         type:
           - Excel.SettingCollection
+  - uid: excel.Excel.Workbook.styles
+    summary: |-
+      Represents a collection of styles associated with the workbook.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: styles
+    fullName: excel.Excel.Workbook.styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly styles: Excel.StyleCollection;'
+      return:
+        type:
+          - Excel.StyleCollection
   - uid: excel.Excel.Workbook.tables
     summary: |-
-      Represents a collection of tables associated with the workbook. Read-only.
+      Represents a collection of tables associated with the workbook.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: tables
@@ -224,14 +344,14 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.WorkbookData;'
       return:
         type:
-          - '{}'
+          - Excel.Interfaces.WorkbookData
         description: ''
   - uid: excel.Excel.Workbook.worksheets
     summary: |-
-      Represents a collection of worksheets associated with the workbook. Read-only.
+      Represents a collection of worksheets associated with the workbook.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: worksheets

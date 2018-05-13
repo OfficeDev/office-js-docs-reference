@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the border of an object.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.ConditionalRangeBorder
     fullName: excel.Excel.ConditionalRangeBorder
     langs:
@@ -26,7 +26,7 @@ items:
       color (e.g. "orange").
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: color
     fullName: excel.Excel.ConditionalRangeBorder.color
     langs:
@@ -47,7 +47,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalRangeBorder;'
+      content: 'load(option?: Excel.Interfaces.ConditionalRangeBorderLoadOptions): Excel.ConditionalRangeBorder;'
       return:
         type:
           - Excel.ConditionalRangeBorder
@@ -56,7 +56,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ConditionalRangeBorderLoadOptions
   - uid: excel.Excel.ConditionalRangeBorder.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -65,10 +65,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ConditionalRangeBorderUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.ConditionalRangeBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -81,47 +78,43 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalRangeBorder.sideIndex
     summary: >-
       Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
       Read-only.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: sideIndex
     fullName: excel.Excel.ConditionalRangeBorder.sideIndex
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'readonly sideIndex: string;'
+      content: 'readonly sideIndex: Excel.ConditionalRangeBorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight";'
       return:
         type:
-          - string
+          - Excel.ConditionalRangeBorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"
   - uid: excel.Excel.ConditionalRangeBorder.style
     summary: >-
       One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
       details.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: style
     fullName: excel.Excel.ConditionalRangeBorder.style
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'style: string;'
+      content: >-
+        style: Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" |
+        "Dot";
       return:
         type:
-          - string
+          - Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"
   - uid: excel.Excel.ConditionalRangeBorder.toJSON
     name: toJSON()
     fullName: excel.Excel.ConditionalRangeBorder.toJSON
@@ -129,13 +122,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ConditionalRangeBorderData;'
       return:
         type:
-          - |-
-            {
-                        "color": string;
-                        "sideIndex": string;
-                        "style": string;
-                    }
+          - Excel.Interfaces.ConditionalRangeBorderData
         description: ''

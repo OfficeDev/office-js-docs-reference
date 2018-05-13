@@ -14,14 +14,30 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartTitleFormat.border
       - excel.Excel.ChartTitleFormat.fill
       - excel.Excel.ChartTitleFormat.font
       - excel.Excel.ChartTitleFormat.load
       - excel.Excel.ChartTitleFormat.set
       - excel.Excel.ChartTitleFormat.toJSON
+  - uid: excel.Excel.ChartTitleFormat.border
+    summary: |-
+      Represents the border format of chart title, which includes color, linestyle and weight.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: border
+    fullName: excel.Excel.ChartTitleFormat.border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly border: Excel.ChartBorder;'
+      return:
+        type:
+          - Excel.ChartBorder
   - uid: excel.Excel.ChartTitleFormat.fill
     summary: |-
-      Represents the fill format of an object, which includes background formating information. Read-only.
+      Represents the fill format of an object, which includes background formating information.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: fill
@@ -36,7 +52,7 @@ items:
           - Excel.ChartFill
   - uid: excel.Excel.ChartTitleFormat.font
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for an object. Read-only.
+      Represents the font attributes (font name, font size, color, etc.) for an object.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: font
@@ -59,7 +75,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartTitleFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartTitleFormatLoadOptions): Excel.ChartTitleFormat;'
       return:
         type:
           - Excel.ChartTitleFormat
@@ -68,7 +84,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ChartTitleFormatLoadOptions
   - uid: excel.Excel.ChartTitleFormat.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -77,10 +93,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ChartTitleFormatUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.ChartTitleFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -93,13 +106,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartTitleFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartTitleFormat.toJSON
@@ -107,12 +114,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ChartTitleFormatData;'
       return:
         type:
-          - |-
-            {
-                        "fill": ChartFill;
-                        "font": ChartFont;
-                    }
+          - Excel.Interfaces.ChartTitleFormatData
         description: ''

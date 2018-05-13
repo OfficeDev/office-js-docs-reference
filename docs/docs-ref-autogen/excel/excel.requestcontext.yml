@@ -16,6 +16,7 @@ items:
     children:
       - excel.Excel.RequestContext.constructor
       - excel.Excel.RequestContext.application
+      - excel.Excel.RequestContext.runtime
       - excel.Excel.RequestContext.workbook
   - uid: excel.Excel.RequestContext.constructor
     summary: 'Constructs a new instance of the [RequestContext](xref:excel.Excel.RequestContext) class'
@@ -42,6 +43,17 @@ items:
       return:
         type:
           - Application
+  - uid: excel.Excel.RequestContext.runtime
+    name: runtime
+    fullName: excel.Excel.RequestContext.runtime
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly runtime: Runtime;'
+      return:
+        type:
+          - Runtime
   - uid: excel.Excel.RequestContext.workbook
     name: workbook
     fullName: excel.Excel.RequestContext.workbook

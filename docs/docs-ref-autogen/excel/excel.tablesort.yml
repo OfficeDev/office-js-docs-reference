@@ -33,7 +33,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'apply(fields: Array<Excel.SortField>, matchCase?: boolean, method?: string): void;'
+      content: 'apply(fields: Excel.SortField[], matchCase?: boolean, method?: Excel.SortMethod): void;'
       return:
         type:
           - void
@@ -42,7 +42,7 @@ items:
         - id: fields
           description: The list of conditions to sort on.
           type:
-            - Array<Excel.SortField>
+            - 'Excel.SortField[]'
         - id: matchCase
           description: Whether to have the casing impact string ordering.
           type:
@@ -50,7 +50,7 @@ items:
         - id: method
           description: The ordering method used for Chinese characters.
           type:
-            - string
+            - Excel.SortMethod
     remarks: |
 
 
@@ -103,10 +103,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly fields: Array<Excel.SortField>;'
+      content: 'readonly fields: Excel.SortField[];'
       return:
         type:
-          - Array<Excel.SortField>
+          - 'Excel.SortField[]'
   - uid: excel.Excel.TableSort.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -117,7 +117,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.TableSort;'
+      content: 'load(option?: Excel.Interfaces.TableSortLoadOptions): Excel.TableSort;'
       return:
         type:
           - Excel.TableSort
@@ -126,7 +126,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.TableSortLoadOptions
   - uid: excel.Excel.TableSort.matchCase
     summary: |-
       Represents whether the casing impacted the last sort of the table.
@@ -153,10 +153,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly method: string;'
+      content: 'readonly method: Excel.SortMethod | "PinYin" | "StrokeCount";'
       return:
         type:
-          - string
+          - Excel.SortMethod | "PinYin" | "StrokeCount"
   - uid: excel.Excel.TableSort.reapply
     summary: |-
       Reapplies the current sorting parameters to the table.
@@ -180,13 +180,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.TableSortData;'
       return:
         type:
-          - |-
-            {
-                        "fields": SortField[];
-                        "matchCase": boolean;
-                        "method": string;
-                    }
+          - Excel.Interfaces.TableSortData
         description: ''

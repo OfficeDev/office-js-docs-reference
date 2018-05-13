@@ -61,10 +61,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Word.InlinePicture>;'
+      content: 'readonly items: Word.InlinePicture[];'
       return:
         type:
-          - Array<Word.InlinePicture>
+          - 'Word.InlinePicture[]'
   - uid: word.Word.InlinePictureCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -75,7 +75,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.InlinePictureCollection;'
+      content: >-
+        load(option?: Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.InlinePictureCollection;
       return:
         type:
           - Word.InlinePictureCollection
@@ -84,7 +86,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Word.Interfaces.InlinePictureCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
   - uid: word.Word.InlinePictureCollection.toJSON
     name: toJSON()
     fullName: word.Word.InlinePictureCollection.toJSON
@@ -92,10 +94,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Word.Interfaces.InlinePictureCollectionData;'
       return:
         type:
-          - '{}'
+          - Word.Interfaces.InlinePictureCollectionData
         description: ''
   - uid: word.Word.InlinePictureCollection.track
     summary: >-

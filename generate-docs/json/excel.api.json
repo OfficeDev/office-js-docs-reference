@@ -6505,7 +6505,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            [key: string]: string;\r\n        }",
+                "type": "{\n            [key: string]: string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -11695,6 +11695,110 @@
         "ChartType": {
           "kind": "enum",
           "values": {
+            "_3DArea": {
+              "kind": "enum value",
+              "value": "\"3DArea\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "_3DAreaStacked": {
+              "kind": "enum value",
+              "value": "\"3DAreaStacked\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "_3DAreaStacked100": {
+              "kind": "enum value",
+              "value": "\"3DAreaStacked100\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "_3DBarClustered": {
+              "kind": "enum value",
+              "value": "\"3DBarClustered\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "_3DBarStacked": {
+              "kind": "enum value",
+              "value": "\"3DBarStacked\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "_3DBarStacked100": {
+              "kind": "enum value",
+              "value": "\"3DBarStacked100\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "_3DColumn": {
+              "kind": "enum value",
+              "value": "\"3DColumn\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "_3DColumnClustered": {
+              "kind": "enum value",
+              "value": "\"3DColumnClustered\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "_3DColumnStacked": {
+              "kind": "enum value",
+              "value": "\"3DColumnStacked\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "_3DColumnStacked100": {
+              "kind": "enum value",
+              "value": "\"3DColumnStacked100\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "_3DLine": {
+              "kind": "enum value",
+              "value": "\"3DLine\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "_3DPie": {
+              "kind": "enum value",
+              "value": "\"3DPie\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
+            "_3DPieExploded": {
+              "kind": "enum value",
+              "value": "\"3DPieExploded\"",
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false
+            },
             "area": {
               "kind": "enum value",
               "value": "\"Area\"",
@@ -18610,7 +18714,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            [key: string]: string;\r\n        }",
+                "type": "{\n            [key: string]: string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -40807,7 +40911,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            [key: string]: string;\r\n        }",
+                "type": "{\n            [key: string]: string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -43423,234 +43527,6 @@
             {
               "kind": "text",
               "text": "[Api set: ExcelApi 1.1]"
-            }
-          ],
-          "remarks": [],
-          "isBeta": false
-        },
-        "MessageCategory": {
-          "kind": "enum",
-          "values": {
-            "customFunction": {
-              "kind": "enum value",
-              "value": "1",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "event": {
-              "kind": "enum value",
-              "value": "65536",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "none": {
-              "kind": "enum value",
-              "value": "0",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            }
-          },
-          "deprecatedMessage": [],
-          "summary": [
-            {
-              "kind": "text",
-              "text": "[Api set: ExcelApi 1.7]"
-            }
-          ],
-          "remarks": [],
-          "isBeta": false
-        },
-        "MessageType": {
-          "kind": "enum",
-          "values": {
-            "cancellationMessage": {
-              "kind": "enum value",
-              "value": "1001",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "chartActivatedEvent": {
-              "kind": "enum value",
-              "value": "51",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "chartAddedEvent": {
-              "kind": "enum value",
-              "value": "50",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "chartDeactivatedEvent": {
-              "kind": "enum value",
-              "value": "52",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "chartDeletedEvent": {
-              "kind": "enum value",
-              "value": "53",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "customFunctionExecutionBeginEvent": {
-              "kind": "enum value",
-              "value": "200",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "customFunctionExecutionEndEvent": {
-              "kind": "enum value",
-              "value": "201",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "invocationMessage": {
-              "kind": "enum value",
-              "value": "1000",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "metadataMessage": {
-              "kind": "enum value",
-              "value": "1002",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "none": {
-              "kind": "enum value",
-              "value": "0",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "tableDataChangedEvent": {
-              "kind": "enum value",
-              "value": "101",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "tableSelectionChangedEvent": {
-              "kind": "enum value",
-              "value": "100",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "test1Event": {
-              "kind": "enum value",
-              "value": "2",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "testEvent": {
-              "kind": "enum value",
-              "value": "1",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "visualSelectionChangedEvent": {
-              "kind": "enum value",
-              "value": "2000",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "worksheetActivatedEvent": {
-              "kind": "enum value",
-              "value": "11",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "worksheetAddedEvent": {
-              "kind": "enum value",
-              "value": "13",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "worksheetCalculatedEvent": {
-              "kind": "enum value",
-              "value": "16",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "worksheetDataChangedEvent": {
-              "kind": "enum value",
-              "value": "10",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "worksheetDeactivatedEvent": {
-              "kind": "enum value",
-              "value": "12",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "worksheetDeletedEvent": {
-              "kind": "enum value",
-              "value": "15",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            },
-            "worksheetSelectionChangedEvent": {
-              "kind": "enum value",
-              "value": "14",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
-              "isBeta": false
-            }
-          },
-          "deprecatedMessage": [],
-          "summary": [
-            {
-              "kind": "text",
-              "text": "[Api set: ExcelApi 1.7]"
             }
           ],
           "remarks": [],
@@ -49147,7 +49023,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            [key: string]: string;\r\n        }",
+                "type": "{\n            [key: string]: string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -50096,7 +49972,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            [key: string]: string;\r\n        }",
+                "type": "{\n            [key: string]: string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -50172,7 +50048,7 @@
           "members": {
             "__constructor": {
               "kind": "constructor",
-              "signature": "constructor(workbookUrl?: string, requestHeaders?: {\r\n            [name: string]: string;\r\n        }, persisted?: boolean);",
+              "signature": "constructor(workbookUrl?: string, requestHeaders?: {\n            [name: string]: string;\n        }, persisted?: boolean);",
               "parameters": {
                 "workbookUrl": {
                   "name": "workbookUrl",
@@ -50186,7 +50062,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\r\n            [name: string]: string;\r\n        }"
+                  "type": "{\n            [name: string]: string;\n        }"
                 },
                 "persisted": {
                   "name": "persisted",
@@ -56424,7 +56300,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            [key: string]: string;\r\n        }",
+                "type": "{\n            [key: string]: string;\n        }",
                 "description": []
               },
               "parameters": {},
@@ -58735,7 +58611,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\r\n            [key: string]: string;\r\n        }",
+                "type": "{\n            [key: string]: string;\n        }",
                 "description": []
               },
               "parameters": {},

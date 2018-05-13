@@ -19,6 +19,9 @@ items:
       - onenote.OneNote.TableRowCollection.getItemAt
       - onenote.OneNote.TableRowCollection.items
       - onenote.OneNote.TableRowCollection.load
+      - onenote.OneNote.TableRowCollection.toJSON
+      - onenote.OneNote.TableRowCollection.track
+      - onenote.OneNote.TableRowCollection.untrack
   - uid: onenote.OneNote.TableRowCollection.count
     summary: |-
       Returns the number of table rows in this collection. Read-only.
@@ -30,12 +33,15 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'count: number;'
+      content: 'readonly count: number;'
       return:
         type:
           - number
   - uid: onenote.OneNote.TableRowCollection.getItem
-    summary: Gets a table row object by ID or by its index in the collection. Read-only.
+    summary: |-
+      Gets a table row object by ID or by its index in the collection. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getItem(index)
     fullName: onenote.OneNote.TableRowCollection.getItem
     langs:
@@ -49,11 +55,14 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'A number that identifies the index location of a table row object. \[Api set: OneNoteApi 1.1\]'
+          description: A number that identifies the index location of a table row object.
           type:
             - number | string
   - uid: onenote.OneNote.TableRowCollection.getItemAt
-    summary: Gets a table row at its position in the collection.
+    summary: |-
+      Gets a table row at its position in the collection.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getItemAt(index)
     fullName: onenote.OneNote.TableRowCollection.getItemAt
     langs:
@@ -67,7 +76,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: 'Index value of the object to be retrieved. Zero-indexed. \[Api set: OneNoteApi 1.1\]'
+          description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
   - uid: onenote.OneNote.TableRowCollection.items
@@ -78,7 +87,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<OneNote.TableRow>;'
+      content: 'readonly items: Array<OneNote.TableRow>;'
       return:
         type:
           - Array<OneNote.TableRow>
@@ -92,7 +101,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.TableRowCollection;'
+      content: >-
+        load(option?: OneNote.Interfaces.TableRowCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions):
+        OneNote.TableRowCollection;
       return:
         type:
           - OneNote.TableRowCollection
@@ -101,4 +112,51 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.TableRowCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+  - uid: onenote.OneNote.TableRowCollection.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.TableRowCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.TableRowCollectionData;'
+      return:
+        type:
+          - OneNote.Interfaces.TableRowCollectionData
+        description: ''
+  - uid: onenote.OneNote.TableRowCollection.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.TableRowCollection.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.TableRowCollection;'
+      return:
+        type:
+          - OneNote.TableRowCollection
+        description: ''
+  - uid: onenote.OneNote.TableRowCollection.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.TableRowCollection.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.TableRowCollection;'
+      return:
+        type:
+          - OneNote.TableRowCollection
+        description: ''

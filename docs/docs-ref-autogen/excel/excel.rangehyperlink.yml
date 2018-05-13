@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.RangeHyperlink
+    summary: |-
+      Represents the necessary strings to get/set a hyperlink (XHL) object.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: Excel.RangeHyperlink
+    fullName: excel.Excel.RangeHyperlink
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.RangeHyperlink.address
+      - excel.Excel.RangeHyperlink.documentReference
+      - excel.Excel.RangeHyperlink.screenTip
+      - excel.Excel.RangeHyperlink.textToDisplay
+  - uid: excel.Excel.RangeHyperlink.address
+    summary: |-
+      Represents the url target for the hyperlink.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: address
+    fullName: excel.Excel.RangeHyperlink.address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.RangeHyperlink.documentReference
+    summary: |-
+      Represents the document reference target for the hyperlink.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: documentReference
+    fullName: excel.Excel.RangeHyperlink.documentReference
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'documentReference?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.RangeHyperlink.screenTip
+    summary: |-
+      Represents the string displayed when hovering over the hyperlink.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: screenTip
+    fullName: excel.Excel.RangeHyperlink.screenTip
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'screenTip?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.RangeHyperlink.textToDisplay
+    summary: |-
+      Represents the string that is displayed in the top left most cell in the range.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: textToDisplay
+    fullName: excel.Excel.RangeHyperlink.textToDisplay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textToDisplay?: string;'
+      return:
+        type:
+          - string

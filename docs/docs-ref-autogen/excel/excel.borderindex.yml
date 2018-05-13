@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.BorderIndex
+    summary: '\[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]'
+    name: Excel.BorderIndex
+    fullName: excel.Excel.BorderIndex
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.BorderIndex.diagonalDown
+      - excel.Excel.BorderIndex.diagonalUp
+      - excel.Excel.BorderIndex.edgeBottom
+      - excel.Excel.BorderIndex.edgeLeft
+      - excel.Excel.BorderIndex.edgeRight
+      - excel.Excel.BorderIndex.edgeTop
+      - excel.Excel.BorderIndex.insideHorizontal
+      - excel.Excel.BorderIndex.insideVertical
+  - uid: excel.Excel.BorderIndex.diagonalDown
+    name: diagonalDown
+    fullName: excel.Excel.BorderIndex.diagonalDown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DiagonalDown"'
+  - uid: excel.Excel.BorderIndex.diagonalUp
+    name: diagonalUp
+    fullName: excel.Excel.BorderIndex.diagonalUp
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DiagonalUp"'
+  - uid: excel.Excel.BorderIndex.edgeBottom
+    name: edgeBottom
+    fullName: excel.Excel.BorderIndex.edgeBottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EdgeBottom"'
+  - uid: excel.Excel.BorderIndex.edgeLeft
+    name: edgeLeft
+    fullName: excel.Excel.BorderIndex.edgeLeft
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EdgeLeft"'
+  - uid: excel.Excel.BorderIndex.edgeRight
+    name: edgeRight
+    fullName: excel.Excel.BorderIndex.edgeRight
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EdgeRight"'
+  - uid: excel.Excel.BorderIndex.edgeTop
+    name: edgeTop
+    fullName: excel.Excel.BorderIndex.edgeTop
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EdgeTop"'
+  - uid: excel.Excel.BorderIndex.insideHorizontal
+    name: insideHorizontal
+    fullName: excel.Excel.BorderIndex.insideHorizontal
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InsideHorizontal"'
+  - uid: excel.Excel.BorderIndex.insideVertical
+    name: insideVertical
+    fullName: excel.Excel.BorderIndex.insideVertical
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InsideVertical"'

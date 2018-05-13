@@ -1,0 +1,125 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartBorder
+    summary: |-
+      Represents the border formatting of a chart element.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: Excel.ChartBorder
+    fullName: excel.Excel.ChartBorder
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartBorder.color
+      - excel.Excel.ChartBorder.lineStyle
+      - excel.Excel.ChartBorder.load
+      - excel.Excel.ChartBorder.set
+      - excel.Excel.ChartBorder.toJSON
+      - excel.Excel.ChartBorder.weight
+  - uid: excel.Excel.ChartBorder.color
+    summary: |-
+      HTML color code representing the color of borders in the chart.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: color
+    fullName: excel.Excel.ChartBorder.color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ChartBorder.lineStyle
+    summary: |-
+      Represents the line style of the border. See Excel.ChartLineStyle for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: lineStyle
+    fullName: excel.Excel.ChartBorder.lineStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        lineStyle: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" |
+        "Grey50" | "Grey75" | "Automatic" | "RoundDot";
+      return:
+        type:
+          - >-
+            Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" |
+            "Grey50" | "Grey75" | "Automatic" | "RoundDot"
+  - uid: excel.Excel.ChartBorder.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ChartBorder.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.ChartBorderLoadOptions): Excel.ChartBorder;'
+      return:
+        type:
+          - Excel.ChartBorder
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.ChartBorderLoadOptions
+  - uid: excel.Excel.ChartBorder.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartBorder.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartBorderUpdateData
+        - id: options
+          description: ''
+          type:
+            - OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ChartBorder.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartBorder.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartBorderData;'
+      return:
+        type:
+          - Excel.Interfaces.ChartBorderData
+        description: ''
+  - uid: excel.Excel.ChartBorder.weight
+    summary: |-
+      Represents weight of the border, in points.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: weight
+    fullName: excel.Excel.ChartBorder.weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight: number;'
+      return:
+        type:
+          - number

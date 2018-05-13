@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents an IconSet criteria for conditional formatting.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.ColorScaleConditionalFormat
     fullName: excel.Excel.ColorScaleConditionalFormat
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       The criteria of the color scale. Midpoint is optional when using a two point color scale.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: criteria
     fullName: excel.Excel.ColorScaleConditionalFormat.criteria
     langs:
@@ -44,7 +44,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ColorScaleConditionalFormat;'
+      content: 'load(option?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions): Excel.ColorScaleConditionalFormat;'
       return:
         type:
           - Excel.ColorScaleConditionalFormat
@@ -53,7 +53,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
   - uid: excel.Excel.ColorScaleConditionalFormat.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -62,10 +62,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ColorScaleConditionalFormatUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: >-
+        set(properties: Interfaces.ColorScaleConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions):
+        void;
       return:
         type:
           - void
@@ -78,20 +77,14 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ColorScaleConditionalFormat.threeColorScale
     summary: >-
       If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum,
       maximum).
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: threeColorScale
     fullName: excel.Excel.ColorScaleConditionalFormat.threeColorScale
     langs:
@@ -109,12 +102,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ColorScaleConditionalFormatData;'
       return:
         type:
-          - |-
-            {
-                        "criteria": ConditionalColorScaleCriteria;
-                        "threeColorScale": boolean;
-                    }
+          - Excel.Interfaces.ColorScaleConditionalFormatData
         description: ''

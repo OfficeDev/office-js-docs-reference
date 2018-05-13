@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.VerticalAlignment
+    summary: '\[ [API set: WordApi](http://bing.com?type=word) \]'
+    name: Word.VerticalAlignment
+    fullName: word.Word.VerticalAlignment
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.VerticalAlignment.bottom
+      - word.Word.VerticalAlignment.center
+      - word.Word.VerticalAlignment.mixed
+      - word.Word.VerticalAlignment.top
+  - uid: word.Word.VerticalAlignment.bottom
+    name: bottom
+    fullName: word.Word.VerticalAlignment.bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: word.Word.VerticalAlignment.center
+    name: center
+    fullName: word.Word.VerticalAlignment.center
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Center"'
+  - uid: word.Word.VerticalAlignment.mixed
+    name: mixed
+    fullName: word.Word.VerticalAlignment.mixed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Mixed"'
+  - uid: word.Word.VerticalAlignment.top
+    name: top
+    fullName: word.Word.VerticalAlignment.top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

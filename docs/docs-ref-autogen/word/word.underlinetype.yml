@@ -1,0 +1,186 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.UnderlineType
+    summary: |-
+      Underline types
+
+      \[ [API set: WordApi](http://bing.com?type=word) \]
+    name: Word.UnderlineType
+    fullName: word.Word.UnderlineType
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.UnderlineType.dashLine
+      - word.Word.UnderlineType.dashLineHeavy
+      - word.Word.UnderlineType.dashLineLong
+      - word.Word.UnderlineType.dashLineLongHeavy
+      - word.Word.UnderlineType.dotDashLine
+      - word.Word.UnderlineType.dotDashLineHeavy
+      - word.Word.UnderlineType.dotLine
+      - word.Word.UnderlineType.dotted
+      - word.Word.UnderlineType.dottedHeavy
+      - word.Word.UnderlineType.double
+      - word.Word.UnderlineType.hidden
+      - word.Word.UnderlineType.mixed
+      - word.Word.UnderlineType.none
+      - word.Word.UnderlineType.single
+      - word.Word.UnderlineType.thick
+      - word.Word.UnderlineType.twoDotDashLine
+      - word.Word.UnderlineType.twoDotDashLineHeavy
+      - word.Word.UnderlineType.wave
+      - word.Word.UnderlineType.waveDouble
+      - word.Word.UnderlineType.waveHeavy
+      - word.Word.UnderlineType.word
+  - uid: word.Word.UnderlineType.dashLine
+    name: dashLine
+    fullName: word.Word.UnderlineType.dashLine
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashLine"'
+  - uid: word.Word.UnderlineType.dashLineHeavy
+    name: dashLineHeavy
+    fullName: word.Word.UnderlineType.dashLineHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashLineHeavy"'
+  - uid: word.Word.UnderlineType.dashLineLong
+    name: dashLineLong
+    fullName: word.Word.UnderlineType.dashLineLong
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashLineLong"'
+  - uid: word.Word.UnderlineType.dashLineLongHeavy
+    name: dashLineLongHeavy
+    fullName: word.Word.UnderlineType.dashLineLongHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashLineLongHeavy"'
+  - uid: word.Word.UnderlineType.dotDashLine
+    name: dotDashLine
+    fullName: word.Word.UnderlineType.dotDashLine
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DotDashLine"'
+  - uid: word.Word.UnderlineType.dotDashLineHeavy
+    name: dotDashLineHeavy
+    fullName: word.Word.UnderlineType.dotDashLineHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DotDashLineHeavy"'
+  - uid: word.Word.UnderlineType.dotLine
+    deprecated:
+      content: DotLine is no longer supported.
+    name: dotLine
+    fullName: word.Word.UnderlineType.dotLine
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DotLine"'
+  - uid: word.Word.UnderlineType.dotted
+    name: dotted
+    fullName: word.Word.UnderlineType.dotted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dotted"'
+  - uid: word.Word.UnderlineType.dottedHeavy
+    name: dottedHeavy
+    fullName: word.Word.UnderlineType.dottedHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DottedHeavy"'
+  - uid: word.Word.UnderlineType.double
+    name: double
+    fullName: word.Word.UnderlineType.double
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Double"'
+  - uid: word.Word.UnderlineType.hidden
+    deprecated:
+      content: Hidden is no longer supported.
+    name: hidden
+    fullName: word.Word.UnderlineType.hidden
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Hidden"'
+  - uid: word.Word.UnderlineType.mixed
+    name: mixed
+    fullName: word.Word.UnderlineType.mixed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Mixed"'
+  - uid: word.Word.UnderlineType.none
+    name: none
+    fullName: word.Word.UnderlineType.none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: word.Word.UnderlineType.single
+    name: single
+    fullName: word.Word.UnderlineType.single
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Single"'
+  - uid: word.Word.UnderlineType.thick
+    name: thick
+    fullName: word.Word.UnderlineType.thick
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Thick"'
+  - uid: word.Word.UnderlineType.twoDotDashLine
+    name: twoDotDashLine
+    fullName: word.Word.UnderlineType.twoDotDashLine
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TwoDotDashLine"'
+  - uid: word.Word.UnderlineType.twoDotDashLineHeavy
+    name: twoDotDashLineHeavy
+    fullName: word.Word.UnderlineType.twoDotDashLineHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TwoDotDashLineHeavy"'
+  - uid: word.Word.UnderlineType.wave
+    name: wave
+    fullName: word.Word.UnderlineType.wave
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Wave"'
+  - uid: word.Word.UnderlineType.waveDouble
+    name: waveDouble
+    fullName: word.Word.UnderlineType.waveDouble
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WaveDouble"'
+  - uid: word.Word.UnderlineType.waveHeavy
+    name: waveHeavy
+    fullName: word.Word.UnderlineType.waveHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WaveHeavy"'
+  - uid: word.Word.UnderlineType.word
+    name: word
+    fullName: word.Word.UnderlineType.word
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Word"'

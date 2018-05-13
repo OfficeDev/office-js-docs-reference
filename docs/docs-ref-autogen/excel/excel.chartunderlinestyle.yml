@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartUnderlineStyle
+    summary: '\[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]'
+    name: Excel.ChartUnderlineStyle
+    fullName: excel.Excel.ChartUnderlineStyle
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartUnderlineStyle.none
+      - excel.Excel.ChartUnderlineStyle.single
+  - uid: excel.Excel.ChartUnderlineStyle.none
+    name: none
+    fullName: excel.Excel.ChartUnderlineStyle.none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel.Excel.ChartUnderlineStyle.single
+    name: single
+    fullName: excel.Excel.ChartUnderlineStyle.single
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Single"'

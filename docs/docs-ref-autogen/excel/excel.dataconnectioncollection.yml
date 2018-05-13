@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.DataConnectionCollection
+    summary: |-
+      Represents a collection of all the Data Connections that are part of the workbook or worksheet.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: Excel.DataConnectionCollection
+    fullName: excel.Excel.DataConnectionCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.DataConnectionCollection.refreshAll
+      - excel.Excel.DataConnectionCollection.toJSON
+  - uid: excel.Excel.DataConnectionCollection.refreshAll
+    summary: |-
+      Refreshes all the Data Connections in the collection.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: refreshAll()
+    fullName: excel.Excel.DataConnectionCollection.refreshAll
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'refreshAll(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.DataConnectionCollection.toJSON
+    name: toJSON()
+    fullName: excel.Excel.DataConnectionCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - |-
+            {
+                        [key: string]: string;
+                    }
+        description: ''

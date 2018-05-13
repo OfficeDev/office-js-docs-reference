@@ -2,6 +2,7 @@
 // Project: http://dev.office.com
 // Definitions by: OfficeDev <https://github.com/OfficeDev>, Lance Austin <https://github.com/LanceEA>, Michael Zlatkovsky <https://github.com/Zlatkovsky>, Kim Brandl <https://github.com/kbrandl>, Ricky Kirkham <https://github.com/Rick-Kirkham>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.4
 
 /*
 office-js
@@ -14,12 +15,24 @@ Copyright (c) Microsoft Corporation
 ////////////////////////////////////////////////////////////////
 
 declare namespace Office {
+    export var Preview: {
+        startCustomFunctions(): Promise<void>;
+    }
+
+    export var Promise: PromiseConstructor;
     export var context: Context;
     /**
      * This method is called after the Office API was loaded.
      * @param reason Indicates how the app was initialized
      */
     export function initialize(reason: InitializationReason): void;
+    /**
+    * Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized yet, the callback or promise will wait until the Office host is ready to accept API calls.
+    * Note that though this API is intended to be used inside an Office add-in, it can also be used outside the add-in.  In that case, once Office.js determines that it is running outside of an Office host application, it will call the callback and resolve the promise with "null" for both the host and platform.
+    * @param callback - An optional callback method, that will receive the host and platform info. Alternatively, rather than use a callback, an add-in may simply wait for the Promise returned by the function to resolve.
+    * @returns A Promise that contains the host and platform info, once initialization is completed.
+    */
+    export function onReady(callback?: (info: { host: HostType, platform: PlatformType }) => any): Promise<{ host: HostType, platform: PlatformType }>;
     /**
      * Indicates if the large namespace for objects will be used or not.
      * @param useShortNamespace  Indicates if 'true' that the short namespace will be used
@@ -1566,7 +1579,7 @@ declare namespace Office {
 ////////////////////////////////////////////////////////////////
 
 declare namespace Office {
-    export module MailboxEnums {
+    namespace MailboxEnums {
         export enum AttachmentType {
             /**
              * The attachment is a file
@@ -2575,773 +2588,226 @@ declare namespace Office {
 ////////////////////////////////////////////////////////////////
 
 declare namespace OfficeExtension {
-	/** An abstract proxy object that represents an object in an Office document. You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the proxy object state with the document by calling "context.sync()". */
-	class ClientObject {
-		/** The request context associated with the object */
-		context: ClientRequestContext;
-		/** Returns a boolean value for whether the corresponding object is a null object. You must call "context.sync()" before reading the isNullObject property. */
-		isNullObject: boolean;
-	}
+    /** An abstract proxy object that represents an object in an Office document. You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the proxy object state with the document by calling "context.sync()". */
+    class ClientObject {
+        /** The request context associated with the object */
+        context: ClientRequestContext;
+        /** Returns a boolean value for whether the corresponding object is a null object. You must call "context.sync()" before reading the isNullObject property. */
+        isNullObject: boolean;
+    }
 }
 declare namespace OfficeExtension {
-	interface LoadOption {
-		select?: string | string[];
-		expand?: string | string[];
-		top?: number;
-		skip?: number;
-	}
-	export declare interface UpdateOptions {
-		/**
-		 * Throw an error if the passed-in property list includes read-only properties (default = true).
-		 */
-		throwOnReadOnly?: boolean
-	}
+    interface LoadOption {
+        select?: string | string[];
+        expand?: string | string[];
+        top?: number;
+        skip?: number;
+    }
+    export interface UpdateOptions {
+        /**
+         * Throw an error if the passed-in property list includes read-only properties (default = true).
+         */
+        throwOnReadOnly?: boolean
+    }
 
-	/** Contains debug information about the request context. */
-	export declare interface RequestContextDebugInfo {
-		/** The statements to be executed in the host. */
-		pendingStatements: string[];
-	}
+    /** Contains debug information about the request context. */
+    export interface RequestContextDebugInfo {
+        /**
+         * The statements to be executed in the host.
+         *
+         * These statements may not match the code exactly as written, but will be a close approximation.
+         */
+        pendingStatements: string[];
+    }
 
-	/** An abstract RequestContext object that facilitates requests to the host Office application. The "Excel.run" and "Word.run" methods provide a request context. */
-	class ClientRequestContext {
-		constructor(url?: string);
+    /** An abstract RequestContext object that facilitates requests to the host Office application. The "Excel.run" and "Word.run" methods provide a request context. */
+    class ClientRequestContext {
+        constructor(url?: string);
 
-		/** Collection of objects that are tracked for automatic adjustments based on surrounding changes in the document. */
-		trackedObjects: TrackedObjects;
+        /** Collection of objects that are tracked for automatic adjustments based on surrounding changes in the document. */
+        trackedObjects: TrackedObjects;
 
-		/** Request headers */
-		requestHeaders: { [name: string]: string };
+        /** Request headers */
+        requestHeaders: { [name: string]: string };
 
-		/** Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties. */
-		load(object: ClientObject, option?: string | string[]| LoadOption): void;
+        /** Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties. */
+        load(object: ClientObject, option?: string | string[] | LoadOption): void;
 
-		/**
-		* Queues up a command to recursively load the specified properties of the object and its navigation properties.
-		* You must call "context.sync()" before reading the properties.
-		* 
-		* @param object The object to be loaded.
-		* @param options The key-value pairing of load options for the types, such as { "Workbook": "worksheets,tables",  "Worksheet": "tables",  "Tables": "name" }
-		* @param maxDepth The maximum recursive depth.
-		*/
-		loadRecursive(object: ClientObject, options: { [typeName: string]: string | string[] | LoadOption }, maxDepth?: number): void;
+        /**
+        * Queues up a command to recursively load the specified properties of the object and its navigation properties.
+        * You must call "context.sync()" before reading the properties.
+        *
+        * @param object The object to be loaded.
+        * @param options The key-value pairing of load options for the types, such as { "Workbook": "worksheets,tables",  "Worksheet": "tables",  "Tables": "name" }
+        * @param maxDepth The maximum recursive depth.
+        */
+        loadRecursive(object: ClientObject, options: { [typeName: string]: string | string[] | LoadOption }, maxDepth?: number): void;
 
-		/** Adds a trace message to the queue. If the promise returned by "context.sync()" is rejected due to an error, this adds a ".traceMessages" array to the OfficeExtension.Error object, containing all trace messages that were executed. These messages can help you monitor the program execution sequence and detect the cause of the error. */
-		trace(message: string): void;
+        /** Adds a trace message to the queue. If the promise returned by "context.sync()" is rejected due to an error, this adds a ".traceMessages" array to the OfficeExtension.Error object, containing all trace messages that were executed. These messages can help you monitor the program execution sequence and detect the cause of the error. */
+        trace(message: string): void;
 
-		/** Synchronizes the state between JavaScript proxy objects and the Office document, by executing instructions queued on the request context and retrieving properties of loaded Office objects for use in your code.�This method returns a promise, which is resolved when the synchronization is complete. */
-		sync<T>(passThroughValue?: T): Promise<T>;
+        /** Synchronizes the state between JavaScript proxy objects and the Office document, by executing instructions queued on the request context and retrieving properties of loaded Office objects for use in your code.�This method returns a promise, which is resolved when the synchronization is complete. */
+        sync<T>(passThroughValue?: T): Promise<T>;
 
-		/** Debug information */
-		readonly debugInfo: RequestContextDebugInfo;
-	}
+        /** Debug information */
+        readonly debugInfo: RequestContextDebugInfo;
+    }
+
+    export interface EmbeddedOptions {
+        sessionKey?: string,
+        container?: HTMLElement,
+        id?: string;
+        timeoutInMilliseconds?: number;
+        height?: string;
+        width?: string;
+    }
+
+    class EmbeddedSession {
+        constructor(url: string, options?: EmbeddedOptions);
+        public init(): Promise<any>;
+    }
 }
 declare namespace OfficeExtension {
-	/** Contains the result for methods that return primitive types. The object's value property is retrieved from the document after "context.sync()" is invoked. */
-	class ClientResult<T> {
-		/** The value of the result that is retrieved from the document after "context.sync()" is invoked. */
-		value: T;
-	}
-
-	type RetrieveResult<T extends ClientObject, TData> = { $proxy: T; $isNullObject: boolean; toJSON: () => TData; } & TData;
-}
-declare namespace OfficeExtension {
-	/** Configuration */
-	export declare var config: {
-		/**
-		 * Determines whether to have extended error logging on failure.
-		 *
-		 * When true, the error object will include a "debugInfo.fullStatements" property that lists out all the actions that were part of the batch request, both before and after the point of failure.
-		 *
-		 * Having this feature on will introduce a performance penalty, and will also log possibly-sensitive data (e.g., the contents of the commands being sent to the host).
-		 * It is recommended that you only have it on during debugging.  Also, if you are logging the error.debugInfo to a database or analytics service,
-		 * you should strip out the "debugInfo.fullStatements" property before sending it.
-		 */
-		extendedErrorLogging: boolean;
-	};
-
-	export interface DebugInfo {
-		/** Error code string, such as "InvalidArgument". */
-		code: string;
-		/** The error message passed through from the host Office application. */
-		message: string;
-		/** Inner error, if applicable. */
-		innerError?: DebugInfo | string;
-
-		/** The object type and property or method name (or similar information), if available. */
-		errorLocation?: string;
-		/** The statement associated with error (or similar information), if available. */
-		statement?: string;
-		/** The surrounding statements associated with error, if available. */
-		surroundingStatements?: string[];
-		/** The full statements of the request, if available.*/
-		fullStatements?: string[];
-	}
-
-	/** The error object returned by "context.sync()", if a promise is rejected due to an error while processing the request. */
-	class Error {
-		/** Error name: "OfficeExtension.Error".*/
-		name: string;
-		/** The error message passed through from the host Office application. */
-		message: string;
-		/** Stack trace, if applicable. */
-		stack: string;
-		/** Error code string, such as "InvalidArgument". */
-		code: string;
-		/** Trace messages (if any) that were added via a "context.trace()" invocation before calling "context.sync()". If there was an error, this contains all trace messages that were executed before the error occurred. These messages can help you monitor the program execution sequence and detect the case of the error. */
-		traceMessages: Array<string>;
-		/** Debug info (useful for detailed logging of the error, i.e., via JSON.stringify(...)). */
-		debugInfo: DebugInfo;
-		/** Inner error, if applicable. */
-		innerError: Error;
-	}
-}
-declare namespace OfficeExtension {
-	class ErrorCodes {
-		public static accessDenied: string;
-		public static generalException: string;
-		public static activityLimitReached: string;
-		public static invalidObjectPath: string;
-		public static propertyNotLoaded: string;
-		public static valueNotLoaded: string;
-		public static invalidRequestContext: string;
-		public static invalidArgument: string;
-		public static runMustReturnPromise: string;
-		public static cannotRegisterEvent: string;
-		public static apiNotFound: string;
-		public static connectionFailure: string;
-	}
-}
-declare namespace OfficeExtension {
-	/** An Promise object that represents a deferred interaction with the host Office application. The publically-consumable OfficeExtension.Promise is available starting in ExcelApi 1.2 and WordApi 1.2. Promises can be chained via ".then", and errors can be caught via ".catch". Remember to always use a ".catch" on the outer promise, and to return intermediary promises so as not to break the promise chain. When a "native" Promise implementation is available, OfficeExtension.Promise will switch to use the native Promise instead. */
-	export const Promise: PromiseConstructor;
-}
-
-
-
-declare namespace OfficeExtension {
-	/** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
-	class TrackedObjects {
-		/** Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. */
-		add(object: ClientObject): void;
-		/** Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. */
-		add(objects: ClientObject[]): void;
-		/** Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect. */
-		remove(object: ClientObject): void;
-		/** Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect. */
-		remove(objects: ClientObject[]): void;
-	}
+    /** Contains the result for methods that return primitive types. The object's value property is retrieved from the document after "context.sync()" is invoked. */
+    class ClientResult<T> {
+        /** The value of the result that is retrieved from the document after "context.sync()" is invoked. */
+        value: T;
+    }
 }
 
 declare namespace OfficeExtension {
-	export class EventHandlers<T> {
-		constructor(context: ClientRequestContext, parentObject: ClientObject, name: string, eventInfo: EventInfo<T>);
-		add(handler: (args: T) => Promise<any>): EventHandlerResult<T>;
-		remove(handler: (args: T) => Promise<any>): void;
-	}
+    /** Configuration */
+    export var config: {
+        /**
+         * Determines whether to log additional error information upon failure.
+         *
+         * When this property is set to true, the error object will include a "debugInfo.fullStatements" property that lists all statements in the batch request, including all statements that precede and follow the point of failure.
+         *
+         * Setting this property to true will negatively impact performance and will log all statements in the batch request, including any statements that may contain potentially-sensitive data.
+         * It is recommended that you only set this property to true during debugging and that you never log the value of error.debugInfo.fullStatements to an external database or analytics service.
+         */
+        extendedErrorLogging: boolean;
+    };
 
-	export class EventHandlerResult<T> {
-		constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => Promise<any>);
-		/** The request context associated with the object */
-		context: ClientRequestContext;
-		remove(): void;
-	}
+    export interface DebugInfo {
+        /** Error code string, such as "InvalidArgument". */
+        code: string;
+        /** The error message passed through from the host Office application. */
+        message: string;
+        /** Inner error, if applicable. */
+        innerError?: DebugInfo | string;
 
-	export interface EventInfo<T> {
-		registerFunc: (callback: (args: any) => void) => Promise<any>;
-		unregisterFunc: (callback: (args: any) => void) => Promise<any>;
-		eventArgsTransformFunc: (args: any) => Promise<T>;
-	}
-}
-declare namespace OfficeExtension {
-	/**
-	* Request URL and headers 
-	*/
-	interface RequestUrlAndHeaderInfo {
-		/** Request URL */
-		url: string;
-		/** Request headers */
-		headers?: {
-			[name: string]: string;
-		};
-	}
-}
+        /** The object type and property or method name (or similar information), if available. */
+        errorLocation?: string;
 
+        /**
+         * The statement that caused the error, if available.
+         *
+         * This statement will never contain any potentially-sensitive data and may not match the code exactly as written, but will be a close approximation.
+         */
+        statements?: string;
 
+        /**
+         * The statements that closely precede and follow the statement that caused the error, if available.
+         *
+         * These statements will never contain any potentially-sensitive data and may not match the code exactly as written, but will be a close approximation.
+         */
+        surroundingStatements?: string[];
 
-declare namespace OfficeCore {
-    enum AgaveVisualErrorCodes {
-        generalException = "GeneralException",
+        /**
+         * All statements in the batch request (including any potentially-sensitive information that was specified in the request), if available.
+         *
+         * These statements may not match the code exactly as written, but will be a close approximation.
+         */
+        fullStatements?: string[];
     }
-    module Interfaces {
-        interface CollectionLoadOptions {
-            $top?: number;
-            $skip?: number;
-        }
-    }
-}
-declare namespace OfficeCore {
-    namespace ExperimentErrorCodes {
-        var generalException: string;
-    }
-    module Interfaces {
-    }
-}
-declare namespace OfficeCore {
-    class RequestContext extends OfficeExtension.ClientRequestContext {
-        constructor(url?: string | OfficeExtension.RequestUrlAndHeaderInfo | any);
-    }
-    /**
-     * Executes a batch script that performs actions on the Office object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Office application. Since the Office add-in and the Office application run in two different processes, the RequestContext is required to get access to the Office object model from the add-in.
-     */
-    function run<T>(batch: (context: OfficeCore.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
-    /**
-     * Executes a batch script that performs actions on the Office object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param context - A previously-created context object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Office application. Since the Office add-in and the Office application run in two different processes, the RequestContext is required to get access to the Office object model from the add-in.
-     */
-    function run<T>(context: OfficeCore.RequestContext, batch: (context: OfficeCore.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
-    /**
-     * Executes a batch script that performs actions on the Office object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-     * @param object - A previously-created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Office application. Since the Office add-in and the Office application run in two different processes, the RequestContext is required to get access to the Office object model from the add-in.
-     */
-    function run<T>(object: OfficeExtension.ClientObject, batch: (context: OfficeCore.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
-    /**
-     * Executes a batch script that performs actions on the Office object model, using the RequestContext of previously-created API objects.
-     * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
-     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Office application. Since the Office add-in and the Office application run in two different processes, the RequestContext is required to get access to the Office object model from the add-in.
-     */
-    function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OfficeCore.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
-}
-declare namespace OfficeCore {
-    namespace TelemetryErrorCodes {
-        var generalException: string;
-    }
-    module Interfaces {
-    }
-}
-declare namespace OfficeFirstPartyAuth {
-    function getAccessToken<T>(options: object): OfficeExtension.IPromise<T>;
-    function getPrimaryIdentityInfo<T>(): OfficeExtension.IPromise<T>;
-}
-declare namespace OfficeCore {
-    /**
-     *
-     * Represents a single comment in the document.
-     *
-     * [Api set: Comments 1.1]
-     */
-    class Comment extends OfficeExtension.ClientObject {
-        /**
-         *
-         * Gets this comment's parent. If this is a root comment, throws.
-         *
-         * [Api set: Comments 1.1]
-         */
-        readonly parent: OfficeCore.Comment;
-        /**
-         *
-         * Gets this comment's parent. If this is a root comment, returns a null object.
-         *
-         * [Api set: Comments 1.1]
-         */
-        readonly parentOrNullObject: OfficeCore.Comment;
-        /**
-         *
-         * Gets the replies to this comment. If this is not a root comment, returns an empty collection.
-         *
-         * [Api set: Comments 1.1]
-         */
-        readonly replies: OfficeCore.CommentCollection;
-        /**
-         *
-         * Gets an object representing the comment's author. Read-only.
-         *
-         * [Api set: Comments 1.1]
-         */
-        readonly author: OfficeCore.CommentAuthor;
-        /**
-         *
-         * Gets when the comment was created. Read-only.
-         *
-         * [Api set: Comments 1.1]
-         */
-        readonly created: Date;
-        /**
-         *
-         * Returns a value that uniquely identifies the comment in a given document. Read-only.
-         *
-         * [Api set: Comments 1.1]
-         */
-        readonly id: string;
-        /**
-         *
-         * Gets the level of the comment: 0 if it is a root comment, or 1 if it is a reply. Read-only.
-         *
-         * [Api set: Comments 1.1]
-         */
-        readonly level: number;
-        /**
-         *
-         * Gets the comment's mentions.
-         *
-         * [Api set: Comments 1.1]
-         */
-        readonly mentions: OfficeCore.CommentMention[];
-        /**
-         *
-         * Gets or sets whether this comment is resolved.
-         *
-         * [Api set: Comments 1.1]
-         */
-        resolved: boolean;
-        /**
-         *
-         * Gets or sets the comment's plain text, without formatting.
-         *
-         * [Api set: Comments 1.1]
-         */
-        text: string;
-        /** Sets multiple properties on the object at the same time, based on JSON input. */
-        set(properties: Interfaces.CommentUpdateData, options?: OfficeExtension.UpdateOptions): void;
-        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
-        set(properties: Comment): void;
-        /**
-         *
-         * Deletes this comment. If this is a root comment, deletes the entire comment thread.
-         *
-         * [Api set: Comments 1.1]
-         */
-        delete(): void;
-        /**
-         *
-         * Gets this comment's parent. If this is a root comment, returns a new comment object representing itself.
-            This method is useful for accessing thread-level properties from either a reply or the root comment.
-            
-            e.g. comment.getParentOrSelf().resolved = true;
-         *
-         * [Api set: Comments 1.1]
-         */
-        getParentOrSelf(): OfficeCore.Comment;
-        /**
-         *
-         * Gets the comment's rich text in the specified markup format.
-         *
-         * [Api set: Comments 1.1]
-         */
-        getRichText(format: OfficeCore.CommentTextFormat): OfficeExtension.ClientResult<string>;
-        /**
-         *
-         * Gets the comment's rich text in the specified markup format.
-         *
-         * [Api set: Comments 1.1]
-         */
-        getRichText(format: "Plain" | "Markdown" | "Delta"): OfficeExtension.ClientResult<string>;
-        /**
-         *
-         * Appends a new reply to the comment's thread.
-         *
-         * [Api set: Comments 1.1]
-         *
-         * @param text The body of the reply.
-         * @param format The markup format of the text parameter.
-         * @returns
-         */
-        reply(text: string, format: OfficeCore.CommentTextFormat): OfficeCore.Comment;
-        /**
-         *
-         * Appends a new reply to the comment's thread.
-         *
-         * [Api set: Comments 1.1]
-         *
-         * @param text The body of the reply.
-         * @param format The markup format of the text parameter.
-         * @returns
-         */
-        reply(text: string, format: "Plain" | "Markdown" | "Delta"): OfficeCore.Comment;
-        /**
-         *
-         * Sets the comment's rich text.
-         *
-         * [Api set: Comments 1.1]
-         *
-         * @param text The text of the comment.
-         * @param format The markup format of the 'text' parameter.
-         */
-        setRichText(text: string, format: OfficeCore.CommentTextFormat): OfficeExtension.ClientResult<string>;
-        /**
-         *
-         * Sets the comment's rich text.
-         *
-         * [Api set: Comments 1.1]
-         *
-         * @param text The text of the comment.
-         * @param format The markup format of the 'text' parameter.
-         */
-        setRichText(text: string, format: "Plain" | "Markdown" | "Delta"): OfficeExtension.ClientResult<string>;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         */
-        load(option?: OfficeCore.Interfaces.CommentLoadOptions): OfficeCore.Comment;
-        load(option?: string | string[]): OfficeCore.Comment;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): OfficeCore.Comment;
-        toJSON(): OfficeCore.Interfaces.CommentData;
-    }
-    /**
-     *
-     * Represents the author of a comment.
-     *
-     * [Api set: Comments 1.1]
-     */
-    interface CommentAuthor {
-        /**
-         *
-         * The email address of the author.
-         *
-         * [Api set: Comments 1.1]
-         */
-        email: string;
-        /**
-         *
-         * The name of the author.
-         *
-         * [Api set: Comments 1.1]
-         */
+
+    /** The error object returned by "context.sync()", if a promise is rejected due to an error while processing the request. */
+    class Error {
+        /** Error name: "OfficeExtension.Error".*/
         name: string;
+        /** The error message passed through from the host Office application. */
+        message: string;
+        /** Stack trace, if applicable. */
+        stack: string;
+        /** Error code string, such as "InvalidArgument". */
+        code: string;
+        /** Trace messages (if any) that were added via a "context.trace()" invocation before calling "context.sync()". If there was an error, this contains all trace messages that were executed before the error occurred. These messages can help you monitor the program execution sequence and detect the case of the error. */
+        traceMessages: Array<string>;
+        /** Debug info (useful for detailed logging of the error, i.e., via JSON.stringify(...)). */
+        debugInfo: DebugInfo;
+        /** Inner error, if applicable. */
+        innerError: Error;
     }
+}
+declare namespace OfficeExtension {
+    class ErrorCodes {
+        public static accessDenied: string;
+        public static generalException: string;
+        public static activityLimitReached: string;
+        public static invalidObjectPath: string;
+        public static propertyNotLoaded: string;
+        public static valueNotLoaded: string;
+        public static invalidRequestContext: string;
+        public static invalidArgument: string;
+        public static runMustReturnPromise: string;
+        public static cannotRegisterEvent: string;
+        public static apiNotFound: string;
+        public static connectionFailure: string;
+    }
+}
+declare namespace OfficeExtension {
+    /** An Promise object that represents a deferred interaction with the host Office application. The publically-consumable OfficeExtension.Promise is available starting in ExcelApi 1.2 and WordApi 1.2. Promises can be chained via ".then", and errors can be caught via ".catch". Remember to always use a ".catch" on the outer promise, and to return intermediary promises so as not to break the promise chain. When a "native" Promise implementation is available, OfficeExtension.Promise will switch to use the native Promise instead. */
+    export const Promise: PromiseConstructor;
+
+    export type IPromise<T> = Promise<T>;
+}
+
+declare namespace OfficeExtension {
+    /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */
+    class TrackedObjects {
+        /** Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. */
+        add(object: ClientObject): void;
+        /** Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created. */
+        add(objects: ClientObject[]): void;
+        /** Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect. */
+        remove(object: ClientObject): void;
+        /** Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect. */
+        remove(objects: ClientObject[]): void;
+    }
+}
+
+declare namespace OfficeExtension {
+    export class EventHandlers<T> {
+        constructor(context: ClientRequestContext, parentObject: ClientObject, name: string, eventInfo: EventInfo<T>);
+        add(handler: (args: T) => Promise<any>): EventHandlerResult<T>;
+        remove(handler: (args: T) => Promise<any>): void;
+    }
+
+    export class EventHandlerResult<T> {
+        constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => Promise<any>);
+        /** The request context associated with the object */
+        context: ClientRequestContext;
+        remove(): void;
+    }
+
+    export interface EventInfo<T> {
+        registerFunc: (callback: (args: any) => void) => Promise<any>;
+        unregisterFunc: (callback: (args: any) => void) => Promise<any>;
+        eventArgsTransformFunc: (args: any) => Promise<T>;
+    }
+}
+declare namespace OfficeExtension {
     /**
-     *
-     * Represents a mention within a comment.
-     *
-     * [Api set: Comments 1.1]
-     */
-    interface CommentMention {
-        /**
-         *
-         * The email address of the person mentioned.
-         *
-         * [Api set: Comments 1.1]
-         */
-        email: string;
-        /**
-         *
-         * The name of the person mentioned.
-         *
-         * [Api set: Comments 1.1]
-         */
-        name: string;
-        /**
-         *
-         * The text displayed for the mention.
-         *
-         * [Api set: Comments 1.1]
-         */
-        text: string;
-    }
-    /**
-     *
-     * Represents a collection of comments, either replies to a specific comment thread, or all comments in the document or part of the document.
-     *
-     * [Api set: Comments 1.1]
-     */
-    class CommentCollection extends OfficeExtension.ClientObject {
-        /** Gets the loaded child items in this collection. */
-        readonly items: OfficeCore.Comment[];
-        /**
-         *
-         * Returns the number of comments in the collection. Read-only.
-         *
-         * [Api set: Comments 1.1]
-         */
-        getCount(): OfficeExtension.ClientResult<number>;
-        /**
-         *
-         * Gets a comment object using its id.
-         *
-         * [Api set: Comments 1.1]
-         */
-        getItem(id: string): OfficeCore.Comment;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         */
-        load(option?: OfficeCore.Interfaces.CommentCollectionLoadOptions & OfficeCore.Interfaces.CollectionLoadOptions): OfficeCore.CommentCollection;
-        load(option?: string | string[]): OfficeCore.CommentCollection;
-        load(option?: OfficeExtension.LoadOption): OfficeCore.CommentCollection;
-        toJSON(): OfficeCore.Interfaces.CommentCollectionData;
-    }
-    /**
-     *
-     * Represents a markup (rich) text format.
-     *
-     * [Api set: Comments 1.1]
-     */
-    enum CommentTextFormat {
-        plain = "Plain",
-        markdown = "Markdown",
-        delta = "Delta",
-    }
-    enum ErrorCodes {
-        apiNotAvailable = "ApiNotAvailable",
-        clientError = "ClientError",
-        invalidArgument = "InvalidArgument",
-        invalidGrant = "InvalidGrant",
-        invalidResourceUrl = "InvalidResourceUrl",
-        serverError = "ServerError",
-        unsupportedUserIdentity = "UnsupportedUserIdentity",
-        userNotSignedIn = "UserNotSignedIn",
-    }
-    module Interfaces {
-        interface CollectionLoadOptions {
-            $top?: number;
-            $skip?: number;
-        }
-        /** An interface for updating data on the Comment object, for use in "comment.set({ ... })". */
-        interface CommentUpdateData {
-            /**
-             *
-             * Gets or sets whether this comment is resolved.
-             *
-             * [Api set: Comments 1.1]
-             */
-            resolved?: boolean;
-            /**
-             *
-             * Gets or sets the comment's plain text, without formatting.
-             *
-             * [Api set: Comments 1.1]
-             */
-            text?: string;
-        }
-        /** An interface for updating data on the CommentCollection object, for use in "commentCollection.set({ ... })". */
-        interface CommentCollectionUpdateData {
-            items?: OfficeCore.Interfaces.CommentData[];
-        }
-        /** An interface describing the data returned by calling "comment.toJSON()". */
-        interface CommentData {
-            /**
-            *
-            * Gets this comment's parent. If this is a root comment, throws.
-            *
-            * [Api set: Comments 1.1]
-            */
-            parent?: OfficeCore.Interfaces.CommentData;
-            /**
-            *
-            * Gets this comment's parent. If this is a root comment, returns a null object.
-            *
-            * [Api set: Comments 1.1]
-            */
-            parentOrNullObject?: OfficeCore.Interfaces.CommentData;
-            /**
-            *
-            * Gets the replies to this comment. If this is not a root comment, returns an empty collection.
-            *
-            * [Api set: Comments 1.1]
-            */
-            replies?: OfficeCore.Interfaces.CommentData[];
-            /**
-             *
-             * Gets an object representing the comment's author. Read-only.
-             *
-             * [Api set: Comments 1.1]
-             */
-            author?: OfficeCore.CommentAuthor;
-            /**
-             *
-             * Gets when the comment was created. Read-only.
-             *
-             * [Api set: Comments 1.1]
-             */
-            created?: Date;
-            /**
-             *
-             * Returns a value that uniquely identifies the comment in a given document. Read-only.
-             *
-             * [Api set: Comments 1.1]
-             */
-            id?: string;
-            /**
-             *
-             * Gets the level of the comment: 0 if it is a root comment, or 1 if it is a reply. Read-only.
-             *
-             * [Api set: Comments 1.1]
-             */
-            level?: number;
-            /**
-             *
-             * Gets the comment's mentions.
-             *
-             * [Api set: Comments 1.1]
-             */
-            mentions?: OfficeCore.CommentMention[];
-            /**
-             *
-             * Gets or sets whether this comment is resolved.
-             *
-             * [Api set: Comments 1.1]
-             */
-            resolved?: boolean;
-            /**
-             *
-             * Gets or sets the comment's plain text, without formatting.
-             *
-             * [Api set: Comments 1.1]
-             */
-            text?: string;
-        }
-        /** An interface describing the data returned by calling "commentCollection.toJSON()". */
-        interface CommentCollectionData {
-            items?: OfficeCore.Interfaces.CommentData[];
-        }
-        /**
-         *
-         * Represents a single comment in the document.
-         *
-         * [Api set: Comments 1.1]
-         */
-        interface CommentLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * Gets this comment's parent. If this is a root comment, throws.
-            *
-            * [Api set: Comments 1.1]
-            */
-            parent?: OfficeCore.Interfaces.CommentLoadOptions;
-            /**
-            *
-            * Gets this comment's parent. If this is a root comment, returns a null object.
-            *
-            * [Api set: Comments 1.1]
-            */
-            parentOrNullObject?: OfficeCore.Interfaces.CommentLoadOptions;
-            /**
-             *
-             * Gets an object representing the comment's author. Read-only.
-             *
-             * [Api set: Comments 1.1]
-             */
-            author?: boolean;
-            /**
-             *
-             * Gets when the comment was created. Read-only.
-             *
-             * [Api set: Comments 1.1]
-             */
-            created?: boolean;
-            /**
-             *
-             * Returns a value that uniquely identifies the comment in a given document. Read-only.
-             *
-             * [Api set: Comments 1.1]
-             */
-            id?: boolean;
-            /**
-             *
-             * Gets the level of the comment: 0 if it is a root comment, or 1 if it is a reply. Read-only.
-             *
-             * [Api set: Comments 1.1]
-             */
-            level?: boolean;
-            /**
-             *
-             * Gets the comment's mentions.
-             *
-             * [Api set: Comments 1.1]
-             */
-            mentions?: boolean;
-            /**
-             *
-             * Gets or sets whether this comment is resolved.
-             *
-             * [Api set: Comments 1.1]
-             */
-            resolved?: boolean;
-            /**
-             *
-             * Gets or sets the comment's plain text, without formatting.
-             *
-             * [Api set: Comments 1.1]
-             */
-            text?: boolean;
-        }
-        /**
-         *
-         * Represents a collection of comments, either replies to a specific comment thread, or all comments in the document or part of the document.
-         *
-         * [Api set: Comments 1.1]
-         */
-        interface CommentCollectionLoadOptions {
-            $all?: boolean;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets this comment's parent. If this is a root comment, throws.
-            *
-            * [Api set: Comments 1.1]
-            */
-            parent?: OfficeCore.Interfaces.CommentLoadOptions;
-            /**
-            *
-            * For EACH ITEM in the collection: Gets this comment's parent. If this is a root comment, returns a null object.
-            *
-            * [Api set: Comments 1.1]
-            */
-            parentOrNullObject?: OfficeCore.Interfaces.CommentLoadOptions;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets an object representing the comment's author. Read-only.
-             *
-             * [Api set: Comments 1.1]
-             */
-            author?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets when the comment was created. Read-only.
-             *
-             * [Api set: Comments 1.1]
-             */
-            created?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Returns a value that uniquely identifies the comment in a given document. Read-only.
-             *
-             * [Api set: Comments 1.1]
-             */
-            id?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the level of the comment: 0 if it is a root comment, or 1 if it is a reply. Read-only.
-             *
-             * [Api set: Comments 1.1]
-             */
-            level?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets the comment's mentions.
-             *
-             * [Api set: Comments 1.1]
-             */
-            mentions?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets whether this comment is resolved.
-             *
-             * [Api set: Comments 1.1]
-             */
-            resolved?: boolean;
-            /**
-             *
-             * For EACH ITEM in the collection: Gets or sets the comment's plain text, without formatting.
-             *
-             * [Api set: Comments 1.1]
-             */
-            text?: boolean;
-        }
+    * Request URL and headers
+    */
+    interface RequestUrlAndHeaderInfo {
+        /** Request URL */
+        url: string;
+        /** Request headers */
+        headers?: {
+            [name: string]: string;
+        };
     }
 }
 
@@ -3360,73 +2826,8 @@ declare namespace OfficeCore {
 
 
 declare namespace OfficeCore {
-    /**
-     * [Api set: Experimentation 1.1 (PREVIEW) (PREVIEW)]
-     */
-    class FlightingService extends OfficeExtension.ClientObject {
-        getFeature(featureName: string, type: string, defaultValue: number | boolean | string, possibleValues?: Array<number> | Array<string> | Array<boolean> | Array<ScopedValue>): OfficeCore.ABType;
-        getFeatureGate(featureName: string, scope?: string): OfficeCore.ABType;
-        resetOverride(featureName: string): void;
-        setOverride(featureName: string, type: string, value: number | boolean | string): void;
-        /**
-         * Create a new instance of OfficeCore.FlightingService object
-         */
-        static newObject(context: OfficeExtension.ClientRequestContext): OfficeCore.FlightingService;
-        toJSON(): {};
-    }
-    /**
-     *
-     * Provides information about the scoped value.
-     *
-     * [Api set: Experimentation 1.1 (PREVIEW) (PREVIEW)]
-     */
-    interface ScopedValue {
-        /**
-         *
-         * Gets the scope.
-         *
-         * [Api set: Experimentation 1.1 (PREVIEW) (PREVIEW)]
-         */
-        scope: string;
-        /**
-         *
-         * Gets the value.
-         *
-         * [Api set: Experimentation 1.1 (PREVIEW) (PREVIEW)]
-         */
-        value: string | number | boolean;
-    }
-    /**
-     * [Api set: Experimentation 1.1 (PREVIEW) (PREVIEW)]
-     */
-    class ABType extends OfficeExtension.ClientObject {
-        readonly value: string | number | boolean;
-        /**
-         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-         */
-        load(option?: string | string[] | OfficeExtension.LoadOption): OfficeCore.ABType;
-        toJSON(): {
-            "value": string | number | boolean;
-        };
-    }
-    /**
-     * [Api set: Experimentation 1.1 (PREVIEW) (PREVIEW)]
-     */
-    namespace FeatureType {
-        var boolean: string;
-        var integer: string;
-        var string: string;
-    }
-    namespace ExperimentErrorCodes {
-        var generalException: string;
-    }
-    module Interfaces {
-    }
-}
-declare namespace OfficeCore {
     class RequestContext extends OfficeExtension.ClientRequestContext {
         constructor(url?: string | OfficeExtension.RequestUrlAndHeaderInfo | any);
-        readonly flightingService: FlightingService;
     }
 }
 
@@ -6514,7 +5915,7 @@ declare namespace Excel {
     /**
      *
      * Represents a collection of all the rows that are part of the table.
-            
+
             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
             a TableRow object represent the physical location of the table row, but not the data.
             That is, if the data is sorted or if new rows are added, a table row will continue
@@ -6535,7 +5936,7 @@ declare namespace Excel {
         /**
          *
          * Adds one or more rows to the table. The return object will be the top of the newly added row(s).
-            
+
             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
             a TableRow object represent the physical location of the table row, but not the data.
             That is, if the data is sorted or if new rows are added, a table row will continue
@@ -6557,7 +5958,7 @@ declare namespace Excel {
         /**
          *
          * Gets a row based on its position in the collection.
-            
+
             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
             a TableRow object represent the physical location of the table row, but not the data.
             That is, if the data is sorted or if new rows are added, a table row will continue
@@ -6579,7 +5980,7 @@ declare namespace Excel {
     /**
      *
      * Represents a row in a table.
-            
+
             Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
             a TableRow object represent the physical location of the table row, but not the data.
             That is, if the data is sorted or if new rows are added, a table row will continue
@@ -9469,7 +8870,7 @@ declare namespace Excel {
          *
          * The first criterion used to filter data. Used as an operator in the case of "custom" filtering.
              For example ">50" for number greater than 50 or "=*s" for values ending in "s".
-            
+
              Used as a number in the case of top/bottom items/percents. E.g. "5" for the top 5 items if filterOn is set to "topItems"
          *
          * [Api set: ExcelApi 1.2]
@@ -11802,9 +11203,15 @@ declare namespace Excel {
         columnClustered = "ColumnClustered",
         columnStacked = "ColumnStacked",
         columnStacked100 = "ColumnStacked100",
+        _3DColumnClustered = "3DColumnClustered",
+        _3DColumnStacked = "3DColumnStacked",
+        _3DColumnStacked100 = "3DColumnStacked100",
         barClustered = "BarClustered",
         barStacked = "BarStacked",
         barStacked100 = "BarStacked100",
+        _3DBarClustered = "3DBarClustered",
+        _3DBarStacked = "3DBarStacked",
+        _3DBarStacked100 = "3DBarStacked100",
         lineStacked = "LineStacked",
         lineStacked100 = "LineStacked100",
         lineMarkers = "LineMarkers",
@@ -11812,6 +11219,7 @@ declare namespace Excel {
         lineMarkersStacked100 = "LineMarkersStacked100",
         pieOfPie = "PieOfPie",
         pieExploded = "PieExploded",
+        _3DPieExploded = "3DPieExploded",
         barOfPie = "BarOfPie",
         xyscatterSmooth = "XYScatterSmooth",
         xyscatterSmoothNoMarkers = "XYScatterSmoothNoMarkers",
@@ -11819,6 +11227,8 @@ declare namespace Excel {
         xyscatterLinesNoMarkers = "XYScatterLinesNoMarkers",
         areaStacked = "AreaStacked",
         areaStacked100 = "AreaStacked100",
+        _3DAreaStacked = "3DAreaStacked",
+        _3DAreaStacked100 = "3DAreaStacked100",
         doughnutExploded = "DoughnutExploded",
         radarMarkers = "RadarMarkers",
         radarFilled = "RadarFilled",
@@ -11853,13 +11263,18 @@ declare namespace Excel {
         pyramidBarStacked = "PyramidBarStacked",
         pyramidBarStacked100 = "PyramidBarStacked100",
         pyramidCol = "PyramidCol",
+        _3DColumn = "3DColumn",
         line = "Line",
+        _3DLine = "3DLine",
+        _3DPie = "3DPie",
         pie = "Pie",
         xyscatter = "XYScatter",
+        _3DArea = "3DArea",
         area = "Area",
         doughnut = "Doughnut",
         radar = "Radar",
     }
+
     /**
      * [Api set: ExcelApi 1.1]
      */
@@ -12411,41 +11826,6 @@ declare namespace Excel {
         bottom = "Bottom",
         justify = "Justify",
         distributed = "Distributed",
-    }
-    /**
-     * [Api set: ExcelApi 1.7]
-     */
-    const enum MessageCategory {
-        none = 0,
-        customFunction = 1,
-        event = 65536,
-    }
-    /**
-     * [Api set: ExcelApi 1.7]
-     */
-    const enum MessageType {
-        none = 0,
-        testEvent = 1,
-        test1Event = 2,
-        worksheetDataChangedEvent = 10,
-        worksheetActivatedEvent = 11,
-        worksheetDeactivatedEvent = 12,
-        worksheetAddedEvent = 13,
-        worksheetSelectionChangedEvent = 14,
-        worksheetDeletedEvent = 15,
-        worksheetCalculatedEvent = 16,
-        chartAddedEvent = 50,
-        chartActivatedEvent = 51,
-        chartDeactivatedEvent = 52,
-        chartDeletedEvent = 53,
-        tableSelectionChangedEvent = 100,
-        tableDataChangedEvent = 101,
-        customFunctionExecutionBeginEvent = 200,
-        customFunctionExecutionEndEvent = 201,
-        invocationMessage = 1000,
-        cancellationMessage = 1001,
-        metadataMessage = 1002,
-        visualSelectionChangedEvent = 2000,
     }
     /**
      * [Api set: ExcelApi 1.7]
@@ -16610,7 +15990,7 @@ declare namespace Excel {
         unsupportedOperation = "UnsupportedOperation",
         invalidOperationInCellEditMode = "InvalidOperationInCellEditMode",
     }
-    module Interfaces {
+    namespace Interfaces {
         interface CollectionLoadOptions {
             $top?: number;
             $skip?: number;
@@ -23216,7 +22596,7 @@ declare namespace Excel {
         /**
          *
          * Represents a collection of all the rows that are part of the table.
-                
+
                 Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
                 a TableRow object represent the physical location of the table row, but not the data.
                 That is, if the data is sorted or if new rows are added, a table row will continue
@@ -23244,7 +22624,7 @@ declare namespace Excel {
         /**
          *
          * Represents a row in a table.
-                
+
                 Note that unlike Ranges or Columns, which will adjust if new rows/columns are added before them,
                 a TableRow object represent the physical location of the table row, but not the data.
                 That is, if the data is sorted or if new rows are added, a table row will continue
@@ -32033,7 +31413,7 @@ declare namespace Word {
         itemNotFound = "ItemNotFound",
         notImplemented = "NotImplemented",
     }
-    module Interfaces {
+    namespace Interfaces {
         interface CollectionLoadOptions {
             $top?: number;
             $skip?: number;
@@ -36922,7 +36302,7 @@ declare namespace Word {
         }
     }
 }
-declare module Word {
+declare namespace Word {
     /**
      * The RequestContext object facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the request context is required to get access to the Word object model from the add-in.
      */
@@ -36935,19 +36315,19 @@ declare module Word {
      * Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
-    function run<T>(batch: (context: Word.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    function run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param object - A previously-created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
-    function run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    function run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Word object model, using the RequestContext of previously-created API objects.
      * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
      */
-    function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
 }
 
 
@@ -40040,7 +39420,7 @@ declare namespace OneNote {
     namespace ErrorCodes {
         var generalException: string;
     }
-    module Interfaces {
+    namespace Interfaces {
         interface CollectionLoadOptions {
             $top?: number;
             $skip?: number;
@@ -42769,7 +42149,7 @@ declare namespace OneNote {
         }
     }
 }
-declare module OneNote {
+declare namespace OneNote {
     class RequestContext extends OfficeExtension.ClientRequestContext {
         constructor(url?: string);
         readonly application: Application;
@@ -42778,19 +42158,19 @@ declare module OneNote {
      * Executes a batch script that performs actions on the OneNote object model, using a new request context. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the OneNote application. Since the Office add-in and the OneNote application run in two different processes, the request context is required to get access to the OneNote object model from the add-in.
      */
-    function run<T>(batch: (context: OneNote.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    function run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the OneNote object model, using the request context of a previously-created API object.
      * @param object - A previously-created API object. The batch will use the same request context as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      */
-    function run<T>(object: OfficeExtension.ClientObject, batch: (context: OneNote.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    function run<T>(object: OfficeExtension.ClientObject, batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the OneNote object model, using the request context of previously-created API objects.
      * @param object - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared request context, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      */
-    function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;
 }
 
 
@@ -43998,7 +43378,7 @@ declare namespace Visio {
         var notImplemented: string;
         var unsupportedOperation: string;
     }
-    module Interfaces {
+    namespace Interfaces {
         interface CollectionLoadOptions {
             $top?: number;
             $skip?: number;
@@ -45014,7 +44394,7 @@ declare namespace Visio {
         }
     }
 }
-declare module Visio {
+declare namespace Visio {
     /**
      * The RequestContext object facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
      */
@@ -45026,25 +44406,25 @@ declare module Visio {
      * Executes a batch script that performs actions on the Visio object model, using a new request context. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.
      */
-    function run<T>(batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    function run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Visio object model, using the request context of a previously-created API object.
      * @param object - A previously-created API object. The batch will use the same request context as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      */
-    function run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    function run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Visio object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param contextObject - A previously-created Visio.RequestContext. This context will get re-used by the batch function (instead of having a new context created). This means that the batch will be able to pick up changes made to existing API objects, if those objects were derived from this same context.
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the RequestContext is required to get access to the Visio object model from the add-in.
      */
-    function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    function run<T>(contextObject: OfficeExtension.ClientRequestContext, batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Visio object model, using the request context of previously-created API objects.
      * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared request context, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in a Visio.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      */
-    function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+    function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;
 }
 
 

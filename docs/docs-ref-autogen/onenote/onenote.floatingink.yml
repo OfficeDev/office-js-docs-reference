@@ -18,6 +18,9 @@ items:
       - onenote.OneNote.FloatingInk.inkStrokes
       - onenote.OneNote.FloatingInk.load
       - onenote.OneNote.FloatingInk.pageContent
+      - onenote.OneNote.FloatingInk.toJSON
+      - onenote.OneNote.FloatingInk.track
+      - onenote.OneNote.FloatingInk.untrack
   - uid: onenote.OneNote.FloatingInk.id
     summary: |-
       Gets the ID of the FloatingInk object. Read-only.
@@ -29,7 +32,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type:
           - string
@@ -44,7 +47,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'inkStrokes: OneNote.InkStrokeCollection;'
+      content: 'readonly inkStrokes: OneNote.InkStrokeCollection;'
       return:
         type:
           - OneNote.InkStrokeCollection
@@ -58,7 +61,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.FloatingInk;'
+      content: 'load(option?: OneNote.Interfaces.FloatingInkLoadOptions): OneNote.FloatingInk;'
       return:
         type:
           - OneNote.FloatingInk
@@ -67,7 +70,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.FloatingInkLoadOptions
   - uid: onenote.OneNote.FloatingInk.pageContent
     summary: |-
       Gets the PageContent parent of the FloatingInk object. Read-only.
@@ -79,7 +82,54 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'pageContent: OneNote.PageContent;'
+      content: 'readonly pageContent: OneNote.PageContent;'
       return:
         type:
           - OneNote.PageContent
+  - uid: onenote.OneNote.FloatingInk.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.FloatingInk.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.FloatingInkData;'
+      return:
+        type:
+          - OneNote.Interfaces.FloatingInkData
+        description: ''
+  - uid: onenote.OneNote.FloatingInk.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.FloatingInk.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.FloatingInk;'
+      return:
+        type:
+          - OneNote.FloatingInk
+        description: ''
+  - uid: onenote.OneNote.FloatingInk.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.FloatingInk.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.FloatingInk;'
+      return:
+        type:
+          - OneNote.FloatingInk
+        description: ''

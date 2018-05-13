@@ -33,7 +33,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'application: Application;'
+      content: 'readonly application: Application;'
       return:
         type:
           - Application

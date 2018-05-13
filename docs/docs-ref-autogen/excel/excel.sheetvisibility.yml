@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.SheetVisibility
+    summary: '\[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]'
+    name: Excel.SheetVisibility
+    fullName: excel.Excel.SheetVisibility
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.SheetVisibility.hidden
+      - excel.Excel.SheetVisibility.veryHidden
+      - excel.Excel.SheetVisibility.visible
+  - uid: excel.Excel.SheetVisibility.hidden
+    name: hidden
+    fullName: excel.Excel.SheetVisibility.hidden
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Hidden"'
+  - uid: excel.Excel.SheetVisibility.veryHidden
+    name: veryHidden
+    fullName: excel.Excel.SheetVisibility.veryHidden
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"VeryHidden"'
+  - uid: excel.Excel.SheetVisibility.visible
+    name: visible
+    fullName: excel.Excel.SheetVisibility.visible
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Visible"'

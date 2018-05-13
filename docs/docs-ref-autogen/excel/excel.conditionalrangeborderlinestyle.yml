@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ConditionalRangeBorderLineStyle
+    summary: '\[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]'
+    name: Excel.ConditionalRangeBorderLineStyle
+    fullName: excel.Excel.ConditionalRangeBorderLineStyle
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ConditionalRangeBorderLineStyle.continuous
+      - excel.Excel.ConditionalRangeBorderLineStyle.dash
+      - excel.Excel.ConditionalRangeBorderLineStyle.dashDot
+      - excel.Excel.ConditionalRangeBorderLineStyle.dashDotDot
+      - excel.Excel.ConditionalRangeBorderLineStyle.dot
+      - excel.Excel.ConditionalRangeBorderLineStyle.none
+  - uid: excel.Excel.ConditionalRangeBorderLineStyle.continuous
+    name: continuous
+    fullName: excel.Excel.ConditionalRangeBorderLineStyle.continuous
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Continuous"'
+  - uid: excel.Excel.ConditionalRangeBorderLineStyle.dash
+    name: dash
+    fullName: excel.Excel.ConditionalRangeBorderLineStyle.dash
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dash"'
+  - uid: excel.Excel.ConditionalRangeBorderLineStyle.dashDot
+    name: dashDot
+    fullName: excel.Excel.ConditionalRangeBorderLineStyle.dashDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashDot"'
+  - uid: excel.Excel.ConditionalRangeBorderLineStyle.dashDotDot
+    name: dashDotDot
+    fullName: excel.Excel.ConditionalRangeBorderLineStyle.dashDotDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashDotDot"'
+  - uid: excel.Excel.ConditionalRangeBorderLineStyle.dot
+    name: dot
+    fullName: excel.Excel.ConditionalRangeBorderLineStyle.dot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dot"'
+  - uid: excel.Excel.ConditionalRangeBorderLineStyle.none
+    name: none
+    fullName: excel.Excel.ConditionalRangeBorderLineStyle.none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'

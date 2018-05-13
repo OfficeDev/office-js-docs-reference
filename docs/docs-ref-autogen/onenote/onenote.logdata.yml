@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.LogData
+    summary: |-
+      Account information.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: OneNote.LogData
+    fullName: onenote.OneNote.LogData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.LogData.isNonPII
+      - onenote.OneNote.LogData.tag
+      - onenote.OneNote.LogData.value
+  - uid: onenote.OneNote.LogData.isNonPII
+    summary: |-
+      // None PII
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: isNonPII
+    fullName: onenote.OneNote.LogData.isNonPII
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isNonPII: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.LogData.tag
+    summary: |-
+      // data tag
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: tag
+    fullName: onenote.OneNote.LogData.tag
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tag: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.LogData.value
+    summary: |-
+      // data value
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: value
+    fullName: onenote.OneNote.LogData.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: string;'
+      return:
+        type:
+          - string

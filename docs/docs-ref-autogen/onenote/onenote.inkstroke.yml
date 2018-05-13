@@ -17,6 +17,9 @@ items:
       - onenote.OneNote.InkStroke.floatingInk
       - onenote.OneNote.InkStroke.id
       - onenote.OneNote.InkStroke.load
+      - onenote.OneNote.InkStroke.toJSON
+      - onenote.OneNote.InkStroke.track
+      - onenote.OneNote.InkStroke.untrack
   - uid: onenote.OneNote.InkStroke.floatingInk
     summary: |-
       Gets the ID of the InkStroke object. Read-only.
@@ -28,7 +31,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'floatingInk: OneNote.FloatingInk;'
+      content: 'readonly floatingInk: OneNote.FloatingInk;'
       return:
         type:
           - OneNote.FloatingInk
@@ -43,7 +46,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type:
           - string
@@ -57,7 +60,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.InkStroke;'
+      content: 'load(option?: OneNote.Interfaces.InkStrokeLoadOptions): OneNote.InkStroke;'
       return:
         type:
           - OneNote.InkStroke
@@ -66,4 +69,51 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.InkStrokeLoadOptions
+  - uid: onenote.OneNote.InkStroke.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.InkStroke.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.InkStrokeData;'
+      return:
+        type:
+          - OneNote.Interfaces.InkStrokeData
+        description: ''
+  - uid: onenote.OneNote.InkStroke.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.InkStroke.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.InkStroke;'
+      return:
+        type:
+          - OneNote.InkStroke
+        description: ''
+  - uid: onenote.OneNote.InkStroke.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.InkStroke.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.InkStroke;'
+      return:
+        type:
+          - OneNote.InkStroke
+        description: ''

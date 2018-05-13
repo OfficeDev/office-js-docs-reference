@@ -16,9 +16,11 @@ items:
     children:
       - excel.Excel.ChartLineFormat.clear
       - excel.Excel.ChartLineFormat.color
+      - excel.Excel.ChartLineFormat.lineStyle
       - excel.Excel.ChartLineFormat.load
       - excel.Excel.ChartLineFormat.set
       - excel.Excel.ChartLineFormat.toJSON
+      - excel.Excel.ChartLineFormat.weight
   - uid: excel.Excel.ChartLineFormat.clear
     summary: |-
       Clear the line format of a chart element.
@@ -69,6 +71,25 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.ChartLineFormat.lineStyle
+    summary: |-
+      Represents the line style. See Excel.ChartLineStyle for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: lineStyle
+    fullName: excel.Excel.ChartLineFormat.lineStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        lineStyle: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" |
+        "Grey50" | "Grey75" | "Automatic" | "RoundDot";
+      return:
+        type:
+          - >-
+            Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" |
+            "Grey50" | "Grey75" | "Automatic" | "RoundDot"
   - uid: excel.Excel.ChartLineFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -79,7 +100,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartLineFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartLineFormatLoadOptions): Excel.ChartLineFormat;'
       return:
         type:
           - Excel.ChartLineFormat
@@ -88,7 +109,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ChartLineFormatLoadOptions
   - uid: excel.Excel.ChartLineFormat.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -97,10 +118,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ChartLineFormatUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.ChartLineFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -113,13 +131,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartLineFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartLineFormat.toJSON
@@ -127,11 +139,23 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ChartLineFormatData;'
       return:
         type:
-          - |-
-            {
-                        "color": string;
-                    }
+          - Excel.Interfaces.ChartLineFormatData
         description: ''
+  - uid: excel.Excel.ChartLineFormat.weight
+    summary: |-
+      Represents weight of the line, in points.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: weight
+    fullName: excel.Excel.ChartLineFormat.weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight: number;'
+      return:
+        type:
+          - number

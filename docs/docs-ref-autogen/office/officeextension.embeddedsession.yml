@@ -35,8 +35,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'public init(): IPromise<any>;'
+      content: 'public init(): Promise<any>;'
       return:
         type:
-          - IPromise<any>
+          - Promise<any>
         description: ''

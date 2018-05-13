@@ -14,12 +14,40 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartSeriesCollection.add
       - excel.Excel.ChartSeriesCollection.count
       - excel.Excel.ChartSeriesCollection.getCount
       - excel.Excel.ChartSeriesCollection.getItemAt
       - excel.Excel.ChartSeriesCollection.items
       - excel.Excel.ChartSeriesCollection.load
       - excel.Excel.ChartSeriesCollection.toJSON
+  - uid: excel.Excel.ChartSeriesCollection.add
+    summary: >-
+      Add a new series to the collection. The new added series is not visible until set values/x axis values/bubble
+      sizes for it (depending on chart type).
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: 'add(name, index)'
+    fullName: excel.Excel.ChartSeriesCollection.add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name?: string, index?: number): Excel.ChartSeries;'
+      return:
+        type:
+          - Excel.ChartSeries
+        description: ''
+      parameters:
+        - id: name
+          description: Name of the series.
+          type:
+            - string
+        - id: index
+          description: Index value of the series to be added. Zero-indexed.
+          type:
+            - number
   - uid: excel.Excel.ChartSeriesCollection.count
     summary: |-
       Returns the number of series in the collection. Read-only.
@@ -53,7 +81,7 @@ items:
         description: ''
   - uid: excel.Excel.ChartSeriesCollection.getItemAt
     summary: |-
-      Retrieves a series based on its position in the collection
+      Retrieves a series based on its position in the collection.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getItemAt(index)
@@ -99,10 +127,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: Array<Excel.ChartSeries>;'
+      content: 'readonly items: Excel.ChartSeries[];'
       return:
         type:
-          - Array<Excel.ChartSeries>
+          - 'Excel.ChartSeries[]'
   - uid: excel.Excel.ChartSeriesCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -113,7 +141,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartSeriesCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ChartSeriesCollection;
       return:
         type:
           - Excel.ChartSeriesCollection
@@ -122,7 +152,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.ChartSeriesCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartSeriesCollection.toJSON
@@ -130,11 +160,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ChartSeriesCollectionData;'
       return:
         type:
-          - |-
-            {
-                        "count": number;
-                    }
+          - Excel.Interfaces.ChartSeriesCollectionData
         description: ''

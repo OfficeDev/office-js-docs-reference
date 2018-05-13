@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.WorkbookProtection
+    summary: |-
+      Represents the protection of a workbook object.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: Excel.WorkbookProtection
+    fullName: excel.Excel.WorkbookProtection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.WorkbookProtection.protect
+      - excel.Excel.WorkbookProtection.toJSON
+      - excel.Excel.WorkbookProtection.unprotect
+  - uid: excel.Excel.WorkbookProtection.protect
+    summary: |-
+      Protects a workbook. Fails if the workbook has been protected.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: protect(password)
+    fullName: excel.Excel.WorkbookProtection.protect
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'protect(password?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: password
+          description: workbook protection password.
+          type:
+            - string
+  - uid: excel.Excel.WorkbookProtection.toJSON
+    name: toJSON()
+    fullName: excel.Excel.WorkbookProtection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - |-
+            {
+                        [key: string]: string;
+                    }
+        description: ''
+  - uid: excel.Excel.WorkbookProtection.unprotect
+    summary: |-
+      Unprotects a workbook.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: unprotect(password)
+    fullName: excel.Excel.WorkbookProtection.unprotect
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'unprotect(password?: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: password
+          description: workbook protection password.
+          type:
+            - string
