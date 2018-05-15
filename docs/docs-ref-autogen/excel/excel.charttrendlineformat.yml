@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartTrendlineFormat
+    summary: |-
+      Represents the format properties for chart trendline.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: Excel.ChartTrendlineFormat
+    fullName: excel.Excel.ChartTrendlineFormat
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartTrendlineFormat.line
+      - excel.Excel.ChartTrendlineFormat.load
+      - excel.Excel.ChartTrendlineFormat.set
+      - excel.Excel.ChartTrendlineFormat.toJSON
+  - uid: excel.Excel.ChartTrendlineFormat.line
+    summary: |-
+      Represents chart line formatting.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: line
+    fullName: excel.Excel.ChartTrendlineFormat.line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly line: Excel.ChartLineFormat;'
+      return:
+        type:
+          - Excel.ChartLineFormat
+  - uid: excel.Excel.ChartTrendlineFormat.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ChartTrendlineFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.ChartTrendlineFormatLoadOptions): Excel.ChartTrendlineFormat;'
+      return:
+        type:
+          - Excel.ChartTrendlineFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.ChartTrendlineFormatLoadOptions
+  - uid: excel.Excel.ChartTrendlineFormat.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartTrendlineFormat.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartTrendlineFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartTrendlineFormatUpdateData
+        - id: options
+          description: ''
+          type:
+            - OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ChartTrendlineFormat.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartTrendlineFormat.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartTrendlineFormatData;'
+      return:
+        type:
+          - Excel.Interfaces.ChartTrendlineFormatData
+        description: ''

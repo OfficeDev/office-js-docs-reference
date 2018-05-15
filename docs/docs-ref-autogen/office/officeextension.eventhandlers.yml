@@ -44,7 +44,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'add(handler: (args: T) => IPromise<any>): EventHandlerResult<T>;'
+      content: 'add(handler: (args: T) => Promise<any>): EventHandlerResult<T>;'
       return:
         type:
           - EventHandlerResult<T>
@@ -53,7 +53,7 @@ items:
         - id: handler
           description: ''
           type:
-            - '(args: T) => IPromise<any>'
+            - '(args: T) => Promise<any>'
   - uid: office.OfficeExtension.EventHandlers.remove
     name: remove(handler)
     fullName: office.OfficeExtension.EventHandlers.remove
@@ -61,7 +61,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'remove(handler: (args: T) => IPromise<any>): void;'
+      content: 'remove(handler: (args: T) => Promise<any>): void;'
       return:
         type:
           - void
@@ -70,4 +70,4 @@ items:
         - id: handler
           description: ''
           type:
-            - '(args: T) => IPromise<any>'
+            - '(args: T) => Promise<any>'

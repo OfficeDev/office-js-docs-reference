@@ -33,7 +33,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'add(key: string, value: string | number | boolean | Array<any> | any): Excel.Setting;'
+      content: 'add(key: string, value: string | number | boolean | Date | Array<any> | any): Excel.Setting;'
       return:
         type:
           - Excel.Setting
@@ -46,7 +46,7 @@ items:
         - id: value
           description: The Value for the new setting.
           type:
-            - string | number | boolean | Array<any> | any
+            - string | number | boolean | Date | Array<any> | any
   - uid: excel.Excel.SettingCollection.getCount
     summary: |-
       Gets the number of Settings in the collection.
@@ -113,10 +113,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: Array<Excel.Setting>;'
+      content: 'readonly items: Excel.Setting[];'
       return:
         type:
-          - Array<Excel.Setting>
+          - 'Excel.Setting[]'
   - uid: excel.Excel.SettingCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -127,7 +127,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.SettingCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.SettingCollection;
       return:
         type:
           - Excel.SettingCollection
@@ -136,7 +138,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.SettingCollection.onSettingsChanged
     summary: |-
       Occurs when the Settings in the document are changed.
@@ -159,8 +161,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.SettingCollectionData;'
       return:
         type:
-          - '{}'
+          - Excel.Interfaces.SettingCollectionData
         description: ''

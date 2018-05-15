@@ -47,7 +47,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.TableBorder;'
+      content: 'load(option?: Word.Interfaces.TableBorderLoadOptions): Word.TableBorder;'
       return:
         type:
           - Word.TableBorder
@@ -56,7 +56,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Word.Interfaces.TableBorderLoadOptions
   - uid: word.Word.TableBorder.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -65,10 +65,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.TableBorderUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.TableBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -81,13 +78,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: word.Word.TableBorder.toJSON
     name: toJSON()
     fullName: word.Word.TableBorder.toJSON
@@ -95,15 +86,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Word.Interfaces.TableBorderData;'
       return:
         type:
-          - |-
-            {
-                        "color": string;
-                        "type": string;
-                        "width": number;
-                    }
+          - Word.Interfaces.TableBorderData
         description: ''
   - uid: word.Word.TableBorder.track
     summary: >-
@@ -134,10 +120,18 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'type: string;'
+      content: >-
+        type: Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" |
+        "Dot2Dashed" | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" |
+        "ThickThinMed" | "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" |
+        "DoubleWave" | "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave";
       return:
         type:
-          - string
+          - >-
+            Word.BorderType | "Mixed" | "None" | "Single" | "Double" | "Dotted" | "Dashed" | "DotDashed" | "Dot2Dashed"
+            | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" |
+            "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" |
+            "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave"
   - uid: word.Word.TableBorder.untrack
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for

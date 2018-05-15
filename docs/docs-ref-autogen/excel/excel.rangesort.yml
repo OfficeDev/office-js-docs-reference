@@ -28,8 +28,8 @@ items:
     type: method
     syntax:
       content: >-
-        apply(fields: Array<Excel.SortField>, matchCase?: boolean, hasHeaders?: boolean, orientation?: string, method?:
-        string): void;
+        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientation?: Excel.SortOrientation,
+        method?: Excel.SortMethod): void;
       return:
         type:
           - void
@@ -38,7 +38,7 @@ items:
         - id: fields
           description: The list of conditions to sort on.
           type:
-            - Array<Excel.SortField>
+            - 'Excel.SortField[]'
         - id: matchCase
           description: Whether to have the casing impact string ordering.
           type:
@@ -50,11 +50,11 @@ items:
         - id: orientation
           description: Whether the operation is sorting rows or columns.
           type:
-            - string
+            - Excel.SortOrientation
         - id: method
           description: The ordering method used for Chinese characters.
           type:
-            - string
+            - Excel.SortMethod
   - uid: excel.Excel.RangeSort.toJSON
     name: toJSON()
     fullName: excel.Excel.RangeSort.toJSON
@@ -65,5 +65,8 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - '{}'
+          - |-
+            {
+                        [key: string]: string;
+                    }
         description: ''

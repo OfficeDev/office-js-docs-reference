@@ -2913,9 +2913,9 @@
         },
         "run": {
           "kind": "function",
-          "signature": "export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;",
+          "signature": "export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;",
           "returnValue": {
-            "type": "OfficeExtension.IPromise<T>",
+            "type": "Promise<T>",
             "description": []
           },
           "parameters": {
@@ -2941,7 +2941,7 @@
               ],
               "isOptional": false,
               "isSpread": false,
-              "type": "(context: Visio.RequestContext) => OfficeExtension.IPromise<T>"
+              "type": "(context: Visio.RequestContext) => Promise<T>"
             }
           },
           "deprecatedMessage": [],

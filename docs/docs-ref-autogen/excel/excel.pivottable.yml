@@ -46,7 +46,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.PivotTable;'
+      content: 'load(option?: Excel.Interfaces.PivotTableLoadOptions): Excel.PivotTable;'
       return:
         type:
           - Excel.PivotTable
@@ -55,7 +55,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.PivotTableLoadOptions
   - uid: excel.Excel.PivotTable.name
     summary: |-
       Name of the PivotTable.
@@ -95,10 +95,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.PivotTableUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.PivotTableUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -111,13 +108,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.PivotTable.toJSON
     name: toJSON()
     fullName: excel.Excel.PivotTable.toJSON
@@ -125,18 +116,14 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.PivotTableData;'
       return:
         type:
-          - |-
-            {
-                        "id": string;
-                        "name": string;
-                    }
+          - Excel.Interfaces.PivotTableData
         description: ''
   - uid: excel.Excel.PivotTable.worksheet
     summary: |-
-      The worksheet containing the current PivotTable. Read-only.
+      The worksheet containing the current PivotTable.
 
       \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: worksheet

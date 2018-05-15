@@ -127,5 +127,8 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - '{}'
+          - |-
+            {
+                        [key: string]: string;
+                    }
         description: ''

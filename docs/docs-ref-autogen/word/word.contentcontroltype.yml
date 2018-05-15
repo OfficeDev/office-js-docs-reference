@@ -1,0 +1,150 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.ContentControlType
+    summary: |-
+      Specifies supported content control types and subtypes.
+
+      \[ [API set: WordApi](http://bing.com?type=word) \]
+    name: Word.ContentControlType
+    fullName: word.Word.ContentControlType
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.ContentControlType.buildingBlockGallery
+      - word.Word.ContentControlType.checkBox
+      - word.Word.ContentControlType.comboBox
+      - word.Word.ContentControlType.datePicker
+      - word.Word.ContentControlType.dropDownList
+      - word.Word.ContentControlType.picture
+      - word.Word.ContentControlType.plainText
+      - word.Word.ContentControlType.plainTextInline
+      - word.Word.ContentControlType.plainTextParagraph
+      - word.Word.ContentControlType.repeatingSection
+      - word.Word.ContentControlType.richText
+      - word.Word.ContentControlType.richTextInline
+      - word.Word.ContentControlType.richTextParagraphs
+      - word.Word.ContentControlType.richTextTable
+      - word.Word.ContentControlType.richTextTableCell
+      - word.Word.ContentControlType.richTextTableRow
+      - word.Word.ContentControlType.unknown
+  - uid: word.Word.ContentControlType.buildingBlockGallery
+    name: buildingBlockGallery
+    fullName: word.Word.ContentControlType.buildingBlockGallery
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BuildingBlockGallery"'
+  - uid: word.Word.ContentControlType.checkBox
+    name: checkBox
+    fullName: word.Word.ContentControlType.checkBox
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CheckBox"'
+  - uid: word.Word.ContentControlType.comboBox
+    name: comboBox
+    fullName: word.Word.ContentControlType.comboBox
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ComboBox"'
+  - uid: word.Word.ContentControlType.datePicker
+    name: datePicker
+    fullName: word.Word.ContentControlType.datePicker
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DatePicker"'
+  - uid: word.Word.ContentControlType.dropDownList
+    name: dropDownList
+    fullName: word.Word.ContentControlType.dropDownList
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DropDownList"'
+  - uid: word.Word.ContentControlType.picture
+    name: picture
+    fullName: word.Word.ContentControlType.picture
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Picture"'
+  - uid: word.Word.ContentControlType.plainText
+    name: plainText
+    fullName: word.Word.ContentControlType.plainText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PlainText"'
+  - uid: word.Word.ContentControlType.plainTextInline
+    name: plainTextInline
+    fullName: word.Word.ContentControlType.plainTextInline
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PlainTextInline"'
+  - uid: word.Word.ContentControlType.plainTextParagraph
+    name: plainTextParagraph
+    fullName: word.Word.ContentControlType.plainTextParagraph
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PlainTextParagraph"'
+  - uid: word.Word.ContentControlType.repeatingSection
+    name: repeatingSection
+    fullName: word.Word.ContentControlType.repeatingSection
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RepeatingSection"'
+  - uid: word.Word.ContentControlType.richText
+    name: richText
+    fullName: word.Word.ContentControlType.richText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RichText"'
+  - uid: word.Word.ContentControlType.richTextInline
+    name: richTextInline
+    fullName: word.Word.ContentControlType.richTextInline
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RichTextInline"'
+  - uid: word.Word.ContentControlType.richTextParagraphs
+    name: richTextParagraphs
+    fullName: word.Word.ContentControlType.richTextParagraphs
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RichTextParagraphs"'
+  - uid: word.Word.ContentControlType.richTextTable
+    name: richTextTable
+    fullName: word.Word.ContentControlType.richTextTable
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RichTextTable"'
+  - uid: word.Word.ContentControlType.richTextTableCell
+    name: richTextTableCell
+    fullName: word.Word.ContentControlType.richTextTableCell
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RichTextTableCell"'
+  - uid: word.Word.ContentControlType.richTextTableRow
+    name: richTextTableRow
+    fullName: word.Word.ContentControlType.richTextTableRow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RichTextTableRow"'
+  - uid: word.Word.ContentControlType.unknown
+    name: unknown
+    fullName: word.Word.ContentControlType.unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'

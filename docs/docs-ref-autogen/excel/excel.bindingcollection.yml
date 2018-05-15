@@ -36,7 +36,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'add(range: Excel.Range | string, bindingType: string, id: string): Excel.Binding;'
+      content: 'add(range: Excel.Range | string, bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
           - Excel.Binding
@@ -51,14 +51,16 @@ items:
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
-            - string
+            - Excel.BindingType
         - id: id
           description: Name of binding.
           type:
             - string
   - uid: excel.Excel.BindingCollection.addFromNamedItem
-    summary: |-
-      Add a new binding based on a named item in the workbook.
+    summary: >-
+      Add a new binding based on a named item in the workbook. If the named item references to multiple areas, the
+      "InvalidReference" error will be returned.
+
 
       \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: 'addFromNamedItem(name, bindingType, id)'
@@ -67,7 +69,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'addFromNamedItem(name: string, bindingType: string, id: string): Excel.Binding;'
+      content: 'addFromNamedItem(name: string, bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
           - Excel.Binding
@@ -80,14 +82,16 @@ items:
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
-            - string
+            - Excel.BindingType
         - id: id
           description: Name of binding.
           type:
             - string
   - uid: excel.Excel.BindingCollection.addFromSelection
-    summary: |-
-      Add a new binding based on the current selection.
+    summary: >-
+      Add a new binding based on the current selection. If the selection has multiple areas, the "InvalidReference"
+      error will be returned.
+
 
       \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: 'addFromSelection(bindingType, id)'
@@ -96,7 +100,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'addFromSelection(bindingType: string, id: string): Excel.Binding;'
+      content: 'addFromSelection(bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
           - Excel.Binding
@@ -105,7 +109,7 @@ items:
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
-            - string
+            - Excel.BindingType
         - id: id
           description: Name of binding.
           type:
@@ -302,10 +306,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: Array<Excel.Binding>;'
+      content: 'readonly items: Excel.Binding[];'
       return:
         type:
-          - Array<Excel.Binding>
+          - 'Excel.Binding[]'
   - uid: excel.Excel.BindingCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -316,7 +320,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.BindingCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.BindingCollection;
       return:
         type:
           - Excel.BindingCollection
@@ -325,7 +331,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.BindingCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.BindingCollection.toJSON
@@ -333,11 +339,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.BindingCollectionData;'
       return:
         type:
-          - |-
-            {
-                        "count": number;
-                    }
+          - Excel.Interfaces.BindingCollectionData
         description: ''

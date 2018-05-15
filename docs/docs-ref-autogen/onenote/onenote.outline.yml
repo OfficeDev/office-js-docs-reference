@@ -19,11 +19,18 @@ items:
       - onenote.OneNote.Outline.appendRichText
       - onenote.OneNote.Outline.appendTable
       - onenote.OneNote.Outline.id
+      - onenote.OneNote.Outline.isTitle
       - onenote.OneNote.Outline.load
       - onenote.OneNote.Outline.pageContent
       - onenote.OneNote.Outline.paragraphs
+      - onenote.OneNote.Outline.toJSON
+      - onenote.OneNote.Outline.track
+      - onenote.OneNote.Outline.untrack
   - uid: onenote.OneNote.Outline.appendHtml
-    summary: Adds the specified HTML to the bottom of the Outline.
+    summary: |-
+      Adds the specified HTML to the bottom of the Outline.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: appendHtml(html)
     fullName: onenote.OneNote.Outline.appendHtml
     langs:
@@ -40,7 +47,7 @@ items:
           description: >-
             The HTML string to append. See \[supported
             HTML\](../../docs/onenote/onenote-add-ins-page-content.md\#supported-html) for the OneNote add-ins
-            JavaScript API. \[Api set: OneNoteApi 1.1\]
+            JavaScript API.
           type:
             - string
     remarks: |
@@ -84,7 +91,10 @@ items:
       });
       ```
   - uid: onenote.OneNote.Outline.appendImage
-    summary: Adds the specified image to the bottom of the Outline.
+    summary: |-
+      Adds the specified image to the bottom of the Outline.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: 'appendImage(base64EncodedImage, width, height)'
     fullName: onenote.OneNote.Outline.appendImage
     langs:
@@ -106,13 +116,14 @@ items:
           type:
             - number
         - id: height
-          description: >-
-            Optional. Height in the unit of Points. The default value is null and image height will be respected. \[Api
-            set: OneNoteApi 1.1\]
+          description: Optional. Height in the unit of Points. The default value is null and image height will be respected.
           type:
             - number
   - uid: onenote.OneNote.Outline.appendRichText
-    summary: Adds the specified text to the bottom of the Outline.
+    summary: |-
+      Adds the specified text to the bottom of the Outline.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: appendRichText(paragraphText)
     fullName: onenote.OneNote.Outline.appendRichText
     langs:
@@ -126,11 +137,14 @@ items:
         description: ''
       parameters:
         - id: paragraphText
-          description: 'HTML string to append. \[Api set: OneNoteApi 1.1\]'
+          description: HTML string to append.
           type:
             - string
   - uid: onenote.OneNote.Outline.appendTable
-    summary: Adds a table with the specified number of rows and columns to the bottom of the outline.
+    summary: |-
+      Adds a table with the specified number of rows and columns to the bottom of the outline.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: 'appendTable(rowCount, columnCount, values)'
     fullName: onenote.OneNote.Outline.appendTable
     langs:
@@ -152,9 +166,7 @@ items:
           type:
             - number
         - id: values
-          description: >-
-            Optional 2D array. Cells are filled if the corresponding strings are specified in the array. \[Api set:
-            OneNoteApi 1.1\]
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - Array<Array<string>>
     remarks: |
@@ -207,10 +219,26 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type:
           - string
+  - uid: onenote.OneNote.Outline.isTitle
+    summary: |-
+      Check if the outline is title outline.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: isTitle()
+    fullName: onenote.OneNote.Outline.isTitle
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'isTitle(): OfficeExtension.ClientResult<boolean>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<boolean>
+        description: ''
   - uid: onenote.OneNote.Outline.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -221,7 +249,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.Outline;'
+      content: 'load(option?: OneNote.Interfaces.OutlineLoadOptions): OneNote.Outline;'
       return:
         type:
           - OneNote.Outline
@@ -230,7 +258,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.OutlineLoadOptions
   - uid: onenote.OneNote.Outline.pageContent
     summary: >-
       Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the
@@ -244,7 +272,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'pageContent: OneNote.PageContent;'
+      content: 'readonly pageContent: OneNote.PageContent;'
       return:
         type:
           - OneNote.PageContent
@@ -259,7 +287,54 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'paragraphs: OneNote.ParagraphCollection;'
+      content: 'readonly paragraphs: OneNote.ParagraphCollection;'
       return:
         type:
           - OneNote.ParagraphCollection
+  - uid: onenote.OneNote.Outline.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.Outline.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.OutlineData;'
+      return:
+        type:
+          - OneNote.Interfaces.OutlineData
+        description: ''
+  - uid: onenote.OneNote.Outline.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.Outline.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.Outline;'
+      return:
+        type:
+          - OneNote.Outline
+        description: ''
+  - uid: onenote.OneNote.Outline.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.Outline.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.Outline;'
+      return:
+        type:
+          - OneNote.Outline
+        description: ''

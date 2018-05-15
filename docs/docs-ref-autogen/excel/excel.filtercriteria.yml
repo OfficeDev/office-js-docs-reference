@@ -84,10 +84,25 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'dynamicCriteria?: string;'
+      content: >-
+        dynamicCriteria?: Excel.DynamicFilterCriteria | "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" |
+        "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" |
+        "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" |
+        "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2"
+        | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" |
+        "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" |
+        "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday";
       return:
         type:
-          - string
+          - >-
+            Excel.DynamicFilterCriteria | "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" |
+            "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" |
+            "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" |
+            "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1"
+            | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" |
+            "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" |
+            "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" |
+            "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"
   - uid: excel.Excel.FilterCriteria.filterOn
     summary: |-
       The property used by the filter to determine whether the values should stay visible.
@@ -99,10 +114,14 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'filterOn: string;'
+      content: >-
+        filterOn: Excel.FilterOn | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" |
+        "TopItems" | "TopPercent" | "Icon" | "Custom";
       return:
         type:
-          - string
+          - >-
+            Excel.FilterOn | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" |
+            "TopItems" | "TopPercent" | "Icon" | "Custom"
   - uid: excel.Excel.FilterCriteria.icon
     summary: |-
       The icon used to filter cells. Used with "icon" filtering.
@@ -129,10 +148,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'operator?: string;'
+      content: 'operator?: Excel.FilterOperator | "And" | "Or";'
       return:
         type:
-          - string
+          - Excel.FilterOperator | "And" | "Or"
   - uid: excel.Excel.FilterCriteria.values
     summary: |-
       The set of values to be used as part of "values" filtering.

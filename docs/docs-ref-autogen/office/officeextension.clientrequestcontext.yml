@@ -12,6 +12,7 @@ items:
     package: office
     children:
       - office.OfficeExtension.ClientRequestContext.constructor
+      - office.OfficeExtension.ClientRequestContext.debugInfo
       - office.OfficeExtension.ClientRequestContext.load
       - office.OfficeExtension.ClientRequestContext.loadRecursive
       - office.OfficeExtension.ClientRequestContext.requestHeaders
@@ -32,6 +33,18 @@ items:
           description: ''
           type:
             - string
+  - uid: office.OfficeExtension.ClientRequestContext.debugInfo
+    summary: Debug information
+    name: debugInfo
+    fullName: office.OfficeExtension.ClientRequestContext.debugInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly debugInfo: RequestContextDebugInfo;'
+      return:
+        type:
+          - RequestContextDebugInfo
   - uid: office.OfficeExtension.ClientRequestContext.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -111,10 +124,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'sync<T>(passThroughValue?: T): IPromise<T>;'
+      content: 'sync<T>(passThroughValue?: T): Promise<T>;'
       return:
         type:
-          - IPromise<T>
+          - Promise<T>
         description: ''
       parameters:
         - id: passThroughValue

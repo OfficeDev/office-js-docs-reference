@@ -61,10 +61,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Word.TableRow>;'
+      content: 'readonly items: Word.TableRow[];'
       return:
         type:
-          - Array<Word.TableRow>
+          - 'Word.TableRow[]'
   - uid: word.Word.TableRowCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -75,7 +75,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.TableRowCollection;'
+      content: >-
+        load(option?: Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.TableRowCollection;
       return:
         type:
           - Word.TableRowCollection
@@ -84,7 +86,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Word.Interfaces.TableRowCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
   - uid: word.Word.TableRowCollection.toJSON
     name: toJSON()
     fullName: word.Word.TableRowCollection.toJSON
@@ -92,10 +94,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Word.Interfaces.TableRowCollectionData;'
       return:
         type:
-          - '{}'
+          - Word.Interfaces.TableRowCollectionData
         description: ''
   - uid: word.Word.TableRowCollection.track
     summary: >-

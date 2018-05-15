@@ -83,7 +83,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeFill;'
+      content: 'load(option?: Excel.Interfaces.RangeFillLoadOptions): Excel.RangeFill;'
       return:
         type:
           - Excel.RangeFill
@@ -92,7 +92,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.RangeFillLoadOptions
   - uid: excel.Excel.RangeFill.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -101,10 +101,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.RangeFillUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.RangeFillUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -117,13 +114,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.RangeFill.toJSON
     name: toJSON()
     fullName: excel.Excel.RangeFill.toJSON
@@ -131,11 +122,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.RangeFillData;'
       return:
         type:
-          - |-
-            {
-                        "color": string;
-                    }
+          - Excel.Interfaces.RangeFillData
         description: ''

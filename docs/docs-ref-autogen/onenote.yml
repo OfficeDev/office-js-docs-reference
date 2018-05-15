@@ -7,6 +7,7 @@ items:
       - typeScript
     type: package
     children:
+      - onenote.OneNote.AccountInfo
       - onenote.OneNote.Application
       - onenote.OneNote.FloatingInk
       - onenote.OneNote.Image
@@ -23,8 +24,11 @@ items:
       - onenote.OneNote.InkStrokePointer
       - onenote.OneNote.InkWord
       - onenote.OneNote.InkWordCollection
+      - onenote.OneNote.LogData
+      - onenote.OneNote.LoggingInfo
       - onenote.OneNote.Notebook
       - onenote.OneNote.NotebookCollection
+      - onenote.OneNote.NoteTag
       - onenote.OneNote.Outline
       - onenote.OneNote.Page
       - onenote.OneNote.PageCollection
@@ -32,6 +36,7 @@ items:
       - onenote.OneNote.PageContentCollection
       - onenote.OneNote.Paragraph
       - onenote.OneNote.ParagraphCollection
+      - onenote.OneNote.ParagraphInfo
       - onenote.OneNote.RequestContext
       - onenote.OneNote.RichText
       - onenote.OneNote.run
@@ -39,6 +44,7 @@ items:
       - onenote.OneNote.SectionCollection
       - onenote.OneNote.SectionGroup
       - onenote.OneNote.SectionGroupCollection
+      - onenote.OneNote.ServiceToken
       - onenote.OneNote.Table
       - onenote.OneNote.TableCell
       - onenote.OneNote.TableCellCollection
@@ -46,31 +52,36 @@ items:
       - onenote.OneNote.TableRowCollection
   - uid: onenote.OneNote.run
     summary: >-
-      Executes a batch script that performs actions on the OneNote object model. When the promise is resolved, any
-      tracked objects that were automatically allocated during execution will be released.
-    name: run(batch)
+      Executes a batch script that performs actions on the OneNote object model, using the request context of
+      previously-created API objects.
+    name: 'run(objects, batch)'
     fullName: onenote.OneNote.run
     langs:
       - typeScript
     type: function
     syntax:
       content: >-
-        export function run<T>(batch: (context: OneNote.RequestContext) => OfficeExtension.IPromise<T>):
-        OfficeExtension.IPromise<T>;
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) =>
+        Promise<T>): Promise<T>;
       return:
         type:
-          - OfficeExtension.IPromise<T>
+          - Promise<T>
         description: ''
       parameters:
+        - id: objects
+          description: ''
+          type:
+            - 'OfficeExtension.ClientObject[]'
         - id: batch
           description: >-
-            A function that takes in a RequestContext and returns a promise (typically, just the result of
-            "context.sync()"). The context parameter facilitates requests to the OneNote application. Since the Office
-            add-in and the WoOneNote application run in two different processes, the request context is required to get
-            access to the OneNote object model from the add-in.
+            A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated
+            during execution will be released.
           type:
-            - '(context: OneNote.RequestContext) => OfficeExtension.IPromise<T>'
+            - '(context: OneNote.RequestContext) => Promise<T>'
 references:
+  - uid: onenote.OneNote.AccountInfo
+    name: OneNote.AccountInfo
   - uid: onenote.OneNote.Application
     name: OneNote.Application
   - uid: onenote.OneNote.FloatingInk
@@ -103,10 +114,16 @@ references:
     name: OneNote.InkWord
   - uid: onenote.OneNote.InkWordCollection
     name: OneNote.InkWordCollection
+  - uid: onenote.OneNote.LogData
+    name: OneNote.LogData
+  - uid: onenote.OneNote.LoggingInfo
+    name: OneNote.LoggingInfo
   - uid: onenote.OneNote.Notebook
     name: OneNote.Notebook
   - uid: onenote.OneNote.NotebookCollection
     name: OneNote.NotebookCollection
+  - uid: onenote.OneNote.NoteTag
+    name: OneNote.NoteTag
   - uid: onenote.OneNote.Outline
     name: OneNote.Outline
   - uid: onenote.OneNote.Page
@@ -121,6 +138,8 @@ references:
     name: OneNote.Paragraph
   - uid: onenote.OneNote.ParagraphCollection
     name: OneNote.ParagraphCollection
+  - uid: onenote.OneNote.ParagraphInfo
+    name: OneNote.ParagraphInfo
   - uid: onenote.OneNote.RequestContext
     name: OneNote.RequestContext
   - uid: onenote.OneNote.RichText
@@ -133,6 +152,8 @@ references:
     name: OneNote.SectionGroup
   - uid: onenote.OneNote.SectionGroupCollection
     name: OneNote.SectionGroupCollection
+  - uid: onenote.OneNote.ServiceToken
+    name: OneNote.ServiceToken
   - uid: onenote.OneNote.Table
     name: OneNote.Table
   - uid: onenote.OneNote.TableCell

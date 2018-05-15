@@ -1,0 +1,104 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartLegendEntryCollection
+    summary: |-
+      Represents a collection of legendEntries.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: Excel.ChartLegendEntryCollection
+    fullName: excel.Excel.ChartLegendEntryCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartLegendEntryCollection.getCount
+      - excel.Excel.ChartLegendEntryCollection.getItemAt
+      - excel.Excel.ChartLegendEntryCollection.items
+      - excel.Excel.ChartLegendEntryCollection.load
+      - excel.Excel.ChartLegendEntryCollection.toJSON
+  - uid: excel.Excel.ChartLegendEntryCollection.getCount
+    summary: |-
+      Returns the number of legendEntry in the collection.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: getCount()
+    fullName: excel.Excel.ChartLegendEntryCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: excel.Excel.ChartLegendEntryCollection.getItemAt
+    summary: |-
+      Returns a legendEntry at the given index.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: getItemAt(index)
+    fullName: excel.Excel.ChartLegendEntryCollection.getItemAt
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.ChartLegendEntry;'
+      return:
+        type:
+          - Excel.ChartLegendEntry
+        description: ''
+      parameters:
+        - id: index
+          description: Index of the legendEntry to be retrieved.
+          type:
+            - number
+  - uid: excel.Excel.ChartLegendEntryCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: excel.Excel.ChartLegendEntryCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.ChartLegendEntry[];'
+      return:
+        type:
+          - 'Excel.ChartLegendEntry[]'
+  - uid: excel.Excel.ChartLegendEntryCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ChartLegendEntryCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ChartLegendEntryCollection;
+      return:
+        type:
+          - Excel.ChartLegendEntryCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.ChartLegendEntryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.ChartLegendEntryCollection.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartLegendEntryCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartLegendEntryCollectionData;'
+      return:
+        type:
+          - Excel.Interfaces.ChartLegendEntryCollectionData
+        description: ''

@@ -14,10 +14,31 @@ items:
       - OfficeExtension.ClientObject
     package: onenote
     children:
+      - onenote.OneNote.RichText.getHtml
       - onenote.OneNote.RichText.id
+      - onenote.OneNote.RichText.languageId
       - onenote.OneNote.RichText.load
       - onenote.OneNote.RichText.paragraph
       - onenote.OneNote.RichText.text
+      - onenote.OneNote.RichText.toJSON
+      - onenote.OneNote.RichText.track
+      - onenote.OneNote.RichText.untrack
+  - uid: onenote.OneNote.RichText.getHtml
+    summary: |-
+      Get the HTML of the rich text
+
+      \[ [API set: OneNoteApi](http://bing.com?type=onenote) \]
+    name: getHtml()
+    fullName: onenote.OneNote.RichText.getHtml
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHtml(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: The html of the rich text
   - uid: onenote.OneNote.RichText.id
     summary: |-
       Gets the ID of the RichText object. Read-only.
@@ -29,7 +50,22 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.RichText.languageId
+    summary: |-
+      The language id of the text. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: languageId
+    fullName: onenote.OneNote.RichText.languageId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly languageId: string;'
       return:
         type:
           - string
@@ -43,7 +79,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.RichText;'
+      content: 'load(option?: OneNote.Interfaces.RichTextLoadOptions): OneNote.RichText;'
       return:
         type:
           - OneNote.RichText
@@ -52,7 +88,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.RichTextLoadOptions
   - uid: onenote.OneNote.RichText.paragraph
     summary: |-
       Gets the Paragraph object that contains the RichText object. Read-only.
@@ -64,7 +100,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'paragraph: OneNote.Paragraph;'
+      content: 'readonly paragraph: OneNote.Paragraph;'
       return:
         type:
           - OneNote.Paragraph
@@ -79,7 +115,54 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'text: string;'
+      content: 'readonly text: string;'
       return:
         type:
           - string
+  - uid: onenote.OneNote.RichText.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.RichText.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.RichTextData;'
+      return:
+        type:
+          - OneNote.Interfaces.RichTextData
+        description: ''
+  - uid: onenote.OneNote.RichText.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.RichText.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.RichText;'
+      return:
+        type:
+          - OneNote.RichText
+        description: ''
+  - uid: onenote.OneNote.RichText.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.RichText.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.RichText;'
+      return:
+        type:
+          - OneNote.RichText
+        description: ''

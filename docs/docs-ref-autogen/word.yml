@@ -7,28 +7,51 @@ items:
       - typeScript
     type: package
     children:
+      - word.Word.Alignment
+      - word.Word.Application
       - word.Word.Body
+      - word.Word.BodyType
+      - word.Word.BorderLocation
+      - word.Word.BorderType
+      - word.Word.BreakType
+      - word.Word.CellPaddingLocation
       - word.Word.ContentControl
+      - word.Word.ContentControlAppearance
       - word.Word.ContentControlCollection
+      - word.Word.ContentControlType
       - word.Word.CustomProperty
       - word.Word.CustomPropertyCollection
       - word.Word.Document
+      - word.Word.DocumentCreated
       - word.Word.DocumentProperties
+      - word.Word.DocumentPropertyType
+      - word.Word.ErrorCodes
+      - word.Word.FileContentFormat
       - word.Word.Font
+      - word.Word.HeaderFooterType
+      - word.Word.ImageFormat
       - word.Word.InlinePicture
       - word.Word.InlinePictureCollection
+      - word.Word.InsertLocation
       - word.Word.List
+      - word.Word.ListBullet
       - word.Word.ListCollection
       - word.Word.ListItem
+      - word.Word.ListLevelType
+      - word.Word.ListNumbering
+      - word.Word.LocationRelation
       - word.Word.Paragraph
       - word.Word.ParagraphCollection
       - word.Word.Range
       - word.Word.RangeCollection
+      - word.Word.RangeLocation
       - word.Word.RequestContext
       - word.Word.run
       - word.Word.SearchOptions
       - word.Word.Section
       - word.Word.SectionCollection
+      - word.Word.SelectionMode
+      - word.Word.Style
       - word.Word.Table
       - word.Word.TableBorder
       - word.Word.TableCell
@@ -36,6 +59,9 @@ items:
       - word.Word.TableCollection
       - word.Word.TableRow
       - word.Word.TableRowCollection
+      - word.Word.TapObjectType
+      - word.Word.UnderlineType
+      - word.Word.VerticalAlignment
   - uid: word.Word.run
     summary: >-
       Executes a batch script that performs actions on the Word object model, using the RequestContext of
@@ -48,10 +74,10 @@ items:
     syntax:
       content: >-
         export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) =>
-        OfficeExtension.IPromise<T>): OfficeExtension.IPromise<T>;
+        Promise<T>): Promise<T>;
       return:
         type:
-          - OfficeExtension.IPromise<T>
+          - Promise<T>
         description: ''
       parameters:
         - id: objects
@@ -68,34 +94,74 @@ items:
             add-in and the Word application run in two different processes, the RequestContext is required to get access
             to the Word object model from the add-in.
           type:
-            - '(context: Word.RequestContext) => OfficeExtension.IPromise<T>'
+            - '(context: Word.RequestContext) => Promise<T>'
 references:
+  - uid: word.Word.Alignment
+    name: Word.Alignment
+  - uid: word.Word.Application
+    name: Word.Application
   - uid: word.Word.Body
     name: Word.Body
+  - uid: word.Word.BodyType
+    name: Word.BodyType
+  - uid: word.Word.BorderLocation
+    name: Word.BorderLocation
+  - uid: word.Word.BorderType
+    name: Word.BorderType
+  - uid: word.Word.BreakType
+    name: Word.BreakType
+  - uid: word.Word.CellPaddingLocation
+    name: Word.CellPaddingLocation
   - uid: word.Word.ContentControl
     name: Word.ContentControl
+  - uid: word.Word.ContentControlAppearance
+    name: Word.ContentControlAppearance
   - uid: word.Word.ContentControlCollection
     name: Word.ContentControlCollection
+  - uid: word.Word.ContentControlType
+    name: Word.ContentControlType
   - uid: word.Word.CustomProperty
     name: Word.CustomProperty
   - uid: word.Word.CustomPropertyCollection
     name: Word.CustomPropertyCollection
   - uid: word.Word.Document
     name: Word.Document
+  - uid: word.Word.DocumentCreated
+    name: Word.DocumentCreated
   - uid: word.Word.DocumentProperties
     name: Word.DocumentProperties
+  - uid: word.Word.DocumentPropertyType
+    name: Word.DocumentPropertyType
+  - uid: word.Word.ErrorCodes
+    name: Word.ErrorCodes
+  - uid: word.Word.FileContentFormat
+    name: Word.FileContentFormat
   - uid: word.Word.Font
     name: Word.Font
+  - uid: word.Word.HeaderFooterType
+    name: Word.HeaderFooterType
+  - uid: word.Word.ImageFormat
+    name: Word.ImageFormat
   - uid: word.Word.InlinePicture
     name: Word.InlinePicture
   - uid: word.Word.InlinePictureCollection
     name: Word.InlinePictureCollection
+  - uid: word.Word.InsertLocation
+    name: Word.InsertLocation
   - uid: word.Word.List
     name: Word.List
+  - uid: word.Word.ListBullet
+    name: Word.ListBullet
   - uid: word.Word.ListCollection
     name: Word.ListCollection
   - uid: word.Word.ListItem
     name: Word.ListItem
+  - uid: word.Word.ListLevelType
+    name: Word.ListLevelType
+  - uid: word.Word.ListNumbering
+    name: Word.ListNumbering
+  - uid: word.Word.LocationRelation
+    name: Word.LocationRelation
   - uid: word.Word.Paragraph
     name: Word.Paragraph
   - uid: word.Word.ParagraphCollection
@@ -104,6 +170,8 @@ references:
     name: Word.Range
   - uid: word.Word.RangeCollection
     name: Word.RangeCollection
+  - uid: word.Word.RangeLocation
+    name: Word.RangeLocation
   - uid: word.Word.RequestContext
     name: Word.RequestContext
   - uid: word.Word.SearchOptions
@@ -112,6 +180,10 @@ references:
     name: Word.Section
   - uid: word.Word.SectionCollection
     name: Word.SectionCollection
+  - uid: word.Word.SelectionMode
+    name: Word.SelectionMode
+  - uid: word.Word.Style
+    name: Word.Style
   - uid: word.Word.Table
     name: Word.Table
   - uid: word.Word.TableBorder
@@ -126,3 +198,9 @@ references:
     name: Word.TableRow
   - uid: word.Word.TableRowCollection
     name: Word.TableRowCollection
+  - uid: word.Word.TapObjectType
+    name: Word.TapObjectType
+  - uid: word.Word.UnderlineType
+    name: Word.UnderlineType
+  - uid: word.Word.VerticalAlignment
+    name: Word.VerticalAlignment

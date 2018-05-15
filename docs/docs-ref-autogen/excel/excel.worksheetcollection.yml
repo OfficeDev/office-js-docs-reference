@@ -23,6 +23,10 @@ items:
       - excel.Excel.WorksheetCollection.getLast
       - excel.Excel.WorksheetCollection.items
       - excel.Excel.WorksheetCollection.load
+      - excel.Excel.WorksheetCollection.onActivated
+      - excel.Excel.WorksheetCollection.onAdded
+      - excel.Excel.WorksheetCollection.onDeactivated
+      - excel.Excel.WorksheetCollection.onDeleted
       - excel.Excel.WorksheetCollection.toJSON
   - uid: excel.Excel.WorksheetCollection.add
     summary: >-
@@ -221,10 +225,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: Array<Excel.Worksheet>;'
+      content: 'readonly items: Excel.Worksheet[];'
       return:
         type:
-          - Array<Excel.Worksheet>
+          - 'Excel.Worksheet[]'
   - uid: excel.Excel.WorksheetCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -235,7 +239,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.WorksheetCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.WorksheetCollection;
       return:
         type:
           - Excel.WorksheetCollection
@@ -244,7 +250,67 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.WorksheetCollection.onActivated
+    summary: |-
+      Occurs when any worksheet in the workbook is activated.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: onActivated
+    fullName: excel.Excel.WorksheetCollection.onActivated
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onActivated: OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
+  - uid: excel.Excel.WorksheetCollection.onAdded
+    summary: |-
+      Occurs when a new worksheet is added to the workbook.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: onAdded
+    fullName: excel.Excel.WorksheetCollection.onAdded
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onAdded: OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>
+  - uid: excel.Excel.WorksheetCollection.onDeactivated
+    summary: |-
+      Occurs when any worksheet in the workbook is deactivated.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: onDeactivated
+    fullName: excel.Excel.WorksheetCollection.onDeactivated
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onDeactivated: OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
+  - uid: excel.Excel.WorksheetCollection.onDeleted
+    summary: |-
+      Occurs when a worksheet is deleted from the workbook.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: onDeleted
+    fullName: excel.Excel.WorksheetCollection.onDeleted
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>
   - uid: excel.Excel.WorksheetCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.WorksheetCollection.toJSON
@@ -252,8 +318,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.WorksheetCollectionData;'
       return:
         type:
-          - '{}'
+          - Excel.Interfaces.WorksheetCollectionData
         description: ''

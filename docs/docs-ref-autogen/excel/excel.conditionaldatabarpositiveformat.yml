@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a conditional format DataBar Format for the positive side of the data bar.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.ConditionalDataBarPositiveFormat
     fullName: excel.Excel.ConditionalDataBarPositiveFormat
     langs:
@@ -26,7 +26,7 @@ items:
       color (e.g. "orange"). "" (empty string) if no border is present or set.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: borderColor
     fullName: excel.Excel.ConditionalDataBarPositiveFormat.borderColor
     langs:
@@ -43,7 +43,7 @@ items:
       "orange").
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: fillColor
     fullName: excel.Excel.ConditionalDataBarPositiveFormat.fillColor
     langs:
@@ -58,7 +58,7 @@ items:
     summary: |-
       Boolean representation of whether or not the DataBar has a gradient.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: gradientFill
     fullName: excel.Excel.ConditionalDataBarPositiveFormat.gradientFill
     langs:
@@ -79,7 +79,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalDataBarPositiveFormat;'
+      content: >-
+        load(option?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions):
+        Excel.ConditionalDataBarPositiveFormat;
       return:
         type:
           - Excel.ConditionalDataBarPositiveFormat
@@ -88,7 +90,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
   - uid: excel.Excel.ConditionalDataBarPositiveFormat.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -97,10 +99,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ConditionalDataBarPositiveFormatUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: >-
+        set(properties: Interfaces.ConditionalDataBarPositiveFormatUpdateData, options?: OfficeExtension.UpdateOptions):
+        void;
       return:
         type:
           - void
@@ -113,13 +114,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalDataBarPositiveFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ConditionalDataBarPositiveFormat.toJSON
@@ -127,13 +122,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ConditionalDataBarPositiveFormatData;'
       return:
         type:
-          - |-
-            {
-                        "borderColor": string;
-                        "fillColor": string;
-                        "gradientFill": boolean;
-                    }
+          - Excel.Interfaces.ConditionalDataBarPositiveFormatData
         description: ''

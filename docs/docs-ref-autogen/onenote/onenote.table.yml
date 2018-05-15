@@ -27,11 +27,18 @@ items:
       - onenote.OneNote.Table.paragraph
       - onenote.OneNote.Table.rowCount
       - onenote.OneNote.Table.rows
+      - onenote.OneNote.Table.set
       - onenote.OneNote.Table.setShadingColor
+      - onenote.OneNote.Table.toJSON
+      - onenote.OneNote.Table.track
+      - onenote.OneNote.Table.untrack
   - uid: onenote.OneNote.Table.appendColumn
     summary: >-
       Adds a column to the end of the table. Values, if specified, are set in the new column. Otherwise the column is
       empty.
+
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: appendColumn(values)
     fullName: onenote.OneNote.Table.appendColumn
     langs:
@@ -47,7 +54,7 @@ items:
         - id: values
           description: >-
             Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in
-            the table. \[Api set: OneNoteApi 1.1\]
+            the table.
           type:
             - Array<string>
     remarks: |
@@ -86,7 +93,10 @@ items:
       });
       ```
   - uid: onenote.OneNote.Table.appendRow
-    summary: 'Adds a row to the end of the table. Values, if specified, are set in the new row. Otherwise the row is empty.'
+    summary: |-
+      Adds a row to the end of the table. Values, if specified, are set in the new row. Otherwise the row is empty.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: appendRow(values)
     fullName: onenote.OneNote.Table.appendRow
     langs:
@@ -102,7 +112,7 @@ items:
         - id: values
           description: >-
             Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in
-            the table. \[Api set: OneNoteApi 1.1\]
+            the table.
           type:
             - Array<string>
     remarks: |
@@ -182,12 +192,15 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'columnCount: number;'
+      content: 'readonly columnCount: number;'
       return:
         type:
           - number
   - uid: onenote.OneNote.Table.getCell
-    summary: Gets the table cell at a specified row and column.
+    summary: |-
+      Gets the table cell at a specified row and column.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: 'getCell(rowIndex, cellIndex)'
     fullName: onenote.OneNote.Table.getCell
     langs:
@@ -205,7 +218,7 @@ items:
           type:
             - number
         - id: cellIndex
-          description: 'The index of the cell in the row. \[Api set: OneNoteApi 1.1\]'
+          description: The index of the cell in the row.
           type:
             - number
     remarks: |
@@ -254,7 +267,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type:
           - string
@@ -262,6 +275,9 @@ items:
     summary: >-
       Inserts a column at the given index in the table. Values, if specified, are set in the new column. Otherwise the
       column is empty.
+
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: 'insertColumn(index, values)'
     fullName: onenote.OneNote.Table.insertColumn
     langs:
@@ -281,7 +297,7 @@ items:
         - id: values
           description: >-
             Optional. Strings to insert in the new column, specified as an array. Must not have more values than rows in
-            the table. \[Api set: OneNoteApi 1.1\]
+            the table.
           type:
             - Array<string>
     remarks: |
@@ -323,6 +339,9 @@ items:
     summary: >-
       Inserts a row at the given index in the table. Values, if specified, are set in the new row. Otherwise the row is
       empty.
+
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: 'insertRow(index, values)'
     fullName: onenote.OneNote.Table.insertRow
     langs:
@@ -342,7 +361,7 @@ items:
         - id: values
           description: >-
             Optional. Strings to insert in the new row, specified as an array. Must not have more values than columns in
-            the table. \[Api set: OneNoteApi 1.1\]
+            the table.
           type:
             - Array<string>
     remarks: |
@@ -390,7 +409,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.Table;'
+      content: 'load(option?: OneNote.Interfaces.TableLoadOptions): OneNote.Table;'
       return:
         type:
           - OneNote.Table
@@ -399,7 +418,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.TableLoadOptions
   - uid: onenote.OneNote.Table.paragraph
     summary: |-
       Gets the Paragraph object that contains the Table object. Read-only.
@@ -411,7 +430,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'paragraph: OneNote.Paragraph;'
+      content: 'readonly paragraph: OneNote.Paragraph;'
       return:
         type:
           - OneNote.Paragraph
@@ -426,7 +445,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'rowCount: number;'
+      content: 'readonly rowCount: number;'
       return:
         type:
           - number
@@ -441,10 +460,41 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'rows: OneNote.TableRowCollection;'
+      content: 'readonly rows: OneNote.TableRowCollection;'
       return:
         type:
           - OneNote.TableRowCollection
+  - uid: onenote.OneNote.Table.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: onenote.OneNote.Table.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        set(properties: Interfaces.TableUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.TableUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: onenote.OneNote.Table.setShadingColor
     name: setShadingColor(colorCode)
     fullName: onenote.OneNote.Table.setShadingColor
@@ -462,3 +512,50 @@ items:
           description: ''
           type:
             - string
+  - uid: onenote.OneNote.Table.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.Table.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.TableData;'
+      return:
+        type:
+          - OneNote.Interfaces.TableData
+        description: ''
+  - uid: onenote.OneNote.Table.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.Table.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.Table;'
+      return:
+        type:
+          - OneNote.Table
+        description: ''
+  - uid: onenote.OneNote.Table.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.Table.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.Table;'
+      return:
+        type:
+          - OneNote.Table
+        description: ''

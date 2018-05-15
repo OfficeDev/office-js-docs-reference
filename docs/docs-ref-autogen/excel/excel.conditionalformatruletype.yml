@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ConditionalFormatRuleType
+    summary: |-
+      Represents the types of conditional format values.
+
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+    name: Excel.ConditionalFormatRuleType
+    fullName: excel.Excel.ConditionalFormatRuleType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ConditionalFormatRuleType.automatic
+      - excel.Excel.ConditionalFormatRuleType.formula
+      - excel.Excel.ConditionalFormatRuleType.highestValue
+      - excel.Excel.ConditionalFormatRuleType.invalid
+      - excel.Excel.ConditionalFormatRuleType.lowestValue
+      - excel.Excel.ConditionalFormatRuleType.number
+      - excel.Excel.ConditionalFormatRuleType.percent
+      - excel.Excel.ConditionalFormatRuleType.percentile
+  - uid: excel.Excel.ConditionalFormatRuleType.automatic
+    name: automatic
+    fullName: excel.Excel.ConditionalFormatRuleType.automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: excel.Excel.ConditionalFormatRuleType.formula
+    name: formula
+    fullName: excel.Excel.ConditionalFormatRuleType.formula
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Formula"'
+  - uid: excel.Excel.ConditionalFormatRuleType.highestValue
+    name: highestValue
+    fullName: excel.Excel.ConditionalFormatRuleType.highestValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"HighestValue"'
+  - uid: excel.Excel.ConditionalFormatRuleType.invalid
+    name: invalid
+    fullName: excel.Excel.ConditionalFormatRuleType.invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: excel.Excel.ConditionalFormatRuleType.lowestValue
+    name: lowestValue
+    fullName: excel.Excel.ConditionalFormatRuleType.lowestValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LowestValue"'
+  - uid: excel.Excel.ConditionalFormatRuleType.number
+    name: number
+    fullName: excel.Excel.ConditionalFormatRuleType.number
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Number"'
+  - uid: excel.Excel.ConditionalFormatRuleType.percent
+    name: percent
+    fullName: excel.Excel.ConditionalFormatRuleType.percent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percent"'
+  - uid: excel.Excel.ConditionalFormatRuleType.percentile
+    name: percentile
+    fullName: excel.Excel.ConditionalFormatRuleType.percentile
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percentile"'

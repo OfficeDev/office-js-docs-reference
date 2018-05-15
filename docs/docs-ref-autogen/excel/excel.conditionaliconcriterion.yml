@@ -6,7 +6,7 @@ items:
       an iconset.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.ConditionalIconCriterion
     fullName: excel.Excel.ConditionalIconCriterion
     langs:
@@ -22,7 +22,7 @@ items:
     summary: |-
       The custom icon for the current criterion if different from the default IconSet, else null will be returned.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: customIcon
     fullName: excel.Excel.ConditionalIconCriterion.customIcon
     langs:
@@ -37,7 +37,7 @@ items:
     summary: |-
       A number or a formula depending on the type.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: formula
     fullName: excel.Excel.ConditionalIconCriterion.formula
     langs:
@@ -52,29 +52,29 @@ items:
     summary: |-
       GreaterThan or GreaterThanOrEqual for each of the rule type for the Icon conditional format.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: operator
     fullName: excel.Excel.ConditionalIconCriterion.operator
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'operator: string;'
+      content: 'operator: Excel.ConditionalIconCriterionOperator | "Invalid" | "GreaterThan" | "GreaterThanOrEqual";'
       return:
         type:
-          - string
+          - Excel.ConditionalIconCriterionOperator | "Invalid" | "GreaterThan" | "GreaterThanOrEqual"
   - uid: excel.Excel.ConditionalIconCriterion.type
     summary: |-
       What the icon conditional formula should be based on.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: type
     fullName: excel.Excel.ConditionalIconCriterion.type
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'type: string;'
+      content: 'type: Excel.ConditionalFormatIconRuleType | "Invalid" | "Number" | "Percent" | "Formula" | "Percentile";'
       return:
         type:
-          - string
+          - Excel.ConditionalFormatIconRuleType | "Invalid" | "Number" | "Percent" | "Formula" | "Percentile"

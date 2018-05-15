@@ -17,6 +17,7 @@ items:
       - excel.Excel.Application.calculate
       - excel.Excel.Application.calculationMode
       - excel.Excel.Application.load
+      - excel.Excel.Application.set
       - excel.Excel.Application.suspendApiCalculationUntilNextSync
       - excel.Excel.Application.toJSON
   - uid: excel.Excel.Application.calculate
@@ -30,7 +31,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'calculate(calculationType: string): void;'
+      content: 'calculate(calculationType: Excel.CalculationType): void;'
       return:
         type:
           - void
@@ -39,7 +40,7 @@ items:
         - id: calculationType
           description: Specifies the calculation type to use. See Excel.CalculationType for details.
           type:
-            - string
+            - Excel.CalculationType
     remarks: |
 
 
@@ -58,19 +59,19 @@ items:
       ```
   - uid: excel.Excel.Application.calculationMode
     summary: |-
-      Returns the calculation mode used in the workbook. See Excel.CalculationMode for details. Read-only.
+      Returns the calculation mode used in the workbook. See Excel.CalculationMode for details.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1 for get, 1.8 for set](http://bing.com?type=excel) \]
     name: calculationMode
     fullName: excel.Excel.Application.calculationMode
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'readonly calculationMode: string;'
+      content: 'calculationMode: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual";'
       return:
         type:
-          - string
+          - Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
   - uid: excel.Excel.Application.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -81,7 +82,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Application;'
+      content: 'load(option?: Excel.Interfaces.ApplicationLoadOptions): Excel.Application;'
       return:
         type:
           - Excel.Application
@@ -90,14 +91,36 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ApplicationLoadOptions
+  - uid: excel.Excel.Application.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.Application.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ApplicationUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ApplicationUpdateData
+        - id: options
+          description: ''
+          type:
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.Application.suspendApiCalculationUntilNextSync
     summary: >-
       Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to
       re-calc the workbook, to ensure that any dependencies are propagated.
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: suspendApiCalculationUntilNextSync()
     fullName: excel.Excel.Application.suspendApiCalculationUntilNextSync
     langs:
@@ -116,11 +139,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ApplicationData;'
       return:
         type:
-          - |-
-            {
-                        "calculationMode": string;
-                    }
+          - Excel.Interfaces.ApplicationData
         description: ''

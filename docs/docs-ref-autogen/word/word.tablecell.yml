@@ -50,7 +50,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'body: Word.Body;'
+      content: 'readonly body: Word.Body;'
       return:
         type:
           - Word.Body
@@ -65,7 +65,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'cellIndex: number;'
+      content: 'readonly cellIndex: number;'
       return:
         type:
           - number
@@ -127,7 +127,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getBorder(borderLocation: string): Word.TableBorder;'
+      content: 'getBorder(borderLocation: Word.BorderLocation): Word.TableBorder;'
       return:
         type:
           - Word.TableBorder
@@ -136,7 +136,7 @@ items:
         - id: borderLocation
           description: Required. The border location.
           type:
-            - string
+            - Word.BorderLocation
   - uid: word.Word.TableCell.getCellPadding
     summary: |-
       Gets cell padding in points.
@@ -148,7 +148,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getCellPadding(cellPaddingLocation: string): OfficeExtension.ClientResult<number>;'
+      content: 'getCellPadding(cellPaddingLocation: Word.CellPaddingLocation): OfficeExtension.ClientResult<number>;'
       return:
         type:
           - OfficeExtension.ClientResult<number>
@@ -157,7 +157,7 @@ items:
         - id: cellPaddingLocation
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'' or ''Right''.'
           type:
-            - string
+            - Word.CellPaddingLocation
   - uid: word.Word.TableCell.getNext
     summary: |-
       Gets the next cell. Throws if this cell is the last one.
@@ -201,10 +201,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'horizontalAlignment: string;'
+      content: 'horizontalAlignment: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
       return:
         type:
-          - string
+          - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
   - uid: word.Word.TableCell.insertColumns
     summary: >-
       Adds columns to the left or right of the cell, using the cell's column as a template. This is applicable to
@@ -218,7 +218,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertColumns(insertLocation: string, columnCount: number, values?: Array<Array<string>>): void;'
+      content: 'insertColumns(insertLocation: Word.InsertLocation, columnCount: number, values?: string[][]): void;'
       return:
         type:
           - void
@@ -227,7 +227,7 @@ items:
         - id: insertLocation
           description: Required. It can be 'Before' or 'After'.
           type:
-            - string
+            - Word.InsertLocation
         - id: columnCount
           description: Required. Number of columns to add
           type:
@@ -235,7 +235,7 @@ items:
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
-            - Array<Array<string>>
+            - 'string[][]'
   - uid: word.Word.TableCell.insertRows
     summary: >-
       Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set
@@ -249,7 +249,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertRows(insertLocation: string, rowCount: number, values?: Array<Array<string>>): Word.TableRowCollection;'
+      content: 'insertRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][]): Word.TableRowCollection;'
       return:
         type:
           - Word.TableRowCollection
@@ -258,7 +258,7 @@ items:
         - id: insertLocation
           description: Required. It can be 'Before' or 'After'.
           type:
-            - string
+            - Word.InsertLocation
         - id: rowCount
           description: Required. Number of rows to add.
           type:
@@ -266,7 +266,7 @@ items:
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
-            - Array<Array<string>>
+            - 'string[][]'
   - uid: word.Word.TableCell.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -277,7 +277,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.TableCell;'
+      content: 'load(option?: Word.Interfaces.TableCellLoadOptions): Word.TableCell;'
       return:
         type:
           - Word.TableCell
@@ -286,7 +286,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.TableCell.parentRow
     summary: |-
       Gets the parent row of the cell. Read-only.
@@ -298,7 +298,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentRow: Word.TableRow;'
+      content: 'readonly parentRow: Word.TableRow;'
       return:
         type:
           - Word.TableRow
@@ -313,7 +313,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentTable: Word.Table;'
+      content: 'readonly parentTable: Word.Table;'
       return:
         type:
           - Word.Table
@@ -328,7 +328,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'rowIndex: number;'
+      content: 'readonly rowIndex: number;'
       return:
         type:
           - number
@@ -340,10 +340,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.TableCellUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.TableCellUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -356,13 +353,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: word.Word.TableCell.setCellPadding
     summary: |-
       Sets cell padding in points.
@@ -374,7 +365,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setCellPadding(cellPaddingLocation: string, cellPadding: number): void;'
+      content: 'setCellPadding(cellPaddingLocation: Word.CellPaddingLocation, cellPadding: number): void;'
       return:
         type:
           - void
@@ -383,7 +374,7 @@ items:
         - id: cellPaddingLocation
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'' or ''Right''.'
           type:
-            - string
+            - Word.CellPaddingLocation
         - id: cellPadding
           description: Required. The cell padding.
           type:
@@ -410,21 +401,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Word.Interfaces.TableCellData;'
       return:
         type:
-          - |-
-            {
-                        "body": Body;
-                        "cellIndex": number;
-                        "columnWidth": number;
-                        "horizontalAlignment": string;
-                        "rowIndex": number;
-                        "shadingColor": string;
-                        "value": string;
-                        "verticalAlignment": string;
-                        "width": number;
-                    }
+          - Word.Interfaces.TableCellData
         description: ''
   - uid: word.Word.TableCell.track
     summary: >-
@@ -487,10 +467,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'verticalAlignment: string;'
+      content: 'verticalAlignment: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";'
       return:
         type:
-          - string
+          - Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
   - uid: word.Word.TableCell.width
     summary: |-
       Gets the width of the cell in points. Read-only.
@@ -502,7 +482,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'width: number;'
+      content: 'readonly width: number;'
       return:
         type:
           - number

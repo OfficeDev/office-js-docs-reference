@@ -64,10 +64,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: Array<Excel.RangeView>;'
+      content: 'readonly items: Excel.RangeView[];'
       return:
         type:
-          - Array<Excel.RangeView>
+          - 'Excel.RangeView[]'
   - uid: excel.Excel.RangeViewCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -78,7 +78,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeViewCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.RangeViewCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.RangeViewCollection;
       return:
         type:
           - Excel.RangeViewCollection
@@ -87,7 +89,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.RangeViewCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.RangeViewCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.RangeViewCollection.toJSON
@@ -95,8 +97,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.RangeViewCollectionData;'
       return:
         type:
-          - '{}'
+          - Excel.Interfaces.RangeViewCollectionData
         description: ''

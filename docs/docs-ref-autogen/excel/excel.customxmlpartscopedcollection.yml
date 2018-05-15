@@ -124,10 +124,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: Array<Excel.CustomXmlPart>;'
+      content: 'readonly items: Excel.CustomXmlPart[];'
       return:
         type:
-          - Array<Excel.CustomXmlPart>
+          - 'Excel.CustomXmlPart[]'
   - uid: excel.Excel.CustomXmlPartScopedCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -138,7 +138,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.CustomXmlPartScopedCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions &
+        Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartScopedCollection;
       return:
         type:
           - Excel.CustomXmlPartScopedCollection
@@ -147,7 +149,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.CustomXmlPartScopedCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.CustomXmlPartScopedCollection.toJSON
@@ -155,8 +157,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.CustomXmlPartScopedCollectionData;'
       return:
         type:
-          - '{}'
+          - Excel.Interfaces.CustomXmlPartScopedCollectionData
         description: ''

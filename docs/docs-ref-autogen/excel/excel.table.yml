@@ -27,6 +27,8 @@ items:
       - excel.Excel.Table.id
       - excel.Excel.Table.load
       - excel.Excel.Table.name
+      - excel.Excel.Table.onChanged
+      - excel.Excel.Table.onSelectionChanged
       - excel.Excel.Table.reapplyFilters
       - excel.Excel.Table.rows
       - excel.Excel.Table.set
@@ -57,7 +59,7 @@ items:
         description: ''
   - uid: excel.Excel.Table.columns
     summary: |-
-      Represents a collection of all the columns in the table. Read-only.
+      Represents a collection of all the columns in the table.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: columns
@@ -329,10 +331,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly id: number;'
+      content: 'readonly id: string;'
       return:
         type:
-          - number
+          - string
   - uid: excel.Excel.Table.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -343,7 +345,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Table;'
+      content: 'load(option?: Excel.Interfaces.TableLoadOptions): Excel.Table;'
       return:
         type:
           - Excel.Table
@@ -352,7 +354,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.TableLoadOptions
   - uid: excel.Excel.Table.name
     summary: |-
       Name of the table.
@@ -368,6 +370,36 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.Table.onChanged
+    summary: |-
+      Occurs when data changed on a specific table.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: onChanged
+    fullName: excel.Excel.Table.onChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
+  - uid: excel.Excel.Table.onSelectionChanged
+    summary: |-
+      Occurs when the selection changed on a specific table.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: onSelectionChanged
+    fullName: excel.Excel.Table.onSelectionChanged
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>
   - uid: excel.Excel.Table.reapplyFilters
     summary: |-
       Reapplies all the filters currently on the table.
@@ -386,7 +418,7 @@ items:
         description: ''
   - uid: excel.Excel.Table.rows
     summary: |-
-      Represents a collection of all the rows in the table. Read-only.
+      Represents a collection of all the rows in the table.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: rows
@@ -407,10 +439,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.TableUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.TableUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -423,13 +452,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.Table.showBandedColumns
     summary: >-
       Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even
@@ -551,26 +574,14 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.TableData;'
       return:
         type:
-          - |-
-            {
-                        "highlightFirstColumn": boolean;
-                        "highlightLastColumn": boolean;
-                        "id": number;
-                        "name": string;
-                        "showBandedColumns": boolean;
-                        "showBandedRows": boolean;
-                        "showFilterButton": boolean;
-                        "showHeaders": boolean;
-                        "showTotals": boolean;
-                        "style": string;
-                    }
+          - Excel.Interfaces.TableData
         description: ''
   - uid: excel.Excel.Table.worksheet
     summary: |-
-      The worksheet containing the current table. Read-only.
+      The worksheet containing the current table.
 
       \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: worksheet

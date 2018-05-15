@@ -1,0 +1,436 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Style
+    summary: |-
+      An object encapsulating a style's format and other properties.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: Excel.Style
+    fullName: excel.Excel.Style
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.Style.borders
+      - excel.Excel.Style.builtIn
+      - excel.Excel.Style.delete
+      - excel.Excel.Style.fill
+      - excel.Excel.Style.font
+      - excel.Excel.Style.formulaHidden
+      - excel.Excel.Style.horizontalAlignment
+      - excel.Excel.Style.includeAlignment
+      - excel.Excel.Style.includeBorder
+      - excel.Excel.Style.includeFont
+      - excel.Excel.Style.includeNumber
+      - excel.Excel.Style.includePatterns
+      - excel.Excel.Style.includeProtection
+      - excel.Excel.Style.indentLevel
+      - excel.Excel.Style.load
+      - excel.Excel.Style.locked
+      - excel.Excel.Style.name
+      - excel.Excel.Style.numberFormat
+      - excel.Excel.Style.numberFormatLocal
+      - excel.Excel.Style.readingOrder
+      - excel.Excel.Style.set
+      - excel.Excel.Style.shrinkToFit
+      - excel.Excel.Style.toJSON
+      - excel.Excel.Style.verticalAlignment
+      - excel.Excel.Style.wrapText
+  - uid: excel.Excel.Style.borders
+    summary: |-
+      A Border collection of four Border objects that represent the style of the four borders.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: borders
+    fullName: excel.Excel.Style.borders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly borders: Excel.RangeBorderCollection;'
+      return:
+        type:
+          - Excel.RangeBorderCollection
+  - uid: excel.Excel.Style.builtIn
+    summary: |-
+      Indicates if the style is a built-in style.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: builtIn
+    fullName: excel.Excel.Style.builtIn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly builtIn: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Style.delete
+    summary: |-
+      Deletes this style.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: delete()
+    fullName: excel.Excel.Style.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.Style.fill
+    summary: |-
+      The Fill of the style.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: fill
+    fullName: excel.Excel.Style.fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly fill: Excel.RangeFill;'
+      return:
+        type:
+          - Excel.RangeFill
+  - uid: excel.Excel.Style.font
+    summary: |-
+      A Font object that represents the font of the style.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: font
+    fullName: excel.Excel.Style.font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Excel.RangeFont;'
+      return:
+        type:
+          - Excel.RangeFont
+  - uid: excel.Excel.Style.formulaHidden
+    summary: |-
+      Indicates if the formula will be hidden when the worksheet is protected.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: formulaHidden
+    fullName: excel.Excel.Style.formulaHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formulaHidden: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Style.horizontalAlignment
+    summary: |-
+      Represents the horizontal alignment for the style. See Excel.HorizontalAlignment for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: horizontalAlignment
+    fullName: excel.Excel.Style.horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        horizontalAlignment: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
+        "CenterAcrossSelection" | "Distributed";
+      return:
+        type:
+          - >-
+            Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
+            "CenterAcrossSelection" | "Distributed"
+  - uid: excel.Excel.Style.includeAlignment
+    summary: >-
+      Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and
+      TextOrientation properties.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: includeAlignment
+    fullName: excel.Excel.Style.includeAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includeAlignment: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Style.includeBorder
+    summary: |-
+      Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: includeBorder
+    fullName: excel.Excel.Style.includeBorder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includeBorder: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Style.includeFont
+    summary: >-
+      Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size,
+      Strikethrough, Subscript, Superscript, and Underline font properties.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: includeFont
+    fullName: excel.Excel.Style.includeFont
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includeFont: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Style.includeNumber
+    summary: |-
+      Indicates if the style includes the NumberFormat property.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: includeNumber
+    fullName: excel.Excel.Style.includeNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includeNumber: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Style.includePatterns
+    summary: >-
+      Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and
+      PatternColorIndex interior properties.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: includePatterns
+    fullName: excel.Excel.Style.includePatterns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includePatterns: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Style.includeProtection
+    summary: |-
+      Indicates if the style includes the FormulaHidden and Locked protection properties.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: includeProtection
+    fullName: excel.Excel.Style.includeProtection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'includeProtection: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Style.indentLevel
+    summary: |-
+      An integer from 0 to 250 that indicates the indent level for the style.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: indentLevel
+    fullName: excel.Excel.Style.indentLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'indentLevel: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Style.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.Style.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.StyleLoadOptions): Excel.Style;'
+      return:
+        type:
+          - Excel.Style
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.StyleLoadOptions
+  - uid: excel.Excel.Style.locked
+    summary: |-
+      Indicates if the object is locked when the worksheet is protected.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: locked
+    fullName: excel.Excel.Style.locked
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'locked: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Style.name
+    summary: |-
+      The name of the style.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: name
+    fullName: excel.Excel.Style.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Style.numberFormat
+    summary: |-
+      The format code of the number format for the style.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: numberFormat
+    fullName: excel.Excel.Style.numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Style.numberFormatLocal
+    summary: |-
+      The localized format code of the number format for the style.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: numberFormatLocal
+    fullName: excel.Excel.Style.numberFormatLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormatLocal: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Style.readingOrder
+    summary: |-
+      The reading order for the style.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: readingOrder
+    fullName: excel.Excel.Style.readingOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readingOrder: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";'
+      return:
+        type:
+          - Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
+  - uid: excel.Excel.Style.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.Style.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.StyleUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.StyleUpdateData
+        - id: options
+          description: ''
+          type:
+            - OfficeExtension.UpdateOptions
+  - uid: excel.Excel.Style.shrinkToFit
+    summary: |-
+      Indicates if text automatically shrinks to fit in the available column width.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: shrinkToFit
+    fullName: excel.Excel.Style.shrinkToFit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shrinkToFit: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Style.toJSON
+    name: toJSON()
+    fullName: excel.Excel.Style.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.StyleData;'
+      return:
+        type:
+          - Excel.Interfaces.StyleData
+        description: ''
+  - uid: excel.Excel.Style.verticalAlignment
+    summary: |-
+      Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: verticalAlignment
+    fullName: excel.Excel.Style.verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";'
+      return:
+        type:
+          - Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
+  - uid: excel.Excel.Style.wrapText
+    summary: |-
+      Indicates if Microsoft Excel wraps the text in the object.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: wrapText
+    fullName: excel.Excel.Style.wrapText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'wrapText: boolean;'
+      return:
+        type:
+          - boolean

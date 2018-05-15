@@ -14,20 +14,125 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartAxis.axisGroup
+      - excel.Excel.ChartAxis.baseTimeUnit
+      - excel.Excel.ChartAxis.categoryType
+      - excel.Excel.ChartAxis.customDisplayUnit
+      - excel.Excel.ChartAxis.displayUnit
       - excel.Excel.ChartAxis.format
+      - excel.Excel.ChartAxis.height
+      - excel.Excel.ChartAxis.left
       - excel.Excel.ChartAxis.load
+      - excel.Excel.ChartAxis.logBase
       - excel.Excel.ChartAxis.majorGridlines
+      - excel.Excel.ChartAxis.majorTickMark
+      - excel.Excel.ChartAxis.majorTimeUnitScale
       - excel.Excel.ChartAxis.majorUnit
       - excel.Excel.ChartAxis.maximum
       - excel.Excel.ChartAxis.minimum
       - excel.Excel.ChartAxis.minorGridlines
+      - excel.Excel.ChartAxis.minorTickMark
+      - excel.Excel.ChartAxis.minorTimeUnitScale
       - excel.Excel.ChartAxis.minorUnit
+      - excel.Excel.ChartAxis.reversePlotOrder
+      - excel.Excel.ChartAxis.scaleType
       - excel.Excel.ChartAxis.set
+      - excel.Excel.ChartAxis.setCategoryNames
+      - excel.Excel.ChartAxis.setCustomDisplayUnit
+      - excel.Excel.ChartAxis.showDisplayUnitLabel
+      - excel.Excel.ChartAxis.tickLabelPosition
+      - excel.Excel.ChartAxis.tickLabelSpacing
+      - excel.Excel.ChartAxis.tickMarkSpacing
       - excel.Excel.ChartAxis.title
       - excel.Excel.ChartAxis.toJSON
+      - excel.Excel.ChartAxis.top
+      - excel.Excel.ChartAxis.type
+      - excel.Excel.ChartAxis.visible
+      - excel.Excel.ChartAxis.width
+  - uid: excel.Excel.ChartAxis.axisGroup
+    summary: |-
+      Represents the group for the specified axis. See Excel.ChartAxisGroup for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: axisGroup
+    fullName: excel.Excel.ChartAxis.axisGroup
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly axisGroup: Excel.ChartAxisGroup | "Primary" | "Secondary";'
+      return:
+        type:
+          - Excel.ChartAxisGroup | "Primary" | "Secondary"
+  - uid: excel.Excel.ChartAxis.baseTimeUnit
+    summary: |-
+      Returns or sets the base unit for the specified category axis.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: baseTimeUnit
+    fullName: excel.Excel.ChartAxis.baseTimeUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'baseTimeUnit: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
+      return:
+        type:
+          - Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
+  - uid: excel.Excel.ChartAxis.categoryType
+    summary: |-
+      Returns or sets the category axis type.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: categoryType
+    fullName: excel.Excel.ChartAxis.categoryType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'categoryType: Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis";'
+      return:
+        type:
+          - Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis"
+  - uid: excel.Excel.ChartAxis.customDisplayUnit
+    summary: >-
+      Represents the custom axis display unit value. Read Only. To set this property, please use the
+      SetCustomDisplayUnit(double) method.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: customDisplayUnit
+    fullName: excel.Excel.ChartAxis.customDisplayUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly customDisplayUnit: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartAxis.displayUnit
+    summary: |-
+      Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: displayUnit
+    fullName: excel.Excel.ChartAxis.displayUnit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        displayUnit: Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" |
+        "HundredThousands" | "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom";
+      return:
+        type:
+          - >-
+            Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" |
+            "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"
   - uid: excel.Excel.ChartAxis.format
     summary: |-
-      Represents the formatting of a chart object, which includes line and font formatting. Read-only.
+      Represents the formatting of a chart object, which includes line and font formatting.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: format
@@ -40,6 +145,38 @@ items:
       return:
         type:
           - Excel.ChartAxisFormat
+  - uid: excel.Excel.ChartAxis.height
+    summary: |-
+      Represents the height, in points, of the chart axis. Null if the axis's not visible.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: height
+    fullName: excel.Excel.ChartAxis.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartAxis.left
+    summary: >-
+      Represents the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis's
+      not visible.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: left
+    fullName: excel.Excel.ChartAxis.left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly left: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.ChartAxis.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -50,7 +187,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartAxis;'
+      content: 'load(option?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;'
       return:
         type:
           - Excel.ChartAxis
@@ -59,10 +196,25 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ChartAxisLoadOptions
+  - uid: excel.Excel.ChartAxis.logBase
+    summary: |-
+      Represents the base of the logarithm when using logarithmic scales.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: logBase
+    fullName: excel.Excel.ChartAxis.logBase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'logBase: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.ChartAxis.majorGridlines
     summary: |-
-      Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.
+      Returns a gridlines object that represents the major gridlines for the specified axis.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: majorGridlines
@@ -75,6 +227,38 @@ items:
       return:
         type:
           - Excel.ChartGridlines
+  - uid: excel.Excel.ChartAxis.majorTickMark
+    summary: |-
+      Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: majorTickMark
+    fullName: excel.Excel.ChartAxis.majorTickMark
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'majorTickMark: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";'
+      return:
+        type:
+          - Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
+  - uid: excel.Excel.ChartAxis.majorTimeUnitScale
+    summary: >-
+      Returns or sets the major unit scale value for the category axis when the CategoryType property is set to
+      TimeScale.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: majorTimeUnitScale
+    fullName: excel.Excel.ChartAxis.majorTimeUnitScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'majorTimeUnitScale: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
+      return:
+        type:
+          - Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
   - uid: excel.Excel.ChartAxis.majorUnit
     summary: >-
       Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
@@ -128,7 +312,7 @@ items:
           - any
   - uid: excel.Excel.ChartAxis.minorGridlines
     summary: |-
-      Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
+      Returns a Gridlines object that represents the minor gridlines for the specified axis.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: minorGridlines
@@ -141,6 +325,38 @@ items:
       return:
         type:
           - Excel.ChartGridlines
+  - uid: excel.Excel.ChartAxis.minorTickMark
+    summary: |-
+      Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: minorTickMark
+    fullName: excel.Excel.ChartAxis.minorTickMark
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minorTickMark: Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside";'
+      return:
+        type:
+          - Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
+  - uid: excel.Excel.ChartAxis.minorTimeUnitScale
+    summary: >-
+      Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to
+      TimeScale.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: minorTimeUnitScale
+    fullName: excel.Excel.ChartAxis.minorTimeUnitScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'minorTimeUnitScale: Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years";'
+      return:
+        type:
+          - Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
   - uid: excel.Excel.ChartAxis.minorUnit
     summary: >-
       Represents the interval between two minor tick marks. "Can be set to a numeric value or an empty string (for
@@ -158,6 +374,36 @@ items:
       return:
         type:
           - any
+  - uid: excel.Excel.ChartAxis.reversePlotOrder
+    summary: |-
+      Represents whether Microsoft Excel plots data points from last to first.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: reversePlotOrder
+    fullName: excel.Excel.ChartAxis.reversePlotOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'reversePlotOrder: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartAxis.scaleType
+    summary: |-
+      Represents the value axis scale type. See Excel.ChartAxisScaleType for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: scaleType
+    fullName: excel.Excel.ChartAxis.scaleType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'scaleType: Excel.ChartAxisScaleType | "Linear" | "Logarithmic";'
+      return:
+        type:
+          - Excel.ChartAxisScaleType | "Linear" | "Logarithmic"
   - uid: excel.Excel.ChartAxis.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -166,10 +412,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ChartAxisUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.ChartAxisUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -182,16 +425,116 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ChartAxis.setCategoryNames
+    summary: |-
+      Sets all the category names for the specified axis.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: setCategoryNames(sourceData)
+    fullName: excel.Excel.ChartAxis.setCategoryNames
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCategoryNames(sourceData: Excel.Range): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sourceData
+          description: The Range object corresponding to the source data.
+          type:
+            - Excel.Range
+  - uid: excel.Excel.ChartAxis.setCustomDisplayUnit
+    summary: |-
+      Sets the axis display unit to a custom value.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: setCustomDisplayUnit(value)
+    fullName: excel.Excel.ChartAxis.setCustomDisplayUnit
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setCustomDisplayUnit(value: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: value
+          description: Custom value of the display unit
+          type:
+            - number
+  - uid: excel.Excel.ChartAxis.showDisplayUnitLabel
+    summary: |-
+      Represents whether the axis display unit label is visible.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: showDisplayUnitLabel
+    fullName: excel.Excel.ChartAxis.showDisplayUnitLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showDisplayUnitLabel: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartAxis.tickLabelPosition
+    summary: >-
+      Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for
+      details.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: tickLabelPosition
+    fullName: excel.Excel.ChartAxis.tickLabelPosition
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tickLabelPosition: Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None";'
+      return:
+        type:
+          - Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None"
+  - uid: excel.Excel.ChartAxis.tickLabelSpacing
+    summary: >-
+      Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
+      empty string for automatic setting. The returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: tickLabelSpacing
+    fullName: excel.Excel.ChartAxis.tickLabelSpacing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tickLabelSpacing: any;'
+      return:
+        type:
+          - any
+  - uid: excel.Excel.ChartAxis.tickMarkSpacing
+    summary: |-
+      Represents the number of categories or series between tick marks.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: tickMarkSpacing
+    fullName: excel.Excel.ChartAxis.tickMarkSpacing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tickMarkSpacing: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.ChartAxis.title
     summary: |-
-      Represents the axis title. Read-only.
+      Represents the axis title.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: title
@@ -211,18 +554,70 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ChartAxisData;'
       return:
         type:
-          - |-
-            {
-                        "format": ChartAxisFormat;
-                        "majorGridlines": ChartGridlines;
-                        "majorUnit": any;
-                        "maximum": any;
-                        "minimum": any;
-                        "minorGridlines": ChartGridlines;
-                        "minorUnit": any;
-                        "title": ChartAxisTitle;
-                    }
+          - Excel.Interfaces.ChartAxisData
         description: ''
+  - uid: excel.Excel.ChartAxis.top
+    summary: >-
+      Represents the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis's not
+      visible.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: top
+    fullName: excel.Excel.ChartAxis.top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly top: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartAxis.type
+    summary: |-
+      Represents the axis type. See Excel.ChartAxisType for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: type
+    fullName: excel.Excel.ChartAxis.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series";'
+      return:
+        type:
+          - Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series"
+  - uid: excel.Excel.ChartAxis.visible
+    summary: |-
+      A boolean value represents the visibility of the axis.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: visible
+    fullName: excel.Excel.ChartAxis.visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartAxis.width
+    summary: |-
+      Represents the width, in points, of the chart axis. Null if the axis's not visible.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: width
+    fullName: excel.Excel.ChartAxis.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number

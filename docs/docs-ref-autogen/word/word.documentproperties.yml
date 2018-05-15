@@ -48,7 +48,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'applicationName: string;'
+      content: 'readonly applicationName: string;'
       return:
         type:
           - string
@@ -123,7 +123,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'creationDate: Date;'
+      content: 'readonly creationDate: Date;'
       return:
         type:
           - Date
@@ -138,7 +138,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'customProperties: Word.CustomPropertyCollection;'
+      content: 'readonly customProperties: Word.CustomPropertyCollection;'
       return:
         type:
           - Word.CustomPropertyCollection
@@ -183,7 +183,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'lastAuthor: string;'
+      content: 'readonly lastAuthor: string;'
       return:
         type:
           - string
@@ -198,7 +198,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'lastPrintDate: Date;'
+      content: 'readonly lastPrintDate: Date;'
       return:
         type:
           - Date
@@ -213,7 +213,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'lastSaveTime: Date;'
+      content: 'readonly lastSaveTime: Date;'
       return:
         type:
           - Date
@@ -227,7 +227,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.DocumentProperties;'
+      content: 'load(option?: Word.Interfaces.DocumentPropertiesLoadOptions): Word.DocumentProperties;'
       return:
         type:
           - Word.DocumentProperties
@@ -236,7 +236,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Word.Interfaces.DocumentPropertiesLoadOptions
   - uid: word.Word.DocumentProperties.manager
     summary: |-
       Gets or sets the manager of the document.
@@ -263,7 +263,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'revisionNumber: string;'
+      content: 'readonly revisionNumber: string;'
       return:
         type:
           - string
@@ -278,7 +278,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'security: number;'
+      content: 'readonly security: number;'
       return:
         type:
           - number
@@ -290,10 +290,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.DocumentPropertiesUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.DocumentPropertiesUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -306,13 +303,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: word.Word.DocumentProperties.subject
     summary: |-
       Gets or sets the subject of the document.
@@ -339,7 +330,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'template: string;'
+      content: 'readonly template: string;'
       return:
         type:
           - string
@@ -365,29 +356,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Word.Interfaces.DocumentPropertiesData;'
       return:
         type:
-          - |-
-            {
-                        "applicationName": string;
-                        "author": string;
-                        "category": string;
-                        "comments": string;
-                        "company": string;
-                        "creationDate": Date;
-                        "format": string;
-                        "keywords": string;
-                        "lastAuthor": string;
-                        "lastPrintDate": Date;
-                        "lastSaveTime": Date;
-                        "manager": string;
-                        "revisionNumber": string;
-                        "security": number;
-                        "subject": string;
-                        "template": string;
-                        "title": string;
-                    }
+          - Word.Interfaces.DocumentPropertiesData
         description: ''
   - uid: word.Word.DocumentProperties.track
     summary: >-

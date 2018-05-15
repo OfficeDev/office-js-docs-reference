@@ -15,11 +15,13 @@ items:
     package: excel
     children:
       - excel.Excel.Chart.axes
+      - excel.Excel.Chart.chartType
       - excel.Excel.Chart.dataLabels
       - excel.Excel.Chart.delete
       - excel.Excel.Chart.format
       - excel.Excel.Chart.getImage
       - excel.Excel.Chart.height
+      - excel.Excel.Chart.id
       - excel.Excel.Chart.left
       - excel.Excel.Chart.legend
       - excel.Excel.Chart.load
@@ -28,6 +30,7 @@ items:
       - excel.Excel.Chart.set
       - excel.Excel.Chart.setData
       - excel.Excel.Chart.setPosition
+      - excel.Excel.Chart.showAllFieldButtons
       - excel.Excel.Chart.title
       - excel.Excel.Chart.toJSON
       - excel.Excel.Chart.top
@@ -35,7 +38,7 @@ items:
       - excel.Excel.Chart.worksheet
   - uid: excel.Excel.Chart.axes
     summary: |-
-      Represents chart axes. Read-only.
+      Represents chart axes.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: axes
@@ -48,9 +51,51 @@ items:
       return:
         type:
           - Excel.ChartAxes
+  - uid: excel.Excel.Chart.chartType
+    summary: |-
+      Represents the type of the chart. See Excel.ChartType for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: chartType
+    fullName: excel.Excel.Chart.chartType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        chartType: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" |
+        "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100"
+        | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
+        "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" |
+        "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" |
+        "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" |
+        "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" |
+        "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" |
+        "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" |
+        "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" |
+        "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
+        "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" |
+        "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar";
+      return:
+        type:
+          - >-
+            Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered"
+            | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" |
+            "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
+            "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" |
+            "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" |
+            "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" |
+            "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" |
+            "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" |
+            "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" |
+            "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered"
+            | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" |
+            "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" |
+            "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
+            "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar"
   - uid: excel.Excel.Chart.dataLabels
     summary: |-
-      Represents the datalabels on the chart. Read-only.
+      Represents the datalabels on the chart.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: dataLabels
@@ -124,7 +169,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getImage(width?: number, height?: number, fittingMode?: string): OfficeExtension.ClientResult<string>;'
+      content: >-
+        getImage(width?: number, height?: number, fittingMode?: Excel.ImageFittingMode):
+        OfficeExtension.ClientResult<string>;
       return:
         type:
           - OfficeExtension.ClientResult<string>
@@ -143,7 +190,7 @@ items:
             (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height
             and width are set)."
           type:
-            - string
+            - Excel.ImageFittingMode
     remarks: |
 
 
@@ -176,6 +223,21 @@ items:
       return:
         type:
           - number
+  - uid: excel.Excel.Chart.id
+    summary: |-
+      The unique id of chart. Read-only.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: id
+    fullName: excel.Excel.Chart.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
   - uid: excel.Excel.Chart.left
     summary: |-
       The distance, in points, from the left side of the chart to the worksheet origin.
@@ -193,7 +255,7 @@ items:
           - number
   - uid: excel.Excel.Chart.legend
     summary: |-
-      Represents the legend for the chart. Read-only.
+      Represents the legend for the chart.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: legend
@@ -216,7 +278,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Chart;'
+      content: 'load(option?: Excel.Interfaces.ChartLoadOptions): Excel.Chart;'
       return:
         type:
           - Excel.Chart
@@ -225,7 +287,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ChartLoadOptions
   - uid: excel.Excel.Chart.name
     summary: |-
       Represents the name of a chart object.
@@ -243,7 +305,7 @@ items:
           - string
   - uid: excel.Excel.Chart.series
     summary: |-
-      Represents either a single series or collection of series in the chart. Read-only.
+      Represents either a single series or collection of series in the chart.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: series
@@ -264,10 +326,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ChartUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.ChartUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -280,13 +339,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.Chart.setData
     summary: |-
       Resets the source data for the chart.
@@ -298,22 +351,22 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setData(sourceData: Excel.Range, seriesBy?: string): void;'
+      content: 'setData(sourceData: Excel.Range | string, seriesBy?: Excel.ChartSeriesBy): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: sourceData
-          description: The Range object corresponding to the source data.
+          description: The range corresponding to the source data.
           type:
-            - Excel.Range
+            - Excel.Range | string
         - id: seriesBy
           description: >-
             Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
             (default), Rows, Columns. See Excel.ChartSeriesBy for details.
           type:
-            - string
+            - Excel.ChartSeriesBy
     remarks: |
 
 
@@ -384,11 +437,24 @@ items:
               }
       });
       ```
-  - uid: excel.Excel.Chart.title
-    summary: >-
-      Represents the title of the specified chart, including the text, visibility, position and formating of the title.
-      Read-only.
+  - uid: excel.Excel.Chart.showAllFieldButtons
+    summary: |-
+      Represents whether to display all field buttons on a PivotChart.
 
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: showAllFieldButtons
+    fullName: excel.Excel.Chart.showAllFieldButtons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAllFieldButtons: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Chart.title
+    summary: |-
+      Represents the title of the specified chart, including the text, visibility, position and formating of the title.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: title
@@ -408,22 +474,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ChartData;'
       return:
         type:
-          - |-
-            {
-                        "axes": ChartAxes;
-                        "dataLabels": ChartDataLabels;
-                        "format": ChartAreaFormat;
-                        "height": number;
-                        "left": number;
-                        "legend": ChartLegend;
-                        "name": string;
-                        "title": ChartTitle;
-                        "top": number;
-                        "width": number;
-                    }
+          - Excel.Interfaces.ChartData
         description: ''
   - uid: excel.Excel.Chart.top
     summary: >-
@@ -459,7 +513,7 @@ items:
           - number
   - uid: excel.Excel.Chart.worksheet
     summary: |-
-      The worksheet containing the current chart. Read-only.
+      The worksheet containing the current chart.
 
       \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: worksheet

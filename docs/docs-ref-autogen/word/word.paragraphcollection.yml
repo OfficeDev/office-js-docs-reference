@@ -95,10 +95,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Word.Paragraph>;'
+      content: 'readonly items: Word.Paragraph[];'
       return:
         type:
-          - Array<Word.Paragraph>
+          - 'Word.Paragraph[]'
   - uid: word.Word.ParagraphCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -109,7 +109,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.ParagraphCollection;'
+      content: >-
+        load(option?: Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.ParagraphCollection;
       return:
         type:
           - Word.ParagraphCollection
@@ -118,7 +120,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
   - uid: word.Word.ParagraphCollection.toJSON
     name: toJSON()
     fullName: word.Word.ParagraphCollection.toJSON
@@ -126,10 +128,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Word.Interfaces.ParagraphCollectionData;'
       return:
         type:
-          - '{}'
+          - Word.Interfaces.ParagraphCollectionData
         description: ''
   - uid: word.Word.ParagraphCollection.track
     summary: >-

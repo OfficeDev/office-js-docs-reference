@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartAxisType
+    summary: '\[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]'
+    name: Excel.ChartAxisType
+    fullName: excel.Excel.ChartAxisType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartAxisType.category
+      - excel.Excel.ChartAxisType.invalid
+      - excel.Excel.ChartAxisType.series
+      - excel.Excel.ChartAxisType.value
+  - uid: excel.Excel.ChartAxisType.category
+    summary: Axis displays categories.
+    name: category
+    fullName: excel.Excel.ChartAxisType.category
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Category"'
+  - uid: excel.Excel.ChartAxisType.invalid
+    name: invalid
+    fullName: excel.Excel.ChartAxisType.invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: excel.Excel.ChartAxisType.series
+    summary: Axis displays data series.
+    name: series
+    fullName: excel.Excel.ChartAxisType.series
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Series"'
+  - uid: excel.Excel.ChartAxisType.value
+    summary: Axis displays values.
+    name: value
+    fullName: excel.Excel.ChartAxisType.value
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Value"'
