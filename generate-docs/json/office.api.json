@@ -42,8 +42,25 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
-          "remarks": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "An object which encapsulates the result of an asynchronous request, including status and error information if the request failed."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "**Hosts**: Access, Excel, Outlook, PowerPoint, Project, Word **Last changed in**: 1.1"
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "When the function you pass to the callback parameter of an \"Async\" method executes, it receives an AsyncResult object that you can access from the callback function's only parameter."
+            }
+          ],
           "isBeta": false,
           "members": {
             "asyncContext": {
@@ -54,7 +71,19 @@
               "isStatic": false,
               "type": "any",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state as it was passed in. This the user-defined item (which can be of any JavaScript type: String, Number, Boolean, Object, Array, Null, or Undefined) passed to the optional `asyncContext` parameter of the invoked method. Returns Undefined, if you didn't pass anything to the asyncContext parameter."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "**Hosts**: Access, Excel, Outlook, PowerPoint, Project, Word **Last changed in**: 1.1"
+                }
+              ],
               "remarks": [],
               "isBeta": false
             },
@@ -66,7 +95,19 @@
               "isStatic": false,
               "type": "Error",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets an [Error](error.md) object that provides a description of the error, if any error occurred."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "**Hosts**: Access, Excel, Outlook, PowerPoint, Project, Word **Last changed in**: 1.1"
+                }
+              ],
               "remarks": [],
               "isBeta": false
             },
@@ -78,7 +119,19 @@
               "isStatic": false,
               "type": "AsyncResultStatus",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the [AsyncResultStatus](asyncresultstatus.md) of the asynchronous operation."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "**Hosts**: Access, Excel, Outlook, PowerPoint, Project, Word **Last changed in**: 1.1"
+                }
+              ],
               "remarks": [],
               "isBeta": false
             },
@@ -90,8 +143,25 @@
               "isStatic": false,
               "type": "any",
               "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the payload or content of this asynchronous operation, if any. Note: What the value property returns for a particular \"Async\" method varies depending on the purpose and context of that method. To determine what is returned by the value property for an \"Async\" method, refer to the \"Callback value\" section of the method's topic. For a complete listing of the \"Async\" methods, see the Remarks section of the AsyncResult object topic."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "**Hosts**: Access, Excel, Outlook, PowerPoint, Project, Word **Last changed in**: 1.1"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "You access the AsyncResult object in the function passed as the argument to the callback parameter of an \"Async\" method, such as the `getSelectedDataAsync` and `setSelectedDataAsync` methods of the Document object."
+                }
+              ],
               "isBeta": false
             }
           }
@@ -2899,6 +2969,13 @@
             {
               "kind": "text",
               "text": "Provides specific information about an error that occurred during an asynchronous data operation."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "Remarks: The Error object is accessed from the AsyncResult object that is returned in the function passed as the callback argument of an asynchronous data operation, such as the setSelectedDataAsync method of the Document object."
             }
           ],
           "remarks": [],
@@ -10551,7 +10628,7 @@
               "isOptional": true,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "{\n            [name: string]: string;\n        }",
+              "type": "{\r\n            [name: string]: string;\r\n        }",
               "deprecatedMessage": [],
               "summary": [
                 {

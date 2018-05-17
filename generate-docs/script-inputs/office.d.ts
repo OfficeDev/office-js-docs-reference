@@ -116,10 +116,47 @@ declare namespace Office {
         Universal
     }
     // Objects
-    export interface AsyncResult {
+        /**
+		* An object which encapsulates the result of an asynchronous request, including status and error information if the request failed.
+		* 
+		* **Hosts**: Access, Excel, Outlook, PowerPoint, Project, Word
+        * **Last changed in**: 1.1
+        * 
+        * @remarks
+        * When the function you pass to the callback parameter of an "Async" method executes, it receives an AsyncResult object that you can access from the callback function's only parameter.
+		*/
+        export interface AsyncResult {
+        /**
+        * Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state as it was passed in. This the user-defined item (which can be of any JavaScript type: String, Number, Boolean, Object, Array, Null, or Undefined) passed to the optional `asyncContext` parameter of the invoked method. Returns Undefined, if you didn't pass anything to the asyncContext parameter.
+        * 
+        * **Hosts**: Access, Excel, Outlook, PowerPoint, Project, Word
+        * **Last changed in**: 1.1
+        */
         asyncContext: any;
+        /**
+        * Gets the [AsyncResultStatus](asyncresultstatus.md) of the asynchronous operation.
+        * 
+        * **Hosts**: Access, Excel, Outlook, PowerPoint, Project, Word
+        * **Last changed in**: 1.1
+        */
         status: AsyncResultStatus;
+        /**
+        * Gets an [Error](error.md) object that provides a description of the error, if any error occurred.
+        * 
+        * **Hosts**: Access, Excel, Outlook, PowerPoint, Project, Word
+        * **Last changed in**: 1.1
+        */
         error: Error;
+        /**
+        * Gets the payload or content of this asynchronous operation, if any.
+        * Note: What the value property returns for a particular "Async" method varies depending on the purpose and context of that method. To determine what is returned by the value property for an "Async" method, refer to the "Callback value" section of the method's topic. For a complete listing of the "Async" methods, see the Remarks section of the AsyncResult object topic.
+        * 
+        * **Hosts**: Access, Excel, Outlook, PowerPoint, Project, Word
+        * **Last changed in**: 1.1
+        * 
+        * @remarks
+        * You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async" method, such as the `getSelectedDataAsync` and `setSelectedDataAsync` methods of the Document object.
+        */
         value: any;
     }
     export interface Context {
@@ -148,6 +185,8 @@ declare namespace Office {
     }
     /**
      * Provides specific information about an error that occurred during an asynchronous data operation.
+     * 
+     * Remarks: The Error object is accessed from the AsyncResult object that is returned in the function passed as the callback argument of an asynchronous data operation, such as the setSelectedDataAsync method of the Document object.
      */
     export interface Error {
         /**

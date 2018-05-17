@@ -194,10 +194,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.PageContentUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: "set(properties: Interfaces.PageContentUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
       return:
         type:
           - void
@@ -210,13 +207,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
   - uid: onenote.OneNote.PageContent.toJSON
     name: toJSON()
     fullName: onenote.OneNote.PageContent.toJSON

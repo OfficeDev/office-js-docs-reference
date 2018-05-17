@@ -64,7 +64,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ApplicationUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.ApplicationUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -85,7 +85,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -428,7 +428,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.CommentUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.CommentUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -449,7 +449,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -1004,7 +1004,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.DocumentUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.DocumentUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1025,7 +1025,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -1346,7 +1346,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.DocumentViewUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.DocumentViewUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1367,7 +1367,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -2083,7 +2083,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.PageUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.PageUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2104,7 +2104,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -2653,7 +2653,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.PageViewUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.PageViewUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -2674,7 +2674,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -3320,7 +3320,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ShapeUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.ShapeUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3341,7 +3341,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -4306,7 +4306,7 @@
             },
             "set": {
               "kind": "method",
-              "signature": "set(properties: Interfaces.ShapeViewUpdateData, options?: {\n            throwOnReadOnly?: boolean;\n        }): void;",
+              "signature": "set(properties: Interfaces.ShapeViewUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4327,7 +4327,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            /**\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\n             */\n            throwOnReadOnly?: boolean;\n        }"
+                  "type": "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],

@@ -48,10 +48,7 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - |-
-            {
-                        [key: string]: string;
-                    }
+          - "{\r\n            [key: string]: string;\r\n        }"
         description: ''
   - uid: excel.Excel.WorkbookProtection.unprotect
     summary: |-

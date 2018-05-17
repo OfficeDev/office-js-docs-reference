@@ -127,10 +127,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ShapeViewUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: "set(properties: Interfaces.ShapeViewUpdateData, options?: {\r\n            throwOnReadOnly?: boolean;\r\n        }): void;"
       return:
         type:
           - void
@@ -143,13 +140,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - "{\r\n            /**\r\n             * Throw an error if the passed-in property list includes read-only properties (default = true).\r\n             */\r\n            throwOnReadOnly?: boolean;\r\n        }"
   - uid: visio.Visio.ShapeView.toJSON
     name: toJSON()
     fullName: visio.Visio.ShapeView.toJSON

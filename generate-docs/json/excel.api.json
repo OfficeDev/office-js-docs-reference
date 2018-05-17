@@ -6505,7 +6505,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\n            [key: string]: string;\n        }",
+                "type": "{\r\n            [key: string]: string;\r\n        }",
                 "description": []
               },
               "parameters": {},
@@ -18714,7 +18714,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\n            [key: string]: string;\n        }",
+                "type": "{\r\n            [key: string]: string;\r\n        }",
                 "description": []
               },
               "parameters": {},
@@ -40911,7 +40911,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\n            [key: string]: string;\n        }",
+                "type": "{\r\n            [key: string]: string;\r\n        }",
                 "description": []
               },
               "parameters": {},
@@ -49023,7 +49023,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\n            [key: string]: string;\n        }",
+                "type": "{\r\n            [key: string]: string;\r\n        }",
                 "description": []
               },
               "parameters": {},
@@ -49972,7 +49972,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\n            [key: string]: string;\n        }",
+                "type": "{\r\n            [key: string]: string;\r\n        }",
                 "description": []
               },
               "parameters": {},
@@ -50048,7 +50048,7 @@
           "members": {
             "__constructor": {
               "kind": "constructor",
-              "signature": "constructor(workbookUrl?: string, requestHeaders?: {\n            [name: string]: string;\n        }, persisted?: boolean);",
+              "signature": "constructor(workbookUrl?: string, requestHeaders?: {\r\n            [name: string]: string;\r\n        }, persisted?: boolean);",
               "parameters": {
                 "workbookUrl": {
                   "name": "workbookUrl",
@@ -50062,7 +50062,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            [name: string]: string;\n        }"
+                  "type": "{\r\n            [name: string]: string;\r\n        }"
                 },
                 "persisted": {
                   "name": "persisted",
@@ -56300,7 +56300,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\n            [key: string]: string;\n        }",
+                "type": "{\r\n            [key: string]: string;\r\n        }",
                 "description": []
               },
               "parameters": {},
@@ -58611,7 +58611,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\n            [key: string]: string;\n        }",
+                "type": "{\r\n            [key: string]: string;\r\n        }",
                 "description": []
               },
               "parameters": {},
