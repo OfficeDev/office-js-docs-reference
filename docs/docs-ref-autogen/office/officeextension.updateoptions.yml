@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeExtension.UpdateOptions
+    name: OfficeExtension.UpdateOptions
+    fullName: office.OfficeExtension.UpdateOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.OfficeExtension.UpdateOptions.throwOnReadOnly
+  - uid: office.OfficeExtension.UpdateOptions.throwOnReadOnly
+    summary: Throw an error if the passed-in property list includes read-only properties (default = true).
+    name: throwOnReadOnly
+    fullName: office.OfficeExtension.UpdateOptions.throwOnReadOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'throwOnReadOnly?: boolean;'
+      return:
+        type:
+          - boolean

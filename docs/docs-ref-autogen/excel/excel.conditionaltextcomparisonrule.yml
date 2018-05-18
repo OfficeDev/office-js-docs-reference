@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a Cell Value Conditional Format Rule
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.ConditionalTextComparisonRule
     fullName: excel.Excel.ConditionalTextComparisonRule
     langs:
@@ -18,22 +18,22 @@ items:
     summary: |-
       The operator of the text conditional format.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: operator
     fullName: excel.Excel.ConditionalTextComparisonRule.operator
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'operator: string;'
+      content: 'operator: Excel.ConditionalTextOperator | "Invalid" | "Contains" | "NotContains" | "BeginsWith" | "EndsWith";'
       return:
         type:
-          - string
+          - Excel.ConditionalTextOperator | "Invalid" | "Contains" | "NotContains" | "BeginsWith" | "EndsWith"
   - uid: excel.Excel.ConditionalTextComparisonRule.text
     summary: |-
       The Text value of conditional format.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: text
     fullName: excel.Excel.ConditionalTextComparisonRule.text
     langs:

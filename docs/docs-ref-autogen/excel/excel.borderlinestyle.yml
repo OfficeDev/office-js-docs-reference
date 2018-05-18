@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.BorderLineStyle
+    summary: '\[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]'
+    name: Excel.BorderLineStyle
+    fullName: excel.Excel.BorderLineStyle
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.BorderLineStyle.continuous
+      - excel.Excel.BorderLineStyle.dash
+      - excel.Excel.BorderLineStyle.dashDot
+      - excel.Excel.BorderLineStyle.dashDotDot
+      - excel.Excel.BorderLineStyle.dot
+      - excel.Excel.BorderLineStyle.double
+      - excel.Excel.BorderLineStyle.none
+      - excel.Excel.BorderLineStyle.slantDashDot
+  - uid: excel.Excel.BorderLineStyle.continuous
+    name: continuous
+    fullName: excel.Excel.BorderLineStyle.continuous
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Continuous"'
+  - uid: excel.Excel.BorderLineStyle.dash
+    name: dash
+    fullName: excel.Excel.BorderLineStyle.dash
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dash"'
+  - uid: excel.Excel.BorderLineStyle.dashDot
+    name: dashDot
+    fullName: excel.Excel.BorderLineStyle.dashDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashDot"'
+  - uid: excel.Excel.BorderLineStyle.dashDotDot
+    name: dashDotDot
+    fullName: excel.Excel.BorderLineStyle.dashDotDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashDotDot"'
+  - uid: excel.Excel.BorderLineStyle.dot
+    name: dot
+    fullName: excel.Excel.BorderLineStyle.dot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dot"'
+  - uid: excel.Excel.BorderLineStyle.double
+    name: double
+    fullName: excel.Excel.BorderLineStyle.double
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Double"'
+  - uid: excel.Excel.BorderLineStyle.none
+    name: none
+    fullName: excel.Excel.BorderLineStyle.none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel.Excel.BorderLineStyle.slantDashDot
+    name: slantDashDot
+    fullName: excel.Excel.BorderLineStyle.slantDashDot
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SlantDashDot"'

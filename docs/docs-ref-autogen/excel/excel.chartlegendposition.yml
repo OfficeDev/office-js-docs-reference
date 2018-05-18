@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartLegendPosition
+    summary: '\[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]'
+    name: Excel.ChartLegendPosition
+    fullName: excel.Excel.ChartLegendPosition
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartLegendPosition.bottom
+      - excel.Excel.ChartLegendPosition.corner
+      - excel.Excel.ChartLegendPosition.custom
+      - excel.Excel.ChartLegendPosition.invalid
+      - excel.Excel.ChartLegendPosition.left
+      - excel.Excel.ChartLegendPosition.right
+      - excel.Excel.ChartLegendPosition.top
+  - uid: excel.Excel.ChartLegendPosition.bottom
+    name: bottom
+    fullName: excel.Excel.ChartLegendPosition.bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: excel.Excel.ChartLegendPosition.corner
+    name: corner
+    fullName: excel.Excel.ChartLegendPosition.corner
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Corner"'
+  - uid: excel.Excel.ChartLegendPosition.custom
+    name: custom
+    fullName: excel.Excel.ChartLegendPosition.custom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Custom"'
+  - uid: excel.Excel.ChartLegendPosition.invalid
+    name: invalid
+    fullName: excel.Excel.ChartLegendPosition.invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: excel.Excel.ChartLegendPosition.left
+    name: left
+    fullName: excel.Excel.ChartLegendPosition.left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: excel.Excel.ChartLegendPosition.right
+    name: right
+    fullName: excel.Excel.ChartLegendPosition.right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'
+  - uid: excel.Excel.ChartLegendPosition.top
+    name: top
+    fullName: excel.Excel.ChartLegendPosition.top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

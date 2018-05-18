@@ -17,6 +17,7 @@ items:
       - onenote.OneNote.SectionGroup.addSection
       - onenote.OneNote.SectionGroup.addSectionGroup
       - onenote.OneNote.SectionGroup.clientUrl
+      - onenote.OneNote.SectionGroup.getRestApiId
       - onenote.OneNote.SectionGroup.id
       - onenote.OneNote.SectionGroup.load
       - onenote.OneNote.SectionGroup.name
@@ -25,8 +26,14 @@ items:
       - onenote.OneNote.SectionGroup.parentSectionGroupOrNull
       - onenote.OneNote.SectionGroup.sectionGroups
       - onenote.OneNote.SectionGroup.sections
+      - onenote.OneNote.SectionGroup.toJSON
+      - onenote.OneNote.SectionGroup.track
+      - onenote.OneNote.SectionGroup.untrack
   - uid: onenote.OneNote.SectionGroup.addSection
-    summary: Adds a new section to the end of the section group.
+    summary: |-
+      Adds a new section to the end of the section group.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: addSection(title)
     fullName: onenote.OneNote.SectionGroup.addSection
     langs:
@@ -40,7 +47,7 @@ items:
         description: ''
       parameters:
         - id: title
-          description: 'The name of the new section. \[Api set: OneNoteApi 1.1\]'
+          description: The name of the new section.
           type:
             - string
     remarks: |
@@ -79,7 +86,10 @@ items:
       });
       ```
   - uid: onenote.OneNote.SectionGroup.addSectionGroup
-    summary: Adds a new section group to the end of this sectionGroup.
+    summary: |-
+      Adds a new section group to the end of this sectionGroup.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: addSectionGroup(name)
     fullName: onenote.OneNote.SectionGroup.addSectionGroup
     langs:
@@ -93,7 +103,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: 'The name of the new section. \[Api set: OneNoteApi 1.1\]'
+          description: The name of the new section.
           type:
             - string
     remarks: |
@@ -149,10 +159,26 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'clientUrl: string;'
+      content: 'readonly clientUrl: string;'
       return:
         type:
           - string
+  - uid: onenote.OneNote.SectionGroup.getRestApiId
+    summary: |-
+      Gets the REST API ID.
+
+      \[ [API set: OneNoteApi](http://bing.com?type=onenote) \]
+    name: getRestApiId()
+    fullName: onenote.OneNote.SectionGroup.getRestApiId
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRestApiId(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
   - uid: onenote.OneNote.SectionGroup.id
     summary: |-
       Gets the ID of the section group. Read-only.
@@ -164,7 +190,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type:
           - string
@@ -178,7 +204,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.SectionGroup;'
+      content: 'load(option?: OneNote.Interfaces.SectionGroupLoadOptions): OneNote.SectionGroup;'
       return:
         type:
           - OneNote.SectionGroup
@@ -187,7 +213,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.SectionGroupLoadOptions
   - uid: onenote.OneNote.SectionGroup.name
     summary: |-
       Gets the name of the section group. Read-only.
@@ -199,7 +225,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'name: string;'
+      content: 'readonly name: string;'
       return:
         type:
           - string
@@ -214,7 +240,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'notebook: OneNote.Notebook;'
+      content: 'readonly notebook: OneNote.Notebook;'
       return:
         type:
           - OneNote.Notebook
@@ -231,7 +257,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentSectionGroup: OneNote.SectionGroup;'
+      content: 'readonly parentSectionGroup: OneNote.SectionGroup;'
       return:
         type:
           - OneNote.SectionGroup
@@ -248,7 +274,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentSectionGroupOrNull: OneNote.SectionGroup;'
+      content: 'readonly parentSectionGroupOrNull: OneNote.SectionGroup;'
       return:
         type:
           - OneNote.SectionGroup
@@ -263,7 +289,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'sectionGroups: OneNote.SectionGroupCollection;'
+      content: 'readonly sectionGroups: OneNote.SectionGroupCollection;'
       return:
         type:
           - OneNote.SectionGroupCollection
@@ -278,7 +304,54 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'sections: OneNote.SectionCollection;'
+      content: 'readonly sections: OneNote.SectionCollection;'
       return:
         type:
           - OneNote.SectionCollection
+  - uid: onenote.OneNote.SectionGroup.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.SectionGroup.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.SectionGroupData;'
+      return:
+        type:
+          - OneNote.Interfaces.SectionGroupData
+        description: ''
+  - uid: onenote.OneNote.SectionGroup.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.SectionGroup.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.SectionGroup;'
+      return:
+        type:
+          - OneNote.SectionGroup
+        description: ''
+  - uid: onenote.OneNote.SectionGroup.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.SectionGroup.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.SectionGroup;'
+      return:
+        type:
+          - OneNote.SectionGroup
+        description: ''

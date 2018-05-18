@@ -20,7 +20,7 @@ items:
       - excel.Excel.ChartAxisTitleFormat.toJSON
   - uid: excel.Excel.ChartAxisTitleFormat.font
     summary: |-
-      Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.
+      Represents the font attributes, such as font name, font size, color, etc. of chart axis title object.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: font
@@ -43,7 +43,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartAxisTitleFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions): Excel.ChartAxisTitleFormat;'
       return:
         type:
           - Excel.ChartAxisTitleFormat
@@ -52,7 +52,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ChartAxisTitleFormatLoadOptions
   - uid: excel.Excel.ChartAxisTitleFormat.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -61,10 +61,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ChartAxisTitleFormatUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.ChartAxisTitleFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -77,13 +74,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartAxisTitleFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartAxisTitleFormat.toJSON
@@ -91,11 +82,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ChartAxisTitleFormatData;'
       return:
         type:
-          - |-
-            {
-                        "font": ChartFont;
-                    }
+          - Excel.Interfaces.ChartAxisTitleFormatData
         description: ''

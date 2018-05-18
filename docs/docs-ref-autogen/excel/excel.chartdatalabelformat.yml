@@ -21,7 +21,7 @@ items:
       - excel.Excel.ChartDataLabelFormat.toJSON
   - uid: excel.Excel.ChartDataLabelFormat.fill
     summary: |-
-      Represents the fill format of the current chart data label. Read-only.
+      Represents the fill format of the current chart data label.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: fill
@@ -36,7 +36,7 @@ items:
           - Excel.ChartFill
   - uid: excel.Excel.ChartDataLabelFormat.font
     summary: |-
-      Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
+      Represents the font attributes (font name, font size, color, etc.) for a chart data label.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: font
@@ -59,7 +59,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartDataLabelFormat;'
+      content: 'load(option?: Excel.Interfaces.ChartDataLabelFormatLoadOptions): Excel.ChartDataLabelFormat;'
       return:
         type:
           - Excel.ChartDataLabelFormat
@@ -68,7 +68,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ChartDataLabelFormatLoadOptions
   - uid: excel.Excel.ChartDataLabelFormat.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -77,10 +77,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ChartDataLabelFormatUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.ChartDataLabelFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -93,13 +90,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartDataLabelFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartDataLabelFormat.toJSON
@@ -107,12 +98,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ChartDataLabelFormatData;'
       return:
         type:
-          - |-
-            {
-                        "fill": ChartFill;
-                        "font": ChartFont;
-                    }
+          - Excel.Interfaces.ChartDataLabelFormatData
         description: ''

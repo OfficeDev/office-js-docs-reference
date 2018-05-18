@@ -15,19 +15,32 @@ items:
     package: onenote
     children:
       - onenote.OneNote.Page.addOutline
+      - onenote.OneNote.Page.analyzePage
+      - onenote.OneNote.Page.applyTranslation
+      - onenote.OneNote.Page.classNotebookPageSource
       - onenote.OneNote.Page.clientUrl
       - onenote.OneNote.Page.contents
       - onenote.OneNote.Page.copyToSection
+      - onenote.OneNote.Page.copyToSectionAndSetClassNotebookPageSource
+      - onenote.OneNote.Page.getRestApiId
+      - onenote.OneNote.Page.hasTitleContent
       - onenote.OneNote.Page.id
       - onenote.OneNote.Page.inkAnalysisOrNull
       - onenote.OneNote.Page.insertPageAsSibling
       - onenote.OneNote.Page.load
       - onenote.OneNote.Page.pageLevel
       - onenote.OneNote.Page.parentSection
+      - onenote.OneNote.Page.set
       - onenote.OneNote.Page.title
+      - onenote.OneNote.Page.toJSON
+      - onenote.OneNote.Page.track
+      - onenote.OneNote.Page.untrack
       - onenote.OneNote.Page.webUrl
   - uid: onenote.OneNote.Page.addOutline
-    summary: Adds an Outline to the page at the specified position.
+    summary: |-
+      Adds an Outline to the page at the specified position.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: 'addOutline(left, top, html)'
     fullName: onenote.OneNote.Page.addOutline
     langs:
@@ -52,7 +65,7 @@ items:
           description: >-
             An HTML string that describes the visual presentation of the Outline. See \[supported
             HTML\](../../docs/onenote/onenote-add-ins-page-content.md\#supported-html) for the OneNote add-ins
-            JavaScript API. \[Api set: OneNoteApi 1.1\]
+            JavaScript API.
           type:
             - string
     remarks: |
@@ -95,6 +108,58 @@ items:
               });
       });
       ```
+  - uid: onenote.OneNote.Page.analyzePage
+    summary: |-
+      Return a json string with node id and content in html format.
+
+      \[ [API set: OneNoteApi](http://bing.com?type=onenote) \]
+    name: analyzePage()
+    fullName: onenote.OneNote.Page.analyzePage
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'analyzePage(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+  - uid: onenote.OneNote.Page.applyTranslation
+    summary: |-
+      Inserts a new page with translated content.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: applyTranslation(translatedContent)
+    fullName: onenote.OneNote.Page.applyTranslation
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'applyTranslation(translatedContent: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: translatedContent
+          description: Translated content of the page
+          type:
+            - string
+  - uid: onenote.OneNote.Page.classNotebookPageSource
+    summary: |-
+      Gets the ClassNotebookPageSource to the page.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: classNotebookPageSource
+    fullName: onenote.OneNote.Page.classNotebookPageSource
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly classNotebookPageSource: string;'
+      return:
+        type:
+          - string
   - uid: onenote.OneNote.Page.clientUrl
     summary: |-
       The client url of the page. Read only
@@ -106,7 +171,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'clientUrl: string;'
+      content: 'readonly clientUrl: string;'
       return:
         type:
           - string
@@ -121,12 +186,15 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'contents: OneNote.PageContentCollection;'
+      content: 'readonly contents: OneNote.PageContentCollection;'
       return:
         type:
           - OneNote.PageContentCollection
   - uid: onenote.OneNote.Page.copyToSection
-    summary: Copies this page to specified section.
+    summary: |-
+      Copies this page to specified section.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: copyToSection(destinationSection)
     fullName: onenote.OneNote.Page.copyToSection
     langs:
@@ -140,7 +208,7 @@ items:
         description: ''
       parameters:
         - id: destinationSection
-          description: 'The section to copy this page to. \[Api set: OneNoteApi 1.1\]'
+          description: The section to copy this page to.
           type:
             - OneNote.Section
     remarks: |
@@ -184,6 +252,79 @@ items:
           }
       });
       ```
+  - uid: onenote.OneNote.Page.copyToSectionAndSetClassNotebookPageSource
+    summary: |-
+      Copies this page to specified section and sets ClassNotebookPageSource.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: copyToSectionAndSetClassNotebookPageSource(destinationSection)
+    fullName: onenote.OneNote.Page.copyToSectionAndSetClassNotebookPageSource
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'copyToSectionAndSetClassNotebookPageSource(destinationSection: OneNote.Section): OneNote.Page;'
+      return:
+        type:
+          - OneNote.Page
+        description: ''
+      parameters:
+        - id: destinationSection
+          description: ''
+          type:
+            - OneNote.Section
+  - uid: onenote.OneNote.Page.getRestApiId
+    summary: |-
+      Gets the REST API ID.
+
+      \[ [API set: OneNoteApi](http://bing.com?type=onenote) \]
+    name: getRestApiId()
+    fullName: onenote.OneNote.Page.getRestApiId
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRestApiId(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+
+      OneNote.run(function(ctx){
+          // Get the current page.         
+          var page = ctx.application.getActivePage();
+          var restAPIId = page.getRestApiId();
+
+          return ctx.sync().
+              then(function(){
+                  console.log("The REST API ID is " + restApiId.value);
+                  // Note that the REST API ID isn't all you need to interact with the OneNote REST API. For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to [OneNote Development Blog](https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/)
+                  // (this is only required for SharePoint notebooks, baseUrl will be null for OneDrive notebooks)
+              });
+      });
+      ```
+  - uid: onenote.OneNote.Page.hasTitleContent
+    summary: |-
+      Does the page has content title.
+
+      \[ [API set: OneNoteApi](http://bing.com?type=onenote) \]
+    name: hasTitleContent()
+    fullName: onenote.OneNote.Page.hasTitleContent
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'hasTitleContent(): OfficeExtension.ClientResult<boolean>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<boolean>
+        description: ''
   - uid: onenote.OneNote.Page.id
     summary: |-
       Gets the ID of the page. Read-only.
@@ -195,7 +336,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type:
           - string
@@ -210,12 +351,15 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'inkAnalysisOrNull: OneNote.InkAnalysis;'
+      content: 'readonly inkAnalysisOrNull: OneNote.InkAnalysis;'
       return:
         type:
           - OneNote.InkAnalysis
   - uid: onenote.OneNote.Page.insertPageAsSibling
-    summary: Inserts a new page before or after the current page.
+    summary: |-
+      Inserts a new page before or after the current page.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: 'insertPageAsSibling(location, title)'
     fullName: onenote.OneNote.Page.insertPageAsSibling
     langs:
@@ -233,7 +377,7 @@ items:
           type:
             - string
         - id: title
-          description: 'The title of the new page. \[Api set: OneNoteApi 1.1\]'
+          description: The title of the new page.
           type:
             - string
     remarks: |
@@ -276,7 +420,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.Page;'
+      content: 'load(option?: OneNote.Interfaces.PageLoadOptions): OneNote.Page;'
       return:
         type:
           - OneNote.Page
@@ -285,7 +429,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.PageLoadOptions
   - uid: onenote.OneNote.Page.pageLevel
     summary: |-
       Gets or sets the indentation level of the page.
@@ -312,10 +456,41 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentSection: OneNote.Section;'
+      content: 'readonly parentSection: OneNote.Section;'
       return:
         type:
           - OneNote.Section
+  - uid: onenote.OneNote.Page.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: onenote.OneNote.Page.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        set(properties: Interfaces.PageUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.PageUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
   - uid: onenote.OneNote.Page.title
     summary: |-
       Gets or sets the title of the page.
@@ -331,6 +506,53 @@ items:
       return:
         type:
           - string
+  - uid: onenote.OneNote.Page.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.Page.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.PageData;'
+      return:
+        type:
+          - OneNote.Interfaces.PageData
+        description: ''
+  - uid: onenote.OneNote.Page.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.Page.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.Page;'
+      return:
+        type:
+          - OneNote.Page
+        description: ''
+  - uid: onenote.OneNote.Page.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.Page.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.Page;'
+      return:
+        type:
+          - OneNote.Page
+        description: ''
   - uid: onenote.OneNote.Page.webUrl
     summary: |-
       The web url of the page. Read only
@@ -342,7 +564,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'webUrl: string;'
+      content: 'readonly webUrl: string;'
       return:
         type:
           - string

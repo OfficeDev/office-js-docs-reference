@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.HeaderFooterType
+    summary: '\[ [API set: WordApi](http://bing.com?type=word) \]'
+    name: Word.HeaderFooterType
+    fullName: word.Word.HeaderFooterType
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.HeaderFooterType.evenPages
+      - word.Word.HeaderFooterType.firstPage
+      - word.Word.HeaderFooterType.primary
+  - uid: word.Word.HeaderFooterType.evenPages
+    name: evenPages
+    fullName: word.Word.HeaderFooterType.evenPages
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EvenPages"'
+  - uid: word.Word.HeaderFooterType.firstPage
+    name: firstPage
+    fullName: word.Word.HeaderFooterType.firstPage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FirstPage"'
+  - uid: word.Word.HeaderFooterType.primary
+    name: primary
+    fullName: word.Word.HeaderFooterType.primary
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Primary"'

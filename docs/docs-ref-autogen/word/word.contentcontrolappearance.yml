@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.ContentControlAppearance
+    summary: |-
+      ContentControl appearance
+
+      \[ [API set: WordApi](http://bing.com?type=word) \]
+    name: Word.ContentControlAppearance
+    fullName: word.Word.ContentControlAppearance
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.ContentControlAppearance.boundingBox
+      - word.Word.ContentControlAppearance.hidden
+      - word.Word.ContentControlAppearance.tags
+  - uid: word.Word.ContentControlAppearance.boundingBox
+    name: boundingBox
+    fullName: word.Word.ContentControlAppearance.boundingBox
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BoundingBox"'
+  - uid: word.Word.ContentControlAppearance.hidden
+    name: hidden
+    fullName: word.Word.ContentControlAppearance.hidden
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Hidden"'
+  - uid: word.Word.ContentControlAppearance.tags
+    name: tags
+    fullName: word.Word.ContentControlAppearance.tags
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Tags"'

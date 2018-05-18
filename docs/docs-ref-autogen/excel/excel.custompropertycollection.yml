@@ -1,0 +1,171 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.CustomPropertyCollection
+    summary: |-
+      Contains the collection of customProperty objects.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: Excel.CustomPropertyCollection
+    fullName: excel.Excel.CustomPropertyCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.CustomPropertyCollection.add
+      - excel.Excel.CustomPropertyCollection.deleteAll
+      - excel.Excel.CustomPropertyCollection.getCount
+      - excel.Excel.CustomPropertyCollection.getItem
+      - excel.Excel.CustomPropertyCollection.getItemOrNullObject
+      - excel.Excel.CustomPropertyCollection.items
+      - excel.Excel.CustomPropertyCollection.load
+      - excel.Excel.CustomPropertyCollection.toJSON
+  - uid: excel.Excel.CustomPropertyCollection.add
+    summary: |-
+      Creates a new or sets an existing custom property.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: 'add(key, value)'
+    fullName: excel.Excel.CustomPropertyCollection.add
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(key: string, value: any): Excel.CustomProperty;'
+      return:
+        type:
+          - Excel.CustomProperty
+        description: ''
+      parameters:
+        - id: key
+          description: 'Required. The custom property''s key, which is case-insensitive.'
+          type:
+            - string
+        - id: value
+          description: Required. The custom property's value.
+          type:
+            - any
+  - uid: excel.Excel.CustomPropertyCollection.deleteAll
+    summary: |-
+      Deletes all custom properties in this collection.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: deleteAll()
+    fullName: excel.Excel.CustomPropertyCollection.deleteAll
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteAll(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.CustomPropertyCollection.getCount
+    summary: |-
+      Gets the count of custom properties.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: getCount()
+    fullName: excel.Excel.CustomPropertyCollection.getCount
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: excel.Excel.CustomPropertyCollection.getItem
+    summary: |-
+      Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: getItem(key)
+    fullName: excel.Excel.CustomPropertyCollection.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Excel.CustomProperty;'
+      return:
+        type:
+          - Excel.CustomProperty
+        description: ''
+      parameters:
+        - id: key
+          description: The key that identifies the custom property object.
+          type:
+            - string
+  - uid: excel.Excel.CustomPropertyCollection.getItemOrNullObject
+    summary: >-
+      Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property
+      does not exist.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: getItemOrNullObject(key)
+    fullName: excel.Excel.CustomPropertyCollection.getItemOrNullObject
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(key: string): Excel.CustomProperty;'
+      return:
+        type:
+          - Excel.CustomProperty
+        description: ''
+      parameters:
+        - id: key
+          description: Required. The key that identifies the custom property object.
+          type:
+            - string
+  - uid: excel.Excel.CustomPropertyCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: excel.Excel.CustomPropertyCollection.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.CustomProperty[];'
+      return:
+        type:
+          - 'Excel.CustomProperty[]'
+  - uid: excel.Excel.CustomPropertyCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.CustomPropertyCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: Excel.Interfaces.CustomPropertyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.CustomPropertyCollection;
+      return:
+        type:
+          - Excel.CustomPropertyCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.CustomPropertyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.CustomPropertyCollection.toJSON
+    name: toJSON()
+    fullName: excel.Excel.CustomPropertyCollection.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.CustomPropertyCollectionData;'
+      return:
+        type:
+          - Excel.Interfaces.CustomPropertyCollectionData
+        description: ''

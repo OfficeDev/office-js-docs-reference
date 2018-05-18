@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.ErrorCodes
+    name: Word.ErrorCodes
+    fullName: word.Word.ErrorCodes
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.ErrorCodes.accessDenied
+      - word.Word.ErrorCodes.generalException
+      - word.Word.ErrorCodes.invalidArgument
+      - word.Word.ErrorCodes.itemNotFound
+      - word.Word.ErrorCodes.notImplemented
+  - uid: word.Word.ErrorCodes.accessDenied
+    name: accessDenied
+    fullName: word.Word.ErrorCodes.accessDenied
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AccessDenied"'
+  - uid: word.Word.ErrorCodes.generalException
+    name: generalException
+    fullName: word.Word.ErrorCodes.generalException
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GeneralException"'
+  - uid: word.Word.ErrorCodes.invalidArgument
+    name: invalidArgument
+    fullName: word.Word.ErrorCodes.invalidArgument
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidArgument"'
+  - uid: word.Word.ErrorCodes.itemNotFound
+    name: itemNotFound
+    fullName: word.Word.ErrorCodes.itemNotFound
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ItemNotFound"'
+  - uid: word.Word.ErrorCodes.notImplemented
+    name: notImplemented
+    fullName: word.Word.ErrorCodes.notImplemented
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NotImplemented"'

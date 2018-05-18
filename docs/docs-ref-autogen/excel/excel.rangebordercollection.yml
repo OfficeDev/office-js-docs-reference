@@ -46,7 +46,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getItem(index: string): Excel.RangeBorder;'
+      content: 'getItem(index: Excel.BorderIndex): Excel.RangeBorder;'
       return:
         type:
           - Excel.RangeBorder
@@ -55,7 +55,7 @@ items:
         - id: index
           description: Index value of the border object to be retrieved. See Excel.BorderIndex for details.
           type:
-            - string
+            - Excel.BorderIndex
     remarks: |
 
 
@@ -153,10 +153,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: Array<Excel.RangeBorder>;'
+      content: 'readonly items: Excel.RangeBorder[];'
       return:
         type:
-          - Array<Excel.RangeBorder>
+          - 'Excel.RangeBorder[]'
   - uid: excel.Excel.RangeBorderCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -167,7 +167,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeBorderCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.RangeBorderCollection;
       return:
         type:
           - Excel.RangeBorderCollection
@@ -176,7 +178,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.RangeBorderCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.RangeBorderCollection.toJSON
@@ -184,11 +186,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.RangeBorderCollectionData;'
       return:
         type:
-          - |-
-            {
-                        "count": number;
-                    }
+          - Excel.Interfaces.RangeBorderCollectionData
         description: ''

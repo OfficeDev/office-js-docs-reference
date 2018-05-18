@@ -9,6 +9,7 @@ items:
     package: office
     children:
       - office.OfficeExtension.EventHandlerResult.constructor
+      - office.OfficeExtension.EventHandlerResult.context
       - office.OfficeExtension.EventHandlerResult.remove
   - uid: office.OfficeExtension.EventHandlerResult.constructor
     summary: 'Constructs a new instance of the [EventHandlerResult](xref:office.OfficeExtension.EventHandlerResult) class'
@@ -18,7 +19,7 @@ items:
       - typeScript
     type: constructor
     syntax:
-      content: 'constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => IPromise<any>);'
+      content: 'constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => Promise<any>);'
       parameters:
         - id: context
           description: ''
@@ -31,7 +32,19 @@ items:
         - id: handler
           description: ''
           type:
-            - '(args: T) => IPromise<any>'
+            - '(args: T) => Promise<any>'
+  - uid: office.OfficeExtension.EventHandlerResult.context
+    summary: The request context associated with the object
+    name: context
+    fullName: office.OfficeExtension.EventHandlerResult.context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: ClientRequestContext;'
+      return:
+        type:
+          - ClientRequestContext
   - uid: office.OfficeExtension.EventHandlerResult.remove
     name: remove()
     fullName: office.OfficeExtension.EventHandlerResult.remove

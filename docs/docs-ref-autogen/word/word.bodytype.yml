@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.BodyType
+    summary: '\[ [API set: WordApi](http://bing.com?type=word) \]'
+    name: Word.BodyType
+    fullName: word.Word.BodyType
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.BodyType.footer
+      - word.Word.BodyType.header
+      - word.Word.BodyType.mainDoc
+      - word.Word.BodyType.section
+      - word.Word.BodyType.tableCell
+      - word.Word.BodyType.unknown
+  - uid: word.Word.BodyType.footer
+    name: footer
+    fullName: word.Word.BodyType.footer
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Footer"'
+  - uid: word.Word.BodyType.header
+    name: header
+    fullName: word.Word.BodyType.header
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Header"'
+  - uid: word.Word.BodyType.mainDoc
+    name: mainDoc
+    fullName: word.Word.BodyType.mainDoc
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"MainDoc"'
+  - uid: word.Word.BodyType.section
+    name: section
+    fullName: word.Word.BodyType.section
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Section"'
+  - uid: word.Word.BodyType.tableCell
+    name: tableCell
+    fullName: word.Word.BodyType.tableCell
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TableCell"'
+  - uid: word.Word.BodyType.unknown
+    name: unknown
+    fullName: word.Word.BodyType.unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'

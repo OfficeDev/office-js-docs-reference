@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.NamedItemType
+    summary: >-
+      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
+      Array](http://bing.com?type=excel) \]
+    name: Excel.NamedItemType
+    fullName: excel.Excel.NamedItemType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.NamedItemType.array
+      - excel.Excel.NamedItemType.boolean
+      - excel.Excel.NamedItemType.double
+      - excel.Excel.NamedItemType.error
+      - excel.Excel.NamedItemType.integer
+      - excel.Excel.NamedItemType.range
+      - excel.Excel.NamedItemType.string
+  - uid: excel.Excel.NamedItemType.array
+    name: array
+    fullName: excel.Excel.NamedItemType.array
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Array"'
+  - uid: excel.Excel.NamedItemType.boolean
+    name: boolean
+    fullName: excel.Excel.NamedItemType.boolean
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Boolean"'
+  - uid: excel.Excel.NamedItemType.double
+    name: double
+    fullName: excel.Excel.NamedItemType.double
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Double"'
+  - uid: excel.Excel.NamedItemType.error
+    name: error
+    fullName: excel.Excel.NamedItemType.error
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Error"'
+  - uid: excel.Excel.NamedItemType.integer
+    name: integer
+    fullName: excel.Excel.NamedItemType.integer
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Integer"'
+  - uid: excel.Excel.NamedItemType.range
+    name: range
+    fullName: excel.Excel.NamedItemType.range
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Range"'
+  - uid: excel.Excel.NamedItemType.string
+    name: string
+    fullName: excel.Excel.NamedItemType.string
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"String"'

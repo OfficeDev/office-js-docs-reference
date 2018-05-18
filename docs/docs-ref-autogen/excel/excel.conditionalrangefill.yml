@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the background of a conditional range object.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.ConditionalRangeFill
     fullName: excel.Excel.ConditionalRangeFill
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Resets the fill.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: clear()
     fullName: excel.Excel.ConditionalRangeFill.clear
     langs:
@@ -41,7 +41,7 @@ items:
       (e.g. "orange").
 
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: color
     fullName: excel.Excel.ConditionalRangeFill.color
     langs:
@@ -62,7 +62,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ConditionalRangeFill;'
+      content: 'load(option?: Excel.Interfaces.ConditionalRangeFillLoadOptions): Excel.ConditionalRangeFill;'
       return:
         type:
           - Excel.ConditionalRangeFill
@@ -71,7 +71,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ConditionalRangeFillLoadOptions
   - uid: excel.Excel.ConditionalRangeFill.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -80,10 +80,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ConditionalRangeFillUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.ConditionalRangeFillUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -96,13 +93,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalRangeFill.toJSON
     name: toJSON()
     fullName: excel.Excel.ConditionalRangeFill.toJSON
@@ -110,11 +101,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ConditionalRangeFillData;'
       return:
         type:
-          - |-
-            {
-                        "color": string;
-                    }
+          - Excel.Interfaces.ConditionalRangeFillData
         description: ''

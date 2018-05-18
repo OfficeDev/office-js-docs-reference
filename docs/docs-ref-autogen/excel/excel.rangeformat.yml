@@ -25,7 +25,10 @@ items:
       - excel.Excel.RangeFormat.protection
       - excel.Excel.RangeFormat.rowHeight
       - excel.Excel.RangeFormat.set
+      - excel.Excel.RangeFormat.textOrientation
       - excel.Excel.RangeFormat.toJSON
+      - excel.Excel.RangeFormat.useStandardHeight
+      - excel.Excel.RangeFormat.useStandardWidth
       - excel.Excel.RangeFormat.verticalAlignment
       - excel.Excel.RangeFormat.wrapText
   - uid: excel.Excel.RangeFormat.autofitColumns
@@ -66,7 +69,7 @@ items:
         description: ''
   - uid: excel.Excel.RangeFormat.borders
     summary: |-
-      Collection of border objects that apply to the overall range. Read-only.
+      Collection of border objects that apply to the overall range.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: borders
@@ -98,7 +101,7 @@ items:
           - number
   - uid: excel.Excel.RangeFormat.fill
     summary: |-
-      Returns the fill object defined on the overall range. Read-only.
+      Returns the fill object defined on the overall range.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: fill
@@ -113,7 +116,7 @@ items:
           - Excel.RangeFill
   - uid: excel.Excel.RangeFormat.font
     summary: |-
-      Returns the font object defined on the overall range. Read-only.
+      Returns the font object defined on the overall range.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: font
@@ -137,10 +140,14 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'horizontalAlignment: string;'
+      content: >-
+        horizontalAlignment: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
+        "CenterAcrossSelection" | "Distributed";
       return:
         type:
-          - string
+          - >-
+            Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
+            "CenterAcrossSelection" | "Distributed"
   - uid: excel.Excel.RangeFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -151,7 +158,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeFormat;'
+      content: 'load(option?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;'
       return:
         type:
           - Excel.RangeFormat
@@ -160,7 +167,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.RangeFormatLoadOptions
   - uid: excel.Excel.RangeFormat.protection
     summary: |-
       Returns the format protection object for a range.
@@ -178,7 +185,7 @@ items:
           - Excel.FormatProtection
   - uid: excel.Excel.RangeFormat.rowHeight
     summary: |-
-      Gets or sets the height of all rows in the range. If the row heights are not uniform null will be returned.
+      Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
 
       \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: rowHeight
@@ -199,10 +206,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.RangeFormatUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.RangeFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -215,13 +219,25 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
+  - uid: excel.Excel.RangeFormat.textOrientation
+    summary: >-
+      Gets or sets the text orientation of all the cells within the range. The text orientation should be an integer
+      either from -90 to 90, or 180 for vertically-oriented text. If the orientation within a range are not uniform,
+      then null will be returned.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: textOrientation
+    fullName: excel.Excel.RangeFormat.textOrientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textOrientation: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.RangeFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.RangeFormat.toJSON
@@ -229,21 +245,47 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.RangeFormatData;'
       return:
         type:
-          - |-
-            {
-                        "columnWidth": number;
-                        "fill": RangeFill;
-                        "font": RangeFont;
-                        "horizontalAlignment": string;
-                        "protection": FormatProtection;
-                        "rowHeight": number;
-                        "verticalAlignment": string;
-                        "wrapText": boolean;
-                    }
+          - Excel.Interfaces.RangeFormatData
         description: ''
+  - uid: excel.Excel.RangeFormat.useStandardHeight
+    summary: >-
+      Determines if the row height of the Range object equals the standard height of the sheet. Returns True if the row
+      height of the Range object equals the standard height of the sheet. Returns Null if the range contains more than
+      one row and the rows aren't all the same height. Returns False otherwise.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: useStandardHeight
+    fullName: excel.Excel.RangeFormat.useStandardHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useStandardHeight: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.RangeFormat.useStandardWidth
+    summary: >-
+      Indicates whether the columnwidth of the Range object equals the standard width of the sheet. Returns True if the
+      column width of the Range object equals the standard width of the sheet. Returns Null if the range contains more
+      than one column and the columns aren't all the same height. Returns False otherwise.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: useStandardWidth
+    fullName: excel.Excel.RangeFormat.useStandardWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useStandardWidth: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.RangeFormat.verticalAlignment
     summary: |-
       Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
@@ -255,10 +297,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'verticalAlignment: string;'
+      content: 'verticalAlignment: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";'
       return:
         type:
-          - string
+          - Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
   - uid: excel.Excel.RangeFormat.wrapText
     summary: >-
       Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform

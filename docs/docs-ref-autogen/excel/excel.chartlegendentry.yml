@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartLegendEntry
+    summary: |-
+      Represents the legendEntry in legendEntryCollection.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: Excel.ChartLegendEntry
+    fullName: excel.Excel.ChartLegendEntry
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.ChartLegendEntry.load
+      - excel.Excel.ChartLegendEntry.set
+      - excel.Excel.ChartLegendEntry.toJSON
+      - excel.Excel.ChartLegendEntry.visible
+  - uid: excel.Excel.ChartLegendEntry.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.ChartLegendEntry.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.ChartLegendEntryLoadOptions): Excel.ChartLegendEntry;'
+      return:
+        type:
+          - Excel.ChartLegendEntry
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.ChartLegendEntryLoadOptions
+  - uid: excel.Excel.ChartLegendEntry.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartLegendEntry.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartLegendEntryUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartLegendEntryUpdateData
+        - id: options
+          description: ''
+          type:
+            - OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ChartLegendEntry.toJSON
+    name: toJSON()
+    fullName: excel.Excel.ChartLegendEntry.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartLegendEntryData;'
+      return:
+        type:
+          - Excel.Interfaces.ChartLegendEntryData
+        description: ''
+  - uid: excel.Excel.ChartLegendEntry.visible
+    summary: |-
+      Represents the visible of a chart legend entry.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: visible
+    fullName: excel.Excel.ChartLegendEntry.visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean

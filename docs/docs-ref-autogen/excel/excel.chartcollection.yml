@@ -34,7 +34,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'add(type: string, sourceData: Excel.Range, seriesBy?: string): Excel.Chart;'
+      content: 'add(type: Excel.ChartType, sourceData: Excel.Range | string, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;'
       return:
         type:
           - Excel.Chart
@@ -43,15 +43,15 @@ items:
         - id: type
           description: Represents the type of a chart. See Excel.ChartType for details.
           type:
-            - string
+            - Excel.ChartType
         - id: sourceData
-          description: The Range object corresponding to the source data.
+          description: The range corresponding to the source data.
           type:
-            - Excel.Range
+            - Excel.Range | string
         - id: seriesBy
           description: Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy for details.
           type:
-            - string
+            - Excel.ChartSeriesBy
     remarks: |
 
 
@@ -245,10 +245,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly items: Array<Excel.Chart>;'
+      content: 'readonly items: Excel.Chart[];'
       return:
         type:
-          - Array<Excel.Chart>
+          - 'Excel.Chart[]'
   - uid: excel.Excel.ChartCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -259,7 +259,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartCollection;'
+      content: >-
+        load(option?: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ChartCollection;
       return:
         type:
           - Excel.ChartCollection
@@ -268,7 +270,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.ChartCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartCollection.toJSON
@@ -276,11 +278,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ChartCollectionData;'
       return:
         type:
-          - |-
-            {
-                        "count": number;
-                    }
+          - Excel.Interfaces.ChartCollectionData
         description: ''

@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.ParagraphInfo
+    summary: |-
+      List information for paragraph.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: OneNote.ParagraphInfo
+    fullName: onenote.OneNote.ParagraphInfo
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.ParagraphInfo.bulletType
+      - onenote.OneNote.ParagraphInfo.index
+      - onenote.OneNote.ParagraphInfo.listType
+      - onenote.OneNote.ParagraphInfo.numberType
+  - uid: onenote.OneNote.ParagraphInfo.bulletType
+    summary: |-
+      // Bullet list type of paragraph
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: bulletType
+    fullName: onenote.OneNote.ParagraphInfo.bulletType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bulletType: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.ParagraphInfo.index
+    summary: |-
+      // Index of paragraph in list
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: index
+    fullName: onenote.OneNote.ParagraphInfo.index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'index: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.ParagraphInfo.listType
+    summary: |-
+      // Type of list in paragraph
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: listType
+    fullName: onenote.OneNote.ParagraphInfo.listType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listType: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.ParagraphInfo.numberType
+    summary: |-
+      // number list type of paragraph
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: numberType
+    fullName: onenote.OneNote.ParagraphInfo.numberType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberType: string;'
+      return:
+        type:
+          - string

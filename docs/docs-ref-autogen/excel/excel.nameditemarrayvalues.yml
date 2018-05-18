@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.NamedItemArrayValues
+    summary: |-
+      Represents an object containing values and types of a named item.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: Excel.NamedItemArrayValues
+    fullName: excel.Excel.NamedItemArrayValues
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.NamedItemArrayValues.load
+      - excel.Excel.NamedItemArrayValues.toJSON
+      - excel.Excel.NamedItemArrayValues.types
+      - excel.Excel.NamedItemArrayValues.values
+  - uid: excel.Excel.NamedItemArrayValues.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.NamedItemArrayValues.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.NamedItemArrayValuesLoadOptions): Excel.NamedItemArrayValues;'
+      return:
+        type:
+          - Excel.NamedItemArrayValues
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.NamedItemArrayValuesLoadOptions
+  - uid: excel.Excel.NamedItemArrayValues.toJSON
+    name: toJSON()
+    fullName: excel.Excel.NamedItemArrayValues.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.NamedItemArrayValuesData;'
+      return:
+        type:
+          - Excel.Interfaces.NamedItemArrayValuesData
+        description: ''
+  - uid: excel.Excel.NamedItemArrayValues.types
+    summary: |-
+      Represents the types for each item in the named item array
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: types
+    fullName: excel.Excel.NamedItemArrayValues.types
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly types: Excel.RangeValueType[][];'
+      return:
+        type:
+          - 'Excel.RangeValueType[][]'
+  - uid: excel.Excel.NamedItemArrayValues.values
+    summary: |-
+      Represents the values of each item in the named item array.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: values
+    fullName: excel.Excel.NamedItemArrayValues.values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly values: any[][];'
+      return:
+        type:
+          - 'any[][]'

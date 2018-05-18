@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a rule-type for a Data Bar.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.ConditionalDataBarRule
     fullName: excel.Excel.ConditionalDataBarRule
     langs:
@@ -18,7 +18,7 @@ items:
     summary: |-
       The formula, if required, to evaluate the databar rule on.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: formula
     fullName: excel.Excel.ConditionalDataBarRule.formula
     langs:
@@ -33,14 +33,18 @@ items:
     summary: |-
       The type of rule for the databar.
 
-      \[ [API set: ExcelApi 1.6 (PREVIEW)](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: type
     fullName: excel.Excel.ConditionalDataBarRule.type
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'type: string;'
+      content: >-
+        type: Excel.ConditionalFormatRuleType | "Invalid" | "Automatic" | "LowestValue" | "HighestValue" | "Number" |
+        "Percent" | "Formula" | "Percentile";
       return:
         type:
-          - string
+          - >-
+            Excel.ConditionalFormatRuleType | "Invalid" | "Automatic" | "LowestValue" | "HighestValue" | "Number" |
+            "Percent" | "Formula" | "Percentile"

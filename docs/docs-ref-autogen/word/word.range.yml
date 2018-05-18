@@ -119,10 +119,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'compareLocationWith(range: Word.Range): OfficeExtension.ClientResult<string>;'
+      content: 'compareLocationWith(range: Word.Range): OfficeExtension.ClientResult<Word.LocationRelation>;'
       return:
         type:
-          - OfficeExtension.ClientResult<string>
+          - OfficeExtension.ClientResult<Word.LocationRelation>
         description: ''
       parameters:
         - id: range
@@ -140,7 +140,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'contentControls: Word.ContentControlCollection;'
+      content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
         type:
           - Word.ContentControlCollection
@@ -248,7 +248,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'font: Word.Font;'
+      content: 'readonly font: Word.Font;'
       return:
         type:
           - Word.Font
@@ -326,7 +326,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getNextTextRange(endingMarks: Array<string>, trimSpacing?: boolean): Word.Range;'
+      content: 'getNextTextRange(endingMarks: string[], trimSpacing?: boolean): Word.Range;'
       return:
         type:
           - Word.Range
@@ -335,7 +335,7 @@ items:
         - id: endingMarks
           description: Required. The punctuation marks and/or other ending marks as an array of strings.
           type:
-            - Array<string>
+            - 'string[]'
         - id: trimSpacing
           description: >-
             Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks)
@@ -356,7 +356,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getNextTextRangeOrNullObject(endingMarks: Array<string>, trimSpacing?: boolean): Word.Range;'
+      content: 'getNextTextRangeOrNullObject(endingMarks: string[], trimSpacing?: boolean): Word.Range;'
       return:
         type:
           - Word.Range
@@ -365,7 +365,7 @@ items:
         - id: endingMarks
           description: Required. The punctuation marks and/or other ending marks as an array of strings.
           type:
-            - Array<string>
+            - 'string[]'
         - id: trimSpacing
           description: >-
             Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks)
@@ -429,7 +429,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getRange(rangeLocation?: string): Word.Range;'
+      content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
       return:
         type:
           - Word.Range
@@ -438,7 +438,7 @@ items:
         - id: rangeLocation
           description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'', ''After'' or ''Content''.'
           type:
-            - string
+            - Word.RangeLocation
   - uid: word.Word.Range.getTextRanges
     summary: |-
       Gets the text child ranges in the range by using punctuation marks and/or other ending marks.
@@ -450,7 +450,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getTextRanges(endingMarks: Array<string>, trimSpacing?: boolean): Word.RangeCollection;'
+      content: 'getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;'
       return:
         type:
           - Word.RangeCollection
@@ -459,7 +459,7 @@ items:
         - id: endingMarks
           description: Required. The punctuation marks and/or other ending marks as an array of strings.
           type:
-            - Array<string>
+            - 'string[]'
         - id: trimSpacing
           description: >-
             Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks and paragraph end marks)
@@ -496,7 +496,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'inlinePictures: Word.InlinePictureCollection;'
+      content: 'readonly inlinePictures: Word.InlinePictureCollection;'
       return:
         type:
           - Word.InlinePictureCollection
@@ -513,7 +513,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertBreak(breakType: string, insertLocation: string): void;'
+      content: 'insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;'
       return:
         type:
           - void
@@ -522,11 +522,11 @@ items:
         - id: breakType
           description: Required. The break type to add.
           type:
-            - string
+            - Word.BreakType
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - string
+            - Word.InsertLocation
     remarks: |
 
 
@@ -621,7 +621,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertFileFromBase64(base64File: string, insertLocation: string): Word.Range;'
+      content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
           - Word.Range
@@ -634,7 +634,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'' or ''After''.'
           type:
-            - string
+            - Word.InsertLocation
     remarks: |
 
 
@@ -678,7 +678,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertHtml(html: string, insertLocation: string): Word.Range;'
+      content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
           - Word.Range
@@ -691,7 +691,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'' or ''After''.'
           type:
-            - string
+            - Word.InsertLocation
     remarks: |
 
 
@@ -734,7 +734,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: string): Word.InlinePicture;'
+      content: >-
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation):
+        Word.InlinePicture;
       return:
         type:
           - Word.InlinePicture
@@ -747,7 +749,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'' or ''After''.'
           type:
-            - string
+            - Word.InsertLocation
   - uid: word.Word.Range.insertOoxml
     summary: >-
       Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or
@@ -761,7 +763,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertOoxml(ooxml: string, insertLocation: string): Word.Range;'
+      content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
           - Word.Range
@@ -774,7 +776,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'' or ''After''.'
           type:
-            - string
+            - Word.InsertLocation
     remarks: |
 
 
@@ -815,7 +817,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertParagraph(paragraphText: string, insertLocation: string): Word.Paragraph;'
+      content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       return:
         type:
           - Word.Paragraph
@@ -828,7 +830,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - string
+            - Word.InsertLocation
     remarks: |
 
 
@@ -872,7 +874,7 @@ items:
     type: method
     syntax:
       content: >-
-        insertTable(rowCount: number, columnCount: number, insertLocation: string, values?: Array<Array<string>>):
+        insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]):
         Word.Table;
       return:
         type:
@@ -890,11 +892,11 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - string
+            - Word.InsertLocation
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
-            - Array<Array<string>>
+            - 'string[][]'
   - uid: word.Word.Range.insertText
     summary: >-
       Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before' or
@@ -908,7 +910,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'insertText(text: string, insertLocation: string): Word.Range;'
+      content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
           - Word.Range
@@ -921,7 +923,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'' or ''After''.'
           type:
-            - string
+            - Word.InsertLocation
     remarks: |
 
 
@@ -1008,7 +1010,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'isEmpty: boolean;'
+      content: 'readonly isEmpty: boolean;'
       return:
         type:
           - boolean
@@ -1023,7 +1025,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'lists: Word.ListCollection;'
+      content: 'readonly lists: Word.ListCollection;'
       return:
         type:
           - Word.ListCollection
@@ -1037,7 +1039,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.Range;'
+      content: 'load(option?: Word.Interfaces.RangeLoadOptions): Word.Range;'
       return:
         type:
           - Word.Range
@@ -1046,7 +1048,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Word.Interfaces.RangeLoadOptions
   - uid: word.Word.Range.paragraphs
     summary: |-
       Gets the collection of paragraph objects in the range. Read-only.
@@ -1058,7 +1060,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'paragraphs: Word.ParagraphCollection;'
+      content: 'readonly paragraphs: Word.ParagraphCollection;'
       return:
         type:
           - Word.ParagraphCollection
@@ -1073,7 +1075,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentBody: Word.Body;'
+      content: 'readonly parentBody: Word.Body;'
       return:
         type:
           - Word.Body
@@ -1088,7 +1090,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentContentControl: Word.ContentControl;'
+      content: 'readonly parentContentControl: Word.ContentControl;'
       return:
         type:
           - Word.ContentControl
@@ -1105,7 +1107,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentContentControlOrNullObject: Word.ContentControl;'
+      content: 'readonly parentContentControlOrNullObject: Word.ContentControl;'
       return:
         type:
           - Word.ContentControl
@@ -1120,7 +1122,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentTable: Word.Table;'
+      content: 'readonly parentTable: Word.Table;'
       return:
         type:
           - Word.Table
@@ -1135,7 +1137,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentTableCell: Word.TableCell;'
+      content: 'readonly parentTableCell: Word.TableCell;'
       return:
         type:
           - Word.TableCell
@@ -1152,7 +1154,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentTableCellOrNullObject: Word.TableCell;'
+      content: 'readonly parentTableCellOrNullObject: Word.TableCell;'
       return:
         type:
           - Word.TableCell
@@ -1167,7 +1169,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'parentTableOrNullObject: Word.Table;'
+      content: 'readonly parentTableOrNullObject: Word.Table;'
       return:
         type:
           - Word.Table
@@ -1227,7 +1229,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'select(selectionMode?: string): void;'
+      content: 'select(selectionMode?: Word.SelectionMode): void;'
       return:
         type:
           - void
@@ -1236,7 +1238,7 @@ items:
         - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'' or ''End''. ''Select'' is the default.'
           type:
-            - string
+            - Word.SelectionMode
     remarks: |
 
 
@@ -1277,10 +1279,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.RangeUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -1293,13 +1292,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: word.Word.Range.split
     summary: |-
       Splits the range into child ranges by using delimiters.
@@ -1312,7 +1305,7 @@ items:
     type: method
     syntax:
       content: >-
-        split(delimiters: Array<string>, multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean):
+        split(delimiters: string[], multiParagraphs?: boolean, trimDelimiters?: boolean, trimSpacing?: boolean):
         Word.RangeCollection;
       return:
         type:
@@ -1322,7 +1315,7 @@ items:
         - id: delimiters
           description: Required. The delimiters as an array of strings.
           type:
-            - Array<string>
+            - 'string[]'
         - id: multiParagraphs
           description: >-
             Optional. Indicates whether a returned child range can cover multiple paragraphs. Default is false which
@@ -1372,10 +1365,74 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'styleBuiltIn: string;'
+      content: >-
+        styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" |
+        "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7"
+        | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference"
+        | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" |
+        "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" |
+        "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" |
+        "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" |
+        "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" |
+        "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" |
+        "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" |
+        "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6"
+        | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+        "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+        "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+        "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" |
+        "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" |
+        "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" |
+        "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" |
+        "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" |
+        "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" |
+        "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" |
+        "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" |
+        "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6"
+        | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" |
+        "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" |
+        "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" |
+        "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" |
+        "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" |
+        "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" |
+        "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" |
+        "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
       return:
         type:
-          - string
+          - >-
+            Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" |
+            "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" |
+            "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" |
+            "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" |
+            "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" |
+            "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" |
+            "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" |
+            "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" |
+            "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" |
+            "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" |
+            "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" |
+            "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" |
+            "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+            "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+            "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+            "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" |
+            "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" |
+            "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" |
+            "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" |
+            "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" |
+            "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" |
+            "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" |
+            "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" |
+            "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" |
+            "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" |
+            "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" |
+            "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" |
+            "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" |
+            "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" |
+            "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" |
+            "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" |
+            "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" |
+            "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
   - uid: word.Word.Range.tables
     summary: |-
       Gets the collection of table objects in the range. Read-only.
@@ -1387,7 +1444,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'tables: Word.TableCollection;'
+      content: 'readonly tables: Word.TableCollection;'
       return:
         type:
           - Word.TableCollection
@@ -1402,7 +1459,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'text: string;'
+      content: 'readonly text: string;'
       return:
         type:
           - string
@@ -1413,18 +1470,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Word.Interfaces.RangeData;'
       return:
         type:
-          - |-
-            {
-                        "font": Font;
-                        "hyperlink": string;
-                        "isEmpty": boolean;
-                        "style": string;
-                        "styleBuiltIn": string;
-                        "text": string;
-                    }
+          - Word.Interfaces.RangeData
         description: ''
   - uid: word.Word.Range.track
     summary: >-

@@ -1,0 +1,138 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.CustomProperty
+    summary: |-
+      Represents a custom property.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: Excel.CustomProperty
+    fullName: excel.Excel.CustomProperty
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.CustomProperty.delete
+      - excel.Excel.CustomProperty.key
+      - excel.Excel.CustomProperty.load
+      - excel.Excel.CustomProperty.set
+      - excel.Excel.CustomProperty.toJSON
+      - excel.Excel.CustomProperty.type
+      - excel.Excel.CustomProperty.value
+  - uid: excel.Excel.CustomProperty.delete
+    summary: |-
+      Deletes the custom property.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: delete()
+    fullName: excel.Excel.CustomProperty.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.CustomProperty.key
+    summary: |-
+      Gets the key of the custom property. Read only.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: key
+    fullName: excel.Excel.CustomProperty.key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly key: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.CustomProperty.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    name: load(option)
+    fullName: excel.Excel.CustomProperty.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.CustomPropertyLoadOptions): Excel.CustomProperty;'
+      return:
+        type:
+          - Excel.CustomProperty
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.CustomPropertyLoadOptions
+  - uid: excel.Excel.CustomProperty.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.CustomProperty.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.CustomPropertyUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.CustomPropertyUpdateData
+        - id: options
+          description: ''
+          type:
+            - OfficeExtension.UpdateOptions
+  - uid: excel.Excel.CustomProperty.toJSON
+    name: toJSON()
+    fullName: excel.Excel.CustomProperty.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.CustomPropertyData;'
+      return:
+        type:
+          - Excel.Interfaces.CustomPropertyData
+        description: ''
+  - uid: excel.Excel.CustomProperty.type
+    summary: |-
+      Gets the value type of the custom property. Read only.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: type
+    fullName: excel.Excel.CustomProperty.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float";'
+      return:
+        type:
+          - Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float"
+  - uid: excel.Excel.CustomProperty.value
+    summary: |-
+      Gets or sets the value of the custom property.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: value
+    fullName: excel.Excel.CustomProperty.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value: any;'
+      return:
+        type:
+          - any

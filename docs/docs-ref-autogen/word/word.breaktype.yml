@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.BreakType
+    summary: |-
+      Page break, line break, and four section breaks
+
+      \[ [API set: WordApi](http://bing.com?type=word) \]
+    name: Word.BreakType
+    fullName: word.Word.BreakType
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.BreakType.line
+      - word.Word.BreakType.next
+      - word.Word.BreakType.page
+      - word.Word.BreakType.sectionContinuous
+      - word.Word.BreakType.sectionEven
+      - word.Word.BreakType.sectionNext
+      - word.Word.BreakType.sectionOdd
+  - uid: word.Word.BreakType.line
+    summary: Line break.
+    name: line
+    fullName: word.Word.BreakType.line
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Line"'
+  - uid: word.Word.BreakType.next
+    deprecated:
+      content: Use sectionNext instead.
+    name: next
+    fullName: word.Word.BreakType.next
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Next"'
+  - uid: word.Word.BreakType.page
+    summary: Page break.
+    name: page
+    fullName: word.Word.BreakType.page
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Page"'
+  - uid: word.Word.BreakType.sectionContinuous
+    summary: 'Section break, with the new section starting on the same page.'
+    name: sectionContinuous
+    fullName: word.Word.BreakType.sectionContinuous
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SectionContinuous"'
+  - uid: word.Word.BreakType.sectionEven
+    summary: 'Section break, with the new section starting on the next even-numbered page.'
+    name: sectionEven
+    fullName: word.Word.BreakType.sectionEven
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SectionEven"'
+  - uid: word.Word.BreakType.sectionNext
+    summary: 'Section break, with the new section starting on the next page.'
+    name: sectionNext
+    fullName: word.Word.BreakType.sectionNext
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SectionNext"'
+  - uid: word.Word.BreakType.sectionOdd
+    summary: 'Section break, with the new section starting on the next odd-numbered page.'
+    name: sectionOdd
+    fullName: word.Word.BreakType.sectionOdd
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SectionOdd"'

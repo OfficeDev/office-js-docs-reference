@@ -16,14 +16,22 @@ items:
     children:
       - onenote.OneNote.Notebook.addSection
       - onenote.OneNote.Notebook.addSectionGroup
+      - onenote.OneNote.Notebook.baseUrl
       - onenote.OneNote.Notebook.clientUrl
+      - onenote.OneNote.Notebook.getRestApiId
       - onenote.OneNote.Notebook.id
       - onenote.OneNote.Notebook.load
       - onenote.OneNote.Notebook.name
       - onenote.OneNote.Notebook.sectionGroups
       - onenote.OneNote.Notebook.sections
+      - onenote.OneNote.Notebook.toJSON
+      - onenote.OneNote.Notebook.track
+      - onenote.OneNote.Notebook.untrack
   - uid: onenote.OneNote.Notebook.addSection
-    summary: Adds a new section to the end of the notebook.
+    summary: |-
+      Adds a new section to the end of the notebook.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: addSection(name)
     fullName: onenote.OneNote.Notebook.addSection
     langs:
@@ -37,7 +45,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: 'The name of the new section. \[Api set: OneNoteApi 1.1\]'
+          description: The name of the new section.
           type:
             - string
     remarks: |
@@ -71,7 +79,10 @@ items:
       }); 
       ```
   - uid: onenote.OneNote.Notebook.addSectionGroup
-    summary: Adds a new section group to the end of the notebook.
+    summary: |-
+      Adds a new section group to the end of the notebook.
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: addSectionGroup(name)
     fullName: onenote.OneNote.Notebook.addSectionGroup
     langs:
@@ -85,7 +96,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: 'The name of the new section. \[Api set: OneNoteApi 1.1\]'
+          description: The name of the new section.
           type:
             - string
     remarks: |
@@ -118,6 +129,21 @@ items:
           }
       }); 
       ```
+  - uid: onenote.OneNote.Notebook.baseUrl
+    summary: |-
+      The url of the site that this notebook is located. Read only
+
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+    name: baseUrl
+    fullName: onenote.OneNote.Notebook.baseUrl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly baseUrl: string;'
+      return:
+        type:
+          - string
   - uid: onenote.OneNote.Notebook.clientUrl
     summary: |-
       The client url of the notebook. Read only
@@ -129,10 +155,46 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'clientUrl: string;'
+      content: 'readonly clientUrl: string;'
       return:
         type:
           - string
+  - uid: onenote.OneNote.Notebook.getRestApiId
+    summary: |-
+      Gets the REST API ID.
+
+      \[ [API set: OneNoteApi](http://bing.com?type=onenote) \]
+    name: getRestApiId()
+    fullName: onenote.OneNote.Notebook.getRestApiId
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRestApiId(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+
+      OneNote.run(function(ctx){
+          // Get the current notebook.         
+          var notebook = ctx.application.getActiveNotebook();
+          var restAPIId = notebook.getRestApiId();
+
+          return ctx.sync().
+              then(function(){
+                  console.log("The REST API ID is " + restApiId.value);
+                  // Note that the REST API ID isn't all you need to interact with the OneNote REST API. For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API according to [OneNote Development Blog](https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/)
+                  // (this is only required for SharePoint notebooks, baseUrl will be null for OneDrive notebooks)
+              });
+      });
+      ```
   - uid: onenote.OneNote.Notebook.id
     summary: |-
       Gets the ID of the notebook. Read-only.
@@ -144,7 +206,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type:
           - string
@@ -158,7 +220,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.Notebook;'
+      content: 'load(option?: OneNote.Interfaces.NotebookLoadOptions): OneNote.Notebook;'
       return:
         type:
           - OneNote.Notebook
@@ -167,7 +229,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.NotebookLoadOptions
   - uid: onenote.OneNote.Notebook.name
     summary: |-
       Gets the name of the notebook. Read-only.
@@ -179,7 +241,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'name: string;'
+      content: 'readonly name: string;'
       return:
         type:
           - string
@@ -194,7 +256,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'sectionGroups: OneNote.SectionGroupCollection;'
+      content: 'readonly sectionGroups: OneNote.SectionGroupCollection;'
       return:
         type:
           - OneNote.SectionGroupCollection
@@ -209,7 +271,54 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'sections: OneNote.SectionCollection;'
+      content: 'readonly sections: OneNote.SectionCollection;'
       return:
         type:
           - OneNote.SectionCollection
+  - uid: onenote.OneNote.Notebook.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.Notebook.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.NotebookData;'
+      return:
+        type:
+          - OneNote.Interfaces.NotebookData
+        description: ''
+  - uid: onenote.OneNote.Notebook.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.Notebook.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.Notebook;'
+      return:
+        type:
+          - OneNote.Notebook
+        description: ''
+  - uid: onenote.OneNote.Notebook.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.Notebook.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.Notebook;'
+      return:
+        type:
+          - OneNote.Notebook
+        description: ''

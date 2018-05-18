@@ -1,0 +1,32 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Runtime
+    summary: |-
+      Represents the Excel Runtime class.
+
+      \[ [API set: ExcelApi 1.5](http://bing.com?type=excel) \]
+    name: Excel.Runtime
+    fullName: excel.Excel.Runtime
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.Runtime.toJSON
+  - uid: excel.Excel.Runtime.toJSON
+    name: toJSON()
+    fullName: excel.Excel.Runtime.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON:'
+      return:
+        type:
+          - |-
+            {
+                        [key: string]: string;
+                    }
+        description: ''

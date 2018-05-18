@@ -3742,7 +3742,7 @@
         },
         "onReady": {
           "kind": "function",
-          "signature": "export function onReady(callback?: (info: { host: HostType, platform: PlatformType} ) => any): Promise<{ host: HostType, platform: PlatformType }>;",
+          "signature": "export function onReady(callback?: (info: { host: HostType, platform: PlatformType }) => any): Promise<{ host: HostType, platform: PlatformType }>;",
           "returnValue": {
             "type": "Promise<{ host: HostType, platform: PlatformType }>",
             "description": [
@@ -3763,7 +3763,7 @@
               ],
               "isOptional": true,
               "isSpread": false,
-              "type": "(info: { host: HostType, platform: PlatformType} ) => any"
+              "type": "(info: { host: HostType, platform: PlatformType }) => any"
             }
           },
           "deprecatedMessage": [],
@@ -9311,6 +9311,23 @@
               ],
               "remarks": []
             },
+            "debugInfo": {
+              "kind": "property",
+              "signature": "readonly debugInfo: RequestContextDebugInfo;",
+              "isOptional": false,
+              "isReadOnly": true,
+              "isStatic": false,
+              "type": "RequestContextDebugInfo",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Debug information"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
             "load": {
               "kind": "method",
               "signature": "load(object: ClientObject, option?: string | string[] | LoadOption): void;",
@@ -9424,12 +9441,12 @@
             },
             "sync": {
               "kind": "method",
-              "signature": "sync<T>(passThroughValue?: T): IPromise<T>;",
+              "signature": "sync<T>(passThroughValue?: T): Promise<T>;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "IPromise<T>",
+                "type": "Promise<T>",
                 "description": []
               },
               "parameters": {
@@ -9579,6 +9596,30 @@
               "remarks": [],
               "isBeta": false
             },
+            "fullStatements": {
+              "kind": "property",
+              "signature": "fullStatements?: string[];",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string[]",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "All statements in the batch request (including any potentially-sensitive information that was specified in the request), if available."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "These statements may not match the code exactly as written, but will be a close approximation."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
             "innerError": {
               "kind": "property",
               "signature": "innerError?: DebugInfo | string;",
@@ -9608,6 +9649,54 @@
                 {
                   "kind": "text",
                   "text": "The error message passed through from the host Office application."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "statements": {
+              "kind": "property",
+              "signature": "statements?: string;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The statement that caused the error, if available."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "This statement will never contain any potentially-sensitive data and may not match the code exactly as written, but will be a close approximation."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            },
+            "surroundingStatements": {
+              "kind": "property",
+              "signature": "surroundingStatements?: string[];",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string[]",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The statements that closely precede and follow the statement that caused the error, if available."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "These statements will never contain any potentially-sensitive data and may not match the code exactly as written, but will be a close approximation."
                 }
               ],
               "remarks": [],
@@ -9758,12 +9847,12 @@
             },
             "init": {
               "kind": "method",
-              "signature": "public init(): IPromise<any>;",
+              "signature": "public init(): Promise<any>;",
               "accessModifier": "public",
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "IPromise<any>",
+                "type": "Promise<any>",
                 "description": []
               },
               "parameters": {},
@@ -10080,7 +10169,7 @@
           "members": {
             "__constructor": {
               "kind": "constructor",
-              "signature": "constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => IPromise<any>);",
+              "signature": "constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => Promise<any>);",
               "parameters": {
                 "context": {
                   "name": "context",
@@ -10101,7 +10190,7 @@
                   "description": [],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(args: T) => IPromise<any>"
+                  "type": "(args: T) => Promise<any>"
                 }
               },
               "deprecatedMessage": [],
@@ -10131,6 +10220,23 @@
                 }
               ],
               "remarks": []
+            },
+            "context": {
+              "kind": "property",
+              "signature": "context: ClientRequestContext;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "ClientRequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The request context associated with the object"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
             },
             "remove": {
               "kind": "method",
@@ -10225,7 +10331,7 @@
             },
             "add": {
               "kind": "method",
-              "signature": "add(handler: (args: T) => IPromise<any>): EventHandlerResult<T>;",
+              "signature": "add(handler: (args: T) => Promise<any>): EventHandlerResult<T>;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10239,7 +10345,7 @@
                   "description": [],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(args: T) => IPromise<any>"
+                  "type": "(args: T) => Promise<any>"
                 }
               },
               "deprecatedMessage": [],
@@ -10249,7 +10355,7 @@
             },
             "remove": {
               "kind": "method",
-              "signature": "remove(handler: (args: T) => IPromise<any>): void;",
+              "signature": "remove(handler: (args: T) => Promise<any>): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -10263,7 +10369,7 @@
                   "description": [],
                   "isOptional": false,
                   "isSpread": false,
-                  "type": "(args: T) => IPromise<any>"
+                  "type": "(args: T) => Promise<any>"
                 }
               },
               "deprecatedMessage": [],
@@ -10287,11 +10393,11 @@
           "members": {
             "eventArgsTransformFunc": {
               "kind": "property",
-              "signature": "eventArgsTransformFunc: (args: any) => IPromise<T>;",
+              "signature": "eventArgsTransformFunc: (args: any) => Promise<T>;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "(args: any) => IPromise<T>",
+              "type": "(args: any) => Promise<T>",
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
@@ -10299,11 +10405,11 @@
             },
             "registerFunc": {
               "kind": "property",
-              "signature": "registerFunc: (callback: (args: any) => void) => IPromise<any>;",
+              "signature": "registerFunc: (callback: (args: any) => void) => Promise<any>;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "(callback: (args: any) => void) => IPromise<any>",
+              "type": "(callback: (args: any) => void) => Promise<any>",
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
@@ -10311,107 +10417,13 @@
             },
             "unregisterFunc": {
               "kind": "property",
-              "signature": "unregisterFunc: (callback: (args: any) => void) => IPromise<any>;",
+              "signature": "unregisterFunc: (callback: (args: any) => void) => Promise<any>;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "(callback: (args: any) => void) => IPromise<any>",
+              "type": "(callback: (args: any) => void) => Promise<any>",
               "deprecatedMessage": [],
               "summary": [],
-              "remarks": [],
-              "isBeta": false
-            }
-          }
-        },
-        "IPromise": {
-          "kind": "interface",
-          "extends": "",
-          "implements": "",
-          "typeParameters": [
-            "R"
-          ],
-          "deprecatedMessage": [],
-          "summary": [
-            {
-              "kind": "text",
-              "text": "An IPromise object that represents a deferred interaction with the host Office application."
-            }
-          ],
-          "remarks": [],
-          "isBeta": false,
-          "members": {
-            "catch": {
-              "kind": "method",
-              "signature": "catch<U>(onRejected?: (error: any) => IPromise<U>): IPromise<U>;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "IPromise<U>",
-                "description": []
-              },
-              "parameters": {
-                "onRejected": {
-                  "name": "onRejected",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "function to be called if or when the promise rejects."
-                    }
-                  ],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "(error: any) => IPromise<U>"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack."
-                }
-              ],
-              "remarks": [],
-              "isBeta": false
-            },
-            "then": {
-              "kind": "method",
-              "signature": "then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "IPromise<U>",
-                "description": [
-                  {
-                    "kind": "text",
-                    "text": "A new promise for the value or error that was returned from onFulfilled/onRejected."
-                  }
-                ]
-              },
-              "parameters": {
-                "onFulfilled": {
-                  "name": "onFulfilled",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "(value: R) => IPromise<U>"
-                },
-                "onRejected": {
-                  "name": "onRejected",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "(error: any) => IPromise<U>"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "This method will be called once the previous promise has been resolved. Both the onFulfilled on onRejected callbacks are optional. If either or both are omitted, the next onFulfilled/onRejected in the chain will be called called."
-                }
-              ],
               "remarks": [],
               "isBeta": false
             }
@@ -10477,193 +10489,42 @@
             }
           }
         },
-        "Promise": {
-          "kind": "class",
+        "RequestContextDebugInfo": {
+          "kind": "interface",
           "extends": "",
-          "implements": "IPromise",
-          "typeParameters": [
-            "R"
-          ],
+          "implements": "",
+          "typeParameters": [],
           "deprecatedMessage": [],
           "summary": [
             {
               "kind": "text",
-              "text": "An Promise object that represents a deferred interaction with the host Office application. The publically-consumable OfficeExtension.Promise is available starting in ExcelApi 1.2 and WordApi 1.2. Promises can be chained via \".then\", and errors can be caught via \".catch\". Remember to always use a \".catch\" on the outer promise, and to return intermediary promises so as not to break the promise chain. When a \"native\" Promise implementation is available, OfficeExtension.Promise will switch to use the native Promise instead."
+              "text": "Contains debug information about the request context."
             }
           ],
           "remarks": [],
           "isBeta": false,
           "members": {
-            "__constructor": {
-              "kind": "constructor",
-              "signature": "constructor(func: (resolve: (value?: R | IPromise<R>) => void, reject: (error?: any) => void) => void);",
-              "parameters": {
-                "func": {
-                  "name": "func",
-                  "description": [],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "(resolve: (value?: R | IPromise<R>) => void, reject: (error?: any) => void) => void"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Creates a new promise based on a function that accepts resolve and reject handlers."
-                }
-              ],
-              "remarks": []
-            },
-            "all": {
-              "kind": "method",
-              "signature": "static all<U>(promises: OfficeExtension.IPromise<U>[]): IPromise<U[]>;",
-              "accessModifier": "",
+            "pendingStatements": {
+              "kind": "property",
+              "signature": "pendingStatements: string[];",
               "isOptional": false,
-              "isStatic": true,
-              "returnValue": {
-                "type": "IPromise<U[]>",
-                "description": []
-              },
-              "parameters": {
-                "promises": {
-                  "name": "promises",
-                  "description": [],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "OfficeExtension.IPromise<U>[]"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Creates a promise that resolves when all of the child promises resolve."
-                }
-              ],
-              "remarks": [],
-              "isBeta": false
-            },
-            "catch": {
-              "kind": "method",
-              "signature": "catch<U>(onRejected?: (error: any) => IPromise<U>): IPromise<U>;",
-              "accessModifier": "",
-              "isOptional": false,
+              "isReadOnly": false,
               "isStatic": false,
-              "returnValue": {
-                "type": "IPromise<U>",
-                "description": []
-              },
-              "parameters": {
-                "onRejected": {
-                  "name": "onRejected",
-                  "description": [
-                    {
-                      "kind": "text",
-                      "text": "function to be called if or when the promise rejects."
-                    }
-                  ],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "(error: any) => IPromise<U>"
-                }
-              },
+              "type": "string[]",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Catches failures or exceptions from actions within the promise, or from an unhandled exception earlier in the call stack."
-                }
-              ],
-              "remarks": [],
-              "isBeta": false
-            },
-            "reject": {
-              "kind": "method",
-              "signature": "static reject<U>(error: any): IPromise<U>;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": true,
-              "returnValue": {
-                "type": "IPromise<U>",
-                "description": []
-              },
-              "parameters": {
-                "error": {
-                  "name": "error",
-                  "description": [],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "any"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Creates a promise that is rejected."
-                }
-              ],
-              "remarks": [],
-              "isBeta": false
-            },
-            "resolve": {
-              "kind": "method",
-              "signature": "static resolve<U>(value: U): IPromise<U>;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": true,
-              "returnValue": {
-                "type": "IPromise<U>",
-                "description": []
-              },
-              "parameters": {
-                "value": {
-                  "name": "value",
-                  "description": [],
-                  "isOptional": false,
-                  "isSpread": false,
-                  "type": "U"
-                }
-              },
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Creates a promise that is resolved."
-                }
-              ],
-              "remarks": [],
-              "isBeta": false
-            },
-            "then": {
-              "kind": "method",
-              "signature": "then<U>(onFulfilled?: (value: R) => IPromise<U>, onRejected?: (error: any) => IPromise<U>): IPromise<U>;",
-              "accessModifier": "",
-              "isOptional": false,
-              "isStatic": false,
-              "returnValue": {
-                "type": "IPromise<U>",
-                "description": []
-              },
-              "parameters": {
-                "onFulfilled": {
-                  "name": "onFulfilled",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "(value: R) => IPromise<U>"
+                  "text": "The statements to be executed in the host."
                 },
-                "onRejected": {
-                  "name": "onRejected",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "(error: any) => IPromise<U>"
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "These statements may not match the code exactly as written, but will be a close approximation."
                 }
-              },
-              "deprecatedMessage": [],
-              "summary": [],
+              ],
               "remarks": [],
               "isBeta": false
             }
@@ -10788,6 +10649,35 @@
                 {
                   "kind": "text",
                   "text": "Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call \"context.sync()\" before the memory release takes effect."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false
+            }
+          }
+        },
+        "UpdateOptions": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "members": {
+            "throwOnReadOnly": {
+              "kind": "property",
+              "signature": "throwOnReadOnly?: boolean;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "boolean",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Throw an error if the passed-in property list includes read-only properties (default = true)."
                 }
               ],
               "remarks": [],

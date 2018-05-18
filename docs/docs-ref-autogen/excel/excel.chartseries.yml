@@ -14,15 +14,122 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartSeries.chartType
+      - excel.Excel.ChartSeries.delete
+      - excel.Excel.ChartSeries.doughnutHoleSize
+      - excel.Excel.ChartSeries.filtered
       - excel.Excel.ChartSeries.format
+      - excel.Excel.ChartSeries.gapWidth
+      - excel.Excel.ChartSeries.hasDataLabels
       - excel.Excel.ChartSeries.load
+      - excel.Excel.ChartSeries.markerBackgroundColor
+      - excel.Excel.ChartSeries.markerForegroundColor
+      - excel.Excel.ChartSeries.markerSize
+      - excel.Excel.ChartSeries.markerStyle
       - excel.Excel.ChartSeries.name
+      - excel.Excel.ChartSeries.plotOrder
       - excel.Excel.ChartSeries.points
       - excel.Excel.ChartSeries.set
+      - excel.Excel.ChartSeries.setBubbleSizes
+      - excel.Excel.ChartSeries.setValues
+      - excel.Excel.ChartSeries.setXAxisValues
+      - excel.Excel.ChartSeries.showShadow
+      - excel.Excel.ChartSeries.smooth
       - excel.Excel.ChartSeries.toJSON
+      - excel.Excel.ChartSeries.trendlines
+  - uid: excel.Excel.ChartSeries.chartType
+    summary: |-
+      Represents the chart type of a series. See Excel.ChartType for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: chartType
+    fullName: excel.Excel.ChartSeries.chartType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        chartType: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" |
+        "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100"
+        | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
+        "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" |
+        "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" |
+        "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" |
+        "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" |
+        "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" |
+        "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" |
+        "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" |
+        "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
+        "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" |
+        "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar";
+      return:
+        type:
+          - >-
+            Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered"
+            | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" |
+            "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
+            "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" |
+            "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" |
+            "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" |
+            "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" |
+            "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" |
+            "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" |
+            "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered"
+            | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" |
+            "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" |
+            "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
+            "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar"
+  - uid: excel.Excel.ChartSeries.delete
+    summary: |-
+      Deletes the chart series.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: delete()
+    fullName: excel.Excel.ChartSeries.delete
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.ChartSeries.doughnutHoleSize
+    summary: >-
+      Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnutExploded charts. Throws an
+      invalid argument exception on invalid charts.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: doughnutHoleSize
+    fullName: excel.Excel.ChartSeries.doughnutHoleSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'doughnutHoleSize: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartSeries.filtered
+    summary: |-
+      Boolean value representing if the series is filtered or not. Not applicable for surface charts.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: filtered
+    fullName: excel.Excel.ChartSeries.filtered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'filtered: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.ChartSeries.format
     summary: |-
-      Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
+      Represents the formatting of a chart series, which includes fill and line formatting.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: format
@@ -35,6 +142,38 @@ items:
       return:
         type:
           - Excel.ChartSeriesFormat
+  - uid: excel.Excel.ChartSeries.gapWidth
+    summary: >-
+      Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of
+      line and pie charts. Throws an invalid argument exception on invalid charts.
+
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: gapWidth
+    fullName: excel.Excel.ChartSeries.gapWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gapWidth: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartSeries.hasDataLabels
+    summary: |-
+      Boolean value representing if the series has data labels or not.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: hasDataLabels
+    fullName: excel.Excel.ChartSeries.hasDataLabels
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasDataLabels: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.ChartSeries.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -45,7 +184,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartSeries;'
+      content: 'load(option?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;'
       return:
         type:
           - Excel.ChartSeries
@@ -54,7 +193,71 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ChartSeriesLoadOptions
+  - uid: excel.Excel.ChartSeries.markerBackgroundColor
+    summary: |-
+      Represents markers background color of a chart series.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: markerBackgroundColor
+    fullName: excel.Excel.ChartSeries.markerBackgroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerBackgroundColor: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ChartSeries.markerForegroundColor
+    summary: |-
+      Represents markers foreground color of a chart series.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: markerForegroundColor
+    fullName: excel.Excel.ChartSeries.markerForegroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerForegroundColor: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ChartSeries.markerSize
+    summary: |-
+      Represents marker size of a chart series.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: markerSize
+    fullName: excel.Excel.ChartSeries.markerSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerSize: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartSeries.markerStyle
+    summary: |-
+      Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: markerStyle
+    fullName: excel.Excel.ChartSeries.markerStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        markerStyle: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X"
+        | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
+      return:
+        type:
+          - >-
+            Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star"
+            | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
   - uid: excel.Excel.ChartSeries.name
     summary: |-
       Represents the name of a series in a chart.
@@ -70,9 +273,24 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.ChartSeries.plotOrder
+    summary: |-
+      Represents the plot order of a chart series within the chart group.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: plotOrder
+    fullName: excel.Excel.ChartSeries.plotOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'plotOrder: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.ChartSeries.points
     summary: |-
-      Represents a collection of all points in the series. Read-only.
+      Represents a collection of all points in the series.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: points
@@ -93,10 +311,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ChartSeriesUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.ChartSeriesUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -109,13 +324,100 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ChartSeries.setBubbleSizes
+    summary: |-
+      Set bubble sizes for a chart series. Only works for bubble charts.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: setBubbleSizes(sourceData)
+    fullName: excel.Excel.ChartSeries.setBubbleSizes
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setBubbleSizes(sourceData: Excel.Range): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sourceData
+          description: The Range object corresponding to the source data.
+          type:
+            - Excel.Range
+  - uid: excel.Excel.ChartSeries.setValues
+    summary: |-
+      Set values for a chart series. For scatter chart, it means Y axis values.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: setValues(sourceData)
+    fullName: excel.Excel.ChartSeries.setValues
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setValues(sourceData: Excel.Range): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sourceData
+          description: The Range object corresponding to the source data.
+          type:
+            - Excel.Range
+  - uid: excel.Excel.ChartSeries.setXAxisValues
+    summary: |-
+      Set values of X axis for a chart series. Only works for scatter charts.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: setXAxisValues(sourceData)
+    fullName: excel.Excel.ChartSeries.setXAxisValues
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setXAxisValues(sourceData: Excel.Range): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: sourceData
+          description: The Range object corresponding to the source data.
+          type:
+            - Excel.Range
+  - uid: excel.Excel.ChartSeries.showShadow
+    summary: |-
+      Boolean value representing if the series has a shadow or not.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: showShadow
+    fullName: excel.Excel.ChartSeries.showShadow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showShadow: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartSeries.smooth
+    summary: |-
+      Boolean value representing if the series is smooth or not. Only applicable for line and scatter charts.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: smooth
+    fullName: excel.Excel.ChartSeries.smooth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'smooth: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.ChartSeries.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartSeries.toJSON
@@ -123,12 +425,23 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ChartSeriesData;'
       return:
         type:
-          - |-
-            {
-                        "format": ChartSeriesFormat;
-                        "name": string;
-                    }
+          - Excel.Interfaces.ChartSeriesData
         description: ''
+  - uid: excel.Excel.ChartSeries.trendlines
+    summary: |-
+      Represents a collection of trendlines in the series.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: trendlines
+    fullName: excel.Excel.ChartSeries.trendlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly trendlines: Excel.ChartTrendlineCollection;'
+      return:
+        type:
+          - Excel.ChartTrendlineCollection

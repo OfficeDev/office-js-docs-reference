@@ -17,6 +17,10 @@ items:
       - onenote.OneNote.InkAnalysisLine.id
       - onenote.OneNote.InkAnalysisLine.load
       - onenote.OneNote.InkAnalysisLine.paragraph
+      - onenote.OneNote.InkAnalysisLine.set
+      - onenote.OneNote.InkAnalysisLine.toJSON
+      - onenote.OneNote.InkAnalysisLine.track
+      - onenote.OneNote.InkAnalysisLine.untrack
       - onenote.OneNote.InkAnalysisLine.words
   - uid: onenote.OneNote.InkAnalysisLine.id
     summary: |-
@@ -29,7 +33,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type:
           - string
@@ -43,7 +47,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.InkAnalysisLine;'
+      content: 'load(option?: OneNote.Interfaces.InkAnalysisLineLoadOptions): OneNote.InkAnalysisLine;'
       return:
         type:
           - OneNote.InkAnalysisLine
@@ -52,7 +56,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.InkAnalysisLineLoadOptions
   - uid: onenote.OneNote.InkAnalysisLine.paragraph
     summary: |-
       Reference to the parent InkAnalysisParagraph. Read-only.
@@ -64,10 +68,88 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'paragraph: OneNote.InkAnalysisParagraph;'
+      content: 'readonly paragraph: OneNote.InkAnalysisParagraph;'
       return:
         type:
           - OneNote.InkAnalysisParagraph
+  - uid: onenote.OneNote.InkAnalysisLine.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: onenote.OneNote.InkAnalysisLine.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        set(properties: Interfaces.InkAnalysisLineUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.InkAnalysisLineUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
+  - uid: onenote.OneNote.InkAnalysisLine.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.InkAnalysisLine.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.InkAnalysisLineData;'
+      return:
+        type:
+          - OneNote.Interfaces.InkAnalysisLineData
+        description: ''
+  - uid: onenote.OneNote.InkAnalysisLine.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.InkAnalysisLine.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.InkAnalysisLine;'
+      return:
+        type:
+          - OneNote.InkAnalysisLine
+        description: ''
+  - uid: onenote.OneNote.InkAnalysisLine.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.InkAnalysisLine.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.InkAnalysisLine;'
+      return:
+        type:
+          - OneNote.InkAnalysisLine
+        description: ''
   - uid: onenote.OneNote.InkAnalysisLine.words
     summary: |-
       Gets the ink analysis words in this ink analysis line. Read-only.
@@ -79,7 +161,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'words: OneNote.InkAnalysisWordCollection;'
+      content: 'readonly words: OneNote.InkAnalysisWordCollection;'
       return:
         type:
           - OneNote.InkAnalysisWordCollection

@@ -47,8 +47,8 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'close(): OfficeExtension.IPromise<void>;'
+      content: 'close(): Promise<void>;'
       return:
         type:
-          - OfficeExtension.IPromise<void>
+          - Promise<void>
         description: ''

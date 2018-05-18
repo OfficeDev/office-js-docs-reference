@@ -14,10 +14,32 @@ items:
       - OfficeExtension.ClientObject
     package: excel
     children:
+      - excel.Excel.ChartPoint.dataLabel
       - excel.Excel.ChartPoint.format
+      - excel.Excel.ChartPoint.hasDataLabel
       - excel.Excel.ChartPoint.load
+      - excel.Excel.ChartPoint.markerBackgroundColor
+      - excel.Excel.ChartPoint.markerForegroundColor
+      - excel.Excel.ChartPoint.markerSize
+      - excel.Excel.ChartPoint.markerStyle
+      - excel.Excel.ChartPoint.set
       - excel.Excel.ChartPoint.toJSON
       - excel.Excel.ChartPoint.value
+  - uid: excel.Excel.ChartPoint.dataLabel
+    summary: |-
+      Returns the data label of a chart point.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: dataLabel
+    fullName: excel.Excel.ChartPoint.dataLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataLabel: Excel.ChartDataLabel;'
+      return:
+        type:
+          - Excel.ChartDataLabel
   - uid: excel.Excel.ChartPoint.format
     summary: |-
       Encapsulates the format properties chart point. Read-only.
@@ -33,6 +55,21 @@ items:
       return:
         type:
           - Excel.ChartPointFormat
+  - uid: excel.Excel.ChartPoint.hasDataLabel
+    summary: |-
+      Represents whether a data point has datalabel. Not applicable for surface charts.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: hasDataLabel
+    fullName: excel.Excel.ChartPoint.hasDataLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasDataLabel: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.ChartPoint.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -43,7 +80,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartPoint;'
+      content: 'load(option?: Excel.Interfaces.ChartPointLoadOptions): Excel.ChartPoint;'
       return:
         type:
           - Excel.ChartPoint
@@ -52,7 +89,93 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ChartPointLoadOptions
+  - uid: excel.Excel.ChartPoint.markerBackgroundColor
+    summary: |-
+      HTML color code representation of the marker background color of data point. E.g. \#FF0000 represents Red.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: markerBackgroundColor
+    fullName: excel.Excel.ChartPoint.markerBackgroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerBackgroundColor: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ChartPoint.markerForegroundColor
+    summary: |-
+      HTML color code representation of the marker foreground color of data point. E.g. \#FF0000 represents Red.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: markerForegroundColor
+    fullName: excel.Excel.ChartPoint.markerForegroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerForegroundColor: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ChartPoint.markerSize
+    summary: |-
+      Represents marker size of data point.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: markerSize
+    fullName: excel.Excel.ChartPoint.markerSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerSize: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ChartPoint.markerStyle
+    summary: |-
+      Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: markerStyle
+    fullName: excel.Excel.ChartPoint.markerStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        markerStyle: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X"
+        | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
+      return:
+        type:
+          - >-
+            Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star"
+            | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
+  - uid: excel.Excel.ChartPoint.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: excel.Excel.ChartPoint.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartPointUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ChartPointUpdateData
+        - id: options
+          description: ''
+          type:
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartPoint.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartPoint.toJSON
@@ -60,14 +183,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ChartPointData;'
       return:
         type:
-          - |-
-            {
-                        "format": ChartPointFormat;
-                        "value": any;
-                    }
+          - Excel.Interfaces.ChartPointData
         description: ''
   - uid: excel.Excel.ChartPoint.value
     summary: |-

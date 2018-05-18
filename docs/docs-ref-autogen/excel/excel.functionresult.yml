@@ -45,7 +45,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): FunctionResult<T>;'
+      content: 'load(option?: Excel.Interfaces.FunctionResultLoadOptions): FunctionResult<T>;'
       return:
         type:
           - FunctionResult<T>
@@ -54,7 +54,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.FunctionResultLoadOptions
   - uid: excel.Excel.FunctionResult.toJSON
     name: toJSON()
     fullName: excel.Excel.FunctionResult.toJSON
@@ -62,14 +62,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Interfaces.FunctionResultData<T>;'
       return:
         type:
-          - |-
-            {
-                        "error": string;
-                        "value": T;
-                    }
+          - Interfaces.FunctionResultData<T>
         description: ''
   - uid: excel.Excel.FunctionResult.value
     summary: >-

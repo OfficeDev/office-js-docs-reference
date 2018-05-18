@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.WorksheetDeactivatedEventArgs
+    summary: |-
+      Provides information about the worksheet that raised the Deactivated event.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: Excel.WorksheetDeactivatedEventArgs
+    fullName: excel.Excel.WorksheetDeactivatedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.WorksheetDeactivatedEventArgs.type
+      - excel.Excel.WorksheetDeactivatedEventArgs.worksheetId
+  - uid: excel.Excel.WorksheetDeactivatedEventArgs.type
+    summary: |-
+      Gets the type of the event. See Excel.EventType for details.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: type
+    fullName: excel.Excel.WorksheetDeactivatedEventArgs.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "WorksheetDeactivated";'
+      return:
+        type:
+          - '"WorksheetDeactivated"'
+  - uid: excel.Excel.WorksheetDeactivatedEventArgs.worksheetId
+    summary: |-
+      Gets the id of the worksheet that is deactivated.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: worksheetId
+    fullName: excel.Excel.WorksheetDeactivatedEventArgs.worksheetId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type:
+          - string

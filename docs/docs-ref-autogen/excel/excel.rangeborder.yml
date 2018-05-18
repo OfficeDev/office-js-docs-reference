@@ -48,7 +48,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.RangeBorder;'
+      content: 'load(option?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;'
       return:
         type:
           - Excel.RangeBorder
@@ -57,7 +57,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.RangeBorderLoadOptions
   - uid: excel.Excel.RangeBorder.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -66,10 +66,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.RangeBorderUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.RangeBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -82,13 +79,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.RangeBorder.sideIndex
     summary: |-
       Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
@@ -100,10 +91,14 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly sideIndex: string;'
+      content: >-
+        readonly sideIndex: Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" |
+        "InsideHorizontal" | "DiagonalDown" | "DiagonalUp";
       return:
         type:
-          - string
+          - >-
+            Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" |
+            "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"
   - uid: excel.Excel.RangeBorder.style
     summary: >-
       One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
@@ -117,10 +112,14 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'style: string;'
+      content: >-
+        style: Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
+        "SlantDashDot";
       return:
         type:
-          - string
+          - >-
+            Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
+            "SlantDashDot"
   - uid: excel.Excel.RangeBorder.toJSON
     name: toJSON()
     fullName: excel.Excel.RangeBorder.toJSON
@@ -128,16 +127,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.RangeBorderData;'
       return:
         type:
-          - |-
-            {
-                        "color": string;
-                        "sideIndex": string;
-                        "style": string;
-                        "weight": string;
-                    }
+          - Excel.Interfaces.RangeBorderData
         description: ''
   - uid: excel.Excel.RangeBorder.weight
     summary: |-
@@ -150,7 +143,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'weight: string;'
+      content: 'weight: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";'
       return:
         type:
-          - string
+          - Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick"

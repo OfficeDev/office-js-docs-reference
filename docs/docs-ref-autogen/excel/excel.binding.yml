@@ -173,7 +173,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.Binding;'
+      content: 'load(option?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;'
       return:
         type:
           - Excel.Binding
@@ -182,7 +182,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.BindingLoadOptions
   - uid: excel.Excel.Binding.onDataChanged
     summary: |-
       Occurs when data or formatting within the binding is changed.
@@ -220,14 +220,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.BindingData;'
       return:
         type:
-          - |-
-            {
-                        "id": string;
-                        "type": string;
-                    }
+          - Excel.Interfaces.BindingData
         description: ''
   - uid: excel.Excel.Binding.type
     summary: |-
@@ -240,7 +236,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly type: string;'
+      content: 'readonly type: Excel.BindingType | "Range" | "Table" | "Text";'
       return:
         type:
-          - string
+          - Excel.BindingType | "Range" | "Table" | "Text"

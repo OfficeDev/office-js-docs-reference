@@ -23,6 +23,10 @@ items:
       - onenote.OneNote.Image.ocrData
       - onenote.OneNote.Image.pageContent
       - onenote.OneNote.Image.paragraph
+      - onenote.OneNote.Image.set
+      - onenote.OneNote.Image.toJSON
+      - onenote.OneNote.Image.track
+      - onenote.OneNote.Image.untrack
       - onenote.OneNote.Image.width
   - uid: onenote.OneNote.Image.description
     summary: |-
@@ -137,7 +141,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type:
           - string
@@ -151,7 +155,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.Image;'
+      content: 'load(option?: OneNote.Interfaces.ImageLoadOptions): OneNote.Image;'
       return:
         type:
           - OneNote.Image
@@ -160,7 +164,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.ImageLoadOptions
   - uid: onenote.OneNote.Image.ocrData
     summary: |-
       Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.
@@ -172,7 +176,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'ocrData: OneNote.ImageOcrData;'
+      content: 'readonly ocrData: OneNote.ImageOcrData;'
       return:
         type:
           - OneNote.ImageOcrData
@@ -189,7 +193,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'pageContent: OneNote.PageContent;'
+      content: 'readonly pageContent: OneNote.PageContent;'
       return:
         type:
           - OneNote.PageContent
@@ -206,10 +210,88 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'paragraph: OneNote.Paragraph;'
+      content: 'readonly paragraph: OneNote.Paragraph;'
       return:
         type:
           - OneNote.Paragraph
+  - uid: onenote.OneNote.Image.set
+    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    name: 'set(properties, options)'
+    fullName: onenote.OneNote.Image.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        set(properties: Interfaces.ImageUpdateData, options?: {
+                    throwOnReadOnly?: boolean;
+                }): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - Interfaces.ImageUpdateData
+        - id: options
+          description: ''
+          type:
+            - |-
+              {
+                          /**
+                           * Throw an error if the passed-in property list includes read-only properties (default = true).
+                           */
+                          throwOnReadOnly?: boolean;
+                      }
+  - uid: onenote.OneNote.Image.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.Image.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.ImageData;'
+      return:
+        type:
+          - OneNote.Interfaces.ImageData
+        description: ''
+  - uid: onenote.OneNote.Image.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.Image.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.Image;'
+      return:
+        type:
+          - OneNote.Image
+        description: ''
+  - uid: onenote.OneNote.Image.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.Image.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.Image;'
+      return:
+        type:
+          - OneNote.Image
+        description: ''
   - uid: onenote.OneNote.Image.width
     summary: |-
       Gets or sets the width of the Image layout.

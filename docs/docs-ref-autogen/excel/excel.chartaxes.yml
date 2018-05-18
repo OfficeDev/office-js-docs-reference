@@ -15,6 +15,7 @@ items:
     package: excel
     children:
       - excel.Excel.ChartAxes.categoryAxis
+      - excel.Excel.ChartAxes.getItem
       - excel.Excel.ChartAxes.load
       - excel.Excel.ChartAxes.seriesAxis
       - excel.Excel.ChartAxes.set
@@ -22,7 +23,7 @@ items:
       - excel.Excel.ChartAxes.valueAxis
   - uid: excel.Excel.ChartAxes.categoryAxis
     summary: |-
-      Represents the category axis in a chart. Read-only.
+      Represents the category axis in a chart.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: categoryAxis
@@ -35,6 +36,31 @@ items:
       return:
         type:
           - Excel.ChartAxis
+  - uid: excel.Excel.ChartAxes.getItem
+    summary: |-
+      Returns the specific axis identified by type and group.
+
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+    name: 'getItem(type, group)'
+    fullName: excel.Excel.ChartAxes.getItem
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(type: Excel.ChartAxisType, group?: Excel.ChartAxisGroup): Excel.ChartAxis;'
+      return:
+        type:
+          - Excel.ChartAxis
+        description: ''
+      parameters:
+        - id: type
+          description: Specifies the axis type. See Excel.ChartAxis for details.
+          type:
+            - Excel.ChartAxisType
+        - id: group
+          description: Specifies the axis group. See Excel.ChartAxis for details.
+          type:
+            - Excel.ChartAxisGroup
   - uid: excel.Excel.ChartAxes.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -45,7 +71,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartAxes;'
+      content: 'load(option?: Excel.Interfaces.ChartAxesLoadOptions): Excel.ChartAxes;'
       return:
         type:
           - Excel.ChartAxes
@@ -54,10 +80,10 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Excel.Interfaces.ChartAxesLoadOptions
   - uid: excel.Excel.ChartAxes.seriesAxis
     summary: |-
-      Represents the series axis of a 3-dimensional chart. Read-only.
+      Represents the series axis of a 3-dimensional chart.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: seriesAxis
@@ -78,10 +104,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        set(properties: Interfaces.ChartAxesUpdateData, options?: {
-                    throwOnReadOnly?: boolean;
-                }): void;
+      content: 'set(properties: Interfaces.ChartAxesUpdateData, options?: OfficeExtension.UpdateOptions): void;'
       return:
         type:
           - void
@@ -94,13 +117,7 @@ items:
         - id: options
           description: ''
           type:
-            - |-
-              {
-                          /**
-                           * Throw an error if the passed-in property list includes read-only properties (default = true).
-                           */
-                          throwOnReadOnly?: boolean;
-                      }
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartAxes.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartAxes.toJSON
@@ -108,19 +125,14 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Excel.Interfaces.ChartAxesData;'
       return:
         type:
-          - |-
-            {
-                        "categoryAxis": ChartAxis;
-                        "seriesAxis": ChartAxis;
-                        "valueAxis": ChartAxis;
-                    }
+          - Excel.Interfaces.ChartAxesData
         description: ''
   - uid: excel.Excel.ChartAxes.valueAxis
     summary: |-
-      Represents the value axis in an axis. Read-only.
+      Represents the value axis in an axis.
 
       \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: valueAxis

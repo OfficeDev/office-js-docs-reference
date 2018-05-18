@@ -284,7 +284,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getByTypes(types: Array<string>): Word.ContentControlCollection;'
+      content: 'getByTypes(types: Word.ContentControlType[]): Word.ContentControlCollection;'
       return:
         type:
           - Word.ContentControlCollection
@@ -293,7 +293,7 @@ items:
         - id: types
           description: Required. An array of content control types and/or subtypes.
           type:
-            - Array<string>
+            - 'Word.ContentControlType[]'
   - uid: word.Word.ContentControlCollection.getFirst
     summary: |-
       Gets the first content control in this collection. Throws if this collection is empty.
@@ -387,10 +387,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'items: Array<Word.ContentControl>;'
+      content: 'readonly items: Word.ContentControl[];'
       return:
         type:
-          - Array<Word.ContentControl>
+          - 'Word.ContentControl[]'
   - uid: word.Word.ContentControlCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -401,7 +401,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Word.ContentControlCollection;'
+      content: >-
+        load(option?: Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions):
+        Word.ContentControlCollection;
       return:
         type:
           - Word.ContentControlCollection
@@ -410,7 +412,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
     remarks: |
 
 
@@ -487,10 +489,10 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'toJSON:'
+      content: 'toJSON(): Word.Interfaces.ContentControlCollectionData;'
       return:
         type:
-          - '{}'
+          - Word.Interfaces.ContentControlCollectionData
         description: ''
   - uid: word.Word.ContentControlCollection.track
     summary: >-

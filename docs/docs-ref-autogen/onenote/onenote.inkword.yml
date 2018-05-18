@@ -18,6 +18,9 @@ items:
       - onenote.OneNote.InkWord.languageId
       - onenote.OneNote.InkWord.load
       - onenote.OneNote.InkWord.paragraph
+      - onenote.OneNote.InkWord.toJSON
+      - onenote.OneNote.InkWord.track
+      - onenote.OneNote.InkWord.untrack
       - onenote.OneNote.InkWord.wordAlternates
   - uid: onenote.OneNote.InkWord.id
     summary: |-
@@ -30,7 +33,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'id: string;'
+      content: 'readonly id: string;'
       return:
         type:
           - string
@@ -45,7 +48,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'languageId: string;'
+      content: 'readonly languageId: string;'
       return:
         type:
           - string
@@ -59,7 +62,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'load(option?: string | string[] | OfficeExtension.LoadOption): OneNote.InkWord;'
+      content: 'load(option?: OneNote.Interfaces.InkWordLoadOptions): OneNote.InkWord;'
       return:
         type:
           - OneNote.InkWord
@@ -68,7 +71,7 @@ items:
         - id: option
           description: ''
           type:
-            - 'string | string[] | OfficeExtension.LoadOption'
+            - OneNote.Interfaces.InkWordLoadOptions
   - uid: onenote.OneNote.InkWord.paragraph
     summary: |-
       The parent paragraph containing the ink word. Read-only.
@@ -80,10 +83,57 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'paragraph: OneNote.Paragraph;'
+      content: 'readonly paragraph: OneNote.Paragraph;'
       return:
         type:
           - OneNote.Paragraph
+  - uid: onenote.OneNote.InkWord.toJSON
+    name: toJSON()
+    fullName: onenote.OneNote.InkWord.toJSON
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.InkWordData;'
+      return:
+        type:
+          - OneNote.Interfaces.InkWordData
+        description: ''
+  - uid: onenote.OneNote.InkWord.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: onenote.OneNote.InkWord.track
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.InkWord;'
+      return:
+        type:
+          - OneNote.InkWord
+        description: ''
+  - uid: onenote.OneNote.InkWord.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: onenote.OneNote.InkWord.untrack
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.InkWord;'
+      return:
+        type:
+          - OneNote.InkWord
+        description: ''
   - uid: onenote.OneNote.InkWord.wordAlternates
     summary: |-
       The words that were recognized in this ink word, in order of likelihood. Read-only.
@@ -95,7 +145,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'wordAlternates: Array<string>;'
+      content: 'readonly wordAlternates: Array<string>;'
       return:
         type:
           - Array<string>

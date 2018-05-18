@@ -3,7 +3,7 @@
 ////////////////////////////////////////////////////////////////
 
 export declare namespace Office {
-    export module MailboxEnums {
+    export namespace MailboxEnums {
         export enum AttachmentType {
             /**
              * The attachment is a file
