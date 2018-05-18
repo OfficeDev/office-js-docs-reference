@@ -41,6 +41,21 @@ items:
           description: 'A range that represents the cells to be frozen, or null to remove all frozen panes.'
           type:
             - Excel.Range | string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          // Freeze the specified range in top-and-left-most pane of the worksheet.
+          sheet.freezePanes.freezeAt(sheet.getRange("H2:K5"));
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.WorksheetFreezePanes.freezeColumns
     summary: |-
       Freeze the first column(s) of the worksheet in place.
@@ -62,6 +77,21 @@ items:
           description: 'Optional number of columns to freeze, or zero to unfreeze all columns'
           type:
             - number
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          // Freeze the first two columns in the worksheet.
+          sheet.freezePanes.freezeColumns(2);
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.WorksheetFreezePanes.freezeRows
     summary: |-
       Freeze the top row(s) of the worksheet in place.
@@ -83,6 +113,21 @@ items:
           description: 'Optional number of rows to freeze, or zero to unfreeze all rows'
           type:
             - number
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          // Freeze the top two rows in the worksheet.
+          sheet.freezePanes.freezeRows(2);
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.WorksheetFreezePanes.getLocation
     summary: >-
       Gets a range that describes the frozen cells in the active worksheet view. The frozen range is corresponds to

@@ -78,6 +78,31 @@ items:
         type:
           - void
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      try {
+          await Excel.run(async (context) => {
+
+              const sheet = context.workbook.worksheets.getItem("Sample");
+
+              sheet.names.getItem("TotalAmount").delete();
+
+              // Replace the named item (TotalAmount) with the actual formula for TotalAmount to avoid displaying #NAME in the cell.
+              sheet.getRange("D11").values = [["=SUM(ExpensesTable[AMOUNT])"]];
+
+              await context.sync();
+
+          });
+      }
+      catch (error) {
+          OfficeHelpers.UI.notify(error);
+          OfficeHelpers.Utilities.log(error);
+      }
+      ```
   - uid: excel.Excel.NamedItem.formula
     summary: |-
       Gets or sets the formula of the named item. Formula always starts with a '=' sign.
@@ -93,6 +118,36 @@ items:
       return:
         type:
           - any
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          // Get the named item
+          const myNamedItem = sheet.names.getItemOrNullObject("MyRange");
+          myNamedItem.load("name, formula");
+
+          await context.sync();
+
+          if (myNamedItem.isNullObject) {
+              OfficeHelpers.UI.notify(`There is no named item with the name "MyRange".`);
+          } else {
+              
+              // Update named item to point to the second range
+              myNamedItem.formula = "=Sample!$B$10:$D$14";
+
+              sheet.getRange("B10:D14").select();
+
+              await context.sync();
+
+              OfficeHelpers.UI.notify(`Just updated the named item "${myNamedItem.name}" -- it's now located here: ${myNamedItem.formula}`);
+          }
+      });
+      ```
   - uid: excel.Excel.NamedItem.getRange
     summary: >-
       Returns the range object that is associated with the name. Throws an error if the named item's type is not a

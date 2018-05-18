@@ -142,6 +142,26 @@ items:
           description: ''
           type:
             - Excel.Worksheet
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+
+          let myWorkbook = context.workbook;
+          let sampleSheet = myWorkbook.worksheets.getActiveWorksheet();
+          let copiedSheet = sampleSheet.copy("End")
+
+          sampleSheet.load("name");
+          copiedSheet.load("name");
+
+          await context.sync();
+
+          console.log("'" + sampleSheet.name + "' was copied to '" + copiedSheet.name + "'")
+      });
+      ```
   - uid: excel.Excel.Worksheet.delete
     summary: |-
       Deletes the worksheet from the workbook.
@@ -388,6 +408,20 @@ items:
               if (error instanceof OfficeExtension.Error) {
                   console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
+      });
+      ```
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+          // To create a Range with multiple child areas, pass a 
+          // comma-delimited string of range addresses to 
+          // Worksheet.getRange.
+          const range = sheet.getRange("F3:F5, H3:H5");
+          range.format.fill.color = "pink";
+
+          await context.sync();
       });
       ```
   - uid: excel.Excel.Worksheet.getRangeByIndexes
