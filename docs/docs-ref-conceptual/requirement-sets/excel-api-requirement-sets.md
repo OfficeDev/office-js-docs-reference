@@ -11,7 +11,8 @@ Excel add-ins run across multiple versions of Office, including Office 2016 for 
 
 |  Requirement set  |  Office 365 for Windows\*  |  Office 365 for iPad  |  Office 365 for Mac  | Office Online  |  Office Online Server  |
 |:-----|-----|:-----|:-----|:-----|:-----|
-| ExcelApi1.7 **Beta**  | Version 1704 (Build 8201.2001) or later| Coming soon |  Coming soon| April 2017 | Coming soon|
+| Beta  | Please [visit our Excel JavaScript API open specification page](https://github.com/OfficeDev/office-js-docs/tree/ExcelJs_OpenSpec)! |
+| ExcelApi1.7  | Version 1801 (Build 9001.2171) or later| 2.9 or later | 16.9 or later | April 2018 | Coming soon |
 | ExcelApi1.6  | Version 1704 (Build 8201.2001) or later| 2.2 or later |15.36 or later| April 2017 | Coming soon|
 | ExcelApi1.5  | Version 1703 (Build 8067.2070) or later| 2.2 or later |15.36 or later| March 2017 | Coming soon|
 | ExcelApi1.4 | Version 1701 (Build 7870.2024) or later| 2.2 or later |15.36 or later| January 2017 | Coming soon|
@@ -24,17 +25,14 @@ Excel add-ins run across multiple versions of Office, including Office 2016 for 
 
 For more information about versions, build numbers, and Office Online Server, see:
 
-- [Version and build numbers of update channel releases for Office 365 clients](https://technet.microsoft.com/library/mt592918.aspx)
-- [What version of Office am I using?](https://support.office.com/article/What-version-of-Office-am-I-using-932788b8-a3ce-44bf-bb09-e334518b8b19?ui=en-US&rs=en-US&ad=US&fromAR=1)
-- [Where you can find the version and build number for an Office 365 client application](https://technet.microsoft.com/library/mt592918.aspx#Anchor_1)
-- [Office Online Server overview](https://technet.microsoft.com/library/jj219437(v=office.16).aspx)
+- [Version and build numbers of update channel releases for Office 365 clients](https://support.office.com/article/version-and-build-numbers-of-update-channel-releases-ae942449-1fca-4484-898b-a933ea23def7)
+- [What version of Office am I using?](https://support.office.com/article/What-version-of-Office-am-I-using-932788b8-a3ce-44bf-bb09-e334518b8b19)
+- [Where you can find the version and build number for an Office 365 client application](https://support.office.com/article/version-and-build-numbers-of-update-channel-releases-ae942449-1fca-4484-898b-a933ea23def7)
+- [Office Online Server overview](https://docs.microsoft.com/officeonlineserver/office-online-server-overview)
 
-## Upcoming Excel JavaScript API 1.7 release features
+## What's new in Excel JavaScript API 1.7
 
 The Excel JavaScript API requirement set 1.7 features include APIs for charts, events, data validation, worksheets, ranges, document properties, named items, protection options and styles.
-
-> [!NOTE] 
-> For API reference documentation and details, see the [Excel JavaScript API open specification](https://github.com/OfficeDev/office-js-docs/tree/ExcelJs_OpenSpec). 
 
 ### Customize charts
 
@@ -57,7 +55,6 @@ Excel events APIs provide a variety of event handlers that allow your add-in to 
 Using the new APIs, you can customize the appearance of worksheets in multiple ways:
 
 * Freeze panes to keep specific rows or columns visible when you scroll in the worksheet. For example, if the first row in your worksheet contains headers, you might freeze that row so that the column headers will remain visible as you scroll down the worksheet.
-* Set the visibility of gridlines in a worksheet.
 * Modify the worksheet tab color.
 * Add worksheet headings.
 
@@ -300,7 +297,6 @@ In addition:
 |[workbookProtection](../../api/excel/excel.workbookprotection)|_Method_ > unprotect(password: string)|Unprotects a workbook.|1.7|
 |[worksheet](../../api/excel/excel.worksheet)|_Property_ > gridlines|Gets or sets the worksheet's gridlines flag.|1.7|
 |[worksheet](../../api/excel/excel.worksheet)|_Property_ > headings|Gets or sets the worksheet's headings flag.|1.7|
-|[worksheet](../../api/excel/excel.worksheet)|_Property_ > showGridlines|Gets or sets the worksheet's gridlines flag.|1.7|
 |[worksheet](../../api/excel/excel.worksheet)|_Property_ > showHeadings|Gets or sets the worksheet's headings flag.|1.7|
 |[worksheet](../../api/excel/excel.worksheet)|_Property_ > standardHeight|Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.|1.7|
 |[worksheet](../../api/excel/excel.worksheet)|_Property_ > standardWidth|Returns or sets the standard (default) width of all the columns in the worksheet.|1.7|
@@ -341,7 +337,7 @@ In addition:
 
 ### Conditional formatting
 
-Introduces [Conditional formating](https://github.com/OfficeDev/office-js-docs/blob/ExcelJs_OpenSpec/reference/excel/conditionalformat) of a range. Allows follwoing types of conditional formatting:
+Introduces conditional formating of a range. Allows the following types of conditional formatting:
 
 * Color scale
 * Data bar
@@ -350,13 +346,11 @@ Introduces [Conditional formating](https://github.com/OfficeDev/office-js-docs/b
 
 In addition:
 
-* Returns the range the conditonal format is applied to. 
+* Returns the range the conditional format is applied to. 
 * Removal of conditional formatting. 
 * Provides priority and stopifTrue capability. 
 * Get collection of all conditional formatting on a given range. 
 * Clears all conditional formats active on the current specified range. 
-
-For API details, please refer to the [Excel JavaScript API open specification](https://github.com/OfficeDev/office-js-docs/tree/ExcelJs_OpenSpec). 
 
 |Object| What is new| Description|Requirement set|
 |:----|:----|:----|:----|
@@ -502,8 +496,6 @@ For API details, please refer to the [Excel JavaScript API open specification](h
 * `getNext()` and `getPrevious()` on worksheet, table column collection.
 * `getRangeR1C1()` Gets the range object beginning at a particular row index and column index, and spanning a certain number of rows and columns.
 
-For API details, please refer to the [Excel JavaScript API open specification](https://github.com/OfficeDev/office-js-docs/tree/ExcelJs_OpenSpec). 
-
 |Object| What is new| Description|Requirement set|
 |:----|:----|:----|:----|
 |[customXmlPart](../../api/excel/excel.customxmlpart)|_Property_ > id|The custom XML part's ID. Read-only.|1.5|
@@ -549,7 +541,7 @@ New methods:
 
 ### Settings API in in Excel namespace
 
-[Setting](https://github.com/OfficeDev/office-js-docs/blob/ExcelJs_1.4_OpenSpec/reference/excel/setting) object represents a key-value pair of a setting persisted to the document. Now, we've added settings related APIs under Excel namespace. This doesn't offer net new functionality - however this make easy to remain in the promise based batched API syntax reduce the dependency on common API for Excel related tasks.
+[Setting](../../api/excel/excel.setting) object represents a key-value pair of a setting persisted to the document. Now, we've added settings related APIs under Excel namespace. This doesn't offer net new functionality - however this make easy to remain in the promise based batched API syntax reduce the dependency on common API for Excel related tasks.
 
 APIs include `getItem()` to get setting entry via the key, `add()` to add the specified key:value setting pair to the workbook.
 
@@ -755,5 +747,5 @@ Excel JavaScript API 1.1 is the first version of the API. For details about the 
 ## See also
 
 - [Office versions and requirement sets](https://docs.microsoft.com/office/dev/add-ins/develop/office-versions-and-requirement-sets)
-- [Specify Office hosts and API requirements](.https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)
+- [Specify Office hosts and API requirements](https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)
 - [Office Add-ins XML manifest](https://docs.microsoft.com/office/dev/add-ins/develop/add-in-manifests)
