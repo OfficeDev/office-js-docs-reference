@@ -53,6 +53,33 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+
+          // You must have the xmlns attribute to populate the 
+          // CustomXml.namespaceUri property.
+          const originalXml = "<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
+          const customXmlPart = context.workbook.customXmlParts.add(originalXml);
+          customXmlPart.load("id");
+          const xmlBlob = customXmlPart.getXml();
+
+          await context.sync();
+
+          const readableXml = addLineBreaksToXML(xmlBlob.value);
+          $("#display-xml").text(readableXml);
+
+          // Store the XML part's ID in a setting.
+          const settings = context.workbook.settings;
+          settings.add("ContosoReviewXmlPartId", customXmlPart.id);
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.CustomXmlPart.id
     summary: |-
       The custom XML part's ID. Read-only.
@@ -68,6 +95,33 @@ items:
       return:
         type:
           - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+
+          // You must have the xmlns attribute to populate the 
+          // CustomXml.namespaceUri property.
+          const originalXml = "<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
+          const customXmlPart = context.workbook.customXmlParts.add(originalXml);
+          customXmlPart.load("id");
+          const xmlBlob = customXmlPart.getXml();
+
+          await context.sync();
+
+          const readableXml = addLineBreaksToXML(xmlBlob.value);
+          $("#display-xml").text(readableXml);
+
+          // Store the XML part's ID in a setting.
+          const settings = context.workbook.settings;
+          settings.add("ContosoReviewXmlPartId", customXmlPart.id);
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.CustomXmlPart.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

@@ -85,6 +85,24 @@ items:
         type:
           - void
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          let style = context.workbook.styles.getItem("Diagonal Orientation Style");
+
+          // Delete the diagonal orientation style from the style collection.
+          // Styles are in the Home tab ribbon.
+          style.delete();
+
+          await context.sync();
+
+          OfficeHelpers.UI.notify("Successfully deleted the diagonal orientation style from the Home tab ribbon.");
+      });
+      ```
   - uid: excel.Excel.Style.fill
     summary: |-
       The Fill of the style.
@@ -115,6 +133,27 @@ items:
       return:
         type:
           - Excel.RangeFont
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          let style = context.workbook.styles.getItem("Normal");
+          style.font.load("bold, color, italic, name, size");
+          style.fill.load("color");
+
+          await context.sync();
+
+          console.log("Bold: " + style.font.bold);
+          console.log("Font color: " + style.font.color);
+          console.log("Italic: " + style.font.italic);
+          console.log("Name: " + style.font.name);
+          console.log("Size: " + style.font.size);
+          console.log("Fill color: " + style.fill.color);
+      });
+      ```
   - uid: excel.Excel.Style.formulaHidden
     summary: |-
       Indicates if the formula will be hidden when the worksheet is protected.

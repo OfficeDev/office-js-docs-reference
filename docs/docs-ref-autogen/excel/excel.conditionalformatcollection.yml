@@ -229,6 +229,41 @@ items:
           }
           });
       ```
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const worksheetRange = sheet.getRange();
+          worksheetRange.conditionalFormats.load("type");
+
+          await context.sync();
+
+          let cfRangePairs: { cf: Excel.ConditionalFormat, range: Excel.Range }[] = [];
+          worksheetRange.conditionalFormats.items.forEach(item => {
+              cfRangePairs.push({
+                  cf: item,
+                  range: item.getRange().load("address")
+              });
+          });
+
+          await context.sync();
+
+          $("#conditional-formats li").remove();
+          if (cfRangePairs.length > 0) {
+              cfRangePairs.forEach(item => {
+                  let $p = $("<p></p>").text(
+                      `${item.cf.type}`)
+                  let $li = $(`<li></li>`);
+                  $li.append($p);
+                  $("#conditional-formats").append($li);
+                  $(".conditional-formats").show()[0].scrollIntoView();
+              })
+          }
+          else {
+              OfficeHelpers.UI.notify("None to display", "No conditional formats in workbook", "warning");
+          }
+      });
+      ```
   - uid: excel.Excel.ConditionalFormatCollection.items
     summary: Gets the loaded child items in this collection.
     name: items

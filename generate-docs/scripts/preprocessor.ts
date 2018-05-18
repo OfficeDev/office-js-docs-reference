@@ -4,6 +4,7 @@ import { fetchAndThrowOnError, DtsBuilder } from './util';
 import { promptFromList } from './simple-prompts';
 import * as path from "path";
 import * as fsx from 'fs-extra';
+import yaml = require('js-yaml');
 
 tryCatch(async () => {
     console.log('\n\n');
@@ -112,21 +113,35 @@ tryCatch(async () => {
     console.log("\nReading from files: " + path.resolve("../../docs/code-snippets"));
 
     const snippetsSourcePath = path.resolve("../../docs/code-snippets");
-    let localCodeSnippets : string = "";
+    let localCodeSnippetsString : string = "";
     fsx.readdirSync(path.resolve(snippetsSourcePath))
         .filter(name => name.endsWith('.yaml') || name.endsWith('.yml'))
         .forEach((filename, index) => {
-            localCodeSnippets += fsx.readFileSync(`${snippetsSourcePath}/${filename}`).toString() + "\r\n";
+            localCodeSnippetsString += fsx.readFileSync(`${snippetsSourcePath}/${filename}`).toString() + "\r\n";
         });
-    fsx.writeFileSync("../script-inputs/local-repo-snippets.yaml", localCodeSnippets);
+
+    fsx.writeFileSync("../script-inputs/local-repo-snippets.yaml", localCodeSnippetsString);
+
+    // Parse the YAML into an object/hash set.
+    let snippets: Object = yaml.load(localCodeSnippetsString);
+
+    // If including Script Lab snippets, add them to the set. If a duplicate key exists, merge the Script Lab example(s)
+    // into the item with the existing key.
+    if (includeScriptLabSnippets === "y") {
+        let scriptLabSnippets: Object = yaml.load(fsx.readFileSync(`../script-inputs/script-lab-snippets.yaml`).toString());
+        for (const key of Object.keys(scriptLabSnippets)) {
+            if (snippets[key]) {
+                console.log("Combining local and Script Lab snippets for: " + key);
+                snippets[key] = snippets[key].concat(scriptLabSnippets[key]);
+            } else {
+                snippets[key] = scriptLabSnippets[key];
+            }
+        }
+    }
 
     console.log("\nWriting snippets to: " + path.resolve("../json/snippets.yaml"));
 
-    const allCodeSnippets = includeScriptLabSnippets === "y"
-        ? fsx.readFileSync(`../script-inputs/local-repo-snippets.yaml`).toString() + fsx.readFileSync(`../script-inputs/script-lab-snippets.yaml`).toString()
-        : fsx.readFileSync(`../script-inputs/local-repo-snippets.yaml`).toString();
-
-    fsx.writeFileSync("../json/snippets.yaml", allCodeSnippets);
+    fsx.writeFileSync("../json/snippets.yaml", yaml.dump(snippets));
 
     console.log("\nPreprocessor script complete!");
 

@@ -125,6 +125,23 @@ items:
         type:
           - Excel.Range
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+
+          let myWorkbook = context.workbook;
+          let activeCell = myWorkbook.getActiveCell();
+          activeCell.load("address");
+
+          await context.sync();
+          
+          console.log("The active cell is " + activeCell.address);
+      });
+      ```
   - uid: excel.Excel.Workbook.getSelectedRange
     summary: |-
       Gets the currently selected range from the workbook.
