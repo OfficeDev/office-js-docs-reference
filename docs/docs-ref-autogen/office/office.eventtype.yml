@@ -30,14 +30,32 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.BindingDataChanged
-    summary: Triggers when a binding level data change happens
+    summary: |-
+      Occurs when data within the binding is changed.
+
+      Hosts: Access, Excel, Word
+
+      Last changed in: 1.1
+    remarks: >-
+      To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the
+      Binding object. The event handler receives an argument of type BindingDataChangedEventArgs.
     name: BindingDataChanged
     fullName: office.Office.EventType.BindingDataChanged
     langs:
       - typeScript
     type: field
   - uid: office.Office.EventType.BindingSelectionChanged
-    summary: Triggers when a binding level selection happens
+    summary: |-
+      Occurs when the selection is changed within the binding.
+
+      Hosts: Access, Excel, Word
+
+      Available in Requirement set: BindingEvents
+
+      Last changed in: 1.1
+    remarks: >-
+      To add an event handler for the BindingSelectionChanged event of a binding, use the addHandlerAsync method of the
+      Binding object. The event handler receives an argument of type BindingSelectionChangedEventArgs.
     name: BindingSelectionChanged
     fullName: office.Office.EventType.BindingSelectionChanged
     langs:

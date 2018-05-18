@@ -21,6 +21,8 @@ items:
     summary: |-
       Gets the Binding object that represents the binding that raised the SelectionChanged event.
 
+      \*\*Hosts:\*\* Access, Excel, Word
+
       \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
     name: binding
     fullName: excel.Excel.BindingSelectionChangedEventArgs.binding
@@ -34,9 +36,17 @@ items:
           - Excel.Binding
   - uid: excel.Excel.BindingSelectionChangedEventArgs.columnCount
     summary: |-
-      Gets the number of columns selected.
+      Gets the number of columns selected. The number of columns selected. If a single cell is selected returns 1.
 
       \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+    remarks: >-
+      If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is
+      returned.
+
+
+      For Word, this property will work only for bindings of BindingType "table". If the binding is of type "matrix",
+      null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table
+      must be uniform for this property to work correctly.
     name: columnCount
     fullName: excel.Excel.BindingSelectionChangedEventArgs.columnCount
     langs:
@@ -49,9 +59,17 @@ items:
           - number
   - uid: excel.Excel.BindingSelectionChangedEventArgs.rowCount
     summary: |-
-      Gets the number of rows selected.
+      Gets the number of columns selected. The number of columns selected. If a single cell is selected returns 1.
 
       \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+    remarks: >-
+      If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is
+      returned.
+
+
+      For Word, this property will work only for bindings of BindingType "table". If the binding is of type "matrix",
+      null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table
+      must be uniform for this property to work correctly.
     name: rowCount
     fullName: excel.Excel.BindingSelectionChangedEventArgs.rowCount
     langs:

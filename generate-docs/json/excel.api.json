@@ -1018,6 +1018,13 @@
                 },
                 {
                   "kind": "text",
+                  "text": "**Hosts:** Access, Excel, Word"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
                   "text": "[Api set: ExcelApi 1.2]"
                 }
               ],
@@ -1035,7 +1042,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the number of columns selected."
+                  "text": "Gets the number of columns selected. The number of columns selected. If a single cell is selected returns 1."
                 },
                 {
                   "kind": "paragraph"
@@ -1045,7 +1052,19 @@
                   "text": "[Api set: ExcelApi 1.2]"
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is returned."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For Word, this property will work only for bindings of BindingType \"table\". If the binding is of type \"matrix\", null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property to work correctly."
+                }
+              ],
               "isBeta": false
             },
             "rowCount": {
@@ -1059,7 +1078,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the number of rows selected."
+                  "text": "Gets the number of columns selected. The number of columns selected. If a single cell is selected returns 1."
                 },
                 {
                   "kind": "paragraph"
@@ -1069,7 +1088,19 @@
                   "text": "[Api set: ExcelApi 1.2]"
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is returned."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For Word, this property will work only for bindings of BindingType \"table\". If the binding is of type \"matrix\", null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property to work correctly."
+                }
+              ],
               "isBeta": false
             },
             "startColumn": {
