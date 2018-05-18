@@ -68,7 +68,7 @@ The following methods in the JavaScript API for Office aren't part of a requirem
 |TableBinding.setFormatsAsync|Excel, Excel Online|
 |TableBinding.setTableOptionsAsync|Excel, Excel Online|
 
-## See also
+## Additional resources
 
 - [Office versions and requirement sets](https://docs.microsoft.com/office/dev/add-ins/develop/office-versions-and-requirement-sets)
 - [Specify Office hosts and API requirements](https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements)

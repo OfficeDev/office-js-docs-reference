@@ -11,7 +11,7 @@ Word Add-ins run across multiple versions of Office, including Office 2016 for W
 
 |  Requirement set  |   Office 365 for Windows\*  |  Office 365 for iPad  |  Office 365 for Mac  | Office Online  | Office Online Server  |
 |:-----|-----|:-----|:-----|:-----|:-----|
-| WordApi 1.3 | Version 1612 (Build 7668.1000) or later| March 2017, 2.22 or later | March 2017, 15.32 or later| March 2017. ||
+| WordApi 1.3 | Version 1612 (Build 7668.1000) or later| March 2017, 2.22 or later | March 2017, 15.32 or later| March 2017 ||
 | WordApi 1.2  | December 2015 update, Version 1601 (Build 6568.1000) or later | January 2016, 1.18 or later | January 2016, 15.19 or later| September 2016 | |
 | WordApi 1.1  | Version 1509 (Build 4266.1001) or later| January 2016, 1.18 or later | January 2016, 15.19 or later| September 2016 | |
 
@@ -43,7 +43,7 @@ The following are the new additions to the Word JavaScript APIs in requirement s
 |[body](../../api/word/word.body)|_Relationship_ > tables|Gets the collection of table objects in the body. Read-only.|1.3|
 |[body](../../api/word/word.body)|_Relationship_ > type|Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.|1.3|
 |[body](../../api/word/word.body)|_Method_ > getRange(rangeLocation: RangeLocation)|Gets the whole body, or the starting or ending point of the body, as a range.|1.3|
-|[body](../../api/word/word.body)|_Method_ > insertTable(rowCount: number, columnCount: number, insertLocation: InsertLocation, values: string|Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'.|1.3|
+|[body](../../api/word/word.body)|_Method_ > insertTable(rowCount: number, columnCount: number, insertLocation: InsertLocation, values: string)|Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'.|1.3|
 |[breaktype](../../api/word/word.breaktype)|_Relationship_ > breaks|Specifies the form of a break: line, page, or section type. Read-only.|1.3|
 |[contentControl](../../api/word/word.contentcontrol)|_Relationship_ > lists|Gets the collection of list objects in the content control. Read-only.|1.3|
 |[contentControl](../../api/word/word.contentcontrol)|_Relationship_ > parentBody|Gets the parent body of the content control. Read-only.|1.3|
@@ -98,7 +98,7 @@ The following are the new additions to the Word JavaScript APIs in requirement s
 |[list](../../api/word/word.list)|_Relationship_ > paragraphs|Gets paragraphs in the list. Read-only.|1.3|
 |[list](../../api/word/word.list)|_Method_ > getLevelParagraphs(level: number)|Gets the paragraphs that occur at the specified level in the list.|1.3|
 |[list](../../api/word/word.list)|_Method_ > getLevelString(level: number)|Gets the bullet, number or picture at the specified level as a string.|1.3|
-|[list](../../api/word/word.list)|_Method_ > insertParagraph(paragraphText: string, insertLocation: InsertLocation)]|Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before' or 'After'.|1.3|
+|[list](../../api/word/word.list)|_Method_ > insertParagraph(paragraphText: string, insertLocation: InsertLocation)|Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before' or 'After'.|1.3|
 |[list](../../api/word/word.list)|_Method_ > setLevelAlignment(level: number, alignment: Alignment)|Sets the alignment of the bullet, number or picture at the specified level in the list.|1.3|
 |[list](../../api/word/word.list)|_Method_ > setLevelBullet(level: number, listBullet: ListBullet, charCode: number, fontName: string)|Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.|1.3|
 |[list](../../api/word/word.list)|_Method_ > setLevelIndents(level: number, textIndent: float, textIndent: float)|Sets the two indents of the specified level in the list.|1.3|
@@ -279,7 +279,7 @@ The following are the new additions to the Word JavaScript APIs in requirement s
 
 ## Word JavaScript API 1.1
 
-Word JavaScript API 1.1 is the first version of the API. For details about the API,  see the [Word JavaScript API](../overview/word-add-ins-reference-overview.md) reference topics. 
+Word JavaScript API 1.1 is the first version of the API. For details about the API,  see the [Word JavaScript API](../../api/word) reference topics. 
 
 ## Additional resources
 
