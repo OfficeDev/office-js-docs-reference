@@ -1,6 +1,13 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.File
+    summary: Represents the document file associated with an Office Add-in.
+    remarks: >-
+      Access the File object with the AsyncResult.value property in the callback function passed to the
+      Document.getFileAsync method.
+
+
+      Hosts: PowerPoint, Word
     name: Office.File
     fullName: office.Office.File
     langs:
@@ -13,7 +20,16 @@ items:
       - office.Office.File.size
       - office.Office.File.sliceCount
   - uid: office.Office.File.closeAsync
-    summary: Closes the File.
+    summary: Closes the document file.
+    remarks: >-
+      When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can
+      access from the callback function's only parameter. In the callback function passed to the closeAsync method, you
+      can use the properties of the AsyncResult object to return the following information. \|Property \|Use to...\|
+      \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\| \|AsyncResult.value\|Always returns undefined because there is no
+      object or data to retrieve.\| \|AsyncResult.status\|Determine the success or failure of the operation.\|
+      \|AsyncResult.error\|Access an Error object that provides error information if the operation failed.\|
+      \|AsyncResult.asyncContext\|Access your user-defined object or value, if you passed one as the asyncContext
+      parameter.\|
     name: closeAsync(callback)
     fullName: office.Office.File.closeAsync
     langs:
@@ -27,11 +43,19 @@ items:
         description: ''
       parameters:
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. Optional.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.File.getSliceAsync
-    summary: Gets the specified slice.
+    summary: Returns the specified slice.
+    remarks: >-
+      When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can
+      access from the callback function's only parameter. In the callback function passed to the getSliceAsync method,
+      you can use the properties of the AsyncResult object to return the following information. \|Property \|Use to...\|
+      \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\| \|AsyncResult.value\|Access the Slice object.\|
+      \|AsyncResult.status\|Determine the success or failure of the operation.\| \|AsyncResult.error\|Access an Error
+      object that provides error information if the operation failed.\| \|AsyncResult.asyncContext\|Access your
+      user-defined object or value, if you passed one as the asyncContext parameter.\|
     name: 'getSliceAsync(sliceIndex, callback)'
     fullName: office.Office.File.getSliceAsync
     langs:
@@ -45,14 +69,16 @@ items:
         description: ''
       parameters:
         - id: sliceIndex
-          description: The index of the slice to be retrieved
+          description: Specifies the zero-based index of the slice to be retrieved. Required.
           type:
             - number
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. Optional.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.File.size
+    summary: Gets the document file size in bytes.
+    remarks: 'Hosts: PowerPoint, Word'
     name: size
     fullName: office.Office.File.size
     langs:
@@ -64,6 +90,8 @@ items:
         type:
           - number
   - uid: office.Office.File.sliceCount
+    summary: Gets the number of slices into which the file is divided.
+    remarks: 'Hosts: PowerPoint, Word'
     name: sliceCount
     fullName: office.Office.File.sliceCount
     langs:

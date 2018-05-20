@@ -1,6 +1,13 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.CustomXmlNode
+    summary: Represents an XML node in a tree in a document.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      Last changed in: 1.1
     name: Office.CustomXmlNode
     fullName: office.Office.CustomXmlNode
     langs:
@@ -19,6 +26,13 @@ items:
       - office.Office.CustomXmlNode.setTextAsync
       - office.Office.CustomXmlNode.setXmlAsync
   - uid: office.Office.CustomXmlNode.baseName
+    summary: 'Gets the base name of the node without the namespace prefix, if one exists.'
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      Last changed in: 1.1
     name: baseName
     fullName: office.Office.CustomXmlNode.baseName
     langs:
@@ -30,7 +44,13 @@ items:
         type:
           - string
   - uid: office.Office.CustomXmlNode.getNodesAsync
-    summary: Gets the nodes associated with the xPath expression.
+    summary: Gets the nodes associated with the XPath expression.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      Last changed in: 1.1
     name: 'getNodesAsync(xPath, options, callback)'
     fullName: office.Office.CustomXmlNode.getNodesAsync
     langs:
@@ -44,19 +64,27 @@ items:
         description: ''
       parameters:
         - id: xPath
-          description: The xPath expression
+          description: The XPath expression that specifies the nodes to get. Required.
           type:
             - string
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            An object like {asyncContext:context} where \`context\` is a user-defined item of any type that is returned
+            in the AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.getNodeValueAsync
     summary: Gets the node value.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      Last changed in: 1.1
     name: 'getNodeValueAsync(options, callback)'
     fullName: office.Office.CustomXmlNode.getNodeValueAsync
     langs:
@@ -70,15 +98,23 @@ items:
         description: ''
       parameters:
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            An object like {asyncContext:context} where \`context\` is a user-defined item of any type that is returned
+            in the AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.getTextAsync
-    summary: Asynchronously gets the text of an XML node in a custom XML part.
+    summary: Gets the text of an XML node in a custom XML part.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      Last changed in: 1.2
     name: 'getTextAsync(options, callback)'
     fullName: office.Office.CustomXmlNode.getTextAsync
     langs:
@@ -92,15 +128,23 @@ items:
         description: ''
       parameters:
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            An object like {asyncContext:context} where \`context\` is a user-defined item of any type that is returned
+            in the AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.getXmlAsync
     summary: Gets the node's XML.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      Last changed in: 1.1
     name: 'getXmlAsync(options, callback)'
     fullName: office.Office.CustomXmlNode.getXmlAsync
     langs:
@@ -114,14 +158,23 @@ items:
         description: ''
       parameters:
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            An object like {asyncContext:context} where \`context\` is a user-defined item of any type that is returned
+            in the AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.namespaceUri
+    summary: Retrieves the string GUID of the CustomXMLPart.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      Last changed in: 1.1
     name: namespaceUri
     fullName: office.Office.CustomXmlNode.namespaceUri
     langs:
@@ -133,6 +186,13 @@ items:
         type:
           - string
   - uid: office.Office.CustomXmlNode.nodeType
+    summary: Gets the type of the CustomXMLNode.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      Last changed in: 1.1
     name: nodeType
     fullName: office.Office.CustomXmlNode.nodeType
     langs:
@@ -145,6 +205,12 @@ items:
           - string
   - uid: office.Office.CustomXmlNode.setNodeValueAsync
     summary: Sets the node value.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      Last changed in: 1.1
     name: 'setNodeValueAsync(value, options, callback)'
     fullName: office.Office.CustomXmlNode.setNodeValueAsync
     langs:
@@ -162,15 +228,23 @@ items:
           type:
             - string
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            An object like {asyncContext:context} where \`context\` is a user-defined item of any type that is returned
+            in the AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.setTextAsync
     summary: Asynchronously sets the text of an XML node in a custom XML part.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      Last changed in: 1.2
     name: 'setTextAsync(text, options, callback)'
     fullName: office.Office.CustomXmlNode.setTextAsync
     langs:
@@ -188,15 +262,23 @@ items:
           type:
             - string
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            An object like {asyncContext:context} where \`context\` is a user-defined item of any type that is returned
+            in the AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlNode.setXmlAsync
     summary: Sets the node XML.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      Last changed in: 1.1
     name: 'setXmlAsync(xml, options, callback)'
     fullName: office.Office.CustomXmlNode.setXmlAsync
     langs:
@@ -214,10 +296,12 @@ items:
           type:
             - string
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            An object like {asyncContext:context} where \`context\` is a user-defined item of any type that is returned
+            in the AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'

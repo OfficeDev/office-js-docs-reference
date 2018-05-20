@@ -1,6 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.Context
+    summary: Represents the runtime environment of the add-in and provides access to key objects of the API.
+    remarks: |-
+      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
+
+      Last changed in: 1.1
     name: Office.Context
     fullName: outlook.Office.Context
     langs:
@@ -22,6 +27,7 @@ items:
         type:
           - Mailbox
   - uid: outlook.Office.Context.roamingSettings
+    summary: Gets an object that represents the saved custom settings of the add-in.
     name: roamingSettings
     fullName: outlook.Office.Context.roamingSettings
     langs:

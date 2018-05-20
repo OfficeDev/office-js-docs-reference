@@ -1,6 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.Slice
+    summary: Represents a slice of a document file.
+    remarks: |-
+      The Slice object is accessed with the File.getSliceAsync method.
+
+      Hosts: PowerPoint, Word
     name: Office.Slice
     fullName: office.Office.Slice
     langs:
@@ -12,6 +17,15 @@ items:
       - office.Office.Slice.index
       - office.Office.Slice.size
   - uid: office.Office.Slice.data
+    summary: >-
+      Gets the raw data of the file slice in Office.FileType.Text ("text") or Office.FileType.Compressed ("compressed")
+      format as specified by the fileType parameter of the call to the Document.getFileAsync method.
+    remarks: >-
+      Files in the "compressed" format will return a byte array that can be transformed to a base64-encoded string if
+      required.
+
+
+      Hosts: PowerPoint, Word
     name: data
     fullName: office.Office.Slice.data
     langs:
@@ -23,6 +37,8 @@ items:
         type:
           - any
   - uid: office.Office.Slice.index
+    summary: Gets the zero-based index of the file slice.
+    remarks: 'Hosts: PowerPoint, Word'
     name: index
     fullName: office.Office.Slice.index
     langs:
@@ -34,6 +50,8 @@ items:
         type:
           - number
   - uid: office.Office.Slice.size
+    summary: Gets the size of the slice in bytes.
+    remarks: 'Hosts: PowerPoint, Word'
     name: size
     fullName: office.Office.Slice.size
     langs:

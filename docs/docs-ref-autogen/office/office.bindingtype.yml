@@ -1,6 +1,8 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.BindingType
+    summary: Specifies the type of the binding object that should be returned.
+    remarks: 'Hosts: Access, Excel, Word'
     name: Office.BindingType
     fullName: office.Office.BindingType
     langs:
@@ -12,21 +14,23 @@ items:
       - office.Office.BindingType.Table
       - office.Office.BindingType.Text
   - uid: office.Office.BindingType.Matrix
-    summary: Matrix based Binding
+    summary: >-
+      Tabular data without a header row. Data is returned as an array of arrays, for example in this form:
+      \[\[row1column1, row1column2\],\[row2column1, row2column2\]\]
     name: Matrix
     fullName: office.Office.BindingType.Matrix
     langs:
       - typeScript
     type: field
   - uid: office.Office.BindingType.Table
-    summary: Table based Binding
+    summary: Tabular data with a header row. Data is returned as a TableData object.
     name: Table
     fullName: office.Office.BindingType.Table
     langs:
       - typeScript
     type: field
   - uid: office.Office.BindingType.Text
-    summary: Text based Binding
+    summary: Plain text. Data is returned as a run of characters.
     name: Text
     fullName: office.Office.BindingType.Text
     langs:

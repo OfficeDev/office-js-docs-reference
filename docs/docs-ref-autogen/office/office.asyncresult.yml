@@ -4,13 +4,13 @@ items:
     summary: >-
       An object which encapsulates the result of an asynchronous request, including status and error information if the
       request failed.
-
-
-      \*\*Hosts\*\*: Access, Excel, Outlook, PowerPoint, Project, Word
-
-
-      \*\*Last changed in\*\*: 1.1
     remarks: >-
+      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
+
+
+      Last changed in: 1.1
+
+
       When the function you pass to the \`callback\` parameter of an "Async" method executes, it receives an AsyncResult
       object that you can access from the \`callback\` function's only parameter.
     name: Office.AsyncResult
@@ -30,12 +30,10 @@ items:
       state as it was passed in. This the user-defined item (which can be of any JavaScript type: String, Number,
       Boolean, Object, Array, Null, or Undefined) passed to the optional \`asyncContext\` parameter of the invoked
       method. Returns Undefined, if you didn't pass anything to the asyncContext parameter.
+    remarks: |-
+      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
 
-
-      \*\*Hosts\*\*: Access, Excel, Outlook, PowerPoint, Project, Word
-
-
-      \*\*Last changed in\*\*: 1.1
+      Last changed in: 1.1
     name: asyncContext
     fullName: office.Office.AsyncResult.asyncContext
     langs:
@@ -47,12 +45,11 @@ items:
         type:
           - any
   - uid: office.Office.AsyncResult.error
-    summary: |-
-      Gets an \[Error\](office.error.md) object that provides a description of the error, if any error occurred.
+    summary: 'Gets an \[Error\](office.error.md) object that provides a description of the error, if any error occurred.'
+    remarks: |-
+      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
 
-      \*\*Hosts\*\*: Access, Excel, Outlook, PowerPoint, Project, Word
-
-      \*\*Last changed in\*\*: 1.1
+      Last changed in: 1.1
     name: error
     fullName: office.Office.AsyncResult.error
     langs:
@@ -64,12 +61,11 @@ items:
         type:
           - Error
   - uid: office.Office.AsyncResult.status
-    summary: |-
-      Gets the \[AsyncResultStatus\](office.asyncresultstatus.md) of the asynchronous operation.
+    summary: 'Gets the \[AsyncResultStatus\](office.asyncresultstatus.md) of the asynchronous operation.'
+    remarks: |-
+      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
 
-      \*\*Hosts\*\*: Access, Excel, Outlook, PowerPoint, Project, Word
-
-      \*\*Last changed in\*\*: 1.1
+      Last changed in: 1.1
     name: status
     fullName: office.Office.AsyncResult.status
     langs:
@@ -81,8 +77,10 @@ items:
         type:
           - AsyncResultStatus
   - uid: office.Office.AsyncResult.value
-    summary: >-
-      Gets the payload or content of this asynchronous operation, if any.
+    summary: 'Gets the payload or content of this asynchronous operation, if any.'
+    remarks: >-
+      You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async"
+      method, such as the \`getSelectedDataAsync\` and \`setSelectedDataAsync\` methods of the Document object.
 
 
       Note: What the value property returns for a particular "Async" method varies depending on the purpose and context
@@ -91,13 +89,10 @@ items:
       the AsyncResult object topic.
 
 
-      \*\*Hosts\*\*: Access, Excel, Outlook, PowerPoint, Project, Word
+      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
 
 
-      \*\*Last changed in\*\*: 1.1
-    remarks: >-
-      You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async"
-      method, such as the \`getSelectedDataAsync\` and \`setSelectedDataAsync\` methods of the Document object.
+      Last changed in: 1.1
     name: value
     fullName: office.Office.AsyncResult.value
     langs:

@@ -1,6 +1,19 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.TextBinding
+    summary: Represents a bound text selection in the document.
+    remarks: >-
+      Hosts: Access, Excel, PowerPoint, Project, Word
+
+
+      Available in Requirement set: TextBindings
+
+
+      Last changed in: 1.1
+
+
+      The TextBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from
+      the Binding object. It does not implement any additional properties or methods of its own.
     name: Office.TextBinding
     fullName: office.Office.TextBinding
     langs:

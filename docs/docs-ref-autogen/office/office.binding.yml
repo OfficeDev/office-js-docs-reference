@@ -1,15 +1,17 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.Binding
-    summary: |-
-      Represents a binding to a section of the document.
-
-      \*\*Hosts\*\*: Access, Excel, Word
-
-      \*\*Available in Requirement sets\*\*: MatrixBinding, TableBinding, TextBinding
-
-      \*\*Last changed in\*\*: 1.1
+    summary: Represents a binding to a section of the document.
     remarks: >-
+      Hosts: Access, Excel, Word
+
+
+      Available in Requirement sets: MatrixBinding, TableBinding, TextBinding
+
+
+      Last changed in: 1.1
+
+
       The Binding object exposes the functionality possessed by all bindings regardless of type.
 
 
@@ -63,7 +65,7 @@ items:
           type:
             - any
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: '{ asyncContext: context } Where context is an object of any type that keeps state for the callback.'
           type:
             - any
         - id: callback
@@ -71,12 +73,11 @@ items:
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Binding.document
-    summary: |-
-      Get the Document object associated with the binding.
+    summary: Get the Document object associated with the binding.
+    remarks: |-
+      Hosts: Access, Excel, Word
 
-      \*\*Hosts\*\*: Access, Excel, Word
-
-      \*\*Last changed in\*\*: 1.1
+      Last changed in: 1.1
     name: document
     fullName: office.Office.Binding.document
     langs:
@@ -88,15 +89,17 @@ items:
         type:
           - Document
   - uid: office.Office.Binding.getDataAsync
-    summary: |-
-      Returns the data contained within the binding.
-
+    summary: Returns the data contained within the binding.
+    remarks: >-
       Hosts: Access, Excel, Word
+
 
       Available in Requirement sets: MatrixBindings, TableBindings, TextBindings
 
+
       Last changed in: 1.1
-    remarks: >-
+
+
       When called from a MatrixBinding or TableBinding, the getDataAsync method will return a subset of the bound values
       if the optional startRow, startColumn, rowCount, and columnCount parameters are specified (and they specify a
       contiguous and valid range).
@@ -114,7 +117,8 @@ items:
       parameters:
         - id: options
           description: >-
-            Any of the following: coercionType: The expected shape of the selection. Use Office.CoercionType or text
+            An object with any of the following (example: {coercionType: 'matrix, 'valueFormat: 'formatted',
+            filterType:'all'}): coercionType: The expected shape of the selection. Use Office.CoercionType or text
             value. Default: The original, uncoerced type of the binding. valueFormat: Specifies whether values, such as
             numbers and dates, are returned with their formatting applied. Use Office.ValueFormat or text value.
             Default: Unformatted data. startRow: For table or matrix bindings, specifies the zero-based starting row for
@@ -126,7 +130,6 @@ items:
             (filtered in) data or all the data (default is all). Useful when filtering data. Use Office.FilterType or
             text value. asyncContext: Object keeping state for the callback rows: Only for table bindings in content
             add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
-            Syntax example: {coercionType: 'matrix,'valueFormat: 'formatted', filterType:'all'}
           type:
             - any
         - id: callback
@@ -134,9 +137,8 @@ items:
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Binding.id
-    summary: |-
-      A string that uniquely identifies this binding among the bindings in the same Document object.
-
+    summary: A string that uniquely identifies this binding among the bindings in the same Document object.
+    remarks: |-
       Hosts: Access, Excel, Word
 
       Last changed in: 1.1
@@ -151,14 +153,13 @@ items:
         type:
           - string
   - uid: office.Office.Binding.removeHandlerAsync
-    summary: |-
-      Removes the specified handler from the binding for the specified event type.
+    summary: Removes the specified handler from the binding for the specified event type.
+    remarks: |-
+      Hosts: Access, Excel, Word
 
-      \*\*Hosts\*\*: Access, Excel, Word
+      Available in Requirement set: BindingEvents
 
-      \*\*Available in Requirement set\*\*: BindingEvents
-
-      \*\*Last changed in\*\*: 1.1
+      Last changed in: 1.1
     name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: office.Office.Binding.removeHandlerAsync
     langs:
@@ -177,9 +178,9 @@ items:
             - EventType
         - id: options
           description: >-
-            Any of the following: handler: Indicates a specific handler to be removed, if not specified all handlers are
-            removed asyncContext: A user-defined item of any type that is returned in the AsyncResult object without
-            being altered. Syntax example: {handler:eventHandler}
+            An object with any of the following: handler: The handler to be removed, if not specified all handlers are
+            removed. asyncContext: A user-defined item of any type that is returned in the AsyncResult object without
+            being altered.
           type:
             - any
         - id: callback
@@ -187,14 +188,13 @@ items:
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Binding.setDataAsync
-    summary: |-
-      Writes data to the bound section of the document represented by the specified binding object.
+    summary: Writes data to the bound section of the document represented by the specified binding object.
+    remarks: |-
+      Hosts: Access, Excel, Word
 
-      \*\*Hosts\*\*: Access, Excel, Word
+      Available in Requirement sets: MatrixBindings, TableBindings, TextBindings
 
-      \*\*Available in Requirement sets\*\*: MatrixBindings, TableBindings, TextBindings
-
-      \*\*Last changed in\*\*: 1.1
+      Last changed in: 1.1
     name: 'setDataAsync(data, options, callback)'
     fullName: office.Office.Binding.setDataAsync
     langs:
@@ -235,12 +235,11 @@ items:
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Binding.type
-    summary: |-
-      Gets the type of the binding.
+    summary: Gets the type of the binding.
+    remarks: |-
+      Hosts: Access, Excel, Word
 
-      \*\*Hosts\*\*: Access, Excel, Word
-
-      \*\*Last changed in\*\*: 1.1
+      Last changed in: 1.1
     name: type
     fullName: office.Office.Binding.type
     langs:

@@ -1,6 +1,23 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.TableBinding
+    summary: 'Represents a binding in two dimensions of rows and columns, optionally with headers.'
+    remarks: >-
+      Hosts: Access, Excel, PowerPoint, Project, Word
+
+
+      Available in Requirement set: TableBindings
+
+
+      Last changed in: 1.1
+
+
+      The TableBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from
+      the Binding object.
+
+
+      For Excel, note that after you establish a table binding in Excel, each new row a user adds to the table is
+      automatically included in the binding and rowCount increases.
     name: Office.TableBinding
     fullName: office.Office.TableBinding
     langs:
@@ -21,7 +38,41 @@ items:
       - office.Office.TableBinding.setFormatsAsync
       - office.Office.TableBinding.setTableOptionsAsync
   - uid: office.Office.TableBinding.addColumnsAsync
-    summary: Adds the specified columns to the table
+    summary: Adds the specified data to the table as additional columns.
+    remarks: >-
+      Hosts: Excel, Word
+
+
+      Available in Requirement set: TableBindings
+
+
+      Last changed in: 1.0
+
+
+      To add one or more columns specifying the values of the data and headers, pass a TableData object as the data
+      parameter. To add one or more columns specifying only the data, pass an array of arrays ("matrix") as the data
+      parameter.
+
+
+      The success or failure of an addColumnsAsync operation is atomic. That is, the entire add columns operation must
+      succeed, or it will be completely rolled back (and the AsyncResult.status property returned to the callback will
+      report failure):
+
+
+      - Each row in the array you pass as the data argument must have the same number of rows as the table being
+      updated. If not, the entire operation will fail.
+
+
+      - Each row and cell in the array must successfully add that row or cell to the table in the newly added column(s).
+      If any row or cell fails to be set for any reason, the entire operation will fail.
+
+
+      - If you pass a TableData object as the data argument, the number of header rows must match that of the table
+      being updated.
+
+
+      Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter
+      can't exceed 20,000 in a single call to this method.
     name: 'addColumnsAsync(tableData, options, callback)'
     fullName: office.Office.TableBinding.addColumnsAsync
     langs:
@@ -35,19 +86,57 @@ items:
         description: ''
       parameters:
         - id: tableData
-          description: A TableData object with the headers and rows
+          description: >-
+            An array of arrays ("matrix") or a TableData object that contains one or more columns of data to add to the
+            table. Required.
           type:
             - 'TableData | any[][]'
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            The object like {asyncContext:context}, where context is a user-defined item of any type that is returned in
+            the AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.addRowsAsync
-    summary: Adds the specified rows to the table
+    summary: Adds the specified data to the table as additional rows.
+    remarks: >-
+      Hosts: Access, Excel, Word
+
+
+      Available in Requirement set: TableBindings
+
+
+      Last changed in: 1.1
+
+
+      To add one or more columns specifying the values of the data and headers, pass a TableData object as the data
+      parameter. To add one or more columns specifying only the data, pass an array of arrays ("matrix") as the data
+      parameter.
+
+
+      The success or failure of an addRowsAsync operation is atomic. That is, the entire add columns operation must
+      succeed, or it will be completely rolled back (and the AsyncResult.status property returned to the callback will
+      report failure):
+
+
+      - Each row in the array you pass as the data argument must have the same number of columns as the table being
+      updated. If not, the entire operation will fail.
+
+
+      - Each column and cell in the array must successfully add that column or cell to the table in the newly added
+      rows(s). If any column or cell fails to be set for any reason, the entire operation will fail.
+
+
+      - If you pass a TableData object as the data argument, the number of header rows must match that of the table
+      being updated.
+
+
+      Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter
+      can't exceed 20,000 in a single call to this method.
     name: 'addRowsAsync(rows, options, callback)'
     fullName: office.Office.TableBinding.addRowsAsync
     langs:
@@ -61,19 +150,36 @@ items:
         description: ''
       parameters:
         - id: rows
-          description: A 2D array with the rows to add
+          description: >-
+            An array of arrays ("matrix") or a TableData object that contains one or more rows of data to add to the
+            table. Required.
           type:
             - 'TableData | any[][]'
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            The object like {asyncContext:context}, where context is a user-defined item of any type that is returned in
+            the AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.clearFormatsAsync
     summary: Clears formatting on the bound table.
+    remarks: >-
+      Hosts: Excel
+
+
+      Available in Requirement set: Not in a set
+
+
+      Last changed in: 1.1
+
+
+      See \[Format tables in add-ins for
+      Excel\](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables\#format-a-table) for more
+      information.
     name: 'clearFormatsAsync(options, callback)'
     fullName: office.Office.TableBinding.clearFormatsAsync
     langs:
@@ -87,14 +193,23 @@ items:
         description: ''
       parameters:
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            The object like {asyncContext:context}, where context is a user-defined item of any type that is returned in
+            the AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.columnCount
+    summary: 'Gets the number of columns in the TableBinding, as an integer value.'
+    remarks: |-
+      Hosts: Access, Excel,Word
+
+      Available in Requirement set: TableBindings
+
+      Last changed in: 1.1
     name: columnCount
     fullName: office.Office.TableBinding.columnCount
     langs:
@@ -106,7 +221,15 @@ items:
         type:
           - number
   - uid: office.Office.TableBinding.deleteAllDataValuesAsync
-    summary: Clears the table
+    summary: 'Deletes all non-header rows and their values in the table, shifting appropriately for the host application.'
+    remarks: |-
+      Hosts: Access, Excel, Word
+
+      Available in Requirement set: TableBindings
+
+      Last changed in: 1.1
+
+      In Excel, if the table has no header row, this method will delete the table itself.
     name: 'deleteAllDataValuesAsync(options, callback)'
     fullName: office.Office.TableBinding.deleteAllDataValuesAsync
     langs:
@@ -120,11 +243,13 @@ items:
         description: ''
       parameters:
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            The object like {asyncContext:context}, where context is a user-defined item of any type that is returned in
+            the AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.getFormatsAsync
@@ -152,14 +277,23 @@ items:
           type:
             - 'any[]'
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            The object {asyncContext:context}, where context is a user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.hasHeaders
+    summary: 'True, if the table has headers; otherwise false.'
+    remarks: |-
+      Hosts: Access, Excel, PowerPoint, Project, Word
+
+      Available in Requirement set: TableBindings
+
+      Last changed in: 1.1
     name: hasHeaders
     fullName: office.Office.TableBinding.hasHeaders
     langs:
@@ -171,6 +305,35 @@ items:
         type:
           - boolean
   - uid: office.Office.TableBinding.rowCount
+    summary: 'Gets the number of rows in the TableBinding, as an integer value.'
+    remarks: >-
+      Hosts: Access, Excel,Word
+
+
+      Available in Requirement set: TableBindings
+
+
+      Last changed in: 1.1
+
+
+      When you insert an empty table by selecting a single row in Excel 2013 and Excel Online (using Table on the Insert
+      tab), both Office host applications create a single row of headers followed by a single blank row. However, if
+      your add-in's script creates a binding for this newly inserted table (for example, by using the
+      addFromSelectionAsync method), and then checks the value of the rowCount property, the value returned will differ
+      depending whether the spreadsheet is open in Excel 2013 or Excel Online.
+
+
+      - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
+
+
+      - In Excel Online, rowCount will return 1 (the blank row following the headers is counted).
+
+
+      You can work around this difference in your script by checking if rowCount == 1, and if so, then checking if the
+      row contains all empty strings.
+
+
+      In content add-ins for Access, for performance reasons the rowCount property always returns -1.
     name: rowCount
     fullName: office.Office.TableBinding.rowCount
     langs:
@@ -183,6 +346,12 @@ items:
           - number
   - uid: office.Office.TableBinding.setFormatsAsync
     summary: Sets formatting on specified items and data in the table.
+    remarks: |-
+      Hosts: Excel
+
+      Available in Requirement set: Not in a set
+
+      Last changed in: 1.1
     name: 'setFormatsAsync(formatsInfo, options, callback)'
     fullName: office.Office.TableBinding.setFormatsAsync
     langs:
@@ -203,15 +372,23 @@ items:
           type:
             - 'any[]'
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            The object {asyncContext:context}, where context is a user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.setTableOptionsAsync
     summary: Updates table formatting options on the bound table.
+    remarks: |-
+      Hosts: Excel
+
+      Available in Requirement set: Not in a set
+
+      Last changed in: 1.1
     name: 'setTableOptionsAsync(tableOptions, options, callback)'
     fullName: office.Office.TableBinding.setTableOptionsAsync
     langs:
@@ -229,10 +406,12 @@ items:
           type:
             - any
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            The object {asyncContext:context}, where context is a user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'

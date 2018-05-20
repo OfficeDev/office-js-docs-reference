@@ -1,6 +1,13 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.CustomXmlParts
+    summary: Represents a collection of CustomXmlPart objects.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      Last changed in: 1.1
     name: Office.CustomXmlParts
     fullName: office.Office.CustomXmlParts
     langs:
@@ -13,6 +20,12 @@ items:
       - office.Office.CustomXmlParts.getByNamespaceAsync
   - uid: office.Office.CustomXmlParts.addAsync
     summary: Asynchronously adds a new custom XML part to a file.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      Last changed in: 1.1
     name: 'addAsync(xml, options, callback)'
     fullName: office.Office.CustomXmlParts.addAsync
     langs:
@@ -30,7 +43,9 @@ items:
           type:
             - string
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            An object like {asyncContext:context} where \`context\` is a user-defined item of any type that is returned
+            in the AsyncResult object without being altered.
           type:
             - any
         - id: callback
@@ -39,6 +54,12 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlParts.getByIdAsync
     summary: Asynchronously gets the specified custom XML part by its id.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      Last changed in: 1.1
     name: 'getByIdAsync(id, options, callback)'
     fullName: office.Office.CustomXmlParts.getByIdAsync
     langs:
@@ -52,11 +73,13 @@ items:
         description: ''
       parameters:
         - id: id
-          description: The id of the custom XML part.
+          description: 'The GUID of the custom XML part, including opening and closing braces.'
           type:
             - string
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            An object like {asyncContext:context} where \`context\` is a user-defined item of any type that is returned
+            in the AsyncResult object without being altered.
           type:
             - any
         - id: callback
@@ -65,6 +88,12 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlParts.getByNamespaceAsync
     summary: Asynchronously gets the specified custom XML part(s) by its namespace.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      Last changed in: 1.1
     name: 'getByNamespaceAsync(ns, options, callback)'
     fullName: office.Office.CustomXmlParts.getByNamespaceAsync
     langs:
@@ -78,11 +107,13 @@ items:
         description: ''
       parameters:
         - id: ns
-          description: The namespace to search.
+          description: The namespace URI.
           type:
             - string
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            An object like {asyncContext:context} where \`context\` is a user-defined item of any type that is returned
+            in the AsyncResult object without being altered.
           type:
             - any
         - id: callback

@@ -1,6 +1,17 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.ProjectTaskFields
+    summary: Specifies the task fields that are available as a parameter for the getTaskFieldAsync method.
+    remarks: >-
+      A ProjectTaskFields constant can be used as a parameter of the getTaskFieldAsync method.
+
+
+      For more information about working with fields in Project, see the \[Available
+      fields\](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
+      reference. In Project Help, search for Available fields.
+
+
+      Hosts: Project
     name: Office.ProjectTaskFields
     fullName: office.Office.ProjectTaskFields
     langs:
@@ -292,648 +303,778 @@ items:
       - office.Office.ProjectTaskFields.Work
       - office.Office.ProjectTaskFields.WSSID
   - uid: office.Office.ProjectTaskFields.Active
+    summary: Indicates whether the task is active.
     name: Active
     fullName: office.Office.ProjectTaskFields.Active
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.ActualCost
+    summary: The current actual cost for the task.
     name: ActualCost
     fullName: office.Office.ProjectTaskFields.ActualCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.ActualDuration
+    summary: 'The actual duration of the task, in minutes.'
     name: ActualDuration
     fullName: office.Office.ProjectTaskFields.ActualDuration
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.ActualFinish
+    summary: The actual finish date of the task.
     name: ActualFinish
     fullName: office.Office.ProjectTaskFields.ActualFinish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.ActualOvertimeCost
+    summary: The actual overtime cost for the task.
     name: ActualOvertimeCost
     fullName: office.Office.ProjectTaskFields.ActualOvertimeCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.ActualOvertimeWork
+    summary: 'The actual overtime work for the task, in minutes.'
     name: ActualOvertimeWork
     fullName: office.Office.ProjectTaskFields.ActualOvertimeWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.ActualStart
+    summary: The actual start date of the task.
     name: ActualStart
     fullName: office.Office.ProjectTaskFields.ActualStart
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.ActualWork
+    summary: 'The actual work for the task, in minutes.'
     name: ActualWork
     fullName: office.Office.ProjectTaskFields.ActualWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline10BudgetCost
+    summary: The budget cost for the baseline task.
     name: Baseline10BudgetCost
     fullName: office.Office.ProjectTaskFields.Baseline10BudgetCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline10BudgetWork
+    summary: 'The budget work for the baseline task, in hours.'
     name: Baseline10BudgetWork
     fullName: office.Office.ProjectTaskFields.Baseline10BudgetWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline10Cost
+    summary: The cost for the baseline task.
     name: Baseline10Cost
     fullName: office.Office.ProjectTaskFields.Baseline10Cost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline10Duration
+    summary: 'The duration for the baseline task, in minutes.'
     name: Baseline10Duration
     fullName: office.Office.ProjectTaskFields.Baseline10Duration
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline10Finish
+    summary: The finish date for the baseline task.
     name: Baseline10Finish
     fullName: office.Office.ProjectTaskFields.Baseline10Finish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline10FixedCost
+    summary: The fixed cost of any non-resource expense for the baseline task.
     name: Baseline10FixedCost
     fullName: office.Office.ProjectTaskFields.Baseline10FixedCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline10FixedCostAccrual
+    summary: >-
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
     name: Baseline10FixedCostAccrual
     fullName: office.Office.ProjectTaskFields.Baseline10FixedCostAccrual
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline10Start
+    summary: The start date for the baseline task.
     name: Baseline10Start
     fullName: office.Office.ProjectTaskFields.Baseline10Start
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline10Work
+    summary: 'The total person-hours scheduled for the baseline task, in minutes.'
     name: Baseline10Work
     fullName: office.Office.ProjectTaskFields.Baseline10Work
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline1BudgetCost
+    summary: The budget cost for the baseline task.
     name: Baseline1BudgetCost
     fullName: office.Office.ProjectTaskFields.Baseline1BudgetCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline1BudgetWork
+    summary: 'The budget work for the baseline task, in hours.'
     name: Baseline1BudgetWork
     fullName: office.Office.ProjectTaskFields.Baseline1BudgetWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline1Cost
+    summary: The cost for the baseline task.
     name: Baseline1Cost
     fullName: office.Office.ProjectTaskFields.Baseline1Cost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline1Duration
+    summary: 'The duration for the baseline task, in minutes.'
     name: Baseline1Duration
     fullName: office.Office.ProjectTaskFields.Baseline1Duration
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline1Finish
+    summary: The finish date for the baseline task.
     name: Baseline1Finish
     fullName: office.Office.ProjectTaskFields.Baseline1Finish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline1FixedCost
+    summary: The fixed cost of any non-resource expense for the baseline task.
     name: Baseline1FixedCost
     fullName: office.Office.ProjectTaskFields.Baseline1FixedCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline1FixedCostAccrual
+    summary: >-
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
     name: Baseline1FixedCostAccrual
     fullName: office.Office.ProjectTaskFields.Baseline1FixedCostAccrual
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline1Start
+    summary: The start date for the baseline task.
     name: Baseline1Start
     fullName: office.Office.ProjectTaskFields.Baseline1Start
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline1Work
+    summary: 'The total person-hours scheduled for the baseline task, in minutes.'
     name: Baseline1Work
     fullName: office.Office.ProjectTaskFields.Baseline1Work
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline2BudgetCost
+    summary: The budget cost for the baseline task.
     name: Baseline2BudgetCost
     fullName: office.Office.ProjectTaskFields.Baseline2BudgetCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline2BudgetWork
+    summary: 'The budget work for the baseline task, in hours.'
     name: Baseline2BudgetWork
     fullName: office.Office.ProjectTaskFields.Baseline2BudgetWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline2Cost
+    summary: The cost for the baseline task.
     name: Baseline2Cost
     fullName: office.Office.ProjectTaskFields.Baseline2Cost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline2Duration
+    summary: 'The duration for the baseline task, in minutes.'
     name: Baseline2Duration
     fullName: office.Office.ProjectTaskFields.Baseline2Duration
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline2Finish
+    summary: The finish date for the baseline task.
     name: Baseline2Finish
     fullName: office.Office.ProjectTaskFields.Baseline2Finish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline2FixedCost
+    summary: The fixed cost of any non-resource expense for the baseline task.
     name: Baseline2FixedCost
     fullName: office.Office.ProjectTaskFields.Baseline2FixedCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline2FixedCostAccrual
+    summary: >-
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
     name: Baseline2FixedCostAccrual
     fullName: office.Office.ProjectTaskFields.Baseline2FixedCostAccrual
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline2Start
+    summary: The start date for the baseline task.
     name: Baseline2Start
     fullName: office.Office.ProjectTaskFields.Baseline2Start
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline2Work
+    summary: 'The total person-hours scheduled for the baseline task, in minutes.'
     name: Baseline2Work
     fullName: office.Office.ProjectTaskFields.Baseline2Work
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline3BudgetCost
+    summary: The budget cost for the baseline task.
     name: Baseline3BudgetCost
     fullName: office.Office.ProjectTaskFields.Baseline3BudgetCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline3BudgetWork
+    summary: 'The budget work for the baseline task, in hours.'
     name: Baseline3BudgetWork
     fullName: office.Office.ProjectTaskFields.Baseline3BudgetWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline3Cost
+    summary: The cost for the baseline task.
     name: Baseline3Cost
     fullName: office.Office.ProjectTaskFields.Baseline3Cost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline3Duration
+    summary: 'The duration for the baseline task, in minutes.'
     name: Baseline3Duration
     fullName: office.Office.ProjectTaskFields.Baseline3Duration
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline3Finish
+    summary: The finish date for the baseline task.
     name: Baseline3Finish
     fullName: office.Office.ProjectTaskFields.Baseline3Finish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline3FixedCost
+    summary: The fixed cost of any non-resource expense for the baseline task.
     name: Baseline3FixedCost
     fullName: office.Office.ProjectTaskFields.Baseline3FixedCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline3FixedCostAccrual
+    summary: >-
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
     name: Baseline3FixedCostAccrual
     fullName: office.Office.ProjectTaskFields.Baseline3FixedCostAccrual
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline3Work
+    summary: 'The total person-hours scheduled for the baseline task, in minutes.'
     name: Baseline3Work
     fullName: office.Office.ProjectTaskFields.Baseline3Work
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline4BudgetCost
+    summary: The budget cost for the baseline task.
     name: Baseline4BudgetCost
     fullName: office.Office.ProjectTaskFields.Baseline4BudgetCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline4BudgetWork
+    summary: 'The budget work for the baseline task, in hours.'
     name: Baseline4BudgetWork
     fullName: office.Office.ProjectTaskFields.Baseline4BudgetWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline4Cost
+    summary: The cost for the baseline task.
     name: Baseline4Cost
     fullName: office.Office.ProjectTaskFields.Baseline4Cost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline4Duration
+    summary: 'The duration for the baseline task, in minutes.'
     name: Baseline4Duration
     fullName: office.Office.ProjectTaskFields.Baseline4Duration
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline4Finish
+    summary: The finish date for the baseline task.
     name: Baseline4Finish
     fullName: office.Office.ProjectTaskFields.Baseline4Finish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline4FixedCost
+    summary: The fixed cost of any non-resource expense for the baseline task.
     name: Baseline4FixedCost
     fullName: office.Office.ProjectTaskFields.Baseline4FixedCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline4FixedCostAccrual
+    summary: >-
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
     name: Baseline4FixedCostAccrual
     fullName: office.Office.ProjectTaskFields.Baseline4FixedCostAccrual
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline4Start
+    summary: The start date for the baseline task.
     name: Baseline4Start
     fullName: office.Office.ProjectTaskFields.Baseline4Start
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline4Work
+    summary: 'The total person-hours scheduled for the baseline task, in minutes.'
     name: Baseline4Work
     fullName: office.Office.ProjectTaskFields.Baseline4Work
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline5BudgetCost
+    summary: The budget cost for the baseline task.
     name: Baseline5BudgetCost
     fullName: office.Office.ProjectTaskFields.Baseline5BudgetCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline5BudgetWork
+    summary: 'The budget work for the baseline task, in hours.'
     name: Baseline5BudgetWork
     fullName: office.Office.ProjectTaskFields.Baseline5BudgetWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline5Cost
+    summary: The cost for the baseline task.
     name: Baseline5Cost
     fullName: office.Office.ProjectTaskFields.Baseline5Cost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline5Duration
+    summary: 'The duration for the baseline task, in minutes.'
     name: Baseline5Duration
     fullName: office.Office.ProjectTaskFields.Baseline5Duration
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline5Finish
+    summary: The finish date for the baseline task.
     name: Baseline5Finish
     fullName: office.Office.ProjectTaskFields.Baseline5Finish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline5FixedCost
+    summary: The fixed cost of any non-resource expense for the baseline task.
     name: Baseline5FixedCost
     fullName: office.Office.ProjectTaskFields.Baseline5FixedCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline5FixedCostAccrual
+    summary: >-
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
     name: Baseline5FixedCostAccrual
     fullName: office.Office.ProjectTaskFields.Baseline5FixedCostAccrual
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline5Start
+    summary: The start date for the baseline task.
     name: Baseline5Start
     fullName: office.Office.ProjectTaskFields.Baseline5Start
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline5Work
+    summary: 'The total person-hours scheduled for the baseline task, in minutes.'
     name: Baseline5Work
     fullName: office.Office.ProjectTaskFields.Baseline5Work
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline6BudgetCost
+    summary: The budget cost for the baseline task.
     name: Baseline6BudgetCost
     fullName: office.Office.ProjectTaskFields.Baseline6BudgetCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline6BudgetWork
+    summary: 'The budget work for the baseline task, in hours.'
     name: Baseline6BudgetWork
     fullName: office.Office.ProjectTaskFields.Baseline6BudgetWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline6Cost
+    summary: The cost for the baseline task.
     name: Baseline6Cost
     fullName: office.Office.ProjectTaskFields.Baseline6Cost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline6Duration
+    summary: 'The duration for the baseline task, in minutes.'
     name: Baseline6Duration
     fullName: office.Office.ProjectTaskFields.Baseline6Duration
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline6Finish
+    summary: The finish date for the baseline task.
     name: Baseline6Finish
     fullName: office.Office.ProjectTaskFields.Baseline6Finish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline6FixedCost
+    summary: The fixed cost of any non-resource expense for the baseline task.
     name: Baseline6FixedCost
     fullName: office.Office.ProjectTaskFields.Baseline6FixedCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline6FixedCostAccrual
+    summary: >-
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
     name: Baseline6FixedCostAccrual
     fullName: office.Office.ProjectTaskFields.Baseline6FixedCostAccrual
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline6Start
+    summary: The start date for the baseline task.
     name: Baseline6Start
     fullName: office.Office.ProjectTaskFields.Baseline6Start
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline6Work
+    summary: 'The total person-hours scheduled for the baseline task, in minutes.'
     name: Baseline6Work
     fullName: office.Office.ProjectTaskFields.Baseline6Work
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline7BudgetCost
+    summary: The budget cost for the baseline task.
     name: Baseline7BudgetCost
     fullName: office.Office.ProjectTaskFields.Baseline7BudgetCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline7BudgetWork
+    summary: 'The budget work for the baseline task, in hours.'
     name: Baseline7BudgetWork
     fullName: office.Office.ProjectTaskFields.Baseline7BudgetWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline7Cost
+    summary: The cost for the baseline task.
     name: Baseline7Cost
     fullName: office.Office.ProjectTaskFields.Baseline7Cost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline7Duration
+    summary: 'The duration for the baseline task, in minutes.'
     name: Baseline7Duration
     fullName: office.Office.ProjectTaskFields.Baseline7Duration
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline7Finish
+    summary: The finish date for the baseline task.
     name: Baseline7Finish
     fullName: office.Office.ProjectTaskFields.Baseline7Finish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline7FixedCost
+    summary: The fixed cost of any non-resource expense for the baseline task.
     name: Baseline7FixedCost
     fullName: office.Office.ProjectTaskFields.Baseline7FixedCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline7FixedCostAccrual
+    summary: >-
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
     name: Baseline7FixedCostAccrual
     fullName: office.Office.ProjectTaskFields.Baseline7FixedCostAccrual
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline7Start
+    summary: The start date for the baseline task.
     name: Baseline7Start
     fullName: office.Office.ProjectTaskFields.Baseline7Start
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline7Work
+    summary: 'The total person-hours scheduled for the baseline task, in minutes.'
     name: Baseline7Work
     fullName: office.Office.ProjectTaskFields.Baseline7Work
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline8BudgetCost
+    summary: The budget cost for the baseline task.
     name: Baseline8BudgetCost
     fullName: office.Office.ProjectTaskFields.Baseline8BudgetCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline8BudgetWork
+    summary: 'The budget work for the baseline task, in hours.'
     name: Baseline8BudgetWork
     fullName: office.Office.ProjectTaskFields.Baseline8BudgetWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline8Cost
+    summary: The cost for the baseline task.
     name: Baseline8Cost
     fullName: office.Office.ProjectTaskFields.Baseline8Cost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline8Duration
+    summary: 'The duration for the baseline task, in minutes.'
     name: Baseline8Duration
     fullName: office.Office.ProjectTaskFields.Baseline8Duration
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline8Finish
+    summary: The finish date for the baseline task.
     name: Baseline8Finish
     fullName: office.Office.ProjectTaskFields.Baseline8Finish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline8FixedCost
+    summary: The fixed cost of any non-resource expense for the baseline task.
     name: Baseline8FixedCost
     fullName: office.Office.ProjectTaskFields.Baseline8FixedCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline8FixedCostAccrual
+    summary: >-
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
     name: Baseline8FixedCostAccrual
     fullName: office.Office.ProjectTaskFields.Baseline8FixedCostAccrual
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline8Start
+    summary: The start date for the baseline task.
     name: Baseline8Start
     fullName: office.Office.ProjectTaskFields.Baseline8Start
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline8Work
+    summary: 'The total person-hours scheduled for the baseline task, in minutes.'
     name: Baseline8Work
     fullName: office.Office.ProjectTaskFields.Baseline8Work
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline9BudgetCost
+    summary: The budget cost for the baseline task.
     name: Baseline9BudgetCost
     fullName: office.Office.ProjectTaskFields.Baseline9BudgetCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline9BudgetWork
+    summary: 'The budget work for the baseline task, in hours.'
     name: Baseline9BudgetWork
     fullName: office.Office.ProjectTaskFields.Baseline9BudgetWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline9Cost
+    summary: The cost for the baseline task.
     name: Baseline9Cost
     fullName: office.Office.ProjectTaskFields.Baseline9Cost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline9Duration
+    summary: 'The duration for the baseline task, in minutes.'
     name: Baseline9Duration
     fullName: office.Office.ProjectTaskFields.Baseline9Duration
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline9Finish
+    summary: The finish date for the baseline task.
     name: Baseline9Finish
     fullName: office.Office.ProjectTaskFields.Baseline9Finish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline9FixedCost
+    summary: The fixed cost of any non-resource expense for the baseline task.
     name: Baseline9FixedCost
     fullName: office.Office.ProjectTaskFields.Baseline9FixedCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline9FixedCostAccrual
+    summary: >-
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
     name: Baseline9FixedCostAccrual
     fullName: office.Office.ProjectTaskFields.Baseline9FixedCostAccrual
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline9Start
+    summary: The start date for the baseline task.
     name: Baseline9Start
     fullName: office.Office.ProjectTaskFields.Baseline9Start
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Baseline9Work
+    summary: 'The total person-hours scheduled for the baseline task, in minutes.'
     name: Baseline9Work
     fullName: office.Office.ProjectTaskFields.Baseline9Work
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.BaselineBudgetCost
+    summary: The budget cost for the baseline task.
     name: BaselineBudgetCost
     fullName: office.Office.ProjectTaskFields.BaselineBudgetCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.BaselineBudgetWork
+    summary: 'The budget work for the baseline task, in hours.'
     name: BaselineBudgetWork
     fullName: office.Office.ProjectTaskFields.BaselineBudgetWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.BaselineCost
+    summary: The cost for the baseline task.
     name: BaselineCost
     fullName: office.Office.ProjectTaskFields.BaselineCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.BaselineDuration
+    summary: 'The duration for the baseline task, in minutes.'
     name: BaselineDuration
     fullName: office.Office.ProjectTaskFields.BaselineDuration
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.BaselineFinish
+    summary: The finish date for the baseline task.
     name: BaselineFinish
     fullName: office.Office.ProjectTaskFields.BaselineFinish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.BaselineFixedCost
+    summary: The fixed cost of any non-resource expense for the baseline task.
     name: BaselineFixedCost
     fullName: office.Office.ProjectTaskFields.BaselineFixedCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.BaselineFixedCostAccrual
+    summary: >-
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
     name: BaselineFixedCostAccrual
     fullName: office.Office.ProjectTaskFields.BaselineFixedCostAccrual
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.BaselineStart
+    summary: The start date for the baseline task.
     name: BaselineStart
     fullName: office.Office.ProjectTaskFields.BaselineStart
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.BaselineWork
+    summary: 'The total person-hours scheduled for the baseline task, in minutes.'
     name: BaselineWork
     fullName: office.Office.ProjectTaskFields.BaselineWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Basline3Start
+    summary: The start date for the baseline task.
     name: Basline3Start
     fullName: office.Office.ProjectTaskFields.Basline3Start
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.BudgetCost
+    summary: The budget cost for the task.
     name: BudgetCost
     fullName: office.Office.ProjectTaskFields.BudgetCost
     langs:
@@ -952,1038 +1093,1215 @@ items:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.BudgetWork
+    summary: 'The budget work for the task, in hours.'
     name: BudgetWork
     fullName: office.Office.ProjectTaskFields.BudgetWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.ConstraintDate
+    summary: A constraint date for the task.
     name: ConstraintDate
     fullName: office.Office.ProjectTaskFields.ConstraintDate
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.ConstraintType
+    summary: >-
+      A constraint type for the task: As Soon As Possible = 0, As Late As Possible = 1, Must Start On = 2, Must Finish
+      On = 3, Start No Earlier Than = 4, Start No Later Than = 5, Finish No Earlier Than = 6, Finish No Later Than = 7.
     name: ConstraintType
     fullName: office.Office.ProjectTaskFields.ConstraintType
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Cost
+    summary: The total cost of the task.
     name: Cost
     fullName: office.Office.ProjectTaskFields.Cost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Cost1
+    summary: A cost field of the task.
     name: Cost1
     fullName: office.Office.ProjectTaskFields.Cost1
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Cost10
+    summary: A cost field of the task.
     name: Cost10
     fullName: office.Office.ProjectTaskFields.Cost10
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Cost2
+    summary: A cost field of the task.
     name: Cost2
     fullName: office.Office.ProjectTaskFields.Cost2
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Cost3
+    summary: A cost field of the task.
     name: Cost3
     fullName: office.Office.ProjectTaskFields.Cost3
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Cost4
+    summary: A cost field of the task.
     name: Cost4
     fullName: office.Office.ProjectTaskFields.Cost4
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Cost5
+    summary: A cost field of the task.
     name: Cost5
     fullName: office.Office.ProjectTaskFields.Cost5
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Cost6
+    summary: A cost field of the task.
     name: Cost6
     fullName: office.Office.ProjectTaskFields.Cost6
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Cost7
+    summary: A cost field of the task.
     name: Cost7
     fullName: office.Office.ProjectTaskFields.Cost7
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Cost8
+    summary: A cost field of the task.
     name: Cost8
     fullName: office.Office.ProjectTaskFields.Cost8
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Cost9
+    summary: A cost field of the task.
     name: Cost9
     fullName: office.Office.ProjectTaskFields.Cost9
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Critical
+    summary: Indicates whether the task is on the critical path.
     name: Critical
     fullName: office.Office.ProjectTaskFields.Critical
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Date1
+    summary: A date field of the task.
     name: Date1
     fullName: office.Office.ProjectTaskFields.Date1
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Date10
+    summary: A date field of the task.
     name: Date10
     fullName: office.Office.ProjectTaskFields.Date10
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Date2
+    summary: A date field of the task.
     name: Date2
     fullName: office.Office.ProjectTaskFields.Date2
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Date3
+    summary: A date field of the task.
     name: Date3
     fullName: office.Office.ProjectTaskFields.Date3
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Date4
+    summary: A date field of the task.
     name: Date4
     fullName: office.Office.ProjectTaskFields.Date4
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Date5
+    summary: A date field of the task.
     name: Date5
     fullName: office.Office.ProjectTaskFields.Date5
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Date6
+    summary: A date field of the task.
     name: Date6
     fullName: office.Office.ProjectTaskFields.Date6
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Date7
+    summary: A date field of the task.
     name: Date7
     fullName: office.Office.ProjectTaskFields.Date7
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Date8
+    summary: A date field of the task.
     name: Date8
     fullName: office.Office.ProjectTaskFields.Date8
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Date9
+    summary: A date field of the task.
     name: Date9
     fullName: office.Office.ProjectTaskFields.Date9
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Deadline
+    summary: The deadline for a task.
     name: Deadline
     fullName: office.Office.ProjectTaskFields.Deadline
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Duration
+    summary: A duration field of the task.
     name: Duration
     fullName: office.Office.ProjectTaskFields.Duration
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Duration1
+    summary: A duration field of the task.
     name: Duration1
     fullName: office.Office.ProjectTaskFields.Duration1
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Duration10
+    summary: A duration field of the task.
     name: Duration10
     fullName: office.Office.ProjectTaskFields.Duration10
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Duration2
+    summary: A duration field of the task.
     name: Duration2
     fullName: office.Office.ProjectTaskFields.Duration2
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Duration3
+    summary: A duration field of the task.
     name: Duration3
     fullName: office.Office.ProjectTaskFields.Duration3
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Duration4
+    summary: A duration field of the task.
     name: Duration4
     fullName: office.Office.ProjectTaskFields.Duration4
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Duration5
+    summary: A duration field of the task.
     name: Duration5
     fullName: office.Office.ProjectTaskFields.Duration5
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Duration6
+    summary: A duration field of the task.
     name: Duration6
     fullName: office.Office.ProjectTaskFields.Duration6
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Duration7
+    summary: A duration field of the task.
     name: Duration7
     fullName: office.Office.ProjectTaskFields.Duration7
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Duration8
+    summary: A duration field of the task.
     name: Duration8
     fullName: office.Office.ProjectTaskFields.Duration8
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Duration9
+    summary: A duration field of the task.
     name: Duration9
     fullName: office.Office.ProjectTaskFields.Duration9
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.EarnedValueMethod
+    summary: The method for calculating earned value for the task.
     name: EarnedValueMethod
     fullName: office.Office.ProjectTaskFields.EarnedValueMethod
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Finish
+    summary: The finish date of the task.
     name: Finish
     fullName: office.Office.ProjectTaskFields.Finish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Finish1
+    summary: A finish field for the task.
     name: Finish1
     fullName: office.Office.ProjectTaskFields.Finish1
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Finish10
+    summary: A finish field for the task.
     name: Finish10
     fullName: office.Office.ProjectTaskFields.Finish10
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Finish2
+    summary: A finish field for the task.
     name: Finish2
     fullName: office.Office.ProjectTaskFields.Finish2
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Finish3
+    summary: A finish field for the task.
     name: Finish3
     fullName: office.Office.ProjectTaskFields.Finish3
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Finish4
+    summary: A finish field for the task.
     name: Finish4
     fullName: office.Office.ProjectTaskFields.Finish4
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Finish5
+    summary: A finish field for the task.
     name: Finish5
     fullName: office.Office.ProjectTaskFields.Finish5
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Finish6
+    summary: A finish field for the task.
     name: Finish6
     fullName: office.Office.ProjectTaskFields.Finish6
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Finish7
+    summary: A finish field for the task.
     name: Finish7
     fullName: office.Office.ProjectTaskFields.Finish7
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Finish8
+    summary: A finish field for the task.
     name: Finish8
     fullName: office.Office.ProjectTaskFields.Finish8
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Finish9
+    summary: A finish field for the task.
     name: Finish9
     fullName: office.Office.ProjectTaskFields.Finish9
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.FinishSlack
+    summary: 'The duration between the Early Finish and Late Finish dates for the task, in minutes.'
     name: FinishSlack
     fullName: office.Office.ProjectTaskFields.FinishSlack
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.FixedCost
+    summary: The fixed cost for the task.
     name: FixedCost
     fullName: office.Office.ProjectTaskFields.FixedCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.FixedCostAccrual
+    summary: >-
+      The accrual method that defines how the baseline task accrues fixed costs: Accrues when the task starts = 1,
+      accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
     name: FixedCostAccrual
     fullName: office.Office.ProjectTaskFields.FixedCostAccrual
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag1
+    summary: A Boolean flag field for the task.
     name: Flag1
     fullName: office.Office.ProjectTaskFields.Flag1
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag10
+    summary: A Boolean flag field for the task.
     name: Flag10
     fullName: office.Office.ProjectTaskFields.Flag10
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag11
+    summary: A Boolean flag field for the task.
     name: Flag11
     fullName: office.Office.ProjectTaskFields.Flag11
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag12
+    summary: A Boolean flag field for the task.
     name: Flag12
     fullName: office.Office.ProjectTaskFields.Flag12
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag13
+    summary: A Boolean flag field for the task.
     name: Flag13
     fullName: office.Office.ProjectTaskFields.Flag13
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag14
+    summary: A Boolean flag field for the task.
     name: Flag14
     fullName: office.Office.ProjectTaskFields.Flag14
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag15
+    summary: A Boolean flag field for the task.
     name: Flag15
     fullName: office.Office.ProjectTaskFields.Flag15
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag16
+    summary: A Boolean flag field for the task.
     name: Flag16
     fullName: office.Office.ProjectTaskFields.Flag16
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag17
+    summary: A Boolean flag field for the task.
     name: Flag17
     fullName: office.Office.ProjectTaskFields.Flag17
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag18
+    summary: A Boolean flag field for the task.
     name: Flag18
     fullName: office.Office.ProjectTaskFields.Flag18
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag19
+    summary: A Boolean flag field for the task.
     name: Flag19
     fullName: office.Office.ProjectTaskFields.Flag19
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag2
+    summary: A Boolean flag field for the task.
     name: Flag2
     fullName: office.Office.ProjectTaskFields.Flag2
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag20
+    summary: A Boolean flag field for the task.
     name: Flag20
     fullName: office.Office.ProjectTaskFields.Flag20
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag3
+    summary: A Boolean flag field for the task.
     name: Flag3
     fullName: office.Office.ProjectTaskFields.Flag3
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag4
+    summary: A Boolean flag field for the task.
     name: Flag4
     fullName: office.Office.ProjectTaskFields.Flag4
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag5
+    summary: A Boolean flag field for the task.
     name: Flag5
     fullName: office.Office.ProjectTaskFields.Flag5
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag6
+    summary: A Boolean flag field for the task.
     name: Flag6
     fullName: office.Office.ProjectTaskFields.Flag6
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag7
+    summary: A Boolean flag field for the task.
     name: Flag7
     fullName: office.Office.ProjectTaskFields.Flag7
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag8
+    summary: A Boolean flag field for the task.
     name: Flag8
     fullName: office.Office.ProjectTaskFields.Flag8
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Flag9
+    summary: A Boolean flag field for the task.
     name: Flag9
     fullName: office.Office.ProjectTaskFields.Flag9
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.FreeSlack
+    summary: The amount of time that the task can be delayed without delaying its successor tasks.
     name: FreeSlack
     fullName: office.Office.ProjectTaskFields.FreeSlack
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.HasRollupSubTasks
+    summary: Indicates whether the task has rollup subtasks.
     name: HasRollupSubTasks
     fullName: office.Office.ProjectTaskFields.HasRollupSubTasks
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.ID
+    summary: 'The index of the selected task. After the project summary task, the index of the first task in a project is 1.'
     name: ID
     fullName: office.Office.ProjectTaskFields.ID
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.IsRollup
+    summary: Indicates whether subtask information is rolled up to the summary task bar.
     name: IsRollup
     fullName: office.Office.ProjectTaskFields.IsRollup
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Milestone
+    summary: Indicates whether the task is a milestone.
     name: Milestone
     fullName: office.Office.ProjectTaskFields.Milestone
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Name
+    summary: The name of the task.
     name: Name
     fullName: office.Office.ProjectTaskFields.Name
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Notes
+    summary: The text value of the notes regarding the task.
     name: Notes
     fullName: office.Office.ProjectTaskFields.Notes
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number1
+    summary: A number field for the task.
     name: Number1
     fullName: office.Office.ProjectTaskFields.Number1
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number10
+    summary: A number field for the task.
     name: Number10
     fullName: office.Office.ProjectTaskFields.Number10
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number11
+    summary: A number field for the task.
     name: Number11
     fullName: office.Office.ProjectTaskFields.Number11
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number12
+    summary: A number field for the task.
     name: Number12
     fullName: office.Office.ProjectTaskFields.Number12
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number13
+    summary: A number field for the task.
     name: Number13
     fullName: office.Office.ProjectTaskFields.Number13
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number14
+    summary: A number field for the task.
     name: Number14
     fullName: office.Office.ProjectTaskFields.Number14
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number15
+    summary: A number field for the task.
     name: Number15
     fullName: office.Office.ProjectTaskFields.Number15
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number16
+    summary: A number field for the task.
     name: Number16
     fullName: office.Office.ProjectTaskFields.Number16
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number17
+    summary: A number field for the task.
     name: Number17
     fullName: office.Office.ProjectTaskFields.Number17
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number18
+    summary: A number field for the task.
     name: Number18
     fullName: office.Office.ProjectTaskFields.Number18
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number19
+    summary: A number field for the task.
     name: Number19
     fullName: office.Office.ProjectTaskFields.Number19
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number2
+    summary: A number field for the task.
     name: Number2
     fullName: office.Office.ProjectTaskFields.Number2
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number20
+    summary: A number field for the task.
     name: Number20
     fullName: office.Office.ProjectTaskFields.Number20
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number3
+    summary: A number field for the task.
     name: Number3
     fullName: office.Office.ProjectTaskFields.Number3
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number4
+    summary: A number field for the task.
     name: Number4
     fullName: office.Office.ProjectTaskFields.Number4
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number5
+    summary: A number field for the task.
     name: Number5
     fullName: office.Office.ProjectTaskFields.Number5
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number6
+    summary: A number field for the task.
     name: Number6
     fullName: office.Office.ProjectTaskFields.Number6
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number7
+    summary: A number field for the task.
     name: Number7
     fullName: office.Office.ProjectTaskFields.Number7
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number8
+    summary: A number field for the task.
     name: Number8
     fullName: office.Office.ProjectTaskFields.Number8
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Number9
+    summary: A number field for the task.
     name: Number9
     fullName: office.Office.ProjectTaskFields.Number9
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.OutlineLevel
+    summary: The level of the task in the outline hierarchy.
     name: OutlineLevel
     fullName: office.Office.ProjectTaskFields.OutlineLevel
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Overallocated
+    summary: Indicates whether any assignments for a task are overallocated.
     name: Overallocated
     fullName: office.Office.ProjectTaskFields.Overallocated
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.OvertimeCost
+    summary: The overtime cost for the task.
     name: OvertimeCost
     fullName: office.Office.ProjectTaskFields.OvertimeCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.OvertimeWork
+    summary: The overtime work for the task.
     name: OvertimeWork
     fullName: office.Office.ProjectTaskFields.OvertimeWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.PercentComplete
+    summary: The percent complete status of the task.
     name: PercentComplete
     fullName: office.Office.ProjectTaskFields.PercentComplete
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.PercentWorkComplete
+    summary: The percentage of work completed for the task.
     name: PercentWorkComplete
     fullName: office.Office.ProjectTaskFields.PercentWorkComplete
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Predecessors
+    summary: The IDs of the task's predecessors.
     name: Predecessors
     fullName: office.Office.ProjectTaskFields.Predecessors
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.PreleveledFinish
+    summary: The finish date of a task before leveling occurred.
     name: PreleveledFinish
     fullName: office.Office.ProjectTaskFields.PreleveledFinish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.PreleveledStart
+    summary: The start date of a task before leveling occurred.
     name: PreleveledStart
     fullName: office.Office.ProjectTaskFields.PreleveledStart
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Priority
+    summary: 'The priority of the task, with values from 0 (low) to 1000 (high). The default priority value is 500.'
     name: Priority
     fullName: office.Office.ProjectTaskFields.Priority
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.RegularWork
+    summary: The amount of regular work for the task.
     name: RegularWork
     fullName: office.Office.ProjectTaskFields.RegularWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.RemainingCost
+    summary: The remaining cost for the task.
     name: RemainingCost
     fullName: office.Office.ProjectTaskFields.RemainingCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.RemainingDuration
+    summary: 'The remaining duration for the task, in minutes.'
     name: RemainingDuration
     fullName: office.Office.ProjectTaskFields.RemainingDuration
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.RemainingOvertimeCost
+    summary: The remaining overtime cost for the task.
     name: RemainingOvertimeCost
     fullName: office.Office.ProjectTaskFields.RemainingOvertimeCost
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.RemainingWork
+    summary: 'The remaining work for the task, in minutes.'
     name: RemainingWork
     fullName: office.Office.ProjectTaskFields.RemainingWork
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.ResourceNames
+    summary: The names of the resources assigned to a task.
     name: ResourceNames
     fullName: office.Office.ProjectTaskFields.ResourceNames
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.ScheduledDuration
+    summary: The scheduled (as opposed to actual) duration of the task.
     name: ScheduledDuration
     fullName: office.Office.ProjectTaskFields.ScheduledDuration
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.ScheduledFinish
+    summary: The scheduled (as opposed to actual) finish date of the task.
     name: ScheduledFinish
     fullName: office.Office.ProjectTaskFields.ScheduledFinish
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.ScheduledStart
+    summary: The scheduled (as opposed to actual) start date of the task.
     name: ScheduledStart
     fullName: office.Office.ProjectTaskFields.ScheduledStart
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Start
+    summary: The start date of the task.
     name: Start
     fullName: office.Office.ProjectTaskFields.Start
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Start1
+    summary: A start field for the task.
     name: Start1
     fullName: office.Office.ProjectTaskFields.Start1
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Start10
+    summary: A start field for the task.
     name: Start10
     fullName: office.Office.ProjectTaskFields.Start10
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Start2
+    summary: A start field for the task.
     name: Start2
     fullName: office.Office.ProjectTaskFields.Start2
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Start3
+    summary: A start field for the task.
     name: Start3
     fullName: office.Office.ProjectTaskFields.Start3
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Start4
+    summary: A start field for the task.
     name: Start4
     fullName: office.Office.ProjectTaskFields.Start4
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Start5
+    summary: A start field for the task.
     name: Start5
     fullName: office.Office.ProjectTaskFields.Start5
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Start6
+    summary: A start field for the task.
     name: Start6
     fullName: office.Office.ProjectTaskFields.Start6
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Start7
+    summary: A start field for the task.
     name: Start7
     fullName: office.Office.ProjectTaskFields.Start7
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Start8
+    summary: A start field for the task.
     name: Start8
     fullName: office.Office.ProjectTaskFields.Start8
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Start9
+    summary: A start field for the task.
     name: Start9
     fullName: office.Office.ProjectTaskFields.Start9
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.StartSlack
+    summary: The duration between the Early Start and Late Start dates for the task.
     name: StartSlack
     fullName: office.Office.ProjectTaskFields.StartSlack
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Status
+    summary: 'The status of the task: Complete = 0, on schedule = 1, late = 2, future task = 3, status not available = 4.'
     name: Status
     fullName: office.Office.ProjectTaskFields.Status
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.StatusManager
+    summary: The enterprise resource responsible for accepting or rejecting assignment progress updates for the task.
     name: StatusManager
     fullName: office.Office.ProjectTaskFields.StatusManager
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Successors
+    summary: The IDs of the task's successors.
     name: Successors
     fullName: office.Office.ProjectTaskFields.Successors
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Summary
+    summary: Indicates whether the task is a summary task.
     name: Summary
     fullName: office.Office.ProjectTaskFields.Summary
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.TaskCalendarGUID
+    summary: The GUID of the task calendar.
     name: TaskCalendarGUID
     fullName: office.Office.ProjectTaskFields.TaskCalendarGUID
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.TaskGUID
+    summary: The GUID of the task.
     name: TaskGUID
     fullName: office.Office.ProjectTaskFields.TaskGUID
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text1
+    summary: A text field for the task.
     name: Text1
     fullName: office.Office.ProjectTaskFields.Text1
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text10
+    summary: A text field for the task.
     name: Text10
     fullName: office.Office.ProjectTaskFields.Text10
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text11
+    summary: A text field for the task.
     name: Text11
     fullName: office.Office.ProjectTaskFields.Text11
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text12
+    summary: A text field for the task.
     name: Text12
     fullName: office.Office.ProjectTaskFields.Text12
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text13
+    summary: A text field for the task.
     name: Text13
     fullName: office.Office.ProjectTaskFields.Text13
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text14
+    summary: A text field for the task.
     name: Text14
     fullName: office.Office.ProjectTaskFields.Text14
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text15
+    summary: A text field for the task.
     name: Text15
     fullName: office.Office.ProjectTaskFields.Text15
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text16
+    summary: A text field for the task.
     name: Text16
     fullName: office.Office.ProjectTaskFields.Text16
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text17
+    summary: A text field for the task.
     name: Text17
     fullName: office.Office.ProjectTaskFields.Text17
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text18
+    summary: A text field for the task.
     name: Text18
     fullName: office.Office.ProjectTaskFields.Text18
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text19
+    summary: A text field for the task.
     name: Text19
     fullName: office.Office.ProjectTaskFields.Text19
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text2
+    summary: A text field for the task.
     name: Text2
     fullName: office.Office.ProjectTaskFields.Text2
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text20
+    summary: A text field for the task.
     name: Text20
     fullName: office.Office.ProjectTaskFields.Text20
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text21
+    summary: A text field for the task.
     name: Text21
     fullName: office.Office.ProjectTaskFields.Text21
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text22
+    summary: A text field for the task.
     name: Text22
     fullName: office.Office.ProjectTaskFields.Text22
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text23
+    summary: A text field for the task.
     name: Text23
     fullName: office.Office.ProjectTaskFields.Text23
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text24
+    summary: A text field for the task.
     name: Text24
     fullName: office.Office.ProjectTaskFields.Text24
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text25
+    summary: A text field for the task.
     name: Text25
     fullName: office.Office.ProjectTaskFields.Text25
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text26
+    summary: A text field for the task.
     name: Text26
     fullName: office.Office.ProjectTaskFields.Text26
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text27
+    summary: A text field for the task.
     name: Text27
     fullName: office.Office.ProjectTaskFields.Text27
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text28
+    summary: A text field for the task.
     name: Text28
     fullName: office.Office.ProjectTaskFields.Text28
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text29
+    summary: A text field for the task.
     name: Text29
     fullName: office.Office.ProjectTaskFields.Text29
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text3
+    summary: A text field for the task.
     name: Text3
     fullName: office.Office.ProjectTaskFields.Text3
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text30
+    summary: A text field for the task.
     name: Text30
     fullName: office.Office.ProjectTaskFields.Text30
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text4
+    summary: A text field for the task.
     name: Text4
     fullName: office.Office.ProjectTaskFields.Text4
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text5
+    summary: A text field for the task.
     name: Text5
     fullName: office.Office.ProjectTaskFields.Text5
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text6
+    summary: A text field for the task.
     name: Text6
     fullName: office.Office.ProjectTaskFields.Text6
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text7
+    summary: A text field for the task.
     name: Text7
     fullName: office.Office.ProjectTaskFields.Text7
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text8
+    summary: A text field for the task.
     name: Text8
     fullName: office.Office.ProjectTaskFields.Text8
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Text9
+    summary: A text field for the task.
     name: Text9
     fullName: office.Office.ProjectTaskFields.Text9
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.TotalSlack
+    summary: 'The total slack time for the task, in minutes.'
     name: TotalSlack
     fullName: office.Office.ProjectTaskFields.TotalSlack
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Type
+    summary: 'The way the task is calculated: Fixed units = 0, fixed duration = 1, fixed work = 2.'
     name: Type
     fullName: office.Office.ProjectTaskFields.Type
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.WBS
+    summary: The work breakdown structure code of the task.
     name: WBS
     fullName: office.Office.ProjectTaskFields.WBS
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.WBSPREDECESSORS
+    summary: 'The work breakdown structure codes of the task predecessors, separated by the list separator.'
     name: WBSPREDECESSORS
     fullName: office.Office.ProjectTaskFields.WBSPREDECESSORS
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.WBSSUCCESSORS
+    summary: 'The work breakdown structure codes of the task successors, separated by the list separator.'
     name: WBSSUCCESSORS
     fullName: office.Office.ProjectTaskFields.WBSSUCCESSORS
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.Work
+    summary: 'The total person-hours scheduled for the task, in minutes.'
     name: Work
     fullName: office.Office.ProjectTaskFields.Work
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectTaskFields.WSSID
+    summary: 'The ID of the task in a SharePoint list, for a project that is synchronized with a SharePoint tasks list.'
     name: WSSID
     fullName: office.Office.ProjectTaskFields.WSSID
     langs:

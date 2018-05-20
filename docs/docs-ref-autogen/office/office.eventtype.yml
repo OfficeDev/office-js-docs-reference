@@ -1,6 +1,13 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.EventType
+    summary: Specifies the kind of event that was raised. Returned by the type property of an EventNameEventArgs object.
+    remarks: >-
+      Add-ins for Project support the Office.EventType.ResourceSelectionChanged, Office.EventType.TaskSelectionChanged,
+      and Office.EventType.ViewSelectionChanged event types.
+
+
+      Hosts: Access, Excel, PowerPoint, Project, Word
     name: Office.EventType
     fullName: office.Office.EventType
     langs:
@@ -23,20 +30,21 @@ items:
       - office.Office.EventType.TaskSelectionChanged
       - office.Office.EventType.ViewSelectionChanged
   - uid: office.Office.EventType.ActiveViewChanged
-    summary: Occurs when the user changes the current view of the document.
+    summary: A Document.ActiveViewChanged event was raised.
     name: ActiveViewChanged
     fullName: office.Office.EventType.ActiveViewChanged
     langs:
       - typeScript
     type: field
   - uid: office.Office.EventType.BindingDataChanged
-    summary: |-
-      Occurs when data within the binding is changed.
-
+    summary: Occurs when data within the binding is changed.
+    remarks: >-
       Hosts: Access, Excel, Word
 
+
       Last changed in: 1.1
-    remarks: >-
+
+
       To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the
       Binding object. The event handler receives an argument of type BindingDataChangedEventArgs.
     name: BindingDataChanged
@@ -45,15 +53,17 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.BindingSelectionChanged
-    summary: |-
-      Occurs when the selection is changed within the binding.
-
+    summary: Occurs when the selection is changed within the binding.
+    remarks: >-
       Hosts: Access, Excel, Word
+
 
       Available in Requirement set: BindingEvents
 
+
       Last changed in: 1.1
-    remarks: >-
+
+
       To add an event handler for the BindingSelectionChanged event of a binding, use the addHandlerAsync method of the
       Binding object. The event handler receives an argument of type BindingSelectionChangedEventArgs.
     name: BindingSelectionChanged
@@ -83,7 +93,7 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.ItemChanged
-    summary: Triggers when the active item changes
+    summary: A Document.SelectionChanged event was raised.
     name: ItemChanged
     fullName: office.Office.EventType.ItemChanged
     langs:
@@ -118,7 +128,7 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.SettingsChanged
-    summary: Triggers when settings change in a co-Auth session.
+    summary: A Settings.settingsChanged event was raised.
     name: SettingsChanged
     fullName: office.Office.EventType.SettingsChanged
     langs:

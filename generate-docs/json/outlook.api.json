@@ -710,8 +710,25 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
-          "remarks": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents the runtime environment of the add-in and provides access to key objects of the API."
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Hosts: Access, Excel, Outlook, PowerPoint, Project, Word"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "Last changed in: 1.1"
+            }
+          ],
           "isBeta": false,
           "members": {
             "mailbox": {
@@ -734,7 +751,12 @@
               "isStatic": false,
               "type": "RoamingSettings",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets an object that represents the saved custom settings of the add-in."
+                }
+              ],
               "remarks": [],
               "isBeta": false
             }

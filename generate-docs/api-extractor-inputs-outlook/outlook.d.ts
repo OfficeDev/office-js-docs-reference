@@ -272,8 +272,19 @@ export declare namespace Office {
         phoneNumbers: Array<PhoneNumber>;
         urls: Array<string>;
     }
+    /**
+    * Represents the runtime environment of the add-in and provides access to key objects of the API.
+    * 
+    *@remarks
+    * Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
+    *
+    * Last changed in: 1.1
+    */
     export interface Context {
         mailbox: Mailbox;
+        /**
+        * Gets an object that represents the saved custom settings of the add-in.
+        */
         roamingSettings: RoamingSettings;
     }
     export interface CustomProperties {

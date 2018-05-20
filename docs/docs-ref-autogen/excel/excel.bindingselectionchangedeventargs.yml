@@ -18,9 +18,8 @@ items:
       - excel.Excel.BindingSelectionChangedEventArgs.startColumn
       - excel.Excel.BindingSelectionChangedEventArgs.startRow
   - uid: excel.Excel.BindingSelectionChangedEventArgs.binding
-    summary: |-
-      Gets the Binding object that represents the binding that raised the SelectionChanged event.
-
+    summary: Gets the Binding object that represents the binding that raised the SelectionChanged event.
+    remarks: |-
       \*\*Hosts:\*\* Access, Excel, Word
 
       \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]

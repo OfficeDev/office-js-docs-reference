@@ -1,6 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.AsyncResultStatus
+    summary: Specifies the result of an asynchronous call.
+    remarks: |-
+      Returned by the status property of the AsyncResult object.
+
+      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
     name: Office.AsyncResultStatus
     fullName: office.Office.AsyncResultStatus
     langs:
@@ -11,14 +16,14 @@ items:
       - office.Office.AsyncResultStatus.Failed
       - office.Office.AsyncResultStatus.Succeeded
   - uid: office.Office.AsyncResultStatus.Failed
-    summary: 'Operation failed, check error object'
+    summary: 'The call failed, check the error object.'
     name: Failed
     fullName: office.Office.AsyncResultStatus.Failed
     langs:
       - typeScript
     type: field
   - uid: office.Office.AsyncResultStatus.Succeeded
-    summary: Operation succeeded
+    summary: The call succeeded.
     name: Succeeded
     fullName: office.Office.AsyncResultStatus.Succeeded
     langs:

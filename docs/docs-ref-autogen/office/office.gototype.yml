@@ -1,6 +1,8 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.GoToType
+    summary: Specifies the type of place or object to navigate to.
+    remarks: 'Hosts: Excel, PowerPoint, Word'
     name: Office.GoToType
     fullName: office.Office.GoToType
     langs:
@@ -20,7 +22,7 @@ items:
       - typeScript
     type: field
   - uid: office.Office.GoToType.Index
-    summary: Goes to the specified index by slide number or enum Office.Index
+    summary: Goes to the specified index by slide number or Office.Index
     name: Index
     fullName: office.Office.GoToType.Index
     langs:

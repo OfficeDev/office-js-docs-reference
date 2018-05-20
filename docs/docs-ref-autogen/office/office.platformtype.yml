@@ -1,6 +1,8 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.PlatformType
+    summary: Specifies the OS or other platform on which the Office host application is running.
+    remarks: 'Hosts: Excel, Word, PowerPoint, Outlook, OneNote, Project, Access'
     name: Office.PlatformType
     fullName: office.Office.PlatformType
     langs:
@@ -15,42 +17,42 @@ items:
       - office.Office.PlatformType.PC
       - office.Office.PlatformType.Universal
   - uid: office.Office.PlatformType.Android
-    summary: Platform is Android
+    summary: The platform is an Android device.
     name: Android
     fullName: office.Office.PlatformType.Android
     langs:
       - typeScript
     type: field
   - uid: office.Office.PlatformType.iOS
-    summary: Platform is iOS
+    summary: The platform an iOS device.
     name: iOS
     fullName: office.Office.PlatformType.iOS
     langs:
       - typeScript
     type: field
   - uid: office.Office.PlatformType.Mac
-    summary: Platform is Mac
+    summary: The platform is Mac.
     name: Mac
     fullName: office.Office.PlatformType.Mac
     langs:
       - typeScript
     type: field
   - uid: office.Office.PlatformType.OfficeOnline
-    summary: Platform is Web
+    summary: The platform is Office Online.
     name: OfficeOnline
     fullName: office.Office.PlatformType.OfficeOnline
     langs:
       - typeScript
     type: field
   - uid: office.Office.PlatformType.PC
-    summary: Platform is PC
+    summary: The platform is PC (Windows).
     name: PC
     fullName: office.Office.PlatformType.PC
     langs:
       - typeScript
     type: field
   - uid: office.Office.PlatformType.Universal
-    summary: Platform is Winrt
+    summary: The platform is WinRT.
     name: Universal
     fullName: office.Office.PlatformType.Universal
     langs:

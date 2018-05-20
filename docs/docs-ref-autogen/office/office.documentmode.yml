@@ -1,6 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.DocumentMode
+    summary: Specifies whether the document in the associated application is read-only or read-write.
+    remarks: |-
+      Returned by the mode property of the Document object.
+
+      Hosts: Excel, PowerPoint, Project, Word
     name: Office.DocumentMode
     fullName: office.Office.DocumentMode
     langs:
@@ -11,14 +16,14 @@ items:
       - office.Office.DocumentMode.ReadOnly
       - office.Office.DocumentMode.ReadWrite
   - uid: office.Office.DocumentMode.ReadOnly
-    summary: Document in Read Only Mode
+    summary: The document is read-only.
     name: ReadOnly
     fullName: office.Office.DocumentMode.ReadOnly
     langs:
       - typeScript
     type: field
   - uid: office.Office.DocumentMode.ReadWrite
-    summary: Document in Read/Write Mode
+    summary: The document can be read and written to.
     name: ReadWrite
     fullName: office.Office.DocumentMode.ReadWrite
     langs:

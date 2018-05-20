@@ -1012,10 +1012,9 @@
                 {
                   "kind": "text",
                   "text": "Gets the Binding object that represents the binding that raised the SelectionChanged event."
-                },
-                {
-                  "kind": "paragraph"
-                },
+                }
+              ],
+              "remarks": [
                 {
                   "kind": "text",
                   "text": "**Hosts:** Access, Excel, Word"
@@ -1028,7 +1027,6 @@
                   "text": "[Api set: ExcelApi 1.2]"
                 }
               ],
-              "remarks": [],
               "isBeta": false
             },
             "columnCount": {

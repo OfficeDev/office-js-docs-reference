@@ -238,6 +238,7 @@ export declare namespace Excel {
          *
          * Gets the Binding object that represents the binding that raised the SelectionChanged event.
          * 
+         *@remarks
          * **Hosts:** Access, Excel, Word
          *
          * [Api set: ExcelApi 1.2]

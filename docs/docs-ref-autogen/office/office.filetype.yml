@@ -1,6 +1,8 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.FileType
+    summary: Specifies the format in which to return the document.
+    remarks: 'Hosts: PowerPoint, Word'
     name: Office.FileType
     fullName: office.Office.FileType
     langs:
@@ -12,21 +14,21 @@ items:
       - office.Office.FileType.Pdf
       - office.Office.FileType.Text
   - uid: office.Office.FileType.Compressed
-    summary: Returns the file as a byte array
+    summary: Returns the entire document (.pptx or .docx or .xslx) in Office Open XML (OOXML) format as a byte array.
     name: Compressed
     fullName: office.Office.FileType.Compressed
     langs:
       - typeScript
     type: field
   - uid: office.Office.FileType.Pdf
-    summary: Returns the file in PDF format as a byte array
+    summary: Returns the entire document in PDF format as a byte array.
     name: Pdf
     fullName: office.Office.FileType.Pdf
     langs:
       - typeScript
     type: field
   - uid: office.Office.FileType.Text
-    summary: Returns the file as plain text
+    summary: Returns only the text of the document as a string. (Word only)
     name: Text
     fullName: office.Office.FileType.Text
     langs:
