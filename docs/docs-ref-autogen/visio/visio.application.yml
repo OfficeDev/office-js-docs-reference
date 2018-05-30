@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Application.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: Visio.Application
     fullName: visio.Visio.Application
     langs:
@@ -40,6 +40,24 @@ items:
           description: ''
           type:
             - Visio.Interfaces.ApplicationLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var application = ctx.document.application;
+          application.showToolbars = false;
+          application.showBorders = false;
+          return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: visio.Visio.Application.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -75,7 +93,7 @@ items:
     summary: |-
       Show/Hide the application borders.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: showBorders
     fullName: visio.Visio.Application.showBorders
     langs:
@@ -90,7 +108,7 @@ items:
     summary: |-
       Show or Hide a particular toolbar.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: 'showToolbar(id, show)'
     fullName: visio.Visio.Application.showToolbar
     langs:
@@ -115,7 +133,7 @@ items:
     summary: |-
       Show or Hide the standard toolbars.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: showToolbars
     fullName: visio.Visio.Application.showToolbars
     langs:

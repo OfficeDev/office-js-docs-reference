@@ -4,7 +4,7 @@ items:
     summary: |-
       Account information.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.LogData
     fullName: onenote.OneNote.LogData
     langs:
@@ -19,7 +19,7 @@ items:
     summary: |-
       // None PII
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: isNonPII
     fullName: onenote.OneNote.LogData.isNonPII
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       // data tag
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: tag
     fullName: onenote.OneNote.LogData.tag
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       // data value
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: value
     fullName: onenote.OneNote.LogData.value
     langs:

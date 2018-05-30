@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the protection of a workbook object.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorkbookProtection
     fullName: excel.Excel.WorkbookProtection
     langs:
@@ -21,7 +21,7 @@ items:
     summary: |-
       Protects a workbook. Fails if the workbook has been protected.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: protect(password)
     fullName: excel.Excel.WorkbookProtection.protect
     langs:
@@ -57,7 +57,7 @@ items:
     summary: |-
       Unprotects a workbook.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: unprotect(password)
     fullName: excel.Excel.WorkbookProtection.unprotect
     langs:

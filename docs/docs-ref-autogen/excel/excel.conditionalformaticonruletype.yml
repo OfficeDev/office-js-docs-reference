@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the types of conditional format values.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalFormatIconRuleType
     fullName: excel.Excel.ConditionalFormatIconRuleType
     langs:

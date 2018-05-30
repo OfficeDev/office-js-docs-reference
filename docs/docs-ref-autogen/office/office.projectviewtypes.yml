@@ -1,6 +1,13 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.ProjectViewTypes
+    summary: Specifies the types of views that the getSelectedViewAsync method can recognize.
+    remarks: >-
+      The getSelectedViewAsync method returns the ProjectViewTypes constant value and name that corresponds to the
+      active view.
+
+
+      Hosts: Project
     name: Office.ProjectViewTypes
     fullName: office.Office.ProjectViewTypes
     langs:
@@ -25,96 +32,112 @@ items:
       - office.Office.ProjectViewTypes.TeamPlanner
       - office.Office.ProjectViewTypes.Timeline
   - uid: office.Office.ProjectViewTypes.Calendar
+    summary: The Calendar view.
     name: Calendar
     fullName: office.Office.ProjectViewTypes.Calendar
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectViewTypes.Gantt
+    summary: The Gantt chart view.
     name: Gantt
     fullName: office.Office.ProjectViewTypes.Gantt
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectViewTypes.NetworkDiagram
+    summary: The Network Diagram view.
     name: NetworkDiagram
     fullName: office.Office.ProjectViewTypes.NetworkDiagram
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectViewTypes.ResourceForm
+    summary: The Resource Form view.
     name: ResourceForm
     fullName: office.Office.ProjectViewTypes.ResourceForm
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectViewTypes.ResourceGraph
+    summary: The Resource Graph view.
     name: ResourceGraph
     fullName: office.Office.ProjectViewTypes.ResourceGraph
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectViewTypes.ResourceNames
+    summary: The Resource Names view.
     name: ResourceNames
     fullName: office.Office.ProjectViewTypes.ResourceNames
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectViewTypes.ResourceSheet
+    summary: The Resource Sheet view.
     name: ResourceSheet
     fullName: office.Office.ProjectViewTypes.ResourceSheet
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectViewTypes.ResourceUsage
+    summary: The Resource Usage view.
     name: ResourceUsage
     fullName: office.Office.ProjectViewTypes.ResourceUsage
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectViewTypes.TaskDetails
+    summary: The Task Details view.
     name: TaskDetails
     fullName: office.Office.ProjectViewTypes.TaskDetails
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectViewTypes.TaskDiagram
+    summary: The Task Diagram view.
     name: TaskDiagram
     fullName: office.Office.ProjectViewTypes.TaskDiagram
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectViewTypes.TaskForm
+    summary: The Task form view.
     name: TaskForm
     fullName: office.Office.ProjectViewTypes.TaskForm
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectViewTypes.TaskNameForm
+    summary: The Task Name Form view.
     name: TaskNameForm
     fullName: office.Office.ProjectViewTypes.TaskNameForm
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectViewTypes.TaskSheet
+    summary: The Task Sheet view.
     name: TaskSheet
     fullName: office.Office.ProjectViewTypes.TaskSheet
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectViewTypes.TaskUsage
+    summary: The Task Usage view.
     name: TaskUsage
     fullName: office.Office.ProjectViewTypes.TaskUsage
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectViewTypes.TeamPlanner
+    summary: The Team Planner view.
     name: TeamPlanner
     fullName: office.Office.ProjectViewTypes.TeamPlanner
     langs:
       - typeScript
     type: field
   - uid: office.Office.ProjectViewTypes.Timeline
+    summary: The Timeline view.
     name: Timeline
     fullName: office.Office.ProjectViewTypes.Timeline
     langs:

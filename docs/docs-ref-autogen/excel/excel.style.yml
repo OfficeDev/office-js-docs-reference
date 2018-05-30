@@ -4,7 +4,7 @@ items:
     summary: |-
       An object encapsulating a style's format and other properties.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Style
     fullName: excel.Excel.Style
     langs:
@@ -43,7 +43,7 @@ items:
     summary: |-
       A Border collection of four Border objects that represent the style of the four borders.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: borders
     fullName: excel.Excel.Style.borders
     langs:
@@ -58,7 +58,7 @@ items:
     summary: |-
       Indicates if the style is a built-in style.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: builtIn
     fullName: excel.Excel.Style.builtIn
     langs:
@@ -73,7 +73,7 @@ items:
     summary: |-
       Deletes this style.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: excel.Excel.Style.delete
     langs:
@@ -107,7 +107,7 @@ items:
     summary: |-
       The Fill of the style.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: excel.Excel.Style.fill
     langs:
@@ -122,7 +122,7 @@ items:
     summary: |-
       A Font object that represents the font of the style.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: excel.Excel.Style.font
     langs:
@@ -158,7 +158,7 @@ items:
     summary: |-
       Indicates if the formula will be hidden when the worksheet is protected.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: formulaHidden
     fullName: excel.Excel.Style.formulaHidden
     langs:
@@ -173,7 +173,7 @@ items:
     summary: |-
       Represents the horizontal alignment for the style. See Excel.HorizontalAlignment for details.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: excel.Excel.Style.horizontalAlignment
     langs:
@@ -194,7 +194,7 @@ items:
       TextOrientation properties.
 
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: includeAlignment
     fullName: excel.Excel.Style.includeAlignment
     langs:
@@ -209,7 +209,7 @@ items:
     summary: |-
       Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: includeBorder
     fullName: excel.Excel.Style.includeBorder
     langs:
@@ -226,7 +226,7 @@ items:
       Strikethrough, Subscript, Superscript, and Underline font properties.
 
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: includeFont
     fullName: excel.Excel.Style.includeFont
     langs:
@@ -241,7 +241,7 @@ items:
     summary: |-
       Indicates if the style includes the NumberFormat property.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: includeNumber
     fullName: excel.Excel.Style.includeNumber
     langs:
@@ -258,7 +258,7 @@ items:
       PatternColorIndex interior properties.
 
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: includePatterns
     fullName: excel.Excel.Style.includePatterns
     langs:
@@ -273,7 +273,7 @@ items:
     summary: |-
       Indicates if the style includes the FormulaHidden and Locked protection properties.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: includeProtection
     fullName: excel.Excel.Style.includeProtection
     langs:
@@ -288,7 +288,7 @@ items:
     summary: |-
       An integer from 0 to 250 that indicates the indent level for the style.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: indentLevel
     fullName: excel.Excel.Style.indentLevel
     langs:
@@ -323,7 +323,7 @@ items:
     summary: |-
       Indicates if the object is locked when the worksheet is protected.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: locked
     fullName: excel.Excel.Style.locked
     langs:
@@ -338,7 +338,7 @@ items:
     summary: |-
       The name of the style.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.Style.name
     langs:
@@ -353,7 +353,7 @@ items:
     summary: |-
       The format code of the number format for the style.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: excel.Excel.Style.numberFormat
     langs:
@@ -368,7 +368,7 @@ items:
     summary: |-
       The localized format code of the number format for the style.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormatLocal
     fullName: excel.Excel.Style.numberFormatLocal
     langs:
@@ -383,7 +383,7 @@ items:
     summary: |-
       The reading order for the style.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: readingOrder
     fullName: excel.Excel.Style.readingOrder
     langs:
@@ -420,7 +420,7 @@ items:
     summary: |-
       Indicates if text automatically shrinks to fit in the available column width.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: shrinkToFit
     fullName: excel.Excel.Style.shrinkToFit
     langs:
@@ -447,7 +447,7 @@ items:
     summary: |-
       Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
     fullName: excel.Excel.Style.verticalAlignment
     langs:
@@ -462,7 +462,7 @@ items:
     summary: |-
       Indicates if Microsoft Excel wraps the text in the object.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: wrapText
     fullName: excel.Excel.Style.wrapText
     langs:

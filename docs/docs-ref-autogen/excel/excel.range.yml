@@ -4,7 +4,7 @@ items:
     summary: |-
       Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Range
     fullName: excel.Excel.Range
     langs:
@@ -82,7 +82,7 @@ items:
       Read-only.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: excel.Excel.Range.address
     langs:
@@ -97,7 +97,7 @@ items:
     summary: |-
       Represents range reference for the specified range in the language of the user. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: addressLocal
     fullName: excel.Excel.Range.addressLocal
     langs:
@@ -112,7 +112,7 @@ items:
     summary: |-
       Calculates a range of cells on a worksheet.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: calculate()
     fullName: excel.Excel.Range.calculate
     langs:
@@ -128,7 +128,7 @@ items:
     summary: |-
       Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: cellCount
     fullName: excel.Excel.Range.cellCount
     langs:
@@ -143,7 +143,7 @@ items:
     summary: |-
       Clear range values, format, fill, border, etc.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: clear(applyTo)
     fullName: excel.Excel.Range.clear
     langs:
@@ -173,17 +173,17 @@ items:
           range.clear();
           return ctx.sync(); 
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.columnCount
     summary: |-
       Represents the total number of columns in the range. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: columnCount
     fullName: excel.Excel.Range.columnCount
     langs:
@@ -198,7 +198,7 @@ items:
     summary: |-
       Represents if all columns of the current range are hidden.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: columnHidden
     fullName: excel.Excel.Range.columnHidden
     langs:
@@ -213,7 +213,7 @@ items:
     summary: |-
       Represents the column number of the first cell in the range. Zero-indexed. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: columnIndex
     fullName: excel.Excel.Range.columnIndex
     langs:
@@ -228,7 +228,7 @@ items:
     summary: |-
       Collection of ConditionalFormats that intersect the range.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: conditionalFormats
     fullName: excel.Excel.Range.conditionalFormats
     langs:
@@ -243,7 +243,7 @@ items:
     summary: |-
       Deletes the cells associated with the range.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: delete(shift)
     fullName: excel.Excel.Range.delete
     langs:
@@ -273,10 +273,10 @@ items:
           range.delete();
           return ctx.sync(); 
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.format
@@ -285,7 +285,7 @@ items:
       Read-only.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.Range.format
     langs:
@@ -303,7 +303,7 @@ items:
       cells in the range.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: formulas
     fullName: excel.Excel.Range.formulas
     langs:
@@ -322,7 +322,7 @@ items:
       value, it will be applied to all cells in the range.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: formulasLocal
     fullName: excel.Excel.Range.formulasLocal
     langs:
@@ -340,7 +340,7 @@ items:
       cells in the range.
 
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: formulasR1C1
     fullName: excel.Excel.Range.formulasR1C1
     langs:
@@ -357,7 +357,7 @@ items:
       rows and columns.
 
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: 'getAbsoluteResizedRange(numRows, numColumns)'
     fullName: excel.Excel.Range.getAbsoluteResizedRange
     langs:
@@ -384,7 +384,7 @@ items:
       "D10:E15" is "B2:E16".
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getBoundingRect(anotherRange)
     fullName: excel.Excel.Range.getBoundingRect
     langs:
@@ -407,7 +407,6 @@ items:
       #### Examples
 
       ```javascript
-
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "D4:G6";
@@ -418,10 +417,10 @@ items:
               console.log(range.address); // Prints Sheet1!D4:H8
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.getCell
@@ -431,7 +430,7 @@ items:
       to the top left cell of the range.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: 'getCell(row, column)'
     fullName: excel.Excel.Range.getCell
     langs:
@@ -469,17 +468,17 @@ items:
               console.log(cell.address);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.getColumn
     summary: |-
       Gets a column contained in the range.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getColumn(column)
     fullName: excel.Excel.Range.getColumn
     langs:
@@ -502,7 +501,6 @@ items:
       #### Examples
 
       ```javascript
-
       Excel.run(function (ctx) { 
           var sheetName = "Sheet19";
           var rangeAddress = "A1:F8";
@@ -512,17 +510,17 @@ items:
               console.log(range.address); // prints Sheet1!B1:B8
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.getColumnsAfter
     summary: |-
       Gets a certain number of columns to the right of the current Range object.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getColumnsAfter(count)
     fullName: excel.Excel.Range.getColumnsAfter
     langs:
@@ -546,7 +544,7 @@ items:
     summary: |-
       Gets a certain number of columns to the left of the current Range object.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getColumnsBefore(count)
     fullName: excel.Excel.Range.getColumnsBefore
     langs:
@@ -572,7 +570,7 @@ items:
       "B4:E11", it's \`getEntireColumn\` is a range that represents columns "B:E").
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getEntireColumn()
     fullName: excel.Excel.Range.getEntireColumn
     langs:
@@ -590,7 +588,6 @@ items:
       #### Examples
 
       ```javascript
-
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "D:F";
@@ -601,10 +598,10 @@ items:
               console.log(rangeEC.address);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.getEntireRow
@@ -613,7 +610,7 @@ items:
       "B4:E11", it's \`GetEntireRow\` is a range that represents rows "4:11").
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getEntireRow()
     fullName: excel.Excel.Range.getEntireRow
     langs:
@@ -631,7 +628,6 @@ items:
       #### Examples
 
       ```javascript
-
       Excel.run(function (ctx) {
           var sheetName = "Sheet1";
           var rangeAddress = "D:F"; 
@@ -642,17 +638,17 @@ items:
               console.log(rangeER.address);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.getImage
     summary: |-
       Renders the range as a base64-encoded png image.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getImage()
     fullName: excel.Excel.Range.getImage
     langs:
@@ -668,7 +664,7 @@ items:
     summary: |-
       Gets the range object that represents the rectangular intersection of the given ranges.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getIntersection(anotherRange)
     fullName: excel.Excel.Range.getIntersection
     langs:
@@ -691,7 +687,6 @@ items:
       #### Examples
 
       ```javascript
-
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
@@ -701,10 +696,10 @@ items:
               console.log(range.address); // prints Sheet1!D4:F6
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.getIntersectionOrNullObject
@@ -713,7 +708,7 @@ items:
       found, will return a null object.
 
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getIntersectionOrNullObject(anotherRange)
     fullName: excel.Excel.Range.getIntersectionOrNullObject
     langs:
@@ -784,7 +779,7 @@ items:
     summary: |-
       Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getLastCell()
     fullName: excel.Excel.Range.getLastCell
     langs:
@@ -802,7 +797,6 @@ items:
       #### Examples
 
       ```javascript
-
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
@@ -812,17 +806,17 @@ items:
               console.log(range.address); // prints Sheet1!F8
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.getLastColumn
     summary: |-
       Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getLastColumn()
     fullName: excel.Excel.Range.getLastColumn
     langs:
@@ -840,7 +834,6 @@ items:
       #### Examples
 
       ```javascript
-
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
@@ -850,17 +843,17 @@ items:
               console.log(range.address); // prints Sheet1!F1:F8
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.getLastRow
     summary: |-
       Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getLastRow()
     fullName: excel.Excel.Range.getLastRow
     langs:
@@ -878,7 +871,6 @@ items:
       #### Examples
 
       ```javascript
-
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
@@ -888,10 +880,10 @@ items:
               console.log(range.address); // prints Sheet1!A8:F8
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.getOffsetRange
@@ -901,7 +893,7 @@ items:
       will be thrown.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: 'getOffsetRange(rowOffset, columnOffset)'
     fullName: excel.Excel.Range.getOffsetRange
     langs:
@@ -941,10 +933,10 @@ items:
               console.log(range.address); // prints Sheet1!H3:K5
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.getResizedRange
@@ -953,7 +945,7 @@ items:
       by some number of rows and columns.
 
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: 'getResizedRange(deltaRows, deltaColumns)'
     fullName: excel.Excel.Range.getResizedRange
     langs:
@@ -982,7 +974,7 @@ items:
     summary: |-
       Gets a row contained in the range.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getRow(row)
     fullName: excel.Excel.Range.getRow
     langs:
@@ -1005,7 +997,6 @@ items:
       #### Examples
 
       ```javascript
-
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
@@ -1015,17 +1006,17 @@ items:
               console.log(range.address); // prints Sheet1!A2:F2
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.getRowsAbove
     summary: |-
       Gets a certain number of rows above the current Range object.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getRowsAbove(count)
     fullName: excel.Excel.Range.getRowsAbove
     langs:
@@ -1049,7 +1040,7 @@ items:
     summary: |-
       Gets a certain number of rows below the current Range object.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getRowsBelow(count)
     fullName: excel.Excel.Range.getRowsBelow
     langs:
@@ -1075,7 +1066,7 @@ items:
       region is a range bounded by any combination of blank rows and blank columns relative to this range.
 
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getSurroundingRegion()
     fullName: excel.Excel.Range.getSurroundingRegion
     langs:
@@ -1093,7 +1084,7 @@ items:
       throw an ItemNotFound error.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getUsedRange(valuesOnly)
     fullName: excel.Excel.Range.getUsedRange
     langs:
@@ -1116,7 +1107,6 @@ items:
       #### Examples
 
       ```javascript
-
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "D:F";
@@ -1127,10 +1117,10 @@ items:
               console.log(rangeUR.address);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
 
@@ -1185,7 +1175,7 @@ items:
       return a null object.
 
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getUsedRangeOrNullObject(valuesOnly)
     fullName: excel.Excel.Range.getUsedRangeOrNullObject
     langs:
@@ -1239,7 +1229,7 @@ items:
     summary: |-
       Represents the visible rows of the current range.
 
-      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getVisibleView()
     fullName: excel.Excel.Range.getVisibleView
     langs:
@@ -1255,7 +1245,7 @@ items:
     summary: |-
       Represents if all cells of the current range are hidden.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: hidden
     fullName: excel.Excel.Range.hidden
     langs:
@@ -1270,7 +1260,7 @@ items:
     summary: |-
       Represents the hyperlink for the current range.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: hyperlink
     fullName: excel.Excel.Range.hyperlink
     langs:
@@ -1287,7 +1277,7 @@ items:
       space. Returns a new Range object at the now blank space.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: insert(shift)
     fullName: excel.Excel.Range.insert
     langs:
@@ -1310,7 +1300,6 @@ items:
       #### Examples
 
       ```javascript
-
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "F5:F10";
@@ -1319,17 +1308,17 @@ items:
           return ctx.sync(); 
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.isEntireColumn
     summary: |-
       Represents if the current range is an entire column.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireColumn
     fullName: excel.Excel.Range.isEntireColumn
     langs:
@@ -1344,7 +1333,7 @@ items:
     summary: |-
       Represents if the current range is an entire row.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireRow
     fullName: excel.Excel.Range.isEntireRow
     langs:
@@ -1375,11 +1364,72 @@ items:
           description: ''
           type:
             - Excel.Interfaces.RangeLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) {
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8"; 
+          var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+          var range = worksheet.getRange(rangeAddress);
+          range.load('cellCount');
+          return ctx.sync().then(function() {
+              console.log(range.cellCount);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var rangeName = 'MyRange';
+          var range = ctx.workbook.names.getItem(rangeName).range;
+          range.load('cellCount');
+          return ctx.sync().then(function() {
+              console.log(range.cellCount);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "F5:G7";
+          var numberFormat = [[null, "d-mmm"], [null, "d-mmm"], [null, null]]
+          var values = [["Today", 42147], ["Tomorrow", "5/24"], ["Difference in days", null]];
+          var formulas = [[null,null], [null,null], [null,"=G6-G5"]];
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          range.numberFormat = numberFormat;
+          range.values = values;
+          range.formulas= formulas;
+          range.load('text');
+          return ctx.sync().then(function() {
+              console.log(range.text);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.Range.merge
     summary: |-
       Merge the range cells into one region in the worksheet.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: merge(across)
     fullName: excel.Excel.Range.merge
     langs:
@@ -1411,10 +1461,10 @@ items:
           range.merge(true);
           return ctx.sync(); 
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
 
@@ -1426,10 +1476,10 @@ items:
           range.unmerge();
           return ctx.sync(); 
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.numberFormat
@@ -1439,7 +1489,7 @@ items:
       will be applied to all cells in the range.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormat
     fullName: excel.Excel.Range.numberFormat
     langs:
@@ -1457,7 +1507,7 @@ items:
       array. If the argument is a single value, it will be applied to all cells in the range.
 
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: numberFormatLocal
     fullName: excel.Excel.Range.numberFormatLocal
     langs:
@@ -1472,7 +1522,7 @@ items:
     summary: |-
       Returns the total number of rows in the range. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: rowCount
     fullName: excel.Excel.Range.rowCount
     langs:
@@ -1487,7 +1537,7 @@ items:
     summary: |-
       Represents if all rows of the current range are hidden.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: rowHidden
     fullName: excel.Excel.Range.rowHidden
     langs:
@@ -1502,7 +1552,7 @@ items:
     summary: |-
       Returns the row number of the first cell in the range. Zero-indexed. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex
     fullName: excel.Excel.Range.rowIndex
     langs:
@@ -1519,7 +1569,7 @@ items:
       has multiple areas, the "InvalidReference" error will be returned.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: select()
     fullName: excel.Excel.Range.select
     langs:
@@ -1537,7 +1587,6 @@ items:
       #### Examples
 
       ```javascript
-
       Excel.run(function (ctx) {
           var sheetName = "Sheet1";
           var rangeAddress = "F5:F10"; 
@@ -1545,10 +1594,10 @@ items:
           range.select();
           return ctx.sync(); 
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.set
@@ -1577,7 +1626,7 @@ items:
     summary: |-
       Displays the card for an active cell if it has rich value content.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: showCard()
     fullName: excel.Excel.Range.showCard
     langs:
@@ -1593,7 +1642,7 @@ items:
     summary: |-
       Represents the range sort of the current range.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: sort
     fullName: excel.Excel.Range.sort
     langs:
@@ -1611,7 +1660,7 @@ items:
       BuiltInStyle enum will be returned.
 
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: excel.Excel.Range.style
     langs:
@@ -1628,7 +1677,7 @@ items:
       that happens in Excel UI will not affect the text value returned by the API. Read-only.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: text
     fullName: excel.Excel.Range.text
     langs:
@@ -1673,7 +1722,7 @@ items:
     summary: |-
       Unmerge the range cells into separate cells.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: unmerge()
     fullName: excel.Excel.Range.unmerge
     langs:
@@ -1698,10 +1747,10 @@ items:
           range.unmerge();
           return ctx.sync(); 
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Range.untrack
@@ -1729,7 +1778,7 @@ items:
       it will be applied to all cells in the range.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: excel.Excel.Range.values
     langs:
@@ -1744,7 +1793,7 @@ items:
     summary: |-
       Represents the type of data of each cell. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: valueTypes
     fullName: excel.Excel.Range.valueTypes
     langs:
@@ -1759,7 +1808,7 @@ items:
     summary: |-
       The worksheet containing the current range.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
     fullName: excel.Excel.Range.worksheet
     langs:

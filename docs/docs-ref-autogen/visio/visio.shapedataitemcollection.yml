@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the ShapeDataItemCollection for a given Shape.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: Visio.ShapeDataItemCollection
     fullName: visio.Visio.ShapeDataItemCollection
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Gets the number of Shape Data Items.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: getCount()
     fullName: visio.Visio.ShapeDataItemCollection.getCount
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Gets the ShapeDataItem using its name.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: getItem(key)
     fullName: visio.Visio.ShapeDataItemCollection.getItem
     langs:
@@ -90,6 +90,31 @@ items:
           description: ''
           type:
             - Visio.Interfaces.ShapeDataItemCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var activePage = ctx.document.getActivePage();
+          var shape = activePage.shapes.getItem(0);
+          var shapeDataItems = shape.shapeDataItems;
+          shapeDataItems.load();
+          return ctx.sync().then(function() {
+              for (var i = 0; i < shapeDataItems.items.length; i++)
+              {
+                  console.log(shapeDataItems.items[i].label);
+                  console.log(shapeDataItems.items[i].value);
+              }
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: visio.Visio.ShapeDataItemCollection.toJSON
     name: toJSON()
     fullName: visio.Visio.ShapeDataItemCollection.toJSON

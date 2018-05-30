@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a Cell Value Conditional Format Rule
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalCellValueRule
     fullName: excel.Excel.ConditionalCellValueRule
     langs:
@@ -19,7 +19,7 @@ items:
     summary: |-
       The formula, if required, to evaluate the conditional format rule on.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: formula1
     fullName: excel.Excel.ConditionalCellValueRule.formula1
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       The formula, if required, to evaluate the conditional format rule on.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: formula2
     fullName: excel.Excel.ConditionalCellValueRule.formula2
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       The operator of the text conditional format.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: operator
     fullName: excel.Excel.ConditionalCellValueRule.operator
     langs:

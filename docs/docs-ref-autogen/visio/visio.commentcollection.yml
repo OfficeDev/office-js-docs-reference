@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the CommentCollection for a given Shape.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: Visio.CommentCollection
     fullName: visio.Visio.CommentCollection
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Gets the number of Shape Data Items.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: getCount()
     fullName: visio.Visio.CommentCollection.getCount
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Gets the Comment using its name.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: getItem(key)
     fullName: visio.Visio.CommentCollection.getItem
     langs:
@@ -90,6 +90,34 @@ items:
           description: ''
           type:
             - Visio.Interfaces.CommentCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var activePage = ctx.document.getActivePage();
+          var shapeName = "Position Belt.41";
+          var shape = activePage.shapes.getItem(shapeName);
+          var shapecomments= shape.comments;
+          shapecomments.load();
+          return ctx.sync().then(function () {
+              for(var i=0; i<shapecomments.items.length;i++)
+              {
+                  var comment= shapecomments.items[i];
+                  console.log("comment Author: " + comment.author);
+                  console.log("Comment Text: " + comment.text);
+                  console.log("Date " + comment.date);
+              }
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: visio.Visio.CommentCollection.toJSON
     name: toJSON()
     fullName: visio.Visio.CommentCollection.toJSON

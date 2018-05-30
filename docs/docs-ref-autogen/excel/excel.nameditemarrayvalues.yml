@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents an object containing values and types of a named item.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.NamedItemArrayValues
     fullName: excel.Excel.NamedItemArrayValues
     langs:
@@ -54,7 +54,7 @@ items:
     summary: |-
       Represents the types for each item in the named item array
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: types
     fullName: excel.Excel.NamedItemArrayValues.types
     langs:
@@ -69,7 +69,7 @@ items:
     summary: |-
       Represents the values of each item in the named item array.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: excel.Excel.NamedItemArrayValues.values
     langs:

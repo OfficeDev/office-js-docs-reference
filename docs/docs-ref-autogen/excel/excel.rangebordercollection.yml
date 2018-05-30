@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the border objects that make up the range border.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeBorderCollection
     fullName: excel.Excel.RangeBorderCollection
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Number of border objects in the collection. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: excel.Excel.RangeBorderCollection.count
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Gets a border object using its name
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(index)
     fullName: excel.Excel.RangeBorderCollection.getItem
     langs:
@@ -74,15 +74,14 @@ items:
                   console.log(border.style);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
 
       ```javascript
-
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
@@ -94,17 +93,17 @@ items:
                   console.log(border.sideIndex);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.RangeBorderCollection.getItemAt
     summary: |-
       Gets a border object using its index
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: excel.Excel.RangeBorderCollection.getItemAt
     langs:
@@ -127,7 +126,6 @@ items:
       #### Examples
 
       ```javascript
-
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
@@ -136,13 +134,13 @@ items:
           var border = range.format.borders.getItemAt(0);
           border.load('sideIndex');
           return ctx.sync().then(function() {
-                  console.log(border.sideIndex);
+              console.log(border.sideIndex);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.RangeBorderCollection.items
@@ -179,6 +177,53 @@ items:
           description: ''
           type:
             - Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+          var range = worksheet.getRange(rangeAddress);
+          var borders = range.format.borders;
+          border.load('items');
+          return ctx.sync().then(function() {
+              console.log(borders.count);
+              for (var i = 0; i < borders.items.length; i++)
+              {
+                  console.log(borders.items[i].sideIndex);
+              }
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "A1:F8";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          range.format.borders.getItem('InsideHorizontal').style = 'Continuous';
+          range.format.borders.getItem('InsideVertical').style = 'Continuous';
+          range.format.borders.getItem('EdgeBottom').style = 'Continuous';
+          range.format.borders.getItem('EdgeLeft').style = 'Continuous';
+          range.format.borders.getItem('EdgeRight').style = 'Continuous';
+          range.format.borders.getItem('EdgeTop').style = 'Continuous';
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.RangeBorderCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.RangeBorderCollection.toJSON

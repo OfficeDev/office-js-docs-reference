@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the direction for a selection.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalFormatDirection
     fullName: excel.Excel.ConditionalFormatDirection
     langs:

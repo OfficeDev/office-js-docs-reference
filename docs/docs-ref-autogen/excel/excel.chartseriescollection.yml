@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of chart series.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartSeriesCollection
     fullName: excel.Excel.ChartSeriesCollection
     langs:
@@ -27,7 +27,7 @@ items:
       sizes for it (depending on chart type).
 
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(name, index)'
     fullName: excel.Excel.ChartSeriesCollection.add
     langs:
@@ -52,7 +52,7 @@ items:
     summary: |-
       Returns the number of series in the collection. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: excel.Excel.ChartSeriesCollection.count
     langs:
@@ -67,7 +67,7 @@ items:
     summary: |-
       Returns the number of series in the collection.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: excel.Excel.ChartSeriesCollection.getCount
     langs:
@@ -83,7 +83,7 @@ items:
     summary: |-
       Retrieves a series based on its position in the collection.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: excel.Excel.ChartSeriesCollection.getItemAt
     langs:
@@ -113,10 +113,10 @@ items:
               console.log(seriesCollection.items[0].name);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.ChartSeriesCollection.items
@@ -153,6 +153,43 @@ items:
           description: ''
           type:
             - Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+          seriesCollection.load('items');
+          return ctx.sync().then(function() {
+              for (var i = 0; i < seriesCollection.items.length; i++)
+              {
+                  console.log(seriesCollection.items[i].name);
+              }
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+          seriesCollection.load('count');
+          return ctx.sync().then(function() {
+              console.log("series: Count= " + seriesCollection.count);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.ChartSeriesCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartSeriesCollection.toJSON

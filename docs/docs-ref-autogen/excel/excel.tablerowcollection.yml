@@ -10,7 +10,7 @@ items:
       are added, a table row will continue to point at the index for which it was created.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableRowCollection
     fullName: excel.Excel.TableRowCollection
     langs:
@@ -38,7 +38,7 @@ items:
 
 
       \[ [API set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple
-      rows.](http://bing.com?type=excel) \]
+      rows.](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(index, values)'
     fullName: excel.Excel.TableRowCollection.add
     langs:
@@ -78,17 +78,17 @@ items:
               console.log(row.index);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.TableRowCollection.count
     summary: |-
       Returns the number of rows in the table. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: excel.Excel.TableRowCollection.count
     langs:
@@ -103,7 +103,7 @@ items:
     summary: |-
       Gets the number of rows in the table.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: excel.Excel.TableRowCollection.getCount
     langs:
@@ -125,7 +125,7 @@ items:
       are added, a table row will continue to point at the index for which it was created.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: excel.Excel.TableRowCollection.getItemAt
     langs:
@@ -155,10 +155,10 @@ items:
                   console.log(tablerow.name);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.TableRowCollection.items
@@ -195,6 +195,29 @@ items:
           description: ''
           type:
             - Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tablerows = ctx.workbook.tables.getItem('Table1').rows;
+          tablerows.load('items');
+          return ctx.sync().then(function() {
+              console.log("tablerows Count: " + tablerows.count);
+              for (var i = 0; i < tablerows.items.length; i++)
+              {
+                  console.log(tablerows.items[i].index);
+              }
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.TableRowCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.TableRowCollection.toJSON

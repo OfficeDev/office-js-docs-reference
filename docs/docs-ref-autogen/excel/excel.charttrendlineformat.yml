@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the format properties for chart trendline.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTrendlineFormat
     fullName: excel.Excel.ChartTrendlineFormat
     langs:
@@ -22,7 +22,7 @@ items:
     summary: |-
       Represents chart line formatting.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: line
     fullName: excel.Excel.ChartTrendlineFormat.line
     langs:

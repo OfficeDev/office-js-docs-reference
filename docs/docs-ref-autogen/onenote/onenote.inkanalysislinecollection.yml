@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of InkAnalysisLine objects.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.InkAnalysisLineCollection
     fullName: onenote.OneNote.InkAnalysisLineCollection
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Returns the number of InkAnalysisLines in the page. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: count
     fullName: onenote.OneNote.InkAnalysisLineCollection.count
     langs:
@@ -41,7 +41,7 @@ items:
     summary: |-
       Gets a InkAnalysisLine object by ID or by its index in the collection. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
     fullName: onenote.OneNote.InkAnalysisLineCollection.getItem
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Gets a InkAnalysisLine on its position in the collection.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: onenote.OneNote.InkAnalysisLineCollection.getItemAt
     langs:

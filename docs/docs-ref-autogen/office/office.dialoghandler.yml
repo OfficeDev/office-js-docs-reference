@@ -14,7 +14,12 @@ items:
       - office.Office.DialogHandler.addEventHandler
       - office.Office.DialogHandler.close
   - uid: office.Office.DialogHandler.addEventHandler
-    summary: Adds an event handler for DialogMessageReceived or DialogEventReceived
+    summary: |-
+      Registers an event handler. The two supported events are:
+
+      - DialogMessageReceived. Triggered when the dialog box sends a message to its parent.
+
+      - DialogEventReceived. Triggered when the dialog box has been closed or otherwise unloaded.
     name: 'addEventHandler(eventType, handler)'
     fullName: office.Office.DialogHandler.addEventHandler
     langs:

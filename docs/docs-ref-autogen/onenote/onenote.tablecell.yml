@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a cell in a OneNote table.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.TableCell
     fullName: onenote.OneNote.TableCell
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       Adds the specified HTML to the bottom of the TableCell.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: appendHtml(html)
     fullName: onenote.OneNote.TableCell.appendHtml
     langs:
@@ -94,7 +94,7 @@ items:
     summary: |-
       Adds the specified image to table cell.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: 'appendImage(base64EncodedImage, width, height)'
     fullName: onenote.OneNote.TableCell.appendImage
     langs:
@@ -123,7 +123,7 @@ items:
     summary: |-
       Adds the specified text to table cell.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: appendRichText(paragraphText)
     fullName: onenote.OneNote.TableCell.appendRichText
     langs:
@@ -181,7 +181,7 @@ items:
     summary: |-
       Adds a table with the specified number of rows and columns to table cell.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: 'appendTable(rowCount, columnCount, values)'
     fullName: onenote.OneNote.TableCell.appendTable
     langs:
@@ -210,7 +210,7 @@ items:
     summary: |-
       Gets the index of the cell in its row. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: cellIndex
     fullName: onenote.OneNote.TableCell.cellIndex
     langs:
@@ -225,7 +225,7 @@ items:
     summary: |-
       Clears the contents of the cell.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: clear()
     fullName: onenote.OneNote.TableCell.clear
     langs:
@@ -241,7 +241,7 @@ items:
     summary: |-
       Gets the ID of the cell. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.TableCell.id
     langs:
@@ -272,11 +272,99 @@ items:
           description: ''
           type:
             - OneNote.Interfaces.TableCellLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function(ctx) {
+          var app = ctx.application;
+          var outline = app.getActiveOutline();
+          
+          // Queue a command to load outline.paragraphs and their types.
+          ctx.load(outline, "paragraphs, paragraphs/type");
+          
+          // Run the queued commands, and return a promise to indicate task completion.
+          return ctx.sync().then(function () {
+              var paragraphs = outline.paragraphs;
+              
+              // for each table, get a table cell at row one and column two.
+              for (var i = 0; i < paragraphs.items.length; i++) {
+                  var paragraph = paragraphs.items[i];
+                  if (paragraph.type == "Table") {
+                      var table = paragraph.table;
+                      var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
+                      
+                      // Queue a command to load the table cell.
+                      ctx.load(cell);
+                      ctx.sync().then(function() {
+                          console.log("Cell Id: " + cell.id);
+                          console.log("Cell Index: " + cell.cellIndex);
+                          console.log("Cell's Row Index: " + cell.rowIndex);
+                      });
+                  }
+              }
+              return ctx.sync();
+          })
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      ParentTable, ParentRow, Paragraphs
+      OneNote.run(function(ctx) {
+          var app = ctx.application;
+          var outline = app.getActiveOutline();
+          
+          // Queue a command to load outline.paragraphs and their types.
+          ctx.load(outline, "paragraphs, paragraphs/type");
+          
+          // Run the queued commands, and return a promise to indicate task completion.
+          return ctx.sync().then(function () {
+              var paragraphs = outline.paragraphs;
+              
+              // for each table, get a table cell at row one and column two.
+              for (var i = 0; i < paragraphs.items.length; i++) {
+                  var paragraph = paragraphs.items[i];
+                  if (paragraph.type == "Table") {
+                      var table = paragraph.table;
+                      var cell = table.getCell(1 /*Row Index*/, 2 /*Column Index*/);
+                      
+                      // Queue a command to load parentTable, parentRow and paragraphs of the table cell.
+                      ctx.load(cell, "parentTable, parentRow, paragraphs");
+                      
+                      ctx.sync().then(function() {
+                          console.log("Parent Table Id: " + cell.parentTable.id);
+                          console.log("Parent Row Id: " + cell.parentRow.id);
+                          var paragraphs = cell.paragraphs;
+                          
+                          for (var i = 0; i < paragraphs.items.length; i++) {
+                              console.log("Paragraph Id: " + paragraphs.items[i].id);
+                          }
+                      });
+                  }
+              }
+              return ctx.sync();
+          })
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.TableCell.paragraphs
     summary: |-
       Gets the collection of Paragraph objects in the TableCell. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraphs
     fullName: onenote.OneNote.TableCell.paragraphs
     langs:
@@ -291,7 +379,7 @@ items:
     summary: |-
       Gets the parent row of the cell. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: parentRow
     fullName: onenote.OneNote.TableCell.parentRow
     langs:
@@ -306,7 +394,7 @@ items:
     summary: |-
       Gets the index of the cell's row in the table. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: rowIndex
     fullName: onenote.OneNote.TableCell.rowIndex
     langs:
@@ -352,7 +440,7 @@ items:
     summary: |-
       Gets and sets the shading color of the cell
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: shadingColor
     fullName: onenote.OneNote.TableCell.shadingColor
     langs:

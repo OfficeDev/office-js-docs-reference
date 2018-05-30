@@ -1,6 +1,8 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.CustomXmlPrefixMappings
+    summary: Represents a collection of CustomXmlPart objects.
+    remarks: 'Hosts: Word'
     name: Office.CustomXmlPrefixMappings
     fullName: office.Office.CustomXmlPrefixMappings
     langs:
@@ -12,7 +14,13 @@ items:
       - office.Office.CustomXmlPrefixMappings.getNamespaceAsync
       - office.Office.CustomXmlPrefixMappings.getPrefixAsync
   - uid: office.Office.CustomXmlPrefixMappings.addNamespaceAsync
-    summary: Adds a namespace.
+    summary: Asynchronously adds a prefix to namespace mapping to use when querying an item.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+
+      If no namespace is assigned to the requested prefix, the method returns an empty string ("").
     name: 'addNamespaceAsync(prefix, ns, options, callback)'
     fullName: office.Office.CustomXmlPrefixMappings.addNamespaceAsync
     langs:
@@ -26,23 +34,34 @@ items:
         description: ''
       parameters:
         - id: prefix
-          description: The namespace prefix
+          description: Specifies the prefix to add to the prefix mapping list. Required.
           type:
             - string
         - id: ns
-          description: The namespace URI
+          description: Specifies the namespace URI to assign to the newly added prefix. Required.
           type:
             - string
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPrefixMappings.getNamespaceAsync
-    summary: Gets a namespace with the specified prefix
+    summary: Asynchronously gets the namespace mapped to the specified prefix.
+    remarks: >-
+      Hosts: Word
+
+
+      Available in Requirement set: CustomXmlParts
+
+
+      If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix
+      except when the prefix is one added or used by the data store internally, in which case it will return an error.
     name: 'getNamespaceAsync(prefix, options, callback)'
     fullName: office.Office.CustomXmlPrefixMappings.getNamespaceAsync
     langs:
@@ -56,19 +75,31 @@ items:
         description: ''
       parameters:
         - id: prefix
-          description: The namespace prefix
+          description: TSpecifies the prefix to get the namespace for. Required.
           type:
             - string
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPrefixMappings.getPrefixAsync
-    summary: Gets a prefix for the specified URI
+    summary: Asynchronously gets the prefix for the specified namespace.
+    remarks: >-
+      Hosts: Word
+
+
+      Available in Requirement set: CustomXmlParts
+
+
+      If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are
+      multiple prefixes specified in the namespace manager, the method returns the first prefix that matches the
+      supplied namespace.
     name: 'getPrefixAsync(ns, options, callback)'
     fullName: office.Office.CustomXmlPrefixMappings.getPrefixAsync
     langs:
@@ -82,14 +113,16 @@ items:
         description: ''
       parameters:
         - id: ns
-          description: The namespace URI
+          description: Specifies the namespace to get the prefix for. Required.
           type:
             - string
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'

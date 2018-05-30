@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a RichText object in a Paragraph.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.RichText
     fullName: onenote.OneNote.RichText
     langs:
@@ -27,7 +27,7 @@ items:
     summary: |-
       Get the HTML of the rich text
 
-      \[ [API set: OneNoteApi](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: getHtml()
     fullName: onenote.OneNote.RichText.getHtml
     langs:
@@ -43,7 +43,7 @@ items:
     summary: |-
       Gets the ID of the RichText object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.RichText.id
     langs:
@@ -58,7 +58,7 @@ items:
     summary: |-
       The language id of the text. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: languageId
     fullName: onenote.OneNote.RichText.languageId
     langs:
@@ -89,11 +89,73 @@ items:
           description: ''
           type:
             - OneNote.Interfaces.RichTextLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function (context) {
+
+          // Get the collection of pageContent items from the page.
+          var pageContents = context.application.getActivePage().contents;
+
+          // Get the first PageContent on the page, and then get its outline's paragraphs.
+          var outlinePageContents = ;
+          var paragraphs = ;
+          var richTextParagraphs = ;
+          // Queue a command to load the id and type of each page content in the outline.
+          pageContents.load("id,type");
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .then(function () {
+                  // Load all page contents of type Outline
+                  $.each(pageContents.items, function(index, pageContent) {
+                      if(pageContent.type == 'Outline')
+                      {
+                          pageContent.load('outline,outline/paragraphs,outline/paragraphs/type');
+                          outlinePageContents.push(pageContent);
+                      }
+                  });
+                  return context.sync();
+              })
+              .then(function () {
+                  // Load all rich text paragraphs across outlines
+                  $.each(outlinePageContents, function(index, outlinePageContent) {
+                      var outline = outlinePageContent.outline;
+                      paragraphs = paragraphs.concat(outline.paragraphs.items);
+                  });
+                  $.each(paragraphs, function(index, paragraph) {
+                      if(paragraph.type == 'RichText')
+                      {
+                          richTextParagraphs.push(paragraph);
+                          paragraph.load("id,richText/text");
+                      }
+                  });
+                  return context.sync();
+              })
+              .then(function () {
+                  // Display all rich text paragraphs to the console
+                  $.each(richTextParagraphs, function(index, richTextParagraph) {
+                      var richText = richTextParagraph.richText;
+                      console.log("Paragraph found with richtext content : " + richText.text + " and richtext id : " + richText.id);
+                  });
+                  return context.sync();
+              });
+      });
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      }); 
+      ```
   - uid: onenote.OneNote.RichText.paragraph
     summary: |-
       Gets the Paragraph object that contains the RichText object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
     fullName: onenote.OneNote.RichText.paragraph
     langs:
@@ -108,7 +170,7 @@ items:
     summary: |-
       Gets the text content of the RichText object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: text
     fullName: onenote.OneNote.RichText.text
     langs:

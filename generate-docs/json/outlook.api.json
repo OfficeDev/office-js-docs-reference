@@ -19,7 +19,8 @@
           "deprecatedMessage": [],
           "summary": [],
           "remarks": [],
-          "isBeta": false
+          "isBeta": false,
+          "isSealed": false
         },
         "AppointmentCompose": {
           "kind": "interface",
@@ -30,6 +31,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "end": {
               "kind": "property",
@@ -41,7 +43,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "location": {
               "kind": "property",
@@ -53,7 +58,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "optionalAttendees": {
               "kind": "property",
@@ -65,7 +73,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "requiredAttendees": {
               "kind": "property",
@@ -77,7 +88,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "start": {
               "kind": "property",
@@ -89,7 +103,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -102,6 +119,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "body": {
               "kind": "property",
@@ -113,7 +131,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "end": {
               "kind": "property",
@@ -125,7 +146,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "location": {
               "kind": "property",
@@ -137,7 +161,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "optionalAttendees": {
               "kind": "property",
@@ -149,7 +176,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "requiredAttendees": {
               "kind": "property",
@@ -161,7 +191,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "resources": {
               "kind": "property",
@@ -173,7 +206,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "start": {
               "kind": "property",
@@ -185,7 +221,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "subject": {
               "kind": "property",
@@ -197,7 +236,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -210,6 +252,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "end": {
               "kind": "property",
@@ -221,7 +264,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "location": {
               "kind": "property",
@@ -233,7 +279,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "optionalAttendees": {
               "kind": "property",
@@ -245,7 +294,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "organizer": {
               "kind": "property",
@@ -257,7 +309,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "requiredAttendees": {
               "kind": "property",
@@ -269,7 +324,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "resources": {
               "kind": "property",
@@ -281,7 +339,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "start": {
               "kind": "property",
@@ -293,7 +354,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -306,6 +370,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "asyncContext": {
               "kind": "property",
@@ -317,7 +382,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -330,6 +398,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "attachmentType": {
               "kind": "property",
@@ -341,7 +410,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "contentType": {
               "kind": "property",
@@ -353,7 +425,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "id": {
               "kind": "property",
@@ -365,7 +440,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "isInline": {
               "kind": "property",
@@ -377,7 +455,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "name": {
               "kind": "property",
@@ -389,7 +470,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "size": {
               "kind": "property",
@@ -401,7 +485,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -414,6 +501,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getAsync": {
               "kind": "method",
@@ -459,7 +547,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getTypeAsync": {
               "kind": "method",
@@ -490,7 +581,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "prependAsync": {
               "kind": "method",
@@ -524,7 +618,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setAsync": {
               "kind": "method",
@@ -558,7 +655,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setSelectedDataAsync": {
               "kind": "method",
@@ -592,7 +692,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -605,6 +708,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "coercionType": {
               "kind": "property",
@@ -616,7 +720,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -629,6 +736,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "addresses": {
               "kind": "property",
@@ -640,7 +748,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "businessName": {
               "kind": "property",
@@ -652,7 +763,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "emailAddresses": {
               "kind": "property",
@@ -664,7 +778,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "personName": {
               "kind": "property",
@@ -676,7 +793,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "phoneNumbers": {
               "kind": "property",
@@ -688,7 +808,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "urls": {
               "kind": "property",
@@ -700,7 +823,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -710,9 +836,20 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
-          "remarks": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Represents the runtime environment of the add-in and provides access to key objects of the API."
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Hosts: Access, Excel, Outlook, PowerPoint, Project, Word"
+            }
+          ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "mailbox": {
               "kind": "property",
@@ -724,7 +861,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "roamingSettings": {
               "kind": "property",
@@ -734,9 +874,17 @@
               "isStatic": false,
               "type": "RoamingSettings",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets an object that represents the saved custom settings of the add-in."
+                }
+              ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -749,6 +897,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "get": {
               "kind": "method",
@@ -782,7 +931,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "remove": {
               "kind": "method",
@@ -816,7 +968,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "saveAsync": {
               "kind": "method",
@@ -862,7 +1017,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -908,7 +1066,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -921,6 +1082,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "hostName": {
               "kind": "property",
@@ -932,7 +1094,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "hostVersion": {
               "kind": "property",
@@ -944,7 +1109,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "OWAView": {
               "kind": "property",
@@ -956,7 +1124,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -969,6 +1140,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "appointmentResponse": {
               "kind": "property",
@@ -980,7 +1152,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "displayName": {
               "kind": "property",
@@ -992,7 +1167,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "emailAddress": {
               "kind": "property",
@@ -1004,7 +1182,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "recipientType": {
               "kind": "property",
@@ -1016,7 +1197,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -1029,6 +1213,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "displayName": {
               "kind": "property",
@@ -1040,7 +1225,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "emailAddress": {
               "kind": "property",
@@ -1052,7 +1240,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -1065,6 +1256,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "addresses": {
               "kind": "property",
@@ -1076,7 +1268,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "contacts": {
               "kind": "property",
@@ -1088,7 +1283,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "emailAddresses": {
               "kind": "property",
@@ -1100,7 +1298,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "meetingSuggestions": {
               "kind": "property",
@@ -1112,7 +1313,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "phoneNumbers": {
               "kind": "property",
@@ -1124,7 +1328,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "taskSuggestions": {
               "kind": "property",
@@ -1136,7 +1343,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "urls": {
               "kind": "property",
@@ -1148,7 +1358,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -1161,24 +1374,8 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
-            "___BeSureToCastThisObject__": {
-              "kind": "property",
-              "signature": "___BeSureToCastThisObject__: void;",
-              "isOptional": false,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "void",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "You can cast item with `(Item as Office.[CAST_TYPE])` where CAST_TYPE is one of the following: ItemRead, ItemCompose, Message, MessageRead, MessageCompose, Appointment, AppointmentRead, AppointmentCompose"
-                }
-              ],
-              "remarks": [],
-              "isBeta": false
-            },
             "body": {
               "kind": "property",
               "signature": "body: Body;",
@@ -1189,7 +1386,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "dateTimeCreated": {
               "kind": "property",
@@ -1201,7 +1401,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "itemType": {
               "kind": "property",
@@ -1213,7 +1416,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "loadCustomPropertiesAsync": {
               "kind": "method",
@@ -1259,7 +1465,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "notificationMessages": {
               "kind": "property",
@@ -1271,7 +1480,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -1284,6 +1496,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "addFileAttachmentAsync": {
               "kind": "method",
@@ -1329,7 +1542,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "addItemAttachmentAsync": {
               "kind": "method",
@@ -1375,7 +1591,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "close": {
               "kind": "method",
@@ -1410,7 +1629,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getSelectedDataAsync": {
               "kind": "method",
@@ -1453,7 +1675,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "removeAttachmentAsync": {
               "kind": "method",
@@ -1487,7 +1712,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "saveAsync": {
               "kind": "method",
@@ -1515,7 +1743,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setSelectedDataAsync": {
               "kind": "method",
@@ -1544,7 +1775,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "subject": {
               "kind": "property",
@@ -1556,7 +1790,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -1569,6 +1806,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "attachments": {
               "kind": "property",
@@ -1580,7 +1818,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "displayReplyAllForm": {
               "kind": "method",
@@ -1614,7 +1855,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "displayReplyForm": {
               "kind": "method",
@@ -1648,7 +1892,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getEntities": {
               "kind": "method",
@@ -1669,7 +1916,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getEntitiesByType": {
               "kind": "method",
@@ -1703,7 +1953,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getFilteredEntitiesByName": {
               "kind": "method",
@@ -1737,7 +1990,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getRegExMatches": {
               "kind": "method",
@@ -1758,7 +2014,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getRegExMatchesByName": {
               "kind": "method",
@@ -1787,7 +2046,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getSelectedEntities": {
               "kind": "method",
@@ -1815,7 +2077,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getSelectedRegExMatches": {
               "kind": "method",
@@ -1843,7 +2108,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "itemClass": {
               "kind": "property",
@@ -1855,7 +2123,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "itemId": {
               "kind": "property",
@@ -1867,7 +2138,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "normalizedSubject": {
               "kind": "property",
@@ -1879,7 +2153,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "subject": {
               "kind": "property",
@@ -1891,7 +2168,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -1904,6 +2184,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "date": {
               "kind": "property",
@@ -1915,7 +2196,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "hours": {
               "kind": "property",
@@ -1927,7 +2211,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "milliseconds": {
               "kind": "property",
@@ -1939,7 +2226,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "minutes": {
               "kind": "property",
@@ -1951,7 +2241,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "month": {
               "kind": "property",
@@ -1963,7 +2256,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "seconds": {
               "kind": "property",
@@ -1975,7 +2271,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "timezoneOffset": {
               "kind": "property",
@@ -1987,7 +2286,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "year": {
               "kind": "property",
@@ -1999,7 +2301,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -2012,6 +2317,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getAsync": {
               "kind": "method",
@@ -2045,7 +2351,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setAsync": {
               "kind": "method",
@@ -2074,7 +2383,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -2087,6 +2399,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "addHandlerAsync": {
               "kind": "method",
@@ -2156,7 +2469,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "convertToEwsId": {
               "kind": "method",
@@ -2202,7 +2518,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "convertToLocalClientTime": {
               "kind": "method",
@@ -2236,7 +2555,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "convertToRestId": {
               "kind": "method",
@@ -2282,7 +2604,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "convertToUtcClientTime": {
               "kind": "method",
@@ -2316,7 +2641,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "diagnostics": {
               "kind": "property",
@@ -2328,7 +2656,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "displayAppointmentForm": {
               "kind": "method",
@@ -2362,7 +2693,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "displayMessageForm": {
               "kind": "method",
@@ -2396,7 +2730,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "displayNewAppointmentForm": {
               "kind": "method",
@@ -2430,7 +2767,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "displayNewMessageForm": {
               "kind": "method",
@@ -2464,7 +2804,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "ewsUrl": {
               "kind": "property",
@@ -2476,7 +2819,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getCallbackTokenAsync": {
               "kind": "method",
@@ -2522,7 +2868,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getUserIdentityTokenAsync": {
               "kind": "method",
@@ -2568,19 +2917,30 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "item": {
               "kind": "property",
-              "signature": "item: Item;",
+              "signature": "item: Item & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Item",
+              "type": "Item & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The mailbox item. Depending on the context in which the add-in opened, the item may be of any number of types. If you want to see IntelliSense for only a specific type, you should cast this item to one of the following: `ItemCompose`, `ItemRead`, `MessageCompose`, `MessageRead`, `AppointmentCompose`, `AppointmentRead`"
+                }
+              ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "makeEwsRequestAsync": {
               "kind": "method",
@@ -2638,7 +2998,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "userProfile": {
               "kind": "property",
@@ -2650,7 +3013,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3058,6 +3424,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "attendees": {
               "kind": "property",
@@ -3069,7 +3436,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "end": {
               "kind": "property",
@@ -3081,7 +3451,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "location": {
               "kind": "property",
@@ -3093,7 +3466,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "meetingstring": {
               "kind": "property",
@@ -3105,7 +3481,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "start": {
               "kind": "property",
@@ -3117,7 +3496,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "subject": {
               "kind": "property",
@@ -3129,7 +3511,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3142,6 +3527,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "conversationId": {
               "kind": "property",
@@ -3153,7 +3539,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3166,6 +3555,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "bcc": {
               "kind": "property",
@@ -3177,7 +3567,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "cc": {
               "kind": "property",
@@ -3189,7 +3582,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "to": {
               "kind": "property",
@@ -3201,7 +3597,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3214,6 +3613,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "cc": {
               "kind": "property",
@@ -3225,7 +3625,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "from": {
               "kind": "property",
@@ -3237,7 +3640,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "internetMessageId": {
               "kind": "property",
@@ -3249,7 +3655,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "sender": {
               "kind": "property",
@@ -3261,7 +3670,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "to": {
               "kind": "property",
@@ -3273,7 +3685,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3286,6 +3701,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "icon": {
               "kind": "property",
@@ -3297,7 +3713,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "key": {
               "kind": "property",
@@ -3309,7 +3728,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "message": {
               "kind": "property",
@@ -3321,7 +3743,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "persistent": {
               "kind": "property",
@@ -3333,7 +3758,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "type": {
               "kind": "property",
@@ -3345,7 +3773,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3358,6 +3789,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "addAsync": {
               "kind": "method",
@@ -3403,7 +3835,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getAllAsync": {
               "kind": "method",
@@ -3437,7 +3872,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "removeAsync": {
               "kind": "method",
@@ -3471,7 +3909,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "replaceAsync": {
               "kind": "method",
@@ -3517,7 +3958,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3530,6 +3974,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "originalPhoneString": {
               "kind": "property",
@@ -3541,7 +3986,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "phoneString": {
               "kind": "property",
@@ -3553,7 +4001,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "type": {
               "kind": "property",
@@ -3565,7 +4016,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3578,6 +4032,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "addAsync": {
               "kind": "method",
@@ -3611,7 +4066,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getAsync": {
               "kind": "method",
@@ -3645,7 +4103,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setAsync": {
               "kind": "method",
@@ -3679,7 +4140,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3692,6 +4156,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "itemId": {
               "kind": "property",
@@ -3703,7 +4168,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "name": {
               "kind": "property",
@@ -3715,7 +4183,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "type": {
               "kind": "property",
@@ -3727,7 +4198,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "url": {
               "kind": "property",
@@ -3739,7 +4213,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3752,6 +4229,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "attachments": {
               "kind": "property",
@@ -3763,7 +4241,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "callback": {
               "kind": "property",
@@ -3775,7 +4256,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "htmlBody": {
               "kind": "property",
@@ -3787,7 +4271,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3800,6 +4287,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "get": {
               "kind": "method",
@@ -3833,7 +4321,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "remove": {
               "kind": "method",
@@ -3867,7 +4358,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "saveAsync": {
               "kind": "method",
@@ -3901,7 +4395,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -3947,7 +4444,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3995,6 +4495,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getAsync": {
               "kind": "method",
@@ -4028,7 +4529,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setAsync": {
               "kind": "method",
@@ -4062,7 +4566,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -4075,6 +4582,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "assignees": {
               "kind": "property",
@@ -4086,7 +4594,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "taskString": {
               "kind": "property",
@@ -4098,7 +4609,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -4111,6 +4625,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getAsync": {
               "kind": "method",
@@ -4144,7 +4659,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setAsync": {
               "kind": "method",
@@ -4178,7 +4696,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -4191,6 +4712,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "displayName": {
               "kind": "property",
@@ -4202,7 +4724,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "emailAddress": {
               "kind": "property",
@@ -4214,7 +4739,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "timeZone": {
               "kind": "property",
@@ -4226,7 +4754,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         }

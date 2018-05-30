@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a chart object in a workbook.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Chart
     fullName: excel.Excel.Chart
     langs:
@@ -40,7 +40,7 @@ items:
     summary: |-
       Represents chart axes.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: axes
     fullName: excel.Excel.Chart.axes
     langs:
@@ -55,7 +55,7 @@ items:
     summary: |-
       Represents the type of the chart. See Excel.ChartType for details.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: chartType
     fullName: excel.Excel.Chart.chartType
     langs:
@@ -97,7 +97,7 @@ items:
     summary: |-
       Represents the datalabels on the chart.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: dataLabels
     fullName: excel.Excel.Chart.dataLabels
     langs:
@@ -112,7 +112,7 @@ items:
     summary: |-
       Deletes the chart object.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: excel.Excel.Chart.delete
     langs:
@@ -135,17 +135,17 @@ items:
           chart.delete();
           return ctx.sync(); 
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Chart.format
     summary: |-
       Encapsulates the format properties for the chart area. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.Chart.format
     langs:
@@ -162,7 +162,7 @@ items:
       is preserved as part of the resizing.
 
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: 'getImage(width, height, fittingMode)'
     fullName: excel.Excel.Chart.getImage
     langs:
@@ -202,17 +202,17 @@ items:
           var image = chart.getImage();
           return ctx.sync(); 
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Chart.height
     summary: |-
       Represents the height, in points, of the chart object.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: excel.Excel.Chart.height
     langs:
@@ -227,7 +227,7 @@ items:
     summary: |-
       The unique id of chart. Read-only.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: excel.Excel.Chart.id
     langs:
@@ -242,7 +242,7 @@ items:
     summary: |-
       The distance, in points, from the left side of the chart to the worksheet origin.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: excel.Excel.Chart.left
     langs:
@@ -257,7 +257,7 @@ items:
     summary: |-
       Represents the legend for the chart.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: legend
     fullName: excel.Excel.Chart.legend
     langs:
@@ -288,11 +288,64 @@ items:
           description: ''
           type:
             - Excel.Interfaces.ChartLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          chart.load('name');
+          return ctx.sync().then(function() {
+                  console.log(chart.name);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
+          chart.name="New Name";
+          chart.top = 100;
+          chart.left = 100;
+          chart.height = 200;
+          chart.width = 200;
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");
+          chart.name="New Name";    
+          chart.top = 100;
+          chart.left = 100;
+          chart.height =200;
+          chart.width =200;
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.Chart.name
     summary: |-
       Represents the name of a chart object.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.Chart.name
     langs:
@@ -307,7 +360,7 @@ items:
     summary: |-
       Represents either a single series or collection of series in the chart.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: series
     fullName: excel.Excel.Chart.series
     langs:
@@ -344,7 +397,7 @@ items:
     summary: |-
       Resets the source data for the chart.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: 'setData(sourceData, seriesBy)'
     fullName: excel.Excel.Chart.setData
     langs:
@@ -379,17 +432,17 @@ items:
           chart.setData(sourceData, "Columns");
           return ctx.sync(); 
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Chart.setPosition
     summary: |-
       Positions the chart relative to cells on the worksheet.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: 'setPosition(startCell, endCell)'
     fullName: excel.Excel.Chart.setPosition
     langs:
@@ -431,17 +484,17 @@ items:
           chart.setPosition("C2", null);
           return ctx.sync(); 
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Chart.showAllFieldButtons
     summary: |-
       Represents whether to display all field buttons on a PivotChart.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: showAllFieldButtons
     fullName: excel.Excel.Chart.showAllFieldButtons
     langs:
@@ -456,7 +509,7 @@ items:
     summary: |-
       Represents the title of the specified chart, including the text, visibility, position and formating of the title.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: title
     fullName: excel.Excel.Chart.title
     langs:
@@ -485,7 +538,7 @@ items:
       top of the chart area (on a chart).
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: excel.Excel.Chart.top
     langs:
@@ -500,7 +553,7 @@ items:
     summary: |-
       Represents the width, in points, of the chart object.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: excel.Excel.Chart.width
     langs:
@@ -515,7 +568,7 @@ items:
     summary: |-
       The worksheet containing the current chart.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
     fullName: excel.Excel.Chart.worksheet
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the ShapeDataItem.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: Visio.ShapeDataItem
     fullName: visio.Visio.ShapeDataItem
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       A string that specifies the format of the shape data item.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: format
     fullName: visio.Visio.ShapeDataItem.format
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       A string that specifies the formatted value of the shape data item.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: formattedValue
     fullName: visio.Visio.ShapeDataItem.formattedValue
     langs:
@@ -54,7 +54,7 @@ items:
     summary: |-
       A string that specifies the label of the shape data item.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: label
     fullName: visio.Visio.ShapeDataItem.label
     langs:
@@ -85,6 +85,28 @@ items:
           description: ''
           type:
             - Visio.Interfaces.ShapeDataItemLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var activePage = ctx.document.getActivePage();
+          var shape = activePage.shapes.getItem(0);
+          var shapeDataItem = shape.shapeDataItems.getItem(0);
+          shapeDataItem.load();
+              return ctx.sync().then(function() {
+                  console.log(shapeDataItem.label);
+                  console.log(shapeDataItem.value);
+              });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: visio.Visio.ShapeDataItem.toJSON
     name: toJSON()
     fullName: visio.Visio.ShapeDataItem.toJSON
@@ -101,7 +123,7 @@ items:
     summary: |-
       A string that specifies the value of the shape data item.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: value
     fullName: visio.Visio.ShapeDataItem.value
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a OneNote notebook. Notebooks contain section groups and sections.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Notebook
     fullName: onenote.OneNote.Notebook
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Adds a new section to the end of the notebook.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: addSection(name)
     fullName: onenote.OneNote.Notebook.addSection
     langs:
@@ -82,7 +82,7 @@ items:
     summary: |-
       Adds a new section group to the end of the notebook.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: addSectionGroup(name)
     fullName: onenote.OneNote.Notebook.addSectionGroup
     langs:
@@ -133,7 +133,7 @@ items:
     summary: |-
       The url of the site that this notebook is located. Read only
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: baseUrl
     fullName: onenote.OneNote.Notebook.baseUrl
     langs:
@@ -148,7 +148,7 @@ items:
     summary: |-
       The client url of the notebook. Read only
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: clientUrl
     fullName: onenote.OneNote.Notebook.clientUrl
     langs:
@@ -163,7 +163,7 @@ items:
     summary: |-
       Gets the REST API ID.
 
-      \[ [API set: OneNoteApi](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: getRestApiId()
     fullName: onenote.OneNote.Notebook.getRestApiId
     langs:
@@ -181,7 +181,6 @@ items:
       #### Examples
 
       ```javascript
-
       OneNote.run(function(ctx){
           // Get the current notebook.         
           var notebook = ctx.application.getActiveNotebook();
@@ -199,7 +198,7 @@ items:
     summary: |-
       Gets the ID of the notebook. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.Notebook.id
     langs:
@@ -230,11 +229,143 @@ items:
           description: ''
           type:
             - OneNote.Interfaces.NotebookLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function (context) {
+              
+          // Get the current notebook.
+          var notebook = context.application.getActiveNotebook();
+                  
+          // Queue a command to load the notebook. 
+          // For best performance, request specific properties.           
+          notebook.load('baseUrl');
+                  
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .then(function () {
+                  console.log("Base url: " + notebook.baseUrl);
+                  // This baseUrl should be used to talk to OneNote REST APIs according to https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/ (only required for SharePoint notebooks, will be null for OneDrive notebooks)
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      OneNote.run(function (context) {
+              
+          // Get the current notebook.
+          var notebook = context.application.getActiveNotebook();
+                  
+          // Queue a command to load the notebook. 
+          // For best performance, request specific properties.           
+          notebook.load('id');
+                  
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .then(function () {
+                  console.log("Notebook ID: " + notebook.id);
+                  
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      OneNote.run(function (context) {
+              
+          // Get the current notebook.
+          var notebook = context.application.getActiveNotebook();
+                  
+          // Queue a command to load the notebook. 
+          // For best performance, request specific properties.           
+          notebook.load('name');
+                  
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .then(function () {
+                  console.log("Notebook name: " + notebook.name);
+                  
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      OneNote.run(function (context) {
+
+          // Get the section groups in the notebook. 
+          var sectionGroups = context.application.getActiveNotebook().sectionGroups;
+
+          // Queue a command to load the sectionGroups. 
+          sectionGroups.load("name");
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .then(function() {
+                  $.each(sectionGroups.items, function(index, sectionGroup) {
+                      console.log("Section group name: " + sectionGroup.name);
+                  });
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      OneNote.run(function (context) {
+
+          // Gets the active notebook.
+          var notebook = context.application.getActiveNotebook();
+          
+          // Queue a command to get immediate child sections of the notebook. 
+          var childSections = notebook.sections;
+
+          // Queue a command to load the childSections. 
+          context.load(childSections);
+
+          // Run the queued commands, and return a promise to indicate task completion.
+          return context.sync()
+              .then(function() {
+                  $.each(childSections.items, function(index, childSection) {
+                      console.log("Immediate child section name: " + childSection.name);
+                  });            
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });   
+      ```
   - uid: onenote.OneNote.Notebook.name
     summary: |-
       Gets the name of the notebook. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: name
     fullName: onenote.OneNote.Notebook.name
     langs:
@@ -249,7 +380,7 @@ items:
     summary: |-
       The section groups in the notebook. Read only
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: sectionGroups
     fullName: onenote.OneNote.Notebook.sectionGroups
     langs:
@@ -264,7 +395,7 @@ items:
     summary: |-
       The the sections of the notebook. Read only
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: sections
     fullName: onenote.OneNote.Notebook.sections
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the background of a range object.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeFill
     fullName: excel.Excel.RangeFill
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Resets the range background.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: excel.Excel.RangeFill.clear
     langs:
@@ -50,10 +50,10 @@ items:
           rangeFill.clear();
           return ctx.sync(); 
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.RangeFill.color
@@ -62,7 +62,7 @@ items:
       color (e.g. "orange")
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: excel.Excel.RangeFill.color
     langs:
@@ -93,6 +93,44 @@ items:
           description: ''
           type:
             - Excel.Interfaces.RangeFillLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "F:G";
+          var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+          var range = worksheet.getRange(rangeAddress);
+          var rangeFill = range.format.fill;
+          rangeFill.load('color');
+          return ctx.sync().then(function() {
+              console.log(rangeFill.color);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "F:G";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          range.format.fill.color = '0000FF';
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.RangeFill.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'

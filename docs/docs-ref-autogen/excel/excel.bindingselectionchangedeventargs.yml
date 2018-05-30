@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides information about the binding that raised the SelectionChanged event.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.BindingSelectionChangedEventArgs
     fullName: excel.Excel.BindingSelectionChangedEventArgs
     langs:
@@ -18,10 +18,11 @@ items:
       - excel.Excel.BindingSelectionChangedEventArgs.startColumn
       - excel.Excel.BindingSelectionChangedEventArgs.startRow
   - uid: excel.Excel.BindingSelectionChangedEventArgs.binding
-    summary: |-
-      Gets the Binding object that represents the binding that raised the SelectionChanged event.
+    summary: Gets the Binding object that represents the binding that raised the SelectionChanged event.
+    remarks: |-
+      Hosts: Access, Excel, Word
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: binding
     fullName: excel.Excel.BindingSelectionChangedEventArgs.binding
     langs:
@@ -34,9 +35,17 @@ items:
           - Excel.Binding
   - uid: excel.Excel.BindingSelectionChangedEventArgs.columnCount
     summary: |-
-      Gets the number of columns selected.
+      Gets the number of columns selected. The number of columns selected. If a single cell is selected returns 1.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    remarks: >-
+      If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is
+      returned.
+
+
+      For Word, this property will work only for bindings of BindingType "table". If the binding is of type "matrix",
+      null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table
+      must be uniform for this property to work correctly.
     name: columnCount
     fullName: excel.Excel.BindingSelectionChangedEventArgs.columnCount
     langs:
@@ -49,9 +58,17 @@ items:
           - number
   - uid: excel.Excel.BindingSelectionChangedEventArgs.rowCount
     summary: |-
-      Gets the number of rows selected.
+      Gets the number of columns selected. The number of columns selected. If a single cell is selected returns 1.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    remarks: >-
+      If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is
+      returned.
+
+
+      For Word, this property will work only for bindings of BindingType "table". If the binding is of type "matrix",
+      null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table
+      must be uniform for this property to work correctly.
     name: rowCount
     fullName: excel.Excel.BindingSelectionChangedEventArgs.rowCount
     langs:
@@ -66,7 +83,7 @@ items:
     summary: |-
       Gets the index of the first column of the selection (zero-based).
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: startColumn
     fullName: excel.Excel.BindingSelectionChangedEventArgs.startColumn
     langs:
@@ -81,7 +98,7 @@ items:
     summary: |-
       Gets the index of the first row of the selection (zero-based).
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: startRow
     fullName: excel.Excel.BindingSelectionChangedEventArgs.startRow
     langs:

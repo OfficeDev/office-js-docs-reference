@@ -4,7 +4,7 @@ items:
     summary: |-
       Encapsulates the format properties for the overall chart area.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartAreaFormat
     fullName: excel.Excel.ChartAreaFormat
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Represents the border format of chart area, which includes color, linestyle and weight.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: border
     fullName: excel.Excel.ChartAreaFormat.border
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Represents the fill format of an object, which includes background formatting information.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: excel.Excel.ChartAreaFormat.fill
     langs:
@@ -54,7 +54,7 @@ items:
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for the current object.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: excel.Excel.ChartAreaFormat.font
     langs:

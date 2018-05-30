@@ -1,6 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.CustomXmlPart
+    summary: Represents a single CustomXMLPart in a CustomXMLParts collection.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
     name: Office.CustomXmlPart
     fullName: office.Office.CustomXmlPart
     langs:
@@ -18,6 +23,12 @@ items:
       - office.Office.CustomXmlPart.removeHandlerAsync
   - uid: office.Office.CustomXmlPart.addHandlerAsync
     summary: Adds an event handler to the object using the specified event type.
+    remarks: >-
+      Hosts: Word
+
+
+      You can add multiple event handlers for the specified eventType as long as the name of each event handler function
+      is unique.
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: office.Office.CustomXmlPart.addHandlerAsync
     langs:
@@ -25,7 +36,7 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: EventType, handler?: (result: any) => void, options?: any, callback?: (result:
+        addHandlerAsync(eventType: EventType, handler: (result: any) => void, options?: any, callback?: (result:
         AsyncResult) => void): void;
       return:
         type:
@@ -33,22 +44,34 @@ items:
         description: ''
       parameters:
         - id: eventType
-          description: 'The event type. For CustomXmlPartNode it can be ''nodeDeleted'', ''nodeInserted'' or ''nodeReplaced'''
+          description: >-
+            Specifies the type of event to add. Required. For a CustomXmlPart object event, the eventType parameter can
+            be specified as Office.EventType.DataNodeDeleted, Office.EventType.DataNodeInserted,
+            Office.EventType.DataNodeReplaced, or the corresponding text values of these enumerations.
           type:
             - EventType
         - id: handler
-          description: The name of the handler
+          description: >-
+            The event handler function to add, whose only parameter is of type NodeDeletedEventArgs,
+            NodeInsertedEventArgs, or NodeReplaceEventArgs. Required.
           type:
             - '(result: any) => void'
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.builtIn
+    summary: 'True, if the custom XML part is built in; otherwise false.'
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
     name: builtIn
     fullName: office.Office.CustomXmlPart.builtIn
     langs:
@@ -61,6 +84,10 @@ items:
           - boolean
   - uid: office.Office.CustomXmlPart.deleteAsync
     summary: Deletes the Custom XML Part.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
     name: 'deleteAsync(options, callback)'
     fullName: office.Office.CustomXmlPart.deleteAsync
     langs:
@@ -74,15 +101,21 @@ items:
         description: ''
       parameters:
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.getNodesAsync
-    summary: Gets the nodes associated with the xPath expression.
+    summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
     name: 'getNodesAsync(xPath, options, callback)'
     fullName: office.Office.CustomXmlPart.getNodesAsync
     langs:
@@ -96,19 +129,25 @@ items:
         description: ''
       parameters:
         - id: xPath
-          description: The xPath expression
+          description: An XPath expression that specifies the nodes you want returned. Required.
           type:
             - string
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.getXmlAsync
-    summary: Gets the XML for the Custom XML Part.
+    summary: Asynchronously gets the XML inside this custom XML part.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
     name: 'getXmlAsync(options, callback)'
     fullName: office.Office.CustomXmlPart.getXmlAsync
     langs:
@@ -122,14 +161,21 @@ items:
         description: ''
       parameters:
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.CustomXmlPart.id
+    summary: Gets the GUID of the CustomXMLPart.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
     name: id
     fullName: office.Office.CustomXmlPart.id
     langs:
@@ -141,6 +187,11 @@ items:
         type:
           - string
   - uid: office.Office.CustomXmlPart.namespaceManager
+    summary: Gets the set of namespace prefix mappings (CustomXMLPrefixMappings) used against the current CustomXMLPart.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
     name: namespaceManager
     fullName: office.Office.CustomXmlPart.namespaceManager
     langs:
@@ -152,30 +203,45 @@ items:
         type:
           - CustomXmlPrefixMappings
   - uid: office.Office.CustomXmlPart.removeHandlerAsync
-    summary: Removes an event handler from the object using the specified event type.
-    name: 'removeHandlerAsync(eventType, options, callback)'
+    summary: Removes an event handler for the specified event type.
+    remarks: |-
+      Hosts: Word
+
+      Available in Requirement set: CustomXmlParts
+    name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: office.Office.CustomXmlPart.removeHandlerAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'removeHandlerAsync(eventType: EventType, options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        removeHandlerAsync(eventType: EventType, handler?: (result: any) => void, options?: any, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
         description: ''
       parameters:
         - id: eventType
-          description: 'The event type. For CustomXmlPartNode it can be ''nodeDeleted'', ''nodeInserted'' or ''nodeReplaced'''
+          description: >-
+            Specifies the type of event to remove. Required.For a CustomXmlPart object event, the eventType parameter
+            can be specified as Office.EventType.DataNodeDeleted, Office.EventType.DataNodeInserted,
+            Office.EventType.DataNodeReplaced, or the corresponding text values of these enumerations.
           type:
             - EventType
+        - id: handler
+          description: >-
+            The event handler function to remove. If not specified, all event handlers for the specified eventType will
+            be removed.
+          type:
+            - '(result: any) => void'
         - id: options
           description: >-
-            Syntax example: {handler:eventHandler} handler: Indicates a specific handler to be removed, if not specified
-            all handlers are removed asyncContext: Object keeping state for the callback
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
