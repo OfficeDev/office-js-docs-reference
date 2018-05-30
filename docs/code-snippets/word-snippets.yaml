@@ -323,7 +323,7 @@ Word.Body.select:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Body.Property:
+Word.Body.load:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -769,7 +769,7 @@ Word.ContentControl.search:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.Property:
+Word.ContentControl.load:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1210,7 +1210,7 @@ Word.Font.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Font.Property:
+Word.Font.load:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2197,8 +2197,7 @@ Word.RequestContext.sync:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-    
-Word.SearchOptions.Property:
+Word.SearchOptions.load:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {

@@ -273,7 +273,7 @@ OneNote.Application.navigateToPageWithClientUrl:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.FloatingInk.Property:
+OneNote.FloatingInk.load:
   - |-
     OneNote.run(function(context) {
     
@@ -346,7 +346,7 @@ OneNote.Image.getBase64Image:
                 console.log(imageString);
             });
     });
-OneNote.Image.Property:
+OneNote.Image.load:
   - |-
     OneNote.run(function(ctx){
         // Get the current outline.         
@@ -461,7 +461,7 @@ OneNote.Image.Property:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.ImageOcrData.Property:
+OneNote.ImageOcrData.load:
   - |-
     var image = null;
     
@@ -499,7 +499,7 @@ OneNote.ImageOcrData.Property:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.InkAnalysis.Property:
+OneNote.InkAnalysis.load:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -521,7 +521,7 @@ OneNote.InkAnalysis.Property:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.InkAnalysisLine.Property:
+OneNote.InkAnalysisLine.load:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -548,7 +548,7 @@ OneNote.InkAnalysisLine.Property:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.InkAnalysisParagraph.Property:
+OneNote.InkAnalysisParagraph.load:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -578,7 +578,7 @@ OneNote.InkAnalysisParagraph.Property:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.InkAnalysisWord.Property:
+OneNote.InkAnalysisWord.load:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -666,7 +666,6 @@ OneNote.Notebook.addSectionGroup:
     }); 
 OneNote.Notebook.getRestApiId:
   - |-
-    
     OneNote.run(function(ctx){
         // Get the current notebook.         
         var notebook = ctx.application.getActiveNotebook();
@@ -679,7 +678,7 @@ OneNote.Notebook.getRestApiId:
                 // (this is only required for SharePoint notebooks, baseUrl will be null for OneDrive notebooks)
             });
     });
-OneNote.Notebook.Property:
+OneNote.Notebook.load:
   - |-
     OneNote.run(function (context) {
             
@@ -827,7 +826,7 @@ OneNote.NotebookCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.NotebookCollection.Property:
+OneNote.NotebookCollection.load:
   - |-
     OneNote.run(function (context) {
     
@@ -1000,7 +999,6 @@ OneNote.Page.copyToSection:
     });
 OneNote.Page.getRestApiId:
   - |-
-    
     OneNote.run(function(ctx){
         // Get the current page.         
         var page = ctx.application.getActivePage();
@@ -1038,7 +1036,7 @@ OneNote.Page.insertPageAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Page.Property:
+OneNote.Page.load:
   - |-
     OneNote.run(function (context) {
     
@@ -1162,7 +1160,7 @@ OneNote.PageCollection.getByTitle:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.PageCollection.Property:
+OneNote.PageCollection.load:
   - |-
     OneNote.run(function (context) {
         
@@ -1236,7 +1234,7 @@ OneNote.PageContentCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.PageContentCollection.Property:
+OneNote.PageContentCollection.load:
   - |-
     OneNote.run(function (context) {
     
@@ -1424,7 +1422,7 @@ OneNote.Paragraph.insertRichTextAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.Paragraph.Property:
+OneNote.Paragraph.load:
   - |-
     OneNote.run(function (context) {
     
@@ -1521,7 +1519,7 @@ OneNote.ParagraphCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.ParagraphCollection.Property:
+OneNote.ParagraphCollection.load:
   - |-
     OneNote.run(function (context) {
     
@@ -1605,7 +1603,7 @@ OneNote.ParagraphCollection.Property:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.RichText.Property:
+OneNote.RichText.load:
   - |-
     OneNote.run(function (context) {
     
@@ -1776,7 +1774,6 @@ OneNote.Section.insertSectionAsSibling:
     });
 OneNote.Section.getRestApiId:
   - |-
-    
     OneNote.run(function(ctx){
         // Get the current section.         
         var section = ctx.application.getActiveSection();
@@ -1789,7 +1786,7 @@ OneNote.Section.getRestApiId:
                 // (this is only required for SharePoint notebooks, baseUrl will be null for OneDrive notebooks)
             });
     });
-OneNote.Section.Property:
+OneNote.Section.load:
   - |-
     OneNote.run(function (context) {
             
@@ -1892,7 +1889,7 @@ OneNote.SectionCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.SectionCollection.Property:
+OneNote.SectionCollection.load:
   - |-
     OneNote.run(function (context) {
     
@@ -1991,7 +1988,7 @@ OneNote.SectionGroup.addSectionGroup:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.SectionGroup.Property:
+OneNote.SectionGroup.load:
   - |-
     OneNote.run(function (context) {
             
@@ -2136,7 +2133,7 @@ OneNote.SectionGroupCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.SectionGroupCollection.Property:
+OneNote.SectionGroupCollection.load:
   - |-
     OneNote.run(function (context) {
     
@@ -2314,7 +2311,7 @@ OneNote.Table.insertRow:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Table.Property:
+OneNote.Table.load:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2450,7 +2447,7 @@ OneNote.TableCell.appendRichText:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.TableCell.Property:
+OneNote.TableCell.load:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -2569,7 +2566,7 @@ OneNote.TableRow.insertRowAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.TableRow.Property:
+OneNote.TableRow.load:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
