@@ -6,7 +6,7 @@ items:
       reached.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableCollection
     fullName: excel.Excel.TableCollection
     langs:
@@ -33,7 +33,7 @@ items:
       table), an error will be thrown.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(address, hasHeaders)'
     fullName: excel.Excel.TableCollection.add
     langs:
@@ -73,17 +73,17 @@ items:
               console.log(table.name);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.TableCollection.count
     summary: |-
       Returns the number of tables in the workbook. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: excel.Excel.TableCollection.count
     langs:
@@ -98,7 +98,7 @@ items:
     summary: |-
       Gets the number of tables in the collection.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: excel.Excel.TableCollection.getCount
     langs:
@@ -114,7 +114,7 @@ items:
     summary: |-
       Gets a table by Name or ID.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
     fullName: excel.Excel.TableCollection.getItem
     langs:
@@ -145,10 +145,10 @@ items:
                   console.log(table.name);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
 
@@ -160,17 +160,17 @@ items:
                   console.log(table.name);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.TableCollection.getItemAt
     summary: |-
       Gets a table based on its position in the collection.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: excel.Excel.TableCollection.getItemAt
     langs:
@@ -200,17 +200,17 @@ items:
                   console.log(table.name);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.TableCollection.getItemOrNullObject
     summary: |-
       Gets a table by Name or ID. If the table does not exist, will return a null object.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
     fullName: excel.Excel.TableCollection.getItemOrNullObject
     langs:
@@ -261,11 +261,49 @@ items:
           description: ''
           type:
             - Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tables = ctx.workbook.tables;
+          tables.load();
+          return ctx.sync().then(function() {
+              console.log("tables Count: " + tables.count);
+              for (var i = 0; i < tables.items.length; i++)
+              {
+                  console.log(tables.items[i].name);
+              }
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tables = ctx.workbook.tables;
+          tables.load('count');
+          return ctx.sync().then(function() {
+              console.log(tables.count);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.TableCollection.onChanged
     summary: |-
       Occurs when data changed on any table in a workbook, or a worksheet.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: onChanged
     fullName: excel.Excel.TableCollection.onChanged
     langs:

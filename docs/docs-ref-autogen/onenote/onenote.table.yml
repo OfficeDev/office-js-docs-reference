@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a table in a OneNote page.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.Table
     fullName: onenote.OneNote.Table
     langs:
@@ -38,7 +38,7 @@ items:
       empty.
 
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: appendColumn(values)
     fullName: onenote.OneNote.Table.appendColumn
     langs:
@@ -96,7 +96,7 @@ items:
     summary: |-
       Adds a row to the end of the table. Values, if specified, are set in the new row. Otherwise the row is empty.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: appendRow(values)
     fullName: onenote.OneNote.Table.appendRow
     langs:
@@ -154,7 +154,7 @@ items:
     summary: |-
       Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: borderVisible
     fullName: onenote.OneNote.Table.borderVisible
     langs:
@@ -169,7 +169,7 @@ items:
     summary: |-
       Clears the contents of the table.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: clear()
     fullName: onenote.OneNote.Table.clear
     langs:
@@ -185,7 +185,7 @@ items:
     summary: |-
       Gets the number of columns in the table.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: columnCount
     fullName: onenote.OneNote.Table.columnCount
     langs:
@@ -200,7 +200,7 @@ items:
     summary: |-
       Gets the table cell at a specified row and column.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: 'getCell(rowIndex, cellIndex)'
     fullName: onenote.OneNote.Table.getCell
     langs:
@@ -260,7 +260,7 @@ items:
     summary: |-
       Gets the ID of the table. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.Table.id
     langs:
@@ -277,7 +277,7 @@ items:
       column is empty.
 
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertColumn(index, values)'
     fullName: onenote.OneNote.Table.insertColumn
     langs:
@@ -341,7 +341,7 @@ items:
       empty.
 
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertRow(index, values)'
     fullName: onenote.OneNote.Table.insertRow
     langs:
@@ -419,11 +419,91 @@ items:
           description: ''
           type:
             - OneNote.Interfaces.TableLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function(ctx) {
+          var app = ctx.application;
+          var outline = app.getActiveOutline();
+          
+          // Queue a command to load outline.paragraphs and their types.
+          ctx.load(outline, "paragraphs/type");
+          
+          // Run the queued commands, and return a promise to indicate task completion.
+          return ctx.sync().then(function () {
+              var paragraphs = outline.paragraphs;
+              
+              // For each table, log properties.
+              for (var i = 0; i < paragraphs.items.length; i++) {
+                  var paragraph = paragraphs.items[i];
+                  if (paragraph.type == "Table") {
+                      var table = paragraph.table;
+                      ctx.load(table);
+                      return ctx.sync().then(function() {
+                          console.log("Table Id: " + table.id);
+                          console.log("Row Count: " + table.rowCount);
+                          console.log("Column Count: " + table.columnCount);
+                          return ctx.sync();
+                      });
+                  }
+              }
+          });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      OneNote.run(function(ctx) {
+          var app = ctx.application;
+          var outline = app.getActiveOutline();
+          
+          // Queue a command to load outline.paragraphs and their types.
+          ctx.load(outline, "paragraphs, paragraphs/type");
+          
+          // Run the queued commands, and return a promise to indicate task completion.
+          return ctx.sync().then(function () {
+              var paragraphs = outline.paragraphs;
+              
+              // for each table, log its paragraph id.
+              for (var i = 0; i < paragraphs.items.length; i++) {
+                  var paragraph = paragraphs.items[i];
+                  if (paragraph.type == "Table") {
+                      var table = paragraph.table;
+                      ctx.load(table, "paragraph/id, rows/id");
+                      return ctx.sync().then(function() {
+                          console.log("Paragraph Id: " + table.paragraph.id);
+                          var rows = table.rows;
+                          
+                          // for each rows in the table, log row index and id.
+                          for (var i = 0; i < rows.items.length; i++) {
+                              console.log("Row " + i + " Id: " + rows.items[i].id);
+                          }
+                          return ctx.sync();
+                      });
+                  }
+              }
+          })
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: onenote.OneNote.Table.paragraph
     summary: |-
       Gets the Paragraph object that contains the Table object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
     fullName: onenote.OneNote.Table.paragraph
     langs:
@@ -438,7 +518,7 @@ items:
     summary: |-
       Gets the number of rows in the table.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: rowCount
     fullName: onenote.OneNote.Table.rowCount
     langs:
@@ -453,7 +533,7 @@ items:
     summary: |-
       Gets all of the table rows. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: rows
     fullName: onenote.OneNote.Table.rows
     langs:

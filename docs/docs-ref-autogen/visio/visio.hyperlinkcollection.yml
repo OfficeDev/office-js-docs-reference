@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Hyperlink Collection.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: Visio.HyperlinkCollection
     fullName: visio.Visio.HyperlinkCollection
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Gets the number of hyperlinks.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: getCount()
     fullName: visio.Visio.HyperlinkCollection.getCount
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Gets a Hyperlink using its key (name or Id).
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: getItem(Key)
     fullName: visio.Visio.HyperlinkCollection.getItem
     langs:
@@ -90,6 +90,32 @@ items:
           description: ''
           type:
             - Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var activePage = ctx.document.getActivePage();
+          var shapeName = "Manager Belt";
+          var shape = activePage.shapes.getItem(shapeName);
+          var hyperlinks = shape.hyperlinks;
+          shapeHyperlinks.load();
+              ctx.sync().then(function () {
+                  for(var i=0; i<shapeHyperlinks.items.length;i++)
+                  {
+                      var hyperlink = shapeHyperlinks.items[i];
+                      console.log("Description:"+hyperlink.description +"Address:"+hyperlink.address +"SubAddress:  "+ hyperlink.subAddress);
+                  }
+              });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: visio.Visio.HyperlinkCollection.toJSON
     name: toJSON()
     fullName: visio.Visio.HyperlinkCollection.toJSON

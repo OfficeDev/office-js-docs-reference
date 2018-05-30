@@ -35,11 +35,13 @@ items:
           type:
             - number
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getResourceFieldAsync
@@ -67,11 +69,13 @@ items:
           type:
             - number
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getSelectedResourceAsync
@@ -89,11 +93,13 @@ items:
         description: ''
       parameters:
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getSelectedTaskAsync
@@ -111,11 +117,13 @@ items:
         description: ''
       parameters:
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getSelectedViewAsync
@@ -133,11 +141,13 @@ items:
         description: ''
       parameters:
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getTaskAsync
@@ -159,11 +169,13 @@ items:
           type:
             - string
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getTaskFieldAsync
@@ -191,11 +203,13 @@ items:
           type:
             - number
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getWSSUrlAsync
@@ -213,10 +227,12 @@ items:
         description: ''
       parameters:
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
+            AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'

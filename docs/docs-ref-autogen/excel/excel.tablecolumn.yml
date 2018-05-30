@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a column in a table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableColumn
     fullName: excel.Excel.TableColumn
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Deletes the column from the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: excel.Excel.TableColumn.delete
     langs:
@@ -55,17 +55,17 @@ items:
           column.delete();
           return ctx.sync(); 
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.TableColumn.filter
     summary: |-
       Retrieve the filter applied to the column.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: filter
     fullName: excel.Excel.TableColumn.filter
     langs:
@@ -80,7 +80,7 @@ items:
     summary: |-
       Gets the range object associated with the data body of the column.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getDataBodyRange()
     fullName: excel.Excel.TableColumn.getDataBodyRange
     langs:
@@ -106,17 +106,17 @@ items:
           return ctx.sync().then(function() {
               console.log(dataBodyRange.address);
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.TableColumn.getHeaderRowRange
     summary: |-
       Gets the range object associated with the header row of the column.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getHeaderRowRange()
     fullName: excel.Excel.TableColumn.getHeaderRowRange
     langs:
@@ -143,17 +143,17 @@ items:
               console.log(headerRowRange.address);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.TableColumn.getRange
     summary: |-
       Gets the range object associated with the entire column.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
     fullName: excel.Excel.TableColumn.getRange
     langs:
@@ -180,17 +180,17 @@ items:
               console.log(columnRange.address);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.TableColumn.getTotalRowRange
     summary: |-
       Gets the range object associated with the totals row of the column.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getTotalRowRange()
     fullName: excel.Excel.TableColumn.getTotalRowRange
     langs:
@@ -217,17 +217,17 @@ items:
               console.log(totalRowRange.address);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.TableColumn.id
     summary: |-
       Returns a unique key that identifies the column within the table. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: excel.Excel.TableColumn.id
     langs:
@@ -242,7 +242,7 @@ items:
     summary: |-
       Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: index
     fullName: excel.Excel.TableColumn.index
     langs:
@@ -273,11 +273,52 @@ items:
           description: ''
           type:
             - Excel.Interfaces.TableColumnLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var column = ctx.workbook.tables.getItem(tableName).columns.getItem(0);
+          column.load('index');
+          return ctx.sync().then(function() {
+              console.log(column.index);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var tables = ctx.workbook.tables;
+          var newValues = [["New"], ["Values"], ["For"], ["New"], ["Column"]];
+          var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(2);
+          column.values = newValues;
+          column.load('values');
+          return ctx.sync().then(function() {
+              console.log(column.values);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.TableColumn.name
-    summary: |-
+    summary: >-
       Represents the name of the table column.
 
-      \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting it.](http://bing.com?type=excel) \]
+
+      \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
+      it.](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.TableColumn.name
     langs:
@@ -328,7 +369,7 @@ items:
       Cell that contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: excel.Excel.TableColumn.values
     langs:

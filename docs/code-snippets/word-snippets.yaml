@@ -229,36 +229,6 @@ Word.Body.insertText:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Body.load:
-  - |-
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-    
-        // Create a proxy object for the document body.
-        var body = context.document.body;
-    
-        // Queue a commmand to load font and style information for the document body.
-        context.load(body, 'font/size, font/name, font/color, style');
-    
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-            // Show the results of the load method. Here we show the
-            // property values on the body object.
-            var results = 'Font size: ' + body.font.size +
-                          '; Font name: ' + body.font.name +
-                          '; Font color: ' + body.font.color +
-                          '; Body style: ' + body.style;
-    
-            console.log(results);
-        });
-    })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
 Word.Body.search:
   - |-
     // Run a batch operation against the Word object model.
@@ -323,7 +293,7 @@ Word.Body.select:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Body.Property:
+Word.Body.load:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -733,43 +703,6 @@ Word.ContentControl.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.search:
-  - |-
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-        
-        // Create a proxy object for the content controls collection.
-        var contentControls = context.document.contentControls;
-        
-        // Queue a command to load the id property for all of the content controls. 
-        context.load(contentControls, 'id');
-         
-        // Synchronize the document state by executing the queued commands, 
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-            if (contentControls.items.length === 0) {
-                console.log('No content control found.');
-            }
-            else {
-                // Queue a command to select the first content control.
-                contentControls.items[0].select();
-            
-                // Synchronize the document state by executing the queued commands, 
-                // and return a promise to indicate task completion.
-                return context.sync()
-                    .then(function () {
-                        console.log('Selected the first content control.');
-                });
-            }
-        });  
-    })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
-Word.ContentControl.Property:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -823,6 +756,42 @@ Word.ContentControl.Property:
                             '   ----- font size: ' + contentControls.items[0].font.size +
                             '   ----- font name: ' + contentControls.items[0].font.name +
                             '   ----- font color: ' + contentControls.items[0].font.color);
+                });
+            }
+        });  
+    })
+    .catch(function (error) {
+        console.log('Error: ' + JSON.stringify(error));
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+        }
+    });
+Word.ContentControl.search:
+  - |-
+    // Run a batch operation against the Word object model.
+    Word.run(function (context) {
+        
+        // Create a proxy object for the content controls collection.
+        var contentControls = context.document.contentControls;
+        
+        // Queue a command to load the id property for all of the content controls. 
+        context.load(contentControls, 'id');
+         
+        // Synchronize the document state by executing the queued commands, 
+        // and return a promise to indicate task completion.
+        return context.sync().then(function () {
+            if (contentControls.items.length === 0) {
+                console.log('No content control found.');
+            }
+            else {
+                // Queue a command to select the first content control.
+                contentControls.items[0].select();
+            
+                // Synchronize the document state by executing the queued commands, 
+                // and return a promise to indicate task completion.
+                return context.sync()
+                    .then(function () {
+                        console.log('Selected the first content control.');
                 });
             }
         });  
@@ -1172,45 +1141,7 @@ Word.OfficeExtension.Error.toString:
             console.log('Error code and message: ' + error.toString());
         }
     });
-    
 Word.Font.load:
-  - |-
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-    
-        // Create a proxy object for the paragraphs collection.
-        var paragraphs = context.document.body.paragraphs;
-    
-        // Queue a commmand to load the font property for all of the paragraphs.
-        context.load(paragraphs, 'font');
-    
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-    
-            // Create a proxy object for the font object on the first paragraph in the collection.
-            var font = paragraphs.items[0].font;
-    
-            // Queue a set of property value changes on the font proxy object.
-            font.size = 32;
-            font.bold = true;
-            font.color = '#0000ff';
-            font.highlightColor = '#ffff00';
-    
-            // Synchronize the document state by executing the queued commands,
-            // and return a promise to indicate task completion.
-            return context.sync().then(function () {
-                console.log('The font has changed.');
-            });
-        });
-    })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-        }
-    });
-Word.Font.Property:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -1321,7 +1252,6 @@ Word.Font.Property:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-    
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -2197,8 +2127,7 @@ Word.RequestContext.sync:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-    
-Word.SearchOptions.Property:
+Word.SearchOptions.load:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {

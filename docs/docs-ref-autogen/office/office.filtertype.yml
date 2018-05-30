@@ -1,6 +1,8 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.FilterType
+    summary: Specifies whether filtering from the host application is applied when the data is retrieved.
+    remarks: 'Hosts: Excel, Project, Word'
     name: Office.FilterType
     fullName: office.Office.FilterType
     langs:
@@ -11,14 +13,14 @@ items:
       - office.Office.FilterType.All
       - office.Office.FilterType.OnlyVisible
   - uid: office.Office.FilterType.All
-    summary: Returns all items
+    summary: Return all data (not filtered by the host application).
     name: All
     fullName: office.Office.FilterType.All
     langs:
       - typeScript
     type: field
   - uid: office.Office.FilterType.OnlyVisible
-    summary: Returns only visible items
+    summary: Return only the visible data (as filtered by the host application).
     name: OnlyVisible
     fullName: office.Office.FilterType.OnlyVisible
     langs:

@@ -1,6 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.UI
+    summary: >-
+      Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes, in
+      your Office Add-ins.
     name: Office.UI
     fullName: office.Office.UI
     langs:
@@ -12,24 +15,22 @@ items:
       - office.Office.UI.displayDialogAsync
       - office.Office.UI.messageParent
   - uid: office.Office.UI.closeContainer
-    summary: >-
-      Closes the UI container where the JavaScript is executing.
-
-
-      Supported hosts: Outlook - Minimum requirement set: Mailbox 1.5
-
-
+    summary: Closes the UI container where the JavaScript is executing.
+    remarks: >-
       The behavior of this method is specified by the following:
 
 
-      Called from a UI-less command button: No effect. Any dialog opened by displayDialogAsync will remain open.
+      - Called from a UI-less command button: No effect. Any dialog opened by displayDialogAsync will remain open.
 
 
-      Called from a taskpane: The taskpane will close. Any dialog opened by displayDialogAsync will also close. If the
+      - Called from a taskpane: The taskpane will close. Any dialog opened by displayDialogAsync will also close. If the
       taskpane supports pinning and was pinned by the user, it will be un-pinned.
 
 
-      Called from a module extension: No effect.
+      - Called from a module extension: No effect.
+
+
+      Hosts: Excel, Word, PowerPoint, Outlook (Minimum requirement set: Mailbox 1.5)
     name: closeContainer()
     fullName: office.Office.UI.closeContainer
     langs:
@@ -43,24 +44,80 @@ items:
         description: ''
   - uid: office.Office.UI.displayDialogAsync
     summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
-    name: displayDialogAsync(startAddress)
+    remarks: >-
+      Hosts: Word, Excel, Outlook, PowerPoint
+
+
+      Requirement sets: DialogAPI, Mailbox 1.4
+
+
+      The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial
+      page loads, you can go to other domains.
+
+
+      Any page calling office.context.ui.messageParent must also be on the same domain as the parent page.
+
+
+      The following design considerations apply to dialog boxes:
+
+
+      - An Office Add-in can have only one dialog box open at any time.
+
+
+      - Every dialog box can be moved and resized by the user.
+
+
+      - Every dialog box is centered on the screen when opened.
+
+
+      - Dialog boxes appear on top of the host application and in the order in which they were created.
+
+
+      Use a dialog box to:
+
+
+      - Display authentication pages to collect user credentials.
+
+
+      - Display an error/progress/input screen from a ShowTaspane or ExecuteAction command.
+
+
+      - Temporarily increase the surface area that a user has available to complete a task.
+
+
+      Do not use a dialog box to interact with a document. Use a task pane instead.
+    name: 'displayDialogAsync(startAddress, options, callback)'
     fullName: office.Office.UI.displayDialogAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'displayDialogAsync(startAddress: string): void;'
+      content: >-
+        displayDialogAsync(startAddress: string, options?: DialogOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void
         description: ''
       parameters:
         - id: startAddress
-          description: Accepts the initial HTTPS Url that opens in the dialog.
+          description: Accepts the initial HTTPS URL that opens in the dialog.
           type:
             - string
+        - id: options
+          description: Optional. Accepts a DialogOptions object to define dialog display.
+          type:
+            - DialogOptions
+        - id: callback
+          description: >-
+            Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the
+            AsyncResult.value is a DialogHandler object.
+          type:
+            - '(result: AsyncResult) => void'
   - uid: office.Office.UI.messageParent
-    summary: Synchronously delivers a message from the dialog to its parent add-in.
+    summary: >-
+      Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same
+      domain as the parent.
     name: messageParent(messageObject)
     fullName: office.Office.UI.messageParent
     langs:

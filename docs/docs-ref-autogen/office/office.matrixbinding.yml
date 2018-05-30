@@ -1,6 +1,16 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.MatrixBinding
+    summary: Represents a binding in two dimensions of rows and columns.
+    remarks: >-
+      Hosts: Excel, Word
+
+
+      Available in Requirement set: MatrixBindings
+
+
+      The MatrixBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method
+      from the Binding object.
     name: Office.MatrixBinding
     fullName: office.Office.MatrixBinding
     langs:
@@ -13,6 +23,11 @@ items:
       - office.Office.MatrixBinding.columnCount
       - office.Office.MatrixBinding.rowCount
   - uid: office.Office.MatrixBinding.columnCount
+    summary: 'Gets the number of columns in the matrix data structure, as an integer value.'
+    remarks: |-
+      Hosts: Access, Excel, PowerPoint, Project, Word
+
+      Available in Requirement set: MatrixBindings
     name: columnCount
     fullName: office.Office.MatrixBinding.columnCount
     langs:
@@ -24,6 +39,11 @@ items:
         type:
           - number
   - uid: office.Office.MatrixBinding.rowCount
+    summary: 'Gets the number of rows in the matrix data structure, as an integer value.'
+    remarks: |-
+      Hosts: Access, Excel, PowerPoint, Project, Word
+
+      Available in Requirement set: MatrixBindings
     name: rowCount
     fullName: office.Office.MatrixBinding.rowCount
     langs:

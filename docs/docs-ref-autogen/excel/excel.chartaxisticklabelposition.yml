@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartAxisTickLabelPosition
-    summary: '\[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]'
+    summary: '\[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartAxisTickLabelPosition
     fullName: excel.Excel.ChartAxisTickLabelPosition
     langs:

@@ -1,6 +1,13 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.CoercionType
+    summary: Specifies how to coerce data returned or set by the invoked method.
+    remarks: >-
+      PowerPoint supports only Office.CoercionType.Text, Office.CoercionType.Image, and Office.CoercionType.SlideRange.
+      Project supports only Office.CoercionType.Text.
+
+
+      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
     name: Office.CoercionType
     fullName: office.Office.CoercionType
     langs:
@@ -16,49 +23,65 @@ items:
       - office.Office.CoercionType.Table
       - office.Office.CoercionType.Text
   - uid: office.Office.CoercionType.Html
-    summary: Coerce as HTML
+    summary: Return or set data as HTML.
+    remarks: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
     name: Html
     fullName: office.Office.CoercionType.Html
     langs:
       - typeScript
     type: field
   - uid: office.Office.CoercionType.Image
-    summary: Coerce as Image
+    summary: Data is returned or set as an image stream.
+    remarks: 'Only applies to data in Excel, Word and PowerPoint.'
     name: Image
     fullName: office.Office.CoercionType.Image
     langs:
       - typeScript
     type: field
   - uid: office.Office.CoercionType.Matrix
-    summary: Coerce as Matrix
+    summary: >-
+      Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing
+      one-dimensional runs of characters. For example, three rows of string values in two columns would be: \[\["R1C1",
+      "R1C2"\], \["R2C1", "R2C2"\], \["R3C1", "R3C2"\]\].
+    remarks: Only applies to data in Excel and Word.
     name: Matrix
     fullName: office.Office.CoercionType.Matrix
     langs:
       - typeScript
     type: field
   - uid: office.Office.CoercionType.Ooxml
-    summary: Coerce as Office Open XML
+    summary: Return or set data as Office Open XML.
+    remarks: Only applies to data in Word.
     name: Ooxml
     fullName: office.Office.CoercionType.Ooxml
     langs:
       - typeScript
     type: field
   - uid: office.Office.CoercionType.SlideRange
-    summary: 'Coerce as JSON object containing an array of the ids, titles, and indexes of the selected slides.'
+    summary: >-
+      Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides.For example,
+      {"slides":\[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}\]} for a selection of
+      two slides.
+    remarks: >-
+      Only applies to data in PowerPoint when calling the Document.getSelectedData method to get the current slide or
+      selected range of slides.
     name: SlideRange
     fullName: office.Office.CoercionType.SlideRange
     langs:
       - typeScript
     type: field
   - uid: office.Office.CoercionType.Table
-    summary: Coerce as Table
+    summary: >-
+      Return or set data as tabular data with optional headers. Data is returned or set as an array of arrays with
+      optional headers.
+    remarks: 'Only applies to data in Access, Excel and Word.'
     name: Table
     fullName: office.Office.CoercionType.Table
     langs:
       - typeScript
     type: field
   - uid: office.Office.CoercionType.Text
-    summary: Coerce as Text
+    summary: Return or set data as text (string).Data is returned or set as a one-dimensional run of characters.
     name: Text
     fullName: office.Office.CoercionType.Text
     langs:

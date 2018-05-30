@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a group of ink strokes.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.FloatingInk
     fullName: onenote.OneNote.FloatingInk
     langs:
@@ -25,7 +25,7 @@ items:
     summary: |-
       Gets the ID of the FloatingInk object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.FloatingInk.id
     langs:
@@ -40,7 +40,7 @@ items:
     summary: |-
       Gets the strokes of the FloatingInk object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: inkStrokes
     fullName: onenote.OneNote.FloatingInk.inkStrokes
     langs:
@@ -71,11 +71,55 @@ items:
           description: ''
           type:
             - OneNote.Interfaces.FloatingInkLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      OneNote.run(function(context) {
+
+          // Gets the active page.
+          var page = context.application.getActivePage();
+          var contents = page.contents;
+          
+          // Load page contents and their types.
+          page.load('contents/type');
+          return context.sync()
+              .then(function(){
+              
+                  // Load every ink content.
+                  $.each(contents.items, function(i, content) {
+                      if (content.type == "Ink")
+                      {
+                          content.load('ink/id');
+                      }                            
+                  })
+                  return context.sync();
+              })
+              .then(function(){
+              
+                  // Log ID of every ink content.
+                  $.each(contents.items, function(i, content) {
+                      if (content.type == "Ink")
+                      {
+                          console.log(content.ink.id);
+                      }                            
+                  })                
+              });
+      })
+      .catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      }); 
+      ```
   - uid: onenote.OneNote.FloatingInk.pageContent
     summary: |-
       Gets the PageContent parent of the FloatingInk object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: pageContent
     fullName: onenote.OneNote.FloatingInk.pageContent
     langs:

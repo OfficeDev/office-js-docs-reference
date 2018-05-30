@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Excel application that manages the workbook.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Application
     fullName: excel.Excel.Application
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Recalculate all currently opened workbooks in Excel.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: calculate(calculationType)
     fullName: excel.Excel.Application.calculate
     langs:
@@ -51,17 +51,17 @@ items:
           ctx.workbook.application.calculate('Full');
           return ctx.sync();
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.Application.calculationMode
     summary: |-
       Returns the calculation mode used in the workbook. See Excel.CalculationMode for details.
 
-      \[ [API set: ExcelApi 1.1 for get, 1.8 for set](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1 for get, 1.8 for set](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: calculationMode
     fullName: excel.Excel.Application.calculationMode
     langs:
@@ -92,6 +92,25 @@ items:
           description: ''
           type:
             - Excel.Interfaces.ApplicationLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) {
+          var application = ctx.workbook.application;
+          application.load('calculationMode');
+          return ctx.sync().then(function() {
+              console.log(application.calculationMode);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.Application.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -120,7 +139,7 @@ items:
       re-calc the workbook, to ensure that any dependencies are propagated.
 
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: suspendApiCalculationUntilNextSync()
     fullName: excel.Excel.Application.suspendApiCalculationUntilNextSync
     langs:

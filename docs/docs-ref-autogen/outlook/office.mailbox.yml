@@ -277,16 +277,20 @@ items:
           type:
             - any
   - uid: outlook.Office.Mailbox.item
+    summary: >-
+      The mailbox item. Depending on the context in which the add-in opened, the item may be of any number of types. If
+      you want to see IntelliSense for only a specific type, you should cast this item to one of the following:
+      \`ItemCompose\`, \`ItemRead\`, \`MessageCompose\`, \`MessageRead\`, \`AppointmentCompose\`, \`AppointmentRead\`
     name: item
     fullName: outlook.Office.Mailbox.item
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'item: Item;'
+      content: 'item: Item & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose;'
       return:
         type:
-          - Item
+          - Item & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose
   - uid: outlook.Office.Mailbox.makeEwsRequestAsync
     summary: >-
       Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the

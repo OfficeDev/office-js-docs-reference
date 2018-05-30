@@ -8,26 +8,11 @@ items:
     type: interface
     package: outlook
     children:
-      - outlook.Office.Item.___BeSureToCastThisObject__
       - outlook.Office.Item.body
       - outlook.Office.Item.dateTimeCreated
       - outlook.Office.Item.itemType
       - outlook.Office.Item.loadCustomPropertiesAsync
       - outlook.Office.Item.notificationMessages
-  - uid: outlook.Office.Item.___BeSureToCastThisObject__
-    summary: >-
-      You can cast item with \`(Item as Office.\[CAST\_TYPE\])\` where CAST\_TYPE is one of the following: ItemRead,
-      ItemCompose, Message, MessageRead, MessageCompose, Appointment, AppointmentRead, AppointmentCompose
-    name: ___BeSureToCastThisObject__
-    fullName: outlook.Office.Item.___BeSureToCastThisObject__
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: '___BeSureToCastThisObject__: void;'
-      return:
-        type:
-          - void
   - uid: outlook.Office.Item.body
     name: body
     fullName: outlook.Office.Item.body

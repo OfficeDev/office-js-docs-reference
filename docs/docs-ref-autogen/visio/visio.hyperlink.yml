@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Hyperlink.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: Visio.Hyperlink
     fullName: visio.Visio.Hyperlink
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Gets the address of the Hyperlink object.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: address
     fullName: visio.Visio.Hyperlink.address
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Gets the description of a hyperlink.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: description
     fullName: visio.Visio.Hyperlink.description
     langs:
@@ -54,7 +54,7 @@ items:
     summary: |-
       Gets the extra info of a hyperlink.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: extraInfo
     fullName: visio.Visio.Hyperlink.extraInfo
     langs:
@@ -85,11 +85,35 @@ items:
           description: ''
           type:
             - Visio.Interfaces.HyperlinkLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var activePage = ctx.document.getActivePage();
+          var shape = activePage.shapes.getItem(0);
+          var hyperlink = shape.hyperlinks.getItem(0);
+          hyperlink.load();
+          return ctx.sync().then(function() {
+              console.log(hyperlink.description);
+              console.log(hyperlink.address);
+              console.log(hyperlink.subAddress);
+              console.log(hyperlink.extraInfo);
+           });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: visio.Visio.Hyperlink.subAddress
     summary: |-
       Gets the sub-address of the Hyperlink object.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: subAddress
     fullName: visio.Visio.Hyperlink.subAddress
     langs:

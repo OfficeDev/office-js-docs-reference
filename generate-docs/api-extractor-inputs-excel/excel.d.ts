@@ -237,22 +237,34 @@ export declare namespace Excel {
         /**
          *
          * Gets the Binding object that represents the binding that raised the SelectionChanged event.
+         * 
+         * @remarks
+         * Hosts: Access, Excel, Word
          *
          * [Api set: ExcelApi 1.2]
          */
         binding: Excel.Binding;
         /**
          *
-         * Gets the number of columns selected.
+         * Gets the number of columns selected. The number of columns selected. If a single cell is selected returns 1.
          *
          * [Api set: ExcelApi 1.2]
+         * 
+         * @remarks
+         * If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is returned.
+         * 
+         * For Word, this property will work only for bindings of BindingType "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property to work correctly.
          */
         columnCount: number;
         /**
-         *
-         * Gets the number of rows selected.
+         * Gets the number of columns selected. The number of columns selected. If a single cell is selected returns 1.
          *
          * [Api set: ExcelApi 1.2]
+         * 
+         * @remarks
+         * If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is returned.
+         * 
+         * For Word, this property will work only for bindings of BindingType "table". If the binding is of type "matrix", null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property to work correctly.
          */
         rowCount: number;
         /**

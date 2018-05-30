@@ -1,6 +1,8 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.Context
+    summary: Represents the runtime environment of the add-in and provides access to key objects of the API.
+    remarks: 'Hosts: Access, Excel, Outlook, PowerPoint, Project, Word'
     name: Office.Context
     fullName: office.Office.Context
     langs:
@@ -10,6 +12,7 @@ items:
     children:
       - office.Office.Context.document
   - uid: office.Office.Context.document
+    summary: Gets an object that represents the document the content or task pane add-in is interacting with.
     name: document
     fullName: office.Office.Context.document
     langs:

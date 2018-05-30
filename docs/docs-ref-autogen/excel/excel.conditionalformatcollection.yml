@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of all the conditional formats that are overlap the range.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalFormatCollection
     fullName: excel.Excel.ConditionalFormatCollection
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Adds a new conditional format to the collection at the first/top priority.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: add(type)
     fullName: excel.Excel.ConditionalFormatCollection.add
     langs:
@@ -63,13 +63,13 @@ items:
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
-          });
+      });
       ```
   - uid: excel.Excel.ConditionalFormatCollection.clearAll
     summary: |-
       Clears all conditional formats active on the current specified range.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: clearAll()
     fullName: excel.Excel.ConditionalFormatCollection.clearAll
     langs:
@@ -101,13 +101,13 @@ items:
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
-          });
+      });
       ```
   - uid: excel.Excel.ConditionalFormatCollection.getCount
     summary: |-
       Returns the number of conditional formats in the workbook. Read-only.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: excel.Excel.ConditionalFormatCollection.getCount
     langs:
@@ -147,7 +147,7 @@ items:
     summary: |-
       Returns a conditional format for the given ID.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(id)
     fullName: excel.Excel.ConditionalFormatCollection.getItem
     langs:
@@ -184,13 +184,13 @@ items:
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
-          });
+      });
       ```
   - uid: excel.Excel.ConditionalFormatCollection.getItemAt
     summary: |-
       Returns a conditional format at the given index.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: excel.Excel.ConditionalFormatCollection.getItemAt
     langs:
@@ -227,7 +227,7 @@ items:
           if (error instanceof OfficeExtension.Error) {
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
-          });
+      });
       ```
 
       ```typescript

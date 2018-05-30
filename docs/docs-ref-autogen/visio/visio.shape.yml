@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Shape class.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: Visio.Shape
     fullName: visio.Visio.Shape
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Returns the Comments Collection
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: comments
     fullName: visio.Visio.Shape.comments
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       Returns the BoundingBox object that specifies bounding box of the shape.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: getBounds()
     fullName: visio.Visio.Shape.getBounds
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Returns the Hyperlinks collection for a Shape object. Read-only.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: hyperlinks
     fullName: visio.Visio.Shape.hyperlinks
     langs:
@@ -77,7 +77,7 @@ items:
     summary: |-
       Shape's Identifier.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: id
     fullName: visio.Visio.Shape.id
     langs:
@@ -108,11 +108,49 @@ items:
           description: ''
           type:
             - Visio.Interfaces.ShapeLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var activePage = ctx.document.getActivePage();
+          var shapeName = "Sample Name";
+          var shape = activePage.shapes.getItem(shapeName);
+          shape.load();
+          return ctx.sync().then(function () {
+              console.log(shape.name );
+              console.log(shape.id );
+              console.log(shape.Text );
+              console.log(shape.Select );
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      Visio.run(function (ctx) { 
+          var activePage = ctx.document.getActivePage();
+          var shape = activePage.shapes.getItem(0);
+          shape.view.highlight = { color: "#E7E7E7", width: 100 };
+          return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: visio.Visio.Shape.name
     summary: |-
       Shape's name.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: name
     fullName: visio.Visio.Shape.name
     langs:
@@ -127,7 +165,7 @@ items:
     summary: |-
       Returns true, if shape is selected. User can set true to select the shape explicitly.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: select
     fullName: visio.Visio.Shape.select
     langs:
@@ -173,7 +211,7 @@ items:
     summary: |-
       Returns the Shape's Data Section. Read-only.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: shapeDataItems
     fullName: visio.Visio.Shape.shapeDataItems
     langs:
@@ -188,7 +226,7 @@ items:
     summary: |-
       Gets SubShape Collection.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: subShapes
     fullName: visio.Visio.Shape.subShapes
     langs:
@@ -203,7 +241,7 @@ items:
     summary: |-
       Shape's Text.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: text
     fullName: visio.Visio.Shape.text
     langs:
@@ -230,7 +268,7 @@ items:
     summary: |-
       Returns the view of the shape. Read-only.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: view
     fullName: visio.Visio.Shape.view
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of all the columns that are part of the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableColumnCollection
     fullName: excel.Excel.TableColumnCollection
     langs:
@@ -30,7 +30,7 @@ items:
 
       \[ [API set: ExcelApi 1.1 requires an index smaller than the total column count; 1.4 allows index to be optional
       (null or -1) and will append a column at the end; 1.4 allows name parameter at creation
-      time.](http://bing.com?type=excel) \]
+      time.](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: 'add(index, values, name)'
     fullName: excel.Excel.TableColumnCollection.add
     langs:
@@ -74,17 +74,17 @@ items:
               console.log(column.name);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.TableColumnCollection.count
     summary: |-
       Returns the number of columns in the table. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: excel.Excel.TableColumnCollection.count
     langs:
@@ -99,7 +99,7 @@ items:
     summary: |-
       Gets the number of columns in the table.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: excel.Excel.TableColumnCollection.getCount
     langs:
@@ -115,7 +115,7 @@ items:
     summary: |-
       Gets a column object by Name or ID.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(key)
     fullName: excel.Excel.TableColumnCollection.getItem
     langs:
@@ -145,10 +145,10 @@ items:
                   console.log(tablecolumn.name);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
 
@@ -160,17 +160,17 @@ items:
                   console.log(tablecolumn.name);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.TableColumnCollection.getItemAt
     summary: |-
       Gets a column based on its position in the collection.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: excel.Excel.TableColumnCollection.getItemAt
     langs:
@@ -200,17 +200,17 @@ items:
                   console.log(tablecolumn.name);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.TableColumnCollection.getItemOrNullObject
     summary: |-
       Gets a column object by Name or ID. If the column does not exist, will return a null object.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(key)
     fullName: excel.Excel.TableColumnCollection.getItemOrNullObject
     langs:
@@ -261,6 +261,29 @@ items:
           description: ''
           type:
             - Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tablecolumns = ctx.workbook.tables.getItem('Table1').columns;
+          tablecolumns.load('items');
+          return ctx.sync().then(function() {
+              console.log("tablecolumns Count: " + tablecolumns.count);
+              for (var i = 0; i < tablecolumns.items.length; i++)
+              {
+                  console.log(tablecolumns.items[i].name);
+              }
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.TableColumnCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.TableColumnCollection.toJSON

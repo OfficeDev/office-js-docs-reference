@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.DocumentPropertyType
-    summary: '\[ [API set: WordApi](http://bing.com?type=word) \]'
+    summary: '\[ [API set: WordApi](/javascript/office/requirement-sets/word-api-requirement-sets) \]'
     name: Word.DocumentPropertyType
     fullName: word.Word.DocumentPropertyType
     langs:

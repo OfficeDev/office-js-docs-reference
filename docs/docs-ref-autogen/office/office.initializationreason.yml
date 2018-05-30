@@ -1,6 +1,8 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.InitializationReason
+    summary: Specifies whether the add-in was just inserted or was already contained in the document.
+    remarks: 'Hosts: Excel, Project, Word'
     name: Office.InitializationReason
     fullName: office.Office.InitializationReason
     langs:
@@ -11,14 +13,14 @@ items:
       - office.Office.InitializationReason.DocumentOpened
       - office.Office.InitializationReason.Inserted
   - uid: office.Office.InitializationReason.DocumentOpened
-    summary: Indicates if the extension already existed in the document
+    summary: The add-in is already part of the document that was opened.
     name: DocumentOpened
     fullName: office.Office.InitializationReason.DocumentOpened
     langs:
       - typeScript
     type: field
   - uid: office.Office.InitializationReason.Inserted
-    summary: Indicates the app was just inserted in the document
+    summary: The add-in was just inserted into the document.
     name: Inserted
     fullName: office.Office.InitializationReason.Inserted
     langs:

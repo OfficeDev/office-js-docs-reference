@@ -4,7 +4,7 @@ items:
     summary: |-
       Account information.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.AccountInfo
     fullName: onenote.OneNote.AccountInfo
     langs:
@@ -19,7 +19,7 @@ items:
     summary: |-
       Account type
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: accountType
     fullName: onenote.OneNote.AccountInfo.accountType
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       Account email
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: email
     fullName: onenote.OneNote.AccountInfo.email
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       // Account user name
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: userName
     fullName: onenote.OneNote.AccountInfo.userName
     langs:

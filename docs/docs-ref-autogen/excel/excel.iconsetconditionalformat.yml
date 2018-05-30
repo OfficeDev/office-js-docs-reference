@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents an IconSet criteria for conditional formatting.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.IconSetConditionalFormat
     fullName: excel.Excel.IconSetConditionalFormat
     langs:
@@ -28,7 +28,7 @@ items:
       set.
 
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
     fullName: excel.Excel.IconSetConditionalFormat.criteria
     langs:
@@ -63,7 +63,7 @@ items:
     summary: |-
       If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: reverseIconOrder
     fullName: excel.Excel.IconSetConditionalFormat.reverseIconOrder
     langs:
@@ -100,7 +100,7 @@ items:
     summary: |-
       If true, hides the values and only shows icons.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: showIconOnly
     fullName: excel.Excel.IconSetConditionalFormat.showIconOnly
     langs:
@@ -115,7 +115,7 @@ items:
     summary: |-
       If set, displays the IconSet option for the conditional format.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: excel.Excel.IconSetConditionalFormat.style
     langs:

@@ -10,7 +10,7 @@ items:
       are added, a table row will continue to point at the index for which it was created.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableRow
     fullName: excel.Excel.TableRow
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Deletes the row from the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: excel.Excel.TableRow.delete
     langs:
@@ -55,17 +55,17 @@ items:
           row.delete();
           return ctx.sync(); 
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.TableRow.getRange
     summary: |-
       Returns the range object associated with the entire row.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
     fullName: excel.Excel.TableRow.getRange
     langs:
@@ -92,17 +92,17 @@ items:
               console.log(rowRange.address);
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.TableRow.index
     summary: |-
       Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: index
     fullName: excel.Excel.TableRow.index
     langs:
@@ -133,6 +133,45 @@ items:
           description: ''
           type:
             - Excel.Interfaces.TableRowLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tableName = 'Table1';
+          var row = ctx.workbook.tables.getItem(tableName).rows.getItem(0);
+          row.load('index');
+          return ctx.sync().then(function() {
+              console.log(row.index);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var tables = ctx.workbook.tables;
+          var newValues = [["New", "Values", "For", "New", "Row"]];
+          var tableName = 'Table1';
+          var row = ctx.workbook.tables.getItem(tableName).rows.getItemAt(2);
+          row.values = newValues;
+          row.load('values');
+          return ctx.sync().then(function() {
+              console.log(row.values);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.TableRow.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -173,7 +212,7 @@ items:
       Cell that contain an error will return the error string.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: values
     fullName: excel.Excel.TableRow.values
     langs:

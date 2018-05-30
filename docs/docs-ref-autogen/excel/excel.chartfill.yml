@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the fill formatting for a chart element.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartFill
     fullName: excel.Excel.ChartFill
     langs:
@@ -22,7 +22,7 @@ items:
     summary: |-
       Clear the fill color of a chart element.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: excel.Excel.ChartFill.clear
     langs:
@@ -47,10 +47,10 @@ items:
                   console.log("Chart Major Gridlines Format Cleared");
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.ChartFill.load
@@ -77,7 +77,7 @@ items:
     summary: |-
       Sets the fill formatting of a chart element to a uniform color.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: setSolidColor(color)
     fullName: excel.Excel.ChartFill.setSolidColor
     langs:
@@ -111,10 +111,10 @@ items:
                   console.log("Chart1 Background Color Changed.");
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.ChartFill.toJSON

@@ -4,7 +4,7 @@ items:
     summary: |-
       A collection of all the chart points within a series inside a chart.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartPointsCollection
     fullName: excel.Excel.ChartPointsCollection
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Returns the number of chart points in the series. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: excel.Excel.ChartPointsCollection.count
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Returns the number of chart points in the series.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: excel.Excel.ChartPointsCollection.getCount
     langs:
@@ -55,7 +55,7 @@ items:
     summary: |-
       Retrieve a point based on its position within the series.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: excel.Excel.ChartPointsCollection.getItemAt
     langs:
@@ -85,10 +85,10 @@ items:
               console.log("Point Border Color Changed");
           });
       }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
       });
       ```
   - uid: excel.Excel.ChartPointsCollection.items
@@ -125,6 +125,40 @@ items:
           description: ''
           type:
             - Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var pointsCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+          pointsCollection.load('items');
+          return ctx.sync().then(function() {
+              console.log("Points Collection loaded");
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var pointsCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
+          pointsCollection.load('count');
+          return ctx.sync().then(function() {
+              console.log("points: Count= " + pointsCollection.count);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.ChartPointsCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartPointsCollection.toJSON

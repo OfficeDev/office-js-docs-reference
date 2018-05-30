@@ -1,6 +1,26 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.Settings
+    summary: >-
+      Represents custom settings for a task pane or content add-in that are stored in the host document as name/value
+      pairs.
+    remarks: >-
+      The settings created by using the methods of the Settings object are saved per add-in and per document. That is,
+      they are available only to the add-in that created them, and only from the document in which they are saved.
+
+
+      The name of a setting is a string, while the value can be a string, number, boolean, null, object, or array.
+
+
+      The Settings object is automatically loaded as part of the Document object, and is available by calling the
+      settings property of that object when the add-in is activated. The developer is responsible for calling the
+      saveAsync method after adding or deleting settings to save the settings in the document.
+
+
+      Hosts: Access, Excel, PowerPoint, Word
+
+
+      Available in Requirement set: Settings
     name: Office.Settings
     fullName: office.Office.Settings
     langs:
@@ -16,7 +36,16 @@ items:
       - office.Office.Settings.saveAsync
       - office.Office.Settings.set
   - uid: office.Office.Settings.addHandlerAsync
-    summary: Adds an event handler for the object using the specified event type.
+    summary: Adds an event handler for the settingsChanged event.
+    remarks: >-
+      When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can
+      access from the callback function's only parameter. In the callback function passed to the addHandlerAsync method,
+      you can use the properties of the AsyncResult object to return the following information. \|Property \|Use to...\|
+      \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\| \|AsyncResult.value\|Always returns undefined because there is no data
+      or object to retrieve when adding an event handler.\| \|AsyncResult.status\|Determine the success or failure of
+      the operation.\| \|AsyncResult.error\|Access an Error object that provides error information if the operation
+      failed.\| \|AsyncResult.asyncContext\|A user-defined item of any type that is returned in the AsyncResult object
+      without being altered.\|
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: office.Office.Settings.addHandlerAsync
     langs:
@@ -32,23 +61,29 @@ items:
         description: ''
       parameters:
         - id: eventType
-          description: The event type. For settings can be 'settingsChanged'
+          description: Specifies the type of event to add. Required.
           type:
             - EventType
         - id: handler
-          description: The name of the handler
+          description: The event handler function to add. Required.
           type:
             - any
         - id: options
-          description: 'Syntax example: {asyncContext:context} asyncContext: Object keeping state for the callback'
+          description: >-
+            Specifies any of the following optional parameters. asyncContext: A user-defined item of any type that is
+            returned in the AsyncResult object without being altered.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Settings.get
-    summary: Retrieves the setting with the specified name.
+    summary: Retrieves the specified setting.
+    remarks: |-
+      Hosts: Access, Excel, PowerPoint, Word
+
+      Available in Requirement set: Settings
     name: get(name)
     fullName: office.Office.Settings.get
     langs:
@@ -59,14 +94,24 @@ items:
       return:
         type:
           - any
-        description: ''
+        description: An object that has property names mapped to JSON serialized values.
       parameters:
         - id: name
           description: ''
           type:
             - string
   - uid: office.Office.Settings.refreshAsync
-    summary: Gets the latest version of the settings object.
+    summary: >-
+      Reads all settings persisted in the document and refreshes the content or task pane add-in's copy of those
+      settings held in memory.
+    remarks: >-
+      When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can
+      access from the callback function's only parameter. In the callback function passed to the refreshAsync method,
+      you can use the properties of the AsyncResult object to return the following information. \|Property \|Use to...\|
+      \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\| \|AsyncResult.value\|Access a Settings object with the refreshed
+      values.\| \|AsyncResult.status\|Determine the success or failure of the operation.\| \|AsyncResult.error\|Access
+      an Error object that provides error information if the operation failed.\| \|AsyncResult.asyncContext\|A
+      user-defined item of any type that is returned in the AsyncResult object without being altered.\|
     name: refreshAsync(callback)
     fullName: office.Office.Settings.refreshAsync
     langs:
@@ -80,11 +125,23 @@ items:
         description: ''
       parameters:
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Settings.remove
-    summary: Removes the setting with the specified name.
+    summary: Removes the specified setting.
+    remarks: >-
+      null is a valid value for a setting. Therefore, assigning null to the setting will not remove it from the settings
+      property bag.
+
+
+      &gt; \[!IMPORTANT\] &gt; Be aware that the Settings.remove method affects only the in-memory copy of the settings
+      property bag. To persist the removal of the specified setting in the document, at some point after calling the
+      Settings.remove method and before the add-in is closed, you must call the Settings.saveAsync method. Hosts:
+      Access, Excel, PowerPoint, Word
+
+
+      Available in Requirement set: Settings
     name: remove(name)
     fullName: office.Office.Settings.remove
     langs:
@@ -102,7 +159,11 @@ items:
           type:
             - string
   - uid: office.Office.Settings.removeHandlerAsync
-    summary: Removes an event handler for the specified event type.
+    summary: Removes an event handler for the settingsChanged event.
+    remarks: >-
+      When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can
+      access from the callback function's only parameter. In the callback function passed to the removeHandlerAsync
+      method, you can use the properties of the AsyncResult object to return the following information.
     name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: office.Office.Settings.removeHandlerAsync
     langs:
@@ -116,21 +177,28 @@ items:
         description: ''
       parameters:
         - id: eventType
-          description: The event type. For settings can be 'settingsChanged'
+          description: Specifies the type of event to remove. Required.
           type:
             - EventType
         - id: options
-          description: >-
-            Syntax example: {handler:eventHandler} handler: Indicates a specific handler to be removed, if not specified
-            all handlers are removed asyncContext: Object keeping state for the callback
+          description: Specifies any of the following optional parameters.
           type:
             - any
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Settings.saveAsync
-    summary: Saves all settings.
+    summary: Persists the in-memory copy of the settings property bag in the document.
+    remarks: >-
+      When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can
+      access from the callback function's only parameter. In the callback function passed to the saveAsync method, you
+      can use the properties of the AsyncResult object to return the following information. \|Property \|Use to...\|
+      \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\| \|AsyncResult.value\|Always returns undefined because there is no
+      object or data to retrieve.\| \|AsyncResult.status\|Determine the success or failure of the operation.\|
+      \|AsyncResult.error\|Access an Error object that provides error information if the operation failed.\|
+      \|AsyncResult.asyncContext\|A user-defined item of any type that is returned in the AsyncResult object without
+      being altered.\|
     name: saveAsync(callback)
     fullName: office.Office.Settings.saveAsync
     langs:
@@ -144,11 +212,30 @@ items:
         description: ''
       parameters:
         - id: callback
-          description: The optional callback method
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+            Optional.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Settings.set
-    summary: Sets a value for the setting with the specified name.
+    summary: Sets or creates the specified setting.
+    remarks: >-
+      The set method creates a new setting of the specified name if it does not already exist, or sets an existing
+      setting of the specified name in the in-memory copy of the settings property bag. After you call the
+      Settings.saveAsync method, the value is stored in the document as the serialized JSON representation of its data
+      type. A maximum of 2MB is available for the settings of each add-in.
+
+
+      &gt; \[!IMPORTANT\] &gt; Be aware that the Settings.set method affects only the in-memory copy of the settings
+      property bag. To make sure that additions or changes to settings will be available to your add-in the next time
+      the document is opened, at some point after calling the Settings.set method and before the add-in is closed, you
+      must call the Settings.saveAsync method to persist settings in the document.
+
+
+      Hosts: Access, Excel, PowerPoint, Word
+
+
+      Available in Requirement set: Settings
     name: 'set(name, value)'
     fullName: office.Office.Settings.set
     langs:
@@ -166,6 +253,6 @@ items:
           type:
             - string
         - id: value
-          description: The value for the setting
+          description: Specifies the value to be stored.
           type:
             - any

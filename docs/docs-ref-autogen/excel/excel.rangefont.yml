@@ -4,7 +4,7 @@ items:
     summary: |-
       This object represents the font attributes (font name, font size, color, etc.) for an object.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeFont
     fullName: excel.Excel.RangeFont
     langs:
@@ -27,7 +27,7 @@ items:
     summary: |-
       Represents the bold status of font.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: bold
     fullName: excel.Excel.RangeFont.bold
     langs:
@@ -42,7 +42,7 @@ items:
     summary: |-
       HTML color code representation of the text color. E.g. \#FF0000 represents Red.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: excel.Excel.RangeFont.color
     langs:
@@ -57,7 +57,7 @@ items:
     summary: |-
       Represents the italic status of the font.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: italic
     fullName: excel.Excel.RangeFont.italic
     langs:
@@ -88,11 +88,49 @@ items:
           description: ''
           type:
             - Excel.Interfaces.RangeFontLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "F:G";
+          var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+          var range = worksheet.getRange(rangeAddress);
+          var rangeFont = range.format.font;
+          rangeFont.load('name');
+          return ctx.sync().then(function() {
+              console.log(rangeFont.name);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+
+      ```javascript
+      Excel.run(function (ctx) { 
+          var sheetName = "Sheet1";
+          var rangeAddress = "F:G";
+          var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+          range.format.font.name = 'Times New Roman';
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
   - uid: excel.Excel.RangeFont.name
     summary: |-
       Font name (e.g. "Calibri")
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.RangeFont.name
     langs:
@@ -129,7 +167,7 @@ items:
     summary: |-
       Font size.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: size
     fullName: excel.Excel.RangeFont.size
     langs:
@@ -156,7 +194,7 @@ items:
     summary: |-
       Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: underline
     fullName: excel.Excel.RangeFont.underline
     langs:

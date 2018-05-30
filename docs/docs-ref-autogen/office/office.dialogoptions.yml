@@ -13,8 +13,10 @@ items:
       - office.Office.DialogOptions.width
   - uid: office.Office.DialogOptions.displayInIframe
     summary: >-
-      Optional. Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable
-      in Office Online clients, and is ignored on other platforms.
+      Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable in Office
+      Online clients, and is ignored by other platforms. If false (default), the dialog will be displayed as a new
+      browser window (pop-up). Recommended for authentication pages that cannot be displayed in an IFrame. If true, the
+      dialog will be displayed as a floating overlay with an IFrame. This is best for user experience and performance.
     name: displayInIframe
     fullName: office.Office.DialogOptions.displayInIframe
     langs:
@@ -26,7 +28,7 @@ items:
         type:
           - boolean
   - uid: office.Office.DialogOptions.height
-    summary: Optional. Defines the width of the dialog as a percentage of the current display. Defaults to 99%. 250px minimum.
+    summary: Defines the width of the dialog as a percentage of the current display. Defaults to 80%. 250px minimum.
     name: height
     fullName: office.Office.DialogOptions.height
     langs:
@@ -38,7 +40,7 @@ items:
         type:
           - number
   - uid: office.Office.DialogOptions.width
-    summary: Optional. Defines the height of the dialog as a percentage of the current display. Defaults to 99%. 150px minimum.
+    summary: Defines the height of the dialog as a percentage of the current display. Defaults to 80%. 150px minimum.
     name: width
     fullName: office.Office.DialogOptions.width
     langs:

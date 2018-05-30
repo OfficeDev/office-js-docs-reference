@@ -4,7 +4,7 @@ items:
     summary: |-
       This object represents the attributes for a chart trendline object.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTrendline
     fullName: excel.Excel.ChartTrendline
     langs:
@@ -28,7 +28,7 @@ items:
     summary: |-
       Delete the trendline object.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: excel.Excel.ChartTrendline.delete
     langs:
@@ -44,7 +44,7 @@ items:
     summary: |-
       Represents the formatting of a chart trendline.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.ChartTrendline.format
     langs:
@@ -61,7 +61,7 @@ items:
       values). The returned value is always a number.
 
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: intercept
     fullName: excel.Excel.ChartTrendline.intercept
     langs:
@@ -96,7 +96,7 @@ items:
     summary: |-
       Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: movingAveragePeriod
     fullName: excel.Excel.ChartTrendline.movingAveragePeriod
     langs:
@@ -113,7 +113,7 @@ items:
       automatic values. The returned value is always a string
 
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.ChartTrendline.name
     langs:
@@ -128,7 +128,7 @@ items:
     summary: |-
       Represents the order of a chart trendline. Only applicable for trendline with Polynomial type.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: polynomialOrder
     fullName: excel.Excel.ChartTrendline.polynomialOrder
     langs:
@@ -177,7 +177,7 @@ items:
     summary: |-
       Represents the type of a chart trendline.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: excel.Excel.ChartTrendline.type
     langs:

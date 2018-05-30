@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.SelectionMode
+    summary: >-
+      Specifies whether to select (highlight) the location to navigate to (when using the Document.goToByIdAsync
+      method).
+    remarks: 'Hosts: Excel, PowerPoint, Word'
     name: Office.SelectionMode
     fullName: office.Office.SelectionMode
     langs:
@@ -18,12 +22,14 @@ items:
       - typeScript
     type: field
   - uid: office.Office.SelectionMode.None
+    summary: The cursor is moved the beginning of the location.
     name: None
     fullName: office.Office.SelectionMode.None
     langs:
       - typeScript
     type: field
   - uid: office.Office.SelectionMode.Selected
+    summary: The location will be selected (highlighted).
     name: Selected
     fullName: office.Office.SelectionMode.Selected
     langs:

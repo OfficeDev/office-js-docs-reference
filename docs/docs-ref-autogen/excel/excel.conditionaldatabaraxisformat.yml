@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the format options for a Data Bar Axis.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalDataBarAxisFormat
     fullName: excel.Excel.ConditionalDataBarAxisFormat
     langs:

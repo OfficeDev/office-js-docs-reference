@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the horizontal alignment for the specified object.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTextHorizontalAlignment
     fullName: excel.Excel.ChartTextHorizontalAlignment
     langs:

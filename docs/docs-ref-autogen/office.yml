@@ -138,7 +138,7 @@ items:
           type:
             - string
         - id: callback
-          description: The optional callback method
+          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.useShortNamespace

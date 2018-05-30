@@ -1,4 +1,4 @@
-Visio.Application.Property:
+Visio.Application.load:
   - |-
     Visio.run(function (ctx) { 
         var application = ctx.document.application;
@@ -6,12 +6,12 @@ Visio.Application.Property:
         application.showBorders = false;
         return ctx.sync();
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.Comment.Property:
+Visio.Comment.load:
   - |-
     Visio.run(function (ctx) { 
         var activePage = ctx.document.getActivePage();
@@ -29,12 +29,12 @@ Visio.Comment.Property:
             }
         });
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.CommentCollection.Property:
+Visio.CommentCollection.load:
   - |-
     Visio.run(function (ctx) { 
         var activePage = ctx.document.getActivePage();
@@ -52,12 +52,12 @@ Visio.CommentCollection.Property:
             }
         });
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.DataRefreshCompleteEventArgs.Property:
+Visio.DataRefreshCompleteEventArgs.load:
   - |-
     Visio.run(function (ctx) { 
       var document1= ctx.document;
@@ -86,10 +86,10 @@ Visio.Document.getActivePage:
         console.log("pageName: " +activePage.name);
           });   
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
 Visio.Document.setActivePage:
   - |-
@@ -99,10 +99,10 @@ Visio.Document.setActivePage:
         document.setActivePage(pageName);
         return ctx.sync();
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
 Visio.Document.startDataRefresh:
   - |-
@@ -111,24 +111,24 @@ Visio.Document.startDataRefresh:
         document.startDataRefresh();
         return ctx.sync();
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.Document.Property:
+Visio.Document.load:
   - |-
     Visio.run(function (ctx) { 
         var pages = ctx.document.pages;
         var pageCount = pages.getCount();
         return ctx.sync().then(function () {
             console.log("Pages Count: " +pageCount.value);
-            });
+        });
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
   - |-
     Visio.run(function (ctx) { 
@@ -136,10 +136,10 @@ Visio.Document.Property:
         documentView.disableHyperlinks();
         return ctx.sync();
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
   - |-
     Visio.run(function (ctx) { 
@@ -147,30 +147,30 @@ Visio.Document.Property:
         application.showToolbars = false;
         return ctx.sync();
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.DocumentLoadCompleteEventArgs.Property:
+Visio.DocumentLoadCompleteEventArgs.load:
   - |-
     Visio.run(function (ctx) { 
-      var document1 = ctx.document;
-                 eventResult1 = document1.onDocumentLoadComplete.add(
-                  function (args){
-                       console.log("Document Loaded");
-                });
+        var document1 = ctx.document;
+        eventResult1 = document1.onDocumentLoadComplete.add(
+            function (args){
+                console.log("Document Loaded");
+            });
     
         return ctx.sync().then(function () {
-               console.log("Success");
-            });
+            console.log("Success");
+        });
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.Highlight.Property:
+Visio.Highlight.load:
   - |-
     Visio.run(function (ctx) { 
         var activePage = ctx.document.getActivePage();
@@ -178,12 +178,12 @@ Visio.Highlight.Property:
         shape.view.highlight = { color: "#E7E7E7", width: 100 };
         return ctx.sync();
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.Hyperlink.Property:
+Visio.Hyperlink.load:
   - |-
     Visio.run(function (ctx) { 
         var activePage = ctx.document.getActivePage();
@@ -197,12 +197,12 @@ Visio.Hyperlink.Property:
             console.log(hyperlink.extraInfo);
          });
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.HyperlinkCollection.Property:
+Visio.HyperlinkCollection.load:
   - |-
     Visio.run(function (ctx) { 
         var activePage = ctx.document.getActivePage();
@@ -212,17 +212,16 @@ Visio.HyperlinkCollection.Property:
         shapeHyperlinks.load();
             ctx.sync().then(function () {
                 for(var i=0; i<shapeHyperlinks.items.length;i++)
-                    {
-                      var hyperlink = shapeHyperlinks.items[i];
-                      console.log("Description:"+hyperlink.description +"Address:"+hyperlink.address +"SubAddress:  "+ hyperlink.subAddress);
-                    }
-    
-                });
+                {
+                    var hyperlink = shapeHyperlinks.items[i];
+                    console.log("Description:"+hyperlink.description +"Address:"+hyperlink.address +"SubAddress:  "+ hyperlink.subAddress);
+                }
+            });
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
 Visio.PageCollection.getItem:
   - |-
@@ -232,29 +231,29 @@ Visio.PageCollection.getItem:
         page.activate();
         return ctx.sync();
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.PageLoadCompleteEventArgs.Property:
+Visio.PageLoadCompleteEventArgs.load:
   - |-
     Visio.run(function (ctx) { 
-      var document1= ctx.document;
-                   var page = document1.getActivePage();
-                 eventResult1 = document1.onPageLoadComplete.add(
-                function (args){
-                       console.log("Page name: "+args.pageName);
-                });
+        var document1= ctx.document;
+        var page = document1.getActivePage();
+        eventResult1 = document1.onPageLoadComplete.add(
+            function (args){
+                console.log("Page name: "+args.pageName);
+            });
     
         return ctx.sync().then(function () {
-               console.log("Success");
-            });
+            console.log("Success");
+        });
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
 Visio.PageView.centerViewportOnShape:
   - |-
@@ -264,24 +263,24 @@ Visio.PageView.centerViewportOnShape:
         activePage.view.centerViewportOnShape(shape.Id);
         return ctx.sync();
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.PageView.Property:
+Visio.PageView.load:
   - |-
     Visio.run(function (ctx) { 
         var activePage = ctx.document.getActivePage();
         activePage.view.zoom = 300;
         return ctx.sync();
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.SelectionChangedEventArgs.Property:
+Visio.SelectionChangedEventArgs.load:
   - |-
     var eventResult; //Global Variable to store the EventHandlerResult returned on attaching handler.
     
@@ -291,12 +290,12 @@ Visio.SelectionChangedEventArgs.Property:
         {
             var doc = ctx.document;
             eventResult = doc.onSelectionChanged.add(
-        function (args){
-            console.log("Selected Shape Name: "+args.shapeNames[0]);
+                function (args) {
+                    console.log("Selected Shape Name: "+args.shapeNames[0]);
                 });
             return ctx.sync().then(function(){
-                    console.log("Handler attached");
-                });
+                console.log("Handler attached");
+            });
         }).catch(function(error) {
             console.log("Error: " + error);
             if (error instanceof OfficeExtension.Error) {
@@ -304,12 +303,10 @@ Visio.SelectionChangedEventArgs.Property:
             }
         });
     
-    
         function onSelectionChanged(args)
         {
             console.log(Date.now() + "Selection Changes Event" + JSON.stringify(args));
         }
-    
     }
     
     function RemoveHandler()
@@ -334,7 +331,7 @@ Visio.SelectionChangedEventArgs.Property:
             }
         });
     }
-Visio.Shape.Property:
+Visio.Shape.load:
   - |-
     Visio.run(function (ctx) { 
         var activePage = ctx.document.getActivePage();
@@ -348,10 +345,10 @@ Visio.Shape.Property:
             console.log(shape.Select );
         });
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
   - |-
     Visio.run(function (ctx) { 
@@ -360,10 +357,10 @@ Visio.Shape.Property:
         shape.view.highlight = { color: "#E7E7E7", width: 100 };
         return ctx.sync();
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
 Visio.ShapeCollection.getCount:
   - |-
@@ -373,87 +370,86 @@ Visio.ShapeCollection.getCount:
         return ctx.sync().then(function () {
             console.log("Shapes Count: " + numShapesActivePage.value);
         });
-    
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.ShapeDataItem.Property:
+Visio.ShapeDataItem.load:
   - |-
     Visio.run(function (ctx) { 
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
-            var shapeDataItem = shape.shapeDataItems.getItem(0);
+        var shapeDataItem = shape.shapeDataItems.getItem(0);
         shapeDataItem.load();
             return ctx.sync().then(function() {
-                    console.log(shapeDataItem.label);
-                    console.log(shapeDataItem.value);
+                console.log(shapeDataItem.label);
+                console.log(shapeDataItem.value);
             });
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.ShapeDataItemCollection.Property:
+Visio.ShapeDataItemCollection.load:
   - |-
     Visio.run(function (ctx) { 
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
-            var shapeDataItems = shape.shapeDataItems;
-            shapeDataItems.load();
-            return ctx.sync().then(function() {
-                for (var i = 0; i < shapeDataItems.items.length; i++)
-                {
-                    console.log(shapeDataItems.items[i].label);
-                    console.log(shapeDataItems.items[i].value);
-                }
-            });
-    }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        var shapeDataItems = shape.shapeDataItems;
+        shapeDataItems.load();
+        return ctx.sync().then(function() {
+            for (var i = 0; i < shapeDataItems.items.length; i++)
+            {
+                console.log(shapeDataItems.items[i].label);
+                console.log(shapeDataItems.items[i].value);
             }
+        });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.ShapeMouseEnterEventArgs.Property:
+Visio.ShapeMouseEnterEventArgs.load:
   - |-
     Visio.run(function (ctx) { 
-      var document1= ctx.document;
-                   var page = document1.getActivePage();
+        var document1= ctx.document;
+        var page = document1.getActivePage();
         eventResult2 = document1.onShapeMouseEnter.add(
-                function (args){            
-                             console.log(Date.now()+":OnShapeMouseEnter Event"+JSON.stringify(args));
-                });
+        function (args) {            
+            console.log(Date.now()+":OnShapeMouseEnter Event"+JSON.stringify(args));
+        });
         return ctx.sync().then(function () {
-               console.log("Success");
-            });
+            console.log("Success");
+        });
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.ShapeMouseLeaveEventArgs.Property:
+Visio.ShapeMouseLeaveEventArgs.load:
   - |-
     Visio.run(function (ctx) { 
-      var document1= ctx.document;
-                   var page = document1.getActivePage();
+        var document1= ctx.document;
+        var page = document1.getActivePage();
         eventResult2 = document1.onShapeMouseLeave.add(
-                    function (args){            
-                             console.log(Date.now()+":OnShapeMouseLeave Event"+JSON.stringify(args));
-                });
-        return ctx.sync().then(function () {
-               console.log("Success");
+            function (args){            
+                console.log(Date.now()+":OnShapeMouseLeave Event"+JSON.stringify(args));
             });
+        return ctx.sync().then(function () {
+            console.log("Success");
+        });
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
-Visio.ShapeView.Property:
+Visio.ShapeView.load:
   - |-
     Visio.run(function (ctx) { 
         var activePage = ctx.document.getActivePage();
@@ -461,10 +457,10 @@ Visio.ShapeView.Property:
         shape.view.highlight = { color: "#E7E7E7", width: 100 };
         return ctx.sync();
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
   - |-
     Visio.run(function (ctx) { 
@@ -473,10 +469,10 @@ Visio.ShapeView.Property:
         var overlayId=shape.view.addOverlay(1, "Visio Online", 2, 2, 50, 50);
         return ctx.sync();
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
   - |-
     Visio.run(function (ctx) { 
@@ -485,8 +481,8 @@ Visio.ShapeView.Property:
         shape.view.removeOverlay(1);
         return ctx.sync();
     }).catch(function(error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error) {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
     });
