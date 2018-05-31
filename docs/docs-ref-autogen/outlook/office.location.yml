@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides methods to get and set the location of a meeting in an Outlook add-in.
 
-      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 

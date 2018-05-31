@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the rule of the top/bottom conditional format.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalTopBottomRule
     fullName: excel.Excel.ConditionalTopBottomRule
     langs:
@@ -18,7 +18,7 @@ items:
     summary: |-
       The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: rank
     fullName: excel.Excel.ConditionalTopBottomRule.rank
     langs:
@@ -33,7 +33,7 @@ items:
     summary: |-
       Format values based on the top or bottom rank.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: excel.Excel.ConditionalTopBottomRule.type
     langs:

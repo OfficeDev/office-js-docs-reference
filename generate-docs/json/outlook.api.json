@@ -19,7 +19,8 @@
           "deprecatedMessage": [],
           "summary": [],
           "remarks": [],
-          "isBeta": false
+          "isBeta": false,
+          "isSealed": false
         },
         "AppointmentCompose": {
           "kind": "interface",
@@ -30,6 +31,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "end": {
               "kind": "property",
@@ -107,7 +109,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "location": {
               "kind": "property",
@@ -171,7 +176,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "optionalAttendees": {
               "kind": "property",
@@ -235,7 +243,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "requiredAttendees": {
               "kind": "property",
@@ -299,7 +310,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "start": {
               "kind": "property",
@@ -377,7 +391,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -390,6 +407,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "body": {
               "kind": "property",
@@ -425,7 +443,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "end": {
               "kind": "property",
@@ -503,7 +524,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "location": {
               "kind": "property",
@@ -560,7 +584,10 @@
                   "text": "Minimum permission level: ReadItem Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "optionalAttendees": {
               "kind": "property",
@@ -624,7 +651,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "requiredAttendees": {
               "kind": "property",
@@ -688,7 +718,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "resources": {
               "kind": "property",
@@ -700,7 +733,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "start": {
               "kind": "property",
@@ -778,7 +814,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "subject": {
               "kind": "property",
@@ -849,7 +888,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -862,6 +904,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "end": {
               "kind": "property",
@@ -873,7 +916,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "location": {
               "kind": "property",
@@ -937,7 +983,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "optionalAttendees": {
               "kind": "property",
@@ -1001,7 +1050,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "organizer": {
               "kind": "property",
@@ -1037,7 +1089,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "requiredAttendees": {
               "kind": "property",
@@ -1101,7 +1156,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "start": {
               "kind": "property",
@@ -1179,7 +1237,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -1192,6 +1253,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "asyncContext": {
               "kind": "property",
@@ -1203,7 +1265,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -1247,6 +1312,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "attachmentType": {
               "kind": "property",
@@ -1263,7 +1329,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "contentType": {
               "kind": "property",
@@ -1280,7 +1349,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "id": {
               "kind": "property",
@@ -1297,7 +1369,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "isInline": {
               "kind": "property",
@@ -1314,7 +1389,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "name": {
               "kind": "property",
@@ -1331,7 +1409,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "size": {
               "kind": "property",
@@ -1348,7 +1429,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -1385,6 +1469,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getAsync": {
               "kind": "method",
@@ -1475,7 +1560,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getTypeAsync": {
               "kind": "method",
@@ -1540,7 +1628,10 @@
                   "text": "Applicable Outlook mode: Compose"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "prependAsync": {
               "kind": "method",
@@ -1624,7 +1715,10 @@
                   "text": "Minimum permission level: ReadWriteItem Applicable Outlook mode: Compose Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters."
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setAsync": {
               "kind": "method",
@@ -1729,7 +1823,10 @@
                   "text": "InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text."
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setSelectedDataAsync": {
               "kind": "method",
@@ -1834,7 +1931,10 @@
                   "text": "InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text."
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -1847,6 +1947,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "coercionType": {
               "kind": "property",
@@ -1858,7 +1959,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -1902,6 +2006,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "addresses": {
               "kind": "property",
@@ -1918,7 +2023,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "businessName": {
               "kind": "property",
@@ -1935,7 +2043,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "emailAddresses": {
               "kind": "property",
@@ -1952,7 +2063,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "personName": {
               "kind": "property",
@@ -1969,7 +2083,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "phoneNumbers": {
               "kind": "property",
@@ -1986,7 +2103,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "urls": {
               "kind": "property",
@@ -2003,7 +2123,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -2040,6 +2163,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "displayLanguage": {
               "kind": "property",
@@ -2075,7 +2199,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "mailbox": {
               "kind": "property",
@@ -2139,7 +2266,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "roamingSettings": {
               "kind": "property",
@@ -2182,7 +2312,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -2226,6 +2359,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "get": {
               "kind": "method",
@@ -2283,7 +2417,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "remove": {
               "kind": "method",
@@ -2336,7 +2473,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "saveAsync": {
               "kind": "method",
@@ -2408,7 +2548,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -2487,7 +2630,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -2524,6 +2670,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "hostName": {
               "kind": "property",
@@ -2566,7 +2713,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "hostVersion": {
               "kind": "property",
@@ -2609,7 +2759,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "OWAView": {
               "kind": "property",
@@ -2687,7 +2840,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -2724,6 +2880,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "appointmentResponse": {
               "kind": "property",
@@ -2740,7 +2897,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "displayName": {
               "kind": "property",
@@ -2757,7 +2917,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "emailAddress": {
               "kind": "property",
@@ -2774,7 +2937,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "recipientType": {
               "kind": "property",
@@ -2791,7 +2957,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -2828,6 +2997,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "displayName": {
               "kind": "property",
@@ -2844,7 +3014,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "emailAddress": {
               "kind": "property",
@@ -2861,7 +3034,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -2940,6 +3116,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "addresses": {
               "kind": "property",
@@ -2956,7 +3133,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "contacts": {
               "kind": "property",
@@ -2973,7 +3153,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "emailAddresses": {
               "kind": "property",
@@ -2990,7 +3173,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "meetingSuggestions": {
               "kind": "property",
@@ -3007,7 +3193,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "phoneNumbers": {
               "kind": "property",
@@ -3024,7 +3213,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "taskSuggestions": {
               "kind": "property",
@@ -3041,7 +3233,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "urls": {
               "kind": "property",
@@ -3058,7 +3253,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3095,6 +3293,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "body": {
               "kind": "property",
@@ -3130,7 +3329,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "dateTimeCreated": {
               "kind": "property",
@@ -3166,7 +3368,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "dateTimeModifed": {
               "kind": "property",
@@ -3209,7 +3414,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "itemType": {
               "kind": "property",
@@ -3252,7 +3460,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "loadCustomPropertiesAsync": {
               "kind": "method",
@@ -3331,7 +3542,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "notificationMessages": {
               "kind": "property",
@@ -3367,7 +3581,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3380,6 +3597,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "addFileAttachmentAsync": {
               "kind": "method",
@@ -3510,7 +3728,10 @@
                   "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments."
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "addItemAttachmentAsync": {
               "kind": "method",
@@ -3634,7 +3855,10 @@
                   "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments."
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "close": {
               "kind": "method",
@@ -3695,7 +3919,10 @@
                   "text": "Applicable Outlook mode: Compose"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getInitializationContextAsync": {
               "kind": "method",
@@ -3774,7 +4001,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getSelectedDataAsync": {
               "kind": "method",
@@ -3858,7 +4088,10 @@
                   "text": "Applicable Outlook mode: Compose"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "removeAttachmentAsync": {
               "kind": "method",
@@ -3949,7 +4182,10 @@
                   "text": "Errors: InvalidAttachmentId - The attachment identifier does not exist."
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "saveAsync": {
               "kind": "method",
@@ -4063,7 +4299,10 @@
                   "text": "Errors: InvalidAttachmentId - The attachment identifier does not exist."
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setSelectedDataAsync": {
               "kind": "method",
@@ -4154,7 +4393,10 @@
                   "text": "Errors: InvalidAttachmentId - The attachment identifier does not exist."
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "subject": {
               "kind": "property",
@@ -4225,7 +4467,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -4238,6 +4483,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "attachments": {
               "kind": "property",
@@ -4280,7 +4526,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "displayReplyAllForm": {
               "kind": "method",
@@ -4361,7 +4610,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "displayReplyForm": {
               "kind": "method",
@@ -4442,7 +4694,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getEntities": {
               "kind": "method",
@@ -4489,7 +4744,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getEntitiesByType": {
               "kind": "method",
@@ -4561,7 +4819,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getFilteredEntitiesByName": {
               "kind": "method",
@@ -4633,7 +4894,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getRegExMatches": {
               "kind": "method",
@@ -4699,7 +4963,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getRegExMatchesByName": {
               "kind": "method",
@@ -4778,7 +5045,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getSelectedEntities": {
               "kind": "method",
@@ -4825,7 +5095,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getSelectedRegExMatches": {
               "kind": "method",
@@ -4891,7 +5164,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "itemClass": {
               "kind": "property",
@@ -4948,7 +5224,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "itemId": {
               "kind": "property",
@@ -4998,7 +5277,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "normalizedSubject": {
               "kind": "property",
@@ -5041,7 +5323,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "subject": {
               "kind": "property",
@@ -5112,7 +5397,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -5149,6 +5437,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "date": {
               "kind": "property",
@@ -5165,7 +5454,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "hours": {
               "kind": "property",
@@ -5182,7 +5474,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "milliseconds": {
               "kind": "property",
@@ -5199,7 +5494,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "minutes": {
               "kind": "property",
@@ -5216,7 +5514,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "month": {
               "kind": "property",
@@ -5233,7 +5534,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "seconds": {
               "kind": "property",
@@ -5250,7 +5554,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "timezoneOffset": {
               "kind": "property",
@@ -5267,7 +5574,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "year": {
               "kind": "property",
@@ -5284,7 +5594,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -5321,6 +5634,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getAsync": {
               "kind": "method",
@@ -5385,7 +5699,10 @@
                   "text": "Applicable Outlook mode: Compose"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setAsync": {
               "kind": "method",
@@ -5469,7 +5786,10 @@
                   "text": "Errors: DataExceedsMaximumSize - The location parameter is longer than 255 characters."
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -5534,6 +5854,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "addHandlerAsync": {
               "kind": "method",
@@ -5629,7 +5950,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "convertToEwsId": {
               "kind": "method",
@@ -5708,7 +6032,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "convertToLocalClientTime": {
               "kind": "method",
@@ -5775,7 +6102,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "convertToRestId": {
               "kind": "method",
@@ -5854,7 +6184,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "convertToUtcClientTime": {
               "kind": "method",
@@ -5919,7 +6252,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "displayAppointmentForm": {
               "kind": "method",
@@ -6007,7 +6343,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "displayMessageForm": {
               "kind": "method",
@@ -6095,7 +6434,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "displayNewAppointmentForm": {
               "kind": "method",
@@ -6183,7 +6525,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "displayNewMessageForm": {
               "kind": "method",
@@ -6250,7 +6595,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "ewsUrl": {
               "kind": "property",
@@ -6314,7 +6662,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getCallbackTokenAsync": {
               "kind": "method",
@@ -6435,7 +6786,10 @@
                   "text": "Applicable Outlook mode: Compose and read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getUserIdentityTokenAsync": {
               "kind": "method",
@@ -6514,7 +6868,10 @@
                   "text": "Applicable Outlook mode: Compose and read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "item": {
               "kind": "property",
@@ -6531,7 +6888,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "makeEwsRequestAsync": {
               "kind": "method",
@@ -6692,7 +7052,10 @@
                   "text": "Applicable Outlook mode: Compose and read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "restUrl": {
               "kind": "property",
@@ -6749,7 +7112,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -7342,6 +7708,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "attendees": {
               "kind": "property",
@@ -7358,7 +7725,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "end": {
               "kind": "property",
@@ -7375,7 +7745,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "location": {
               "kind": "property",
@@ -7392,7 +7765,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "meetingstring": {
               "kind": "property",
@@ -7409,7 +7785,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "start": {
               "kind": "property",
@@ -7426,7 +7805,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "subject": {
               "kind": "property",
@@ -7443,7 +7825,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -7456,6 +7841,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "conversationId": {
               "kind": "property",
@@ -7505,7 +7891,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -7518,6 +7907,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "bcc": {
               "kind": "property",
@@ -7553,7 +7943,10 @@
                   "text": "Applicable Outlook mode: Compose"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "cc": {
               "kind": "property",
@@ -7617,7 +8010,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "to": {
               "kind": "property",
@@ -7681,7 +8077,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -7694,6 +8093,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "cc": {
               "kind": "property",
@@ -7757,7 +8157,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "from": {
               "kind": "property",
@@ -7807,7 +8210,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "internetMessageId": {
               "kind": "property",
@@ -7843,7 +8249,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "sender": {
               "kind": "property",
@@ -7893,7 +8302,10 @@
                   "text": "Applicable Outlook mode: Read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "to": {
               "kind": "property",
@@ -7957,7 +8369,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -7994,6 +8409,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "icon": {
               "kind": "property",
@@ -8010,7 +8426,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "key": {
               "kind": "property",
@@ -8027,7 +8446,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "message": {
               "kind": "property",
@@ -8044,7 +8466,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "persistent": {
               "kind": "property",
@@ -8061,7 +8486,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "type": {
               "kind": "property",
@@ -8078,7 +8506,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -8115,6 +8546,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "addAsync": {
               "kind": "method",
@@ -8203,7 +8635,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getAllAsync": {
               "kind": "method",
@@ -8268,7 +8703,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "removeAsync": {
               "kind": "method",
@@ -8345,7 +8783,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "replaceAsync": {
               "kind": "method",
@@ -8441,7 +8882,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -8485,6 +8929,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "originalPhoneString": {
               "kind": "property",
@@ -8501,7 +8946,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "phoneString": {
               "kind": "property",
@@ -8518,7 +8966,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "type": {
               "kind": "property",
@@ -8535,7 +8986,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -8565,6 +9019,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "addAsync": {
               "kind": "method",
@@ -8676,7 +9131,10 @@
                   "text": "Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries."
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getAsync": {
               "kind": "method",
@@ -8736,7 +9194,10 @@
                   "text": "Applicable Outlook mode: Compose"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setAsync": {
               "kind": "method",
@@ -8855,7 +9316,10 @@
                   "text": "Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries."
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -8868,6 +9332,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "itemId": {
               "kind": "property",
@@ -8879,7 +9344,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "name": {
               "kind": "property",
@@ -8891,7 +9359,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "type": {
               "kind": "property",
@@ -8903,7 +9374,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "url": {
               "kind": "property",
@@ -8915,7 +9389,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -8928,6 +9405,7 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "attachments": {
               "kind": "property",
@@ -8939,7 +9417,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "callback": {
               "kind": "property",
@@ -8951,7 +9432,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "htmlBody": {
               "kind": "property",
@@ -8963,7 +9447,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -9028,6 +9515,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "get": {
               "kind": "method",
@@ -9085,7 +9573,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "remove": {
               "kind": "method",
@@ -9138,7 +9629,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "saveAsync": {
               "kind": "method",
@@ -9198,7 +9692,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -9284,7 +9781,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -9356,6 +9856,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getAsync": {
               "kind": "method",
@@ -9408,7 +9909,10 @@
                   "text": "Applicable Outlook mode: Compose"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setAsync": {
               "kind": "method",
@@ -9499,7 +10003,10 @@
                   "text": "Errors: DataExceedsMaximumSize - The subject parameter is longer than 255 characters."
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -9543,6 +10050,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "assignees": {
               "kind": "property",
@@ -9559,7 +10067,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "taskString": {
               "kind": "property",
@@ -9576,7 +10087,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -9613,6 +10127,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getAsync": {
               "kind": "method",
@@ -9672,7 +10187,10 @@
                   "text": "Applicable Outlook mode: Compose"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setAsync": {
               "kind": "method",
@@ -9770,7 +10288,10 @@
                   "text": "Errors: InvalidEndTime - The appointment end time is before the appointment start time."
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -9800,6 +10321,7 @@
             }
           ],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "accountType": {
               "kind": "property",
@@ -9849,7 +10371,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "displayName": {
               "kind": "property",
@@ -9885,7 +10410,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "emailAddress": {
               "kind": "property",
@@ -9921,7 +10449,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "timeZone": {
               "kind": "property",
@@ -9957,7 +10488,10 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         }

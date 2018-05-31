@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalRangeBorderIndex
-    summary: '\[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]'
+    summary: '\[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ConditionalRangeBorderIndex
     fullName: excel.Excel.ConditionalRangeBorderIndex
     langs:

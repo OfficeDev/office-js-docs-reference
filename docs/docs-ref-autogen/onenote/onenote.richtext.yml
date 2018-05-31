@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a RichText object in a Paragraph.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.RichText
     fullName: onenote.OneNote.RichText
     langs:
@@ -27,7 +27,7 @@ items:
     summary: |-
       Get the HTML of the rich text
 
-      \[ [API set: OneNoteApi](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: getHtml()
     fullName: onenote.OneNote.RichText.getHtml
     langs:
@@ -43,7 +43,7 @@ items:
     summary: |-
       Gets the ID of the RichText object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.RichText.id
     langs:
@@ -58,7 +58,7 @@ items:
     summary: |-
       The language id of the text. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: languageId
     fullName: onenote.OneNote.RichText.languageId
     langs:
@@ -155,7 +155,7 @@ items:
     summary: |-
       Gets the Paragraph object that contains the RichText object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: paragraph
     fullName: onenote.OneNote.RichText.paragraph
     langs:
@@ -170,7 +170,7 @@ items:
     summary: |-
       Gets the text content of the RichText object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: text
     fullName: onenote.OneNote.RichText.text
     langs:

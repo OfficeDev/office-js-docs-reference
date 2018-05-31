@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
 
-      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -24,7 +24,7 @@ items:
       server to get the subject of an appointment or message.
 
 
-      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -57,7 +57,7 @@ items:
       place.
 
 
-      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 

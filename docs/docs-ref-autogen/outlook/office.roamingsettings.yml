@@ -25,7 +25,7 @@ items:
       and reopened.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: Restricted
 
@@ -45,7 +45,7 @@ items:
     summary: |-
       Retrieves the specified setting.
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: Restricted
 
@@ -70,7 +70,7 @@ items:
     summary: |-
       Removes the specified setting
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: Restricted
 
@@ -102,7 +102,7 @@ items:
       saveAsync method.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: Restricted
 
@@ -142,7 +142,7 @@ items:
       is called.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: Restricted
 

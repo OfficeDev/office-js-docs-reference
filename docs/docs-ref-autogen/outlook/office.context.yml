@@ -6,7 +6,7 @@ items:
       listing documents only those interfaces that are used by Outlook add-ins.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       For a full listing of the Office.context namespace, see the \[Office.context reference in the Shared
       API\]&lt;https://dev.office.com/reference/add-ins/shared/office.context.htm&gt;.
@@ -33,7 +33,7 @@ items:
       Language in the Office host application.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: 'Applicable Outlook mode: Compose or read'
     name: displayLanguage
     fullName: outlook.Office.Context.displayLanguage
@@ -57,7 +57,7 @@ items:
 
       - userProfile: Provides information about the user in an Outlook add-in.
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: Restricted
 
@@ -81,7 +81,7 @@ items:
       that is available to that add-in when it is running from any host client application used to access that mailbox.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: Restricted
 

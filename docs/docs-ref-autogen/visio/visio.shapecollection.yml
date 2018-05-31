@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Shape Collection.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: Visio.ShapeCollection
     fullName: visio.Visio.ShapeCollection
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Gets the number of Shapes in the collection.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: getCount()
     fullName: visio.Visio.ShapeCollection.getCount
     langs:
@@ -58,7 +58,7 @@ items:
     summary: |-
       Gets a Shape using its key (name or Index).
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: getItem(key)
     fullName: visio.Visio.ShapeCollection.getItem
     langs:

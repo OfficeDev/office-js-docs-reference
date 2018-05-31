@@ -28,7 +28,7 @@ items:
     summary: |-
       Gets an array of attachments for the item. Read mode only.
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
       returned. For more information, see \[Blocked attachments in
@@ -70,7 +70,7 @@ items:
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -122,7 +122,7 @@ items:
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -159,7 +159,7 @@ items:
 
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -181,7 +181,7 @@ items:
 
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: Restricted
 
@@ -228,7 +228,7 @@ items:
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -274,7 +274,7 @@ items:
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -311,7 +311,7 @@ items:
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -341,7 +341,7 @@ items:
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
-      \[ [API set: Mailbox 1.6](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -378,7 +378,7 @@ items:
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
 
-      \[ [API set: Mailbox 1.6](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -419,7 +419,7 @@ items:
       message class IPM.Appointment.Contoso.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -450,7 +450,7 @@ items:
       details, see Use the Outlook REST APIs from an Outlook add-in.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -474,7 +474,7 @@ items:
       are added by email programs. To get the subject of the item with the prefixes intact, use the subject property.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -510,7 +510,7 @@ items:
       The subject property returns a Subject object that provides methods to get and set the subject.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 

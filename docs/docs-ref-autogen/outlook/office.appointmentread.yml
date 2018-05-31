@@ -45,7 +45,7 @@ items:
       the appointment.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -80,7 +80,7 @@ items:
       attendees for a meeting.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -99,7 +99,7 @@ items:
     summary: |-
       Gets the email address of the meeting organizer for a specified meeting. Read mode only.
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -134,7 +134,7 @@ items:
       attendees for a meeting.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -174,7 +174,7 @@ items:
       convert the local time on the client to UTC for the server.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 

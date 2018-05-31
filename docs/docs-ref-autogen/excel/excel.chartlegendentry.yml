@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the legendEntry in legendEntryCollection.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartLegendEntry
     fullName: excel.Excel.ChartLegendEntry
     langs:
@@ -76,7 +76,7 @@ items:
     summary: |-
       Represents the visible of a chart legend entry.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: excel.Excel.ChartLegendEntry.visible
     langs:

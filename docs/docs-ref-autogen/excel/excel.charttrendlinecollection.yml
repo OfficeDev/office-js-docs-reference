@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of Chart Trendlines.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartTrendlineCollection
     fullName: excel.Excel.ChartTrendlineCollection
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Adds a new trendline to trendline collection.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: add(type)
     fullName: excel.Excel.ChartTrendlineCollection.add
     langs:
@@ -45,7 +45,7 @@ items:
     summary: |-
       Returns the number of trendlines in the collection.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: excel.Excel.ChartTrendlineCollection.getCount
     langs:
@@ -61,7 +61,7 @@ items:
     summary: |-
       Get trendline object by index, which is the insertion order in items array.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(index)
     fullName: excel.Excel.ChartTrendlineCollection.getItem
     langs:

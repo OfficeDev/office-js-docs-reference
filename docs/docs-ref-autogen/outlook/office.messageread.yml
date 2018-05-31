@@ -35,7 +35,7 @@ items:
       of the message.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -62,7 +62,7 @@ items:
       Note: The recipientType property of the EmailAddressDetails object in the from property is undefined.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -81,7 +81,7 @@ items:
     summary: |-
       Gets the Internet message identifier for an email message. Read mode only.
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -108,7 +108,7 @@ items:
       Note: The recipientType property of the EmailAddressDetails object in the sender property is undefined.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -143,7 +143,7 @@ items:
       of the message.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 

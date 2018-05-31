@@ -6,7 +6,7 @@ items:
       below), range object, reference to a range. This object can be used to obtain range object associated with names.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.NamedItem
     fullName: excel.Excel.NamedItem
     langs:
@@ -36,7 +36,7 @@ items:
     summary: |-
       Returns an object containing values and types of the named item.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: arrayValues
     fullName: excel.Excel.NamedItem.arrayValues
     langs:
@@ -51,7 +51,7 @@ items:
     summary: |-
       Represents the comment associated with this name.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: comment
     fullName: excel.Excel.NamedItem.comment
     langs:
@@ -66,7 +66,7 @@ items:
     summary: |-
       Deletes the given name.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: excel.Excel.NamedItem.delete
     langs:
@@ -107,7 +107,7 @@ items:
     summary: |-
       Gets or sets the formula of the named item. Formula always starts with a '=' sign.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: formula
     fullName: excel.Excel.NamedItem.formula
     langs:
@@ -154,7 +154,7 @@ items:
       range.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
     fullName: excel.Excel.NamedItem.getRange
     langs:
@@ -192,7 +192,7 @@ items:
       range.
 
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getRangeOrNullObject()
     fullName: excel.Excel.NamedItem.getRangeOrNullObject
     langs:
@@ -248,7 +248,7 @@ items:
     summary: |-
       The name of the object. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.NamedItem.name
     langs:
@@ -263,7 +263,7 @@ items:
     summary: |-
       Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: scope
     fullName: excel.Excel.NamedItem.scope
     langs:
@@ -314,7 +314,7 @@ items:
 
 
       \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
-      Array](http://bing.com?type=excel) \]
+      Array](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: excel.Excel.NamedItem.type
     langs:
@@ -329,7 +329,7 @@ items:
     summary: |-
       Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: value
     fullName: excel.Excel.NamedItem.value
     langs:
@@ -344,7 +344,7 @@ items:
     summary: |-
       Specifies whether the object is visible or not.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: excel.Excel.NamedItem.visible
     langs:
@@ -361,7 +361,7 @@ items:
       instead.
 
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
     fullName: excel.Excel.NamedItem.worksheet
     langs:
@@ -378,7 +378,7 @@ items:
       workbook instead.
 
 
-      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetOrNullObject
     fullName: excel.Excel.NamedItem.worksheetOrNullObject
     langs:

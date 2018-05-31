@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the protection of a sheet object.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetProtection
     fullName: excel.Excel.WorksheetProtection
     langs:
@@ -44,7 +44,7 @@ items:
     summary: |-
       Sheet protection options.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: options
     fullName: excel.Excel.WorksheetProtection.options
     langs:
@@ -56,10 +56,12 @@ items:
         type:
           - Excel.WorksheetProtectionOptions
   - uid: excel.Excel.WorksheetProtection.protect
-    summary: |-
+    summary: >-
       Protects a worksheet. Fails if the worksheet has already been protected.
 
-      \[ [API set: ExcelApi 1.2 for options; 1.7 for password](http://bing.com?type=excel) \]
+
+      \[ [API set: ExcelApi 1.2 for options; 1.7 for
+      password](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: 'protect(options, password)'
     fullName: excel.Excel.WorksheetProtection.protect
     langs:
@@ -108,7 +110,7 @@ items:
     summary: |-
       Indicates if the worksheet is protected. Read-Only.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: protected
     fullName: excel.Excel.WorksheetProtection.protected
     langs:
@@ -135,7 +137,7 @@ items:
     summary: |-
       Unprotects a worksheet.
 
-      \[ [API set: ExcelApi 1.7 for password](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7 for password](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: unprotect(password)
     fullName: excel.Excel.WorksheetProtection.unprotect
     langs:

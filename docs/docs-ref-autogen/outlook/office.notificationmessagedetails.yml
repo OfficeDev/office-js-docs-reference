@@ -4,7 +4,7 @@ items:
     summary: |-
       An array of NotificationMessageDetails objects are returned by the NotificationMessages.getAllAsync method.
 
-      \[ [API set: Mailbox 1.3](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 

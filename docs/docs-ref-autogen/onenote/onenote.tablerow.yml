@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a row in a table.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.TableRow
     fullName: onenote.OneNote.TableRow
     langs:
@@ -30,7 +30,7 @@ items:
     summary: |-
       Gets the number of cells in the row. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: cellCount
     fullName: onenote.OneNote.TableRow.cellCount
     langs:
@@ -45,7 +45,7 @@ items:
     summary: |-
       Gets the cells in the row. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: cells
     fullName: onenote.OneNote.TableRow.cells
     langs:
@@ -60,7 +60,7 @@ items:
     summary: |-
       Clears the contents of the row.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: clear()
     fullName: onenote.OneNote.TableRow.clear
     langs:
@@ -76,7 +76,7 @@ items:
     summary: |-
       Gets the ID of the row. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: id
     fullName: onenote.OneNote.TableRow.id
     langs:
@@ -91,7 +91,7 @@ items:
     summary: |-
       Inserts a row before or after the current row.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: 'insertRowAsSibling(insertLocation, values)'
     fullName: onenote.OneNote.TableRow.insertRowAsSibling
     langs:
@@ -273,7 +273,7 @@ items:
     summary: |-
       Gets the parent table. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: parentTable
     fullName: onenote.OneNote.TableRow.parentTable
     langs:
@@ -288,7 +288,7 @@ items:
     summary: |-
       Gets the index of the row in its parent table. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: rowIndex
     fullName: onenote.OneNote.TableRow.rowIndex
     langs:

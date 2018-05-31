@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a conditional format DataBar Format for the positive side of the data bar.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalDataBarPositiveFormat
     fullName: excel.Excel.ConditionalDataBarPositiveFormat
     langs:
@@ -26,7 +26,7 @@ items:
       color (e.g. "orange"). "" (empty string) if no border is present or set.
 
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: borderColor
     fullName: excel.Excel.ConditionalDataBarPositiveFormat.borderColor
     langs:
@@ -43,7 +43,7 @@ items:
       "orange").
 
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: fillColor
     fullName: excel.Excel.ConditionalDataBarPositiveFormat.fillColor
     langs:
@@ -58,7 +58,7 @@ items:
     summary: |-
       Boolean representation of whether or not the DataBar has a gradient.
 
-      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: gradientFill
     fullName: excel.Excel.ConditionalDataBarPositiveFormat.gradientFill
     langs:

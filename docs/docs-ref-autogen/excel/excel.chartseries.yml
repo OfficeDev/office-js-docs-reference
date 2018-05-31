@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a series in a chart.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartSeries
     fullName: excel.Excel.ChartSeries
     langs:
@@ -41,7 +41,7 @@ items:
     summary: |-
       Represents the chart type of a series. See Excel.ChartType for details.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: chartType
     fullName: excel.Excel.ChartSeries.chartType
     langs:
@@ -83,7 +83,7 @@ items:
     summary: |-
       Deletes the chart series.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: excel.Excel.ChartSeries.delete
     langs:
@@ -101,7 +101,7 @@ items:
       invalid argument exception on invalid charts.
 
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: doughnutHoleSize
     fullName: excel.Excel.ChartSeries.doughnutHoleSize
     langs:
@@ -116,7 +116,7 @@ items:
     summary: |-
       Boolean value representing if the series is filtered or not. Not applicable for surface charts.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: filtered
     fullName: excel.Excel.ChartSeries.filtered
     langs:
@@ -131,7 +131,7 @@ items:
     summary: |-
       Represents the formatting of a chart series, which includes fill and line formatting.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: excel.Excel.ChartSeries.format
     langs:
@@ -148,7 +148,7 @@ items:
       line and pie charts. Throws an invalid argument exception on invalid charts.
 
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: gapWidth
     fullName: excel.Excel.ChartSeries.gapWidth
     langs:
@@ -163,7 +163,7 @@ items:
     summary: |-
       Boolean value representing if the series has data labels or not.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: hasDataLabels
     fullName: excel.Excel.ChartSeries.hasDataLabels
     langs:
@@ -217,7 +217,7 @@ items:
     summary: |-
       Represents markers background color of a chart series.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: markerBackgroundColor
     fullName: excel.Excel.ChartSeries.markerBackgroundColor
     langs:
@@ -232,7 +232,7 @@ items:
     summary: |-
       Represents markers foreground color of a chart series.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: markerForegroundColor
     fullName: excel.Excel.ChartSeries.markerForegroundColor
     langs:
@@ -247,7 +247,7 @@ items:
     summary: |-
       Represents marker size of a chart series.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: markerSize
     fullName: excel.Excel.ChartSeries.markerSize
     langs:
@@ -296,7 +296,7 @@ items:
     summary: |-
       Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: markerStyle
     fullName: excel.Excel.ChartSeries.markerStyle
     langs:
@@ -349,7 +349,7 @@ items:
     summary: |-
       Represents the name of a series in a chart.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.ChartSeries.name
     langs:
@@ -364,7 +364,7 @@ items:
     summary: |-
       Represents the plot order of a chart series within the chart group.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: plotOrder
     fullName: excel.Excel.ChartSeries.plotOrder
     langs:
@@ -379,7 +379,7 @@ items:
     summary: |-
       Represents a collection of all points in the series.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: points
     fullName: excel.Excel.ChartSeries.points
     langs:
@@ -416,7 +416,7 @@ items:
     summary: |-
       Set bubble sizes for a chart series. Only works for bubble charts.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: setBubbleSizes(sourceData)
     fullName: excel.Excel.ChartSeries.setBubbleSizes
     langs:
@@ -437,7 +437,7 @@ items:
     summary: |-
       Set values for a chart series. For scatter chart, it means Y axis values.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: setValues(sourceData)
     fullName: excel.Excel.ChartSeries.setValues
     langs:
@@ -458,7 +458,7 @@ items:
     summary: |-
       Set values of X axis for a chart series. Only works for scatter charts.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: setXAxisValues(sourceData)
     fullName: excel.Excel.ChartSeries.setXAxisValues
     langs:
@@ -479,7 +479,7 @@ items:
     summary: |-
       Boolean value representing if the series has a shadow or not.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: showShadow
     fullName: excel.Excel.ChartSeries.showShadow
     langs:
@@ -494,7 +494,7 @@ items:
     summary: |-
       Boolean value representing if the series is smooth or not. Only applicable for line and scatter charts.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: smooth
     fullName: excel.Excel.ChartSeries.smooth
     langs:
@@ -521,7 +521,7 @@ items:
     summary: |-
       Represents a collection of trendlines in the series.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: trendlines
     fullName: excel.Excel.ChartSeries.trendlines
     langs:

@@ -6,7 +6,7 @@ items:
       namespace. A scoped collection cannot be scoped any further.
 
 
-      \[ [API set: ExcelApi 1.5](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.5](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CustomXmlPartScopedCollection
     fullName: excel.Excel.CustomXmlPartScopedCollection
     langs:
@@ -28,7 +28,7 @@ items:
     summary: |-
       Gets the number of CustomXML parts in this collection.
 
-      \[ [API set: ExcelApi 1.5](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.5](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: excel.Excel.CustomXmlPartScopedCollection.getCount
     langs:
@@ -44,7 +44,7 @@ items:
     summary: |-
       Gets a custom XML part based on its ID.
 
-      \[ [API set: ExcelApi 1.5](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.5](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(id)
     fullName: excel.Excel.CustomXmlPartScopedCollection.getItem
     langs:
@@ -67,7 +67,7 @@ items:
       will be true.
 
 
-      \[ [API set: ExcelApi 1.5](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.5](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(id)
     fullName: excel.Excel.CustomXmlPartScopedCollection.getItemOrNullObject
     langs:
@@ -121,7 +121,7 @@ items:
     summary: |-
       If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error.
 
-      \[ [API set: ExcelApi 1.5](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.5](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getOnlyItem()
     fullName: excel.Excel.CustomXmlPartScopedCollection.getOnlyItem
     langs:
@@ -137,7 +137,7 @@ items:
     summary: |-
       If the collection contains exactly one item, this method returns it. Otherwise, this method returns Null.
 
-      \[ [API set: ExcelApi 1.5](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.5](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getOnlyItemOrNullObject()
     fullName: excel.Excel.CustomXmlPartScopedCollection.getOnlyItemOrNullObject
     langs:

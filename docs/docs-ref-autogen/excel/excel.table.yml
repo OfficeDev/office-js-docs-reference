@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents an Excel table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Table
     fullName: excel.Excel.Table
     langs:
@@ -45,7 +45,7 @@ items:
     summary: |-
       Clears all the filters currently applied on the table.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: clearFilters()
     fullName: excel.Excel.Table.clearFilters
     langs:
@@ -61,7 +61,7 @@ items:
     summary: |-
       Represents a collection of all the columns in the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: columns
     fullName: excel.Excel.Table.columns
     langs:
@@ -76,7 +76,7 @@ items:
     summary: |-
       Converts the table into a normal range of cells. All data is preserved.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: convertToRange()
     fullName: excel.Excel.Table.convertToRange
     langs:
@@ -110,7 +110,7 @@ items:
     summary: |-
       Deletes the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: excel.Excel.Table.delete
     langs:
@@ -144,7 +144,7 @@ items:
     summary: |-
       Gets the range object associated with the data body of the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getDataBodyRange()
     fullName: excel.Excel.Table.getDataBodyRange
     langs:
@@ -181,7 +181,7 @@ items:
     summary: |-
       Gets the range object associated with header row of the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getHeaderRowRange()
     fullName: excel.Excel.Table.getHeaderRowRange
     langs:
@@ -218,7 +218,7 @@ items:
     summary: |-
       Gets the range object associated with the entire table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getRange()
     fullName: excel.Excel.Table.getRange
     langs:
@@ -255,7 +255,7 @@ items:
     summary: |-
       Gets the range object associated with totals row of the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getTotalRowRange()
     fullName: excel.Excel.Table.getTotalRowRange
     langs:
@@ -292,7 +292,7 @@ items:
     summary: |-
       Indicates whether the first column contains special formatting.
 
-      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: highlightFirstColumn
     fullName: excel.Excel.Table.highlightFirstColumn
     langs:
@@ -307,7 +307,7 @@ items:
     summary: |-
       Indicates whether the last column contains special formatting.
 
-      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: highlightLastColumn
     fullName: excel.Excel.Table.highlightLastColumn
     langs:
@@ -324,7 +324,7 @@ items:
       same even when the table is renamed. Read-only.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: excel.Excel.Table.id
     langs:
@@ -414,7 +414,7 @@ items:
     summary: |-
       Name of the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: excel.Excel.Table.name
     langs:
@@ -429,7 +429,7 @@ items:
     summary: |-
       Occurs when data changed on a specific table.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: onChanged
     fullName: excel.Excel.Table.onChanged
     langs:
@@ -444,7 +444,7 @@ items:
     summary: |-
       Occurs when the selection changed on a specific table.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: onSelectionChanged
     fullName: excel.Excel.Table.onSelectionChanged
     langs:
@@ -459,7 +459,7 @@ items:
     summary: |-
       Reapplies all the filters currently on the table.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: reapplyFilters()
     fullName: excel.Excel.Table.reapplyFilters
     langs:
@@ -475,7 +475,7 @@ items:
     summary: |-
       Represents a collection of all the rows in the table.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: rows
     fullName: excel.Excel.Table.rows
     langs:
@@ -514,7 +514,7 @@ items:
       ones to make reading the table easier.
 
 
-      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: showBandedColumns
     fullName: excel.Excel.Table.showBandedColumns
     langs:
@@ -531,7 +531,7 @@ items:
       make reading the table easier.
 
 
-      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: showBandedRows
     fullName: excel.Excel.Table.showBandedRows
     langs:
@@ -548,7 +548,7 @@ items:
       the table contains a header row.
 
 
-      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: showFilterButton
     fullName: excel.Excel.Table.showFilterButton
     langs:
@@ -563,7 +563,7 @@ items:
     summary: |-
       Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: showHeaders
     fullName: excel.Excel.Table.showHeaders
     langs:
@@ -578,7 +578,7 @@ items:
     summary: |-
       Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: showTotals
     fullName: excel.Excel.Table.showTotals
     langs:
@@ -593,7 +593,7 @@ items:
     summary: |-
       Represents the sorting for the table.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: sort
     fullName: excel.Excel.Table.sort
     langs:
@@ -611,7 +611,7 @@ items:
       style present in the workbook can also be specified.
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: excel.Excel.Table.style
     langs:
@@ -638,7 +638,7 @@ items:
     summary: |-
       The worksheet containing the current table.
 
-      \[ [API set: ExcelApi 1.2](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
     fullName: excel.Excel.Table.worksheet
     langs:

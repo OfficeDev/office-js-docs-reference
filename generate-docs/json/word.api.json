@@ -94,6 +94,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "createDocument": {
               "kind": "method",
@@ -134,7 +135,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "newObject": {
               "kind": "method",
@@ -163,7 +167,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -179,7 +186,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -204,6 +214,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "clear": {
               "kind": "method",
@@ -231,7 +242,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "contentControls": {
               "kind": "property",
@@ -255,7 +269,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "font": {
               "kind": "property",
@@ -279,7 +296,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getHtml": {
               "kind": "method",
@@ -307,7 +327,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getOoxml": {
               "kind": "method",
@@ -335,7 +358,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getRange": {
               "kind": "method",
@@ -376,7 +402,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "inlinePictures": {
               "kind": "property",
@@ -400,7 +429,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertBreak": {
               "kind": "method",
@@ -453,7 +485,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertContentControl": {
               "kind": "method",
@@ -481,7 +516,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertFileFromBase64": {
               "kind": "method",
@@ -534,7 +572,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertHtml": {
               "kind": "method",
@@ -587,7 +628,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertInlinePictureFromBase64": {
               "kind": "method",
@@ -640,7 +684,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertOoxml": {
               "kind": "method",
@@ -693,7 +740,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertParagraph": {
               "kind": "method",
@@ -746,7 +796,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertTable": {
               "kind": "method",
@@ -823,7 +876,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertText": {
               "kind": "method",
@@ -876,7 +932,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "lists": {
               "kind": "property",
@@ -900,7 +959,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -929,7 +991,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "paragraphs": {
               "kind": "property",
@@ -953,7 +1018,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentBody": {
               "kind": "property",
@@ -977,7 +1045,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentBodyOrNullObject": {
               "kind": "property",
@@ -1001,7 +1072,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentContentControl": {
               "kind": "property",
@@ -1025,7 +1099,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentContentControlOrNullObject": {
               "kind": "property",
@@ -1049,7 +1126,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentSection": {
               "kind": "property",
@@ -1073,7 +1153,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentSectionOrNullObject": {
               "kind": "property",
@@ -1097,7 +1180,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "search": {
               "kind": "method",
@@ -1150,7 +1236,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "select": {
               "kind": "method",
@@ -1191,7 +1280,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -1227,7 +1319,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "style": {
               "kind": "property",
@@ -1251,7 +1346,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "styleBuiltIn": {
               "kind": "property",
@@ -1275,7 +1373,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "tables": {
               "kind": "property",
@@ -1299,7 +1400,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "text": {
               "kind": "property",
@@ -1323,7 +1427,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -1339,7 +1446,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -1360,7 +1470,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "type": {
               "kind": "property",
@@ -1384,7 +1497,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -1405,7 +1521,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -1942,6 +2061,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "appearance": {
               "kind": "property",
@@ -1965,7 +2085,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "cannotDelete": {
               "kind": "property",
@@ -1989,7 +2112,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "cannotEdit": {
               "kind": "property",
@@ -2013,7 +2139,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "clear": {
               "kind": "method",
@@ -2041,7 +2170,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "color": {
               "kind": "property",
@@ -2065,7 +2197,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "contentControls": {
               "kind": "property",
@@ -2089,7 +2224,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "delete": {
               "kind": "method",
@@ -2130,7 +2268,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "font": {
               "kind": "property",
@@ -2154,7 +2295,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getHtml": {
               "kind": "method",
@@ -2182,7 +2326,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getOoxml": {
               "kind": "method",
@@ -2210,7 +2357,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getRange": {
               "kind": "method",
@@ -2251,7 +2401,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getTextRanges": {
               "kind": "method",
@@ -2304,7 +2457,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "id": {
               "kind": "property",
@@ -2328,7 +2484,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "inlinePictures": {
               "kind": "property",
@@ -2352,7 +2511,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertBreak": {
               "kind": "method",
@@ -2405,7 +2567,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertFileFromBase64": {
               "kind": "method",
@@ -2458,7 +2623,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertHtml": {
               "kind": "method",
@@ -2511,7 +2679,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertInlinePictureFromBase64": {
               "kind": "method",
@@ -2564,7 +2735,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertOoxml": {
               "kind": "method",
@@ -2617,7 +2791,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertParagraph": {
               "kind": "method",
@@ -2670,7 +2847,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertTable": {
               "kind": "method",
@@ -2747,7 +2927,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertText": {
               "kind": "method",
@@ -2800,7 +2983,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "lists": {
               "kind": "property",
@@ -2824,7 +3010,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -2853,7 +3042,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "paragraphs": {
               "kind": "property",
@@ -2877,7 +3069,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentBody": {
               "kind": "property",
@@ -2901,7 +3096,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentContentControl": {
               "kind": "property",
@@ -2925,7 +3123,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentContentControlOrNullObject": {
               "kind": "property",
@@ -2949,7 +3150,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTable": {
               "kind": "property",
@@ -2973,7 +3177,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTableCell": {
               "kind": "property",
@@ -2997,7 +3204,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTableCellOrNullObject": {
               "kind": "property",
@@ -3021,7 +3231,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTableOrNullObject": {
               "kind": "property",
@@ -3045,7 +3258,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "placeholderText": {
               "kind": "property",
@@ -3069,7 +3285,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "removeWhenEdited": {
               "kind": "property",
@@ -3093,7 +3312,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "search": {
               "kind": "method",
@@ -3146,7 +3368,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "select": {
               "kind": "method",
@@ -3187,7 +3412,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -3223,7 +3451,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "split": {
               "kind": "method",
@@ -3300,7 +3531,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "style": {
               "kind": "property",
@@ -3324,7 +3558,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "styleBuiltIn": {
               "kind": "property",
@@ -3348,7 +3585,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "subtype": {
               "kind": "property",
@@ -3372,7 +3612,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "tables": {
               "kind": "property",
@@ -3396,7 +3639,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "tag": {
               "kind": "property",
@@ -3420,7 +3666,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "text": {
               "kind": "property",
@@ -3444,7 +3693,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "title": {
               "kind": "property",
@@ -3468,7 +3720,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -3484,7 +3739,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -3505,7 +3763,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "type": {
               "kind": "property",
@@ -3529,7 +3790,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -3550,7 +3814,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3620,6 +3887,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getById": {
               "kind": "method",
@@ -3660,7 +3928,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getByIdOrNullObject": {
               "kind": "method",
@@ -3701,7 +3972,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getByTag": {
               "kind": "method",
@@ -3742,7 +4016,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getByTitle": {
               "kind": "method",
@@ -3783,7 +4060,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getByTypes": {
               "kind": "method",
@@ -3824,7 +4104,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getFirst": {
               "kind": "method",
@@ -3852,7 +4135,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getFirstOrNullObject": {
               "kind": "method",
@@ -3880,7 +4166,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getItem": {
               "kind": "method",
@@ -3921,7 +4210,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "items": {
               "kind": "property",
@@ -3938,7 +4230,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -3967,7 +4262,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -3983,7 +4281,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -4004,7 +4305,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -4025,7 +4329,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -4207,6 +4514,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "delete": {
               "kind": "method",
@@ -4234,7 +4542,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "key": {
               "kind": "property",
@@ -4258,7 +4569,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -4287,7 +4601,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -4323,7 +4640,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -4339,7 +4659,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -4360,7 +4683,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "type": {
               "kind": "property",
@@ -4384,7 +4710,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -4405,7 +4734,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "value": {
               "kind": "property",
@@ -4429,7 +4761,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -4454,6 +4789,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "add": {
               "kind": "method",
@@ -4506,7 +4842,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "deleteAll": {
               "kind": "method",
@@ -4534,7 +4873,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getCount": {
               "kind": "method",
@@ -4562,7 +4904,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getItem": {
               "kind": "method",
@@ -4603,7 +4948,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getItemOrNullObject": {
               "kind": "method",
@@ -4644,7 +4992,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "items": {
               "kind": "property",
@@ -4661,7 +5012,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -4690,7 +5044,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -4706,7 +5063,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -4727,7 +5087,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -4748,7 +5111,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -4773,6 +5139,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "body": {
               "kind": "property",
@@ -4796,7 +5163,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "contentControls": {
               "kind": "property",
@@ -4820,7 +5190,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getSelection": {
               "kind": "method",
@@ -4848,7 +5221,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -4877,7 +5253,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "properties": {
               "kind": "property",
@@ -4901,7 +5280,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "save": {
               "kind": "method",
@@ -4929,7 +5311,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "saved": {
               "kind": "property",
@@ -4953,7 +5338,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "sections": {
               "kind": "property",
@@ -4977,7 +5365,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -5013,7 +5404,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -5029,7 +5423,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -5050,7 +5447,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -5071,7 +5471,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -5096,6 +5499,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "body": {
               "kind": "property",
@@ -5119,7 +5523,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "contentControls": {
               "kind": "property",
@@ -5143,7 +5550,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -5172,7 +5582,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "open": {
               "kind": "method",
@@ -5200,7 +5613,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "properties": {
               "kind": "property",
@@ -5224,7 +5640,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "save": {
               "kind": "method",
@@ -5252,7 +5671,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "saved": {
               "kind": "property",
@@ -5276,7 +5698,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "sections": {
               "kind": "property",
@@ -5300,7 +5725,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -5336,7 +5764,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -5352,7 +5783,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -5373,7 +5807,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -5394,7 +5831,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -5419,6 +5859,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "applicationName": {
               "kind": "property",
@@ -5442,7 +5883,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "author": {
               "kind": "property",
@@ -5466,7 +5910,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "category": {
               "kind": "property",
@@ -5490,7 +5937,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "comments": {
               "kind": "property",
@@ -5514,7 +5964,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "company": {
               "kind": "property",
@@ -5538,7 +5991,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "creationDate": {
               "kind": "property",
@@ -5562,7 +6018,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "customProperties": {
               "kind": "property",
@@ -5586,7 +6045,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "format": {
               "kind": "property",
@@ -5610,7 +6072,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "keywords": {
               "kind": "property",
@@ -5634,7 +6099,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "lastAuthor": {
               "kind": "property",
@@ -5658,7 +6126,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "lastPrintDate": {
               "kind": "property",
@@ -5682,7 +6153,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "lastSaveTime": {
               "kind": "property",
@@ -5706,7 +6180,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -5735,7 +6212,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "manager": {
               "kind": "property",
@@ -5759,7 +6239,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "revisionNumber": {
               "kind": "property",
@@ -5783,7 +6266,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "security": {
               "kind": "property",
@@ -5807,7 +6293,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -5843,7 +6332,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "subject": {
               "kind": "property",
@@ -5867,7 +6359,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "template": {
               "kind": "property",
@@ -5891,7 +6386,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "title": {
               "kind": "property",
@@ -5915,7 +6413,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -5931,7 +6432,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -5952,7 +6456,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -5973,7 +6480,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -6131,6 +6641,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "bold": {
               "kind": "property",
@@ -6154,7 +6665,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "color": {
               "kind": "property",
@@ -6178,7 +6692,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "doubleStrikeThrough": {
               "kind": "property",
@@ -6202,7 +6719,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "highlightColor": {
               "kind": "property",
@@ -6226,7 +6746,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "italic": {
               "kind": "property",
@@ -6250,7 +6773,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -6279,7 +6805,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "name": {
               "kind": "property",
@@ -6303,7 +6832,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -6339,7 +6871,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "size": {
               "kind": "property",
@@ -6363,7 +6898,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "strikeThrough": {
               "kind": "property",
@@ -6387,7 +6925,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "subscript": {
               "kind": "property",
@@ -6411,7 +6952,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "superscript": {
               "kind": "property",
@@ -6435,7 +6979,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -6451,7 +6998,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -6472,7 +7022,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "underline": {
               "kind": "property",
@@ -6496,7 +7049,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -6517,7 +7073,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -6706,6 +7265,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "altTextDescription": {
               "kind": "property",
@@ -6729,7 +7289,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "altTextTitle": {
               "kind": "property",
@@ -6753,7 +7316,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "delete": {
               "kind": "method",
@@ -6781,7 +7347,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getBase64ImageSrc": {
               "kind": "method",
@@ -6809,7 +7378,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getNext": {
               "kind": "method",
@@ -6837,7 +7409,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getNextOrNullObject": {
               "kind": "method",
@@ -6865,7 +7440,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getRange": {
               "kind": "method",
@@ -6906,7 +7484,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "height": {
               "kind": "property",
@@ -6930,7 +7511,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "hyperlink": {
               "kind": "property",
@@ -6954,7 +7538,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertBreak": {
               "kind": "method",
@@ -7007,7 +7594,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertContentControl": {
               "kind": "method",
@@ -7035,7 +7625,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertFileFromBase64": {
               "kind": "method",
@@ -7088,7 +7681,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertHtml": {
               "kind": "method",
@@ -7141,7 +7737,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertInlinePictureFromBase64": {
               "kind": "method",
@@ -7194,7 +7793,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertOoxml": {
               "kind": "method",
@@ -7247,7 +7849,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertParagraph": {
               "kind": "method",
@@ -7300,7 +7905,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertText": {
               "kind": "method",
@@ -7353,7 +7961,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -7382,7 +7993,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "lockAspectRatio": {
               "kind": "property",
@@ -7406,7 +8020,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "paragraph": {
               "kind": "property",
@@ -7430,7 +8047,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentContentControl": {
               "kind": "property",
@@ -7454,7 +8074,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentContentControlOrNullObject": {
               "kind": "property",
@@ -7478,7 +8101,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTable": {
               "kind": "property",
@@ -7502,7 +8128,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTableCell": {
               "kind": "property",
@@ -7526,7 +8155,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTableCellOrNullObject": {
               "kind": "property",
@@ -7550,7 +8182,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTableOrNullObject": {
               "kind": "property",
@@ -7574,7 +8209,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "select": {
               "kind": "method",
@@ -7615,7 +8253,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -7651,7 +8292,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -7667,7 +8311,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -7688,7 +8335,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -7709,7 +8359,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "width": {
               "kind": "property",
@@ -7733,7 +8386,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -7758,6 +8414,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getFirst": {
               "kind": "method",
@@ -7785,7 +8442,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getFirstOrNullObject": {
               "kind": "method",
@@ -7813,7 +8473,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "items": {
               "kind": "property",
@@ -7830,7 +8493,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -7859,7 +8525,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -7875,7 +8544,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -7896,7 +8568,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -7917,7 +8592,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -8003,6 +8681,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getLevelParagraphs": {
               "kind": "method",
@@ -8043,7 +8722,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getLevelString": {
               "kind": "method",
@@ -8084,7 +8766,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "id": {
               "kind": "property",
@@ -8108,7 +8793,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertParagraph": {
               "kind": "method",
@@ -8161,7 +8849,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "levelExistences": {
               "kind": "property",
@@ -8185,7 +8876,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "levelTypes": {
               "kind": "property",
@@ -8209,7 +8903,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -8238,7 +8935,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "paragraphs": {
               "kind": "property",
@@ -8262,7 +8962,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setLevelAlignment": {
               "kind": "method",
@@ -8315,7 +9018,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setLevelBullet": {
               "kind": "method",
@@ -8392,7 +9098,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setLevelIndents": {
               "kind": "method",
@@ -8457,7 +9166,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setLevelNumbering": {
               "kind": "method",
@@ -8522,7 +9234,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setLevelStartingNumber": {
               "kind": "method",
@@ -8575,7 +9290,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -8591,7 +9309,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -8612,7 +9333,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -8633,7 +9357,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -8728,6 +9455,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getById": {
               "kind": "method",
@@ -8768,7 +9496,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getByIdOrNullObject": {
               "kind": "method",
@@ -8809,7 +9540,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getFirst": {
               "kind": "method",
@@ -8837,7 +9571,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getFirstOrNullObject": {
               "kind": "method",
@@ -8865,7 +9602,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getItem": {
               "kind": "method",
@@ -8906,7 +9646,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "items": {
               "kind": "property",
@@ -8923,7 +9666,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -8952,7 +9698,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -8968,7 +9717,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -8989,7 +9741,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -9010,7 +9765,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -9035,6 +9793,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getAncestor": {
               "kind": "method",
@@ -9075,7 +9834,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getAncestorOrNullObject": {
               "kind": "method",
@@ -9116,7 +9878,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getDescendants": {
               "kind": "method",
@@ -9157,7 +9922,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "level": {
               "kind": "property",
@@ -9181,7 +9949,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "listString": {
               "kind": "property",
@@ -9205,7 +9976,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -9234,7 +10008,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -9270,7 +10047,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "siblingIndex": {
               "kind": "property",
@@ -9294,7 +10074,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -9310,7 +10093,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -9331,7 +10117,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -9352,7 +10141,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -9603,6 +10395,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "alignment": {
               "kind": "property",
@@ -9626,7 +10419,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "attachToList": {
               "kind": "method",
@@ -9679,7 +10475,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "clear": {
               "kind": "method",
@@ -9707,7 +10506,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "contentControls": {
               "kind": "property",
@@ -9731,7 +10533,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "delete": {
               "kind": "method",
@@ -9759,7 +10564,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "detachFromList": {
               "kind": "method",
@@ -9787,7 +10595,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "firstLineIndent": {
               "kind": "property",
@@ -9811,7 +10622,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "font": {
               "kind": "property",
@@ -9835,7 +10649,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getHtml": {
               "kind": "method",
@@ -9863,7 +10680,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getNext": {
               "kind": "method",
@@ -9891,7 +10711,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getNextOrNullObject": {
               "kind": "method",
@@ -9919,7 +10742,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getOoxml": {
               "kind": "method",
@@ -9947,7 +10773,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getPrevious": {
               "kind": "method",
@@ -9975,7 +10804,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getPreviousOrNullObject": {
               "kind": "method",
@@ -10003,7 +10835,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getRange": {
               "kind": "method",
@@ -10044,7 +10879,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getTextRanges": {
               "kind": "method",
@@ -10097,7 +10935,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "inlinePictures": {
               "kind": "property",
@@ -10121,7 +10962,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertBreak": {
               "kind": "method",
@@ -10174,7 +11018,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertContentControl": {
               "kind": "method",
@@ -10202,7 +11049,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertFileFromBase64": {
               "kind": "method",
@@ -10255,7 +11105,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertHtml": {
               "kind": "method",
@@ -10308,7 +11161,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertInlinePictureFromBase64": {
               "kind": "method",
@@ -10361,7 +11217,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertOoxml": {
               "kind": "method",
@@ -10414,7 +11273,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertParagraph": {
               "kind": "method",
@@ -10467,7 +11329,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertTable": {
               "kind": "method",
@@ -10544,7 +11409,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertText": {
               "kind": "method",
@@ -10597,7 +11465,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "isLastParagraph": {
               "kind": "property",
@@ -10621,7 +11492,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "isListItem": {
               "kind": "property",
@@ -10645,7 +11519,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "leftIndent": {
               "kind": "property",
@@ -10669,7 +11546,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "lineSpacing": {
               "kind": "property",
@@ -10693,7 +11573,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "lineUnitAfter": {
               "kind": "property",
@@ -10717,7 +11600,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "lineUnitBefore": {
               "kind": "property",
@@ -10741,7 +11627,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "list": {
               "kind": "property",
@@ -10765,7 +11654,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "listItem": {
               "kind": "property",
@@ -10789,7 +11681,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "listItemOrNullObject": {
               "kind": "property",
@@ -10813,7 +11708,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "listOrNullObject": {
               "kind": "property",
@@ -10837,7 +11735,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -10866,7 +11767,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "outlineLevel": {
               "kind": "property",
@@ -10890,7 +11794,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentBody": {
               "kind": "property",
@@ -10914,7 +11821,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentContentControl": {
               "kind": "property",
@@ -10938,7 +11848,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentContentControlOrNullObject": {
               "kind": "property",
@@ -10962,7 +11875,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTable": {
               "kind": "property",
@@ -10986,7 +11902,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTableCell": {
               "kind": "property",
@@ -11010,7 +11929,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTableCellOrNullObject": {
               "kind": "property",
@@ -11034,7 +11956,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTableOrNullObject": {
               "kind": "property",
@@ -11058,7 +11983,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "rightIndent": {
               "kind": "property",
@@ -11082,7 +12010,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "search": {
               "kind": "method",
@@ -11135,7 +12066,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "select": {
               "kind": "method",
@@ -11176,7 +12110,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -11212,7 +12149,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "spaceAfter": {
               "kind": "property",
@@ -11236,7 +12176,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "spaceBefore": {
               "kind": "property",
@@ -11260,7 +12203,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "split": {
               "kind": "method",
@@ -11325,7 +12271,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "startNewList": {
               "kind": "method",
@@ -11353,7 +12302,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "style": {
               "kind": "property",
@@ -11377,7 +12329,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "styleBuiltIn": {
               "kind": "property",
@@ -11401,7 +12356,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "tableNestingLevel": {
               "kind": "property",
@@ -11425,7 +12383,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "text": {
               "kind": "property",
@@ -11449,7 +12410,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -11465,7 +12429,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -11486,7 +12453,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -11507,7 +12477,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -11532,6 +12505,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getFirst": {
               "kind": "method",
@@ -11559,7 +12533,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getFirstOrNullObject": {
               "kind": "method",
@@ -11587,7 +12564,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getLast": {
               "kind": "method",
@@ -11615,7 +12595,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getLastOrNullObject": {
               "kind": "method",
@@ -11643,7 +12626,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "items": {
               "kind": "property",
@@ -11660,7 +12646,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -11689,7 +12678,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -11705,7 +12697,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -11726,7 +12721,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -11747,7 +12745,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -11772,6 +12773,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "clear": {
               "kind": "method",
@@ -11799,7 +12801,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "compareLocationWith": {
               "kind": "method",
@@ -11840,7 +12845,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "contentControls": {
               "kind": "property",
@@ -11864,7 +12872,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "delete": {
               "kind": "method",
@@ -11892,7 +12903,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "expandTo": {
               "kind": "method",
@@ -11933,7 +12947,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "expandToOrNullObject": {
               "kind": "method",
@@ -11974,7 +12991,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "font": {
               "kind": "property",
@@ -11998,7 +13018,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getHtml": {
               "kind": "method",
@@ -12026,7 +13049,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getHyperlinkRanges": {
               "kind": "method",
@@ -12054,7 +13080,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getNextTextRange": {
               "kind": "method",
@@ -12107,7 +13136,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getNextTextRangeOrNullObject": {
               "kind": "method",
@@ -12160,7 +13192,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getOoxml": {
               "kind": "method",
@@ -12188,7 +13223,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getRange": {
               "kind": "method",
@@ -12229,7 +13267,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getTextRanges": {
               "kind": "method",
@@ -12282,7 +13323,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "hyperlink": {
               "kind": "property",
@@ -12306,7 +13350,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "inlinePictures": {
               "kind": "property",
@@ -12330,7 +13377,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertBreak": {
               "kind": "method",
@@ -12383,7 +13433,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertContentControl": {
               "kind": "method",
@@ -12411,7 +13464,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertFileFromBase64": {
               "kind": "method",
@@ -12464,7 +13520,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertHtml": {
               "kind": "method",
@@ -12517,7 +13576,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertInlinePictureFromBase64": {
               "kind": "method",
@@ -12570,7 +13632,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertOoxml": {
               "kind": "method",
@@ -12623,7 +13688,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertParagraph": {
               "kind": "method",
@@ -12676,7 +13744,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertTable": {
               "kind": "method",
@@ -12753,7 +13824,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertText": {
               "kind": "method",
@@ -12806,7 +13880,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "intersectWith": {
               "kind": "method",
@@ -12847,7 +13924,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "intersectWithOrNullObject": {
               "kind": "method",
@@ -12888,7 +13968,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "isEmpty": {
               "kind": "property",
@@ -12912,7 +13995,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "lists": {
               "kind": "property",
@@ -12936,7 +14022,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -12965,7 +14054,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "paragraphs": {
               "kind": "property",
@@ -12989,7 +14081,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentBody": {
               "kind": "property",
@@ -13013,7 +14108,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentContentControl": {
               "kind": "property",
@@ -13037,7 +14135,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentContentControlOrNullObject": {
               "kind": "property",
@@ -13061,7 +14162,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTable": {
               "kind": "property",
@@ -13085,7 +14189,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTableCell": {
               "kind": "property",
@@ -13109,7 +14216,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTableCellOrNullObject": {
               "kind": "property",
@@ -13133,7 +14243,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTableOrNullObject": {
               "kind": "property",
@@ -13157,7 +14270,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "search": {
               "kind": "method",
@@ -13210,7 +14326,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "select": {
               "kind": "method",
@@ -13251,7 +14370,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -13287,7 +14409,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "split": {
               "kind": "method",
@@ -13364,7 +14489,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "style": {
               "kind": "property",
@@ -13388,7 +14516,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "styleBuiltIn": {
               "kind": "property",
@@ -13412,7 +14543,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "tables": {
               "kind": "property",
@@ -13436,7 +14570,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "text": {
               "kind": "property",
@@ -13460,7 +14597,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -13476,7 +14616,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -13497,7 +14640,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -13518,7 +14664,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -13543,6 +14692,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getFirst": {
               "kind": "method",
@@ -13570,7 +14720,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getFirstOrNullObject": {
               "kind": "method",
@@ -13598,7 +14751,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "items": {
               "kind": "property",
@@ -13615,7 +14771,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -13644,7 +14803,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -13660,7 +14822,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -13681,7 +14846,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -13702,7 +14870,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -13782,6 +14953,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "__constructor": {
               "kind": "constructor",
@@ -13833,7 +15005,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "document": {
               "kind": "property",
@@ -13845,7 +15020,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -13913,6 +15091,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "ignorePunct": {
               "kind": "property",
@@ -13936,7 +15115,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "ignoreSpace": {
               "kind": "property",
@@ -13960,7 +15142,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -13989,7 +15174,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "matchCase": {
               "kind": "property",
@@ -14013,7 +15201,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "matchPrefix": {
               "kind": "property",
@@ -14037,7 +15228,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "matchSuffix": {
               "kind": "property",
@@ -14061,7 +15255,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "matchWholeWord": {
               "kind": "property",
@@ -14085,7 +15282,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "matchWildcards": {
               "kind": "property",
@@ -14109,7 +15309,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "matchWildCards": {
               "kind": "property",
@@ -14121,7 +15324,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "newObject": {
               "kind": "method",
@@ -14150,7 +15356,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -14186,7 +15395,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -14202,7 +15414,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -14227,6 +15442,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "body": {
               "kind": "property",
@@ -14250,7 +15466,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getFooter": {
               "kind": "method",
@@ -14291,7 +15510,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getHeader": {
               "kind": "method",
@@ -14332,7 +15554,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getNext": {
               "kind": "method",
@@ -14360,7 +15585,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getNextOrNullObject": {
               "kind": "method",
@@ -14388,7 +15616,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -14417,7 +15648,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -14453,7 +15687,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -14469,7 +15706,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -14490,7 +15730,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -14511,7 +15754,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -14536,6 +15782,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getFirst": {
               "kind": "method",
@@ -14563,7 +15810,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getFirstOrNullObject": {
               "kind": "method",
@@ -14591,7 +15841,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "items": {
               "kind": "property",
@@ -14608,7 +15861,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -14637,7 +15893,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -14653,7 +15912,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -14674,7 +15936,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -14695,7 +15960,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -16016,6 +17284,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "addColumns": {
               "kind": "method",
@@ -16080,7 +17349,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "addRows": {
               "kind": "method",
@@ -16145,7 +17417,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "alignment": {
               "kind": "property",
@@ -16169,7 +17444,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "autoFitWindow": {
               "kind": "method",
@@ -16197,7 +17475,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "clear": {
               "kind": "method",
@@ -16225,7 +17506,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "delete": {
               "kind": "method",
@@ -16253,7 +17537,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "deleteColumns": {
               "kind": "method",
@@ -16306,7 +17593,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "deleteRows": {
               "kind": "method",
@@ -16359,7 +17649,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "distributeColumns": {
               "kind": "method",
@@ -16387,7 +17680,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "font": {
               "kind": "property",
@@ -16411,7 +17707,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getBorder": {
               "kind": "method",
@@ -16452,7 +17751,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getCell": {
               "kind": "method",
@@ -16505,7 +17807,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getCellOrNullObject": {
               "kind": "method",
@@ -16558,7 +17863,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getCellPadding": {
               "kind": "method",
@@ -16599,7 +17907,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getNext": {
               "kind": "method",
@@ -16627,7 +17938,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getNextOrNullObject": {
               "kind": "method",
@@ -16655,7 +17969,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getParagraphAfter": {
               "kind": "method",
@@ -16683,7 +18000,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getParagraphAfterOrNullObject": {
               "kind": "method",
@@ -16711,7 +18031,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getParagraphBefore": {
               "kind": "method",
@@ -16739,7 +18062,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getParagraphBeforeOrNullObject": {
               "kind": "method",
@@ -16767,7 +18093,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getRange": {
               "kind": "method",
@@ -16808,7 +18137,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "headerRowCount": {
               "kind": "property",
@@ -16832,7 +18164,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "horizontalAlignment": {
               "kind": "property",
@@ -16856,7 +18191,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertContentControl": {
               "kind": "method",
@@ -16884,7 +18222,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertParagraph": {
               "kind": "method",
@@ -16937,7 +18278,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertTable": {
               "kind": "method",
@@ -17014,7 +18358,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "isUniform": {
               "kind": "property",
@@ -17038,7 +18385,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -17067,7 +18417,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "nestingLevel": {
               "kind": "property",
@@ -17091,7 +18444,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentBody": {
               "kind": "property",
@@ -17115,7 +18471,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentContentControl": {
               "kind": "property",
@@ -17139,7 +18498,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentContentControlOrNullObject": {
               "kind": "property",
@@ -17163,7 +18525,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTable": {
               "kind": "property",
@@ -17187,7 +18552,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTableCell": {
               "kind": "property",
@@ -17211,7 +18579,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTableCellOrNullObject": {
               "kind": "property",
@@ -17235,7 +18606,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTableOrNullObject": {
               "kind": "property",
@@ -17259,7 +18633,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "rowCount": {
               "kind": "property",
@@ -17283,7 +18660,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "rows": {
               "kind": "property",
@@ -17307,7 +18687,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "search": {
               "kind": "method",
@@ -17360,7 +18743,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "select": {
               "kind": "method",
@@ -17401,7 +18787,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -17437,7 +18826,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setCellPadding": {
               "kind": "method",
@@ -17490,7 +18882,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "shadingColor": {
               "kind": "property",
@@ -17514,7 +18909,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "style": {
               "kind": "property",
@@ -17538,7 +18936,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "styleBandedColumns": {
               "kind": "property",
@@ -17562,7 +18963,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "styleBandedRows": {
               "kind": "property",
@@ -17586,7 +18990,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "styleBuiltIn": {
               "kind": "property",
@@ -17610,7 +19017,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "styleFirstColumn": {
               "kind": "property",
@@ -17634,7 +19044,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "styleLastColumn": {
               "kind": "property",
@@ -17658,7 +19071,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "styleTotalRow": {
               "kind": "property",
@@ -17682,7 +19098,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "tables": {
               "kind": "property",
@@ -17706,7 +19125,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -17722,7 +19144,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -17743,7 +19168,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -17764,7 +19192,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "values": {
               "kind": "property",
@@ -17788,7 +19219,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "verticalAlignment": {
               "kind": "property",
@@ -17812,7 +19246,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "width": {
               "kind": "property",
@@ -17836,7 +19273,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -17861,6 +19301,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "color": {
               "kind": "property",
@@ -17884,7 +19325,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -17913,7 +19357,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -17949,7 +19396,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -17965,7 +19415,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -17986,7 +19439,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "type": {
               "kind": "property",
@@ -18010,7 +19466,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -18031,7 +19490,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "width": {
               "kind": "property",
@@ -18055,7 +19517,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -18080,6 +19545,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "body": {
               "kind": "property",
@@ -18103,7 +19569,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "cellIndex": {
               "kind": "property",
@@ -18127,7 +19596,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "columnWidth": {
               "kind": "property",
@@ -18151,7 +19623,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "deleteColumn": {
               "kind": "method",
@@ -18179,7 +19654,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "deleteRow": {
               "kind": "method",
@@ -18207,7 +19685,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getBorder": {
               "kind": "method",
@@ -18248,7 +19729,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getCellPadding": {
               "kind": "method",
@@ -18289,7 +19773,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getNext": {
               "kind": "method",
@@ -18317,7 +19804,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getNextOrNullObject": {
               "kind": "method",
@@ -18345,7 +19835,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "horizontalAlignment": {
               "kind": "property",
@@ -18369,7 +19862,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertColumns": {
               "kind": "method",
@@ -18434,7 +19930,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertRows": {
               "kind": "method",
@@ -18499,7 +19998,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -18528,7 +20030,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentRow": {
               "kind": "property",
@@ -18552,7 +20057,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTable": {
               "kind": "property",
@@ -18576,7 +20084,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "rowIndex": {
               "kind": "property",
@@ -18600,7 +20111,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -18636,7 +20150,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setCellPadding": {
               "kind": "method",
@@ -18689,7 +20206,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "shadingColor": {
               "kind": "property",
@@ -18713,7 +20233,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -18729,7 +20252,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -18750,7 +20276,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -18771,7 +20300,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "value": {
               "kind": "property",
@@ -18795,7 +20327,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "verticalAlignment": {
               "kind": "property",
@@ -18819,7 +20354,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "width": {
               "kind": "property",
@@ -18843,7 +20381,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -18868,6 +20409,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getFirst": {
               "kind": "method",
@@ -18895,7 +20437,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getFirstOrNullObject": {
               "kind": "method",
@@ -18923,7 +20468,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "items": {
               "kind": "property",
@@ -18940,7 +20488,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -18969,7 +20520,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -18985,7 +20539,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -19006,7 +20563,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -19027,7 +20587,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -19052,6 +20615,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getFirst": {
               "kind": "method",
@@ -19079,7 +20643,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getFirstOrNullObject": {
               "kind": "method",
@@ -19107,7 +20674,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "items": {
               "kind": "property",
@@ -19124,7 +20694,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -19153,7 +20726,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -19169,7 +20745,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -19190,7 +20769,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -19211,7 +20793,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -19236,6 +20821,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "cellCount": {
               "kind": "property",
@@ -19259,7 +20845,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "cells": {
               "kind": "property",
@@ -19283,7 +20872,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "clear": {
               "kind": "method",
@@ -19311,7 +20903,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "delete": {
               "kind": "method",
@@ -19339,7 +20934,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "font": {
               "kind": "property",
@@ -19363,7 +20961,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getBorder": {
               "kind": "method",
@@ -19404,7 +21005,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getCellPadding": {
               "kind": "method",
@@ -19445,7 +21049,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getNext": {
               "kind": "method",
@@ -19473,7 +21080,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getNextOrNullObject": {
               "kind": "method",
@@ -19501,7 +21111,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "horizontalAlignment": {
               "kind": "property",
@@ -19525,7 +21138,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "insertRows": {
               "kind": "method",
@@ -19590,7 +21206,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "isHeader": {
               "kind": "property",
@@ -19614,7 +21233,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -19643,7 +21265,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "parentTable": {
               "kind": "property",
@@ -19667,7 +21292,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "preferredHeight": {
               "kind": "property",
@@ -19691,7 +21319,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "rowIndex": {
               "kind": "property",
@@ -19715,7 +21346,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "search": {
               "kind": "method",
@@ -19768,7 +21402,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "select": {
               "kind": "method",
@@ -19809,7 +21446,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "set": {
               "kind": "method",
@@ -19845,7 +21485,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "setCellPadding": {
               "kind": "method",
@@ -19898,7 +21541,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "shadingColor": {
               "kind": "property",
@@ -19922,7 +21568,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -19938,7 +21587,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -19959,7 +21611,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -19980,7 +21635,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "values": {
               "kind": "property",
@@ -20004,7 +21662,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "verticalAlignment": {
               "kind": "property",
@@ -20028,7 +21689,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -20053,6 +21717,7 @@
           ],
           "remarks": [],
           "isBeta": false,
+          "isSealed": false,
           "members": {
             "getFirst": {
               "kind": "method",
@@ -20080,7 +21745,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "getFirstOrNullObject": {
               "kind": "method",
@@ -20108,7 +21776,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "items": {
               "kind": "property",
@@ -20125,7 +21796,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "load": {
               "kind": "method",
@@ -20154,7 +21828,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "toJSON": {
               "kind": "method",
@@ -20170,7 +21847,10 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "track": {
               "kind": "method",
@@ -20191,7 +21871,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             },
             "untrack": {
               "kind": "method",
@@ -20212,7 +21895,10 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },

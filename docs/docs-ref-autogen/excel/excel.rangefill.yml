@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the background of a range object.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeFill
     fullName: excel.Excel.RangeFill
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Resets the range background.
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: excel.Excel.RangeFill.clear
     langs:
@@ -62,7 +62,7 @@ items:
       color (e.g. "orange")
 
 
-      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: excel.Excel.RangeFill.color
     langs:

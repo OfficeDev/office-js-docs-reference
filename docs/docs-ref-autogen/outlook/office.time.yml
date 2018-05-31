@@ -4,7 +4,7 @@ items:
     summary: |-
       The Time object is returned as the start or end property of an appointment in compose mode.
 
-      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -28,7 +28,7 @@ items:
       method.
 
 
-      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -64,7 +64,7 @@ items:
       The time must be in UTC; you can get the correct UTC time by using the convertToUtcClientTime method.
 
 
-      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadWriteItem
 

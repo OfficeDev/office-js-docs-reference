@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides information about the table that raised the SelectionChanged event.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableSelectionChangedEventArgs
     fullName: excel.Excel.TableSelectionChangedEventArgs
     langs:
@@ -21,7 +21,7 @@ items:
     summary: |-
       Gets the range address that represents the selected area of the table on a specific worksheet.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: excel.Excel.TableSelectionChangedEventArgs.address
     langs:
@@ -36,7 +36,7 @@ items:
     summary: |-
       Indicates if the selection is inside a table, address will be useless if IsInsideTable is false.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: isInsideTable
     fullName: excel.Excel.TableSelectionChangedEventArgs.isInsideTable
     langs:
@@ -51,7 +51,7 @@ items:
     summary: |-
       Gets the id of the table in which the selection changed.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: tableId
     fullName: excel.Excel.TableSelectionChangedEventArgs.tableId
     langs:
@@ -66,7 +66,7 @@ items:
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: excel.Excel.TableSelectionChangedEventArgs.type
     langs:
@@ -81,7 +81,7 @@ items:
     summary: |-
       Gets the id of the worksheet in which the selection changed.
 
-      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
     fullName: excel.Excel.TableSelectionChangedEventArgs.worksheetId
     langs:

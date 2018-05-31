@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Page class.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: Visio.Page
     fullName: visio.Visio.Page
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Set the page as Active Page of the document.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: activate()
     fullName: visio.Visio.Page.activate
     langs:
@@ -47,7 +47,7 @@ items:
     summary: |-
       All shapes in the page. Read-only.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: allShapes
     fullName: visio.Visio.Page.allShapes
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Returns the Comments Collection
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: comments
     fullName: visio.Visio.Page.comments
     langs:
@@ -77,7 +77,7 @@ items:
     summary: |-
       Returns the height of the page. Read-only.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: height
     fullName: visio.Visio.Page.height
     langs:
@@ -92,7 +92,7 @@ items:
     summary: |-
       Index of the Page.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: index
     fullName: visio.Visio.Page.index
     langs:
@@ -107,7 +107,7 @@ items:
     summary: |-
       Whether the page is a background page or not. Read-only.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: isBackground
     fullName: visio.Visio.Page.isBackground
     langs:
@@ -142,7 +142,7 @@ items:
     summary: |-
       Page name. Read-only.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: name
     fullName: visio.Visio.Page.name
     langs:
@@ -188,7 +188,7 @@ items:
     summary: |-
       Shapes at root level, in the page. Read-only.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: shapes
     fullName: visio.Visio.Page.shapes
     langs:
@@ -215,7 +215,7 @@ items:
     summary: |-
       Returns the view of the page. Read-only.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: view
     fullName: visio.Visio.Page.view
     langs:
@@ -230,7 +230,7 @@ items:
     summary: |-
       Returns the width of the page. Read-only.
 
-      \[ [API set: 1.1](http://bing.com?type=visio) \]
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
     name: width
     fullName: visio.Visio.Page.width
     langs:

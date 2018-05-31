@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of pages.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: OneNote.PageCollection
     fullName: onenote.OneNote.PageCollection
     langs:
@@ -27,7 +27,7 @@ items:
     summary: |-
       Returns the number of pages in the collection. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: count
     fullName: onenote.OneNote.PageCollection.count
     langs:
@@ -42,7 +42,7 @@ items:
     summary: |-
       Gets the collection of pages with the specified title.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: getByTitle(title)
     fullName: onenote.OneNote.PageCollection.getByTitle
     langs:
@@ -107,7 +107,7 @@ items:
     summary: |-
       Gets a page by ID or by its index in the collection. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: getItem(index)
     fullName: onenote.OneNote.PageCollection.getItem
     langs:
@@ -128,7 +128,7 @@ items:
     summary: |-
       Gets a page on its position in the collection.
 
-      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: onenote.OneNote.PageCollection.getItemAt
     langs:

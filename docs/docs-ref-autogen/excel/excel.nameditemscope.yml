@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.NamedItemScope
-    summary: '\[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]'
+    summary: '\[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.NamedItemScope
     fullName: excel.Excel.NamedItemScope
     langs:

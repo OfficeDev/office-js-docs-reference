@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.Recipients
-    summary: '\[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]'
+    summary: '\[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]'
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -28,7 +28,7 @@ items:
 
       - EmailAddressDetails objects
 
-      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadWriteItem
 
@@ -72,7 +72,7 @@ items:
 
       When the call completes, the asyncResult.value property will contain an array of EmailAddressDetails objects.
 
-      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -109,7 +109,7 @@ items:
 
       - EmailAddressDetails objects
 
-      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadWriteItem
 

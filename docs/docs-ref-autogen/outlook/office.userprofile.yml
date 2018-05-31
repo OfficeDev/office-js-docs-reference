@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.UserProfile
-    summary: '\[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]'
+    summary: '\[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]'
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -26,7 +26,7 @@ items:
       Note: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
 
 
-      \[ [API set: Mailbox 1.6](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       \|Value \|Description \| \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\-\-\---\| \|enterprise \|The mailbox is on an
       on-premises Exchange server.\| \|gmail \|The mailbox is associated with a Gmail account.\| \|office365 \|The
@@ -52,7 +52,7 @@ items:
     summary: |-
       Gets the user's display name.
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -71,7 +71,7 @@ items:
     summary: |-
       Gets the user's display name.
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -90,7 +90,7 @@ items:
     summary: |-
       Gets the user's SMTP email address.
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 

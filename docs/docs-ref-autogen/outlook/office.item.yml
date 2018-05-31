@@ -6,7 +6,7 @@ items:
       determine the type of the item by using the itemType property.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: Restricted
 
@@ -28,7 +28,7 @@ items:
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
 
-      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -47,7 +47,7 @@ items:
     summary: |-
       Gets the date and time that an item was created. Read mode only.
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -66,7 +66,7 @@ items:
     summary: |-
       Gets the date and time that an item was last modified. Read mode only.
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
 
@@ -92,7 +92,7 @@ items:
       is a message or an appointment.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -123,7 +123,7 @@ items:
       to the server.
 
 
-      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
@@ -156,7 +156,7 @@ items:
     summary: |-
       Gets the notification messages for an item.
 
-      \[ [API set: Mailbox 1.3](http://bing.com?type=outlook) \]
+      \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 
