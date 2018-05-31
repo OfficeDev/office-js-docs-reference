@@ -1,6 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.MailboxEnums.EntityType
+    summary: |-
+      Specifies an entity's type.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: 'Applicable Outlook mode: Compose or read'
     name: Office.MailboxEnums.EntityType
     fullName: outlook.Office.MailboxEnums.EntityType
     langs:
@@ -16,49 +21,49 @@ items:
       - outlook.Office.MailboxEnums.EntityType.TaskSuggestion
       - outlook.Office.MailboxEnums.EntityType.Url
   - uid: outlook.Office.MailboxEnums.EntityType.Address
-    summary: Specifies that the entity is a postal address
+    summary: Specifies that the entity is a postal address.
     name: Address
     fullName: outlook.Office.MailboxEnums.EntityType.Address
     langs:
       - typeScript
     type: field
   - uid: outlook.Office.MailboxEnums.EntityType.Contact
-    summary: Specifies that the entity is a contact
+    summary: Specifies that the entity is a contact.
     name: Contact
     fullName: outlook.Office.MailboxEnums.EntityType.Contact
     langs:
       - typeScript
     type: field
   - uid: outlook.Office.MailboxEnums.EntityType.EmailAddress
-    summary: Specifies that the entity is SMTP email address
+    summary: Specifies that the entity is an SMTP email address.
     name: EmailAddress
     fullName: outlook.Office.MailboxEnums.EntityType.EmailAddress
     langs:
       - typeScript
     type: field
   - uid: outlook.Office.MailboxEnums.EntityType.MeetingSuggestion
-    summary: Specifies that the entity is a meeting suggestion
+    summary: Specifies that the entity is a meeting suggestion.
     name: MeetingSuggestion
     fullName: outlook.Office.MailboxEnums.EntityType.MeetingSuggestion
     langs:
       - typeScript
     type: field
   - uid: outlook.Office.MailboxEnums.EntityType.PhoneNumber
-    summary: Specifies that the entity is US phone number
+    summary: Specifies that the entity is a US phone number.
     name: PhoneNumber
     fullName: outlook.Office.MailboxEnums.EntityType.PhoneNumber
     langs:
       - typeScript
     type: field
   - uid: outlook.Office.MailboxEnums.EntityType.TaskSuggestion
-    summary: Specifies that the entity is a task suggestion
+    summary: Specifies that the entity is a task suggestion.
     name: TaskSuggestion
     fullName: outlook.Office.MailboxEnums.EntityType.TaskSuggestion
     langs:
       - typeScript
     type: field
   - uid: outlook.Office.MailboxEnums.EntityType.Url
-    summary: Specifies that the entity is an Internet URL
+    summary: Specifies that the entity is an Internet URL.
     name: Url
     fullName: outlook.Office.MailboxEnums.EntityType.Url
     langs:

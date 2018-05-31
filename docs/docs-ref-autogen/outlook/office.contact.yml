@@ -1,6 +1,19 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.Contact
+    summary: >-
+      Represents a contact stored on the server. Read mode only.
+
+
+      The list of contacts associated with an email message or appointment is returned in the contacts property of the
+      Entities object that is returned by the getEntities or getEntitiesByType method of the active item.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: Restricted
+
+      Applicable Outlook mode: Read
     name: Office.Contact
     fullName: outlook.Office.Contact
     langs:
@@ -15,6 +28,7 @@ items:
       - outlook.Office.Contact.phoneNumbers
       - outlook.Office.Contact.urls
   - uid: outlook.Office.Contact.addresses
+    summary: An array of strings containing the mailing and street addresses associated with the contact. Nullable.
     name: addresses
     fullName: outlook.Office.Contact.addresses
     langs:
@@ -26,6 +40,7 @@ items:
         type:
           - Array<string>
   - uid: outlook.Office.Contact.businessName
+    summary: A string containing the name of the business associated with the contact. Nullable.
     name: businessName
     fullName: outlook.Office.Contact.businessName
     langs:
@@ -37,6 +52,7 @@ items:
         type:
           - string
   - uid: outlook.Office.Contact.emailAddresses
+    summary: 'An array of strings containing the SMTP email addresses associated with the contact. Nullable,'
     name: emailAddresses
     fullName: outlook.Office.Contact.emailAddresses
     langs:
@@ -48,6 +64,7 @@ items:
         type:
           - Array<string>
   - uid: outlook.Office.Contact.personName
+    summary: A string containing the name of the person associated with the contact. Nullable.
     name: personName
     fullName: outlook.Office.Contact.personName
     langs:
@@ -59,6 +76,7 @@ items:
         type:
           - string
   - uid: outlook.Office.Contact.phoneNumbers
+    summary: An array containing a PhoneNumber object for each phone number associated with the contact. Nullable.
     name: phoneNumbers
     fullName: outlook.Office.Contact.phoneNumbers
     langs:
@@ -70,6 +88,7 @@ items:
         type:
           - Array<PhoneNumber>
   - uid: outlook.Office.Contact.urls
+    summary: An array of strings containing the Internet URLs associated with the contact. Nullable.
     name: urls
     fullName: outlook.Office.Contact.urls
     langs:

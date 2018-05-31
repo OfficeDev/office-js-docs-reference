@@ -5088,8 +5088,25 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
-          "remarks": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Provides access to the properties for Office theme colors."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with File > Office Account > Office Theme UI, which is applied across all Office host applications. Using Office theme colors is appropriate for mail and task pane add-ins."
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Hosts: Excel, Outlook, Powerpoint, Project, Word"
+            }
+          ],
           "isBeta": false,
           "isSealed": false,
           "members": {
@@ -5101,7 +5118,12 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the Office theme body background color as a hexadecimal color triplet (e.g. \"FFA500\")."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -5116,7 +5138,12 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the Office theme body foreground color as a hexadecimal color triplet (e.g. \"FFA500\")."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -5131,7 +5158,12 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the Office theme control background color as a hexadecimal color triplet (e.g. \"FFA500\")."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -5146,7 +5178,12 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the Office theme body control color as a hexadecimal color triplet (e.g. \"FFA500\")."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -12250,6 +12287,13 @@
                 {
                   "kind": "text",
                   "text": "Adds an event handler for the settingsChanged event."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Important: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios."
                 }
               ],
               "remarks": [
@@ -12378,6 +12422,13 @@
                 {
                   "kind": "text",
                   "text": "Removes the specified setting."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Important: Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag. To persist the removal of the specified setting in the document, at some point after calling the Settings.remove method and before the add-in is closed, you must call the Settings.saveAsync method."
                 }
               ],
               "remarks": [
@@ -12390,7 +12441,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "> [!IMPORTANT] > Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag. To persist the removal of the specified setting in the document, at some point after calling the Settings.remove method and before the add-in is closed, you must call the Settings.saveAsync method. Hosts: Access, Excel, PowerPoint, Word"
+                  "text": "Hosts: Access, Excel, PowerPoint, Word"
                 },
                 {
                   "kind": "paragraph"
@@ -12549,19 +12600,19 @@
                 {
                   "kind": "text",
                   "text": "Sets or creates the specified setting."
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "The set method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name in the in-memory copy of the settings property bag. After you call the Settings.saveAsync method, the value is stored in the document as the serialized JSON representation of its data type. A maximum of 2MB is available for the settings of each add-in."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "> [!IMPORTANT] > Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point after calling the Settings.set method and before the add-in is closed, you must call the Settings.saveAsync method to persist settings in the document."
+                  "text": "Important: Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point after calling the Settings.set method and before the add-in is closed, you must call the Settings.saveAsync method to persist settings in the document."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "The set method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name in the in-memory copy of the settings property bag. After you call the Settings.saveAsync method, the value is stored in the document as the serialized JSON representation of its data type. A maximum of 2MB is available for the settings of each add-in."
                 },
                 {
                   "kind": "paragraph"

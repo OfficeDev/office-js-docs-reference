@@ -1,6 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.MailboxEnums.ResponseType
+    summary: |-
+      Specifies the type of response to a meeting invitation.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: 'Applicable Outlook mode: Compose or read'
     name: Office.MailboxEnums.ResponseType
     fullName: outlook.Office.MailboxEnums.ResponseType
     langs:
@@ -14,35 +19,35 @@ items:
       - outlook.Office.MailboxEnums.ResponseType.Organizer
       - outlook.Office.MailboxEnums.ResponseType.Tentative
   - uid: outlook.Office.MailboxEnums.ResponseType.Accepted
-    summary: The meeting request was accepted by the attendee
+    summary: The meeting request was accepted by the attendee.
     name: Accepted
     fullName: outlook.Office.MailboxEnums.ResponseType.Accepted
     langs:
       - typeScript
     type: field
   - uid: outlook.Office.MailboxEnums.ResponseType.Declined
-    summary: The meeting request was declined by the attendee
+    summary: The meeting request was declined by the attendee.
     name: Declined
     fullName: outlook.Office.MailboxEnums.ResponseType.Declined
     langs:
       - typeScript
     type: field
   - uid: outlook.Office.MailboxEnums.ResponseType.None
-    summary: There has been no response from the attendee
+    summary: There has been no response from the attendee.
     name: None
     fullName: outlook.Office.MailboxEnums.ResponseType.None
     langs:
       - typeScript
     type: field
   - uid: outlook.Office.MailboxEnums.ResponseType.Organizer
-    summary: The attendee is the meeting organizer
+    summary: The attendee is the meeting organizer.
     name: Organizer
     fullName: outlook.Office.MailboxEnums.ResponseType.Organizer
     langs:
       - typeScript
     type: field
   - uid: outlook.Office.MailboxEnums.ResponseType.Tentative
-    summary: The meeting request was tentatively accepted by the attendee
+    summary: The meeting request was tentatively accepted by the attendee.
     name: Tentative
     fullName: outlook.Office.MailboxEnums.ResponseType.Tentative
     langs:

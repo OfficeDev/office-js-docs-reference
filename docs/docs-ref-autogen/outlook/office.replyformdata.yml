@@ -18,10 +18,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'attachments?: Array<ReplyFormAttachment>;'
+      content: 'attachments?: ReplyFormAttachment[];'
       return:
         type:
-          - Array<ReplyFormAttachment>
+          - 'ReplyFormAttachment[]'
   - uid: outlook.Office.ReplyFormData.callback
     name: callback
     fullName: outlook.Office.ReplyFormData.callback

@@ -1,6 +1,14 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.Location
+    summary: |-
+      Provides methods to get and set the location of a meeting in an Outlook add-in.
+
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose
     name: Office.Location
     fullName: outlook.Office.Location
     langs:
@@ -11,38 +19,79 @@ items:
       - outlook.Office.Location.getAsync
       - outlook.Office.Location.setAsync
   - uid: outlook.Office.Location.getAsync
-    summary: Begins an asynchronous request for the location of an appointment
-    name: getAsync(callback)
+    summary: >-
+      Gets the location of an appointment.
+
+
+      The getAsync method starts an asynchronous call to the Exchange server to get the location of an appointment. The
+      location of the appointment is provided as a string in the asyncResult.value property.
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose
+    name: 'getAsync(options, callback)'
     fullName: outlook.Office.Location.getAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback: (result: AsyncResult) => void): void;'
+      content: 'getAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
         - id: callback
-          description: The optional method to call when the string is inserted
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type AsyncResult. \[Api set: Mailbox 1.1\]
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.Location.setAsync
-    summary: Begins an asynchronous request to set the location of an appointment
-    name: setAsync(location)
+    summary: >-
+      Sets the location of an appointment.
+
+
+      The setAsync method starts an asynchronous call to the Exchange server to set the location of an appointment.
+      Setting the location of an appointment overwrites the current location.
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose
+
+      Errors: DataExceedsMaximumSize - The location parameter is longer than 255 characters.
+    name: 'setAsync(location, options, callback)'
     fullName: outlook.Office.Location.setAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(location: string): void;'
+      content: 'setAsync(location: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: location
-          description: ''
+          description: The location of the appointment. The string is limited to 255 characters.
           type:
             - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type AsyncResult. If setting the location fails, the asyncResult.error property will contain an
+            error code. \[Api set: Mailbox 1.1\]
+          type:
+            - '(result: AsyncResult) => void'

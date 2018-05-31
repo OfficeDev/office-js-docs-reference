@@ -1,6 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.MailboxEnums.AttachmentType
+    summary: |-
+      Specifies an attachment's type.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: 'Applicable Outlook mode: Compose or read'
     name: Office.MailboxEnums.AttachmentType
     fullName: outlook.Office.MailboxEnums.AttachmentType
     langs:
@@ -8,8 +13,18 @@ items:
     type: enum
     package: outlook
     children:
+      - outlook.Office.MailboxEnums.AttachmentType.Cloud
       - outlook.Office.MailboxEnums.AttachmentType.File
       - outlook.Office.MailboxEnums.AttachmentType.Item
+  - uid: outlook.Office.MailboxEnums.AttachmentType.Cloud
+    summary: >-
+      The attachment is stored in a cloud location, such as OneDrive. The id property of the attachment contains a URL
+      to the file.
+    name: Cloud
+    fullName: outlook.Office.MailboxEnums.AttachmentType.Cloud
+    langs:
+      - typeScript
+    type: field
   - uid: outlook.Office.MailboxEnums.AttachmentType.File
     summary: The attachment is a file
     name: File
