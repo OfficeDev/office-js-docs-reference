@@ -3,7 +3,7 @@ items:
   - uid: excel.Excel.NamedItemType
     summary: >-
       \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
-      Array](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      Array](http://bing.com?type=excel) \]
     name: Excel.NamedItemType
     fullName: excel.Excel.NamedItemType
     langs:

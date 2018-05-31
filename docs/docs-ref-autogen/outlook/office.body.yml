@@ -1,6 +1,16 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.Body
+    summary: >-
+      The body object provides methods for adding and updating the content of the message or appointment. It is returned
+      in the body property of the selected item.
+
+
+      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
     name: Office.Body
     fullName: outlook.Office.Body
     langs:
@@ -14,28 +24,64 @@ items:
       - outlook.Office.Body.setAsync
       - outlook.Office.Body.setSelectedDataAsync
   - uid: outlook.Office.Body.getAsync
-    summary: Returns the current body in a specified format
-    name: 'getAsync(coercionType, callback)'
+    summary: >-
+      Returns the current body in a specified format.
+
+
+      This method returns the entire current body in the format specified by coercionType.
+
+
+      When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods
+      are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the
+      value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in
+      order to make it render efficiently with its rendering engine.
+
+
+      \[ [API set: Mailbox 1.3](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: 'getAsync(coercionType, options, callback)'
     fullName: outlook.Office.Body.getAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;'
+      content: >-
+        getAsync(coercionType: CoercionType, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void
         description: ''
       parameters:
         - id: coercionType
-          description: The format of the returned body
+          description: The format for the returned body.
           type:
             - CoercionType
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties: asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
         - id: callback
-          description: optional method to call when the getAsync method returns
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type AsyncResult. The body is provided in the requested format in the asyncResult.value
+            property.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.Body.getTypeAsync
+    summary: |-
+      Gets a value that indicates whether the content is in HTML or text format.
+
+      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose
     name: 'getTypeAsync(options, callback)'
     fullName: outlook.Office.Body.getTypeAsync
     langs:
@@ -49,64 +95,181 @@ items:
         description: ''
       parameters:
         - id: options
-          description: ''
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
           type:
             - AsyncContextOptions
         - id: callback
-          description: ''
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type AsyncResult. The content type is returned as one of the CoercionType values in the
+            asyncResult.value property.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.Body.prependAsync
-    summary: Adds the specified content to the beginning of the item body
-    name: prependAsync(data)
+    summary: >-
+      Adds the specified content to the beginning of the item body.
+
+
+      The prependAsync method inserts the specified string at the beginning of the item body. After insertion, the
+      cursor is returned to its original place, relative to the inserted content.
+
+
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (&lt;a&gt;) to LPNoLP.
+
+
+      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+    remarks: >-
+      Minimum permission level: ReadWriteItem Applicable Outlook mode: Compose Errors: DataExceedsMaximumSize - The data
+      parameter is longer than 1,000,000 characters.
+    name: 'prependAsync(data, options, callback)'
     fullName: outlook.Office.Body.prependAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'prependAsync(data: string): void;'
+      content: >-
+        prependAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult)
+        => void): void;
       return:
         type:
           - void
         description: ''
       parameters:
         - id: data
-          description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters'
+          description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.'
           type:
             - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method. coercionType: The desired format for the
+            body. The string in the data parameter will be converted to this format.
+          type:
+            - AsyncContextOptions & CoercionTypeOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type AsyncResult. Any errors encountered will be provided in the asyncResult.error property.
+          type:
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.Body.setAsync
-    summary: Replaces the entire body with the specified text.
-    name: setAsync(data)
+    summary: >-
+      Replaces the entire body with the specified text.
+
+
+      When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods
+      are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the
+      value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in
+      order to make it render efficiently with its rendering engine.
+
+
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (&lt;a&gt;) to LPNoLP.
+
+
+      \[ [API set: Mailbox 1.3](http://bing.com?type=outlook) \]
+    remarks: >-
+      Minimum permission level: ReadWriteItem
+
+
+      Applicable Outlook mode: Compose
+
+
+      Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
+
+
+      InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is
+      in plain text.
+    name: 'setAsync(data, options, callback)'
     fullName: outlook.Office.Body.setAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(data: string): void;'
+      content: >-
+        setAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
         description: ''
       parameters:
         - id: data
-          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters'
+          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
           type:
             - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method. coercionType: The desired format for the
+            body. The string in the data parameter will be converted to this format.
+          type:
+            - AsyncContextOptions & CoercionTypeOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type AsyncResult. Any errors encountered will be provided in the asyncResult.error property.
+          type:
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.Body.setSelectedDataAsync
-    summary: Replaces the selection in the body with the specified text
-    name: setSelectedDataAsync(data)
+    summary: >-
+      Replaces the selection in the body with the specified text.
+
+
+      The setSelectedDataAsync method inserts the specified string at the cursor location in the body of the item, or,
+      if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item,
+      or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After
+      insertion, the cursor is placed at the end of the inserted content.
+
+
+      When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
+      (&lt;a&gt;) to LPNoLP.
+
+
+      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+    remarks: >-
+      Minimum permission level: ReadWriteItem
+
+
+      Applicable Outlook mode: Compose
+
+
+      Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
+
+
+      InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is
+      in plain text.
+    name: 'setSelectedDataAsync(data, options, callback)'
     fullName: outlook.Office.Body.setSelectedDataAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setSelectedDataAsync(data: string): void;'
+      content: >-
+        setSelectedDataAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
         description: ''
       parameters:
         - id: data
-          description: 'The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters'
+          description: 'The string that will replace the existing body. The string is limited to 1,000,000 characters.'
           type:
             - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method. coercionType: The desired format for the
+            body. The string in the data parameter will be converted to this format.
+          type:
+            - AsyncContextOptions & CoercionTypeOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type AsyncResult. Any errors encountered will be provided in the asyncResult.error property.
+          type:
+            - '(result: AsyncResult) => void'

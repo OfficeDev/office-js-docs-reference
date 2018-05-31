@@ -7,7 +7,7 @@ items:
       to "columns".
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.ChartSeriesBy
     fullName: excel.Excel.ChartSeriesBy
     langs:

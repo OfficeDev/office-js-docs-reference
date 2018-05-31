@@ -4,7 +4,7 @@ items:
     summary: |-
       A container for the NoteTag in a paragraph.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.NoteTag
     fullName: onenote.OneNote.NoteTag
     langs:
@@ -25,7 +25,7 @@ items:
     summary: |-
       Gets the Id of the NoteTag object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: id
     fullName: onenote.OneNote.NoteTag.id
     langs:
@@ -60,7 +60,7 @@ items:
     summary: |-
       Gets the status of the NoteTag object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: status
     fullName: onenote.OneNote.NoteTag.status
     langs:
@@ -105,7 +105,7 @@ items:
     summary: |-
       Gets the type of the NoteTag object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: type
     fullName: onenote.OneNote.NoteTag.type
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Page break, line break, and four section breaks
 
-      \[ [API set: WordApi](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi](http://bing.com?type=word) \]
     name: Word.BreakType
     fullName: word.Word.BreakType
     langs:

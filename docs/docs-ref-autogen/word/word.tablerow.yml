@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a row in a Word document.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: Word.TableRow
     fullName: word.Word.TableRow
     langs:
@@ -44,7 +44,7 @@ items:
     summary: |-
       Gets the number of cells in the row. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: cellCount
     fullName: word.Word.TableRow.cellCount
     langs:
@@ -59,7 +59,7 @@ items:
     summary: |-
       Gets cells. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: cells
     fullName: word.Word.TableRow.cells
     langs:
@@ -74,7 +74,7 @@ items:
     summary: |-
       Clears the contents of the row.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: clear()
     fullName: word.Word.TableRow.clear
     langs:
@@ -90,7 +90,7 @@ items:
     summary: |-
       Deletes the entire row.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: delete()
     fullName: word.Word.TableRow.delete
     langs:
@@ -106,7 +106,7 @@ items:
     summary: |-
       Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: font
     fullName: word.Word.TableRow.font
     langs:
@@ -121,7 +121,7 @@ items:
     summary: |-
       Gets the border style of the cells in the row.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: getBorder(borderLocation)
     fullName: word.Word.TableRow.getBorder
     langs:
@@ -142,7 +142,7 @@ items:
     summary: |-
       Gets cell padding in points.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: getCellPadding(cellPaddingLocation)
     fullName: word.Word.TableRow.getCellPadding
     langs:
@@ -163,7 +163,7 @@ items:
     summary: |-
       Gets the next row. Throws if this row is the last one.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: getNext()
     fullName: word.Word.TableRow.getNext
     langs:
@@ -179,7 +179,7 @@ items:
     summary: |-
       Gets the next row. Returns a null object if this row is the last one.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: getNextOrNullObject()
     fullName: word.Word.TableRow.getNextOrNullObject
     langs:
@@ -197,7 +197,7 @@ items:
       'justified'.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: horizontalAlignment
     fullName: word.Word.TableRow.horizontalAlignment
     langs:
@@ -212,7 +212,7 @@ items:
     summary: |-
       Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: 'insertRows(insertLocation, rowCount, values)'
     fullName: word.Word.TableRow.insertRows
     langs:
@@ -245,7 +245,7 @@ items:
       Table object.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: isHeader
     fullName: word.Word.TableRow.isHeader
     langs:
@@ -280,7 +280,7 @@ items:
     summary: |-
       Gets parent table. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: parentTable
     fullName: word.Word.TableRow.parentTable
     langs:
@@ -295,7 +295,7 @@ items:
     summary: |-
       Gets and sets the preferred height of the row in points.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: preferredHeight
     fullName: word.Word.TableRow.preferredHeight
     langs:
@@ -310,7 +310,7 @@ items:
     summary: |-
       Gets the index of the row in its parent table. Read-only.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: rowIndex
     fullName: word.Word.TableRow.rowIndex
     langs:
@@ -327,7 +327,7 @@ items:
       range objects.
 
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: 'search(searchText, searchOptions)'
     fullName: word.Word.TableRow.search
     langs:
@@ -370,7 +370,7 @@ items:
     summary: |-
       Selects the row and navigates the Word UI to it.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: select(selectionMode)
     fullName: word.Word.TableRow.select
     langs:
@@ -413,7 +413,7 @@ items:
     summary: |-
       Sets cell padding in points.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: 'setCellPadding(cellPaddingLocation, cellPadding)'
     fullName: word.Word.TableRow.setCellPadding
     langs:
@@ -438,7 +438,7 @@ items:
     summary: |-
       Gets and sets the shading color.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: shadingColor
     fullName: word.Word.TableRow.shadingColor
     langs:
@@ -500,7 +500,7 @@ items:
     summary: |-
       Gets and sets the text values in the row, as a 2D Javascript array.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: values
     fullName: word.Word.TableRow.values
     langs:
@@ -515,7 +515,7 @@ items:
     summary: |-
       Gets and sets the vertical alignment of the cells in the row. The value can be 'top', 'center' or 'bottom'.
 
-      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi 1.3](http://bing.com?type=word) \]
     name: verticalAlignment
     fullName: word.Word.TableRow.verticalAlignment
     langs:

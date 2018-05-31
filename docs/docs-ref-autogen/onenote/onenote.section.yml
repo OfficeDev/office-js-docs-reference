@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a OneNote section. Sections can contain pages.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.Section
     fullName: onenote.OneNote.Section
     langs:
@@ -35,7 +35,7 @@ items:
     summary: |-
       Adds a new page to the end of the section.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: addPage(title)
     fullName: onenote.OneNote.Section.addPage
     langs:
@@ -88,7 +88,7 @@ items:
     summary: |-
       The client url of the section. Read only
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: clientUrl
     fullName: onenote.OneNote.Section.clientUrl
     langs:
@@ -103,7 +103,7 @@ items:
     summary: |-
       Copies this section to specified notebook.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: copyToNotebook(destinationNotebook)
     fullName: onenote.OneNote.Section.copyToNotebook
     langs:
@@ -158,7 +158,7 @@ items:
     summary: |-
       Copies this section to specified section group.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: copyToSectionGroup(destinationSectionGroup)
     fullName: onenote.OneNote.Section.copyToSectionGroup
     langs:
@@ -214,7 +214,7 @@ items:
     summary: |-
       Gets the REST API ID.
 
-      \[ [API set: OneNoteApi](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi](http://bing.com?type=onenote) \]
     name: getRestApiId()
     fullName: onenote.OneNote.Section.getRestApiId
     langs:
@@ -249,7 +249,7 @@ items:
     summary: |-
       Gets the ID of the section. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: id
     fullName: onenote.OneNote.Section.id
     langs:
@@ -264,7 +264,7 @@ items:
     summary: |-
       Inserts a new section before or after the current section.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: 'insertSectionAsSibling(location, title)'
     fullName: onenote.OneNote.Section.insertSectionAsSibling
     langs:
@@ -418,7 +418,7 @@ items:
     summary: |-
       Gets the name of the section. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: name
     fullName: onenote.OneNote.Section.name
     langs:
@@ -433,7 +433,7 @@ items:
     summary: |-
       Gets the notebook that contains the section. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: notebook
     fullName: onenote.OneNote.Section.notebook
     langs:
@@ -448,7 +448,7 @@ items:
     summary: |-
       The collection of pages in the section. Read only
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: pages
     fullName: onenote.OneNote.Section.pages
     langs:
@@ -465,7 +465,7 @@ items:
       notebook. Read-only.
 
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: parentSectionGroup
     fullName: onenote.OneNote.Section.parentSectionGroup
     langs:
@@ -482,7 +482,7 @@ items:
       Read-only.
 
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: parentSectionGroupOrNull
     fullName: onenote.OneNote.Section.parentSectionGroupOrNull
     langs:
@@ -544,7 +544,7 @@ items:
     summary: |-
       The web url of the page. Read only
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: webUrl
     fullName: onenote.OneNote.Section.webUrl
     langs:

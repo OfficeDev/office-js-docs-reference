@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Excel Runtime class.
 
-      \[ [API set: ExcelApi 1.5](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.5](http://bing.com?type=excel) \]
     name: Excel.Runtime
     fullName: excel.Excel.Runtime
     langs:

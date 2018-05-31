@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.BorderLineStyle
-    summary: '\[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]'
     name: Excel.BorderLineStyle
     fullName: excel.Excel.BorderLineStyle
     langs:

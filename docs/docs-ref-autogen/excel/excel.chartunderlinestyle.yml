@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartUnderlineStyle
-    summary: '\[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]'
     name: Excel.ChartUnderlineStyle
     fullName: excel.Excel.ChartUnderlineStyle
     langs:

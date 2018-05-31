@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a custom conditional format type.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.CustomConditionalFormat
     fullName: excel.Excel.CustomConditionalFormat
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: format
     fullName: excel.Excel.CustomConditionalFormat.format
     langs:
@@ -58,7 +58,7 @@ items:
     summary: |-
       Represents the Rule object on this conditional format.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: rule
     fullName: excel.Excel.CustomConditionalFormat.rule
     langs:

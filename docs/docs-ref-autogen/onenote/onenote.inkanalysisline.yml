@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents ink analysis data for an identified text line formed by ink strokes.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.InkAnalysisLine
     fullName: onenote.OneNote.InkAnalysisLine
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Gets the ID of the InkAnalysisLine object. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: id
     fullName: onenote.OneNote.InkAnalysisLine.id
     langs:
@@ -93,7 +93,7 @@ items:
     summary: |-
       Reference to the parent InkAnalysisParagraph. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: paragraph
     fullName: onenote.OneNote.InkAnalysisLine.paragraph
     langs:
@@ -186,7 +186,7 @@ items:
     summary: |-
       Gets the ink analysis words in this ink analysis line. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: words
     fullName: onenote.OneNote.InkAnalysisLine.words
     langs:

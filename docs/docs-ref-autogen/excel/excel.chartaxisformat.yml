@@ -4,7 +4,7 @@ items:
     summary: |-
       Encapsulates the format properties for the chart axis.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.ChartAxisFormat
     fullName: excel.Excel.ChartAxisFormat
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for a chart axis element.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: font
     fullName: excel.Excel.ChartAxisFormat.font
     langs:
@@ -38,7 +38,7 @@ items:
     summary: |-
       Represents chart line formatting.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: line
     fullName: excel.Excel.ChartAxisFormat.line
     langs:

@@ -1,6 +1,14 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.EmailUser
+    summary: |-
+      Represents an email account on an Exchange Server.
+
+      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
     name: Office.EmailUser
     fullName: outlook.Office.EmailUser
     langs:
@@ -11,6 +19,7 @@ items:
       - outlook.Office.EmailUser.displayName
       - outlook.Office.EmailUser.emailAddress
   - uid: outlook.Office.EmailUser.displayName
+    summary: Gets the display name associated with an email address.
     name: displayName
     fullName: outlook.Office.EmailUser.displayName
     langs:
@@ -22,6 +31,7 @@ items:
         type:
           - string
   - uid: outlook.Office.EmailUser.emailAddress
+    summary: Gets the SMTP email address.
     name: emailAddress
     fullName: outlook.Office.EmailUser.emailAddress
     langs:

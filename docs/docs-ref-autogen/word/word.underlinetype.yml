@@ -4,7 +4,7 @@ items:
     summary: |-
       Underline types
 
-      \[ [API set: WordApi](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+      \[ [API set: WordApi](http://bing.com?type=word) \]
     name: Word.UnderlineType
     fullName: word.Word.UnderlineType
     langs:

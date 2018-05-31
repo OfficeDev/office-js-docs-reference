@@ -82,7 +82,6 @@
             }
           ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "asyncContext": {
               "kind": "property",
@@ -104,10 +103,7 @@
                   "text": "Hosts: Access, Excel, Outlook, PowerPoint, Project, Word"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "error": {
               "kind": "property",
@@ -129,10 +125,7 @@
                   "text": "Hosts: Access, Excel, Outlook, PowerPoint, Project, Word"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "status": {
               "kind": "property",
@@ -154,10 +147,7 @@
                   "text": "Hosts: Access, Excel, Outlook, PowerPoint, Project, Word"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "value": {
               "kind": "property",
@@ -193,10 +183,7 @@
                   "text": "Hosts: Access, Excel, Outlook, PowerPoint, Project, Word"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -261,7 +248,6 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "getAccessTokenAsync": {
               "kind": "method",
@@ -326,10 +312,7 @@
                   "text": "This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -342,7 +325,6 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "asyncContext": {
               "kind": "property",
@@ -359,10 +341,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "authChallenge": {
               "kind": "property",
@@ -379,10 +358,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "forceAddAccount": {
               "kind": "property",
@@ -399,10 +375,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "forceConsent": {
               "kind": "property",
@@ -419,10 +392,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -466,7 +436,6 @@
             }
           ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "addHandlerAsync": {
               "kind": "method",
@@ -541,10 +510,7 @@
                   "text": "You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "document": {
               "kind": "property",
@@ -566,10 +532,7 @@
                   "text": "Hosts: Access, Excel, Word"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getDataAsync": {
               "kind": "method",
@@ -634,10 +597,7 @@
                   "text": "When called from a MatrixBinding or TableBinding, the getDataAsync method will return a subset of the bound values if the optional startRow, startColumn, rowCount, and columnCount parameters are specified (and they specify a contiguous and valid range)."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "id": {
               "kind": "property",
@@ -659,10 +619,7 @@
                   "text": "Hosts: Access, Excel, Word"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "removeHandlerAsync": {
               "kind": "method",
@@ -732,10 +689,7 @@
                   "text": "Available in Requirement set: BindingEvents"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "setDataAsync": {
               "kind": "method",
@@ -805,10 +759,7 @@
                   "text": "Available in Requirement sets: MatrixBindings, TableBindings, TextBindings"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "type": {
               "kind": "property",
@@ -830,10 +781,7 @@
                   "text": "Hosts: Access, Excel, Word"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -856,7 +804,6 @@
             }
           ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "addFromNamedItemAsync": {
               "kind": "method",
@@ -980,10 +927,7 @@
                   "text": "Note: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and you try to bind to one these content controls with this method (by specifying its name as the itemName parameter), the operation will fail."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "addFromPromptAsync": {
               "kind": "method",
@@ -1060,10 +1004,7 @@
                   "text": "Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied id. The method fails if the specified selection cannot be bound."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "addFromSelectionAsync": {
               "kind": "method",
@@ -1147,10 +1088,7 @@
                   "text": "Note In Excel, if you call the addFromSelectionAsync method passing in the Binding.id of an existing binding, the Binding.type of that binding is used, and its type cannot be changed by specifying a different value for the bindingType parameter.If you need to use an existing id and change the bindingType, call the Bindings.releaseByIdAsync method first to release the binding, and then call the addFromSelectionAsync method to reestablish the binding with a new type."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "document": {
               "kind": "property",
@@ -1174,10 +1112,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getAllAsync": {
               "kind": "method",
@@ -1235,10 +1170,7 @@
                   "text": "Available in Requirement set: MatrixBindings, TableBindings, TextBindings"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getByIdAsync": {
               "kind": "method",
@@ -1315,10 +1247,7 @@
                   "text": "Fails if the specified id does not exist."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "releaseByIdAsync": {
               "kind": "method",
@@ -1395,10 +1324,7 @@
                   "text": "Fails if the specified id does not exist."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -1626,7 +1552,6 @@
             }
           ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "document": {
               "kind": "property",
@@ -1643,10 +1568,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -1676,7 +1598,6 @@
             }
           ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "baseName": {
               "kind": "property",
@@ -1705,10 +1626,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getNodesAsync": {
               "kind": "method",
@@ -1778,10 +1696,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getNodeValueAsync": {
               "kind": "method",
@@ -1839,10 +1754,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getTextAsync": {
               "kind": "method",
@@ -1900,10 +1812,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getXmlAsync": {
               "kind": "method",
@@ -1961,10 +1870,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "namespaceUri": {
               "kind": "property",
@@ -1993,10 +1899,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "nodeType": {
               "kind": "property",
@@ -2025,10 +1928,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "setNodeValueAsync": {
               "kind": "method",
@@ -2098,10 +1998,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "setTextAsync": {
               "kind": "method",
@@ -2171,10 +2068,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "setXmlAsync": {
               "kind": "method",
@@ -2244,10 +2138,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -2277,7 +2168,6 @@
             }
           ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "addHandlerAsync": {
               "kind": "method",
@@ -2359,10 +2249,7 @@
                   "text": "You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "builtIn": {
               "kind": "property",
@@ -2391,10 +2278,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "deleteAsync": {
               "kind": "method",
@@ -2452,10 +2336,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getNodesAsync": {
               "kind": "method",
@@ -2525,10 +2406,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getXmlAsync": {
               "kind": "method",
@@ -2586,10 +2464,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "id": {
               "kind": "property",
@@ -2618,10 +2493,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "namespaceManager": {
               "kind": "property",
@@ -2650,10 +2522,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "removeHandlerAsync": {
               "kind": "method",
@@ -2735,10 +2604,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -2768,7 +2634,6 @@
             }
           ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "addAsync": {
               "kind": "method",
@@ -2838,10 +2703,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getByIdAsync": {
               "kind": "method",
@@ -2911,10 +2773,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getByNamespaceAsync": {
               "kind": "method",
@@ -2984,10 +2843,7 @@
                   "text": "Available in Requirement set: CustomXmlParts"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -3010,7 +2866,6 @@
             }
           ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "addNamespaceAsync": {
               "kind": "method",
@@ -3099,10 +2954,7 @@
                   "text": "If no namespace is assigned to the requested prefix, the method returns an empty string (\"\")."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getNamespaceAsync": {
               "kind": "method",
@@ -3179,10 +3031,7 @@
                   "text": "If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix except when the prefix is one added or used by the data store internally, in which case it will return an error."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getPrefixAsync": {
               "kind": "method",
@@ -3259,10 +3108,7 @@
                   "text": "If no prefix is assigned to the requested namespace, the method returns an empty string (\"\"). If there are multiple prefixes specified in the namespace manager, the method returns the first prefix that matches the supplied namespace."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -3280,7 +3126,6 @@
           ],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "addEventHandler": {
               "kind": "method",
@@ -3330,10 +3175,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "close": {
               "kind": "method",
@@ -3354,10 +3196,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -3370,7 +3209,6 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "displayInIframe": {
               "kind": "property",
@@ -3387,10 +3225,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "height": {
               "kind": "property",
@@ -3407,10 +3242,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "width": {
               "kind": "property",
@@ -3427,10 +3259,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -3443,7 +3272,6 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "getProjectFieldAsync": {
               "kind": "method",
@@ -3501,10 +3329,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getResourceFieldAsync": {
               "kind": "method",
@@ -3574,10 +3399,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getSelectedResourceAsync": {
               "kind": "method",
@@ -3623,10 +3445,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getSelectedTaskAsync": {
               "kind": "method",
@@ -3672,10 +3491,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getSelectedViewAsync": {
               "kind": "method",
@@ -3721,10 +3537,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getTaskAsync": {
               "kind": "method",
@@ -3782,10 +3595,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getTaskFieldAsync": {
               "kind": "method",
@@ -3855,10 +3665,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getWSSUrlAsync": {
               "kind": "method",
@@ -3904,10 +3711,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -3977,7 +3781,6 @@
           ],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "document": {
               "kind": "property",
@@ -3994,10 +3797,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "type": {
               "kind": "property",
@@ -4014,10 +3814,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -4047,7 +3844,6 @@
             }
           ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "code": {
               "kind": "property",
@@ -4064,10 +3860,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "message": {
               "kind": "property",
@@ -4084,10 +3877,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "name": {
               "kind": "property",
@@ -4104,10 +3894,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -4376,7 +4163,6 @@
             }
           ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "closeAsync": {
               "kind": "method",
@@ -4422,10 +4208,7 @@
                   "text": "Available in Requirement set: File"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getSliceAsync": {
               "kind": "method",
@@ -4483,10 +4266,7 @@
                   "text": "Available in Requirement set: File"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "size": {
               "kind": "property",
@@ -4515,10 +4295,7 @@
                   "text": "Available in Requirement set: File"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "sliceCount": {
               "kind": "property",
@@ -4540,10 +4317,7 @@
                   "text": "Hosts: PowerPoint, Word"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -4556,7 +4330,6 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "url": {
               "kind": "property",
@@ -4573,10 +4346,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -5014,7 +4784,6 @@
             }
           ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "columnCount": {
               "kind": "property",
@@ -5043,10 +4812,7 @@
                   "text": "Available in Requirement set: MatrixBindings"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "rowCount": {
               "kind": "property",
@@ -5075,10 +4841,7 @@
                   "text": "Available in Requirement set: MatrixBindings"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -5088,10 +4851,26 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
-          "remarks": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Provides access to the properties for Office theme colors."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with File > Office Account > Office Theme UI, which is applied across all Office host applications. Using Office theme colors is appropriate for mail and task pane add-ins."
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Hosts: Excel, Outlook, Powerpoint, Project, Word"
+            }
+          ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "bodyBackgroundColor": {
               "kind": "property",
@@ -5101,12 +4880,14 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the Office theme body background color as a hexadecimal color triplet (e.g. \"FFA500\")."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "bodyForegroundColor": {
               "kind": "property",
@@ -5116,12 +4897,14 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the Office theme body foreground color as a hexadecimal color triplet (e.g. \"FFA500\")."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "controlBackgroundColor": {
               "kind": "property",
@@ -5131,12 +4914,14 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the Office theme control background color as a hexadecimal color triplet (e.g. \"FFA500\")."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "controlForegroundColor": {
               "kind": "property",
@@ -5146,12 +4931,14 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the Office theme body control color as a hexadecimal color triplet (e.g. \"FFA500\")."
+                }
+              ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -12183,7 +11970,6 @@
             }
           ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "addHandlerAsync": {
               "kind": "method",
@@ -12250,6 +12036,13 @@
                 {
                   "kind": "text",
                   "text": "Adds an event handler for the settingsChanged event."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Important: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios."
                 }
               ],
               "remarks": [
@@ -12258,10 +12051,7 @@
                   "text": "When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter. In the callback function passed to the addHandlerAsync method, you can use the properties of the AsyncResult object to return the following information. |Property |Use to...| |---------|---------| |AsyncResult.value|Always returns undefined because there is no data or object to retrieve when adding an event handler.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "get": {
               "kind": "method",
@@ -12307,10 +12097,7 @@
                   "text": "Available in Requirement set: Settings"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "refreshAsync": {
               "kind": "method",
@@ -12349,10 +12136,7 @@
                   "text": "When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter. In the callback function passed to the refreshAsync method, you can use the properties of the AsyncResult object to return the following information. |Property |Use to...| |---------|---------| |AsyncResult.value|Access a Settings object with the refreshed values.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "remove": {
               "kind": "method",
@@ -12378,6 +12162,13 @@
                 {
                   "kind": "text",
                   "text": "Removes the specified setting."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Important: Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag. To persist the removal of the specified setting in the document, at some point after calling the Settings.remove method and before the add-in is closed, you must call the Settings.saveAsync method."
                 }
               ],
               "remarks": [
@@ -12390,7 +12181,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "> [!IMPORTANT] > Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag. To persist the removal of the specified setting in the document, at some point after calling the Settings.remove method and before the add-in is closed, you must call the Settings.saveAsync method. Hosts: Access, Excel, PowerPoint, Word"
+                  "text": "Hosts: Access, Excel, PowerPoint, Word"
                 },
                 {
                   "kind": "paragraph"
@@ -12400,10 +12191,7 @@
                   "text": "Available in Requirement set: Settings"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "removeHandlerAsync": {
               "kind": "method",
@@ -12466,10 +12254,7 @@
                   "text": "When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter. In the callback function passed to the removeHandlerAsync method, you can use the properties of the AsyncResult object to return the following information."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "saveAsync": {
               "kind": "method",
@@ -12508,10 +12293,7 @@
                   "text": "When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter. In the callback function passed to the saveAsync method, you can use the properties of the AsyncResult object to return the following information. |Property |Use to...| |---------|---------| |AsyncResult.value|Always returns undefined because there is no object or data to retrieve.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "set": {
               "kind": "method",
@@ -12549,19 +12331,19 @@
                 {
                   "kind": "text",
                   "text": "Sets or creates the specified setting."
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "The set method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name in the in-memory copy of the settings property bag. After you call the Settings.saveAsync method, the value is stored in the document as the serialized JSON representation of its data type. A maximum of 2MB is available for the settings of each add-in."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "> [!IMPORTANT] > Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point after calling the Settings.set method and before the add-in is closed, you must call the Settings.saveAsync method to persist settings in the document."
+                  "text": "Important: Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point after calling the Settings.set method and before the add-in is closed, you must call the Settings.saveAsync method to persist settings in the document."
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "The set method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name in the in-memory copy of the settings property bag. After you call the Settings.saveAsync method, the value is stored in the document as the serialized JSON representation of its data type. A maximum of 2MB is available for the settings of each add-in."
                 },
                 {
                   "kind": "paragraph"
@@ -12578,10 +12360,7 @@
                   "text": "Available in Requirement set: Settings"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -12618,7 +12397,6 @@
             }
           ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "data": {
               "kind": "property",
@@ -12654,10 +12432,7 @@
                   "text": "Available in Requirement set: File"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "index": {
               "kind": "property",
@@ -12686,10 +12461,7 @@
                   "text": "Available in Requirement set: File"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "size": {
               "kind": "property",
@@ -12718,10 +12490,7 @@
                   "text": "Available in Requirement set: File"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -12823,7 +12592,6 @@
             }
           ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "addColumnsAsync": {
               "kind": "method",
@@ -12935,10 +12703,7 @@
                   "text": "Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in a single call to this method."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "addRowsAsync": {
               "kind": "method",
@@ -13050,10 +12815,7 @@
                   "text": "Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in a single call to this method."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "clearFormatsAsync": {
               "kind": "method",
@@ -13118,10 +12880,7 @@
                   "text": "See [Format tables in add-ins for Excel](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table) for more information."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "columnCount": {
               "kind": "property",
@@ -13150,10 +12909,7 @@
                   "text": "Available in Requirement set: TableBindings"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "deleteAllDataValuesAsync": {
               "kind": "method",
@@ -13218,10 +12974,7 @@
                   "text": "In Excel, if the table has no header row, this method will delete the table itself."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "getFormatsAsync": {
               "kind": "method",
@@ -13291,10 +13044,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "hasHeaders": {
               "kind": "property",
@@ -13323,10 +13073,7 @@
                   "text": "Available in Requirement set: TableBindings"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "rowCount": {
               "kind": "property",
@@ -13390,10 +13137,7 @@
                   "text": "In content add-ins for Access, for performance reasons the rowCount property always returns -1."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "setFormatsAsync": {
               "kind": "method",
@@ -13463,10 +13207,7 @@
                   "text": "Available in Requirement set: Not in a set"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "setTableOptionsAsync": {
               "kind": "method",
@@ -13536,10 +13277,7 @@
                   "text": "Available in Requirement set: Not in a set"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -13569,7 +13307,6 @@
             }
           ],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "__constructor": {
               "kind": "constructor",
@@ -13673,10 +13410,7 @@
                   "text": "Available in Requirement set: TableBindings"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "rows": {
               "kind": "property",
@@ -13733,10 +13467,7 @@
                   "text": "Available in Requirement set: TableBindings"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -13772,8 +13503,7 @@
               "text": "The TextBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from the Binding object. It does not implement any additional properties or methods of its own."
             }
           ],
-          "isBeta": false,
-          "isSealed": false
+          "isBeta": false
         },
         "UI": {
           "kind": "interface",
@@ -13789,7 +13519,6 @@
           ],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "closeContainer": {
               "kind": "method",
@@ -13843,10 +13572,7 @@
                   "text": "Hosts: Excel, Word, PowerPoint, Outlook (Minimum requirement set: Mailbox 1.5)"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "displayDialogAsync": {
               "kind": "method",
@@ -14000,10 +13726,7 @@
                   "text": "Do not use a dialog box to interact with a document. Use a task pane instead."
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "messageParent": {
               "kind": "method",
@@ -14037,10 +13760,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -14150,7 +13870,6 @@
           ],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "context": {
               "kind": "property",
@@ -14167,10 +13886,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "isNullObject": {
               "kind": "property",
@@ -14187,10 +13903,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -14208,7 +13921,6 @@
           ],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "__constructor": {
               "kind": "constructor",
@@ -14265,10 +13977,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "load": {
               "kind": "method",
@@ -14304,10 +14013,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "loadRecursive": {
               "kind": "method",
@@ -14365,10 +14071,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "requestHeaders": {
               "kind": "property",
@@ -14385,10 +14088,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "sync": {
               "kind": "method",
@@ -14417,10 +14117,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "trace": {
               "kind": "method",
@@ -14449,10 +14146,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "trackedObjects": {
               "kind": "property",
@@ -14469,10 +14163,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -14492,7 +14183,6 @@
           ],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "value": {
               "kind": "property",
@@ -14509,10 +14199,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -14525,7 +14212,6 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "code": {
               "kind": "property",
@@ -14542,10 +14228,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "errorLocation": {
               "kind": "property",
@@ -14562,10 +14245,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "fullStatements": {
               "kind": "property",
@@ -14589,10 +14269,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "innerError": {
               "kind": "property",
@@ -14609,10 +14286,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "message": {
               "kind": "property",
@@ -14629,10 +14303,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "statements": {
               "kind": "property",
@@ -14656,10 +14327,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "surroundingStatements": {
               "kind": "property",
@@ -14683,10 +14351,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -14699,7 +14364,6 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "container": {
               "kind": "property",
@@ -14711,10 +14375,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "height": {
               "kind": "property",
@@ -14726,10 +14387,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "id": {
               "kind": "property",
@@ -14741,10 +14399,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "sessionKey": {
               "kind": "property",
@@ -14756,10 +14411,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "timeoutInMilliseconds": {
               "kind": "property",
@@ -14771,10 +14423,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "width": {
               "kind": "property",
@@ -14786,10 +14435,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -14802,7 +14448,6 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "__constructor": {
               "kind": "constructor",
@@ -14865,10 +14510,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -14886,7 +14528,6 @@
           ],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "code": {
               "kind": "property",
@@ -14903,10 +14544,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "debugInfo": {
               "kind": "property",
@@ -14923,10 +14561,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "innerError": {
               "kind": "property",
@@ -14943,10 +14578,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "message": {
               "kind": "property",
@@ -14963,10 +14595,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "name": {
               "kind": "property",
@@ -14983,10 +14612,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "stack": {
               "kind": "property",
@@ -15003,10 +14629,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "traceMessages": {
               "kind": "property",
@@ -15023,10 +14646,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -15039,7 +14659,6 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "accessDenied": {
               "kind": "property",
@@ -15051,10 +14670,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "activityLimitReached": {
               "kind": "property",
@@ -15066,10 +14682,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "apiNotFound": {
               "kind": "property",
@@ -15081,10 +14694,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "cannotRegisterEvent": {
               "kind": "property",
@@ -15096,10 +14706,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "connectionFailure": {
               "kind": "property",
@@ -15111,10 +14718,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "generalException": {
               "kind": "property",
@@ -15126,10 +14730,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "invalidArgument": {
               "kind": "property",
@@ -15141,10 +14742,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "invalidObjectPath": {
               "kind": "property",
@@ -15156,10 +14754,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "invalidRequestContext": {
               "kind": "property",
@@ -15171,10 +14766,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "propertyNotLoaded": {
               "kind": "property",
@@ -15186,10 +14778,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "runMustReturnPromise": {
               "kind": "property",
@@ -15201,10 +14790,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "valueNotLoaded": {
               "kind": "property",
@@ -15216,10 +14802,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -15234,7 +14817,6 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "__constructor": {
               "kind": "constructor",
@@ -15305,10 +14887,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "remove": {
               "kind": "method",
@@ -15324,10 +14903,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -15342,7 +14918,6 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "__constructor": {
               "kind": "constructor",
@@ -15427,10 +15002,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "remove": {
               "kind": "method",
@@ -15454,10 +15026,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -15472,7 +15041,6 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "eventArgsTransformFunc": {
               "kind": "property",
@@ -15484,10 +15052,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "registerFunc": {
               "kind": "property",
@@ -15499,10 +15064,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "unregisterFunc": {
               "kind": "property",
@@ -15514,10 +15076,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -15530,7 +15089,6 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "expand": {
               "kind": "property",
@@ -15542,10 +15100,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "select": {
               "kind": "property",
@@ -15557,10 +15112,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "skip": {
               "kind": "property",
@@ -15572,10 +15124,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "top": {
               "kind": "property",
@@ -15587,10 +15136,7 @@
               "deprecatedMessage": [],
               "summary": [],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -15608,7 +15154,6 @@
           ],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "pendingStatements": {
               "kind": "property",
@@ -15632,10 +15177,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -15653,7 +15195,6 @@
           ],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "headers": {
               "kind": "property",
@@ -15670,10 +15211,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "url": {
               "kind": "property",
@@ -15690,10 +15228,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -15711,7 +15246,6 @@
           ],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "add": {
               "kind": "method",
@@ -15740,10 +15274,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             },
             "remove": {
               "kind": "method",
@@ -15772,10 +15303,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         },
@@ -15788,7 +15316,6 @@
           "summary": [],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
           "members": {
             "throwOnReadOnly": {
               "kind": "property",
@@ -15805,10 +15332,7 @@
                 }
               ],
               "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
+              "isBeta": false
             }
           }
         }

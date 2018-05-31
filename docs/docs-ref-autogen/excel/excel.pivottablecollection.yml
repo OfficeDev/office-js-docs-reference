@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of all the PivotTables that are part of the workbook or worksheet.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: Excel.PivotTableCollection
     fullName: excel.Excel.PivotTableCollection
     langs:
@@ -25,7 +25,7 @@ items:
     summary: |-
       Gets the number of pivot tables in the collection.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: getCount()
     fullName: excel.Excel.PivotTableCollection.getCount
     langs:
@@ -41,7 +41,7 @@ items:
     summary: |-
       Gets a PivotTable by name.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: getItem(name)
     fullName: excel.Excel.PivotTableCollection.getItem
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: getItemOrNullObject(name)
     fullName: excel.Excel.PivotTableCollection.getItemOrNullObject
     langs:
@@ -117,7 +117,7 @@ items:
     summary: |-
       Refreshes all the pivot tables in the collection.
 
-      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.3](http://bing.com?type=excel) \]
     name: refreshAll()
     fullName: excel.Excel.PivotTableCollection.refreshAll
     langs:

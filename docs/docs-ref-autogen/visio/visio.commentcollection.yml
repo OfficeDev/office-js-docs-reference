@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the CommentCollection for a given Shape.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: Visio.CommentCollection
     fullName: visio.Visio.CommentCollection
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Gets the number of Shape Data Items.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: getCount()
     fullName: visio.Visio.CommentCollection.getCount
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Gets the Comment using its name.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: getItem(key)
     fullName: visio.Visio.CommentCollection.getItem
     langs:

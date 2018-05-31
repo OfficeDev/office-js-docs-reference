@@ -376,10 +376,30 @@ export declare namespace Office {
          */
         asyncContext?: any
     }
+    /**
+     * Provides access to the properties for Office theme colors.
+     * 
+     * Using Office theme colors lets you coordinate the color scheme of your add-in with the current Office theme selected by the user with File > Office Account > Office Theme UI, which is applied across all Office host applications. Using Office theme colors is appropriate for mail and task pane add-ins.
+     *  
+     * @remarks
+     * Hosts: Excel, Outlook, Powerpoint, Project, Word
+     */
     export interface OfficeTheme {
+        /**
+         * Gets the Office theme body background color as a hexadecimal color triplet (e.g. "FFA500").
+         */
         bodyBackgroundColor: string;
+        /**
+         * Gets the Office theme body foreground color as a hexadecimal color triplet (e.g. "FFA500").
+         */
         bodyForegroundColor: string;
+        /**
+         * Gets the Office theme control background color as a hexadecimal color triplet (e.g. "FFA500").
+         */
         controlBackgroundColor: string;
+        /**
+         * Gets the Office theme body control color as a hexadecimal color triplet (e.g. "FFA500").
+         */
         controlForegroundColor: string;
     }
     /**
@@ -1709,11 +1729,10 @@ export declare namespace Office {
         /**
          * Adds an event handler for the settingsChanged event.
          * 
+         * Important: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios.
+         *
          * @remarks
          * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
-         * 
-         * > [!IMPORTANT]
-         * > Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios.
          * 
          * Hosts: Excel
          * 
@@ -1773,11 +1792,11 @@ export declare namespace Office {
         /**
          * Removes the specified setting.
          * 
+         * Important: Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag. To persist the removal of the specified setting in the document, at some point after calling the Settings.remove method and before the add-in is closed, you must call the Settings.saveAsync method.
+         * 
          * @remarks
          * null is a valid value for a setting. Therefore, assigning null to the setting will not remove it from the settings property bag.
          * 
-         * > [!IMPORTANT]
-         * > Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag. To persist the removal of the specified setting in the document, at some point after calling the Settings.remove method and before the add-in is closed, you must call the Settings.saveAsync method.
          * Hosts: Access, Excel, PowerPoint, Word
          * 
          * Available in Requirement set: Settings
@@ -1810,9 +1829,9 @@ export declare namespace Office {
          * @remarks
          * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the set and get methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are available the next time the add-in is used, use the saveAsync method.
          * 
-         * > [!NOTE]
-         * > The saveAsync method persists the in-memory settings property bag into the document file; however, the changes to the document file itself are saved only when the user (or AutoRecover setting) saves the document to the file system.
-         * > The refreshAsync method is only useful in coauthoring scenarios (which are only supported in Word) when other instances of the same add-in might change the settings and those changes should be made available to all instances.
+         * Note:
+         * The saveAsync method persists the in-memory settings property bag into the document file; however, the changes to the document file itself are saved only when the user (or AutoRecover setting) saves the document to the file system.
+         * The refreshAsync method is only useful in coauthoring scenarios (which are only supported in Word) when other instances of the same add-in might change the settings and those changes should be made available to all instances.
          * 
          * Hosts: Access, Excel, PowerPoint, Word
          * @param options - Syntax example: {overwriteIfStale:false}
@@ -1833,11 +1852,11 @@ export declare namespace Office {
         /**
          * Sets or creates the specified setting.
          * 
+         * 
+         * Important: Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point after calling the Settings.set method and before the add-in is closed, you must call the Settings.saveAsync method to persist settings in the document.
+         * 
          * @remarks
          * The set method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name in the in-memory copy of the settings property bag. After you call the Settings.saveAsync method, the value is stored in the document as the serialized JSON representation of its data type. A maximum of 2MB is available for the settings of each add-in.
-         * 
-         * > [!IMPORTANT]
-         * > Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point after calling the Settings.set method and before the add-in is closed, you must call the Settings.saveAsync method to persist settings in the document.
          * 
          * Hosts: Access, Excel, PowerPoint, Word
          * 

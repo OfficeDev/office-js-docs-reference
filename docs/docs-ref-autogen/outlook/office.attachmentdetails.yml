@@ -1,6 +1,16 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.AttachmentDetails
+    summary: |-
+      Represents an attachment on an item from the server. Read mode only.
+
+      An array of AttachmentDetail objects is returned as the attachments property of an Appointment or Message object.
+
+      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
     name: Office.AttachmentDetails
     fullName: outlook.Office.AttachmentDetails
     langs:
@@ -15,6 +25,7 @@ items:
       - outlook.Office.AttachmentDetails.name
       - outlook.Office.AttachmentDetails.size
   - uid: outlook.Office.AttachmentDetails.attachmentType
+    summary: Gets a value that indicates the type of an attachment.
     name: attachmentType
     fullName: outlook.Office.AttachmentDetails.attachmentType
     langs:
@@ -26,6 +37,7 @@ items:
         type:
           - Office.MailboxEnums.AttachmentType
   - uid: outlook.Office.AttachmentDetails.contentType
+    summary: Gets the MIME content type of the attachment.
     name: contentType
     fullName: outlook.Office.AttachmentDetails.contentType
     langs:
@@ -37,6 +49,7 @@ items:
         type:
           - string
   - uid: outlook.Office.AttachmentDetails.id
+    summary: Gets the Exchange attachment ID of the attachment.
     name: id
     fullName: outlook.Office.AttachmentDetails.id
     langs:
@@ -48,6 +61,7 @@ items:
         type:
           - string
   - uid: outlook.Office.AttachmentDetails.isInline
+    summary: Gets a value that indicates whether the attachment should be displayed in the body of the item.
     name: isInline
     fullName: outlook.Office.AttachmentDetails.isInline
     langs:
@@ -59,6 +73,7 @@ items:
         type:
           - boolean
   - uid: outlook.Office.AttachmentDetails.name
+    summary: Gets the name of the attachment.
     name: name
     fullName: outlook.Office.AttachmentDetails.name
     langs:
@@ -70,6 +85,7 @@ items:
         type:
           - string
   - uid: outlook.Office.AttachmentDetails.size
+    summary: Gets the size of the attachment in bytes.
     name: size
     fullName: outlook.Office.AttachmentDetails.size
     langs:

@@ -36,7 +36,14 @@ items:
       - office.Office.Settings.saveAsync
       - office.Office.Settings.set
   - uid: office.Office.Settings.addHandlerAsync
-    summary: Adds an event handler for the settingsChanged event.
+    summary: >-
+      Adds an event handler for the settingsChanged event.
+
+
+      Important: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with
+      any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in
+      Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the
+      settingsChanged event is supported only in Excel Online in co-authoring scenarios.
     remarks: >-
       When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can
       access from the callback function's only parameter. In the callback function passed to the addHandlerAsync method,
@@ -129,16 +136,19 @@ items:
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Settings.remove
-    summary: Removes the specified setting.
+    summary: >-
+      Removes the specified setting.
+
+
+      Important: Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag.
+      To persist the removal of the specified setting in the document, at some point after calling the Settings.remove
+      method and before the add-in is closed, you must call the Settings.saveAsync method.
     remarks: >-
       null is a valid value for a setting. Therefore, assigning null to the setting will not remove it from the settings
       property bag.
 
 
-      &gt; \[!IMPORTANT\] &gt; Be aware that the Settings.remove method affects only the in-memory copy of the settings
-      property bag. To persist the removal of the specified setting in the document, at some point after calling the
-      Settings.remove method and before the add-in is closed, you must call the Settings.saveAsync method. Hosts:
-      Access, Excel, PowerPoint, Word
+      Hosts: Access, Excel, PowerPoint, Word
 
 
       Available in Requirement set: Settings
@@ -218,18 +228,19 @@ items:
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Settings.set
-    summary: Sets or creates the specified setting.
+    summary: >-
+      Sets or creates the specified setting.
+
+
+      Important: Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. To
+      make sure that additions or changes to settings will be available to your add-in the next time the document is
+      opened, at some point after calling the Settings.set method and before the add-in is closed, you must call the
+      Settings.saveAsync method to persist settings in the document.
     remarks: >-
       The set method creates a new setting of the specified name if it does not already exist, or sets an existing
       setting of the specified name in the in-memory copy of the settings property bag. After you call the
       Settings.saveAsync method, the value is stored in the document as the serialized JSON representation of its data
       type. A maximum of 2MB is available for the settings of each add-in.
-
-
-      &gt; \[!IMPORTANT\] &gt; Be aware that the Settings.set method affects only the in-memory copy of the settings
-      property bag. To make sure that additions or changes to settings will be available to your add-in the next time
-      the document is opened, at some point after calling the Settings.set method and before the add-in is closed, you
-      must call the Settings.saveAsync method to persist settings in the document.
 
 
       Hosts: Access, Excel, PowerPoint, Word

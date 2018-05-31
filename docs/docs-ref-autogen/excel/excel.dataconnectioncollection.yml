@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of all the Data Connections that are part of the workbook or worksheet.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: Excel.DataConnectionCollection
     fullName: excel.Excel.DataConnectionCollection
     langs:
@@ -20,7 +20,7 @@ items:
     summary: |-
       Refreshes all the Data Connections in the collection.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: refreshAll()
     fullName: excel.Excel.DataConnectionCollection.refreshAll
     langs:

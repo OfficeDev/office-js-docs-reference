@@ -1,6 +1,20 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.PhoneNumber
+    summary: >-
+      Represents a phone number identified in an item. Read mode only.
+
+
+      An array of PhoneNumber objects containing the phone numbers found in an email message is returned in the
+      phoneNumbers property of the Entities object that is returned when you call the getEntities method on the selected
+      item.
+
+
+      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
     name: Office.PhoneNumber
     fullName: outlook.Office.PhoneNumber
     langs:
@@ -12,6 +26,7 @@ items:
       - outlook.Office.PhoneNumber.phoneString
       - outlook.Office.PhoneNumber.type
   - uid: outlook.Office.PhoneNumber.originalPhoneString
+    summary: Gets the text that was identified in an item as a phone number.
     name: originalPhoneString
     fullName: outlook.Office.PhoneNumber.originalPhoneString
     langs:
@@ -23,6 +38,9 @@ items:
         type:
           - string
   - uid: outlook.Office.PhoneNumber.phoneString
+    summary: >-
+      Gets a string containing a phone number. This string contains only the digits of the telephone number and excludes
+      characters like parentheses and hyphens, if they exist in the original item.
     name: phoneString
     fullName: outlook.Office.PhoneNumber.phoneString
     langs:
@@ -34,6 +52,7 @@ items:
         type:
           - string
   - uid: outlook.Office.PhoneNumber.type
+    summary: 'Gets a string that identifies the type of phone number: Home, Work, Mobile, Unspecified.'
     name: type
     fullName: outlook.Office.PhoneNumber.type
     langs:

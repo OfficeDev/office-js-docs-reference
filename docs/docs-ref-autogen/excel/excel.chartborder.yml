@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the border formatting of a chart element.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: Excel.ChartBorder
     fullName: excel.Excel.ChartBorder
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       HTML color code representing the color of borders in the chart.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: color
     fullName: excel.Excel.ChartBorder.color
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Represents the line style of the border. See Excel.ChartLineStyle for details.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: lineStyle
     fullName: excel.Excel.ChartBorder.lineStyle
     langs:
@@ -112,7 +112,7 @@ items:
     summary: |-
       Represents weight of the border, in points.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: weight
     fullName: excel.Excel.ChartBorder.weight
     langs:

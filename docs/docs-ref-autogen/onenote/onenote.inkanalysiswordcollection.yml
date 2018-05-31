@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of InkAnalysisWord objects.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.InkAnalysisWordCollection
     fullName: onenote.OneNote.InkAnalysisWordCollection
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Returns the number of InkAnalysisWords in the page. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: count
     fullName: onenote.OneNote.InkAnalysisWordCollection.count
     langs:
@@ -41,7 +41,7 @@ items:
     summary: |-
       Gets a InkAnalysisWord object by ID or by its index in the collection. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getItem(index)
     fullName: onenote.OneNote.InkAnalysisWordCollection.getItem
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Gets a InkAnalysisWord on its position in the collection.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getItemAt(index)
     fullName: onenote.OneNote.InkAnalysisWordCollection.getItemAt
     langs:

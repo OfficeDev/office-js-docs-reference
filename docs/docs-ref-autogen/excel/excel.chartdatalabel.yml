@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the data label of a chart point.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: Excel.ChartDataLabel
     fullName: excel.Excel.ChartDataLabel
     langs:
@@ -51,7 +51,7 @@ items:
       details.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: position
     fullName: excel.Excel.ChartDataLabel.position
     langs:
@@ -70,7 +70,7 @@ items:
     summary: |-
       String representing the separator used for the data label on a chart.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: separator
     fullName: excel.Excel.ChartDataLabel.separator
     langs:
@@ -107,7 +107,7 @@ items:
     summary: |-
       Boolean value representing if the data label bubble size is visible or not.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: showBubbleSize
     fullName: excel.Excel.ChartDataLabel.showBubbleSize
     langs:
@@ -122,7 +122,7 @@ items:
     summary: |-
       Boolean value representing if the data label category name is visible or not.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: showCategoryName
     fullName: excel.Excel.ChartDataLabel.showCategoryName
     langs:
@@ -137,7 +137,7 @@ items:
     summary: |-
       Boolean value representing if the data label legend key is visible or not.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: showLegendKey
     fullName: excel.Excel.ChartDataLabel.showLegendKey
     langs:
@@ -152,7 +152,7 @@ items:
     summary: |-
       Boolean value representing if the data label percentage is visible or not.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: showPercentage
     fullName: excel.Excel.ChartDataLabel.showPercentage
     langs:
@@ -167,7 +167,7 @@ items:
     summary: |-
       Boolean value representing if the data label series name is visible or not.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: showSeriesName
     fullName: excel.Excel.ChartDataLabel.showSeriesName
     langs:
@@ -182,7 +182,7 @@ items:
     summary: |-
       Boolean value representing if the data label value is visible or not.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: showValue
     fullName: excel.Excel.ChartDataLabel.showValue
     langs:

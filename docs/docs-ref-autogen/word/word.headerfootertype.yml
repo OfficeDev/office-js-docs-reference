@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.HeaderFooterType
-    summary: '\[ [API set: WordApi](/javascript/office/requirement-sets/word-api-requirement-sets) \]'
+    summary: '\[ [API set: WordApi](http://bing.com?type=word) \]'
     name: Word.HeaderFooterType
     fullName: word.Word.HeaderFooterType
     langs:

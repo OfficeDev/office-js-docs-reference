@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalFormatType
-    summary: '\[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]'
     name: Excel.ConditionalFormatType
     fullName: excel.Excel.ConditionalFormatType
     langs:

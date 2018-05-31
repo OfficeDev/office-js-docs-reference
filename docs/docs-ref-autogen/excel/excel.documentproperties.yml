@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents workbook properties.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: Excel.DocumentProperties
     fullName: excel.Excel.DocumentProperties
     langs:
@@ -33,7 +33,7 @@ items:
     summary: |-
       Gets or sets the author of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: author
     fullName: excel.Excel.DocumentProperties.author
     langs:
@@ -48,7 +48,7 @@ items:
     summary: |-
       Gets or sets the category of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: category
     fullName: excel.Excel.DocumentProperties.category
     langs:
@@ -63,7 +63,7 @@ items:
     summary: |-
       Gets or sets the comments of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: comments
     fullName: excel.Excel.DocumentProperties.comments
     langs:
@@ -78,7 +78,7 @@ items:
     summary: |-
       Gets or sets the company of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: company
     fullName: excel.Excel.DocumentProperties.company
     langs:
@@ -93,7 +93,7 @@ items:
     summary: |-
       Gets the creation date of the workbook. Read only.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: creationDate
     fullName: excel.Excel.DocumentProperties.creationDate
     langs:
@@ -108,7 +108,7 @@ items:
     summary: |-
       Gets the collection of custom properties of the workbook. Read only.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: custom
     fullName: excel.Excel.DocumentProperties.custom
     langs:
@@ -123,7 +123,7 @@ items:
     summary: |-
       Gets or sets the keywords of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: keywords
     fullName: excel.Excel.DocumentProperties.keywords
     langs:
@@ -138,7 +138,7 @@ items:
     summary: |-
       Gets the last author of the workbook. Read only.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: lastAuthor
     fullName: excel.Excel.DocumentProperties.lastAuthor
     langs:
@@ -173,7 +173,7 @@ items:
     summary: |-
       Gets or sets the manager of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: manager
     fullName: excel.Excel.DocumentProperties.manager
     langs:
@@ -188,7 +188,7 @@ items:
     summary: |-
       Gets the revision number of the workbook. Read only.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: revisionNumber
     fullName: excel.Excel.DocumentProperties.revisionNumber
     langs:
@@ -225,7 +225,7 @@ items:
     summary: |-
       Gets or sets the subject of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: subject
     fullName: excel.Excel.DocumentProperties.subject
     langs:
@@ -240,7 +240,7 @@ items:
     summary: |-
       Gets or sets the title of the workbook.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: title
     fullName: excel.Excel.DocumentProperties.title
     langs:

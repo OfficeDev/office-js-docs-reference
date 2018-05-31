@@ -4,7 +4,7 @@ items:
     summary: |-
       Account information.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.LoggingInfo
     fullName: onenote.OneNote.LoggingInfo
     langs:
@@ -21,7 +21,7 @@ items:
     summary: |-
       // Correlation Id
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: correlationId
     fullName: onenote.OneNote.LoggingInfo.correlationId
     langs:
@@ -36,7 +36,7 @@ items:
     summary: |-
       // UI Language
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: market
     fullName: onenote.OneNote.LoggingInfo.market
     langs:
@@ -51,7 +51,7 @@ items:
     summary: |-
       // Session Id
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: sessionId
     fullName: onenote.OneNote.LoggingInfo.sessionId
     langs:
@@ -66,7 +66,7 @@ items:
     summary: |-
       // UI Language
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: uiLanguage
     fullName: onenote.OneNote.LoggingInfo.uiLanguage
     langs:
@@ -81,7 +81,7 @@ items:
     summary: |-
       // User Id
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: userId
     fullName: onenote.OneNote.LoggingInfo.userId
     langs:

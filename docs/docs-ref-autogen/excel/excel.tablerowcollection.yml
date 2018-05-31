@@ -10,7 +10,7 @@ items:
       are added, a table row will continue to point at the index for which it was created.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.TableRowCollection
     fullName: excel.Excel.TableRowCollection
     langs:
@@ -38,7 +38,7 @@ items:
 
 
       \[ [API set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple
-      rows.](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      rows.](http://bing.com?type=excel) \]
     name: 'add(index, values)'
     fullName: excel.Excel.TableRowCollection.add
     langs:
@@ -88,7 +88,7 @@ items:
     summary: |-
       Returns the number of rows in the table. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: count
     fullName: excel.Excel.TableRowCollection.count
     langs:
@@ -103,7 +103,7 @@ items:
     summary: |-
       Gets the number of rows in the table.
 
-      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.4](http://bing.com?type=excel) \]
     name: getCount()
     fullName: excel.Excel.TableRowCollection.getCount
     langs:
@@ -125,7 +125,7 @@ items:
       are added, a table row will continue to point at the index for which it was created.
 
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: getItemAt(index)
     fullName: excel.Excel.TableRowCollection.getItemAt
     langs:

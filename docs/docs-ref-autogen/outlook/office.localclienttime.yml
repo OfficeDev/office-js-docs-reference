@@ -1,6 +1,14 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.LocalClientTime
+    summary: |-
+      Represents a date and time in the local client's time zone. Read mode only.
+
+      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
     name: Office.LocalClientTime
     fullName: outlook.Office.LocalClientTime
     langs:
@@ -17,6 +25,7 @@ items:
       - outlook.Office.LocalClientTime.timezoneOffset
       - outlook.Office.LocalClientTime.year
   - uid: outlook.Office.LocalClientTime.date
+    summary: Integer value representing the day of the month.
     name: date
     fullName: outlook.Office.LocalClientTime.date
     langs:
@@ -28,6 +37,7 @@ items:
         type:
           - number
   - uid: outlook.Office.LocalClientTime.hours
+    summary: Integer value representing the hour on a 24-hour clock.
     name: hours
     fullName: outlook.Office.LocalClientTime.hours
     langs:
@@ -39,6 +49,7 @@ items:
         type:
           - number
   - uid: outlook.Office.LocalClientTime.milliseconds
+    summary: Integer value representing the milliseconds.
     name: milliseconds
     fullName: outlook.Office.LocalClientTime.milliseconds
     langs:
@@ -50,6 +61,7 @@ items:
         type:
           - number
   - uid: outlook.Office.LocalClientTime.minutes
+    summary: Integer value representing the minutes.
     name: minutes
     fullName: outlook.Office.LocalClientTime.minutes
     langs:
@@ -61,6 +73,7 @@ items:
         type:
           - number
   - uid: outlook.Office.LocalClientTime.month
+    summary: 'Integer value representing the month, beginning with 0 for January to 11 for December.'
     name: month
     fullName: outlook.Office.LocalClientTime.month
     langs:
@@ -72,6 +85,7 @@ items:
         type:
           - number
   - uid: outlook.Office.LocalClientTime.seconds
+    summary: Integer value representing the seconds.
     name: seconds
     fullName: outlook.Office.LocalClientTime.seconds
     langs:
@@ -83,6 +97,7 @@ items:
         type:
           - number
   - uid: outlook.Office.LocalClientTime.timezoneOffset
+    summary: Integer value representing the number of minutes difference between the local time zone and UTC.
     name: timezoneOffset
     fullName: outlook.Office.LocalClientTime.timezoneOffset
     langs:
@@ -94,6 +109,7 @@ items:
         type:
           - number
   - uid: outlook.Office.LocalClientTime.year
+    summary: Integer value repesenting the year.
     name: year
     fullName: outlook.Office.LocalClientTime.year
     langs:

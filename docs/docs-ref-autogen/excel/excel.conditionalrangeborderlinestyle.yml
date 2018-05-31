@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalRangeBorderLineStyle
-    summary: '\[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]'
     name: Excel.ConditionalRangeBorderLineStyle
     fullName: excel.Excel.ConditionalRangeBorderLineStyle
     langs:

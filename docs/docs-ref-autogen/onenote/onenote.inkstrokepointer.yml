@@ -4,7 +4,7 @@ items:
     summary: |-
       Weak reference to an ink stroke object and its content parent
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.InkStrokePointer
     fullName: onenote.OneNote.InkStrokePointer
     langs:
@@ -18,7 +18,7 @@ items:
     summary: |-
       Represents the id of the page content object corresponding to this stroke
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: contentId
     fullName: onenote.OneNote.InkStrokePointer.contentId
     langs:
@@ -33,7 +33,7 @@ items:
     summary: |-
       Represents the id of the ink stroke
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: inkStrokeId
     fullName: onenote.OneNote.InkStrokePointer.inkStrokeId
     langs:

@@ -1,6 +1,42 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.Entities
+    summary: >-
+      Represents a collection of entities found in an email message or appointment. Read mode only.
+
+
+      The Entities object is a container for the entity arrays returned by the getEntities and getEntitiesByType methods
+      when the item (either an email message or an appointment) contains one or more entities that have been found by
+      the server. You can use these entities in your code to provide additional context information to the viewer, such
+      as a map to an address found in the item, or to open a dialer for a phone number found in the item.
+
+
+      If no entities of the type specified in the property are present in the item, the property associated with that
+      entity is null. For example, if a message contains a street address and a phone number, the addresses property and
+      phoneNumbers property would contain information, and the other properties would be null.
+
+
+      To be recognized as an address, the string must contain a United States postal address that has at least a subset
+      of the elements of a street number, street name, city, state, and zip code.
+
+
+      To be recognized as a phone number, the string must contain a North American phone number format.
+
+
+      Entity recognition relies on natural language recognition that is based on machine learning of large amounts of
+      data. The recognition of an entity is non-deterministic and success sometimes relies on the particular context in
+      the item.
+
+
+      When the property arrays are returned by the getEntitiesByType method, only the property for the specified entity
+      contains data; all other properties are null.
+
+
+      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
     name: Office.Entities
     fullName: outlook.Office.Entities
     langs:
@@ -16,79 +52,86 @@ items:
       - outlook.Office.Entities.taskSuggestions
       - outlook.Office.Entities.urls
   - uid: outlook.Office.Entities.addresses
+    summary: Gets the physical addresses (street or mailing addresses) found in an email message or appointment.
     name: addresses
     fullName: outlook.Office.Entities.addresses
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'addresses: Array<string>;'
+      content: 'addresses: string[];'
       return:
         type:
-          - Array<string>
+          - 'string[]'
   - uid: outlook.Office.Entities.contacts
+    summary: Gets the contacts found in an email address or appointment.
     name: contacts
     fullName: outlook.Office.Entities.contacts
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'contacts: Array<Contact>;'
+      content: 'contacts: Contact[];'
       return:
         type:
-          - Array<Contact>
+          - 'Contact[]'
   - uid: outlook.Office.Entities.emailAddresses
+    summary: Gets the email addresses found in an email message or appointment.
     name: emailAddresses
     fullName: outlook.Office.Entities.emailAddresses
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'emailAddresses: Array<string>;'
+      content: 'emailAddresses: string[];'
       return:
         type:
-          - Array<string>
+          - 'string[]'
   - uid: outlook.Office.Entities.meetingSuggestions
+    summary: Gets the meeting suggestions found in an email message.
     name: meetingSuggestions
     fullName: outlook.Office.Entities.meetingSuggestions
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'meetingSuggestions: Array<MeetingSuggestion>;'
+      content: 'meetingSuggestions: MeetingSuggestion[];'
       return:
         type:
-          - Array<MeetingSuggestion>
+          - 'MeetingSuggestion[]'
   - uid: outlook.Office.Entities.phoneNumbers
+    summary: Gets the phone numbers found in an email message or appointment.
     name: phoneNumbers
     fullName: outlook.Office.Entities.phoneNumbers
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'phoneNumbers: Array<PhoneNumber>;'
+      content: 'phoneNumbers: PhoneNumber[];'
       return:
         type:
-          - Array<PhoneNumber>
+          - 'PhoneNumber[]'
   - uid: outlook.Office.Entities.taskSuggestions
+    summary: Gets the task suggestions found in an email message or appointment.
     name: taskSuggestions
     fullName: outlook.Office.Entities.taskSuggestions
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'taskSuggestions: Array<string>;'
+      content: 'taskSuggestions: string[];'
       return:
         type:
-          - Array<string>
+          - 'string[]'
   - uid: outlook.Office.Entities.urls
+    summary: Gets the Internet URLs present in an email message or appointment.
     name: urls
     fullName: outlook.Office.Entities.urls
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'urls: Array<string>;'
+      content: 'urls: string[];'
       return:
         type:
-          - Array<string>
+          - 'string[]'

@@ -4,7 +4,7 @@ items:
     summary: |-
       Provides access to the office art formatting for chart title.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.ChartTitleFormat
     fullName: excel.Excel.ChartTitleFormat
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Represents the border format of chart title, which includes color, linestyle and weight.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: border
     fullName: excel.Excel.ChartTitleFormat.border
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Represents the fill format of an object, which includes background formating information.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: fill
     fullName: excel.Excel.ChartTitleFormat.fill
     langs:
@@ -54,7 +54,7 @@ items:
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for an object.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: font
     fullName: excel.Excel.ChartTitleFormat.font
     langs:

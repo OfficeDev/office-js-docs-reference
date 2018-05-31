@@ -6,7 +6,7 @@ items:
       object, etc.
 
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: Excel.ChartFormatString
     fullName: excel.Excel.ChartFormatString
     langs:
@@ -24,7 +24,7 @@ items:
     summary: |-
       Represents the font attributes, such as font name, font size, color, etc. of chart characters object.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: font
     fullName: excel.Excel.ChartFormatString.font
     langs:

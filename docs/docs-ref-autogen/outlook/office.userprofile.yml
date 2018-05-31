@@ -1,6 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.UserProfile
+    summary: '\[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]'
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
     name: Office.UserProfile
     fullName: outlook.Office.UserProfile
     langs:
@@ -8,10 +13,50 @@ items:
     type: interface
     package: outlook
     children:
+      - outlook.Office.UserProfile.accountType
       - outlook.Office.UserProfile.displayName
       - outlook.Office.UserProfile.emailAddress
       - outlook.Office.UserProfile.timeZone
+  - uid: outlook.Office.UserProfile.accountType
+    summary: >-
+      Gets the account type of the user associated with the mailbox. The possible values are listed in the following
+      table.
+
+
+      Note: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
+
+
+      \[ [API set: Mailbox 1.6](http://bing.com?type=outlook) \]
+    remarks: >-
+      \|Value \|Description \| \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\-\-\---\| \|enterprise \|The mailbox is on an
+      on-premises Exchange server.\| \|gmail \|The mailbox is associated with a Gmail account.\| \|office365 \|The
+      mailbox is associated with an Office 365 work or school account.\| \|outlookCom \|The mailbox is associated with a
+      personal Outlook.com account.\|
+
+
+      Minimum permission level: ReadItem
+
+
+      Applicable Outlook mode: Compose or read
+    name: accountType
+    fullName: outlook.Office.UserProfile.accountType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'accountType: string;'
+      return:
+        type:
+          - string
   - uid: outlook.Office.UserProfile.displayName
+    summary: |-
+      Gets the user's display name.
+
+      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
     name: displayName
     fullName: outlook.Office.UserProfile.displayName
     langs:
@@ -23,6 +68,14 @@ items:
         type:
           - string
   - uid: outlook.Office.UserProfile.emailAddress
+    summary: |-
+      Gets the user's display name.
+
+      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
     name: emailAddress
     fullName: outlook.Office.UserProfile.emailAddress
     langs:
@@ -34,6 +87,14 @@ items:
         type:
           - string
   - uid: outlook.Office.UserProfile.timeZone
+    summary: |-
+      Gets the user's SMTP email address.
+
+      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
     name: timeZone
     fullName: outlook.Office.UserProfile.timeZone
     langs:

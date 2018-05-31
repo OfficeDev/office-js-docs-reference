@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a point of a series in a chart.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.ChartPoint
     fullName: excel.Excel.ChartPoint
     langs:
@@ -29,7 +29,7 @@ items:
     summary: |-
       Returns the data label of a chart point.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: dataLabel
     fullName: excel.Excel.ChartPoint.dataLabel
     langs:
@@ -44,7 +44,7 @@ items:
     summary: |-
       Encapsulates the format properties chart point. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: format
     fullName: excel.Excel.ChartPoint.format
     langs:
@@ -59,7 +59,7 @@ items:
     summary: |-
       Represents whether a data point has datalabel. Not applicable for surface charts.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: hasDataLabel
     fullName: excel.Excel.ChartPoint.hasDataLabel
     langs:
@@ -94,7 +94,7 @@ items:
     summary: |-
       HTML color code representation of the marker background color of data point. E.g. \#FF0000 represents Red.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: markerBackgroundColor
     fullName: excel.Excel.ChartPoint.markerBackgroundColor
     langs:
@@ -109,7 +109,7 @@ items:
     summary: |-
       HTML color code representation of the marker foreground color of data point. E.g. \#FF0000 represents Red.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: markerForegroundColor
     fullName: excel.Excel.ChartPoint.markerForegroundColor
     langs:
@@ -124,7 +124,7 @@ items:
     summary: |-
       Represents marker size of data point.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: markerSize
     fullName: excel.Excel.ChartPoint.markerSize
     langs:
@@ -139,7 +139,7 @@ items:
     summary: |-
       Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: markerStyle
     fullName: excel.Excel.ChartPoint.markerStyle
     langs:
@@ -192,7 +192,7 @@ items:
     summary: |-
       Returns the value of a chart point. Read-only.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: value
     fullName: excel.Excel.ChartPoint.value
     langs:

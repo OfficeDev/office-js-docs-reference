@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Shape class.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: Visio.Shape
     fullName: visio.Visio.Shape
     langs:
@@ -31,7 +31,7 @@ items:
     summary: |-
       Returns the Comments Collection
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: comments
     fullName: visio.Visio.Shape.comments
     langs:
@@ -46,7 +46,7 @@ items:
     summary: |-
       Returns the BoundingBox object that specifies bounding box of the shape.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: getBounds()
     fullName: visio.Visio.Shape.getBounds
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Returns the Hyperlinks collection for a Shape object. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: hyperlinks
     fullName: visio.Visio.Shape.hyperlinks
     langs:
@@ -77,7 +77,7 @@ items:
     summary: |-
       Shape's Identifier.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: id
     fullName: visio.Visio.Shape.id
     langs:
@@ -150,7 +150,7 @@ items:
     summary: |-
       Shape's name.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: name
     fullName: visio.Visio.Shape.name
     langs:
@@ -165,7 +165,7 @@ items:
     summary: |-
       Returns true, if shape is selected. User can set true to select the shape explicitly.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: select
     fullName: visio.Visio.Shape.select
     langs:
@@ -211,7 +211,7 @@ items:
     summary: |-
       Returns the Shape's Data Section. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: shapeDataItems
     fullName: visio.Visio.Shape.shapeDataItems
     langs:
@@ -226,7 +226,7 @@ items:
     summary: |-
       Gets SubShape Collection.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: subShapes
     fullName: visio.Visio.Shape.subShapes
     langs:
@@ -241,7 +241,7 @@ items:
     summary: |-
       Shape's Text.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: text
     fullName: visio.Visio.Shape.text
     langs:
@@ -268,7 +268,7 @@ items:
     summary: |-
       Returns the view of the shape. Read-only.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: view
     fullName: visio.Visio.Shape.view
     langs:

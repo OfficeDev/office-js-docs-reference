@@ -4,7 +4,7 @@ items:
     summary: |-
       Contains a collection of TableCell objects.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: OneNote.TableCellCollection
     fullName: onenote.OneNote.TableCellCollection
     langs:
@@ -26,7 +26,7 @@ items:
     summary: |-
       Returns the number of tablecells in this collection. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: count
     fullName: onenote.OneNote.TableCellCollection.count
     langs:
@@ -41,7 +41,7 @@ items:
     summary: |-
       Gets a table cell object by ID or by its index in the collection. Read-only.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getItem(index)
     fullName: onenote.OneNote.TableCellCollection.getItem
     langs:
@@ -62,7 +62,7 @@ items:
     summary: |-
       Gets a tablecell at its position in the collection.
 
-      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+      \[ [API set: OneNoteApi 1.1](http://bing.com?type=onenote) \]
     name: getItemAt(index)
     fullName: onenote.OneNote.TableCellCollection.getItemAt
     langs:

@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents major or minor gridlines on a chart axis.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.ChartGridlines
     fullName: excel.Excel.ChartGridlines
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Represents the formatting of chart gridlines.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: format
     fullName: excel.Excel.ChartGridlines.format
     langs:
@@ -127,7 +127,7 @@ items:
     summary: |-
       Boolean value representing if the axis gridlines are visible or not.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: visible
     fullName: excel.Excel.ChartGridlines.visible
     langs:

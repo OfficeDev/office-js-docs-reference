@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Hyperlink Collection.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: Visio.HyperlinkCollection
     fullName: visio.Visio.HyperlinkCollection
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Gets the number of hyperlinks.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: getCount()
     fullName: visio.Visio.HyperlinkCollection.getCount
     langs:
@@ -39,7 +39,7 @@ items:
     summary: |-
       Gets a Hyperlink using its key (name or Id).
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: getItem(Key)
     fullName: visio.Visio.HyperlinkCollection.getItem
     langs:

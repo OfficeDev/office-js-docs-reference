@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the chart axes.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: Excel.ChartAxes
     fullName: excel.Excel.ChartAxes
     langs:
@@ -25,7 +25,7 @@ items:
     summary: |-
       Represents the category axis in a chart.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: categoryAxis
     fullName: excel.Excel.ChartAxes.categoryAxis
     langs:
@@ -40,7 +40,7 @@ items:
     summary: |-
       Returns the specific axis identified by type and group.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: 'getItem(type, group)'
     fullName: excel.Excel.ChartAxes.getItem
     langs:
@@ -85,7 +85,7 @@ items:
     summary: |-
       Represents the series axis of a 3-dimensional chart.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: seriesAxis
     fullName: excel.Excel.ChartAxes.seriesAxis
     langs:
@@ -134,7 +134,7 @@ items:
     summary: |-
       Represents the value axis in an axis.
 
-      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.1](http://bing.com?type=excel) \]
     name: valueAxis
     fullName: excel.Excel.ChartAxes.valueAxis
     langs:

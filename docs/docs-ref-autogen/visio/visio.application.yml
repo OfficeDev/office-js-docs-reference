@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Application.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: Visio.Application
     fullName: visio.Visio.Application
     langs:
@@ -93,7 +93,7 @@ items:
     summary: |-
       Show/Hide the application borders.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: showBorders
     fullName: visio.Visio.Application.showBorders
     langs:
@@ -108,7 +108,7 @@ items:
     summary: |-
       Show or Hide a particular toolbar.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: 'showToolbar(id, show)'
     fullName: visio.Visio.Application.showToolbar
     langs:
@@ -133,7 +133,7 @@ items:
     summary: |-
       Show or Hide the standard toolbars.
 
-      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+      \[ [API set: 1.1](http://bing.com?type=visio) \]
     name: showToolbars
     fullName: visio.Visio.Application.showToolbars
     langs:

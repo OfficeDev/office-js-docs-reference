@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a collection of all the styles.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: Excel.StyleCollection
     fullName: excel.Excel.StyleCollection
     langs:
@@ -23,7 +23,7 @@ items:
     summary: |-
       Adds a new style to the collection.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: add(name)
     fullName: excel.Excel.StyleCollection.add
     langs:
@@ -44,7 +44,7 @@ items:
     summary: |-
       Gets a style by name.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: getItem(name)
     fullName: excel.Excel.StyleCollection.getItem
     langs:

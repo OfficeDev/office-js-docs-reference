@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the criteria of the color scale.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.ConditionalColorScaleCriteria
     fullName: excel.Excel.ConditionalColorScaleCriteria
     langs:
@@ -19,7 +19,7 @@ items:
     summary: |-
       The maximum point Color Scale Criterion.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: maximum
     fullName: excel.Excel.ConditionalColorScaleCriteria.maximum
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       The midpoint Color Scale Criterion if the color scale is a 3-color scale.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: midpoint
     fullName: excel.Excel.ConditionalColorScaleCriteria.midpoint
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       The minimum point Color Scale Criterion.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: minimum
     fullName: excel.Excel.ConditionalColorScaleCriteria.minimum
     langs:

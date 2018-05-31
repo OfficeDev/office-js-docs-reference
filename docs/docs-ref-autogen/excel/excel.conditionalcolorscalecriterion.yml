@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents a Color Scale Criterion which contains a type, value and a color.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.ConditionalColorScaleCriterion
     fullName: excel.Excel.ConditionalColorScaleCriterion
     langs:
@@ -19,7 +19,7 @@ items:
     summary: |-
       HTML color code representation of the color scale color. E.g. \#FF0000 represents Red.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: color
     fullName: excel.Excel.ConditionalColorScaleCriterion.color
     langs:
@@ -34,7 +34,7 @@ items:
     summary: |-
       A number, a formula, or null (if Type is LowestValue).
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: formula
     fullName: excel.Excel.ConditionalColorScaleCriterion.formula
     langs:
@@ -49,7 +49,7 @@ items:
     summary: |-
       What the icon conditional formula should be based on.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: type
     fullName: excel.Excel.ConditionalColorScaleCriterion.type
     langs:

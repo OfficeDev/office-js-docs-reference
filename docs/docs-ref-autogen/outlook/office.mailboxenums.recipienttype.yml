@@ -1,6 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.MailboxEnums.RecipientType
+    summary: |-
+      Specifies the type of recipient for an appointment.
+
+      \[ [API set: Mailbox 1.1](http://bing.com?type=outlook) \]
+    remarks: 'Applicable Outlook mode: Compose or read'
     name: Office.MailboxEnums.RecipientType
     fullName: outlook.Office.MailboxEnums.RecipientType
     langs:
@@ -13,28 +18,28 @@ items:
       - outlook.Office.MailboxEnums.RecipientType.Other
       - outlook.Office.MailboxEnums.RecipientType.User
   - uid: outlook.Office.MailboxEnums.RecipientType.DistributionList
-    summary: Specifies that the recipient is a distribution list containing a list of email addresses
+    summary: Specifies that the recipient is a distribution list containing a list of email addresses.
     name: DistributionList
     fullName: outlook.Office.MailboxEnums.RecipientType.DistributionList
     langs:
       - typeScript
     type: field
   - uid: outlook.Office.MailboxEnums.RecipientType.ExternalUser
-    summary: Specifies that the recipient is an SMTP email address that is not on the Exchange server
+    summary: Specifies that the recipient is an SMTP email address that is not on the Exchange server.
     name: ExternalUser
     fullName: outlook.Office.MailboxEnums.RecipientType.ExternalUser
     langs:
       - typeScript
     type: field
   - uid: outlook.Office.MailboxEnums.RecipientType.Other
-    summary: Specifies that the recipient is not one of the other recipient types
+    summary: Specifies that the recipient is not one of the other recipient types.
     name: Other
     fullName: outlook.Office.MailboxEnums.RecipientType.Other
     langs:
       - typeScript
     type: field
   - uid: outlook.Office.MailboxEnums.RecipientType.User
-    summary: Specifies that the recipient is an SMTP email address that is on the Exchange server
+    summary: Specifies that the recipient is an SMTP email address that is on the Exchange server.
     name: User
     fullName: outlook.Office.MailboxEnums.RecipientType.User
     langs:

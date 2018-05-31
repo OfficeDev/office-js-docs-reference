@@ -16,17 +16,57 @@ items:
       - outlook.Office.MessageRead.sender
       - outlook.Office.MessageRead.to
   - uid: outlook.Office.MessageRead.cc
+    summary: >-
+      Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
+      the mode of the current item.
+
+
+      \*Read mode\*
+
+
+      The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc
+      line of the message. The collection is limited to a maximum of 100 members.
+
+
+      \*Compose mode\*
+
+
+      The cc property returns a Recipients object that provides methods to get or update the recipients on the Cc line
+      of the message.
+
+
+      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
     name: cc
     fullName: outlook.Office.MessageRead.cc
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'cc: Array<EmailAddressDetails>;'
+      content: 'cc: EmailAddressDetails[];'
       return:
         type:
-          - Array<EmailAddressDetails>
+          - 'EmailAddressDetails[]'
   - uid: outlook.Office.MessageRead.from
+    summary: >-
+      Gets the email address of the sender of a message. Read mode only.
+
+
+      The from and sender properties represent the same person unless the message is sent by a delegate. In that case,
+      the from property represents the delegator, and the sender property represents the delegate.
+
+
+      Note: The recipientType property of the EmailAddressDetails object in the from property is undefined.
+
+
+      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
     name: from
     fullName: outlook.Office.MessageRead.from
     langs:
@@ -38,6 +78,14 @@ items:
         type:
           - EmailAddressDetails
   - uid: outlook.Office.MessageRead.internetMessageId
+    summary: |-
+      Gets the Internet message identifier for an email message. Read mode only.
+
+      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
     name: internetMessageId
     fullName: outlook.Office.MessageRead.internetMessageId
     langs:
@@ -49,6 +97,22 @@ items:
         type:
           - string
   - uid: outlook.Office.MessageRead.sender
+    summary: >-
+      Gets the email address of the sender of an email message. Read mode only.
+
+
+      The from and sender properties represent the same person unless the message is sent by a delegate. In that case,
+      the from property represents the delegator, and the sender property represents the delegate.
+
+
+      Note: The recipientType property of the EmailAddressDetails object in the sender property is undefined.
+
+
+      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
     name: sender
     fullName: outlook.Office.MessageRead.sender
     langs:
@@ -60,13 +124,37 @@ items:
         type:
           - EmailAddressDetails
   - uid: outlook.Office.MessageRead.to
+    summary: >-
+      Provides access to the recipients on the To line of a message. The type of object and level of access depends on
+      the mode of the current item.
+
+
+      \*Read mode\*
+
+
+      The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To
+      line of the message. The collection is limited to a maximum of 100 members.
+
+
+      \*Compose mode\*
+
+
+      The to property returns a Recipients object that provides methods to get or update the recipients on the To line
+      of the message.
+
+
+      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
     name: to
     fullName: outlook.Office.MessageRead.to
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'to: Array<EmailAddressDetails>;'
+      content: 'to: EmailAddressDetails[];'
       return:
         type:
-          - Array<EmailAddressDetails>
+          - 'EmailAddressDetails[]'

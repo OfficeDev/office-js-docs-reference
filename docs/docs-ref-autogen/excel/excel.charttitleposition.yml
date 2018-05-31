@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the position of chart title.
 
-      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]
     name: Excel.ChartTitlePosition
     fullName: excel.Excel.ChartTitlePosition
     langs:

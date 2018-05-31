@@ -4,7 +4,7 @@ items:
     summary: |-
       Represents the Data Bar direction within a cell.
 
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.6](http://bing.com?type=excel) \]
     name: Excel.ConditionalDataBarDirection
     fullName: excel.Excel.ConditionalDataBarDirection
     langs:

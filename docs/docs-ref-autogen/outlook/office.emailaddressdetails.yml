@@ -1,6 +1,14 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.EmailAddressDetails
+    summary: |-
+      Provides the email properties of the sender or specified recipients of an email message or appointment.
+
+      \[ [API set: Mailbox 1.0](http://bing.com?type=outlook) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
     name: Office.EmailAddressDetails
     fullName: outlook.Office.EmailAddressDetails
     langs:
@@ -13,6 +21,10 @@ items:
       - outlook.Office.EmailAddressDetails.emailAddress
       - outlook.Office.EmailAddressDetails.recipientType
   - uid: outlook.Office.EmailAddressDetails.appointmentResponse
+    summary: >-
+      Gets the response that an attendee returned for an appointment. This property applies to only an attendee of an
+      appointment, as represented by the optionalAttendees or requiredAttendees property. This property returns
+      undefined in other scenarios.
     name: appointmentResponse
     fullName: outlook.Office.EmailAddressDetails.appointmentResponse
     langs:
@@ -24,6 +36,7 @@ items:
         type:
           - Office.MailboxEnums.ResponseType
   - uid: outlook.Office.EmailAddressDetails.displayName
+    summary: Gets the display name associated with an email address.
     name: displayName
     fullName: outlook.Office.EmailAddressDetails.displayName
     langs:
@@ -35,6 +48,7 @@ items:
         type:
           - string
   - uid: outlook.Office.EmailAddressDetails.emailAddress
+    summary: Gets the SMTP email address.
     name: emailAddress
     fullName: outlook.Office.EmailAddressDetails.emailAddress
     langs:
@@ -46,6 +60,7 @@ items:
         type:
           - string
   - uid: outlook.Office.EmailAddressDetails.recipientType
+    summary: Gets the email address type of a recipient.
     name: recipientType
     fullName: outlook.Office.EmailAddressDetails.recipientType
     langs:

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: word.Word.TapObjectType
-    summary: '\[ [API set: WordApi](/javascript/office/requirement-sets/word-api-requirement-sets) \]'
+    summary: '\[ [API set: WordApi](http://bing.com?type=word) \]'
     name: Word.TapObjectType
     fullName: word.Word.TapObjectType
     langs:

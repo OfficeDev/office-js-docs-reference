@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.DocumentPropertyType
-    summary: '\[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]'
+    summary: '\[ [API set: ExcelApi 1.7](http://bing.com?type=excel) \]'
     name: Excel.DocumentPropertyType
     fullName: excel.Excel.DocumentPropertyType
     langs:
