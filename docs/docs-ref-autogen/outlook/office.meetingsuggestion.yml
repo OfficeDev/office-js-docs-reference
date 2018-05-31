@@ -1,6 +1,23 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.MeetingSuggestion
+    summary: >-
+      Represents a suggested meeting found in an item. Read mode only.
+
+
+      The list of meetings suggested in an email message is returned in the meetingSuggestions property of the Entities
+      object that is returned when the getEntities or getEntitiesByType method is called on the active item.
+
+
+      The start and end values are string representations of a Date object that contains the date and time at which the
+      suggested meeting is to begin and end. The values are in the default time zone specified for the current user.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
     name: Office.MeetingSuggestion
     fullName: outlook.Office.MeetingSuggestion
     langs:
@@ -15,17 +32,19 @@ items:
       - outlook.Office.MeetingSuggestion.start
       - outlook.Office.MeetingSuggestion.subject
   - uid: outlook.Office.MeetingSuggestion.attendees
+    summary: Gets the attendees for a suggested meeting.
     name: attendees
     fullName: outlook.Office.MeetingSuggestion.attendees
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'attendees: Array<EmailUser>;'
+      content: 'attendees: EmailUser[];'
       return:
         type:
-          - Array<EmailUser>
+          - 'EmailUser[]'
   - uid: outlook.Office.MeetingSuggestion.end
+    summary: Gets the date and time that a suggested meeting is to end.
     name: end
     fullName: outlook.Office.MeetingSuggestion.end
     langs:
@@ -37,6 +56,7 @@ items:
         type:
           - string
   - uid: outlook.Office.MeetingSuggestion.location
+    summary: Gets the location of a suggested meeting.
     name: location
     fullName: outlook.Office.MeetingSuggestion.location
     langs:
@@ -48,6 +68,7 @@ items:
         type:
           - string
   - uid: outlook.Office.MeetingSuggestion.meetingstring
+    summary: Gets a string that was identified as a meeting suggestion.
     name: meetingstring
     fullName: outlook.Office.MeetingSuggestion.meetingstring
     langs:
@@ -59,6 +80,7 @@ items:
         type:
           - string
   - uid: outlook.Office.MeetingSuggestion.start
+    summary: Gets the date and time that a suggested meeting is to begin.
     name: start
     fullName: outlook.Office.MeetingSuggestion.start
     langs:
@@ -70,6 +92,7 @@ items:
         type:
           - string
   - uid: outlook.Office.MeetingSuggestion.subject
+    summary: Gets the subject of a suggested meeting.
     name: subject
     fullName: outlook.Office.MeetingSuggestion.subject
     langs:

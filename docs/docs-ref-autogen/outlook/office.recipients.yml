@@ -1,6 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.Recipients
+    summary: '\[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]'
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose
     name: Office.Recipients
     fullName: outlook.Office.Recipients
     langs:
@@ -12,25 +17,66 @@ items:
       - outlook.Office.Recipients.getAsync
       - outlook.Office.Recipients.setAsync
   - uid: outlook.Office.Recipients.addAsync
-    summary: Begins an asynchronous request to add a recipient list to an appointment or message
-    name: addAsync(recipients)
+    summary: |-
+      Adds a recipient list to the existing recipients for an appointment or message.
+
+      The recipients parameter can be an array of one of the following:
+
+      - Strings containing SMTP email addresses
+
+      - EmailUser objects
+
+      - EmailAddressDetails objects
+
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadWriteItem
+
+      Applicable Outlook mode: Compose
+
+      Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
+    name: 'addAsync(recipients, options, callback)'
     fullName: outlook.Office.Recipients.addAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'addAsync(recipients: Array<string | EmailUser | EmailAddressDetails>): void;'
+      content: >-
+        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void
         description: ''
       parameters:
         - id: recipients
-          description: The recipients to add to the recipients list
+          description: The recipients to add to the recipients list.
           type:
-            - Array<string | EmailUser | EmailAddressDetails>
+            - '(string | EmailUser | EmailAddressDetails)[]'
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type AsyncResult. If adding the recipients fails, the asyncResult.error property will contain
+            an error code.
+          type:
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.Recipients.getAsync
-    summary: Begins an asynchronous request to get the recipient list for an appointment or message
+    summary: |-
+      Gets a recipient list for an appointment or message.
+
+      When the call completes, the asyncResult.value property will contain an array of EmailAddressDetails objects.
+
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose
     name: getAsync(callback)
     fullName: outlook.Office.Recipients.getAsync
     langs:
@@ -44,24 +90,60 @@ items:
         description: ''
       parameters:
         - id: callback
-          description: The optional method to call when the string is inserted
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type AsyncResult.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.Recipients.setAsync
-    summary: Begins an asynchronous request to set the recipient list for an appointment or message
-    name: setAsync(recipients)
+    summary: |-
+      Sets a recipient list for an appointment or message.
+
+      The setAsync method overwrites the current recipient list.
+
+      The recipients parameter can be an array of one of the following:
+
+      - Strings containing SMTP email addresses
+
+      - EmailUser objects
+
+      - EmailAddressDetails objects
+
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadWriteItem
+
+      Applicable Outlook mode: Compose
+
+      Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
+    name: 'setAsync(recipients, options, callback)'
     fullName: outlook.Office.Recipients.setAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(recipients: Array<string | EmailUser | EmailAddressDetails>): void;'
+      content: >-
+        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void
         description: ''
       parameters:
         - id: recipients
-          description: The recipients to add to the recipients list
+          description: The recipients to add to the recipients list.
           type:
-            - Array<string | EmailUser | EmailAddressDetails>
+            - '(string | EmailUser | EmailAddressDetails)[]'
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type AsyncResult. If setting the recipients fails the asyncResult.error property will contain a
+            code that indicates any error that occurred while adding the data.
+          type:
+            - '(result: AsyncResult) => void'

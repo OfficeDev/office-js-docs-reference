@@ -1,6 +1,14 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.NotificationMessages
+    summary: |-
+      The NotificationMessages object is returned as the notificationMessages property of an item.
+
+      \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
     name: Office.NotificationMessages
     fullName: outlook.Office.NotificationMessages
     langs:
@@ -13,14 +21,25 @@ items:
       - outlook.Office.NotificationMessages.removeAsync
       - outlook.Office.NotificationMessages.replaceAsync
   - uid: outlook.Office.NotificationMessages.addAsync
-    summary: Adds a notification to an item
-    name: 'addAsync(key, JSONmessage)'
+    summary: >-
+      Adds a notification to an item.
+
+
+      There are a maximum of 5 notifications per message. Setting more will return a
+      NumberOfNotificationMessagesExceeded error.
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: 'addAsync(key, JSONmessage, options, callback)'
     fullName: outlook.Office.NotificationMessages.addAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'addAsync(key: string, JSONmessage: NotificationMessageDetails): void;'
+      content: >-
+        addAsync(key: string, JSONmessage: NotificationMessageDetails, options?: AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -28,69 +47,142 @@ items:
       parameters:
         - id: key
           description: >-
-            A developer-specified key used to refrence this notification message. Developers can use it to modify this
-            message later.
+            A developer-specified key used to reference this notification message. Developers can use it to modify this
+            message later. It can't be longer than 32 characters.
           type:
             - string
         - id: JSONmessage
-          description: A JSON object that contains the notification message to be added to this item
+          description: >-
+            A JSON object that contains the notification message to be added to the item. It contains a
+            NotificationMessageDetails object.
           type:
             - NotificationMessageDetails
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type AsyncResult. \[Api set: Mailbox 1.3\]
+          type:
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.NotificationMessages.getAllAsync
-    summary: Returns all keys and messages for an item.
-    name: getAllAsync(callback)
+    summary: |-
+      Returns all keys and messages for an item.
+
+      \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: 'getAllAsync(options, callback)'
     fullName: outlook.Office.NotificationMessages.getAllAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAllAsync(callback: (result: AsyncResult) => void): void;'
+      content: 'getAllAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
         - id: callback
-          description: The optional callback method
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type AsyncResult.
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.NotificationMessages.removeAsync
-    summary: Removes a notification message for an item.
-    name: removeAsync(key)
+    summary: |-
+      Removes a notification message for an item.
+
+      \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: 'removeAsync(key, options, callback)'
     fullName: outlook.Office.NotificationMessages.removeAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'removeAsync(key: string): void;'
+      content: 'removeAsync(key: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: key
-          description: The key for the notification message to remove
+          description: The key for the notification message to remove.
           type:
             - string
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type AsyncResult.
+          type:
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.NotificationMessages.replaceAsync
-    summary: Replaces a notification message that has a given key with another message
-    name: 'replaceAsync(key, JSONmessage)'
+    summary: |-
+      Replaces a notification message that has a given key with another message.
+
+      If a notification message with the specified key doesn't exist, replaceAsync will add the notification.
+
+      \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: 'replaceAsync(key, JSONmessage, options, callback)'
     fullName: outlook.Office.NotificationMessages.replaceAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'replaceAsync(key: string, JSONmessage: NotificationMessageDetails): void;'
+      content: >-
+        replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options?: AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void
         description: ''
       parameters:
         - id: key
-          description: The key for the notification message to replace.
+          description: The key for the notification message to replace. It can't be longer than 32 characters.
           type:
             - string
         - id: JSONmessage
-          description: A JSON object that contains the new notification message to replace the existing message
+          description: >-
+            A JSON object that contains the new notification message to replace the existing message. It contains a
+            NotificationMessageDetails object.
           type:
             - NotificationMessageDetails
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type AsyncResult.
+          type:
+            - '(result: AsyncResult) => void'
