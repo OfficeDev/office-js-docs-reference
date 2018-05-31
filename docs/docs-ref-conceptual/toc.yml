@@ -22,18 +22,34 @@ items:
           href: requirement-sets/outlook-api-requirement-sets.md
         - name: Outlook Object Model
           items:
-            - name: Office
-              href: objectmodel/office.md
-            - name: Office.context
-              href: objectmodel/office-context.md
-            - name: Office.context.mailbox
-              href: objectmodel/office-mailbox.md
-            - name: Office.context.mailbox.diagnostics
-              href: objectmodel/office-diagnostics.md
-            - name: Office.context.mailbox.item
-              href: objectmodel/office-item.md
-            - name: Office.context.mailbox.userProfile
-              href: objectmodel/office-user.md
+            - name: Preview Requirement Set
+              items:
+              - name: Office
+                href: objectmodel/preview-requirement-set/office.md
+              - name: Office.context
+                href: objectmodel/preview-requirement-set/office-context.md
+              - name: Office.context.mailbox
+                href: objectmodel/preview-requirement-set/office-mailbox.md
+              - name: Office.context.mailbox.diagnostics
+                href: objectmodel/preview-requirement-set/office-diagnostics.md
+              - name: Office.context.mailbox.item
+                href: objectmodel/preview-requirement-set/office-item.md
+              - name: Office.context.mailbox.userProfile
+                href: objectmodel/preview-requirement-set/office-user.md
+            - name: Requirement Set 1.6
+              items:
+              - name: Office
+                href: objectmodel/requirement-set-1.6/office.md
+              - name: Office.context
+                href: objectmodel/requirement-set-1.6/office-context.md
+              - name: Office.context.mailbox
+                href: objectmodel/requirement-set-1.6/office-mailbox.md
+              - name: Office.context.mailbox.diagnostics
+                href: objectmodel/requirement-set-1.6/office-diagnostics.md
+              - name: Office.context.mailbox.item
+                href: objectmodel/requirement-set-1.6/office-item.md
+              - name: Office.context.mailbox.userProfile
+                href: objectmodel/requirement-set-1.6/office-user.md
         - name: API Reference
           uid: outlook
     - name: Visio
