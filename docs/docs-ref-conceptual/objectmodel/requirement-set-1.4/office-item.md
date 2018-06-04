@@ -7,61 +7,11 @@ The `item` namespace is used to access the currently selected message, meeting r
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|Restricted|
-|Applicable Outlook mode|Compose or read|
-
-##### Members and methods
-
-| Member | Type |
-|--------|------|
-| [attachments](#attachments-arrayattachmentdetails) | Member |
-| [bcc](#bcc-recipients) | Member |
-| [body](#body-body) | Member |
-| [cc](#cc-arrayemailaddressdetailsrecipients) | Member |
-| [conversationId](#nullable-conversationid-string) | Member |
-| [dateTimeCreated](#datetimecreated-date) | Member |
-| [dateTimeModified](#datetimemodified-date) | Member |
-| [end](#end-datetime) | Member |
-| [from](#from-emailaddressdetailsfrom) | Member |
-| [internetMessageId](#internetmessageid-string) | Member |
-| [itemClass](#itemclass-string) | Member |
-| [itemId](#nullable-itemid-string) | Member |
-| [itemType](#itemtype-officemailboxenumsitemtype) | Member |
-| [location](#location-stringlocation) | Member |
-| [normalizedSubject](#normalizedsubject-string) | Member |
-| [notificationMessages](#notificationmessages-notificationmessages) | Member |
-| [optionalAttendees](#optionalattendees-arrayemailaddressdetailsrecipients) | Member |
-| [organizer](#organizer-emailaddressdetails) | Member |
-| [recurrence](#nullable-recurrence-recurrence) | Member |
-| [requiredAttendees](#requiredattendees-arrayemailaddressdetailsrecipients) | Member |
-| [sender](#sender-emailaddressdetails) | Member |
-| [seriesId](#nullable-seriesid-string) | Member |
-| [start](#start-datetime) | Member |
-| [subject](#subject-stringsubject) | Member |
-| [to](#to-arrayemailaddressdetailsrecipients) | Member |
-| [addFileAttachmentAsync](#addfileattachmentasyncuri-attachmentname-options-callback) | Method |
-| [addHandlerAsync](#addhandlerasynceventtype-handler-options-callback) | Method |
-| [addItemAttachmentAsync](#additemattachmentasyncitemid-attachmentname-options-callback) | Method |
-| [close](#close) | Method |
-| [displayReplyAllForm](#displayreplyallformformdata) | Method |
-| [displayReplyForm](#displayreplyformformdata) | Method |
-| [getEntities](#getentities--entities) | Method |
-| [getEntitiesByType](#getentitiesbytypeentitytype--nullable-arraystringcontactmeetingsuggestionphonenumbertasksuggestion) | Method |
-| [getFilteredEntitiesByName](#getfilteredentitiesbynamename--nullable-arraystringcontactmeetingsuggestionphonenumbertasksuggestion) | Method |
-| [getInitializationContextAsync](#getinitializationcontextasyncoptions-callback) | Method |
-| [getRegExMatches](#getregexmatches--object) | Method |
-| [getRegExMatchesByName](#getregexmatchesbynamename--nullable-array) | Method |
-| [getSelectedDataAsync](#getselecteddataasynccoerciontype-options-callback--string) | Method |
-| [getSelectedEntities](#getselectedentities--entities) | Method |
-| [getSelectedRegExMatches](#getselectedregexmatches--object) | Method |
-| [loadCustomPropertiesAsync](#loadcustompropertiesasynccallback-usercontext) | Method |
-| [removeAttachmentAsync](#removeattachmentasyncattachmentid-options-callback) | Method |
-| [removeHandlerAsync](#removehandlerasynceventtype-handler-options-callback) | Method |
-| [saveAsync](#saveasyncoptions-callback) | Method |
-| [setSelectedDataAsync](#setselecteddataasyncdata-options-callback) | Method |
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| Restricted|
+|Applicable Outlook mode| Compose or read|
 
 ### Example
 
@@ -95,11 +45,11 @@ Gets an array of attachments for the item. Read mode only.
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 
 ##### Example
 
@@ -127,7 +77,7 @@ if (_Item.attachments.length > 0) {
 
 ####  bcc :[Recipients](Recipients.md)
 
-Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message. Compose mode only.
+Gets an object that provides methods to get or update the Bcc (blind carbon copy) line of a message. Compose mode only.
 
 ##### Type:
 
@@ -135,11 +85,11 @@ Gets an object that provides methods to get or update the recipients on the Bcc 
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.1|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Compose|
 
 ##### Example
 
@@ -163,11 +113,11 @@ Gets an object that provides methods for manipulating the body of an item.
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.1|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Compose or read|
 ####  cc :Array.<[EmailAddressDetails](simple-types.md#emailaddressdetails)>|[Recipients](Recipients.md)
 
 Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.
@@ -186,11 +136,11 @@ The `cc` property returns a `Recipients` object that provides methods to get or 
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Compose or read|
 
 ##### Example
 
@@ -218,12 +168,11 @@ You get null for this property for a new item in a compose form. If the user set
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
-
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Compose or read|
 #### dateTimeCreated :Date
 
 Gets the date and time that an item was created. Read mode only.
@@ -234,11 +183,11 @@ Gets the date and time that an item was created. Read mode only.
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 
 ##### Example
 
@@ -258,11 +207,11 @@ Gets the date and time that an item was last modified. Read mode only.
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 
 ##### Example
 
@@ -292,11 +241,11 @@ When you use the [`Time.setAsync`](Time.md#setasyncdatetime-options-callback) me
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Compose or read|
 
 ##### Example
 
@@ -319,46 +268,25 @@ Office.context.mailbox.item.end.setAsync(endTime, options, function(result) {
 });
 ```
 
-#### from :[EmailAddressDetails](simple-types.md#emailaddressdetails)|[From](From.md)
+#### from :[EmailAddressDetails](simple-types.md#emailaddressdetails)
 
-Gets the email address of the sender of a message.
+Gets the email address of the sender of a message. Read mode only.
 
 The `from` and [`sender`](Office.context.mailbox.item.md#sender-emailaddressdetails) properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
 
 > **Note:** The `recipientType` property of the `EmailAddressDetails` object in the `from` property is `undefined`.
 
-##### Read mode
-
-The `from` property returns an `EmailAddressDetails` object.
-
-```
-var subject = Office.context.mailbox.item.from;
-```
-
-##### Compose mode
-
-The `from` property returns a `From` object that provides a method to get the from value.
-
-```
-Office.context.mailbox.item.from.getAsync(callback);
-
-function callback(asyncResult) {
-  var from = asyncResult.value;
-}
-```
-
 ##### Type:
 
-*   [EmailAddressDetails](simple-types.md#emailaddressdetails) | [From](From.md)
+*   [EmailAddressDetails](simple-types.md#emailaddressdetails)
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
-
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 #### internetMessageId :String
 
 Gets the Internet message identifier for an email message. Read mode only.
@@ -369,11 +297,11 @@ Gets the Internet message identifier for an email message. Read mode only.
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 
 ##### Example
 
@@ -387,10 +315,10 @@ Gets the Exchange Web Services item class of the selected item. Read mode only.
 
 The `itemClass` property specifies the message class of the selected item. The following are the default message classes for the message or appointment item.
 
-|Type|Description|item class|
-|---|---|---|
-|Appointment items|These are calendar items of the item class `IPM.Appointment` or `IPM.Appointment.Occurence`.|`IPM.Appointment`<br />`IPM.Appointment.Occurence`|
-|Message items|These include email messages that have the default message class `IPM.Note`, and meeting requests, responses, and cancellations, that use `IPM.Schedule.Meeting` as the base message class.|`IPM.Note`<br />`IPM.Schedule.Meeting.Request`<br />`IPM.Schedule.Meeting.Neg`<br />`IPM.Schedule.Meeting.Pos`<br />`IPM.Schedule.Meeting.Tent`<br />`IPM.Schedule.Meeting.Canceled`|
+| Type | Description | item class |
+| --- | --- | --- |
+| Appointment items | These are calendar items of the item class `IPM.Appointment` or `IPM.Appointment.Occurence`. | `IPM.Appointment`<br />`IPM.Appointment.Occurence` |
+| Message items | These include email messages that have the default message class `IPM.Note`, and meeting requests, responses, and cancellations, that use `IPM.Schedule.Meeting` as the base message class. | `IPM.Note`<br />`IPM.Schedule.Meeting.Request`<br />`IPM.Schedule.Meeting.Neg`<br />`IPM.Schedule.Meeting.Pos`<br />`IPM.Schedule.Meeting.Tent`<br />`IPM.Schedule.Meeting.Canceled` |
 
 You can create custom message classes that extends a default message class, for example, a custom appointment message class `IPM.Appointment.Contoso`.
 
@@ -400,11 +328,11 @@ You can create custom message classes that extends a default message class, for 
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 
 ##### Example
 
@@ -426,11 +354,11 @@ The `itemId` property is not available in compose mode. If an item identifier is
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 
 ##### Example
 
@@ -457,11 +385,11 @@ The `itemType` property returns one of the `ItemType` enumeration values, indica
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Compose or read|
 
 ##### Example
 
@@ -490,11 +418,11 @@ The `location` property returns a `Location` object that provides methods that a
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Compose or read|
 
 ##### Example
 
@@ -520,11 +448,11 @@ The normalizedSubject property gets the subject of the item, with any standard p
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 
 ##### Example
 
@@ -542,11 +470,11 @@ Gets the notification messages for an item.
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.3|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.3|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Compose or read|
 
 ####  optionalAttendees :Array.<[EmailAddressDetails](simple-types.md#emailaddressdetails)>|[Recipients](Recipients.md)
 
@@ -566,11 +494,11 @@ The `optionalAttendees` property returns a `Recipients` object that provides met
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Compose or read|
 
 ##### Example
 
@@ -594,11 +522,11 @@ Gets the email address of the meeting organizer for a specified meeting. Read mo
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 
 ##### Example
 
@@ -606,26 +534,6 @@ Gets the email address of the meeting organizer for a specified meeting. Read mo
 var organizerName = Office.context.mailbox.item.organizer.displayName;
 var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
 ```
-
-#### (nullable) recurrence :[Recurrence](Recurrence.md)
-
-Gets or sets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and compose modes for appointment items. Read mode for meeting request items.
-
-The `recurrence` property returns a [recurrence](Recurrence.md) object for recurring appointments or meetings requests if an item is a series or an instance in a series. `null` is returned for single appointments and meeting requests of single appointments. `undefined` is returned for messages that are not meeting requests.
-
-> Note: Meeting requests have an `itemClass` value of IPM.Schedule.Meeting.Request.
-
-> Note: If the recurrence object is `null`, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series.
-
-##### Type:
-
-* [Recurrence](Recurrence.md)
-
-|Requirement|Value|
-|---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|Preview|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
 
 ####  requiredAttendees :Array.<[EmailAddressDetails](simple-types.md#emailaddressdetails)>|[Recipients](Recipients.md)
 
@@ -645,11 +553,11 @@ The `requiredAttendees` property returns a `Recipients` object that provides met
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Compose or read|
 
 ##### Example
 
@@ -677,46 +585,17 @@ The [`from`](Office.context.mailbox.item.md#from-emailaddressdetails) and `sende
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 
 ##### Example
 
 ```
 var senderName = Office.context.mailbox.item.sender.displayName;
 var senderAddress = Office.context.mailbox.item.sender.emailAddress;
-```
-
-#### (nullable) seriesId :String
-
-Gets the id of the series that an instance belongs to.
-
-In OWA and Outlook, the `seriesId` returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to. However, in iOS and Android, the `seriesId` returns the REST ID of the parent item.
-
-> **Note:** The identifier returned by the `seriesId` property is the same as the Exchange Web Services item identifier. The `seriesId` property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API calls using this value, it should be converted using [Office.context.mailbox.convertToRestId](Office.context.mailbox.md#converttorestiditemid-restversion--string). For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api).
-
-The `seriesId` property returns `null` for items that do not have parent items such as single appointments, series items, or meeting requests and returns `undefined` for any other items that are not meeting requests.
-
-##### Type:
-
-* String
-
-##### Requirements
-
-|Requirement|Value|
-|---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|Preview|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
-
-##### Example
-
-```
-var seriesId = Office.context.mailbox.item.seriesId; 
-var isSeries = (seriesId == null);
 ```
 
 ####  start :Date|[Time](Time.md)
@@ -741,11 +620,11 @@ When you use the [`Time.setAsync`](Time.md#setasyncdatetime-options-callback) me
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Compose or read|
 
 ##### Example
 
@@ -800,12 +679,11 @@ function callback(asyncResult) {
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
-
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Compose or read|
 ####  to :Array.<[EmailAddressDetails](simple-types.md#emailaddressdetails)>|[Recipients](Recipients.md)
 
 Provides access to the recipients on the **To** line of a message. The type of object and level of access depends on the mode of the current item.
@@ -824,11 +702,11 @@ The `to` property returns a `Recipients` object that provides methods to get or 
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Compose or read|
 
 ##### Example
 
@@ -853,34 +731,33 @@ The `addFileAttachmentAsync` method uploads the file at the specified URI and at
 You can subsequently use the identifier with the [`removeAttachmentAsync`](Office.context.mailbox.item.md#removeattachmentasyncattachmentid-options-callback) method to remove the attachment in the same session.
 
 ##### Parameters:
-|Name|Type|Attributes|Description|
+|Name| Type| Attributes| Description|
 |---|---|---|---|
-|`uri`|String||The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.|
-|`attachmentName`|String||The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.|
-|`options`|Object|&lt;optional&gt;|An object literal that contains one or more of the following properties.|
-|`options.asyncContext`|Object|&lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
-|`options.isInline`|Boolean|&lt;optional&gt;|If `true`, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.|
-|`callback`|function|&lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. <br/>On success, the attachment identifier will be provided in the `asyncResult.value` property.<br/>If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.|
+|`uri`| String||The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.|
+|`attachmentName`| String||The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.|
+|`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties.|
+|`options.asyncContext`| Object| &lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
+|`callback`| function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. <br/>On success, the attachment identifier will be provided in the `asyncResult.value` property.<br/>If uploading the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.|
 
 ##### Errors
 
-|Error code|Description|
+| Error code | Description |
 |------------|-------------|
-|`AttachmentSizeExceeded`|The attachment is larger than allowed.|
-|`FileTypeNotSupported`|The attachment has an extension that is not allowed.|
-|`NumberOfAttachmentsExceeded`|The message or appointment has too many attachments.|
+| `AttachmentSizeExceeded` | The attachment is larger than allowed. |
+| `FileTypeNotSupported` | The attachment has an extension that is not allowed. |
+| `NumberOfAttachmentsExceeded` | The message or appointment has too many attachments. |
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.1|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadWriteItem|
-|Applicable Outlook mode|Compose|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadWriteItem|
+|Applicable Outlook mode| Compose|
 
-##### Examples
+##### Example
 
-```js
+```
 function callback(result) {
   if (result.error) {
     showMessage(result.error);
@@ -898,73 +775,6 @@ function addAttachment() {
 }
 ```
 
-The following example adds an image file as an inline attachment and references the attachment in the message body.
-
-```js
-Office.context.mailbox.item.addFileAttachmentAsync
-(
-  "http://i.imgur.com/WJXklif.png",
-  "cute_bird.png",
-  {
-    isInline: true
-  },
-  function (asyncResult) {
-    Office.context.mailbox.item.body.setAsync(
-      "<p>Here's a cute bird!</p><img src='cid:cute_bird.png'>",
-      {
-        "coercionType": "html"
-      },
-      function (asyncResult) {
-        
-      }
-    );
-  }
-);
-```
-
-####  addHandlerAsync(eventType, handler, [options], [callback])
-
-Adds an event handler for a supported event.
-
-Currently the only supported event type is `Office.EventType.RecurrencePatternChanged`, which is invoked when the user changes the recurrence pattern of a series.
-
-##### Parameters:
-
-| Name | Type | Attributes | Description |
-|---|---|---|---|
-| `eventType` | [Office.EventType](Office.md#eventtype-string) || The event that should invoke the handler. |
-| `handler` | Function || The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`. |
-| `options` | Object | &lt;optional&gt; | An object literal that contains one or more of the following properties. |
-| `options.asyncContext` | Object | &lt;optional&gt; | Developers can provide any object they wish to access in the callback method. |
-| `callback` | function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object.|
-
-##### Requirements
-
-|Requirement| Value|
-|---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| Preview |
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem |
-|Applicable Outlook mode| Compose or read |
-
-##### Example
-
-```
-Office.initialize = function (reason) {
-  $(document).ready(function () {
-    Office.context.mailbox.item.addHandlerAsync(Office.EventType.RecurrencePatternChanged, loadNewItem, function (result) {
-      if (result.status === Office.AsyncResultStatus.Failed) {
-        // Handle error
-      }
-    });
-  });
-};
-
-function loadNewItem(eventArgs) {
-  // Load the properties of the newly selected item
-  loadProps(Office.context.mailbox.item);
-};
-```
-
 ####  addItemAttachmentAsync(itemId, attachmentName, [options], [callback])
 
 Adds an Exchange item, such as a message, as an attachment to the message or appointment.
@@ -977,27 +787,27 @@ If your Office add-in is running in Outlook Web App, the `addItemAttachmentAsync
 
 ##### Parameters:
 
-|Name|Type|Attributes|Description|
+|Name| Type| Attributes| Description|
 |---|---|---|---|
-|`itemId`|String||The Exchange identifier of the item to attach. The maximum length is 100 characters.|
-|`attachmentName`|String||The sujbect of the item to be attached. The maximum length is 255 characters.|
-|`options`|Object|&lt;optional&gt;|An object literal that contains one or more of the following properties.|
-|`options.asyncContext`|Object|&lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
-|`callback`|function|&lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. <br/>On success, the attachment identifier will be provided in the `asyncResult.value` property.<br/>If adding the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.|
+|`itemId`| String||The Exchange identifier of the item to attach. The maximum length is 100 characters.|
+|`attachmentName`| String||The sujbect of the item to be attached. The maximum length is 255 characters.|
+|`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties.|
+|`options.asyncContext`| Object| &lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
+|`callback`| function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. <br/>On success, the attachment identifier will be provided in the `asyncResult.value` property.<br/>If adding the attachment fails, the `asyncResult` object will contain an `Error` object that provides a description of the error.|
 
 ##### Errors
 
-|Error code|Description|
+| Error code | Description |
 |------------|-------------|
-|`NumberOfAttachmentsExceeded`|The message or appointment has too many attachments.|
+| `NumberOfAttachmentsExceeded` | The message or appointment has too many attachments. |
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.1|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadWriteItem|
-|Applicable Outlook mode|Compose|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadWriteItem|
+|Applicable Outlook mode| Compose|
 
 ##### Example
 
@@ -1036,12 +846,11 @@ In the Outlook desktop client, if the message is an inline reply, the `close` me
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.3|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|Restricted|
-|Applicable Outlook mode|Compose|
-
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.3|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| Restricted|
+|Applicable Outlook mode| Compose|
 #### displayReplyAllForm(formData)
 
 Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.
@@ -1056,25 +865,24 @@ When attachments are specified in the `formData.attachments` parameter, Outlook 
 
 ##### Parameters:
 
-|Name|Type|Attributes|Description|
-|---|---|---|---|
-|`formData`|String &#124; Object||A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.<br/>**OR**<br/>An object that contains body or attachment data and a callback function. The object is defined as follows.|
-|`formData.htmlBody`|String|&lt;optional&gt;|A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
-|`formData.attachments`|Array.&lt;Object&gt;|&lt;optional&gt;|An array of JSON objects that are either file or item attachments.|
-|`formData.attachments.type`|String||Indicates the type of attachment. Must be `file` for a file attachment or `item` for an item attachment.|
-|`formData.attachments.name`|String||A string that contains the name of the attachment, up to 255 characters in length.|
-|`formData.attachments.url`|String||Only used if `type` is set to `file`. The URI of the location for the file.|
-|`formData.attachments.isInline`|Boolean||Only used if `type` is set to `file`. If `true`, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.|
-|`formData.attachments.itemId`|String||Only used if `type` is set to `item`. The EWS item id of the attachment. This is a string up to 100 characters.|
-|`callback`|function|&lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [AsyncResult](simple-types.md#asyncresult) object.|
+|Name| Type| Description|
+|---|---|---|
+|`formData`| String &#124; Object| |A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.<br/>**OR**<br/>An object that contains body or attachment data and a callback function. The object is defined as follows. |
+| `formData.htmlBody` | String | &lt;optional&gt; | A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
+| `formData.attachments` | Array.&lt;Object&gt; | &lt;optional&gt; | An array of JSON objects that are either file or item attachments. |
+| `formData.attachments.type` | String | | Indicates the type of attachment. Must be `file` for a file attachment or `item` for an item attachment. |
+| `formData.attachments.name` | String | | A string that contains the name of the attachment, up to 255 characters in length.|
+| `formData.attachments.url` | String | | Only used if `type` is set to `file`. The URI of the location for the file. |
+| `formData.attachments.itemId` | String | | Only used if `type` is set to `item`. The EWS item id of the attachment. This is a string up to 100 characters. |
+| `callback` | function | &lt;optional&gt; | When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [AsyncResult](simple-types.md#asyncresult) object. |
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 
 ##### Examples
 
@@ -1174,25 +982,24 @@ When attachments are specified in the `formData.attachments` parameter, Outlook 
 
 ##### Parameters:
 
-|Name|Type|Attributes|Description|
-|---|---|---|---|
-|`formData`|String &#124; Object||A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.<br/>**OR**<br/>An object that contains body or attachment data and a callback function. The object is defined as follows.|
-|`formData.htmlBody`|String|&lt;optional&gt;|A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
-|`formData.attachments`|Array.&lt;Object&gt;|&lt;optional&gt;|An array of JSON objects that are either file or item attachments.|
-|`formData.attachments.type`|String||Indicates the type of attachment. Must be `file` for a file attachment or `item` for an item attachment.|
-|`formData.attachments.name`|String||A string that contains the name of the attachment, up to 255 characters in length.|
-|`formData.attachments.url`|String||Only used if `type` is set to `file`. The URI of the location for the file.|
-|`formData.attachments.isInline`|Boolean||Only used if `type` is set to `file`. If `true`, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.|
-|`formData.attachments.itemId`|String||Only used if `type` is set to `item`. The EWS item id of the attachment. This is a string up to 100 characters.|
-|`callback`|function|&lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [AsyncResult](simple-types.md#asyncresult) object.|
+|Name| Type| Description|
+|---|---|---|
+|`formData`| String &#124; Object| | A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.<br/>**OR**<br/>An object that contains body or attachment data and a callback function. The object is defined as follows. |
+| `formData.htmlBody` | String | &lt;optional&gt; | A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
+| `formData.attachments` | Array.&lt;Object&gt; | &lt;optional&gt; | An array of JSON objects that are either file or item attachments. |
+| `formData.attachments.type` | String | | Indicates the type of attachment. Must be `file` for a file attachment or `item` for an item attachment. |
+| `formData.attachments.name` | String | | A string that contains the name of the attachment, up to 255 characters in length.|
+| `formData.attachments.url` | String | | Only used if `type` is set to `file`. The URI of the location for the file. |
+| `formData.attachments.itemId` | String | | Only used if `type` is set to `item`. The EWS item id of the attachment. This is a string up to 100 characters. |
+| `callback` | function | &lt;optional&gt; | When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [AsyncResult](simple-types.md#asyncresult) object. |
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 
 ##### Examples
 
@@ -1286,11 +1093,11 @@ Gets the entities found in the selected item.
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 
 ##### Returns:
 
@@ -1313,17 +1120,17 @@ Gets an array of all the entities of the specified entity type found in the sele
 
 ##### Parameters:
 
-|Name|Type|Description|
+|Name| Type| Description|
 |---|---|---|
-|`entityType`|[Office.MailboxEnums.EntityType](Office.MailboxEnums.md#entitytype-string)|One of the EntityType enumeration values.|
+|`entityType`| [Office.MailboxEnums.EntityType](Office.MailboxEnums.md#entitytype-string)|One of the EntityType enumeration values.|
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|Restricted|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| Restricted|
+|Applicable Outlook mode| Read|
 
 ##### Returns:
 
@@ -1331,15 +1138,15 @@ If the value passed in `entityType` is not a valid member of the `EntityType` en
 
 While the minimum permission level to use this method is **Restricted**, some entity types require **ReadItem** to access, as specified in the following table.
 
-|Value of `entityType`|Type of objects in returned array|Required Permission Level|
-|---|---|---|
-|`Address`|String|**Restricted**|
-|`Contact`|Contact|**ReadItem**|
-|`EmailAddress`|String|**ReadItem**|
-|`MeetingSuggestion`|MeetingSuggestion|**ReadItem**|
-|`PhoneNumber`|PhoneNumber|**Restricted**|
-|`TaskSuggestion`|TaskSuggestion|**ReadItem**|
-|`URL`|String|**Restricted**|
+| Value of `entityType` | Type of objects in returned array | Required Permission Level |
+| --- | --- | --- |
+| `Address` | String | **Restricted** |
+| `Contact` | Contact | **ReadItem** |
+| `EmailAddress` | String | **ReadItem** |
+| `MeetingSuggestion` | MeetingSuggestion | **ReadItem** |
+| `PhoneNumber` | PhoneNumber | **Restricted** |
+| `TaskSuggestion` | TaskSuggestion | **ReadItem** |
+| `URL` | String | **Restricted** |
 
 Type: Array.<(String|[Contact](simple-types.md#contact)|[MeetingSuggestion](simple-types.md#meetingsuggestion)|[PhoneNumber](simple-types.md#phonenumber)|[TaskSuggestion](simple-types.md#tasksuggestion))>
 
@@ -1371,17 +1178,17 @@ The `getFilteredEntitiesByName` method returns the entities that match the regul
 
 ##### Parameters:
 
-|Name|Type|Description|
+|Name| Type| Description|
 |---|---|---|
-|`name`|String|The name of the `ItemHasKnownEntity` rule element that defines the filter to match.|
+|`name`| String|The name of the `ItemHasKnownEntity` rule element that defines the filter to match.|
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 
 ##### Returns:
 
@@ -1389,54 +1196,6 @@ If there is no `ItemHasKnownEntity` element in the manifest with a `FilterName` 
 
 Type:
 Array.<(String|[Contact](simple-types.md#contact)|[MeetingSuggestion](simple-types.md#meetingsuggestion)|[PhoneNumber](simple-types.md#phonenumber)|[TaskSuggestion](simple-types.md#tasksuggestion))>
-
-#### getInitializationContextAsync([options], [callback])
-
-Gets initialization data passed when the add-in is [activated by an actionable message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message).
-
-> **Note:** This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365.
-
-##### Parameters:
-|Name|Type|Attributes|Description|
-|---|---|---|---|
-|`options`|Object|&lt;optional&gt;|An object literal that contains one or more of the following properties.|
-|`options.asyncContext`|Object|&lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
-|`callback`|function|&lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. <br/>On success, the initialization data is provided in the `asyncResult.value` property as a string.<br/>If there is no initialization context, the `asyncResult` object will contain an `Error` object with its `code` property set to `9020` and its `name` property set to `GenericResponseError`.|
-
-##### Requirements
-
-|Requirement|Value|
-|---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|Preview|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
-
-##### Example
-
-```
-// Get the initialization context (if present)
-Office.context.mailbox.item.getInitializationContextAsync(
-  function(asyncResult) {
-    if (asyncResult.status == Office.AsyncResultStatus.Succeeded) {
-      if (asyncResult.value != null && asyncResult.value.length > 0) {
-        // The value is a string, parse to an object
-        var context = JSON.parse(asyncResult.value);
-        // Do something with context
-      } else {
-        // Empty context, treat as no context
-      }
-    } else {
-      if (asyncResult.error.code == 9020) {
-        // GenericResponseError returned when there is
-        // no context
-        // Treat as no context
-      } else {
-        // Handle the error
-      }
-    }
-  }
-);
-```
 
 #### getRegExMatches() → {Object}
 
@@ -1471,11 +1230,11 @@ If you specify an `ItemHasRegularExpressionMatch` rule on the body property of a
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 
 ##### Returns:
 
@@ -1491,7 +1250,7 @@ An object that contains arrays of strings that match the regular expressions def
 
 ##### Example
 
-The following example shows how to access the array of matches for the regular expression rule elements `fruits` and `veggies`, which are specified in the manifest.
+The following example shows how to access the array of matches for the regular expression <rule>elements `fruits` and `veggies`, which are specified in the manifest.</rule>
 
 ```
 var allMatches = Office.context.mailbox.item.getRegExMatches();
@@ -1511,17 +1270,17 @@ If you specify an `ItemHasRegularExpressionMatch` rule on the body property of a
 
 ##### Parameters:
 
-|Name|Type|Description|
+|Name| Type| Description|
 |---|---|---|
-|`name`|String|The name of the `ItemHasRegularExpressionMatch` rule element that defines the filter to match.|
+|`name`| String|The name of the `ItemHasRegularExpressionMatch` rule element that defines the filter to match.|
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Read|
 
 ##### Returns:
 
@@ -1550,22 +1309,22 @@ If there is no selection but the cursor is in the body or subject, the method re
 
 ##### Parameters:
 
-|Name|Type|Attributes|Description|
+|Name| Type| Attributes| Description|
 |---|---|---|---|
-|`coercionType`|[Office.CoercionType](Office.md#coerciontype-string)||Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.|
-|`options`|Object|&lt;optional&gt;|An object literal that contains one or more of the following properties.|
-|`options.asyncContext`|Object|&lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
-|`callback`|function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object.
+|`coercionType`| [Office.CoercionType](Office.md#coerciontype-string)||Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.|
+|`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties.|
+|`options.asyncContext`| Object| &lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object.
 
 To access the selected data from the callback method, call `asyncResult.value.data`. To access the source property that the selection comes from, call `asyncResult.value.sourceProperty`, which will be either `body` or `subject`.|
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadWriteItem|
-|Applicable Outlook mode|Compose|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadWriteItem|
+|Applicable Outlook mode| Compose|
 
 ##### Returns:
 
@@ -1599,86 +1358,6 @@ function setCallback(asyncResult) {
 }
 ```
 
-#### getSelectedEntities() → {[Entities](simple-types.md#entities)}
-
-Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to [contextual add-ins](..\..\..\docs\outlook\contextual-outlook-add-ins.md).
-
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
-
-##### Requirements
-
-|Requirement|Value|
-|---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.6|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
-
-##### Returns:
-
-Type:
-[Entities](simple-types.md#entities)
-
-##### Example
-
-The following example accesses the addresses entities in the highlighted match selected by the user.
-
-```
-var contacts = Office.context.mailbox.item.getSelectedEntities().addresses;
-```
-
-#### getSelectedRegExMatches() → {Object}
-
-Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file. Highlighted matches apply to [contextual add-ins](..\..\..\docs\outlook\contextual-outlook-add-ins.md).
-
-> **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
-
-The `getSelectedRegExMatches` method returns the strings that match the regular expression defined in each `ItemHasRegularExpressionMatch` or `ItemHasKnownEntity` rule element in the manifest XML file. For an `ItemHasRegularExpressionMatch` rule, a matching string has to occur in the property of the item that is specified by that rule. The `PropertyName` simple type defines the supported properties.
-
-For example, consider an add-in manifest has the following `Rule` element:
-
-```
-<Rule xsi:type="RuleCollection" Mode="And">
-  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
-  <Rule xsi:type="RuleCollection" Mode="Or">
-    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
-  </Rule>
-</Rule>
-```
-
-The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
-
-```
-{
-  'fruits': ['apple','banana','Banana','coconut'],
-  'veggies': ['tomato','onion','spinach','broccoli']
-}
-```
-
-If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item does not always return the expected results. Instead, use the [`Body.getAsync`](Body.md#getasynccoerciontype-options-callback) method to retrieve the entire body.
-
-##### Requirements
-
-|Requirement|Value|
-|---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.6|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Read|
-
-##### Returns:
-
-An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. The name of each array is equal to the corresponding value of the `RegExName` attribute of the matching `ItemHasRegularExpressionMatch` rule or the `FilterName` attribute of the matching `ItemHasKnownEntity` rule.
-
-##### Example
-
-The following example shows how to access the array of matches for the regular expression rule elements `fruits` and `veggies`, which are specified in the manifest.
-
-```
-var selectedMatches = Office.context.mailbox.item.getSelectedRegExMatches();
-var fruits = selectedMatches.fruits;
-var veggies = selectedMatches.veggies;
-```
-
 ####  loadCustomPropertiesAsync(callback, [userContext])
 
 Asynchronously loads custom properties for this add-in on the selected item.
@@ -1687,18 +1366,18 @@ Custom properties are stored as key/value pairs on a per-app, per-item basis. Th
 
 ##### Parameters:
 
-|Name|Type|Attributes|Description|
+|Name| Type| Attributes| Description|
 |---|---|---|---|
-|`callback`|function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object.<br/><br/>The custom properties are provided as a [`CustomProperties`](CustomProperties.md) object in the `asyncResult.value` property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server.|
-|`userContext`|Object|&lt;optional&gt;|Developers can provide any object they wish to access in the callback function. This object can be accessed by the `asyncResult.asyncContext` property in the callback function.|
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object.<br/><br/>The custom properties are provided as a [`CustomProperties`](CustomProperties.md) object in the `asyncResult.value` property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server.|
+|`userContext`| Object| &lt;optional&gt;|Developers can provide any object they wish to access in the callback function. This object can be accessed by the `asyncResult.asyncContext` property in the callback function.|
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.0|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadItem|
-|Applicable Outlook mode|Compose or read|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|Applicable Outlook mode| Compose or read|
 
 ##### Example
 
@@ -1735,26 +1414,26 @@ The `removeAttachmentAsync` method removes the attachment with the specified ide
 
 ##### Parameters:
 
-|Name|Type|Attributes|Description|
+|Name| Type| Attributes| Description|
 |---|---|---|---|
-|`attachmentId`|String||The identifier of the attachment to remove. The maximum length of the string is 100 characters.|
-|`options`|Object|&lt;optional&gt;|An object literal that contains one or more of the following properties.|
-|`options.asyncContext`|Object|&lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
-|`callback`|function|&lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. <br/>If removing the attachment fails, the `asyncResult.error` property will contain an error code with the reason for the failure.|
+|`attachmentId`| String||The identifier of the attachment to remove. The maximum length of the string is 100 characters.|
+|`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties.|
+|`options.asyncContext`| Object| &lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
+|`callback`| function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. <br/>If removing the attachment fails, the `asyncResult.error` property will contain an error code with the reason for the failure.|
 
 ##### Errors
 
-|Error code|Description|
+| Error code | Description |
 |------------|-------------|
-|`InvalidAttachmentId`|The attachment identifier does not exist.|
+| `InvalidAttachmentId` | The attachment identifier does not exist. |
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.1|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadWriteItem|
-|Applicable Outlook mode|Compose|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.1|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadWriteItem|
+|Applicable Outlook mode| Compose|
 
 ##### Example
 
@@ -1769,49 +1448,6 @@ Office.context.mailbox.item.removeAttachmentAsync(
     console.log(asyncResult.status);
   }
 );
-```
-
-####  removeHandlerAsync(eventType, handler, [options], [callback])
-
-Removes an event handler for a supported event.
-
-Currently the only supported event type is `Office.EventType.RecurrencePatternChanged`, which is invoked when the user changes the recurrence pattern of a series.
-
-##### Parameters:
-
-| Name | Type | Attributes | Description |
-|---|---|---|---|
-| `eventType` | [Office.EventType](Office.md#eventtype-string) || The event that should invoke the handler. |
-| `handler` | Function || The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the `eventType` parameter passed to `removeHandlerAsync`. |
-| `options` | Object | &lt;optional&gt; | An object literal that contains one or more of the following properties. |
-| `options.asyncContext` | Object | &lt;optional&gt; | Developers can provide any object they wish to access in the callback method. |
-| `callback` | function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object.|
-
-##### Requirements
-
-|Requirement| Value|
-|---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| Preview |
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem |
-|Applicable Outlook mode| Compose or read |
-
-##### Example
-
-```
-Office.initialize = function (reason) {
-  $(document).ready(function () {
-    Office.context.mailbox.item.removeHandlerAsync(Office.EventType.RecurrencePatternChanged, loadNewItem, function (result) {
-      if (result.status === Office.AsyncResultStatus.Failed) {
-        // Handle error
-      }
-    });
-  });
-};
-
-function loadNewItem(eventArgs) {
-  // Load the properties of the newly selected item
-  loadProps(Office.context.mailbox.item);
-};
 ```
 
 ####  saveAsync([options], callback)
@@ -1831,21 +1467,21 @@ Since appointments have no draft state, if `saveAsync` is called on an appointme
 
 ##### Parameters:
 
-|Name|Type|Attributes|Description|
+|Name| Type| Attributes| Description|
 |---|---|---|---|
-|`options`|Object|&lt;optional&gt;|An object literal that contains one or more of the following properties.|
-|`options.asyncContext`|Object|&lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
-|`callback`|function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object.
+|`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties.|
+|`options.asyncContext`| Object| &lt;optional&gt;|Developers can provide any object they wish to access in the callback method.||
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object.
 
 On success, the item identifier is provided in the `asyncResult.value` property.|
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.3|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadWriteItem|
-|Applicable Outlook mode|Compose|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.3|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadWriteItem|
+|Applicable Outlook mode| Compose|
 
 ##### Examples
 
@@ -1873,21 +1509,21 @@ The `setSelectedDataAsync` method inserts the specified string at the cursor loc
 
 ##### Parameters:
 
-|Name|Type|Attributes|Description|
+|Name| Type| Attributes| Description|
 |---|---|---|---|
-|`data`|String||The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.|
-|`options`|Object|&lt;optional&gt;|An object literal that contains one or more of the following properties.|
-|`options.asyncContext`|Object|&lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
-|`options.coercionType`|[Office.CoercionType](Office.md)|&lt;optional&gt;|If `text`, the current style is applied in Outlook Web App and Outlook. If the field is an HTML editor, only the text data is inserted, even if the data is HTML.<br/><br/>If `html` and the field supports HTML (the subject doesn't), the current style is applied in Outlook Web App and the default style is applied in Outlook. If the field is a text field, an `InvalidDataFormat` error is returned.<br/><br/>If `coercionType` is not set, the result depends on the field: if the field is HTML then HTML is used; if the field is text, then plain text is used.|
-|`callback`|function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object.|
+|`data`| String||The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are passed in, an `ArgumentOutOfRange` exception is thrown.|
+|`options`| Object| &lt;optional&gt;|An object literal that contains one or more of the following properties.|
+|`options.asyncContext`| Object| &lt;optional&gt;|Developers can provide any object they wish to access in the callback method.|
+|`options.coercionType`| [Office.CoercionType](Office.md)| &lt;optional&gt;|If `text`, the current style is applied in Outlook Web App and Outlook. If the field is an HTML editor, only the text data is inserted, even if the data is HTML.<br/><br/>If `html` and the field supports HTML (the subject doesn't), the current style is applied in Outlook Web App and the default style is applied in Outlook. If the field is a text field, an `InvalidDataFormat` error is returned.<br/><br/>If `coercionType` is not set, the result depends on the field: if the field is HTML then HTML is used; if the field is text, then plain text is used.|
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. |
 
 ##### Requirements
 
-|Requirement|Value|
+|Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)|1.2|
-|[Minimum permission level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)|ReadWriteItem|
-|Applicable Outlook mode|Compose|
+|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.2|
+|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadWriteItem|
+|Applicable Outlook mode| Compose|
 
 ##### Example
 
