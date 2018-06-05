@@ -1615,6 +1615,9 @@ export declare namespace Office {
         getAsync(callback?: (result: AsyncResult) => void): void;
     }
 
+    /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation).
+     */
     export interface Appointment extends Item {
         /**
          * Gets or sets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and compose modes for appointment items. Read mode for meeting request items.
@@ -1654,15 +1657,14 @@ export declare namespace Office {
          */
         seriesId: string;
     }
+    /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation).
+     */
     export interface AppointmentCompose extends Appointment, ItemCompose {
         /**
          * Gets or sets the date and time that the appointment is to end.
          *
          * The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time.
-         *
-         * *Read mode*
-         *
-         * The end property returns a Date object.
          *
          * *Compose mode*
          *
@@ -1682,10 +1684,6 @@ export declare namespace Office {
         /**
          * Gets or sets the location of an appointment.
          *
-         * *Read mode*
-         *
-         * The location property returns a string that contains the location of the appointment.
-         *
          * *Compose mode*
          *
          * The location property returns a Location object that provides methods that are used to get and set the location of the appointment.
@@ -1702,10 +1700,6 @@ export declare namespace Office {
         /**
          * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
          *
-         * *Read mode*
-         *
-         * The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional attendee to the meeting.
-         *
          * *Compose mode*
          *
          * The optionalAttendees property returns a Recipients object that provides methods to get or update the optional attendees for a meeting.
@@ -1721,10 +1715,6 @@ export declare namespace Office {
         optionalAttendees: Recipients;
         /**
          * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
-         *
-         * *Read mode*
-         *
-         * The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required attendee to the meeting.
          *
          * *Compose mode*
          *
@@ -1744,10 +1734,6 @@ export declare namespace Office {
          *
          * The start property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time.
          *
-         * *Read mode*
-         *
-         * The start property returns a Date object.
-         *
          * *Compose mode*
          *
          * The start property returns a Time object.
@@ -1764,6 +1750,9 @@ export declare namespace Office {
          */
         start: Time;
     }
+    /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation).
+     */
     export interface AppointmentRead extends Appointment, ItemRead {
         end: Date;
         /**
@@ -1772,10 +1761,6 @@ export declare namespace Office {
          * *Read mode*
          *
          * The location property returns a string that contains the location of the appointment.
-         *
-         * *Compose mode*
-         *
-         * The location property returns a Location object that provides methods that are used to get and set the location of the appointment.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -1792,10 +1777,6 @@ export declare namespace Office {
          * *Read mode*
          *
          * The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional attendee to the meeting.
-         *
-         * *Compose mode*
-         *
-         * The optionalAttendees property returns a Recipients object that provides methods to get or update the optional attendees for a meeting.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -1825,10 +1806,6 @@ export declare namespace Office {
          *
          * The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required attendee to the meeting.
          *
-         * *Compose mode*
-         *
-         * The requiredAttendees property returns a Recipients object that provides methods to get or update the required attendees for a meeting.
-         *
          * [Api set: Mailbox 1.0]
          *
          * @remarks
@@ -1846,12 +1823,6 @@ export declare namespace Office {
          * *Read mode*
          *
          * The start property returns a Date object.
-         *
-         * *Compose mode*
-         *
-         * The start property returns a Time object.
-         *
-         * When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -2184,15 +2155,14 @@ export declare namespace Office {
         */
        removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;
     }
+    /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation).
+     */
     export interface ItemCompose extends Item {
         /**
          * Gets or sets the description that appears in the subject field of an item.
          *
          * The subject property gets or sets the entire subject of the item, as sent by the email server.
-         *
-         * *Read mode*
-         *
-         * The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:.
          *
          * *Compose mode*
          *
@@ -2781,6 +2751,9 @@ export declare namespace Office {
          */
         setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;
     }
+    /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation).
+     */
     export interface ItemRead extends Item {
         /**
          * Gets an array of attachments for the item. Read mode only.
@@ -2856,10 +2829,6 @@ export declare namespace Office {
          * *Read mode*
          *
          * The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:.
-         *
-         * *Compose mode*
-         *
-         * The subject property returns a Subject object that provides methods to get and set the subject.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -3109,6 +3078,9 @@ export declare namespace Office {
          */
         getSelectedRegExMatches(): any;
     }
+    /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation).
+     */
     export interface Message extends Item {
         /**
          * Gets an identifier for the email conversation that contains a particular message.
@@ -3127,6 +3099,9 @@ export declare namespace Office {
          */
         conversationId: string;
     }
+    /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation).
+     */
     export interface MessageCompose extends Message, ItemCompose {
         /**
          * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message. Compose mode only.
@@ -3142,10 +3117,6 @@ export declare namespace Office {
         bcc: Recipients;
         /**
          * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.
-         *
-         * *Read mode*
-         *
-         * The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc line of the message. The collection is limited to a maximum of 100 members.
          *
          * *Compose mode*
          *
@@ -3179,10 +3150,6 @@ export declare namespace Office {
         /**
          * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the current item.
          *
-         * *Read mode*
-         *
-         * The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To line of the message. The collection is limited to a maximum of 100 members.
-         *
          * *Compose mode*
          *
          * The to property returns a Recipients object that provides methods to get or update the recipients on the To line of the message.
@@ -3197,6 +3164,9 @@ export declare namespace Office {
          */
         to: Recipients;
     }
+    /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation).
+     */
     export interface MessageRead extends Message, ItemRead {
         /**
          * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.
@@ -3204,10 +3174,6 @@ export declare namespace Office {
          * *Read mode*
          *
          * The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc line of the message. The collection is limited to a maximum of 100 members.
-         *
-         * *Compose mode*
-         *
-         * The cc property returns a Recipients object that provides methods to get or update the recipients on the Cc line of the message.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -3270,10 +3236,6 @@ export declare namespace Office {
          * *Read mode*
          *
          * The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To line of the message. The collection is limited to a maximum of 100 members.
-         *
-         * *Compose mode*
-         *
-         * The to property returns a Recipients object that provides methods to get or update the recipients on the To line of the message.
          *
          * [Api set: Mailbox 1.0]
          *

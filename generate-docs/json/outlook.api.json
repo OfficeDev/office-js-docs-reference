@@ -17,7 +17,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -150,7 +155,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -174,20 +184,6 @@
                 {
                   "kind": "text",
                   "text": "The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The end property returns a Date object."
                 },
                 {
                   "kind": "paragraph"
@@ -254,20 +250,6 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The location property returns a string that contains the location of the appointment."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "*Compose mode*"
                 },
                 {
@@ -321,20 +303,6 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional attendee to the meeting."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "*Compose mode*"
                 },
                 {
@@ -382,20 +350,6 @@
                 {
                   "kind": "text",
                   "text": "Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required attendee to the meeting."
                 },
                 {
                   "kind": "paragraph"
@@ -456,20 +410,6 @@
                 {
                   "kind": "text",
                   "text": "The start property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The start property returns a Date object."
                 },
                 {
                   "kind": "paragraph"
@@ -1023,7 +963,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -1069,20 +1014,6 @@
                 {
                   "kind": "text",
                   "text": "The location property returns a string that contains the location of the appointment."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The location property returns a Location object that provides methods that are used to get and set the location of the appointment."
                 },
                 {
                   "kind": "paragraph"
@@ -1136,20 +1067,6 @@
                 {
                   "kind": "text",
                   "text": "The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional attendee to the meeting."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The optionalAttendees property returns a Recipients object that provides methods to get or update the optional attendees for a meeting."
                 },
                 {
                   "kind": "paragraph"
@@ -1248,20 +1165,6 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The requiredAttendees property returns a Recipients object that provides methods to get or update the required attendees for a meeting."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "[Api set: Mailbox 1.0]"
                 }
               ],
@@ -1316,27 +1219,6 @@
                 {
                   "kind": "text",
                   "text": "The start property returns a Date object."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The start property returns a Time object."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server."
                 },
                 {
                   "kind": "paragraph"
@@ -3844,7 +3726,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -4673,20 +4560,6 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "*Compose mode*"
                 },
                 {
@@ -4730,7 +4603,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -5686,20 +5564,6 @@
                 {
                   "kind": "text",
                   "text": "The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The subject property returns a Subject object that provides methods to get and set the subject."
                 },
                 {
                   "kind": "paragraph"
@@ -10477,7 +10341,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -10543,7 +10412,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -10599,20 +10473,6 @@
                 {
                   "kind": "text",
                   "text": "Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc line of the message. The collection is limited to a maximum of 100 members."
                 },
                 {
                   "kind": "paragraph"
@@ -10725,20 +10585,6 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To line of the message. The collection is limited to a maximum of 100 members."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "*Compose mode*"
                 },
                 {
@@ -10782,7 +10628,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -10813,20 +10664,6 @@
                 {
                   "kind": "text",
                   "text": "The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc line of the message. The collection is limited to a maximum of 100 members."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The cc property returns a Recipients object that provides methods to get or update the recipients on the Cc line of the message."
                 },
                 {
                   "kind": "paragraph"
@@ -11032,20 +10869,6 @@
                 {
                   "kind": "text",
                   "text": "The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To line of the message. The collection is limited to a maximum of 100 members."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The to property returns a Recipients object that provides methods to get or update the recipients on the To line of the message."
                 },
                 {
                   "kind": "paragraph"

@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.ItemRead
+    summary: >-
+      Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
+      this as a mode of Office.context.mailbox.item. Refer to the \[Object Model pages for more
+      information\](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation).
     name: Office.ItemRead
     fullName: outlook.Office.ItemRead
     langs:
@@ -545,12 +549,6 @@ items:
 
       The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading
       prefixes such as RE: and FW:.
-
-
-      \*Compose mode\*
-
-
-      The subject property returns a Subject object that provides methods to get and set the subject.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]

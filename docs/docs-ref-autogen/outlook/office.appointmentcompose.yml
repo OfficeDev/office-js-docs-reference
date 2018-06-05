@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.AppointmentCompose
+    summary: >-
+      Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
+      this as a mode of Office.context.mailbox.item. Refer to the \[Object Model pages for more
+      information\](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation).
     name: Office.AppointmentCompose
     fullName: outlook.Office.AppointmentCompose
     langs:
@@ -22,12 +26,6 @@ items:
 
       The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the
       convertToLocalClientTime method to convert the end property value to the client's local date and time.
-
-
-      \*Read mode\*
-
-
-      The end property returns a Date object.
 
 
       \*Compose mode\*
@@ -60,12 +58,6 @@ items:
       Gets or sets the location of an appointment.
 
 
-      \*Read mode\*
-
-
-      The location property returns a string that contains the location of the appointment.
-
-
       \*Compose mode\*
 
 
@@ -94,13 +86,6 @@ items:
       of the current item.
 
 
-      \*Read mode\*
-
-
-      The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional
-      attendee to the meeting.
-
-
       \*Compose mode\*
 
 
@@ -127,13 +112,6 @@ items:
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depends on the mode
       of the current item.
-
-
-      \*Read mode\*
-
-
-      The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required
-      attendee to the meeting.
 
 
       \*Compose mode\*
@@ -165,12 +143,6 @@ items:
 
       The start property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the
       convertToLocalClientTime method to convert the value to the client's local date and time.
-
-
-      \*Read mode\*
-
-
-      The start property returns a Date object.
 
 
       \*Compose mode\*
