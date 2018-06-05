@@ -11,7 +11,7 @@
     "missingReleaseTags": "allow"
   },
   "project": {
-    "entryPointSourceFile": "Outlook_1.6.d.ts"
+    "entryPointSourceFile": "Outlook_1_6.d.ts"
   },
   "apiReviewFile": {
     "enabled": false

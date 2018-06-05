@@ -18,5 +18,5 @@
       "dom"
     ]
   },
-  "include": [ "Outlook_1.6.d.ts" ]
+  "include": [ "Outlook_1_6.d.ts" ]
 }

@@ -32,7 +32,7 @@ cd ..\api-extractor-inputs-outlook
 
 call ..\node_modules\.bin\api-extractor run
 
-cd ..\api-extractor-inputs-outlook-legacy\Outlook_1.6
+cd ..\api-extractor-inputs-outlook-legacy\Outlook_1_6
 
 call ..\..\node_modules\.bin\api-extractor run
 

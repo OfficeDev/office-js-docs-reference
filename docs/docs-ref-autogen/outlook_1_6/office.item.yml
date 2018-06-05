@@ -1,0 +1,173 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_6.Office.Item
+    summary: >-
+      The item namespace is used to access the currently selected message, meeting request, or appointment. You can
+      determine the type of the item by using the itemType property.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: Restricted
+
+      Applicable Outlook mode: Compose or read
+    name: Office.Item
+    fullName: Outlook_1_6.Office.Item
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1_6
+    children:
+      - Outlook_1_6.Office.Item.body
+      - Outlook_1_6.Office.Item.dateTimeCreated
+      - Outlook_1_6.Office.Item.dateTimeModifed
+      - Outlook_1_6.Office.Item.itemType
+      - Outlook_1_6.Office.Item.loadCustomPropertiesAsync
+      - Outlook_1_6.Office.Item.notificationMessages
+  - uid: Outlook_1_6.Office.Item.body
+    summary: |-
+      Gets an object that provides methods for manipulating the body of an item.
+
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: body
+    fullName: Outlook_1_6.Office.Item.body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body: Body;'
+      return:
+        type:
+          - Body
+  - uid: Outlook_1_6.Office.Item.dateTimeCreated
+    summary: |-
+      Gets the date and time that an item was created. Read mode only.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
+    name: dateTimeCreated
+    fullName: Outlook_1_6.Office.Item.dateTimeCreated
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dateTimeCreated: Date;'
+      return:
+        type:
+          - Date
+  - uid: Outlook_1_6.Office.Item.dateTimeModifed
+    summary: |-
+      Gets the date and time that an item was last modified. Read mode only.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Note: This member is not supported in Outlook for iOS or Outlook for Android.
+
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
+    name: dateTimeModifed
+    fullName: Outlook_1_6.Office.Item.dateTimeModifed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dateTimeModifed: Date;'
+      return:
+        type:
+          - Date
+  - uid: Outlook_1_6.Office.Item.itemType
+    summary: >-
+      Gets the type of item that an instance represents.
+
+
+      The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance
+      is a message or an appointment.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: itemType
+    fullName: Outlook_1_6.Office.Item.itemType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemType: Office.MailboxEnums.ItemType;'
+      return:
+        type:
+          - Office.MailboxEnums.ItemType
+  - uid: Outlook_1_6.Office.Item.loadCustomPropertiesAsync
+    summary: >-
+      Asynchronously loads custom properties for this add-in on the selected item.
+
+
+      Custom properties are stored as key/value pairs on a per-app, per-item basis. This method returns a
+      CustomProperties object in the callback, which provides methods to access the custom properties specific to the
+      current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used
+      as secure storage.
+
+
+      The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can
+      be used to get, set, and remove custom properties from the item and save changes to the custom property set back
+      to the server.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: 'loadCustomPropertiesAsync(callback, userContext)'
+    fullName: Outlook_1_6.Office.Item.loadCustomPropertiesAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'loadCustomPropertiesAsync(callback: (result: AsyncResult) => void, userContext?: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type AsyncResult.
+          type:
+            - '(result: AsyncResult) => void'
+        - id: userContext
+          description: >-
+            Optional. Developers can provide any object they wish to access in the callback function. This object can be
+            accessed by the asyncResult.asyncContext property in the callback function.
+          type:
+            - any
+  - uid: Outlook_1_6.Office.Item.notificationMessages
+    summary: |-
+      Gets the notification messages for an item.
+
+      \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: notificationMessages
+    fullName: Outlook_1_6.Office.Item.notificationMessages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'notificationMessages: NotificationMessages;'
+      return:
+        type:
+          - NotificationMessages
