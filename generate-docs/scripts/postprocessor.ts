@@ -88,6 +88,8 @@ tryCatch(async () => {
         "href": origToc.items[0].href
     }];
     newToc.items[0].items = [] as any;
+    let outlookRoot = {"name": "Outlook", "uid": "OutlookRoot", "items": [] as any};
+    newToc.items[0].items.push(outlookRoot);
 
     // process all packages except 'office' (Shared API)
     origToc.items.forEach((rootItem, rootIndex) => {
@@ -98,11 +100,20 @@ tryCatch(async () => {
                     packageItem.items.forEach((namespaceItem, namespaceIndex) => {
                         membersToMove.items = namespaceItem.items;
                     });
-                    newToc.items[0].items.push({
-                        "name": packageName,
-                        "uid": packageItem.uid,
-                        "items": membersToMove.items
-                    });
+                    if (packageName.toLocaleLowerCase().includes('outlook')) {
+                        outlookRoot.items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items": membersToMove.items
+                        });
+                    }
+                    else {
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items": membersToMove.items
+                        });
+                    }
                 } else {
                     newToc.items[0].items.push({
                         "name": packageName,
