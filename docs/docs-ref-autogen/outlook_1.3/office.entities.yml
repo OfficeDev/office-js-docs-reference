@@ -1,0 +1,137 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1.3.Office.Entities
+    summary: >-
+      Represents a collection of entities found in an email message or appointment. Read mode only.
+
+
+      The Entities object is a container for the entity arrays returned by the getEntities and getEntitiesByType methods
+      when the item (either an email message or an appointment) contains one or more entities that have been found by
+      the server. You can use these entities in your code to provide additional context information to the viewer, such
+      as a map to an address found in the item, or to open a dialer for a phone number found in the item.
+
+
+      If no entities of the type specified in the property are present in the item, the property associated with that
+      entity is null. For example, if a message contains a street address and a phone number, the addresses property and
+      phoneNumbers property would contain information, and the other properties would be null.
+
+
+      To be recognized as an address, the string must contain a United States postal address that has at least a subset
+      of the elements of a street number, street name, city, state, and zip code.
+
+
+      To be recognized as a phone number, the string must contain a North American phone number format.
+
+
+      Entity recognition relies on natural language recognition that is based on machine learning of large amounts of
+      data. The recognition of an entity is non-deterministic and success sometimes relies on the particular context in
+      the item.
+
+
+      When the property arrays are returned by the getEntitiesByType method, only the property for the specified entity
+      contains data; all other properties are null.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
+    name: 3.Office.Entities
+    fullName: Outlook_1.3.Office.Entities
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1.3
+    children:
+      - Outlook_1.3.Office.Entities.addresses
+      - Outlook_1.3.Office.Entities.contacts
+      - Outlook_1.3.Office.Entities.emailAddresses
+      - Outlook_1.3.Office.Entities.meetingSuggestions
+      - Outlook_1.3.Office.Entities.phoneNumbers
+      - Outlook_1.3.Office.Entities.taskSuggestions
+      - Outlook_1.3.Office.Entities.urls
+  - uid: Outlook_1.3.Office.Entities.addresses
+    summary: Gets the physical addresses (street or mailing addresses) found in an email message or appointment.
+    name: addresses
+    fullName: Outlook_1.3.Office.Entities.addresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addresses: string[];'
+      return:
+        type:
+          - 'string[]'
+  - uid: Outlook_1.3.Office.Entities.contacts
+    summary: Gets the contacts found in an email address or appointment.
+    name: contacts
+    fullName: Outlook_1.3.Office.Entities.contacts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contacts: Contact[];'
+      return:
+        type:
+          - 'Contact[]'
+  - uid: Outlook_1.3.Office.Entities.emailAddresses
+    summary: Gets the email addresses found in an email message or appointment.
+    name: emailAddresses
+    fullName: Outlook_1.3.Office.Entities.emailAddresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddresses: string[];'
+      return:
+        type:
+          - 'string[]'
+  - uid: Outlook_1.3.Office.Entities.meetingSuggestions
+    summary: Gets the meeting suggestions found in an email message.
+    name: meetingSuggestions
+    fullName: Outlook_1.3.Office.Entities.meetingSuggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'meetingSuggestions: MeetingSuggestion[];'
+      return:
+        type:
+          - 'MeetingSuggestion[]'
+  - uid: Outlook_1.3.Office.Entities.phoneNumbers
+    summary: Gets the phone numbers found in an email message or appointment.
+    name: phoneNumbers
+    fullName: Outlook_1.3.Office.Entities.phoneNumbers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'phoneNumbers: PhoneNumber[];'
+      return:
+        type:
+          - 'PhoneNumber[]'
+  - uid: Outlook_1.3.Office.Entities.taskSuggestions
+    summary: Gets the task suggestions found in an email message or appointment.
+    name: taskSuggestions
+    fullName: Outlook_1.3.Office.Entities.taskSuggestions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'taskSuggestions: string[];'
+      return:
+        type:
+          - 'string[]'
+  - uid: Outlook_1.3.Office.Entities.urls
+    summary: Gets the Internet URLs present in an email message or appointment.
+    name: urls
+    fullName: Outlook_1.3.Office.Entities.urls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'urls: string[];'
+      return:
+        type:
+          - 'string[]'

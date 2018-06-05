@@ -1,0 +1,102 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1.5.Office.Time
+    summary: |-
+      The Time object is returned as the start or end property of an appointment in compose mode.
+
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose
+    name: 5.Office.Time
+    fullName: Outlook_1.5.Office.Time
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1.5
+    children:
+      - Outlook_1.5.Office.Time.getAsync
+      - Outlook_1.5.Office.Time.setAsync
+  - uid: Outlook_1.5.Office.Time.getAsync
+    summary: >-
+      Gets the start or end time of an appointment.
+
+
+      The date and time is provided as a Date object in the asyncResult.value property. The value is in Coordinated
+      Universal Time (UTC). You can convert the UTC time to the local client time by using the convertToLocalClientTime
+      method.
+
+
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose
+    name: getAsync(callback)
+    fullName: Outlook_1.5.Office.Time.getAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(callback: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type AsyncResult.
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: Outlook_1.5.Office.Time.setAsync
+    summary: >-
+      Sets the start or end time of an appointment.
+
+
+      If the setAsync method is called on the start property, the end property will be adjusted to maintain the duration
+      of the appointment as previously set. If the setAsync method is called on the end property, the duration of the
+      appointment will be extended to the new end time.
+
+
+      The time must be in UTC; you can get the correct UTC time by using the convertToUtcClientTime method.
+
+
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadWriteItem
+
+      Applicable Outlook mode: Compose
+
+      Errors: InvalidEndTime - The appointment end time is before the appointment start time.
+    name: 'setAsync(dateTime, options, callback)'
+    fullName: Outlook_1.5.Office.Time.setAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(dateTime: Date, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: dateTime
+          description: A date-time object in Coordinated Universal Time (UTC).
+          type:
+            - Date
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type AsyncResult. If setting the date and time fails, the asyncResult.error property will contain an
+            error code.
+          type:
+            - '(result: AsyncResult) => void'

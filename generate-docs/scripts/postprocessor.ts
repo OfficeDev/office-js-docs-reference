@@ -88,8 +88,10 @@ tryCatch(async () => {
         "href": origToc.items[0].href
     }];
     newToc.items[0].items = [] as any;
+
+    // create a root for all the Outlook versions
     let outlookRoot = {"name": "Outlook", "uid": "OutlookRoot", "items": [] as any};
-    newToc.items[0].items.push(outlookRoot);
+    let rootPushed = false;
 
     // process all packages except 'office' (Shared API)
     origToc.items.forEach((rootItem, rootIndex) => {
@@ -100,12 +102,26 @@ tryCatch(async () => {
                     packageItem.items.forEach((namespaceItem, namespaceIndex) => {
                         membersToMove.items = namespaceItem.items;
                     });
+                    // if outlook, put in subfolders for versioning
                     if (packageName.toLocaleLowerCase().includes('outlook')) {
+                        if (!rootPushed) { // add root in alphabetical order
+                            newToc.items[0].items.push(outlookRoot);
+                            rootPushed = true;
+                        }
+                        if (packageName === 'Outlook') { // The version without a suffix is the preview version
+                            outlookRoot.items.push({
+                                "name": packageName + " - Preview",
+                                "uid": packageItem.uid,
+                                "items": membersToMove.items
+                            });
+                        }
+                        else {
                         outlookRoot.items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
                             "items": membersToMove.items
                         });
+                    }
                     }
                     else {
                         newToc.items[0].items.push({
@@ -124,6 +140,10 @@ tryCatch(async () => {
             }
         });
     });
+
+    // Get the logical order: Preview, 1.6, 1.5, etc.
+    outlookRoot.items.reverse();
+    outlookRoot.items.unshift(outlookRoot.items.pop());
 
     // process 'office' (Shared API) package
     origToc.items.forEach((rootItem, rootIndex) => {

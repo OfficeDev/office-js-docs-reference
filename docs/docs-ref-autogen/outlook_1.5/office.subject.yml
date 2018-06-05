@@ -1,0 +1,95 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1.5.Office.Subject
+    summary: |-
+      Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
+
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose
+    name: 5.Office.Subject
+    fullName: Outlook_1.5.Office.Subject
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1.5
+    children:
+      - Outlook_1.5.Office.Subject.getAsync
+      - Outlook_1.5.Office.Subject.setAsync
+  - uid: Outlook_1.5.Office.Subject.getAsync
+    summary: >-
+      Gets the subject of an appointment or message. The getAsync method starts an asynchronous call to the Exchange
+      server to get the subject of an appointment or message.
+
+
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose
+    name: getAsync(callback)
+    fullName: Outlook_1.5.Office.Subject.getAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(callback: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type AsyncResult.
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: Outlook_1.5.Office.Subject.setAsync
+    summary: >-
+      Sets the subject of an appointment or message.
+
+
+      The setAsync method starts an asynchronous call to the Exchange server to set the subject of an appointment or
+      message. Setting the subject overwrites the current subject, but leaves any prefixes, such as "Fwd:" or "Re:" in
+      place.
+
+
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose
+
+      Errors: DataExceedsMaximumSize - The subject parameter is longer than 255 characters.
+    name: 'setAsync(subject, options, callback)'
+    fullName: Outlook_1.5.Office.Subject.setAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setAsync(subject: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: subject
+          description: The subject of the appointment or message. The string is limited to 255 characters.
+          type:
+            - string
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type AsyncResult. If setting the subject fails, the asyncResult.error property will contain an error
+            code.
+          type:
+            - '(result: AsyncResult) => void'

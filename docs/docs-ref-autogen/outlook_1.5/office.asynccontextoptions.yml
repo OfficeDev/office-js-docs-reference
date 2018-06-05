@@ -1,0 +1,22 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1.5.Office.AsyncContextOptions
+    name: 5.Office.AsyncContextOptions
+    fullName: Outlook_1.5.Office.AsyncContextOptions
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1.5
+    children:
+      - Outlook_1.5.Office.AsyncContextOptions.asyncContext
+  - uid: Outlook_1.5.Office.AsyncContextOptions.asyncContext
+    name: asyncContext
+    fullName: Outlook_1.5.Office.AsyncContextOptions.asyncContext
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'asyncContext?: any;'
+      return:
+        type:
+          - any

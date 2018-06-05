@@ -1,0 +1,97 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1.1.Office.NotificationMessageDetails
+    summary: |-
+      An array of NotificationMessageDetails objects are returned by the NotificationMessages.getAllAsync method.
+
+      \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: 1.Office.NotificationMessageDetails
+    fullName: Outlook_1.1.Office.NotificationMessageDetails
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1.1
+    children:
+      - Outlook_1.1.Office.NotificationMessageDetails.icon
+      - Outlook_1.1.Office.NotificationMessageDetails.key
+      - Outlook_1.1.Office.NotificationMessageDetails.message
+      - Outlook_1.1.Office.NotificationMessageDetails.persistent
+      - Outlook_1.1.Office.NotificationMessageDetails.type
+  - uid: Outlook_1.1.Office.NotificationMessageDetails.icon
+    summary: >-
+      A reference to an icon that is defined in the manifest in the Resources section. It appears in the infobar area.
+      It is only applicable if the type is InformationalMessage. Specifying this parameter for an unsupported type
+      results in an exception.
+    name: icon
+    fullName: Outlook_1.1.Office.NotificationMessageDetails.icon
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'icon?: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1.1.Office.NotificationMessageDetails.key
+    summary: The identifier for the notification message.
+    name: key
+    fullName: Outlook_1.1.Office.NotificationMessageDetails.key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key?: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1.1.Office.NotificationMessageDetails.message
+    summary: >-
+      The text of the notification message. Maximum length is 150 characters. If the developer passes in a longer
+      string, an ArgumentOutOfRange exception is thrown.
+    name: message
+    fullName: Outlook_1.1.Office.NotificationMessageDetails.message
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'message: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1.1.Office.NotificationMessageDetails.persistent
+    summary: >-
+      Only applicable when type is InformationalMessage. If true, the message remains until removed by this add-in or
+      dismissed by the user. If false, it is removed when the user navigates to a different item. For error
+      notifications, the message persists until the user sees it once. Specifying this parameter for an unsupported type
+      throws an exception.
+    name: persistent
+    fullName: Outlook_1.1.Office.NotificationMessageDetails.persistent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'persistent?: Boolean;'
+      return:
+        type:
+          - Boolean
+  - uid: Outlook_1.1.Office.NotificationMessageDetails.type
+    summary: >-
+      Specifies the Office.MailboxEnums.ItemNotificationMessageType of message. If type is ProgressIndicator or
+      ErrorMessage, an icon is automatically supplied and the message is not persistent. Therefore the icon and
+      persistent properties are not valid for these types of messages. Including them will result in an
+      ArgumentException. If type is ProgressIndicator, the developer should remove or replace the progress indicator
+      when the action is complete.
+    name: type
+    fullName: Outlook_1.1.Office.NotificationMessageDetails.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: Office.MailboxEnums.ItemNotificationMessageType;'
+      return:
+        type:
+          - Office.MailboxEnums.ItemNotificationMessageType

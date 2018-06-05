@@ -1,0 +1,11 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1.5.Office.Appointment
+    name: 5.Office.Appointment
+    fullName: Outlook_1.5.Office.Appointment
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Item
+    package: Outlook_1.5

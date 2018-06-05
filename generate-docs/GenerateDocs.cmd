@@ -36,6 +36,26 @@ cd ..\api-extractor-inputs-outlook-legacy\Outlook_1.6
 
 call ..\..\node_modules\.bin\api-extractor run
 
+cd ..\Outlook_1.5
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..\Outlook_1.4
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..\Outlook_1.3
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..\Outlook_1.2
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..\Outlook_1.1
+
+call ..\..\node_modules\.bin\api-extractor run
+
 cd ..\..
 
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json --office

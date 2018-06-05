@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1.1.Office.MessageCompose
+    name: 1.Office.MessageCompose
+    fullName: Outlook_1.1.Office.MessageCompose
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Message
+    package: Outlook_1.1
+    children:
+      - Outlook_1.1.Office.MessageCompose.bcc
+      - Outlook_1.1.Office.MessageCompose.cc
+      - Outlook_1.1.Office.MessageCompose.to
+  - uid: Outlook_1.1.Office.MessageCompose.bcc
+    summary: >-
+      Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a
+      message. Compose mode only.
+
+
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose
+    name: bcc
+    fullName: Outlook_1.1.Office.MessageCompose.bcc
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bcc: Recipients;'
+      return:
+        type:
+          - Recipients
+  - uid: Outlook_1.1.Office.MessageCompose.cc
+    summary: >-
+      Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
+      the mode of the current item.
+
+
+      \*Read mode\*
+
+
+      The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc
+      line of the message. The collection is limited to a maximum of 100 members.
+
+
+      \*Compose mode\*
+
+
+      The cc property returns a Recipients object that provides methods to get or update the recipients on the Cc line
+      of the message.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: cc
+    fullName: Outlook_1.1.Office.MessageCompose.cc
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cc: Recipients;'
+      return:
+        type:
+          - Recipients
+  - uid: Outlook_1.1.Office.MessageCompose.to
+    summary: >-
+      Provides access to the recipients on the To line of a message. The type of object and level of access depends on
+      the mode of the current item.
+
+
+      \*Read mode\*
+
+
+      The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To
+      line of the message. The collection is limited to a maximum of 100 members.
+
+
+      \*Compose mode\*
+
+
+      The to property returns a Recipients object that provides methods to get or update the recipients on the To line
+      of the message.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: to
+    fullName: Outlook_1.1.Office.MessageCompose.to
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'to: Recipients;'
+      return:
+        type:
+          - Recipients

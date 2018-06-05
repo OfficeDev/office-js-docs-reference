@@ -1,0 +1,107 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1.2.Office.UserProfile
+    summary: '\[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]'
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: 2.Office.UserProfile
+    fullName: Outlook_1.2.Office.UserProfile
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1.2
+    children:
+      - Outlook_1.2.Office.UserProfile.accountType
+      - Outlook_1.2.Office.UserProfile.displayName
+      - Outlook_1.2.Office.UserProfile.emailAddress
+      - Outlook_1.2.Office.UserProfile.timeZone
+  - uid: Outlook_1.2.Office.UserProfile.accountType
+    summary: >-
+      Gets the account type of the user associated with the mailbox. The possible values are listed in the following
+      table.
+
+
+      Note: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
+
+
+      \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      \|Value \|Description \| \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\-\-\---\| \|enterprise \|The mailbox is on an
+      on-premises Exchange server.\| \|gmail \|The mailbox is associated with a Gmail account.\| \|office365 \|The
+      mailbox is associated with an Office 365 work or school account.\| \|outlookCom \|The mailbox is associated with a
+      personal Outlook.com account.\|
+
+
+      Minimum permission level: ReadItem
+
+
+      Applicable Outlook mode: Compose or read
+    name: accountType
+    fullName: Outlook_1.2.Office.UserProfile.accountType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'accountType: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1.2.Office.UserProfile.displayName
+    summary: |-
+      Gets the user's display name.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: displayName
+    fullName: Outlook_1.2.Office.UserProfile.displayName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayName: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1.2.Office.UserProfile.emailAddress
+    summary: |-
+      Gets the user's display name.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: emailAddress
+    fullName: Outlook_1.2.Office.UserProfile.emailAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddress: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1.2.Office.UserProfile.timeZone
+    summary: |-
+      Gets the user's SMTP email address.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: timeZone
+    fullName: Outlook_1.2.Office.UserProfile.timeZone
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'timeZone: string;'
+      return:
+        type:
+          - string

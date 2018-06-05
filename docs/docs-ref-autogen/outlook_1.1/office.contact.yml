@@ -1,0 +1,101 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1.1.Office.Contact
+    summary: >-
+      Represents a contact stored on the server. Read mode only.
+
+
+      The list of contacts associated with an email message or appointment is returned in the contacts property of the
+      Entities object that is returned by the getEntities or getEntitiesByType method of the active item.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: Restricted
+
+      Applicable Outlook mode: Read
+    name: 1.Office.Contact
+    fullName: Outlook_1.1.Office.Contact
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1.1
+    children:
+      - Outlook_1.1.Office.Contact.addresses
+      - Outlook_1.1.Office.Contact.businessName
+      - Outlook_1.1.Office.Contact.emailAddresses
+      - Outlook_1.1.Office.Contact.personName
+      - Outlook_1.1.Office.Contact.phoneNumbers
+      - Outlook_1.1.Office.Contact.urls
+  - uid: Outlook_1.1.Office.Contact.addresses
+    summary: An array of strings containing the mailing and street addresses associated with the contact. Nullable.
+    name: addresses
+    fullName: Outlook_1.1.Office.Contact.addresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addresses: Array<string>;'
+      return:
+        type:
+          - Array<string>
+  - uid: Outlook_1.1.Office.Contact.businessName
+    summary: A string containing the name of the business associated with the contact. Nullable.
+    name: businessName
+    fullName: Outlook_1.1.Office.Contact.businessName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'businessName: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1.1.Office.Contact.emailAddresses
+    summary: 'An array of strings containing the SMTP email addresses associated with the contact. Nullable,'
+    name: emailAddresses
+    fullName: Outlook_1.1.Office.Contact.emailAddresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddresses: Array<string>;'
+      return:
+        type:
+          - Array<string>
+  - uid: Outlook_1.1.Office.Contact.personName
+    summary: A string containing the name of the person associated with the contact. Nullable.
+    name: personName
+    fullName: Outlook_1.1.Office.Contact.personName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'personName: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1.1.Office.Contact.phoneNumbers
+    summary: An array containing a PhoneNumber object for each phone number associated with the contact. Nullable.
+    name: phoneNumbers
+    fullName: Outlook_1.1.Office.Contact.phoneNumbers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'phoneNumbers: Array<PhoneNumber>;'
+      return:
+        type:
+          - Array<PhoneNumber>
+  - uid: Outlook_1.1.Office.Contact.urls
+    summary: An array of strings containing the Internet URLs associated with the contact. Nullable.
+    name: urls
+    fullName: Outlook_1.1.Office.Contact.urls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'urls: Array<string>;'
+      return:
+        type:
+          - Array<string>

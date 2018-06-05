@@ -1,0 +1,139 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1.5
+    name: Outlook_1.5
+    fullName: Outlook_1.5
+    langs:
+      - typeScript
+    type: package
+    children:
+      - Outlook_1.5.Office.Appointment
+      - Outlook_1.5.Office.AppointmentCompose
+      - Outlook_1.5.Office.AppointmentForm
+      - Outlook_1.5.Office.AppointmentRead
+      - Outlook_1.5.Office.AsyncContextOptions
+      - Outlook_1.5.Office.AttachmentDetails
+      - Outlook_1.5.Office.Body
+      - Outlook_1.5.Office.CoercionTypeOptions
+      - Outlook_1.5.Office.Contact
+      - Outlook_1.5.Office.CustomProperties
+      - Outlook_1.5.Office.Diagnostics
+      - Outlook_1.5.Office.EmailAddressDetails
+      - Outlook_1.5.Office.EmailUser
+      - Outlook_1.5.Office.Entities
+      - Outlook_1.5.Office.Item
+      - Outlook_1.5.Office.ItemCompose
+      - Outlook_1.5.Office.ItemRead
+      - Outlook_1.5.Office.LocalClientTime
+      - Outlook_1.5.Office.Location
+      - Outlook_1.5.Office.Mailbox
+      - Outlook_1.5.Office.MailboxEnums.AttachmentType
+      - Outlook_1.5.Office.MailboxEnums.EntityType
+      - Outlook_1.5.Office.MailboxEnums.ItemNotificationMessageType
+      - Outlook_1.5.Office.MailboxEnums.ItemType
+      - Outlook_1.5.Office.MailboxEnums.RecipientType
+      - Outlook_1.5.Office.MailboxEnums.ResponseType
+      - Outlook_1.5.Office.MailboxEnums.RestVersion
+      - Outlook_1.5.Office.MeetingSuggestion
+      - Outlook_1.5.Office.Message
+      - Outlook_1.5.Office.MessageCompose
+      - Outlook_1.5.Office.MessageRead
+      - Outlook_1.5.Office.NotificationMessageDetails
+      - Outlook_1.5.Office.NotificationMessages
+      - Outlook_1.5.Office.PhoneNumber
+      - Outlook_1.5.Office.Recipients
+      - Outlook_1.5.Office.ReplyFormAttachment
+      - Outlook_1.5.Office.ReplyFormData
+      - Outlook_1.5.Office.RoamingSettings
+      - Outlook_1.5.Office.SourceProperty
+      - Outlook_1.5.Office.Subject
+      - Outlook_1.5.Office.TaskSuggestion
+      - Outlook_1.5.Office.Time
+      - Outlook_1.5.Office.UserProfile
+references:
+  - uid: Outlook_1.5.Office.Appointment
+    name: 5.Office.Appointment
+  - uid: Outlook_1.5.Office.AppointmentCompose
+    name: 5.Office.AppointmentCompose
+  - uid: Outlook_1.5.Office.AppointmentForm
+    name: 5.Office.AppointmentForm
+  - uid: Outlook_1.5.Office.AppointmentRead
+    name: 5.Office.AppointmentRead
+  - uid: Outlook_1.5.Office.AsyncContextOptions
+    name: 5.Office.AsyncContextOptions
+  - uid: Outlook_1.5.Office.AttachmentDetails
+    name: 5.Office.AttachmentDetails
+  - uid: Outlook_1.5.Office.Body
+    name: 5.Office.Body
+  - uid: Outlook_1.5.Office.CoercionTypeOptions
+    name: 5.Office.CoercionTypeOptions
+  - uid: Outlook_1.5.Office.Contact
+    name: 5.Office.Contact
+  - uid: Outlook_1.5.Office.CustomProperties
+    name: 5.Office.CustomProperties
+  - uid: Outlook_1.5.Office.Diagnostics
+    name: 5.Office.Diagnostics
+  - uid: Outlook_1.5.Office.EmailAddressDetails
+    name: 5.Office.EmailAddressDetails
+  - uid: Outlook_1.5.Office.EmailUser
+    name: 5.Office.EmailUser
+  - uid: Outlook_1.5.Office.Entities
+    name: 5.Office.Entities
+  - uid: Outlook_1.5.Office.Item
+    name: 5.Office.Item
+  - uid: Outlook_1.5.Office.ItemCompose
+    name: 5.Office.ItemCompose
+  - uid: Outlook_1.5.Office.ItemRead
+    name: 5.Office.ItemRead
+  - uid: Outlook_1.5.Office.LocalClientTime
+    name: 5.Office.LocalClientTime
+  - uid: Outlook_1.5.Office.Location
+    name: 5.Office.Location
+  - uid: Outlook_1.5.Office.Mailbox
+    name: 5.Office.Mailbox
+  - uid: Outlook_1.5.Office.MailboxEnums.AttachmentType
+    name: 5.Office.MailboxEnums.AttachmentType
+  - uid: Outlook_1.5.Office.MailboxEnums.EntityType
+    name: 5.Office.MailboxEnums.EntityType
+  - uid: Outlook_1.5.Office.MailboxEnums.ItemNotificationMessageType
+    name: 5.Office.MailboxEnums.ItemNotificationMessageType
+  - uid: Outlook_1.5.Office.MailboxEnums.ItemType
+    name: 5.Office.MailboxEnums.ItemType
+  - uid: Outlook_1.5.Office.MailboxEnums.RecipientType
+    name: 5.Office.MailboxEnums.RecipientType
+  - uid: Outlook_1.5.Office.MailboxEnums.ResponseType
+    name: 5.Office.MailboxEnums.ResponseType
+  - uid: Outlook_1.5.Office.MailboxEnums.RestVersion
+    name: 5.Office.MailboxEnums.RestVersion
+  - uid: Outlook_1.5.Office.MeetingSuggestion
+    name: 5.Office.MeetingSuggestion
+  - uid: Outlook_1.5.Office.Message
+    name: 5.Office.Message
+  - uid: Outlook_1.5.Office.MessageCompose
+    name: 5.Office.MessageCompose
+  - uid: Outlook_1.5.Office.MessageRead
+    name: 5.Office.MessageRead
+  - uid: Outlook_1.5.Office.NotificationMessageDetails
+    name: 5.Office.NotificationMessageDetails
+  - uid: Outlook_1.5.Office.NotificationMessages
+    name: 5.Office.NotificationMessages
+  - uid: Outlook_1.5.Office.PhoneNumber
+    name: 5.Office.PhoneNumber
+  - uid: Outlook_1.5.Office.Recipients
+    name: 5.Office.Recipients
+  - uid: Outlook_1.5.Office.ReplyFormAttachment
+    name: 5.Office.ReplyFormAttachment
+  - uid: Outlook_1.5.Office.ReplyFormData
+    name: 5.Office.ReplyFormData
+  - uid: Outlook_1.5.Office.RoamingSettings
+    name: 5.Office.RoamingSettings
+  - uid: Outlook_1.5.Office.SourceProperty
+    name: 5.Office.SourceProperty
+  - uid: Outlook_1.5.Office.Subject
+    name: 5.Office.Subject
+  - uid: Outlook_1.5.Office.TaskSuggestion
+    name: 5.Office.TaskSuggestion
+  - uid: Outlook_1.5.Office.Time
+    name: 5.Office.Time
+  - uid: Outlook_1.5.Office.UserProfile
+    name: 5.Office.UserProfile

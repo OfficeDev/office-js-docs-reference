@@ -1,0 +1,163 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1.4.Office.MessageRead
+    name: 4.Office.MessageRead
+    fullName: Outlook_1.4.Office.MessageRead
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Message
+    package: Outlook_1.4
+    children:
+      - Outlook_1.4.Office.MessageRead.cc
+      - Outlook_1.4.Office.MessageRead.from
+      - Outlook_1.4.Office.MessageRead.internetMessageId
+      - Outlook_1.4.Office.MessageRead.sender
+      - Outlook_1.4.Office.MessageRead.to
+  - uid: Outlook_1.4.Office.MessageRead.cc
+    summary: >-
+      Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
+      the mode of the current item.
+
+
+      \*Read mode\*
+
+
+      The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc
+      line of the message. The collection is limited to a maximum of 100 members.
+
+
+      \*Compose mode\*
+
+
+      The cc property returns a Recipients object that provides methods to get or update the recipients on the Cc line
+      of the message.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: cc
+    fullName: Outlook_1.4.Office.MessageRead.cc
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cc: EmailAddressDetails[];'
+      return:
+        type:
+          - 'EmailAddressDetails[]'
+  - uid: Outlook_1.4.Office.MessageRead.from
+    summary: >-
+      Gets the email address of the sender of a message.
+
+
+      The from and sender properties represent the same person unless the message is sent by a delegate. In that case,
+      the from property represents the delegator, and the sender property represents the delegate.
+
+
+      Note: The recipientType property of the EmailAddressDetails object in the from property is undefined.
+
+
+      The from property returns an EmailAddressDetails object.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
+    name: from
+    fullName: Outlook_1.4.Office.MessageRead.from
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'from: EmailAddressDetails;'
+      return:
+        type:
+          - EmailAddressDetails
+  - uid: Outlook_1.4.Office.MessageRead.internetMessageId
+    summary: |-
+      Gets the Internet message identifier for an email message. Read mode only.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
+    name: internetMessageId
+    fullName: Outlook_1.4.Office.MessageRead.internetMessageId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'internetMessageId: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1.4.Office.MessageRead.sender
+    summary: >-
+      Gets the email address of the sender of an email message. Read mode only.
+
+
+      The from and sender properties represent the same person unless the message is sent by a delegate. In that case,
+      the from property represents the delegator, and the sender property represents the delegate.
+
+
+      Note: The recipientType property of the EmailAddressDetails object in the sender property is undefined.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
+    name: sender
+    fullName: Outlook_1.4.Office.MessageRead.sender
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sender: EmailAddressDetails;'
+      return:
+        type:
+          - EmailAddressDetails
+  - uid: Outlook_1.4.Office.MessageRead.to
+    summary: >-
+      Provides access to the recipients on the To line of a message. The type of object and level of access depends on
+      the mode of the current item.
+
+
+      \*Read mode\*
+
+
+      The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To
+      line of the message. The collection is limited to a maximum of 100 members.
+
+
+      \*Compose mode\*
+
+
+      The to property returns a Recipients object that provides methods to get or update the recipients on the To line
+      of the message.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: to
+    fullName: Outlook_1.4.Office.MessageRead.to
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'to: EmailAddressDetails[];'
+      return:
+        type:
+          - 'EmailAddressDetails[]'
