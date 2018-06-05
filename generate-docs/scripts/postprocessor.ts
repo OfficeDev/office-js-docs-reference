@@ -116,12 +116,13 @@ tryCatch(async () => {
                             });
                         }
                         else {
-                        outlookRoot.items.push({
-                            "name": packageName,
-                            "uid": packageItem.uid,
-                            "items": membersToMove.items
-                        });
-                    }
+                            let packageNameVersionFormated = packageName.replace('_1_', ' 1.');
+                            outlookRoot.items.push({
+                                "name": packageNameVersionFormated,
+                                "uid": packageItem.uid,
+                                "items": membersToMove.items
+                            });
+                        }
                     }
                     else {
                         newToc.items[0].items.push({

@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_2.Office.MailboxEnums.RecipientType
+    summary: |-
+      Specifies the type of recipient for an appointment.
+
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: 'Applicable Outlook mode: Compose or read'
+    name: Office.MailboxEnums.RecipientType
+    fullName: Outlook_1_2.Office.MailboxEnums.RecipientType
+    langs:
+      - typeScript
+    type: enum
+    package: Outlook_1_2
+    children:
+      - Outlook_1_2.Office.MailboxEnums.RecipientType.DistributionList
+      - Outlook_1_2.Office.MailboxEnums.RecipientType.ExternalUser
+      - Outlook_1_2.Office.MailboxEnums.RecipientType.Other
+      - Outlook_1_2.Office.MailboxEnums.RecipientType.User
+  - uid: Outlook_1_2.Office.MailboxEnums.RecipientType.DistributionList
+    summary: Specifies that the recipient is a distribution list containing a list of email addresses.
+    name: DistributionList
+    fullName: Outlook_1_2.Office.MailboxEnums.RecipientType.DistributionList
+    langs:
+      - typeScript
+    type: field
+  - uid: Outlook_1_2.Office.MailboxEnums.RecipientType.ExternalUser
+    summary: Specifies that the recipient is an SMTP email address that is not on the Exchange server.
+    name: ExternalUser
+    fullName: Outlook_1_2.Office.MailboxEnums.RecipientType.ExternalUser
+    langs:
+      - typeScript
+    type: field
+  - uid: Outlook_1_2.Office.MailboxEnums.RecipientType.Other
+    summary: Specifies that the recipient is not one of the other recipient types.
+    name: Other
+    fullName: Outlook_1_2.Office.MailboxEnums.RecipientType.Other
+    langs:
+      - typeScript
+    type: field
+  - uid: Outlook_1_2.Office.MailboxEnums.RecipientType.User
+    summary: Specifies that the recipient is an SMTP email address that is on the Exchange server.
+    name: User
+    fullName: Outlook_1_2.Office.MailboxEnums.RecipientType.User
+    langs:
+      - typeScript
+    type: field

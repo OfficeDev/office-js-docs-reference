@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_1.Office.Message
+    name: Office.Message
+    fullName: Outlook_1_1.Office.Message
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Item
+    package: Outlook_1_1
+    children:
+      - Outlook_1_1.Office.Message.conversationId
+  - uid: Outlook_1_1.Office.Message.conversationId
+    summary: >-
+      Gets an identifier for the email conversation that contains a particular message.
+
+
+      You can get an integer for this property if your mail app is activated in read forms or responses in compose
+      forms. If subsequently the user changes the subject of the reply message, upon sending the reply, the conversation
+      ID for that message will change and that value you obtained earlier will no longer apply.
+
+
+      You get null for this property for a new item in a compose form. If the user sets a subject and saves the item,
+      the conversationId property will return a value.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: conversationId
+    fullName: Outlook_1_1.Office.Message.conversationId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'conversationId: string;'
+      return:
+        type:
+          - string

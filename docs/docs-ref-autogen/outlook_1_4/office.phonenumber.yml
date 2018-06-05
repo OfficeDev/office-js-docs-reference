@@ -1,0 +1,65 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_4.Office.PhoneNumber
+    summary: >-
+      Represents a phone number identified in an item. Read mode only.
+
+
+      An array of PhoneNumber objects containing the phone numbers found in an email message is returned in the
+      phoneNumbers property of the Entities object that is returned when you call the getEntities method on the selected
+      item.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
+    name: Office.PhoneNumber
+    fullName: Outlook_1_4.Office.PhoneNumber
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1_4
+    children:
+      - Outlook_1_4.Office.PhoneNumber.originalPhoneString
+      - Outlook_1_4.Office.PhoneNumber.phoneString
+      - Outlook_1_4.Office.PhoneNumber.type
+  - uid: Outlook_1_4.Office.PhoneNumber.originalPhoneString
+    summary: Gets the text that was identified in an item as a phone number.
+    name: originalPhoneString
+    fullName: Outlook_1_4.Office.PhoneNumber.originalPhoneString
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'originalPhoneString: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1_4.Office.PhoneNumber.phoneString
+    summary: >-
+      Gets a string containing a phone number. This string contains only the digits of the telephone number and excludes
+      characters like parentheses and hyphens, if they exist in the original item.
+    name: phoneString
+    fullName: Outlook_1_4.Office.PhoneNumber.phoneString
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'phoneString: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1_4.Office.PhoneNumber.type
+    summary: 'Gets a string that identifies the type of phone number: Home, Work, Mobile, Unspecified.'
+    name: type
+    fullName: Outlook_1_4.Office.PhoneNumber.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: string;'
+      return:
+        type:
+          - string
