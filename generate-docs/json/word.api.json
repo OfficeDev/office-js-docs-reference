@@ -179,7 +179,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\n            [key: string]: string;\n        }",
+                "type": "{\r\n            [key: string]: string;\r\n        }",
                 "description": []
               },
               "parameters": {},
@@ -1187,7 +1187,7 @@
             },
             "search": {
               "kind": "method",
-              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }): Word.RangeCollection;",
+              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -1218,7 +1218,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }"
+                  "type": "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -3319,7 +3319,7 @@
             },
             "search": {
               "kind": "method",
-              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }): Word.RangeCollection;",
+              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3350,7 +3350,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }"
+                  "type": "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -12017,7 +12017,7 @@
             },
             "search": {
               "kind": "method",
-              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }): Word.RangeCollection;",
+              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -12048,7 +12048,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }"
+                  "type": "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -14277,7 +14277,7 @@
             },
             "search": {
               "kind": "method",
-              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }): Word.RangeCollection;",
+              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -14308,7 +14308,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }"
+                  "type": "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -18694,7 +18694,7 @@
             },
             "search": {
               "kind": "method",
-              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }): Word.RangeCollection;",
+              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -18725,7 +18725,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }"
+                  "type": "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],
@@ -21353,7 +21353,7 @@
             },
             "search": {
               "kind": "method",
-              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }): Word.RangeCollection;",
+              "signature": "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -21384,7 +21384,7 @@
                   ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Word.SearchOptions | {\n            ignorePunct?: boolean;\n            ignoreSpace?: boolean;\n            matchCase?: boolean;\n            matchPrefix?: boolean;\n            matchSuffix?: boolean;\n            matchWholeWord?: boolean;\n            matchWildcards?: boolean;\n        }"
+                  "type": "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
                 }
               },
               "deprecatedMessage": [],

@@ -25,6 +25,7 @@ items:
       - office.Office.EventType.NodeDeleted
       - office.Office.EventType.NodeInserted
       - office.Office.EventType.NodeReplaced
+      - office.Office.EventType.RecurrencePatternChanged
       - office.Office.EventType.ResourceSelectionChanged
       - office.Office.EventType.SettingsChanged
       - office.Office.EventType.TaskSelectionChanged
@@ -111,6 +112,13 @@ items:
     summary: Triggers when a customXmlPart node was replaced
     name: NodeReplaced
     fullName: office.Office.EventType.NodeReplaced
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.RecurrencePatternChanged
+    summary: The recurrence pattern of the selected series has changed.
+    name: RecurrencePatternChanged
+    fullName: office.Office.EventType.RecurrencePatternChanged
     langs:
       - typeScript
     type: field

@@ -52,7 +52,7 @@ items:
           - 'EmailAddressDetails[]'
   - uid: outlook.Office.MessageRead.from
     summary: >-
-      Gets the email address of the sender of a message. Read mode only.
+      Gets the email address of the sender of a message.
 
 
       The from and sender properties represent the same person unless the message is sent by a delegate. In that case,
@@ -60,6 +60,9 @@ items:
 
 
       Note: The recipientType property of the EmailAddressDetails object in the from property is undefined.
+
+
+      The from property returns an EmailAddressDetails object.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]

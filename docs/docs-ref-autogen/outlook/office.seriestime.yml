@@ -1,0 +1,273 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.SeriesTime
+    summary: >-
+      The SeriesTime object provides methods to get and set the dates and times of appointments in a recurring series
+      and get the dates and times of meeting requests in a recurring series.
+
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: Office.SeriesTime
+    fullName: outlook.Office.SeriesTime
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.SeriesTime.getDuration
+      - outlook.Office.SeriesTime.getEndDate
+      - outlook.Office.SeriesTime.getEndTime
+      - outlook.Office.SeriesTime.getStartDate
+      - outlook.Office.SeriesTime.getStartTime
+      - outlook.Office.SeriesTime.setDuration
+      - outlook.Office.SeriesTime.setEndDate
+      - outlook.Office.SeriesTime.setStartDate
+      - outlook.Office.SeriesTime.setStartTime
+  - uid: outlook.Office.SeriesTime.getDuration
+    summary: |-
+      Gets the duration in minutes of a usual instance in a recurring appointment series.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: getDuration()
+    fullName: outlook.Office.SeriesTime.getDuration
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDuration(): number;'
+      return:
+        type:
+          - number
+        description: ''
+  - uid: outlook.Office.SeriesTime.getEndDate
+    summary: >-
+      Gets the end date of a recurrence pattern in the following \[ISO
+      8601\](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD"
+
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: getEndDate()
+    fullName: outlook.Office.SeriesTime.getEndDate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEndDate(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: outlook.Office.SeriesTime.getEndTime
+    summary: >-
+      Gets the end time of a usual appointment or meeting request instance of a recurrence pattern in whichever time
+      zone that the user or add-in set the recurrence pattern using the following \[ISO
+      8601\](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm"
+
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: getEndTime()
+    fullName: outlook.Office.SeriesTime.getEndTime
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEndTime(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: outlook.Office.SeriesTime.getStartDate
+    summary: >-
+      Gets the start date of a recurrence pattern in the following \[ISO
+      8601\](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD"
+
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: getStartDate()
+    fullName: outlook.Office.SeriesTime.getStartDate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStartDate(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: outlook.Office.SeriesTime.getStartTime
+    summary: >-
+      Gets the start time of a usual appointment instance of a recurrence pattern in whichever time zone that the
+      user/add-in set the recurrence pattern using the following \[ISO
+      8601\](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm"
+
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: getStartTime()
+    fullName: outlook.Office.SeriesTime.getStartTime
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getStartTime(): string;'
+      return:
+        type:
+          - string
+        description: ''
+  - uid: outlook.Office.SeriesTime.setDuration
+    summary: >-
+      Sets the duration of all appointments in a recurrence pattern. This will also change the end time of the
+      recurrence pattern.
+
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadWriteItem
+
+      Applicable Outlook mode: Compose
+    name: setDuration(minutes)
+    fullName: outlook.Office.SeriesTime.setDuration
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDuration(minutes: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: minutes
+          description: The length of the appointment in minutes.
+          type:
+            - number
+  - uid: outlook.Office.SeriesTime.setEndDate
+    summary: |-
+      Sets the end date of a recurring appointment series.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadWriteItem
+
+      Applicable Outlook mode: Compose
+
+      Errors: Invalid date format - The date is not in an acceptable format.
+    name: 'setEndDate(year, month, day)'
+    fullName: outlook.Office.SeriesTime.setEndDate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setEndDate(year: number, month: number, day: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: year
+          description: The year value of the end date.
+          type:
+            - number
+        - id: month
+          description: >-
+            The month value of the end date. Valid range is 0-11 where 0 represents the 1st month and 11 represents the
+            12th month.
+          type:
+            - number
+        - id: day
+          description: The day value of the end date.
+          type:
+            - number
+  - uid: outlook.Office.SeriesTime.setStartDate
+    summary: |-
+      Sets the start date of a recurring appointment series.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadWriteItem
+
+      Applicable Outlook mode: Compose
+
+      Errors: Invalid date format - The date is not in an acceptable format.
+    name: 'setStartDate(year, month, day)'
+    fullName: outlook.Office.SeriesTime.setStartDate
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setStartDate(year:number, month:number, day:number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: year
+          description: The year value of the start date.
+          type:
+            - number
+        - id: month
+          description: >-
+            The month value of the start date. Valid range is 0-11 where 0 represents the 1st month and 11 represents
+            the 12th month.
+          type:
+            - number
+        - id: day
+          description: The day value of the start date.
+          type:
+            - number
+  - uid: outlook.Office.SeriesTime.setStartTime
+    summary: >-
+      Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence
+      pattern is set (the item's time zone is used by default).
+
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadWriteItem
+
+      Applicable Outlook mode: Compose
+
+      Errors: Invalid time format - The time is not in an acceptable format.
+    name: 'setStartTime(hours, minutes)'
+    fullName: outlook.Office.SeriesTime.setStartTime
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setStartTime(hours: number, minutes: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: hours
+          description: 'The hour value of the start time. Valid range: 0-24.'
+          type:
+            - number
+        - id: minutes
+          description: 'The minute value of the start time. Valid range: 0-59.'
+          type:
+            - number

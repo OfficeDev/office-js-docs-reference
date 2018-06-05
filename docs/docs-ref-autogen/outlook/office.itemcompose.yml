@@ -196,7 +196,7 @@ items:
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       More information on \[actionable
-      messages\]&lt;https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message&gt;.
+      messages\](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message).
 
 
       Minimum permission level: ReadItem

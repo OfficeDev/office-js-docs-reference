@@ -10,7 +10,87 @@ items:
     type: interface
     package: office
     children:
+      - office.Office.Context.auth
+      - office.Office.Context.commerceAllowed
+      - office.Office.Context.contentLanguage
+      - office.Office.Context.diagnostics
+      - office.Office.Context.displayLanguage
       - office.Office.Context.document
+      - office.Office.Context.host
+      - office.Office.Context.license
+      - office.Office.Context.mailbox
+      - office.Office.Context.officeTheme
+      - office.Office.Context.platform
+      - office.Office.Context.requirements
+      - office.Office.Context.roamingSettings
+      - office.Office.Context.touchEnabled
+      - office.Office.Context.ui
+  - uid: office.Office.Context.auth
+    summary: Provides information and access to the signed-in user.
+    name: auth
+    fullName: office.Office.Context.auth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'auth: Auth;'
+      return:
+        type:
+          - Auth
+  - uid: office.Office.Context.commerceAllowed
+    summary: 'True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.'
+    remarks: >-
+      The iOS App Store doesn't support apps with add-ins that provide links to additional payment systems. However,
+      Office Add-ins running on the Windows desktop or for Office Online in the browser, do allow such links. If you
+      want the UI of your add-in to provide a link to an external payment system on platforms other than iOS, you can
+      use the commerceAllowed property to control when that link is displayed.
+    name: commerceAllowed
+    fullName: office.Office.Context.commerceAllowed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'commerceAllowed: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Office.Context.contentLanguage
+    summary: Gets the locale (language) specified by the user for editing the document or item.
+    name: contentLanguage
+    fullName: office.Office.Context.contentLanguage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contentLanguage: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.Context.diagnostics
+    summary: Gets information about the environment in which the add-in is running.
+    name: diagnostics
+    fullName: office.Office.Context.diagnostics
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'diagnostics: ContextInformation;'
+      return:
+        type:
+          - ContextInformation
+  - uid: office.Office.Context.displayLanguage
+    summary: Gets the locale (language) specified by the user for the UI of the Office host application.
+    remarks: 'When using in Outlook,the applicable modes are Compose or read.'
+    name: displayLanguage
+    fullName: office.Office.Context.displayLanguage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayLanguage: string;'
+      return:
+        type:
+          - string
   - uid: office.Office.Context.document
     summary: Gets an object that represents the document the content or task pane add-in is interacting with.
     name: document
@@ -23,3 +103,141 @@ items:
       return:
         type:
           - Document
+  - uid: office.Office.Context.host
+    summary: Contains the Office application host in which the add-in is running.
+    name: host
+    fullName: office.Office.Context.host
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'host: HostType;'
+      return:
+        type:
+          - HostType
+  - uid: office.Office.Context.license
+    summary: Gets the license information for the user's Office installation.
+    name: license
+    fullName: office.Office.Context.license
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'license: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.Context.mailbox
+    summary: |-
+      Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+
+      Namespaces:
+
+      - diagnostics: Provides diagnostic information to an Outlook add-in.
+
+      - item: Provides methods and properties for accessing a message or appointment in an Outlook add-in.
+
+      - userProfile: Provides information about the user in an Outlook add-in.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/javascript-api-for-office) \]
+    remarks: |-
+      Minimum permission level: Restricted
+
+      Applicable Outlook mode: Compose or read
+    name: mailbox
+    fullName: office.Office.Context.mailbox
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'mailbox: Mailbox;'
+      return:
+        type:
+          - Mailbox
+  - uid: office.Office.Context.officeTheme
+    summary: Provides access to the properties for Office theme colors.
+    name: officeTheme
+    fullName: office.Office.Context.officeTheme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'officeTheme: OfficeTheme;'
+      return:
+        type:
+          - OfficeTheme
+  - uid: office.Office.Context.platform
+    summary: Provides the platform on which the add-in is running.
+    name: platform
+    fullName: office.Office.Context.platform
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'platform: PlatformType;'
+      return:
+        type:
+          - PlatformType
+  - uid: office.Office.Context.requirements
+    summary: Provides a method for determining what requirement sets are supported on the current host and platform.
+    name: requirements
+    fullName: office.Office.Context.requirements
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'requirements: RequirementSetSupport;'
+      return:
+        type:
+          - RequirementSetSupport
+  - uid: office.Office.Context.roamingSettings
+    summary: >-
+      Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
+
+
+      The RoamingSettings object lets you store and access data for a mail add-in that is stored in a user's mailbox, so
+      that is available to that add-in when it is running from any host client application used to access that mailbox.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/javascript-api-for-office) \]
+    remarks: |-
+      Minimum permission level: Restricted
+
+      Applicable Outlook mode: Compose or read
+    name: roamingSettings
+    fullName: office.Office.Context.roamingSettings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'roamingSettings: RoamingSettings;'
+      return:
+        type:
+          - RoamingSettings
+  - uid: office.Office.Context.touchEnabled
+    summary: Specifies whether the platform and device allows touch interaction.
+    remarks: >-
+      Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust
+      the kind of controls, and size and spacing of elements in your add-in's UI to accommodate touch interactions.
+    name: touchEnabled
+    fullName: office.Office.Context.touchEnabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'touchEnabled: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Office.Context.ui
+    summary: 'Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes.'
+    name: ui
+    fullName: office.Office.Context.ui
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ui: UI;'
+      return:
+        type:
+          - UI

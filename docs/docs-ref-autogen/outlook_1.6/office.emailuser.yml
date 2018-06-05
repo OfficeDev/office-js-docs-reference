@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1.6.Office.EmailUser
+    summary: |-
+      Represents an email account on an Exchange Server.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
+    name: 6.Office.EmailUser
+    fullName: Outlook_1.6.Office.EmailUser
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1.6
+    children:
+      - Outlook_1.6.Office.EmailUser.displayName
+      - Outlook_1.6.Office.EmailUser.emailAddress
+  - uid: Outlook_1.6.Office.EmailUser.displayName
+    summary: Gets the display name associated with an email address.
+    name: displayName
+    fullName: Outlook_1.6.Office.EmailUser.displayName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayName: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1.6.Office.EmailUser.emailAddress
+    summary: Gets the SMTP email address.
+    name: emailAddress
+    fullName: Outlook_1.6.Office.EmailUser.emailAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddress: string;'
+      return:
+        type:
+          - string

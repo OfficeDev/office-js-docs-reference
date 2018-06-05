@@ -36,8 +36,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: EventType, handler: (result: any) => void, options?: any, callback?: (result:
-        AsyncResult) => void): void;
+        addHandlerAsync(eventType: EventType, handler: (result: any) => void, options?: AsyncContextOptions, callback?:
+        (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -57,11 +57,9 @@ items:
           type:
             - '(result: any) => void'
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback..'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -94,18 +92,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'deleteAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: 'deleteAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -122,7 +118,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getNodesAsync(xPath: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: 'getNodesAsync(xPath: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -133,11 +129,9 @@ items:
           type:
             - string
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -154,18 +148,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getXmlAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: 'getXmlAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -215,8 +207,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: EventType, handler?: (result: any) => void, options?: any, callback?: (result:
-        AsyncResult) => void): void;
+        removeHandlerAsync(eventType: EventType, handler?: (result: any) => void, options?: RemoveHandlerOptions,
+        callback?: (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -230,17 +222,13 @@ items:
           type:
             - EventType
         - id: handler
-          description: >-
-            The event handler function to remove. If not specified, all event handlers for the specified eventType will
-            be removed.
+          description: ''
           type:
             - '(result: any) => void'
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: Provides options to determine which event handler or handlers are removed.
           type:
-            - any
+            - RemoveHandlerOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:

@@ -36,6 +36,8 @@ items:
                 href: objectmodel/preview-requirement-set/office-item.md
               - name: Office.context.mailbox.userProfile
                 href: objectmodel/preview-requirement-set/office-user.md
+              - name: API Reference
+                uid: outlook
             - name: Requirement Set 1.6
               items:
               - name: Office
@@ -50,6 +52,8 @@ items:
                 href: objectmodel/requirement-set-1.6/office-item.md
               - name: Office.context.mailbox.userProfile
                 href: objectmodel/requirement-set-1.6/office-user.md
+              - name: API Reference
+                uid: Outlook_1.6
             - name: Requirement Set 1.5
               items:
               - name: Office
@@ -120,8 +124,6 @@ items:
                 href: objectmodel/requirement-set-1.1/office-item.md
               - name: Office.context.mailbox.userProfile
                 href: objectmodel/requirement-set-1.1/office-user.md
-        - name: API Reference
-          uid: outlook
     - name: Visio
       href: overview/visio-javascript-reference-overview.md
       items:

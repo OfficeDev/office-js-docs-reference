@@ -7060,7 +7060,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\n            [key: string]: string;\n        }",
+                "type": "{\r\n            [key: string]: string;\r\n        }",
                 "description": []
               },
               "parameters": {},
@@ -20300,7 +20300,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\n            [key: string]: string;\n        }",
+                "type": "{\r\n            [key: string]: string;\r\n        }",
                 "description": []
               },
               "parameters": {},
@@ -43837,7 +43837,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\n            [key: string]: string;\n        }",
+                "type": "{\r\n            [key: string]: string;\r\n        }",
                 "description": []
               },
               "parameters": {},
@@ -52624,7 +52624,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\n            [key: string]: string;\n        }",
+                "type": "{\r\n            [key: string]: string;\r\n        }",
                 "description": []
               },
               "parameters": {},
@@ -53652,7 +53652,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\n            [key: string]: string;\n        }",
+                "type": "{\r\n            [key: string]: string;\r\n        }",
                 "description": []
               },
               "parameters": {},
@@ -53736,7 +53736,7 @@
           "members": {
             "__constructor": {
               "kind": "constructor",
-              "signature": "constructor(workbookUrl?: string, requestHeaders?: {\n            [name: string]: string;\n        }, persisted?: boolean);",
+              "signature": "constructor(workbookUrl?: string, requestHeaders?: {\r\n            [name: string]: string;\r\n        }, persisted?: boolean);",
               "parameters": {
                 "workbookUrl": {
                   "name": "workbookUrl",
@@ -53750,7 +53750,7 @@
                   "description": [],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "{\n            [name: string]: string;\n        }"
+                  "type": "{\r\n            [name: string]: string;\r\n        }"
                 },
                 "persisted": {
                   "name": "persisted",
@@ -60668,7 +60668,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\n            [key: string]: string;\n        }",
+                "type": "{\r\n            [key: string]: string;\r\n        }",
                 "description": []
               },
               "parameters": {},
@@ -60848,7 +60848,7 @@
             },
             "copy": {
               "kind": "method",
-              "signature": "copy(positionType?: Excel.WorksheetPositionType, relativeTo?: Excel.Worksheet): Excel.Worksheet;",
+              "signature": "copy(positionType?: Excel.WorksheetPositionType | string, relativeTo?: Excel.Worksheet): Excel.Worksheet;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -60859,14 +60859,24 @@
               "parameters": {
                 "positionType": {
                   "name": "positionType",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Specifies where to put the copy relative to the worksheet specified in relativeTo param. Can be Excel.WorksheetPositionType or string equivalent. Must not be Excel.WorksheetPositionType.none or \"None\"."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
-                  "type": "Excel.WorksheetPositionType"
+                  "type": "Excel.WorksheetPositionType | string"
                 },
                 "relativeTo": {
                   "name": "relativeTo",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Specifies the worksheet that is the basis for intepreting the positionType param. If not specified, the worksheet on which the copy() is called is assumed."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "Excel.Worksheet"
@@ -63200,7 +63210,7 @@
               "isOptional": false,
               "isStatic": false,
               "returnValue": {
-                "type": "{\n            [key: string]: string;\n        }",
+                "type": "{\r\n            [key: string]: string;\r\n        }",
                 "description": []
               },
               "parameters": {},
