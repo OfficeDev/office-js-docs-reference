@@ -8,8 +8,8 @@ The Outlook add-in API subset of the JavaScript API for Office includes objects,
 
 Requirement set 1.5 includes all of the features of [Requirement set 1.4](../requirement-set-1.4/outlook-requirement-set-1.4.md). It added the following features.
 
-- Added support for [pinnable taskpanes](../../../docs/outlook/manifests/pinnable-taskpane.md).
-- Added support for calling [REST APIs](../../../docs/outlook/use-rest-api.md).
+- Added support for [pinnable taskpanes](/outlook/add-ins/manifests/pinnable-taskpane.md).
+- Added support for calling [REST APIs](/outlook/add-ins/use-rest-api.md).
 - Added ability to mark an attachment as inline.
 - Added ability to close a taskpane or dialog.
 

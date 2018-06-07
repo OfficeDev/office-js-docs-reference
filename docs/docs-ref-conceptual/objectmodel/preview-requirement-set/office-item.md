@@ -274,7 +274,7 @@ var modified = Office.context.mailbox.item.dateTimeModified;
 
 Gets or sets the date and time that the appointment is to end.
 
-The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttimetimevalue--localclienttimejavascriptapioutlookofficelocalclienttime) method to convert the end property value to the client’s local date and time.
+The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttimeinput--localclienttime) method to convert the end property value to the client’s local date and time.
 
 ##### Read mode
 
@@ -723,7 +723,7 @@ var isSeries = (seriesId == null);
 
 Gets or sets the date and time that the appointment is to begin.
 
-The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttimetimevalue--localclienttimejavascriptapioutlookofficelocalclienttime) method to convert the value to the client’s local date and time.
+The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttimeinput--localclienttime) method to convert the value to the client’s local date and time.
 
 ##### Read mode
 

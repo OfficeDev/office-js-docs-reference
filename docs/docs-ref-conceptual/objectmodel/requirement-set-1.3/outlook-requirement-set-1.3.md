@@ -8,7 +8,7 @@ The Outlook add-in API subset of the JavaScript API for Office includes objects,
 
 Requirement set 1.3 includes all of the features of [Requirement set 1.2](../requirement-set-1.2/outlook-requirement-set-1.2.md). It added the following features.
 
-- Added support for [add-in commands](../../../docs/outlook/add-in-commands-for-outlook.md).
+- Added support for [add-in commands](/outlook/add-ins/add-in-commands-for-outlook).
 - Added ability to save or close an item being composed.
 - Enhanced [Body](https://dev.office.com/reference/add-ins/outlook/1.3/Body?product=outlook&version=v1.3) object to allow addins to get or set the entire body.
 - Added conversion methods to convert IDs between EWS and REST formats.
