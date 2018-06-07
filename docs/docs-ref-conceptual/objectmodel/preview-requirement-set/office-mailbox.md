@@ -33,7 +33,7 @@ The `ewsUrl` value can be used by a remote service to make EWS calls to the user
 
 Your app must have the **ReadItem** permission specified in its manifest to call the `ewsUrl` member in read mode.
 
-In compose mode you must call the [`saveAsync`](Office-item.md#saveAsync) method before you can use the `ewsUrl` member. Your app must have **ReadWriteItem** permissions to call the `saveAsync` method.
+In compose mode you must call the [`saveAsync`](Office-item.md#saveasyncoptions-callback) method before you can use the `ewsUrl` member. Your app must have **ReadWriteItem** permissions to call the `saveAsync` method.
 
 ##### Type:
 
@@ -55,7 +55,7 @@ The `restUrl` value can be used to make [REST API](https://docs.microsoft.com/ou
 
 Your app must have the **ReadItem** permission specified in its manifest to call the `restUrl` member in read mode.
 
-In compose mode you must call the [`saveAsync`](Office-item.md#saveAsync) method before you can use the `restUrl` member. Your app must have **ReadWriteItem** permissions to call the `saveAsync` method.
+In compose mode you must call the [`saveAsync`](Office-item.md#saveasyncoptions-callback) method before you can use the `restUrl` member. Your app must have **ReadWriteItem** permissions to call the `saveAsync` method.
 
 ##### Type:
 
@@ -497,7 +497,7 @@ You can pass the token and an attachment identifier or item identifier to a thir
 
 Your app must have the **ReadItem** permission specified in its manifest to call the `getCallbackTokenAsync` method in read mode.
 
-In compose mode you must call the [`saveAsync`](Office-item.md#saveAsync) method to get an item identifier to pass to the `getCallbackTokenAsync` method. Your app must have **ReadWriteItem** permissions to call the `saveAsync` method.
+In compose mode you must call the [`saveAsync`](Office-item.md#saveasyncoptions-callback) method to get an item identifier to pass to the `getCallbackTokenAsync` method. Your app must have **ReadWriteItem** permissions to call the `saveAsync` method.
 
 ##### Parameters:
 

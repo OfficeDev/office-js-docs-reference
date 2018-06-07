@@ -233,7 +233,7 @@ The `end` property returns a `Date` object.
 
 The `end` property returns a `Time` object.
 
-When you use the [`Time.setAsync`](/javascript/api/outlook_1_3/office.Time.md#setasyncdatetime-options-callback) method to set the end time, you should use the [`convertToUtcClientTime`](Office-mailbox.md#converttolocalclienttimetimevalue--localclienttimejavascriptapioutlookofficelocalclienttime) method to convert the local time on the client to UTC for the server.
+When you use the [`Time.setAsync`](/javascript/api/outlook_1_3/office.Time.md#setasyncdatetime-options-callback) method to set the end time, you should use the [`convertToUtcClientTime`](Office-mailbox.md#converttoutcclienttimeinput--date) method to convert the local time on the client to UTC for the server.
 
 ##### Type:
 
@@ -346,7 +346,7 @@ Gets the Exchange Web Services item identifier for the current item. Read mode o
 
 > **Note:** The identifier returned by the `itemId` property is the same as the Exchange Web Services item identifier. The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using [Office.context.mailbox.convertToRestId](Office-mailbox.md). For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id).
 
-The `itemId` property is not available in compose mode. If an item identifier is required, the [`saveAsync`](Office-item.md#saveasyncoptions-callback) method can be used to save the item to the store, which will return the item identifier in the [`AsyncResult.value`](/javascript/api/office/office_1_3.asyncresult) parameter in the callback function.
+The `itemId` property is not available in compose mode. If an item identifier is required, the [`saveAsync`](Office-item.md#saveasyncoptions-callbackoptions-callback) method can be used to save the item to the store, which will return the item identifier in the [`AsyncResult.value`](/javascript/api/office/office_1_3.asyncresult) parameter in the callback function.
 
 ##### Type:
 
@@ -400,7 +400,7 @@ else
   // do something else
 ```
 
-####  location :String|[Location](Location.md)
+####  location :String|[Location](/javascript/api/office_1_3/office.Location.md)
 
 Gets or sets the location of an appointment.
 
@@ -414,7 +414,7 @@ The `location` property returns a `Location` object that provides methods that a
 
 ##### Type:
 
-*   String | [Location](Location.md)
+*   String | [Location](/javascript/api/office_1_3/office.Location.md)
 
 ##### Requirements
 
@@ -612,7 +612,7 @@ The `start` property returns a `Date` object.
 
 The `start` property returns a `Time` object.
 
-When you use the [`Time.setAsync`](/javascript/api/outlook_1_3/office.Time.md#setasyncdatetime-options-callback) method to set the start time, you should use the [`convertToUtcClientTime`](Office-mailbox.md#converttolocalclienttimetimevalue--localclienttimejavascriptapioutlookofficelocalclienttime) method to convert the local time on the client to UTC for the server.
+When you use the [`Time.setAsync`](/javascript/api/outlook_1_3/office.Time.md#setasyncdatetime-options-callback) method to set the start time, you should use the [`convertToUtcClientTime`](Office-mailbox.md#converttoutcclienttimeinput--date) method to convert the local time on the client to UTC for the server.
 
 ##### Type:
 
@@ -1369,7 +1369,7 @@ Custom properties are stored as key/value pairs on a per-app, per-item basis. Th
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/office/office_1_3.asyncresult) object.<br/><br/>The custom properties are provided as a [`CustomProperties`](CustomProperties.md) object in the `asyncResult.value` property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server.|
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/office/office_1_3.asyncresult) object.<br/><br/>The custom properties are provided as a [`CustomProperties`](/javascript/api/office_1_3/office.CustomProperties.md) object in the `asyncResult.value` property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server.|
 |`userContext`| Object| &lt;optional&gt;|Developers can provide any object they wish to access in the callback function. This object can be accessed by the `asyncResult.asyncContext` property in the callback function.|
 
 ##### Requirements

@@ -4,7 +4,7 @@ The Outlook add-in API subset of the JavaScript API for Office includes objects,
 
 ## What's new in 1.6?
 
-Requirement set 1.6 includes all of the features of [Requirement set 1.5](../requirement-set-1.5/index.md). It added the following features.
+Requirement set 1.6 includes all of the features of [Requirement set 1.5](../requirement-set-1.5/outlook-requirement-set-1.5.md). It added the following features.
 
 - Added new APIs for contextual add-ins to get the entity or RegEx match that the user selected to activate the add-in.
 - Added a new API to open a new message form.
@@ -12,10 +12,10 @@ Requirement set 1.6 includes all of the features of [Requirement set 1.5](../req
 
 ### Change log
 
-- Added [Office.context.mailbox.item.getSelectedEntities](https://dev.office.com/reference/add-ins/outlook/1.6/Office.context.mailbox.item?product=outlook&version=v1.6#getselectedentities--entities): Adds a new function that gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
-- Added [Office.context.mailbox.item.getSelectedRegExMatches](https://dev.office.com/reference/add-ins/outlook/1.6/Office.context.mailbox.item?product=outlook&version=v1.6#getselectedregexmatches--object): Adds a new function that returns string values in a highlighted match that match the regular expressions defined in the manifest XML file. Highlighted matches apply to contextual add-ins.
-- Added [Office.context.mailbox.displayNewMessageForm](https://dev.office.com/reference/add-ins/outlook/1.6/Office.context.mailbox?product=outlook&version=v1.6#displaynewmessageformparameters): Adds a new function that opens a new message form.
-- Added [Office.context.mailbox.userProfile.accountType](https://dev.office.com/reference/add-ins/outlook/1.6/Office.context.mailbox.userProfile?product=outlook&version=v1.6#accounttype-string): Adds a new member to the user profile that indicates the type of the user's account.
+- Added [Office.context.mailbox.item.getSelectedEntities](/Office-item.md#getselectedentities--entities): Adds a new function that gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
+- Added [Office.context.mailbox.item.getSelectedRegExMatches](/Office-item.md#getselectedregexmatches--object): Adds a new function that returns string values in a highlighted match that match the regular expressions defined in the manifest XML file. Highlighted matches apply to contextual add-ins.
+- Added [Office.context.mailbox.displayNewMessageForm](/Office-item.md#displaynewmessageformparameters): Adds a new function that opens a new message form.
+- Added [Office.context.mailbox.userProfile.accountType](/Office-item.md#accounttype-string): Adds a new member to the user profile that indicates the type of the user's account.
 
 ## Additional resources
 
