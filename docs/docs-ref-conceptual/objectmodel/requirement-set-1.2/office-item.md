@@ -223,7 +223,7 @@ var modified = Office.context.mailbox.item.dateTimeModified;
 
 Gets or sets the date and time that the appointment is to end.
 
-The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office.context.mailbox.md#converttolocalclienttimetimevalue--localclienttime) method to convert the end property value to the client’s local date and time.
+The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttimetimevalue--localclienttime) method to convert the end property value to the client’s local date and time.
 
 ##### Read mode
 
@@ -233,7 +233,7 @@ The `end` property returns a `Date` object.
 
 The `end` property returns a `Time` object.
 
-When you use the [`Time.setAsync`](/javascript/api/outlook_1_2/office.Time.md#setasync) method to set the end time, you should use the [`convertToUtcClientTime`](Office.context.mailbox.md#converttoutcclienttimeinput--date) method to convert the local time on the client to UTC for the server.
+When you use the [`Time.setAsync`](/javascript/api/outlook_1_2/office.Time.md#setasync) method to set the end time, you should use the [`convertToUtcClientTime`](Office-mailbox.md#converttoutcclienttimeinput--date) method to convert the local time on the client to UTC for the server.
 
 ##### Type:
 
@@ -373,7 +373,7 @@ if (itemId === null || itemId == undefined) {
 }
 ```
 
-####  itemType :[Office.MailboxEnums.ItemType](Office.MailboxEnums.md#itemtype-string)
+####  itemType :[Office.MailboxEnums.ItemType](Office.MailboxEnums.itemtype)
 
 Gets the type of item that an instance represents.
 
@@ -381,7 +381,7 @@ The `itemType` property returns one of the `ItemType` enumeration values, indica
 
 ##### Type:
 
-*   [Office.MailboxEnums.ItemType](Office.MailboxEnums.md#itemtype-string)
+*   [Office.MailboxEnums.ItemType](Office.MailboxEnums.itemtype)
 
 ##### Requirements
 
@@ -586,7 +586,7 @@ var senderAddress = Office.context.mailbox.item.sender.emailAddress;
 
 Gets or sets the date and time that the appointment is to begin.
 
-The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office.context.mailbox.md#converttolocalclienttimetimevalue--localclienttime) method to convert the value to the client’s local date and time.
+The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttimetimevalue--localclienttime) method to convert the value to the client’s local date and time.
 
 ##### Read mode
 
@@ -596,7 +596,7 @@ The `start` property returns a `Date` object.
 
 The `start` property returns a `Time` object.
 
-When you use the [`Time.setAsync`](/javascript/api/outlook_1_2/office.Time.md#setasync) method to set the start time, you should use the [`convertToUtcClientTime`](Office.context.mailbox.md#converttoutcclienttimeinput--date) method to convert the local time on the client to UTC for the server.
+When you use the [`Time.setAsync`](/javascript/api/outlook_1_2/office.Time.md#setasync) method to set the start time, you should use the [`convertToUtcClientTime`](Office-mailbox.md#converttoutcclienttimeinput--date) method to convert the local time on the client to UTC for the server.
 
 ##### Type:
 

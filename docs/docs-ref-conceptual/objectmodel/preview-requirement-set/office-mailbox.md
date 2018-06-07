@@ -17,7 +17,7 @@ Provides access to the Outlook Add-in object model for Microsoft Outlook and Mic
 
 [diagnostics](Office.context.mailbox.diagnostics.md): Provides diagnostic information to an Outlook add-in.
 
-[item](Office.context.mailbox.item.md): Provides methods and properties for accessing a message or appointment in an Outlook add-in.
+[item](Office-item.md): Provides methods and properties for accessing a message or appointment in an Outlook add-in.
 
 [userProfile](Office.context.mailbox.userProfile.md): Provides information about the user in an Outlook add-in.</dd>
 
@@ -81,7 +81,7 @@ Currently the only supported event type is `Office.EventType.ItemChanged`, which
 
 | Name | Type | Attributes | Description |
 |---|---|---|---|
-| `eventType` | [Office.EventType](Office.md#EventType) || The event that should invoke the handler. |
+| `eventType` | [Office.EventType](/javascript/api/outlook/office.EventType) || The event that should invoke the handler. |
 | `handler` | Function || The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`. |
 | `options` | Object | &lt;optional&gt; | An object literal that contains one or more of the following properties. |
 | `options.asyncContext` | Object | &lt;optional&gt; | Developers can provide any object they wish to access in the callback method. |

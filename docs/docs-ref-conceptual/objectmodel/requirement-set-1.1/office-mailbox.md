@@ -17,7 +17,7 @@ Provides access to the Outlook Add-in object model for Microsoft Outlook and Mic
 
 [diagnostics](Office.context.mailbox.diagnostics.md): Provides diagnostic information to an Outlook add-in.
 
-[item](Office.context.mailbox.item.md): Provides methods and properties for accessing a message or appointment in an Outlook add-in.</dd>
+[item](Office-item.md): Provides methods and properties for accessing a message or appointment in an Outlook add-in.</dd>
 
 [userProfile](Office.context.mailbox.userProfile.md): Provides information about the user in an Outlook add-in.
 
