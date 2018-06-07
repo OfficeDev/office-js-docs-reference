@@ -22,7 +22,10 @@ items:
       content: 'headers?:'
       return:
         type:
-          - "{\r\n            [name: string]: string;\r\n        }"
+          - |-
+            {
+                        [name: string]: string;
+                    }
   - uid: office.OfficeExtension.RequestUrlAndHeaderInfo.url
     summary: Request URL
     name: url

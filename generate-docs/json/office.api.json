@@ -18804,7 +18804,7 @@
               "isOptional": true,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "{\r\n            [name: string]: string;\r\n        }",
+              "type": "{\n            [name: string]: string;\n        }",
               "deprecatedMessage": [],
               "summary": [
                 {

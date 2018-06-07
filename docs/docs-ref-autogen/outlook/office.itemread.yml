@@ -3,8 +3,7 @@ items:
   - uid: outlook.Office.ItemRead
     summary: >-
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-      this as a mode of Office.context.mailbox.item. Refer to the \[Object Model pages for more
-      information\](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation).
+      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
     name: Office.ItemRead
     fullName: outlook.Office.ItemRead
     langs:
@@ -95,15 +94,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR An object that contains body or attachment data and a callback function htmlBody: A string that
-            contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
-            attachments: An array of JSON objects that are either file or item attachments. attachments.type: Indicates
-            the type of attachment. Must be file for a file attachment or item for an item attachment. attachments.name:
-            A string that contains the name of the attachment, up to 255 characters in length. attachments.url: Only
-            used if type is set to file. The URI of the location for the file. attachments.isLine: Only used if type is
-            set to file. If true, indicates that the attachment will be shown inline in the message body, and should not
-            be displayed in the attachment list. attachments.itemId: Only used if type is set to item. The EWS item id
-            of the attachment. This is a string up to 100 characters.
+            to 32 KB OR A ReplyFormData object that contains body or attachment data and a callback function
           type:
             - string | ReplyFormData
   - uid: outlook.Office.ItemRead.displayReplyForm
@@ -147,15 +138,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB. OR An object that contains body or attachment data and a callback function. The object is defined
-            as follows. htmlBody: A string that contains text and HTML and that represents the body of the reply form.
-            The string is limited to 32 KB. attachments: An array of JSON objects that are either file or item
-            attachments. attachments.type: Indicates the type of attachment. Must be file for a file attachment or item
-            for an item attachment. attachments.name: A string that contains the name of the attachment, up to 255
-            characters in length. attachments.url: Only used if type is set to file. The URI of the location for the
-            file. attachments.isLine: Only used if type is set to file. If true, indicates that the attachment will be
-            shown inline in the message body, and should not be displayed in the attachment list. attachments.itemId:
-            Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
+            to 32 KB. OR A ReplyFormData object that contains body or attachment data and a callback function.
           type:
             - string | ReplyFormData
   - uid: outlook.Office.ItemRead.getEntities
@@ -538,13 +521,10 @@ items:
           - string
   - uid: outlook.Office.ItemRead.subject
     summary: >-
-      Gets or sets the description that appears in the subject field of an item.
+      Gets the description that appears in the subject field of an item.
 
 
       The subject property gets or sets the entire subject of the item, as sent by the email server.
-
-
-      \*Read mode\*
 
 
       The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading

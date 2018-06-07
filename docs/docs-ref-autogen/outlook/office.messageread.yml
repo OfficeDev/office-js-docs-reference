@@ -3,8 +3,7 @@ items:
   - uid: outlook.Office.MessageRead
     summary: >-
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-      this as a mode of Office.context.mailbox.item. Refer to the \[Object Model pages for more
-      information\](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation).
+      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
     name: Office.MessageRead
     fullName: outlook.Office.MessageRead
     langs:
@@ -23,9 +22,6 @@ items:
     summary: >-
       Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
       the mode of the current item.
-
-
-      \*Read mode\*
 
 
       The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc
@@ -127,9 +123,6 @@ items:
     summary: >-
       Provides access to the recipients on the To line of a message. The type of object and level of access depends on
       the mode of the current item.
-
-
-      \*Read mode\*
 
 
       The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To

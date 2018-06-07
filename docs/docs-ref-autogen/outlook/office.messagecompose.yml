@@ -3,8 +3,7 @@ items:
   - uid: outlook.Office.MessageCompose
     summary: >-
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-      this as a mode of Office.context.mailbox.item. Refer to the \[Object Model pages for more
-      information\](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation).
+      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
     name: Office.MessageCompose
     fullName: outlook.Office.MessageCompose
     langs:
@@ -98,9 +97,6 @@ items:
     summary: >-
       Provides access to the recipients on the To line of a message. The type of object and level of access depends on
       the mode of the current item.
-
-
-      \*Compose mode\*
 
 
       The to property returns a Recipients object that provides methods to get or update the recipients on the To line

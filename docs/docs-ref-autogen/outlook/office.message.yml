@@ -3,8 +3,7 @@ items:
   - uid: outlook.Office.Message
     summary: >-
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-      this as a mode of Office.context.mailbox.item. Refer to the \[Object Model pages for more
-      information\](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation).
+      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
     name: Office.Message
     fullName: outlook.Office.Message
     langs:

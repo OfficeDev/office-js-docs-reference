@@ -20,134 +20,12 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
           "isBeta": false,
-          "isSealed": false,
-          "members": {
-            "recurrence": {
-              "kind": "property",
-              "signature": "recurrence: Recurrence;",
-              "isOptional": false,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "Recurrence",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Gets or sets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and compose modes for appointment items. Read mode for meeting request items."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. null is returned for single appointments and meeting requests of single appointments. undefined is returned for messages that are not meeting requests."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Note: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode: Compose or read"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
-            "seriesId": {
-              "kind": "property",
-              "signature": "seriesId: string;",
-              "isOptional": false,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "string",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Gets the id of the series that an instance belongs to."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "In OWA and Outlook, the seriesId returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to. However, in iOS and Android, the seriesId returns the REST ID of the parent item."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Note: The identifier returned by the seriesId property is the same as the Exchange Web Services item identifier. The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api)."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: Mailbox Preview]"
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode: Compose or read"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            }
-          }
+          "isSealed": false
         },
         "AppointmentCompose": {
           "kind": "interface",
@@ -158,7 +36,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -966,7 +844,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -981,8 +859,53 @@
               "isStatic": false,
               "type": "Date",
               "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the date and time that the appointment is to end."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The end property returns a Date object."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level: ReadItem"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode: Compose or read"
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -999,14 +922,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the location of an appointment."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Read mode*"
+                  "text": "Gets the location of an appointment."
                 },
                 {
                   "kind": "paragraph"
@@ -1053,13 +969,6 @@
                 {
                   "kind": "text",
                   "text": "Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Read mode*"
                 },
                 {
                   "kind": "paragraph"
@@ -1151,13 +1060,6 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required attendee to the meeting."
                 },
                 {
@@ -1197,7 +1099,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the date and time that the appointment is to begin."
+                  "text": "Gets the date and time that the appointment is to begin."
                 },
                 {
                   "kind": "paragraph"
@@ -1205,13 +1107,6 @@
                 {
                   "kind": "text",
                   "text": "The start property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Read mode*"
                 },
                 {
                   "kind": "paragraph"
@@ -3619,6 +3514,66 @@
               "isVirtual": false,
               "isOverride": false
             },
+            "recurrence": {
+              "kind": "property",
+              "signature": "recurrence: Recurrence;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Recurrence",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets or sets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and compose modes for appointment items. Read mode for meeting request items."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance in a series. null is returned for single appointments and meeting requests of single appointments. undefined is returned for messages that are not meeting requests."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Note: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level: ReadItem"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode: Compose or read"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "removeHandlerAsync": {
               "kind": "method",
               "signature": "removeHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void): void;",
@@ -3717,6 +3672,66 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
+            },
+            "seriesId": {
+              "kind": "property",
+              "signature": "seriesId: string;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "string",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the id of the series that an instance belongs to."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In OWA and Outlook, the seriesId returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to. However, in iOS and Android, the seriesId returns the REST ID of the parent item."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Note: The identifier returned by the seriesId property is the same as the Exchange Web Services item identifier. The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api)."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level: ReadItem"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode: Compose or read"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -3729,7 +3744,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -4560,13 +4575,6 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "The subject property returns a Subject object that provides methods to get and set the subject."
                 },
                 {
@@ -4606,7 +4614,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -4675,7 +4683,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR An object that contains body or attachment data and a callback function htmlBody: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. attachments: An array of JSON objects that are either file or item attachments. attachments.type: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment. attachments.name: A string that contains the name of the attachment, up to 255 characters in length. attachments.url: Only used if type is set to file. The URI of the location for the file. attachments.isLine: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list. attachments.itemId: Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters."
+                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR A ReplyFormData object that contains body or attachment data and a callback function"
                     }
                   ],
                   "isOptional": false,
@@ -4759,7 +4767,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. OR An object that contains body or attachment data and a callback function. The object is defined as follows. htmlBody: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. attachments: An array of JSON objects that are either file or item attachments. attachments.type: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment. attachments.name: A string that contains the name of the attachment, up to 255 characters in length. attachments.url: Only used if type is set to file. The URI of the location for the file. attachments.isLine: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list. attachments.itemId: Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters."
+                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. OR A ReplyFormData object that contains body or attachment data and a callback function."
                     }
                   ],
                   "isOptional": false,
@@ -5542,7 +5550,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the description that appears in the subject field of an item."
+                  "text": "Gets the description that appears in the subject field of an item."
                 },
                 {
                   "kind": "paragraph"
@@ -5550,13 +5558,6 @@
                 {
                   "kind": "text",
                   "text": "The subject property gets or sets the entire subject of the item, as sent by the email server."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Read mode*"
                 },
                 {
                   "kind": "paragraph"
@@ -10344,7 +10345,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -10415,7 +10416,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -10585,13 +10586,6 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "The to property returns a Recipients object that provides methods to get or update the recipients on the To line of the message."
                 },
                 {
@@ -10631,7 +10625,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the [Object Model pages for more information](https://review.docs.microsoft.com/en-us/javascript/office/objectmodel/preview-requirement-set/office-item?branch=AlexJ-OMPreservation)."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -10650,13 +10644,6 @@
                 {
                   "kind": "text",
                   "text": "Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Read mode*"
                 },
                 {
                   "kind": "paragraph"
@@ -10855,13 +10842,6 @@
                 {
                   "kind": "text",
                   "text": "Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the current item."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Read mode*"
                 },
                 {
                   "kind": "paragraph"
@@ -12397,11 +12377,36 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "A file or item attachment. Used when displaying a reply form."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "inLine": {
+              "kind": "property",
+              "signature": "inLine?: boolean;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "boolean",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "itemId": {
               "kind": "property",
               "signature": "itemId?: string;",
@@ -12410,7 +12415,12 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -12425,7 +12435,12 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "A string that contains the name of the attachment, up to 255 characters in length."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -12440,7 +12455,12 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Indicates the type of attachment. Must be file for a file attachment or item for an item attachment."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -12455,7 +12475,12 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Only used if type is set to file. The URI of the location for the file."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -12470,7 +12495,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply form."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -12483,7 +12513,12 @@
               "isStatic": false,
               "type": "ReplyFormAttachment[]",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An array of ReplyFormAttachments that are either file or item attachments."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -12498,7 +12533,12 @@
               "isStatic": false,
               "type": "(result: AsyncResult) => void",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "When the reply display call completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -12513,7 +12553,12 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
