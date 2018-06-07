@@ -82,7 +82,6 @@ export declare namespace Office {
              */
             Appointment
         }
-        
         /**
          * Specifies the type of recipient for an appointment.
          *
@@ -109,7 +108,6 @@ export declare namespace Office {
              */
             Other
         }
-       
         /**  
          * Specifies the type of response to a meeting invitation.
          *
@@ -297,6 +295,7 @@ export declare namespace Office {
          * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.
          */
         prependAsync(data: string): void;
+
         /**
          * Replaces the selection in the body with the specified text.
          *
@@ -667,17 +666,19 @@ export declare namespace Office {
         urls: string[];
     }
 
+    /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     */
     export interface Appointment extends Item {
     }
+    /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     */
     export interface AppointmentCompose extends Appointment, ItemCompose {
         /**
          * Gets or sets the date and time that the appointment is to end.
          *
          * The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time.
-         *
-         * *Read mode*
-         *
-         * The end property returns a Date object.
          *
          * *Compose mode*
          *
@@ -697,10 +698,6 @@ export declare namespace Office {
         /**
          * Gets or sets the location of an appointment.
          *
-         * *Read mode*
-         *
-         * The location property returns a string that contains the location of the appointment.
-         *
          * *Compose mode*
          *
          * The location property returns a Location object that provides methods that are used to get and set the location of the appointment.
@@ -717,10 +714,6 @@ export declare namespace Office {
         /**
          * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
          *
-         * *Read mode*
-         *
-         * The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional attendee to the meeting.
-         *
          * *Compose mode*
          *
          * The optionalAttendees property returns a Recipients object that provides methods to get or update the optional attendees for a meeting.
@@ -736,10 +729,6 @@ export declare namespace Office {
         optionalAttendees: Recipients;
         /**
          * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
-         *
-         * *Read mode*
-         *
-         * The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required attendee to the meeting.
          *
          * *Compose mode*
          *
@@ -759,10 +748,6 @@ export declare namespace Office {
          *
          * The start property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time.
          *
-         * *Read mode*
-         *
-         * The start property returns a Date object.
-         *
          * *Compose mode*
          *
          * The start property returns a Time object.
@@ -779,18 +764,32 @@ export declare namespace Office {
          */
         start: Time;
     }
+    /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     */
     export interface AppointmentRead extends Appointment, ItemRead {
+        /**
+         * Gets the date and time that the appointment is to end.
+         *
+         * The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time.
+         *
+         * The end property returns a Date object.
+         *
+         * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * Minimum permission level: ReadItem
+         *
+         * Applicable Outlook mode: Compose or read
+         */
         end: Date;
         /**
-         * Gets or sets the location of an appointment.
-         *
-         * *Read mode*
+         * Gets the location of an appointment.
          *
          * The location property returns a string that contains the location of the appointment.
-         *
-         * *Compose mode*
-         *
-         * The location property returns a Location object that provides methods that are used to get and set the location of the appointment.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -804,13 +803,7 @@ export declare namespace Office {
         /**
          * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
          *
-         * *Read mode*
-         *
          * The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional attendee to the meeting.
-         *
-         * *Compose mode*
-         *
-         * The optionalAttendees property returns a Recipients object that provides methods to get or update the optional attendees for a meeting.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -836,13 +829,7 @@ export declare namespace Office {
         /**
          * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
          *
-         * *Read mode*
-         *
          * The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required attendee to the meeting.
-         *
-         * *Compose mode*
-         *
-         * The requiredAttendees property returns a Recipients object that provides methods to get or update the required attendees for a meeting.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -854,19 +841,11 @@ export declare namespace Office {
          */
         requiredAttendees: EmailAddressDetails[];
         /**
-         * Gets or sets the date and time that the appointment is to begin.
+         * Gets the date and time that the appointment is to begin.
          *
          * The start property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time.
          *
-         * *Read mode*
-         *
          * The start property returns a Date object.
-         *
-         * *Compose mode*
-         *
-         * The start property returns a Time object.
-         *
-         * When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -878,6 +857,7 @@ export declare namespace Office {
          */
         start: Date;
     }
+
     export interface AppointmentForm {
         /**
          * Gets an object that provides methods for manipulating the body of an item.
@@ -1107,17 +1087,14 @@ export declare namespace Office {
         */
        loadCustomPropertiesAsync(callback: (result: AsyncResult) => void, userContext?: any): void;
     }
+    /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     */
     export interface ItemCompose extends Item {
         /**
          * Gets or sets the description that appears in the subject field of an item.
          *
          * The subject property gets or sets the entire subject of the item, as sent by the email server.
-         *
-         * *Read mode*
-         *
-         * The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:.
-         *
-         * *Compose mode*
          *
          * The subject property returns a Subject object that provides methods to get and set the subject.
          *
@@ -1470,6 +1447,9 @@ export declare namespace Office {
          */
         removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;
     }
+    /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     */
     export interface ItemRead extends Item {
         /**
          * Gets an array of attachments for the item. Read mode only.
@@ -1538,17 +1518,11 @@ export declare namespace Office {
          */
         normalizedSubject: string;
         /**
-         * Gets or sets the description that appears in the subject field of an item.
+         * Gets the description that appears in the subject field of an item.
          *
          * The subject property gets or sets the entire subject of the item, as sent by the email server.
          *
-         * *Read mode*
-         *
          * The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:.
-         *
-         * *Compose mode*
-         *
-         * The subject property returns a Subject object that provides methods to get and set the subject.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -1579,14 +1553,7 @@ export declare namespace Office {
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *  OR
-         * An object that contains body or attachment data and a callback function
-         *        htmlBody: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
-         *        attachments: An array of JSON objects that are either file or item attachments.
-         *        attachments.type: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
-         *        attachments.name: A string that contains the name of the attachment, up to 255 characters in length.
-         *        attachments.url: Only used if type is set to file. The URI of the location for the file.
-         *        attachments.isLine: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
-         *        attachments.itemId: Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
+         * A ReplyFormData object that contains body or attachment data and a callback function
          */
         displayReplyAllForm(formData: string | ReplyFormData): void;
         /**
@@ -1610,17 +1577,9 @@ export declare namespace Office {
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
          * OR
-         * An object that contains body or attachment data and a callback function. The object is defined as follows.
-         *        htmlBody: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
-         *        attachments: An array of JSON objects that are either file or item attachments.
-         *        attachments.type: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
-         *        attachments.name: A string that contains the name of the attachment, up to 255 characters in length.
-         *        attachments.url: Only used if type is set to file. The URI of the location for the file.
-         *        attachments.isLine: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
-         *        attachments.itemId: Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
+         * A ReplyFormData object that contains body or attachment data and a callback function.
          */
         displayReplyForm(formData: string | ReplyFormData): void;
-        
         /**
          * Gets the entities found in the selected item.
          *
@@ -1727,44 +1686,10 @@ export declare namespace Office {
          * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
          */
         getRegExMatchesByName(name: string): string[];
-        /**
-         * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
-         *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.6]
-         *
-         * @remarks
-         *
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Read
-         *
-         * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
-         */
-        getSelectedEntities(): Entities;
-        /**
-         * Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file. Highlighted matches apply to contextual add-ins.
-         *
-         * The getSelectedRegExMatches method returns the strings that match the regular expression defined in each ItemHasRegularExpressionMatch or ItemHasKnownEntity rule element in the manifest XML file. For an ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified by that rule. The PropertyName simple type defines the supported properties.
-         *
-         * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. Instead, use the Body.getAsync method to retrieve the entire body.
-         *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.6]
-         *
-         * @returns
-         * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. The name of each array is equal to the corresponding value of the RegExName attribute of the matching ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
-         *
-         * @remarks
-         *
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Read
-         */
-        getSelectedRegExMatches(): any;
     }
+    /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     */
     export interface Message extends Item {
         /**
          * Gets an identifier for the email conversation that contains a particular message.
@@ -1783,6 +1708,10 @@ export declare namespace Office {
          */
         conversationId: string;
     }
+
+     /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     */
     export interface MessageCompose extends Message, ItemCompose {
         /**
          * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message. Compose mode only.
@@ -1799,10 +1728,6 @@ export declare namespace Office {
         /**
          * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.
          *
-         * *Read mode*
-         *
-         * The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc line of the message. The collection is limited to a maximum of 100 members.
-         *
          * *Compose mode*
          *
          * The cc property returns a Recipients object that provides methods to get or update the recipients on the Cc line of the message.
@@ -1816,15 +1741,8 @@ export declare namespace Office {
          * Applicable Outlook mode: Compose or read
          */
         cc: Recipients;
-        
         /**
          * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the current item.
-         *
-         * *Read mode*
-         *
-         * The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To line of the message. The collection is limited to a maximum of 100 members.
-         *
-         * *Compose mode*
          *
          * The to property returns a Recipients object that provides methods to get or update the recipients on the To line of the message.
          *
@@ -1838,17 +1756,14 @@ export declare namespace Office {
          */
         to: Recipients;
     }
+    /**
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     */
     export interface MessageRead extends Message, ItemRead {
         /**
          * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.
          *
-         * *Read mode*
-         *
          * The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc line of the message. The collection is limited to a maximum of 100 members.
-         *
-         * *Compose mode*
-         *
-         * The cc property returns a Recipients object that provides methods to get or update the recipients on the Cc line of the message.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -1908,13 +1823,7 @@ export declare namespace Office {
         /**
          * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the current item.
          *
-         * *Read mode*
-         *
          * The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To line of the message. The collection is limited to a maximum of 100 members.
-         *
-         * *Compose mode*
-         *
-         * The to property returns a Recipients object that provides methods to get or update the recipients on the To line of the message.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -2137,43 +2046,6 @@ export declare namespace Office {
          */
         item: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose;
         /**
-         * Gets the URL of the REST endpoint for this email account.
-         *
-         * Your app must have the ReadItem permission specified in its manifest to call the restUrl member in read mode.
-         *
-         * In compose mode you must call the saveAsync method before you can use the restUrl member. Your app must have ReadWriteItem permissions to call the saveAsync method.
-         *
-         * [Api set: Mailbox 1.5]
-         *
-         * @remarks
-         *
-         * The restUrl value can be used to make [REST API](https://docs.microsoft.com/outlook/rest/) calls to the user's mailbox.
-         *
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         */
-        restUrl: string;
-        /**
-         * Adds an event handler for a supported event.
-         *
-         * Currently the only supported event type is Office.EventType.ItemChanged, which is invoked when the user selects a new item. This event is used by add-ins that implement a pinnable taskpane, and allows the add-in to refresh the taskpane UI based on the currently selected item.
-         *
-         * [Api set: Mailbox 1.5]
-         *
-         * @remarks
-         *
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         *
-         * @param eventType - The event that should invoke the handler.
-         * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
-         * @param options - Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         */
-        addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
-        /**
          * Gets a dictionary containing time information in local client time.
          *
          * The dates and times used by a mail app for Outlook or Outlook Web App can use different time zones. Outlook uses the client computer time zone; Outlook Web App uses the time zone set on the Exchange Admin Center (EAC). You should handle date and time values so that the values you display on the user interface are always consistent with the time zone that the user expects.
@@ -2280,90 +2152,6 @@ export declare namespace Office {
          * @param parameters - An AppointmentForm describing the new appointment. All properties are optional.
          */
         displayNewAppointmentForm(parameters: AppointmentForm): void;
-        /**
-         * Displays a form for creating a new message.
-         *
-         * The displayNewMessageForm method opens a form that enables the user to create a new message. If parameters are specified, the message form fields are automatically populated with the contents of the parameters.
-         *
-         * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
-         *
-         * [Api set: Mailbox 1.6]
-         *
-         * @remarks
-         *
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Read
-         *
-         * @param parameters - A dictionary containing all values to be filled in for the user in the new form. All parameters are optional.
-         *        toRecipients: An array of strings containing the email addresses or an array containing an EmailAddressDetails object for each of the recipients on the To line. The array is limited to a maximum of 100 entries.
-         *        ccRecipients: An array of strings containing the email addresses or an array containing an EmailAddressDetails object for each of the recipients on the Cc line. The array is limited to a maximum of 100 entries.
-         *        bccRecipients: An array of strings containing the email addresses or an array containing an EmailAddressDetails object for each of the recipients on the Bcc line. The array is limited to a maximum of 100 entries.
-         *        subject: A string containing the subject of the message. The string is limited to a maximum of 255 characters.
-         *        htmlBody: The HTML body of the message. The body content is limited to a maximum size of 32 KB.
-         *        attachments: An array of JSON objects that are either file or item attachments.
-         *        attachments.type: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
-         *        attachments.name: A string that contains the name of the attachment, up to 255 characters in length.
-         *        attachments.url: Only used if type is set to file. The URI of the location for the file.
-         *        attachments.isInline: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
-         *        attachments.itemId: Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
-         */
-        displayNewMessageForm(parameters: any): void;
-        /**
-         * Gets a string that contains a token used to call REST APIs or Exchange Web Services.
-         *
-         * The getCallbackTokenAsync method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox. The lifetime of the callback token is 5 minutes.
-         *
-         * *REST Tokens*
-         *
-         * When a REST token is requested (options.isRest = true), the resulting token will not work to authenticate Exchange Web Services calls. The token will be limited in scope to read-only access to the current item and its attachments, unless the add-in has specified the ReadWriteMailbox permission in its manifest. If the ReadWriteMailbox permission is specified, the resulting token will grant read/write access to mail, calendar, and contacts, including the ability to send mail.
-         *
-         * The add-in should use the restUrl property to determine the correct URL to use when making REST API calls.
-         *
-         * *EWS Tokens*
-         *
-         * When an EWS token is requested (options.isRest = false), the resulting token will not work to authenticate REST API calls. The token will be limited in scope to accessing the current item.
-         *
-         * The add-in should use the ewsUrl property to determine the correct URL to use when making EWS calls.
-         *
-         * Note: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
-         *
-         * [Api set: Mailbox 1.5]
-         *
-         * @remarks
-         *
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose and read
-         *
-         * @param options - An object literal that contains one or more of the following properties.
-         *        isRest: Determines if the token provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is false.
-         *        asyncContext: Any state data that is passed to the asynchronous method.
-         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. The token is provided as a string in the asyncResult.value property.
-         */
-        getCallbackTokenAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
-        /**
-         * Gets a string that contains a token used to get an attachment or item from an Exchange Server.
-         *
-         * The getCallbackTokenAsync method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox. The lifetime of the callback token is 5 minutes.
-         *
-         * You can pass the token and an attachment identifier or item identifier to a third-party system. The third-party system uses the token as a bearer authorization token to call the Exchange Web Services (EWS) GetAttachment or GetItem operation to return an attachment or item. For example, you can create a remote service to get attachments from the selected item.
-         *
-         * Your app must have the ReadItem permission specified in its manifest to call the getCallbackTokenAsync method in read mode.
-         *
-         * In compose mode you must call the saveAsync method to get an item identifier to pass to the getCallbackTokenAsync method. Your app must have ReadWriteItem permissions to call the saveAsync method.
-         *
-         * [Api set: Mailbox 1.5]
-         *
-         * @remarks
-         *
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose and read
-         *
-         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. The token is provided as a string in the asyncResult.value property.
-         */
-        getCallbackTokenAsync(callback: (result: AsyncResult) => void): void;
         /**
          * Gets a token identifying the user and the Office Add-in.
          *
@@ -2740,15 +2528,47 @@ export declare namespace Office {
 
     }
 
+    /**
+     * A file or item attachment. Used when displaying a reply form.
+     */
     export interface ReplyFormAttachment {
+        /**
+         * Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
+         */
         type: string;
+        /**
+         * A string that contains the name of the attachment, up to 255 characters in length.
+         */
         name: string;
+        /**
+         * Only used if type is set to file. The URI of the location for the file.
+         */
         url?: string;
+        /**
+         * Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         */
+        inLine?: boolean;
+        /**
+         * Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
+         */
         itemId?: string;
     }
+
+    /**
+     * A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply form.
+     */
     export interface ReplyFormData {
+        /**
+         * A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
+         */
         htmlBody?: string;
+        /**
+         * An array of ReplyFormAttachments that are either file or item attachments.
+         */
         attachments?: ReplyFormAttachment[];
+        /**
+         * When the reply display call completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object.
+         */
         callback?: (result: AsyncResult) => void;
     }
     /**
@@ -3110,27 +2930,6 @@ export declare namespace Office {
      * Applicable Outlook mode: Compose or read
      */
     export interface UserProfile {
-        /**
-         * Gets the account type of the user associated with the mailbox. The possible values are listed in the following table.
-         *
-         * Note: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
-         *
-         * [Api set: Mailbox 1.6]
-         *
-         * @remarks
-         *
-         * |Value    |Description   |
-         * |---------|--------------|
-         * |enterprise |The mailbox is on an on-premises Exchange server.|
-         * |gmail |The mailbox is associated with a Gmail account.|
-         * |office365 |The mailbox is associated with an Office 365 work or school account.|
-         * |outlookCom |The mailbox is associated with a personal Outlook.com account.|
-         *
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         */
-        accountType: string;
         /**
          * Gets the user's display name.
          *

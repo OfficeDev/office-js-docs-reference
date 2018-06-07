@@ -1,6 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: Outlook_1_1.Office.MessageRead
+    summary: >-
+      Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
+      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
     name: Office.MessageRead
     fullName: Outlook_1_1.Office.MessageRead
     langs:
@@ -21,18 +24,8 @@ items:
       the mode of the current item.
 
 
-      \*Read mode\*
-
-
       The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc
       line of the message. The collection is limited to a maximum of 100 members.
-
-
-      \*Compose mode\*
-
-
-      The cc property returns a Recipients object that provides methods to get or update the recipients on the Cc line
-      of the message.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -132,18 +125,8 @@ items:
       the mode of the current item.
 
 
-      \*Read mode\*
-
-
       The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To
       line of the message. The collection is limited to a maximum of 100 members.
-
-
-      \*Compose mode\*
-
-
-      The to property returns a Recipients object that provides methods to get or update the recipients on the To line
-      of the message.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]

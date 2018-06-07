@@ -1,6 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: Outlook_1_3.Office.ItemRead
+    summary: >-
+      Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
+      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
     name: Office.ItemRead
     fullName: Outlook_1_3.Office.ItemRead
     langs:
@@ -18,8 +21,6 @@ items:
       - Outlook_1_3.Office.ItemRead.getFilteredEntitiesByName
       - Outlook_1_3.Office.ItemRead.getRegExMatches
       - Outlook_1_3.Office.ItemRead.getRegExMatchesByName
-      - Outlook_1_3.Office.ItemRead.getSelectedEntities
-      - Outlook_1_3.Office.ItemRead.getSelectedRegExMatches
       - Outlook_1_3.Office.ItemRead.itemClass
       - Outlook_1_3.Office.ItemRead.itemId
       - Outlook_1_3.Office.ItemRead.normalizedSubject
@@ -90,15 +91,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR An object that contains body or attachment data and a callback function htmlBody: A string that
-            contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
-            attachments: An array of JSON objects that are either file or item attachments. attachments.type: Indicates
-            the type of attachment. Must be file for a file attachment or item for an item attachment. attachments.name:
-            A string that contains the name of the attachment, up to 255 characters in length. attachments.url: Only
-            used if type is set to file. The URI of the location for the file. attachments.isLine: Only used if type is
-            set to file. If true, indicates that the attachment will be shown inline in the message body, and should not
-            be displayed in the attachment list. attachments.itemId: Only used if type is set to item. The EWS item id
-            of the attachment. This is a string up to 100 characters.
+            to 32 KB OR A ReplyFormData object that contains body or attachment data and a callback function
           type:
             - string | ReplyFormData
   - uid: Outlook_1_3.Office.ItemRead.displayReplyForm
@@ -142,15 +135,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB. OR An object that contains body or attachment data and a callback function. The object is defined
-            as follows. htmlBody: A string that contains text and HTML and that represents the body of the reply form.
-            The string is limited to 32 KB. attachments: An array of JSON objects that are either file or item
-            attachments. attachments.type: Indicates the type of attachment. Must be file for a file attachment or item
-            for an item attachment. attachments.name: A string that contains the name of the attachment, up to 255
-            characters in length. attachments.url: Only used if type is set to file. The URI of the location for the
-            file. attachments.isLine: Only used if type is set to file. If true, indicates that the attachment will be
-            shown inline in the message body, and should not be displayed in the attachment list. attachments.itemId:
-            Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
+            to 32 KB. OR A ReplyFormData object that contains body or attachment data and a callback function.
           type:
             - string | ReplyFormData
   - uid: Outlook_1_3.Office.ItemRead.getEntities
@@ -332,71 +317,6 @@ items:
           description: The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
           type:
             - string
-  - uid: Outlook_1_3.Office.ItemRead.getSelectedEntities
-    summary: >-
-      Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual
-      add-ins.
-
-
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
-
-
-      \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
-
-      Applicable Outlook mode: Read
-    name: getSelectedEntities()
-    fullName: Outlook_1_3.Office.ItemRead.getSelectedEntities
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSelectedEntities(): Entities;'
-      return:
-        type:
-          - Entities
-        description: ''
-  - uid: Outlook_1_3.Office.ItemRead.getSelectedRegExMatches
-    summary: >-
-      Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file.
-      Highlighted matches apply to contextual add-ins.
-
-
-      The getSelectedRegExMatches method returns the strings that match the regular expression defined in each
-      ItemHasRegularExpressionMatch or ItemHasKnownEntity rule element in the manifest XML file. For an
-      ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified
-      by that rule. The PropertyName simple type defines the supported properties.
-
-
-      If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression
-      should further filter the body and should not attempt to return the entire body of the item. Using a regular
-      expression such as .\* to obtain the entire body of an item does not always return the expected results. Instead,
-      use the Body.getAsync method to retrieve the entire body.
-
-
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
-
-
-      \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
-
-      Applicable Outlook mode: Read
-    name: getSelectedRegExMatches()
-    fullName: Outlook_1_3.Office.ItemRead.getSelectedRegExMatches
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getSelectedRegExMatches(): any;'
-      return:
-        type:
-          - any
-        description: >-
-          An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
-          The name of each array is equal to the corresponding value of the RegExName attribute of the matching
-          ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
   - uid: Outlook_1_3.Office.ItemRead.itemClass
     summary: >-
       Gets the Exchange Web Services item class of the selected item. Read mode only.
@@ -491,23 +411,14 @@ items:
           - string
   - uid: Outlook_1_3.Office.ItemRead.subject
     summary: >-
-      Gets or sets the description that appears in the subject field of an item.
+      Gets the description that appears in the subject field of an item.
 
 
       The subject property gets or sets the entire subject of the item, as sent by the email server.
 
 
-      \*Read mode\*
-
-
       The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading
       prefixes such as RE: and FW:.
-
-
-      \*Compose mode\*
-
-
-      The subject property returns a Subject object that provides methods to get and set the subject.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
