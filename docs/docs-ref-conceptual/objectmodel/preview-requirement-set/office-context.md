@@ -14,7 +14,7 @@ The Office.context namespace provides shared interfaces that are used by add-ins
 
 ### Namespaces
 
-[mailbox](office.mailbox): Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+[mailbox](office-mailbox): Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
 
 ### Members
 
@@ -80,7 +80,7 @@ Using Office theme colors let's you coordinate the color scheme of your add-in w
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](/javascript/api/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
 |Applicable Outlook mode| Compose or read|
 
 ##### Example
