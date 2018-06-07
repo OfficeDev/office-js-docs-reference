@@ -8,14 +8,14 @@ The Office namespace provides shared interfaces that are used by add-ins in all 
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |Applicable Outlook mode| Compose or read|
 
 ### Namespaces
 
 [context](Office.context.md): Provides shared interfaces from the Office add-ins API's context namespace for use in the Outlook add-in API.
 
-[MailboxEnums](Office.MailboxEnums.md): Includes the ItemType, EntityType, AttachmentType, RecipientType, ResponseType, and ItemNotificationMessageType enumerations.
+[MailboxEnums](/javascript/api/outlook/office.mailboxenums.attachmenttype): Includes the ItemType, EntityType, AttachmentType, RecipientType, ResponseType, and ItemNotificationMessageType enumerations.
 
 ### Members
 
@@ -38,7 +38,7 @@ Specifies the result of an asynchronous call.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |Applicable Outlook mode| Compose or read|
 ####  CoercionType :String
 
@@ -59,7 +59,7 @@ Specifies how to coerce data returned or set by the invoked method.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |Applicable Outlook mode| Compose or read|
 ####  SourceProperty :String
 
@@ -80,5 +80,5 @@ Specifies the source of the data returned by the invoked method.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |Applicable Outlook mode| Compose or read|
