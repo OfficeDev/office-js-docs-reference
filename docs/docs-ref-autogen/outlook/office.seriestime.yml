@@ -32,10 +32,21 @@ items:
       Gets the duration in minutes of a usual instance in a recurring appointment series.
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
+    remarks: |
       Minimum permission level: ReadItem
 
       Applicable Outlook mode: Compose or read
+
+      #### Examples
+
+      ```javascript
+      Office.context.mailbox.item.recurrence.getAsync(callback);
+      function callback(asyncResult){
+          var context = asyncResult.context;
+          var recurrence = asyncResult.value;
+          var duration = recurrence.seriesTime.getDuration();
+      }
+      ```
     name: getDuration()
     fullName: outlook.Office.SeriesTime.getDuration
     langs:
@@ -54,10 +65,21 @@ items:
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
+    remarks: |
       Minimum permission level: ReadItem
 
       Applicable Outlook mode: Compose or read
+
+      #### Examples
+
+      ```javascript
+      Office.context.mailbox.item.recurrence.getAsync(callback);
+      function callback(asyncResult){
+          var context = asyncResult.context;
+          var recurrence = asyncResult.value;
+          var endDate = recurrence.seriesTime.getEndDate();
+      }
+      ```
     name: getEndDate()
     fullName: outlook.Office.SeriesTime.getEndDate
     langs:
@@ -77,10 +99,21 @@ items:
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
+    remarks: |
       Minimum permission level: ReadItem
 
       Applicable Outlook mode: Compose or read
+
+      #### Examples
+
+      ```javascript
+      Office.context.mailbox.item.recurrence.getAsync(callback);
+      function callback(asyncResult){
+          var context = asyncResult.context;
+          var recurrence = asyncResult.value;
+          var endDate = recurrence.seriesTime.getEndTime();
+      }
+      ```
     name: getEndTime()
     fullName: outlook.Office.SeriesTime.getEndTime
     langs:
@@ -99,10 +132,21 @@ items:
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
+    remarks: |
       Minimum permission level: ReadItem
 
       Applicable Outlook mode: Compose or read
+
+      #### Examples
+
+      ```javascript
+      Office.context.mailbox.item.recurrence.getAsync(callback);
+      function callback(asyncResult){
+          var context = asyncResult.context;
+          var recurrence = asyncResult.value;
+          var endDate = recurrence.seriesTime.getStartDate();
+      }
+      ```
     name: getStartDate()
     fullName: outlook.Office.SeriesTime.getStartDate
     langs:
@@ -122,10 +166,17 @@ items:
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
+    remarks: |
       Minimum permission level: ReadItem
 
       Applicable Outlook mode: Compose or read
+
+      #### Examples
+
+      ```javascript
+      var seriesTimeObject = new SeriesTime()
+      seriesTimeObject.setDuration(120);
+      ```
     name: getStartTime()
     fullName: outlook.Office.SeriesTime.getStartTime
     langs:
@@ -144,10 +195,21 @@ items:
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
+    remarks: |
       Minimum permission level: ReadWriteItem
 
       Applicable Outlook mode: Compose
+
+      #### Examples
+
+      ```javascript
+      Office.context.mailbox.item.recurrence.getAsync(callback);
+      function callback(asyncResult){
+          var context = asyncResult.context;
+          var recurrence = asyncResult.value;
+          var endDate = recurrence.seriesTime.getStartTime();
+      }
+      ```
     name: setDuration(minutes)
     fullName: outlook.Office.SeriesTime.setDuration
     langs:
@@ -169,12 +231,22 @@ items:
       Sets the end date of a recurring appointment series.
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
+    remarks: |
       Minimum permission level: ReadWriteItem
 
       Applicable Outlook mode: Compose
 
       Errors: Invalid date format - The date is not in an acceptable format.
+
+      #### Examples
+
+      ```javascript
+      var seriesTimeObject = new SeriesTime()
+      seriesTimeObject.setEndDate(2017, 10, 2);
+
+      // Alternative: set end date using ISO 8601 date standard
+      seriesTimeObject.setEndDate("2017-11-02");
+      ```
     name: 'setEndDate(year, month, day)'
     fullName: outlook.Office.SeriesTime.setEndDate
     langs:
@@ -206,12 +278,22 @@ items:
       Sets the start date of a recurring appointment series.
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
+    remarks: |
       Minimum permission level: ReadWriteItem
 
       Applicable Outlook mode: Compose
 
       Errors: Invalid date format - The date is not in an acceptable format.
+
+      #### Examples
+
+      ```javascript
+      var seriesTimeObject = new SeriesTime()
+      seriesTimeObject.setStartDate(2017, 10, 2);
+
+      // Alternative: Set start date using ISO 8601 date standard
+      seriesTimeObject.setStartDate("2017-11-02");
+      ```
     name: 'setStartDate(year, month, day)'
     fullName: outlook.Office.SeriesTime.setStartDate
     langs:
@@ -245,12 +327,22 @@ items:
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
+    remarks: |
       Minimum permission level: ReadWriteItem
 
       Applicable Outlook mode: Compose
 
       Errors: Invalid time format - The time is not in an acceptable format.
+
+      #### Examples
+
+      ```javascript
+      var seriesTimeObject = new SeriesTime()
+      seriesTimeObject.setStartTime(13, 30);
+
+      // This example sets the start time of each instance of a recurring appointment series to 11:30 AM.
+      seriesTimeObject.setStartTime(11, 30);
+      ```
     name: 'setStartTime(hours, minutes)'
     fullName: outlook.Office.SeriesTime.setStartTime
     langs:

@@ -194,7 +194,7 @@ items:
 
       ```javascript
 
-      var seriesTimeObject = new seriesTime(); 
+      var seriesTimeObject = new SeriesTime(); 
 
       seriesTimeObject.setStartDate(2017,11,2);  
 
@@ -202,7 +202,7 @@ items:
 
       seriesTimeObject.setStartTime(10,30); 
 
-      SeriesTimeObject.setDuration(30);
+      seriesTimeObject.setDuration(30);
 
 
       var pattern = {"seriesTime": seriesTimeObject, "type": "Weekly", "properties": {"interval": ", "days": ["Tue",
