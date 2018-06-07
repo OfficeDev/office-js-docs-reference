@@ -4880,6 +4880,7 @@ OneNote.TableRow.load:
 
 Office.Body.getAsync:
   - |-
+    // This example gets the body of the message in plain text.
     Office.context.mailbox.item.body.getAsync(
         "text",
         { asyncContext:"This is passed to the callback" },
@@ -4929,7 +4930,7 @@ Office.Body.setSelectedDataAsync:
         callback);
 Office.CustomProperties:
   - |-
-    // DESCRIPTION EXAMPLE
+    // The following example shows how to use the loadCustomPropertiesAsync method to asynchronously load custom properties that are specific to the current item. The example also shows how to use the saveAsync method to save these properties back to the server. After loading the custom properties, the example uses the get method to read the custom property myProp, the set method to write the custom property otherProp, and then finally calls the saveAsync method to save the custom properties.
     Office.initialize = function () {
         // Checks for the DOM to load using the jQuery ready function.
         $(document).ready(function () {
@@ -4950,6 +4951,7 @@ Office.CustomProperties:
     }
 Office.CustomProperties.saveAsync:
   - |-
+    // The following JavaScript code sample shows how to asynchronously use the loadCustomPropertiesAsync method to load custom properties that are specific to the current item, and the saveAsync method to save these properties back to the server. After loading the custom properties, the code sample uses the get method to read the custom property myProp, the set method to write the custom property otherProp, and then finally calls the saveAsync method to save the custom properties.
     // The initialize function is required for all add-ins.
     Office.initialize = function () {
         // Checks for the DOM to load using the jQuery ready function.
@@ -5098,6 +5100,7 @@ Office.NotificationMessages.replaceAsync:
     });
 Office.Recipients.addAsync:
   - |-
+    // The following example creates an array of EmailUser objects and adds them to the To recipients of the message.
     var newRecipients = [
         {
             "displayName": "Allie Bellew",
@@ -5118,6 +5121,7 @@ Office.Recipients.addAsync:
     });
 Office.Recipients.getAsync:
   - |-
+    // The following example gets the optional attendees of a meeting.
     Office.context.mailbox.item.optionalAttendees.getAsync(function(result) {
         if (result.error) {
             showMessage(result.error);
@@ -5131,6 +5135,7 @@ Office.Recipients.getAsync:
     });
 Office.Recipients.setAsync:
   - |-
+    // The following example creates an array of EmailUser objects and replaces the CC recipients of the message with the array.
     var newRecipients = [
         {
             "displayName": "Allie Bellew",
@@ -5151,6 +5156,7 @@ Office.Recipients.setAsync:
     });
 Office.Recurrence.getAsync:
   - |-
+    // This example gets the recurrence object of an appointment or meeting request item.
     Office.context.mailbox.item.recurrence.getAsync(callback);
     function callback(asyncResult){
         var context = asyncResult.context;
@@ -5162,6 +5168,7 @@ Office.Recurrence.getAsync:
     Recurrence = {"recurrenceType": "weekly","recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"}, "seriesTime": {seriesTimeObject}, "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
 Office.Recurrence.setAsync:
   - |-
+    // The following example sets the recurrence pattern of an appointment series.
     var seriesTimeObject = new SeriesTime(); 
     seriesTimeObject.setStartDate(2017,11,2);  
     seriesTimeObject.setEndDate(2017,12,2); 
@@ -5184,6 +5191,7 @@ Office.RoamingSettings:
     Office.context.roamingSettings.saveAsync();
 Office.SeriesTime.getDuration:
   - |-
+    // This example gets the duration of a usual instance in a recurring appointment series.
     Office.context.mailbox.item.recurrence.getAsync(callback);
     function callback(asyncResult){
         var context = asyncResult.context;
@@ -5192,6 +5200,7 @@ Office.SeriesTime.getDuration:
     }
 Office.SeriesTime.getEndDate:
   - |-
+    // This example gets the end date of a recurring appointment series.
     Office.context.mailbox.item.recurrence.getAsync(callback);
     function callback(asyncResult){
         var context = asyncResult.context;
@@ -5200,6 +5209,7 @@ Office.SeriesTime.getEndDate:
     }
 Office.SeriesTime.getEndTime:
   - |-
+    // This example gets the end time of a usual instance in a recurring appointment series.
     Office.context.mailbox.item.recurrence.getAsync(callback);
     function callback(asyncResult){
         var context = asyncResult.context;
@@ -5208,6 +5218,7 @@ Office.SeriesTime.getEndTime:
     }
 Office.SeriesTime.getStartDate:
   - |-
+    // This example gets the start date of a recurring appointment series.
     Office.context.mailbox.item.recurrence.getAsync(callback);
     function callback(asyncResult){
         var context = asyncResult.context;
@@ -5216,10 +5227,12 @@ Office.SeriesTime.getStartDate:
     }
 Office.SeriesTime.getStartTime:
   - |-
+    // This example gets the start time of a usual instance in a recurring appointment series.
     var seriesTimeObject = new SeriesTime()
     seriesTimeObject.setDuration(120);
 Office.SeriesTime.setDuration:
   - |-
+    // This example sets the duration of each appointment in a recurring series to 2 hours.
     Office.context.mailbox.item.recurrence.getAsync(callback);
     function callback(asyncResult){
         var context = asyncResult.context;
@@ -5228,25 +5241,31 @@ Office.SeriesTime.setDuration:
     }
 Office.SeriesTime.setEndDate:
   - |-
+    // This example sets the end date of a recurring appointment series to November 2, 2017.
     var seriesTimeObject = new SeriesTime()
     seriesTimeObject.setEndDate(2017, 10, 2);
 
-    // Alternative: set end date using ISO 8601 date standard
+    // Alternative: Set the end date using ISO 8601 date standard
     seriesTimeObject.setEndDate("2017-11-02");
-Office.SeriesTime.setStartTime:
-  - |-
-    var seriesTimeObject = new SeriesTime()
-    seriesTimeObject.setStartTime(13, 30);
-
-    // This example sets the start time of each instance of a recurring appointment series to 11:30 AM.
-    seriesTimeObject.setStartTime(11, 30);
 Office.SeriesTime.setStartDate:
   - |-
+    // This example sets the start date of a recurring appointment series to November 2, 2017.
     var seriesTimeObject = new SeriesTime()
     seriesTimeObject.setStartDate(2017, 10, 2);
 
     // Alternative: Set start date using ISO 8601 date standard
     seriesTimeObject.setStartDate("2017-11-02");
+Office.SeriesTime.setStartTime:
+  - |-
+    // This example sets the start time of each instance of a recurring appointment series to 1:30 PM.
+    var seriesTimeObject = new SeriesTime()
+    seriesTimeObject.setStartTime(13, 30);
+
+    // This example sets the start time of each instance of a recurring appointment series to 11:30 AM.
+    seriesTimeObject.setStartTime(11, 30);
+
+    // Alternative: Set the start time of all instances of a recurring appointment series to 11:30 PM.
+    seriesTimeObject.setStartTime("T23:30:00");
 Office.Time.setAsync:
   - |-
     var startTime = new Date("3/14/2015");

@@ -46,6 +46,7 @@ items:
       #### Examples
 
       ```javascript
+      // This example gets the body of the message in plain text.
       Office.context.mailbox.item.body.getAsync(
           "text",
           { asyncContext:"This is passed to the callback" },

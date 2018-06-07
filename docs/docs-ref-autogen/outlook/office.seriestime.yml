@@ -40,6 +40,7 @@ items:
       #### Examples
 
       ```javascript
+      // This example gets the duration of a usual instance in a recurring appointment series.
       Office.context.mailbox.item.recurrence.getAsync(callback);
       function callback(asyncResult){
           var context = asyncResult.context;
@@ -73,6 +74,7 @@ items:
       #### Examples
 
       ```javascript
+      // This example gets the end date of a recurring appointment series.
       Office.context.mailbox.item.recurrence.getAsync(callback);
       function callback(asyncResult){
           var context = asyncResult.context;
@@ -107,6 +109,7 @@ items:
       #### Examples
 
       ```javascript
+      // This example gets the end time of a usual instance in a recurring appointment series.
       Office.context.mailbox.item.recurrence.getAsync(callback);
       function callback(asyncResult){
           var context = asyncResult.context;
@@ -140,6 +143,7 @@ items:
       #### Examples
 
       ```javascript
+      // This example gets the start date of a recurring appointment series.
       Office.context.mailbox.item.recurrence.getAsync(callback);
       function callback(asyncResult){
           var context = asyncResult.context;
@@ -174,6 +178,7 @@ items:
       #### Examples
 
       ```javascript
+      // This example gets the start time of a usual instance in a recurring appointment series.
       var seriesTimeObject = new SeriesTime()
       seriesTimeObject.setDuration(120);
       ```
@@ -203,6 +208,7 @@ items:
       #### Examples
 
       ```javascript
+      // This example sets the duration of each appointment in a recurring series to 2 hours.
       Office.context.mailbox.item.recurrence.getAsync(callback);
       function callback(asyncResult){
           var context = asyncResult.context;
@@ -241,10 +247,11 @@ items:
       #### Examples
 
       ```javascript
+      // This example sets the end date of a recurring appointment series to November 2, 2017.
       var seriesTimeObject = new SeriesTime()
       seriesTimeObject.setEndDate(2017, 10, 2);
 
-      // Alternative: set end date using ISO 8601 date standard
+      // Alternative: Set the end date using ISO 8601 date standard
       seriesTimeObject.setEndDate("2017-11-02");
       ```
     name: 'setEndDate(year, month, day)'
@@ -288,6 +295,7 @@ items:
       #### Examples
 
       ```javascript
+      // This example sets the start date of a recurring appointment series to November 2, 2017.
       var seriesTimeObject = new SeriesTime()
       seriesTimeObject.setStartDate(2017, 10, 2);
 
@@ -337,11 +345,15 @@ items:
       #### Examples
 
       ```javascript
+      // This example sets the start time of each instance of a recurring appointment series to 1:30 PM.
       var seriesTimeObject = new SeriesTime()
       seriesTimeObject.setStartTime(13, 30);
 
       // This example sets the start time of each instance of a recurring appointment series to 11:30 AM.
       seriesTimeObject.setStartTime(11, 30);
+
+      // Alternative: Set the start time of all instances of a recurring appointment series to 11:30 PM.
+      seriesTimeObject.setStartTime("T23:30:00");
       ```
     name: 'setStartTime(hours, minutes)'
     fullName: outlook.Office.SeriesTime.setStartTime
