@@ -14,7 +14,7 @@ The Office.context namespace provides shared interfaces that are used by add-ins
 
 ### Namespaces
 
-[mailbox](office-mailbox): Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+[mailbox](/javascript/office/objectmodel/preview-requirement-set/office-mailbox): Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
 
 ### Members
 
@@ -113,5 +113,5 @@ The `RoamingSettings` object lets you store and access data for a mail add-in th
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](../outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
 |Applicable Outlook mode| Compose or read|
