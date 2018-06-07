@@ -9,12 +9,12 @@ The Office.context namespace provides shared interfaces that are used by add-ins
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |Applicable Outlook mode| Compose or read|
 
 ### Namespaces
 
-[mailbox](Office.context.mailbox.md): Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+[mailbox](/javascript/office/objectmodel/requirement-set-1.4/office-mailbox): Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
 
 ### Members
 
@@ -32,7 +32,7 @@ The `displayLanguage` value reflects the current **Display Language** setting sp
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |Applicable Outlook mode| Compose or read|
 
 ##### Example
@@ -80,7 +80,7 @@ Using Office theme colors let's you coordinate the color scheme of your add-in w
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.3|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
 |Applicable Outlook mode| Compose or read|
 
 ##### Example
@@ -98,7 +98,7 @@ function applyOfficeTheme(){
 }
 ```
 
-####  roamingSettings :[RoamingSettings](RoamingSettings.md)
+####  roamingSettings :[RoamingSettings](/javascript/api/outlook_1_4/office.RoamingSettings)
 
 Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
 
@@ -106,12 +106,12 @@ The `RoamingSettings` object lets you store and access data for a mail add-in th
 
 ##### Type:
 
-*   [RoamingSettings](RoamingSettings.md)
+*   [RoamingSettings](/javascript/api/outlook_1_4/office.RoamingSettings)
 
 ##### Requirements
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| Restricted|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
 |Applicable Outlook mode| Compose or read|
