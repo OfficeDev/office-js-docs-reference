@@ -39,7 +39,8 @@ items:
       #### Examples
 
       ```javascript
-      // The following example creates an array of EmailUser objects and adds them to the To recipients of the message.
+      // The following example creates an array of EmailUser objects
+      // and adds them to the To recipients of the message.
       var newRecipients = [
           {
               "displayName": "Allie Bellew",
@@ -151,24 +152,18 @@ items:
       - EmailAddressDetails objects
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >
+    remarks: |
       Minimum permission level: ReadWriteItem
-
 
       Applicable Outlook mode: Compose
 
-
       Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
-
 
       #### Examples
 
-
       ```javascript
-
-      // The following example creates an array of EmailUser objects and replaces the CC recipients of the message with
-      the array.
-
+      // The following example creates an array of EmailUser objects and
+      // replaces the CC recipients of the message with the array.
       var newRecipients = [
           {
               "displayName": "Allie Bellew",
@@ -180,7 +175,6 @@ items:
           }
       ];
 
-
       Office.context.mailbox.item.cc.setAsync(newRecipients, function(result) {
           if (result.error) {
               showMessage(result.error);
@@ -188,7 +182,6 @@ items:
               showMessage("Recipients overwritten");
           }
       });
-
       ```
     name: 'setAsync(recipients, options, callback)'
     fullName: outlook.Office.Recipients.setAsync

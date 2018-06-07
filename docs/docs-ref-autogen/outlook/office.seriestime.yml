@@ -299,7 +299,7 @@ items:
       var seriesTimeObject = new SeriesTime()
       seriesTimeObject.setStartDate(2017, 10, 2);
 
-      // Alternative: Set start date using ISO 8601 date standard
+      // Alternative: Set the start date using ISO 8601 date standard
       seriesTimeObject.setStartDate("2017-11-02");
       ```
     name: 'setStartDate(year, month, day)'

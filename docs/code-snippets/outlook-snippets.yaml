@@ -50,7 +50,13 @@ Office.Body.setSelectedDataAsync:
         callback);
 Office.CustomProperties:
   - |-
-    // The following example shows how to use the loadCustomPropertiesAsync method to asynchronously load custom properties that are specific to the current item. The example also shows how to use the saveAsync method to save these properties back to the server. After loading the custom properties, the example uses the get method to read the custom property myProp, the set method to write the custom property otherProp, and then finally calls the saveAsync method to save the custom properties.
+    // The following example shows how to use the loadCustomPropertiesAsync method
+    // to asynchronously load custom properties that are specific to the current item.
+    // The example also shows how to use the saveAsync method to save these properties
+    // back to the server. After loading the custom properties, the example uses the
+    // get method to read the custom property myProp, the set method to write the
+    // custom property otherProp, and then finally calls the saveAsync method to save
+    // the custom properties.
     Office.initialize = function () {
         // Checks for the DOM to load using the jQuery ready function.
         $(document).ready(function () {
@@ -71,7 +77,14 @@ Office.CustomProperties:
     }
 Office.CustomProperties.saveAsync:
   - |-
-    // The following JavaScript code sample shows how to asynchronously use the loadCustomPropertiesAsync method to load custom properties that are specific to the current item, and the saveAsync method to save these properties back to the server. After loading the custom properties, the code sample uses the get method to read the custom property myProp, the set method to write the custom property otherProp, and then finally calls the saveAsync method to save the custom properties.
+    // The following JavaScript code sample shows how to asynchronously use
+    // the loadCustomPropertiesAsync method to load custom properties that
+    // are specific to the current item, and the saveAsync method to save
+    // these properties back to the server. After loading the custom properties,
+    // the code sample uses the get method to read the custom property myProp,
+    // the set method to write the custom property otherProp, and then finally
+    // calls the saveAsync method to save the custom properties.
+
     // The initialize function is required for all add-ins.
     Office.initialize = function () {
         // Checks for the DOM to load using the jQuery ready function.
@@ -123,7 +136,9 @@ Office.Event:
             <FunctionName>testEventObject</FunctionName>
         </Action>
     </Control>
-    // The button has an id attribute set to eventTestButton, and will invoke the testEventObject function defined in the add-in. That function looks like this:
+    // The button has an id attribute set to eventTestButton, and will invoke
+    // the testEventObject function defined in the add-in.
+    // That function looks like this:
     function testEventObject(event) {
         // The event object implements the Event interface
 
@@ -158,7 +173,8 @@ Office.Event.completed:
         event.completed();
     }
 
-    // In the following example, the checkMessage function has been registered as an event handler for ItemSend.
+    // In the following example, the checkMessage function has
+    // been registered as an event handler for ItemSend.
     function checkMessage(event) {
         // Get the item being sent
         var outgoingMsg = Office.context.mailbox.item;
@@ -220,7 +236,8 @@ Office.NotificationMessages.replaceAsync:
     });
 Office.Recipients.addAsync:
   - |-
-    // The following example creates an array of EmailUser objects and adds them to the To recipients of the message.
+    // The following example creates an array of EmailUser objects
+    // and adds them to the To recipients of the message.
     var newRecipients = [
         {
             "displayName": "Allie Bellew",
@@ -255,7 +272,8 @@ Office.Recipients.getAsync:
     });
 Office.Recipients.setAsync:
   - |-
-    // The following example creates an array of EmailUser objects and replaces the CC recipients of the message with the array.
+    // The following example creates an array of EmailUser objects and
+    // replaces the CC recipients of the message with the array.
     var newRecipients = [
         {
             "displayName": "Allie Bellew",
