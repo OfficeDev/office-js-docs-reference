@@ -29,12 +29,35 @@ items:
       - EmailAddressDetails objects
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
+    remarks: |
       Minimum permission level: ReadWriteItem
 
       Applicable Outlook mode: Compose
 
       Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
+
+      #### Examples
+
+      ```javascript
+      var newRecipients = [
+          {
+              "displayName": "Allie Bellew",
+              "emailAddress": "allieb@contoso.com"
+          },
+          {
+              "displayName": "Alex Darrow",
+              "emailAddress": "alexd@contoso.com"
+          }
+      ];
+
+      Office.context.mailbox.item.to.addAsync(newRecipients, function(result) {
+          if (result.error) {
+              showMessage(result.error);
+          } else {
+              showMessage("Recipients added");
+          }
+      });
+      ```
     name: 'addAsync(recipients, options, callback)'
     fullName: outlook.Office.Recipients.addAsync
     langs:
@@ -73,10 +96,26 @@ items:
       When the call completes, the asyncResult.value property will contain an array of EmailAddressDetails objects.
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
+    remarks: |
       Minimum permission level: ReadItem
 
       Applicable Outlook mode: Compose
+
+      #### Examples
+
+      ```javascript
+      Office.context.mailbox.item.optionalAttendees.getAsync(function(result) {
+          if (result.error) {
+              showMessage(result.error);
+          } else {
+              var msg = "";
+              result.value.forEach(function(recip, index) {
+                  msg = msg + recip.displayName + " (" + recip.emailAddress + ");";
+              });
+              showMessage(msg);
+          }
+      });
+      ```
     name: getAsync(callback)
     fullName: outlook.Office.Recipients.getAsync
     langs:
@@ -110,12 +149,35 @@ items:
       - EmailAddressDetails objects
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
+    remarks: |
       Minimum permission level: ReadWriteItem
 
       Applicable Outlook mode: Compose
 
       Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
+
+      #### Examples
+
+      ```javascript
+      var newRecipients = [
+          {
+              "displayName": "Allie Bellew",
+              "emailAddress": "allieb@contoso.com"
+          },
+          {
+              "displayName": "Alex Darrow",
+              "emailAddress": "alexd@contoso.com"
+          }
+      ];
+
+      Office.context.mailbox.item.cc.setAsync(newRecipients, function(result) {
+          if (result.error) {
+              showMessage(result.error);
+          } else {
+              showMessage("Recipients overwritten");
+          }
+      });
+      ```
     name: 'setAsync(recipients, options, callback)'
     fullName: outlook.Office.Recipients.setAsync
     langs:

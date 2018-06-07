@@ -49,8 +49,8 @@ items:
         description: ''
   - uid: outlook.Office.SeriesTime.getEndDate
     summary: >-
-      Gets the end date of a recurrence pattern in the following \[ISO
-      8601\](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD"
+      Gets the end date of a recurrence pattern in the following [ISO
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD"
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -72,8 +72,8 @@ items:
   - uid: outlook.Office.SeriesTime.getEndTime
     summary: >-
       Gets the end time of a usual appointment or meeting request instance of a recurrence pattern in whichever time
-      zone that the user or add-in set the recurrence pattern using the following \[ISO
-      8601\](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm"
+      zone that the user or add-in set the recurrence pattern using the following [ISO
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm"
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -94,8 +94,8 @@ items:
         description: ''
   - uid: outlook.Office.SeriesTime.getStartDate
     summary: >-
-      Gets the start date of a recurrence pattern in the following \[ISO
-      8601\](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD"
+      Gets the start date of a recurrence pattern in the following [ISO
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD"
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -117,8 +117,8 @@ items:
   - uid: outlook.Office.SeriesTime.getStartTime
     summary: >-
       Gets the start time of a usual appointment instance of a recurrence pattern in whichever time zone that the
-      user/add-in set the recurrence pattern using the following \[ISO
-      8601\](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm"
+      user/add-in set the recurrence pattern using the following [ISO
+      8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm"
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]

@@ -1,319 +1,320 @@
 Office.Body.getAsync:
   - |-
-  Office.context.mailbox.item.body.getAsync(
-    "text",
-    { asyncContext:"This is passed to the callback" },
-    function callback(result) {
-      // Do something with the result
-    });
+    Office.context.mailbox.item.body.getAsync(
+        "text",
+        { asyncContext:"This is passed to the callback" },
+        function callback(result) {
+            // Do something with the result
+        });
 
-  //The following is an example of the result parameter passed to the callback function.
-  {
-    "value": "TEXT of whole body (including threads below)",
-    "status": "succeeded",
-    "asyncContext": "This is passed to the callback"
-  }
+    //The following is an example of the result parameter passed to the callback function.
+    {
+        "value": "TEXT of whole body (including threads below)",
+        "status": "succeeded",
+        "asyncContext": "This is passed to the callback"
+    }
 Office.Body.prependAsync:
   - |-
-  // DESCRIPTION EXAMPLE
-  Office.context.mailbox.item.body.prependAsync(
-    '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-    {coercionType: Office.CoercionType.Html},
-    callback);
+    // DESCRIPTION EXAMPLE
+    Office.context.mailbox.item.body.prependAsync(
+        '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
+        {coercionType: Office.CoercionType.Html},
+        callback);
 Office.Body.setAsync:
   - |-
-  // DESCRIPTION EXAMPLE
-  Office.context.mailbox.item.body.setAsync(
-    '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-    {coercionType: Office.CoercionType.Html},
-    callback);
-  Office.context.mailbox.item.body.setAsync(
-    "<b>(replaces all body, including threads you are replying to that may be on the bottom)</b>",
-    { coercionType:"html", asyncContext:"This is passed to the callback" },
-    function callback(result) {
-      // Process the result
+    // DESCRIPTION EXAMPLE
+    Office.context.mailbox.item.body.setAsync(
+        '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
+        {coercionType: Office.CoercionType.Html},
+        callback);
+    Office.context.mailbox.item.body.setAsync(
+        "<b>(replaces all body, including threads you are replying to that may be on the bottom)</b>",
+        { coercionType:"html", asyncContext:"This is passed to the callback" },
+        function callback(result) {
+            // Process the result
     });
 
-  // The following is an example of the result parameter passed to the callback function.
-  {
-    "value":null,
-    "status":"succeeded",
-    "asyncContext":"This is passed to the callback"
-  }
+    // The following is an example of the result parameter passed to the callback function.
+    {
+        "value":null,
+        "status":"succeeded",
+        "asyncContext":"This is passed to the callback"
+    }
 Office.Body.setSelectedDataAsync:
   - |-
-  // DESCRIPTION EXAMPLE
-  Office.context.mailbox.item.body.setSelectedDataAsync(
-    '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-    {coercionType: Office.CoercionType.Html},
-    callback);
+    // DESCRIPTION EXAMPLE
+    Office.context.mailbox.item.body.setSelectedDataAsync(
+        '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
+        {coercionType: Office.CoercionType.Html},
+        callback);
 Office.CustomProperties:
   - |-
-  // DESCRIPTION EXAMPLE
-  Office.initialize = function () {
-    // Checks for the DOM to load using the jQuery ready function.
-    $(document).ready(function () {
-      // After the DOM is loaded, add-in-specific code can run.
-      var mailbox = Office.context.mailbox;
-      mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
-    });
-  }
-  function customPropsCallback(asyncResult) {
-    var customProps = asyncResult.value;
-    var myProp = customProps.get("myProp");
-
-    customProps.set("otherProp", "value");
-    customProps.saveAsync(saveCallback);
-  }
-
-  function saveCallback(asyncResult) {
-  }
-  Office.CustomProperties.saveAsync:
-  - |-
-  // The initialize function is required for all add-ins.
-  Office.initialize = function () {
-    // Checks for the DOM to load using the jQuery ready function.
-    $(document).ready(function () {
-      // After the DOM is loaded, add-in-specific code can run.
-      var item = Office.context.mailbox.item;
-      item.loadCustomPropertiesAsync(customPropsCallback);
-    });
-  }
-  function customPropsCallback(asyncResult) {
-    var customProps = asyncResult.value;
-    var myProp = customProps.get("myProp");
-
-    customProps.set("otherProp", "value");
-    customProps.saveAsync(saveCallback);
-  }
-
-  function saveCallback(asyncResult) {
-    if (asyncResult.status == Office.AsyncResultStatus.Failed){
-      write(asyncResult.error.message);
+    // DESCRIPTION EXAMPLE
+    Office.initialize = function () {
+        // Checks for the DOM to load using the jQuery ready function.
+        $(document).ready(function () {
+            // After the DOM is loaded, add-in-specific code can run.
+            var mailbox = Office.context.mailbox;
+            mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
+        });
     }
-    else {
-      // Async call to save custom properties completed.
-      // Proceed to do the appropriate for your add-in.
+    function customPropsCallback(asyncResult) {
+        var customProps = asyncResult.value;
+        var myProp = customProps.get("myProp");
+
+        customProps.set("otherProp", "value");
+        customProps.saveAsync(saveCallback);
     }
-  }
 
-  // Writes to a div with id='message' on the page.
-  function write(message){
-    document.getElementById('message').innerText += message;
-  }
-  Office.Event:
+    function saveCallback(asyncResult) {
+    }
+Office.CustomProperties.saveAsync:
   - |-
-  // DESCRIPTION EXAMPLE
-  // MANIFEST EXAMPLE
-  <Control xsi:type="Button" id="eventTestButton">
-    <Label resid="eventButtonLabel" />
-    <Tooltip resid="eventButtonTooltip" />
-    <Supertip>
-      <Title resid="eventSuperTipTitle" />
-      <Description resid="eventSuperTipDescription" />
-    </Supertip>
-    <Icon>
-      <bt:Image size="16" resid="blue-icon-16" />
-      <bt:Image size="32" resid="blue-icon-32" />
-      <bt:Image size="80" resid="blue-icon-80" />
-    </Icon>
-    <Action xsi:type="ExecuteFunction">
-      <FunctionName>testEventObject</FunctionName>
-    </Action>
-  </Control>
-  // The button has an id attribute set to eventTestButton, and will invoke the testEventObject function defined in the add-in. That function looks like this:
-  function testEventObject(event) {
-    // The event object implements the Event interface
+    // The initialize function is required for all add-ins.
+    Office.initialize = function () {
+        // Checks for the DOM to load using the jQuery ready function.
+        $(document).ready(function () {
+            // After the DOM is loaded, add-in-specific code can run.
+            var item = Office.context.mailbox.item;
+            item.loadCustomPropertiesAsync(customPropsCallback);
+        });
+    }
+    function customPropsCallback(asyncResult) {
+        var customProps = asyncResult.value;
+        var myProp = customProps.get("myProp");
 
-    // This value will be "eventTestButton"
-    var buttonId = event.source.id;
+        customProps.set("otherProp", "value");
+        customProps.saveAsync(saveCallback);
+    }
 
-    // Signal to the host app that processing is complete.
-    event.completed();
-  }
+    function saveCallback(asyncResult) {
+        if (asyncResult.status == Office.AsyncResultStatus.Failed){
+            write(asyncResult.error.message);
+        }
+        else {
+            // Async call to save custom properties completed.
+            // Proceed to do the appropriate for your add-in.
+        }
+    }
+
+    // Writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message;
+    }
+Office.Event:
+  - |-
+    // DESCRIPTION EXAMPLE
+    // MANIFEST EXAMPLE
+    <Control xsi:type="Button" id="eventTestButton">
+        <Label resid="eventButtonLabel" />
+        <Tooltip resid="eventButtonTooltip" />
+        <Supertip>
+            <Title resid="eventSuperTipTitle" />
+            <Description resid="eventSuperTipDescription" />
+        </Supertip>
+        <Icon>
+            <bt:Image size="16" resid="blue-icon-16" />
+            <bt:Image size="32" resid="blue-icon-32" />
+            <bt:Image size="80" resid="blue-icon-80" />
+        </Icon>
+        <Action xsi:type="ExecuteFunction">
+            <FunctionName>testEventObject</FunctionName>
+        </Action>
+    </Control>
+    // The button has an id attribute set to eventTestButton, and will invoke the testEventObject function defined in the add-in. That function looks like this:
+    function testEventObject(event) {
+        // The event object implements the Event interface
+
+        // This value will be "eventTestButton"
+        var buttonId = event.source.id;
+
+        // Signal to the host app that processing is complete.
+        event.completed();
+    }
 Office.Event.source:
   - |-
-  // Function is used by two buttons:
-  // button1 and button2
-  function multiButton (event) {
-    // Check which button was clicked
-    var buttonId = event.source.id;
+    // Function is used by two buttons:
+    // button1 and button2
+    function multiButton (event) {
+        // Check which button was clicked
+        var buttonId = event.source.id;
 
-    if (buttonId === 'button1') {
-      doButton1Action();
-    else {
-      doButton2Action();
+        if (buttonId === 'button1') {
+            doButton1Action();
+        }
+        else {
+            doButton2Action();
+        }
+
+        event.completed();
     }
-
-    event.completed();
-  }
 Office.Event.completed:
   - |-
-  function processItem (event) {
-    // Do some processing
+    function processItem (event) {
+        // Do some processing
 
-    event.completed();
-  }
+        event.completed();
+    }
 
-  // In the following example, the checkMessage function has been registered as an event handler for ItemSend.
-  function checkMessage(event) {
-    // Get the item being sent
-    var outgoingMsg = Office.context.mailbox.item;
+    // In the following example, the checkMessage function has been registered as an event handler for ItemSend.
+    function checkMessage(event) {
+        // Get the item being sent
+        var outgoingMsg = Office.context.mailbox.item;
 
-    // Check if subject contains "BLOCK"
-    outgoingMsg.subject.getAsync(function (result) {
-      // Subject is in result.value
-      if (result.value.indexOf('BLOCK') != -1) {
-        // Value is found, stop send
-        event.completed({allowEvent = false});
-      } else {
-        // Value wasn't found, allow send
-        event.completed({allowEvent = true});
-      }
-    });
-  }
+        // Check if subject contains "BLOCK"
+        outgoingMsg.subject.getAsync(function (result) {
+            // Subject is in result.value
+            if (result.value.indexOf('BLOCK') != -1) {
+                // Value is found, stop send
+                event.completed({allowEvent = false});
+            } else {
+                // Value wasn't found, allow send
+                event.completed({allowEvent = true});
+            }
+        });
+    }
 Office.NotificationMessages.addAsync:
   - |-
-  // Create three notifications, each with a different key
-  Office.context.mailbox.item.notificationMessages.addAsync("progress", {
-    type: "progressIndicator",
-    message : "An add-in is processing this message."
-  });
-  Office.context.mailbox.item.notificationMessages.addAsync("information", {
-    type: "informationalMessage",
-    message : "The add-in processed this message.",
-    icon : "iconid",
-    persistent: false
-  });
-  Office.context.mailbox.item.notificationMessages.addAsync("error", {
-    type: "errorMessage",
-    message : "The add-in failed to process this message."
-  });
-Office.NotificationMessages.getAllAsync:
-  - |-
-  // Get all notifications
-  Office.context.mailbox.item.notificationMessages.getAllAsync(function (asyncResult) {
-    if (asyncResult.status != "failed") {
-      Office.context.mailbox.item.notificationMessages.replaceAsync( "notifications", {
+    // Create three notifications, each with a different key
+    Office.context.mailbox.item.notificationMessages.addAsync("progress", {
+        type: "progressIndicator",
+        message : "An add-in is processing this message."
+    });
+    Office.context.mailbox.item.notificationMessages.addAsync("information", {
         type: "informationalMessage",
-        message : "Found " + asyncResult.value.length + " notifications.",
+        message : "The add-in processed this message.",
         icon : "iconid",
         persistent: false
-      });
-    }
-  });
+    });
+    Office.context.mailbox.item.notificationMessages.addAsync("error", {
+        type: "errorMessage",
+        message : "The add-in failed to process this message."
+    });
+Office.NotificationMessages.getAllAsync:
+  - |-
+    // Get all notifications
+    Office.context.mailbox.item.notificationMessages.getAllAsync(function (asyncResult) {
+        if (asyncResult.status != "failed") {
+            Office.context.mailbox.item.notificationMessages.replaceAsync( "notifications", {
+                type: "informationalMessage",
+                message : "Found " + asyncResult.value.length + " notifications.",
+                icon : "iconid",
+                persistent: false
+            });
+        }
+    });
 Office.NotificationMessages.removeAsync:
   - |-
-  // Remove a notification
-  Office.context.mailbox.item.notificationMessages.removeAsync("progress");
+    // Remove a notification
+    Office.context.mailbox.item.notificationMessages.removeAsync("progress");
 Office.NotificationMessages.replaceAsync:
   - |-
-  // Replace a notification with an informational notification
-  Office.context.mailbox.item.notificationMessages.replaceAsync("progress", {
-    type: "informationalMessage",
-    message : "The message was processed successfully.",
-    icon : "iconid",
-    persistent: false
-  });
+    // Replace a notification with an informational notification
+    Office.context.mailbox.item.notificationMessages.replaceAsync("progress", {
+        type: "informationalMessage",
+        message : "The message was processed successfully.",
+        icon : "iconid",
+        persistent: false
+    });
 Office.Recipients.addAsync:
   - |-
-  var newRecipients = [
-    {
-      "displayName": "Allie Bellew",
-      "emailAddress": "allieb@contoso.com"
-    },
-    {
-      "displayName": "Alex Darrow",
-      "emailAddress": "alexd@contoso.com"
-    }
-  ];
+    var newRecipients = [
+        {
+            "displayName": "Allie Bellew",
+            "emailAddress": "allieb@contoso.com"
+        },
+        {
+            "displayName": "Alex Darrow",
+            "emailAddress": "alexd@contoso.com"
+        }
+    ];
 
-  Office.context.mailbox.item.to.addAsync(newRecipients, function(result) {
-    if (result.error) {
-      showMessage(result.error);
-    } else {
-      showMessage("Recipients added");
-    }
-  });
+    Office.context.mailbox.item.to.addAsync(newRecipients, function(result) {
+        if (result.error) {
+            showMessage(result.error);
+        } else {
+            showMessage("Recipients added");
+        }
+    });
 Office.Recipients.getAsync:
   - |-
-  Office.context.mailbox.item.optionalAttendees.getAsync(function(result) {
-    if (result.error) {
-      showMessage(result.error);
-    } else {
-      var msg = "";
-      result.value.forEach(function(recip, index) {
-        msg = msg + recip.displayName + " (" + recip.emailAddress + ");";
-      });
-      showMessage(msg);
-    }
-  });
+    Office.context.mailbox.item.optionalAttendees.getAsync(function(result) {
+        if (result.error) {
+            showMessage(result.error);
+        } else {
+            var msg = "";
+            result.value.forEach(function(recip, index) {
+                msg = msg + recip.displayName + " (" + recip.emailAddress + ");";
+            });
+            showMessage(msg);
+        }
+    });
 Office.Recipients.setAsync:
   - |-
-  var newRecipients = [
-    {
-      "displayName": "Allie Bellew",
-      "emailAddress": "allieb@contoso.com"
-    },
-    {
-      "displayName": "Alex Darrow",
-      "emailAddress": "alexd@contoso.com"
-    }
-  ];
+    var newRecipients = [
+        {
+            "displayName": "Allie Bellew",
+            "emailAddress": "allieb@contoso.com"
+        },
+        {
+            "displayName": "Alex Darrow",
+            "emailAddress": "alexd@contoso.com"
+        }
+    ];
 
-  Office.context.mailbox.item.cc.setAsync(newRecipients, function(result) {
-    if (result.error) {
-      showMessage(result.error);
-    } else {
-      showMessage("Recipients overwritten");
-    }
-  });
+    Office.context.mailbox.item.cc.setAsync(newRecipients, function(result) {
+        if (result.error) {
+            showMessage(result.error);
+        } else {
+            showMessage("Recipients overwritten");
+        }
+    });
 Office.Recurrence.getAsync:
   - |-
-  Office.context.mailbox.item.recurrence.getAsync(callback);
-  function callback(asyncResult){
-      var context = asyncResult.context;
-      var recurrence = asyncResult.value;
-      var endDate = recurrence.seriesTime.getEndDate();
-  }
+    Office.context.mailbox.item.recurrence.getAsync(callback);
+    function callback(asyncResult){
+        var context = asyncResult.context;
+        var recurrence = asyncResult.value;
+        var endDate = recurrence.seriesTime.getEndDate();
+    }
 
-  // The following is an example of the results of the getAsync call.
-  Recurrence = {"recurrenceType": "weekly","recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"}, "seriesTime": {seriesTimeObject}, "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
+    // The following is an example of the results of the getAsync call.
+    Recurrence = {"recurrenceType": "weekly","recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"}, "seriesTime": {seriesTimeObject}, "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
 Office.Recurrence.setAsync:
   - |-
-  var seriesTimeObject = new seriesTime(); 
-  seriesTimeObject.setStartDate(2017,11,2);  
-  seriesTimeObject.setEndDate(2017,12,2); 
-  seriesTimeObject.setStartTime(10,30); 
-  SeriesTimeObject.setDuration(30);
+    var seriesTimeObject = new seriesTime(); 
+    seriesTimeObject.setStartDate(2017,11,2);  
+    seriesTimeObject.setEndDate(2017,12,2); 
+    seriesTimeObject.setStartTime(10,30); 
+    SeriesTimeObject.setDuration(30);
 
-  var pattern = {"seriesTime": seriesTimeObject, "type": "Weekly", "properties": {"interval": ", "days": ["Tue", "Thu"], "firstDayOfWeek": "Sun"}, "recurrenceTimeZone": {"name": "Pacific Standard Time"}}; 
+    var pattern = {"seriesTime": seriesTimeObject, "type": "Weekly", "properties": {"interval": ", "days": ["Tue", "Thu"], "firstDayOfWeek": "Sun"}, "recurrenceTimeZone": {"name": "Pacific Standard Time"}}; 
 
-  Office.context.mailbox.item.recurrence.setAsync(pattern, options, callback);
+    Office.context.mailbox.item.recurrence.setAsync(pattern, options, callback);
   
-  //Result: This created a recurring event from November 2, 2017 to December 2, 2017 at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
+    //Result: This created a recurring event from November 2, 2017 to December 2, 2017 at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
 Office.RoamingSettings:
   - |-
-  // DESCRIPTION EXAMPLE
-  // Get the current value of the 'myKey' setting
-  var value = Office.context.roamingSettings.get('myKey');
-  // Update the value of the 'myKey' setting
-  Office.context.roamingSettings.set('myKey', 'Hello World!');
-  // Persist the change
-  Office.context.roamingSettings.saveAsync();
+    // DESCRIPTION EXAMPLE
+    // Get the current value of the 'myKey' setting
+    var value = Office.context.roamingSettings.get('myKey');
+    // Update the value of the 'myKey' setting
+    Office.context.roamingSettings.set('myKey', 'Hello World!');
+    // Persist the change
+    Office.context.roamingSettings.saveAsync();
 Office.Time.setAsync:
   - |-
-  var startTime = new Date("3/14/2015");
-  var options = {
-    // Pass information that can be used
-    // in the callback
-      asyncContext: {verb:"Set"}
-  }
-  Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
-    if (result.error) {
-      console.debug(result.error);
-    } else {
-      // Access the asyncContext that was passed to the setAsync function
-      console.debug("Start Time " + result.asyncContext.verb);
+    var startTime = new Date("3/14/2015");
+    var options = {
+        // Pass information that can be used
+        // in the callback
+        asyncContext: {verb:"Set"}
     }
-  });
+    Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
+        if (result.error) {
+            console.debug(result.error);
+        } else {
+            // Access the asyncContext that was passed to the setAsync function
+            console.debug("Start Time " + result.asyncContext.verb);
+        }
+    });
