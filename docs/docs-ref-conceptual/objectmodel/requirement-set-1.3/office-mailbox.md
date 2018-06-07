@@ -1,7 +1,7 @@
 
 # mailbox
 
-### [Office](Office.md)[.context](Office.context.md). mailbox
+### [Office](Office.md)[.context](Office-context.md). mailbox
 
 Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
 
@@ -9,8 +9,8 @@ Provides access to the Outlook Add-in object model for Microsoft Outlook and Mic
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| Restricted|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
 |Applicable Outlook mode| Compose or read|
 
 ### Namespaces
@@ -43,8 +43,8 @@ In compose mode you must call the [`saveAsync`](Office.context.mailbox.item#save
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
 ### Methods
@@ -62,14 +62,14 @@ Item IDs retrieved via a REST API (such as the [Outlook Mail API](https://msdn.m
 |Name| Type| Description|
 |---|---|---|
 |`itemId`| String|An item ID formatted for the Outlook REST APIs|
-|`restVersion`| [Office.MailboxEnums.RestVersion](Office.MailboxEnums.md#restversion)|A value indicating the version of the Outlook REST API used to retrieve the item ID.|
+|`restVersion`| [Office.MailboxEnums.RestVersion](/javascript/api/outlook_1_3/office.mailboxenums.restversion)|A value indicating the version of the Outlook REST API used to retrieve the item ID.|
 
 ##### Requirements
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.3|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| Restricted|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
 |Applicable Outlook mode| Compose or read|
 
 ##### Returns:
@@ -88,7 +88,7 @@ var restId = 'AAMkAGVlOTZjNTM3LW...';
 var ewsId = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
 ```
 
-####  convertToLocalClientTime(timeValue) → {[LocalClientTime](simple-types.md#localclienttime)}
+####  convertToLocalClientTime(timeValue) → {[LocalClientTime](/javascript/api/outlook_1_3/office.LocalClientTime)}
 
 Gets a dictionary containing time information in local client time.
 
@@ -106,14 +106,14 @@ If the mail app is running in Outlook, the `convertToLocalClientTime` method wil
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
 ##### Returns:
 
 Type:
-[LocalClientTime](simple-types.md#localclienttime)
+[LocalClientTime](/javascript/api/outlook_1_3/office.LocalClientTime)
 
 ####  convertToRestId(itemId, restVersion) → {String}
 
@@ -128,14 +128,14 @@ Item IDs retrieved via EWS or via the `itemId` property use a different format t
 |Name| Type| Description|
 |---|---|---|
 |`itemId`| String|An item ID formatted for Exchange Web Services (EWS)|
-|`restVersion`| [Office.MailboxEnums.RestVersion](Office.MailboxEnums.md#restversion)|A value indicating the version of the Outlook REST API that the converted ID will be used with.|
+|`restVersion`| [Office.MailboxEnums.RestVersion](/javascript/api/outlook_1_3/office.mailboxenums.restversion)|A value indicating the version of the Outlook REST API that the converted ID will be used with.|
 
 ##### Requirements
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.3|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| Restricted|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
 |Applicable Outlook mode| Compose or read|
 
 ##### Returns:
@@ -164,14 +164,14 @@ The `convertToUtcClientTime` method converts a dictionary containing a local dat
 
 |Name| Type| Description|
 |---|---|---|
-|`input`| [LocalClientTime](simple-types.md#localclienttime)|The local time value to convert.|
+|`input`| [LocalClientTime](/javascript/api/outlook_1_3/office.LocalClientTime)|The local time value to convert.|
 
 ##### Requirements
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
 ##### Returns:
@@ -210,8 +210,8 @@ If the specified item identifier does not identify an existing appointment, a bl
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
 ##### Example
@@ -244,8 +244,8 @@ Do not use the `displayMessageForm` with an `itemId` that represents an appointm
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
 ##### Example
@@ -273,8 +273,8 @@ If any of the parameters exceed the specified size limits, or if an unknown para
 |Name| Type| Description|
 |---|---|---|
 | `parameters` | Object | A dictionary of parameters describing the new appointment. |
-| `parameters.requiredAttendees` | Array.&lt;String&gt; &#124; Array.&lt;[EmailAddressDetails](simple-types.md#emailaddressdetails)&gt; | An array of strings containing the email addresses or an array containing an `EmailAddressDetails` object for each of the required attendees for the appointment. The array is limited to a maximum of 100 entries. |
-| `parameters.optionalAttendees` | Array.&lt;String&gt; &#124; Array.&lt;[EmailAddressDetails](simple-types.md#emailaddressdetails)&gt; | An array of strings containing the email addresses or an array containing an `EmailAddressDetails` object for each of the optional attendees for the appointment. The array is limited to a maximum of 100 entries. |
+| `parameters.requiredAttendees` | Array.&lt;String&gt; &#124; Array.&lt;[EmailAddressDetails](/javascript/api/outlook_1_3/office.mailboxenums.emailaddressdetails)&gt; | An array of strings containing the email addresses or an array containing an `EmailAddressDetails` object for each of the required attendees for the appointment. The array is limited to a maximum of 100 entries. |
+| `parameters.optionalAttendees` | Array.&lt;String&gt; &#124; Array.&lt;[EmailAddressDetails](/javascript/api/outlook_1_3/office.mailboxenums.emailaddressdetails)&gt; | An array of strings containing the email addresses or an array containing an `EmailAddressDetails` object for each of the optional attendees for the appointment. The array is limited to a maximum of 100 entries. |
 | `parameters.start` | Date | A `Date` object specifying the start date and time of the appointment. |
 | `parameters.end` | Date | A `Date` object specifying the end date and time of the appointment. |
 | `parameters.location` | String | A string containing the location of the appointment. The string is limited to a maximum of 255 characters. |
@@ -286,8 +286,8 @@ If any of the parameters exceed the specified size limits, or if an unknown para
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |Applicable Outlook mode| Read|
 
 ##### Example
@@ -326,15 +326,15 @@ In compose mode you must call the [`saveAsync`](Office.context.mailbox.item#save
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object. The token is provided as a string in the `asyncResult.value` property.|
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook_1_3/office.mailboxenums.asyncresult) object. The token is provided as a string in the `asyncResult.value` property.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|
 
 ##### Requirements
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.3|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |Applicable Outlook mode| Compose and read|
 
 ##### Example
@@ -359,7 +359,7 @@ The `getUserIdentityTokenAsync` method returns a token that you can use to ident
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object.
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook_1_3/office.mailboxenums.asyncresult) object.
 
 The token is provided as a string in the `asyncResult.value` property.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|
@@ -368,8 +368,8 @@ The token is provided as a string in the `asyncResult.value` property.|
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
 ##### Example
@@ -404,7 +404,7 @@ The XML request must specify UTF-8 encoding.
 <?xml version="1.0" encoding="utf-8"?>
 ```
 
-Your add-in must have the **ReadWriteMailbox** permission to use the `makeEwsRequestAsync` method. For information about using the **ReadWriteMailbox** permission and the EWS operations that you can call with the `makeEwsRequestAsync` method, see [Specify permissions for mail add-in access to the user's mailbox](../../../docs/outlook/understanding-outlook-add-in-permissions.md).
+Your add-in must have the **ReadWriteMailbox** permission to use the `makeEwsRequestAsync` method. For information about using the **ReadWriteMailbox** permission and the EWS operations that you can call with the `makeEwsRequestAsync` method, see [Specify permissions for mail add-in access to the user's mailbox](/outlook/add-ins/understanding-outlook-add-in-permissions).
 
 **NOTE**: The server administrator must set `OAuthAuthentication` to true on the Client Access Server EWS directory to enable the `makeEwsRequestAsync` method to make EWS requests.
 
@@ -423,7 +423,7 @@ You do not need to set the encoding value when your mail app is running in Outlo
 |Name| Type| Attributes| Description|
 |---|---|---|---|
 |`data`| String||The EWS request.|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](simple-types.md#asyncresult) object.
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook_1_3/office.mailboxenums.asyncresult) object.
 
 The XML result of the EWS call is provided as a string in the `asyncResult.value` property. If the result exceeds 1 MB in size, an error message is returned instead.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|
@@ -432,8 +432,8 @@ The XML result of the EWS call is provided as a string in the `asyncResult.value
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadWriteMailbox|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadWriteMailbox|
 |Applicable Outlook mode| Compose or read|
 
 ##### Example

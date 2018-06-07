@@ -1,14 +1,14 @@
 
 # userProfile
 
-### [Office](Office.md)[.context](Office.context.md)[.mailbox](Office.context.mailbox.md). userProfile
+### [Office](Office.md)[.context](Office-context.md)[.mailbox](Office-mailbox.md). userProfile
 
 ##### Requirements
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
 ### Members
@@ -25,8 +25,8 @@ Gets the user's display name.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
 ##### Example
@@ -48,8 +48,8 @@ Gets the user's SMTP email address.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
 ##### Example
@@ -71,8 +71,8 @@ Gets the user's default time zone.
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](../tutorial-api-requirement-sets.md)| 1.0|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| ReadItem|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |Applicable Outlook mode| Compose or read|
 
 ##### Example
