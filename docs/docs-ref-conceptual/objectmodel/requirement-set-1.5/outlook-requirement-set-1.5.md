@@ -2,9 +2,11 @@
 
 The Outlook add-in API subset of the JavaScript API for Office includes objects, methods, properties and events that you can use in an Outlook add-in.
 
+> **Note**: This documentation is for a [requirement set](/javascript/office/requirement-sets/outlook-api-requirement-sets) other than the latest requirement set.
+
 ## What's new in 1.5?
 
-Requirement set 1.5 includes all of the features of [Requirement set 1.4](../1.4/index.md). It added the following features.
+Requirement set 1.5 includes all of the features of [Requirement set 1.4](../requirement-set-1.4/index.md). It added the following features.
 
 - Added support for [pinnable taskpanes](../../../docs/outlook/manifests/pinnable-taskpane.md).
 - Added support for calling [REST APIs](../../../docs/outlook/use-rest-api.md).

@@ -274,7 +274,7 @@ var modified = Office.context.mailbox.item.dateTimeModified;
 
 Gets or sets the date and time that the appointment is to end.
 
-The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttime) method to convert the end property value to the client’s local date and time.
+The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttimetimevalue--localclienttimejavascriptapioutlookofficelocalclienttime) method to convert the end property value to the client’s local date and time.
 
 ##### Read mode
 
@@ -284,7 +284,7 @@ The `end` property returns a `Date` object.
 
 The `end` property returns a `Time` object.
 
-When you use the [`Time.setAsync`](/javascript/api/outlook/office.Time.md#setasyncdatetime-options-callback) method to set the end time, you should use the [`convertToUtcClientTime`](Office-mailbox.md#converttoutcclienttimeinput--date) method to convert the local time on the client to UTC for the server.
+When you use the [`Time.setAsync`](/javascript/api/outlook/office.Time.md#setasyncdatetime-options-callback) method to set the end time, you should use the [`convertToUtcClientTime`](Office-mailbox.md#converttolocalclienttimetimevalue--localclienttimejavascriptapioutlookofficelocalclienttime) method to convert the local time on the client to UTC for the server.
 
 ##### Type:
 
@@ -723,7 +723,7 @@ var isSeries = (seriesId == null);
 
 Gets or sets the date and time that the appointment is to begin.
 
-The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttime) method to convert the value to the client’s local date and time.
+The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttimetimevalue--localclienttimejavascriptapioutlookofficelocalclienttime) method to convert the value to the client’s local date and time.
 
 ##### Read mode
 
@@ -733,7 +733,7 @@ The `start` property returns a `Date` object.
 
 The `start` property returns a `Time` object.
 
-When you use the [`Time.setAsync`](/javascript/api/outlook/office.Time.md#setasyncdatetime-options-callback) method to set the start time, you should use the [`convertToUtcClientTime`](Office-mailbox.md#converttoutcclienttimeinput--date) method to convert the local time on the client to UTC for the server.
+When you use the [`Time.setAsync`](/javascript/api/outlook/office.Time.md#setasyncdatetime-options-callback) method to set the start time, you should use the [`convertToUtcClientTime`](Office-mailbox.md#converttolocalclienttimetimevalue--localclienttimejavascriptapioutlookofficelocalclienttime) method to convert the local time on the client to UTC for the server.
 
 ##### Type:
 
@@ -1601,7 +1601,7 @@ function setCallback(asyncResult) {
 
 #### getSelectedEntities() → {[Entities](/javascript/api/office/office.entities)}
 
-Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to [contextual add-ins](outlook/add-ins/contextual-outlook-add-ins).
+Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to [contextual add-ins](https://docs.microsoft.com/outlook/add-ins/contextual-outlook-add-ins).
 
 > **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
 
@@ -1628,7 +1628,7 @@ var contacts = Office.context.mailbox.item.getSelectedEntities().addresses;
 
 #### getSelectedRegExMatches() → {Object}
 
-Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file. Highlighted matches apply to [contextual add-ins](outlook/add-ins/contextual-outlook-add-ins).
+Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file. Highlighted matches apply to [contextual add-ins](https://docs.microsoft.com/outlook/add-ins/contextual-outlook-add-ins).
 
 > **Note:** This method is not supported in Outlook for iOS or Outlook for Android.
 

@@ -4,7 +4,7 @@ The Outlook add-in API subset of the JavaScript API for Office includes objects,
 
 ## What's new in 1.6?
 
-Requirement set 1.6 includes all of the features of [Requirement set 1.5](../1.5/index.md). It added the following features.
+Requirement set 1.6 includes all of the features of [Requirement set 1.5](../requirement-set-1.5/index.md). It added the following features.
 
 - Added new APIs for contextual add-ins to get the entity or RegEx match that the user selected to activate the add-in.
 - Added a new API to open a new message form.

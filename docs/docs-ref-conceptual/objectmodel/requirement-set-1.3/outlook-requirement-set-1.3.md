@@ -2,11 +2,11 @@
 
 The Outlook add-in API subset of the JavaScript API for Office includes objects, methods, properties and events that you can use in an Outlook add-in.
 
-> **Note**: This documentation is for a [requirement set](../tutorial-api-requirement-sets.md) other than the latest requirement set. 
+> **Note**: This documentation is for a [requirement set](/javascript/office/requirement-sets/outlook-api-requirement-sets) other than the latest requirement set. 
 
 ## What's new in 1.3?
 
-Requirement set 1.3 includes all of the features of [Requirement set 1.2](../1.2/index.md). It added the following features.
+Requirement set 1.3 includes all of the features of [Requirement set 1.2](../requirement-set-1.2/index.md). It added the following features.
 
 - Added support for [add-in commands](../../../docs/outlook/add-in-commands-for-outlook.md).
 - Added ability to save or close an item being composed.
