@@ -98,7 +98,7 @@ function applyOfficeTheme(){
 }
 ```
 
-####  roamingSettings :[RoamingSettings](/javascript/api/office/RoamingSettings)
+####  roamingSettings :[RoamingSettings](/javascript/api/outlook/office.RoamingSettings)
 
 Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
 
@@ -106,12 +106,12 @@ The `RoamingSettings` object lets you store and access data for a mail add-in th
 
 ##### Type:
 
-*   [RoamingSettings](RoamingSettings.md)
+*   [RoamingSettings](/javascript/api/outlook/office.RoamingSettings)
 
 ##### Requirements
 
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
+|[Minimum permission level](../outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
 |Applicable Outlook mode| Compose or read|
