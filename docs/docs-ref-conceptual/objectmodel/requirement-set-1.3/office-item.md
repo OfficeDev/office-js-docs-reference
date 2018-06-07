@@ -103,13 +103,13 @@ function callback(asyncResult) {
 }
 ```
 
-####  body :[Body](Body.md)
+####  body :[Body](/javascript/api/outlook_1_3/office.Body)
 
 Gets an object that provides methods for manipulating the body of an item.
 
 ##### Type:
 
-*   [Body](Body.md)
+*   [Body](/javascript/api/outlook_1_3/office.Body)
 
 ##### Requirements
 
@@ -223,7 +223,7 @@ var modified = Office.context.mailbox.item.dateTimeModified;
 
 Gets or sets the date and time that the appointment is to end.
 
-The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttimetimevalue--localclienttime) method to convert the end property value to the client’s local date and time.
+The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttime) method to convert the end property value to the client’s local date and time.
 
 ##### Read mode
 
@@ -373,7 +373,7 @@ if (itemId === null || itemId == undefined) {
 }
 ```
 
-####  itemType :[Office.MailboxEnums.ItemType](Office.MailboxEnums.itemtype)
+####  itemType :[Office.MailboxEnums.ItemType](/javascript/api/outlook_1_3/office.MailboxEnums.itemtype)
 
 Gets the type of item that an instance represents.
 
@@ -381,7 +381,7 @@ The `itemType` property returns one of the `ItemType` enumeration values, indica
 
 ##### Type:
 
-*   [Office.MailboxEnums.ItemType](Office.MailboxEnums.itemtype)
+*   [Office.MailboxEnums.ItemType](/javascript/api/outlook_1_3/office.MailboxEnums.itemtype)
 
 ##### Requirements
 
@@ -602,7 +602,7 @@ var senderAddress = Office.context.mailbox.item.sender.emailAddress;
 
 Gets or sets the date and time that the appointment is to begin.
 
-The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttimetimevalue--localclienttime) method to convert the value to the client’s local date and time.
+The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttime) method to convert the value to the client’s local date and time.
 
 ##### Read mode
 
@@ -1123,7 +1123,7 @@ Gets an array of all the entities of the specified entity type found in the sele
 
 |Name| Type| Description|
 |---|---|---|
-|`entityType`| [Office.MailboxEnums.EntityType](Office.MailboxEnums.md#entitytype-string)|One of the EntityType enumeration values.|
+|`entityType`| [Office.MailboxEnums.EntityType](/javascript/api/outlook_1_3/office.MailboxEnums.entitytype)|One of the EntityType enumeration values.|
 
 ##### Requirements
 
@@ -1227,7 +1227,7 @@ The object returned from `getRegExMatches` would have two properties: `fruits` a
 }
 ```
 
-If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item does not always return the expected results. Instead, use the [`Body.getAsync`](Body.md#getasynccoerciontype-options-callback) method to retrieve the entire body.
+If you specify an `ItemHasRegularExpressionMatch` rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as `.*` to obtain the entire body of an item does not always return the expected results. Instead, use the [`Body.getAsync`](/javascript/api/outlook_1_3/office.Body#getasynccoerciontype-options-callback) method to retrieve the entire body.
 
 ##### Requirements
 

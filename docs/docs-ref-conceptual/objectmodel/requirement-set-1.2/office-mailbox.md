@@ -19,7 +19,7 @@ Provides access to the Outlook Add-in object model for Microsoft Outlook and Mic
 
 [item](Office-item.md): Provides methods and properties for accessing a message or appointment in an Outlook add-in.
 
-[userProfile](Office.context.mailbox.userProfile.md): Provides information about the user in an Outlook add-in.
+[userProfile](office-user.md): Provides information about the user in an Outlook add-in.
 
 ### Members
 
