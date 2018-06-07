@@ -73,7 +73,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'addColumnsAsync(tableData: TableData | any[][], options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        addColumnsAsync(tableData: TableData | any[][], options?: AsyncContextOptions, callback?: (result: AsyncResult)
+        => void): void;
       return:
         type:
           - void
@@ -86,11 +88,9 @@ items:
           type:
             - 'TableData | any[][]'
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -134,7 +134,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'addRowsAsync(rows: TableData | any[][], options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        addRowsAsync(rows: TableData | any[][], options?: AsyncContextOptions, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
@@ -147,11 +149,9 @@ items:
           type:
             - 'TableData | any[][]'
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -174,18 +174,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'clearFormatsAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: 'clearFormatsAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -220,18 +218,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'deleteAllDataValuesAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: 'deleteAllDataValuesAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -245,8 +241,8 @@ items:
     type: method
     syntax:
       content: >-
-        getFormatsAsync(cellReference?: any, formats?: any[], options?: any, callback?: (result: AsyncResult) => void):
-        void;
+        getFormatsAsync(cellReference?: any, formats?: any[], options?: AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -261,11 +257,9 @@ items:
           type:
             - 'any[]'
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -335,7 +329,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setFormatsAsync(formatsInfo?: any[], options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        setFormatsAsync(formatsInfo?: any[], options?: AsyncContextOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void
@@ -349,11 +345,9 @@ items:
           type:
             - 'any[]'
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -370,7 +364,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setTableOptionsAsync(tableOptions: any, options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        setTableOptionsAsync(tableOptions: any, options?: AsyncContextOptions, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
@@ -381,11 +377,9 @@ items:
           type:
             - any
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:

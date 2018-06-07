@@ -1,0 +1,193 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.Recurrence
+    summary: >-
+      The recurrence object provides methods to get and set the recurrence pattern of appointments but only get the
+      recurrence pattern of meeting requests. It will have a dictionary with the following keys: seriesTime,
+      recurrenceType, recurrenceProperties, and recurrenceTimeZone (optional).
+
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      \|State\|Editable?\|Viewable?\| \|\-\-\---\|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\| \|Appointment Organizer -
+      Compose Series\|Yes (setAsync)\|Yes (getAsync)\| \|Appointment Organizer - Compose Instance\|No (setAsync returns
+      error)\|Yes (getAsync)\| \|Appointment Attendee - Read Series\|No (setAsync not available)\|Yes
+      (item.recurrence)\| \|Appointment Attendee - Read Instance\|No (setAsync not available)\|Yes (item.recurrence)\|
+      \|Meeting Request - Read Series\|No (setAsync not available)\|Yes (item.recurrence)\| \|Meeting Request - Read
+      Instance\|No (setAsync not available)\|Yes (item.recurrence)\|
+
+
+      Minimum permission level: ReadItem
+
+
+      Applicable Outlook mode: Compose or read
+    name: Office.Recurrence
+    fullName: outlook.Office.Recurrence
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.Recurrence.getAsync
+      - outlook.Office.Recurrence.recurrenceProperties
+      - outlook.Office.Recurrence.recurrenceTimeZone
+      - outlook.Office.Recurrence.recurrenceType
+      - outlook.Office.Recurrence.seriesTime
+      - outlook.Office.Recurrence.setAsync
+  - uid: outlook.Office.Recurrence.getAsync
+    summary: |-
+      Returns the current recurrence object of an appointment series.
+
+      This method returns the entire recurrence object for the appointment series.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: 'getAsync(options, callback)'
+    fullName: outlook.Office.Recurrence.getAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an AsyncResult object.
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: outlook.Office.Recurrence.recurrenceProperties
+    summary: |-
+      Gets or sets the properties of the recurring appointment series.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: recurrenceProperties
+    fullName: outlook.Office.Recurrence.recurrenceProperties
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'recurrenceProperties: RecurrenceProperties;'
+      return:
+        type:
+          - RecurrenceProperties
+  - uid: outlook.Office.Recurrence.recurrenceTimeZone
+    summary: |-
+      Gets or sets the properties of the recurring appointment series.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: recurrenceTimeZone
+    fullName: outlook.Office.Recurrence.recurrenceTimeZone
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'recurrenceTimeZone: MailboxEnums.RecurrenceTimeZone;'
+      return:
+        type:
+          - MailboxEnums.RecurrenceTimeZone
+  - uid: outlook.Office.Recurrence.recurrenceType
+    summary: |-
+      Gets or sets the type of the recurring appointment series.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: recurrenceType
+    fullName: outlook.Office.Recurrence.recurrenceType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'recurrenceType: MailboxEnums.RecurrenceType;'
+      return:
+        type:
+          - MailboxEnums.RecurrenceType
+  - uid: outlook.Office.Recurrence.seriesTime
+    summary: >-
+      This object enables you to manage the start and end dates of the recurring appointment series and the usual start
+      and end times of instances. \*\*This object is not in UTC time.\*\* Instead, it is set in the time zone specified
+      by the recurrenceTimeZone value or defaulted to the item's time zone.
+
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: seriesTime
+    fullName: outlook.Office.Recurrence.seriesTime
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'seriesTime: SeriesTime;'
+      return:
+        type:
+          - SeriesTime
+  - uid: outlook.Office.Recurrence.setAsync
+    summary: |-
+      Sets the recurrence pattern of an appointment series.
+
+      Note: setAsync should only be available for series items and not instance items.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadWriteItem
+
+      Applicable Outlook mode: Compose
+
+      Errors: InvalidEndTime - The appointment end time is before its start time.
+    name: 'setAsync(recurrencePattern, options, callback)'
+    fullName: outlook.Office.Recurrence.setAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        setAsync(recurrencePattern: Recurrence, options?: AsyncContextOptions, callback?: (result: AsyncResult) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: recurrencePattern
+          description: A recurrence object.
+          type:
+            - Recurrence
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an AsyncResult object.
+          type:
+            - '(result: AsyncResult) => void'

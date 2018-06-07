@@ -8,6 +8,10 @@ items:
     type: package
     children:
       - office.Office.ActiveView
+      - office.Office.AddBindingFromNamedItemOptions
+      - office.Office.AddBindingFromPromptOptions
+      - office.Office.AddBindingFromSelectionOptions
+      - office.Office.AsyncContextOptions
       - office.Office.AsyncResult
       - office.Office.AsyncResultStatus
       - office.Office.Auth
@@ -17,7 +21,9 @@ items:
       - office.Office.BindingType
       - office.Office.CoercionType
       - office.Office.Context
+      - office.Office.ContextInformation
       - office.Office.CustomXmlNode
+      - office.Office.CustomXMLNodeType
       - office.Office.CustomXmlPart
       - office.Office.CustomXmlParts
       - office.Office.CustomXmlPrefixMappings
@@ -32,11 +38,15 @@ items:
       - office.Office.FileProperties
       - office.Office.FileType
       - office.Office.FilterType
+      - office.Office.GetBindingDataOptions
+      - office.Office.GetFileOptions
+      - office.Office.GetSelectedDataOptions
+      - office.Office.GoToByIdOptions
       - office.Office.GoToType
       - office.Office.HostType
-      - office.Office.Index
       - office.Office.InitializationReason
       - office.Office.initialize
+      - office.Office.IPromiseConstructor
       - office.Office.MatrixBinding
       - office.Office.OfficeTheme
       - office.Office.onReady
@@ -45,8 +55,15 @@ items:
       - office.Office.ProjectResourceFields
       - office.Office.ProjectTaskFields
       - office.Office.ProjectViewTypes
+      - office.Office.RangeCoordinates
+      - office.Office.RangeFormatConfiguration
+      - office.Office.RemoveHandlerOptions
+      - office.Office.RequirementSetSupport
+      - office.Office.SaveSettingsOptions
       - office.Office.select
       - office.Office.SelectionMode
+      - office.Office.SetBindingDataOptions
+      - office.Office.SetSelectedDataOptions
       - office.Office.Settings
       - office.Office.Slice
       - office.Office.Table
@@ -162,6 +179,14 @@ items:
 references:
   - uid: office.Office.ActiveView
     name: Office.ActiveView
+  - uid: office.Office.AddBindingFromNamedItemOptions
+    name: Office.AddBindingFromNamedItemOptions
+  - uid: office.Office.AddBindingFromPromptOptions
+    name: Office.AddBindingFromPromptOptions
+  - uid: office.Office.AddBindingFromSelectionOptions
+    name: Office.AddBindingFromSelectionOptions
+  - uid: office.Office.AsyncContextOptions
+    name: Office.AsyncContextOptions
   - uid: office.Office.AsyncResult
     name: Office.AsyncResult
   - uid: office.Office.AsyncResultStatus
@@ -180,8 +205,12 @@ references:
     name: Office.CoercionType
   - uid: office.Office.Context
     name: Office.Context
+  - uid: office.Office.ContextInformation
+    name: Office.ContextInformation
   - uid: office.Office.CustomXmlNode
     name: Office.CustomXmlNode
+  - uid: office.Office.CustomXMLNodeType
+    name: Office.CustomXMLNodeType
   - uid: office.Office.CustomXmlPart
     name: Office.CustomXmlPart
   - uid: office.Office.CustomXmlParts
@@ -210,14 +239,22 @@ references:
     name: Office.FileType
   - uid: office.Office.FilterType
     name: Office.FilterType
+  - uid: office.Office.GetBindingDataOptions
+    name: Office.GetBindingDataOptions
+  - uid: office.Office.GetFileOptions
+    name: Office.GetFileOptions
+  - uid: office.Office.GetSelectedDataOptions
+    name: Office.GetSelectedDataOptions
+  - uid: office.Office.GoToByIdOptions
+    name: Office.GoToByIdOptions
   - uid: office.Office.GoToType
     name: Office.GoToType
   - uid: office.Office.HostType
     name: Office.HostType
-  - uid: office.Office.Index
-    name: Office.Index
   - uid: office.Office.InitializationReason
     name: Office.InitializationReason
+  - uid: office.Office.IPromiseConstructor
+    name: Office.IPromiseConstructor
   - uid: office.Office.MatrixBinding
     name: Office.MatrixBinding
   - uid: office.Office.OfficeTheme
@@ -232,8 +269,22 @@ references:
     name: Office.ProjectTaskFields
   - uid: office.Office.ProjectViewTypes
     name: Office.ProjectViewTypes
+  - uid: office.Office.RangeCoordinates
+    name: Office.RangeCoordinates
+  - uid: office.Office.RangeFormatConfiguration
+    name: Office.RangeFormatConfiguration
+  - uid: office.Office.RemoveHandlerOptions
+    name: Office.RemoveHandlerOptions
+  - uid: office.Office.RequirementSetSupport
+    name: Office.RequirementSetSupport
+  - uid: office.Office.SaveSettingsOptions
+    name: Office.SaveSettingsOptions
   - uid: office.Office.SelectionMode
     name: Office.SelectionMode
+  - uid: office.Office.SetBindingDataOptions
+    name: Office.SetBindingDataOptions
+  - uid: office.Office.SetSelectedDataOptions
+    name: Office.SetSelectedDataOptions
   - uid: office.Office.Settings
     name: Office.Settings
   - uid: office.Office.Slice

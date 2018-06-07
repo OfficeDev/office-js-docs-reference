@@ -1,6 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.Auth
+    summary: >-
+      The Office Auth namespace, Office.context.auth, provides a method that allows the Office host to obtain and access
+      the add-in token. Indirectly, enable the add-in to access the signed-in user's Microsoft Graph data without
+      requiring the user to sign in a second time.
     name: Office.Auth
     fullName: office.Office.Auth
     langs:
@@ -11,8 +15,10 @@ items:
       - office.Office.Auth.getAccessTokenAsync
   - uid: office.Office.Auth.getAccessTokenAsync
     summary: >-
-      Obtains an access token from AAD V 2.0 endpoint to grant the Office host application access to the add-in's web
-      application.
+      Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Allows
+      add-ins to identify users. Server side code can use this token to access Microsoft Graph for the add-in's web
+      application by using the \["on behalf of" OAuth
+      flow\](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of).
     remarks: >-
       Hosts: Excel, OneNote, Outlook, PowerPoint, Word
 

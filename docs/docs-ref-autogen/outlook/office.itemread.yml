@@ -1,6 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.ItemRead
+    summary: >-
+      Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
+      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
     name: Office.ItemRead
     fullName: outlook.Office.ItemRead
     langs:
@@ -16,6 +19,7 @@ items:
       - outlook.Office.ItemRead.getEntities
       - outlook.Office.ItemRead.getEntitiesByType
       - outlook.Office.ItemRead.getFilteredEntitiesByName
+      - outlook.Office.ItemRead.getInitializationContextAsync
       - outlook.Office.ItemRead.getRegExMatches
       - outlook.Office.ItemRead.getRegExMatchesByName
       - outlook.Office.ItemRead.getSelectedEntities
@@ -32,7 +36,7 @@ items:
     remarks: >-
       Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
       returned. For more information, see \[Blocked attachments in
-      Outlook\]&lt;https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519&gt;.
+      Outlook\](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519).
 
 
       Minimum permission level: ReadItem
@@ -90,15 +94,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR An object that contains body or attachment data and a callback function htmlBody: A string that
-            contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
-            attachments: An array of JSON objects that are either file or item attachments. attachments.type: Indicates
-            the type of attachment. Must be file for a file attachment or item for an item attachment. attachments.name:
-            A string that contains the name of the attachment, up to 255 characters in length. attachments.url: Only
-            used if type is set to file. The URI of the location for the file. attachments.isLine: Only used if type is
-            set to file. If true, indicates that the attachment will be shown inline in the message body, and should not
-            be displayed in the attachment list. attachments.itemId: Only used if type is set to item. The EWS item id
-            of the attachment. This is a string up to 100 characters.
+            to 32 KB OR A ReplyFormData object that contains body or attachment data and a callback function
           type:
             - string | ReplyFormData
   - uid: outlook.Office.ItemRead.displayReplyForm
@@ -142,15 +138,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB. OR An object that contains body or attachment data and a callback function. The object is defined
-            as follows. htmlBody: A string that contains text and HTML and that represents the body of the reply form.
-            The string is limited to 32 KB. attachments: An array of JSON objects that are either file or item
-            attachments. attachments.type: Indicates the type of attachment. Must be file for a file attachment or item
-            for an item attachment. attachments.name: A string that contains the name of the attachment, up to 255
-            characters in length. attachments.url: Only used if type is set to file. The URI of the location for the
-            file. attachments.isLine: Only used if type is set to file. If true, indicates that the attachment will be
-            shown inline in the message body, and should not be displayed in the attachment list. attachments.itemId:
-            Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
+            to 32 KB. OR A ReplyFormData object that contains body or attachment data and a callback function.
           type:
             - string | ReplyFormData
   - uid: outlook.Office.ItemRead.getEntities
@@ -254,6 +242,48 @@ items:
           description: The name of the ItemHasKnownEntity rule element that defines the filter to match.
           type:
             - string
+  - uid: outlook.Office.ItemRead.getInitializationContextAsync
+    summary: >-
+      Gets initialization data passed when the add-in is \[activated by an actionable
+      message\](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message).
+
+
+      Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than
+      16.0.8413.1000) and Outlook on the web for Office 365.
+
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
+    name: 'getInitializationContextAsync(options, callback)'
+    fullName: outlook.Office.ItemRead.getInitializationContextAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in
+            the asyncResult.value property as a string. If there is no initialization context, the asyncResult object
+            will contain an Error object with its code property set to 9020 and its name property set to
+            GenericResponseError.
+          type:
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.ItemRead.getRegExMatches
     summary: >-
       Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
@@ -491,23 +521,14 @@ items:
           - string
   - uid: outlook.Office.ItemRead.subject
     summary: >-
-      Gets or sets the description that appears in the subject field of an item.
+      Gets the description that appears in the subject field of an item.
 
 
       The subject property gets or sets the entire subject of the item, as sent by the email server.
 
 
-      \*Read mode\*
-
-
       The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading
       prefixes such as RE: and FW:.
-
-
-      \*Compose mode\*
-
-
-      The subject property returns a Subject object that provides methods to get and set the subject.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]

@@ -1,0 +1,56 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.From
+    summary: |-
+      Provides a method to get the from value of a message in an Outlook add-in.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose
+    name: Office.From
+    fullName: outlook.Office.From
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.From.getAsync
+  - uid: outlook.Office.From.getAsync
+    summary: |-
+      Gets the from value of a message.
+
+      The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
+
+      The from value of the item is provided as an EmailAddressDetails in the asyncResult.value property.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose
+    name: 'getAsync(options, callback)'
+    fullName: outlook.Office.From.getAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter,
+            asyncResult, which is an AsyncResult object.
+          type:
+            - '(result: AsyncResult) => void'

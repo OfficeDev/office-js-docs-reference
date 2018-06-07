@@ -28,7 +28,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'addAsync(xml: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: 'addAsync(xml: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -39,11 +39,9 @@ items:
           type:
             - string
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -60,7 +58,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getByIdAsync(id: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: 'getByIdAsync(id: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -71,11 +69,9 @@ items:
           type:
             - string
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback..'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -92,7 +88,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getByNamespaceAsync(ns: string, options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: 'getByNamespaceAsync(ns: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -103,11 +99,9 @@ items:
           type:
             - string
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
