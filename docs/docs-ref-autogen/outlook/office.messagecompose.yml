@@ -1,6 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.MessageCompose
+    summary: >-
+      Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
+      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
     name: Office.MessageCompose
     fullName: outlook.Office.MessageCompose
     langs:
@@ -12,6 +15,7 @@ items:
     children:
       - outlook.Office.MessageCompose.bcc
       - outlook.Office.MessageCompose.cc
+      - outlook.Office.MessageCompose.from
       - outlook.Office.MessageCompose.to
   - uid: outlook.Office.MessageCompose.bcc
     summary: >-
@@ -40,13 +44,6 @@ items:
       the mode of the current item.
 
 
-      \*Read mode\*
-
-
-      The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc
-      line of the message. The collection is limited to a maximum of 100 members.
-
-
       \*Compose mode\*
 
 
@@ -69,20 +66,37 @@ items:
       return:
         type:
           - Recipients
+  - uid: outlook.Office.MessageCompose.from
+    summary: >-
+      Gets the email address of the sender of a message.
+
+
+      The from and sender properties represent the same person unless the message is sent by a delegate. In that case,
+      the from property represents the delegator, and the sender property represents the delegate.
+
+
+      The from property returns a From object that provides a method to get the from value.
+
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Read
+    name: from
+    fullName: outlook.Office.MessageCompose.from
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'from: From;'
+      return:
+        type:
+          - From
   - uid: outlook.Office.MessageCompose.to
     summary: >-
       Provides access to the recipients on the To line of a message. The type of object and level of access depends on
       the mode of the current item.
-
-
-      \*Read mode\*
-
-
-      The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To
-      line of the message. The collection is limited to a maximum of 100 members.
-
-
-      \*Compose mode\*
 
 
       The to property returns a Recipients object that provides methods to get or update the recipients on the To line

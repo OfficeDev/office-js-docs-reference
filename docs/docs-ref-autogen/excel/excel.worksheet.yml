@@ -128,18 +128,22 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'copy(positionType?: Excel.WorksheetPositionType, relativeTo?: Excel.Worksheet): Excel.Worksheet;'
+      content: 'copy(positionType?: Excel.WorksheetPositionType | string, relativeTo?: Excel.Worksheet): Excel.Worksheet;'
       return:
         type:
           - Excel.Worksheet
         description: ''
       parameters:
         - id: positionType
-          description: ''
+          description: >-
+            Specifies where to put the copy relative to the worksheet specified in relativeTo param. Can be
+            Excel.WorksheetPositionType or string equivalent. Must not be Excel.WorksheetPositionType.none or "None".
           type:
-            - Excel.WorksheetPositionType
+            - Excel.WorksheetPositionType | string
         - id: relativeTo
-          description: ''
+          description: >-
+            Specifies the worksheet that is the basis for intepreting the positionType param. If not specified, the
+            worksheet on which the copy() is called is assumed.
           type:
             - Excel.Worksheet
     remarks: |

@@ -1,6 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.AuthOptions
+    summary: >-
+      Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with
+      the getAccessTokenAsync method.
     name: Office.AuthOptions
     fullName: office.Office.AuthOptions
     langs:
@@ -13,7 +16,9 @@ items:
       - office.Office.AuthOptions.forceAddAccount
       - office.Office.AuthOptions.forceConsent
   - uid: office.Office.AuthOptions.asyncContext
-    summary: Optional. A user-defined item of any type that is returned in the AsyncResult object without being altered.
+    summary: >-
+      A user-defined item of any type that is returned, unchanged, in the value property of the AsyncResult object that
+      is passed to a callback.
     name: asyncContext
     fullName: office.Office.AuthOptions.asyncContext
     langs:
@@ -26,12 +31,12 @@ items:
           - any
   - uid: office.Office.AuthOptions.authChallenge
     summary: >-
-      Optional. Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by
-      Microsoft Graph requires multifactor authentication. The string value identifies the type of additional factor
-      that is required. In most cases, you won't know at development time whether the user's tenant requires an
-      additional factor or what the string should be. So this option would be used in a "second try" call of
-      getAccessTokenAsync after Microsoft Graph has sent an error requesting the additional factor and containing the
-      string that should be used with the authChallenge option.
+      Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by Microsoft
+      Graph requires multifactor authentication. The string value identifies the type of additional factor that is
+      required. In most cases, you won't know at development time whether the user's tenant requires an additional
+      factor or what the string should be. So this option would be used in a "second try" call of getAccessTokenAsync
+      after Microsoft Graph has sent an error requesting the additional factor and containing the string that should be
+      used with the authChallenge option.
     name: authChallenge
     fullName: office.Office.AuthOptions.authChallenge
     langs:
@@ -43,7 +48,7 @@ items:
         type:
           - string
   - uid: office.Office.AuthOptions.forceAddAccount
-    summary: Optional. Prompts the user to add (or to switch if already added) his or her Office account.
+    summary: Prompts the user to add (or to switch if already added) his or her Office account.
     name: forceAddAccount
     fullName: office.Office.AuthOptions.forceAddAccount
     langs:
@@ -56,8 +61,8 @@ items:
           - boolean
   - uid: office.Office.AuthOptions.forceConsent
     summary: >-
-      Optional. Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have
-      changed or if the user's consent has been revoked.
+      Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have changed or
+      if the user's consent has been revoked.
     name: forceConsent
     fullName: office.Office.AuthOptions.forceConsent
     langs:

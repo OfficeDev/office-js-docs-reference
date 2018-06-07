@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.DialogOptions
+    summary: Provides options for how a dialog is displayed.
     name: Office.DialogOptions
     fullName: office.Office.DialogOptions
     langs:
@@ -8,9 +9,24 @@ items:
     type: interface
     package: office
     children:
+      - office.Office.DialogOptions.asyncContext
       - office.Office.DialogOptions.displayInIframe
       - office.Office.DialogOptions.height
       - office.Office.DialogOptions.width
+  - uid: office.Office.DialogOptions.asyncContext
+    summary: >-
+      A user-defined item of any type that is returned, unchanged, in the value property of the AsyncResult object that
+      is passed to a callback.
+    name: asyncContext
+    fullName: office.Office.DialogOptions.asyncContext
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'asyncContext?: any;'
+      return:
+        type:
+          - any
   - uid: office.Office.DialogOptions.displayInIframe
     summary: >-
       Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable in Office

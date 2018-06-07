@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.GetFileOptions
+    summary: Provides options for setting the size of slices that the document will be divided into.
+    name: Office.GetFileOptions
+    fullName: office.Office.GetFileOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.GetFileOptions.asyncContext
+      - office.Office.GetFileOptions.sliceSize
+  - uid: office.Office.GetFileOptions.asyncContext
+    summary: >-
+      A user-defined item of any type that is returned, unchanged, in the value property of the AsyncResult object that
+      is passed to a callback.
+    name: asyncContext
+    fullName: office.Office.GetFileOptions.asyncContext
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'asyncContext?: any;'
+      return:
+        type:
+          - any
+  - uid: office.Office.GetFileOptions.sliceSize
+    summary: The the size of the slices in bytes. The maximum (and the default) is 4194304 (4MB).
+    name: sliceSize
+    fullName: office.Office.GetFileOptions.sliceSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sliceSize?: number;'
+      return:
+        type:
+          - number

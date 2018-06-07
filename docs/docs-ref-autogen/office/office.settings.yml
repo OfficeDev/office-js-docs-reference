@@ -60,8 +60,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void):
-        void;
+        addHandlerAsync(eventType: EventType, handler: any, options?: AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -76,11 +76,9 @@ items:
           type:
             - any
         - id: options
-          description: >-
-            Specifies any of the following optional parameters. asyncContext: A user-defined item of any type that is
-            returned in the AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -180,7 +178,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'removeHandlerAsync(eventType: EventType, options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        removeHandlerAsync(eventType: EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
@@ -191,9 +191,9 @@ items:
           type:
             - EventType
         - id: options
-          description: Specifies any of the following optional parameters.
+          description: Provides options to determine which event handler or handlers are removed.
           type:
-            - any
+            - RemoveHandlerOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -209,18 +209,22 @@ items:
       \|AsyncResult.error\|Access an Error object that provides error information if the operation failed.\|
       \|AsyncResult.asyncContext\|A user-defined item of any type that is returned in the AsyncResult object without
       being altered.\|
-    name: saveAsync(callback)
+    name: 'saveAsync(options, callback)'
     fullName: office.Office.Settings.saveAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(callback?: (result: AsyncResult) => void): void;'
+      content: 'saveAsync(options?: SaveSettingsOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
+        - id: options
+          description: Provides options for saving settings.
+          type:
+            - SaveSettingsOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.

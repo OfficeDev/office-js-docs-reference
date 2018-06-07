@@ -1,0 +1,137 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.SetSelectedDataOptions
+    summary: Provides options for how to insert data to the selection.
+    name: Office.SetSelectedDataOptions
+    fullName: office.Office.SetSelectedDataOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.SetSelectedDataOptions.asyncContext
+      - office.Office.SetSelectedDataOptions.cellFormat
+      - office.Office.SetSelectedDataOptions.coercionType
+      - office.Office.SetSelectedDataOptions.imageHeight
+      - office.Office.SetSelectedDataOptions.imageLeft
+      - office.Office.SetSelectedDataOptions.imageTop
+      - office.Office.SetSelectedDataOptions.imageWidth
+      - office.Office.SetSelectedDataOptions.tableOptions
+  - uid: office.Office.SetSelectedDataOptions.asyncContext
+    summary: >-
+      A user-defined item of any type that is returned, unchanged, in the value property of the AsyncResult object that
+      is passed to a callback.
+    name: asyncContext
+    fullName: office.Office.SetSelectedDataOptions.asyncContext
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'asyncContext?: any;'
+      return:
+        type:
+          - any
+  - uid: office.Office.SetSelectedDataOptions.cellFormat
+    summary: >-
+      Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects
+      that specify a range of columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to
+      that range. Example: \[{cells: Office.Table.Data, format: {fontColor: "yellow"}}, {cells: {row: 3, column: 4},
+      format: {borderColor: "white", fontStyle: "bold"}}\]
+    name: cellFormat
+    fullName: office.Office.SetSelectedDataOptions.cellFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellFormat?: Array<RangeFormatConfiguration>;'
+      return:
+        type:
+          - Array<RangeFormatConfiguration>
+  - uid: office.Office.SetSelectedDataOptions.coercionType
+    summary: Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
+    name: coercionType
+    fullName: office.Office.SetSelectedDataOptions.coercionType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'coercionType?: Office.CoercionType | string;'
+      return:
+        type:
+          - Office.CoercionType | string
+  - uid: office.Office.SetSelectedDataOptions.imageHeight
+    summary: >-
+      This option is applicable for inserting images. Indicates the image height. If this option is provided without the
+      imageWidth, the image will scale to match the value of the image height. If both image width and image height are
+      provided, the image will be resized accordingly. If neither the image height or width is provided, the default
+      image size and aspect ratio will be used. This value is in points.
+    name: imageHeight
+    fullName: office.Office.SetSelectedDataOptions.imageHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'imageHeight?: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.SetSelectedDataOptions.imageLeft
+    summary: >-
+      This option is applicable for inserting images. Indicates the insert location in relation to the left side of the
+      slide for PowerPoint, and its relation to the currently selected cell in Excel. This value is ignored for Word.
+      This value is in points.
+    name: imageLeft
+    fullName: office.Office.SetSelectedDataOptions.imageLeft
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'imageLeft?: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.SetSelectedDataOptions.imageTop
+    summary: >-
+      This option is applicable for inserting images. Indicates the insert location in relation to the top of the slide
+      for PowerPoint, and its relation to the currently selected cell in Excel. This value is ignored for Word. This
+      value is in points.
+    name: imageTop
+    fullName: office.Office.SetSelectedDataOptions.imageTop
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'imageTop?: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.SetSelectedDataOptions.imageWidth
+    summary: >-
+      This option is applicable for inserting images. Indicates the image width. If this option is provided without the
+      imageHeight, the image will scale to match the value of the image width. If both image width and image height are
+      provided, the image will be resized accordingly. If neither the image height or width is provided, the default
+      image size and aspect ratio will be used. This value is in points.
+    name: imageWidth
+    fullName: office.Office.SetSelectedDataOptions.imageWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'imageWidth?: number;'
+      return:
+        type:
+          - number
+  - uid: office.Office.SetSelectedDataOptions.tableOptions
+    summary: >-
+      For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total
+      row, and banded rows. Example: {bandedRows: true, filterButton: false}
+    name: tableOptions
+    fullName: office.Office.SetSelectedDataOptions.tableOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tableOptions?: object;'
+      return:
+        type:
+          - object
