@@ -3613,7 +3613,7 @@
             },
             "setSelectedDataAsync": {
               "kind": "method",
-              "signature": "setSelectedDataAsync(data: string): void;",
+              "signature": "setSelectedDataAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -3633,6 +3633,30 @@
                   "isOptional": false,
                   "isSpread": false,
                   "type": "string"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method. coercionType: If text, the current style is applied in Outlook Web App and Outlook. If the field is an HTML editor, only the text data is inserted, even if the data is HTML. If html and the field supports HTML (the subject doesn't), the current style is applied in Outlook Web App and the default style is applied in Outlook. If the field is a text field, an InvalidDataFormat error is returned. If coercionType is not set, the result depends on the field: if the field is HTML then HTML is used; if the field is text, then plain text is used."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "AsyncContextOptions & CoercionTypeOptions"
+                },
+                "callback": {
+                  "name": "callback",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure."
+                    }
+                  ],
+                  "isOptional": true,
+                  "isSpread": false,
+                  "type": "(result: AsyncResult) => void"
                 }
               },
               "deprecatedMessage": [],

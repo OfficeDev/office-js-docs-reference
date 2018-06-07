@@ -23,7 +23,6 @@ items:
       - Outlook_1_1.Office.Item.dateTimeModifed
       - Outlook_1_1.Office.Item.itemType
       - Outlook_1_1.Office.Item.loadCustomPropertiesAsync
-      - Outlook_1_1.Office.Item.notificationMessages
   - uid: Outlook_1_1.Office.Item.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
@@ -152,22 +151,3 @@ items:
             accessed by the asyncResult.asyncContext property in the callback function.
           type:
             - any
-  - uid: Outlook_1_1.Office.Item.notificationMessages
-    summary: |-
-      Gets the notification messages for an item.
-
-      \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
-
-      Applicable Outlook mode: Compose or read
-    name: notificationMessages
-    fullName: Outlook_1_1.Office.Item.notificationMessages
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'notificationMessages: NotificationMessages;'
-      return:
-        type:
-          - NotificationMessages

@@ -17,7 +17,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false
@@ -28,7 +33,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -52,20 +62,6 @@
                 {
                   "kind": "text",
                   "text": "The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The end property returns a Date object."
                 },
                 {
                   "kind": "paragraph"
@@ -132,20 +128,6 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The location property returns a string that contains the location of the appointment."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "*Compose mode*"
                 },
                 {
@@ -199,20 +181,6 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional attendee to the meeting."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "*Compose mode*"
                 },
                 {
@@ -260,20 +228,6 @@
                 {
                   "kind": "text",
                   "text": "Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required attendee to the meeting."
                 },
                 {
                   "kind": "paragraph"
@@ -334,20 +288,6 @@
                 {
                   "kind": "text",
                   "text": "The start property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The start property returns a Date object."
                 },
                 {
                   "kind": "paragraph"
@@ -901,7 +841,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -914,8 +859,53 @@
               "isStatic": false,
               "type": "Date",
               "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the date and time that the appointment is to end."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The end property returns a Date object."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level: ReadItem"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode: Compose or read"
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -932,14 +922,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the location of an appointment."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Read mode*"
+                  "text": "Gets the location of an appointment."
                 },
                 {
                   "kind": "paragraph"
@@ -947,20 +930,6 @@
                 {
                   "kind": "text",
                   "text": "The location property returns a string that contains the location of the appointment."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The location property returns a Location object that provides methods that are used to get and set the location of the appointment."
                 },
                 {
                   "kind": "paragraph"
@@ -1006,28 +975,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional attendee to the meeting."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The optionalAttendees property returns a Recipients object that provides methods to get or update the optional attendees for a meeting."
                 },
                 {
                   "kind": "paragraph"
@@ -1112,28 +1060,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required attendee to the meeting."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The requiredAttendees property returns a Recipients object that provides methods to get or update the required attendees for a meeting."
                 },
                 {
                   "kind": "paragraph"
@@ -1172,7 +1099,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the date and time that the appointment is to begin."
+                  "text": "Gets the date and time that the appointment is to begin."
                 },
                 {
                   "kind": "paragraph"
@@ -1186,35 +1113,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "The start property returns a Date object."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The start property returns a Time object."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server."
                 },
                 {
                   "kind": "paragraph"
@@ -3405,7 +3304,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -4152,27 +4056,6 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "The subject property returns a Subject object that provides methods to get and set the subject."
                 },
                 {
@@ -4209,7 +4092,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -4276,7 +4164,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR An object that contains body or attachment data and a callback function htmlBody: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. attachments: An array of JSON objects that are either file or item attachments. attachments.type: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment. attachments.name: A string that contains the name of the attachment, up to 255 characters in length. attachments.url: Only used if type is set to file. The URI of the location for the file. attachments.isLine: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list. attachments.itemId: Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters."
+                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR A ReplyFormData object that contains body or attachment data and a callback function"
                     }
                   ],
                   "isOptional": false,
@@ -4360,7 +4248,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. OR An object that contains body or attachment data and a callback function. The object is defined as follows. htmlBody: A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. attachments: An array of JSON objects that are either file or item attachments. attachments.type: Indicates the type of attachment. Must be file for a file attachment or item for an item attachment. attachments.name: A string that contains the name of the attachment, up to 255 characters in length. attachments.url: Only used if type is set to file. The URI of the location for the file. attachments.isLine: Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list. attachments.itemId: Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters."
+                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. OR A ReplyFormData object that contains body or attachment data and a callback function."
                     }
                   ],
                   "isOptional": false,
@@ -4949,7 +4837,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the description that appears in the subject field of an item."
+                  "text": "Gets the description that appears in the subject field of an item."
                 },
                 {
                   "kind": "paragraph"
@@ -4963,28 +4851,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The subject property returns a Subject object that provides methods to get and set the subject."
                 },
                 {
                   "kind": "paragraph"
@@ -7378,7 +7245,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -7444,7 +7316,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -7506,20 +7383,6 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc line of the message. The collection is limited to a maximum of 100 members."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "*Compose mode*"
                 },
                 {
@@ -7573,27 +7436,6 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To line of the message. The collection is limited to a maximum of 100 members."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "The to property returns a Recipients object that provides methods to get or update the recipients on the To line of the message."
                 },
                 {
@@ -7630,7 +7472,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -7653,28 +7500,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc line of the message. The collection is limited to a maximum of 100 members."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The cc property returns a Recipients object that provides methods to get or update the recipients on the Cc line of the message."
                 },
                 {
                   "kind": "paragraph"
@@ -7872,28 +7698,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Read mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To line of the message. The collection is limited to a maximum of 100 members."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The to property returns a Recipients object that provides methods to get or update the recipients on the To line of the message."
                 },
                 {
                   "kind": "paragraph"
@@ -8876,11 +8681,36 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "A file or item attachment. Used when displaying a reply form."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
           "members": {
+            "inLine": {
+              "kind": "property",
+              "signature": "inLine?: boolean;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "boolean",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
             "itemId": {
               "kind": "property",
               "signature": "itemId?: string;",
@@ -8889,7 +8719,12 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Only used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -8904,7 +8739,12 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "A string that contains the name of the attachment, up to 255 characters in length."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -8919,7 +8759,12 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Indicates the type of attachment. Must be file for a file attachment or item for an item attachment."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -8934,7 +8779,12 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Only used if type is set to file. The URI of the location for the file."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -8949,7 +8799,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "A ReplyFormData object that contains body or attachment data and a callback function. Used when displaying a reply form."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -8962,7 +8817,12 @@
               "isStatic": false,
               "type": "ReplyFormAttachment[]",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An array of ReplyFormAttachments that are either file or item attachments."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -8977,7 +8837,12 @@
               "isStatic": false,
               "type": "(result: AsyncResult) => void",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "When the reply display call completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -8992,7 +8857,12 @@
               "isStatic": false,
               "type": "string",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,

@@ -29,17 +29,13 @@ items:
       - Outlook_1_1.Office.Mailbox
       - Outlook_1_1.Office.MailboxEnums.AttachmentType
       - Outlook_1_1.Office.MailboxEnums.EntityType
-      - Outlook_1_1.Office.MailboxEnums.ItemNotificationMessageType
       - Outlook_1_1.Office.MailboxEnums.ItemType
       - Outlook_1_1.Office.MailboxEnums.RecipientType
       - Outlook_1_1.Office.MailboxEnums.ResponseType
-      - Outlook_1_1.Office.MailboxEnums.RestVersion
       - Outlook_1_1.Office.MeetingSuggestion
       - Outlook_1_1.Office.Message
       - Outlook_1_1.Office.MessageCompose
       - Outlook_1_1.Office.MessageRead
-      - Outlook_1_1.Office.NotificationMessageDetails
-      - Outlook_1_1.Office.NotificationMessages
       - Outlook_1_1.Office.PhoneNumber
       - Outlook_1_1.Office.Recipients
       - Outlook_1_1.Office.ReplyFormAttachment
@@ -95,16 +91,12 @@ references:
     name: Office.MailboxEnums.AttachmentType
   - uid: Outlook_1_1.Office.MailboxEnums.EntityType
     name: Office.MailboxEnums.EntityType
-  - uid: Outlook_1_1.Office.MailboxEnums.ItemNotificationMessageType
-    name: Office.MailboxEnums.ItemNotificationMessageType
   - uid: Outlook_1_1.Office.MailboxEnums.ItemType
     name: Office.MailboxEnums.ItemType
   - uid: Outlook_1_1.Office.MailboxEnums.RecipientType
     name: Office.MailboxEnums.RecipientType
   - uid: Outlook_1_1.Office.MailboxEnums.ResponseType
     name: Office.MailboxEnums.ResponseType
-  - uid: Outlook_1_1.Office.MailboxEnums.RestVersion
-    name: Office.MailboxEnums.RestVersion
   - uid: Outlook_1_1.Office.MeetingSuggestion
     name: Office.MeetingSuggestion
   - uid: Outlook_1_1.Office.Message
@@ -113,10 +105,6 @@ references:
     name: Office.MessageCompose
   - uid: Outlook_1_1.Office.MessageRead
     name: Office.MessageRead
-  - uid: Outlook_1_1.Office.NotificationMessageDetails
-    name: Office.NotificationMessageDetails
-  - uid: Outlook_1_1.Office.NotificationMessages
-    name: Office.NotificationMessages
   - uid: Outlook_1_1.Office.PhoneNumber
     name: Office.PhoneNumber
   - uid: Outlook_1_1.Office.Recipients

@@ -1,6 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: Outlook_1_6.Office.ItemCompose
+    summary: >-
+      Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
+      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
     name: Office.ItemCompose
     fullName: Outlook_1_6.Office.ItemCompose
     langs:
@@ -394,25 +397,12 @@ items:
           type:
             - '(result: AsyncResult) => void'
   - uid: Outlook_1_6.Office.ItemCompose.subject
-    summary: >-
+    summary: |-
       Gets or sets the description that appears in the subject field of an item.
-
 
       The subject property gets or sets the entire subject of the item, as sent by the email server.
 
-
-      \*Read mode\*
-
-
-      The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading
-      prefixes such as RE: and FW:.
-
-
-      \*Compose mode\*
-
-
       The subject property returns a Subject object that provides methods to get and set the subject.
-
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-

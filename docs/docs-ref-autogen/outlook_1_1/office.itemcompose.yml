@@ -12,10 +12,8 @@ items:
     children:
       - Outlook_1_1.Office.ItemCompose.addFileAttachmentAsync
       - Outlook_1_1.Office.ItemCompose.addItemAttachmentAsync
-      - Outlook_1_1.Office.ItemCompose.close
       - Outlook_1_1.Office.ItemCompose.getSelectedDataAsync
       - Outlook_1_1.Office.ItemCompose.removeAttachmentAsync
-      - Outlook_1_1.Office.ItemCompose.saveAsync
       - Outlook_1_1.Office.ItemCompose.subject
   - uid: Outlook_1_1.Office.ItemCompose.addFileAttachmentAsync
     summary: >-
@@ -150,38 +148,6 @@ items:
             a description of the error.
           type:
             - '(result: AsyncResult) => void'
-  - uid: Outlook_1_1.Office.ItemCompose.close
-    summary: >-
-      Closes the current item that is being composed
-
-
-      The behaviors of the close method depends on the current state of the item being composed. If the item has unsaved
-      changes, the client prompts the user to save, discard, or close the action.
-
-
-      In the Outlook desktop client, if the message is an inline reply, the close method has no effect.
-
-
-      Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the
-      user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved.
-
-
-      \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: Restricted
-
-      Applicable Outlook mode: Compose
-    name: close()
-    fullName: Outlook_1_1.Office.ItemCompose.close
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'close(): void;'
-      return:
-        type:
-          - void
-        description: ''
   - uid: Outlook_1_1.Office.ItemCompose.getSelectedDataAsync
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
@@ -261,69 +227,6 @@ items:
           description: The identifier of the attachment to remove. The maximum length of the string is 100 characters.
           type:
             - string
-        - id: options
-          description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
-          type:
-            - AsyncContextOptions
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain
-            an error code with the reason for the failure.
-          type:
-            - '(result: AsyncResult) => void'
-  - uid: Outlook_1_1.Office.ItemCompose.saveAsync
-    summary: >-
-      Asynchronously saves an item.
-
-
-      When invoked, this method saves the current message as a draft and returns the item id via the callback method. In
-      Outlook Web App or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is
-      saved to the local cache.
-
-
-      Since appointments have no draft state, if saveAsync is called on an appointment in compose mode, the item will be
-      saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no
-      invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.
-
-
-      Note: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the
-      REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced
-      to the server. Until the item is synced, using the itemId will return an error.
-
-
-      Note: The following clients have different behavior for saveAsync on appointments in compose mode:
-
-
-      - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac
-      Outlook will return an error.
-
-
-      - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose
-      mode.
-
-
-      \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadWriteItem
-
-      Applicable Outlook mode: Compose
-
-      Errors: InvalidAttachmentId - The attachment identifier does not exist.
-    name: 'saveAsync(options, callback)'
-    fullName: Outlook_1_1.Office.ItemCompose.saveAsync
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'saveAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers

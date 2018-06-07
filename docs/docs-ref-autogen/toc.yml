@@ -1163,17 +1163,12 @@ items:
                     uid: Outlook_1_1.Office.MailboxEnums.AttachmentType
                   - name: EntityType
                     uid: Outlook_1_1.Office.MailboxEnums.EntityType
-                  - name: ItemNotificationMessageType
-                    uid: >-
-                      Outlook_1_1.Office.MailboxEnums.ItemNotificationMessageType
                   - name: ItemType
                     uid: Outlook_1_1.Office.MailboxEnums.ItemType
                   - name: RecipientType
                     uid: Outlook_1_1.Office.MailboxEnums.RecipientType
                   - name: ResponseType
                     uid: Outlook_1_1.Office.MailboxEnums.ResponseType
-                  - name: RestVersion
-                    uid: Outlook_1_1.Office.MailboxEnums.RestVersion
               - name: MeetingSuggestion
                 uid: Outlook_1_1.Office.MeetingSuggestion
               - name: Message
@@ -1182,10 +1177,6 @@ items:
                 uid: Outlook_1_1.Office.MessageCompose
               - name: MessageRead
                 uid: Outlook_1_1.Office.MessageRead
-              - name: NotificationMessageDetails
-                uid: Outlook_1_1.Office.NotificationMessageDetails
-              - name: NotificationMessages
-                uid: Outlook_1_1.Office.NotificationMessages
               - name: PhoneNumber
                 uid: Outlook_1_1.Office.PhoneNumber
               - name: Recipients

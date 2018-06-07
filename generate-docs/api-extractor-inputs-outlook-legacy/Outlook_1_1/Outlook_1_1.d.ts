@@ -65,28 +65,6 @@ export declare namespace Office {
             Contact
         }
         /**
-         * Specifies the notification message type for an appointment or message.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Applicable Outlook mode: Compose or read
-         */
-        enum ItemNotificationMessageType {
-            /**
-             * The notificationMessage is a progress indicator.
-             */
-            ProgressIndicator,
-            /**
-             * The notificationMessage is an informational message.
-             */
-            InformationalMessage,
-            /**
-             * The notificationMessage is an error message.
-             */
-            ErrorMessage
-        }
-        /**
          * Specifies an item's type.
          *
          * [Api set: Mailbox 1.0]
@@ -162,28 +140,6 @@ export declare namespace Office {
              */
             Declined
         }
-        /**
-         * Specifies the version of the REST API that corresponds to a REST-formatted item ID.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Applicable Outlook mode: Compose or read
-         */
-        enum RestVersion {
-            /**
-             * Version 1.0.
-             */
-            v1_0,
-            /**
-             * Version 2.0.
-             */
-            v2_0,
-            /**
-             * Beta.
-             */
-            Beta
-        }
     }
     export interface AsyncContextOptions {
         asyncContext?: any;
@@ -250,45 +206,6 @@ export declare namespace Office {
      * Applicable Outlook mode: Compose or read
      */
     export interface Body {
-        /**
-         * Returns the current body in a specified format.
-         *
-         * This method returns the entire current body in the format specified by coercionType.
-         *
-         * When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         *
-         * @param coercionType - The format for the returned body.
-         * @param options - Optional. An object literal that contains one or more of the following properties:
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. The body is provided in the requested format in the asyncResult.value property.
-         */
-        getAsync(coercionType: CoercionType, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
-        /**
-         * Returns the current body in a specified format.
-         *
-         * This method returns the entire current body in the format specified by coercionType.
-         *
-         * When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         *
-         * @param coercionType - The format for the returned body.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. The body is provided in the requested format in the asyncResult.value property.
-         */
-        getAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;
-
         /**
          * Gets a value that indicates whether the content is in HTML or text format.
          *
@@ -380,99 +297,6 @@ export declare namespace Office {
          * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.
          */
         prependAsync(data: string): void;
-        /**
-         * Replaces the entire body with the specified text.
-         *
-         * When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
-         *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to LPNoLP.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadWriteItem
-         *
-         * Applicable Outlook mode: Compose
-         *
-         * Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
-         *
-         * InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.
-         *
-         * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
-         * @param options - Optional. An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *        coercionType: The desired format for the body. The string in the data parameter will be converted to this format.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.  Any errors encountered will be provided in the asyncResult.error property.
-         */
-        setAsync(data: string, options?: AsyncContextOptions & CoercionTypeOptions, callback?: (result: AsyncResult) => void): void;
-        /**
-         * Replaces the entire body with the specified text.
-         *
-         * When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
-         *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to LPNoLP.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadWriteItem
-         *
-         * Applicable Outlook mode: Compose
-         *
-         * Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
-         *
-         * InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.
-         *
-         * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
-         * @param options - Optional. An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *        coercionType: The desired format for the body. The string in the data parameter will be converted to this format.
-         */
-        setAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void;
-        /**
-         * Replaces the entire body with the specified text.
-         *
-         * When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
-         *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to LPNoLP.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadWriteItem
-         *
-         * Applicable Outlook mode: Compose
-         *
-         * Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
-         *
-         * InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.
-         *
-         * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.  Any errors encountered will be provided in the asyncResult.error property.
-         */
-        setAsync(data: string, callback: (result: AsyncResult) => void): void;
-        /**
-         * Replaces the entire body with the specified text.
-         *
-         * When working with HTML-formatted bodies, it is important to note that the Body.getAsync and Body.setAsync methods are not idempotent. The value returned from the getAsync method will not necessarily be exactly the same as the value that was passed in the setAsync method previously. The client may modify the value passed to setAsync in order to make it render efficiently with its rendering engine.
-         *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to LPNoLP.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadWriteItem
-         *
-         * Applicable Outlook mode: Compose
-         *
-         * Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
-         *
-         * InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.
-         *
-         * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
-         */
-        setAsync(data: string): void;
-
         /**
          * Replaces the selection in the body with the specified text.
          *
@@ -1262,18 +1086,6 @@ export declare namespace Office {
          * Applicable Outlook mode: Compose or read
          */
         itemType: Office.MailboxEnums.ItemType;
-        /**
-         * Gets the notification messages for an item.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         *
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         */
-        notificationMessages: NotificationMessages;
 
        /**
         * Asynchronously loads custom properties for this add-in on the selected item.
@@ -1533,26 +1345,6 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
          */
         addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;
-
-        /**
-         * Closes the current item that is being composed
-         *
-         * The behaviors of the close method depends on the current state of the item being composed. If the item has unsaved changes, the client prompts the user to save, discard, or close the action.
-         *
-         * In the Outlook desktop client, if the message is an inline reply, the close method has no effect.
-         *
-         * Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, discard, or cancel even if no changes have occurred since the item was last saved.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         *
-         * Minimum permission level: Restricted
-         *
-         * Applicable Outlook mode: Compose
-         */
-        close(): void;
-        
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -1677,121 +1469,6 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
          */
         removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;
-
-        /**
-         * Asynchronously saves an item.
-         *
-         * When invoked, this method saves the current message as a draft and returns the item id via the callback method. In Outlook Web App or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache.
-         *
-         * Since appointments have no draft state, if saveAsync is called on an appointment in compose mode, the item will be saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.
-         *
-         * Note: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. Until the item is synced, using the itemId will return an error.
-         *
-         * Note: The following clients have different behavior for saveAsync on appointments in compose mode:
-         *
-         * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
-         *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         *
-         * Minimum permission level: ReadWriteItem
-         *
-         * Applicable Outlook mode: Compose
-         *
-         * Errors: InvalidAttachmentId - The attachment identifier does not exist.
-         *
-         * @param options - Optional. An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
-         */
-        saveAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
-        /**
-         * Asynchronously saves an item.
-         *
-         * When invoked, this method saves the current message as a draft and returns the item id via the callback method. In Outlook Web App or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache.
-         *
-         * Since appointments have no draft state, if saveAsync is called on an appointment in compose mode, the item will be saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.
-         *
-         * Note: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. Until the item is synced, using the itemId will return an error.
-         *
-         * Note: The following clients have different behavior for saveAsync on appointments in compose mode:
-         *
-         * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
-         *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         *
-         * Minimum permission level: ReadWriteItem
-         *
-         * Applicable Outlook mode: Compose
-         *
-         * Errors: InvalidAttachmentId - The attachment identifier does not exist.
-         *
-         */
-        saveAsync(): void;
-        /**
-         * Asynchronously saves an item.
-         *
-         * When invoked, this method saves the current message as a draft and returns the item id via the callback method. In Outlook Web App or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache.
-         *
-         * Since appointments have no draft state, if saveAsync is called on an appointment in compose mode, the item will be saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.
-         *
-         * Note: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. Until the item is synced, using the itemId will return an error.
-         *
-         * Note: The following clients have different behavior for saveAsync on appointments in compose mode:
-         *
-         * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
-         *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         *
-         * Minimum permission level: ReadWriteItem
-         *
-         * Applicable Outlook mode: Compose
-         *
-         * Errors: InvalidAttachmentId - The attachment identifier does not exist.
-         *
-         * @param options - Optional. An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         */
-        saveAsync(options: AsyncContextOptions): void;
-        /**
-         * Asynchronously saves an item.
-         *
-         * When invoked, this method saves the current message as a draft and returns the item id via the callback method. In Outlook Web App or Outlook in online mode, the item is saved to the server. In Outlook in cached mode, the item is saved to the local cache.
-         *
-         * Since appointments have no draft state, if saveAsync is called on an appointment in compose mode, the item will be saved as a normal appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. Saving an existing appointment will send an update to added or removed attendees.
-         *
-         * Note: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that when Outlook is in cached mode, it may take some time before the item is actually synced to the server. Until the item is synced, using the itemId will return an error.
-         *
-         * Note: The following clients have different behavior for saveAsync on appointments in compose mode:
-         *
-         * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
-         *
-         * - Outlook on the web always sends an invitation or update when saveAsync is called on an appointment in compose mode.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         *
-         * Minimum permission level: ReadWriteItem
-         *
-         * Applicable Outlook mode: Compose
-         *
-         * Errors: InvalidAttachmentId - The attachment identifier does not exist.
-         *
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
-         */
-        saveAsync(callback: (result: AsyncResult) => void): void;
     }
     export interface ItemRead extends Item {
         /**
@@ -2497,25 +2174,6 @@ export declare namespace Office {
          */
         addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
-         * Converts an item ID formatted for REST into EWS format.
-         *
-         * Item IDs retrieved via a REST API (such as the Outlook Mail API or the Microsoft Graph) use a different format than the format used by Exchange Web Services (EWS). The convertToEwsId method converts a REST-formatted ID into the proper format for EWS.
-         *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         *
-         * Minimum permission level: Restricted
-         *
-         * Applicable Outlook mode: Compose or read
-         *
-         * @param itemId - An item ID formatted for the Outlook REST APIs.
-         * @param restVersion - A value indicating the version of the Outlook REST API used to retrieve the item ID.
-         */
-        convertToEwsId(itemId: string, restVersion: Office.MailboxEnums.RestVersion): string;
-        /**
          * Gets a dictionary containing time information in local client time.
          *
          * The dates and times used by a mail app for Outlook or Outlook Web App can use different time zones. Outlook uses the client computer time zone; Outlook Web App uses the time zone set on the Exchange Admin Center (EAC). You should handle date and time values so that the values you display on the user interface are always consistent with the time zone that the user expects.
@@ -2533,25 +2191,6 @@ export declare namespace Office {
          * @param timeValue - A Date object.
          */
         convertToLocalClientTime(timeValue: Date): LocalClientTime;
-        /**
-         * Converts an item ID formatted for EWS into REST format.
-         *
-         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         *
-         * Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs (such as the [Outlook Mail API](https://msdn.microsoft.com/office/office365/APi/mail-rest-operations) or the [Microsoft Graph](http://graph.microsoft.io/)). The convertToRestId method converts an EWS-formatted ID into the proper format for REST.
-         *
-         * Minimum permission level: Restricted
-         *
-         * Applicable Outlook mode: Compose or read
-         *
-         * @param itemId - An item ID formatted for Exchange Web Services (EWS)
-         * @param restVersion - A value indicating the version of the Outlook REST API that the converted ID will be used with.
-         */
-        convertToRestId(itemId: string, restVersion: Office.MailboxEnums.RestVersion): string;
         /**
          * Gets a Date object from a dictionary containing time information.
          *
@@ -2726,29 +2365,6 @@ export declare namespace Office {
          */
         getCallbackTokenAsync(callback: (result: AsyncResult) => void): void;
         /**
-         * Gets a string that contains a token used to get an attachment or item from an Exchange Server.
-         *
-         * The getCallbackTokenAsync method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox. The lifetime of the callback token is 5 minutes.
-         *
-         * You can pass the token and an attachment identifier or item identifier to a third-party system. The third-party system uses the token as a bearer authorization token to call the Exchange Web Services (EWS) GetAttachment or GetItem operation to return an attachment or item. For example, you can create a remote service to get attachments from the selected item.
-         *
-         * Your app must have the ReadItem permission specified in its manifest to call the getCallbackTokenAsync method in read mode.
-         *
-         * In compose mode you must call the saveAsync method to get an item identifier to pass to the getCallbackTokenAsync method. Your app must have ReadWriteItem permissions to call the saveAsync method.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         *
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose and read
-         *
-         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. The token is provided as a string in the asyncResult.value property.
-         * @param userContext - Optional. Any state data that is passed to the asynchronous method.
-         */
-        getCallbackTokenAsync(callback: (result: AsyncResult) => void, userContext?: any): void;
-        /**
          * Gets a token identifying the user and the Office Add-in.
          *
          * The token is provided as a string in the asyncResult.value property.
@@ -2848,276 +2464,6 @@ export declare namespace Office {
          * Gets the subject of a suggested meeting.
          */
         subject: string;
-    }
-    /**
-     * An array of NotificationMessageDetails objects are returned by the NotificationMessages.getAllAsync method.
-     *
-     * [Api set: Mailbox 1.3]
-     *
-     * @remarks
-     * Minimum permission level: ReadItem
-     *
-     * Applicable Outlook mode: Compose or read
-     */
-    export interface NotificationMessageDetails {
-        /**
-         * The identifier for the notification message.
-         */
-        key?: string;
-        /**
-         * Specifies the Office.MailboxEnums.ItemNotificationMessageType of message. If type is ProgressIndicator or ErrorMessage, an icon is automatically supplied and the message is not persistent. Therefore the icon and persistent properties are not valid for these types of messages. Including them will result in an ArgumentException. If type is ProgressIndicator, the developer should remove or replace the progress indicator when the action is complete.
-         */
-        type: Office.MailboxEnums.ItemNotificationMessageType;
-        /**
-         * A reference to an icon that is defined in the manifest in the Resources section. It appears in the infobar area. It is only applicable if the type is InformationalMessage. Specifying this parameter for an unsupported type results in an exception.
-         */
-        icon?: string;
-        /**
-         * The text of the notification message. Maximum length is 150 characters. If the developer passes in a longer string, an ArgumentOutOfRange exception is thrown.
-         */
-        message: string;
-        /**
-         * Only applicable when type is InformationalMessage. If true, the message remains until removed by this add-in or dismissed by the user. If false, it is removed when the user navigates to a different item. For error notifications, the message persists until the user sees it once. Specifying this parameter for an unsupported type throws an exception.
-         */
-        persistent?: Boolean;
-    }
-    /**
-     * The NotificationMessages object is returned as the notificationMessages property of an item.
-     *
-     * [Api set: Mailbox 1.3]
-     *
-     * @remarks
-     * Minimum permission level: ReadItem
-     *
-     * Applicable Outlook mode: Compose or read
-     */
-    export interface NotificationMessages {
-        /**
-         * Adds a notification to an item.
-         *
-         * There are a maximum of 5 notifications per message. Setting more will return a NumberOfNotificationMessagesExceeded error.
-         *
-         * @param key - A developer-specified key used to reference this notification message. Developers can use it to modify this message later. It can't be longer than 32 characters.
-         * @param JSONmessage - A JSON object that contains the notification message to be added to the item. It contains a NotificationMessageDetails object.
-         * @param options - Optional. An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         */
-        addAsync(key: string, JSONmessage: NotificationMessageDetails, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
-        /**
-         * Adds a notification to an item.
-         *
-         * There are a maximum of 5 notifications per message. Setting more will return a NumberOfNotificationMessagesExceeded error.
-         *
-         * @param key - A developer-specified key used to reference this notification message. Developers can use it to modify this message later. It can't be longer than 32 characters.
-         * @param JSONmessage - A JSON object that contains the notification message to be added to the item. It contains a NotificationMessageDetails object.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         */
-        addAsync(key: string, JSONmessage: NotificationMessageDetails): void;
-        /**
-         * Adds a notification to an item.
-         *
-         * There are a maximum of 5 notifications per message. Setting more will return a NumberOfNotificationMessagesExceeded error.
-         *
-         * @param key - A developer-specified key used to reference this notification message. Developers can use it to modify this message later. It can't be longer than 32 characters.
-         * @param JSONmessage - A JSON object that contains the notification message to be added to the item. It contains a NotificationMessageDetails object.
-         * @param options - Optional. An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         */
-        addAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;
-        /**
-         * Adds a notification to an item.
-         *
-         * There are a maximum of 5 notifications per message. Setting more will return a NumberOfNotificationMessagesExceeded error.
-         *
-         * @param key - A developer-specified key used to reference this notification message. Developers can use it to modify this message later. It can't be longer than 32 characters.
-         * @param JSONmessage - A JSON object that contains the notification message to be added to the item. It contains a NotificationMessageDetails object.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         */
-        addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) => void): void;
-        /**
-         * Returns all keys and messages for an item.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         *
-         * @param options - Optional. An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         */
-        getAllAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
-        /**
-         * Returns all keys and messages for an item.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         *
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         */
-        getAllAsync(callback: (result: AsyncResult) => void): void;
-        /**
-         * Removes a notification message for an item.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         *
-         * @param key - The key for the notification message to remove.
-         * @param options - Optional. An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         */
-        removeAsync(key: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
-        /**
-         * Removes a notification message for an item.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         *
-         * @param key - The key for the notification message to remove.
-         */
-        removeAsync(key: string): void;
-        /**
-         * Removes a notification message for an item.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         *
-         * @param key - The key for the notification message to remove.
-         * @param options - Optional. An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         */
-        removeAsync(key: string, options: AsyncContextOptions): void;
-        /**
-         * Removes a notification message for an item.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         *
-         * @param key - The key for the notification message to remove.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         */
-        removeAsync(key: string, callback: (result: AsyncResult) => void): void;
-        /**
-         * Replaces a notification message that has a given key with another message.
-         *
-         * If a notification message with the specified key doesn't exist, replaceAsync will add the notification.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         *
-         * @param key - The key for the notification message to replace. It can't be longer than 32 characters.
-         * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message. It contains a NotificationMessageDetails object.
-         * @param options - Optional. An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         */
-        replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
-        /**
-         * Replaces a notification message that has a given key with another message.
-         *
-         * If a notification message with the specified key doesn't exist, replaceAsync will add the notification.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         *
-         * @param key - The key for the notification message to replace. It can't be longer than 32 characters.
-         * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message. It contains a NotificationMessageDetails object.
-         */
-        replaceAsync(key: string, JSONmessage: NotificationMessageDetails): void;
-        /**
-         * Replaces a notification message that has a given key with another message.
-         *
-         * If a notification message with the specified key doesn't exist, replaceAsync will add the notification.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         *
-         * @param key - The key for the notification message to replace. It can't be longer than 32 characters.
-         * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message. It contains a NotificationMessageDetails object.
-         * @param options - Optional. An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
-         */
-        replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;
-        /**
-         * Replaces a notification message that has a given key with another message.
-         *
-         * If a notification message with the specified key doesn't exist, replaceAsync will add the notification.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose or read
-         *
-         * @param key - The key for the notification message to replace. It can't be longer than 32 characters.
-         * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message. It contains a NotificationMessageDetails object.
-         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         */
-        replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) => void): void;
     }
     /**
      * Represents a phone number identified in an item. Read mode only.

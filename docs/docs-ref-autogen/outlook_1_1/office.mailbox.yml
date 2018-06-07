@@ -25,9 +25,7 @@ items:
     package: Outlook_1_1
     children:
       - Outlook_1_1.Office.Mailbox.addHandlerAsync
-      - Outlook_1_1.Office.Mailbox.convertToEwsId
       - Outlook_1_1.Office.Mailbox.convertToLocalClientTime
-      - Outlook_1_1.Office.Mailbox.convertToRestId
       - Outlook_1_1.Office.Mailbox.convertToUtcClientTime
       - Outlook_1_1.Office.Mailbox.displayAppointmentForm
       - Outlook_1_1.Office.Mailbox.displayMessageForm
@@ -88,44 +86,6 @@ items:
             parameter of type AsyncResult.
           type:
             - '(result: AsyncResult) => void'
-  - uid: Outlook_1_1.Office.Mailbox.convertToEwsId
-    summary: >-
-      Converts an item ID formatted for REST into EWS format.
-
-
-      Item IDs retrieved via a REST API (such as the Outlook Mail API or the Microsoft Graph) use a different format
-      than the format used by Exchange Web Services (EWS). The convertToEwsId method converts a REST-formatted ID into
-      the proper format for EWS.
-
-
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
-
-
-      \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: Restricted
-
-      Applicable Outlook mode: Compose or read
-    name: 'convertToEwsId(itemId, restVersion)'
-    fullName: Outlook_1_1.Office.Mailbox.convertToEwsId
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'convertToEwsId(itemId: string, restVersion: Office.MailboxEnums.RestVersion): string;'
-      return:
-        type:
-          - string
-        description: ''
-      parameters:
-        - id: itemId
-          description: An item ID formatted for the Outlook REST APIs.
-          type:
-            - string
-        - id: restVersion
-          description: A value indicating the version of the Outlook REST API used to retrieve the item ID.
-          type:
-            - Office.MailboxEnums.RestVersion
   - uid: Outlook_1_1.Office.Mailbox.convertToLocalClientTime
     summary: >-
       Gets a dictionary containing time information in local client time.
@@ -164,44 +124,6 @@ items:
           description: A Date object.
           type:
             - Date
-  - uid: Outlook_1_1.Office.Mailbox.convertToRestId
-    summary: |-
-      Converts an item ID formatted for EWS into REST format.
-
-      Note: This method is not supported in Outlook for iOS or Outlook for Android.
-
-      \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs
-      (such as the \[Outlook Mail API\](https://msdn.microsoft.com/office/office365/APi/mail-rest-operations) or the
-      \[Microsoft Graph\](http://graph.microsoft.io/)). The convertToRestId method converts an EWS-formatted ID into the
-      proper format for REST.
-
-
-      Minimum permission level: Restricted
-
-
-      Applicable Outlook mode: Compose or read
-    name: 'convertToRestId(itemId, restVersion)'
-    fullName: Outlook_1_1.Office.Mailbox.convertToRestId
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'convertToRestId(itemId: string, restVersion: Office.MailboxEnums.RestVersion): string;'
-      return:
-        type:
-          - string
-        description: ''
-      parameters:
-        - id: itemId
-          description: An item ID formatted for Exchange Web Services (EWS)
-          type:
-            - string
-        - id: restVersion
-          description: A value indicating the version of the Outlook REST API that the converted ID will be used with.
-          type:
-            - Office.MailboxEnums.RestVersion
   - uid: Outlook_1_1.Office.Mailbox.convertToUtcClientTime
     summary: >-
       Gets a Date object from a dictionary containing time information.
