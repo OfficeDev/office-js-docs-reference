@@ -61,8 +61,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, options?: any,
-        callback?: (result: AsyncResult) => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, options?:
+        AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -79,11 +79,9 @@ items:
           type:
             - '(type: Office.EventType) => void'
         - id: options
-          description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
+          description: 'Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -175,9 +173,9 @@ items:
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs
-      (such as the \[Outlook Mail API\]&lt;https://msdn.microsoft.com/office/office365/APi/mail-rest-operations&gt; or
-      the \[Microsoft Graph\]&lt;http://graph.microsoft.io/&gt;). The convertToRestId method converts an EWS-formatted
-      ID into the proper format for REST.
+      (such as the \[Outlook Mail API\](https://msdn.microsoft.com/office/office365/APi/mail-rest-operations) or the
+      \[Microsoft Graph\](http://graph.microsoft.io/)). The convertToRestId method converts an EWS-formatted ID into the
+      proper format for REST.
 
 
       Minimum permission level: Restricted
@@ -444,7 +442,7 @@ items:
     remarks: >-
       The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can
       create a remote service to \[get attachments from the selected
-      item\]&lt;https://msdn.microsoft.com/library/office/dn148008.aspx&gt;.
+      item\](https://msdn.microsoft.com/library/office/dn148008.aspx).
 
 
       Minimum permission level: ReadItem
@@ -535,7 +533,7 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       The getUserIdentityTokenAsync method returns a token that you can use to identify and \[authenticate the add-in
-      and user with a third-party system\]&lt;https://msdn.microsoft.com/library/office/fp179828.aspx&gt;.
+      and user with a third-party system\](https://msdn.microsoft.com/library/office/fp179828.aspx).
 
 
       Minimum permission level: ReadItem
@@ -575,10 +573,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'item: Item & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose;'
+      content: 'item: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose;'
       return:
         type:
-          - Item & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose
+          - Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose
   - uid: outlook.Office.Mailbox.makeEwsRequestAsync
     summary: >-
       Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the
@@ -675,8 +673,8 @@ items:
 
       \[ [API set: Mailbox 1.5](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      The restUrl value can be used to make \[REST API\]&lt;https://docs.microsoft.com/outlook/rest/&gt; calls to the
-      user's mailbox.
+      The restUrl value can be used to make \[REST API\](https://docs.microsoft.com/outlook/rest/) calls to the user's
+      mailbox.
 
 
       Minimum permission level: ReadItem

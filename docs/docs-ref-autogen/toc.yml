@@ -572,8 +572,6 @@ items:
             uid: outlook.Office.CoercionTypeOptions
           - name: Contact
             uid: outlook.Office.Contact
-          - name: Context
-            uid: outlook.Office.Context
           - name: CustomProperties
             uid: outlook.Office.CustomProperties
           - name: Diagnostics
@@ -584,6 +582,8 @@ items:
             uid: outlook.Office.EmailUser
           - name: Entities
             uid: outlook.Office.Entities
+          - name: From
+            uid: outlook.Office.From
           - name: Item
             uid: outlook.Office.Item
           - name: ItemCompose
@@ -600,18 +600,28 @@ items:
             items:
               - name: AttachmentType
                 uid: outlook.Office.MailboxEnums.AttachmentType
+              - name: Days
+                uid: outlook.Office.MailboxEnums.Days
               - name: EntityType
                 uid: outlook.Office.MailboxEnums.EntityType
               - name: ItemNotificationMessageType
                 uid: outlook.Office.MailboxEnums.ItemNotificationMessageType
               - name: ItemType
                 uid: outlook.Office.MailboxEnums.ItemType
+              - name: Month
+                uid: outlook.Office.MailboxEnums.Month
               - name: RecipientType
                 uid: outlook.Office.MailboxEnums.RecipientType
+              - name: RecurrenceTimeZone
+                uid: outlook.Office.MailboxEnums.RecurrenceTimeZone
+              - name: RecurrenceType
+                uid: outlook.Office.MailboxEnums.RecurrenceType
               - name: ResponseType
                 uid: outlook.Office.MailboxEnums.ResponseType
               - name: RestVersion
                 uid: outlook.Office.MailboxEnums.RestVersion
+              - name: WeekNumber
+                uid: outlook.Office.MailboxEnums.WeekNumber
           - name: MeetingSuggestion
             uid: outlook.Office.MeetingSuggestion
           - name: Message
@@ -628,12 +638,18 @@ items:
             uid: outlook.Office.PhoneNumber
           - name: Recipients
             uid: outlook.Office.Recipients
+          - name: Recurrence
+            uid: outlook.Office.Recurrence
+          - name: RecurrenceProperties
+            uid: outlook.Office.RecurrenceProperties
           - name: ReplyFormAttachment
             uid: outlook.Office.ReplyFormAttachment
           - name: ReplyFormData
             uid: outlook.Office.ReplyFormData
           - name: RoamingSettings
             uid: outlook.Office.RoamingSettings
+          - name: SeriesTime
+            uid: outlook.Office.SeriesTime
           - name: SourceProperty
             uid: outlook.Office.SourceProperty
           - name: Subject
@@ -822,6 +838,14 @@ items:
             items:
               - name: ActiveView
                 uid: office.Office.ActiveView
+              - name: AddBindingFromNamedItemOptions
+                uid: office.Office.AddBindingFromNamedItemOptions
+              - name: AddBindingFromPromptOptions
+                uid: office.Office.AddBindingFromPromptOptions
+              - name: AddBindingFromSelectionOptions
+                uid: office.Office.AddBindingFromSelectionOptions
+              - name: AsyncContextOptions
+                uid: office.Office.AsyncContextOptions
               - name: AsyncResult
                 uid: office.Office.AsyncResult
               - name: AsyncResultStatus
@@ -840,8 +864,12 @@ items:
                 uid: office.Office.CoercionType
               - name: Context
                 uid: office.Office.Context
+              - name: ContextInformation
+                uid: office.Office.ContextInformation
               - name: CustomXmlNode
                 uid: office.Office.CustomXmlNode
+              - name: CustomXMLNodeType
+                uid: office.Office.CustomXMLNodeType
               - name: CustomXmlPart
                 uid: office.Office.CustomXmlPart
               - name: CustomXmlParts
@@ -870,14 +898,22 @@ items:
                 uid: office.Office.FileType
               - name: FilterType
                 uid: office.Office.FilterType
+              - name: GetBindingDataOptions
+                uid: office.Office.GetBindingDataOptions
+              - name: GetFileOptions
+                uid: office.Office.GetFileOptions
+              - name: GetSelectedDataOptions
+                uid: office.Office.GetSelectedDataOptions
+              - name: GoToByIdOptions
+                uid: office.Office.GoToByIdOptions
               - name: GoToType
                 uid: office.Office.GoToType
               - name: HostType
                 uid: office.Office.HostType
-              - name: Index
-                uid: office.Office.Index
               - name: InitializationReason
                 uid: office.Office.InitializationReason
+              - name: IPromiseConstructor
+                uid: office.Office.IPromiseConstructor
               - name: MatrixBinding
                 uid: office.Office.MatrixBinding
               - name: OfficeTheme
@@ -892,8 +928,22 @@ items:
                 uid: office.Office.ProjectTaskFields
               - name: ProjectViewTypes
                 uid: office.Office.ProjectViewTypes
+              - name: RangeCoordinates
+                uid: office.Office.RangeCoordinates
+              - name: RangeFormatConfiguration
+                uid: office.Office.RangeFormatConfiguration
+              - name: RemoveHandlerOptions
+                uid: office.Office.RemoveHandlerOptions
+              - name: RequirementSetSupport
+                uid: office.Office.RequirementSetSupport
+              - name: SaveSettingsOptions
+                uid: office.Office.SaveSettingsOptions
               - name: SelectionMode
                 uid: office.Office.SelectionMode
+              - name: SetBindingDataOptions
+                uid: office.Office.SetBindingDataOptions
+              - name: SetSelectedDataOptions
+                uid: office.Office.SetSelectedDataOptions
               - name: Settings
                 uid: office.Office.Settings
               - name: Slice

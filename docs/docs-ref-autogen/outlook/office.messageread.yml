@@ -1,6 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.MessageRead
+    summary: >-
+      Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
+      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
     name: Office.MessageRead
     fullName: outlook.Office.MessageRead
     langs:
@@ -21,18 +24,8 @@ items:
       the mode of the current item.
 
 
-      \*Read mode\*
-
-
       The cc property returns an array that contains an EmailAddressDetails object for each recipient listed on the Cc
       line of the message. The collection is limited to a maximum of 100 members.
-
-
-      \*Compose mode\*
-
-
-      The cc property returns a Recipients object that provides methods to get or update the recipients on the Cc line
-      of the message.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -52,7 +45,7 @@ items:
           - 'EmailAddressDetails[]'
   - uid: outlook.Office.MessageRead.from
     summary: >-
-      Gets the email address of the sender of a message. Read mode only.
+      Gets the email address of the sender of a message.
 
 
       The from and sender properties represent the same person unless the message is sent by a delegate. In that case,
@@ -60,6 +53,9 @@ items:
 
 
       Note: The recipientType property of the EmailAddressDetails object in the from property is undefined.
+
+
+      The from property returns an EmailAddressDetails object.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -129,18 +125,8 @@ items:
       the mode of the current item.
 
 
-      \*Read mode\*
-
-
       The to property returns an array that contains an EmailAddressDetails object for each recipient listed on the To
       line of the message. The collection is limited to a maximum of 100 members.
-
-
-      \*Compose mode\*
-
-
-      The to property returns a Recipients object that provides methods to get or update the recipients on the To line
-      of the message.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]

@@ -44,8 +44,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void):
-        void;
+        addHandlerAsync(eventType: EventType, handler: any, options?: AsyncContextOptions, callback?: (result:
+        AsyncResult) => void): void;
       return:
         type:
           - void
@@ -62,11 +62,9 @@ items:
           type:
             - any
         - id: options
-          description: >-
-            Syntax example: {asyncContext:context} asyncContext: A user-defined item of any type that is returned in the
-            AsyncResult object without being altered.
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - any
+            - AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -102,30 +100,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getDataAsync(options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: 'getDataAsync(options?: GetBindingDataOptions, callback?: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: options
-          description: >-
-            An object with any of the following (example: {coercionType: 'matrix, 'valueFormat: 'formatted',
-            filterType:'all'}): coercionType: The expected shape of the selection. Use Office.CoercionType or text
-            value. Default: The original, uncoerced type of the binding. valueFormat: Specifies whether values, such as
-            numbers and dates, are returned with their formatting applied. Use Office.ValueFormat or text value.
-            Default: Unformatted data. startRow: For table or matrix bindings, specifies the zero-based starting row for
-            a subset of the data in the binding. Default is first row. startColumn: For table or matrix bindings,
-            specifies the zero-based starting column for a subset of the data in the binding. Default is first column.
-            rowCount: For table or matrix bindings, specifies the number of rows offset from the startRow. Default is
-            all subsequent rows. columnCount: For table or matrix bindings, specifies the number of columns offset from
-            the startColumn. Default is all subsequent columns. filterType: Specify whether to get only the visible
-            (filtered in) data or all the data (default is all). Useful when filtering data. Use Office.FilterType or
-            text value. asyncContext: A user-defined item of any type that is returned in the AsyncResult object without
-            being altered. rows: Only for table bindings in content add-ins for Access. Specifies the pre-defined string
-            "thisRow" to get data in the currently selected row.
+          description: Provides options for how to get the data in a binding.
           type:
-            - any
+            - GetBindingDataOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -155,7 +139,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'removeHandlerAsync(eventType: EventType, options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        removeHandlerAsync(eventType: EventType, options?: RemoveHandlerOptions, callback?: (result: AsyncResult) =>
+        void): void;
       return:
         type:
           - void
@@ -166,12 +152,9 @@ items:
           type:
             - EventType
         - id: options
-          description: >-
-            An object with any of the following: handler: The handler to be removed, if not specified all handlers are
-            removed. asyncContext: A user-defined item of any type that is returned in the AsyncResult object without
-            being altered.
+          description: Provides options to determine which event handler or handlers are removed.
           type:
-            - any
+            - RemoveHandlerOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -188,7 +171,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setDataAsync(data: TableData | any, options?: any, callback?: (result: AsyncResult) => void): void;'
+      content: >-
+        setDataAsync(data: TableData | any, options?: SetBindingDataOptions, callback?: (result: AsyncResult) => void):
+        void;
       return:
         type:
           - void
@@ -202,21 +187,9 @@ items:
           type:
             - TableData | any
         - id: options
-          description: >-
-            Any of the following: cellFormat: For an inserted table, a list of key-value pairs that specify a range of
-            columns, rows, or cells and the cell formatting to apply to that range. coercionType: Explicitly sets the
-            shape of the data object. Use Office.CoercionType or text value. If not supplied is inferred from the data
-            type. columns: Only for table bindings in content add-ins for Access. Array of strings. Specifies the column
-            names. rows: Only for table bindings in content add-ins for Access. \*\*Office.TableRange.ThisRow\*\*
-            Specifies the pre-defined string "thisRow" to set data in the currently selected row. startRow: Specifies
-            the zero-based starting row for a subset of the data in the binding. Only for table or matrix bindings. If
-            omitted, data is set starting in the first row. startColumn: Specifies the zero-based starting column for a
-            subset of the data. Only for table or matrix bindings. If omitted, data is set starting in the first column.
-            tableOptions: For an inserted table, a list of key-value pairs that specify table formatting options, such
-            as header row, total row, and banded rows. asyncContext: A user-defined item of any type that is returned in
-            the AsyncResult object without being altered.
+          description: Provides options for how to set the data in a binding.
           type:
-            - any
+            - SetBindingDataOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
