@@ -3,7 +3,7 @@
 
 ### [Office](Office.md).context
 
-The Office.context namespace provides shared interfaces that are used by add-ins in all of the Office apps. This listing documents only those interfaces that are used by Outlook add-ins. For a full listing of the Office.context namespace, see the [Office.context reference in the Shared API](../../../api/office/office-context).
+The Office.context namespace provides shared interfaces that are used by add-ins in all of the Office apps. This listing documents only those interfaces that are used by Outlook add-ins. For a full listing of the Office.context namespace, see the [Office.context reference in the Shared API](/javascript/api/office/office.context).
 
 ##### Requirements
 
@@ -80,7 +80,7 @@ Using Office theme colors let's you coordinate the color scheme of your add-in w
 
 |Requirement| Value|
 |---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
+|[Minimum mailbox requirement set version](/javascript/api/office/requirement-sets/outlook-api-requirement-sets)| 1.3|
 |Applicable Outlook mode| Compose or read|
 
 ##### Example
@@ -98,7 +98,7 @@ function applyOfficeTheme(){
 }
 ```
 
-####  roamingSettings :[RoamingSettings](../../../api/office/RoamingSettings)
+####  roamingSettings :[RoamingSettings](/javascript/api/office/RoamingSettings)
 
 Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
 
@@ -113,5 +113,5 @@ The `RoamingSettings` object lets you store and access data for a mail add-in th
 |Requirement| Value|
 |---|---|
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
-|[Minimum permission level](../../../docs/outlook/understanding-outlook-add-in-permissions.md)| Restricted|
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
 |Applicable Outlook mode| Compose or read|
