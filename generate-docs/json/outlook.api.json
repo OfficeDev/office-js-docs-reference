@@ -36,6 +36,25 @@
           "summary": [
             {
               "kind": "text",
+              "text": "The read mode of "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Office.Appointment"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "outlook",
+                "exportName": "Office",
+                "memberName": "Appointment"
+              }
+            },
+            {
+              "kind": "text",
               "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
             }
           ],
@@ -839,6 +858,25 @@
           "typeParameters": [],
           "deprecatedMessage": [],
           "summary": [
+            {
+              "kind": "text",
+              "text": "The compose mode of "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Office.Appointment"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "outlook",
+                "exportName": "Office",
+                "memberName": "Appointment"
+              }
+            },
             {
               "kind": "text",
               "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
@@ -3730,6 +3768,25 @@
           "summary": [
             {
               "kind": "text",
+              "text": "The compose mode of "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Office.Item"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "outlook",
+                "exportName": "Office",
+                "memberName": "Item"
+              }
+            },
+            {
+              "kind": "text",
               "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
             }
           ],
@@ -4614,6 +4671,25 @@
           "summary": [
             {
               "kind": "text",
+              "text": "The read mode of "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Office.Appointment"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "outlook",
+                "exportName": "Office",
+                "memberName": "Appointment"
+              }
+            },
+            {
+              "kind": "text",
               "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
             }
           ],
@@ -4697,7 +4773,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR A ReplyFormData object that contains body or attachment data and a callback function"
+                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR A"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.ReplyFormData"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "ReplyFormData"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object that contains body or attachment data and a callback function"
                     }
                   ],
                   "isOptional": false,
@@ -4781,7 +4876,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. OR A ReplyFormData object that contains body or attachment data and a callback function."
+                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. OR A"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.ReplyFormData"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "outlook",
+                        "exportName": "Office",
+                        "memberName": "ReplyFormData"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object that contains body or attachment data and a callback function."
                     }
                   ],
                   "isOptional": false,
@@ -10575,6 +10689,32 @@
           "summary": [
             {
               "kind": "text",
+              "text": "A subclass of "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Office.Item"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "outlook",
+                "exportName": "Office",
+                "memberName": "Item"
+              }
+            },
+            {
+              "kind": "text",
+              "text": " for messages."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
               "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
             }
           ],
@@ -10644,6 +10784,25 @@
           "typeParameters": [],
           "deprecatedMessage": [],
           "summary": [
+            {
+              "kind": "text",
+              "text": "The compose mode of "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Office.Message"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "outlook",
+                "exportName": "Office",
+                "memberName": "Message"
+              }
+            },
             {
               "kind": "text",
               "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
@@ -10853,6 +11012,25 @@
           "typeParameters": [],
           "deprecatedMessage": [],
           "summary": [
+            {
+              "kind": "text",
+              "text": "The read mode of "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Office.Message"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "outlook",
+                "exportName": "Office",
+                "memberName": "Message"
+              }
+            },
             {
               "kind": "text",
               "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
@@ -12300,7 +12478,26 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "This object enables you to manage the start and end dates of the recurring appointment series and the usual start and end times of instances. **This object is not in UTC time.** Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's time zone."
+                  "text": "The "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.SeriesTime"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "SeriesTime"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object enables you to manage the start and end dates of the recurring appointment series and the usual start and end times of instances. **This object is not in UTC time.** Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's time zone."
                 },
                 {
                   "kind": "paragraph"
@@ -12746,7 +12943,26 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "An array of ReplyFormAttachments that are either file or item attachments."
+                  "text": "An array of "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.ReplyFormAttachments"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "ReplyFormAttachments"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " that are either file or item attachments."
                 }
               ],
               "remarks": [],

@@ -1618,6 +1618,8 @@ export declare namespace Office {
     export interface Appointment extends Item {
     }
     /**
+     * The compose mode of {@link Office.Appointment}
+     * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
     export interface AppointmentOrganizer extends Appointment, ItemCompose {
@@ -1711,6 +1713,8 @@ export declare namespace Office {
         start: Time;
     }
     /**
+     * The read mode of {@link Office.Appointment}
+     * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
     export interface AppointmentAttendee extends Appointment, ItemRead {
@@ -2164,6 +2168,8 @@ export declare namespace Office {
        removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;
     }
     /**
+     * The compose mode of {@link Office.Item}
+     * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
     export interface ItemCompose extends Item {
@@ -2758,6 +2764,8 @@ export declare namespace Office {
         setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;
     }
     /**
+     * The read mode of {@link Office.Appointment}
+     * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
     export interface ItemRead extends Item {
@@ -2863,7 +2871,7 @@ export declare namespace Office {
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *  OR
-         * A ReplyFormData object that contains body or attachment data and a callback function
+         * A {@link Office.ReplyFormData} object that contains body or attachment data and a callback function
          */
         displayReplyAllForm(formData: string | ReplyFormData): void;
         /**
@@ -2887,7 +2895,7 @@ export declare namespace Office {
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
          * OR
-         * A ReplyFormData object that contains body or attachment data and a callback function.
+         * A {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
          */
         displayReplyForm(formData: string | ReplyFormData): void;
         /**
@@ -3069,6 +3077,8 @@ export declare namespace Office {
         getSelectedRegExMatches(): any;
     }
     /**
+     * A subclass of {@link Office.Item} for messages.
+     * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
     export interface Message extends Item {
@@ -3091,6 +3101,8 @@ export declare namespace Office {
     }
 
      /**
+     * The compose mode of {@link Office.Message}
+     * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
     export interface MessageCompose extends Message, ItemCompose {
@@ -3154,6 +3166,8 @@ export declare namespace Office {
         to: Recipients;
     }
     /**
+     * The read mode of {@link Office.Message}
+     * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
     export interface MessageRead extends Message, ItemRead {
@@ -4465,7 +4479,7 @@ export declare namespace Office {
         recurrenceType: MailboxEnums.RecurrenceType;
 
         /**
-         * This object enables you to manage the start and end dates of the recurring appointment series and the usual start and end times of instances. **This object is not in UTC time.** Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's time zone.
+         * The {@link Office.SeriesTime} object enables you to manage the start and end dates of the recurring appointment series and the usual start and end times of instances. **This object is not in UTC time.** Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's time zone.
          * 
          * [Api set: Mailbox Preview]
          * 
@@ -4633,7 +4647,7 @@ export declare namespace Office {
          */
         htmlBody?: string;
         /**
-         * An array of ReplyFormAttachments that are either file or item attachments.
+         * An array of {@link Office.ReplyFormAttachments} that are either file or item attachments.
          */
         attachments?: ReplyFormAttachment[];
         /**

@@ -128,9 +128,10 @@ items:
           - MailboxEnums.RecurrenceType
   - uid: outlook.Office.Recurrence.seriesTime
     summary: >-
-      This object enables you to manage the start and end dates of the recurring appointment series and the usual start
-      and end times of instances. \*\*This object is not in UTC time.\*\* Instead, it is set in the time zone specified
-      by the recurrenceTimeZone value or defaulted to the item's time zone.
+      The [Office.SeriesTime](xref:outlook.Office.SeriesTime) object enables you to manage the start and end dates of
+      the recurring appointment series and the usual start and end times of instances. \*\*This object is not in UTC
+      time.\*\* Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's
+      time zone.
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]

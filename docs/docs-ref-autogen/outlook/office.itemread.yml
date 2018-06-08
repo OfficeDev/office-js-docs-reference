@@ -2,8 +2,9 @@
 items:
   - uid: outlook.Office.ItemRead
     summary: >-
-      Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+      The read mode of [Office.Appointment](xref:outlook.Office.Appointment)<!-- -->Important: This is an internal
+      Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of
+      Office.context.mailbox.item. Refer to the Object Model pages for more information.
     name: Office.ItemRead
     fullName: outlook.Office.ItemRead
     langs:
@@ -95,7 +96,8 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR A ReplyFormData object that contains body or attachment data and a callback function
+            to 32 KB OR A[Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
+            attachment data and a callback function
           type:
             - string | ReplyFormData
   - uid: outlook.Office.ItemRead.displayReplyForm
@@ -139,7 +141,8 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB. OR A ReplyFormData object that contains body or attachment data and a callback function.
+            to 32 KB. OR A[Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
+            attachment data and a callback function.
           type:
             - string | ReplyFormData
   - uid: outlook.Office.ItemRead.getEntities
