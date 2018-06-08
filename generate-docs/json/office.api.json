@@ -392,7 +392,26 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets an [Error](office.error.md) object that provides a description of the error, if any error occurred."
+                  "text": "Gets an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.Error"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "Error"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object that provides a description of the error, if any error occurred."
                 }
               ],
               "remarks": [
@@ -417,7 +436,26 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the [AsyncResultStatus](office.asyncresultstatus.md) of the asynchronous operation."
+                  "text": "Gets the "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.AsyncResultStatus"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "AsyncResultStatus"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " of the asynchronous operation."
                 }
               ],
               "remarks": [
@@ -580,7 +618,21 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Allows add-ins to identify users. Server side code can use this token to access Microsoft Graph for the add-in's web application by using the [\"on behalf of\" OAuth flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of)."
+                  "text": "Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Allows add-ins to identify users. Server side code can use this token to access Microsoft Graph for the add-in's web application by using the "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "\"on behalf of\" OAuth flow"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 }
               ],
               "remarks": [
@@ -1035,7 +1087,40 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The data to be set in the current selection. Possible data types by host: string: Excel, Excel Online, Word, and Word Online only array of arrays: Excel and Word only [TableData](office.tabledata.md): Access, Excel, and Word only HTML: Word and Word Online only Office Open XML: Word only"
+                      "text": "The data to be set in the current selection. Possible data types by host: string: Excel, Excel Online, Word, and Word Online only array of arrays: Excel and Word only"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.TableData"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "TableData"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ": Access, Excel, and Word only"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "HTML: Word and Word Online only"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "Office Open XML: Word only"
                     }
                   ],
                   "isOptional": false,
@@ -10556,7 +10641,21 @@
             },
             {
               "kind": "text",
-              "text": "For more information about working with fields in Project, see [Available fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460) reference. In Project Help, search for Available fields."
+              "text": "For more information about working with fields in Project, see "
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Available fields"
+                }
+              ],
+              "targetUrl": "https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460"
+            },
+            {
+              "kind": "text",
+              "text": " reference. In Project Help, search for Available fields."
             }
           ],
           "isBeta": false
@@ -14251,7 +14350,21 @@
             },
             {
               "kind": "text",
-              "text": "For more information about working with fields in Project, see the [Available fields](https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460) reference. In Project Help, search for Available fields."
+              "text": "For more information about working with fields in Project, see the "
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Available fields"
+                }
+              ],
+              "targetUrl": "https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460"
+            },
+            {
+              "kind": "text",
+              "text": " reference. In Project Help, search for Available fields."
             },
             {
               "kind": "paragraph"
@@ -15915,7 +16028,21 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Specifies enumerated values for the cells: property in the cellFormat parameter of [table formatting methods](https://dev.office.com/reference/docs/excel/format-tables-in-add-ins-for-excel.htm)."
+              "text": "Specifies enumerated values for the cells: property in the cellFormat parameter of "
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "table formatting methods"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table"
+            },
+            {
+              "kind": "text",
+              "text": "."
             }
           ],
           "remarks": [
@@ -16258,7 +16385,21 @@
                 },
                 {
                   "kind": "text",
-                  "text": "See [Format tables in add-ins for Excel](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table) for more information."
+                  "text": "See "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Format tables in add-ins for Excel"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table"
+                },
+                {
+                  "kind": "text",
+                  "text": " for more information."
                 }
               ],
               "isBeta": false,

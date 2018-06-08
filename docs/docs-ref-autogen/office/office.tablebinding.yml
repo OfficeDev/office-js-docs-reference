@@ -165,8 +165,8 @@ items:
       Available in Requirement set: Not in a set
 
 
-      See \[Format tables in add-ins for
-      Excel\](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables\#format-a-table) for more
+      See [Format tables in add-ins for
+      Excel](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table) for more
       information.
     name: 'clearFormatsAsync(options, callback)'
     fullName: office.Office.TableBinding.clearFormatsAsync
