@@ -253,13 +253,16 @@ items:
 
 
       - OWAView (string): A string that represents the current view of Outlook Web App. If the host application is not
-      Outlook Web App, then accessing this property results in undefined. Outlook Web App has three views (represent by
-      the following string values) that correspond to the width of the screen and the window, and the number of columns
-      that can be displayed:
+      Outlook Web App, then accessing this property results in undefined. Outlook Web App has three views (OneColumn -
+      displayed when the screen is narrow, TwoColumns - displayed when the screen is wider, and ThreeColumns - displayed
+      when the screen is wide.) that correspond to the width of the screen and the window, and the number of columns
+      that can be displayed.
 
 
-      More information is under [Office.Diagnostics](xref:outlook.Office.Diagnostics)<!-- -->\[ [API set: Mailbox
-      1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+      More information is under [Office.Diagnostics](xref:outlook.Office.Diagnostics)<!-- -->.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 

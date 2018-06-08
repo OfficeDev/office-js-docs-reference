@@ -6710,7 +6710,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "- OWAView (string): A string that represents the current view of Outlook Web App. If the host application is not Outlook Web App, then accessing this property results in undefined. Outlook Web App has three views (represent by the following string values) that correspond to the width of the screen and the window, and the number of columns that can be displayed:"
+                  "text": "- OWAView (string): A string that represents the current view of Outlook Web App. If the host application is not Outlook Web App, then accessing this property results in undefined. Outlook Web App has three views (OneColumn - displayed when the screen is narrow, TwoColumns - displayed when the screen is wider, and ThreeColumns - displayed when the screen is wide.) that correspond to the width of the screen and the window, and the number of columns that can be displayed."
                 },
                 {
                   "kind": "paragraph"
@@ -6733,6 +6733,13 @@
                     "exportName": "Office",
                     "memberName": "Diagnostics"
                   }
+                },
+                {
+                  "kind": "text",
+                  "text": "."
+                },
+                {
+                  "kind": "paragraph"
                 },
                 {
                   "kind": "text",
