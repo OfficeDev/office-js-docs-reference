@@ -27,7 +27,7 @@ session.init().then(function () {
 ## Visio.run(session, function(context) { batch })
 
 **Visio.run()** executes a batch script that performs actions on the Visio object model. The batch commands include definitions of local JavaScript proxy objects and **sync()** methods that synchronize the state between local and Visio objects and promise resolution. The advantage of batching requests in **Visio.run()** is that when the promise is resolved, any tracked page objects that were allocated during the execution will be automatically released. 
-The run method takes in sesison and RequestContext object and returns a promise (typically, just the result of **context.sync()**). It is possible to run the batch operation outside of the **Visio.run()**. However, in such a scenario, any page object references needs to be manually tracked and managed. 
+The run method takes in session and RequestContext object and returns a promise (typically, just the result of **context.sync()**). It is possible to run the batch operation outside of the **Visio.run()**. However, in such a scenario, any page object references needs to be manually tracked and managed. 
 
 ## RequestContext
 
@@ -74,7 +74,7 @@ object.load(string: properties); //or object.load(array: properties); //or objec
 ```
 
 1. **properties** is the list of properties and/or relationship names to be loaded, specified as comma-delimited strings or array of names. See **.load()** methods under each object for details.
-2. **loadOption** specifies an object that describes the selection, expansion, top, and skip options. See object load [options](loadoption) for details.
+2. **loadOption** specifies an object that describes the selection, expansion, top, and skip options. See object load [options](../../docs-ref-autogen/office/officeextension.loadoption.yml) for details.
 
 ## Example: Printing all shapes text in active page
 
@@ -193,4 +193,4 @@ As we design and develop new APIs, we'll make them available for your feedback o
 
 ## Visio JavaScript API reference
 
-For detailed information about Visio JavaScript API, see the [Visio JavaScript API reference documentation](../../api/visio).
+For detailed information about Visio JavaScript API, see the [Visio JavaScript API reference documentation](../../docs-ref-autogen/visio.yml).
