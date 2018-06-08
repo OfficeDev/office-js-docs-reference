@@ -27,7 +27,7 @@
           "isBeta": false,
           "isSealed": false
         },
-        "AppointmentCompose": {
+        "AppointmentAttendee": {
           "kind": "interface",
           "extends": "Appointment",
           "implements": "",
@@ -45,16 +45,16 @@
           "members": {
             "end": {
               "kind": "property",
-              "signature": "end: Time;",
+              "signature": "end: Date;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Time",
+              "type": "Date",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the date and time that the appointment is to end."
+                  "text": "Gets the date and time that the appointment is to end."
                 },
                 {
                   "kind": "paragraph"
@@ -68,14 +68,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The end property returns a Time object."
+                  "text": "The end property returns a Date object."
                 },
                 {
                   "kind": "paragraph"
@@ -112,30 +105,23 @@
             },
             "location": {
               "kind": "property",
-              "signature": "location: Location;",
+              "signature": "location: string;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Location",
+              "type": "string",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the location of an appointment."
+                  "text": "Gets the location of an appointment."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The location property returns a Location object that provides methods that are used to get and set the location of the appointment."
+                  "text": "The location property returns a string that contains the location of the appointment."
                 },
                 {
                   "kind": "paragraph"
@@ -165,11 +151,11 @@
             },
             "optionalAttendees": {
               "kind": "property",
-              "signature": "optionalAttendees: Recipients;",
+              "signature": "optionalAttendees: EmailAddressDetails[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Recipients",
+              "type": "EmailAddressDetails[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -181,14 +167,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The optionalAttendees property returns a Recipients object that provides methods to get or update the optional attendees for a meeting."
+                  "text": "The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional attendee to the meeting."
                 },
                 {
                   "kind": "paragraph"
@@ -216,13 +195,52 @@
               "isVirtual": false,
               "isOverride": false
             },
-            "requiredAttendees": {
+            "organizer": {
               "kind": "property",
-              "signature": "requiredAttendees: Recipients;",
+              "signature": "organizer: EmailAddressDetails;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Recipients",
+              "type": "EmailAddressDetails",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the email address of the meeting organizer for a specified meeting. Read mode only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level: ReadItem"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode: Read"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "requiredAttendees": {
+              "kind": "property",
+              "signature": "requiredAttendees: EmailAddressDetails[];",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "EmailAddressDetails[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -234,14 +252,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The requiredAttendees property returns a Recipients object that provides methods to get or update the required attendees for a meeting."
+                  "text": "The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required attendee to the meeting."
                 },
                 {
                   "kind": "paragraph"
@@ -271,16 +282,16 @@
             },
             "start": {
               "kind": "property",
-              "signature": "start: Time;",
+              "signature": "start: Date;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Time",
+              "type": "Date",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the date and time that the appointment is to begin."
+                  "text": "Gets the date and time that the appointment is to begin."
                 },
                 {
                   "kind": "paragraph"
@@ -294,21 +305,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The start property returns a Time object."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server."
+                  "text": "The start property returns a Date object."
                 },
                 {
                   "kind": "paragraph"
@@ -835,7 +832,7 @@
             }
           }
         },
-        "AppointmentRead": {
+        "AppointmentOrganizer": {
           "kind": "interface",
           "extends": "Appointment",
           "implements": "",
@@ -853,16 +850,16 @@
           "members": {
             "end": {
               "kind": "property",
-              "signature": "end: Date;",
+              "signature": "end: Time;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Date",
+              "type": "Time",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that the appointment is to end."
+                  "text": "Gets or sets the date and time that the appointment is to end."
                 },
                 {
                   "kind": "paragraph"
@@ -876,7 +873,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The end property returns a Date object."
+                  "text": "*Compose mode*"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The end property returns a Time object."
                 },
                 {
                   "kind": "paragraph"
@@ -913,23 +917,30 @@
             },
             "location": {
               "kind": "property",
-              "signature": "location: string;",
+              "signature": "location: Location;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "string",
+              "type": "Location",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the location of an appointment."
+                  "text": "Gets or sets the location of an appointment."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "The location property returns a string that contains the location of the appointment."
+                  "text": "*Compose mode*"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The location property returns a Location object that provides methods that are used to get and set the location of the appointment."
                 },
                 {
                   "kind": "paragraph"
@@ -959,11 +970,11 @@
             },
             "optionalAttendees": {
               "kind": "property",
-              "signature": "optionalAttendees: EmailAddressDetails[];",
+              "signature": "optionalAttendees: Recipients;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "EmailAddressDetails[]",
+              "type": "Recipients",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -975,7 +986,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional attendee to the meeting."
+                  "text": "*Compose mode*"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The optionalAttendees property returns a Recipients object that provides methods to get or update the optional attendees for a meeting."
                 },
                 {
                   "kind": "paragraph"
@@ -1003,52 +1021,13 @@
               "isVirtual": false,
               "isOverride": false
             },
-            "organizer": {
-              "kind": "property",
-              "signature": "organizer: EmailAddressDetails;",
-              "isOptional": false,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "EmailAddressDetails",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Gets the email address of the meeting organizer for a specified meeting. Read mode only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: Mailbox 1.0]"
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode: Read"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
             "requiredAttendees": {
               "kind": "property",
-              "signature": "requiredAttendees: EmailAddressDetails[];",
+              "signature": "requiredAttendees: Recipients;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "EmailAddressDetails[]",
+              "type": "Recipients",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -1060,7 +1039,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required attendee to the meeting."
+                  "text": "*Compose mode*"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The requiredAttendees property returns a Recipients object that provides methods to get or update the required attendees for a meeting."
                 },
                 {
                   "kind": "paragraph"
@@ -1090,16 +1076,16 @@
             },
             "start": {
               "kind": "property",
-              "signature": "start: Date;",
+              "signature": "start: Time;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Date",
+              "type": "Time",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that the appointment is to begin."
+                  "text": "Gets or sets the date and time that the appointment is to begin."
                 },
                 {
                   "kind": "paragraph"
@@ -1113,7 +1099,21 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The start property returns a Date object."
+                  "text": "*Compose mode*"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The start property returns a Time object."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server."
                 },
                 {
                   "kind": "paragraph"
@@ -1136,34 +1136,6 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            }
-          }
-        },
-        "AsyncContextOptions": {
-          "kind": "interface",
-          "extends": "",
-          "implements": "",
-          "typeParameters": [],
-          "deprecatedMessage": [],
-          "summary": [],
-          "remarks": [],
-          "isBeta": false,
-          "isSealed": false,
-          "members": {
-            "asyncContext": {
-              "kind": "property",
-              "signature": "asyncContext?: any;",
-              "isOptional": true,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "any",
-              "deprecatedMessage": [],
-              "summary": [],
-              "remarks": [],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -3698,7 +3670,21 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: The identifier returned by the seriesId property is the same as the Exchange Web Services item identifier. The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api)."
+                  "text": "Note: The identifier returned by the seriesId property is the same as the Exchange Web Services item identifier. The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Use the Outlook REST APIs from an Outlook add-in"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/use-rest-api"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -4136,7 +4122,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "More information on [actionable messages](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)."
+                  "text": "More information on "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "actionable messages"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -4645,7 +4645,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see [Blocked attachments in Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519)."
+                  "text": "Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Blocked attachments in Outlook"
+                    }
+                  ],
+                  "targetUrl": "https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -5075,7 +5089,21 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets initialization data passed when the add-in is [activated by an actionable message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)."
+                  "text": "Gets initialization data passed when the add-in is "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "activated by an actionable message"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -6357,7 +6385,35 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs (such as the [Outlook Mail API](https://msdn.microsoft.com/office/office365/APi/mail-rest-operations) or the [Microsoft Graph](http://graph.microsoft.io/)). The convertToRestId method converts an EWS-formatted ID into the proper format for REST."
+                  "text": "Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs (such as the "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Outlook Mail API"
+                    }
+                  ],
+                  "targetUrl": "https://msdn.microsoft.com/office/office365/APi/mail-rest-operations"
+                },
+                {
+                  "kind": "text",
+                  "text": " or the "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Microsoft Graph"
+                    }
+                  ],
+                  "targetUrl": "http://graph.microsoft.io/"
+                },
+                {
+                  "kind": "text",
+                  "text": ". The convertToRestId method converts an EWS-formatted ID into the proper format for REST."
                 },
                 {
                   "kind": "paragraph"
@@ -6423,6 +6479,92 @@
                 },
                 {
                   "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level: ReadItem"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode: Compose or read"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "diagnostics": {
+              "kind": "property",
+              "signature": "diagnostics: Diagnostics;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Diagnostics",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Provides diagnostic information to an Outlook add-in."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Contains the following members:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- hostName (string): A string that represents the name of the host application. It be one of the following values: Outlook, Mac Outlook, OutlookIOS, or OutlookWebApp."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- hostVersion (string): A string that represents the version of either the host application or the Exchange Server. If the mail add-in is running on the Outlook desktop client or Outlook for iOS, the hostVersion property returns the version of the host application, Outlook. In Outlook Web App, the property returns the version of the Exchange Server. An example is the string 15.0.468.0."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- OWAView (string): A string that represents the current view of Outlook Web App. If the host application is not Outlook Web App, then accessing this property results in undefined. Outlook Web App has three views (represent by the following string values) that correspond to the width of the screen and the window, and the number of columns that can be displayed:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "More information is under "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.Diagnostics"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "Diagnostics"
+                  }
                 },
                 {
                   "kind": "text",
@@ -6835,7 +6977,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to [get attachments from the selected item](https://msdn.microsoft.com/library/office/dn148008.aspx)."
+                  "text": "The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "get attachments from the selected item"
+                    }
+                  ],
+                  "targetUrl": "https://msdn.microsoft.com/library/office/dn148008.aspx"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -7041,7 +7197,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "The getUserIdentityTokenAsync method returns a token that you can use to identify and [authenticate the add-in and user with a third-party system](https://msdn.microsoft.com/library/office/fp179828.aspx)."
+                  "text": "The getUserIdentityTokenAsync method returns a token that you can use to identify and "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "authenticate the add-in and user with a third-party system"
+                    }
+                  ],
+                  "targetUrl": "https://msdn.microsoft.com/library/office/fp179828.aspx"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -7065,11 +7235,11 @@
             },
             "item": {
               "kind": "property",
-              "signature": "item: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose;",
+              "signature": "item: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentAttendee & AppointmentOrganizer;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose",
+              "type": "Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentAttendee & AppointmentOrganizer",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -7285,7 +7455,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "The restUrl value can be used to make [REST API](https://docs.microsoft.com/outlook/rest/) calls to the user's mailbox."
+                  "text": "The restUrl value can be used to make "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "REST API"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/rest/"
+                },
+                {
+                  "kind": "text",
+                  "text": " calls to the user's mailbox."
                 },
                 {
                   "kind": "paragraph"
@@ -7302,6 +7486,52 @@
                   "text": "Applicable Outlook mode: Compose or read"
                 }
               ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "userProfile": {
+              "kind": "property",
+              "signature": "userProfile: UserProfile;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "UserProfile",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Information about the user associated with the mailbox. This includes their account type, display name, email adddress, and time zone."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "More information is under "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.UserProfile"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "UserProfile"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": ""
+                }
+              ],
+              "remarks": [],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -12994,7 +13224,21 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the end date of a recurrence pattern in the following [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: \"YYYY-MM-DD\""
+                  "text": "Gets the end date of a recurrence pattern in the following "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "ISO 8601"
+                    }
+                  ],
+                  "targetUrl": "https://www.iso.org/iso-8601-date-and-time-format.html"
+                },
+                {
+                  "kind": "text",
+                  "text": " date format: \"YYYY-MM-DD\""
                 },
                 {
                   "kind": "paragraph"
@@ -13037,7 +13281,21 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the end time of a usual appointment or meeting request instance of a recurrence pattern in whichever time zone that the user or add-in set the recurrence pattern using the following [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: \"THH:mm:ss:mmm\""
+                  "text": "Gets the end time of a usual appointment or meeting request instance of a recurrence pattern in whichever time zone that the user or add-in set the recurrence pattern using the following "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "ISO 8601"
+                    }
+                  ],
+                  "targetUrl": "https://www.iso.org/iso-8601-date-and-time-format.html"
+                },
+                {
+                  "kind": "text",
+                  "text": " format: \"THH:mm:ss:mmm\""
                 },
                 {
                   "kind": "paragraph"
@@ -13080,7 +13338,21 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the start date of a recurrence pattern in the following [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: \"YYYY-MM-DD\""
+                  "text": "Gets the start date of a recurrence pattern in the following "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "ISO 8601"
+                    }
+                  ],
+                  "targetUrl": "https://www.iso.org/iso-8601-date-and-time-format.html"
+                },
+                {
+                  "kind": "text",
+                  "text": " date format: \"YYYY-MM-DD\""
                 },
                 {
                   "kind": "paragraph"
@@ -13123,7 +13395,21 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the start time of a usual appointment instance of a recurrence pattern in whichever time zone that the user/add-in set the recurrence pattern using the following [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: \"THH:mm:ss:mmm\""
+                  "text": "Gets the start time of a usual appointment instance of a recurrence pattern in whichever time zone that the user/add-in set the recurrence pattern using the following "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "ISO 8601"
+                    }
+                  ],
+                  "targetUrl": "https://www.iso.org/iso-8601-date-and-time-format.html"
+                },
+                {
+                  "kind": "text",
+                  "text": " format: \"THH:mm:ss:mmm\""
                 },
                 {
                   "kind": "paragraph"
@@ -13972,6 +14258,13 @@
           "typeParameters": [],
           "deprecatedMessage": [],
           "summary": [
+            {
+              "kind": "text",
+              "text": "Information about the user associated with the mailbox. This includes their account type, display name, email adddress, and time zone."
+            },
+            {
+              "kind": "paragraph"
+            },
             {
               "kind": "text",
               "text": "[Api set: Mailbox 1.0]"

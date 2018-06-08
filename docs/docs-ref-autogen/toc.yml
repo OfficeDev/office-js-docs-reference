@@ -552,33 +552,23 @@ items:
           - name: TableRowCollection
             uid: onenote.OneNote.TableRowCollection
       - name: Outlook
-        uid: ''
+        uid: OutlookRoot
         items:
           - name: Outlook - Preview
             uid: outlook
             items:
-              - name: Appointment
-                uid: outlook.Office.Appointment
-              - name: AppointmentCompose
-                uid: outlook.Office.AppointmentCompose
-              - name: AppointmentForm
-                uid: outlook.Office.AppointmentForm
-              - name: AppointmentRead
-                uid: outlook.Office.AppointmentRead
-              - name: AsyncContextOptions
-                uid: outlook.Office.AsyncContextOptions
+              - name: AppointmentAttendee
+                uid: outlook.Office.AppointmentAttendee
+              - name: AppointmentOrganizer
+                uid: outlook.Office.AppointmentOrganizer
               - name: AttachmentDetails
                 uid: outlook.Office.AttachmentDetails
               - name: Body
                 uid: outlook.Office.Body
-              - name: CoercionTypeOptions
-                uid: outlook.Office.CoercionTypeOptions
               - name: Contact
                 uid: outlook.Office.Contact
               - name: CustomProperties
                 uid: outlook.Office.CustomProperties
-              - name: Diagnostics
-                uid: outlook.Office.Diagnostics
               - name: EmailAddressDetails
                 uid: outlook.Office.EmailAddressDetails
               - name: EmailUser
@@ -589,10 +579,6 @@ items:
                 uid: outlook.Office.From
               - name: Item
                 uid: outlook.Office.Item
-              - name: ItemCompose
-                uid: outlook.Office.ItemCompose
-              - name: ItemRead
-                uid: outlook.Office.ItemRead
               - name: LocalClientTime
                 uid: outlook.Office.LocalClientTime
               - name: Location
@@ -627,8 +613,6 @@ items:
                     uid: outlook.Office.MailboxEnums.WeekNumber
               - name: MeetingSuggestion
                 uid: outlook.Office.MeetingSuggestion
-              - name: Message
-                uid: outlook.Office.Message
               - name: MessageCompose
                 uid: outlook.Office.MessageCompose
               - name: MessageRead
@@ -645,10 +629,6 @@ items:
                 uid: outlook.Office.Recurrence
               - name: RecurrenceProperties
                 uid: outlook.Office.RecurrenceProperties
-              - name: ReplyFormAttachment
-                uid: outlook.Office.ReplyFormAttachment
-              - name: ReplyFormData
-                uid: outlook.Office.ReplyFormData
               - name: RoamingSettings
                 uid: outlook.Office.RoamingSettings
               - name: SeriesTime
@@ -666,12 +646,8 @@ items:
           - name: Outlook 1.6
             uid: Outlook_1_6
             items:
-              - name: Appointment
-                uid: Outlook_1_6.Office.Appointment
               - name: AppointmentCompose
                 uid: Outlook_1_6.Office.AppointmentCompose
-              - name: AppointmentForm
-                uid: Outlook_1_6.Office.AppointmentForm
               - name: AppointmentRead
                 uid: Outlook_1_6.Office.AppointmentRead
               - name: AsyncContextOptions
@@ -680,14 +656,10 @@ items:
                 uid: Outlook_1_6.Office.AttachmentDetails
               - name: Body
                 uid: Outlook_1_6.Office.Body
-              - name: CoercionTypeOptions
-                uid: Outlook_1_6.Office.CoercionTypeOptions
               - name: Contact
                 uid: Outlook_1_6.Office.Contact
               - name: CustomProperties
                 uid: Outlook_1_6.Office.CustomProperties
-              - name: Diagnostics
-                uid: Outlook_1_6.Office.Diagnostics
               - name: EmailAddressDetails
                 uid: Outlook_1_6.Office.EmailAddressDetails
               - name: EmailUser
@@ -696,10 +668,6 @@ items:
                 uid: Outlook_1_6.Office.Entities
               - name: Item
                 uid: Outlook_1_6.Office.Item
-              - name: ItemCompose
-                uid: Outlook_1_6.Office.ItemCompose
-              - name: ItemRead
-                uid: Outlook_1_6.Office.ItemRead
               - name: LocalClientTime
                 uid: Outlook_1_6.Office.LocalClientTime
               - name: Location
@@ -725,8 +693,6 @@ items:
                     uid: Outlook_1_6.Office.MailboxEnums.RestVersion
               - name: MeetingSuggestion
                 uid: Outlook_1_6.Office.MeetingSuggestion
-              - name: Message
-                uid: Outlook_1_6.Office.Message
               - name: MessageCompose
                 uid: Outlook_1_6.Office.MessageCompose
               - name: MessageRead
@@ -739,10 +705,6 @@ items:
                 uid: Outlook_1_6.Office.PhoneNumber
               - name: Recipients
                 uid: Outlook_1_6.Office.Recipients
-              - name: ReplyFormAttachment
-                uid: Outlook_1_6.Office.ReplyFormAttachment
-              - name: ReplyFormData
-                uid: Outlook_1_6.Office.ReplyFormData
               - name: RoamingSettings
                 uid: Outlook_1_6.Office.RoamingSettings
               - name: SourceProperty
@@ -758,12 +720,8 @@ items:
           - name: Outlook 1.5
             uid: Outlook_1_5
             items:
-              - name: Appointment
-                uid: Outlook_1_5.Office.Appointment
               - name: AppointmentCompose
                 uid: Outlook_1_5.Office.AppointmentCompose
-              - name: AppointmentForm
-                uid: Outlook_1_5.Office.AppointmentForm
               - name: AppointmentRead
                 uid: Outlook_1_5.Office.AppointmentRead
               - name: AsyncContextOptions
@@ -772,14 +730,10 @@ items:
                 uid: Outlook_1_5.Office.AttachmentDetails
               - name: Body
                 uid: Outlook_1_5.Office.Body
-              - name: CoercionTypeOptions
-                uid: Outlook_1_5.Office.CoercionTypeOptions
               - name: Contact
                 uid: Outlook_1_5.Office.Contact
               - name: CustomProperties
                 uid: Outlook_1_5.Office.CustomProperties
-              - name: Diagnostics
-                uid: Outlook_1_5.Office.Diagnostics
               - name: EmailAddressDetails
                 uid: Outlook_1_5.Office.EmailAddressDetails
               - name: EmailUser
@@ -788,10 +742,6 @@ items:
                 uid: Outlook_1_5.Office.Entities
               - name: Item
                 uid: Outlook_1_5.Office.Item
-              - name: ItemCompose
-                uid: Outlook_1_5.Office.ItemCompose
-              - name: ItemRead
-                uid: Outlook_1_5.Office.ItemRead
               - name: LocalClientTime
                 uid: Outlook_1_5.Office.LocalClientTime
               - name: Location
@@ -817,8 +767,6 @@ items:
                     uid: Outlook_1_5.Office.MailboxEnums.RestVersion
               - name: MeetingSuggestion
                 uid: Outlook_1_5.Office.MeetingSuggestion
-              - name: Message
-                uid: Outlook_1_5.Office.Message
               - name: MessageCompose
                 uid: Outlook_1_5.Office.MessageCompose
               - name: MessageRead
@@ -831,10 +779,6 @@ items:
                 uid: Outlook_1_5.Office.PhoneNumber
               - name: Recipients
                 uid: Outlook_1_5.Office.Recipients
-              - name: ReplyFormAttachment
-                uid: Outlook_1_5.Office.ReplyFormAttachment
-              - name: ReplyFormData
-                uid: Outlook_1_5.Office.ReplyFormData
               - name: RoamingSettings
                 uid: Outlook_1_5.Office.RoamingSettings
               - name: SourceProperty
@@ -850,12 +794,8 @@ items:
           - name: Outlook 1.4
             uid: Outlook_1_4
             items:
-              - name: Appointment
-                uid: Outlook_1_4.Office.Appointment
               - name: AppointmentCompose
                 uid: Outlook_1_4.Office.AppointmentCompose
-              - name: AppointmentForm
-                uid: Outlook_1_4.Office.AppointmentForm
               - name: AppointmentRead
                 uid: Outlook_1_4.Office.AppointmentRead
               - name: AsyncContextOptions
@@ -864,14 +804,10 @@ items:
                 uid: Outlook_1_4.Office.AttachmentDetails
               - name: Body
                 uid: Outlook_1_4.Office.Body
-              - name: CoercionTypeOptions
-                uid: Outlook_1_4.Office.CoercionTypeOptions
               - name: Contact
                 uid: Outlook_1_4.Office.Contact
               - name: CustomProperties
                 uid: Outlook_1_4.Office.CustomProperties
-              - name: Diagnostics
-                uid: Outlook_1_4.Office.Diagnostics
               - name: EmailAddressDetails
                 uid: Outlook_1_4.Office.EmailAddressDetails
               - name: EmailUser
@@ -880,10 +816,6 @@ items:
                 uid: Outlook_1_4.Office.Entities
               - name: Item
                 uid: Outlook_1_4.Office.Item
-              - name: ItemCompose
-                uid: Outlook_1_4.Office.ItemCompose
-              - name: ItemRead
-                uid: Outlook_1_4.Office.ItemRead
               - name: LocalClientTime
                 uid: Outlook_1_4.Office.LocalClientTime
               - name: Location
@@ -909,8 +841,6 @@ items:
                     uid: Outlook_1_4.Office.MailboxEnums.RestVersion
               - name: MeetingSuggestion
                 uid: Outlook_1_4.Office.MeetingSuggestion
-              - name: Message
-                uid: Outlook_1_4.Office.Message
               - name: MessageCompose
                 uid: Outlook_1_4.Office.MessageCompose
               - name: MessageRead
@@ -923,10 +853,6 @@ items:
                 uid: Outlook_1_4.Office.PhoneNumber
               - name: Recipients
                 uid: Outlook_1_4.Office.Recipients
-              - name: ReplyFormAttachment
-                uid: Outlook_1_4.Office.ReplyFormAttachment
-              - name: ReplyFormData
-                uid: Outlook_1_4.Office.ReplyFormData
               - name: RoamingSettings
                 uid: Outlook_1_4.Office.RoamingSettings
               - name: SourceProperty
@@ -942,12 +868,8 @@ items:
           - name: Outlook 1.3
             uid: Outlook_1_3
             items:
-              - name: Appointment
-                uid: Outlook_1_3.Office.Appointment
               - name: AppointmentCompose
                 uid: Outlook_1_3.Office.AppointmentCompose
-              - name: AppointmentForm
-                uid: Outlook_1_3.Office.AppointmentForm
               - name: AppointmentRead
                 uid: Outlook_1_3.Office.AppointmentRead
               - name: AsyncContextOptions
@@ -956,14 +878,10 @@ items:
                 uid: Outlook_1_3.Office.AttachmentDetails
               - name: Body
                 uid: Outlook_1_3.Office.Body
-              - name: CoercionTypeOptions
-                uid: Outlook_1_3.Office.CoercionTypeOptions
               - name: Contact
                 uid: Outlook_1_3.Office.Contact
               - name: CustomProperties
                 uid: Outlook_1_3.Office.CustomProperties
-              - name: Diagnostics
-                uid: Outlook_1_3.Office.Diagnostics
               - name: EmailAddressDetails
                 uid: Outlook_1_3.Office.EmailAddressDetails
               - name: EmailUser
@@ -972,10 +890,6 @@ items:
                 uid: Outlook_1_3.Office.Entities
               - name: Item
                 uid: Outlook_1_3.Office.Item
-              - name: ItemCompose
-                uid: Outlook_1_3.Office.ItemCompose
-              - name: ItemRead
-                uid: Outlook_1_3.Office.ItemRead
               - name: LocalClientTime
                 uid: Outlook_1_3.Office.LocalClientTime
               - name: Location
@@ -1001,8 +915,6 @@ items:
                     uid: Outlook_1_3.Office.MailboxEnums.RestVersion
               - name: MeetingSuggestion
                 uid: Outlook_1_3.Office.MeetingSuggestion
-              - name: Message
-                uid: Outlook_1_3.Office.Message
               - name: MessageCompose
                 uid: Outlook_1_3.Office.MessageCompose
               - name: MessageRead
@@ -1015,10 +927,6 @@ items:
                 uid: Outlook_1_3.Office.PhoneNumber
               - name: Recipients
                 uid: Outlook_1_3.Office.Recipients
-              - name: ReplyFormAttachment
-                uid: Outlook_1_3.Office.ReplyFormAttachment
-              - name: ReplyFormData
-                uid: Outlook_1_3.Office.ReplyFormData
               - name: RoamingSettings
                 uid: Outlook_1_3.Office.RoamingSettings
               - name: SourceProperty
@@ -1034,12 +942,8 @@ items:
           - name: Outlook 1.2
             uid: Outlook_1_2
             items:
-              - name: Appointment
-                uid: Outlook_1_2.Office.Appointment
               - name: AppointmentCompose
                 uid: Outlook_1_2.Office.AppointmentCompose
-              - name: AppointmentForm
-                uid: Outlook_1_2.Office.AppointmentForm
               - name: AppointmentRead
                 uid: Outlook_1_2.Office.AppointmentRead
               - name: AsyncContextOptions
@@ -1048,14 +952,10 @@ items:
                 uid: Outlook_1_2.Office.AttachmentDetails
               - name: Body
                 uid: Outlook_1_2.Office.Body
-              - name: CoercionTypeOptions
-                uid: Outlook_1_2.Office.CoercionTypeOptions
               - name: Contact
                 uid: Outlook_1_2.Office.Contact
               - name: CustomProperties
                 uid: Outlook_1_2.Office.CustomProperties
-              - name: Diagnostics
-                uid: Outlook_1_2.Office.Diagnostics
               - name: EmailAddressDetails
                 uid: Outlook_1_2.Office.EmailAddressDetails
               - name: EmailUser
@@ -1064,10 +964,6 @@ items:
                 uid: Outlook_1_2.Office.Entities
               - name: Item
                 uid: Outlook_1_2.Office.Item
-              - name: ItemCompose
-                uid: Outlook_1_2.Office.ItemCompose
-              - name: ItemRead
-                uid: Outlook_1_2.Office.ItemRead
               - name: LocalClientTime
                 uid: Outlook_1_2.Office.LocalClientTime
               - name: Location
@@ -1088,8 +984,6 @@ items:
                     uid: Outlook_1_2.Office.MailboxEnums.ResponseType
               - name: MeetingSuggestion
                 uid: Outlook_1_2.Office.MeetingSuggestion
-              - name: Message
-                uid: Outlook_1_2.Office.Message
               - name: MessageCompose
                 uid: Outlook_1_2.Office.MessageCompose
               - name: MessageRead
@@ -1098,10 +992,6 @@ items:
                 uid: Outlook_1_2.Office.PhoneNumber
               - name: Recipients
                 uid: Outlook_1_2.Office.Recipients
-              - name: ReplyFormAttachment
-                uid: Outlook_1_2.Office.ReplyFormAttachment
-              - name: ReplyFormData
-                uid: Outlook_1_2.Office.ReplyFormData
               - name: RoamingSettings
                 uid: Outlook_1_2.Office.RoamingSettings
               - name: SourceProperty
@@ -1117,12 +1007,8 @@ items:
           - name: Outlook 1.1
             uid: Outlook_1_1
             items:
-              - name: Appointment
-                uid: Outlook_1_1.Office.Appointment
               - name: AppointmentCompose
                 uid: Outlook_1_1.Office.AppointmentCompose
-              - name: AppointmentForm
-                uid: Outlook_1_1.Office.AppointmentForm
               - name: AppointmentRead
                 uid: Outlook_1_1.Office.AppointmentRead
               - name: AsyncContextOptions
@@ -1131,14 +1017,10 @@ items:
                 uid: Outlook_1_1.Office.AttachmentDetails
               - name: Body
                 uid: Outlook_1_1.Office.Body
-              - name: CoercionTypeOptions
-                uid: Outlook_1_1.Office.CoercionTypeOptions
               - name: Contact
                 uid: Outlook_1_1.Office.Contact
               - name: CustomProperties
                 uid: Outlook_1_1.Office.CustomProperties
-              - name: Diagnostics
-                uid: Outlook_1_1.Office.Diagnostics
               - name: EmailAddressDetails
                 uid: Outlook_1_1.Office.EmailAddressDetails
               - name: EmailUser
@@ -1147,10 +1029,6 @@ items:
                 uid: Outlook_1_1.Office.Entities
               - name: Item
                 uid: Outlook_1_1.Office.Item
-              - name: ItemCompose
-                uid: Outlook_1_1.Office.ItemCompose
-              - name: ItemRead
-                uid: Outlook_1_1.Office.ItemRead
               - name: LocalClientTime
                 uid: Outlook_1_1.Office.LocalClientTime
               - name: Location
@@ -1171,8 +1049,6 @@ items:
                     uid: Outlook_1_1.Office.MailboxEnums.ResponseType
               - name: MeetingSuggestion
                 uid: Outlook_1_1.Office.MeetingSuggestion
-              - name: Message
-                uid: Outlook_1_1.Office.Message
               - name: MessageCompose
                 uid: Outlook_1_1.Office.MessageCompose
               - name: MessageRead
@@ -1181,10 +1057,6 @@ items:
                 uid: Outlook_1_1.Office.PhoneNumber
               - name: Recipients
                 uid: Outlook_1_1.Office.Recipients
-              - name: ReplyFormAttachment
-                uid: Outlook_1_1.Office.ReplyFormAttachment
-              - name: ReplyFormData
-                uid: Outlook_1_1.Office.ReplyFormData
               - name: RoamingSettings
                 uid: Outlook_1_1.Office.RoamingSettings
               - name: SourceProperty

@@ -6212,8 +6212,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param namespaceUri
-        - */
+         * @param namespaceUri         - */
         getByNamespace(namespaceUri: string): Excel.CustomXmlPartScopedCollection;
         /**
          *

@@ -907,9 +907,6 @@ export declare namespace Office {
             Last = "last"
         }
     }
-    export interface AsyncContextOptions {
-        asyncContext?: any;
-    }
     export interface CoercionTypeOptions {
         coercionType?: CoercionType;
     }
@@ -1623,7 +1620,7 @@ export declare namespace Office {
     /**
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
-    export interface AppointmentCompose extends Appointment, ItemCompose {
+    export interface AppointmentOrganizer extends Appointment, ItemCompose {
         /**
          * Gets or sets the date and time that the appointment is to end.
          *
@@ -1716,7 +1713,7 @@ export declare namespace Office {
     /**
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
-    export interface AppointmentRead extends Appointment, ItemRead {
+    export interface AppointmentAttendee extends Appointment, ItemRead {
         /**
          * Gets the date and time that the appointment is to end.
          *
@@ -2052,7 +2049,7 @@ export declare namespace Office {
          * 
          * In OWA and Outlook, the seriesId returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to. However, in iOS and Android, the seriesId returns the REST ID of the parent item.
          * 
-         * Note: The identifier returned by the seriesId property is the same as the Exchange Web Services item identifier. The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api).
+         * Note: The identifier returned by the seriesId property is the same as the Exchange Web Services item identifier. The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
          * 
          * The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests.
          * 
@@ -2429,7 +2426,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * More information on [actionable messages](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message).
+         * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.
          *
          * Minimum permission level: ReadItem
          *
@@ -2771,7 +2768,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see [Blocked attachments in Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519).
+         * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
          *
          * Minimum permission level: ReadItem
          *
@@ -2894,7 +2891,7 @@ export declare namespace Office {
          */
         displayReplyForm(formData: string | ReplyFormData): void;
         /**
-         * Gets initialization data passed when the add-in is [activated by an actionable message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message).
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
          * 
          * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365.
          *
@@ -2912,7 +2909,7 @@ export declare namespace Office {
          */
         getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
-         * Gets initialization data passed when the add-in is [activated by an actionable message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message).
+         * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
          * 
          * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365.
          *
@@ -3420,6 +3417,27 @@ export declare namespace Office {
      */
     export interface Mailbox {
         /**
+         * Provides diagnostic information to an Outlook add-in.
+         * 
+         * Contains the following members:
+         * 
+         *  - hostName (string): A string that represents the name of the host application. It be one of the following values: Outlook, Mac Outlook, OutlookIOS, or OutlookWebApp.
+         * 
+         *  - hostVersion (string): A string that represents the version of either the host application or the Exchange Server. If the mail add-in is running on the Outlook desktop client or Outlook for iOS, the hostVersion property returns the version of the host application, Outlook. In Outlook Web App, the property returns the version of the Exchange Server. An example is the string 15.0.468.0.
+         * 
+         *  - OWAView (string): A string that represents the current view of Outlook Web App. If the host application is not Outlook Web App, then accessing this property results in undefined. Outlook Web App has three views (represent by the following string values) that correspond to the width of the screen and the window, and the number of columns that can be displayed:
+         *
+         *  More information is under {@link Office.Diagnostics}
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         * Minimum permission level: ReadItem
+         *
+         * Applicable Outlook mode: Compose or read
+         */
+        diagnostics: Diagnostics;
+        /**
          * Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.
          *
          * Your app must have the ReadItem permission specified in its manifest to call the ewsUrl member in read mode.
@@ -3432,7 +3450,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to [get attachments from the selected item](https://msdn.microsoft.com/library/office/dn148008.aspx).
+         * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://msdn.microsoft.com/library/office/dn148008.aspx | get attachments from the selected item}.
          *
          * Minimum permission level: ReadItem
          *
@@ -3444,7 +3462,7 @@ export declare namespace Office {
          * If you want to see IntelliSense for only a specific type, you should cast this item to one of the following:
          * `ItemCompose`, `ItemRead`, `MessageCompose`, `MessageRead`, `AppointmentCompose`, `AppointmentRead`
          */
-        item: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose;
+        item: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentAttendee & AppointmentOrganizer;
         /**
          * Gets the URL of the REST endpoint for this email account.
          *
@@ -3456,13 +3474,19 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * The restUrl value can be used to make [REST API](https://docs.microsoft.com/outlook/rest/) calls to the user's mailbox.
+         * The restUrl value can be used to make {@link https://docs.microsoft.com/outlook/rest/ | REST API} calls to the user's mailbox.
          *
          * Minimum permission level: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
         restUrl: string;
+        /**
+         * Information about the user associated with the mailbox. This includes their account type, display name, email adddress, and time zone.
+         * 
+         * More information is under {@link Office.UserProfile}
+         */
+        userProfile: UserProfile;
         /**
          * Adds an event handler for a supported event.
          *
@@ -3528,7 +3552,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs (such as the [Outlook Mail API](https://msdn.microsoft.com/office/office365/APi/mail-rest-operations) or the [Microsoft Graph](http://graph.microsoft.io/)). The convertToRestId method converts an EWS-formatted ID into the proper format for REST.
+         * Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs (such as the {@link https://msdn.microsoft.com/office/office365/APi/mail-rest-operations | Outlook Mail API} or the {@link http://graph.microsoft.io/ | Microsoft Graph}. The convertToRestId method converts an EWS-formatted ID into the proper format for REST.
          *
          * Minimum permission level: Restricted
          *
@@ -3743,7 +3767,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * The getUserIdentityTokenAsync method returns a token that you can use to identify and [authenticate the add-in and user with a third-party system](https://msdn.microsoft.com/library/office/fp179828.aspx).
+         * The getUserIdentityTokenAsync method returns a token that you can use to identify and {@link https://msdn.microsoft.com/library/office/fp179828.aspx | authenticate the add-in and user with a third-party system}.
          *
          * Minimum permission level: ReadItem
          *
@@ -4724,7 +4748,7 @@ export declare namespace Office {
         getDuration(): number;
 
         /**
-         * Gets the end date of a recurrence pattern in the following [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD"
+         * Gets the end date of a recurrence pattern in the following {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} date format: "YYYY-MM-DD"
          * 
          * [Api set: Mailbox Preview]
          *
@@ -4736,7 +4760,7 @@ export declare namespace Office {
         getEndDate(): string;
 
         /**
-         * Gets the end time of a usual appointment or meeting request instance of a recurrence pattern in whichever time zone that the user or add-in set the recurrence pattern using the following [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm"
+         * Gets the end time of a usual appointment or meeting request instance of a recurrence pattern in whichever time zone that the user or add-in set the recurrence pattern using the following {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} format: "THH:mm:ss:mmm"
          * 
          * [Api set: Mailbox Preview]
          *
@@ -4748,7 +4772,7 @@ export declare namespace Office {
         getEndTime(): string;
 
         /**
-         * Gets the start date of a recurrence pattern in the following [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD"
+         * Gets the start date of a recurrence pattern in the following {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} date format: "YYYY-MM-DD"
          * 
          * [Api set: Mailbox Preview]
          *
@@ -4760,7 +4784,7 @@ export declare namespace Office {
         getStartDate(): string;
 
         /**
-         * Gets the start time of a usual appointment instance of a recurrence pattern in whichever time zone that the user/add-in set the recurrence pattern using the following [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: "THH:mm:ss:mmm"
+         * Gets the start time of a usual appointment instance of a recurrence pattern in whichever time zone that the user/add-in set the recurrence pattern using the following {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} format: "THH:mm:ss:mmm"
          * 
          * [Api set: Mailbox Preview]
          *
@@ -4815,7 +4839,7 @@ export declare namespace Office {
          * 
          * Errors: Invalid date format - The date is not in an acceptable format.
          * 
-         * @param date - End date of the recurring appointment series represented in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
+         * @param date - End date of the recurring appointment series represented in the {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} date format: "YYYY-MM-DD".
          */
         setEndDate(date: string): void;
 
@@ -4849,7 +4873,7 @@ export declare namespace Office {
          * 
          * Errors: Invalid date format - The date is not in an acceptable format.
          * 
-         * @param date - Start date of the recurring appointment series represented in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
+         * @param date - Start date of the recurring appointment series represented in the {@link https://www.iso.org/iso-8601-date-and-time-format.html | ISO 8601} date format: "YYYY-MM-DD".
          */
         setStartDate(date:string): void;
 
@@ -5155,6 +5179,8 @@ export declare namespace Office {
 
     }
     /**
+     * Information about the user associated with the mailbox. This includes their account type, display name, email adddress, and time zone.
+     * 
      * [Api set: Mailbox 1.0]
      *
      * @remarks

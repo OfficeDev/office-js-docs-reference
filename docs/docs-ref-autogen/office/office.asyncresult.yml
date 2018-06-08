@@ -39,7 +39,9 @@ items:
         type:
           - any
   - uid: office.Office.AsyncResult.error
-    summary: 'Gets an \[Error\](office.error.md) object that provides a description of the error, if any error occurred.'
+    summary: >-
+      Gets an [Office.Error](xref:office.Office.Error) object that provides a description of the error, if any error
+      occurred.
     remarks: 'Hosts: Access, Excel, Outlook, PowerPoint, Project, Word'
     name: error
     fullName: office.Office.AsyncResult.error
@@ -52,7 +54,7 @@ items:
         type:
           - Error
   - uid: office.Office.AsyncResult.status
-    summary: 'Gets the \[AsyncResultStatus\](office.asyncresultstatus.md) of the asynchronous operation.'
+    summary: 'Gets the [Office.AsyncResultStatus](xref:office.Office.AsyncResultStatus) of the asynchronous operation.'
     remarks: 'Hosts: Access, Excel, Outlook, PowerPoint, Project, Word'
     name: status
     fullName: office.Office.AsyncResult.status

@@ -1,7 +1,12 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.UserProfile
-    summary: '\[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]'
+    summary: >-
+      Information about the user associated with the mailbox. This includes their account type, display name, email
+      adddress, and time zone.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
       Minimum permission level: ReadItem
 

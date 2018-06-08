@@ -92,6 +92,8 @@ tryCatch(async () => {
     // create a root for all the Outlook versions
     let outlookRoot = {"name": "Outlook", "uid": "OutlookRoot", "items": [] as any};
     let rootPushed = false;
+    // create a filter list for Outlook types we shouldn't expose
+    let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'CoercionTypeOptions', 'Diagnostics', 'ItemCompose', 'ItemRead', 'Message', 'ReplyFormAttachment', 'ReplyFormData'];
 
     // process all packages except 'office' (Shared API)
     origToc.items.forEach((rootItem, rootIndex) => {
@@ -108,11 +110,14 @@ tryCatch(async () => {
                             newToc.items[0].items.push(outlookRoot);
                             rootPushed = true;
                         }
+                        let filterToCContent = membersToMove.items.filter(item => {
+                            return outlookFilter.indexOf(item.name) < 0;
+                        });
                         if (packageName === 'Outlook') { // The version without a suffix is the preview version
                             outlookRoot.items.push({
                                 "name": packageName + " - Preview",
                                 "uid": packageItem.uid,
-                                "items": membersToMove.items
+                                "items": filterToCContent
                             });
                         }
                         else {
@@ -120,7 +125,7 @@ tryCatch(async () => {
                             outlookRoot.items.push({
                                 "name": packageNameVersionFormated,
                                 "uid": packageItem.uid,
-                                "items": membersToMove.items
+                                "items": filterToCContent
                             });
                         }
                     }
