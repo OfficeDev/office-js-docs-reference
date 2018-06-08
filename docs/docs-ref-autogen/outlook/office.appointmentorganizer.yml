@@ -2,9 +2,11 @@
 items:
   - uid: outlook.Office.AppointmentOrganizer
     summary: >-
-      The compose mode of [Office.Appointment](xref:outlook.Office.Appointment)<!-- -->Important: This is an internal
-      Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of
-      Office.context.mailbox.item. Refer to the Object Model pages for more information.
+      The compose mode of [Office.Appointment](xref:outlook.Office.Appointment)<!-- -->.
+
+
+      Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
+      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
     name: Office.AppointmentOrganizer
     fullName: outlook.Office.AppointmentOrganizer
     langs:

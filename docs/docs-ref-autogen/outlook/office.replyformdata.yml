@@ -15,7 +15,9 @@ items:
       - outlook.Office.ReplyFormData.callback
       - outlook.Office.ReplyFormData.htmlBody
   - uid: outlook.Office.ReplyFormData.attachments
-    summary: An array of Office.ReplyFormAttachments that are either file or item attachments.
+    summary: >-
+      An array of [Office.ReplyFormAttachment](xref:outlook.Office.ReplyFormAttachment) that are either file or item
+      attachments.
     name: attachments
     fullName: outlook.Office.ReplyFormData.attachments
     langs:

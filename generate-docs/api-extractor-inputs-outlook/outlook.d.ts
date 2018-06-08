@@ -1613,12 +1613,14 @@ export declare namespace Office {
     }
 
     /**
+     * The subclass of {@link Office.Item} dealing with apppointments.
+     * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
     export interface Appointment extends Item {
     }
     /**
-     * The compose mode of {@link Office.Appointment}
+     * The compose mode of {@link Office.Appointment}.
      * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
@@ -1713,7 +1715,7 @@ export declare namespace Office {
         start: Time;
     }
     /**
-     * The read mode of {@link Office.Appointment}
+     * The read mode of {@link Office.Appointment}.
      * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
@@ -2168,7 +2170,7 @@ export declare namespace Office {
        removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;
     }
     /**
-     * The compose mode of {@link Office.Item}
+     * The compose mode of {@link Office.Item}.
      * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
@@ -2764,7 +2766,7 @@ export declare namespace Office {
         setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;
     }
     /**
-     * The read mode of {@link Office.Appointment}
+     * The read mode of {@link Office.Appointment}.
      * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
@@ -3101,7 +3103,7 @@ export declare namespace Office {
     }
 
      /**
-     * The compose mode of {@link Office.Message}
+     * The compose mode of {@link Office.Message}.
      * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
@@ -3166,7 +3168,7 @@ export declare namespace Office {
         to: Recipients;
     }
     /**
-     * The read mode of {@link Office.Message}
+     * The read mode of {@link Office.Message}. 
      * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
@@ -4647,7 +4649,7 @@ export declare namespace Office {
          */
         htmlBody?: string;
         /**
-         * An array of {@link Office.ReplyFormAttachments} that are either file or item attachments.
+         * An array of {@link Office.ReplyFormAttachment} that are either file or item attachments.
          */
         attachments?: ReplyFormAttachment[];
         /**

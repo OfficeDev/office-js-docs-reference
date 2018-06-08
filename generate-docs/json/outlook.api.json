@@ -20,6 +20,32 @@
           "summary": [
             {
               "kind": "text",
+              "text": "The subclass of "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Office.Item"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "outlook",
+                "exportName": "Office",
+                "memberName": "Item"
+              }
+            },
+            {
+              "kind": "text",
+              "text": " dealing with apppointments."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
               "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
             }
           ],
@@ -52,6 +78,13 @@
                 "exportName": "Office",
                 "memberName": "Appointment"
               }
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "paragraph"
             },
             {
               "kind": "text",
@@ -876,6 +909,13 @@
                 "exportName": "Office",
                 "memberName": "Appointment"
               }
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "paragraph"
             },
             {
               "kind": "text",
@@ -3787,6 +3827,13 @@
             },
             {
               "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
               "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
             }
           ],
@@ -4687,6 +4734,13 @@
                 "exportName": "Office",
                 "memberName": "Appointment"
               }
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "paragraph"
             },
             {
               "kind": "text",
@@ -10805,6 +10859,13 @@
             },
             {
               "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
               "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
             }
           ],
@@ -11030,6 +11091,13 @@
                 "exportName": "Office",
                 "memberName": "Message"
               }
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "paragraph"
             },
             {
               "kind": "text",
@@ -12950,14 +13018,14 @@
                   "elements": [
                     {
                       "kind": "text",
-                      "text": "Office.ReplyFormAttachments"
+                      "text": "Office.ReplyFormAttachment"
                     }
                   ],
                   "target": {
                     "scopeName": "",
                     "packageName": "outlook",
                     "exportName": "Office",
-                    "memberName": "ReplyFormAttachments"
+                    "memberName": "ReplyFormAttachment"
                   }
                 },
                 {
