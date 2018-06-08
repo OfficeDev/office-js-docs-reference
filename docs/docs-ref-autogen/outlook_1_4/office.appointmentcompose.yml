@@ -1,0 +1,171 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_4.Office.AppointmentCompose
+    summary: >-
+      Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
+      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+    name: Office.AppointmentCompose
+    fullName: Outlook_1_4.Office.AppointmentCompose
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - Appointment
+    package: Outlook_1_4
+    children:
+      - Outlook_1_4.Office.AppointmentCompose.end
+      - Outlook_1_4.Office.AppointmentCompose.location
+      - Outlook_1_4.Office.AppointmentCompose.optionalAttendees
+      - Outlook_1_4.Office.AppointmentCompose.requiredAttendees
+      - Outlook_1_4.Office.AppointmentCompose.start
+  - uid: Outlook_1_4.Office.AppointmentCompose.end
+    summary: >-
+      Gets or sets the date and time that the appointment is to end.
+
+
+      The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the
+      convertToLocalClientTime method to convert the end property value to the client's local date and time.
+
+
+      \*Compose mode\*
+
+
+      The end property returns a Time object.
+
+
+      When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to
+      convert the local time on the client to UTC for the server.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: end
+    fullName: Outlook_1_4.Office.AppointmentCompose.end
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'end: Time;'
+      return:
+        type:
+          - Time
+  - uid: Outlook_1_4.Office.AppointmentCompose.location
+    summary: >-
+      Gets or sets the location of an appointment.
+
+
+      \*Compose mode\*
+
+
+      The location property returns a Location object that provides methods that are used to get and set the location of
+      the appointment.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: location
+    fullName: Outlook_1_4.Office.AppointmentCompose.location
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'location: Location;'
+      return:
+        type:
+          - Location
+  - uid: Outlook_1_4.Office.AppointmentCompose.optionalAttendees
+    summary: >-
+      Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
+      of the current item.
+
+
+      \*Compose mode\*
+
+
+      The optionalAttendees property returns a Recipients object that provides methods to get or update the optional
+      attendees for a meeting.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: optionalAttendees
+    fullName: Outlook_1_4.Office.AppointmentCompose.optionalAttendees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'optionalAttendees: Recipients;'
+      return:
+        type:
+          - Recipients
+  - uid: Outlook_1_4.Office.AppointmentCompose.requiredAttendees
+    summary: >-
+      Provides access to the required attendees of an event. The type of object and level of access depends on the mode
+      of the current item.
+
+
+      \*Compose mode\*
+
+
+      The requiredAttendees property returns a Recipients object that provides methods to get or update the required
+      attendees for a meeting.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: requiredAttendees
+    fullName: Outlook_1_4.Office.AppointmentCompose.requiredAttendees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'requiredAttendees: Recipients;'
+      return:
+        type:
+          - Recipients
+  - uid: Outlook_1_4.Office.AppointmentCompose.start
+    summary: >-
+      Gets or sets the date and time that the appointment is to begin.
+
+
+      The start property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the
+      convertToLocalClientTime method to convert the value to the client's local date and time.
+
+
+      \*Compose mode\*
+
+
+      The start property returns a Time object.
+
+
+      When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to
+      convert the local time on the client to UTC for the server.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: start
+    fullName: Outlook_1_4.Office.AppointmentCompose.start
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'start: Time;'
+      return:
+        type:
+          - Time

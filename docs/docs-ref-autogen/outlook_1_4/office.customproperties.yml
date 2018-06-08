@@ -1,0 +1,159 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_4.Office.CustomProperties
+    summary: >-
+      The CustomProperties object represents custom properties that are specific to a particular item and specific to a
+      mail add-in for Outlook. For example, there might be a need for a mail add-in to save some data that is specific
+      to the current email message that activated the add-in. If the user revisits the same message in the future and
+      activates the mail add-in again, the add-in will be able to retrieve the data that had been saved as custom
+      properties.
+
+
+      Because Outlook for Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot
+      access their custom properties.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: Office.CustomProperties
+    fullName: Outlook_1_4.Office.CustomProperties
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1_4
+    children:
+      - Outlook_1_4.Office.CustomProperties.get
+      - Outlook_1_4.Office.CustomProperties.remove
+      - Outlook_1_4.Office.CustomProperties.saveAsync
+      - Outlook_1_4.Office.CustomProperties.set
+  - uid: Outlook_1_4.Office.CustomProperties.get
+    summary: Returns the value of the specified custom property.
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: get(name)
+    fullName: Outlook_1_4.Office.CustomProperties.get
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'get(name: string): any;'
+      return:
+        type:
+          - any
+        description: |-
+          The value of the specified custom property.
+
+          \[Api set: Mailbox 1.0\]
+      parameters:
+        - id: name
+          description: The name of the custom property to be returned.
+          type:
+            - string
+  - uid: Outlook_1_4.Office.CustomProperties.remove
+    summary: |-
+      Removes the specified property from the custom property collection.
+
+      To make the removal of the property permanent, you must call the saveAsync method of the CustomProperties object.
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: remove(name)
+    fullName: Outlook_1_4.Office.CustomProperties.remove
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: 'The name of the property to be removed. \[Api set: Mailbox 1.0\]'
+          type:
+            - string
+  - uid: Outlook_1_4.Office.CustomProperties.saveAsync
+    summary: >-
+      Saves item-specific custom properties to the server.
+
+
+      You must call the saveAsync method to persist any changes made with the set method or the remove method of the
+      CustomProperties object. The saving action is asynchronous.
+
+
+      It's a good practice to have your callback function check for and handle errors from saveAsync. In particular, a
+      read add-in can be activated while the user is in a connected state in a read form, and subsequently the user
+      becomes disconnected. If the add-in calls saveAsync while in the disconnected state, saveAsync would return an
+      error. Your callback method should handle this error accordingly.
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: 'saveAsync(callback, asyncContext)'
+    fullName: Outlook_1_4.Office.CustomProperties.saveAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'saveAsync(callback?: (result: AsyncResult) => void, asyncContext?: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type AsyncResult.
+          type:
+            - '(result: AsyncResult) => void'
+        - id: asyncContext
+          description: 'Optional. Any state data that is passed to the callback method. \[Api set: Mailbox 1.0\]'
+          type:
+            - any
+  - uid: Outlook_1_4.Office.CustomProperties.set
+    summary: >-
+      Sets the specified property to the specified value.
+
+
+      The set method sets the specified property to the specified value. You must use the saveAsync method to save the
+      property to the server.
+
+
+      The set method creates a new property if the specified property does not already exist; otherwise, the existing
+      value is replaced with the new value. The value parameter can be of any type; however, it is always passed to the
+      server as a string.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: |-
+      Minimum permission level: ReadItem
+
+      Applicable Outlook mode: Compose or read
+    name: 'set(name, value)'
+    fullName: Outlook_1_4.Office.CustomProperties.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(name: string, value: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: The name of the property to be set.
+          type:
+            - string
+        - id: value
+          description: The value of the property to be set.
+          type:
+            - string
