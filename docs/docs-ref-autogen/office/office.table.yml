@@ -2,8 +2,8 @@
 items:
   - uid: office.Office.Table
     summary: >-
-      Specifies enumerated values for the cells: property in the cellFormat parameter of [table formatting
-      methods](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
+      Specifies enumerated values for the cells: property in the cellFormat parameter of \[table formatting
+      methods\](https://dev.office.com/reference/docs/excel/format-tables-in-add-ins-for-excel.htm).
     remarks: 'Hosts: Excel'
     name: Office.Table
     fullName: office.Office.Table

@@ -182,14 +182,8 @@ items:
         - id: data
           description: >-
             The data to be set in the current selection. Possible data types by host: string: Excel, Excel Online, Word,
-            and Word Online only array of arrays: Excel and Word
-            only[Office.TableData](xref:office.Office.TableData)<!-- -->: Access, Excel, and Word only
-
-
-            HTML: Word and Word Online only
-
-
-            Office Open XML: Word only
+            and Word Online only array of arrays: Excel and Word only \[TableData\](office.tabledata.md): Access, Excel,
+            and Word only HTML: Word and Word Online only Office Open XML: Word only
           type:
             - TableData | any
         - id: options
