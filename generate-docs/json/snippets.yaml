@@ -4969,6 +4969,507 @@ OneNote.TableRow.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Office.Body.getAsync:
+  - >-
+    // This example gets the body of the message in plain text.
+
+    Office.context.mailbox.item.body.getAsync(
+        "text",
+        { asyncContext:"This is passed to the callback" },
+        function callback(result) {
+            // Do something with the result
+        });
+
+    //The following is an example of the result parameter passed to the callback
+    function.
+
+    {
+        "value": "TEXT of whole body (including threads below)",
+        "status": "succeeded",
+        "asyncContext": "This is passed to the callback"
+    }
+Office.Body.prependAsync:
+  - |-
+    // DESCRIPTION EXAMPLE
+    Office.context.mailbox.item.body.prependAsync(
+        '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
+        {coercionType: Office.CoercionType.Html},
+        callback);
+Office.Body.setAsync:
+  - >-
+    // DESCRIPTION EXAMPLE
+
+    Office.context.mailbox.item.body.setAsync(
+        '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
+        {coercionType: Office.CoercionType.Html},
+        callback);
+    Office.context.mailbox.item.body.setAsync(
+        "<b>(replaces all body, including threads you are replying to that may be on the bottom)</b>",
+        { coercionType:"html", asyncContext:"This is passed to the callback" },
+        function callback(result) {
+            // Process the result
+    });
+
+
+    // The following is an example of the result parameter passed to the
+    callback function.
+
+    {
+        "value":null,
+        "status":"succeeded",
+        "asyncContext":"This is passed to the callback"
+    }
+Office.Body.setSelectedDataAsync:
+  - |-
+    // DESCRIPTION EXAMPLE
+    Office.context.mailbox.item.body.setSelectedDataAsync(
+        '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
+        {coercionType: Office.CoercionType.Html},
+        callback);
+Office.CustomProperties:
+  - >-
+    // The following example shows how to use the loadCustomPropertiesAsync
+    method
+
+    // to asynchronously load custom properties that are specific to the current
+    item.
+
+    // The example also shows how to use the saveAsync method to save these
+    properties
+
+    // back to the server. After loading the custom properties, the example uses
+    the
+
+    // get method to read the custom property myProp, the set method to write
+    the
+
+    // custom property otherProp, and then finally calls the saveAsync method to
+    save
+
+    // the custom properties.
+
+    Office.initialize = function () {
+        // Checks for the DOM to load using the jQuery ready function.
+        $(document).ready(function () {
+            // After the DOM is loaded, add-in-specific code can run.
+            var mailbox = Office.context.mailbox;
+            mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
+        });
+    }
+
+    function customPropsCallback(asyncResult) {
+        var customProps = asyncResult.value;
+        var myProp = customProps.get("myProp");
+
+        customProps.set("otherProp", "value");
+        customProps.saveAsync(saveCallback);
+    }
+
+
+    function saveCallback(asyncResult) {
+
+    }
+Office.CustomProperties.saveAsync:
+  - |-
+    // The following JavaScript code sample shows how to asynchronously use
+    // the loadCustomPropertiesAsync method to load custom properties that
+    // are specific to the current item, and the saveAsync method to save
+    // these properties back to the server. After loading the custom properties,
+    // the code sample uses the get method to read the custom property myProp,
+    // the set method to write the custom property otherProp, and then finally
+    // calls the saveAsync method to save the custom properties.
+
+    // The initialize function is required for all add-ins.
+    Office.initialize = function () {
+        // Checks for the DOM to load using the jQuery ready function.
+        $(document).ready(function () {
+            // After the DOM is loaded, add-in-specific code can run.
+            var item = Office.context.mailbox.item;
+            item.loadCustomPropertiesAsync(customPropsCallback);
+        });
+    }
+    function customPropsCallback(asyncResult) {
+        var customProps = asyncResult.value;
+        var myProp = customProps.get("myProp");
+
+        customProps.set("otherProp", "value");
+        customProps.saveAsync(saveCallback);
+    }
+
+    function saveCallback(asyncResult) {
+        if (asyncResult.status == Office.AsyncResultStatus.Failed){
+            write(asyncResult.error.message);
+        }
+        else {
+            // Async call to save custom properties completed.
+            // Proceed to do the appropriate for your add-in.
+        }
+    }
+
+    // Writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message;
+    }
+Office.Event:
+  - |-
+    // DESCRIPTION EXAMPLE
+    // MANIFEST EXAMPLE
+    <Control xsi:type="Button" id="eventTestButton">
+        <Label resid="eventButtonLabel" />
+        <Tooltip resid="eventButtonTooltip" />
+        <Supertip>
+            <Title resid="eventSuperTipTitle" />
+            <Description resid="eventSuperTipDescription" />
+        </Supertip>
+        <Icon>
+            <bt:Image size="16" resid="blue-icon-16" />
+            <bt:Image size="32" resid="blue-icon-32" />
+            <bt:Image size="80" resid="blue-icon-80" />
+        </Icon>
+        <Action xsi:type="ExecuteFunction">
+            <FunctionName>testEventObject</FunctionName>
+        </Action>
+    </Control>
+    // The button has an id attribute set to eventTestButton, and will invoke
+    // the testEventObject function defined in the add-in.
+    // That function looks like this:
+    function testEventObject(event) {
+        // The event object implements the Event interface
+
+        // This value will be "eventTestButton"
+        var buttonId = event.source.id;
+
+        // Signal to the host app that processing is complete.
+        event.completed();
+    }
+Office.Event.source:
+  - |-
+    // Function is used by two buttons:
+    // button1 and button2
+    function multiButton (event) {
+        // Check which button was clicked
+        var buttonId = event.source.id;
+
+        if (buttonId === 'button1') {
+            doButton1Action();
+        }
+        else {
+            doButton2Action();
+        }
+
+        event.completed();
+    }
+Office.Event.completed:
+  - |-
+    function processItem (event) {
+        // Do some processing
+
+        event.completed();
+    }
+
+    // In the following example, the checkMessage function has
+    // been registered as an event handler for ItemSend.
+    function checkMessage(event) {
+        // Get the item being sent
+        var outgoingMsg = Office.context.mailbox.item;
+
+        // Check if subject contains "BLOCK"
+        outgoingMsg.subject.getAsync(function (result) {
+            // Subject is in result.value
+            if (result.value.indexOf('BLOCK') != -1) {
+                // Value is found, stop send
+                event.completed({allowEvent = false});
+            } else {
+                // Value wasn't found, allow send
+                event.completed({allowEvent = true});
+            }
+        });
+    }
+Office.NotificationMessages.addAsync:
+  - |-
+    // Create three notifications, each with a different key
+    Office.context.mailbox.item.notificationMessages.addAsync("progress", {
+        type: "progressIndicator",
+        message : "An add-in is processing this message."
+    });
+    Office.context.mailbox.item.notificationMessages.addAsync("information", {
+        type: "informationalMessage",
+        message : "The add-in processed this message.",
+        icon : "iconid",
+        persistent: false
+    });
+    Office.context.mailbox.item.notificationMessages.addAsync("error", {
+        type: "errorMessage",
+        message : "The add-in failed to process this message."
+    });
+Office.NotificationMessages.getAllAsync:
+  - >-
+    // Get all notifications
+
+    Office.context.mailbox.item.notificationMessages.getAllAsync(function
+    (asyncResult) {
+        if (asyncResult.status != "failed") {
+            Office.context.mailbox.item.notificationMessages.replaceAsync( "notifications", {
+                type: "informationalMessage",
+                message : "Found " + asyncResult.value.length + " notifications.",
+                icon : "iconid",
+                persistent: false
+            });
+        }
+    });
+Office.NotificationMessages.removeAsync:
+  - |-
+    // Remove a notification
+    Office.context.mailbox.item.notificationMessages.removeAsync("progress");
+Office.NotificationMessages.replaceAsync:
+  - |-
+    // Replace a notification with an informational notification
+    Office.context.mailbox.item.notificationMessages.replaceAsync("progress", {
+        type: "informationalMessage",
+        message : "The message was processed successfully.",
+        icon : "iconid",
+        persistent: false
+    });
+Office.Recipients.addAsync:
+  - |-
+    // The following example creates an array of EmailUser objects
+    // and adds them to the To recipients of the message.
+    var newRecipients = [
+        {
+            "displayName": "Allie Bellew",
+            "emailAddress": "allieb@contoso.com"
+        },
+        {
+            "displayName": "Alex Darrow",
+            "emailAddress": "alexd@contoso.com"
+        }
+    ];
+
+    Office.context.mailbox.item.to.addAsync(newRecipients, function(result) {
+        if (result.error) {
+            showMessage(result.error);
+        } else {
+            showMessage("Recipients added");
+        }
+    });
+Office.Recipients.getAsync:
+  - |-
+    // The following example gets the optional attendees of a meeting.
+    Office.context.mailbox.item.optionalAttendees.getAsync(function(result) {
+        if (result.error) {
+            showMessage(result.error);
+        } else {
+            var msg = "";
+            result.value.forEach(function(recip, index) {
+                msg = msg + recip.displayName + " (" + recip.emailAddress + ");";
+            });
+            showMessage(msg);
+        }
+    });
+Office.Recipients.setAsync:
+  - |-
+    // The following example creates an array of EmailUser objects and
+    // replaces the CC recipients of the message with the array.
+    var newRecipients = [
+        {
+            "displayName": "Allie Bellew",
+            "emailAddress": "allieb@contoso.com"
+        },
+        {
+            "displayName": "Alex Darrow",
+            "emailAddress": "alexd@contoso.com"
+        }
+    ];
+
+    Office.context.mailbox.item.cc.setAsync(newRecipients, function(result) {
+        if (result.error) {
+            showMessage(result.error);
+        } else {
+            showMessage("Recipients overwritten");
+        }
+    });
+Office.Recurrence.getAsync:
+  - >-
+    // This example gets the recurrence object of an appointment or meeting
+    request item.
+
+    Office.context.mailbox.item.recurrence.getAsync(callback);
+
+    function callback(asyncResult){
+        var context = asyncResult.context;
+        var recurrence = asyncResult.value;
+        var endDate = recurrence.seriesTime.getEndDate();
+    }
+
+
+    // The following is an example of the results of the getAsync call.
+
+    Recurrence = {"recurrenceType": "weekly","recurrenceProperties":
+    {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
+    "seriesTime": {seriesTimeObject}, "recurrenceTimeZone": {"name": "Pacific
+    Standard Time", "offset": -480}}
+Office.Recurrence.setAsync:
+  - >-
+    // The following example sets the recurrence pattern of an appointment
+    series.
+
+    var seriesTimeObject = new SeriesTime(); 
+
+    seriesTimeObject.setStartDate(2017,11,2);  
+
+    seriesTimeObject.setEndDate(2017,12,2); 
+
+    seriesTimeObject.setStartTime(10,30); 
+
+    seriesTimeObject.setDuration(30);
+
+
+    var pattern = {"seriesTime": seriesTimeObject, "type": "Weekly",
+    "properties": {"interval": ", "days": ["Tue", "Thu"], "firstDayOfWeek":
+    "Sun"}, "recurrenceTimeZone": {"name": "Pacific Standard Time"}}; 
+
+
+    Office.context.mailbox.item.recurrence.setAsync(pattern, options, callback);
+
+
+    //Result: This created a recurring event from November 2, 2017 to December
+    2, 2017 at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
+Office.RoamingSettings:
+  - |-
+    // DESCRIPTION EXAMPLE
+    // Get the current value of the 'myKey' setting
+    var value = Office.context.roamingSettings.get('myKey');
+    // Update the value of the 'myKey' setting
+    Office.context.roamingSettings.set('myKey', 'Hello World!');
+    // Persist the change
+    Office.context.roamingSettings.saveAsync();
+Office.SeriesTime.getDuration:
+  - >-
+    // This example gets the duration of a usual instance in a recurring
+    appointment series.
+
+    Office.context.mailbox.item.recurrence.getAsync(callback);
+
+    function callback(asyncResult){
+        var context = asyncResult.context;
+        var recurrence = asyncResult.value;
+        var duration = recurrence.seriesTime.getDuration();
+    }
+Office.SeriesTime.getEndDate:
+  - |-
+    // This example gets the end date of a recurring appointment series.
+    Office.context.mailbox.item.recurrence.getAsync(callback);
+    function callback(asyncResult){
+        var context = asyncResult.context;
+        var recurrence = asyncResult.value;
+        var endDate = recurrence.seriesTime.getEndDate();
+    }
+Office.SeriesTime.getEndTime:
+  - >-
+    // This example gets the end time of a usual instance in a recurring
+    appointment series.
+
+    Office.context.mailbox.item.recurrence.getAsync(callback);
+
+    function callback(asyncResult){
+        var context = asyncResult.context;
+        var recurrence = asyncResult.value;
+        var endDate = recurrence.seriesTime.getEndTime();
+    }
+Office.SeriesTime.getStartDate:
+  - |-
+    // This example gets the start date of a recurring appointment series.
+    Office.context.mailbox.item.recurrence.getAsync(callback);
+    function callback(asyncResult){
+        var context = asyncResult.context;
+        var recurrence = asyncResult.value;
+        var endDate = recurrence.seriesTime.getStartDate();
+    }
+Office.SeriesTime.getStartTime:
+  - >-
+    // This example gets the start time of a usual instance in a recurring
+    appointment series.
+
+    var seriesTimeObject = new SeriesTime()
+
+    seriesTimeObject.setDuration(120);
+Office.SeriesTime.setDuration:
+  - >-
+    // This example sets the duration of each appointment in a recurring series
+    to 2 hours.
+
+    Office.context.mailbox.item.recurrence.getAsync(callback);
+
+    function callback(asyncResult){
+        var context = asyncResult.context;
+        var recurrence = asyncResult.value;
+        var endDate = recurrence.seriesTime.getStartTime();
+    }
+Office.SeriesTime.setEndDate:
+  - >-
+    // This example sets the end date of a recurring appointment series to
+    November 2, 2017.
+
+    var seriesTimeObject = new SeriesTime()
+
+    seriesTimeObject.setEndDate(2017, 10, 2);
+
+
+    // Alternative: Set the end date using ISO 8601 date standard
+
+    seriesTimeObject.setEndDate("2017-11-02");
+Office.SeriesTime.setStartDate:
+  - >-
+    // This example sets the start date of a recurring appointment series to
+    November 2, 2017.
+
+    var seriesTimeObject = new SeriesTime()
+
+    seriesTimeObject.setStartDate(2017, 10, 2);
+
+
+    // Alternative: Set the start date using ISO 8601 date standard
+
+    seriesTimeObject.setStartDate("2017-11-02");
+Office.SeriesTime.setStartTime:
+  - >-
+    // This example sets the start time of each instance of a recurring
+    appointment series to 1:30 PM.
+
+    var seriesTimeObject = new SeriesTime()
+
+    seriesTimeObject.setStartTime(13, 30);
+
+
+    // This example sets the start time of each instance of a recurring
+    appointment series to 11:30 AM.
+
+    seriesTimeObject.setStartTime(11, 30);
+
+
+    // Alternative: Set the start time of all instances of a recurring
+    appointment series to 11:30 PM.
+
+    seriesTimeObject.setStartTime("T23:30:00");
+Office.Time.setAsync:
+  - >-
+    var startTime = new Date("3/14/2015");
+
+    var options = {
+        // Pass information that can be used
+        // in the callback
+        asyncContext: {verb:"Set"}
+    }
+
+    Office.context.mailbox.item.start.setAsync(startTime, options,
+    function(result) {
+        if (result.error) {
+            console.debug(result.error);
+        } else {
+            // Access the asyncContext that was passed to the setAsync function
+            console.debug("Start Time " + result.asyncContext.verb);
+        }
+    });
 Visio.Application.load:
   - |-
     Visio.run(function (ctx) { 
