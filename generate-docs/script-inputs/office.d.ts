@@ -6438,7 +6438,7 @@ declare namespace Office {
     /**
      * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information.
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of *Office.context.mailbox.item*. Refer to the Object Model pages for more information.
      */
     interface AppointmentCompose extends Appointment, ItemCompose {
         /**
@@ -6513,7 +6513,7 @@ declare namespace Office {
     /**
      * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information.
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of *Office.context.mailbox.item*. Refer to the Object Model pages for more information.
      */
     interface AppointmentRead extends Appointment, ItemRead {
         /**
@@ -6964,7 +6964,7 @@ declare namespace Office {
     /**
      * The compose mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information.
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of *Office.context.mailbox.item*. Refer to the Object Model pages for more information.
      */
     interface ItemCompose extends Item {
         /**
@@ -7560,7 +7560,7 @@ declare namespace Office {
     /**
      * The read mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information.
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of *Office.context.mailbox.item*. Refer to the Object Model pages for more information.
      */
     interface ItemRead extends Item {
         /**
@@ -7873,7 +7873,7 @@ declare namespace Office {
     /**
      * A subclass of {@link Office.Item} for messages.
      * 
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of *Office.context.mailbox.item*. Refer to the Object Model pages for more information.
      */
     interface Message extends Item {
         /**
@@ -7897,7 +7897,7 @@ declare namespace Office {
      /**
      * The message compose mode of {@link Office.Item | Office.context.mailbox.item}.
      * 
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information.
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of *Office.context.mailbox.item*. Refer to the Object Model pages for more information.
      */
     interface MessageCompose extends Message, ItemCompose {
         /**
