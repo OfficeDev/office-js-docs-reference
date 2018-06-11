@@ -60,7 +60,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Attendee
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.AppointmentRead.addHandlerAsync
     langs:
@@ -112,7 +112,7 @@ items:
       Minimum permission level: ReadItem
 
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: attachments
     fullName: outlook.Office.AppointmentRead.attachments
     langs:
@@ -131,7 +131,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Attendee
     name: body
     fullName: outlook.Office.AppointmentRead.body
     langs:
@@ -150,7 +150,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: dateTimeCreated
     fullName: outlook.Office.AppointmentRead.dateTimeCreated
     langs:
@@ -171,7 +171,7 @@ items:
 
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: dateTimeModifed
     fullName: outlook.Office.AppointmentRead.dateTimeModifed
     langs:
@@ -207,7 +207,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: displayReplyAllForm(formData)
     fullName: outlook.Office.AppointmentRead.displayReplyAllForm
     langs:
@@ -252,7 +252,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: displayReplyForm(formData)
     fullName: outlook.Office.AppointmentRead.displayReplyForm
     langs:
@@ -289,7 +289,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Attendee
     name: end
     fullName: outlook.Office.AppointmentRead.end
     langs:
@@ -310,7 +310,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: getEntities()
     fullName: outlook.Office.AppointmentRead.getEntities
     langs:
@@ -332,7 +332,7 @@ items:
     remarks: |-
       Minimum permission level: Restricted
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: getEntitiesByType(entityType)
     fullName: outlook.Office.AppointmentRead.getEntitiesByType
     langs:
@@ -379,7 +379,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: getFilteredEntitiesByName(name)
     fullName: outlook.Office.AppointmentRead.getFilteredEntitiesByName
     langs:
@@ -415,7 +415,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: 'getInitializationContextAsync(options, callback)'
     fullName: outlook.Office.AppointmentRead.getInitializationContextAsync
     langs:
@@ -467,7 +467,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: getRegExMatches()
     fullName: outlook.Office.AppointmentRead.getRegExMatches
     langs:
@@ -504,7 +504,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: getRegExMatchesByName(name)
     fullName: outlook.Office.AppointmentRead.getRegExMatchesByName
     langs:
@@ -534,7 +534,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: getSelectedEntities()
     fullName: outlook.Office.AppointmentRead.getSelectedEntities
     langs:
@@ -571,7 +571,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: getSelectedRegExMatches()
     fullName: outlook.Office.AppointmentRead.getSelectedRegExMatches
     langs:
@@ -612,7 +612,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: itemClass
     fullName: outlook.Office.AppointmentRead.itemClass
     langs:
@@ -643,7 +643,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: itemId
     fullName: outlook.Office.AppointmentRead.itemId
     langs:
@@ -667,7 +667,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Attendee
     name: itemType
     fullName: outlook.Office.AppointmentRead.itemType
     langs:
@@ -698,7 +698,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Attendee
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: outlook.Office.AppointmentRead.loadCustomPropertiesAsync
     langs:
@@ -733,7 +733,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Attendee
     name: location
     fullName: outlook.Office.AppointmentRead.location
     langs:
@@ -757,7 +757,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: normalizedSubject
     fullName: outlook.Office.AppointmentRead.normalizedSubject
     langs:
@@ -776,7 +776,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Attendee
     name: notificationMessages
     fullName: outlook.Office.AppointmentRead.notificationMessages
     langs:
@@ -802,7 +802,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Attendee
     name: optionalAttendees
     fullName: outlook.Office.AppointmentRead.optionalAttendees
     langs:
@@ -821,7 +821,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Attendee
     name: organizer
     fullName: outlook.Office.AppointmentRead.organizer
     langs:
@@ -853,7 +853,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Attendee
     name: recurrence
     fullName: outlook.Office.AppointmentRead.recurrence
     langs:
@@ -877,7 +877,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Attendee
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.AppointmentRead.removeHandlerAsync
     langs:
@@ -929,7 +929,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Attendee
     name: requiredAttendees
     fullName: outlook.Office.AppointmentRead.requiredAttendees
     langs:
@@ -964,7 +964,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Attendee
     name: seriesId
     fullName: outlook.Office.AppointmentRead.seriesId
     langs:
@@ -988,7 +988,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Attendee
     name: start
     fullName: outlook.Office.AppointmentRead.start
     langs:
@@ -1015,7 +1015,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Attendee
     name: subject
     fullName: outlook.Office.AppointmentRead.subject
     langs:

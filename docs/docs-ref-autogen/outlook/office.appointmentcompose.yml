@@ -57,7 +57,7 @@ items:
     remarks: |-
       Minimum permission level: ReadWriteItem
 
-      Applicable Outlook mode: Compose
+      Applicable Outlook mode: Appointment Organizer
 
       Errors:
 
@@ -120,7 +120,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Organizer
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.AppointmentCompose.addHandlerAsync
     langs:
@@ -180,7 +180,7 @@ items:
     remarks: |-
       Minimum permission level: ReadWriteItem
 
-      Applicable Outlook mode: Compose
+      Applicable Outlook mode: Appointment Organizer
 
       Errors:
 
@@ -231,7 +231,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Organizer
     name: body
     fullName: outlook.Office.AppointmentCompose.body
     langs:
@@ -262,7 +262,7 @@ items:
     remarks: |-
       Minimum permission level: Restricted
 
-      Applicable Outlook mode: Compose
+      Applicable Outlook mode: Appointment Organizer
     name: close()
     fullName: outlook.Office.AppointmentCompose.close
     langs:
@@ -282,7 +282,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Organizer
     name: dateTimeCreated
     fullName: outlook.Office.AppointmentCompose.dateTimeCreated
     langs:
@@ -303,7 +303,7 @@ items:
 
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Organizer
     name: dateTimeModifed
     fullName: outlook.Office.AppointmentCompose.dateTimeModifed
     langs:
@@ -332,7 +332,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Organizer
     name: end
     fullName: outlook.Office.AppointmentCompose.end
     langs:
@@ -361,7 +361,7 @@ items:
       Minimum permission level: ReadItem
 
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Appointment Organizer
     name: 'getInitializationContextAsync(options, callback)'
     fullName: outlook.Office.AppointmentCompose.getInitializationContextAsync
     langs:
@@ -405,7 +405,7 @@ items:
     remarks: |-
       Minimum permission level: ReadWriteItem
 
-      Applicable Outlook mode: Compose
+      Applicable Outlook mode: Appointment Organizer
     name: 'getSelectedDataAsync(coercionType, callback)'
     fullName: outlook.Office.AppointmentCompose.getSelectedDataAsync
     langs:
@@ -443,7 +443,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Organizer
     name: itemType
     fullName: outlook.Office.AppointmentCompose.itemType
     langs:
@@ -474,7 +474,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Organizer
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: outlook.Office.AppointmentCompose.loadCustomPropertiesAsync
     langs:
@@ -509,7 +509,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Organizer
     name: location
     fullName: outlook.Office.AppointmentCompose.location
     langs:
@@ -528,7 +528,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Organizer
     name: notificationMessages
     fullName: outlook.Office.AppointmentCompose.notificationMessages
     langs:
@@ -550,7 +550,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Organizer
     name: optionalAttendees
     fullName: outlook.Office.AppointmentCompose.optionalAttendees
     langs:
@@ -582,7 +582,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Organizer
     name: recurrence
     fullName: outlook.Office.AppointmentCompose.recurrence
     langs:
@@ -609,7 +609,7 @@ items:
     remarks: |-
       Minimum permission level: ReadWriteItem
 
-      Applicable Outlook mode: Compose
+      Applicable Outlook mode: Appointment Organizer
 
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
@@ -656,7 +656,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Organizer
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.AppointmentCompose.removeHandlerAsync
     langs:
@@ -704,7 +704,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Organizer
     name: requiredAttendees
     fullName: outlook.Office.AppointmentCompose.requiredAttendees
     langs:
@@ -750,7 +750,7 @@ items:
     remarks: |-
       Minimum permission level: ReadWriteItem
 
-      Applicable Outlook mode: Compose
+      Applicable Outlook mode: Appointment Organizer
 
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
     name: 'saveAsync(options, callback)'
@@ -802,7 +802,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Organizer
     name: seriesId
     fullName: outlook.Office.AppointmentCompose.seriesId
     langs:
@@ -827,7 +827,7 @@ items:
     remarks: |-
       Minimum permission level: ReadWriteItem
 
-      Applicable Outlook mode: Compose
+      Applicable Outlook mode: Appointment Organizer
 
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
     name: 'setSelectedDataAsync(data, options, callback)'
@@ -886,7 +886,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Organizer
     name: start
     fullName: outlook.Office.AppointmentCompose.start
     langs:
@@ -909,7 +909,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Appointment Organizer
     name: subject
     fullName: outlook.Office.AppointmentCompose.subject
     langs:

@@ -56,7 +56,7 @@ items:
     remarks: |-
       Minimum permission level: ReadWriteItem
 
-      Applicable Outlook mode: Compose
+      Applicable Outlook mode: Message Compose
 
       Errors:
 
@@ -119,7 +119,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Compose
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.MessageCompose.addHandlerAsync
     langs:
@@ -179,7 +179,7 @@ items:
     remarks: |-
       Minimum permission level: ReadWriteItem
 
-      Applicable Outlook mode: Compose
+      Applicable Outlook mode: Message Compose
 
       Errors:
 
@@ -232,7 +232,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose
+      Applicable Outlook mode: Message Compose
     name: bcc
     fullName: outlook.Office.MessageCompose.bcc
     langs:
@@ -251,7 +251,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Compose
     name: body
     fullName: outlook.Office.MessageCompose.body
     langs:
@@ -276,7 +276,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Compose
     name: cc
     fullName: outlook.Office.MessageCompose.cc
     langs:
@@ -307,7 +307,7 @@ items:
     remarks: |-
       Minimum permission level: Restricted
 
-      Applicable Outlook mode: Compose
+      Applicable Outlook mode: Message Compose
     name: close()
     fullName: outlook.Office.MessageCompose.close
     langs:
@@ -327,7 +327,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Compose
     name: dateTimeCreated
     fullName: outlook.Office.MessageCompose.dateTimeCreated
     langs:
@@ -348,7 +348,7 @@ items:
 
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Compose
     name: dateTimeModifed
     fullName: outlook.Office.MessageCompose.dateTimeModifed
     langs:
@@ -375,7 +375,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Compose
     name: from
     fullName: outlook.Office.MessageCompose.from
     langs:
@@ -404,7 +404,7 @@ items:
       Minimum permission level: ReadItem
 
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Compose
     name: 'getInitializationContextAsync(options, callback)'
     fullName: outlook.Office.MessageCompose.getInitializationContextAsync
     langs:
@@ -448,7 +448,7 @@ items:
     remarks: |-
       Minimum permission level: ReadWriteItem
 
-      Applicable Outlook mode: Compose
+      Applicable Outlook mode: Message Compose
     name: 'getSelectedDataAsync(coercionType, callback)'
     fullName: outlook.Office.MessageCompose.getSelectedDataAsync
     langs:
@@ -486,7 +486,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Compose
     name: itemType
     fullName: outlook.Office.MessageCompose.itemType
     langs:
@@ -517,7 +517,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Compose
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: outlook.Office.MessageCompose.loadCustomPropertiesAsync
     langs:
@@ -550,7 +550,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Compose
     name: notificationMessages
     fullName: outlook.Office.MessageCompose.notificationMessages
     langs:
@@ -583,7 +583,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Compose
     name: recurrence
     fullName: outlook.Office.MessageCompose.recurrence
     langs:
@@ -610,7 +610,7 @@ items:
     remarks: |-
       Minimum permission level: ReadWriteItem
 
-      Applicable Outlook mode: Compose
+      Applicable Outlook mode: Message Compose
 
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
@@ -657,7 +657,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Compose
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.MessageCompose.removeHandlerAsync
     langs:
@@ -729,7 +729,7 @@ items:
     remarks: |-
       Minimum permission level: ReadWriteItem
 
-      Applicable Outlook mode: Compose
+      Applicable Outlook mode: Message Compose
 
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
     name: 'saveAsync(options, callback)'
@@ -781,7 +781,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Compose
     name: seriesId
     fullName: outlook.Office.MessageCompose.seriesId
     langs:
@@ -806,7 +806,7 @@ items:
     remarks: |-
       Minimum permission level: ReadWriteItem
 
-      Applicable Outlook mode: Compose
+      Applicable Outlook mode: Message Compose
 
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
     name: 'setSelectedDataAsync(data, options, callback)'
@@ -859,7 +859,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Compose
     name: subject
     fullName: outlook.Office.MessageCompose.subject
     langs:
@@ -884,7 +884,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Compose
     name: to
     fullName: outlook.Office.MessageCompose.to
     langs:

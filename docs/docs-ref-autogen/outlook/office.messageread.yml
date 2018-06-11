@@ -59,7 +59,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Read
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.MessageRead.addHandlerAsync
     langs:
@@ -111,7 +111,7 @@ items:
       Minimum permission level: ReadItem
 
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: attachments
     fullName: outlook.Office.MessageRead.attachments
     langs:
@@ -130,7 +130,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Read
     name: body
     fullName: outlook.Office.MessageRead.body
     langs:
@@ -155,7 +155,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Read
     name: cc
     fullName: outlook.Office.MessageRead.cc
     langs:
@@ -174,7 +174,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: dateTimeCreated
     fullName: outlook.Office.MessageRead.dateTimeCreated
     langs:
@@ -195,7 +195,7 @@ items:
 
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: dateTimeModifed
     fullName: outlook.Office.MessageRead.dateTimeModifed
     langs:
@@ -231,7 +231,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: displayReplyAllForm(formData)
     fullName: outlook.Office.MessageRead.displayReplyAllForm
     langs:
@@ -276,7 +276,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: displayReplyForm(formData)
     fullName: outlook.Office.MessageRead.displayReplyForm
     langs:
@@ -315,7 +315,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: from
     fullName: outlook.Office.MessageRead.from
     langs:
@@ -336,7 +336,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: getEntities()
     fullName: outlook.Office.MessageRead.getEntities
     langs:
@@ -358,7 +358,7 @@ items:
     remarks: |-
       Minimum permission level: Restricted
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: getEntitiesByType(entityType)
     fullName: outlook.Office.MessageRead.getEntitiesByType
     langs:
@@ -405,7 +405,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: getFilteredEntitiesByName(name)
     fullName: outlook.Office.MessageRead.getFilteredEntitiesByName
     langs:
@@ -441,7 +441,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: 'getInitializationContextAsync(options, callback)'
     fullName: outlook.Office.MessageRead.getInitializationContextAsync
     langs:
@@ -493,7 +493,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: getRegExMatches()
     fullName: outlook.Office.MessageRead.getRegExMatches
     langs:
@@ -530,7 +530,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: getRegExMatchesByName(name)
     fullName: outlook.Office.MessageRead.getRegExMatchesByName
     langs:
@@ -560,7 +560,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: getSelectedEntities()
     fullName: outlook.Office.MessageRead.getSelectedEntities
     langs:
@@ -597,7 +597,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: getSelectedRegExMatches()
     fullName: outlook.Office.MessageRead.getSelectedRegExMatches
     langs:
@@ -620,7 +620,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: internetMessageId
     fullName: outlook.Office.MessageRead.internetMessageId
     langs:
@@ -657,7 +657,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: itemClass
     fullName: outlook.Office.MessageRead.itemClass
     langs:
@@ -688,7 +688,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: itemId
     fullName: outlook.Office.MessageRead.itemId
     langs:
@@ -712,7 +712,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Read
     name: itemType
     fullName: outlook.Office.MessageRead.itemType
     langs:
@@ -743,7 +743,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Read
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: outlook.Office.MessageRead.loadCustomPropertiesAsync
     langs:
@@ -781,7 +781,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: normalizedSubject
     fullName: outlook.Office.MessageRead.normalizedSubject
     langs:
@@ -833,7 +833,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Read
     name: recurrence
     fullName: outlook.Office.MessageRead.recurrence
     langs:
@@ -857,7 +857,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Read
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.MessageRead.removeHandlerAsync
     langs:
@@ -910,7 +910,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: sender
     fullName: outlook.Office.MessageRead.sender
     langs:
@@ -945,7 +945,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Read
     name: seriesId
     fullName: outlook.Office.MessageRead.seriesId
     langs:
@@ -972,7 +972,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Read
     name: subject
     fullName: outlook.Office.MessageRead.subject
     langs:
@@ -997,7 +997,7 @@ items:
     remarks: |-
       Minimum permission level: ReadItem
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Read
     name: to
     fullName: outlook.Office.MessageRead.to
     langs:

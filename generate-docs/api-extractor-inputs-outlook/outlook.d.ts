@@ -1638,7 +1638,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         end: Time;
         /**
@@ -1650,7 +1650,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         location: Location;
         /**
@@ -1662,7 +1662,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         optionalAttendees: Recipients;
         /**
@@ -1674,7 +1674,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         requiredAttendees: Recipients;
         /**
@@ -1690,7 +1690,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         start: Time;
 
@@ -1705,7 +1705,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         body: Body;
         /**
@@ -1717,7 +1717,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Organizer
          */
         dateTimeCreated: Date;
         /**
@@ -1731,7 +1731,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Organizer
          */
         dateTimeModifed: Date;
         /**
@@ -1745,7 +1745,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         itemType: Office.MailboxEnums.ItemType;
         /**
@@ -1757,7 +1757,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         notificationMessages: NotificationMessages;
 
@@ -1776,7 +1776,7 @@ export declare namespace Office {
          * 
          * Minimum permission level: ReadItem
          * 
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         recurrence: Recurrence;
 
@@ -1795,7 +1795,7 @@ export declare namespace Office {
          * 
          * Minimum permission level: ReadItem
          * 
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         seriesId: string;
 
@@ -1810,7 +1810,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
@@ -1831,7 +1831,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
@@ -1852,7 +1852,7 @@ export declare namespace Office {
         *
         * Minimum permission level: ReadItem
         *
-        * Applicable Outlook mode: Compose or read
+        * Applicable Outlook mode: Appointment Organizer
         *
         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
         * @param userContext - Optional. Developers can provide any object they wish to access in the callback function. This object can be accessed by the asyncResult.asyncContext property in the callback function.
@@ -1870,7 +1870,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
@@ -1891,7 +1891,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
@@ -1912,7 +1912,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         subject: Subject;
         /**
@@ -1927,7 +1927,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors:
          *
@@ -1957,7 +1957,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors:
          *
@@ -1983,7 +1983,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors:
          *
@@ -2012,7 +2012,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors:
          *
@@ -2042,7 +2042,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors:
          *
@@ -2069,7 +2069,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors:
          *
@@ -2093,7 +2093,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors:
          *
@@ -2119,7 +2119,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors:
          *
@@ -2146,7 +2146,7 @@ export declare namespace Office {
          *
          * Minimum permission level: Restricted
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          */
         close(): void;
         /**
@@ -2162,7 +2162,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Organizer
          *
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -2185,7 +2185,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
@@ -2207,7 +2207,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
          * @param options - An object literal that contains one or more of the following properties.
@@ -2226,7 +2226,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -2247,7 +2247,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -2265,7 +2265,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -2285,7 +2285,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -2315,7 +2315,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -2345,7 +2345,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -2372,7 +2372,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -2401,7 +2401,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -2419,7 +2419,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -2441,7 +2441,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -2459,7 +2459,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -2480,7 +2480,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Appointment Organizer
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -2508,7 +2508,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         end: Date;
         /**
@@ -2522,7 +2522,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         location: string;
         /**
@@ -2536,7 +2536,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         optionalAttendees: EmailAddressDetails[];
         /**
@@ -2548,7 +2548,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          */
         organizer: EmailAddressDetails;
         /**
@@ -2562,7 +2562,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         requiredAttendees: EmailAddressDetails[];
         /**
@@ -2576,7 +2576,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         start: Date;
 
@@ -2591,7 +2591,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         body: Body;
         /**
@@ -2603,7 +2603,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          */
         dateTimeCreated: Date;
         /**
@@ -2617,7 +2617,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          */
         dateTimeModifed: Date;
         /**
@@ -2631,7 +2631,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         itemType: Office.MailboxEnums.ItemType;
         /**
@@ -2643,7 +2643,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         notificationMessages: NotificationMessages;
 
@@ -2662,7 +2662,7 @@ export declare namespace Office {
          * 
          * Minimum permission level: ReadItem
          * 
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         recurrence: Recurrence;
 
@@ -2681,7 +2681,7 @@ export declare namespace Office {
          * 
          * Minimum permission level: ReadItem
          * 
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         seriesId: string;
 
@@ -2696,7 +2696,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
@@ -2717,7 +2717,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
@@ -2738,7 +2738,7 @@ export declare namespace Office {
         *
         * Minimum permission level: ReadItem
         *
-        * Applicable Outlook mode: Compose or read
+        * Applicable Outlook mode: Appointment Attendee
         *
         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
         * @param userContext - Optional. Developers can provide any object they wish to access in the callback function. This object can be accessed by the asyncResult.asyncContext property in the callback function.
@@ -2756,7 +2756,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
@@ -2777,7 +2777,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
@@ -2785,7 +2785,7 @@ export declare namespace Office {
         */
        removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;
 
-               /**
+        /**
          * Gets an array of attachments for the item.
          *
          * [Api set: Mailbox 1.0]
@@ -2796,7 +2796,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          *
          */
         attachments: AttachmentDetails[];
@@ -2818,7 +2818,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          */
         itemClass: string;
         /**
@@ -2834,7 +2834,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          */
         itemId: string;
         /**
@@ -2848,7 +2848,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          */
         normalizedSubject: string;
         /**
@@ -2864,7 +2864,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         subject: string;
         /**
@@ -2883,7 +2883,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *  OR
@@ -2907,7 +2907,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
          * OR
@@ -2925,7 +2925,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          * 
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -2943,7 +2943,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          * 
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
          */
@@ -2959,7 +2959,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          */
         getEntities(): Entities;
         /**
@@ -2986,7 +2986,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: Restricted
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          *
          * @param entityType - One of the EntityType enumeration values.
          */
@@ -3004,7 +3004,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          *
          * @param name - The name of the ItemHasKnownEntity rule element that defines the filter to match.
          * @returns If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the name parameter, the method returns null. If the name parameter does match an ItemHasKnownEntity element in the manifest, but there are no entities in the current item that match, the method return an empty array.
@@ -3028,7 +3028,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          */
         getRegExMatches(): any;
         /**
@@ -3049,7 +3049,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          *
          * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
          */
@@ -3065,7 +3065,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          *
          * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
          */
@@ -3088,7 +3088,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          */
         getSelectedRegExMatches(): any;
     }
@@ -4400,7 +4400,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          */
         bcc: Recipients;
         /**
@@ -4414,7 +4414,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Compose
          */
         cc: Recipients;
         /**
@@ -4430,7 +4430,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Compose
          */
         from: From;
         /**
@@ -4444,7 +4444,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Compose
          */
         to: Recipients;
 
@@ -4459,7 +4459,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Compose
          */
         body: Body;
         /**
@@ -4471,7 +4471,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Compose
          */
         dateTimeCreated: Date;
         /**
@@ -4485,7 +4485,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Compose
          */
         dateTimeModifed: Date;
         /**
@@ -4499,7 +4499,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Compose
          */
         itemType: Office.MailboxEnums.ItemType;
         /**
@@ -4511,7 +4511,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Compose
          */
         notificationMessages: NotificationMessages;
 
@@ -4530,7 +4530,7 @@ export declare namespace Office {
          * 
          * Minimum permission level: ReadItem
          * 
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Compose
          */
         recurrence: Recurrence;
 
@@ -4549,7 +4549,7 @@ export declare namespace Office {
          * 
          * Minimum permission level: ReadItem
          * 
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Compose
          */
         seriesId: string;
 
@@ -4564,7 +4564,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Compose
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
@@ -4585,7 +4585,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Compose
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
@@ -4606,7 +4606,7 @@ export declare namespace Office {
         *
         * Minimum permission level: ReadItem
         *
-        * Applicable Outlook mode: Compose or read
+        * Applicable Outlook mode: Message Compose
         *
         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
         * @param userContext - Optional. Developers can provide any object they wish to access in the callback function. This object can be accessed by the asyncResult.asyncContext property in the callback function.
@@ -4624,7 +4624,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Compose
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
@@ -4645,7 +4645,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Compose
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
@@ -4666,7 +4666,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Compose
          */
         subject: Subject;
         /**
@@ -4681,7 +4681,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors:
          *
@@ -4711,7 +4711,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors:
          *
@@ -4737,7 +4737,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors:
          *
@@ -4766,7 +4766,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors:
          *
@@ -4796,7 +4796,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors:
          *
@@ -4823,7 +4823,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors:
          *
@@ -4847,7 +4847,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors:
          *
@@ -4873,7 +4873,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors:
          *
@@ -4900,7 +4900,7 @@ export declare namespace Office {
          *
          * Minimum permission level: Restricted
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          */
         close(): void;
         /**
@@ -4916,7 +4916,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Compose
          *
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -4939,7 +4939,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
@@ -4961,7 +4961,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
          * @param options - An object literal that contains one or more of the following properties.
@@ -4980,7 +4980,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -5001,7 +5001,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -5019,7 +5019,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -5039,7 +5039,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -5069,7 +5069,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -5099,7 +5099,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -5126,7 +5126,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -5155,7 +5155,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -5173,7 +5173,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -5195,7 +5195,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -5213,7 +5213,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -5234,7 +5234,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadWriteItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
          *
@@ -5260,7 +5260,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Read
          */
         cc: EmailAddressDetails[];
         /**
@@ -5278,7 +5278,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          */
         from: EmailAddressDetails;
         /**
@@ -5290,7 +5290,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          */
         internetMessageId: string;
         /**
@@ -5306,7 +5306,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          */
         sender: EmailAddressDetails;
         /**
@@ -5320,7 +5320,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Read
          */
         to: EmailAddressDetails[];
 
@@ -5335,7 +5335,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Read
          */
         body: Body;
         /**
@@ -5347,7 +5347,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          */
         dateTimeCreated: Date;
         /**
@@ -5361,7 +5361,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          */
         dateTimeModifed: Date;
         /**
@@ -5375,7 +5375,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Read
          */
         itemType: Office.MailboxEnums.ItemType;
         /**
@@ -5406,7 +5406,7 @@ export declare namespace Office {
          * 
          * Minimum permission level: ReadItem
          * 
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Read
          */
         recurrence: Recurrence;
 
@@ -5425,7 +5425,7 @@ export declare namespace Office {
          * 
          * Minimum permission level: ReadItem
          * 
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Read
          */
         seriesId: string;
 
@@ -5440,7 +5440,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Read
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
@@ -5461,7 +5461,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Read
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
@@ -5482,7 +5482,7 @@ export declare namespace Office {
         *
         * Minimum permission level: ReadItem
         *
-        * Applicable Outlook mode: Compose or read
+        * Applicable Outlook mode: Message Read
         *
         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
         * @param userContext - Optional. Developers can provide any object they wish to access in the callback function. This object can be accessed by the asyncResult.asyncContext property in the callback function.
@@ -5500,7 +5500,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Read
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
@@ -5521,7 +5521,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Read
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
@@ -5529,7 +5529,7 @@ export declare namespace Office {
         */
        removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;
 
-               /**
+        /**
          * Gets an array of attachments for the item.
          *
          * [Api set: Mailbox 1.0]
@@ -5540,7 +5540,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          *
          */
         attachments: AttachmentDetails[];
@@ -5562,7 +5562,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          */
         itemClass: string;
         /**
@@ -5578,7 +5578,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          */
         itemId: string;
         /**
@@ -5592,7 +5592,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          */
         normalizedSubject: string;
         /**
@@ -5608,7 +5608,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Read
          */
         subject: string;
         /**
@@ -5627,7 +5627,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *  OR
@@ -5651,7 +5651,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
          * OR
@@ -5669,7 +5669,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          * 
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -5687,7 +5687,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          * 
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in the asyncResult.value property as a string. If there is no initialization context, the asyncResult object will contain an Error object with its code property set to 9020 and its name property set to GenericResponseError.
          */
@@ -5703,7 +5703,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          */
         getEntities(): Entities;
         /**
@@ -5730,7 +5730,7 @@ export declare namespace Office {
          * @remarks
          * Minimum permission level: Restricted
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          *
          * @param entityType - One of the EntityType enumeration values.
          */
@@ -5748,7 +5748,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          *
          * @param name - The name of the ItemHasKnownEntity rule element that defines the filter to match.
          * @returns If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the name parameter, the method returns null. If the name parameter does match an ItemHasKnownEntity element in the manifest, but there are no entities in the current item that match, the method return an empty array.
@@ -5772,7 +5772,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          */
         getRegExMatches(): any;
         /**
@@ -5793,7 +5793,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          *
          * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
          */
@@ -5809,7 +5809,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          *
          * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
          */
@@ -5832,7 +5832,7 @@ export declare namespace Office {
          *
          * Minimum permission level: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          */
         getSelectedRegExMatches(): any;
     }
