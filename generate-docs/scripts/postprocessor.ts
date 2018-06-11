@@ -90,7 +90,7 @@ tryCatch(async () => {
     newToc.items[0].items = [] as any;
 
     // create a root for all the Outlook versions
-    let outlookRoot = {"name": "Outlook", "uid": "OutlookRoot", "items": [] as any};
+    let outlookRoot = {"name": "Outlook", "uid": "", "items": [] as any};
     let rootPushed = false;
 
     // process all packages except 'office' (Shared API)
