@@ -88,7 +88,7 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of *Office.context.mailbox.item*. Refer to the Object Model pages for more information."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -947,7 +947,7 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of *Office.context.mailbox.item*. Refer to the Object Model pages for more information."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -3883,7 +3883,7 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of *Office.context.mailbox.item*. Refer to the Object Model pages for more information."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -4793,7 +4793,7 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of *Office.context.mailbox.item*. Refer to the Object Model pages for more information."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -10825,7 +10825,7 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of *Office.context.mailbox.item*. Refer to the Object Model pages for more information."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -10922,7 +10922,7 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of *Office.context.mailbox.item*. Refer to the Object Model pages for more information."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
