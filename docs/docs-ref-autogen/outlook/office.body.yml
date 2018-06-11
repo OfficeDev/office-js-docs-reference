@@ -38,10 +38,29 @@ items:
 
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
+    remarks: |
       Minimum permission level: ReadItem
 
       Applicable Outlook mode: Compose or read
+
+      #### Examples
+
+      ```javascript
+      // This example gets the body of the message in plain text.
+      Office.context.mailbox.item.body.getAsync(
+          "text",
+          { asyncContext:"This is passed to the callback" },
+          function callback(result) {
+              // Do something with the result
+          });
+
+      //The following is an example of the result parameter passed to the callback function.
+      {
+          "value": "TEXT of whole body (including threads below)",
+          "status": "succeeded",
+          "asyncContext": "This is passed to the callback"
+      }
+      ```
     name: 'getAsync(coercionType, options, callback)'
     fullName: outlook.Office.Body.getAsync
     langs:
@@ -121,9 +140,23 @@ items:
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
+    remarks: >
       Minimum permission level: ReadWriteItem Applicable Outlook mode: Compose Errors: DataExceedsMaximumSize - The data
       parameter is longer than 1,000,000 characters.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // DESCRIPTION EXAMPLE
+
+      Office.context.mailbox.item.body.prependAsync(
+          '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
+          {coercionType: Office.CoercionType.Html},
+          callback);
+      ```
     name: 'prependAsync(data, options, callback)'
     fullName: outlook.Office.Body.prependAsync
     langs:
@@ -171,7 +204,7 @@ items:
 
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
+    remarks: >
       Minimum permission level: ReadWriteItem
 
 
@@ -183,6 +216,36 @@ items:
 
       InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is
       in plain text.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // DESCRIPTION EXAMPLE
+
+      Office.context.mailbox.item.body.setAsync(
+          '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
+          {coercionType: Office.CoercionType.Html},
+          callback);
+      Office.context.mailbox.item.body.setAsync(
+          "<b>(replaces all body, including threads you are replying to that may be on the bottom)</b>",
+          { coercionType:"html", asyncContext:"This is passed to the callback" },
+          function callback(result) {
+              // Process the result
+      });
+
+
+      // The following is an example of the result parameter passed to the callback function.
+
+      {
+          "value":null,
+          "status":"succeeded",
+          "asyncContext":"This is passed to the callback"
+      }
+
+      ```
     name: 'setAsync(data, options, callback)'
     fullName: outlook.Office.Body.setAsync
     langs:
@@ -230,7 +293,7 @@ items:
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
+    remarks: >
       Minimum permission level: ReadWriteItem
 
 
@@ -242,6 +305,20 @@ items:
 
       InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is
       in plain text.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // DESCRIPTION EXAMPLE
+
+      Office.context.mailbox.item.body.setSelectedDataAsync(
+          '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
+          {coercionType: Office.CoercionType.Html},
+          callback);
+      ```
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: outlook.Office.Body.setSelectedDataAsync
     langs:
