@@ -90,7 +90,7 @@ tryCatch(async () => {
     newToc.items[0].items = [] as any;
 
     // create a root for all the Outlook versions
-    let outlookRoot = {"name": "Outlook", "uid": "OutlookRoot", "items": [] as any};
+    let outlookRoot = {"name": "Outlook", "uid": "", "items": [] as any};
     let rootPushed = false;
     // create a filter list for Outlook types we shouldn't expose
     let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'CoercionTypeOptions', 'Diagnostics', 'ItemCompose', 'ItemRead', 'Message', 'ReplyFormAttachment', 'ReplyFormData'];

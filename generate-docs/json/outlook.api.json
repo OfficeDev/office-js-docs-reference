@@ -3810,13 +3810,21 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[Api set: Mailbox 1.0]"
-                }
-              ],
-              "remarks": [
+                  "text": "Note: The identifier returned by the seriesId property is the same as the Exchange Web Services item identifier. The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Use the Outlook REST APIs from an Outlook add-in"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/use-rest-api"
+                },
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -4162,6 +4170,27 @@
                 }
               ],
               "remarks": [
+                {
+                  "kind": "text",
+                  "text": "More information on "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "actionable messages"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
+                },
+                {
+                  "kind": "paragraph"
+                },
                 {
                   "kind": "text",
                   "text": "Minimum permission level: ReadItem"
@@ -4512,24 +4541,25 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the Exchange attachment ID of the attachment."
-                }
-              ],
-              "remarks": [],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
-            "isInline": {
-              "kind": "property",
-              "signature": "isInline: boolean;",
-              "isOptional": false,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "boolean",
-              "deprecatedMessage": [],
-              "summary": [
+                  "text": "Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Blocked attachments in Outlook"
+                    }
+                  ],
+                  "targetUrl": "https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
+                },
+                {
+                  "kind": "paragraph"
+                },
                 {
                   "kind": "text",
                   "text": "Gets a value that indicates whether the attachment should be displayed in the body of the item."
@@ -5027,14 +5057,21 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Replaces the selection in the body with the specified text."
+                  "text": "Gets initialization data passed when the add-in is "
                 },
                 {
-                  "kind": "paragraph"
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "activated by an actionable message"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message"
                 },
                 {
                   "kind": "text",
-                  "text": "The setSelectedDataAsync method inserts the specified string at the cursor location in the body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content."
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -6573,7 +6610,35 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
+                  "text": "Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs (such as the "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Outlook Mail API"
+                    }
+                  ],
+                  "targetUrl": "https://msdn.microsoft.com/office/office365/APi/mail-rest-operations"
+                },
+                {
+                  "kind": "text",
+                  "text": " or the "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Microsoft Graph"
+                    }
+                  ],
+                  "targetUrl": "http://graph.microsoft.io/"
+                },
+                {
+                  "kind": "text",
+                  "text": ". The convertToRestId method converts an EWS-formatted ID into the proper format for REST."
                 },
                 {
                   "kind": "paragraph"
@@ -6967,7 +7032,27 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests."
+                  "text": "[Api set: Mailbox 1.0]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "get attachments from the selected item"
+                    }
+                  ],
+                  "targetUrl": "https://msdn.microsoft.com/library/office/dn148008.aspx"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -7271,7 +7356,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": "The getUserIdentityTokenAsync method returns a token that you can use to identify and "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "authenticate the add-in and user with a third-party system"
+                    }
+                  ],
+                  "targetUrl": "https://msdn.microsoft.com/library/office/fp179828.aspx"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 },
                 {
                   "kind": "paragraph"
@@ -7532,7 +7631,28 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": "The restUrl value can be used to make "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "REST API"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/rest/"
+                },
+                {
+                  "kind": "text",
+                  "text": " calls to the user's mailbox."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level: ReadItem"
                 },
                 {
                   "kind": "paragraph"
