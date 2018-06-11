@@ -78,7 +78,7 @@ items:
           - EmailAddressDetails
   - uid: outlook.Office.MessageRead.internetMessageId
     summary: |-
-      Gets the Internet message identifier for an email message. Read mode only.
+      Gets the Internet message identifier for an email message.
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: |-
@@ -97,7 +97,7 @@ items:
           - string
   - uid: outlook.Office.MessageRead.sender
     summary: >-
-      Gets the email address of the sender of an email message. Read mode only.
+      Gets the email address of the sender of an email message.
 
 
       The from and sender properties represent the same person unless the message is sent by a delegate. In that case,

@@ -4811,7 +4811,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets an array of attachments for the item. Read mode only."
+                  "text": "Gets an array of attachments for the item."
                 },
                 {
                   "kind": "paragraph"
@@ -4876,7 +4876,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR A"
+                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB OR An"
                     },
                     {
                       "kind": "api-link",
@@ -4979,7 +4979,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. OR A"
+                      "text": "A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB. OR An"
                     },
                     {
                       "kind": "api-link",
@@ -5636,7 +5636,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the Exchange Web Services item class of the selected item. Read mode only."
+                  "text": "Gets the Exchange Web Services item class of the selected item."
                 },
                 {
                   "kind": "paragraph"
@@ -5696,7 +5696,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the Exchange Web Services item identifier for the current item. Read mode only."
+                  "text": "Gets the Exchange Web Services item identifier for the current item."
                 },
                 {
                   "kind": "paragraph"
@@ -5749,7 +5749,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the subject of an item, with all prefixes removed (including RE: and FWD:). Read mode only."
+                  "text": "Gets the subject of an item, with all prefixes removed (including RE: and FWD:)."
                 },
                 {
                   "kind": "paragraph"
@@ -10940,7 +10940,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message. Compose mode only."
+                  "text": "Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message."
                 },
                 {
                   "kind": "paragraph"
@@ -11293,7 +11293,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the Internet message identifier for an email message. Read mode only."
+                  "text": "Gets the Internet message identifier for an email message."
                 },
                 {
                   "kind": "paragraph"
@@ -11332,7 +11332,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the email address of the sender of an email message. Read mode only."
+                  "text": "Gets the email address of the sender of an email message."
                 },
                 {
                   "kind": "paragraph"
