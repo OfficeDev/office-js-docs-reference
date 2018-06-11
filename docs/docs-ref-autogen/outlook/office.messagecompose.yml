@@ -2,11 +2,11 @@
 items:
   - uid: outlook.Office.MessageCompose
     summary: >-
-      The compose mode of [Office.Message](xref:outlook.Office.Message)<!-- -->.
+      The message compose mode of [Office.context.mailbox.item](xref:outlook.Office.Item)<!-- -->.
 
 
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+      this as a mode of \*\*Office.context.mailbox.item\*\*. Refer to the Object Model pages for more information.
     name: Office.MessageCompose
     fullName: outlook.Office.MessageCompose
     langs:
@@ -47,11 +47,8 @@ items:
       the mode of the current item.
 
 
-      \*Compose mode\*
-
-
-      The cc property returns a Recipients object that provides methods to get or update the recipients on the Cc line
-      of the message.
+      The cc property returns a [Office.Recipients](xref:outlook.Office.Recipients) object that provides methods to get
+      or update the recipients on the Cc line of the message.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]

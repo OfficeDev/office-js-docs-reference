@@ -53,7 +53,7 @@
           "isBeta": false,
           "isSealed": false
         },
-        "AppointmentAttendee": {
+        "AppointmentCompose": {
           "kind": "interface",
           "extends": "Appointment",
           "implements": "",
@@ -62,21 +62,21 @@
           "summary": [
             {
               "kind": "text",
-              "text": "The read mode of "
+              "text": "The appointment organizer mode of "
             },
             {
               "kind": "api-link",
               "elements": [
                 {
                   "kind": "text",
-                  "text": "Office.Appointment"
+                  "text": "Office.context.mailbox.item"
                 }
               ],
               "target": {
                 "scopeName": "",
                 "packageName": "outlook",
                 "exportName": "Office",
-                "memberName": "Appointment"
+                "memberName": "Item"
               }
             },
             {
@@ -88,7 +88,7 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -97,30 +97,42 @@
           "members": {
             "end": {
               "kind": "property",
-              "signature": "end: Date;",
+              "signature": "end: Time;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Date",
+              "type": "Time",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that the appointment is to end."
+                  "text": "Gets or sets the date and time that the appointment is to end."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time."
+                  "text": "The end property is an "
                 },
                 {
-                  "kind": "paragraph"
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.Time"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "Time"
+                  }
                 },
                 {
                   "kind": "text",
-                  "text": "The end property returns a Date object."
+                  "text": " object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time."
                 },
                 {
                   "kind": "paragraph"
@@ -157,23 +169,35 @@
             },
             "location": {
               "kind": "property",
-              "signature": "location: string;",
+              "signature": "location: Location;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "string",
+              "type": "Location",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the location of an appointment."
+                  "text": "Gets or sets the "
                 },
                 {
-                  "kind": "paragraph"
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.Location"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "Location"
+                  }
                 },
                 {
                   "kind": "text",
-                  "text": "The location property returns a string that contains the location of the appointment."
+                  "text": " of an appointment. The location property returns a Location object that provides methods that are used to get and set the location of the appointment."
                 },
                 {
                   "kind": "paragraph"
@@ -203,23 +227,35 @@
             },
             "optionalAttendees": {
               "kind": "property",
-              "signature": "optionalAttendees: EmailAddressDetails[];",
+              "signature": "optionalAttendees: Recipients;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "EmailAddressDetails[]",
+              "type": "Recipients",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item."
+                  "text": "Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item. The optionalAttendees property returns an "
                 },
                 {
-                  "kind": "paragraph"
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.Recipients"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "Recipients"
+                  }
                 },
                 {
                   "kind": "text",
-                  "text": "The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional attendee to the meeting."
+                  "text": " object that provides methods to get or update the optional attendees for a meeting."
                 },
                 {
                   "kind": "paragraph"
@@ -247,64 +283,37 @@
               "isVirtual": false,
               "isOverride": false
             },
-            "organizer": {
-              "kind": "property",
-              "signature": "organizer: EmailAddressDetails;",
-              "isOptional": false,
-              "isReadOnly": false,
-              "isStatic": false,
-              "type": "EmailAddressDetails",
-              "deprecatedMessage": [],
-              "summary": [
-                {
-                  "kind": "text",
-                  "text": "Gets the email address of the meeting organizer for a specified meeting. Read mode only."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "[Api set: Mailbox 1.0]"
-                }
-              ],
-              "remarks": [
-                {
-                  "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode: Read"
-                }
-              ],
-              "isBeta": false,
-              "isSealed": false,
-              "isVirtual": false,
-              "isOverride": false
-            },
             "requiredAttendees": {
               "kind": "property",
-              "signature": "requiredAttendees: EmailAddressDetails[];",
+              "signature": "requiredAttendees: Recipients;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "EmailAddressDetails[]",
+              "type": "Recipients",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item."
+                  "text": "Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item. The requiredAttendees property returns an "
                 },
                 {
-                  "kind": "paragraph"
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.Recipients"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "Recipients"
+                  }
                 },
                 {
                   "kind": "text",
-                  "text": "The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required attendee to the meeting."
+                  "text": " object that provides methods to get or update the required attendees for a meeting."
                 },
                 {
                   "kind": "paragraph"
@@ -334,30 +343,49 @@
             },
             "start": {
               "kind": "property",
-              "signature": "start: Date;",
+              "signature": "start: Time;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Date",
+              "type": "Time",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the date and time that the appointment is to begin."
+                  "text": "Gets or sets the date and time that the appointment is to begin."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "The start property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time."
+                  "text": "The start property is an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.Time"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "Time"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "The start property returns a Date object."
+                  "text": "When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server."
                 },
                 {
                   "kind": "paragraph"
@@ -884,7 +912,7 @@
             }
           }
         },
-        "AppointmentOrganizer": {
+        "AppointmentRead": {
           "kind": "interface",
           "extends": "Appointment",
           "implements": "",
@@ -893,21 +921,21 @@
           "summary": [
             {
               "kind": "text",
-              "text": "The compose mode of "
+              "text": "The appointment attendee mode of "
             },
             {
               "kind": "api-link",
               "elements": [
                 {
                   "kind": "text",
-                  "text": "Office.Appointment"
+                  "text": "Office.context.mailbox.item"
                 }
               ],
               "target": {
                 "scopeName": "",
                 "packageName": "outlook",
                 "exportName": "Office",
-                "memberName": "Appointment"
+                "memberName": "Item"
               }
             },
             {
@@ -919,7 +947,7 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -928,37 +956,23 @@
           "members": {
             "end": {
               "kind": "property",
-              "signature": "end: Time;",
+              "signature": "end: Date;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Time",
+              "type": "Date",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the date and time that the appointment is to end."
+                  "text": "Gets the date and time that the appointment is to end."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The end property returns a Time object."
+                  "text": "The end property is a Date object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time."
                 },
                 {
                   "kind": "paragraph"
@@ -995,30 +1009,23 @@
             },
             "location": {
               "kind": "property",
-              "signature": "location: Location;",
+              "signature": "location: string;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Location",
+              "type": "string",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the location of an appointment."
+                  "text": "Gets the location of an appointment."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The location property returns a Location object that provides methods that are used to get and set the location of the appointment."
+                  "text": "The location property returns a string that contains the location of the appointment."
                 },
                 {
                   "kind": "paragraph"
@@ -1048,11 +1055,11 @@
             },
             "optionalAttendees": {
               "kind": "property",
-              "signature": "optionalAttendees: Recipients;",
+              "signature": "optionalAttendees: EmailAddressDetails[];",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Recipients",
+              "type": "EmailAddressDetails[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -1064,14 +1071,26 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Compose mode*"
+                  "text": "The optionalAttendees property returns an array that contains an "
                 },
                 {
-                  "kind": "paragraph"
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.EmailAddressDetails"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "EmailAddressDetails"
+                  }
                 },
                 {
                   "kind": "text",
-                  "text": "The optionalAttendees property returns a Recipients object that provides methods to get or update the optional attendees for a meeting."
+                  "text": " object for each optional attendee to the meeting."
                 },
                 {
                   "kind": "paragraph"
@@ -1099,13 +1118,52 @@
               "isVirtual": false,
               "isOverride": false
             },
-            "requiredAttendees": {
+            "organizer": {
               "kind": "property",
-              "signature": "requiredAttendees: Recipients;",
+              "signature": "organizer: EmailAddressDetails;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Recipients",
+              "type": "EmailAddressDetails",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the email address of the meeting organizer for a specified meeting. Read mode only."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox 1.0]"
+                }
+              ],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level: ReadItem"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode: Read"
+                }
+              ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "requiredAttendees": {
+              "kind": "property",
+              "signature": "requiredAttendees: EmailAddressDetails[];",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "EmailAddressDetails[]",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -1117,14 +1175,26 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Compose mode*"
+                  "text": "The requiredAttendees property returns an array that contains an "
                 },
                 {
-                  "kind": "paragraph"
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.EmailAddressDetails"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "EmailAddressDetails"
+                  }
                 },
                 {
                   "kind": "text",
-                  "text": "The requiredAttendees property returns a Recipients object that provides methods to get or update the required attendees for a meeting."
+                  "text": " object for each required attendee to the meeting."
                 },
                 {
                   "kind": "paragraph"
@@ -1154,44 +1224,23 @@
             },
             "start": {
               "kind": "property",
-              "signature": "start: Time;",
+              "signature": "start: Date;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Time",
+              "type": "Date",
               "deprecatedMessage": [],
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets or sets the date and time that the appointment is to begin."
+                  "text": "Gets the date and time that the appointment is to begin."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "The start property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "*Compose mode*"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "The start property returns a Time object."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server."
+                  "text": "The start property is a Date object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time."
                 },
                 {
                   "kind": "paragraph"
@@ -3148,7 +3197,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "The item namespace is used to access the currently selected message, meeting request, or appointment. You can determine the type of the item by using the itemType property."
+              "text": "The item namespace is used to access the currently selected message, meeting request, or appointment. You can determine the type of the item by using the `itemType` property."
             },
             {
               "kind": "paragraph"
@@ -3815,7 +3864,7 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": "Office.Item"
+                  "text": "Office.context.mailbox.item"
                 }
               ],
               "target": {
@@ -3834,7 +3883,7 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -4725,14 +4774,14 @@
               "elements": [
                 {
                   "kind": "text",
-                  "text": "Office.Appointment"
+                  "text": "Office.context.mailbox.item"
                 }
               ],
               "target": {
                 "scopeName": "",
                 "packageName": "outlook",
                 "exportName": "Office",
-                "memberName": "Appointment"
+                "memberName": "Item"
               }
             },
             {
@@ -4744,7 +4793,7 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -7410,11 +7459,11 @@
             },
             "item": {
               "kind": "property",
-              "signature": "item: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentAttendee & AppointmentOrganizer;",
+              "signature": "item: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose;",
               "isOptional": false,
               "isReadOnly": false,
               "isStatic": false,
-              "type": "Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentAttendee & AppointmentOrganizer",
+              "type": "Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose",
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -10847,21 +10896,21 @@
           "summary": [
             {
               "kind": "text",
-              "text": "The compose mode of "
+              "text": "The message compose mode of "
             },
             {
               "kind": "api-link",
               "elements": [
                 {
                   "kind": "text",
-                  "text": "Office.Message"
+                  "text": "Office.context.mailbox.item"
                 }
               ],
               "target": {
                 "scopeName": "",
                 "packageName": "outlook",
                 "exportName": "Office",
-                "memberName": "Message"
+                "memberName": "Item"
               }
             },
             {
@@ -10873,7 +10922,7 @@
             },
             {
               "kind": "text",
-              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information."
+              "text": "Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of **Office.context.mailbox.item**. Refer to the Object Model pages for more information."
             }
           ],
           "remarks": [],
@@ -10937,14 +10986,26 @@
                 },
                 {
                   "kind": "text",
-                  "text": "*Compose mode*"
+                  "text": "The cc property returns a "
                 },
                 {
-                  "kind": "paragraph"
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.Recipients"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "outlook",
+                    "exportName": "Office",
+                    "memberName": "Recipients"
+                  }
                 },
                 {
                   "kind": "text",
-                  "text": "The cc property returns a Recipients object that provides methods to get or update the recipients on the Cc line of the message."
+                  "text": " object that provides methods to get or update the recipients on the Cc line of the message."
                 },
                 {
                   "kind": "paragraph"
@@ -11082,21 +11143,21 @@
           "summary": [
             {
               "kind": "text",
-              "text": "The read mode of "
+              "text": "The message read mode of "
             },
             {
               "kind": "api-link",
               "elements": [
                 {
                   "kind": "text",
-                  "text": "Office.Message"
+                  "text": "Office.context.mailbox.item"
                 }
               ],
               "target": {
                 "scopeName": "",
                 "packageName": "outlook",
                 "exportName": "Office",
-                "memberName": "Message"
+                "memberName": "Item"
               }
             },
             {

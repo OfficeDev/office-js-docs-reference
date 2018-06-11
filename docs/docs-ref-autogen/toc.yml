@@ -557,10 +557,10 @@ items:
           - name: Outlook - Preview
             uid: outlook
             items:
-              - name: AppointmentAttendee
-                uid: outlook.Office.AppointmentAttendee
-              - name: AppointmentOrganizer
-                uid: outlook.Office.AppointmentOrganizer
+              - name: AppointmentCompose
+                uid: outlook.Office.AppointmentCompose
+              - name: AppointmentRead
+                uid: outlook.Office.AppointmentRead
               - name: AttachmentDetails
                 uid: outlook.Office.AttachmentDetails
               - name: Body

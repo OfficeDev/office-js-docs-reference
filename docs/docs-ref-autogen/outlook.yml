@@ -8,9 +8,9 @@ items:
     type: package
     children:
       - outlook.Office.Appointment
-      - outlook.Office.AppointmentAttendee
+      - outlook.Office.AppointmentCompose
       - outlook.Office.AppointmentForm
-      - outlook.Office.AppointmentOrganizer
+      - outlook.Office.AppointmentRead
       - outlook.Office.AttachmentDetails
       - outlook.Office.Body
       - outlook.Office.CoercionTypeOptions
@@ -61,12 +61,12 @@ items:
 references:
   - uid: outlook.Office.Appointment
     name: Office.Appointment
-  - uid: outlook.Office.AppointmentAttendee
-    name: Office.AppointmentAttendee
+  - uid: outlook.Office.AppointmentCompose
+    name: Office.AppointmentCompose
   - uid: outlook.Office.AppointmentForm
     name: Office.AppointmentForm
-  - uid: outlook.Office.AppointmentOrganizer
-    name: Office.AppointmentOrganizer
+  - uid: outlook.Office.AppointmentRead
+    name: Office.AppointmentRead
   - uid: outlook.Office.AttachmentDetails
     name: Office.AttachmentDetails
   - uid: outlook.Office.Body

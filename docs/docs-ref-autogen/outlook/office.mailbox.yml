@@ -618,10 +618,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'item: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentAttendee & AppointmentOrganizer;'
+      content: 'item: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose;'
       return:
         type:
-          - Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentAttendee & AppointmentOrganizer
+          - Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose
   - uid: outlook.Office.Mailbox.makeEwsRequestAsync
     summary: >-
       Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the

@@ -1,14 +1,14 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.AppointmentOrganizer
+  - uid: outlook.Office.AppointmentCompose
     summary: >-
-      The compose mode of [Office.Appointment](xref:outlook.Office.Appointment)<!-- -->.
+      The appointment organizer mode of [Office.context.mailbox.item](xref:outlook.Office.Item)<!-- -->.
 
 
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
-    name: Office.AppointmentOrganizer
-    fullName: outlook.Office.AppointmentOrganizer
+      this as a mode of \*\*Office.context.mailbox.item\*\*. Refer to the Object Model pages for more information.
+    name: Office.AppointmentCompose
+    fullName: outlook.Office.AppointmentCompose
     langs:
       - typeScript
     type: interface
@@ -16,24 +16,19 @@ items:
       - Appointment
     package: outlook
     children:
-      - outlook.Office.AppointmentOrganizer.end
-      - outlook.Office.AppointmentOrganizer.location
-      - outlook.Office.AppointmentOrganizer.optionalAttendees
-      - outlook.Office.AppointmentOrganizer.requiredAttendees
-      - outlook.Office.AppointmentOrganizer.start
-  - uid: outlook.Office.AppointmentOrganizer.end
+      - outlook.Office.AppointmentCompose.end
+      - outlook.Office.AppointmentCompose.location
+      - outlook.Office.AppointmentCompose.optionalAttendees
+      - outlook.Office.AppointmentCompose.requiredAttendees
+      - outlook.Office.AppointmentCompose.start
+  - uid: outlook.Office.AppointmentCompose.end
     summary: >-
       Gets or sets the date and time that the appointment is to end.
 
 
-      The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the
-      convertToLocalClientTime method to convert the end property value to the client's local date and time.
-
-
-      \*Compose mode\*
-
-
-      The end property returns a Time object.
+      The end property is an [Office.Time](xref:outlook.Office.Time) object expressed as a Coordinated Universal Time
+      (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to
+      the client's local date and time.
 
 
       When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to
@@ -46,7 +41,7 @@ items:
 
       Applicable Outlook mode: Compose or read
     name: end
-    fullName: outlook.Office.AppointmentOrganizer.end
+    fullName: outlook.Office.AppointmentCompose.end
     langs:
       - typeScript
     type: property
@@ -55,16 +50,10 @@ items:
       return:
         type:
           - Time
-  - uid: outlook.Office.AppointmentOrganizer.location
+  - uid: outlook.Office.AppointmentCompose.location
     summary: >-
-      Gets or sets the location of an appointment.
-
-
-      \*Compose mode\*
-
-
-      The location property returns a Location object that provides methods that are used to get and set the location of
-      the appointment.
+      Gets or sets the [Office.Location](xref:outlook.Office.Location) of an appointment. The location property returns
+      a Location object that provides methods that are used to get and set the location of the appointment.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -73,7 +62,7 @@ items:
 
       Applicable Outlook mode: Compose or read
     name: location
-    fullName: outlook.Office.AppointmentOrganizer.location
+    fullName: outlook.Office.AppointmentCompose.location
     langs:
       - typeScript
     type: property
@@ -82,17 +71,11 @@ items:
       return:
         type:
           - Location
-  - uid: outlook.Office.AppointmentOrganizer.optionalAttendees
+  - uid: outlook.Office.AppointmentCompose.optionalAttendees
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
-      of the current item.
-
-
-      \*Compose mode\*
-
-
-      The optionalAttendees property returns a Recipients object that provides methods to get or update the optional
-      attendees for a meeting.
+      of the current item. The optionalAttendees property returns an [Office.Recipients](xref:outlook.Office.Recipients)
+      object that provides methods to get or update the optional attendees for a meeting.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -101,7 +84,7 @@ items:
 
       Applicable Outlook mode: Compose or read
     name: optionalAttendees
-    fullName: outlook.Office.AppointmentOrganizer.optionalAttendees
+    fullName: outlook.Office.AppointmentCompose.optionalAttendees
     langs:
       - typeScript
     type: property
@@ -110,17 +93,11 @@ items:
       return:
         type:
           - Recipients
-  - uid: outlook.Office.AppointmentOrganizer.requiredAttendees
+  - uid: outlook.Office.AppointmentCompose.requiredAttendees
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depends on the mode
-      of the current item.
-
-
-      \*Compose mode\*
-
-
-      The requiredAttendees property returns a Recipients object that provides methods to get or update the required
-      attendees for a meeting.
+      of the current item. The requiredAttendees property returns an [Office.Recipients](xref:outlook.Office.Recipients)
+      object that provides methods to get or update the required attendees for a meeting.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -129,7 +106,7 @@ items:
 
       Applicable Outlook mode: Compose or read
     name: requiredAttendees
-    fullName: outlook.Office.AppointmentOrganizer.requiredAttendees
+    fullName: outlook.Office.AppointmentCompose.requiredAttendees
     langs:
       - typeScript
     type: property
@@ -138,19 +115,14 @@ items:
       return:
         type:
           - Recipients
-  - uid: outlook.Office.AppointmentOrganizer.start
+  - uid: outlook.Office.AppointmentCompose.start
     summary: >-
       Gets or sets the date and time that the appointment is to begin.
 
 
-      The start property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the
-      convertToLocalClientTime method to convert the value to the client's local date and time.
-
-
-      \*Compose mode\*
-
-
-      The start property returns a Time object.
+      The start property is an [Office.Time](xref:outlook.Office.Time) object expressed as a Coordinated Universal Time
+      (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's
+      local date and time.
 
 
       When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to
@@ -163,7 +135,7 @@ items:
 
       Applicable Outlook mode: Compose or read
     name: start
-    fullName: outlook.Office.AppointmentOrganizer.start
+    fullName: outlook.Office.AppointmentCompose.start
     langs:
       - typeScript
     type: property
