@@ -4990,14 +4990,17 @@ Office.Body.getAsync:
     }
 Office.Body.prependAsync:
   - |-
-    // DESCRIPTION EXAMPLE
+    // When including links in HTML markup, you can disable online link preview
+    // by setting the id attribute on the anchor (<a>) to "LPNoLP".
     Office.context.mailbox.item.body.prependAsync(
         '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
         {coercionType: Office.CoercionType.Html},
         callback);
 Office.Body.setAsync:
   - >-
-    // DESCRIPTION EXAMPLE
+    // When including links in HTML markup, you can disable online link preview
+
+    // by setting the id attribute on the anchor (<a>) to "LPNoLP".
 
     Office.context.mailbox.item.body.setAsync(
         '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
@@ -5021,7 +5024,8 @@ Office.Body.setAsync:
     }
 Office.Body.setSelectedDataAsync:
   - |-
-    // DESCRIPTION EXAMPLE
+    // When including links in HTML markup, you can disable online link preview
+    // by setting the id attribute on the anchor (<a>) to "LPNoLP".
     Office.context.mailbox.item.body.setSelectedDataAsync(
         '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
         {coercionType: Office.CoercionType.Html},
@@ -5111,9 +5115,10 @@ Office.CustomProperties.saveAsync:
         document.getElementById('message').innerText += message;
     }
 Office.Event:
-  - |-
-    // DESCRIPTION EXAMPLE
-    // MANIFEST EXAMPLE
+  - >-
+    // In this example, consider a button defined in an add-in manifest as
+    follows:
+
     <Control xsi:type="Button" id="eventTestButton">
         <Label resid="eventButtonLabel" />
         <Tooltip resid="eventButtonTooltip" />
@@ -5130,9 +5135,13 @@ Office.Event:
             <FunctionName>testEventObject</FunctionName>
         </Action>
     </Control>
+
     // The button has an id attribute set to eventTestButton, and will invoke
+
     // the testEventObject function defined in the add-in.
+
     // That function looks like this:
+
     function testEventObject(event) {
         // The event object implements the Event interface
 
@@ -5336,7 +5345,6 @@ Office.Recurrence.setAsync:
     2, 2017 at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
 Office.RoamingSettings:
   - |-
-    // DESCRIPTION EXAMPLE
     // Get the current value of the 'myKey' setting
     var value = Office.context.roamingSettings.get('myKey');
     // Update the value of the 'myKey' setting
