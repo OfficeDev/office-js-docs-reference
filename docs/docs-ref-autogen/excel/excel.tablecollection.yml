@@ -286,6 +286,7 @@ items:
       ```
 
       ```javascript
+      // Get the number of tables
       Excel.run(function (ctx) { 
           var tables = ctx.workbook.tables;
           tables.load('count');

@@ -147,6 +147,7 @@ items:
       #### Examples
 
       ```javascript
+      // Get the text of Chart Title from Chart1.
       Excel.run(function (ctx) { 
           var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           
@@ -164,6 +165,7 @@ items:
       ```
 
       ```javascript
+      // Set the text of Chart Title to "My Chart" and Make it show on top of the chart without overlaying.
       Excel.run(function (ctx) { 
           var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           

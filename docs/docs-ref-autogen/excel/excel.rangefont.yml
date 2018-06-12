@@ -113,6 +113,7 @@ items:
       ```
 
       ```javascript
+      // The example below sets font name. 
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "F:G";

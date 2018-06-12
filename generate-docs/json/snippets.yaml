@@ -84,6 +84,9 @@ Excel.Binding.load:
     });
 Excel.BindingCollection.getItem:
   - >-
+    // Create a table binding to monitor data changes in the table. When data is
+    changed, the background color of the table will be changed to orange.
+
     function addEventHandler() {
         //Create Table1
     Excel.run(function (ctx) { 
@@ -172,6 +175,7 @@ Excel.BindingCollection.load:
         }
     });
   - |-
+    // Get the number of bindings
     Excel.run(function (ctx) { 
         var bindings = ctx.workbook.bindings;
         bindings.load('count');
@@ -210,6 +214,7 @@ Excel.Chart.getImage:
     });
 Excel.Chart.setData:
   - |-
+    // Set the sourceData to be "A1:B4" and seriesBy to be "Columns"
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         var sourceData = "A1:B4";
@@ -241,6 +246,7 @@ Excel.Chart.setPosition:
     });
 Excel.Chart.load:
   - |-
+    // Get a chart named "Chart1"
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.load('name');
@@ -253,7 +259,10 @@ Excel.Chart.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
+  - >-
+    // Rename the chart to new name, resize the chart to 200 points in both
+    height and weight. Move Chart1 to 100 points to the top and left. 
+
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.name="New Name";
@@ -285,6 +294,7 @@ Excel.Chart.load:
     });
 Excel.ChartAxis.load:
   - |-
+    // Get the maximum of Chart Axis from Chart1
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         var axis = chart.axes.valueAxis;
@@ -299,6 +309,7 @@ Excel.ChartAxis.load:
         }
     });
   - |-
+    // Set the maximum, minimum, majorunit, minorunit of valueaxis. 
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.axes.valueAxis.maximum = 5;
@@ -314,8 +325,41 @@ Excel.ChartAxis.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartCollection.add:
+Excel.ChartAxisTitle.load:
   - |-
+    // Get the text of Chart Axis Title from the value axis of Chart1.
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
+        var title = chart.axes.valueAxis.title;
+        title.load('text');
+        return ctx.sync().then(function() {
+                console.log(title.text);
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+  - |-
+    // Add "Values" as the title for the value Axis 
+    Excel.run(function (ctx) { 
+        var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
+        chart.axes.valueAxis.title.text = "Values";
+        return ctx.sync().then(function() {
+                console.log("Axis Title Added ");
+        });
+    }).catch(function(error) {
+            console.log("Error: " + error);
+            if (error instanceof OfficeExtension.Error) {
+                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+            }
+    });
+Excel.ChartCollection.add:
+  - >-
+    // Add a chart of chartType "ColumnClustered" on worksheet "Charts" with
+    sourceData from Range "A1:B4" and seriresBy is set to be "auto".
+
     Excel.run(function (ctx) { 
         var rangeSelection = "A1:B4";
         var range = ctx.workbook.worksheets.getItem(sheetName)
@@ -402,6 +446,7 @@ Excel.ChartCollection.load:
         }
     });
   - |-
+    // Get the number of charts
     Excel.run(function (ctx) { 
         var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
         charts.load('count');
@@ -415,7 +460,10 @@ Excel.ChartCollection.load:
         }
     });
 Excel.ChartDataLabels.load:
-  - |-
+  - >-
+    // Make Series Name shown in Datalabels and set the position of datalabels
+    to be "top";
+
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.datalabels.showValue = true;
@@ -431,7 +479,10 @@ Excel.ChartDataLabels.load:
         }
     });
 Excel.ChartFill.clear:
-  - |-
+  - >-
+    // Clear the line format of the major Gridlines on value axis of the Chart
+    named "Chart1"
+
     Excel.run(function (ctx) { 
         var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;    
         gridlines.format.line.clear();
@@ -462,6 +513,7 @@ Excel.ChartFill.setSolidColor:
     });
 Excel.ChartFont.load:
   - |-
+    // Set chart title to be Calbri, size 10, bold and in red. 
     Excel.run(function (ctx) { 
         var title = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;
         title.format.font.name = "Calibri";
@@ -477,24 +529,10 @@ Excel.ChartFont.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    Excel.run(function (ctx) { 
-        var title = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;
-        title.format.font.name = "Calibri";
-        title.format.font.size = 12;
-        title.format.font.color = "#FF0000";
-        title.format.font.italic =  false;
-        title.format.font.bold = true;
-        title.format.font.underline = "None";
-        return ctx.sync();
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
+  - ''
 Excel.ChartGridlines.load:
   - |-
+    // Get the visible of Major Gridlines on value axis of Chart1
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         var majGridlines = chart.axes.valueaxis.majorGridlines;
@@ -509,6 +547,7 @@ Excel.ChartGridlines.load:
         }
     });
   - |-
+    // Set to show major gridlines on valueAxis of Chart1
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.axes.valueAxis.majorGridlines.visible = true;
@@ -523,6 +562,7 @@ Excel.ChartGridlines.load:
     });
 Excel.ChartLegend.load:
   - |-
+    // Get the position of Chart Legend from Chart1
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         var legend = chart.legend;
@@ -537,6 +577,7 @@ Excel.ChartLegend.load:
         }
     });
   - |-
+    // Set to show legend of Chart1 and make it on top of the chart.
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.legend.visible = true;
@@ -553,6 +594,7 @@ Excel.ChartLegend.load:
     });
 Excel.ChartLineFormat.clear:
   - |-
+    // Set to show legend of Chart1 and make it on top of the chart.
     Excel.run(function (ctx) { 
         var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;    
         gridlines.format.line.clear();
@@ -567,6 +609,7 @@ Excel.ChartLineFormat.clear:
     });
 Excel.ChartLineFormat.load:
   - |-
+    // Set chart major gridlines on value axis to be red.
     Excel.run(function (ctx) {
         var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
         gridlines.format.line.color = "#FF0000";
@@ -581,6 +624,7 @@ Excel.ChartLineFormat.load:
     });
 Excel.ChartPointsCollection.getItemAt:
   - |-
+    // Set the border color for the first points in the points collection
     Excel.run(function (ctx) { 
         var points = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
         points.getItemAt(0).format.fill.setSolidColor("8FBC8F");
@@ -595,6 +639,7 @@ Excel.ChartPointsCollection.getItemAt:
     });
 Excel.ChartPointsCollection.load:
   - |-
+    // Get the names of points in the points collection
     Excel.run(function (ctx) { 
         var pointsCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
         pointsCollection.load('items');
@@ -608,6 +653,7 @@ Excel.ChartPointsCollection.load:
         }
     });
   - |-
+    // Get the number of points
     Excel.run(function (ctx) { 
         var pointsCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series.getItemAt(0).points;
         pointsCollection.load('count');
@@ -622,6 +668,7 @@ Excel.ChartPointsCollection.load:
     });
 Excel.ChartSeries.load:
   - |-
+    // Rename the 1st series of Chart1 to "New Series Name"
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         chart.series.getItemAt(0).name = "New Series Name";
@@ -636,6 +683,7 @@ Excel.ChartSeries.load:
     });
 Excel.ChartSeriesCollection.getItemAt:
   - |-
+    // Get the name of the first series in the series collection.
     Excel.run(function (ctx) { 
         var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
         seriesCollection.load('items');
@@ -650,6 +698,7 @@ Excel.ChartSeriesCollection.getItemAt:
     });
 Excel.ChartSeriesCollection.load:
   - |-
+    // Getting the names of series in the series collection.
     Excel.run(function (ctx) { 
         var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
         seriesCollection.load('items');
@@ -666,6 +715,7 @@ Excel.ChartSeriesCollection.load:
         }
     });
   - |-
+    // Get the number of chart series in collection.
     Excel.run(function (ctx) { 
         var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
         seriesCollection.load('count');
@@ -680,6 +730,7 @@ Excel.ChartSeriesCollection.load:
     });
 Excel.ChartTitle.load:
   - |-
+    // Get the text of Chart Title from Chart1.
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         
@@ -694,7 +745,10 @@ Excel.ChartTitle.load:
             }
         });
     });
-  - |-
+  - >-
+    // Set the text of Chart Title to "My Chart" and Make it show on top of the
+    chart without overlaying.
+
     Excel.run(function (ctx) { 
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
         
@@ -832,7 +886,12 @@ Excel.ConditionalFormatCollection.getItemAt:
         }
     });
 Excel.NamedItem.getRange:
-  - |-
+  - >-
+    // Returns the Range object that is associated with the name. null if the
+    name is not of the type Range.
+
+    // Note: This API currently supports only the Workbook scoped items.
+
     Excel.run(function (ctx) { 
         var names = ctx.workbook.names;
         var range = names.getItem('MyRange').getRange();
@@ -896,6 +955,7 @@ Excel.NamedItemCollection.load:
     });
 Excel.Range.clear:
   - |-
+    // Below example clears format and contents of the range. 
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "D:F";
@@ -974,7 +1034,10 @@ Excel.Range.getColumn:
         }
     });
 Excel.Range.getEntireColumn:
-  - |-
+  - >-
+    // Note: the grid properties of the Range (values, numberFormat, formulas)
+    contains null since the Range in question is unbounded.
+
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "D:F";
@@ -991,7 +1054,11 @@ Excel.Range.getEntireColumn:
         }
     });
 Excel.Range.getEntireRow:
-  - |-
+  - >-
+    // Gets an object that represents the entire row of the range (for example,
+    if the current range represents cells "B4:E11", it's GetEntireRow is a range
+    that represents rows "4:11").
+
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
         var rangeAddress = "D:F"; 
@@ -1236,6 +1303,7 @@ Excel.Range.unmerge:
     });
 Excel.Range.load:
   - |-
+    // Below example uses range address to get the range object.
     Excel.run(function (ctx) {
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8"; 
@@ -1252,6 +1320,7 @@ Excel.Range.load:
         }
     });
   - |-
+    // Below example uses a named-range to get the range object.
     Excel.run(function (ctx) { 
         var rangeName = 'MyRange';
         var range = ctx.workbook.names.getItem(rangeName).range;
@@ -1265,7 +1334,10 @@ Excel.Range.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
+  - >-
+    // The example below sets number-format, values and formulas on a grid that
+    contains 2x3 grid.
+
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "F5:G7";
@@ -1309,6 +1381,7 @@ Excel.RangeBorder.load:
         }
     });
   - |-
+    // The example below adds grid border around the range.
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
@@ -1403,6 +1476,7 @@ Excel.RangeBorderCollection.load:
         }
     });
   - |-
+    // The example below adds grid border around the range.
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
@@ -1455,6 +1529,7 @@ Excel.RangeFill.load:
         }
     });
   - |-
+    // The example below sets fill color. 
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "F:G";
@@ -1486,6 +1561,7 @@ Excel.RangeFont.load:
         }
     });
   - |-
+    // The example below sets font name. 
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "F:G";
@@ -1500,6 +1576,7 @@ Excel.RangeFont.load:
     });
 Excel.RangeFormat.load:
   - |-
+    // Below example selects all of the Range's format properties. 
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "F:G";
@@ -1518,6 +1595,7 @@ Excel.RangeFormat.load:
         }
     });
   - |-
+    // The example below sets font name, fill color and wraps text. 
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "F:G";
@@ -1533,6 +1611,7 @@ Excel.RangeFormat.load:
         }
     });
   - |-
+    // The example below adds grid border around the range.
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "F:G";
@@ -1642,6 +1721,7 @@ Excel.Table.getTotalRowRange:
     });
 Excel.Table.load:
   - |-
+    // Get a table by name. 
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
         var table = ctx.workbook.tables.getItem(tableName);
@@ -1656,6 +1736,7 @@ Excel.Table.load:
         }
     });
   - |-
+    // Get a table by index.
     Excel.run(function (ctx) { 
         var index = 0;
         var table = ctx.workbook.tables.getItemAt(0);
@@ -1670,6 +1751,7 @@ Excel.Table.load:
         }
     });
   - |-
+    // Set table style. 
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
         var table = ctx.workbook.tables.getItem(tableName);
@@ -1761,6 +1843,7 @@ Excel.TableCollection.load:
         }
     });
   - |-
+    // Get the number of tables
     Excel.run(function (ctx) { 
         var tables = ctx.workbook.tables;
         tables.load('count');
@@ -2141,6 +2224,7 @@ Excel.Worksheet.getCell:
     });
 Excel.Worksheet.getRange:
   - |-
+    // Below example uses range address to get the range object.
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeAddress = "A1:F8";
@@ -2157,6 +2241,7 @@ Excel.Worksheet.getRange:
         }
     });
   - |-
+    // Below example uses a named-range to get the range object.
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
         var rangeName = 'MyRange';
@@ -2201,6 +2286,7 @@ Excel.Worksheet.getUsedRange:
     });
 Excel.Worksheet.load:
   - |-
+    // Get worksheet properties based on sheet name.
     Excel.run(function (ctx) { 
         var wSheetName = 'Sheet1';
         var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
@@ -2215,6 +2301,7 @@ Excel.Worksheet.load:
         }
     });
   - |-
+    // Set worksheet position. 
     Excel.run(function (ctx) { 
         var wSheetName = 'Sheet1';
         var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
@@ -2308,7 +2395,13 @@ Excel.WorksheetProtection.unprotect:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
+  - >-
+    // Unprotecting a worksheet with unprotect() will remove all
+    WorksheetProtectionOptions options applied to a worksheet.
+
+    // To remove only a subset of WorksheetProtectionOptions use the protect()
+    method and set the options you wish to remove to true.
+
     Excel.run(function(ctx) {
       var sheet = ctx.workbook.worksheets.getItem("Sheet1");
       sheet.protection.protect({
@@ -5972,8 +6065,9 @@ Visio.ShapeView.load:
         }
     });
 Word.Body.clear:
-  - |-
+  - >-
     // Run a batch operation against the Word object model.
+
     Word.run(function (context) {
 
         // Create a proxy object for the document body.
@@ -5988,12 +6082,18 @@ Word.Body.clear:
             console.log('Cleared the body contents.');
         });
     })
+
     .catch(function (error) {
         console.log("Error: " + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+
+    // The Silly stories add-in sample shows how the clear method can be used to
+    clear the contents of a document.
+
+    // https://aka.ms/sillystorywordaddin
 Word.Body.getHtml:
   - |-
     // Run a batch operation against the Word object model.
@@ -6134,8 +6234,9 @@ Word.Body.insertHtml:
         }
     });
 Word.Body.insertInlinePictureFromBase64:
-  - |-
+  - >-
     // Run a batch operation against the Word object model.
+
     Word.run(function (context) {
 
         // Create a proxy object for the document body.
@@ -6150,15 +6251,28 @@ Word.Body.insertInlinePictureFromBase64:
             console.log('OOXML added to the beginning of the document body.');
         });
     })
+
     .catch(function (error) {
         console.log('Error: ' + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
+    // Read Create better add-ins for Word with Office Open XML for guidance on
+    working with OOXML.
+
+    //
+    https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+
+    // The Word-Add-in-DocumentAssembly sample shows how you can use this API to
+    assemble a document.
+
+    // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 Word.Body.insertParagraph:
-  - |-
+  - >-
     // Run a batch operation against the Word object model.
+
     Word.run(function (context) {
 
         // Create a proxy object for the document body.
@@ -6173,12 +6287,18 @@ Word.Body.insertParagraph:
             console.log('Paragraph added at the end of the document body.');
         });
     })
+
     .catch(function (error) {
         console.log('Error: ' + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
+    // The Word-Add-in-DocumentAssembly sample shows how you can use the
+    insertParagraph method to assemble a document.
+
+    // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 Word.Body.insertText:
   - |-
     // Run a batch operation against the Word object model.
@@ -6203,8 +6323,9 @@ Word.Body.insertText:
         }
     });
 Word.Body.search:
-  - |-
+  - >-
     // Run a batch operation against the Word object model.
+
     Word.run(function (context) {
 
         // Create a proxy object for the document body.
@@ -6236,12 +6357,18 @@ Word.Body.search:
             });
         });
     })
+
     .catch(function (error) {
         console.log('Error: ' + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
+    // The Word-Add-in-DocumentAssembly sample provides another example of how
+    to search a document.
+
+    // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 Word.Body.select:
   - |-
     // Run a batch operation against the Word object model.
@@ -6268,6 +6395,7 @@ Word.Body.select:
     });
 Word.Body.load:
   - |-
+    // Get the text property on the body object
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
 
@@ -6289,8 +6417,12 @@ Word.Body.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
+  - >-
+    // Get the style and the font size, font name, and font color properties on
+    the body object.
+
     // Run a batch operation against the Word object model.
+
     Word.run(function (context) {
 
         // Create a proxy object for the document body.
@@ -6312,6 +6444,7 @@ Word.Body.load:
             console.log(results);
         });
     })
+
     .catch(function (error) {
         console.log('Error: ' + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
@@ -6537,8 +6670,9 @@ Word.ContentControl.insertFileFromBase64:
         }
     });
 Word.ContentControl.insertInlinePictureFromBase64:
-  - |-
+  - >-
     // Run a batch operation against the Word object model.
+
     Word.run(function (context) {
         
         // Create a proxy object for the content controls collection.
@@ -6566,12 +6700,19 @@ Word.ContentControl.insertInlinePictureFromBase64:
             }
         });  
     })
+
     .catch(function (error) {
         console.log('Error: ' + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
+    // Read Create better add-ins for Word with Office Open XML for guidance on
+    working with OOXML.
+
+    //
+    https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 Word.ContentControl.insertParagraph:
   - |-
     // Run a batch operation against the Word object model.
@@ -6644,6 +6785,8 @@ Word.ContentControl.insertText:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+    // The Silly stories add-in sample shows how to use the insertText method.
+    // https://aka.ms/sillystorywordaddin
 Word.ContentControl.load:
   - |-
     // Run a batch operation against the Word object model.
@@ -6676,6 +6819,7 @@ Word.ContentControl.load:
         }
     });
   - |-
+    // Load all of the content control properties
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
         
@@ -6851,8 +6995,9 @@ Word.ContentControlCollection.getByIdOrNullObject:
         }
     });
 Word.ContentControlCollection.getByTag:
-  - |-
+  - >-
     // Run a batch operation against the Word object model.
+
     Word.run(function (context) {
 
         // Create a proxy object for the content controls collection that contains a specific tag.
@@ -6872,15 +7017,22 @@ Word.ContentControlCollection.getByTag:
 
         });
     })
+
     .catch(function (error) {
         console.log('Error: ' + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
+    // The Word-Add-in-DocumentAssembly sample has another example of using the
+    getByTag method.
+
+    // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 Word.ContentControlCollection.getByTitle:
-  - |-
+  - >-
     // Run a batch operation against the Word object model.
+
     Word.run(function (context) {
 
         // Create a proxy object for the content controls collection that contains a specific title.
@@ -6900,12 +7052,18 @@ Word.ContentControlCollection.getByTitle:
 
         });
     })
+
     .catch(function (error) {
         console.log('Error: ' + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
+    // The Word-Add-in-DocumentAssembly sample has another example of using the
+    getByTitle method.
+
+    // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 Word.ContentControlCollection.getFirst:
   - |-
     // Run a batch operation against the Word object model.
@@ -6934,8 +7092,9 @@ Word.ContentControlCollection.getFirst:
         }
     });
 Word.ContentControlCollection.load:
-  - |-
+  - >-
     // Run a batch operation against the Word object model.
+
     Word.run(function (context) {
 
         // Create a proxy object for the content controls collection.
@@ -6991,12 +7150,18 @@ Word.ContentControlCollection.load:
             }
         });
     })
+
     .catch(function (error) {
         console.log('Error: ' + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
+    // The Silly stories add-in sample shows how the load method is used to load
+    the content control collection with the tag and title properties.
+
+    // https://aka.ms/sillystorywordaddin
 Word.Document.getSelection:
   - |-
     // Run a batch operation against the Word object model.
@@ -7115,6 +7280,7 @@ Word.OfficeExtension.Error.toString:
     });
 Word.Font.load:
   - |-
+    // Change the font name
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
 
@@ -7137,6 +7303,7 @@ Word.Font.load:
         }
     });
   - |-
+    // Change the font color
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
 
@@ -7159,6 +7326,7 @@ Word.Font.load:
         }
     });
   - |-
+    // Change the font size
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
 
@@ -7181,6 +7349,7 @@ Word.Font.load:
         }
     });
   - |-
+    // Highlight selected text
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
 
@@ -7203,6 +7372,7 @@ Word.Font.load:
         }
     });
   - |-
+    // Bold format text
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
 
@@ -7225,6 +7395,7 @@ Word.Font.load:
         }
     });
   - |-
+    // Underline format text
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
 
@@ -7247,6 +7418,7 @@ Word.Font.load:
         }
     });
   - |-
+    // Strike format text
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
 
@@ -7269,8 +7441,12 @@ Word.Font.load:
         }
     });
 Word.InlinePicture.getNext:
-  - |-
+  - >-
+    // To use this snippet, add an inline picture to the document and assign it
+    an alt text title.
+
     // Run a batch operation against the Word object model.
+
     Word.run(function (context) {
         
         // Create a proxy object for the first inline picture.
@@ -7289,6 +7465,7 @@ Word.InlinePicture.getNext:
             }
         });   
     })
+
     .catch(function (error) {
         console.log('Error: ' + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
@@ -7296,8 +7473,12 @@ Word.InlinePicture.getNext:
         }
     });
 Word.InlinePicture.getNextOrNullObject:
-  - |-
+  - >-
+    // To use this snippet, add an inline picture to the document and assign it
+    an alt text title.
+
     // Run a batch operation against the Word object model.
+
     Word.run(function (context) {
         
         // Create a proxy object for the first inline picture.
@@ -7316,6 +7497,7 @@ Word.InlinePicture.getNextOrNullObject:
             }
         });   
     })
+
     .catch(function (error) {
         console.log('Error: ' + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
@@ -7932,8 +8114,9 @@ Word.Range.insertHtml:
         }
     });
 Word.Range.insertOoxml:
-  - |-
+  - >-
     // Run a batch operation against the Word object model.
+
     Word.run(function (context) {
 
         // Queue a command to get the current selection and then
@@ -7949,12 +8132,19 @@ Word.Range.insertOoxml:
             console.log('OOXML added to the beginning of the range.');
         });
     })
+
     .catch(function (error) {
         console.log('Error: ' + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
+    // Additional information Read Create better add-ins for Word with Office
+    Open XML for guidance on working with OOXML.
+
+    //
+    https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 Word.Range.insertParagraph:
   - |-
     // Run a batch operation against the Word object model.
@@ -8031,8 +8221,12 @@ Word.Range.select:
         }
     });
 Word.RequestContext.load:
-  - |-
+  - >-
+    // The following example shows how the request context is used to load the
+    text property on a paragraph collection.
+
     // Run a batch operation against the Word object model.
+
     Word.run(function (context) {
 
         // Create a proxy object for the paragraphs collection.
@@ -8055,15 +8249,27 @@ Word.RequestContext.load:
             });
         });
     })
+
     .catch(function (error) {
         console.log('Error: ' + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+
+    // Note: You must call load() after adding tracked objects.    
 Word.RequestContext.sync:
-  - |-
+  - >-
+    // The following example shows the sync method used twice: 
+
+    //   1) load the content controls collection with the text property for each
+    content control, and
+
+    //   2) clearing the contents of the first content control in the
+    collection.
+
     // Run a batch operation against the Word object model.
+
     Word.run(function (context) {
 
         // Create a proxy object for the content controls collection.
@@ -8091,6 +8297,7 @@ Word.RequestContext.sync:
 
         });
     })
+
     .catch(function (error) {
         console.log('Error: ' + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
@@ -8099,6 +8306,7 @@ Word.RequestContext.sync:
     });
 Word.SearchOptions.load:
   - |-
+    // Ignore punctuation search
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
         
@@ -8132,6 +8340,7 @@ Word.SearchOptions.load:
         }
     });
   - |-
+    // Search based on a prefix
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
         
@@ -8165,6 +8374,7 @@ Word.SearchOptions.load:
         }
     });
   - |-
+    // Search based on a suffix
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
 
@@ -8198,6 +8408,7 @@ Word.SearchOptions.load:
         }
     });
   - |-
+    // Search using a wildcard
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
         

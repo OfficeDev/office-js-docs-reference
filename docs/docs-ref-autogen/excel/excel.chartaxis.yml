@@ -203,6 +203,7 @@ items:
       #### Examples
 
       ```javascript
+      // Get the maximum of Chart Axis from Chart1
       Excel.run(function (ctx) { 
           var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           var axis = chart.axes.valueAxis;
@@ -219,6 +220,7 @@ items:
       ```
 
       ```javascript
+      // Set the maximum, minimum, majorunit, minorunit of valueaxis. 
       Excel.run(function (ctx) { 
           var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.axes.valueAxis.maximum = 5;
