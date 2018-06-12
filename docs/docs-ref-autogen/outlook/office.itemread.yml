@@ -40,7 +40,8 @@ items:
       -->.
 
 
-      Minimum permission level: ReadItem
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
 
 
       Applicable Outlook mode: Read
@@ -76,8 +77,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Read
     name: displayReplyAllForm(formData)
@@ -120,8 +123,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Read
     name: displayReplyForm(formData)
@@ -149,8 +154,10 @@ items:
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Read
     name: getEntities()
@@ -171,8 +178,21 @@ items:
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: Restricted
+    remarks: >-
+      While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access,
+      as specified in the following table.
+
+
+      \|Value of entityType\|Type of objects in returned array\|Required Permission Level\|
+      \|\-\-\-\-\-\--\|\-\-\-\-\-\-\-\-\---\|\-\-\-\-\-\-\-\-\--\| \|Address\|String\|Restricted\|
+      \|Contact\|Contact\|ReadItem\| \|EmailAddress\|String\|ReadItem\|
+      \|MeetingSuggestion\|MeetingSuggestion\|ReadItem\| \|PhoneNumber\|PhoneNumber\|Restricted\|
+      \|TaskSuggestion\|TaskSuggestion\|ReadItem\| \|URL\|String\|Restricted\|
+
+
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: Restricted
+
 
       Applicable Outlook mode: Read
     name: getEntitiesByType(entityType)
@@ -192,14 +212,6 @@ items:
           null. If no entities of the specified type are present on the item, the method returns an empty array.
           Otherwise, the type of the objects in the returned array depends on the type of entity requested in the
           entityType parameter.
-
-
-          While the minimum permission level to use this method is Restricted, some entity types require ReadItem to
-          access, as specified in the following table. \|Value of entityType\|Type of objects in returned
-          array\|Required Permission Level\| \|\-\-\-\-\-\--\|\-\-\-\-\-\-\-\-\---\|\-\-\-\-\-\-\-\-\--\|
-          \|Address\|String\|Restricted\| \|Contact\|Contact\|ReadItem\| \|EmailAddress\|String\|ReadItem\|
-          \|MeetingSuggestion\|MeetingSuggestion\|ReadItem\| \|PhoneNumber\|PhoneNumber\|Restricted\|
-          \|TaskSuggestion\|TaskSuggestion\|ReadItem\| \|URL\|String\|Restricted\|
       parameters:
         - id: entityType
           description: One of the EntityType enumeration values.
@@ -218,8 +230,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Read
     name: getFilteredEntitiesByName(name)
@@ -254,8 +268,10 @@ items:
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Read
     name: 'getInitializationContextAsync(options, callback)'
@@ -306,8 +322,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Read
     name: getRegExMatches()
@@ -343,8 +361,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Read
     name: getRegExMatchesByName(name)
@@ -373,8 +393,10 @@ items:
 
 
       \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Read
     name: getSelectedEntities()
@@ -410,8 +432,10 @@ items:
 
 
       \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Read
     name: getSelectedRegExMatches()
@@ -437,22 +461,23 @@ items:
       classes for the message or appointment item.
 
 
-      \[div class="mx-tdBreakAll"\|Type\|Description\|item class\|
-      \|\-\-\-\-\-\-\-\-\---\|\-\-\-\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\-\-\-\| \|Appointment items\|These are
-      calendar items of the item class IPM.Appointment or
+      You can create custom message classes that extends a default message class, for example, a custom appointment
+      message class IPM.Appointment.Contoso.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      \|Type\|Description\|Item Class\| \|\-\-\-\-\-\-\-\-\---\|\-\-\-\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\-\-\-\|
+      \|Appointment items\|These are calendar items of the item class IPM.Appointment or
       IPM.Appointment.Occurence.\|IPM.Appointment,IPM.Appointment.Occurence\| \|Message items\|These include email
       messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that
       use IPM.Schedule.Meeting as the base message
       class.\|IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled\|
 
 
-      You can create custom message classes that extends a default message class, for example, a custom appointment
-      message class IPM.Appointment.Contoso.
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
 
-
-      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
 
       Applicable Outlook mode: Read
     name: itemClass
@@ -482,8 +507,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Read
     name: itemId
@@ -506,8 +533,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Read
     name: normalizedSubject
@@ -533,8 +562,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
     name: subject

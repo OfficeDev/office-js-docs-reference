@@ -447,7 +447,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: Restricted
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -472,7 +472,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: Restricted
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -523,7 +523,7 @@ export declare namespace Office {
          * 
          * Add-in type: Content, task pane, Outlook
          * 
-         * Minimum permission level: Restricted
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Compose or Read
          */
@@ -540,7 +540,7 @@ export declare namespace Office {
              *
              * @remarks
              * 
-             * Minimum permission level: Restricted
+             * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
              *
              * Applicable Outlook mode: Compose or read
              * 
@@ -2201,14 +2201,13 @@ export declare namespace Office {
         sliceCount: number;
         /**
          * Closes the document file.
+         * 
          * @remarks
+         * 
          * No more than two documents are allowed to be in memory; otherwise the Document.getFileAsync operation will fail. Use the File.closeAsync method to close the file when you are finished working with it.
-         *
-         * Hosts: PowerPoint, Word
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
-         * @remarks
-         * When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter.
+         * 
          * In the callback function passed to the closeAsync method, you can use the properties of the AsyncResult object to return the following information.
+         * 
          * |Property |Use to...|
          * |---------|---------|
          * |AsyncResult.value|Always returns undefined because there is no object or data to retrieve.|
@@ -2216,24 +2215,29 @@ export declare namespace Office {
          * |AsyncResult.error|Access an Error object that provides error information if the operation failed.|
          * |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|
          *
+         * Hosts: PowerPoint, Word
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter.
+         *
          * Available in Requirement set: File
          */
         closeAsync(callback?: (result: AsyncResult) => void): void;
         /**
          * Returns the specified slice.
+         * 
          * @remarks
-         * Hosts: PowerPoint, Word
-         * @param sliceIndex - Specifies the zero-based index of the slice to be retrieved. Required.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult
-         * @remarks
-         * When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter.
+         * 
          * In the callback function passed to the getSliceAsync method, you can use the properties of the AsyncResult object to return the following information.
+         * 
          * |Property |Use to...|
          * |---------|---------|
          * |AsyncResult.value|Access the Slice object.|
          * |AsyncResult.status|Determine the success or failure of the operation.|
          * |AsyncResult.error|Access an Error object that provides error information if the operation failed.|
          * |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|
+         * 
+         * Hosts: PowerPoint, Word
+         * @param sliceIndex - Specifies the zero-based index of the slice to be retrieved. Required.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter.
          *
          * Available in Requirement set: File
          */
@@ -2297,6 +2301,15 @@ export declare namespace Office {
          *
          * @remarks
          * You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique.
+         * 
+         * In the callback function passed to the addHandlerAsync method, you can use the properties of the AsyncResult object to return the following information.
+         * 
+         * |Property |Use to...|
+         * |---------|---------|
+         * |AsyncResult.value|Always returns undefined because there is no data or object to retrieve when adding an event handler.|
+         * |AsyncResult.status|Determine the success or failure of the operation.|
+         * |AsyncResult.error|Access an Error object that provides error information if the operation failed.|
+         * |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|
          *
          * Hosts: Excel
          *
@@ -2305,16 +2318,7 @@ export declare namespace Office {
          * @param eventType - Specifies the type of event to add. Required.
          * @param handler - The event handler function to add. Required.
          * @param options - Provides an option for preserving context data of any type, unchanged, for use in a callback.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
-         * @remarks
-         * When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter.
-         * In the callback function passed to the addHandlerAsync method, you can use the properties of the AsyncResult object to return the following information.
-         * |Property |Use to...|
-         * |---------|---------|
-         * |AsyncResult.value|Always returns undefined because there is no data or object to retrieve when adding an event handler.|
-         * |AsyncResult.status|Determine the success or failure of the operation.|
-         * |AsyncResult.error|Access an Error object that provides error information if the operation failed.|
-         * |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter.
          */
         addHandlerAsync(eventType: EventType, handler: any, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -2334,22 +2338,24 @@ export declare namespace Office {
          *
          * @remarks
          * This method is useful in Word and PowerPoint coauthoring scenarios when multiple instances of the same add-in are working against the same document. Because each add-in is working against an in-memory copy of the settings loaded from the document at the time the user opened it, the settings values used by each user can get out of sync. This can happen whenever an instance of the add-in calls the Settings.saveAsync method to persist all of that user's settings to the document. Calling the refreshAsync method from the event handler for the settingsChanged event of the add-in will refresh the settings values for all users.
+         * 
          * The refreshAsync method can be called from add-ins created for Excel, but since it doesn't support coauthoring there is no reason to do so.
          *
-         * Hosts: Access, Excel, PowerPoint, Word
-         *
-         * Available in Requirement set: Settings
-         *
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
-         * @remarks
-         * When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter.
          * In the callback function passed to the refreshAsync method, you can use the properties of the AsyncResult object to return the following information.
+         * 
          * |Property |Use to...|
          * |---------|---------|
          * |AsyncResult.value|Access a Settings object with the refreshed values.|
          * |AsyncResult.status|Determine the success or failure of the operation.|
          * |AsyncResult.error|Access an Error object that provides error information if the operation failed.|
          * |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|
+         * 
+         * Hosts: Access, Excel, PowerPoint, Word
+         *
+         * Available in Requirement set: Settings
+         *
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter.
+
          */
         refreshAsync(callback?: (result: AsyncResult) => void): void;
         /**
@@ -2390,22 +2396,20 @@ export declare namespace Office {
          * @remarks
          * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the set and get methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are available the next time the add-in is used, use the saveAsync method.
          *
-         * Note:
-         * The saveAsync method persists the in-memory settings property bag into the document file; however, the changes to the document file itself are saved only when the user (or AutoRecover setting) saves the document to the file system.
-         * The refreshAsync method is only useful in coauthoring scenarios (which are only supported in Word) when other instances of the same add-in might change the settings and those changes should be made available to all instances.
-         *
-         * Hosts: Access, Excel, PowerPoint, Word
-         * @param options - Provides options for saving settings.
-         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. Optional.
-         * @remarks
-         * When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter.
+         * Note: The saveAsync method persists the in-memory settings property bag into the document file; however, the changes to the document file itself are saved only when the user (or AutoRecover setting) saves the document to the file system. The refreshAsync method is only useful in coauthoring scenarios (which are only supported in Word) when other instances of the same add-in might change the settings and those changes should be made available to all instances.
+         * 
          * In the callback function passed to the saveAsync method, you can use the properties of the AsyncResult object to return the following information.
+         * 
          * |Property |Use to...|
          * |---------|---------|
          * |AsyncResult.value|Always returns undefined because there is no object or data to retrieve.|
          * |AsyncResult.status|Determine the success or failure of the operation.|
          * |AsyncResult.error|Access an Error object that provides error information if the operation failed.|
          * |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|
+         *
+         * Hosts: Access, Excel, PowerPoint, Word
+         * @param options - Provides options for saving settings.
+         * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter.
          */
         saveAsync(options?: SaveSettingsOptions, callback?: (result: AsyncResult) => void): void;
         /**

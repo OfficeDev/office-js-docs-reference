@@ -2217,7 +2217,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: Restricted"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": Restricted"
                 },
                 {
                   "kind": "paragraph"
@@ -2323,7 +2337,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: Restricted"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": Restricted"
                 },
                 {
                   "kind": "paragraph"
@@ -6279,7 +6307,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter. Available in Requirement set: File"
                     }
                   ],
                   "isOptional": true,
@@ -6297,14 +6325,28 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter. In the callback function passed to the closeAsync method, you can use the properties of the AsyncResult object to return the following information. |Property |Use to...| |---------|---------| |AsyncResult.value|Always returns undefined because there is no object or data to retrieve.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
+                  "text": "No more than two documents are allowed to be in memory; otherwise the Document.getFileAsync operation will fail. Use the File.closeAsync method to close the file when you are finished working with it."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Available in Requirement set: File"
+                  "text": "In the callback function passed to the closeAsync method, you can use the properties of the AsyncResult object to return the following information."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "|Property |Use to...| |---------|---------| |AsyncResult.value|Always returns undefined because there is no object or data to retrieve.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Hosts: PowerPoint, Word"
                 }
               ],
               "isBeta": false,
@@ -6340,7 +6382,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult"
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter. Available in Requirement set: File"
                     }
                   ],
                   "isOptional": true,
@@ -6358,14 +6400,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter. In the callback function passed to the getSliceAsync method, you can use the properties of the AsyncResult object to return the following information. |Property |Use to...| |---------|---------| |AsyncResult.value|Access the Slice object.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
+                  "text": "In the callback function passed to the getSliceAsync method, you can use the properties of the AsyncResult object to return the following information."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Available in Requirement set: File"
+                  "text": "|Property |Use to...| |---------|---------| |AsyncResult.value|Access the Slice object.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Hosts: PowerPoint, Word"
                 }
               ],
               "isBeta": false,
@@ -15467,7 +15516,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter."
                     }
                   ],
                   "isOptional": true,
@@ -15492,7 +15541,35 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter. In the callback function passed to the addHandlerAsync method, you can use the properties of the AsyncResult object to return the following information. |Property |Use to...| |---------|---------| |AsyncResult.value|Always returns undefined because there is no data or object to retrieve when adding an event handler.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
+                  "text": "You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In the callback function passed to the addHandlerAsync method, you can use the properties of the AsyncResult object to return the following information."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "|Property |Use to...| |---------|---------| |AsyncResult.value|Always returns undefined because there is no data or object to retrieve when adding an event handler.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Hosts: Excel"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Available in Requirement set: Settings"
                 }
               ],
               "isBeta": false,
@@ -15565,7 +15642,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter."
                     }
                   ],
                   "isOptional": true,
@@ -15583,7 +15660,42 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter. In the callback function passed to the refreshAsync method, you can use the properties of the AsyncResult object to return the following information. |Property |Use to...| |---------|---------| |AsyncResult.value|Access a Settings object with the refreshed values.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
+                  "text": "This method is useful in Word and PowerPoint coauthoring scenarios when multiple instances of the same add-in are working against the same document. Because each add-in is working against an in-memory copy of the settings loaded from the document at the time the user opened it, the settings values used by each user can get out of sync. This can happen whenever an instance of the add-in calls the Settings.saveAsync method to persist all of that user's settings to the document. Calling the refreshAsync method from the event handler for the settingsChanged event of the add-in will refresh the settings values for all users."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The refreshAsync method can be called from add-ins created for Excel, but since it doesn't support coauthoring there is no reason to do so."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In the callback function passed to the refreshAsync method, you can use the properties of the AsyncResult object to return the following information."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "|Property |Use to...| |---------|---------| |AsyncResult.value|Access a Settings object with the refreshed values.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Hosts: Access, Excel, PowerPoint, Word"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Available in Requirement set: Settings"
                 }
               ],
               "isBeta": false,
@@ -15743,7 +15855,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. Optional."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter."
                     }
                   ],
                   "isOptional": true,
@@ -15761,7 +15873,35 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter. In the callback function passed to the saveAsync method, you can use the properties of the AsyncResult object to return the following information. |Property |Use to...| |---------|---------| |AsyncResult.value|Always returns undefined because there is no object or data to retrieve.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
+                  "text": "Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use the set and get methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are available the next time the add-in is used, use the saveAsync method."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Note: The saveAsync method persists the in-memory settings property bag into the document file; however, the changes to the document file itself are saved only when the user (or AutoRecover setting) saves the document to the file system. The refreshAsync method is only useful in coauthoring scenarios (which are only supported in Word) when other instances of the same add-in might change the settings and those changes should be made available to all instances."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In the callback function passed to the saveAsync method, you can use the properties of the AsyncResult object to return the following information."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "|Property |Use to...| |---------|---------| |AsyncResult.value|Always returns undefined because there is no object or data to retrieve.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Hosts: Access, Excel, PowerPoint, Word"
                 }
               ],
               "isBeta": false,

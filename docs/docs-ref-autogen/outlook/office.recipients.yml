@@ -2,8 +2,10 @@
 items:
   - uid: outlook.Office.Recipients
     summary: '\[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]'
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose
     name: Office.Recipients
@@ -29,18 +31,26 @@ items:
       - EmailAddressDetails objects
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |
-      Minimum permission level: ReadWriteItem
+    remarks: >
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+
 
       Applicable Outlook mode: Compose
 
+
       Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
+
 
       #### Examples
 
+
       ```javascript
+
       // The following example creates an array of EmailUser objects
+
       // and adds them to the To recipients of the message.
+
       var newRecipients = [
           {
               "displayName": "Allie Bellew",
@@ -52,6 +62,7 @@ items:
           }
       ];
 
+
       Office.context.mailbox.item.to.addAsync(newRecipients, function(result) {
           if (result.error) {
               showMessage(result.error);
@@ -59,6 +70,7 @@ items:
               showMessage("Recipients added");
           }
       });
+
       ```
     name: 'addAsync(recipients, options, callback)'
     fullName: outlook.Office.Recipients.addAsync
@@ -98,15 +110,21 @@ items:
       When the call completes, the asyncResult.value property will contain an array of EmailAddressDetails objects.
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |
-      Minimum permission level: ReadItem
+    remarks: >
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose
 
+
       #### Examples
 
+
       ```javascript
+
       // The following example gets the optional attendees of a meeting.
+
       Office.context.mailbox.item.optionalAttendees.getAsync(function(result) {
           if (result.error) {
               showMessage(result.error);
@@ -118,6 +136,7 @@ items:
               showMessage(msg);
           }
       });
+
       ```
     name: getAsync(callback)
     fullName: outlook.Office.Recipients.getAsync
@@ -152,18 +171,26 @@ items:
       - EmailAddressDetails objects
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |
-      Minimum permission level: ReadWriteItem
+    remarks: >
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+
 
       Applicable Outlook mode: Compose
 
+
       Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
+
 
       #### Examples
 
+
       ```javascript
+
       // The following example creates an array of EmailUser objects and
+
       // replaces the CC recipients of the message with the array.
+
       var newRecipients = [
           {
               "displayName": "Allie Bellew",
@@ -175,6 +202,7 @@ items:
           }
       ];
 
+
       Office.context.mailbox.item.cc.setAsync(newRecipients, function(result) {
           if (result.error) {
               showMessage(result.error);
@@ -182,6 +210,7 @@ items:
               showMessage("Recipients overwritten");
           }
       });
+
       ```
     name: 'setAsync(recipients, options, callback)'
     fullName: outlook.Office.Recipients.setAsync

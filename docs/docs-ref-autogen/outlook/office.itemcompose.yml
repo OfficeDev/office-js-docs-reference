@@ -36,16 +36,22 @@ items:
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadWriteItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+
 
       Applicable Outlook mode: Compose
 
+
       Errors:
+
 
       AttachmentSizeExceeded - The attachment is larger than allowed.
 
+
       FileTypeNotSupported - The attachment has an extension that is not allowed.
+
 
       NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
@@ -109,12 +115,16 @@ items:
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadWriteItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+
 
       Applicable Outlook mode: Compose
 
+
       Errors:
+
 
       NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
@@ -172,8 +182,10 @@ items:
 
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: Restricted
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: Restricted
+
 
       Applicable Outlook mode: Compose
     name: close()
@@ -202,7 +214,8 @@ items:
       messages](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
 
 
-      Minimum permission level: ReadItem
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
 
 
       Applicable Outlook mode: Read
@@ -246,8 +259,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadWriteItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+
 
       Applicable Outlook mode: Compose
     name: 'getSelectedDataAsync(coercionType, callback)'
@@ -287,10 +302,13 @@ items:
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadWriteItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+
 
       Applicable Outlook mode: Compose
+
 
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
@@ -356,10 +374,13 @@ items:
 
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadWriteItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+
 
       Applicable Outlook mode: Compose
+
 
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
     name: 'saveAsync(options, callback)'
@@ -398,10 +419,13 @@ items:
 
 
       \[ [API set: Mailbox 1.2](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadWriteItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+
 
       Applicable Outlook mode: Compose
+
 
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
     name: 'setSelectedDataAsync(data, options, callback)'
@@ -451,8 +475,10 @@ items:
       The subject property returns a Subject object that provides methods to get and set the subject.
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
     name: subject

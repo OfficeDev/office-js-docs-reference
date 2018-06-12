@@ -94,8 +94,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -147,8 +157,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -200,8 +220,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -253,8 +283,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -320,8 +360,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -372,8 +422,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -453,8 +513,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -520,8 +590,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem Applicable Outlook mode: Compose or read"
+                  "text": ": ReadItem Applicable Outlook mode: Compose or read"
                 }
               ],
               "isBeta": false,
@@ -580,8 +660,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -647,8 +737,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -743,8 +843,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -817,8 +927,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -895,8 +1015,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -941,8 +1071,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -987,8 +1127,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -1026,8 +1176,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -1072,8 +1232,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -1125,8 +1295,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -1200,7 +1380,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -1357,7 +1551,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -1449,7 +1657,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -1517,7 +1739,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -1611,7 +1847,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem Applicable Outlook mode: Compose Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters."
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadWriteItem Applicable Outlook mode: Compose Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters."
                 }
               ],
               "isBeta": false,
@@ -1698,7 +1948,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -1806,7 +2070,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -1894,7 +2172,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: Restricted"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": Restricted"
             },
             {
               "kind": "paragraph"
@@ -2058,7 +2350,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -2117,7 +2423,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -2173,7 +2493,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -2248,7 +2582,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -2330,7 +2678,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -2369,7 +2731,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -2413,7 +2789,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -2459,7 +2849,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -2540,7 +2944,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -2579,7 +2997,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -2696,7 +3128,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -2815,7 +3261,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -2992,7 +3452,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -3072,7 +3546,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -3111,7 +3599,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: Restricted"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": Restricted"
             },
             {
               "kind": "paragraph"
@@ -3207,8 +3709,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -3246,8 +3758,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -3285,8 +3807,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -3331,8 +3863,18 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -3377,8 +3919,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -3459,8 +4011,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -3498,8 +4060,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -3558,8 +4130,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -3657,8 +4239,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -3731,8 +4323,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -3856,7 +4458,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -3997,7 +4613,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -4074,8 +4704,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: Restricted"
+                  "text": ": Restricted"
                 },
                 {
                   "kind": "paragraph"
@@ -4170,8 +4810,18 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -4257,8 +4907,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -4344,8 +5004,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -4461,8 +5131,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -4555,8 +5235,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -4615,8 +5305,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -4693,8 +5393,18 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -4778,7 +5488,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -4861,8 +5585,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -4911,8 +5645,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -4939,13 +5683,6 @@
                   {
                     "kind": "text",
                     "text": "If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present on the item, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter."
-                  },
-                  {
-                    "kind": "paragraph"
-                  },
-                  {
-                    "kind": "text",
-                    "text": "While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the following table. |Value of entityType|Type of objects in returned array|Required Permission Level| |-------|-----------|----------| |Address|String|Restricted| |Contact|Contact|ReadItem| |EmailAddress|String|ReadItem| |MeetingSuggestion|MeetingSuggestion|ReadItem| |PhoneNumber|PhoneNumber|Restricted| |TaskSuggestion|TaskSuggestion|ReadItem| |URL|String|Restricted|"
                   }
                 ]
               },
@@ -4987,7 +5724,31 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: Restricted"
+                  "text": "While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the following table."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "|Value of entityType|Type of objects in returned array|Required Permission Level| |-------|-----------|----------| |Address|String|Restricted| |Contact|Contact|ReadItem| |EmailAddress|String|ReadItem| |MeetingSuggestion|MeetingSuggestion|ReadItem| |PhoneNumber|PhoneNumber|Restricted| |TaskSuggestion|TaskSuggestion|ReadItem| |URL|String|Restricted|"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": Restricted"
                 },
                 {
                   "kind": "paragraph"
@@ -5061,8 +5822,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -5150,8 +5921,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -5219,8 +6000,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -5301,8 +6092,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -5351,8 +6152,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -5420,8 +6231,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -5461,13 +6282,6 @@
                 },
                 {
                   "kind": "text",
-                  "text": "[div class=\"mx-tdBreakAll\"|Type|Description|item class| |-----------|------------|------------| |Appointment items|These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.|IPM.Appointment,IPM.Appointment.Occurence| |Message items|These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.|IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled|"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "You can create custom message classes that extends a default message class, for example, a custom appointment message class IPM.Appointment.Contoso."
                 },
                 {
@@ -5481,7 +6295,24 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": "|Type|Description|Item Class| |-----------|------------|------------| |Appointment items|These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.|IPM.Appointment,IPM.Appointment.Occurence| |Message items|These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.|IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled|"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -5533,8 +6364,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -5579,8 +6420,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -5632,8 +6483,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -5671,8 +6532,18 @@
           ],
           "remarks": [
             {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -5869,7 +6740,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -5935,7 +6820,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -6015,7 +6914,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -6089,7 +7002,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: Restricted"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": Restricted"
             },
             {
               "kind": "paragraph"
@@ -6185,8 +7112,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -6267,8 +7204,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: Restricted"
+                  "text": ": Restricted"
                 },
                 {
                   "kind": "paragraph"
@@ -6337,8 +7284,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -6447,8 +7404,18 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: Restricted"
+                  "text": ": Restricted"
                 },
                 {
                   "kind": "paragraph"
@@ -6515,8 +7482,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -6606,8 +7583,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -6697,8 +7684,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -6788,8 +7785,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -6858,8 +7865,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -6939,8 +7956,18 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -7063,8 +8090,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -7159,8 +8196,18 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -7343,8 +8390,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteMailbox"
+                  "text": ": ReadWriteMailbox"
                 },
                 {
                   "kind": "paragraph"
@@ -7417,8 +8474,18 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -10327,7 +11394,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -10515,8 +11596,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -10572,8 +11663,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -10625,8 +11726,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -10678,8 +11789,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -10724,8 +11845,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -10788,8 +11919,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -10848,8 +11989,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -10887,8 +12038,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -10940,8 +12101,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -10986,8 +12157,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -11026,7 +12207,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -11163,7 +12358,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -11253,7 +12462,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -11321,7 +12544,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -11401,7 +12638,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -11500,7 +12751,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -11546,7 +12811,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -11636,7 +12915,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -11742,7 +13035,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -11812,7 +13119,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -11927,7 +13248,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -11979,8 +13314,18 @@
               "kind": "paragraph"
             },
             {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -12052,8 +13397,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -12091,8 +13446,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -12130,8 +13495,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -12169,8 +13544,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -12208,8 +13593,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -12295,8 +13690,18 @@
               ],
               "remarks": [
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -12341,8 +13746,18 @@
           ],
           "remarks": [
             {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -12743,7 +14158,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: Restricted"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": Restricted"
             },
             {
               "kind": "paragraph"
@@ -12802,7 +14231,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: Restricted"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": Restricted"
                 },
                 {
                   "kind": "paragraph"
@@ -12858,7 +14301,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: Restricted"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": Restricted"
                 },
                 {
                   "kind": "paragraph"
@@ -12921,7 +14378,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: Restricted"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": Restricted"
                 },
                 {
                   "kind": "paragraph"
@@ -13010,7 +14481,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: Restricted"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": Restricted"
                 },
                 {
                   "kind": "paragraph"
@@ -13049,7 +14534,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -13090,7 +14589,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -13147,7 +14660,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -13204,7 +14731,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -13261,7 +14802,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -13318,7 +14873,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -13374,7 +14943,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -13454,7 +15037,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -13541,7 +15138,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -13616,7 +15227,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -13697,7 +15322,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -13751,7 +15390,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -13838,7 +15491,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -13891,7 +15558,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -13968,7 +15649,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -14029,7 +15724,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -14123,7 +15832,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadWriteItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadWriteItem"
                 },
                 {
                   "kind": "paragraph"
@@ -14162,7 +15885,21 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "Minimum permission level: ReadItem"
+              "text": ""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "text",
+              "text": ": ReadItem"
             },
             {
               "kind": "paragraph"
@@ -14212,8 +15949,18 @@
                   "kind": "paragraph"
                 },
                 {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -14252,7 +15999,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -14291,7 +16052,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"
@@ -14330,7 +16105,21 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Minimum permission level: ReadItem"
+                  "text": ""
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
                 },
                 {
                   "kind": "paragraph"

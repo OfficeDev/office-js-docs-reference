@@ -931,7 +931,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Read
      */
@@ -967,7 +967,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.1]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -982,7 +982,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -1002,7 +1002,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -1017,7 +1017,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1036,7 +1036,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          * Applicable Outlook mode: Compose
          * Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
          *
@@ -1057,7 +1057,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          * Applicable Outlook mode: Compose
          * Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
          *
@@ -1077,7 +1077,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          * Applicable Outlook mode: Compose
          * Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
          *
@@ -1095,7 +1095,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          * Applicable Outlook mode: Compose
          * Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
          *
@@ -1112,7 +1112,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1137,7 +1137,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1161,7 +1161,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1183,7 +1183,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1205,7 +1205,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1230,7 +1230,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1254,7 +1254,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1276,7 +1276,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1296,7 +1296,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: Restricted
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
      *
      * Applicable Outlook mode: Read
      */
@@ -1334,7 +1334,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -1347,7 +1347,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1362,7 +1362,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -1379,7 +1379,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1397,7 +1397,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1409,7 +1409,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -1422,7 +1422,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1435,7 +1435,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1458,7 +1458,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1470,7 +1470,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -1498,7 +1498,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Read
      */
@@ -1530,7 +1530,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Read
      */
@@ -1571,7 +1571,7 @@ export declare namespace Office {
      * [Api set: Mailbox Preview]
      * 
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      * 
      * Applicable Outlook mode: Compose
      */
@@ -1586,7 +1586,7 @@ export declare namespace Office {
          * [Api set: Mailbox Preview]
          * 
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          * 
          * Applicable Outlook mode: Compose
          * 
@@ -1606,7 +1606,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          * 
          * Applicable Outlook mode: Compose
          * 
@@ -1639,7 +1639,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1655,7 +1655,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1671,7 +1671,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1687,7 +1687,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1707,7 +1707,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1730,7 +1730,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1744,7 +1744,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1758,7 +1758,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1770,7 +1770,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -1784,7 +1784,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1800,7 +1800,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1815,7 +1815,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1839,7 +1839,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1859,7 +1859,7 @@ export declare namespace Office {
         *
         * @remarks
         *
-        * Minimum permission level: ReadItem
+        * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
         * Applicable Outlook mode: Compose or read
         */
         location: string;
@@ -1878,7 +1878,7 @@ export declare namespace Office {
         *
         * @remarks
         *
-        * Minimum permission level: ReadItem
+        * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
         *
         * Applicable Outlook mode: Compose or read
         */
@@ -1899,7 +1899,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1923,7 +1923,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1945,7 +1945,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1958,7 +1958,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: Restricted
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -1970,7 +1970,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1982,7 +1982,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -1996,7 +1996,7 @@ export declare namespace Office {
          *
          * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -2010,7 +2010,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -2022,7 +2022,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -2041,7 +2041,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          * 
          * Applicable Outlook mode: Compose or read
          */
@@ -2060,7 +2060,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          * 
          * Applicable Outlook mode: Compose or read
          */
@@ -2075,7 +2075,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          * 
@@ -2096,7 +2096,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          * 
@@ -2117,7 +2117,7 @@ export declare namespace Office {
         *
         * @remarks
         *
-        * Minimum permission level: ReadItem
+        * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
         *
         * Applicable Outlook mode: Compose or read
         *
@@ -2135,7 +2135,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          * 
@@ -2156,7 +2156,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          * 
@@ -2181,7 +2181,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -2196,7 +2196,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2226,7 +2226,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2252,7 +2252,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2281,7 +2281,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2311,7 +2311,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2338,7 +2338,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2362,7 +2362,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2388,7 +2388,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2415,7 +2415,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: Restricted
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Compose
          */
@@ -2431,7 +2431,7 @@ export declare namespace Office {
          *
          * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          *
@@ -2454,7 +2454,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2476,7 +2476,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2495,7 +2495,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2516,7 +2516,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2534,7 +2534,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2554,7 +2554,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2584,7 +2584,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2614,7 +2614,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2641,7 +2641,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2670,7 +2670,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2688,7 +2688,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2710,7 +2710,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2728,7 +2728,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2749,7 +2749,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2773,7 +2773,7 @@ export declare namespace Office {
          *
          * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          *
@@ -2784,18 +2784,18 @@ export declare namespace Office {
          *
          * The itemClass property specifies the message class of the selected item. The following are the default message classes for the message or appointment item.
          *
-         * [div class="mx-tdBreakAll"|Type|Description|item class|
-         * |-----------|------------|------------|
-         * |Appointment items|These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.|IPM.Appointment,IPM.Appointment.Occurence|
-         * |Message items|These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.|IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled|
-         *
          * You can create custom message classes that extends a default message class, for example, a custom appointment message class IPM.Appointment.Contoso.
          *
          * [Api set: Mailbox 1.0]
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * |Type|Description|Item Class|
+         * |-----------|------------|------------|
+         * |Appointment items|These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.|IPM.Appointment,IPM.Appointment.Occurence|
+         * |Message items|These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.|IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled|
+         * 
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -2811,7 +2811,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -2825,7 +2825,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -2841,7 +2841,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -2860,7 +2860,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          *
@@ -2884,7 +2884,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          *
@@ -2902,7 +2902,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          * 
@@ -2920,7 +2920,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          * 
@@ -2936,7 +2936,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -2951,7 +2951,10 @@ export declare namespace Office {
          * @returns
          * If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present on the item, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.
          *
+         * @remarks
+         * 
          * While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the following table.
+         * 
          * |Value of entityType|Type of objects in returned array|Required Permission Level|
          * |-------|-----------|----------|
          * |Address|String|Restricted|
@@ -2961,9 +2964,8 @@ export declare namespace Office {
          * |PhoneNumber|PhoneNumber|Restricted|
          * |TaskSuggestion|TaskSuggestion|ReadItem|
          * |URL|String|Restricted|
-         *
-         * @remarks
-         * Minimum permission level: Restricted
+         * 
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Read
          *
@@ -2981,7 +2983,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          *
@@ -3005,7 +3007,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -3026,7 +3028,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          *
@@ -3042,7 +3044,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          *
@@ -3065,7 +3067,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -3086,7 +3088,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -3104,7 +3106,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          */
@@ -3120,7 +3122,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -3136,7 +3138,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -3150,7 +3152,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -3169,7 +3171,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -3187,7 +3189,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -3199,7 +3201,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -3215,7 +3217,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -3229,7 +3231,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -3243,7 +3245,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Read
      */
@@ -3287,7 +3289,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.1]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose
      */
@@ -3304,7 +3306,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          */
@@ -3319,7 +3321,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          */
@@ -3337,7 +3339,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -3354,7 +3356,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -3373,7 +3375,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -3391,7 +3393,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -3414,7 +3416,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: Restricted
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -3434,7 +3436,7 @@ export declare namespace Office {
          *
          * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://msdn.microsoft.com/library/office/dn148008.aspx | get attachments from the selected item}.
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -3458,7 +3460,7 @@ export declare namespace Office {
          *
          * The restUrl value can be used to make {@link https://docs.microsoft.com/outlook/rest/ | REST API} calls to the user's mailbox.
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -3472,7 +3474,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -3493,7 +3495,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: Restricted
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -3512,7 +3514,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -3530,7 +3532,7 @@ export declare namespace Office {
          *
          * Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs (such as the {@link https://msdn.microsoft.com/office/office365/APi/mail-rest-operations | Outlook Mail API} or the {@link http://graph.microsoft.io/ | Microsoft Graph}. The convertToRestId method converts an EWS-formatted ID into the proper format for REST.
          *
-         * Minimum permission level: Restricted
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -3547,7 +3549,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -3572,7 +3574,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -3596,7 +3598,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -3620,7 +3622,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          *
@@ -3638,7 +3640,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          *
@@ -3679,7 +3681,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose and read
          *
@@ -3704,7 +3706,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose and read
          *
@@ -3726,7 +3728,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose and read
          *
@@ -3745,7 +3747,7 @@ export declare namespace Office {
          *
          * The getUserIdentityTokenAsync method returns a token that you can use to identify and {@link https://msdn.microsoft.com/library/office/fp179828.aspx | authenticate the add-in and user with a third-party system}.
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose and read
          *
@@ -3784,7 +3786,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteMailbox
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteMailbox
          *
          * Applicable Outlook mode: Compose and read
          *
@@ -3805,7 +3807,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Read
      */
@@ -3841,7 +3843,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.3]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -3873,7 +3875,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.3]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -3892,7 +3894,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -3908,7 +3910,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -3926,7 +3928,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -3943,7 +3945,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -3954,7 +3956,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -3969,7 +3971,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -3982,7 +3984,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -3998,7 +4000,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -4011,7 +4013,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -4026,7 +4028,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -4042,7 +4044,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -4061,7 +4063,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -4077,7 +4079,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -4095,7 +4097,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -4113,7 +4115,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Read
      */
@@ -4135,7 +4137,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.1]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose
      */
@@ -4154,7 +4156,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -4180,7 +4182,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -4203,7 +4205,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -4228,7 +4230,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -4247,7 +4249,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -4262,7 +4264,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -4287,7 +4289,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -4315,7 +4317,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -4340,7 +4342,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -4367,7 +4369,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -4397,7 +4399,7 @@ export declare namespace Office {
      * |Meeting Request - Read Series|No (setAsync not available)|Yes (item.recurrence)|
      * |Meeting Request - Read Instance|No (setAsync not available)|Yes (item.recurrence)|
      * 
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      * 
      * Applicable Outlook mode: Compose or read
      */
@@ -4409,7 +4411,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          * 
          * Applicable Outlook mode: Compose or read
          */
@@ -4421,7 +4423,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          * 
          * Applicable Outlook mode: Compose or read
          */
@@ -4434,7 +4436,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          * 
          * Applicable Outlook mode: Compose or read
          */
@@ -4447,7 +4449,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          * 
          * Applicable Outlook mode: Compose or read
          */
@@ -4462,7 +4464,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          * 
          * Applicable Outlook mode: Compose or read
          * 
@@ -4481,7 +4483,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          * 
          * Applicable Outlook mode: Compose or read
          * 
@@ -4498,7 +4500,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          * 
          * Applicable Outlook mode: Compose
          * 
@@ -4520,7 +4522,7 @@ export declare namespace Office {
          * 
          * @remarks
          * 
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          * 
          * Applicable Outlook mode: Compose
          * 
@@ -4539,7 +4541,7 @@ export declare namespace Office {
      * 
      * @remarks
      * 
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      * 
      * Applicable Outlook mode: Compose or read
      */
@@ -4631,7 +4633,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: Restricted
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -4642,7 +4644,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: Restricted
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -4656,7 +4658,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: Restricted
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -4671,7 +4673,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: Restricted
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -4690,7 +4692,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: Restricted
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -4706,7 +4708,7 @@ export declare namespace Office {
      * [Api set: Mailbox Preview]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -4717,7 +4719,7 @@ export declare namespace Office {
          * [Api set: Mailbox Preview]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -4729,7 +4731,7 @@ export declare namespace Office {
          * [Api set: Mailbox Preview]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -4741,7 +4743,7 @@ export declare namespace Office {
          * [Api set: Mailbox Preview]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -4753,7 +4755,7 @@ export declare namespace Office {
          * [Api set: Mailbox Preview]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -4765,7 +4767,7 @@ export declare namespace Office {
          * [Api set: Mailbox Preview]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -4777,7 +4779,7 @@ export declare namespace Office {
          * [Api set: Mailbox Preview]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          * 
@@ -4791,7 +4793,7 @@ export declare namespace Office {
          * [Api set: Mailbox Preview]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          * 
@@ -4809,7 +4811,7 @@ export declare namespace Office {
          * [Api set: Mailbox Preview]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          * 
@@ -4825,7 +4827,7 @@ export declare namespace Office {
          * [Api set: Mailbox Preview]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          * 
@@ -4843,7 +4845,7 @@ export declare namespace Office {
          * [Api set: Mailbox Preview]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          * 
@@ -4859,7 +4861,7 @@ export declare namespace Office {
          * [Api set: Mailbox Preview]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          * 
@@ -4876,7 +4878,7 @@ export declare namespace Office {
          * [Api set: Mailbox Preview]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          * 
@@ -4893,7 +4895,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.1]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose
      */
@@ -4905,7 +4907,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -4920,7 +4922,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -4937,7 +4939,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -4957,7 +4959,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -4974,7 +4976,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -4993,7 +4995,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -5013,7 +5015,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Read
      */
@@ -5033,7 +5035,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.1]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose
      */
@@ -5046,7 +5048,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -5061,7 +5063,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -5080,7 +5082,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -5102,7 +5104,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -5121,7 +5123,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -5142,7 +5144,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -5158,7 +5160,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -5179,7 +5181,7 @@ export declare namespace Office {
          * |office365 |The mailbox is associated with an Office 365 work or school account.|
          * |outlookCom |The mailbox is associated with a personal Outlook.com account.|
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -5190,7 +5192,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -5201,7 +5203,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -5212,7 +5214,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
