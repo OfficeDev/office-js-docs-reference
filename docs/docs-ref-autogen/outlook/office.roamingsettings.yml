@@ -39,8 +39,6 @@ items:
 
       ```javascript
 
-      // DESCRIPTION EXAMPLE
-
       // Get the current value of the 'myKey' setting
 
       var value = Office.context.roamingSettings.get('myKey');

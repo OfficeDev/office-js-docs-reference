@@ -16,14 +16,16 @@ Office.Body.getAsync:
     }
 Office.Body.prependAsync:
   - |-
-    // DESCRIPTION EXAMPLE
+    // When including links in HTML markup, you can disable online link preview
+    // by setting the id attribute on the anchor (<a>) to "LPNoLP".
     Office.context.mailbox.item.body.prependAsync(
         '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
         {coercionType: Office.CoercionType.Html},
         callback);
 Office.Body.setAsync:
   - |-
-    // DESCRIPTION EXAMPLE
+    // When including links in HTML markup, you can disable online link preview
+    // by setting the id attribute on the anchor (<a>) to "LPNoLP".
     Office.context.mailbox.item.body.setAsync(
         '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
         {coercionType: Office.CoercionType.Html},
@@ -43,7 +45,8 @@ Office.Body.setAsync:
     }
 Office.Body.setSelectedDataAsync:
   - |-
-    // DESCRIPTION EXAMPLE
+    // When including links in HTML markup, you can disable online link preview
+    // by setting the id attribute on the anchor (<a>) to "LPNoLP".
     Office.context.mailbox.item.body.setSelectedDataAsync(
         '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
         {coercionType: Office.CoercionType.Html},
@@ -118,8 +121,7 @@ Office.CustomProperties.saveAsync:
     }
 Office.Event:
   - |-
-    // DESCRIPTION EXAMPLE
-    // MANIFEST EXAMPLE
+    // In this example, consider a button defined in an add-in manifest as follows:
     <Control xsi:type="Button" id="eventTestButton">
         <Label resid="eventButtonLabel" />
         <Tooltip resid="eventButtonTooltip" />
@@ -320,7 +322,6 @@ Office.Recurrence.setAsync:
     //Result: This created a recurring event from November 2, 2017 to December 2, 2017 at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
 Office.RoamingSettings:
   - |-
-    // DESCRIPTION EXAMPLE
     // Get the current value of the 'myKey' setting
     var value = Office.context.roamingSettings.get('myKey');
     // Update the value of the 'myKey' setting

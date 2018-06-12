@@ -164,7 +164,9 @@ items:
 
       ```javascript
 
-      // DESCRIPTION EXAMPLE
+      // When including links in HTML markup, you can disable online link preview
+
+      // by setting the id attribute on the anchor (<a>) to "LPNoLP".
 
       Office.context.mailbox.item.body.prependAsync(
           '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
@@ -238,7 +240,9 @@ items:
 
       ```javascript
 
-      // DESCRIPTION EXAMPLE
+      // When including links in HTML markup, you can disable online link preview
+
+      // by setting the id attribute on the anchor (<a>) to "LPNoLP".
 
       Office.context.mailbox.item.body.setAsync(
           '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
@@ -328,7 +332,9 @@ items:
 
       ```javascript
 
-      // DESCRIPTION EXAMPLE
+      // When including links in HTML markup, you can disable online link preview
+
+      // by setting the id attribute on the anchor (<a>) to "LPNoLP".
 
       Office.context.mailbox.item.body.setSelectedDataAsync(
           '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
