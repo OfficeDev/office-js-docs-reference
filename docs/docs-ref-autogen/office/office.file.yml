@@ -22,17 +22,22 @@ items:
   - uid: office.Office.File.closeAsync
     summary: Closes the document file.
     remarks: >-
-      When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can
-      access from the callback function's only parameter. In the callback function passed to the closeAsync method, you
-      can use the properties of the AsyncResult object to return the following information. \|Property \|Use to...\|
-      \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\| \|AsyncResult.value\|Always returns undefined because there is no
-      object or data to retrieve.\| \|AsyncResult.status\|Determine the success or failure of the operation.\|
-      \|AsyncResult.error\|Access an Error object that provides error information if the operation failed.\|
-      \|AsyncResult.asyncContext\|A user-defined item of any type that is returned in the AsyncResult object without
-      being altered.\|
+      No more than two documents are allowed to be in memory; otherwise the Document.getFileAsync operation will fail.
+      Use the File.closeAsync method to close the file when you are finished working with it.
 
 
-      Available in Requirement set: File
+      In the callback function passed to the closeAsync method, you can use the properties of the AsyncResult object to
+      return the following information.
+
+
+      \|Property \|Use to...\| \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\| \|AsyncResult.value\|Always returns undefined
+      because there is no object or data to retrieve.\| \|AsyncResult.status\|Determine the success or failure of the
+      operation.\| \|AsyncResult.error\|Access an Error object that provides error information if the operation
+      failed.\| \|AsyncResult.asyncContext\|A user-defined item of any type that is returned in the AsyncResult object
+      without being altered.\|
+
+
+      Hosts: PowerPoint, Word
     name: closeAsync(callback)
     fullName: office.Office.File.closeAsync
     langs:
@@ -46,22 +51,26 @@ items:
         description: ''
       parameters:
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+            When the function you passed to the callback parameter executes, it receives an AsyncResult object that you
+            can access from the callback function's only parameter. Available in Requirement set: File
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.File.getSliceAsync
     summary: Returns the specified slice.
     remarks: >-
-      When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can
-      access from the callback function's only parameter. In the callback function passed to the getSliceAsync method,
-      you can use the properties of the AsyncResult object to return the following information. \|Property \|Use to...\|
-      \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\| \|AsyncResult.value\|Access the Slice object.\|
-      \|AsyncResult.status\|Determine the success or failure of the operation.\| \|AsyncResult.error\|Access an Error
-      object that provides error information if the operation failed.\| \|AsyncResult.asyncContext\|A user-defined item
-      of any type that is returned in the AsyncResult object without being altered.\|
+      In the callback function passed to the getSliceAsync method, you can use the properties of the AsyncResult object
+      to return the following information.
 
 
-      Available in Requirement set: File
+      \|Property \|Use to...\| \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\| \|AsyncResult.value\|Access the Slice
+      object.\| \|AsyncResult.status\|Determine the success or failure of the operation.\| \|AsyncResult.error\|Access
+      an Error object that provides error information if the operation failed.\| \|AsyncResult.asyncContext\|A
+      user-defined item of any type that is returned in the AsyncResult object without being altered.\|
+
+
+      Hosts: PowerPoint, Word
     name: 'getSliceAsync(sliceIndex, callback)'
     fullName: office.Office.File.getSliceAsync
     langs:
@@ -79,7 +88,10 @@ items:
           type:
             - number
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+            When the function you passed to the callback parameter executes, it receives an AsyncResult object that you
+            can access from the callback function's only parameter. Available in Requirement set: File
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.File.size

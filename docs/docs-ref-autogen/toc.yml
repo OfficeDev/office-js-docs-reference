@@ -552,7 +552,7 @@ items:
           - name: TableRowCollection
             uid: onenote.OneNote.TableRowCollection
       - name: Outlook
-        uid: OutlookRoot
+        uid: ''
         items:
           - name: Outlook - Preview
             uid: outlook
@@ -561,6 +561,8 @@ items:
                 uid: outlook.Office.AppointmentCompose
               - name: AppointmentRead
                 uid: outlook.Office.AppointmentRead
+              - name: AsyncContextOptions
+                uid: outlook.Office.AsyncContextOptions
               - name: AttachmentDetails
                 uid: outlook.Office.AttachmentDetails
               - name: Body

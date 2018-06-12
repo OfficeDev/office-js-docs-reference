@@ -5,8 +5,10 @@ items:
       The NotificationMessages object is returned as the notificationMessages property of an item.
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
     name: Office.NotificationMessages
@@ -27,29 +29,38 @@ items:
 
       There are a maximum of 5 notifications per message. Setting more will return a
       NumberOfNotificationMessagesExceeded error.
-    remarks: |
-      Minimum permission level: ReadItem
+    remarks: >
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
 
+
       #### Examples
 
+
       ```javascript
+
       // Create three notifications, each with a different key
+
       Office.context.mailbox.item.notificationMessages.addAsync("progress", {
           type: "progressIndicator",
           message : "An add-in is processing this message."
       });
+
       Office.context.mailbox.item.notificationMessages.addAsync("information", {
           type: "informationalMessage",
           message : "The add-in processed this message.",
           icon : "iconid",
           persistent: false
       });
+
       Office.context.mailbox.item.notificationMessages.addAsync("error", {
           type: "errorMessage",
           message : "The add-in failed to process this message."
       });
+
       ```
     name: 'addAsync(key, JSONmessage, options, callback)'
     fullName: outlook.Office.NotificationMessages.addAsync
@@ -94,15 +105,21 @@ items:
       Returns all keys and messages for an item.
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |
-      Minimum permission level: ReadItem
+    remarks: >
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
 
+
       #### Examples
 
+
       ```javascript
+
       // Get all notifications
+
       Office.context.mailbox.item.notificationMessages.getAllAsync(function (asyncResult) {
           if (asyncResult.status != "failed") {
               Office.context.mailbox.item.notificationMessages.replaceAsync( "notifications", {
@@ -113,6 +130,7 @@ items:
               });
           }
       });
+
       ```
     name: 'getAllAsync(options, callback)'
     fullName: outlook.Office.NotificationMessages.getAllAsync
@@ -143,16 +161,23 @@ items:
       Removes a notification message for an item.
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |
-      Minimum permission level: ReadItem
+    remarks: >
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
 
+
       #### Examples
 
+
       ```javascript
+
       // Remove a notification
+
       Office.context.mailbox.item.notificationMessages.removeAsync("progress");
+
       ```
     name: 'removeAsync(key, options, callback)'
     fullName: outlook.Office.NotificationMessages.removeAsync
@@ -189,21 +214,28 @@ items:
       If a notification message with the specified key doesn't exist, replaceAsync will add the notification.
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |
-      Minimum permission level: ReadItem
+    remarks: >
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
 
+
       #### Examples
 
+
       ```javascript
+
       // Replace a notification with an informational notification
+
       Office.context.mailbox.item.notificationMessages.replaceAsync("progress", {
           type: "informationalMessage",
           message : "The message was processed successfully.",
           icon : "iconid",
           persistent: false
       });
+
       ```
     name: 'replaceAsync(key, JSONmessage, options, callback)'
     fullName: outlook.Office.NotificationMessages.replaceAsync
