@@ -717,6 +717,8 @@ items:
               console.log('Debug info: ' + JSON.stringify(error.debugInfo));
           }
       });
+      // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
+      // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
       ```
   - uid: word.Word.ContentControl.insertOoxml
     summary: >-
@@ -925,6 +927,8 @@ items:
               console.log('Debug info: ' + JSON.stringify(error.debugInfo));
           }
       });
+      // The Silly stories add-in sample shows how to use the insertText method.
+      // https://aka.ms/sillystorywordaddin
       ```
   - uid: word.Word.ContentControl.lists
     summary: |-
@@ -999,6 +1003,7 @@ items:
       ```
 
       ```javascript
+      // Load all of the content control properties
       // Run a batch operation against the Word object model.
       Word.run(function (context) {
           

@@ -43,6 +43,7 @@ items:
       #### Examples
 
       ```javascript
+      // Set to show legend of Chart1 and make it on top of the chart.
       Excel.run(function (ctx) { 
           var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;    
           gridlines.format.line.clear();
@@ -116,6 +117,7 @@ items:
       #### Examples
 
       ```javascript
+      // Set chart major gridlines on value axis to be red.
       Excel.run(function (ctx) {
           var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
           gridlines.format.line.color = "#FF0000";

@@ -218,6 +218,8 @@ items:
               console.log('Debug info: ' + JSON.stringify(error.debugInfo));
           }
       });
+      // The Word-Add-in-DocumentAssembly sample has another example of using the getByTag method.
+      // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
       ```
   - uid: word.Word.ContentControlCollection.getByTitle
     summary: |-
@@ -272,6 +274,8 @@ items:
               console.log('Debug info: ' + JSON.stringify(error.debugInfo));
           }
       });
+      // The Word-Add-in-DocumentAssembly sample has another example of using the getByTitle method.
+      // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
       ```
   - uid: word.Word.ContentControlCollection.getByTypes
     summary: |-
@@ -413,13 +417,16 @@ items:
           description: ''
           type:
             - Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
-    remarks: |
+    remarks: >
 
 
       #### Examples
 
+
       ```javascript
+
       // Run a batch operation against the Word object model.
+
       Word.run(function (context) {
 
           // Create a proxy object for the content controls collection.
@@ -475,12 +482,19 @@ items:
               }
           });
       })
+
       .catch(function (error) {
           console.log('Error: ' + JSON.stringify(error));
           if (error instanceof OfficeExtension.Error) {
               console.log('Debug info: ' + JSON.stringify(error.debugInfo));
           }
       });
+
+      // The Silly stories add-in sample shows how the load method is used to load the content control collection with
+      the tag and title properties.
+
+      // https://aka.ms/sillystorywordaddin
+
       ```
   - uid: word.Word.ContentControlCollection.toJSON
     name: toJSON()

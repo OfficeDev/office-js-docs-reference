@@ -288,12 +288,16 @@ items:
           description: ''
           type:
             - Excel.Interfaces.ChartLoadOptions
-    remarks: |
+    remarks: >
 
 
       #### Examples
 
+
       ```javascript
+
+      // Get a chart named "Chart1"
+
       Excel.run(function (ctx) { 
           var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.load('name');
@@ -306,9 +310,15 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
 
+
       ```javascript
+
+      // Rename the chart to new name, resize the chart to 200 points in both height and weight. Move Chart1 to 100
+      points to the top and left. 
+
       Excel.run(function (ctx) { 
           var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.name="New Name";
@@ -323,9 +333,12 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
 
+
       ```javascript
+
       Excel.run(function (ctx) { 
           var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");
           chart.name="New Name";    
@@ -340,6 +353,7 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
   - uid: excel.Excel.Chart.name
     summary: |-
@@ -426,6 +440,7 @@ items:
       #### Examples
 
       ```javascript
+      // Set the sourceData to be "A1:B4" and seriesBy to be "Columns"
       Excel.run(function (ctx) { 
           var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           var sourceData = "A1:B4";

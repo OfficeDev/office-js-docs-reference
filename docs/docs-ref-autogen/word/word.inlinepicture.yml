@@ -130,6 +130,7 @@ items:
       #### Examples
 
       ```javascript
+      // To use this snippet, add an inline picture to the document and assign it an alt text title.
       // Run a batch operation against the Word object model.
       Word.run(function (context) {
           
@@ -178,6 +179,7 @@ items:
       #### Examples
 
       ```javascript
+      // To use this snippet, add an inline picture to the document and assign it an alt text title.
       // Run a batch operation against the Word object model.
       Word.run(function (context) {
           

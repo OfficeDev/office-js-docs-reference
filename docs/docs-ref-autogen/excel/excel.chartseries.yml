@@ -200,6 +200,7 @@ items:
       #### Examples
 
       ```javascript
+      // Rename the 1st series of Chart1 to "New Series Name"
       Excel.run(function (ctx) { 
           var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.series.getItemAt(0).name = "New Series Name";

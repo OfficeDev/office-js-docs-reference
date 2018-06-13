@@ -142,6 +142,7 @@ items:
       #### Examples
 
       ```javascript
+      // Change the font name
       // Run a batch operation against the Word object model.
       Word.run(function (context) {
 
@@ -166,6 +167,7 @@ items:
       ```
 
       ```javascript
+      // Change the font color
       // Run a batch operation against the Word object model.
       Word.run(function (context) {
 
@@ -190,6 +192,7 @@ items:
       ```
 
       ```javascript
+      // Change the font size
       // Run a batch operation against the Word object model.
       Word.run(function (context) {
 
@@ -214,6 +217,7 @@ items:
       ```
 
       ```javascript
+      // Highlight selected text
       // Run a batch operation against the Word object model.
       Word.run(function (context) {
 
@@ -238,6 +242,7 @@ items:
       ```
 
       ```javascript
+      // Bold format text
       // Run a batch operation against the Word object model.
       Word.run(function (context) {
 
@@ -262,6 +267,7 @@ items:
       ```
 
       ```javascript
+      // Underline format text
       // Run a batch operation against the Word object model.
       Word.run(function (context) {
 
@@ -286,6 +292,7 @@ items:
       ```
 
       ```javascript
+      // Strike format text
       // Run a batch operation against the Word object model.
       Word.run(function (context) {
 

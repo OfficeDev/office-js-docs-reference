@@ -55,6 +55,43 @@ items:
           description: ''
           type:
             - Excel.Interfaces.ChartAxisTitleLoadOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // Get the text of Chart Axis Title from the value axis of Chart1.
+      Excel.run(function (ctx) { 
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
+          var title = chart.axes.valueAxis.title;
+          title.load('text');
+          return ctx.sync().then(function() {
+                  console.log(title.text);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
+
+      ```javascript
+      // Add "Values" as the title for the value Axis 
+      Excel.run(function (ctx) { 
+          var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
+          chart.axes.valueAxis.title.text = "Values";
+          return ctx.sync().then(function() {
+                  console.log("Axis Title Added ");
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+      ```
   - uid: excel.Excel.ChartAxisTitle.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'

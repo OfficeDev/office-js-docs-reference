@@ -87,6 +87,7 @@ items:
       ```
 
       ```javascript
+      // The example below adds grid border around the range.
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";

@@ -40,6 +40,7 @@ items:
       #### Examples
 
       ```javascript
+      // Clear the line format of the major Gridlines on value axis of the Chart named "Chart1"
       Excel.run(function (ctx) { 
           var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;    
           gridlines.format.line.clear();
