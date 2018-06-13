@@ -118,6 +118,7 @@ items:
       ```
 
       ```javascript
+      // The example below sets fill color. 
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "F:G";

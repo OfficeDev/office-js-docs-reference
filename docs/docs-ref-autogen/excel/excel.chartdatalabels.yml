@@ -67,6 +67,7 @@ items:
       #### Examples
 
       ```javascript
+      // Make Series Name shown in Datalabels and set the position of datalabels to be "top";
       Excel.run(function (ctx) { 
           var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
           chart.datalabels.showValue = true;

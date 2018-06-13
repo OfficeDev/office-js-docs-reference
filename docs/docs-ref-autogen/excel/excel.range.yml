@@ -166,6 +166,7 @@ items:
       #### Examples
 
       ```javascript
+      // Below example clears format and contents of the range. 
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "D:F";
@@ -582,12 +583,17 @@ items:
         type:
           - Excel.Range
         description: ''
-    remarks: |
+    remarks: >
 
 
       #### Examples
 
+
       ```javascript
+
+      // Note: the grid properties of the Range (values, numberFormat, formulas) contains null since the Range in
+      question is unbounded.
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "D:F";
@@ -603,6 +609,7 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
   - uid: excel.Excel.Range.getEntireRow
     summary: >-
@@ -622,12 +629,17 @@ items:
         type:
           - Excel.Range
         description: ''
-    remarks: |
+    remarks: >
 
 
       #### Examples
 
+
       ```javascript
+
+      // Gets an object that represents the entire row of the range (for example, if the current range represents cells
+      "B4:E11", it's GetEntireRow is a range that represents rows "4:11").
+
       Excel.run(function (ctx) {
           var sheetName = "Sheet1";
           var rangeAddress = "D:F"; 
@@ -643,6 +655,7 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
   - uid: excel.Excel.Range.getImage
     summary: |-
@@ -1370,6 +1383,7 @@ items:
       #### Examples
 
       ```javascript
+      // Below example uses range address to get the range object.
       Excel.run(function (ctx) {
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8"; 
@@ -1388,6 +1402,7 @@ items:
       ```
 
       ```javascript
+      // Below example uses a named-range to get the range object.
       Excel.run(function (ctx) { 
           var rangeName = 'MyRange';
           var range = ctx.workbook.names.getItem(rangeName).range;
@@ -1404,6 +1419,7 @@ items:
       ```
 
       ```javascript
+      // The example below sets number-format, values and formulas on a grid that contains 2x3 grid.
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "F5:G7";

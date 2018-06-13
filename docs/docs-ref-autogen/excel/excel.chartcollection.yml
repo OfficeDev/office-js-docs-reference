@@ -52,12 +52,17 @@ items:
           description: Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy for details.
           type:
             - Excel.ChartSeriesBy
-    remarks: |
+    remarks: >
 
 
       #### Examples
 
+
       ```javascript
+
+      // Add a chart of chartType "ColumnClustered" on worksheet "Charts" with sourceData from Range "A1:B4" and
+      seriresBy is set to be "auto".
+
       Excel.run(function (ctx) { 
           var rangeSelection = "A1:B4";
           var range = ctx.workbook.worksheets.getItem(sheetName)
@@ -72,6 +77,7 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
   - uid: excel.Excel.ChartCollection.count
     summary: |-
@@ -295,6 +301,7 @@ items:
       ```
 
       ```javascript
+      // Get the number of charts
       Excel.run(function (ctx) { 
           var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
           charts.load('count');

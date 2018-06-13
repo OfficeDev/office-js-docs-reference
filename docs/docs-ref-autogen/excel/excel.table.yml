@@ -361,6 +361,7 @@ items:
       #### Examples
 
       ```javascript
+      // Get a table by name. 
       Excel.run(function (ctx) { 
           var tableName = 'Table1';
           var table = ctx.workbook.tables.getItem(tableName);
@@ -377,6 +378,7 @@ items:
       ```
 
       ```javascript
+      // Get a table by index.
       Excel.run(function (ctx) { 
           var index = 0;
           var table = ctx.workbook.tables.getItemAt(0);
@@ -393,6 +395,7 @@ items:
       ```
 
       ```javascript
+      // Set table style. 
       Excel.run(function (ctx) { 
           var tableName = 'Table1';
           var table = ctx.workbook.tables.getItem(tableName);

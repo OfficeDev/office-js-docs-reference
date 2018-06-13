@@ -21,6 +21,8 @@ Word.Body.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+    // The Silly stories add-in sample shows how the clear method can be used to clear the contents of a document.
+    // https://aka.ms/sillystorywordaddin
 Word.Body.getHtml:
   - |-
     // Run a batch operation against the Word object model.
@@ -183,6 +185,10 @@ Word.Body.insertInlinePictureFromBase64:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+    // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
+    // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+    // The Word-Add-in-DocumentAssembly sample shows how you can use this API to assemble a document.
+    // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 Word.Body.insertParagraph:
   - |-
     // Run a batch operation against the Word object model.
@@ -206,6 +212,8 @@ Word.Body.insertParagraph:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+    // The Word-Add-in-DocumentAssembly sample shows how you can use the insertParagraph method to assemble a document.
+    // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 Word.Body.insertText:
   - |-
     // Run a batch operation against the Word object model.
@@ -269,6 +277,8 @@ Word.Body.search:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+    // The Word-Add-in-DocumentAssembly sample provides another example of how to search a document.
+    // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 Word.Body.select:
   - |-
     // Run a batch operation against the Word object model.
@@ -295,6 +305,7 @@ Word.Body.select:
     });
 Word.Body.load:
   - |-
+    // Get the text property on the body object
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
     
@@ -317,6 +328,7 @@ Word.Body.load:
         }
     });
   - |-
+    // Get the style and the font size, font name, and font color properties on the body object.
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
     
@@ -600,6 +612,8 @@ Word.ContentControl.insertInlinePictureFromBase64:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+    // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
+    // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 Word.ContentControl.insertParagraph:
   - |-
     // Run a batch operation against the Word object model.
@@ -672,6 +686,8 @@ Word.ContentControl.insertText:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+    // The Silly stories add-in sample shows how to use the insertText method.
+    // https://aka.ms/sillystorywordaddin
 Word.ContentControl.load:
   - |-
     // Run a batch operation against the Word object model.
@@ -704,6 +720,7 @@ Word.ContentControl.load:
         }
     });
   - |-
+    // Load all of the content control properties
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
         
@@ -906,6 +923,8 @@ Word.ContentControlCollection.getByTag:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+    // The Word-Add-in-DocumentAssembly sample has another example of using the getByTag method.
+    // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 Word.ContentControlCollection.getByTitle:
   - |-
     // Run a batch operation against the Word object model.
@@ -934,6 +953,8 @@ Word.ContentControlCollection.getByTitle:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+    // The Word-Add-in-DocumentAssembly sample has another example of using the getByTitle method.
+    // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
 Word.ContentControlCollection.getFirst:
   - |-
     // Run a batch operation against the Word object model.
@@ -1025,6 +1046,8 @@ Word.ContentControlCollection.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+    // The Silly stories add-in sample shows how the load method is used to load the content control collection with the tag and title properties.
+    // https://aka.ms/sillystorywordaddin
 Word.Document.getSelection:
   - |-
     // Run a batch operation against the Word object model.
@@ -1143,6 +1166,7 @@ Word.OfficeExtension.Error.toString:
     });
 Word.Font.load:
   - |-
+    // Change the font name
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
     
@@ -1165,6 +1189,7 @@ Word.Font.load:
         }
     });
   - |-
+    // Change the font color
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
     
@@ -1187,6 +1212,7 @@ Word.Font.load:
         }
     });
   - |-
+    // Change the font size
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
     
@@ -1209,6 +1235,7 @@ Word.Font.load:
         }
     });
   - |-
+    // Highlight selected text
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
     
@@ -1231,6 +1258,7 @@ Word.Font.load:
         }
     });
   - |-
+    // Bold format text
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
     
@@ -1253,6 +1281,7 @@ Word.Font.load:
         }
     });
   - |-
+    // Underline format text
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
     
@@ -1275,6 +1304,7 @@ Word.Font.load:
         }
     });
   - |-
+    // Strike format text
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
     
@@ -1298,6 +1328,7 @@ Word.Font.load:
     });
 Word.InlinePicture.getNext:
   - |-
+    // To use this snippet, add an inline picture to the document and assign it an alt text title.
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
         
@@ -1325,6 +1356,7 @@ Word.InlinePicture.getNext:
     });
 Word.InlinePicture.getNextOrNullObject:
   - |-
+    // To use this snippet, add an inline picture to the document and assign it an alt text title.
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
         
@@ -1984,6 +2016,8 @@ Word.Range.insertOoxml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+    // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
+    // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 Word.Range.insertParagraph:
   - |-
     // Run a batch operation against the Word object model.
@@ -2061,6 +2095,7 @@ Word.Range.select:
     });
 Word.RequestContext.load:
   - |-
+    // The following example shows how the request context is used to load the text property on a paragraph collection.
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
     
@@ -2090,9 +2125,12 @@ Word.RequestContext.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-    
+    // Note: You must call load() after adding tracked objects.    
 Word.RequestContext.sync:
   - |-
+    // The following example shows the sync method used twice: 
+    //   1) load the content controls collection with the text property for each content control, and
+    //   2) clearing the contents of the first content control in the collection.
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
     
@@ -2129,6 +2167,7 @@ Word.RequestContext.sync:
     });
 Word.SearchOptions.load:
   - |-
+    // Ignore punctuation search
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
         
@@ -2162,6 +2201,7 @@ Word.SearchOptions.load:
         }
     });
   - |-
+    // Search based on a prefix
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
         
@@ -2195,6 +2235,7 @@ Word.SearchOptions.load:
         }
     });
   - |-
+    // Search based on a suffix
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
     
@@ -2228,6 +2269,7 @@ Word.SearchOptions.load:
         }
     });
   - |-
+    // Search using a wildcard
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
         

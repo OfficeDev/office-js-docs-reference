@@ -380,6 +380,7 @@ items:
       #### Examples
 
       ```javascript
+      // Below example uses range address to get the range object.
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
@@ -398,6 +399,7 @@ items:
       ```
 
       ```javascript
+      // Below example uses a named-range to get the range object.
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeName = 'MyRange';
@@ -573,6 +575,7 @@ items:
       #### Examples
 
       ```javascript
+      // Get worksheet properties based on sheet name.
       Excel.run(function (ctx) { 
           var wSheetName = 'Sheet1';
           var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
@@ -589,6 +592,7 @@ items:
       ```
 
       ```javascript
+      // Set worksheet position. 
       Excel.run(function (ctx) { 
           var wSheetName = 'Sheet1';
           var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
