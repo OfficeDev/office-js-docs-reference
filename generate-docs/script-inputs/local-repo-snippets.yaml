@@ -6044,7 +6044,7 @@ Word.Body.insertInlinePictureFromBase64:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-    // Read Create better add-ins for Word with Office Open XML for guidance on working with OOXML.
+    // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
     // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
     // The Word-Add-in-DocumentAssembly sample shows how you can use this API to assemble a document.
     // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
@@ -6471,7 +6471,7 @@ Word.ContentControl.insertInlinePictureFromBase64:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-    // Read Create better add-ins for Word with Office Open XML for guidance on working with OOXML.
+    // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
     // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 Word.ContentControl.insertParagraph:
   - |-
@@ -7875,7 +7875,7 @@ Word.Range.insertOoxml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-    // Additional information Read Create better add-ins for Word with Office Open XML for guidance on working with OOXML.
+    // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
     // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
 Word.Range.insertParagraph:
   - |-
