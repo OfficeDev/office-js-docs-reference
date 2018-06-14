@@ -521,6 +521,11 @@ items:
 
 
       Applicable Outlook mode: Compose and read
+
+
+      In addition to this signature, the method has the following signature: getCallbackTokenAsync(callback: (result:
+      AsyncResult) =&gt; void): void; getCallbackTokenAsync(callback: (result: AsyncResult) =&gt; void, userContext?:
+      any): void;
     name: 'getCallbackTokenAsync(options, callback)'
     fullName: outlook.Office.Mailbox.getCallbackTokenAsync
     langs:

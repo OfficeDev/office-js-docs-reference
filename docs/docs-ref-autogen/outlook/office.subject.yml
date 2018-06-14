@@ -22,8 +22,11 @@ items:
       - outlook.Office.Subject.setAsync
   - uid: outlook.Office.Subject.getAsync
     summary: >-
-      Gets the subject of an appointment or message. The getAsync method starts an asynchronous call to the Exchange
-      server to get the subject of an appointment or message.
+      Gets the subject of an appointment or message.
+
+
+      The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or
+      message.
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -33,18 +36,28 @@ items:
 
 
       Applicable Outlook mode: Compose
-    name: getAsync(callback)
+
+
+      In addition to the main signature, this method also has these signatures: getAsync(callback: (result: AsyncResult)
+      =&gt; void): void;
+    name: 'getAsync(options, callback)'
     fullName: outlook.Office.Subject.getAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback: (result: AsyncResult) => void): void;'
+      content: 'getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -71,6 +84,11 @@ items:
 
 
       Errors: DataExceedsMaximumSize - The subject parameter is longer than 255 characters.
+
+
+      In addition to the main signature, this method also has these signatures: setAsync(subject: string): void;
+      setAsync(subject: string, options: AsyncContextOptions): void; setAsync(subject: string, callback: (result:
+      AsyncResult) =&gt; void): void;
     name: 'setAsync(subject, options, callback)'
     fullName: outlook.Office.Subject.setAsync
     langs:

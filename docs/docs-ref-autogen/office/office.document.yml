@@ -2,7 +2,32 @@
 items:
   - uid: office.Office.Document
     summary: An abstract class that represents the document the add-in is interacting with.
-    remarks: 'Hosts: Access, Excel, PowerPoint, Project, Word'
+    remarks: |
+      Hosts: Access, Excel, PowerPoint, Project, Word
+
+      #### Examples
+
+      ```javascript
+      // The following example uses the getSelectedDataAsync method of the Document object to retrieve the
+      // user's current selection as text, and then display it in the add-in's page.
+
+      // Display the user's current selection.
+      function showSelection() {
+          Office.context.document.getSelectedDataAsync(
+              "text",                        // coercionType
+              {valueFormat: "unformatted",   // valueFormat
+              filterType: "all"},            // filterType
+              function (result) {            // callback
+                  var dataValue; 
+                  dataValue = result.value;
+                  write('Selected data is: ' + dataValue);
+              });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: Office.Document
     fullName: office.Office.Document
     langs:
@@ -33,7 +58,7 @@ items:
       - office.Office.Document.url
   - uid: office.Office.Document.addHandlerAsync
     summary: Adds an event handler for a Document object event.
-    remarks: >-
+    remarks: >
       Hosts: Excel, PowerPoint, Project, Word
 
 
@@ -42,6 +67,31 @@ items:
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      function addSelectionChangedEventHandler() {
+          Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, MyHandler);
+      }
+
+
+      function MyHandler(eventArgs) {
+          write('Event raised: ' + eventArgs.type);
+          doSomethingWithDocument(eventArgs.document);
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: office.Office.Document.addHandlerAsync
     langs:
@@ -79,12 +129,37 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.bindings
     summary: Gets an object that provides access to the bindings defined in the document.
-    remarks: >-
+    remarks: >
       Hosts: Access, Excel, Word
 
 
       You don't instantiate the Document object directly in your script. To call members of the Document object to
       interact with the current document or worksheet, use Office.context.document in your script.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      function displayAllBindings() {
+          Office.context.document.bindings.getAllAsync(function (asyncResult) {
+              var bindingString = '';
+              for (var i in asyncResult.value) {
+                  bindingString += asyncResult.value[i].id + '\n';
+              }
+              write('Existing bindings: ' + bindingString);
+          });
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
     name: bindings
     fullName: office.Office.Document.bindings
     langs:
@@ -97,7 +172,23 @@ items:
           - Bindings
   - uid: office.Office.Document.customXmlParts
     summary: Gets an object that represents the custom XML parts in the document.
-    remarks: 'Hosts: Word'
+    remarks: |
+      Hosts: Word
+
+      #### Examples
+
+      ```javascript
+      function getCustomXmlParts(){
+          Office.context.document.customXmlParts.getByNamespaceAsync('http://tempuri.org', function (asyncResult) {
+              write('Retrieved ' + asyncResult.value.length + ' custom XML parts');
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: customXmlParts
     fullName: office.Office.Document.customXmlParts
     langs:
@@ -110,12 +201,28 @@ items:
           - CustomXmlParts
   - uid: office.Office.Document.getActiveViewAsync
     summary: Returns the state of the current view of the presentation (edit or read).
-    remarks: |-
+    remarks: |
       Hosts: Excel, PowerPoint, Word
 
       Available in Requirement set: ActiveView
 
       Can trigger an event when the view changes.
+
+      #### Examples
+
+      ```javascript
+      function getFileView() {
+          // Get whether the current view is edit or read.
+          Office.context.document.getActiveViewAsync(function (asyncResult) {
+              if (asyncResult.status == "failed") {
+                  showMessage("Action failed with error: " + asyncResult.error.message);
+              }
+              else {
+                  showMessage(asyncResult.value);
+              }
+          });
+      }
+      ```
     name: 'getActiveViewAsync(options, callback)'
     fullName: office.Office.Document.getActiveViewAsync
     langs:
@@ -141,7 +248,7 @@ items:
       Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins for iOS, file slice is
       supported up to 65536 (64 KB). Note that specifying file slice size of above permitted limit will result in an
       "Internal Error" failure.
-    remarks: >-
+    remarks: >
       Hosts: Excel, PowerPoint, Word
 
 
@@ -169,6 +276,104 @@ items:
 
 
       Word on iPad: Office.FileType.Compressed, Office.FileType.Text
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following example gets the document in Office Open XML ("compressed") format in 65536 bytes (64 KB) slices.
+
+      // Note: The implementation of app.showNotification in this example is from the Visual Studio template for Office
+      Add-ins.
+
+      function getDocumentAsCompressed() {
+          Office.context.document.getFileAsync(Office.FileType.Compressed, { sliceSize: 65536 /*64 KB*/ }, 
+              function (result) {
+                  if (result.status == "succeeded") {
+                  // If the getFileAsync call succeeded, then
+                  // result.value will return a valid File Object.
+                  var myFile = result.value;
+                  var sliceCount = myFile.sliceCount;
+                  var slicesReceived = 0, gotAllSlices = true, docdataSlices = [];
+                  app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+
+                  // Get the file slices.
+                  getSliceAsync(myFile, 0, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
+                  }
+                  else {
+                  app.showNotification("Error:", result.error.message);
+                  }
+          });
+      }
+
+
+      function getSliceAsync(file, nextSlice, sliceCount, gotAllSlices, docdataSlices, slicesReceived) {
+          file.getSliceAsync(nextSlice, function (sliceResult) {
+              if (sliceResult.status == "succeeded") {
+                  if (!gotAllSlices) { // Failed to get all slices, no need to continue.
+                      return;
+                  }
+
+                  // Got one slice, store it in a temporary array.
+                  // (Or you can do something else, such as
+                  // send it to a third-party server.)
+                  docdataSlices[sliceResult.value.index] = sliceResult.value.data;
+                  if (++slicesReceived == sliceCount) {
+                    // All slices have been received.
+                    file.closeAsync();
+                    onGotAllSlices(docdataSlices);
+                  }
+                  else {
+                      getSliceAsync(file, ++nextSlice, sliceCount, gotAllSlices, docdataSlices, slicesReceived);
+                  }
+              }
+                  else {
+                      gotAllSlices = false;
+                      file.closeAsync();
+                      app.showNotification("getSliceAsync Error:", sliceResult.error.message);
+                  }
+          });
+      }
+
+
+      function onGotAllSlices(docdataSlices) {
+          var docdata = [];
+          for (var i = 0; i < docdataSlices.length; i++) {
+              docdata = docdata.concat(docdataSlices[i]);
+          }
+
+          var fileContent = new String();
+          for (var j = 0; j < docdata.length; j++) {
+              fileContent += String.fromCharCode(docdata[j]);
+          }
+
+          // Now all the file content is stored in 'fileContent' variable,
+          // you can do something with it, such as print, fax...
+      }
+
+
+      // The following example gets the document in PDF format.
+
+      Office.context.document.getFileAsync(Office.FileType.Pdf,
+          function(result) {
+              if (result.status == "succeeded") {
+                  var myFile = result.value;
+                  var sliceCount = myFile.sliceCount;
+                  app.showNotification("File size:" + myFile.size + " #Slices: " + sliceCount);
+                  // Now, you can call getSliceAsync to download the files, as described in the previous code segment (compressed format).
+                  
+                  myFile.closeAsync();
+              }
+              else {
+                  app.showNotification("Error:", result.error.message);
+              }
+      }
+
+      );
+
+      ```
     name: 'getFileAsync(fileType, options, callback)'
     fullName: office.Office.Document.getFileAsync
     langs:
@@ -195,12 +400,44 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getFilePropertiesAsync
     summary: Gets file properties of the current document.
-    remarks: |-
+    remarks: >
       Hosts: Excel, PowerPoint, Word
+
 
       Available in Requirement set: not in a set
 
+
       You get the file's URL with the url property ( asyncResult.value.url).
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // To read the URL of the current file, you need to write a callback function that returns the URL.
+
+      // The following example shows how to:
+
+      // 1. Pass an anonymous callback function that returns the value of the file's URL to the callback parameter of
+      the getFilePropertiesAsync method.
+
+      // 2. Display the value on the add-in's page.
+
+      function getFileUrl() {
+          // Get the URL of the current file.
+          Office.context.document.getFilePropertiesAsync(function (asyncResult) {
+              var fileUrl = asyncResult.value.url;
+              if (fileUrl == "") {
+                  showMessage("The file hasn't been saved yet. Save the file and try again");
+              }
+              else {
+                  showMessage(fileUrl);
+              }
+          });
+      }
+
+      ```
     name: 'getFilePropertiesAsync(options, callback)'
     fullName: office.Office.Document.getFilePropertiesAsync
     langs:
@@ -283,24 +520,74 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.getSelectedDataAsync
     summary: Reads the data contained in the current selection in the document.
-    remarks: |-
+    remarks: >
       Hosts: Access, Excel, PowerPoint, Project, Word
+
 
       Available in Requirement set: Selection
 
+
       The possible values for the coercionType parameter vary by the host:
+
 
       Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online only: Office.CoercionType.Text (string)
 
+
       Excel, Word, and Word Online only: Office.CoercionType.Matrix (array of arrays)
+
 
       Access, Excel, Word, and Word Online only: Office.CoercionType.Table (TableData object)
 
+
       Word only: Office.CoercionType.Html
+
 
       Word and Word Online only: Office.CoercionType.Ooxml (Office Open XML)
 
+
       PowerPoint and PowerPoint Online only: Office.CoercionType.SlideRange
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // To read the value of the current selection, you need to write a callback function that reads the selection.
+
+      // The following example shows how to:
+
+      // 1. Pass an anonymous callback function that reads the value of the current selection to the callback parameter
+      of the getSelectedDataAsync method.
+
+      // 2. Read the selection as text, unformatted, and not filtered.
+
+      // 3. Display the value on the add-in's page.
+
+      function getText() {
+          Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, 
+              { valueFormat: "unformatted", filterType: "all" },
+              function (asyncResult) {
+                  var error = asyncResult.error;
+                  if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                      write(error.name + ": " + error.message);
+                  } 
+                  else {
+                      // Get selected data.
+                      var dataValue = asyncResult.value; 
+                      write('Selected data is ' + dataValue);
+                  }            
+              });
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
     name: 'getSelectedDataAsync(coercionType, options, callback)'
     fullName: office.Office.Document.getSelectedDataAsync
     langs:
@@ -475,7 +762,7 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.goToByIdAsync
     summary: Goes to the specified object or location in the document.
-    remarks: >-
+    remarks: >
       Hosts: Excel, PowerPoint, Word
 
 
@@ -500,6 +787,139 @@ items:
       In Word: Office.SelectionMode.Selected selects all content in the binding. Office.SelectionMode.None for text
       bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first
       data cell (not first cell in header row for tables).
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Go to a binding by id (Word and Excel)
+
+      // The following example shows how to:
+
+      // 1. Create a table binding using the addFromSelectionAsync method as a sample binding to work with.
+
+      // 2. Specify that binding as the binding to go to.
+
+      // 3. Pass an anonymous callback function that returns the status of the operation to the callback parameter of
+      the goToByIdAsync method.
+
+      // 4. Display the value on the add-in's page.
+
+      function gotoBinding() {
+          // Create a new table binding for the selected table.
+          Office.context.document.bindings.addFromSelectionAsync("table",{ id: "MyTableBinding" }, function (asyncResult) {
+          if (asyncResult.status == "failed") {
+                    showMessage("Action failed with error: " + asyncResult.error.message);
+                }
+                else {
+                    showMessage("Added new binding with type: " + asyncResult.value.type +" and id: " + asyncResult.value.id);
+                }
+          });
+
+          // Go to binding by id.
+          Office.context.document.goToByIdAsync("MyTableBinding", Office.GoToType.Binding, function (asyncResult) {
+              if (asyncResult.status == "failed") {
+                  showMessage("Action failed with error: " + asyncResult.error.message);
+              }
+              else {
+                  showMessage("Navigation successful");
+              }
+          });
+      }
+
+
+      // Go to a table in a spreadsheet (Excel)
+
+      // The following example shows how to:
+
+      // 1. Specify a table by name as the table to go to.
+
+      // 2. Pass an anonymous callback function that returns the status of the operation to the callback parameter of
+      the goToByIdAsync method.
+
+      // 3. Display the value on the add-in's page.
+
+      function goToTable() {
+          Office.context.document.goToByIdAsync("Table1", Office.GoToType.NamedItem, function (asyncResult) {
+              if (asyncResult.status == "failed") {
+                  showMessage("Action failed with error: " + asyncResult.error.message);
+              }
+              else {
+                  showMessage("Navigation successful");
+              }
+          });
+      }
+
+
+      // Go to the currently selected slide by id (PowerPoint)
+
+      // The following example shows how to:
+
+      // 1. Get the id of the currently selected slides using the getSelectedDataAsync method.
+
+      // 2. Specify the returned id as the slide to go to.
+
+      // 3. Pass an anonymous callback function that returns the status of the operation to the callback parameter of
+      the goToByIdAsync method.
+
+      // 4. Display the value of the stringified JSON object returned by asyncResult.value, which contains information
+      about the selected slides, on the add-in's page.
+
+      var firstSlideId = 0;
+
+      function gotoSelectedSlide() {
+          //Get currently selected slide's id
+          Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, function (asyncResult) {
+              if (asyncResult.status == "failed") {
+                  app.showNotification("Action failed with error: " + asyncResult.error.message);
+              }
+              else {
+                  firstSlideId = asyncResult.value.slides[0].id;
+                  app.showNotification(JSON.stringify(asyncResult.value));
+              }
+          });
+          //Go to slide by id.
+          Office.context.document.goToByIdAsync(firstSlideId, Office.GoToType.Slide, function (asyncResult) {
+              if (asyncResult.status == "failed") {
+                  app.showNotification("Action failed with error: " + asyncResult.error.message);
+              }
+              else {
+                  app.showNotification("Navigation successful");
+              }
+          });
+      }
+
+
+      // Go to slide by index (PowerPoint)
+
+      // The following example shows how to:
+
+      // 1. Specify the index of the first, last, previous, or next slide to go to.
+
+      // 2. Pass an anonymous callback function that returns the status of the operation to the callback parameter of
+      the goToByIdAsync method.
+
+      // 3. Display the value on the add-in's page.
+
+      function goToSlideByIndex() {
+          var goToFirst = Office.Index.First;
+          var goToLast = Office.Index.Last;
+          var goToPrevious = Office.Index.Previous;
+          var goToNext = Office.Index.Next;
+
+          Office.context.document.goToByIdAsync(goToNext, Office.GoToType.Index, function (asyncResult) {
+              if (asyncResult.status == "failed") {
+                  showMessage("Action failed with error: " + asyncResult.error.message);
+              }
+              else {
+                  showMessage("Navigation successful");
+              }
+          });
+      }
+
+      ```
     name: 'goToByIdAsync(id, goToType, options, callback)'
     fullName: office.Office.Document.goToByIdAsync
     langs:
@@ -532,7 +952,21 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.mode
     summary: Gets the mode the document is in.
-    remarks: 'Hosts: Word'
+    remarks: |
+      Hosts: Word
+
+      #### Examples
+
+      ```javascript
+      function displayDocumentMode() {
+          write(Office.context.document.mode);
+      }
+
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: mode
     fullName: office.Office.Document.mode
     langs:

@@ -1834,7 +1834,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to LPNoLP."
+                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to \"LPNoLP\" (please see the Examples section for a sample)."
                 },
                 {
                   "kind": "paragraph"
@@ -1862,6 +1862,13 @@
                 {
                   "kind": "text",
                   "text": ": ReadWriteItem Applicable Outlook mode: Compose Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: prependAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void; prependAsync(data: string, callback: (result: AsyncResult) => void): void; prependAsync(data: string): void;"
                 }
               ],
               "isBeta": false,
@@ -1935,7 +1942,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to LPNoLP."
+                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to \"LPNoLP\" (please see the Examples section for a sample)."
                 },
                 {
                   "kind": "paragraph"
@@ -1984,6 +1991,13 @@
                 {
                   "kind": "text",
                   "text": "InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: setAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void; setAsync(data: string, callback: (result: AsyncResult) => void): void; setAsync(data: string): void; *"
                 }
               ],
               "isBeta": false,
@@ -2057,7 +2071,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to LPNoLP."
+                  "text": "When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to \"LPNoLP\" (please see the Examples section for a sample)."
                 },
                 {
                   "kind": "paragraph"
@@ -2106,6 +2120,13 @@
                 {
                   "kind": "text",
                   "text": "InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: setSelectedDataAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void; setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void; setSelectedDataAsync(data: string): void; * *"
                 }
               ],
               "isBeta": false,
@@ -3568,6 +3589,13 @@
                 {
                   "kind": "text",
                   "text": "Applicable Outlook mode: Compose"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, the method also has the following signatures: getAsync(callback?: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -3728,6 +3756,13 @@
                 {
                   "kind": "text",
                   "text": "Applicable Outlook mode: Compose or read"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, the method also has the following signatures: addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -4258,6 +4293,13 @@
                 {
                   "kind": "text",
                   "text": "Applicable Outlook mode: Compose or read"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, the method also has the following signatures: removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -4508,6 +4550,13 @@
                 {
                   "kind": "text",
                   "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, the method also has the following signatures: addFileAttachmentAsync(uri: string, attachmentName: string): void; addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void; addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -4649,6 +4698,13 @@
                 {
                   "kind": "text",
                   "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: addItemAttachmentAsync(itemId: any, attachmentName: string): void; addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void; addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -4838,7 +4894,7 @@
             },
             "getSelectedDataAsync": {
               "kind": "method",
-              "signature": "getSelectedDataAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;",
+              "signature": "getSelectedDataAsync(coercionType: CoercionType, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -4863,6 +4919,18 @@
                   "isOptional": false,
                   "isSpread": false,
                   "type": "CoercionType"
+                },
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "AsyncContextOptions"
                 },
                 "callback": {
                   "name": "callback",
@@ -4926,6 +4994,13 @@
                 {
                   "kind": "text",
                   "text": "Applicable Outlook mode: Compose"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, the method also has these signatures: getSelectedDataAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -5030,6 +5105,13 @@
                 {
                   "kind": "text",
                   "text": "Errors: InvalidAttachmentId - The attachment identifier does not exist."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, the method also has the following signatures: removeAttachmentAsync(attachmentIndex: string): void; removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void; removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -5157,6 +5239,13 @@
                 {
                   "kind": "text",
                   "text": "Errors: InvalidAttachmentId - The attachment identifier does not exist."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, the method also has the following signatures: saveAsync(): void; saveAsync(options: AsyncContextOptions): void; saveAsync(callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -5261,6 +5350,13 @@
                 {
                   "kind": "text",
                   "text": "Errors: InvalidAttachmentId - The attachment identifier does not exist."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, the method also has the following signatures: setSelectedDataAsync(data: string): void; setSelectedDataAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void; setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -5940,6 +6036,13 @@
                 {
                   "kind": "text",
                   "text": "Applicable Outlook mode: Read"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, the method also has the following signatures: getInitializationContextAsync(callback?: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -6842,6 +6945,13 @@
                 {
                   "kind": "text",
                   "text": "Applicable Outlook mode: Compose"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, the method also has the following signatures: getAsync(callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -6943,6 +7053,13 @@
                 {
                   "kind": "text",
                   "text": "Errors: DataExceedsMaximumSize - The location parameter is longer than 255 characters."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, the method also has the following signatures: setAsync(location: string): void; setAsync(location: string, options: AsyncContextOptions): void; setAsync(location: string, callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -8109,6 +8226,13 @@
                 {
                   "kind": "text",
                   "text": "Applicable Outlook mode: Compose and read"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, the method has the following signature: getCallbackTokenAsync(callback: (result: AsyncResult) => void): void; getCallbackTokenAsync(callback: (result: AsyncResult) => void, userContext?: any): void;"
                 }
               ],
               "isBeta": false,
@@ -12484,6 +12608,13 @@
                 {
                   "kind": "text",
                   "text": "Applicable Outlook mode: Compose or read"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to this signature, the method also has the following signatures: addAsync(key: string, JSONmessage: NotificationMessageDetails): void; addAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void; addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -12566,6 +12697,13 @@
                 {
                   "kind": "text",
                   "text": "Applicable Outlook mode: Compose or read"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: getAllAsync(callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -12660,6 +12798,13 @@
                 {
                   "kind": "text",
                   "text": "Applicable Outlook mode: Compose or read"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: removeAsync(key: string): void; removeAsync(key: string, options: AsyncContextOptions): void; removeAsync(key: string, callback: (result: AsyncResult) => void): void; *"
                 }
               ],
               "isBeta": false,
@@ -12773,6 +12918,13 @@
                 {
                   "kind": "text",
                   "text": "Applicable Outlook mode: Compose or read"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: replaceAsync(key: string, JSONmessage: NotificationMessageDetails): void; replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void; replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -13064,6 +13216,13 @@
                 {
                   "kind": "text",
                   "text": "Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: addAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void; addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: AsyncContextOptions): void; addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -13073,7 +13232,7 @@
             },
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(callback: (result: AsyncResult) => void): void;",
+              "signature": "getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -13082,6 +13241,18 @@
                 "description": []
               },
               "parameters": {
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "AsyncContextOptions"
+                },
                 "callback": {
                   "name": "callback",
                   "description": [
@@ -13141,6 +13312,13 @@
                 {
                   "kind": "text",
                   "text": "Applicable Outlook mode: Compose"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: getAsync(callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -13277,6 +13455,13 @@
                 {
                   "kind": "text",
                   "text": "Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: setAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void; setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: AsyncContextOptions): void; setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -13416,6 +13601,13 @@
                 {
                   "kind": "text",
                   "text": "Applicable Outlook mode: Compose or read"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: getAsync(callback?: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -13716,6 +13908,13 @@
                 {
                   "kind": "text",
                   "text": "Errors: InvalidEndTime - The appointment end time is before its start time."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -15066,6 +15265,27 @@
                 {
                   "kind": "text",
                   "text": "Errors: Invalid date format - The date is not in an acceptable format."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: setEndDate(date: string): void; Where date is the end date of the recurring appointment series represented in the "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "ISO 8601"
+                    }
+                  ],
+                  "targetUrl": "https://www.iso.org/iso-8601-date-and-time-format.html"
+                },
+                {
+                  "kind": "text",
+                  "text": " date format: \"YYYY-MM-DD\"."
                 }
               ],
               "isBeta": false,
@@ -15167,6 +15387,27 @@
                 {
                   "kind": "text",
                   "text": "Errors: Invalid date format - The date is not in an acceptable format."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: setStartDate(date: string): void; Where date is the start date of the recurring appointment series represented in the "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "ISO 8601"
+                    }
+                  ],
+                  "targetUrl": "https://www.iso.org/iso-8601-date-and-time-format.html"
+                },
+                {
+                  "kind": "text",
+                  "text": " date format: \"YYYY-MM-DD\"."
                 }
               ],
               "isBeta": false,
@@ -15256,6 +15497,13 @@
                 {
                   "kind": "text",
                   "text": "Errors: Invalid time format - The time is not in an acceptable format."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: setStartTime(time: string): void; Where time is the start time of all instances represented by standard datetime string format: \"THH:mm:ss:mmm\"."
                 }
               ],
               "isBeta": false,
@@ -15351,7 +15599,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(callback: (result: AsyncResult) => void): void;",
+              "signature": "getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -15360,6 +15608,18 @@
                 "description": []
               },
               "parameters": {
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "AsyncContextOptions"
+                },
                 "callback": {
                   "name": "callback",
                   "description": [
@@ -15377,7 +15637,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the subject of an appointment or message. The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or message."
+                  "text": "Gets the subject of an appointment or message."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or message."
                 },
                 {
                   "kind": "paragraph"
@@ -15412,6 +15679,13 @@
                 {
                   "kind": "text",
                   "text": "Applicable Outlook mode: Compose"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: getAsync(callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -15520,6 +15794,13 @@
                 {
                   "kind": "text",
                   "text": "Errors: DataExceedsMaximumSize - The subject parameter is longer than 255 characters."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: setAsync(subject: string): void; setAsync(subject: string, options: AsyncContextOptions): void; setAsync(subject: string, callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -15678,7 +15959,7 @@
           "members": {
             "getAsync": {
               "kind": "method",
-              "signature": "getAsync(callback: (result: AsyncResult) => void): void;",
+              "signature": "getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -15687,6 +15968,18 @@
                 "description": []
               },
               "parameters": {
+                "options": {
+                  "name": "options",
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method."
+                    }
+                  ],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "AsyncContextOptions"
+                },
                 "callback": {
                   "name": "callback",
                   "description": [
@@ -15746,6 +16039,13 @@
                 {
                   "kind": "text",
                   "text": "Applicable Outlook mode: Compose"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: getAsync(callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,
@@ -15861,6 +16161,13 @@
                 {
                   "kind": "text",
                   "text": "Errors: InvalidEndTime - The appointment end time is before the appointment start time."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In addition to the main signature, this method also has these signatures: setAsync(dateTime: Date): void; setAsync(dateTime: Date, options: AsyncContextOptions): void; setAsync(dateTime: Date, callback: (result: AsyncResult) => void): void;"
                 }
               ],
               "isBeta": false,

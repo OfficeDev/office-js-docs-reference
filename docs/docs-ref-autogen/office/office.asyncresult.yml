@@ -4,12 +4,55 @@ items:
     summary: >-
       An object which encapsulates the result of an asynchronous request, including status and error information if the
       request failed.
-    remarks: >-
+    remarks: >
       Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
 
 
       When the function you pass to the \`callback\` parameter of an "Async" method executes, it receives an AsyncResult
       object that you can access from the \`callback\` function's only parameter.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following is an example applicable to content and task pane add-ins.
+
+      // The example shows a call to the getSelectedDataAsync method of the Document object.
+
+      Office.context.document.getSelectedDataAsync("text", {
+              valueFormat: "unformatted",
+              filterType: "all"
+          },
+          function (result) {
+              if (result.status === "success") {
+                  var dataValue = result.value; // Get selected data.
+                  console.log('Selected data is ' + dataValue);
+              } else {
+                  var err = result.error;
+                  console.log(err.name + ": " + err.message);
+              }
+          });
+      // The anonymous function passed as the callback argument ( function (result){...}) has a single parameter named
+      result
+
+      // that provides access to an AsyncResult object when the function executes. When the call to the
+      getSelectedDataAsync method
+
+      // completes, the callback function executes, and the following line of code accesses the value property of the
+      AsyncResult
+
+      // object to return the data selected in the document:
+
+      var dataValue = result.value;
+
+      // Note that other lines of code in the function use the result parameter of the callback function to access the
+      status and
+
+      // error properties of the AsyncResult object.
+
+      ```
     name: Office.AsyncResult
     fullName: office.Office.AsyncResult
     langs:
@@ -27,7 +70,25 @@ items:
       state as it was passed in. This the user-defined item (which can be of any JavaScript type: String, Number,
       Boolean, Object, Array, Null, or Undefined) passed to the optional \`asyncContext\` parameter of the invoked
       method. Returns Undefined, if you didn't pass anything to the asyncContext parameter.
-    remarks: 'Hosts: Access, Excel, Outlook, PowerPoint, Project, Word'
+    remarks: |
+      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
+
+      #### Examples
+
+      ```javascript
+      function getDataWithContext() {
+          var format = "Your data: ";
+          Office.context.document.getSelectedDataAsync(Office.CoercionType.Text, { asyncContext: format }, showDataWithContext);
+      }
+
+      function showDataWithContext(asyncResult) {
+          write(asyncResult.asyncContext + asyncResult.value);
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: asyncContext
     fullName: office.Office.AsyncResult.asyncContext
     langs:
@@ -42,7 +103,27 @@ items:
     summary: >-
       Gets an [Office.Error](xref:office.Office.Error) object that provides a description of the error, if any error
       occurred.
-    remarks: 'Hosts: Access, Excel, Outlook, PowerPoint, Project, Word'
+    remarks: |
+      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
+
+      #### Examples
+
+      ```javascript
+      function getData() {
+          Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
+              if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                  write(asyncResult.error.message);
+              }
+              else {
+                  write(asyncResult.value);
+              }
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: error
     fullName: office.Office.AsyncResult.error
     langs:
@@ -55,7 +136,27 @@ items:
           - Error
   - uid: office.Office.AsyncResult.status
     summary: 'Gets the [Office.AsyncResultStatus](xref:office.Office.AsyncResultStatus) of the asynchronous operation.'
-    remarks: 'Hosts: Access, Excel, Outlook, PowerPoint, Project, Word'
+    remarks: |
+      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
+
+      #### Examples
+
+      ```javascript
+      function getData() {
+          Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
+              if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                  write(asyncResult.error.message);
+              }
+              else {
+                  write(asyncResult.value);
+              }
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: status
     fullName: office.Office.AsyncResult.status
     langs:
@@ -68,7 +169,7 @@ items:
           - AsyncResultStatus
   - uid: office.Office.AsyncResult.value
     summary: 'Gets the payload or content of this asynchronous operation, if any.'
-    remarks: >-
+    remarks: >
       You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async"
       method, such as the \`getSelectedDataAsync\` and \`setSelectedDataAsync\` methods of the Document object.
 
@@ -80,6 +181,31 @@ items:
 
 
       Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
+
+
+      #### Examples
+
+
+      ```javascript
+
+      function getData() {
+          Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
+              if (asyncResult.status == Office.AsyncResultStatus.Failed) {
+                  write(asyncResult.error.message);
+              }
+              else {
+                  write(asyncResult.value);
+              }
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
     name: value
     fullName: office.Office.AsyncResult.value
     langs:
