@@ -885,7 +885,7 @@ Excel.ConditionalFormatCollection.getItemAt:
             OfficeHelpers.UI.notify("None to display", "No conditional formats in workbook", "warning");
         }
     });
-Excel.CustomConditionalFormat.format:
+Excel.CustomConditionalFormat:
   - |-
     Excel.run(function (ctx) {
         var sheet = ctx.workbook.worksheets.getActiveWorksheet();

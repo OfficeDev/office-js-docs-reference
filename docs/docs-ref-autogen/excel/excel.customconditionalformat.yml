@@ -13,27 +13,6 @@ items:
     extends:
       - OfficeExtension.ClientObject
     package: excel
-    children:
-      - excel.Excel.CustomConditionalFormat.format
-      - excel.Excel.CustomConditionalFormat.load
-      - excel.Excel.CustomConditionalFormat.rule
-      - excel.Excel.CustomConditionalFormat.set
-      - excel.Excel.CustomConditionalFormat.toJSON
-  - uid: excel.Excel.CustomConditionalFormat.format
-    summary: |-
-      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-
-      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
-    name: format
-    fullName: excel.Excel.CustomConditionalFormat.format
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly format: Excel.ConditionalRangeFormat;'
-      return:
-        type:
-          - Excel.ConditionalRangeFormat
     remarks: |
 
 
@@ -58,6 +37,27 @@ items:
           }
       });
       ```
+    children:
+      - excel.Excel.CustomConditionalFormat.format
+      - excel.Excel.CustomConditionalFormat.load
+      - excel.Excel.CustomConditionalFormat.rule
+      - excel.Excel.CustomConditionalFormat.set
+      - excel.Excel.CustomConditionalFormat.toJSON
+  - uid: excel.Excel.CustomConditionalFormat.format
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: excel.Excel.CustomConditionalFormat.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ConditionalRangeFormat;'
+      return:
+        type:
+          - Excel.ConditionalRangeFormat
   - uid: excel.Excel.CustomConditionalFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

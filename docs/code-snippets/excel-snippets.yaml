@@ -836,7 +836,7 @@ Excel.ConditionalFormatCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.CustomConditionalFormat.format:
+Excel.CustomConditionalFormat:
   - |-
     Excel.run(function (ctx) {
         var sheet = ctx.workbook.worksheets.getActiveWorksheet();
