@@ -107,6 +107,34 @@ items:
           description: Indicates how the app was initialized
           type:
             - InitializationReason
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // You can use the value of the InitializationEnumeration to implement different logic for
+      // when the add-in is first inserted versus when it is already part of the document.
+      // The following example shows some simple logic that uses the value of the reason parameter
+      // to display how the task pane or content add-in was initialized.
+      Office.initialize = function (reason) {
+          // Checks for the DOM to load using the jQuery ready function.
+          $(document).ready(function () {
+          // After the DOM is loaded, code specific to the add-in can run.
+          // Display initialization reason.
+          if (reason == "inserted")
+          write("The add-in was just inserted.");
+
+          if (reason == "documentOpened")
+          write("The add-in is already part of the document.");
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
   - uid: office.Office.onReady
     summary: >-
       Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized
@@ -158,6 +186,22 @@ items:
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // The following code example uses the select method to retrieve a binding with the id "cities" from
+      // the Bindings collection, and then calls the addHandlerAsync method to add an event handler for the
+      // dataChanged event of the binding.
+      function addBindingDataChangedEventHandler() {
+          Office.select("bindings#cities", function onError(){}).addHandlerAsync(Office.EventType.BindingDataChanged,
+          function (eventArgs) {
+              doSomethingWithBinding(eventArgs.binding);
+          });
+      }
+      ```
   - uid: office.Office.useShortNamespace
     summary: Indicates if the large namespace for objects will be used or not.
     name: useShortNamespace(useShortNamespace)
@@ -176,6 +220,37 @@ items:
           description: Indicates if 'true' that the short namespace will be used
           type:
             - boolean
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      function startUsingShortNamespace() {
+          if (typeof Office === 'undefined') {
+              Microsoft.Office.WebExtension.useShortNamespace(true);
+          }
+          else {
+              Office.useShortNamespace(true);
+          }
+          write('Office alias is now ' + typeof Office);
+      }
+
+      function stopUsingShortNamespace() {
+          if (typeof Office === 'undefined') {
+              Microsoft.Office.WebExtension.useShortNamespace(false);
+          }
+          else {
+              Office.useShortNamespace(false);
+          }
+          write('Office alias is now ' + typeof Office);
+      }
+
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
 references:
   - uid: office.Office.ActiveView
     name: Office.ActiveView

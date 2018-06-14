@@ -24,10 +24,24 @@ items:
       - office.Office.MatrixBinding.rowCount
   - uid: office.Office.MatrixBinding.columnCount
     summary: 'Gets the number of columns in the matrix data structure, as an integer value.'
-    remarks: |-
+    remarks: |
       Hosts: Access, Excel, PowerPoint, Project, Word
 
       Available in Requirement set: MatrixBindings
+
+      #### Examples
+
+      ```javascript
+      function showBindingColumnCount() {
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+              write("Column: " + asyncResult.value.columnCount);
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: columnCount
     fullName: office.Office.MatrixBinding.columnCount
     langs:
@@ -40,10 +54,24 @@ items:
           - number
   - uid: office.Office.MatrixBinding.rowCount
     summary: 'Gets the number of rows in the matrix data structure, as an integer value.'
-    remarks: |-
+    remarks: |
       Hosts: Access, Excel, PowerPoint, Project, Word
 
       Available in Requirement set: MatrixBindings
+
+      #### Examples
+
+      ```javascript
+      function showBindingRowCount() {
+          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+              write("Rows: " + asyncResult.value.rowCount);
+          });
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: rowCount
     fullName: office.Office.MatrixBinding.rowCount
     langs:

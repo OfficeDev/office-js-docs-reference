@@ -20,7 +20,7 @@ items:
       application by using the ["on behalf of" OAuth
       flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of)<!--
       -->.
-    remarks: >-
+    remarks: >
       Hosts: Excel, OneNote, Outlook, PowerPoint, Word
 
 
@@ -30,6 +30,23 @@ items:
       This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users
       sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user
       account types to access resources in the Microsoft Graph.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.auth.getAccessTokenAsync(function(result) {
+          if (result.status === "succeeded") {
+              var token = result.value.accessToken;
+              // ...
+          } else {
+              console.log("Error obtaining token", result.error);
+          }
+      });
+
+      ```
     name: 'getAccessTokenAsync(options, callback)'
     fullName: office.Office.Auth.getAccessTokenAsync
     langs:

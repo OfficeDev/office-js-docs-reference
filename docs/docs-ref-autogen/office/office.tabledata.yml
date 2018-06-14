@@ -36,7 +36,7 @@ items:
             - 'any[]'
   - uid: office.Office.TableData.headers
     summary: Gets or sets the headers of the table.
-    remarks: >-
+    remarks: >
       To specify headers, you must specify an array of arrays that corresponds to the structure of the table. For
       example, to specify headers for a two-column table you would set the header property to \[\['header1',
       'header2'\]\].
@@ -56,6 +56,23 @@ items:
 
 
       Available in Requirement set: TableBindings
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following example creates a single-column table with a header and three rows.
+
+      function createTableData() {
+          var tableData = new Office.TableData();
+          tableData.headers = [['header1']];
+          tableData.rows = [['row1'], ['row2'], ['row3']];
+          return tableData;
+      }
+
+      ```
     name: headers
     fullName: office.Office.TableData.headers
     langs:
@@ -70,7 +87,7 @@ items:
     summary: >-
       Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table. Returns an
       empty array \`\`, if there are no rows.
-    remarks: >-
+    remarks: >
       To specify rows, you must specify an array of arrays that corresponds to the structure of the table. For example,
       to specify two rows of string values in a two-column table you would set the rows property to \[\['a', 'b'\],
       \['c', 'd'\]\].
@@ -90,6 +107,23 @@ items:
 
 
       Available in Requirement set: TableBindings
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following example creates a single-column table with a header and three rows.
+
+      function createTableData() {
+          var tableData = new Office.TableData();
+          tableData.headers = [['header1']];
+          tableData.rows = [['row1'], ['row2'], ['row3']];
+          return tableData;
+      }
+
+      ```
     name: rows
     fullName: office.Office.TableData.rows
     langs:
