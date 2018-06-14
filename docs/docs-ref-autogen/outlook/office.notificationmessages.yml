@@ -37,6 +37,12 @@ items:
       Applicable Outlook mode: Compose or read
 
 
+      In addition to this signature, the method also has the following signatures: addAsync(key: string, JSONmessage:
+      NotificationMessageDetails): void; addAsync(key: string, JSONmessage: NotificationMessageDetails, options:
+      AsyncContextOptions): void; addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result:
+      AsyncResult) =&gt; void): void;
+
+
       #### Examples
 
 
@@ -113,6 +119,10 @@ items:
       Applicable Outlook mode: Compose or read
 
 
+      In addition to the main signature, this method also has these signatures: getAllAsync(callback: (result:
+      AsyncResult) =&gt; void): void;
+
+
       #### Examples
 
 
@@ -169,6 +179,11 @@ items:
       Applicable Outlook mode: Compose or read
 
 
+      In addition to the main signature, this method also has these signatures: removeAsync(key: string): void;
+      removeAsync(key: string, options: AsyncContextOptions): void; removeAsync(key: string, callback: (result:
+      AsyncResult) =&gt; void): void; \*
+
+
       #### Examples
 
 
@@ -220,6 +235,12 @@ items:
 
 
       Applicable Outlook mode: Compose or read
+
+
+      In addition to the main signature, this method also has these signatures: replaceAsync(key: string, JSONmessage:
+      NotificationMessageDetails): void; replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options:
+      AsyncContextOptions): void; replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result:
+      AsyncResult) =&gt; void): void;
 
 
       #### Examples

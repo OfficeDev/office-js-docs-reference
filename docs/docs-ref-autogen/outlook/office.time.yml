@@ -37,18 +37,28 @@ items:
 
 
       Applicable Outlook mode: Compose
-    name: getAsync(callback)
+
+
+      In addition to the main signature, this method also has these signatures: getAsync(callback: (result: AsyncResult)
+      =&gt; void): void;
+    name: 'getAsync(options, callback)'
     fullName: outlook.Office.Time.getAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback: (result: AsyncResult) => void): void;'
+      content: 'getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -78,6 +88,11 @@ items:
 
 
       Errors: InvalidEndTime - The appointment end time is before the appointment start time.
+
+
+      In addition to the main signature, this method also has these signatures: setAsync(dateTime: Date): void;
+      setAsync(dateTime: Date, options: AsyncContextOptions): void; setAsync(dateTime: Date, callback: (result:
+      AsyncResult) =&gt; void): void;
 
 
       #### Examples

@@ -50,6 +50,10 @@ items:
       Applicable Outlook mode: Compose or read
 
 
+      In addition to the main signature, this method also has these signatures: getAsync(callback?: (result:
+      AsyncResult) =&gt; void): void;
+
+
       #### Examples
 
 
@@ -200,6 +204,10 @@ items:
 
 
       Errors: InvalidEndTime - The appointment end time is before its start time.
+
+
+      In addition to the main signature, this method also has these signatures: setAsync(recurrencePattern: Recurrence,
+      callback?: (result: AsyncResult) =&gt; void): void;
 
 
       #### Examples
