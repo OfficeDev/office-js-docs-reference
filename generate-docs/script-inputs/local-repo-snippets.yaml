@@ -3786,17 +3786,17 @@ Office.cast.item:
     // After the cast, the message variable will only display IntelliSense for methods and properties
     // that can be used in compose mode.
     var message = Office.cast.item.toMessageCompose(Office.context.mailbox.item);
-Office.auth.getAccessTokenAsync:
+Office.Auth.getAccessTokenAsync:
   - |-
-	Office.context.auth.getAccessTokenAsync(function(result) {
-	    if (result.status === "succeeded") {
+    Office.context.auth.getAccessTokenAsync(function(result) {
+        if (result.status === "succeeded") {
             var token = result.value.accessToken;
             // ...
-	    } else {
-		    console.log("Error obtaining token", result.error);
-	    }
-	});
-Office.context.contentLanguage:
+        } else {
+            console.log("Error obtaining token", result.error);
+        }
+    });
+Office.Context.contentLanguage:
   - |-
     function sayHelloWithContentLanguage() {
         var myContentLanguage = Office.context.contentLanguage;
@@ -3813,7 +3813,7 @@ Office.context.contentLanguage:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.context.displayLanguage:
+Office.Context.displayLanguage:
   - |-
     function sayHelloWithDisplayLanguage() {
         var myDisplayLanguage = Office.context.displayLanguage;
@@ -3830,7 +3830,7 @@ Office.context.displayLanguage:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.context.document:
+Office.Context.document:
   - |-
     // Extension initialization code.
     var _document;
@@ -3844,11 +3844,11 @@ Office.context.document:
         _document = Office.context.document;
         });
     }
-Office.context.mailbox:
+Office.Context.mailbox:
   - |-
     // The following line of code access the item object of the JavaScript API for Office.
     var item = Office.context.mailbox.item;
-Office.context.officeTheme:
+Office.Context.officeTheme:
   - |-
     function applyOfficeTheme(){
         // Get office theme colors.

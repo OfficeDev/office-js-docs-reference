@@ -979,10 +979,19 @@ items:
           - DocumentMode
   - uid: office.Office.Document.removeHandlerAsync
     summary: Removes an event handler for the specified event type.
-    remarks: |-
+    remarks: |
       Hosts: Excel, PowerPoint, Project, Word
 
       Available in Requirement set: DocumentEvents
+
+      #### Examples
+
+      ```javascript
+      // The following example removes the event handler named 'MyHandler'.
+      function removeSelectionChangedEventHandler() {
+          Office.context.document.removeHandlerAsync(Office.EventType.DocumentSelectionChanged, {handler:MyHandler});
+      }
+      ```
     name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: office.Office.Document.removeHandlerAsync
     langs:
@@ -1011,24 +1020,160 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Document.setSelectedDataAsync
     summary: Writes the specified data into the current selection.
-    remarks: |-
+    remarks: >
       Hosts: Access, Excel, PowerPoint, Project, Word, Word Online
+
 
       Available in Requirement set: Selection
 
+
       The possible CoercionTypes that can be used for the data parameter, or for the coercionType option, vary by host:
+
 
       Office.CoercionType.Text: Excel, Word, PowerPoint
 
+
       Office.CoercionType.Matrix: Excel, Word
+
 
       Office.CoercionType.Table: Access, Excel, Word
 
+
       Office.CoercionType.Html: Word
+
 
       Office.CoercionType.Ooxml: Word
 
+
       Office.CoercionType.Image: Excel, Word, PowerPoint
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following example sets the selected text or cell to "Hello World!", and if that fails, displays the value
+      of the
+
+      // error.message property.
+
+      function writeText() {
+          Office.context.document.setSelectedDataAsync("Hello World!",
+              function (asyncResult) {
+                  var error = asyncResult.error;
+                  if (asyncResult.status === Office.AsyncResultStatus.Failed){
+                      write(error.name + ": " + error.message);
+                  }
+              });
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+
+      // Specifying the optional coercionType parameter lets you specify the kind of data you want to write to a
+      selection.
+
+      // The following example writes data as an array of three rows of two columns, specifying the coercionType as
+      "matrix"
+
+      // for that data structure, and if that fails, displays the value of the error.message property.
+
+      function writeMatrix() {
+          Office.context.document.setSelectedDataAsync([["Red", "Rojo"], ["Green", "Verde"], ["Blue", "Azul"]], {coercionType: Office.CoercionType.Matrix}
+              function (asyncResult) {
+                  var error = asyncResult.error;
+                  if (asyncResult.status === Office.AsyncResultStatus.Failed){
+                      write(error.name + ": " + error.message);
+                  }
+              });
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+
+      // The following example writes data as a one column table with a header and four rows, specifying the
+      coercionType as "table"
+
+      // for that data structure, and if that fails, displays the value of the error.message property.
+
+      function writeTable() {
+          // Build table.
+          var myTable = new Office.TableData();
+          myTable.headers = [["Cities"]];
+          myTable.rows = [['Berlin'], ['Roma'], ['Tokyo'], ['Seattle']];
+
+          // Write table.
+          Office.context.document.setSelectedDataAsync(myTable, {coercionType: Office.CoercionType.Table},
+              function (result) {
+                  var error = result.error
+                  if (result.status === Office.AsyncResultStatus.Failed) {
+                      write(error.name + ": " + error.message);
+                  }
+          });
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+
+      // In Word if you want to write HTML to the selection, you can specify the coercionType parameter as "html" as
+      shown
+
+      // in the following example, which uses HTML <b> tags to make "Hello" bold.
+
+      function writeHtmlData() {
+          Office.context.document.setSelectedDataAsync("<b>Hello</b> World!", {coercionType: Office.CoercionType.Html}, function (asyncResult) {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                  write('Error: ' + asyncResult.error.message);
+              }
+          });
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+
+      // In Word, PowerPoint, or Excel, if you want to write an image to the selection, you can specify the coercionType
+      parameter
+
+      // as "image" as shown in the following example. Note that imageLeft and imageTop are ignored by Word.
+
+      function insertPictureAtSelection(base64EncodedImageStr) {
+
+          Office.context.document.setSelectedDataAsync(base64EncodedImageStr, {
+          coercionType: Office.CoercionType.Image,
+          imageLeft: 50,
+          imageTop: 50,
+          imageWidth: 100,
+          imageHeight: 100
+          },
+          function (asyncResult) {
+              if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                  console.log("Action failed with error: " + asyncResult.error.message);
+              }
+          });
+      }
+
+      ```
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: office.Office.Document.setSelectedDataAsync
     langs:
@@ -1072,7 +1217,21 @@ items:
           - Settings
   - uid: office.Office.Document.url
     summary: Gets the URL of the document that the host application currently has open. Returns null if the URL is unavailable.
-    remarks: 'Hosts: Word'
+    remarks: |
+      Hosts: Word
+
+      #### Examples
+
+      ```javascript
+      function displayDocumentUrl() {
+          write(Office.context.document.url);
+      }
+
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: url
     fullName: office.Office.Document.url
     langs:

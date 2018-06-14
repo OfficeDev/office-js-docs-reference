@@ -44,7 +44,7 @@ items:
       any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in
       Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the
       settingsChanged event is supported only in Excel Online in co-authoring scenarios.
-    remarks: >-
+    remarks: >
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
 
@@ -64,6 +64,31 @@ items:
 
 
       Available in Requirement set: Settings
+
+
+      #### Examples
+
+
+      ```javascript
+
+      function addSelectionChangedEventHandler() {
+          Office.context.document.settings.addHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
+      }
+
+
+      function MyHandler(eventArgs) {
+          write('Event raised: ' + eventArgs.type);
+          doSomethingWithSettings(eventArgs.settings);
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: office.Office.Settings.addHandlerAsync
     langs:
@@ -99,10 +124,22 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Settings.get
     summary: Retrieves the specified setting.
-    remarks: |-
+    remarks: |
       Hosts: Access, Excel, PowerPoint, Word
 
       Available in Requirement set: Settings
+
+      #### Examples
+
+      ```javascript
+      function displayMySetting() {
+          write('Current value for mySetting: ' + Office.context.document.settings.get('mySetting'));
+      }
+      // Function that writes to a div with id='message' on the page.
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+      ```
     name: get(name)
     fullName: office.Office.Settings.get
     langs:
@@ -123,7 +160,7 @@ items:
     summary: >-
       Reads all settings persisted in the document and refreshes the content or task pane add-in's copy of those
       settings held in memory.
-    remarks: >-
+    remarks: >
       This method is useful in Word and PowerPoint coauthoring scenarios when multiple instances of the same add-in are
       working against the same document. Because each add-in is working against an in-memory copy of the settings loaded
       from the document at the time the user opened it, the settings values used by each user can get out of sync. This
@@ -151,6 +188,26 @@ items:
 
 
       Available in Requirement set: Settings
+
+
+      #### Examples
+
+
+      ```javascript
+
+      function refreshSettings() {
+          Office.context.document.settings.refreshAsync(function (asyncResult) {
+              write('Settings refreshed with status: ' + asyncResult.status);
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
     name: refreshAsync(callback)
     fullName: office.Office.Settings.refreshAsync
     langs:
@@ -178,7 +235,7 @@ items:
       Important: Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag.
       To persist the removal of the specified setting in the document, at some point after calling the Settings.remove
       method and before the add-in is closed, you must call the Settings.saveAsync method.
-    remarks: >-
+    remarks: >
       null is a valid value for a setting. Therefore, assigning null to the setting will not remove it from the settings
       property bag.
 
@@ -187,6 +244,18 @@ items:
 
 
       Available in Requirement set: Settings
+
+
+      #### Examples
+
+
+      ```javascript
+
+      function removeMySetting() {
+          Office.context.document.settings.remove('mySetting');
+      }
+
+      ```
     name: remove(name)
     fullName: office.Office.Settings.remove
     langs:
@@ -205,10 +274,35 @@ items:
             - string
   - uid: office.Office.Settings.removeHandlerAsync
     summary: Removes an event handler for the settingsChanged event.
-    remarks: >-
+    remarks: >
       When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can
       access from the callback function's only parameter. In the callback function passed to the removeHandlerAsync
       method, you can use the properties of the AsyncResult object to return the following information.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      function removeSettingsChangedEventHandler() {
+          Office.context.document.settings.removeHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
+      }
+
+
+      function MyHandler(eventArgs) {
+          write('Event raised: ' + eventArgs.type);
+          doSomethingWithSettings(eventArgs.settings);
+      }
+
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
     name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: office.Office.Settings.removeHandlerAsync
     langs:
@@ -237,7 +331,7 @@ items:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Settings.saveAsync
     summary: Persists the in-memory copy of the settings property bag in the document.
-    remarks: >-
+    remarks: >
       Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the
       session you can just use the set and get methods to work with the in-memory copy of the settings property bag.
       When you want to persist the settings so that they are available the next time the add-in is used, use the
@@ -263,6 +357,26 @@ items:
 
 
       Hosts: Access, Excel, PowerPoint, Word
+
+
+      #### Examples
+
+
+      ```javascript
+
+      function persistSettings() {
+          Office.context.document.settings.saveAsync(function (asyncResult) {
+              write('Settings saved with status: ' + asyncResult.status);
+          });
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
     name: 'saveAsync(options, callback)'
     fullName: office.Office.Settings.saveAsync
     langs:
@@ -295,7 +409,7 @@ items:
       make sure that additions or changes to settings will be available to your add-in the next time the document is
       opened, at some point after calling the Settings.set method and before the add-in is closed, you must call the
       Settings.saveAsync method to persist settings in the document.
-    remarks: >-
+    remarks: >
       The set method creates a new setting of the specified name if it does not already exist, or sets an existing
       setting of the specified name in the in-memory copy of the settings property bag. After you call the
       Settings.saveAsync method, the value is stored in the document as the serialized JSON representation of its data
@@ -306,6 +420,18 @@ items:
 
 
       Available in Requirement set: Settings
+
+
+      #### Examples
+
+
+      ```javascript
+
+      function setMySetting() {
+          Office.context.document.settings.set('mySetting', 'mySetting value');
+      }
+
+      ```
     name: 'set(name, value)'
     fullName: office.Office.Settings.set
     langs:
