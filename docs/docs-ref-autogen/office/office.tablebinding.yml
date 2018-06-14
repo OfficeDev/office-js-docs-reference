@@ -503,7 +503,7 @@ items:
       // 1. Create an object literal that specifies the table formatting options to update on the bound table.
 
       // 2. Call setTableOptions on a previously bound table (with an id of myBinding) passing the object with
-      formatting settin as the tableOptions parameter.
+      formatting setting as the tableOptions parameter.
 
       function updateTableFormatting(){
           var tableOptions = {bandedRows: true, filterButton: false, style: "TableStyleMedium3"}; 

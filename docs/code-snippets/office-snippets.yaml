@@ -478,7 +478,7 @@ Office.TableBinding.setTableOptionsAsync:
   - |-
     // The following example shows how to:
     // 1. Create an object literal that specifies the table formatting options to update on the bound table.
-    // 2. Call setTableOptions on a previously bound table (with an id of myBinding) passing the object with formatting settin as the tableOptions parameter.
+    // 2. Call setTableOptions on a previously bound table (with an id of myBinding) passing the object with formatting setting as the tableOptions parameter.
     function updateTableFormatting(){
         var tableOptions = {bandedRows: true, filterButton: false, style: "TableStyleMedium3"}; 
 
@@ -1706,7 +1706,8 @@ Office.ProjectDocument.addHandlerAsync:
     })();
 
     // For a complete code sample that shows how to use a TaskSelectionChanged event handler in a Project add-in,
-    // see Create your first task pane add-in for Project by using a text editor.
+    // see "Create your first task pane add-in for Project by using a text editor."
+    // https://docs.microsoft.com/en-us/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 Office.ProjectDocument.getMaxResourceIndexAsync:
   - |-
     // The following code example calls getResourceTaskIndexAsync to get the maximum index of the collection of resources
@@ -2701,8 +2702,9 @@ Office.ProjectDocument.ResourceSelectionChanged:
     })();
 
     // For a complete code sample that shows how to use a ResourceSelectionChanged
-    // event handler in a Project add-in, see Create your first task pane add-in
-    // for Project 2013 by using a text editor.
+    // event handler in a Project add-in, see "Create your first task pane add-in
+    // for Project 2013 by using a text editor."
+    // https://docs.microsoft.com/en-us/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 Office.ProjectDocument.setResourceFieldAsync:
   - |-
     // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's
@@ -2948,9 +2950,10 @@ Office.ProjectDocument.ViewSelectionChanged:
         }
     })();
 
-    //For an example that shows how to use a ViewSelectionChanged event handler in a
-    // Project add-in, see Create your first task pane add-in for Project 2013 by
-    // using a text editor.
+    // For an example that shows how to use a ViewSelectionChanged event handler in a
+    // Project add-in, see "Create your first task pane add-in for Project 2013 by
+    // using a text editor."
+    // https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 Office.Settings.addHandlerAsync:
   - |-
     function addSelectionChangedEventHandler() {
