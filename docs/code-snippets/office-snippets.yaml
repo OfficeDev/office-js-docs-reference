@@ -84,6 +84,16 @@ Office.AsyncResult.value:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.Auth.getAccessTokenAsync:
+  - |-
+    Office.context.auth.getAccessTokenAsync(function(result) {
+        if (result.status === "succeeded") {
+            var token = result.value.accessToken;
+            // ...
+        } else {
+            console.log("Error obtaining token", result.error);
+        }
+    });
 Office.Binding.addHandlerAsync:
   - |-
     // The following code sample calls the select method of the Office object to access the binding with ID "MyBinding",
@@ -114,6 +124,19 @@ Office.Binding.bindingDataChanged:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.Binding.bindingSelectionChanged:
+  - |-
+    function addEventHandlerToBinding() {
+    Office.select("bindings#MyBinding").addHandlerAsync(Office.EventType.BindingSelectionChanged, onBindingSelectionChanged);
+    }
+
+    function onBindingSelectionChanged(eventArgs) {
+        write(eventArgs.binding.id + " has been selected.");
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
 Office.Binding.BindingSelectionChangedEventArgs.columnCount:
   - |-
     // The following example adds an event handler for the SelectionChanged event to the binding with an id of myTable.
@@ -135,20 +158,7 @@ Office.Binding.BindingSelectionChangedEventArgs.columnCount:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Binding.bindingSelectionChanged:
-  - |-
-    function addEventHandlerToBinding() {
-    Office.select("bindings#MyBinding").addHandlerAsync(Office.EventType.BindingSelectionChanged, onBindingSelectionChanged);
-    }
-
-    function onBindingSelectionChanged(eventArgs) {
-        write(eventArgs.binding.id + " has been selected.");
-    }
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
-Office.Binding.BindingSelectionChangedEventArgs.startColumn:
+Office.Binding.BindingSelectionChangedEventArgs.rowCount:
   - |-
     // The following example adds an event handler for the SelectionChanged event to the binding with an id of myTable.
     // When the user changes the selection, the handler displays the coordinates of the first cell in the selection,
@@ -169,7 +179,7 @@ Office.Binding.BindingSelectionChangedEventArgs.startColumn:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Binding.BindingSelectionChangedEventArgs.rowCount:
+Office.Binding.BindingSelectionChangedEventArgs.startColumn:
   - |-
     // The following example adds an event handler for the SelectionChanged event to the binding with an id of myTable.
     // When the user changes the selection, the handler displays the coordinates of the first cell in the selection,
@@ -283,28 +293,6 @@ Office.Binding.id:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.MatrixBinding.columnCount:
-  - |-
-    function showBindingColumnCount() {
-        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-            write("Column: " + asyncResult.value.columnCount);
-        });
-    }
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
-Office.MatrixBinding.rowCount:
-  - |-
-    function showBindingRowCount() {
-        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-            write("Rows: " + asyncResult.value.rowCount);
-        });
-    }
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
 Office.Binding.removeHandlerAsync:
   - |-
     function removeEventHandlerFromBinding() {
@@ -392,98 +380,6 @@ Office.Binding.setDataAsync:
       {cellFormat:[{cells: {row: 1}, format: {fontColor: "yellow"}}, 
           {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}]}, 
       function (asyncResult){});
-Office.TableBinding.addColumnsAsync:
-  - |-
-    // The following example adds a single column with three rows to a bound table with the id "myTable"
-    // by passing a TableData object as the data argument of the addColumnsAsync method. To succeed,
-    // the table being updated must have three rows.
-
-    // Add a column to a binding of type table by passing a TableData object.
-    function addColumns() {
-        var myTable = new Office.TableData();
-        myTable.headers = [["Cities"]];
-        myTable.rows = [["Berlin"], ["Roma"], ["Tokyo"]];
-
-        Office.context.document.bindings.getByIdAsync("myTable", function (result) {
-            result.value.addColumnsAsync(myTable);
-        });
-    }
-
-    // The following example adds a single column with three rows to a bound table with the id myTable
-    // by passing an array of arrays ("matrix") as the data argument of the addColumnsAsync method.
-    // To succeed, the table being updated must have three rows.
-
-    // Add a column to a binding of type table by passing an array of arrays.
-    function addColumns() {
-        var myTable = [["Berlin"], ["Roma"], ["Tokyo"]];
-
-        Office.context.document.bindings.getByIdAsync("myTable", function (result) {
-            result.value.addColumnsAsync(myTable);
-        });
-    }
-Office.TableBinding.addRowsAsync:
-  - |-
-    function addRowsToTable() {
-        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-            var binding = asyncResult.value;
-            binding.addRowsAsync([["6", "k"], ["7", "j"]]);
-        });
-    }
-Office.TableBinding.columnCount:
-  - |-
-    // The following example shows how to clear the formatting of the bound table with an ID of "myBinding":
-    Office.select(bindings#myBinding).clearFormatsAsync();
-Office.TableBinding.clearFormatsAsync:
-  - |-
-    function showBindingColumnCount() {
-        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-            write("Column: " + asyncResult.value.columnCount);
-        });
-    }
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
-Office.TableBinding.deleteAllDataValuesAsync:
-  - |-
-    function deleteAllRowsFromTable() {
-        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-            var binding = asyncResult.value;
-            binding.deleteAllDataValuesAsync();
-        });
-    }
-Office.TableBinding.hasHeaders:
-  - |-
-    function showBindingHasHeaders() {
-        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-            write("Binding has headers: " + asyncResult.value.hasHeaders);
-        });
-    }
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
-Office.TableBinding.rowCount:
-  - |-
-    function showBindingRowCount() {
-        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-            write("Rows: " + asyncResult.value.rowCount);
-        });
-    }
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
-Office.TableBinding.setTableOptionsAsync:
-  - |-
-    // The following example shows how to:
-    // 1. Create an object literal that specifies the table formatting options to update on the bound table.
-    // 2. Call setTableOptions on a previously bound table (with an id of myBinding) passing the object with formatting setting as the tableOptions parameter.
-    function updateTableFormatting(){
-        var tableOptions = {bandedRows: true, filterButton: false, style: "TableStyleMedium3"}; 
-
-        Office.select("bindings#myBinding").setTableOptionsAsync(tableOptions, function(asyncResult){});
-    }
 Office.Binding.type:
   - |-
     Office.context.document.bindings.getByIdAsync("MyBinding", function (asyncResult) { 
@@ -606,6 +502,77 @@ Office.Bindings.releaseByIdAsync:
     // Function that writes to a div with id='message' on the page. 
     function write(message){ 
         document.getElementById('message').innerText += message;  
+    }
+Office.cast.item:
+  - |-
+    // The following example uses the toMessageCompose method to cast the Office.context.mailbox.item
+    // property so that it will only show IntelliSense for the Message object in compose mode.
+    // After the cast, the message variable will only display IntelliSense for methods and properties
+    // that can be used in compose mode.
+    var message = Office.cast.item.toMessageCompose(Office.context.mailbox.item);
+Office.Context.contentLanguage:
+  - |-
+    function sayHelloWithContentLanguage() {
+        var myContentLanguage = Office.context.contentLanguage;
+        switch (myContentLanguage) {
+            case 'en-US':
+                write('Hello!');
+                break;
+            case 'en-NZ':
+                write('G\'day mate!');
+                break;
+        }
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+Office.Context.displayLanguage:
+  - |-
+    function sayHelloWithDisplayLanguage() {
+        var myDisplayLanguage = Office.context.displayLanguage;
+        switch (myDisplayLanguage) {
+            case 'en-US':
+                write('Hello!');
+                break;
+            case 'en-NZ':
+                write('G\'day mate!');
+                break;
+        }
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+Office.Context.document:
+  - |-
+    // Extension initialization code.
+    var _document;
+
+    // The initialize function is required for all add-ins.
+    Office.initialize = function () {
+        // Checks for the DOM to load using the jQuery ready function.
+        $(document).ready(function () {
+        // After the DOM is loaded, code specific to the add-in can run.
+        // Initialize instance variables to access API objects.
+        _document = Office.context.document;
+        });
+    }
+Office.Context.mailbox:
+  - |-
+    // The following line of code access the item object of the JavaScript API for Office.
+    var item = Office.context.mailbox.item;
+Office.Context.officeTheme:
+  - |-
+    function applyOfficeTheme(){
+        // Get office theme colors.
+        var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
+        var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
+        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor
+        var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
+
+        // Apply body background color to a CSS class.
+        $('.body').css('background-color', bodyBackgroundColor);
     }
 Office.CustomXmlNode.baseName:
   - |-
@@ -994,6 +961,27 @@ Office.CustomXmlParts.getByNamespaceAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.Document:
+  - |-
+    // The following example uses the getSelectedDataAsync method of the Document object to retrieve the
+    // user's current selection as text, and then display it in the add-in's page.
+
+    // Display the user's current selection.
+    function showSelection() {
+        Office.context.document.getSelectedDataAsync(
+            "text",                        // coercionType
+            {valueFormat: "unformatted",   // valueFormat
+            filterType: "all"},            // filterType
+            function (result) {            // callback
+                var dataValue; 
+                dataValue = result.value;
+                write('Selected data is: ' + dataValue);
+            });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
 Office.Document.addHandlerAsync:
   - |-
     function addSelectionChangedEventHandler() {
@@ -1273,27 +1261,6 @@ Office.Document.goToByIdAsync:
             }
         });
     }
-Office.Document:
-  - |-
-    // The following example uses the getSelectedDataAsync method of the Document object to retrieve the
-    // user's current selection as text, and then display it in the add-in's page.
-
-    // Display the user's current selection.
-    function showSelection() {
-        Office.context.document.getSelectedDataAsync(
-            "text",                        // coercionType
-            {valueFormat: "unformatted",   // valueFormat
-            filterType: "all"},            // filterType
-            function (result) {            // callback
-                var dataValue; 
-                dataValue = result.value;
-                write('Selected data is: ' + dataValue);
-            });
-    }
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
 Office.Document.mode:
   - |-
     function displayDocumentMode() {
@@ -1421,22 +1388,6 @@ Office.Document.url:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Error.code:
-  - |-
-    // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
-    function setText() {
-        Office.context.document.setSelectedDataAsync("Hello World!",
-            function (asyncResult) {
-                if (asyncResult.status === "failed")
-                    var error = asyncResult.error;
-                write(error.name + ": " + error.code + " - " + error.message);
-            });
-    }
-
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
 Office.Error:
   - |-
     // The following example uses the setSelectedDataAsync method to set the selected text to "Hello World!",
@@ -1447,6 +1398,22 @@ Office.Error:
                 if (asyncResult.status === "failed")
                 var err = asyncResult.error; 
                     write(err.name + ": " + err.message);
+            });
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+Office.Error.code:
+  - |-
+    // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
+    function setText() {
+        Office.context.document.setSelectedDataAsync("Hello World!",
+            function (asyncResult) {
+                if (asyncResult.status === "failed")
+                    var error = asyncResult.error;
+                write(error.name + ": " + error.code + " - " + error.message);
             });
     }
 
@@ -1486,87 +1453,6 @@ Office.Error.name:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.cast.item:
-  - |-
-    // The following example uses the toMessageCompose method to cast the Office.context.mailbox.item
-    // property so that it will only show IntelliSense for the Message object in compose mode.
-    // After the cast, the message variable will only display IntelliSense for methods and properties
-    // that can be used in compose mode.
-    var message = Office.cast.item.toMessageCompose(Office.context.mailbox.item);
-Office.Auth.getAccessTokenAsync:
-  - |-
-    Office.context.auth.getAccessTokenAsync(function(result) {
-        if (result.status === "succeeded") {
-            var token = result.value.accessToken;
-            // ...
-        } else {
-            console.log("Error obtaining token", result.error);
-        }
-    });
-Office.Context.contentLanguage:
-  - |-
-    function sayHelloWithContentLanguage() {
-        var myContentLanguage = Office.context.contentLanguage;
-        switch (myContentLanguage) {
-            case 'en-US':
-                write('Hello!');
-                break;
-            case 'en-NZ':
-                write('G\'day mate!');
-                break;
-        }
-    }
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
-Office.Context.displayLanguage:
-  - |-
-    function sayHelloWithDisplayLanguage() {
-        var myDisplayLanguage = Office.context.displayLanguage;
-        switch (myDisplayLanguage) {
-            case 'en-US':
-                write('Hello!');
-                break;
-            case 'en-NZ':
-                write('G\'day mate!');
-                break;
-        }
-    }
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
-Office.Context.document:
-  - |-
-    // Extension initialization code.
-    var _document;
-
-    // The initialize function is required for all add-ins.
-    Office.initialize = function () {
-        // Checks for the DOM to load using the jQuery ready function.
-        $(document).ready(function () {
-        // After the DOM is loaded, code specific to the add-in can run.
-        // Initialize instance variables to access API objects.
-        _document = Office.context.document;
-        });
-    }
-Office.Context.mailbox:
-  - |-
-    // The following line of code access the item object of the JavaScript API for Office.
-    var item = Office.context.mailbox.item;
-Office.Context.officeTheme:
-  - |-
-    function applyOfficeTheme(){
-        // Get office theme colors.
-        var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
-        var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
-        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor
-        var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
-
-        // Apply body background color to a CSS class.
-        $('.body').css('background-color', bodyBackgroundColor);
-    }
 Office.initialize:
   - |-
     // You can use the value of the InitializationEnumeration to implement different logic for
@@ -1590,43 +1476,60 @@ Office.initialize:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.select:
+Office.MatrixBinding.columnCount:
   - |-
-    // The following code example uses the select method to retrieve a binding with the id "cities" from
-    // the Bindings collection, and then calls the addHandlerAsync method to add an event handler for the
-    // dataChanged event of the binding.
-    function addBindingDataChangedEventHandler() {
-        Office.select("bindings#cities", function onError(){}).addHandlerAsync(Office.EventType.BindingDataChanged,
-        function (eventArgs) {
-            doSomethingWithBinding(eventArgs.binding);
+    function showBindingColumnCount() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            write("Column: " + asyncResult.value.columnCount);
         });
     }
-Office.useShortNamespace:
-  - |-
-    function startUsingShortNamespace() {
-        if (typeof Office === 'undefined') {
-            Microsoft.Office.WebExtension.useShortNamespace(true);
-        }
-        else {
-            Office.useShortNamespace(true);
-        }
-        write('Office alias is now ' + typeof Office);
-    }
-
-    function stopUsingShortNamespace() {
-        if (typeof Office === 'undefined') {
-            Microsoft.Office.WebExtension.useShortNamespace(false);
-        }
-        else {
-            Office.useShortNamespace(false);
-        }
-        write('Office alias is now ' + typeof Office);
-    }
-
     // Function that writes to a div with id='message' on the page.
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+Office.MatrixBinding.rowCount:
+  - |-
+    function showBindingRowCount() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            write("Rows: " + asyncResult.value.rowCount);
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+Office.ProjectDocument:
+  - |-
+    // The following example initializes the add-in and then gets properties of the
+    // Document object that are available in the context of a Project document.
+    // A Project document is the opened, active project. To access members of the
+    // ProjectDocument object, use the Office.context.document object as shown in
+    // the code examples for ProjectDocument methods and events.
+    // The example assumes your add-in has a reference to the jQuery library and
+    // that the following page control is defined in the content div in the page body:
+    <span id="message"></span>
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // Get information about the document.
+                showDocumentProperties();
+            });
+        };
+
+        // Get the document mode and the URL of the active project.
+        function showDocumentProperties() {
+            var output = String.format(
+                'The document mode is {0}.<br/>The URL of the active project is {1}.',
+                Office.context.document.mode,
+                Office.context.document.url);
+            $('#message').html(output);
+        }
+    })();
 Office.ProjectDocument.addHandlerAsync:
   - |-
     // The following code example uses addHandlerAsync to add an event handler for the ViewSelectionChanged event.
@@ -2566,38 +2469,6 @@ Office.ProjectDocument.getTaskFieldAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.ProjectDocument:
-  - |-
-    // The following example initializes the add-in and then gets properties of the
-    // Document object that are available in the context of a Project document.
-    // A Project document is the opened, active project. To access members of the
-    // ProjectDocument object, use the Office.context.document object as shown in
-    // the code examples for ProjectDocument methods and events.
-    // The example assumes your add-in has a reference to the jQuery library and
-    // that the following page control is defined in the content div in the page body:
-    <span id="message"></span>
-
-    (function () {
-        "use strict";
-
-        // The initialize function must be run each time a new page is loaded.
-        Office.initialize = function (reason) {
-            $(document).ready(function () {
-
-                // Get information about the document.
-                showDocumentProperties();
-            });
-        };
-
-        // Get the document mode and the URL of the active project.
-        function showDocumentProperties() {
-            var output = String.format(
-                'The document mode is {0}.<br/>The URL of the active project is {1}.',
-                Office.context.document.mode,
-                Office.context.document.url);
-            $('#message').html(output);
-        }
-    })();
 Office.ProjectDocument.removeHandlerAsync:
   - |-
     // The following code example uses addHandlerAsync to add an event handler for the
@@ -2954,6 +2825,17 @@ Office.ProjectDocument.ViewSelectionChanged:
     // Project add-in, see "Create your first task pane add-in for Project 2013 by
     // using a text editor."
     // https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+Office.select:
+  - |-
+    // The following code example uses the select method to retrieve a binding with the id "cities" from
+    // the Bindings collection, and then calls the addHandlerAsync method to add an event handler for the
+    // dataChanged event of the binding.
+    function addBindingDataChangedEventHandler() {
+        Office.select("bindings#cities", function onError(){}).addHandlerAsync(Office.EventType.BindingDataChanged,
+        function (eventArgs) {
+            doSomethingWithBinding(eventArgs.binding);
+        });
+    }
 Office.Settings.addHandlerAsync:
   - |-
     function addSelectionChangedEventHandler() {
@@ -3025,6 +2907,98 @@ Office.Settings.set:
     function setMySetting() {
         Office.context.document.settings.set('mySetting', 'mySetting value');
     }
+Office.TableBinding.addColumnsAsync:
+  - |-
+    // The following example adds a single column with three rows to a bound table with the id "myTable"
+    // by passing a TableData object as the data argument of the addColumnsAsync method. To succeed,
+    // the table being updated must have three rows.
+
+    // Add a column to a binding of type table by passing a TableData object.
+    function addColumns() {
+        var myTable = new Office.TableData();
+        myTable.headers = [["Cities"]];
+        myTable.rows = [["Berlin"], ["Roma"], ["Tokyo"]];
+
+        Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+            result.value.addColumnsAsync(myTable);
+        });
+    }
+
+    // The following example adds a single column with three rows to a bound table with the id myTable
+    // by passing an array of arrays ("matrix") as the data argument of the addColumnsAsync method.
+    // To succeed, the table being updated must have three rows.
+
+    // Add a column to a binding of type table by passing an array of arrays.
+    function addColumns() {
+        var myTable = [["Berlin"], ["Roma"], ["Tokyo"]];
+
+        Office.context.document.bindings.getByIdAsync("myTable", function (result) {
+            result.value.addColumnsAsync(myTable);
+        });
+    }
+Office.TableBinding.addRowsAsync:
+  - |-
+    function addRowsToTable() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            var binding = asyncResult.value;
+            binding.addRowsAsync([["6", "k"], ["7", "j"]]);
+        });
+    }
+Office.TableBinding.clearFormatsAsync:
+  - |-
+    function showBindingColumnCount() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            write("Column: " + asyncResult.value.columnCount);
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+Office.TableBinding.columnCount:
+  - |-
+    // The following example shows how to clear the formatting of the bound table with an ID of "myBinding":
+    Office.select(bindings#myBinding).clearFormatsAsync();
+Office.TableBinding.deleteAllDataValuesAsync:
+  - |-
+    function deleteAllRowsFromTable() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            var binding = asyncResult.value;
+            binding.deleteAllDataValuesAsync();
+        });
+    }
+Office.TableBinding.hasHeaders:
+  - |-
+    function showBindingHasHeaders() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            write("Binding has headers: " + asyncResult.value.hasHeaders);
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+Office.TableBinding.rowCount:
+  - |-
+    function showBindingRowCount() {
+        Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
+            write("Rows: " + asyncResult.value.rowCount);
+        });
+    }
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
+    }
+Office.TableBinding.setTableOptionsAsync:
+  - |-
+    // The following example shows how to:
+    // 1. Create an object literal that specifies the table formatting options to update on the bound table.
+    // 2. Call setTableOptions on a previously bound table (with an id of myBinding) passing the object with formatting setting as the tableOptions parameter.
+    function updateTableFormatting(){
+        var tableOptions = {bandedRows: true, filterButton: false, style: "TableStyleMedium3"}; 
+
+        Office.select("bindings#myBinding").setTableOptionsAsync(tableOptions, function(asyncResult){});
+    }
 Office.TableData.headers:
   - |-
     // The following example creates a single-column table with a header and three rows.
@@ -3042,4 +3016,30 @@ Office.TableData.rows:
         tableData.headers = [['header1']];
         tableData.rows = [['row1'], ['row2'], ['row3']];
         return tableData;
+    }
+Office.useShortNamespace:
+  - |-
+    function startUsingShortNamespace() {
+        if (typeof Office === 'undefined') {
+            Microsoft.Office.WebExtension.useShortNamespace(true);
+        }
+        else {
+            Office.useShortNamespace(true);
+        }
+        write('Office alias is now ' + typeof Office);
+    }
+
+    function stopUsingShortNamespace() {
+        if (typeof Office === 'undefined') {
+            Microsoft.Office.WebExtension.useShortNamespace(false);
+        }
+        else {
+            Office.useShortNamespace(false);
+        }
+        write('Office alias is now ' + typeof Office);
+    }
+
+    // Function that writes to a div with id='message' on the page.
+    function write(message){
+        document.getElementById('message').innerText += message; 
     }
