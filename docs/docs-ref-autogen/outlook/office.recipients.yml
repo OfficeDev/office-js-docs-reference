@@ -42,6 +42,12 @@ items:
       Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
 
 
+      In addition to the main signature, this method also has these signatures: addAsync(recipients: (string \|
+      EmailUser \| EmailAddressDetails)\[\]): void; addAsync(recipients: (string \| EmailUser \|
+      EmailAddressDetails)\[\], options: AsyncContextOptions): void; addAsync(recipients: (string \| EmailUser \|
+      EmailAddressDetails)\[\], callback: (result: AsyncResult) =&gt; void): void;
+
+
       #### Examples
 
 
@@ -118,6 +124,10 @@ items:
       Applicable Outlook mode: Compose
 
 
+      In addition to the main signature, this method also has these signatures: getAsync(callback: (result: AsyncResult)
+      =&gt; void): void;
+
+
       #### Examples
 
 
@@ -138,18 +148,24 @@ items:
       });
 
       ```
-    name: getAsync(callback)
+    name: 'getAsync(options, callback)'
     fullName: outlook.Office.Recipients.getAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback: (result: AsyncResult) => void): void;'
+      content: 'getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -180,6 +196,12 @@ items:
 
 
       Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
+
+
+      In addition to the main signature, this method also has these signatures: setAsync(recipients: (string \|
+      EmailUser \| EmailAddressDetails)\[\]): void; setAsync(recipients: (string \| EmailUser \|
+      EmailAddressDetails)\[\], options: AsyncContextOptions): void; setAsync(recipients: (string \| EmailUser \|
+      EmailAddressDetails)\[\], callback: (result: AsyncResult) =&gt; void): void;
 
 
       #### Examples

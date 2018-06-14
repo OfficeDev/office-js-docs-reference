@@ -54,6 +54,12 @@ items:
 
 
       NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+
+
+      In addition to this signature, the method also has the following signatures: addFileAttachmentAsync(uri: string,
+      attachmentName: string): void; addFileAttachmentAsync(uri: string, attachmentName: string, options:
+      AsyncContextOptions): void; addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result:
+      AsyncResult) =&gt; void): void;
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: outlook.Office.ItemCompose.addFileAttachmentAsync
     langs:
@@ -127,6 +133,12 @@ items:
 
 
       NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+
+
+      In addition to the main signature, this method also has these signatures: addItemAttachmentAsync(itemId: any,
+      attachmentName: string): void; addItemAttachmentAsync(itemId: any, attachmentName: string, options:
+      AsyncContextOptions): void; addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result:
+      AsyncResult) =&gt; void): void;
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: outlook.Office.ItemCompose.addItemAttachmentAsync
     langs:
@@ -265,13 +277,19 @@ items:
 
 
       Applicable Outlook mode: Compose
-    name: 'getSelectedDataAsync(coercionType, callback)'
+
+
+      In addition to this signature, the method also has these signatures: getSelectedDataAsync(coercionType:
+      CoercionType, callback: (result: AsyncResult) =&gt; void): void;
+    name: 'getSelectedDataAsync(coercionType, options, callback)'
     fullName: outlook.Office.ItemCompose.getSelectedDataAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedDataAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;'
+      content: >-
+        getSelectedDataAsync(coercionType: CoercionType, options: AsyncContextOptions, callback: (result: AsyncResult)
+        => void): void;
       return:
         type:
           - void
@@ -283,6 +301,12 @@ items:
             tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
           type:
             - CoercionType
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -311,6 +335,12 @@ items:
 
 
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
+
+
+      In addition to this signature, the method also has the following signatures:
+      removeAttachmentAsync(attachmentIndex: string): void; removeAttachmentAsync(attachmentIndex: string, options:
+      AsyncContextOptions): void; removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) =&gt;
+      void): void;
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
     fullName: outlook.Office.ItemCompose.removeAttachmentAsync
     langs:
@@ -383,6 +413,10 @@ items:
 
 
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
+
+
+      In addition to this signature, the method also has the following signatures: saveAsync(): void; saveAsync(options:
+      AsyncContextOptions): void; saveAsync(callback: (result: AsyncResult) =&gt; void): void;
     name: 'saveAsync(options, callback)'
     fullName: outlook.Office.ItemCompose.saveAsync
     langs:
@@ -428,6 +462,11 @@ items:
 
 
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
+
+
+      In addition to this signature, the method also has the following signatures: setSelectedDataAsync(data: string):
+      void; setSelectedDataAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;
+      setSelectedDataAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: outlook.Office.ItemCompose.setSelectedDataAsync
     langs:

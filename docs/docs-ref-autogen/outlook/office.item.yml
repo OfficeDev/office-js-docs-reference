@@ -46,6 +46,10 @@ items:
 
 
       Applicable Outlook mode: Compose or read
+
+
+      In addition to this signature, the method also has the following signatures: addHandlerAsync(eventType:EventType,
+      handler: any, callback?: (result: AsyncResult) =&gt; void): void;
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.Item.addHandlerAsync
     langs:
@@ -293,6 +297,10 @@ items:
 
 
       Applicable Outlook mode: Compose or read
+
+
+      In addition to this signature, the method also has the following signatures:
+      removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.Item.removeHandlerAsync
     langs:
