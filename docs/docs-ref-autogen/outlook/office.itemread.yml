@@ -274,6 +274,10 @@ items:
 
 
       Applicable Outlook mode: Read
+
+
+      In addition to this signature, the method also has the following signatures:
+      getInitializationContextAsync(callback?: (result: AsyncResult) =&gt; void): void;
     name: 'getInitializationContextAsync(options, callback)'
     fullName: outlook.Office.ItemRead.getInitializationContextAsync
     langs:

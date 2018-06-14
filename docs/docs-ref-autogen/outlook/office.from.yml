@@ -34,6 +34,10 @@ items:
 
 
       Applicable Outlook mode: Compose
+
+
+      In addition to this signature, the method also has the following signatures: getAsync(callback?: (result:
+      AsyncResult) =&gt; void): void;
     name: 'getAsync(options, callback)'
     fullName: outlook.Office.From.getAsync
     langs:
