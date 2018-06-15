@@ -49,6 +49,28 @@ items:
           description: Required. The custom property's value.
           type:
             - any
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Word.run(async (context) => {
+          context.document.properties.customProperties.add("Numeric Property", 1234);
+
+          await context.sync();
+          console.log("Property added");
+      });
+      ```
+
+      ```typescript
+      await Word.run(async (context) => {
+          context.document.properties.customProperties.add("String Property", "Hello World!");
+
+          await context.sync();
+          console.log("Property added");
+      });
+      ```
   - uid: word.Word.CustomPropertyCollection.deleteAll
     summary: |-
       Deletes all custom properties in this collection.

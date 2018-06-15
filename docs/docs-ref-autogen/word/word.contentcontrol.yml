@@ -1358,6 +1358,45 @@ items:
           description: ''
           type:
             - OfficeExtension.UpdateOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      // I'll add title and colors to odd and even content controls! and change appearance of all.
+      await Word.run(async (context) => {
+          // Gets the complete sentence  (as range) associated with the insertion point.
+          let evenContentControls = context.document.contentControls.getByTag("even");
+          let oddContentControls = context.document.contentControls.getByTag("odd");
+          evenContentControls.load("color,title,appearance");
+          oddContentControls.load("color,title,appearance");
+
+          await context.sync();
+
+          for (let i = 0; i < evenContentControls.items.length; i++) {
+              // Change a few properties and append a paragraph
+              evenContentControls.items[i].set({
+                  color: 'red',
+                  title: 'Odd ContentControl #' + (i + 1),
+                  appearance: 'Tags'
+              });
+              evenContentControls.items[i].insertParagraph("This is an odd content control", "End");
+          }
+
+          for (let j = 0; j < oddContentControls.items.length; j++) {
+              // Change a few properties and append a paragraph
+              oddContentControls.items[j].set({
+                  color: 'green',
+                  title: 'Even ContentControl #' + (j + 1),
+                  appearance: 'Tags'
+              });
+              oddContentControls.items[j].insertHtml("This is an <b>even</b> content control", "End");
+          }
+
+          await context.sync();
+      });
+      ```
   - uid: word.Word.ContentControl.split
     summary: |-
       Splits the content control into child ranges by using delimiters.
@@ -1553,6 +1592,36 @@ items:
       return:
         type:
           - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      // Traverses each paragraph of the document and wraps a content control on each with either a even or odd tags
+      await Word.run(async (context) => {
+          let paragraphs = context.document.body.paragraphs;
+          paragraphs.load("$none"); //Don't need any properties, we'll just wrap each paragraph with a content control
+
+          await context.sync();
+
+          for (let i = 0; i < paragraphs.items.length; i++) {
+              let contentControl = paragraphs.items[i].insertContentControl();
+              // For even we tag "even"
+              if (i % 2 === 0) {
+                  contentControl.tag = "even";
+              }
+
+              else {
+                  contentControl.tag = "odd";
+              }
+          }
+          console.log("Content controls inserted: " + paragraphs.items.length)
+
+          await context.sync();
+      });
+
+      ```
   - uid: word.Word.ContentControl.text
     summary: |-
       Gets the text of the content control. Read-only.

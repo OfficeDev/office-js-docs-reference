@@ -608,6 +608,24 @@ items:
           }
       });
       ```
+
+      ```typescript
+      await Word.run(async (context) => {
+          let results = context.document.body.search("Contractor");
+          results.load("font/bold");
+
+          await context.sync();
+
+          for (var i = 0; i < results.items.length; i++) { 
+              results.items[i].font.bold = true;
+              var cc = results.items[i].insertContentControl();
+              cc.tag = "customer";  // This value is used in the next step of this sample.
+              cc.title = "Customer Name";
+          }
+
+          await context.sync();
+      });
+      ```
   - uid: word.Word.Range.insertFileFromBase64
     summary: >-
       Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before'

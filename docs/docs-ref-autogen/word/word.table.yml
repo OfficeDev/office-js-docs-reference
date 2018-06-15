@@ -323,6 +323,20 @@ items:
           description: Required. The index of the cell in the row.
           type:
             - number
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Word.run(async (context) => {
+          let firstCell = context.document.body.tables.getFirst().getCell(0, 0).body;
+          firstCell.load("text");
+
+          await context.sync();
+          console.log("First cell text is " + firstCell.text);
+      });
+      ```
   - uid: word.Word.Table.getCellOrNullObject
     summary: >-
       Gets the table cell at a specified row and column. Returns a null object if the specified table cell does not
