@@ -105,6 +105,15 @@ items:
           }
       });
       ```
+
+      ```typescript
+      await Word.run(async (context) => {
+          context.document.sections.getFirst()
+              .getFooter("Primary").insertParagraph("Confidential", "End");
+
+          await context.sync();
+      });
+      ```
   - uid: word.Word.Section.getHeader
     summary: |-
       Gets one of the section's headers.
@@ -167,6 +176,15 @@ items:
           if (error instanceof OfficeExtension.Error) {
               console.log('Debug info: ' + JSON.stringify(error.debugInfo));
           }
+      });
+      ```
+
+      ```typescript
+      await Word.run(async (context) => {
+          context.document.sections.getFirst()
+              .getHeader("Primary").insertText("This is a header", "Start");
+
+          await context.sync();
       });
       ```
   - uid: word.Word.Section.getNext

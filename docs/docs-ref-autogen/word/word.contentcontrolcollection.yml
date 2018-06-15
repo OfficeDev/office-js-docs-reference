@@ -221,6 +221,21 @@ items:
       // The Word-Add-in-DocumentAssembly sample has another example of using the getByTag method.
       // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
       ```
+
+      ```typescript
+      await Word.run(async (context) => {
+          let contentControls = context.document.contentControls.getByTag("customer");
+          contentControls.load("text");
+
+          await context.sync();
+
+          for (let i = 0; i < contentControls.items.length; i++) {
+              contentControls.items[i].insertText("Fabrikam", "Replace");
+          }
+
+          await context.sync();
+      });
+      ```
   - uid: word.Word.ContentControlCollection.getByTitle
     summary: |-
       Gets the content controls that have the specified title.

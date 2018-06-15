@@ -183,6 +183,20 @@ items:
       return:
         type:
           - Word.DocumentProperties
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Word.run(async (context) => {
+          let builtInProperties = context.document.properties;
+          builtInProperties.load("*"); // Let's get all!
+
+          await context.sync();
+          console.log(JSON.stringify(builtInProperties, null, 4));
+      });
+      ```
   - uid: word.Word.Document.save
     summary: >-
       Saves the document. This will use the Word default file naming convention if the document has not been saved
