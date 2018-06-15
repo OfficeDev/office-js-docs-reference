@@ -228,8 +228,20 @@ export declare namespace Office {
      */
     var context: Context;
     /**
-     * This method is called after the Office API was loaded.
-     * @param reason - Indicates how the app was initialized
+     * Occurs when the runtime environment is loaded and the add-in is ready to start interacting with the application and hosted document. 
+     * 
+     * The reason parameter of the initialize event listener function returns an `InitializationReason` enumeration value that specifies how initialization occurred. A task pane or content add-in can be initialized in two ways:
+     * 
+     *  - The user just inserted it from Recently Used Add-ins section of the Add-in drop-down list on the Insert tab of the ribbon in the Office host application, or from Insert add-in dialog box.
+     * 
+     *  - The user opened a document that already contains the add-in.
+     * 
+     * *Note*: The reason parameter of the initialize event listener function only returns an `InitializationReason` enumeration value for task pane and content add-ins. It does not return a value for Outlook add-ins.
+     * 
+     * @remarks
+     * Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
+     * 
+     * @param reason - Indicates how the app was initialized.
      */
     export function initialize(reason: InitializationReason): void;
     /**
@@ -240,8 +252,12 @@ export declare namespace Office {
     */
     export function onReady(callback?: (info: { host: HostType, platform: PlatformType }) => any): Promise<{ host: HostType, platform: PlatformType }>;
     /**
-     * Indicates if the large namespace for objects will be used or not.
-     * @param useShortNamespace - Indicates if 'true' that the short namespace will be used
+     * Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
+     * 
+     * @remarks
+     * Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
+     * 
+     * @param useShortNamespace - True to use the shortcut alias; otherwise false to disable it. The default is true.
      */
     export function useShortNamespace(useShortNamespace: boolean): void;
     // Enumerations
@@ -530,6 +546,11 @@ export declare namespace Office {
         export interface Event {
             
             /**
+             * Information about the control that triggered calling this function
+             */
+            source:Source;
+
+            /**
              * Indicates that the add-in has completed processing that was triggered by an add-in command button or event handler.
              * 
              * This method must be called at the end of a function which was invoked by an add-in command defined with an Action element with an xsi:type attribute set to ExecuteFunction. Calling this method signals the host client that the function is complete and that it can clean up any state involved with invoking the function. For example, if the user closes Outlook before this method is called, Outlook will warn that a function is still executing.
@@ -548,6 +569,17 @@ export declare namespace Office {
              *        allowEvent: A boolean value. When the completed method is used to signal completion of an event handler, this value indicates of the handled event should continue execution or be canceled. For example, an add-in that handles the ItemSend event can set allowEvent = false to cancel sending of the message.
              */
             completed(options?: any): void;
+        }
+
+        /**
+         * Encapsulates source data for add-in events.
+         */
+        export interface Source {
+
+            /**
+             * The id of the control that triggered calling this function. The id comes from the manifest and is the unique ID of your Office Add-in as a GUID.
+             */
+            id: string;
         }
     }
     /**

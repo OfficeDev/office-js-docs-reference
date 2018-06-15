@@ -7279,7 +7279,7 @@
               "description": [
                 {
                   "kind": "text",
-                  "text": "Indicates how the app was initialized"
+                  "text": "Indicates how the app was initialized."
                 }
               ],
               "isOptional": false,
@@ -7291,10 +7291,43 @@
           "summary": [
             {
               "kind": "text",
-              "text": "This method is called after the Office API was loaded."
+              "text": "Occurs when the runtime environment is loaded and the add-in is ready to start interacting with the application and hosted document."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "The reason parameter of the initialize event listener function returns an `InitializationReason` enumeration value that specifies how initialization occurred. A task pane or content add-in can be initialized in two ways:"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "- The user just inserted it from Recently Used Add-ins section of the Add-in drop-down list on the Insert tab of the ribbon in the Office host application, or from Insert add-in dialog box."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "- The user opened a document that already contains the add-in."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "*Note*: The reason parameter of the initialize event listener function only returns an `InitializationReason` enumeration value for task pane and content add-ins. It does not return a value for Outlook add-ins."
             }
           ],
-          "remarks": [],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Hosts: Access, Excel, Outlook, PowerPoint, Project, Word"
+            }
+          ],
           "isBeta": false
         },
         "IPromiseConstructor": {
@@ -17481,7 +17514,7 @@
               "description": [
                 {
                   "kind": "text",
-                  "text": "Indicates if 'true' that the short namespace will be used"
+                  "text": "True to use the shortcut alias; otherwise false to disable it. The default is true."
                 }
               ],
               "isOptional": false,
@@ -17493,10 +17526,15 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Indicates if the large namespace for objects will be used or not."
+              "text": "Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace."
             }
           ],
-          "remarks": [],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Hosts: Access, Excel, Outlook, PowerPoint, Project, Word"
+            }
+          ],
           "isBeta": false
         },
         "ValueFormat": {

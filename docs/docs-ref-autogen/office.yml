@@ -90,25 +90,26 @@ items:
       - office.OfficeExtension.TrackedObjects
       - office.OfficeExtension.UpdateOptions
   - uid: office.Office.initialize
-    summary: This method is called after the Office API was loaded.
-    name: initialize(reason)
-    fullName: office.Office.initialize
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export function initialize(reason: InitializationReason): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: reason
-          description: Indicates how the app was initialized
-          type:
-            - InitializationReason
-    remarks: |
+    summary: >-
+      Occurs when the runtime environment is loaded and the add-in is ready to start interacting with the application
+      and hosted document.
 
+
+      The reason parameter of the initialize event listener function returns an \`InitializationReason\` enumeration
+      value that specifies how initialization occurred. A task pane or content add-in can be initialized in two ways:
+
+
+      - The user just inserted it from Recently Used Add-ins section of the Add-in drop-down list on the Insert tab of
+      the ribbon in the Office host application, or from Insert add-in dialog box.
+
+
+      - The user opened a document that already contains the add-in.
+
+
+      \*Note\*: The reason parameter of the initialize event listener function only returns an \`InitializationReason\`
+      enumeration value for task pane and content add-ins. It does not return a value for Outlook add-ins.
+    remarks: |
+      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
 
       #### Examples
 
@@ -135,6 +136,22 @@ items:
           document.getElementById('message').innerText += message; 
       }
       ```
+    name: initialize(reason)
+    fullName: office.Office.initialize
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function initialize(reason: InitializationReason): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: reason
+          description: Indicates how the app was initialized.
+          type:
+            - InitializationReason
   - uid: office.Office.onReady
     summary: >-
       Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized
@@ -203,25 +220,9 @@ items:
       }
       ```
   - uid: office.Office.useShortNamespace
-    summary: Indicates if the large namespace for objects will be used or not.
-    name: useShortNamespace(useShortNamespace)
-    fullName: office.Office.useShortNamespace
-    langs:
-      - typeScript
-    type: function
-    syntax:
-      content: 'export function useShortNamespace(useShortNamespace: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: useShortNamespace
-          description: Indicates if 'true' that the short namespace will be used
-          type:
-            - boolean
+    summary: Toggles on and off the \`Office\` alias for the full \`Microsoft.Office.WebExtension\` namespace.
     remarks: |
-
+      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
 
       #### Examples
 
@@ -251,6 +252,22 @@ items:
           document.getElementById('message').innerText += message; 
       }
       ```
+    name: useShortNamespace(useShortNamespace)
+    fullName: office.Office.useShortNamespace
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function useShortNamespace(useShortNamespace: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: useShortNamespace
+          description: True to use the shortcut alias; otherwise false to disable it. The default is true.
+          type:
+            - boolean
 references:
   - uid: office.Office.ActiveView
     name: Office.ActiveView
