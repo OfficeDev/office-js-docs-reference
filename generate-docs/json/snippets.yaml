@@ -2560,27 +2560,15 @@ Office.Binding.addHandlerAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Binding.bindingDataChanged:
-  - |-
-    function addEventHandlerToBinding() {
-        Office.select("bindings#MyBinding").addHandlerAsync(Office.EventType.BindingDataChanged, onBindingDataChanged);
-    }
-
-    function onBindingDataChanged(eventArgs) {
-        write("Data has changed in binding: " + eventArgs.binding.id);
-    }
-
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message; 
-    }
-Office.Binding.bindingSelectionChanged:
   - >-
+    // To add an event handler for the BindingSelectionChanged event of a
+    binding, use the addHandlerAsync method of the Binding object.
+
+    // The event handler receives an argument of type
+    BindingSelectionChangedEventArgs.
+
     function addEventHandlerToBinding() {
-
-    Office.select("bindings#MyBinding").addHandlerAsync(Office.EventType.BindingSelectionChanged,
-    onBindingSelectionChanged);
-
+        Office.select("bindings#MyBinding").addHandlerAsync(Office.EventType.BindingSelectionChanged, onBindingSelectionChanged);
     }
 
 
@@ -3369,17 +3357,57 @@ Office.CustomXmlNode.setXmlAsync:
         });
     }
 Office.CustomXmlPart.addHandlerAsync:
-  - |-
+  - >-
+    // To add an event handler for the NodeDeleted event, use the
+    addHandlerAsync method of the CustomXmlPart object.
+
+    function addNodeDeletedEvent() {
+        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.addHandlerAsync(Office.EventType.NodeDeleted, function (eventArgs) {
+                write("A node has been deleted.");
+            });
+        });
+    }
+
+    // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message;
+    }
+  - >-
+    // To add an event handler for the NodeInserted event, use the
+    addHandlerAsync method of the CustomXmlPart object.
+
     function addNodeInsertedEvent() {
         Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
-            xmlPart.addHandlerAsync(Office.EventType.DataNodeInserted, myHandler);
+            xmlPart.addHandlerAsync(Office.EventType.NodeInserted, function (eventArgs) {
+                write("A node has been inserted.");
+            });
         });
     }
-    function myHandler(eventArgs) {
-                write("A node has been inserted.");
-    }
+
     // Function that writes to a div with id='message' on the page.
+
+    function write(message){
+        document.getElementById('message').innerText += message;
+    }
+  - >-
+    // To add an event handler for the NodeReplaced event, use the
+    addHandlerAsync method of the CustomXmlPart object.
+
+    function addNodeReplacedEvent() {
+        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
+            var xmlPart = result.value;
+            xmlPart.addHandlerAsync(Office.EventType.NodeReplaced, function (eventArgs) {
+                write("A node has been replaced.");
+            });
+        });
+    }
+
+    // Function that writes to a div with id='message' on the page.
+
     function write(message){
         document.getElementById('message').innerText += message;
     }
@@ -3395,48 +3423,6 @@ Office.CustomXmlPart.builtIn:
     // Function that writes to a div with id='message' on the page.
     function write(message){
         document.getElementById('message').innerText += message; 
-    }
-Office.CustomXmlPart.dataNodeDeleted:
-  - |-
-    function addNodeDeletedEvent() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
-            xmlPart.addHandlerAsync(Office.EventType.DataNodeDeleted, function (eventArgs) {
-                write("A node has been deleted.");
-            });
-        });
-    }
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message;
-    }
-Office.CustomXmlPart.dataNodeInserted:
-  - |-
-    function addNodeInsertedEvent() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
-            xmlPart.addHandlerAsync(Office.EventType.DataNodeInserted, function (eventArgs) {
-                write("A node has been inserted.");
-            });
-        });
-    }
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message;
-    }
-Office.CustomXmlPart.dataNodeReplaced:
-  - |-
-    function addNodeReplacedEvent() {
-        Office.context.document.customXmlParts.getByIdAsync("{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-            var xmlPart = result.value;
-            xmlPart.addHandlerAsync(Office.EventType.DataNodeReplaced, function (eventArgs) {
-                write("A node has been replaced.");
-            });
-        });
-    }
-    // Function that writes to a div with id='message' on the page.
-    function write(message){
-        document.getElementById('message').innerText += message;
     }
 Office.CustomXmlPart.deleteAsync:
   - |-
