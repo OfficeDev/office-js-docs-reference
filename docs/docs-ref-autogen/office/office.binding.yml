@@ -67,6 +67,31 @@ items:
       }
 
       ```
+
+
+      ```javascript
+
+      // To add an event handler for the BindingSelectionChanged event of a binding, use the addHandlerAsync method of
+      the Binding object.
+
+      // The event handler receives an argument of type BindingSelectionChangedEventArgs.
+
+      function addEventHandlerToBinding() {
+          Office.select("bindings#MyBinding").addHandlerAsync(Office.EventType.BindingSelectionChanged, onBindingSelectionChanged);
+      }
+
+
+      function onBindingSelectionChanged(eventArgs) {
+          write(eventArgs.binding.id + " has been selected.");
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: office.Office.Binding.addHandlerAsync
     langs:
