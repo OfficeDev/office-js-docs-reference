@@ -31,6 +31,7 @@ items:
       - outlook.Office.Mailbox.convertToLocalClientTime
       - outlook.Office.Mailbox.convertToRestId
       - outlook.Office.Mailbox.convertToUtcClientTime
+      - outlook.Office.Mailbox.diagnostics
       - outlook.Office.Mailbox.displayAppointmentForm
       - outlook.Office.Mailbox.displayMessageForm
       - outlook.Office.Mailbox.displayNewAppointmentForm
@@ -41,6 +42,7 @@ items:
       - outlook.Office.Mailbox.item
       - outlook.Office.Mailbox.makeEwsRequestAsync
       - outlook.Office.Mailbox.restUrl
+      - outlook.Office.Mailbox.userProfile
   - uid: outlook.Office.Mailbox.addHandlerAsync
     summary: >-
       Adds an event handler for a supported event.
@@ -65,8 +67,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, options?:
-        AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
+        addHandlerAsync(eventType: EventType, handler: (type: EventType) => void, options?: AsyncContextOptions,
+        callback?: (result: AsyncResult) => void): void;
       return:
         type:
           - void
@@ -75,13 +77,13 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - Office.EventType
+            - EventType
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
             The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
           type:
-            - '(type: Office.EventType) => void'
+            - '(type: EventType) => void'
         - id: options
           description: 'Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
@@ -243,6 +245,51 @@ items:
           description: The local time value to convert.
           type:
             - LocalClientTime
+  - uid: outlook.Office.Mailbox.diagnostics
+    summary: >-
+      Provides diagnostic information to an Outlook add-in.
+
+
+      Contains the following members:
+
+
+      - hostName (string): A string that represents the name of the host application. It be one of the following values:
+      Outlook, Mac Outlook, OutlookIOS, or OutlookWebApp.
+
+
+      - hostVersion (string): A string that represents the version of either the host application or the Exchange
+      Server. If the mail add-in is running on the Outlook desktop client or Outlook for iOS, the hostVersion property
+      returns the version of the host application, Outlook. In Outlook Web App, the property returns the version of the
+      Exchange Server. An example is the string 15.0.468.0.
+
+
+      - OWAView (string): A string that represents the current view of Outlook Web App. If the host application is not
+      Outlook Web App, then accessing this property results in undefined. Outlook Web App has three views (OneColumn -
+      displayed when the screen is narrow, TwoColumns - displayed when the screen is wider, and ThreeColumns - displayed
+      when the screen is wide.) that correspond to the width of the screen and the window, and the number of columns
+      that can be displayed.
+
+
+      More information is under [Office.Diagnostics](xref:outlook.Office.Diagnostics)<!-- -->.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Compose or read
+    name: diagnostics
+    fullName: outlook.Office.Mailbox.diagnostics
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'diagnostics: Diagnostics;'
+      return:
+        type:
+          - Diagnostics
   - uid: outlook.Office.Mailbox.displayAppointmentForm
     summary: >-
       Displays an existing calendar appointment.
@@ -425,21 +472,24 @@ items:
         - id: parameters
           description: >-
             A dictionary containing all values to be filled in for the user in the new form. All parameters are
-            optional. toRecipients: An array of strings containing the email addresses or an array containing an
-            EmailAddressDetails object for each of the recipients on the To line. The array is limited to a maximum of
-            100 entries. ccRecipients: An array of strings containing the email addresses or an array containing an
-            EmailAddressDetails object for each of the recipients on the Cc line. The array is limited to a maximum of
-            100 entries. bccRecipients: An array of strings containing the email addresses or an array containing an
-            EmailAddressDetails object for each of the recipients on the Bcc line. The array is limited to a maximum of
-            100 entries. subject: A string containing the subject of the message. The string is limited to a maximum of
-            255 characters. htmlBody: The HTML body of the message. The body content is limited to a maximum size of 32
-            KB. attachments: An array of JSON objects that are either file or item attachments. attachments.type:
-            Indicates the type of attachment. Must be file for a file attachment or item for an item attachment.
-            attachments.name: A string that contains the name of the attachment, up to 255 characters in length.
-            attachments.url: Only used if type is set to file. The URI of the location for the file.
-            attachments.isInline: Only used if type is set to file. If true, indicates that the attachment will be shown
-            inline in the message body, and should not be displayed in the attachment list. attachments.itemId: Only
-            used if type is set to item. The EWS item id of the attachment. This is a string up to 100 characters.
+            optional. toRecipients: An array of strings containing the email addresses or an array containing
+            an[Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) object for each of the recipients on
+            the To line. The array is limited to a maximum of 100 entries. ccRecipients: An array of strings containing
+            the email addresses or an array containing an
+            [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) object for each of the recipients on
+            the Cc line. The array is limited to a maximum of 100 entries. bccRecipients: An array of strings containing
+            the email addresses or an array containing an
+            [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) object for each of the recipients on
+            the Bcc line. The array is limited to a maximum of 100 entries. subject: A string containing the subject of
+            the message. The string is limited to a maximum of 255 characters. htmlBody: The HTML body of the message.
+            The body content is limited to a maximum size of 32 KB. attachments: An array of JSON objects that are
+            either file or item attachments. attachments.type: Indicates the type of attachment. Must be file for a file
+            attachment or item for an item attachment. attachments.name: A string that contains the name of the
+            attachment, up to 255 characters in length. attachments.url: Only used if type is set to file. The URI of
+            the location for the file. attachments.isInline: Only used if type is set to file. If true, indicates that
+            the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+            attachments.itemId: Only used if type is set to item. The EWS item id of the attachment. This is a string up
+            to 100 characters.
           type:
             - any
   - uid: outlook.Office.Mailbox.ewsUrl
@@ -523,9 +573,13 @@ items:
       Applicable Outlook mode: Compose and read
 
 
-      In addition to this signature, the method has the following signature: getCallbackTokenAsync(callback: (result:
-      AsyncResult) =&gt; void): void; getCallbackTokenAsync(callback: (result: AsyncResult) =&gt; void, userContext?:
-      any): void;
+      In addition to this signature, the method has the following signatures:
+
+
+      \`getCallbackTokenAsync(callback: (result: AsyncResult) =&gt; void): void;\`
+
+
+      \`getCallbackTokenAsync(callback: (result: AsyncResult) =&gt; void, userContext?: any): void;\`
     name: 'getCallbackTokenAsync(options, callback)'
     fullName: outlook.Office.Mailbox.getCallbackTokenAsync
     langs:
@@ -647,7 +701,7 @@ items:
       15.0.4535.1004, you should set the encoding value to ISO-8859-1.
 
 
-      &lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
+      \`&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;\`
 
 
       You do not need to set the encoding value when your mail app is running in Outlook on the web. You can determine
@@ -723,3 +777,20 @@ items:
       return:
         type:
           - string
+  - uid: outlook.Office.Mailbox.userProfile
+    summary: >-
+      Information about the user associated with the mailbox. This includes their account type, display name, email
+      adddress, and time zone.
+
+
+      More information is under [Office.UserProfile](xref:outlook.Office.UserProfile)
+    name: userProfile
+    fullName: outlook.Office.Mailbox.userProfile
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'userProfile: UserProfile;'
+      return:
+        type:
+          - UserProfile

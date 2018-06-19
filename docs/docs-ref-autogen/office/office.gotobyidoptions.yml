@@ -3,7 +3,7 @@ items:
   - uid: office.Office.GoToByIdOptions
     summary: Provides options for whether to select the location that is navigated to.
     remarks: >-
-      The behavior caused by the options.selectionMode option varies by host:
+      The behavior caused by the [options.selectionMode](xref:office.Office.SelectionMode) option varies by host:
 
 
       In Excel: Office.SelectionMode.Selected selects all content in the binding, or named item.
@@ -43,8 +43,9 @@ items:
           - any
   - uid: office.Office.GoToByIdOptions.selectionMode
     summary: >-
-      Specifies whether the location specified by the id parameter is selected (highlighted). Use Office.SelectionMode
-      or string equivalent. See the Remarks for more information.
+      Specifies whether the location specified by the id parameter is selected (highlighted). Use
+      [Office.SelectionMode](xref:office.Office.SelectionMode) or string equivalent. See the Remarks for more
+      information.
     name: selectionMode
     fullName: office.Office.GoToByIdOptions.selectionMode
     langs:

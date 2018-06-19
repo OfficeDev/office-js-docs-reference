@@ -25,6 +25,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"cloud"'
   - uid: outlook.Office.MailboxEnums.AttachmentType.File
     summary: The attachment is a file
     name: File
@@ -32,6 +33,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"file"'
   - uid: outlook.Office.MailboxEnums.AttachmentType.Item
     summary: The attachment is an Exchange item
     name: Item
@@ -39,3 +41,4 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"item"'

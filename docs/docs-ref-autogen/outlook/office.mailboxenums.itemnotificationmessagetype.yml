@@ -23,6 +23,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"errorMessage"'
   - uid: outlook.Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage
     summary: The notificationMessage is an informational message.
     name: InformationalMessage
@@ -30,6 +31,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"informationalMessage"'
   - uid: outlook.Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator
     summary: The notificationMessage is a progress indicator.
     name: ProgressIndicator
@@ -37,3 +39,4 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"progressIndicator"'

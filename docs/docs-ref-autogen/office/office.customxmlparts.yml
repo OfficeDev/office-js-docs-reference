@@ -110,7 +110,7 @@ items:
           type:
             - string
         - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback..'
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
             - AsyncContextOptions
         - id: callback

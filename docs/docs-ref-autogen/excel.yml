@@ -255,13 +255,13 @@ items:
           description: >-
             An array of previously-created API objects. The array will be validated to make sure that all of the objects
             share the same context. The batch will use this shared RequestContext, which means that any changes applied
-            to these objects will be picked up by "context.sync()".
+            to these objects will be picked up by \`context.sync()\`.
           type:
             - 'OfficeExtension.ClientObject[]'
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of
-            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
+            \`context.sync()\`). The context parameter facilitates requests to the Excel application. Since the Office
             add-in and the Excel application run in two different processes, the RequestContext is required to get
             access to the Excel object model from the add-in.
           type:

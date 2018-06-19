@@ -2,8 +2,11 @@
 items:
   - uid: outlook.Office.ItemCompose
     summary: >-
+      The compose mode of [Office.context.mailbox.item](xref:outlook.Office.Item)<!-- -->.
+
+
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-      this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+      this as a mode of \*\*Office.context.mailbox.item\*\*. Refer to the Object Model pages for more information.
     name: Office.ItemCompose
     fullName: outlook.Office.ItemCompose
     langs:
@@ -56,10 +59,16 @@ items:
       NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
 
 
-      In addition to this signature, the method also has the following signatures: addFileAttachmentAsync(uri: string,
-      attachmentName: string): void; addFileAttachmentAsync(uri: string, attachmentName: string, options:
-      AsyncContextOptions): void; addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result:
-      AsyncResult) =&gt; void): void;
+      In addition to this signature, the method also has the following signatures:
+
+
+      \`addFileAttachmentAsync(uri: string, attachmentName: string): void;\`
+
+
+      \`addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;\`
+
+
+      \`addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) =&gt; void): void;\`
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: outlook.Office.ItemCompose.addFileAttachmentAsync
     langs:
@@ -135,10 +144,16 @@ items:
       NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
 
 
-      In addition to the main signature, this method also has these signatures: addItemAttachmentAsync(itemId: any,
-      attachmentName: string): void; addItemAttachmentAsync(itemId: any, attachmentName: string, options:
-      AsyncContextOptions): void; addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result:
-      AsyncResult) =&gt; void): void;
+      In addition to the main signature, this method also has these signatures:
+
+
+      \`addItemAttachmentAsync(itemId: any, attachmentName: string): void;\`
+
+
+      \`addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;\`
+
+
+      \`addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) =&gt; void): void;\`
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: outlook.Office.ItemCompose.addItemAttachmentAsync
     langs:
@@ -218,9 +233,6 @@ items:
 
       Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than
       16.0.8413.1000) and Outlook on the web for Office 365.
-
-
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       More information on [actionable
       messages](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
@@ -231,6 +243,7 @@ items:
 
 
       Applicable Outlook mode: Read
+    isPreview: true
     name: 'getInitializationContextAsync(options, callback)'
     fullName: outlook.Office.ItemCompose.getInitializationContextAsync
     langs:
@@ -277,19 +290,13 @@ items:
 
 
       Applicable Outlook mode: Compose
-
-
-      In addition to this signature, the method also has these signatures: getSelectedDataAsync(coercionType:
-      CoercionType, callback: (result: AsyncResult) =&gt; void): void;
-    name: 'getSelectedDataAsync(coercionType, options, callback)'
+    name: 'getSelectedDataAsync(coercionType, callback)'
     fullName: outlook.Office.ItemCompose.getSelectedDataAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getSelectedDataAsync(coercionType: CoercionType, options: AsyncContextOptions, callback: (result: AsyncResult)
-        => void): void;
+      content: 'getSelectedDataAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
@@ -301,12 +308,6 @@ items:
             tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
           type:
             - CoercionType
-        - id: options
-          description: >-
-            An object literal that contains one or more of the following properties. asyncContext: Developers can
-            provide any object they wish to access in the callback method.
-          type:
-            - AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -338,9 +339,15 @@ items:
 
 
       In addition to this signature, the method also has the following signatures:
-      removeAttachmentAsync(attachmentIndex: string): void; removeAttachmentAsync(attachmentIndex: string, options:
-      AsyncContextOptions): void; removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) =&gt;
-      void): void;
+
+
+      \`removeAttachmentAsync(attachmentIndex: string): void;\`
+
+
+      \`removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;\`
+
+
+      \`removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) =&gt; void): void;\`
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
     fullName: outlook.Office.ItemCompose.removeAttachmentAsync
     langs:
@@ -415,8 +422,16 @@ items:
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
 
 
-      In addition to this signature, the method also has the following signatures: saveAsync(): void; saveAsync(options:
-      AsyncContextOptions): void; saveAsync(callback: (result: AsyncResult) =&gt; void): void;
+      In addition to this signature, the method also has the following signatures:
+
+
+      \`saveAsync(): void;\`
+
+
+      \`saveAsync(options: AsyncContextOptions): void;\`
+
+
+      \`saveAsync(callback: (result: AsyncResult) =&gt; void): void;\`
     name: 'saveAsync(options, callback)'
     fullName: outlook.Office.ItemCompose.saveAsync
     langs:
@@ -464,9 +479,16 @@ items:
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
 
 
-      In addition to this signature, the method also has the following signatures: setSelectedDataAsync(data: string):
-      void; setSelectedDataAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;
-      setSelectedDataAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;
+      In addition to this signature, the method also has the following signatures:
+
+
+      \`setSelectedDataAsync(data: string): void;\`
+
+
+      \`setSelectedDataAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;\`
+
+
+      \`setSelectedDataAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;\`
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: outlook.Office.ItemCompose.setSelectedDataAsync
     langs:

@@ -1253,7 +1253,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The Office BindingType for the data. The method returns null if the selected object cannot be coerced into the specified type."
+                      "text": "The"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.BindingType"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "BindingType"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " for the data. The method returns null if the selected object cannot be coerced into the specified type."
                     }
                   ],
                   "isOptional": false,
@@ -1330,7 +1349,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "For Word, the itemName parameter refers to the Title property of a Rich Text content control. (You can't bind to content controls other than the Rich Text content control.)"
+                  "text": "For Word, the itemName parameter refers to the Title property of a Rich Text content control. (You can't bind to content controls other than the Rich Text content control)."
                 },
                 {
                   "kind": "paragraph"
@@ -1530,17 +1549,34 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets a Document object that represents the document associated with this set of bindings."
+                  "text": "Gets an "
                 },
                 {
-                  "kind": "paragraph"
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.Document"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "Document"
+                  }
                 },
                 {
                   "kind": "text",
-                  "text": "remarks Hosts: Access, Excel, Word"
+                  "text": " object that represents the document associated with this set of bindings."
                 }
               ],
-              "remarks": [],
+              "remarks": [
+                {
+                  "kind": "text",
+                  "text": "Hosts: Access, Excel, Word"
+                }
+              ],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -1909,7 +1945,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides.For example, {\"slides\":[{\"id\":257,\"title\":\"Slide 2\",\"index\":2},{\"id\":256,\"title\":\"Slide 1\",\"index\":1}]} for a selection of two slides."
+                  "text": "Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides.For example, `{\"slides\":[{\"id\":257,\"title\":\"Slide 2\",\"index\":2},{\"id\":256,\"title\":\"Slide 1\",\"index\":1}]}` for a selection of two slides."
                 }
               ],
               "remarks": [
@@ -1962,7 +1998,7 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "PowerPoint supports only Office.CoercionType.Text, Office.CoercionType.Image, and Office.CoercionType.SlideRange. Project supports only Office.CoercionType.Text."
+              "text": "PowerPoint supports only `Office.CoercionType.Text`, `Office.CoercionType.Image`, and `Office.CoercionType.SlideRange`. Project supports only `Office.CoercionType.Text`."
             },
             {
               "kind": "paragraph"
@@ -3218,7 +3254,26 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents a single CustomXMLPart in a CustomXMLParts collection."
+              "text": "Represents a single CustomXMLPart in an "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Office.CustomXmlParts"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "office",
+                "exportName": "Office",
+                "memberName": "CustomXmlParts"
+              }
+            },
+            {
+              "kind": "text",
+              "text": " collection."
             }
           ],
           "remarks": [
@@ -3253,7 +3308,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Specifies the type of event to add. Required. For a CustomXmlPart object event, the eventType parameter can be specified as Office.EventType.DataNodeDeleted, Office.EventType.DataNodeInserted, Office.EventType.DataNodeReplaced, or the corresponding text values of these enumerations."
+                      "text": "Specifies the type of event to add. Required. For a CustomXmlPart object event, the eventType parameter can be specified as `Office.EventType.DataNodeDeleted`, `Office.EventType.DataNodeInserted`, `Office.EventType.DataNodeReplaced`, or the corresponding text values of these enumerations."
                     }
                   ],
                   "isOptional": false,
@@ -3277,7 +3332,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Provides an option for preserving context data of any type, unchanged, for use in a callback.."
+                      "text": "Provides an option for preserving context data of any type, unchanged, for use in a callback."
                     }
                   ],
                   "isOptional": true,
@@ -3592,7 +3647,26 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the set of namespace prefix mappings (CustomXMLPrefixMappings) used against the current CustomXMLPart."
+                  "text": "Gets the set of namespace prefix mappings ("
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.CustomXmlPrefixMappings"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "CustomXmlPrefixMappings"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": ") used against the current CustomXMLPart."
                 }
               ],
               "remarks": [
@@ -3629,7 +3703,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Specifies the type of event to remove. Required.For a CustomXmlPart object event, the eventType parameter can be specified as Office.EventType.DataNodeDeleted, Office.EventType.DataNodeInserted, Office.EventType.DataNodeReplaced, or the corresponding text values of these enumerations."
+                      "text": "Specifies the type of event to remove. Required.For a CustomXmlPart object event, the eventType parameter can be specified as `Office.EventType.DataNodeDeleted`, `Office.EventType.DataNodeInserted`, `Office.EventType.DataNodeReplaced`, or the corresponding text values of these enumerations."
                     }
                   ],
                   "isOptional": false,
@@ -3824,7 +3898,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Provides an option for preserving context data of any type, unchanged, for use in a callback.."
+                      "text": "Provides an option for preserving context data of any type, unchanged, for use in a callback."
                     }
                   ],
                   "isOptional": true,
@@ -4219,7 +4293,7 @@
             }
           }
         },
-        "DialogHandler": {
+        "Dialog": {
           "kind": "interface",
           "extends": "",
           "implements": "",
@@ -4228,7 +4302,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Dialog object returned as part of the displayDialogAsync callback. The object exposes methods for registering event handlers and closing the dialog"
+              "text": "The object that is returned when `UI.displayDialogAsync` is called. It exposes methods for registering event handlers and closing the dialog."
             }
           ],
           "remarks": [],
@@ -4303,7 +4377,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "When called from an active add-in dialog, asynchronously closes the dialog."
+                  "text": "Called from a parent page to close the corresponding dialog box."
                 }
               ],
               "remarks": [],
@@ -4449,7 +4523,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "For a Document object event, the eventType parameter can be specified as Office.EventType.Document.SelectionChanged or Office.EventType.Document.ActiveViewChanged, or the corresponding text value of this enumeration."
+                      "text": "For a Document object event, the eventType parameter can be specified as `Office.EventType.Document.SelectionChanged` or `Office.EventType.Document.ActiveViewChanged`, or the corresponding text value of this enumeration."
                     }
                   ],
                   "isOptional": false,
@@ -4461,7 +4535,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The event handler function to add, whose only parameter is of type DocumentSelectionChangedEventArgs. Required."
+                      "text": "The event handler function to add, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.DocumentSelectionChangedEventArgs"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "DocumentSelectionChangedEventArgs"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ". Required."
                     }
                   ],
                   "isOptional": false,
@@ -4549,7 +4642,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "You don't instantiate the Document object directly in your script. To call members of the Document object to interact with the current document or worksheet, use Office.context.document in your script."
+                  "text": "You don't instantiate the Document object directly in your script. To call members of the Document object to interact with the current document or worksheet, use `Office.context.document` in your script."
                 }
               ],
               "isBeta": false,
@@ -4598,7 +4691,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Provides an option for preserving context data of any type, unchanged, for use in a callback.."
+                      "text": "Provides an option for preserving context data of any type, unchanged, for use in a callback."
                     }
                   ],
                   "isOptional": true,
@@ -4729,35 +4822,54 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The fileType parameter can be specified by using the FileType enumeration or text values. But the possible values vary with the host:"
+                  "text": "The fileType parameter can be specified by using the "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.FileType"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "FileType"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " enumeration or text values. But the possible values vary with the host:"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Excel Online, Win32, Mac, and iOS: Office.FileType.Compressed"
+                  "text": "Excel Online, Win32, Mac, and iOS: `Office.FileType.Compressed`"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "PowerPoint on Windows desktop, Mac, and iPad, and PowerPoint Online: Office.FileType.Compressed, Office.FileType.Pdf"
+                  "text": "PowerPoint on Windows desktop, Mac, and iPad, and PowerPoint Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Word on Windows desktop, Word on Mac, and Word Online: Office.FileType.Compressed, Office.FileType.Pdf, Office.FileType.Text"
+                  "text": "Word on Windows desktop, Word on Mac, and Word Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Word on iPad: Office.FileType.Compressed, Office.FileType.Text"
+                  "text": "Word on iPad: `Office.FileType.Compressed`, `Office.FileType.Text`"
                 }
               ],
               "isBeta": false,
@@ -4825,7 +4937,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "You get the file's URL with the url property ( asyncResult.value.url)."
+                  "text": "You get the file's URL with the url property (`asyncResult.value.url`)."
                 }
               ],
               "isBeta": false,
@@ -5046,42 +5158,42 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online only: Office.CoercionType.Text (string)"
+                  "text": "Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online only: `Office.CoercionType.Text` (string)"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Excel, Word, and Word Online only: Office.CoercionType.Matrix (array of arrays)"
+                  "text": "Excel, Word, and Word Online only: `Office.CoercionType.Matrix` (array of arrays)"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Access, Excel, Word, and Word Online only: Office.CoercionType.Table (TableData object)"
+                  "text": "Access, Excel, Word, and Word Online only: `Office.CoercionType.Table` (TableData object)"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Word only: Office.CoercionType.Html"
+                  "text": "Word only: `Office.CoercionType.Html`"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Word and Word Online only: Office.CoercionType.Ooxml (Office Open XML)"
+                  "text": "Word and Word Online only: `Office.CoercionType.Ooxml` (Office Open XML)"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "PowerPoint and PowerPoint Online only: Office.CoercionType.SlideRange"
+                  "text": "PowerPoint and PowerPoint Online only: `Office.CoercionType.SlideRange`"
                 }
               ],
               "isBeta": false,
@@ -5592,7 +5704,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Provides options to determine which event handler or handlers are removed. *"
+                      "text": "Provides options to determine which event handler or handlers are removed."
                     }
                   ],
                   "isOptional": true,
@@ -5653,7 +5765,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The data to be set. Either a string or CoercionType value, 2d array or TableData object."
+                      "text": "The data to be set. Either a string or"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.CoercionType"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "CoercionType"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " value, 2d array or TableData object."
                     }
                   ],
                   "isOptional": false,
@@ -5890,7 +6021,26 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets a Document object that represents the document that raised the SelectionChanged event."
+                  "text": "Gets an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.Document"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "Document"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object that represents the document that raised the SelectionChanged event."
                 }
               ],
               "remarks": [],
@@ -5910,7 +6060,26 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Get an EventType enumeration value that identifies the kind of event that was raised."
+                  "text": "Get an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.EventType"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "EventType"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " enumeration value that identifies the kind of event that was raised."
                 }
               ],
               "remarks": [],
@@ -6245,13 +6414,13 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Specifies the kind of event that was raised. Returned by the type property of an EventNameEventArgs object."
+              "text": "Specifies the kind of event that was raised. Returned by the `type` property of an *EventName*EventArgs object."
             }
           ],
           "remarks": [
             {
               "kind": "text",
-              "text": "Add-ins for Project support the Office.EventType.ResourceSelectionChanged, Office.EventType.TaskSelectionChanged, and Office.EventType.ViewSelectionChanged event types."
+              "text": "Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and `Office.EventType.ViewSelectionChanged` event types."
             },
             {
               "kind": "paragraph"
@@ -6339,7 +6508,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "|Property |Use to...| |---------|---------| |AsyncResult.value|Always returns undefined because there is no object or data to retrieve.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
+                  "text": "<table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns undefined because there is no object or data to retrieve.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>"
                 },
                 {
                   "kind": "paragraph"
@@ -6407,7 +6576,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "|Property |Use to...| |---------|---------| |AsyncResult.value|Access the Slice object.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
+                  "text": "<table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Access the Slice object.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>"
                 },
                 {
                   "kind": "paragraph"
@@ -6669,7 +6838,26 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "The expected shape of the selection. Use Office.CoercionType or text value. Default: The original, uncoerced type of the binding."
+                  "text": "The expected shape of the selection. Use "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.CoercionType"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "CoercionType"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " or text value. Default: The original, uncoerced type of the binding."
                 }
               ],
               "remarks": [],
@@ -6925,7 +7113,26 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specify whether to get only the visible (that is, filtered-in) data or all the data. Useful when filtering data. Use Office.FilterType or string equivalent. This parameter is ignored in Word documents."
+                  "text": "Specify whether to get only the visible (that is, filtered-in) data or all the data. Useful when filtering data. Use "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.FilterType"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "FilterType"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " or string equivalent. This parameter is ignored in Word documents."
                 }
               ],
               "remarks": [],
@@ -6971,7 +7178,26 @@
           "remarks": [
             {
               "kind": "text",
-              "text": "The behavior caused by the options.selectionMode option varies by host:"
+              "text": "The behavior caused by the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "options.selectionMode"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "office",
+                "exportName": "Office",
+                "memberName": "SelectionMode"
+              }
+            },
+            {
+              "kind": "text",
+              "text": " option varies by host:"
             },
             {
               "kind": "paragraph"
@@ -7029,7 +7255,26 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Specifies whether the location specified by the id parameter is selected (highlighted). Use Office.SelectionMode or string equivalent. See the Remarks for more information."
+                  "text": "Specifies whether the location specified by the id parameter is selected (highlighted). Use "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.SelectionMode"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "SelectionMode"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " or string equivalent. See the Remarks for more information."
                 }
               ],
               "remarks": [],
@@ -15139,7 +15384,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects that specify a range of columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to that range. Example: [{cells: Office.Table.Data, format: {fontColor: \"yellow\"}}, {cells: {row: 3, column: 4}, format: {borderColor: \"white\", fontStyle: \"bold\"}}]"
+                  "text": "Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects that specify a range of columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to that range."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Example: `[{cells: Office.Table.Data, format: {fontColor: \"yellow\"}}, {cells: {row: 3, column: 4}, format: {borderColor: \"white\", fontStyle: \"bold\"}}]`"
                 }
               ],
               "remarks": [],
@@ -15259,7 +15511,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows. Example: {bandedRows: true, filterButton: false}"
+                  "text": "For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows. Example: `{bandedRows: true, filterButton: false}`"
                 }
               ],
               "remarks": [],
@@ -15317,7 +15569,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects that specify a range of columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to that range. Example: [{cells: Office.Table.Data, format: {fontColor: \"yellow\"}}, {cells: {row: 3, column: 4}, format: {borderColor: \"white\", fontStyle: \"bold\"}}]"
+                  "text": "Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects that specify a range of columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to that range."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Example: `[{cells: Office.Table.Data, format: {fontColor: \"yellow\"}}, {cells: {row: 3, column: 4}, format: {borderColor: \"white\", fontStyle: \"bold\"}}]`"
                 }
               ],
               "remarks": [],
@@ -15437,7 +15696,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows. Example: {bandedRows: true, filterButton: false}"
+                  "text": "For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total row, and banded rows. Example: `{bandedRows: true, filterButton: false}`"
                 }
               ],
               "remarks": [],
@@ -15588,7 +15847,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "|Property |Use to...| |---------|---------| |AsyncResult.value|Always returns undefined because there is no data or object to retrieve when adding an event handler.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
+                  "text": "<table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns undefined because there is no data or object to retrieve when adding an event handler.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>"
                 },
                 {
                   "kind": "paragraph"
@@ -15714,7 +15973,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "|Property |Use to...| |---------|---------| |AsyncResult.value|Access a Settings object with the refreshed values.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
+                  "text": "<table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Access a Settings object with the refreshed values.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>"
                 },
                 {
                   "kind": "paragraph"
@@ -15927,7 +16186,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "|Property |Use to...| |---------|---------| |AsyncResult.value|Always returns undefined because there is no object or data to retrieve.| |AsyncResult.status|Determine the success or failure of the operation.| |AsyncResult.error|Access an Error object that provides error information if the operation failed.| |AsyncResult.asyncContext|A user-defined item of any type that is returned in the AsyncResult object without being altered.|"
+                  "text": "<table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns undefined because there is no object or data to retrieve.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>"
                 },
                 {
                   "kind": "paragraph"
@@ -16060,7 +16319,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the raw data of the file slice in Office.FileType.Text (\"text\") or Office.FileType.Compressed (\"compressed\") format as specified by the fileType parameter of the call to the Document.getFileAsync method."
+                  "text": "Gets the raw data of the file slice in `Office.FileType.Text` (\"text\") or `Office.FileType.Compressed` (\"compressed\") format as specified by the fileType parameter of the call to the Document.getFileAsync method."
                 }
               ],
               "remarks": [
@@ -17009,7 +17268,26 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Represents the data in a table or a TableBinding."
+              "text": "Represents the data in a table or a "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Office.TableBinding"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "office",
+                "exportName": "Office",
+                "memberName": "TableBinding"
+              }
+            },
+            {
+              "kind": "text",
+              "text": "."
             }
           ],
           "remarks": [
@@ -17226,7 +17504,26 @@
             },
             {
               "kind": "text",
-              "text": "The TextBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from the Binding object. It does not implement any additional properties or methods of its own."
+              "text": "The TextBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from the "
+            },
+            {
+              "kind": "api-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Office.Binding"
+                }
+              ],
+              "target": {
+                "scopeName": "",
+                "packageName": "office",
+                "exportName": "Office",
+                "memberName": "Binding"
+              }
+            },
+            {
+              "kind": "text",
+              "text": " object. It does not implement any additional properties or methods of its own."
             }
           ],
           "isBeta": false,
@@ -17384,7 +17681,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Any page calling office.context.ui.messageParent must also be on the same domain as the parent page."
+                  "text": "Any page calling `office.context.ui.messageParent` must also be on the same domain as the parent page."
                 },
                 {
                   "kind": "paragraph"
@@ -17607,7 +17904,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "An abstract proxy object that represents an object in an Office document. You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the proxy object state with the document by calling \"context.sync()\"."
+              "text": "An abstract proxy object that represents an object in an Office document. You create proxy objects from the context (or from other proxy objects), add commands to a queue to act on the object, and then synchronize the proxy object state with the document by calling `context.sync()`."
             }
           ],
           "remarks": [],
@@ -17645,7 +17942,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Returns a boolean value for whether the corresponding object is a null object. You must call \"context.sync()\" before reading the isNullObject property."
+                  "text": "Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the isNullObject property."
                 }
               ],
               "remarks": [],
@@ -17665,7 +17962,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "An abstract RequestContext object that facilitates requests to the host Office application. The \"Excel.run\" and \"Word.run\" methods provide a request context."
+              "text": "An abstract RequestContext object that facilitates requests to the host Office application. The `Excel.run and `Word.run` methods provide a request context."
             }
           ],
           "remarks": [],
@@ -17762,7 +18059,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties."
+                  "text": "Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties."
                 }
               ],
               "remarks": [],
@@ -17799,7 +18096,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The key-value pairing of load options for the types, such as { \"Workbook\": \"worksheets,tables\", \"Worksheet\": \"tables\", \"Tables\": \"name\" }"
+                      "text": "The key-value pairing of load options for the types, such as `{ \"Workbook\": \"worksheets,tables\", \"Worksheet\": \"tables\", \"Tables\": \"name\" }`"
                     }
                   ],
                   "isOptional": false,
@@ -17823,7 +18120,14 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Queues up a command to recursively load the specified properties of the object and its navigation properties. You must call \"context.sync()\" before reading the properties."
+                  "text": "Queues up a command to recursively load the specified properties of the object and its navigation properties."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "You must call `context.sync()` before reading the properties."
                 }
               ],
               "remarks": [],
@@ -17875,7 +18179,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Synchronizes the state between JavaScript proxy objects and the Office document, by executing instructions queued on the request context and retrieving properties of loaded Office objects for use in your code.�This method returns a promise, which is resolved when the synchronization is complete."
+                  "text": "Synchronizes the state between JavaScript proxy objects and the Office document, by executing instructions queued on the request context and retrieving properties of loaded Office objects for use in your code. This method returns a promise, which is resolved when the synchronization is complete."
                 }
               ],
               "remarks": [],
@@ -17907,7 +18211,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Adds a trace message to the queue. If the promise returned by \"context.sync()\" is rejected due to an error, this adds a \".traceMessages\" array to the OfficeExtension.Error object, containing all trace messages that were executed. These messages can help you monitor the program execution sequence and detect the cause of the error."
+                  "text": "Adds a trace message to the queue. If the promise returned by `context.sync()` is rejected due to an error, this adds a \".traceMessages\" array to the OfficeExtension.Error object, containing all trace messages that were executed. These messages can help you monitor the program execution sequence and detect the cause of the error."
                 }
               ],
               "remarks": [],
@@ -17949,7 +18253,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Contains the result for methods that return primitive types. The object's value property is retrieved from the document after \"context.sync()\" is invoked."
+              "text": "Contains the result for methods that return primitive types. The object's value property is retrieved from the document after `context.sync()` is invoked."
             }
           ],
           "remarks": [],
@@ -17967,7 +18271,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "The value of the result that is retrieved from the document after \"context.sync()\" is invoked."
+                  "text": "The value of the result that is retrieved from the document after `context.sync()` is invoked."
                 }
               ],
               "remarks": [],
@@ -18343,7 +18647,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "The error object returned by \"context.sync()\", if a promise is rejected due to an error while processing the request."
+              "text": "The error object returned by `context.sync()`, if a promise is rejected due to an error while processing the request."
             }
           ],
           "remarks": [],
@@ -18381,7 +18685,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Debug info (useful for detailed logging of the error, i.e., via JSON.stringify(...))."
+                  "text": "Debug info (useful for detailed logging of the error, i.e., via `JSON.stringify(...)`)."
                 }
               ],
               "remarks": [],
@@ -18481,7 +18785,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Trace messages (if any) that were added via a \"context.trace()\" invocation before calling \"context.sync()\". If there was an error, this contains all trace messages that were executed before the error occurred. These messages can help you monitor the program execution sequence and detect the case of the error."
+                  "text": "Trace messages (if any) that were added via a `context.trace()` invocation before calling `context.sync()`. If there was an error, this contains all trace messages that were executed before the error occurred. These messages can help you monitor the program execution sequence and detect the case of the error."
                 }
               ],
               "remarks": [],
@@ -19230,7 +19534,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call \"context.sync()\" before the memory release takes effect."
+                  "text": "Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect."
                 }
               ],
               "remarks": [],

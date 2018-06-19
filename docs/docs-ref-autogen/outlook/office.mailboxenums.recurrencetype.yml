@@ -1,11 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.MailboxEnums.RecurrenceType
-    summary: |-
-      Specifies the type of recurrence.
-
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Specifies the type of recurrence.
     remarks: 'Applicable Outlook mode: Compose or read'
+    isPreview: true
     name: Office.MailboxEnums.RecurrenceType
     fullName: outlook.Office.MailboxEnums.RecurrenceType
     langs:
@@ -20,6 +18,7 @@ items:
       - outlook.Office.MailboxEnums.RecurrenceType.Yearly
   - uid: outlook.Office.MailboxEnums.RecurrenceType.Daily
     summary: Daily.
+    isPreview: true
     name: Daily
     fullName: outlook.Office.MailboxEnums.RecurrenceType.Daily
     langs:
@@ -28,6 +27,7 @@ items:
     numericValue: '"daily"'
   - uid: outlook.Office.MailboxEnums.RecurrenceType.Monthly
     summary: Monthly.
+    isPreview: true
     name: Monthly
     fullName: outlook.Office.MailboxEnums.RecurrenceType.Monthly
     langs:
@@ -36,6 +36,7 @@ items:
     numericValue: '"monthly"'
   - uid: outlook.Office.MailboxEnums.RecurrenceType.Weekday
     summary: Weekday.
+    isPreview: true
     name: Weekday
     fullName: outlook.Office.MailboxEnums.RecurrenceType.Weekday
     langs:
@@ -44,6 +45,7 @@ items:
     numericValue: '"weekday"'
   - uid: outlook.Office.MailboxEnums.RecurrenceType.Weekly
     summary: Weekly.
+    isPreview: true
     name: Weekly
     fullName: outlook.Office.MailboxEnums.RecurrenceType.Weekly
     langs:
@@ -52,6 +54,7 @@ items:
     numericValue: '"weekly"'
   - uid: outlook.Office.MailboxEnums.RecurrenceType.Yearly
     summary: Yearly.
+    isPreview: true
     name: Yearly
     fullName: outlook.Office.MailboxEnums.RecurrenceType.Yearly
     langs:

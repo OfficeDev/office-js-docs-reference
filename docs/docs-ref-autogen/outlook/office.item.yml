@@ -3,7 +3,7 @@ items:
   - uid: outlook.Office.Item
     summary: >-
       The item namespace is used to access the currently selected message, meeting request, or appointment. You can
-      determine the type of the item by using the itemType property.
+      determine the type of the item by using the \`itemType\` property.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -37,9 +37,6 @@ items:
 
       Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the
       user changes the recurrence pattern of a series.
-
-
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       [Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
@@ -48,8 +45,11 @@ items:
       Applicable Outlook mode: Compose or read
 
 
-      In addition to this signature, the method also has the following signatures: addHandlerAsync(eventType:EventType,
-      handler: any, callback?: (result: AsyncResult) =&gt; void): void;
+      In addition to this signature, the method also has the following signature:
+
+
+      \`addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;\`
+    isPreview: true
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.Item.addHandlerAsync
     langs:
@@ -262,15 +262,13 @@ items:
 
       Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting
       request of a single appointment and NOT a part of a series.
-
-
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       [Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
 
 
       Applicable Outlook mode: Compose or read
+    isPreview: true
     name: recurrence
     fullName: outlook.Office.Item.recurrence
     langs:
@@ -288,9 +286,6 @@ items:
 
       Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the
       user changes the recurrence pattern of a series.
-
-
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       [Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
@@ -299,8 +294,11 @@ items:
       Applicable Outlook mode: Compose or read
 
 
-      In addition to this signature, the method also has the following signatures:
-      removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;
+      In addition to this signature, the method also has the following signature:
+
+
+      \`removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;\`
+    isPreview: true
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.Item.removeHandlerAsync
     langs:
@@ -355,15 +353,13 @@ items:
 
       The seriesId property returns null for items that do not have parent items such as single appointments, series
       items, or meeting requests and returns undefined for any other items that are not meeting requests.
-
-
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       [Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
 
 
       Applicable Outlook mode: Compose or read
+    isPreview: true
     name: seriesId
     fullName: outlook.Office.Item.seriesId
     langs:

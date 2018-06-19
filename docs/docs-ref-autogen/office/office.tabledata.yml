@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.TableData
-    summary: Represents the data in a table or a TableBinding.
+    summary: 'Represents the data in a table or a [Office.TableBinding](xref:office.Office.TableBinding)<!-- -->.'
     remarks: |-
       Hosts: Excel, Word
 

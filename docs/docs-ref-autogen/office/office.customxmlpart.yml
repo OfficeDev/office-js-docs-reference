@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.CustomXmlPart
-    summary: Represents a single CustomXMLPart in a CustomXMLParts collection.
+    summary: 'Represents a single CustomXMLPart in an [Office.CustomXmlParts](xref:office.Office.CustomXmlParts) collection.'
     remarks: |-
       Hosts: Word
 
@@ -115,8 +115,8 @@ items:
         - id: eventType
           description: >-
             Specifies the type of event to add. Required. For a CustomXmlPart object event, the eventType parameter can
-            be specified as Office.EventType.DataNodeDeleted, Office.EventType.DataNodeInserted,
-            Office.EventType.DataNodeReplaced, or the corresponding text values of these enumerations.
+            be specified as \`Office.EventType.DataNodeDeleted\`, \`Office.EventType.DataNodeInserted\`,
+            \`Office.EventType.DataNodeReplaced\`, or the corresponding text values of these enumerations.
           type:
             - EventType
         - id: handler
@@ -126,7 +126,7 @@ items:
           type:
             - '(result: any) => void'
         - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback..'
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
             - AsyncContextOptions
         - id: callback
@@ -333,7 +333,10 @@ items:
         type:
           - string
   - uid: office.Office.CustomXmlPart.namespaceManager
-    summary: Gets the set of namespace prefix mappings (CustomXMLPrefixMappings) used against the current CustomXMLPart.
+    summary: >-
+      Gets the set of namespace prefix mappings
+      ([Office.CustomXmlPrefixMappings](xref:office.Office.CustomXmlPrefixMappings)<!-- -->) used against the current
+      CustomXMLPart.
     remarks: |
       Hosts: Word
 
@@ -394,8 +397,8 @@ items:
         - id: eventType
           description: >-
             Specifies the type of event to remove. Required.For a CustomXmlPart object event, the eventType parameter
-            can be specified as Office.EventType.DataNodeDeleted, Office.EventType.DataNodeInserted,
-            Office.EventType.DataNodeReplaced, or the corresponding text values of these enumerations.
+            can be specified as \`Office.EventType.DataNodeDeleted\`, \`Office.EventType.DataNodeInserted\`,
+            \`Office.EventType.DataNodeReplaced\`, or the corresponding text values of these enumerations.
           type:
             - EventType
         - id: handler

@@ -4,15 +4,13 @@ items:
     summary: >-
       The SeriesTime object provides methods to get and set the dates and times of appointments in a recurring series
       and get the dates and times of meeting requests in a recurring series.
-
-
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       [Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
 
 
       Applicable Outlook mode: Compose or read
+    isPreview: true
     name: Office.SeriesTime
     fullName: outlook.Office.SeriesTime
     langs:
@@ -58,6 +56,7 @@ items:
       }
 
       ```
+    isPreview: true
     name: getDuration()
     fullName: outlook.Office.SeriesTime.getDuration
     langs:
@@ -100,6 +99,7 @@ items:
       }
 
       ```
+    isPreview: true
     name: getEndDate()
     fullName: outlook.Office.SeriesTime.getEndDate
     langs:
@@ -143,6 +143,7 @@ items:
       }
 
       ```
+    isPreview: true
     name: getEndTime()
     fullName: outlook.Office.SeriesTime.getEndTime
     langs:
@@ -185,6 +186,7 @@ items:
       }
 
       ```
+    isPreview: true
     name: getStartDate()
     fullName: outlook.Office.SeriesTime.getStartDate
     langs:
@@ -224,6 +226,7 @@ items:
       seriesTimeObject.setDuration(120);
 
       ```
+    isPreview: true
     name: getStartTime()
     fullName: outlook.Office.SeriesTime.getStartTime
     langs:
@@ -266,6 +269,7 @@ items:
       }
 
       ```
+    isPreview: true
     name: setDuration(minutes)
     fullName: outlook.Office.SeriesTime.setDuration
     langs:
@@ -298,9 +302,11 @@ items:
       Errors: Invalid date format - The date is not in an acceptable format.
 
 
-      In addition to the main signature, this method also has these signatures: setEndDate(date: string): void; Where
-      date is the end date of the recurring appointment series represented in the [ISO
-      8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
+      In addition to the main signature, this method also has this signature:
+
+
+      \`setEndDate(date: string): void;\` (Where date is the end date of the recurring appointment series represented in
+      the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD").
 
 
       #### Examples
@@ -320,6 +326,7 @@ items:
       seriesTimeObject.setEndDate("2017-11-02");
 
       ```
+    isPreview: true
     name: 'setEndDate(year, month, day)'
     fullName: outlook.Office.SeriesTime.setEndDate
     langs:
@@ -362,9 +369,11 @@ items:
       Errors: Invalid date format - The date is not in an acceptable format.
 
 
-      In addition to the main signature, this method also has these signatures: setStartDate(date: string): void; Where
-      date is the start date of the recurring appointment series represented in the [ISO
-      8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
+      In addition to the main signature, this method also has this signature:
+
+
+      \`setStartDate(date: string): void;\` (Where date is the start date of the recurring appointment series
+      represented in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD").
 
 
       #### Examples
@@ -384,6 +393,7 @@ items:
       seriesTimeObject.setStartDate("2017-11-02");
 
       ```
+    isPreview: true
     name: 'setStartDate(year, month, day)'
     fullName: outlook.Office.SeriesTime.setStartDate
     langs:
@@ -428,8 +438,11 @@ items:
       Errors: Invalid time format - The time is not in an acceptable format.
 
 
-      In addition to the main signature, this method also has these signatures: setStartTime(time: string): void; Where
-      time is the start time of all instances represented by standard datetime string format: "THH:mm:ss:mmm".
+      In addition to the main signature, this method also has this signature:
+
+
+      \`setStartTime(time: string): void;\` (Where time is the start time of all instances represented by standard
+      datetime string format: "THH:mm:ss:mmm").
 
 
       #### Examples
@@ -454,6 +467,7 @@ items:
       seriesTimeObject.setStartTime("T23:30:00");
 
       ```
+    isPreview: true
     name: 'setStartTime(hours, minutes)'
     fullName: outlook.Office.SeriesTime.setStartTime
     langs:

@@ -1,7 +1,12 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.UserProfile
-    summary: '\[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]'
+    summary: >-
+      Information about the user associated with the mailbox. This includes their account type, display name, email
+      adddress, and time zone.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       [Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
@@ -30,10 +35,12 @@ items:
 
       \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      \|Value \|Description \| \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\-\-\---\| \|enterprise \|The mailbox is on an
-      on-premises Exchange server.\| \|gmail \|The mailbox is associated with a Gmail account.\| \|office365 \|The
-      mailbox is associated with an Office 365 work or school account.\| \|outlookCom \|The mailbox is associated with a
-      personal Outlook.com account.\|
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Value&lt;/th&gt; &lt;th&gt;Description?&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;enterprise&lt;/td&gt; &lt;td&gt;The mailbox is on an on-premises Exchange server.&lt;/td&gt; &lt;/tr&gt;
+      &lt;tr&gt; &lt;td&gt;gmail&lt;/td&gt; &lt;td&gt;The mailbox is associated with a Gmail account.&lt;/td&gt;
+      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;office365&lt;/td&gt; &lt;td&gt;The mailbox is associated with an Office 365 work
+      or school account.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;outlookCom&lt;/td&gt; &lt;td&gt;The mailbox is
+      associated with a personal Outlook.com account.&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
 
 
       [Minimum permission

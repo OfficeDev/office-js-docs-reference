@@ -35,8 +35,10 @@ items:
       Applicable Outlook mode: Compose
 
 
-      In addition to this signature, the method also has the following signatures: getAsync(callback: (result:
-      AsyncResult) =&gt; void): void;
+      In addition to this signature, the method also has the following signature:
+
+
+      \`getAsync(callback: (result: AsyncResult) =&gt; void): void;\`
     name: 'getAsync(options, callback)'
     fullName: outlook.Office.Location.getAsync
     langs:
@@ -79,9 +81,16 @@ items:
       Errors: DataExceedsMaximumSize - The location parameter is longer than 255 characters.
 
 
-      In addition to this signature, the method also has the following signatures: setAsync(location: string): void;
-      setAsync(location: string, options: AsyncContextOptions): void; setAsync(location: string, callback: (result:
-      AsyncResult) =&gt; void): void;
+      In addition to this signature, the method also has the following signatures:
+
+
+      \`setAsync(location: string): void;\`
+
+
+      \`setAsync(location: string, options: AsyncContextOptions): void;\`
+
+
+      \`setAsync(location: string, callback: (result: AsyncResult) =&gt; void): void;\`
     name: 'setAsync(location, options, callback)'
     fullName: outlook.Office.Location.setAsync
     langs:

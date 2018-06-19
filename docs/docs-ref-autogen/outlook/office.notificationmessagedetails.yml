@@ -82,11 +82,10 @@ items:
           - Boolean
   - uid: outlook.Office.NotificationMessageDetails.type
     summary: >-
-      Specifies the Office.MailboxEnums.ItemNotificationMessageType of message. If type is ProgressIndicator or
-      ErrorMessage, an icon is automatically supplied and the message is not persistent. Therefore the icon and
-      persistent properties are not valid for these types of messages. Including them will result in an
-      ArgumentException. If type is ProgressIndicator, the developer should remove or replace the progress indicator
-      when the action is complete.
+      Specifies the ItemNotificationMessageType of message. If type is ProgressIndicator or ErrorMessage, an icon is
+      automatically supplied and the message is not persistent. Therefore the icon and persistent properties are not
+      valid for these types of messages. Including them will result in an ArgumentException. If type is
+      ProgressIndicator, the developer should remove or replace the progress indicator when the action is complete.
     name: type
     fullName: outlook.Office.NotificationMessageDetails.type
     langs:

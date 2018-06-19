@@ -55,7 +55,7 @@ items:
       page loads, you can go to other domains.
 
 
-      Any page calling office.context.ui.messageParent must also be on the same domain as the parent page.
+      Any page calling \`office.context.ui.messageParent\` must also be on the same domain as the parent page.
 
 
       The following design considerations apply to dialog boxes:

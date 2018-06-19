@@ -5,16 +5,18 @@ items:
       The recurrence object provides methods to get and set the recurrence pattern of appointments but only get the
       recurrence pattern of meeting requests. It will have a dictionary with the following keys: seriesTime,
       recurrenceType, recurrenceProperties, and recurrenceTimeZone (optional).
-
-
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      \|State\|Editable?\|Viewable?\| \|\-\-\---\|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\| \|Appointment Organizer -
-      Compose Series\|Yes (setAsync)\|Yes (getAsync)\| \|Appointment Organizer - Compose Instance\|No (setAsync returns
-      error)\|Yes (getAsync)\| \|Appointment Attendee - Read Series\|No (setAsync not available)\|Yes
-      (item.recurrence)\| \|Appointment Attendee - Read Instance\|No (setAsync not available)\|Yes (item.recurrence)\|
-      \|Meeting Request - Read Series\|No (setAsync not available)\|Yes (item.recurrence)\| \|Meeting Request - Read
-      Instance\|No (setAsync not available)\|Yes (item.recurrence)\|
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;State&lt;/th&gt; &lt;th&gt;Editable?&lt;/th&gt; &lt;th&gt;Viewable?&lt;/th&gt;
+      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment Organizer - Compose Series&lt;/td&gt; &lt;td&gt;Yes
+      (setAsync)&lt;/td&gt; &lt;td&gt;Yes (getAsync)&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment Organizer -
+      Compose Instance&lt;/td&gt; &lt;td&gt;No (setAsync returns error)&lt;/td&gt; &lt;td&gt;Yes (getAsync)&lt;/td&gt;
+      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment Attendee - Read Series&lt;/td&gt; &lt;td&gt;No (setAsync not
+      available)&lt;/td&gt; &lt;td&gt;Yes (item.recurrence)&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment
+      Attendee - Read Instance&lt;/td&gt; &lt;td&gt;No (setAsync not available)&lt;/td&gt; &lt;td&gt;Yes
+      (item.recurrence)&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Meeting Request - Read Series&lt;/td&gt;
+      &lt;td&gt;No (setAsync not available)&lt;/td&gt; &lt;td&gt;Yes (item.recurrence)&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;Meeting Request - Read Instance&lt;/td&gt; &lt;td&gt;No (setAsync not available)&lt;/td&gt;
+      &lt;td&gt;Yes (item.recurrence)&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
 
 
       [Minimum permission
@@ -22,6 +24,7 @@ items:
 
 
       Applicable Outlook mode: Compose or read
+    isPreview: true
     name: Office.Recurrence
     fullName: outlook.Office.Recurrence
     langs:
@@ -50,8 +53,10 @@ items:
       Applicable Outlook mode: Compose or read
 
 
-      In addition to the main signature, this method also has these signatures: getAsync(callback?: (result:
-      AsyncResult) =&gt; void): void;
+      In addition to the main signature, this method also has this signature:
+
+
+      \`getAsync(callback?: (result: AsyncResult) =&gt; void): void;\`
 
 
       #### Examples
@@ -77,6 +82,7 @@ items:
       Time", "offset": -480}}
 
       ```
+    isPreview: true
     name: 'getAsync(options, callback)'
     fullName: outlook.Office.Recurrence.getAsync
     langs:
@@ -112,6 +118,7 @@ items:
 
 
       Applicable Outlook mode: Compose or read
+    isPreview: true
     name: recurrenceProperties
     fullName: outlook.Office.Recurrence.recurrenceProperties
     langs:
@@ -133,6 +140,7 @@ items:
 
 
       Applicable Outlook mode: Compose or read
+    isPreview: true
     name: recurrenceTimeZone
     fullName: outlook.Office.Recurrence.recurrenceTimeZone
     langs:
@@ -154,6 +162,7 @@ items:
 
 
       Applicable Outlook mode: Compose or read
+    isPreview: true
     name: recurrenceType
     fullName: outlook.Office.Recurrence.recurrenceType
     langs:
@@ -166,9 +175,10 @@ items:
           - MailboxEnums.RecurrenceType
   - uid: outlook.Office.Recurrence.seriesTime
     summary: >-
-      This object enables you to manage the start and end dates of the recurring appointment series and the usual start
-      and end times of instances. \*\*This object is not in UTC time.\*\* Instead, it is set in the time zone specified
-      by the recurrenceTimeZone value or defaulted to the item's time zone.
+      The [Office.SeriesTime](xref:outlook.Office.SeriesTime) object enables you to manage the start and end dates of
+      the recurring appointment series and the usual start and end times of instances. \*\*This object is not in UTC
+      time.\*\* Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's
+      time zone.
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -178,6 +188,7 @@ items:
 
 
       Applicable Outlook mode: Compose or read
+    isPreview: true
     name: seriesTime
     fullName: outlook.Office.Recurrence.seriesTime
     langs:
@@ -206,8 +217,10 @@ items:
       Errors: InvalidEndTime - The appointment end time is before its start time.
 
 
-      In addition to the main signature, this method also has these signatures: setAsync(recurrencePattern: Recurrence,
-      callback?: (result: AsyncResult) =&gt; void): void;
+      In addition to the main signature, this method also has this signature:
+
+
+      \`setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult) =&gt; void): void;\`
 
 
       #### Examples
@@ -239,6 +252,7 @@ items:
       every Tuesday and Thursday.
 
       ```
+    isPreview: true
     name: 'setAsync(recurrencePattern, options, callback)'
     fullName: outlook.Office.Recurrence.setAsync
     langs:
