@@ -192,3 +192,23 @@ items:
           - >-
             Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" |
             "Power"
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let seriesCollection = sheet.charts.getItemAt(0).series;
+
+          // Get the trendline for series 1 and load its type property.  
+          let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
+          trendline.load("type");
+
+          await context.sync();
+
+          console.log("The trendline type is:" + trendline.type);  
+      });
+      ```

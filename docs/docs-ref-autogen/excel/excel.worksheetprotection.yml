@@ -106,6 +106,34 @@ items:
           }
       });
       ```
+
+      ```typescript
+      await Excel.run(async (context) => {
+          let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+          activeSheet.load("protection/protected");
+
+          await context.sync();
+
+          if (!activeSheet.protection.protected) {
+              activeSheet.protection.protect();
+          }
+      });
+      ```
+
+      ```typescript
+      let password = await passwordHandler();
+      passwordHelper(password);
+      await Excel.run(async (context) => {
+          let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+          activeSheet.load("protection/protected");
+
+          await context.sync();
+
+          if (!activeSheet.protection.protected) {
+              activeSheet.protection.protect(null, password);
+          }
+      });
+      ```
   - uid: excel.Excel.WorksheetProtection.protected
     summary: |-
       Indicates if the worksheet is protected. Read-Only.
@@ -194,6 +222,30 @@ items:
           allowInsertRows: false, // Protect row insertion
           allowDeleteRows: true // Unprotect row deletion
         });
+      });
+
+      ```
+
+
+      ```typescript
+
+      await Excel.run(async (context) => {
+          let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+          activeSheet.protection.unprotect();
+      });
+
+      ```
+
+
+      ```typescript
+
+      let password = await passwordHandler();
+
+      passwordHelper(password);
+
+      await Excel.run(async (context) => {
+          let activeSheet = context.workbook.worksheets.getActiveWorksheet();
+          activeSheet.protection.unprotect(password);
       });
 
       ```

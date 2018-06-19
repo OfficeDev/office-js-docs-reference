@@ -286,6 +286,37 @@ items:
           description: 'If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheets = context.workbook.worksheets;
+
+          // We don't want to include the default worksheet that was created
+          // when the workbook was created, so our "firstSheet" will be the one
+          // after the literal first. Note chaining of navigation methods.
+          const firstSheet = sheets.getFirst().getNext();
+          const lastSheet = sheets.getLast();
+          const firstTaxRateRange = firstSheet.getRange("B2");
+          const lastTaxRateRange = lastSheet.getRange("B2");
+
+          firstSheet.load("name");
+          lastSheet.load("name");
+          firstTaxRateRange.load("text");
+          lastTaxRateRange.load("text");
+
+          await context.sync();
+
+          let firstYear = firstSheet.name.substr(5, 4);
+          let lastYear = lastSheet.name.substr(5, 4);
+          OfficeHelpers.UI.notify(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.Worksheet.getNextOrNullObject
     summary: >-
       Gets the worksheet that follows this one. If there are no worksheets following this one, this method will return a
@@ -330,6 +361,33 @@ items:
           description: 'If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheets = context.workbook.worksheets;
+          const currentSheet = sheets.getActiveWorksheet();
+          const previousYearSheet = currentSheet.getPrevious();
+          const currentTaxDueRange = currentSheet.getRange("C2");
+          const previousTaxDueRange = previousYearSheet.getRange("C2");
+
+          currentSheet.load("name");
+          previousYearSheet.load("name");
+          currentTaxDueRange.load("text");
+          previousTaxDueRange.load("text");
+
+          await context.sync();
+
+          let currentYear = currentSheet.name.substr(5, 4);
+          let previousYear = previousYearSheet.name.substr(5, 4);
+          OfficeHelpers.UI.notify("Two Year Tax Due Comparison", `Tax due for ${currentYear} was ${currentTaxDueRange.text[0][0]}\nTax due for ${previousYear} was ${previousTaxDueRange.text[0][0]}`)
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.Worksheet.getPreviousOrNullObject
     summary: >-
       Gets the worksheet that precedes this one. If there are no previous worksheets, this method will return a null
@@ -665,6 +723,21 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          sheet.onChanged.add(onChange);
+
+          await context.sync();
+
+          OfficeHelpers.UI.notify("A handler has been registered for the onChanged event.");
+      });
+      ```
   - uid: excel.Excel.Worksheet.onDeactivated
     summary: |-
       Occurs when the worksheet is deactivated.
@@ -814,6 +887,19 @@ items:
       return:
         type:
           - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const activeSheet = context.workbook.worksheets.getActiveWorksheet();
+          activeSheet.tabColor = "#FF0000";
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.Worksheet.tables
     summary: |-
       Collection of tables that are part of the worksheet.

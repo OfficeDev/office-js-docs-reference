@@ -95,6 +95,24 @@ items:
         type:
           - void
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let seriesCollection = sheet.charts.getItemAt(0).series;
+          let series = seriesCollection.getItemAt(0);
+
+          // Delete the first series.
+          series.delete();
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.ChartSeries.doughnutHoleSize
     summary: >-
       Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnutExploded charts. Throws an
@@ -229,6 +247,40 @@ items:
       return:
         type:
           - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          let salesTable = sheet.tables.getItem("SalesTable");
+          let dataRange = sheet.getRange("A1:E7");
+
+          // Create an XY scatter chart.
+          let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
+          chart.title.text = "Bicycle Parts Quarterly Sales"; 
+        
+          let series = chart.series;
+          let series0 = series.getItemAt(0);
+          let series1 = series.getItemAt(1);
+          let series2 = series.getItemAt(2);
+          let series3 = series.getItemAt(3);
+
+          // Set markers.
+          series0.markerStyle = "Dash";
+          series0.markerForegroundColor = "black";
+          series1.markerStyle = "Star";
+          series1.markerForegroundColor = "black";
+          series2.markerStyle = "X";
+          series2.markerSize = 12;
+          series3.markerStyle = "Triangle";
+          series3.markerBackgroundColor = "purple";
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.ChartSeries.markerForegroundColor
     summary: |-
       Represents markers foreground color of a chart series.
@@ -244,6 +296,40 @@ items:
       return:
         type:
           - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          let sheet = context.workbook.worksheets.getItem("Sample");
+          let salesTable = sheet.tables.getItem("SalesTable");
+          let dataRange = sheet.getRange("A1:E7");
+
+          // Create an XY scatter chart.
+          let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
+          chart.title.text = "Bicycle Parts Quarterly Sales"; 
+        
+          let series = chart.series;
+          let series0 = series.getItemAt(0);
+          let series1 = series.getItemAt(1);
+          let series2 = series.getItemAt(2);
+          let series3 = series.getItemAt(3);
+
+          // Set markers.
+          series0.markerStyle = "Dash";
+          series0.markerForegroundColor = "black";
+          series1.markerStyle = "Star";
+          series1.markerForegroundColor = "black";
+          series2.markerStyle = "X";
+          series2.markerSize = 12;
+          series3.markerStyle = "Triangle";
+          series3.markerBackgroundColor = "purple";
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.ChartSeries.markerSize
     summary: |-
       Represents marker size of a chart series.
@@ -455,6 +541,30 @@ items:
           description: The Range object corresponding to the source data.
           type:
             - Excel.Range
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let seriesCollection = sheet.charts.getItemAt(0).series;
+
+          // Add new series.
+          let series = seriesCollection.add("New Product");
+          let values = sheet.getRange("E2:E7");
+
+          // Set the vertical values for the series.
+          series.setValues(values);
+          seriesCollection.load("count");
+
+          await context.sync();
+
+          OfficeHelpers.UI.notify("Number of series  = " + seriesCollection.count);
+      });
+      ```
   - uid: excel.Excel.ChartSeries.setXAxisValues
     summary: |-
       Set values of X axis for a chart series. Only works for scatter charts.

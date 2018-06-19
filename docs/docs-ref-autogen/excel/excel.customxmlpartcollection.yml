@@ -43,6 +43,33 @@ items:
           description: XML content. Must be a valid XML fragment.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+
+          // You must have the xmlns attribute to populate the 
+          // CustomXml.namespaceUri property.
+          const originalXml = "<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>Juan</Reviewer><Reviewer>Hong</Reviewer><Reviewer>Sally</Reviewer></Reviewers>";
+          const customXmlPart = context.workbook.customXmlParts.add(originalXml);
+          customXmlPart.load("id");
+          const xmlBlob = customXmlPart.getXml();
+
+          await context.sync();
+
+          const readableXml = addLineBreaksToXML(xmlBlob.value);
+          $("#display-xml").text(readableXml);
+
+          // Store the XML part's ID in a setting.
+          const settings = context.workbook.settings;
+          settings.add("ContosoReviewXmlPartId", customXmlPart.id);
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.CustomXmlPartCollection.getByNamespace
     summary: |-
       Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.
@@ -64,6 +91,41 @@ items:
           description: ''
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          $("#display-xml").text("");
+          const contosoNamespace = "http://schemas.contoso.com/review/1.0";
+          const customXmlParts = context.workbook.customXmlParts;
+          const filteredXmlParts = customXmlParts.getByNamespace(contosoNamespace);
+          const numberOfPartsInNamespace = filteredXmlParts.getCount();
+
+          await context.sync();
+
+          if (numberOfPartsInNamespace.value == 1) {
+              const onlyXmlPartInNamespace = filteredXmlParts.getOnlyItem();
+              const xmlBlob = onlyXmlPartInNamespace.getXml();
+
+              await context.sync();
+
+              // Make it a bit more readable.
+              const readableXml = xmlBlob.value.replace(/></g, ">\n<");
+
+              $("#display-xml").text(`The only XML part in the namespace ${contosoNamespace} is:
+                  ${readableXml}`);
+
+          } else {
+              OfficeHelpers.UI.notify(`There are ${numberOfPartsInNamespace.value} XML parts with namespace ${contosoNamespace}.
+                  There should be exactly 1.`);
+          }        
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.CustomXmlPartCollection.getCount
     summary: |-
       Gets the number of CustomXml parts in the collection.
@@ -101,6 +163,33 @@ items:
           description: ID of the object to be retrieved.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const settings = context.workbook.settings;
+          const xmlPartIDSetting = settings.getItem("ContosoReviewXmlPartId").load("value");
+
+          await context.sync();
+          
+          const customXmlPart = context.workbook.customXmlParts.getItem(xmlPartIDSetting.value);
+
+          // The setXml method does a whole-for-whole replacement 
+          // of the entire XML.
+          customXmlPart.setXml("<Reviewers xmlns='http://schemas.contoso.com/review/1.0'><Reviewer>John</Reviewer><Reviewer>Hitomi</Reviewer></Reviewers>");
+          const xmlBlob = customXmlPart.getXml();
+
+          await context.sync();
+
+          const readableXml = addLineBreaksToXML(xmlBlob.value);
+          $("#display-xml").text(readableXml);
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.CustomXmlPartCollection.getItemOrNullObject
     summary: >-
       Gets a custom XML part based on its ID. If the CustomXmlPart does not exist, the return object's isNull property

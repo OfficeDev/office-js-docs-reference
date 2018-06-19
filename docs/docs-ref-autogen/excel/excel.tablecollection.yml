@@ -315,6 +315,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          let tables = context.workbook.tables;
+          tables.onChanged.add(onChange);
+
+          await context.sync();
+
+          OfficeHelpers.UI.notify("A handler has been registered for the table collection onChanged event",
+              "Try changing cell values in the tables, and watch the console output.");
+      });
+      ```
   - uid: excel.Excel.TableCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.TableCollection.toJSON

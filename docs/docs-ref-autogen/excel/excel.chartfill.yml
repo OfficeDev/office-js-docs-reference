@@ -118,6 +118,22 @@ items:
           }
       });
       ```
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let pointsCollection = sheet.charts.getItemAt(0).series.getItemAt(0).points;
+          let point = pointsCollection.getItemAt(2);
+
+          // Set color for chart point.
+          point.format.fill.setSolidColor('red');
+
+          await context.sync();
+
+          OfficeHelpers.UI.notify("Successfully set chart point color to red (for the third item in series 1).");            
+      });
+      ```
   - uid: excel.Excel.ChartFill.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartFill.toJSON

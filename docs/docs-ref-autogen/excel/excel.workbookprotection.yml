@@ -38,6 +38,38 @@ items:
           description: workbook protection password.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          let workbook = context.workbook;
+          workbook.load("protection/protected");
+
+          await context.sync();
+
+          if (!workbook.protection.protected) {
+              workbook.protection.protect();
+          }
+      });
+      ```
+
+      ```typescript
+      let password = await passwordHandler();
+      passwordHelper(password);
+      await Excel.run(async (context) => {
+          let workbook = context.workbook;
+          workbook.load("protection/protected");
+
+          await context.sync();
+
+          if (!workbook.protection.protected) {
+              workbook.protection.protect(password);
+          }
+      });
+      ```
   - uid: excel.Excel.WorkbookProtection.toJSON
     name: toJSON()
     fullName: excel.Excel.WorkbookProtection.toJSON
@@ -74,3 +106,23 @@ items:
           description: workbook protection password.
           type:
             - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          let workbook = context.workbook;
+          workbook.protection.unprotect();
+      });
+      ```
+
+      ```typescript
+      let password = await passwordHandler();
+      passwordHelper(password);
+      await Excel.run(async (context) => {
+          let workbook = context.workbook;
+          workbook.protection.unprotect(password);
+      });
+      ```

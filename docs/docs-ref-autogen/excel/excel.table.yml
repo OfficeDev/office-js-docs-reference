@@ -443,6 +443,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          let table = context.workbook.tables.getItemAt(0);
+          table.onChanged.add(onChange);
+
+          await context.sync();
+
+          OfficeHelpers.UI.notify("A handler has been registered for the onChanged event",
+              "Try changing a cell value in the table, and watch the console output.");
+      });
+      ```
   - uid: excel.Excel.Table.onSelectionChanged
     summary: |-
       Occurs when the selection changed on a specific table.
@@ -458,6 +474,22 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          let table = context.workbook.tables.getItemAt(0);
+          table.onSelectionChanged.add(onSelectionChange);
+
+          await context.sync();
+
+          OfficeHelpers.UI.notify("A handler has been registered for table onSelectionChanged event",
+              "Try changing a range selection in the table, and watch the console output.");
+      });
+      ```
   - uid: excel.Excel.Table.reapplyFilters
     summary: |-
       Reapplies all the filters currently on the table.
