@@ -1,0 +1,9 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.CollectionLoadOptions
+    name: Word.Interfaces.CollectionLoadOptions
+    fullName: word.Word.Interfaces.CollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word

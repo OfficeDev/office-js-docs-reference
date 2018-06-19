@@ -1,0 +1,9 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.CollectionLoadOptions
+    name: Visio.Interfaces.CollectionLoadOptions
+    fullName: visio.Visio.Interfaces.CollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: visio

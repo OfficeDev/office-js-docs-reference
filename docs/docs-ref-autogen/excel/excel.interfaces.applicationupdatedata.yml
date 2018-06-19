@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ApplicationUpdateData
+    summary: 'An interface for updating data on the Application object, for use in "application.set({ ... })".'
+    name: Excel.Interfaces.ApplicationUpdateData
+    fullName: excel.Excel.Interfaces.ApplicationUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ApplicationUpdateData.calculationMode
+  - uid: excel.Excel.Interfaces.ApplicationUpdateData.calculationMode
+    summary: |-
+      Returns the calculation mode used in the workbook. See Excel.CalculationMode for details.
+
+      \[ [API set: ExcelApi 1.1 for get, 1.8 for set](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: calculationMode
+    fullName: excel.Excel.Interfaces.ApplicationUpdateData.calculationMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calculationMode?: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual";'
+      return:
+        type:
+          - Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"

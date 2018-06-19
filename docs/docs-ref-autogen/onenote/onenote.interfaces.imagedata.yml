@@ -1,0 +1,143 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.ImageData
+    summary: An interface describing the data returned by calling "image.toJSON()".
+    name: OneNote.Interfaces.ImageData
+    fullName: onenote.OneNote.Interfaces.ImageData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.ImageData.description
+      - onenote.OneNote.Interfaces.ImageData.height
+      - onenote.OneNote.Interfaces.ImageData.hyperlink
+      - onenote.OneNote.Interfaces.ImageData.id
+      - onenote.OneNote.Interfaces.ImageData.ocrData
+      - onenote.OneNote.Interfaces.ImageData.pageContent
+      - onenote.OneNote.Interfaces.ImageData.paragraph
+      - onenote.OneNote.Interfaces.ImageData.width
+  - uid: onenote.OneNote.Interfaces.ImageData.description
+    summary: |-
+      Gets or sets the description of the Image.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: description
+    fullName: onenote.OneNote.Interfaces.ImageData.description
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'description?: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.Interfaces.ImageData.height
+    summary: |-
+      Gets or sets the height of the Image layout.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: height
+    fullName: onenote.OneNote.Interfaces.ImageData.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.Interfaces.ImageData.hyperlink
+    summary: |-
+      Gets or sets the hyperlink of the Image.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: hyperlink
+    fullName: onenote.OneNote.Interfaces.ImageData.hyperlink
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hyperlink?: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.Interfaces.ImageData.id
+    summary: |-
+      Gets the ID of the Image object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: onenote.OneNote.Interfaces.ImageData.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.Interfaces.ImageData.ocrData
+    summary: |-
+      Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: ocrData
+    fullName: onenote.OneNote.Interfaces.ImageData.ocrData
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ocrData?: OneNote.ImageOcrData;'
+      return:
+        type:
+          - OneNote.ImageOcrData
+  - uid: onenote.OneNote.Interfaces.ImageData.pageContent
+    summary: >-
+      Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent.
+      This object defines the position of the Image on the page. Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: pageContent
+    fullName: onenote.OneNote.Interfaces.ImageData.pageContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageContent?: OneNote.Interfaces.PageContentData;'
+      return:
+        type:
+          - OneNote.Interfaces.PageContentData
+  - uid: onenote.OneNote.Interfaces.ImageData.paragraph
+    summary: >-
+      Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
+      Read-only.
+
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: paragraph
+    fullName: onenote.OneNote.Interfaces.ImageData.paragraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraph?: OneNote.Interfaces.ParagraphData;'
+      return:
+        type:
+          - OneNote.Interfaces.ParagraphData
+  - uid: onenote.OneNote.Interfaces.ImageData.width
+    summary: |-
+      Gets or sets the width of the Image layout.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: width
+    fullName: onenote.OneNote.Interfaces.ImageData.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number

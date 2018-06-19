@@ -1986,6 +1986,4071 @@
             }
           }
         },
+        "Interfaces": {
+          "kind": "namespace",
+          "deprecatedMessage": [],
+          "summary": [],
+          "remarks": [],
+          "isBeta": false,
+          "exports": {
+            "ApplicationData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"application.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "showBorders": {
+                  "kind": "property",
+                  "signature": "showBorders?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Show/Hide the application borders."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "showToolbars": {
+                  "kind": "property",
+                  "signature": "showToolbars?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Show or Hide the standard toolbars."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ApplicationLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Application."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "showBorders": {
+                  "kind": "property",
+                  "signature": "showBorders?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Show/Hide the application borders."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "showToolbars": {
+                  "kind": "property",
+                  "signature": "showToolbars?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Show or Hide the standard toolbars."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ApplicationUpdateData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface for updating data on the Application object, for use in \"application.set({ ... })\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "showBorders": {
+                  "kind": "property",
+                  "signature": "showBorders?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Show/Hide the application borders."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "showToolbars": {
+                  "kind": "property",
+                  "signature": "showToolbars?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Show or Hide the standard toolbars."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "CollectionLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {}
+            },
+            "CommentCollectionData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"commentCollection.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "items": {
+                  "kind": "property",
+                  "signature": "items?: Visio.Interfaces.CommentData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.CommentData[]",
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "CommentCollectionLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the CommentCollection for a given Shape."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "author": {
+                  "kind": "property",
+                  "signature": "author?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: A string that specifies the label of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "date": {
+                  "kind": "property",
+                  "signature": "date?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: A string that specifies the format of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "text": {
+                  "kind": "property",
+                  "signature": "text?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: A string that specifies the value of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "CommentCollectionUpdateData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface for updating data on the CommentCollection object, for use in \"commentCollection.set({ ... })\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "items": {
+                  "kind": "property",
+                  "signature": "items?: Visio.Interfaces.CommentData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.CommentData[]",
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "CommentData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"comment.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "author": {
+                  "kind": "property",
+                  "signature": "author?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the label of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "date": {
+                  "kind": "property",
+                  "signature": "date?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the format of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "text": {
+                  "kind": "property",
+                  "signature": "text?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the value of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "CommentLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Comment."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "author": {
+                  "kind": "property",
+                  "signature": "author?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the label of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "date": {
+                  "kind": "property",
+                  "signature": "date?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the format of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "text": {
+                  "kind": "property",
+                  "signature": "text?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the value of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "CommentUpdateData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface for updating data on the Comment object, for use in \"comment.set({ ... })\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "author": {
+                  "kind": "property",
+                  "signature": "author?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the label of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "date": {
+                  "kind": "property",
+                  "signature": "date?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the format of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "text": {
+                  "kind": "property",
+                  "signature": "text?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the value of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "DocumentData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"document.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "application": {
+                  "kind": "property",
+                  "signature": "application?: Visio.Interfaces.ApplicationData;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ApplicationData",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Represents a Visio application instance that contains this document. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "pages": {
+                  "kind": "property",
+                  "signature": "pages?: Visio.Interfaces.PageData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.PageData[]",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Represents a collection of pages associated with the document. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.DocumentViewData;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.DocumentViewData",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the DocumentView object."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "DocumentLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Document class."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "application": {
+                  "kind": "property",
+                  "signature": "application?: Visio.Interfaces.ApplicationLoadOptions;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ApplicationLoadOptions",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Represents a Visio application instance that contains this document."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.DocumentViewLoadOptions;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.DocumentViewLoadOptions",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the DocumentView object."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "DocumentUpdateData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface for updating data on the Document object, for use in \"document.set({ ... })\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "application": {
+                  "kind": "property",
+                  "signature": "application?: Visio.Interfaces.ApplicationUpdateData;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ApplicationUpdateData",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Represents a Visio application instance that contains this document."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.DocumentViewUpdateData;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.DocumentViewUpdateData",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the DocumentView object."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "DocumentViewData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"documentView.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "disableHyperlinks": {
+                  "kind": "property",
+                  "signature": "disableHyperlinks?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Disable Hyperlinks."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "disablePan": {
+                  "kind": "property",
+                  "signature": "disablePan?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Disable Pan."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "disableZoom": {
+                  "kind": "property",
+                  "signature": "disableZoom?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Disable Zoom."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "hideDiagramBoundary": {
+                  "kind": "property",
+                  "signature": "hideDiagramBoundary?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Disable Hyperlinks."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "DocumentViewLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the DocumentView class."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "disableHyperlinks": {
+                  "kind": "property",
+                  "signature": "disableHyperlinks?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Disable Hyperlinks."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "disablePan": {
+                  "kind": "property",
+                  "signature": "disablePan?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Disable Pan."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "disableZoom": {
+                  "kind": "property",
+                  "signature": "disableZoom?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Disable Zoom."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "hideDiagramBoundary": {
+                  "kind": "property",
+                  "signature": "hideDiagramBoundary?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Disable Hyperlinks."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "DocumentViewUpdateData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface for updating data on the DocumentView object, for use in \"documentView.set({ ... })\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "disableHyperlinks": {
+                  "kind": "property",
+                  "signature": "disableHyperlinks?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Disable Hyperlinks."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "disablePan": {
+                  "kind": "property",
+                  "signature": "disablePan?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Disable Pan."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "disableZoom": {
+                  "kind": "property",
+                  "signature": "disableZoom?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Disable Zoom."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "hideDiagramBoundary": {
+                  "kind": "property",
+                  "signature": "hideDiagramBoundary?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Disable Hyperlinks."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "HyperlinkCollectionData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"hyperlinkCollection.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "items": {
+                  "kind": "property",
+                  "signature": "items?: Visio.Interfaces.HyperlinkData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.HyperlinkData[]",
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "HyperlinkCollectionLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Hyperlink Collection."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "address": {
+                  "kind": "property",
+                  "signature": "address?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Gets the address of the Hyperlink object."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "description": {
+                  "kind": "property",
+                  "signature": "description?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Gets the description of a hyperlink."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "extraInfo": {
+                  "kind": "property",
+                  "signature": "extraInfo?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Gets the extra info of a hyperlink."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "subAddress": {
+                  "kind": "property",
+                  "signature": "subAddress?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Gets the sub-address of the Hyperlink object."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "HyperlinkCollectionUpdateData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface for updating data on the HyperlinkCollection object, for use in \"hyperlinkCollection.set({ ... })\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "items": {
+                  "kind": "property",
+                  "signature": "items?: Visio.Interfaces.HyperlinkData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.HyperlinkData[]",
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "HyperlinkData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"hyperlink.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "address": {
+                  "kind": "property",
+                  "signature": "address?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Gets the address of the Hyperlink object."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "description": {
+                  "kind": "property",
+                  "signature": "description?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Gets the description of a hyperlink."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "extraInfo": {
+                  "kind": "property",
+                  "signature": "extraInfo?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Gets the extra info of a hyperlink."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "subAddress": {
+                  "kind": "property",
+                  "signature": "subAddress?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Gets the sub-address of the Hyperlink object."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "HyperlinkLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Hyperlink."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "address": {
+                  "kind": "property",
+                  "signature": "address?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Gets the address of the Hyperlink object."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "description": {
+                  "kind": "property",
+                  "signature": "description?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Gets the description of a hyperlink."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "extraInfo": {
+                  "kind": "property",
+                  "signature": "extraInfo?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Gets the extra info of a hyperlink."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "subAddress": {
+                  "kind": "property",
+                  "signature": "subAddress?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Gets the sub-address of the Hyperlink object."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "PageCollectionData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"pageCollection.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "items": {
+                  "kind": "property",
+                  "signature": "items?: Visio.Interfaces.PageData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.PageData[]",
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "PageCollectionLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents a collection of Page objects that are part of the document."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "height": {
+                  "kind": "property",
+                  "signature": "height?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Returns the height of the page. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "index": {
+                  "kind": "property",
+                  "signature": "index?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Index of the Page."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "isBackground": {
+                  "kind": "property",
+                  "signature": "isBackground?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Whether the page is a background page or not. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "name": {
+                  "kind": "property",
+                  "signature": "name?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Page name. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.PageViewLoadOptions;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.PageViewLoadOptions",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Returns the view of the page."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "width": {
+                  "kind": "property",
+                  "signature": "width?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Returns the width of the page. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "PageCollectionUpdateData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface for updating data on the PageCollection object, for use in \"pageCollection.set({ ... })\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "items": {
+                  "kind": "property",
+                  "signature": "items?: Visio.Interfaces.PageData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.PageData[]",
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "PageData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"page.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "allShapes": {
+                  "kind": "property",
+                  "signature": "allShapes?: Visio.Interfaces.ShapeData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ShapeData[]",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "All shapes in the page. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "comments": {
+                  "kind": "property",
+                  "signature": "comments?: Visio.Interfaces.CommentData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.CommentData[]",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the Comments Collection"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "height": {
+                  "kind": "property",
+                  "signature": "height?: number;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "number",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the height of the page. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "index": {
+                  "kind": "property",
+                  "signature": "index?: number;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "number",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Index of the Page."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "isBackground": {
+                  "kind": "property",
+                  "signature": "isBackground?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Whether the page is a background page or not. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "name": {
+                  "kind": "property",
+                  "signature": "name?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Page name. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "shapes": {
+                  "kind": "property",
+                  "signature": "shapes?: Visio.Interfaces.ShapeData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ShapeData[]",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Shapes at root level, in the page. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.PageViewData;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.PageViewData",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the view of the page. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "width": {
+                  "kind": "property",
+                  "signature": "width?: number;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "number",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the width of the page. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "PageLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Page class."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "height": {
+                  "kind": "property",
+                  "signature": "height?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the height of the page. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "index": {
+                  "kind": "property",
+                  "signature": "index?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Index of the Page."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "isBackground": {
+                  "kind": "property",
+                  "signature": "isBackground?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Whether the page is a background page or not. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "name": {
+                  "kind": "property",
+                  "signature": "name?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Page name. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.PageViewLoadOptions;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.PageViewLoadOptions",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the view of the page."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "width": {
+                  "kind": "property",
+                  "signature": "width?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the width of the page. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "PageUpdateData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface for updating data on the Page object, for use in \"page.set({ ... })\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.PageViewUpdateData;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.PageViewUpdateData",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the view of the page."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "PageViewData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"pageView.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "zoom": {
+                  "kind": "property",
+                  "signature": "zoom?: number;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "number",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "PageViewLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the PageView class."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "zoom": {
+                  "kind": "property",
+                  "signature": "zoom?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "PageViewUpdateData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface for updating data on the PageView object, for use in \"pageView.set({ ... })\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "zoom": {
+                  "kind": "property",
+                  "signature": "zoom?: number;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "number",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Get/Set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "SelectionData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"selection.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "shapes": {
+                  "kind": "property",
+                  "signature": "shapes?: Visio.Interfaces.ShapeData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ShapeData[]",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Gets the Shapes of the Selection"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ShapeCollectionData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"shapeCollection.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "items": {
+                  "kind": "property",
+                  "signature": "items?: Visio.Interfaces.ShapeData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ShapeData[]",
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ShapeCollectionLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Shape Collection."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "id": {
+                  "kind": "property",
+                  "signature": "id?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Shape's Identifier."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "name": {
+                  "kind": "property",
+                  "signature": "name?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Shape's name."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "select": {
+                  "kind": "property",
+                  "signature": "select?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Returns true, if shape is selected. User can set true to select the shape explicitly."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "text": {
+                  "kind": "property",
+                  "signature": "text?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Shape's Text."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.ShapeViewLoadOptions;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ShapeViewLoadOptions",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: Returns the view of the shape."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ShapeCollectionUpdateData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface for updating data on the ShapeCollection object, for use in \"shapeCollection.set({ ... })\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "items": {
+                  "kind": "property",
+                  "signature": "items?: Visio.Interfaces.ShapeData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ShapeData[]",
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ShapeData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"shape.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "comments": {
+                  "kind": "property",
+                  "signature": "comments?: Visio.Interfaces.CommentData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.CommentData[]",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the Comments Collection"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "hyperlinks": {
+                  "kind": "property",
+                  "signature": "hyperlinks?: Visio.Interfaces.HyperlinkData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.HyperlinkData[]",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the Hyperlinks collection for a Shape object. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "id": {
+                  "kind": "property",
+                  "signature": "id?: number;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "number",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Shape's Identifier."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "name": {
+                  "kind": "property",
+                  "signature": "name?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Shape's name."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "select": {
+                  "kind": "property",
+                  "signature": "select?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns true, if shape is selected. User can set true to select the shape explicitly."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "shapeDataItems": {
+                  "kind": "property",
+                  "signature": "shapeDataItems?: Visio.Interfaces.ShapeDataItemData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ShapeDataItemData[]",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the Shape's Data Section. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "subShapes": {
+                  "kind": "property",
+                  "signature": "subShapes?: Visio.Interfaces.ShapeData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ShapeData[]",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Gets SubShape Collection."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "text": {
+                  "kind": "property",
+                  "signature": "text?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Shape's Text."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.ShapeViewData;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ShapeViewData",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the view of the shape. Read-only."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ShapeDataItemCollectionData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"shapeDataItemCollection.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "items": {
+                  "kind": "property",
+                  "signature": "items?: Visio.Interfaces.ShapeDataItemData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ShapeDataItemData[]",
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ShapeDataItemCollectionLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the ShapeDataItemCollection for a given Shape."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "format": {
+                  "kind": "property",
+                  "signature": "format?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: A string that specifies the format of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "formattedValue": {
+                  "kind": "property",
+                  "signature": "formattedValue?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: A string that specifies the formatted value of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "label": {
+                  "kind": "property",
+                  "signature": "label?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: A string that specifies the label of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "value": {
+                  "kind": "property",
+                  "signature": "value?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "For EACH ITEM in the collection: A string that specifies the value of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ShapeDataItemCollectionUpdateData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface for updating data on the ShapeDataItemCollection object, for use in \"shapeDataItemCollection.set({ ... })\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "items": {
+                  "kind": "property",
+                  "signature": "items?: Visio.Interfaces.ShapeDataItemData[];",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ShapeDataItemData[]",
+                  "deprecatedMessage": [],
+                  "summary": [],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ShapeDataItemData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"shapeDataItem.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "format": {
+                  "kind": "property",
+                  "signature": "format?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the format of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "formattedValue": {
+                  "kind": "property",
+                  "signature": "formattedValue?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the formatted value of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "label": {
+                  "kind": "property",
+                  "signature": "label?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the label of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "value": {
+                  "kind": "property",
+                  "signature": "value?: string;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "string",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the value of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ShapeDataItemLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the ShapeDataItem."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "format": {
+                  "kind": "property",
+                  "signature": "format?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the format of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "formattedValue": {
+                  "kind": "property",
+                  "signature": "formattedValue?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the formatted value of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "label": {
+                  "kind": "property",
+                  "signature": "label?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the label of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "value": {
+                  "kind": "property",
+                  "signature": "value?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "A string that specifies the value of the shape data item."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ShapeLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the Shape class."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "id": {
+                  "kind": "property",
+                  "signature": "id?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Shape's Identifier."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "name": {
+                  "kind": "property",
+                  "signature": "name?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Shape's name."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "select": {
+                  "kind": "property",
+                  "signature": "select?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns true, if shape is selected. User can set true to select the shape explicitly."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "text": {
+                  "kind": "property",
+                  "signature": "text?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Shape's Text."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.ShapeViewLoadOptions;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ShapeViewLoadOptions",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the view of the shape."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ShapeUpdateData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface for updating data on the Shape object, for use in \"shape.set({ ... })\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "select": {
+                  "kind": "property",
+                  "signature": "select?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns true, if shape is selected. User can set true to select the shape explicitly."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                },
+                "view": {
+                  "kind": "property",
+                  "signature": "view?: Visio.Interfaces.ShapeViewUpdateData;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Interfaces.ShapeViewUpdateData",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Returns the view of the shape."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ShapeViewData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface describing the data returned by calling \"shapeView.toJSON()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "highlight": {
+                  "kind": "property",
+                  "signature": "highlight?: Visio.Highlight;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Highlight",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Represents the highlight around the shape."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ShapeViewLoadOptions": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Represents the ShapeView class."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: 1.1]"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "highlight": {
+                  "kind": "property",
+                  "signature": "highlight?: boolean;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "boolean",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Represents the highlight around the shape."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            },
+            "ShapeViewUpdateData": {
+              "kind": "interface",
+              "extends": "",
+              "implements": "",
+              "typeParameters": [],
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "An interface for updating data on the ShapeView object, for use in \"shapeView.set({ ... })\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "members": {
+                "highlight": {
+                  "kind": "property",
+                  "signature": "highlight?: Visio.Highlight;",
+                  "isOptional": true,
+                  "isReadOnly": false,
+                  "isStatic": false,
+                  "type": "Visio.Highlight",
+                  "deprecatedMessage": [],
+                  "summary": [
+                    {
+                      "kind": "text",
+                      "text": "Represents the highlight around the shape."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "[Api set: 1.1]"
+                    }
+                  ],
+                  "remarks": [],
+                  "isBeta": false,
+                  "isSealed": false,
+                  "isVirtual": false,
+                  "isOverride": false
+                }
+              }
+            }
+          }
+        },
         "OverlayHorizontalAlignment": {
           "kind": "namespace",
           "deprecatedMessage": [],

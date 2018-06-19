@@ -1,0 +1,160 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions
+    summary: |-
+      Represents a collection of pages.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.PageCollectionLoadOptions
+    fullName: onenote.OneNote.Interfaces.PageCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.PageCollectionLoadOptions.classNotebookPageSource
+      - onenote.OneNote.Interfaces.PageCollectionLoadOptions.clientUrl
+      - onenote.OneNote.Interfaces.PageCollectionLoadOptions.contents
+      - onenote.OneNote.Interfaces.PageCollectionLoadOptions.id
+      - onenote.OneNote.Interfaces.PageCollectionLoadOptions.inkAnalysisOrNull
+      - onenote.OneNote.Interfaces.PageCollectionLoadOptions.pageLevel
+      - onenote.OneNote.Interfaces.PageCollectionLoadOptions.parentSection
+      - onenote.OneNote.Interfaces.PageCollectionLoadOptions.title
+      - onenote.OneNote.Interfaces.PageCollectionLoadOptions.webUrl
+  - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.classNotebookPageSource
+    summary: |-
+      For EACH ITEM in the collection: Gets the ClassNotebookPageSource to the page.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: classNotebookPageSource
+    fullName: onenote.OneNote.Interfaces.PageCollectionLoadOptions.classNotebookPageSource
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'classNotebookPageSource?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.clientUrl
+    summary: |-
+      For EACH ITEM in the collection: The client url of the page. Read only
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: clientUrl
+    fullName: onenote.OneNote.Interfaces.PageCollectionLoadOptions.clientUrl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'clientUrl?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.contents
+    summary: |-
+      For EACH ITEM in the collection: The collection of PageContent objects on the page. Read only
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: contents
+    fullName: onenote.OneNote.Interfaces.PageCollectionLoadOptions.contents
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contents?: OneNote.Interfaces.PageContentCollectionLoadOptions;'
+      return:
+        type:
+          - OneNote.Interfaces.PageContentCollectionLoadOptions
+  - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.id
+    summary: |-
+      For EACH ITEM in the collection: Gets the ID of the page. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: onenote.OneNote.Interfaces.PageCollectionLoadOptions.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.inkAnalysisOrNull
+    summary: >-
+      For EACH ITEM in the collection: Text interpretation for the ink on the page. Returns null if there is no ink
+      analysis information. Read only.
+
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: inkAnalysisOrNull
+    fullName: onenote.OneNote.Interfaces.PageCollectionLoadOptions.inkAnalysisOrNull
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisLoadOptions;'
+      return:
+        type:
+          - OneNote.Interfaces.InkAnalysisLoadOptions
+  - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.pageLevel
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the indentation level of the page.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: pageLevel
+    fullName: onenote.OneNote.Interfaces.PageCollectionLoadOptions.pageLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageLevel?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.parentSection
+    summary: |-
+      For EACH ITEM in the collection: Gets the section that contains the page.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: parentSection
+    fullName: onenote.OneNote.Interfaces.PageCollectionLoadOptions.parentSection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentSection?: OneNote.Interfaces.SectionLoadOptions;'
+      return:
+        type:
+          - OneNote.Interfaces.SectionLoadOptions
+  - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.title
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the title of the page.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: title
+    fullName: onenote.OneNote.Interfaces.PageCollectionLoadOptions.title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions.webUrl
+    summary: |-
+      For EACH ITEM in the collection: The web url of the page. Read only
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: webUrl
+    fullName: onenote.OneNote.Interfaces.PageCollectionLoadOptions.webUrl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'webUrl?: boolean;'
+      return:
+        type:
+          - boolean

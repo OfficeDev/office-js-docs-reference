@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartGridlinesData
+    summary: An interface describing the data returned by calling "chartGridlines.toJSON()".
+    name: Excel.Interfaces.ChartGridlinesData
+    fullName: excel.Excel.Interfaces.ChartGridlinesData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartGridlinesData.format
+      - excel.Excel.Interfaces.ChartGridlinesData.visible
+  - uid: excel.Excel.Interfaces.ChartGridlinesData.format
+    summary: |-
+      Represents the formatting of chart gridlines.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: excel.Excel.Interfaces.ChartGridlinesData.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartGridlinesFormatData;'
+      return:
+        type:
+          - Excel.Interfaces.ChartGridlinesFormatData
+  - uid: excel.Excel.Interfaces.ChartGridlinesData.visible
+    summary: |-
+      Boolean value representing if the axis gridlines are visible or not.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: excel.Excel.Interfaces.ChartGridlinesData.visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

@@ -1,0 +1,256 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartLoadOptions
+    summary: |-
+      Represents a chart object in a workbook.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartLoadOptions
+    fullName: excel.Excel.Interfaces.ChartLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartLoadOptions.axes
+      - excel.Excel.Interfaces.ChartLoadOptions.chartType
+      - excel.Excel.Interfaces.ChartLoadOptions.dataLabels
+      - excel.Excel.Interfaces.ChartLoadOptions.format
+      - excel.Excel.Interfaces.ChartLoadOptions.height
+      - excel.Excel.Interfaces.ChartLoadOptions.id
+      - excel.Excel.Interfaces.ChartLoadOptions.left
+      - excel.Excel.Interfaces.ChartLoadOptions.legend
+      - excel.Excel.Interfaces.ChartLoadOptions.name
+      - excel.Excel.Interfaces.ChartLoadOptions.series
+      - excel.Excel.Interfaces.ChartLoadOptions.showAllFieldButtons
+      - excel.Excel.Interfaces.ChartLoadOptions.title
+      - excel.Excel.Interfaces.ChartLoadOptions.top
+      - excel.Excel.Interfaces.ChartLoadOptions.width
+      - excel.Excel.Interfaces.ChartLoadOptions.worksheet
+  - uid: excel.Excel.Interfaces.ChartLoadOptions.axes
+    summary: |-
+      Represents chart axes.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: axes
+    fullName: excel.Excel.Interfaces.ChartLoadOptions.axes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'axes?: Excel.Interfaces.ChartAxesLoadOptions;'
+      return:
+        type:
+          - Excel.Interfaces.ChartAxesLoadOptions
+  - uid: excel.Excel.Interfaces.ChartLoadOptions.chartType
+    summary: |-
+      Represents the type of the chart. See Excel.ChartType for details.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: chartType
+    fullName: excel.Excel.Interfaces.ChartLoadOptions.chartType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'chartType?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLoadOptions.dataLabels
+    summary: |-
+      Represents the datalabels on the chart.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: dataLabels
+    fullName: excel.Excel.Interfaces.ChartLoadOptions.dataLabels
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
+      return:
+        type:
+          - Excel.Interfaces.ChartDataLabelsLoadOptions
+  - uid: excel.Excel.Interfaces.ChartLoadOptions.format
+    summary: |-
+      Encapsulates the format properties for the chart area.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: excel.Excel.Interfaces.ChartLoadOptions.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartAreaFormatLoadOptions;'
+      return:
+        type:
+          - Excel.Interfaces.ChartAreaFormatLoadOptions
+  - uid: excel.Excel.Interfaces.ChartLoadOptions.height
+    summary: |-
+      Represents the height, in points, of the chart object.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: excel.Excel.Interfaces.ChartLoadOptions.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLoadOptions.id
+    summary: |-
+      The unique id of chart. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: excel.Excel.Interfaces.ChartLoadOptions.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLoadOptions.left
+    summary: |-
+      The distance, in points, from the left side of the chart to the worksheet origin.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: excel.Excel.Interfaces.ChartLoadOptions.left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLoadOptions.legend
+    summary: |-
+      Represents the legend for the chart.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: legend
+    fullName: excel.Excel.Interfaces.ChartLoadOptions.legend
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'legend?: Excel.Interfaces.ChartLegendLoadOptions;'
+      return:
+        type:
+          - Excel.Interfaces.ChartLegendLoadOptions
+  - uid: excel.Excel.Interfaces.ChartLoadOptions.name
+    summary: |-
+      Represents the name of a chart object.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: excel.Excel.Interfaces.ChartLoadOptions.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLoadOptions.series
+    summary: |-
+      Represents either a single series or collection of series in the chart.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: series
+    fullName: excel.Excel.Interfaces.ChartLoadOptions.series
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;'
+      return:
+        type:
+          - Excel.Interfaces.ChartSeriesCollectionLoadOptions
+  - uid: excel.Excel.Interfaces.ChartLoadOptions.showAllFieldButtons
+    summary: |-
+      Represents whether to display all field buttons on a PivotChart.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showAllFieldButtons
+    fullName: excel.Excel.Interfaces.ChartLoadOptions.showAllFieldButtons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAllFieldButtons?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLoadOptions.title
+    summary: |-
+      Represents the title of the specified chart, including the text, visibility, position and formating of the title.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: title
+    fullName: excel.Excel.Interfaces.ChartLoadOptions.title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: Excel.Interfaces.ChartTitleLoadOptions;'
+      return:
+        type:
+          - Excel.Interfaces.ChartTitleLoadOptions
+  - uid: excel.Excel.Interfaces.ChartLoadOptions.top
+    summary: >-
+      Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
+      top of the chart area (on a chart).
+
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: excel.Excel.Interfaces.ChartLoadOptions.top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLoadOptions.width
+    summary: |-
+      Represents the width, in points, of the chart object.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: excel.Excel.Interfaces.ChartLoadOptions.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLoadOptions.worksheet
+    summary: |-
+      The worksheet containing the current chart.
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: excel.Excel.Interfaces.ChartLoadOptions.worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
+      return:
+        type:
+          - Excel.Interfaces.WorksheetLoadOptions

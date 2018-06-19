@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.CustomConditionalFormatLoadOptions
+    summary: |-
+      Represents a custom conditional format type.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.CustomConditionalFormatLoadOptions
+    fullName: excel.Excel.Interfaces.CustomConditionalFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.CustomConditionalFormatLoadOptions.format
+      - excel.Excel.Interfaces.CustomConditionalFormatLoadOptions.rule
+  - uid: excel.Excel.Interfaces.CustomConditionalFormatLoadOptions.format
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: excel.Excel.Interfaces.CustomConditionalFormatLoadOptions.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;'
+      return:
+        type:
+          - Excel.Interfaces.ConditionalRangeFormatLoadOptions
+  - uid: excel.Excel.Interfaces.CustomConditionalFormatLoadOptions.rule
+    summary: |-
+      Represents the Rule object on this conditional format.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: rule
+    fullName: excel.Excel.Interfaces.CustomConditionalFormatLoadOptions.rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule?: Excel.Interfaces.ConditionalFormatRuleLoadOptions;'
+      return:
+        type:
+          - Excel.Interfaces.ConditionalFormatRuleLoadOptions

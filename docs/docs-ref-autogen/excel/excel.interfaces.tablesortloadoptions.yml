@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.TableSortLoadOptions
+    summary: |-
+      Manages sorting operations on Table objects.
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.TableSortLoadOptions
+    fullName: excel.Excel.Interfaces.TableSortLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.TableSortLoadOptions.fields
+      - excel.Excel.Interfaces.TableSortLoadOptions.matchCase
+      - excel.Excel.Interfaces.TableSortLoadOptions.method
+  - uid: excel.Excel.Interfaces.TableSortLoadOptions.fields
+    summary: |-
+      Represents the current conditions used to last sort the table.
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: fields
+    fullName: excel.Excel.Interfaces.TableSortLoadOptions.fields
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fields?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TableSortLoadOptions.matchCase
+    summary: |-
+      Represents whether the casing impacted the last sort of the table.
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: matchCase
+    fullName: excel.Excel.Interfaces.TableSortLoadOptions.matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TableSortLoadOptions.method
+    summary: |-
+      Represents Chinese character ordering method last used to sort the table.
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: method
+    fullName: excel.Excel.Interfaces.TableSortLoadOptions.method
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'method?: boolean;'
+      return:
+        type:
+          - boolean

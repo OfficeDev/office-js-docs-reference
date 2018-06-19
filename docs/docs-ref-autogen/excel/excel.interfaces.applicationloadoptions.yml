@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ApplicationLoadOptions
+    summary: |-
+      Represents the Excel application that manages the workbook.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ApplicationLoadOptions
+    fullName: excel.Excel.Interfaces.ApplicationLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ApplicationLoadOptions.calculationMode
+  - uid: excel.Excel.Interfaces.ApplicationLoadOptions.calculationMode
+    summary: |-
+      Returns the calculation mode used in the workbook. See Excel.CalculationMode for details.
+
+      \[ [API set: ExcelApi 1.1 for get, 1.8 for set](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: calculationMode
+    fullName: excel.Excel.Interfaces.ApplicationLoadOptions.calculationMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calculationMode?: boolean;'
+      return:
+        type:
+          - boolean

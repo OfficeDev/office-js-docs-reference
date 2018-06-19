@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions
+    summary: |-
+      Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.WorkbookLoadOptions
+    fullName: excel.Excel.Interfaces.WorkbookLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.WorkbookLoadOptions.application
+      - excel.Excel.Interfaces.WorkbookLoadOptions.bindings
+      - excel.Excel.Interfaces.WorkbookLoadOptions.name
+      - excel.Excel.Interfaces.WorkbookLoadOptions.properties
+      - excel.Excel.Interfaces.WorkbookLoadOptions.tables
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.application
+    summary: |-
+      Represents the Excel application instance that contains this workbook.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: application
+    fullName: excel.Excel.Interfaces.WorkbookLoadOptions.application
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'application?: Excel.Interfaces.ApplicationLoadOptions;'
+      return:
+        type:
+          - Excel.Interfaces.ApplicationLoadOptions
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.bindings
+    summary: |-
+      Represents a collection of bindings that are part of the workbook.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: bindings
+    fullName: excel.Excel.Interfaces.WorkbookLoadOptions.bindings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bindings?: Excel.Interfaces.BindingCollectionLoadOptions;'
+      return:
+        type:
+          - Excel.Interfaces.BindingCollectionLoadOptions
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.name
+    summary: |-
+      Gets the workbook name.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: excel.Excel.Interfaces.WorkbookLoadOptions.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.properties
+    summary: |-
+      Gets the workbook properties.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: properties
+    fullName: excel.Excel.Interfaces.WorkbookLoadOptions.properties
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'properties?: Excel.Interfaces.DocumentPropertiesLoadOptions;'
+      return:
+        type:
+          - Excel.Interfaces.DocumentPropertiesLoadOptions
+  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.tables
+    summary: |-
+      Represents a collection of tables associated with the workbook.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: tables
+    fullName: excel.Excel.Interfaces.WorkbookLoadOptions.tables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
+      return:
+        type:
+          - Excel.Interfaces.TableCollectionLoadOptions

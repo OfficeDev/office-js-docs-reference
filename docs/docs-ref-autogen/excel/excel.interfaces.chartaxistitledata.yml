@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartAxisTitleData
+    summary: An interface describing the data returned by calling "chartAxisTitle.toJSON()".
+    name: Excel.Interfaces.ChartAxisTitleData
+    fullName: excel.Excel.Interfaces.ChartAxisTitleData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartAxisTitleData.format
+      - excel.Excel.Interfaces.ChartAxisTitleData.text
+      - excel.Excel.Interfaces.ChartAxisTitleData.visible
+  - uid: excel.Excel.Interfaces.ChartAxisTitleData.format
+    summary: |-
+      Represents the formatting of chart axis title.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: excel.Excel.Interfaces.ChartAxisTitleData.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartAxisTitleFormatData;'
+      return:
+        type:
+          - Excel.Interfaces.ChartAxisTitleFormatData
+  - uid: excel.Excel.Interfaces.ChartAxisTitleData.text
+    summary: |-
+      Represents the axis title.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: text
+    fullName: excel.Excel.Interfaces.ChartAxisTitleData.text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.ChartAxisTitleData.visible
+    summary: |-
+      A boolean that specifies the visibility of an axis title.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: excel.Excel.Interfaces.ChartAxisTitleData.visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean
