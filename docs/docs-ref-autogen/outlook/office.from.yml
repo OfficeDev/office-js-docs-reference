@@ -1,16 +1,14 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.From
-    summary: |-
-      Provides a method to get the from value of a message in an Outlook add-in.
-
-      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    summary: Provides a method to get the from value of a message in an Outlook add-in.
     remarks: >-
       [Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
 
 
       Applicable Outlook mode: Compose
+    isPreview: true
     name: Office.From
     fullName: outlook.Office.From
     langs:
@@ -20,12 +18,16 @@ items:
     children:
       - outlook.Office.From.getAsync
   - uid: outlook.Office.From.getAsync
-    summary: |-
+    summary: >-
       Gets the from value of a message.
+
 
       The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
 
-      The from value of the item is provided as an EmailAddressDetails in the asyncResult.value property.
+
+      The from value of the item is provided as an [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails)
+      in the asyncResult.value property.
+
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -36,8 +38,11 @@ items:
       Applicable Outlook mode: Compose
 
 
-      In addition to this signature, the method also has the following signatures: getAsync(callback?: (result:
-      AsyncResult) =&gt; void): void;
+      In addition to this signature, the method also has the following signature:
+
+
+      \`getAsync(callback?: (result: AsyncResult) =&gt; void): void;\`
+    isPreview: true
     name: 'getAsync(options, callback)'
     fullName: outlook.Office.From.getAsync
     langs:

@@ -39,8 +39,10 @@ items:
       Applicable Outlook mode: Compose
 
 
-      In addition to the main signature, this method also has these signatures: getAsync(callback: (result: AsyncResult)
-      =&gt; void): void;
+      In addition to the main signature, this method also has this signature:
+
+
+      \`getAsync(callback: (result: AsyncResult) =&gt; void): void;\`
     name: 'getAsync(options, callback)'
     fullName: outlook.Office.Time.getAsync
     langs:
@@ -90,9 +92,16 @@ items:
       Errors: InvalidEndTime - The appointment end time is before the appointment start time.
 
 
-      In addition to the main signature, this method also has these signatures: setAsync(dateTime: Date): void;
-      setAsync(dateTime: Date, options: AsyncContextOptions): void; setAsync(dateTime: Date, callback: (result:
-      AsyncResult) =&gt; void): void;
+      In addition to the main signature, this method also has these signatures:
+
+
+      \`setAsync(dateTime: Date): void;\`
+
+
+      \`setAsync(dateTime: Date, options: AsyncContextOptions): void;\`
+
+
+      \`setAsync(dateTime: Date, callback: (result: AsyncResult) =&gt; void): void;\`
 
 
       #### Examples

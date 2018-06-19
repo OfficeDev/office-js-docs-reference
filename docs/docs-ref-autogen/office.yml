@@ -27,7 +27,7 @@ items:
       - office.Office.CustomXmlPart
       - office.Office.CustomXmlParts
       - office.Office.CustomXmlPrefixMappings
-      - office.Office.DialogHandler
+      - office.Office.Dialog
       - office.Office.DialogOptions
       - office.Office.Document
       - office.Office.DocumentMode
@@ -309,8 +309,8 @@ references:
     name: Office.CustomXmlParts
   - uid: office.Office.CustomXmlPrefixMappings
     name: Office.CustomXmlPrefixMappings
-  - uid: office.Office.DialogHandler
-    name: Office.DialogHandler
+  - uid: office.Office.Dialog
+    name: Office.Dialog
   - uid: office.Office.DialogOptions
     name: Office.DialogOptions
   - uid: office.Office.Document

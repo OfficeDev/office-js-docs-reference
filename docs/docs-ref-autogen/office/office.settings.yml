@@ -53,11 +53,14 @@ items:
       object to return the following information.
 
 
-      \|Property \|Use to...\| \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\| \|AsyncResult.value\|Always returns undefined
-      because there is no data or object to retrieve when adding an event handler.\| \|AsyncResult.status\|Determine the
-      success or failure of the operation.\| \|AsyncResult.error\|Access an Error object that provides error information
-      if the operation failed.\| \|AsyncResult.asyncContext\|A user-defined item of any type that is returned in the
-      AsyncResult object without being altered.\|
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Property&lt;/th&gt; &lt;th&gt;Use to...&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;AsyncResult.value&lt;/td&gt; &lt;td&gt;Always returns undefined because there is no data or object to
+      retrieve when adding an event handler.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.status&lt;/td&gt;
+      &lt;td&gt;Determine the success or failure of the operation.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;AsyncResult.error&lt;/td&gt; &lt;td&gt;Access an Error object that provides error information if the
+      operation failed.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.asyncContext&lt;/td&gt; &lt;td&gt;A
+      user-defined item of any type that is returned in the AsyncResult object without being altered.&lt;/td&gt;
+      &lt;/tr&gt; &lt;/table&gt;
 
 
       Hosts: Excel
@@ -177,11 +180,13 @@ items:
       to return the following information.
 
 
-      \|Property \|Use to...\| \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\| \|AsyncResult.value\|Access a Settings object
-      with the refreshed values.\| \|AsyncResult.status\|Determine the success or failure of the operation.\|
-      \|AsyncResult.error\|Access an Error object that provides error information if the operation failed.\|
-      \|AsyncResult.asyncContext\|A user-defined item of any type that is returned in the AsyncResult object without
-      being altered.\|
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Property&lt;/th&gt; &lt;th&gt;Use to...&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;AsyncResult.value&lt;/td&gt; &lt;td&gt;Access a Settings object with the refreshed values.&lt;/td&gt;
+      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.status&lt;/td&gt; &lt;td&gt;Determine the success or failure of the
+      operation.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.error&lt;/td&gt; &lt;td&gt;Access an Error
+      object that provides error information if the operation failed.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;AsyncResult.asyncContext&lt;/td&gt; &lt;td&gt;A user-defined item of any type that is returned in the
+      AsyncResult object without being altered.&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
 
 
       Hosts: Access, Excel, PowerPoint, Word
@@ -349,11 +354,13 @@ items:
       return the following information.
 
 
-      \|Property \|Use to...\| \|\-\-\-\-\-\-\-\-\-\|\-\-\-\-\-\-\-\-\-\| \|AsyncResult.value\|Always returns undefined
-      because there is no object or data to retrieve.\| \|AsyncResult.status\|Determine the success or failure of the
-      operation.\| \|AsyncResult.error\|Access an Error object that provides error information if the operation
-      failed.\| \|AsyncResult.asyncContext\|A user-defined item of any type that is returned in the AsyncResult object
-      without being altered.\|
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Property&lt;/th&gt; &lt;th&gt;Use to...&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;AsyncResult.value&lt;/td&gt; &lt;td&gt;Always returns undefined because there is no object or data to
+      retrieve.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.status&lt;/td&gt; &lt;td&gt;Determine the
+      success or failure of the operation.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.error&lt;/td&gt;
+      &lt;td&gt;Access an Error object that provides error information if the operation failed.&lt;/td&gt; &lt;/tr&gt;
+      &lt;tr&gt; &lt;td&gt;AsyncResult.asyncContext&lt;/td&gt; &lt;td&gt;A user-defined item of any type that is
+      returned in the AsyncResult object without being altered.&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
 
 
       Hosts: Access, Excel, PowerPoint, Word

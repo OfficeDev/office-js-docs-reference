@@ -2,6 +2,9 @@
 items:
   - uid: outlook.Office.MessageRead
     summary: >-
+      The message read mode of [Office.context.mailbox.item](xref:outlook.Office.Item)<!-- -->.
+
+
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
       this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
     name: Office.MessageRead
@@ -13,11 +16,140 @@ items:
       - Message
     package: outlook
     children:
+      - outlook.Office.MessageRead.addHandlerAsync
+      - outlook.Office.MessageRead.attachments
+      - outlook.Office.MessageRead.body
       - outlook.Office.MessageRead.cc
+      - outlook.Office.MessageRead.dateTimeCreated
+      - outlook.Office.MessageRead.dateTimeModifed
+      - outlook.Office.MessageRead.displayReplyAllForm
+      - outlook.Office.MessageRead.displayReplyForm
       - outlook.Office.MessageRead.from
+      - outlook.Office.MessageRead.getEntities
+      - outlook.Office.MessageRead.getEntitiesByType
+      - outlook.Office.MessageRead.getFilteredEntitiesByName
+      - outlook.Office.MessageRead.getInitializationContextAsync
+      - outlook.Office.MessageRead.getRegExMatches
+      - outlook.Office.MessageRead.getRegExMatchesByName
+      - outlook.Office.MessageRead.getSelectedEntities
+      - outlook.Office.MessageRead.getSelectedRegExMatches
       - outlook.Office.MessageRead.internetMessageId
+      - outlook.Office.MessageRead.itemClass
+      - outlook.Office.MessageRead.itemId
+      - outlook.Office.MessageRead.itemType
+      - outlook.Office.MessageRead.loadCustomPropertiesAsync
+      - outlook.Office.MessageRead.normalizedSubject
+      - outlook.Office.MessageRead.notificationMessages
+      - outlook.Office.MessageRead.recurrence
+      - outlook.Office.MessageRead.removeHandlerAsync
       - outlook.Office.MessageRead.sender
+      - outlook.Office.MessageRead.seriesId
+      - outlook.Office.MessageRead.subject
       - outlook.Office.MessageRead.to
+  - uid: outlook.Office.MessageRead.addHandlerAsync
+    summary: >-
+      Adds an event handler for a supported event.
+
+
+      Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the
+      user changes the recurrence pattern of a series.
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+
+
+      In addition to this signature, the method also has the following signature:
+
+
+      \`addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;\`
+    isPreview: true
+    name: 'addHandlerAsync(eventType, handler, options, callback)'
+    fullName: outlook.Office.MessageRead.addHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: The event that should invoke the handler.
+          type:
+            - EventType
+        - id: handler
+          description: >-
+            The function to handle the event. The function must accept a single parameter, which is an object literal.
+            The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
+          type:
+            - any
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - any
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an AsyncResult object.
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: outlook.Office.MessageRead.attachments
+    summary: |-
+      Gets an array of attachments for the item.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
+      returned. For more information, see [Blocked attachments in
+      Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519)<!--
+      -->.
+
+
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: attachments
+    fullName: outlook.Office.MessageRead.attachments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attachments: AttachmentDetails[];'
+      return:
+        type:
+          - 'AttachmentDetails[]'
+  - uid: outlook.Office.MessageRead.body
+    summary: |-
+      Gets an object that provides methods for manipulating the body of an item.
+
+      \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: body
+    fullName: outlook.Office.MessageRead.body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body: Body;'
+      return:
+        type:
+          - Body
   - uid: outlook.Office.MessageRead.cc
     summary: >-
       Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
@@ -34,7 +166,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
 
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Read
     name: cc
     fullName: outlook.Office.MessageRead.cc
     langs:
@@ -45,6 +177,145 @@ items:
       return:
         type:
           - 'EmailAddressDetails[]'
+  - uid: outlook.Office.MessageRead.dateTimeCreated
+    summary: |-
+      Gets the date and time that an item was created. Read mode only.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: dateTimeCreated
+    fullName: outlook.Office.MessageRead.dateTimeCreated
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dateTimeCreated: Date;'
+      return:
+        type:
+          - Date
+  - uid: outlook.Office.MessageRead.dateTimeModifed
+    summary: |-
+      Gets the date and time that an item was last modified. Read mode only.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      Note: This member is not supported in Outlook for iOS or Outlook for Android.
+
+
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: dateTimeModifed
+    fullName: outlook.Office.MessageRead.dateTimeModifed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dateTimeModifed: Date;'
+      return:
+        type:
+          - Date
+  - uid: outlook.Office.MessageRead.displayReplyAllForm
+    summary: >-
+      Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
+      attendees of the selected appointment.
+
+
+      In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-
+      or 1-column view.
+
+
+      If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.
+
+
+      When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to
+      download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown
+      in the form UI. If this isn't possible, then no error message is thrown.
+
+
+      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: displayReplyAllForm(formData)
+    fullName: outlook.Office.MessageRead.displayReplyAllForm
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'displayReplyAllForm(formData: string | ReplyFormData): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formData
+          description: >-
+            A string that contains text and HTML and that represents the body of the reply form. The string is limited
+            to 32 KB OR An[Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
+            attachment data and a callback function
+          type:
+            - string | ReplyFormData
+  - uid: outlook.Office.MessageRead.displayReplyForm
+    summary: >-
+      Displays a reply form that includes only the sender of the selected message or the organizer of the selected
+      appointment.
+
+
+      In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-
+      or 1-column view.
+
+
+      If any of the string parameters exceed their limits, displayReplyForm throws an exception.
+
+
+      When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to
+      download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown
+      in the form UI. If this isn't possible, then no error message is thrown.
+
+
+      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: displayReplyForm(formData)
+    fullName: outlook.Office.MessageRead.displayReplyForm
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'displayReplyForm(formData: string | ReplyFormData): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: formData
+          description: >-
+            A string that contains text and HTML and that represents the body of the reply form. The string is limited
+            to 32 KB. OR An[Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
+            attachment data and a callback function.
+          type:
+            - string | ReplyFormData
   - uid: outlook.Office.MessageRead.from
     summary: >-
       Gets the email address of the sender of a message.
@@ -66,7 +337,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
 
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: from
     fullName: outlook.Office.MessageRead.from
     langs:
@@ -77,9 +348,11 @@ items:
       return:
         type:
           - EmailAddressDetails
-  - uid: outlook.Office.MessageRead.internetMessageId
+  - uid: outlook.Office.MessageRead.getEntities
     summary: |-
-      Gets the Internet message identifier for an email message. Read mode only.
+      Gets the entities found in the selected item.
+
+      Note: This method is not supported in Outlook for iOS or Outlook for Android.
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -87,7 +360,319 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
 
 
+      Applicable Outlook mode: Message Read
+    name: getEntities()
+    fullName: outlook.Office.MessageRead.getEntities
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getEntities(): Entities;'
+      return:
+        type:
+          - Entities
+        description: ''
+  - uid: outlook.Office.MessageRead.getEntitiesByType
+    summary: |-
+      Gets an array of all the entities of the specified entity type found in the selected item.
+
+      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access,
+      as specified in the following table.
+
+
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Value of entityType&lt;/th&gt; &lt;th&gt;Type of objects in returned
+      array&lt;/th&gt; &lt;th&gt;Required Permission Leve&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Address&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt; &lt;td&gt;Restricted&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Contact&lt;/td&gt;
+      &lt;td&gt;Contact&lt;/td&gt; &lt;td&gt;ReadItem&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;EmailAddress&lt;/td&gt; &lt;td&gt;String&lt;/td&gt; &lt;td&gt;ReadItem&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;MeetingSuggestion&lt;/td&gt; &lt;td&gt;MeetingSuggestion&lt;/td&gt; &lt;td&gt;ReadItem&lt;/td&gt;
+      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;PhoneNumber&lt;/td&gt; &lt;td&gt;PhoneNumber&lt;/td&gt;
+      &lt;td&gt;Restricted&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;TaskSuggestion&lt;/td&gt;
+      &lt;td&gt;TaskSuggestion&lt;/td&gt; &lt;td&gt;ReadItem&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;URL&lt;/td&gt;
+      &lt;td&gt;String&lt;/td&gt; &lt;td&gt;Restricted&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
+
+
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: Restricted
+
+
       Applicable Outlook mode: Read
+    name: getEntitiesByType(entityType)
+    fullName: outlook.Office.MessageRead.getEntitiesByType
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getEntitiesByType(entityType: Office.MailboxEnums.EntityType): (string | Contact | MeetingSuggestion |
+        PhoneNumber | TaskSuggestion)[];
+      return:
+        type:
+          - '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
+        description: >-
+          If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns
+          null. If no entities of the specified type are present on the item, the method returns an empty array.
+          Otherwise, the type of the objects in the returned array depends on the type of entity requested in the
+          entityType parameter.
+      parameters:
+        - id: entityType
+          description: One of the EntityType enumeration values.
+          type:
+            - Office.MailboxEnums.EntityType
+  - uid: outlook.Office.MessageRead.getFilteredEntitiesByName
+    summary: >-
+      Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
+
+
+      The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the
+      ItemHasKnownEntity rule element in the manifest XML file with the specified FilterName element value.
+
+
+      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: getFilteredEntitiesByName(name)
+    fullName: outlook.Office.MessageRead.getFilteredEntitiesByName
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getFilteredEntitiesByName(name: string): (string | Contact | MeetingSuggestion | PhoneNumber |
+        TaskSuggestion)[];
+      return:
+        type:
+          - '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
+        description: >-
+          If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the
+          name parameter, the method returns null. If the name parameter does match an ItemHasKnownEntity element in the
+          manifest, but there are no entities in the current item that match, the method return an empty array.
+      parameters:
+        - id: name
+          description: The name of the ItemHasKnownEntity rule element that defines the filter to match.
+          type:
+            - string
+  - uid: outlook.Office.MessageRead.getInitializationContextAsync
+    summary: >-
+      Gets initialization data passed when the add-in is [activated by an actionable
+      message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
+
+
+      Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than
+      16.0.8413.1000) and Outlook on the web for Office 365.
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+
+
+      In addition to this signature, the method also has the following signature:
+
+
+      \`getInitializationContextAsync(callback?: (result: AsyncResult) =&gt; void): void;\`
+    isPreview: true
+    name: 'getInitializationContextAsync(options, callback)'
+    fullName: outlook.Office.MessageRead.getInitializationContextAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an AsyncResult object. On success, the initialization data is provided in
+            the asyncResult.value property as a string. If there is no initialization context, the asyncResult object
+            will contain an Error object with its code property set to 9020 and its name property set to
+            GenericResponseError.
+          type:
+            - '(result: AsyncResult) => void'
+  - uid: outlook.Office.MessageRead.getRegExMatches
+    summary: >-
+      Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
+
+
+      The getRegExMatches method returns the strings that match the regular expression defined in each
+      ItemHasRegularExpressionMatch or ItemHasKnownEntity rule element in the manifest XML file. For an
+      ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified
+      by that rule. The PropertyName simple type defines the supported properties.
+
+
+      If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression
+      should further filter the body and should not attempt to return the entire body of the item. Using a regular
+      expression such as .\* to obtain the entire body of an item does not always return the expected results. Instead,
+      use the Body.getAsync method to retrieve the entire body.
+
+
+      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: getRegExMatches()
+    fullName: outlook.Office.MessageRead.getRegExMatches
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRegExMatches(): any;'
+      return:
+        type:
+          - any
+        description: >-
+          An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
+          The name of each array is equal to the corresponding value of the RegExName attribute of the matching
+          ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
+  - uid: outlook.Office.MessageRead.getRegExMatchesByName
+    summary: >-
+      Returns string values in the selected item that match the named regular expression defined in the manifest XML
+      file.
+
+
+      The getRegExMatchesByName method returns the strings that match the regular expression defined in the
+      ItemHasRegularExpressionMatch rule element in the manifest XML file with the specified RegExName element value.
+
+
+      If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression
+      should further filter the body and should not attempt to return the entire body of the item. Using a regular
+      expression such as .\* to obtain the entire body of an item does not always return the expected results.
+
+
+      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: getRegExMatchesByName(name)
+    fullName: outlook.Office.MessageRead.getRegExMatchesByName
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRegExMatchesByName(name: string): string[];'
+      return:
+        type:
+          - 'string[]'
+        description: An array that contains the strings that match the regular expression defined in the manifest XML file.
+      parameters:
+        - id: name
+          description: The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
+          type:
+            - string
+  - uid: outlook.Office.MessageRead.getSelectedEntities
+    summary: >-
+      Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual
+      add-ins.
+
+
+      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+
+
+      \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: getSelectedEntities()
+    fullName: outlook.Office.MessageRead.getSelectedEntities
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedEntities(): Entities;'
+      return:
+        type:
+          - Entities
+        description: ''
+  - uid: outlook.Office.MessageRead.getSelectedRegExMatches
+    summary: >-
+      Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file.
+      Highlighted matches apply to contextual add-ins.
+
+
+      The getSelectedRegExMatches method returns the strings that match the regular expression defined in each
+      ItemHasRegularExpressionMatch or ItemHasKnownEntity rule element in the manifest XML file. For an
+      ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified
+      by that rule. The PropertyName simple type defines the supported properties.
+
+
+      If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression
+      should further filter the body and should not attempt to return the entire body of the item. Using a regular
+      expression such as .\* to obtain the entire body of an item does not always return the expected results. Instead,
+      use the Body.getAsync method to retrieve the entire body.
+
+
+      Note: This method is not supported in Outlook for iOS or Outlook for Android.
+
+
+      \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: getSelectedRegExMatches()
+    fullName: outlook.Office.MessageRead.getSelectedRegExMatches
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedRegExMatches(): any;'
+      return:
+        type:
+          - any
+        description: >-
+          An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
+          The name of each array is equal to the corresponding value of the RegExName attribute of the matching
+          ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
+  - uid: outlook.Office.MessageRead.internetMessageId
+    summary: |-
+      Gets the Internet message identifier for an email message.
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
     name: internetMessageId
     fullName: outlook.Office.MessageRead.internetMessageId
     langs:
@@ -98,9 +683,291 @@ items:
       return:
         type:
           - string
+  - uid: outlook.Office.MessageRead.itemClass
+    summary: >-
+      Gets the Exchange Web Services item class of the selected item.
+
+
+      You can create custom message classes that extends a default message class, for example, a custom appointment
+      message class IPM.Appointment.Contoso.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      The itemClass property specifies the message class of the selected item. The following are the default message
+      classes for the message or appointment item.
+
+
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Type&lt;/th&gt; &lt;th&gt;Description&lt;/th&gt; &lt;th&gt;Item
+      Class&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment items&lt;/td&gt; &lt;td&gt;These are calendar items
+      of the item class IPM.Appointment or IPM.Appointment.Occurence.&lt;/td&gt;
+      &lt;td&gt;IPM.Appointment,IPM.Appointment.Occurence&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Message
+      items&lt;/td&gt; &lt;td&gt;These include email messages that have the default message class IPM.Note, and meeting
+      requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.&lt;/td&gt;
+      &lt;td&gt;IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled&lt;/td&gt;
+      &lt;/tr&gt; &lt;/table&gt;
+
+
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: itemClass
+    fullName: outlook.Office.MessageRead.itemClass
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemClass: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.MessageRead.itemId
+    summary: >-
+      Gets the Exchange Web Services item identifier for the current item.
+
+
+      The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can
+      be used to save the item to the store, which will return the item identifier in the AsyncResult.value parameter in
+      the callback function.
+
+
+      Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The
+      itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making
+      REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more
+      details, see Use the Outlook REST APIs from an Outlook add-in.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: itemId
+    fullName: outlook.Office.MessageRead.itemId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemId: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.MessageRead.itemType
+    summary: >-
+      Gets the type of item that an instance represents.
+
+
+      The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance
+      is a message or an appointment.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: itemType
+    fullName: outlook.Office.MessageRead.itemType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemType: Office.MailboxEnums.ItemType;'
+      return:
+        type:
+          - Office.MailboxEnums.ItemType
+  - uid: outlook.Office.MessageRead.loadCustomPropertiesAsync
+    summary: >-
+      Asynchronously loads custom properties for this add-in on the selected item.
+
+
+      Custom properties are stored as key/value pairs on a per-app, per-item basis. This method returns a
+      CustomProperties object in the callback, which provides methods to access the custom properties specific to the
+      current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used
+      as secure storage.
+
+
+      The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can
+      be used to get, set, and remove custom properties from the item and save changes to the custom property set back
+      to the server.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: 'loadCustomPropertiesAsync(callback, userContext)'
+    fullName: outlook.Office.MessageRead.loadCustomPropertiesAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'loadCustomPropertiesAsync(callback: (result: AsyncResult) => void, userContext?: any): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type AsyncResult.
+          type:
+            - '(result: AsyncResult) => void'
+        - id: userContext
+          description: >-
+            Optional. Developers can provide any object they wish to access in the callback function. This object can be
+            accessed by the asyncResult.asyncContext property in the callback function.
+          type:
+            - any
+  - uid: outlook.Office.MessageRead.normalizedSubject
+    summary: >-
+      Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
+
+
+      The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that
+      are added by email programs. To get the subject of the item with the prefixes intact, use the subject property.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: normalizedSubject
+    fullName: outlook.Office.MessageRead.normalizedSubject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'normalizedSubject: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.MessageRead.notificationMessages
+    summary: |-
+      Gets the notification messages for an item.
+
+      \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Compose or read
+    name: notificationMessages
+    fullName: outlook.Office.MessageRead.notificationMessages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'notificationMessages: NotificationMessages;'
+      return:
+        type:
+          - NotificationMessages
+  - uid: outlook.Office.MessageRead.recurrence
+    summary: >-
+      Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and compose
+      modes for appointment items. Read mode for meeting request items.
+
+
+      The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is
+      a series or an instance in a series. null is returned for single appointments and meeting requests of single
+      appointments. undefined is returned for messages that are not meeting requests.
+
+
+      Note: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
+
+
+      Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting
+      request of a single appointment and NOT a part of a series.
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    isPreview: true
+    name: recurrence
+    fullName: outlook.Office.MessageRead.recurrence
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'recurrence: Recurrence;'
+      return:
+        type:
+          - Recurrence
+  - uid: outlook.Office.MessageRead.removeHandlerAsync
+    summary: >-
+      Removes an event handler for a supported event.
+
+
+      Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the
+      user changes the recurrence pattern of a series.
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+
+
+      In addition to this signature, the method also has the following signature:
+
+
+      \`removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;\`
+    isPreview: true
+    name: 'removeHandlerAsync(eventType, handler, options, callback)'
+    fullName: outlook.Office.MessageRead.removeHandlerAsync
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        removeHandlerAsync(eventType:EventType, handler: any, options?: any, callback?: (result: AsyncResult) => void):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: The event that should invoke the handler.
+          type:
+            - EventType
+        - id: handler
+          description: >-
+            The function to handle the event. The function must accept a single parameter, which is an object literal.
+            The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
+          type:
+            - any
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - any
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an AsyncResult object.
+          type:
+            - '(result: AsyncResult) => void'
   - uid: outlook.Office.MessageRead.sender
     summary: >-
-      Gets the email address of the sender of an email message. Read mode only.
+      Gets the email address of the sender of an email message.
 
 
       The from and sender properties represent the same person unless the message is sent by a delegate. In that case,
@@ -116,7 +983,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
 
 
-      Applicable Outlook mode: Read
+      Applicable Outlook mode: Message Read
     name: sender
     fullName: outlook.Office.MessageRead.sender
     langs:
@@ -127,6 +994,70 @@ items:
       return:
         type:
           - EmailAddressDetails
+  - uid: outlook.Office.MessageRead.seriesId
+    summary: >-
+      Gets the id of the series that an instance belongs to.
+
+
+      In OWA and Outlook, the seriesId returns the Exchange Web Services (EWS) ID of the parent (series) item that this
+      item belongs to. However, in iOS and Android, the seriesId returns the REST ID of the parent item.
+
+
+      Note: The identifier returned by the seriesId property is the same as the Exchange Web Services item identifier.
+      The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making REST API
+      calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see
+      [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api)<!--
+      -->.
+
+
+      The seriesId property returns null for items that do not have parent items such as single appointments, series
+      items, or meeting requests and returns undefined for any other items that are not meeting requests.
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    isPreview: true
+    name: seriesId
+    fullName: outlook.Office.MessageRead.seriesId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'seriesId: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.MessageRead.subject
+    summary: >-
+      Gets the description that appears in the subject field of an item.
+
+
+      The subject property gets or sets the entire subject of the item, as sent by the email server.
+
+
+      The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading
+      prefixes such as RE: and FW:.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Message Read
+    name: subject
+    fullName: outlook.Office.MessageRead.subject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subject: string;'
+      return:
+        type:
+          - string
   - uid: outlook.Office.MessageRead.to
     summary: >-
       Provides access to the recipients on the To line of a message. The type of object and level of access depends on
@@ -143,7 +1074,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
 
 
-      Applicable Outlook mode: Compose or read
+      Applicable Outlook mode: Message Read
     name: to
     fullName: outlook.Office.MessageRead.to
     langs:

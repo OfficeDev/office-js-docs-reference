@@ -561,8 +561,6 @@ items:
                 uid: outlook.Office.AppointmentCompose
               - name: AppointmentRead
                 uid: outlook.Office.AppointmentRead
-              - name: AsyncContextOptions
-                uid: outlook.Office.AsyncContextOptions
               - name: AttachmentDetails
                 uid: outlook.Office.AttachmentDetails
               - name: Body
@@ -1287,8 +1285,8 @@ items:
                 uid: office.Office.CustomXmlParts
               - name: CustomXmlPrefixMappings
                 uid: office.Office.CustomXmlPrefixMappings
-              - name: DialogHandler
-                uid: office.Office.DialogHandler
+              - name: Dialog
+                uid: office.Office.Dialog
               - name: DialogOptions
                 uid: office.Office.DialogOptions
               - name: Document

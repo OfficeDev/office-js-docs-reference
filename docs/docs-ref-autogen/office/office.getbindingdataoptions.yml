@@ -35,8 +35,8 @@ items:
           - any
   - uid: office.Office.GetBindingDataOptions.coercionType
     summary: >-
-      The expected shape of the selection. Use Office.CoercionType or text value. Default: The original, uncoerced type
-      of the binding.
+      The expected shape of the selection. Use [Office.CoercionType](xref:office.Office.CoercionType) or text value.
+      Default: The original, uncoerced type of the binding.
     name: coercionType
     fullName: office.Office.GetBindingDataOptions.coercionType
     langs:

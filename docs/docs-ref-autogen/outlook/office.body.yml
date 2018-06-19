@@ -48,6 +48,12 @@ items:
       Applicable Outlook mode: Compose or read
 
 
+      In addition to the main signature, this method also has this signature:
+
+
+      \`getAsync(coercionType: CoercionType, callback: (result: AsyncResult) =&gt; void): void;\`
+
+
       #### Examples
 
 
@@ -155,13 +161,24 @@ items:
     remarks: >
       [Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
-      Applicable Outlook mode: Compose Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000
-      characters.
 
 
-      In addition to the main signature, this method also has these signatures: prependAsync(data: string, options:
-      AsyncContextOptions &amp; CoercionTypeOptions): void; prependAsync(data: string, callback: (result: AsyncResult)
-      =&gt; void): void; prependAsync(data: string): void;
+      Applicable Outlook mode: Compose
+
+
+      Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
+
+
+      In addition to the main signature, this method also has these signatures:
+
+
+      \`prependAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;\`
+
+
+      \`prependAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;\`
+
+
+      \`prependAsync(data: string): void;\`
 
 
       #### Examples
@@ -240,9 +257,16 @@ items:
       in plain text.
 
 
-      In addition to the main signature, this method also has these signatures: setAsync(data: string, options:
-      AsyncContextOptions &amp; CoercionTypeOptions): void; setAsync(data: string, callback: (result: AsyncResult) =&gt;
-      void): void; setAsync(data: string): void; \*
+      In addition to the main signature, this method also has these signatures:
+
+
+      \`setAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;\`
+
+
+      \`setAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;\`
+
+
+      \`setAsync(data: string): void;\`
 
 
       #### Examples
@@ -337,9 +361,16 @@ items:
       in plain text.
 
 
-      In addition to the main signature, this method also has these signatures: setSelectedDataAsync(data: string,
-      options: AsyncContextOptions &amp; CoercionTypeOptions): void; setSelectedDataAsync(data: string, callback:
-      (result: AsyncResult) =&gt; void): void; setSelectedDataAsync(data: string): void; \* \*
+      In addition to the main signature, this method also has these signatures:
+
+
+      \`setSelectedDataAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;\`
+
+
+      \`setSelectedDataAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;\`
+
+
+      \`setSelectedDataAsync(data: string): void;\`
 
 
       #### Examples

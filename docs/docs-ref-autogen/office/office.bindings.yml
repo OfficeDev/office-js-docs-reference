@@ -39,7 +39,7 @@ items:
 
 
       For Word, the itemName parameter refers to the Title property of a Rich Text content control. (You can't bind to
-      content controls other than the Rich Text content control.)
+      content controls other than the Rich Text content control).
 
 
       By default, a content control has no Title value assigned. To assign a meaningful name in the Word UI, after
@@ -146,8 +146,8 @@ items:
             - string
         - id: bindingType
           description: >-
-            The Office BindingType for the data. The method returns null if the selected object cannot be coerced into
-            the specified type.
+            The[Office.BindingType](xref:office.Office.BindingType) for the data. The method returns null if the
+            selected object cannot be coerced into the specified type.
           type:
             - BindingType
         - id: options
@@ -286,10 +286,10 @@ items:
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.Bindings.document
-    summary: |-
-      Gets a Document object that represents the document associated with this set of bindings.
-
-      remarks Hosts: Access, Excel, Word
+    summary: >-
+      Gets an [Office.Document](xref:office.Office.Document) object that represents the document associated with this
+      set of bindings.
+    remarks: 'Hosts: Access, Excel, Word'
     name: document
     fullName: office.Office.Bindings.document
     langs:

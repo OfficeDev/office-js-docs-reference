@@ -109,14 +109,15 @@ items:
         - id: eventType
           description: >-
             For a Document object event, the eventType parameter can be specified as
-            Office.EventType.Document.SelectionChanged or Office.EventType.Document.ActiveViewChanged, or the
+            \`Office.EventType.Document.SelectionChanged\` or \`Office.EventType.Document.ActiveViewChanged\`, or the
             corresponding text value of this enumeration.
           type:
             - EventType
         - id: handler
           description: >-
-            The event handler function to add, whose only parameter is of type DocumentSelectionChangedEventArgs.
-            Required.
+            The event handler function to add, whose only parameter is of
+            type[Office.DocumentSelectionChangedEventArgs](xref:office.Office.DocumentSelectionChangedEventArgs)<!--
+            -->. Required.
           type:
             - any
         - id: options
@@ -134,7 +135,7 @@ items:
 
 
       You don't instantiate the Document object directly in your script. To call members of the Document object to
-      interact with the current document or worksheet, use Office.context.document in your script.
+      interact with the current document or worksheet, use \`Office.context.document\` in your script.
 
 
       #### Examples
@@ -236,7 +237,7 @@ items:
         description: ''
       parameters:
         - id: options
-          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback..'
+          description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
             - AsyncContextOptions
         - id: callback
@@ -260,22 +261,22 @@ items:
       getFileAsync method supports getting files in slices of up to 65536 (64 KB).
 
 
-      The fileType parameter can be specified by using the FileType enumeration or text values. But the possible values
-      vary with the host:
+      The fileType parameter can be specified by using the [Office.FileType](xref:office.Office.FileType) enumeration or
+      text values. But the possible values vary with the host:
 
 
-      Excel Online, Win32, Mac, and iOS: Office.FileType.Compressed
+      Excel Online, Win32, Mac, and iOS: \`Office.FileType.Compressed\`
 
 
-      PowerPoint on Windows desktop, Mac, and iPad, and PowerPoint Online: Office.FileType.Compressed,
-      Office.FileType.Pdf
+      PowerPoint on Windows desktop, Mac, and iPad, and PowerPoint Online: \`Office.FileType.Compressed\`,
+      \`Office.FileType.Pdf\`
 
 
-      Word on Windows desktop, Word on Mac, and Word Online: Office.FileType.Compressed, Office.FileType.Pdf,
-      Office.FileType.Text
+      Word on Windows desktop, Word on Mac, and Word Online: \`Office.FileType.Compressed\`, \`Office.FileType.Pdf\`,
+      \`Office.FileType.Text\`
 
 
-      Word on iPad: Office.FileType.Compressed, Office.FileType.Text
+      Word on iPad: \`Office.FileType.Compressed\`, \`Office.FileType.Text\`
 
 
       #### Examples
@@ -407,7 +408,7 @@ items:
       Available in Requirement set: not in a set
 
 
-      You get the file's URL with the url property ( asyncResult.value.url).
+      You get the file's URL with the url property (\`asyncResult.value.url\`).
 
 
       #### Examples
@@ -530,22 +531,23 @@ items:
       The possible values for the coercionType parameter vary by the host:
 
 
-      Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online only: Office.CoercionType.Text (string)
+      Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online only: \`Office.CoercionType.Text\`
+      (string)
 
 
-      Excel, Word, and Word Online only: Office.CoercionType.Matrix (array of arrays)
+      Excel, Word, and Word Online only: \`Office.CoercionType.Matrix\` (array of arrays)
 
 
-      Access, Excel, Word, and Word Online only: Office.CoercionType.Table (TableData object)
+      Access, Excel, Word, and Word Online only: \`Office.CoercionType.Table\` (TableData object)
 
 
-      Word only: Office.CoercionType.Html
+      Word only: \`Office.CoercionType.Html\`
 
 
-      Word and Word Online only: Office.CoercionType.Ooxml (Office Open XML)
+      Word and Word Online only: \`Office.CoercionType.Ooxml\` (Office Open XML)
 
 
-      PowerPoint and PowerPoint Online only: Office.CoercionType.SlideRange
+      PowerPoint and PowerPoint Online only: \`Office.CoercionType.SlideRange\`
 
 
       #### Examples
@@ -1011,7 +1013,7 @@ items:
           type:
             - EventType
         - id: options
-          description: Provides options to determine which event handler or handlers are removed. \*
+          description: Provides options to determine which event handler or handlers are removed.
           type:
             - RemoveHandlerOptions
         - id: callback
@@ -1189,7 +1191,9 @@ items:
         description: ''
       parameters:
         - id: data
-          description: 'The data to be set. Either a string or CoercionType value, 2d array or TableData object.'
+          description: >-
+            The data to be set. Either a string or[Office.CoercionType](xref:office.Office.CoercionType) value, 2d array
+            or TableData object.
           type:
             - 'string | TableData | any[][]'
         - id: options

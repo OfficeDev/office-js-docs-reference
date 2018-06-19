@@ -42,10 +42,17 @@ items:
       Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
 
 
-      In addition to the main signature, this method also has these signatures: addAsync(recipients: (string \|
-      EmailUser \| EmailAddressDetails)\[\]): void; addAsync(recipients: (string \| EmailUser \|
-      EmailAddressDetails)\[\], options: AsyncContextOptions): void; addAsync(recipients: (string \| EmailUser \|
-      EmailAddressDetails)\[\], callback: (result: AsyncResult) =&gt; void): void;
+      In addition to the main signature, this method also has these signatures:
+
+
+      \`addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\]): void;\`
+
+
+      \`addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: AsyncContextOptions): void;\`
+
+
+      \`addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) =&gt;
+      void): void;\`
 
 
       #### Examples
@@ -110,10 +117,13 @@ items:
           type:
             - '(result: AsyncResult) => void'
   - uid: outlook.Office.Recipients.getAsync
-    summary: |-
+    summary: >-
       Gets a recipient list for an appointment or message.
 
-      When the call completes, the asyncResult.value property will contain an array of EmailAddressDetails objects.
+
+      When the call completes, the asyncResult.value property will contain an array
+      of[Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects.
+
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >
@@ -124,8 +134,10 @@ items:
       Applicable Outlook mode: Compose
 
 
-      In addition to the main signature, this method also has these signatures: getAsync(callback: (result: AsyncResult)
-      =&gt; void): void;
+      In addition to the main signature, this method also has this signature:
+
+
+      \`getAsync(callback: (result: AsyncResult) =&gt; void): void;\`
 
 
       #### Examples
@@ -182,9 +194,9 @@ items:
 
       - Strings containing SMTP email addresses
 
-      - EmailUser objects
+      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
 
-      - EmailAddressDetails objects
+      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >
@@ -198,10 +210,17 @@ items:
       Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
 
 
-      In addition to the main signature, this method also has these signatures: setAsync(recipients: (string \|
-      EmailUser \| EmailAddressDetails)\[\]): void; setAsync(recipients: (string \| EmailUser \|
-      EmailAddressDetails)\[\], options: AsyncContextOptions): void; setAsync(recipients: (string \| EmailUser \|
-      EmailAddressDetails)\[\], callback: (result: AsyncResult) =&gt; void): void;
+      In addition to the main signature, this method also has these signatures:
+
+
+      \`setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\]): void;\`
+
+
+      \`setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: AsyncContextOptions): void;\`
+
+
+      \`setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) =&gt;
+      void): void;\`
 
 
       #### Examples

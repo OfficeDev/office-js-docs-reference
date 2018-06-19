@@ -12,7 +12,9 @@ items:
       - office.Office.DocumentSelectionChangedEventArgs.document
       - office.Office.DocumentSelectionChangedEventArgs.type
   - uid: office.Office.DocumentSelectionChangedEventArgs.document
-    summary: Gets a Document object that represents the document that raised the SelectionChanged event.
+    summary: >-
+      Gets an [Office.Document](xref:office.Office.Document) object that represents the document that raised the
+      SelectionChanged event.
     name: document
     fullName: office.Office.DocumentSelectionChangedEventArgs.document
     langs:
@@ -24,7 +26,9 @@ items:
         type:
           - Document
   - uid: office.Office.DocumentSelectionChangedEventArgs.type
-    summary: Get an EventType enumeration value that identifies the kind of event that was raised.
+    summary: >-
+      Get an [Office.EventType](xref:office.Office.EventType) enumeration value that identifies the kind of event that
+      was raised.
     name: type
     fullName: office.Office.DocumentSelectionChangedEventArgs.type
     langs:
