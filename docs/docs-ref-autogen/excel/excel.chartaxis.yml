@@ -130,6 +130,27 @@ items:
           - >-
             Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" |
             "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let chart = sheet.charts.getItemAt(0);
+          let categoryAxis = chart.axes.categoryAxis;
+          let valueAxis = chart.axes.valueAxis;
+
+          // Load to get display unit.
+          valueAxis.load("displayUnit");
+         
+          await context.sync();
+
+          OfficeHelpers.UI.notify("The vertical axis display unit is: " +  valueAxis.displayUnit);
+      });
+      ```
   - uid: excel.Excel.ChartAxis.format
     summary: |-
       Represents the formatting of a chart object, which includes line and font formatting.
@@ -523,6 +544,24 @@ items:
       return:
         type:
           - boolean
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          let chart = sheet.charts.getItemAt(0);
+          let axis = chart.axes.valueAxis;
+
+          // Remove display unit.
+          axis.showDisplayUnitLabel = false;
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.ChartAxis.tickLabelPosition
     summary: >-
       Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for

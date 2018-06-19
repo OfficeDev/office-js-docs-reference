@@ -1,7 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.From
-    summary: Provides a method to get the from value of a message in an Outlook add-in.
+    summary: |-
+      Provides a method to get the from value of a message in an Outlook add-in.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       [Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem

@@ -1,7 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.MailboxEnums.RecurrenceTimeZone
-    summary: Specifies the time zone applied to the recurrence.
+    summary: |-
+      Specifies the time zone applied to the recurrence.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: 'Applicable Outlook mode: Compose or read'
     isPreview: true
     name: Office.MailboxEnums.RecurrenceTimeZone

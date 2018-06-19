@@ -818,7 +818,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The event type. For example, for bindings, it can be **Office.EventType.BindingSelectionChanged**, **Office.EventType.BindingDataChanged**, or the corresponding text values of these enumerations."
+                      "text": "The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or `Office.EventType.BindingSelectionChanged`."
                     }
                   ],
                   "isOptional": false,
@@ -830,7 +830,45 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The event handler function to add."
+                      "text": "The event handler function to add, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.BindingDataChangedEventArgs"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "BindingDataChangedEventArgs"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " or "
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.BindingSelectionChangedEventArgs"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "BindingSelectionChangedEventArgs"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": "."
                     }
                   ],
                   "isOptional": false,
@@ -866,7 +904,26 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Adds an event handler to the object for the specified event type."
+                  "text": "Adds an event handler to the object for the specified "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.EventType"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "EventType"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": ". Supported EventTypes are `Office.EventType.BindingDataChanged` and `Office.EventType.BindingSelectionChanged`."
                 }
               ],
               "remarks": [
@@ -1014,7 +1071,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The event type. For binding can be 'bindingDataChanged' and 'bindingSelectionChanged'"
+                      "text": "The event type. For bindings, it can be `Office.EventType.BindingDataChanged` or `Office.EventType.BindingSelectionChanged`."
                     }
                   ],
                   "isOptional": false,
@@ -1197,6 +1254,107 @@
                   "text": "Hosts: Access, Excel, Word"
                 }
               ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            }
+          }
+        },
+        "BindingDataChangedEventArgs": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Provides information about the binding that raised the DataChanged event."
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Hosts: Access, Excel, Word"
+            }
+          ],
+          "isBeta": false,
+          "isSealed": false,
+          "members": {
+            "binding": {
+              "kind": "property",
+              "signature": "binding: Binding;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Binding",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.Binding"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "Binding"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object that represents the binding that raised the DataChanged event."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "type": {
+              "kind": "property",
+              "signature": "type: EventType;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "EventType",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.EventType"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "EventType"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " enumeration value that identifies the kind of event that was raised."
+                }
+              ],
+              "remarks": [],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -1798,6 +1956,319 @@
                   "text": "Fails if the specified id does not exist."
                 }
               ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            }
+          }
+        },
+        "BindingSelectionChangedEventArgs": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Provides information about the binding that raised the SelectionChanged event."
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Hosts: Access, Excel, Word"
+            }
+          ],
+          "isBeta": false,
+          "isSealed": false,
+          "members": {
+            "binding": {
+              "kind": "property",
+              "signature": "binding: Binding;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "Binding",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.Binding"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "Binding"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object that represents the binding that raised the SelectionChanged event."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "columnCount": {
+              "kind": "property",
+              "signature": "columnCount: number;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the number of columns selected. If a single cell is selected returns 1."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is returned."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For Word, this property will work only for bindings of "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.BindingType"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "BindingType"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " \"table\". If the binding is of type \"matrix\", null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property to work correctly."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "rowCount": {
+              "kind": "property",
+              "signature": "rowCount: number;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the number of rows selected. If a single cell is selected returns 1."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "If the user makes a non-contiguous selection, the count for the last contiguous selection within the binding is returned."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For Word, this property will work only for bindings of "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.BindingType"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "BindingType"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " \"table\". If the binding is of type \"matrix\", null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property to work correctly."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "startColumn": {
+              "kind": "property",
+              "signature": "startColumn: number;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The zero-based index of the first column of the selection counting from the leftmost column in the binding."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "If the user makes a non-contiguous selection, the coordinates for the last contiguous selection within the binding are returned."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For Word, this property will work only for bindings of "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.BindingType"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "BindingType"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " \"table\". If the binding is of type \"matrix\", null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property to work correctly."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "startRow": {
+              "kind": "property",
+              "signature": "startRow: number;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "number",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The zero-based index of the first row of the selection counting from the first row in the binding."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "If the user makes a non-contiguous selection, the coordinates for the last contiguous selection within the binding are returned."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For Word, this property will work only for bindings of "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.BindingType"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "BindingType"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " \"table\". If the binding is of type \"matrix\", null is returned. Also, the call will fail if the table contains merged cells, because the structure of the table must be uniform for this property to work correctly."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "type": {
+              "kind": "property",
+              "signature": "type: EventType;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "EventType",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.EventType"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "EventType"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " enumeration value that identifies the kind of event that was raised."
+                }
+              ],
+              "remarks": [],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,
@@ -3308,7 +3779,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Specifies the type of event to add. Required. For a CustomXmlPart object event, the eventType parameter can be specified as `Office.EventType.DataNodeDeleted`, `Office.EventType.DataNodeInserted`, `Office.EventType.DataNodeReplaced`, or the corresponding text values of these enumerations."
+                      "text": "Specifies the type of event to add. For a CustomXmlPart object, the eventType parameter can be specified as `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`."
                     }
                   ],
                   "isOptional": false,
@@ -3320,7 +3791,60 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The event handler function to add, whose only parameter is of type NodeDeletedEventArgs, NodeInsertedEventArgs, or NodeReplaceEventArgs. Required."
+                      "text": "The event handler function to add, whose only parameter is of type"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.NodeDeletedEventArgs"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "NodeDeletedEventArgs"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.NodeInsertedEventArgs"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "NodeInsertedEventArgs"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": ", or "
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.NodeReplacedEventArgs"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "NodeReplacedEventArgs"
+                      }
                     }
                   ],
                   "isOptional": false,
@@ -3703,7 +4227,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Specifies the type of event to remove. Required.For a CustomXmlPart object event, the eventType parameter can be specified as `Office.EventType.DataNodeDeleted`, `Office.EventType.DataNodeInserted`, `Office.EventType.DataNodeReplaced`, or the corresponding text values of these enumerations."
+                      "text": "Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified as `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`."
                     }
                   ],
                   "isOptional": false,
@@ -3712,7 +4236,12 @@
                 },
                 "handler": {
                   "name": "handler",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The name of the handler to remove."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "(result: any) => void"
@@ -7907,6 +8436,296 @@
                   "text": "Available in Requirement set: MatrixBindings"
                 }
               ],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            }
+          }
+        },
+        "NodeDeletedEventArgs": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Provides information about the deleted node that raised the dataNodeDeleted event."
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Hosts: Word"
+            }
+          ],
+          "isBeta": false,
+          "isSealed": false,
+          "members": {
+            "isUndoRedo": {
+              "kind": "property",
+              "signature": "isUndoRedo: boolean;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "boolean",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets whether the node was deleted as part of an Undo/Redo action by the user."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "oldNextSibling": {
+              "kind": "property",
+              "signature": "oldNextSibling: CustomXmlNode;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "CustomXmlNode",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the former next sibling of the node that was just deleted from the "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.CustomXmlPart"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "CustomXmlPart"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "oldNode": {
+              "kind": "property",
+              "signature": "oldNode: CustomXmlNode;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "CustomXmlNode",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the node which was just deleted from the "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.CustomXmlPart"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "CustomXmlPart"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a \"disconnected\" node in that you can query down from the node, but you cannot query up the tree - the node appears to exist alone."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            }
+          }
+        },
+        "NodeInsertedEventArgs": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Provides information about the inserted node that raised the dataNodeInserted event."
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "Hosts: Word"
+            }
+          ],
+          "isBeta": false,
+          "isSealed": false,
+          "members": {
+            "isUndoRedo": {
+              "kind": "property",
+              "signature": "isUndoRedo: boolean;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "boolean",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets whether the node was inserted as part of an Undo/Redo action by the user."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "newNode": {
+              "kind": "property",
+              "signature": "newNode: CustomXmlNode;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "CustomXmlNode",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the node that was just added to the CustomXMLPart object."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Note that this node may have children, if a subtree was just added to the document."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            }
+          }
+        },
+        "NodeReplacedEventArgs": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Provides information about the replaced node that raised the dataNodeReplaced event."
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "members": {
+            "isUndoRedo": {
+              "kind": "property",
+              "signature": "isUndoRedo: boolean;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "boolean",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets whether the replaced node was inserted as part of an undo or redo operation by the user."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "newNode": {
+              "kind": "property",
+              "signature": "newNode: CustomXmlNode;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "CustomXmlNode",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the node that was just added to the CustomXMLPart object."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Note that this node may have children, if a subtree was just added to the document."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "oldNode": {
+              "kind": "property",
+              "signature": "oldNode: CustomXmlNode;",
+              "isOptional": false,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "CustomXmlNode",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Gets the node which was just deleted (replaced) from the CustomXmlPart object."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a \"disconnected\" node in that you can query down from the node, but you cannot query up the tree - the node appears to exist alone."
+                }
+              ],
+              "remarks": [],
               "isBeta": false,
               "isSealed": false,
               "isVirtual": false,

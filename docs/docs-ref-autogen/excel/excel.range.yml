@@ -1284,6 +1284,39 @@ items:
       return:
         type:
           - Excel.RangeHyperlink
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Orders");
+
+          let productsRange = sheet.getRange("A3:A5");
+          productsRange.load("values");
+
+          await context.sync();
+
+          // Create a hyperlink to a URL 
+          // for each product name in the first table.
+          for (let i = 0; i < productsRange.values.length; i++) {
+              let cellRange = productsRange.getCell(i, 0);
+              let cellText = productsRange.values[i][0];
+
+              let hyperlink = {
+                  textToDisplay: cellText,
+                  screenTip: "Search Bing for '" + cellText + "'",
+                  address: "https://www.bing.com?q=" + cellText
+              }
+              cellRange.hyperlink = hyperlink;
+          }
+
+          await context.sync();
+
+          OfficeHelpers.UI.notify("Created a hyperlink to a URL for each of the products in the first table.");
+      });
+      ```
   - uid: excel.Excel.Range.insert
     summary: >-
       Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make
@@ -1638,6 +1671,48 @@ items:
           description: ''
           type:
             - OfficeExtension.UpdateOptions
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          const range = sheet.getRange("B2:E2");
+          range.set({
+              format: {
+                  fill: {
+                      color: "#4472C4"
+                  },
+                  font: {
+                      name: "Verdana",
+                      color: "white"
+                  }
+              }
+          })
+          range.format.autofitColumns();
+          await context.sync();
+      });
+      ```
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+
+          const sourceRange = sheet.getRange("B2:E2");
+          sourceRange.load("format/fill/color, format/font/name, format/font/color");
+          await context.sync();
+
+          // Set properties based on the loaded and synced 
+          // source range.
+          const targetRange = sheet.getRange("B7:E7");
+          targetRange.set(sourceRange); 
+          targetRange.format.autofitColumns();
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.Range.showCard
     summary: |-
       Displays the card for an active cell if it has rich value content.
@@ -1687,6 +1762,24 @@ items:
       return:
         type:
           - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          let worksheet = context.workbook.worksheets.getItem("Sample");
+          let range = worksheet.getRange("A1:E1");
+
+          // Apply built-in style. 
+          // Styles are in the Home tab ribbon.
+          range.style = Excel.BuiltInStyle.neutral;
+          range.format.horizontalAlignment = "Right";
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.Range.text
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution

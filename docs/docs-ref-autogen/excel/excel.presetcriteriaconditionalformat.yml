@@ -73,6 +73,35 @@ items:
       return:
         type:
           - Excel.ConditionalPresetCriteriaRule
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B2:M5");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.presetCriteria);
+          conditionalFormat.preset.format.font.color = "white";
+          conditionalFormat.preset.rule = { criterion: Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage };
+
+          await context.sync();
+      });
+      ```
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B8:E13");
+          const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
+          conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
+          conditionalFormat.custom.format.font.color = "green";
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.PresetCriteriaConditionalFormat.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'

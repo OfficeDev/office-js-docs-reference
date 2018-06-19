@@ -34,6 +34,23 @@ items:
       return:
         type:
           - Excel.ConditionalRangeFormat
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B21:E23");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.cellValue);
+          conditionalFormat.cellValue.format.font.color = "red";
+          conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.CellValueConditionalFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -69,6 +86,23 @@ items:
       return:
         type:
           - Excel.ConditionalCellValueRule
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B21:E23");
+          const conditionalFormat = range.conditionalFormats
+              .add(Excel.ConditionalFormatType.cellValue);
+          conditionalFormat.cellValue.format.font.color = "red";
+          conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.CellValueConditionalFormat.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'

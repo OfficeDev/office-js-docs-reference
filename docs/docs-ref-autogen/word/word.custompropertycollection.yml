@@ -159,6 +159,21 @@ items:
       return:
         type:
           - 'Word.CustomProperty[]'
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Word.run(async (context) => {
+          let properties = context.document.properties.customProperties;
+          properties.load("key,type,value");
+
+          await context.sync();
+          for (var i = 0; i < properties.items.length; i++)
+              console.log("Property Name:" + properties.items[i].key + ";Type=" + properties.items[i].type + "; Property Value=" + properties.items[i].value);
+      });
+      ```
   - uid: word.Word.CustomPropertyCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

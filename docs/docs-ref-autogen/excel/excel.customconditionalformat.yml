@@ -58,6 +58,22 @@ items:
       return:
         type:
           - Excel.ConditionalRangeFormat
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const range = sheet.getRange("B8:E13");
+          const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
+          conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
+          conditionalFormat.custom.format.font.color = "green";
+
+          await context.sync();
+      });
+      ```
   - uid: excel.Excel.CustomConditionalFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
