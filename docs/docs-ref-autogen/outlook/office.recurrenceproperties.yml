@@ -1,7 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.RecurrenceProperties
-    summary: Gets or sets the properties of the recurrence.
+    summary: |-
+      Gets or sets the properties of the recurrence.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       [Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem

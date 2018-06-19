@@ -1265,8 +1265,12 @@ items:
                 uid: office.Office.AuthOptions
               - name: Binding
                 uid: office.Office.Binding
+              - name: BindingDataChangedEventArgs
+                uid: office.Office.BindingDataChangedEventArgs
               - name: Bindings
                 uid: office.Office.Bindings
+              - name: BindingSelectionChangedEventArgs
+                uid: office.Office.BindingSelectionChangedEventArgs
               - name: BindingType
                 uid: office.Office.BindingType
               - name: CoercionType
@@ -1325,6 +1329,12 @@ items:
                 uid: office.Office.IPromiseConstructor
               - name: MatrixBinding
                 uid: office.Office.MatrixBinding
+              - name: NodeDeletedEventArgs
+                uid: office.Office.NodeDeletedEventArgs
+              - name: NodeInsertedEventArgs
+                uid: office.Office.NodeInsertedEventArgs
+              - name: NodeReplacedEventArgs
+                uid: office.Office.NodeReplacedEventArgs
               - name: OfficeTheme
                 uid: office.Office.OfficeTheme
               - name: PlatformType

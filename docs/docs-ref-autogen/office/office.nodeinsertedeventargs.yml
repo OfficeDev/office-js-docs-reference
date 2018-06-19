@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.NodeInsertedEventArgs
+    summary: Provides information about the inserted node that raised the dataNodeInserted event.
+    remarks: 'Hosts: Word'
+    name: Office.NodeInsertedEventArgs
+    fullName: office.Office.NodeInsertedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.NodeInsertedEventArgs.isUndoRedo
+      - office.Office.NodeInsertedEventArgs.newNode
+  - uid: office.Office.NodeInsertedEventArgs.isUndoRedo
+    summary: Gets whether the node was inserted as part of an Undo/Redo action by the user.
+    name: isUndoRedo
+    fullName: office.Office.NodeInsertedEventArgs.isUndoRedo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isUndoRedo: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Office.NodeInsertedEventArgs.newNode
+    summary: |-
+      Gets the node that was just added to the CustomXMLPart object.
+
+      Note that this node may have children, if a subtree was just added to the document.
+    name: newNode
+    fullName: office.Office.NodeInsertedEventArgs.newNode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'newNode: CustomXmlNode;'
+      return:
+        type:
+          - CustomXmlNode

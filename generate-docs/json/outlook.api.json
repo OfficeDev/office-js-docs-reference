@@ -343,6 +343,13 @@
                 {
                   "kind": "text",
                   "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -914,6 +921,13 @@
                 {
                   "kind": "text",
                   "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -1440,6 +1454,13 @@
                 {
                   "kind": "text",
                   "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -1674,6 +1695,13 @@
                 {
                   "kind": "text",
                   "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -1988,6 +2016,13 @@
                 {
                   "kind": "text",
                   "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -2978,6 +3013,13 @@
                 {
                   "kind": "text",
                   "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -3687,7 +3729,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "|Value of entityType|Type of objects in returned array|Required Permission Level| |-------|-----------|----------| |Address|String|Restricted| |Contact|Contact|ReadItem| |EmailAddress|String|ReadItem| |MeetingSuggestion|MeetingSuggestion|ReadItem| |PhoneNumber|PhoneNumber|Restricted| |TaskSuggestion|TaskSuggestion|ReadItem| |URL|String|Restricted|"
+                  "text": "<table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission Leve</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td> <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr> <tr> <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td> <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>"
                 }
               ],
               "isBeta": false,
@@ -3842,6 +3884,13 @@
                 {
                   "kind": "text",
                   "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -4258,7 +4307,31 @@
                 },
                 {
                   "kind": "text",
-                  "text": "|Type|Description|item class| |-----------|------------|------------| |Appointment items|These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.|IPM.Appointment,IPM.Appointment.Occurence| |Message items|These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.|IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled|"
+                  "text": "<table> <tr> <th>Type</th> <th>Description</th> <th>Item Class</th> </tr> <tr> <td>Appointment items</td> <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.</td> <td>IPM.Appointment,IPM.Appointment.Occurence</td> </tr> <tr> <td>Message items</td> <td>These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.</td> <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td> </tr> </table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "text",
+                  "text": ": ReadItem"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode: Message Read"
                 }
               ],
               "isBeta": false,
@@ -4795,6 +4868,13 @@
                 {
                   "kind": "text",
                   "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -4897,6 +4977,13 @@
                 {
                   "kind": "text",
                   "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -5063,6 +5150,13 @@
                 {
                   "kind": "text",
                   "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -7434,6 +7528,13 @@
             {
               "kind": "text",
               "text": "Provides a method to get the from value of a message in an Outlook add-in."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox Preview]"
             }
           ],
           "remarks": [
@@ -7718,6 +7819,13 @@
                 {
                   "kind": "text",
                   "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -8146,6 +8254,13 @@
                 {
                   "kind": "text",
                   "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -8248,6 +8363,13 @@
                 {
                   "kind": "text",
                   "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -8339,6 +8461,13 @@
                 {
                   "kind": "text",
                   "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -8880,6 +9009,13 @@
                 {
                   "kind": "text",
                   "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -10002,7 +10138,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "|Value of entityType|Type of objects in returned array|Required Permission Level| |-------|-----------|----------| |Address|String|Restricted| |Contact|Contact|ReadItem| |EmailAddress|String|ReadItem| |MeetingSuggestion|MeetingSuggestion|ReadItem| |PhoneNumber|PhoneNumber|Restricted| |TaskSuggestion|TaskSuggestion|ReadItem| |URL|String|Restricted|"
+                  "text": "<table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission Leve</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td> <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr> <tr> <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td> <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>"
                 }
               ],
               "isBeta": false,
@@ -10157,6 +10293,13 @@
                 {
                   "kind": "text",
                   "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -10573,7 +10716,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "|Type|Description|item class| |-----------|------------|------------| |Appointment items|These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.|IPM.Appointment,IPM.Appointment.Occurence| |Message items|These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.|IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled|"
+                  "text": "<table> <tr> <th>Type</th> <th>Description</th> <th>Item Class</th> </tr> <tr> <td>Appointment items</td> <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.</td> <td>IPM.Appointment,IPM.Appointment.Occurence</td> </tr> <tr> <td>Message items</td> <td>These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.</td> <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td> </tr> </table>"
                 }
               ],
               "isBeta": false,
@@ -13240,6 +13383,13 @@
                 {
                   "kind": "text",
                   "text": "Specifies the day of week or type of day."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -13649,6 +13799,13 @@
                 {
                   "kind": "text",
                   "text": "Specifies the month."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -15514,6 +15671,13 @@
                 {
                   "kind": "text",
                   "text": "Specifies the time zone applied to the recurrence."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -15598,6 +15762,13 @@
                 {
                   "kind": "text",
                   "text": "Specifies the type of recurrence."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -15838,6 +16009,13 @@
                 {
                   "kind": "text",
                   "text": "Specifies the week of the month."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -16432,6 +16610,13 @@
                 {
                   "kind": "text",
                   "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -17023,6 +17208,13 @@
                 {
                   "kind": "text",
                   "text": "The from property returns a From object that provides a method to get the from value."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -17101,6 +17293,13 @@
                 {
                   "kind": "text",
                   "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -17479,6 +17678,13 @@
                 {
                   "kind": "text",
                   "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -17713,6 +17919,13 @@
                 {
                   "kind": "text",
                   "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -17959,6 +18172,13 @@
                 {
                   "kind": "text",
                   "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -18356,6 +18576,13 @@
                 {
                   "kind": "text",
                   "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -19279,6 +19506,13 @@
                 {
                   "kind": "text",
                   "text": "Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web for Office 365."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -20101,6 +20335,13 @@
                 {
                   "kind": "text",
                   "text": "Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment and NOT a part of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -20203,6 +20444,13 @@
                 {
                   "kind": "text",
                   "text": "Currently the only supported event type is Office.EventType.RecurrencePatternChanged, which is invoked when the user changes the recurrence pattern of a series."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -20357,6 +20605,13 @@
                 {
                   "kind": "text",
                   "text": "The seriesId property returns null for items that do not have parent items such as single appointments, series items, or meeting requests and returns undefined for any other items that are not meeting requests."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "[Api set: Mailbox Preview]"
                 }
               ],
               "remarks": [
@@ -21856,6 +22111,13 @@
             {
               "kind": "text",
               "text": "The recurrence object provides methods to get and set the recurrence pattern of appointments but only get the recurrence pattern of meeting requests. It will have a dictionary with the following keys: seriesTime, recurrenceType, recurrenceProperties, and recurrenceTimeZone (optional)."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox Preview]"
             }
           ],
           "remarks": [
@@ -22335,6 +22597,13 @@
             {
               "kind": "text",
               "text": "Gets or sets the properties of the recurrence."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox Preview]"
             }
           ],
           "remarks": [
@@ -23134,6 +23403,13 @@
             {
               "kind": "text",
               "text": "The SeriesTime object provides methods to get and set the dates and times of appointments in a recurring series and get the dates and times of meeting requests in a recurring series."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "[Api set: Mailbox Preview]"
             }
           ],
           "remarks": [

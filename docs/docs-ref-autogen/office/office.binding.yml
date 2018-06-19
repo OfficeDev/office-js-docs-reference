@@ -33,7 +33,9 @@ items:
       - office.Office.Binding.setDataAsync
       - office.Office.Binding.type
   - uid: office.Office.Binding.addHandlerAsync
-    summary: Adds an event handler to the object for the specified event type.
+    summary: >-
+      Adds an event handler to the object for the specified [Office.EventType](xref:office.Office.EventType)<!-- -->.
+      Supported EventTypes are \`Office.EventType.BindingDataChanged\` and \`Office.EventType.BindingSelectionChanged\`.
     remarks: >
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
@@ -108,12 +110,15 @@ items:
       parameters:
         - id: eventType
           description: >-
-            The event type. For example, for bindings, it can be \*\*Office.EventType.BindingSelectionChanged\*\*,
-            \*\*Office.EventType.BindingDataChanged\*\*, or the corresponding text values of these enumerations.
+            The event type. For bindings, it can be \`Office.EventType.BindingDataChanged\` or
+            \`Office.EventType.BindingSelectionChanged\`.
           type:
             - EventType
         - id: handler
-          description: The event handler function to add.
+          description: >-
+            The event handler function to add, whose only parameter is of
+            type[Office.BindingDataChangedEventArgs](xref:office.Office.BindingDataChangedEventArgs) or
+            [Office.BindingSelectionChangedEventArgs](xref:office.Office.BindingSelectionChangedEventArgs)<!-- -->.
           type:
             - any
         - id: options
@@ -315,7 +320,9 @@ items:
         description: ''
       parameters:
         - id: eventType
-          description: The event type. For binding can be 'bindingDataChanged' and 'bindingSelectionChanged'
+          description: >-
+            The event type. For bindings, it can be \`Office.EventType.BindingDataChanged\` or
+            \`Office.EventType.BindingSelectionChanged\`.
           type:
             - EventType
         - id: options

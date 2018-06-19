@@ -1,7 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.MailboxEnums.WeekNumber
-    summary: Specifies the week of the month.
+    summary: |-
+      Specifies the week of the month.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: 'Applicable Outlook mode: Compose or read'
     isPreview: true
     name: Office.MailboxEnums.WeekNumber

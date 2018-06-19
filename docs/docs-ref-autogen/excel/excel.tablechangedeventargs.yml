@@ -126,6 +126,26 @@ items:
       return:
         type:
           - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      async function onChange(event) {
+          await Excel.run(async (context) => {
+              let table = context.workbook.tables.getItem(event.tableId);
+              let worksheet = context.workbook.worksheets.getItem(event.worksheetId);
+              worksheet.load("name");
+
+              await context.sync();
+
+              console.log("Handler for table collection onChanged event has been triggered.  Data changed address : " + event.address);
+              console.log("Table Id : " + event.tableId);
+              console.log("Worksheet Id : " + worksheet.name);
+          });
+      }
+      ```
   - uid: excel.Excel.TableChangedEventArgs.type
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
@@ -156,3 +176,23 @@ items:
       return:
         type:
           - string
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      async function onChange(event) {
+          await Excel.run(async (context) => {
+              let table = context.workbook.tables.getItem(event.tableId);
+              let worksheet = context.workbook.worksheets.getItem(event.worksheetId);
+              worksheet.load("name");
+
+              await context.sync();
+
+              console.log("Handler for table collection onChanged event has been triggered.  Data changed address : " + event.address);
+              console.log("Table Id : " + event.tableId);
+              console.log("Worksheet Id : " + worksheet.name);
+          });
+      }
+      ```

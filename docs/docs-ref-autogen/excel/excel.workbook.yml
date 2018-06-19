@@ -272,6 +272,37 @@ items:
       return:
         type:
           - Excel.DocumentProperties
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          let titleValue = "Excel document properties API";
+          let subjectValue = "Set and get document properties";
+          let keywordsValue = "Set and get operations";
+          let commentsValue = "This is an Excel document properties API code sample";
+          let categoryValue = "Office Add-ins";
+          let managerValue = "John";
+          let companyValue = "Microsoft";
+
+          let docProperties = context.workbook.properties;
+
+          // Set the writeable document properties.
+          docProperties.title = titleValue;
+          docProperties.subject = subjectValue;
+          docProperties.keywords = keywordsValue;
+          docProperties.comments = commentsValue;
+          docProperties.category = categoryValue;
+          docProperties.manager = managerValue;
+          docProperties.company = companyValue;
+
+          await context.sync();
+
+          OfficeHelpers.UI.notify("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
+      });
+      ```
   - uid: excel.Excel.Workbook.protection
     summary: |-
       Returns workbook protection object for a workbook.

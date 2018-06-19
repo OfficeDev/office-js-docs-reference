@@ -164,6 +164,26 @@ items:
         type:
           - Excel.Range
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          const frozenRange = sheet.freezePanes.getLocationOrNullObject();
+          frozenRange.load("address");
+
+          await context.sync();
+
+          if (frozenRange.isNullObject) {
+              OfficeHelpers.UI.notify(`The worksheet does not contain a frozen pane.`);
+          } else {
+              OfficeHelpers.UI.notify(`The address of the frozen range (cells that are frozen in the top-and-left-most pane) is "${frozenRange.address}"`);
+          }
+      });
+      ```
   - uid: excel.Excel.WorksheetFreezePanes.toJSON
     name: toJSON()
     fullName: excel.Excel.WorksheetFreezePanes.toJSON
@@ -195,3 +215,16 @@ items:
         type:
           - void
         description: ''
+    remarks: |
+
+
+      #### Examples
+
+      ```typescript
+      await Excel.run(async (context) => {
+          const sheet = context.workbook.worksheets.getItem("Sample");
+          sheet.freezePanes.unfreeze();
+
+          await context.sync();
+      });
+      ```

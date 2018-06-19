@@ -17,7 +17,9 @@ items:
       - office.Office.Auth
       - office.Office.AuthOptions
       - office.Office.Binding
+      - office.Office.BindingDataChangedEventArgs
       - office.Office.Bindings
+      - office.Office.BindingSelectionChangedEventArgs
       - office.Office.BindingType
       - office.Office.CoercionType
       - office.Office.Context
@@ -48,6 +50,9 @@ items:
       - office.Office.initialize
       - office.Office.IPromiseConstructor
       - office.Office.MatrixBinding
+      - office.Office.NodeDeletedEventArgs
+      - office.Office.NodeInsertedEventArgs
+      - office.Office.NodeReplacedEventArgs
       - office.Office.OfficeTheme
       - office.Office.onReady
       - office.Office.PlatformType
@@ -289,8 +294,12 @@ references:
     name: Office.AuthOptions
   - uid: office.Office.Binding
     name: Office.Binding
+  - uid: office.Office.BindingDataChangedEventArgs
+    name: Office.BindingDataChangedEventArgs
   - uid: office.Office.Bindings
     name: Office.Bindings
+  - uid: office.Office.BindingSelectionChangedEventArgs
+    name: Office.BindingSelectionChangedEventArgs
   - uid: office.Office.BindingType
     name: Office.BindingType
   - uid: office.Office.CoercionType
@@ -349,6 +358,12 @@ references:
     name: Office.IPromiseConstructor
   - uid: office.Office.MatrixBinding
     name: Office.MatrixBinding
+  - uid: office.Office.NodeDeletedEventArgs
+    name: Office.NodeDeletedEventArgs
+  - uid: office.Office.NodeInsertedEventArgs
+    name: Office.NodeInsertedEventArgs
+  - uid: office.Office.NodeReplacedEventArgs
+    name: Office.NodeReplacedEventArgs
   - uid: office.Office.OfficeTheme
     name: Office.OfficeTheme
   - uid: office.Office.PlatformType

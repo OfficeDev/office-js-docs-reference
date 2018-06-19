@@ -114,15 +114,16 @@ items:
       parameters:
         - id: eventType
           description: >-
-            Specifies the type of event to add. Required. For a CustomXmlPart object event, the eventType parameter can
-            be specified as \`Office.EventType.DataNodeDeleted\`, \`Office.EventType.DataNodeInserted\`,
-            \`Office.EventType.DataNodeReplaced\`, or the corresponding text values of these enumerations.
+            Specifies the type of event to add. For a CustomXmlPart object, the eventType parameter can be specified as
+            \`Office.EventType.NodeDeleted\`, \`Office.EventType.NodeInserted\`, and \`Office.EventType.NodeReplaced\`.
           type:
             - EventType
         - id: handler
           description: >-
-            The event handler function to add, whose only parameter is of type NodeDeletedEventArgs,
-            NodeInsertedEventArgs, or NodeReplaceEventArgs. Required.
+            The event handler function to add, whose only parameter is of
+            type[Office.NodeDeletedEventArgs](xref:office.Office.NodeDeletedEventArgs)<!-- -->,
+            [Office.NodeInsertedEventArgs](xref:office.Office.NodeInsertedEventArgs)<!-- -->, or
+            [Office.NodeReplacedEventArgs](xref:office.Office.NodeReplacedEventArgs)
           type:
             - '(result: any) => void'
         - id: options
@@ -396,13 +397,13 @@ items:
       parameters:
         - id: eventType
           description: >-
-            Specifies the type of event to remove. Required.For a CustomXmlPart object event, the eventType parameter
-            can be specified as \`Office.EventType.DataNodeDeleted\`, \`Office.EventType.DataNodeInserted\`,
-            \`Office.EventType.DataNodeReplaced\`, or the corresponding text values of these enumerations.
+            Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified
+            as \`Office.EventType.NodeDeleted\`, \`Office.EventType.NodeInserted\`, and
+            \`Office.EventType.NodeReplaced\`.
           type:
             - EventType
         - id: handler
-          description: ''
+          description: The name of the handler to remove.
           type:
             - '(result: any) => void'
         - id: options
