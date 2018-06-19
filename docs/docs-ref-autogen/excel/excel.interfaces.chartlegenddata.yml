@@ -1,0 +1,171 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartLegendData
+    summary: An interface describing the data returned by calling "chartLegend.toJSON()".
+    name: Excel.Interfaces.ChartLegendData
+    fullName: excel.Excel.Interfaces.ChartLegendData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartLegendData.format
+      - excel.Excel.Interfaces.ChartLegendData.height
+      - excel.Excel.Interfaces.ChartLegendData.left
+      - excel.Excel.Interfaces.ChartLegendData.legendEntries
+      - excel.Excel.Interfaces.ChartLegendData.overlay
+      - excel.Excel.Interfaces.ChartLegendData.position
+      - excel.Excel.Interfaces.ChartLegendData.showShadow
+      - excel.Excel.Interfaces.ChartLegendData.top
+      - excel.Excel.Interfaces.ChartLegendData.visible
+      - excel.Excel.Interfaces.ChartLegendData.width
+  - uid: excel.Excel.Interfaces.ChartLegendData.format
+    summary: |-
+      Represents the formatting of a chart legend, which includes fill and font formatting.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: excel.Excel.Interfaces.ChartLegendData.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartLegendFormatData;'
+      return:
+        type:
+          - Excel.Interfaces.ChartLegendFormatData
+  - uid: excel.Excel.Interfaces.ChartLegendData.height
+    summary: |-
+      Represents the height, in points, of the legend on the chart. Null if legend is not visible.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: excel.Excel.Interfaces.ChartLegendData.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartLegendData.left
+    summary: |-
+      Represents the left, in points, of a chart legend. Null if legend is not visible.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: excel.Excel.Interfaces.ChartLegendData.left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartLegendData.legendEntries
+    summary: |-
+      Represents a collection of legendEntries in the legend.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: legendEntries
+    fullName: excel.Excel.Interfaces.ChartLegendData.legendEntries
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'legendEntries?: Excel.Interfaces.ChartLegendEntryData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.ChartLegendEntryData[]'
+  - uid: excel.Excel.Interfaces.ChartLegendData.overlay
+    summary: |-
+      Boolean value for whether the chart legend should overlap with the main body of the chart.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: overlay
+    fullName: excel.Excel.Interfaces.ChartLegendData.overlay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlay?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLegendData.position
+    summary: |-
+      Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: excel.Excel.Interfaces.ChartLegendData.position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position?: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";'
+      return:
+        type:
+          - Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
+  - uid: excel.Excel.Interfaces.ChartLegendData.showShadow
+    summary: |-
+      Represents if the legend has a shadow on the chart.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showShadow
+    fullName: excel.Excel.Interfaces.ChartLegendData.showShadow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showShadow?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLegendData.top
+    summary: |-
+      Represents the top of a chart legend.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: excel.Excel.Interfaces.ChartLegendData.top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartLegendData.visible
+    summary: |-
+      A boolean value the represents the visibility of a ChartLegend object.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: excel.Excel.Interfaces.ChartLegendData.visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLegendData.width
+    summary: |-
+      Represents the width, in points, of the legend on the chart. Null if legend is not visible.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: excel.Excel.Interfaces.ChartLegendData.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number

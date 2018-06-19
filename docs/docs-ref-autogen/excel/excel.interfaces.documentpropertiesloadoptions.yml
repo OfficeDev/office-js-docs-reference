@@ -1,0 +1,190 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.DocumentPropertiesLoadOptions
+    summary: |-
+      Represents workbook properties.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.DocumentPropertiesLoadOptions
+    fullName: excel.Excel.Interfaces.DocumentPropertiesLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.DocumentPropertiesLoadOptions.author
+      - excel.Excel.Interfaces.DocumentPropertiesLoadOptions.category
+      - excel.Excel.Interfaces.DocumentPropertiesLoadOptions.comments
+      - excel.Excel.Interfaces.DocumentPropertiesLoadOptions.company
+      - excel.Excel.Interfaces.DocumentPropertiesLoadOptions.creationDate
+      - excel.Excel.Interfaces.DocumentPropertiesLoadOptions.keywords
+      - excel.Excel.Interfaces.DocumentPropertiesLoadOptions.lastAuthor
+      - excel.Excel.Interfaces.DocumentPropertiesLoadOptions.manager
+      - excel.Excel.Interfaces.DocumentPropertiesLoadOptions.revisionNumber
+      - excel.Excel.Interfaces.DocumentPropertiesLoadOptions.subject
+      - excel.Excel.Interfaces.DocumentPropertiesLoadOptions.title
+  - uid: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.author
+    summary: |-
+      Gets or sets the author of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: author
+    fullName: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.author
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'author?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.category
+    summary: |-
+      Gets or sets the category of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: category
+    fullName: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.category
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'category?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.comments
+    summary: |-
+      Gets or sets the comments of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: comments
+    fullName: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comments?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.company
+    summary: |-
+      Gets or sets the company of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: company
+    fullName: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.company
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'company?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.creationDate
+    summary: |-
+      Gets the creation date of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: creationDate
+    fullName: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'creationDate?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.keywords
+    summary: |-
+      Gets or sets the keywords of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: keywords
+    fullName: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.keywords
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'keywords?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.lastAuthor
+    summary: |-
+      Gets the last author of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: lastAuthor
+    fullName: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.lastAuthor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lastAuthor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.manager
+    summary: |-
+      Gets or sets the manager of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: manager
+    fullName: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.manager
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'manager?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.revisionNumber
+    summary: |-
+      Gets the revision number of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: revisionNumber
+    fullName: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.revisionNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'revisionNumber?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.subject
+    summary: |-
+      Gets or sets the subject of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: subject
+    fullName: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.subject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subject?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.title
+    summary: |-
+      Gets or sets the title of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: title
+    fullName: excel.Excel.Interfaces.DocumentPropertiesLoadOptions.title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: boolean;'
+      return:
+        type:
+          - boolean

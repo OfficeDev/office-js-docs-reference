@@ -1,0 +1,9 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.CollectionLoadOptions
+    name: OneNote.Interfaces.CollectionLoadOptions
+    fullName: onenote.OneNote.Interfaces.CollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: onenote

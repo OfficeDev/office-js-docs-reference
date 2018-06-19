@@ -1,0 +1,127 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartPointUpdateData
+    summary: 'An interface for updating data on the ChartPoint object, for use in "chartPoint.set({ ... })".'
+    name: Excel.Interfaces.ChartPointUpdateData
+    fullName: excel.Excel.Interfaces.ChartPointUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartPointUpdateData.dataLabel
+      - excel.Excel.Interfaces.ChartPointUpdateData.format
+      - excel.Excel.Interfaces.ChartPointUpdateData.hasDataLabel
+      - excel.Excel.Interfaces.ChartPointUpdateData.markerBackgroundColor
+      - excel.Excel.Interfaces.ChartPointUpdateData.markerForegroundColor
+      - excel.Excel.Interfaces.ChartPointUpdateData.markerSize
+      - excel.Excel.Interfaces.ChartPointUpdateData.markerStyle
+  - uid: excel.Excel.Interfaces.ChartPointUpdateData.dataLabel
+    summary: |-
+      Returns the data label of a chart point.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: dataLabel
+    fullName: excel.Excel.Interfaces.ChartPointUpdateData.dataLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataLabel?: Excel.Interfaces.ChartDataLabelUpdateData;'
+      return:
+        type:
+          - Excel.Interfaces.ChartDataLabelUpdateData
+  - uid: excel.Excel.Interfaces.ChartPointUpdateData.format
+    summary: |-
+      Encapsulates the format properties chart point.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: excel.Excel.Interfaces.ChartPointUpdateData.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartPointFormatUpdateData;'
+      return:
+        type:
+          - Excel.Interfaces.ChartPointFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartPointUpdateData.hasDataLabel
+    summary: |-
+      Represents whether a data point has datalabel. Not applicable for surface charts.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: hasDataLabel
+    fullName: excel.Excel.Interfaces.ChartPointUpdateData.hasDataLabel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasDataLabel?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartPointUpdateData.markerBackgroundColor
+    summary: |-
+      HTML color code representation of the marker background color of data point. E.g. \#FF0000 represents Red.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: markerBackgroundColor
+    fullName: excel.Excel.Interfaces.ChartPointUpdateData.markerBackgroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerBackgroundColor?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.ChartPointUpdateData.markerForegroundColor
+    summary: |-
+      HTML color code representation of the marker foreground color of data point. E.g. \#FF0000 represents Red.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: markerForegroundColor
+    fullName: excel.Excel.Interfaces.ChartPointUpdateData.markerForegroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerForegroundColor?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.ChartPointUpdateData.markerSize
+    summary: |-
+      Represents marker size of data point.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: markerSize
+    fullName: excel.Excel.Interfaces.ChartPointUpdateData.markerSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerSize?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartPointUpdateData.markerStyle
+    summary: |-
+      Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: markerStyle
+    fullName: excel.Excel.Interfaces.ChartPointUpdateData.markerStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        markerStyle?: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" |
+        "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
+      return:
+        type:
+          - >-
+            Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star"
+            | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"

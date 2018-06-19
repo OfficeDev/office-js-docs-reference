@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.FilterLoadOptions
+    summary: |-
+      Manages the filtering of a table's column.
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.FilterLoadOptions
+    fullName: excel.Excel.Interfaces.FilterLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.FilterLoadOptions.criteria
+  - uid: excel.Excel.Interfaces.FilterLoadOptions.criteria
+    summary: |-
+      The currently applied filter on the given column.
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: criteria
+    fullName: excel.Excel.Interfaces.FilterLoadOptions.criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria?: boolean;'
+      return:
+        type:
+          - boolean

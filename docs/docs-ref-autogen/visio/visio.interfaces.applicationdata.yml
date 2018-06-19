@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.ApplicationData
+    summary: An interface describing the data returned by calling "application.toJSON()".
+    name: Visio.Interfaces.ApplicationData
+    fullName: visio.Visio.Interfaces.ApplicationData
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.ApplicationData.showBorders
+      - visio.Visio.Interfaces.ApplicationData.showToolbars
+  - uid: visio.Visio.Interfaces.ApplicationData.showBorders
+    summary: |-
+      Show/Hide the application borders.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: showBorders
+    fullName: visio.Visio.Interfaces.ApplicationData.showBorders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBorders?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.ApplicationData.showToolbars
+    summary: |-
+      Show or Hide the standard toolbars.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: showToolbars
+    fullName: visio.Visio.Interfaces.ApplicationData.showToolbars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showToolbars?: boolean;'
+      return:
+        type:
+          - boolean

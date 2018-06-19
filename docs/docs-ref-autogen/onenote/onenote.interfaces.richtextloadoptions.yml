@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.RichTextLoadOptions
+    summary: |-
+      Represents a RichText object in a Paragraph.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.RichTextLoadOptions
+    fullName: onenote.OneNote.Interfaces.RichTextLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.RichTextLoadOptions.id
+      - onenote.OneNote.Interfaces.RichTextLoadOptions.languageId
+      - onenote.OneNote.Interfaces.RichTextLoadOptions.paragraph
+      - onenote.OneNote.Interfaces.RichTextLoadOptions.text
+  - uid: onenote.OneNote.Interfaces.RichTextLoadOptions.id
+    summary: |-
+      Gets the ID of the RichText object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: onenote.OneNote.Interfaces.RichTextLoadOptions.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.RichTextLoadOptions.languageId
+    summary: |-
+      The language id of the text. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: languageId
+    fullName: onenote.OneNote.Interfaces.RichTextLoadOptions.languageId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'languageId?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.RichTextLoadOptions.paragraph
+    summary: |-
+      Gets the Paragraph object that contains the RichText object.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: paragraph
+    fullName: onenote.OneNote.Interfaces.RichTextLoadOptions.paragraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
+      return:
+        type:
+          - OneNote.Interfaces.ParagraphLoadOptions
+  - uid: onenote.OneNote.Interfaces.RichTextLoadOptions.text
+    summary: |-
+      Gets the text content of the RichText object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: text
+    fullName: onenote.OneNote.Interfaces.RichTextLoadOptions.text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type:
+          - boolean

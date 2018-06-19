@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartTrendlineFormatData
+    summary: An interface describing the data returned by calling "chartTrendlineFormat.toJSON()".
+    name: Excel.Interfaces.ChartTrendlineFormatData
+    fullName: excel.Excel.Interfaces.ChartTrendlineFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartTrendlineFormatData.line
+  - uid: excel.Excel.Interfaces.ChartTrendlineFormatData.line
+    summary: |-
+      Represents chart line formatting.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: line
+    fullName: excel.Excel.Interfaces.ChartTrendlineFormatData.line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'line?: Excel.Interfaces.ChartLineFormatData;'
+      return:
+        type:
+          - Excel.Interfaces.ChartLineFormatData

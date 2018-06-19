@@ -1,0 +1,107 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.InlinePictureUpdateData
+    summary: 'An interface for updating data on the InlinePicture object, for use in "inlinePicture.set({ ... })".'
+    name: Word.Interfaces.InlinePictureUpdateData
+    fullName: word.Word.Interfaces.InlinePictureUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.InlinePictureUpdateData.altTextDescription
+      - word.Word.Interfaces.InlinePictureUpdateData.altTextTitle
+      - word.Word.Interfaces.InlinePictureUpdateData.height
+      - word.Word.Interfaces.InlinePictureUpdateData.hyperlink
+      - word.Word.Interfaces.InlinePictureUpdateData.lockAspectRatio
+      - word.Word.Interfaces.InlinePictureUpdateData.width
+  - uid: word.Word.Interfaces.InlinePictureUpdateData.altTextDescription
+    summary: |-
+      Gets or sets a string that represents the alternative text associated with the inline image
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: altTextDescription
+    fullName: word.Word.Interfaces.InlinePictureUpdateData.altTextDescription
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextDescription?: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.Interfaces.InlinePictureUpdateData.altTextTitle
+    summary: |-
+      Gets or sets a string that contains the title for the inline image.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: altTextTitle
+    fullName: word.Word.Interfaces.InlinePictureUpdateData.altTextTitle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextTitle?: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.Interfaces.InlinePictureUpdateData.height
+    summary: |-
+      Gets or sets a number that describes the height of the inline image.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: height
+    fullName: word.Word.Interfaces.InlinePictureUpdateData.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: word.Word.Interfaces.InlinePictureUpdateData.hyperlink
+    summary: |-
+      Gets or sets a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: hyperlink
+    fullName: word.Word.Interfaces.InlinePictureUpdateData.hyperlink
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hyperlink?: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.Interfaces.InlinePictureUpdateData.lockAspectRatio
+    summary: |-
+      Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: lockAspectRatio
+    fullName: word.Word.Interfaces.InlinePictureUpdateData.lockAspectRatio
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lockAspectRatio?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.InlinePictureUpdateData.width
+    summary: |-
+      Gets or sets a number that describes the width of the inline image.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: width
+    fullName: word.Word.Interfaces.InlinePictureUpdateData.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number

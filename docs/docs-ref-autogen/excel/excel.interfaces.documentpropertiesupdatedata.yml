@@ -1,0 +1,155 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.DocumentPropertiesUpdateData
+    summary: 'An interface for updating data on the DocumentProperties object, for use in "documentProperties.set({ ... })".'
+    name: Excel.Interfaces.DocumentPropertiesUpdateData
+    fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.DocumentPropertiesUpdateData.author
+      - excel.Excel.Interfaces.DocumentPropertiesUpdateData.category
+      - excel.Excel.Interfaces.DocumentPropertiesUpdateData.comments
+      - excel.Excel.Interfaces.DocumentPropertiesUpdateData.company
+      - excel.Excel.Interfaces.DocumentPropertiesUpdateData.keywords
+      - excel.Excel.Interfaces.DocumentPropertiesUpdateData.manager
+      - excel.Excel.Interfaces.DocumentPropertiesUpdateData.revisionNumber
+      - excel.Excel.Interfaces.DocumentPropertiesUpdateData.subject
+      - excel.Excel.Interfaces.DocumentPropertiesUpdateData.title
+  - uid: excel.Excel.Interfaces.DocumentPropertiesUpdateData.author
+    summary: |-
+      Gets or sets the author of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: author
+    fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.author
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'author?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.DocumentPropertiesUpdateData.category
+    summary: |-
+      Gets or sets the category of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: category
+    fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.category
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'category?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.DocumentPropertiesUpdateData.comments
+    summary: |-
+      Gets or sets the comments of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: comments
+    fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comments?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.DocumentPropertiesUpdateData.company
+    summary: |-
+      Gets or sets the company of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: company
+    fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.company
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'company?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.DocumentPropertiesUpdateData.keywords
+    summary: |-
+      Gets or sets the keywords of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: keywords
+    fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.keywords
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'keywords?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.DocumentPropertiesUpdateData.manager
+    summary: |-
+      Gets or sets the manager of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: manager
+    fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.manager
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'manager?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.DocumentPropertiesUpdateData.revisionNumber
+    summary: |-
+      Gets the revision number of the workbook. Read only.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: revisionNumber
+    fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.revisionNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'revisionNumber?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.DocumentPropertiesUpdateData.subject
+    summary: |-
+      Gets or sets the subject of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: subject
+    fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.subject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subject?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.DocumentPropertiesUpdateData.title
+    summary: |-
+      Gets or sets the title of the workbook.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: title
+    fullName: excel.Excel.Interfaces.DocumentPropertiesUpdateData.title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: string;'
+      return:
+        type:
+          - string
