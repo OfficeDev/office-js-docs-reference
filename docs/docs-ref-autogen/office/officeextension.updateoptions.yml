@@ -1,6 +1,9 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.OfficeExtension.UpdateOptions
+    summary: >-
+      Provides an option for suppressing an error when the object that is used to set multiple properties tries to set
+      read-only properties.
     name: OfficeExtension.UpdateOptions
     fullName: office.OfficeExtension.UpdateOptions
     langs:
