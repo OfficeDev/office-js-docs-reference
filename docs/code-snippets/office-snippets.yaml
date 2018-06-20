@@ -124,7 +124,7 @@ Office.Binding.addHandlerAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Binding.BindingSelectionChangedEventArgs.columnCount:
+Office.BindingSelectionChangedEventArgs.columnCount:
   - |-
     // The following example adds an event handler for the SelectionChanged event to the binding with an id of myTable.
     // When the user changes the selection, the handler displays the coordinates of the first cell in the selection,
@@ -145,7 +145,7 @@ Office.Binding.BindingSelectionChangedEventArgs.columnCount:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Binding.BindingSelectionChangedEventArgs.rowCount:
+Office.BindingSelectionChangedEventArgs.rowCount:
   - |-
     // The following example adds an event handler for the SelectionChanged event to the binding with an id of myTable.
     // When the user changes the selection, the handler displays the coordinates of the first cell in the selection,
@@ -166,7 +166,7 @@ Office.Binding.BindingSelectionChangedEventArgs.rowCount:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Binding.BindingSelectionChangedEventArgs.startColumn:
+Office.BindingSelectionChangedEventArgs.startColumn:
   - |-
     // The following example adds an event handler for the SelectionChanged event to the binding with an id of myTable.
     // When the user changes the selection, the handler displays the coordinates of the first cell in the selection,
@@ -187,7 +187,7 @@ Office.Binding.BindingSelectionChangedEventArgs.startColumn:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Binding.BindingSelectionChangedEventArgs.startRow:
+Office.BindingSelectionChangedEventArgs.startRow:
   - |-
     // The following example adds an event handler for the SelectionChanged event to the binding with an id of myTable.
     // When the user changes the selection, the handler displays the coordinates of the first cell in the selection,
