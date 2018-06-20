@@ -1,7 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: outlook.Office.MailboxEnums.Month
-    summary: Specifies the month.
+    summary: |-
+      Specifies the month.
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: 'Applicable Outlook mode: Compose or read'
     isPreview: true
     name: Office.MailboxEnums.Month

@@ -5,6 +5,9 @@ items:
       The recurrence object provides methods to get and set the recurrence pattern of appointments but only get the
       recurrence pattern of meeting requests. It will have a dictionary with the following keys: seriesTime,
       recurrenceType, recurrenceProperties, and recurrenceTimeZone (optional).
+
+
+      \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       &lt;table&gt; &lt;tr&gt; &lt;th&gt;State&lt;/th&gt; &lt;th&gt;Editable?&lt;/th&gt; &lt;th&gt;Viewable?&lt;/th&gt;
       &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment Organizer - Compose Series&lt;/td&gt; &lt;td&gt;Yes
