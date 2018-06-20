@@ -28,6 +28,39 @@ items:
           document.getElementById('message').innerText += message; 
       }
       ```
+
+      ```javascript
+      // The following example initializes the add-in and then gets properties of the
+      // Document object that are available in the context of a Project document.
+      // A Project document is the opened, active project. To access members of the
+      // ProjectDocument object, use the Office.context.document object as shown in
+      // the code examples for ProjectDocument methods and events.
+      // The example assumes your add-in has a reference to the jQuery library and
+      // that the following page control is defined in the content div in the page body:
+      <span id="message"></span>
+
+      (function () {
+          "use strict";
+
+          // The initialize function must be run each time a new page is loaded.
+          Office.initialize = function (reason) {
+              $(document).ready(function () {
+
+                  // Get information about the document.
+                  showDocumentProperties();
+              });
+          };
+
+          // Get the document mode and the URL of the active project.
+          function showDocumentProperties() {
+              var output = String.format(
+                  'The document mode is {0}.<br/>The URL of the active project is {1}.',
+                  Office.context.document.mode,
+                  Office.context.document.url);
+              $('#message').html(output);
+          }
+      })();
+      ```
     name: Office.Document
     fullName: office.Office.Document
     langs:
@@ -90,6 +123,103 @@ items:
       function write(message){
           document.getElementById('message').innerText += message; 
       }
+
+      ```
+
+
+      ```javascript
+
+      // The following code example uses addHandlerAsync to add an event handler for the ViewSelectionChanged event.
+
+      // When the active view changes, the handler checks the view type. It enables a button if the view is a resource
+
+      // view and disables the button if it isn't a resource view. Choosing the button gets the GUID of the selected
+
+      // resource and displays it in the add-in.
+
+      // The example assumes that your add-in has a reference to the jQuery library and that the following page controls
+
+      // are defined in the content div in the page body.
+
+      <input id="get-info" type="button" value="Get info" disabled="disabled" /><br />
+
+      <span id="message"></span>
+
+
+      (function () {
+          "use strict";
+
+          // The initialize function must be run each time a new page is loaded.
+          Office.initialize = function (reason) {
+              $(document).ready(function () {
+
+                  // After the DOM is loaded, add-in-specific code can run.
+                  // Add a ViewSelectionChanged event handler.
+                  Office.context.document.addHandlerAsync(
+                      Office.EventType.ViewSelectionChanged,
+                      getActiveView);
+                  $('#get-info').click(getResourceGuid);
+
+                  // This example calls the handler on page load to get the active view
+                  // of the default page.
+                  getActiveView();
+              });
+          };
+
+          // Activate the button based on the active view type of the document.
+          // This is the ViewSelectionChanged event handler.
+          function getActiveView() {
+              Office.context.document.getSelectedViewAsync(
+                  function (result) {
+                      if (result.status === Office.AsyncResultStatus.Failed) {
+                          onError(result.error);
+                      }
+                      else {
+                          var viewType = result.value.viewType;
+                          if (viewType == 6 ||   // ResourceForm
+                              viewType == 7 ||   // ResourceSheet
+                              viewType == 8 ||   // ResourceGraph
+                              viewType == 15) {  // ResourceUsage
+                              $('#get-info').removeAttr('disabled');
+                          }
+                          else {
+                              $('#get-info').attr('disabled', 'disabled');
+                          }
+                          var output = String.format(
+                              'View name: {0}<br/>View type: {1}',
+                              result.value.viewName, viewType);
+                          $('#message').html(output);
+                      }
+                  }
+              );
+          }
+
+          // Get the GUID of the currently selected resource and display it in the add-in.
+          function getResourceGuid() {
+              Office.context.document.getSelectedResourceAsync(
+                  function (result) {
+                      if (result.status === Office.AsyncResultStatus.Failed) {
+                          onError(result.error);
+                      }
+                      else {
+                          $('#message').html('Resource GUID: ' + result.value);
+                      }
+                  }
+              );
+          }
+
+          function onError(error) {
+              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+          }
+      })();
+
+
+      // For a complete code sample that shows how to use a TaskSelectionChanged event handler in a Project add-in,
+
+      // see "Create your first task pane add-in for Project by using a text editor."
+
+      //
+      https://docs.microsoft.com/en-us/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 
       ```
     name: 'addHandlerAsync(eventType, handler, options, callback)'
@@ -487,6 +617,85 @@ items:
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
+    remarks: >
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following code example gets the values of three specified fields for the active project, and then displays
+
+      // the values in the add-in.
+
+      // The example calls getProjectFieldAsync recursively, after the previous call returns successfully. It also
+      tracks
+
+      // the calls to determine when all calls are sent.
+
+      // The example assumes your add-in has a reference to the jQuery library and that the following page control is
+      defined
+
+      // in the content div in the page body.
+
+      <span id="message"></span>
+
+
+      (function () {
+          "use strict";
+
+          // The initialize function must be run each time a new page is loaded.
+          Office.initialize = function (reason) {
+              $(document).ready(function () {
+
+                  // Get information for the active project.
+                  getProjectInformation();
+              });
+          };
+
+          // Get the specified fields for the active project.
+          function getProjectInformation() {
+              var fields =
+                  [Office.ProjectProjectFields.Start, Office.ProjectProjectFields.Finish, Office.ProjectProjectFields.GUID];
+              var fieldValues = ['Start: ', 'Finish: ', 'GUID: '];
+              var index = 0; 
+              getField();
+
+              // Get each field, and then display the field values in the add-in.
+              function getField() {
+                  if (index == fields.length) {
+                      var output = '';
+                      for (var i = 0; i < fieldValues.length; i++) {
+                          output += fieldValues[i] + '<br />';
+                      }
+                      $('#message').html(output);
+                  }
+                  else {
+                      Office.context.document.getProjectFieldAsync(
+                          fields[index],
+                          function (result) {
+
+                              // If the call is successful, get the field value and then get the next field.
+                              if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                  fieldValues[index] += result.value.fieldValue;
+                                  getField(index++);
+                              }
+                              else {
+                                  onError(result.error);
+                              }
+                          }
+                      );
+                  }
+              }
+          }
+
+          function onError(error) {
+              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+          }
+      })();
+
+      ```
   - uid: office.Office.Document.getResourceFieldAsync
     summary: Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
     name: 'getResourceFieldAsync(resourceId, fieldId, options, callback)'
@@ -519,6 +728,108 @@ items:
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
+    remarks: >
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's currently
+      selected
+
+      // in a resource view. Then it gets three resource field values by calling getResourceFieldAsync recursively.
+
+      // The example assumes your add-in has a reference to the jQuery library and that the following page controls are
+
+      // defined in the content div in the page body.
+
+      <input id="get-info" type="button" value="Get info" /><br />
+
+      <span id="message"></span>
+
+
+      (function () {
+          "use strict";
+
+          // The initialize function must be run each time a new page is loaded.
+          Office.initialize = function (reason) {
+              $(document).ready(function () {
+
+                  // After the DOM is loaded, add-in-specific code can run.
+                  $('#get-info').click(getResourceInfo);
+              });
+          };
+
+          // Get the GUID of the resource and then get the resource fields.
+          function getResourceInfo() {
+              getResourceGuid().then(
+                  function (data) {
+                      getResourceFields(data);
+                  }
+              );
+          }
+
+          // Get the GUID of the selected resource.
+          function getResourceGuid() {
+              var defer = $.Deferred();
+              Office.context.document.getSelectedResourceAsync(
+                  function (result) {
+                      if (result.status === Office.AsyncResultStatus.Failed) {
+                          onError(result.error);
+                      }
+                      else {
+                          defer.resolve(result.value);
+                      }
+                  }
+              );
+              return defer.promise();
+          }
+
+          // Get the specified fields for the selected resource.
+          function getResourceFields(resourceGuid) {
+              var targetFields =
+                  [Office.ProjectResourceFields.Name, Office.ProjectResourceFields.Units, Office.ProjectResourceFields.BaseCalendar];
+              var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
+              var index = 0; 
+              getField();
+
+              // Get each field, and then display the field values in the add-in.
+              function getField() {
+                  if (index == targetFields.length) {
+                      var output = '';
+                      for (var i = 0; i < fieldValues.length; i++) {
+                          output += fieldValues[i] + '<br />';
+                      }
+                      $('#message').html(output);
+                  }
+
+                  // If the call is successful, get the field value and then get the next field.
+                  else {
+                      Office.context.document.getResourceFieldAsync(
+                          resourceGuid,
+                          targetFields[index],
+                          function (result) {
+                              if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                  fieldValues[index] += result.value.fieldValue;
+                                  getField(index++);
+                              }
+                              else {
+                                  onError(result.error);
+                              }
+                          }
+                      );
+                  }
+              }
+          }
+
+          function onError(error) {
+              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+          }
+      })();
+
+      ```
   - uid: office.Office.Document.getSelectedDataAsync
     summary: Reads the data contained in the current selection in the document.
     remarks: >
@@ -590,6 +901,60 @@ items:
       }
 
       ```
+
+
+      ```javascript
+
+      // The following code example gets the values of the selected cells. It uses the optional
+
+      // asyncContext parameter to pass some text to the callback function.
+
+      // The example assumes your add-in has a reference to the jQuery library and that the
+
+      // following page controls are defined in the content div in the page body.
+
+      <input id="get-info" type="button" value="Get info" /><br />
+
+      <span id="message"></span>
+
+
+      (function () {
+          "use strict";
+
+          // The initialize function must be run each time a new page is loaded.
+          Office.initialize = function (reason) {
+              $(document).ready(function () {
+
+                  // After the DOM is loaded, add-in-specific code can run.
+                  $('#get-info').click(getSelectedText);
+              });
+          };
+
+          // Get the text from the selected cells in the document, and display it in the add-in.
+          function getSelectedText() {
+              Office.context.document.getSelectedDataAsync(
+                  Office.CoercionType.Text,
+                  {asyncContext: 'Some related info'},
+                  function (result) {
+                      if (result.status === Office.AsyncResultStatus.Failed) {
+                          onError(result.error);
+                      }
+                      else {
+                          var output = String.format(
+                              'Selected text: {0}<br/>Passed info: {1}',
+                              result.value, result.asyncContext);
+                          $('#message').html(output);
+                      }
+                  }
+              );
+          }
+
+          function onError(error) {
+              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+          }
+      })();
+
+      ```
     name: 'getSelectedDataAsync(coercionType, options, callback)'
     fullName: office.Office.Document.getSelectedDataAsync
     langs:
@@ -638,6 +1003,108 @@ items:
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
+    remarks: >
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's currently
+      selected
+
+      // in a resource view. Then it gets three resource field values by calling getResourceFieldAsync recursively.
+
+      // The example assumes your add-in has a reference to the jQuery library and that the following page controls are
+
+      // defined in the content div in the page body.
+
+      <input id="get-info" type="button" value="Get info" /><br />
+
+      <span id="message"></span>
+
+
+      (function () {
+          "use strict";
+
+          // The initialize function must be run each time a new page is loaded.
+          Office.initialize = function (reason) {
+              $(document).ready(function () {
+
+                  // After the DOM is loaded, add-in-specific code can run.
+                  $('#get-info').click(getResourceInfo);
+              });
+          };
+
+          // Get the GUID of the resource and then get the resource fields.
+          function getResourceInfo() {
+              getResourceGuid().then(
+                  function (data) {
+                      getResourceFields(data);
+                  }
+              );
+          }
+
+          // Get the GUID of the selected resource.
+          function getResourceGuid() {
+              var defer = $.Deferred();
+              Office.context.document.getSelectedResourceAsync(
+                  function (result) {
+                      if (result.status === Office.AsyncResultStatus.Failed) {
+                          onError(result.error);
+                      }
+                      else {
+                          defer.resolve(result.value);
+                      }
+                  }
+              );
+              return defer.promise();
+          }
+
+          // Get the specified fields for the selected resource.
+          function getResourceFields(resourceGuid) {
+              var targetFields =
+                  [Office.ProjectResourceFields.Name, Office.ProjectResourceFields.Units, Office.ProjectResourceFields.BaseCalendar];
+              var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
+              var index = 0; 
+              getField();
+
+              // Get each field, and then display the field values in the add-in.
+              function getField() {
+                  if (index == targetFields.length) {
+                      var output = '';
+                      for (var i = 0; i < fieldValues.length; i++) {
+                          output += fieldValues[i] + '<br />';
+                      }
+                      $('#message').html(output);
+                  }
+
+                  // If the call is successful, get the field value and then get the next field.
+                  else {
+                      Office.context.document.getResourceFieldAsync(
+                          resourceGuid,
+                          targetFields[index],
+                          function (result) {
+                              if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                  fieldValues[index] += result.value.fieldValue;
+                                  getField(index++);
+                              }
+                              else {
+                                  onError(result.error);
+                              }
+                          }
+                      );
+                  }
+              }
+          }
+
+          function onError(error) {
+              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+          }
+      })();
+
+      ```
   - uid: office.Office.Document.getSelectedTaskAsync
     summary: Project documents only. Get the current selected Task's Id.
     name: 'getSelectedTaskAsync(options, callback)'
@@ -660,6 +1127,80 @@ items:
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
+      // selected in a task view. Then it gets task properties by calling getTaskAsync.
+      // The example assumes your add-in has a reference to the jQuery library and that the following page
+      // controls are defined in the content div in the page body.
+      <input id="get-info" type="button" value="Get info" /><br />
+      <span id="message"></span>
+
+      (function () {
+          "use strict";
+
+          // The initialize function must be run each time a new page is loaded.
+          Office.initialize = function (reason) {
+              $(document).ready(function () {
+
+                  // After the DOM is loaded, add-in-specific code can run.
+                  $('#get-info').click(getTaskInfo);
+              });
+          };
+
+          // // Get the GUID of the task, and then get local task properties.
+          function getTaskInfo() {
+              getTaskGuid().then(
+                  function (data) {
+                      getTaskProperties(data);
+                  }
+              );
+          }
+
+          // Get the GUID of the selected task.
+          function getTaskGuid() {
+              var defer = $.Deferred();
+              Office.context.document.getSelectedTaskAsync(
+                  function (result) {
+                      if (result.status === Office.AsyncResultStatus.Failed) {
+                          onError(result.error);
+                      }
+                      else {
+                          defer.resolve(result.value);
+                      }
+                  }
+              );
+              return defer.promise();
+          }
+
+          // Get local properties for the selected task, and then display it in the add-in.
+          function getTaskProperties(taskGuid) {
+              Office.context.document.getTaskAsync(
+                  taskGuid,
+                  function (result) {
+                      if (result.status === Office.AsyncResultStatus.Failed) {
+                          onError(result.error);
+                      }
+                      else {
+                          var taskInfo = result.value;
+                          var output = String.format(
+                              'Name: {0}<br/>GUID: {1}<br/>SharePoint task ID: {2}<br/>Resource names: {3}',
+                              taskInfo.taskName, taskGuid, taskInfo.wssTaskId, taskInfo.resourceNames);
+                          $('#message').html(output);
+                      }
+                  }
+              );
+          }
+
+          function onError(error) {
+              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+          }
+      })();
+      ```
   - uid: office.Office.Document.getSelectedViewAsync
     summary: Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
     name: 'getSelectedViewAsync(options, callback)'
@@ -682,6 +1223,55 @@ items:
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // The following code example calls adds a ViewSelectionChanged event handler that
+      // calls getSelectedViewAsync to get the name and type of the active view in the document.
+      // The example assumes your add-in has a reference to the jQuery library and that
+      // the following page control is defined in the content div in the page body.
+      <span id="message"></span>
+
+      (function () {
+          "use strict";
+
+          // The initialize function must be run each time a new page is loaded.
+          Office.initialize = function (reason) {
+              $(document).ready(function () {
+
+                  // After the DOM is loaded, add-in-specific code can run.
+                  Office.context.document.addHandlerAsync(
+                      Office.EventType.ViewSelectionChanged,
+                      getActiveView);
+                  getActiveView();
+              });
+          };
+
+          // Get the active view's name and type.
+          function getActiveView() {
+              Office.context.document.getSelectedViewAsync(
+                  function (result) {
+                      if (result.status === Office.AsyncResultStatus.Failed) {
+                          onError(result.error);
+                      }
+                      else {
+                          var output = String.format(
+                              'View name: {0}<br/>View type: {1}',
+                              result.value.viewName, viewType);
+                          $('#message').html(output);
+                      }
+                  }
+              );
+          }
+
+          function onError(error) {
+              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+          }
+      })();
+      ```
   - uid: office.Office.Document.getTaskAsync
     summary: 'Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.'
     name: 'getTaskAsync(taskId, options, callback)'
@@ -708,6 +1298,81 @@ items:
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // The following code example calls getSelectedTaskAsync to get the task GUID of the currently
+      // selected task. Then it calls getTaskAsync to get the properties for the task that are
+      // available from the JavaScript API for Office.
+      // The example assumes your add-in has a reference to the jQuery library and that the
+      // following page controls are defined in the content div in the page body.
+      <input id="get-info" type="button" value="Get info" /><br />
+      <span id="message"></span>
+
+      (function () {
+          "use strict";
+
+          // The initialize function must be run each time a new page is loaded.
+          Office.initialize = function (reason) {
+              $(document).ready(function () {
+
+                  // After the DOM is loaded, add-in-specific code can run.
+                  $('#get-info').click(getTaskInfo);
+              });
+          };
+
+          // Get the GUID of the task, and then get local task properties.
+          function getTaskInfo() {
+              getTaskGuid().then(
+                  function (data) {
+                      getTaskProperties(data);
+                  }
+              );
+          }
+
+          // Get the GUID of the selected task.
+          function getTaskGuid() {
+              var defer = $.Deferred();
+              Office.context.document.getSelectedTaskAsync(
+                  function (result) {
+                      if (result.status === Office.AsyncResultStatus.Failed) {
+                          onError(result.error);
+                      }
+                      else {
+                          defer.resolve(result.value);
+                      }
+                  }
+              );
+              return defer.promise();
+          }
+
+          // Get local properties for the selected task, and then display it in the add-in.
+          function getTaskProperties(taskGuid) {
+              Office.context.document.getTaskAsync(
+                  taskGuid,
+                  function (result) {
+                      if (result.status === Office.AsyncResultStatus.Failed) {
+                          onError(result.error);
+                      }
+                      else {
+                          var taskInfo = result.value;
+                          var output = String.format(
+                              'Name: {0}<br/>GUID: {1}<br/>SharePoint task ID: {2}<br/>Resource names: {3}',
+                              taskInfo.taskName, taskGuid, taskInfo.wssTaskId, taskInfo.resourceNames);
+                          $('#message').html(output);
+                      }
+                  }
+              );
+          }
+
+          function onError(error) {
+              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+          }
+      })();
+      ```
   - uid: office.Office.Document.getTaskFieldAsync
     summary: Project documents only. Get task field for provided task Id. (Ex. StartDate).
     name: 'getTaskFieldAsync(taskId, fieldId, options, callback)'
@@ -740,6 +1405,97 @@ items:
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
+      // selected in a task view. Then it gets two task field values by calling getTaskFieldAsync recursively.
+      // The example assumes your add-in has a reference to the jQuery library and that the following page
+      // controls are defined in the content div in the page body.
+      <input id="get-info" type="button" value="Get info" /><br />
+      <span id="message"></span>
+
+      (function () {
+          "use strict";
+
+          // The initialize function must be run each time a new page is loaded.
+          Office.initialize = function (reason) {
+              $(document).ready(function () {
+                  
+                  // After the DOM is loaded, add-in-specific code can run.
+                  $('#get-info').click(getTaskInfo);
+              });
+          };
+
+          // Get the GUID of the task, and then get the task fields.
+          function getTaskInfo() {
+              getTaskGuid().then(
+                  function (data) {
+                      getTaskFields(data);
+                  }
+              );
+          }
+
+          // Get the GUID of the selected task.
+          function getTaskGuid() {
+              var defer = $.Deferred();
+              Office.context.document.getSelectedTaskAsync(
+                  function (result) {
+                      if (result.status === Office.AsyncResultStatus.Failed) {
+                          onError(result.error);
+                      }
+                      else {
+                          defer.resolve(result.value);
+                      }
+                  }
+              );
+              return defer.promise();
+          }
+
+          // Get the specified fields for the selected task.
+          function getTaskFields(taskGuid) {
+              var output = '';
+              var targetFields = [Office.ProjectTaskFields.Priority, Office.ProjectTaskFields.PercentComplete];
+              var fieldValues = ['Priority: ', '% Complete: '];
+              var index = 0;
+              getField();
+
+              // Get each field, and then display the field values in the add-in.
+              function getField() {
+                  if (index == targetFields.length) {
+                      for (var i = 0; i < fieldValues.length; i++) {
+                          output += fieldValues[i] + '<br />';
+                      }
+                      $('#message').html(output);
+                  }
+
+                  // Get the field value. If the call is successful, then get the next field.
+                  else {
+                      Office.context.document.getTaskFieldAsync(
+                          taskGuid,
+                          targetFields[index],
+                          function (result) {
+                              if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                  fieldValues[index] += result.value.fieldValue;
+                                  getField(index++);
+                              }
+                              else {
+                                  onError(result.error);
+                              }
+                          }
+                      );
+                  }
+              }
+          }
+
+          function onError(error) {
+              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+          }
+      })();
+      ```
   - uid: office.Office.Document.getWSSUrlAsync
     summary: 'Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.'
     name: 'getWSSUrlAsync(options, callback)'
@@ -993,6 +1749,69 @@ items:
       function removeSelectionChangedEventHandler() {
           Office.context.document.removeHandlerAsync(Office.EventType.DocumentSelectionChanged, {handler:MyHandler});
       }
+      ```
+
+      ```javascript
+      // The following code example uses addHandlerAsync to add an event handler for the
+      // ResourceSelectionChanged event and removeHandlerAsync to remove the handler.
+      // When a resource is selected in a resource view, the handler displays the
+      // resource GUID. When the handler is removed, the GUID is not displayed.
+      // The example assumes that your add-in has a reference to the jQuery library and
+      // that the following page control is defined in the content div in the page body.
+      <input id="remove-handler" type="button" value="Remove handler" /><br />
+      <span id="message"></span>
+
+      (function () {
+          "use strict";
+
+          // The initialize function must be run each time a new page is loaded.
+          Office.initialize = function (reason) {
+              $(document).ready(function () {
+
+                  // After the DOM is loaded, add-in-specific code can run.
+                  Office.context.document.addHandlerAsync(
+                      Office.EventType.ResourceSelectionChanged,
+                      getResourceGuid);
+                  $('#remove-handler').click(removeEventHandler);
+              });
+          };
+
+          // Remove the event handler.
+          function removeEventHandler() {
+              Office.context.document.removeHandlerAsync(
+                  Office.EventType.ResourceSelectionChanged,
+                  {handler:getResourceGuid,
+                  asyncContext:'The handler is removed.'},
+                  function (result) {
+                      if (result.status === Office.AsyncResultStatus.Failed) {
+                          onError(result.error);
+                      }
+                      else {
+                          $('#remove-handler').attr('disabled', 'disabled');
+                          $('#message').html(result.asyncContext);
+                      }
+                  }
+              );
+          }
+
+          // Get the GUID of the currently selected resource and display it in the add-in.
+          function getResourceGuid() {
+              Office.context.document.getSelectedResourceAsync(
+                  function (result) {
+                      if (result.status === Office.AsyncResultStatus.Failed) {
+                          onError(result.error);
+                      }
+                      else {
+                          $('#message').html('Resource GUID: ' + result.value);
+                      }
+                  }
+              );
+          }
+
+          function onError(error) {
+              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+          }
+      })();
       ```
     name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: office.Office.Document.removeHandlerAsync
