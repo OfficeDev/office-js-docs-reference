@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.OfficeExtension.DebugInfo
+    summary: Provides information about an error.
     name: OfficeExtension.DebugInfo
     fullName: office.OfficeExtension.DebugInfo
     langs:

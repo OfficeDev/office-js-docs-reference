@@ -18861,14 +18861,28 @@
               "parameters": {
                 "object": {
                   "name": "object",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "The object whose properties are loaded."
+                    }
+                  ],
                   "isOptional": false,
                   "isSpread": false,
                   "type": "ClientObject"
                 },
                 "option": {
                   "name": "option",
-                  "description": [],
+                  "description": [
+                    {
+                      "kind": "text",
+                      "text": "A comma-delimited string, or array of strings, that specifies the properties/relationships to load, or an"
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object."
+                    }
+                  ],
                   "isOptional": true,
                   "isSpread": false,
                   "type": "string | string[] | LoadOption"
@@ -19107,7 +19121,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Provides information about an error."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
@@ -20112,8 +20131,60 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
-          "remarks": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Specifies which properties of an object should be loaded. This load happens when the sync() method is executed. This synchronizes the states between Office objects and corresponding JavaScript proxy objects."
+            }
+          ],
+          "remarks": [
+            {
+              "kind": "text",
+              "text": "For Word, the preferred method for specifying the properties and paging information is by using a string literal. The first two examples show the preferred way to request the text and font size properties for paragraphs in a paragraph collection:"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "`context.load(paragraphs, 'text, font/size');`"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "`paragraphs.load('text, font/size');`"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "Here is a similar example using object notation (includes paging):"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "`context.load(paragraphs, {select: 'text, font/size', expand: 'font', top: 50, skip: 0});`"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "`paragraphs.load({select: 'text, font/size', expand: 'font', top: 50, skip: 0});`"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "Note that if we don't specify the specific properties on the font object in the select statement, the expand statement by itself would indicate that all of the font properties are loaded."
+            }
+          ],
           "isBeta": false,
           "isSealed": false,
           "members": {
@@ -20125,7 +20196,12 @@
               "isStatic": false,
               "type": "string | string[]",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "A comma-delimited string, or array of strings, that specifies the relationships to load."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -20140,7 +20216,12 @@
               "isStatic": false,
               "type": "string | string[]",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "A comma-delimited string, or array of strings, that specifies the properties/relationships to load."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -20155,7 +20236,12 @@
               "isStatic": false,
               "type": "number",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Only usable on collection types. Specifies the number of items in the collection that are to be skipped and not included in the result. If top is specified, the result set will start after skipping the specified number of items."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -20170,7 +20256,12 @@
               "isStatic": false,
               "type": "number",
               "deprecatedMessage": [],
-              "summary": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "Only usable on collection types. Specifies the maximum number of collection items that can be included in the result."
+                }
+              ],
               "remarks": [],
               "isBeta": false,
               "isSealed": false,
@@ -20322,6 +20413,20 @@
                 {
                   "kind": "text",
                   "text": "Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types require this. If you are using an object across \".sync\" calls and outside the sequential execution of a \".run\" batch, and get an \"InvalidObjectPath\" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "This method also has the following signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`add(objects: ClientObject[]): void;` Where objects is an array of objects to be tracked."
                 }
               ],
               "remarks": [],
@@ -20354,6 +20459,20 @@
                 {
                   "kind": "text",
                   "text": "Release the memory associated with an object that was previously added to this collection. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "This method also has the following signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`remove(objects: ClientObject[]): void;` Where objects is an array of objects to be removed."
                 }
               ],
               "remarks": [],
@@ -20370,7 +20489,12 @@
           "implements": "",
           "typeParameters": [],
           "deprecatedMessage": [],
-          "summary": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Provides an option for suppressing an error when the object that is used to set multiple properties tries to set read-only properties."
+            }
+          ],
           "remarks": [],
           "isBeta": false,
           "isSealed": false,
