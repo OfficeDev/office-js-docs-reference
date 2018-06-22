@@ -252,7 +252,7 @@ items:
 
       If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression
       should further filter the body and should not attempt to return the entire body of the item. Using a regular
-      expression such as .\* to obtain the entire body of an item does not always return the expected results. Instead,
+      expression such as .* to obtain the entire body of an item does not always return the expected results. Instead,
       use the Body.getAsync method to retrieve the entire body.
 
 
@@ -290,7 +290,7 @@ items:
 
       If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression
       should further filter the body and should not attempt to return the entire body of the item. Using a regular
-      expression such as .\* to obtain the entire body of an item does not always return the expected results.
+      expression such as .* to obtain the entire body of an item does not always return the expected results.
 
 
       Note: This method is not supported in Outlook for iOS or Outlook for Android.

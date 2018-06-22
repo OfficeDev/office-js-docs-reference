@@ -43,7 +43,7 @@ items:
       the mode of the current item.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The cc property returns a Recipients object that provides methods to get or update the recipients on the Cc line

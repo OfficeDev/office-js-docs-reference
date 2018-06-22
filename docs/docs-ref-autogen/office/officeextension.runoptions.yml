@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.OfficeExtension.RunOptions
-    summary: 'Additional options passed into \`{Host}.run(...)\`.'
+    summary: 'Additional options passed into `{Host}.run(...)`.'
     name: OfficeExtension.RunOptions
     fullName: office.OfficeExtension.RunOptions
     langs:

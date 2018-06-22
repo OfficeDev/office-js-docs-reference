@@ -60,10 +60,10 @@ items:
       page loads, you can go to other domains.
 
 
-      Any page calling \`office.context.ui.messageParent\` must also be on the same domain as the parent page.
+      Any page calling `office.context.ui.messageParent` must also be on the same domain as the parent page.
 
 
-      \*\*Design considerations\*\*:
+      **Design considerations**:
 
 
       The following design considerations apply to dialog boxes:
@@ -101,7 +101,7 @@ items:
       the Office Add-in UX Design Patterns repository on GitHub.
 
 
-      \*\*displayDialogAsync Errors\*\*:
+      **displayDialogAsync Errors**:
 
 
       &lt;table&gt; &lt;tr&gt; &lt;th&gt;Code number&lt;/th&gt; &lt;th&gt;Meaning&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;

@@ -5299,6 +5299,29 @@ Office.TableBinding.setTableOptionsAsync:
 
         Office.select("bindings#myBinding").setTableOptionsAsync(tableOptions, function(asyncResult){});
     }
+Office.TableBinding.setFormatsAsync:
+  - |-
+    // Specifying a single target
+    // The following example shows a cellFormat value that sets the font color of the header row to red.
+    Office.select("bindings#myBinding").setFormatsAsync(
+        [{cells: Office.Table.Headers, format: {fontColor: "red"}}], 
+        function (asyncResult){});
+    
+    // Specifying multiple targets
+    // The setFormatsAsync method can support formatting multiple targets within the bound table in a single function call.
+    // To do that, you pass a list of objects in the cellFormat array for each target that you want to format.
+    // For example, the following line of code will set the font color of the first row yellow, and the fourth cell in the third row to have a white border and bold text.
+    Office.select("bindings#myBinding").setFormatsAsync(
+        [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
+            {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 
+        function (asyncResult){});
+    
+    // Additional remarks for Excel Online
+    // The number of formatting groups passed to the cellFormat parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells. For example, the following call passes two formatting groups to cellFormat.
+    Office.select("bindings#myBinding").setFormatsAsync(
+        [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
+            {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 
+        function (asyncResult){});
 Office.TableData.headers:
   - |-
     // The following example creates a single-column table with a header and three rows.

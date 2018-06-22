@@ -538,7 +538,7 @@ items:
       hosts the user's mailbox. The lifetime of the callback token is 5 minutes.
 
 
-      \*REST Tokens\*
+      *REST Tokens*
 
 
       When a REST token is requested (options.isRest = true), the resulting token will not work to authenticate Exchange
@@ -551,7 +551,7 @@ items:
       The add-in should use the restUrl property to determine the correct URL to use when making REST API calls.
 
 
-      \*EWS Tokens\*
+      *EWS Tokens*
 
 
       When an EWS token is requested (options.isRest = false), the resulting token will not work to authenticate REST
@@ -576,10 +576,10 @@ items:
       In addition to this signature, the method has the following signatures:
 
 
-      \`getCallbackTokenAsync(callback: (result: AsyncResult) =&gt; void): void;\`
+      `getCallbackTokenAsync(callback: (result: AsyncResult) =&gt; void): void;`
 
 
-      \`getCallbackTokenAsync(callback: (result: AsyncResult) =&gt; void, userContext?: any): void;\`
+      `getCallbackTokenAsync(callback: (result: AsyncResult) =&gt; void, userContext?: any): void;`
     name: 'getCallbackTokenAsync(options, callback)'
     fullName: outlook.Office.Mailbox.getCallbackTokenAsync
     langs:
@@ -648,7 +648,7 @@ items:
     summary: >-
       The mailbox item. Depending on the context in which the add-in opened, the item may be of any number of types. If
       you want to see IntelliSense for only a specific type, you should cast this item to one of the following:
-      \`ItemCompose\`, \`ItemRead\`, \`MessageCompose\`, \`MessageRead\`, \`AppointmentCompose\`, \`AppointmentRead\`
+      `ItemCompose`, `ItemRead`, `MessageCompose`, `MessageRead`, `AppointmentCompose`, `AppointmentRead`
     name: item
     fullName: outlook.Office.Mailbox.item
     langs:
@@ -694,14 +694,14 @@ items:
       enable the makeEwsRequestAsync method to make EWS requests.
 
 
-      \*Version differences\*
+      *Version differences*
 
 
       When you use the makeEwsRequestAsync method in mail apps running in Outlook versions earlier than version
       15.0.4535.1004, you should set the encoding value to ISO-8859-1.
 
 
-      \`&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;\`
+      `&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;`
 
 
       You do not need to set the encoding value when your mail app is running in Outlook on the web. You can determine

@@ -27,7 +27,7 @@ items:
       convertToLocalClientTime method to convert the end property value to the client's local date and time.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The end property returns a Time object.
@@ -57,7 +57,7 @@ items:
       Gets or sets the location of an appointment.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The location property returns a Location object that provides methods that are used to get and set the location of
@@ -85,7 +85,7 @@ items:
       of the current item.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The optionalAttendees property returns a Recipients object that provides methods to get or update the optional
@@ -113,7 +113,7 @@ items:
       of the current item.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The requiredAttendees property returns a Recipients object that provides methods to get or update the required
@@ -144,7 +144,7 @@ items:
       convertToLocalClientTime method to convert the value to the client's local date and time.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The start property returns a Time object.

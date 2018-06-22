@@ -308,7 +308,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      \`setEndDate(date: string): void;\` (Where date is the end date of the recurring appointment series represented in
+      `setEndDate(date: string): void;` (Where date is the end date of the recurring appointment series represented in
       the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD").
 
 
@@ -375,8 +375,8 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      \`setStartDate(date: string): void;\` (Where date is the start date of the recurring appointment series
-      represented in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD").
+      `setStartDate(date: string): void;` (Where date is the start date of the recurring appointment series represented
+      in the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD").
 
 
       #### Examples
@@ -444,7 +444,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      \`setStartTime(time: string): void;\` (Where time is the start time of all instances represented by standard
+      `setStartTime(time: string): void;` (Where time is the start time of all instances represented by standard
       datetime string format: "THH:mm:ss:mmm").
 
 

@@ -101,8 +101,8 @@ items:
       and hosted document.
 
 
-      The reason parameter of the initialize event listener function returns an \`InitializationReason\` enumeration
-      value that specifies how initialization occurred. A task pane or content add-in can be initialized in two ways:
+      The reason parameter of the initialize event listener function returns an `InitializationReason` enumeration value
+      that specifies how initialization occurred. A task pane or content add-in can be initialized in two ways:
 
 
       - The user just inserted it from Recently Used Add-ins section of the Add-in drop-down list on the Insert tab of
@@ -112,7 +112,7 @@ items:
       - The user opened a document that already contains the add-in.
 
 
-      \*Note\*: The reason parameter of the initialize event listener function only returns an \`InitializationReason\`
+      *Note*: The reason parameter of the initialize event listener function only returns an `InitializationReason`
       enumeration value for task pane and content add-ins. It does not return a value for Outlook add-ins.
     remarks: |
       Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
@@ -226,7 +226,7 @@ items:
       }
       ```
   - uid: office.Office.useShortNamespace
-    summary: Toggles on and off the \`Office\` alias for the full \`Microsoft.Office.WebExtension\` namespace.
+    summary: Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
     remarks: |
       Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
 

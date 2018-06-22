@@ -56,13 +56,13 @@ items:
       convertToLocalClientTime method to convert the end property value to the client's local date and time.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The end property returns a Date object.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The end property returns a Time object.
@@ -94,13 +94,13 @@ items:
       Gets or sets the location of an appointment.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The location property returns a string that contains the location of the appointment.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The location property returns a Location object that provides methods that are used to get and set the location of
@@ -128,14 +128,14 @@ items:
       of the current item.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional
       attendee to the meeting.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The optionalAttendees property returns a Recipients object that provides methods to get or update the optional
@@ -165,14 +165,14 @@ items:
       of the current item.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required
       attendee to the meeting.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The requiredAttendees property returns a Recipients object that provides methods to get or update the required
@@ -216,13 +216,13 @@ items:
       convertToLocalClientTime method to convert the value to the client's local date and time.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The start property returns a Date object.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The start property returns a Time object.
@@ -257,14 +257,14 @@ items:
       The subject property gets or sets the entire subject of the item, as sent by the email server.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading
       prefixes such as RE: and FW:.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The subject property returns a Subject object that provides methods to get and set the subject.

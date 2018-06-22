@@ -41,16 +41,16 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      \`load(option?: string \| string\[\]): Excel.ChartGridlinesFormat\` - Where option is a comma-delimited string or
-      an array of strings that specify the properties/relationships to load.
+      `load(option?: string \| string\[\]): Excel.ChartGridlinesFormat` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; }): Excel.ChartGridlinesFormat\` - Where option.select is a
+      `load(option?: { select?: string; expand?: string; }): Excel.ChartGridlinesFormat` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartGridlinesFormat\` -
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartGridlinesFormat` -
       Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
@@ -78,7 +78,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      \`set(properties: Excel.ChartGridlinesFormat): void\`
+      `set(properties: Excel.ChartGridlinesFormat): void`
     name: 'set(properties, options)'
     fullName: excel.Excel.ChartGridlinesFormat.set
     langs:

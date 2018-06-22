@@ -6,7 +6,7 @@ items:
 
 
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-      this as a mode of \`Office.context.mailbox.item\`. Refer to the Object Model pages for more information.
+      this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
     name: Office.MessageCompose
     fullName: outlook.Office.MessageCompose
     langs:
@@ -76,13 +76,13 @@ items:
       In addition to this signature, the method also has the following signatures:
 
 
-      \`addFileAttachmentAsync(uri: string, attachmentName: string): void;\`
+      `addFileAttachmentAsync(uri: string, attachmentName: string): void;`
 
 
-      \`addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;\`
+      `addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;`
 
 
-      \`addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) =&gt; void): void;\`
+      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) =&gt; void): void;`
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: outlook.Office.MessageCompose.addFileAttachmentAsync
     langs:
@@ -145,7 +145,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      \`addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;\`
+      `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;`
     isPreview: true
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.MessageCompose.addHandlerAsync
@@ -220,13 +220,13 @@ items:
       In addition to the main signature, this method also has these signatures:
 
 
-      \`addItemAttachmentAsync(itemId: any, attachmentName: string): void;\`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
 
 
-      \`addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;\`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;`
 
 
-      \`addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) =&gt; void): void;\`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) =&gt; void): void;`
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: outlook.Office.MessageCompose.addItemAttachmentAsync
     langs:
@@ -693,13 +693,13 @@ items:
       In addition to this signature, the method also has the following signatures:
 
 
-      \`removeAttachmentAsync(attachmentIndex: string): void;\`
+      `removeAttachmentAsync(attachmentIndex: string): void;`
 
 
-      \`removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;\`
+      `removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;`
 
 
-      \`removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) =&gt; void): void;\`
+      `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) =&gt; void): void;`
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
     fullName: outlook.Office.MessageCompose.removeAttachmentAsync
     langs:
@@ -752,7 +752,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      \`removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;\`
+      `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;`
     isPreview: true
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.MessageCompose.removeHandlerAsync
@@ -836,13 +836,13 @@ items:
       In addition to this signature, the method also has the following signatures:
 
 
-      \`saveAsync(): void;\`
+      `saveAsync(): void;`
 
 
-      \`saveAsync(options: AsyncContextOptions): void;\`
+      `saveAsync(options: AsyncContextOptions): void;`
 
 
-      \`saveAsync(callback: (result: AsyncResult) =&gt; void): void;\`
+      `saveAsync(callback: (result: AsyncResult) =&gt; void): void;`
     name: 'saveAsync(options, callback)'
     fullName: outlook.Office.MessageCompose.saveAsync
     langs:
@@ -931,13 +931,13 @@ items:
       In addition to this signature, the method also has the following signatures:
 
 
-      \`setSelectedDataAsync(data: string): void;\`
+      `setSelectedDataAsync(data: string): void;`
 
 
-      \`setSelectedDataAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;\`
+      `setSelectedDataAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      \`setSelectedDataAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;\`
+      `setSelectedDataAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;`
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: outlook.Office.MessageCompose.setSelectedDataAsync
     langs:

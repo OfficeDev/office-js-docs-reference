@@ -115,7 +115,7 @@ items:
         - id: eventType
           description: >-
             Specifies the type of event to add. For a CustomXmlPart object, the eventType parameter can be specified as
-            \`Office.EventType.NodeDeleted\`, \`Office.EventType.NodeInserted\`, and \`Office.EventType.NodeReplaced\`.
+            `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
           type:
             - EventType
         - id: handler
@@ -398,8 +398,7 @@ items:
         - id: eventType
           description: >-
             Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified
-            as \`Office.EventType.NodeDeleted\`, \`Office.EventType.NodeInserted\`, and
-            \`Office.EventType.NodeReplaced\`.
+            as `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.
           type:
             - EventType
         - id: handler

@@ -76,16 +76,16 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      \`load(option?: string \| string\[\]): Excel.ChartFont\` - Where option is a comma-delimited string or an array of
+      `load(option?: string \| string\[\]): Excel.ChartFont` - Where option is a comma-delimited string or an array of
       strings that specify the properties/relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; }): Excel.ChartFont\` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
+      `load(option?: { select?: string; expand?: string; }): Excel.ChartFont` - Where option.select is a comma-delimited
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartFont\` - Only
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartFont` - Only
       available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
@@ -160,7 +160,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      \`set(properties: Excel.ChartFont): void\`
+      `set(properties: Excel.ChartFont): void`
     name: 'set(properties, options)'
     fullName: excel.Excel.ChartFont.set
     langs:
