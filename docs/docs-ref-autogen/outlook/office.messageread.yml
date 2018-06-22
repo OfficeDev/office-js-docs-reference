@@ -67,7 +67,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      \`addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;\`
+      `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;`
     isPreview: true
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.MessageRead.addHandlerAsync
@@ -488,7 +488,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      \`getInitializationContextAsync(callback?: (result: AsyncResult) =&gt; void): void;\`
+      `getInitializationContextAsync(callback?: (result: AsyncResult) =&gt; void): void;`
     isPreview: true
     name: 'getInitializationContextAsync(options, callback)'
     fullName: outlook.Office.MessageRead.getInitializationContextAsync
@@ -530,7 +530,7 @@ items:
 
       If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression
       should further filter the body and should not attempt to return the entire body of the item. Using a regular
-      expression such as .\* to obtain the entire body of an item does not always return the expected results. Instead,
+      expression such as .* to obtain the entire body of an item does not always return the expected results. Instead,
       use the Body.getAsync method to retrieve the entire body.
 
 
@@ -570,7 +570,7 @@ items:
 
       If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression
       should further filter the body and should not attempt to return the entire body of the item. Using a regular
-      expression such as .\* to obtain the entire body of an item does not always return the expected results.
+      expression such as .* to obtain the entire body of an item does not always return the expected results.
 
 
       Note: This method is not supported in Outlook for iOS or Outlook for Android.
@@ -640,7 +640,7 @@ items:
 
       If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression
       should further filter the body and should not attempt to return the entire body of the item. Using a regular
-      expression such as .\* to obtain the entire body of an item does not always return the expected results. Instead,
+      expression such as .* to obtain the entire body of an item does not always return the expected results. Instead,
       use the Body.getAsync method to retrieve the entire body.
 
 
@@ -939,7 +939,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      \`removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;\`
+      `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;`
     isPreview: true
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.MessageRead.removeHandlerAsync

@@ -157,11 +157,9 @@ items:
       - excel.Excel.NamedItemScope
       - excel.Excel.NamedItemType
       - excel.Excel.PageOrientation
-      - excel.Excel.PaperType
       - excel.Excel.PivotTable
       - excel.Excel.PivotTableCollection
       - excel.Excel.PresetCriteriaConditionalFormat
-      - excel.Excel.PrintErrorType
       - excel.Excel.ProtectionSelectionMode
       - excel.Excel.Range
       - excel.Excel.RangeBorder
@@ -179,6 +177,7 @@ items:
       - excel.Excel.ReadingOrder
       - excel.Excel.RequestContext
       - excel.Excel.run
+      - excel.Excel.RunOptions
       - excel.Excel.Runtime
       - excel.Excel.SelectionChangedEventArgs
       - excel.Excel.Session
@@ -231,37 +230,33 @@ items:
       - excel.Excel.WorksheetSelectionChangedEventArgs
   - uid: excel.Excel.run
     summary: >-
-      Executes a batch script that performs actions on the Excel object model, using the remote RequestContext of
-      previously-created API objects.
-    name: 'run(requestInfo, objects, batch)'
+      Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
+      previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated
+      during execution will be released.
+    name: 'run(options, batch)'
     fullName: excel.Excel.run
     langs:
       - typeScript
     type: function
     syntax:
       content: >-
-        export function run<T>(requestInfo: OfficeExtension.RequestUrlAndHeaderInfo | Session, objects:
-        OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
+        export function run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>):
+        Promise<T>;
       return:
         type:
           - Promise<T>
         description: ''
       parameters:
-        - id: requestInfo
-          description: The URL of the remote workbook and the request headers to be sent.
-          type:
-            - OfficeExtension.RequestUrlAndHeaderInfo | Session
-        - id: objects
+        - id: options
           description: >-
-            An array of previously-created API objects. The array will be validated to make sure that all of the objects
-            share the same context. The batch will use this shared RequestContext, which means that any changes applied
-            to these objects will be picked up by \`context.sync()\`.
+            The additional options for this Excel.run which specify previous objects, whether to delay the request for
+            cell edit, session info, etc.
           type:
-            - 'OfficeExtension.ClientObject[]'
+            - Excel.RunOptions
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of
-            \`context.sync()\`). The context parameter facilitates requests to the Excel application. Since the Office
+            "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office
             add-in and the Excel application run in two different processes, the RequestContext is required to get
             access to the Excel object model from the add-in.
           type:
@@ -567,16 +562,12 @@ references:
     name: Excel.NamedItemType
   - uid: excel.Excel.PageOrientation
     name: Excel.PageOrientation
-  - uid: excel.Excel.PaperType
-    name: Excel.PaperType
   - uid: excel.Excel.PivotTable
     name: Excel.PivotTable
   - uid: excel.Excel.PivotTableCollection
     name: Excel.PivotTableCollection
   - uid: excel.Excel.PresetCriteriaConditionalFormat
     name: Excel.PresetCriteriaConditionalFormat
-  - uid: excel.Excel.PrintErrorType
-    name: Excel.PrintErrorType
   - uid: excel.Excel.ProtectionSelectionMode
     name: Excel.ProtectionSelectionMode
   - uid: excel.Excel.Range
@@ -609,6 +600,8 @@ references:
     name: Excel.ReadingOrder
   - uid: excel.Excel.RequestContext
     name: Excel.RequestContext
+  - uid: excel.Excel.RunOptions
+    name: Excel.RunOptions
   - uid: excel.Excel.Runtime
     name: Excel.Runtime
   - uid: excel.Excel.SelectionChangedEventArgs

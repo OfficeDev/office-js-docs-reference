@@ -86,7 +86,7 @@ items:
   - uid: office.Office.TableData.rows
     summary: >-
       Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table. Returns an
-      empty array \`\`, if there are no rows.
+      empty array ``, if there are no rows.
     remarks: >
       To specify rows, you must specify an array of arrays that corresponds to the structure of the table. For example,
       to specify two rows of string values in a two-column table you would set the rows property to \[\['a', 'b'\],

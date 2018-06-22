@@ -13,6 +13,7 @@ items:
       - excel.Excel.EventType.chartAdded
       - excel.Excel.EventType.chartDeactivated
       - excel.Excel.EventType.chartDeleted
+      - excel.Excel.EventType.tableAdded
       - excel.Excel.EventType.tableChanged
       - excel.Excel.EventType.tableSelectionChanged
       - excel.Excel.EventType.visualSelectionChanged
@@ -25,7 +26,7 @@ items:
       - excel.Excel.EventType.worksheetSelectionChanged
   - uid: excel.Excel.EventType.chartActivated
     summary: >-
-      ChartActivated represents the type of event that is registered on Chart or ChartCollection, and occurs when chart
+      ChartActivated represents the type of event registered on Chart or ChartCollection, and occurs when chart
       activates.
     name: chartActivated
     fullName: excel.Excel.EventType.chartActivated
@@ -35,8 +36,8 @@ items:
     numericValue: '"ChartActivated"'
   - uid: excel.Excel.EventType.chartAdded
     summary: >-
-      ChartAdded represents the type of event that is registered on ChartCollection, and occurs when a new chart is
-      added to the worksheet.
+      ChartAdded represents the type of event registered on ChartCollection, and occurs when a new chart is added to the
+      worksheet.
     name: chartAdded
     fullName: excel.Excel.EventType.chartAdded
     langs:
@@ -45,8 +46,8 @@ items:
     numericValue: '"ChartAdded"'
   - uid: excel.Excel.EventType.chartDeactivated
     summary: >-
-      ChartDeactivated represents the type of event that is registered on Chart or ChartCollection, and occurs when
-      chart deactivates.
+      ChartDeactivated represents the type of event registered on Chart or ChartCollection, and occurs when chart
+      deactivates.
     name: chartDeactivated
     fullName: excel.Excel.EventType.chartDeactivated
     langs:
@@ -55,16 +56,24 @@ items:
     numericValue: '"ChartDeactivated"'
   - uid: excel.Excel.EventType.chartDeleted
     summary: >-
-      ChartDeleted represents the type of event that is registered on ChartCollection, and occurs when a chart is
-      deleted from the worksheet.
+      ChartDeleted represents the type of event registered on ChartCollection, and occurs when a chart is deleted from
+      the worksheet.
     name: chartDeleted
     fullName: excel.Excel.EventType.chartDeleted
     langs:
       - typeScript
     type: field
     numericValue: '"ChartDeleted"'
+  - uid: excel.Excel.EventType.tableAdded
+    summary: 'TableAdded represents the type of event registered on TableCollection, and occurs when a table is added.'
+    name: tableAdded
+    fullName: excel.Excel.EventType.tableAdded
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TableAdded"'
   - uid: excel.Excel.EventType.tableChanged
-    summary: 'TableChanged represents the type of event that is registered on Table, and occurs when data changes.'
+    summary: 'TableChanged represents the type of event registered on Table, and occurs when data changes.'
     name: tableChanged
     fullName: excel.Excel.EventType.tableChanged
     langs:
@@ -72,7 +81,7 @@ items:
     type: field
     numericValue: '"TableChanged"'
   - uid: excel.Excel.EventType.tableSelectionChanged
-    summary: 'TableSelectionChanged represents the type of event that is registered on Table, and occurs when selection changes.'
+    summary: 'TableSelectionChanged represents the type of event registered on Table, and occurs when selection changes.'
     name: tableSelectionChanged
     fullName: excel.Excel.EventType.tableSelectionChanged
     langs:
@@ -81,7 +90,7 @@ items:
     numericValue: '"TableSelectionChanged"'
   - uid: excel.Excel.EventType.visualSelectionChanged
     summary: >-
-      ChartActivated represents the type of event that is registered on Chart or ChartCollection, and occurs when chart
+      ChartActivated represents the type of event registered on Chart or ChartCollection, and occurs when chart
       activates.
     name: visualSelectionChanged
     fullName: excel.Excel.EventType.visualSelectionChanged
@@ -91,8 +100,8 @@ items:
     numericValue: '"VisualSelectionChanged"'
   - uid: excel.Excel.EventType.worksheetActivated
     summary: >-
-      WorksheetActivated represents the type of event that is registered on Worksheet or WorksheetCollection, and occurs
-      when worksheet activates.
+      WorksheetActivated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when
+      worksheet activates.
     name: worksheetActivated
     fullName: excel.Excel.EventType.worksheetActivated
     langs:
@@ -101,8 +110,8 @@ items:
     numericValue: '"WorksheetActivated"'
   - uid: excel.Excel.EventType.worksheetAdded
     summary: >-
-      WorksheetAdded represents the type of event that is registered on WorksheetCollection, and occurs when a new
-      worksheet is added to the workbook.
+      WorksheetAdded represents the type of event registered on WorksheetCollection, and occurs when a new worksheet is
+      added to the workbook.
     name: worksheetAdded
     fullName: excel.Excel.EventType.worksheetAdded
     langs:
@@ -111,8 +120,8 @@ items:
     numericValue: '"WorksheetAdded"'
   - uid: excel.Excel.EventType.worksheetCalculated
     summary: >-
-      WorksheetCalculated represents the type of event that is registered on Worksheet or WorksheetCollection, and
-      occurs when a worksheet is calculated.
+      WorksheetCalculated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when a
+      worksheet is calculated.
     name: worksheetCalculated
     fullName: excel.Excel.EventType.worksheetCalculated
     langs:
@@ -121,8 +130,8 @@ items:
     numericValue: '"WorksheetCalculated"'
   - uid: excel.Excel.EventType.worksheetChanged
     summary: >-
-      WorksheetChanged represents the type of event that is registered on Worksheet or WorksheetCollection, and occurs
-      when data changes.
+      WorksheetChanged represents the type of event registered on Worksheet or WorksheetCollection, and occurs when data
+      changes.
     name: worksheetChanged
     fullName: excel.Excel.EventType.worksheetChanged
     langs:
@@ -131,8 +140,8 @@ items:
     numericValue: '"WorksheetChanged"'
   - uid: excel.Excel.EventType.worksheetDeactivated
     summary: >-
-      WorksheetDeactivated represents the type of event that is registered on Worksheet or WorksheetCollection, and
-      occurs when worksheet deactivates.
+      WorksheetDeactivated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when
+      worksheet deactivates.
     name: worksheetDeactivated
     fullName: excel.Excel.EventType.worksheetDeactivated
     langs:
@@ -141,8 +150,8 @@ items:
     numericValue: '"WorksheetDeactivated"'
   - uid: excel.Excel.EventType.worksheetDeleted
     summary: >-
-      WorksheetDeleted represents the type of event that is registered on WorksheetCollection, and occurs when a
-      worksheet is deleted from the workbook.
+      WorksheetDeleted represents the type of event registered on WorksheetCollection, and occurs when a worksheet is
+      deleted from the workbook.
     name: worksheetDeleted
     fullName: excel.Excel.EventType.worksheetDeleted
     langs:
@@ -150,9 +159,7 @@ items:
     type: field
     numericValue: '"WorksheetDeleted"'
   - uid: excel.Excel.EventType.worksheetSelectionChanged
-    summary: >-
-      WorksheetSelectionChanged represents the type of event that is registered on Worksheet, and occurs when selection
-      changes.
+    summary: 'WorksheetSelectionChanged represents the type of event registered on Worksheet, and occurs when selection changes.'
     name: worksheetSelectionChanged
     fullName: excel.Excel.EventType.worksheetSelectionChanged
     langs:

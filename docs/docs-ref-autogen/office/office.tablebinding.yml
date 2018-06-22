@@ -451,10 +451,52 @@ items:
           - number
   - uid: office.Office.TableBinding.setFormatsAsync
     summary: Sets formatting on specified items and data in the table.
-    remarks: |-
+    remarks: >
       Hosts: Excel
 
+
       Available in Requirement set: Not in a set
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Specifying a single target
+
+      // The following example shows a cellFormat value that sets the font color of the header row to red.
+
+      Office.select("bindings#myBinding").setFormatsAsync(
+          [{cells: Office.Table.Headers, format: {fontColor: "red"}}], 
+          function (asyncResult){});
+
+      // Specifying multiple targets
+
+      // The setFormatsAsync method can support formatting multiple targets within the bound table in a single function
+      call.
+
+      // To do that, you pass a list of objects in the cellFormat array for each target that you want to format.
+
+      // For example, the following line of code will set the font color of the first row yellow, and the fourth cell in
+      the third row to have a white border and bold text.
+
+      Office.select("bindings#myBinding").setFormatsAsync(
+          [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
+              {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 
+          function (asyncResult){});
+
+      // Additional remarks for Excel Online
+
+      // The number of formatting groups passed to the cellFormat parameter can't exceed 100. A single formatting group
+      consists of a set of formatting applied to a specified range of cells. For example, the following call passes two
+      formatting groups to cellFormat.
+
+      Office.select("bindings#myBinding").setFormatsAsync(
+          [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
+              {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 
+          function (asyncResult){});
+      ```
     name: 'setFormatsAsync(formatsInfo, options, callback)'
     fullName: office.Office.TableBinding.setFormatsAsync
     langs:
@@ -491,6 +533,20 @@ items:
 
 
       Available in Requirement set: Not in a set
+
+
+      In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object
+      to return the following information.
+
+
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Property&lt;/th&gt; &lt;th&gt;Use to...&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;AsyncResult.value&lt;/td&gt; &lt;td&gt;Always returns undefined because there is no data or object to
+      retrieve when setting formats.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.status&lt;/td&gt;
+      &lt;td&gt;Determine the success or failure of the operation.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;AsyncResult.error&lt;/td&gt; &lt;td&gt;Access an Error object that provides error information if the
+      operation failed.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.asyncContext&lt;/td&gt; &lt;td&gt;A
+      user-defined item of any type that is returned in the AsyncResult object without being altered.&lt;/td&gt;
+      &lt;/tr&gt; &lt;/table&gt;
 
 
       #### Examples
@@ -535,6 +591,8 @@ items:
           type:
             - AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+            You can use the properties of the AsyncResult object to return the following information.
           type:
             - '(result: AsyncResult) => void'

@@ -41,7 +41,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      \`getAsync(callback: (result: AsyncResult) =&gt; void): void;\`
+      `getAsync(callback: (result: AsyncResult) =&gt; void): void;`
     name: 'getAsync(options, callback)'
     fullName: outlook.Office.Subject.getAsync
     langs:
@@ -91,13 +91,13 @@ items:
       In addition to the main signature, this method also has these signatures:
 
 
-      \`setAsync(subject: string): void;\`
+      `setAsync(subject: string): void;`
 
 
-      \`setAsync(subject: string, options: AsyncContextOptions): void;\`
+      `setAsync(subject: string, options: AsyncContextOptions): void;`
 
 
-      \`setAsync(subject: string, callback: (result: AsyncResult) =&gt; void): void;\`
+      `setAsync(subject: string, callback: (result: AsyncResult) =&gt; void): void;`
     name: 'setAsync(subject, options, callback)'
     fullName: outlook.Office.Subject.setAsync
     langs:

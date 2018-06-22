@@ -2,8 +2,8 @@
 items:
   - uid: office.OfficeExtension.ClientRequestContext
     summary: >-
-      An abstract RequestContext object that facilitates requests to the host Office application. The \`Excel.run and
-      \`Word.run\` methods provide a request context.
+      An abstract RequestContext object that facilitates requests to the host Office application. The `Excel.run and
+      `Word.run` methods provide a request context.
     name: OfficeExtension.ClientRequestContext
     fullName: office.OfficeExtension.ClientRequestContext
     langs:
@@ -47,8 +47,8 @@ items:
           - RequestContextDebugInfo
   - uid: office.OfficeExtension.ClientRequestContext.load
     summary: >-
-      Queues up a command to load the specified properties of the object. You must call \`context.sync()\` before
-      reading the properties.
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
     name: 'load(object, option)'
     fullName: office.OfficeExtension.ClientRequestContext.load
     langs:
@@ -67,15 +67,15 @@ items:
             - ClientObject
         - id: option
           description: >-
-            A comma-delimited string, or array of strings, that specifies the properties/relationships to load, or an
-            object.
+            A comma-delimited string, or array of strings, that specifies the properties/relationships to load, or
+            an[OfficeExtension.LoadOption](xref:office.OfficeExtension.LoadOption) object.
           type:
             - 'string | string[] | LoadOption'
   - uid: office.OfficeExtension.ClientRequestContext.loadRecursive
     summary: |-
       Queues up a command to recursively load the specified properties of the object and its navigation properties.
 
-      You must call \`context.sync()\` before reading the properties.
+      You must call `context.sync()` before reading the properties.
     name: 'loadRecursive(object, options, maxDepth)'
     fullName: office.OfficeExtension.ClientRequestContext.loadRecursive
     langs:
@@ -96,8 +96,8 @@ items:
             - ClientObject
         - id: options
           description: >-
-            The key-value pairing of load options for the types, such as \`{ "Workbook": "worksheets,tables",
-            "Worksheet": "tables", "Tables": "name" }\`
+            The key-value pairing of load options for the types, such as `{ "Workbook": "worksheets,tables",
+            "Worksheet": "tables", "Tables": "name" }`
           type:
             - '{ [typeName: string]: string | string[] | LoadOption }'
         - id: maxDepth
@@ -139,7 +139,7 @@ items:
             - T
   - uid: office.OfficeExtension.ClientRequestContext.trace
     summary: >-
-      Adds a trace message to the queue. If the promise returned by \`context.sync()\` is rejected due to an error, this
+      Adds a trace message to the queue. If the promise returned by `context.sync()` is rejected due to an error, this
       adds a ".traceMessages" array to the OfficeExtension.Error object, containing all trace messages that were
       executed. These messages can help you monitor the program execution sequence and detect the cause of the error.
     name: trace(message)

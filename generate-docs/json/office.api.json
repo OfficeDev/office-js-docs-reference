@@ -1201,7 +1201,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. You can use the properties of the AsyncResult object to return the following information."
                     }
                   ],
                   "isOptional": true,
@@ -1227,6 +1227,154 @@
                 {
                   "kind": "text",
                   "text": "Available in Requirement sets: MatrixBindings, TableBindings, TextBindings"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The value passed for data contains the data to be written in the binding. The kind of value passed determines what will be written as described in the following table."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "<table> <tr> <th>`data` value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>Plain text or anything that can be coerced to a string will be written.</td> </tr> <tr> <td>An array of arrays (\"matrix\")</td> <td>Tabular data without headers will be written. For example, to write data to three rows in two columns, you can pass an array like this: `[[\"R1C1\", \"R1C2\"], [\"R2C1\", \"R2C2\"], [\"R3C1\", \"R3C2\"]]`. To write a single column of three rows, pass an array like this: `[[\"R1C1\"], [\"R2C1\"], [\"R3C1\"]]`.</td> </tr> <tr> <td>An "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.TableData"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "TableData"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object</td> <td>A table with headers will be written.</td> </tr> </table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Additionally, these application-specific actions apply when writing data to a binding. For Word, the specified data is written to the binding as follows:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "<table> <tr> <th>`data` value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>The specified text is written.</td> </tr> <tr> <td>An array of arrays (\"matrix\") or an "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.TableData"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "TableData"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object</td> <td>A Word table is written.</td> </tr> <tr> <td>HTML</td> <td>The specified HTML is written. If any of the HTML you write is invalid, Word will not raise an error. Word will write as much of the HTML as it can and will omit any invalid data.</td> </tr> <tr> <td>Office Open XML (\"Open XML\")</td> <td>The specified the XML is written.</td> </tr> </table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For Excel, the specified data is written to the binding as follows:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "<table> <tr> <th>`data` value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>The specified text is inserted as the value of the first bound cell.You can also specify a valid formula to add that formula to the bound cell. For example, setting data to `\"=SUM(A1:A5)\"` will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the Binding.getDataAsync method on the bound cell to read its data, the method can return only the data displayed in the cell (the formula's result).</td> </tr> <tr> <td>An array of arrays (\"matrix\"), and the shape exactly matches the shape of the binding specified</td> <td>The set of rows and columns are written.You can also specify an array of arrays that contain valid formulas to add them to the bound cells. For example, setting data to `[[\"=SUM(A1:A5)\",\"=AVERAGE(A1:A5)\"]]` will add those two formulas to a binding that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added formulas (or any pre-existing formulas) from the binding with the `Binding.getDataAsync` method - it returns only the data displayed in the bound cells.</td> </tr> <tr> <td>An "
+                },
+                {
+                  "kind": "api-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Office.TableData"
+                    }
+                  ],
+                  "target": {
+                    "scopeName": "",
+                    "packageName": "office",
+                    "exportName": "Office",
+                    "memberName": "TableData"
+                  }
+                },
+                {
+                  "kind": "text",
+                  "text": " object, and the shape of the table matches the bound table.</td> <td>The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. Note: If you specify formulas in the TableData object you pass for the *data* parameter, you might not get the results you expect due to the \"calculated columns\" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or \"matrix\".</td> </tr> </table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For Excel Online:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- The total number of cells in the value passed to the data parameter can't exceed 20,000 in a single call to this method."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- The number of formatting groups passed to the cellFormat parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In all other cases, an error is returned."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The setDataAsync method will write data in a subset of a table or matrix binding if the optional startRow and startColumn parameters are specified, and they specify a valid range."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In the callback function passed to the setDataAsync method, you can use the properties of the AsyncResult object to return the following information."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "<table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns undefined because there is no object or data to retrieve.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>"
                 }
               ],
               "isBeta": false,
@@ -5624,7 +5772,68 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "The type of data structure to return."
+                      "text": "The type of data structure to return. The possible values for the"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.CoercionType"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "CoercionType"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " parameter vary by the host:"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "- Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online only: `Office.CoercionType.Text` (string)"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "- Excel, Word, and Word Online only: `Office.CoercionType.Matrix` (array of arrays)"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "- Access, Excel, Word, and Word Online only: `Office.CoercionType.Table` (TableData object)"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "- Word only: `Office.CoercionType.Html`"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "- Word and Word Online only: `Office.CoercionType.Ooxml` (Office Open XML)"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "- PowerPoint and PowerPoint Online only: `Office.CoercionType.SlideRange`"
                     }
                   ],
                   "isOptional": false,
@@ -5680,49 +5889,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The possible values for the coercionType parameter vary by the host:"
+                  "text": "In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the AsyncResult object to return the following information."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online only: `Office.CoercionType.Text` (string)"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Excel, Word, and Word Online only: `Office.CoercionType.Matrix` (array of arrays)"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Access, Excel, Word, and Word Online only: `Office.CoercionType.Table` (TableData object)"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Word only: `Office.CoercionType.Html`"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Word and Word Online only: `Office.CoercionType.Ooxml` (Office Open XML)"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "PowerPoint and PowerPoint Online only: `Office.CoercionType.SlideRange`"
+                  "text": "<table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns undefined because there is no object or data to retrieve.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>"
                 }
               ],
               "isBeta": false,
@@ -6314,6 +6488,83 @@
                     {
                       "kind": "text",
                       "text": " value, 2d array or TableData object."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "The possible CoercionTypes that can be used for the data parameter, or for the coercionType option, vary by host:"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "- Office.CoercionType.Text: Excel, Word, PowerPoint"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "- Office.CoercionType.Matrix: Excel, Word"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "- Office.CoercionType.Table: Access, Excel, Word"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "- Office.CoercionType.Html: Word"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "- Office.CoercionType.Ooxml: Word"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "- Office.CoercionType.Image: Excel, Word, PowerPoint"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "If the value passed for `data` is:"
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "- A string: Plain text or anything that can be coerced to a string will be inserted. In Excel, you can also specify data as a valid formula to add that formula to the selected cell. For example, setting data to \"=SUM(A1:A5)\" will total the values in the specified range. However, when you set a formula on the bound cell, after doing so, you can't read the added formula (or any pre-existing formula) from the bound cell. If you call the Document.getSelectedDataAsync method on the selected cell to read its data, the method can return only the data displayed in the cell (the formula's result)."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "- An array of arrays (\"matrix\"): Tabular data without headers will be inserted. For example, to write data to three rows in two columns, you can pass an array like this: [[\"R1C1\", \"R1C2\"], [\"R2C1\", \"R2C2\"], [\"R3C1\", \"R3C2\"]]. To write a single column of three rows, pass an array like this: [[\"R1C1\"], [\"R2C1\"], [\"R3C1\"]] In Excel, you can also specify data as an array of arrays that contains valid formulas to add them to the selected cells. For example if no other data will be overwritten, setting data to [[\"=SUM(A1:A5)\",\"=AVERAGE(A1:A5)\"]] will add those two formulas to the selection. Just as when setting a formula on a single cell as \"text\", you can't read the added formulas (or any pre-existing formulas) after they have been set - you can only read the formulas' results."
+                    },
+                    {
+                      "kind": "paragraph"
+                    },
+                    {
+                      "kind": "text",
+                      "text": "- A TableData object: A table with headers will be inserted. In Excel, if you specify formulas in the TableData object you pass for the data parameter, you might not get the results you expect due to the \"calculated columns\" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write `data` that contains formulas to a selected table, try specifying the data as an array of arrays (instead of a TableData object), and specify the coercionType as Microsoft.Office.Matrix or \"matrix\"."
                     }
                   ],
                   "isOptional": false,
@@ -6337,7 +6588,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. The AsyncResult.value property always returns undefined because there is no object or data to retrieve."
                     }
                   ],
                   "isOptional": true,
@@ -6369,49 +6620,182 @@
                 },
                 {
                   "kind": "text",
-                  "text": "The possible CoercionTypes that can be used for the data parameter, or for the coercionType option, vary by host:"
+                  "text": "**Application-specific behaviors**"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Office.CoercionType.Text: Excel, Word, PowerPoint"
+                  "text": "The following application-specific actions apply when writing data to a selection."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Office.CoercionType.Matrix: Excel, Word"
+                  "text": "- Word"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Office.CoercionType.Table: Access, Excel, Word"
+                  "text": "- If there is no selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion point as follows:"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Office.CoercionType.Html: Word"
+                  "text": "- If `data` is a string, the specified text is inserted."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Office.CoercionType.Ooxml: Word"
+                  "text": "- If `data` is an array of arrays (\"matrix\") or a TableData object, a new Word table is inserted."
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Office.CoercionType.Image: Excel, Word, PowerPoint"
+                  "text": "- If `data` is HTML, the specified HTML is inserted. (Important: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data)."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- If `data` is Office Open XML, the specified XML is inserted."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- If `data` is a base64 encoded image stream, the specified image is inserted."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- If there is a selection, it will be replaced with the specified `data` following the same rules as above."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- Insert images: Inserted images are placed inline. The imageLeft and imageTop parameters are ignored. The image aspect ratio is always locked. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- Excel"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- If a single cell is selected:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- If `data` is a string, the specified text is inserted as the value of the current cell."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- If `data` is an array of arrays (\"matrix\"), the specified set of rows and columns are inserted, if no other data in surrounding cells will be overwritten."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- If `data` is a TableData object, a new Excel table with the specified set of rows and headers is inserted, if no other data in surrounding cells will be overwritten."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- If multiple cells are selected and the shape does not match the shape of `data`, an error is returned."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- If multiple cells are selected and the shape of the selection exactly matches the shape of `data`, the values of the selected cells are updated based on the values in `data`."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- Insert images: Inserted images are floating. The position imageLeft and imageTop parameters are relative to currently selected cell(s). Negative imageLeft and imageTop values are allowed and possibly readjusted by Excel to position the image inside a worksheet. Image aspect ratio is locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- In all other cases, an error is returned."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- Excel Online"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- In addition to the behaviors described for Excel above, the following limits apply when writing data in Excel Online."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- The total number of cells you can write to a worksheet with the `data` parameter can't exceed 20,000 in a single call to this method."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- The number of formatting groups passed to the `cellFormat` parameter can't exceed 100. A single formatting group consists of a set of formatting applied to a specified range of cells."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- PowerPoint"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "- Inserted images are floating. The position imageLeft and imageTop parameters are optional but if provided, both should be present. If a single value is provided, it will be ignored. Negative imageLeft and imageTop values are allowed and can position an image outside of a slide. If no optional parameter is given and slide has a placeholder, the image will replace the placeholder in the slide. Image aspect ratio will be locked unless both imageWidth and imageHeight parameters are provided. If only one of the imageWidth and imageHeight parameter is given, the other value will be automatically scaled to keep the original aspect ratio."
                 }
               ],
               "isBeta": false,
@@ -6943,7 +7327,7 @@
           "summary": [
             {
               "kind": "text",
-              "text": "Specifies the kind of event that was raised. Returned by the `type` property of an *EventName*EventArgs object."
+              "text": "Specifies the kind of event that was raised. Returned by the `type` property of an *EventArgs object."
             }
           ],
           "remarks": [
@@ -7005,7 +7389,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter. Available in Requirement set: File"
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter to return the following information."
                     }
                   ],
                   "isOptional": true,
@@ -7023,6 +7407,20 @@
               "remarks": [
                 {
                   "kind": "text",
+                  "text": "Hosts: PowerPoint, Word"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Available in Requirement set: File"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
                   "text": "No more than two documents are allowed to be in memory; otherwise the Document.getFileAsync operation will fail. Use the File.closeAsync method to close the file when you are finished working with it."
                 },
                 {
@@ -7038,13 +7436,6 @@
                 {
                   "kind": "text",
                   "text": "<table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns undefined because there is no object or data to retrieve.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Hosts: PowerPoint, Word"
                 }
               ],
               "isBeta": false,
@@ -7080,7 +7471,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter. Available in Requirement set: File"
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter to return the following information."
                     }
                   ],
                   "isOptional": true,
@@ -7098,6 +7489,20 @@
               "remarks": [
                 {
                   "kind": "text",
+                  "text": "Hosts: PowerPoint, Word"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Available in Requirement set: File"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
                   "text": "In the callback function passed to the getSliceAsync method, you can use the properties of the AsyncResult object to return the following information."
                 },
                 {
@@ -7106,13 +7511,6 @@
                 {
                   "kind": "text",
                   "text": "<table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Access the Slice object.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "Hosts: PowerPoint, Word"
                 }
               ],
               "isBeta": false,
@@ -16627,7 +17025,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter to return the following information. <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns undefined because there is no data or object to retrieve when adding an event handler.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>"
                     }
                   ],
                   "isOptional": true,
@@ -16653,20 +17051,6 @@
                 {
                   "kind": "text",
                   "text": "You can add multiple event handlers for the specified eventType as long as the name of each event handler function is unique."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "In the callback function passed to the addHandlerAsync method, you can use the properties of the AsyncResult object to return the following information."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "<table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns undefined because there is no data or object to retrieve when adding an event handler.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>"
                 },
                 {
                   "kind": "paragraph"
@@ -16966,7 +17350,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. When the function you passed to the callback parameter executes, it receives an AsyncResult object that you can access from the callback function's only parameter to return the following information."
                     }
                   ],
                   "isOptional": true,
@@ -16992,13 +17376,6 @@
                 {
                   "kind": "text",
                   "text": "Note: The saveAsync method persists the in-memory settings property bag into the document file; however, the changes to the document file itself are saved only when the user (or AutoRecover setting) saves the document to the file system. The refreshAsync method is only useful in coauthoring scenarios (which are only supported in Word) when other instances of the same add-in might change the settings and those changes should be made available to all instances."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "In the callback function passed to the saveAsync method, you can use the properties of the AsyncResult object to return the following information."
                 },
                 {
                   "kind": "paragraph"
@@ -18043,7 +18420,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult."
+                      "text": "Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult. You can use the properties of the AsyncResult object to return the following information."
                     }
                   ],
                   "isOptional": true,
@@ -18069,6 +18446,20 @@
                 {
                   "kind": "text",
                   "text": "Available in Requirement set: Not in a set"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object to return the following information."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "<table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns undefined because there is no data or object to retrieve when setting formats.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>"
                 }
               ],
               "isBeta": false,
@@ -18358,6 +18749,27 @@
             {
               "kind": "text",
               "text": "Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes, in your Office Add-ins."
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "Visit \""
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Use the Dialog API in your Office Add-ins"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins"
+            },
+            {
+              "kind": "text",
+              "text": "\" for more information."
             }
           ],
           "remarks": [],
@@ -18449,7 +18861,26 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. Accepts a DialogOptions object to define dialog display."
+                      "text": "Optional. Accepts an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "Office.DialogOptions"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "Office",
+                        "memberName": "DialogOptions"
+                      }
+                    },
+                    {
+                      "kind": "text",
+                      "text": " object to define dialog display."
                     }
                   ],
                   "isOptional": true,
@@ -18501,6 +18932,13 @@
                 {
                   "kind": "text",
                   "text": "Any page calling `office.context.ui.messageParent` must also be on the same domain as the parent page."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "**Design considerations**:"
                 },
                 {
                   "kind": "paragraph"
@@ -18571,6 +19009,55 @@
                 {
                   "kind": "text",
                   "text": "Do not use a dialog box to interact with a document. Use a task pane instead."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "For a design pattern that you can use to create a dialog box, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Client Dialog"
+                    }
+                  ],
+                  "targetUrl": "https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Client_Dialog.md"
+                },
+                {
+                  "kind": "text",
+                  "text": " in the Office Add-in UX Design Patterns repository on GitHub."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "**displayDialogAsync Errors**:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "<table> <tr> <th>Code number</th> <th>Meaning</th> </tr> <tr> <td>12004</td> <td>The domain of the URL passed to displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol and port number), or it must be registered in the <AppDomains> section of the add-in manifest.</td> </tr> <tr> <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td> </tr> <tr> <td>12007</td> <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog box open at a time.</td> </tr> </table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult object to return the following information."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "<table> <tr> <th>Property</th> <th>Use to</th> </tr> <tr> <td>AsyncResult.value</td> <td>Access the Dialog object.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation failed.<td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>Access your user-defined object or value, if you passed one as the asyncContext parameter.</td> </tr> </table>"
                 }
               ],
               "isBeta": false,
@@ -18877,6 +19364,21 @@
                     {
                       "kind": "text",
                       "text": "A comma-delimited string, or array of strings, that specifies the properties/relationships to load, or an"
+                    },
+                    {
+                      "kind": "api-link",
+                      "elements": [
+                        {
+                          "kind": "text",
+                          "text": "OfficeExtension.LoadOption"
+                        }
+                      ],
+                      "target": {
+                        "scopeName": "",
+                        "packageName": "office",
+                        "exportName": "OfficeExtension",
+                        "memberName": "LoadOption"
+                      }
                     },
                     {
                       "kind": "text",
@@ -20363,6 +20865,66 @@
                 {
                   "kind": "text",
                   "text": "Request URL"
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            }
+          }
+        },
+        "RunOptions": {
+          "kind": "interface",
+          "extends": "",
+          "implements": "",
+          "typeParameters": [
+            "T"
+          ],
+          "deprecatedMessage": [],
+          "summary": [
+            {
+              "kind": "text",
+              "text": "Additional options passed into `{Host}.run(...)`."
+            }
+          ],
+          "remarks": [],
+          "isBeta": false,
+          "isSealed": false,
+          "members": {
+            "previousObjects": {
+              "kind": "property",
+              "signature": "previousObjects?: ClientObject | ClientObject[] | ClientRequestContext;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "ClientObject | ClientObject[] | ClientRequestContext",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "A previously-created context, or API object, or array of objects. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by \"context.sync()\"."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
+            },
+            "session": {
+              "kind": "property",
+              "signature": "session?: RequestUrlAndHeaderInfo | T;",
+              "isOptional": true,
+              "isReadOnly": false,
+              "isStatic": false,
+              "type": "RequestUrlAndHeaderInfo | T",
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "The URL of the remote workbook and the request headers to be sent."
                 }
               ],
               "remarks": [],

@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.ConditionalColorScaleCriterion
     summary: |-
-      Represents a Color Scale Criterion which contains a type, value and a color.
+      Represents a Color Scale Criterion which contains a type, value, and a color.
 
       \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalColorScaleCriterion

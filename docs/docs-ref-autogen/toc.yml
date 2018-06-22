@@ -305,16 +305,12 @@ items:
             uid: excel.Excel.NamedItemType
           - name: PageOrientation
             uid: excel.Excel.PageOrientation
-          - name: PaperType
-            uid: excel.Excel.PaperType
           - name: PivotTable
             uid: excel.Excel.PivotTable
           - name: PivotTableCollection
             uid: excel.Excel.PivotTableCollection
           - name: PresetCriteriaConditionalFormat
             uid: excel.Excel.PresetCriteriaConditionalFormat
-          - name: PrintErrorType
-            uid: excel.Excel.PrintErrorType
           - name: ProtectionSelectionMode
             uid: excel.Excel.ProtectionSelectionMode
           - name: Range
@@ -347,6 +343,8 @@ items:
             uid: excel.Excel.ReadingOrder
           - name: RequestContext
             uid: excel.Excel.RequestContext
+          - name: RunOptions
+            uid: excel.Excel.RunOptions
           - name: Runtime
             uid: excel.Excel.Runtime
           - name: SelectionChangedEventArgs
@@ -1409,6 +1407,8 @@ items:
                 uid: office.OfficeExtension.RequestContextDebugInfo
               - name: RequestUrlAndHeaderInfo
                 uid: office.OfficeExtension.RequestUrlAndHeaderInfo
+              - name: RunOptions
+                uid: office.OfficeExtension.RunOptions
               - name: TrackedObjects
                 uid: office.OfficeExtension.TrackedObjects
               - name: UpdateOptions

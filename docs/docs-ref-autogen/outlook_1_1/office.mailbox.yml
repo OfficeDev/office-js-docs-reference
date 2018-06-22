@@ -320,7 +320,7 @@ items:
     summary: >-
       The mailbox item. Depending on the context in which the add-in opened, the item may be of any number of types. If
       you want to see IntelliSense for only a specific type, you should cast this item to one of the following:
-      \`ItemCompose\`, \`ItemRead\`, \`MessageCompose\`, \`MessageRead\`, \`AppointmentCompose\`, \`AppointmentRead\`
+      `ItemCompose`, `ItemRead`, `MessageCompose`, `MessageRead`, `AppointmentCompose`, `AppointmentRead`
     name: item
     fullName: Outlook_1_1.Office.Mailbox.item
     langs:
@@ -366,7 +366,7 @@ items:
       enable the makeEwsRequestAsync method to make EWS requests.
 
 
-      \*Version differences\*
+      *Version differences*
 
 
       When you use the makeEwsRequestAsync method in mail apps running in Outlook versions earlier than version

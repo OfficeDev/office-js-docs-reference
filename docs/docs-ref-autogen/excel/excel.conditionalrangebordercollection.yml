@@ -26,7 +26,7 @@ items:
       - excel.Excel.ConditionalRangeBorderCollection.top
   - uid: excel.Excel.ConditionalRangeBorderCollection.bottom
     summary: |-
-      Gets the top border
+      Gets the bottom border. Read-only.
 
       \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: bottom
@@ -56,7 +56,7 @@ items:
           - number
   - uid: excel.Excel.ConditionalRangeBorderCollection.getItem
     summary: |-
-      Gets a border object using its name
+      Gets a border object using its name.
 
       \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(index)
@@ -77,7 +77,7 @@ items:
             - Excel.ConditionalRangeBorderIndex
   - uid: excel.Excel.ConditionalRangeBorderCollection.getItemAt
     summary: |-
-      Gets a border object using its index
+      Gets a border object using its index.
 
       \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
@@ -110,7 +110,7 @@ items:
           - 'Excel.ConditionalRangeBorder[]'
   - uid: excel.Excel.ConditionalRangeBorderCollection.left
     summary: |-
-      Gets the top border
+      Gets the left border. Read-only.
 
       \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: left
@@ -127,6 +127,24 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string \| string\[\]): Excel.ConditionalRangeBorderCollection` - Where option is a comma-delimited
+      string or an array of strings that specify the properties/relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorderCollection` - Where
+      option.select is a comma-delimited string that specifies the properties/relationships to load, and options.expand
+      is a comma-delimited string that specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }):
+      Excel.ConditionalRangeBorderCollection` - Only available on collection types. It is similar to the preceding
+      signature. Option.top specifies the maximum number of collection items that can be included in the result.
+      Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is
+      specified, the result set will start after skipping the specified number of items.
     name: load(option)
     fullName: excel.Excel.ConditionalRangeBorderCollection.load
     langs:
@@ -147,7 +165,7 @@ items:
             - Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.ConditionalRangeBorderCollection.right
     summary: |-
-      Gets the top border
+      Gets the right border. Read-only.
 
       \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: right
@@ -174,7 +192,7 @@ items:
         description: ''
   - uid: excel.Excel.ConditionalRangeBorderCollection.top
     summary: |-
-      Gets the top border
+      Gets the top border. Read-only.
 
       \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: top

@@ -40,19 +40,19 @@ items:
           type:
             - 'Excel.SortField[]'
         - id: matchCase
-          description: Whether to have the casing impact string ordering.
+          description: Optional. Whether to have the casing impact string ordering.
           type:
             - boolean
         - id: hasHeaders
-          description: Whether the range has a header.
+          description: Optional. Whether the range has a header.
           type:
             - boolean
         - id: orientation
-          description: Whether the operation is sorting rows or columns.
+          description: Optional. Whether the operation is sorting rows or columns.
           type:
             - Excel.SortOrientation
         - id: method
-          description: The ordering method used for Chinese characters.
+          description: Optional. The ordering method used for Chinese characters.
           type:
             - Excel.SortMethod
   - uid: excel.Excel.RangeSort.toJSON

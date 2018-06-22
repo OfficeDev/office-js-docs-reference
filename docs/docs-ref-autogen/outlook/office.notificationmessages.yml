@@ -40,14 +40,14 @@ items:
       In addition to this signature, the method also has the following signatures:
 
 
-      \`addAsync(key: string, JSONmessage: NotificationMessageDetails): void;\`
+      `addAsync(key: string, JSONmessage: NotificationMessageDetails): void;`
 
 
-      \`addAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;\`
+      `addAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;`
 
 
-      \`addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) =&gt; void):
-      void;\`
+      `addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) =&gt; void):
+      void;`
 
 
       #### Examples
@@ -129,7 +129,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      \`getAllAsync(callback: (result: AsyncResult) =&gt; void): void;\`
+      `getAllAsync(callback: (result: AsyncResult) =&gt; void): void;`
 
 
       #### Examples
@@ -191,13 +191,13 @@ items:
       In addition to the main signature, this method also has these signatures:
 
 
-      \`removeAsync(key: string): void;\`
+      `removeAsync(key: string): void;`
 
 
-      \`removeAsync(key: string, options: AsyncContextOptions): void;\`
+      `removeAsync(key: string, options: AsyncContextOptions): void;`
 
 
-      \`removeAsync(key: string, callback: (result: AsyncResult) =&gt; void): void;\`
+      `removeAsync(key: string, callback: (result: AsyncResult) =&gt; void): void;`
 
 
       #### Examples
@@ -256,14 +256,14 @@ items:
       In addition to the main signature, this method also has these signatures:
 
 
-      \`replaceAsync(key: string, JSONmessage: NotificationMessageDetails): void;\`
+      `replaceAsync(key: string, JSONmessage: NotificationMessageDetails): void;`
 
 
-      \`replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;\`
+      `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;`
 
 
-      \`replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) =&gt; void):
-      void;\`
+      `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) =&gt; void):
+      void;`
 
 
       #### Examples

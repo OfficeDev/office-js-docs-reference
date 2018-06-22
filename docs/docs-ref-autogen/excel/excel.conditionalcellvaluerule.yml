@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.ConditionalCellValueRule
     summary: |-
-      Represents a Cell Value Conditional Format Rule
+      Represents a cell value conditional format rule.
 
       \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalCellValueRule

@@ -36,7 +36,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'add(range: Excel.Range | string, bindingType: Excel.BindingType, id: string): Excel.Binding;'
+      content: 'add(range: Range | string, bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
           - Excel.Binding
@@ -47,7 +47,7 @@ items:
             Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full
             address, including the sheet name
           type:
-            - Excel.Range | string
+            - Range | string
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
@@ -317,6 +317,68 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string \| string\[\]): Excel.BindingCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.BindingCollection` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.BindingCollection` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Excel.run(function (ctx) { 
+          var bindings = ctx.workbook.bindings;
+          bindings.load('items');
+          return ctx.sync().then(function() {
+              for (var i = 0; i < bindings.items.length; i++)
+              {
+                  console.log(bindings.items[i].id);
+              }
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+
+
+      ```javascript
+
+      // Get the number of bindings
+
+      Excel.run(function (ctx) { 
+          var bindings = ctx.workbook.bindings;
+          bindings.load('count');
+          return ctx.sync().then(function() {
+              console.log("Bindings: Count= " + bindings.count);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
     name: load(option)
     fullName: excel.Excel.BindingCollection.load
     langs:
@@ -335,44 +397,6 @@ items:
           description: ''
           type:
             - Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      Excel.run(function (ctx) { 
-          var bindings = ctx.workbook.bindings;
-          bindings.load('items');
-          return ctx.sync().then(function() {
-              for (var i = 0; i < bindings.items.length; i++)
-              {
-                  console.log(bindings.items[i].id);
-              }
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
-      ```javascript
-      // Get the number of bindings
-      Excel.run(function (ctx) { 
-          var bindings = ctx.workbook.bindings;
-          bindings.load('count');
-          return ctx.sync().then(function() {
-              console.log("Bindings: Count= " + bindings.count);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: excel.Excel.BindingCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.BindingCollection.toJSON

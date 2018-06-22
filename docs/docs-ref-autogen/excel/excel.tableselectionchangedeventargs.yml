@@ -76,7 +76,7 @@ items:
           - string
   - uid: excel.Excel.TableSelectionChangedEventArgs.type
     summary: |-
-      Gets the type of the event. See Excel.EventType for details.
+      Gets the type of the event. See Excel.EventType for details. Read-only.
 
       \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: type

@@ -38,7 +38,7 @@ items:
   - uid: excel.Excel.FilterCriteria.criterion1
     summary: >-
       The first criterion used to filter data. Used as an operator in the case of "custom" filtering. For example
-      "&gt;50" for number greater than 50 or "=\*s" for values ending in "s".
+      "&gt;50" for number greater than 50 or "=*s" for values ending in "s".
 
 
       Used as a number in the case of top/bottom items/percents. E.g. "5" for the top 5 items if filterOn is set to
@@ -163,7 +163,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'values?: Array<string | Excel.FilterDatetime>;'
+      content: 'values?: Array<string | FilterDatetime>;'
       return:
         type:
-          - Array<string | Excel.FilterDatetime>
+          - Array<string | FilterDatetime>
