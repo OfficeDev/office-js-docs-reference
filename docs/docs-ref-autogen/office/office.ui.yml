@@ -4,6 +4,11 @@ items:
     summary: >-
       Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes, in
       your Office Add-ins.
+
+
+      Visit "[Use the Dialog API in your Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/develop/dialog-api-in-office-add-ins)<!-- -->" for more
+      information.
     name: Office.UI
     fullName: office.Office.UI
     langs:
@@ -58,6 +63,9 @@ items:
       Any page calling \`office.context.ui.messageParent\` must also be on the same domain as the parent page.
 
 
+      \*\*Design considerations\*\*:
+
+
       The following design considerations apply to dialog boxes:
 
 
@@ -86,6 +94,38 @@ items:
 
 
       Do not use a dialog box to interact with a document. Use a task pane instead.
+
+
+      For a design pattern that you can use to create a dialog box, see [Client
+      Dialog](https://github.com/OfficeDev/Office-Add-in-UX-Design-Patterns/blob/master/Patterns/Client_Dialog.md) in
+      the Office Add-in UX Design Patterns repository on GitHub.
+
+
+      \*\*displayDialogAsync Errors\*\*:
+
+
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Code number&lt;/th&gt; &lt;th&gt;Meaning&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;12004&lt;/td&gt; &lt;td&gt;The domain of the URL passed to displayDialogAsync is not trusted. The domain
+      must be either the same domain as the host page (including protocol and port number), or it must be registered in
+      the &lt;AppDomains&gt; section of the add-in manifest.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;12005&lt;/td&gt; &lt;td&gt;The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is
+      required. (In some versions of Office, the error message returned with 12005 is the same one returned for
+      12004.)&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;12007&lt;/td&gt; &lt;td&gt;A dialog box is already opened from
+      the task pane. A task pane add-in can only have one dialog box open at a time.&lt;/td&gt; &lt;/tr&gt;
+      &lt;/table&gt;
+
+
+      In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult
+      object to return the following information.
+
+
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Property&lt;/th&gt; &lt;th&gt;Use to&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;AsyncResult.value&lt;/td&gt; &lt;td&gt;Access the Dialog object.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;AsyncResult.status&lt;/td&gt; &lt;td&gt;Determine the success or failure of the operation.&lt;/td&gt;
+      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.error&lt;/td&gt; &lt;td&gt;Access an Error object that provides error
+      information if the operation failed.&lt;td&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;AsyncResult.asyncContext&lt;/td&gt; &lt;td&gt;Access your user-defined object or value, if you passed
+      one as the asyncContext parameter.&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
     name: 'displayDialogAsync(startAddress, options, callback)'
     fullName: office.Office.UI.displayDialogAsync
     langs:
@@ -105,7 +145,9 @@ items:
           type:
             - string
         - id: options
-          description: Optional. Accepts a DialogOptions object to define dialog display.
+          description: >-
+            Optional. Accepts an[Office.DialogOptions](xref:office.Office.DialogOptions) object to define dialog
+            display.
           type:
             - DialogOptions
         - id: callback

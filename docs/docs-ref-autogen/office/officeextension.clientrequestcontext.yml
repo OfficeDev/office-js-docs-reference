@@ -67,8 +67,8 @@ items:
             - ClientObject
         - id: option
           description: >-
-            A comma-delimited string, or array of strings, that specifies the properties/relationships to load, or an
-            object.
+            A comma-delimited string, or array of strings, that specifies the properties/relationships to load, or
+            an[OfficeExtension.LoadOption](xref:office.OfficeExtension.LoadOption) object.
           type:
             - 'string | string[] | LoadOption'
   - uid: office.OfficeExtension.ClientRequestContext.loadRecursive

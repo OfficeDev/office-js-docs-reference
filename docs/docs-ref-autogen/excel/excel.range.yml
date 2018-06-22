@@ -157,7 +157,7 @@ items:
         description: ''
       parameters:
         - id: applyTo
-          description: Determines the type of clear action. See Excel.ClearApplyTo for details.
+          description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
           type:
             - Excel.ClearApplyTo
     remarks: |
@@ -227,7 +227,7 @@ items:
           - number
   - uid: excel.Excel.Range.conditionalFormats
     summary: |-
-      Collection of ConditionalFormats that intersect the range.
+      Collection of ConditionalFormats that intersect the range. Read-only.
 
       \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: conditionalFormats
@@ -392,7 +392,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getBoundingRect(anotherRange: Excel.Range | string): Excel.Range;'
+      content: 'getBoundingRect(anotherRange: Range | string): Excel.Range;'
       return:
         type:
           - Excel.Range
@@ -401,7 +401,7 @@ items:
         - id: anotherRange
           description: The range object or address or range name.
           type:
-            - Excel.Range | string
+            - Range | string
     remarks: |
 
 
@@ -427,7 +427,7 @@ items:
   - uid: excel.Excel.Range.getCell
     summary: >-
       Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
-      bounds of its parent range, so long as it's stays within the worksheet grid. The returned cell is located relative
+      bounds of its parent range, so long as it stays within the worksheet grid. The returned cell is located relative
       to the top left cell of the range.
 
 
@@ -536,9 +536,9 @@ items:
       parameters:
         - id: count
           description: >-
-            The number of columns to include in the resulting range. In general, use a positive number to create a range
-            outside the current range. You can also use a negative number to create a range within the current range.
-            The default value is 1.
+            Optional. The number of columns to include in the resulting range. In general, use a positive number to
+            create a range outside the current range. You can also use a negative number to create a range within the
+            current range. The default value is 1.
           type:
             - number
   - uid: excel.Excel.Range.getColumnsBefore
@@ -560,15 +560,15 @@ items:
       parameters:
         - id: count
           description: >-
-            The number of columns to include in the resulting range. In general, use a positive number to create a range
-            outside the current range. You can also use a negative number to create a range within the current range.
-            The default value is 1.
+            Optional. The number of columns to include in the resulting range. In general, use a positive number to
+            create a range outside the current range. You can also use a negative number to create a range within the
+            current range. The default value is 1.
           type:
             - number
   - uid: excel.Excel.Range.getEntireColumn
     summary: >-
       Gets an object that represents the entire column of the range (for example, if the current range represents cells
-      "B4:E11", it's \`getEntireColumn\` is a range that represents columns "B:E").
+      "B4:E11", its \`getEntireColumn\` is a range that represents columns "B:E").
 
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
@@ -614,7 +614,7 @@ items:
   - uid: excel.Excel.Range.getEntireRow
     summary: >-
       Gets an object that represents the entire row of the range (for example, if the current range represents cells
-      "B4:E11", it's \`GetEntireRow\` is a range that represents rows "4:11").
+      "B4:E11", its \`GetEntireRow\` is a range that represents rows "4:11").
 
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
@@ -684,7 +684,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getIntersection(anotherRange: Excel.Range | string): Excel.Range;'
+      content: 'getIntersection(anotherRange: Range | string): Excel.Range;'
       return:
         type:
           - Excel.Range
@@ -693,7 +693,7 @@ items:
         - id: anotherRange
           description: The range object or range address that will be used to determine the intersection of ranges.
           type:
-            - Excel.Range | string
+            - Range | string
     remarks: |
 
 
@@ -728,7 +728,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getIntersectionOrNullObject(anotherRange: Excel.Range | string): Excel.Range;'
+      content: 'getIntersectionOrNullObject(anotherRange: Range | string): Excel.Range;'
       return:
         type:
           - Excel.Range
@@ -737,7 +737,7 @@ items:
         - id: anotherRange
           description: The range object or range address that will be used to determine the intersection of ranges.
           type:
-            - Excel.Range | string
+            - Range | string
     remarks: |
 
 
@@ -979,7 +979,7 @@ items:
             - number
         - id: deltaColumns
           description: >-
-            The number of columnsby which to expand the bottom-right corner, relative to the current range. Use a
+            The number of columns by which to expand the bottom-right corner, relative to the current range. Use a
             positive number to expand the range, or a negative number to decrease it.
           type:
             - number
@@ -1044,9 +1044,9 @@ items:
       parameters:
         - id: count
           description: >-
-            The number of rows to include in the resulting range. In general, use a positive number to create a range
-            outside the current range. You can also use a negative number to create a range within the current range.
-            The default value is 1.
+            Optional. The number of rows to include in the resulting range. In general, use a positive number to create
+            a range outside the current range. You can also use a negative number to create a range within the current
+            range. The default value is 1.
           type:
             - number
   - uid: excel.Excel.Range.getRowsBelow
@@ -1068,9 +1068,9 @@ items:
       parameters:
         - id: count
           description: >-
-            The number of rows to include in the resulting range. In general, use a positive number to create a range
-            outside the current range. You can also use a negative number to create a range within the current range.
-            The default value is 1.
+            Optional. The number of rows to include in the resulting range. In general, use a positive number to create
+            a range outside the current range. You can also use a negative number to create a range within the current
+            range. The default value is 1.
           type:
             - number
   - uid: excel.Excel.Range.getSurroundingRegion
@@ -1256,7 +1256,7 @@ items:
         description: ''
   - uid: excel.Excel.Range.hidden
     summary: |-
-      Represents if all cells of the current range are hidden.
+      Represents if all cells of the current range are hidden. Read-only.
 
       \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: hidden
@@ -1362,7 +1362,7 @@ items:
       ```
   - uid: excel.Excel.Range.isEntireColumn
     summary: |-
-      Represents if the current range is an entire column.
+      Represents if the current range is an entire column. Read-only.
 
       \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireColumn
@@ -1377,7 +1377,7 @@ items:
           - boolean
   - uid: excel.Excel.Range.isEntireRow
     summary: |-
-      Represents if the current range is an entire row.
+      Represents if the current range is an entire row. Read-only.
 
       \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireRow
@@ -1394,29 +1394,33 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    name: load(option)
-    fullName: excel.Excel.Range.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;'
-      return:
-        type:
-          - Excel.Range
-        description: ''
-      parameters:
-        - id: option
-          description: ''
-          type:
-            - Excel.Interfaces.RangeLoadOptions
-    remarks: |
+    remarks: >
+      In addition to this signature, this method has the following signatures:
+
+
+      \`load(option?: string \| string\[\]): Excel.Range\` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; }): Excel.Range\` - Where option.select is a comma-delimited
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Range\` - Only available
+      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
+      collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
 
 
       #### Examples
 
+
       ```javascript
+
       // Below example uses range address to get the range object.
+
       Excel.run(function (ctx) {
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8"; 
@@ -1432,10 +1436,14 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
 
+
       ```javascript
+
       // Below example uses a named-range to get the range object.
+
       Excel.run(function (ctx) { 
           var rangeName = 'MyRange';
           var range = ctx.workbook.names.getItem(rangeName).range;
@@ -1449,10 +1457,14 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
 
+
       ```javascript
+
       // The example below sets number-format, values and formulas on a grid that contains 2x3 grid.
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "F5:G7";
@@ -1473,7 +1485,24 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
+    name: load(option)
+    fullName: excel.Excel.Range.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;'
+      return:
+        type:
+          - Excel.Range
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.RangeLoadOptions
   - uid: excel.Excel.Range.merge
     summary: |-
       Merge the range cells into one region in the worksheet.
@@ -1493,8 +1522,8 @@ items:
       parameters:
         - id: across
           description: >-
-            Set true to merge cells in each row of the specified range as separate merged cells. The default value is
-            false.
+            Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default
+            value is false.
           type:
             - boolean
     remarks: |
@@ -1614,22 +1643,27 @@ items:
           - number
   - uid: excel.Excel.Range.select
     summary: >-
-      Selects the specified range in the Excel UI. If multiple selection is not supported on the platform and the range
-      has multiple areas, the "InvalidReference" error will be returned.
+      Selects the specified range in the Excel UI. If true, a multi-area range can be selected; otherwise, only the
+      first area will be selected. Default is false.
 
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
-    name: select()
+    name: select(allowMultiAreas)
     fullName: excel.Excel.Range.select
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'select(): void;'
+      content: 'select(allowMultiAreas?: boolean): void;'
       return:
         type:
           - void
         description: ''
+      parameters:
+        - id: allowMultiAreas
+          description: ''
+          type:
+            - boolean
     remarks: |
 
 
@@ -1650,29 +1684,13 @@ items:
       });
       ```
   - uid: excel.Excel.Range.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
-    name: 'set(properties, options)'
-    fullName: excel.Excel.Range.set
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: properties
-          description: ''
-          type:
-            - Interfaces.RangeUpdateData
-        - id: options
-          description: ''
-          type:
-            - OfficeExtension.UpdateOptions
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
     remarks: |
+      This method has the following additional signature:
 
+      \`set(properties: Excel.Range): void\`
 
       #### Examples
 
@@ -1713,6 +1731,28 @@ items:
           await context.sync();
       });
       ```
+    name: 'set(properties, options)'
+    fullName: excel.Excel.Range.set
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.RangeUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - OfficeExtension.UpdateOptions
   - uid: excel.Excel.Range.showCard
     summary: |-
       Displays the card for an active cell if it has rich value content.
@@ -1731,7 +1771,7 @@ items:
         description: ''
   - uid: excel.Excel.Range.sort
     summary: |-
-      Represents the range sort of the current range.
+      Represents the range sort of the current range. Read-only.
 
       \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: sort
@@ -1882,9 +1922,9 @@ items:
   - uid: excel.Excel.Range.values
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
-      Cell that contain an error will return the error string. When setting values to a range, the value argument can be
-      either a single value (string, number or boolean) or a two-dimensional array. If the argument is a single value,
-      it will be applied to all cells in the range.
+      Cells that contain an error will return the error string. When setting values to a range, the value argument can
+      be either a single value (string, number or boolean) or a two-dimensional array. If the argument is a single
+      value, it will be applied to all cells in the range.
 
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
@@ -1915,7 +1955,7 @@ items:
           - 'Excel.RangeValueType[][]'
   - uid: excel.Excel.Range.worksheet
     summary: |-
-      The worksheet containing the current range.
+      The worksheet containing the current range. Read-only.
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet

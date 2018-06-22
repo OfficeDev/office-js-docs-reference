@@ -69,7 +69,7 @@ items:
         description: ''
   - uid: excel.Excel.RangeFormat.borders
     summary: |-
-      Collection of border objects that apply to the overall range.
+      Collection of border objects that apply to the overall range. Read-only.
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: borders
@@ -101,7 +101,7 @@ items:
           - number
   - uid: excel.Excel.RangeFormat.fill
     summary: |-
-      Returns the fill object defined on the overall range.
+      Returns the fill object defined on the overall range. Read-only.
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: fill
@@ -116,7 +116,7 @@ items:
           - Excel.RangeFill
   - uid: excel.Excel.RangeFormat.font
     summary: |-
-      Returns the font object defined on the overall range.
+      Returns the font object defined on the overall range. Read-only.
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: font
@@ -152,29 +152,33 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    name: load(option)
-    fullName: excel.Excel.RangeFormat.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;'
-      return:
-        type:
-          - Excel.RangeFormat
-        description: ''
-      parameters:
-        - id: option
-          description: ''
-          type:
-            - Excel.Interfaces.RangeFormatLoadOptions
-    remarks: |
+    remarks: >
+      In addition to this signature, this method has the following signatures:
+
+
+      \`load(option?: string \| string\[\]): Excel.RangeFormat\` - Where option is a comma-delimited string or an array
+      of strings that specify the properties/relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; }): Excel.RangeFormat\` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFormat\` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
 
 
       #### Examples
 
+
       ```javascript
+
       // Below example selects all of the Range's format properties. 
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "F:G";
@@ -192,10 +196,14 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
 
+
       ```javascript
+
       // The example below sets font name, fill color and wraps text. 
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "F:G";
@@ -210,10 +218,14 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
 
+
       ```javascript
+
       // The example below adds grid border around the range.
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "F:G";
@@ -231,10 +243,27 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
+    name: load(option)
+    fullName: excel.Excel.RangeFormat.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;'
+      return:
+        type:
+          - Excel.RangeFormat
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.RangeFormatLoadOptions
   - uid: excel.Excel.RangeFormat.protection
     summary: |-
-      Returns the format protection object for a range.
+      Returns the format protection object for a range. Read-only.
 
       \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: protection
@@ -263,7 +292,13 @@ items:
         type:
           - number
   - uid: excel.Excel.RangeFormat.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      \`set(properties: Excel.RangeFormat): void\`
     name: 'set(properties, options)'
     fullName: excel.Excel.RangeFormat.set
     langs:
@@ -277,11 +312,13 @@ items:
         description: ''
       parameters:
         - id: properties
-          description: ''
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type:
             - Interfaces.RangeFormatUpdateData
         - id: options
-          description: ''
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
   - uid: excel.Excel.RangeFormat.textOrientation
@@ -351,7 +388,7 @@ items:
           - boolean
   - uid: excel.Excel.RangeFormat.useStandardWidth
     summary: >-
-      Indicates whether the columnwidth of the Range object equals the standard width of the sheet. Returns True if the
+      Indicates whether the column width of the Range object equals the standard width of the sheet. Returns True if the
       column width of the Range object equals the standard width of the sheet. Returns Null if the range contains more
       than one column and the columns aren't all the same height. Returns False otherwise.
 

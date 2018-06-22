@@ -493,6 +493,20 @@ items:
       Available in Requirement set: Not in a set
 
 
+      In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object
+      to return the following information.
+
+
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Property&lt;/th&gt; &lt;th&gt;Use to...&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;AsyncResult.value&lt;/td&gt; &lt;td&gt;Always returns undefined because there is no data or object to
+      retrieve when setting formats.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.status&lt;/td&gt;
+      &lt;td&gt;Determine the success or failure of the operation.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;AsyncResult.error&lt;/td&gt; &lt;td&gt;Access an Error object that provides error information if the
+      operation failed.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.asyncContext&lt;/td&gt; &lt;td&gt;A
+      user-defined item of any type that is returned in the AsyncResult object without being altered.&lt;/td&gt;
+      &lt;/tr&gt; &lt;/table&gt;
+
+
       #### Examples
 
 
@@ -535,6 +549,8 @@ items:
           type:
             - AsyncContextOptions
         - id: callback
-          description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
+          description: >-
+            Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
+            You can use the properties of the AsyncResult object to return the following information.
           type:
             - '(result: AsyncResult) => void'

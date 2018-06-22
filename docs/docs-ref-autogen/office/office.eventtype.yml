@@ -1,9 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.EventType
-    summary: >-
-      Specifies the kind of event that was raised. Returned by the \`type\` property of an \*EventName\*EventArgs
-      object.
+    summary: Specifies the kind of event that was raised. Returned by the \`type\` property of an \*EventArgs object.
     remarks: >-
       Add-ins for Project support the \`Office.EventType.ResourceSelectionChanged\`,
       \`Office.EventType.TaskSelectionChanged\`, and \`Office.EventType.ViewSelectionChanged\` event types.

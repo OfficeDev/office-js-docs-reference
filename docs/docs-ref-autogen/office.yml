@@ -92,6 +92,7 @@ items:
       - office.OfficeExtension.LoadOption
       - office.OfficeExtension.RequestContextDebugInfo
       - office.OfficeExtension.RequestUrlAndHeaderInfo
+      - office.OfficeExtension.RunOptions
       - office.OfficeExtension.TrackedObjects
       - office.OfficeExtension.UpdateOptions
   - uid: office.Office.initialize
@@ -436,6 +437,8 @@ references:
     name: OfficeExtension.RequestContextDebugInfo
   - uid: office.OfficeExtension.RequestUrlAndHeaderInfo
     name: OfficeExtension.RequestUrlAndHeaderInfo
+  - uid: office.OfficeExtension.RunOptions
+    name: OfficeExtension.RunOptions
   - uid: office.OfficeExtension.TrackedObjects
     name: OfficeExtension.TrackedObjects
   - uid: office.OfficeExtension.UpdateOptions

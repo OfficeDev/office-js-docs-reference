@@ -163,7 +163,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'values?: Array<string | Excel.FilterDatetime>;'
+      content: 'values?: Array<string | FilterDatetime>;'
       return:
         type:
-          - Array<string | Excel.FilterDatetime>
+          - Array<string | FilterDatetime>
