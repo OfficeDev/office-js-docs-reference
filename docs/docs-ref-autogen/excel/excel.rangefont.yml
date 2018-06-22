@@ -72,28 +72,31 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    name: load(option)
-    fullName: excel.Excel.RangeFont.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: Excel.Interfaces.RangeFontLoadOptions): Excel.RangeFont;'
-      return:
-        type:
-          - Excel.RangeFont
-        description: ''
-      parameters:
-        - id: option
-          description: ''
-          type:
-            - Excel.Interfaces.RangeFontLoadOptions
-    remarks: |
+    remarks: >
+      In addition to this signature, this method has the following signatures:
+
+
+      \`load(option?: string \| string\[\]): Excel.RangeFont\` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; }): Excel.RangeFont\` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFont\` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
 
 
       #### Examples
 
+
       ```javascript
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "F:G";
@@ -110,10 +113,14 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
 
+
       ```javascript
+
       // The example below sets font name. 
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "F:G";
@@ -126,7 +133,24 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
+    name: load(option)
+    fullName: excel.Excel.RangeFont.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.RangeFontLoadOptions): Excel.RangeFont;'
+      return:
+        type:
+          - Excel.RangeFont
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.RangeFontLoadOptions
   - uid: excel.Excel.RangeFont.name
     summary: |-
       Font name (e.g. "Calibri")
@@ -143,7 +167,13 @@ items:
         type:
           - string
   - uid: excel.Excel.RangeFont.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      \`set(properties: Excel.RangeFont): void\`
     name: 'set(properties, options)'
     fullName: excel.Excel.RangeFont.set
     langs:
@@ -157,11 +187,13 @@ items:
         description: ''
       parameters:
         - id: properties
-          description: ''
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type:
             - Interfaces.RangeFontUpdateData
         - id: options
-          description: ''
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
   - uid: excel.Excel.RangeFont.size

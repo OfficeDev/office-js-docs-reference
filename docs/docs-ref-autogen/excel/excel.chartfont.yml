@@ -72,6 +72,56 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >
+      In addition to this signature, this method has the following signatures:
+
+
+      \`load(option?: string \| string\[\]): Excel.ChartFont\` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; }): Excel.ChartFont\` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartFont\` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Set chart title to be Calbri, size 10, bold and in red. 
+
+      Excel.run(function (ctx) { 
+          var title = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;
+          title.format.font.name = "Calibri";
+          title.format.font.size = 12;
+          title.format.font.color = "#FF0000";
+          title.format.font.italic =  false;
+          title.format.font.bold = true;
+          title.format.font.underline = "None";
+          return ctx.sync();
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+
+
+      ```javascript
+
+
+      ```
     name: load(option)
     fullName: excel.Excel.ChartFont.load
     langs:
@@ -88,33 +138,6 @@ items:
           description: ''
           type:
             - Excel.Interfaces.ChartFontLoadOptions
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      // Set chart title to be Calbri, size 10, bold and in red. 
-      Excel.run(function (ctx) { 
-          var title = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").title;
-          title.format.font.name = "Calibri";
-          title.format.font.size = 12;
-          title.format.font.color = "#FF0000";
-          title.format.font.italic =  false;
-          title.format.font.bold = true;
-          title.format.font.underline = "None";
-          return ctx.sync();
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
-      ```javascript
-
-      ```
   - uid: excel.Excel.ChartFont.name
     summary: |-
       Font name (e.g. "Calibri")
@@ -131,7 +154,13 @@ items:
         type:
           - string
   - uid: excel.Excel.ChartFont.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      \`set(properties: Excel.ChartFont): void\`
     name: 'set(properties, options)'
     fullName: excel.Excel.ChartFont.set
     langs:
@@ -145,11 +174,13 @@ items:
         description: ''
       parameters:
         - id: properties
-          description: ''
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type:
             - Interfaces.ChartFontUpdateData
         - id: options
-          description: ''
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartFont.size

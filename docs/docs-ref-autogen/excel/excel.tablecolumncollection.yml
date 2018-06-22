@@ -47,16 +47,16 @@ items:
       parameters:
         - id: index
           description: >-
-            Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns
-            with a higher index will be shifted to the side. Zero-indexed.
+            Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end.
+            Columns with a higher index will be shifted to the side. Zero-indexed.
           type:
             - number
         - id: values
-          description: A 2-dimensional array of unformatted values of the table column.
+          description: Optional. A 2-dimensional array of unformatted values of the table column.
           type:
             - Array<Array<boolean | string | number>> | boolean | string | number
         - id: name
-          description: 'Specifies the name of the new column. If null, the default name will be used.'
+          description: 'Optional. Specifies the name of the new column. If null, the default name will be used.'
           type:
             - string
     remarks: |
@@ -243,6 +243,49 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >
+      In addition to this signature, this method has the following signatures:
+
+
+      \`load(option?: string \| string\[\]): Excel.TableColumnCollection\` - Where option is a comma-delimited string or
+      an array of strings that specify the properties/relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; }): Excel.TableColumnCollection\` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableColumnCollection\`
+      - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip specifies the number of items that are
+      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
+      the specified number of items.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Excel.run(function (ctx) { 
+          var tablecolumns = ctx.workbook.tables.getItem('Table1').columns;
+          tablecolumns.load('items');
+          return ctx.sync().then(function() {
+              console.log("tablecolumns Count: " + tablecolumns.count);
+              for (var i = 0; i < tablecolumns.items.length; i++)
+              {
+                  console.log(tablecolumns.items[i].name);
+              }
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
     name: load(option)
     fullName: excel.Excel.TableColumnCollection.load
     langs:
@@ -261,29 +304,6 @@ items:
           description: ''
           type:
             - Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      Excel.run(function (ctx) { 
-          var tablecolumns = ctx.workbook.tables.getItem('Table1').columns;
-          tablecolumns.load('items');
-          return ctx.sync().then(function() {
-              console.log("tablecolumns Count: " + tablecolumns.count);
-              for (var i = 0; i < tablecolumns.items.length; i++)
-              {
-                  console.log(tablecolumns.items[i].name);
-              }
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: excel.Excel.TableColumnCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.TableColumnCollection.toJSON

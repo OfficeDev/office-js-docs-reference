@@ -37,7 +37,7 @@ items:
           - number
   - uid: excel.Excel.RangeBorderCollection.getItem
     summary: |-
-      Gets a border object using its name
+      Gets a border object using its name.
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(index)
@@ -101,7 +101,7 @@ items:
       ```
   - uid: excel.Excel.RangeBorderCollection.getItemAt
     summary: |-
-      Gets a border object using its index
+      Gets a border object using its index.
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
@@ -159,30 +159,31 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    name: load(option)
-    fullName: excel.Excel.RangeBorderCollection.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        load(option?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
-        Excel.RangeBorderCollection;
-      return:
-        type:
-          - Excel.RangeBorderCollection
-        description: ''
-      parameters:
-        - id: option
-          description: ''
-          type:
-            - Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-    remarks: |
+    remarks: >
+      In addition to this signature, this method has the following signatures:
+
+
+      \`load(option?: string \| string\[\]): Excel.RangeBorderCollection\` - Where option is a comma-delimited string or
+      an array of strings that specify the properties/relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; }): Excel.RangeBorderCollection\` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeBorderCollection\`
+      - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip specifies the number of items that are
+      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
+      the specified number of items.
 
 
       #### Examples
 
+
       ```javascript
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
@@ -203,10 +204,14 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
 
+
       ```javascript
+
       // The example below adds grid border around the range.
+
       Excel.run(function (ctx) { 
           var sheetName = "Sheet1";
           var rangeAddress = "A1:F8";
@@ -224,7 +229,26 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
+    name: load(option)
+    fullName: excel.Excel.RangeBorderCollection.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.RangeBorderCollection;
+      return:
+        type:
+          - Excel.RangeBorderCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
   - uid: excel.Excel.RangeBorderCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.RangeBorderCollection.toJSON

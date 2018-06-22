@@ -41,11 +41,11 @@ items:
         description: ''
       parameters:
         - id: name
-          description: Name of the series.
+          description: Optional. Name of the series.
           type:
             - string
         - id: index
-          description: Index value of the series to be added. Zero-indexed.
+          description: Optional. Index value of the series to be added. Zero-indexed.
           type:
             - number
   - uid: excel.Excel.ChartSeriesCollection.count
@@ -136,6 +136,70 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >
+      In addition to this signature, this method has the following signatures:
+
+
+      \`load(option?: string \| string\[\]): Excel.ChartSeriesCollection\` - Where option is a comma-delimited string or
+      an array of strings that specify the properties/relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; }): Excel.ChartSeriesCollection\` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeriesCollection\`
+      - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip specifies the number of items that are
+      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
+      the specified number of items.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Getting the names of series in the series collection.
+
+      Excel.run(function (ctx) { 
+          var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+          seriesCollection.load('items');
+          return ctx.sync().then(function() {
+              for (var i = 0; i < seriesCollection.items.length; i++)
+              {
+                  console.log(seriesCollection.items[i].name);
+              }
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+
+
+      ```javascript
+
+      // Get the number of chart series in collection.
+
+      Excel.run(function (ctx) { 
+          var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
+          seriesCollection.load('count');
+          return ctx.sync().then(function() {
+              console.log("series: Count= " + seriesCollection.count);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
     name: load(option)
     fullName: excel.Excel.ChartSeriesCollection.load
     langs:
@@ -154,45 +218,6 @@ items:
           description: ''
           type:
             - Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      // Getting the names of series in the series collection.
-      Excel.run(function (ctx) { 
-          var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
-          seriesCollection.load('items');
-          return ctx.sync().then(function() {
-              for (var i = 0; i < seriesCollection.items.length; i++)
-              {
-                  console.log(seriesCollection.items[i].name);
-              }
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
-      ```javascript
-      // Get the number of chart series in collection.
-      Excel.run(function (ctx) { 
-          var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
-          seriesCollection.load('count');
-          return ctx.sync().then(function() {
-              console.log("series: Count= " + seriesCollection.count);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: excel.Excel.ChartSeriesCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartSeriesCollection.toJSON

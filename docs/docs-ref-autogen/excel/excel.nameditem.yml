@@ -3,7 +3,8 @@ items:
   - uid: excel.Excel.NamedItem
     summary: >-
       Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type
-      below), range object, reference to a range. This object can be used to obtain range object associated with names.
+      below), range object, or a reference to a range. This object can be used to obtain range object associated with
+      names.
 
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
@@ -34,7 +35,7 @@ items:
       - excel.Excel.NamedItem.worksheetOrNullObject
   - uid: excel.Excel.NamedItem.arrayValues
     summary: |-
-      Returns an object containing values and types of the named item.
+      Returns an object containing values and types of the named item. Read-only.
 
       \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: arrayValues
@@ -210,6 +211,46 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >
+      In addition to this signature, this method has the following signatures:
+
+
+      \`load(option?: string \| string\[\]): Excel.NamedItem\` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; }): Excel.NamedItem\` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.NamedItem\` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Excel.run(function (ctx) { 
+          var names = ctx.workbook.names;
+          var namedItem = names.getItem('MyRange');
+          namedItem.load('type');
+          return ctx.sync().then(function() {
+                  console.log(namedItem.type);
+          });
+      }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+      });
+
+      ```
     name: load(option)
     fullName: excel.Excel.NamedItem.load
     langs:
@@ -226,26 +267,6 @@ items:
           description: ''
           type:
             - Excel.Interfaces.NamedItemLoadOptions
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      Excel.run(function (ctx) { 
-          var names = ctx.workbook.names;
-          var namedItem = names.getItem('MyRange');
-          namedItem.load('type');
-          return ctx.sync().then(function() {
-                  console.log(namedItem.type);
-          });
-      }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-      });
-      ```
   - uid: excel.Excel.NamedItem.name
     summary: |-
       The name of the object. Read-only.
@@ -262,8 +283,10 @@ items:
         type:
           - string
   - uid: excel.Excel.NamedItem.scope
-    summary: |-
-      Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.
+    summary: >-
+      Indicates whether the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet,
+      Workbook. Read-only.
+
 
       \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: scope
@@ -277,7 +300,13 @@ items:
         type:
           - Excel.NamedItemScope | "Worksheet" | "Workbook"
   - uid: excel.Excel.NamedItem.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      \`set(properties: Excel.NamedItem): void\`
     name: 'set(properties, options)'
     fullName: excel.Excel.NamedItem.set
     langs:
@@ -291,11 +320,13 @@ items:
         description: ''
       parameters:
         - id: properties
-          description: ''
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type:
             - Interfaces.NamedItemUpdateData
         - id: options
-          description: ''
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
   - uid: excel.Excel.NamedItem.toJSON
@@ -359,7 +390,7 @@ items:
           - boolean
   - uid: excel.Excel.NamedItem.worksheet
     summary: >-
-      Returns the worksheet on which the named item is scoped to. Throws an error if the items is scoped to the workbook
+      Returns the worksheet on which the named item is scoped to. Throws an error if the item is scoped to the workbook
       instead.
 
 

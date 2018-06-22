@@ -44,11 +44,11 @@ items:
           type:
             - 'Excel.SortField[]'
         - id: matchCase
-          description: Whether to have the casing impact string ordering.
+          description: Optional. Whether to have the casing impact string ordering.
           type:
             - boolean
         - id: method
-          description: The ordering method used for Chinese characters.
+          description: Optional. The ordering method used for Chinese characters.
           type:
             - Excel.SortMethod
     remarks: |
@@ -94,7 +94,7 @@ items:
         description: ''
   - uid: excel.Excel.TableSort.fields
     summary: |-
-      Represents the current conditions used to last sort the table.
+      Represents the current conditions used to last sort the table. Read-only.
 
       \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: fields
@@ -111,6 +111,24 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      \`load(option?: string \| string\[\]): Excel.TableSort\` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; }): Excel.TableSort\` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableSort\` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
     name: load(option)
     fullName: excel.Excel.TableSort.load
     langs:
@@ -129,7 +147,7 @@ items:
             - Excel.Interfaces.TableSortLoadOptions
   - uid: excel.Excel.TableSort.matchCase
     summary: |-
-      Represents whether the casing impacted the last sort of the table.
+      Represents whether the casing impacted the last sort of the table. Read-only.
 
       \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: matchCase
@@ -144,7 +162,7 @@ items:
           - boolean
   - uid: excel.Excel.TableSort.method
     summary: |-
-      Represents Chinese character ordering method last used to sort the table.
+      Represents Chinese character ordering method last used to sort the table. Read-only.
 
       \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: method

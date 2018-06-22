@@ -99,12 +99,12 @@ items:
         description: ''
       parameters:
         - id: markAllDirty
-          description: ''
+          description: 'True, to mark all as dirty.'
           type:
             - boolean
   - uid: excel.Excel.Worksheet.charts
     summary: |-
-      Returns collection of charts that are part of the worksheet.
+      Returns collection of charts that are part of the worksheet. Read-only.
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: charts
@@ -128,22 +128,18 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'copy(positionType?: Excel.WorksheetPositionType | string, relativeTo?: Excel.Worksheet): Excel.Worksheet;'
+      content: 'copy(positionType?: Excel.WorksheetPositionType, relativeTo?: Excel.Worksheet): Excel.Worksheet;'
       return:
         type:
           - Excel.Worksheet
         description: ''
       parameters:
         - id: positionType
-          description: >-
-            Specifies where to put the copy relative to the worksheet specified in relativeTo param. Can be
-            Excel.WorksheetPositionType or string equivalent. Must not be Excel.WorksheetPositionType.none or "None".
+          description: Optional.
           type:
-            - Excel.WorksheetPositionType | string
+            - Excel.WorksheetPositionType
         - id: relativeTo
-          description: >-
-            Specifies the worksheet that is the basis for intepreting the positionType param. If not specified, the
-            worksheet on which the copy() is called is assumed.
+          description: Optional.
           type:
             - Excel.Worksheet
     remarks: |
@@ -202,7 +198,7 @@ items:
       ```
   - uid: excel.Excel.Worksheet.freezePanes
     summary: |-
-      Gets an object that can be used to manipulate frozen panes on the worksheet.
+      Gets an object that can be used to manipulate frozen panes on the worksheet. Read-only.
 
       \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: freezePanes
@@ -218,7 +214,7 @@ items:
   - uid: excel.Excel.Worksheet.getCell
     summary: >-
       Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
-      bounds of its parent range, so long as it's stays within the worksheet grid.
+      bounds of its parent range, so long as it stays within the worksheet grid.
 
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
@@ -283,7 +279,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: 'If true, considers only visible worksheets, skipping over any hidden ones.'
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
     remarks: |
@@ -337,7 +333,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: 'If true, considers only visible worksheets, skipping over any hidden ones.'
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
   - uid: excel.Excel.Worksheet.getPrevious
@@ -358,7 +354,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: 'If true, considers only visible worksheets, skipping over any hidden ones.'
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
     remarks: |
@@ -408,7 +404,7 @@ items:
         description: ''
       parameters:
         - id: visibleOnly
-          description: 'If true, considers only visible worksheets, skipping over any hidden ones.'
+          description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
   - uid: excel.Excel.Worksheet.getRange
@@ -429,7 +425,7 @@ items:
         description: ''
       parameters:
         - id: address
-          description: 'The address or the name of the range. If not specified, the entire worksheet range is returned.'
+          description: 'Optional. The address or the name of the range. If not specified, the entire worksheet range is returned.'
           type:
             - string
     remarks: |
@@ -525,7 +521,7 @@ items:
   - uid: excel.Excel.Worksheet.getUsedRange
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
-      If the entire worksheet is blank, this function will return the top left cell (i.e.,: it will \*not\* throw an
+      If the entire worksheet is blank, this function will return the top left cell (i.e. it will \*not\* throw an
       error).
 
 
@@ -543,7 +539,9 @@ items:
         description: ''
       parameters:
         - id: valuesOnly
-          description: 'Considers only cells with values as used cells (ignoring formatting). \[Api set: ExcelApi 1.2\]'
+          description: >-
+            Optional. If true, considers only cells with values as used cells (ignoring formatting). \[Api set: ExcelApi
+            1.2\]
           type:
             - boolean
     remarks: |
@@ -587,7 +585,7 @@ items:
         description: ''
       parameters:
         - id: valuesOnly
-          description: Considers only cells with values as used cells.
+          description: Optional. Considers only cells with values as used cells.
           type:
             - boolean
   - uid: excel.Excel.Worksheet.id
@@ -611,6 +609,67 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
+    remarks: >
+      In addition to this signature, this method has the following signatures:
+
+
+      \`load(option?: string \| string\[\]): Excel.Worksheet\` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; }): Excel.Worksheet\` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Worksheet\` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Get worksheet properties based on sheet name.
+
+      Excel.run(function (ctx) { 
+          var wSheetName = 'Sheet1';
+          var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+          worksheet.load('position')
+          return ctx.sync().then(function() {
+                  console.log(worksheet.position);
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+
+
+      ```javascript
+
+      // Set worksheet position. 
+
+      Excel.run(function (ctx) { 
+          var wSheetName = 'Sheet1';
+          var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
+          worksheet.position = 2;
+          return ctx.sync(); 
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
     name: load(option)
     fullName: excel.Excel.Worksheet.load
     langs:
@@ -627,42 +686,6 @@ items:
           description: ''
           type:
             - Excel.Interfaces.WorksheetLoadOptions
-    remarks: |
-
-
-      #### Examples
-
-      ```javascript
-      // Get worksheet properties based on sheet name.
-      Excel.run(function (ctx) { 
-          var wSheetName = 'Sheet1';
-          var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-          worksheet.load('position')
-          return ctx.sync().then(function() {
-                  console.log(worksheet.position);
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
-
-      ```javascript
-      // Set worksheet position. 
-      Excel.run(function (ctx) { 
-          var wSheetName = 'Sheet1';
-          var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-          worksheet.position = 2;
-          return ctx.sync(); 
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
   - uid: excel.Excel.Worksheet.name
     summary: |-
       The display name of the worksheet.
@@ -680,7 +703,7 @@ items:
           - string
   - uid: excel.Excel.Worksheet.names
     summary: |-
-      Collection of names scoped to the current worksheet.
+      Collection of names scoped to the current worksheet. Read-only.
 
       \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: names
@@ -755,7 +778,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
   - uid: excel.Excel.Worksheet.onSelectionChanged
     summary: |-
-      Occurs when the selection changed on a specific worksheet.
+      Occurs when the selection changes on a specific worksheet.
 
       \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: onSelectionChanged
@@ -770,7 +793,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
   - uid: excel.Excel.Worksheet.pivotTables
     summary: |-
-      Collection of PivotTables that are part of the worksheet.
+      Collection of PivotTables that are part of the worksheet. Read-only.
 
       \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: pivotTables
@@ -800,7 +823,7 @@ items:
           - number
   - uid: excel.Excel.Worksheet.protection
     summary: |-
-      Returns sheet protection object for a worksheet.
+      Returns sheet protection object for a worksheet. Read-only.
 
       \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: protection
@@ -814,7 +837,13 @@ items:
         type:
           - Excel.WorksheetProtection
   - uid: excel.Excel.Worksheet.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      \`set(properties: Excel.Worksheet): void\`
     name: 'set(properties, options)'
     fullName: excel.Excel.Worksheet.set
     langs:
@@ -828,11 +857,13 @@ items:
         description: ''
       parameters:
         - id: properties
-          description: ''
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type:
             - Interfaces.WorksheetUpdateData
         - id: options
-          description: ''
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
   - uid: excel.Excel.Worksheet.standardHeight
@@ -902,7 +933,7 @@ items:
       ```
   - uid: excel.Excel.Worksheet.tables
     summary: |-
-      Collection of tables that are part of the worksheet.
+      Collection of tables that are part of the worksheet. Read-only.
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
     name: tables

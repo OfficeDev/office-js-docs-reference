@@ -48,7 +48,9 @@ items:
     type: field
     numericValue: '"Hyperlinks"'
   - uid: excel.Excel.ClearApplyTo.removeHyperlinks
-    summary: 'Removes hyperlinks and formatting for the cell but leaves content, conditional formats and data validation intact.'
+    summary: >-
+      Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation
+      intact.
     name: removeHyperlinks
     fullName: excel.Excel.ClearApplyTo.removeHyperlinks
     langs:

@@ -117,28 +117,31 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
-    name: load(option)
-    fullName: excel.Excel.TableRow.load
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'load(option?: Excel.Interfaces.TableRowLoadOptions): Excel.TableRow;'
-      return:
-        type:
-          - Excel.TableRow
-        description: ''
-      parameters:
-        - id: option
-          description: ''
-          type:
-            - Excel.Interfaces.TableRowLoadOptions
-    remarks: |
+    remarks: >
+      In addition to this signature, this method has the following signatures:
+
+
+      \`load(option?: string \| string\[\]): Excel.TableRow\` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; }): Excel.TableRow\` - Where option.select is a
+      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
+      comma-delimited string that specifies the relationships to load.
+
+
+      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableRow\` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
 
 
       #### Examples
 
+
       ```javascript
+
       Excel.run(function (ctx) { 
           var tableName = 'Table1';
           var row = ctx.workbook.tables.getItem(tableName).rows.getItem(0);
@@ -152,9 +155,12 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
 
+
       ```javascript
+
       Excel.run(function (ctx) { 
           var tables = ctx.workbook.tables;
           var newValues = [["New", "Values", "For", "New", "Row"]];
@@ -171,9 +177,32 @@ items:
               console.log("Debug info: " + JSON.stringify(error.debugInfo));
           }
       });
+
       ```
+    name: load(option)
+    fullName: excel.Excel.TableRow.load
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.TableRowLoadOptions): Excel.TableRow;'
+      return:
+        type:
+          - Excel.TableRow
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.TableRowLoadOptions
   - uid: excel.Excel.TableRow.set
-    summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      \`set(properties: Excel.TableRow): void\`
     name: 'set(properties, options)'
     fullName: excel.Excel.TableRow.set
     langs:
@@ -187,11 +216,13 @@ items:
         description: ''
       parameters:
         - id: properties
-          description: ''
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
           type:
             - Interfaces.TableRowUpdateData
         - id: options
-          description: ''
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
   - uid: excel.Excel.TableRow.toJSON
@@ -209,7 +240,7 @@ items:
   - uid: excel.Excel.TableRow.values
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
-      Cell that contain an error will return the error string.
+      Cells that contain an error will return the error string.
 
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
