@@ -1,8 +1,8 @@
 # item
 
-### [Office](Office.md)[.context](Office-context.md)[.mailbox](Office-mailbox.md).item
+### [Office](Office.md)[.context](Office.context.md)[.mailbox](Office.context.mailbox.md).item
 
-The `item` namespace is used to access the currently selected message, meeting request, or appointment. You can determine the type of the `item` by using the [itemType](Office-item.md#itemtype-officemailboxenumsitemtype) property.
+The `item` namespace is used to access the currently selected message, meeting request, or appointment. You can determine the type of the `item` by using the [itemType](Office.context.mailbox.item.md#itemtype-officemailboxenumsitemtype) property.
 
 ##### Requirements
 
@@ -265,7 +265,7 @@ var modified = Office.context.mailbox.item.dateTimeModified;
 
 Gets or sets the date and time that the appointment is to end.
 
-The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttimetimevalue--localclienttimejavascriptapioutlook15officelocalclienttime) method to convert the end property value to the client’s local date and time.
+The `end` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office.context.mailbox.md#converttolocalclienttimetimevalue--localclienttimejavascriptapioutlook15officelocalclienttime) method to convert the end property value to the client’s local date and time.
 
 ##### Read mode
 
@@ -275,7 +275,7 @@ The `end` property returns a `Date` object.
 
 The `end` property returns a `Time` object.
 
-When you use the [`Time.setAsync`](/javascript/api/outlook_1_5/office.Time.md#setasyncdatetime-options-callback) method to set the end time, you should use the [`convertToUtcClientTime`](Office-mailbox.md#converttoutcclienttimeinput--date) method to convert the local time on the client to UTC for the server.
+When you use the [`Time.setAsync`](/javascript/api/outlook_1_5/office.Time.md#setasyncdatetime-options-callback) method to set the end time, you should use the [`convertToUtcClientTime`](Office.context.mailbox.md#converttoutcclienttimeinput--date) method to convert the local time on the client to UTC for the server.
 
 ##### Type:
 
@@ -314,7 +314,7 @@ Office.context.mailbox.item.end.setAsync(endTime, options, function(result) {
 
 Gets the email address of the sender of a message. Read mode only.
 
-The `from` and [`sender`](Office-item.md#sender-emailaddressdetails) properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
+The `from` and [`sender`](Office.context.mailbox.item.md#sender-emailaddressdetails) properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
 
 > **Note:** The `recipientType` property of the `EmailAddressDetails` object in the `from` property is `undefined`.
 
@@ -386,9 +386,9 @@ var itemClass = Office.context.mailbox.item.itemClass;
 
 Gets the Exchange Web Services item identifier for the current item. Read mode only.
 
-> **Note:** The identifier returned by the `itemId` property is the same as the Exchange Web Services item identifier. The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using [Office.context.mailbox.convertToRestId](Office-mailbox.md). For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id).
+> **Note:** The identifier returned by the `itemId` property is the same as the Exchange Web Services item identifier. The `itemId` property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using [Office.context.mailbox.convertToRestId](Office.context.mailbox.md). For more details, see [Use the Outlook REST APIs from an Outlook add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id).
 
-The `itemId` property is not available in compose mode. If an item identifier is required, the [`saveAsync`](Office-item.md#saveasyncoptions-callbackoptions-callback) method can be used to save the item to the store, which will return the item identifier in the [`AsyncResult.value`](/javascript/api/office/office_1_5.asyncresult) parameter in the callback function.
+The `itemId` property is not available in compose mode. If an item identifier is required, the [`saveAsync`](Office.context.mailbox.item.md#saveasyncoptions-callbackoptions-callback) method can be used to save the item to the store, which will return the item identifier in the [`AsyncResult.value`](/javascript/api/office/office_1_5.asyncresult) parameter in the callback function.
 
 ##### Type:
 
@@ -482,7 +482,7 @@ function callback(asyncResult) {
 
 Gets the subject of an item, with all prefixes removed (including `RE:` and `FWD:`). Read mode only.
 
-The normalizedSubject property gets the subject of the item, with any standard prefixes (such as `RE:` and `FW:`) that are added by email programs. To get the subject of the item with the prefixes intact, use the [`subject`](Office-item.md#subject-stringsubject) property.
+The normalizedSubject property gets the subject of the item, with any standard prefixes (such as `RE:` and `FW:`) that are added by email programs. To get the subject of the item with the prefixes intact, use the [`subject`](Office.context.mailbox.item.md#subject-stringsubject) property.
 
 ##### Type:
 
@@ -617,7 +617,7 @@ function callback(asyncResult) {
 
 Gets the email address of the sender of an email message. Read mode only.
 
-The [`from`](Office-item.md#from-emailaddressdetails) and `sender` properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
+The [`from`](Office.context.mailbox.item.md#from-emailaddressdetails) and `sender` properties represent the same person unless the message is sent by a delegate. In that case, the `from` property represents the delegator, and the sender property represents the delegate.
 
 > **Note:** The `recipientType` property of the `EmailAddressDetails` object in the `sender` property is `undefined`.
 
@@ -644,7 +644,7 @@ var senderAddress = Office.context.mailbox.item.sender.emailAddress;
 
 Gets or sets the date and time that the appointment is to begin.
 
-The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office-mailbox.md#converttolocalclienttimetimevalue--localclienttimejavascriptapioutlook15officelocalclienttime) method to convert the value to the client’s local date and time.
+The `start` property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the [`convertToLocalClientTime`](Office.context.mailbox.md#converttolocalclienttimetimevalue--localclienttimejavascriptapioutlook15officelocalclienttime) method to convert the value to the client’s local date and time.
 
 ##### Read mode
 
@@ -654,7 +654,7 @@ The `start` property returns a `Date` object.
 
 The `start` property returns a `Time` object.
 
-When you use the [`Time.setAsync`](/javascript/api/outlook_1_5/office.Time.md#setasyncdatetime-options-callback) method to set the start time, you should use the [`convertToUtcClientTime`](Office-mailbox.md#converttoutcclienttimeinput--date) method to convert the local time on the client to UTC for the server.
+When you use the [`Time.setAsync`](/javascript/api/outlook_1_5/office.Time.md#setasyncdatetime-options-callback) method to set the start time, you should use the [`convertToUtcClientTime`](Office.context.mailbox.md#converttoutcclienttimeinput--date) method to convert the local time on the client to UTC for the server.
 
 ##### Type:
 
@@ -697,7 +697,7 @@ The `subject` property gets or sets the entire subject of the item, as sent by t
 
 ##### Read mode
 
-The `subject` property returns a string. Use the [`normalizedSubject`](Office-item.md#normalizedsubject-string) property to get the subject minus any leading prefixes such as `RE:` and `FW:`.
+The `subject` property returns a string. Use the [`normalizedSubject`](Office.context.mailbox.item.md#normalizedsubject-string) property to get the subject minus any leading prefixes such as `RE:` and `FW:`.
 
 ```
 var subject = Office.context.mailbox.item.subject;
@@ -770,7 +770,7 @@ Adds a file to a message or appointment as an attachment.
 
 The `addFileAttachmentAsync` method uploads the file at the specified URI and attaches it to the item in the compose form.
 
-You can subsequently use the identifier with the [`removeAttachmentAsync`](Office-item.md#removeattachmentasyncattachmentid-options-callback) method to remove the attachment in the same session.
+You can subsequently use the identifier with the [`removeAttachmentAsync`](Office.context.mailbox.item.md#removeattachmentasyncattachmentid-options-callback) method to remove the attachment in the same session.
 
 ##### Parameters:
 |Name| Type| Attributes| Description|
@@ -848,7 +848,7 @@ Adds an Exchange item, such as a message, as an attachment to the message or app
 
 The `addItemAttachmentAsync` method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, `asyncResult`, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the `options` parameter to pass state information to the callback method, if needed.
 
-You can subsequently use the identifier with the [`removeAttachmentAsync`](Office-item.md#removeattachmentasyncattachmentid-options-callback) method to remove the attachment in the same session.
+You can subsequently use the identifier with the [`removeAttachmentAsync`](Office.context.mailbox.item.md#removeattachmentasyncattachmentid-options-callback) method to remove the attachment in the same session.
 
 If your Office add-in is running in Outlook Web App, the `addItemAttachmentAsync` method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
 

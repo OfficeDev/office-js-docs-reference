@@ -1,7 +1,7 @@
 
 # userProfile
 
-### [Office](Office.md)[.context](Office-context.md)[.mailbox](Office-mailbox.md). userProfile
+### [Office](Office.md)[.context](Office.context.md)[.mailbox](Office.context.mailbox.md). userProfile
 
 ##### Requirements
 
