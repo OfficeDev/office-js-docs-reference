@@ -13,8 +13,10 @@ items:
       - userProfile: Provides information about the user in an Outlook add-in.
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: Restricted
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: Restricted
+
 
       Applicable Outlook mode: Compose or read
     name: Office.Mailbox
@@ -28,6 +30,7 @@ items:
       - Outlook_1_3.Office.Mailbox.convertToLocalClientTime
       - Outlook_1_3.Office.Mailbox.convertToRestId
       - Outlook_1_3.Office.Mailbox.convertToUtcClientTime
+      - Outlook_1_3.Office.Mailbox.diagnostics
       - Outlook_1_3.Office.Mailbox.displayAppointmentForm
       - Outlook_1_3.Office.Mailbox.displayMessageForm
       - Outlook_1_3.Office.Mailbox.displayNewAppointmentForm
@@ -36,6 +39,7 @@ items:
       - Outlook_1_3.Office.Mailbox.getUserIdentityTokenAsync
       - Outlook_1_3.Office.Mailbox.item
       - Outlook_1_3.Office.Mailbox.makeEwsRequestAsync
+      - Outlook_1_3.Office.Mailbox.userProfile
   - uid: Outlook_1_3.Office.Mailbox.convertToEwsId
     summary: >-
       Converts an item ID formatted for REST into EWS format.
@@ -50,8 +54,10 @@ items:
 
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: Restricted
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: Restricted
+
 
       Applicable Outlook mode: Compose or read
     name: 'convertToEwsId(itemId, restVersion)'
@@ -92,8 +98,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
     name: convertToLocalClientTime(timeValue)
@@ -121,12 +129,13 @@ items:
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs
-      (such as the \[Outlook Mail API\](https://msdn.microsoft.com/office/office365/APi/mail-rest-operations) or the
-      \[Microsoft Graph\](http://graph.microsoft.io/)). The convertToRestId method converts an EWS-formatted ID into the
-      proper format for REST.
+      (such as the [Outlook Mail API](https://msdn.microsoft.com/office/office365/APi/mail-rest-operations) or the
+      [Microsoft Graph](http://graph.microsoft.io/)<!-- -->. The convertToRestId method converts an EWS-formatted ID
+      into the proper format for REST.
 
 
-      Minimum permission level: Restricted
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: Restricted
 
 
       Applicable Outlook mode: Compose or read
@@ -160,8 +169,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
     name: convertToUtcClientTime(input)
@@ -180,6 +191,51 @@ items:
           description: The local time value to convert.
           type:
             - LocalClientTime
+  - uid: Outlook_1_3.Office.Mailbox.diagnostics
+    summary: >-
+      Provides diagnostic information to an Outlook add-in.
+
+
+      Contains the following members:
+
+
+      - hostName (string): A string that represents the name of the host application. It be one of the following values:
+      Outlook, Mac Outlook, OutlookIOS, or OutlookWebApp.
+
+
+      - hostVersion (string): A string that represents the version of either the host application or the Exchange
+      Server. If the mail add-in is running on the Outlook desktop client or Outlook for iOS, the hostVersion property
+      returns the version of the host application, Outlook. In Outlook Web App, the property returns the version of the
+      Exchange Server. An example is the string 15.0.468.0.
+
+
+      - OWAView (string): A string that represents the current view of Outlook Web App. If the host application is not
+      Outlook Web App, then accessing this property results in undefined. Outlook Web App has three views (OneColumn -
+      displayed when the screen is narrow, TwoColumns - displayed when the screen is wider, and ThreeColumns - displayed
+      when the screen is wide.) that correspond to the width of the screen and the window, and the number of columns
+      that can be displayed.
+
+
+      More information is under [Office.Diagnostics](xref:Outlook_1_3.Office.Diagnostics)<!-- -->.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
+
+      Applicable Outlook mode: Compose or read
+    name: diagnostics
+    fullName: Outlook_1_3.Office.Mailbox.diagnostics
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'diagnostics: Diagnostics;'
+      return:
+        type:
+          - Diagnostics
   - uid: Outlook_1_3.Office.Mailbox.displayAppointmentForm
     summary: >-
       Displays an existing calendar appointment.
@@ -207,8 +263,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
     name: displayAppointmentForm(itemId)
@@ -253,8 +311,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
     name: displayMessageForm(itemId)
@@ -301,8 +361,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Read
     name: displayNewAppointmentForm(parameters)
@@ -339,11 +401,12 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can
-      create a remote service to \[get attachments from the selected
-      item\](https://msdn.microsoft.com/library/office/dn148008.aspx).
+      create a remote service to [get attachments from the selected
+      item](https://msdn.microsoft.com/library/office/dn148008.aspx)<!-- -->.
 
 
-      Minimum permission level: ReadItem
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
 
 
       Applicable Outlook mode: Compose or read
@@ -381,8 +444,10 @@ items:
 
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose and read
     name: 'getCallbackTokenAsync(callback, userContext)'
@@ -415,11 +480,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      The getUserIdentityTokenAsync method returns a token that you can use to identify and \[authenticate the add-in
-      and user with a third-party system\](https://msdn.microsoft.com/library/office/fp179828.aspx).
+      The getUserIdentityTokenAsync method returns a token that you can use to identify and [authenticate the add-in and
+      user with a third-party system](https://msdn.microsoft.com/library/office/fp179828.aspx)<!-- -->.
 
 
-      Minimum permission level: ReadItem
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
 
 
       Applicable Outlook mode: Compose and read
@@ -502,7 +568,7 @@ items:
       15.0.4535.1004, you should set the encoding value to ISO-8859-1.
 
 
-      &lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
+      `&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;`
 
 
       You do not need to set the encoding value when your mail app is running in Outlook on the web. You can determine
@@ -512,8 +578,11 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadWriteMailbox
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->:
+      ReadWriteMailbox
+
 
       Applicable Outlook mode: Compose and read
     name: 'makeEwsRequestAsync(data, callback, userContext)'
@@ -542,3 +611,20 @@ items:
           description: Optional. Any state data that is passed to the asynchronous method.
           type:
             - any
+  - uid: Outlook_1_3.Office.Mailbox.userProfile
+    summary: >-
+      Information about the user associated with the mailbox. This includes their account type, display name, email
+      adddress, and time zone.
+
+
+      More information is under [Office.UserProfile](xref:Outlook_1_3.Office.UserProfile)
+    name: userProfile
+    fullName: Outlook_1_3.Office.Mailbox.userProfile
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'userProfile: UserProfile;'
+      return:
+        type:
+          - UserProfile

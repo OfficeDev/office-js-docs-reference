@@ -648,8 +648,6 @@ items:
                 uid: Outlook_1_6.Office.AppointmentCompose
               - name: AppointmentRead
                 uid: Outlook_1_6.Office.AppointmentRead
-              - name: AsyncContextOptions
-                uid: Outlook_1_6.Office.AsyncContextOptions
               - name: AttachmentDetails
                 uid: Outlook_1_6.Office.AttachmentDetails
               - name: Body
@@ -722,8 +720,6 @@ items:
                 uid: Outlook_1_5.Office.AppointmentCompose
               - name: AppointmentRead
                 uid: Outlook_1_5.Office.AppointmentRead
-              - name: AsyncContextOptions
-                uid: Outlook_1_5.Office.AsyncContextOptions
               - name: AttachmentDetails
                 uid: Outlook_1_5.Office.AttachmentDetails
               - name: Body
@@ -796,8 +792,6 @@ items:
                 uid: Outlook_1_4.Office.AppointmentCompose
               - name: AppointmentRead
                 uid: Outlook_1_4.Office.AppointmentRead
-              - name: AsyncContextOptions
-                uid: Outlook_1_4.Office.AsyncContextOptions
               - name: AttachmentDetails
                 uid: Outlook_1_4.Office.AttachmentDetails
               - name: Body
@@ -870,8 +864,6 @@ items:
                 uid: Outlook_1_3.Office.AppointmentCompose
               - name: AppointmentRead
                 uid: Outlook_1_3.Office.AppointmentRead
-              - name: AsyncContextOptions
-                uid: Outlook_1_3.Office.AsyncContextOptions
               - name: AttachmentDetails
                 uid: Outlook_1_3.Office.AttachmentDetails
               - name: Body
@@ -944,8 +936,6 @@ items:
                 uid: Outlook_1_2.Office.AppointmentCompose
               - name: AppointmentRead
                 uid: Outlook_1_2.Office.AppointmentRead
-              - name: AsyncContextOptions
-                uid: Outlook_1_2.Office.AsyncContextOptions
               - name: AttachmentDetails
                 uid: Outlook_1_2.Office.AttachmentDetails
               - name: Body
@@ -1009,8 +999,6 @@ items:
                 uid: Outlook_1_1.Office.AppointmentCompose
               - name: AppointmentRead
                 uid: Outlook_1_1.Office.AppointmentRead
-              - name: AsyncContextOptions
-                uid: Outlook_1_1.Office.AsyncContextOptions
               - name: AttachmentDetails
                 uid: Outlook_1_1.Office.AttachmentDetails
               - name: Body

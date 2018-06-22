@@ -11,7 +11,6 @@ items:
       - Outlook_1_2.Office.AppointmentCompose
       - Outlook_1_2.Office.AppointmentForm
       - Outlook_1_2.Office.AppointmentRead
-      - Outlook_1_2.Office.AsyncContextOptions
       - Outlook_1_2.Office.AttachmentDetails
       - Outlook_1_2.Office.Body
       - Outlook_1_2.Office.CoercionTypeOptions
@@ -55,8 +54,6 @@ references:
     name: Office.AppointmentForm
   - uid: Outlook_1_2.Office.AppointmentRead
     name: Office.AppointmentRead
-  - uid: Outlook_1_2.Office.AsyncContextOptions
-    name: Office.AsyncContextOptions
   - uid: Outlook_1_2.Office.AttachmentDetails
     name: Office.AttachmentDetails
   - uid: Outlook_1_2.Office.Body
