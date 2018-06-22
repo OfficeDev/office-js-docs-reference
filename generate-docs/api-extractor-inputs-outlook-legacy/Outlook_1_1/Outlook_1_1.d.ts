@@ -16,15 +16,15 @@ export declare namespace Office {
             /**
              * The attachment is a file
              */
-            File,
+            File = "file",
             /**
              * The attachment is an Exchange item
              */
-            Item,
+            Item = "item",
             /**
              * The attachment is stored in a cloud location, such as OneDrive. The id property of the attachment contains a URL to the file.
              */
-            Cloud
+            Cloud = "cloud"
         }
         /**
          * Specifies an entity's type.
@@ -38,31 +38,31 @@ export declare namespace Office {
             /**
              * Specifies that the entity is a meeting suggestion.
              */
-            MeetingSuggestion,
+            MeetingSuggestion = "meetingSuggestion",
             /**
              * Specifies that the entity is a task suggestion.
              */
-            TaskSuggestion,
+            TaskSuggestion = "taskSuggestion",
             /**
              * Specifies that the entity is a postal address.
              */
-            Address,
+            Address = "address",
             /**
              * Specifies that the entity is an SMTP email address.
              */
-            EmailAddress,
+            EmailAddress = "emailAddress",
             /**
              * Specifies that the entity is an Internet URL.
              */
-            Url,
+            Url = "url",
             /**
              * Specifies that the entity is a US phone number.
              */
-            PhoneNumber,
+            PhoneNumber = "phoneNumber",
             /**
              * Specifies that the entity is a contact.
              */
-            Contact
+            Contact = "contact"
         }
         /**
          * Specifies an item's type.
@@ -76,11 +76,11 @@ export declare namespace Office {
             /**
              * An email, meeting request, meeting response, or meeting cancellation.
              */
-            Message,
+            Message = "message",
             /**
              * An appointment item.
              */
-            Appointment
+            Appointment = "appointment"
         }
         /**
          * Specifies the type of recipient for an appointment.
@@ -94,19 +94,19 @@ export declare namespace Office {
             /**
              * Specifies that the recipient is a distribution list containing a list of email addresses.
              */
-            DistributionList,
+            DistributionList = "distributionList",
             /**
              * Specifies that the recipient is an SMTP email address that is on the Exchange server.
              */
-            User,
+            User = "user",
             /**
              * Specifies that the recipient is an SMTP email address that is not on the Exchange server.
              */
-            ExternalUser,
+            ExternalUser = "externalUser",
             /**
              * Specifies that the recipient is not one of the other recipient types.
              */
-            Other
+            Other = "other"
         }
         /**  
          * Specifies the type of response to a meeting invitation.
@@ -120,27 +120,24 @@ export declare namespace Office {
             /**
              * There has been no response from the attendee.
              */
-            None,
+            None = "none",
             /**
              * The attendee is the meeting organizer.
              */
-            Organizer,
+            Organizer = "organizer",
             /**
              * The meeting request was tentatively accepted by the attendee.
              */
-            Tentative,
+            Tentative = "tentative",
             /**
              * The meeting request was accepted by the attendee.
              */
-            Accepted,
+            Accepted = "accepted",
             /**
              * The meeting request was declined by the attendee.
              */
-            Declined
+            Declined = "declined"
         }
-    }
-    export interface AsyncContextOptions {
-        asyncContext?: any;
     }
     export interface CoercionTypeOptions {
         coercionType?: CoercionType;
@@ -163,7 +160,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Read
      */
@@ -199,7 +196,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.1]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -210,7 +207,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -224,14 +221,24 @@ export declare namespace Office {
          *
          * The prependAsync method inserts the specified string at the beginning of the item body. After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to LPNoLP.
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         * 
          * Applicable Outlook mode: Compose
+         * 
          * Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
+         * 
+         * In addition to the main signature, this method also has these signatures:
+         * 
+         * `prependAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void;`
+         * 
+         * `prependAsync(data: string, callback: (result: AsyncResult) => void): void;`
+         * 
+         * `prependAsync(data: string): void;`
          *
          * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -245,13 +252,15 @@ export declare namespace Office {
          *
          * The prependAsync method inserts the specified string at the beginning of the item body. After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to LPNoLP.
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         * 
          * Applicable Outlook mode: Compose
+         * 
          * Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
          *
          * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.
@@ -265,12 +274,12 @@ export declare namespace Office {
          *
          * The prependAsync method inserts the specified string at the beginning of the item body. After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to LPNoLP.
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          * Applicable Outlook mode: Compose
          * Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
          *
@@ -283,37 +292,44 @@ export declare namespace Office {
          *
          * The prependAsync method inserts the specified string at the beginning of the item body. After insertion, the cursor is returned to its original place, relative to the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to LPNoLP.
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          * Applicable Outlook mode: Compose
          * Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
          *
          * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.
          */
         prependAsync(data: string): void;
-
         /**
          * Replaces the selection in the body with the specified text.
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to LPNoLP.
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
          * Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
          *
          * InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.
-         *
+         * 
+         * In addition to the main signature, this method also has these signatures:
+         * 
+         * `setSelectedDataAsync(data: string, options: AsyncContextOptions & CoercionTypeOptions): void;`
+         * 
+         * `setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;`
+         * 
+         * `setSelectedDataAsync(data: string): void;`
+         *         
          * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -326,12 +342,12 @@ export declare namespace Office {
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to LPNoLP.
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -350,12 +366,12 @@ export declare namespace Office {
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to LPNoLP.
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -372,12 +388,12 @@ export declare namespace Office {
          *
          * The setSelectedDataAsync method inserts the specified string at the cursor location in the body of the item, or, if text is selected in the editor, it replaces the selected text. If the cursor was never in the body of the item, or if the body of the item lost focus in the UI, the string will be inserted at the top of the body content. After insertion, the cursor is placed at the end of the inserted content.
          *
-         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to LPNoLP.
+         * When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor (<a>) to "LPNoLP" (please see the Examples section for a sample).
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -392,12 +408,12 @@ export declare namespace Office {
     /**
      * Represents a contact stored on the server. Read mode only.
      *
-     * The list of contacts associated with an email message or appointment is returned in the contacts property of the Entities object that is returned by the getEntities or getEntitiesByType method of the active item.
+     * The list of contacts associated with an email message or appointment is returned in the contacts property of the {@link Office.Entities} object that is returned by the getEntities or getEntitiesByType method of the active item.
      *
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: Restricted
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
      *
      * Applicable Outlook mode: Read
      */
@@ -435,7 +451,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -448,7 +464,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -463,7 +479,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -480,7 +496,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -498,7 +514,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -510,7 +526,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -523,7 +539,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -536,7 +552,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -559,7 +575,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -571,7 +587,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -599,7 +615,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Read
      */
@@ -631,7 +647,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Read
      */
@@ -665,24 +681,23 @@ export declare namespace Office {
          */
         urls: string[];
     }
-
     /**
+     * The subclass of {@link Office.Item} dealing with apppointments.
+     * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
     export interface Appointment extends Item {
     }
     /**
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.
+     * 
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
      */
     export interface AppointmentCompose extends Appointment, ItemCompose {
         /**
          * Gets or sets the date and time that the appointment is to end.
          *
-         * The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time.
-         *
-         * *Compose mode*
-         *
-         * The end property returns a Time object.
+         * The end property is an {@link Office.Time} object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time.
          *
          * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server.
          *
@@ -690,67 +705,51 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         end: Time;
         /**
-         * Gets or sets the location of an appointment.
-         *
-         * *Compose mode*
-         *
-         * The location property returns a Location object that provides methods that are used to get and set the location of the appointment.
+         * Gets or sets the {@link Office.Location} of an appointment. The location property returns a Location object that provides methods that are used to get and set the location of the appointment.
          *
          * [Api set: Mailbox 1.0]
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         location: Location;
         /**
-         * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
-         *
-         * *Compose mode*
-         *
-         * The optionalAttendees property returns a Recipients object that provides methods to get or update the optional attendees for a meeting.
+         * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item. The optionalAttendees property returns an {@link Office.Recipients} object that provides methods to get or update the optional attendees for a meeting.
          *
          * [Api set: Mailbox 1.0]
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         optionalAttendees: Recipients;
         /**
-         * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
-         *
-         * *Compose mode*
-         *
-         * The requiredAttendees property returns a Recipients object that provides methods to get or update the required attendees for a meeting.
+         * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item. The requiredAttendees property returns an {@link Office.Recipients} object that provides methods to get or update the required attendees for a meeting.
          *
          * [Api set: Mailbox 1.0]
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         requiredAttendees: Recipients;
         /**
          * Gets or sets the date and time that the appointment is to begin.
          *
-         * The start property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time.
-         *
-         * *Compose mode*
-         *
-         * The start property returns a Time object.
+         * The start property is an {@link Office.Time} object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time.
          *
          * When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server.
          *
@@ -758,22 +757,477 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Organizer
          */
         start: Time;
+
+        // Repeated Item fields //
+
+         /**
+         * Gets an object that provides methods for manipulating the body of an item.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         */
+        body: Body;
+        /**
+         * Gets the date and time that an item was created.  Read mode only.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         */
+        dateTimeCreated: Date;
+        /**
+         * Gets the date and time that an item was last modified. Read mode only.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         */
+        dateTimeModifed: Date;
+        /**
+         * Gets the type of item that an instance represents.
+         *
+         * The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         */
+        itemType: Office.MailboxEnums.ItemType;
+
+       /**
+        * Asynchronously loads custom properties for this add-in on the selected item.
+        *
+        * Custom properties are stored as key/value pairs on a per-app, per-item basis. This method returns a CustomProperties object in the callback, which provides methods to access the custom properties specific to the current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used as secure storage.
+        *
+        * The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server.
+        *
+        * [Api set: Mailbox 1.0]
+        *
+        * @remarks
+        *
+        * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+        *
+        * Applicable Outlook mode: Appointment Organizer
+        *
+        * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
+        * @param userContext - Optional. Developers can provide any object they wish to access in the callback function. This object can be accessed by the asyncResult.asyncContext property in the callback function.
+        */
+       loadCustomPropertiesAsync(callback: (result: AsyncResult) => void, userContext?: any): void;
+
+       /**
+         * Gets or sets the description that appears in the subject field of an item.
+         *
+         * The subject property gets or sets the entire subject of the item, as sent by the email server.
+         *
+         * The subject property returns a Subject object that provides methods to get and set the subject.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         */
+        subject: Subject;
+        /**
+         * Adds a file to a message or appointment as an attachment.
+         *
+         * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         *
+         * Errors:
+         *
+         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         *
+         * FileTypeNotSupported - The attachment has an extension that is not allowed.
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * 
+         * In addition to this signature, the method also has the following signatures:
+         * 
+         * `addFileAttachmentAsync(uri: string, attachmentName: string): void;`
+         * 
+         * `addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;`
+         * 
+         * `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;`
+         *
+         * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         * @param options - Optional. An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
+         */
+        addFileAttachmentAsync(uri: string, attachmentName: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
+        /**
+         * Adds a file to a message or appointment as an attachment.
+         *
+         * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         *
+         * Errors:
+         *
+         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         *
+         * FileTypeNotSupported - The attachment has an extension that is not allowed.
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         *
+         * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         */
+        addFileAttachmentAsync(uri: string, attachmentName: string): void;
+        /**
+         * Adds a file to a message or appointment as an attachment.
+         *
+         * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         *
+         * Errors:
+         *
+         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         *
+         * FileTypeNotSupported - The attachment has an extension that is not allowed.
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         *
+         * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         * @param options - Optional. An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         */
+        addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;
+        /**
+         * Adds a file to a message or appointment as an attachment.
+         *
+         * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         *
+         * Errors:
+         *
+         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         *
+         * FileTypeNotSupported - The attachment has an extension that is not allowed.
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         *
+         * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
+         */
+        addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;
+
+        /**
+         * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
+         *
+         * The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the options parameter to pass state information to the callback method, if needed.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         *
+         * Errors:
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * 
+         * In addition to the main signature, this method also has these signatures:
+         * 
+         * `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
+         * 
+         * `addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;`
+         * 
+         * `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;`
+         *
+         * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         * @param options - An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
+         */
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
+        /**
+         * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
+         *
+         * The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the options parameter to pass state information to the callback method, if needed.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         *
+         * Errors:
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         *
+         * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         */
+        addItemAttachmentAsync(itemId: any, attachmentName: string): void;
+        /**
+         * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
+         *
+         * The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the options parameter to pass state information to the callback method, if needed.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         *
+         * Errors:
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         *
+         * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         * @param options - An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         */
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;
+        /**
+         * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
+         *
+         * The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the options parameter to pass state information to the callback method, if needed.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         *
+         * Errors:
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         *
+         * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
+         */
+        addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;
+        /**
+         * Asynchronously returns selected data from the subject or body of a message.
+         *
+         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.
+         *
+         * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @returns
+         * The selected data as a string with format determined by coercionType.
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         *
+         * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
+         * @param options - An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
+         */
+        getSelectedDataAsync(coercionType: CoercionType, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
+         /**
+         * Asynchronously returns selected data from the subject or body of a message.
+         *
+         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.
+         *
+         * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @returns
+         * The selected data as a string with format determined by coercionType.
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         *
+         * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
+         */
+        getSelectedDataAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;
+        /**
+         * Removes an attachment from a message or appointment.
+         *
+         * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form to continue in a separate window.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         *
+         * Errors: InvalidAttachmentId - The attachment identifier does not exist.
+         * 
+         * In addition to this signature, the method also has the following signatures:
+         * 
+         * `removeAttachmentAsync(attachmentIndex: string): void;`
+         * 
+         * `removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;`
+         * 
+         * `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;`
+         *
+         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param options - Optional. An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
+         */
+        removeAttachmentAsync(attachmentIndex: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
+        /**
+         * Removes an attachment from a message or appointment.
+         *
+         * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form to continue in a separate window.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         *
+         * Errors: InvalidAttachmentId - The attachment identifier does not exist.
+         *
+         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         */
+        removeAttachmentAsync(attachmentIndex: string): void;
+        /**
+         * Removes an attachment from a message or appointment.
+         *
+         * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form to continue in a separate window.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         *
+         * Errors: InvalidAttachmentId - The attachment identifier does not exist.
+         *
+         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param options - Optional. An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         */
+        removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;
+        /**
+         * Removes an attachment from a message or appointment.
+         *
+         * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form to continue in a separate window.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Appointment Organizer
+         *
+         * Errors: InvalidAttachmentId - The attachment identifier does not exist.
+         *
+         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
+         */
+        removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;
     }
     /**
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.
+     * 
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of 'Office.context.mailbox.item'. Refer to the Object Model pages for more information.
      */
     export interface AppointmentRead extends Appointment, ItemRead {
         /**
          * Gets the date and time that the appointment is to end.
          *
-         * The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time.
-         *
-         * The end property returns a Date object.
+         * The end property is a Date object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time.
          *
          * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server.
          *
@@ -781,9 +1235,9 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         end: Date;
         /**
@@ -795,23 +1249,23 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         location: string;
         /**
          * Provides access to the optional attendees of an event. The type of object and level of access depends on the mode of the current item.
          *
-         * The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional attendee to the meeting.
+         * The optionalAttendees property returns an array that contains an {@link Office.EmailAddressDetails} object for each optional attendee to the meeting.
          *
          * [Api set: Mailbox 1.0]
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         optionalAttendees: EmailAddressDetails[];
         /**
@@ -821,43 +1275,416 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Appointment Attendee
          */
         organizer: EmailAddressDetails;
         /**
          * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
          *
-         * The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required attendee to the meeting.
+         * The requiredAttendees property returns an array that contains an {@link Office.EmailAddressDetails} object for each required attendee to the meeting.
          *
          * [Api set: Mailbox 1.0]
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         requiredAttendees: EmailAddressDetails[];
         /**
          * Gets the date and time that the appointment is to begin.
          *
-         * The start property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time.
-         *
-         * The start property returns a Date object.
+         * The start property is a Date object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's local date and time.
          *
          * [Api set: Mailbox 1.0]
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Appointment Attendee
          */
         start: Date;
+
+        // Repeated Item Fields //
+
+         /**
+         * Gets an object that provides methods for manipulating the body of an item.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         */
+        body: Body;
+        /**
+         * Gets the date and time that an item was created. Read mode only.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         */
+        dateTimeCreated: Date;
+        /**
+         * Gets the date and time that an item was last modified. Read mode only.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         */
+        dateTimeModifed: Date;
+        /**
+         * Gets the type of item that an instance represents.
+         *
+         * The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         */
+        itemType: Office.MailboxEnums.ItemType;
+       /**
+        * Asynchronously loads custom properties for this add-in on the selected item.
+        *
+        * Custom properties are stored as key/value pairs on a per-app, per-item basis. This method returns a CustomProperties object in the callback, which provides methods to access the custom properties specific to the current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used as secure storage.
+        *
+        * The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server.
+        *
+        * [Api set: Mailbox 1.0]
+        *
+        * @remarks
+        *
+        * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+        *
+        * Applicable Outlook mode: Appointment Attendee
+        *
+        * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
+        * @param userContext - Optional. Developers can provide any object they wish to access in the callback function. This object can be accessed by the asyncResult.asyncContext property in the callback function.
+        */
+       loadCustomPropertiesAsync(callback: (result: AsyncResult) => void, userContext?: any): void;
+
+        /**
+         * Gets an array of attachments for the item.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         *
+         */
+        attachments: AttachmentDetails[];
+        /**
+         * Gets the Exchange Web Services item class of the selected item.
+         *
+
+         *
+         * You can create custom message classes that extends a default message class, for example, a custom appointment message class IPM.Appointment.Contoso.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         * 
+         * The itemClass property specifies the message class of the selected item. The following are the default message classes for the message or appointment item.
+         * 
+         * <table>
+         *   <tr>
+         *     <th>Type</th>
+         *     <th>Description</th>
+         *     <th>Item Class</th>
+         *   </tr>
+         *   <tr>
+         *     <td>Appointment items</td>
+         *     <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.</td>
+         *     <td>IPM.Appointment,IPM.Appointment.Occurence</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Message items</td>
+         *     <td>These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.</td>
+         *     <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
+         *   </tr>
+         * </table>
+         * 
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         */
+        itemClass: string;
+        
+        /**
+         * Gets the Exchange Web Services item identifier for the current item.
+         *
+         * The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the AsyncResult.value parameter in the callback function.
+         *
+         * Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see Use the Outlook REST APIs from an Outlook add-in.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         */
+        itemId: string;
+        /**
+         * Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
+         *
+         * The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by email programs. To get the subject of the item with the prefixes intact, use the subject property.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         */
+        normalizedSubject: string;
+        /**
+         * Gets the description that appears in the subject field of an item.
+         *
+         * The subject property gets or sets the entire subject of the item, as sent by the email server.
+         *
+         * The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         */
+        subject: string;
+        /**
+         * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.
+         *
+         * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+         *
+         * If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.
+         *
+         * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+         *
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         *
+         * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
+         *  OR
+         * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function
+         */
+        displayReplyAllForm(formData: string | ReplyFormData): void;
+        /**
+         * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
+         *
+         * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+         *
+         * If any of the string parameters exceed their limits, displayReplyForm throws an exception.
+         *
+         * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+         *
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         *
+         * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
+         * OR
+         * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+         */
+        displayReplyForm(formData: string | ReplyFormData): void;
+       
+        /**
+         * Gets the entities found in the selected item.
+         *
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         */
+        getEntities(): Entities;
+        /**
+         * Gets an array of all the entities of the specified entity type found in the selected item.
+         *
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * [Api set: Mailbox 1.0]
+         * 
+         * @param entityType - One of the EntityType enumeration values.
+         *
+         * @returns
+         * If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present on the item, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         * 
+         * While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the following table.
+         * 
+         * <table>
+         *   <tr>
+         *     <th>Value of entityType</th>
+         *     <th>Type of objects in returned array</th>
+         *     <th>Required Permission Leve</th>
+         *   </tr>
+         *   <tr>
+         *     <td>Address</td>
+         *     <td>String</td>
+         *     <td>Restricted</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Contact</td>
+         *     <td>Contact</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>EmailAddress</td>
+         *     <td>String</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>MeetingSuggestion</td>
+         *     <td>MeetingSuggestion</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>PhoneNumber</td>
+         *     <td>PhoneNumber</td>
+         *     <td>Restricted</td>
+         *   </tr>
+         *   <tr>
+         *     <td>TaskSuggestion</td>
+         *     <td>TaskSuggestion</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>URL</td>
+         *     <td>String</td>
+         *     <td>Restricted</td>
+         *   </tr>
+         * </table>
+         */
+        getEntitiesByType(entityType: Office.MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        /**
+         * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
+         *
+         * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element in the manifest XML file with the specified FilterName element value.
+         *
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         *
+         * @param name - The name of the ItemHasKnownEntity rule element that defines the filter to match.
+         * @returns If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the name parameter, the method returns null. If the name parameter does match an ItemHasKnownEntity element in the manifest, but there are no entities in the current item that match, the method return an empty array.
+         */
+        getFilteredEntitiesByName(name: string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        /**
+         * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
+         *
+         * The getRegExMatches method returns the strings that match the regular expression defined in each ItemHasRegularExpressionMatch or ItemHasKnownEntity rule element in the manifest XML file. For an ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified by that rule. The PropertyName simple type defines the supported properties.
+         *
+         * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. Instead, use the Body.getAsync method to retrieve the entire body.
+         *
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @returns
+         * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. The name of each array is equal to the corresponding value of the RegExName attribute of the matching ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         */
+        getRegExMatches(): any;
+        /**
+         * Returns string values in the selected item that match the named regular expression defined in the manifest XML file.
+         *
+         * The getRegExMatchesByName method returns the strings that match the regular expression defined in the ItemHasRegularExpressionMatch rule element in the manifest XML file with the specified RegExName element value.
+         *
+         * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
+         *
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @returns
+         * An array that contains the strings that match the regular expression defined in the manifest XML file.
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Appointment Attendee
+         *
+         * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
+         */
+        getRegExMatchesByName(name: string): string[];
     }
 
+    /**
+     * The AppointmentForm namespace is used to access the currently selected appointment.
+     *
+     * [Api set: Mailbox 1.0]
+     *
+     * @remarks
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
+     *
+     * Applicable Outlook mode: Compose or read
+     */
     export interface AppointmentForm {
         /**
          * Gets an object that provides methods for manipulating the body of an item.
@@ -866,7 +1693,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -890,7 +1717,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -910,7 +1737,7 @@ export declare namespace Office {
         *
         * @remarks
         *
-        * Minimum permission level: ReadItem
+        * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
         * Applicable Outlook mode: Compose or read
         */
         location: string;
@@ -929,7 +1756,7 @@ export declare namespace Office {
         *
         * @remarks
         *
-        * Minimum permission level: ReadItem
+        * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
         *
         * Applicable Outlook mode: Compose or read
         */
@@ -950,7 +1777,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -974,7 +1801,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -996,7 +1823,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1004,12 +1831,12 @@ export declare namespace Office {
     }
 
     /**
-     * The item namespace is used to access the currently selected message, meeting request, or appointment. You can determine the type of the item by using the itemType property.
+     * The item namespace is used to access the currently selected message, meeting request, or appointment. You can determine the type of the item by using the `itemType` property.
      *
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: Restricted
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -1021,7 +1848,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1033,7 +1860,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -1047,7 +1874,7 @@ export declare namespace Office {
          *
          * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -1061,7 +1888,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1078,7 +1905,7 @@ export declare namespace Office {
         *
         * @remarks
         *
-        * Minimum permission level: ReadItem
+        * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
         *
         * Applicable Outlook mode: Compose or read
         *
@@ -1088,7 +1915,9 @@ export declare namespace Office {
        loadCustomPropertiesAsync(callback: (result: AsyncResult) => void, userContext?: any): void;
     }
     /**
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     * The compose mode of {@link Office.Item | Office.context.mailbox.item}.
+     * 
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
      */
     export interface ItemCompose extends Item {
         /**
@@ -1102,7 +1931,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1117,7 +1946,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1128,6 +1957,14 @@ export declare namespace Office {
          * FileTypeNotSupported - The attachment has an extension that is not allowed.
          *
          * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * 
+         * In addition to this signature, the method also has the following signatures:
+         * 
+         * `addFileAttachmentAsync(uri: string, attachmentName: string): void;`
+         * 
+         * `addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;`
+         * 
+         * `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;`
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -1147,7 +1984,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1173,7 +2010,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1202,7 +2039,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1232,13 +2069,21 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
          * Errors:
          *
          * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * 
+         * In addition to the main signature, this method also has these signatures:
+         * 
+         * `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
+         * 
+         * `addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;`
+         * 
+         * `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;`
          *
          * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -1259,7 +2104,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1283,7 +2128,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1309,7 +2154,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1322,6 +2167,7 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
          */
         addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;
+       
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -1336,7 +2182,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1358,7 +2204,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1377,11 +2223,19 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
          * Errors: InvalidAttachmentId - The attachment identifier does not exist.
+         * 
+         * In addition to this signature, the method also has the following signatures:
+         * 
+         * `removeAttachmentAsync(attachmentIndex: string): void;`
+         * 
+         * `removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;`
+         * 
+         * `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;`
          *
          * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -1398,7 +2252,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1416,7 +2270,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1436,7 +2290,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1448,33 +2302,29 @@ export declare namespace Office {
         removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;
     }
     /**
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     * The read mode of {@link Office.Item | Office.context.mailbox.item}.
+     * 
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
      */
     export interface ItemRead extends Item {
         /**
-         * Gets an array of attachments for the item. Read mode only.
+         * Gets an array of attachments for the item.
          *
          * [Api set: Mailbox 1.0]
          *
          * @remarks
          *
-         * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see [Blocked attachments in Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519).
+         * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          *
          */
         attachments: AttachmentDetails[];
         /**
-         * Gets the Exchange Web Services item class of the selected item. Read mode only.
+         * Gets the Exchange Web Services item class of the selected item.
          *
-         * The itemClass property specifies the message class of the selected item. The following are the default message classes for the message or appointment item.
-         *
-         * [div class="mx-tdBreakAll"|Type|Description|item class|
-         * |-----------|------------|------------|
-         * |Appointment items|These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.|IPM.Appointment,IPM.Appointment.Occurence|
-         * |Message items|These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.|IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled|
          *
          * You can create custom message classes that extends a default message class, for example, a custom appointment message class IPM.Appointment.Contoso.
          *
@@ -1482,13 +2332,33 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
+         * 
+         * The itemClass property specifies the message class of the selected item. The following are the default message classes for the message or appointment item.
+         * 
+         * <table>
+         *   <tr>
+         *     <th>Type</th>
+         *     <th>Description</th>
+         *     <th>Item Class</th>
+         *   </tr>
+         *   <tr>
+         *     <td>Appointment items</td>
+         *     <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.</td>
+         *     <td>IPM.Appointment,IPM.Appointment.Occurence</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Message items</td>
+         *     <td>These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.</td>
+         *     <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
+         *   </tr>
+         * </table>
          */
         itemClass: string;
         /**
-         * Gets the Exchange Web Services item identifier for the current item. Read mode only.
+         * Gets the Exchange Web Services item identifier for the current item.
          *
          * The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the AsyncResult.value parameter in the callback function.
          *
@@ -1498,13 +2368,13 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
         itemId: string;
         /**
-         * Gets the subject of an item, with all prefixes removed (including RE: and FWD:). Read mode only.
+         * Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
          *
          * The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by email programs. To get the subject of the item with the prefixes intact, use the subject property.
          *
@@ -1512,7 +2382,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -1528,7 +2398,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1547,13 +2417,13 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
          *  OR
-         * A ReplyFormData object that contains body or attachment data and a callback function
+         * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function
          */
         displayReplyAllForm(formData: string | ReplyFormData): void;
         /**
@@ -1571,15 +2441,16 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          *
          * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
          * OR
-         * A ReplyFormData object that contains body or attachment data and a callback function.
+         * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
          */
         displayReplyForm(formData: string | ReplyFormData): void;
+        
         /**
          * Gets the entities found in the selected item.
          *
@@ -1589,7 +2460,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -1600,27 +2471,61 @@ export declare namespace Office {
          * Note: This method is not supported in Outlook for iOS or Outlook for Android.
          *
          * [Api set: Mailbox 1.0]
+         * 
+         * @param entityType - One of the EntityType enumeration values.
          *
          * @returns
          * If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present on the item, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.
          *
-         * While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the following table.
-         * |Value of entityType|Type of objects in returned array|Required Permission Level|
-         * |-------|-----------|----------|
-         * |Address|String|Restricted|
-         * |Contact|Contact|ReadItem|
-         * |EmailAddress|String|ReadItem|
-         * |MeetingSuggestion|MeetingSuggestion|ReadItem|
-         * |PhoneNumber|PhoneNumber|Restricted|
-         * |TaskSuggestion|TaskSuggestion|ReadItem|
-         * |URL|String|Restricted|
-         *
          * @remarks
-         * Minimum permission level: Restricted
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Read
-         *
-         * @param entityType - One of the EntityType enumeration values.
+         * 
+         * While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the following table.
+         * 
+         * <table>
+         *   <tr>
+         *     <th>Value of entityType</th>
+         *     <th>Type of objects in returned array</th>
+         *     <th>Required Permission Leve</th>
+         *   </tr>
+         *   <tr>
+         *     <td>Address</td>
+         *     <td>String</td>
+         *     <td>Restricted</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Contact</td>
+         *     <td>Contact</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>EmailAddress</td>
+         *     <td>String</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>MeetingSuggestion</td>
+         *     <td>MeetingSuggestion</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>PhoneNumber</td>
+         *     <td>PhoneNumber</td>
+         *     <td>Restricted</td>
+         *   </tr>
+         *   <tr>
+         *     <td>TaskSuggestion</td>
+         *     <td>TaskSuggestion</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>URL</td>
+         *     <td>String</td>
+         *     <td>Restricted</td>
+         *   </tr>
+         * </table>
          */
         getEntitiesByType(entityType: Office.MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
         /**
@@ -1634,7 +2539,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          *
@@ -1658,7 +2563,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          */
@@ -1679,7 +2584,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          *
@@ -1688,7 +2593,9 @@ export declare namespace Office {
         getRegExMatchesByName(name: string): string[];
     }
     /**
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     * A subclass of {@link Office.Item} for messages.
+     * 
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
      */
     export interface Message extends Item {
         /**
@@ -1702,7 +2609,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -1710,37 +2617,38 @@ export declare namespace Office {
     }
 
      /**
-     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+     * The message compose mode of {@link Office.Item | Office.context.mailbox.item}.
+     * 
+     * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
      */
     export interface MessageCompose extends Message, ItemCompose {
         /**
-         * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message. Compose mode only.
+         * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Compose
+         * Applicable Outlook mode: Message Compose
          */
         bcc: Recipients;
         /**
          * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.
          *
-         * *Compose mode*
-         *
-         * The cc property returns a Recipients object that provides methods to get or update the recipients on the Cc line of the message.
+         * The cc property returns a {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of the message.
          *
          * [Api set: Mailbox 1.0]
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Compose
          */
         cc: Recipients;
+       
         /**
          * Provides access to the recipients on the To line of a message. The type of object and level of access depends on the mode of the current item.
          *
@@ -1750,13 +2658,471 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Compose
          */
         to: Recipients;
+
+        // Repeated Item Fields //
+
+        /**
+         * Gets an object that provides methods for manipulating the body of an item.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Compose
+         */
+        body: Body;
+        /**
+         * Gets the date and time that an item was created. Read mode only.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Compose
+         */
+        dateTimeCreated: Date;
+        /**
+         * Gets the date and time that an item was last modified. Read mode only.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Compose
+         */
+        dateTimeModifed: Date;
+        /**
+         * Gets the type of item that an instance represents.
+         *
+         * The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Compose
+         */
+        itemType: Office.MailboxEnums.ItemType;
+        
+       /**
+        * Asynchronously loads custom properties for this add-in on the selected item.
+        *
+        * Custom properties are stored as key/value pairs on a per-app, per-item basis. This method returns a CustomProperties object in the callback, which provides methods to access the custom properties specific to the current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used as secure storage.
+        *
+        * The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server.
+        *
+        * [Api set: Mailbox 1.0]
+        *
+        * @remarks
+        *
+        * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+        *
+        * Applicable Outlook mode: Message Compose
+        *
+        * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
+        * @param userContext - Optional. Developers can provide any object they wish to access in the callback function. This object can be accessed by the asyncResult.asyncContext property in the callback function.
+        */
+       loadCustomPropertiesAsync(callback: (result: AsyncResult) => void, userContext?: any): void;
+
+       /**
+         * Gets or sets the description that appears in the subject field of an item.
+         *
+         * The subject property gets or sets the entire subject of the item, as sent by the email server.
+         *
+         * The subject property returns a Subject object that provides methods to get and set the subject.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Compose
+         */
+        subject: Subject;
+        /**
+         * Adds a file to a message or appointment as an attachment.
+         *
+         * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Message Compose
+         *
+         * Errors:
+         *
+         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         *
+         * FileTypeNotSupported - The attachment has an extension that is not allowed.
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * 
+         * In addition to this signature, the method also has the following signatures:
+         * 
+         * `addFileAttachmentAsync(uri: string, attachmentName: string): void;`
+         * 
+         * `addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;`
+         * 
+         * `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;`
+         *
+         * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         * @param options - Optional. An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
+         */
+        addFileAttachmentAsync(uri: string, attachmentName: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
+        /**
+         * Adds a file to a message or appointment as an attachment.
+         *
+         * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Message Compose
+         *
+         * Errors:
+         *
+         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         *
+         * FileTypeNotSupported - The attachment has an extension that is not allowed.
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         *
+         * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         */
+        addFileAttachmentAsync(uri: string, attachmentName: string): void;
+        /**
+         * Adds a file to a message or appointment as an attachment.
+         *
+         * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Message Compose
+         *
+         * Errors:
+         *
+         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         *
+         * FileTypeNotSupported - The attachment has an extension that is not allowed.
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         *
+         * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         * @param options - Optional. An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         *        inInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list.
+         */
+        addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;
+        /**
+         * Adds a file to a message or appointment as an attachment.
+         *
+         * The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose form.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Message Compose
+         *
+         * Errors:
+         *
+         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         *
+         * FileTypeNotSupported - The attachment has an extension that is not allowed.
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         *
+         * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
+         */
+        addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;
+
+        /**
+         * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
+         *
+         * The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the options parameter to pass state information to the callback method, if needed.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Message Compose
+         *
+         * Errors:
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * 
+         * In addition to the main signature, this method also has these signatures:
+         * 
+         * `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
+         * 
+         * `addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;`
+         * 
+         * `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;`
+         *
+         * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         * @param options - An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
+         */
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
+        /**
+         * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
+         *
+         * The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the options parameter to pass state information to the callback method, if needed.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Message Compose
+         *
+         * Errors:
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         *
+         * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         */
+        addItemAttachmentAsync(itemId: any, attachmentName: string): void;
+        /**
+         * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
+         *
+         * The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the options parameter to pass state information to the callback method, if needed.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Message Compose
+         *
+         * Errors:
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         *
+         * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         * @param options - An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         */
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;
+        /**
+         * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
+         *
+         * The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which contains either the attachment identifier or a code that indicates any error that occurred while attaching the item. You can use the options parameter to pass state information to the callback method, if needed.
+         *
+         * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+         *
+         * If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items other than the item that you are editing; however, this is not supported and is not recommended.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Message Compose
+         *
+         * Errors:
+         *
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         *
+         * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
+         * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
+         */
+        addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;
+        
+        /**
+         * Asynchronously returns selected data from the subject or body of a message.
+         *
+         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.
+         *
+         * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @returns
+         * The selected data as a string with format determined by coercionType.
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Message Compose
+         *
+         * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
+         */
+        getSelectedDataAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;
+        /**
+         * Asynchronously returns selected data from the subject or body of a message.
+         *
+         * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.
+         *
+         * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @returns
+         * The selected data as a string with format determined by coercionType.
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Message Compose
+         *
+         * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
+         * @param options - An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
+         */
+        getSelectedDataAsync(coercionType: CoercionType, options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
+        /**
+         * Removes an attachment from a message or appointment.
+         *
+         * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form to continue in a separate window.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Message Compose
+         *
+         * Errors: InvalidAttachmentId - The attachment identifier does not exist.
+         * 
+         * In addition to this signature, the method also has the following signatures:
+         * 
+         * `removeAttachmentAsync(attachmentIndex: string): void;`
+         * 
+         * `removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;`
+         * 
+         * `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;`
+         *
+         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param options - Optional. An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
+         */
+        removeAttachmentAsync(attachmentIndex: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
+        /**
+         * Removes an attachment from a message or appointment.
+         *
+         * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form to continue in a separate window.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Message Compose
+         *
+         * Errors: InvalidAttachmentId - The attachment identifier does not exist.
+         *
+         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         */
+        removeAttachmentAsync(attachmentIndex: string): void;
+        /**
+         * Removes an attachment from a message or appointment.
+         *
+         * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form to continue in a separate window.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Message Compose
+         *
+         * Errors: InvalidAttachmentId - The attachment identifier does not exist.
+         *
+         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param options - Optional. An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
+         */
+        removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;
+        /**
+         * Removes an attachment from a message or appointment.
+         *
+         * The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best practice, you should use the attachment identifier to remove an attachment only if the same mail app has added that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid only within the same session. A session is over when the user closes the app, or if the user starts composing in an inline form and subsequently pops out the inline form to continue in a separate window.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
+         *
+         * Applicable Outlook mode: Message Compose
+         *
+         * Errors: InvalidAttachmentId - The attachment identifier does not exist.
+         *
+         * @param attachmentIndex - The identifier of the attachment to remove. The maximum length of the string is 100 characters.
+         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
+         */
+        removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;
     }
     /**
+     * The message read mode of {@link Office.Item | Office.context.mailbox.item}.
+     * 
      * Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
      */
     export interface MessageRead extends Message, ItemRead {
@@ -1769,9 +3135,9 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Read
          */
         cc: EmailAddressDetails[];
         /**
@@ -1787,25 +3153,25 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          */
         from: EmailAddressDetails;
         /**
-         * Gets the Internet message identifier for an email message. Read mode only.
+         * Gets the Internet message identifier for an email message.
          *
          * [Api set: Mailbox 1.0]
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          */
         internetMessageId: string;
         /**
-         * Gets the email address of the sender of an email message. Read mode only.
+         * Gets the email address of the sender of an email message.
          *
          * The from and sender properties represent the same person unless the message is sent by a delegate. In that case, the from property represents the delegator, and the sender property represents the delegate.
          *
@@ -1815,9 +3181,9 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Read
+         * Applicable Outlook mode: Message Read
          */
         sender: EmailAddressDetails;
         /**
@@ -1829,11 +3195,371 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
-         * Applicable Outlook mode: Compose or read
+         * Applicable Outlook mode: Message Read
          */
         to: EmailAddressDetails[];
+
+        // Repeated Item Fields //
+
+        /**
+         * Gets an object that provides methods for manipulating the body of an item.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         */
+        body: Body;
+        /**
+         * Gets the date and time that an item was created. Read mode only.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         */
+        dateTimeCreated: Date;
+        /**
+         * Gets the date and time that an item was last modified. Read mode only.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         */
+        dateTimeModifed: Date;
+        /**
+         * Gets the type of item that an instance represents.
+         *
+         * The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or an appointment.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         */
+        itemType: Office.MailboxEnums.ItemType;
+        
+       /**
+        * Asynchronously loads custom properties for this add-in on the selected item.
+        *
+        * Custom properties are stored as key/value pairs on a per-app, per-item basis. This method returns a CustomProperties object in the callback, which provides methods to access the custom properties specific to the current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used as secure storage.
+        *
+        * The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can be used to get, set, and remove custom properties from the item and save changes to the custom property set back to the server.
+        *
+        * [Api set: Mailbox 1.0]
+        *
+        * @remarks
+        *
+        * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+        *
+        * Applicable Outlook mode: Message Read
+        *
+        * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
+        * @param userContext - Optional. Developers can provide any object they wish to access in the callback function. This object can be accessed by the asyncResult.asyncContext property in the callback function.
+        */
+       loadCustomPropertiesAsync(callback: (result: AsyncResult) => void, userContext?: any): void;
+
+        /**
+         * Gets an array of attachments for the item.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         *
+         */
+        attachments: AttachmentDetails[];
+        /**
+         * Gets the Exchange Web Services item class of the selected item.
+         * 
+         * You can create custom message classes that extends a default message class, for example, a custom appointment message class IPM.Appointment.Contoso.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         * 
+         * The itemClass property specifies the message class of the selected item. The following are the default message classes for the message or appointment item.
+         * 
+         * <table>
+         *   <tr>
+         *     <th>Type</th>
+         *     <th>Description</th>
+         *     <th>Item Class</th>
+         *   </tr>
+         *   <tr>
+         *     <td>Appointment items</td>
+         *     <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.</td>
+         *     <td>IPM.Appointment,IPM.Appointment.Occurence</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Message items</td>
+         *     <td>These include email messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.</td>
+         *     <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
+         *   </tr>
+         * </table>
+         * 
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         */
+        itemClass: string;
+        /**
+         * Gets the Exchange Web Services item identifier for the current item.
+         *
+         * The itemId property is not available in compose mode. If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier in the AsyncResult.value parameter in the callback function.
+         *
+         * Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more details, see Use the Outlook REST APIs from an Outlook add-in.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         */
+        itemId: string;
+        /**
+         * Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
+         *
+         * The normalizedSubject property gets the subject of the item, with any standard prefixes (such as RE: and FW:) that are added by email programs. To get the subject of the item with the prefixes intact, use the subject property.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         */
+        normalizedSubject: string;
+        /**
+         * Gets the description that appears in the subject field of an item.
+         *
+         * The subject property gets or sets the entire subject of the item, as sent by the email server.
+         *
+         * The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading prefixes such as RE: and FW:.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         */
+        subject: string;
+        /**
+         * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the selected appointment.
+         *
+         * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+         *
+         * If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.
+         *
+         * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+         *
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         *
+         * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
+         *  OR
+         * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function
+         */
+        displayReplyAllForm(formData: string | ReplyFormData): void;
+        /**
+         * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
+         *
+         * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+         *
+         * If any of the string parameters exceed their limits, displayReplyForm throws an exception.
+         *
+         * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. If this isn't possible, then no error message is thrown.
+         *
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         *
+         * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
+         * OR
+         * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+         */
+        displayReplyForm(formData: string | ReplyFormData): void;
+        
+        /**
+         * Gets the entities found in the selected item.
+         *
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         */
+        getEntities(): Entities;
+        /**
+         * Gets an array of all the entities of the specified entity type found in the selected item.
+         *
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @param entityType - One of the EntityType enumeration values.
+         * 
+         * @returns
+         * If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. If no entities of the specified type are present on the item, the method returns an empty array. Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.
+         *
+         * @remarks
+         * 
+         * While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the following table.
+         * 
+         * <table>
+         *   <tr>
+         *     <th>Value of entityType</th>
+         *     <th>Type of objects in returned array</th>
+         *     <th>Required Permission Leve</th>
+         *   </tr>
+         *   <tr>
+         *     <td>Address</td>
+         *     <td>String</td>
+         *     <td>Restricted</td>
+         *   </tr>
+         *   <tr>
+         *     <td>Contact</td>
+         *     <td>Contact</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>EmailAddress</td>
+         *     <td>String</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>MeetingSuggestion</td>
+         *     <td>MeetingSuggestion</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>PhoneNumber</td>
+         *     <td>PhoneNumber</td>
+         *     <td>Restricted</td>
+         *   </tr>
+         *   <tr>
+         *     <td>TaskSuggestion</td>
+         *     <td>TaskSuggestion</td>
+         *     <td>ReadItem</td>
+         *   </tr>
+         *   <tr>
+         *     <td>URL</td>
+         *     <td>String</td>
+         *     <td>Restricted</td>
+         *   </tr>
+         * </table>
+         * 
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
+         *
+         * Applicable Outlook mode: Read
+         */
+        getEntitiesByType(entityType: Office.MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        /**
+         * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
+         *
+         * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element in the manifest XML file with the specified FilterName element value.
+         *
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         *
+         * @param name - The name of the ItemHasKnownEntity rule element that defines the filter to match.
+         * @returns If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the name parameter, the method returns null. If the name parameter does match an ItemHasKnownEntity element in the manifest, but there are no entities in the current item that match, the method return an empty array.
+         */
+        getFilteredEntitiesByName(name: string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        /**
+         * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
+         *
+         * The getRegExMatches method returns the strings that match the regular expression defined in each ItemHasRegularExpressionMatch or ItemHasKnownEntity rule element in the manifest XML file. For an ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified by that rule. The PropertyName simple type defines the supported properties.
+         *
+         * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. Instead, use the Body.getAsync method to retrieve the entire body.
+         *
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @returns
+         * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. The name of each array is equal to the corresponding value of the RegExName attribute of the matching ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         */
+        getRegExMatches(): any;
+        /**
+         * Returns string values in the selected item that match the named regular expression defined in the manifest XML file.
+         *
+         * The getRegExMatchesByName method returns the strings that match the regular expression defined in the ItemHasRegularExpressionMatch rule element in the manifest XML file with the specified RegExName element value.
+         *
+         * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body and should not attempt to return the entire body of the item. Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
+         *
+         * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @returns
+         * An array that contains the strings that match the regular expression defined in the manifest XML file.
+         *
+         * @remarks
+         *
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Message Read
+         *
+         * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
+         */
+        getRegExMatchesByName(name: string): string[];
     }
 
     /**
@@ -1843,7 +3569,7 @@ export declare namespace Office {
      *
      * @remarks
      *
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Read
      */
@@ -1887,7 +3613,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.1]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose
      */
@@ -1904,9 +3630,14 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
+         * 
+         * In addition to this signature, the method also has the following signature:
+         * 
+         * `getAsync(callback: (result: AsyncResult) => void): void;`
+         * 
          */
         getAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -1919,7 +3650,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          */
@@ -1937,11 +3668,19 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
          * Errors: DataExceedsMaximumSize - The location parameter is longer than 255 characters.
+         * 
+         * In addition to this signature, the method also has the following signatures:
+         * 
+         * `setAsync(location: string): void;`
+         * 
+         * `setAsync(location: string, options: AsyncContextOptions): void;`
+         * 
+         * `setAsync(location: string, callback: (result: AsyncResult) => void): void;`
          */
         setAsync(location: string, options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -1954,7 +3693,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1973,7 +3712,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -1991,14 +3730,13 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
          * Errors: DataExceedsMaximumSize - The location parameter is longer than 255 characters.
          */
         setAsync(location: string, callback: (result: AsyncResult) => void): void;
-
     }
     /**
      * Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
@@ -2014,11 +3752,32 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: Restricted
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
      *
      * Applicable Outlook mode: Compose or read
      */
     export interface Mailbox {
+        /**
+         * Provides diagnostic information to an Outlook add-in.
+         * 
+         * Contains the following members:
+         * 
+         *  - hostName (string): A string that represents the name of the host application. It be one of the following values: Outlook, Mac Outlook, OutlookIOS, or OutlookWebApp.
+         * 
+         *  - hostVersion (string): A string that represents the version of either the host application or the Exchange Server. If the mail add-in is running on the Outlook desktop client or Outlook for iOS, the hostVersion property returns the version of the host application, Outlook. In Outlook Web App, the property returns the version of the Exchange Server. An example is the string 15.0.468.0.
+         * 
+         *  - OWAView (string): A string that represents the current view of Outlook Web App. If the host application is not Outlook Web App, then accessing this property results in undefined. Outlook Web App has three views (OneColumn - displayed when the screen is narrow, TwoColumns - displayed when the screen is wider, and ThreeColumns - displayed when the screen is wide.) that correspond to the width of the screen and the window, and the number of columns that can be displayed.
+         *
+         *  More information is under {@link Office.Diagnostics}. 
+         *
+         * [Api set: Mailbox 1.0]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Compose or read
+         */
+        diagnostics: Diagnostics;
         /**
          * Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.
          *
@@ -2032,9 +3791,9 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to [get attachments from the selected item](https://msdn.microsoft.com/library/office/dn148008.aspx).
+         * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://msdn.microsoft.com/library/office/dn148008.aspx | get attachments from the selected item}.
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -2046,6 +3805,13 @@ export declare namespace Office {
          */
         item: Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose;
         /**
+         * Information about the user associated with the mailbox. This includes their account type, display name, email adddress, and time zone.
+         * 
+         * More information is under {@link Office.UserProfile}
+         */
+        userProfile: UserProfile;
+       
+        /**
          * Gets a dictionary containing time information in local client time.
          *
          * The dates and times used by a mail app for Outlook or Outlook Web App can use different time zones. Outlook uses the client computer time zone; Outlook Web App uses the time zone set on the Exchange Admin Center (EAC). You should handle date and time values so that the values you display on the user interface are always consistent with the time zone that the user expects.
@@ -2056,13 +3822,14 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
          * @param timeValue - A Date object.
          */
         convertToLocalClientTime(timeValue: Date): LocalClientTime;
+        
         /**
          * Gets a Date object from a dictionary containing time information.
          *
@@ -2072,7 +3839,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -2097,7 +3864,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -2121,7 +3888,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -2145,7 +3912,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Read
          *
@@ -2161,9 +3928,9 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * The getUserIdentityTokenAsync method returns a token that you can use to identify and [authenticate the add-in and user with a third-party system](https://msdn.microsoft.com/library/office/fp179828.aspx).
+         * The getUserIdentityTokenAsync method returns a token that you can use to identify and {@link https://msdn.microsoft.com/library/office/fp179828.aspx | authenticate the add-in and user with a third-party system}.
          *
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose and read
          *
@@ -2194,7 +3961,7 @@ export declare namespace Office {
          *
          * When you use the makeEwsRequestAsync method in mail apps running in Outlook versions earlier than version 15.0.4535.1004, you should set the encoding value to ISO-8859-1.
          *
-         * <?xml version="1.0" encoding="iso-8859-1"?>
+         * `<?xml version="1.0" encoding="iso-8859-1"?>`
          *
          * You do not need to set the encoding value when your mail app is running in Outlook on the web. You can determine whether your mail app is running in Outlook or Outlook on the web by using the mailbox.diagnostics.hostName property. You can determine what version of Outlook is running by using the mailbox.diagnostics.hostVersion property.
          *
@@ -2202,7 +3969,7 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Minimum permission level: ReadWriteMailbox
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteMailbox
          *
          * Applicable Outlook mode: Compose and read
          *
@@ -2223,7 +3990,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Read
      */
@@ -2261,7 +4028,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Read
      */
@@ -2283,7 +4050,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.1]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose
      */
@@ -2302,11 +4069,19 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
          * Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
+         * 
+         * In addition to the main signature, this method also has these signatures:
+         * 
+         * `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`
+         * 
+         * `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: AsyncContextOptions): void;`
+         * 
+         * `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult) => void): void;`
          *
          * @param recipients - The recipients to add to the recipients list.
          * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -2328,7 +4103,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2344,14 +4119,14 @@ export declare namespace Office {
          *
          * - Strings containing SMTP email addresses
          *
-         * - EmailUser objects
+         * - {@link Office.EmailUser} objects
          *
-         * - EmailAddressDetails objects
+         * - {@link Office.EmailAddressDetails} objects
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2369,14 +4144,14 @@ export declare namespace Office {
          *
          * - Strings containing SMTP email addresses
          *
-         * - EmailUser objects
+         * - {@link Office.EmailUser} objects
          *
-         * - EmailAddressDetails objects
+         * - {@link Office.EmailAddressDetails} objects
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2386,39 +4161,42 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. If adding the recipients fails, the asyncResult.error property will contain an error code.
          */
         addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult) => void): void;
-
         /**
          * Gets a recipient list for an appointment or message.
          *
-         * When the call completes, the asyncResult.value property will contain an array of EmailAddressDetails objects.
+         * When the call completes, the asyncResult.value property will contain an array of{@link Office.EmailAddressDetails} objects.
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
-         *
-         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         */
-        getAsync(callback: (result: AsyncResult) => void): void;
-        /**
-         * Gets a recipient list for an appointment or message.
-         *
-         * When the call completes, the asyncResult.value property will contain an array of EmailAddressDetails objects.
-         *
-         * [Api set: Mailbox 1.1]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose
+         * 
+         * In addition to the main signature, this method also has this signature:
+         * 
+         * `getAsync(callback: (result: AsyncResult) => void): void;`
          *
          * @param options - An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
          */
         getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
+        /**
+         * Gets a recipient list for an appointment or message.
+         *
+         * When the call completes, the asyncResult.value property will contain an array of {@link Office.EmailAddressDetails} objects.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Compose
+         *
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
+         */
+        getAsync(callback: (result: AsyncResult) => void): void;
         /**
          * Sets a recipient list for an appointment or message.
          *
@@ -2428,18 +4206,26 @@ export declare namespace Office {
          *
          * - Strings containing SMTP email addresses
          *
-         * - EmailUser objects
+         * - {@link Office.EmailUser} objects
          *
-         * - EmailAddressDetails objects
+         * - {@link Office.EmailAddressDetails} objects
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
          * Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
+         * 
+         * In addition to the main signature, this method also has these signatures:
+         * 
+         * `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[]): void;`
+         * 
+         * `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: AsyncContextOptions): void;`
+         * 
+         * `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult) => void): void;`
          *
          * @param recipients - The recipients to add to the recipients list.
          * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -2456,14 +4242,14 @@ export declare namespace Office {
          *
          * - Strings containing SMTP email addresses
          *
-         * - EmailUser objects
+         * - {@link Office.EmailUser} objects
          *
-         * - EmailAddressDetails objects
+         * - {@link Office.EmailAddressDetails} objects
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2481,14 +4267,14 @@ export declare namespace Office {
          *
          * - Strings containing SMTP email addresses
          *
-         * - EmailUser objects
+         * - {@link Office.EmailUser} objects
          *
-         * - EmailAddressDetails objects
+         * - {@link Office.EmailAddressDetails} objects
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2508,14 +4294,14 @@ export declare namespace Office {
          *
          * - Strings containing SMTP email addresses
          *
-         * - EmailUser objects
+         * - {@link Office.EmailUser} objects
          *
-         * - EmailAddressDetails objects
+         * - {@link Office.EmailAddressDetails} objects
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2563,7 +4349,7 @@ export declare namespace Office {
          */
         htmlBody?: string;
         /**
-         * An array of ReplyFormAttachments that are either file or item attachments.
+         * An array of {@link Office.ReplyFormAttachment} that are either file or item attachments.
          */
         attachments?: ReplyFormAttachment[];
         /**
@@ -2585,7 +4371,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: Restricted
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -2596,7 +4382,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: Restricted
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -2610,7 +4396,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: Restricted
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -2625,7 +4411,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: Restricted
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -2644,7 +4430,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: Restricted
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: Restricted
          *
          * Applicable Outlook mode: Compose or read
          *
@@ -2660,42 +4446,46 @@ export declare namespace Office {
      * [Api set: Mailbox 1.1]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose
      */
     export interface Subject {
         /**
          * Gets the subject of an appointment or message.
-         * The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or message.
-         *
-         * [Api set: Mailbox 1.1]
-         *
-         * @remarks
-         * Minimum permission level: ReadItem
-         *
-         * Applicable Outlook mode: Compose
-         *
-         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
-         */
-        getAsync(callback: (result: AsyncResult) => void): void;
-        /**
-         * Gets the subject of an appointment or message.
          *
          * The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or message.
          *
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
+         * 
+         * In addition to the main signature, this method also has this signature:
+         * 
+         * `getAsync(callback: (result: AsyncResult) => void): void;`
          *
          * @param options - An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
          */
         getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
+        /**
+         * Gets the subject of an appointment or message.
+         * The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or message.
+         *
+         * [Api set: Mailbox 1.1]
+         *
+         * @remarks
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
+         *
+         * Applicable Outlook mode: Compose
+         *
+         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
+         */
+        getAsync(callback: (result: AsyncResult) => void): void;
         /**
          * Sets the subject of an appointment or message.
          *
@@ -2704,11 +4494,19 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
          * Errors: DataExceedsMaximumSize - The subject parameter is longer than 255 characters.
+         * 
+         * In addition to the main signature, this method also has these signatures:
+         * 
+         * `setAsync(subject: string): void;`
+         * 
+         * `setAsync(subject: string, options: AsyncContextOptions): void;`
+         * 
+         * `setAsync(subject: string, callback: (result: AsyncResult) => void): void;`
          *
          * @param subject - The subject of the appointment or message. The string is limited to 255 characters.
          * @param options - An object literal that contains one or more of the following properties.
@@ -2724,7 +4522,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2741,7 +4539,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2760,7 +4558,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2780,7 +4578,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Read
      */
@@ -2800,7 +4598,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.1]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose
      */
@@ -2813,13 +4611,19 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
+         * 
+         * In addition to the main signature, this method also has this signature:
+         * 
+         * `getAsync(callback: (result: AsyncResult) => void): void;`
          *
+         * @param options - An object literal that contains one or more of the following properties.
+         *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
          */
-        getAsync(callback: (result: AsyncResult) => void): void;
+        getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
         /**
          * Gets the start or end time of an appointment.
          *
@@ -2828,15 +4632,13 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose
          *
-         * @param options - An object literal that contains one or more of the following properties.
-         *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
          */
-        getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;
+        getAsync(callback: (result: AsyncResult) => void): void;
         /**
          * Sets the start or end time of an appointment.
          *
@@ -2847,11 +4649,19 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
          * Errors: InvalidEndTime - The appointment end time is before the appointment start time.
+         * 
+         * In addition to the main signature, this method also has these signatures:
+         * 
+         * `setAsync(dateTime: Date): void;`
+         * 
+         * `setAsync(dateTime: Date, options: AsyncContextOptions): void;`
+         * 
+         * `setAsync(dateTime: Date, callback: (result: AsyncResult) => void): void;`
          *
          * @param dateTime - A date-time object in Coordinated Universal Time (UTC).
          * @param options - An object literal that contains one or more of the following properties.
@@ -2869,7 +4679,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2888,7 +4698,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2909,7 +4719,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         * Minimum permission level: ReadWriteItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadWriteItem
          *
          * Applicable Outlook mode: Compose
          *
@@ -2922,10 +4732,12 @@ export declare namespace Office {
 
     }
     /**
+     * Information about the user associated with the mailbox. This includes their account type, display name, email adddress, and time zone.
+     * 
      * [Api set: Mailbox 1.0]
      *
      * @remarks
-     * Minimum permission level: ReadItem
+     * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
      *
      * Applicable Outlook mode: Compose or read
      */
@@ -2936,7 +4748,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -2947,7 +4759,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */
@@ -2958,7 +4770,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         * Minimum permission level: ReadItem
+         * {@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}: ReadItem
          *
          * Applicable Outlook mode: Compose or read
          */

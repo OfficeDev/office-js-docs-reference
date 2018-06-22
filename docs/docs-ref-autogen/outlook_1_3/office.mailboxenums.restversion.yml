@@ -23,6 +23,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"beta"'
   - uid: Outlook_1_3.Office.MailboxEnums.RestVersion.v1_0
     summary: Version 1.0.
     name: v1_0
@@ -30,6 +31,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"v1.0"'
   - uid: Outlook_1_3.Office.MailboxEnums.RestVersion.v2_0
     summary: Version 2.0.
     name: v2_0
@@ -37,3 +39,4 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"v2.0"'

@@ -22,6 +22,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"appointment"'
   - uid: Outlook_1_2.Office.MailboxEnums.ItemType.Message
     summary: 'An email, meeting request, meeting response, or meeting cancellation.'
     name: Message
@@ -29,3 +30,4 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"message"'

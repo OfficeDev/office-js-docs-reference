@@ -6,12 +6,15 @@ items:
 
 
       The list of contacts associated with an email message or appointment is returned in the contacts property of the
-      Entities object that is returned by the getEntities or getEntitiesByType method of the active item.
+      [Office.Entities](xref:Outlook_1_4.Office.Entities) object that is returned by the getEntities or
+      getEntitiesByType method of the active item.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: Restricted
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: Restricted
+
 
       Applicable Outlook mode: Read
     name: Office.Contact

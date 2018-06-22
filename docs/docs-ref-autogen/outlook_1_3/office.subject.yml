@@ -5,8 +5,10 @@ items:
       Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose
     name: Office.Subject
@@ -20,27 +22,44 @@ items:
       - Outlook_1_3.Office.Subject.setAsync
   - uid: Outlook_1_3.Office.Subject.getAsync
     summary: >-
-      Gets the subject of an appointment or message. The getAsync method starts an asynchronous call to the Exchange
-      server to get the subject of an appointment or message.
+      Gets the subject of an appointment or message.
+
+
+      The getAsync method starts an asynchronous call to the Exchange server to get the subject of an appointment or
+      message.
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose
-    name: getAsync(callback)
+
+
+      In addition to the main signature, this method also has this signature:
+
+
+      `getAsync(callback: (result: AsyncResult) =&gt; void): void;`
+    name: 'getAsync(options, callback)'
     fullName: Outlook_1_3.Office.Subject.getAsync
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback: (result: AsyncResult) => void): void;'
+      content: 'getAsync(options: AsyncContextOptions, callback: (result: AsyncResult) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -58,12 +77,27 @@ items:
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose
 
+
       Errors: DataExceedsMaximumSize - The subject parameter is longer than 255 characters.
+
+
+      In addition to the main signature, this method also has these signatures:
+
+
+      `setAsync(subject: string): void;`
+
+
+      `setAsync(subject: string, options: AsyncContextOptions): void;`
+
+
+      `setAsync(subject: string, callback: (result: AsyncResult) =&gt; void): void;`
     name: 'setAsync(subject, options, callback)'
     fullName: Outlook_1_3.Office.Subject.setAsync
     langs:

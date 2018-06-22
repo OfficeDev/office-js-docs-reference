@@ -9,17 +9,14 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt; &lt;tr&gt; &lt;th&gt;State&lt;/th&gt; &lt;th&gt;Editable?&lt;/th&gt; &lt;th&gt;Viewable?&lt;/th&gt;
-      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment Organizer - Compose Series&lt;/td&gt; &lt;td&gt;Yes
-      (setAsync)&lt;/td&gt; &lt;td&gt;Yes (getAsync)&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment Organizer -
-      Compose Instance&lt;/td&gt; &lt;td&gt;No (setAsync returns error)&lt;/td&gt; &lt;td&gt;Yes (getAsync)&lt;/td&gt;
-      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment Attendee - Read Series&lt;/td&gt; &lt;td&gt;No (setAsync not
-      available)&lt;/td&gt; &lt;td&gt;Yes (item.recurrence)&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment
-      Attendee - Read Instance&lt;/td&gt; &lt;td&gt;No (setAsync not available)&lt;/td&gt; &lt;td&gt;Yes
-      (item.recurrence)&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Meeting Request - Read Series&lt;/td&gt;
-      &lt;td&gt;No (setAsync not available)&lt;/td&gt; &lt;td&gt;Yes (item.recurrence)&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
-      &lt;td&gt;Meeting Request - Read Instance&lt;/td&gt; &lt;td&gt;No (setAsync not available)&lt;/td&gt;
-      &lt;td&gt;Yes (item.recurrence)&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
+      <table> <tr> <th>State</th> <th>Editable?</th> <th>Viewable?</th> </tr> <tr> <td>Appointment Organizer - Compose
+      Series</td> <td>Yes (setAsync)</td> <td>Yes (getAsync)</td> </tr> <tr> <td>Appointment Organizer - Compose
+      Instance</td> <td>No (setAsync returns error)</td> <td>Yes (getAsync)</td> </tr> <tr> <td>Appointment Attendee -
+      Read Series</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td> </tr> <tr> <td>Appointment
+      Attendee - Read Instance</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td> </tr> <tr>
+      <td>Meeting Request - Read Series</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td> </tr>
+      <tr> <td>Meeting Request - Read Instance</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td>
+      </tr> </table>
 
 
       [Minimum permission

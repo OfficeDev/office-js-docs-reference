@@ -27,6 +27,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"address"'
   - uid: Outlook_1_4.Office.MailboxEnums.EntityType.Contact
     summary: Specifies that the entity is a contact.
     name: Contact
@@ -34,6 +35,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"contact"'
   - uid: Outlook_1_4.Office.MailboxEnums.EntityType.EmailAddress
     summary: Specifies that the entity is an SMTP email address.
     name: EmailAddress
@@ -41,6 +43,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"emailAddress"'
   - uid: Outlook_1_4.Office.MailboxEnums.EntityType.MeetingSuggestion
     summary: Specifies that the entity is a meeting suggestion.
     name: MeetingSuggestion
@@ -48,6 +51,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"meetingSuggestion"'
   - uid: Outlook_1_4.Office.MailboxEnums.EntityType.PhoneNumber
     summary: Specifies that the entity is a US phone number.
     name: PhoneNumber
@@ -55,6 +59,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"phoneNumber"'
   - uid: Outlook_1_4.Office.MailboxEnums.EntityType.TaskSuggestion
     summary: Specifies that the entity is a task suggestion.
     name: TaskSuggestion
@@ -62,6 +67,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"taskSuggestion"'
   - uid: Outlook_1_4.Office.MailboxEnums.EntityType.Url
     summary: Specifies that the entity is an Internet URL.
     name: Url
@@ -69,3 +75,4 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"url"'

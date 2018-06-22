@@ -24,6 +24,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"distributionList"'
   - uid: Outlook_1_2.Office.MailboxEnums.RecipientType.ExternalUser
     summary: Specifies that the recipient is an SMTP email address that is not on the Exchange server.
     name: ExternalUser
@@ -31,6 +32,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"externalUser"'
   - uid: Outlook_1_2.Office.MailboxEnums.RecipientType.Other
     summary: Specifies that the recipient is not one of the other recipient types.
     name: Other
@@ -38,6 +40,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"other"'
   - uid: Outlook_1_2.Office.MailboxEnums.RecipientType.User
     summary: Specifies that the recipient is an SMTP email address that is on the Exchange server.
     name: User
@@ -45,3 +48,4 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"user"'

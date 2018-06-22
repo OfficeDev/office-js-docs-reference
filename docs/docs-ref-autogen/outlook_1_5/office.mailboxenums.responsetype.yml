@@ -25,6 +25,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"accepted"'
   - uid: Outlook_1_5.Office.MailboxEnums.ResponseType.Declined
     summary: The meeting request was declined by the attendee.
     name: Declined
@@ -32,6 +33,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"declined"'
   - uid: Outlook_1_5.Office.MailboxEnums.ResponseType.None
     summary: There has been no response from the attendee.
     name: None
@@ -39,6 +41,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"none"'
   - uid: Outlook_1_5.Office.MailboxEnums.ResponseType.Organizer
     summary: The attendee is the meeting organizer.
     name: Organizer
@@ -46,6 +49,7 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"organizer"'
   - uid: Outlook_1_5.Office.MailboxEnums.ResponseType.Tentative
     summary: The meeting request was tentatively accepted by the attendee.
     name: Tentative
@@ -53,3 +57,4 @@ items:
     langs:
       - typeScript
     type: field
+    numericValue: '"tentative"'

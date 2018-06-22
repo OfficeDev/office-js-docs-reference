@@ -3,12 +3,14 @@ items:
   - uid: Outlook_1_2.Office.Item
     summary: >-
       The item namespace is used to access the currently selected message, meeting request, or appointment. You can
-      determine the type of the item by using the itemType property.
+      determine the type of the item by using the `itemType` property.
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: Restricted
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: Restricted
+
 
       Applicable Outlook mode: Compose or read
     name: Office.Item
@@ -28,8 +30,10 @@ items:
       Gets an object that provides methods for manipulating the body of an item.
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
     name: body
@@ -47,8 +51,10 @@ items:
       Gets the date and time that an item was created. Read mode only.
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Read
     name: dateTimeCreated
@@ -66,10 +72,13 @@ items:
       Gets the date and time that an item was last modified. Read mode only.
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
+    remarks: >-
       Note: This member is not supported in Outlook for iOS or Outlook for Android.
 
-      Minimum permission level: ReadItem
+
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Read
     name: dateTimeModifed
@@ -92,8 +101,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
     name: itemType
@@ -123,8 +134,10 @@ items:
 
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
     name: 'loadCustomPropertiesAsync(callback, userContext)'

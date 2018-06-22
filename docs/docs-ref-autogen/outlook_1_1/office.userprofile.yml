@@ -1,9 +1,16 @@
 ### YamlMime:UniversalReference
 items:
   - uid: Outlook_1_1.Office.UserProfile
-    summary: '\[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]'
-    remarks: |-
-      Minimum permission level: ReadItem
+    summary: >-
+      Information about the user associated with the mailbox. This includes their account type, display name, email
+      adddress, and time zone.
+
+
+      \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
     name: Office.UserProfile
@@ -21,8 +28,10 @@ items:
       Gets the user's display name.
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
     name: displayName
@@ -40,8 +49,10 @@ items:
       Gets the user's display name.
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
     name: emailAddress
@@ -59,8 +70,10 @@ items:
       Gets the user's SMTP email address.
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: |-
-      Minimum permission level: ReadItem
+    remarks: >-
+      [Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+
 
       Applicable Outlook mode: Compose or read
     name: timeZone
