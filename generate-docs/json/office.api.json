@@ -2893,7 +2893,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>"
                 }
               ],
               "isBeta": false,
@@ -3013,7 +3013,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>"
                 }
               ],
               "isBeta": false,

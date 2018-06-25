@@ -465,7 +465,7 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
          */
         mailbox: Mailbox;
         /**
@@ -490,7 +490,7 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
          */
         roamingSettings: RoamingSettings;
         /**
@@ -541,7 +541,7 @@ export declare namespace Office {
          * 
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td> Compose or Read</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose or Read</td></tr></table>
          */
         export interface Event {
             
@@ -563,7 +563,7 @@ export declare namespace Office {
              * 
              * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
              *
-             * <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+             * <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
              * 
              * @param options - Optional. An object literal that contains one or more of the following properties.
              *        allowEvent: A boolean value. When the completed method is used to signal completion of an event handler, this value indicates of the handled event should continue execution or be canceled. For example, an add-in that handles the ItemSend event can set allowEvent = false to cancel sending of the message.
