@@ -1759,11 +1759,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
-         *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
          * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+         *
+         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          */
         dateTimeModifed: Date;
         /**
@@ -1843,14 +1843,14 @@ export declare namespace Office {
          * [Api set: Mailbox Preview]
          *
          * @remarks
-         *
+         * 
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+         *
+         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
          * 
          * In addition to this signature, the method also has the following signature:
          * 
          * `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
-         *
-         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
          * 
          * @param eventType - The event that should invoke the handler.
          * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
@@ -2194,11 +2194,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.
-         *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
          * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+         * 
+         * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.
          *
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -2207,7 +2207,7 @@ export declare namespace Office {
          * @beta
          */
         getInitializationContextAsync(options?: AsyncContextOptions, callback?: (result: AsyncResult) => void): void;
-                /**
+        /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
          * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. If a field other than the body or subject is selected, the method returns the InvalidSelection error.
@@ -2264,7 +2264,7 @@ export declare namespace Office {
          *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
          *
          * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
          * 
@@ -2675,11 +2675,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
-         *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
          * <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+         *
+         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          */
         dateTimeModifed: Date;
         /**
@@ -2873,19 +2873,18 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         *
-         * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
-         *
+         * 
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
          * <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
+         *
+         * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
          *
          */
         attachments: AttachmentDetails[];
         /**
          * Gets the Exchange Web Services item class of the selected item.
          *
-
          *
          * You can create custom message classes that extends a default message class, for example, a custom appointment message class IPM.Appointment.Contoso.
          *
@@ -3431,11 +3430,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
-         *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
          * <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
+         *
+         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          */
         dateTimeModifed: Date;
         /**
@@ -3872,11 +3871,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.
-         *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
          * <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
+         *
+         * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.
          *
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -4241,12 +4240,11 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
-         *
-         * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
-         *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
          * <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
+         *
+         * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
          *
          */
         attachments: AttachmentDetails[];
@@ -4720,11 +4718,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
-         *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
          * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
+         *
+         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          */
         dateTimeModifed: Date;
         /**
@@ -5155,11 +5153,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.
-         *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
          * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
+         *
+         * More information on {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | actionable messages}.
          *
          * @param options - Optional. An object literal that contains one or more of the following properties.
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -5626,11 +5624,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
-         *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
          * <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
+         *
+         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          */
         dateTimeModifed: Date;
         /**
@@ -5825,11 +5823,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
-         *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
          * <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
+         * 
+         * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
          *
          */
         attachments: AttachmentDetails[];
@@ -6031,6 +6029,10 @@ export declare namespace Office {
          *
          * @remarks
          * 
+         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
+         *
+         * <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
+         * 
          * While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the following table.
          * 
          * <table>
@@ -6075,10 +6077,6 @@ export declare namespace Office {
          *     <td>Restricted</td>
          *   </tr>
          * </table>
-         * 
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-         *
-         * <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
          */
         getEntitiesByType(entityType: Office.MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
         /**
@@ -6406,17 +6404,17 @@ export declare namespace Office {
          *
          * In compose mode you must call the saveAsync method before you can use the ewsUrl member. Your app must have ReadWriteItem permissions to call the saveAsync method.
          *
-         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
-         *
          * [Api set: Mailbox 1.0]
          *
          * @remarks
          *
-         * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://msdn.microsoft.com/library/office/dn148008.aspx | get attachments from the selected item}.
-         *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+         *
+         * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://msdn.microsoft.com/library/office/dn148008.aspx | get attachments from the selected item}.
+         *
+         * Note: This member is not supported in Outlook for iOS or Outlook for Android.
          */
         ewsUrl: string;
         /**
@@ -6436,11 +6434,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * The restUrl value can be used to make {@link https://docs.microsoft.com/outlook/rest/ | REST API} calls to the user's mailbox.
-         *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+         *
+         * The restUrl value can be used to make {@link https://docs.microsoft.com/outlook/rest/ | REST API} calls to the user's mailbox.
          */
         restUrl: string;
         /**
@@ -6513,12 +6511,12 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         *
-         * Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs (such as the {@link https://msdn.microsoft.com/office/office365/APi/mail-rest-operations | Outlook Mail API} or the {@link http://graph.microsoft.io/ | Microsoft Graph}. The convertToRestId method converts an EWS-formatted ID into the proper format for REST.
-         *
+         * 
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+         *
+         * Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs (such as the {@link https://msdn.microsoft.com/office/office365/APi/mail-rest-operations | Outlook Mail API} or the {@link http://graph.microsoft.io/ | Microsoft Graph}. The convertToRestId method converts an EWS-formatted ID into the proper format for REST.
          *
          * @param itemId - An item ID formatted for Exchange Web Services (EWS)
          * @param restVersion - A value indicating the version of the Outlook REST API that the converted ID will be used with.
@@ -6735,11 +6733,11 @@ export declare namespace Office {
          *
          * @remarks
          *
-         * The getUserIdentityTokenAsync method returns a token that you can use to identify and {@link https://msdn.microsoft.com/library/office/fp179828.aspx | authenticate the add-in and user with a third-party system}.
-         *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose and read</td></tr></table>
+         *
+         * The getUserIdentityTokenAsync method returns a token that you can use to identify and {@link https://msdn.microsoft.com/library/office/fp179828.aspx | authenticate the add-in and user with a third-party system}.
          *
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.|
@@ -7321,9 +7319,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose<tr><td>Errors</td>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.<tr><td>Errors</td><td>
+         * <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.</td></tr></table>
          * 
          * In addition to the main signature, this method also has these signatures:
          * 
@@ -7427,6 +7425,12 @@ export declare namespace Office {
      * 
      * @remarks
      * 
+     * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+     * 
+     * <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+     * 
+     * **States**
+     * 
      * <table>
      *   <tr>
      *     <th>State</th>
@@ -7464,10 +7468,6 @@ export declare namespace Office {
      *     <td>Yes (item.recurrence)</td>
      *   </tr>
      * </table>
-     * 
-     * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-     * 
-     * <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
      * 
      * @beta
      */
@@ -8282,7 +8282,7 @@ export declare namespace Office {
      */
     export interface UserProfile {
         /**
-         * Gets the account type of the user associated with the mailbox. The possible values are listed in the following table.
+         * Gets the account type of the user associated with the mailbox. 
          *
          * Note: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
          *
@@ -8290,6 +8290,12 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+         *
+         * <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+         *
+         * The possible account types are listed in the following table.
+         * 
          * <table>
          *   <tr>
          *     <th>Value</th>
@@ -8312,10 +8318,6 @@ export declare namespace Office {
          *     <td>The mailbox is associated with a personal Outlook.com account.</td>
          *   </tr>
          * </table>
-         *
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-         *
-         * <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
          */
         accountType: string;
         /**

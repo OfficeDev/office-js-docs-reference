@@ -25,28 +25,28 @@ items:
       - outlook.Office.UserProfile.emailAddress
       - outlook.Office.UserProfile.timeZone
   - uid: outlook.Office.UserProfile.accountType
-    summary: >-
-      Gets the account type of the user associated with the mailbox. The possible values are listed in the following
-      table.
-
+    summary: |-
+      Gets the account type of the user associated with the mailbox.
 
       Note: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
 
-
       \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr> <th>Value</th> <th>Description?</th> </tr> <tr> <td>enterprise</td> <td>The mailbox is on an
-      on-premises Exchange server.</td> </tr> <tr> <td>gmail</td> <td>The mailbox is associated with a Gmail
-      account.</td> </tr> <tr> <td>office365</td> <td>The mailbox is associated with an Office 365 work or school
-      account.</td> </tr> <tr> <td>outlookCom</td> <td>The mailbox is associated with a personal Outlook.com
-      account.</td> </tr> </table>
-
-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
       <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+
+
+      The possible account types are listed in the following table.
+
+
+      <table> <tr> <th>Value</th> <th>Description?</th> </tr> <tr> <td>enterprise</td> <td>The mailbox is on an
+      on-premises Exchange server.</td> </tr> <tr> <td>gmail</td> <td>The mailbox is associated with a Gmail
+      account.</td> </tr> <tr> <td>office365</td> <td>The mailbox is associated with an Office 365 work or school
+      account.</td> </tr> <tr> <td>outlookCom</td> <td>The mailbox is associated with a personal Outlook.com
+      account.</td> </tr> </table>
     name: accountType
     fullName: outlook.Office.UserProfile.accountType
     langs:

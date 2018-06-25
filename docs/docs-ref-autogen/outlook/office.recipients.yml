@@ -205,11 +205,11 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td>Compose<tr><td>Errors</td>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
       <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
-      entries.<tr><td>Errors</td><td>
+      entries.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:

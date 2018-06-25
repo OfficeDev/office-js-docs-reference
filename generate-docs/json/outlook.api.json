@@ -522,20 +522,6 @@
                   "kind": "paragraph"
                 },
                 {
-                  "kind": "text",
-                  "text": "In addition to this signature, the method also has the following signature:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "`addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
                   "kind": "html-tag",
                   "token": "<tr>"
                 },
@@ -572,8 +558,18 @@
                   "token": "</table>"
                 },
                 {
+                  "kind": "paragraph"
+                },
+                {
                   "kind": "text",
-                  "text": ""
+                  "text": "In addition to this signature, the method also has the following signature:"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "`addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`"
                 }
               ],
               "isBeta": true,
@@ -1218,13 +1214,6 @@
               ],
               "remarks": [
                 {
-                  "kind": "text",
-                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
                   "kind": "html-tag",
                   "token": "<table>"
                 },
@@ -1306,8 +1295,11 @@
                   "token": "</table>"
                 },
                 {
+                  "kind": "paragraph"
+                },
+                {
                   "kind": "text",
-                  "text": ""
+                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
                 }
               ],
               "isBeta": false,
@@ -1520,27 +1512,6 @@
               ],
               "remarks": [
                 {
-                  "kind": "text",
-                  "text": "More information on "
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "actionable messages"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message"
-                },
-                {
-                  "kind": "text",
-                  "text": "."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
                   "kind": "html-tag",
                   "token": "<table>"
                 },
@@ -1622,8 +1593,25 @@
                   "token": "</table>"
                 },
                 {
+                  "kind": "paragraph"
+                },
+                {
                   "kind": "text",
-                  "text": ""
+                  "text": "More information on "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "actionable messages"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 }
               ],
               "isBeta": true,
@@ -2737,10 +2725,6 @@
                 {
                   "kind": "html-tag",
                   "token": "</tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</table>"
                 },
                 {
                   "kind": "paragraph"
@@ -5389,27 +5373,6 @@
               ],
               "remarks": [
                 {
-                  "kind": "text",
-                  "text": "Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see "
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Blocked attachments in Outlook"
-                    }
-                  ],
-                  "targetUrl": "https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519"
-                },
-                {
-                  "kind": "text",
-                  "text": "."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
                   "kind": "html-tag",
                   "token": "<table>"
                 },
@@ -5489,6 +5452,27 @@
                 {
                   "kind": "html-tag",
                   "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Blocked attachments in Outlook"
+                    }
+                  ],
+                  "targetUrl": "https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 }
               ],
               "isBeta": false,
@@ -5745,13 +5729,6 @@
               ],
               "remarks": [
                 {
-                  "kind": "text",
-                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
                   "kind": "html-tag",
                   "token": "<table>"
                 },
@@ -5833,8 +5810,11 @@
                   "token": "</table>"
                 },
                 {
+                  "kind": "paragraph"
+                },
+                {
                   "kind": "text",
-                  "text": ""
+                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
                 }
               ],
               "isBeta": false,
@@ -14683,13 +14663,6 @@
               ],
               "remarks": [
                 {
-                  "kind": "text",
-                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
                   "kind": "html-tag",
                   "token": "<table>"
                 },
@@ -14771,8 +14744,11 @@
                   "token": "</table>"
                 },
                 {
+                  "kind": "paragraph"
+                },
+                {
                   "kind": "text",
-                  "text": ""
+                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
                 }
               ],
               "isBeta": false,
@@ -16416,27 +16392,6 @@
               ],
               "remarks": [
                 {
-                  "kind": "text",
-                  "text": "More information on "
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "actionable messages"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message"
-                },
-                {
-                  "kind": "text",
-                  "text": "."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
                   "kind": "html-tag",
                   "token": "<table>"
                 },
@@ -16518,8 +16473,25 @@
                   "token": "</table>"
                 },
                 {
+                  "kind": "paragraph"
+                },
+                {
                   "kind": "text",
-                  "text": ""
+                  "text": "More information on "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "actionable messages"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 }
               ],
               "isBeta": true,
@@ -17566,24 +17538,7 @@
               "remarks": [
                 {
                   "kind": "text",
-                  "text": "Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see "
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Blocked attachments in Outlook"
-                    }
-                  ],
-                  "targetUrl": "https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519"
-                },
-                {
-                  "kind": "text",
-                  "text": "."
-                },
-                {
-                  "kind": "paragraph"
+                  "text": ""
                 },
                 {
                   "kind": "html-tag",
@@ -17665,6 +17620,27 @@
                 {
                   "kind": "html-tag",
                   "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Blocked attachments in Outlook"
+                    }
+                  ],
+                  "targetUrl": "https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 }
               ],
               "isBeta": false,
@@ -21864,41 +21840,6 @@
               ],
               "remarks": [
                 {
-                  "kind": "text",
-                  "text": "Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs (such as the "
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Outlook Mail API"
-                    }
-                  ],
-                  "targetUrl": "https://msdn.microsoft.com/office/office365/APi/mail-rest-operations"
-                },
-                {
-                  "kind": "text",
-                  "text": " or the "
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Microsoft Graph"
-                    }
-                  ],
-                  "targetUrl": "http://graph.microsoft.io/"
-                },
-                {
-                  "kind": "text",
-                  "text": ". The convertToRestId method converts an EWS-formatted ID into the proper format for REST."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
                   "kind": "html-tag",
                   "token": "<table>"
                 },
@@ -21980,8 +21921,39 @@
                   "token": "</table>"
                 },
                 {
+                  "kind": "paragraph"
+                },
+                {
                   "kind": "text",
-                  "text": ""
+                  "text": "Item IDs retrieved via EWS or via the itemId property use a different format than the format used by REST APIs (such as the "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Outlook Mail API"
+                    }
+                  ],
+                  "targetUrl": "https://msdn.microsoft.com/office/office365/APi/mail-rest-operations"
+                },
+                {
+                  "kind": "text",
+                  "text": " or the "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Microsoft Graph"
+                    }
+                  ],
+                  "targetUrl": "http://graph.microsoft.io/"
+                },
+                {
+                  "kind": "text",
+                  "text": ". The convertToRestId method converts an EWS-formatted ID into the proper format for REST."
                 }
               ],
               "isBeta": false,
@@ -23030,38 +23002,10 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
                   "text": "[Api set: Mailbox 1.0]"
                 }
               ],
               "remarks": [
-                {
-                  "kind": "text",
-                  "text": "The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to "
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "get attachments from the selected item"
-                    }
-                  ],
-                  "targetUrl": "https://msdn.microsoft.com/library/office/dn148008.aspx"
-                },
-                {
-                  "kind": "text",
-                  "text": "."
-                },
-                {
-                  "kind": "paragraph"
-                },
                 {
                   "kind": "html-tag",
                   "token": "<table>"
@@ -23144,8 +23088,32 @@
                   "token": "</table>"
                 },
                 {
+                  "kind": "paragraph"
+                },
+                {
                   "kind": "text",
-                  "text": ""
+                  "text": "The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "get attachments from the selected item"
+                    }
+                  ],
+                  "targetUrl": "https://msdn.microsoft.com/library/office/dn148008.aspx"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
                 }
               ],
               "isBeta": false,
@@ -23427,27 +23395,6 @@
               ],
               "remarks": [
                 {
-                  "kind": "text",
-                  "text": "The getUserIdentityTokenAsync method returns a token that you can use to identify and "
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "authenticate the add-in and user with a third-party system"
-                    }
-                  ],
-                  "targetUrl": "https://msdn.microsoft.com/library/office/fp179828.aspx"
-                },
-                {
-                  "kind": "text",
-                  "text": "."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
                   "kind": "html-tag",
                   "token": "<table>"
                 },
@@ -23529,8 +23476,25 @@
                   "token": "</table>"
                 },
                 {
+                  "kind": "paragraph"
+                },
+                {
                   "kind": "text",
-                  "text": ""
+                  "text": "The getUserIdentityTokenAsync method returns a token that you can use to identify and "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "authenticate the add-in and user with a third-party system"
+                    }
+                  ],
+                  "targetUrl": "https://msdn.microsoft.com/library/office/fp179828.aspx"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 }
               ],
               "isBeta": false,
@@ -23833,27 +23797,6 @@
               ],
               "remarks": [
                 {
-                  "kind": "text",
-                  "text": "The restUrl value can be used to make "
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "REST API"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/rest/"
-                },
-                {
-                  "kind": "text",
-                  "text": " calls to the user's mailbox."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
                   "kind": "html-tag",
                   "token": "<table>"
                 },
@@ -23935,8 +23878,25 @@
                   "token": "</table>"
                 },
                 {
+                  "kind": "paragraph"
+                },
+                {
                   "kind": "text",
-                  "text": ""
+                  "text": "The restUrl value can be used to make "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "REST API"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/rest/"
+                },
+                {
+                  "kind": "text",
+                  "text": " calls to the user's mailbox."
                 }
               ],
               "isBeta": false,
@@ -28681,13 +28641,6 @@
               ],
               "remarks": [
                 {
-                  "kind": "text",
-                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
                   "kind": "html-tag",
                   "token": "<table>"
                 },
@@ -28769,8 +28722,11 @@
                   "token": "</table>"
                 },
                 {
+                  "kind": "paragraph"
+                },
+                {
                   "kind": "text",
-                  "text": ""
+                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
                 }
               ],
               "isBeta": false,
@@ -28964,27 +28920,6 @@
               ],
               "remarks": [
                 {
-                  "kind": "text",
-                  "text": "More information on "
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "actionable messages"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message"
-                },
-                {
-                  "kind": "text",
-                  "text": "."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
                   "kind": "html-tag",
                   "token": "<table>"
                 },
@@ -29066,8 +29001,25 @@
                   "token": "</table>"
                 },
                 {
+                  "kind": "paragraph"
+                },
+                {
                   "kind": "text",
-                  "text": ""
+                  "text": "More information on "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "actionable messages"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 }
               ],
               "isBeta": true,
@@ -31270,27 +31222,6 @@
               ],
               "remarks": [
                 {
-                  "kind": "text",
-                  "text": "Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see "
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Blocked attachments in Outlook"
-                    }
-                  ],
-                  "targetUrl": "https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519"
-                },
-                {
-                  "kind": "text",
-                  "text": "."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
                   "kind": "html-tag",
                   "token": "<table>"
                 },
@@ -31370,6 +31301,27 @@
                 {
                   "kind": "html-tag",
                   "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see "
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Blocked attachments in Outlook"
+                    }
+                  ],
+                  "targetUrl": "https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519"
+                },
+                {
+                  "kind": "text",
+                  "text": "."
                 }
               ],
               "isBeta": false,
@@ -31746,13 +31698,6 @@
               ],
               "remarks": [
                 {
-                  "kind": "text",
-                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
                   "kind": "html-tag",
                   "token": "<table>"
                 },
@@ -31834,8 +31779,11 @@
                   "token": "</table>"
                 },
                 {
+                  "kind": "paragraph"
+                },
+                {
                   "kind": "text",
-                  "text": ""
+                  "text": "Note: This member is not supported in Outlook for iOS or Outlook for Android."
                 }
               ],
               "isBeta": false,
@@ -32511,6 +32459,90 @@
               ],
               "remarks": [
                 {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Restricted"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
                   "kind": "text",
                   "text": "While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the following table."
                 },
@@ -33036,90 +33068,6 @@
                 {
                   "kind": "text",
                   "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</table>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<table>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Minimum permission level"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Restricted"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Read"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
                 },
                 {
                   "kind": "html-tag",
@@ -37932,19 +37880,11 @@
                 },
                 {
                   "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Errors"
-                },
-                {
-                  "kind": "html-tag",
                   "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
                 },
                 {
                   "kind": "paragraph"
@@ -37975,23 +37915,15 @@
                 },
                 {
                   "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Errors"
-                },
-                {
-                  "kind": "html-tag",
                   "token": "</td>"
                 },
                 {
                   "kind": "html-tag",
-                  "token": "<td>"
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
                 },
                 {
                   "kind": "paragraph"
@@ -38049,6 +37981,97 @@
             }
           ],
           "remarks": [
+            {
+              "kind": "html-tag",
+              "token": "<table>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "web-link",
+              "elements": [
+                {
+                  "kind": "text",
+                  "text": "Minimum permission level"
+                }
+              ],
+              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "ReadItem"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "Applicable Outlook mode"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "<td>"
+            },
+            {
+              "kind": "text",
+              "text": "Compose or read"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</td>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</tr>"
+            },
+            {
+              "kind": "html-tag",
+              "token": "</table>"
+            },
+            {
+              "kind": "paragraph"
+            },
+            {
+              "kind": "text",
+              "text": "**States**"
+            },
+            {
+              "kind": "paragraph"
+            },
             {
               "kind": "html-tag",
               "token": "<table>"
@@ -38504,90 +38527,6 @@
             {
               "kind": "text",
               "text": " "
-            },
-            {
-              "kind": "html-tag",
-              "token": "</table>"
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<table>"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<tr>"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<td>"
-            },
-            {
-              "kind": "web-link",
-              "elements": [
-                {
-                  "kind": "text",
-                  "text": "Minimum permission level"
-                }
-              ],
-              "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
-            },
-            {
-              "kind": "html-tag",
-              "token": "</td>"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<td>"
-            },
-            {
-              "kind": "text",
-              "text": "ReadItem"
-            },
-            {
-              "kind": "html-tag",
-              "token": "</td>"
-            },
-            {
-              "kind": "html-tag",
-              "token": "</tr>"
-            },
-            {
-              "kind": "paragraph"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<tr>"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<td>"
-            },
-            {
-              "kind": "text",
-              "text": "Applicable Outlook mode"
-            },
-            {
-              "kind": "html-tag",
-              "token": "</td>"
-            },
-            {
-              "kind": "html-tag",
-              "token": "<td>"
-            },
-            {
-              "kind": "text",
-              "text": "Compose or read"
-            },
-            {
-              "kind": "html-tag",
-              "token": "</td>"
-            },
-            {
-              "kind": "html-tag",
-              "token": "</tr>"
             },
             {
               "kind": "html-tag",
@@ -43496,7 +43435,7 @@
               "summary": [
                 {
                   "kind": "text",
-                  "text": "Gets the account type of the user associated with the mailbox. The possible values are listed in the following table."
+                  "text": "Gets the account type of the user associated with the mailbox."
                 },
                 {
                   "kind": "paragraph"
@@ -43514,6 +43453,97 @@
                 }
               ],
               "remarks": [
+                {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Compose or read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "text",
+                  "text": "The possible account types are listed in the following table."
+                },
+                {
+                  "kind": "paragraph"
+                },
                 {
                   "kind": "html-tag",
                   "token": "<table>"
@@ -43761,90 +43791,6 @@
                 {
                   "kind": "text",
                   "text": " "
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</table>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<table>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Minimum permission level"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "ReadItem"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Compose or read"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
                 },
                 {
                   "kind": "html-tag",

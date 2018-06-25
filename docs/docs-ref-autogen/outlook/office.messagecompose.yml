@@ -389,14 +389,14 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      Note: This member is not supported in Outlook for iOS or Outlook for Android.
-
-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
       <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
+
+
+      Note: This member is not supported in Outlook for iOS or Outlook for Android.
     name: dateTimeModifed
     fullName: outlook.Office.MessageCompose.dateTimeModifed
     langs:
@@ -448,15 +448,15 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      More information on [actionable
-      messages](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
-
-
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
       <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
+
+
+      More information on [actionable
+      messages](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
     isPreview: true
     name: 'getInitializationContextAsync(options, callback)'
     fullName: outlook.Office.MessageCompose.getInitializationContextAsync
