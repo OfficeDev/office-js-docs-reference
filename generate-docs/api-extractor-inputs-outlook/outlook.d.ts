@@ -1139,9 +1139,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
-         *
-         * InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
+         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters. <br>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
          * 
          * In addition to the main signature, this method also has these signatures:
          * 
@@ -1172,9 +1170,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
-         *
-         * InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
+         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters. <br>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
          *
          * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -1196,9 +1192,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
-         *
-         * InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
+         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters. <br>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
          *
          * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.  Any errors encountered will be provided in the asyncResult.error property.
@@ -1218,9 +1212,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
-         *
-         * InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
+         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters. <br>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
          *
          * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
          */
@@ -1240,9 +1232,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
-         *
-         * InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
+         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters. <br>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
          * 
          * In addition to the main signature, this method also has these signatures:
          * 
@@ -1273,9 +1263,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
-         *
-         * InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
+         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters. <br>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
          *
          * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
          * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -1297,9 +1285,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
-         *
-         * InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
+         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters. <br>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
          *
          * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult.  Any errors encountered will be provided in the asyncResult.error property.
@@ -2033,11 +2019,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
          *
-         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
-         *
-         * FileTypeNotSupported - The attachment has an extension that is not allowed.
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed. <br>FileTypeNotSupported - The attachment has an extension that is not allowed. <br>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -2057,11 +2039,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
          *
-         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
-         *
-         * FileTypeNotSupported - The attachment has an extension that is not allowed.
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed. <br>FileTypeNotSupported - The attachment has an extension that is not allowed. <br>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -2084,11 +2062,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
          *
-         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
-         *
-         * FileTypeNotSupported - The attachment has an extension that is not allowed.
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed. <br>FileTypeNotSupported - The attachment has an extension that is not allowed. <br>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -3730,11 +3704,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
-         *
-         * FileTypeNotSupported - The attachment has an extension that is not allowed.
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed. <br>FileTypeNotSupported - The attachment has an extension that is not allowed. <br>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -3754,11 +3724,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
-         *
-         * FileTypeNotSupported - The attachment has an extension that is not allowed.
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed. <br>FileTypeNotSupported - The attachment has an extension that is not allowed. <br>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -3781,11 +3747,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
-         *
-         * FileTypeNotSupported - The attachment has an extension that is not allowed.
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed. <br>FileTypeNotSupported - The attachment has an extension that is not allowed. <br>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -4993,11 +4955,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
-         *
-         * FileTypeNotSupported - The attachment has an extension that is not allowed.
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed. <br>FileTypeNotSupported - The attachment has an extension that is not allowed. <br>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          * 
          * In addition to this signature, the method also has the following signatures:
          * 
@@ -5029,11 +4987,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
-         *
-         * FileTypeNotSupported - The attachment has an extension that is not allowed.
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed. <br>FileTypeNotSupported - The attachment has an extension that is not allowed. <br>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -5053,11 +5007,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
-         *
-         * FileTypeNotSupported - The attachment has an extension that is not allowed.
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed. <br>FileTypeNotSupported - The attachment has an extension that is not allowed. <br>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -5080,11 +5030,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
-         *
-         * FileTypeNotSupported - The attachment has an extension that is not allowed.
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed. <br>FileTypeNotSupported - The attachment has an extension that is not allowed. <br>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.

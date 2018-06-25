@@ -6249,14 +6249,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>"
+                  "text": "<tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters. <br>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -6399,14 +6392,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>"
+                  "text": "<tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters. <br>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -16911,21 +16897,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "FileTypeNotSupported - The attachment has an extension that is not allowed."
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>"
+                  "text": "<tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed. <br>FileTypeNotSupported - The attachment has an extension that is not allowed. <br>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"

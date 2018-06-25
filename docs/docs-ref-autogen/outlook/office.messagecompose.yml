@@ -63,12 +63,8 @@ items:
 
 
       <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
-
-
-      FileTypeNotSupported - The attachment has an extension that is not allowed.
-
-
-      NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+      &lt;br&gt;FileTypeNotSupported - The attachment has an extension that is not allowed.
+      &lt;br&gt;NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
 
 
       In addition to this signature, the method also has the following signatures:

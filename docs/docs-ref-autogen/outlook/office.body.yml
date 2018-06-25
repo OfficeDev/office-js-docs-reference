@@ -257,10 +257,8 @@ items:
 
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
-
-
-      InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is
-      in plain text.</td></tr></table>
+      &lt;br&gt;InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the
+      message body is in plain text.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:
@@ -362,10 +360,8 @@ items:
 
 
       <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
-
-
-      InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is
-      in plain text.</td></tr></table>
+      &lt;br&gt;InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the
+      message body is in plain text.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:
