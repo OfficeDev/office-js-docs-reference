@@ -1242,7 +1242,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;"
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
       return:
         type:
           - Word.RangeCollection
@@ -1255,7 +1264,16 @@ items:
         - id: searchOptions
           description: Optional. Options for the search.
           type:
-            - "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+            - |-
+              Word.SearchOptions | {
+                          ignorePunct?: boolean;
+                          ignoreSpace?: boolean;
+                          matchCase?: boolean;
+                          matchPrefix?: boolean;
+                          matchSuffix?: boolean;
+                          matchWholeWord?: boolean;
+                          matchWildcards?: boolean;
+                      }
     remarks: |
 
 

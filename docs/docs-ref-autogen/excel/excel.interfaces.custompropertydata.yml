@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.CustomPropertyData
+    summary: An interface describing the data returned by calling "customProperty.toJSON()".
+    name: Excel.Interfaces.CustomPropertyData
+    fullName: excel.Excel.Interfaces.CustomPropertyData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.CustomPropertyData.key
+      - excel.Excel.Interfaces.CustomPropertyData.type
+      - excel.Excel.Interfaces.CustomPropertyData.value
+  - uid: excel.Excel.Interfaces.CustomPropertyData.key
+    summary: |-
+      Gets the key of the custom property. Read only.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: key
+    fullName: excel.Excel.Interfaces.CustomPropertyData.key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.CustomPropertyData.type
+    summary: |-
+      Gets the value type of the custom property. Read only.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: excel.Excel.Interfaces.CustomPropertyData.type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float";'
+      return:
+        type:
+          - Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float"
+  - uid: excel.Excel.Interfaces.CustomPropertyData.value
+    summary: |-
+      Gets or sets the value of the custom property.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: excel.Excel.Interfaces.CustomPropertyData.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: any;'
+      return:
+        type:
+          - any

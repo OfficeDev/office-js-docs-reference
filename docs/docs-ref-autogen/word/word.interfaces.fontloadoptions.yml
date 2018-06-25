@@ -1,0 +1,207 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.FontLoadOptions
+    summary: |-
+      Represents a font.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.FontLoadOptions
+    fullName: word.Word.Interfaces.FontLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.FontLoadOptions.bold
+      - word.Word.Interfaces.FontLoadOptions.color
+      - word.Word.Interfaces.FontLoadOptions.doubleStrikeThrough
+      - word.Word.Interfaces.FontLoadOptions.highlightColor
+      - word.Word.Interfaces.FontLoadOptions.italic
+      - word.Word.Interfaces.FontLoadOptions.name
+      - word.Word.Interfaces.FontLoadOptions.size
+      - word.Word.Interfaces.FontLoadOptions.strikeThrough
+      - word.Word.Interfaces.FontLoadOptions.subscript
+      - word.Word.Interfaces.FontLoadOptions.superscript
+      - word.Word.Interfaces.FontLoadOptions.underline
+  - uid: word.Word.Interfaces.FontLoadOptions.bold
+    summary: >-
+      Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,
+      false.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: bold
+    fullName: word.Word.Interfaces.FontLoadOptions.bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.FontLoadOptions.color
+    summary: >-
+      Gets or sets the color for the specified font. You can provide the value in the '\#RRGGBB' format or the color
+      name.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: color
+    fullName: word.Word.Interfaces.FontLoadOptions.color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.FontLoadOptions.doubleStrikeThrough
+    summary: >-
+      Gets or sets a value that indicates whether the font has a double strike through. True if the font is formatted as
+      double strikethrough text, otherwise, false.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: doubleStrikeThrough
+    fullName: word.Word.Interfaces.FontLoadOptions.doubleStrikeThrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'doubleStrikeThrough?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.FontLoadOptions.highlightColor
+    summary: >-
+      Gets or sets the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To
+      remove highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, or an empty
+      string for mixed highlight colors, or null for no highlight color.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: highlightColor
+    fullName: word.Word.Interfaces.FontLoadOptions.highlightColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'highlightColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.FontLoadOptions.italic
+    summary: >-
+      Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise,
+      false.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: italic
+    fullName: word.Word.Interfaces.FontLoadOptions.italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.FontLoadOptions.name
+    summary: |-
+      Gets or sets a value that represents the name of the font.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: name
+    fullName: word.Word.Interfaces.FontLoadOptions.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.FontLoadOptions.size
+    summary: |-
+      Gets or sets a value that represents the font size in points.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: size
+    fullName: word.Word.Interfaces.FontLoadOptions.size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.FontLoadOptions.strikeThrough
+    summary: >-
+      Gets or sets a value that indicates whether the font has a strike through. True if the font is formatted as
+      strikethrough text, otherwise, false.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: strikeThrough
+    fullName: word.Word.Interfaces.FontLoadOptions.strikeThrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikeThrough?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.FontLoadOptions.subscript
+    summary: >-
+      Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript,
+      otherwise, false.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: subscript
+    fullName: word.Word.Interfaces.FontLoadOptions.subscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.FontLoadOptions.superscript
+    summary: >-
+      Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as
+      superscript, otherwise, false.
+
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: superscript
+    fullName: word.Word.Interfaces.FontLoadOptions.superscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'superscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.FontLoadOptions.underline
+    summary: |-
+      Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: underline
+    fullName: word.Word.Interfaces.FontLoadOptions.underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline?: boolean;'
+      return:
+        type:
+          - boolean

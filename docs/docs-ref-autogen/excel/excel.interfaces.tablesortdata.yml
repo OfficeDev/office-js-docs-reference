@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.TableSortData
+    summary: An interface describing the data returned by calling "tableSort.toJSON()".
+    name: Excel.Interfaces.TableSortData
+    fullName: excel.Excel.Interfaces.TableSortData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.TableSortData.fields
+      - excel.Excel.Interfaces.TableSortData.matchCase
+      - excel.Excel.Interfaces.TableSortData.method
+  - uid: excel.Excel.Interfaces.TableSortData.fields
+    summary: |-
+      Represents the current conditions used to last sort the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: fields
+    fullName: excel.Excel.Interfaces.TableSortData.fields
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fields?: Excel.SortField[];'
+      return:
+        type:
+          - 'Excel.SortField[]'
+  - uid: excel.Excel.Interfaces.TableSortData.matchCase
+    summary: |-
+      Represents whether the casing impacted the last sort of the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: matchCase
+    fullName: excel.Excel.Interfaces.TableSortData.matchCase
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'matchCase?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TableSortData.method
+    summary: |-
+      Represents Chinese character ordering method last used to sort the table. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: method
+    fullName: excel.Excel.Interfaces.TableSortData.method
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'method?: Excel.SortMethod | "PinYin" | "StrokeCount";'
+      return:
+        type:
+          - Excel.SortMethod | "PinYin" | "StrokeCount"

@@ -7,8 +7,7 @@ items:
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
       <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
@@ -30,8 +29,7 @@ items:
       location of the appointment is provided as a string in the asyncResult.value property.
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
       <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
@@ -74,8 +72,7 @@ items:
       Setting the location of an appointment overwrites the current location.
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
       <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>

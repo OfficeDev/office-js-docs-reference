@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.DocumentData
+    summary: An interface describing the data returned by calling "document.toJSON()".
+    name: Visio.Interfaces.DocumentData
+    fullName: visio.Visio.Interfaces.DocumentData
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.DocumentData.application
+      - visio.Visio.Interfaces.DocumentData.pages
+      - visio.Visio.Interfaces.DocumentData.view
+  - uid: visio.Visio.Interfaces.DocumentData.application
+    summary: |-
+      Represents a Visio application instance that contains this document. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: application
+    fullName: visio.Visio.Interfaces.DocumentData.application
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'application?: Visio.Interfaces.ApplicationData;'
+      return:
+        type:
+          - Visio.Interfaces.ApplicationData
+  - uid: visio.Visio.Interfaces.DocumentData.pages
+    summary: |-
+      Represents a collection of pages associated with the document. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: pages
+    fullName: visio.Visio.Interfaces.DocumentData.pages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pages?: Visio.Interfaces.PageData[];'
+      return:
+        type:
+          - 'Visio.Interfaces.PageData[]'
+  - uid: visio.Visio.Interfaces.DocumentData.view
+    summary: |-
+      Returns the DocumentView object.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: view
+    fullName: visio.Visio.Interfaces.DocumentData.view
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'view?: Visio.Interfaces.DocumentViewData;'
+      return:
+        type:
+          - Visio.Interfaces.DocumentViewData

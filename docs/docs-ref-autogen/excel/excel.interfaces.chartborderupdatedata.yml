@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartBorderUpdateData
+    summary: 'An interface for updating data on the ChartBorder object, for use in "chartBorder.set({ ... })".'
+    name: Excel.Interfaces.ChartBorderUpdateData
+    fullName: excel.Excel.Interfaces.ChartBorderUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartBorderUpdateData.color
+      - excel.Excel.Interfaces.ChartBorderUpdateData.lineStyle
+      - excel.Excel.Interfaces.ChartBorderUpdateData.weight
+  - uid: excel.Excel.Interfaces.ChartBorderUpdateData.color
+    summary: |-
+      HTML color code representing the color of borders in the chart.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: excel.Excel.Interfaces.ChartBorderUpdateData.color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.ChartBorderUpdateData.lineStyle
+    summary: |-
+      Represents the line style of the border. See Excel.ChartLineStyle for details.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: lineStyle
+    fullName: excel.Excel.Interfaces.ChartBorderUpdateData.lineStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        lineStyle?: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25"
+        | "Grey50" | "Grey75" | "Automatic" | "RoundDot";
+      return:
+        type:
+          - >-
+            Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" |
+            "Grey50" | "Grey75" | "Automatic" | "RoundDot"
+  - uid: excel.Excel.Interfaces.ChartBorderUpdateData.weight
+    summary: |-
+      Represents weight of the border, in points.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: weight
+    fullName: excel.Excel.Interfaces.ChartBorderUpdateData.weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: number;'
+      return:
+        type:
+          - number

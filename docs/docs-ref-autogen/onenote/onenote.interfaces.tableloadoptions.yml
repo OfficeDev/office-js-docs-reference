@@ -1,0 +1,110 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.TableLoadOptions
+    summary: |-
+      Represents a table in a OneNote page.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.TableLoadOptions
+    fullName: onenote.OneNote.Interfaces.TableLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.TableLoadOptions.borderVisible
+      - onenote.OneNote.Interfaces.TableLoadOptions.columnCount
+      - onenote.OneNote.Interfaces.TableLoadOptions.id
+      - onenote.OneNote.Interfaces.TableLoadOptions.paragraph
+      - onenote.OneNote.Interfaces.TableLoadOptions.rowCount
+      - onenote.OneNote.Interfaces.TableLoadOptions.rows
+  - uid: onenote.OneNote.Interfaces.TableLoadOptions.borderVisible
+    summary: |-
+      Gets or sets whether the borders are visible or not. True if they are visible, false if they are hidden.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: borderVisible
+    fullName: onenote.OneNote.Interfaces.TableLoadOptions.borderVisible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borderVisible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.TableLoadOptions.columnCount
+    summary: |-
+      Gets the number of columns in the table.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: columnCount
+    fullName: onenote.OneNote.Interfaces.TableLoadOptions.columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnCount?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.TableLoadOptions.id
+    summary: |-
+      Gets the ID of the table. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: onenote.OneNote.Interfaces.TableLoadOptions.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.TableLoadOptions.paragraph
+    summary: |-
+      Gets the Paragraph object that contains the Table object.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: paragraph
+    fullName: onenote.OneNote.Interfaces.TableLoadOptions.paragraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
+      return:
+        type:
+          - OneNote.Interfaces.ParagraphLoadOptions
+  - uid: onenote.OneNote.Interfaces.TableLoadOptions.rowCount
+    summary: |-
+      Gets the number of rows in the table.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: rowCount
+    fullName: onenote.OneNote.Interfaces.TableLoadOptions.rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowCount?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.TableLoadOptions.rows
+    summary: |-
+      Gets all of the table rows.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: rows
+    fullName: onenote.OneNote.Interfaces.TableLoadOptions.rows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rows?: OneNote.Interfaces.TableRowCollectionLoadOptions;'
+      return:
+        type:
+          - OneNote.Interfaces.TableRowCollectionLoadOptions

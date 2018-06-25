@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.WorksheetProtectionLoadOptions
+    summary: |-
+      Represents the protection of a sheet object.
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.WorksheetProtectionLoadOptions
+    fullName: excel.Excel.Interfaces.WorksheetProtectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.WorksheetProtectionLoadOptions.options
+      - excel.Excel.Interfaces.WorksheetProtectionLoadOptions.protected
+  - uid: excel.Excel.Interfaces.WorksheetProtectionLoadOptions.options
+    summary: |-
+      Sheet protection options. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: options
+    fullName: excel.Excel.Interfaces.WorksheetProtectionLoadOptions.options
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'options?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.WorksheetProtectionLoadOptions.protected
+    summary: |-
+      Indicates if the worksheet is protected. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: protected
+    fullName: excel.Excel.Interfaces.WorksheetProtectionLoadOptions.protected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protected?: boolean;'
+      return:
+        type:
+          - boolean

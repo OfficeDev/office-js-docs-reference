@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.SectionLoadOptions
+    summary: |-
+      Represents a section in a Word document.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.SectionLoadOptions
+    fullName: word.Word.Interfaces.SectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.SectionLoadOptions.body
+  - uid: word.Word.Interfaces.SectionLoadOptions.body
+    summary: |-
+      Gets the body object of the section. This does not include the header/footer and other section metadata.
+
+      \[ [API set: WordApi 1.1](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: body
+    fullName: word.Word.Interfaces.SectionLoadOptions.body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body?: Word.Interfaces.BodyLoadOptions;'
+      return:
+        type:
+          - Word.Interfaces.BodyLoadOptions

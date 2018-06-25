@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.CustomPropertyCollectionUpdateData
+    summary: >-
+      An interface for updating data on the CustomPropertyCollection object, for use in "customPropertyCollection.set({
+      ... })".
+    name: Excel.Interfaces.CustomPropertyCollectionUpdateData
+    fullName: excel.Excel.Interfaces.CustomPropertyCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.CustomPropertyCollectionUpdateData.items
+  - uid: excel.Excel.Interfaces.CustomPropertyCollectionUpdateData.items
+    name: items
+    fullName: excel.Excel.Interfaces.CustomPropertyCollectionUpdateData.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.CustomPropertyData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.CustomPropertyData[]'

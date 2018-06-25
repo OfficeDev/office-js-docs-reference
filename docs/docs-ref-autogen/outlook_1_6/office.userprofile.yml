@@ -35,11 +35,12 @@ items:
 
       \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr> <th>Value</th> <th>Description?</th> </tr> <tr> <td>enterprise</td> <td>The mailbox is on an
-      on-premises Exchange server.</td> </tr> <tr> <td>gmail</td> <td>The mailbox is associated with a Gmail
-      account.</td> </tr> <tr> <td>office365</td> <td>The mailbox is associated with an Office 365 work or school
-      account.</td> </tr> <tr> <td>outlookCom</td> <td>The mailbox is associated with a personal Outlook.com
-      account.</td> </tr> </table>
+      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Value&lt;/th&gt; &lt;th&gt;Description?&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
+      &lt;td&gt;enterprise&lt;/td&gt; &lt;td&gt;The mailbox is on an on-premises Exchange server.&lt;/td&gt; &lt;/tr&gt;
+      &lt;tr&gt; &lt;td&gt;gmail&lt;/td&gt; &lt;td&gt;The mailbox is associated with a Gmail account.&lt;/td&gt;
+      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;office365&lt;/td&gt; &lt;td&gt;The mailbox is associated with an Office 365 work
+      or school account.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;outlookCom&lt;/td&gt; &lt;td&gt;The mailbox is
+      associated with a personal Outlook.com account.&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
 
 
       [Minimum permission

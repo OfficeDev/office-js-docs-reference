@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.PageContentCollectionUpdateData
+    summary: >-
+      An interface for updating data on the PageContentCollection object, for use in "pageContentCollection.set({ ...
+      })".
+    name: OneNote.Interfaces.PageContentCollectionUpdateData
+    fullName: onenote.OneNote.Interfaces.PageContentCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.PageContentCollectionUpdateData.items
+  - uid: onenote.OneNote.Interfaces.PageContentCollectionUpdateData.items
+    name: items
+    fullName: onenote.OneNote.Interfaces.PageContentCollectionUpdateData.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: OneNote.Interfaces.PageContentData[];'
+      return:
+        type:
+          - 'OneNote.Interfaces.PageContentData[]'

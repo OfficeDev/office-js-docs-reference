@@ -1,0 +1,155 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.PageData
+    summary: An interface describing the data returned by calling "page.toJSON()".
+    name: Visio.Interfaces.PageData
+    fullName: visio.Visio.Interfaces.PageData
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.PageData.allShapes
+      - visio.Visio.Interfaces.PageData.comments
+      - visio.Visio.Interfaces.PageData.height
+      - visio.Visio.Interfaces.PageData.index
+      - visio.Visio.Interfaces.PageData.isBackground
+      - visio.Visio.Interfaces.PageData.name
+      - visio.Visio.Interfaces.PageData.shapes
+      - visio.Visio.Interfaces.PageData.view
+      - visio.Visio.Interfaces.PageData.width
+  - uid: visio.Visio.Interfaces.PageData.allShapes
+    summary: |-
+      All shapes in the page. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: allShapes
+    fullName: visio.Visio.Interfaces.PageData.allShapes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allShapes?: Visio.Interfaces.ShapeData[];'
+      return:
+        type:
+          - 'Visio.Interfaces.ShapeData[]'
+  - uid: visio.Visio.Interfaces.PageData.comments
+    summary: |-
+      Returns the Comments Collection
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: comments
+    fullName: visio.Visio.Interfaces.PageData.comments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'comments?: Visio.Interfaces.CommentData[];'
+      return:
+        type:
+          - 'Visio.Interfaces.CommentData[]'
+  - uid: visio.Visio.Interfaces.PageData.height
+    summary: |-
+      Returns the height of the page. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: height
+    fullName: visio.Visio.Interfaces.PageData.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: visio.Visio.Interfaces.PageData.index
+    summary: |-
+      Index of the Page.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: index
+    fullName: visio.Visio.Interfaces.PageData.index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'index?: number;'
+      return:
+        type:
+          - number
+  - uid: visio.Visio.Interfaces.PageData.isBackground
+    summary: |-
+      Whether the page is a background page or not. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: isBackground
+    fullName: visio.Visio.Interfaces.PageData.isBackground
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isBackground?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.PageData.name
+    summary: |-
+      Page name. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: name
+    fullName: visio.Visio.Interfaces.PageData.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Interfaces.PageData.shapes
+    summary: |-
+      Shapes at root level, in the page. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: shapes
+    fullName: visio.Visio.Interfaces.PageData.shapes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shapes?: Visio.Interfaces.ShapeData[];'
+      return:
+        type:
+          - 'Visio.Interfaces.ShapeData[]'
+  - uid: visio.Visio.Interfaces.PageData.view
+    summary: |-
+      Returns the view of the page. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: view
+    fullName: visio.Visio.Interfaces.PageData.view
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'view?: Visio.Interfaces.PageViewData;'
+      return:
+        type:
+          - Visio.Interfaces.PageViewData
+  - uid: visio.Visio.Interfaces.PageData.width
+    summary: |-
+      Returns the width of the page. Read-only.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: width
+    fullName: visio.Visio.Interfaces.PageData.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number

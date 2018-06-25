@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphData
+    summary: An interface describing the data returned by calling "inkAnalysisParagraph.toJSON()".
+    name: OneNote.Interfaces.InkAnalysisParagraphData
+    fullName: onenote.OneNote.Interfaces.InkAnalysisParagraphData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.InkAnalysisParagraphData.id
+      - onenote.OneNote.Interfaces.InkAnalysisParagraphData.inkAnalysis
+      - onenote.OneNote.Interfaces.InkAnalysisParagraphData.lines
+  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphData.id
+    summary: |-
+      Gets the ID of the InkAnalysisParagraph object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: onenote.OneNote.Interfaces.InkAnalysisParagraphData.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphData.inkAnalysis
+    summary: |-
+      Reference to the parent InkAnalysisPage. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: inkAnalysis
+    fullName: onenote.OneNote.Interfaces.InkAnalysisParagraphData.inkAnalysis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inkAnalysis?: OneNote.Interfaces.InkAnalysisData;'
+      return:
+        type:
+          - OneNote.Interfaces.InkAnalysisData
+  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphData.lines
+    summary: |-
+      Gets the ink analysis lines in this ink analysis paragraph. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: lines
+    fullName: onenote.OneNote.Interfaces.InkAnalysisParagraphData.lines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lines?: OneNote.Interfaces.InkAnalysisLineData[];'
+      return:
+        type:
+          - 'OneNote.Interfaces.InkAnalysisLineData[]'

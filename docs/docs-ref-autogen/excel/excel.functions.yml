@@ -10231,7 +10231,10 @@ items:
       content: 'toJSON:'
       return:
         type:
-          - "{\r\n            [key: string]: string;\r\n        }"
+          - |-
+            {
+                        [key: string]: string;
+                    }
         description: ''
   - uid: excel.Excel.Functions.trim
     summary: |-

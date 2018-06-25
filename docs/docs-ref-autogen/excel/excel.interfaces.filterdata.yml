@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.FilterData
+    summary: An interface describing the data returned by calling "filter.toJSON()".
+    name: Excel.Interfaces.FilterData
+    fullName: excel.Excel.Interfaces.FilterData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.FilterData.criteria
+  - uid: excel.Excel.Interfaces.FilterData.criteria
+    summary: |-
+      The currently applied filter on the given column. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: criteria
+    fullName: excel.Excel.Interfaces.FilterData.criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'criteria?: Excel.FilterCriteria;'
+      return:
+        type:
+          - Excel.FilterCriteria
