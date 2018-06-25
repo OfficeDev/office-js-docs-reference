@@ -8,7 +8,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
     name: Office.Recipients
     fullName: outlook.Office.Recipients
     langs:
@@ -38,10 +38,11 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
+      entries.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:
@@ -134,7 +135,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
@@ -208,10 +209,11 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose<tr><td>Errors</td>
 
 
-      Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
+      entries.<tr><td>Errors</td><td>
 
 
       In addition to the main signature, this method also has these signatures:

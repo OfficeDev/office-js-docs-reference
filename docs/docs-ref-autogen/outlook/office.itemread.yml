@@ -48,7 +48,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: attachments
     fullName: outlook.Office.ItemRead.attachments
     langs:
@@ -87,7 +87,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: displayReplyAllForm(formData)
     fullName: outlook.Office.ItemRead.displayReplyAllForm
     langs:
@@ -135,7 +135,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: displayReplyForm(formData)
     fullName: outlook.Office.ItemRead.displayReplyForm
     langs:
@@ -168,7 +168,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: getEntities()
     fullName: outlook.Office.ItemRead.getEntities
     langs:
@@ -193,7 +193,7 @@ items:
       --></td><td>Restricted</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
 
 
       While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access,
@@ -247,7 +247,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: getFilteredEntitiesByName(name)
     fullName: outlook.Office.ItemRead.getFilteredEntitiesByName
     langs:
@@ -286,7 +286,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -348,7 +348,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: getRegExMatches()
     fullName: outlook.Office.ItemRead.getRegExMatches
     langs:
@@ -388,7 +388,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: getRegExMatchesByName(name)
     fullName: outlook.Office.ItemRead.getRegExMatchesByName
     langs:
@@ -421,7 +421,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: getSelectedEntities()
     fullName: outlook.Office.ItemRead.getSelectedEntities
     langs:
@@ -461,7 +461,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: getSelectedRegExMatches()
     fullName: outlook.Office.ItemRead.getSelectedRegExMatches
     langs:
@@ -492,7 +492,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
 
 
       The itemClass property specifies the message class of the selected item. The following are the default message
@@ -539,7 +539,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: itemId
     fullName: outlook.Office.ItemRead.itemId
     langs:
@@ -566,7 +566,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: normalizedSubject
     fullName: outlook.Office.ItemRead.normalizedSubject
     langs:
@@ -596,7 +596,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: subject
     fullName: outlook.Office.ItemRead.subject
     langs:

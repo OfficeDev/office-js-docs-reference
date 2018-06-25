@@ -20,7 +20,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       #### Examples
@@ -84,7 +84,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: get(name)
     fullName: outlook.Office.CustomProperties.get
     langs:
@@ -115,7 +115,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: remove(name)
     fullName: outlook.Office.CustomProperties.remove
     langs:
@@ -151,7 +151,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       #### Examples
@@ -255,7 +255,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: 'set(name, value)'
     fullName: outlook.Office.CustomProperties.set
     langs:

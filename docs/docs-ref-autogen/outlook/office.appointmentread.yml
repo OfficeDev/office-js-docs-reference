@@ -63,7 +63,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -124,7 +124,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: attachments
     fullName: outlook.Office.AppointmentRead.attachments
     langs:
@@ -146,7 +146,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: body
     fullName: outlook.Office.AppointmentRead.body
     langs:
@@ -168,7 +168,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: dateTimeCreated
     fullName: outlook.Office.AppointmentRead.dateTimeCreated
     langs:
@@ -193,7 +193,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: dateTimeModifed
     fullName: outlook.Office.AppointmentRead.dateTimeModifed
     langs:
@@ -232,7 +232,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: displayReplyAllForm(formData)
     fullName: outlook.Office.AppointmentRead.displayReplyAllForm
     langs:
@@ -280,7 +280,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: displayReplyForm(formData)
     fullName: outlook.Office.AppointmentRead.displayReplyForm
     langs:
@@ -320,7 +320,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: end
     fullName: outlook.Office.AppointmentRead.end
     langs:
@@ -344,7 +344,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: getEntities()
     fullName: outlook.Office.AppointmentRead.getEntities
     langs:
@@ -369,7 +369,7 @@ items:
       --></td><td>Restricted</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
 
 
       While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access,
@@ -423,7 +423,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: getFilteredEntitiesByName(name)
     fullName: outlook.Office.AppointmentRead.getFilteredEntitiesByName
     langs:
@@ -462,7 +462,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -524,7 +524,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: getRegExMatches()
     fullName: outlook.Office.AppointmentRead.getRegExMatches
     langs:
@@ -564,7 +564,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: getRegExMatchesByName(name)
     fullName: outlook.Office.AppointmentRead.getRegExMatchesByName
     langs:
@@ -597,7 +597,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: getSelectedEntities()
     fullName: outlook.Office.AppointmentRead.getSelectedEntities
     langs:
@@ -637,7 +637,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: getSelectedRegExMatches()
     fullName: outlook.Office.AppointmentRead.getSelectedRegExMatches
     langs:
@@ -668,7 +668,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
 
 
       The itemClass property specifies the message class of the selected item. The following are the default message
@@ -689,7 +689,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: itemClass
     fullName: outlook.Office.AppointmentRead.itemClass
     langs:
@@ -723,7 +723,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: itemId
     fullName: outlook.Office.AppointmentRead.itemId
     langs:
@@ -750,7 +750,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: itemType
     fullName: outlook.Office.AppointmentRead.itemType
     langs:
@@ -784,7 +784,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: outlook.Office.AppointmentRead.loadCustomPropertiesAsync
     langs:
@@ -822,7 +822,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: location
     fullName: outlook.Office.AppointmentRead.location
     langs:
@@ -849,7 +849,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: normalizedSubject
     fullName: outlook.Office.AppointmentRead.normalizedSubject
     langs:
@@ -871,7 +871,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: notificationMessages
     fullName: outlook.Office.AppointmentRead.notificationMessages
     langs:
@@ -900,7 +900,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: optionalAttendees
     fullName: outlook.Office.AppointmentRead.optionalAttendees
     langs:
@@ -922,7 +922,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: organizer
     fullName: outlook.Office.AppointmentRead.organizer
     langs:
@@ -957,7 +957,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     isPreview: true
     name: recurrence
     fullName: outlook.Office.AppointmentRead.recurrence
@@ -985,7 +985,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -1047,7 +1047,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: requiredAttendees
     fullName: outlook.Office.AppointmentRead.requiredAttendees
     langs:
@@ -1085,7 +1085,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     isPreview: true
     name: seriesId
     fullName: outlook.Office.AppointmentRead.seriesId
@@ -1113,7 +1113,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: start
     fullName: outlook.Office.AppointmentRead.start
     langs:
@@ -1143,7 +1143,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Appointment Attendee</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Appointment Attendee</td></tr></table>
     name: subject
     fullName: outlook.Office.AppointmentRead.subject
     langs:

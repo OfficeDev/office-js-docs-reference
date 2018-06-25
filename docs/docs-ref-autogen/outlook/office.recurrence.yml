@@ -24,7 +24,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: Office.Recurrence
     fullName: outlook.Office.Recurrence
@@ -52,7 +52,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
@@ -120,7 +120,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: recurrenceProperties
     fullName: outlook.Office.Recurrence.recurrenceProperties
@@ -143,7 +143,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: recurrenceTimeZone
     fullName: outlook.Office.Recurrence.recurrenceTimeZone
@@ -166,7 +166,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: recurrenceType
     fullName: outlook.Office.Recurrence.recurrenceType
@@ -193,7 +193,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: seriesTime
     fullName: outlook.Office.Recurrence.seriesTime
@@ -218,10 +218,10 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      Errors: InvalidEndTime - The appointment end time is before its start time.
+      <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before its start time.</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:

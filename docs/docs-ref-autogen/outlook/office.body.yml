@@ -13,7 +13,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: Office.Body
     fullName: outlook.Office.Body
     langs:
@@ -47,7 +47,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
@@ -121,7 +121,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
     name: 'getTypeAsync(options, callback)'
     fullName: outlook.Office.Body.getTypeAsync
     langs:
@@ -167,10 +167,11 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000
+      characters.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:
@@ -252,14 +253,14 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
 
 
       InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is
-      in plain text.
+      in plain text.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:
@@ -357,14 +358,14 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
 
 
       InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is
-      in plain text.
+      in plain text.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:

@@ -11,7 +11,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
     name: Office.Subject
     fullName: outlook.Office.Subject
     langs:
@@ -37,7 +37,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
@@ -85,10 +85,11 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      Errors: DataExceedsMaximumSize - The subject parameter is longer than 255 characters.
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The subject parameter is longer than 255
+      characters.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:

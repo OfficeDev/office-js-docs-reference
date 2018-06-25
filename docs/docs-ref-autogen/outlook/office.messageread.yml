@@ -62,7 +62,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -123,7 +123,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: attachments
     fullName: outlook.Office.MessageRead.attachments
     langs:
@@ -145,7 +145,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: body
     fullName: outlook.Office.MessageRead.body
     langs:
@@ -173,7 +173,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: cc
     fullName: outlook.Office.MessageRead.cc
     langs:
@@ -195,7 +195,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: dateTimeCreated
     fullName: outlook.Office.MessageRead.dateTimeCreated
     langs:
@@ -220,7 +220,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: dateTimeModifed
     fullName: outlook.Office.MessageRead.dateTimeModifed
     langs:
@@ -259,7 +259,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: displayReplyAllForm(formData)
     fullName: outlook.Office.MessageRead.displayReplyAllForm
     langs:
@@ -307,7 +307,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: displayReplyForm(formData)
     fullName: outlook.Office.MessageRead.displayReplyForm
     langs:
@@ -349,7 +349,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: from
     fullName: outlook.Office.MessageRead.from
     langs:
@@ -373,7 +373,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getEntities()
     fullName: outlook.Office.MessageRead.getEntities
     langs:
@@ -410,7 +410,7 @@ items:
       --></td><td>Restricted</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: getEntitiesByType(entityType)
     fullName: outlook.Office.MessageRead.getEntitiesByType
     langs:
@@ -452,7 +452,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getFilteredEntitiesByName(name)
     fullName: outlook.Office.MessageRead.getFilteredEntitiesByName
     langs:
@@ -491,7 +491,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -553,7 +553,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getRegExMatches()
     fullName: outlook.Office.MessageRead.getRegExMatches
     langs:
@@ -593,7 +593,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getRegExMatchesByName(name)
     fullName: outlook.Office.MessageRead.getRegExMatchesByName
     langs:
@@ -626,7 +626,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getSelectedEntities()
     fullName: outlook.Office.MessageRead.getSelectedEntities
     langs:
@@ -666,7 +666,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getSelectedRegExMatches()
     fullName: outlook.Office.MessageRead.getSelectedRegExMatches
     langs:
@@ -692,7 +692,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: internetMessageId
     fullName: outlook.Office.MessageRead.internetMessageId
     langs:
@@ -732,7 +732,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: itemClass
     fullName: outlook.Office.MessageRead.itemClass
     langs:
@@ -766,7 +766,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: itemId
     fullName: outlook.Office.MessageRead.itemId
     langs:
@@ -793,7 +793,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: itemType
     fullName: outlook.Office.MessageRead.itemType
     langs:
@@ -827,7 +827,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: outlook.Office.MessageRead.loadCustomPropertiesAsync
     langs:
@@ -868,7 +868,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: normalizedSubject
     fullName: outlook.Office.MessageRead.normalizedSubject
     langs:
@@ -890,7 +890,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: notificationMessages
     fullName: outlook.Office.MessageRead.notificationMessages
     langs:
@@ -926,7 +926,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     isPreview: true
     name: recurrence
     fullName: outlook.Office.MessageRead.recurrence
@@ -954,7 +954,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -1017,7 +1017,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: sender
     fullName: outlook.Office.MessageRead.sender
     langs:
@@ -1055,7 +1055,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     isPreview: true
     name: seriesId
     fullName: outlook.Office.MessageRead.seriesId
@@ -1086,7 +1086,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: subject
     fullName: outlook.Office.MessageRead.subject
     langs:
@@ -1114,7 +1114,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: to
     fullName: outlook.Office.MessageRead.to
     langs:

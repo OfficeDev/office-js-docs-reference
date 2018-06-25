@@ -11,7 +11,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: Office.LocalClientTime
     fullName: outlook.Office.LocalClientTime
     langs:

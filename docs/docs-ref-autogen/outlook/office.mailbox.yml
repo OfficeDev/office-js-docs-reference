@@ -19,7 +19,7 @@ items:
       --></td><td>Restricted</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: Office.Mailbox
     fullName: outlook.Office.Mailbox
     langs:
@@ -61,7 +61,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.Mailbox.addHandlerAsync
     langs:
@@ -116,7 +116,7 @@ items:
       --></td><td>Restricted</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: 'convertToEwsId(itemId, restVersion)'
     fullName: outlook.Office.Mailbox.convertToEwsId
     langs:
@@ -161,7 +161,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: convertToLocalClientTime(timeValue)
     fullName: outlook.Office.Mailbox.convertToLocalClientTime
     langs:
@@ -197,7 +197,7 @@ items:
       --></td><td>Restricted</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: 'convertToRestId(itemId, restVersion)'
     fullName: outlook.Office.Mailbox.convertToRestId
     langs:
@@ -234,7 +234,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: convertToUtcClientTime(input)
     fullName: outlook.Office.Mailbox.convertToUtcClientTime
     langs:
@@ -286,7 +286,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: diagnostics
     fullName: outlook.Office.Mailbox.diagnostics
     langs:
@@ -330,7 +330,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: displayAppointmentForm(itemId)
     fullName: outlook.Office.Mailbox.displayAppointmentForm
     langs:
@@ -379,7 +379,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: displayMessageForm(itemId)
     fullName: outlook.Office.Mailbox.displayMessageForm
     langs:
@@ -430,7 +430,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: displayNewAppointmentForm(parameters)
     fullName: outlook.Office.Mailbox.displayNewAppointmentForm
     langs:
@@ -467,7 +467,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: displayNewMessageForm(parameters)
     fullName: outlook.Office.Mailbox.displayNewMessageForm
     langs:
@@ -530,7 +530,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: ewsUrl
     fullName: outlook.Office.Mailbox.ewsUrl
     langs:
@@ -583,7 +583,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose and read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose and read</td></tr></table>
 
 
       In addition to this signature, the method has the following signatures:
@@ -635,7 +635,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose and read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose and read</td></tr></table>
     name: 'getUserIdentityTokenAsync(callback, userContext)'
     fullName: outlook.Office.Mailbox.getUserIdentityTokenAsync
     langs:
@@ -731,7 +731,7 @@ items:
       --></td><td>ReadWriteMailbox</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose and read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose and read</td></tr></table>
     name: 'makeEwsRequestAsync(data, callback, userContext)'
     fullName: outlook.Office.Mailbox.makeEwsRequestAsync
     langs:
@@ -781,7 +781,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: restUrl
     fullName: outlook.Office.Mailbox.restUrl
     langs:

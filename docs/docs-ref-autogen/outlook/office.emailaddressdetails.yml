@@ -11,7 +11,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: Office.EmailAddressDetails
     fullName: outlook.Office.EmailAddressDetails
     langs:

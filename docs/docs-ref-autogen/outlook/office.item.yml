@@ -13,7 +13,7 @@ items:
       --></td><td>Restricted</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: Office.Item
     fullName: outlook.Office.Item
     langs:
@@ -47,7 +47,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -102,7 +102,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: body
     fullName: outlook.Office.Item.body
     langs:
@@ -124,7 +124,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: dateTimeCreated
     fullName: outlook.Office.Item.dateTimeCreated
     langs:
@@ -149,7 +149,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: dateTimeModifed
     fullName: outlook.Office.Item.dateTimeModifed
     langs:
@@ -176,7 +176,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: itemType
     fullName: outlook.Office.Item.itemType
     langs:
@@ -210,7 +210,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: outlook.Office.Item.loadCustomPropertiesAsync
     langs:
@@ -246,7 +246,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: notificationMessages
     fullName: outlook.Office.Item.notificationMessages
     langs:
@@ -282,7 +282,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: recurrence
     fullName: outlook.Office.Item.recurrence
@@ -310,7 +310,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -381,7 +381,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: seriesId
     fullName: outlook.Office.Item.seriesId

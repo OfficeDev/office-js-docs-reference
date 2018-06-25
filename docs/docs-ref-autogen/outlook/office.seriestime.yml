@@ -13,7 +13,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: Office.SeriesTime
     fullName: outlook.Office.SeriesTime
@@ -42,7 +42,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       #### Examples
@@ -86,7 +86,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       #### Examples
@@ -131,7 +131,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       #### Examples
@@ -175,7 +175,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       #### Examples
@@ -220,7 +220,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       #### Examples
@@ -260,7 +260,7 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
 
 
       #### Examples
@@ -307,10 +307,10 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      Errors: Invalid date format - The date is not in an acceptable format.
+      <tr><td>Errors</td><td>Invalid date format - The date is not in an acceptable format.</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
@@ -375,10 +375,10 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      Errors: Invalid date format - The date is not in an acceptable format.
+      <tr><td>Errors</td><td>Invalid date format - The date is not in an acceptable format.</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
@@ -445,10 +445,10 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      Errors: Invalid time format - The time is not in an acceptable format.
+      <tr><td>Errors</td><td>Invalid time format - The time is not in an acceptable format.</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:

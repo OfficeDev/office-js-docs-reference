@@ -11,7 +11,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
     name: Office.Location
     fullName: outlook.Office.Location
     langs:
@@ -34,7 +34,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -78,10 +78,11 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      Errors: DataExceedsMaximumSize - The location parameter is longer than 255 characters.
+      <tr><td>Errors</td><td>DataExceedsMaximumSize - The location parameter is longer than 255
+      characters.</td></tr></table>
 
 
       In addition to this signature, the method also has the following signatures:

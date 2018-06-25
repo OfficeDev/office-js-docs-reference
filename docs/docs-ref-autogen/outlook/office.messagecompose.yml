@@ -59,19 +59,16 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
 
 
-      Errors:
-
-
-      AttachmentSizeExceeded - The attachment is larger than allowed.
+      <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
 
 
       FileTypeNotSupported - The attachment has an extension that is not allowed.
 
 
-      NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+      NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
 
 
       In addition to this signature, the method also has the following signatures:
@@ -141,7 +138,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -211,13 +208,11 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
 
 
-      Errors:
-
-
-      NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+      <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      attachments.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:
@@ -281,7 +276,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: bcc
     fullName: outlook.Office.MessageCompose.bcc
     langs:
@@ -303,7 +298,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: body
     fullName: outlook.Office.MessageCompose.body
     langs:
@@ -331,7 +326,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: cc
     fullName: outlook.Office.MessageCompose.cc
     langs:
@@ -365,7 +360,7 @@ items:
       --></td><td>Restricted</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: close()
     fullName: outlook.Office.MessageCompose.close
     langs:
@@ -388,7 +383,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: dateTimeCreated
     fullName: outlook.Office.MessageCompose.dateTimeCreated
     langs:
@@ -413,7 +408,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: dateTimeModifed
     fullName: outlook.Office.MessageCompose.dateTimeModifed
     langs:
@@ -443,7 +438,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     isPreview: true
     name: from
     fullName: outlook.Office.MessageCompose.from
@@ -475,7 +470,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     isPreview: true
     name: 'getInitializationContextAsync(options, callback)'
     fullName: outlook.Office.MessageCompose.getInitializationContextAsync
@@ -523,7 +518,7 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: 'getSelectedDataAsync(coercionType, callback)'
     fullName: outlook.Office.MessageCompose.getSelectedDataAsync
     langs:
@@ -564,7 +559,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: itemType
     fullName: outlook.Office.MessageCompose.itemType
     langs:
@@ -598,7 +593,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: outlook.Office.MessageCompose.loadCustomPropertiesAsync
     langs:
@@ -634,7 +629,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: notificationMessages
     fullName: outlook.Office.MessageCompose.notificationMessages
     langs:
@@ -670,7 +665,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     isPreview: true
     name: recurrence
     fullName: outlook.Office.MessageCompose.recurrence
@@ -701,10 +696,10 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
 
 
-      Errors: InvalidAttachmentId - The attachment identifier does not exist.
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
 
 
       In addition to this signature, the method also has the following signatures:
@@ -764,7 +759,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
@@ -846,10 +841,10 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
 
 
-      Errors: InvalidAttachmentId - The attachment identifier does not exist.
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
 
 
       In addition to this signature, the method also has the following signatures:
@@ -914,7 +909,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     isPreview: true
     name: seriesId
     fullName: outlook.Office.MessageCompose.seriesId
@@ -943,10 +938,10 @@ items:
       --></td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
 
 
-      Errors: InvalidAttachmentId - The attachment identifier does not exist.
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
 
 
       In addition to this signature, the method also has the following signatures:
@@ -1012,7 +1007,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: subject
     fullName: outlook.Office.MessageCompose.subject
     langs:
@@ -1040,7 +1035,7 @@ items:
       --></td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
     name: to
     fullName: outlook.Office.MessageCompose.to
     langs:
