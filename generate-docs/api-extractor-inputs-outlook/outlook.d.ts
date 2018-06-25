@@ -1049,9 +1049,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          * 
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          * 
-         * Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
+         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr></table>
          * 
          * In addition to the main signature, this method also has these signatures:
          * 
@@ -1319,9 +1319,9 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.
+         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr></table>
          *
-         * InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
+         * InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.
          *
          * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
          */
@@ -1995,15 +1995,13 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
          *
-         * Errors:
-         *
-         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
          *
          * FileTypeNotSupported - The attachment has an extension that is not allowed.
          *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          * 
          * In addition to this signature, the method also has the following signatures:
          * 
@@ -2033,15 +2031,13 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
          *
-         * Errors:
-         *
-         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
          *
          * FileTypeNotSupported - The attachment has an extension that is not allowed.
          *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -2059,15 +2055,13 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
          *
-         * Errors:
-         *
-         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
          *
          * FileTypeNotSupported - The attachment has an extension that is not allowed.
          *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -2088,15 +2082,13 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
          *
-         * Errors:
-         *
-         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
          *
          * FileTypeNotSupported - The attachment has an extension that is not allowed.
          *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -2118,11 +2110,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
          *
-         * Errors:
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          * 
          * In addition to the main signature, this method also has these signatures:
          * 
@@ -2153,11 +2143,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
          *
-         * Errors:
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -2177,11 +2165,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
          *
-         * Errors:
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -2203,11 +2189,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>
          *
-         * Errors:
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -2314,7 +2298,7 @@ export declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>
          *
-         * Errors: InvalidAttachmentId - The attachment identifier does not exist.
+         * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
          * 
          * In addition to this signature, the method also has the following signatures:
          * 
@@ -3708,15 +3692,13 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * Errors:
-         *
-         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
          *
          * FileTypeNotSupported - The attachment has an extension that is not allowed.
          *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          * 
          * In addition to this signature, the method also has the following signatures:
          * 
@@ -3746,15 +3728,13 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * Errors:
-         *
-         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
          *
          * FileTypeNotSupported - The attachment has an extension that is not allowed.
          *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -3772,15 +3752,13 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * Errors:
-         *
-         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
          *
          * FileTypeNotSupported - The attachment has an extension that is not allowed.
          *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -3801,15 +3779,13 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * Errors:
-         *
-         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
          *
          * FileTypeNotSupported - The attachment has an extension that is not allowed.
          *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -3831,11 +3807,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * Errors:
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          * 
          * In addition to the main signature, this method also has these signatures:
          * 
@@ -3866,11 +3840,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * Errors:
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -3890,11 +3862,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * Errors:
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -3916,11 +3886,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * Errors:
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -4025,9 +3993,9 @@ export declare namespace Office {
          *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * Errors: InvalidAttachmentId - The attachment identifier does not exist.
+         * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
          * 
          * In addition to this signature, the method also has the following signatures:
          * 
@@ -5023,15 +4991,13 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
          *
-         * Errors:
-         *
-         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
          *
          * FileTypeNotSupported - The attachment has an extension that is not allowed.
          *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          * 
          * In addition to this signature, the method also has the following signatures:
          * 
@@ -5061,15 +5027,13 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
          *
-         * Errors:
-         *
-         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
          *
          * FileTypeNotSupported - The attachment has an extension that is not allowed.
          *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -5087,15 +5051,13 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
          *
-         * Errors:
-         *
-         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
          *
          * FileTypeNotSupported - The attachment has an extension that is not allowed.
          *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -5116,15 +5078,13 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
          *
-         * Errors:
-         *
-         * AttachmentSizeExceeded - The attachment is larger than allowed.
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
          *
          * FileTypeNotSupported - The attachment has an extension that is not allowed.
          *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -5146,11 +5106,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
          *
-         * Errors:
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          * 
          * In addition to the main signature, this method also has these signatures:
          * 
@@ -5181,11 +5139,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
          *
-         * Errors:
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -5205,11 +5161,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
          *
-         * Errors:
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -5231,11 +5185,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
          *
-         * Errors:
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.
+         * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          *
          * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
          * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -5340,9 +5292,9 @@ export declare namespace Office {
          *
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>
          *
-         * Errors: InvalidAttachmentId - The attachment identifier does not exist.
+         * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
          * 
          * In addition to this signature, the method also has the following signatures:
          * 
@@ -6405,9 +6357,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * Errors: DataExceedsMaximumSize - The location parameter is longer than 255 characters.
+         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The location parameter is longer than 255 characters.</td></tr></table>
          * 
          * In addition to this signature, the method also has the following signatures:
          * 
@@ -7291,9 +7243,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
+         * <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.</td></tr></table>
          * 
          * In addition to the main signature, this method also has these signatures:
          * 
@@ -7435,9 +7387,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose<tr><td>Errors</td>
          *
-         * Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.
+         * <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.<tr><td>Errors</td><td>
          * 
          * In addition to the main signature, this method also has these signatures:
          * 
@@ -7688,9 +7640,9 @@ export declare namespace Office {
          * 
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          * 
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          * 
-         * Errors: InvalidEndTime - The appointment end time is before its start time.
+         * <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before its start time.</td></tr></table>
          * 
          * In addition to the main signature, this method also has this signature:
          * 
@@ -7989,9 +7941,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          * 
-         * Errors: Invalid date format - The date is not in an acceptable format.
+         * <tr><td>Errors</td><td>Invalid date format - The date is not in an acceptable format.</td></tr></table>
          * 
          * In addition to the main signature, this method also has this signature:
          * 
@@ -8149,9 +8101,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * Errors: DataExceedsMaximumSize - The subject parameter is longer than 255 characters.
+         * <tr><td>Errors</td><td>DataExceedsMaximumSize - The subject parameter is longer than 255 characters.</td></tr></table>
          * 
          * In addition to the main signature, this method also has these signatures:
          * 
@@ -8304,9 +8256,9 @@ export declare namespace Office {
          * @remarks
          * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
          *
-         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
+         * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * Errors: InvalidEndTime - The appointment end time is before the appointment start time.
+         * <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before the appointment start time.</td></tr></table>
          * 
          * In addition to the main signature, this method also has these signatures:
          * 

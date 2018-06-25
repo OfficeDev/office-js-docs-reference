@@ -207,21 +207,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "AttachmentSizeExceeded - The attachment is larger than allowed."
+                  "text": "<tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed."
                 },
                 {
                   "kind": "paragraph"
@@ -235,7 +228,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments."
+                  "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -517,21 +510,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Appointment Organizer</td></tr>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments."
+                  "text": "<tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -1647,7 +1633,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "Errors: InvalidAttachmentId - The attachment identifier does not exist."
+                  "text": "<tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -6113,14 +6099,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors: DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters."
+                  "text": "<tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -8968,21 +8954,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "AttachmentSizeExceeded - The attachment is larger than allowed."
+                  "text": "<tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed."
                 },
                 {
                   "kind": "paragraph"
@@ -8996,7 +8975,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments."
+                  "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -9151,21 +9130,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments."
+                  "text": "<tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -9583,14 +9555,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors: InvalidAttachmentId - The attachment identifier does not exist."
+                  "text": "<tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -11744,14 +11716,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors: DataExceedsMaximumSize - The location parameter is longer than 255 characters."
+                  "text": "<tr><td>Errors</td><td>DataExceedsMaximumSize - The location parameter is longer than 255 characters.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -16932,21 +16904,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "AttachmentSizeExceeded - The attachment is larger than allowed."
+                  "text": "<tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed."
                 },
                 {
                   "kind": "paragraph"
@@ -16960,7 +16925,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments."
+                  "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -17242,21 +17207,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors:"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "text",
-                  "text": "NumberOfAttachmentsExceeded - The message or appointment has too many attachments."
+                  "text": "<tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -18322,14 +18280,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Message Compose</td></tr>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors: InvalidAttachmentId - The attachment identifier does not exist."
+                  "text": "<tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -22390,14 +22348,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries."
+                  "text": "<tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -22714,14 +22672,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose<tr><td>Errors</td>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors: NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries."
+                  "text": "<tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.<tr><td>Errors</td><td>"
                 },
                 {
                   "kind": "paragraph"
@@ -23242,14 +23200,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors: InvalidEndTime - The appointment end time is before its start time."
+                  "text": "<tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before its start time.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -24629,14 +24587,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors: Invalid date format - The date is not in an acceptable format."
+                  "text": "<tr><td>Errors</td><td>Invalid date format - The date is not in an acceptable format.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -25186,14 +25144,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors: DataExceedsMaximumSize - The subject parameter is longer than 255 characters."
+                  "text": "<tr><td>Errors</td><td>DataExceedsMaximumSize - The subject parameter is longer than 255 characters.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -25581,14 +25539,14 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>"
+                  "text": "<tr><td>Applicable Outlook mode</td><td>Compose</td></tr>"
                 },
                 {
                   "kind": "paragraph"
                 },
                 {
                   "kind": "text",
-                  "text": "Errors: InvalidEndTime - The appointment end time is before the appointment start time."
+                  "text": "<tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before the appointment start time.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
