@@ -63,8 +63,8 @@ items:
 
 
       <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than
-      allowed.</td><td>FileTypeNotSupported - The attachment has an extension that is not
-      allowed.</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not
+      allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
       attachments.</td></tr></table>
 
 

@@ -298,11 +298,43 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "<td>"
                 },
                 {
                   "kind": "text",
                   "text": "FileTypeNotSupported - The attachment has an extension that is not allowed."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
                 },
                 {
                   "kind": "html-tag",
@@ -11387,6 +11419,22 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "<td>"
                 },
                 {
@@ -11631,6 +11679,22 @@
                 {
                   "kind": "text",
                   "text": "DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
                 },
                 {
                   "kind": "html-tag",
@@ -27503,11 +27567,43 @@
                 },
                 {
                   "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
                   "token": "<td>"
                 },
                 {
                   "kind": "text",
                   "text": "FileTypeNotSupported - The attachment has an extension that is not allowed."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
                 },
                 {
                   "kind": "html-tag",
