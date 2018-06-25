@@ -293,14 +293,24 @@
                   "text": "AttachmentSizeExceeded - The attachment is larger than allowed."
                 },
                 {
-                  "kind": "paragraph"
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
                 },
                 {
                   "kind": "text",
                   "text": "FileTypeNotSupported - The attachment has an extension that is not allowed."
                 },
                 {
-                  "kind": "paragraph"
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
                 },
                 {
                   "kind": "text",
@@ -11369,7 +11379,19 @@
                 },
                 {
                   "kind": "text",
-                  "text": " - DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters. - InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text."
+                  "text": "DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text."
                 },
                 {
                   "kind": "html-tag",
@@ -11608,7 +11630,19 @@
                 },
                 {
                   "kind": "text",
-                  "text": " - DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters. - InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text."
+                  "text": "DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters."
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text."
                 },
                 {
                   "kind": "html-tag",
@@ -27461,19 +27495,27 @@
                 },
                 {
                   "kind": "text",
-                  "text": "AttachmentSizeExceeded - The attachment is larger than allowed. "
+                  "text": "AttachmentSizeExceeded - The attachment is larger than allowed."
                 },
                 {
                   "kind": "html-tag",
-                  "token": "<br>"
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
                 },
                 {
                   "kind": "text",
-                  "text": "FileTypeNotSupported - The attachment has an extension that is not allowed. "
+                  "text": "FileTypeNotSupported - The attachment has an extension that is not allowed."
                 },
                 {
                   "kind": "html-tag",
-                  "token": "<br>"
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
                 },
                 {
                   "kind": "text",
