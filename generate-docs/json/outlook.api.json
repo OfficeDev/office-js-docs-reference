@@ -6249,7 +6249,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters. <br>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>"
+                  "text": "<tr><td>Errors</td><td> - DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters. - InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
@@ -6392,7 +6392,7 @@
                 },
                 {
                   "kind": "text",
-                  "text": "<tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters. <br>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>"
+                  "text": "<tr><td>Errors</td><td> - DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters. - InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>"
                 },
                 {
                   "kind": "paragraph"
