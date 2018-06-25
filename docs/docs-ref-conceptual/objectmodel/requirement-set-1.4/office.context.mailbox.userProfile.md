@@ -1,7 +1,7 @@
 
 # userProfile
 
-### [Office](Office.md)[.context](Office-context.md)[.mailbox](Office-mailbox.md). userProfile
+### [Office](Office.md)[.context](Office.context.md)[.mailbox](Office.context.mailbox.md). userProfile
 
 ##### Requirements
 
@@ -12,37 +12,6 @@
 |Applicable Outlook mode| Compose or read|
 
 ### Members
-
-####  accountType :String
-
-> **Note:** This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
-
-Gets the account type of the user associated with the mailbox. The possible values are listed in the following table.
-
-| Value | Description |
-|-------|-------------|
-| `enterprise` | The mailbox is on an on-premises Exchange server. |
-| `gmail` | The mailbox is associated with a Gmail account. |
-| `office365` | The mailbox is associated with an Office 365 work or school account. |
-| `outlookCom` | The mailbox is associated with a personal Outlook.com account. |
-
-##### Type:
-
-*   String
-
-##### Requirements
-
-|Requirement| Value|
-|---|---|
-|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.6 |
-|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
-|Applicable Outlook mode| Compose or read|
-
-##### Example
-
-```
-console.log(Office.context.mailbox.userProfile.accountType);
-```
 
 ####  displayName :String
 

@@ -1,7 +1,7 @@
 
 # mailbox
 
-### [Office](Office.md)[.context](Office-context.md). mailbox
+### [Office](Office.md)[.context](Office.context.md). mailbox
 
 Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
 
@@ -13,32 +13,13 @@ Provides access to the Outlook Add-in object model for Microsoft Outlook and Mic
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| Restricted|
 |Applicable Outlook mode| Compose or read|
 
-##### Members and methods
-
-| Member | Type |
-|--------|------|
-| [ewsUrl](#ewsurl-string) | Member |
-| [restUrl](#resturl-string) | Member |
-| [addHandlerAsync](#addhandlerasynceventtype-handler-options-callback) | Method |
-| [convertToEwsId](#converttoewsiditemid-restversion--string) | Method |
-| [convertToLocalClientTime](#converttolocalclienttimetimevalue--localclienttime) | Method |
-| [convertToRestId](#converttorestiditemid-restversion--string) | Method |
-| [convertToUtcClientTime](#converttoutcclienttimeinput--date) | Method |
-| [displayAppointmentForm](#displayappointmentformitemid) | Method |
-| [displayMessageForm](#displaymessageformitemid) | Method |
-| [displayNewAppointmentForm](#displaynewappointmentformparameters) | Method |
-| [getCallbackTokenAsync](#getcallbacktokenasyncoptions-callback) | Method |
-| [getCallbackTokenAsync](#getcallbacktokenasynccallback-usercontext) | Method |
-| [getUserIdentityTokenAsync](#getuseridentitytokenasynccallback-usercontext) | Method |
-| [makeEwsRequestAsync](#makeewsrequestasyncdata-callback-usercontext) | Method |
-
 ### Namespaces
 
-[diagnostics](Office-diagnostics.md): Provides diagnostic information to an Outlook add-in.
+[diagnostics](Office.context.mailbox.diagnostics.md): Provides diagnostic information to an Outlook add-in.
 
-[item](Office-item.md): Provides methods and properties for accessing a message or appointment in an Outlook add-in.
+[item](Office.context.mailbox.item.md): Provides methods and properties for accessing a message or appointment in an Outlook add-in.
 
-[userProfile](office-user.md): Provides information about the user in an Outlook add-in.</dd>
+[userProfile](Office.context.mailbox.userProfile.md): Provides information about the user in an Outlook add-in.</dd>
 
 ### Members
 
@@ -52,7 +33,7 @@ The `ewsUrl` value can be used by a remote service to make EWS calls to the user
 
 Your app must have the **ReadItem** permission specified in its manifest to call the `ewsUrl` member in read mode.
 
-In compose mode you must call the [`saveAsync`](Office-item.md#saveasyncoptions-callback) method before you can use the `ewsUrl` member. Your app must have **ReadWriteItem** permissions to call the `saveAsync` method.
+In compose mode you must call the [`saveAsync`](Office.context.mailbox.item.md#saveasyncoptions-callback) method before you can use the `ewsUrl` member. Your app must have **ReadWriteItem** permissions to call the `saveAsync` method.
 
 ##### Type:
 
@@ -74,9 +55,7 @@ The `restUrl` value can be used to make [REST API](https://docs.microsoft.com/ou
 
 Your app must have the **ReadItem** permission specified in its manifest to call the `restUrl` member in read mode.
 
-In compose mode you must call the [`saveAsync`](Office-item.md#saveasyncoptions-callback) method before you can use the `restUrl` member. Your app must have **ReadWriteItem** permissions to call the `saveAsync` method.
-
-> **Note:** Outlook clients connected to on-premises installations of Exchange 2016 with a custom REST URL configured will return an invalid value for `restUrl`.
+In compose mode you must call the [`saveAsync`](Office.context.mailbox.item.md#saveasyncoptions-callback) method before you can use the `restUrl` member. Your app must have **ReadWriteItem** permissions to call the `saveAsync` method.
 
 ##### Type:
 
@@ -102,11 +81,11 @@ Currently the only supported event type is `Office.EventType.ItemChanged`, which
 
 | Name | Type | Attributes | Description |
 |---|---|---|---|
-| `eventType` | [Office.EventType](/javascript/api/outlook_1_6/office.EventType) || The event that should invoke the handler. |
+| `eventType` | [Office.EventType](/javascript/api/outlook/office.EventType) || The event that should invoke the handler. |
 | `handler` | Function || The function to handle the event. The function must accept a single parameter, which is an object literal. The `type` property on the parameter will match the `eventType` parameter passed to `addHandlerAsync`. |
 | `options` | Object | &lt;optional&gt; | An object literal that contains one or more of the following properties. |
 | `options.asyncContext` | Object | &lt;optional&gt; | Developers can provide any object they wish to access in the callback method. |
-| `callback` | function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook_1_5/office.mailboxenums.asyncresult) object.|
+| `callback` | function| &lt;optional&gt;|When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook/office.mailboxenums.asyncresult) object.|
 
 ##### Requirements
 
@@ -148,7 +127,7 @@ Item IDs retrieved via a REST API (such as the [Outlook Mail API](https://msdn.m
 |Name| Type| Description|
 |---|---|---|
 |`itemId`| String|An item ID formatted for the Outlook REST APIs|
-|`restVersion`| [Office.MailboxEnums.RestVersion](/javascript/api/outlook_1_5/office.mailboxenums.restversion)|A value indicating the version of the Outlook REST API used to retrieve the item ID.|
+|`restVersion`| [Office.MailboxEnums.RestVersion](/javascript/api/outlook/office.mailboxenums.restversion)|A value indicating the version of the Outlook REST API used to retrieve the item ID.|
 
 ##### Requirements
 
@@ -174,7 +153,7 @@ var restId = 'AAMkAGVlOTZjNTM3LW...';
 var ewsId = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
 ```
 
-####  convertToLocalClientTime(timeValue) → {[LocalClientTime](/javascript/api/outlook_1_5/office.LocalClientTime)}
+####  convertToLocalClientTime(timeValue) → {[LocalClientTime](/javascript/api/outlook/office.LocalClientTime)}
 
 Gets a dictionary containing time information in local client time.
 
@@ -199,7 +178,7 @@ If the mail app is running in Outlook, the `convertToLocalClientTime` method wil
 ##### Returns:
 
 Type:
-[LocalClientTime](/javascript/api/outlook_1_5/office.LocalClientTime)
+[LocalClientTime](/javascript/api/outlook/office.LocalClientTime)
 
 ####  convertToRestId(itemId, restVersion) → {String}
 
@@ -214,7 +193,7 @@ Item IDs retrieved via EWS or via the `itemId` property use a different format t
 |Name| Type| Description|
 |---|---|---|
 |`itemId`| String|An item ID formatted for Exchange Web Services (EWS)|
-|`restVersion`| [Office.MailboxEnums.RestVersion](/javascript/api/outlook_1_5/office.mailboxenums.restversion)|A value indicating the version of the Outlook REST API that the converted ID will be used with.|
+|`restVersion`| [Office.MailboxEnums.RestVersion](/javascript/api/outlook/office.mailboxenums.restversion)|A value indicating the version of the Outlook REST API that the converted ID will be used with.|
 
 ##### Requirements
 
@@ -250,7 +229,7 @@ The `convertToUtcClientTime` method converts a dictionary containing a local dat
 
 |Name| Type| Description|
 |---|---|---|
-|`input`| [LocalClientTime](/javascript/api/outlook_1_5/office.LocalClientTime)|The local time value to convert.|
+|`input`| [LocalClientTime](/javascript/api/outlook/office.LocalClientTime)|The local time value to convert.|
 
 ##### Requirements
 
@@ -356,11 +335,13 @@ If any of the parameters exceed the specified size limits, or if an unknown para
 
 ##### Parameters:
 
+> **Note:** All parameters are optional.
+
 |Name| Type| Description|
 |---|---|---|
 | `parameters` | Object | A dictionary of parameters describing the new appointment. |
-| `parameters.requiredAttendees` | Array.&lt;String&gt; &#124; Array.&lt;[EmailAddressDetails](/javascript/api/outlook_1_5/office.mailboxenums.emailaddressdetails)&gt; | An array of strings containing the email addresses or an array containing an `EmailAddressDetails` object for each of the required attendees for the appointment. The array is limited to a maximum of 100 entries. |
-| `parameters.optionalAttendees` | Array.&lt;String&gt; &#124; Array.&lt;[EmailAddressDetails](/javascript/api/outlook_1_5/office.mailboxenums.emailaddressdetails)&gt; | An array of strings containing the email addresses or an array containing an `EmailAddressDetails` object for each of the optional attendees for the appointment. The array is limited to a maximum of 100 entries. |
+| `parameters.requiredAttendees` | Array.&lt;String&gt; &#124; Array.&lt;[EmailAddressDetails](/javascript/api/outlook/office.mailboxenums.emailaddressdetails)&gt; | An array of strings containing the email addresses or an array containing an `EmailAddressDetails` object for each of the required attendees for the appointment. The array is limited to a maximum of 100 entries. |
+| `parameters.optionalAttendees` | Array.&lt;String&gt; &#124; Array.&lt;[EmailAddressDetails](/javascript/api/outlook/office.mailboxenums.emailaddressdetails)&gt; | An array of strings containing the email addresses or an array containing an `EmailAddressDetails` object for each of the optional attendees for the appointment. The array is limited to a maximum of 100 entries. |
 | `parameters.start` | Date | A `Date` object specifying the start date and time of the appointment. |
 | `parameters.end` | Date | A `Date` object specifying the end date and time of the appointment. |
 | `parameters.location` | String | A string containing the location of the appointment. The string is limited to a maximum of 255 characters. |
@@ -378,7 +359,7 @@ If any of the parameters exceed the specified size limits, or if an unknown para
 
 ##### Example
 
-```js
+```
 var start = new Date();
 var end = new Date();
 end.setHours(start.getHours() + 1);
@@ -393,6 +374,62 @@ Office.context.mailbox.displayNewAppointmentForm(
     resources: ['projector@contoso.com'],
     subject: 'meeting',
     body: 'Hello World!'
+  });
+```
+
+#### displayNewMessageForm(parameters)
+
+Displays a form for creating a new message.
+
+The `displayNewMessageForm` method opens a form that enables the user to create a new message. If parameters are specified, the message form fields are automatically populated with the contents of the parameters.
+
+If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
+
+##### Parameters:
+
+> **Note:** All parameters are optional.
+
+|Name| Type| Description|
+|---|---|---|
+| `parameters` | Object | A dictionary of parameters describing the new message. |
+| `parameters.toRecipients` | Array.&lt;String&gt; &#124; Array.&lt;[EmailAddressDetails](/javascript/api/outlook/office.mailboxenums.emailaddressdetails)&gt; | An array of strings containing the email addresses or an array containing an `EmailAddressDetails` object for each of the recipients on the To line. The array is limited to a maximum of 100 entries. |
+| `parameters.ccRecipients` | Array.&lt;String&gt; &#124; Array.&lt;[EmailAddressDetails](/javascript/api/outlook/office.mailboxenums.emailaddressdetails)&gt; | An array of strings containing the email addresses or an array containing an `EmailAddressDetails` object for each of the recipients on the Cc line. The array is limited to a maximum of 100 entries. |
+| `parameters.bccRecipients` | Array.&lt;String&gt; &#124; Array.&lt;[EmailAddressDetails](/javascript/api/outlook/office.mailboxenums.emailaddressdetails)&gt; | An array of strings containing the email addresses or an array containing an `EmailAddressDetails` object for each of the recipients on the Bcc line. The array is limited to a maximum of 100 entries. |
+| `parameters.subject` | String | A string containing the subject of the message. The string is limited to a maximum of 255 characters. |
+| `parameters.htmlBody` | String | The HTML body of the message. The body content is limited to a maximum size of 32 KB. |
+| `parameters.attachments` | Array.&lt;Object&gt; | An array of JSON objects that are either file or item attachments. |
+| `parameters.attachments.type` | String | Indicates the type of attachment. Must be `file` for a file attachment or `item` for an item attachment. |
+| `parameters.attachments.name` | String | A string that contains the name of the attachment, up to 255 characters in length.|
+| `parameters.attachments.url` | String | Only used if `type` is set to `file`. The URI of the location for the file. |
+| `parameters.attachments.isInline` | Boolean | Only used if `type` is set to `file`. If `true`, indicates that the attachment will be shown inline in the message body, and should not be displayed in the attachment list. |
+| `parameters.attachments.itemId` | String | Only used if `type` is set to `item`. The EWS item id of the attachment. This is a string up to 100 characters. |
+
+
+##### Requirements
+
+|Requirement| Value|
+|---|---|
+|[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.6 |
+|[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
+|Applicable Outlook mode| Read|
+
+##### Example
+
+```
+Office.context.mailbox.displayNewMessageForm(
+  {
+    toRecipients: Office.context.mailbox.item.to, // Copy the To line from current item
+    ccRecipients: ['sam@contoso.com'],
+    subject: 'Outlook add-ins are cool!',
+    htmlBody: 'Hello <b>World</b>!<br/><img src="cid:image.png"></i>',
+    attachments: [
+      {
+        type: 'file',
+        name: 'image.png',
+        url: 'http://contoso.com/image.png',
+        isInline: true
+      }
+    ]
   });
 ```
 
@@ -423,7 +460,7 @@ The add-in should use the `ewsUrl` property to determine the correct URL to use 
 | `options` | Object | &lt;optional&gt; | An object literal that contains one or more of the following properties. |
 | `options.isRest` | Boolean |  &lt;optional&gt; | Determines if the token provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is `false`. |
 | `options.asyncContext` | Object |  &lt;optional&gt; | Any state data that is passed to the asynchronous method. |
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook_1_5/office.mailboxenums.asyncresult) object. The token is provided as a string in the `asyncResult.value` property.|
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook/office.mailboxenums.asyncresult) object. The token is provided as a string in the `asyncResult.value` property.|
 
 ##### Requirements
 
@@ -460,13 +497,13 @@ You can pass the token and an attachment identifier or item identifier to a thir
 
 Your app must have the **ReadItem** permission specified in its manifest to call the `getCallbackTokenAsync` method in read mode.
 
-In compose mode you must call the [`saveAsync`](Office-item.md#saveasyncoptions-callback) method to get an item identifier to pass to the `getCallbackTokenAsync` method. Your app must have **ReadWriteItem** permissions to call the `saveAsync` method.
+In compose mode you must call the [`saveAsync`](Office.context.mailbox.item.md#saveasyncoptions-callback) method to get an item identifier to pass to the `getCallbackTokenAsync` method. Your app must have **ReadWriteItem** permissions to call the `saveAsync` method.
 
 ##### Parameters:
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook_1_5/office.mailboxenums.asyncresult) object. The token is provided as a string in the `asyncResult.value` property.|
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook/office.mailboxenums.asyncresult) object. The token is provided as a string in the `asyncResult.value` property.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|
 
 ##### Requirements
@@ -499,7 +536,9 @@ The `getUserIdentityTokenAsync` method returns a token that you can use to ident
 
 |Name| Type| Attributes| Description|
 |---|---|---|---|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook_1_5/office.mailboxenums.asyncresult) object.<br/>The token is provided as a string in the `asyncResult.value` property.|
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook/office.mailboxenums.asyncresult) object.
+
+The token is provided as a string in the `asyncResult.value` property.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|
 
 ##### Requirements
@@ -538,7 +577,7 @@ You cannot request Folder Associated Items with the `makeEwsRequestAsync` method
 
 The XML request must specify UTF-8 encoding.
 
-```xml
+```
 <?xml version="1.0" encoding="utf-8"?>
 ```
 
@@ -550,7 +589,7 @@ Your add-in must have the **ReadWriteMailbox** permission to use the `makeEwsReq
 
 When you use the `makeEwsRequestAsync` method in mail apps running in Outlook versions earlier than version 15.0.4535.1004, you should set the encoding value to `ISO-8859-1`.
 
-```xml
+```
 <?xml version="1.0" encoding="iso-8859-1"?>
 ```
 
@@ -561,7 +600,7 @@ You do not need to set the encoding value when your mail app is running in Outlo
 |Name| Type| Attributes| Description|
 |---|---|---|---|
 |`data`| String||The EWS request.|
-|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook_1_5/office.mailboxenums.asyncresult) object.
+|`callback`| function||When the method completes, the function passed in the `callback` parameter is called with a single parameter, `asyncResult`, which is an [`AsyncResult`](/javascript/api/outlook/office.mailboxenums.asyncresult) object.
 
 The XML result of the EWS call is provided as a string in the `asyncResult.value` property. If the result exceeds 1 MB in size, an error message is returned instead.|
 |`userContext`| Object| &lt;optional&gt;|Any state data that is passed to the asynchronous method.|

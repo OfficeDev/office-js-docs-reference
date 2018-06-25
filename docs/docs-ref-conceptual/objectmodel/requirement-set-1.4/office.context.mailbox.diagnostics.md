@@ -1,7 +1,7 @@
 
 # diagnostics
 
-### [Office](Office.md)[.context](Office-context.md)[.mailbox](Office-mailbox.md). diagnostics
+### [Office](Office.md)[.context](Office.context.md)[.mailbox](Office.context.mailbox.md). diagnostics
 
 Provides diagnostic information to an Outlook add-in.
 
@@ -19,7 +19,7 @@ Provides diagnostic information to an Outlook add-in.
 
 Gets a string that represents the name of the host application.
 
-A string that can be one of the following values: `Outlook`, `Mac Outlook`, `OutlookIOS`, or `OutlookWebApp`.
+A string that can be one of the following values: `Outlook`, `OutlookIOS`, or `OutlookWebApp`.
 
 ##### Type:
 
