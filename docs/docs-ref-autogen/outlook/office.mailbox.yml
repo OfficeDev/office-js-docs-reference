@@ -14,11 +14,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: Restricted
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>Restricted</td></tr>
 
 
-      Applicable Outlook mode: Compose or read
+      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
     name: Office.Mailbox
     fullName: outlook.Office.Mailbox
     langs:
@@ -55,11 +56,12 @@ items:
 
       \[ [API set: Mailbox 1.5](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose or read
+      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.Mailbox.addHandlerAsync
     langs:
@@ -109,11 +111,12 @@ items:
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: Restricted
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>Restricted</td></tr>
 
 
-      Applicable Outlook mode: Compose or read
+      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
     name: 'convertToEwsId(itemId, restVersion)'
     fullName: outlook.Office.Mailbox.convertToEwsId
     langs:
@@ -153,11 +156,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose or read
+      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
     name: convertToLocalClientTime(timeValue)
     fullName: outlook.Office.Mailbox.convertToLocalClientTime
     langs:
@@ -188,11 +192,12 @@ items:
       into the proper format for REST.
 
 
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: Restricted
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>Restricted</td></tr>
 
 
-      Applicable Outlook mode: Compose or read
+      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
     name: 'convertToRestId(itemId, restVersion)'
     fullName: outlook.Office.Mailbox.convertToRestId
     langs:
@@ -224,11 +229,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose or read
+      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
     name: convertToUtcClientTime(input)
     fullName: outlook.Office.Mailbox.convertToUtcClientTime
     langs:
@@ -275,11 +281,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose or read
+      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
     name: diagnostics
     fullName: outlook.Office.Mailbox.diagnostics
     langs:
@@ -318,11 +325,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose or read
+      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
     name: displayAppointmentForm(itemId)
     fullName: outlook.Office.Mailbox.displayAppointmentForm
     langs:
@@ -366,11 +374,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose or read
+      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
     name: displayMessageForm(itemId)
     fullName: outlook.Office.Mailbox.displayMessageForm
     langs:
@@ -416,11 +425,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Read
+      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
     name: displayNewAppointmentForm(parameters)
     fullName: outlook.Office.Mailbox.displayNewAppointmentForm
     langs:
@@ -452,11 +462,12 @@ items:
 
       \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Read
+      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
     name: displayNewMessageForm(parameters)
     fullName: outlook.Office.Mailbox.displayNewMessageForm
     langs:
@@ -514,11 +525,12 @@ items:
       item](https://msdn.microsoft.com/library/office/dn148008.aspx)<!-- -->.
 
 
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose or read
+      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
     name: ewsUrl
     fullName: outlook.Office.Mailbox.ewsUrl
     langs:
@@ -566,11 +578,12 @@ items:
 
       \[ [API set: Mailbox 1.5](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose and read
+      <tr><td>Applicable Outlook mode</td><td> Compose and read</td></tr></table>
 
 
       In addition to this signature, the method has the following signatures:
@@ -617,11 +630,12 @@ items:
       user with a third-party system](https://msdn.microsoft.com/library/office/fp179828.aspx)<!-- -->.
 
 
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose and read
+      <tr><td>Applicable Outlook mode</td><td> Compose and read</td></tr></table>
     name: 'getUserIdentityTokenAsync(callback, userContext)'
     fullName: outlook.Office.Mailbox.getUserIdentityTokenAsync
     langs:
@@ -712,12 +726,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->:
-      ReadWriteMailbox
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadWriteMailbox</td></tr>
 
 
-      Applicable Outlook mode: Compose and read
+      <tr><td>Applicable Outlook mode</td><td> Compose and read</td></tr></table>
     name: 'makeEwsRequestAsync(data, callback, userContext)'
     fullName: outlook.Office.Mailbox.makeEwsRequestAsync
     langs:
@@ -762,11 +776,12 @@ items:
       mailbox.
 
 
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose or read
+      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
     name: restUrl
     fullName: outlook.Office.Mailbox.restUrl
     langs:

@@ -40,11 +40,12 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadWriteItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
 
 
       Errors:
@@ -131,11 +132,12 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadWriteItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
 
 
       Errors:
@@ -210,11 +212,12 @@ items:
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: Restricted
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>Restricted</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
     name: close()
     fullName: outlook.Office.ItemCompose.close
     langs:
@@ -241,11 +244,12 @@ items:
       messages](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
 
 
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Read
+      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
     isPreview: true
     name: 'getInitializationContextAsync(options, callback)'
     fullName: outlook.Office.ItemCompose.getInitializationContextAsync
@@ -288,11 +292,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadWriteItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
     name: 'getSelectedDataAsync(coercionType, callback)'
     fullName: outlook.Office.ItemCompose.getSelectedDataAsync
     langs:
@@ -331,11 +336,12 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadWriteItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
 
 
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
@@ -415,11 +421,12 @@ items:
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadWriteItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
 
 
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
@@ -472,11 +479,12 @@ items:
 
       \[ [API set: Mailbox 1.2](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadWriteItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadWriteItem</td></tr>
 
 
-      Applicable Outlook mode: Compose
+      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
 
 
       Errors: InvalidAttachmentId - The attachment identifier does not exist.
@@ -540,11 +548,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      [Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->: ReadItem
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
+      --></td><td>ReadItem</td></tr>
 
 
-      Applicable Outlook mode: Compose or read
+      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
     name: subject
     fullName: outlook.Office.ItemCompose.subject
     langs:
