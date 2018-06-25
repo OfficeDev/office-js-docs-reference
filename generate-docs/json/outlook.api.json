@@ -8342,94 +8342,6 @@
                 {
                   "kind": "html-tag",
                   "token": "</table>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<table>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Minimum permission level"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "ReadItem"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Message Read"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</table>"
-                },
-                {
-                  "kind": "text",
-                  "text": ""
                 }
               ],
               "isBeta": false,
@@ -15964,14 +15876,48 @@
                   "text": "AttachmentSizeExceeded - The attachment is larger than allowed."
                 },
                 {
-                  "kind": "paragraph"
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
                 },
                 {
                   "kind": "text",
                   "text": "FileTypeNotSupported - The attachment has an extension that is not allowed."
                 },
                 {
-                  "kind": "paragraph"
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
                 },
                 {
                   "kind": "text",
@@ -34220,6 +34166,90 @@
               ],
               "remarks": [
                 {
+                  "kind": "html-tag",
+                  "token": "<table>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "web-link",
+                  "elements": [
+                    {
+                      "kind": "text",
+                      "text": "Minimum permission level"
+                    }
+                  ],
+                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "ReadItem"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Applicable Outlook mode"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "<td>"
+                },
+                {
+                  "kind": "text",
+                  "text": "Message Read"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</td>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</tr>"
+                },
+                {
+                  "kind": "html-tag",
+                  "token": "</table>"
+                },
+                {
+                  "kind": "paragraph"
+                },
+                {
                   "kind": "text",
                   "text": "The itemClass property specifies the message class of the selected item. The following are the default message classes for the message or appointment item."
                 },
@@ -34429,94 +34459,6 @@
                 {
                   "kind": "html-tag",
                   "token": "</table>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<table>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "web-link",
-                  "elements": [
-                    {
-                      "kind": "text",
-                      "text": "Minimum permission level"
-                    }
-                  ],
-                  "targetUrl": "https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "ReadItem"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "paragraph"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Applicable Outlook mode"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "<td>"
-                },
-                {
-                  "kind": "text",
-                  "text": "Message Read"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</td>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</tr>"
-                },
-                {
-                  "kind": "html-tag",
-                  "token": "</table>"
-                },
-                {
-                  "kind": "text",
-                  "text": ""
                 }
               ],
               "isBeta": false,

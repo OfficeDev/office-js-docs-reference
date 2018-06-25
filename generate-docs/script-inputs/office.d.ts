@@ -8362,9 +8362,6 @@ declare namespace Office {
          *   </tr>
          * </table>
          * 
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-         *
-         * <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
          */
         itemClass: string;
         
@@ -9107,11 +9104,7 @@ declare namespace Office {
          *
          * <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
          *
-         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
-         *
-         * FileTypeNotSupported - The attachment has an extension that is not allowed.
-         *
-         * NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+         * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
          * 
          * In addition to this signature, the method also has the following signatures:
          * 
@@ -11294,6 +11287,10 @@ declare namespace Office {
          *
          * @remarks
          * 
+         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+         *
+         * <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
+		 
          * The itemClass property specifies the message class of the selected item. The following are the default message classes for the message or appointment item.
          * 
          * <table>
@@ -11314,9 +11311,6 @@ declare namespace Office {
          *   </tr>
          * </table>
          * 
-         * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-         *
-         * <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
          */
         itemClass: string;
         /**

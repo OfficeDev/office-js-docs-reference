@@ -696,6 +696,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
+
+
       The itemClass property specifies the message class of the selected item. The following are the default message
       classes for the message or appointment item.
 
@@ -707,13 +714,6 @@ items:
       use IPM.Schedule.Meeting as the base message class.</td>
       <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
       </tr> </table>
-
-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-
-
-      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: itemClass
     fullName: outlook.Office.MessageRead.itemClass
     langs:

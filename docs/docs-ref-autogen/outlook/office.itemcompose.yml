@@ -47,13 +47,10 @@ items:
       <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.
-
-
-      FileTypeNotSupported - The attachment has an extension that is not allowed.
-
-
-      NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+      <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than
+      allowed.</td></tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not
+      allowed.</td></tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      attachments.</td></tr></table>
 
 
       In addition to this signature, the method also has the following signatures:
