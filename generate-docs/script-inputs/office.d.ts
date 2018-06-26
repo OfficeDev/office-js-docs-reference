@@ -14964,7 +14964,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        getSelectedRange(allowMultiAreas?: boolean): Excel.Range;
+        getSelectedRange(): Excel.Range;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -16148,7 +16148,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        select(allowMultiAreas?: boolean): void;
+        select(): void;
         /**
          *
          * Displays the card for an active cell if it has rich value content.

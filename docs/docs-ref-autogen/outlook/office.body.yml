@@ -51,7 +51,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      `getAsync(coercionType: CoercionType, callback: (result: AsyncResult) =&gt; void): void;`
+      `getAsync(coercionType: CoercionType, callback: (result: AsyncResult) => void): void;`
 
 
       #### Examples
@@ -176,7 +176,7 @@ items:
       `prependAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      `prependAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;`
+      `prependAsync(data: string, callback: (result: AsyncResult) => void): void;`
 
 
       `prependAsync(data: string): void;`
@@ -262,7 +262,7 @@ items:
       `setAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      `setAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;`
+      `setAsync(data: string, callback: (result: AsyncResult) => void): void;`
 
 
       `setAsync(data: string): void;`
@@ -364,7 +364,7 @@ items:
       `setSelectedDataAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      `setSelectedDataAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;`
+      `setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;`
 
 
       `setSelectedDataAsync(data: string): void;`

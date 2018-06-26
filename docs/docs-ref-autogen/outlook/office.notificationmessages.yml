@@ -46,8 +46,7 @@ items:
       `addAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;`
 
 
-      `addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) =&gt; void):
-      void;`
+      `addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) => void): void;`
 
 
       #### Examples
@@ -129,7 +128,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      `getAllAsync(callback: (result: AsyncResult) =&gt; void): void;`
+      `getAllAsync(callback: (result: AsyncResult) => void): void;`
 
 
       #### Examples
@@ -197,7 +196,7 @@ items:
       `removeAsync(key: string, options: AsyncContextOptions): void;`
 
 
-      `removeAsync(key: string, callback: (result: AsyncResult) =&gt; void): void;`
+      `removeAsync(key: string, callback: (result: AsyncResult) => void): void;`
 
 
       #### Examples
@@ -262,7 +261,7 @@ items:
       `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;`
 
 
-      `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) =&gt; void):
+      `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) => void):
       void;`
 
 

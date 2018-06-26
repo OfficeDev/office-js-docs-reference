@@ -51,7 +51,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;`
+      `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
     isPreview: true
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.Item.addHandlerAsync
@@ -306,7 +306,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;`
+      `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
     isPreview: true
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.Item.removeHandlerAsync

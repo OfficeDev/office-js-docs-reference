@@ -46,8 +46,7 @@ items:
       `addAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;`
 
 
-      `addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) =&gt; void):
-      void;`
+      `addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) => void): void;`
     name: 'addAsync(key, JSONmessage, options, callback)'
     fullName: Outlook_1_5.Office.NotificationMessages.addAsync
     langs:
@@ -102,7 +101,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      `getAllAsync(callback: (result: AsyncResult) =&gt; void): void;`
+      `getAllAsync(callback: (result: AsyncResult) => void): void;`
     name: 'getAllAsync(options, callback)'
     fullName: Outlook_1_5.Office.NotificationMessages.getAllAsync
     langs:
@@ -149,7 +148,7 @@ items:
       `removeAsync(key: string, options: AsyncContextOptions): void;`
 
 
-      `removeAsync(key: string, callback: (result: AsyncResult) =&gt; void): void;`
+      `removeAsync(key: string, callback: (result: AsyncResult) => void): void;`
     name: 'removeAsync(key, options, callback)'
     fullName: Outlook_1_5.Office.NotificationMessages.removeAsync
     langs:
@@ -202,7 +201,7 @@ items:
       `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: AsyncContextOptions): void;`
 
 
-      `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) =&gt; void):
+      `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult) => void):
       void;`
     name: 'replaceAsync(key, JSONmessage, options, callback)'
     fullName: Outlook_1_5.Office.NotificationMessages.replaceAsync

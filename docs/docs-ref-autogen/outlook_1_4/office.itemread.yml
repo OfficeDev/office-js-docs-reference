@@ -192,16 +192,12 @@ items:
       as specified in the following table.
 
 
-      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Value of entityType&lt;/th&gt; &lt;th&gt;Type of objects in returned
-      array&lt;/th&gt; &lt;th&gt;Required Permission Leve&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Address&lt;/td&gt;
-      &lt;td&gt;String&lt;/td&gt; &lt;td&gt;Restricted&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Contact&lt;/td&gt;
-      &lt;td&gt;Contact&lt;/td&gt; &lt;td&gt;ReadItem&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
-      &lt;td&gt;EmailAddress&lt;/td&gt; &lt;td&gt;String&lt;/td&gt; &lt;td&gt;ReadItem&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
-      &lt;td&gt;MeetingSuggestion&lt;/td&gt; &lt;td&gt;MeetingSuggestion&lt;/td&gt; &lt;td&gt;ReadItem&lt;/td&gt;
-      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;PhoneNumber&lt;/td&gt; &lt;td&gt;PhoneNumber&lt;/td&gt;
-      &lt;td&gt;Restricted&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;TaskSuggestion&lt;/td&gt;
-      &lt;td&gt;TaskSuggestion&lt;/td&gt; &lt;td&gt;ReadItem&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;URL&lt;/td&gt;
-      &lt;td&gt;String&lt;/td&gt; &lt;td&gt;Restricted&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
+      <table> <tr> <th>Value of entityType</th> <th>Type of objects in returned array</th> <th>Required Permission
+      Leve</th> </tr> <tr> <td>Address</td> <td>String</td> <td>Restricted</td> </tr> <tr> <td>Contact</td>
+      <td>Contact</td> <td>ReadItem</td> </tr> <tr> <td>EmailAddress</td> <td>String</td> <td>ReadItem</td> </tr> <tr>
+      <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td>
+      <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td>
+      <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>
     name: getEntitiesByType(entityType)
     fullName: Outlook_1_4.Office.ItemRead.getEntitiesByType
     langs:
@@ -368,14 +364,13 @@ items:
       classes for the message or appointment item.
 
 
-      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Type&lt;/th&gt; &lt;th&gt;Description&lt;/th&gt; &lt;th&gt;Item
-      Class&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment items&lt;/td&gt; &lt;td&gt;These are calendar items
-      of the item class IPM.Appointment or IPM.Appointment.Occurence.&lt;/td&gt;
-      &lt;td&gt;IPM.Appointment,IPM.Appointment.Occurence&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Message
-      items&lt;/td&gt; &lt;td&gt;These include email messages that have the default message class IPM.Note, and meeting
-      requests, responses, and cancellations, that use IPM.Schedule.Meeting as the base message class.&lt;/td&gt;
-      &lt;td&gt;IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled&lt;/td&gt;
-      &lt;/tr&gt; &lt;/table&gt;
+      <table> <tr> <th>Type</th> <th>Description</th> <th>Item Class</th> </tr> <tr> <td>Appointment items</td>
+      <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.</td>
+      <td>IPM.Appointment,IPM.Appointment.Occurence</td> </tr> <tr> <td>Message items</td> <td>These include email
+      messages that have the default message class IPM.Note, and meeting requests, responses, and cancellations, that
+      use IPM.Schedule.Meeting as the base message class.</td>
+      <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
+      </tr> </table>
     name: itemClass
     fullName: Outlook_1_4.Office.ItemRead.itemClass
     langs:

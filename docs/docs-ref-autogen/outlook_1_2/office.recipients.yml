@@ -51,8 +51,8 @@ items:
       `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: AsyncContextOptions): void;`
 
 
-      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) =&gt;
-      void): void;`
+      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) => void):
+      void;`
     name: 'addAsync(recipients, options, callback)'
     fullName: Outlook_1_2.Office.Recipients.addAsync
     langs:
@@ -105,7 +105,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      `getAsync(callback: (result: AsyncResult) =&gt; void): void;`
+      `getAsync(callback: (result: AsyncResult) => void): void;`
     name: 'getAsync(options, callback)'
     fullName: Outlook_1_2.Office.Recipients.getAsync
     langs:
@@ -165,8 +165,8 @@ items:
       `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: AsyncContextOptions): void;`
 
 
-      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) =&gt;
-      void): void;`
+      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) => void):
+      void;`
     name: 'setAsync(recipients, options, callback)'
     fullName: Outlook_1_2.Office.Recipients.setAsync
     langs:

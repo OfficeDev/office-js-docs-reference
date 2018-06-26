@@ -62,7 +62,7 @@ items:
       `addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;`
 
 
-      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) =&gt; void): void;`
+      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;`
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: outlook.Office.ItemCompose.addFileAttachmentAsync
     langs:
@@ -145,7 +145,7 @@ items:
       `addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;`
 
 
-      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) =&gt; void): void;`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;`
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: outlook.Office.ItemCompose.addItemAttachmentAsync
     langs:
@@ -342,7 +342,7 @@ items:
       `removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;`
 
 
-      `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) =&gt; void): void;`
+      `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;`
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
     fullName: outlook.Office.ItemCompose.removeAttachmentAsync
     langs:
@@ -426,7 +426,7 @@ items:
       `saveAsync(options: AsyncContextOptions): void;`
 
 
-      `saveAsync(callback: (result: AsyncResult) =&gt; void): void;`
+      `saveAsync(callback: (result: AsyncResult) => void): void;`
     name: 'saveAsync(options, callback)'
     fullName: outlook.Office.ItemCompose.saveAsync
     langs:
@@ -483,7 +483,7 @@ items:
       `setSelectedDataAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      `setSelectedDataAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;`
+      `setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;`
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: outlook.Office.ItemCompose.setSelectedDataAsync
     langs:

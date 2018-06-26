@@ -52,8 +52,8 @@ items:
       `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: AsyncContextOptions): void;`
 
 
-      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) =&gt;
-      void): void;`
+      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) => void):
+      void;`
 
 
       #### Examples
@@ -138,7 +138,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      `getAsync(callback: (result: AsyncResult) =&gt; void): void;`
+      `getAsync(callback: (result: AsyncResult) => void): void;`
 
 
       #### Examples
@@ -221,8 +221,8 @@ items:
       `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: AsyncContextOptions): void;`
 
 
-      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) =&gt;
-      void): void;`
+      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) => void):
+      void;`
 
 
       #### Examples

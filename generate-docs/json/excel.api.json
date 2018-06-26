@@ -91961,7 +91961,7 @@
             },
             "select": {
               "kind": "method",
-              "signature": "select(allowMultiAreas?: boolean): void;",
+              "signature": "select(): void;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -91969,15 +91969,7 @@
                 "type": "void",
                 "description": []
               },
-              "parameters": {
-                "allowMultiAreas": {
-                  "name": "allowMultiAreas",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "boolean"
-                }
-              },
+              "parameters": {},
               "deprecatedMessage": [],
               "summary": [
                 {
@@ -102435,7 +102427,7 @@
             },
             "getSelectedRange": {
               "kind": "method",
-              "signature": "getSelectedRange(allowMultiAreas?: boolean): Excel.Range;",
+              "signature": "getSelectedRange(): Excel.Range;",
               "accessModifier": "",
               "isOptional": false,
               "isStatic": false,
@@ -102443,15 +102435,7 @@
                 "type": "Excel.Range",
                 "description": []
               },
-              "parameters": {
-                "allowMultiAreas": {
-                  "name": "allowMultiAreas",
-                  "description": [],
-                  "isOptional": true,
-                  "isSpread": false,
-                  "type": "boolean"
-                }
-              },
+              "parameters": {},
               "deprecatedMessage": [],
               "summary": [
                 {

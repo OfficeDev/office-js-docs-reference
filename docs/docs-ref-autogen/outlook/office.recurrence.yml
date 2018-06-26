@@ -59,7 +59,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      `getAsync(callback?: (result: AsyncResult) =&gt; void): void;`
+      `getAsync(callback?: (result: AsyncResult) => void): void;`
 
 
       #### Examples
@@ -223,7 +223,7 @@ items:
       In addition to the main signature, this method also has this signature:
 
 
-      `setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult) =&gt; void): void;`
+      `setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult) => void): void;`
 
 
       #### Examples

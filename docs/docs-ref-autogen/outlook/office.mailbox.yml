@@ -576,10 +576,10 @@ items:
       In addition to this signature, the method has the following signatures:
 
 
-      `getCallbackTokenAsync(callback: (result: AsyncResult) =&gt; void): void;`
+      `getCallbackTokenAsync(callback: (result: AsyncResult) => void): void;`
 
 
-      `getCallbackTokenAsync(callback: (result: AsyncResult) =&gt; void, userContext?: any): void;`
+      `getCallbackTokenAsync(callback: (result: AsyncResult) => void, userContext?: any): void;`
     name: 'getCallbackTokenAsync(options, callback)'
     fullName: outlook.Office.Mailbox.getCallbackTokenAsync
     langs:

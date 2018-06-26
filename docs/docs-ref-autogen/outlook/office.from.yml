@@ -44,7 +44,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `getAsync(callback?: (result: AsyncResult) =&gt; void): void;`
+      `getAsync(callback?: (result: AsyncResult) => void): void;`
     isPreview: true
     name: 'getAsync(options, callback)'
     fullName: outlook.Office.From.getAsync

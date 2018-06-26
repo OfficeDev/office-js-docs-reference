@@ -285,7 +285,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `getInitializationContextAsync(callback?: (result: AsyncResult) =&gt; void): void;`
+      `getInitializationContextAsync(callback?: (result: AsyncResult) => void): void;`
     isPreview: true
     name: 'getInitializationContextAsync(options, callback)'
     fullName: outlook.Office.ItemRead.getInitializationContextAsync
