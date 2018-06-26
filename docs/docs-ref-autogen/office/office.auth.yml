@@ -21,10 +21,10 @@ items:
       flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of)<!--
       -->.
     remarks: >
-      Hosts: Excel, OneNote, Outlook, PowerPoint, Word
+      <table><tr><td>Hosts</td><td>Excel, OneNote, Outlook, PowerPoint, Word</td></tr>
 
 
-      Requirement sets: IdentityAPI
+      <tr><td>Requirement sets</td><td>IdentityAPI</td></tr></table>
 
 
       This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users

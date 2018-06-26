@@ -117,7 +117,7 @@ items:
       *Note*: The reason parameter of the initialize event listener function only returns an `InitializationReason`
       enumeration value for task pane and content add-ins. It does not return a value for Outlook add-ins.
     remarks: |
-      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
 
       #### Examples
 
@@ -230,7 +230,7 @@ items:
   - uid: office.Office.useShortNamespace
     summary: Toggles on and off the `Office` alias for the full `Microsoft.Office.WebExtension` namespace.
     remarks: |
-      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
 
       #### Examples
 

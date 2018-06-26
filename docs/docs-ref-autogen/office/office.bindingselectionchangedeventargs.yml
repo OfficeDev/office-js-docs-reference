@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.BindingSelectionChangedEventArgs
     summary: Provides information about the binding that raised the SelectionChanged event.
-    remarks: 'Hosts: Access, Excel, Word'
+    remarks: '<table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>'
     name: Office.BindingSelectionChangedEventArgs
     fullName: office.Office.BindingSelectionChangedEventArgs
     langs:

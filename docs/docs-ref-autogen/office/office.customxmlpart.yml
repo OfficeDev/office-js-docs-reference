@@ -3,9 +3,9 @@ items:
   - uid: office.Office.CustomXmlPart
     summary: 'Represents a single CustomXMLPart in an [Office.CustomXmlParts](xref:office.Office.CustomXmlParts) collection.'
     remarks: |-
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     name: Office.CustomXmlPart
     fullName: office.Office.CustomXmlPart
     langs:
@@ -24,7 +24,7 @@ items:
   - uid: office.Office.CustomXmlPart.addHandlerAsync
     summary: Adds an event handler to the object using the specified event type.
     remarks: >
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr></table>
 
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
@@ -137,9 +137,9 @@ items:
   - uid: office.Office.CustomXmlPart.builtIn
     summary: 'True, if the custom XML part is built in; otherwise false.'
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -169,9 +169,9 @@ items:
   - uid: office.Office.CustomXmlPart.deleteAsync
     summary: Deletes the Custom XML Part.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -212,9 +212,9 @@ items:
   - uid: office.Office.CustomXmlPart.getNodesAsync
     summary: Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -262,9 +262,9 @@ items:
   - uid: office.Office.CustomXmlPart.getXmlAsync
     summary: Asynchronously gets the XML inside this custom XML part.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -305,9 +305,9 @@ items:
   - uid: office.Office.CustomXmlPart.id
     summary: Gets the GUID of the CustomXMLPart.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -339,9 +339,9 @@ items:
       ([Office.CustomXmlPrefixMappings](xref:office.Office.CustomXmlPrefixMappings)<!-- -->) used against the current
       CustomXMLPart.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -366,9 +366,9 @@ items:
   - uid: office.Office.CustomXmlPart.removeHandlerAsync
     summary: Removes an event handler for the specified event type.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 

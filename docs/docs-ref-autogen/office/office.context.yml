@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.Context
     summary: Represents the runtime environment of the add-in and provides access to key objects of the API.
-    remarks: 'Hosts: Access, Excel, Outlook, PowerPoint, Project, Word'
+    remarks: '<table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word </td></tr></table>'
     name: Office.Context
     fullName: office.Office.Context
     langs:

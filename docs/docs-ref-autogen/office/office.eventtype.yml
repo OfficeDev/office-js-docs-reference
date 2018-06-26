@@ -3,11 +3,12 @@ items:
   - uid: office.Office.EventType
     summary: Specifies the kind of event that was raised. Returned by the `type` property of an *EventArgs object.
     remarks: >-
+      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr> <tr><td>Hosts (BindingDataChanged
+      and BindingSelectionChanged)</td><td>Access, Excel, Word</td></tr></table>
+
+
       Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`,
       `Office.EventType.TaskSelectionChanged`, and `Office.EventType.ViewSelectionChanged` event types.
-
-
-      Hosts: Access, Excel, PowerPoint, Project, Word
     name: Office.EventType
     fullName: office.Office.EventType
     langs:
@@ -38,29 +39,20 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.BindingDataChanged
-    summary: Occurs when data within the binding is changed.
-    remarks: >-
-      Hosts: Access, Excel, Word
-
-
-      To add an event handler for the BindingDataChanged event of a binding, use the addHandlerAsync method of the
-      Binding object. The event handler receives an argument of type BindingDataChangedEventArgs.
+    summary: >-
+      Occurs when data within the binding is changed. To add an event handler for the BindingDataChanged event of a
+      binding, use the addHandlerAsync method of the Binding object. The event handler receives an argument of type
+      [Office.BindingDataChangedEventArgs](xref:office.Office.BindingDataChangedEventArgs)<!-- -->.
     name: BindingDataChanged
     fullName: office.Office.EventType.BindingDataChanged
     langs:
       - typeScript
     type: field
   - uid: office.Office.EventType.BindingSelectionChanged
-    summary: Occurs when the selection is changed within the binding.
-    remarks: >-
-      Hosts: Access, Excel, Word
-
-
-      Available in Requirement set: BindingEvents
-
-
-      To add an event handler for the BindingSelectionChanged event of a binding, use the addHandlerAsync method of the
-      Binding object. The event handler receives an argument of type BindingSelectionChangedEventArgs.
+    summary: >-
+      Occurs when the selection is changed within the binding. To add an event handler for the BindingSelectionChanged
+      event of a binding, use the addHandlerAsync method of the Binding object. The event handler receives an argument
+      of type [Office.BindingSelectionChangedEventArgs](xref:office.Office.BindingSelectionChangedEventArgs)<!-- -->.
     name: BindingSelectionChanged
     fullName: office.Office.EventType.BindingSelectionChanged
     langs:

@@ -3,7 +3,7 @@ items:
   - uid: office.Office.Document
     summary: An abstract class that represents the document the add-in is interacting with.
     remarks: |
-      Hosts: Access, Excel, PowerPoint, Project, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr></table>
 
       #### Examples
 
@@ -92,10 +92,10 @@ items:
   - uid: office.Office.Document.addHandlerAsync
     summary: Adds an event handler for a Document object event.
     remarks: >
-      Hosts: Excel, PowerPoint, Project, Word
+      <table><tr><td>Hosts</td><td>Excel, PowerPoint, Project, Word</td></tr>
 
 
-      Available in Requirement set: DocumentEvents
+      <tr><td>Requirement Sets</td><td>DocumentEvents</td></tr></table>
 
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
@@ -261,7 +261,7 @@ items:
   - uid: office.Office.Document.bindings
     summary: Gets an object that provides access to the bindings defined in the document.
     remarks: >
-      Hosts: Access, Excel, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>
 
 
       You don't instantiate the Document object directly in your script. To call members of the Document object to
@@ -304,7 +304,7 @@ items:
   - uid: office.Office.Document.customXmlParts
     summary: Gets an object that represents the custom XML parts in the document.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr></table>
 
       #### Examples
 
@@ -333,9 +333,9 @@ items:
   - uid: office.Office.Document.getActiveViewAsync
     summary: Returns the state of the current view of the presentation (edit or read).
     remarks: |
-      Hosts: Excel, PowerPoint, Word
+      <table><tr><td>Hosts</td><td>Excel, PowerPoint, Word</td></tr>
 
-      Available in Requirement set: ActiveView
+      <tr><td>Requirement Sets</td><td>ActiveView</td></tr></table>
 
       Can trigger an event when the view changes.
 
@@ -380,10 +380,10 @@ items:
       supported up to 65536 (64 KB). Note that specifying file slice size of above permitted limit will result in an
       "Internal Error" failure.
     remarks: >
-      Hosts: Excel, PowerPoint, Word
+      <table><tr><td>Hosts</td><td>Excel, PowerPoint, Word</td></tr>
 
 
-      Available in Requirement set: File
+      <tr><td>Requirement Sets</td><td>File</td></tr></table>
 
 
       For add-ins running in Office host applications other than Office for iOS, the getFileAsync method supports
@@ -532,13 +532,13 @@ items:
   - uid: office.Office.Document.getFilePropertiesAsync
     summary: Gets file properties of the current document.
     remarks: >
-      Hosts: Excel, PowerPoint, Word
+      <table><tr><td>Hosts</td><td>Excel, PowerPoint, Word</td></tr>
 
 
-      Available in Requirement set: not in a set
+      <tr><td>Requirement Sets</td><td>not in a set</td></tr></table>
 
 
-      You get the file's URL with the url property (`asyncResult.value.url`).
+      You get the file's URL with the url property `asyncResult.value.url`.
 
 
       #### Examples
@@ -833,10 +833,10 @@ items:
   - uid: office.Office.Document.getSelectedDataAsync
     summary: Reads the data contained in the current selection in the document.
     remarks: >
-      Hosts: Access, Excel, PowerPoint, Project, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
 
 
-      Available in Requirement set: Selection
+      <tr><td>Requirement Sets</td><td>Selection</td></tr></table>
 
 
       In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the
@@ -1532,10 +1532,10 @@ items:
   - uid: office.Office.Document.goToByIdAsync
     summary: Goes to the specified object or location in the document.
     remarks: >
-      Hosts: Excel, PowerPoint, Word
+      <table><tr><td>Hosts</td><td>Excel, PowerPoint, Word</td></tr>
 
 
-      Available in Requirement set: not in a set
+      <tr><td>Requirement Sets</td><td>not in a set</td></tr></table>
 
 
       PowerPoint doesn't support the goToByIdAsync method in Master Views.
@@ -1544,16 +1544,16 @@ items:
       The behavior caused by the selectionMode option varies by host:
 
 
-      In Excel: Office.SelectionMode.Selected selects all content in the binding, or named item.
+      In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item.
       Office.SelectionMode.None for text bindings, selects the cell; for matrix bindings, table bindings, and named
       items, selects the first data cell (not first cell in header row for tables).
 
 
-      In PowerPoint: Office.SelectionMode.Selected selects the slide title or first textbox on the slide.
-      Office.SelectionMode.None Doesn't select anything.
+      In PowerPoint: `Office.SelectionMode.Selected` selects the slide title or first textbox on the slide.
+      `Office.SelectionMode.None` Doesn't select anything.
 
 
-      In Word: Office.SelectionMode.Selected selects all content in the binding. Office.SelectionMode.None for text
+      In Word: `Office.SelectionMode.Selected` selects all content in the binding. Office.SelectionMode.None for text
       bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first
       data cell (not first cell in header row for tables).
 
@@ -1722,7 +1722,7 @@ items:
   - uid: office.Office.Document.mode
     summary: Gets the mode the document is in.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr></table>
 
       #### Examples
 
@@ -1749,9 +1749,9 @@ items:
   - uid: office.Office.Document.removeHandlerAsync
     summary: Removes an event handler for the specified event type.
     remarks: |
-      Hosts: Excel, PowerPoint, Project, Word
+      <table><tr><td>Hosts</td><td>Excel, PowerPoint, Project, Word</td></tr>
 
-      Available in Requirement set: DocumentEvents
+      <tr><td>Requirement Sets</td><td>DocumentEvents</td></tr></table>
 
       #### Examples
 
@@ -1853,10 +1853,10 @@ items:
   - uid: office.Office.Document.setSelectedDataAsync
     summary: Writes the specified data into the current selection.
     remarks: >
-      Hosts: Access, Excel, PowerPoint, Project, Word, Word Online
+      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word, Word Online</td></tr>
 
 
-      Available in Requirement set: Selection
+      <tr><td>Requirement Sets</td><td>Selection</td></tr></table>
 
 
       **Application-specific behaviors**
@@ -2106,22 +2106,22 @@ items:
             host:
 
 
-            - Office.CoercionType.Text: Excel, Word, PowerPoint
+            - `Office.CoercionType.Text`: Excel, Word, PowerPoint
 
 
-            - Office.CoercionType.Matrix: Excel, Word
+            - `Office.CoercionType.Matrix`: Excel, Word
 
 
-            - Office.CoercionType.Table: Access, Excel, Word
+            - `Office.CoercionType.Table`: Access, Excel, Word
 
 
-            - Office.CoercionType.Html: Word
+            - `Office.CoercionType.Html`: Word
 
 
-            - Office.CoercionType.Ooxml: Word
+            - `Office.CoercionType.Ooxml`: Word
 
 
-            - Office.CoercionType.Image: Excel, Word, PowerPoint
+            - `Office.CoercionType.Image`: Excel, Word, PowerPoint
 
 
             If the value passed for `data` is:
@@ -2167,7 +2167,7 @@ items:
     summary: >-
       Gets an object that represents the saved custom settings of the content or task pane add-in for the current
       document.
-    remarks: 'Hosts: Word'
+    remarks: <table><tr><td>Hosts</td><td>Word</td></tr></table>
     name: settings
     fullName: office.Office.Document.settings
     langs:
@@ -2181,7 +2181,7 @@ items:
   - uid: office.Office.Document.url
     summary: Gets the URL of the document that the host application currently has open. Returns null if the URL is unavailable.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr></table>
 
       #### Examples
 

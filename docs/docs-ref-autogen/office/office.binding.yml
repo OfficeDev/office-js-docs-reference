@@ -3,10 +3,10 @@ items:
   - uid: office.Office.Binding
     summary: Represents a binding to a section of the document.
     remarks: >-
-      Hosts: Access, Excel, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
 
 
-      Available in Requirement sets: MatrixBinding, TableBinding, TextBinding
+      <tr><td>Requirement Sets</td><td>MatrixBinding, TableBinding, TextBinding</td></tr></table>
 
 
       The Binding object exposes the functionality possessed by all bindings regardless of type.
@@ -132,7 +132,7 @@ items:
   - uid: office.Office.Binding.document
     summary: Get the Document object associated with the binding.
     remarks: |
-      Hosts: Access, Excel, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>
 
       #### Examples
 
@@ -159,10 +159,10 @@ items:
   - uid: office.Office.Binding.getDataAsync
     summary: Returns the data contained within the binding.
     remarks: >
-      Hosts: Access, Excel, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
 
 
-      Available in Requirement sets: MatrixBindings, TableBindings, TextBindings
+      <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
 
 
       When called from a MatrixBinding or TableBinding, the getDataAsync method will return a subset of the bound values
@@ -267,7 +267,7 @@ items:
   - uid: office.Office.Binding.id
     summary: A string that uniquely identifies this binding among the bindings in the same Document object.
     remarks: |
-      Hosts: Access, Excel, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>
 
       #### Examples
 
@@ -294,9 +294,9 @@ items:
   - uid: office.Office.Binding.removeHandlerAsync
     summary: Removes the specified handler from the binding for the specified event type.
     remarks: |
-      Hosts: Access, Excel, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
 
-      Available in Requirement set: BindingEvents
+      <tr><td>Requirement Sets</td><td>BindingEvents</td></tr></table>
 
       #### Examples
 
@@ -336,10 +336,10 @@ items:
   - uid: office.Office.Binding.setDataAsync
     summary: Writes data to the bound section of the document represented by the specified binding object.
     remarks: >
-      Hosts: Access, Excel, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
 
 
-      Available in Requirement sets: MatrixBindings, TableBindings, TextBindings
+      <tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
 
 
       The value passed for data contains the data to be written in the binding. The kind of value passed determines what
@@ -576,7 +576,7 @@ items:
   - uid: office.Office.Binding.type
     summary: Gets the type of the binding.
     remarks: |
-      Hosts: Access, Excel, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>
 
       #### Examples
 

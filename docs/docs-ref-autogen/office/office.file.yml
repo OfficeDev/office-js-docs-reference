@@ -3,11 +3,11 @@ items:
   - uid: office.Office.File
     summary: Represents the document file associated with an Office Add-in.
     remarks: >-
+      <table><tr><td>Hosts</td><td>PowerPoint, Word</td></tr></table>
+
+
       Access the File object with the AsyncResult.value property in the callback function passed to the
       Document.getFileAsync method.
-
-
-      Hosts: PowerPoint, Word
     name: Office.File
     fullName: office.Office.File
     langs:
@@ -22,10 +22,10 @@ items:
   - uid: office.Office.File.closeAsync
     summary: Closes the document file.
     remarks: >-
-      Hosts: PowerPoint, Word
+      <table><tr><td>Hosts</td><td>PowerPoint, Word</td></tr>
 
 
-      Available in Requirement set: File
+      <tr><td>Requirement Sets</td><td>File</td></tr></table>
 
 
       No more than two documents are allowed to be in memory; otherwise the Document.getFileAsync operation will fail.
@@ -64,10 +64,10 @@ items:
   - uid: office.Office.File.getSliceAsync
     summary: Returns the specified slice.
     remarks: >-
-      Hosts: PowerPoint, Word
+      <table><tr><td>Hosts</td><td>PowerPoint, Word</td></tr>
 
 
-      Available in Requirement set: File
+      <tr><td>Requirement Sets</td><td>File</td></tr></table>
 
 
       In the callback function passed to the getSliceAsync method, you can use the properties of the AsyncResult object
@@ -105,9 +105,9 @@ items:
   - uid: office.Office.File.size
     summary: Gets the document file size in bytes.
     remarks: |-
-      Hosts: PowerPoint, Word
+      <table><tr><td>Hosts</td><td>PowerPoint, Word</td></tr>
 
-      Available in Requirement set: File
+      <tr><td>Requirement Sets</td><td>File</td></tr></table>
     name: size
     fullName: office.Office.File.size
     langs:
@@ -120,7 +120,7 @@ items:
           - number
   - uid: office.Office.File.sliceCount
     summary: Gets the number of slices into which the file is divided.
-    remarks: 'Hosts: PowerPoint, Word'
+    remarks: '<table><tr><td>Hosts</td><td>PowerPoint, Word</td></tr></table>'
     name: sliceCount
     fullName: office.Office.File.sliceCount
     langs:

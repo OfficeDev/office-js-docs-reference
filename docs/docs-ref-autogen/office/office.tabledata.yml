@@ -3,9 +3,9 @@ items:
   - uid: office.Office.TableData
     summary: 'Represents the data in a table or a [Office.TableBinding](xref:office.Office.TableBinding)<!-- -->.'
     remarks: |-
-      Hosts: Excel, Word
+      <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
 
-      Available in Requirement set: TableBindings
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
     name: Office.TableData
     fullName: office.Office.TableData
     langs:
@@ -37,6 +37,12 @@ items:
   - uid: office.Office.TableData.headers
     summary: Gets or sets the headers of the table.
     remarks: >
+      <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
+
+
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
+
+
       To specify headers, you must specify an array of arrays that corresponds to the structure of the table. For
       example, to specify headers for a two-column table you would set the header property to \[\['header1',
       'header2'\]\].
@@ -50,12 +56,6 @@ items:
 
 
       - If you overwrite or update an existing table, the existing headers are not altered.
-
-
-      Hosts: Excel, Word
-
-
-      Available in Requirement set: TableBindings
 
 
       #### Examples
@@ -88,6 +88,12 @@ items:
       Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table. Returns an
       empty array ``, if there are no rows.
     remarks: >
+      <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
+
+
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
+
+
       To specify rows, you must specify an array of arrays that corresponds to the structure of the table. For example,
       to specify two rows of string values in a two-column table you would set the rows property to \[\['a', 'b'\],
       \['c', 'd'\]\].
@@ -101,12 +107,6 @@ items:
 
 
       - If you overwrite or update an existing table, the existing rows are not altered.
-
-
-      Hosts: Excel, Word
-
-
-      Available in Requirement set: TableBindings
 
 
       #### Examples

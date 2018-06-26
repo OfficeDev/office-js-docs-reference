@@ -3,10 +3,10 @@ items:
   - uid: office.Office.TableBinding
     summary: 'Represents a binding in two dimensions of rows and columns, optionally with headers.'
     remarks: >-
-      Hosts: Access, Excel, PowerPoint, Project, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
 
 
-      Available in Requirement set: TableBindings
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
 
       The TableBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from
@@ -37,10 +37,10 @@ items:
   - uid: office.Office.TableBinding.addColumnsAsync
     summary: Adds the specified data to the table as additional columns.
     remarks: >
-      Hosts: Excel, Word
+      <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
 
 
-      Available in Requirement set: TableBindings
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
 
       To add one or more columns specifying the values of the data and headers, pass a TableData object as the data
@@ -143,10 +143,10 @@ items:
   - uid: office.Office.TableBinding.addRowsAsync
     summary: Adds the specified data to the table as additional rows.
     remarks: >
-      Hosts: Access, Excel, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
 
 
-      Available in Requirement set: TableBindings
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
 
       To add one or more columns specifying the values of the data and headers, pass a TableData object as the data
@@ -219,10 +219,10 @@ items:
   - uid: office.Office.TableBinding.clearFormatsAsync
     summary: Clears formatting on the bound table.
     remarks: >
-      Hosts: Excel
+      <table><tr><td>Hosts</td><td>Excel</td></tr>
 
 
-      Available in Requirement set: Not in a set
+      <tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
 
 
       See [Format tables in add-ins for
@@ -271,9 +271,9 @@ items:
   - uid: office.Office.TableBinding.columnCount
     summary: 'Gets the number of columns in the TableBinding, as an integer value.'
     remarks: |
-      Hosts: Access, Excel,Word
+      <table><tr><td>Hosts</td><td>Access, Excel,Word</td></tr>
 
-      Available in Requirement set: TableBindings
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
       #### Examples
 
@@ -294,9 +294,9 @@ items:
   - uid: office.Office.TableBinding.deleteAllDataValuesAsync
     summary: 'Deletes all non-header rows and their values in the table, shifting appropriately for the host application.'
     remarks: |
-      Hosts: Access, Excel, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
 
-      Available in Requirement set: TableBindings
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
       In Excel, if the table has no header row, this method will delete the table itself.
 
@@ -365,9 +365,9 @@ items:
   - uid: office.Office.TableBinding.hasHeaders
     summary: 'True, if the table has headers; otherwise false.'
     remarks: |
-      Hosts: Access, Excel, PowerPoint, Project, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
 
-      Available in Requirement set: TableBindings
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
       #### Examples
 
@@ -395,10 +395,10 @@ items:
   - uid: office.Office.TableBinding.rowCount
     summary: 'Gets the number of rows in the TableBinding, as an integer value.'
     remarks: >
-      Hosts: Access, Excel,Word
+      <table><tr><td>Hosts</td><td>Access, Excel,Word</td></tr>
 
 
-      Available in Requirement set: TableBindings
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
 
       When you insert an empty table by selecting a single row in Excel 2013 and Excel Online (using Table on the Insert
@@ -452,10 +452,10 @@ items:
   - uid: office.Office.TableBinding.setFormatsAsync
     summary: Sets formatting on specified items and data in the table.
     remarks: >
-      Hosts: Excel
+      <table><tr><td>Hosts</td><td>Excel</td></tr>
 
 
-      Available in Requirement set: Not in a set
+      <tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
 
 
       **Specifying the cellFormat parameter**
@@ -493,7 +493,10 @@ items:
       You specify the value of the `format:` property as a list of one or more property name - value pairs in a
       JavaScript object literal. The property name specifies the name of the formatting property to set, and value
       specifies the property value. You can specify multiple values for a given format, such as both a font's color and
-      size. Here's three `format:` property value examples:
+      size.
+
+
+      Here's three `format:` property value examples:
 
 
       `//Set cells: font color to green and size to 15 points.`
@@ -523,7 +526,9 @@ items:
       `format: {numberFormat:"0.00%"}`
 
 
-      For more detail, see how to .
+      For more detail, see how to [Create a custom number
+      format](https://support.office.com/article/create-or-delete-a-custom-number-format-78f2a361-936b-4c03-8772-09fab54be7f4)<!--
+      -->.
 
 
       To set formatting on tables when writing data, use the tableOptions and cellFormat optional parameters of the
@@ -545,7 +550,8 @@ items:
       - To clear formatting, use the `TableBinding.clearFormats` method.
 
 
-      For more details and examples, see .
+      For more details and examples, see [How to format tables in add-ins for
+      Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
 
 
       In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object
@@ -630,10 +636,10 @@ items:
   - uid: office.Office.TableBinding.setTableOptionsAsync
     summary: Updates table formatting options on the bound table.
     remarks: >
-      Hosts: Excel
+      <table><tr><td>Hosts</td><td>Excel</td></tr>
 
 
-      Available in Requirement set: Not in a set
+      <tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
 
 
       In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object

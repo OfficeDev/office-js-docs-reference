@@ -3,9 +3,9 @@ items:
   - uid: office.Office.CustomXmlNode
     summary: Represents an XML node in a tree in a document.
     remarks: |-
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     name: Office.CustomXmlNode
     fullName: office.Office.CustomXmlNode
     langs:
@@ -26,9 +26,9 @@ items:
   - uid: office.Office.CustomXmlNode.baseName
     summary: 'Gets the base name of the node without the namespace prefix, if one exists.'
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -62,9 +62,9 @@ items:
   - uid: office.Office.CustomXmlNode.getNodesAsync
     summary: Gets the nodes associated with the XPath expression.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -114,9 +114,9 @@ items:
   - uid: office.Office.CustomXmlNode.getNodeValueAsync
     summary: Gets the node value.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -162,10 +162,10 @@ items:
   - uid: office.Office.CustomXmlNode.getTextAsync
     summary: Gets the text of an XML node in a custom XML part.
     remarks: >
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
 
       #### Examples
@@ -226,9 +226,9 @@ items:
   - uid: office.Office.CustomXmlNode.getXmlAsync
     summary: Gets the node's XML.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -274,9 +274,9 @@ items:
   - uid: office.Office.CustomXmlNode.namespaceUri
     summary: Retrieves the string GUID of the CustomXMLPart.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -310,9 +310,9 @@ items:
   - uid: office.Office.CustomXmlNode.nodeType
     summary: Gets the type of the CustomXMLNode.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -346,9 +346,9 @@ items:
   - uid: office.Office.CustomXmlNode.setNodeValueAsync
     summary: Sets the node value.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -397,10 +397,10 @@ items:
   - uid: office.Office.CustomXmlNode.setTextAsync
     summary: Asynchronously sets the text of an XML node in a custom XML part.
     remarks: >
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
 
       #### Examples
@@ -468,9 +468,9 @@ items:
   - uid: office.Office.CustomXmlNode.setXmlAsync
     summary: Sets the node XML.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 

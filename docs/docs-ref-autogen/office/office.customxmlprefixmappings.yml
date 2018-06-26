@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.CustomXmlPrefixMappings
     summary: Represents a collection of CustomXmlPart objects.
-    remarks: 'Hosts: Word'
+    remarks: <table><tr><td>Hosts</td><td>Word</td></tr></table>
     name: Office.CustomXmlPrefixMappings
     fullName: office.Office.CustomXmlPrefixMappings
     langs:
@@ -16,9 +16,9 @@ items:
   - uid: office.Office.CustomXmlPrefixMappings.addNamespaceAsync
     summary: Asynchronously adds a prefix to namespace mapping to use when querying an item.
     remarks: |-
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       If no namespace is assigned to the requested prefix, the method returns an empty string ("").
     name: 'addNamespaceAsync(prefix, ns, options, callback)'
@@ -54,10 +54,10 @@ items:
   - uid: office.Office.CustomXmlPrefixMappings.getNamespaceAsync
     summary: Asynchronously gets the namespace mapped to the specified prefix.
     remarks: >-
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
 
       If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix
@@ -91,10 +91,10 @@ items:
   - uid: office.Office.CustomXmlPrefixMappings.getPrefixAsync
     summary: Asynchronously gets the prefix for the specified namespace.
     remarks: >-
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
 
       If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are

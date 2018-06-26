@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.BindingDataChangedEventArgs
     summary: Provides information about the binding that raised the DataChanged event.
-    remarks: 'Hosts: Access, Excel, Word'
+    remarks: '<table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>'
     name: Office.BindingDataChangedEventArgs
     fullName: office.Office.BindingDataChangedEventArgs
     langs:

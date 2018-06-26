@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.BindingType
     summary: Specifies the type of the binding object that should be returned.
-    remarks: 'Hosts: Access, Excel, Word'
+    remarks: '<table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr></table>'
     name: Office.BindingType
     fullName: office.Office.BindingType
     langs:

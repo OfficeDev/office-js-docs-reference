@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.NodeDeletedEventArgs
-    summary: Provides information about the deleted node that raised the dataNodeDeleted event.
-    remarks: 'Hosts: Word'
+    summary: Provides information about the deleted node that raised the nodeDeleted event.
+    remarks: <table><tr><td>Hosts</td><td>Word</td></tr></table>
     name: Office.NodeDeletedEventArgs
     fullName: office.Office.NodeDeletedEventArgs
     langs:
