@@ -1,0 +1,155 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartLegendUpdateData
+    summary: 'An interface for updating data on the ChartLegend object, for use in "chartLegend.set({ ... })".'
+    name: Excel.Interfaces.ChartLegendUpdateData
+    fullName: excel.Excel.Interfaces.ChartLegendUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartLegendUpdateData.format
+      - excel.Excel.Interfaces.ChartLegendUpdateData.height
+      - excel.Excel.Interfaces.ChartLegendUpdateData.left
+      - excel.Excel.Interfaces.ChartLegendUpdateData.overlay
+      - excel.Excel.Interfaces.ChartLegendUpdateData.position
+      - excel.Excel.Interfaces.ChartLegendUpdateData.showShadow
+      - excel.Excel.Interfaces.ChartLegendUpdateData.top
+      - excel.Excel.Interfaces.ChartLegendUpdateData.visible
+      - excel.Excel.Interfaces.ChartLegendUpdateData.width
+  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.format
+    summary: |-
+      Represents the formatting of a chart legend, which includes fill and font formatting.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: excel.Excel.Interfaces.ChartLegendUpdateData.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartLegendFormatUpdateData;'
+      return:
+        type:
+          - Excel.Interfaces.ChartLegendFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.height
+    summary: |-
+      Represents the height, in points, of the legend on the chart. Null if legend is not visible.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: excel.Excel.Interfaces.ChartLegendUpdateData.height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.left
+    summary: |-
+      Represents the left, in points, of a chart legend. Null if legend is not visible.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: excel.Excel.Interfaces.ChartLegendUpdateData.left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.overlay
+    summary: |-
+      Boolean value for whether the chart legend should overlap with the main body of the chart.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: overlay
+    fullName: excel.Excel.Interfaces.ChartLegendUpdateData.overlay
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overlay?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.position
+    summary: |-
+      Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: excel.Excel.Interfaces.ChartLegendUpdateData.position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position?: Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom";'
+      return:
+        type:
+          - Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
+  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.showShadow
+    summary: |-
+      Represents if the legend has a shadow on the chart.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: showShadow
+    fullName: excel.Excel.Interfaces.ChartLegendUpdateData.showShadow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showShadow?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.top
+    summary: |-
+      Represents the top of a chart legend.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: excel.Excel.Interfaces.ChartLegendUpdateData.top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.visible
+    summary: |-
+      A boolean value the represents the visibility of a ChartLegend object.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: excel.Excel.Interfaces.ChartLegendUpdateData.visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.width
+    summary: |-
+      Represents the width, in points, of the legend on the chart. Null if legend is not visible.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: excel.Excel.Interfaces.ChartLegendUpdateData.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number

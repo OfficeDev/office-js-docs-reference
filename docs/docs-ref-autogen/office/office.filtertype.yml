@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.FilterType
     summary: Specifies whether filtering from the host application is applied when the data is retrieved.
-    remarks: 'Hosts: Excel, Project, Word'
+    remarks: '<table><tr><td>Hosts</td><td>Excel, Project, Word</td></tr></table>'
     name: Office.FilterType
     fullName: office.Office.FilterType
     langs:

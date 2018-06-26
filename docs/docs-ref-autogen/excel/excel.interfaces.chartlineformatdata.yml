@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartLineFormatData
+    summary: An interface describing the data returned by calling "chartLineFormat.toJSON()".
+    name: Excel.Interfaces.ChartLineFormatData
+    fullName: excel.Excel.Interfaces.ChartLineFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartLineFormatData.color
+      - excel.Excel.Interfaces.ChartLineFormatData.lineStyle
+      - excel.Excel.Interfaces.ChartLineFormatData.weight
+  - uid: excel.Excel.Interfaces.ChartLineFormatData.color
+    summary: |-
+      HTML color code representing the color of lines in the chart.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: excel.Excel.Interfaces.ChartLineFormatData.color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.ChartLineFormatData.lineStyle
+    summary: |-
+      Represents the line style. See Excel.ChartLineStyle for details.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: lineStyle
+    fullName: excel.Excel.Interfaces.ChartLineFormatData.lineStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        lineStyle?: Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25"
+        | "Grey50" | "Grey75" | "Automatic" | "RoundDot";
+      return:
+        type:
+          - >-
+            Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" |
+            "Grey50" | "Grey75" | "Automatic" | "RoundDot"
+  - uid: excel.Excel.Interfaces.ChartLineFormatData.weight
+    summary: |-
+      Represents weight of the line, in points.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: weight
+    fullName: excel.Excel.Interfaces.ChartLineFormatData.weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: number;'
+      return:
+        type:
+          - number

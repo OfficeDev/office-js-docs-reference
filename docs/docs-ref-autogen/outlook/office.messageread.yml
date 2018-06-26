@@ -58,17 +58,16 @@ items:
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
 
 
-      `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;`
+      `addHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
     isPreview: true
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.MessageRead.addHandlerAsync
@@ -112,18 +111,17 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
+
+
       Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
       returned. For more information, see [Blocked attachments in
       Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519)<!--
       -->.
-
-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
-
-
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
     name: attachments
     fullName: outlook.Office.MessageRead.attachments
     langs:
@@ -141,11 +139,10 @@ items:
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: body
     fullName: outlook.Office.MessageRead.body
     langs:
@@ -169,11 +166,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: cc
     fullName: outlook.Office.MessageRead.cc
     langs:
@@ -191,11 +187,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: dateTimeCreated
     fullName: outlook.Office.MessageRead.dateTimeCreated
     langs:
@@ -212,15 +207,14 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      Note: This member is not supported in Outlook for iOS or Outlook for Android.
-
-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
+
+
+      Note: This member is not supported in Outlook for iOS or Outlook for Android.
     name: dateTimeModifed
     fullName: outlook.Office.MessageRead.dateTimeModifed
     langs:
@@ -255,11 +249,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: displayReplyAllForm(formData)
     fullName: outlook.Office.MessageRead.displayReplyAllForm
     langs:
@@ -303,11 +296,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: displayReplyForm(formData)
     fullName: outlook.Office.MessageRead.displayReplyForm
     langs:
@@ -345,11 +337,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: from
     fullName: outlook.Office.MessageRead.from
     langs:
@@ -369,11 +360,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getEntities()
     fullName: outlook.Office.MessageRead.getEntities
     langs:
@@ -393,6 +383,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
+
+
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
+
+
       While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access,
       as specified in the following table.
 
@@ -403,14 +400,6 @@ items:
       <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td>
       <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td>
       <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>
-
-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>Restricted</td></tr>
-
-
-      <tr><td>Applicable Outlook mode</td><td> Read</td></tr></table>
     name: getEntitiesByType(entityType)
     fullName: outlook.Office.MessageRead.getEntitiesByType
     langs:
@@ -448,11 +437,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getFilteredEntitiesByName(name)
     fullName: outlook.Office.MessageRead.getFilteredEntitiesByName
     langs:
@@ -487,17 +475,16 @@ items:
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
 
 
-      `getInitializationContextAsync(callback?: (result: AsyncResult) =&gt; void): void;`
+      `getInitializationContextAsync(callback?: (result: AsyncResult) => void): void;`
     isPreview: true
     name: 'getInitializationContextAsync(options, callback)'
     fullName: outlook.Office.MessageRead.getInitializationContextAsync
@@ -549,11 +536,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getRegExMatches()
     fullName: outlook.Office.MessageRead.getRegExMatches
     langs:
@@ -589,11 +575,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getRegExMatchesByName(name)
     fullName: outlook.Office.MessageRead.getRegExMatchesByName
     langs:
@@ -622,11 +607,10 @@ items:
       \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getSelectedEntities()
     fullName: outlook.Office.MessageRead.getSelectedEntities
     langs:
@@ -662,11 +646,10 @@ items:
       \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: getSelectedRegExMatches()
     fullName: outlook.Office.MessageRead.getSelectedRegExMatches
     langs:
@@ -688,11 +671,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: internetMessageId
     fullName: outlook.Office.MessageRead.internetMessageId
     langs:
@@ -714,6 +696,13 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
+
+
       The itemClass property specifies the message class of the selected item. The following are the default message
       classes for the message or appointment item.
 
@@ -725,14 +714,6 @@ items:
       use IPM.Schedule.Meeting as the base message class.</td>
       <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
       </tr> </table>
-
-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
-
-
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
     name: itemClass
     fullName: outlook.Office.MessageRead.itemClass
     langs:
@@ -762,11 +743,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: itemId
     fullName: outlook.Office.MessageRead.itemId
     langs:
@@ -789,11 +769,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: itemType
     fullName: outlook.Office.MessageRead.itemType
     langs:
@@ -823,11 +802,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: outlook.Office.MessageRead.loadCustomPropertiesAsync
     langs:
@@ -864,11 +842,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: normalizedSubject
     fullName: outlook.Office.MessageRead.normalizedSubject
     langs:
@@ -886,11 +863,10 @@ items:
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: notificationMessages
     fullName: outlook.Office.MessageRead.notificationMessages
     langs:
@@ -922,11 +898,10 @@ items:
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     isPreview: true
     name: recurrence
     fullName: outlook.Office.MessageRead.recurrence
@@ -950,17 +925,16 @@ items:
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
 
 
       In addition to this signature, the method also has the following signature:
 
 
-      `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) =&gt; void): void;`
+      `removeHandlerAsync(eventType:EventType, handler: any, callback?: (result: AsyncResult) => void): void;`
     isPreview: true
     name: 'removeHandlerAsync(eventType, handler, options, callback)'
     fullName: outlook.Office.MessageRead.removeHandlerAsync
@@ -1013,11 +987,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: sender
     fullName: outlook.Office.MessageRead.sender
     langs:
@@ -1051,11 +1024,10 @@ items:
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     isPreview: true
     name: seriesId
     fullName: outlook.Office.MessageRead.seriesId
@@ -1082,11 +1054,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: subject
     fullName: outlook.Office.MessageRead.subject
     langs:
@@ -1110,11 +1081,10 @@ items:
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Message Read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Message Read</td></tr></table>
     name: to
     fullName: outlook.Office.MessageRead.to
     langs:

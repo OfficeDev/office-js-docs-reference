@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.InlinePictureCollectionUpdateData
+    summary: >-
+      An interface for updating data on the InlinePictureCollection object, for use in "inlinePictureCollection.set({
+      ... })".
+    name: Word.Interfaces.InlinePictureCollectionUpdateData
+    fullName: word.Word.Interfaces.InlinePictureCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.InlinePictureCollectionUpdateData.items
+  - uid: word.Word.Interfaces.InlinePictureCollectionUpdateData.items
+    name: items
+    fullName: word.Word.Interfaces.InlinePictureCollectionUpdateData.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Word.Interfaces.InlinePictureData[];'
+      return:
+        type:
+          - 'Word.Interfaces.InlinePictureData[]'

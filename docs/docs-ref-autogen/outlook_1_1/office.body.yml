@@ -69,7 +69,7 @@ items:
 
 
       When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
-      (&lt;a&gt;) to "LPNoLP" (please see the Examples section for a sample).
+      (<a>) to "LPNoLP" (please see the Examples section for a sample).
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -90,7 +90,7 @@ items:
       `prependAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      `prependAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;`
+      `prependAsync(data: string, callback: (result: AsyncResult) => void): void;`
 
 
       `prependAsync(data: string): void;`
@@ -137,7 +137,7 @@ items:
 
 
       When including links in HTML markup, you can disable online link preview by setting the id attribute on the anchor
-      (&lt;a&gt;) to "LPNoLP" (please see the Examples section for a sample).
+      (<a>) to "LPNoLP" (please see the Examples section for a sample).
 
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
@@ -162,7 +162,7 @@ items:
       `setSelectedDataAsync(data: string, options: AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      `setSelectedDataAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;`
+      `setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;`
 
 
       `setSelectedDataAsync(data: string): void;`

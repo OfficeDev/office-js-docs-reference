@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.PageContentUpdateData
+    summary: 'An interface for updating data on the PageContent object, for use in "pageContent.set({ ... })".'
+    name: OneNote.Interfaces.PageContentUpdateData
+    fullName: onenote.OneNote.Interfaces.PageContentUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.PageContentUpdateData.image
+      - onenote.OneNote.Interfaces.PageContentUpdateData.left
+      - onenote.OneNote.Interfaces.PageContentUpdateData.top
+  - uid: onenote.OneNote.Interfaces.PageContentUpdateData.image
+    summary: |-
+      Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: image
+    fullName: onenote.OneNote.Interfaces.PageContentUpdateData.image
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'image?: OneNote.Interfaces.ImageUpdateData;'
+      return:
+        type:
+          - OneNote.Interfaces.ImageUpdateData
+  - uid: onenote.OneNote.Interfaces.PageContentUpdateData.left
+    summary: |-
+      Gets or sets the left (X-axis) position of the PageContent object.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: left
+    fullName: onenote.OneNote.Interfaces.PageContentUpdateData.left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.Interfaces.PageContentUpdateData.top
+    summary: |-
+      Gets or sets the top (Y-axis) position of the PageContent object.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: top
+    fullName: onenote.OneNote.Interfaces.PageContentUpdateData.top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number

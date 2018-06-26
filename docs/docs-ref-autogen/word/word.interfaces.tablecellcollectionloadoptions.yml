@@ -1,0 +1,198 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions
+    summary: |-
+      Contains the collection of the document's TableCell objects.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.TableCellCollectionLoadOptions
+    fullName: word.Word.Interfaces.TableCellCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.TableCellCollectionLoadOptions.body
+      - word.Word.Interfaces.TableCellCollectionLoadOptions.cellIndex
+      - word.Word.Interfaces.TableCellCollectionLoadOptions.columnWidth
+      - word.Word.Interfaces.TableCellCollectionLoadOptions.horizontalAlignment
+      - word.Word.Interfaces.TableCellCollectionLoadOptions.parentRow
+      - word.Word.Interfaces.TableCellCollectionLoadOptions.parentTable
+      - word.Word.Interfaces.TableCellCollectionLoadOptions.rowIndex
+      - word.Word.Interfaces.TableCellCollectionLoadOptions.shadingColor
+      - word.Word.Interfaces.TableCellCollectionLoadOptions.value
+      - word.Word.Interfaces.TableCellCollectionLoadOptions.verticalAlignment
+      - word.Word.Interfaces.TableCellCollectionLoadOptions.width
+  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.body
+    summary: |-
+      For EACH ITEM in the collection: Gets the body object of the cell.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: body
+    fullName: word.Word.Interfaces.TableCellCollectionLoadOptions.body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body?: Word.Interfaces.BodyLoadOptions;'
+      return:
+        type:
+          - Word.Interfaces.BodyLoadOptions
+  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.cellIndex
+    summary: |-
+      For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: cellIndex
+    fullName: word.Word.Interfaces.TableCellCollectionLoadOptions.cellIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.columnWidth
+    summary: >-
+      For EACH ITEM in the collection: Gets and sets the width of the cell's column in points. This is applicable to
+      uniform tables.
+
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: columnWidth
+    fullName: word.Word.Interfaces.TableCellCollectionLoadOptions.columnWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnWidth?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.horizontalAlignment
+    summary: >-
+      For EACH ITEM in the collection: Gets and sets the horizontal alignment of the cell. The value can be 'left',
+      'centered', 'right', or 'justified'.
+
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: word.Word.Interfaces.TableCellCollectionLoadOptions.horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.parentRow
+    summary: |-
+      For EACH ITEM in the collection: Gets the parent row of the cell.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: parentRow
+    fullName: word.Word.Interfaces.TableCellCollectionLoadOptions.parentRow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentRow?: Word.Interfaces.TableRowLoadOptions;'
+      return:
+        type:
+          - Word.Interfaces.TableRowLoadOptions
+  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.parentTable
+    summary: |-
+      For EACH ITEM in the collection: Gets the parent table of the cell.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: parentTable
+    fullName: word.Word.Interfaces.TableCellCollectionLoadOptions.parentTable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
+      return:
+        type:
+          - Word.Interfaces.TableLoadOptions
+  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.rowIndex
+    summary: |-
+      For EACH ITEM in the collection: Gets the index of the cell's row in the table. Read-only.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: rowIndex
+    fullName: word.Word.Interfaces.TableCellCollectionLoadOptions.rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.shadingColor
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB"
+      format or by using the color name.
+
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: shadingColor
+    fullName: word.Word.Interfaces.TableCellCollectionLoadOptions.shadingColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shadingColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.value
+    summary: |-
+      For EACH ITEM in the collection: Gets and sets the text of the cell.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: value
+    fullName: word.Word.Interfaces.TableCellCollectionLoadOptions.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.verticalAlignment
+    summary: >-
+      For EACH ITEM in the collection: Gets and sets the vertical alignment of the cell. The value can be 'top',
+      'center' or 'bottom'.
+
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: word.Word.Interfaces.TableCellCollectionLoadOptions.verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.width
+    summary: |-
+      For EACH ITEM in the collection: Gets the width of the cell in points. Read-only.
+
+      \[ [API set: WordApi 1.3](/javascript/office/requirement-sets/word-api-requirement-sets) \]
+    name: width
+    fullName: word.Word.Interfaces.TableCellCollectionLoadOptions.width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type:
+          - boolean

@@ -4,7 +4,7 @@ items:
     summary: >-
       Specifies whether to select (highlight) the location to navigate to (when using the Document.goToByIdAsync
       method).
-    remarks: 'Hosts: Excel, PowerPoint, Word'
+    remarks: '<table><tr><td>Hosts</td><td>Excel, PowerPoint, Word</td></tr></table>'
     name: Office.SelectionMode
     fullName: office.Office.SelectionMode
     langs:

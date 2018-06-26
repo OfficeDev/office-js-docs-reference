@@ -3,11 +3,11 @@ items:
   - uid: office.Office.CoercionType
     summary: Specifies how to coerce data returned or set by the invoked method.
     remarks: >-
+      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+
+
       PowerPoint supports only `Office.CoercionType.Text`, `Office.CoercionType.Image`, and
       `Office.CoercionType.SlideRange`. Project supports only `Office.CoercionType.Text`.
-
-
-      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
     name: Office.CoercionType
     fullName: office.Office.CoercionType
     langs:

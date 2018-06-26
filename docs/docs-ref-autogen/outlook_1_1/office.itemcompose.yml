@@ -64,7 +64,7 @@ items:
       `addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;`
 
 
-      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) =&gt; void): void;`
+      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;`
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: Outlook_1_1.Office.ItemCompose.addFileAttachmentAsync
     langs:
@@ -149,7 +149,7 @@ items:
       `addItemAttachmentAsync(itemId: any, attachmentName: string, options: AsyncContextOptions): void;`
 
 
-      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) =&gt; void): void;`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;`
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: Outlook_1_1.Office.ItemCompose.addItemAttachmentAsync
     langs:
@@ -265,7 +265,7 @@ items:
       `removeAttachmentAsync(attachmentIndex: string, options: AsyncContextOptions): void;`
 
 
-      `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) =&gt; void): void;`
+      `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;`
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
     fullName: Outlook_1_1.Office.ItemCompose.removeAttachmentAsync
     langs:

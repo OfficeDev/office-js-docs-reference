@@ -3,10 +3,10 @@ items:
   - uid: office.Office.MatrixBinding
     summary: Represents a binding in two dimensions of rows and columns.
     remarks: >-
-      Hosts: Excel, Word
+      <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
 
 
-      Available in Requirement set: MatrixBindings
+      <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr></table>
 
 
       The MatrixBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method
@@ -25,9 +25,9 @@ items:
   - uid: office.Office.MatrixBinding.columnCount
     summary: 'Gets the number of columns in the matrix data structure, as an integer value.'
     remarks: |
-      Hosts: Access, Excel, PowerPoint, Project, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
 
-      Available in Requirement set: MatrixBindings
+      <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr></table>
 
       #### Examples
 
@@ -55,9 +55,9 @@ items:
   - uid: office.Office.MatrixBinding.rowCount
     summary: 'Gets the number of rows in the matrix data structure, as an integer value.'
     remarks: |
-      Hosts: Access, Excel, PowerPoint, Project, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
 
-      Available in Requirement set: MatrixBindings
+      <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr></table>
 
       #### Examples
 

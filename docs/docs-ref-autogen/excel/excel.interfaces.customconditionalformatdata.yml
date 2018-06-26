@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.CustomConditionalFormatData
+    summary: An interface describing the data returned by calling "customConditionalFormat.toJSON()".
+    name: Excel.Interfaces.CustomConditionalFormatData
+    fullName: excel.Excel.Interfaces.CustomConditionalFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.CustomConditionalFormatData.format
+      - excel.Excel.Interfaces.CustomConditionalFormatData.rule
+  - uid: excel.Excel.Interfaces.CustomConditionalFormatData.format
+    summary: >-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: excel.Excel.Interfaces.CustomConditionalFormatData.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ConditionalRangeFormatData;'
+      return:
+        type:
+          - Excel.Interfaces.ConditionalRangeFormatData
+  - uid: excel.Excel.Interfaces.CustomConditionalFormatData.rule
+    summary: |-
+      Represents the Rule object on this conditional format. Read-only.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: rule
+    fullName: excel.Excel.Interfaces.CustomConditionalFormatData.rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule?: Excel.Interfaces.ConditionalFormatRuleData;'
+      return:
+        type:
+          - Excel.Interfaces.ConditionalFormatRuleData

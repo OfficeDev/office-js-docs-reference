@@ -38,7 +38,7 @@ items:
       In addition to this signature, the method also has the following signature:
 
 
-      `getAsync(callback: (result: AsyncResult) =&gt; void): void;`
+      `getAsync(callback: (result: AsyncResult) => void): void;`
     name: 'getAsync(options, callback)'
     fullName: Outlook_1_6.Office.Location.getAsync
     langs:
@@ -90,7 +90,7 @@ items:
       `setAsync(location: string, options: AsyncContextOptions): void;`
 
 
-      `setAsync(location: string, callback: (result: AsyncResult) =&gt; void): void;`
+      `setAsync(location: string, callback: (result: AsyncResult) => void): void;`
     name: 'setAsync(location, options, callback)'
     fullName: Outlook_1_6.Office.Location.setAsync
     langs:

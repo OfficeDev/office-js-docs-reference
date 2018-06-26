@@ -1648,22 +1648,17 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
-    name: select(allowMultiAreas)
+    name: select()
     fullName: excel.Excel.Range.select
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'select(allowMultiAreas?: boolean): void;'
+      content: 'select(): void;'
       return:
         type:
           - void
         description: ''
-      parameters:
-        - id: allowMultiAreas
-          description: ''
-          type:
-            - boolean
     remarks: |
 
 

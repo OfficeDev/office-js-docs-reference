@@ -9,6 +9,16 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+
+
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+
+
+      **States**
+
+
       <table> <tr> <th>State</th> <th>Editable?</th> <th>Viewable?</th> </tr> <tr> <td>Appointment Organizer - Compose
       Series</td> <td>Yes (setAsync)</td> <td>Yes (getAsync)</td> </tr> <tr> <td>Appointment Organizer - Compose
       Instance</td> <td>No (setAsync returns error)</td> <td>Yes (getAsync)</td> </tr> <tr> <td>Appointment Attendee -
@@ -17,14 +27,6 @@ items:
       <td>Meeting Request - Read Series</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td> </tr>
       <tr> <td>Meeting Request - Read Instance</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td>
       </tr> </table>
-
-
-      <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
-
-
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
     isPreview: true
     name: Office.Recurrence
     fullName: outlook.Office.Recurrence
@@ -48,17 +50,16 @@ items:
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
 
 
-      `getAsync(callback?: (result: AsyncResult) =&gt; void): void;`
+      `getAsync(callback?: (result: AsyncResult) => void): void;`
 
 
       #### Examples
@@ -116,11 +117,10 @@ items:
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: recurrenceProperties
     fullName: outlook.Office.Recurrence.recurrenceProperties
@@ -139,11 +139,10 @@ items:
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: recurrenceTimeZone
     fullName: outlook.Office.Recurrence.recurrenceTimeZone
@@ -162,11 +161,10 @@ items:
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: recurrenceType
     fullName: outlook.Office.Recurrence.recurrenceType
@@ -189,11 +187,10 @@ items:
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose or read</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: seriesTime
     fullName: outlook.Office.Recurrence.seriesTime
@@ -214,20 +211,19 @@ items:
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >
       <table><tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      --></td><td>ReadWriteItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      <tr><td>Applicable Outlook mode</td><td> Compose</td></tr></table>
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      Errors: InvalidEndTime - The appointment end time is before its start time.
+      <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before its start time.</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
 
 
-      `setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult) =&gt; void): void;`
+      `setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult) => void): void;`
 
 
       #### Examples

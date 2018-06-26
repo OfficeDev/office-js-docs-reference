@@ -5,7 +5,7 @@ items:
       An object which encapsulates the result of an asynchronous request, including status and error information if the
       request failed.
     remarks: >
-      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
 
 
       When the function you pass to the `callback` parameter of an "Async" method executes, it receives an AsyncResult
@@ -71,7 +71,7 @@ items:
       Object, Array, Null, or Undefined) passed to the optional `asyncContext` parameter of the invoked method. Returns
       Undefined, if you didn't pass anything to the asyncContext parameter.
     remarks: |
-      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
 
       #### Examples
 
@@ -104,7 +104,7 @@ items:
       Gets an [Office.Error](xref:office.Office.Error) object that provides a description of the error, if any error
       occurred.
     remarks: |
-      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
 
       #### Examples
 
@@ -137,7 +137,7 @@ items:
   - uid: office.Office.AsyncResult.status
     summary: 'Gets the [Office.AsyncResultStatus](xref:office.Office.AsyncResultStatus) of the asynchronous operation.'
     remarks: |
-      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
+      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
 
       #### Examples
 
@@ -170,6 +170,9 @@ items:
   - uid: office.Office.AsyncResult.value
     summary: 'Gets the payload or content of this asynchronous operation, if any.'
     remarks: >
+      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
+
+
       You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async"
       method, such as the `getSelectedDataAsync` and `setSelectedDataAsync` methods of the Document object.
 
@@ -178,9 +181,6 @@ items:
       of that method. To determine what is returned by the value property for an "Async" method, refer to the "Callback
       value" section of the method's topic. For a complete listing of the "Async" methods, see the Remarks section of
       the AsyncResult object topic.
-
-
-      Hosts: Access, Excel, Outlook, PowerPoint, Project, Word
 
 
       #### Examples

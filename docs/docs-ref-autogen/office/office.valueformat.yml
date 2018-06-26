@@ -5,12 +5,12 @@ items:
       Specifies whether values, such as numbers and dates, returned by the invoked method are returned with their
       formatting applied.
     remarks: >-
+      <table><tr><td>Hosts</td><td>Excel, Project, Word</td></tr></table>
+
+
       For example, if the valueFormat parameter is specified as "formatted", a number formatted as currency, or a date
       formatted as mm/dd/yy in the host application will have its formatting preserved. If the valueFormat parameter is
       specified as "unformatted", a date will be returned in its underlying sequential serial number form.
-
-
-      Hosts: Excel, Project, Word
     name: Office.ValueFormat
     fullName: office.Office.ValueFormat
     langs:

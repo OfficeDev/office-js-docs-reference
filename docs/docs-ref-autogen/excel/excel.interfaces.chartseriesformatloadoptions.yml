@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartSeriesFormatLoadOptions
+    summary: |-
+      Encapsulates the format properties for the chart series
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartSeriesFormatLoadOptions
+    fullName: excel.Excel.Interfaces.ChartSeriesFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartSeriesFormatLoadOptions.line
+  - uid: excel.Excel.Interfaces.ChartSeriesFormatLoadOptions.line
+    summary: |-
+      Represents line formatting.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: line
+    fullName: excel.Excel.Interfaces.ChartSeriesFormatLoadOptions.line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
+      return:
+        type:
+          - Excel.Interfaces.ChartLineFormatLoadOptions

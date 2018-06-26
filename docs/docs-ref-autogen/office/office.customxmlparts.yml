@@ -3,9 +3,9 @@ items:
   - uid: office.Office.CustomXmlParts
     summary: Represents a collection of CustomXmlPart objects.
     remarks: |-
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     name: Office.CustomXmlParts
     fullName: office.Office.CustomXmlParts
     langs:
@@ -19,9 +19,9 @@ items:
   - uid: office.Office.CustomXmlParts.addAsync
     summary: Asynchronously adds a new custom XML part to a file.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -73,9 +73,9 @@ items:
   - uid: office.Office.CustomXmlParts.getByIdAsync
     summary: Asynchronously gets the specified custom XML part by its id.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -120,9 +120,9 @@ items:
   - uid: office.Office.CustomXmlParts.getByNamespaceAsync
     summary: Asynchronously gets the specified custom XML part(s) by its namespace.
     remarks: |
-      Hosts: Word
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      Available in Requirement set: CustomXmlParts
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 

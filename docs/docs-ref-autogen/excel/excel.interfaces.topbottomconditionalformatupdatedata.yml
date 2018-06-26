@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData
+    summary: >-
+      An interface for updating data on the TopBottomConditionalFormat object, for use in
+      "topBottomConditionalFormat.set({ ... })".
+    name: Excel.Interfaces.TopBottomConditionalFormatUpdateData
+    fullName: excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData.format
+      - excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData.rule
+  - uid: excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData.format
+    summary: |-
+      Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;'
+      return:
+        type:
+          - Excel.Interfaces.ConditionalRangeFormatUpdateData
+  - uid: excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData.rule
+    summary: |-
+      The criteria of the Top/Bottom conditional format.
+
+      \[ [API set: ExcelApi 1.6](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: rule
+    fullName: excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData.rule
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rule?: Excel.ConditionalTopBottomRule;'
+      return:
+        type:
+          - Excel.ConditionalTopBottomRule

@@ -147,22 +147,17 @@ items:
       Gets the currently selected range from the workbook.
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
-    name: getSelectedRange(allowMultiAreas)
+    name: getSelectedRange()
     fullName: excel.Excel.Workbook.getSelectedRange
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getSelectedRange(allowMultiAreas?: boolean): Excel.Range;'
+      content: 'getSelectedRange(): Excel.Range;'
       return:
         type:
           - Excel.Range
         description: ''
-      parameters:
-        - id: allowMultiAreas
-          description: ''
-          type:
-            - boolean
     remarks: |
 
 

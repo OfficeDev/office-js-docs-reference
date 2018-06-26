@@ -1,0 +1,62 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions
+    summary: |-
+      Represents a collection of InkAnalysisLine objects.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions
+    fullName: onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.id
+      - onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.paragraph
+      - onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.words
+  - uid: onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.id
+    summary: |-
+      For EACH ITEM in the collection: Gets the ID of the InkAnalysisLine object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.paragraph
+    summary: |-
+      For EACH ITEM in the collection: Reference to the parent InkAnalysisParagraph.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: paragraph
+    fullName: onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.paragraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraph?: OneNote.Interfaces.InkAnalysisParagraphLoadOptions;'
+      return:
+        type:
+          - OneNote.Interfaces.InkAnalysisParagraphLoadOptions
+  - uid: onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.words
+    summary: |-
+      For EACH ITEM in the collection: Gets the ink analysis words in this ink analysis line.
+
+      \[ [API set: OneNoteApi 1.1](/javascript/office/requirement-sets/onenote-api-requirement-sets) \]
+    name: words
+    fullName: onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions.words
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'words?: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions;'
+      return:
+        type:
+          - OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions

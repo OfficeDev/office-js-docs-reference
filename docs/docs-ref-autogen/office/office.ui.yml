@@ -22,6 +22,10 @@ items:
   - uid: office.Office.UI.closeContainer
     summary: Closes the UI container where the JavaScript is executing.
     remarks: >-
+      <table><tr><td>Hosts</td><td>Excel, Word, PowerPoint, Outlook (Minimum requirement set: Mailbox
+      1.5)</td></tr></table>
+
+
       The behavior of this method is specified by the following:
 
 
@@ -33,9 +37,6 @@ items:
 
 
       - Called from a module extension: No effect.
-
-
-      Hosts: Excel, Word, PowerPoint, Outlook (Minimum requirement set: Mailbox 1.5)
     name: closeContainer()
     fullName: office.Office.UI.closeContainer
     langs:
@@ -50,10 +51,10 @@ items:
   - uid: office.Office.UI.displayDialogAsync
     summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     remarks: >-
-      Hosts: Word, Excel, Outlook, PowerPoint
+      <table><tr><td>Hosts</td><td>Word, Excel, Outlook, PowerPoint</td></tr>
 
 
-      Requirement sets: DialogAPI, Mailbox 1.4
+      <tr><td>Requirement sets</td><td>DialogAPI, Mailbox 1.4</td></tr></table>
 
 
       The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial
@@ -106,8 +107,8 @@ items:
 
       <table> <tr> <th>Code number</th> <th>Meaning</th> </tr> <tr> <td>12004</td> <td>The domain of the URL passed to
       displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol
-      and port number), or it must be registered in the &lt;AppDomains&gt; section of the add-in manifest.</td> </tr>
-      <tr> <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some
+      and port number), or it must be registered in the <AppDomains> section of the add-in manifest.</td> </tr> <tr>
+      <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some
       versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td> </tr> <tr>
       <td>12007</td> <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog
       box open at a time.</td> </tr> </table>

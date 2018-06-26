@@ -1,0 +1,187 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.WorkbookData
+    summary: An interface describing the data returned by calling "workbook.toJSON()".
+    name: Excel.Interfaces.WorkbookData
+    fullName: excel.Excel.Interfaces.WorkbookData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.WorkbookData.application
+      - excel.Excel.Interfaces.WorkbookData.bindings
+      - excel.Excel.Interfaces.WorkbookData.customXmlParts
+      - excel.Excel.Interfaces.WorkbookData.name
+      - excel.Excel.Interfaces.WorkbookData.names
+      - excel.Excel.Interfaces.WorkbookData.pivotTables
+      - excel.Excel.Interfaces.WorkbookData.properties
+      - excel.Excel.Interfaces.WorkbookData.settings
+      - excel.Excel.Interfaces.WorkbookData.styles
+      - excel.Excel.Interfaces.WorkbookData.tables
+      - excel.Excel.Interfaces.WorkbookData.worksheets
+  - uid: excel.Excel.Interfaces.WorkbookData.application
+    summary: |-
+      Represents the Excel application instance that contains this workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: application
+    fullName: excel.Excel.Interfaces.WorkbookData.application
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'application?: Excel.Interfaces.ApplicationData;'
+      return:
+        type:
+          - Excel.Interfaces.ApplicationData
+  - uid: excel.Excel.Interfaces.WorkbookData.bindings
+    summary: |-
+      Represents a collection of bindings that are part of the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: bindings
+    fullName: excel.Excel.Interfaces.WorkbookData.bindings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bindings?: Excel.Interfaces.BindingData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.BindingData[]'
+  - uid: excel.Excel.Interfaces.WorkbookData.customXmlParts
+    summary: |-
+      Represents the collection of custom XML parts contained by this workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.5](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: customXmlParts
+    fullName: excel.Excel.Interfaces.WorkbookData.customXmlParts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'customXmlParts?: Excel.Interfaces.CustomXmlPartData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.CustomXmlPartData[]'
+  - uid: excel.Excel.Interfaces.WorkbookData.name
+    summary: |-
+      Gets the workbook name. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: excel.Excel.Interfaces.WorkbookData.name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.WorkbookData.names
+    summary: |-
+      Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: names
+    fullName: excel.Excel.Interfaces.WorkbookData.names
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'names?: Excel.Interfaces.NamedItemData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.NamedItemData[]'
+  - uid: excel.Excel.Interfaces.WorkbookData.pivotTables
+    summary: |-
+      Represents a collection of PivotTables associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.3](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: pivotTables
+    fullName: excel.Excel.Interfaces.WorkbookData.pivotTables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pivotTables?: Excel.Interfaces.PivotTableData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.PivotTableData[]'
+  - uid: excel.Excel.Interfaces.WorkbookData.properties
+    summary: |-
+      Gets the workbook properties. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: properties
+    fullName: excel.Excel.Interfaces.WorkbookData.properties
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'properties?: Excel.Interfaces.DocumentPropertiesData;'
+      return:
+        type:
+          - Excel.Interfaces.DocumentPropertiesData
+  - uid: excel.Excel.Interfaces.WorkbookData.settings
+    summary: |-
+      Represents a collection of Settings associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.4](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: settings
+    fullName: excel.Excel.Interfaces.WorkbookData.settings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'settings?: Excel.Interfaces.SettingData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.SettingData[]'
+  - uid: excel.Excel.Interfaces.WorkbookData.styles
+    summary: |-
+      Represents a collection of styles associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: styles
+    fullName: excel.Excel.Interfaces.WorkbookData.styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'styles?: Excel.Interfaces.StyleData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.StyleData[]'
+  - uid: excel.Excel.Interfaces.WorkbookData.tables
+    summary: |-
+      Represents a collection of tables associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: tables
+    fullName: excel.Excel.Interfaces.WorkbookData.tables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tables?: Excel.Interfaces.TableData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.TableData[]'
+  - uid: excel.Excel.Interfaces.WorkbookData.worksheets
+    summary: |-
+      Represents a collection of worksheets associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheets
+    fullName: excel.Excel.Interfaces.WorkbookData.worksheets
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheets?: Excel.Interfaces.WorksheetData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.WorksheetData[]'

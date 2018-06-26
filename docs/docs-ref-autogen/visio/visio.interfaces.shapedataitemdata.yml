@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.ShapeDataItemData
+    summary: An interface describing the data returned by calling "shapeDataItem.toJSON()".
+    name: Visio.Interfaces.ShapeDataItemData
+    fullName: visio.Visio.Interfaces.ShapeDataItemData
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.ShapeDataItemData.format
+      - visio.Visio.Interfaces.ShapeDataItemData.formattedValue
+      - visio.Visio.Interfaces.ShapeDataItemData.label
+      - visio.Visio.Interfaces.ShapeDataItemData.value
+  - uid: visio.Visio.Interfaces.ShapeDataItemData.format
+    summary: |-
+      A string that specifies the format of the shape data item.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: format
+    fullName: visio.Visio.Interfaces.ShapeDataItemData.format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Interfaces.ShapeDataItemData.formattedValue
+    summary: |-
+      A string that specifies the formatted value of the shape data item.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: formattedValue
+    fullName: visio.Visio.Interfaces.ShapeDataItemData.formattedValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'formattedValue?: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Interfaces.ShapeDataItemData.label
+    summary: |-
+      A string that specifies the label of the shape data item.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: label
+    fullName: visio.Visio.Interfaces.ShapeDataItemData.label
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'label?: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Interfaces.ShapeDataItemData.value
+    summary: |-
+      A string that specifies the value of the shape data item.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: value
+    fullName: visio.Visio.Interfaces.ShapeDataItemData.value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: string;'
+      return:
+        type:
+          - string

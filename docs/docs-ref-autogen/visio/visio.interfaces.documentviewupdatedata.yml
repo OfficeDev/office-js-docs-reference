@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.DocumentViewUpdateData
+    summary: 'An interface for updating data on the DocumentView object, for use in "documentView.set({ ... })".'
+    name: Visio.Interfaces.DocumentViewUpdateData
+    fullName: visio.Visio.Interfaces.DocumentViewUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.DocumentViewUpdateData.disableHyperlinks
+      - visio.Visio.Interfaces.DocumentViewUpdateData.disablePan
+      - visio.Visio.Interfaces.DocumentViewUpdateData.disableZoom
+      - visio.Visio.Interfaces.DocumentViewUpdateData.hideDiagramBoundary
+  - uid: visio.Visio.Interfaces.DocumentViewUpdateData.disableHyperlinks
+    summary: |-
+      Disable Hyperlinks.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: disableHyperlinks
+    fullName: visio.Visio.Interfaces.DocumentViewUpdateData.disableHyperlinks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disableHyperlinks?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.DocumentViewUpdateData.disablePan
+    summary: |-
+      Disable Pan.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: disablePan
+    fullName: visio.Visio.Interfaces.DocumentViewUpdateData.disablePan
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disablePan?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.DocumentViewUpdateData.disableZoom
+    summary: |-
+      Disable Zoom.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: disableZoom
+    fullName: visio.Visio.Interfaces.DocumentViewUpdateData.disableZoom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disableZoom?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.DocumentViewUpdateData.hideDiagramBoundary
+    summary: |-
+      Disable Hyperlinks.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: hideDiagramBoundary
+    fullName: visio.Visio.Interfaces.DocumentViewUpdateData.hideDiagramBoundary
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hideDiagramBoundary?: boolean;'
+      return:
+        type:
+          - boolean

@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.NodeReplacedEventArgs
-    summary: Provides information about the replaced node that raised the dataNodeReplaced event.
+    summary: Provides information about the replaced node that raised the nodeReplaced event.
     name: Office.NodeReplacedEventArgs
     fullName: office.Office.NodeReplacedEventArgs
     langs:

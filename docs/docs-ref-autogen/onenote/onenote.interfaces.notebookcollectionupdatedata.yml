@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.NotebookCollectionUpdateData
+    summary: 'An interface for updating data on the NotebookCollection object, for use in "notebookCollection.set({ ... })".'
+    name: OneNote.Interfaces.NotebookCollectionUpdateData
+    fullName: onenote.OneNote.Interfaces.NotebookCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.NotebookCollectionUpdateData.items
+  - uid: onenote.OneNote.Interfaces.NotebookCollectionUpdateData.items
+    name: items
+    fullName: onenote.OneNote.Interfaces.NotebookCollectionUpdateData.items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: OneNote.Interfaces.NotebookData[];'
+      return:
+        type:
+          - 'OneNote.Interfaces.NotebookData[]'

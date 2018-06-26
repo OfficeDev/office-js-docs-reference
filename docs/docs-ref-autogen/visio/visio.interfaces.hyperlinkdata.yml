@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.HyperlinkData
+    summary: An interface describing the data returned by calling "hyperlink.toJSON()".
+    name: Visio.Interfaces.HyperlinkData
+    fullName: visio.Visio.Interfaces.HyperlinkData
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.HyperlinkData.address
+      - visio.Visio.Interfaces.HyperlinkData.description
+      - visio.Visio.Interfaces.HyperlinkData.extraInfo
+      - visio.Visio.Interfaces.HyperlinkData.subAddress
+  - uid: visio.Visio.Interfaces.HyperlinkData.address
+    summary: |-
+      Gets the address of the Hyperlink object.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: address
+    fullName: visio.Visio.Interfaces.HyperlinkData.address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Interfaces.HyperlinkData.description
+    summary: |-
+      Gets the description of a hyperlink.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: description
+    fullName: visio.Visio.Interfaces.HyperlinkData.description
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'description?: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Interfaces.HyperlinkData.extraInfo
+    summary: |-
+      Gets the extra info of a hyperlink.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: extraInfo
+    fullName: visio.Visio.Interfaces.HyperlinkData.extraInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'extraInfo?: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Interfaces.HyperlinkData.subAddress
+    summary: |-
+      Gets the sub-address of the Hyperlink object.
+
+      \[ [API set: 1.1](/javascript/office/overview/visio-javascript-reference-overview) \]
+    name: subAddress
+    fullName: visio.Visio.Interfaces.HyperlinkData.subAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subAddress?: string;'
+      return:
+        type:
+          - string
