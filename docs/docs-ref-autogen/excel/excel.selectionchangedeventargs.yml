@@ -27,4 +27,4 @@ items:
       content: 'workbook: Excel.Workbook;'
       return:
         type:
-          - Excel.Workbook
+          - excel.Excel.Workbook

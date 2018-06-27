@@ -75,7 +75,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -188,13 +188,13 @@ items:
       content: 'load(option?: Excel.Interfaces.TableRowLoadOptions): Excel.TableRow;'
       return:
         type:
-          - Excel.TableRow
+          - excel.Excel.TableRow
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.TableRowLoadOptions
+            - excel.Excel.Interfaces.TableRowLoadOptions
   - uid: excel.Excel.TableRow.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -224,7 +224,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.TableRow.toJSON
     name: toJSON()
     fullName: excel.Excel.TableRow.toJSON
@@ -235,7 +235,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableRowData;'
       return:
         type:
-          - Excel.Interfaces.TableRowData
+          - excel.Excel.Interfaces.TableRowData
         description: ''
   - uid: excel.Excel.TableRow.values
     summary: >-

@@ -49,7 +49,7 @@ items:
       content: 'getItemAt(index: number): Excel.ChartLegendEntry;'
       return:
         type:
-          - Excel.ChartLegendEntry
+          - excel.Excel.ChartLegendEntry
         description: ''
       parameters:
         - id: index
@@ -101,7 +101,7 @@ items:
         Excel.ChartLegendEntryCollection;
       return:
         type:
-          - Excel.ChartLegendEntryCollection
+          - excel.Excel.ChartLegendEntryCollection
         description: ''
       parameters:
         - id: option
@@ -118,5 +118,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartLegendEntryCollectionData;'
       return:
         type:
-          - Excel.Interfaces.ChartLegendEntryCollectionData
+          - excel.Excel.Interfaces.ChartLegendEntryCollectionData
         description: ''

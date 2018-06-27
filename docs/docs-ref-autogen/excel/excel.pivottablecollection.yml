@@ -51,7 +51,7 @@ items:
       content: 'getItem(name: string): Excel.PivotTable;'
       return:
         type:
-          - Excel.PivotTable
+          - excel.Excel.PivotTable
         description: ''
       parameters:
         - id: name
@@ -72,7 +72,7 @@ items:
       content: 'getItemOrNullObject(name: string): Excel.PivotTable;'
       return:
         type:
-          - Excel.PivotTable
+          - excel.Excel.PivotTable
         description: ''
       parameters:
         - id: name
@@ -124,7 +124,7 @@ items:
         Excel.PivotTableCollection;
       return:
         type:
-          - Excel.PivotTableCollection
+          - excel.Excel.PivotTableCollection
         description: ''
       parameters:
         - id: option
@@ -157,5 +157,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.PivotTableCollectionData;'
       return:
         type:
-          - Excel.Interfaces.PivotTableCollectionData
+          - excel.Excel.Interfaces.PivotTableCollectionData
         description: ''

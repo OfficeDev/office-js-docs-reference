@@ -79,7 +79,7 @@ items:
       content: 'notebook?: OneNote.Interfaces.NotebookLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.NotebookLoadOptions
+          - onenote.OneNote.Interfaces.NotebookLoadOptions
   - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.pages
     summary: |-
       For EACH ITEM in the collection: The collection of pages in the section. Read only
@@ -94,7 +94,7 @@ items:
       content: 'pages?: OneNote.Interfaces.PageCollectionLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.PageCollectionLoadOptions
+          - onenote.OneNote.Interfaces.PageCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.parentSectionGroup
     summary: >-
       For EACH ITEM in the collection: Gets the section group that contains the section. Throws ItemNotFound if the
@@ -111,7 +111,7 @@ items:
       content: 'parentSectionGroup?: OneNote.Interfaces.SectionGroupLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.SectionGroupLoadOptions
+          - onenote.OneNote.Interfaces.SectionGroupLoadOptions
   - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.parentSectionGroupOrNull
     summary: >-
       For EACH ITEM in the collection: Gets the section group that contains the section. Returns null if the section is
@@ -128,7 +128,7 @@ items:
       content: 'parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.SectionGroupLoadOptions
+          - onenote.OneNote.Interfaces.SectionGroupLoadOptions
   - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions.webUrl
     summary: |-
       For EACH ITEM in the collection: The web url of the page. Read only

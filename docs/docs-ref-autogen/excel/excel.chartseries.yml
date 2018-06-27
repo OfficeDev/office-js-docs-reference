@@ -159,7 +159,7 @@ items:
       content: 'readonly format: Excel.ChartSeriesFormat;'
       return:
         type:
-          - Excel.ChartSeriesFormat
+          - excel.Excel.ChartSeriesFormat
   - uid: excel.Excel.ChartSeries.gapWidth
     summary: >-
       Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of
@@ -246,13 +246,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;'
       return:
         type:
-          - Excel.ChartSeries
+          - excel.Excel.ChartSeries
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartSeriesLoadOptions
+            - excel.Excel.Interfaces.ChartSeriesLoadOptions
   - uid: excel.Excel.ChartSeries.markerBackgroundColor
     summary: |-
       Represents markers background color of a chart series.
@@ -497,7 +497,7 @@ items:
       content: 'readonly points: Excel.ChartPointsCollection;'
       return:
         type:
-          - Excel.ChartPointsCollection
+          - excel.Excel.ChartPointsCollection
   - uid: excel.Excel.ChartSeries.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -527,7 +527,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartSeries.setBubbleSizes
     summary: |-
       Set bubble sizes for a chart series. Only works for bubble charts.
@@ -655,7 +655,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartSeriesData;'
       return:
         type:
-          - Excel.Interfaces.ChartSeriesData
+          - excel.Excel.Interfaces.ChartSeriesData
         description: ''
   - uid: excel.Excel.ChartSeries.trendlines
     summary: |-
@@ -671,4 +671,4 @@ items:
       content: 'readonly trendlines: Excel.ChartTrendlineCollection;'
       return:
         type:
-          - Excel.ChartTrendlineCollection
+          - excel.Excel.ChartTrendlineCollection

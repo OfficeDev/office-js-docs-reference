@@ -25,7 +25,7 @@ items:
       content: 'context: ClientRequestContext;'
       return:
         type:
-          - ClientRequestContext
+          - office.OfficeExtension.ClientRequestContext
   - uid: office.OfficeExtension.ClientObject.isNullObject
     summary: >-
       Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()`

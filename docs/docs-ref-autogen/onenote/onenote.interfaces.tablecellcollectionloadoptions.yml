@@ -62,7 +62,7 @@ items:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.ParagraphCollectionLoadOptions
+          - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.parentRow
     summary: |-
       For EACH ITEM in the collection: Gets the parent row of the cell.

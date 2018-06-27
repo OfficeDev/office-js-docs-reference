@@ -79,7 +79,7 @@ items:
         - id: restVersion
           description: A value indicating the version of the Outlook REST API used to retrieve the item ID.
           type:
-            - Office.MailboxEnums.RestVersion
+            - outlook.Office.MailboxEnums.RestVersion
   - uid: Outlook_1_4.Office.Mailbox.convertToLocalClientTime
     summary: >-
       Gets a dictionary containing time information in local client time.
@@ -158,7 +158,7 @@ items:
         - id: restVersion
           description: A value indicating the version of the Outlook REST API that the converted ID will be used with.
           type:
-            - Office.MailboxEnums.RestVersion
+            - outlook.Office.MailboxEnums.RestVersion
   - uid: Outlook_1_4.Office.Mailbox.convertToUtcClientTime
     summary: >-
       Gets a Date object from a dictionary containing time information.

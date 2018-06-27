@@ -67,7 +67,7 @@ items:
       content: 'load(option?: string | string[] | OfficeExtension.LoadOption): Excel.ChartFill;'
       return:
         type:
-          - Excel.ChartFill
+          - excel.Excel.ChartFill
         description: ''
       parameters:
         - id: option

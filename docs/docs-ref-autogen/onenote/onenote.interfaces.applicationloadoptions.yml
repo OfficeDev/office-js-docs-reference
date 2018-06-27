@@ -31,4 +31,4 @@ items:
       content: 'notebooks?: OneNote.Interfaces.NotebookCollectionLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.NotebookCollectionLoadOptions
+          - onenote.OneNote.Interfaces.NotebookCollectionLoadOptions

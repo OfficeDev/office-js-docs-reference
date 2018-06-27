@@ -38,7 +38,7 @@ items:
       content: 'getById(id: number): Word.List;'
       return:
         type:
-          - Word.List
+          - word.Word.List
         description: ''
       parameters:
         - id: id
@@ -59,7 +59,7 @@ items:
       content: 'getByIdOrNullObject(id: number): Word.List;'
       return:
         type:
-          - Word.List
+          - word.Word.List
         description: ''
       parameters:
         - id: id
@@ -80,7 +80,7 @@ items:
       content: 'getFirst(): Word.List;'
       return:
         type:
-          - Word.List
+          - word.Word.List
         description: ''
   - uid: word.Word.ListCollection.getFirstOrNullObject
     summary: |-
@@ -96,7 +96,7 @@ items:
       content: 'getFirstOrNullObject(): Word.List;'
       return:
         type:
-          - Word.List
+          - word.Word.List
         description: ''
   - uid: word.Word.ListCollection.getItem
     summary: |-
@@ -112,7 +112,7 @@ items:
       content: 'getItem(index: number): Word.List;'
       return:
         type:
-          - Word.List
+          - word.Word.List
         description: ''
       parameters:
         - id: index
@@ -146,7 +146,7 @@ items:
         Word.ListCollection;
       return:
         type:
-          - Word.ListCollection
+          - word.Word.ListCollection
         description: ''
       parameters:
         - id: option
@@ -163,7 +163,7 @@ items:
       content: 'toJSON(): Word.Interfaces.ListCollectionData;'
       return:
         type:
-          - Word.Interfaces.ListCollectionData
+          - word.Word.Interfaces.ListCollectionData
         description: ''
   - uid: word.Word.ListCollection.track
     summary: >-
@@ -181,7 +181,7 @@ items:
       content: 'track(): Word.ListCollection;'
       return:
         type:
-          - Word.ListCollection
+          - word.Word.ListCollection
         description: ''
   - uid: word.Word.ListCollection.untrack
     summary: >-
@@ -198,5 +198,5 @@ items:
       content: 'untrack(): Word.ListCollection;'
       return:
         type:
-          - Word.ListCollection
+          - word.Word.ListCollection
         description: ''

@@ -40,7 +40,7 @@ items:
         - id: calculationType
           description: Specifies the calculation type to use. See Excel.CalculationType for details.
           type:
-            - Excel.CalculationType
+            - excel.Excel.CalculationType
     remarks: |
 
 
@@ -127,13 +127,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ApplicationLoadOptions): Excel.Application;'
       return:
         type:
-          - Excel.Application
+          - excel.Excel.Application
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ApplicationLoadOptions
+            - excel.Excel.Interfaces.ApplicationLoadOptions
   - uid: excel.Excel.Application.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -163,7 +163,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Application.suspendApiCalculationUntilNextSync
     summary: >-
       Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to
@@ -192,5 +192,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ApplicationData;'
       return:
         type:
-          - Excel.Interfaces.ApplicationData
+          - excel.Excel.Interfaces.ApplicationData
         description: ''

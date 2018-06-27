@@ -44,7 +44,7 @@ items:
       content: 'readonly debugInfo: RequestContextDebugInfo;'
       return:
         type:
-          - RequestContextDebugInfo
+          - office.OfficeExtension.RequestContextDebugInfo
   - uid: office.OfficeExtension.ClientRequestContext.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -64,7 +64,7 @@ items:
         - id: object
           description: The object whose properties are loaded.
           type:
-            - ClientObject
+            - office.OfficeExtension.ClientObject
         - id: option
           description: >-
             A comma-delimited string, or array of strings, that specifies the properties/relationships to load, or
@@ -93,7 +93,7 @@ items:
         - id: object
           description: The object to be loaded.
           type:
-            - ClientObject
+            - office.OfficeExtension.ClientObject
         - id: options
           description: >-
             The key-value pairing of load options for the types, such as `{ "Workbook": "worksheets,tables",
@@ -169,4 +169,4 @@ items:
       content: 'trackedObjects: TrackedObjects;'
       return:
         type:
-          - TrackedObjects
+          - office.OfficeExtension.TrackedObjects

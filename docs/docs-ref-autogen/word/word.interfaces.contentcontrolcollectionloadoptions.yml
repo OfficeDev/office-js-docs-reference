@@ -122,7 +122,7 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - Word.Interfaces.FontLoadOptions
+          - word.Word.Interfaces.FontLoadOptions
   - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.id
     summary: |-
       For EACH ITEM in the collection: Gets an integer that represents the content control identifier. Read-only.
@@ -152,7 +152,7 @@ items:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - Word.Interfaces.BodyLoadOptions
+          - word.Word.Interfaces.BodyLoadOptions
   - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControl
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the content control. Throws if there isn't
@@ -169,7 +169,7 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - Word.Interfaces.ContentControlLoadOptions
+          - word.Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControlOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the content control. Returns a null object
@@ -186,7 +186,7 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - Word.Interfaces.ContentControlLoadOptions
+          - word.Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentTable
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the content control. Throws if it is not contained

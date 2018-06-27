@@ -36,7 +36,7 @@ items:
       content: 'add(key: string, value: any): Excel.CustomProperty;'
       return:
         type:
-          - Excel.CustomProperty
+          - excel.Excel.CustomProperty
         description: ''
       parameters:
         - id: key
@@ -93,7 +93,7 @@ items:
       content: 'getItem(key: string): Excel.CustomProperty;'
       return:
         type:
-          - Excel.CustomProperty
+          - excel.Excel.CustomProperty
         description: ''
       parameters:
         - id: key
@@ -116,7 +116,7 @@ items:
       content: 'getItemOrNullObject(key: string): Excel.CustomProperty;'
       return:
         type:
-          - Excel.CustomProperty
+          - excel.Excel.CustomProperty
         description: ''
       parameters:
         - id: key
@@ -168,7 +168,7 @@ items:
         Excel.CustomPropertyCollection;
       return:
         type:
-          - Excel.CustomPropertyCollection
+          - excel.Excel.CustomPropertyCollection
         description: ''
       parameters:
         - id: option
@@ -185,5 +185,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.CustomPropertyCollectionData;'
       return:
         type:
-          - Excel.Interfaces.CustomPropertyCollectionData
+          - excel.Excel.Interfaces.CustomPropertyCollectionData
         description: ''

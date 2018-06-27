@@ -33,7 +33,7 @@ items:
       content: 'readonly fill: Excel.ChartFill;'
       return:
         type:
-          - Excel.ChartFill
+          - excel.Excel.ChartFill
   - uid: excel.Excel.ChartDataLabelFormat.font
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
@@ -48,7 +48,7 @@ items:
       content: 'readonly font: Excel.ChartFont;'
       return:
         type:
-          - Excel.ChartFont
+          - excel.Excel.ChartFont
   - uid: excel.Excel.ChartDataLabelFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -80,13 +80,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartDataLabelFormatLoadOptions): Excel.ChartDataLabelFormat;'
       return:
         type:
-          - Excel.ChartDataLabelFormat
+          - excel.Excel.ChartDataLabelFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartDataLabelFormatLoadOptions
+            - excel.Excel.Interfaces.ChartDataLabelFormatLoadOptions
   - uid: excel.Excel.ChartDataLabelFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -116,7 +116,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartDataLabelFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartDataLabelFormat.toJSON
@@ -127,5 +127,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartDataLabelFormatData;'
       return:
         type:
-          - Excel.Interfaces.ChartDataLabelFormatData
+          - excel.Excel.Interfaces.ChartDataLabelFormatData
         description: ''

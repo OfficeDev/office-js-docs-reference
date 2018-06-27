@@ -38,7 +38,7 @@ items:
       content: 'add(name: string, reference: Range | string, comment?: string): Excel.NamedItem;'
       return:
         type:
-          - Excel.NamedItem
+          - excel.Excel.NamedItem
         description: ''
       parameters:
         - id: name
@@ -128,7 +128,7 @@ items:
       content: 'addFormulaLocal(name: string, formula: string, comment?: string): Excel.NamedItem;'
       return:
         type:
-          - Excel.NamedItem
+          - excel.Excel.NamedItem
         description: ''
       parameters:
         - id: name
@@ -173,7 +173,7 @@ items:
       content: 'getItem(name: string): Excel.NamedItem;'
       return:
         type:
-          - Excel.NamedItem
+          - excel.Excel.NamedItem
         description: ''
       parameters:
         - id: name
@@ -214,7 +214,7 @@ items:
       content: 'getItemOrNullObject(name: string): Excel.NamedItem;'
       return:
         type:
-          - Excel.NamedItem
+          - excel.Excel.NamedItem
         description: ''
       parameters:
         - id: name
@@ -291,7 +291,7 @@ items:
         Excel.NamedItemCollection;
       return:
         type:
-          - Excel.NamedItemCollection
+          - excel.Excel.NamedItemCollection
         description: ''
       parameters:
         - id: option
@@ -308,5 +308,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.NamedItemCollectionData;'
       return:
         type:
-          - Excel.Interfaces.NamedItemCollectionData
+          - excel.Excel.Interfaces.NamedItemCollectionData
         description: ''

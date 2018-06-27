@@ -89,7 +89,7 @@ items:
       content: 'getItem(id: string): Excel.CustomXmlPart;'
       return:
         type:
-          - Excel.CustomXmlPart
+          - excel.Excel.CustomXmlPart
         description: ''
       parameters:
         - id: id
@@ -112,7 +112,7 @@ items:
       content: 'getItemOrNullObject(id: string): Excel.CustomXmlPart;'
       return:
         type:
-          - Excel.CustomXmlPart
+          - excel.Excel.CustomXmlPart
         description: ''
       parameters:
         - id: id
@@ -166,7 +166,7 @@ items:
       content: 'getOnlyItem(): Excel.CustomXmlPart;'
       return:
         type:
-          - Excel.CustomXmlPart
+          - excel.Excel.CustomXmlPart
         description: ''
     remarks: |
 
@@ -217,7 +217,7 @@ items:
       content: 'getOnlyItemOrNullObject(): Excel.CustomXmlPart;'
       return:
         type:
-          - Excel.CustomXmlPart
+          - excel.Excel.CustomXmlPart
         description: ''
   - uid: excel.Excel.CustomXmlPartScopedCollection.items
     summary: Gets the loaded child items in this collection.
@@ -264,7 +264,7 @@ items:
         Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartScopedCollection;
       return:
         type:
-          - Excel.CustomXmlPartScopedCollection
+          - excel.Excel.CustomXmlPartScopedCollection
         description: ''
       parameters:
         - id: option
@@ -281,5 +281,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.CustomXmlPartScopedCollectionData;'
       return:
         type:
-          - Excel.Interfaces.CustomXmlPartScopedCollectionData
+          - excel.Excel.Interfaces.CustomXmlPartScopedCollectionData
         description: ''

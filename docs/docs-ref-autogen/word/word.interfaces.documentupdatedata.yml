@@ -45,7 +45,7 @@ items:
       content: 'body?: Word.Interfaces.BodyUpdateData;'
       return:
         type:
-          - Word.Interfaces.BodyUpdateData
+          - word.Word.Interfaces.BodyUpdateData
   - uid: word.Word.Interfaces.DocumentUpdateData.properties
     summary: |-
       Gets the properties of the document.

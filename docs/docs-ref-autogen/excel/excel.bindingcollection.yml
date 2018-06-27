@@ -39,7 +39,7 @@ items:
       content: 'add(range: Range | string, bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
-          - Excel.Binding
+          - excel.Excel.Binding
         description: ''
       parameters:
         - id: range
@@ -51,7 +51,7 @@ items:
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
-            - Excel.BindingType
+            - excel.Excel.BindingType
         - id: id
           description: Name of binding.
           type:
@@ -72,7 +72,7 @@ items:
       content: 'addFromNamedItem(name: string, bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
-          - Excel.Binding
+          - excel.Excel.Binding
         description: ''
       parameters:
         - id: name
@@ -82,7 +82,7 @@ items:
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
-            - Excel.BindingType
+            - excel.Excel.BindingType
         - id: id
           description: Name of binding.
           type:
@@ -103,13 +103,13 @@ items:
       content: 'addFromSelection(bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
-          - Excel.Binding
+          - excel.Excel.Binding
         description: ''
       parameters:
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
-            - Excel.BindingType
+            - excel.Excel.BindingType
         - id: id
           description: Name of binding.
           type:
@@ -159,7 +159,7 @@ items:
       content: 'getItem(id: string): Excel.Binding;'
       return:
         type:
-          - Excel.Binding
+          - excel.Excel.Binding
         description: ''
       parameters:
         - id: id
@@ -253,7 +253,7 @@ items:
       content: 'getItemAt(index: number): Excel.Binding;'
       return:
         type:
-          - Excel.Binding
+          - excel.Excel.Binding
         description: ''
       parameters:
         - id: index
@@ -294,7 +294,7 @@ items:
       content: 'getItemOrNullObject(id: string): Excel.Binding;'
       return:
         type:
-          - Excel.Binding
+          - excel.Excel.Binding
         description: ''
       parameters:
         - id: id
@@ -390,7 +390,7 @@ items:
         Excel.BindingCollection;
       return:
         type:
-          - Excel.BindingCollection
+          - excel.Excel.BindingCollection
         description: ''
       parameters:
         - id: option
@@ -407,5 +407,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.BindingCollectionData;'
       return:
         type:
-          - Excel.Interfaces.BindingCollectionData
+          - excel.Excel.Interfaces.BindingCollectionData
         description: ''

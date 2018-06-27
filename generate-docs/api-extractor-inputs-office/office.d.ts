@@ -673,7 +673,7 @@ export declare namespace Office {
         *
         * @param startAddress - Accepts the initial HTTPS URL that opens in the dialog.
         * @param options - Optional. Accepts an {@link Office.DialogOptions} object to define dialog display.
-        * @param callback - Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the AsyncResult.value is a DialogHandler object.
+        * @param callback - Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object.
         */
         displayDialogAsync(startAddress: string, options?: DialogOptions, callback?: (result: AsyncResult) => void): void;
         /**
@@ -1120,6 +1120,10 @@ export declare namespace Office {
          * - DialogEventReceived. Triggered when the dialog box has been closed or otherwise unloaded.
          */
         addEventHandler(eventType: Office.EventType, handler: Function): void;
+        /**
+         * FOR INTERNAL USE ONLY. DO NOT CALL IN YOUR CODE.
+         */
+        sendMessage(name: string): void;
     }
 }
 

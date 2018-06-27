@@ -34,7 +34,7 @@ items:
       content: 'readonly border: Excel.ChartBorder;'
       return:
         type:
-          - Excel.ChartBorder
+          - excel.Excel.ChartBorder
   - uid: excel.Excel.ChartAreaFormat.fill
     summary: |-
       Represents the fill format of an object, which includes background formatting information. Read-only.
@@ -49,7 +49,7 @@ items:
       content: 'readonly fill: Excel.ChartFill;'
       return:
         type:
-          - Excel.ChartFill
+          - excel.Excel.ChartFill
   - uid: excel.Excel.ChartAreaFormat.font
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
@@ -64,7 +64,7 @@ items:
       content: 'readonly font: Excel.ChartFont;'
       return:
         type:
-          - Excel.ChartFont
+          - excel.Excel.ChartFont
   - uid: excel.Excel.ChartAreaFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -96,13 +96,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartAreaFormatLoadOptions): Excel.ChartAreaFormat;'
       return:
         type:
-          - Excel.ChartAreaFormat
+          - excel.Excel.ChartAreaFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartAreaFormatLoadOptions
+            - excel.Excel.Interfaces.ChartAreaFormatLoadOptions
   - uid: excel.Excel.ChartAreaFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -132,7 +132,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartAreaFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartAreaFormat.toJSON
@@ -143,5 +143,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartAreaFormatData;'
       return:
         type:
-          - Excel.Interfaces.ChartAreaFormatData
+          - excel.Excel.Interfaces.ChartAreaFormatData
         description: ''

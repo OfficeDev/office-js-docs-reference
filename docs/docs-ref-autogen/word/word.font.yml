@@ -129,13 +129,13 @@ items:
       content: 'load(option?: Word.Interfaces.FontLoadOptions): Word.Font;'
       return:
         type:
-          - Word.Font
+          - word.Word.Font
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.FontLoadOptions
+            - word.Word.Interfaces.FontLoadOptions
     remarks: |
 
 
@@ -351,7 +351,7 @@ items:
         - id: options
           description: ''
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Font.size
     summary: |-
       Gets or sets a value that represents the font size in points.
@@ -428,7 +428,7 @@ items:
       content: 'toJSON(): Word.Interfaces.FontData;'
       return:
         type:
-          - Word.Interfaces.FontData
+          - word.Word.Interfaces.FontData
         description: ''
   - uid: word.Word.Font.track
     summary: >-
@@ -446,7 +446,7 @@ items:
       content: 'track(): Word.Font;'
       return:
         type:
-          - Word.Font
+          - word.Word.Font
         description: ''
   - uid: word.Word.Font.underline
     summary: |-
@@ -485,5 +485,5 @@ items:
       content: 'untrack(): Word.Font;'
       return:
         type:
-          - Word.Font
+          - word.Word.Font
         description: ''

@@ -123,13 +123,13 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;'
       return:
         type:
-          - Excel.RangeBorder
+          - excel.Excel.RangeBorder
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.RangeBorderLoadOptions
+            - excel.Excel.Interfaces.RangeBorderLoadOptions
   - uid: excel.Excel.RangeBorder.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -159,7 +159,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.RangeBorder.sideIndex
     summary: |-
       Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
@@ -210,7 +210,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeBorderData;'
       return:
         type:
-          - Excel.Interfaces.RangeBorderData
+          - excel.Excel.Interfaces.RangeBorderData
         description: ''
   - uid: excel.Excel.RangeBorder.weight
     summary: |-

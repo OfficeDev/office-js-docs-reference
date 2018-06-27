@@ -23,7 +23,7 @@ items:
       content: 'host: Office.HostType;'
       return:
         type:
-          - Office.HostType
+          - office.Office.HostType
   - uid: office.Office.ContextInformation.platform
     summary: Gets the platform on which the add-in is running.
     name: platform
@@ -35,7 +35,7 @@ items:
       content: 'platform: Office.PlatformType;'
       return:
         type:
-          - Office.PlatformType
+          - office.Office.PlatformType
   - uid: office.Office.ContextInformation.version
     summary: Gets the version of Office on which the add-in is running.
     name: version

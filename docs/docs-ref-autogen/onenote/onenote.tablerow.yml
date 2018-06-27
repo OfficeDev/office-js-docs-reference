@@ -55,7 +55,7 @@ items:
       content: 'readonly cells: OneNote.TableCellCollection;'
       return:
         type:
-          - OneNote.TableCellCollection
+          - onenote.OneNote.TableCellCollection
   - uid: onenote.OneNote.TableRow.clear
     summary: |-
       Clears the contents of the row.

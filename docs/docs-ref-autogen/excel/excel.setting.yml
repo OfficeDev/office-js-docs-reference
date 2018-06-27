@@ -109,13 +109,13 @@ items:
       content: 'load(option?: Excel.Interfaces.SettingLoadOptions): Excel.Setting;'
       return:
         type:
-          - Excel.Setting
+          - excel.Excel.Setting
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.SettingLoadOptions
+            - excel.Excel.Interfaces.SettingLoadOptions
   - uid: excel.Excel.Setting.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -145,7 +145,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Setting.toJSON
     name: toJSON()
     fullName: excel.Excel.Setting.toJSON
@@ -156,7 +156,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.SettingData;'
       return:
         type:
-          - Excel.Interfaces.SettingData
+          - excel.Excel.Interfaces.SettingData
         description: ''
   - uid: excel.Excel.Setting.value
     summary: |-

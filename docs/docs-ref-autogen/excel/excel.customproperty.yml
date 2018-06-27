@@ -83,13 +83,13 @@ items:
       content: 'load(option?: Excel.Interfaces.CustomPropertyLoadOptions): Excel.CustomProperty;'
       return:
         type:
-          - Excel.CustomProperty
+          - excel.Excel.CustomProperty
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.CustomPropertyLoadOptions
+            - excel.Excel.Interfaces.CustomPropertyLoadOptions
   - uid: excel.Excel.CustomProperty.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -119,7 +119,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.CustomProperty.toJSON
     name: toJSON()
     fullName: excel.Excel.CustomProperty.toJSON
@@ -130,7 +130,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.CustomPropertyData;'
       return:
         type:
-          - Excel.Interfaces.CustomPropertyData
+          - excel.Excel.Interfaces.CustomPropertyData
         description: ''
   - uid: excel.Excel.CustomProperty.type
     summary: |-

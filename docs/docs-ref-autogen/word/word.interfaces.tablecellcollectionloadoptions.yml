@@ -37,7 +37,7 @@ items:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - Word.Interfaces.BodyLoadOptions
+          - word.Word.Interfaces.BodyLoadOptions
   - uid: word.Word.Interfaces.TableCellCollectionLoadOptions.cellIndex
     summary: |-
       For EACH ITEM in the collection: Gets the index of the cell in its row. Read-only.

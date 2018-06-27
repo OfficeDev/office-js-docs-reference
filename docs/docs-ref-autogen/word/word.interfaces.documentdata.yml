@@ -48,7 +48,7 @@ items:
       content: 'body?: Word.Interfaces.BodyData;'
       return:
         type:
-          - Word.Interfaces.BodyData
+          - word.Word.Interfaces.BodyData
   - uid: word.Word.Interfaces.DocumentData.contentControls
     summary: >-
       Gets the collection of content control objects in the document. This includes content controls in the body of the

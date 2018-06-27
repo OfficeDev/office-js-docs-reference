@@ -186,13 +186,13 @@ items:
       content: 'load(option?: Excel.Interfaces.CustomXmlPartLoadOptions): Excel.CustomXmlPart;'
       return:
         type:
-          - Excel.CustomXmlPart
+          - excel.Excel.CustomXmlPart
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.CustomXmlPartLoadOptions
+            - excel.Excel.Interfaces.CustomXmlPartLoadOptions
   - uid: excel.Excel.CustomXmlPart.namespaceUri
     summary: |-
       The custom XML part's namespace URI. Read-only.
@@ -266,5 +266,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.CustomXmlPartData;'
       return:
         type:
-          - Excel.Interfaces.CustomXmlPartData
+          - excel.Excel.Interfaces.CustomXmlPartData
         description: ''

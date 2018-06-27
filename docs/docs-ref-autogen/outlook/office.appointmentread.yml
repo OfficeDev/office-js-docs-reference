@@ -393,7 +393,7 @@ items:
         - id: entityType
           description: One of the EntityType enumeration values.
           type:
-            - Office.MailboxEnums.EntityType
+            - outlook.Office.MailboxEnums.EntityType
   - uid: outlook.Office.AppointmentRead.getFilteredEntitiesByName
     summary: >-
       Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
@@ -475,7 +475,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -733,7 +733,7 @@ items:
       content: 'itemType: Office.MailboxEnums.ItemType;'
       return:
         type:
-          - Office.MailboxEnums.ItemType
+          - outlook.Office.MailboxEnums.ItemType
   - uid: outlook.Office.AppointmentRead.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
@@ -934,7 +934,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - Recurrence
+          - outlook.Office.Recurrence
   - uid: outlook.Office.AppointmentRead.removeHandlerAsync
     summary: >-
       Removes an event handler for a supported event.

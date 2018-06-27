@@ -35,7 +35,7 @@ items:
       content: 'readonly border: Excel.ChartBorder;'
       return:
         type:
-          - Excel.ChartBorder
+          - excel.Excel.ChartBorder
   - uid: excel.Excel.ChartPointFormat.fill
     summary: |-
       Represents the fill format of a chart, which includes background formating information. Read-only.
@@ -50,7 +50,7 @@ items:
       content: 'readonly fill: Excel.ChartFill;'
       return:
         type:
-          - Excel.ChartFill
+          - excel.Excel.ChartFill
   - uid: excel.Excel.ChartPointFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -82,13 +82,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartPointFormatLoadOptions): Excel.ChartPointFormat;'
       return:
         type:
-          - Excel.ChartPointFormat
+          - excel.Excel.ChartPointFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartPointFormatLoadOptions
+            - excel.Excel.Interfaces.ChartPointFormatLoadOptions
   - uid: excel.Excel.ChartPointFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -118,7 +118,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartPointFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartPointFormat.toJSON
@@ -129,5 +129,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartPointFormatData;'
       return:
         type:
-          - Excel.Interfaces.ChartPointFormatData
+          - excel.Excel.Interfaces.ChartPointFormatData
         description: ''

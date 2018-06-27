@@ -516,7 +516,7 @@ items:
             The additional options for this Excel.run which specify previous objects, whether to delay the request for
             cell edit, session info, etc.
           type:
-            - Excel.RunOptions
+            - excel.Excel.RunOptions
         - id: batch
           description: >-
             A function that takes in a RequestContext and returns a promise (typically, just the result of

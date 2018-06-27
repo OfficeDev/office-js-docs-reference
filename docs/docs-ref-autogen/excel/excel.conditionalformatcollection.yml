@@ -36,13 +36,13 @@ items:
       content: 'add(type: Excel.ConditionalFormatType): Excel.ConditionalFormat;'
       return:
         type:
-          - Excel.ConditionalFormat
+          - excel.Excel.ConditionalFormat
         description: ''
       parameters:
         - id: type
           description: The type of conditional format being added. See Excel.ConditionalFormatType for details.
           type:
-            - Excel.ConditionalFormatType
+            - excel.Excel.ConditionalFormatType
     remarks: |
 
 
@@ -186,7 +186,7 @@ items:
       content: 'getItem(id: string): Excel.ConditionalFormat;'
       return:
         type:
-          - Excel.ConditionalFormat
+          - excel.Excel.ConditionalFormat
         description: Conditional Format object.
       parameters:
         - id: id
@@ -229,7 +229,7 @@ items:
       content: 'getItemAt(index: number): Excel.ConditionalFormat;'
       return:
         type:
-          - Excel.ConditionalFormat
+          - excel.Excel.ConditionalFormat
         description: ''
       parameters:
         - id: index
@@ -338,7 +338,7 @@ items:
         Excel.ConditionalFormatCollection;
       return:
         type:
-          - Excel.ConditionalFormatCollection
+          - excel.Excel.ConditionalFormatCollection
         description: ''
       parameters:
         - id: option
@@ -355,5 +355,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalFormatCollectionData;'
       return:
         type:
-          - Excel.Interfaces.ConditionalFormatCollectionData
+          - excel.Excel.Interfaces.ConditionalFormatCollectionData
         description: ''

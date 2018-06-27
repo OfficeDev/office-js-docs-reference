@@ -61,7 +61,7 @@ items:
       content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
         type:
-          - Word.ContentControlCollection
+          - word.Word.ContentControlCollection
   - uid: word.Word.DocumentCreated.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -75,13 +75,13 @@ items:
       content: 'load(option?: Word.Interfaces.DocumentCreatedLoadOptions): Word.DocumentCreated;'
       return:
         type:
-          - Word.DocumentCreated
+          - word.Word.DocumentCreated
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.DocumentCreatedLoadOptions
+            - word.Word.Interfaces.DocumentCreatedLoadOptions
   - uid: word.Word.DocumentCreated.open
     summary: |-
       Open the document.
@@ -184,7 +184,7 @@ items:
         - id: options
           description: ''
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.DocumentCreated.toJSON
     name: toJSON()
     fullName: word.Word.DocumentCreated.toJSON
@@ -195,7 +195,7 @@ items:
       content: 'toJSON(): Word.Interfaces.DocumentCreatedData;'
       return:
         type:
-          - Word.Interfaces.DocumentCreatedData
+          - word.Word.Interfaces.DocumentCreatedData
         description: ''
   - uid: word.Word.DocumentCreated.track
     summary: >-
@@ -213,7 +213,7 @@ items:
       content: 'track(): Word.DocumentCreated;'
       return:
         type:
-          - Word.DocumentCreated
+          - word.Word.DocumentCreated
         description: ''
   - uid: word.Word.DocumentCreated.untrack
     summary: >-
@@ -230,5 +230,5 @@ items:
       content: 'untrack(): Word.DocumentCreated;'
       return:
         type:
-          - Word.DocumentCreated
+          - word.Word.DocumentCreated
         description: ''

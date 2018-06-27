@@ -34,7 +34,7 @@ items:
       content: 'readonly floatingInk: OneNote.FloatingInk;'
       return:
         type:
-          - OneNote.FloatingInk
+          - onenote.OneNote.FloatingInk
   - uid: onenote.OneNote.InkStroke.id
     summary: |-
       Gets the ID of the InkStroke object. Read-only.
@@ -63,13 +63,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.InkStrokeLoadOptions): OneNote.InkStroke;'
       return:
         type:
-          - OneNote.InkStroke
+          - onenote.OneNote.InkStroke
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OneNote.Interfaces.InkStrokeLoadOptions
+            - onenote.OneNote.Interfaces.InkStrokeLoadOptions
   - uid: onenote.OneNote.InkStroke.toJSON
     name: toJSON()
     fullName: onenote.OneNote.InkStroke.toJSON
@@ -80,7 +80,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.InkStrokeData;'
       return:
         type:
-          - OneNote.Interfaces.InkStrokeData
+          - onenote.OneNote.Interfaces.InkStrokeData
         description: ''
   - uid: onenote.OneNote.InkStroke.track
     summary: >-
@@ -98,7 +98,7 @@ items:
       content: 'track(): OneNote.InkStroke;'
       return:
         type:
-          - OneNote.InkStroke
+          - onenote.OneNote.InkStroke
         description: ''
   - uid: onenote.OneNote.InkStroke.untrack
     summary: >-
@@ -115,5 +115,5 @@ items:
       content: 'untrack(): OneNote.InkStroke;'
       return:
         type:
-          - OneNote.InkStroke
+          - onenote.OneNote.InkStroke
         description: ''

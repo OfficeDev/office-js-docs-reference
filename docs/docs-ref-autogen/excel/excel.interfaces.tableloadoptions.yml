@@ -40,7 +40,7 @@ items:
       content: 'columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;'
       return:
         type:
-          - Excel.Interfaces.TableColumnCollectionLoadOptions
+          - excel.Excel.Interfaces.TableColumnCollectionLoadOptions
   - uid: excel.Excel.Interfaces.TableLoadOptions.highlightFirstColumn
     summary: |-
       Indicates whether the first column contains special formatting.
@@ -117,7 +117,7 @@ items:
       content: 'rows?: Excel.Interfaces.TableRowCollectionLoadOptions;'
       return:
         type:
-          - Excel.Interfaces.TableRowCollectionLoadOptions
+          - excel.Excel.Interfaces.TableRowCollectionLoadOptions
   - uid: excel.Excel.Interfaces.TableLoadOptions.showBandedColumns
     summary: >-
       Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even
@@ -213,7 +213,7 @@ items:
       content: 'sort?: Excel.Interfaces.TableSortLoadOptions;'
       return:
         type:
-          - Excel.Interfaces.TableSortLoadOptions
+          - excel.Excel.Interfaces.TableSortLoadOptions
   - uid: excel.Excel.Interfaces.TableLoadOptions.style
     summary: >-
       Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
@@ -246,4 +246,4 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - Excel.Interfaces.WorksheetLoadOptions
+          - excel.Excel.Interfaces.WorksheetLoadOptions

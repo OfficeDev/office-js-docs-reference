@@ -77,7 +77,7 @@ items:
       content: 'highlight: Visio.Highlight;'
       return:
         type:
-          - Visio.Highlight
+          - visio.Visio.Highlight
   - uid: visio.Visio.ShapeView.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -91,13 +91,13 @@ items:
       content: 'load(option?: Visio.Interfaces.ShapeViewLoadOptions): Visio.ShapeView;'
       return:
         type:
-          - Visio.ShapeView
+          - visio.Visio.ShapeView
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Visio.Interfaces.ShapeViewLoadOptions
+            - visio.Visio.Interfaces.ShapeViewLoadOptions
     remarks: |
 
 
@@ -206,5 +206,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.ShapeViewData;'
       return:
         type:
-          - Visio.Interfaces.ShapeViewData
+          - visio.Visio.Interfaces.ShapeViewData
         description: ''

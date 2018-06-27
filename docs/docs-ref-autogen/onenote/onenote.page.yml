@@ -50,7 +50,7 @@ items:
       content: 'addOutline(left: number, top: number, html: string): OneNote.Outline;'
       return:
         type:
-          - OneNote.Outline
+          - onenote.OneNote.Outline
         description: ''
       parameters:
         - id: left
@@ -189,7 +189,7 @@ items:
       content: 'readonly contents: OneNote.PageContentCollection;'
       return:
         type:
-          - OneNote.PageContentCollection
+          - onenote.OneNote.PageContentCollection
   - uid: onenote.OneNote.Page.copyToSection
     summary: |-
       Copies this page to specified section.
@@ -204,13 +204,13 @@ items:
       content: 'copyToSection(destinationSection: OneNote.Section): OneNote.Page;'
       return:
         type:
-          - OneNote.Page
+          - onenote.OneNote.Page
         description: ''
       parameters:
         - id: destinationSection
           description: The section to copy this page to.
           type:
-            - OneNote.Section
+            - onenote.OneNote.Section
     remarks: |
 
 
@@ -266,13 +266,13 @@ items:
       content: 'copyToSectionAndSetClassNotebookPageSource(destinationSection: OneNote.Section): OneNote.Page;'
       return:
         type:
-          - OneNote.Page
+          - onenote.OneNote.Page
         description: ''
       parameters:
         - id: destinationSection
           description: ''
           type:
-            - OneNote.Section
+            - onenote.OneNote.Section
   - uid: onenote.OneNote.Page.getRestApiId
     summary: |-
       Gets the REST API ID.
@@ -353,7 +353,7 @@ items:
       content: 'readonly inkAnalysisOrNull: OneNote.InkAnalysis;'
       return:
         type:
-          - OneNote.InkAnalysis
+          - onenote.OneNote.InkAnalysis
   - uid: onenote.OneNote.Page.insertPageAsSibling
     summary: |-
       Inserts a new page before or after the current page.
@@ -368,7 +368,7 @@ items:
       content: 'insertPageAsSibling(location: string, title: string): OneNote.Page;'
       return:
         type:
-          - OneNote.Page
+          - onenote.OneNote.Page
         description: ''
       parameters:
         - id: location
@@ -422,13 +422,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.PageLoadOptions): OneNote.Page;'
       return:
         type:
-          - OneNote.Page
+          - onenote.OneNote.Page
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OneNote.Interfaces.PageLoadOptions
+            - onenote.OneNote.Interfaces.PageLoadOptions
     remarks: |
 
 
@@ -552,7 +552,7 @@ items:
       content: 'readonly parentSection: OneNote.Section;'
       return:
         type:
-          - OneNote.Section
+          - onenote.OneNote.Section
   - uid: onenote.OneNote.Page.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -609,7 +609,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.PageData;'
       return:
         type:
-          - OneNote.Interfaces.PageData
+          - onenote.OneNote.Interfaces.PageData
         description: ''
   - uid: onenote.OneNote.Page.track
     summary: >-
@@ -627,7 +627,7 @@ items:
       content: 'track(): OneNote.Page;'
       return:
         type:
-          - OneNote.Page
+          - onenote.OneNote.Page
         description: ''
   - uid: onenote.OneNote.Page.untrack
     summary: >-
@@ -644,7 +644,7 @@ items:
       content: 'untrack(): OneNote.Page;'
       return:
         type:
-          - OneNote.Page
+          - onenote.OneNote.Page
         description: ''
   - uid: onenote.OneNote.Page.webUrl
     summary: |-

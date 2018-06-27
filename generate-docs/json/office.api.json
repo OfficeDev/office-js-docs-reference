@@ -9938,6 +9938,38 @@
               "isSealed": false,
               "isVirtual": false,
               "isOverride": false
+            },
+            "sendMessage": {
+              "kind": "method",
+              "signature": "sendMessage(name: string): void;",
+              "accessModifier": "",
+              "isOptional": false,
+              "isStatic": false,
+              "returnValue": {
+                "type": "void",
+                "description": []
+              },
+              "parameters": {
+                "name": {
+                  "name": "name",
+                  "description": [],
+                  "isOptional": false,
+                  "isSpread": false,
+                  "type": "string"
+                }
+              },
+              "deprecatedMessage": [],
+              "summary": [
+                {
+                  "kind": "text",
+                  "text": "FOR INTERNAL USE ONLY. DO NOT CALL IN YOUR CODE."
+                }
+              ],
+              "remarks": [],
+              "isBeta": false,
+              "isSealed": false,
+              "isVirtual": false,
+              "isOverride": false
             }
           }
         },
@@ -29925,7 +29957,7 @@
                   "description": [
                     {
                       "kind": "text",
-                      "text": "Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the AsyncResult.value is a DialogHandler object."
+                      "text": "Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the AsyncResult.value is a Dialog object."
                     }
                   ],
                   "isOptional": true,

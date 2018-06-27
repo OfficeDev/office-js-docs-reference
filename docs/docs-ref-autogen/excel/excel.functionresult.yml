@@ -72,7 +72,7 @@ items:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.FunctionResultLoadOptions
+            - excel.Excel.Interfaces.FunctionResultLoadOptions
   - uid: excel.Excel.FunctionResult.toJSON
     name: toJSON()
     fullName: excel.Excel.FunctionResult.toJSON

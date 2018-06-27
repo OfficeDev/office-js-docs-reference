@@ -94,13 +94,13 @@ items:
       content: 'load(option?: Visio.Interfaces.DocumentViewLoadOptions): Visio.DocumentView;'
       return:
         type:
-          - Visio.DocumentView
+          - visio.Visio.DocumentView
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Visio.Interfaces.DocumentViewLoadOptions
+            - visio.Visio.Interfaces.DocumentViewLoadOptions
   - uid: visio.Visio.DocumentView.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -142,5 +142,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.DocumentViewData;'
       return:
         type:
-          - Visio.Interfaces.DocumentViewData
+          - visio.Visio.Interfaces.DocumentViewData
         description: ''

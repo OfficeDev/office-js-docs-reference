@@ -65,7 +65,7 @@ items:
       content: 'getItemAt(index: number): Excel.ChartPoint;'
       return:
         type:
-          - Excel.ChartPoint
+          - excel.Excel.ChartPoint
         description: ''
       parameters:
         - id: index
@@ -180,7 +180,7 @@ items:
         Excel.ChartPointsCollection;
       return:
         type:
-          - Excel.ChartPointsCollection
+          - excel.Excel.ChartPointsCollection
         description: ''
       parameters:
         - id: option
@@ -197,5 +197,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartPointsCollectionData;'
       return:
         type:
-          - Excel.Interfaces.ChartPointsCollectionData
+          - excel.Excel.Interfaces.ChartPointsCollectionData
         description: ''

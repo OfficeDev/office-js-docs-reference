@@ -13,6 +13,7 @@ items:
     children:
       - office.Office.Dialog.addEventHandler
       - office.Office.Dialog.close
+      - office.Office.Dialog.sendMessage
   - uid: office.Office.Dialog.addEventHandler
     summary: |-
       Registers an event handler. The two supported events are:
@@ -53,3 +54,21 @@ items:
         type:
           - void
         description: ''
+  - uid: office.Office.Dialog.sendMessage
+    summary: FOR INTERNAL USE ONLY. DO NOT CALL IN YOUR CODE.
+    name: sendMessage(name)
+    fullName: office.Office.Dialog.sendMessage
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'sendMessage(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string

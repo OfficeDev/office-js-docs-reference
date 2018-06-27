@@ -146,11 +146,11 @@ items:
             Optional. Accepts an[Office.DialogOptions](xref:office.Office.DialogOptions) object to define dialog
             display.
           type:
-            - DialogOptions
+            - office.Office.DialogOptions
         - id: callback
           description: >-
             Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the
-            AsyncResult.value is a DialogHandler object.
+            AsyncResult.value is a Dialog object.
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.UI.messageParent

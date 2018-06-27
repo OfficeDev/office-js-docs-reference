@@ -56,4 +56,4 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetData;'
       return:
         type:
-          - Excel.Interfaces.WorksheetData
+          - excel.Excel.Interfaces.WorksheetData

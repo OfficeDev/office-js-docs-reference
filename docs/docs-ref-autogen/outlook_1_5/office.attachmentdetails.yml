@@ -37,7 +37,7 @@ items:
       content: 'attachmentType: Office.MailboxEnums.AttachmentType;'
       return:
         type:
-          - Office.MailboxEnums.AttachmentType
+          - outlook.Office.MailboxEnums.AttachmentType
   - uid: Outlook_1_5.Office.AttachmentDetails.contentType
     summary: Gets the MIME content type of the attachment.
     name: contentType

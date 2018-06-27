@@ -51,13 +51,13 @@ items:
       content: 'load(option?: Excel.Interfaces.WorksheetProtectionLoadOptions): Excel.WorksheetProtection;'
       return:
         type:
-          - Excel.WorksheetProtection
+          - excel.Excel.WorksheetProtection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.WorksheetProtectionLoadOptions
+            - excel.Excel.Interfaces.WorksheetProtectionLoadOptions
   - uid: excel.Excel.WorksheetProtection.options
     summary: |-
       Sheet protection options. Read-only.
@@ -72,7 +72,7 @@ items:
       content: 'readonly options: Excel.WorksheetProtectionOptions;'
       return:
         type:
-          - Excel.WorksheetProtectionOptions
+          - excel.Excel.WorksheetProtectionOptions
   - uid: excel.Excel.WorksheetProtection.protect
     summary: >-
       Protects a worksheet. Fails if the worksheet has already been protected.
@@ -95,7 +95,7 @@ items:
         - id: options
           description: Optional. Sheet protection options.
           type:
-            - Excel.WorksheetProtectionOptions
+            - excel.Excel.WorksheetProtectionOptions
         - id: password
           description: Optional. Sheet protection password.
           type:
@@ -177,7 +177,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorksheetProtectionData;'
       return:
         type:
-          - Excel.Interfaces.WorksheetProtectionData
+          - excel.Excel.Interfaces.WorksheetProtectionData
         description: ''
   - uid: excel.Excel.WorksheetProtection.unprotect
     summary: |-

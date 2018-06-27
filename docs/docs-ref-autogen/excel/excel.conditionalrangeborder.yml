@@ -68,13 +68,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ConditionalRangeBorderLoadOptions): Excel.ConditionalRangeBorder;'
       return:
         type:
-          - Excel.ConditionalRangeBorder
+          - excel.Excel.ConditionalRangeBorder
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ConditionalRangeBorderLoadOptions
+            - excel.Excel.Interfaces.ConditionalRangeBorderLoadOptions
   - uid: excel.Excel.ConditionalRangeBorder.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -104,7 +104,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalRangeBorder.sideIndex
     summary: >-
       Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
@@ -151,5 +151,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeBorderData;'
       return:
         type:
-          - Excel.Interfaces.ConditionalRangeBorderData
+          - excel.Excel.Interfaces.ConditionalRangeBorderData
         description: ''

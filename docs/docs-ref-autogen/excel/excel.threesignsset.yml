@@ -22,7 +22,7 @@ items:
       content: '[index: number]: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
         description: ''
       parameters:
         - id: index
@@ -39,7 +39,7 @@ items:
       content: 'greenCircle: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.ThreeSignsSet.redDiamond
     name: redDiamond
     fullName: excel.Excel.ThreeSignsSet.redDiamond
@@ -50,7 +50,7 @@ items:
       content: 'redDiamond: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.ThreeSignsSet.yellowTriangle
     name: yellowTriangle
     fullName: excel.Excel.ThreeSignsSet.yellowTriangle
@@ -61,4 +61,4 @@ items:
       content: 'yellowTriangle: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon

@@ -210,7 +210,7 @@ items:
       content: 'getCell(rowIndex: number, cellIndex: number): OneNote.TableCell;'
       return:
         type:
-          - OneNote.TableCell
+          - onenote.OneNote.TableCell
         description: ''
       parameters:
         - id: rowIndex
@@ -513,7 +513,7 @@ items:
       content: 'readonly paragraph: OneNote.Paragraph;'
       return:
         type:
-          - OneNote.Paragraph
+          - onenote.OneNote.Paragraph
   - uid: onenote.OneNote.Table.rowCount
     summary: |-
       Gets the number of rows in the table.

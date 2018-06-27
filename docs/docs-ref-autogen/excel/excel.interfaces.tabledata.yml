@@ -210,7 +210,7 @@ items:
       content: 'sort?: Excel.Interfaces.TableSortData;'
       return:
         type:
-          - Excel.Interfaces.TableSortData
+          - excel.Excel.Interfaces.TableSortData
   - uid: excel.Excel.Interfaces.TableData.style
     summary: >-
       Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
@@ -243,4 +243,4 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetData;'
       return:
         type:
-          - Excel.Interfaces.WorksheetData
+          - excel.Excel.Interfaces.WorksheetData

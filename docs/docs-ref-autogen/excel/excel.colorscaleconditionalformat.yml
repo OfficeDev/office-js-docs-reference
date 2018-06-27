@@ -33,7 +33,7 @@ items:
       content: 'criteria: Excel.ConditionalColorScaleCriteria;'
       return:
         type:
-          - Excel.ConditionalColorScaleCriteria
+          - excel.Excel.ConditionalColorScaleCriteria
     remarks: |
 
 
@@ -86,13 +86,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions): Excel.ColorScaleConditionalFormat;'
       return:
         type:
-          - Excel.ColorScaleConditionalFormat
+          - excel.Excel.ColorScaleConditionalFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
+            - excel.Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
   - uid: excel.Excel.ColorScaleConditionalFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -124,7 +124,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ColorScaleConditionalFormat.threeColorScale
     summary: >-
       If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum,
@@ -152,5 +152,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ColorScaleConditionalFormatData;'
       return:
         type:
-          - Excel.Interfaces.ColorScaleConditionalFormatData
+          - excel.Excel.Interfaces.ColorScaleConditionalFormatData
         description: ''

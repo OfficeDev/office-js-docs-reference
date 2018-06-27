@@ -37,13 +37,13 @@ items:
       content: 'add(type: Excel.ChartType, sourceData: Range | string, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;'
       return:
         type:
-          - Excel.Chart
+          - excel.Excel.Chart
         description: ''
       parameters:
         - id: type
           description: Represents the type of a chart. See Excel.ChartType for details.
           type:
-            - Excel.ChartType
+            - excel.Excel.ChartType
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
@@ -53,7 +53,7 @@ items:
             Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
             for details.
           type:
-            - Excel.ChartSeriesBy
+            - excel.Excel.ChartSeriesBy
     remarks: >
 
 
@@ -126,7 +126,7 @@ items:
       content: 'getItem(name: string): Excel.Chart;'
       return:
         type:
-          - Excel.Chart
+          - excel.Excel.Chart
         description: ''
       parameters:
         - id: name
@@ -196,7 +196,7 @@ items:
       content: 'getItemAt(index: number): Excel.Chart;'
       return:
         type:
-          - Excel.Chart
+          - excel.Excel.Chart
         description: ''
       parameters:
         - id: index
@@ -238,7 +238,7 @@ items:
       content: 'getItemOrNullObject(name: string): Excel.Chart;'
       return:
         type:
-          - Excel.Chart
+          - excel.Excel.Chart
         description: ''
       parameters:
         - id: name
@@ -334,7 +334,7 @@ items:
         Excel.ChartCollection;
       return:
         type:
-          - Excel.ChartCollection
+          - excel.Excel.ChartCollection
         description: ''
       parameters:
         - id: option
@@ -351,5 +351,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartCollectionData;'
       return:
         type:
-          - Excel.Interfaces.ChartCollectionData
+          - excel.Excel.Interfaces.ChartCollectionData
         description: ''

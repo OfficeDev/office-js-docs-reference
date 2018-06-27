@@ -29,4 +29,4 @@ items:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - Word.Interfaces.BodyLoadOptions
+          - word.Word.Interfaces.BodyLoadOptions

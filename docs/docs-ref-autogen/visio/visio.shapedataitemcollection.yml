@@ -49,7 +49,7 @@ items:
       content: 'getItem(key: string): Visio.ShapeDataItem;'
       return:
         type:
-          - Visio.ShapeDataItem
+          - visio.Visio.ShapeDataItem
         description: ''
       parameters:
         - id: key
@@ -83,7 +83,7 @@ items:
         Visio.ShapeDataItemCollection;
       return:
         type:
-          - Visio.ShapeDataItemCollection
+          - visio.Visio.ShapeDataItemCollection
         description: ''
       parameters:
         - id: option
@@ -125,5 +125,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.ShapeDataItemCollectionData;'
       return:
         type:
-          - Visio.Interfaces.ShapeDataItemCollectionData
+          - visio.Visio.Interfaces.ShapeDataItemCollectionData
         description: ''

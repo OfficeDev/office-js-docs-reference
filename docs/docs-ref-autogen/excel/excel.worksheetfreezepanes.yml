@@ -144,7 +144,7 @@ items:
       content: 'getLocation(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
   - uid: excel.Excel.WorksheetFreezePanes.getLocationOrNullObject
     summary: >-
@@ -162,7 +162,7 @@ items:
       content: 'getLocationOrNullObject(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 

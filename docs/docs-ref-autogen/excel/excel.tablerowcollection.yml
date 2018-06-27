@@ -74,7 +74,7 @@ items:
         Excel.TableRow;
       return:
         type:
-          - Excel.TableRow
+          - excel.Excel.TableRow
         description: ''
       parameters:
         - id: index
@@ -159,7 +159,7 @@ items:
       content: 'getItemAt(index: number): Excel.TableRow;'
       return:
         type:
-          - Excel.TableRow
+          - excel.Excel.TableRow
         description: ''
       parameters:
         - id: index
@@ -255,7 +255,7 @@ items:
         Excel.TableRowCollection;
       return:
         type:
-          - Excel.TableRowCollection
+          - excel.Excel.TableRowCollection
         description: ''
       parameters:
         - id: option
@@ -272,5 +272,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableRowCollectionData;'
       return:
         type:
-          - Excel.Interfaces.TableRowCollectionData
+          - excel.Excel.Interfaces.TableRowCollectionData
         description: ''

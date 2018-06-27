@@ -38,4 +38,4 @@ items:
       content: 'newNode: CustomXmlNode;'
       return:
         type:
-          - CustomXmlNode
+          - office.Office.CustomXmlNode

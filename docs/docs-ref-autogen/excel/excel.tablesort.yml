@@ -50,7 +50,7 @@ items:
         - id: method
           description: Optional. The ordering method used for Chinese characters.
           type:
-            - Excel.SortMethod
+            - excel.Excel.SortMethod
     remarks: |
 
 
@@ -138,13 +138,13 @@ items:
       content: 'load(option?: Excel.Interfaces.TableSortLoadOptions): Excel.TableSort;'
       return:
         type:
-          - Excel.TableSort
+          - excel.Excel.TableSort
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.TableSortLoadOptions
+            - excel.Excel.Interfaces.TableSortLoadOptions
   - uid: excel.Excel.TableSort.matchCase
     summary: |-
       Represents whether the casing impacted the last sort of the table. Read-only.
@@ -201,5 +201,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableSortData;'
       return:
         type:
-          - Excel.Interfaces.TableSortData
+          - excel.Excel.Interfaces.TableSortData
         description: ''

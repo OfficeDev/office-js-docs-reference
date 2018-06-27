@@ -49,13 +49,13 @@ items:
       content: 'load(option?: Excel.Interfaces.NamedItemArrayValuesLoadOptions): Excel.NamedItemArrayValues;'
       return:
         type:
-          - Excel.NamedItemArrayValues
+          - excel.Excel.NamedItemArrayValues
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.NamedItemArrayValuesLoadOptions
+            - excel.Excel.Interfaces.NamedItemArrayValuesLoadOptions
   - uid: excel.Excel.NamedItemArrayValues.toJSON
     name: toJSON()
     fullName: excel.Excel.NamedItemArrayValues.toJSON
@@ -66,7 +66,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.NamedItemArrayValuesData;'
       return:
         type:
-          - Excel.Interfaces.NamedItemArrayValuesData
+          - excel.Excel.Interfaces.NamedItemArrayValuesData
         description: ''
   - uid: excel.Excel.NamedItemArrayValues.types
     summary: |-

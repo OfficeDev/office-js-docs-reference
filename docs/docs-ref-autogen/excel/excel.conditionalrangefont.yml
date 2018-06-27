@@ -115,13 +115,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ConditionalRangeFontLoadOptions): Excel.ConditionalRangeFont;'
       return:
         type:
-          - Excel.ConditionalRangeFont
+          - excel.Excel.ConditionalRangeFont
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ConditionalRangeFontLoadOptions
+            - excel.Excel.Interfaces.ConditionalRangeFontLoadOptions
   - uid: excel.Excel.ConditionalRangeFont.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -151,7 +151,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalRangeFont.strikethrough
     summary: |-
       Represents the strikethrough status of the font.
@@ -177,7 +177,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeFontData;'
       return:
         type:
-          - Excel.Interfaces.ConditionalRangeFontData
+          - excel.Excel.Interfaces.ConditionalRangeFontData
         description: ''
   - uid: excel.Excel.ConditionalRangeFont.underline
     summary: |-

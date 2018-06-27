@@ -46,7 +46,7 @@ items:
       content: 'readonly format: Excel.ChartTitleFormat;'
       return:
         type:
-          - Excel.ChartTitleFormat
+          - excel.Excel.ChartTitleFormat
   - uid: excel.Excel.ChartTitle.getSubstring
     summary: |-
       Get the substring of a chart title. Line break '\\n' also counts one character.
@@ -61,7 +61,7 @@ items:
       content: 'getSubstring(start: number, length: number): Excel.ChartFormatString;'
       return:
         type:
-          - Excel.ChartFormatString
+          - excel.Excel.ChartFormatString
         description: ''
       parameters:
         - id: start
@@ -201,13 +201,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartTitleLoadOptions): Excel.ChartTitle;'
       return:
         type:
-          - Excel.ChartTitle
+          - excel.Excel.ChartTitle
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartTitleLoadOptions
+            - excel.Excel.Interfaces.ChartTitleLoadOptions
   - uid: excel.Excel.ChartTitle.overlay
     summary: |-
       Boolean value representing if the chart title will overlay the chart or not.
@@ -267,7 +267,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartTitle.setFormula
     summary: |-
       Sets a string value that represents the formula of chart title using A1-style notation.
@@ -346,7 +346,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartTitleData;'
       return:
         type:
-          - Excel.Interfaces.ChartTitleData
+          - excel.Excel.Interfaces.ChartTitleData
         description: ''
   - uid: excel.Excel.ChartTitle.top
     summary: >-

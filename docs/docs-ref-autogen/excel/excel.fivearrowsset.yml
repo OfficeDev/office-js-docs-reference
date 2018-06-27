@@ -24,7 +24,7 @@ items:
       content: '[index: number]: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
         description: ''
       parameters:
         - id: index
@@ -41,7 +41,7 @@ items:
       content: 'greenUpArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.FiveArrowsSet.redDownArrow
     name: redDownArrow
     fullName: excel.Excel.FiveArrowsSet.redDownArrow
@@ -52,7 +52,7 @@ items:
       content: 'redDownArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.FiveArrowsSet.yellowDownInclineArrow
     name: yellowDownInclineArrow
     fullName: excel.Excel.FiveArrowsSet.yellowDownInclineArrow
@@ -63,7 +63,7 @@ items:
       content: 'yellowDownInclineArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.FiveArrowsSet.yellowSideArrow
     name: yellowSideArrow
     fullName: excel.Excel.FiveArrowsSet.yellowSideArrow
@@ -74,7 +74,7 @@ items:
       content: 'yellowSideArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.FiveArrowsSet.yellowUpInclineArrow
     name: yellowUpInclineArrow
     fullName: excel.Excel.FiveArrowsSet.yellowUpInclineArrow
@@ -85,4 +85,4 @@ items:
       content: 'yellowUpInclineArrow: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon

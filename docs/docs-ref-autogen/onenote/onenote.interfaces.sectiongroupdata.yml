@@ -76,7 +76,7 @@ items:
       content: 'notebook?: OneNote.Interfaces.NotebookData;'
       return:
         type:
-          - OneNote.Interfaces.NotebookData
+          - onenote.OneNote.Interfaces.NotebookData
   - uid: onenote.OneNote.Interfaces.SectionGroupData.parentSectionGroup
     summary: >-
       Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child
@@ -93,7 +93,7 @@ items:
       content: 'parentSectionGroup?: OneNote.Interfaces.SectionGroupData;'
       return:
         type:
-          - OneNote.Interfaces.SectionGroupData
+          - onenote.OneNote.Interfaces.SectionGroupData
   - uid: onenote.OneNote.Interfaces.SectionGroupData.parentSectionGroupOrNull
     summary: >-
       Gets the section group that contains the section group. Returns null if the section group is a direct child of the
@@ -110,7 +110,7 @@ items:
       content: 'parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupData;'
       return:
         type:
-          - OneNote.Interfaces.SectionGroupData
+          - onenote.OneNote.Interfaces.SectionGroupData
   - uid: onenote.OneNote.Interfaces.SectionGroupData.sectionGroups
     summary: |-
       The collection of section groups in the section group. Read only

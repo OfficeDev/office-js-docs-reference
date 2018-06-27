@@ -50,13 +50,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.InkAnalysisLoadOptions): OneNote.InkAnalysis;'
       return:
         type:
-          - OneNote.InkAnalysis
+          - onenote.OneNote.InkAnalysis
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OneNote.Interfaces.InkAnalysisLoadOptions
+            - onenote.OneNote.Interfaces.InkAnalysisLoadOptions
     remarks: |
 
 
@@ -98,7 +98,7 @@ items:
       content: 'readonly page: OneNote.Page;'
       return:
         type:
-          - OneNote.Page
+          - onenote.OneNote.Page
   - uid: onenote.OneNote.InkAnalysis.paragraphs
     summary: |-
       Gets the ink analysis paragraphs in this page. Read-only.
@@ -113,7 +113,7 @@ items:
       content: 'readonly paragraphs: OneNote.InkAnalysisParagraphCollection;'
       return:
         type:
-          - OneNote.InkAnalysisParagraphCollection
+          - onenote.OneNote.InkAnalysisParagraphCollection
   - uid: onenote.OneNote.InkAnalysis.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -155,7 +155,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.InkAnalysisData;'
       return:
         type:
-          - OneNote.Interfaces.InkAnalysisData
+          - onenote.OneNote.Interfaces.InkAnalysisData
         description: ''
   - uid: onenote.OneNote.InkAnalysis.track
     summary: >-
@@ -173,7 +173,7 @@ items:
       content: 'track(): OneNote.InkAnalysis;'
       return:
         type:
-          - OneNote.InkAnalysis
+          - onenote.OneNote.InkAnalysis
         description: ''
   - uid: onenote.OneNote.InkAnalysis.untrack
     summary: >-
@@ -190,5 +190,5 @@ items:
       content: 'untrack(): OneNote.InkAnalysis;'
       return:
         type:
-          - OneNote.InkAnalysis
+          - onenote.OneNote.InkAnalysis
         description: ''

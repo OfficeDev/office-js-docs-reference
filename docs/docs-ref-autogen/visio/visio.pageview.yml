@@ -109,7 +109,7 @@ items:
       content: 'getSelection(): Visio.Selection;'
       return:
         type:
-          - Visio.Selection
+          - visio.Visio.Selection
         description: ''
   - uid: visio.Visio.PageView.isShapeInViewport
     summary: |-
@@ -131,7 +131,7 @@ items:
         - id: Shape
           description: Shape to be checked.
           type:
-            - Visio.Shape
+            - visio.Visio.Shape
   - uid: visio.Visio.PageView.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -145,13 +145,13 @@ items:
       content: 'load(option?: Visio.Interfaces.PageViewLoadOptions): Visio.PageView;'
       return:
         type:
-          - Visio.PageView
+          - visio.Visio.PageView
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Visio.Interfaces.PageViewLoadOptions
+            - visio.Visio.Interfaces.PageViewLoadOptions
     remarks: |
 
 
@@ -220,7 +220,7 @@ items:
         - id: Position
           description: Position object that specifies the new position of the page in the view.
           type:
-            - Visio.Position
+            - visio.Visio.Position
   - uid: visio.Visio.PageView.toJSON
     name: toJSON()
     fullName: visio.Visio.PageView.toJSON
@@ -231,7 +231,7 @@ items:
       content: 'toJSON(): Visio.Interfaces.PageViewData;'
       return:
         type:
-          - Visio.Interfaces.PageViewData
+          - visio.Visio.Interfaces.PageViewData
         description: ''
   - uid: visio.Visio.PageView.zoom
     summary: |-

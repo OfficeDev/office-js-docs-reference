@@ -326,7 +326,7 @@ items:
         - id: entityType
           description: One of the EntityType enumeration values.
           type:
-            - Office.MailboxEnums.EntityType
+            - outlook.Office.MailboxEnums.EntityType
   - uid: Outlook_1_2.Office.AppointmentRead.getFilteredEntitiesByName
     summary: >-
       Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
@@ -553,7 +553,7 @@ items:
       content: 'itemType: Office.MailboxEnums.ItemType;'
       return:
         type:
-          - Office.MailboxEnums.ItemType
+          - outlook.Office.MailboxEnums.ItemType
   - uid: Outlook_1_2.Office.AppointmentRead.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.

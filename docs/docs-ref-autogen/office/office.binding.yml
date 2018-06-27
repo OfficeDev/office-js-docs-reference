@@ -124,7 +124,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -259,7 +259,7 @@ items:
         - id: options
           description: Provides options for how to get the data in a binding.
           type:
-            - GetBindingDataOptions
+            - office.Office.GetBindingDataOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -328,7 +328,7 @@ items:
         - id: options
           description: Provides options to determine which event handler or handlers are removed.
           type:
-            - RemoveHandlerOptions
+            - office.Office.RemoveHandlerOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -566,7 +566,7 @@ items:
         - id: options
           description: Provides options for how to set the data in a binding.
           type:
-            - SetBindingDataOptions
+            - office.Office.SetBindingDataOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.
