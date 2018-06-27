@@ -52,7 +52,7 @@ items:
       content: 'addNoteTag(type: string, status: string): OneNote.NoteTag;'
       return:
         type:
-          - OneNote.NoteTag
+          - onenote.OneNote.NoteTag
         description: ''
       parameters:
         - id: type
@@ -164,7 +164,7 @@ items:
       content: 'readonly image: OneNote.Image;'
       return:
         type:
-          - OneNote.Image
+          - onenote.OneNote.Image
   - uid: onenote.OneNote.Paragraph.inkWords
     summary: |-
       Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
@@ -179,7 +179,7 @@ items:
       content: 'readonly inkWords: OneNote.InkWordCollection;'
       return:
         type:
-          - OneNote.InkWordCollection
+          - onenote.OneNote.InkWordCollection
   - uid: onenote.OneNote.Paragraph.insertHtmlAsSibling
     summary: |-
       Inserts the specified HTML content
@@ -263,7 +263,7 @@ items:
         OneNote.Image;
       return:
         type:
-          - OneNote.Image
+          - onenote.OneNote.Image
         description: ''
       parameters:
         - id: insertLocation
@@ -335,7 +335,7 @@ items:
       content: 'insertRichTextAsSibling(insertLocation: string, paragraphText: string): OneNote.RichText;'
       return:
         type:
-          - OneNote.RichText
+          - onenote.OneNote.RichText
         description: ''
       parameters:
         - id: insertLocation
@@ -433,13 +433,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.ParagraphLoadOptions): OneNote.Paragraph;'
       return:
         type:
-          - OneNote.Paragraph
+          - onenote.OneNote.Paragraph
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OneNote.Interfaces.ParagraphLoadOptions
+            - onenote.OneNote.Interfaces.ParagraphLoadOptions
     remarks: |
 
 
@@ -528,7 +528,7 @@ items:
       content: 'readonly outline: OneNote.Outline;'
       return:
         type:
-          - OneNote.Outline
+          - onenote.OneNote.Outline
   - uid: onenote.OneNote.Paragraph.paragraphs
     summary: |-
       The collection of paragraphs under this paragraph. Read only
@@ -543,7 +543,7 @@ items:
       content: 'readonly paragraphs: OneNote.ParagraphCollection;'
       return:
         type:
-          - OneNote.ParagraphCollection
+          - onenote.OneNote.ParagraphCollection
   - uid: onenote.OneNote.Paragraph.parentParagraph
     summary: |-
       Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only.
@@ -558,7 +558,7 @@ items:
       content: 'readonly parentParagraph: OneNote.Paragraph;'
       return:
         type:
-          - OneNote.Paragraph
+          - onenote.OneNote.Paragraph
   - uid: onenote.OneNote.Paragraph.parentParagraphOrNull
     summary: |-
       Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only.
@@ -573,7 +573,7 @@ items:
       content: 'readonly parentParagraphOrNull: OneNote.Paragraph;'
       return:
         type:
-          - OneNote.Paragraph
+          - onenote.OneNote.Paragraph
   - uid: onenote.OneNote.Paragraph.parentTableCell
     summary: >-
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws
@@ -590,7 +590,7 @@ items:
       content: 'readonly parentTableCell: OneNote.TableCell;'
       return:
         type:
-          - OneNote.TableCell
+          - onenote.OneNote.TableCell
   - uid: onenote.OneNote.Paragraph.parentTableCellOrNull
     summary: >-
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
@@ -607,7 +607,7 @@ items:
       content: 'readonly parentTableCellOrNull: OneNote.TableCell;'
       return:
         type:
-          - OneNote.TableCell
+          - onenote.OneNote.TableCell
   - uid: onenote.OneNote.Paragraph.richText
     summary: |-
       Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only
@@ -622,7 +622,7 @@ items:
       content: 'readonly richText: OneNote.RichText;'
       return:
         type:
-          - OneNote.RichText
+          - onenote.OneNote.RichText
   - uid: onenote.OneNote.Paragraph.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -679,7 +679,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.ParagraphData;'
       return:
         type:
-          - OneNote.Interfaces.ParagraphData
+          - onenote.OneNote.Interfaces.ParagraphData
         description: ''
   - uid: onenote.OneNote.Paragraph.track
     summary: >-
@@ -697,7 +697,7 @@ items:
       content: 'track(): OneNote.Paragraph;'
       return:
         type:
-          - OneNote.Paragraph
+          - onenote.OneNote.Paragraph
         description: ''
   - uid: onenote.OneNote.Paragraph.type
     summary: |-
@@ -729,5 +729,5 @@ items:
       content: 'untrack(): OneNote.Paragraph;'
       return:
         type:
-          - OneNote.Paragraph
+          - onenote.OneNote.Paragraph
         description: ''

@@ -49,13 +49,13 @@ items:
       content: 'getItem(index: Excel.BorderIndex): Excel.RangeBorder;'
       return:
         type:
-          - Excel.RangeBorder
+          - excel.Excel.RangeBorder
         description: ''
       parameters:
         - id: index
           description: Index value of the border object to be retrieved. See Excel.BorderIndex for details.
           type:
-            - Excel.BorderIndex
+            - excel.Excel.BorderIndex
     remarks: |
 
 
@@ -113,7 +113,7 @@ items:
       content: 'getItemAt(index: number): Excel.RangeBorder;'
       return:
         type:
-          - Excel.RangeBorder
+          - excel.Excel.RangeBorder
         description: ''
       parameters:
         - id: index
@@ -242,7 +242,7 @@ items:
         Excel.RangeBorderCollection;
       return:
         type:
-          - Excel.RangeBorderCollection
+          - excel.Excel.RangeBorderCollection
         description: ''
       parameters:
         - id: option
@@ -259,5 +259,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeBorderCollectionData;'
       return:
         type:
-          - Excel.Interfaces.RangeBorderCollectionData
+          - excel.Excel.Interfaces.RangeBorderCollectionData
         description: ''

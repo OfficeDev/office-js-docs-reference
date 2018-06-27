@@ -24,4 +24,4 @@ items:
       content: 'view?: Visio.Interfaces.PageViewUpdateData;'
       return:
         type:
-          - Visio.Interfaces.PageViewUpdateData
+          - visio.Visio.Interfaces.PageViewUpdateData

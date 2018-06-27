@@ -144,13 +144,13 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeFontLoadOptions): Excel.RangeFont;'
       return:
         type:
-          - Excel.RangeFont
+          - excel.Excel.RangeFont
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.RangeFontLoadOptions
+            - excel.Excel.Interfaces.RangeFontLoadOptions
   - uid: excel.Excel.RangeFont.name
     summary: |-
       Font name (e.g. "Calibri")
@@ -195,7 +195,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.RangeFont.size
     summary: |-
       Font size.
@@ -221,7 +221,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeFontData;'
       return:
         type:
-          - Excel.Interfaces.RangeFontData
+          - excel.Excel.Interfaces.RangeFontData
         description: ''
   - uid: excel.Excel.RangeFont.underline
     summary: |-

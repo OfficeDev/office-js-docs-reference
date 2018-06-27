@@ -32,7 +32,7 @@ items:
       content: 'readonly line: Excel.ChartLineFormat;'
       return:
         type:
-          - Excel.ChartLineFormat
+          - excel.Excel.ChartLineFormat
     remarks: |
 
 
@@ -103,13 +103,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartTrendlineFormatLoadOptions): Excel.ChartTrendlineFormat;'
       return:
         type:
-          - Excel.ChartTrendlineFormat
+          - excel.Excel.ChartTrendlineFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartTrendlineFormatLoadOptions
+            - excel.Excel.Interfaces.ChartTrendlineFormatLoadOptions
   - uid: excel.Excel.ChartTrendlineFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -139,7 +139,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartTrendlineFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartTrendlineFormat.toJSON
@@ -150,5 +150,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartTrendlineFormatData;'
       return:
         type:
-          - Excel.Interfaces.ChartTrendlineFormatData
+          - excel.Excel.Interfaces.ChartTrendlineFormatData
         description: ''

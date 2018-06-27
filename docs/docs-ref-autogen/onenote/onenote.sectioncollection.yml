@@ -52,7 +52,7 @@ items:
       content: 'getByName(name: string): OneNote.SectionCollection;'
       return:
         type:
-          - OneNote.SectionCollection
+          - onenote.OneNote.SectionCollection
         description: ''
       parameters:
         - id: name
@@ -112,7 +112,7 @@ items:
       content: 'getItem(index: number | string): OneNote.Section;'
       return:
         type:
-          - OneNote.Section
+          - onenote.OneNote.Section
         description: ''
       parameters:
         - id: index
@@ -133,7 +133,7 @@ items:
       content: 'getItemAt(index: number): OneNote.Section;'
       return:
         type:
-          - OneNote.Section
+          - onenote.OneNote.Section
         description: ''
       parameters:
         - id: index
@@ -167,7 +167,7 @@ items:
         OneNote.SectionCollection;
       return:
         type:
-          - OneNote.SectionCollection
+          - onenote.OneNote.SectionCollection
         description: ''
       parameters:
         - id: option
@@ -221,7 +221,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.SectionCollectionData;'
       return:
         type:
-          - OneNote.Interfaces.SectionCollectionData
+          - onenote.OneNote.Interfaces.SectionCollectionData
         description: ''
   - uid: onenote.OneNote.SectionCollection.track
     summary: >-
@@ -239,7 +239,7 @@ items:
       content: 'track(): OneNote.SectionCollection;'
       return:
         type:
-          - OneNote.SectionCollection
+          - onenote.OneNote.SectionCollection
         description: ''
   - uid: onenote.OneNote.SectionCollection.untrack
     summary: >-
@@ -256,5 +256,5 @@ items:
       content: 'untrack(): OneNote.SectionCollection;'
       return:
         type:
-          - OneNote.SectionCollection
+          - onenote.OneNote.SectionCollection
         description: ''

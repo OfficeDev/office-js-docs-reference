@@ -38,7 +38,7 @@ items:
       content: 'readonly bottom: Excel.ConditionalRangeBorder;'
       return:
         type:
-          - Excel.ConditionalRangeBorder
+          - excel.Excel.ConditionalRangeBorder
   - uid: excel.Excel.ConditionalRangeBorderCollection.count
     summary: |-
       Number of border objects in the collection. Read-only.
@@ -68,13 +68,13 @@ items:
       content: 'getItem(index: Excel.ConditionalRangeBorderIndex): Excel.ConditionalRangeBorder;'
       return:
         type:
-          - Excel.ConditionalRangeBorder
+          - excel.Excel.ConditionalRangeBorder
         description: ''
       parameters:
         - id: index
           description: Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
           type:
-            - Excel.ConditionalRangeBorderIndex
+            - excel.Excel.ConditionalRangeBorderIndex
   - uid: excel.Excel.ConditionalRangeBorderCollection.getItemAt
     summary: |-
       Gets a border object using its index.
@@ -89,7 +89,7 @@ items:
       content: 'getItemAt(index: number): Excel.ConditionalRangeBorder;'
       return:
         type:
-          - Excel.ConditionalRangeBorder
+          - excel.Excel.ConditionalRangeBorder
         description: ''
       parameters:
         - id: index
@@ -122,7 +122,7 @@ items:
       content: 'readonly left: Excel.ConditionalRangeBorder;'
       return:
         type:
-          - Excel.ConditionalRangeBorder
+          - excel.Excel.ConditionalRangeBorder
   - uid: excel.Excel.ConditionalRangeBorderCollection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -156,7 +156,7 @@ items:
         Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalRangeBorderCollection;
       return:
         type:
-          - Excel.ConditionalRangeBorderCollection
+          - excel.Excel.ConditionalRangeBorderCollection
         description: ''
       parameters:
         - id: option
@@ -177,7 +177,7 @@ items:
       content: 'readonly right: Excel.ConditionalRangeBorder;'
       return:
         type:
-          - Excel.ConditionalRangeBorder
+          - excel.Excel.ConditionalRangeBorder
   - uid: excel.Excel.ConditionalRangeBorderCollection.toJSON
     name: toJSON()
     fullName: excel.Excel.ConditionalRangeBorderCollection.toJSON
@@ -188,7 +188,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;'
       return:
         type:
-          - Excel.Interfaces.ConditionalRangeBorderCollectionData
+          - excel.Excel.Interfaces.ConditionalRangeBorderCollectionData
         description: ''
   - uid: excel.Excel.ConditionalRangeBorderCollection.top
     summary: |-
@@ -204,4 +204,4 @@ items:
       content: 'readonly top: Excel.ConditionalRangeBorder;'
       return:
         type:
-          - Excel.ConditionalRangeBorder
+          - excel.Excel.ConditionalRangeBorder

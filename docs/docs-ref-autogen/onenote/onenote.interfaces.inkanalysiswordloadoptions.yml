@@ -61,7 +61,7 @@ items:
       content: 'line?: OneNote.Interfaces.InkAnalysisLineLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.InkAnalysisLineLoadOptions
+          - onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions
   - uid: onenote.OneNote.Interfaces.InkAnalysisWordLoadOptions.strokePointers
     summary: |-
       Weak references to the ink strokes that were recognized as part of this ink analysis word. Read-only.

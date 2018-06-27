@@ -40,4 +40,4 @@ items:
       content: 'view?: Visio.Interfaces.ShapeViewUpdateData;'
       return:
         type:
-          - Visio.Interfaces.ShapeViewUpdateData
+          - visio.Visio.Interfaces.ShapeViewUpdateData

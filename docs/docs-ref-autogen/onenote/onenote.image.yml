@@ -158,13 +158,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.ImageLoadOptions): OneNote.Image;'
       return:
         type:
-          - OneNote.Image
+          - onenote.OneNote.Image
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OneNote.Interfaces.ImageLoadOptions
+            - onenote.OneNote.Interfaces.ImageLoadOptions
     remarks: |
 
 
@@ -303,7 +303,7 @@ items:
       content: 'readonly ocrData: OneNote.ImageOcrData;'
       return:
         type:
-          - OneNote.ImageOcrData
+          - onenote.OneNote.ImageOcrData
   - uid: onenote.OneNote.Image.pageContent
     summary: >-
       Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent.
@@ -320,7 +320,7 @@ items:
       content: 'readonly pageContent: OneNote.PageContent;'
       return:
         type:
-          - OneNote.PageContent
+          - onenote.OneNote.PageContent
   - uid: onenote.OneNote.Image.paragraph
     summary: >-
       Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
@@ -337,7 +337,7 @@ items:
       content: 'readonly paragraph: OneNote.Paragraph;'
       return:
         type:
-          - OneNote.Paragraph
+          - onenote.OneNote.Paragraph
   - uid: onenote.OneNote.Image.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -379,7 +379,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.ImageData;'
       return:
         type:
-          - OneNote.Interfaces.ImageData
+          - onenote.OneNote.Interfaces.ImageData
         description: ''
   - uid: onenote.OneNote.Image.track
     summary: >-
@@ -397,7 +397,7 @@ items:
       content: 'track(): OneNote.Image;'
       return:
         type:
-          - OneNote.Image
+          - onenote.OneNote.Image
         description: ''
   - uid: onenote.OneNote.Image.untrack
     summary: >-
@@ -414,7 +414,7 @@ items:
       content: 'untrack(): OneNote.Image;'
       return:
         type:
-          - OneNote.Image
+          - onenote.OneNote.Image
         description: ''
   - uid: onenote.OneNote.Image.width
     summary: |-

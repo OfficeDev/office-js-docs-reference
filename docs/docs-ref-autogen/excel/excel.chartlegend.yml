@@ -41,7 +41,7 @@ items:
       content: 'readonly format: Excel.ChartLegendFormat;'
       return:
         type:
-          - Excel.ChartLegendFormat
+          - excel.Excel.ChartLegendFormat
   - uid: excel.Excel.ChartLegend.height
     summary: |-
       Represents the height, in points, of the legend on the chart. Null if legend is not visible.
@@ -86,7 +86,7 @@ items:
       content: 'readonly legendEntries: Excel.ChartLegendEntryCollection;'
       return:
         type:
-          - Excel.ChartLegendEntryCollection
+          - excel.Excel.ChartLegendEntryCollection
   - uid: excel.Excel.ChartLegend.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -164,13 +164,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartLegendLoadOptions): Excel.ChartLegend;'
       return:
         type:
-          - Excel.ChartLegend
+          - excel.Excel.ChartLegend
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartLegendLoadOptions
+            - excel.Excel.Interfaces.ChartLegendLoadOptions
   - uid: excel.Excel.ChartLegend.overlay
     summary: |-
       Boolean value for whether the chart legend should overlap with the main body of the chart.
@@ -230,7 +230,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartLegend.showShadow
     summary: |-
       Represents if the legend has a shadow on the chart.
@@ -256,7 +256,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartLegendData;'
       return:
         type:
-          - Excel.Interfaces.ChartLegendData
+          - excel.Excel.Interfaces.ChartLegendData
         description: ''
   - uid: excel.Excel.ChartLegend.top
     summary: |-

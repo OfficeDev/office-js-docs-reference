@@ -24,7 +24,7 @@ items:
       content: '[index: number]: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
         description: ''
       parameters:
         - id: index
@@ -41,7 +41,7 @@ items:
       content: 'blackCircle: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.FiveQuartersSet.circleWithOneWhiteQuarter
     name: circleWithOneWhiteQuarter
     fullName: excel.Excel.FiveQuartersSet.circleWithOneWhiteQuarter
@@ -52,7 +52,7 @@ items:
       content: 'circleWithOneWhiteQuarter: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.FiveQuartersSet.circleWithThreeWhiteQuarters
     name: circleWithThreeWhiteQuarters
     fullName: excel.Excel.FiveQuartersSet.circleWithThreeWhiteQuarters
@@ -63,7 +63,7 @@ items:
       content: 'circleWithThreeWhiteQuarters: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.FiveQuartersSet.circleWithTwoWhiteQuarters
     name: circleWithTwoWhiteQuarters
     fullName: excel.Excel.FiveQuartersSet.circleWithTwoWhiteQuarters
@@ -74,7 +74,7 @@ items:
       content: 'circleWithTwoWhiteQuarters: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.FiveQuartersSet.whiteCircleAllWhiteQuarters
     name: whiteCircleAllWhiteQuarters
     fullName: excel.Excel.FiveQuartersSet.whiteCircleAllWhiteQuarters
@@ -85,4 +85,4 @@ items:
       content: 'whiteCircleAllWhiteQuarters: Icon;'
       return:
         type:
-          - Icon
+          - excel.Excel.Icon

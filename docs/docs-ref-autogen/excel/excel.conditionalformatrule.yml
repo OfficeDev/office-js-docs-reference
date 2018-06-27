@@ -112,13 +112,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ConditionalFormatRuleLoadOptions): Excel.ConditionalFormatRule;'
       return:
         type:
-          - Excel.ConditionalFormatRule
+          - excel.Excel.ConditionalFormatRule
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ConditionalFormatRuleLoadOptions
+            - excel.Excel.Interfaces.ConditionalFormatRuleLoadOptions
   - uid: excel.Excel.ConditionalFormatRule.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -148,7 +148,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalFormatRule.toJSON
     name: toJSON()
     fullName: excel.Excel.ConditionalFormatRule.toJSON
@@ -159,5 +159,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalFormatRuleData;'
       return:
         type:
-          - Excel.Interfaces.ConditionalFormatRuleData
+          - excel.Excel.Interfaces.ConditionalFormatRuleData
         description: ''

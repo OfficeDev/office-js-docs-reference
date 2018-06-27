@@ -34,13 +34,13 @@ items:
       content: 'add(type?: Excel.ChartTrendlineType): Excel.ChartTrendline;'
       return:
         type:
-          - Excel.ChartTrendline
+          - excel.Excel.ChartTrendline
         description: ''
       parameters:
         - id: type
           description: Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
           type:
-            - Excel.ChartTrendlineType
+            - excel.Excel.ChartTrendlineType
     remarks: |
 
 
@@ -88,7 +88,7 @@ items:
       content: 'getItem(index: number): Excel.ChartTrendline;'
       return:
         type:
-          - Excel.ChartTrendline
+          - excel.Excel.ChartTrendline
         description: ''
       parameters:
         - id: index
@@ -140,7 +140,7 @@ items:
         Excel.ChartTrendlineCollection;
       return:
         type:
-          - Excel.ChartTrendlineCollection
+          - excel.Excel.ChartTrendlineCollection
         description: ''
       parameters:
         - id: option
@@ -157,5 +157,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartTrendlineCollectionData;'
       return:
         type:
-          - Excel.Interfaces.ChartTrendlineCollectionData
+          - excel.Excel.Interfaces.ChartTrendlineCollectionData
         description: ''

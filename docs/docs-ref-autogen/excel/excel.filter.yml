@@ -49,7 +49,7 @@ items:
         - id: criteria
           description: The criteria to apply.
           type:
-            - Excel.FilterCriteria
+            - excel.Excel.FilterCriteria
   - uid: excel.Excel.Filter.applyBottomItemsFilter
     summary: |-
       Apply a "Bottom Item" filter to the column for the given number of elements.
@@ -141,7 +141,7 @@ items:
         - id: oper
           description: Optional. The operator that describes how the two criteria are joined.
           type:
-            - Excel.FilterOperator
+            - excel.Excel.FilterOperator
   - uid: excel.Excel.Filter.applyDynamicFilter
     summary: |-
       Apply a "Dynamic" filter to the column.
@@ -162,7 +162,7 @@ items:
         - id: criteria
           description: The dynamic criteria to apply.
           type:
-            - Excel.DynamicFilterCriteria
+            - excel.Excel.DynamicFilterCriteria
   - uid: excel.Excel.Filter.applyFontColorFilter
     summary: |-
       Apply a "Font Color" filter to the column for the given color.
@@ -204,7 +204,7 @@ items:
         - id: icon
           description: The icons of the cells to show.
           type:
-            - Excel.Icon
+            - excel.Excel.Icon
   - uid: excel.Excel.Filter.applyTopItemsFilter
     summary: |-
       Apply a "Top Item" filter to the column for the given number of elements.
@@ -298,7 +298,7 @@ items:
       content: 'readonly criteria: Excel.FilterCriteria;'
       return:
         type:
-          - Excel.FilterCriteria
+          - excel.Excel.FilterCriteria
   - uid: excel.Excel.Filter.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -330,13 +330,13 @@ items:
       content: 'load(option?: Excel.Interfaces.FilterLoadOptions): Excel.Filter;'
       return:
         type:
-          - Excel.Filter
+          - excel.Excel.Filter
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.FilterLoadOptions
+            - excel.Excel.Interfaces.FilterLoadOptions
   - uid: excel.Excel.Filter.toJSON
     name: toJSON()
     fullName: excel.Excel.Filter.toJSON
@@ -347,5 +347,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.FilterData;'
       return:
         type:
-          - Excel.Interfaces.FilterData
+          - excel.Excel.Interfaces.FilterData
         description: ''

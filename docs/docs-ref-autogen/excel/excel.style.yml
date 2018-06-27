@@ -53,7 +53,7 @@ items:
       content: 'readonly borders: Excel.RangeBorderCollection;'
       return:
         type:
-          - Excel.RangeBorderCollection
+          - excel.Excel.RangeBorderCollection
   - uid: excel.Excel.Style.builtIn
     summary: |-
       Indicates if the style is a built-in style.
@@ -117,7 +117,7 @@ items:
       content: 'readonly fill: Excel.RangeFill;'
       return:
         type:
-          - Excel.RangeFill
+          - excel.Excel.RangeFill
   - uid: excel.Excel.Style.font
     summary: |-
       A Font object that represents the font of the style.
@@ -132,7 +132,7 @@ items:
       content: 'readonly font: Excel.RangeFont;'
       return:
         type:
-          - Excel.RangeFont
+          - excel.Excel.RangeFont
     remarks: |
 
 
@@ -372,13 +372,13 @@ items:
       content: 'load(option?: Excel.Interfaces.StyleLoadOptions): Excel.Style;'
       return:
         type:
-          - Excel.Style
+          - excel.Excel.Style
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.StyleLoadOptions
+            - excel.Excel.Interfaces.StyleLoadOptions
   - uid: excel.Excel.Style.locked
     summary: |-
       Indicates if the object is locked when the worksheet is protected.
@@ -483,7 +483,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Style.shrinkToFit
     summary: |-
       Indicates if text automatically shrinks to fit in the available column width.
@@ -509,7 +509,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.StyleData;'
       return:
         type:
-          - Excel.Interfaces.StyleData
+          - excel.Excel.Interfaces.StyleData
         description: ''
   - uid: excel.Excel.Style.verticalAlignment
     summary: |-

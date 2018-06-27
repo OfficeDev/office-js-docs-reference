@@ -49,13 +49,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartLegendEntryLoadOptions): Excel.ChartLegendEntry;'
       return:
         type:
-          - Excel.ChartLegendEntry
+          - excel.Excel.ChartLegendEntry
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartLegendEntryLoadOptions
+            - excel.Excel.Interfaces.ChartLegendEntryLoadOptions
   - uid: excel.Excel.ChartLegendEntry.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -85,7 +85,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartLegendEntry.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartLegendEntry.toJSON
@@ -96,7 +96,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartLegendEntryData;'
       return:
         type:
-          - Excel.Interfaces.ChartLegendEntryData
+          - excel.Excel.Interfaces.ChartLegendEntryData
         description: ''
   - uid: excel.Excel.ChartLegendEntry.visible
     summary: |-

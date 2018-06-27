@@ -52,7 +52,7 @@ items:
       content: 'getByTitle(title: string): OneNote.PageCollection;'
       return:
         type:
-          - OneNote.PageCollection
+          - onenote.OneNote.PageCollection
         description: ''
       parameters:
         - id: title
@@ -117,7 +117,7 @@ items:
       content: 'getItem(index: number | string): OneNote.Page;'
       return:
         type:
-          - OneNote.Page
+          - onenote.OneNote.Page
         description: ''
       parameters:
         - id: index
@@ -138,7 +138,7 @@ items:
       content: 'getItemAt(index: number): OneNote.Page;'
       return:
         type:
-          - OneNote.Page
+          - onenote.OneNote.Page
         description: ''
       parameters:
         - id: index
@@ -172,7 +172,7 @@ items:
         OneNote.PageCollection;
       return:
         type:
-          - OneNote.PageCollection
+          - onenote.OneNote.PageCollection
         description: ''
       parameters:
         - id: option
@@ -221,7 +221,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.PageCollectionData;'
       return:
         type:
-          - OneNote.Interfaces.PageCollectionData
+          - onenote.OneNote.Interfaces.PageCollectionData
         description: ''
   - uid: onenote.OneNote.PageCollection.track
     summary: >-
@@ -239,7 +239,7 @@ items:
       content: 'track(): OneNote.PageCollection;'
       return:
         type:
-          - OneNote.PageCollection
+          - onenote.OneNote.PageCollection
         description: ''
   - uid: onenote.OneNote.PageCollection.untrack
     summary: >-
@@ -256,5 +256,5 @@ items:
       content: 'untrack(): OneNote.PageCollection;'
       return:
         type:
-          - OneNote.PageCollection
+          - onenote.OneNote.PageCollection
         description: ''

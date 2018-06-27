@@ -33,7 +33,7 @@ items:
       content: 'readonly format: Excel.ConditionalRangeFormat;'
       return:
         type:
-          - Excel.ConditionalRangeFormat
+          - excel.Excel.ConditionalRangeFormat
     remarks: |
 
 
@@ -82,13 +82,13 @@ items:
       content: 'load(option?: Excel.Interfaces.CellValueConditionalFormatLoadOptions): Excel.CellValueConditionalFormat;'
       return:
         type:
-          - Excel.CellValueConditionalFormat
+          - excel.Excel.CellValueConditionalFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.CellValueConditionalFormatLoadOptions
+            - excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions
   - uid: excel.Excel.CellValueConditionalFormat.rule
     summary: |-
       Represents the Rule object on this conditional format.
@@ -103,7 +103,7 @@ items:
       content: 'rule: Excel.ConditionalCellValueRule;'
       return:
         type:
-          - Excel.ConditionalCellValueRule
+          - excel.Excel.ConditionalCellValueRule
     remarks: |
 
 
@@ -150,7 +150,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.CellValueConditionalFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.CellValueConditionalFormat.toJSON
@@ -161,5 +161,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.CellValueConditionalFormatData;'
       return:
         type:
-          - Excel.Interfaces.CellValueConditionalFormatData
+          - excel.Excel.Interfaces.CellValueConditionalFormatData
         description: ''

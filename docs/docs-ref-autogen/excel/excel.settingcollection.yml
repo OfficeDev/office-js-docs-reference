@@ -38,7 +38,7 @@ items:
       content: 'add(key: string, value: string | number | boolean | Date | Array<any> | any): Excel.Setting;'
       return:
         type:
-          - Excel.Setting
+          - excel.Excel.Setting
         description: ''
       parameters:
         - id: key
@@ -93,7 +93,7 @@ items:
       content: 'getItem(key: string): Excel.Setting;'
       return:
         type:
-          - Excel.Setting
+          - excel.Excel.Setting
         description: ''
       parameters:
         - id: key
@@ -114,7 +114,7 @@ items:
       content: 'getItemOrNullObject(key: string): Excel.Setting;'
       return:
         type:
-          - Excel.Setting
+          - excel.Excel.Setting
         description: ''
       parameters:
         - id: key
@@ -189,7 +189,7 @@ items:
         Excel.SettingCollection;
       return:
         type:
-          - Excel.SettingCollection
+          - excel.Excel.SettingCollection
         description: ''
       parameters:
         - id: option
@@ -235,5 +235,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.SettingCollectionData;'
       return:
         type:
-          - Excel.Interfaces.SettingCollectionData
+          - excel.Excel.Interfaces.SettingCollectionData
         description: ''

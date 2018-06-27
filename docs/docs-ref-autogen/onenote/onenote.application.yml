@@ -48,7 +48,7 @@ items:
       content: 'getActiveNotebook(): OneNote.Notebook;'
       return:
         type:
-          - OneNote.Notebook
+          - onenote.OneNote.Notebook
         description: ''
     remarks: |
 
@@ -96,7 +96,7 @@ items:
       content: 'getActiveNotebookOrNull(): OneNote.Notebook;'
       return:
         type:
-          - OneNote.Notebook
+          - onenote.OneNote.Notebook
         description: ''
     remarks: |
 
@@ -145,7 +145,7 @@ items:
       content: 'getActiveOutline(): OneNote.Outline;'
       return:
         type:
-          - OneNote.Outline
+          - onenote.OneNote.Outline
         description: ''
     remarks: |
 
@@ -190,7 +190,7 @@ items:
       content: 'getActiveOutlineOrNull(): OneNote.Outline;'
       return:
         type:
-          - OneNote.Outline
+          - onenote.OneNote.Outline
         description: ''
     remarks: |
 
@@ -236,7 +236,7 @@ items:
       content: 'getActivePage(): OneNote.Page;'
       return:
         type:
-          - OneNote.Page
+          - onenote.OneNote.Page
         description: ''
     remarks: |
 
@@ -284,7 +284,7 @@ items:
       content: 'getActivePageOrNull(): OneNote.Page;'
       return:
         type:
-          - OneNote.Page
+          - onenote.OneNote.Page
         description: ''
     remarks: |
 
@@ -333,7 +333,7 @@ items:
       content: 'getActiveParagraph(): OneNote.Paragraph;'
       return:
         type:
-          - OneNote.Paragraph
+          - onenote.OneNote.Paragraph
         description: ''
   - uid: onenote.OneNote.Application.getActiveParagraphOrNull
     summary: |-
@@ -349,7 +349,7 @@ items:
       content: 'getActiveParagraphOrNull(): OneNote.Paragraph;'
       return:
         type:
-          - OneNote.Paragraph
+          - onenote.OneNote.Paragraph
         description: ''
   - uid: onenote.OneNote.Application.getActiveSection
     summary: |-
@@ -365,7 +365,7 @@ items:
       content: 'getActiveSection(): OneNote.Section;'
       return:
         type:
-          - OneNote.Section
+          - onenote.OneNote.Section
         description: ''
     remarks: |
 
@@ -413,7 +413,7 @@ items:
       content: 'getActiveSectionOrNull(): OneNote.Section;'
       return:
         type:
-          - OneNote.Section
+          - onenote.OneNote.Section
         description: ''
     remarks: |
 
@@ -461,7 +461,7 @@ items:
       content: 'getSelectedPages(): OneNote.PageCollection;'
       return:
         type:
-          - OneNote.PageCollection
+          - onenote.OneNote.PageCollection
         description: ''
   - uid: onenote.OneNote.Application.getWindowSize
     name: getWindowSize()
@@ -532,7 +532,7 @@ items:
         - id: page
           description: The page to open.
           type:
-            - OneNote.Page
+            - onenote.OneNote.Page
     remarks: |
 
 
@@ -583,7 +583,7 @@ items:
       content: 'navigateToPageWithClientUrl(url: string): OneNote.Page;'
       return:
         type:
-          - OneNote.Page
+          - onenote.OneNote.Page
         description: ''
       parameters:
         - id: url
@@ -642,7 +642,7 @@ items:
       content: 'readonly notebooks: OneNote.NotebookCollection;'
       return:
         type:
-          - OneNote.NotebookCollection
+          - onenote.OneNote.NotebookCollection
   - uid: onenote.OneNote.Application.toJSON
     name: toJSON()
     fullName: onenote.OneNote.Application.toJSON

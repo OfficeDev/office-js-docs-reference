@@ -40,7 +40,7 @@ items:
       content: 'readonly format: Excel.ChartDataLabelFormat;'
       return:
         type:
-          - Excel.ChartDataLabelFormat
+          - excel.Excel.ChartDataLabelFormat
   - uid: excel.Excel.ChartDataLabels.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -97,13 +97,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartDataLabelsLoadOptions): Excel.ChartDataLabels;'
       return:
         type:
-          - Excel.ChartDataLabels
+          - excel.Excel.ChartDataLabels
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartDataLabelsLoadOptions
+            - excel.Excel.Interfaces.ChartDataLabelsLoadOptions
   - uid: excel.Excel.ChartDataLabels.position
     summary: >-
       DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
@@ -169,7 +169,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartDataLabels.showBubbleSize
     summary: |-
       Boolean value representing if the data label bubble size is visible or not.
@@ -270,5 +270,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartDataLabelsData;'
       return:
         type:
-          - Excel.Interfaces.ChartDataLabelsData
+          - excel.Excel.Interfaces.ChartDataLabelsData
         description: ''

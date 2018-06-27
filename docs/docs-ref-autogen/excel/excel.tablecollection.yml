@@ -43,7 +43,7 @@ items:
       content: 'add(address: Range | string, hasHeaders: boolean): Excel.Table;'
       return:
         type:
-          - Excel.Table
+          - excel.Excel.Table
         description: ''
       parameters:
         - id: address
@@ -125,7 +125,7 @@ items:
       content: 'getItem(key: string): Excel.Table;'
       return:
         type:
-          - Excel.Table
+          - excel.Excel.Table
         description: ''
       parameters:
         - id: key
@@ -181,7 +181,7 @@ items:
       content: 'getItemAt(index: number): Excel.Table;'
       return:
         type:
-          - Excel.Table
+          - excel.Excel.Table
         description: ''
       parameters:
         - id: index
@@ -221,7 +221,7 @@ items:
       content: 'getItemOrNullObject(key: string): Excel.Table;'
       return:
         type:
-          - Excel.Table
+          - excel.Excel.Table
         description: ''
       parameters:
         - id: key
@@ -318,7 +318,7 @@ items:
         Excel.TableCollection;
       return:
         type:
-          - Excel.TableCollection
+          - excel.Excel.TableCollection
         description: ''
       parameters:
         - id: option
@@ -366,5 +366,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableCollectionData;'
       return:
         type:
-          - Excel.Interfaces.TableCollectionData
+          - excel.Excel.Interfaces.TableCollectionData
         description: ''

@@ -71,7 +71,7 @@ items:
       content: 'readonly columns: Excel.TableColumnCollection;'
       return:
         type:
-          - Excel.TableColumnCollection
+          - excel.Excel.TableColumnCollection
   - uid: excel.Excel.Table.convertToRange
     summary: |-
       Converts the table into a normal range of cells. All data is preserved.
@@ -86,7 +86,7 @@ items:
       content: 'convertToRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -154,7 +154,7 @@ items:
       content: 'getDataBodyRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -191,7 +191,7 @@ items:
       content: 'getHeaderRowRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -228,7 +228,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -265,7 +265,7 @@ items:
       content: 'getTotalRowRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -435,13 +435,13 @@ items:
       content: 'load(option?: Excel.Interfaces.TableLoadOptions): Excel.Table;'
       return:
         type:
-          - Excel.Table
+          - excel.Excel.Table
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.TableLoadOptions
+            - excel.Excel.Interfaces.TableLoadOptions
   - uid: excel.Excel.Table.name
     summary: |-
       Name of the table.
@@ -549,7 +549,7 @@ items:
       content: 'readonly rows: Excel.TableRowCollection;'
       return:
         type:
-          - Excel.TableRowCollection
+          - excel.Excel.TableRowCollection
   - uid: excel.Excel.Table.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -579,7 +579,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Table.showBandedColumns
     summary: >-
       Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even
@@ -675,7 +675,7 @@ items:
       content: 'readonly sort: Excel.TableSort;'
       return:
         type:
-          - Excel.TableSort
+          - excel.Excel.TableSort
   - uid: excel.Excel.Table.style
     summary: >-
       Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
@@ -704,7 +704,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableData;'
       return:
         type:
-          - Excel.Interfaces.TableData
+          - excel.Excel.Interfaces.TableData
         description: ''
   - uid: excel.Excel.Table.worksheet
     summary: |-
@@ -720,4 +720,4 @@ items:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet

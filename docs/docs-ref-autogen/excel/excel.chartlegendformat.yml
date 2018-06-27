@@ -33,7 +33,7 @@ items:
       content: 'readonly fill: Excel.ChartFill;'
       return:
         type:
-          - Excel.ChartFill
+          - excel.Excel.ChartFill
   - uid: excel.Excel.ChartLegendFormat.font
     summary: |-
       Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
@@ -48,7 +48,7 @@ items:
       content: 'readonly font: Excel.ChartFont;'
       return:
         type:
-          - Excel.ChartFont
+          - excel.Excel.ChartFont
     remarks: |
 
 
@@ -104,13 +104,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartLegendFormatLoadOptions): Excel.ChartLegendFormat;'
       return:
         type:
-          - Excel.ChartLegendFormat
+          - excel.Excel.ChartLegendFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartLegendFormatLoadOptions
+            - excel.Excel.Interfaces.ChartLegendFormatLoadOptions
   - uid: excel.Excel.ChartLegendFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -140,7 +140,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartLegendFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartLegendFormat.toJSON
@@ -151,5 +151,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartLegendFormatData;'
       return:
         type:
-          - Excel.Interfaces.ChartLegendFormatData
+          - excel.Excel.Interfaces.ChartLegendFormatData
         description: ''

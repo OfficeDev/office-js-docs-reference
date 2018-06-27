@@ -41,7 +41,7 @@ items:
       content: 'debugInfo: DebugInfo;'
       return:
         type:
-          - DebugInfo
+          - office.OfficeExtension.DebugInfo
   - uid: office.OfficeExtension.Error.innerError
     summary: 'Inner error, if applicable.'
     name: innerError

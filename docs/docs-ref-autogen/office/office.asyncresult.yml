@@ -166,7 +166,7 @@ items:
       content: 'status: AsyncResultStatus;'
       return:
         type:
-          - AsyncResultStatus
+          - office.Office.AsyncResultStatus
   - uid: office.Office.AsyncResult.value
     summary: 'Gets the payload or content of this asynchronous operation, if any.'
     remarks: >

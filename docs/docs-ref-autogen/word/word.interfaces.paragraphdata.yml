@@ -102,7 +102,7 @@ items:
       content: 'font?: Word.Interfaces.FontData;'
       return:
         type:
-          - Word.Interfaces.FontData
+          - word.Word.Interfaces.FontData
   - uid: word.Word.Interfaces.ParagraphData.inlinePictures
     summary: >-
       Gets the collection of inlinePicture objects in the paragraph. The collection does not include floating images.
@@ -226,7 +226,7 @@ items:
       content: 'list?: Word.Interfaces.ListData;'
       return:
         type:
-          - Word.Interfaces.ListData
+          - word.Word.Interfaces.ListData
   - uid: word.Word.Interfaces.ParagraphData.listItem
     summary: |-
       Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.
@@ -241,7 +241,7 @@ items:
       content: 'listItem?: Word.Interfaces.ListItemData;'
       return:
         type:
-          - Word.Interfaces.ListItemData
+          - word.Word.Interfaces.ListItemData
   - uid: word.Word.Interfaces.ParagraphData.listItemOrNullObject
     summary: |-
       Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only.
@@ -256,7 +256,7 @@ items:
       content: 'listItemOrNullObject?: Word.Interfaces.ListItemData;'
       return:
         type:
-          - Word.Interfaces.ListItemData
+          - word.Word.Interfaces.ListItemData
   - uid: word.Word.Interfaces.ParagraphData.listOrNullObject
     summary: |-
       Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only.
@@ -271,7 +271,7 @@ items:
       content: 'listOrNullObject?: Word.Interfaces.ListData;'
       return:
         type:
-          - Word.Interfaces.ListData
+          - word.Word.Interfaces.ListData
   - uid: word.Word.Interfaces.ParagraphData.outlineLevel
     summary: |-
       Gets or sets the outline level for the paragraph.
@@ -301,7 +301,7 @@ items:
       content: 'parentBody?: Word.Interfaces.BodyData;'
       return:
         type:
-          - Word.Interfaces.BodyData
+          - word.Word.Interfaces.BodyData
   - uid: word.Word.Interfaces.ParagraphData.parentContentControl
     summary: |-
       Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.
@@ -316,7 +316,7 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlData;'
       return:
         type:
-          - Word.Interfaces.ContentControlData
+          - word.Word.Interfaces.ContentControlData
   - uid: word.Word.Interfaces.ParagraphData.parentContentControlOrNullObject
     summary: >-
       Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content
@@ -333,7 +333,7 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;'
       return:
         type:
-          - Word.Interfaces.ContentControlData
+          - word.Word.Interfaces.ContentControlData
   - uid: word.Word.Interfaces.ParagraphData.parentTable
     summary: |-
       Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only.

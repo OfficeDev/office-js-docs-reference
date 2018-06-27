@@ -42,7 +42,7 @@ items:
         string): Excel.TableColumn;
       return:
         type:
-          - Excel.TableColumn
+          - excel.Excel.TableColumn
         description: ''
       parameters:
         - id: index
@@ -125,7 +125,7 @@ items:
       content: 'getItem(key: number | string): Excel.TableColumn;'
       return:
         type:
-          - Excel.TableColumn
+          - excel.Excel.TableColumn
         description: ''
       parameters:
         - id: key
@@ -180,7 +180,7 @@ items:
       content: 'getItemAt(index: number): Excel.TableColumn;'
       return:
         type:
-          - Excel.TableColumn
+          - excel.Excel.TableColumn
         description: ''
       parameters:
         - id: index
@@ -220,7 +220,7 @@ items:
       content: 'getItemOrNullObject(key: number | string): Excel.TableColumn;'
       return:
         type:
-          - Excel.TableColumn
+          - excel.Excel.TableColumn
         description: ''
       parameters:
         - id: key
@@ -297,7 +297,7 @@ items:
         Excel.TableColumnCollection;
       return:
         type:
-          - Excel.TableColumnCollection
+          - excel.Excel.TableColumnCollection
         description: ''
       parameters:
         - id: option
@@ -314,5 +314,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableColumnCollectionData;'
       return:
         type:
-          - Excel.Interfaces.TableColumnCollectionData
+          - excel.Excel.Interfaces.TableColumnCollectionData
         description: ''

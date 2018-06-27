@@ -81,7 +81,7 @@ items:
       content: 'getItem(name: string): Excel.Style;'
       return:
         type:
-          - Excel.Style
+          - excel.Excel.Style
         description: ''
       parameters:
         - id: name
@@ -160,7 +160,7 @@ items:
         Excel.StyleCollection;
       return:
         type:
-          - Excel.StyleCollection
+          - excel.Excel.StyleCollection
         description: ''
       parameters:
         - id: option
@@ -177,5 +177,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.StyleCollectionData;'
       return:
         type:
-          - Excel.Interfaces.StyleCollectionData
+          - excel.Excel.Interfaces.StyleCollectionData
         description: ''

@@ -54,7 +54,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -90,7 +90,7 @@ items:
       content: 'getTable(): Excel.Table;'
       return:
         type:
-          - Excel.Table
+          - excel.Excel.Table
         description: ''
     remarks: |
 
@@ -215,13 +215,13 @@ items:
       content: 'load(option?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;'
       return:
         type:
-          - Excel.Binding
+          - excel.Excel.Binding
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.BindingLoadOptions
+            - excel.Excel.Interfaces.BindingLoadOptions
   - uid: excel.Excel.Binding.onDataChanged
     summary: |-
       Occurs when data or formatting within the binding is changed.
@@ -279,7 +279,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.BindingData;'
       return:
         type:
-          - Excel.Interfaces.BindingData
+          - excel.Excel.Interfaces.BindingData
         description: ''
   - uid: excel.Excel.Binding.type
     summary: |-

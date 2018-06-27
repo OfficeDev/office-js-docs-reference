@@ -51,7 +51,7 @@ items:
       content: 'readonly inkAnalysis: OneNote.InkAnalysis;'
       return:
         type:
-          - OneNote.InkAnalysis
+          - onenote.OneNote.InkAnalysis
   - uid: onenote.OneNote.InkAnalysisParagraph.lines
     summary: |-
       Gets the ink analysis lines in this ink analysis paragraph. Read-only.
@@ -66,7 +66,7 @@ items:
       content: 'readonly lines: OneNote.InkAnalysisLineCollection;'
       return:
         type:
-          - OneNote.InkAnalysisLineCollection
+          - onenote.OneNote.InkAnalysisLineCollection
   - uid: onenote.OneNote.InkAnalysisParagraph.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -80,13 +80,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.InkAnalysisParagraphLoadOptions): OneNote.InkAnalysisParagraph;'
       return:
         type:
-          - OneNote.InkAnalysisParagraph
+          - onenote.OneNote.InkAnalysisParagraph
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OneNote.Interfaces.InkAnalysisParagraphLoadOptions
+            - onenote.OneNote.Interfaces.InkAnalysisParagraphLoadOptions
     remarks: |
 
 
@@ -163,7 +163,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.InkAnalysisParagraphData;'
       return:
         type:
-          - OneNote.Interfaces.InkAnalysisParagraphData
+          - onenote.OneNote.Interfaces.InkAnalysisParagraphData
         description: ''
   - uid: onenote.OneNote.InkAnalysisParagraph.track
     summary: >-
@@ -181,7 +181,7 @@ items:
       content: 'track(): OneNote.InkAnalysisParagraph;'
       return:
         type:
-          - OneNote.InkAnalysisParagraph
+          - onenote.OneNote.InkAnalysisParagraph
         description: ''
   - uid: onenote.OneNote.InkAnalysisParagraph.untrack
     summary: >-
@@ -198,5 +198,5 @@ items:
       content: 'untrack(): OneNote.InkAnalysisParagraph;'
       return:
         type:
-          - OneNote.InkAnalysisParagraph
+          - onenote.OneNote.InkAnalysisParagraph
         description: ''

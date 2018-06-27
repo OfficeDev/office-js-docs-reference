@@ -34,7 +34,7 @@ items:
       content: 'dataLabel?: Excel.Interfaces.ChartDataLabelLoadOptions;'
       return:
         type:
-          - Excel.Interfaces.ChartDataLabelLoadOptions
+          - excel.Excel.Interfaces.ChartDataLabelLoadOptions
   - uid: excel.Excel.Interfaces.ChartPointsCollectionLoadOptions.format
     summary: |-
       For EACH ITEM in the collection: Encapsulates the format properties chart point.
@@ -49,7 +49,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartPointFormatLoadOptions;'
       return:
         type:
-          - Excel.Interfaces.ChartPointFormatLoadOptions
+          - excel.Excel.Interfaces.ChartPointFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartPointsCollectionLoadOptions.hasDataLabel
     summary: >-
       For EACH ITEM in the collection: Represents whether a data point has a data label. Not applicable for surface

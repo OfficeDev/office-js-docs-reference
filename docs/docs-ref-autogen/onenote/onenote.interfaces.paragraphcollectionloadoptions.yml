@@ -55,7 +55,7 @@ items:
       content: 'image?: OneNote.Interfaces.ImageLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.ImageLoadOptions
+          - onenote.OneNote.Interfaces.ImageLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.inkWords
     summary: >-
       For EACH ITEM in the collection: Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is
@@ -72,7 +72,7 @@ items:
       content: 'inkWords?: OneNote.Interfaces.InkWordCollectionLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.InkWordCollectionLoadOptions
+          - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.outline
     summary: |-
       For EACH ITEM in the collection: Gets the Outline object that contains the Paragraph.
@@ -87,7 +87,7 @@ items:
       content: 'outline?: OneNote.Interfaces.OutlineLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.OutlineLoadOptions
+          - onenote.OneNote.Interfaces.OutlineLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.paragraphs
     summary: |-
       For EACH ITEM in the collection: The collection of paragraphs under this paragraph. Read only
@@ -102,7 +102,7 @@ items:
       content: 'paragraphs?: OneNote.Interfaces.ParagraphCollectionLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.ParagraphCollectionLoadOptions
+          - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.parentParagraph
     summary: |-
       For EACH ITEM in the collection: Gets the parent paragraph object. Throws if a parent paragraph does not exist.
@@ -117,7 +117,7 @@ items:
       content: 'parentParagraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.ParagraphLoadOptions
+          - onenote.OneNote.Interfaces.ParagraphLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.parentParagraphOrNull
     summary: >-
       For EACH ITEM in the collection: Gets the parent paragraph object. Returns null if a parent paragraph does not
@@ -134,7 +134,7 @@ items:
       content: 'parentParagraphOrNull?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.ParagraphLoadOptions
+          - onenote.OneNote.Interfaces.ParagraphLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.parentTableCell
     summary: >-
       For EACH ITEM in the collection: Gets the TableCell object that contains the Paragraph if one exists. If parent is
@@ -151,7 +151,7 @@ items:
       content: 'parentTableCell?: OneNote.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.TableCellLoadOptions
+          - onenote.OneNote.Interfaces.TableCellLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNull
     summary: >-
       For EACH ITEM in the collection: Gets the TableCell object that contains the Paragraph if one exists. If parent is
@@ -168,7 +168,7 @@ items:
       content: 'parentTableCellOrNull?: OneNote.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.TableCellLoadOptions
+          - onenote.OneNote.Interfaces.TableCellLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.richText
     summary: >-
       For EACH ITEM in the collection: Gets the RichText object in the Paragraph. Throws an exception if ParagraphType
@@ -185,7 +185,7 @@ items:
       content: 'richText?: OneNote.Interfaces.RichTextLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.RichTextLoadOptions
+          - onenote.OneNote.Interfaces.RichTextLoadOptions
   - uid: onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions.table
     summary: >-
       For EACH ITEM in the collection: Gets the Table object in the Paragraph. Throws an exception if ParagraphType is

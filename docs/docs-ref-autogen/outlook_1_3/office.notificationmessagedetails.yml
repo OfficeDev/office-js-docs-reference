@@ -95,4 +95,4 @@ items:
       content: 'type: Office.MailboxEnums.ItemNotificationMessageType;'
       return:
         type:
-          - Office.MailboxEnums.ItemNotificationMessageType
+          - outlook.Office.MailboxEnums.ItemNotificationMessageType

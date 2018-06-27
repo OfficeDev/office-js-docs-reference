@@ -152,4 +152,4 @@ items:
       content: 'view?: Visio.Interfaces.ShapeViewData;'
       return:
         type:
-          - Visio.Interfaces.ShapeViewData
+          - visio.Visio.Interfaces.ShapeViewData

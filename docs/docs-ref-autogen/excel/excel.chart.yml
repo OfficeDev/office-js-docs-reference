@@ -50,7 +50,7 @@ items:
       content: 'readonly axes: Excel.ChartAxes;'
       return:
         type:
-          - Excel.ChartAxes
+          - excel.Excel.ChartAxes
   - uid: excel.Excel.Chart.chartType
     summary: |-
       Represents the type of the chart. See Excel.ChartType for details.
@@ -107,7 +107,7 @@ items:
       content: 'readonly dataLabels: Excel.ChartDataLabels;'
       return:
         type:
-          - Excel.ChartDataLabels
+          - excel.Excel.ChartDataLabels
   - uid: excel.Excel.Chart.delete
     summary: |-
       Deletes the chart object.
@@ -155,7 +155,7 @@ items:
       content: 'readonly format: Excel.ChartAreaFormat;'
       return:
         type:
-          - Excel.ChartAreaFormat
+          - excel.Excel.ChartAreaFormat
   - uid: excel.Excel.Chart.getImage
     summary: >-
       Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
@@ -190,7 +190,7 @@ items:
             (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height
             and width are set).
           type:
-            - Excel.ImageFittingMode
+            - excel.Excel.ImageFittingMode
     remarks: |
 
 
@@ -267,7 +267,7 @@ items:
       content: 'readonly legend: Excel.ChartLegend;'
       return:
         type:
-          - Excel.ChartLegend
+          - excel.Excel.ChartLegend
   - uid: excel.Excel.Chart.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -365,13 +365,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartLoadOptions): Excel.Chart;'
       return:
         type:
-          - Excel.Chart
+          - excel.Excel.Chart
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartLoadOptions
+            - excel.Excel.Interfaces.ChartLoadOptions
   - uid: excel.Excel.Chart.name
     summary: |-
       Represents the name of a chart object.
@@ -401,7 +401,7 @@ items:
       content: 'readonly series: Excel.ChartSeriesCollection;'
       return:
         type:
-          - Excel.ChartSeriesCollection
+          - excel.Excel.ChartSeriesCollection
   - uid: excel.Excel.Chart.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -431,7 +431,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Chart.setData
     summary: |-
       Resets the source data for the chart.
@@ -458,7 +458,7 @@ items:
             Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
             (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
           type:
-            - Excel.ChartSeriesBy
+            - excel.Excel.ChartSeriesBy
     remarks: |
 
 
@@ -561,7 +561,7 @@ items:
       content: 'readonly title: Excel.ChartTitle;'
       return:
         type:
-          - Excel.ChartTitle
+          - excel.Excel.ChartTitle
   - uid: excel.Excel.Chart.toJSON
     name: toJSON()
     fullName: excel.Excel.Chart.toJSON
@@ -572,7 +572,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartData;'
       return:
         type:
-          - Excel.Interfaces.ChartData
+          - excel.Excel.Interfaces.ChartData
         description: ''
   - uid: excel.Excel.Chart.top
     summary: >-
@@ -620,4 +620,4 @@ items:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet

@@ -51,7 +51,7 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - Word.Interfaces.FontLoadOptions
+          - word.Word.Interfaces.FontLoadOptions
   - uid: word.Word.Interfaces.TableRowLoadOptions.horizontalAlignment
     summary: >-
       Gets and sets the horizontal alignment of every cell in the row. The value can be 'left', 'centered', 'right', or

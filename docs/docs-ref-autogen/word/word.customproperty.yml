@@ -95,7 +95,7 @@ items:
         - id: options
           description: ''
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.CustomProperty.toJSON
     name: toJSON()
     fullName: word.Word.CustomProperty.toJSON

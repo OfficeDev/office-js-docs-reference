@@ -36,7 +36,7 @@ items:
       content: 'auth: Auth;'
       return:
         type:
-          - Auth
+          - office.Office.Auth
   - uid: office.Office.Context.commerceAllowed
     summary: 'True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.'
     remarks: >-
@@ -99,7 +99,7 @@ items:
       content: 'diagnostics: ContextInformation;'
       return:
         type:
-          - ContextInformation
+          - office.Office.ContextInformation
   - uid: office.Office.Context.displayLanguage
     summary: Gets the locale (language) specified by the user for the UI of the Office host application.
     remarks: |
@@ -176,7 +176,7 @@ items:
       content: 'host: HostType;'
       return:
         type:
-          - HostType
+          - office.Office.HostType
   - uid: office.Office.Context.license
     summary: Gets the license information for the user's Office installation.
     name: license
@@ -241,7 +241,7 @@ items:
       content: 'officeTheme: OfficeTheme;'
       return:
         type:
-          - OfficeTheme
+          - office.Office.OfficeTheme
     remarks: |
 
 
@@ -270,7 +270,7 @@ items:
       content: 'platform: PlatformType;'
       return:
         type:
-          - PlatformType
+          - office.Office.PlatformType
   - uid: office.Office.Context.requirements
     summary: Provides a method for determining what requirement sets are supported on the current host and platform.
     name: requirements
@@ -282,7 +282,7 @@ items:
       content: 'requirements: RequirementSetSupport;'
       return:
         type:
-          - RequirementSetSupport
+          - office.Office.RequirementSetSupport
   - uid: office.Office.Context.roamingSettings
     summary: >-
       Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
@@ -335,4 +335,4 @@ items:
       content: 'ui: UI;'
       return:
         type:
-          - UI
+          - office.Office.UI

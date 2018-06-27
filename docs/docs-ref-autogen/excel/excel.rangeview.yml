@@ -121,7 +121,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
   - uid: excel.Excel.RangeView.index
     summary: |-
@@ -169,13 +169,13 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeViewLoadOptions): Excel.RangeView;'
       return:
         type:
-          - Excel.RangeView
+          - excel.Excel.RangeView
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.RangeViewLoadOptions
+            - excel.Excel.Interfaces.RangeViewLoadOptions
   - uid: excel.Excel.RangeView.numberFormat
     summary: |-
       Represents Excel's number format code for the given cell.
@@ -220,7 +220,7 @@ items:
       content: 'readonly rows: Excel.RangeViewCollection;'
       return:
         type:
-          - Excel.RangeViewCollection
+          - excel.Excel.RangeViewCollection
   - uid: excel.Excel.RangeView.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -250,7 +250,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.RangeView.text
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
@@ -278,7 +278,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeViewData;'
       return:
         type:
-          - Excel.Interfaces.RangeViewData
+          - excel.Excel.Interfaces.RangeViewData
         description: ''
   - uid: excel.Excel.RangeView.values
     summary: >-

@@ -48,7 +48,7 @@ items:
       content: 'readonly application: Excel.Application;'
       return:
         type:
-          - Excel.Application
+          - excel.Excel.Application
   - uid: excel.Excel.Workbook.bindings
     summary: |-
       Represents a collection of bindings that are part of the workbook. Read-only.
@@ -63,7 +63,7 @@ items:
       content: 'readonly bindings: Excel.BindingCollection;'
       return:
         type:
-          - Excel.BindingCollection
+          - excel.Excel.BindingCollection
   - uid: excel.Excel.Workbook.customXmlParts
     summary: |-
       Represents the collection of custom XML parts contained by this workbook. Read-only.
@@ -78,7 +78,7 @@ items:
       content: 'readonly customXmlParts: Excel.CustomXmlPartCollection;'
       return:
         type:
-          - Excel.CustomXmlPartCollection
+          - excel.Excel.CustomXmlPartCollection
   - uid: excel.Excel.Workbook.dataConnections
     summary: |-
       Represents all data connections in the workbook. Read-only.
@@ -93,7 +93,7 @@ items:
       content: 'readonly dataConnections: Excel.DataConnectionCollection;'
       return:
         type:
-          - Excel.DataConnectionCollection
+          - excel.Excel.DataConnectionCollection
   - uid: excel.Excel.Workbook.functions
     summary: |-
       Represents a collection of worksheet functions that can be used for computation. Read-only.
@@ -108,7 +108,7 @@ items:
       content: 'readonly functions: Excel.Functions;'
       return:
         type:
-          - Excel.Functions
+          - excel.Excel.Functions
   - uid: excel.Excel.Workbook.getActiveCell
     summary: |-
       Gets the currently active cell from the workbook.
@@ -123,7 +123,7 @@ items:
       content: 'getActiveCell(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -156,7 +156,7 @@ items:
       content: 'getSelectedRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -208,13 +208,13 @@ items:
       content: 'load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;'
       return:
         type:
-          - Excel.Workbook
+          - excel.Excel.Workbook
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.WorkbookLoadOptions
+            - excel.Excel.Interfaces.WorkbookLoadOptions
   - uid: excel.Excel.Workbook.name
     summary: |-
       Gets the workbook name. Read-only.
@@ -244,7 +244,7 @@ items:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type:
-          - Excel.NamedItemCollection
+          - excel.Excel.NamedItemCollection
   - uid: excel.Excel.Workbook.onSelectionChanged
     summary: |-
       Occurs when the selection in the document is changed.
@@ -274,7 +274,7 @@ items:
       content: 'readonly pivotTables: Excel.PivotTableCollection;'
       return:
         type:
-          - Excel.PivotTableCollection
+          - excel.Excel.PivotTableCollection
   - uid: excel.Excel.Workbook.properties
     summary: |-
       Gets the workbook properties. Read-only.
@@ -289,7 +289,7 @@ items:
       content: 'readonly properties: Excel.DocumentProperties;'
       return:
         type:
-          - Excel.DocumentProperties
+          - excel.Excel.DocumentProperties
     remarks: |
 
 
@@ -335,7 +335,7 @@ items:
       content: 'readonly protection: Excel.WorkbookProtection;'
       return:
         type:
-          - Excel.WorkbookProtection
+          - excel.Excel.WorkbookProtection
   - uid: excel.Excel.Workbook.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -365,7 +365,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Workbook.settings
     summary: |-
       Represents a collection of Settings associated with the workbook. Read-only.
@@ -380,7 +380,7 @@ items:
       content: 'readonly settings: Excel.SettingCollection;'
       return:
         type:
-          - Excel.SettingCollection
+          - excel.Excel.SettingCollection
   - uid: excel.Excel.Workbook.styles
     summary: |-
       Represents a collection of styles associated with the workbook. Read-only.
@@ -395,7 +395,7 @@ items:
       content: 'readonly styles: Excel.StyleCollection;'
       return:
         type:
-          - Excel.StyleCollection
+          - excel.Excel.StyleCollection
   - uid: excel.Excel.Workbook.tables
     summary: |-
       Represents a collection of tables associated with the workbook. Read-only.
@@ -410,7 +410,7 @@ items:
       content: 'readonly tables: Excel.TableCollection;'
       return:
         type:
-          - Excel.TableCollection
+          - excel.Excel.TableCollection
   - uid: excel.Excel.Workbook.toJSON
     name: toJSON()
     fullName: excel.Excel.Workbook.toJSON
@@ -421,7 +421,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorkbookData;'
       return:
         type:
-          - Excel.Interfaces.WorkbookData
+          - excel.Excel.Interfaces.WorkbookData
         description: ''
   - uid: excel.Excel.Workbook.worksheets
     summary: |-
@@ -437,4 +437,4 @@ items:
       content: 'readonly worksheets: Excel.WorksheetCollection;'
       return:
         type:
-          - Excel.WorksheetCollection
+          - excel.Excel.WorksheetCollection

@@ -27,7 +27,7 @@ items:
         - id: options
           description: ''
           type:
-            - EmbeddedOptions
+            - office.OfficeExtension.EmbeddedOptions
   - uid: office.OfficeExtension.EmbeddedSession.init
     name: init()
     fullName: office.OfficeExtension.EmbeddedSession.init

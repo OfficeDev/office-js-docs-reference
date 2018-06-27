@@ -34,7 +34,7 @@ items:
       content: 'readonly font: Excel.ChartFont;'
       return:
         type:
-          - Excel.ChartFont
+          - excel.Excel.ChartFont
   - uid: excel.Excel.ChartFormatString.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -66,13 +66,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartFormatStringLoadOptions): Excel.ChartFormatString;'
       return:
         type:
-          - Excel.ChartFormatString
+          - excel.Excel.ChartFormatString
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartFormatStringLoadOptions
+            - excel.Excel.Interfaces.ChartFormatStringLoadOptions
   - uid: excel.Excel.ChartFormatString.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -102,7 +102,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartFormatString.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartFormatString.toJSON
@@ -113,5 +113,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartFormatStringData;'
       return:
         type:
-          - Excel.Interfaces.ChartFormatStringData
+          - excel.Excel.Interfaces.ChartFormatStringData
         description: ''

@@ -44,7 +44,7 @@ items:
       content: 'add(name?: string): Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: name
@@ -87,7 +87,7 @@ items:
       content: 'getActiveWorksheet(): Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
     remarks: |
 
@@ -143,7 +143,7 @@ items:
       content: 'getFirst(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: visibleOnly
@@ -195,7 +195,7 @@ items:
       content: 'getItem(key: string): Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: key
@@ -216,7 +216,7 @@ items:
       content: 'getItemOrNullObject(key: string): Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: key
@@ -237,7 +237,7 @@ items:
       content: 'getLast(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: visibleOnly
@@ -345,7 +345,7 @@ items:
         Excel.WorksheetCollection;
       return:
         type:
-          - Excel.WorksheetCollection
+          - excel.Excel.WorksheetCollection
         description: ''
       parameters:
         - id: option
@@ -470,5 +470,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorksheetCollectionData;'
       return:
         type:
-          - Excel.Interfaces.WorksheetCollectionData
+          - excel.Excel.Interfaces.WorksheetCollectionData
         description: ''

@@ -85,13 +85,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartBorderLoadOptions): Excel.ChartBorder;'
       return:
         type:
-          - Excel.ChartBorder
+          - excel.Excel.ChartBorder
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartBorderLoadOptions
+            - excel.Excel.Interfaces.ChartBorderLoadOptions
   - uid: excel.Excel.ChartBorder.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -121,7 +121,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartBorder.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartBorder.toJSON
@@ -132,7 +132,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartBorderData;'
       return:
         type:
-          - Excel.Interfaces.ChartBorderData
+          - excel.Excel.Interfaces.ChartBorderData
         description: ''
   - uid: excel.Excel.ChartBorder.weight
     summary: |-

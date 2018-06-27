@@ -49,7 +49,7 @@ items:
       content: 'getItem(Key: number | string): Visio.Hyperlink;'
       return:
         type:
-          - Visio.Hyperlink
+          - visio.Visio.Hyperlink
         description: ''
       parameters:
         - id: Key
@@ -83,7 +83,7 @@ items:
         Visio.HyperlinkCollection;
       return:
         type:
-          - Visio.HyperlinkCollection
+          - visio.Visio.HyperlinkCollection
         description: ''
       parameters:
         - id: option
@@ -126,5 +126,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.HyperlinkCollectionData;'
       return:
         type:
-          - Visio.Interfaces.HyperlinkCollectionData
+          - visio.Visio.Interfaces.HyperlinkCollectionData
         description: ''

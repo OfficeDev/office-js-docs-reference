@@ -49,7 +49,7 @@ items:
       content: 'getItemAt(index: number): Excel.RangeView;'
       return:
         type:
-          - Excel.RangeView
+          - excel.Excel.RangeView
         description: ''
       parameters:
         - id: index
@@ -101,7 +101,7 @@ items:
         Excel.RangeViewCollection;
       return:
         type:
-          - Excel.RangeViewCollection
+          - excel.Excel.RangeViewCollection
         description: ''
       parameters:
         - id: option
@@ -118,5 +118,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeViewCollectionData;'
       return:
         type:
-          - Excel.Interfaces.RangeViewCollectionData
+          - excel.Excel.Interfaces.RangeViewCollectionData
         description: ''

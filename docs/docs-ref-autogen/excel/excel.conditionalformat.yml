@@ -56,7 +56,7 @@ items:
       content: 'readonly cellValue: Excel.CellValueConditionalFormat;'
       return:
         type:
-          - Excel.CellValueConditionalFormat
+          - excel.Excel.CellValueConditionalFormat
     remarks: |
 
 
@@ -90,7 +90,7 @@ items:
       content: 'readonly cellValueOrNullObject: Excel.CellValueConditionalFormat;'
       return:
         type:
-          - Excel.CellValueConditionalFormat
+          - excel.Excel.CellValueConditionalFormat
   - uid: excel.Excel.ConditionalFormat.colorScale
     summary: >-
       Returns the ColorScale conditional format properties if the current conditional format is an ColorScale type.
@@ -107,7 +107,7 @@ items:
       content: 'readonly colorScale: Excel.ColorScaleConditionalFormat;'
       return:
         type:
-          - Excel.ColorScaleConditionalFormat
+          - excel.Excel.ColorScaleConditionalFormat
     remarks: |
 
 
@@ -145,7 +145,7 @@ items:
       content: 'readonly colorScaleOrNullObject: Excel.ColorScaleConditionalFormat;'
       return:
         type:
-          - Excel.ColorScaleConditionalFormat
+          - excel.Excel.ColorScaleConditionalFormat
   - uid: excel.Excel.ConditionalFormat.custom
     summary: |-
       Returns the custom conditional format properties if the current conditional format is a custom type. Read-only.
@@ -160,7 +160,7 @@ items:
       content: 'readonly custom: Excel.CustomConditionalFormat;'
       return:
         type:
-          - Excel.CustomConditionalFormat
+          - excel.Excel.CustomConditionalFormat
     remarks: |
 
 
@@ -191,7 +191,7 @@ items:
       content: 'readonly customOrNullObject: Excel.CustomConditionalFormat;'
       return:
         type:
-          - Excel.CustomConditionalFormat
+          - excel.Excel.CustomConditionalFormat
   - uid: excel.Excel.ConditionalFormat.dataBar
     summary: |-
       Returns the data bar properties if the current conditional format is a data bar. Read-only.
@@ -206,7 +206,7 @@ items:
       content: 'readonly dataBar: Excel.DataBarConditionalFormat;'
       return:
         type:
-          - Excel.DataBarConditionalFormat
+          - excel.Excel.DataBarConditionalFormat
     remarks: |
 
 
@@ -237,7 +237,7 @@ items:
       content: 'readonly dataBarOrNullObject: Excel.DataBarConditionalFormat;'
       return:
         type:
-          - Excel.DataBarConditionalFormat
+          - excel.Excel.DataBarConditionalFormat
   - uid: excel.Excel.ConditionalFormat.delete
     summary: |-
       Deletes this conditional format.
@@ -268,7 +268,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -323,7 +323,7 @@ items:
       content: 'getRangeOrNullObject(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
   - uid: excel.Excel.ConditionalFormat.iconSet
     summary: |-
@@ -339,7 +339,7 @@ items:
       content: 'readonly iconSet: Excel.IconSetConditionalFormat;'
       return:
         type:
-          - Excel.IconSetConditionalFormat
+          - excel.Excel.IconSetConditionalFormat
     remarks: |
 
 
@@ -399,7 +399,7 @@ items:
       content: 'readonly iconSetOrNullObject: Excel.IconSetConditionalFormat;'
       return:
         type:
-          - Excel.IconSetConditionalFormat
+          - excel.Excel.IconSetConditionalFormat
   - uid: excel.Excel.ConditionalFormat.id
     summary: |-
       The Priority of the Conditional Format within the current ConditionalFormatCollection. Read-only.
@@ -446,13 +446,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ConditionalFormatLoadOptions): Excel.ConditionalFormat;'
       return:
         type:
-          - Excel.ConditionalFormat
+          - excel.Excel.ConditionalFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ConditionalFormatLoadOptions
+            - excel.Excel.Interfaces.ConditionalFormatLoadOptions
   - uid: excel.Excel.ConditionalFormat.preset
     summary: |-
       Returns the preset criteria conditional format. See Excel.PresetCriteriaConditionalFormat for more details.
@@ -467,7 +467,7 @@ items:
       content: 'readonly preset: Excel.PresetCriteriaConditionalFormat;'
       return:
         type:
-          - Excel.PresetCriteriaConditionalFormat
+          - excel.Excel.PresetCriteriaConditionalFormat
     remarks: |
 
 
@@ -499,7 +499,7 @@ items:
       content: 'readonly presetOrNullObject: Excel.PresetCriteriaConditionalFormat;'
       return:
         type:
-          - Excel.PresetCriteriaConditionalFormat
+          - excel.Excel.PresetCriteriaConditionalFormat
   - uid: excel.Excel.ConditionalFormat.priority
     summary: >-
       The priority (or index) within the conditional format collection that this conditional format currently exists in.
@@ -549,7 +549,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalFormat.stopIfTrue
     summary: >-
       If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.
@@ -583,7 +583,7 @@ items:
       content: 'readonly textComparison: Excel.TextConditionalFormat;'
       return:
         type:
-          - Excel.TextConditionalFormat
+          - excel.Excel.TextConditionalFormat
     remarks: |
 
 
@@ -617,7 +617,7 @@ items:
       content: 'readonly textComparisonOrNullObject: Excel.TextConditionalFormat;'
       return:
         type:
-          - Excel.TextConditionalFormat
+          - excel.Excel.TextConditionalFormat
   - uid: excel.Excel.ConditionalFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ConditionalFormat.toJSON
@@ -628,7 +628,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalFormatData;'
       return:
         type:
-          - Excel.Interfaces.ConditionalFormatData
+          - excel.Excel.Interfaces.ConditionalFormatData
         description: ''
   - uid: excel.Excel.ConditionalFormat.topBottom
     summary: >-
@@ -646,7 +646,7 @@ items:
       content: 'readonly topBottom: Excel.TopBottomConditionalFormat;'
       return:
         type:
-          - Excel.TopBottomConditionalFormat
+          - excel.Excel.TopBottomConditionalFormat
   - uid: excel.Excel.ConditionalFormat.topBottomOrNullObject
     summary: >-
       Returns the Top/Bottom conditional format properties if the current conditional format is an TopBottom type. For
@@ -663,7 +663,7 @@ items:
       content: 'readonly topBottomOrNullObject: Excel.TopBottomConditionalFormat;'
       return:
         type:
-          - Excel.TopBottomConditionalFormat
+          - excel.Excel.TopBottomConditionalFormat
   - uid: excel.Excel.ConditionalFormat.type
     summary: |-
       A type of conditional format. Only one can be set at a time. Read-only.

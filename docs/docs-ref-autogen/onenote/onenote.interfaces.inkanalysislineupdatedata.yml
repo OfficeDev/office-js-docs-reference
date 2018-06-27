@@ -24,4 +24,4 @@ items:
       content: 'paragraph?: OneNote.Interfaces.InkAnalysisParagraphUpdateData;'
       return:
         type:
-          - OneNote.Interfaces.InkAnalysisParagraphUpdateData
+          - onenote.OneNote.Interfaces.InkAnalysisParagraphUpdateData

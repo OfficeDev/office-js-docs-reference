@@ -75,7 +75,7 @@ items:
       content: 'readonly filter: Excel.Filter;'
       return:
         type:
-          - Excel.Filter
+          - excel.Excel.Filter
   - uid: excel.Excel.TableColumn.getDataBodyRange
     summary: |-
       Gets the range object associated with the data body of the column.
@@ -90,7 +90,7 @@ items:
       content: 'getDataBodyRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -126,7 +126,7 @@ items:
       content: 'getHeaderRowRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -163,7 +163,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -200,7 +200,7 @@ items:
       content: 'getTotalRowRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -328,13 +328,13 @@ items:
       content: 'load(option?: Excel.Interfaces.TableColumnLoadOptions): Excel.TableColumn;'
       return:
         type:
-          - Excel.TableColumn
+          - excel.Excel.TableColumn
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.TableColumnLoadOptions
+            - excel.Excel.Interfaces.TableColumnLoadOptions
   - uid: excel.Excel.TableColumn.name
     summary: >-
       Represents the name of the table column.
@@ -381,7 +381,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.TableColumn.toJSON
     name: toJSON()
     fullName: excel.Excel.TableColumn.toJSON
@@ -392,7 +392,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableColumnData;'
       return:
         type:
-          - Excel.Interfaces.TableColumnData
+          - excel.Excel.Interfaces.TableColumnData
         description: ''
   - uid: excel.Excel.TableColumn.values
     summary: >-

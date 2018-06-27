@@ -79,7 +79,7 @@ items:
       content: 'notebook?: OneNote.Interfaces.NotebookLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.NotebookLoadOptions
+          - onenote.OneNote.Interfaces.NotebookLoadOptions
   - uid: onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions.parentSectionGroup
     summary: >-
       For EACH ITEM in the collection: Gets the section group that contains the section group. Throws ItemNotFound if
@@ -96,7 +96,7 @@ items:
       content: 'parentSectionGroup?: OneNote.Interfaces.SectionGroupLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.SectionGroupLoadOptions
+          - onenote.OneNote.Interfaces.SectionGroupLoadOptions
   - uid: onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions.parentSectionGroupOrNull
     summary: >-
       For EACH ITEM in the collection: Gets the section group that contains the section group. Returns null if the
@@ -113,7 +113,7 @@ items:
       content: 'parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.SectionGroupLoadOptions
+          - onenote.OneNote.Interfaces.SectionGroupLoadOptions
   - uid: onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions.sectionGroups
     summary: |-
       For EACH ITEM in the collection: The collection of section groups in the section group. Read only
@@ -128,7 +128,7 @@ items:
       content: 'sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.SectionGroupCollectionLoadOptions
+          - onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions.sections
     summary: |-
       For EACH ITEM in the collection: The collection of sections in the section group. Read only
@@ -143,4 +143,4 @@ items:
       content: 'sections?: OneNote.Interfaces.SectionCollectionLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.SectionCollectionLoadOptions
+          - onenote.OneNote.Interfaces.SectionCollectionLoadOptions

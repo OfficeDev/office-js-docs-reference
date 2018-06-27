@@ -59,7 +59,7 @@ items:
       content: 'readonly format: Excel.ConditionalRangeFormat;'
       return:
         type:
-          - Excel.ConditionalRangeFormat
+          - excel.Excel.ConditionalRangeFormat
     remarks: |
 
 
@@ -107,13 +107,13 @@ items:
       content: 'load(option?: Excel.Interfaces.CustomConditionalFormatLoadOptions): Excel.CustomConditionalFormat;'
       return:
         type:
-          - Excel.CustomConditionalFormat
+          - excel.Excel.CustomConditionalFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.CustomConditionalFormatLoadOptions
+            - excel.Excel.Interfaces.CustomConditionalFormatLoadOptions
   - uid: excel.Excel.CustomConditionalFormat.rule
     summary: |-
       Represents the Rule object on this conditional format. Read-only.
@@ -128,7 +128,7 @@ items:
       content: 'readonly rule: Excel.ConditionalFormatRule;'
       return:
         type:
-          - Excel.ConditionalFormatRule
+          - excel.Excel.ConditionalFormatRule
   - uid: excel.Excel.CustomConditionalFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -158,7 +158,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.CustomConditionalFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.CustomConditionalFormat.toJSON
@@ -169,5 +169,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.CustomConditionalFormatData;'
       return:
         type:
-          - Excel.Interfaces.CustomConditionalFormatData
+          - excel.Excel.Interfaces.CustomConditionalFormatData
         description: ''

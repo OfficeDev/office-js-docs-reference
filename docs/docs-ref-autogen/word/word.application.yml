@@ -31,7 +31,7 @@ items:
       content: 'createDocument(base64File?: string): Word.DocumentCreated;'
       return:
         type:
-          - Word.DocumentCreated
+          - word.Word.DocumentCreated
         description: ''
       parameters:
         - id: base64File
@@ -55,7 +55,7 @@ items:
         - id: context
           description: ''
           type:
-            - OfficeExtension.ClientRequestContext
+            - office.OfficeExtension.ClientRequestContext
   - uid: word.Word.Application.toJSON
     name: toJSON()
     fullName: word.Word.Application.toJSON

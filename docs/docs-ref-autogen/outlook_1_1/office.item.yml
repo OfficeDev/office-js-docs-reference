@@ -116,7 +116,7 @@ items:
       content: 'itemType: Office.MailboxEnums.ItemType;'
       return:
         type:
-          - Office.MailboxEnums.ItemType
+          - outlook.Office.MailboxEnums.ItemType
   - uid: Outlook_1_1.Office.Item.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.

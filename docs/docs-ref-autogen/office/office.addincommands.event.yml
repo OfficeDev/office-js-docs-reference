@@ -83,4 +83,4 @@ items:
       content: 'source: Source;'
       return:
         type:
-          - Source
+          - office.Office.AddinCommands.Source

@@ -52,7 +52,7 @@ items:
       content: 'getByName(name: string): OneNote.NotebookCollection;'
       return:
         type:
-          - OneNote.NotebookCollection
+          - onenote.OneNote.NotebookCollection
         description: ''
       parameters:
         - id: name
@@ -107,7 +107,7 @@ items:
       content: 'getItem(index: number | string): OneNote.Notebook;'
       return:
         type:
-          - OneNote.Notebook
+          - onenote.OneNote.Notebook
         description: ''
       parameters:
         - id: index
@@ -128,7 +128,7 @@ items:
       content: 'getItemAt(index: number): OneNote.Notebook;'
       return:
         type:
-          - OneNote.Notebook
+          - onenote.OneNote.Notebook
         description: ''
       parameters:
         - id: index
@@ -162,7 +162,7 @@ items:
         OneNote.NotebookCollection;
       return:
         type:
-          - OneNote.NotebookCollection
+          - onenote.OneNote.NotebookCollection
         description: ''
       parameters:
         - id: option
@@ -215,7 +215,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.NotebookCollectionData;'
       return:
         type:
-          - OneNote.Interfaces.NotebookCollectionData
+          - onenote.OneNote.Interfaces.NotebookCollectionData
         description: ''
   - uid: onenote.OneNote.NotebookCollection.track
     summary: >-
@@ -233,7 +233,7 @@ items:
       content: 'track(): OneNote.NotebookCollection;'
       return:
         type:
-          - OneNote.NotebookCollection
+          - onenote.OneNote.NotebookCollection
         description: ''
   - uid: onenote.OneNote.NotebookCollection.untrack
     summary: >-
@@ -250,5 +250,5 @@ items:
       content: 'untrack(): OneNote.NotebookCollection;'
       return:
         type:
-          - OneNote.NotebookCollection
+          - onenote.OneNote.NotebookCollection
         description: ''

@@ -32,7 +32,7 @@ items:
       content: 'readonly line: Excel.ChartLineFormat;'
       return:
         type:
-          - Excel.ChartLineFormat
+          - excel.Excel.ChartLineFormat
   - uid: excel.Excel.ChartGridlinesFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -64,13 +64,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartGridlinesFormatLoadOptions): Excel.ChartGridlinesFormat;'
       return:
         type:
-          - Excel.ChartGridlinesFormat
+          - excel.Excel.ChartGridlinesFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartGridlinesFormatLoadOptions
+            - excel.Excel.Interfaces.ChartGridlinesFormatLoadOptions
   - uid: excel.Excel.ChartGridlinesFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -100,7 +100,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartGridlinesFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartGridlinesFormat.toJSON
@@ -111,5 +111,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartGridlinesFormatData;'
       return:
         type:
-          - Excel.Interfaces.ChartGridlinesFormatData
+          - excel.Excel.Interfaces.ChartGridlinesFormatData
         description: ''

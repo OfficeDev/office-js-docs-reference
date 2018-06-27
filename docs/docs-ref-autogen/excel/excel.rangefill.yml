@@ -149,13 +149,13 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeFillLoadOptions): Excel.RangeFill;'
       return:
         type:
-          - Excel.RangeFill
+          - excel.Excel.RangeFill
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.RangeFillLoadOptions
+            - excel.Excel.Interfaces.RangeFillLoadOptions
   - uid: excel.Excel.RangeFill.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -185,7 +185,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.RangeFill.toJSON
     name: toJSON()
     fullName: excel.Excel.RangeFill.toJSON
@@ -196,5 +196,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeFillData;'
       return:
         type:
-          - Excel.Interfaces.RangeFillData
+          - excel.Excel.Interfaces.RangeFillData
         description: ''

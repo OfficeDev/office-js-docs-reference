@@ -24,11 +24,11 @@ items:
         - id: context
           description: ''
           type:
-            - ClientRequestContext
+            - office.OfficeExtension.ClientRequestContext
         - id: parentObject
           description: ''
           type:
-            - ClientObject
+            - office.OfficeExtension.ClientObject
         - id: name
           description: ''
           type:

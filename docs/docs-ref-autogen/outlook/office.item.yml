@@ -180,7 +180,7 @@ items:
       content: 'itemType: Office.MailboxEnums.ItemType;'
       return:
         type:
-          - Office.MailboxEnums.ItemType
+          - outlook.Office.MailboxEnums.ItemType
   - uid: outlook.Office.Item.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
@@ -284,7 +284,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - Recurrence
+          - outlook.Office.Recurrence
   - uid: outlook.Office.Item.removeHandlerAsync
     summary: >-
       Removes an event handler for a supported event.

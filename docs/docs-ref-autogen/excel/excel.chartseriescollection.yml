@@ -37,7 +37,7 @@ items:
       content: 'add(name?: string, index?: number): Excel.ChartSeries;'
       return:
         type:
-          - Excel.ChartSeries
+          - excel.Excel.ChartSeries
         description: ''
       parameters:
         - id: name
@@ -93,7 +93,7 @@ items:
       content: 'getItemAt(index: number): Excel.ChartSeries;'
       return:
         type:
-          - Excel.ChartSeries
+          - excel.Excel.ChartSeries
         description: ''
       parameters:
         - id: index
@@ -211,7 +211,7 @@ items:
         Excel.ChartSeriesCollection;
       return:
         type:
-          - Excel.ChartSeriesCollection
+          - excel.Excel.ChartSeriesCollection
         description: ''
       parameters:
         - id: option
@@ -228,5 +228,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartSeriesCollectionData;'
       return:
         type:
-          - Excel.Interfaces.ChartSeriesCollectionData
+          - excel.Excel.Interfaces.ChartSeriesCollectionData
         description: ''

@@ -88,13 +88,13 @@ items:
         Excel.ConditionalDataBarNegativeFormat;
       return:
         type:
-          - Excel.ConditionalDataBarNegativeFormat
+          - excel.Excel.ConditionalDataBarNegativeFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
+            - excel.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
   - uid: excel.Excel.ConditionalDataBarNegativeFormat.matchPositiveBorderColor
     summary: |-
       Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
@@ -156,7 +156,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalDataBarNegativeFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ConditionalDataBarNegativeFormat.toJSON
@@ -167,5 +167,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalDataBarNegativeFormatData;'
       return:
         type:
-          - Excel.Interfaces.ConditionalDataBarNegativeFormatData
+          - excel.Excel.Interfaces.ConditionalDataBarNegativeFormatData
         description: ''

@@ -82,13 +82,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.RichTextLoadOptions): OneNote.RichText;'
       return:
         type:
-          - OneNote.RichText
+          - onenote.OneNote.RichText
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OneNote.Interfaces.RichTextLoadOptions
+            - onenote.OneNote.Interfaces.RichTextLoadOptions
     remarks: |
 
 
@@ -165,7 +165,7 @@ items:
       content: 'readonly paragraph: OneNote.Paragraph;'
       return:
         type:
-          - OneNote.Paragraph
+          - onenote.OneNote.Paragraph
   - uid: onenote.OneNote.RichText.text
     summary: |-
       Gets the text content of the RichText object. Read-only.
@@ -191,7 +191,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.RichTextData;'
       return:
         type:
-          - OneNote.Interfaces.RichTextData
+          - onenote.OneNote.Interfaces.RichTextData
         description: ''
   - uid: onenote.OneNote.RichText.track
     summary: >-
@@ -209,7 +209,7 @@ items:
       content: 'track(): OneNote.RichText;'
       return:
         type:
-          - OneNote.RichText
+          - onenote.OneNote.RichText
         description: ''
   - uid: onenote.OneNote.RichText.untrack
     summary: >-
@@ -226,5 +226,5 @@ items:
       content: 'untrack(): OneNote.RichText;'
       return:
         type:
-          - OneNote.RichText
+          - onenote.OneNote.RichText
         description: ''

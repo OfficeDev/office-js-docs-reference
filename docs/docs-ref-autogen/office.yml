@@ -159,7 +159,7 @@ items:
         - id: reason
           description: Indicates how the app was initialized.
           type:
-            - InitializationReason
+            - office.Office.InitializationReason
   - uid: office.Office.onReady
     summary: >-
       Ensures that the Office JavaScript APIs are ready to be called by the add-in. If the framework hasn't initialized

@@ -53,7 +53,7 @@ items:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
         type:
-          - Word.Interfaces.FontUpdateData
+          - word.Word.Interfaces.FontUpdateData
   - uid: word.Word.Interfaces.TableUpdateData.headerRowCount
     summary: |-
       Gets and sets the number of header rows.

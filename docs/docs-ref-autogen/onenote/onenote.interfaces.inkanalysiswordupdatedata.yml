@@ -24,4 +24,4 @@ items:
       content: 'line?: OneNote.Interfaces.InkAnalysisLineUpdateData;'
       return:
         type:
-          - OneNote.Interfaces.InkAnalysisLineUpdateData
+          - onenote.OneNote.Interfaces.InkAnalysisLineUpdateData

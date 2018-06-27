@@ -24,7 +24,7 @@ items:
         - id: context
           description: ''
           type:
-            - ClientRequestContext
+            - office.OfficeExtension.ClientRequestContext
         - id: handlers
           description: ''
           type:
@@ -44,7 +44,7 @@ items:
       content: 'context: ClientRequestContext;'
       return:
         type:
-          - ClientRequestContext
+          - office.OfficeExtension.ClientRequestContext
   - uid: office.OfficeExtension.EventHandlerResult.remove
     name: remove()
     fullName: office.OfficeExtension.EventHandlerResult.remove

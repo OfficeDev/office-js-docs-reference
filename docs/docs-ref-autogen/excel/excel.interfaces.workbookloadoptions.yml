@@ -31,7 +31,7 @@ items:
       content: 'application?: Excel.Interfaces.ApplicationLoadOptions;'
       return:
         type:
-          - Excel.Interfaces.ApplicationLoadOptions
+          - excel.Excel.Interfaces.ApplicationLoadOptions
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.bindings
     summary: |-
       Represents a collection of bindings that are part of the workbook.
@@ -46,7 +46,7 @@ items:
       content: 'bindings?: Excel.Interfaces.BindingCollectionLoadOptions;'
       return:
         type:
-          - Excel.Interfaces.BindingCollectionLoadOptions
+          - excel.Excel.Interfaces.BindingCollectionLoadOptions
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.name
     summary: |-
       Gets the workbook name. Read-only.
@@ -76,7 +76,7 @@ items:
       content: 'properties?: Excel.Interfaces.DocumentPropertiesLoadOptions;'
       return:
         type:
-          - Excel.Interfaces.DocumentPropertiesLoadOptions
+          - excel.Excel.Interfaces.DocumentPropertiesLoadOptions
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.tables
     summary: |-
       Represents a collection of tables associated with the workbook.
@@ -91,4 +91,4 @@ items:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type:
-          - Excel.Interfaces.TableCollectionLoadOptions
+          - excel.Excel.Interfaces.TableCollectionLoadOptions

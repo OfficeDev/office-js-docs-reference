@@ -40,7 +40,7 @@ items:
         - id: object
           description: ''
           type:
-            - ClientObject
+            - office.OfficeExtension.ClientObject
   - uid: office.OfficeExtension.TrackedObjects.remove
     summary: >-
       Release the memory associated with an object that was previously added to this collection. Having many tracked
@@ -67,4 +67,4 @@ items:
         - id: object
           description: ''
           type:
-            - ClientObject
+            - office.OfficeExtension.ClientObject

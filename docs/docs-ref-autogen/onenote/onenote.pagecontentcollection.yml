@@ -51,7 +51,7 @@ items:
       content: 'getItem(index: number | string): OneNote.PageContent;'
       return:
         type:
-          - OneNote.PageContent
+          - onenote.OneNote.PageContent
         description: ''
       parameters:
         - id: index
@@ -72,7 +72,7 @@ items:
       content: 'getItemAt(index: number): OneNote.PageContent;'
       return:
         type:
-          - OneNote.PageContent
+          - onenote.OneNote.PageContent
         description: ''
       parameters:
         - id: index
@@ -133,7 +133,7 @@ items:
         OneNote.PageContentCollection;
       return:
         type:
-          - OneNote.PageContentCollection
+          - onenote.OneNote.PageContentCollection
         description: ''
       parameters:
         - id: option
@@ -208,7 +208,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.PageContentCollectionData;'
       return:
         type:
-          - OneNote.Interfaces.PageContentCollectionData
+          - onenote.OneNote.Interfaces.PageContentCollectionData
         description: ''
   - uid: onenote.OneNote.PageContentCollection.track
     summary: >-
@@ -226,7 +226,7 @@ items:
       content: 'track(): OneNote.PageContentCollection;'
       return:
         type:
-          - OneNote.PageContentCollection
+          - onenote.OneNote.PageContentCollection
         description: ''
   - uid: onenote.OneNote.PageContentCollection.untrack
     summary: >-
@@ -243,5 +243,5 @@ items:
       content: 'untrack(): OneNote.PageContentCollection;'
       return:
         type:
-          - OneNote.PageContentCollection
+          - onenote.OneNote.PageContentCollection
         description: ''

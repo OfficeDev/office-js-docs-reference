@@ -32,7 +32,7 @@ items:
       content: 'readonly font: Excel.ChartFont;'
       return:
         type:
-          - Excel.ChartFont
+          - excel.Excel.ChartFont
   - uid: excel.Excel.ChartAxisTitleFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -64,13 +64,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions): Excel.ChartAxisTitleFormat;'
       return:
         type:
-          - Excel.ChartAxisTitleFormat
+          - excel.Excel.ChartAxisTitleFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartAxisTitleFormatLoadOptions
+            - excel.Excel.Interfaces.ChartAxisTitleFormatLoadOptions
   - uid: excel.Excel.ChartAxisTitleFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -100,7 +100,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartAxisTitleFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartAxisTitleFormat.toJSON
@@ -111,5 +111,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartAxisTitleFormatData;'
       return:
         type:
-          - Excel.Interfaces.ChartAxisTitleFormatData
+          - excel.Excel.Interfaces.ChartAxisTitleFormatData
         description: ''

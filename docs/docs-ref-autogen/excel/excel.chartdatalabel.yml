@@ -56,13 +56,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartDataLabelLoadOptions): Excel.ChartDataLabel;'
       return:
         type:
-          - Excel.ChartDataLabel
+          - excel.Excel.ChartDataLabel
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartDataLabelLoadOptions
+            - excel.Excel.Interfaces.ChartDataLabelLoadOptions
   - uid: excel.Excel.ChartDataLabel.position
     summary: >-
       DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
@@ -128,7 +128,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartDataLabel.showBubbleSize
     summary: |-
       Boolean value representing if the data label bubble size is visible or not.
@@ -229,5 +229,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartDataLabelData;'
       return:
         type:
-          - Excel.Interfaces.ChartDataLabelData
+          - excel.Excel.Interfaces.ChartDataLabelData
         description: ''

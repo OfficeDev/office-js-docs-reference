@@ -54,7 +54,7 @@ items:
       content: 'readonly format: Excel.ChartTrendlineFormat;'
       return:
         type:
-          - Excel.ChartTrendlineFormat
+          - excel.Excel.ChartTrendlineFormat
   - uid: excel.Excel.ChartTrendline.intercept
     summary: >-
       Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic
@@ -103,13 +103,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartTrendlineLoadOptions): Excel.ChartTrendline;'
       return:
         type:
-          - Excel.ChartTrendline
+          - excel.Excel.ChartTrendline
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartTrendlineLoadOptions
+            - excel.Excel.Interfaces.ChartTrendlineLoadOptions
   - uid: excel.Excel.ChartTrendline.movingAveragePeriod
     summary: |-
       Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
@@ -186,7 +186,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartTrendline.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartTrendline.toJSON
@@ -197,7 +197,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartTrendlineData;'
       return:
         type:
-          - Excel.Interfaces.ChartTrendlineData
+          - excel.Excel.Interfaces.ChartTrendlineData
         description: ''
   - uid: excel.Excel.ChartTrendline.type
     summary: |-

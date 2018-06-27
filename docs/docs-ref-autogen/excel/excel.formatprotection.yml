@@ -67,13 +67,13 @@ items:
       content: 'load(option?: Excel.Interfaces.FormatProtectionLoadOptions): Excel.FormatProtection;'
       return:
         type:
-          - Excel.FormatProtection
+          - excel.Excel.FormatProtection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.FormatProtectionLoadOptions
+            - excel.Excel.Interfaces.FormatProtectionLoadOptions
   - uid: excel.Excel.FormatProtection.locked
     summary: >-
       Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have
@@ -120,7 +120,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.FormatProtection.toJSON
     name: toJSON()
     fullName: excel.Excel.FormatProtection.toJSON
@@ -131,5 +131,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.FormatProtectionData;'
       return:
         type:
-          - Excel.Interfaces.FormatProtectionData
+          - excel.Excel.Interfaces.FormatProtectionData
         description: ''

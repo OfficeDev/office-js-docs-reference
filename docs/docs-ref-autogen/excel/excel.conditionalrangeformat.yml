@@ -35,7 +35,7 @@ items:
       content: 'readonly borders: Excel.ConditionalRangeBorderCollection;'
       return:
         type:
-          - Excel.ConditionalRangeBorderCollection
+          - excel.Excel.ConditionalRangeBorderCollection
   - uid: excel.Excel.ConditionalRangeFormat.fill
     summary: |-
       Returns the fill object defined on the overall conditional format range. Read-only.
@@ -50,7 +50,7 @@ items:
       content: 'readonly fill: Excel.ConditionalRangeFill;'
       return:
         type:
-          - Excel.ConditionalRangeFill
+          - excel.Excel.ConditionalRangeFill
   - uid: excel.Excel.ConditionalRangeFormat.font
     summary: |-
       Returns the font object defined on the overall conditional format range. Read-only.
@@ -65,7 +65,7 @@ items:
       content: 'readonly font: Excel.ConditionalRangeFont;'
       return:
         type:
-          - Excel.ConditionalRangeFont
+          - excel.Excel.ConditionalRangeFont
   - uid: excel.Excel.ConditionalRangeFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -97,13 +97,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ConditionalRangeFormatLoadOptions): Excel.ConditionalRangeFormat;'
       return:
         type:
-          - Excel.ConditionalRangeFormat
+          - excel.Excel.ConditionalRangeFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ConditionalRangeFormatLoadOptions
+            - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: excel.Excel.ConditionalRangeFormat.numberFormat
     summary: |-
       Represents Excel's number format code for the given range. Cleared if null is passed in.
@@ -148,7 +148,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalRangeFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ConditionalRangeFormat.toJSON
@@ -159,5 +159,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeFormatData;'
       return:
         type:
-          - Excel.Interfaces.ConditionalRangeFormatData
+          - excel.Excel.Interfaces.ConditionalRangeFormatData
         description: ''

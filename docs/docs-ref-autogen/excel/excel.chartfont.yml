@@ -131,13 +131,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartFontLoadOptions): Excel.ChartFont;'
       return:
         type:
-          - Excel.ChartFont
+          - excel.Excel.ChartFont
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartFontLoadOptions
+            - excel.Excel.Interfaces.ChartFontLoadOptions
   - uid: excel.Excel.ChartFont.name
     summary: |-
       Font name (e.g. "Calibri")
@@ -182,7 +182,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartFont.size
     summary: |-
       Size of the font (e.g. 11)
@@ -208,7 +208,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartFontData;'
       return:
         type:
-          - Excel.Interfaces.ChartFontData
+          - excel.Excel.Interfaces.ChartFontData
         description: ''
   - uid: excel.Excel.ChartFont.underline
     summary: |-

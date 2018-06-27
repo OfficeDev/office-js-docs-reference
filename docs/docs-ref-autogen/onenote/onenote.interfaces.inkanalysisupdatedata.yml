@@ -24,4 +24,4 @@ items:
       content: 'page?: OneNote.Interfaces.PageUpdateData;'
       return:
         type:
-          - OneNote.Interfaces.PageUpdateData
+          - onenote.OneNote.Interfaces.PageUpdateData
