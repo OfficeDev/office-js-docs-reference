@@ -1143,7 +1143,7 @@ Word.Document.save:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Word.OfficeExtension.Error.toString:
+OfficeExtension.Error:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {

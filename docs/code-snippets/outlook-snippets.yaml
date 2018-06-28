@@ -119,7 +119,7 @@ Office.CustomProperties.saveAsync:
     function write(message){
         document.getElementById('message').innerText += message;
     }
-Office.Event:
+Office.AddinCommands.Event:
   - |-
     // In this example, consider a button defined in an add-in manifest as follows:
     <Control xsi:type="Button" id="eventTestButton">
@@ -150,7 +150,7 @@ Office.Event:
         // Signal to the host app that processing is complete.
         event.completed();
     }
-Office.Event.source:
+Office.AddinCommands.Event.source:
   - |-
     // Function is used by two buttons:
     // button1 and button2
@@ -167,7 +167,7 @@ Office.Event.source:
 
         event.completed();
     }
-Office.Event.completed:
+Office.AddinCommands.Event.completed:
   - |-
     function processItem (event) {
         // Do some processing
