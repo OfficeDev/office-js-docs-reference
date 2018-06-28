@@ -3710,20 +3710,198 @@ Office.Document:
         }
     })();
 Office.Document.addHandlerAsync:
-  - |-
+  - >-
+    // The following example adds an event handler for the SelectionChanged
+    event of a document
+
     function addSelectionChangedEventHandler() {
         Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, MyHandler);
     }
+
 
     function MyHandler(eventArgs) {
         write('Event raised: ' + eventArgs.type);
         doSomethingWithDocument(eventArgs.document);
     }
 
+
     // Function that writes to a div with id='message' on the page.
+
     function write(message){
         document.getElementById('message').innerText += message; 
     }
+  - >-
+    // The following code example adds a handler for the
+    ResourceSelectionChanged event.
+
+    // When the resource selection changes in the document, it gets the GUID of
+    the selected resource.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that the
+
+    // following page control is defined in the content div in the page body.
+
+    <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                Office.context.document.addHandlerAsync(
+                    Office.EventType.ResourceSelectionChanged,
+                    getResourceGuid);
+            });
+        };
+
+        // Get the GUID of the selected resource and display it in the add-in.
+        function getResourceGuid() {
+            Office.context.document.getSelectedResourceAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        $('#message').html(result.value);
+                    }
+                }
+            );
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+
+
+    // For a complete code sample that shows how to use a
+    ResourceSelectionChanged
+
+    // event handler in a Project add-in, see "Create your first task pane
+    add-in
+
+    // for Project 2013 by using a text editor."
+
+    //
+    https://docs.microsoft.com/en-us/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
+  - >-
+    // The following code example adds a handler for the TaskSelectionChanged
+    event.
+
+    // When the task selection changes in the document, it gets the GUID of the
+
+    // selected task.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that
+
+    // the following page control is defined in the content div in the page
+    body.
+
+    <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                Office.context.document.addHandlerAsync(
+                    Office.EventType.TaskSelectionChanged,
+                    getTaskGuid);
+                getTaskGuid();
+            });
+        };
+
+        // Get the GUID of the selected task and display it in the add-in.
+        function getTaskGuid() {
+            Office.context.document.getSelectedTaskAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        $('#message').html(result.value);
+                    }
+                }
+            );
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+  - >-
+    // The following code example adds a handler for the ViewSelectionChanged
+
+    // event. When the active view changes, it gets the name and type of the
+    active view.
+
+    // The example assumes your add-in has a reference to the jQuery library and
+    that
+
+    // the following page control is defined in the content div in the page
+    body.
+
+    <span id="message"></span>
+
+
+    (function () {
+        "use strict";
+
+        // The initialize function must be run each time a new page is loaded.
+        Office.initialize = function (reason) {
+            $(document).ready(function () {
+
+                // After the DOM is loaded, add-in-specific code can run.
+                Office.context.document.addHandlerAsync(
+                    Office.EventType.ViewSelectionChanged,
+                    getActiveView);
+                getActiveView();
+            });
+        };
+
+        // Get the name and type of the active view and display it in the add-in.
+        function getActiveView() {
+            Office.context.document.getSelectedViewAsync(
+                function (result) {
+                    if (result.status === Office.AsyncResultStatus.Failed) {
+                        onError(result.error);
+                    }
+                    else {
+                        var output = String.format(
+                            'View name: {0}<br/>View type: {1}',
+                            result.value.viewName, result.value.viewType);
+                        $('#message').html(output);
+                    }
+                }
+            );
+        }
+
+        function onError(error) {
+            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+        }
+    })();
+
+
+    // For an example that shows how to use a ViewSelectionChanged event handler
+    in a
+
+    // Project add-in, see "Create your first task pane add-in for Project 2013
+    by
+
+    // using a text editor."
+
+    //
+    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
   - >-
     // The following code example uses addHandlerAsync to add an event handler
     for the ViewSelectionChanged event.
@@ -3815,7 +3993,7 @@ Office.Document.addHandlerAsync:
     })();
 
 
-    // For a complete code sample that shows how to use a TaskSelectionChanged
+    // For a complete code sample that shows how to use a ViewSelectionChanged
     event handler in a Project add-in,
 
     // see "Create your first task pane add-in for Project by using a text
@@ -4215,6 +4393,10 @@ Office.Document.removeHandlerAsync:
     function removeSelectionChangedEventHandler() {
         Office.context.document.removeHandlerAsync(Office.EventType.DocumentSelectionChanged, {handler:MyHandler});
     }
+
+    function MyHandler(eventArgs) {
+        doSomethingWithDocument(eventArgs.document);
+    }
   - >-
     // The following code example uses addHandlerAsync to add an event handler
     for the
@@ -4288,15 +4470,6 @@ Office.Document.removeHandlerAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.SelectionChanged:
-  - |-
-    function addEventHandlerToDocument() {
-        Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, MyHandler);
-    }
-
-    function MyHandler(eventArgs) {
-        doSomethingWithDocument(eventArgs.document);
-    }
 Office.Document.setSelectedDataAsync:
   - >-
     // The following example sets the selected text or cell to "Hello World!",
@@ -5474,66 +5647,6 @@ Office.Document.getTaskFieldAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.ResourceSelectionChanged:
-  - >-
-    // The following code example adds a handler for the
-    ResourceSelectionChanged event.
-
-    // When the resource selection changes in the document, it gets the GUID of
-    the selected resource.
-
-    // The example assumes your add-in has a reference to the jQuery library and
-    that the
-
-    // following page control is defined in the content div in the page body.
-
-    <span id="message"></span>
-
-
-    (function () {
-        "use strict";
-
-        // The initialize function must be run each time a new page is loaded.
-        Office.initialize = function (reason) {
-            $(document).ready(function () {
-
-                // After the DOM is loaded, add-in-specific code can run.
-                Office.context.document.addHandlerAsync(
-                    Office.EventType.ResourceSelectionChanged,
-                    getResourceGuid);
-            });
-        };
-
-        // Get the GUID of the selected resource and display it in the add-in.
-        function getResourceGuid() {
-            Office.context.document.getSelectedResourceAsync(
-                function (result) {
-                    if (result.status === Office.AsyncResultStatus.Failed) {
-                        onError(result.error);
-                    }
-                    else {
-                        $('#message').html(result.value);
-                    }
-                }
-            );
-        }
-
-        function onError(error) {
-            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
-        }
-    })();
-
-
-    // For a complete code sample that shows how to use a
-    ResourceSelectionChanged
-
-    // event handler in a Project add-in, see "Create your first task pane
-    add-in
-
-    // for Project 2013 by using a text editor."
-
-    //
-    https://docs.microsoft.com/en-us/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 Office.Document.setResourceFieldAsync:
   - >-
     // The following code example calls getSelectedResourceAsync to get the GUID
@@ -5724,121 +5837,6 @@ Office.Document.setTaskFieldAsync:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.TaskSelectionChanged:
-  - >-
-    // The following code example adds a handler for the TaskSelectionChanged
-    event.
-
-    // When the task selection changes in the document, it gets the GUID of the
-
-    // selected task.
-
-    // The example assumes your add-in has a reference to the jQuery library and
-    that
-
-    // the following page control is defined in the content div in the page
-    body.
-
-    <span id="message"></span>
-
-
-    (function () {
-        "use strict";
-
-        // The initialize function must be run each time a new page is loaded.
-        Office.initialize = function (reason) {
-            $(document).ready(function () {
-
-                // After the DOM is loaded, add-in-specific code can run.
-                Office.context.document.addHandlerAsync(
-                    Office.EventType.TaskSelectionChanged,
-                    getTaskGuid);
-                getTaskGuid();
-            });
-        };
-
-        // Get the GUID of the selected task and display it in the add-in.
-        function getTaskGuid() {
-            Office.context.document.getSelectedTaskAsync(
-                function (result) {
-                    if (result.status === Office.AsyncResultStatus.Failed) {
-                        onError(result.error);
-                    }
-                    else {
-                        $('#message').html(result.value);
-                    }
-                }
-            );
-        }
-
-        function onError(error) {
-            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
-        }
-    })();
-Office.Document.ViewSelectionChanged:
-  - >-
-    // The following code example adds a handler for the ViewSelectionChanged
-
-    // event. When the active view changes, it gets the name and type of the
-    active view.
-
-    // The example assumes your add-in has a reference to the jQuery library and
-    that
-
-    // the following page control is defined in the content div in the page
-    body.
-
-    <span id="message"></span>
-
-
-    (function () {
-        "use strict";
-
-        // The initialize function must be run each time a new page is loaded.
-        Office.initialize = function (reason) {
-            $(document).ready(function () {
-
-                // After the DOM is loaded, add-in-specific code can run.
-                Office.context.document.addHandlerAsync(
-                    Office.EventType.ViewSelectionChanged,
-                    getActiveView);
-                getActiveView();
-            });
-        };
-
-        // Get the name and type of the active view and display it in the add-in.
-        function getActiveView() {
-            Office.context.document.getSelectedViewAsync(
-                function (result) {
-                    if (result.status === Office.AsyncResultStatus.Failed) {
-                        onError(result.error);
-                    }
-                    else {
-                        var output = String.format(
-                            'View name: {0}<br/>View type: {1}',
-                            result.value.viewName, result.value.viewType);
-                        $('#message').html(output);
-                    }
-                }
-            );
-        }
-
-        function onError(error) {
-            $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
-        }
-    })();
-
-
-    // For an example that shows how to use a ViewSelectionChanged event handler
-    in a
-
-    // Project add-in, see "Create your first task pane add-in for Project 2013
-    by
-
-    // using a text editor."
-
-    //
-    https://docs.microsoft.com/office/dev/add-ins/project/create-your-first-task-pane-add-in-for-project-by-using-a-text-editor
 Office.select:
   - >-
     // The following code example uses the select method to retrieve a binding
@@ -8924,7 +8922,7 @@ Office.CustomProperties.saveAsync:
     function write(message){
         document.getElementById('message').innerText += message;
     }
-Office.Event:
+Office.AddinCommands.Event:
   - >-
     // In this example, consider a button defined in an add-in manifest as
     follows:
@@ -8961,7 +8959,7 @@ Office.Event:
         // Signal to the host app that processing is complete.
         event.completed();
     }
-Office.Event.source:
+Office.AddinCommands.Event.source:
   - |-
     // Function is used by two buttons:
     // button1 and button2
@@ -8978,7 +8976,7 @@ Office.Event.source:
 
         event.completed();
     }
-Office.Event.completed:
+Office.AddinCommands.Event.completed:
   - |-
     function processItem (event) {
         // Do some processing
@@ -11047,7 +11045,7 @@ Word.Document.save:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Word.OfficeExtension.Error.toString:
+OfficeExtension.Error:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {

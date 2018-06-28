@@ -8,7 +8,7 @@ items:
 
 
       \[ [API set: Mailbox 1.3](/javascript/office/javascript-api-for-office) \]
-    remarks: >-
+    remarks: >
       <table><tr><td>Hosts</td><td>Excel, Outlook, PowerPoint, Word</td></tr>
 
 
@@ -20,6 +20,49 @@ items:
 
 
       <tr><td>Applicable Outlook mode</td><td>Compose or Read</td></tr></table>
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // In this example, consider a button defined in an add-in manifest as follows:
+
+      <Control xsi:type="Button" id="eventTestButton">
+          <Label resid="eventButtonLabel" />
+          <Tooltip resid="eventButtonTooltip" />
+          <Supertip>
+              <Title resid="eventSuperTipTitle" />
+              <Description resid="eventSuperTipDescription" />
+          </Supertip>
+          <Icon>
+              <bt:Image size="16" resid="blue-icon-16" />
+              <bt:Image size="32" resid="blue-icon-32" />
+              <bt:Image size="80" resid="blue-icon-80" />
+          </Icon>
+          <Action xsi:type="ExecuteFunction">
+              <FunctionName>testEventObject</FunctionName>
+          </Action>
+      </Control>
+
+      // The button has an id attribute set to eventTestButton, and will invoke
+
+      // the testEventObject function defined in the add-in.
+
+      // That function looks like this:
+
+      function testEventObject(event) {
+          // The event object implements the Event interface
+
+          // This value will be "eventTestButton"
+          var buttonId = event.source.id;
+
+          // Signal to the host app that processing is complete.
+          event.completed();
+      }
+
+      ```
     name: Office.AddinCommands.Event
     fullName: office.Office.AddinCommands.Event
     langs:
@@ -46,12 +89,48 @@ items:
 
 
       \[ [API set: Mailbox 1.3](/javascript/office/javascript-api-for-office) \]
-    remarks: >-
+    remarks: >
       <table><tr><td>[Minimum permission
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
       <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
+
+
+      #### Examples
+
+
+      ```javascript
+
+      function processItem (event) {
+          // Do some processing
+
+          event.completed();
+      }
+
+
+      // In the following example, the checkMessage function has
+
+      // been registered as an event handler for ItemSend.
+
+      function checkMessage(event) {
+          // Get the item being sent
+          var outgoingMsg = Office.context.mailbox.item;
+
+          // Check if subject contains "BLOCK"
+          outgoingMsg.subject.getAsync(function (result) {
+              // Subject is in result.value
+              if (result.value.indexOf('BLOCK') != -1) {
+                  // Value is found, stop send
+                  event.completed({allowEvent = false});
+              } else {
+                  // Value wasn't found, allow send
+                  event.completed({allowEvent = true});
+              }
+          });
+      }
+
+      ```
     name: completed(options)
     fullName: office.Office.AddinCommands.Event.completed
     langs:
@@ -84,3 +163,25 @@ items:
       return:
         type:
           - office.Office.AddinCommands.Source
+    remarks: |
+
+
+      #### Examples
+
+      ```javascript
+      // Function is used by two buttons:
+      // button1 and button2
+      function multiButton (event) {
+          // Check which button was clicked
+          var buttonId = event.source.id;
+
+          if (buttonId === 'button1') {
+              doButton1Action();
+          }
+          else {
+              doButton2Action();
+          }
+
+          event.completed();
+      }
+      ```
