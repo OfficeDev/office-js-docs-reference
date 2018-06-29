@@ -728,6 +728,7 @@ function callback(asyncResult) {
 |[Minimum mailbox requirement set version](/javascript/office/requirement-sets/outlook-api-requirement-sets)| 1.0|
 |[Minimum permission level](/outlook/add-ins/understanding-outlook-add-in-permissions)| ReadItem|
 |Applicable Outlook mode| Compose or read|
+
 ####  to :Array.<[EmailAddressDetails](/javascript/api/office/office_1_5.emailaddressdetails)>|[Recipients](/javascript/api/outlook_1_5/office.Recipients.md)
 
 Provides access to the recipients on the **To** line of a message. The type of object and level of access depends on the mode of the current item.
