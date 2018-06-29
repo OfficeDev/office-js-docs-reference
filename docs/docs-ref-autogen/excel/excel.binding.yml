@@ -54,7 +54,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -90,7 +90,7 @@ items:
       content: 'getTable(): Excel.Table;'
       return:
         type:
-          - Excel.Table
+          - excel.Excel.Table
         description: ''
     remarks: |
 
@@ -171,18 +171,18 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      \`load(option?: string \| string\[\]): Excel.Binding\` - Where option is a comma-delimited string or an array of
+      `load(option?: string \| string\[\]): Excel.Binding` - Where option is a comma-delimited string or an array of
       strings that specify the properties/relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; }): Excel.Binding\` - Where option.select is a comma-delimited
+      `load(option?: { select?: string; expand?: string; }): Excel.Binding` - Where option.select is a comma-delimited
       string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
       specifies the relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Binding\` - Only
-      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
-      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Binding` - Only available
+      on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
+      collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
 
@@ -215,13 +215,13 @@ items:
       content: 'load(option?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;'
       return:
         type:
-          - Excel.Binding
+          - excel.Excel.Binding
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.BindingLoadOptions
+            - excel.Excel.Interfaces.BindingLoadOptions
   - uid: excel.Excel.Binding.onDataChanged
     summary: |-
       Occurs when data or formatting within the binding is changed.
@@ -279,7 +279,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.BindingData;'
       return:
         type:
-          - Excel.Interfaces.BindingData
+          - excel.Excel.Interfaces.BindingData
         description: ''
   - uid: excel.Excel.Binding.type
     summary: |-

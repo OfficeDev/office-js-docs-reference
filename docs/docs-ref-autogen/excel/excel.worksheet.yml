@@ -116,7 +116,7 @@ items:
       content: 'readonly charts: Excel.ChartCollection;'
       return:
         type:
-          - Excel.ChartCollection
+          - excel.Excel.ChartCollection
   - uid: excel.Excel.Worksheet.copy
     summary: |-
       Copy a worksheet and place it at the specified position. Return the copied worksheet.
@@ -131,17 +131,17 @@ items:
       content: 'copy(positionType?: Excel.WorksheetPositionType, relativeTo?: Excel.Worksheet): Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: positionType
           description: Optional.
           type:
-            - Excel.WorksheetPositionType
+            - excel.Excel.WorksheetPositionType
         - id: relativeTo
           description: Optional.
           type:
-            - Excel.Worksheet
+            - excel.Excel.Worksheet
     remarks: |
 
 
@@ -210,7 +210,7 @@ items:
       content: 'readonly freezePanes: Excel.WorksheetFreezePanes;'
       return:
         type:
-          - Excel.WorksheetFreezePanes
+          - excel.Excel.WorksheetFreezePanes
   - uid: excel.Excel.Worksheet.getCell
     summary: >-
       Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
@@ -227,7 +227,7 @@ items:
       content: 'getCell(row: number, column: number): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
       parameters:
         - id: row
@@ -275,7 +275,7 @@ items:
       content: 'getNext(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: visibleOnly
@@ -329,7 +329,7 @@ items:
       content: 'getNextOrNullObject(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: visibleOnly
@@ -350,7 +350,7 @@ items:
       content: 'getPrevious(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: visibleOnly
@@ -400,7 +400,7 @@ items:
       content: 'getPreviousOrNullObject(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: visibleOnly
@@ -421,7 +421,7 @@ items:
       content: 'getRange(address?: string): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
       parameters:
         - id: address
@@ -499,7 +499,7 @@ items:
       content: 'getRangeByIndexes(startRow: number, startColumn: number, rowCount: number, columnCount: number): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
       parameters:
         - id: startRow
@@ -521,8 +521,7 @@ items:
   - uid: excel.Excel.Worksheet.getUsedRange
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
-      If the entire worksheet is blank, this function will return the top left cell (i.e. it will \*not\* throw an
-      error).
+      If the entire worksheet is blank, this function will return the top left cell (i.e. it will *not* throw an error).
 
 
       \[ [API set: ExcelApi 1.1](/javascript/office/requirement-sets/excel-api-requirement-sets) \]
@@ -535,7 +534,7 @@ items:
       content: 'getUsedRange(valuesOnly?: boolean): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
       parameters:
         - id: valuesOnly
@@ -581,7 +580,7 @@ items:
       content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
       parameters:
         - id: valuesOnly
@@ -613,16 +612,16 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      \`load(option?: string \| string\[\]): Excel.Worksheet\` - Where option is a comma-delimited string or an array of
+      `load(option?: string \| string\[\]): Excel.Worksheet` - Where option is a comma-delimited string or an array of
       strings that specify the properties/relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; }): Excel.Worksheet\` - Where option.select is a
-      comma-delimited string that specifies the properties/relationships to load, and options.expand is a
-      comma-delimited string that specifies the relationships to load.
+      `load(option?: { select?: string; expand?: string; }): Excel.Worksheet` - Where option.select is a comma-delimited
+      string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
+      specifies the relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Worksheet\` - Only
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Worksheet` - Only
       available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
@@ -679,13 +678,13 @@ items:
       content: 'load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.WorksheetLoadOptions
+            - excel.Excel.Interfaces.WorksheetLoadOptions
   - uid: excel.Excel.Worksheet.name
     summary: |-
       The display name of the worksheet.
@@ -715,7 +714,7 @@ items:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type:
-          - Excel.NamedItemCollection
+          - excel.Excel.NamedItemCollection
   - uid: excel.Excel.Worksheet.onActivated
     summary: |-
       Occurs when the worksheet is activated.
@@ -805,7 +804,7 @@ items:
       content: 'readonly pivotTables: Excel.PivotTableCollection;'
       return:
         type:
-          - Excel.PivotTableCollection
+          - excel.Excel.PivotTableCollection
   - uid: excel.Excel.Worksheet.position
     summary: |-
       The zero-based position of the worksheet within the workbook.
@@ -835,7 +834,7 @@ items:
       content: 'readonly protection: Excel.WorksheetProtection;'
       return:
         type:
-          - Excel.WorksheetProtection
+          - excel.Excel.WorksheetProtection
   - uid: excel.Excel.Worksheet.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -843,7 +842,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      \`set(properties: Excel.Worksheet): void\`
+      `set(properties: Excel.Worksheet): void`
     name: 'set(properties, options)'
     fullName: excel.Excel.Worksheet.set
     langs:
@@ -865,7 +864,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Worksheet.standardHeight
     summary: |-
       Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
@@ -945,7 +944,7 @@ items:
       content: 'readonly tables: Excel.TableCollection;'
       return:
         type:
-          - Excel.TableCollection
+          - excel.Excel.TableCollection
   - uid: excel.Excel.Worksheet.toJSON
     name: toJSON()
     fullName: excel.Excel.Worksheet.toJSON
@@ -956,7 +955,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorksheetData;'
       return:
         type:
-          - Excel.Interfaces.WorksheetData
+          - excel.Excel.Interfaces.WorksheetData
         description: ''
   - uid: excel.Excel.Worksheet.visibility
     summary: >-

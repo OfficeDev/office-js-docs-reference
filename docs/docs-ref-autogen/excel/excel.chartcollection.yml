@@ -37,13 +37,13 @@ items:
       content: 'add(type: Excel.ChartType, sourceData: Range | string, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;'
       return:
         type:
-          - Excel.Chart
+          - excel.Excel.Chart
         description: ''
       parameters:
         - id: type
           description: Represents the type of a chart. See Excel.ChartType for details.
           type:
-            - Excel.ChartType
+            - excel.Excel.ChartType
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
@@ -53,7 +53,7 @@ items:
             Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
             for details.
           type:
-            - Excel.ChartSeriesBy
+            - excel.Excel.ChartSeriesBy
     remarks: >
 
 
@@ -126,7 +126,7 @@ items:
       content: 'getItem(name: string): Excel.Chart;'
       return:
         type:
-          - Excel.Chart
+          - excel.Excel.Chart
         description: ''
       parameters:
         - id: name
@@ -196,7 +196,7 @@ items:
       content: 'getItemAt(index: number): Excel.Chart;'
       return:
         type:
-          - Excel.Chart
+          - excel.Excel.Chart
         description: ''
       parameters:
         - id: index
@@ -238,7 +238,7 @@ items:
       content: 'getItemOrNullObject(name: string): Excel.Chart;'
       return:
         type:
-          - Excel.Chart
+          - excel.Excel.Chart
         description: ''
       parameters:
         - id: name
@@ -265,16 +265,16 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      \`load(option?: string \| string\[\]): Excel.ChartCollection\` - Where option is a comma-delimited string or an
+      `load(option?: string \| string\[\]): Excel.ChartCollection` - Where option is a comma-delimited string or an
       array of strings that specify the properties/relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; }): Excel.ChartCollection\` - Where option.select is a
+      `load(option?: { select?: string; expand?: string; }): Excel.ChartCollection` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartCollection\` - Only
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartCollection` - Only
       available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
@@ -334,7 +334,7 @@ items:
         Excel.ChartCollection;
       return:
         type:
-          - Excel.ChartCollection
+          - excel.Excel.ChartCollection
         description: ''
       parameters:
         - id: option
@@ -351,5 +351,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartCollectionData;'
       return:
         type:
-          - Excel.Interfaces.ChartCollectionData
+          - excel.Excel.Interfaces.ChartCollectionData
         description: ''

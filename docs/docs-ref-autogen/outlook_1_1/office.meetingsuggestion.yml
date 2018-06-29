@@ -15,12 +15,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Read</td></tr></table>
     name: Office.MeetingSuggestion
     fullName: Outlook_1_1.Office.MeetingSuggestion
     langs:

@@ -27,7 +27,7 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatData;'
       return:
         type:
-          - Excel.Interfaces.ConditionalRangeFormatData
+          - excel.Excel.Interfaces.ConditionalRangeFormatData
   - uid: excel.Excel.Interfaces.TextConditionalFormatData.rule
     summary: |-
       The rule of the conditional format.
@@ -42,4 +42,4 @@ items:
       content: 'rule?: Excel.ConditionalTextComparisonRule;'
       return:
         type:
-          - Excel.ConditionalTextComparisonRule
+          - excel.Excel.ConditionalTextComparisonRule

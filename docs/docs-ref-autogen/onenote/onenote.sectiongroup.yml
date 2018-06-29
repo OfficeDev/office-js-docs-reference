@@ -43,7 +43,7 @@ items:
       content: 'addSection(title: string): OneNote.Section;'
       return:
         type:
-          - OneNote.Section
+          - onenote.OneNote.Section
         description: ''
       parameters:
         - id: title
@@ -99,7 +99,7 @@ items:
       content: 'addSectionGroup(name: string): OneNote.SectionGroup;'
       return:
         type:
-          - OneNote.SectionGroup
+          - onenote.OneNote.SectionGroup
         description: ''
       parameters:
         - id: name
@@ -207,13 +207,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.SectionGroupLoadOptions): OneNote.SectionGroup;'
       return:
         type:
-          - OneNote.SectionGroup
+          - onenote.OneNote.SectionGroup
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OneNote.Interfaces.SectionGroupLoadOptions
+            - onenote.OneNote.Interfaces.SectionGroupLoadOptions
     remarks: |
 
 
@@ -365,7 +365,7 @@ items:
       content: 'readonly notebook: OneNote.Notebook;'
       return:
         type:
-          - OneNote.Notebook
+          - onenote.OneNote.Notebook
   - uid: onenote.OneNote.SectionGroup.parentSectionGroup
     summary: >-
       Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child
@@ -382,7 +382,7 @@ items:
       content: 'readonly parentSectionGroup: OneNote.SectionGroup;'
       return:
         type:
-          - OneNote.SectionGroup
+          - onenote.OneNote.SectionGroup
   - uid: onenote.OneNote.SectionGroup.parentSectionGroupOrNull
     summary: >-
       Gets the section group that contains the section group. Returns null if the section group is a direct child of the
@@ -399,7 +399,7 @@ items:
       content: 'readonly parentSectionGroupOrNull: OneNote.SectionGroup;'
       return:
         type:
-          - OneNote.SectionGroup
+          - onenote.OneNote.SectionGroup
   - uid: onenote.OneNote.SectionGroup.sectionGroups
     summary: |-
       The collection of section groups in the section group. Read only
@@ -414,7 +414,7 @@ items:
       content: 'readonly sectionGroups: OneNote.SectionGroupCollection;'
       return:
         type:
-          - OneNote.SectionGroupCollection
+          - onenote.OneNote.SectionGroupCollection
   - uid: onenote.OneNote.SectionGroup.sections
     summary: |-
       The collection of sections in the section group. Read only
@@ -429,7 +429,7 @@ items:
       content: 'readonly sections: OneNote.SectionCollection;'
       return:
         type:
-          - OneNote.SectionCollection
+          - onenote.OneNote.SectionCollection
   - uid: onenote.OneNote.SectionGroup.toJSON
     name: toJSON()
     fullName: onenote.OneNote.SectionGroup.toJSON
@@ -440,7 +440,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.SectionGroupData;'
       return:
         type:
-          - OneNote.Interfaces.SectionGroupData
+          - onenote.OneNote.Interfaces.SectionGroupData
         description: ''
   - uid: onenote.OneNote.SectionGroup.track
     summary: >-
@@ -458,7 +458,7 @@ items:
       content: 'track(): OneNote.SectionGroup;'
       return:
         type:
-          - OneNote.SectionGroup
+          - onenote.OneNote.SectionGroup
         description: ''
   - uid: onenote.OneNote.SectionGroup.untrack
     summary: >-
@@ -475,5 +475,5 @@ items:
       content: 'untrack(): OneNote.SectionGroup;'
       return:
         type:
-          - OneNote.SectionGroup
+          - onenote.OneNote.SectionGroup
         description: ''

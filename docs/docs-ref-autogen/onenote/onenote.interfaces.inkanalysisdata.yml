@@ -41,7 +41,7 @@ items:
       content: 'page?: OneNote.Interfaces.PageData;'
       return:
         type:
-          - OneNote.Interfaces.PageData
+          - onenote.OneNote.Interfaces.PageData
   - uid: onenote.OneNote.Interfaces.InkAnalysisData.paragraphs
     summary: |-
       Gets the ink analysis paragraphs in this page. Read-only.

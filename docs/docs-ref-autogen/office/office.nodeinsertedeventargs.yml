@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.NodeInsertedEventArgs
     summary: Provides information about the inserted node that raised the nodeInserted event.
-    remarks: '&lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;'
+    remarks: <table><tr><td>Hosts</td><td>Word</td></tr></table>
     name: Office.NodeInsertedEventArgs
     fullName: office.Office.NodeInsertedEventArgs
     langs:
@@ -38,4 +38,4 @@ items:
       content: 'newNode: CustomXmlNode;'
       return:
         type:
-          - CustomXmlNode
+          - office.Office.CustomXmlNode

@@ -22,8 +22,8 @@ items:
   - uid: office.Office.UI.closeContainer
     summary: Closes the UI container where the JavaScript is executing.
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Excel, Word, PowerPoint, Outlook (Minimum requirement
-      set: Mailbox 1.5)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <table><tr><td>Hosts</td><td>Excel, Word, PowerPoint, Outlook (Minimum requirement set: Mailbox
+      1.5)</td></tr></table>
 
 
       The behavior of this method is specified by the following:
@@ -51,21 +51,20 @@ items:
   - uid: office.Office.UI.displayDialogAsync
     summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word, Excel, Outlook, PowerPoint&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word, Excel, Outlook, PowerPoint</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Requirement sets&lt;/td&gt;&lt;td&gt;DialogAPI, Mailbox
-      1.4&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement sets</td><td>DialogAPI, Mailbox 1.4</td></tr></table>
 
 
       The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial
       page loads, you can go to other domains.
 
 
-      Any page calling \`office.context.ui.messageParent\` must also be on the same domain as the parent page.
+      Any page calling `office.context.ui.messageParent` must also be on the same domain as the parent page.
 
 
-      \*\*Design considerations\*\*:
+      **Design considerations**:
 
 
       The following design considerations apply to dialog boxes:
@@ -103,31 +102,27 @@ items:
       the Office Add-in UX Design Patterns repository on GitHub.
 
 
-      \*\*displayDialogAsync Errors\*\*:
+      **displayDialogAsync Errors**:
 
 
-      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Code number&lt;/th&gt; &lt;th&gt;Meaning&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
-      &lt;td&gt;12004&lt;/td&gt; &lt;td&gt;The domain of the URL passed to displayDialogAsync is not trusted. The domain
-      must be either the same domain as the host page (including protocol and port number), or it must be registered in
-      the &lt;AppDomains&gt; section of the add-in manifest.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
-      &lt;td&gt;12005&lt;/td&gt; &lt;td&gt;The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is
-      required. (In some versions of Office, the error message returned with 12005 is the same one returned for
-      12004.)&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;12007&lt;/td&gt; &lt;td&gt;A dialog box is already opened from
-      the task pane. A task pane add-in can only have one dialog box open at a time.&lt;/td&gt; &lt;/tr&gt;
-      &lt;/table&gt;
+      <table> <tr> <th>Code number</th> <th>Meaning</th> </tr> <tr> <td>12004</td> <td>The domain of the URL passed to
+      displayDialogAsync is not trusted. The domain must be either the same domain as the host page (including protocol
+      and port number), or it must be registered in the <AppDomains> section of the add-in manifest.</td> </tr> <tr>
+      <td>12005</td> <td>The URL passed to displayDialogAsync uses the HTTP protocol. HTTPS is required. (In some
+      versions of Office, the error message returned with 12005 is the same one returned for 12004.)</td> </tr> <tr>
+      <td>12007</td> <td>A dialog box is already opened from the task pane. A task pane add-in can only have one dialog
+      box open at a time.</td> </tr> </table>
 
 
       In the callback function passed to the displayDialogAsync method, you can use the properties of the AsyncResult
       object to return the following information.
 
 
-      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Property&lt;/th&gt; &lt;th&gt;Use to&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
-      &lt;td&gt;AsyncResult.value&lt;/td&gt; &lt;td&gt;Access the Dialog object.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
-      &lt;td&gt;AsyncResult.status&lt;/td&gt; &lt;td&gt;Determine the success or failure of the operation.&lt;/td&gt;
-      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.error&lt;/td&gt; &lt;td&gt;Access an Error object that provides error
-      information if the operation failed.&lt;td&gt; &lt;/tr&gt; &lt;tr&gt;
-      &lt;td&gt;AsyncResult.asyncContext&lt;/td&gt; &lt;td&gt;Access your user-defined object or value, if you passed
-      one as the asyncContext parameter.&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
+      <table> <tr> <th>Property</th> <th>Use to</th> </tr> <tr> <td>AsyncResult.value</td> <td>Access the Dialog
+      object.</td> </tr> <tr> <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td>
+      </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
+      failed.<td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>Access your user-defined object or value, if you
+      passed one as the asyncContext parameter.</td> </tr> </table>
     name: 'displayDialogAsync(startAddress, options, callback)'
     fullName: office.Office.UI.displayDialogAsync
     langs:
@@ -151,7 +146,7 @@ items:
             Optional. Accepts an[Office.DialogOptions](xref:office.Office.DialogOptions) object to define dialog
             display.
           type:
-            - DialogOptions
+            - office.Office.DialogOptions
         - id: callback
           description: >-
             Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the

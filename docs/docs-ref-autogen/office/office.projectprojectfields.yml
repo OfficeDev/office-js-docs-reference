@@ -3,7 +3,7 @@ items:
   - uid: office.Office.ProjectProjectFields
     summary: Specifies the project fields that are available as a parameter for the getProjectFieldAsync method.
     remarks: |-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Project&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <table><tr><td>Hosts</td><td>Project</td></tr></table>
 
       A ProjectProjectFields constant can be used as a parameter of the getProjectFieldAsync method.
     name: Office.ProjectProjectFields

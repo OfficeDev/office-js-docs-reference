@@ -2,9 +2,7 @@
 items:
   - uid: office.Office.PlatformType
     summary: Specifies the OS or other platform on which the Office host application is running.
-    remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Excel, Word, PowerPoint, Outlook, OneNote, Project,
-      Access&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    remarks: '<table><tr><td>Hosts</td><td>Excel, Word, PowerPoint, Outlook, OneNote, Project, Access</td></tr></table>'
     name: Office.PlatformType
     fullName: office.Office.PlatformType
     langs:

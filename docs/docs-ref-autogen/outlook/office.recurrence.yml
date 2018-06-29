@@ -9,29 +9,24 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
-      \*\*States\*\*
+      **States**
 
 
-      &lt;table&gt; &lt;tr&gt; &lt;th&gt;State&lt;/th&gt; &lt;th&gt;Editable?&lt;/th&gt; &lt;th&gt;Viewable?&lt;/th&gt;
-      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment Organizer - Compose Series&lt;/td&gt; &lt;td&gt;Yes
-      (setAsync)&lt;/td&gt; &lt;td&gt;Yes (getAsync)&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment Organizer -
-      Compose Instance&lt;/td&gt; &lt;td&gt;No (setAsync returns error)&lt;/td&gt; &lt;td&gt;Yes (getAsync)&lt;/td&gt;
-      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment Attendee - Read Series&lt;/td&gt; &lt;td&gt;No (setAsync not
-      available)&lt;/td&gt; &lt;td&gt;Yes (item.recurrence)&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Appointment
-      Attendee - Read Instance&lt;/td&gt; &lt;td&gt;No (setAsync not available)&lt;/td&gt; &lt;td&gt;Yes
-      (item.recurrence)&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Meeting Request - Read Series&lt;/td&gt;
-      &lt;td&gt;No (setAsync not available)&lt;/td&gt; &lt;td&gt;Yes (item.recurrence)&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
-      &lt;td&gt;Meeting Request - Read Instance&lt;/td&gt; &lt;td&gt;No (setAsync not available)&lt;/td&gt;
-      &lt;td&gt;Yes (item.recurrence)&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
+      <table> <tr> <th>State</th> <th>Editable?</th> <th>Viewable?</th> </tr> <tr> <td>Appointment Organizer - Compose
+      Series</td> <td>Yes (setAsync)</td> <td>Yes (getAsync)</td> </tr> <tr> <td>Appointment Organizer - Compose
+      Instance</td> <td>No (setAsync returns error)</td> <td>Yes (getAsync)</td> </tr> <tr> <td>Appointment Attendee -
+      Read Series</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td> </tr> <tr> <td>Appointment
+      Attendee - Read Instance</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td> </tr> <tr>
+      <td>Meeting Request - Read Series</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td> </tr>
+      <tr> <td>Meeting Request - Read Instance</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td>
+      </tr> </table>
     isPreview: true
     name: Office.Recurrence
     fullName: outlook.Office.Recurrence
@@ -54,19 +49,17 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
 
 
-      \`getAsync(callback?: (result: AsyncResult) =&gt; void): void;\`
+      `getAsync(callback?: (result: AsyncResult) => void): void;`
 
 
       #### Examples
@@ -110,7 +103,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -123,13 +116,11 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: recurrenceProperties
     fullName: outlook.Office.Recurrence.recurrenceProperties
@@ -140,20 +131,18 @@ items:
       content: 'recurrenceProperties: RecurrenceProperties;'
       return:
         type:
-          - RecurrenceProperties
+          - outlook.Office.RecurrenceProperties
   - uid: outlook.Office.Recurrence.recurrenceTimeZone
     summary: |-
       Gets or sets the properties of the recurring appointment series.
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: recurrenceTimeZone
     fullName: outlook.Office.Recurrence.recurrenceTimeZone
@@ -171,13 +160,11 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: recurrenceType
     fullName: outlook.Office.Recurrence.recurrenceType
@@ -192,20 +179,18 @@ items:
   - uid: outlook.Office.Recurrence.seriesTime
     summary: >-
       The [Office.SeriesTime](xref:outlook.Office.SeriesTime) object enables you to manage the start and end dates of
-      the recurring appointment series and the usual start and end times of instances. \*\*This object is not in UTC
-      time.\*\* Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's
+      the recurring appointment series and the usual start and end times of instances. **This object is not in UTC
+      time.** Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's
       time zone.
 
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     isPreview: true
     name: seriesTime
     fullName: outlook.Office.Recurrence.seriesTime
@@ -216,7 +201,7 @@ items:
       content: 'seriesTime: SeriesTime;'
       return:
         type:
-          - SeriesTime
+          - outlook.Office.SeriesTime
   - uid: outlook.Office.Recurrence.setAsync
     summary: |-
       Sets the recurrence pattern of an appointment series.
@@ -225,22 +210,20 @@ items:
 
       \[ [API set: Mailbox Preview](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadWriteItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose&lt;/td&gt;&lt;/tr&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Errors&lt;/td&gt;&lt;td&gt;InvalidEndTime - The appointment end time is before its start
-      time.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Errors</td><td>InvalidEndTime - The appointment end time is before its start time.</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
 
 
-      \`setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult) =&gt; void): void;\`
+      `setAsync(recurrencePattern: Recurrence, callback?: (result: AsyncResult) => void): void;`
 
 
       #### Examples
@@ -290,13 +273,13 @@ items:
         - id: recurrencePattern
           description: A recurrence object.
           type:
-            - Recurrence
+            - outlook.Office.Recurrence
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single

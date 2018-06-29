@@ -37,7 +37,7 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - Word.Interfaces.FontLoadOptions
+          - word.Word.Interfaces.FontLoadOptions
   - uid: word.Word.Interfaces.BodyLoadOptions.parentBody
     summary: >-
       Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there
@@ -54,7 +54,7 @@ items:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - Word.Interfaces.BodyLoadOptions
+          - word.Word.Interfaces.BodyLoadOptions
   - uid: word.Word.Interfaces.BodyLoadOptions.parentBodyOrNullObject
     summary: >-
       Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null
@@ -71,7 +71,7 @@ items:
       content: 'parentBodyOrNullObject?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - Word.Interfaces.BodyLoadOptions
+          - word.Word.Interfaces.BodyLoadOptions
   - uid: word.Word.Interfaces.BodyLoadOptions.parentContentControl
     summary: |-
       Gets the content control that contains the body. Throws if there isn't a parent content control.
@@ -86,7 +86,7 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - Word.Interfaces.ContentControlLoadOptions
+          - word.Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.BodyLoadOptions.parentContentControlOrNullObject
     summary: |-
       Gets the content control that contains the body. Returns a null object if there isn't a parent content control.
@@ -101,7 +101,7 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - Word.Interfaces.ContentControlLoadOptions
+          - word.Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.BodyLoadOptions.parentSection
     summary: |-
       Gets the parent section of the body. Throws if there isn't a parent section.

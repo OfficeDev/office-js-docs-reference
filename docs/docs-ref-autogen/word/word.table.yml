@@ -93,7 +93,7 @@ items:
         - id: insertLocation
           description: 'Required. It can be ''Start'' or ''End'', corresponding to the appropriate side of the table.'
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
         - id: columnCount
           description: Required. Number of columns to add.
           type:
@@ -124,7 +124,7 @@ items:
         - id: insertLocation
           description: Required. It can be 'Start' or 'End'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
         - id: rowCount
           description: Required. Number of rows to add.
           type:
@@ -276,7 +276,7 @@ items:
       content: 'readonly font: Word.Font;'
       return:
         type:
-          - Word.Font
+          - word.Word.Font
   - uid: word.Word.Table.getBorder
     summary: |-
       Gets the border style for the specified border.
@@ -291,13 +291,13 @@ items:
       content: 'getBorder(borderLocation: Word.BorderLocation): Word.TableBorder;'
       return:
         type:
-          - Word.TableBorder
+          - word.Word.TableBorder
         description: ''
       parameters:
         - id: borderLocation
           description: Required. The border location.
           type:
-            - Word.BorderLocation
+            - word.Word.BorderLocation
   - uid: word.Word.Table.getCell
     summary: |-
       Gets the table cell at a specified row and column. Throws if the specified table cell does not exist.
@@ -384,7 +384,7 @@ items:
         - id: cellPaddingLocation
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'' or ''Right''.'
           type:
-            - Word.CellPaddingLocation
+            - word.Word.CellPaddingLocation
   - uid: word.Word.Table.getNext
     summary: |-
       Gets the next table. Throws if this table is the last one.
@@ -501,7 +501,7 @@ items:
         - id: rangeLocation
           description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'' or ''After''.'
           type:
-            - Word.RangeLocation
+            - word.Word.RangeLocation
   - uid: word.Word.Table.headerRowCount
     summary: |-
       Gets and sets the number of header rows.
@@ -548,7 +548,7 @@ items:
       content: 'insertContentControl(): Word.ContentControl;'
       return:
         type:
-          - Word.ContentControl
+          - word.Word.ContentControl
         description: ''
   - uid: word.Word.Table.insertParagraph
     summary: |-
@@ -574,7 +574,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.Table.insertTable
     summary: >-
       Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or
@@ -607,7 +607,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
@@ -691,7 +691,7 @@ items:
       content: 'readonly parentContentControl: Word.ContentControl;'
       return:
         type:
-          - Word.ContentControl
+          - word.Word.ContentControl
   - uid: word.Word.Table.parentContentControlOrNullObject
     summary: >-
       Gets the content control that contains the table. Returns a null object if there isn't a parent content control.
@@ -708,7 +708,7 @@ items:
       content: 'readonly parentContentControlOrNullObject: Word.ContentControl;'
       return:
         type:
-          - Word.ContentControl
+          - word.Word.ContentControl
   - uid: word.Word.Table.parentTable
     summary: |-
       Gets the table that contains this table. Throws if it is not contained in a table. Read-only.
@@ -826,7 +826,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - Word.RangeCollection
+          - word.Word.RangeCollection
         description: ''
       parameters:
         - id: searchText
@@ -888,7 +888,7 @@ items:
         - id: options
           description: ''
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Table.setCellPadding
     summary: |-
       Sets cell padding in points.
@@ -909,7 +909,7 @@ items:
         - id: cellPaddingLocation
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'' or ''Right''.'
           type:
-            - Word.CellPaddingLocation
+            - word.Word.CellPaddingLocation
         - id: cellPadding
           description: Required. The cell padding.
           type:

@@ -92,7 +92,7 @@ items:
       content: 'inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisData;'
       return:
         type:
-          - OneNote.Interfaces.InkAnalysisData
+          - onenote.OneNote.Interfaces.InkAnalysisData
   - uid: onenote.OneNote.Interfaces.PageData.pageLevel
     summary: |-
       Gets or sets the indentation level of the page.
@@ -122,7 +122,7 @@ items:
       content: 'parentSection?: OneNote.Interfaces.SectionData;'
       return:
         type:
-          - OneNote.Interfaces.SectionData
+          - onenote.OneNote.Interfaces.SectionData
   - uid: onenote.OneNote.Interfaces.PageData.title
     summary: |-
       Gets or sets the title of the page.

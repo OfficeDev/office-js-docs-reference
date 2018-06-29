@@ -27,13 +27,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;Restricted&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: Office.RoamingSettings
     fullName: Outlook_1_6.Office.RoamingSettings
     langs:
@@ -51,13 +49,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;Restricted&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: get(name)
     fullName: Outlook_1_6.Office.RoamingSettings.get
     langs:
@@ -80,13 +76,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;Restricted&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: remove(name)
     fullName: Outlook_1_6.Office.RoamingSettings.remove
     langs:
@@ -116,13 +110,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;Restricted&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: saveAsync(callback)
     fullName: Outlook_1_6.Office.RoamingSettings.saveAsync
     langs:
@@ -160,13 +152,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;Restricted&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: 'set(name, value)'
     fullName: Outlook_1_6.Office.RoamingSettings.set
     langs:

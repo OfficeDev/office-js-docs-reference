@@ -6,7 +6,7 @@ items:
 
 
       Important: This is an internal Outlook object, not directly exposed through existing interfaces. You should treat
-      this as a mode of \`Office.context.mailbox.item\`. Refer to the Object Model pages for more information.
+      this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
     name: Office.ItemCompose
     fullName: Outlook_1_6.Office.ItemCompose
     langs:
@@ -39,30 +39,29 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadWriteItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose&lt;/td&gt;&lt;/tr&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Errors&lt;/td&gt;&lt;td&gt;AttachmentSizeExceeded - The attachment is larger than
-      allowed.&lt;/td&gt;&lt;/tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;FileTypeNotSupported - The attachment has an
-      extension that is not allowed.&lt;/td&gt;&lt;/tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;NumberOfAttachmentsExceeded -
-      The message or appointment has too many attachments.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than
+      allowed.</td></tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not
+      allowed.</td></tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      attachments.</td></tr></table>
 
 
       In addition to this signature, the method also has the following signatures:
 
 
-      \`addFileAttachmentAsync(uri: string, attachmentName: string): void;\`
+      `addFileAttachmentAsync(uri: string, attachmentName: string): void;`
 
 
-      \`addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;\`
+      `addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;`
 
 
-      \`addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) =&gt; void): void;\`
+      `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult) => void): void;`
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: Outlook_1_6.Office.ItemCompose.addFileAttachmentAsync
     langs:
@@ -95,7 +94,7 @@ items:
             can provide any object they wish to access in the callback method. inInline: If true, indicates that the
             attachment will be shown inline in the message body, and should not be displayed in the attachment list.
           type:
-            - Office.AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -125,28 +124,27 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadWriteItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose&lt;/td&gt;&lt;/tr&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Errors&lt;/td&gt;&lt;td&gt;NumberOfAttachmentsExceeded - The message or appointment has too
-      many attachments.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
+      attachments.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:
 
 
-      \`addItemAttachmentAsync(itemId: any, attachmentName: string): void;\`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
 
 
-      \`addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;\`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`
 
 
-      \`addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) =&gt; void): void;\`
+      `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult) => void): void;`
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: Outlook_1_6.Office.ItemCompose.addItemAttachmentAsync
     langs:
@@ -176,7 +174,7 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -203,12 +201,11 @@ items:
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;Restricted&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
     name: close()
     fullName: Outlook_1_6.Office.ItemCompose.close
     langs:
@@ -235,12 +232,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadWriteItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
     name: 'getSelectedDataAsync(coerciontype, callback)'
     fullName: Outlook_1_6.Office.ItemCompose.getSelectedDataAsync
     langs:
@@ -256,7 +252,7 @@ items:
         - id: coerciontype
           description: ''
           type:
-            - Office.CoercionType
+            - office.Office.CoercionType
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -277,28 +273,26 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadWriteItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose&lt;/td&gt;&lt;/tr&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Errors&lt;/td&gt;&lt;td&gt;InvalidAttachmentId - The attachment identifier does not
-      exist.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
 
 
       In addition to this signature, the method also has the following signatures:
 
 
-      \`removeAttachmentAsync(attachmentIndex: string): void;\`
+      `removeAttachmentAsync(attachmentIndex: string): void;`
 
 
-      \`removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;\`
+      `removeAttachmentAsync(attachmentIndex: string, options: Office.AsyncContextOptions): void;`
 
 
-      \`removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) =&gt; void): void;\`
+      `removeAttachmentAsync(attachmentIndex: string, callback: (result: AsyncResult) => void): void;`
     name: 'removeAttachmentAsync(attachmentIndex, options, callback)'
     fullName: Outlook_1_6.Office.ItemCompose.removeAttachmentAsync
     langs:
@@ -322,7 +316,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -363,28 +357,26 @@ items:
 
       \[ [API set: Mailbox 1.3](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadWriteItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose&lt;/td&gt;&lt;/tr&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Errors&lt;/td&gt;&lt;td&gt;InvalidAttachmentId - The attachment identifier does not
-      exist.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
 
 
       In addition to this signature, the method also has the following signatures:
 
 
-      \`saveAsync(): void;\`
+      `saveAsync(): void;`
 
 
-      \`saveAsync(options: Office.AsyncContextOptions): void;\`
+      `saveAsync(options: Office.AsyncContextOptions): void;`
 
 
-      \`saveAsync(callback: (result: AsyncResult) =&gt; void): void;\`
+      `saveAsync(callback: (result: AsyncResult) => void): void;`
     name: 'saveAsync(options, callback)'
     fullName: Outlook_1_6.Office.ItemCompose.saveAsync
     langs:
@@ -402,7 +394,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -422,28 +414,26 @@ items:
 
       \[ [API set: Mailbox 1.2](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadWriteItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose&lt;/td&gt;&lt;/tr&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Errors&lt;/td&gt;&lt;td&gt;InvalidAttachmentId - The attachment identifier does not
-      exist.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
 
 
       In addition to this signature, the method also has the following signatures:
 
 
-      \`setSelectedDataAsync(data: string): void;\`
+      `setSelectedDataAsync(data: string): void;`
 
 
-      \`setSelectedDataAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;\`
+      `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions &amp; CoercionTypeOptions): void;`
 
 
-      \`setSelectedDataAsync(data: string, callback: (result: AsyncResult) =&gt; void): void;\`
+      `setSelectedDataAsync(data: string, callback: (result: AsyncResult) => void): void;`
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: Outlook_1_6.Office.ItemCompose.setSelectedDataAsync
     langs:
@@ -492,13 +482,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: subject
     fullName: Outlook_1_6.Office.ItemCompose.subject
     langs:

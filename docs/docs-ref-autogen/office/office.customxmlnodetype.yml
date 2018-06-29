@@ -3,9 +3,9 @@ items:
   - uid: office.Office.CustomXMLNodeType
     summary: Specifies the type of the XML node.
     remarks: |-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     name: Office.CustomXMLNodeType
     fullName: office.Office.CustomXMLNodeType
     langs:

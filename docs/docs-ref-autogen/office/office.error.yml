@@ -3,8 +3,7 @@ items:
   - uid: office.Office.Error
     summary: Provides specific information about an error that occurred during an asynchronous data operation.
     remarks: >
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Outlook, PowerPoint, Project,
-      Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word</td></tr></table>
 
 
       The Error object is accessed from the AsyncResult object that is returned in the function passed as the callback

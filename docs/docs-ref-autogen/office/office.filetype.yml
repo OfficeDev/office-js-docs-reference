@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.FileType
     summary: Specifies the format in which to return the document.
-    remarks: '&lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;PowerPoint, Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;'
+    remarks: '<table><tr><td>Hosts</td><td>PowerPoint, Word</td></tr></table>'
     name: Office.FileType
     fullName: office.Office.FileType
     langs:

@@ -38,7 +38,7 @@ items:
   - uid: excel.Excel.FilterCriteria.criterion1
     summary: >-
       The first criterion used to filter data. Used as an operator in the case of "custom" filtering. For example
-      "&gt;50" for number greater than 50 or "=\*s" for values ending in "s".
+      "&gt;50" for number greater than 50 or "=*s" for values ending in "s".
 
 
       Used as a number in the case of top/bottom items/percents. E.g. "5" for the top 5 items if filterOn is set to
@@ -136,7 +136,7 @@ items:
       content: 'icon?: Excel.Icon;'
       return:
         type:
-          - Excel.Icon
+          - excel.Excel.Icon
   - uid: excel.Excel.FilterCriteria.operator
     summary: |-
       The operator used to combine criterion 1 and 2 when using "custom" filtering.

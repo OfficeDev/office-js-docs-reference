@@ -8,13 +8,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: Office.UserProfile
     fullName: outlook.Office.UserProfile
     langs:
@@ -34,24 +32,21 @@ items:
 
       \[ [API set: Mailbox 1.6](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
 
 
       The possible account types are listed in the following table.
 
 
-      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Value&lt;/th&gt; &lt;th&gt;Description?&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
-      &lt;td&gt;enterprise&lt;/td&gt; &lt;td&gt;The mailbox is on an on-premises Exchange server.&lt;/td&gt; &lt;/tr&gt;
-      &lt;tr&gt; &lt;td&gt;gmail&lt;/td&gt; &lt;td&gt;The mailbox is associated with a Gmail account.&lt;/td&gt;
-      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;office365&lt;/td&gt; &lt;td&gt;The mailbox is associated with an Office 365 work
-      or school account.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;outlookCom&lt;/td&gt; &lt;td&gt;The mailbox is
-      associated with a personal Outlook.com account.&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
+      <table> <tr> <th>Value</th> <th>Description?</th> </tr> <tr> <td>enterprise</td> <td>The mailbox is on an
+      on-premises Exchange server.</td> </tr> <tr> <td>gmail</td> <td>The mailbox is associated with a Gmail
+      account.</td> </tr> <tr> <td>office365</td> <td>The mailbox is associated with an Office 365 work or school
+      account.</td> </tr> <tr> <td>outlookCom</td> <td>The mailbox is associated with a personal Outlook.com
+      account.</td> </tr> </table>
     name: accountType
     fullName: outlook.Office.UserProfile.accountType
     langs:
@@ -68,13 +63,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: displayName
     fullName: outlook.Office.UserProfile.displayName
     langs:
@@ -91,13 +84,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: emailAddress
     fullName: outlook.Office.UserProfile.emailAddress
     langs:
@@ -114,13 +105,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: timeZone
     fullName: outlook.Office.UserProfile.timeZone
     langs:

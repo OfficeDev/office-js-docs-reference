@@ -51,7 +51,7 @@ items:
       content: 'getItem(index: number | string): OneNote.InkStroke;'
       return:
         type:
-          - OneNote.InkStroke
+          - onenote.OneNote.InkStroke
         description: ''
       parameters:
         - id: index
@@ -72,7 +72,7 @@ items:
       content: 'getItemAt(index: number): OneNote.InkStroke;'
       return:
         type:
-          - OneNote.InkStroke
+          - onenote.OneNote.InkStroke
         description: ''
       parameters:
         - id: index
@@ -106,7 +106,7 @@ items:
         OneNote.InkStrokeCollection;
       return:
         type:
-          - OneNote.InkStrokeCollection
+          - onenote.OneNote.InkStrokeCollection
         description: ''
       parameters:
         - id: option
@@ -123,7 +123,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.InkStrokeCollectionData;'
       return:
         type:
-          - OneNote.Interfaces.InkStrokeCollectionData
+          - onenote.OneNote.Interfaces.InkStrokeCollectionData
         description: ''
   - uid: onenote.OneNote.InkStrokeCollection.track
     summary: >-
@@ -141,7 +141,7 @@ items:
       content: 'track(): OneNote.InkStrokeCollection;'
       return:
         type:
-          - OneNote.InkStrokeCollection
+          - onenote.OneNote.InkStrokeCollection
         description: ''
   - uid: onenote.OneNote.InkStrokeCollection.untrack
     summary: >-
@@ -158,5 +158,5 @@ items:
       content: 'untrack(): OneNote.InkStrokeCollection;'
       return:
         type:
-          - OneNote.InkStrokeCollection
+          - onenote.OneNote.InkStrokeCollection
         description: ''

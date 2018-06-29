@@ -6,13 +6,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;Restricted&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: Office.AppointmentForm
     fullName: Outlook_1_4.Office.AppointmentForm
     langs:
@@ -34,13 +32,11 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: body
     fullName: Outlook_1_4.Office.AppointmentForm.body
     langs:
@@ -60,13 +56,13 @@ items:
       convertToLocalClientTime method to convert the end property value to the client's local date and time.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The end property returns a Date object.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The end property returns a Time object.
@@ -78,13 +74,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: end
     fullName: Outlook_1_4.Office.AppointmentForm.end
     langs:
@@ -100,13 +94,13 @@ items:
       Gets or sets the location of an appointment.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The location property returns a string that contains the location of the appointment.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The location property returns a Location object that provides methods that are used to get and set the location of
@@ -115,10 +109,9 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;Applicable Outlook
-      mode&lt;/td&gt;&lt;td&gt;Compose or read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: location
     fullName: Outlook_1_4.Office.AppointmentForm.location
     langs:
@@ -135,14 +128,14 @@ items:
       of the current item.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional
       attendee to the meeting.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The optionalAttendees property returns a Recipients object that provides methods to get or update the optional
@@ -151,13 +144,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: optionalAttendees
     fullName: Outlook_1_4.Office.AppointmentForm.optionalAttendees
     langs:
@@ -174,14 +165,14 @@ items:
       of the current item.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required
       attendee to the meeting.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The requiredAttendees property returns a Recipients object that provides methods to get or update the required
@@ -190,13 +181,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: requiredAttendees
     fullName: Outlook_1_4.Office.AppointmentForm.requiredAttendees
     langs:
@@ -227,13 +216,13 @@ items:
       convertToLocalClientTime method to convert the value to the client's local date and time.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The start property returns a Date object.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The start property returns a Time object.
@@ -245,13 +234,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: start
     fullName: Outlook_1_4.Office.AppointmentForm.start
     langs:
@@ -270,14 +257,14 @@ items:
       The subject property gets or sets the entire subject of the item, as sent by the email server.
 
 
-      \*Read mode\*
+      *Read mode*
 
 
       The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading
       prefixes such as RE: and FW:.
 
 
-      \*Compose mode\*
+      *Compose mode*
 
 
       The subject property returns a Subject object that provides methods to get and set the subject.
@@ -285,13 +272,11 @@ items:
 
       \[ [API set: Mailbox 1.0](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose or
-      read&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose or read</td></tr></table>
     name: subject
     fullName: Outlook_1_4.Office.AppointmentForm.subject
     langs:

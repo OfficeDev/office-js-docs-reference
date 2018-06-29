@@ -50,13 +50,13 @@ items:
       content: 'load(option?: Word.Interfaces.TableBorderLoadOptions): Word.TableBorder;'
       return:
         type:
-          - Word.TableBorder
+          - word.Word.TableBorder
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.TableBorderLoadOptions
+            - word.Word.Interfaces.TableBorderLoadOptions
   - uid: word.Word.TableBorder.set
     summary: 'Sets multiple properties on the object at the same time, based on JSON input.'
     name: 'set(properties, options)'
@@ -78,7 +78,7 @@ items:
         - id: options
           description: ''
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.TableBorder.toJSON
     name: toJSON()
     fullName: word.Word.TableBorder.toJSON
@@ -89,7 +89,7 @@ items:
       content: 'toJSON(): Word.Interfaces.TableBorderData;'
       return:
         type:
-          - Word.Interfaces.TableBorderData
+          - word.Word.Interfaces.TableBorderData
         description: ''
   - uid: word.Word.TableBorder.track
     summary: >-
@@ -107,7 +107,7 @@ items:
       content: 'track(): Word.TableBorder;'
       return:
         type:
-          - Word.TableBorder
+          - word.Word.TableBorder
         description: ''
   - uid: word.Word.TableBorder.type
     summary: |-
@@ -147,7 +147,7 @@ items:
       content: 'untrack(): Word.TableBorder;'
       return:
         type:
-          - Word.TableBorder
+          - word.Word.TableBorder
         description: ''
   - uid: word.Word.TableBorder.width
     summary: >-

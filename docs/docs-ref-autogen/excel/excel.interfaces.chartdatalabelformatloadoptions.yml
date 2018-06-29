@@ -27,4 +27,4 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
       return:
         type:
-          - Excel.Interfaces.ChartFontLoadOptions
+          - excel.Excel.Interfaces.ChartFontLoadOptions

@@ -104,7 +104,7 @@ items:
       content: 'appendImage(base64EncodedImage: string, width: number, height: number): OneNote.Image;'
       return:
         type:
-          - OneNote.Image
+          - onenote.OneNote.Image
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -133,7 +133,7 @@ items:
       content: 'appendRichText(paragraphText: string): OneNote.RichText;'
       return:
         type:
-          - OneNote.RichText
+          - onenote.OneNote.RichText
         description: ''
       parameters:
         - id: paragraphText
@@ -252,13 +252,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.OutlineLoadOptions): OneNote.Outline;'
       return:
         type:
-          - OneNote.Outline
+          - onenote.OneNote.Outline
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OneNote.Interfaces.OutlineLoadOptions
+            - onenote.OneNote.Interfaces.OutlineLoadOptions
   - uid: onenote.OneNote.Outline.pageContent
     summary: >-
       Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the
@@ -275,7 +275,7 @@ items:
       content: 'readonly pageContent: OneNote.PageContent;'
       return:
         type:
-          - OneNote.PageContent
+          - onenote.OneNote.PageContent
   - uid: onenote.OneNote.Outline.paragraphs
     summary: |-
       Gets the collection of Paragraph objects in the Outline. Read-only.
@@ -290,7 +290,7 @@ items:
       content: 'readonly paragraphs: OneNote.ParagraphCollection;'
       return:
         type:
-          - OneNote.ParagraphCollection
+          - onenote.OneNote.ParagraphCollection
   - uid: onenote.OneNote.Outline.toJSON
     name: toJSON()
     fullName: onenote.OneNote.Outline.toJSON
@@ -301,7 +301,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.OutlineData;'
       return:
         type:
-          - OneNote.Interfaces.OutlineData
+          - onenote.OneNote.Interfaces.OutlineData
         description: ''
   - uid: onenote.OneNote.Outline.track
     summary: >-
@@ -319,7 +319,7 @@ items:
       content: 'track(): OneNote.Outline;'
       return:
         type:
-          - OneNote.Outline
+          - onenote.OneNote.Outline
         description: ''
   - uid: onenote.OneNote.Outline.untrack
     summary: >-
@@ -336,5 +336,5 @@ items:
       content: 'untrack(): OneNote.Outline;'
       return:
         type:
-          - OneNote.Outline
+          - onenote.OneNote.Outline
         description: ''

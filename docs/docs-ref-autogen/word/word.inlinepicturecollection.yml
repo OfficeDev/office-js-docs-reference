@@ -35,7 +35,7 @@ items:
       content: 'getFirst(): Word.InlinePicture;'
       return:
         type:
-          - Word.InlinePicture
+          - word.Word.InlinePicture
         description: ''
   - uid: word.Word.InlinePictureCollection.getFirstOrNullObject
     summary: |-
@@ -51,7 +51,7 @@ items:
       content: 'getFirstOrNullObject(): Word.InlinePicture;'
       return:
         type:
-          - Word.InlinePicture
+          - word.Word.InlinePicture
         description: ''
   - uid: word.Word.InlinePictureCollection.items
     summary: Gets the loaded child items in this collection.
@@ -80,7 +80,7 @@ items:
         Word.InlinePictureCollection;
       return:
         type:
-          - Word.InlinePictureCollection
+          - word.Word.InlinePictureCollection
         description: ''
       parameters:
         - id: option
@@ -97,7 +97,7 @@ items:
       content: 'toJSON(): Word.Interfaces.InlinePictureCollectionData;'
       return:
         type:
-          - Word.Interfaces.InlinePictureCollectionData
+          - word.Word.Interfaces.InlinePictureCollectionData
         description: ''
   - uid: word.Word.InlinePictureCollection.track
     summary: >-
@@ -115,7 +115,7 @@ items:
       content: 'track(): Word.InlinePictureCollection;'
       return:
         type:
-          - Word.InlinePictureCollection
+          - word.Word.InlinePictureCollection
         description: ''
   - uid: word.Word.InlinePictureCollection.untrack
     summary: >-
@@ -132,5 +132,5 @@ items:
       content: 'untrack(): Word.InlinePictureCollection;'
       return:
         type:
-          - Word.InlinePictureCollection
+          - word.Word.InlinePictureCollection
         description: ''

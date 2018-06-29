@@ -34,7 +34,7 @@ items:
       content: 'readonly border: Excel.ChartBorder;'
       return:
         type:
-          - Excel.ChartBorder
+          - excel.Excel.ChartBorder
   - uid: excel.Excel.ChartAreaFormat.fill
     summary: |-
       Represents the fill format of an object, which includes background formatting information. Read-only.
@@ -49,7 +49,7 @@ items:
       content: 'readonly fill: Excel.ChartFill;'
       return:
         type:
-          - Excel.ChartFill
+          - excel.Excel.ChartFill
   - uid: excel.Excel.ChartAreaFormat.font
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
@@ -64,7 +64,7 @@ items:
       content: 'readonly font: Excel.ChartFont;'
       return:
         type:
-          - Excel.ChartFont
+          - excel.Excel.ChartFont
   - uid: excel.Excel.ChartAreaFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -73,16 +73,16 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      \`load(option?: string \| string\[\]): Excel.ChartAreaFormat\` - Where option is a comma-delimited string or an
+      `load(option?: string \| string\[\]): Excel.ChartAreaFormat` - Where option is a comma-delimited string or an
       array of strings that specify the properties/relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; }): Excel.ChartAreaFormat\` - Where option.select is a
+      `load(option?: { select?: string; expand?: string; }): Excel.ChartAreaFormat` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAreaFormat\` - Only
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAreaFormat` - Only
       available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
@@ -96,13 +96,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartAreaFormatLoadOptions): Excel.ChartAreaFormat;'
       return:
         type:
-          - Excel.ChartAreaFormat
+          - excel.Excel.ChartAreaFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ChartAreaFormatLoadOptions
+            - excel.Excel.Interfaces.ChartAreaFormatLoadOptions
   - uid: excel.Excel.ChartAreaFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -110,7 +110,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      \`set(properties: Excel.ChartAreaFormat): void\`
+      `set(properties: Excel.ChartAreaFormat): void`
     name: 'set(properties, options)'
     fullName: excel.Excel.ChartAreaFormat.set
     langs:
@@ -132,7 +132,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartAreaFormat.toJSON
     name: toJSON()
     fullName: excel.Excel.ChartAreaFormat.toJSON
@@ -143,5 +143,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartAreaFormatData;'
       return:
         type:
-          - Excel.Interfaces.ChartAreaFormatData
+          - excel.Excel.Interfaces.ChartAreaFormatData
         description: ''

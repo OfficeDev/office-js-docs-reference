@@ -29,7 +29,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions;'
       return:
         type:
-          - Excel.Interfaces.ChartAxisTitleFormatLoadOptions
+          - excel.Excel.Interfaces.ChartAxisTitleFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartAxisTitleLoadOptions.text
     summary: |-
       Represents the axis title.

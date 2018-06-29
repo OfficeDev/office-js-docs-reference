@@ -2,9 +2,7 @@
 items:
   - uid: office.Office.GoToType
     summary: Specifies the type of place or object to navigate to.
-    remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Excel, PowerPoint,
-      Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    remarks: '<table><tr><td>Hosts</td><td>Excel, PowerPoint, Word</td></tr></table>'
     name: Office.GoToType
     fullName: office.Office.GoToType
     langs:

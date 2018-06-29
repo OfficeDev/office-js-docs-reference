@@ -3,12 +3,11 @@ items:
   - uid: Outlook_1_6.Office.Recipients
     summary: '\[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]'
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
     name: Office.Recipients
     fullName: Outlook_1_6.Office.Recipients
     langs:
@@ -33,30 +32,29 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadWriteItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose&lt;/td&gt;&lt;/tr&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Errors&lt;/td&gt;&lt;td&gt;NumberOfRecipientsExceeded - The number of recipients exceeded 100
-      entries.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
+      entries.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:
 
 
-      \`addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\]): void;\`
+      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\]): void;`
 
 
-      \`addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: Office.AsyncContextOptions):
-      void;\`
+      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: Office.AsyncContextOptions):
+      void;`
 
 
-      \`addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) =&gt;
-      void): void;\`
+      `addAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) => void):
+      void;`
     name: 'addAsync(recipients, options, callback)'
     fullName: Outlook_1_6.Office.Recipients.addAsync
     langs:
@@ -80,7 +78,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -99,18 +97,17 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr></table>
 
 
       In addition to the main signature, this method also has this signature:
 
 
-      \`getAsync(callback: (result: AsyncResult) =&gt; void): void;\`
+      `getAsync(callback: (result: AsyncResult) => void): void;`
     name: 'getAsync(options, callback)'
     fullName: Outlook_1_6.Office.Recipients.getAsync
     langs:
@@ -128,7 +125,7 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -151,30 +148,29 @@ items:
 
       \[ [API set: Mailbox 1.1](/javascript/office/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!--
-      -->&lt;/td&gt;&lt;td&gt;ReadWriteItem&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Applicable Outlook mode&lt;/td&gt;&lt;td&gt;Compose&lt;/td&gt;&lt;/tr&gt;
+      <tr><td>Applicable Outlook mode</td><td>Compose</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Errors&lt;/td&gt;&lt;td&gt;NumberOfRecipientsExceeded - The number of recipients exceeded 100
-      entries.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100
+      entries.</td></tr></table>
 
 
       In addition to the main signature, this method also has these signatures:
 
 
-      \`setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\]): void;\`
+      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\]): void;`
 
 
-      \`setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: Office.AsyncContextOptions):
-      void;\`
+      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], options: Office.AsyncContextOptions):
+      void;`
 
 
-      \`setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) =&gt;
-      void): void;\`
+      `setAsync(recipients: (string \| EmailUser \| EmailAddressDetails)\[\], callback: (result: AsyncResult) => void):
+      void;`
     name: 'setAsync(recipients, options, callback)'
     fullName: Outlook_1_6.Office.Recipients.setAsync
     langs:
@@ -198,7 +194,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - Office.AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single

@@ -44,16 +44,16 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      \`load(option?: string \| string\[\]): Excel.PivotTable\` - Where option is a comma-delimited string or an array
-      of strings that specify the properties/relationships to load.
+      `load(option?: string \| string\[\]): Excel.PivotTable` - Where option is a comma-delimited string or an array of
+      strings that specify the properties/relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; }): Excel.PivotTable\` - Where option.select is a
+      `load(option?: { select?: string; expand?: string; }): Excel.PivotTable` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotTable\` - Only
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotTable` - Only
       available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
@@ -67,13 +67,13 @@ items:
       content: 'load(option?: Excel.Interfaces.PivotTableLoadOptions): Excel.PivotTable;'
       return:
         type:
-          - Excel.PivotTable
+          - excel.Excel.PivotTable
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.PivotTableLoadOptions
+            - excel.Excel.Interfaces.PivotTableLoadOptions
   - uid: excel.Excel.PivotTable.name
     summary: |-
       Name of the PivotTable.
@@ -112,7 +112,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      \`set(properties: Excel.PivotTable): void\`
+      `set(properties: Excel.PivotTable): void`
     name: 'set(properties, options)'
     fullName: excel.Excel.PivotTable.set
     langs:
@@ -134,7 +134,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.PivotTable.toJSON
     name: toJSON()
     fullName: excel.Excel.PivotTable.toJSON
@@ -145,7 +145,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.PivotTableData;'
       return:
         type:
-          - Excel.Interfaces.PivotTableData
+          - excel.Excel.Interfaces.PivotTableData
         description: ''
   - uid: excel.Excel.PivotTable.worksheet
     summary: |-
@@ -161,4 +161,4 @@ items:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet

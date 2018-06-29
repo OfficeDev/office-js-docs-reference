@@ -137,7 +137,7 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - Word.Interfaces.ContentControlLoadOptions
+          - word.Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControlOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the inline image. Returns a null object if
@@ -154,7 +154,7 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - Word.Interfaces.ContentControlLoadOptions
+          - word.Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTable
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the inline image. Throws if it is not contained in a

@@ -128,7 +128,7 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlData;'
       return:
         type:
-          - Word.Interfaces.ContentControlData
+          - word.Word.Interfaces.ContentControlData
   - uid: word.Word.Interfaces.InlinePictureData.parentContentControlOrNullObject
     summary: >-
       Gets the content control that contains the inline image. Returns a null object if there isn't a parent content
@@ -145,7 +145,7 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;'
       return:
         type:
-          - Word.Interfaces.ContentControlData
+          - word.Word.Interfaces.ContentControlData
   - uid: word.Word.Interfaces.InlinePictureData.parentTable
     summary: |-
       Gets the table that contains the inline image. Throws if it is not contained in a table. Read-only.

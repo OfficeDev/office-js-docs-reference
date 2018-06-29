@@ -3,11 +3,10 @@ items:
   - uid: office.Office.TableBinding
     summary: 'Represents a binding in two dimensions of rows and columns, optionally with headers.'
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, PowerPoint, Project,
-      Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;TableBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
 
       The TableBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from
@@ -38,10 +37,10 @@ items:
   - uid: office.Office.TableBinding.addColumnsAsync
     summary: Adds the specified data to the table as additional columns.
     remarks: >
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Excel, Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;TableBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
 
       To add one or more columns specifying the values of the data and headers, pass a TableData object as the data
@@ -136,7 +135,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -144,10 +143,10 @@ items:
   - uid: office.Office.TableBinding.addRowsAsync
     summary: Adds the specified data to the table as additional rows.
     remarks: >
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;TableBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
 
       To add one or more columns specifying the values of the data and headers, pass a TableData object as the data
@@ -212,7 +211,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -220,10 +219,10 @@ items:
   - uid: office.Office.TableBinding.clearFormatsAsync
     summary: Clears formatting on the bound table.
     remarks: >
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Excel&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Excel</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;Not in a set&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
 
 
       See [Format tables in add-ins for
@@ -264,7 +263,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -272,9 +271,9 @@ items:
   - uid: office.Office.TableBinding.columnCount
     summary: 'Gets the number of columns in the TableBinding, as an integer value.'
     remarks: |
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel,Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Access, Excel,Word</td></tr>
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;TableBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
       #### Examples
 
@@ -295,9 +294,9 @@ items:
   - uid: office.Office.TableBinding.deleteAllDataValuesAsync
     summary: 'Deletes all non-header rows and their values in the table, shifting appropriately for the host application.'
     remarks: |
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Access, Excel, Word</td></tr>
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;TableBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
       In Excel, if the table has no header row, this method will delete the table itself.
 
@@ -326,7 +325,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -358,38 +357,30 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
             - '(result: AsyncResult) => void'
   - uid: office.Office.TableBinding.hasHeaders
     summary: 'True, if the table has headers; otherwise false.'
-    remarks: >
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, PowerPoint, Project,
-      Word&lt;/td&gt;&lt;/tr&gt;
+    remarks: |
+      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
 
-
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;TableBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
       #### Examples
 
-
       ```javascript
-
       function showBindingHasHeaders() {
           Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
               write("Binding has headers: " + asyncResult.value.hasHeaders);
           });
       }
-
       // Function that writes to a div with id='message' on the page.
-
       function write(message){
           document.getElementById('message').innerText += message; 
       }
-
       ```
     name: hasHeaders
     fullName: office.Office.TableBinding.hasHeaders
@@ -404,10 +395,10 @@ items:
   - uid: office.Office.TableBinding.rowCount
     summary: 'Gets the number of rows in the TableBinding, as an integer value.'
     remarks: >
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel,Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Access, Excel,Word</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;TableBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
 
 
       When you insert an empty table by selecting a single row in Excel 2013 and Excel Online (using Table on the Insert
@@ -461,81 +452,78 @@ items:
   - uid: office.Office.TableBinding.setFormatsAsync
     summary: Sets formatting on specified items and data in the table.
     remarks: >
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Excel&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Excel</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;Not in a set&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
 
 
-      \*\*Specifying the cellFormat parameter\*\*
+      **Specifying the cellFormat parameter**
 
 
       Use the cellFormat parameter to set or change cell formatting values, such as width, height, font, background,
       alignment, and so on. The value you pass as the cellFormat parameter is an array that contains a list of one or
-      more JavaScript objects that specify which cells to target (\`cells:\`) and the formats (\`format:\`) to apply to
+      more JavaScript objects that specify which cells to target (`cells:`) and the formats (`format:`) to apply to
       them.
 
 
-      Each JavaScript object in the cellFormat array has this form: \`{cells:{ cell\_range }, format:{
-      format\_definition }}\`
+      Each JavaScript object in the cellFormat array has this form: `{cells:{ cell\_range }, format:{ format\_definition
+      }}`
 
 
-      The \`cells:\` property specifies the range you want format using one of the following values:
+      The `cells:` property specifies the range you want format using one of the following values:
 
 
-      \*\*Supported ranges in cells property\*\*
+      **Supported ranges in cells property**
 
 
-      &lt;table&gt; &lt;tr&gt; &lt;th&gt;cells range settings&lt;/th&gt; &lt;th&gt;Description&lt;/th&gt; &lt;/tr&gt;
-      &lt;tr&gt; &lt;td&gt;{row: n}&lt;/td&gt; &lt;td&gt;Specifies the range that is the zero-based nth row of data in
-      the table.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;{column: n}&lt;/td&gt; &lt;td&gt;Specifies the range that
-      is the zero-based nth column of data in the table.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;{row: i, column:
-      j}&lt;/td&gt; &lt;td&gt;Specifies the single cell that is the ith row and jth column of the table.&lt;/td&gt;
-      &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Office.Table.All&lt;/td&gt; &lt;td&gt;Specifies the entire table, including
-      column headers, data, and totals (if any).&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
-      &lt;td&gt;Office.Table.Data&lt;/td&gt; &lt;td&gt;Specifies only the data in the table (no headers and
-      totals).&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Office.Table.Headers&lt;/td&gt; &lt;td&gt;Specifies only the
-      header row.&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
+      <table> <tr> <th>cells range settings</th> <th>Description</th> </tr> <tr> <td>{row: n}</td> <td>Specifies the
+      range that is the zero-based nth row of data in the table.</td> </tr> <tr> <td>{column: n}</td> <td>Specifies the
+      range that is the zero-based nth column of data in the table.</td> </tr> <tr> <td>{row: i, column: j}</td>
+      <td>Specifies the single cell that is the ith row and jth column of the table.</td> </tr> <tr>
+      <td>Office.Table.All</td> <td>Specifies the entire table, including column headers, data, and totals (if
+      any).</td> </tr> <tr> <td>Office.Table.Data</td> <td>Specifies only the data in the table (no headers and
+      totals).</td> </tr> <tr> <td>Office.Table.Headers</td> <td>Specifies only the header row.</td> </tr> </table>
 
 
-      The \`format:\` property specifies values that correspond to a subset of the settings available in the Format
-      Cells dialog box in Excel (Right-click &gt; Format Cells or Home &gt; Format &gt; Format Cells).
+      The `format:` property specifies values that correspond to a subset of the settings available in the Format Cells
+      dialog box in Excel (Right-click &gt; Format Cells or Home &gt; Format &gt; Format Cells).
 
 
-      You specify the value of the \`format:\` property as a list of one or more property name - value pairs in a
+      You specify the value of the `format:` property as a list of one or more property name - value pairs in a
       JavaScript object literal. The property name specifies the name of the formatting property to set, and value
       specifies the property value. You can specify multiple values for a given format, such as both a font's color and
       size.
 
 
-      Here's three \`format:\` property value examples:
+      Here's three `format:` property value examples:
 
 
-      \`//Set cells: font color to green and size to 15 points.\`
+      `//Set cells: font color to green and size to 15 points.`
 
 
-      \`format: {fontColor : "green", fontSize : 15}\`
+      `format: {fontColor : "green", fontSize : 15}`
 
 
-      \`//Set cells: border to dotted blue.\`
+      `//Set cells: border to dotted blue.`
 
 
-      \`format: {borderStyle: "dotted", borderColor: "blue"}\`
+      `format: {borderStyle: "dotted", borderColor: "blue"}`
 
 
-      \`//Set cells: background to red and alignment to centered.\`
+      `//Set cells: background to red and alignment to centered.`
 
 
-      \`format: {backgroundColor: "red", alignHorizontal: "center"}\`
+      `format: {backgroundColor: "red", alignHorizontal: "center"}`
 
 
-      You can specify number formats by specifying the number formatting "code" string in the \`numberFormat:\`
-      property. The number format strings you can specify correspond to those you can set in Excel using the Custom
-      category on the Number tab of the Format Cells dialog box. This example shows how to format a number as a
-      percentage with two decimal places:
+      You can specify number formats by specifying the number formatting "code" string in the `numberFormat:` property.
+      The number format strings you can specify correspond to those you can set in Excel using the Custom category on
+      the Number tab of the Format Cells dialog box. This example shows how to format a number as a percentage with two
+      decimal places:
 
 
-      \`format: {numberFormat:"0.00%"}\`
+      `format: {numberFormat:"0.00%"}`
 
 
       For more detail, see how to [Create a custom number
@@ -544,23 +532,22 @@ items:
 
 
       To set formatting on tables when writing data, use the tableOptions and cellFormat optional parameters of the
-      \`Document.setSelectedDataAsync\` or \`TableBinding.setDataAsync\` methods.
+      `Document.setSelectedDataAsync` or `TableBinding.setDataAsync` methods.
 
 
-      Setting formatting with the optional parameters of the \`Document.setSelectedDataAsync\` and
-      \`TableBinding.setDataAsync\` methods only works to set formatting when writing data the first time. To make
+      Setting formatting with the optional parameters of the `Document.setSelectedDataAsync` and
+      `TableBinding.setDataAsync` methods only works to set formatting when writing data the first time. To make
       formatting changes after writing data, use the following methods:
 
 
-      - To update cell formatting, such as font color and style, use the \`TableBinding.setFormatsAsync\` method (this
+      - To update cell formatting, such as font color and style, use the `TableBinding.setFormatsAsync` method (this
       method).
 
 
-      - To update table options, such as banded rows and filter buttons, use the \`TableBinding.setTableOptions\`
-      method.
+      - To update table options, such as banded rows and filter buttons, use the `TableBinding.setTableOptions` method.
 
 
-      - To clear formatting, use the \`TableBinding.clearFormats\` method.
+      - To clear formatting, use the `TableBinding.clearFormats` method.
 
 
       For more details and examples, see [How to format tables in add-ins for
@@ -571,14 +558,12 @@ items:
       to return the following information.
 
 
-      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Property&lt;/th&gt; &lt;th&gt;Use to...&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
-      &lt;td&gt;AsyncResult.value&lt;/td&gt; &lt;td&gt;Always returns undefined because there is no data or object to
-      retrieve when setting formats.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.status&lt;/td&gt;
-      &lt;td&gt;Determine the success or failure of the operation.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
-      &lt;td&gt;AsyncResult.error&lt;/td&gt; &lt;td&gt;Access an Error object that provides error information if the
-      operation failed.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.asyncContext&lt;/td&gt; &lt;td&gt;A
-      user-defined item of any type that is returned in the AsyncResult object without being altered.&lt;/td&gt;
-      &lt;/tr&gt; &lt;/table&gt;
+      <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
+      undefined because there is no data or object to retrieve when setting formats.</td> </tr> <tr>
+      <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr>
+      <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
+      failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in
+      the AsyncResult object without being altered.</td> </tr> </table>
 
 
       #### Examples
@@ -643,7 +628,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -651,24 +636,22 @@ items:
   - uid: office.Office.TableBinding.setTableOptionsAsync
     summary: Updates table formatting options on the bound table.
     remarks: >
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Excel&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Excel</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;Not in a set&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
 
 
       In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object
       to return the following information.
 
 
-      &lt;table&gt; &lt;tr&gt; &lt;th&gt;Property&lt;/th&gt; &lt;th&gt;Use to...&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt;
-      &lt;td&gt;AsyncResult.value&lt;/td&gt; &lt;td&gt;Always returns undefined because there is no data or object to
-      retrieve when setting formats.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.status&lt;/td&gt;
-      &lt;td&gt;Determine the success or failure of the operation.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
-      &lt;td&gt;AsyncResult.error&lt;/td&gt; &lt;td&gt;Access an Error object that provides error information if the
-      operation failed.&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;AsyncResult.asyncContext&lt;/td&gt; &lt;td&gt;A
-      user-defined item of any type that is returned in the AsyncResult object without being altered.&lt;/td&gt;
-      &lt;/tr&gt; &lt;/table&gt;
+      <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
+      undefined because there is no data or object to retrieve when setting formats.</td> </tr> <tr>
+      <td>AsyncResult.status</td> <td>Determine the success or failure of the operation.</td> </tr> <tr>
+      <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
+      failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in
+      the AsyncResult object without being altered.</td> </tr> </table>
 
 
       #### Examples
@@ -711,7 +694,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.

@@ -78,13 +78,13 @@ items:
       content: 'load(option?: Visio.Interfaces.ShapeDataItemLoadOptions): Visio.ShapeDataItem;'
       return:
         type:
-          - Visio.ShapeDataItem
+          - visio.Visio.ShapeDataItem
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Visio.Interfaces.ShapeDataItemLoadOptions
+            - visio.Visio.Interfaces.ShapeDataItemLoadOptions
     remarks: |
 
 
@@ -117,7 +117,7 @@ items:
       content: 'toJSON(): Visio.Interfaces.ShapeDataItemData;'
       return:
         type:
-          - Visio.Interfaces.ShapeDataItemData
+          - visio.Visio.Interfaces.ShapeDataItemData
         description: ''
   - uid: visio.Visio.ShapeDataItem.value
     summary: |-

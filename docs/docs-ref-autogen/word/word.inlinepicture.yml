@@ -141,7 +141,7 @@ items:
       content: 'getNext(): Word.InlinePicture;'
       return:
         type:
-          - Word.InlinePicture
+          - word.Word.InlinePicture
         description: ''
     remarks: |
 
@@ -190,7 +190,7 @@ items:
       content: 'getNextOrNullObject(): Word.InlinePicture;'
       return:
         type:
-          - Word.InlinePicture
+          - word.Word.InlinePicture
         description: ''
     remarks: |
 
@@ -245,7 +245,7 @@ items:
         - id: rangeLocation
           description: 'Optional. The range location can be ''Whole'', ''Start'' or ''End''.'
           type:
-            - Word.RangeLocation
+            - word.Word.RangeLocation
   - uid: word.Word.InlinePicture.height
     summary: |-
       Gets or sets a number that describes the height of the inline image.
@@ -298,11 +298,11 @@ items:
         - id: breakType
           description: Required. The break type to add.
           type:
-            - Word.BreakType
+            - word.Word.BreakType
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.InlinePicture.insertContentControl
     summary: |-
       Wraps the inline picture with a rich text content control.
@@ -317,7 +317,7 @@ items:
       content: 'insertContentControl(): Word.ContentControl;'
       return:
         type:
-          - Word.ContentControl
+          - word.Word.ContentControl
         description: ''
   - uid: word.Word.InlinePicture.insertFileFromBase64
     summary: |-
@@ -343,7 +343,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.InlinePicture.insertHtml
     summary: |-
       Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -368,7 +368,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.InlinePicture.insertInlinePictureFromBase64
     summary: >-
       Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before' or
@@ -387,7 +387,7 @@ items:
         Word.InlinePicture;
       return:
         type:
-          - Word.InlinePicture
+          - word.Word.InlinePicture
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -397,7 +397,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Before'' or ''After''.'
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.InlinePicture.insertOoxml
     summary: |-
       Inserts OOXML at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -422,7 +422,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.InlinePicture.insertParagraph
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -447,7 +447,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.InlinePicture.insertText
     summary: |-
       Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -472,7 +472,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.InlinePicture.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -486,13 +486,13 @@ items:
       content: 'load(option?: Word.Interfaces.InlinePictureLoadOptions): Word.InlinePicture;'
       return:
         type:
-          - Word.InlinePicture
+          - word.Word.InlinePicture
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.InlinePictureLoadOptions
+            - word.Word.Interfaces.InlinePictureLoadOptions
   - uid: word.Word.InlinePicture.lockAspectRatio
     summary: |-
       Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
@@ -539,7 +539,7 @@ items:
       content: 'readonly parentContentControl: Word.ContentControl;'
       return:
         type:
-          - Word.ContentControl
+          - word.Word.ContentControl
   - uid: word.Word.InlinePicture.parentContentControlOrNullObject
     summary: >-
       Gets the content control that contains the inline image. Returns a null object if there isn't a parent content
@@ -556,7 +556,7 @@ items:
       content: 'readonly parentContentControlOrNullObject: Word.ContentControl;'
       return:
         type:
-          - Word.ContentControl
+          - word.Word.ContentControl
   - uid: word.Word.InlinePicture.parentTable
     summary: |-
       Gets the table that contains the inline image. Throws if it is not contained in a table. Read-only.
@@ -661,7 +661,7 @@ items:
         - id: options
           description: ''
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.InlinePicture.toJSON
     name: toJSON()
     fullName: word.Word.InlinePicture.toJSON
@@ -672,7 +672,7 @@ items:
       content: 'toJSON(): Word.Interfaces.InlinePictureData;'
       return:
         type:
-          - Word.Interfaces.InlinePictureData
+          - word.Word.Interfaces.InlinePictureData
         description: ''
   - uid: word.Word.InlinePicture.track
     summary: >-
@@ -690,7 +690,7 @@ items:
       content: 'track(): Word.InlinePicture;'
       return:
         type:
-          - Word.InlinePicture
+          - word.Word.InlinePicture
         description: ''
   - uid: word.Word.InlinePicture.untrack
     summary: >-
@@ -707,7 +707,7 @@ items:
       content: 'untrack(): Word.InlinePicture;'
       return:
         type:
-          - Word.InlinePicture
+          - word.Word.InlinePicture
         description: ''
   - uid: word.Word.InlinePicture.width
     summary: |-

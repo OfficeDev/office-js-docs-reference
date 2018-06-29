@@ -3,11 +3,10 @@ items:
   - uid: office.Office.TextBinding
     summary: Represents a bound text selection in the document.
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Access, Excel, PowerPoint, Project,
-      Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;TextBindings&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>TextBindings</td></tr></table>
 
 
       The TextBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method from

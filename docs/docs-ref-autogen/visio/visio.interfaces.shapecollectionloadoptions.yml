@@ -93,4 +93,4 @@ items:
       content: 'view?: Visio.Interfaces.ShapeViewLoadOptions;'
       return:
         type:
-          - Visio.Interfaces.ShapeViewLoadOptions
+          - visio.Visio.Interfaces.ShapeViewLoadOptions

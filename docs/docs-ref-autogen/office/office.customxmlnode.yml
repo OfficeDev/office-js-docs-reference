@@ -3,9 +3,9 @@ items:
   - uid: office.Office.CustomXmlNode
     summary: Represents an XML node in a tree in a document.
     remarks: |-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
     name: Office.CustomXmlNode
     fullName: office.Office.CustomXmlNode
     langs:
@@ -26,9 +26,9 @@ items:
   - uid: office.Office.CustomXmlNode.baseName
     summary: 'Gets the base name of the node without the namespace prefix, if one exists.'
     remarks: |
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -62,9 +62,9 @@ items:
   - uid: office.Office.CustomXmlNode.getNodesAsync
     summary: Gets the nodes associated with the XPath expression.
     remarks: |
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -106,7 +106,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -114,9 +114,9 @@ items:
   - uid: office.Office.CustomXmlNode.getNodeValueAsync
     summary: Gets the node value.
     remarks: |
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -154,7 +154,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -162,10 +162,10 @@ items:
   - uid: office.Office.CustomXmlNode.getTextAsync
     summary: Gets the text of an XML node in a custom XML part.
     remarks: >
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
 
       #### Examples
@@ -218,7 +218,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -226,9 +226,9 @@ items:
   - uid: office.Office.CustomXmlNode.getXmlAsync
     summary: Gets the node's XML.
     remarks: |
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -266,7 +266,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -274,9 +274,9 @@ items:
   - uid: office.Office.CustomXmlNode.namespaceUri
     summary: Retrieves the string GUID of the CustomXMLPart.
     remarks: |
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -310,9 +310,9 @@ items:
   - uid: office.Office.CustomXmlNode.nodeType
     summary: Gets the type of the CustomXMLNode.
     remarks: |
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -346,9 +346,9 @@ items:
   - uid: office.Office.CustomXmlNode.setNodeValueAsync
     summary: Sets the node value.
     remarks: |
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -389,7 +389,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -397,10 +397,10 @@ items:
   - uid: office.Office.CustomXmlNode.setTextAsync
     summary: Asynchronously sets the text of an XML node in a custom XML part.
     remarks: >
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
 
       #### Examples
@@ -460,7 +460,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -468,9 +468,9 @@ items:
   - uid: office.Office.CustomXmlNode.setXmlAsync
     summary: Sets the node XML.
     remarks: |
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       #### Examples
 
@@ -506,7 +506,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:

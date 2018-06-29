@@ -53,7 +53,7 @@ items:
       content: 'readonly borders: Excel.RangeBorderCollection;'
       return:
         type:
-          - Excel.RangeBorderCollection
+          - excel.Excel.RangeBorderCollection
   - uid: excel.Excel.Style.builtIn
     summary: |-
       Indicates if the style is a built-in style.
@@ -117,7 +117,7 @@ items:
       content: 'readonly fill: Excel.RangeFill;'
       return:
         type:
-          - Excel.RangeFill
+          - excel.Excel.RangeFill
   - uid: excel.Excel.Style.font
     summary: |-
       A Font object that represents the font of the style.
@@ -132,7 +132,7 @@ items:
       content: 'readonly font: Excel.RangeFont;'
       return:
         type:
-          - Excel.RangeFont
+          - excel.Excel.RangeFont
     remarks: |
 
 
@@ -325,16 +325,16 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      \`load(option?: string \| string\[\]): Excel.Style\` - Where option is a comma-delimited string or an array of
+      `load(option?: string \| string\[\]): Excel.Style` - Where option is a comma-delimited string or an array of
       strings that specify the properties/relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; }): Excel.Style\` - Where option.select is a comma-delimited
+      `load(option?: { select?: string; expand?: string; }): Excel.Style` - Where option.select is a comma-delimited
       string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
       specifies the relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Style\` - Only available
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Style` - Only available
       on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
@@ -372,13 +372,13 @@ items:
       content: 'load(option?: Excel.Interfaces.StyleLoadOptions): Excel.Style;'
       return:
         type:
-          - Excel.Style
+          - excel.Excel.Style
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.StyleLoadOptions
+            - excel.Excel.Interfaces.StyleLoadOptions
   - uid: excel.Excel.Style.locked
     summary: |-
       Indicates if the object is locked when the worksheet is protected.
@@ -461,7 +461,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      \`set(properties: Excel.Style): void\`
+      `set(properties: Excel.Style): void`
     name: 'set(properties, options)'
     fullName: excel.Excel.Style.set
     langs:
@@ -483,7 +483,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Style.shrinkToFit
     summary: |-
       Indicates if text automatically shrinks to fit in the available column width.
@@ -509,7 +509,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.StyleData;'
       return:
         type:
-          - Excel.Interfaces.StyleData
+          - excel.Excel.Interfaces.StyleData
         description: ''
   - uid: excel.Excel.Style.verticalAlignment
     summary: |-

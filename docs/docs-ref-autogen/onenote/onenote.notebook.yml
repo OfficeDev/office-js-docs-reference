@@ -41,7 +41,7 @@ items:
       content: 'addSection(name: string): OneNote.Section;'
       return:
         type:
-          - OneNote.Section
+          - onenote.OneNote.Section
         description: ''
       parameters:
         - id: name
@@ -92,7 +92,7 @@ items:
       content: 'addSectionGroup(name: string): OneNote.SectionGroup;'
       return:
         type:
-          - OneNote.SectionGroup
+          - onenote.OneNote.SectionGroup
         description: ''
       parameters:
         - id: name
@@ -222,13 +222,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.NotebookLoadOptions): OneNote.Notebook;'
       return:
         type:
-          - OneNote.Notebook
+          - onenote.OneNote.Notebook
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OneNote.Interfaces.NotebookLoadOptions
+            - onenote.OneNote.Interfaces.NotebookLoadOptions
     remarks: |
 
 
@@ -390,7 +390,7 @@ items:
       content: 'readonly sectionGroups: OneNote.SectionGroupCollection;'
       return:
         type:
-          - OneNote.SectionGroupCollection
+          - onenote.OneNote.SectionGroupCollection
   - uid: onenote.OneNote.Notebook.sections
     summary: |-
       The the sections of the notebook. Read only
@@ -405,7 +405,7 @@ items:
       content: 'readonly sections: OneNote.SectionCollection;'
       return:
         type:
-          - OneNote.SectionCollection
+          - onenote.OneNote.SectionCollection
   - uid: onenote.OneNote.Notebook.toJSON
     name: toJSON()
     fullName: onenote.OneNote.Notebook.toJSON
@@ -416,7 +416,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.NotebookData;'
       return:
         type:
-          - OneNote.Interfaces.NotebookData
+          - onenote.OneNote.Interfaces.NotebookData
         description: ''
   - uid: onenote.OneNote.Notebook.track
     summary: >-
@@ -434,7 +434,7 @@ items:
       content: 'track(): OneNote.Notebook;'
       return:
         type:
-          - OneNote.Notebook
+          - onenote.OneNote.Notebook
         description: ''
   - uid: onenote.OneNote.Notebook.untrack
     summary: >-
@@ -451,5 +451,5 @@ items:
       content: 'untrack(): OneNote.Notebook;'
       return:
         type:
-          - OneNote.Notebook
+          - onenote.OneNote.Notebook
         description: ''

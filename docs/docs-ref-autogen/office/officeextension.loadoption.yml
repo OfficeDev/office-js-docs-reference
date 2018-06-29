@@ -10,19 +10,19 @@ items:
       paragraph collection:
 
 
-      \`context.load(paragraphs, 'text, font/size');\`
+      `context.load(paragraphs, 'text, font/size');`
 
 
-      \`paragraphs.load('text, font/size');\`
+      `paragraphs.load('text, font/size');`
 
 
       Here is a similar example using object notation (includes paging):
 
 
-      \`context.load(paragraphs, {select: 'text, font/size', expand: 'font', top: 50, skip: 0});\`
+      `context.load(paragraphs, {select: 'text, font/size', expand: 'font', top: 50, skip: 0});`
 
 
-      \`paragraphs.load({select: 'text, font/size', expand: 'font', top: 50, skip: 0});\`
+      `paragraphs.load({select: 'text, font/size', expand: 'font', top: 50, skip: 0});`
 
 
       Note that if we don't specify the specific properties on the font object in the select statement, the expand

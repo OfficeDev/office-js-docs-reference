@@ -92,16 +92,16 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      \`load(option?: string \| string\[\]): Excel.ConditionalRangeFont\` - Where option is a comma-delimited string or
-      an array of strings that specify the properties/relationships to load.
+      `load(option?: string \| string\[\]): Excel.ConditionalRangeFont` - Where option is a comma-delimited string or an
+      array of strings that specify the properties/relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFont\` - Where option.select is a
+      `load(option?: { select?: string; expand?: string; }): Excel.ConditionalRangeFont` - Where option.select is a
       comma-delimited string that specifies the properties/relationships to load, and options.expand is a
       comma-delimited string that specifies the relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeFont\` -
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeFont` -
       Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
@@ -115,13 +115,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ConditionalRangeFontLoadOptions): Excel.ConditionalRangeFont;'
       return:
         type:
-          - Excel.ConditionalRangeFont
+          - excel.Excel.ConditionalRangeFont
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.ConditionalRangeFontLoadOptions
+            - excel.Excel.Interfaces.ConditionalRangeFontLoadOptions
   - uid: excel.Excel.ConditionalRangeFont.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -129,7 +129,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      \`set(properties: Excel.ConditionalRangeFont): void\`
+      `set(properties: Excel.ConditionalRangeFont): void`
     name: 'set(properties, options)'
     fullName: excel.Excel.ConditionalRangeFont.set
     langs:
@@ -151,7 +151,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ConditionalRangeFont.strikethrough
     summary: |-
       Represents the strikethrough status of the font.
@@ -177,7 +177,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeFontData;'
       return:
         type:
-          - Excel.Interfaces.ConditionalRangeFontData
+          - excel.Excel.Interfaces.ConditionalRangeFontData
         description: ''
   - uid: excel.Excel.ConditionalRangeFont.underline
     summary: |-

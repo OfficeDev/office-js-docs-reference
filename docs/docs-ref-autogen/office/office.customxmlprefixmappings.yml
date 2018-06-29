@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.CustomXmlPrefixMappings
     summary: Represents a collection of CustomXmlPart objects.
-    remarks: '&lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;'
+    remarks: <table><tr><td>Hosts</td><td>Word</td></tr></table>
     name: Office.CustomXmlPrefixMappings
     fullName: office.Office.CustomXmlPrefixMappings
     langs:
@@ -16,9 +16,9 @@ items:
   - uid: office.Office.CustomXmlPrefixMappings.addNamespaceAsync
     summary: Asynchronously adds a prefix to namespace mapping to use when querying an item.
     remarks: |-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
       If no namespace is assigned to the requested prefix, the method returns an empty string ("").
     name: 'addNamespaceAsync(prefix, ns, options, callback)'
@@ -46,7 +46,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -54,10 +54,10 @@ items:
   - uid: office.Office.CustomXmlPrefixMappings.getNamespaceAsync
     summary: Asynchronously gets the namespace mapped to the specified prefix.
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
 
       If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix
@@ -83,7 +83,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:
@@ -91,10 +91,10 @@ items:
   - uid: office.Office.CustomXmlPrefixMappings.getPrefixAsync
     summary: Asynchronously gets the prefix for the specified namespace.
     remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Word&lt;/td&gt;&lt;/tr&gt;
+      <table><tr><td>Hosts</td><td>Word</td></tr>
 
 
-      &lt;tr&gt;&lt;td&gt;Requirement Sets&lt;/td&gt;&lt;td&gt;CustomXmlParts&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
 
 
       If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are
@@ -119,7 +119,7 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - AsyncContextOptions
+            - office.Office.AsyncContextOptions
         - id: callback
           description: 'Optional. A function that is invoked when the callback returns, whose only parameter is of type AsyncResult.'
           type:

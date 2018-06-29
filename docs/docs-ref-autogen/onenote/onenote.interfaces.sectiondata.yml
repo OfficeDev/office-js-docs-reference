@@ -76,7 +76,7 @@ items:
       content: 'notebook?: OneNote.Interfaces.NotebookData;'
       return:
         type:
-          - OneNote.Interfaces.NotebookData
+          - onenote.OneNote.Interfaces.NotebookData
   - uid: onenote.OneNote.Interfaces.SectionData.pages
     summary: |-
       The collection of pages in the section. Read only
@@ -108,7 +108,7 @@ items:
       content: 'parentSectionGroup?: OneNote.Interfaces.SectionGroupData;'
       return:
         type:
-          - OneNote.Interfaces.SectionGroupData
+          - onenote.OneNote.Interfaces.SectionGroupData
   - uid: onenote.OneNote.Interfaces.SectionData.parentSectionGroupOrNull
     summary: >-
       Gets the section group that contains the section. Returns null if the section is a direct child of the notebook.
@@ -125,7 +125,7 @@ items:
       content: 'parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupData;'
       return:
         type:
-          - OneNote.Interfaces.SectionGroupData
+          - onenote.OneNote.Interfaces.SectionGroupData
   - uid: onenote.OneNote.Interfaces.SectionData.webUrl
     summary: |-
       The web url of the page. Read only

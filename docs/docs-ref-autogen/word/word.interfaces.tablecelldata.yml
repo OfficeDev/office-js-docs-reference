@@ -34,7 +34,7 @@ items:
       content: 'body?: Word.Interfaces.BodyData;'
       return:
         type:
-          - Word.Interfaces.BodyData
+          - word.Word.Interfaces.BodyData
   - uid: word.Word.Interfaces.TableCellData.cellIndex
     summary: |-
       Gets the index of the cell in its row. Read-only.

@@ -79,7 +79,7 @@ items:
       content: 'notebook?: OneNote.Interfaces.NotebookLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.NotebookLoadOptions
+          - onenote.OneNote.Interfaces.NotebookLoadOptions
   - uid: onenote.OneNote.Interfaces.SectionGroupLoadOptions.parentSectionGroup
     summary: >-
       Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child
@@ -96,7 +96,7 @@ items:
       content: 'parentSectionGroup?: OneNote.Interfaces.SectionGroupLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.SectionGroupLoadOptions
+          - onenote.OneNote.Interfaces.SectionGroupLoadOptions
   - uid: onenote.OneNote.Interfaces.SectionGroupLoadOptions.parentSectionGroupOrNull
     summary: >-
       Gets the section group that contains the section group. Returns null if the section group is a direct child of the
@@ -113,7 +113,7 @@ items:
       content: 'parentSectionGroupOrNull?: OneNote.Interfaces.SectionGroupLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.SectionGroupLoadOptions
+          - onenote.OneNote.Interfaces.SectionGroupLoadOptions
   - uid: onenote.OneNote.Interfaces.SectionGroupLoadOptions.sectionGroups
     summary: |-
       The collection of section groups in the section group. Read only
@@ -128,7 +128,7 @@ items:
       content: 'sectionGroups?: OneNote.Interfaces.SectionGroupCollectionLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.SectionGroupCollectionLoadOptions
+          - onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions
   - uid: onenote.OneNote.Interfaces.SectionGroupLoadOptions.sections
     summary: |-
       The collection of sections in the section group. Read only
@@ -143,4 +143,4 @@ items:
       content: 'sections?: OneNote.Interfaces.SectionCollectionLoadOptions;'
       return:
         type:
-          - OneNote.Interfaces.SectionCollectionLoadOptions
+          - onenote.OneNote.Interfaces.SectionCollectionLoadOptions

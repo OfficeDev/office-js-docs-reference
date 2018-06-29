@@ -70,7 +70,7 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - Word.Interfaces.FontLoadOptions
+          - word.Word.Interfaces.FontLoadOptions
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.headerRowCount
     summary: |-
       For EACH ITEM in the collection: Gets and sets the number of header rows.
@@ -147,7 +147,7 @@ items:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - Word.Interfaces.BodyLoadOptions
+          - word.Word.Interfaces.BodyLoadOptions
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.parentContentControl
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the table. Throws if there isn't a parent
@@ -164,7 +164,7 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - Word.Interfaces.ContentControlLoadOptions
+          - word.Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.parentContentControlOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the table. Returns a null object if there
@@ -181,7 +181,7 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - Word.Interfaces.ContentControlLoadOptions
+          - word.Word.Interfaces.ContentControlLoadOptions
   - uid: word.Word.Interfaces.TableCollectionLoadOptions.parentTable
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains this table. Throws if it is not contained in a

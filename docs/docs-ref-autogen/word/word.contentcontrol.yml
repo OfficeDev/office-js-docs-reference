@@ -199,7 +199,7 @@ items:
       content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
         type:
-          - Word.ContentControlCollection
+          - word.Word.ContentControlCollection
   - uid: word.Word.ContentControl.delete
     summary: |-
       Deletes the content control and its content. If keepContent is set to true, the content is not deleted.
@@ -281,7 +281,7 @@ items:
       content: 'readonly font: Word.Font;'
       return:
         type:
-          - Word.Font
+          - word.Word.Font
   - uid: word.Word.ContentControl.getHtml
     summary: |-
       Gets the HTML representation of the content control object.
@@ -416,7 +416,7 @@ items:
         - id: rangeLocation
           description: 'Optional. The range location can be ''Whole'', ''Before'', ''Start'', ''End'', ''After'' or ''Content''.'
           type:
-            - Word.RangeLocation
+            - word.Word.RangeLocation
   - uid: word.Word.ContentControl.getTextRanges
     summary: |-
       Gets the text ranges in the content control by using punctuation marks and/or other ending marks.
@@ -431,7 +431,7 @@ items:
       content: 'getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;'
       return:
         type:
-          - Word.RangeCollection
+          - word.Word.RangeCollection
         description: ''
       parameters:
         - id: endingMarks
@@ -476,7 +476,7 @@ items:
       content: 'readonly inlinePictures: Word.InlinePictureCollection;'
       return:
         type:
-          - Word.InlinePictureCollection
+          - word.Word.InlinePictureCollection
   - uid: word.Word.ContentControl.insertBreak
     summary: >-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End',
@@ -500,11 +500,11 @@ items:
         - id: breakType
           description: Required. Type of break.
           type:
-            - Word.BreakType
+            - word.Word.BreakType
         - id: insertLocation
           description: 'Required. The value can be ''Start'', ''End'', ''Before'' or ''After''.'
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
     remarks: |
 
 
@@ -575,7 +575,7 @@ items:
             Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
     remarks: |
 
 
@@ -645,7 +645,7 @@ items:
             Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.ContentControl.insertInlinePictureFromBase64
     summary: >-
       Inserts an inline picture into the content control at the specified location. The insertLocation value can be
@@ -664,7 +664,7 @@ items:
         Word.InlinePicture;
       return:
         type:
-          - Word.InlinePicture
+          - word.Word.InlinePicture
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -676,7 +676,7 @@ items:
             Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
     remarks: |
 
 
@@ -748,7 +748,7 @@ items:
             Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
   - uid: word.Word.ContentControl.insertParagraph
     summary: >-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before' or
@@ -777,7 +777,7 @@ items:
             Required. The value can be 'Start', 'End', 'Before' or 'After'. 'Before' and 'After' cannot be used with
             'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
     remarks: |
 
 
@@ -853,7 +853,7 @@ items:
             Required. The value can be 'Start', 'End', 'Before' or 'After'. 'Before' and 'After' cannot be used with
             'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
@@ -886,7 +886,7 @@ items:
             Required. The value can be 'Replace', 'Start' or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type:
-            - Word.InsertLocation
+            - word.Word.InsertLocation
     remarks: |
 
 
@@ -944,7 +944,7 @@ items:
       content: 'readonly lists: Word.ListCollection;'
       return:
         type:
-          - Word.ListCollection
+          - word.Word.ListCollection
   - uid: word.Word.ContentControl.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -958,13 +958,13 @@ items:
       content: 'load(option?: Word.Interfaces.ContentControlLoadOptions): Word.ContentControl;'
       return:
         type:
-          - Word.ContentControl
+          - word.Word.ContentControl
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Word.Interfaces.ContentControlLoadOptions
+            - word.Word.Interfaces.ContentControlLoadOptions
     remarks: |
 
 
@@ -1113,7 +1113,7 @@ items:
       content: 'readonly parentContentControl: Word.ContentControl;'
       return:
         type:
-          - Word.ContentControl
+          - word.Word.ContentControl
   - uid: word.Word.ContentControl.parentContentControlOrNullObject
     summary: >-
       Gets the content control that contains the content control. Returns a null object if there isn't a parent content
@@ -1130,7 +1130,7 @@ items:
       content: 'readonly parentContentControlOrNullObject: Word.ContentControl;'
       return:
         type:
-          - Word.ContentControl
+          - word.Word.ContentControl
   - uid: word.Word.ContentControl.parentTable
     summary: |-
       Gets the table that contains the content control. Throws if it is not contained in a table. Read-only.
@@ -1254,7 +1254,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - Word.RangeCollection
+          - word.Word.RangeCollection
         description: ''
       parameters:
         - id: searchText
@@ -1357,7 +1357,7 @@ items:
         - id: options
           description: ''
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
     remarks: |
 
 
@@ -1413,7 +1413,7 @@ items:
         Word.RangeCollection;
       return:
         type:
-          - Word.RangeCollection
+          - word.Word.RangeCollection
         description: ''
       parameters:
         - id: delimiters
@@ -1662,7 +1662,7 @@ items:
       content: 'toJSON(): Word.Interfaces.ContentControlData;'
       return:
         type:
-          - Word.Interfaces.ContentControlData
+          - word.Word.Interfaces.ContentControlData
         description: ''
   - uid: word.Word.ContentControl.track
     summary: >-
@@ -1680,7 +1680,7 @@ items:
       content: 'track(): Word.ContentControl;'
       return:
         type:
-          - Word.ContentControl
+          - word.Word.ContentControl
         description: ''
   - uid: word.Word.ContentControl.type
     summary: |-
@@ -1720,5 +1720,5 @@ items:
       content: 'untrack(): Word.ContentControl;'
       return:
         type:
-          - Word.ContentControl
+          - word.Word.ContentControl
         description: ''

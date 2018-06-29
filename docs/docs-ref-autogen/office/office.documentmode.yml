@@ -2,10 +2,8 @@
 items:
   - uid: office.Office.DocumentMode
     summary: Specifies whether the document in the associated application is read-only or read-write.
-    remarks: >-
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Excel, PowerPoint, Project,
-      Word&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-
+    remarks: |-
+      <table><tr><td>Hosts</td><td>Excel, PowerPoint, Project, Word</td></tr></table>
 
       Returned by the mode property of the Document object.
     name: Office.DocumentMode

@@ -11,7 +11,7 @@ items:
       reference. In Project Help, search for Available fields.
 
 
-      &lt;table&gt;&lt;tr&gt;&lt;td&gt;Hosts&lt;/td&gt;&lt;td&gt;Project&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      <table><tr><td>Hosts</td><td>Project</td></tr></table>
     name: Office.ProjectTaskFields
     fullName: office.Office.ProjectTaskFields
     langs:

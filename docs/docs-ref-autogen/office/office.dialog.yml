@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.Dialog
     summary: >-
-      The object that is returned when \`UI.displayDialogAsync\` is called. It exposes methods for registering event
+      The object that is returned when `UI.displayDialogAsync` is called. It exposes methods for registering event
       handlers and closing the dialog.
     name: Office.Dialog
     fullName: office.Office.Dialog

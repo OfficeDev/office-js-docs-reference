@@ -71,7 +71,7 @@ items:
       content: 'readonly columns: Excel.TableColumnCollection;'
       return:
         type:
-          - Excel.TableColumnCollection
+          - excel.Excel.TableColumnCollection
   - uid: excel.Excel.Table.convertToRange
     summary: |-
       Converts the table into a normal range of cells. All data is preserved.
@@ -86,7 +86,7 @@ items:
       content: 'convertToRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -154,7 +154,7 @@ items:
       content: 'getDataBodyRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -191,7 +191,7 @@ items:
       content: 'getHeaderRowRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -228,7 +228,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -265,7 +265,7 @@ items:
       content: 'getTotalRowRange(): Excel.Range;'
       return:
         type:
-          - Excel.Range
+          - excel.Excel.Range
         description: ''
     remarks: |
 
@@ -343,16 +343,16 @@ items:
       In addition to this signature, this method has the following signatures:
 
 
-      \`load(option?: string \| string\[\]): Excel.Table\` - Where option is a comma-delimited string or an array of
+      `load(option?: string \| string\[\]): Excel.Table` - Where option is a comma-delimited string or an array of
       strings that specify the properties/relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; }): Excel.Table\` - Where option.select is a comma-delimited
+      `load(option?: { select?: string; expand?: string; }): Excel.Table` - Where option.select is a comma-delimited
       string that specifies the properties/relationships to load, and options.expand is a comma-delimited string that
       specifies the relationships to load.
 
 
-      \`load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Table\` - Only available
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Table` - Only available
       on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
@@ -435,13 +435,13 @@ items:
       content: 'load(option?: Excel.Interfaces.TableLoadOptions): Excel.Table;'
       return:
         type:
-          - Excel.Table
+          - excel.Excel.Table
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - Excel.Interfaces.TableLoadOptions
+            - excel.Excel.Interfaces.TableLoadOptions
   - uid: excel.Excel.Table.name
     summary: |-
       Name of the table.
@@ -549,7 +549,7 @@ items:
       content: 'readonly rows: Excel.TableRowCollection;'
       return:
         type:
-          - Excel.TableRowCollection
+          - excel.Excel.TableRowCollection
   - uid: excel.Excel.Table.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -557,7 +557,7 @@ items:
     remarks: |-
       This method has the following additional signature:
 
-      \`set(properties: Excel.Table): void\`
+      `set(properties: Excel.Table): void`
     name: 'set(properties, options)'
     fullName: excel.Excel.Table.set
     langs:
@@ -579,7 +579,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Table.showBandedColumns
     summary: >-
       Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even
@@ -675,7 +675,7 @@ items:
       content: 'readonly sort: Excel.TableSort;'
       return:
         type:
-          - Excel.TableSort
+          - excel.Excel.TableSort
   - uid: excel.Excel.Table.style
     summary: >-
       Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
@@ -704,7 +704,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableData;'
       return:
         type:
-          - Excel.Interfaces.TableData
+          - excel.Excel.Interfaces.TableData
         description: ''
   - uid: excel.Excel.Table.worksheet
     summary: |-
@@ -720,4 +720,4 @@ items:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
-          - Excel.Worksheet
+          - excel.Excel.Worksheet
