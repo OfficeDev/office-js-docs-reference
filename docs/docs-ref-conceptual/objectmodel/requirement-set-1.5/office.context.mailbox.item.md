@@ -1,3 +1,4 @@
+
 # item
 
 ### [Office](Office.md)[.context](Office.context.md)[.mailbox](Office.context.mailbox.md).item
@@ -16,39 +17,39 @@ The `item` namespace is used to access the currently selected message, meeting r
 
 | Member | Type |
 |--------|------|
-| [attachments](#attachments-arrayattachmentdetails) | Member |
-| [bcc](#bcc-recipients) | Member |
-| [body](#body-body) | Member |
+| [attachments](#attachments-arrayattachmentdetailsjavascriptapiofficeofficeattachmentdetails) | Member |
+| [bcc](#bcc-recipientsjavascriptapioutlookofficerecipientsmdmd) | Member |
+| [body](#body-bodyjavascriptapioutlookofficebodymd) | Member |
 | [cc](#cc-arrayemailaddressdetailsrecipients) | Member |
 | [conversationId](#nullable-conversationid-string) | Member |
 | [dateTimeCreated](#datetimecreated-date) | Member |
 | [dateTimeModified](#datetimemodified-date) | Member |
-| [end](#end-datetime) | Member |
-| [from](#from-emailaddressdetails) | Member |
+| [end](#end-datetimejavascriptapioutlookofficetimemd) | Member |
+| [from](#from-emailaddressdetailsjavascriptapiofficeofficeemailaddressdetailsfromjavascriptapioutlookofficefrommd) | Member |
 | [internetMessageId](#internetmessageid-string) | Member |
 | [itemClass](#itemclass-string) | Member |
 | [itemId](#nullable-itemid-string) | Member |
-| [itemType](#itemtype-officemailboxenumsitemtype) | Member |
-| [location](#location-stringlocation) | Member |
+| [itemType](#itemtype-officemailboxenumsitemtypejavascriptapioutlookofficemailboxenumsitemtype) | Member |
+| [location](#location-stringlocationjavascriptapioutlookofficelocationmd) | Member |
 | [normalizedSubject](#normalizedsubject-string) | Member |
-| [notificationMessages](#notificationmessages-notificationmessages) | Member |
-| [optionalAttendees](#optionalattendees-arrayemailaddressdetailsrecipients) | Member |
-| [organizer](#organizer-emailaddressdetails) | Member |
-| [requiredAttendees](#requiredattendees-arrayemailaddressdetailsrecipients) | Member |
-| [sender](#sender-emailaddressdetails) | Member |
-| [start](#start-datetime) | Member |
-| [subject](#subject-stringsubject) | Member |
-| [to](#to-arrayemailaddressdetailsrecipients) | Member |
+| [notificationMessages](#notificationmessages-notificationmessagesjavascriptapioutlookofficenotificationmessagesmd) | Member |
+| [optionalAttendees](#optionalattendees-arrayemailaddressdetailsjavascriptapiofficeofficeemailaddressdetailsrecipientsjavascriptapioutlookofficerecipientsmd) | Member |
+| [organizer](#organizer-emailaddressdetailsjavascriptapiofficeofficeemailaddressdetails) | Member |
+| [requiredAttendees](#requiredattendees-arrayemailaddressdetailsjavascriptapiofficeofficeemailaddressdetailsrecipientsjavascriptapioutlookofficerecipientsmd) | Member |
+| [sender](#sender-emailaddressdetailsjavascriptapiofficeofficeemailaddressdetails) | Member |
+| [start](#start-datetimejavascriptapioutlookofficetimemd) | Member |
+| [subject](#subject-stringsubjectjavascriptapioutlookofficesubjectmd) | Member |
+| [to](#to-arrayemailaddressdetailsjavascriptapiofficeofficeemailaddressdetailsrecipientsjavascriptapioutlookofficerecipientsmd) | Member |
 | [addFileAttachmentAsync](#addfileattachmentasyncuri-attachmentname-options-callback) | Method |
 | [addItemAttachmentAsync](#additemattachmentasyncitemid-attachmentname-options-callback) | Method |
 | [close](#close) | Method |
 | [displayReplyAllForm](#displayreplyallformformdata) | Method |
 | [displayReplyForm](#displayreplyformformdata) | Method |
-| [getEntities](#getentities--entities) | Method |
-| [getEntitiesByType](#getentitiesbytypeentitytype--nullable-arraystringcontactmeetingsuggestionphonenumbertasksuggestion) | Method |
+| [getEntities](#getentities--entitiesjavascriptapiofficeofficeentities) | Method |
+| [getEntitiesByType](#getentitiesbytypeentitytype--nullable-arraystringcontactjavascriptapiofficeofficecontactmeetingsuggestionjavascriptapiofficeofficemeetingsuggestionphonenumberjavascriptapiofficeofficephonenumbertasksuggestionjavascriptapiofficeofficetasksuggestion) | Method |
 | [getFilteredEntitiesByName](#getfilteredentitiesbynamename--nullable-arraystringcontactmeetingsuggestionphonenumbertasksuggestion) | Method |
 | [getRegExMatches](#getregexmatches--object) | Method |
-| [getRegExMatchesByName](#getregexmatchesbynamename--nullable-array) | Method |
+| [getRegExMatchesByName](#getregexmatchesbynamename--nullable-array-string-) | Method |
 | [getSelectedDataAsync](#getselecteddataasynccoerciontype-options-callback--string) | Method |
 | [loadCustomPropertiesAsync](#loadcustompropertiesasynccallback-usercontext) | Method |
 | [removeAttachmentAsync](#removeattachmentasyncattachmentid-options-callback) | Method |
